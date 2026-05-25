@@ -1,0 +1,182 @@
+[
+  {
+    "id": "q1",
+    "question": "Which of the following is an example of a simile?",
+    "options": [
+      "The wind whispered in my ear.",
+      "He is a lion in battle.",
+      "She is as brave as a lion.",
+      "The sun smiled down at us."
+    ],
+    "answer": "She is as brave as a lion.",
+    "explanation": "A simile compares two things using 'like' or 'as'."
+  },
+  {
+    "id": "q2",
+    "question": "What is 'inferential meaning'?",
+    "options": [
+      "The dictionary definition of a word.",
+      "Information explicitly stated in the text.",
+      "Information that must be deduced from clues in the text.",
+      "The title of a passage."
+    ],
+    "answer": "Information that must be deduced from clues in the text.",
+    "explanation": "Inference involves using evidence to understand something not explicitly stated."
+  },
+  {
+    "id": "q3",
+    "question": "In summary writing, you should include:",
+    "options": [
+      "Detailed examples from the passage.",
+      "The main points of the passage.",
+      "Your personal opinion on the topic.",
+      "Repetitive phrases for emphasis."
+    ],
+    "answer": "The main points of the passage.",
+    "explanation": "A summary should only contain the essential ideas, excluding details and opinions."
+  },
+  {
+    "id": "q4",
+    "question": "Which sentence shows correct subject-verb agreement?",
+    "options": [
+      "The team of players are ready.",
+      "The team of players is ready.",
+      "The players is ready.",
+      "Every player have a ball."
+    ],
+    "answer": "The team of players is ready.",
+    "explanation": "'Team' is a collective noun and takes a singular verb 'is'."
+  },
+  {
+    "id": "q5",
+    "question": "Which punctuation mark is used to connect two closely related independent clauses?",
+    "options": [
+      "Comma",
+      "Semi-colon",
+      "Colon",
+      "Hyphen"
+    ],
+    "answer": "Semi-colon",
+    "explanation": "A semi-colon joins two independent sentences without a conjunction."
+  },
+  {
+    "id": "q6",
+    "question": "Identify the metaphor:",
+    "options": [
+      "The stars twinkled like diamonds.",
+      "Time is a thief.",
+      "The waves crashed loudly.",
+      "As quiet as a mouse."
+    ],
+    "answer": "Time is a thief.",
+    "explanation": "A metaphor makes a direct comparison without using 'like' or 'as'."
+  },
+  {
+    "id": "q7",
+    "question": "What is the 'climax' of a story?",
+    "options": [
+      "The beginning where characters are introduced.",
+      "The part where the conflict is resolved.",
+      "The point of highest tension or a major turning point.",
+      "The very last sentence of the book."
+    ],
+    "answer": "The point of highest tension or a major turning point.",
+    "explanation": "The climax is the peak of the story's action."
+  },
+  {
+    "id": "q8",
+    "question": "What does the 'E' in the PEEL acronym for essay writing stand for?",
+    "options": [
+      "Ending",
+      "Example/Evidence",
+      "Emphasis",
+      "Exclamation"
+    ],
+    "answer": "Example/Evidence",
+    "explanation": "PEEL stands for Point, Evidence/Example, Explanation, Link."
+  },
+  {
+    "id": "q9",
+    "question": "Which of the following is an expository writing task?",
+    "options": [
+      "Writing a sci-fi short story.",
+      "Writing a poem about nature.",
+      "Writing an instruction manual on how to build a shelf.",
+      "Writing a letter to the editor to complain about noise."
+    ],
+    "answer": "Writing an instruction manual on how to build a shelf.",
+    "explanation": "Expository writing aims to inform or explain."
+  },
+  {
+    "id": "q10",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      "I bought apples oranges and pears.",
+      "I bought: apples, oranges, and pears.",
+      "I bought apples, oranges, and pears.",
+      "I bought apples, oranges and, pears."
+    ],
+    "answer": "I bought apples, oranges, and pears.",
+    "explanation": "Commas are used to separate items in a list."
+  },
+  {
+    "id": "q11",
+    "question": "Choose the synonym for the word 'procrastinate':",
+    "options": [
+      "Hurry",
+      "Delay",
+      "Decide",
+      "Perform"
+    ],
+    "answer": "Delay",
+    "explanation": "To procrastinate means to put off or delay doing something."
+  },
+  {
+    "id": "q12",
+    "question": "What is the antonym of 'rigid'?",
+    "options": [
+      "Stiff",
+      "Firm",
+      "Flexible",
+      "Hard"
+    ],
+    "answer": "Flexible",
+    "explanation": "Rigid means stiff or unbending; flexible is the opposite."
+  },
+  {
+    "id": "q13",
+    "question": "In the sentence 'The ominous clouds gathered in the sky', what does 'ominous' mean?",
+    "options": [
+      "Bright and sunny",
+      "Giving the impression that something bad is going to happen",
+      "Large and fluffy",
+      "Moving very fast"
+    ],
+    "answer": "Giving the impression that something bad is going to happen",
+    "explanation": "Ominous means threatening or foreboding."
+  },
+  {
+    "id": "q14",
+    "question": "Which word correctly completes the sentence: 'The _______ of the cake was delicious.'",
+    "options": [
+      "Scent",
+      "Sent",
+      "Cent",
+      "Scents"
+    ],
+    "answer": "Scent",
+    "explanation": "Scent refers to a smell; sent is the past tense of send; cent is a unit of money."
+  },
+  {
+    "id": "q15",
+    "question": "Identify the part of speech for the word 'quickly' in the sentence: 'He ran quickly to the store.'",
+    "options": [
+      "Noun",
+      "Verb",
+      "Adjective",
+      "Adverb"
+    ],
+    "answer": "Adverb",
+    "explanation": "'Quickly' describes the verb 'ran', so it is an adverb."
+  }
+]

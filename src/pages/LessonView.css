@@ -1,0 +1,13 @@
+.lv-page{max-width:900px;margin:0 auto;padding:1.5rem;padding-bottom:4rem}
+.lv-loading,.lv-not-found{text-align:center;padding:4rem;color:#6b7280}
+.lv-header{margin-bottom:2rem}
+.lv-back{color:#2563eb;text-decoration:none;font-weight:500;font-size:.88rem;display:inline-block;margin-bottom:.5rem}
+.lv-back:hover{text-decoration:underline}
+.lv-breadcrumb{display:block;color:#9ca3af;font-size:.85rem;margin-bottom:.25rem}
+.lv-title{font-size:1.75rem;font-weight:800;color:#111827}
+.lv-content{display:flex;flex-direction:column;gap:1.5rem}
+.lv-objectives,.lv-concepts{background:#fff;border-radius:16px;padding:1.5rem 2rem;box-shadow:0 1px 3px rgba(0,0,0,0.06),0 4px 12px rgba(0,0,0,0.03)}
+.lv-objectives h3,.lv-concepts h3{font-size:1.05rem;margin-bottom:.75rem;color:#111827}
+.lv-objectives ul,.lv-concepts ul{padding-left:1.25rem}
+.lv-objectives li,.lv-concepts li{margin-bottom:.35rem;line-height:1.5;color:#374151}
+.lv-experiment h3{font-size:1.05rem;margin-bottom:.75rem;color:#111827}

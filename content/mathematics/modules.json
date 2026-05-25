@@ -1,0 +1,281 @@
+[
+  {
+    "id": "number-theory-computation",
+    "title": "Number Theory & Computation",
+    "lessons": [
+      {
+        "id": "real-numbers",
+        "title": "Operations on Real Numbers",
+        "objectives": [
+          "Perform operations with real numbers",
+          "Apply the order of operations (BODMAS)"
+        ],
+        "concepts": [
+          "Real numbers include rational and irrational numbers.",
+          "BODMAS: Brackets, Orders, Division, Multiplication, Addition, Subtraction."
+        ],
+        "experiment": {
+          "type": "interactive-quiz",
+          "description": "Order of Operations Challenge: Solve a series of expressions where you must click the operations in the correct order to simplify the expression."
+        }
+      },
+      {
+        "id": "fractions-decimals-percentages",
+        "title": "Fractions, Decimals, and Percentages",
+        "objectives": [
+          "Convert between fractions, decimals, and percentages",
+          "Solve problems involving percentages"
+        ],
+        "concepts": [
+          "Fractions represent parts of a whole.",
+          "Percentages are parts per hundred."
+        ],
+        "experiment": {
+          "type": "visual-converter",
+          "description": "Visual Fraction/Percentage Slider: A bar that you can slide to see how a fraction (e.g., 3/4) converts to a decimal (0.75) and a percentage (75%) visually."
+        }
+      }
+    ]
+  },
+  {
+    "id": "algebra",
+    "title": "Algebra",
+    "lessons": [
+      {
+        "id": "algebraic-expressions",
+        "title": "Algebraic Expressions and Equations",
+        "objectives": [
+          "Simplify algebraic expressions",
+          "Solve linear equations"
+        ],
+        "concepts": [
+          "Like terms can be added or subtracted.",
+          "Balancing equations: whatever you do to one side, you must do to the other."
+        ],
+        "experiment": {
+          "type": "balance-scale",
+          "description": "Equation Balance Scale: Drag constants and variables (x) onto a balance scale to solve for x by keeping the scale balanced."
+        }
+      },
+      {
+        "id": "quadratic-equations",
+        "title": "Quadratic Equations",
+        "objectives": [
+          "Solve quadratic equations by factoring",
+          "Use the quadratic formula"
+        ],
+        "concepts": [
+          "Standard form: ax^2 + bx + c = 0.",
+          "The quadratic formula: x = [-b ± sqrt(b^2 - 4ac)] / 2a"
+        ],
+        "experiment": {
+          "type": "graph-plotter",
+          "description": "Parabola Explorer: Adjust sliders for a, b, and c in ax^2 + bx + c to see how the parabola shifts, widens, or narrows on a graph."
+        }
+      },
+      {
+        "id": "inequalities",
+        "title": "Linear Inequalities",
+        "objectives": [
+          "Solve linear inequalities in one variable",
+          "Represent solutions on a number line"
+        ],
+        "concepts": [
+          "Inequality symbols: <, >, ≤, ≥.",
+          "Multiplying or dividing by a negative number flips the inequality sign."
+        ],
+        "experiment": {
+          "type": "number-line-plotter",
+          "description": "Inequality Mapper: Input an inequality (e.g., 2x + 3 > 7) and watch the solution shade automatically on an interactive number line."
+        }
+      }
+    ]
+  },
+  {
+    "id": "relations-functions-graphs",
+    "title": "Relations, Functions & Graphs",
+    "lessons": [
+      {
+        "id": "coordinate-geometry",
+        "title": "Coordinate Geometry",
+        "objectives": [
+          "Find the gradient of a straight line",
+          "Determine the equation of a straight line"
+        ],
+        "concepts": [
+          "Gradient (m) = (y2 - y1) / (x2 - x1).",
+          "Equation of a line: y = mx + c."
+        ],
+        "experiment": {
+          "type": "graph-linear",
+          "description": "Line Lab: Plot y=mx+b with draggable sliders for m and b. Show the line updating in real-time with the equation displayed."
+        }
+      },
+      {
+        "id": "functions",
+        "title": "Introduction to Functions",
+        "objectives": [
+          "Understand function notation f(x)",
+          "Evaluate composite and inverse functions"
+        ],
+        "concepts": [
+          "A function maps an input to a unique output.",
+          "Inverse function f^-1(x) reverses the mapping."
+        ],
+        "experiment": {
+          "type": "function-machine",
+          "description": "Function Machine: Drop a number into a 'machine' that applies f(x) and g(x) to show composite functions visually."
+        }
+      }
+    ]
+  },
+  {
+    "id": "geometry-trigonometry",
+    "title": "Geometry & Trigonometry",
+    "lessons": [
+      {
+        "id": "pythagoras-theorem",
+        "title": "Pythagoras' Theorem",
+        "objectives": [
+          "Apply Pythagoras' theorem to find missing sides of right-angled triangles"
+        ],
+        "concepts": [
+          "In a right-angled triangle: a^2 + b^2 = c^2, where c is the hypotenuse."
+        ],
+        "experiment": {
+          "type": "interactive-triangle",
+          "description": "Pythagoras Visualizer: Drag the vertices of a right-angled triangle and see the squares of the sides (a^2, b^2, c^2) update in real-time to satisfy the theorem."
+        }
+      },
+      {
+        "id": "trig-ratios",
+        "title": "Trigonometric Ratios (SOH CAH TOA)",
+        "objectives": [
+          "Define sine, cosine, and tangent ratios",
+          "Use trig ratios to find angles and sides"
+        ],
+        "concepts": [
+          "SOH: Sin = Opposite / Hypotenuse",
+          "CAH: Cos = Adjacent / Hypotenuse",
+          "TOA: Tan = Opposite / Adjacent"
+        ],
+        "experiment": {
+          "type": "trig-circle",
+          "description": "Unit Circle Explorer: Move a point around a circle to see how the sine and cosine values relate to the coordinates of the point."
+        }
+      }
+    ]
+  },
+  {
+    "id": "vectors-matrices",
+    "title": "Vectors & Matrices",
+    "lessons": [
+      {
+        "id": "vectors",
+        "title": "Introduction to Vectors",
+        "objectives": [
+          "Represent vectors as column matrices",
+          "Add and subtract vectors"
+        ],
+        "concepts": [
+          "Vectors have magnitude and direction.",
+          "Addition follows the triangle or parallelogram law."
+        ],
+        "experiment": {
+          "type": "vector-addition",
+          "description": "Vector Tug-of-War: Drag two vectors (arrows) on a grid to see their resultant vector update as they are added."
+        }
+      },
+      {
+        "id": "matrices",
+        "title": "Matrices and Determinants",
+        "objectives": [
+          "Perform matrix multiplication",
+          "Calculate the determinant and inverse of a 2x2 matrix"
+        ],
+        "concepts": [
+          "Matrix multiplication: row by column.",
+          "Determinant of [a b; c d] is ad - bc."
+        ],
+        "experiment": {
+          "type": "matrix-transformer",
+          "description": "Shape Shifter: Apply a 2x2 matrix to a square on a grid and watch the square undergo rotation, scaling, or shearing based on the matrix values."
+        }
+      }
+    ]
+  },
+  {
+    "id": "statistics-probability",
+    "title": "Statistics & Probability",
+    "lessons": [
+      {
+        "id": "central-tendency",
+        "title": "Measures of Central Tendency",
+        "objectives": [
+          "Calculate mean, median, and mode for raw and grouped data"
+        ],
+        "concepts": [
+          "Mean: sum of values / number of values.",
+          "Median: middle value when sorted.",
+          "Mode: most frequent value."
+        ],
+        "experiment": {
+          "type": "data-visualizer",
+          "description": "Live Stats: Add/remove data points in a set and watch the mean, median, and mode indicators shift on a number line."
+        }
+      },
+      {
+        "id": "probability",
+        "title": "Basic Probability",
+        "objectives": [
+          "Calculate the probability of a simple event",
+          "Understand the probability scale (0 to 1)"
+        ],
+        "concepts": [
+          "P(E) = Number of favorable outcomes / Total outcomes.",
+          "Sum of probabilities of all possible outcomes is 1."
+        ],
+        "experiment": {
+          "type": "probability-sim",
+          "description": "Coin Flip Lab: Simulate flipping a coin 100 or 1000 times to see how the experimental probability approaches 0.5 (theoretical)."
+        }
+      }
+    ]
+  },
+  {
+    "id": "measurement",
+    "title": "Measurement",
+    "lessons": [
+      {
+        "id": "perimeter-area",
+        "title": "Perimeter and Area",
+        "objectives": [
+          "Calculate perimeter and area of basic shapes",
+          "Solve problems involving compound shapes"
+        ],
+        "concepts": [
+          "Area of rectangle = length x width.",
+          "Area of circle = πr^2."
+        ],
+        "experiment": {
+          "type": "area-builder",
+          "description": "Shape Flex: Resize a rectangle or circle and watch the area and perimeter values update dynamically as the dimensions change."
+        }
+      },
+      {
+        "id": "volume-capacity",
+        "title": "Volume and Capacity",
+        "objectives": [
+          "Calculate the volume of prisms and cylinders"
+        ],
+        "concepts": [
+          "Volume = Area of base x height."
+        ],
+        "experiment": {
+          "type": "volume-filler",
+          "description": "Water Tank: Fill different shaped 3D containers (prism, cylinder) with water to visualize how volume relates to base area and height."
+        }
+      }
+    ]
+  }
+]

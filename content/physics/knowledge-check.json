@@ -1,0 +1,112 @@
+[
+  {
+    "id": "q1",
+    "question": "Which of the following is a vector quantity?",
+    "options": ["Mass", "Distance", "Velocity", "Temperature"],
+    "answer": "Velocity",
+    "explanation": "Velocity has both magnitude and direction, making it a vector. The others are scalars."
+  },
+  {
+    "id": "q2",
+    "question": "The gradient of a distance-time graph represents:",
+    "options": ["Acceleration", "Speed", "Force", "Displacement"],
+    "answer": "Speed",
+    "explanation": "Speed is the rate of change of distance, which corresponds to the gradient of the distance-time graph."
+  },
+  {
+    "id": "q3",
+    "question": "In which state of matter is heat transfer by conduction most effective?",
+    "options": ["Solid", "Liquid", "Gas", "Vacuum"],
+    "answer": "Solid",
+    "explanation": "Conduction relies on direct contact and vibration of particles, which are closest together in solids."
+  },
+  {
+    "id": "q4",
+    "question": "According to Boyle's Law, if the volume of a gas decreases at a constant temperature, the pressure will:",
+    "options": ["Decrease", "Increase", "Stay the same", "Become zero"],
+    "answer": "Increase",
+    "explanation": "Boyle's Law states that pressure and volume are inversely proportional (PV = constant)."
+  },
+  {
+    "id": "q5",
+    "question": "What is the relationship between wave speed (v), frequency (f), and wavelength (λ)?",
+    "options": ["v = f + λ", "v = f / λ", "v = fλ", "v = λ / f"],
+    "answer": "v = fλ",
+    "explanation": "The wave equation states that speed equals the product of frequency and wavelength."
+  },
+  {
+    "id": "q6",
+    "question": "What happens to a light ray when it passes from air into a denser medium like glass?",
+    "options": [
+      "It speeds up and bends away from the normal",
+      "It slows down and bends towards the normal",
+      "It speeds up and bends towards the normal",
+      "It slows down and bends away from the normal"
+    ],
+    "answer": "It slows down and bends towards the normal",
+    "explanation": "Refraction occurs because light travels slower in denser media, causing it to bend toward the normal."
+  },
+  {
+    "id": "q7",
+    "question": "In a series circuit, if one bulb blows, the other bulbs will:",
+    "options": ["Stay lit", "Get brighter", "Go out", "Get dimmer"],
+    "answer": "Go out",
+    "explanation": "In a series circuit, there is only one path for current. If that path is broken, current stops flowing everywhere."
+  },
+  {
+    "id": "q8",
+    "question": "What is the unit of electrical resistance?",
+    "options": ["Volt", "Ampere", "Ohm", "Watt"],
+    "answer": "Ohm",
+    "explanation": "Resistance is measured in Ohms (Ω), according to Ohm's Law (V = IR)."
+  },
+  {
+    "id": "q9",
+    "question": "Which type of radiation has the highest penetrating power?",
+    "options": ["Alpha", "Beta", "Gamma", "X-ray"],
+    "answer": "Gamma",
+    "explanation": "Gamma rays are high-energy electromagnetic waves and can pass through several centimeters of lead."
+  },
+  {
+    "id": "q10",
+    "question": "If a radioactive source has a half-life of 2 hours, what fraction of the original sample remains after 6 hours?",
+    "options": ["1/2", "1/4", "1/8", "1/16"],
+    "answer": "1/8",
+    "explanation": "After 3 half-lives (6/2=3), the remaining fraction is (1/2)^3 = 1/8."
+  },
+  {
+    "id": "q11",
+    "question": "What is the weight of a 10kg mass on Earth? (g = 10 N/kg)",
+    "options": ["1N", "10N", "100N", "1000N"],
+    "answer": "100N",
+    "explanation": "Weight = mass * gravity = 10kg * 10 N/kg = 100N."
+  },
+  {
+    "id": "q12",
+    "question": "The energy of a moving object is called:",
+    "options": ["Potential energy", "Kinetic energy", "Thermal energy", "Chemical energy"],
+    "answer": "Kinetic energy",
+    "explanation": "Kinetic energy is the energy an object possesses due to its motion."
+  },
+  {
+    "id": "q13",
+    "question": "Which of these is a non-renewable energy source?",
+    "options": ["Solar", "Wind", "Coal", "Hydroelectric"],
+    "answer": "Coal",
+    "explanation": "Coal is a fossil fuel and cannot be replenished on a human timescale."
+  },
+  {
+    "id": "q14",
+    "question": "Sound waves are an example of:",
+    "options": ["Transverse waves", "Longitudinal waves", "Electromagnetic waves", "Surface waves"],
+    "answer": "Longitudinal waves",
+    "explanation": "Sound waves involve particles vibrating back and forth in the same direction as the wave travels."
+  },
+  {
+    "id": "q15",
+    "question": "The process of a gas turning into a liquid is called:",
+    "options": ["Evaporation", "Sublimation", "Condensation", "Freezing"],
+    "answer": "Condensation",
+    "explanation": "Condensation is the phase change from gas to liquid."
+  }
+]

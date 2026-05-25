@@ -1,0 +1,10 @@
+.navbar { background: #fff; border-bottom: 1px solid #e5e7eb; padding: 0 1.5rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+.navbar-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; height: 64px; gap: 2rem; }
+.navbar-brand { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; font-weight: 700; font-size: 1.25rem; color: #111827; }
+.navbar-logo { font-size: 1.5rem; }
+.navbar-title { background: linear-gradient(135deg, #2563eb, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.navbar-links { display: flex; align-items: center; gap: 0.75rem; margin-left: auto; }
+.navbar-link { text-decoration: none; color: #6b7280; font-weight: 500; font-size: 0.95rem; padding: 0.5rem 1rem; border-radius: 8px; transition: all 0.2s; }
+.navbar-link:hover { color: #111827; background: #f3f4f6; }
+.navbar-link.active { color: #2563eb; background: #eff6ff; }
+.navbar-breadcrumb { color: #9ca3af; font-size: 0.9rem; text-transform: capitalize; }

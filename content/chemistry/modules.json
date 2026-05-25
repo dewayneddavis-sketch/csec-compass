@@ -1,0 +1,180 @@
+[
+  {
+    "id": "principles-of-chemistry",
+    "title": "Principles of Chemistry",
+    "lessons": [
+      {
+        "id": "states-of-matter",
+        "title": "States of Matter",
+        "objectives": [
+          "Describe the three states of matter",
+          "Explain changes of state using the kinetic theory"
+        ],
+        "concepts": [
+          "Matter exists as solid, liquid, and gas.",
+          "Kinetic theory: Particles are in constant motion."
+        ],
+        "experiment": {
+          "type": "simulation",
+          "description": "State Shifter: Adjust the temperature slider to watch particles move faster as a solid turns into a liquid and then a gas."
+        }
+      },
+      {
+        "id": "atomic-structure",
+        "title": "Atomic Structure",
+        "objectives": [
+          "Describe the structure of the atom",
+          "Define atomic number and mass number"
+        ],
+        "concepts": [
+          "Atoms consist of protons, neutrons, and electrons.",
+          "Protons and neutrons are in the nucleus."
+        ],
+        "experiment": {
+          "type": "atom-builder",
+          "description": "Atom Architect: Drag protons, neutrons, and electrons into the atom to build different elements and see their position on the Periodic Table."
+        }
+      }
+    ]
+  },
+  {
+    "id": "periodic-table-bonding",
+    "title": "Periodic Table and Bonding",
+    "lessons": [
+      {
+        "id": "periodic-table-trends",
+        "title": "Periodic Table Trends",
+        "objectives": [
+          "Describe the arrangement of elements in the Periodic Table",
+          "Identify trends in groups and periods"
+        ],
+        "concepts": [
+          "Elements are arranged by increasing atomic number.",
+          "Groups have similar chemical properties."
+        ],
+        "experiment": {
+          "type": "interactive-table",
+          "description": "Trend Tracker: Click on different groups/periods to highlight trends like electronegativity or atomic radius across the Periodic Table."
+        }
+      },
+      {
+        "id": "ionic-covalent-bonding",
+        "title": "Ionic and Covalent Bonding",
+        "objectives": [
+          "Explain the formation of ionic and covalent bonds",
+          "Draw dot-and-cross diagrams"
+        ],
+        "concepts": [
+          "Ionic bonding: Transfer of electrons.",
+          "Covalent bonding: Sharing of electrons."
+        ],
+        "experiment": {
+          "type": "bond-creator",
+          "description": "Bonding Lab: Select two atoms and choose to 'transfer' or 'share' electrons to form a stable molecule or lattice."
+        }
+      }
+    ]
+  },
+  {
+    "id": "mole-concept",
+    "title": "The Mole Concept",
+    "lessons": [
+      {
+        "id": "molar-mass-calculations",
+        "title": "Molar Mass and Calculations",
+        "objectives": [
+          "Calculate relative molecular mass",
+          "Convert between moles and mass"
+        ],
+        "concepts": [
+          "The mole is a unit of measurement for amount of substance.",
+          "Molar mass is the mass of one mole of a substance."
+        ],
+        "experiment": {
+          "type": "calculator-tool",
+          "description": "Mole Machine: Input the formula of a compound and its mass to calculate the number of moles automatically, showing each step of the calculation."
+        }
+      }
+    ]
+  },
+  {
+    "id": "acids-bases-salts",
+    "title": "Acids, Bases, and Salts",
+    "lessons": [
+      {
+        "id": "ph-scale-indicators",
+        "title": "pH Scale and Indicators",
+        "objectives": [
+          "Describe the pH scale",
+          "Use indicators to identify acids and bases"
+        ],
+        "concepts": [
+          "Acids have pH < 7, Bases have pH > 7.",
+          "Universal indicator shows a range of colors."
+        ],
+        "experiment": {
+          "type": "virtual-lab",
+          "description": "pH Tester: Dip virtual litmus paper or add drops of indicator to various household liquids (lemon juice, soap, water) to determine their pH."
+        }
+      },
+      {
+        "id": "neutralization",
+        "title": "Neutralization and Salt Formation",
+        "objectives": [
+          "Explain the process of neutralization",
+          "Identify the products of acid-base reactions"
+        ],
+        "concepts": [
+          "Acid + Base -> Salt + Water."
+        ],
+        "experiment": {
+          "type": "titration-sim",
+          "description": "Titration Challenge: Carefully add a base to an acid using a burette until the indicator changes color to find the exact neutralization point."
+        }
+      }
+    ]
+  },
+  {
+    "id": "redox-reactions",
+    "title": "Oxidation and Reduction",
+    "lessons": [
+      {
+        "id": "defining-redox",
+        "title": "Defining Redox",
+        "objectives": [
+          "Define oxidation and reduction in terms of electron transfer",
+          "Identify oxidizing and reducing agents"
+        ],
+        "concepts": [
+          "OIL RIG: Oxidation Is Loss, Reduction Is Gain (of electrons)."
+        ],
+        "experiment": {
+          "type": "interactive-equation",
+          "description": "Electron Flow: Click on atoms in a chemical equation to 'see' the transfer of electrons and label which species is oxidized or reduced."
+        }
+      }
+    ]
+  },
+  {
+    "id": "organic-chemistry",
+    "title": "Organic Chemistry",
+    "lessons": [
+      {
+        "id": "hydrocarbons-alkanes",
+        "title": "Introduction to Hydrocarbons (Alkanes)",
+        "objectives": [
+          "Define hydrocarbons",
+          "Name and draw the first four alkanes"
+        ],
+        "concepts": [
+          "Hydrocarbons contain only carbon and hydrogen.",
+          "Alkanes are saturated hydrocarbons (single bonds)."
+        ],
+        "experiment": {
+          "type": "molecule-builder",
+          "description": "Carbon Chain: Drag carbon and hydrogen atoms together to build methane, ethane, propane, and butane, seeing their 3D structures."
+        }
+      }
+    ]
+  }
+]

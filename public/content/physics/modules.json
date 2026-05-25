@@ -1,0 +1,160 @@
+[
+  {
+    "id": "mechanics",
+    "title": "Mechanics",
+    "lessons": [
+      {
+        "id": "scalars-vectors",
+        "title": "Scalars and Vectors",
+        "objectives": [
+          "Distinguish between scalar and vector quantities",
+          "Add vectors graphically and algebraically"
+        ],
+        "concepts": [
+          "Scalars have magnitude only (e.g., mass, time).",
+          "Vectors have magnitude and direction (e.g., force, velocity)."
+        ],
+        "experiment": {
+          "type": "vector-addition",
+          "description": "Vector Tug-of-War: Drag and rotate arrows representing forces to see how their resultant force changes in real-time."
+        }
+      },
+      {
+        "id": "motion-graphs",
+        "title": "Distance-Time and Velocity-Time Graphs",
+        "objectives": [
+          "Interpret distance-time and velocity-time graphs",
+          "Calculate gradient and area under the graph"
+        ],
+        "concepts": [
+          "Gradient of distance-time graph = speed.",
+          "Gradient of velocity-time graph = acceleration.",
+          "Area under velocity-time graph = displacement."
+        ],
+        "experiment": {
+          "type": "graph-sim",
+          "description": "Motion Tracker: Move a virtual car on a track and watch its distance-time and velocity-time graphs plot live."
+        }
+      }
+    ]
+  },
+  {
+    "id": "thermal-physics",
+    "title": "Thermal Physics",
+    "lessons": [
+      {
+        "id": "temperature-heat",
+        "title": "Temperature and Heat Transfer",
+        "objectives": [
+          "Define temperature and heat",
+          "Describe conduction, convection, and radiation"
+        ],
+        "concepts": [
+          "Temperature is a measure of kinetic energy.",
+          "Conduction occurs in solids; Convection in fluids; Radiation in vacuum."
+        ],
+        "experiment": {
+          "type": "heat-sim",
+          "description": "Thermal Lab: Place an ice cube on different materials (wood, metal, plastic) and use a slider to adjust room temperature, observing the melting rate."
+        }
+      },
+      {
+        "id": "gas-laws",
+        "title": "The Gas Laws",
+        "objectives": [
+          "Apply Boyle's Law, Charles' Law, and the Pressure Law"
+        ],
+        "concepts": [
+          "Boyle's Law: P1V1 = P2V2 (constant T).",
+          "Charles' Law: V1/T1 = V2/T2 (constant P)."
+        ],
+        "experiment": {
+          "type": "piston-sim",
+          "description": "Gas Chamber: Use a piston to change the volume of a gas and watch how the pressure and temperature gauges react."
+        }
+      }
+    ]
+  },
+  {
+    "id": "waves-light",
+    "title": "Waves and Light",
+    "lessons": [
+      {
+        "id": "wave-properties",
+        "title": "Properties of Waves",
+        "objectives": [
+          "Define frequency, wavelength, and amplitude",
+          "Apply the wave equation v = fλ"
+        ],
+        "concepts": [
+          "Transverse vs. Longitudinal waves.",
+          "Reflection, Refraction, and Diffraction."
+        ],
+        "experiment": {
+          "type": "ripple-tank",
+          "description": "Ripple Tank Sim: Drop a stone in water and adjust frequency/amplitude to see how wave patterns change and interact with barriers."
+        }
+      },
+      {
+        "id": "light-refraction",
+        "title": "Refraction and Lenses",
+        "objectives": [
+          "Apply Snell's Law of refraction",
+          "Describe the formation of images by lenses"
+        ],
+        "concepts": [
+          "Refractive index n = sin i / sin r.",
+          "Converging (convex) vs. Diverging (concave) lenses."
+        ],
+        "experiment": {
+          "type": "optics-bench",
+          "description": "Ray Box: Shine a light ray through a glass block or lens and drag a protractor to measure the angles of incidence and refraction."
+        }
+      }
+    ]
+  },
+  {
+    "id": "electricity-magnetism",
+    "title": "Electricity and Magnetism",
+    "lessons": [
+      {
+        "id": "electric-circuits",
+        "title": "Current, Voltage, and Resistance",
+        "objectives": [
+          "Apply Ohm's Law V = IR",
+          "Differentiate between series and parallel circuits"
+        ],
+        "concepts": [
+          "Current (I) is the flow of charge.",
+          "Resistance (R) opposes the flow of current."
+        ],
+        "experiment": {
+          "type": "circuit-builder",
+          "description": "Circuit Lab: Drag batteries, resistors, and bulbs onto a board to build circuits. Measure current and voltage using a virtual multimeter."
+        }
+      }
+    ]
+  },
+  {
+    "id": "nuclear-physics",
+    "title": "Nuclear Physics",
+    "lessons": [
+      {
+        "id": "radioactivity",
+        "title": "Radioactivity and Half-Life",
+        "objectives": [
+          "Describe alpha, beta, and gamma radiation",
+          "Calculate half-life from decay curves"
+        ],
+        "concepts": [
+          "Radioactive decay is random.",
+          "Half-life is the time taken for half the nuclei to decay."
+        ],
+        "experiment": {
+          "type": "decay-sim",
+          "description": "Half-Life Clock: Start with 100 radioactive atoms and watch them 'pop' randomly over time, plotting the remaining atoms on a graph."
+        }
+      }
+    ]
+  }
+]

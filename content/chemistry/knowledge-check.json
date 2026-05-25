@@ -1,0 +1,182 @@
+[
+  {
+    "id": "q1",
+    "question": "Which of the following describes the arrangement of particles in a solid?",
+    "options": [
+      "Randomly arranged and far apart",
+      "Closely packed in a regular lattice",
+      "Closely packed but randomly arranged",
+      "Constantly moving and filling the container"
+    ],
+    "answer": "Closely packed in a regular lattice",
+    "explanation": "In a solid, particles are held together by strong forces in a fixed, regular pattern."
+  },
+  {
+    "id": "q2",
+    "question": "What is the atomic number of an element?",
+    "options": [
+      "The number of neutrons in the nucleus",
+      "The sum of protons and neutrons",
+      "The number of protons in the nucleus",
+      "The number of electrons in the outer shell"
+    ],
+    "answer": "The number of protons in the nucleus",
+    "explanation": "The atomic number uniquely identifies an element and equals the number of protons."
+  },
+  {
+    "id": "q3",
+    "question": "Which type of bonding involves the sharing of electron pairs between atoms?",
+    "options": [
+      "Ionic bonding",
+      "Metallic bonding",
+      "Covalent bonding",
+      "Hydrogen bonding"
+    ],
+    "answer": "Covalent bonding",
+    "explanation": "Covalent bonds form when non-metal atoms share electrons to achieve a stable outer shell."
+  },
+  {
+    "id": "q4",
+    "question": "An atom has 11 protons and 12 neutrons. What is its mass number?",
+    "options": [
+      "11",
+      "12",
+      "23",
+      "1"
+    ],
+    "answer": "23",
+    "explanation": "Mass number = Number of protons + Number of neutrons (11 + 12 = 23)."
+  },
+  {
+    "id": "q5",
+    "question": "What is the pH of a neutral solution at 25°C?",
+    "options": [
+      "0",
+      "1",
+      "7",
+      "14"
+    ],
+    "answer": "7",
+    "explanation": "A pH of 7 is considered neutral; values below 7 are acidic and above 7 are basic."
+  },
+  {
+    "id": "q6",
+    "question": "In a redox reaction, oxidation is defined as:",
+    "options": [
+      "The gain of electrons",
+      "The loss of electrons",
+      "The gain of hydrogen",
+      "The loss of oxygen"
+    ],
+    "answer": "The loss of electrons",
+    "explanation": "OIL RIG: Oxidation Is Loss (of electrons), Reduction Is Gain."
+  },
+  {
+    "id": "q7",
+    "question": "Which group of elements in the Periodic Table is known as the Halogens?",
+    "options": [
+      "Group 1",
+      "Group 2",
+      "Group 7",
+      "Group 0"
+    ],
+    "answer": "Group 7",
+    "explanation": "Group 7 elements (F, Cl, Br, I) are called the Halogens."
+  },
+  {
+    "id": "q8",
+    "question": "What is the molar mass of Water (H2O)? (H=1, O=16)",
+    "options": [
+      "17 g/mol",
+      "18 g/mol",
+      "16 g/mol",
+      "2 g/mol"
+    ],
+    "answer": "18 g/mol",
+    "explanation": "Molar mass = (2 * 1) + 16 = 18 g/mol."
+  },
+  {
+    "id": "q9",
+    "question": "Which of the following is a saturated hydrocarbon?",
+    "options": [
+      "Ethene",
+      "Ethyne",
+      "Ethane",
+      "Benzene"
+    ],
+    "answer": "Ethane",
+    "explanation": "Alkanes like ethane are saturated because they contain only single carbon-carbon bonds."
+  },
+  {
+    "id": "q10",
+    "question": "What is the product of a neutralization reaction between an acid and a base?",
+    "options": [
+      "Salt and Oxygen",
+      "Salt and Hydrogen",
+      "Salt and Water",
+      "Acid and Water"
+    ],
+    "answer": "Salt and Water",
+    "explanation": "Acid + Base -> Salt + Water is a standard neutralization reaction."
+  },
+  {
+    "id": "q11",
+    "question": "Which particle has a negative charge?",
+    "options": [
+      "Proton",
+      "Neutron",
+      "Electron",
+      "Nucleus"
+    ],
+    "answer": "Electron",
+    "explanation": "Electrons carry a negative charge, while protons are positive and neutrons are neutral."
+  },
+  {
+    "id": "q12",
+    "question": "Which indicator turns red in an acidic solution?",
+    "options": [
+      "Phenolphthalein",
+      "Blue litmus paper",
+      "Red litmus paper",
+      "Methyl orange"
+    ],
+    "answer": "Blue litmus paper",
+    "explanation": "Blue litmus paper turns red in the presence of an acid."
+  },
+  {
+    "id": "q13",
+    "question": "What is the general formula for alkanes?",
+    "options": [
+      "CnH2n",
+      "CnH2n+2",
+      "CnH2n-2",
+      "CnHn"
+    ],
+    "answer": "CnH2n+2",
+    "explanation": "Alkanes follow the general formula CnH2n+2."
+  },
+  {
+    "id": "q14",
+    "question": "How many electrons can the first shell of an atom hold?",
+    "options": [
+      "2",
+      "8",
+      "18",
+      "32"
+    ],
+    "answer": "2",
+    "explanation": "The innermost electron shell (K shell) can hold a maximum of 2 electrons."
+  },
+  {
+    "id": "q15",
+    "question": "Which process is used to separate a mixture of liquids with different boiling points?",
+    "options": [
+      "Filtration",
+      "Crystallization",
+      "Fractional distillation",
+      "Chromatography"
+    ],
+    "answer": "Fractional distillation",
+    "explanation": "Fractional distillation separates liquids based on their different boiling points."
+  }
+]

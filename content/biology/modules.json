@@ -1,0 +1,144 @@
+[
+  {
+    "id": "cells-life-processes",
+    "title": "Cells & Life Processes",
+    "lessons": [
+      {
+        "id": "cell-structure",
+        "title": "Cell Structure and Function",
+        "objectives": [
+          "Identify parts of animal and plant cells",
+          "Explain the function of cell organelles"
+        ],
+        "concepts": [
+          "Organelles: Nucleus (control center), Mitochondria (energy), Chloroplast (photosynthesis).",
+          "Differences between plant and animal cells (cell wall, vacuoles)."
+        ],
+        "experiment": {
+          "type": "drag-drop-label",
+          "description": "Cell Lab: Drag labels (Nucleus, Mitochondria, etc.) to the correct locations on a diagram of a plant and animal cell."
+        }
+      },
+      {
+        "id": "osmosis-diffusion",
+        "title": "Diffusion and Osmosis",
+        "objectives": [
+          "Define diffusion and osmosis",
+          "Predict the movement of molecules in various concentrations"
+        ],
+        "concepts": [
+          "Diffusion: Movement from high to low concentration.",
+          "Osmosis: Movement of water across a semi-permeable membrane."
+        ],
+        "experiment": {
+          "type": "simulation",
+          "description": "Osmosis Sim: Place a 'cell' in solutions of different salt concentrations and watch it shrink or swell in real-time."
+        }
+      }
+    ]
+  },
+  {
+    "id": "nutrition-transport",
+    "title": "Nutrition & Transport",
+    "lessons": [
+      {
+        "id": "photosynthesis",
+        "title": "Photosynthesis",
+        "objectives": [
+          "State the equation for photosynthesis",
+          "Identify the factors affecting the rate of photosynthesis"
+        ],
+        "concepts": [
+          "6CO2 + 6H2O + light -> C6H12O6 + 6O2.",
+          "Factors: Light intensity, CO2 concentration, temperature."
+        ],
+        "experiment": {
+          "type": "graph-sim",
+          "description": "Photosynthesis Lab: Adjust sliders for light intensity and temperature to see how the rate of oxygen bubble production changes in an aquatic plant."
+        }
+      },
+      {
+        "id": "circulatory-system",
+        "title": "The Circulatory System",
+        "objectives": [
+          "Identify parts of the human heart",
+          "Trace the path of blood through the body"
+        ],
+        "concepts": [
+          "Arteries carry blood away from the heart; Veins carry blood towards the heart.",
+          "Pulmonary vs. Systemic circulation."
+        ],
+        "experiment": {
+          "type": "interactive-pathway",
+          "description": "Blood Flow Tracker: Click on parts of the heart in the correct order to successfully pump blood from the right atrium to the aorta."
+        }
+      }
+    ]
+  },
+  {
+    "id": "respiration-excretion",
+    "title": "Respiration & Excretion",
+    "lessons": [
+      {
+        "id": "respiration",
+        "title": "Aerobic and Anaerobic Respiration",
+        "objectives": [
+          "Compare aerobic and anaerobic respiration",
+          "Explain the production of lactic acid during exercise"
+        ],
+        "concepts": [
+          "Aerobic: uses oxygen, produces more energy.",
+          "Anaerobic: no oxygen, produces lactic acid (in humans)."
+        ],
+        "experiment": {
+          "type": "energy-meter",
+          "description": "Respiration Race: Choose between 'Oxygen' and 'No Oxygen' modes for a runner and see how quickly energy (ATP) depletes and lactic acid builds up."
+        }
+      }
+    ]
+  },
+  {
+    "id": "ecology-environment",
+    "title": "Ecology & The Environment",
+    "lessons": [
+      {
+        "id": "food-chains",
+        "title": "Food Chains and Webs",
+        "objectives": [
+          "Construct food chains and food webs",
+          "Identify producers, consumers, and decomposers"
+        ],
+        "concepts": [
+          "Energy flow in an ecosystem starts with the sun.",
+          "Trophic levels: 10% energy transfer rule."
+        ],
+        "experiment": {
+          "type": "web-builder",
+          "description": "Ecosystem Builder: Drag and drop organisms (grass, grasshopper, frog, hawk) to create a functional food web. If one population is removed, watch the impact on others."
+        }
+      }
+    ]
+  },
+  {
+    "id": "genetics-variation",
+    "title": "Genetics & Variation",
+    "lessons": [
+      {
+        "id": "dna-inheritance",
+        "title": "DNA and Inheritance",
+        "objectives": [
+          "Explain the role of chromosomes and genes",
+          "Use Punnett squares to predict inheritance"
+        ],
+        "concepts": [
+          "Genotype vs. Phenotype.",
+          "Dominant vs. Recessive alleles."
+        ],
+        "experiment": {
+          "type": "punnett-square-maker",
+          "description": "Breed-a-Pet: Select genotypes for two parent pets (e.g., Bb for brown fur) and use a Punnett square to predict the colors of their offspring."
+        }
+      }
+    ]
+  }
+]

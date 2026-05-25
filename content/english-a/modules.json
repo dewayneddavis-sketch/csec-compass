@@ -1,0 +1,157 @@
+[
+  {
+    "id": "comprehension-analysis",
+    "title": "Comprehension & Analysis",
+    "lessons": [
+      {
+        "id": "literal-meaning",
+        "title": "Literal vs. Inferential Meaning",
+        "objectives": [
+          "Distinguish between what is explicitly stated and what is implied",
+          "Identify main ideas and supporting details"
+        ],
+        "concepts": [
+          "Literal meaning: The surface level meaning (factual).",
+          "Inferential meaning: Reading between the lines (deducing based on evidence)."
+        ],
+        "experiment": {
+          "type": "highlight-tool",
+          "description": "Evidence Hunter: Read a short passage and highlight the specific sentences that support a given inference."
+        }
+      },
+      {
+        "id": "figurative-language",
+        "title": "Figurative Language",
+        "objectives": [
+          "Identify and explain similes, metaphors, and personification",
+          "Analyze the effect of figurative language on the reader"
+        ],
+        "concepts": [
+          "Simile: Comparison using 'like' or 'as'.",
+          "Metaphor: Direct comparison.",
+          "Personification: Giving human traits to non-human things."
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Figure of Speech Match: Drag literary devices to their corresponding examples in a series of poem snippets."
+        }
+      }
+    ]
+  },
+  {
+    "id": "summary-writing",
+    "title": "Summary Writing",
+    "lessons": [
+      {
+        "id": "identifying-main-points",
+        "title": "Identifying Main Points",
+        "objectives": [
+          "Extract key information from a passage",
+          "Discard redundant or decorative information"
+        ],
+        "concepts": [
+          "A summary must be objective and concise.",
+          "Avoid examples and repetitions in a summary."
+        ],
+        "experiment": {
+          "type": "text-trimmer",
+          "description": "Word Count Squeeze: Start with a 100-word paragraph and click on words/sentences to 'delete' them, aiming to reach a 30-word summary that still retains the core meaning."
+        }
+      }
+    ]
+  },
+  {
+    "id": "grammar-mechanics",
+    "title": "Grammar & Mechanics",
+    "lessons": [
+      {
+        "id": "subject-verb-agreement",
+        "title": "Subject-Verb Agreement",
+        "objectives": [
+          "Ensure subjects and verbs agree in number",
+          "Handle collective nouns and indefinite pronouns"
+        ],
+        "concepts": [
+          "Singular subjects take singular verbs.",
+          "Plural subjects take plural verbs."
+        ],
+        "experiment": {
+          "type": "sentence-fixer",
+          "description": "Agreement Lab: A series of sentences appear with blank verbs. Select the correct verb form from a dropdown to make the sentence grammatically correct."
+        }
+      },
+      {
+        "id": "punctuation-mastery",
+        "title": "Punctuation Mastery",
+        "objectives": [
+          "Use commas, colons, and semi-colons correctly"
+        ],
+        "concepts": [
+          "Semi-colon: connects two independent clauses.",
+          "Colon: introduces a list or explanation."
+        ],
+        "experiment": {
+          "type": "punctuation-drag-drop",
+          "description": "Punctuation Placement: Drag punctuation marks ( , ; : . ) into an unpunctuated paragraph to restore its meaning."
+        }
+      }
+    ]
+  },
+  {
+    "id": "vocabulary",
+    "title": "Vocabulary",
+    "lessons": [
+      {
+        "id": "synonyms-antonyms",
+        "title": "Synonyms and Antonyms",
+        "objectives": [
+          "Identify words with similar or opposite meanings",
+          "Use context clues to determine word meaning"
+        ],
+        "concepts": [
+          "Synonyms: Words with similar meanings (e.g., happy/joyful).",
+          "Antonyms: Words with opposite meanings (e.g., hot/cold)."
+        ],
+        "experiment": {
+          "type": "word-swap",
+          "description": "Context Clue Challenge: Replace a highlighted word in a sentence with its best synonym from a list, ensuring the sentence's meaning remains intact."
+        }
+      }
+    ]
+  },
+  {
+    "id": "essay-writing",
+    "title": "Essay Writing",
+    "lessons": [
+      {
+        "id": "plot-structure",
+        "title": "Narrative Plot Structure",
+        "objectives": [
+          "Understand the 5 stages of plot: Exposition, Rising Action, Climax, Falling Action, Resolution"
+        ],
+        "concepts": [
+          "Every story needs a conflict and a resolution."
+        ],
+        "experiment": {
+          "type": "plot-arranger",
+          "description": "Story Arc Builder: Drag shuffled plot events onto a 'Story Mountain' diagram to arrange them in the correct narrative sequence."
+        }
+      },
+      {
+        "id": "argument-structure",
+        "title": "Structuring an Argument",
+        "objectives": [
+          "Develop a clear thesis statement",
+          "Organize points logically using transitions"
+        ],
+        "concepts": [
+          "Introduction, Body Paragraphs (PEEL: Point, Evidence, Explanation, Link), Conclusion."
+        ],
+        "experiment": {
+          "type": "outliner",
+          "description": "Argument Organizer: Drag and drop 'Intro', 'Body Paragraphs', and 'Conclusion' blocks into the correct order to form a coherent essay structure."
+        }
+      }
+    ]
+  }
+]
