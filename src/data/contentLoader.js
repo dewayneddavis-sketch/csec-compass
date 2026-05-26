@@ -29,9 +29,11 @@ const fallbackSubjects = [
 export const experimentTypes = {
   "graphing": { title: "Graphing Calculator", description: "Plot y = mx + b with draggable sliders for m (slope) and b (intercept).", interactive: "graphing-calc" },
   "drag-drop": { title: "Drag & Drop Label", description: "Drag labels to the correct positions on a diagram.", interactive: "drag-drop" },
+  "circuit-builder": { title: "Circuit Builder", description: "Build electrical circuits with batteries, bulbs, resistors, and switches.", interactive: "circuit-builder" },
+  "balance-scale": { title: "Balance Scale", description: "Solve equations by keeping the scale balanced with weights and variables.", interactive: "balance-scale" },
+  "vocab-flashcards": { title: "Flashcard Trainer", description: "Build vocabulary with flip-and-review flashcards.", interactive: "flashcard" },
   "interactive-quiz": { title: "Interactive Quiz", description: "Test your knowledge with instant feedback on each answer." },
   "visual-converter": { title: "Visual Converter", description: "See how values convert between different representations." },
-  "balance-scale": { title: "Balance Scale", description: "Solve equations by keeping the scale balanced." },
   "graph-plotter": { title: "Graph Plotter", description: "Adjust parameters and see graphs update in real-time." },
   "graph-linear": { title: "Line Lab", description: "Plot y=mx+b with draggable sliders for m and b.", interactive: "graphing-calc" },
   "number-line-plotter": { title: "Number Line Plotter", description: "Visualize inequalities on an interactive number line." },

@@ -1,0 +1,167 @@
+[
+  {
+    "question": "Which of these is a function of the human skeleton?",
+    "options": [
+      "Producing hormones",
+      "Protecting vital organs",
+      "Digesting proteins",
+      "Pumping blood"
+    ],
+    "answer": 1,
+    "explanation": "One of the primary functions of the skeleton is the protection of soft internal organs, like the ribs protecting the heart and lungs."
+  },
+  {
+    "question": "Where does the exchange of gases (oxygen and carbon dioxide) occur in the lungs?",
+    "options": [
+      "Bronchi",
+      "Trachea",
+      "Alveoli",
+      "Larynx"
+    ],
+    "answer": 2,
+    "explanation": "Alveoli are tiny air sacs at the end of the bronchioles where gas exchange between the air and blood takes place."
+  },
+  {
+    "question": "Which organelle is responsible for releasing energy through aerobic respiration?",
+    "options": [
+      "Nucleus",
+      "Mitochondria",
+      "Ribosome",
+      "Cell Membrane"
+    ],
+    "answer": 1,
+    "explanation": "Mitochondria are often called the 'powerhouse' of the cell because they produce energy in the form of ATP."
+  },
+  {
+    "question": "Mitosis results in the production of two daughter cells that are:",
+    "options": [
+      "Genetically identical to the parent cell",
+      "Genetically different from each other",
+      "Haploid cells (half the chromosomes)",
+      "Used only for reproduction"
+    ],
+    "answer": 0,
+    "explanation": "Mitosis is the process of cell division used for growth and repair, producing two identical daughter cells."
+  },
+  {
+    "question": "A lack of Vitamin C in the diet can lead to which deficiency disease?",
+    "options": [
+      "Rickets",
+      "Night blindness",
+      "Scurvy",
+      "Anemia"
+    ],
+    "answer": 2,
+    "explanation": "Scurvy is a disease caused by a deficiency of Vitamin C, leading to swollen, bleeding gums and opening of previously healed wounds."
+  },
+  {
+    "question": "Which food group is the primary source of energy for the human body?",
+    "options": [
+      "Proteins",
+      "Carbohydrates",
+      "Vitamins",
+      "Minerals"
+    ],
+    "answer": 1,
+    "explanation": "Carbohydrates, such as starches and sugars, are the body's main and most efficient source of energy."
+  },
+  {
+    "question": "Which of the following is an example of a communicable disease?",
+    "options": [
+      "Diabetes",
+      "Hypertension",
+      "Influenza",
+      "Asthma"
+    ],
+    "answer": 2,
+    "explanation": "Influenza (the flu) is caused by a virus and can be passed from person to person."
+  },
+  {
+    "question": "What is the function of white blood cells in the human body?",
+    "options": [
+      "Transporting oxygen",
+      "Clotting blood at wounds",
+      "Defending against pathogens",
+      "Carrying nutrients"
+    ],
+    "answer": 2,
+    "explanation": "White blood cells are part of the immune system and help the body fight off infections and foreign invaders."
+  },
+  {
+    "question": "How do vaccines typically work?",
+    "options": [
+      "By killing bacteria directly with chemicals",
+      "By stimulating the immune system to produce antibodies",
+      "By repairing damaged tissues in the body",
+      "By providing a permanent layer of skin over wounds"
+    ],
+    "answer": 1,
+    "explanation": "Vaccines introduce a weakened or dead version of a pathogen, training the immune system to recognize and fight it in the future."
+  },
+  {
+    "question": "Which Gas is the main contributor to the Greenhouse Effect and Global Warming?",
+    "options": [
+      "Oxygen",
+      "Carbon dioxide",
+      "Nitrogen",
+      "Helium"
+    ],
+    "answer": 1,
+    "explanation": "Carbon dioxide traps heat in the atmosphere, leading to the greenhouse effect and an increase in global temperatures."
+  },
+  {
+    "question": "What is the first step in large-scale water purification?",
+    "options": [
+      "Chlorination",
+      "Filtration",
+      "Screening",
+      "Aeration"
+    ],
+    "answer": 2,
+    "explanation": "Screening involves passing water through bars or mesh to remove large objects like sticks, leaves, and trash."
+  },
+  {
+    "question": "Which type of drug slows down the activity of the central nervous system?",
+    "options": [
+      "Stimulants",
+      "Depressants",
+      "Hallucinogens",
+      "Antibiotics"
+    ],
+    "answer": 1,
+    "explanation": "Depressants, such as alcohol, slow down brain function and physical reactions."
+  },
+  {
+    "question": "Smoking is a major risk factor for which of the following?",
+    "options": [
+      "Lung Cancer",
+      "Type 1 Diabetes",
+      "Color Blindness",
+      "Hearing Loss"
+    ],
+    "answer": 0,
+    "explanation": "Smoking introduces carcinogens into the lungs, significantly increasing the risk of developing lung cancer."
+  },
+  {
+    "question": "Which of these is a permanent method of contraception for females?",
+    "options": [
+      "Condom",
+      "Diaphragm",
+      "Tubal Ligation",
+      "Birth Control Pill"
+    ],
+    "answer": 2,
+    "explanation": "Tubal ligation is a surgical procedure that permanently prevents pregnancy by blocking the fallopian tubes."
+  },
+  {
+    "question": "Which STI is caused by a virus and attacks the body's immune system?",
+    "options": [
+      "Syphilis",
+      "Gonorrhea",
+      "HIV/AIDS",
+      "Chlamydia"
+    ],
+    "answer": 2,
+    "explanation": "Human Immunodeficiency Virus (HIV) targets the immune system, specifically CD4 cells, potentially leading to AIDS."
+  }
+]

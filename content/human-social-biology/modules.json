@@ -1,0 +1,122 @@
+[
+  {
+    "id": "hsb-mod-1",
+    "title": "Body Systems",
+    "lessons": [
+      {
+        "id": "hsb-l1-1",
+        "title": "Skeletal and Muscular Systems",
+        "objectives": ["Identify major bones in the human skeleton", "Explain the function of muscles and joints"],
+        "concepts": ["Bone functions", "Axial vs Appendicular skeleton", "Types of joints", "Antagonistic muscle pairs"],
+        "experiment": "Body Explorer: Click on the skeletal and muscular systems in a 3D model to learn about individual bones, muscles, and how they interact to facilitate movement."
+      },
+      {
+        "id": "hsb-l1-2",
+        "title": "Circulatory and Respiratory Systems",
+        "objectives": ["Trace the path of blood through the heart", "Describe the process of gaseous exchange in the lungs"],
+        "concepts": ["Heart structure", "Systemic vs Pulmonary circulation", "Alveoli functions", "Mechanism of breathing"],
+        "experiment": "Body Explorer: Navigate through the heart and lungs to see blood flow and gas exchange in real-time, clicking on organs for detailed anatomical info."
+      }
+    ]
+  },
+  {
+    "id": "hsb-mod-2",
+    "title": "Cell & Tissue Biology",
+    "lessons": [
+      {
+        "id": "hsb-l2-1",
+        "title": "Cell Structure and Function",
+        "objectives": ["Identify organelles in plant and animal cells", "Relate cell structure to function"],
+        "concepts": ["Nucleus", "Mitochondria", "Ribosomes", "Cell membrane", "Cytoplasm", "Specialized cells"],
+        "experiment": "Virtual Microscope: Drag a cell slide under a virtual microscope, adjust the focus, and label the organelles you see."
+      },
+      {
+        "id": "hsb-l2-2",
+        "title": "Cell Division",
+        "objectives": ["Distinguish between mitosis and meiosis", "Explain the significance of cell division in growth and reproduction"],
+        "concepts": ["Chromosomes", "Stages of mitosis", "Gamete formation", "Genetic variation"],
+        "experiment": "Division Timeline: Drag and drop the stages of mitosis and meiosis into the correct order and watch a short animation of the process."
+      }
+    ]
+  },
+  {
+    "id": "hsb-mod-3",
+    "title": "Nutrition & Health",
+    "lessons": [
+      {
+        "id": "hsb-l3-1",
+        "title": "Nutrients and a Balanced Diet",
+        "objectives": ["Identify main food groups and their functions", "Understand the impact of vitamins and minerals"],
+        "concepts": ["Carbohydrates", "Proteins", "Fats", "Vitamins (A, B1, C, D)", "Minerals (Calcium, Iron)", "Malnutrition"],
+        "experiment": "Nutrition Calculator: Enter various food items (e.g., '1 Apple', '1 Slice of Pizza') and see a real-time breakdown of calories, proteins, carbs, and fats relative to daily needs."
+      },
+      {
+        "id": "hsb-l3-2",
+        "title": "Digestion and Absorption",
+        "objectives": ["Describe the stages of digestion", "Identify the role of enzymes"],
+        "concepts": ["Mouth", "Stomach", "Small Intestine", "Large Intestine", "Digestive enzymes", "Absorption of nutrients"],
+        "experiment": "Enzyme Reaction Lab: Change temperature and pH levels to see how they affect the rate of starch breakdown by salivary amylase."
+      }
+    ]
+  },
+  {
+    "id": "hsb-mod-4",
+    "title": "Disease & Immunity",
+    "lessons": [
+      {
+        "id": "hsb-l4-1",
+        "title": "Communicable and Non-communicable Diseases",
+        "objectives": ["Distinguish between types of diseases", "Understand common disease vectors"],
+        "concepts": ["Pathogens", "Diabetes", "Hypertension", "Malaria", "HIV/AIDS", "Lifestyle factors"],
+        "experiment": "Disease Transmission Sim: Watch how a virus spreads through a population in a visual simulation. Adjust variables like 'infection rate' and 'vaccination coverage' to see the outcome."
+      },
+      {
+        "id": "hsb-l4-2",
+        "title": "Immunity and Vaccination",
+        "objectives": ["Explain the body's natural defense mechanisms", "Understand how vaccines provide protection"],
+        "concepts": ["Skin barrier", "White blood cells", "Antibodies", "Active vs Passive immunity", "Vaccine types"],
+        "experiment": "Immune Response Game: Deploy white blood cells and antibodies to defend the body against incoming waves of different pathogens."
+      }
+    ]
+  },
+  {
+    "id": "hsb-mod-5",
+    "title": "The Environment & Health",
+    "lessons": [
+      {
+        "id": "hsb-l5-1",
+        "title": "Water Supply and Pollution",
+        "objectives": ["Understand the water cycle and purification methods", "Identify sources of environmental pollution"],
+        "concepts": ["Water purification", "Air and water pollution", "Global warming", "Eutrophication"],
+        "experiment": "Water Purifier Lab: Arrange layers (sand, gravel, charcoal) to filter a sample of muddy water and test the clarity of the result."
+      },
+      {
+        "id": "hsb-l5-2",
+        "title": "Waste Management",
+        "objectives": ["Describe safe methods of waste disposal", "Understand the impact of population growth"],
+        "concepts": ["Landfills", "Sewage treatment", "Recycling", "Population control measures"],
+        "experiment": "Waste Sorter Challenge: Categorize various waste items into 'Recycle', 'Compost', or 'Landfill' bins as fast as possible."
+      }
+    ]
+  },
+  {
+    "id": "hsb-mod-6",
+    "title": "Social Implications",
+    "lessons": [
+      {
+        "id": "hsb-l6-1",
+        "title": "Substance Abuse",
+        "objectives": ["Identify types of drugs and their effects on the body", "Understand the social consequences of drug abuse"],
+        "concepts": ["Stimulants", "Depressants", "Alcohol effects", "Smoking and health", "Addiction"],
+        "experiment": "Effect Visualizer: Select different substances (e.g., Nicotine, Alcohol) and see a visual representation of their long-term effects on various body organs."
+      },
+      {
+        "id": "hsb-l6-2",
+        "title": "Family Planning and STIs",
+        "objectives": ["Explain various birth control methods", "Identify common sexually transmitted infections"],
+        "concepts": ["Contraceptive methods", "Syphilis", "Gonorrhea", "Herpes", "Social importance of family planning"],
+        "experiment": "Contraceptive Match: Match different birth control methods (e.g., barrier, hormonal, surgical) to their descriptions and effectiveness levels."
+      }
+    ]
+  }
+]

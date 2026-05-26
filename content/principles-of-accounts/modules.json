@@ -1,0 +1,175 @@
+[
+  {
+    "id": "accounting-introduction",
+    "title": "Introduction to Accounting",
+    "lessons": [
+      {
+        "id": "accounting-concepts",
+        "title": "Accounting Concepts and Principles",
+        "objectives": [
+          "Define accounting and its purpose",
+          "Explain core concepts like Business Entity and Accruals"
+        ],
+        "concepts": [
+          "Accounting is the process of recording, summarizing, and communicating financial information.",
+          "Business Entity: The business is separate from its owner."
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Concept Match: Match accounting principles (e.g., Going Concern, Prudence) with their correct definitions."
+        }
+      },
+      {
+        "id": "accounting-equation",
+        "title": "The Accounting Equation",
+        "objectives": [
+          "Apply the accounting equation: Assets = Liabilities + Capital"
+        ],
+        "concepts": [
+          "Assets are resources owned by the business.",
+          "Liabilities are debts owed to outsiders.",
+          "Capital (Equity) is the owner's investment."
+        ],
+        "experiment": {
+          "type": "balance-scale",
+          "description": "Equation Balance: Drag items like 'Cash', 'Loan', and 'Furniture' to the correct side of a balance scale to keep the accounting equation balanced."
+        }
+      }
+    ]
+  },
+  {
+    "id": "ledger-double-entry",
+    "title": "The Ledger and Double Entry",
+    "lessons": [
+      {
+        "id": "double-entry-system",
+        "title": "Double Entry Bookkeeping",
+        "objectives": [
+          "Record transactions in T-accounts using debit and credit rules"
+        ],
+        "concepts": [
+          "Every transaction affects at least two accounts.",
+          "Debit (Dr) on the left; Credit (Cr) on the right.",
+          "Increase in Assets -> Debit; Increase in Liabilities -> Credit."
+        ],
+        "experiment": {
+          "type": "interactive-ledger",
+          "description": "T-Account Tracker: Enter transactions (e.g., 'Paid rent by cash $500') and click the correct side (Dr/Cr) of the relevant accounts to see the system balance."
+        }
+      }
+    ]
+  },
+  {
+    "id": "books-original-entry",
+    "title": "Books of Original Entry",
+    "lessons": [
+      {
+        "id": "journals-daybooks",
+        "title": "Journals and Daybooks",
+        "objectives": [
+          "Record transactions in the Sales, Purchases, and General Journals"
+        ],
+        "concepts": [
+          "Daybooks are used to record transactions before they are posted to the ledger."
+        ],
+        "experiment": {
+          "type": "data-entry-sim",
+          "description": "Journal Entry: Fill out a digital sales journal based on a set of provided invoices."
+        }
+      },
+      {
+        "id": "cash-book",
+        "title": "The Cash Book",
+        "objectives": [
+          "Prepare a two-column and three-column Cash Book"
+        ],
+        "concepts": [
+          "A Cash Book acts as both a book of original entry and a ledger account.",
+          "Contra entries involve both cash and bank."
+        ],
+        "experiment": {
+          "type": "workbook-tool",
+          "description": "Cash Book Builder: Enter cash and bank transactions into a template and calculate the closing balances."
+        }
+      }
+    ]
+  },
+  {
+    "id": "trial-balance-errors",
+    "title": "Trial Balance and Errors",
+    "lessons": [
+      {
+        "id": "preparing-trial-balance",
+        "title": "Preparing a Trial Balance",
+        "objectives": [
+          "List account balances to verify double entry accuracy"
+        ],
+        "concepts": [
+          "A Trial Balance is a list of all ledger balances at a point in time.",
+          "Total Debits should equal Total Credits."
+        ],
+        "experiment": {
+          "type": "interactive-summary",
+          "description": "Balance Checker: Drag ledger balances into a Trial Balance template and see if they balance. If not, troubleshoot the errors."
+        }
+      }
+    ]
+  },
+  {
+    "id": "financial-statements",
+    "title": "Financial Statements of Sole Traders",
+    "lessons": [
+      {
+        "id": "income-statement",
+        "title": "The Income Statement",
+        "objectives": [
+          "Prepare a Trading and Profit & Loss Account"
+        ],
+        "concepts": [
+          "Calculates Gross Profit and Net Profit.",
+          "Sales - Cost of Goods Sold = Gross Profit."
+        ],
+        "experiment": {
+          "type": "statement-builder",
+          "description": "Profit Calculator: Drag income and expense items into the correct sections of an Income Statement to calculate the final net profit."
+        }
+      },
+      {
+        "id": "statement-financial-position",
+        "title": "Statement of Financial Position (Balance Sheet)",
+        "objectives": [
+          "Classify assets and liabilities and prepare a Balance Sheet"
+        ],
+        "concepts": [
+          "Shows the financial position of a business at a specific date.",
+          "Non-current vs. Current Assets/Liabilities."
+        ],
+        "experiment": {
+          "type": "classifier-sim",
+          "description": "Asset/Liability Sort: Drag various items into buckets (Current Asset, Non-current Liability, etc.) to build a complete Balance Sheet."
+        }
+      }
+    ]
+  },
+  {
+    "id": "adjustments-statements",
+    "title": "Adjustments to Financial Statements",
+    "lessons": [
+      {
+        "id": "accruals-prepayments",
+        "title": "Accruals and Prepayments",
+        "objectives": [
+          "Adjust accounts for expenses and income not yet paid or received"
+        ],
+        "concepts": [
+          "Accrued Expenses: Expenses incurred but not yet paid (Liability).",
+          "Prepaid Expenses: Expenses paid in advance (Asset)."
+        ],
+        "experiment": {
+          "type": "slider-tool",
+          "description": "Time Adjustment: Use a timeline slider to see how paying an expense early (prepayment) or late (accrual) affects the current year's profit."
+        }
+      }
+    ]
+  }
+]
