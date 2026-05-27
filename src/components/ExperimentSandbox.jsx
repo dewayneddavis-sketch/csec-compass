@@ -55,7 +55,7 @@ export default function ExperimentSandbox({ subjectId, config, lessonExperiment 
       case "circuit-builder":
         return <CircuitBuilder />;
       case "balance-scale":
-        return <BalanceScale />;
+        return <BalanceScale experimentType={experimentType} />;
       case "flashcard":
       case "vocab-flashcards":
         return <FlashcardSystem subjectId={subjectId} />;
@@ -65,7 +65,7 @@ export default function ExperimentSandbox({ subjectId, config, lessonExperiment 
             <h4>About this Activity</h4>
             <p>{experimentConfig?.description || "Explore this concept hands-on with our interactive tool."}</p>
             <div className="exp-tip">
-              <strong>💡 Tip:</strong> Experiments help reinforce what you've learned. Try different inputs and observe the results!
+              <strong>Tip:</strong> Experiments help reinforce what you've learned. Try different inputs and observe the results!
             </div>
           </div>
         );
@@ -77,8 +77,8 @@ export default function ExperimentSandbox({ subjectId, config, lessonExperiment 
       <div className="exp-header">
         <h3><span className="exp-icon">🧪</span> {experimentConfig?.title || "Interactive Lab"}</h3>
         <div className="exp-tabs">
-          <button className={`exp-tab ${activeTab === "play" ? "active" : ""}`} onClick={() => setActiveTab("play")}>🎮 Play</button>
-          <button className={`exp-tab ${activeTab === "info" ? "active" : ""}`} onClick={() => setActiveTab("info")}>ℹ️ About</button>
+          <button className={`exp-tab ${activeTab === "play" ? "active" : ""}`} onClick={() => setActiveTab("play")}>Play</button>
+          <button className={`exp-tab ${activeTab === "info" ? "active" : ""}`} onClick={() => setActiveTab("info")}>About</button>
         </div>
       </div>
       <div className="exp-body">
@@ -87,7 +87,7 @@ export default function ExperimentSandbox({ subjectId, config, lessonExperiment 
             <h4>About this Activity</h4>
             <p>{experimentConfig?.description || "Explore this concept hands-on with our interactive tool."}</p>
             <div className="exp-tip">
-              <strong>💡 Tip:</strong> Experiments help reinforce what you've learned. Try different inputs and observe the results!
+              <strong>Tip:</strong> Experiments help reinforce what you've learned. Try different inputs and observe the results!
             </div>
           </div>
         )}

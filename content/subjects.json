@@ -52,5 +52,11 @@
     "name": "Human & Social Biology",
     "description": "Understand the human body, health, and how our practices affect the environment.",
     "icon": "HealthAndSafety"
+  },
+  {
+    "id": "spanish",
+    "name": "Spanish",
+    "description": "Learn CSEC Spanish: master grammar, expand your vocabulary, and explore Hispanic culture through interactive lessons.",
+    "icon": "Language"
   }
 ]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "spa-mod-1",
+    "title": "Vocabulary & Daily Life",
+    "lessons": [
+      {
+        "id": "spa-l1-1",
+        "title": "Greetings and Personal Information",
+        "objectives": ["Identify common greetings and farewells", "Exchange personal information such as name, age, and nationality"],
+        "concepts": ["Greetings (¡Hola!, Buenos días)", "Self-introduction (Me llamo, Soy de...)", "Numbers 1-100", "Age (Tengo ... años)"],
+        "experiment": "Flashcard Trainer: Flip cards to learn daily vocabulary (Greetings, Family, School) with visual and audio cues."
+      },
+      {
+        "id": "spa-l1-2",
+        "title": "Home, School and Shopping",
+        "objectives": ["Describe items in the home and school", "Ask for prices and quantities in a shopping context"],
+        "concepts": ["School supplies (el lápiz, el libro)", "Furniture and rooms", "Shopping phrases (¿Cuánto cuesta?, Es caro/barato)"],
+        "experiment": "Flashcard Trainer: Master vocabulary for clothes and food using an interactive flip-card system."
+      }
+    ]
+  },
+  {
+    "id": "spa-mod-2",
+    "title": "Grammar Fundamentals",
+    "lessons": [
+      {
+        "id": "spa-l2-1",
+        "title": "Nouns, Articles, and Adjectives",
+        "objectives": ["Apply rules of gender and number to nouns and articles", "Ensure adjective agreement with nouns"],
+        "concepts": ["Masculine vs Feminine", "Definite vs Indefinite articles", "Pluralization rules", "Descriptive adjectives"],
+        "experiment": "Verb Conjugation Lab: Drag endings to match subjects for regular -AR, -ER, and -IR verbs in the present tense."
+      },
+      {
+        "id": "spa-l2-2",
+        "title": "Verb Tenses: Past, Present, and Future",
+        "objectives": ["Conjugate verbs in the preterite and imperfect tenses", "Form sentences in the future tense"],
+        "concepts": ["Present tense", "Preterite vs Imperfect (Past)", "Future tense (ir + a + infinitive)", "High-frequency irregular verbs (ser, estar, tener)"],
+        "experiment": "Verb Conjugation Lab: Practice past and future tense conjugations by dragging the correct suffixes onto verb stems."
+      }
+    ]
+  },
+  {
+    "id": "spa-mod-3",
+    "title": "Reading Comprehension",
+    "lessons": [
+      {
+        "id": "spa-l3-1",
+        "title": "Understanding Short Passages",
+        "objectives": ["Extract specific information from short texts", "Identify main ideas in Spanish passages"],
+        "concepts": ["Skimming and scanning", "Context clues", "Cognates and false friends", "Answering WH-questions (Quién, Qué, Dónde)"],
+        "experiment": "Dialogue Builder: Drag and drop phrases to reconstruct a logical conversation based on a short reading prompt."
+      },
+      {
+        "id": "spa-l3-2",
+        "title": "Interpreting Public Signs and Notices",
+        "objectives": ["Identify the meaning of signs, advertisements, and announcements", "Deduce intended audience and purpose"],
+        "concepts": ["Imperative forms in signs", "Common abbreviations", "Vocabulary for travel and public places"],
+        "experiment": "Dialogue Builder: Create a conversation between a traveler and a station agent using phrases from public notices."
+      }
+    ]
+  },
+  {
+    "id": "spa-mod-4",
+    "title": "Writing Skills",
+    "lessons": [
+      {
+        "id": "spa-l4-1",
+        "title": "Letter and Email Writing",
+        "objectives": ["Compose informal letters and emails", "Use appropriate greetings and closings"],
+        "concepts": ["Informal vs Formal tone", "Structure of a letter", "Transition words (primero, luego, finalmente)"],
+        "experiment": "Dialogue Builder: Drag phrases to build an email response to a friend's invitation."
+      },
+      {
+        "id": "spa-l4-2",
+        "title": "Short Essays and Narratives",
+        "objectives": ["Write short paragraphs describing events", "Use different tenses to narrate a story"],
+        "concepts": ["Sequencing events", "Expressing opinions", "Vocabulary for storytelling"],
+        "experiment": "Dialogue Builder: Organize sentences to create a cohesive narrative about a past holiday."
+      }
+    ]
+  },
+  {
+    "id": "spa-mod-5",
+    "title": "Oral Communication",
+    "lessons": [
+      {
+        "id": "spa-l5-1",
+        "title": "Role-Play Scenarios",
+        "objectives": ["Participate in simulated dialogues in everyday situations", "Use common conversational fillers and phrases"],
+        "concepts": ["Asking for help", "Ordering at a restaurant", "Discussing plans"],
+        "experiment": "Dialogue Builder: Complete role-play scripts for a doctor's visit and a restaurant scenario by dragging the correct responses."
+      },
+      {
+        "id": "spa-l5-2",
+        "title": "Pronunciation and Fluency",
+        "objectives": ["Apply rules of Spanish pronunciation and stress", "Communicate clearly in common social interactions"],
+        "concepts": ["Vowel sounds", "The letter 'ñ' and double 'll'", "Intonation in questions"],
+        "experiment": "Flashcard Trainer: Listen to native pronunciations and match them with written phrases and meanings."
+      }
+    ]
+  },
+  {
+    "id": "spa-mod-6",
+    "title": "Culture",
+    "lessons": [
+      {
+        "id": "spa-l6-1",
+        "title": "Festivals and Traditions",
+        "objectives": ["Identify major Hispanic festivals (e.g., Día de los Muertos, Las Fallas)", "Understand Caribbean Spanish traditions"],
+        "concepts": ["Traditional foods", "National holidays in Latin America", "Musical genres (Salsa, Reggaetón)"],
+        "experiment": "Flashcard Trainer: Explore cultural symbols and festival names using an interactive deck."
+      },
+      {
+        "id": "spa-l6-2",
+        "title": "Caribbean Spanish and Notable Figures",
+        "objectives": ["Recognize variations in Spanish spoken in the Caribbean", "Identify notable figures in Hispanic history and arts"],
+        "concepts": ["Caribbean vocabulary", "Artists like Frida Kahlo", "Famous writers and athletes"],
+        "experiment": "Dialogue Builder: Match famous quotes from notable Hispanic figures to the person who said them."
+      }
+    ]
+  }
+]

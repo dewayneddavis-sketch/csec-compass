@@ -1,0 +1,122 @@
+[
+  {
+    "id": "ss-mod-1",
+    "title": "The Family",
+    "lessons": [
+      {
+        "id": "ss-l1-1",
+        "title": "Family Types and Structures",
+        "objectives": ["Identify different types of families in the Caribbean", "Describe the characteristics of each family type"],
+        "concepts": ["Nuclear Family", "Extended Family", "Single-parent Family", "Reconstituted Family", "Common-law Relationship"],
+        "experiment": "Family Tree Builder: Drag and drop family members to create different family structures and see how they are defined."
+      },
+      {
+        "id": "ss-l1-2",
+        "title": "Roles and Responsibilities",
+        "objectives": ["Examine the roles of family members", "Understand the importance of responsible parenthood"],
+        "concepts": ["Division of Labour", "Socialization", "Economic Support", "Emotional Support"],
+        "experiment": "Role Assigner: Match various family tasks and responsibilities to different family members in a virtual household scenario."
+      }
+    ]
+  },
+  {
+    "id": "ss-mod-2",
+    "title": "Groups and Institutions",
+    "lessons": [
+      {
+        "id": "ss-l2-1",
+        "title": "Primary and Secondary Groups",
+        "objectives": ["Distinguish between primary and secondary groups", "Understand the characteristics of groups"],
+        "concepts": ["Peer Groups", "Clubs", "Professional Organizations", "Group Cohesion", "Leadership Styles"],
+        "experiment": "Group Sorter: Categorize different social gatherings (e.g., a family dinner vs. a business meeting) into primary or secondary groups."
+      },
+      {
+        "id": "ss-l2-2",
+        "title": "Social Institutions",
+        "objectives": ["Identify major social institutions", "Understand their functions in society"],
+        "concepts": ["Religion", "Education", "The Economy", "The Justice System"],
+        "experiment": "Institution Matcher: Link social needs (e.g., 'spiritual guidance', 'learning skills') to the corresponding social institution."
+      }
+    ]
+  },
+  {
+    "id": "ss-mod-3",
+    "title": "Government and Democracy",
+    "lessons": [
+      {
+        "id": "ss-l3-1",
+        "title": "Systems of Government",
+        "objectives": ["Compare different systems of government in the Caribbean", "Understand the democratic process"],
+        "concepts": ["Constitutional Monarchy", "Republic", "Dictatorship", "Constituency", "Elections"],
+        "experiment": "Election Day Simulation: Act as a voter or a candidate, understanding the process of casting ballots and how constituencies work."
+      },
+      {
+        "id": "ss-l3-2",
+        "title": "The Branches of Government",
+        "objectives": ["Identify the three branches of government", "Explain the principle of separation of powers"],
+        "concepts": ["Legislative", "Executive", "Judiciary", "Checks and Balances"],
+        "experiment": "Laws and Gavel: Trace a law from its proposal in parliament to its enforcement and interpretation by the courts."
+      }
+    ]
+  },
+  {
+    "id": "ss-mod-4",
+    "title": "Regional Integration",
+    "lessons": [
+      {
+        "id": "ss-l4-1",
+        "title": "CARICOM and Its Objectives",
+        "objectives": ["Explain the purpose of CARICOM", "Identify the member states"],
+        "concepts": ["Economic Integration", "Functional Cooperation", "Common Market", "CSME"],
+        "experiment": "Caribbean Map Quiz: Drag and drop Caribbean country flags to their correct locations and identify which are CARICOM members."
+      },
+      {
+        "id": "ss-l4-2",
+        "title": "Benefits and Challenges",
+        "objectives": ["Discuss the benefits of regional integration", "Identify challenges to integration"],
+        "concepts": ["Freedom of Movement", "Trade Barriers", "Standardization", "Regional Security"],
+        "experiment": "Trade Route Game: Move goods between Caribbean islands and see how removing trade barriers affects the speed and cost."
+      }
+    ]
+  },
+  {
+    "id": "ss-mod-5",
+    "title": "Population",
+    "lessons": [
+      {
+        "id": "ss-l5-1",
+        "title": "Population Distribution and Growth",
+        "objectives": ["Understand factors affecting population distribution", "Calculate birth and death rates"],
+        "concepts": ["Population Density", "Fertility Rate", "Mortality Rate", "Natural Increase"],
+        "experiment": "Population Pyramid Builder: Adjust birth and death rates to see how they change the shape of a country's population pyramid over time."
+      },
+      {
+        "id": "ss-l5-2",
+        "title": "Migration",
+        "objectives": ["Identify types of migration", "Analyze the push and pull factors"],
+        "concepts": ["Internal Migration", "External Migration", "Brain Drain", "Remittances"],
+        "experiment": "Push-Pull Magnet: Drag various factors (e.g., 'better jobs', 'natural disasters') to either the 'Push' or 'Pull' category for a virtual migrant."
+      }
+    ]
+  },
+  {
+    "id": "ss-mod-6",
+    "title": "Communication and Consumer Affairs",
+    "lessons": [
+      {
+        "id": "ss-l6-1",
+        "title": "Forms of Communication",
+        "objectives": ["Distinguish between different forms of communication", "Understand the impact of technology"],
+        "concepts": ["Verbal vs. Non-verbal", "Mass Media", "Digital Divide", "Social Media"],
+        "experiment": "Message Relay: Send a message through various mediums (letter, phone, internet) and compare the speed, cost, and reach."
+      },
+      {
+        "id": "ss-l6-2",
+        "title": "Consumer Rights and Responsibilities",
+        "objectives": ["Identify consumer rights", "Understand the role of consumer protection agencies"],
+        "concepts": ["Right to Safety", "Right to Redress", "Budgeting", "Hire Purchase"],
+        "experiment": "Smart Shopper Challenge: Evaluate different product labels and contracts to identify misleading information and exercise consumer rights."
+      }
+    ]
+  }
+]

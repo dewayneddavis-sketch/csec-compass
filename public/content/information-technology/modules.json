@@ -1,0 +1,122 @@
+[
+  {
+    "id": "it-mod-1",
+    "title": "Computer Fundamentals",
+    "lessons": [
+      {
+        "id": "it-l1-1",
+        "title": "Hardware and Software",
+        "objectives": ["Identify internal and external hardware components", "Differentiate between system and application software"],
+        "concepts": ["CPU", "RAM", "ROM", "Input/Output Devices", "Operating Systems", "Utility Programs"],
+        "experiment": "Virtual PC Build: Drag and drop internal components like CPU and RAM onto a virtual motherboard and connect peripherals."
+      },
+      {
+        "id": "it-l1-2",
+        "title": "Data Representation",
+        "objectives": ["Convert between binary, decimal, and hexadecimal", "Understand bits, bytes, and storage capacities"],
+        "concepts": ["Binary Number System", "ASCII", "Units of Storage (KB, MB, GB, TB)"],
+        "experiment": "Binary Converter: Interactive tool to toggle bits on/off and see the resulting decimal and character representations."
+      }
+    ]
+  },
+  {
+    "id": "it-mod-2",
+    "title": "Programming",
+    "lessons": [
+      {
+        "id": "it-l2-1",
+        "title": "Problem Solving & Algorithms",
+        "objectives": ["Develop algorithms using pseudocode and flowcharts"],
+        "concepts": ["Logic Gates", "Sequence", "Selection", "Iteration", "Flowchart Symbols"],
+        "experiment": "Flowchart Builder: Assemble a flowchart for a logical process (e.g., 'Grade Calculator') using drag-and-drop symbols."
+      },
+      {
+        "id": "it-l2-2",
+        "title": "Programming Constructs",
+        "objectives": ["Implement code using variables, constants, and loops"],
+        "concepts": ["Data Types", "Variables", "Loops (For, While, Repeat)", "Conditional Statements"],
+        "experiment": "Code Playground: Write and run simple pseudocode/Pascal-like code in a live editor to solve mathematical problems."
+      }
+    ]
+  },
+  {
+    "id": "it-mod-3",
+    "title": "Databases",
+    "lessons": [
+      {
+        "id": "it-l3-1",
+        "title": "Database Design",
+        "objectives": ["Define tables, fields, records, and primary keys", "Understand relationships between tables"],
+        "concepts": ["Relational Database", "Primary/Foreign Keys", "Data Types", "One-to-Many Relationships"],
+        "experiment": "Schema Designer: Create a database schema for a school system, defining tables and linking them with primary keys."
+      },
+      {
+        "id": "it-l3-2",
+        "title": "Queries and Reports",
+        "objectives": ["Extract data using single and multi-criteria queries"],
+        "concepts": ["SQL Basics", "Sorting", "Calculated Fields", "Report Generation"],
+        "experiment": "Database Query Builder: Drag fields and criteria to build SQL queries visually and see the resulting data set."
+      }
+    ]
+  },
+  {
+    "id": "it-mod-4",
+    "title": "Networking & Internet",
+    "lessons": [
+      {
+        "id": "it-l4-1",
+        "title": "Network Types & Topologies",
+        "objectives": ["Differentiate between LAN, WAN, and MAN", "Identify network topologies"],
+        "concepts": ["Star, Bus, Ring Topologies", "Client-Server vs Peer-to-Peer", "Wireless Networking"],
+        "experiment": "Network Topology Drag: Connect devices into star, bus, or ring topologies and test the network connectivity."
+      },
+      {
+        "id": "it-l4-2",
+        "title": "Internet Security & Ethics",
+        "objectives": ["Identify security threats and protection methods", "Understand ethical IT use"],
+        "concepts": ["Firewalls", "Encryption", "Phishing", "Copyright/Piracy"],
+        "experiment": "Security Auditor: Review a series of simulated network configurations and emails to identify and fix security vulnerabilities."
+      }
+    ]
+  },
+  {
+    "id": "it-mod-5",
+    "title": "Web Technology",
+    "lessons": [
+      {
+        "id": "it-l5-1",
+        "title": "HTML Fundamentals",
+        "objectives": ["Create basic web pages using HTML tags"],
+        "concepts": ["Tags (Head, Body, H1, P, A, IMG)", "Document Structure", "Hyperlinks"],
+        "experiment": "Live HTML Editor: Edit HTML code on one side and see the rendered webpage update in real-time."
+      },
+      {
+        "id": "it-l5-2",
+        "title": "Styling & Interactivity",
+        "objectives": ["Apply basic styling with CSS and logic with JavaScript"],
+        "concepts": ["CSS Selectors", "Colors & Fonts", "JS Variables & Functions"],
+        "experiment": "Style-a-Page: Use a CSS panel to change colors, fonts, and layouts of a template webpage instantly."
+      }
+    ]
+  },
+  {
+    "id": "it-mod-6",
+    "title": "Word Processing & Spreadsheets",
+    "lessons": [
+      {
+        "id": "it-l6-1",
+        "title": "Advanced Word Processing",
+        "objectives": ["Use mail merge and advanced formatting"],
+        "concepts": ["Mail Merge", "Table of Contents", "Columns", "Styles"],
+        "experiment": "Mail Merge Simulator: Link a data source to a template letter and generate personalized invites for a group."
+      },
+      {
+        "id": "it-l6-2",
+        "title": "Spreadsheet Formulas & Charts",
+        "objectives": ["Use complex formulas and create data visualizations"],
+        "concepts": ["Absolute/Relative Referencing", "IF/VLOOKUP Functions", "Pivot Tables", "Charts"],
+        "experiment": "Budget Visualizer: Input financial data using formulas and select the best chart type to represent the trends."
+      }
+    ]
+  }
+]

@@ -130,3 +130,19 @@
 .fc-stat-known{background:#f0fdf4;color:#16a34a}
 .fc-stat-unknown{background:#fffbeb;color:#d97706}
 .fc-hint{font-size:.85rem;color:#6b7280;margin-bottom:1rem}
+.fc-stat-review{background:#eff6ff;color:#3b82f6}
+.fc-btn-review{background:#3b82f6;color:#fff}
+.fc-btn-review:hover:not(:disabled){background:#2563eb}
+.fc-pdot{width:10px;height:10px;border-radius:50%;background:#e5e7eb;transition:all .2s}
+.fc-pdot.current{background:#2563eb;transform:scale(1.3)}
+.fc-pdot.known{background:#22c55e}
+.fc-pdot.review{background:#3b82f6}
+.fc-pdot.unknown{background:#f59e0b}
+.cb-active{border-color:#2563eb!important;background:#eff6ff!important;color:#2563eb!important}
+.cb-hint{text-align:center;font-size:.8rem;color:#2563eb;font-weight:500;margin-top:.25rem}
+.bs-mode-tabs{display:flex;gap:.25rem;background:#f3f4f6;padding:.25rem;border-radius:10px;margin-top:.5rem}
+.bs-mode-tab{padding:.35rem .65rem;border:none;border-radius:8px;font-size:.78rem;font-weight:500;cursor:pointer;transition:all .2s;color:#6b7280;background:transparent}
+.bs-mode-tab.active{background:#fff;color:#2563eb;box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.bs-cat-asset .bs-wpreview{border-color:#22c55e}
+.bs-cat-liability .bs-wpreview{border-color:#f59e0b}
+.bs-cat-equity .bs-wpreview{border-color:#3b82f6}

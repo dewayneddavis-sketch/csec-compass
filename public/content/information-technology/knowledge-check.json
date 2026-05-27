@@ -1,0 +1,167 @@
+[
+  {
+    "question": "Which of the following is considered system software?",
+    "options": [
+      "Microsoft Word",
+      "Google Chrome",
+      "Windows 11",
+      "Adobe Photoshop"
+    ],
+    "answer": 2,
+    "explanation": "Windows 11 is an operating system, which is the primary type of system software."
+  },
+  {
+    "question": "What is the decimal equivalent of the binary number 1011?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "13"
+    ],
+    "answer": 2,
+    "explanation": "(1*8) + (0*4) + (1*2) + (1*1) = 8 + 0 + 2 + 1 = 11."
+  },
+  {
+    "question": "In a flowchart, what does a diamond shape represent?",
+    "options": [
+      "Start/Stop",
+      "Input/Output",
+      "Process",
+      "Decision"
+    ],
+    "answer": 3,
+    "explanation": "A diamond shape represents a decision point in an algorithm."
+  },
+  {
+    "question": "Which programming construct is used to repeat a block of code a specific number of times?",
+    "options": [
+      "Sequence",
+      "Selection",
+      "FOR Loop",
+      "IF-THEN"
+    ],
+    "answer": 2,
+    "explanation": "A FOR loop is a type of iteration used when the number of repetitions is known."
+  },
+  {
+    "question": "What is the primary function of a 'Primary Key' in a database table?",
+    "options": [
+      "To sort the data alphabetically",
+      "To uniquely identify each record",
+      "To encrypt sensitive information",
+      "To link the database to the internet"
+    ],
+    "answer": 1,
+    "explanation": "A Primary Key must be unique for every record in a table."
+  },
+  {
+    "question": "Which SQL keyword is used to extract data from a database?",
+    "options": [
+      "GET",
+      "FETCH",
+      "SELECT",
+      "EXTRACT"
+    ],
+    "answer": 2,
+    "explanation": "The SELECT statement is used to select data from a database."
+  },
+  {
+    "question": "Which network topology connects all devices to a central hub or switch?",
+    "options": [
+      "Bus",
+      "Star",
+      "Ring",
+      "Mesh"
+    ],
+    "answer": 1,
+    "explanation": "In a Star topology, all nodes are connected to a central connection point."
+  },
+  {
+    "question": "What does 'HTTPS' provide that 'HTTP' does not?",
+    "options": [
+      "Faster loading speeds",
+      "Better images",
+      "Encrypted communication",
+      "Automatic translations"
+    ],
+    "answer": 2,
+    "explanation": "HTTPS uses encryption to secure the communication between the browser and the server."
+  },
+  {
+    "question": "Which HTML tag is used to create a hyperlink?",
+    "options": [
+      "<link>",
+      "<a>",
+      "<href>",
+      "<url>"
+    ],
+    "answer": 1,
+    "explanation": "The <a> (anchor) tag is used to define hyperlinks."
+  },
+  {
+    "question": "What is the correct CSS syntax to change the text color of all <p> elements to red?",
+    "options": [
+      "p {color: red;}",
+      "<p style='color:red;'>",
+      "p: red;",
+      "all.p {color: red;}"
+    ],
+    "answer": 0,
+    "explanation": "The selector is 'p' and the property is 'color' set to 'red'."
+  },
+  {
+    "question": "In a spreadsheet, what does the formula =SUM(A1:A5) do?",
+    "options": [
+      "Multiplies values in cells A1 and A5",
+      "Counts the number of cells from A1 to A5",
+      "Adds the values in the range A1 through A5",
+      "Finds the largest value in the range A1 through A5"
+    ],
+    "answer": 2,
+    "explanation": "The SUM function adds up all the numbers in the specified range."
+  },
+  {
+    "question": "Which feature in word processing is used to create personalized letters for a large number of recipients?",
+    "options": [
+      "AutoCorrect",
+      "Mail Merge",
+      "Spell Check",
+      "Find and Replace"
+    ],
+    "answer": 1,
+    "explanation": "Mail Merge allows you to link a data source to a document template."
+  },
+  {
+    "question": "How many bits are in one byte?",
+    "options": [
+      "4",
+      "8",
+      "16",
+      "1024"
+    ],
+    "answer": 1,
+    "explanation": "There are exactly 8 bits in one byte."
+  },
+  {
+    "question": "Which of the following is an example of an input device?",
+    "options": [
+      "Monitor",
+      "Printer",
+      "Scanner",
+      "Speaker"
+    ],
+    "answer": 2,
+    "explanation": "A scanner is an input device used to convert physical documents into digital data."
+  },
+  {
+    "question": "What is the purpose of a firewall?",
+    "options": [
+      "To speed up the internet connection",
+      "To protect a network from unauthorized access",
+      "To store backup copies of files",
+      "To cool down the server room"
+    ],
+    "answer": 1,
+    "explanation": "A firewall monitors and controls incoming and outgoing network traffic based on security rules."
+  }
+]

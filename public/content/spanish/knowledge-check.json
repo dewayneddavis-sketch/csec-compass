@@ -1,0 +1,167 @@
+[
+  {
+    "question": "¿Cómo se dice 'I am from Jamaica' en español?",
+    "options": [
+      "Soy a Jamaica",
+      "Soy de Jamaica",
+      "Estoy de Jamaica",
+      "Tengo de Jamaica"
+    ],
+    "answer": 1,
+    "explanation": "The verb 'ser' (soy) is used with the preposition 'de' to express origin."
+  },
+  {
+    "question": "Which of these is the correct plural form of 'el lápiz'?",
+    "options": [
+      "Los lápizs",
+      "Los lápizes",
+      "Los lápices",
+      "Las lápices"
+    ],
+    "answer": 2,
+    "explanation": "Nouns ending in 'z' change the 'z' to 'c' and add '-es' to form the plural."
+  },
+  {
+    "question": "What does the expression 'Tengo hambre' mean?",
+    "options": [
+      "I am thirsty",
+      "I am cold",
+      "I am hungry",
+      "I am tired"
+    ],
+    "answer": 2,
+    "explanation": "In Spanish, we use the verb 'tener' (to have) with 'hambre' to say 'I am hungry'."
+  },
+  {
+    "question": "Choose the correct present tense conjugation of 'hablar' for the subject 'nosotros':",
+    "options": [
+      "Hablamos",
+      "Hablan",
+      "Habláis",
+      "Habló"
+    ],
+    "answer": 0,
+    "explanation": "Regular -AR verbs take the ending '-amos' for the 'nosotros' form in the present tense."
+  },
+  {
+    "question": "In a reading passage, you see the word 'éxito'. What does it mean?",
+    "options": [
+      "Exit",
+      "Success",
+      "Excitement",
+      "Expert"
+    ],
+    "answer": 1,
+    "explanation": "'Éxito' is a false friend; it looks like 'exit' but actually means 'success'."
+  },
+  {
+    "question": "How would you correctly conjugate 'comer' in the preterite (past) tense for 'yo'?",
+    "options": [
+      "Como",
+      "Comí",
+      "Comía",
+      "Comeré"
+    ],
+    "answer": 1,
+    "explanation": "The regular -ER preterite ending for 'yo' is '-í'."
+  },
+  {
+    "question": "Which of these is a formal way to say 'How are you?'",
+    "options": [
+      "¿Cómo estás?",
+      "¿Qué tal?",
+      "¿Cómo está usted?",
+      "¿Qué pasa?"
+    ],
+    "answer": 2,
+    "explanation": "Using 'usted' and the third-person singular form of the verb makes the greeting formal."
+  },
+  {
+    "question": "Identify the correct translation for 'I'm going to study tomorrow':",
+    "options": [
+      "Estudié mañana",
+      "Estudio mañana",
+      "Voy a estudiar mañana",
+      "Iba a estudiar mañana"
+    ],
+    "answer": 2,
+    "explanation": "The future is often formed using 'ir + a + infinitive'."
+  },
+  {
+    "question": "Which Hispanic festival is known for creating colorful alters to honor deceased loved ones?",
+    "options": [
+      "Las Fallas",
+      "La Tomatina",
+      "Día de los Muertos",
+      "Carnaval"
+    ],
+    "answer": 2,
+    "explanation": "The Day of the Dead (Día de los Muertos) involves creating 'ofrendas' (altars) to celebrate the lives of the deceased."
+  },
+  {
+    "question": "In a letter, which of these is an appropriate informal closing?",
+    "options": [
+      "Estimado amigo",
+      "Atentamente",
+      "Un fuerte abrazo",
+      "Muy señor mío"
+    ],
+    "answer": 2,
+    "explanation": "'Un fuerte abrazo' is a warm, informal way to end a letter to a friend or family member."
+  },
+  {
+    "question": "Where would you most likely hear the phrase '¿En qué puedo servirle?'",
+    "options": [
+      "In a stadium",
+      "In a shop or restaurant",
+      "In a park",
+      "At a concert"
+    ],
+    "answer": 1,
+    "explanation": "This phrase means 'How can I help/serve you?' and is common in customer service contexts."
+  },
+  {
+    "question": "Which of these words is a cognate (looks and means the same in English and Spanish)?",
+    "options": [
+      "Vaso",
+      "Hospital",
+      "Pan",
+      "Ropa"
+    ],
+    "answer": 1,
+    "explanation": "'Hospital' is spelled exactly the same and has the same meaning in both languages."
+  },
+  {
+    "question": "What is the capital of Spain?",
+    "options": [
+      "Barcelona",
+      "Madrid",
+      "Sevilla",
+      "Valencia"
+    ],
+    "answer": 1,
+    "explanation": "Madrid is the capital city of Spain."
+  },
+  {
+    "question": "How do you ask 'How much does it cost?'",
+    "options": [
+      "¿Dónde está?",
+      "¿Quién es?",
+      "¿Cuánto cuesta?",
+      "¿Cuándo es?"
+    ],
+    "answer": 2,
+    "explanation": "'¿Cuánto cuesta?' is the standard phrase for asking about the price of something."
+  },
+  {
+    "question": "Which famous Mexican artist is known for her self-portraits and connection to nature?",
+    "options": [
+      "Shakira",
+      "Frida Kahlo",
+      "Isabel Allende",
+      "Celia Cruz"
+    ],
+    "answer": 1,
+    "explanation": "Frida Kahlo is one of Mexico's most iconic artists, famous for her deeply personal self-portraits."
+  }
+]

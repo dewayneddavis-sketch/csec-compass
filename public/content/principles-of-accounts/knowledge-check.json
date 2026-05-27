@@ -1,0 +1,162 @@
+[
+  {
+    "id": "q1",
+    "question": "What is the fundamental accounting equation?",
+    "options": [
+      "Assets = Liabilities - Capital",
+      "Assets = Liabilities + Capital",
+      "Liabilities = Assets + Capital",
+      "Capital = Assets + Liabilities"
+    ],
+    "answer": "Assets = Liabilities + Capital",
+    "explanation": "The accounting equation states that the total resources (assets) of a business are financed by either creditors (liabilities) or the owner (capital)."
+  },
+  {
+    "id": "q2",
+    "question": "Which accounting principle states that a business should be treated as a separate entity from its owner?",
+    "options": [
+      "Going Concern",
+      "Accruals",
+      "Business Entity",
+      "Consistency"
+    ],
+    "answer": "Business Entity",
+    "explanation": "The Business Entity concept ensures that personal transactions of the owner are not mixed with business transactions."
+  },
+  {
+    "id": "q3",
+    "question": "An increase in an asset account is recorded as a:",
+    "options": ["Debit", "Credit", "Journal entry", "Balance"],
+    "answer": "Debit",
+    "explanation": "According to the rules of double entry, increases in assets are recorded as debits."
+  },
+  {
+    "id": "q4",
+    "question": "A 'Contra Entry' in a three-column cash book involves:",
+    "options": [
+      "Cash and Sales",
+      "Bank and Purchases",
+      "Cash and Bank",
+      "Discount and Bank"
+    ],
+    "answer": "Cash and Bank",
+    "explanation": "Contra entries occur when money is moved between the cash account and the bank account."
+  },
+  {
+    "id": "q5",
+    "question": "What is the main purpose of a Trial Balance?",
+    "options": [
+      "To calculate net profit",
+      "To check the mathematical accuracy of double entry",
+      "To list all assets and liabilities",
+      "To record daily transactions"
+    ],
+    "answer": "To check the mathematical accuracy of double entry",
+    "explanation": "A Trial Balance ensures that total debits equal total credits in the ledger."
+  },
+  {
+    "id": "q6",
+    "question": "Which of the following is a Current Asset?",
+    "options": ["Machinery", "Long-term Loan", "Inventory (Stock)", "Buildings"],
+    "answer": "Inventory (Stock)",
+    "explanation": "Current assets are expected to be converted into cash within one year."
+  },
+  {
+    "id": "q7",
+    "question": "Gross Profit is calculated as:",
+    "options": [
+      "Sales - Net Profit",
+      "Sales - Expenses",
+      "Sales - Cost of Goods Sold",
+      "Assets - Liabilities"
+    ],
+    "answer": "Sales - Cost of Goods Sold",
+    "explanation": "Gross profit is the profit made from trading activities before deducting operating expenses."
+  },
+  {
+    "id": "q8",
+    "question": "An accrued expense is an expense that has been:",
+    "options": [
+      "Paid in advance",
+      "Incurred but not yet paid",
+      "Not yet incurred but paid",
+      "Written off"
+    ],
+    "answer": "Incurred but not yet paid",
+    "explanation": "Accrued expenses are liabilities representing costs that belong to the current period but remain unpaid."
+  },
+  {
+    "id": "q9",
+    "question": "In which book of original entry would a credit sale of goods be recorded?",
+    "options": [
+      "Sales Journal",
+      "Cash Book",
+      "Purchases Journal",
+      "General Journal"
+    ],
+    "answer": "Sales Journal",
+    "explanation": "The Sales Journal (Sales Day Book) records all credit sales of inventory."
+  },
+  {
+    "id": "q10",
+    "question": "The 'Credit' side of a T-account is the:",
+    "options": ["Top", "Bottom", "Left side", "Right side"],
+    "answer": "Right side",
+    "explanation": "By convention, the left side of a ledger account is the Debit side and the right side is the Credit side."
+  },
+  {
+    "id": "q11",
+    "question": "Which financial statement shows the financial position of a business on a specific date?",
+    "options": [
+      "Income Statement",
+      "Cash Flow Statement",
+      "Statement of Financial Position (Balance Sheet)",
+      "Trial Balance"
+    ],
+    "answer": "Statement of Financial Position (Balance Sheet)",
+    "explanation": "The Balance Sheet provides a 'snapshot' of assets, liabilities, and capital at a particular point in time."
+  },
+  {
+    "id": "q12",
+    "question": "A prepayments is classified in the Balance Sheet as a:",
+    "options": [
+      "Current Asset",
+      "Current Liability",
+      "Non-current Asset",
+      "Non-current Liability"
+    ],
+    "answer": "Current Asset",
+    "explanation": "Prepayments are expenses paid in advance for a future benefit, making them assets."
+  },
+  {
+    "id": "q13",
+    "question": "What is 'Depreciation'?",
+    "options": [
+      "An increase in the value of an asset",
+      "The cost of buying a new asset",
+      "The systematic allocation of the cost of a non-current asset over its useful life",
+      "A type of liability"
+    ],
+    "answer": "The systematic allocation of the cost of a non-current asset over its useful life",
+    "explanation": "Depreciation accounts for the wear and tear or obsolescence of fixed assets."
+  },
+  {
+    "id": "q14",
+    "question": "Which of these errors would NOT be revealed by a Trial Balance?",
+    "options": [
+      "Arithmetic error in a ledger account",
+      "Posting only one side of a transaction",
+      "Complete omission of a transaction",
+      "Listing a debit balance as a credit"
+    ],
+    "answer": "Complete omission of a transaction",
+    "explanation": "If a transaction is completely omitted, both the debit and credit are missing, so the Trial Balance will still balance."
+  },
+  {
+    "id": "q15",
+    "question": "Net Profit is added to:",
+    "options": ["Assets", "Liabilities", "Capital", "Sales"],
+    "answer": "Capital",
+    "explanation": "Net profit belongs to the owner and therefore increases the owner's investment (Capital) in the business."
+  }
+]
