@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import SubjectPage from "./pages/SubjectPage";
 import LessonView from "./pages/LessonView";
 import AuthPage from "./pages/AuthPage";
+import AccountPage from "./pages/AccountPage";
 import "./App.css";
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
               <Route path="/auth" element={<AuthPage mode="signin" />} />
               <Route path="/auth/signup" element={<AuthPage mode="signup" />} />
               <Route path="/auth/reset-password" element={<AuthPage mode="reset" />} />
+              <Route path="/account" element={<AccountPage />} />
             </Routes>
           </main>
           <footer className="app-footer">
@@ -30,4 +32,15 @@ export default function App() {
       </AuthProvider>
     </BrowserRouter>
   );
-}
+}/home/engine/.bashrc: line 1: syntax error near unexpected token `('
+/home/engine/.bashrc: line 1: `. /etc/profile.d/workload-containment.shn# ~/.bashrc: executed by bash(1) for non-login shells.'
+/home/engine/.bashrc: line 1: syntax error near unexpected token `('
+/home/engine/.bashrc: line 1: `. /etc/profile.d/workload-containment.shn# ~/.bashrc: executed by bash(1) for non-login shells.'
+/home/engine/.bashrc: line 1: syntax error near unexpected token `('
+/home/engine/.bashrc: line 1: `. /etc/profile.d/workload-containment.shn# ~/.bashrc: executed by bash(1) for non-login shells.'
+/home/engine/.bashrc: line 1: syntax error near unexpected token `('
+/home/engine/.bashrc: line 1: `. /etc/profile.d/workload-containment.shn# ~/.bashrc: executed by bash(1) for non-login shells.'
+/home/engine/.bashrc: line 1: syntax error near unexpected token `('
+/home/engine/.bashrc: line 1: `. /etc/profile.d/workload-containment.shn# ~/.bashrc: executed by bash(1) for non-login shells.'
+/home/engine/.bashrc: line 1: syntax error near unexpected token `('
+/home/engine/.bashrc: line 1: `. /etc/profile.d/workload-containment.shn# ~/.bashrc: executed by bash(1) for non-login shells.'
