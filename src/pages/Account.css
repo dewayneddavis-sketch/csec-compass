@@ -10,16 +10,20 @@
 .acct-email{color:#6b7280;font-size:.9rem;margin:.15rem 0 0}
 .acct-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.25rem}
 .acct-card{background:#fff;border-radius:16px;padding:1.5rem;box-shadow:0 1px 3px rgba(0,0,0,.06),0 4px 12px rgba(0,0,0,.03);border:1px solid #f3f4f6}
+.acct-card-full{grid-column:1/-1}
 .acct-card h3{font-size:1rem;font-weight:700;color:#111827;margin-bottom:1rem;padding-bottom:.5rem;border-bottom:1px solid #f3f4f6}
 .acct-field{display:flex;justify-content:space-between;padding:.4rem 0;font-size:.88rem;color:#374151}
 .acct-field span:first-child{color:#6b7280}
-.acct-mono{font-family:monospace;font-size:.8rem;color:#9ca3af}
 .acct-plan{font-size:1.1rem;font-weight:600;color:#2563eb;margin-bottom:.35rem}
-.acct-plan-desc{font-size:.85rem;color:#6b7280;line-height:1.5;margin-bottom:.5rem}
-.acct-upgrade{font-size:.8rem;color:#9ca3af;font-style:italic}
-.acct-link{display:block;padding:.5rem 0;color:#2563eb;text-decoration:none;font-size:.9rem;font-weight:500}
-.acct-link:hover{text-decoration:underline}
-.acct-session-info{font-size:.85rem;color:#6b7280;margin-bottom:1rem}
+.acct-plan-desc{font-size:.85rem;color:#6b7280;line-height:1.5}
+.acct-subjects{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:.5rem}
+.acct-subject{display:flex;align-items:center;gap:.5rem;padding:.6rem .75rem;border-radius:10px;text-decoration:none;transition:all .15s;font-size:.88rem}
+.acct-subject.unlocked{background:#f0fdf4;color:#166534}
+.acct-subject.unlocked:hover{background:#dcfce7}
+.acct-subject.locked{background:#f3f4f6;color:#9ca3af;cursor:default}
+.acct-subject-icon{font-size:1.1rem}
+.acct-subject-name{flex:1;font-weight:500}
+.acct-subject-status{font-size:.8rem}
 .acct-btn{display:inline-block;padding:.6rem 1.25rem;border:none;border-radius:10px;font-weight:600;font-size:.88rem;cursor:pointer;text-decoration:none;text-align:center;transition:all .2s}
 .acct-btn-primary{background:#2563eb;color:#fff}
 .acct-btn-primary:hover{background:#1d4ed8}
@@ -27,3 +31,7 @@
 .acct-btn-secondary:hover{background:#e5e7eb}
 .acct-btn-danger{background:#fee2e2;color:#dc2626;width:100%}
 .acct-btn-danger:hover{background:#fecaca}
+.acct-back-home{display:block;text-align:center;margin-top:1rem;color:#6b7280;font-size:.85rem;text-decoration:none}
+.pr-loading{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:40vh;gap:1rem;color:#6b7280}
+.pr-spinner{width:32px;height:32px;border:3px solid #e5e7eb;border-top-color:#2563eb;border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
