@@ -10,30 +10,24 @@ export function AuthProvider({ children }) {
 
   useEffect(() => {
     const supabase = getSupabaseClient();
-    if (!supabase) {
-      setLoading(false);
-      return;
-    }
-
+    if (!supabase) { setLoading(false); return; }
     supabase.auth.getSession().then(({ data: { session: s } }) => {
-      setSession(s);
-      setUser(s?.user ?? null);
-      setLoading(false);
+      setSession(s); setUser(s?.user ?? null); setLoading(false);
     });
-
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-      setSession(session);
-      setUser(session?.user ?? null);
-      setLoading(false);
+      setSession(session); setUser(session?.user ?? null); setLoading(false);
     });
-
     return () => subscription?.unsubscribe();
   }, []);
 
   const signUp = useCallback(async (email, password) => {
     const supabase = getSupabaseClient();
     if (!supabase) return { error: new Error("Supabase not configured") };
-    const { data, error } = await supabase.auth.signUp({ email, password });
+    const appUrl = import.meta.env.VITE_APP_URL || "https://csec-compass.vercel.app";
+    const { data, error } = await supabase.auth.signUp({
+      email, password,
+      options: { emailRedirectTo: appUrl + "/auth" }
+    });
     return { data, error };
   }, []);
 
@@ -48,8 +42,7 @@ export function AuthProvider({ children }) {
     const supabase = getSupabaseClient();
     if (!supabase) return;
     await supabase.auth.signOut();
-    setUser(null);
-    setSession(null);
+    setUser(null); setSession(null);
   }, []);
 
   const resetPassword = useCallback(async (email) => {
@@ -62,20 +55,13 @@ export function AuthProvider({ children }) {
     return { data, error };
   }, []);
 
-  const value = {
-    user, session, loading,
-    signUp, signIn, signOut, resetPassword,
-    isAuthenticated: !!user,
-  };
-
+  const value = { user, session, loading, signUp, signIn, signOut, resetPassword, isAuthenticated: !!user };
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }
 
 export function useAuth() {
   const context = useContext(AuthContext);
-  if (!context) {
-    throw new Error("useAuth must be used within an AuthProvider");
-  }
+  if (!context) throw new Error("useAuth must be used within an AuthProvider");
   return context;
 }
 
