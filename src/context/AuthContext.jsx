@@ -15,14 +15,12 @@ export function AuthProvider({ children }) {
       return;
     }
 
-    // Check active session
     supabase.auth.getSession().then(({ data: { session: s } }) => {
       setSession(s);
       setUser(s?.user ?? null);
       setLoading(false);
     });
 
-    // Listen for auth changes
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
       setSession(session);
       setUser(session?.user ?? null);
@@ -57,20 +55,16 @@ export function AuthProvider({ children }) {
   const resetPassword = useCallback(async (email) => {
     const supabase = getSupabaseClient();
     if (!supabase) return { error: new Error("Supabase not configured") };
+    const appUrl = import.meta.env.VITE_APP_URL || window.location.origin;
     const { data, error } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo: `${window.location.origin}/auth/reset-password`,
+      redirectTo: appUrl + "/auth/reset-password",
     });
     return { data, error };
   }, []);
 
   const value = {
-    user,
-    session,
-    loading,
-    signUp,
-    signIn,
-    signOut,
-    resetPassword,
+    user, session, loading,
+    signUp, signIn, signOut, resetPassword,
     isAuthenticated: !!user,
   };
 
