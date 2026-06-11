@@ -266,3 +266,6 @@
     min-width: 140px;
   }
 }
+
+.s-upgrade-banner{background:#fffbeb;border:1px solid #fef3c7;border-radius:12px;padding:.85rem 1rem;margin-bottom:1rem;font-size:.9rem;color:#92400e;text-align:center}
+.s-upgrade-banner a{color:#2563eb;font-weight:600;text-decoration:underline}
