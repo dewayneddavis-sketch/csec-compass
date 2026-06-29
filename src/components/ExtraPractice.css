@@ -1,0 +1,15 @@
+.ep-container{padding:.5rem 0}
+.ep-header{margin-bottom:1.5rem}
+.ep-header h3{font-size:1.15rem;color:#111827;margin-bottom:.35rem}
+.ep-header p{color:#6b7280;font-size:.9rem;line-height:1.5}
+.ep-resources{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem}
+.ep-card{display:flex;flex-direction:column;padding:1.25rem;background:#fff;border:2px solid #e5e7eb;border-radius:12px;text-decoration:none;color:inherit;transition:all .2s}
+.ep-card:hover{border-color:#93c5fd;box-shadow:0 4px 12px rgba(37,99,235,.08);transform:translateY(-2px)}
+.ep-badge{display:inline-block;align-self:flex-start;padding:.2rem .6rem;border-radius:999px;font-size:.72rem;font-weight:600;margin-bottom:.5rem}
+.ep-badge.official{background:#eff6ff;color:#2563eb}
+.ep-badge.practice{background:#f0fdf4;color:#16a34a}
+.ep-badge.tutorial{background:#fffbeb;color:#d97706}
+.ep-card h4{font-size:.95rem;font-weight:600;color:#111827;margin-bottom:.35rem}
+.ep-card p{font-size:.82rem;color:#6b7280;line-height:1.4;margin-bottom:.5rem;flex:1}
+.ep-link{font-size:.82rem;font-weight:500;color:#2563eb}
+.ep-tip{background:#fffbeb;border:1px solid #fef3c7;border-radius:10px;padding:.85rem 1rem;margin-top:1.5rem;font-size:.88rem;color:#92400e;line-height:1.5}

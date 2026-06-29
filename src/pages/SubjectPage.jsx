@@ -6,12 +6,13 @@ import { getSubject, getSubjectModules, getSubjectQuiz, normalizeModules } from 
 import ProgressBar from "../components/ProgressBar";
 import Quiz from "../components/Quiz";
 import ExperimentSandbox from "../components/ExperimentSandbox";
+import ExtraPractice from "../components/ExtraPractice";
 import "./SubjectPage.css";
 
 export default function SubjectPage() {
   const { subjectId } = useParams();
   const { user } = useAuth();
-  const { hasAccess, loading: purchasesLoading } = usePurchases();
+  const { hasAccess, hasBundle, loading: purchasesLoading } = usePurchases();
   const [subject, setSubject] = useState(null);
   const [modules, setModules] = useState([]);
   const [quizQuestions, setQuizQuestions] = useState([]);
@@ -65,9 +66,8 @@ export default function SubjectPage() {
   const paid = user ? hasAccess(subjectId) : true;
   const currentModule = modules[activeModule];
   const allLessons = modules.flatMap((m) => m.lessons);
-  const visibleLessons = paid ? allLessons : allLessons.slice(0, 2);
-  const lessonCount = paid ? allLessons.length : 2;
   const totalLessonCount = allLessons.length;
+  const lessonCount = paid ? allLessons.length : Math.min(2, allLessons.length);
   const completedCount = completedLessons.length;
 
   function toggleLesson(lessonId) {
@@ -75,8 +75,6 @@ export default function SubjectPage() {
       prev.includes(lessonId) ? prev.filter((id) => id !== lessonId) : [...prev, lessonId]
     );
   }
-
-  const experimentConfig = null;
 
   return (
     <div className="subject-page">
@@ -94,12 +92,12 @@ export default function SubjectPage() {
 
       {!paid && user && (
         <div className="s-upgrade-banner">
-          <p>You are viewing sample lessons. <Link to="/pricing">Upgrade to unlock all {totalLessonCount} lessons!</Link></p>
+          <p><strong>Preview Mode</strong> &mdash; You are viewing 2 of {totalLessonCount} lessons. <Link to={"/pricing?subject=" + subjectId}>Unlock full access to all {totalLessonCount} lessons!</Link></p>
         </div>
       )}
 
       <div className="s-tabs">
-        {[{ id: "lessons", label: "Lessons" }, { id: "experiment", label: "Interactive Lab" }, { id: "quiz", label: "Knowledge Check" }].map((tab) => (
+        {[{ id: "lessons", label: "Lessons" }, { id: "experiment", label: "Interactive Lab" }, { id: "quiz", label: "Knowledge Check" }, { id: "practice", label: "Extra Practice" }].map((tab) => (
           <button key={tab.id} className={"s-tab " + (activeTab === tab.id ? "active" : "")} onClick={() => setActiveTab(tab.id)}>
             {tab.label}{tab.id === "quiz" && quizCompleted && <span className="s-tab-done">&check;</span>}
           </button>
@@ -122,8 +120,18 @@ export default function SubjectPage() {
                 <>
                   <h3 className="s-lesson-module-title">Module {activeModule + 1}: {currentModule.title}</h3>
                   <div className="s-lesson-items">
-                    {currentModule.lessons.map((lesson) => {
+                    {currentModule.lessons.map((lesson, idx) => {
+                      const locked = !paid && idx >= 2;
                       const done = completedLessons.includes(lesson.id);
+                      if (locked) {
+                        return (
+                          <div key={lesson.id} className="s-lesson-item s-lesson-locked">
+                            <span className="s-lesson-check">🔒</span>
+                            <span className="s-lesson-name">{lesson.title}</span>
+                            <Link to={"/pricing?subject=" + subjectId} className="s-lesson-buy">Purchase to access</Link>
+                          </div>
+                        );
+                      }
                       return (
                         <div key={lesson.id} className={"s-lesson-item " + (done ? "done" : "")} onClick={() => toggleLesson(lesson.id)}>
                           <span className="s-lesson-check">{done ? "\u2705" : "\u2B1C"}</span>
@@ -142,5 +150,4 @@ export default function SubjectPage() {
         {activeTab === "quiz" && <Quiz questions={quizQuestions} subjectTitle={subject.name} onComplete={() => setQuizCompleted(true)} />}
       </div>
     </div>
-  );
-}
+  );}

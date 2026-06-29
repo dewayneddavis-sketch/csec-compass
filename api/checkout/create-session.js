@@ -2,9 +2,9 @@
 // Creates a Stripe Checkout Session for per-subject or bundle purchase
 import { getStripe } from "../_lib/stripe";
 
-const PRICES = {
-  subject: { id: "price_subject", name: "Per Subject", amount: 999 },   // $9.99
-  bundle: { id: "price_bundle", name: "All Subjects Bundle", amount: 4999 }, // $49.99
+const PRICE_IDS = {
+  subject: "price_1Tgqa4BMfL7i0JlrJuGSfD3E",
+  bundle: "price_1TgqfGBMfL7i0JlrqzpZgtJU",
 };
 
 export default async function handler(req, res) {
@@ -19,22 +19,10 @@ export default async function handler(req, res) {
   if (!stripe) return res.status(500).json({ error: "Stripe not configured" });
 
   try {
-    const price = PRICES[priceType];
+    const priceId = PRICE_IDS[priceType];
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
-      line_items: [{
-        price_data: {
-          currency: "usd",
-          product_data: {
-            name: priceType === "bundle" ? "All Subjects Bundle" : `CSEC ${subjectId || "Subject"}`,
-            description: priceType === "bundle"
-              ? "Full access to ALL CSEC subjects"
-              : `Full access to ${subjectId || "selected subject"}`,
-          },
-          unit_amount: price.amount,
-        },
-        quantity: 1,
-      }],
+      line_items: [{ price: priceId, quantity: 1 }],
       mode: "payment",
       success_url: successUrl || "https://csec-compass.vercel.app/account",
       cancel_url: cancelUrl || "https://csec-compass.vercel.app/pricing",

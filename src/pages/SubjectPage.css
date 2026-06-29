@@ -269,3 +269,9 @@
 
 .s-upgrade-banner{background:#fffbeb;border:1px solid #fef3c7;border-radius:12px;padding:.85rem 1rem;margin-bottom:1rem;font-size:.9rem;color:#92400e;text-align:center}
 .s-upgrade-banner a{color:#2563eb;font-weight:600;text-decoration:underline}
+
+.s-lesson-locked{opacity:.7;background:#fafafa!important;border-color:#e5e7eb!important;cursor:default!important}
+.s-lesson-locked .s-lesson-check{font-size:1.1rem}
+.s-lesson-locked .s-lesson-name{color:#9ca3af!important}
+.s-lesson-buy{font-size:.78rem;color:#2563eb;font-weight:600;text-decoration:none;white-space:nowrap}
+.s-lesson-buy:hover{text-decoration:underline}
