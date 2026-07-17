@@ -135,8 +135,28 @@ export function normalizeModules(modules) {
 
 export function getExperimentConfig(subjectId) {
   const fb = fallbackSubjects.find((f) => f.id === subjectId);
-  if (!fb || !fb.experiment) return null;
-  return experimentTypes[fb.experiment] || null;
+  if (fb && fb.experiment) return experimentTypes[fb.experiment] || null;
+
+  const subjectExpFallback = {
+    mathematics: "graphing",
+    "english-a": "writing-helper",
+    biology: "cell-viewer",
+    chemistry: "lab-sim",
+    physics: "circuit-builder",
+    "information-technology": "code-playground",
+    "principles-of-accounts": "ledger-tool",
+    "principles-of-business": "data-explorer",
+    "social-studies": "data-explorer",
+    history: "timeline",
+    geography: "map-explorer",
+    "human-social-biology": "body-explorer",
+    spanish: "vocab-flashcards",
+    french: "vocab-flashcards",
+    "agricultural-science": "lab-sim",
+  };
+  const expType = subjectExpFallback[subjectId];
+  if (expType && experimentTypes[expType]) return experimentTypes[expType];
+  return null;
 }
 
 export function getLessonExperiment(experimentType) {
@@ -144,3 +164,9 @@ export function getLessonExperiment(experimentType) {
   if (typeof experimentType === "object") return experimentType;
   return experimentTypes[experimentType] || { title: "Interactive Activity", description: "Explore this concept hands-on." };
 }
+/home/engine/.bashrc: line 1: syntax error near unexpected token `('
+/home/engine/.bashrc: line 1: `. /etc/profile.d/workload-containment.shn# ~/.bashrc: executed by bash(1) for non-login shells.'
+/home/engine/.bashrc: line 1: syntax error near unexpected token `('
+/home/engine/.bashrc: line 1: `. /etc/profile.d/workload-containment.shn# ~/.bashrc: executed by bash(1) for non-login shells.'
+/home/engine/.bashrc: line 1: syntax error near unexpected token `('
+/home/engine/.bashrc: line 1: `. /etc/profile.d/workload-containment.shn# ~/.bashrc: executed by bash(1) for non-login shells.'
