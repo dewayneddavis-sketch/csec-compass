@@ -19,7 +19,10 @@ export default function Navbar() {
         </div>
         <div className="navbar-auth">
           {loading ? null : user ? (
-            <Link to="/account" className={`navbar-link ${location.pathname === "/account" ? "active" : ""}`}>My Account</Link>
+            <>
+              <Link to="/account" className={`navbar-link ${location.pathname === "/account" ? "active" : ""}`}>My Account</Link>
+              <Link to="/admin" className={`navbar-link navbar-admin ${location.pathname === "/admin" ? "active" : ""}`}>⚙️</Link>
+            </>
           ) : (
             <Link to="/auth" className={`navbar-link ${location.pathname.startsWith("/auth") ? "active" : ""}`}>Sign In</Link>
           )}

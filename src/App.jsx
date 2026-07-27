@@ -9,6 +9,7 @@ import SignupPage from "./pages/SignupPage";
 import AuthPage from "./pages/AuthPage";
 import AccountPage from "./pages/AccountPage";
 import PricingPage from "./pages/PricingPage";
+import AdminPage from "./pages/AdminPage";
 import ProtectedRoute from "./components/ProtectedRoute";
 import "./App.css";
 
@@ -30,6 +31,7 @@ export default function App() {
               <Route path="/auth/signup" element={<AuthPage mode="signup" />} />
               <Route path="/auth/reset-password" element={<AuthPage mode="reset" />} />
               <Route path="/account" element={<ProtectedRoute><AccountPage /></ProtectedRoute>} />
+              <Route path="/admin" element={<ProtectedRoute><AdminPage /></ProtectedRoute>} />
             </Routes>
           </main>
           <footer className="app-footer">

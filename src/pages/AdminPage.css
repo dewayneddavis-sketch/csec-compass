@@ -1,0 +1,18 @@
+.admin-page{max-width:600px;margin:2rem auto;padding:0 1rem}
+.admin-page h2{font-size:1.5rem;color:#111827;margin-bottom:.25rem}
+.admin-subtitle{color:#6b7280;font-size:.9rem;margin-bottom:2rem}
+.admin-form{background:#fff;border:2px solid #e5e7eb;border-radius:12px;padding:1.5rem}
+.admin-field{margin-bottom:1.25rem}
+.admin-field label{display:block;font-weight:600;font-size:.88rem;color:#374151;margin-bottom:.35rem}
+.admin-field input,.admin-field select{width:100%;padding:.6rem .75rem;border:2px solid #d1d5db;border-radius:8px;font-size:.92rem;transition:border-color .15s}
+.admin-field input:focus,.admin-field select:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.12)}
+.admin-actions{display:flex;gap:.75rem;margin-top:.5rem}
+.admin-btn{flex:1;padding:.65rem 1rem;border:none;border-radius:8px;font-size:.9rem;font-weight:600;cursor:pointer;transition:all .15s}
+.admin-btn:disabled{opacity:.5;cursor:not-allowed}
+.grant-btn{background:#059669;color:#fff}
+.grant-btn:hover:not(:disabled){background:#047857}
+.revoke-btn{background:#dc2626;color:#fff}
+.revoke-btn:hover:not(:disabled){background:#b91c1c}
+.admin-msg{margin-top:1rem;padding:.75rem 1rem;border-radius:8px;font-size:.88rem}
+.admin-success{background:#f0fdf4;color:#065f46;border:1px solid #bbf7d0}
+.admin-error{background:#fef2f2;color:#991b1b;border:1px solid #fecaca}
