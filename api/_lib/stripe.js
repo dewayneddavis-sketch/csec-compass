@@ -1,7 +1,8 @@
 // Stripe server-side init for Vercel API functions
-// Uses STRIPE_SECRET_KEY env var
-
-import Stripe from "stripe";
+// Uses createRequire to work around Vercel ESM bundling issues
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+const Stripe = require("stripe").default || require("stripe");
 
 let stripeClient = null;
 
