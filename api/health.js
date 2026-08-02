@@ -1,4 +1,4 @@
-// Vercel Serverless API — Health Check
+// Vercel Serverless API — Health Check v2
 // Used: /api/health
 
 export default function handler(req, res) {
