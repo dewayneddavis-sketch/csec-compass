@@ -1,7 +1,5 @@
 // GET /api/purchases/list
-// Returns user's purchases. Requires auth header.
-import { getSupabaseAdmin } from "../_lib/supabase";
-
+// Returns user's purchases using Supabase REST API directly (no SDK)
 export default async function handler(req, res) {
   if (req.method !== "GET") return res.status(405).json({ error: "Method not allowed" });
 
@@ -10,29 +8,32 @@ export default async function handler(req, res) {
 
   try {
     const token = authHeader.replace("Bearer ", "");
-    const supabase = getSupabaseAdmin();
-    const { data: { user }, error: authError } = await supabase.auth.getUser(token);
-    if (authError || !user) return res.status(401).json({ error: "Invalid token" });
+    const supabaseUrl = process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL;
+    const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
-    const { data: purchases, error } = await supabase
-      .from("purchases")
-      .select("*")
-      .eq("user_id", user.id);
+    if (!supabaseUrl || !serviceKey) {
+      return res.status(500).json({ error: "Supabase not configured" });
+    }
 
-    if (error) throw error;
+    // Verify token and get user
+    const userRes = await fetch(`${supabaseUrl}/auth/v1/user`, {
+      headers: { Authorization: `Bearer ${token}`, apikey: serviceKey },
+    });
+    if (!userRes.ok) return res.status(401).json({ error: "Invalid token" });
+    const { id: userId } = await userRes.json();
+
+    // Query purchases
+    const dbRes = await fetch(
+      `${supabaseUrl}/rest/v1/purchases?user_id=eq.${userId}&select=*`,
+      { headers: { apikey: serviceKey, Authorization: `Bearer ${serviceKey}` } }
+    );
+    const purchases = await dbRes.json();
 
     const hasBundle = purchases?.some((p) => p.purchase_type === "bundle");
-    const purchasedSubjects = purchases
-      ?.filter((p) => p.subject_id)
-      .map((p) => p.subject_id) || [];
+    const purchasedSubjects = purchases?.filter((p) => p.purchase_type !== "bundle").map((p) => p.purchase_type) || [];
 
-    res.status(200).json({
-      hasBundle,
-      purchasedSubjects,
-      purchases,
-    });
+    res.status(200).json({ hasBundle, purchasedSubjects, purchases });
   } catch (err) {
-    console.error("Purchases list error:", err);
     res.status(500).json({ error: err.message });
   }
 }
