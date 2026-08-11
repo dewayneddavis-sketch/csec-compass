@@ -27,25 +27,40 @@ const fallbackSubjects = [
 ];
 
 export const experimentTypes = {
+  // Mapped to GraphingCalculator
   "graphing": { title: "Graphing Calculator", description: "Plot y = mx + b with draggable sliders for m (slope) and b (intercept).", interactive: "graphing-calc" },
-  "drag-drop": { title: "Drag & Drop Label", description: "Drag labels to the correct positions on a diagram.", interactive: "drag-drop" },
-  "circuit-builder": { title: "Circuit Builder", description: "Build electrical circuits with batteries, bulbs, resistors, and switches.", interactive: "circuit-builder" },
-  "balance-scale": { title: "Balance Scale", description: "Solve equations by keeping the scale balanced with weights and variables.", interactive: "balance-scale" },
-  "vocab-flashcards": { title: "Flashcard Trainer", description: "Build vocabulary with flip-and-review flashcards.", interactive: "flashcard" },
-  "interactive-quiz": { title: "Interactive Quiz", description: "Test your knowledge with instant feedback on each answer." },
-  "visual-converter": { title: "Visual Converter", description: "See how values convert between different representations." },
-  "graph-plotter": { title: "Graph Plotter", description: "Adjust parameters and see graphs update in real-time." },
   "graph-linear": { title: "Line Lab", description: "Plot y=mx+b with draggable sliders for m and b.", interactive: "graphing-calc" },
-  "number-line-plotter": { title: "Number Line Plotter", description: "Visualize inequalities on an interactive number line." },
-  "function-machine": { title: "Function Machine", description: "See how functions transform inputs to outputs." },
-  "interactive-triangle": { title: "Triangle Visualizer", description: "Explore triangles and the Pythagorean theorem." },
-  "trig-circle": { title: "Unit Circle Explorer", description: "Visualize sine and cosine on the unit circle." },
-  "vector-addition": { title: "Vector Lab", description: "Add vectors and see the resultant." },
-  "matrix-transformer": { title: "Matrix Transformer", description: "Apply matrices to shapes and see transformations." },
-  "data-visualizer": { title: "Data Visualizer", description: "See how statistics change as you add/remove data." },
-  "probability-sim": { title: "Probability Simulator", description: "Run simulations and compare experimental to theoretical probability." },
-  "area-builder": { title: "Area Builder", description: "Resize shapes and watch area/perimeter update." },
-  "volume-filler": { title: "Volume Lab", description: "Fill 3D containers to visualize volume." },
+  "graph-plotter": { title: "Graph Plotter", description: "Adjust parameters and see graphs update in real-time.", interactive: "graph-plotter" },
+  "number-line-plotter": { title: "Number Line Plotter", description: "Visualize inequalities on an interactive number line.", interactive: "number-line-plotter" },
+  "function-machine": { title: "Function Machine", description: "See how functions transform inputs to outputs.", interactive: "function-machine" },
+  "interactive-triangle": { title: "Triangle Visualizer", description: "Explore triangles and the Pythagorean theorem.", interactive: "interactive-triangle" },
+  "trig-circle": { title: "Unit Circle Explorer", description: "Visualize sine and cosine on the unit circle.", interactive: "trig-circle" },
+  "vector-addition": { title: "Vector Lab", description: "Add vectors and see the resultant.", interactive: "vector-addition" },
+  "matrix-transformer": { title: "Matrix Transformer", description: "Apply matrices to shapes and see transformations.", interactive: "matrix-transformer" },
+  "data-visualizer": { title: "Data Visualizer", description: "See how statistics change as you add/remove data.", interactive: "data-visualizer" },
+  // Mapped to DragDropLabel
+  "drag-drop": { title: "Drag & Drop Label", description: "Drag labels to the correct positions on a diagram.", interactive: "drag-drop" },
+  // Mapped to CircuitBuilder
+  "circuit-builder": { title: "Circuit Builder", description: "Build electrical circuits with batteries, bulbs, resistors, and switches.", interactive: "circuit-builder" },
+  // Mapped to BalanceScale
+  "balance-scale": { title: "Balance Scale", description: "Solve equations by keeping the scale balanced with weights and variables.", interactive: "balance-scale" },
+  "visual-converter": { title: "Visual Converter", description: "See how values convert between different representations.", interactive: "visual-converter" },
+  "area-builder": { title: "Area Builder", description: "Resize shapes and watch area/perimeter update.", interactive: "area-builder" },
+  "volume-filler": { title: "Volume Lab", description: "Fill 3D containers to visualize volume.", interactive: "volume-filler" },
+  // Mapped to FlashcardSystem
+  "vocab-flashcards": { title: "Flashcard Trainer", description: "Build vocabulary with flip-and-review flashcards.", interactive: "flashcard" },
+  "interactive-quiz": { title: "Interactive Quiz", description: "Test your knowledge with instant feedback on each answer.", interactive: "interactive-quiz" },
+  "probability-sim": { title: "Probability Simulator", description: "Run simulations and compare experimental to theoretical probability.", interactive: "probability-sim" },
+  // Subject fallback types (descriptive-only — no react component yet, handled by default switch case)
+  "cell-viewer": { title: "Cell Viewer", description: "Explore cell structures with an interactive diagram." },
+  "lab-sim": { title: "Lab Simulation", description: "Explore chemical reactions and lab procedures interactively." },
+  "code-playground": { title: "Code Playground", description: "Write and test code snippets with instant feedback." },
+  "ledger-tool": { title: "Ledger Tool", description: "Practice double-entry bookkeeping with an interactive ledger." },
+  "data-explorer": { title: "Data Explorer", description: "Visualize and interpret charts, graphs, and datasets." },
+  "timeline": { title: "Timeline Explorer", description: "Explore historical events on an interactive timeline." },
+  "map-explorer": { title: "Map Explorer", description: "Discover geographic features and regions on an interactive map." },
+  "body-explorer": { title: "Body Explorer", description: "Explore human anatomy with interactive diagrams." },
+  "writing-helper": { title: "Writing Helper", description: "Practice writing skills with prompts, outlines, and feedback tips." },
 };
 
 async function fetchJSON(url) {

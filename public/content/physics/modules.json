@@ -6,6 +6,7 @@
       {
         "id": "scalars-vectors",
         "title": "Scalars and Vectors",
+        "content": "In physics, we categorize quantities into two types: scalars and vectors. A scalar quantity has magnitude (size) only. Examples include mass, time, temperature, and speed. A vector quantity, however, has both magnitude AND direction. Examples include force, displacement, velocity, and acceleration. This distinction is crucial because vectors must be combined differently than simple numbers.\n\nWhen adding vectors, you cannot simply add their magnitudes unless they are in the same direction. Instead, we use methods like the 'head-to-tail' rule or the 'parallelogram law' to find the resultant vector. For example, if you walk 3 meters east and then 4 meters north, your total distance is 7 meters (scalar), but your displacement is 5 meters at a specific angle (vector), calculated using Pythagoras' theorem.\n\nMastering vectors is the first step in understanding mechanics. In the CSEC exam, you will often be asked to represent vectors as arrows, resolve them into horizontal and vertical components, and calculate the resultant force or velocity in various scenarios.",
         "objectives": [
           "Distinguish between scalar and vector quantities",
           "Add vectors graphically and algebraically"
@@ -22,6 +23,7 @@
       {
         "id": "motion-graphs",
         "title": "Distance-Time and Velocity-Time Graphs",
+        "content": "Graphs are powerful tools for visualizing and analyzing motion. A distance-time graph plots distance on the y-axis and time on the x-axis. The gradient (slope) of the line at any point represents the speed of the object. A straight line indicates constant speed, while a curved line indicates changing speed (acceleration). A horizontal line means the object is stationary.\n\nA velocity-time graph provides even more information. The gradient of the line represents the acceleration of the object. Like distance-time graphs, a straight line indicates constant acceleration, and a horizontal line indicates constant velocity. Most importantly, the area under the velocity-time graph represents the total displacement (distance moved in a specific direction) of the object.\n\nTo excel in CSEC Physics, you must be comfortable calculating gradients and areas for different graph shapes. For a constant acceleration (a straight line), the area is usually a triangle or a trapezium. Remember: always check the units on the axes before starting your calculations!",
         "objectives": [
           "Interpret distance-time and velocity-time graphs",
           "Calculate gradient and area under the graph"
@@ -45,6 +47,7 @@
       {
         "id": "temperature-heat",
         "title": "Temperature and Heat Transfer",
+        "content": "Temperature and heat are related but distinct concepts. Temperature is a measure of the average kinetic energy of the particles in a substance — it tells us how hot or cold something is. Heat is the total thermal energy that transfers from a hotter object to a colder one. This transfer continues until both objects reach the same temperature, a state known as thermal equilibrium.\n\nThere are three main mechanisms of heat transfer: conduction, convection, and radiation. Conduction is the transfer of energy through direct contact between particles, mainly in solids (especially metals). Convection is the transfer of energy through the movement of fluids (liquids and gases) as warmer, less dense areas rise and cooler, denser areas sink. Radiation is the transfer of energy via electromagnetic waves, which can travel through a vacuum (like heat from the sun reaching Earth).\n\nIn the CSEC syllabus, you will study how different materials act as conductors or insulators and how these principles are applied in everyday life, from cooking utensils to home insulation. You will also learn about the Kelvin and Celsius temperature scales and how to convert between them.",
         "objectives": [
           "Define temperature and heat",
           "Describe conduction, convection, and radiation"
@@ -61,6 +64,7 @@
       {
         "id": "gas-laws",
         "title": "The Gas Laws",
+        "content": "The behavior of gases can be described by three fundamental laws that relate pressure (P), volume (V), and temperature (T). Boyle's Law states that for a fixed mass of gas at constant temperature, pressure is inversely proportional to volume (P₁V₁ = P₂V₂). This means if you decrease the volume of a container by half, the pressure of the gas inside will double.\n\nCharles' Law states that for a fixed mass of gas at constant pressure, volume is directly proportional to its absolute temperature (V₁/T₁ = V₂/T₂). The Pressure Law states that for a fixed mass of gas at constant volume, pressure is directly proportional to its absolute temperature (P₁/T₁ = P₂/T₂). Note that for these laws, temperature MUST be measured in Kelvin (K = °C + 273).\n\nThese laws are combined into the General Gas Law: P₁V₁/T₁ = P₂V₂/T₂. On the CSEC exam, you will use these formulas to predict how a gas will react to changes in its environment. Understanding the kinetic theory of gases — that gas pressure is caused by particles colliding with the walls of their container — will help you visualize why these relationships exist.",
         "objectives": [
           "Apply Boyle's Law, Charles' Law, and the Pressure Law"
         ],
@@ -82,6 +86,7 @@
       {
         "id": "wave-properties",
         "title": "Properties of Waves",
+        "content": "A wave is a disturbance that transfers energy from one place to another without transferring matter. Waves are classified into two main types: transverse and longitudinal. In a transverse wave (like light or water waves), the particles of the medium vibrate perpendicular to the direction of energy travel. In a longitudinal wave (like sound), the particles vibrate parallel to the direction of energy travel, creating areas of compression and rarefaction.\n\nKey wave properties include amplitude (maximum displacement from rest), wavelength (distance between two consecutive peaks or troughs), and frequency (the number of waves passing a point per second). The relationship between these is given by the wave equation: Speed (v) = Frequency (f) × Wavelength (λ).\n\nWaves also undergo four important behaviors: reflection (bouncing off a surface), refraction (changing direction when entering a new medium), diffraction (spreading out when passing through a gap), and interference (two waves overlapping). The CSEC exam often uses ripple tanks to demonstrate these properties and asks you to apply the wave equation to solve problems.",
         "objectives": [
           "Define frequency, wavelength, and amplitude",
           "Apply the wave equation v = fλ"
@@ -98,6 +103,7 @@
       {
         "id": "light-refraction",
         "title": "Refraction and Lenses",
+        "content": "Refraction is the bending of light as it passes from one transparent medium to another of different optical density. This happens because light changes speed. When light enters a denser medium (like from air into glass), it slows down and bends toward the normal line. The degree of bending is described by Snell's Law: n = sin(i) / sin(r), where n is the refractive index of the medium.\n\nLenses use refraction to focus or spread light. A converging (convex) lens is thicker in the middle and bends light rays together to a focal point. It can form both real and virtual images. A diverging (concave) lens is thinner in the middle and spreads light rays apart, always forming a virtual, upright, and diminished image.\n\nYou will learn to draw ray diagrams to locate images formed by lenses and understand how they are used in devices like cameras, magnifying glasses, and the human eye. CSEC questions frequently involve calculating the refractive index or using the lens formula to find image distance and magnification.",
         "objectives": [
           "Apply Snell's Law of refraction",
           "Describe the formation of images by lenses"
@@ -120,6 +126,7 @@
       {
         "id": "electric-circuits",
         "title": "Current, Voltage, and Resistance",
+        "content": "Electricity is the flow of electric charge, usually carried by electrons through a conductor. Current (I) is the rate of flow of charge, measured in Amperes (A). Voltage (V), or potential difference, is the energy per unit charge that 'pushes' the current through the circuit, measured in Volts (V). Resistance (R) is the opposition to the flow of current, measured in Ohms (Ω).\n\nThe relationship between these three quantities is known as Ohm's Law: V = IR. This law states that for many materials, the current is directly proportional to the voltage applied, provided the temperature remains constant. Components like resistors follow this law, while others like light bulbs change their resistance as they get hotter.\n\nIn CSEC Physics, you will build and analyze series and parallel circuits. In a series circuit, there is only one path for the current, so it remains the same everywhere. In a parallel circuit, there are multiple paths, and the total current is the sum of the currents in each branch. You will also learn to calculate total resistance for both types of arrangements and use multimeters to take measurements.",
         "objectives": [
           "Apply Ohm's Law V = IR",
           "Differentiate between series and parallel circuits"
@@ -142,6 +149,7 @@
       {
         "id": "radioactivity",
         "title": "Radioactivity and Half-Life",
+        "content": "Radioactivity is the spontaneous and random emission of radiation from the unstable nucleus of an atom. There are three primary types of radiation: Alpha (α) particles, which are helium nuclei; Beta (β) particles, which are high-speed electrons; and Gamma (γ) rays, which are high-energy electromagnetic waves. Each type has different penetrating power and ionizing ability.\n\nBecause radioactive decay is random, we cannot predict when a specific nucleus will decay. However, for a large group of atoms, the rate of decay is predictable. The half-life is the time it takes for half of the radioactive nuclei in a sample to decay. For example, if a substance has a half-life of 10 years, a 100g sample will be reduced to 50g after 10 years, and then to 25g after another 10 years.\n\nCSEC questions often involve identifying types of radiation from their properties, completing nuclear equations, and using decay curves to determine half-life. Understanding radioactivity is essential for medicine (cancer treatment), archaeology (carbon dating), and energy production (nuclear power).",
         "objectives": [
           "Describe alpha, beta, and gamma radiation",
           "Calculate half-life from decay curves"

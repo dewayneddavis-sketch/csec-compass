@@ -6,6 +6,7 @@
       {
         "id": "states-of-matter",
         "title": "States of Matter",
+        "content": "Matter is anything that has mass and takes up space. It exists in three primary states: solid, liquid, and gas. According to the kinetic theory, all matter is made up of tiny particles that are in constant motion. In a solid, particles are closely packed in a regular arrangement and vibrate about fixed positions. In a liquid, they are still close but can move past each other, while in a gas, they are far apart and move rapidly in all directions.\n\nChanges of state occur when energy is added or removed. Melting occurs when a solid is heated and its particles gain enough kinetic energy to break free from their fixed positions. Evaporation and boiling turn liquids into gases, while condensation and freezing reverse these processes. Sublimation is the rare process where a solid turns directly into a gas, such as with 'dry ice' (solid CO₂) or iodine.\n\nOn the CSEC Chemistry exam, you must be able to describe these states in terms of particle arrangement, movement, and energy. You may also be asked to interpret heating and cooling curves, identifying the melting and boiling points where the temperature remains constant as the state changes.",
         "objectives": [
           "Describe the three states of matter",
           "Explain changes of state using the kinetic theory"
@@ -22,6 +23,7 @@
       {
         "id": "atomic-structure",
         "title": "Atomic Structure",
+        "content": "The atom is the smallest unit of an element that retains its chemical properties. It consists of three main subatomic particles: protons, neutrons, and electrons. Protons (positively charged) and neutrons (neutral) are found in the dense center called the nucleus. Electrons (negatively charged) orbit the nucleus in specific energy levels or shells.\n\nAn element is defined by its Atomic Number (Z), which is the number of protons in its nucleus. In a neutral atom, the number of electrons equals the number of protons. The Mass Number (A) is the total number of protons and neutrons. Isotopes are atoms of the same element with the same atomic number but different mass numbers due to a different number of neutrons.\n\nWhen writing the electronic configuration, electrons fill the shells starting from the one closest to the nucleus. For the first 20 elements, the shells can hold a maximum of 2, 8, 8, and 2 electrons respectively. Understanding atomic structure is vital for predicting how elements will react and bond with others.",
         "objectives": [
           "Describe the structure of the atom",
           "Define atomic number and mass number"
@@ -44,6 +46,7 @@
       {
         "id": "periodic-table-trends",
         "title": "Periodic Table Trends",
+        "content": "The Periodic Table is an organized arrangement of all known chemical elements, ordered by increasing atomic number. Elements are arranged in vertical columns called 'Groups' and horizontal rows called 'Periods.' Elements in the same group have the same number of valence (outer shell) electrons, which gives them similar chemical properties.\n\nSeveral important trends appear across the table. Atomic radius generally decreases from left to right across a period because the increasing nuclear charge pulls the electrons closer. Conversely, it increases down a group as more energy levels are added. Electronegativity (the ability to attract electrons) and ionization energy (the energy needed to remove an electron) both tend to increase across a period and decrease down a group.\n\nCSEC Chemistry often focuses on Group 1 (Alkali Metals), Group 7 (Halogens), and Group 0 (Noble Gases). Group 1 metals become more reactive as you go down the group because the outer electron is further from the nucleus and easier to lose. Group 7 non-metals become less reactive down the group as it becomes harder to attract an electron.",
         "objectives": [
           "Describe the arrangement of elements in the Periodic Table",
           "Identify trends in groups and periods"
@@ -60,6 +63,7 @@
       {
         "id": "ionic-covalent-bonding",
         "title": "Ionic and Covalent Bonding",
+        "content": "Chemical bonding is the process by which atoms combine to achieve a stable electron configuration, usually a full outer shell. Ionic bonding occurs between metals and non-metals through the transfer of electrons. The metal atom loses electrons to become a positive ion (cation), while the non-metal gains them to become a negative ion (anion). The resulting electrostatic attraction between these oppositely charged ions forms an ionic lattice.\n\nCovalent bonding occurs between non-metal atoms through the sharing of pairs of electrons. A single covalent bond consists of one shared pair. Simple covalent molecules, like water (H₂O) or methane (CH₄), have strong internal bonds but weak intermolecular forces, leading to low melting points. Giant covalent structures, like diamond or graphite, have extensive networks of strong bonds, making them very hard or high-melting.\n\nYou will be expected to draw 'dot-and-cross' diagrams to illustrate both types of bonding. Remember that for ionic bonds, you show the ions in brackets with their charges, while for covalent bonds, you show the overlap of the outer shells where the electrons are shared.",
         "objectives": [
           "Explain the formation of ionic and covalent bonds",
           "Draw dot-and-cross diagrams"
@@ -82,6 +86,7 @@
       {
         "id": "molar-mass-calculations",
         "title": "Molar Mass and Calculations",
+        "content": "The mole is the standard unit in chemistry for measuring the amount of a substance. One mole contains exactly 6.022 × 10²³ particles (Avogadro's constant). The molar mass (M) of a substance is the mass of one mole of that substance, expressed in grams per mole (g/mol). It is numerically equal to the relative atomic mass or relative molecular mass of the substance.\n\nThe fundamental formula for mole calculations is: Number of moles (n) = Mass (m) / Molar Mass (M). For example, the molar mass of water (H₂O) is approximately 18 g/mol (1×2 for H + 16 for O). Therefore, 36 grams of water is exactly 2 moles.\n\nIn the CSEC exam, you will use moles to solve stoichiometry problems, such as determining the mass of product formed from a given mass of reactant. This requires a balanced chemical equation to find the molar ratio between substances. Practice these calculations until you can move confidently between mass, moles, and the number of particles.",
         "objectives": [
           "Calculate relative molecular mass",
           "Convert between moles and mass"
@@ -104,6 +109,7 @@
       {
         "id": "ph-scale-indicators",
         "title": "pH Scale and Indicators",
+        "content": "The pH scale is a logarithmic scale ranging from 0 to 14, used to measure the acidity or alkalinity of a solution. A pH of 7 is neutral (like pure water). Solutions with a pH less than 7 are acidic, while those with a pH greater than 7 are basic (alkaline). The further a value is from 7, the stronger the acid or base.\n\nIndicators are substances that change color depending on the pH of the solution they are in. Litmus paper is a simple indicator: it turns red in acids and blue in bases. Universal indicator is more precise, providing a full spectrum of colors (Red-Orange-Yellow-Green-Blue-Indigo-Violet) that correspond to specific pH values from 1 to 14.\n\nUnderstanding pH is essential for many biological and industrial processes. In the laboratory, you might use a pH meter for high precision or various indicators like phenolphthalein or methyl orange during titrations. CSEC questions often ask you to identify the pH range of common household substances or predict color changes in specific indicators.",
         "objectives": [
           "Describe the pH scale",
           "Use indicators to identify acids and bases"
@@ -120,6 +126,7 @@
       {
         "id": "neutralization",
         "title": "Neutralization and Salt Formation",
+        "content": "Neutralization is a chemical reaction between an acid and a base (or alkali) to produce a salt and water. The general equation is: Acid + Base → Salt + Water. For example, Hydrochloric acid reacts with Sodium hydroxide to form Sodium chloride (table salt) and water: HCl + NaOH → NaCl + H₂O.\n\nThe 'salt' produced depends on the specific acid and base used. Hydrochloric acid produces chlorides, sulfuric acid produces sulfates, and nitric acid produces nitrates. If the base is a carbonate, the reaction also produces carbon dioxide gas: Acid + Metal Carbonate → Salt + Water + Carbon Dioxide.\n\nTitration is the common laboratory technique used to find the exact volume of acid needed to neutralize a set volume of base. A burette is used to add one reactant to the other until an indicator shows the reaction is complete. This topic is a favorite for CSEC practical and paper 2 questions, often requiring you to calculate concentrations from titration data.",
         "objectives": [
           "Explain the process of neutralization",
           "Identify the products of acid-base reactions"
@@ -141,6 +148,7 @@
       {
         "id": "defining-redox",
         "title": "Defining Redox",
+        "content": "Redox (reduction-oxidation) reactions involve the transfer of electrons between chemical species. Oxidation is defined as the loss of electrons, while reduction is the gain of electrons. A helpful mnemonic is OIL RIG: Oxidation Is Loss, Reduction Is Gain.\n\nIn any redox reaction, one substance is oxidized while another is reduced. The substance that accepts electrons and causes another to be oxidized is called the 'oxidizing agent' (it gets reduced itself). The substance that don'tates electrons and causes another to be reduced is the 'reducing agent' (it gets oxidized itself). Oxidation numbers are often used to track these changes; an increase in oxidation number indicates oxidation, while a decrease indicates reduction.\n\nCommon redox examples include the rusting of iron, the combustion of fuels, and the reactions in batteries. You will be asked to identify which species are being oxidized or reduced in a given equation and to write half-equations to show the movement of electrons.",
         "objectives": [
           "Define oxidation and reduction in terms of electron transfer",
           "Identify oxidizing and reducing agents"
@@ -162,6 +170,7 @@
       {
         "id": "hydrocarbons-alkanes",
         "title": "Introduction to Hydrocarbons (Alkanes)",
+        "content": "Organic chemistry is the study of carbon-containing compounds. Hydrocarbons are the simplest organic compounds, consisting only of carbon and hydrogen atoms. Alkanes are a family of 'saturated' hydrocarbons, meaning they contain only single covalent bonds between carbon atoms.\n\nThe general formula for alkanes is CₙH₂ₙ₊₂. The first four members of the series are Methane (CH₄), Ethane (C₂H₆), Propane (C₃H₈), and Butane (C₄H₁₀). As the carbon chain gets longer, the boiling point and viscosity of the alkane increase. Alkanes are primarily used as fuels because they burn in oxygen to release large amounts of energy, producing carbon dioxide and water.\n\nIn the CSEC syllabus, you must be able to name, draw the structural formulas, and describe the properties of these first four alkanes. You should also understand that alkanes are generally unreactive except for combustion and substitution reactions (where a hydrogen atom is replaced by a halogen like chlorine in the presence of UV light).",
         "objectives": [
           "Define hydrocarbons",
           "Name and draw the first four alkanes"

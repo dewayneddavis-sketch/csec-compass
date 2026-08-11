@@ -6,7 +6,7 @@
       {
         "id": "real-numbers",
         "title": "Operations on Real Numbers",
-        "content": "Real numbers are all the numbers you can find on a number line. They include rational numbers \u2014 numbers that can be written as fractions, like 1/2, 0.75, and -3 \u2014 and irrational numbers like \u03c0 (pi) and \u221a2 that cannot be expressed as simple fractions.\n\nWhen working with real numbers, the most important rule is the order of operations, remembered by the acronym BODMAS: Brackets first, then Orders (powers and roots), then Division and Multiplication (left to right), and finally Addition and Subtraction (left to right). For example, in 5 + 3 \u00d7 2, you multiply 3 \u00d7 2 = 6 first, then add 5 to get 11. Without this rule, people would get different answers for the same expression.\n\nMastering operations with real numbers is essential because they appear in every CSEC math topic \u2014 from solving equations in algebra to calculating measurements in geometry. Practice with different combinations of operations until applying BODMAS becomes second nature.",
+        "content": "Real numbers are all the numbers you can find on a number line. They include rational numbers — numbers that can be written as fractions, like 1/2, 0.75, and -3 — and irrational numbers like π (pi) and √2 that cannot be expressed as simple fractions.\n\nWhen working with real numbers, the most important rule is the order of operations, remembered by the acronym BODMAS: Brackets first, then Orders (powers and roots), then Division and Multiplication (left to right), and finally Addition and Subtraction (left to right). For example, in 5 + 3 × 2, you multiply 3 × 2 = 6 first, then add 5 to get 11. Without this rule, people would get different answers for the same expression.\n\nMastering operations with real numbers is essential because they appear in every CSEC math topic — from solving equations in algebra to calculating measurements in geometry. Practice with different combinations of operations until applying BODMAS becomes second nature.",
         "objectives": [
           "Perform operations with real numbers",
           "Apply the order of operations (BODMAS)"
@@ -23,6 +23,7 @@
       {
         "id": "fractions-decimals-percentages",
         "title": "Fractions, Decimals, and Percentages",
+        "content": "Fractions, decimals, and percentages are three different ways of expressing parts of a whole. A fraction like 3/4 means 3 parts out of 4. The same value can be written as the decimal 0.75 — simply divide the numerator by the denominator. As a percentage, it's 75%, which means 75 out of 100.\n\nConverting between these forms is a core CSEC skill. To change a fraction to a percentage, multiply by 100. To go from decimal to fraction, write the decimal over its place value (e.g., 0.6 = 6/10 = 3/5). Percentage problems often appear in profit and loss, discounts, and interest calculations, so it's worth practicing until you can convert fluently in both directions.\n\nA useful tip: remember that 'percent' literally means 'per hundred'. So 25% = 25/100 = 1/4 = 0.25. Memorizing common fraction-decimal-percent equivalents like 1/2=0.5=50%, 1/4=0.25=25%, and 1/3≈0.333≈33.3% will save you time in exams.",
         "objectives": [
           "Convert between fractions, decimals, and percentages",
           "Solve problems involving percentages"
@@ -34,8 +35,7 @@
         "experiment": {
           "type": "visual-converter",
           "description": "Visual Fraction/Percentage Slider: A bar that you can slide to see how a fraction (e.g., 3/4) converts to a decimal (0.75) and a percentage (75%) visually."
-        },
-        "content": "Fractions, decimals, and percentages are three different ways of expressing parts of a whole. A fraction like 3/4 means 3 parts out of 4. The same value can be written as the decimal 0.75 \u2014 simply divide the numerator by the denominator. As a percentage, it's 75%, which means 75 out of 100.\n\nConverting between these forms is a core CSEC skill. To change a fraction to a percentage, multiply by 100. To go from decimal to fraction, write the decimal over its place value (e.g., 0.6 = 6/10 = 3/5). Percentage problems often appear in profit and loss, discounts, and interest calculations, so it's worth practicing until you can convert fluently in both directions.\n\nA useful tip: remember that 'percent' literally means 'per hundred'. So 25% = 25/100 = 1/4 = 0.25. Memorizing common fraction-decimal-percent equivalents like 1/2=0.5=50%, 1/4=0.25=25%, and 1/3\u22480.333\u224833.3% will save you time in exams."
+        }
       }
     ]
   },
@@ -46,6 +46,7 @@
       {
         "id": "algebraic-expressions",
         "title": "Algebraic Expressions and Equations",
+        "content": "An algebraic expression is a combination of numbers, variables (letters like x or y), and operations. For example, 3x + 2y - 5 is an algebraic expression. The parts separated by + or - signs are called terms. Terms with the same variable raised to the same power are 'like terms' and can be combined: 3x + 2x = 5x, but 3x + 2y cannot be simplified further.\n\nSolving linear equations means finding the value of the variable that makes the equation true. The golden rule is: whatever you do to one side of the equation, you must do to the other. For 2x + 4 = 10, subtract 4 from both sides to get 2x = 6, then divide both sides by 2 to get x = 3. Always check your answer by substituting it back into the original equation.\n\nAlgebra is the language of mathematics. Once you master expressions and equations, you'll be able to solve word problems, graph lines, and tackle more advanced topics like quadratics and simultaneous equations.",
         "objectives": [
           "Simplify algebraic expressions",
           "Solve linear equations"
@@ -57,42 +58,41 @@
         "experiment": {
           "type": "balance-scale",
           "description": "Equation Balance Scale: Drag constants and variables (x) onto a balance scale to solve for x by keeping the scale balanced."
-        },
-        "content": "An algebraic expression is a combination of numbers, variables (letters like x or y), and operations. For example, 3x + 2y - 5 is an algebraic expression. The parts separated by + or - signs are called terms. Terms with the same variable raised to the same power are 'like terms' and can be combined: 3x + 2x = 5x, but 3x + 2y cannot be simplified further.\n\nSolving linear equations means finding the value of the variable that makes the equation true. The golden rule is: whatever you do to one side of the equation, you must do to the other. For 2x + 4 = 10, subtract 4 from both sides to get 2x = 6, then divide both sides by 2 to get x = 3. Always check your answer by substituting it back into the original equation.\n\nAlgebra is the language of mathematics. Once you master expressions and equations, you'll be able to solve word problems, graph lines, and tackle more advanced topics like quadratics and simultaneous equations."
+        }
       },
       {
         "id": "quadratic-equations",
         "title": "Quadratic Equations",
+        "content": "A quadratic equation is one where the highest power of the variable is 2, written in standard form as ax² + bx + c = 0. For example, x² + 5x + 6 = 0 is a quadratic. These equations can have two solutions (roots), one solution, or no real solutions.\n\nThere are three main methods for solving quadratics on the CSEC exam: factoring, completing the square, and using the quadratic formula x = [-b ± √(b² - 4ac)] / 2a. Factoring is fastest when it works — for x² + 5x + 6 = 0, find two numbers that multiply to 6 and add to 5: 2 and 3, so (x+2)(x+3) = 0, giving x = -2 or x = -3.\n\nThe quadratic formula always works, even when factoring doesn't. The expression under the square root, b² - 4ac, is called the discriminant. If it's positive, there are two real roots; if zero, one repeated root; if negative, no real roots. This is a common CSEC question type.",
         "objectives": [
           "Solve quadratic equations by factoring",
           "Use the quadratic formula"
         ],
         "concepts": [
           "Standard form: ax^2 + bx + c = 0.",
-          "The quadratic formula: x = [-b \u00b1 sqrt(b^2 - 4ac)] / 2a"
+          "The quadratic formula: x = [-b ± sqrt(b^2 - 4ac)] / 2a"
         ],
         "experiment": {
           "type": "graph-plotter",
           "description": "Parabola Explorer: Adjust sliders for a, b, and c in ax^2 + bx + c to see how the parabola shifts, widens, or narrows on a graph."
-        },
-        "content": "A quadratic equation is one where the highest power of the variable is 2, written in standard form as ax\u00b2 + bx + c = 0. For example, x\u00b2 + 5x + 6 = 0 is a quadratic. These equations can have two solutions (roots), one solution, or no real solutions.\n\nThere are three main methods for solving quadratics on the CSEC exam: factoring, completing the square, and using the quadratic formula x = [-b \u00b1 \u221a(b\u00b2 - 4ac)] / 2a. Factoring is fastest when it works \u2014 for x\u00b2 + 5x + 6 = 0, find two numbers that multiply to 6 and add to 5: 2 and 3, so (x+2)(x+3) = 0, giving x = -2 or x = -3.\n\nThe quadratic formula always works, even when factoring doesn't. The expression under the square root, b\u00b2 - 4ac, is called the discriminant. If it's positive, there are two real roots; if zero, one repeated root; if negative, no real roots. This is a common CSEC question type."
+        }
       },
       {
         "id": "inequalities",
         "title": "Linear Inequalities",
+        "content": "Linear inequalities are like linear equations but with inequality signs instead of equals: < (less than), > (greater than), ≤ (less than or equal to), ≥ (greater than or equal to). Solving them follows the same rules as equations, with one crucial difference: when you multiply or divide by a negative number, you must flip the inequality sign.\n\nFor example, solve 3x - 5 > 10: add 5 to both sides to get 3x > 15, divide by 3 to get x > 5. The solution is all numbers greater than 5. On a number line, you'd draw an open circle at 5 and shade to the right. For -2x ≤ 8, divide by -2 and flip the sign: x ≥ -4.\n\nInequalities appear in real-world problems like budget constraints, speed limits, and minimum requirements. CSEC questions often ask you to represent the solution on a number line or as a set notation. Be careful with the direction of the sign and remember to flip it when multiplying or dividing by a negative number.",
         "objectives": [
           "Solve linear inequalities in one variable",
           "Represent solutions on a number line"
         ],
         "concepts": [
-          "Inequality symbols: <, >, \u2264, \u2265.",
+          "Inequality symbols: <, >, ≤, ≥.",
           "Multiplying or dividing by a negative number flips the inequality sign."
         ],
         "experiment": {
           "type": "number-line-plotter",
           "description": "Inequality Mapper: Input an inequality (e.g., 2x + 3 > 7) and watch the solution shade automatically on an interactive number line."
-        },
-        "content": "Linear inequalities are like linear equations but with inequality signs instead of equals: < (less than), > (greater than), \u2264 (less than or equal to), \u2265 (greater than or equal to). Solving them follows the same rules as equations, with one crucial difference: when you multiply or divide by a negative number, you must flip the inequality sign.\n\nFor example, solve 3x - 5 > 10: add 5 to both sides to get 3x > 15, divide by 3 to get x > 5. The solution is all numbers greater than 5. On a number line, you'd draw an open circle at 5 and shade to the right. For -2x \u2264 8, divide by -2 and flip the sign: x \u2265 -4.\n\nInequalities appear in real-world problems like budget constraints, speed limits, and minimum requirements. CSEC questions often ask you to represent the solution on a number line or as a set notation. Be careful with the direction of the sign and remember to flip it when multiplying or dividing by a negative number."
+        }
       }
     ]
   },
@@ -103,6 +103,7 @@
       {
         "id": "coordinate-geometry",
         "title": "Coordinate Geometry",
+        "content": "Coordinate geometry (or analytic geometry) uses algebra to describe points, lines, and shapes on a grid. A point is written as (x, y) where x is the horizontal position and y is the vertical. The distance between two points (x₁,y₁) and (x₂,y₂) is given by d = √[(x₂-x₁)² + (y₂-y₁)²] — this is the Pythagorean theorem in coordinates.\n\nThe midpoint of a line segment is ((x₁+x₂)/2, (y₁+y₂)/2) — just average the x-values and y-values. The gradient (slope) of a line is m = (y₂-y₁)/(x₂-x₁). A positive gradient goes uphill left to right; negative goes downhill. Parallel lines have the same gradient; perpendicular lines have gradients that multiply to -1.\n\nThe equation of a straight line is y = mx + c, where m is the gradient and c is the y-intercept (where the line crosses the y-axis). Given two points, you can find m first, then substitute one point to find c. CSEC questions often ask for the equation of a line, the gradient, intercepts, or whether points are collinear.",
         "objectives": [
           "Find the gradient of a straight line",
           "Determine the equation of a straight line"
@@ -114,12 +115,12 @@
         "experiment": {
           "type": "graph-linear",
           "description": "Line Lab: Plot y=mx+b with draggable sliders for m and b. Show the line updating in real-time with the equation displayed."
-        },
-        "content": "Coordinate geometry (or analytic geometry) uses algebra to describe points, lines, and shapes on a grid. A point is written as (x, y) where x is the horizontal position and y is the vertical. The distance between two points (x\u2081,y\u2081) and (x\u2082,y\u2082) is given by d = \u221a[(x\u2082-x\u2081)\u00b2 + (y\u2082-y\u2081)\u00b2] \u2014 this is the Pythagorean theorem in coordinates.\n\nThe midpoint of a line segment is ((x\u2081+x\u2082)/2, (y\u2081+y\u2082)/2) \u2014 just average the x-values and y-values. The gradient (slope) of a line is m = (y\u2082-y\u2081)/(x\u2082-x\u2081). A positive gradient goes uphill left to right; negative goes downhill. Parallel lines have the same gradient; perpendicular lines have gradients that multiply to -1.\n\nThe equation of a straight line is y = mx + c, where m is the gradient and c is the y-intercept (where the line crosses the y-axis). Given two points, you can find m first, then substitute one point to find c. CSEC questions often ask for the equation of a line, the gradient, intercepts, or whether points are collinear."
+        }
       },
       {
         "id": "functions",
         "title": "Introduction to Functions",
+        "content": "A function is a mathematical relationship where each input (x) corresponds to exactly one output (y). We use the notation f(x) to represent the value of the function at x. Think of it as a machine: you drop a number in, the machine performs a specific rule, and one result comes out. If an input could lead to two different outputs, it is a relation but not a function.\n\nEvaluating functions involve substituting a specific value for x into the rule. For example, if f(x) = 2x + 3, then f(5) = 2(5) + 3 = 13. Composite functions like f(g(x)) mean you first apply the function g, and then use that result as the input for f. Inverse functions, denoted f⁻¹(x), effectively 'undo' the original function, mapping the output back to the input.\n\nTo find the inverse of a linear function, replace f(x) with y, swap x and y, and then solve for the new y. Functions are fundamental to higher mathematics and are frequently tested in CSEC Paper 2, often requiring you to evaluate composites or determine inverse rules.",
         "objectives": [
           "Understand function notation f(x)",
           "Evaluate composite and inverse functions"
@@ -142,6 +143,7 @@
       {
         "id": "pythagoras-theorem",
         "title": "Pythagoras' Theorem",
+        "content": "Pythagoras' Theorem is a fundamental principle in geometry that relates the lengths of the sides of a right-angled triangle. It states that the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides. This is expressed as the famous formula: a² + b² = c², where c is the hypotenuse.\n\nThe hypotenuse is always the longest side of a right-angled triangle. If you know the lengths of any two sides, you can use the theorem to find the third. For example, if the two shorter sides are 3cm and 4cm, then 3² + 4² = 9 + 16 = 25. Since c² = 25, the hypotenuse c = √25 = 5cm.\n\nIn CSEC exams, Pythagoras' Theorem is often applied to real-world scenarios, such as finding the height of a ladder leaning against a wall or the distance across a rectangular field. It is also a building block for trigonometry and coordinate geometry. Remember: this theorem *only* applies to right-angled triangles!",
         "objectives": [
           "Apply Pythagoras' theorem to find missing sides of right-angled triangles"
         ],
@@ -156,6 +158,7 @@
       {
         "id": "trig-ratios",
         "title": "Trigonometric Ratios (SOH CAH TOA)",
+        "content": "Trigonometry is the study of the relationships between the angles and sides of triangles. For right-angled triangles, we use three primary ratios: Sine (sin), Cosine (cos), and Tangent (tan). These are easily remembered using the acronym SOH CAH TOA.\n\nSOH stands for Sin θ = Opposite / Hypotenuse. CAH stands for Cos θ = Adjacent / Hypotenuse. TOA stands for Tan θ = Opposite / Adjacent. The 'Opposite' side is the one across from the angle θ you are using, the 'Adjacent' side is the one next to it (that isn't the hypotenuse), and the 'Hypotenuse' is always the longest side across from the 90-degree angle.\n\nYou can use these ratios to find missing side lengths or missing angles. When finding an angle, you'll need the 'inverse' functions on your calculator (sin⁻¹, cos⁻¹, or tan⁻¹). Trigonometry is essential for fields like navigation, construction, and engineering. In CSEC, you'll often encounter problems involving angles of elevation and depression, which require careful labeling of the triangle before applying the correct ratio.",
         "objectives": [
           "Define sine, cosine, and tangent ratios",
           "Use trig ratios to find angles and sides"
@@ -179,6 +182,7 @@
       {
         "id": "vectors",
         "title": "Introduction to Vectors",
+        "content": "A vector is a quantity that has both magnitude (size) and direction. This distinguishes it from a 'scalar', which only has magnitude (like temperature or mass). Examples of vectors include displacement, velocity, and force. In mathematics, we often represent a vector as a directed line segment — an arrow pointing from one point to another.\n\nIn coordinate form, vectors are often written as column matrices, such as [x; y], where x represents the horizontal displacement and y represents the vertical displacement. To add two vectors, you simply add their corresponding components. Geometrically, this corresponds to placing the vectors 'head-to-tail' — the resultant vector is the one that goes from the start of the first to the end of the second.\n\nMultiplying a vector by a scalar (a regular number) changes its magnitude and can reverse its direction if the scalar is negative, but it doesn't change the vector's orientation. Vectors are a powerful tool for solving problems involving movement and forces, and they appear regularly in CSEC Paper 1 and Paper 2.",
         "objectives": [
           "Represent vectors as column matrices",
           "Add and subtract vectors"
@@ -195,6 +199,7 @@
       {
         "id": "matrices",
         "title": "Matrices and Determinants",
+        "content": "A matrix is a rectangular array of numbers arranged in rows and columns. The size or 'order' of a matrix is given as (rows × columns). For example, a 2×3 matrix has 2 rows and 3 columns. Matrices allow us to organize data and perform complex transformations on coordinates and systems of equations.\n\nMatrix multiplication is a specific process where you multiply the elements of the rows of the first matrix by the columns of the second and sum them up. Because of this, you can only multiply two matrices if the number of columns in the first matches the number of rows in the second. For 2×2 matrices, the determinant is a single number calculated as (ad - bc).\n\nThe determinant is crucial because it tells us if a matrix has an inverse. If the determinant is zero, the matrix is 'singular' and has no inverse. Otherwise, the inverse matrix can be used to solve systems of linear equations. CSEC questions typically focus on 2×2 matrices, requiring you to perform basic operations, find determinants, and calculate inverses.",
         "objectives": [
           "Perform matrix multiplication",
           "Calculate the determinant and inverse of a 2x2 matrix"
@@ -217,6 +222,7 @@
       {
         "id": "central-tendency",
         "title": "Measures of Central Tendency",
+        "content": "Measures of central tendency are numbers that represent the 'center' or typical value of a data set. The three most common measures are the mean, the median, and the mode. Each gives a different perspective on the data and is useful in different situations.\n\nThe Mean is the average — add all the values together and divide by the number of values. The Median is the middle value when the data is arranged in order from smallest to largest. If there's an even number of values, the median is the average of the two middle numbers. The Mode is simply the value that appears most frequently in the set.\n\nFor example, in the set {2, 3, 3, 5, 7}, the mean is 4, the median is 3, and the mode is 3. In CSEC exams, you may be asked to calculate these for raw data or from frequency tables. Understanding which measure to use is also important — for instance, the median is often better than the mean for describing incomes because it isn't skewed by a few extremely high values.",
         "objectives": [
           "Calculate mean, median, and mode for raw and grouped data"
         ],
@@ -233,6 +239,7 @@
       {
         "id": "probability",
         "title": "Basic Probability",
+        "content": "Probability measures how likely an event is, from 0 (impossible) to 1 (certain). The theoretical probability of an event E is: P(E) = (number of favorable outcomes) / (total number of possible outcomes). For example, the probability of rolling a 6 on a fair die is 1/6.\n\nFor combined events: P(A or B) = P(A) + P(B) - P(A and B). If A and B are mutually exclusive (can't happen together), then P(A or B) = P(A) + P(B). For independent events, P(A and B) = P(A) × P(B). Tree diagrams help visualize multi-step probability problems — multiply along branches and add between branches.\n\nCSEC probability questions often involve dice, cards, colored balls in bags, or spinners. Read carefully: 'with replacement' means the probability stays the same for the second draw; 'without replacement' means it changes. Express probabilities as fractions in simplest form unless asked otherwise.",
         "objectives": [
           "Calculate the probability of a simple event",
           "Understand the probability scale (0 to 1)"
@@ -244,8 +251,7 @@
         "experiment": {
           "type": "probability-sim",
           "description": "Coin Flip Lab: Simulate flipping a coin 100 or 1000 times to see how the experimental probability approaches 0.5 (theoretical)."
-        },
-        "content": "Probability measures how likely an event is, from 0 (impossible) to 1 (certain). The theoretical probability of an event E is: P(E) = (number of favorable outcomes) / (total number of possible outcomes). For example, the probability of rolling a 6 on a fair die is 1/6.\n\nFor combined events: P(A or B) = P(A) + P(B) - P(A and B). If A and B are mutually exclusive (can't happen together), then P(A or B) = P(A) + P(B). For independent events, P(A and B) = P(A) \u00d7 P(B). Tree diagrams help visualize multi-step probability problems \u2014 multiply along branches and add between branches.\n\nCSEC probability questions often involve dice, cards, colored balls in bags, or spinners. Read carefully: 'with replacement' means the probability stays the same for the second draw; 'without replacement' means it changes. Express probabilities as fractions in simplest form unless asked otherwise."
+        }
       }
     ]
   },
@@ -256,13 +262,14 @@
       {
         "id": "perimeter-area",
         "title": "Perimeter and Area",
+        "content": "Perimeter is the total distance around the outside of a 2D shape. For a rectangle, it is 2(length + width); for a circle, the perimeter is called the circumference and is calculated using the formula C = 2πr or C = πd. Finding the perimeter is essentially like measuring the length of a fence needed to enclose a yard.\n\nArea is the amount of space inside the boundaries of a flat 2D object, measured in square units (like cm² or m²). The area of a rectangle is length × width, while the area of a triangle is 1/2 × base × height. For a circle, the area is πr². More complex shapes can often be broken down into these basic forms to find the total area.\n\nCSEC problems frequently involve compound shapes, such as a rectangle with a semi-circle on top. To solve these, calculate the area of each part separately and then add them together. Accuracy with units and formulas is key. Remember: perimeter is a length (1D), while area is a surface (2D).",
         "objectives": [
           "Calculate perimeter and area of basic shapes",
           "Solve problems involving compound shapes"
         ],
         "concepts": [
           "Area of rectangle = length x width.",
-          "Area of circle = \u03c0r^2."
+          "Area of circle = πr^2."
         ],
         "experiment": {
           "type": "area-builder",
@@ -272,6 +279,7 @@
       {
         "id": "volume-capacity",
         "title": "Volume and Capacity",
+        "content": "Volume is the amount of 3D space an object occupies, measured in cubic units (like cm³ or m³). For prisms (shapes with a uniform cross-section), the volume is calculated by multiplying the area of the base by the height: V = A_base × h. This applies to cubes, rectangular prisms, and cylinders.\n\nThe volume of a cylinder is therefore πr²h, since its base is a circle. Capacity refers to the amount of liquid a container can hold. While volume is the physical space occupied by the object, capacity is often expressed in liters (L) or milliliters (mL). A key conversion to remember for CSEC is that 1000 cm³ = 1 liter.\n\nIn exams, you might be asked to find the volume of a water tank or determine how many small boxes can fit into a larger container. Some problems also involve 'displacement' — when an object is submerged in water, the volume of water it displaces is equal to its own volume. Always double-check your formula and ensure your units are consistent.",
         "objectives": [
           "Calculate the volume of prisms and cylinders"
         ],
