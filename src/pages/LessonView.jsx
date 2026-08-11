@@ -52,6 +52,14 @@ export default function LessonView() {
       </div>
 
       <div className="lv-content">
+        {lesson.content && (
+          <div className="lv-body">
+            {lesson.content.split('\n\n').map((paragraph, i) => (
+              <p key={i}>{paragraph}</p>
+            ))}
+          </div>
+        )}
+
         {lesson.objectives?.length > 0 && (
           <div className="lv-objectives">
             <h3>Learning Objectives</h3>

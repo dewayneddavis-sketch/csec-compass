@@ -6,6 +6,9 @@
 .lv-breadcrumb{display:block;color:#9ca3af;font-size:.85rem;margin-bottom:.25rem}
 .lv-title{font-size:1.75rem;font-weight:800;color:#111827}
 .lv-content{display:flex;flex-direction:column;gap:1.5rem}
+.lv-body{line-height:1.7;color:#374151;font-size:1.1rem;margin-bottom:1rem;background:#fff;border-radius:16px;padding:1.5rem 2rem;box-shadow:0 1px 3px rgba(0,0,0,0.06),0 4px 12px rgba(0,0,0,0.03)}
+.lv-body p{margin-bottom:1.25rem}
+.lv-body p:last-child{margin-bottom:0}
 .lv-objectives,.lv-concepts{background:#fff;border-radius:16px;padding:1.5rem 2rem;box-shadow:0 1px 3px rgba(0,0,0,0.06),0 4px 12px rgba(0,0,0,0.03)}
 .lv-objectives h3,.lv-concepts h3{font-size:1.05rem;margin-bottom:.75rem;color:#111827}
 .lv-objectives ul,.lv-concepts ul{padding-left:1.25rem}
