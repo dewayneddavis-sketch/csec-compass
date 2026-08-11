@@ -128,6 +128,7 @@ export function normalizeModules(modules) {
       title: l.title || l,
       objectives: l.objectives || [],
       concepts: l.concepts || [],
+      content: l.content || "",
       experiment: l.experiment || null,
     })) : [],
   }));
