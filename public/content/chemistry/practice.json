@@ -1,0 +1,86 @@
+[
+  {
+    "id": "p1",
+    "question": "Which of the following describes the arrangement of particles in a solid?",
+    "options": ["Closely packed in a regular arrangement", "Far apart and move rapidly", "Close together but can move past each other", "Arranged in a random pattern"],
+    "answer": "Closely packed in a regular arrangement",
+    "explanation": "Solid particles are tightly packed in a fixed, regular lattice structure."
+  },
+  {
+    "id": "p2",
+    "question": "An atom has 11 protons and 12 neutrons. What is its mass number?",
+    "options": ["11", "12", "23", "1"],
+    "answer": "23",
+    "explanation": "Mass Number (A) = Protons + Neutrons = 11 + 12 = 23."
+  },
+  {
+    "id": "p3",
+    "question": "Which trend is generally observed as you move from left to right across a period in the Periodic Table?",
+    "options": ["Atomic radius increases", "Electronegativity decreases", "Ionization energy increases", "Metallic character increases"],
+    "answer": "Ionization energy increases",
+    "explanation": "Across a period, nuclear charge increases, making it harder to remove an electron, thus increasing ionization energy."
+  },
+  {
+    "id": "p4",
+    "question": "Ionic bonding occurs between a metal and a non-metal through the:",
+    "options": ["Sharing of electrons", "Transfer of electrons", "Delocalization of electrons", "Attraction of dipoles"],
+    "answer": "Transfer of electrons",
+    "explanation": "Ionic bonds are formed when a metal atom transfers electrons to a non-metal atom."
+  },
+  {
+    "id": "p5",
+    "question": "How many moles are in 40 grams of Sodium hydroxide (NaOH)? (Molar mass: Na=23, O=16, H=1)",
+    "options": ["0.5 moles", "1.0 mole", "2.0 moles", "4.0 moles"],
+    "answer": "1.0 mole",
+    "explanation": "Molar mass of NaOH = 23 + 16 + 1 = 40 g/mol. Moles = 40g / 40g/mol = 1 mole."
+  },
+  {
+    "id": "p6",
+    "question": "Which of the following is most likely to have a pH of 2?",
+    "options": ["Distilled water", "Lemon juice", "Bleach", "Milk of magnesia"],
+    "answer": "Lemon juice",
+    "explanation": "Lemon juice is acidic (contains citric acid), and a pH of 2 represents a strong acid."
+  },
+  {
+    "id": "p7",
+    "question": "What are the products of a neutralization reaction between an acid and a base?",
+    "options": ["Salt and Hydrogen", "Salt and Water", "Acid and Salt", "Water and Oxygen"],
+    "answer": "Salt and Water",
+    "explanation": "Neutralization: Acid + Base -> Salt + Water."
+  },
+  {
+    "id": "p8",
+    "question": "Oxidation is defined as the:",
+    "options": ["Gain of electrons", "Loss of electrons", "Gain of hydrogen", "Loss of oxygen"],
+    "answer": "Loss of electrons",
+    "explanation": "OIL RIG: Oxidation Is Loss (of electrons)."
+  },
+  {
+    "id": "p9",
+    "question": "What is the general formula for the alkane homologous series?",
+    "options": ["CnH2n", "CnH2n+2", "CnH2n-2", "CnH2n+1"],
+    "answer": "CnH2n+2",
+    "explanation": "Alkanes are saturated hydrocarbons with the general formula CnH2n+2."
+  },
+  {
+    "id": "p10",
+    "question": "The process by which a solid turns directly into a gas without becoming a liquid is called:",
+    "options": ["Evaporation", "Condensation", "Sublimation", "Deposition"],
+    "answer": "Sublimation",
+    "explanation": "Sublimation is the direct change of state from solid to gas."
+  },
+  {
+    "id": "p11",
+    "question": "Isotopes of the same element have the same number of protons but different numbers of:",
+    "options": ["Electrons", "Neutrons", "Shells", "Valence electrons"],
+    "answer": "Neutrons",
+    "explanation": "Isotopes have the same atomic number but different mass numbers due to varying neutron counts."
+  },
+  {
+    "id": "p12",
+    "question": "Which of the following is a characteristic of simple covalent molecules?",
+    "options": ["High melting point", "Conduct electricity when molten", "Low melting point", "Solid at room temperature"],
+    "answer": "Low melting point",
+    "explanation": "Simple covalent molecules have weak intermolecular forces, resulting in low melting and boiling points."
+  }
+]

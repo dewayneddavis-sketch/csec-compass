@@ -1,0 +1,86 @@
+[
+  {
+    "id": "p1",
+    "question": "Which of the following is a scalar quantity?",
+    "options": ["Velocity", "Acceleration", "Displacement", "Energy"],
+    "answer": "Energy",
+    "explanation": "Energy only has magnitude and no direction, making it a scalar quantity."
+  },
+  {
+    "id": "p2",
+    "question": "What does the area under a velocity-time graph represent?",
+    "options": ["Speed", "Acceleration", "Displacement", "Time"],
+    "answer": "Displacement",
+    "explanation": "The area under a velocity-time graph is equal to the total displacement of the object."
+  },
+  {
+    "id": "p3",
+    "question": "Which method of heat transfer involves the movement of fluid due to density differences?",
+    "options": ["Conduction", "Convection", "Radiation", "Insulation"],
+    "answer": "Convection",
+    "explanation": "Convection occurs in fluids as warmer, less dense areas rise and cooler, denser areas sink."
+  },
+  {
+    "id": "p4",
+    "question": "According to Boyle's Law, if the volume of a gas is halved (at constant temperature), the pressure will:",
+    "options": ["Be halved", "Stay the same", "Double", "Quadruple"],
+    "answer": "Double",
+    "explanation": "P and V are inversely proportional (P1V1 = P2V2). If V is halved, P must double."
+  },
+  {
+    "id": "p5",
+    "question": "A wave has a frequency of 50 Hz and a wavelength of 2 m. What is its speed?",
+    "options": ["25 m/s", "52 m/s", "100 m/s", "48 m/s"],
+    "answer": "100 m/s",
+    "explanation": "v = f × λ = 50 × 2 = 100 m/s."
+  },
+  {
+    "id": "p6",
+    "question": "A converging lens can form which type of image?",
+    "options": ["Only real images", "Only virtual images", "Both real and virtual images", "Neither real nor virtual"],
+    "answer": "Both real and virtual images",
+    "explanation": "A convex (converging) lens forms a real image unless the object is within the focal length, then it forms a virtual image."
+  },
+  {
+    "id": "p7",
+    "question": "An electrical component has a resistance of 10 Ω and a current of 2 A flowing through it. What is the voltage across it?",
+    "options": ["5 V", "12 V", "20 V", "0.2 V"],
+    "answer": "20 V",
+    "explanation": "V = IR = 2 × 10 = 20 V."
+  },
+  {
+    "id": "p8",
+    "question": "In a series circuit, what remains the same at all points?",
+    "options": ["Voltage", "Resistance", "Current", "Power"],
+    "answer": "Current",
+    "explanation": "In a series circuit, there is only one path, so the current is identical throughout the circuit."
+  },
+  {
+    "id": "p9",
+    "question": "A radioactive substance has a half-life of 20 minutes. If the initial activity is 800 Bq, what will it be after 1 hour?",
+    "options": ["400 Bq", "200 Bq", "100 Bq", "50 Bq"],
+    "answer": "100 Bq",
+    "explanation": "1 hour = 3 half-lives. 800 -> 400 -> 200 -> 100 Bq."
+  },
+  {
+    "id": "p10",
+    "question": "Which of Newton's laws states that every action has an equal and opposite reaction?",
+    "options": ["First Law", "Second Law", "Third Law", "Law of Gravitation"],
+    "answer": "Third Law",
+    "explanation": "Newton's Third Law: For every action, there is an equal and opposite reaction."
+  },
+  {
+    "id": "p11",
+    "question": "What happens to the temperature of a substance while it is melting?",
+    "options": ["It increases", "It decreases", "It stays constant", "It increases then decreases"],
+    "answer": "It stays constant",
+    "explanation": "During a change of state, all energy goes into breaking bonds rather than raising temperature."
+  },
+  {
+    "id": "p12",
+    "question": "Refractive index (n) is defined as:",
+    "options": ["sin r / sin i", "sin i / sin r", "i / r", "r / i"],
+    "answer": "sin i / sin r",
+    "explanation": "Snell's Law: n = sin(angle of incidence) / sin(angle of refraction)."
+  }
+]

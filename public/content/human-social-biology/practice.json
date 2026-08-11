@@ -1,0 +1,86 @@
+[
+  {
+    "id": "p1",
+    "question": "Which of the following is NOT a function of the human skeleton?",
+    "options": ["Production of blood cells", "Storage of minerals", "Coordination of nerve impulses", "Protection of internal organs"],
+    "answer": "Coordination of nerve impulses",
+    "explanation": "Nerve coordination is a function of the nervous system, not the skeletal system."
+  },
+  {
+    "id": "p2",
+    "question": "When you bend your arm at the elbow, the biceps muscle ________ and the triceps muscle ________.",
+    "options": ["contracts; relaxes", "relaxes; contracts", "contracts; contracts", "relaxes; relaxes"],
+    "answer": "contracts; relaxes",
+    "explanation": "Biceps and triceps are an antagonistic pair; the biceps (agonist) must contract to bend the arm."
+  },
+  {
+    "id": "p3",
+    "question": "Which pathway correctly shows the flow of deoxygenated blood through the heart?",
+    "options": ["Left atrium -> Left ventricle -> Aorta", "Right atrium -> Right ventricle -> Pulmonary artery", "Vena cava -> Left atrium -> Left ventricle", "Pulmonary vein -> Right atrium -> Right ventricle"],
+    "answer": "Right atrium -> Right ventricle -> Pulmonary artery",
+    "explanation": "The right side of the heart receives deoxygenated blood and pumps it to the lungs via the pulmonary artery."
+  },
+  {
+    "id": "p4",
+    "question": "In which part of the respiratory system does gaseous exchange take place?",
+    "options": ["Trachea", "Bronchi", "Alveoli", "Diaphragm"],
+    "answer": "Alveoli",
+    "explanation": "Alveoli are tiny air sacs with thin walls where oxygen enters and carbon dioxide leaves the blood."
+  },
+  {
+    "id": "p5",
+    "question": "What is the main function of the 'villi' in the small intestine?",
+    "options": ["To secrete digestive enzymes", "To store waste before elimination", "To increase surface area for absorption", "To move food along the gut"],
+    "answer": "To increase surface area for absorption",
+    "explanation": "Villi and microvilli provide a massive surface area to maximize the absorption of digested nutrients."
+  },
+  {
+    "id": "p6",
+    "question": "A deficiency of Vitamin C in the diet can lead to which disease?",
+    "options": ["Night blindness", "Scurvy", "Rickets", "Anemia"],
+    "answer": "Scurvy",
+    "explanation": "Vitamin C is essential for healthy skin and gums; its lack causes scurvy."
+  },
+  {
+    "id": "p7",
+    "question": "Which of the following is a non-communicable disease?",
+    "options": ["Malaria", "HIV/AIDS", "Diabetes", "Tuberculosis"],
+    "answer": "Diabetes",
+    "explanation": "Diabetes is a metabolic disorder and cannot be spread from person to person."
+  },
+  {
+    "id": "p8",
+    "question": "Vaccinations provide 'active immunity' because they:",
+    "options": ["Introduce ready-made antibodies", "Stimulate the body to produce its own antibodies", "Kill pathogens directly in the blood", "Provide temporary protection only"],
+    "answer": "Stimulate the body to produce its own antibodies",
+    "explanation": "Vaccines use harmless pathogens to trigger the immune response and create long-term memory cells."
+  },
+  {
+    "id": "p9",
+    "question": "The excessive use of chemical fertilizers near a river can cause 'eutrophication,' which leads to:",
+    "options": ["Increased fish population", "Oxygen depletion and death of aquatic life", "Clearer water for swimming", "Reduced algae growth"],
+    "answer": "Oxygen depletion and death of aquatic life",
+    "explanation": "Fertilizers cause algae blooms that block light and use up oxygen when they decompose."
+  },
+  {
+    "id": "p10",
+    "question": "Which method of waste disposal involves burying waste in a large, lined hole in the ground?",
+    "options": ["Incineration", "Recycling", "Landfill", "Composting"],
+    "answer": "Landfill",
+    "explanation": "A sanitary landfill is a managed site for the disposal of non-biodegradable and other solid waste."
+  },
+  {
+    "id": "p11",
+    "question": "Which of the following is a stimulant drug that speeds up the central nervous system?",
+    "options": ["Alcohol", "Cocaine", "Heroin", "Cannabis"],
+    "answer": "Cocaine",
+    "explanation": "Cocaine is a powerful stimulant; alcohol and heroin are depressants."
+  },
+  {
+    "id": "p12",
+    "question": "Which contraceptive method also provides significant protection against Sexually Transmitted Infections (STIs)?",
+    "options": ["The Pill", "Condoms", "Vasectomy", "Intrauterine Device (IUD)"],
+    "answer": "Condoms",
+    "explanation": "Condoms act as a physical barrier, preventing the exchange of bodily fluids that carry STIs."
+  }
+]

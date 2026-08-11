@@ -6,6 +6,7 @@
       {
         "id": "cell-structure",
         "title": "Cell Structure and Function",
+        "content": "Cells are the basic structural and functional units of all living organisms. There are two main types: prokaryotic cells (found in bacteria) which lack a nucleus and membrane-bound organelles, and eukaryotic cells (found in plants, animals, fungi, and protists) which have a distinct nucleus containing genetic material. On the CSEC Biology exam, you must know the differences between plant and animal cells.\n\nKey organelles to know: Nucleus (contains DNA, controls cell activities), Mitochondria (site of aerobic respiration — 'powerhouse' of the cell), Ribosomes (protein synthesis), Endoplasmic Reticulum (transports materials), Golgi Body (packages and distributes proteins), and Lysosomes (digestive enzymes). Plant cells have three extra structures: Cell Wall (made of cellulose, provides support), Chloroplasts (site of photosynthesis, contain chlorophyll), and a large Central Vacuole (stores water and dissolved substances).\n\nWhen comparing cells under a microscope, plant cells appear more rectangular with distinct walls, while animal cells are more rounded. Remember: both have a nucleus, cytoplasm, cell membrane, mitochondria, and ribosomes. The differences reflect their different functions — plants make their own food and need structural support; animals move and consume food.",
         "objectives": [
           "Identify parts of animal and plant cells",
           "Explain the function of cell organelles"
@@ -17,12 +18,12 @@
         "experiment": {
           "type": "drag-drop-label",
           "description": "Cell Lab: Drag labels (Nucleus, Mitochondria, etc.) to the correct locations on a diagram of a plant and animal cell."
-        },
-        "content": "Cells are the basic structural and functional units of all living organisms. There are two main types: prokaryotic cells (found in bacteria) which lack a nucleus and membrane-bound organelles, and eukaryotic cells (found in plants, animals, fungi, and protists) which have a distinct nucleus containing genetic material. On the CSEC Biology exam, you must know the differences between plant and animal cells.\n\nKey organelles to know: Nucleus (contains DNA, controls cell activities), Mitochondria (site of aerobic respiration \u2014 'powerhouse' of the cell), Ribosomes (protein synthesis), Endoplasmic Reticulum (transports materials), Golgi Body (packages and distributes proteins), and Lysosomes (digestive enzymes). Plant cells have three extra structures: Cell Wall (made of cellulose, provides support), Chloroplasts (site of photosynthesis, contain chlorophyll), and a large Central Vacuole (stores water and dissolved substances).\n\nWhen comparing cells under a microscope, plant cells appear more rectangular with distinct walls, while animal cells are more rounded. Remember: both have a nucleus, cytoplasm, cell membrane, mitochondria, and ribosomes. The differences reflect their different functions \u2014 plants make their own food and need structural support; animals move and consume food."
+        }
       },
       {
         "id": "osmosis-diffusion",
         "title": "Diffusion and Osmosis",
+        "content": "Diffusion is the net movement of particles from an area of high concentration to an area of low concentration, down the concentration gradient. It is a passive process — it does NOT require energy. Examples include oxygen diffusing from the lungs into the blood, and carbon dioxide diffusing out of cells. Diffusion happens faster when there is a steeper concentration gradient, a higher temperature, or a larger surface area.\n\nOsmosis is a special type of diffusion: it's the movement of WATER molecules through a selectively permeable membrane from a region of higher water potential (dilute solution) to a region of lower water potential (concentrated solution). In plant cells, this explains why cells become turgid (firm) in pure water — water enters by osmosis, pushing the cytoplasm against the cell wall — and plasmolysed (flaccid) in concentrated salt solution — water leaves the cell and the membrane pulls away from the wall.\n\nCSEC experiment questions often involve potato strips or dialysis tubing placed in different concentrations of sugar/salt solutions. In a hypotonic solution (less concentrated than the cell), water enters and the sample swells. In a hypertonic solution (more concentrated than the cell), water leaves and the sample shrinks. In an isotonic solution (same concentration), there is no net movement.",
         "objectives": [
           "Define diffusion and osmosis",
           "Predict the movement of molecules in various concentrations"
@@ -34,8 +35,7 @@
         "experiment": {
           "type": "simulation",
           "description": "Osmosis Sim: Place a 'cell' in solutions of different salt concentrations and watch it shrink or swell in real-time."
-        },
-        "content": "Diffusion is the net movement of particles from an area of high concentration to an area of low concentration, down the concentration gradient. It is a passive process \u2014 it does NOT require energy. Examples include oxygen diffusing from the lungs into the blood, and carbon dioxide diffusing out of cells. Diffusion happens faster when there is a steeper concentration gradient, a higher temperature, or a larger surface area.\n\nOsmosis is a special type of diffusion: it's the movement of WATER molecules through a selectively permeable membrane from a region of higher water potential (dilute solution) to a region of lower water potential (concentrated solution). In plant cells, this explains why cells become turgid (firm) in pure water \u2014 water enters by osmosis, pushing the cytoplasm against the cell wall \u2014 and plasmolysed (flaccid) in concentrated salt solution \u2014 water leaves the cell and the membrane pulls away from the wall.\n\nCSEC experiment questions often involve potato strips or dialysis tubing placed in different concentrations of sugar/salt solutions. In a hypotonic solution (less concentrated than the cell), water enters and the sample swells. In a hypertonic solution (more concentrated than the cell), water leaves and the sample shrinks. In an isotonic solution (same concentration), there is no net movement."
+        }
       }
     ]
   },
@@ -46,6 +46,7 @@
       {
         "id": "photosynthesis",
         "title": "Photosynthesis",
+        "content": "Photosynthesis is the process by which green plants, algae, and some bacteria convert light energy into chemical energy stored in glucose. The word equation is: Carbon dioxide + Water → (light energy, chlorophyll) → Glucose + Oxygen. The balanced chemical equation is: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂.\n\nPhotosynthesis occurs in the chloroplasts, primarily in the palisade mesophyll cells of leaves. Chlorophyll, the green pigment, absorbs light energy — mainly red and blue wavelengths, reflecting green (which is why leaves appear green). The process has two stages: the light-dependent reactions (in the thylakoid membranes, where light energy splits water molecules — photolysis — releasing oxygen) and the light-independent reactions/Calvin cycle (in the stroma, where CO₂ is fixed into glucose using the energy from the light reactions).\n\nFactors limiting the rate of photosynthesis include: light intensity, carbon dioxide concentration, and temperature. At low light, adding more light increases the rate until another factor becomes limiting. CSEC graph questions often show the rate leveling off — identify which factor is limiting. Plants adapted to shade (e.g., forest floor plants) have more chlorophyll and larger, thinner leaves to capture more light.",
         "objectives": [
           "State the equation for photosynthesis",
           "Identify the factors affecting the rate of photosynthesis"
@@ -57,12 +58,12 @@
         "experiment": {
           "type": "graph-sim",
           "description": "Photosynthesis Lab: Adjust sliders for light intensity and temperature to see how the rate of oxygen bubble production changes in an aquatic plant."
-        },
-        "content": "Photosynthesis is the process by which green plants, algae, and some bacteria convert light energy into chemical energy stored in glucose. The word equation is: Carbon dioxide + Water \u2192 (light energy, chlorophyll) \u2192 Glucose + Oxygen. The balanced chemical equation is: 6CO\u2082 + 6H\u2082O \u2192 C\u2086H\u2081\u2082O\u2086 + 6O\u2082.\n\nPhotosynthesis occurs in the chloroplasts, primarily in the palisade mesophyll cells of leaves. Chlorophyll, the green pigment, absorbs light energy \u2014 mainly red and blue wavelengths, reflecting green (which is why leaves appear green). The process has two stages: the light-dependent reactions (in the thylakoid membranes, where light energy splits water molecules \u2014 photolysis \u2014 releasing oxygen) and the light-independent reactions/Calvin cycle (in the stroma, where CO\u2082 is fixed into glucose using the energy from the light reactions).\n\nFactors limiting the rate of photosynthesis include: light intensity, carbon dioxide concentration, and temperature. At low light, adding more light increases the rate until another factor becomes limiting. CSEC graph questions often show the rate leveling off \u2014 identify which factor is limiting. Plants adapted to shade (e.g., forest floor plants) have more chlorophyll and larger, thinner leaves to capture more light."
+        }
       },
       {
         "id": "circulatory-system",
         "title": "The Circulatory System",
+        "content": "The human circulatory system consists of the heart, blood vessels, and blood. Its functions are to transport oxygen, nutrients, hormones, and waste products; to regulate body temperature; and to defend against disease. The heart is a muscular pump with four chambers: right atrium, right ventricle, left atrium, and left ventricle. The septum separates the left and right sides, preventing oxygenated and deoxygenated blood from mixing.\n\nThe pathway of blood: Deoxygenated blood from the body → vena cava → right atrium → right ventricle → pulmonary artery → lungs (picks up oxygen) → pulmonary vein → left atrium → left ventricle → aorta → body. Key points: the right side handles deoxygenated blood, the left side handles oxygenated blood. Arteries carry blood AWAY from the heart (usually oxygenated, except the pulmonary artery); veins carry blood TOWARD the heart (usually deoxygenated, except the pulmonary vein).\n\nBlood vessels: Arteries have thick, muscular, elastic walls to withstand high pressure; veins have thinner walls with valves to prevent backflow; capillaries are one-cell thick for efficient exchange of materials. Blood components: Red blood cells (carry oxygen via hemoglobin), White blood cells (fight infection), Platelets (clotting), and Plasma (transports dissolved substances).",
         "objectives": [
           "Identify parts of the human heart",
           "Trace the path of blood through the body"
@@ -74,8 +75,7 @@
         "experiment": {
           "type": "interactive-pathway",
           "description": "Blood Flow Tracker: Click on parts of the heart in the correct order to successfully pump blood from the right atrium to the aorta."
-        },
-        "content": "The human circulatory system consists of the heart, blood vessels, and blood. Its functions are to transport oxygen, nutrients, hormones, and waste products; to regulate body temperature; and to defend against disease. The heart is a muscular pump with four chambers: right atrium, right ventricle, left atrium, and left ventricle. The septum separates the left and right sides, preventing oxygenated and deoxygenated blood from mixing.\n\nThe pathway of blood: Deoxygenated blood from the body \u2192 vena cava \u2192 right atrium \u2192 right ventricle \u2192 pulmonary artery \u2192 lungs (picks up oxygen) \u2192 pulmonary vein \u2192 left atrium \u2192 left ventricle \u2192 aorta \u2192 body. Key points: the right side handles deoxygenated blood, the left side handles oxygenated blood. Arteries carry blood AWAY from the heart (usually oxygenated, except the pulmonary artery); veins carry blood TOWARD the heart (usually deoxygenated, except the pulmonary vein).\n\nBlood vessels: Arteries have thick, muscular, elastic walls to withstand high pressure; veins have thinner walls with valves to prevent backflow; capillaries are one-cell thick for efficient exchange of materials. Blood components: Red blood cells (carry oxygen via hemoglobin), White blood cells (fight infection), Platelets (clotting), and Plasma (transports dissolved substances)."
+        }
       }
     ]
   },
@@ -86,6 +86,7 @@
       {
         "id": "respiration",
         "title": "Aerobic and Anaerobic Respiration",
+        "content": "Respiration is the process by which cells release energy from glucose. It is NOT the same as breathing (ventilation) — respiration is a chemical process inside cells. Aerobic respiration uses oxygen: Glucose + Oxygen → Carbon Dioxide + Water + Energy (38 ATP per glucose molecule). Anaerobic respiration occurs without oxygen, producing much less energy (2 ATP per glucose).\n\nIn humans, anaerobic respiration produces lactic acid: Glucose → Lactic Acid + Energy. This happens during vigorous exercise when oxygen supply can't meet demand. The build-up of lactic acid causes muscle fatigue and cramping — it's later converted back to glucose in the liver when oxygen becomes available (oxygen debt). In yeast and some bacteria, anaerobic respiration produces ethanol and carbon dioxide: Glucose → Ethanol + CO₂ + Energy. This is called fermentation and is used in bread-making (CO₂ makes dough rise) and alcohol production.\n\nExperiments to investigate respiration include: using a respirometer to measure oxygen uptake, testing for CO₂ production with limewater (turns milky/cloudy), and demonstrating heat production using germinating seeds in a vacuum flask. The CSEC exam often asks you to compare aerobic vs. anaerobic respiration in terms of products, energy yield, and where each occurs.",
         "objectives": [
           "Compare aerobic and anaerobic respiration",
           "Explain the production of lactic acid during exercise"
@@ -97,8 +98,25 @@
         "experiment": {
           "type": "energy-meter",
           "description": "Respiration Race: Choose between 'Oxygen' and 'No Oxygen' modes for a runner and see how quickly energy (ATP) depletes and lactic acid builds up."
-        },
-        "content": "Respiration is the process by which cells release energy from glucose. It is NOT the same as breathing (ventilation) \u2014 respiration is a chemical process inside cells. Aerobic respiration uses oxygen: Glucose + Oxygen \u2192 Carbon Dioxide + Water + Energy (38 ATP per glucose molecule). Anaerobic respiration occurs without oxygen, producing much less energy (2 ATP per glucose).\n\nIn humans, anaerobic respiration produces lactic acid: Glucose \u2192 Lactic Acid + Energy. This happens during vigorous exercise when oxygen supply can't meet demand. The build-up of lactic acid causes muscle fatigue and cramping \u2014 it's later converted back to glucose in the liver when oxygen becomes available (oxygen debt). In yeast and some bacteria, anaerobic respiration produces ethanol and carbon dioxide: Glucose \u2192 Ethanol + CO\u2082 + Energy. This is called fermentation and is used in bread-making (CO\u2082 makes dough rise) and alcohol production.\n\nExperiments to investigate respiration include: using a respirometer to measure oxygen uptake, testing for CO\u2082 production with limewater (turns milky/cloudy), and demonstrating heat production using germinating seeds in a vacuum flask. The CSEC exam often asks you to compare aerobic vs. anaerobic respiration in terms of products, energy yield, and where each occurs."
+        }
+      },
+      {
+        "id": "excretion-homeostasis",
+        "title": "Excretion and Homeostasis",
+        "content": "Excretion is the process by which an organism eliminates metabolic waste products from its body. In humans, the main excretory organs are the lungs (excrete CO₂), the skin (excretes water and salts via sweat), and the kidneys (excrete urea, excess water, and salts via urine). The liver also plays a role by breaking down old red blood cells and excess amino acids (deamination) to produce urea.\n\nHomeostasis is the maintenance of a constant internal environment despite changes in external conditions. This is essential for the proper functioning of enzymes and cells. Examples include the regulation of body temperature (thermoregulation), blood glucose levels, and water balance (osmoregulation). The kidneys are vital for osmoregulation, adjusting the concentration of urine based on how hydrated the body is, controlled by the hormone ADH.\n\nCSEC Biology often focuses on the structure and function of the kidney and the nephron. You will learn how filtration, reabsorption, and secretion occur to form urine. Understanding these processes helps you appreciate how the body maintains balance and the importance of healthy organ function.",
+        "objectives": [
+          "Define excretion and identify excretory organs",
+          "Explain the importance of homeostasis"
+        ],
+        "concepts": [
+          "Excretion vs. Egestion",
+          "Negative feedback mechanisms",
+          "Kidney function (filtration, reabsorption)"
+        ],
+        "experiment": {
+          "type": "simulation",
+          "description": "Homeostasis Sim: Use a control panel to adjust external temperature or blood sugar levels and watch how the body's systems (sweating, insulin release) respond to maintain balance."
+        }
       }
     ]
   },
@@ -109,6 +127,7 @@
       {
         "id": "food-chains",
         "title": "Food Chains and Webs",
+        "content": "A food chain shows the transfer of energy from one organism to another, starting with a producer (a green plant that makes its own food via photosynthesis). Primary consumers (herbivores) eat producers; secondary consumers (carnivores) eat primary consumers; tertiary consumers eat secondary consumers. Arrows in a food chain point in the direction of energy flow — from the organism being eaten TO the organism eating it.\n\nFood webs are interconnecting food chains in an ecosystem, showing that most organisms eat more than one type of food. Energy is lost at each trophic level (approximately 90% lost as heat, movement, and waste), which is why food chains rarely have more than 4-5 levels and why there are fewer organisms at higher trophic levels — this is represented by a pyramid of numbers or pyramid of biomass.\n\nKey ecological terms: Habitat (where an organism lives), Population (all members of one species in an area), Community (all populations in an area), Ecosystem (the community plus the non-living environment), Niche (an organism's role in the ecosystem). Decomposers (bacteria and fungi) break down dead matter, returning nutrients to the soil. CSEC questions often ask you to construct or interpret food chains/webs and predict what happens when a species is removed.",
         "objectives": [
           "Construct food chains and food webs",
           "Identify producers, consumers, and decomposers"
@@ -120,8 +139,25 @@
         "experiment": {
           "type": "web-builder",
           "description": "Ecosystem Builder: Drag and drop organisms (grass, grasshopper, frog, hawk) to create a functional food web. If one population is removed, watch the impact on others."
-        },
-        "content": "A food chain shows the transfer of energy from one organism to another, starting with a producer (a green plant that makes its own food via photosynthesis). Primary consumers (herbivores) eat producers; secondary consumers (carnivores) eat primary consumers; tertiary consumers eat secondary consumers. Arrows in a food chain point in the direction of energy flow \u2014 from the organism being eaten TO the organism eating it.\n\nFood webs are interconnecting food chains in an ecosystem, showing that most organisms eat more than one type of food. Energy is lost at each trophic level (approximately 90% lost as heat, movement, and waste), which is why food chains rarely have more than 4-5 levels and why there are fewer organisms at higher trophic levels \u2014 this is represented by a pyramid of numbers or pyramid of biomass.\n\nKey ecological terms: Habitat (where an organism lives), Population (all members of one species in an area), Community (all populations in an area), Ecosystem (the community plus the non-living environment), Niche (an organism's role in the ecosystem). Decomposers (bacteria and fungi) break down dead matter, returning nutrients to the soil. CSEC questions often ask you to construct or interpret food chains/webs and predict what happens when a species is removed."
+        }
+      },
+      {
+        "id": "human-impact",
+        "title": "Human Impact on the Environment",
+        "content": "Human activities have a significant impact on the Earth's ecosystems and the biosphere. As the global population grows and industrialization increases, the demand for resources and the production of waste also rise. Key environmental issues include pollution (air, water, and land), deforestation, habitat destruction, and climate change.\n\nPollution occurs when harmful substances are introduced into the environment. For example, the excessive use of fertilizers can lead to eutrophication in water bodies, where algae blooms deplete oxygen and kill aquatic life. The burning of fossil fuels releases greenhouse gases like CO₂ and methane, which trap heat in the atmosphere, leading to global warming and more frequent extreme weather events.\n\nCSEC students are expected to understand the causes and consequences of these impacts and to suggest ways to promote sustainability. This includes the 'three Rs' (Reduce, Reuse, Recycle), the use of renewable energy sources, and the conservation of biodiversity through protected areas and sustainable farming practices. Protecting the environment is crucial for our own survival and for future generations.",
+        "objectives": [
+          "Analyze the impact of human activities on ecosystems",
+          "Suggest ways to promote environmental sustainability"
+        ],
+        "concepts": [
+          "Pollution (air, water, land)",
+          "Global warming and greenhouse effect",
+          "Conservation and sustainability"
+        ],
+        "experiment": {
+          "type": "simulation",
+          "description": "Pollution Sim: Observe how increasing CO2 levels affects global temperatures and ocean acidity over a 100-year simulation."
+        }
       }
     ]
   },
@@ -132,6 +168,7 @@
       {
         "id": "dna-inheritance",
         "title": "DNA and Inheritance",
+        "content": "DNA (deoxyribonucleic acid) is the molecule that carries genetic information in all living organisms. Its structure is a double helix — two strands wound around each other, made of nucleotides. Each nucleotide consists of a sugar (deoxyribose), a phosphate group, and a nitrogenous base (Adenine, Thymine, Guanine, or Cytosine). Bases pair specifically: A with T and G with C, held together by hydrogen bonds.\n\nGenes are segments of DNA that code for specific proteins. Chromosomes are long, coiled DNA molecules found in the nucleus — humans have 46 chromosomes (23 pairs). During cell division, DNA replicates so each new cell gets a complete copy. Mitosis produces two identical daughter cells (for growth and repair); Meiosis produces four genetically different gametes (sperm or egg cells) with half the chromosome number (23 in humans).\n\nInheritance patterns: Alleles are different forms of a gene (e.g., brown vs. blue eyes). A dominant allele (capital letter) masks a recessive allele (lowercase). Genotype is the genetic makeup (e.g., BB, Bb, bb); phenotype is the physical expression. Monohybrid crosses use Punnett squares to predict offspring ratios — e.g., crossing two heterozygous parents (Bb × Bb) gives a 3:1 ratio of dominant to recessive phenotype. CSEC questions often involve sickle cell anemia, blood groups, or sex-linked traits like color blindness.",
         "objectives": [
           "Explain the role of chromosomes and genes",
           "Use Punnett squares to predict inheritance"
@@ -143,8 +180,25 @@
         "experiment": {
           "type": "punnett-square-maker",
           "description": "Breed-a-Pet: Select genotypes for two parent pets (e.g., Bb for brown fur) and use a Punnett square to predict the colors of their offspring."
-        },
-        "content": "DNA (deoxyribonucleic acid) is the molecule that carries genetic information in all living organisms. Its structure is a double helix \u2014 two strands wound around each other, made of nucleotides. Each nucleotide consists of a sugar (deoxyribose), a phosphate group, and a nitrogenous base (Adenine, Thymine, Guanine, or Cytosine). Bases pair specifically: A with T and G with C, held together by hydrogen bonds.\n\nGenes are segments of DNA that code for specific proteins. Chromosomes are long, coiled DNA molecules found in the nucleus \u2014 humans have 46 chromosomes (23 pairs). During cell division, DNA replicates so each new cell gets a complete copy. Mitosis produces two identical daughter cells (for growth and repair); Meiosis produces four genetically different gametes (sperm or egg cells) with half the chromosome number (23 in humans).\n\nInheritance patterns: Alleles are different forms of a gene (e.g., brown vs. blue eyes). A dominant allele (capital letter) masks a recessive allele (lowercase). Genotype is the genetic makeup (e.g., BB, Bb, bb); phenotype is the physical expression. Monohybrid crosses use Punnett squares to predict offspring ratios \u2014 e.g., crossing two heterozygous parents (Bb \u00d7 Bb) gives a 3:1 ratio of dominant to recessive phenotype. CSEC questions often involve sickle cell anemia, blood groups, or sex-linked traits like color blindness."
+        }
+      },
+      {
+        "id": "selection-evolution",
+        "title": "Variation and Natural Selection",
+        "content": "Variation refers to the differences that exist between individuals of the same species. It can be caused by genetic factors (like different alleles), environmental factors (like diet or climate), or a combination of both. Continuous variation shows a range of values (like height), while discontinuous variation has distinct categories (like blood type or tongue rolling).\n\nNatural selection is the process by which individuals with favorable traits are more likely to survive and reproduce. This concept, developed by Charles Darwin, is often summarized as 'survival of the fittest.' Over many generations, these advantageous traits become more common in the population, leading to adaptation and potentially the evolution of new species.\n\nIn the CSEC exam, you might be asked to provide examples of natural selection, such as antibiotic resistance in bacteria or the evolution of the peppered moth. You will also learn about artificial selection (selective breeding), where humans choose which organisms to breed to produce desired traits in crops or livestock. Understanding variation and selection is key to understanding the diversity of life on Earth.",
+        "objectives": [
+          "Distinguish between continuous and discontinuous variation",
+          "Explain the mechanism of natural selection"
+        ],
+        "concepts": [
+          "Genetic vs Environmental variation",
+          "Survival of the fittest",
+          "Artificial vs Natural selection"
+        ],
+        "experiment": {
+          "type": "simulation",
+          "description": "Natural Selection Sim: Control a population of 'moths' in different environments (light vs dark trees) and see how their color distribution changes over generations due to predation."
+        }
       }
     ]
   }

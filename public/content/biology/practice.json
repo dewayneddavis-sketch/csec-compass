@@ -1,0 +1,86 @@
+[
+  {
+    "id": "p1",
+    "question": "Which structure is present in plant cells but absent in animal cells?",
+    "options": ["Nucleus", "Mitochondria", "Cell Wall", "Cell Membrane"],
+    "answer": "Cell Wall",
+    "explanation": "Plant cells have a rigid cell wall made of cellulose for support, which animal cells lack."
+  },
+  {
+    "id": "p2",
+    "question": "What is the function of the mitochondria in a cell?",
+    "options": ["Photosynthesis", "Protein synthesis", "Aerobic respiration", "Genetic control"],
+    "answer": "Aerobic respiration",
+    "explanation": "Mitochondria are the site of aerobic respiration, where energy is released from glucose."
+  },
+  {
+    "id": "p3",
+    "question": "A cell is placed in a solution with a higher water potential than its cytoplasm. What will happen to the cell?",
+    "options": ["It will shrink.", "Water will enter by osmosis and it will swell.", "There will be no change.", "It will lose water by diffusion."],
+    "answer": "Water will enter by osmosis and it will swell.",
+    "explanation": "Water moves from an area of higher water potential to lower potential via osmosis."
+  },
+  {
+    "id": "p4",
+    "question": "Which of the following is the correct word equation for photosynthesis?",
+    "options": ["Glucose + Oxygen -> Carbon Dioxide + Water", "Carbon Dioxide + Water -> Glucose + Oxygen", "Glucose + Carbon Dioxide -> Oxygen + Water", "Water + Oxygen -> Glucose + Carbon Dioxide"],
+    "answer": "Carbon Dioxide + Water -> Glucose + Oxygen",
+    "explanation": "Plants use light energy to convert carbon dioxide and water into glucose and oxygen."
+  },
+  {
+    "id": "p5",
+    "question": "Which enzyme is responsible for the digestion of starch in the mouth?",
+    "options": ["Protease", "Lipase", "Amylase", "Maltase"],
+    "answer": "Amylase",
+    "explanation": "Salivary amylase begins the chemical digestion of starch in the mouth."
+  },
+  {
+    "id": "p6",
+    "question": "Aerobic respiration differs from anaerobic respiration because aerobic respiration:",
+    "options": ["Produces more energy", "Produces lactic acid", "Occurs without oxygen", "Produces ethanol"],
+    "answer": "Produces more energy",
+    "explanation": "Aerobic respiration fully breaks down glucose using oxygen, yielding 38 ATP vs only 2 ATP in anaerobic."
+  },
+  {
+    "id": "p7",
+    "question": "Which chamber of the human heart pumps oxygenated blood to the rest of the body?",
+    "options": ["Right Atrium", "Right Ventricle", "Left Atrium", "Left Ventricle"],
+    "answer": "Left Ventricle",
+    "explanation": "The left ventricle has thick muscular walls to pump oxygenated blood through the aorta to the entire body."
+  },
+  {
+    "id": "p8",
+    "question": "In a food chain, what do the arrows represent?",
+    "options": ["The size of the organisms", "The flow of energy", "The movement of the organisms", "The direction of predation"],
+    "answer": "The flow of energy",
+    "explanation": "Arrows point from the organism being eaten to the consumer, showing the direction energy is transferred."
+  },
+  {
+    "id": "p9",
+    "question": "What are the building blocks of DNA called?",
+    "options": ["Amino acids", "Nucleotides", "Fatty acids", "Monosaccharides"],
+    "answer": "Nucleotides",
+    "explanation": "DNA is a polymer made of repeating units called nucleotides (sugar, phosphate, and a base)."
+  },
+  {
+    "id": "p10",
+    "question": "If a brown-furred dog (Bb) is crossed with a white-furred dog (bb), what is the probability of having a white puppy? (B is dominant for brown)",
+    "options": ["25%", "50%", "75%", "100%"],
+    "answer": "50%",
+    "explanation": "A cross between Bb and bb results in 50% Bb (brown) and 50% bb (white) offspring."
+  },
+  {
+    "id": "p11",
+    "question": "Which process describes the enrichment of water with nutrients, leading to excessive algae growth?",
+    "options": ["Deforestation", "Eutrophication", "Global Warming", "Nitrification"],
+    "answer": "Eutrophication",
+    "explanation": "Eutrophication is caused by nutrient runoff (like fertilizers), leading to algae blooms and oxygen depletion."
+  },
+  {
+    "id": "p12",
+    "question": "Which type of blood vessel contains valves to prevent the backflow of blood?",
+    "options": ["Arteries", "Veins", "Capillaries", "Arterioles"],
+    "answer": "Veins",
+    "explanation": "Veins carry blood at low pressure and have valves to ensure blood only flows toward the heart."
+  }
+]

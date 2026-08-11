@@ -1,0 +1,86 @@
+[
+  {
+    "id": "p1",
+    "question": "The 'Business Entity' concept states that:",
+    "options": ["A business will continue forever", "Transactions are recorded when cash is paid", "The business and owner are separate entities", "Assets must equal liabilities"],
+    "answer": "The business and owner are separate entities",
+    "explanation": "This principle ensures that the owner's personal finances are not mixed with those of the business."
+  },
+  {
+    "id": "p2",
+    "question": "If a business has Assets of $50,000 and Capital of $30,000, what are its Liabilities?",
+    "options": ["$80,000", "$30,000", "$20,000", "$50,000"],
+    "answer": "$20,000",
+    "explanation": "Accounting Equation: Assets = Liabilities + Capital. So, 50,000 = L + 30,000; L = 20,000."
+  },
+  {
+    "id": "p3",
+    "question": "Which of the following describes the rule for recording an increase in an asset?",
+    "options": ["Debit the asset account", "Credit the asset account", "Debit the capital account", "Credit the liability account"],
+    "answer": "Debit the asset account",
+    "explanation": "Increases in assets and expenses are always recorded as debits (left side)."
+  },
+  {
+    "id": "p4",
+    "question": "A business pays its rent by check. Which two accounts are affected?",
+    "options": ["Rent and Cash", "Rent and Bank", "Rent and Capital", "Bank and Cash"],
+    "answer": "Rent and Bank",
+    "explanation": "The Rent account (expense) increases (debit) and the Bank account (asset) decreases (credit)."
+  },
+  {
+    "id": "p5",
+    "question": "Which book of original entry is used to record credit sales?",
+    "options": ["Cash Book", "General Journal", "Sales Journal", "Purchases Journal"],
+    "answer": "Sales Journal",
+    "explanation": "The Sales Journal specifically records all goods sold on credit to customers."
+  },
+  {
+    "id": "p6",
+    "question": "A 'Contra Entry' in a three-column cash book involves:",
+    "options": ["Cash and Discounts", "Bank and Discounts", "Cash and Bank", "Sales and Purchases"],
+    "answer": "Cash and Bank",
+    "explanation": "Contra entries occur when cash is deposited into or withdrawn from the bank, affecting both columns."
+  },
+  {
+    "id": "p7",
+    "question": "What is the primary purpose of a Trial Balance?",
+    "options": ["To calculate net profit", "To check the arithmetical accuracy of the ledger", "To list all the assets of the business", "To show the financial position"],
+    "answer": "To check the arithmetical accuracy of the ledger",
+    "explanation": "A Trial Balance ensures that total debits equal total credits before preparing final statements."
+  },
+  {
+    "id": "p8",
+    "question": "Recording the purchase of a motor vehicle as a 'repairs expense' is an example of an error of:",
+    "options": ["Omission", "Commission", "Principle", "Original Entry"],
+    "answer": "Principle",
+    "explanation": "An error of principle occurs when a transaction is recorded in the wrong class of account (asset vs expense)."
+  },
+  {
+    "id": "p9",
+    "question": "An 'Accrued Expense' at the end of the year is classified as a:",
+    "options": ["Current Asset", "Non-current Asset", "Current Liability", "Non-current Liability"],
+    "answer": "Current Liability",
+    "explanation": "An accrual is an amount owed for an expense already incurred, so it is a short-term debt."
+  },
+  {
+    "id": "p10",
+    "question": "Calculate the annual depreciation of a machine costing $10,000 with a residual value of $1,000 and a life of 5 years (Straight Line).",
+    "options": ["$2,000", "$1,800", "$1,500", "$2,200"],
+    "answer": "$1,800",
+    "explanation": "Depreciation = (Cost - Residual Value) / Life = (10,000 - 1,000) / 5 = $1,800."
+  },
+  {
+    "id": "p11",
+    "question": "Gross Profit is calculated as:",
+    "options": ["Sales - Expenses", "Sales - Cost of Goods Sold", "Sales + Other Income", "Assets - Liabilities"],
+    "answer": "Sales - Cost of Goods Sold",
+    "explanation": "Gross Profit is the profit made solely from the trading activities of the business."
+  },
+  {
+    "id": "p12",
+    "question": "Which of the following is a 'Current Asset'?",
+    "options": ["Machinery", "Long-term Loan", "Inventory", "Accounts Payable"],
+    "answer": "Inventory",
+    "explanation": "Current assets are those expected to be converted into cash within one year, like inventory (stock)."
+  }
+]

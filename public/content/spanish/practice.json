@@ -1,0 +1,86 @@
+[
+  {
+    "id": "p1",
+    "question": "Which of the following is the correct response to '¿Cómo te llamas?'",
+    "options": ["Tengo quince años.", "Me llamo Roberto.", "Soy de Jamaica.", "Muy bien, gracias."],
+    "answer": "Me llamo Roberto.",
+    "explanation": "'¿Cómo te llamas?' asks for a person's name; 'Me llamo...' means 'My name is...'"
+  },
+  {
+    "id": "p2",
+    "question": "How do you say the number '75' in Spanish?",
+    "options": ["Sesenta y cinco", "Setenta y cinco", "Ochenta y cinco", "Cincuenta y siete"],
+    "answer": "Setenta y cinco",
+    "explanation": "Setenta = 70; cinco = 5. So, setenta y cinco = 75."
+  },
+  {
+    "id": "p3",
+    "question": "Which room in a house is 'la cocina'?",
+    "options": ["The bedroom", "The bathroom", "The kitchen", "The living room"],
+    "answer": "The kitchen",
+    "explanation": "'La cocina' is where food is prepared; 'el dormitorio' is the bedroom."
+  },
+  {
+    "id": "p4",
+    "question": "What is 'el desayuno' in English?",
+    "options": ["Lunch", "Dinner", "Snack", "Breakfast"],
+    "answer": "Breakfast",
+    "explanation": "'El desayuno' is the first meal of the day."
+  },
+  {
+    "id": "p5",
+    "question": "Choose the correct definite article for the word 'manzana' (apple).",
+    "options": ["El", "La", "Los", "Las"],
+    "answer": "La",
+    "explanation": "'Manzana' is a feminine singular noun, so it takes the article 'la'."
+  },
+  {
+    "id": "p6",
+    "question": "Which of the following phrases is grammatically correct?",
+    "options": ["El libro roja", "La casa blanco", "Los gatos negros", "Las gatas pequeño"],
+    "answer": "Los gatos negros",
+    "explanation": "In Spanish, adjectives must agree in gender and number with the noun they describe."
+  },
+  {
+    "id": "p7",
+    "question": "What is the present tense conjugation of 'hablar' (to speak) for the subject 'yo'?",
+    "options": ["Hablas", "Habla", "Hablo", "Hablan"],
+    "answer": "Hablo",
+    "explanation": "For regular -AR verbs, the 'yo' ending is '-o'."
+  },
+  {
+    "id": "p8",
+    "question": "How would you say 'I am going to study' using the 'ir + a + infinitive' structure?",
+    "options": ["Voy a estudio", "Vas a estudiar", "Voy a estudiar", "Vamo a estudiar"],
+    "answer": "Voy a estudiar",
+    "explanation": "Voy (I go) + a (to) + estudiar (to study)."
+  },
+  {
+    "id": "p9",
+    "question": "In a Spanish passage, if you see the word 'peligro', what does it mean?",
+    "options": ["Pelican", "Danger", "Safety", "Price"],
+    "answer": "Danger",
+    "explanation": "'Peligro' is a high-frequency word often found on public warning signs."
+  },
+  {
+    "id": "p10",
+    "question": "A sign in a restaurant says 'Abierto todos los días'. What does it mean?",
+    "options": ["Closed on weekends", "Open every day", "No smoking allowed", "Exit this way"],
+    "answer": "Open every day",
+    "explanation": "'Abierto' means open; 'todos los días' means every day."
+  },
+  {
+    "id": "p11",
+    "question": "Which famous Hispanic festival is known as the 'Day of the Dead'?",
+    "options": ["Las Fallas", "Semana Santa", "Día de los Muertos", "Carnaval"],
+    "answer": "Día de los Muertos",
+    "explanation": "Día de los Muertos is a significant tradition in Mexico for remembering ancestors."
+  },
+  {
+    "id": "p12",
+    "question": "Which of the following is a characteristic of Spanish spoken in some parts of the Caribbean?",
+    "options": ["Pronouncing every 's' clearly", "Dropping the final 's' in words", "Speaking very slowly", "Using only formal 'usted'"],
+    "answer": "Dropping the final 's' in words",
+    "explanation": "A common feature of Caribbean Spanish dialects is the aspiration or dropping of final 's' sounds."
+  }
+]
