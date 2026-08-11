@@ -1,0 +1,86 @@
+[
+  {
+    "id": "p1",
+    "question": "Which family type consists of parents, children, and other relatives like grandparents living together?",
+    "options": ["Nuclear Family", "Extended Family", "Single-parent Family", "Blended Family"],
+    "answer": "Extended Family",
+    "explanation": "Extended families include multiple generations or branches of a family in a single unit."
+  },
+  {
+    "id": "p2",
+    "question": "The process of teaching children the values, norms, and skills of their society is called:",
+    "options": ["Urbanization", "Socialization", "Migration", "Integration"],
+    "answer": "Socialization",
+    "explanation": "Socialization is a primary function of the family and school, preparing individuals for life in society."
+  },
+  {
+    "id": "p3",
+    "question": "Which of the following is an example of a secondary group?",
+    "options": ["A group of close friends", "A nuclear family", "A national trade union", "A sibling bond"],
+    "answer": "A national trade union",
+    "explanation": "Secondary groups are larger, more formal, and goal-oriented rather than based on close personal ties."
+  },
+  {
+    "id": "p4",
+    "question": "Which social institution is primarily responsible for the production and distribution of goods and services?",
+    "options": ["Religion", "Education", "The Economy", "The Justice System"],
+    "answer": "The Economy",
+    "explanation": "The economic institution manages how a society organizes its resources and meets material needs."
+  },
+  {
+    "id": "p5",
+    "question": "In a democratic election, a 'constituency' refers to:",
+    "options": ["The total number of voters in a country", "A specific geographic area that elects a representative", "The building where parliament meets", "The list of all political parties"],
+    "answer": "A specific geographic area that elects a representative",
+    "explanation": "Countries are divided into constituencies to ensure local representation in the national legislature."
+  },
+  {
+    "id": "p6",
+    "question": "Which branch of government is responsible for interpreting and applying the laws?",
+    "options": ["Legislative", "Executive", "Judiciary", "Administrative"],
+    "answer": "Judiciary",
+    "explanation": "The judiciary (the courts) ensures that laws are followed and interpreted correctly and fairly."
+  },
+  {
+    "id": "p7",
+    "question": "A major objective of CARICOM is 'Economic Integration.' This involves:",
+    "options": ["Establishing a common currency only", "Creating a single market and economy (CSME)", "Merging all Caribbean armies", "Removing all national borders"],
+    "answer": "Creating a single market and economy (CSME)",
+    "explanation": "Economic integration aims to allow the free movement of goods, services, and labor across member states."
+  },
+  {
+    "id": "p8",
+    "question": "Which of the following is a significant challenge to regional integration in the Caribbean?",
+    "options": ["Shared language in many states", "Geographic proximity", "Differences in economic development levels", "Similar cultural heritage"],
+    "answer": "Differences in economic development levels",
+    "explanation": "Varying levels of wealth and industrialization can lead to unequal benefits from integration."
+  },
+  {
+    "id": "p9",
+    "question": "How is the 'Natural Increase' of a population calculated?",
+    "options": ["Birth Rate + Death Rate", "Birth Rate - Death Rate", "Immigration - Emigration", "Total Population / Area"],
+    "answer": "Birth Rate - Death Rate",
+    "explanation": "Natural increase is the growth from within the population, excluding the effects of migration."
+  },
+  {
+    "id": "p10",
+    "question": "Which of the following is considered a 'push factor' for migration?",
+    "options": ["Better job opportunities abroad", "High crime rates in the home country", "Quality healthcare in a new city", "Political stability in a neighboring state"],
+    "answer": "High crime rates in the home country",
+    "explanation": "Push factors are negative conditions that drive people away from their current location."
+  },
+  {
+    "id": "p11",
+    "question": "The 'Digital Divide' refers to:",
+    "options": ["The gap between old and new computers", "The unequal access to technology and the internet", "The difference between hardware and software", "The separation of data into packets"],
+    "answer": "The unequal access to technology and the internet",
+    "explanation": "This divide can lead to social and economic inequalities in information access and education."
+  },
+  {
+    "id": "p12",
+    "question": "A consumer has the 'Right to Redress.' This means they are entitled to:",
+    "options": ["Buy any product they want", "Return a faulty product for a refund or repair", "Pay the lowest possible price", "Ignore the instructions on a label"],
+    "answer": "Return a faulty product for a refund or repair",
+    "explanation": "Redress ensures that consumers are compensated when a product or service fails to meet standards."
+  }
+]

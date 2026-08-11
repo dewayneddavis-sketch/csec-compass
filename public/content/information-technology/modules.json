@@ -6,6 +6,7 @@
       {
         "id": "it-l1-1",
         "title": "Hardware and Software",
+        "content": "A computer system consists of two main components: hardware and software. Hardware refers to the physical parts of the computer that you can touch. Internal hardware include the Central Processing Unit (CPU) — the 'brain' of the computer, Random Access Memory (RAM) for temporary storage, and Read-Only Memory (ROM) which contains permanent startup instructions. External hardware, or peripherals, include input devices (like keyboards and scanners), output devices (like monitors and printers), and storage devices (like hard drives and USB flash drives).\n\nSoftware is a set of instructions that tells the hardware what to do. It is divided into two types: System Software and Application Software. System software includes the Operating System (like Windows, macOS, or Linux) that manages the computer's resources and Utility Programs (like antivirus or file managers) that maintain the system. Application software includes programs that perform specific tasks for the user, such as word processors, web browsers, and games.\n\nIn the CSEC IT syllabus, you must be able to identify these components and explain their functions. You will also learn about the fetch-decode-execute cycle of the CPU and the differences between volatile (RAM) and non-volatile (ROM/Storage) memory. Understanding how hardware and software interact is fundamental to all areas of Information Technology.",
         "objectives": ["Identify internal and external hardware components", "Differentiate between system and application software"],
         "concepts": ["CPU", "RAM", "ROM", "Input/Output Devices", "Operating Systems", "Utility Programs"],
         "experiment": "Virtual PC Build: Drag and drop internal components like CPU and RAM onto a virtual motherboard and connect peripherals."
@@ -13,6 +14,7 @@
       {
         "id": "it-l1-2",
         "title": "Data Representation",
+        "content": "Computers are electronic devices that process information using electrical signals. These signals have two states: ON and OFF. To represent these states, computers use the binary number system, which consists of only two digits: 0 and 1. Each 0 or 1 is called a 'bit' (binary digit). Eight bits grouped together form a 'byte,' which is the standard unit for measuring data size.\n\nData representation involves converting human-readable information, like numbers and letters, into binary. For numbers, we use place value systems (Binary, Decimal, and Hexadecimal). For characters, we use coding schemes like ASCII (American Standard Code for Information Interchange), where each character is assigned a unique 8-bit binary pattern. Larger units of data are measured in Kilobytes (KB), Megabytes (MB), Gigabytes (GB), and Terabytes (TB), each representing roughly a 1000-fold increase from the previous unit.\n\nCSEC IT students must be proficient in converting between these number systems and calculating storage capacities. For example, you might be asked how many 5MB photos can fit on a 4GB flash drive. Understanding data representation helps you appreciate how complex information, including images, videos, and music, is stored and processed by computers.",
         "objectives": ["Convert between binary, decimal, and hexadecimal", "Understand bits, bytes, and storage capacities"],
         "concepts": ["Binary Number System", "ASCII", "Units of Storage (KB, MB, GB, TB)"],
         "experiment": "Binary Converter: Interactive tool to toggle bits on/off and see the resulting decimal and character representations."
@@ -26,6 +28,7 @@
       {
         "id": "it-l2-1",
         "title": "Problem Solving & Algorithms",
+        "content": "Problem-solving in IT involves analyzing a task and developing a logical sequence of steps to solve it. This sequence of steps is called an algorithm. Algorithms must be clear, precise, and have a definite beginning and end. We represent algorithms using two main tools: Pseudocode (a structured, English-like language) and Flowcharts (a visual representation using standard symbols like ovals for start/end, rectangles for processes, and diamonds for decisions).\n\nAlgorithms are built using three fundamental structures: Sequence (steps performed one after another), Selection (making decisions using IF-THEN-ELSE), and Iteration/Looping (repeating steps until a condition is met). Logic gates (AND, OR, NOT) are also used to control the flow of data based on boolean conditions.\n\nOn the CSEC exam, you will be expected to create algorithms for common tasks, such as finding the average of a set of numbers or determining if a student has passed or failed. Practice breaking down complex problems into smaller, manageable steps and then translating those steps into pseudocode or a flowchart. This logical thinking is the foundation of computer programming.",
         "objectives": ["Develop algorithms using pseudocode and flowcharts"],
         "concepts": ["Logic Gates", "Sequence", "Selection", "Iteration", "Flowchart Symbols"],
         "experiment": "Flowchart Builder: Assemble a flowchart for a logical process (e.g., 'Grade Calculator') using drag-and-drop symbols."
@@ -33,6 +36,7 @@
       {
         "id": "it-l2-2",
         "title": "Programming Constructs",
+        "content": "Once an algorithm has been developed, it can be translated into a programming language that the computer can execute. Programming constructs are the building blocks of code. These include variables (named storage locations for data that can change) and constants (values that remain the same throughout the program). Every variable must have a data type, such as Integer (whole numbers), Real (decimals), String (text), or Boolean (True/False).\n\nEffective programs use loops and conditional statements to control the execution of code. A 'FOR' loop is used when the number of repetitions is known in advance, while 'WHILE' or 'REPEAT-UNTIL' loops are used when the repetitions depend on a specific condition. Conditional statements like 'IF' or 'CASE' allow the program to take different actions based on user input or calculated values.\n\nCSEC IT students typically use a high-level language like Pascal or a block-based language to implement their algorithms. You will learn to write code that accepts input from the user, performs calculations, and displays output. Debugging — the process of finding and fixing errors in your code — is also an essential skill you will develop.",
         "objectives": ["Implement code using variables, constants, and loops"],
         "concepts": ["Data Types", "Variables", "Loops (For, While, Repeat)", "Conditional Statements"],
         "experiment": "Code Playground: Write and run simple pseudocode/Pascal-like code in a live editor to solve mathematical problems."
@@ -46,6 +50,7 @@
       {
         "id": "it-l3-1",
         "title": "Database Design",
+        "content": "A database is a structured collection of related data. Relational databases organize data into tables, which are made up of rows (records) and columns (fields). Each record in a table should be unique, identified by a special field called a 'Primary Key.' For example, in a 'Students' table, the Student ID would be an ideal primary key.\n\nGood database design involves breaking data into multiple related tables to avoid redundancy (duplication) and improve data integrity. Relationships are created between tables by including the primary key of one table as a 'Foreign Key' in another. The most common type of relationship is 'one-to-many,' such as one teacher being assigned to many classes.\n\nYou will learn to define appropriate data types for fields (e.g., Date/Time for a birth date, Currency for a price) and set field properties like 'Required' or 'Validation Rules' to ensure data accuracy. CSEC questions often ask you to identify suitable primary keys, explain the benefits of relational databases, or design a simple schema for a given scenario.",
         "objectives": ["Define tables, fields, records, and primary keys", "Understand relationships between tables"],
         "concepts": ["Relational Database", "Primary/Foreign Keys", "Data Types", "One-to-Many Relationships"],
         "experiment": "Schema Designer: Create a database schema for a school system, defining tables and linking them with primary keys."
@@ -53,6 +58,7 @@
       {
         "id": "it-l3-2",
         "title": "Queries and Reports",
+        "content": "The true power of a database lies in its ability to quickly retrieve and present specific information. A Query is a request for data from one or more tables that meet specific criteria. For example, a query could find 'all students who live in Kingston AND have a grade above 80.' Queries can also perform calculations, such as finding the total sales for a month or the average age of employees.\n\nReports are used to present the results of a query or the contents of a table in a professional, organized format. Reports can include headers, footers, page numbers, and even charts or summaries. They are often used for printing or sharing information with others who don't need to access the database directly.\n\nIn the CSEC IT syllabus, you will learn to use Structured Query Language (SQL) or a 'Query-By-Example' (QBE) interface to build queries with multiple criteria. You will also practice sorting data and creating professional-looking reports. Mastering queries and reports is essential for anyone working with data in a business or academic environment.",
         "objectives": ["Extract data using single and multi-criteria queries"],
         "concepts": ["SQL Basics", "Sorting", "Calculated Fields", "Report Generation"],
         "experiment": "Database Query Builder: Drag fields and criteria to build SQL queries visually and see the resulting data set."
@@ -66,6 +72,7 @@
       {
         "id": "it-l4-1",
         "title": "Network Types & Topologies",
+        "content": "A computer network is a group of two or more computers connected together to share resources like files, printers, and internet access. Networks are classified by their geographic size: Local Area Network (LAN) covers a small area like a home or school; Metropolitan Area Network (MAN) covers a city; and Wide Area Network (WAN) covers a country or the entire world (like the Internet).\n\nNetwork topology refers to the physical or logical arrangement of devices on a network. Common topologies include Star (all devices connected to a central hub or switch), Bus (all devices connected to a single main cable), and Ring (devices connected in a circular loop). Networks can also be classified as Client-Server (where central servers provide services to client computers) or Peer-to-Peer (where all computers have equal status).\n\nYou will learn about the hardware needed for networking, such as routers, switches, network interface cards (NICs), and various types of cables (like fiber-optic or twisted-pair). Wireless networking (Wi-Fi) and the importance of network protocols are also key topics in the CSEC IT exam.",
         "objectives": ["Differentiate between LAN, WAN, and MAN", "Identify network topologies"],
         "concepts": ["Star, Bus, Ring Topologies", "Client-Server vs Peer-to-Peer", "Wireless Networking"],
         "experiment": "Network Topology Drag: Connect devices into star, bus, or ring topologies and test the network connectivity."
@@ -73,6 +80,7 @@
       {
         "id": "it-l4-2",
         "title": "Internet Security & Ethics",
+        "content": "As we become more connected, internet security and ethics become increasingly important. Security threats include malware (viruses, worms, trojans), phishing (deceptive emails to steal information), and hacking (unauthorized access to a system). Protection methods include using strong passwords, firewalls (which monitor network traffic), encryption (scrambling data), and antivirus software.\n\nIT ethics refers to the responsible and legal use of technology. This includes respecting intellectual property rights (avoiding software piracy and plagiarism) and following acceptable use policies. Data privacy is also a major ethical concern — organizations must protect the personal information they collect from users and comply with data protection laws.\n\nCSEC IT students must understand these threats and the measures taken to mitigate them. You will also discuss the social and ethical implications of IT, such as the 'digital divide' and the impact of technology on employment and privacy. Being a responsible digital citizen means using technology in a way that is safe, legal, and ethical.",
         "objectives": ["Identify security threats and protection methods", "Understand ethical IT use"],
         "concepts": ["Firewalls", "Encryption", "Phishing", "Copyright/Piracy"],
         "experiment": "Security Auditor: Review a series of simulated network configurations and emails to identify and fix security vulnerabilities."
@@ -86,6 +94,7 @@
       {
         "id": "it-l5-1",
         "title": "HTML Fundamentals",
+        "content": "HTML (HyperText Markup Language) is the standard language used to create webpages. It uses 'tags' to define the structure and content of a page. Most tags come in pairs: an opening tag (e.g., <h1>) and a closing tag (e.g., </h1>). A basic HTML document has a specific structure, including <html>, <head> (which contains metadata like the page title), and <body> (which contains the visible content).\n\nCommonly used HTML tags include <h1> to <h6> for headings, <p> for paragraphs, <a> for hyperlinks (which link to other pages), <img> for images, and <ul>/<li> for lists. Attributes provide additional information about a tag, such as the 'href' attribute for links or the 'src' attribute for images.\n\nYou will learn to write clean, valid HTML code to build simple webpages. On the CSEC exam, you may be asked to identify the purpose of specific tags or to write a short segment of HTML code to display a given piece of content. Understanding HTML is the first step toward becoming a web developer.",
         "objectives": ["Create basic web pages using HTML tags"],
         "concepts": ["Tags (Head, Body, H1, P, A, IMG)", "Document Structure", "Hyperlinks"],
         "experiment": "Live HTML Editor: Edit HTML code on one side and see the rendered webpage update in real-time."
@@ -93,6 +102,7 @@
       {
         "id": "it-l5-2",
         "title": "Styling & Interactivity",
+        "content": "While HTML defines the structure of a webpage, CSS (Cascading Style Sheets) and JavaScript add styling and interactivity. CSS is used to control the visual appearance of a page, including colors, fonts, margins, and layouts. By using CSS 'selectors,' you can apply styles to specific HTML elements or groups of elements, making your site look professional and consistent.\n\nJavaScript is a programming language that allows you to add dynamic features to your site, such as image sliders, form validation, and interactive maps. It can respond to user actions like clicks, mouse movements, and keyboard input. Together, HTML, CSS, and JavaScript form the 'front-end' of web development.\n\nIn the CSEC IT syllabus, you will learn the basics of CSS and how to link a style sheet to an HTML document. You will also explore simple JavaScript concepts like variables and functions. Being able to combine these three technologies allows you to create engaging, modern websites that provide a great user experience.",
         "objectives": ["Apply basic styling with CSS and logic with JavaScript"],
         "concepts": ["CSS Selectors", "Colors & Fonts", "JS Variables & Functions"],
         "experiment": "Style-a-Page: Use a CSS panel to change colors, fonts, and layouts of a template webpage instantly."
@@ -106,6 +116,7 @@
       {
         "id": "it-l6-1",
         "title": "Advanced Word Processing",
+        "content": "Word processing is more than just typing text; it involves professional formatting and automation to create high-quality documents. Advanced features tested on CSEC include 'Mail Merge,' which allows you to create personalized letters or labels for a large group of people by linking a document to a data source (like a database or spreadsheet).\n\nOther important tools include the automatic generation of Tables of Contents, the use of columns for newsletter-style layouts, and the application of 'Styles' to ensure consistent formatting throughout a long document. You will also learn to insert and format tables, images, and other objects to enhance the visual appeal and clarity of your work.\n\nEffective word processing also involves using tools like spell check, thesaurus, and track changes for collaboration. Practice creating complex documents like reports and brochures, paying attention to layout, font choices, and the use of white space. These skills are essential for success in school, university, and the professional world.",
         "objectives": ["Use mail merge and advanced formatting"],
         "concepts": ["Mail Merge", "Table of Contents", "Columns", "Styles"],
         "experiment": "Mail Merge Simulator: Link a data source to a template letter and generate personalized invites for a group."
@@ -113,6 +124,7 @@
       {
         "id": "it-l6-2",
         "title": "Spreadsheet Formulas & Charts",
+        "content": "Spreadsheets are powerful tools for organizing, analyzing, and visualizing numerical data. They are made up of 'cells' arranged in rows and columns. A key feature of spreadsheets is the use of formulas and functions to perform calculations automatically. Formulas always start with an equals sign (=) and can include cell references, numbers, and operators (like +, -, *, /).\n\nFunctions are built-in formulas for complex tasks, such as SUM, AVERAGE, IF (for logical decisions), and VLOOKUP (to find data in a table). Understanding 'relative' vs. 'absolute' cell referencing ($A$1) is crucial when copying formulas. Once your data is organized, you can create 'Charts' (like bar, line, or pie charts) to visually represent trends and comparisons.\n\nCSEC IT students will learn to design efficient spreadsheets that use appropriate formulas and charts for a given scenario. You will also practice 'what-if' analysis — changing a value in one cell to see how it affects the final results. Spreadsheets are used in almost every field, from personal budgeting to complex financial modeling and scientific research.",
         "objectives": ["Use complex formulas and create data visualizations"],
         "concepts": ["Absolute/Relative Referencing", "IF/VLOOKUP Functions", "Pivot Tables", "Charts"],
         "experiment": "Budget Visualizer: Input financial data using formulas and select the best chart type to represent the trends."

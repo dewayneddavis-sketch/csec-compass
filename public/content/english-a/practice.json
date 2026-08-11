@@ -1,0 +1,86 @@
+[
+  {
+    "id": "p1",
+    "question": "Which of the following sentences is grammatically correct?",
+    "options": ["The group of students were late.", "Everyone in the class is invited.", "Neither John nor his friends was there.", "The teacher, along with her pupils, are attending."],
+    "answer": "Everyone in the class is invited.",
+    "explanation": "'Everyone' is an indefinite pronoun and is always singular, so it takes the singular verb 'is'."
+  },
+  {
+    "id": "p2",
+    "question": "Choose the correctly punctuated sentence.",
+    "options": ["She studied hard, consequently she passed.", "She studied hard; consequently, she passed.", "She studied hard; consequently she passed.", "She studied hard consequently, she passed."],
+    "answer": "She studied hard; consequently, she passed.",
+    "explanation": "A semicolon joins two independent clauses when a conjunctive adverb like 'consequently' is used, which is followed by a comma."
+  },
+  {
+    "id": "p3",
+    "question": "Which word is the best synonym for 'meticulous' in the sentence: 'She was meticulous about her work'?",
+    "options": ["Careful", "Fast", "Careless", "Happy"],
+    "answer": "Careful",
+    "explanation": "'Meticulous' means showing great attention to detail; very careful and precise."
+  },
+  {
+    "id": "p4",
+    "question": "Choose the best antonym for 'adversity'.",
+    "options": ["Hardship", "Prosperity", "Conflict", "Poverty"],
+    "answer": "Prosperity",
+    "explanation": "'Adversity' refers to a difficult or unpleasant situation; 'prosperity' refers to the state of being successful and flourishing."
+  },
+  {
+    "id": "p5",
+    "question": "Which sentence uses the apostrophe correctly?",
+    "options": ["The boys' are playing football.", "Its' a beautiful day.", "The dog wagged its tail.", "I saw the three cat's in the garden."],
+    "answer": "The dog wagged its tail.",
+    "explanation": "'Its' is the possessive form and does not take an apostrophe. 'It's' is the contraction of 'it is'."
+  },
+  {
+    "id": "p6",
+    "question": "Identify the figure of speech in: 'The world is a stage.'",
+    "options": ["Simile", "Metaphor", "Personification", "Onomatopoeia"],
+    "answer": "Metaphor",
+    "explanation": "This is a direct comparison between the world and a stage without using 'like' or 'as'."
+  },
+  {
+    "id": "p7",
+    "question": "What is the purpose of the 'rising action' in a narrative?",
+    "options": ["To introduce the characters", "To resolve the conflict", "To build tension and develop the conflict", "To conclude the story"],
+    "answer": "To build tension and develop the conflict",
+    "explanation": "The rising action is the part of the plot where the conflict develops and tension increases toward the climax."
+  },
+  {
+    "id": "p8",
+    "question": "Which of these is a 'false friend' when translating from Spanish 'embarazada' to English?",
+    "options": ["Embarrassed", "Pregnant", "Enthusiastic", "Excited"],
+    "answer": "Embarrassed",
+    "explanation": "'Embarazada' in Spanish means 'pregnant,' not 'embarrassed,' making it a classic false friend."
+  },
+  {
+    "id": "p9",
+    "question": "In summary writing, what should you generally omit?",
+    "options": ["The main idea", "Examples and redundant details", "The conclusion", "Key points"],
+    "answer": "Examples and redundant details",
+    "explanation": "A summary should only include the central points and exclude decorative or repetitive information."
+  },
+  {
+    "id": "p10",
+    "question": "What is a 'thesis statement' in an argumentative essay?",
+    "options": ["A summary of the conclusion", "A statement of the writer's main position", "A quote from an expert", "A list of references"],
+    "answer": "A statement of the writer's main position",
+    "explanation": "The thesis statement, usually in the introduction, clearly expresses the main argument or viewpoint of the essay."
+  },
+  {
+    "id": "p11",
+    "question": "Which word best completes the sentence: 'The smell of the roses was ________.'",
+    "options": ["pungent", "fragrant", "stagnant", "odorous"],
+    "answer": "fragrant",
+    "explanation": "'Fragrant' specifically refers to a pleasant or sweet smell, which is appropriate for roses."
+  },
+  {
+    "id": "p12",
+    "question": "Identify the error in: 'Neither of the two books are interesting.'",
+    "options": ["Subject-verb agreement", "Tense", "Punctuation", "Spelling"],
+    "answer": "Subject-verb agreement",
+    "explanation": "'Neither' is a singular pronoun and should take the singular verb 'is'."
+  }
+]

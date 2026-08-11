@@ -1,0 +1,86 @@
+[
+  {
+    "id": "p1",
+    "question": "Simplify the expression: 4(x - 2) - 3(x + 1)",
+    "options": ["x - 11", "x - 5", "7x - 11", "x - 1"],
+    "answer": "x - 11",
+    "explanation": "Expand: 4x - 8 - 3x - 3. Combine like terms: (4x - 3x) + (-8 - 3) = x - 11."
+  },
+  {
+    "id": "p2",
+    "question": "Solve for x: 3x / 4 + 2 = 11",
+    "options": ["x = 9", "x = 12", "x = 15", "x = 18"],
+    "answer": "x = 12",
+    "explanation": "Subtract 2: 3x/4 = 9. Multiply by 4: 3x = 36. Divide by 3: x = 12."
+  },
+  {
+    "id": "p3",
+    "question": "What is the value of 12 - 4 × 2 + 6 ÷ 3?",
+    "options": ["6", "18", "4", "5"],
+    "answer": "6",
+    "explanation": "BODMAS: Multiply and divide first. 4×2=8, 6÷3=2. Expression becomes 12 - 8 + 2 = 4 + 2 = 6."
+  },
+  {
+    "id": "p4",
+    "question": "Express 0.375 as a fraction in its lowest terms.",
+    "options": ["3/4", "3/8", "5/8", "7/20"],
+    "answer": "3/8",
+    "explanation": "0.375 = 375/1000. Dividing both by 125 gives 3/8."
+  },
+  {
+    "id": "p5",
+    "question": "A shirt originally priced at $120 is sold at a 15% discount. What is the sale price?",
+    "options": ["$102", "$105", "$118", "$108"],
+    "answer": "$102",
+    "explanation": "Discount = 0.15 × 120 = $18. Sale price = 120 - 18 = $102."
+  },
+  {
+    "id": "p6",
+    "question": "In a right-angled triangle, the two shorter sides are 8 cm and 15 cm. What is the length of the hypotenuse?",
+    "options": ["17 cm", "23 cm", "16 cm", "20 cm"],
+    "answer": "17 cm",
+    "explanation": "Pythagoras: 8² + 15² = 64 + 225 = 289. √289 = 17 cm."
+  },
+  {
+    "id": "p7",
+    "question": "If sin(θ) = 3/5 in a right-angled triangle, what is the value of cos(θ)?",
+    "options": ["4/5", "3/4", "2/5", "1/5"],
+    "answer": "4/5",
+    "explanation": "If opposite=3 and hypotenuse=5, then adjacent = √(5² - 3²) = √16 = 4. Cos(θ) = adj/hyp = 4/5."
+  },
+  {
+    "id": "p8",
+    "question": "If vector a = [3; -2] and vector b = [-1; 4], what is a + b?",
+    "options": ["[2; 2]", "[4; 6]", "[2; 6]", "[4; 2]"],
+    "answer": "[2; 2]",
+    "explanation": "Add corresponding components: [3 + (-1); -2 + 4] = [2; 2]."
+  },
+  {
+    "id": "p9",
+    "question": "Calculate the determinant of the matrix M = [[4, 2], [1, 3]].",
+    "options": ["10", "14", "12", "6"],
+    "answer": "10",
+    "explanation": "Determinant = (ad - bc) = (4×3) - (2×1) = 12 - 2 = 10."
+  },
+  {
+    "id": "p10",
+    "question": "What is the median of the following set of numbers: 5, 2, 9, 1, 5, 8, 3?",
+    "options": ["5", "3", "9", "4"],
+    "answer": "5",
+    "explanation": "Sort the data: 1, 2, 3, 5, 5, 8, 9. The middle value is 5."
+  },
+  {
+    "id": "p11",
+    "question": "A bag contains 4 red balls and 6 blue balls. What is the probability of randomly picking a red ball?",
+    "options": ["2/5", "2/3", "3/5", "1/4"],
+    "answer": "2/5",
+    "explanation": "Total balls = 4 + 6 = 10. P(red) = 4/10 = 2/5."
+  },
+  {
+    "id": "p12",
+    "question": "Calculate the volume of a cylinder with a radius of 7 cm and a height of 10 cm. (Use π = 22/7)",
+    "options": ["1540 cm³", "770 cm³", "154 cm³", "440 cm³"],
+    "answer": "1540 cm³",
+    "explanation": "Volume = πr²h = (22/7) × 7² × 10 = 22 × 7 × 10 = 1540 cm³."
+  }
+]
