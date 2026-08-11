@@ -46,23 +46,51 @@ export default function ExperimentSandbox({ subjectId, config, lessonExperiment 
 
   function renderInteractive() {
     switch (experimentType) {
+      // Graphing + Math visualizations → GraphingCalculator
       case "graphing-calc":
       case "graphing":
       case "graph-linear":
+      case "graph-plotter":
+      case "number-line-plotter":
+      case "function-machine":
+      case "interactive-triangle":
+      case "trig-circle":
+      case "vector-addition":
+      case "matrix-transformer":
+      case "data-visualizer":
         return <GraphingCalculator />;
+      // Drag and drop activities
       case "drag-drop":
+      case "cell-viewer":
         return <DragDropLabel />;
+      // Circuit / electricity
       case "circuit-builder":
         return <CircuitBuilder />;
+      // Balance / equation / conversion activities
       case "balance-scale":
+      case "visual-converter":
+      case "area-builder":
+      case "volume-filler":
+      case "ledger-tool":
         return <BalanceScale experimentType={experimentType} />;
+      // Flashcard / quizzing activities
       case "flashcard":
       case "vocab-flashcards":
+      case "interactive-quiz":
+      case "probability-sim":
         return <FlashcardSystem subjectId={subjectId} />;
+      // Descriptive-only activities (no interactive component yet)
+      case "lab-sim":
+      case "code-playground":
+      case "data-explorer":
+      case "timeline":
+      case "map-explorer":
+      case "body-explorer":
+      case "writing-helper":
       default:
         return (
           <div className="exp-info">
-            <h4>About this Activity</h4>
+            <h4>{experimentConfig?.title || "About this Activity"}</h4>
             <p>{experimentConfig?.description || "Explore this concept hands-on with our interactive tool."}</p>
             <div className="exp-tip">
               <strong>Tip:</strong> Experiments help reinforce what you've learned. Try different inputs and observe the results!
