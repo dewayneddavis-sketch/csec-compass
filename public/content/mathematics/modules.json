@@ -6,6 +6,7 @@
       {
         "id": "real-numbers",
         "title": "Operations on Real Numbers",
+        "content": "Real numbers are all the numbers you can find on a number line. They include rational numbers \u2014 numbers that can be written as fractions, like 1/2, 0.75, and -3 \u2014 and irrational numbers like \u03c0 (pi) and \u221a2 that cannot be expressed as simple fractions.\n\nWhen working with real numbers, the most important rule is the order of operations, remembered by the acronym BODMAS: Brackets first, then Orders (powers and roots), then Division and Multiplication (left to right), and finally Addition and Subtraction (left to right). For example, in 5 + 3 \u00d7 2, you multiply 3 \u00d7 2 = 6 first, then add 5 to get 11. Without this rule, people would get different answers for the same expression.\n\nMastering operations with real numbers is essential because they appear in every CSEC math topic \u2014 from solving equations in algebra to calculating measurements in geometry. Practice with different combinations of operations until applying BODMAS becomes second nature.",
         "objectives": [
           "Perform operations with real numbers",
           "Apply the order of operations (BODMAS)"
@@ -33,7 +34,8 @@
         "experiment": {
           "type": "visual-converter",
           "description": "Visual Fraction/Percentage Slider: A bar that you can slide to see how a fraction (e.g., 3/4) converts to a decimal (0.75) and a percentage (75%) visually."
-        }
+        },
+        "content": "Fractions, decimals, and percentages are three different ways of expressing parts of a whole. A fraction like 3/4 means 3 parts out of 4. The same value can be written as the decimal 0.75 \u2014 simply divide the numerator by the denominator. As a percentage, it's 75%, which means 75 out of 100.\n\nConverting between these forms is a core CSEC skill. To change a fraction to a percentage, multiply by 100. To go from decimal to fraction, write the decimal over its place value (e.g., 0.6 = 6/10 = 3/5). Percentage problems often appear in profit and loss, discounts, and interest calculations, so it's worth practicing until you can convert fluently in both directions.\n\nA useful tip: remember that 'percent' literally means 'per hundred'. So 25% = 25/100 = 1/4 = 0.25. Memorizing common fraction-decimal-percent equivalents like 1/2=0.5=50%, 1/4=0.25=25%, and 1/3\u22480.333\u224833.3% will save you time in exams."
       }
     ]
   },
@@ -55,7 +57,8 @@
         "experiment": {
           "type": "balance-scale",
           "description": "Equation Balance Scale: Drag constants and variables (x) onto a balance scale to solve for x by keeping the scale balanced."
-        }
+        },
+        "content": "An algebraic expression is a combination of numbers, variables (letters like x or y), and operations. For example, 3x + 2y - 5 is an algebraic expression. The parts separated by + or - signs are called terms. Terms with the same variable raised to the same power are 'like terms' and can be combined: 3x + 2x = 5x, but 3x + 2y cannot be simplified further.\n\nSolving linear equations means finding the value of the variable that makes the equation true. The golden rule is: whatever you do to one side of the equation, you must do to the other. For 2x + 4 = 10, subtract 4 from both sides to get 2x = 6, then divide both sides by 2 to get x = 3. Always check your answer by substituting it back into the original equation.\n\nAlgebra is the language of mathematics. Once you master expressions and equations, you'll be able to solve word problems, graph lines, and tackle more advanced topics like quadratics and simultaneous equations."
       },
       {
         "id": "quadratic-equations",
@@ -66,12 +69,13 @@
         ],
         "concepts": [
           "Standard form: ax^2 + bx + c = 0.",
-          "The quadratic formula: x = [-b ± sqrt(b^2 - 4ac)] / 2a"
+          "The quadratic formula: x = [-b \u00b1 sqrt(b^2 - 4ac)] / 2a"
         ],
         "experiment": {
           "type": "graph-plotter",
           "description": "Parabola Explorer: Adjust sliders for a, b, and c in ax^2 + bx + c to see how the parabola shifts, widens, or narrows on a graph."
-        }
+        },
+        "content": "A quadratic equation is one where the highest power of the variable is 2, written in standard form as ax\u00b2 + bx + c = 0. For example, x\u00b2 + 5x + 6 = 0 is a quadratic. These equations can have two solutions (roots), one solution, or no real solutions.\n\nThere are three main methods for solving quadratics on the CSEC exam: factoring, completing the square, and using the quadratic formula x = [-b \u00b1 \u221a(b\u00b2 - 4ac)] / 2a. Factoring is fastest when it works \u2014 for x\u00b2 + 5x + 6 = 0, find two numbers that multiply to 6 and add to 5: 2 and 3, so (x+2)(x+3) = 0, giving x = -2 or x = -3.\n\nThe quadratic formula always works, even when factoring doesn't. The expression under the square root, b\u00b2 - 4ac, is called the discriminant. If it's positive, there are two real roots; if zero, one repeated root; if negative, no real roots. This is a common CSEC question type."
       },
       {
         "id": "inequalities",
@@ -81,13 +85,14 @@
           "Represent solutions on a number line"
         ],
         "concepts": [
-          "Inequality symbols: <, >, ≤, ≥.",
+          "Inequality symbols: <, >, \u2264, \u2265.",
           "Multiplying or dividing by a negative number flips the inequality sign."
         ],
         "experiment": {
           "type": "number-line-plotter",
           "description": "Inequality Mapper: Input an inequality (e.g., 2x + 3 > 7) and watch the solution shade automatically on an interactive number line."
-        }
+        },
+        "content": "Linear inequalities are like linear equations but with inequality signs instead of equals: < (less than), > (greater than), \u2264 (less than or equal to), \u2265 (greater than or equal to). Solving them follows the same rules as equations, with one crucial difference: when you multiply or divide by a negative number, you must flip the inequality sign.\n\nFor example, solve 3x - 5 > 10: add 5 to both sides to get 3x > 15, divide by 3 to get x > 5. The solution is all numbers greater than 5. On a number line, you'd draw an open circle at 5 and shade to the right. For -2x \u2264 8, divide by -2 and flip the sign: x \u2265 -4.\n\nInequalities appear in real-world problems like budget constraints, speed limits, and minimum requirements. CSEC questions often ask you to represent the solution on a number line or as a set notation. Be careful with the direction of the sign and remember to flip it when multiplying or dividing by a negative number."
       }
     ]
   },
@@ -109,7 +114,8 @@
         "experiment": {
           "type": "graph-linear",
           "description": "Line Lab: Plot y=mx+b with draggable sliders for m and b. Show the line updating in real-time with the equation displayed."
-        }
+        },
+        "content": "Coordinate geometry (or analytic geometry) uses algebra to describe points, lines, and shapes on a grid. A point is written as (x, y) where x is the horizontal position and y is the vertical. The distance between two points (x\u2081,y\u2081) and (x\u2082,y\u2082) is given by d = \u221a[(x\u2082-x\u2081)\u00b2 + (y\u2082-y\u2081)\u00b2] \u2014 this is the Pythagorean theorem in coordinates.\n\nThe midpoint of a line segment is ((x\u2081+x\u2082)/2, (y\u2081+y\u2082)/2) \u2014 just average the x-values and y-values. The gradient (slope) of a line is m = (y\u2082-y\u2081)/(x\u2082-x\u2081). A positive gradient goes uphill left to right; negative goes downhill. Parallel lines have the same gradient; perpendicular lines have gradients that multiply to -1.\n\nThe equation of a straight line is y = mx + c, where m is the gradient and c is the y-intercept (where the line crosses the y-axis). Given two points, you can find m first, then substitute one point to find c. CSEC questions often ask for the equation of a line, the gradient, intercepts, or whether points are collinear."
       },
       {
         "id": "functions",
@@ -238,7 +244,8 @@
         "experiment": {
           "type": "probability-sim",
           "description": "Coin Flip Lab: Simulate flipping a coin 100 or 1000 times to see how the experimental probability approaches 0.5 (theoretical)."
-        }
+        },
+        "content": "Probability measures how likely an event is, from 0 (impossible) to 1 (certain). The theoretical probability of an event E is: P(E) = (number of favorable outcomes) / (total number of possible outcomes). For example, the probability of rolling a 6 on a fair die is 1/6.\n\nFor combined events: P(A or B) = P(A) + P(B) - P(A and B). If A and B are mutually exclusive (can't happen together), then P(A or B) = P(A) + P(B). For independent events, P(A and B) = P(A) \u00d7 P(B). Tree diagrams help visualize multi-step probability problems \u2014 multiply along branches and add between branches.\n\nCSEC probability questions often involve dice, cards, colored balls in bags, or spinners. Read carefully: 'with replacement' means the probability stays the same for the second draw; 'without replacement' means it changes. Express probabilities as fractions in simplest form unless asked otherwise."
       }
     ]
   },
@@ -255,7 +262,7 @@
         ],
         "concepts": [
           "Area of rectangle = length x width.",
-          "Area of circle = πr^2."
+          "Area of circle = \u03c0r^2."
         ],
         "experiment": {
           "type": "area-builder",
