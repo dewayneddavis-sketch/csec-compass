@@ -29,6 +29,7 @@ const fallbackSubjects = [
 export const experimentTypes = {
   // Mapped to GraphingCalculator
   "graphing": { title: "Graphing Calculator", description: "Plot y = mx + b with draggable sliders for m (slope) and b (intercept).", interactive: "graphing-calc" },
+  "graphing-calc": { title: "Graphing Calculator", description: "Plot y = mx + b with draggable sliders for m (slope) and b (intercept).", interactive: "graphing-calc" },
   "graph-linear": { title: "Line Lab", description: "Plot y=mx+b with draggable sliders for m and b.", interactive: "graphing-calc" },
   "graph-plotter": { title: "Graph Plotter", description: "Adjust parameters and see graphs update in real-time.", interactive: "graph-plotter" },
   "number-line-plotter": { title: "Number Line Plotter", description: "Visualize inequalities on an interactive number line.", interactive: "number-line-plotter" },
@@ -38,8 +39,35 @@ export const experimentTypes = {
   "vector-addition": { title: "Vector Lab", description: "Add vectors and see the resultant.", interactive: "vector-addition" },
   "matrix-transformer": { title: "Matrix Transformer", description: "Apply matrices to shapes and see transformations.", interactive: "matrix-transformer" },
   "data-visualizer": { title: "Data Visualizer", description: "See how statistics change as you add/remove data.", interactive: "data-visualizer" },
+  "data-explorer": { title: "Data Explorer", description: "Visualize and interpret charts, graphs, and datasets.", interactive: "data-explorer" },
+  "graph-sim": { title: "Graph Simulation", description: "Adjust variables and watch the graph respond in real-time.", interactive: "graph-sim" },
+  "decay-sim": { title: "Decay Simulator", description: "Explore exponential growth and decay by adjusting rate and time.", interactive: "decay-sim" },
+  "heat-sim": { title: "Heat Transfer Sim", description: "See how temperature changes as heat flows between objects.", interactive: "heat-sim" },
+  "piston-sim": { title: "Piston Simulator", description: "Explore pressure and volume changes in a gas cylinder.", interactive: "piston-sim" },
+  "energy-meter": { title: "Energy Meter", description: "Measure and visualize energy transfer in different systems.", interactive: "energy-meter" },
+  "ripple-tank": { title: "Ripple Tank", description: "Visualize wave patterns and interference in a virtual tank.", interactive: "ripple-tank" },
+  "optics-bench": { title: "Optics Bench", description: "Explore reflection and refraction with lenses and mirrors.", interactive: "optics-bench" },
+  "simulation": { title: "Interactive Simulation", description: "Run a simulation and observe how changing inputs affects outcomes.", interactive: "simulation" },
+  "interactive-equation": { title: "Equation Explorer", description: "Adjust values and see how equations change step by step.", interactive: "interactive-equation" },
+  "calculator-tool": { title: "Calculator Tool", description: "Use an interactive calculator to explore computations.", interactive: "calculator-tool" },
+  "slider-tool": { title: "Slider Lab", description: "Drag sliders to see how changing values affects the result.", interactive: "slider-tool" },
   // Mapped to DragDropLabel
   "drag-drop": { title: "Drag & Drop Label", description: "Drag labels to the correct positions on a diagram.", interactive: "drag-drop" },
+  "drag-drop-label": { title: "Drag & Drop Label", description: "Drag labels to the correct positions on a diagram.", interactive: "drag-drop-label" },
+  "cell-viewer": { title: "Cell Viewer", description: "Explore cell structures with an interactive diagram.", interactive: "cell-viewer" },
+  "body-explorer": { title: "Body Explorer", description: "Explore human anatomy with interactive diagrams.", interactive: "body-explorer" },
+  "matching-game": { title: "Matching Game", description: "Match items to their correct partners or categories.", interactive: "matching-game" },
+  "punctuation-drag-drop": { title: "Punctuation Drag & Drop", description: "Drag punctuation marks into the correct places in sentences.", interactive: "punctuation-drag-drop" },
+  "punnett-square-maker": { title: "Punnett Square Maker", description: "Build Punnett squares to predict genetic outcomes.", interactive: "punnett-square-maker" },
+  "interactive-pathway": { title: "Pathway Builder", description: "Arrange steps to construct a process or pathway.", interactive: "interactive-pathway" },
+  "molecule-builder": { title: "Molecule Builder", description: "Assemble atoms to build and explore molecules.", interactive: "molecule-builder" },
+  "bond-creator": { title: "Bond Creator", description: "Create and explore chemical bonds between atoms.", interactive: "bond-creator" },
+  "atom-builder": { title: "Atom Builder", description: "Build atoms by adding protons, neutrons, and electrons.", interactive: "atom-builder" },
+  "interactive-table": { title: "Interactive Table", description: "Explore data arranged in an interactive table.", interactive: "interactive-table" },
+  "network-topology": { title: "Network Topology", description: "Connect devices to build network topologies.", interactive: "network-topology" },
+  "flowchart-builder": { title: "Flowchart Builder", description: "Assemble flowchart symbols to represent a process.", interactive: "flowchart-builder" },
+  "schema-designer": { title: "Schema Designer", description: "Design database schemas by linking tables.", interactive: "schema-designer" },
+  "web-builder": { title: "Web Builder", description: "Build a simple web page by arranging elements.", interactive: "web-builder" },
   // Mapped to CircuitBuilder
   "circuit-builder": { title: "Circuit Builder", description: "Build electrical circuits with batteries, bulbs, resistors, and switches.", interactive: "circuit-builder" },
   // Mapped to BalanceScale
@@ -47,20 +75,35 @@ export const experimentTypes = {
   "visual-converter": { title: "Visual Converter", description: "See how values convert between different representations.", interactive: "visual-converter" },
   "area-builder": { title: "Area Builder", description: "Resize shapes and watch area/perimeter update.", interactive: "area-builder" },
   "volume-filler": { title: "Volume Lab", description: "Fill 3D containers to visualize volume.", interactive: "volume-filler" },
+  "ledger-tool": { title: "Ledger Tool", description: "Practice double-entry bookkeeping with an interactive ledger.", interactive: "ledger-tool" },
+  "interactive-ledger": { title: "Interactive Ledger", description: "Post transactions to ledgers and see balances update.", interactive: "interactive-ledger" },
+  "statement-builder": { title: "Statement Builder", description: "Build financial statements by arranging line items.", interactive: "statement-builder" },
+  "data-entry-sim": { title: "Data Entry Sim", description: "Practice recording entries and watch totals update.", interactive: "data-entry-sim" },
+  "workbook-tool": { title: "Workbook Tool", description: "Work through accounting exercises step by step.", interactive: "workbook-tool" },
+  "titration-sim": { title: "Titration Simulator", description: "Run acid–base titrations and read the endpoint.", interactive: "titration-sim" },
+  "virtual-lab": { title: "Virtual Lab", description: "Perform experiments in a safe virtual laboratory.", interactive: "virtual-lab" },
   // Mapped to FlashcardSystem
+  "flashcard": { title: "Flashcard Trainer", description: "Build knowledge with flip-and-review flashcards.", interactive: "flashcard" },
   "vocab-flashcards": { title: "Flashcard Trainer", description: "Build vocabulary with flip-and-review flashcards.", interactive: "flashcard" },
   "interactive-quiz": { title: "Interactive Quiz", description: "Test your knowledge with instant feedback on each answer.", interactive: "interactive-quiz" },
   "probability-sim": { title: "Probability Simulator", description: "Run simulations and compare experimental to theoretical probability.", interactive: "probability-sim" },
-  // Subject fallback types (descriptive-only — no react component yet, handled by default switch case)
-  "cell-viewer": { title: "Cell Viewer", description: "Explore cell structures with an interactive diagram." },
-  "lab-sim": { title: "Lab Simulation", description: "Explore chemical reactions and lab procedures interactively." },
-  "code-playground": { title: "Code Playground", description: "Write and test code snippets with instant feedback." },
-  "ledger-tool": { title: "Ledger Tool", description: "Practice double-entry bookkeeping with an interactive ledger." },
-  "data-explorer": { title: "Data Explorer", description: "Visualize and interpret charts, graphs, and datasets." },
-  "timeline": { title: "Timeline Explorer", description: "Explore historical events on an interactive timeline." },
-  "map-explorer": { title: "Map Explorer", description: "Discover geographic features and regions on an interactive map." },
-  "body-explorer": { title: "Body Explorer", description: "Explore human anatomy with interactive diagrams." },
-  "writing-helper": { title: "Writing Helper", description: "Practice writing skills with prompts, outlines, and feedback tips." },
+  "dialogue-builder": { title: "Dialogue Builder", description: "Build and explore dialogues for common situations.", interactive: "dialogue-builder" },
+  "plot-arranger": { title: "Plot Arranger", description: "Arrange story events in the correct sequence.", interactive: "plot-arranger" },
+  "outliner": { title: "Outliner", description: "Practice organizing ideas into outlines.", interactive: "outliner" },
+  "interactive-summary": { title: "Summary Builder", description: "Practice summarizing passages and key points.", interactive: "interactive-summary" },
+  "highlight-tool": { title: "Highlight Tool", description: "Find and highlight key details in a text.", interactive: "highlight-tool" },
+  "text-trimmer": { title: "Text Trimmer", description: "Trim sentences to remove unnecessary words.", interactive: "text-trimmer" },
+  "sentence-fixer": { title: "Sentence Fixer", description: "Rewrite sentences to fix grammar and clarity.", interactive: "sentence-fixer" },
+  "word-swap": { title: "Word Swap", description: "Choose the best word to complete each sentence.", interactive: "word-swap" },
+  "classifier-sim": { title: "Classifier Sim", description: "Sort items into their correct categories.", interactive: "classifier-sim" },
+  "waste-sorter": { title: "Waste Sorter", description: "Sort waste into recycle, compost, and landfill bins.", interactive: "waste-sorter" },
+  "interactive-summary-tool": { title: "Summary Tool", description: "Practice summarizing key points from passages.", interactive: "interactive-summary-tool" },
+  // Subject fallback types (all map to an interactive component)
+  "lab-sim": { title: "Lab Simulation", description: "Explore chemical reactions and lab procedures interactively.", interactive: "lab-sim" },
+  "code-playground": { title: "Code Playground", description: "Write and test code snippets with instant feedback.", interactive: "code-playground" },
+  "timeline": { title: "Timeline Explorer", description: "Explore historical events on an interactive timeline.", interactive: "timeline" },
+  "map-explorer": { title: "Map Explorer", description: "Discover geographic features and regions on an interactive map.", interactive: "map-explorer" },
+  "writing-helper": { title: "Writing Helper", description: "Practice writing skills with prompts, outlines, and feedback tips.", interactive: "writing-helper" },
 };
 
 async function fetchJSON(url) {
@@ -178,5 +221,7 @@ export function getExperimentConfig(subjectId) {
 export function getLessonExperiment(experimentType) {
   if (!experimentType) return null;
   if (typeof experimentType === "object") return experimentType;
-  return experimentTypes[experimentType] || { title: "Interactive Activity", description: "Explore this concept hands-on." };
+  // Known type key → return its config. Otherwise treat the string itself
+  // as a descriptive description so it can be shown above an interactive tool.
+  return experimentTypes[experimentType] || { title: "Interactive Activity", description: experimentType };
 }

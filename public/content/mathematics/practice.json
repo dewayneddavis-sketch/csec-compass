@@ -2,85 +2,1201 @@
   {
     "id": "p1",
     "question": "Simplify the expression: 4(x - 2) - 3(x + 1)",
-    "options": ["x - 11", "x - 5", "7x - 11", "x - 1"],
+    "options": [
+      "x - 11",
+      "x - 5",
+      "7x - 11",
+      "x - 1"
+    ],
     "answer": "x - 11",
     "explanation": "Expand: 4x - 8 - 3x - 3. Combine like terms: (4x - 3x) + (-8 - 3) = x - 11."
   },
   {
     "id": "p2",
     "question": "Solve for x: 3x / 4 + 2 = 11",
-    "options": ["x = 9", "x = 12", "x = 15", "x = 18"],
+    "options": [
+      "x = 9",
+      "x = 12",
+      "x = 15",
+      "x = 18"
+    ],
     "answer": "x = 12",
     "explanation": "Subtract 2: 3x/4 = 9. Multiply by 4: 3x = 36. Divide by 3: x = 12."
   },
   {
     "id": "p3",
     "question": "What is the value of 12 - 4 × 2 + 6 ÷ 3?",
-    "options": ["6", "18", "4", "5"],
+    "options": [
+      "6",
+      "18",
+      "4",
+      "5"
+    ],
     "answer": "6",
     "explanation": "BODMAS: Multiply and divide first. 4×2=8, 6÷3=2. Expression becomes 12 - 8 + 2 = 4 + 2 = 6."
   },
   {
     "id": "p4",
     "question": "Express 0.375 as a fraction in its lowest terms.",
-    "options": ["3/4", "3/8", "5/8", "7/20"],
+    "options": [
+      "3/4",
+      "3/8",
+      "5/8",
+      "7/20"
+    ],
     "answer": "3/8",
     "explanation": "0.375 = 375/1000. Dividing both by 125 gives 3/8."
   },
   {
     "id": "p5",
     "question": "A shirt originally priced at $120 is sold at a 15% discount. What is the sale price?",
-    "options": ["$102", "$105", "$118", "$108"],
+    "options": [
+      "$102",
+      "$105",
+      "$118",
+      "$108"
+    ],
     "answer": "$102",
     "explanation": "Discount = 0.15 × 120 = $18. Sale price = 120 - 18 = $102."
   },
   {
     "id": "p6",
     "question": "In a right-angled triangle, the two shorter sides are 8 cm and 15 cm. What is the length of the hypotenuse?",
-    "options": ["17 cm", "23 cm", "16 cm", "20 cm"],
+    "options": [
+      "17 cm",
+      "23 cm",
+      "16 cm",
+      "20 cm"
+    ],
     "answer": "17 cm",
     "explanation": "Pythagoras: 8² + 15² = 64 + 225 = 289. √289 = 17 cm."
   },
   {
     "id": "p7",
     "question": "If sin(θ) = 3/5 in a right-angled triangle, what is the value of cos(θ)?",
-    "options": ["4/5", "3/4", "2/5", "1/5"],
+    "options": [
+      "4/5",
+      "3/4",
+      "2/5",
+      "1/5"
+    ],
     "answer": "4/5",
     "explanation": "If opposite=3 and hypotenuse=5, then adjacent = √(5² - 3²) = √16 = 4. Cos(θ) = adj/hyp = 4/5."
   },
   {
     "id": "p8",
     "question": "If vector a = [3; -2] and vector b = [-1; 4], what is a + b?",
-    "options": ["[2; 2]", "[4; 6]", "[2; 6]", "[4; 2]"],
+    "options": [
+      "[2; 2]",
+      "[4; 6]",
+      "[2; 6]",
+      "[4; 2]"
+    ],
     "answer": "[2; 2]",
     "explanation": "Add corresponding components: [3 + (-1); -2 + 4] = [2; 2]."
   },
   {
     "id": "p9",
     "question": "Calculate the determinant of the matrix M = [[4, 2], [1, 3]].",
-    "options": ["10", "14", "12", "6"],
+    "options": [
+      "10",
+      "14",
+      "12",
+      "6"
+    ],
     "answer": "10",
     "explanation": "Determinant = (ad - bc) = (4×3) - (2×1) = 12 - 2 = 10."
   },
   {
     "id": "p10",
     "question": "What is the median of the following set of numbers: 5, 2, 9, 1, 5, 8, 3?",
-    "options": ["5", "3", "9", "4"],
+    "options": [
+      "5",
+      "3",
+      "9",
+      "4"
+    ],
     "answer": "5",
     "explanation": "Sort the data: 1, 2, 3, 5, 5, 8, 9. The middle value is 5."
   },
   {
     "id": "p11",
     "question": "A bag contains 4 red balls and 6 blue balls. What is the probability of randomly picking a red ball?",
-    "options": ["2/5", "2/3", "3/5", "1/4"],
+    "options": [
+      "2/5",
+      "2/3",
+      "3/5",
+      "1/4"
+    ],
     "answer": "2/5",
     "explanation": "Total balls = 4 + 6 = 10. P(red) = 4/10 = 2/5."
   },
   {
     "id": "p12",
     "question": "Calculate the volume of a cylinder with a radius of 7 cm and a height of 10 cm. (Use π = 22/7)",
-    "options": ["1540 cm³", "770 cm³", "154 cm³", "440 cm³"],
+    "options": [
+      "1540 cm³",
+      "770 cm³",
+      "154 cm³",
+      "440 cm³"
+    ],
     "answer": "1540 cm³",
     "explanation": "Volume = πr²h = (22/7) × 7² × 10 = 22 × 7 × 10 = 1540 cm³."
+  },
+  {
+    "id": "p13",
+    "question": "If x = 3 and y = -2, what is the value of 3x² - 2y?",
+    "options": [
+      "31",
+      "23",
+      "35",
+      "27"
+    ],
+    "answer": "31",
+    "explanation": "3(3)² - 2(-2) = 3(9) + 4 = 27 + 4 = 31."
+  },
+  {
+    "id": "p14",
+    "question": "Which of the following is a prime number?",
+    "options": [
+      "39",
+      "51",
+      "57",
+      "53"
+    ],
+    "answer": "53",
+    "explanation": "53 is only divisible by 1 and itself; 39, 51 and 57 all have other factors."
+  },
+  {
+    "id": "p15",
+    "question": "Write 0.00072 in standard form.",
+    "options": [
+      "7.2 × 10⁻⁴",
+      "7.2 × 10⁴",
+      "72 × 10⁻⁵",
+      "7.2 × 10⁻³"
+    ],
+    "answer": "7.2 × 10⁻⁴",
+    "explanation": "Move the decimal point 4 places to the right: 7.2 × 10⁻⁴."
+  },
+  {
+    "id": "p16",
+    "question": "The ratio of boys to girls in a class is 3:2. If there are 25 students, how many are boys?",
+    "options": [
+      "10",
+      "15",
+      "12",
+      "18"
+    ],
+    "answer": "15",
+    "explanation": "Total parts = 5. Boys = (3/5) × 25 = 15."
+  },
+  {
+    "id": "p17",
+    "question": "A car travels 240 km in 3 hours. What is its average speed?",
+    "options": [
+      "70 km/h",
+      "90 km/h",
+      "80 km/h",
+      "100 km/h"
+    ],
+    "answer": "80 km/h",
+    "explanation": "Speed = distance ÷ time = 240 ÷ 3 = 80 km/h."
+  },
+  {
+    "id": "p18",
+    "question": "Express 2/5 as a percentage.",
+    "options": [
+      "25%",
+      "40%",
+      "20%",
+      "45%"
+    ],
+    "answer": "40%",
+    "explanation": "2/5 × 100% = 40%."
+  },
+  {
+    "id": "p19",
+    "question": "What is the simple interest on $800 at 6% per annum for 2 years?",
+    "options": [
+      "$96",
+      "$48",
+      "$120",
+      "$72"
+    ],
+    "answer": "$96",
+    "explanation": "I = PRT/100 = 800 × 6 × 2 / 100 = $96."
+  },
+  {
+    "id": "p20",
+    "question": "Solve: 5x - 7 = 3x + 9",
+    "options": [
+      "x = 8",
+      "x = 2",
+      "x = 16",
+      "x = 4"
+    ],
+    "answer": "x = 8",
+    "explanation": "5x - 3x = 9 + 7 → 2x = 16 → x = 8."
+  },
+  {
+    "id": "p21",
+    "question": "Factorize completely: x² - 9",
+    "options": [
+      "(x - 3)²",
+      "(x + 3)(x - 3)",
+      "x(x - 9)",
+      "(x + 9)(x - 1)"
+    ],
+    "answer": "(x + 3)(x - 3)",
+    "explanation": "Difference of two squares: x² - 9 = (x + 3)(x - 3)."
+  },
+  {
+    "id": "p22",
+    "question": "Expand and simplify: 2(x + 3) - 3(x - 1)",
+    "options": [
+      "-x + 9",
+      "-x + 3",
+      "x + 9",
+      "5x + 9"
+    ],
+    "answer": "-x + 9",
+    "explanation": "2x + 6 - 3x + 3 = -x + 9."
+  },
+  {
+    "id": "p23",
+    "question": "What is the gradient of the line joining (1, 2) and (5, 10)?",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "1/2"
+    ],
+    "answer": "2",
+    "explanation": "m = (10 - 2)/(5 - 1) = 8/4 = 2."
+  },
+  {
+    "id": "p24",
+    "question": "Which equation represents a line parallel to y = 3x + 1?",
+    "options": [
+      "y = 3x - 4",
+      "y = -3x + 1",
+      "y = (1/3)x + 2",
+      "y = 3"
+    ],
+    "answer": "y = 3x - 4",
+    "explanation": "Parallel lines have the same gradient (3)."
+  },
+  {
+    "id": "p25",
+    "question": "Find the x-intercept of the line y = 2x - 6.",
+    "options": [
+      "x = 3",
+      "x = -3",
+      "x = 6",
+      "x = 2"
+    ],
+    "answer": "x = 3",
+    "explanation": "Set y = 0: 2x - 6 = 0 → x = 3."
+  },
+  {
+    "id": "p26",
+    "question": "The point (-2, 3) is reflected in the y-axis. What are its new coordinates?",
+    "options": [
+      "(2, 3)",
+      "(-2, -3)",
+      "(2, -3)",
+      "(-2, 3)"
+    ],
+    "answer": "(2, 3)",
+    "explanation": "Reflection in y-axis changes the sign of x only."
+  },
+  {
+    "id": "p27",
+    "question": "What is the solution set of x² - 5x + 6 = 0?",
+    "options": [
+      "x = 2 or 3",
+      "x = 1 or 6",
+      "x = -2 or -3",
+      "x = 5 or 1"
+    ],
+    "answer": "x = 2 or 3",
+    "explanation": "(x - 2)(x - 3) = 0 → x = 2 or 3."
+  },
+  {
+    "id": "p28",
+    "question": "If f(x) = 2x + 1, what is f(3)?",
+    "options": [
+      "6",
+      "7",
+      "5",
+      "8"
+    ],
+    "answer": "7",
+    "explanation": "f(3) = 2(3) + 1 = 7."
+  },
+  {
+    "id": "p29",
+    "question": "The nth term of a sequence is 3n - 1. What is the 10th term?",
+    "options": [
+      "29",
+      "30",
+      "28",
+      "31"
+    ],
+    "answer": "29",
+    "explanation": "3(10) - 1 = 29."
+  },
+  {
+    "id": "p30",
+    "question": "In a right-angled triangle, the opposite side is 6 and the hypotenuse is 10. What is sin θ?",
+    "options": [
+      "0.6",
+      "0.8",
+      "0.75",
+      "1.6"
+    ],
+    "answer": "0.6",
+    "explanation": "sin θ = opposite/hypotenuse = 6/10 = 0.6."
+  },
+  {
+    "id": "p31",
+    "question": "A triangle has angles 65° and 45°. What is the third angle?",
+    "options": [
+      "60°",
+      "70°",
+      "80°",
+      "50°"
+    ],
+    "answer": "70°",
+    "explanation": "180° - 65° - 45° = 70°."
+  },
+  {
+    "id": "p32",
+    "question": "The sides of a rectangle are 8 cm and 6 cm. What is the length of the diagonal?",
+    "options": [
+      "10 cm",
+      "14 cm",
+      "12 cm",
+      "7 cm"
+    ],
+    "answer": "10 cm",
+    "explanation": "√(8² + 6²) = √100 = 10 cm."
+  },
+  {
+    "id": "p33",
+    "question": "What is the area of a circle with radius 7 cm? (π ≈ 22/7)",
+    "options": [
+      "154 cm²",
+      "44 cm²",
+      "49 cm²",
+      "308 cm²"
+    ],
+    "answer": "154 cm²",
+    "explanation": "A = πr² = (22/7)(7)(7) = 154 cm²."
+  },
+  {
+    "id": "p34",
+    "question": "What is the volume of a cube with side 4 cm?",
+    "options": [
+      "16 cm³",
+      "64 cm³",
+      "32 cm³",
+      "48 cm³"
+    ],
+    "answer": "64 cm³",
+    "explanation": "V = s³ = 4³ = 64 cm³."
+  },
+  {
+    "id": "p35",
+    "question": "Convert 1.5 hours to seconds.",
+    "options": [
+      "5400 s",
+      "90 s",
+      "540 s",
+      "9000 s"
+    ],
+    "answer": "5400 s",
+    "explanation": "1.5 × 3600 = 5400 s."
+  },
+  {
+    "id": "p36",
+    "question": "A map scale is 1:50,000. What distance on the ground does 4 cm on the map represent?",
+    "options": [
+      "2 km",
+      "4 km",
+      "20 km",
+      "200 km"
+    ],
+    "answer": "2 km",
+    "explanation": "4 × 50,000 = 200,000 cm = 2 km."
+  },
+  {
+    "id": "p37",
+    "question": "The mean of 4 numbers is 12. What is their sum?",
+    "options": [
+      "48",
+      "3",
+      "16",
+      "24"
+    ],
+    "answer": "48",
+    "explanation": "Sum = mean × count = 12 × 4 = 48."
+  },
+  {
+    "id": "p38",
+    "question": "What is the mode of: 3, 5, 5, 7, 9, 9, 9?",
+    "options": [
+      "9",
+      "5",
+      "7",
+      "3"
+    ],
+    "answer": "9",
+    "explanation": "9 appears most often (3 times)."
+  },
+  {
+    "id": "p39",
+    "question": "The marks of 5 students are 4, 6, 8, 10, 12. What is the range?",
+    "options": [
+      "8",
+      "6",
+      "4",
+      "10"
+    ],
+    "answer": "8",
+    "explanation": "Range = 12 - 4 = 8."
+  },
+  {
+    "id": "p40",
+    "question": "A bag has 3 red, 2 blue and 5 green marbles. What is P(green)?",
+    "options": [
+      "1/2",
+      "1/5",
+      "1/3",
+      "3/10"
+    ],
+    "answer": "1/2",
+    "explanation": "5/10 = 1/2."
+  },
+  {
+    "id": "p41",
+    "question": "Two fair coins are tossed. What is the probability of getting exactly one head?",
+    "options": [
+      "1/2",
+      "1/4",
+      "3/4",
+      "1/3"
+    ],
+    "answer": "1/2",
+    "explanation": "Outcomes HT, TH are favourable out of 4 → 2/4 = 1/2."
+  },
+  {
+    "id": "p42",
+    "question": "A number is chosen at random from 1 to 10. What is P(even number)?",
+    "options": [
+      "1/2",
+      "1/5",
+      "3/10",
+      "2/5"
+    ],
+    "answer": "1/2",
+    "explanation": "Even numbers: 2,4,6,8,10 → 5/10 = 1/2."
+  },
+  {
+    "id": "p43",
+    "question": "What is 15% of $240?",
+    "options": [
+      "$36",
+      "$24",
+      "$40",
+      "$30"
+    ],
+    "answer": "$36",
+    "explanation": "0.15 × 240 = $36."
+  },
+  {
+    "id": "p44",
+    "question": "Increase $80 by 25%.",
+    "options": [
+      "$100",
+      "$95",
+      "$105",
+      "$90"
+    ],
+    "answer": "$100",
+    "explanation": "80 × 1.25 = $100."
+  },
+  {
+    "id": "p45",
+    "question": "A number decreased by 20% is 64. What is the number?",
+    "options": [
+      "80",
+      "76.8",
+      "84",
+      "85.3"
+    ],
+    "answer": "80",
+    "explanation": "0.8x = 64 → x = 80."
+  },
+  {
+    "id": "p46",
+    "question": "Express 7/8 as a decimal.",
+    "options": [
+      "0.875",
+      "0.78",
+      "0.785",
+      "0.8"
+    ],
+    "answer": "0.875",
+    "explanation": "7 ÷ 8 = 0.875."
+  },
+  {
+    "id": "p47",
+    "question": "What is 3⁴?",
+    "options": [
+      "81",
+      "27",
+      "64",
+      "12"
+    ],
+    "answer": "81",
+    "explanation": "3 × 3 × 3 × 3 = 81."
+  },
+  {
+    "id": "p48",
+    "question": "Simplify: (2³ × 2⁴) ÷ 2⁵",
+    "options": [
+      "4",
+      "2",
+      "8",
+      "16"
+    ],
+    "answer": "4",
+    "explanation": "2⁷ ÷ 2⁵ = 2² = 4."
+  },
+  {
+    "id": "p49",
+    "question": "What is the value of √144 + √81?",
+    "options": [
+      "21",
+      "15",
+      "17",
+      "23"
+    ],
+    "answer": "21",
+    "explanation": "12 + 9 = 21."
+  },
+  {
+    "id": "p50",
+    "question": "Which of these is a rational number?",
+    "options": [
+      "√2",
+      "π",
+      "0.75",
+      "√3"
+    ],
+    "answer": "0.75",
+    "explanation": "0.75 = 3/4, which can be written as a fraction."
+  },
+  {
+    "id": "p51",
+    "question": "Round 47.65 to the nearest whole number.",
+    "options": [
+      "48",
+      "47",
+      "47.7",
+      "50"
+    ],
+    "answer": "48",
+    "explanation": "The tenths digit is 6, so round up to 48."
+  },
+  {
+    "id": "p52",
+    "question": "What is 0.6 × 0.5?",
+    "options": [
+      "0.3",
+      "3",
+      "0.30",
+      "1.1"
+    ],
+    "answer": "0.3",
+    "explanation": "6 × 5 = 30; place 2 decimal places → 0.30 = 0.3."
+  },
+  {
+    "id": "p53",
+    "question": "Divide 5.6 by 0.7.",
+    "options": [
+      "8",
+      "0.8",
+      "80",
+      "7.8"
+    ],
+    "answer": "8",
+    "explanation": "5.6 ÷ 0.7 = 56 ÷ 7 = 8."
+  },
+  {
+    "id": "p54",
+    "question": "Which inequality represents 'x is at most 5'?",
+    "options": [
+      "x ≤ 5",
+      "x ≥ 5",
+      "x < 5",
+      "x > 5"
+    ],
+    "answer": "x ≤ 5",
+    "explanation": "'At most' means less than or equal to."
+  },
+  {
+    "id": "p55",
+    "question": "Solve: 2x + 3 ≤ 11",
+    "options": [
+      "x ≤ 4",
+      "x ≥ 4",
+      "x < 7",
+      "x ≤ 7"
+    ],
+    "answer": "x ≤ 4",
+    "explanation": "2x ≤ 8 → x ≤ 4."
+  },
+  {
+    "id": "p56",
+    "question": "If 3(x - 2) = 12, what is x?",
+    "options": [
+      "6",
+      "4",
+      "8",
+      "2"
+    ],
+    "answer": "6",
+    "explanation": "x - 2 = 4 → x = 6."
+  },
+  {
+    "id": "p57",
+    "question": "Make x the subject of y = 2x + 5.",
+    "options": [
+      "x = (y - 5)/2",
+      "x = (y + 5)/2",
+      "x = 2y - 5",
+      "x = y/2 - 5"
+    ],
+    "answer": "x = (y - 5)/2",
+    "explanation": "y - 5 = 2x → x = (y - 5)/2."
+  },
+  {
+    "id": "p58",
+    "question": "The cost of 4 pens is $12. How much do 7 pens cost?",
+    "options": [
+      "$21",
+      "$24",
+      "$28",
+      "$18"
+    ],
+    "answer": "$21",
+    "explanation": "One pen = $3, so 7 pens = $21."
+  },
+  {
+    "id": "p59",
+    "question": "A train covers 300 km at 60 km/h. How long does the journey take?",
+    "options": [
+      "5 h",
+      "4 h",
+      "6 h",
+      "3 h"
+    ],
+    "answer": "5 h",
+    "explanation": "Time = 300/60 = 5 h."
+  },
+  {
+    "id": "p60",
+    "question": "Which of the following is the HCF of 24 and 36?",
+    "options": [
+      "12",
+      "6",
+      "72",
+      "4"
+    ],
+    "answer": "12",
+    "explanation": "24 = 2³×3, 36 = 2²×3² → HCF = 2²×3 = 12."
+  },
+  {
+    "id": "p61",
+    "question": "What is the LCM of 6 and 8?",
+    "options": [
+      "24",
+      "48",
+      "12",
+      "16"
+    ],
+    "answer": "24",
+    "explanation": "Multiples: 24 is the smallest common multiple."
+  },
+  {
+    "id": "p62",
+    "question": "A class has 12 boys and 18 girls. What fraction of the class are girls?",
+    "options": [
+      "3/5",
+      "2/5",
+      "3/4",
+      "1/2"
+    ],
+    "answer": "3/5",
+    "explanation": "18/30 = 3/5."
+  },
+  {
+    "id": "p63",
+    "question": "What is 1/4 + 2/3?",
+    "options": [
+      "11/12",
+      "3/7",
+      "5/12",
+      "2/7"
+    ],
+    "answer": "11/12",
+    "explanation": "Common denominator 12: 3/12 + 8/12 = 11/12."
+  },
+  {
+    "id": "p64",
+    "question": "What is 3/4 ÷ 1/2?",
+    "options": [
+      "3/2",
+      "3/8",
+      "2/3",
+      "6"
+    ],
+    "answer": "3/2",
+    "explanation": "3/4 × 2/1 = 6/4 = 3/2."
+  },
+  {
+    "id": "p65",
+    "question": "A sector has radius 10 cm and angle 90°. What is its area? (π ≈ 3.14)",
+    "options": [
+      "78.5 cm²",
+      "314 cm²",
+      "39.25 cm²",
+      "157 cm²"
+    ],
+    "answer": "78.5 cm²",
+    "explanation": "Area = (90/360) × π × 100 = 25π ≈ 78.5 cm²."
+  },
+  {
+    "id": "p66",
+    "question": "The interior angle of a regular hexagon is:",
+    "options": [
+      "120°",
+      "60°",
+      "108°",
+      "90°"
+    ],
+    "answer": "120°",
+    "explanation": "Sum = (6-2)×180 = 720°; each = 720/6 = 120°."
+  },
+  {
+    "id": "p67",
+    "question": "How many lines of symmetry does a square have?",
+    "options": [
+      "4",
+      "2",
+      "8",
+      "1"
+    ],
+    "answer": "4",
+    "explanation": "A square has 4 lines of symmetry."
+  },
+  {
+    "id": "p68",
+    "question": "Which of the following is a 3D shape?",
+    "options": [
+      "Cone",
+      "Circle",
+      "Square",
+      "Triangle"
+    ],
+    "answer": "Cone",
+    "explanation": "A cone has 3 dimensions (height, width, depth)."
+  },
+  {
+    "id": "p69",
+    "question": "The circumference of a circle with radius 7 cm is (π ≈ 22/7):",
+    "options": [
+      "44 cm",
+      "22 cm",
+      "154 cm",
+      "88 cm"
+    ],
+    "answer": "44 cm",
+    "explanation": "C = 2πr = 2 × 22/7 × 7 = 44 cm."
+  },
+  {
+    "id": "p70",
+    "question": "What is the surface area of a cube with edge 3 cm?",
+    "options": [
+      "54 cm²",
+      "36 cm²",
+      "27 cm²",
+      "18 cm²"
+    ],
+    "answer": "54 cm²",
+    "explanation": "6 faces × 9 = 54 cm²."
+  },
+  {
+    "id": "p71",
+    "question": "Convert 0.25 to a fraction in lowest terms.",
+    "options": [
+      "1/4",
+      "25/10",
+      "2/5",
+      "1/5"
+    ],
+    "answer": "1/4",
+    "explanation": "0.25 = 25/100 = 1/4."
+  },
+  {
+    "id": "p72",
+    "question": "Which is larger: 0.3 or 0.29?",
+    "options": [
+      "0.3",
+      "0.29",
+      "They are equal",
+      "Cannot tell"
+    ],
+    "answer": "0.3",
+    "explanation": "0.30 > 0.29."
+  },
+  {
+    "id": "p73",
+    "question": "Evaluate: -4 + 9",
+    "options": [
+      "5",
+      "-5",
+      "13",
+      "-13"
+    ],
+    "answer": "5",
+    "explanation": "-4 + 9 = 5."
+  },
+  {
+    "id": "p74",
+    "question": "Evaluate: (-3) × (-6)",
+    "options": [
+      "18",
+      "-18",
+      "9",
+      "-9"
+    ],
+    "answer": "18",
+    "explanation": "Product of two negatives is positive: 18."
+  },
+  {
+    "id": "p75",
+    "question": "What is 2/3 of 90?",
+    "options": [
+      "60",
+      "45",
+      "30",
+      "75"
+    ],
+    "answer": "60",
+    "explanation": "(2/3) × 90 = 60."
+  },
+  {
+    "id": "p76",
+    "question": "If y varies directly as x and y = 10 when x = 2, what is y when x = 5?",
+    "options": [
+      "25",
+      "20",
+      "4",
+      "50"
+    ],
+    "answer": "25",
+    "explanation": "k = 10/2 = 5; y = 5 × 5 = 25."
+  },
+  {
+    "id": "p77",
+    "question": "Which of these shows inverse proportion?",
+    "options": [
+      "Speed and time for fixed distance",
+      "Radius and area of circle",
+      "Age and height",
+      "Distance and time at fixed speed"
+    ],
+    "answer": "Speed and time for fixed distance",
+    "explanation": "As speed increases, time decreases for the same distance."
+  },
+  {
+    "id": "p78",
+    "question": "The exchange rate is 1 USD = 2.70 TTD. How many TTD for $50 USD?",
+    "options": [
+      "$135",
+      "$18.52",
+      "$1350",
+      "$53.70"
+    ],
+    "answer": "$135",
+    "explanation": "50 × 2.70 = 135 TTD."
+  },
+  {
+    "id": "p79",
+    "question": "A television set marked $1,200 is sold for $1,020. What is the percentage discount?",
+    "options": [
+      "15%",
+      "10%",
+      "20%",
+      "12%"
+    ],
+    "answer": "15%",
+    "explanation": "Discount = $180; 180/1200 × 100 = 15%."
+  },
+  {
+    "id": "p80",
+    "question": "What is the interest on $500 at 8% p.a. for 6 months?",
+    "options": [
+      "$20",
+      "$40",
+      "$24",
+      "$30"
+    ],
+    "answer": "$20",
+    "explanation": "I = 500 × 8 × 0.5 / 100 = $20."
+  },
+  {
+    "id": "p81",
+    "question": "Solve the pair: x + y = 10 and x - y = 4.",
+    "options": [
+      "x = 7, y = 3",
+      "x = 6, y = 4",
+      "x = 3, y = 7",
+      "x = 5, y = 5"
+    ],
+    "answer": "x = 7, y = 3",
+    "explanation": "Add: 2x = 14 → x = 7, y = 3."
+  },
+  {
+    "id": "p82",
+    "question": "Which of the following points lies on the line y = x + 2?",
+    "options": [
+      "(1, 3)",
+      "(2, 2)",
+      "(3, 1)",
+      "(0, 0)"
+    ],
+    "answer": "(1, 3)",
+    "explanation": "3 = 1 + 2. ✓"
+  },
+  {
+    "id": "p83",
+    "question": "The translation vector (3, -2) moves a point (1, 4) to:",
+    "options": [
+      "(4, 2)",
+      "(-2, 6)",
+      "(4, 6)",
+      "(2, 4)"
+    ],
+    "answer": "(4, 2)",
+    "explanation": "(1+3, 4-2) = (4, 2)."
+  },
+  {
+    "id": "p84",
+    "question": "A rotation of 90° clockwise about the origin maps (2, 3) to:",
+    "options": [
+      "(3, -2)",
+      "(-3, 2)",
+      "(-2, -3)",
+      "(2, -3)"
+    ],
+    "answer": "(3, -2)",
+    "explanation": "90° clockwise: (x, y) → (y, -x) = (3, -2)."
+  },
+  {
+    "id": "p85",
+    "question": "What is the y-intercept of y = -2x + 5?",
+    "options": [
+      "5",
+      "-2",
+      "2",
+      "5/2"
+    ],
+    "answer": "5",
+    "explanation": "In y = mx + c, c is the y-intercept = 5."
+  },
+  {
+    "id": "p86",
+    "question": "The sum of the interior angles of a pentagon is:",
+    "options": [
+      "540°",
+      "360°",
+      "720°",
+      "180°"
+    ],
+    "answer": "540°",
+    "explanation": "(5-2) × 180 = 540°."
+  },
+  {
+    "id": "p87",
+    "question": "If tan θ = 1, then θ could be:",
+    "options": [
+      "45°",
+      "30°",
+      "60°",
+      "90°"
+    ],
+    "answer": "45°",
+    "explanation": "tan 45° = 1."
+  },
+  {
+    "id": "p88",
+    "question": "A ladder 13 m long rests against a wall, reaching 12 m high. How far is the foot of the ladder from the wall?",
+    "options": [
+      "5 m",
+      "1 m",
+      "25 m",
+      "6 m"
+    ],
+    "answer": "5 m",
+    "explanation": "√(13² - 12²) = √(169-144) = √25 = 5 m."
+  },
+  {
+    "id": "p89",
+    "question": "What is the value of cos 60°?",
+    "options": [
+      "0.5",
+      "1",
+      "0",
+      "√3/2"
+    ],
+    "answer": "0.5",
+    "explanation": "cos 60° = 1/2 = 0.5."
+  },
+  {
+    "id": "p90",
+    "question": "A cylinder has radius 5 cm and height 10 cm. What is its volume? (π ≈ 3.14)",
+    "options": [
+      "785 cm³",
+      "1570 cm³",
+      "314 cm³",
+      "250 cm³"
+    ],
+    "answer": "785 cm³",
+    "explanation": "V = πr²h = 3.14 × 25 × 10 = 785 cm³."
+  },
+  {
+    "id": "p91",
+    "question": "What is the perimeter of a rectangle 12 cm by 8 cm?",
+    "options": [
+      "40 cm",
+      "20 cm",
+      "96 cm",
+      "48 cm"
+    ],
+    "answer": "40 cm",
+    "explanation": "2(12 + 8) = 40 cm."
+  },
+  {
+    "id": "p92",
+    "question": "The probability that it rains is 0.3. What is the probability it does not rain?",
+    "options": [
+      "0.7",
+      "0.3",
+      "1.3",
+      "0.03"
+    ],
+    "answer": "0.7",
+    "explanation": "1 - 0.3 = 0.7."
+  },
+  {
+    "id": "p93",
+    "question": "A spinner has 5 equal sections numbered 1-5. What is P(odd)?",
+    "options": [
+      "3/5",
+      "2/5",
+      "1/2",
+      "1/5"
+    ],
+    "answer": "3/5",
+    "explanation": "Odd: 1,3,5 → 3/5."
+  },
+  {
+    "id": "p94",
+    "question": "What is the 5th term of the sequence 2, 6, 18, 54, ...?",
+    "options": [
+      "162",
+      "108",
+      "486",
+      "72"
+    ],
+    "answer": "162",
+    "explanation": "Multiply by 3: 54 × 3 = 162."
+  },
+  {
+    "id": "p95",
+    "question": "Evaluate: 8 - 3 × 2 + 4",
+    "options": [
+      "6",
+      "14",
+      "10",
+      "18"
+    ],
+    "answer": "6",
+    "explanation": "8 - 6 + 4 = 6 (multiplication first)."
+  },
+  {
+    "id": "p96",
+    "question": "What is the value of x if 4x = 28?",
+    "options": [
+      "7",
+      "6",
+      "24",
+      "112"
+    ],
+    "answer": "7",
+    "explanation": "x = 28/4 = 7."
+  },
+  {
+    "id": "p97",
+    "question": "Write 3.5 × 10³ in ordinary form.",
+    "options": [
+      "3500",
+      "35",
+      "350",
+      "35000"
+    ],
+    "answer": "3500",
+    "explanation": "3.5 × 1000 = 3500."
+  },
+  {
+    "id": "p98",
+    "question": "A pie chart shows 40% for one category. What is its angle?",
+    "options": [
+      "144°",
+      "40°",
+      "90°",
+      "120°"
+    ],
+    "answer": "144°",
+    "explanation": "40% of 360° = 144°."
+  },
+  {
+    "id": "p99",
+    "question": "If the mean of 3, 7, x and 10 is 7, what is x?",
+    "options": [
+      "8",
+      "6",
+      "9",
+      "7"
+    ],
+    "answer": "8",
+    "explanation": "(3+7+x+10)/4 = 7 → 20 + x = 28 → x = 8."
+  },
+  {
+    "id": "p100",
+    "question": "A shop adds 12.5% VAT to a $200 item. What is the final price?",
+    "options": [
+      "$225",
+      "$212.50",
+      "$250",
+      "$220"
+    ],
+    "answer": "$225",
+    "explanation": "VAT = $25; total = $225."
   }
 ]

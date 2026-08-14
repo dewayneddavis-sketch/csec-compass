@@ -135,22 +135,48 @@ export default function ExtraPractice({ subjectId }) {
           </p>
           <div className="ep-review">
             <h4>Question Summary</h4>
-            {exercises.map((ex, i) => {
-              const isRight = answers[i] === ex.answer;
-              return (
-                <div key={ex.id || i} className={`ep-review-item ${isRight ? "correct" : "incorrect"}`}>
-                  <p className="ep-review-q">
-                    <span className="ep-review-icon">{isRight ? "✅" : "❌"}</span>
-                    {i + 1}. {ex.question}
-                  </p>
-                  <p className="ep-review-answer">
-                    Your answer: <strong>{answers[i] || "—"}</strong>
-                    {!isRight && <> — Correct: <strong>{ex.answer}</strong></>}
-                  </p>
-                  {ex.explanation && <p className="ep-review-explain">{ex.explanation}</p>}
-                </div>
-              );
-            })}
+            <div className="ep-review-grid">
+              {exercises.map((_, i) => (
+                <button
+                  key={i}
+                  className={`ep-jump-btn ${answers[i] === exercises[i].answer ? "correct" : "incorrect"}`}
+                  onClick={() => {
+                    // Jump back to re-attempt this question — clear its
+                    // previous answer so it can be answered again.
+                    setCurrent(i);
+                    setSelected(null);
+                    setShowResult(false);
+                    setAnswers((prev) => {
+                      const next = { ...prev };
+                      delete next[i];
+                      return next;
+                    });
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                  title={`Question ${i + 1}`}
+                >
+                  {i + 1}
+                </button>
+              ))}
+            </div>
+            <div className="ep-review-list">
+              {exercises.map((ex, i) => {
+                const isRight = answers[i] === ex.answer;
+                return (
+                  <div key={ex.id || i} className={`ep-review-item ${isRight ? "correct" : "incorrect"}`}>
+                    <p className="ep-review-q">
+                      <span className="ep-review-icon">{isRight ? "✅" : "❌"}</span>
+                      {i + 1}. {ex.question}
+                    </p>
+                    <p className="ep-review-answer">
+                      Your answer: <strong>{answers[i] || "—"}</strong>
+                      {!isRight && <> — Correct: <strong>{ex.answer}</strong></>}
+                    </p>
+                    {ex.explanation && <p className="ep-review-explain">{ex.explanation}</p>}
+                  </div>
+                );
+              })}
+            </div>
           </div>
           <button className="ep-btn ep-btn-secondary" onClick={handleRetry}>Retry Practice</button>
         </div>
@@ -217,14 +243,8 @@ export default function ExtraPractice({ subjectId }) {
           )}
         </div>
 
-        <div className="ep-dots">
-          {exercises.map((_, i) => (
-            <span
-              key={i}
-              className={`ep-dot ${i === current ? "active" : answers[i] !== undefined ? "answered" : ""}`}
-              onClick={() => { if (answers[i] === undefined) setCurrent(i); setSelected(answers[i] !== undefined ? answers[i] : null); }}
-            />
-          ))}
+        <div className="ep-progress-bar">
+          <div className="ep-progress-fill" style={{ width: `${((current + (isAnswered ? 1 : 0)) / total) * 100}%` }} />
         </div>
       </div>
       <div className="ep-footer-link">
