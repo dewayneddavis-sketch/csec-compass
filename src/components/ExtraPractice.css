@@ -53,10 +53,16 @@
 .ep-btn-secondary{background:#7c3aed;color:#fff;margin-top:1rem}
 .ep-btn-secondary:hover{background:#6d28d9}
 
-.ep-dots{display:flex;justify-content:center;gap:.5rem;margin-top:1rem}
-.ep-dot{width:10px;height:10px;border-radius:50%;background:#e5e7eb;cursor:pointer;transition:all .2s}
-.ep-dot.active{background:#2563eb;transform:scale(1.3)}
-.ep-dot.answered{background:#a7f3d0}
+.ep-progress-bar{height:8px;background:#e5e7eb;border-radius:999px;overflow:hidden;margin-top:1rem}
+.ep-progress-fill{height:100%;background:linear-gradient(90deg,#2563eb,#22c55e);border-radius:999px;transition:width .3s ease}
+
+.ep-review-grid{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1rem;justify-content:center}
+.ep-jump-btn{width:34px;height:34px;border-radius:8px;border:2px solid #e5e7eb;background:#fff;font-size:.8rem;font-weight:600;color:#374151;cursor:pointer;transition:all .15s}
+.ep-jump-btn:hover{border-color:#93c5fd;background:#eff6ff}
+.ep-jump-btn.correct{border-color:#86efac;background:#f0fdf4;color:#16a34a}
+.ep-jump-btn.incorrect{border-color:#fecaca;background:#fef2f2;color:#dc2626}
+
+.ep-review-list{max-height:420px;overflow-y:auto;padding-right:.25rem}
 
 .ep-review{margin:1.5rem 0;text-align:left}
 .ep-review h4{font-size:1rem;margin-bottom:.75rem;color:#374151}

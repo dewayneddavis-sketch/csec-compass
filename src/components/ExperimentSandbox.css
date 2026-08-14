@@ -8,6 +8,9 @@
 .exp-tab.active { background: #fff; color: #2563eb; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
 .exp-tab:hover:not(.active) { color: #374151; }
 .exp-body { padding: 1.5rem; min-height: 160px; }
+.exp-context { margin-bottom: 1rem; padding: 0.85rem 1rem; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; }
+.exp-context h4 { font-size: 0.95rem; color: #111827; margin-bottom: 0.25rem; }
+.exp-context p { font-size: 0.88rem; color: #6b7280; line-height: 1.6; margin: 0; }
 .exp-info h4 { font-size: 1rem; color: #111827; margin-bottom: 0.75rem; }
 .exp-info p { color: #6b7280; line-height: 1.7; margin-bottom: 1rem; }
 .exp-tip { background: #fffbeb; border: 1px solid #fef3c7; padding: 0.75rem 1rem; border-radius: 10px; font-size: 0.9rem; color: #92400e; line-height: 1.5; }
