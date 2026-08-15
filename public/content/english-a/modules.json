@@ -1,202 +1,202 @@
 [
-  {
-    "id": "comprehension-analysis",
-    "title": "Comprehension & Analysis",
-    "lessons": [
-      {
-        "id": "literal-meaning",
-        "title": "Literal vs. Inferential Meaning",
-        "objectives": [
-          "Distinguish between what is explicitly stated and what is implied",
-          "Identify main ideas and supporting details"
-        ],
-        "concepts": [
-          "Literal meaning: The surface level meaning (factual).",
-          "Inferential meaning: Reading between the lines (deducing based on evidence)."
-        ],
-        "experiment": {
-          "type": "highlight-tool",
-          "description": "Evidence Hunter: Read a short passage and highlight the specific sentences that support a given inference."
-        },
-        "content": "Reading comprehension on the CSEC English A exam requires you to engage with texts at multiple levels. The literal meaning is what the text says directly — the facts, details, and information explicitly stated on the page. For example, if a passage says 'John walked to the store at 3 PM,' the literal meaning tells you who went where and when.\n\nInferential meaning requires reading between the lines. Using clues from the text plus your own knowledge, you deduce what is implied but not stated outright. If the same passage says 'John trudged through the rain, his shoulders slumped,' you can infer that John is tired or unhappy, even though those words never appear. CSEC questions frequently ask 'What does the writer suggest?' or 'What can you conclude?' — these test inferential skills.\n\nTo excel, practice highlighting key facts (literal) in one color and clues that point to deeper meaning (inferential) in another. Always support your inferences with evidence from the text — never guess without a textual anchor."
-      },
-      {
-        "id": "figurative-language",
-        "title": "Figurative Language",
-        "objectives": [
-          "Identify and explain similes, metaphors, and personification",
-          "Analyze the effect of figurative language on the reader"
-        ],
-        "concepts": [
-          "Simile: Comparison using 'like' or 'as'.",
-          "Metaphor: Direct comparison.",
-          "Personification: Giving human traits to non-human things."
-        ],
-        "experiment": {
-          "type": "matching-game",
-          "description": "Figure of Speech Match: Drag literary devices to their corresponding examples in a series of poem snippets."
-        },
-        "content": "Figurative language uses words beyond their literal meaning to create vivid imagery, emphasis, or emotional effect. Key devices tested on CSEC include: simile (comparison using 'like' or 'as' — 'she ran like the wind'), metaphor (direct comparison — 'time is a thief'), personification (giving human qualities to non-human things — 'the wind whispered'), and hyperbole (deliberate exaggeration — 'I've told you a million times').\n\nOther important devices include onomatopoeia (words that sound like their meaning — 'buzz', 'crash'), alliteration (repetition of initial consonant sounds — 'Peter Piper picked'), and irony (saying the opposite of what you mean, or a situation turning out unexpectedly). Writers use these devices to make their writing more engaging and to reinforce themes or emotions.\n\nOn the CSEC exam, you'll be asked to identify the device used and explain its effect. A strong answer identifies the device, quotes the exact phrase, and explains what it adds — e.g., 'The simile \"like a caged bird\" emphasizes the character's feeling of being trapped and wanting freedom.'"
-      }
-    ]
-  },
-  {
-    "id": "summary-writing",
-    "title": "Summary Writing",
-    "lessons": [
-      {
-        "id": "identifying-main-points",
-        "title": "Identifying Main Points",
-        "objectives": [
-          "Extract key information from a passage",
-          "Discard redundant or decorative information"
-        ],
-        "concepts": [
-          "A summary must be objective and concise.",
-          "Avoid examples and repetitions in a summary."
-        ],
-        "experiment": {
-          "type": "text-trimmer",
-          "description": "Word Count Squeeze: Start with a 100-word paragraph and click on words/sentences to 'delete' them, aiming to reach a 30-word summary that still retains the core meaning."
-        },
-        "content": "Every well-written passage has a main idea — the central point the writer wants to communicate. Supporting details provide evidence, examples, or elaboration that reinforce this main idea. On the CSEC comprehension paper, questions like 'What is the main idea of paragraph 3?' or 'Summarize the writer's argument' test your ability to distinguish between what's central and what's peripheral.\n\nTo identify the main point: first, read the entire passage for general understanding. Then re-read each paragraph carefully. Ask yourself: 'What is the one thing this paragraph is about?' The main point is often stated in the topic sentence — usually the first or last sentence of a paragraph. Supporting details come in the middle.\n\nWhen writing summaries, include only the main points and omit examples, statistics, or descriptive flourishes. Practice by reading Caribbean newspaper articles or CSEC past paper passages and writing one-sentence summaries of each paragraph. This builds the skill of distilling complex information to its essence."
-      },
-      {
-        "id": "drafting-summary",
-        "title": "Drafting the Summary",
-        "objectives": [
-          "Structure a summary as a continuous piece of writing",
-          "Use transition words for flow",
-          "Adhere to word limits"
-        ],
-        "concepts": [
-          "Continuous prose vs bullet points",
-          "Objectivity",
-          "Paraphrasing"
-        ],
-        "experiment": {
-          "type": "dialogue-builder",
-          "description": "Transition Task: Drag the correct transition words (however, furthermore, consequently) into blanks in a summary to improve its coherence."
-        },
-        "content": "Once you have identified the main points of a passage, the next step is to draft your summary. A summary should be a continuous piece of writing, not a list of bullet points. Use transition words to link your points logically, ensuring the summary flows smoothly from one idea to the next.\n\nYour summary must be objective, meaning you should not include your own opinions or outside information. Stick strictly to what is in the original text. Be mindful of the word limit — CSEC summary questions always specify a maximum number of words (usually around 120). Every word counts, so avoid phrases like 'The author says that...' or 'In this passage...' and get straight to the point.\n\nAfter drafting, review your work to see if you can be more concise. Can you replace a long phrase with a single word? For example, 'at this point in time' can simply be 'now.' Ensure that you have used your own words where possible while retaining the original meaning. This demonstrates your comprehension skills to the examiner."
-      }
-    ]
-  },
-  {
-    "id": "grammar-mechanics",
-    "title": "Grammar & Mechanics",
-    "lessons": [
-      {
-        "id": "subject-verb-agreement",
-        "title": "Subject-Verb Agreement",
-        "objectives": [
-          "Ensure subjects and verbs agree in number",
-          "Handle collective nouns and indefinite pronouns"
-        ],
-        "concepts": [
-          "Singular subjects take singular verbs.",
-          "Plural subjects take plural verbs."
-        ],
-        "experiment": {
-          "type": "sentence-fixer",
-          "description": "Agreement Lab: A series of sentences appear with blank verbs. Select the correct verb form from a dropdown to make the sentence grammatically correct."
-        },
-        "content": "Subject-verb agreement is the grammatical rule that the verb must match its subject in number: singular subjects take singular verbs, plural subjects take plural verbs. For example, 'The boy runs' (singular) vs. 'The boys run' (plural). In the simple present tense, singular verbs typically end in -s (he walks, she speaks) while plural verbs do not (they walk, they speak).\n\nTricky cases tested on CSEC include: collective nouns ('The team is ready' — singular if acting as one unit), indefinite pronouns ('Everyone is welcome' — 'everyone' is singular), and compound subjects joined by 'and' ('John and Mary are here' — plural) vs. 'or'/'nor' ('Neither John nor Mary is here' — matches the nearer subject). Interrupting phrases like 'along with' or 'as well as' do NOT change the subject's number: 'The teacher, along with her students, is attending.'\n\nThese errors commonly appear in the multiple-choice editing section. Read each sentence aloud — your ear often catches agreement errors before your eye does. In your own writing, underline the subject and circle the verb to check they match."
-      },
-      {
-        "id": "punctuation-mastery",
-        "title": "Punctuation Mastery",
-        "objectives": [
-          "Use commas, colons, and semi-colons correctly"
-        ],
-        "concepts": [
-          "Semi-colon: connects two independent clauses.",
-          "Colon: introduces a list or explanation."
-        ],
-        "experiment": {
-          "type": "punctuation-drag-drop",
-          "description": "Punctuation Placement: Drag punctuation marks ( , ; : . ) into an unpunctuated paragraph to restore its meaning."
-        },
-        "content": "Punctuation marks are the traffic signals of writing — they tell the reader when to pause, stop, or expect more. The comma (,) separates items in a list, sets off introductory phrases ('However, ...'), and separates clauses. The semicolon (;) joins two closely related independent clauses without a conjunction: 'She studied hard; she passed the exam.'\n\nThe apostrophe (') shows possession ('John's book') or contraction ('don't' for 'do not'). Never use apostrophes for simple plurals — 'apple's' means something belonging to an apple, not multiple apples. Quotation marks ('...') enclose direct speech or exact words from a text. The colon (:) introduces a list, explanation, or quotation.\n\nCSEC editing questions often test these distinctions. Common errors to watch for: comma splices (joining two sentences with just a comma — use a period, semicolon, or add a conjunction), missing commas in complex sentences, and apostrophe misuse with 'its' (possessive, no apostrophe) vs. 'it's' (contraction of 'it is')."
-      }
-    ]
-  },
-  {
-    "id": "vocabulary",
-    "title": "Vocabulary",
-    "lessons": [
-      {
-        "id": "synonyms-antonyms",
-        "title": "Synonyms and Antonyms",
-        "objectives": [
-          "Identify words with similar or opposite meanings",
-          "Use context clues to determine word meaning"
-        ],
-        "concepts": [
-          "Synonyms: Words with similar meanings (e.g., happy/joyful).",
-          "Antonyms: Words with opposite meanings (e.g., hot/cold)."
-        ],
-        "experiment": {
-          "type": "word-swap",
-          "description": "Context Clue Challenge: Replace a highlighted word in a sentence with its best synonym from a list, ensuring the sentence's meaning remains intact."
-        },
-        "content": "Synonyms are words with similar meanings, like 'happy' and 'joyful' or 'big' and 'large.' Antonyms are words with opposite meanings, like 'hot' and 'cold' or 'love' and 'hate.' A strong vocabulary of synonyms and antonyms is essential for the CSEC English A exam, particularly in the comprehension and summary sections where you must paraphrase ideas in your own words.\n\nUsing synonyms effectively shows the examiner that you understand the text well enough to restate it without copying. Instead of repeating the author's words, find equivalent expressions. For example, 'The man was terrified' could become 'The gentleman was extremely frightened.' Context matters — a synonym that works in one sentence may not fit another, so always consider nuance and tone.\n\nBuild your vocabulary by reading widely: Caribbean literature, newspapers, and CSEC past paper passages. Keep a personal word bank — when you encounter an unfamiliar word, look it up, note its synonyms and antonyms, and practice using it in sentences. For the multiple-choice vocabulary questions, eliminate obviously wrong answers first, then test each remaining option in the original sentence."
-      },
-      {
-        "id": "diction-context",
-        "title": "Context Clues & Diction",
-        "objectives": [
-          "Analyze the effect of a writer's choice of words (diction)",
-          "Use context clues to deduce meanings of unfamiliar words"
-        ],
-        "concepts": [
-          "Diction: Word choice",
-          "Contextual clues",
-          "Denotation vs Connotation"
-        ],
-        "experiment": {
-          "type": "vocab-flashcards",
-          "description": "Diction Match: Match words with their connotations (positive, negative, or neutral) to see how word choice changes the feel of a sentence."
-        },
-        "content": "Diction refers to a writer's choice of words. In the CSEC English A exam, you'll often be asked to explain why a writer chose a specific word or phrase. Effective diction creates a particular tone or mood and can reveal the writer's attitude toward the subject. For instance, calling a house a 'shack' suggests something different than calling it a 'cottage' or a 'home.'\n\nWhen you encounter an unfamiliar word in a reading passage, use context clues to deduce its meaning. Look at the surrounding sentences for synonyms, antonyms, or examples that provide hints. Consider the overall topic and the 'flavor' of the passage — is it formal, informal, scientific, or emotional? This will help you narrow down the possibilities.\n\nCSEC also tests your ability to choose the most appropriate word for a given situation. This involves understanding nuances in meaning. For example, while 'thin' and 'scrawny' both describe someone with little body fat, 'scrawny' often has a negative connotation, while 'thin' is more neutral. Practice identifying the 'best' word in multiple-choice questions by considering the intended impact on the reader."
-      }
-    ]
-  },
-  {
-    "id": "essay-writing",
-    "title": "Essay Writing",
-    "lessons": [
-      {
-        "id": "plot-structure",
-        "title": "Narrative Plot Structure",
-        "objectives": [
-          "Understand the 5 stages of plot: Exposition, Rising Action, Climax, Falling Action, Resolution"
-        ],
-        "concepts": [
-          "Every story needs a conflict and a resolution."
-        ],
-        "experiment": {
-          "type": "plot-arranger",
-          "description": "Story Arc Builder: Drag shuffled plot events onto a 'Story Mountain' diagram to arrange them in the correct narrative sequence."
-        },
-        "content": "A narrative plot is the sequence of events in a story, and understanding its structure is key to both comprehension and short story writing on CSEC. Most narratives follow a classic structure: Exposition (introduction of characters, setting, and situation), Rising Action (conflict develops and tension builds), Climax (the turning point — highest tension or decisive moment), Falling Action (consequences of the climax unfold), and Resolution/Denouement (the conflict is resolved and the story concludes).\n\nWhen analyzing a short story extract, identify where in the plot structure the extract falls. Ask: What has the writer revealed about the characters? What conflict is developing? How does the tension build? In your own narrative writing, consciously structure your story around this arc — stories without clear conflict and climax feel flat and aimless.\n\nCSEC questions often ask about character development, conflict types (person vs. person, person vs. self, person vs. society, person vs. nature), and the use of techniques like foreshadowing (hints of what's to come) and flashback (going back to earlier events)."
-      },
-      {
-        "id": "argument-structure",
-        "title": "Structuring an Argument",
-        "objectives": [
-          "Develop a clear thesis statement",
-          "Organize points logically using transitions"
-        ],
-        "concepts": [
-          "Introduction, Body Paragraphs (PEEL: Point, Evidence, Explanation, Link), Conclusion."
-        ],
-        "experiment": {
-          "type": "outliner",
-          "description": "Argument Organizer: Drag and drop 'Intro', 'Body Paragraphs', and 'Conclusion' blocks into the correct order to form a coherent essay structure."
-        },
-        "content": "Persuasive and argumentative writing requires a clear, logical structure. Start with a strong introduction that states your position (thesis) and previews your main arguments. Each body paragraph should present one main point, supported by evidence, examples, or reasoning. Use transition words (firstly, furthermore, however, consequently, in conclusion) to guide the reader through your argument.\n\nA key CSEC distinction: persuasive writing aims to convince the reader to adopt your viewpoint or take action, while argumentative writing presents both sides of an issue before arriving at a reasoned conclusion. In either case, address counterarguments — acknowledging the opposing view and explaining why your position is stronger makes your writing more convincing and mature.\n\nEnd with a conclusion that restates your position (in different words), summarizes your key points, and leaves the reader with a final thought or call to action. Avoid introducing new arguments in the conclusion. Practice by taking a stand on Caribbean-relevant topics like environmental protection, technology in education, or youth involvement in politics."
-      }
-    ]
-  }
+    {
+        "id": "comprehension-analysis",
+        "title": "Comprehension & Analysis",
+        "lessons": [
+            {
+                "id": "literal-meaning",
+                "title": "Literal vs. Inferential Meaning",
+                "objectives": [
+                    "Distinguish between what is explicitly stated and what is implied",
+                    "Identify main ideas and supporting details"
+                ],
+                "concepts": [
+                    "Literal meaning: The surface level meaning (factual).",
+                    "Inferential meaning: Reading between the lines (deducing based on evidence)."
+                ],
+                "experiment": {
+                    "type": "highlight-tool",
+                    "description": "Evidence Hunter: Read a short passage and highlight the specific sentences that support a given inference."
+                },
+                "content": "Reading comprehension on the CSEC English A exam requires you to engage with texts at multiple levels. The literal meaning is what the text says directly \u2014 the facts, details, and information explicitly stated on the page. For example, if a passage says 'John walked to the store at 3 PM,' the literal meaning tells you who went where and when.\n\nInferential meaning requires reading between the lines. Using clues from the text plus your own knowledge, you deduce what is implied but not stated outright. If the same passage says 'John trudged through the rain, his shoulders slumped,' you can infer that John is tired or unhappy, even though those words never appear. CSEC questions frequently ask 'What does the writer suggest?' or 'What can you conclude?' \u2014 these test inferential skills.\n\nTo excel, practice highlighting key facts (literal) in one color and clues that point to deeper meaning (inferential) in another. Always support your inferences with evidence from the text \u2014 never guess without a textual anchor."
+            },
+            {
+                "id": "figurative-language",
+                "title": "Figurative Language",
+                "objectives": [
+                    "Identify and explain similes, metaphors, and personification",
+                    "Analyze the effect of figurative language on the reader"
+                ],
+                "concepts": [
+                    "Simile: Comparison using 'like' or 'as'.",
+                    "Metaphor: Direct comparison.",
+                    "Personification: Giving human traits to non-human things."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Figure of Speech Match: Drag literary devices to their corresponding examples in a series of poem snippets."
+                },
+                "content": "Figurative language uses words beyond their literal meaning to create vivid imagery, emphasis, or emotional effect. Key devices tested on CSEC include: simile (comparison using 'like' or 'as' \u2014 'she ran like the wind'), metaphor (direct comparison \u2014 'time is a thief'), personification (giving human qualities to non-human things \u2014 'the wind whispered'), and hyperbole (deliberate exaggeration \u2014 'I've told you a million times').\n\nOther important devices include onomatopoeia (words that sound like their meaning \u2014 'buzz', 'crash'), alliteration (repetition of initial consonant sounds \u2014 'Peter Piper picked'), and irony (saying the opposite of what you mean, or a situation turning out unexpectedly). Writers use these devices to make their writing more engaging and to reinforce themes or emotions.\n\nOn the CSEC exam, you'll be asked to identify the device used and explain its effect. A strong answer identifies the device, quotes the exact phrase, and explains what it adds \u2014 e.g., 'The simile \"like a caged bird\" emphasizes the character's feeling of being trapped and wanting freedom.'"
+            }
+        ]
+    },
+    {
+        "id": "summary-writing",
+        "title": "Summary Writing",
+        "lessons": [
+            {
+                "id": "identifying-main-points",
+                "title": "Identifying Main Points",
+                "objectives": [
+                    "Extract key information from a passage",
+                    "Discard redundant or decorative information"
+                ],
+                "concepts": [
+                    "A summary must be objective and concise.",
+                    "Avoid examples and repetitions in a summary."
+                ],
+                "experiment": {
+                    "type": "text-trimmer",
+                    "description": "Word Count Squeeze: Start with a 100-word paragraph and click on words/sentences to 'delete' them, aiming to reach a 30-word summary that still retains the core meaning."
+                },
+                "content": "Every well-written passage has a main idea \u2014 the central point the writer wants to communicate. Supporting details provide evidence, examples, or elaboration that reinforce this main idea. On the CSEC comprehension paper, questions like 'What is the main idea of paragraph 3?' or 'Summarize the writer's argument' test your ability to distinguish between what's central and what's peripheral.\n\nTo identify the main point: first, read the entire passage for general understanding. Then re-read each paragraph carefully. Ask yourself: 'What is the one thing this paragraph is about?' The main point is often stated in the topic sentence \u2014 usually the first or last sentence of a paragraph. Supporting details come in the middle.\n\nWhen writing summaries, include only the main points and omit examples, statistics, or descriptive flourishes. Practice by reading Caribbean newspaper articles or CSEC past paper passages and writing one-sentence summaries of each paragraph. This builds the skill of distilling complex information to its essence."
+            },
+            {
+                "id": "drafting-summary",
+                "title": "Drafting the Summary",
+                "objectives": [
+                    "Structure a summary as a continuous piece of writing",
+                    "Use transition words for flow",
+                    "Adhere to word limits"
+                ],
+                "concepts": [
+                    "Continuous prose vs bullet points",
+                    "Objectivity",
+                    "Paraphrasing"
+                ],
+                "experiment": {
+                    "type": "dialogue-builder",
+                    "description": "Transition Task: Drag the correct transition words (however, furthermore, consequently) into blanks in a summary to improve its coherence."
+                },
+                "content": "Once you have identified the main points of a passage, the next step is to draft your summary. A summary should be a continuous piece of writing, not a list of bullet points. Use transition words to link your points logically, ensuring the summary flows smoothly from one idea to the next.\n\nYour summary must be objective, meaning you should not include your own opinions or outside information. Stick strictly to what is in the original text. Be mindful of the word limit \u2014 CSEC summary questions always specify a maximum number of words (usually around 120). Every word counts, so avoid phrases like 'The author says that...' or 'In this passage...' and get straight to the point.\n\nAfter drafting, review your work to see if you can be more concise. Can you replace a long phrase with a single word? For example, 'at this point in time' can simply be 'now.' Ensure that you have used your own words where possible while retaining the original meaning. This demonstrates your comprehension skills to the examiner."
+            }
+        ]
+    },
+    {
+        "id": "grammar-mechanics",
+        "title": "Grammar & Mechanics",
+        "lessons": [
+            {
+                "id": "subject-verb-agreement",
+                "title": "Subject-Verb Agreement",
+                "objectives": [
+                    "Ensure subjects and verbs agree in number",
+                    "Handle collective nouns and indefinite pronouns"
+                ],
+                "concepts": [
+                    "Singular subjects take singular verbs.",
+                    "Plural subjects take plural verbs."
+                ],
+                "experiment": {
+                    "type": "sentence-fixer",
+                    "description": "Agreement Lab: A series of sentences appear with blank verbs. Select the correct verb form from a dropdown to make the sentence grammatically correct."
+                },
+                "content": "Subject-verb agreement is the grammatical rule that the verb must match its subject in number: singular subjects take singular verbs, plural subjects take plural verbs. For example, 'The boy runs' (singular) vs. 'The boys run' (plural). In the simple present tense, singular verbs typically end in -s (he walks, she speaks) while plural verbs do not (they walk, they speak).\n\nTricky cases tested on CSEC include: collective nouns ('The team is ready' \u2014 singular if acting as one unit), indefinite pronouns ('Everyone is welcome' \u2014 'everyone' is singular), and compound subjects joined by 'and' ('John and Mary are here' \u2014 plural) vs. 'or'/'nor' ('Neither John nor Mary is here' \u2014 matches the nearer subject). Interrupting phrases like 'along with' or 'as well as' do NOT change the subject's number: 'The teacher, along with her students, is attending.'\n\nThese errors commonly appear in the multiple-choice editing section. Read each sentence aloud \u2014 your ear often catches agreement errors before your eye does. In your own writing, underline the subject and circle the verb to check they match."
+            },
+            {
+                "id": "punctuation-mastery",
+                "title": "Punctuation Mastery",
+                "objectives": [
+                    "Use commas, colons, and semi-colons correctly"
+                ],
+                "concepts": [
+                    "Semi-colon: connects two independent clauses.",
+                    "Colon: introduces a list or explanation."
+                ],
+                "experiment": {
+                    "type": "punctuation-drag-drop",
+                    "description": "Punctuation Placement: Drag punctuation marks ( , ; : . ) into an unpunctuated paragraph to restore its meaning."
+                },
+                "content": "Punctuation marks are the traffic signals of writing \u2014 they tell the reader when to pause, stop, or expect more. The comma (,) separates items in a list, sets off introductory phrases ('However, ...'), and separates clauses. The semicolon (;) joins two closely related independent clauses without a conjunction: 'She studied hard; she passed the exam.'\n\nThe apostrophe (') shows possession ('John's book') or contraction ('don't' for 'do not'). Never use apostrophes for simple plurals \u2014 'apple's' means something belonging to an apple, not multiple apples. Quotation marks ('...') enclose direct speech or exact words from a text. The colon (:) introduces a list, explanation, or quotation.\n\nCSEC editing questions often test these distinctions. Common errors to watch for: comma splices (joining two sentences with just a comma \u2014 use a period, semicolon, or add a conjunction), missing commas in complex sentences, and apostrophe misuse with 'its' (possessive, no apostrophe) vs. 'it's' (contraction of 'it is')."
+            }
+        ]
+    },
+    {
+        "id": "vocabulary",
+        "title": "Vocabulary",
+        "lessons": [
+            {
+                "id": "synonyms-antonyms",
+                "title": "Synonyms and Antonyms",
+                "objectives": [
+                    "Identify words with similar or opposite meanings",
+                    "Use context clues to determine word meaning"
+                ],
+                "concepts": [
+                    "Synonyms: Words with similar meanings (e.g., happy/joyful).",
+                    "Antonyms: Words with opposite meanings (e.g., hot/cold)."
+                ],
+                "experiment": {
+                    "type": "word-swap",
+                    "description": "Context Clue Challenge: Replace a highlighted word in a sentence with its best synonym from a list, ensuring the sentence's meaning remains intact."
+                },
+                "content": "Synonyms are words with similar meanings, like 'happy' and 'joyful' or 'big' and 'large.' Antonyms are words with opposite meanings, like 'hot' and 'cold' or 'love' and 'hate.' A strong vocabulary of synonyms and antonyms is essential for the CSEC English A exam, particularly in the comprehension and summary sections where you must paraphrase ideas in your own words.\n\nUsing synonyms effectively shows the examiner that you understand the text well enough to restate it without copying. Instead of repeating the author's words, find equivalent expressions. For example, 'The man was terrified' could become 'The gentleman was extremely frightened.' Context matters \u2014 a synonym that works in one sentence may not fit another, so always consider nuance and tone.\n\nBuild your vocabulary by reading widely: Caribbean literature, newspapers, and CSEC past paper passages. Keep a personal word bank \u2014 when you encounter an unfamiliar word, look it up, note its synonyms and antonyms, and practice using it in sentences. For the multiple-choice vocabulary questions, eliminate obviously wrong answers first, then test each remaining option in the original sentence."
+            },
+            {
+                "id": "diction-context",
+                "title": "Context Clues & Diction",
+                "objectives": [
+                    "Analyze the effect of a writer's choice of words (diction)",
+                    "Use context clues to deduce meanings of unfamiliar words"
+                ],
+                "concepts": [
+                    "Diction: Word choice",
+                    "Contextual clues",
+                    "Denotation vs Connotation"
+                ],
+                "experiment": {
+                    "type": "vocab-flashcards",
+                    "description": "Diction Match: Match words with their connotations (positive, negative, or neutral) to see how word choice changes the feel of a sentence."
+                },
+                "content": "Diction refers to a writer's choice of words. In the CSEC English A exam, you'll often be asked to explain why a writer chose a specific word or phrase. Effective diction creates a particular tone or mood and can reveal the writer's attitude toward the subject. For instance, calling a house a 'shack' suggests something different than calling it a 'cottage' or a 'home.'\n\nWhen you encounter an unfamiliar word in a reading passage, use context clues to deduce its meaning. Look at the surrounding sentences for synonyms, antonyms, or examples that provide hints. Consider the overall topic and the 'flavor' of the passage \u2014 is it formal, informal, scientific, or emotional? This will help you narrow down the possibilities.\n\nCSEC also tests your ability to choose the most appropriate word for a given situation. This involves understanding nuances in meaning. For example, while 'thin' and 'scrawny' both describe someone with little body fat, 'scrawny' often has a negative connotation, while 'thin' is more neutral. Practice identifying the 'best' word in multiple-choice questions by considering the intended impact on the reader."
+            }
+        ]
+    },
+    {
+        "id": "essay-writing",
+        "title": "Essay Writing",
+        "lessons": [
+            {
+                "id": "plot-structure",
+                "title": "Narrative Plot Structure",
+                "objectives": [
+                    "Understand the 5 stages of plot: Exposition, Rising Action, Climax, Falling Action, Resolution"
+                ],
+                "concepts": [
+                    "Every story needs a conflict and a resolution."
+                ],
+                "experiment": {
+                    "type": "plot-arranger",
+                    "description": "Story Arc Builder: Drag shuffled plot events onto a 'Story Mountain' diagram to arrange them in the correct narrative sequence."
+                },
+                "content": "A narrative plot is the sequence of events in a story, and understanding its structure is key to both comprehension and short story writing on CSEC. Most narratives follow a classic structure: Exposition (introduction of characters, setting, and situation), Rising Action (conflict develops and tension builds), Climax (the turning point \u2014 highest tension or decisive moment), Falling Action (consequences of the climax unfold), and Resolution/Denouement (the conflict is resolved and the story concludes).\n\nWhen analyzing a short story extract, identify where in the plot structure the extract falls. Ask: What has the writer revealed about the characters? What conflict is developing? How does the tension build? In your own narrative writing, consciously structure your story around this arc \u2014 stories without clear conflict and climax feel flat and aimless.\n\nCSEC questions often ask about character development, conflict types (person vs. person, person vs. self, person vs. society, person vs. nature), and the use of techniques like foreshadowing (hints of what's to come) and flashback (going back to earlier events)."
+            },
+            {
+                "id": "argument-structure",
+                "title": "Structuring an Argument",
+                "objectives": [
+                    "Develop a clear thesis statement",
+                    "Organize points logically using transitions"
+                ],
+                "concepts": [
+                    "Introduction, Body Paragraphs (PEEL: Point, Evidence, Explanation, Link), Conclusion."
+                ],
+                "experiment": {
+                    "type": "outliner",
+                    "description": "Argument Organizer: Drag and drop 'Intro', 'Body Paragraphs', and 'Conclusion' blocks into the correct order to form a coherent essay structure."
+                },
+                "content": "Persuasive and argumentative writing requires a clear, logical structure. Start with a strong introduction that states your position (thesis) and previews your main arguments. Each body paragraph should present one main point, supported by evidence, examples, or reasoning. Use transition words (firstly, furthermore, however, consequently, in conclusion) to guide the reader through your argument.\n\nA key CSEC distinction: persuasive writing aims to convince the reader to adopt your viewpoint or take action, while argumentative writing presents both sides of an issue before arriving at a reasoned conclusion. In either case, address counterarguments \u2014 acknowledging the opposing view and explaining why your position is stronger makes your writing more convincing and mature.\n\nEnd with a conclusion that restates your position (in different words), summarizes your key points, and leaves the reader with a final thought or call to action. Avoid introducing new arguments in the conclusion. Practice by taking a stand on Caribbean-relevant topics like environmental protection, technology in education, or youth involvement in politics."
+            }
+        ]
+    }
 ]

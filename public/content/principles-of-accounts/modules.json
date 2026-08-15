@@ -1,237 +1,237 @@
 [
-  {
-    "id": "accounting-introduction",
-    "title": "Introduction to Accounting",
-    "lessons": [
-      {
-        "id": "accounting-concepts",
-        "title": "Accounting Concepts and Principles",
-        "content": "Accounting is often called the 'language of business.' It is the systematic process of recording, summarizing, analyzing, and communicating financial information about a business or organization. The primary goal is to provide useful information to decision-makers, such as owners, investors, and creditors.\n\nTo ensure consistency and reliability, accounting follows several key concepts and principles. The 'Business Entity' concept states that the business is a separate legal and financial entity from its owner. The 'Going Concern' concept assumes that the business will continue to operate for the foreseeable future. The 'Accruals' concept requires that transactions be recorded when they occur, not necessarily when cash changes hands.\n\nOn the CSEC Principles of Accounts exam, you must be able to define accounting and explain how these core principles guide the recording of transactions. Understanding these concepts is essential for creating accurate financial statements that truly reflect the health of a business.",
-        "objectives": [
-          "Define accounting and its purpose",
-          "Explain core concepts like Business Entity and Accruals"
-        ],
-        "concepts": [
-          "Accounting is the process of recording, summarizing, and communicating financial information.",
-          "Business Entity: The business is separate from its owner."
-        ],
-        "experiment": {
-          "type": "matching-game",
-          "description": "Concept Match: Match accounting principles (e.g., Going Concern, Prudence) with their correct definitions."
-        }
-      },
-      {
-        "id": "accounting-equation",
-        "title": "The Accounting Equation",
-        "content": "The accounting equation is the foundation of the entire double-entry bookkeeping system. It states that: Assets = Liabilities + Capital. An 'Asset' is a resource owned by the business that has future economic value (like cash, machinery, or inventory). A 'Liability' is a debt or obligation owed to outside parties (like a bank loan or money owed to a supplier).\n\n'Capital' (or Equity) represents the owner's interest or investment in the business. It is the residual value of the assets after all liabilities have been paid. The equation must always be in balance — every transaction that occurs in a business will affect at least two parts of the equation while keeping the total on both sides equal.\n\nFor example, if a business buys a vehicle for $10,000 in cash, one asset (Vehicle) increases while another (Cash) decreases, leaving the total assets unchanged. If the business takes out a $5,000 loan, both assets (Cash) and liabilities (Loan) increase by $5,000. Mastering this equation is the first step in understanding how financial transactions are processed.",
-        "objectives": [
-          "Apply the accounting equation: Assets = Liabilities + Capital"
-        ],
-        "concepts": [
-          "Assets are resources owned by the business.",
-          "Liabilities are debts owed to outsiders.",
-          "Capital (Equity) is the owner's investment."
-        ],
-        "experiment": {
-          "type": "balance-scale",
-          "description": "Equation Balance: Drag items like 'Cash', 'Loan', and 'Furniture' to the correct side of a balance scale to keep the accounting equation balanced."
-        }
-      }
-    ]
-  },
-  {
-    "id": "ledger-double-entry",
-    "title": "The Ledger and Double Entry",
-    "lessons": [
-      {
-        "id": "double-entry-system",
-        "title": "Double Entry Bookkeeping",
-        "content": "Double-entry bookkeeping is a system where every transaction is recorded in at least two accounts. This is based on the dual aspect of the accounting equation. One account is 'Debited' (Dr) on the left side, and another is 'Credited' (Cr) on the right side. For every transaction, the total amount debited must equal the total amount credited.\n\nTo know which account to debit or credit, we use specific rules. For Assets and Expenses: an increase is a Debit, and a decrease is a Credit. For Liabilities, Capital, and Income: an increase is a Credit, and a decrease is a Debit. A helpful mnemonic is DEAD CLIC: Debit Expenses, Assets, and Drawings; Credit Liabilities, Income, and Capital.\n\nIn the CSEC exam, you will practice recording transactions in 'T-accounts.' For example, if you sell goods for cash, you would debit the Cash account (increasing an asset) and credit the Sales account (increasing income). This system ensures that the accounting records remain accurate and in balance at all times.",
-        "objectives": [
-          "Record transactions in T-accounts using debit and credit rules"
-        ],
-        "concepts": [
-          "Every transaction affects at least two accounts.",
-          "Debit (Dr) on the left; Credit (Cr) on the right.",
-          "Increase in Assets -> Debit; Increase in Liabilities -> Credit."
-        ],
-        "experiment": {
-          "type": "interactive-ledger",
-          "description": "T-Account Tracker: Enter transactions (e.g., 'Paid rent by cash $500') and click the correct side (Dr/Cr) of the relevant accounts to see the system balance."
-        }
-      },
-      {
-        "id": "balancing-ledger",
-        "title": "Balancing the Ledger",
-        "content": "At the end of an accounting period, each ledger account must be balanced to find the final amount remaining. This involves summing both the debit and credit sides. The difference between the two sides is the 'balance.' If the debit side is larger, the account has a 'debit balance'; if the credit side is larger, it has a 'credit balance'.\n\nTo balance an account, you write 'Balance c/d' (carried down) on the smaller side to make the totals equal, and then bring that same amount down to the opposite side as 'Balance b/d' (brought down) for the start of the next period. For example, if the Cash account has $1,000 in debits and $600 in credits, you would enter a $400 balance c/d on the credit side and then show a $400 balance b/d on the debit side.\n\nIn CSEC Principles of Accounts, balancing accounts is a vital skill. Assets and Expenses typically have debit balances, while Liabilities, Capital, and Income typically have credit balances. These balances are then used to prepare the Trial Balance, the next step in the accounting cycle.",
-        "objectives": [
-          "Calculate and carry down balances in ledger accounts",
-          "Distinguish between debit and credit balances"
-        ],
-        "concepts": [
-          "Balance c/d vs Balance b/d",
-          "Closing vs Opening balances"
-        ],
-        "experiment": {
-          "type": "interactive-summary",
-          "description": "Balance Master: Practice balancing several T-accounts by finding the totals and entering the correct c/d and b/d figures."
-        }
-      }
-    ]
-  },
-  {
-    "id": "books-original-entry",
-    "title": "Books of Original Entry",
-    "lessons": [
-      {
-        "id": "journals-daybooks",
-        "title": "Journals and Daybooks",
-        "content": "Before transactions are posted to the ledger, they are often recorded in 'Books of Original Entry' or 'Daybooks.' These act as a chronological diary of the business's daily activities. Common daybooks include the Sales Journal (for credit sales), the Purchases Journal (for credit purchases), and the Returns Inwards and Returns Outwards Journals.\n\nThe General Journal is used for transactions that don't fit into the other daybooks, such as the purchase of non-current assets on credit, opening entries for a new business, or correcting errors. Each entry in the General Journal includes the date, the accounts to be debited and credited, the amounts, and a brief explanation called a 'narrative.'\n\nUsing daybooks helps organize transactions and reduces the number of entries made directly to the ledger. In the CSEC exam, you will be expected to record transactions from source documents (like invoices and credit notes) into the correct daybooks and then post the totals to the appropriate ledger accounts.",
-        "objectives": [
-          "Record transactions in the Sales, Purchases, and General Journals"
-        ],
-        "concepts": [
-          "Daybooks are used to record transactions before they are posted to the ledger."
-        ],
-        "experiment": {
-          "type": "data-entry-sim",
-          "description": "Journal Entry: Fill out a digital sales journal based on a set of provided invoices."
-        }
-      },
-      {
-        "id": "cash-book",
-        "title": "The Cash Book",
-        "content": "The Cash Book is a unique book of original entry because it also serves as a ledger account for cash and bank transactions. Small businesses often use a two-column cash book (one for cash, one for bank) or a three-column cash book, which includes an additional column for 'discounts.'\n\nTransactions where cash is deposited into the bank or withdrawn from the bank for business use are called 'Contra Entries.' These are marked with a 'C' in the folio column and affect both the cash and bank columns within the same book. The discounts column on the debit side is for 'discounts allowed' to customers, while the column on the credit side is for 'discounts received' from suppliers.\n\nCSEC students must be able to prepare a cash book from a list of transactions, correctly balancing the cash and bank columns at the end of the month. Remember that the bank column can have a credit balance (representing a bank overdraft), but the cash column can only ever have a debit balance or be zero.",
-        "objectives": [
-          "Prepare a two-column and three-column Cash Book"
-        ],
-        "concepts": [
-          "A Cash Book acts as both a book of original entry and a ledger account.",
-          "Contra entries involve both cash and bank."
-        ],
-        "experiment": {
-          "type": "workbook-tool",
-          "description": "Cash Book Builder: Enter cash and bank transactions into a template and calculate the closing balances."
-        }
-      }
-    ]
-  },
-  {
-    "id": "trial-balance-errors",
-    "title": "Trial Balance and Errors",
-    "lessons": [
-      {
-        "id": "preparing-trial-balance",
-        "title": "Preparing a Trial Balance",
-        "content": "A Trial Balance is a summary of all the ledger account balances at a specific point in time, usually at the end of an accounting period. Its primary purpose is to verify the mathematical accuracy of the double-entry bookkeeping system. All debit balances are listed in one column, and all credit balances are listed in another.\n\nIf the double-entry has been performed correctly, the total of the debit column must equal the total of the credit column. This is because every transaction was recorded with equal debits and credits. However, a balanced trial balance does NOT guarantee that the accounts are perfectly correct, as some types of errors (like recording a transaction in the wrong account) will still leave the trial balance in balance.\n\nOn the CSEC exam, you will be given a list of account balances and asked to prepare a Trial Balance. You must correctly identify which accounts are debits (Assets, Expenses, Drawings) and which are credits (Liabilities, Capital, Income, Provisions). A balanced Trial Balance is the starting point for preparing final financial statements.",
-        "objectives": [
-          "List account balances to verify double entry accuracy"
-        ],
-        "concepts": [
-          "A Trial Balance is a list of all ledger balances at a point in time.",
-          "Total Debits should equal Total Credits."
-        ],
-        "experiment": {
-          "type": "interactive-summary",
-          "description": "Balance Checker: Drag ledger balances into a Trial Balance template and see if they balance. If not, troubleshoot the errors."
-        }
-      },
-      {
-        "id": "accounting-errors",
-        "title": "Types of Accounting Errors",
-        "content": "Even if a Trial Balance balances, there may still be errors in the accounting records. These are called 'Errors that do not affect the Trial Balance'. They include: Error of Omission (transaction forgotten), Error of Commission (wrong person's account), Error of Principle (wrong category, e.g. asset as expense), Error of Original Entry (wrong amount in both), and Compensating Errors.\n\nErrors that do affect the Trial Balance will cause the totals to be unequal. These include: partial omission, recording different amounts for the debit and credit, or entering a balance on the wrong side. When the Trial Balance doesn't balance, a 'Suspense Account' is used as a temporary place to store the difference until the error is found and corrected.\n\nCSEC Principles of Accounts students must be able to identify these errors and use the General Journal to correct them. Correcting errors is a critical part of ensuring that the financial statements provide a true and fair view of the business's performance and position.",
-        "objectives": [
-          "Identify errors that do and do not affect the Trial Balance",
-          "Correct errors using the General Journal and Suspense Account"
-        ],
-        "concepts": [
-          "Error of Omission/Commission/Principle",
-          "Suspense Accounts",
-          "Journal narratives for corrections"
-        ],
-        "experiment": {
-          "type": "matching-game",
-          "description": "Error Detective: Match specific error scenarios with their correct classification (e.g., 'Sold goods for cash but forgot to record it' -> 'Error of Omission')."
-        }
-      }
-    ]
-  },
-  {
-    "id": "financial-statements",
-    "title": "Financial Statements of Sole Traders",
-    "lessons": [
-      {
-        "id": "income-statement",
-        "title": "The Income Statement",
-        "content": "The Income Statement (formerly the Trading and Profit & Loss Account) is prepared to calculate the profit or loss made by a business over a specific period. It is divided into two parts. The 'Trading Account' calculates the Gross Profit, which is the difference between Sales (less returns) and the Cost of Goods Sold (Opening Inventory + Purchases - Closing Inventory).\n\nThe 'Profit & Loss Account' then deducts all other operating expenses (like rent, electricity, and salaries) from the Gross Profit and adds any other income (like commissions received) to arrive at the Net Profit. The Net Profit is the final amount of money the business has earned for the owner after all costs have been considered.\n\nIn the CSEC exam, you will practice preparing Income Statements for sole traders. You must be careful to include only income and expenses that relate to the current period (using accruals and prepayments) and to correctly calculate and present the Cost of Goods Sold. The Income Statement is a vital tool for owners to evaluate their business's success.",
-        "objectives": [
-          "Prepare a Trading and Profit & Loss Account"
-        ],
-        "concepts": [
-          "Calculates Gross Profit and Net Profit.",
-          "Sales - Cost of Goods Sold = Gross Profit."
-        ],
-        "experiment": {
-          "type": "statement-builder",
-          "description": "Profit Calculator: Drag income and expense items into the correct sections of an Income Statement to calculate the final net profit."
-        }
-      },
-      {
-        "id": "statement-financial-position",
-        "title": "Statement of Financial Position (Balance Sheet)",
-        "content": "The Statement of Financial Position (formerly the Balance Sheet) shows the financial position of a business at a specific date. It is a detailed representation of the accounting equation: Assets = Liabilities + Capital. Assets are classified as 'Non-current' (held for long-term use, like land or machinery) or 'Current' (held for a short time, like cash or inventory).\n\nLiabilities are similarly classified as 'Non-current' (debts due after one year) or 'Current' (debts due within one year). The 'Capital' section shows the owner's investment, adjusted for the Net Profit (which increases capital) or Net Loss (which decreases it) and any 'Drawings' (money or goods taken by the owner for personal use).\n\nCSEC students must be able to prepare a Statement of Financial Position in a vertical format, correctly classifying all items. This statement tells us what the business owns and what it owes, providing insight into its liquidity and long-term stability. Remember: the final total of (Total Assets - Total Liabilities) must equal the final Capital balance.",
-        "objectives": [
-          "Classify assets and liabilities and prepare a Balance Sheet"
-        ],
-        "concepts": [
-          "Shows the financial position of a business at a specific date.",
-          "Non-current vs. Current Assets/Liabilities."
-        ],
-        "experiment": {
-          "type": "classifier-sim",
-          "description": "Asset/Liability Sort: Drag various items into buckets (Current Asset, Non-current Liability, etc.) to build a complete Balance Sheet."
-        }
-      }
-    ]
-  },
-  {
-    "id": "adjustments-statements",
-    "title": "Adjustments to Financial Statements",
-    "lessons": [
-      {
-        "id": "accruals-prepayments",
-        "title": "Accruals and Prepayments",
-        "content": "To ensure that the financial statements are accurate, we must follow the accruals concept, which states that expenses and income should be recorded in the period they occur, regardless of when cash is paid or received. This often requires year-end 'adjustments' for accruals and prepayments.\n\nAn 'Accrued Expense' is an expense that has been incurred (like electricity used) but not yet paid by the end of the year. This is a current liability and must be added to the relevant expense in the Income Statement. A 'Prepaid Expense' is an expense paid in advance (like insurance for next year). This is a current asset and must be subtracted from the expense in the Income Statement.\n\nSimilarly, we can have 'Accrued Income' (earned but not received — an asset) and 'Prepaid Income' (received in advance — a liability). CSEC questions frequently involve these adjustments, requiring you to update the ledger accounts and correctly include the adjusted figures in the final financial statements.",
-        "objectives": [
-          "Adjust accounts for expenses and income not yet paid or received"
-        ],
-        "concepts": [
-          "Accrued Expenses: Expenses incurred but not yet paid (Liability).",
-          "Prepaid Expenses: Expenses paid in advance (Asset)."
-        ],
-        "experiment": {
-          "type": "slider-tool",
-          "description": "Time Adjustment: Use a timeline slider to see how paying an expense early (prepayment) or late (accrual) affects the current year's profit."
-        }
-      },
-      {
-        "id": "depreciation-assets",
-        "title": "Depreciation of Non-current Assets",
-        "content": "Depreciation is the systematic allocation of the cost of a non-current asset over its useful life. It represents the loss in value of assets like machinery, vehicles, and equipment due to wear and tear, usage, or obsolescence. Depreciation is treated as an expense in the Income Statement, even though no cash is actually paid out.\n\nThere are two main methods tested on CSEC: the 'Straight Line' method (fixed amount each year) and the 'Reducing Balance' method (fixed percentage of book value). The 'Accumulated Depreciation' is the total depreciation taken so far, which is subtracted from the original cost of the asset in the Statement of Financial Position to find its 'Net Book Value'.\n\nUnderstanding depreciation is essential because it ensures that the value of assets is not overstated and that profits are correctly calculated. You will learn to calculate depreciation using both methods and to record it in the ledger and financial statements. Remember: land is generally NOT depreciated as it does not lose value over time.",
-        "objectives": [
-          "Explain the causes and methods of depreciation",
-          "Calculate and record depreciation using Straight Line and Reducing Balance methods"
-        ],
-        "concepts": [
-          "Straight Line vs Reducing Balance",
-          "Accumulated Depreciation",
-          "Net Book Value"
-        ],
-        "experiment": {
-          "type": "calculator-tool",
-          "description": "Depreciation Engine: Input the cost, scrap value, and life of an asset to see how its value decreases over time using different depreciation methods."
-        }
-      }
-    ]
-  }
+    {
+        "id": "accounting-introduction",
+        "title": "Introduction to Accounting",
+        "lessons": [
+            {
+                "id": "accounting-concepts",
+                "title": "Accounting Concepts and Principles",
+                "content": "Accounting is often called the 'language of business.' It is the systematic process of recording, summarizing, analyzing, and communicating financial information about a business or organization. The primary goal is to provide useful information to decision-makers, such as owners, investors, and creditors.\n\nTo ensure consistency and reliability, accounting follows several key concepts and principles. The 'Business Entity' concept states that the business is a separate legal and financial entity from its owner. The 'Going Concern' concept assumes that the business will continue to operate for the foreseeable future. The 'Accruals' concept requires that transactions be recorded when they occur, not necessarily when cash changes hands.\n\nOn the CSEC Principles of Accounts exam, you must be able to define accounting and explain how these core principles guide the recording of transactions. Understanding these concepts is essential for creating accurate financial statements that truly reflect the health of a business.",
+                "objectives": [
+                    "Define accounting and its purpose",
+                    "Explain core concepts like Business Entity and Accruals"
+                ],
+                "concepts": [
+                    "Accounting is the process of recording, summarizing, and communicating financial information.",
+                    "Business Entity: The business is separate from its owner."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Concept Match: Match accounting principles (e.g., Going Concern, Prudence) with their correct definitions."
+                }
+            },
+            {
+                "id": "accounting-equation",
+                "title": "The Accounting Equation",
+                "content": "The accounting equation is the foundation of the entire double-entry bookkeeping system. It states that: Assets = Liabilities + Capital. An 'Asset' is a resource owned by the business that has future economic value (like cash, machinery, or inventory). A 'Liability' is a debt or obligation owed to outside parties (like a bank loan or money owed to a supplier).\n\n'Capital' (or Equity) represents the owner's interest or investment in the business. It is the residual value of the assets after all liabilities have been paid. The equation must always be in balance \u2014 every transaction that occurs in a business will affect at least two parts of the equation while keeping the total on both sides equal.\n\nFor example, if a business buys a vehicle for $10,000 in cash, one asset (Vehicle) increases while another (Cash) decreases, leaving the total assets unchanged. If the business takes out a $5,000 loan, both assets (Cash) and liabilities (Loan) increase by $5,000. Mastering this equation is the first step in understanding how financial transactions are processed.",
+                "objectives": [
+                    "Apply the accounting equation: Assets = Liabilities + Capital"
+                ],
+                "concepts": [
+                    "Assets are resources owned by the business.",
+                    "Liabilities are debts owed to outsiders.",
+                    "Capital (Equity) is the owner's investment."
+                ],
+                "experiment": {
+                    "type": "balance-scale",
+                    "description": "Equation Balance: Drag items like 'Cash', 'Loan', and 'Furniture' to the correct side of a balance scale to keep the accounting equation balanced."
+                }
+            }
+        ]
+    },
+    {
+        "id": "ledger-double-entry",
+        "title": "The Ledger and Double Entry",
+        "lessons": [
+            {
+                "id": "double-entry-system",
+                "title": "Double Entry Bookkeeping",
+                "content": "Double-entry bookkeeping is a system where every transaction is recorded in at least two accounts. This is based on the dual aspect of the accounting equation. One account is 'Debited' (Dr) on the left side, and another is 'Credited' (Cr) on the right side. For every transaction, the total amount debited must equal the total amount credited.\n\nTo know which account to debit or credit, we use specific rules. For Assets and Expenses: an increase is a Debit, and a decrease is a Credit. For Liabilities, Capital, and Income: an increase is a Credit, and a decrease is a Debit. A helpful mnemonic is DEAD CLIC: Debit Expenses, Assets, and Drawings; Credit Liabilities, Income, and Capital.\n\nIn the CSEC exam, you will practice recording transactions in 'T-accounts.' For example, if you sell goods for cash, you would debit the Cash account (increasing an asset) and credit the Sales account (increasing income). This system ensures that the accounting records remain accurate and in balance at all times.",
+                "objectives": [
+                    "Record transactions in T-accounts using debit and credit rules"
+                ],
+                "concepts": [
+                    "Every transaction affects at least two accounts.",
+                    "Debit (Dr) on the left; Credit (Cr) on the right.",
+                    "Increase in Assets -> Debit; Increase in Liabilities -> Credit."
+                ],
+                "experiment": {
+                    "type": "interactive-ledger",
+                    "description": "T-Account Tracker: Enter transactions (e.g., 'Paid rent by cash $500') and click the correct side (Dr/Cr) of the relevant accounts to see the system balance."
+                }
+            },
+            {
+                "id": "balancing-ledger",
+                "title": "Balancing the Ledger",
+                "content": "At the end of an accounting period, each ledger account must be balanced to find the final amount remaining. This involves summing both the debit and credit sides. The difference between the two sides is the 'balance.' If the debit side is larger, the account has a 'debit balance'; if the credit side is larger, it has a 'credit balance'.\n\nTo balance an account, you write 'Balance c/d' (carried down) on the smaller side to make the totals equal, and then bring that same amount down to the opposite side as 'Balance b/d' (brought down) for the start of the next period. For example, if the Cash account has $1,000 in debits and $600 in credits, you would enter a $400 balance c/d on the credit side and then show a $400 balance b/d on the debit side.\n\nIn CSEC Principles of Accounts, balancing accounts is a vital skill. Assets and Expenses typically have debit balances, while Liabilities, Capital, and Income typically have credit balances. These balances are then used to prepare the Trial Balance, the next step in the accounting cycle.",
+                "objectives": [
+                    "Calculate and carry down balances in ledger accounts",
+                    "Distinguish between debit and credit balances"
+                ],
+                "concepts": [
+                    "Balance c/d vs Balance b/d",
+                    "Closing vs Opening balances"
+                ],
+                "experiment": {
+                    "type": "interactive-summary",
+                    "description": "Balance Master: Practice balancing several T-accounts by finding the totals and entering the correct c/d and b/d figures."
+                }
+            }
+        ]
+    },
+    {
+        "id": "books-original-entry",
+        "title": "Books of Original Entry",
+        "lessons": [
+            {
+                "id": "journals-daybooks",
+                "title": "Journals and Daybooks",
+                "content": "Before transactions are posted to the ledger, they are often recorded in 'Books of Original Entry' or 'Daybooks.' These act as a chronological diary of the business's daily activities. Common daybooks include the Sales Journal (for credit sales), the Purchases Journal (for credit purchases), and the Returns Inwards and Returns Outwards Journals.\n\nThe General Journal is used for transactions that don't fit into the other daybooks, such as the purchase of non-current assets on credit, opening entries for a new business, or correcting errors. Each entry in the General Journal includes the date, the accounts to be debited and credited, the amounts, and a brief explanation called a 'narrative.'\n\nUsing daybooks helps organize transactions and reduces the number of entries made directly to the ledger. In the CSEC exam, you will be expected to record transactions from source documents (like invoices and credit notes) into the correct daybooks and then post the totals to the appropriate ledger accounts.",
+                "objectives": [
+                    "Record transactions in the Sales, Purchases, and General Journals"
+                ],
+                "concepts": [
+                    "Daybooks are used to record transactions before they are posted to the ledger."
+                ],
+                "experiment": {
+                    "type": "data-entry-sim",
+                    "description": "Journal Entry: Fill out a digital sales journal based on a set of provided invoices."
+                }
+            },
+            {
+                "id": "cash-book",
+                "title": "The Cash Book",
+                "content": "The Cash Book is a unique book of original entry because it also serves as a ledger account for cash and bank transactions. Small businesses often use a two-column cash book (one for cash, one for bank) or a three-column cash book, which includes an additional column for 'discounts.'\n\nTransactions where cash is deposited into the bank or withdrawn from the bank for business use are called 'Contra Entries.' These are marked with a 'C' in the folio column and affect both the cash and bank columns within the same book. The discounts column on the debit side is for 'discounts allowed' to customers, while the column on the credit side is for 'discounts received' from suppliers.\n\nCSEC students must be able to prepare a cash book from a list of transactions, correctly balancing the cash and bank columns at the end of the month. Remember that the bank column can have a credit balance (representing a bank overdraft), but the cash column can only ever have a debit balance or be zero.",
+                "objectives": [
+                    "Prepare a two-column and three-column Cash Book"
+                ],
+                "concepts": [
+                    "A Cash Book acts as both a book of original entry and a ledger account.",
+                    "Contra entries involve both cash and bank."
+                ],
+                "experiment": {
+                    "type": "workbook-tool",
+                    "description": "Cash Book Builder: Enter cash and bank transactions into a template and calculate the closing balances."
+                }
+            }
+        ]
+    },
+    {
+        "id": "trial-balance-errors",
+        "title": "Trial Balance and Errors",
+        "lessons": [
+            {
+                "id": "preparing-trial-balance",
+                "title": "Preparing a Trial Balance",
+                "content": "A Trial Balance is a summary of all the ledger account balances at a specific point in time, usually at the end of an accounting period. Its primary purpose is to verify the mathematical accuracy of the double-entry bookkeeping system. All debit balances are listed in one column, and all credit balances are listed in another.\n\nIf the double-entry has been performed correctly, the total of the debit column must equal the total of the credit column. This is because every transaction was recorded with equal debits and credits. However, a balanced trial balance does NOT guarantee that the accounts are perfectly correct, as some types of errors (like recording a transaction in the wrong account) will still leave the trial balance in balance.\n\nOn the CSEC exam, you will be given a list of account balances and asked to prepare a Trial Balance. You must correctly identify which accounts are debits (Assets, Expenses, Drawings) and which are credits (Liabilities, Capital, Income, Provisions). A balanced Trial Balance is the starting point for preparing final financial statements.",
+                "objectives": [
+                    "List account balances to verify double entry accuracy"
+                ],
+                "concepts": [
+                    "A Trial Balance is a list of all ledger balances at a point in time.",
+                    "Total Debits should equal Total Credits."
+                ],
+                "experiment": {
+                    "type": "interactive-summary",
+                    "description": "Balance Checker: Drag ledger balances into a Trial Balance template and see if they balance. If not, troubleshoot the errors."
+                }
+            },
+            {
+                "id": "accounting-errors",
+                "title": "Types of Accounting Errors",
+                "content": "Even if a Trial Balance balances, there may still be errors in the accounting records. These are called 'Errors that do not affect the Trial Balance'. They include: Error of Omission (transaction forgotten), Error of Commission (wrong person's account), Error of Principle (wrong category, e.g. asset as expense), Error of Original Entry (wrong amount in both), and Compensating Errors.\n\nErrors that do affect the Trial Balance will cause the totals to be unequal. These include: partial omission, recording different amounts for the debit and credit, or entering a balance on the wrong side. When the Trial Balance doesn't balance, a 'Suspense Account' is used as a temporary place to store the difference until the error is found and corrected.\n\nCSEC Principles of Accounts students must be able to identify these errors and use the General Journal to correct them. Correcting errors is a critical part of ensuring that the financial statements provide a true and fair view of the business's performance and position.",
+                "objectives": [
+                    "Identify errors that do and do not affect the Trial Balance",
+                    "Correct errors using the General Journal and Suspense Account"
+                ],
+                "concepts": [
+                    "Error of Omission/Commission/Principle",
+                    "Suspense Accounts",
+                    "Journal narratives for corrections"
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Error Detective: Match specific error scenarios with their correct classification (e.g., 'Sold goods for cash but forgot to record it' -> 'Error of Omission')."
+                }
+            }
+        ]
+    },
+    {
+        "id": "financial-statements",
+        "title": "Financial Statements of Sole Traders",
+        "lessons": [
+            {
+                "id": "income-statement",
+                "title": "The Income Statement",
+                "content": "The Income Statement (formerly the Trading and Profit & Loss Account) is prepared to calculate the profit or loss made by a business over a specific period. It is divided into two parts. The 'Trading Account' calculates the Gross Profit, which is the difference between Sales (less returns) and the Cost of Goods Sold (Opening Inventory + Purchases - Closing Inventory).\n\nThe 'Profit & Loss Account' then deducts all other operating expenses (like rent, electricity, and salaries) from the Gross Profit and adds any other income (like commissions received) to arrive at the Net Profit. The Net Profit is the final amount of money the business has earned for the owner after all costs have been considered.\n\nIn the CSEC exam, you will practice preparing Income Statements for sole traders. You must be careful to include only income and expenses that relate to the current period (using accruals and prepayments) and to correctly calculate and present the Cost of Goods Sold. The Income Statement is a vital tool for owners to evaluate their business's success.",
+                "objectives": [
+                    "Prepare a Trading and Profit & Loss Account"
+                ],
+                "concepts": [
+                    "Calculates Gross Profit and Net Profit.",
+                    "Sales - Cost of Goods Sold = Gross Profit."
+                ],
+                "experiment": {
+                    "type": "statement-builder",
+                    "description": "Profit Calculator: Drag income and expense items into the correct sections of an Income Statement to calculate the final net profit."
+                }
+            },
+            {
+                "id": "statement-financial-position",
+                "title": "Statement of Financial Position (Balance Sheet)",
+                "content": "The Statement of Financial Position (formerly the Balance Sheet) shows the financial position of a business at a specific date. It is a detailed representation of the accounting equation: Assets = Liabilities + Capital. Assets are classified as 'Non-current' (held for long-term use, like land or machinery) or 'Current' (held for a short time, like cash or inventory).\n\nLiabilities are similarly classified as 'Non-current' (debts due after one year) or 'Current' (debts due within one year). The 'Capital' section shows the owner's investment, adjusted for the Net Profit (which increases capital) or Net Loss (which decreases it) and any 'Drawings' (money or goods taken by the owner for personal use).\n\nCSEC students must be able to prepare a Statement of Financial Position in a vertical format, correctly classifying all items. This statement tells us what the business owns and what it owes, providing insight into its liquidity and long-term stability. Remember: the final total of (Total Assets - Total Liabilities) must equal the final Capital balance.",
+                "objectives": [
+                    "Classify assets and liabilities and prepare a Balance Sheet"
+                ],
+                "concepts": [
+                    "Shows the financial position of a business at a specific date.",
+                    "Non-current vs. Current Assets/Liabilities."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Asset/Liability Sort: Drag various items into buckets (Current Asset, Non-current Liability, etc.) to build a complete Balance Sheet."
+                }
+            }
+        ]
+    },
+    {
+        "id": "adjustments-statements",
+        "title": "Adjustments to Financial Statements",
+        "lessons": [
+            {
+                "id": "accruals-prepayments",
+                "title": "Accruals and Prepayments",
+                "content": "To ensure that the financial statements are accurate, we must follow the accruals concept, which states that expenses and income should be recorded in the period they occur, regardless of when cash is paid or received. This often requires year-end 'adjustments' for accruals and prepayments.\n\nAn 'Accrued Expense' is an expense that has been incurred (like electricity used) but not yet paid by the end of the year. This is a current liability and must be added to the relevant expense in the Income Statement. A 'Prepaid Expense' is an expense paid in advance (like insurance for next year). This is a current asset and must be subtracted from the expense in the Income Statement.\n\nSimilarly, we can have 'Accrued Income' (earned but not received \u2014 an asset) and 'Prepaid Income' (received in advance \u2014 a liability). CSEC questions frequently involve these adjustments, requiring you to update the ledger accounts and correctly include the adjusted figures in the final financial statements.",
+                "objectives": [
+                    "Adjust accounts for expenses and income not yet paid or received"
+                ],
+                "concepts": [
+                    "Accrued Expenses: Expenses incurred but not yet paid (Liability).",
+                    "Prepaid Expenses: Expenses paid in advance (Asset)."
+                ],
+                "experiment": {
+                    "type": "slider-tool",
+                    "description": "Time Adjustment: Use a timeline slider to see how paying an expense early (prepayment) or late (accrual) affects the current year's profit."
+                }
+            },
+            {
+                "id": "depreciation-assets",
+                "title": "Depreciation of Non-current Assets",
+                "content": "Depreciation is the systematic allocation of the cost of a non-current asset over its useful life. It represents the loss in value of assets like machinery, vehicles, and equipment due to wear and tear, usage, or obsolescence. Depreciation is treated as an expense in the Income Statement, even though no cash is actually paid out.\n\nThere are two main methods tested on CSEC: the 'Straight Line' method (fixed amount each year) and the 'Reducing Balance' method (fixed percentage of book value). The 'Accumulated Depreciation' is the total depreciation taken so far, which is subtracted from the original cost of the asset in the Statement of Financial Position to find its 'Net Book Value'.\n\nUnderstanding depreciation is essential because it ensures that the value of assets is not overstated and that profits are correctly calculated. You will learn to calculate depreciation using both methods and to record it in the ledger and financial statements. Remember: land is generally NOT depreciated as it does not lose value over time.",
+                "objectives": [
+                    "Explain the causes and methods of depreciation",
+                    "Calculate and record depreciation using Straight Line and Reducing Balance methods"
+                ],
+                "concepts": [
+                    "Straight Line vs Reducing Balance",
+                    "Accumulated Depreciation",
+                    "Net Book Value"
+                ],
+                "experiment": {
+                    "type": "calculator-tool",
+                    "description": "Depreciation Engine: Input the cost, scrap value, and life of an asset to see how its value decreases over time using different depreciation methods."
+                }
+            }
+        ]
+    }
 ]

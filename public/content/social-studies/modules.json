@@ -1,134 +1,269 @@
 [
-  {
-    "id": "ss-mod-1",
-    "title": "The Family",
-    "lessons": [
-      {
-        "id": "ss-l1-1",
-        "title": "Family Types and Structures",
-        "content": "The family is the basic unit of society. In the Caribbean, family structures are diverse and influenced by our rich history and cultural heritage. The 'Nuclear Family' consists of a mother, father, and their children living together. The 'Extended Family' includes other relatives like grandparents, aunts, or cousins living in the same household or nearby.\n\nOther common structures include the 'Single-parent Family' (one parent raising children), the 'Reconstituted' or 'Blended Family' (formed when parents with children from previous relationships marry), and 'Common-law Relationships' (where a couple lives together without being legally married). Sib-link households, where brothers and sisters live together without parents, are also found in some communities.\n\nCSEC Social Studies students must be able to identify these types and discuss their characteristics. Understanding family diversity is essential for appreciating the different ways Caribbean people live and support one another. The family's role in providing emotional and economic stability is a key topic of discussion.",
-        "objectives": ["Identify different types of families in the Caribbean", "Describe the characteristics of each family type"],
-        "concepts": ["Nuclear Family", "Extended Family", "Single-parent Family", "Reconstituted Family", "Common-law Relationship"],
-        "experiment": "Family Tree Builder: Drag and drop family members to create different family structures and see how they are defined."
-      },
-      {
-        "id": "ss-l1-2",
-        "title": "Roles and Responsibilities",
-        "content": "Within every family, members have specific roles and responsibilities that contribute to the household's functioning. Traditionally, roles were often divided by gender (division of labor), but in modern Caribbean society, these roles are increasingly shared. Parents have the primary responsibility for the 'socialization' of their children — teaching them the values, norms, and skills needed to participate in society.\n\nResponsible parenthood involve providing not just economic support (food, shelter, education) but also emotional support (love, guidance, protection). Children also have responsibilities, such as performing household chores and showing respect to their elders. As family members age, the roles may shift, with adult children taking on the care of their elderly parents.\n\nUnderstanding these dynamics is crucial for discussing issues like family conflict, child abuse, and the impact of migration on family life. CSEC questions often ask you to analyze how changing social and economic conditions affect family roles and the importance of strong, supportive family units for a healthy society.",
-        "objectives": ["Examine the roles of family members", "Understand the importance of responsible parenthood"],
-        "concepts": ["Division of Labour", "Socialization", "Economic Support", "Emotional Support"],
-        "experiment": "Role Assigner: Match various family tasks and responsibilities to different family members in a virtual household scenario."
-      }
-    ]
-  },
-  {
-    "id": "ss-mod-2",
-    "title": "Groups and Institutions",
-    "lessons": [
-      {
-        "id": "ss-l2-1",
-        "title": "Primary and Secondary Groups",
-        "content": "Humans are social beings who belong to many different groups. A 'Primary Group' is a small social group whose members share close, personal, and enduring relationships (like a family or a close circle of friends). These groups are characterized by face-to-face interaction and strong emotional ties. They play a vital role in our personal development and sense of identity.\n\nA 'Secondary Group' is typically larger and more impersonal. These groups are often goal-oriented and formed for a specific purpose (like a professional organization, a school club, or a large business). Interaction in secondary groups is more formal and less frequent than in primary groups. You may belong to a secondary group for years without forming deep personal connections with all its members.\n\nCSEC students must be able to distinguish between these two types of groups and understand the characteristics that define them, such as group size, cohesion, and leadership styles. Recognizing the different groups we belong to helps us understand how our behavior and values are shaped by our social environment.",
-        "objectives": ["Distinguish between primary and secondary groups", "Understand the characteristics of groups"],
-        "concepts": ["Peer Groups", "Clubs", "Professional Organizations", "Group Cohesion", "Leadership Styles"],
-        "experiment": "Group Sorter: Categorize different social gatherings (e.g., a family dinner vs. a business meeting) into primary or secondary groups."
-      },
-      {
-        "id": "ss-l2-2",
-        "title": "Social Institutions",
-        "content": "Social institutions are organized systems of social relationships that perform essential functions for society. The major institutions found in almost every culture include the Family, Religion, Education, the Economy, and the Justice System. Each institution has its own set of norms, values, and roles.\n\nFor example, the institution of Education is responsible for transmitting knowledge and skills, while Religion provides spiritual guidance and a sense of meaning. The Economy manages the production and distribution of goods and services, and the Justice System maintains order and protects the rights of citizens. These institutions are interconnected — changes in one often lead to changes in others.\n\nIn CSEC Social Studies, you will explore how these institutions function in the Caribbean and how they contribute to social stability or change. You will also discuss challenges facing these institutions, such as the impact of technology on education or the role of religion in modern secular societies.",
-        "objectives": ["Identify major social institutions", "Understand their functions in society"],
-        "concepts": ["Religion", "Education", "The Economy", "The Justice System"],
-        "experiment": "Institution Matcher: Link social needs (e.g., 'spiritual guidance', 'learning skills') to the corresponding social institution."
-      }
-    ]
-  },
-  {
-    "id": "ss-mod-3",
-    "title": "Government and Democracy",
-    "lessons": [
-      {
-        "id": "ss-l3-1",
-        "title": "Systems of Government",
-        "content": "Government is the system by which a society is organized and controlled. In the Caribbean, we have several different systems. Many English-speaking countries are 'Constitutional Monarchies,' where the British Monarch is the ceremonial head of state, represented by a Governor-General. Others, like Trinidad and Tobago or Guyana, are 'Republics' with their own President as head of state.\n\nA 'Democracy' is a system where power is held by the people, usually through elected representatives. Elections are held periodically, where citizens in different 'constituencies' vote for candidates. The party with the most seats in parliament typically forms the government. This contrasts with a 'Dictatorship,' where power is held by a single person or a small group with little or no input from the public.\n\nUnderstanding these systems is vital for active citizenship. CSEC students learn about the electoral process, the role of political parties, and the importance of transparency and accountability in government. Knowing how your country is governed empowers you to participate in the democratic process and advocate for change.",
-        "objectives": ["Compare different systems of government in the Caribbean", "Understand the democratic process"],
-        "concepts": ["Constitutional Monarchy", "Republic", "Dictatorship", "Constituency", "Elections"],
-        "experiment": "Election Day Simulation: Act as a voter or a candidate, understanding the process of casting ballots and how constituencies work."
-      },
-      {
-        "id": "ss-l3-2",
-        "title": "The Branches of Government",
-        "content": "Most democratic governments are divided into three branches to ensure a 'separation of powers' and a system of 'checks and balances.' This prevents any one person or group from having too much control. The three branches are the Legislative, the Executive, and the Judiciary.\n\nThe 'Legislative' branch (the Parliament or National Assembly) is responsible for making and passing laws. The 'Executive' branch (the Prime Minister or President and their Cabinet) is responsible for implementing and enforcing those laws and managing the daily affairs of the country. The 'Judiciary' (the courts and judges) is responsible for interpreting the laws and ensuring they are applied fairly.\n\nCSEC students must be able to identify the functions of each branch and explain how they work together. For example, the legislature may pass a law, but the judiciary can rule it unconstitutional if it violates the rights of citizens. Understanding this structure is essential for understanding how the justice system and the political system interact.",
-        "objectives": ["Identify the three branches of government", "Explain the principle of separation of powers"],
-        "concepts": ["Legislative", "Executive", "Judiciary", "Checks and Balances"],
-        "experiment": "Laws and Gavel: Trace a law from its proposal in parliament to its enforcement and interpretation by the courts."
-      }
-    ]
-  },
-  {
-    "id": "ss-mod-4",
-    "title": "Regional Integration",
-    "lessons": [
-      {
-        "id": "ss-l4-1",
-        "title": "CARICOM and Its Objectives",
-        "content": "Regional integration is the process where neighboring countries cooperate to achieve common goals. In our region, the primary organization is CARICOM (the Caribbean Community). Its main objectives include 'Economic Integration' (creating a single market and economy), 'Functional Cooperation' (sharing resources in areas like health, education, and disaster management), and 'Coordination of Foreign Policy.'\n\nCARICOM member states work together to improve the lives of Caribbean people by creating more jobs, increasing trade, and providing a stronger voice in international affairs. Key initiatives include the CSME (CARICOM Single Market and Economy), which allows for the free movement of goods, services, and skilled labor across the region.\n\nCSEC Social Studies students must know the member states of CARICOM and be able to discuss its purpose and achievements. You will also learn about other regional organizations like the OECS (Organisation of Eastern Caribbean States) and the importance of regional unity in a globalized world.",
-        "objectives": ["Explain the purpose of CARICOM", "Identify the member states"],
-        "concepts": ["Economic Integration", "Functional Cooperation", "Common Market", "CSME"],
-        "experiment": "Caribbean Map Quiz: Drag and drop Caribbean country flags to their correct locations and identify which are CARICOM members."
-      },
-      {
-        "id": "ss-l4-2",
-        "title": "Benefits and Challenges",
-        "content": "Regional integration offers many benefits to Caribbean countries, but it also faces significant challenges. Benefits include 'Freedom of Movement' for people and goods, which can lead to increased trade and economic growth. Integration also allows for 'Standardization' of products and services and better 'Regional Security' through cooperation between police and military forces.\n\nHowever, challenges include differences in economic development between member states, which can lead to concerns about some countries benefiting more than others. Trade barriers, transport issues between islands, and the high cost of maintaining regional organizations are also obstacles. Some citizens may also fear that integration will lead to a loss of national identity.\n\nCSEC questions often ask you to analyze these benefits and challenges and suggest ways to overcome them. Discussing regional integration helps you understand the importance of cooperation and the complex factors that influence the success of international organizations.",
-        "objectives": ["Discuss the benefits of regional integration", "Identify challenges to integration"],
-        "concepts": ["Freedom of Movement", "Trade Barriers", "Standardization", "Regional Security"],
-        "experiment": "Trade Route Game: Move goods between Caribbean islands and see how removing trade barriers affects the speed and cost."
-      }
-    ]
-  },
-  {
-    "id": "ss-mod-5",
-    "title": "Population",
-    "lessons": [
-      {
-        "id": "ss-l5-1",
-        "title": "Population Distribution and Growth",
-        "content": "Population distribution refers to how people are spread across a specific area. Factors influencing this include climate, availability of resources (like water and fertile land), and economic opportunities (like jobs in cities). Caribbean populations are often concentrated along the coasts and in urban centers.\n\nPopulation growth is determined by three main factors: birth rate, death rate, and migration. The 'Natural Increase' is the difference between the birth rate and the death rate. If the birth rate is higher, the population grows. A 'Population Pyramid' is a visual tool used to show the age and sex structure of a population, which helps governments plan for future needs in education, healthcare, and housing.\n\nCSEC students will learn to calculate birth, death, and fertility rates and to interpret population pyramids. Understanding population dynamics is essential for discussing issues like urbanization, the challenges of an aging population, and the impact of population growth on the environment and resources.",
-        "objectives": ["Understand factors affecting population distribution", "Calculate birth and death rates"],
-        "concepts": ["Population Density", "Fertility Rate", "Mortality Rate", "Natural Increase"],
-        "experiment": "Population Pyramid Builder: Adjust birth and death rates to see how they change the shape of a country's population pyramid over time."
-      },
-      {
-        "id": "ss-l5-2",
-        "title": "Migration",
-        "content": "Migration is the movement of people from one place to another to live or work. It can be 'Internal Migration' (moving within a country, such as from rural areas to cities) or 'External Migration' (moving between countries). People migrate for many reasons, often categorized as 'push factors' (things that make you want to leave, like lack of jobs or natural disasters) and 'pull factors' (things that attract you to a new place, like better pay or safety).\n\nIn the Caribbean, migration has a major impact on society. 'Brain Drain' occurs when highly skilled people (like doctors and teachers) migrate to wealthier countries, leaving a shortage of expertise at home. On the other hand, 'Remittances' (money sent back by migrants to their families) provide a vital source of income for many Caribbean households and contribute to the national economy.\n\nCSEC Social Studies explores the causes and consequences of migration and its impact on the development of the region. You will discuss the experiences of Caribbean migrants abroad and the challenges and opportunities created by the movement of people across borders.",
-        "objectives": ["Identify types of migration", "Analyze the push and pull factors"],
-        "concepts": ["Internal Migration", "External Migration", "Brain Drain", "Remittances"],
-        "experiment": "Push-Pull Magnet: Drag various factors (e.g., 'better jobs', 'natural disasters') to either the 'Push' or 'Pull' category for a virtual migrant."
-      }
-    ]
-  },
-  {
-    "id": "ss-mod-6",
-    "title": "Communication and Consumer Affairs",
-    "lessons": [
-      {
-        "id": "ss-l6-1",
-        "title": "Forms of Communication",
-        "content": "Communication is the process of exchanging information, ideas, and feelings. It can be 'Verbal' (using words, either spoken or written) or 'Non-verbal' (using body language, facial expressions, or symbols). In the modern world, 'Mass Media' (like television, radio, and newspapers) and digital technologies have transformed how we communicate.\n\nThe rise of the internet and social media has made communication faster and more accessible than ever before. However, it has also created a 'Digital Divide' — the gap between those who have access to modern technology and those who do not. This divide can impact education, job opportunities, and participation in the democratic process.\n\nCSEC students will analyze the impact of different forms of communication on society and discuss the ethical issues related to media and technology. Understanding communication is essential for effective social interaction and for navigating the complex information landscape of the 21st century.",
-        "objectives": ["Distinguish between different forms of communication", "Understand the impact of technology"],
-        "concepts": ["Verbal vs. Non-verbal", "Mass Media", "Digital Divide", "Social Media"],
-        "experiment": "Message Relay: Send a message through various mediums (letter, phone, internet) and compare the speed, cost, and reach."
-      },
-      {
-        "id": "ss-l6-2",
-        "title": "Consumer Rights and Responsibilities",
-        "content": "A consumer is anyone who buys or uses goods and services. To protect people in the marketplace, most countries have laws defining 'Consumer Rights,' such as the right to safety, the right to be informed, and the right to redress (compensation if a product is faulty).\n\nAlong with these rights come 'Consumer Responsibilities.' This includes being a 'Smart Shopper' by comparing prices, reading product labels, and understanding contracts like 'Hire Purchase.' Consumers should also practice responsible 'Budgeting' to manage their money effectively and avoid excessive debt. Consumer protection agencies help enforce these rights and educate the public.\n\nCSEC Social Studies students will learn about the rights and responsibilities of consumers and the role of agencies like the Bureau of Standards. You will also discuss the importance of ethical consumption and the impact of consumer choices on the environment and society.",
-        "objectives": ["Identify consumer rights", "Understand the role of consumer protection agencies"],
-        "concepts": ["Right to Safety", "Right to Redress", "Budgeting", "Hire Purchase"],
-        "experiment": "Smart Shopper Challenge: Evaluate different product labels and contracts to identify misleading information and exercise consumer rights."
-      }
-    ]
-  }
+    {
+        "id": "ss-mod-1",
+        "title": "The Family",
+        "lessons": [
+            {
+                "id": "ss-l1-1",
+                "title": "Family Types and Structures",
+                "content": "The family is the basic unit of society. In the Caribbean, family structures are diverse and influenced by our rich history and cultural heritage. The 'Nuclear Family' consists of a mother, father, and their children living together. The 'Extended Family' includes other relatives like grandparents, aunts, or cousins living in the same household or nearby.\n\nOther common structures include the 'Single-parent Family' (one parent raising children), the 'Reconstituted' or 'Blended Family' (formed when parents with children from previous relationships marry), and 'Common-law Relationships' (where a couple lives together without being legally married). Sib-link households, where brothers and sisters live together without parents, are also found in some communities.\n\nCSEC Social Studies students must be able to identify these types and discuss their characteristics. Understanding family diversity is essential for appreciating the different ways Caribbean people live and support one another. The family's role in providing emotional and economic stability is a key topic of discussion.",
+                "objectives": [
+                    "Identify different types of families in the Caribbean",
+                    "Describe the characteristics of each family type"
+                ],
+                "concepts": [
+                    "Nuclear Family",
+                    "Extended Family",
+                    "Single-parent Family",
+                    "Reconstituted Family",
+                    "Common-law Relationship"
+                ],
+                "experiment": {
+                    "type": "drag-drop",
+                    "description": "Family Tree Builder: Drag and drop family members to create different family structures and see how they are defined."
+                }
+            },
+            {
+                "id": "ss-l1-2",
+                "title": "Roles and Responsibilities",
+                "content": "Within every family, members have specific roles and responsibilities that contribute to the household's functioning. Traditionally, roles were often divided by gender (division of labor), but in modern Caribbean society, these roles are increasingly shared. Parents have the primary responsibility for the 'socialization' of their children \u2014 teaching them the values, norms, and skills needed to participate in society.\n\nResponsible parenthood involve providing not just economic support (food, shelter, education) but also emotional support (love, guidance, protection). Children also have responsibilities, such as performing household chores and showing respect to their elders. As family members age, the roles may shift, with adult children taking on the care of their elderly parents.\n\nUnderstanding these dynamics is crucial for discussing issues like family conflict, child abuse, and the impact of migration on family life. CSEC questions often ask you to analyze how changing social and economic conditions affect family roles and the importance of strong, supportive family units for a healthy society.",
+                "objectives": [
+                    "Examine the roles of family members",
+                    "Understand the importance of responsible parenthood"
+                ],
+                "concepts": [
+                    "Division of Labour",
+                    "Socialization",
+                    "Economic Support",
+                    "Emotional Support"
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Role Assigner: Match various family tasks and responsibilities to different family members in a virtual household scenario."
+                }
+            }
+        ]
+    },
+    {
+        "id": "ss-mod-2",
+        "title": "Groups and Institutions",
+        "lessons": [
+            {
+                "id": "ss-l2-1",
+                "title": "Primary and Secondary Groups",
+                "content": "Humans are social beings who belong to many different groups. A 'Primary Group' is a small social group whose members share close, personal, and enduring relationships (like a family or a close circle of friends). These groups are characterized by face-to-face interaction and strong emotional ties. They play a vital role in our personal development and sense of identity.\n\nA 'Secondary Group' is typically larger and more impersonal. These groups are often goal-oriented and formed for a specific purpose (like a professional organization, a school club, or a large business). Interaction in secondary groups is more formal and less frequent than in primary groups. You may belong to a secondary group for years without forming deep personal connections with all its members.\n\nCSEC students must be able to distinguish between these two types of groups and understand the characteristics that define them, such as group size, cohesion, and leadership styles. Recognizing the different groups we belong to helps us understand how our behavior and values are shaped by our social environment.",
+                "objectives": [
+                    "Distinguish between primary and secondary groups",
+                    "Understand the characteristics of groups"
+                ],
+                "concepts": [
+                    "Peer Groups",
+                    "Clubs",
+                    "Professional Organizations",
+                    "Group Cohesion",
+                    "Leadership Styles"
+                ],
+                "experiment": {
+                    "type": "map-explorer",
+                    "description": "Group Sorter: Categorize different social gatherings (e.g., a family dinner vs. a business meeting) into primary or secondary groups."
+                }
+            },
+            {
+                "id": "ss-l2-2",
+                "title": "Social Institutions",
+                "content": "Social institutions are organized systems of social relationships that perform essential functions for society. The major institutions found in almost every culture include the Family, Religion, Education, the Economy, and the Justice System. Each institution has its own set of norms, values, and roles.\n\nFor example, the institution of Education is responsible for transmitting knowledge and skills, while Religion provides spiritual guidance and a sense of meaning. The Economy manages the production and distribution of goods and services, and the Justice System maintains order and protects the rights of citizens. These institutions are interconnected \u2014 changes in one often lead to changes in others.\n\nIn CSEC Social Studies, you will explore how these institutions function in the Caribbean and how they contribute to social stability or change. You will also discuss challenges facing these institutions, such as the impact of technology on education or the role of religion in modern secular societies.",
+                "objectives": [
+                    "Identify major social institutions",
+                    "Understand their functions in society"
+                ],
+                "concepts": [
+                    "Religion",
+                    "Education",
+                    "The Economy",
+                    "The Justice System"
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Institution Matcher: Link social needs (e.g., 'spiritual guidance', 'learning skills') to the corresponding social institution."
+                }
+            }
+        ]
+    },
+    {
+        "id": "ss-mod-3",
+        "title": "Government and Democracy",
+        "lessons": [
+            {
+                "id": "ss-l3-1",
+                "title": "Systems of Government",
+                "content": "Government is the system by which a society is organized and controlled. In the Caribbean, we have several different systems. Many English-speaking countries are 'Constitutional Monarchies,' where the British Monarch is the ceremonial head of state, represented by a Governor-General. Others, like Trinidad and Tobago or Guyana, are 'Republics' with their own President as head of state.\n\nA 'Democracy' is a system where power is held by the people, usually through elected representatives. Elections are held periodically, where citizens in different 'constituencies' vote for candidates. The party with the most seats in parliament typically forms the government. This contrasts with a 'Dictatorship,' where power is held by a single person or a small group with little or no input from the public.\n\nUnderstanding these systems is vital for active citizenship. CSEC students learn about the electoral process, the role of political parties, and the importance of transparency and accountability in government. Knowing how your country is governed empowers you to participate in the democratic process and advocate for change.",
+                "objectives": [
+                    "Compare different systems of government in the Caribbean",
+                    "Understand the democratic process"
+                ],
+                "concepts": [
+                    "Constitutional Monarchy",
+                    "Republic",
+                    "Dictatorship",
+                    "Constituency",
+                    "Elections"
+                ],
+                "experiment": {
+                    "type": "simulation",
+                    "description": "Election Day Simulation: Act as a voter or a candidate, understanding the process of casting ballots and how constituencies work."
+                }
+            },
+            {
+                "id": "ss-l3-2",
+                "title": "The Branches of Government",
+                "content": "Most democratic governments are divided into three branches to ensure a 'separation of powers' and a system of 'checks and balances.' This prevents any one person or group from having too much control. The three branches are the Legislative, the Executive, and the Judiciary.\n\nThe 'Legislative' branch (the Parliament or National Assembly) is responsible for making and passing laws. The 'Executive' branch (the Prime Minister or President and their Cabinet) is responsible for implementing and enforcing those laws and managing the daily affairs of the country. The 'Judiciary' (the courts and judges) is responsible for interpreting the laws and ensuring they are applied fairly.\n\nCSEC students must be able to identify the functions of each branch and explain how they work together. For example, the legislature may pass a law, but the judiciary can rule it unconstitutional if it violates the rights of citizens. Understanding this structure is essential for understanding how the justice system and the political system interact.",
+                "objectives": [
+                    "Identify the three branches of government",
+                    "Explain the principle of separation of powers"
+                ],
+                "concepts": [
+                    "Legislative",
+                    "Executive",
+                    "Judiciary",
+                    "Checks and Balances"
+                ],
+                "experiment": {
+                    "type": "map-explorer",
+                    "description": "Laws and Gavel: Trace a law from its proposal in parliament to its enforcement and interpretation by the courts."
+                }
+            }
+        ]
+    },
+    {
+        "id": "ss-mod-4",
+        "title": "Regional Integration",
+        "lessons": [
+            {
+                "id": "ss-l4-1",
+                "title": "CARICOM and Its Objectives",
+                "content": "Regional integration is the process where neighboring countries cooperate to achieve common goals. In our region, the primary organization is CARICOM (the Caribbean Community). Its main objectives include 'Economic Integration' (creating a single market and economy), 'Functional Cooperation' (sharing resources in areas like health, education, and disaster management), and 'Coordination of Foreign Policy.'\n\nCARICOM member states work together to improve the lives of Caribbean people by creating more jobs, increasing trade, and providing a stronger voice in international affairs. Key initiatives include the CSME (CARICOM Single Market and Economy), which allows for the free movement of goods, services, and skilled labor across the region.\n\nCSEC Social Studies students must know the member states of CARICOM and be able to discuss its purpose and achievements. You will also learn about other regional organizations like the OECS (Organisation of Eastern Caribbean States) and the importance of regional unity in a globalized world.",
+                "objectives": [
+                    "Explain the purpose of CARICOM",
+                    "Identify the member states"
+                ],
+                "concepts": [
+                    "Economic Integration",
+                    "Functional Cooperation",
+                    "Common Market",
+                    "CSME"
+                ],
+                "experiment": {
+                    "type": "interactive-quiz",
+                    "description": "Caribbean Map Quiz: Drag and drop Caribbean country flags to their correct locations and identify which are CARICOM members."
+                }
+            },
+            {
+                "id": "ss-l4-2",
+                "title": "Benefits and Challenges",
+                "content": "Regional integration offers many benefits to Caribbean countries, but it also faces significant challenges. Benefits include 'Freedom of Movement' for people and goods, which can lead to increased trade and economic growth. Integration also allows for 'Standardization' of products and services and better 'Regional Security' through cooperation between police and military forces.\n\nHowever, challenges include differences in economic development between member states, which can lead to concerns about some countries benefiting more than others. Trade barriers, transport issues between islands, and the high cost of maintaining regional organizations are also obstacles. Some citizens may also fear that integration will lead to a loss of national identity.\n\nCSEC questions often ask you to analyze these benefits and challenges and suggest ways to overcome them. Discussing regional integration helps you understand the importance of cooperation and the complex factors that influence the success of international organizations.",
+                "objectives": [
+                    "Discuss the benefits of regional integration",
+                    "Identify challenges to integration"
+                ],
+                "concepts": [
+                    "Freedom of Movement",
+                    "Trade Barriers",
+                    "Standardization",
+                    "Regional Security"
+                ],
+                "experiment": {
+                    "type": "map-explorer",
+                    "description": "Trade Route Game: Move goods between Caribbean islands and see how removing trade barriers affects the speed and cost."
+                }
+            }
+        ]
+    },
+    {
+        "id": "ss-mod-5",
+        "title": "Population",
+        "lessons": [
+            {
+                "id": "ss-l5-1",
+                "title": "Population Distribution and Growth",
+                "content": "Population distribution refers to how people are spread across a specific area. Factors influencing this include climate, availability of resources (like water and fertile land), and economic opportunities (like jobs in cities). Caribbean populations are often concentrated along the coasts and in urban centers.\n\nPopulation growth is determined by three main factors: birth rate, death rate, and migration. The 'Natural Increase' is the difference between the birth rate and the death rate. If the birth rate is higher, the population grows. A 'Population Pyramid' is a visual tool used to show the age and sex structure of a population, which helps governments plan for future needs in education, healthcare, and housing.\n\nCSEC students will learn to calculate birth, death, and fertility rates and to interpret population pyramids. Understanding population dynamics is essential for discussing issues like urbanization, the challenges of an aging population, and the impact of population growth on the environment and resources.",
+                "objectives": [
+                    "Understand factors affecting population distribution",
+                    "Calculate birth and death rates"
+                ],
+                "concepts": [
+                    "Population Density",
+                    "Fertility Rate",
+                    "Mortality Rate",
+                    "Natural Increase"
+                ],
+                "experiment": {
+                    "type": "map-explorer",
+                    "description": "Population Pyramid Builder: Adjust birth and death rates to see how they change the shape of a country's population pyramid over time."
+                }
+            },
+            {
+                "id": "ss-l5-2",
+                "title": "Migration",
+                "content": "Migration is the movement of people from one place to another to live or work. It can be 'Internal Migration' (moving within a country, such as from rural areas to cities) or 'External Migration' (moving between countries). People migrate for many reasons, often categorized as 'push factors' (things that make you want to leave, like lack of jobs or natural disasters) and 'pull factors' (things that attract you to a new place, like better pay or safety).\n\nIn the Caribbean, migration has a major impact on society. 'Brain Drain' occurs when highly skilled people (like doctors and teachers) migrate to wealthier countries, leaving a shortage of expertise at home. On the other hand, 'Remittances' (money sent back by migrants to their families) provide a vital source of income for many Caribbean households and contribute to the national economy.\n\nCSEC Social Studies explores the causes and consequences of migration and its impact on the development of the region. You will discuss the experiences of Caribbean migrants abroad and the challenges and opportunities created by the movement of people across borders.",
+                "objectives": [
+                    "Identify types of migration",
+                    "Analyze the push and pull factors"
+                ],
+                "concepts": [
+                    "Internal Migration",
+                    "External Migration",
+                    "Brain Drain",
+                    "Remittances"
+                ],
+                "experiment": {
+                    "type": "map-explorer",
+                    "description": "Push-Pull Magnet: Drag various factors (e.g., 'better jobs', 'natural disasters') to either the 'Push' or 'Pull' category for a virtual migrant."
+                }
+            }
+        ]
+    },
+    {
+        "id": "ss-mod-6",
+        "title": "Communication and Consumer Affairs",
+        "lessons": [
+            {
+                "id": "ss-l6-1",
+                "title": "Forms of Communication",
+                "content": "Communication is the process of exchanging information, ideas, and feelings. It can be 'Verbal' (using words, either spoken or written) or 'Non-verbal' (using body language, facial expressions, or symbols). In the modern world, 'Mass Media' (like television, radio, and newspapers) and digital technologies have transformed how we communicate.\n\nThe rise of the internet and social media has made communication faster and more accessible than ever before. However, it has also created a 'Digital Divide' \u2014 the gap between those who have access to modern technology and those who do not. This divide can impact education, job opportunities, and participation in the democratic process.\n\nCSEC students will analyze the impact of different forms of communication on society and discuss the ethical issues related to media and technology. Understanding communication is essential for effective social interaction and for navigating the complex information landscape of the 21st century.",
+                "objectives": [
+                    "Distinguish between different forms of communication",
+                    "Understand the impact of technology"
+                ],
+                "concepts": [
+                    "Verbal vs. Non-verbal",
+                    "Mass Media",
+                    "Digital Divide",
+                    "Social Media"
+                ],
+                "experiment": {
+                    "type": "map-explorer",
+                    "description": "Message Relay: Send a message through various mediums (letter, phone, internet) and compare the speed, cost, and reach."
+                }
+            },
+            {
+                "id": "ss-l6-2",
+                "title": "Consumer Rights and Responsibilities",
+                "content": "A consumer is anyone who buys or uses goods and services. To protect people in the marketplace, most countries have laws defining 'Consumer Rights,' such as the right to safety, the right to be informed, and the right to redress (compensation if a product is faulty).\n\nAlong with these rights come 'Consumer Responsibilities.' This includes being a 'Smart Shopper' by comparing prices, reading product labels, and understanding contracts like 'Hire Purchase.' Consumers should also practice responsible 'Budgeting' to manage their money effectively and avoid excessive debt. Consumer protection agencies help enforce these rights and educate the public.\n\nCSEC Social Studies students will learn about the rights and responsibilities of consumers and the role of agencies like the Bureau of Standards. You will also discuss the importance of ethical consumption and the impact of consumer choices on the environment and society.",
+                "objectives": [
+                    "Identify consumer rights",
+                    "Understand the role of consumer protection agencies"
+                ],
+                "concepts": [
+                    "Right to Safety",
+                    "Right to Redress",
+                    "Budgeting",
+                    "Hire Purchase"
+                ],
+                "experiment": {
+                    "type": "map-explorer",
+                    "description": "Smart Shopper Challenge: Evaluate different product labels and contracts to identify misleading information and exercise consumer rights."
+                }
+            }
+        ]
+    }
 ]
