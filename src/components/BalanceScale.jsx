@@ -14,8 +14,11 @@ const poaItems = [
   { id: "profit", label: "Retained Profit", category: "equity" },
 ];
 
-export default function BalanceScale({ experimentType }) {
-  const [mode, setMode] = useState("math");
+export default function BalanceScale({ subjectId, experimentType }) {
+  // Subject-aware initial mode: mathematics → algebra, POA → accounting.
+  const [mode, setMode] = useState(
+    subjectId === "principles-of-accounts" ? "poa" : "math"
+  );
   const [leftSide, setLeftSide] = useState([]);
   const [rightSide, setRightSide] = useState([]);
   const [message, setMessage] = useState("");
@@ -23,8 +26,11 @@ export default function BalanceScale({ experimentType }) {
   const [dragging, setDragging] = useState(null);
 
   useEffect(() => {
-    if (experimentType === "balance-scale") setMode("math");
-  }, [experimentType]);
+    if (subjectId === "principles-of-accounts") setMode("poa");
+    else setMode("math");
+    handleReset();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [subjectId, experimentType]);
 
   function addLeft(item) { setLeftSide((p) => [...p, item]); setMessage(""); }
   function addRight(item) { setRightSide((p) => [...p, item]); setMessage(""); }

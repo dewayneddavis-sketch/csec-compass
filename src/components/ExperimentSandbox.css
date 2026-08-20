@@ -44,6 +44,23 @@
 .dd-actions { display: flex; align-items: center; gap: 1rem; }
 .dd-success { font-size: 0.9rem; font-weight: 600; color: #16a34a; }
 @media (max-width: 640px) { .dd-main { flex-direction: column-reverse; } .dd-labels { flex-direction: row; flex-wrap: wrap; flex: 1; } }
+/* List-style match / sort layout (non-diagram subjects) */
+.dd-main-list { display: flex; gap: 1.5rem; align-items: stretch; flex-wrap: wrap; }
+.dd-main-list .dd-labels { flex: 1 1 160px; }
+.dd-zones { flex: 1.6 1 240px; display: flex; flex-direction: column; gap: 0.5rem; }
+.dd-zones h4 { font-size: 0.9rem; color: #374151; margin-bottom: 0.25rem; }
+.dd-zone {
+  display: flex; justify-content: space-between; align-items: center; gap: 0.75rem;
+  padding: 0.6rem 0.85rem; background: #f9fafb; border: 2px dashed #cbd5e1;
+  border-radius: 10px; min-height: 2.9rem; transition: all 0.2s;
+}
+.dd-zone.filled { background: #f0fdf4; border-style: solid; border-color: #86efac; }
+.dd-zone-label { font-size: 0.85rem; font-weight: 600; color: #374151; flex: 0 0 auto; }
+.dd-zone-value { font-size: 0.8rem; color: #16a34a; font-weight: 500; text-align: right; flex: 1 1 auto; }
+.gc-select {
+  width: 100%; padding: 0.45rem 0.6rem; border: 1px solid #d1d5db; border-radius: 8px;
+  font-size: 0.85rem; color: #374151; background: #fff; cursor: pointer;
+}
 
 /* Circuit Builder */
 .circuit-builder{display:flex;flex-direction:column;gap:1rem}
