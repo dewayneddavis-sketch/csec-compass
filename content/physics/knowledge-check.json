@@ -2,36 +2,61 @@
   {
     "id": "q1",
     "question": "Which of the following is a vector quantity?",
-    "options": ["Mass", "Distance", "Velocity", "Temperature"],
+    "options": [
+      "Mass",
+      "Distance",
+      "Velocity",
+      "Temperature"
+    ],
     "answer": "Velocity",
     "explanation": "Velocity has both magnitude and direction, making it a vector. The others are scalars."
   },
   {
     "id": "q2",
     "question": "The gradient of a distance-time graph represents:",
-    "options": ["Acceleration", "Speed", "Force", "Displacement"],
+    "options": [
+      "Acceleration",
+      "Speed",
+      "Force",
+      "Displacement"
+    ],
     "answer": "Speed",
     "explanation": "Speed is the rate of change of distance, which corresponds to the gradient of the distance-time graph."
   },
   {
     "id": "q3",
     "question": "In which state of matter is heat transfer by conduction most effective?",
-    "options": ["Solid", "Liquid", "Gas", "Vacuum"],
+    "options": [
+      "Solid",
+      "Liquid",
+      "Gas",
+      "Vacuum"
+    ],
     "answer": "Solid",
     "explanation": "Conduction relies on direct contact and vibration of particles, which are closest together in solids."
   },
   {
     "id": "q4",
     "question": "According to Boyle's Law, if the volume of a gas decreases at a constant temperature, the pressure will:",
-    "options": ["Decrease", "Increase", "Stay the same", "Become zero"],
+    "options": [
+      "Decrease",
+      "Increase",
+      "Stay the same",
+      "Become zero"
+    ],
     "answer": "Increase",
     "explanation": "Boyle's Law states that pressure and volume are inversely proportional (PV = constant)."
   },
   {
     "id": "q5",
-    "question": "What is the relationship between wave speed (v), frequency (f), and wavelength (λ)?",
-    "options": ["v = f + λ", "v = f / λ", "v = fλ", "v = λ / f"],
-    "answer": "v = fλ",
+    "question": "What is the relationship between wave speed (v), frequency (f), and wavelength (\u03bb)?",
+    "options": [
+      "v = f + \u03bb",
+      "v = f / \u03bb",
+      "v = f\u03bb",
+      "v = \u03bb / f"
+    ],
+    "answer": "v = f\u03bb",
     "explanation": "The wave equation states that speed equals the product of frequency and wavelength."
   },
   {
@@ -49,64 +74,229 @@
   {
     "id": "q7",
     "question": "In a series circuit, if one bulb blows, the other bulbs will:",
-    "options": ["Stay lit", "Get brighter", "Go out", "Get dimmer"],
+    "options": [
+      "Stay lit",
+      "Get brighter",
+      "Go out",
+      "Get dimmer"
+    ],
     "answer": "Go out",
     "explanation": "In a series circuit, there is only one path for current. If that path is broken, current stops flowing everywhere."
   },
   {
     "id": "q8",
     "question": "What is the unit of electrical resistance?",
-    "options": ["Volt", "Ampere", "Ohm", "Watt"],
+    "options": [
+      "Volt",
+      "Ampere",
+      "Ohm",
+      "Watt"
+    ],
     "answer": "Ohm",
-    "explanation": "Resistance is measured in Ohms (Ω), according to Ohm's Law (V = IR)."
+    "explanation": "Resistance is measured in Ohms (\u03a9), according to Ohm's Law (V = IR)."
   },
   {
     "id": "q9",
     "question": "Which type of radiation has the highest penetrating power?",
-    "options": ["Alpha", "Beta", "Gamma", "X-ray"],
+    "options": [
+      "Alpha",
+      "Beta",
+      "Gamma",
+      "X-ray"
+    ],
     "answer": "Gamma",
     "explanation": "Gamma rays are high-energy electromagnetic waves and can pass through several centimeters of lead."
   },
   {
     "id": "q10",
     "question": "If a radioactive source has a half-life of 2 hours, what fraction of the original sample remains after 6 hours?",
-    "options": ["1/2", "1/4", "1/8", "1/16"],
+    "options": [
+      "1/2",
+      "1/4",
+      "1/8",
+      "1/16"
+    ],
     "answer": "1/8",
     "explanation": "After 3 half-lives (6/2=3), the remaining fraction is (1/2)^3 = 1/8."
   },
   {
     "id": "q11",
     "question": "What is the weight of a 10kg mass on Earth? (g = 10 N/kg)",
-    "options": ["1N", "10N", "100N", "1000N"],
+    "options": [
+      "1N",
+      "10N",
+      "100N",
+      "1000N"
+    ],
     "answer": "100N",
     "explanation": "Weight = mass * gravity = 10kg * 10 N/kg = 100N."
   },
   {
     "id": "q12",
     "question": "The energy of a moving object is called:",
-    "options": ["Potential energy", "Kinetic energy", "Thermal energy", "Chemical energy"],
+    "options": [
+      "Potential energy",
+      "Kinetic energy",
+      "Thermal energy",
+      "Chemical energy"
+    ],
     "answer": "Kinetic energy",
     "explanation": "Kinetic energy is the energy an object possesses due to its motion."
   },
   {
     "id": "q13",
     "question": "Which of these is a non-renewable energy source?",
-    "options": ["Solar", "Wind", "Coal", "Hydroelectric"],
+    "options": [
+      "Solar",
+      "Wind",
+      "Coal",
+      "Hydroelectric"
+    ],
     "answer": "Coal",
     "explanation": "Coal is a fossil fuel and cannot be replenished on a human timescale."
   },
   {
     "id": "q14",
     "question": "Sound waves are an example of:",
-    "options": ["Transverse waves", "Longitudinal waves", "Electromagnetic waves", "Surface waves"],
+    "options": [
+      "Transverse waves",
+      "Longitudinal waves",
+      "Electromagnetic waves",
+      "Surface waves"
+    ],
     "answer": "Longitudinal waves",
     "explanation": "Sound waves involve particles vibrating back and forth in the same direction as the wave travels."
   },
   {
     "id": "q15",
     "question": "The process of a gas turning into a liquid is called:",
-    "options": ["Evaporation", "Sublimation", "Condensation", "Freezing"],
+    "options": [
+      "Evaporation",
+      "Sublimation",
+      "Condensation",
+      "Freezing"
+    ],
     "answer": "Condensation",
     "explanation": "Condensation is the phase change from gas to liquid."
+  },
+  {
+    "id": "q16",
+    "question": "What is the unit of power?",
+    "options": [
+      "Joule",
+      "Watt",
+      "Newton",
+      "Volt"
+    ],
+    "answer": "Watt",
+    "explanation": "Power is measured in Watts (W), which is Joules per second."
+  },
+  {
+    "id": "q17",
+    "question": "According to Newton's Second Law, Force is equal to mass times?",
+    "options": [
+      "Velocity",
+      "Distance",
+      "Acceleration",
+      "Time"
+    ],
+    "answer": "Acceleration",
+    "explanation": "F = m * a."
+  },
+  {
+    "id": "q18",
+    "question": "What type of energy is stored in a stretched rubber band?",
+    "options": [
+      "Kinetic energy",
+      "Elastic potential energy",
+      "Chemical energy",
+      "Thermal energy"
+    ],
+    "answer": "Elastic potential energy",
+    "explanation": "Energy stored as a result of deformation is elastic potential energy."
+  },
+  {
+    "id": "q19",
+    "question": "Which color of visible light has the longest wavelength?",
+    "options": [
+      "Blue",
+      "Green",
+      "Yellow",
+      "Red"
+    ],
+    "answer": "Red",
+    "explanation": "Red light is at the long-wavelength end of the visible spectrum."
+  },
+  {
+    "id": "q20",
+    "question": "What is the frequency of a wave with a period of 0.02 seconds?",
+    "options": [
+      "20 Hz",
+      "50 Hz",
+      "100 Hz",
+      "5 Hz"
+    ],
+    "answer": "50 Hz",
+    "explanation": "Frequency f = 1 / T = 1 / 0.02 = 50 Hz."
+  },
+  {
+    "id": "q21",
+    "question": "The heat transfer that occurs in fluids (liquids and gases) is called?",
+    "options": [
+      "Conduction",
+      "Convection",
+      "Radiation",
+      "Insulation"
+    ],
+    "answer": "Convection",
+    "explanation": "Convection is the transfer of heat through the movement of the fluid itself."
+  },
+  {
+    "id": "q22",
+    "question": "What is the resistance of a circuit with a voltage of 10V and a current of 2A?",
+    "options": [
+      "5 \u03a9",
+      "20 \u03a9",
+      "0.2 \u03a9",
+      "12 \u03a9"
+    ],
+    "answer": "5 \u03a9",
+    "explanation": "R = V / I = 10 / 2 = 5 Ohms."
+  },
+  {
+    "id": "q23",
+    "question": "Which mirror always forms a virtual, upright, and diminished image?",
+    "options": [
+      "Plane mirror",
+      "Concave mirror",
+      "Convex mirror",
+      "Parabolic mirror"
+    ],
+    "answer": "Convex mirror",
+    "explanation": "Convex mirrors diverge light rays and always produce virtual, smaller images."
+  },
+  {
+    "id": "q24",
+    "question": "What is the SI unit of pressure?",
+    "options": [
+      "Newton",
+      "Joule",
+      "Pascal",
+      "Watt"
+    ],
+    "answer": "Pascal",
+    "explanation": "Pressure is measured in Pascals (Pa)."
+  },
+  {
+    "id": "q25",
+    "question": "Which component in a circuit is used to measure electric current?",
+    "options": [
+      "Voltmeter",
+      "Ammeter",
+      "Resistor",
+      "Capacitor"
+    ],
+    "answer": "Ammeter",
+    "explanation": "An ammeter is connected in series to measure current."
   }
 ]

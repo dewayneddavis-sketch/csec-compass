@@ -7,8 +7,9 @@
       "Single-parent Family",
       "Reconstituted Family"
     ],
-    "answer": 1,
-    "explanation": "A nuclear family is the traditional family structure consisting of two parents and their children."
+    "answer": "Nuclear Family",
+    "explanation": "A nuclear family is the traditional family structure consisting of two parents and their children.",
+    "id": "q1"
   },
   {
     "question": "Which of the following is a function of the family in society?",
@@ -18,8 +19,9 @@
       "Printing money",
       "Defending the borders"
     ],
-    "answer": 1,
-    "explanation": "Socialization is the process by which children learn the values and norms of their society, primarily through the family."
+    "answer": "Socializing children",
+    "explanation": "Socialization is the process by which children learn the values and norms of their society, primarily through the family.",
+    "id": "q2"
   },
   {
     "question": "A group of friends who meet regularly for social activities is an example of a:",
@@ -29,8 +31,9 @@
       "Social Institution",
       "Government Branch"
     ],
-    "answer": 0,
-    "explanation": "Primary groups are characterized by close, personal, and enduring relationships, such as family and close friends."
+    "answer": "Primary Group",
+    "explanation": "Primary groups are characterized by close, personal, and enduring relationships, such as family and close friends.",
+    "id": "q3"
   },
   {
     "question": "Which social institution is primarily responsible for spiritual guidance?",
@@ -40,8 +43,9 @@
       "Religion",
       "The Justice System"
     ],
-    "answer": 2,
-    "explanation": "Religion provides spiritual guidance, moral frameworks, and a sense of community for many people."
+    "answer": "Religion",
+    "explanation": "Religion provides spiritual guidance, moral frameworks, and a sense of community for many people.",
+    "id": "q4"
   },
   {
     "question": "In a Republic, who is typically the formal head of state?",
@@ -51,8 +55,9 @@
       "The President",
       "The Chief Justice"
     ],
-    "answer": 2,
-    "explanation": "In a republic, the head of state is usually a President, rather than a monarch."
+    "answer": "The President",
+    "explanation": "In a republic, the head of state is usually a President, rather than a monarch.",
+    "id": "q5"
   },
   {
     "question": "Which branch of government is responsible for making laws?",
@@ -62,8 +67,9 @@
       "Judiciary",
       "Administrative"
     ],
-    "answer": 1,
-    "explanation": "The Legislative branch (usually Parliament or Congress) has the power to debate and pass laws."
+    "answer": "Legislative",
+    "explanation": "The Legislative branch (usually Parliament or Congress) has the power to debate and pass laws.",
+    "id": "q6"
   },
   {
     "question": "What is one of the main objectives of CARICOM?",
@@ -73,8 +79,9 @@
       "To build a single island for all members",
       "To replace all local languages with one"
     ],
-    "answer": 1,
-    "explanation": "CARICOM aims to improve the standards of living and work in its member states through economic integration."
+    "answer": "To promote economic integration among member states",
+    "explanation": "CARICOM aims to improve the standards of living and work in its member states through economic integration.",
+    "id": "q7"
   },
   {
     "question": "Which of the following is a member state of CARICOM?",
@@ -84,8 +91,9 @@
       "Jamaica",
       "Mexico"
     ],
-    "answer": 2,
-    "explanation": "Jamaica is a founding and active member state of the Caribbean Community (CARICOM)."
+    "answer": "Jamaica",
+    "explanation": "Jamaica is a founding and active member state of the Caribbean Community (CARICOM).",
+    "id": "q8"
   },
   {
     "question": "The number of live births per 1,000 people in a population per year is called the:",
@@ -95,8 +103,9 @@
       "Birth Rate",
       "Growth Rate"
     ],
-    "answer": 2,
-    "explanation": "The crude birth rate is the total number of live births per 1,000 population in a given year."
+    "answer": "Birth Rate",
+    "explanation": "The crude birth rate is the total number of live births per 1,000 population in a given year.",
+    "id": "q9"
   },
   {
     "question": "Which of the following is a 'push factor' for migration?",
@@ -106,8 +115,9 @@
       "Good climate",
       "Political stability"
     ],
-    "answer": 1,
-    "explanation": "Push factors are negative conditions that encourage people to leave their current location, such as unemployment."
+    "answer": "Lack of employment opportunities",
+    "explanation": "Push factors are negative conditions that encourage people to leave their current location, such as unemployment.",
+    "id": "q10"
   },
   {
     "question": "When a person moves from a rural area to a city within the same country, it is called:",
@@ -117,8 +127,9 @@
       "Emigration",
       "Immigration"
     ],
-    "answer": 1,
-    "explanation": "Internal migration is the movement of people from one place to another within the same country."
+    "answer": "Internal Migration",
+    "explanation": "Internal migration is the movement of people from one place to another within the same country.",
+    "id": "q11"
   },
   {
     "question": "The gap between those who have access to modern information technology and those who do not is known as the:",
@@ -128,8 +139,9 @@
       "Communication Gap",
       "Media Bias"
     ],
-    "answer": 0,
-    "explanation": "The digital divide refers to the economic and social inequality regarding access to, use of, or impact of ICT."
+    "answer": "Digital Divide",
+    "explanation": "The digital divide refers to the economic and social inequality regarding access to, use of, or impact of ICT.",
+    "id": "q12"
   },
   {
     "question": "Which consumer right ensures that you can return a faulty product for a refund or repair?",
@@ -139,8 +151,9 @@
       "Right to Redress",
       "Right to Information"
     ],
-    "answer": 2,
-    "explanation": "The right to redress allows consumers to seek compensation or a remedy for unsatisfactory goods or services."
+    "answer": "Right to Redress",
+    "explanation": "The right to redress allows consumers to seek compensation or a remedy for unsatisfactory goods or services.",
+    "id": "q13"
   },
   {
     "question": "What is the primary purpose of a budget?",
@@ -150,8 +163,9 @@
       "To borrow money from the bank",
       "To avoid paying taxes"
     ],
-    "answer": 1,
-    "explanation": "A budget is a financial plan that helps individuals or organizations manage their money effectively."
+    "answer": "To track income and plan expenses",
+    "explanation": "A budget is a financial plan that helps individuals or organizations manage their money effectively.",
+    "id": "q14"
   },
   {
     "question": "Which of these is a form of non-verbal communication?",
@@ -161,7 +175,128 @@
       "Body language",
       "A phone call"
     ],
-    "answer": 2,
-    "explanation": "Non-verbal communication includes gestures, facial expressions, and body language."
+    "answer": "Body language",
+    "explanation": "Non-verbal communication includes gestures, facial expressions, and body language.",
+    "id": "q15"
+  },
+  {
+    "id": "q16",
+    "question": "Which of these is a function of the government in a country?",
+    "options": [
+      "Choosing what people wear",
+      "Providing public services like education and healthcare",
+      "Telling people who to marry",
+      "Making sure everyone has the same car"
+    ],
+    "answer": "Providing public services like education and healthcare",
+    "explanation": "Governments are responsible for infrastructure and social services."
+  },
+  {
+    "id": "q17",
+    "question": "What is 'Urbanization'?",
+    "options": [
+      "The growth of forests",
+      "The movement of people from rural areas to cities",
+      "The decrease in population",
+      "The building of more farms"
+    ],
+    "answer": "The movement of people from rural areas to cities",
+    "explanation": "It leads to the expansion of urban centers."
+  },
+  {
+    "id": "q18",
+    "question": "Which regional organization was formed to promote economic integration among Caribbean nations?",
+    "options": [
+      "UN",
+      "CARICOM",
+      "OAS",
+      "WHO"
+    ],
+    "answer": "CARICOM",
+    "explanation": "The Caribbean Community (CARICOM) promotes cooperation and trade in the region."
+  },
+  {
+    "id": "q19",
+    "question": "What is the main cause of 'Brain Drain' in the Caribbean?",
+    "options": [
+      "Too much education",
+      "Migration of skilled professionals to other countries",
+      "Not enough schools",
+      "People forgetting what they learned"
+    ],
+    "answer": "Migration of skilled professionals to other countries",
+    "explanation": "Skilled workers leave for better opportunities abroad."
+  },
+  {
+    "id": "q20",
+    "question": "Which of these is a primary source of information for a historian?",
+    "options": [
+      "A history textbook",
+      "An original diary from the time period",
+      "A movie about the event",
+      "A Wikipedia article"
+    ],
+    "answer": "An original diary from the time period",
+    "explanation": "Primary sources are first-hand accounts of events."
+  },
+  {
+    "id": "q21",
+    "question": "What is a 'Constitutional Monarchy'?",
+    "options": [
+      "A system where the King has absolute power",
+      "A system where a Monarch is the head of state but follows a constitution",
+      "A system without a leader",
+      "A system where religious leaders rule"
+    ],
+    "answer": "A system where a Monarch is the head of state but follows a constitution",
+    "explanation": "Many Caribbean countries have this system with the British Monarch as the symbolic head."
+  },
+  {
+    "id": "q22",
+    "question": "The 'push factor' in migration refers to?",
+    "options": [
+      "Something that attracts you to a new country",
+      "Something that makes you want to leave your current country",
+      "A law that prevents moving",
+      "The cost of travel"
+    ],
+    "answer": "Something that makes you want to leave your current country",
+    "explanation": "Factors like lack of jobs or war push people away."
+  },
+  {
+    "id": "q23",
+    "question": "What is the purpose of a 'Referendum'?",
+    "options": [
+      "To elect a new President",
+      "A direct vote by the people on a specific proposal or issue",
+      "To pass a law in parliament",
+      "To hire new judges"
+    ],
+    "answer": "A direct vote by the people on a specific proposal or issue",
+    "explanation": "It allows citizens to express their opinion on important matters."
+  },
+  {
+    "id": "q24",
+    "question": "Which of these is a non-renewable resource?",
+    "options": [
+      "Solar energy",
+      "Wind",
+      "Petroleum (Oil)",
+      "Timber"
+    ],
+    "answer": "Petroleum (Oil)",
+    "explanation": "Fossil fuels take millions of years to form and cannot be replaced once used."
+  },
+  {
+    "id": "q25",
+    "question": "'Socialization' is the process of?",
+    "options": [
+      "Learning the rules and values of one's society",
+      "Moving to a new neighborhood",
+      "Voting in an election",
+      "Starting a business"
+    ],
+    "answer": "Learning the rules and values of one's society",
+    "explanation": "It begins in childhood through family and school."
   }
 ]

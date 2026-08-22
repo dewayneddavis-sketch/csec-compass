@@ -7,8 +7,9 @@
       "Windows 11",
       "Adobe Photoshop"
     ],
-    "answer": 2,
-    "explanation": "Windows 11 is an operating system, which is the primary type of system software."
+    "answer": "Windows 11",
+    "explanation": "Windows 11 is an operating system, which is the primary type of system software.",
+    "id": "q1"
   },
   {
     "question": "What is the decimal equivalent of the binary number 1011?",
@@ -18,8 +19,9 @@
       "11",
       "13"
     ],
-    "answer": 2,
-    "explanation": "(1*8) + (0*4) + (1*2) + (1*1) = 8 + 0 + 2 + 1 = 11."
+    "answer": "11",
+    "explanation": "(1*8) + (0*4) + (1*2) + (1*1) = 8 + 0 + 2 + 1 = 11.",
+    "id": "q2"
   },
   {
     "question": "In a flowchart, what does a diamond shape represent?",
@@ -29,8 +31,9 @@
       "Process",
       "Decision"
     ],
-    "answer": 3,
-    "explanation": "A diamond shape represents a decision point in an algorithm."
+    "answer": "Decision",
+    "explanation": "A diamond shape represents a decision point in an algorithm.",
+    "id": "q3"
   },
   {
     "question": "Which programming construct is used to repeat a block of code a specific number of times?",
@@ -40,8 +43,9 @@
       "FOR Loop",
       "IF-THEN"
     ],
-    "answer": 2,
-    "explanation": "A FOR loop is a type of iteration used when the number of repetitions is known."
+    "answer": "FOR Loop",
+    "explanation": "A FOR loop is a type of iteration used when the number of repetitions is known.",
+    "id": "q4"
   },
   {
     "question": "What is the primary function of a 'Primary Key' in a database table?",
@@ -51,8 +55,9 @@
       "To encrypt sensitive information",
       "To link the database to the internet"
     ],
-    "answer": 1,
-    "explanation": "A Primary Key must be unique for every record in a table."
+    "answer": "To uniquely identify each record",
+    "explanation": "A Primary Key must be unique for every record in a table.",
+    "id": "q5"
   },
   {
     "question": "Which SQL keyword is used to extract data from a database?",
@@ -62,8 +67,9 @@
       "SELECT",
       "EXTRACT"
     ],
-    "answer": 2,
-    "explanation": "The SELECT statement is used to select data from a database."
+    "answer": "SELECT",
+    "explanation": "The SELECT statement is used to select data from a database.",
+    "id": "q6"
   },
   {
     "question": "Which network topology connects all devices to a central hub or switch?",
@@ -73,8 +79,9 @@
       "Ring",
       "Mesh"
     ],
-    "answer": 1,
-    "explanation": "In a Star topology, all nodes are connected to a central connection point."
+    "answer": "Star",
+    "explanation": "In a Star topology, all nodes are connected to a central connection point.",
+    "id": "q7"
   },
   {
     "question": "What does 'HTTPS' provide that 'HTTP' does not?",
@@ -84,8 +91,9 @@
       "Encrypted communication",
       "Automatic translations"
     ],
-    "answer": 2,
-    "explanation": "HTTPS uses encryption to secure the communication between the browser and the server."
+    "answer": "Encrypted communication",
+    "explanation": "HTTPS uses encryption to secure the communication between the browser and the server.",
+    "id": "q8"
   },
   {
     "question": "Which HTML tag is used to create a hyperlink?",
@@ -95,8 +103,9 @@
       "<href>",
       "<url>"
     ],
-    "answer": 1,
-    "explanation": "The <a> (anchor) tag is used to define hyperlinks."
+    "answer": "<a>",
+    "explanation": "The <a> (anchor) tag is used to define hyperlinks.",
+    "id": "q9"
   },
   {
     "question": "What is the correct CSS syntax to change the text color of all <p> elements to red?",
@@ -106,8 +115,9 @@
       "p: red;",
       "all.p {color: red;}"
     ],
-    "answer": 0,
-    "explanation": "The selector is 'p' and the property is 'color' set to 'red'."
+    "answer": "p {color: red;}",
+    "explanation": "The selector is 'p' and the property is 'color' set to 'red'.",
+    "id": "q10"
   },
   {
     "question": "In a spreadsheet, what does the formula =SUM(A1:A5) do?",
@@ -117,8 +127,9 @@
       "Adds the values in the range A1 through A5",
       "Finds the largest value in the range A1 through A5"
     ],
-    "answer": 2,
-    "explanation": "The SUM function adds up all the numbers in the specified range."
+    "answer": "Adds the values in the range A1 through A5",
+    "explanation": "The SUM function adds up all the numbers in the specified range.",
+    "id": "q11"
   },
   {
     "question": "Which feature in word processing is used to create personalized letters for a large number of recipients?",
@@ -128,8 +139,9 @@
       "Spell Check",
       "Find and Replace"
     ],
-    "answer": 1,
-    "explanation": "Mail Merge allows you to link a data source to a document template."
+    "answer": "Mail Merge",
+    "explanation": "Mail Merge allows you to link a data source to a document template.",
+    "id": "q12"
   },
   {
     "question": "How many bits are in one byte?",
@@ -139,8 +151,9 @@
       "16",
       "1024"
     ],
-    "answer": 1,
-    "explanation": "There are exactly 8 bits in one byte."
+    "answer": "8",
+    "explanation": "There are exactly 8 bits in one byte.",
+    "id": "q13"
   },
   {
     "question": "Which of the following is an example of an input device?",
@@ -150,8 +163,9 @@
       "Scanner",
       "Speaker"
     ],
-    "answer": 2,
-    "explanation": "A scanner is an input device used to convert physical documents into digital data."
+    "answer": "Scanner",
+    "explanation": "A scanner is an input device used to convert physical documents into digital data.",
+    "id": "q14"
   },
   {
     "question": "What is the purpose of a firewall?",
@@ -161,7 +175,128 @@
       "To store backup copies of files",
       "To cool down the server room"
     ],
-    "answer": 1,
-    "explanation": "A firewall monitors and controls incoming and outgoing network traffic based on security rules."
+    "answer": "To protect a network from unauthorized access",
+    "explanation": "A firewall monitors and controls incoming and outgoing network traffic based on security rules.",
+    "id": "q15"
+  },
+  {
+    "id": "q16",
+    "question": "What does GUI stand for?",
+    "options": [
+      "General User Interval",
+      "Graphical User Interface",
+      "Global User Index",
+      "Graphics Universal Integration"
+    ],
+    "answer": "Graphical User Interface",
+    "explanation": "GUI is a type of user interface that allows users to interact with devices through graphical icons."
+  },
+  {
+    "id": "q17",
+    "question": "Which of these is an example of an input device?",
+    "options": [
+      "Monitor",
+      "Printer",
+      "Scanner",
+      "Speaker"
+    ],
+    "answer": "Scanner",
+    "explanation": "A scanner takes physical data and converts it into digital format for the computer."
+  },
+  {
+    "id": "q18",
+    "question": "In a spreadsheet, what is the intersection of a row and a column called?",
+    "options": [
+      "Grid",
+      "Box",
+      "Cell",
+      "Block"
+    ],
+    "answer": "Cell",
+    "explanation": "A cell is the basic unit for entering data in a spreadsheet."
+  },
+  {
+    "id": "q19",
+    "question": "What does the 'S' in HTTPS stand for?",
+    "options": [
+      "Simple",
+      "Secure",
+      "System",
+      "Standard"
+    ],
+    "answer": "Secure",
+    "explanation": "HTTPS is the secure version of HTTP, using encryption for data transfer."
+  },
+  {
+    "id": "q20",
+    "question": "Which of the following is a high-level programming language?",
+    "options": [
+      "Machine Code",
+      "Assembly",
+      "Python",
+      "Binary"
+    ],
+    "answer": "Python",
+    "explanation": "High-level languages like Python are closer to human language and easier to read."
+  },
+  {
+    "id": "q21",
+    "question": "What is the main function of the ALU in the CPU?",
+    "options": [
+      "Store data",
+      "Perform calculations",
+      "Control flow",
+      "Manage peripherals"
+    ],
+    "answer": "Perform calculations",
+    "explanation": "The Arithmetic Logic Unit performs all arithmetic and logical operations."
+  },
+  {
+    "id": "q22",
+    "question": "Which type of network covers a large geographical area, such as a country or the world?",
+    "options": [
+      "LAN",
+      "PAN",
+      "MAN",
+      "WAN"
+    ],
+    "answer": "WAN",
+    "explanation": "A Wide Area Network (WAN) connects smaller networks over long distances."
+  },
+  {
+    "id": "q23",
+    "question": "What is 'phishing'?",
+    "options": [
+      "A way to speed up the internet",
+      "A fraudulent attempt to obtain sensitive information",
+      "A type of database software",
+      "A programming technique"
+    ],
+    "answer": "A fraudulent attempt to obtain sensitive information",
+    "explanation": "Phishing usually involves deceptive emails or websites."
+  },
+  {
+    "id": "q24",
+    "question": "In database terminology, a collection of related fields is called a?",
+    "options": [
+      "Table",
+      "Record",
+      "File",
+      "Attribute"
+    ],
+    "answer": "Record",
+    "explanation": "A record (or row) contains all the data for one specific entry."
+  },
+  {
+    "id": "q25",
+    "question": "What is the binary equivalent of the decimal number 10?",
+    "options": [
+      "1000",
+      "1010",
+      "1100",
+      "1111"
+    ],
+    "answer": "1010",
+    "explanation": "8 + 2 = 10, which is 1010 in binary."
   }
 ]
