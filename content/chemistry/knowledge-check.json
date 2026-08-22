@@ -49,7 +49,7 @@
   },
   {
     "id": "q5",
-    "question": "What is the pH of a neutral solution at 25°C?",
+    "question": "What is the pH of a neutral solution at 25\u00b0C?",
     "options": [
       "0",
       "1",
@@ -178,5 +178,125 @@
     ],
     "answer": "Fractional distillation",
     "explanation": "Fractional distillation separates liquids based on their different boiling points."
+  },
+  {
+    "id": "q16",
+    "question": "What is the atomic number of Carbon?",
+    "options": [
+      "6",
+      "12",
+      "14",
+      "8"
+    ],
+    "answer": "6",
+    "explanation": "The atomic number represents the number of protons; Carbon has 6."
+  },
+  {
+    "id": "q17",
+    "question": "Which of these is a covalent compound?",
+    "options": [
+      "NaCl",
+      "MgO",
+      "H2O",
+      "KCl"
+    ],
+    "answer": "H2O",
+    "explanation": "Water is formed by the sharing of electrons between hydrogen and oxygen atoms."
+  },
+  {
+    "id": "q18",
+    "question": "What is the pH value of a neutral solution?",
+    "options": [
+      "1",
+      "7",
+      "14",
+      "0"
+    ],
+    "answer": "7",
+    "explanation": "On the pH scale, 7 is neutral, below 7 is acidic, and above 7 is alkaline."
+  },
+  {
+    "id": "q19",
+    "question": "Which process involves a solid changing directly into a gas?",
+    "options": [
+      "Melting",
+      "Evaporation",
+      "Sublimation",
+      "Condensation"
+    ],
+    "answer": "Sublimation",
+    "explanation": "Sublimation is the transition from solid to gas without passing through the liquid phase."
+  },
+  {
+    "id": "q20",
+    "question": "What is the most abundant gas in the Earth's atmosphere?",
+    "options": [
+      "Oxygen",
+      "Carbon Dioxide",
+      "Nitrogen",
+      "Argon"
+    ],
+    "answer": "Nitrogen",
+    "explanation": "Nitrogen makes up approximately 78% of the Earth's atmosphere."
+  },
+  {
+    "id": "q21",
+    "question": "An atom that has gained or lost electrons is called an:",
+    "options": [
+      "Isotope",
+      "Molecule",
+      "Ion",
+      "Proton"
+    ],
+    "answer": "Ion",
+    "explanation": "Ions are charged particles formed when atoms gain or lose electrons."
+  },
+  {
+    "id": "q22",
+    "question": "What is the name of the reaction between an acid and a base?",
+    "options": [
+      "Oxidation",
+      "Reduction",
+      "Neutralization",
+      "Combustion"
+    ],
+    "answer": "Neutralization",
+    "explanation": "Neutralization produces a salt and water."
+  },
+  {
+    "id": "q23",
+    "question": "Which metal is liquid at room temperature?",
+    "options": [
+      "Iron",
+      "Mercury",
+      "Copper",
+      "Aluminum"
+    ],
+    "answer": "Mercury",
+    "explanation": "Mercury is the only metal that is liquid at standard room temperature and pressure."
+  },
+  {
+    "id": "q24",
+    "question": "What is the empirical formula of Benzene (C6H6)?",
+    "options": [
+      "CH",
+      "C2H2",
+      "C3H3",
+      "C6H6"
+    ],
+    "answer": "CH",
+    "explanation": "The empirical formula is the simplest whole-number ratio of atoms; for C6H6 it is 1:1."
+  },
+  {
+    "id": "q25",
+    "question": "Which subatomic particle has a negative charge?",
+    "options": [
+      "Proton",
+      "Neutron",
+      "Electron",
+      "Nucleus"
+    ],
+    "answer": "Electron",
+    "explanation": "Electrons carry a negative charge, while protons are positive and neutrons are neutral."
   }
 ]

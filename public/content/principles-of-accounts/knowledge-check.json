@@ -26,7 +26,12 @@
   {
     "id": "q3",
     "question": "An increase in an asset account is recorded as a:",
-    "options": ["Debit", "Credit", "Journal entry", "Balance"],
+    "options": [
+      "Debit",
+      "Credit",
+      "Journal entry",
+      "Balance"
+    ],
     "answer": "Debit",
     "explanation": "According to the rules of double entry, increases in assets are recorded as debits."
   },
@@ -57,7 +62,12 @@
   {
     "id": "q6",
     "question": "Which of the following is a Current Asset?",
-    "options": ["Machinery", "Long-term Loan", "Inventory (Stock)", "Buildings"],
+    "options": [
+      "Machinery",
+      "Long-term Loan",
+      "Inventory (Stock)",
+      "Buildings"
+    ],
     "answer": "Inventory (Stock)",
     "explanation": "Current assets are expected to be converted into cash within one year."
   },
@@ -100,7 +110,12 @@
   {
     "id": "q10",
     "question": "The 'Credit' side of a T-account is the:",
-    "options": ["Top", "Bottom", "Left side", "Right side"],
+    "options": [
+      "Top",
+      "Bottom",
+      "Left side",
+      "Right side"
+    ],
     "answer": "Right side",
     "explanation": "By convention, the left side of a ledger account is the Debit side and the right side is the Credit side."
   },
@@ -155,8 +170,133 @@
   {
     "id": "q15",
     "question": "Net Profit is added to:",
-    "options": ["Assets", "Liabilities", "Capital", "Sales"],
+    "options": [
+      "Assets",
+      "Liabilities",
+      "Capital",
+      "Sales"
+    ],
     "answer": "Capital",
     "explanation": "Net profit belongs to the owner and therefore increases the owner's investment (Capital) in the business."
+  },
+  {
+    "id": "q16",
+    "question": "Which of the following is a nominal account?",
+    "options": [
+      "Furniture Account",
+      "Cash Account",
+      "Rent Account",
+      "Bank Account"
+    ],
+    "answer": "Rent Account",
+    "explanation": "Nominal accounts are accounts related to expenses, losses, incomes, or gains."
+  },
+  {
+    "id": "q17",
+    "question": "A purchase of a motor vehicle on credit from XYZ Motors should be recorded in the:",
+    "options": [
+      "Sales Journal",
+      "Purchases Journal",
+      "Cash Book",
+      "General Journal"
+    ],
+    "answer": "General Journal",
+    "explanation": "Transactions not recorded in specialized journals, like purchasing a fixed asset on credit, go to the General Journal."
+  },
+  {
+    "id": "q18",
+    "question": "Which account is credited when a business pays rent by check?",
+    "options": [
+      "Rent Account",
+      "Cash Account",
+      "Bank Account",
+      "Capital Account"
+    ],
+    "answer": "Bank Account",
+    "explanation": "Paying by check reduces the bank balance, so the Bank account is credited."
+  },
+  {
+    "id": "q19",
+    "question": "What is 'Bad Debt'?",
+    "options": [
+      "A type of bank loan",
+      "Money owed to the business that is unlikely to be paid",
+      "The profit made on a sale",
+      "An increase in capital"
+    ],
+    "answer": "Money owed to the business that is unlikely to be paid",
+    "explanation": "Bad debts are written off as expenses in the profit and loss account."
+  },
+  {
+    "id": "q20",
+    "question": "The 'Double Entry' for cash sales is:",
+    "options": [
+      "Debit Sales, Credit Cash",
+      "Debit Cash, Credit Sales",
+      "Debit Cash, Credit Capital",
+      "Debit Bank, Credit Sales"
+    ],
+    "answer": "Debit Cash, Credit Sales",
+    "explanation": "Cash increases (debit) and sales revenue increases (credit)."
+  },
+  {
+    "id": "q21",
+    "question": "Calculate the working capital if Current Assets = $5000 and Current Liabilities = $2000.",
+    "options": [
+      "$7000",
+      "$3000",
+      "$5000",
+      "$2000"
+    ],
+    "answer": "$3000",
+    "explanation": "Working Capital = Current Assets - Current Liabilities = 5000 - 2000 = 3000."
+  },
+  {
+    "id": "q22",
+    "question": "Which of the following is an example of an error of principle?",
+    "options": [
+      "Omitting a transaction completely",
+      "Recording a transaction on the wrong side",
+      "Entering a capital expenditure as a revenue expenditure",
+      "Transposing figures in a ledger"
+    ],
+    "answer": "Entering a capital expenditure as a revenue expenditure",
+    "explanation": "An error of principle occurs when a transaction violates accounting principles."
+  },
+  {
+    "id": "q23",
+    "question": "The 'Petty Cash Book' is used for:",
+    "options": [
+      "Recording all cash transactions",
+      "Recording large bank payments",
+      "Recording small, frequent cash payments",
+      "Recording credit purchases"
+    ],
+    "answer": "Recording small, frequent cash payments",
+    "explanation": "Petty cash is kept for minor expenses like stamps or taxi fares."
+  },
+  {
+    "id": "q24",
+    "question": "A 'Credit Note' is issued to a customer when?",
+    "options": [
+      "They buy goods on credit",
+      "They return faulty goods",
+      "They pay their bill",
+      "We buy goods from them"
+    ],
+    "answer": "They return faulty goods",
+    "explanation": "It informs the customer that their account has been credited for the returned items."
+  },
+  {
+    "id": "q25",
+    "question": "Which accounting concept states that items should be recorded at their original cost?",
+    "options": [
+      "Accruals concept",
+      "Going Concern concept",
+      "Historical Cost concept",
+      "Consistency concept"
+    ],
+    "answer": "Historical Cost concept",
+    "explanation": "The historical cost principle requires assets to be recorded at the price paid to acquire them."
   }
 ]

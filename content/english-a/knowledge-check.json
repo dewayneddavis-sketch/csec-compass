@@ -178,5 +178,125 @@
     ],
     "answer": "Adverb",
     "explanation": "'Quickly' describes the verb 'ran', so it is an adverb."
+  },
+  {
+    "id": "q16",
+    "question": "Which word is the most appropriate synonym for 'meticulous'?",
+    "options": [
+      "Careless",
+      "Diligent",
+      "Fast",
+      "Lazy"
+    ],
+    "answer": "Diligent",
+    "explanation": "Meticulous means showing great attention to detail; very careful and precise."
+  },
+  {
+    "id": "q17",
+    "question": "Identify the subject in the sentence: 'The old man walked slowly across the road.'",
+    "options": [
+      "Old man",
+      "Walked",
+      "Slowly",
+      "Road"
+    ],
+    "answer": "Old man",
+    "explanation": "The subject is the person or thing performing the action."
+  },
+  {
+    "id": "q18",
+    "question": "Which of these is a compound sentence?",
+    "options": [
+      "He ran home.",
+      "She likes tea but he likes coffee.",
+      "Because it was raining.",
+      "The cat slept."
+    ],
+    "answer": "She likes tea but he likes coffee.",
+    "explanation": "A compound sentence contains at least two independent clauses joined by a coordinating conjunction."
+  },
+  {
+    "id": "q19",
+    "question": "Choose the correctly spelled word.",
+    "options": [
+      "Accomodate",
+      "Accommodate",
+      "Acomodate",
+      "Acommodate"
+    ],
+    "answer": "Accommodate",
+    "explanation": "Accommodate is spelled with two 'c's and two 'm's."
+  },
+  {
+    "id": "q20",
+    "question": "What is a metaphor?",
+    "options": [
+      "A comparison using like or as",
+      "A direct comparison without using like or as",
+      "Giving human qualities to objects",
+      "An exaggeration"
+    ],
+    "answer": "A direct comparison without using like or as",
+    "explanation": "A metaphor states that one thing is another thing for symbolic effect."
+  },
+  {
+    "id": "q21",
+    "question": "Which sentence uses the apostrophe correctly?",
+    "options": [
+      "The dogs' bowl is full.",
+      "The dog's bowl is full.",
+      "The dogs bowl's is full.",
+      "The dogs bowl is full."
+    ],
+    "answer": "The dog's bowl is full.",
+    "explanation": "Use an apostrophe and 's' to show possession for a singular noun."
+  },
+  {
+    "id": "q22",
+    "question": "'Break a leg' is an example of an:",
+    "options": [
+      "Idiom",
+      "Simile",
+      "Onomatopoeia",
+      "Alliteration"
+    ],
+    "answer": "Idiom",
+    "explanation": "An idiom is a phrase whose meaning is not deducible from the individual words."
+  },
+  {
+    "id": "q23",
+    "question": "What is the main purpose of an expository essay?",
+    "options": [
+      "To tell a story",
+      "To persuade",
+      "To explain or inform",
+      "To describe a scene"
+    ],
+    "answer": "To explain or inform",
+    "explanation": "Expository writing is intended to explain, inform, or describe a subject."
+  },
+  {
+    "id": "q24",
+    "question": "Identify the antonym of 'Arrogant'.",
+    "options": [
+      "Proud",
+      "Humble",
+      "Confident",
+      "Rude"
+    ],
+    "answer": "Humble",
+    "explanation": "Humble is the opposite of arrogant."
+  },
+  {
+    "id": "q25",
+    "question": "Which of these is an example of alliteration?",
+    "options": [
+      "Boom!",
+      "Peter Piper picked a peck.",
+      "He was as cold as ice.",
+      "The wind whispered."
+    ],
+    "answer": "Peter Piper picked a peck.",
+    "explanation": "Alliteration is the repetition of the same letter or sound at the beginning of adjacent or closely connected words."
   }
 ]

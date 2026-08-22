@@ -2,112 +2,301 @@
   {
     "id": "q1",
     "question": "Which organelle is known as the 'powerhouse' of the cell?",
-    "options": ["Nucleus", "Mitochondria", "Ribosome", "Vacuole"],
+    "options": [
+      "Nucleus",
+      "Mitochondria",
+      "Ribosome",
+      "Vacuole"
+    ],
     "answer": "Mitochondria",
     "explanation": "Mitochondria are responsible for producing energy (ATP) through respiration."
   },
   {
     "id": "q2",
     "question": "Which of the following is found in a plant cell but NOT an animal cell?",
-    "options": ["Cell Membrane", "Cytoplasm", "Cell Wall", "Nucleus"],
+    "options": [
+      "Cell Membrane",
+      "Cytoplasm",
+      "Cell Wall",
+      "Nucleus"
+    ],
     "answer": "Cell Wall",
     "explanation": "Plant cells have a rigid cell wall made of cellulose for support; animal cells do not."
   },
   {
     "id": "q3",
     "question": "Osmosis is the movement of ______ across a semi-permeable membrane.",
-    "options": ["Salt", "Oxygen", "Water", "Glucose"],
+    "options": [
+      "Salt",
+      "Oxygen",
+      "Water",
+      "Glucose"
+    ],
     "answer": "Water",
     "explanation": "Osmosis specifically refers to the diffusion of water molecules."
   },
   {
     "id": "q4",
     "question": "What are the primary products of photosynthesis?",
-    "options": ["Carbon dioxide and water", "Glucose and oxygen", "Lactic acid and energy", "Sunlight and chlorophyll"],
+    "options": [
+      "Carbon dioxide and water",
+      "Glucose and oxygen",
+      "Lactic acid and energy",
+      "Sunlight and chlorophyll"
+    ],
     "answer": "Glucose and oxygen",
     "explanation": "Plants use sunlight to convert CO2 and water into glucose (food) and oxygen."
   },
   {
     "id": "q5",
     "question": "Which blood vessel carries oxygenated blood from the lungs to the heart?",
-    "options": ["Pulmonary Artery", "Pulmonary Vein", "Aorta", "Vena Cava"],
+    "options": [
+      "Pulmonary Artery",
+      "Pulmonary Vein",
+      "Aorta",
+      "Vena Cava"
+    ],
     "answer": "Pulmonary Vein",
     "explanation": "The pulmonary vein is the only vein that carries oxygenated blood."
   },
   {
     "id": "q6",
     "question": "Anaerobic respiration in humans produces which byproduct?",
-    "options": ["Ethanol", "Carbon dioxide", "Lactic acid", "Oxygen"],
+    "options": [
+      "Ethanol",
+      "Carbon dioxide",
+      "Lactic acid",
+      "Oxygen"
+    ],
     "answer": "Lactic acid",
     "explanation": "When oxygen is scarce, muscles produce lactic acid, leading to cramps."
   },
   {
     "id": "q7",
     "question": "In a food chain, what do the arrows represent?",
-    "options": ["Who eats whom", "The direction of energy flow", "The movement of organisms", "The population size"],
+    "options": [
+      "Who eats whom",
+      "The direction of energy flow",
+      "The movement of organisms",
+      "The population size"
+    ],
     "answer": "The direction of energy flow",
     "explanation": "Arrows point from the organism being eaten to the consumer, showing energy transfer."
   },
   {
     "id": "q8",
     "question": "An organism's genetic makeup is called its:",
-    "options": ["Phenotype", "Genotype", "Allele", "Chromosome"],
+    "options": [
+      "Phenotype",
+      "Genotype",
+      "Allele",
+      "Chromosome"
+    ],
     "answer": "Genotype",
     "explanation": "Genotype refers to the specific alleles an organism possesses."
   },
   {
     "id": "q9",
     "question": "If 'B' is the dominant allele for brown eyes and 'b' is the recessive allele for blue eyes, what color eyes will an individual with 'Bb' have?",
-    "options": ["Blue", "Green", "Brown", "Grey"],
+    "options": [
+      "Blue",
+      "Green",
+      "Brown",
+      "Grey"
+    ],
     "answer": "Brown",
     "explanation": "The dominant allele (B) masks the recessive one (b)."
   },
   {
     "id": "q10",
     "question": "Which of the following is a decomposer?",
-    "options": ["Grass", "Rabbit", "Hawk", "Fungi"],
+    "options": [
+      "Grass",
+      "Rabbit",
+      "Hawk",
+      "Fungi"
+    ],
     "answer": "Fungi",
     "explanation": "Decomposers like fungi and bacteria break down dead organic matter."
   },
   {
     "id": "q11",
     "question": "Which process produces four genetically different daughter cells?",
-    "options": ["Mitosis", "Meiosis", "Fertilization", "Binary Fission"],
+    "options": [
+      "Mitosis",
+      "Meiosis",
+      "Fertilization",
+      "Binary Fission"
+    ],
     "answer": "Meiosis",
     "explanation": "Meiosis is a type of cell division that results in four daughter cells each with half the number of chromosomes of the parent cell."
   },
   {
     "id": "q12",
     "question": "What is the evaporation of water from the surface of a plant called?",
-    "options": ["Respiration", "Photosynthesis", "Transpiration", "Translocation"],
+    "options": [
+      "Respiration",
+      "Photosynthesis",
+      "Transpiration",
+      "Translocation"
+    ],
     "answer": "Transpiration",
     "explanation": "Transpiration is the process where plants lose water vapor through their leaves."
   },
   {
     "id": "q13",
     "question": "Which organelle is responsible for protein synthesis?",
-    "options": ["Ribosome", "Lysosome", "Golgi apparatus", "Vacuole"],
+    "options": [
+      "Ribosome",
+      "Lysosome",
+      "Golgi apparatus",
+      "Vacuole"
+    ],
     "answer": "Ribosome",
     "explanation": "Ribosomes are the site of protein synthesis in a cell."
   },
   {
     "id": "q14",
     "question": "What term describes the maintenance of a constant internal environment?",
-    "options": ["Metabolism", "Homeostasis", "Photosynthesis", "Osmoregulation"],
+    "options": [
+      "Metabolism",
+      "Homeostasis",
+      "Photosynthesis",
+      "Osmoregulation"
+    ],
     "answer": "Homeostasis",
     "explanation": "Homeostasis is the state of steady internal, physical, and chemical conditions maintained by living systems."
   },
   {
     "id": "q15",
     "question": "Which of the following is an abiotic factor in an ecosystem?",
-    "options": ["Predation", "Competition", "Temperature", "Disease"],
+    "options": [
+      "Predation",
+      "Competition",
+      "Temperature",
+      "Disease"
+    ],
     "answer": "Temperature",
     "explanation": "Abiotic factors are non-living chemical and physical parts of the environment that affect living organisms."
+  },
+  {
+    "id": "q16",
+    "question": "What is the primary function of white blood cells?",
+    "options": [
+      "Transport oxygen",
+      "Clot blood",
+      "Fight infection",
+      "Carry nutrients"
+    ],
+    "answer": "Fight infection",
+    "explanation": "White blood cells are part of the immune system and help protect the body against pathogens."
+  },
+  {
+    "id": "q17",
+    "question": "Which part of the plant cell is responsible for photosynthesis?",
+    "options": [
+      "Nucleus",
+      "Vacuole",
+      "Chloroplast",
+      "Cell Wall"
+    ],
+    "answer": "Chloroplast",
+    "explanation": "Chloroplasts contain chlorophyll which captures light energy for photosynthesis."
+  },
+  {
+    "id": "q18",
+    "question": "What is the process by which plants lose water vapor through their leaves?",
+    "options": [
+      "Respiration",
+      "Transpiration",
+      "Osmosis",
+      "Diffusion"
+    ],
+    "answer": "Transpiration",
+    "explanation": "Transpiration is the evaporation of water from plant leaves."
+  },
+  {
+    "id": "q19",
+    "question": "In the human heart, which chamber pumps oxygenated blood to the rest of the body?",
+    "options": [
+      "Right Atrium",
+      "Right Ventricle",
+      "Left Atrium",
+      "Left Ventricle"
+    ],
+    "answer": "Left Ventricle",
+    "explanation": "The left ventricle has thick muscular walls to pump blood into the aorta for systemic circulation."
+  },
+  {
+    "id": "q20",
+    "question": "Which of these is a biotic factor in an ecosystem?",
+    "options": [
+      "Sunlight",
+      "Water",
+      "Bacteria",
+      "Soil"
+    ],
+    "answer": "Bacteria",
+    "explanation": "Biotic factors are living components of an ecosystem."
+  },
+  {
+    "id": "q21",
+    "question": "Which of these is a function of the cell membrane?",
+    "options": [
+      "Producing energy",
+      "Synthesizing proteins",
+      "Regulating what enters and leaves the cell",
+      "Storing genetic information"
+    ],
+    "answer": "Regulating what enters and leaves the cell",
+    "explanation": "The cell membrane is semi-permeable and controls the passage of substances."
+  },
+  {
+    "id": "q22",
+    "question": "Which organ produces bile?",
+    "options": [
+      "Stomach",
+      "Liver",
+      "Pancreas",
+      "Gallbladder"
+    ],
+    "answer": "Liver",
+    "explanation": "The liver produces bile, which is then stored in the gallbladder."
+  },
+  {
+    "id": "q23",
+    "question": "What type of joint is found in the shoulder?",
+    "options": [
+      "Hinge joint",
+      "Ball and socket joint",
+      "Fixed joint",
+      "Gliding joint"
+    ],
+    "answer": "Ball and socket joint",
+    "explanation": "Ball and socket joints allow for a wide range of circular movement."
+  },
+  {
+    "id": "q24",
+    "question": "The movement of molecules from an area of high concentration to an area of low concentration is called?",
+    "options": [
+      "Osmosis",
+      "Active transport",
+      "Diffusion",
+      "Phagocytosis"
+    ],
+    "answer": "Diffusion",
+    "explanation": "Diffusion is the passive movement of particles down a concentration gradient."
+  },
+  {
+    "id": "q25",
+    "question": "Which hormone regulates blood sugar levels?",
+    "options": [
+      "Adrenaline",
+      "Thyroxine",
+      "Insulin",
+      "Estrogen"
+    ],
+    "answer": "Insulin",
+    "explanation": "Insulin, produced by the pancreas, helps lower blood glucose levels."
   }
 ]
-/home/engine/.bashrc: line 1: syntax error near unexpected token `('
-/home/engine/.bashrc: line 1: `. /etc/profile.d/workload-containment.shn# ~/.bashrc: executed by bash(1) for non-login shells.'
-/home/engine/.bashrc: line 1: syntax error near unexpected token `('
-/home/engine/.bashrc: line 1: `. /etc/profile.d/workload-containment.shn# ~/.bashrc: executed by bash(1) for non-login shells.'
-/home/engine/.bashrc: line 1: syntax error near unexpected token `('
-/home/engine/.bashrc: line 1: `. /etc/profile.d/workload-containment.shn# ~/.bashrc: executed by bash(1) for non-login shells.'
