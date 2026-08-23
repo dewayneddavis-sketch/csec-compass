@@ -3,7 +3,8 @@ import { useState } from "react";
 // ---- Subject-aware content sets ------------------------------------------
 // Every set's CONTENT belongs to its own subject. `kind: "diagram"` keeps the
 // biology cell diagram; `kind: "match"` is a list-style matching activity;
-// `kind: "sort"` lets multiple items drop into shared category zones (POA).
+// `kind: "sort"` lets multiple items drop into shared category zones;
+// `kind: "order"` places items into a correct sequence.
 const subjectSets = {
   biology: {
     title: "Label the Animal Cell",
@@ -132,6 +133,143 @@ const subjectSets = {
   },
 };
 
+// ---- English A: per-lesson sets keyed by experiment.type ------------------
+// Each of the 10 English A lessons gets its own distinct activity whose
+// content matches that lesson's topic. No two lessons collapse to the same set.
+const englishSets = {
+  // 1. literal-meaning (highlight-tool) — sort sentences by whether they
+  //    support a stated inference.
+  "highlight-tool": {
+    title: "Find the Evidence",
+    subtitle: "Inference: Maria had been running in the rain. Sort each sentence into 'Supports' or 'Does NOT support' the inference.",
+    kind: "sort",
+    categories: [
+      { id: "support", label: "Supports the inference" },
+      { id: "not-support", label: "Does NOT support" },
+    ],
+    items: [
+      { id: "s1", label: "Maria's shirt was soaked through.", category: "support" },
+      { id: "s2", label: "Drops of water fell from her hair.", category: "support" },
+      { id: "s3", label: "Her shoes squelched with every step.", category: "support" },
+      { id: "s4", label: "Maria enjoys listening to music.", category: "not-support" },
+      { id: "s5", label: "It was a warm, sunny afternoon.", category: "not-support" },
+    ],
+  },
+  // 2. figurative-language (matching-game) — the literary-devices match set.
+  "matching-game": {
+    title: "Match Literary Devices",
+    subtitle: "Drag each literary device to its example.",
+    kind: "match",
+    pairs: [
+      { id: "simile", target: "Uses 'like' or 'as' to compare", label: "Simile" },
+      { id: "metaphor", target: "States one thing IS another", label: "Metaphor" },
+      { id: "personification", target: "Gives human qualities to objects", label: "Personification" },
+      { id: "hyperbole", target: "Extreme exaggeration for effect", label: "Hyperbole" },
+      { id: "onomatopoeia", target: "Words that imitate sounds (buzz, hiss)", label: "Onomatopoeia" },
+      { id: "alliteration", target: "Repeated initial consonant sounds", label: "Alliteration" },
+      { id: "irony", target: "Saying the opposite of what is meant", label: "Irony" },
+    ],
+  },
+  // 3. identifying-main-points (text-trimmer) — keep the main points.
+  "text-trimmer": {
+    title: "Trim to the Main Point",
+    subtitle: "Sort each sentence: keep only the sentences that state the MAIN POINT; trim the extra details.",
+    kind: "sort",
+    categories: [
+      { id: "main", label: "Main Point — Keep" },
+      { id: "trim", label: "Detail — Trim" },
+    ],
+    items: [
+      { id: "m1", label: "Deforestation harms the climate.", category: "main" },
+      { id: "m2", label: "Forests absorb carbon dioxide from the air.", category: "main" },
+      { id: "m3", label: "Trees give shade to the villagers.", category: "trim" },
+      { id: "m4", label: "Some birds build nests in the tallest branches.", category: "trim" },
+      { id: "m5", label: "The forest floor is covered in fallen leaves.", category: "trim" },
+    ],
+  },
+  // 4. drafting-summary (dialogue-builder) — order the summary sentences.
+  "dialogue-builder": {
+    title: "Build the Summary",
+    subtitle: "Arrange the summary sentences in the correct order (who → what happened → why / outcome).",
+    kind: "order",
+    items: [
+      { id: "q1", label: "The farmer planted the seeds in early spring.", order: 1 },
+      { id: "q2", label: "He watered the field every day.", order: 2 },
+      { id: "q3", label: "The crops grew tall and healthy.", order: 3 },
+      { id: "q4", label: "By summer, the harvest was ready.", order: 4 },
+      { id: "q5", label: "The farmer sold the crop at the market.", order: 5 },
+    ],
+  },
+  // 5. subject-verb-agreement (sentence-fixer) — match sentence to correct verb.
+  "sentence-fixer": {
+    title: "Fix Subject–Verb Agreement",
+    subtitle: "Drag each sentence to the verb that makes it correct.",
+    kind: "match",
+    pairs: [
+      { id: "v1", target: "is", label: "Each of the boys ___ ready." },
+      { id: "v2", target: "are", label: "The dogs ___ barking loudly." },
+      { id: "v3", target: "were", label: "Neither the teacher nor the students ___ late." },
+      { id: "v4", target: "has", label: "Everyone ___ to bring a pencil." },
+      { id: "v5", target: "was", label: "Mathematics ___ my favourite subject." },
+    ],
+  },
+  // 6. punctuation-mastery (punctuation-drag-drop) — match sentence to the
+  //    punctuation mark that fixes it.
+  "punctuation-drag-drop": {
+    title: "Insert the Punctuation",
+    subtitle: "Drag each sentence to the punctuation mark that completes it.",
+    kind: "match",
+    pairs: [
+      { id: "p1", target: "?", label: "She asked What time is it?" },
+      { id: "p2", target: "'", label: "The dog s bone belongs to Rex." },
+      { id: "p3", target: ",", label: "We need bread milk and eggs." },
+      { id: "p4", target: "!", label: "Wow what a performance" },
+      { id: "p5", target: ".", label: "The meeting ends at three o'clock" },
+    ],
+  },
+  // 7. synonyms-antonyms (word-swap) — match a word to its best synonym.
+  "word-swap": {
+    title: "Swap in the Best Synonym",
+    subtitle: "Drag each highlighted word to its best synonym replacement.",
+    kind: "match",
+    pairs: [
+      { id: "w1", target: "joyful", label: "happy" },
+      { id: "w2", target: "tiny", label: "small" },
+      { id: "w3", target: "furious", label: "angry" },
+      { id: "w4", target: "intelligent", label: "smart" },
+      { id: "w5", target: "rapid", label: "fast" },
+    ],
+  },
+  // 8. diction-context (vocab-flashcards) — handled by FlashcardSystem; no
+  //    DragDropLabel set here (see ExperimentSandbox routing).
+  // 9. plot-structure (plot-arranger) — order the story events.
+  "plot-arranger": {
+    title: "Arrange the Plot",
+    subtitle: "Arrange the story events in chronological (plot) order.",
+    kind: "order",
+    items: [
+      { id: "a1", label: "The hero finds a mysterious map.", order: 1 },
+      { id: "a2", label: "The hero follows the map into the forest.", order: 2 },
+      { id: "a3", label: "A storm traps the hero in a cave.", order: 3 },
+      { id: "a4", label: "The hero discovers the hidden treasure.", order: 4 },
+      { id: "a5", label: "The hero returns home as a hero.", order: 5 },
+    ],
+  },
+  // 10. argument-structure (outliner) — order the argument outline.
+  "outliner": {
+    title: "Build the Argument Outline",
+    subtitle: "Arrange the parts of the argument in the correct order: claim → reason → evidence → counterargument → rebuttal.",
+    kind: "order",
+    items: [
+      { id: "o1", label: "Claim: School uniforms should be required.", order: 1 },
+      { id: "o2", label: "Reason: They reduce classroom distractions.", order: 2 },
+      { id: "o3", label: "Evidence: Schools report better focus.", order: 3 },
+      { id: "o4", label: "Counterargument: Some say uniforms limit self-expression.", order: 4 },
+      { id: "o5", label: "Rebuttal: Creativity can still be shown in other ways.", order: 5 },
+    ],
+  },
+};
+
 // Shuffled starting positions
 function shuffle(arr) {
   const a = [...arr];
@@ -147,12 +285,25 @@ const startPositions = [
   { x: 10, y: 55 }, { x: 10, y: 70 },
 ];
 
-export default function DragDropLabel({ subjectId }) {
-  const set = subjectSets[subjectId] || subjectSets["english-a"];
+function ord(n) {
+  const s = ["1st", "2nd", "3rd"];
+  return s[n - 1] || `${n}th`;
+}
+
+export default function DragDropLabel({ subjectId, experimentType }) {
+  // English A resolves per lesson (by experimentType); all other subjects use
+  // the single subject-level set.
+  let set;
+  if (subjectId === "english-a" && englishSets[experimentType]) {
+    set = englishSets[experimentType];
+  } else {
+    set = subjectSets[subjectId] || subjectSets["english-a"];
+  }
+
   const [placed, setPlaced] = useState({});
   const [dragging, setDragging] = useState(null);
   const shuffled = useState(() => shuffle(
-    set.kind === "diagram" ? set.labels : set.kind === "sort" ? set.items : set.pairs
+    set.kind === "diagram" ? set.labels : (set.kind === "match" ? set.pairs : set.items)
   ))[0];
   const [feedback, setFeedback] = useState("");
 
@@ -163,6 +314,10 @@ export default function DragDropLabel({ subjectId }) {
 
   function isCorrect(itemId, zoneId) {
     if (set.kind === "diagram") return itemId === zoneId;
+    if (set.kind === "order") {
+      const item = set.items.find((i) => i.id === itemId);
+      return item && Number(item.order) === Number(zoneId);
+    }
     if (set.kind === "sort") {
       const item = set.items.find((i) => i.id === itemId);
       return item && item.category === zoneId;
@@ -173,6 +328,7 @@ export default function DragDropLabel({ subjectId }) {
 
   function displayLabel(itemId) {
     if (set.kind === "diagram") return set.labels.find((l) => l.id === itemId)?.label;
+    if (set.kind === "order") return set.items.find((i) => i.id === itemId)?.label;
     if (set.kind === "sort") return set.items.find((i) => i.id === itemId)?.label;
     return set.pairs.find((p) => p.id === itemId)?.label;
   }
@@ -209,7 +365,11 @@ export default function DragDropLabel({ subjectId }) {
     setFeedback("");
   }
 
-  const totalItems = set.kind === "sort" ? set.items.length : set.kind === "diagram" ? set.labels.length : set.pairs.length;
+  const totalItems = set.kind === "sort"
+    ? set.items.length
+    : set.kind === "diagram"
+      ? set.labels.length
+      : set.kind === "order" ? set.items.length : set.pairs.length;
   const placedCount = set.kind === "sort"
     ? Object.values(placed).reduce((s, arr) => s + arr.length, 0)
     : Object.keys(placed).length;
@@ -230,7 +390,7 @@ export default function DragDropLabel({ subjectId }) {
   const actionsEl = (
     <div className="dd-actions">
       <button className="quiz-btn quiz-btn-ghost" onClick={handleReset}>🔄 Reset</button>
-      {allPlaced && <span className="dd-success">🎉 Great job! {placedCount}/{totalItems} matched!</span>}
+      {allPlaced && <span className="dd-success">🎉 Great job! {placedCount}/{totalItems} {set.kind === "order" ? "in order" : "matched"}!</span>}
     </div>
   );
 
@@ -278,7 +438,7 @@ export default function DragDropLabel({ subjectId }) {
           </div>
           <div className="dd-labels">
             <h4>Labels</h4>
-            {shuffled.map((l, i) => {
+            {shuffled.map((l) => {
               if (placed[l.id]) return null;
               return (
                 <div
@@ -301,17 +461,30 @@ export default function DragDropLabel({ subjectId }) {
     );
   }
 
-  // List-style match / sort layout
-  const zones = set.kind === "sort" ? set.categories : set.pairs.map((p) => ({ id: p.id, label: p.target }));
+  // List-style match / sort / order layout
+  let zones;
+  if (set.kind === "sort") {
+    zones = set.categories;
+  } else if (set.kind === "order") {
+    zones = set.items.map((it) => ({ id: String(it.order), label: `${ord(it.order)} position` }));
+  } else {
+    zones = set.pairs.map((p) => ({ id: p.id, label: p.target }));
+  }
+
+  const draggableItems = set.kind === "match" ? set.pairs : set.items;
+
   return (
     <div className="drag-drop">
       {header}
       <div className="dd-main dd-main-list">
         <div className="dd-labels">
-          <h4>Drag items</h4>
-          {shuffled.map((item, i) => {
-            const itemId = set.kind === "sort" ? item.id : item.id;
-            if (set.kind === "sort" ? (placed[item.category] || []).includes(itemId) : placed[itemId]) return null;
+          <h4>{set.kind === "order" ? "Drag items in order" : "Drag items"}</h4>
+          {shuffled.map((item) => {
+            const itemId = item.id;
+            const isPlaced = set.kind === "sort"
+              ? (placed[item.category] || []).includes(itemId)
+              : Object.values(placed).includes(itemId);
+            if (isPlaced) return null;
             return (
               <div
                 key={itemId}
@@ -320,7 +493,7 @@ export default function DragDropLabel({ subjectId }) {
                 onDragStart={(e) => handleDragStart(e, itemId)}
                 style={{ opacity: dragging === itemId ? 0.5 : 1 }}
               >
-                {set.kind === "sort" ? item.label : item.label}
+                {item.label}
               </div>
             );
           })}
@@ -331,7 +504,7 @@ export default function DragDropLabel({ subjectId }) {
           {zones.map((z) => {
             const placedHere = set.kind === "sort"
               ? (placed[z.id] || []).map(displayLabel)
-              : placed[z.id] ? [displayLabel(z.id)] : [];
+              : placed[z.id] ? [displayLabel(placed[z.id])] : [];
             return (
               <div
                 key={z.id}
