@@ -1,25 +1,27 @@
 [
   {
-    "question": "¿Cómo se dice 'I am from Jamaica' en español?",
+    "question": "\u00bfC\u00f3mo se dice 'I am from Jamaica' en espa\u00f1ol?",
     "options": [
       "Soy a Jamaica",
       "Soy de Jamaica",
       "Estoy de Jamaica",
       "Tengo de Jamaica"
     ],
-    "answer": 1,
-    "explanation": "The verb 'ser' (soy) is used with the preposition 'de' to express origin."
+    "answer": "Soy de Jamaica",
+    "explanation": "The verb 'ser' (soy) is used with the preposition 'de' to express origin.",
+    "id": "q1"
   },
   {
-    "question": "Which of these is the correct plural form of 'el lápiz'?",
+    "question": "Which of these is the correct plural form of 'el l\u00e1piz'?",
     "options": [
-      "Los lápizs",
-      "Los lápizes",
-      "Los lápices",
-      "Las lápices"
+      "Los l\u00e1pizs",
+      "Los l\u00e1pizes",
+      "Los l\u00e1pices",
+      "Las l\u00e1pices"
     ],
-    "answer": 2,
-    "explanation": "Nouns ending in 'z' change the 'z' to 'c' and add '-es' to form the plural."
+    "answer": "Los l\u00e1pices",
+    "explanation": "Nouns ending in 'z' change the 'z' to 'c' and add '-es' to form the plural.",
+    "id": "q2"
   },
   {
     "question": "What does the expression 'Tengo hambre' mean?",
@@ -29,74 +31,81 @@
       "I am hungry",
       "I am tired"
     ],
-    "answer": 2,
-    "explanation": "In Spanish, we use the verb 'tener' (to have) with 'hambre' to say 'I am hungry'."
+    "answer": "I am hungry",
+    "explanation": "In Spanish, we use the verb 'tener' (to have) with 'hambre' to say 'I am hungry'.",
+    "id": "q3"
   },
   {
     "question": "Choose the correct present tense conjugation of 'hablar' for the subject 'nosotros':",
     "options": [
       "Hablamos",
       "Hablan",
-      "Habláis",
-      "Habló"
+      "Habl\u00e1is",
+      "Habl\u00f3"
     ],
-    "answer": 0,
-    "explanation": "Regular -AR verbs take the ending '-amos' for the 'nosotros' form in the present tense."
+    "answer": "Hablamos",
+    "explanation": "Regular -AR verbs take the ending '-amos' for the 'nosotros' form in the present tense.",
+    "id": "q4"
   },
   {
-    "question": "In a reading passage, you see the word 'éxito'. What does it mean?",
+    "question": "In a reading passage, you see the word '\u00e9xito'. What does it mean?",
     "options": [
       "Exit",
       "Success",
       "Excitement",
       "Expert"
     ],
-    "answer": 1,
-    "explanation": "'Éxito' is a false friend; it looks like 'exit' but actually means 'success'."
+    "answer": "Success",
+    "explanation": "'\u00c9xito' is a false friend; it looks like 'exit' but actually means 'success'.",
+    "id": "q5"
   },
   {
     "question": "How would you correctly conjugate 'comer' in the preterite (past) tense for 'yo'?",
     "options": [
       "Como",
-      "Comí",
-      "Comía",
-      "Comeré"
+      "Com\u00ed",
+      "Com\u00eda",
+      "Comer\u00e9"
     ],
-    "answer": 1,
-    "explanation": "The regular -ER preterite ending for 'yo' is '-í'."
+    "answer": "Com\u00ed",
+    "explanation": "The regular -ER preterite ending for 'yo' is '-\u00ed'.",
+    "id": "q6"
   },
   {
     "question": "Which of these is a formal way to say 'How are you?'",
     "options": [
-      "¿Cómo estás?",
-      "¿Qué tal?",
-      "¿Cómo está usted?",
-      "¿Qué pasa?"
+      "\u00bfC\u00f3mo est\u00e1s?",
+      "\u00bfQu\u00e9 tal?",
+      "\u00bfC\u00f3mo est\u00e1 usted?",
+      "\u00bfQu\u00e9 pasa?"
     ],
-    "answer": 2,
-    "explanation": "Using 'usted' and the third-person singular form of the verb makes the greeting formal."
+    "answer": "\u00bfC\u00f3mo est\u00e1 usted?",
+    "explanation": "Using 'usted' and the third-person singular form of the verb makes the greeting formal.",
+    "id": "q7"
   },
   {
     "question": "Identify the correct translation for 'I'm going to study tomorrow':",
     "options": [
-      "Estudié mañana",
-      "Estudio mañana",
-      "Voy a estudiar mañana",
-      "Iba a estudiar mañana"
+      "Estudi\u00e9 ma\u00f1ana",
+      "Estudio ma\u00f1ana",
+      "Voy a estudiar ma\u00f1ana",
+      "Iba a estudiar ma\u00f1ana"
     ],
-    "answer": 2,
-    "explanation": "The future is often formed using 'ir + a + infinitive'."
+    "answer": "Voy a estudiar ma\u00f1ana",
+    "explanation": "The future is often formed using 'ir + a + infinitive'.",
+    "id": "q8"
   },
   {
     "question": "Which Hispanic festival is known for creating colorful alters to honor deceased loved ones?",
     "options": [
       "Las Fallas",
       "La Tomatina",
-      "Día de los Muertos",
+      "D\u00eda de los Muertos",
       "Carnaval"
     ],
-    "answer": 2,
-    "explanation": "The Day of the Dead (Día de los Muertos) involves creating 'ofrendas' (altars) to celebrate the lives of the deceased."
+    "answer": "D\u00eda de los Muertos",
+    "explanation": "The Day of the Dead (D\u00eda de los Muertos) involves creating 'ofrendas' (altars) to celebrate the lives of the deceased.",
+    "id": "q9"
   },
   {
     "question": "In a letter, which of these is an appropriate informal closing?",
@@ -104,21 +113,23 @@
       "Estimado amigo",
       "Atentamente",
       "Un fuerte abrazo",
-      "Muy señor mío"
+      "Muy se\u00f1or m\u00edo"
     ],
-    "answer": 2,
-    "explanation": "'Un fuerte abrazo' is a warm, informal way to end a letter to a friend or family member."
+    "answer": "Un fuerte abrazo",
+    "explanation": "'Un fuerte abrazo' is a warm, informal way to end a letter to a friend or family member.",
+    "id": "q10"
   },
   {
-    "question": "Where would you most likely hear the phrase '¿En qué puedo servirle?'",
+    "question": "Where would you most likely hear the phrase '\u00bfEn qu\u00e9 puedo servirle?'",
     "options": [
       "In a stadium",
       "In a shop or restaurant",
       "In a park",
       "At a concert"
     ],
-    "answer": 1,
-    "explanation": "This phrase means 'How can I help/serve you?' and is common in customer service contexts."
+    "answer": "In a shop or restaurant",
+    "explanation": "This phrase means 'How can I help/serve you?' and is common in customer service contexts.",
+    "id": "q11"
   },
   {
     "question": "Which of these words is a cognate (looks and means the same in English and Spanish)?",
@@ -128,8 +139,9 @@
       "Pan",
       "Ropa"
     ],
-    "answer": 1,
-    "explanation": "'Hospital' is spelled exactly the same and has the same meaning in both languages."
+    "answer": "Hospital",
+    "explanation": "'Hospital' is spelled exactly the same and has the same meaning in both languages.",
+    "id": "q12"
   },
   {
     "question": "What is the capital of Spain?",
@@ -139,19 +151,21 @@
       "Sevilla",
       "Valencia"
     ],
-    "answer": 1,
-    "explanation": "Madrid is the capital city of Spain."
+    "answer": "Madrid",
+    "explanation": "Madrid is the capital city of Spain.",
+    "id": "q13"
   },
   {
     "question": "How do you ask 'How much does it cost?'",
     "options": [
-      "¿Dónde está?",
-      "¿Quién es?",
-      "¿Cuánto cuesta?",
-      "¿Cuándo es?"
+      "\u00bfD\u00f3nde est\u00e1?",
+      "\u00bfQui\u00e9n es?",
+      "\u00bfCu\u00e1nto cuesta?",
+      "\u00bfCu\u00e1ndo es?"
     ],
-    "answer": 2,
-    "explanation": "'¿Cuánto cuesta?' is the standard phrase for asking about the price of something."
+    "answer": "\u00bfCu\u00e1nto cuesta?",
+    "explanation": "'\u00bfCu\u00e1nto cuesta?' is the standard phrase for asking about the price of something.",
+    "id": "q14"
   },
   {
     "question": "Which famous Mexican artist is known for her self-portraits and connection to nature?",
@@ -161,7 +175,128 @@
       "Isabel Allende",
       "Celia Cruz"
     ],
-    "answer": 1,
-    "explanation": "Frida Kahlo is one of Mexico's most iconic artists, famous for her deeply personal self-portraits."
+    "answer": "Frida Kahlo",
+    "explanation": "Frida Kahlo is one of Mexico's most iconic artists, famous for her deeply personal self-portraits.",
+    "id": "q15"
+  },
+  {
+    "id": "q16",
+    "question": "How do you say 'Happy Birthday' in Spanish?",
+    "options": [
+      "Feliz Navidad",
+      "Feliz Cumplea\u00f1os",
+      "Buen Viaje",
+      "Buena Suerte"
+    ],
+    "answer": "Feliz Cumplea\u00f1os",
+    "explanation": "'Cumplea\u00f1os' means birthday."
+  },
+  {
+    "id": "q17",
+    "question": "What is the Spanish word for 'Library'?",
+    "options": [
+      "Librer\u00eda",
+      "Biblioteca",
+      "Escuela",
+      "Oficina"
+    ],
+    "answer": "Biblioteca",
+    "explanation": "'Librer\u00eda' is a bookstore; 'biblioteca' is a library."
+  },
+  {
+    "id": "q18",
+    "question": "Which of these means 'The red house'?",
+    "options": [
+      "La casa blanca",
+      "La casa roja",
+      "La casa azul",
+      "La casa verde"
+    ],
+    "answer": "La casa roja",
+    "explanation": "'Roja' means red."
+  },
+  {
+    "id": "q19",
+    "question": "How do you say 'I like' in Spanish?",
+    "options": [
+      "Yo quiero",
+      "Me gusta",
+      "Yo tengo",
+      "Me llamo"
+    ],
+    "answer": "Me gusta",
+    "explanation": "'Gusta' comes from the verb 'gustar'."
+  },
+  {
+    "id": "q20",
+    "question": "Translate the number 25 into Spanish.",
+    "options": [
+      "Veinte",
+      "Quince",
+      "Veinticinco",
+      "Treinta"
+    ],
+    "answer": "Veinticinco",
+    "explanation": "20 (veinte) + 5 (cinco) = 25 (veinticinco)."
+  },
+  {
+    "id": "q21",
+    "question": "What is the opposite of 'alto' (tall)?",
+    "options": [
+      "gordo",
+      "bajo",
+      "flaco",
+      "feo"
+    ],
+    "answer": "bajo",
+    "explanation": "'Bajo' means short/low, which is the opposite of 'alto'."
+  },
+  {
+    "id": "q22",
+    "question": "In Spanish, 'almuerzo' means:",
+    "options": [
+      "Breakfast",
+      "Lunch",
+      "Dinner",
+      "Snack"
+    ],
+    "answer": "Lunch",
+    "explanation": "Desayuno = Breakfast, Almuerzo = Lunch, Cena = Dinner."
+  },
+  {
+    "id": "q23",
+    "question": "Which of these is a body part?",
+    "options": [
+      "la mesa",
+      "la silla",
+      "la mano",
+      "la puerta"
+    ],
+    "answer": "la mano",
+    "explanation": "'La mano' means hand."
+  },
+  {
+    "id": "q24",
+    "question": "Which verb is used to express permanent characteristics?",
+    "options": [
+      "Estar",
+      "Ser",
+      "Haber",
+      "Tener"
+    ],
+    "answer": "Ser",
+    "explanation": "'Ser' is used for traits, professions, and origin."
+  },
+  {
+    "id": "q25",
+    "question": "Translate 'The weather is good' to Spanish.",
+    "options": [
+      "Hace calor",
+      "Hace fr\u00edo",
+      "Hace buen tiempo",
+      "Hace viento"
+    ],
+    "answer": "Hace buen tiempo",
+    "explanation": "'Hace buen tiempo' is the standard way to say the weather is good."
   }
 ]
