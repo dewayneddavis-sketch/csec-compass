@@ -47,11 +47,13 @@ const BIO_DRAG_TYPES = new Set([
   "interactive-pathway",
 ]);
 
-// English A drag/match types → DragDropLabel english set
+// English A drag/match/sort/order types → DragDropLabel per-lesson set
 const ENG_DRAG_TYPES = new Set([
   "matching-game", "dialogue-builder", "punctuation-drag-drop", "plot-arranger",
   "outliner", "highlight-tool", "text-trimmer", "sentence-fixer", "word-swap",
 ]);
+// English A diction lesson → dedicated vocab deck in FlashcardSystem
+const ENG_DICTION_TYPES = new Set(["vocab-flashcards", "flashcard", "interactive-quiz"]);
 
 // POA balance/ledger types → BalanceScale (POA sort mode)
 const POA_BALANCE_TYPES = new Set([
@@ -128,9 +130,10 @@ function resolveInteractive(subjectId, experimentType) {
     return flash("biology");
   }
 
-  // ---- english-a: drag/match → english set; quiz/vocab → english deck
+  // ---- english-a: per-lesson set by type; diction → dedicated vocab deck
   if (subjectId === "english-a") {
-    if (ENG_DRAG_TYPES.has(t)) return <DragDropLabel subjectId="english-a" />;
+    if (ENG_DRAG_TYPES.has(t)) return <DragDropLabel subjectId="english-a" experimentType={t} />;
+    if (ENG_DICTION_TYPES.has(t)) return <FlashcardSystem subjectId="english-diction" />;
     return flash("english-a");
   }
 
