@@ -1,0 +1,46 @@
+{
+  "subjectId": "physics",
+  "introduction": "The Physics SBA consists of practical lab exercises covering Mechanics, Thermal Physics, Waves, and Electricity. It accounts for 20% of the grade.",
+  "tasks": [
+    {
+      "section": "Planning and Designing",
+      "title": "P&D",
+      "explanation": "Create an experimental plan to test a physical relationship.",
+      "marks": "10"
+    },
+    {
+      "section": "A&I",
+      "title": "Analysis and Interpretation",
+      "explanation": "Analyze data using graphs (calculating gradients) and physical laws.",
+      "marks": "10"
+    },
+    {
+      "section": "ORR",
+      "title": "Reporting",
+      "explanation": "Clear presentation of experimental data and conclusions.",
+      "marks": "10"
+    }
+  ],
+  "sampleTitle": "Investigating the relationship between the period of a simple pendulum and its length.",
+  "sample": [
+    {
+      "section": "Hypothesis",
+      "body": "The period of the pendulum (T) is proportional to the square root of its length (L). Therefore, a graph of T\u00b2 against L will be a straight line through the origin.",
+      "tips": "Specify the expected mathematical relationship."
+    },
+    {
+      "section": "Data Analysis",
+      "body": "The gradient of the T\u00b2 vs L graph was calculated to be 4.02 s\u00b2/m. Using the formula g = 4\u03c0\u00b2/gradient, the acceleration due to gravity was found to be 9.81 m/s\u00b2.",
+      "tips": "Show all steps in your gradient calculation."
+    }
+  ],
+  "marking": "Attention to significant figures, error bars on graphs, and the identification of systematic/random errors are key for high marks.",
+  "checklist": [
+    "Variables identified",
+    "Control of variables described",
+    "Table with repeated trials",
+    "Calculated T squared values",
+    "Graph with line of best fit",
+    "Gradient and intercept calculation"
+  ]
+}

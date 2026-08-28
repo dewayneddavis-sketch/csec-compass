@@ -1,0 +1,57 @@
+{
+  "subjectId": "human-social-biology",
+  "introduction": "The HSB SBA is a research-based project on a health or environmental issue. It contributes 20% to the final grade.",
+  "tasks": [
+    {
+      "section": "Problem Statement",
+      "title": "Problem Statement",
+      "explanation": "State the health/environmental issue being researched.",
+      "marks": "2"
+    },
+    {
+      "section": "Background",
+      "title": "Background/Overview",
+      "explanation": "Explain why the topic was chosen.",
+      "marks": "2"
+    },
+    {
+      "section": "Methodology",
+      "title": "Methodology",
+      "explanation": "Describe the data collection process.",
+      "marks": "2"
+    },
+    {
+      "section": "Presentation of Data",
+      "title": "Presentation",
+      "explanation": "Visual representation of data.",
+      "marks": "4"
+    },
+    {
+      "section": "Discussion of Findings",
+      "title": "Discussion",
+      "explanation": "Analyze results and link to health concepts.",
+      "marks": "8"
+    }
+  ],
+  "sampleTitle": "An investigation into the prevalence of lifestyle-related diseases among residents of Seaside Village.",
+  "sample": [
+    {
+      "section": "Background",
+      "body": "Diabetes and hypertension are rising in our community. I chose this topic to see if dietary habits and lack of exercise are the main contributing factors.",
+      "tips": "Connect the topic to HSB syllabus themes."
+    },
+    {
+      "section": "Conclusion",
+      "body": "The study found a strong correlation between high sugar intake and the prevalence of Type 2 Diabetes among respondents over age 40.",
+      "tips": "Ensure the conclusion answers your problem statement."
+    }
+  ],
+  "marking": "Scientific accuracy, relevance of the topic to the community, and the quality of the data analysis are evaluated.",
+  "checklist": [
+    "Issue identified",
+    "Description of investigation method",
+    "Data presented via charts",
+    "Analysis of results",
+    "Health suggestions provided"
+  ]
+}

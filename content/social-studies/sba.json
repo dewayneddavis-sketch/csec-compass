@@ -1,0 +1,63 @@
+{
+  "subjectId": "social-studies",
+  "introduction": "The Social Studies SBA is a research project based on a social issue or problem. It contributes 20% of the final marks.",
+  "tasks": [
+    {
+      "section": "Statement of Problem",
+      "title": "Statement of Problem",
+      "explanation": "Define the research question clearly.",
+      "marks": "2"
+    },
+    {
+      "section": "Reason for Selection",
+      "title": "Reason for Selection",
+      "explanation": "Explain why this topic is important to you or the community.",
+      "marks": "2"
+    },
+    {
+      "section": "Method of Investigation",
+      "title": "Method of Investigation",
+      "explanation": "Describe how you will collect data (questionnaire, interview).",
+      "marks": "2"
+    },
+    {
+      "section": "Data Presentation",
+      "title": "Data Presentation",
+      "explanation": "Use charts, graphs, and tables.",
+      "marks": "4"
+    },
+    {
+      "section": "Analysis and Interpretation",
+      "title": "Analysis",
+      "explanation": "Explain what the data shows about the problem.",
+      "marks": "8"
+    },
+    {
+      "section": "Findings/Recommendations",
+      "title": "Recommendations",
+      "explanation": "Suggest solutions to the problem based on your data.",
+      "marks": "2"
+    }
+  ],
+  "sampleTitle": "The causes and effects of illegal dumping in the Harmony Gardens community.",
+  "sample": [
+    {
+      "section": "Statement of Problem",
+      "body": "To what extent does illegal dumping affect the health and environment of residents in Harmony Gardens?",
+      "tips": "Keep the research question focused."
+    },
+    {
+      "section": "Analysis",
+      "body": "From the survey, 75% of residents believed that the irregular garbage collection was the primary cause of illegal dumping. This suggests that the infrastructure is failing to meet community needs.",
+      "tips": "Use percentages and compare different groups in your data."
+    }
+  ],
+  "marking": "Originality of research, depth of analysis, and the feasibility of recommendations are important.",
+  "checklist": [
+    "Research question stated",
+    "Instrument (questionnaire) attached",
+    "Clear presentation of data",
+    "Analysis linked to the problem",
+    "Practical recommendations provided"
+  ]
+}

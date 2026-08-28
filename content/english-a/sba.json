@@ -1,0 +1,58 @@
+{
+  "subjectId": "english-a",
+  "introduction": "The English A SBA consists of a Portfolio based on a theme. It includes a Plan of Investigation, three artifacts, reflections, and a group report. It accounts for 21% of the final grade.",
+  "tasks": [
+    {
+      "section": "Plan of Investigation",
+      "title": "Plan of Investigation",
+      "explanation": "State the theme, why it was chosen, and how you will investigate it.",
+      "marks": "5"
+    },
+    {
+      "section": "Artifacts",
+      "title": "Three Artifacts",
+      "explanation": "Choose three pieces of material (articles, poems, videos) related to your theme.",
+      "marks": "N/A"
+    },
+    {
+      "section": "Reflections",
+      "title": "Three Reflections",
+      "explanation": "Write three reflections on how the artifacts affected your understanding and how they shaped your language skills.",
+      "marks": "5"
+    },
+    {
+      "section": "Group Report",
+      "title": "Group Report",
+      "explanation": "A summary of the group's research process and findings.",
+      "marks": "10"
+    },
+    {
+      "section": "Oral Presentation",
+      "title": "Oral Presentation",
+      "explanation": "A short presentation on your theme.",
+      "marks": "10"
+    }
+  ],
+  "sampleTitle": "The impact of social media on the self-esteem of teenagers.",
+  "sample": [
+    {
+      "section": "Plan of Investigation",
+      "body": "Theme: Social Media and Identity. I chose this theme because I have noticed many of my peers feeling pressured by what they see on Instagram. I will investigate this by reading psychological articles, watching documentaries, and analyzing song lyrics about body image.",
+      "tips": "Ensure you explicitly mention the English language skills you hope to improve."
+    },
+    {
+      "section": "Reflection 1",
+      "body": "The first artifact I selected was a poem titled 'Digital Masks'. It highlighted the gap between online personas and reality. This piece moved me as it used powerful metaphors to describe the loneliness felt behind a screen.",
+      "tips": "Focus on both content and language (e.g., tone, vocabulary)."
+    }
+  ],
+  "marking": "Assessors look for personal engagement with the theme, depth of reflection, and the ability to synthesize information from various sources.",
+  "checklist": [
+    "Theme selected",
+    "Plan of Investigation drafted",
+    "Three varied artifacts found",
+    "Three reflections completed",
+    "Participated in Group Report",
+    "Oral presentation practiced"
+  ]
+}

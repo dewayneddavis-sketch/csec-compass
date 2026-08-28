@@ -1,0 +1,45 @@
+{
+  "subjectId": "chemistry",
+  "introduction": "The Chemistry SBA involves a range of laboratory skills including qualitative and quantitative analysis. It accounts for 20% of the final mark.",
+  "tasks": [
+    {
+      "section": "Planning and Designing",
+      "title": "P&D Task",
+      "explanation": "Identify a problem and design an experiment using chemical principles.",
+      "marks": "10"
+    },
+    {
+      "section": "ORR",
+      "title": "Observation, Recording and Reporting",
+      "explanation": "Record observations (color changes, precipitates) and data (titration volumes) accurately.",
+      "marks": "10"
+    },
+    {
+      "section": "A&I",
+      "title": "Analysis and Interpretation",
+      "explanation": "Use chemical equations and calculations (e.g., moles, concentration) to analyze results.",
+      "marks": "10"
+    }
+  ],
+  "sampleTitle": "To determine the concentration of Ethanoic Acid in different brands of commercial white vinegar using titration.",
+  "sample": [
+    {
+      "section": "Introduction",
+      "body": "Vinegar contains ethanoic acid. Its concentration can be determined by titrating it against a standard solution of Sodium Hydroxide using phenolphthalein as an indicator.",
+      "tips": "Clearly state the purpose of the titration."
+    },
+    {
+      "section": "Results Table",
+      "body": "Final Burette Reading (cm\u00b3): 25.4, 24.9, 25.1\nInitial Burette Reading (cm\u00b3): 0.0, 0.0, 0.0\nVolume of NaOH used (cm\u00b3): 25.4, 24.9, 25.1",
+      "tips": "Always record burette readings to 2 decimal places."
+    }
+  ],
+  "marking": "Accuracy in titration, correct use of units, and proper documentation of qualitative tests (e.g., 'blue-green precipitate') are essential.",
+  "checklist": [
+    "Problem statement",
+    "Standard solution prepared",
+    "Titration performed",
+    "Calculations (moles) shown",
+    "Sources of error identified"
+  ]
+}
