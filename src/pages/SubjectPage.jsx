@@ -7,6 +7,7 @@ import ProgressBar from "../components/ProgressBar";
 import Quiz from "../components/Quiz";
 import ExperimentSandbox from "../components/ExperimentSandbox";
 import ExtraPractice from "../components/ExtraPractice";
+import SBASection from "../components/SBASection";
 import "./SubjectPage.css";
 
 export default function SubjectPage() {
@@ -97,7 +98,7 @@ export default function SubjectPage() {
       )}
 
       <div className="s-tabs">
-        {[{ id: "lessons", label: "Lessons" }, { id: "experiment", label: "Interactive Lab" }, { id: "quiz", label: "Knowledge Check" }, { id: "practice", label: "Extra Practice" }].map((tab) => (
+        {[{ id: "lessons", label: "Lessons" }, { id: "experiment", label: "Interactive Lab" }, { id: "quiz", label: "Knowledge Check" }, { id: "practice", label: "Extra Practice" }, { id: "sba", label: "CSEC SBA" }].map((tab) => (
           <button key={tab.id} className={"s-tab " + (activeTab === tab.id ? "active" : "")} onClick={() => setActiveTab(tab.id)}>
             {tab.label}{tab.id === "quiz" && quizCompleted && <span className="s-tab-done">&check;</span>}
           </button>
@@ -149,6 +150,7 @@ export default function SubjectPage() {
         {activeTab === "experiment" && <ExperimentSandbox subjectId={subjectId} />}
         {activeTab === "quiz" && <Quiz questions={quizQuestions} subjectTitle={subject.name} onComplete={() => setQuizCompleted(true)} />}
         {activeTab === "practice" && <ExtraPractice subjectId={subjectId} />}
+        {activeTab === "sba" && <SBASection subjectId={subjectId} />}
       </div>
     </div>
   );}

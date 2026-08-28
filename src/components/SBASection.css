@@ -1,0 +1,41 @@
+.sba-container{padding:.5rem 0;display:flex;flex-direction:column;gap:1rem}
+.sba-empty{text-align:center;padding:3rem 1.5rem;background:#fff;border-radius:16px;box-shadow:0 1px 3px rgba(0,0,0,0.08),0 8px 24px rgba(0,0,0,0.04)}
+.sba-empty-icon{font-size:3rem;margin-bottom:.75rem}
+.sba-empty h3{font-size:1.15rem;color:#111827;margin-bottom:.5rem}
+.sba-empty p{color:#6b7280;font-size:.9rem;line-height:1.6}
+.sba-empty a{color:#2563eb;font-weight:500}
+.sba-note{font-size:.85rem;color:#9ca3af!important}
+
+.sba-intro{display:flex;gap:1rem;align-items:flex-start;background:#fff;border-radius:16px;box-shadow:0 1px 3px rgba(0,0,0,0.08),0 8px 24px rgba(0,0,0,0.04);padding:1.5rem 2rem}
+.sba-intro-icon{font-size:2rem;flex-shrink:0}
+.sba-intro h3{font-size:1.25rem;color:#111827;margin-bottom:.5rem}
+.sba-intro p{color:#4b5563;line-height:1.6;font-size:.95rem}
+
+.sba-card{background:#fff;border-radius:16px;box-shadow:0 1px 3px rgba(0,0,0,0.08),0 8px 24px rgba(0,0,0,0.04);padding:1.5rem 2rem}
+.sba-section-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:.75rem}
+.sba-section-head h4{font-size:1.05rem;color:#111827}
+.sba-badge{font-size:.78rem;font-weight:600;color:#7c3aed;background:#f5f3ff;border:1px solid #ddd6fe;padding:.3rem .75rem;border-radius:999px}
+
+.sba-task-list{display:flex;flex-direction:column;gap:.65rem}
+.sba-task{padding:.85rem 1rem;border:2px solid #e5e7eb;border-radius:12px;background:#fafafa}
+.sba-task-head{display:flex;justify-content:space-between;align-items:center;gap:.5rem;margin-bottom:.25rem}
+.sba-task-title{font-weight:600;font-size:.95rem;color:#111827}
+.sba-task-marks{font-size:.78rem;font-weight:600;color:#059669;background:#ecfdf5;border:1px solid #a7f3d0;padding:.2rem .6rem;border-radius:999px;white-space:nowrap}
+.sba-task-explain{font-size:.88rem;color:#6b7280;line-height:1.5;margin:0}
+
+.sba-sample-title{font-size:.95rem;font-weight:500;color:#111827;font-style:italic;margin-bottom:1rem;line-height:1.5}
+.sba-sample-section{margin-bottom:1rem}
+.sba-sample-section h5{font-size:.95rem;color:#374151;margin-bottom:.35rem;font-weight:600}
+.sba-sample-section p{font-size:.9rem;color:#4b5563;line-height:1.6;margin:0}
+.sba-tip{padding:.6rem .85rem;border-radius:10px;background:#fffbeb;border:1px solid #fde68a;color:#92400e;font-size:.85rem;line-height:1.5;margin-top:.5rem}
+
+.sba-marking{font-size:.92rem;color:#4b5563;line-height:1.6;margin:0;border-left:3px solid #2563eb;padding-left:1rem}
+
+.sba-checklist{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.5rem}
+.sba-checklist li{display:flex;align-items:flex-start;gap:.6rem;font-size:.92rem;color:#374151;line-height:1.5}
+.sba-check{color:#2563eb;font-weight:700;flex-shrink:0;line-height:1.4}
+
+@media (max-width:640px){
+  .sba-intro,.sba-card{padding:1.25rem}
+  .sba-section-head{flex-direction:column;align-items:flex-start;gap:.35rem}
+}
