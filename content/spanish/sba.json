@@ -1,0 +1,45 @@
+{
+  "subjectId": "spanish",
+  "introduction": "The Spanish SBA involves oral and written tasks that demonstrate language proficiency in a variety of contexts. It contributes to the final grade.",
+  "tasks": [
+    {
+      "section": "Written Task",
+      "title": "Written Component",
+      "explanation": "A report or project based on a cultural theme or personal experience.",
+      "marks": "10"
+    },
+    {
+      "section": "Oral Component",
+      "title": "Oral Task",
+      "explanation": "A conversation or presentation in Spanish.",
+      "marks": "10"
+    },
+    {
+      "section": "Strategy",
+      "title": "Reflection",
+      "explanation": "A reflection on the learning process.",
+      "marks": "5"
+    }
+  ],
+  "sampleTitle": "Una investigaci\u00f3n sobre la importancia de la m\u00fasica en la cultura de M\u00e9xico.",
+  "sample": [
+    {
+      "section": "Written Report",
+      "body": "M\u00e9xico es un pa\u00eds con una rica tradici\u00f3n musical. Desde el Mariachi hasta la m\u00fasica pop moderna, el ritmo es parte de la vida diaria. Investigu\u00e9 esto leyendo sobre la historia de la m\u00fasica ranchera.",
+      "tips": "Use a variety of tenses (present, past) in your report."
+    },
+    {
+      "section": "Oral Reflection",
+      "body": "Para este proyecto, escuch\u00e9 muchas canciones mexicanas. Aprend\u00ed vocabulario nuevo y mejor\u00e9 mi comprensi\u00f3n auditiva.",
+      "tips": "Speak clearly and focus on pronunciation during the oral phase."
+    }
+  ],
+  "marking": "Grammatical accuracy, vocabulary range, and fluency in the oral component are the key areas for assessment.",
+  "checklist": [
+    "Cultural theme chosen",
+    "Written report completed",
+    "Vocabulary list prepared",
+    "Oral presentation practiced",
+    "Reflection drafted"
+  ]
+}

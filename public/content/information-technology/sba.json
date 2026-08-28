@@ -1,0 +1,51 @@
+{
+  "subjectId": "information-technology",
+  "introduction": "The IT SBA is a project divided into three main components: Word Processing, Spreadsheets, and Database Management, plus a Problem-Solving (Program) component. It counts for 25% of the total grade.",
+  "tasks": [
+    {
+      "section": "Word Processing",
+      "title": "Document Creation",
+      "explanation": "Create letters, flyers, and tables using advanced formatting.",
+      "marks": "10"
+    },
+    {
+      "section": "Spreadsheets",
+      "title": "Data Analysis",
+      "explanation": "Use formulas, functions, and charts to analyze data.",
+      "marks": "15"
+    },
+    {
+      "section": "Database",
+      "title": "Data Management",
+      "explanation": "Create tables, queries, forms, and reports.",
+      "marks": "15"
+    },
+    {
+      "section": "Problem Solving",
+      "title": "Programming",
+      "explanation": "Create an algorithm (pseudocode/flowchart) and a Pascal program.",
+      "marks": "20"
+    }
+  ],
+  "sampleTitle": "A management system for 'Bayview Sports Club' memberships and tournament scheduling.",
+  "sample": [
+    {
+      "section": "Problem Definition",
+      "body": "The club currently uses a paper-based system which is inefficient for tracking 200 members and their fees. This project designs a digital system to automate fee tracking and generate monthly reports.",
+      "tips": "Identify the limitations of the current manual system."
+    },
+    {
+      "section": "Database Design",
+      "body": "Table: Members (MemberID, Name, JoinedDate, MembershipType)\nTable: Payments (PaymentID, MemberID, Amount, Date)",
+      "tips": "Ensure primary and foreign keys are clearly identified."
+    }
+  ],
+  "marking": "Successful integration of the three components and a logical, error-free program are the main criteria.",
+  "checklist": [
+    "Word document with mail merge",
+    "Spreadsheet with VLOOKUP/IF functions",
+    "Database queries with multiple criteria",
+    "Correct pseudocode/flowchart",
+    "Working Pascal program"
+  ]
+}

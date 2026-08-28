@@ -1,0 +1,58 @@
+{
+  "subjectId": "principles-of-accounts",
+  "introduction": "The POA SBA is a project involving the preparation of a set of accounting records for a small business. It contributes 20% to the final grade.",
+  "tasks": [
+    {
+      "section": "Project Aim",
+      "title": "Project Aim",
+      "explanation": "Describe the business and the purpose of the project.",
+      "marks": "2"
+    },
+    {
+      "section": "Business Transactions",
+      "title": "Business Transactions",
+      "explanation": "List at least 10 different types of transactions.",
+      "marks": "4"
+    },
+    {
+      "section": "Books of Original Entry",
+      "title": "Journals and Cash Book",
+      "explanation": "Record transactions in the appropriate journals.",
+      "marks": "4"
+    },
+    {
+      "section": "Ledgers",
+      "title": "General Ledger",
+      "explanation": "Post transactions to the ledger accounts.",
+      "marks": "4"
+    },
+    {
+      "section": "Financial Statements",
+      "title": "Income Statement and Balance Sheet",
+      "explanation": "Prepare final accounts for the period.",
+      "marks": "6"
+    }
+  ],
+  "sampleTitle": "Accounting records for 'Green Grocer Mini-Mart' for the month of September 2023.",
+  "sample": [
+    {
+      "section": "Business Description",
+      "body": "Green Grocer is a sole proprietorship owned by Jane Doe. It sells fresh organic produce to the local community. The project aims to track profitability for the first month of operation.",
+      "tips": "Include the start-up capital and nature of the business."
+    },
+    {
+      "section": "Transaction Example",
+      "body": "Sept 1: Started business with $10,000 cash.\nSept 5: Purchased stock on credit from FreshCo for $2,000.",
+      "tips": "Vary your transactions (credit, cash, expenses, returns)."
+    }
+  ],
+  "marking": "Accuracy in balancing accounts, proper use of the double-entry system, and the correct format of financial statements are critical.",
+  "checklist": [
+    "Introduction with business name",
+    "List of transactions",
+    "Source documents described",
+    "Double entry maintained",
+    "Trial Balance balances",
+    "Accurate Income Statement"
+  ]
+}

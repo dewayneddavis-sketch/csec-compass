@@ -1,0 +1,81 @@
+{
+  "subjectId": "mathematics",
+  "introduction": "The Mathematics SBA is a project that allows students to apply mathematical concepts to real-life situations. It contributes 20% to the final CSEC grade.",
+  "tasks": [
+    {
+      "section": "Project Title",
+      "title": "Project Title",
+      "explanation": "The title should be clear and concise, reflecting the focus of the study.",
+      "marks": "1"
+    },
+    {
+      "section": "Introduction",
+      "title": "Introduction",
+      "explanation": "Provide a background of the study and state the purpose clearly.",
+      "marks": "2"
+    },
+    {
+      "section": "Method of Data Collection",
+      "title": "Method of Data Collection",
+      "explanation": "Describe how you collected your data (e.g., questionnaire, observation).",
+      "marks": "2"
+    },
+    {
+      "section": "Presentation of Data",
+      "title": "Presentation of Data",
+      "explanation": "Use tables, charts, and graphs to represent the collected data.",
+      "marks": "5"
+    },
+    {
+      "section": "Analysis of Data",
+      "title": "Analysis of Data",
+      "explanation": "Perform calculations and explain the mathematical relationships found.",
+      "marks": "2"
+    },
+    {
+      "section": "Discussion of Findings",
+      "title": "Discussion of Findings",
+      "explanation": "Interpret the results in the context of your original objective.",
+      "marks": "2"
+    },
+    {
+      "section": "Conclusion",
+      "title": "Conclusion",
+      "explanation": "Summarize the findings and state if the objective was met.",
+      "marks": "2"
+    },
+    {
+      "section": "Overall Presentation",
+      "title": "Overall Presentation",
+      "explanation": "Organization, grammar, and proper use of mathematical language.",
+      "marks": "2"
+    }
+  ],
+  "sampleTitle": "A study of the spending habits of Grade 10 students at Excellence Secondary School.",
+  "sample": [
+    {
+      "section": "Introduction",
+      "body": "The purpose of this study is to investigate how Grade 10 students at Excellence Secondary School spend their weekly allowance. Many students often complain about not having enough money, and this study aims to see if the money is being spent wisely on school-related items or other activities.",
+      "tips": "Make sure your objective is measurable."
+    },
+    {
+      "section": "Method of Data Collection",
+      "body": "A questionnaire was designed with 5 questions regarding allowance and spending. This questionnaire was distributed to 30 students in Grade 10 using random sampling.",
+      "tips": "Specify your sample size and sampling method."
+    },
+    {
+      "section": "Presentation of Data",
+      "body": "Table 1: Weekly Spending Categories\nCategory | Amount ($)\nFood | 150\nTransport | 100\nEntertainment | 50\nSavings | 20\nTotal | 320",
+      "tips": "Label all tables and graphs clearly."
+    }
+  ],
+  "marking": "Marks are awarded for the clarity of the objective, the accuracy of data representation, the depth of analysis, and the overall logical flow of the project.",
+  "checklist": [
+    "Clear Project Title",
+    "Well-defined Objective",
+    "Description of Data Collection",
+    "At least two different types of data presentation (e.g., table and bar chart)",
+    "Detailed Analysis with calculations",
+    "Logical Conclusion based on data"
+  ]
+}

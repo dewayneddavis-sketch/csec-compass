@@ -1,0 +1,53 @@
+{
+  "subjectId": "biology",
+  "introduction": "The Biology SBA is based on a series of practical experiments and a final project or investigative task. It contributes 20% to the final grade.",
+  "tasks": [
+    {
+      "section": "Planning and Designing",
+      "title": "P&D Task",
+      "explanation": "Formulate a hypothesis and design an experiment to test it.",
+      "marks": "10"
+    },
+    {
+      "section": "Observation, Recording and Reporting",
+      "title": "ORR",
+      "explanation": "Present data accurately using tables, drawings, or graphs.",
+      "marks": "10"
+    },
+    {
+      "section": "Analysis and Interpretation",
+      "title": "A&I",
+      "explanation": "Interpret the data and draw conclusions related to biological theories.",
+      "marks": "10"
+    },
+    {
+      "section": "Measurement and Manipulation",
+      "title": "M&M",
+      "explanation": "Demonstrate skillful use of lab equipment.",
+      "marks": "10"
+    }
+  ],
+  "sampleTitle": "An investigation into the effect of temperature on the rate of enzyme activity (catalase) in potato tissue.",
+  "sample": [
+    {
+      "section": "Introduction/Hypothesis",
+      "body": "Hypothesis: As temperature increases from 10\u00b0C to 40\u00b0C, the rate of oxygen production (foam height) will increase, but will decrease above 40\u00b0C as the enzyme denatures.",
+      "tips": "Ensure the hypothesis is testable and specific."
+    },
+    {
+      "section": "Method",
+      "body": "Potato cylinders of equal length were placed in hydrogen peroxide at different temperatures (10, 20, 30, 40, 50\u00b0C). The height of the foam produced after 2 minutes was measured using a ruler.",
+      "tips": "Identify controlled, independent, and dependent variables."
+    }
+  ],
+  "marking": "Marks are given for accurate observations, logical deductions, and precise measurements. Scientific drawings must follow specific conventions.",
+  "checklist": [
+    "Hypothesis stated",
+    "Variables identified",
+    "Materials list complete",
+    "Step-by-step method",
+    "Data table prepared",
+    "Graph plotted",
+    "Conclusion linked to hypothesis"
+  ]
+}
