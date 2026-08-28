@@ -19,26 +19,33 @@ import "./ExperimentSandbox.css";
 
 // Mathematics → GraphingCalculator modes (math content only)
 const MATH_LINEAR_TYPES = new Set([
-  "graphing", "graphing-calc", "graph-linear", "graph-plotter", "graph-sim",
-  "function-machine", "simulation", "interactive-equation", "calculator-tool",
-  "slider-tool", "data-visualizer",
+  "graphing", "graphing-calc", "graph-linear", "graph-sim", "coordinate-geometry",
 ]);
 const MATH_PARABOLA_TYPES = new Set([
-  "decay-sim", "heat-sim", "piston-sim", "energy-meter", "ripple-tank", "optics-bench",
+  "graph-plotter",
 ]);
 const MATH_NUMBERLINE_TYPES = new Set(["number-line-plotter"]);
-// Geometry/vector/triangle/matrix topics aren't a line plot — honest fallback
-// is the math flashcard deck (still math content).
-const MATH_FLASHCARD_TYPES = new Set([
-  "interactive-triangle", "trig-circle", "vector-addition", "matrix-transformer",
-]);
+// Balance/area/volume builders keep their dedicated tool.
 const MATH_BALANCE_TYPES = new Set([
-  "balance-scale", "visual-converter", "area-builder", "volume-filler",
+  "balance-scale", "area-builder", "volume-filler",
+]);
+// Concept lessons → per-lesson DragDropLabel sets (subjectTypeSets.mathematics).
+const MATH_DRAG_TYPES = new Set([
+  "interactive-quiz", "visual-converter", "function-machine", "interactive-triangle",
+  "trig-circle", "vector-addition", "matrix-transformer", "data-visualizer",
+  "probability-sim",
 ]);
 
-// Chemistry drag types → DragDropLabel chemistry set
+// Physics drag types → per-lesson DragDropLabel sets (subjectTypeSets.physics)
+const PHYS_DRAG_TYPES = new Set([
+  "vector-addition", "graph-sim", "heat-sim", "piston-sim", "ripple-tank",
+  "optics-bench", "decay-sim",
+]);
+
+// Chemistry drag types → per-lesson DragDropLabel sets (subjectTypeSets.chemistry)
 const CHEM_DRAG_TYPES = new Set([
-  "molecule-builder", "bond-creator", "atom-builder", "interactive-table",
+  "simulation", "atom-builder", "interactive-table", "bond-creator", "calculator-tool",
+  "virtual-lab", "titration-sim", "interactive-equation", "molecule-builder",
 ]);
 
 // Biology / HSB drag types → DragDropLabel biology set
@@ -103,14 +110,17 @@ function resolveInteractive(subjectId, experimentType) {
   const t = experimentType || "flashcard";
   const flash = (deckSubject) => <FlashcardSystem subjectId={deckSubject || subjectId} />;
 
-  // ---- physics: circuit-builder only; everything else physics flashcards
+  // ---- physics: circuit-builder keeps its dedicated tool; other lessons
+  //      resolve to distinct per-lesson DragDropLabel sets.
   if (subjectId === "physics") {
     if (t === "circuit-builder") return <CircuitBuilder />;
+    if (PHYS_DRAG_TYPES.has(t)) return <DragDropLabel subjectId="physics" experimentType={t} />;
     return flash("physics");
   }
 
-  // ---- mathematics: graphs / balance / math flashcards
+  // ---- mathematics: graphs / balance / per-lesson drag sets
   if (subjectId === "mathematics") {
+    if (MATH_DRAG_TYPES.has(t)) return <DragDropLabel subjectId="mathematics" experimentType={t} />;
     if (MATH_LINEAR_TYPES.has(t)) return <GraphingCalculator mode="linear" />;
     if (MATH_PARABOLA_TYPES.has(t)) return <GraphingCalculator mode="parabola" />;
     if (MATH_NUMBERLINE_TYPES.has(t)) return <GraphingCalculator mode="number-line" />;
@@ -120,7 +130,7 @@ function resolveInteractive(subjectId, experimentType) {
 
   // ---- chemistry: molecule/bond/atom builders → chemistry drag set
   if (subjectId === "chemistry") {
-    if (CHEM_DRAG_TYPES.has(t)) return <DragDropLabel subjectId="chemistry" />;
+    if (CHEM_DRAG_TYPES.has(t)) return <DragDropLabel subjectId="chemistry" experimentType={t} />;
     return flash("chemistry");
   }
 
