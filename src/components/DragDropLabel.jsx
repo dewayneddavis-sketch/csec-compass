@@ -270,6 +270,391 @@ const englishSets = {
   },
 };
 
+// ---- Mathematics / Physics / Chemistry: per (subject, experimentType) sets --
+// Each lesson's experiment.type resolves to a distinct set whose content
+// matches that lesson's topic. Builders that already produce a distinct,
+// topic-matched interaction (graph plotting, balance scale, circuit builder)
+// stay on their dedicated tools and are NOT listed here.
+const subjectTypeSets = {
+  mathematics: {
+    // Operations on Real Numbers — match each expression to its result.
+    "interactive-quiz": {
+      title: "Order of Operations Challenge",
+      subtitle: "Use BODMAS to evaluate each expression, then drag it to its correct result.",
+      kind: "match",
+      pairs: [
+        { id: "r1", target: "16", label: "6 + 2 × 5" },
+        { id: "r2", target: "7", label: "3 + 4 × 1" },
+        { id: "r3", target: "13", label: "2 + 3 × 3 + 2" },
+        { id: "r4", target: "1", label: "10 − 2 × 4 − 1" },
+        { id: "r5", target: "21", label: "(2 + 5) × 3" },
+      ],
+    },
+    // Fractions, Decimals & Percentages — match fraction to percentage.
+    "visual-converter": {
+      title: "Fraction ↔ Percentage Match",
+      subtitle: "Drag each fraction to its equivalent percentage.",
+      kind: "match",
+      pairs: [
+        { id: "f1", target: "50%", label: "1/2" },
+        { id: "f2", target: "25%", label: "1/4" },
+        { id: "f3", target: "75%", label: "3/4" },
+        { id: "f4", target: "20%", label: "1/5" },
+        { id: "f5", target: "10%", label: "1/10" },
+      ],
+    },
+    // Introduction to Functions — match input to output of f(x) = 2x + 1.
+    "function-machine": {
+      title: "Function Machine: f(x) = 2x + 1",
+      subtitle: "Drag each input to the output the machine would produce.",
+      kind: "match",
+      pairs: [
+        { id: "fx1", target: "1", label: "f(0)" },
+        { id: "fx2", target: "3", label: "f(1)" },
+        { id: "fx3", target: "5", label: "f(2)" },
+        { id: "fx4", target: "7", label: "f(3)" },
+        { id: "fx5", target: "9", label: "f(4)" },
+      ],
+    },
+    // Pythagoras' Theorem — match triangle side pairs to missing hypotenuse.
+    "interactive-triangle": {
+      title: "Find the Hypotenuse",
+      subtitle: "For each right-angled triangle (two shorter sides given), drag it to its hypotenuse length.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "5", label: "Sides 3 and 4" },
+        { id: "p2", target: "10", label: "Sides 6 and 8" },
+        { id: "p3", target: "13", label: "Sides 5 and 12" },
+        { id: "p4", target: "15", label: "Sides 9 and 12" },
+        { id: "p5", target: "17", label: "Sides 8 and 15" },
+      ],
+    },
+    // Trig Ratios (SOH CAH TOA) — match ratio to its formula.
+    "trig-circle": {
+      title: "Match the Trig Ratios",
+      subtitle: "Drag each ratio to the correct SOH-CAH-TOA definition.",
+      kind: "match",
+      pairs: [
+        { id: "t1", target: "opposite ÷ hypotenuse", label: "sin θ" },
+        { id: "t2", target: "adjacent ÷ hypotenuse", label: "cos θ" },
+        { id: "t3", target: "opposite ÷ adjacent", label: "tan θ" },
+        { id: "t4", target: "sin θ = opposite/hypotenuse", label: "SOH" },
+        { id: "t5", target: "cos θ = adjacent/hypotenuse", label: "CAH" },
+        { id: "t6", target: "tan θ = opposite/adjacent", label: "TOA" },
+      ],
+    },
+    // Introduction to Vectors — sort quantities as scalar or vector.
+    "vector-addition": {
+      title: "Scalar or Vector?",
+      subtitle: "Sort each quantity into Scalar (magnitude only) or Vector (magnitude AND direction).",
+      kind: "sort",
+      categories: [
+        { id: "scalar", label: "Scalar" },
+        { id: "vector", label: "Vector" },
+      ],
+      items: [
+        { id: "sp1", label: "Speed: 6 m/s", category: "scalar" },
+        { id: "sp2", label: "Distance: 40 m", category: "scalar" },
+        { id: "sp3", label: "Mass: 5 kg", category: "scalar" },
+        { id: "sp4", label: "Time: 3 s", category: "scalar" },
+        { id: "vt1", label: "Velocity: 6 m/s north", category: "vector" },
+        { id: "vt2", label: "Displacement: 40 m east", category: "vector" },
+        { id: "vt3", label: "Force: 10 N down", category: "vector" },
+      ],
+    },
+    // Matrices & Determinants — match matrix size to its order.
+    "matrix-transformer": {
+      title: "Matrix Dimensions",
+      subtitle: "Drag each matrix size to its correct order (rows × columns).",
+      kind: "match",
+      pairs: [
+        { id: "m2", target: "2 rows, 2 columns", label: "A 2 × 2 matrix" },
+        { id: "m3", target: "3 rows, 1 column", label: "A 3 × 1 matrix" },
+        { id: "m4", target: "2 rows, 3 columns", label: "A 2 × 3 matrix" },
+        { id: "m5", target: "1 row, 4 columns", label: "A 1 × 4 matrix" },
+      ],
+    },
+    // Measures of Central Tendency — match term to value for the data
+    // set {2, 4, 4, 6, 10}.
+    "data-visualizer": {
+      title: "Live Stats for {2, 4, 4, 6, 10}",
+      subtitle: "Drag each measure of central tendency to its value for this data set.",
+      kind: "match",
+      pairs: [
+        { id: "d1", target: "5.2", label: "Mean" },
+        { id: "d2", target: "4", label: "Median" },
+        { id: "d3", target: "4", label: "Mode" },
+        { id: "d4", target: "8", label: "Range" },
+        { id: "d5", target: "5", label: "Number of values" },
+        { id: "d6", target: "26", label: "Sum of values" },
+      ],
+    },
+    // Basic Probability — match event to probability.
+    "probability-sim": {
+      title: "Coin & Dice Chances",
+      subtitle: "Drag each event to its probability.",
+      kind: "match",
+      pairs: [
+        { id: "pr1", target: "1/2", label: "Getting heads on one coin flip" },
+        { id: "pr2", target: "1/6", label: "Rolling a 6 on a fair die" },
+        { id: "pr3", target: "3/6", label: "Rolling an even number on a die" },
+        { id: "pr4", target: "3/6", label: "Rolling an odd number on a die" },
+        { id: "pr5", target: "1", label: "Rolling a number less than 7" },
+      ],
+    },
+  },
+  physics: {
+    // Scalars and Vectors — sort quantities as scalar or vector.
+    "vector-addition": {
+      title: "Scalar or Vector?",
+      subtitle: "Sort each physics quantity into Scalar (magnitude only) or Vector (magnitude AND direction).",
+      kind: "sort",
+      categories: [
+        { id: "scalar", label: "Scalar" },
+        { id: "vector", label: "Vector" },
+      ],
+      items: [
+        { id: "p1", label: "Speed", category: "scalar" },
+        { id: "p2", label: "Distance", category: "scalar" },
+        { id: "p3", label: "Temperature", category: "scalar" },
+        { id: "p4", label: "Mass", category: "scalar" },
+        { id: "p5", label: "Velocity", category: "vector" },
+        { id: "p6", label: "Displacement", category: "vector" },
+        { id: "p7", label: "Acceleration", category: "vector" },
+        { id: "p8", label: "Force", category: "vector" },
+      ],
+    },
+    // Distance-Time & Velocity-Time Graphs — match graph segment to motion.
+    "graph-sim": {
+      title: "Read the Motion Graph",
+      subtitle: "Drag each graph feature to the motion it describes.",
+      kind: "match",
+      pairs: [
+        { id: "g1", target: "At rest (not moving)", label: "Horizontal flat line on a distance–time graph" },
+        { id: "g2", target: "Constant speed", label: "Straight sloped line on a distance–time graph" },
+        { id: "g3", target: "Constant velocity", label: "Horizontal line above zero on a velocity–time graph" },
+        { id: "g4", target: "Constant acceleration", label: "Straight sloped line on a velocity–time graph" },
+        { id: "g5", target: "Zero velocity", label: "Flat line on the zero line of a velocity–time graph" },
+      ],
+    },
+    // Temperature and Heat Transfer — sort into methods of heat transfer.
+    "heat-sim": {
+      title: "How Does Heat Move?",
+      subtitle: "Sort each example into Conduction, Convection, or Radiation.",
+      kind: "sort",
+      categories: [
+        { id: "cond", label: "Conduction" },
+        { id: "conv", label: "Convection" },
+        { id: "rad", label: "Radiation" },
+      ],
+      items: [
+        { id: "h1", label: "Metal spoon heats up in hot soup", category: "cond" },
+        { id: "h2", label: "Handle of a frying pan gets hot", category: "cond" },
+        { id: "h3", label: "Hot air rises above a heater", category: "conv" },
+        { id: "h4", label: "Water boils and circulates", category: "conv" },
+        { id: "h5", label: "Sun warms your skin", category: "rad" },
+        { id: "h6", label: "Heat from a fire felt across a room", category: "rad" },
+      ],
+    },
+    // The Gas Laws — match each gas law to its relationship.
+    "piston-sim": {
+      title: "The Gas Laws",
+      subtitle: "Drag each gas law to the relationship it describes.",
+      kind: "match",
+      pairs: [
+        { id: "b1", target: "Pressure is inversely proportional to volume (constant temperature)", label: "Boyle's Law" },
+        { id: "b2", target: "Volume is proportional to temperature (constant pressure)", label: "Charles's Law" },
+        { id: "b3", target: "Pressure is proportional to temperature (constant volume)", label: "The Pressure Law" },
+        { id: "b4", target: "Pressure ∝ 1/Volume", label: "Boyle's Law (mathematically)" },
+        { id: "b5", target: "V ∝ T", label: "Charles's Law (mathematically)" },
+      ],
+    },
+    // Properties of Waves — match term to definition.
+    "ripple-tank": {
+      title: "Wave Terms",
+      subtitle: "Drag each wave property to its definition.",
+      kind: "match",
+      pairs: [
+        { id: "w1", target: "Distance between successive crests", label: "Wavelength" },
+        { id: "w2", target: "Number of waves per second (Hz)", label: "Frequency" },
+        { id: "w3", target: "Maximum height of a wave from its rest position", label: "Amplitude" },
+        { id: "w4", target: "Frequency × wavelength", label: "Wave speed" },
+      ],
+    },
+    // Refraction and Lenses — match lens to its behaviour.
+    "optics-bench": {
+      title: "Lenses & Refraction",
+      subtitle: "Drag each item to the behaviour it describes.",
+      kind: "match",
+      pairs: [
+        { id: "o1", target: "Brings parallel rays together", label: "Convex (converging) lens" },
+        { id: "o2", target: "Spreads parallel rays apart", label: "Concave (diverging) lens" },
+        { id: "o3", target: "The bending of light as it passes between materials", label: "Refraction" },
+        { id: "o4", target: "The line perpendicular to a surface at the point of impact", label: "Normal" },
+      ],
+    },
+    // Radioactivity and Half-Life — match emission to its property.
+    "decay-sim": {
+      title: "Types of Radiation",
+      subtitle: "Drag each type of emission to the statement that describes it.",
+      kind: "match",
+      pairs: [
+        { id: "r1", target: "A helium nucleus, stopped by paper", label: "Alpha (α)" },
+        { id: "r2", target: "A fast electron, stopped by aluminium", label: "Beta (β)" },
+        { id: "r3", target: "Electromagnetic radiation, needs thick lead", label: "Gamma (γ)" },
+        { id: "r4", target: "The time for half of the atoms to decay", label: "Half-life" },
+      ],
+    },
+  },
+  chemistry: {
+    // States of Matter — sort properties into solid/liquid/gas.
+    simulation: {
+      title: "Solid, Liquid or Gas?",
+      subtitle: "Sort each property into the state of matter it describes.",
+      kind: "sort",
+      categories: [
+        { id: "solid", label: "Solid" },
+        { id: "liquid", label: "Liquid" },
+        { id: "gas", label: "Gas" },
+      ],
+      items: [
+        { id: "s1", label: "Fixed shape and fixed volume", category: "solid" },
+        { id: "s2", label: "Particles vibrate in fixed positions", category: "solid" },
+        { id: "s3", label: "Fixed volume, takes the shape of its container", category: "liquid" },
+        { id: "s4", label: "Particles slide over each other", category: "liquid" },
+        { id: "s5", label: "No fixed shape or volume", category: "gas" },
+        { id: "s6", label: "Particles move freely and far apart", category: "gas" },
+      ],
+    },
+    // Atomic Structure — match subatomic particle to property.
+    "atom-builder": {
+      title: "Build the Atom",
+      subtitle: "Drag each subatomic particle or number to its correct description.",
+      kind: "match",
+      pairs: [
+        { id: "a1", target: "Positive, found in the nucleus", label: "Proton" },
+        { id: "a2", target: "Neutral, found in the nucleus", label: "Neutron" },
+        { id: "a3", target: "Negative, found in shells around the nucleus", label: "Electron" },
+        { id: "a4", target: "Protons + neutrons", label: "Mass number" },
+        { id: "a5", target: "Number of protons", label: "Atomic number" },
+      ],
+    },
+    // Periodic Table Trends — sort elements as metal or non-metal.
+    "interactive-table": {
+      title: "Metal or Non-metal?",
+      subtitle: "Sort each element into Metal or Non-metal.",
+      kind: "sort",
+      categories: [
+        { id: "metal", label: "Metal" },
+        { id: "nonmetal", label: "Non-metal" },
+      ],
+      items: [
+        { id: "e1", label: "Sodium (Na)", category: "metal" },
+        { id: "e2", label: "Iron (Fe)", category: "metal" },
+        { id: "e3", label: "Potassium (K)", category: "metal" },
+        { id: "e4", label: "Oxygen (O)", category: "nonmetal" },
+        { id: "e5", label: "Chlorine (Cl)", category: "nonmetal" },
+        { id: "e6", label: "Carbon (C)", category: "nonmetal" },
+      ],
+    },
+    // Ionic and Covalent Bonding — sort into ionic or covalent.
+    "bond-creator": {
+      title: "Ionic or Covalent?",
+      subtitle: "Sort each example into Ionic (electron transfer) or Covalent (electron sharing).",
+      kind: "sort",
+      categories: [
+        { id: "ionic", label: "Ionic" },
+        { id: "covalent", label: "Covalent" },
+      ],
+      items: [
+        { id: "b1", label: "Sodium chloride (NaCl)", category: "ionic" },
+        { id: "b2", label: "Metal bonded to a non-metal", category: "ionic" },
+        { id: "b3", label: "Electrons transferred", category: "ionic" },
+        { id: "b4", label: "Water (H₂O)", category: "covalent" },
+        { id: "b5", label: "Methane (CH₄)", category: "covalent" },
+        { id: "b6", label: "Electrons shared", category: "covalent" },
+      ],
+    },
+    // Molar Mass Calculations — match compound to approximate molar mass.
+    "calculator-tool": {
+      title: "Molar Mass Match",
+      subtitle: "Drag each compound to its approximate molar mass.",
+      kind: "match",
+      pairs: [
+        { id: "c1", target: "18 g/mol", label: "H₂O" },
+        { id: "c2", target: "44 g/mol", label: "CO₂" },
+        { id: "c3", target: "58.5 g/mol", label: "NaCl" },
+        { id: "c4", target: "32 g/mol", label: "O₂" },
+        { id: "c5", target: "16 g/mol", label: "CH₄" },
+      ],
+    },
+    // pH Scale and Indicators — sort substances as acid/neutral/base.
+    "virtual-lab": {
+      title: "Acid, Neutral or Base?",
+      subtitle: "Sort each substance by its pH classification.",
+      kind: "sort",
+      categories: [
+        { id: "acid", label: "Acid" },
+        { id: "neutral", label: "Neutral" },
+        { id: "base", label: "Base" },
+      ],
+      items: [
+        { id: "ph1", label: "Lemon juice", category: "acid" },
+        { id: "ph2", label: "Vinegar", category: "acid" },
+        { id: "ph3", label: "Pure water (pH 7)", category: "neutral" },
+        { id: "ph4", label: "Salt water", category: "neutral" },
+        { id: "ph5", label: "Soap", category: "base" },
+        { id: "ph6", label: "Washing soda", category: "base" },
+      ],
+    },
+    // Neutralization & Salt Formation — order the titration steps.
+    "titration-sim": {
+      title: "Set Up the Titration",
+      subtitle: "Arrange the titration steps in the correct order.",
+      kind: "order",
+      items: [
+        { id: "t1", label: "Rinse the burette with the base solution.", order: 1 },
+        { id: "t2", label: "Fill the burette with base and record the initial reading.", order: 2 },
+        { id: "t3", label: "Pipette a known volume of acid into the conical flask.", order: 3 },
+        { id: "t4", label: "Add a few drops of indicator to the acid.", order: 4 },
+        { id: "t5", label: "Add base slowly until the indicator changes colour.", order: 5 },
+        { id: "t6", label: "Record the final burette reading.", order: 6 },
+      ],
+    },
+    // Defining Redox — sort as oxidation or reduction.
+    "interactive-equation": {
+      title: "Oxidation or Reduction?",
+      subtitle: "Sort each change into Oxidation or Reduction.",
+      kind: "sort",
+      categories: [
+        { id: "ox", label: "Oxidation" },
+        { id: "red", label: "Reduction" },
+      ],
+      items: [
+        { id: "d1", label: "Loss of electrons", category: "ox" },
+        { id: "d2", label: "Increase in oxidation state", category: "ox" },
+        { id: "d3", label: "Gain of oxygen", category: "ox" },
+        { id: "d4", label: "Gain of electrons", category: "red" },
+        { id: "d5", label: "Decrease in oxidation state", category: "red" },
+        { id: "d6", label: "Loss of oxygen", category: "red" },
+      ],
+    },
+    // Introduction to Hydrocarbons (Alkanes) — match alkane to formula.
+    "molecule-builder": {
+      title: "Names to Formulae",
+      subtitle: "Drag each alkane to its correct molecular formula.",
+      kind: "match",
+      pairs: [
+        { id: "y1", target: "CH₄", label: "Methane (1 carbon)" },
+        { id: "y2", target: "C₂H₆", label: "Ethane (2 carbons)" },
+        { id: "y3", target: "C₃H₈", label: "Propane (3 carbons)" },
+        { id: "y4", target: "C₄H₁₀", label: "Butane (4 carbons)" },
+        { id: "y5", target: "CnH₂n₊₂", label: "General alkane formula" },
+      ],
+    },
+  },
+};
+
 // Shuffled starting positions
 function shuffle(arr) {
   const a = [...arr];
@@ -291,11 +676,14 @@ function ord(n) {
 }
 
 export default function DragDropLabel({ subjectId, experimentType }) {
-  // English A resolves per lesson (by experimentType); all other subjects use
-  // the single subject-level set.
+  // Resolve per lesson: English A and Mathematics/Physics/Chemistry use their
+  // per-(subject, experimentType) set library; all other subjects use the
+  // single subject-level set.
   let set;
   if (subjectId === "english-a" && englishSets[experimentType]) {
     set = englishSets[experimentType];
+  } else if (subjectTypeSets[subjectId] && subjectTypeSets[subjectId][experimentType]) {
+    set = subjectTypeSets[subjectId][experimentType];
   } else {
     set = subjectSets[subjectId] || subjectSets["english-a"];
   }
