@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { lessonSets } from "./lessonSets";
 
 // ---- Subject-aware content sets ------------------------------------------
 // Every set's CONTENT belongs to its own subject. `kind: "diagram"` keeps the
@@ -665,22 +666,19 @@ function shuffle(arr) {
   return a;
 }
 
-const startPositions = [
-  { x: 10, y: 10 }, { x: 10, y: 25 }, { x: 10, y: 40 },
-  { x: 10, y: 55 }, { x: 10, y: 70 },
-];
-
 function ord(n) {
   const s = ["1st", "2nd", "3rd"];
   return s[n - 1] || `${n}th`;
 }
 
-export default function DragDropLabel({ subjectId, experimentType }) {
-  // Resolve per lesson: English A and Mathematics/Physics/Chemistry use their
-  // per-(subject, experimentType) set library; all other subjects use the
-  // single subject-level set.
+export default function DragDropLabel({ subjectId, experimentType, lessonId }) {
+  // Resolve per lesson: subjects with per-lesson sets match on lessonId first,
+  // then English A and Mathematics/Physics/Chemistry use their per-
+  // (subject, experimentType) set library, and finally the subject-level set.
   let set;
-  if (subjectId === "english-a" && englishSets[experimentType]) {
+  if (lessonSets[subjectId] && lessonSets[subjectId][lessonId]) {
+    set = lessonSets[subjectId][lessonId];
+  } else if (subjectId === "english-a" && englishSets[experimentType]) {
     set = englishSets[experimentType];
   } else if (subjectTypeSets[subjectId] && subjectTypeSets[subjectId][experimentType]) {
     set = subjectTypeSets[subjectId][experimentType];
@@ -859,7 +857,6 @@ export default function DragDropLabel({ subjectId, experimentType }) {
     zones = set.pairs.map((p) => ({ id: p.id, label: p.target }));
   }
 
-  const draggableItems = set.kind === "match" ? set.pairs : set.items;
 
   return (
     <div className="drag-drop">

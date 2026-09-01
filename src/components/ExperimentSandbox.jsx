@@ -48,12 +48,6 @@ const CHEM_DRAG_TYPES = new Set([
   "virtual-lab", "titration-sim", "interactive-equation", "molecule-builder",
 ]);
 
-// Biology / HSB drag types → DragDropLabel biology set
-const BIO_DRAG_TYPES = new Set([
-  "drag-drop", "drag-drop-label", "cell-viewer", "punnett-square-maker",
-  "interactive-pathway",
-]);
-
 // English A drag/match/sort/order types → DragDropLabel per-lesson set
 const ENG_DRAG_TYPES = new Set([
   "matching-game", "dialogue-builder", "punctuation-drag-drop", "plot-arranger",
@@ -61,20 +55,6 @@ const ENG_DRAG_TYPES = new Set([
 ]);
 // English A diction lesson → dedicated vocab deck in FlashcardSystem
 const ENG_DICTION_TYPES = new Set(["vocab-flashcards", "flashcard", "interactive-quiz"]);
-
-// POA balance/ledger types → BalanceScale (POA sort mode)
-const POA_BALANCE_TYPES = new Set([
-  "balance-scale", "interactive-ledger", "statement-builder", "data-entry-sim",
-  "workbook-tool", "calculator-tool", "slider-tool", "classifier-sim",
-  "interactive-summary",
-]);
-// POA drag types → DragDropLabel POA set
-const POA_DRAG_TYPES = new Set(["drag-drop", "drag-drop-label", "matching-game"]);
-
-// IT drag types → DragDropLabel IT set
-const IT_DRAG_TYPES = new Set([
-  "network-topology", "flowchart-builder", "schema-designer", "web-builder",
-]);
 
 // Social Studies drag types → DragDropLabel SS set
 const SS_DRAG_TYPES = new Set([
@@ -106,7 +86,7 @@ const SUBJECT_FALLBACK = {
 };
 
 // Resolve (subjectId, experimentType) → interactive component element.
-function resolveInteractive(subjectId, experimentType) {
+function resolveInteractive(subjectId, experimentType, lessonId) {
   const t = experimentType || "flashcard";
   const flash = (deckSubject) => <FlashcardSystem subjectId={deckSubject || subjectId} />;
 
@@ -134,10 +114,17 @@ function resolveInteractive(subjectId, experimentType) {
     return flash("chemistry");
   }
 
-  // ---- biology & human-social-biology → biology drag set / biology deck
-  if (subjectId === "biology" || subjectId === "human-social-biology") {
-    if (BIO_DRAG_TYPES.has(t)) return <DragDropLabel subjectId="biology" />;
-    return flash("biology");
+  // ---- biology → per-lesson sets (subjectId + experimentType + lessonId);
+  //      every lesson's type resolves to its own topic-matched set. If a
+  //      lessonId is absent (subject-page lab), DragDropLabel falls back to
+  //      the subject-level cell-diagram set.
+  if (subjectId === "biology") {
+    return <DragDropLabel subjectId="biology" experimentType={t} lessonId={lessonId} />;
+  }
+  // ---- human-social-biology → its own subject deck (per-lesson sets come in
+  //      the next batch)
+  if (subjectId === "human-social-biology") {
+    return flash("human-social-biology");
   }
 
   // ---- english-a: per-lesson set by type; diction → dedicated vocab deck
@@ -149,15 +136,13 @@ function resolveInteractive(subjectId, experimentType) {
 
   // ---- principles-of-accounts: ledger/balance → POA sort; drag → POA set
   if (subjectId === "principles-of-accounts") {
-    if (POA_BALANCE_TYPES.has(t)) return <BalanceScale subjectId="principles-of-accounts" experimentType={t} />;
-    if (POA_DRAG_TYPES.has(t)) return <DragDropLabel subjectId="principles-of-accounts" />;
-    return flash("principles-of-accounts");
+    if (t === "balance-scale") return <BalanceScale subjectId="principles-of-accounts" experimentType={t} />;
+    return <DragDropLabel subjectId="principles-of-accounts" experimentType={t} lessonId={lessonId} />;
   }
 
   // ---- information-technology: topology/flowchart/etc → IT set
   if (subjectId === "information-technology") {
-    if (IT_DRAG_TYPES.has(t)) return <DragDropLabel subjectId="information-technology" />;
-    return flash("information-technology");
+    return <DragDropLabel subjectId="information-technology" experimentType={t} lessonId={lessonId} />;
   }
 
   // ---- social-studies: matching/data/timeline/map → SS set
@@ -177,7 +162,7 @@ function resolveInteractive(subjectId, experimentType) {
   return flash(subjectId);
 }
 
-export default function ExperimentSandbox({ subjectId, config, lessonExperiment }) {
+export default function ExperimentSandbox({ subjectId, config, lessonExperiment, lessonId }) {
   const [activeTab, setActiveTab] = useState("play");
 
   let experimentType = null;
@@ -223,7 +208,7 @@ export default function ExperimentSandbox({ subjectId, config, lessonExperiment 
       )
       : null;
 
-    const tool = resolveInteractive(subjectId, experimentType);
+    const tool = resolveInteractive(subjectId, experimentType, lessonId);
 
     return (
       <div className="exp-play">
