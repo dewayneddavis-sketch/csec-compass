@@ -56,13 +56,7 @@ const ENG_DRAG_TYPES = new Set([
 // English A diction lesson → dedicated vocab deck in FlashcardSystem
 const ENG_DICTION_TYPES = new Set(["vocab-flashcards", "flashcard", "interactive-quiz"]);
 
-// Social Studies drag types → DragDropLabel SS set
-const SS_DRAG_TYPES = new Set([
-  "matching-game", "drag-drop", "drag-drop-label", "data-explorer", "timeline", "map-explorer",
-]);
 
-// Spanish: dialogue-builder → DragDropLabel spanish set; everything else flashcard
-const SPANISH_DRAG_TYPES = new Set(["dialogue-builder"]);
 
 // Subject-level fallback used when a lesson experiment is a plain
 // descriptive string (social-studies, human-social-biology,
@@ -121,10 +115,9 @@ function resolveInteractive(subjectId, experimentType, lessonId) {
   if (subjectId === "biology") {
     return <DragDropLabel subjectId="biology" experimentType={t} lessonId={lessonId} />;
   }
-  // ---- human-social-biology → its own subject deck (per-lesson sets come in
-  //      the next batch)
+  // ---- human-social-biology → per-lesson sets (subjectId + lessonId)
   if (subjectId === "human-social-biology") {
-    return flash("human-social-biology");
+    return <DragDropLabel subjectId="human-social-biology" experimentType={t} lessonId={lessonId} />;
   }
 
   // ---- english-a: per-lesson set by type; diction → dedicated vocab deck
@@ -147,14 +140,12 @@ function resolveInteractive(subjectId, experimentType, lessonId) {
 
   // ---- social-studies: matching/data/timeline/map → SS set
   if (subjectId === "social-studies") {
-    if (SS_DRAG_TYPES.has(t)) return <DragDropLabel subjectId="social-studies" />;
-    return flash("social-studies");
+    return <DragDropLabel subjectId="social-studies" experimentType={t} lessonId={lessonId} />;
   }
 
   // ---- spanish: dialogue-builder → spanish set; else spanish deck
   if (subjectId === "spanish") {
-    if (SPANISH_DRAG_TYPES.has(t)) return <DragDropLabel subjectId="spanish" />;
-    return flash("spanish");
+    return <DragDropLabel subjectId="spanish" experimentType={t} lessonId={lessonId} />;
   }
 
   // ---- any other subject (french, history, geography, POB, ag-science):
