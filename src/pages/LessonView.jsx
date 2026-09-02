@@ -81,6 +81,7 @@ export default function LessonView() {
               subjectId={subjectId}
               config={experimentConfig || lesson.experiment}
               lessonExperiment={lesson.experiment}
+              lessonId={lesson.id}
             />
           </div>
         )}
