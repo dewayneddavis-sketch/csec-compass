@@ -1,0 +1,170 @@
+{
+  "commandWords": [
+    {
+      "word": "State",
+      "definition": "Provide a brief, clear statement without detailed explanation.",
+      "studentAction": "Give a specific fact or piece of information. Keep it concise."
+    },
+    {
+      "word": "Define",
+      "definition": "State the precise meaning of a term, concept, or physical quantity.",
+      "studentAction": "Provide a formal definition. Use technical terms accurately."
+    },
+    {
+      "word": "List",
+      "definition": "Provide a series of related items without explanation.",
+      "studentAction": "Write down a sequence of points or names. Bullet points are often acceptable.",
+      "subjectNotes": "Common in Science and IT for listing properties or components."
+    },
+    {
+      "word": "Identify",
+      "definition": "Point out or name a specific feature or item.",
+      "studentAction": "Pick out a specific detail from a diagram, graph, or text."
+    },
+    {
+      "word": "Name",
+      "definition": "Provide the specific title or term for something.",
+      "studentAction": "Give the correct label or name. No explanation needed."
+    },
+    {
+      "word": "Outline",
+      "definition": "Provide a summary of the main points or general principles.",
+      "studentAction": "Give a structured overview. Don't go into deep detail, but cover all key aspects."
+    },
+    {
+      "word": "Describe",
+      "definition": "Provide a detailed account or picture of a situation, event, pattern, or process.",
+      "studentAction": "Use words (and diagrams if helpful) to tell the reader 'what' happens or 'how' something looks."
+    },
+    {
+      "word": "Explain",
+      "definition": "Provide a detailed account including reasons or causes.",
+      "studentAction": "Tell the reader 'why' or 'how' something happens. Use words like 'because' or 'therefore'.",
+      "subjectNotes": "High-mark questions in all subjects. Requires logical reasoning."
+    },
+    {
+      "word": "Distinguish",
+      "definition": "Explain the differences between two or more items or concepts.",
+      "studentAction": "Clearly state how one thing is different from another. Use comparative language."
+    },
+    {
+      "word": "Compare",
+      "definition": "Explain the similarities and differences between two or more items.",
+      "studentAction": "Discuss both what is the same and what is different. A table can be helpful."
+    },
+    {
+      "word": "Contrast",
+      "definition": "Explain the differences between two or more items.",
+      "studentAction": "Focus exclusively on how the items are different."
+    },
+    {
+      "word": "Suggest",
+      "definition": "Propose a solution, hypothesis, or other possible answer.",
+      "studentAction": "Use your knowledge to provide a logical possibility for an unfamiliar situation."
+    },
+    {
+      "word": "Justify",
+      "definition": "Provide evidence or reasons to support an answer or conclusion.",
+      "studentAction": "Prove why your answer is correct using facts, data, or logical arguments."
+    },
+    {
+      "word": "Evaluate",
+      "definition": "Make a judgment based on criteria; determine the value or significance of something.",
+      "studentAction": "Discuss pros and cons, strengths and weaknesses, and give a final conclusion or judgment."
+    },
+    {
+      "word": "Discuss",
+      "definition": "Offer a considered and balanced review that includes a range of arguments, factors, or hypotheses.",
+      "studentAction": "Explore different sides of an issue. Use evidence to support various points of view."
+    },
+    {
+      "word": "Calculate",
+      "definition": "Determine a numerical answer showing the steps in the process.",
+      "studentAction": "Use a formula or mathematical method. Always show your working to get partial marks.",
+      "subjectNotes": "Crucial for Maths, Physics, and Chemistry."
+    },
+    {
+      "word": "Determine",
+      "definition": "Find the only possible answer or a specific value.",
+      "studentAction": "Use calculations, graphs, or reasoning to reach a definitive conclusion."
+    },
+    {
+      "word": "Sketch",
+      "definition": "Provide a rough drawing representing the main features of an object or graph.",
+      "studentAction": "Draw without using a ruler for every line, but ensure the shape and key labels are correct.",
+      "subjectNotes": "Often used for graphs in Maths or diagrams in Sciences."
+    },
+    {
+      "word": "Draw",
+      "definition": "Produce a precise diagram, map, or graph using a ruler and pencil.",
+      "studentAction": "Use proper tools for accuracy. Ensure scales are correct and everything is labeled."
+    },
+    {
+      "word": "Label",
+      "definition": "Add titles or identifying words to a diagram or graph.",
+      "studentAction": "Place the correct terms next to the relevant parts, usually with a straight line."
+    },
+    {
+      "word": "Complete",
+      "definition": "Finish a provided diagram, table, or sequence.",
+      "studentAction": "Add the missing parts to make the item whole or accurate."
+    },
+    {
+      "word": "Comment",
+      "definition": "Provide an opinion or explanation about a given statement or result.",
+      "studentAction": "Explain the significance of a value or find patterns in the data provided."
+    },
+    {
+      "word": "Account for",
+      "definition": "Provide a reason or explanation for a particular outcome or phenomenon.",
+      "studentAction": "Explain why something happened or why a specific trend exists."
+    },
+    {
+      "word": "Relate",
+      "definition": "Explain the connection or relationship between two or more things.",
+      "studentAction": "Show how one factor affects another or how they work together."
+    }
+  ],
+  "paperTechnique": [
+    {
+      "section": "Preparation and Reading",
+      "tips": [
+        "Read the entire question before you start writing. Sometimes the later parts give a hint about the earlier ones.",
+        "Circle or underline the 'Command Word'. This tells you exactly what type of answer is expected.",
+        "Pay attention to the number of marks. A 1-mark question needs a short answer; a 6-mark question needs a structured explanation."
+      ]
+    },
+    {
+      "section": "Structuring Your Answer",
+      "tips": [
+        "Answer the exact question asked. Don't waste time providing 'extra' info that isn't requested ('padding').",
+        "For 'Explain' or 'Justify' questions, use the 'Point, Evidence, Explanation' (PEE) structure.",
+        "Use bullet points for lists or when describing steps in a process to keep your answer clear."
+      ]
+    },
+    {
+      "section": "Calculations and Data",
+      "tips": [
+        "Show ALL your working. Even if the final answer is wrong, you can get marks for using the correct formula or method.",
+        "Include units in your final answer (e.g., cm, kg, Joules).",
+        "When reading from a graph, use a ruler to find the exact point and be as precise as possible."
+      ]
+    },
+    {
+      "section": "Time Management",
+      "tips": [
+        "Don't get stuck on a difficult question. Circle it and move on; come back to it at the end.",
+        "Aim for a 'mark-per-minute' pace. If a question is worth 5 marks, try to spend about 5-7 minutes on it.",
+        "Never leave a question blank, especially in Multiple Choice. Use the process of elimination to make an educated guess."
+      ]
+    },
+    {
+      "section": "Final Review",
+      "tips": [
+        "Check your spelling of key technical terms. Incorrect spelling can sometimes lead to a loss of marks if the meaning becomes unclear.",
+        "Ensure your handwriting is legible. If the examiner can't read it, they can't mark it.",
+        "Read back over your long-form answers to ensure they make sense and directly address the prompt."
+      ]
+    }
+  ]
+}
