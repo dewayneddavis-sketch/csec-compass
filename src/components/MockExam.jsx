@@ -22,7 +22,6 @@ export default function MockExam({ subjectId }) {
   const [submitted, setSubmitted] = useState(false);
   const [timeTaken, setTimeTaken] = useState(null);
   const totalSeconds = useRef(0);
-  const intervalRef = useRef(null);
 
   useEffect(() => {
     setLoading(true);
@@ -50,26 +49,22 @@ export default function MockExam({ subjectId }) {
       .finally(() => setLoading(false));
   }, [subjectId]);
 
-  // Countdown timer — auto-submits when it reaches zero.
+  // Countdown timer — pure decrement; submission happens in the zero-effect below.
   useEffect(() => {
     if (!started || submitted) return undefined;
-    intervalRef.current = setInterval(() => {
-      setTimeLeft((prev) => {
-        if (prev <= 1) {
-          clearInterval(intervalRef.current);
-          setSubmitted(true);
-          setTimeTaken(totalSeconds.current);
-          return 0;
-        }
-        return prev - 1;
-      });
+    const id = setInterval(() => {
+      setTimeLeft((prev) => (prev > 0 ? prev - 1 : 0));
     }, 1000);
-    return () => clearInterval(intervalRef.current);
+    return () => clearInterval(id);
   }, [started, submitted]);
 
+  // Auto-submit when the timer reaches zero.
   useEffect(() => {
-    if (submitted && intervalRef.current) clearInterval(intervalRef.current);
-  }, [submitted]);
+    if (started && !submitted && timeLeft === 0) {
+      setSubmitted(true);
+      setTimeTaken(totalSeconds.current);
+    }
+  }, [timeLeft, started, submitted]);
 
   if (loading) {
     return (
@@ -148,7 +143,9 @@ export default function MockExam({ subjectId }) {
           <h3>{passed ? "You Passed!" : "Keep Practising"}</h3>
           <p className="ep-score">You scored <strong>{correctCount}</strong> out of <strong>{total}</strong> ({scorePct}%)</p>
           <p className="ep-msg">
-            Time taken: <strong>{formatTime(timeTaken ?? 0)}</strong> of {formatTime(examSeconds)}.
+            {timeLeft === 0
+              ? <>⏱ Time expired — your exam was submitted automatically after {formatTime(examSeconds)}.</>
+              : <>Time taken: <strong>{formatTime(timeTaken ?? 0)}</strong> of {formatTime(examSeconds)}.</>}
           </p>
           {passed
             ? <p className="ep-msg">You reached the {PASS_PERCENTAGE}% pass mark — you're exam-ready!</p>
