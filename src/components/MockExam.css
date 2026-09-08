@@ -1,0 +1,28 @@
+/* Timed Mock Exam — extra styles layered on the shared ep- quiz classes */
+.me-header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.me-timer {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  background: #eef2ff;
+  color: #3730a3;
+  border: 1px solid #c7d2fe;
+  border-radius: 999px;
+  padding: 4px 14px;
+  white-space: nowrap;
+}
+.me-timer-warn {
+  background: #fef2f2;
+  color: #b91c1c;
+  border-color: #fecaca;
+  animation: me-pulse 1s ease-in-out infinite;
+}
+@keyframes me-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.55; }
+}
