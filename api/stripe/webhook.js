@@ -1,7 +1,30 @@
 // POST /api/stripe/webhook
 // Handles checkout.session.completed — upserts purchase into Supabase
-import { getSupabaseAdmin } from "../_lib/supabase";
-import { getStripe } from "../_lib/stripe";
+// NOTE: self-contained (inlines Stripe + Supabase client init) — api/_lib/*
+// imports crash on Vercel with FUNCTION_INVOCATION_FAILED, so this function
+// keeps its own client init. See api/auth/user.js (same pattern, works live).
+import Stripe from "stripe";
+import { createClient } from "@supabase/supabase-js";
+
+function getStripe() {
+  const secretKey = process.env.STRIPE_SECRET_KEY;
+  if (!secretKey) {
+    console.warn("Stripe secret key not configured. Set STRIPE_SECRET_KEY env var.");
+    return null;
+  }
+  return new Stripe(secretKey, { apiVersion: "2025-02-24.acacia" });
+}
+
+function getSupabaseAdmin() {
+  const supabaseUrl = process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL;
+  const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!supabaseUrl || !supabaseServiceKey) {
+    throw new Error("Supabase server credentials not configured. Set SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY.");
+  }
+  return createClient(supabaseUrl, supabaseServiceKey, {
+    auth: { persistSession: false, autoRefreshToken: false },
+  });
+}
 
 // Stripe signature verification needs the raw request body, so disable
 // Vercel's default JSON body parsing for this route.
