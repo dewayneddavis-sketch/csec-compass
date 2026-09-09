@@ -1,6 +1,17 @@
 // POST /api/stripe/webhook
 // Handles checkout.session.completed — upserts purchase into Supabase
 import { getSupabaseAdmin } from "../_lib/supabase";
+import { getStripe } from "../_lib/stripe";
+
+// Stripe signature verification needs the raw request body, so disable
+// Vercel's default JSON body parsing for this route.
+export const config = { api: { bodyParser: false } };
+
+async function readRawBody(req) {
+  const chunks = [];
+  for await (const chunk of req) chunks.push(chunk);
+  return Buffer.concat(chunks);
+}
 
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).json({ error: "Method not allowed" });
@@ -10,13 +21,14 @@ export default async function handler(req, res) {
 
   let event;
   try {
-    const stripe = (await import("../_lib/stripe")).getStripe();
+    const stripe = getStripe();
     if (!stripe) return res.status(500).json({ error: "Stripe not configured" });
 
     const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
     if (!webhookSecret) return res.status(500).json({ error: "Webhook secret not configured" });
 
-    event = stripe.webhooks.constructEvent(req.body, sig, webhookSecret);
+    const rawBody = await readRawBody(req);
+    event = stripe.webhooks.constructEvent(rawBody, sig, webhookSecret);
   } catch (err) {
     return res.status(400).json({ error: "Webhook signature verification failed" });
   }

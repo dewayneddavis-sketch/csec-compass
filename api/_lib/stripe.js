@@ -1,8 +1,9 @@
 // Stripe server-side init for Vercel API functions
-// Uses createRequire to work around Vercel ESM bundling issues
-import { createRequire } from "module";
-const require = createRequire(import.meta.url);
-const Stripe = require("stripe").default || require("stripe");
+// Uses a static ESM import so Vercel's bundler includes the stripe
+// package in the serverless function bundle. (A previous createRequire
+// version crashed every importing function with
+// FUNCTION_INVOCATION_FAILED on Node 24.)
+import Stripe from "stripe";
 
 let stripeClient = null;
 
