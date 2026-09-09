@@ -65,7 +65,10 @@ export default function SubjectPage() {
     );
   }
 
-  const paid = user ? hasAccess(subjectId) : true;
+  // FAIL CLOSED: hasAccess() returns false for logged-out users, while
+  // purchases are still loading, and on API error — so everyone sees the
+  // 2-lesson preview + paywall until a verified purchase unlocks them.
+  const paid = hasAccess(subjectId);
   const currentModule = modules[activeModule];
   const allLessons = modules.flatMap((m) => m.lessons);
   const totalLessonCount = allLessons.length;
@@ -92,7 +95,11 @@ export default function SubjectPage() {
         <ProgressBar completed={completedCount} total={lessonCount} label="Lessons Completed" />
       </div>
 
-      {!paid && user && (
+      {(purchasesLoading && user) ? (
+        <div className="s-upgrade-banner">
+          <p>Checking your access…</p>
+        </div>
+      ) : !paid && (
         <div className="s-upgrade-banner">
           <p><strong>Preview Mode</strong> &mdash; You are viewing 2 of {totalLessonCount} lessons. <Link to={"/pricing?subject=" + subjectId}>Unlock full access to all {totalLessonCount} lessons!</Link></p>
         </div>
@@ -122,8 +129,12 @@ export default function SubjectPage() {
                 <>
                   <h3 className="s-lesson-module-title">Module {activeModule + 1}: {currentModule.title}</h3>
                   <div className="s-lesson-items">
-                    {currentModule.lessons.map((lesson, idx) => {
-                      const locked = !paid && idx >= 2;
+                    {currentModule.lessons.map((lesson) => {
+                      // Global position across all modules: only the first 2
+                      // lessons overall are free preview; the rest are locked
+                      // until purchase (verified via hasAccess, fail-closed).
+                      const globalIdx = allLessons.findIndex((l) => l.id === lesson.id);
+                      const locked = !paid && globalIdx >= 2;
                       const done = completedLessons.includes(lesson.id);
                       if (locked) {
                         return (
@@ -149,10 +160,18 @@ export default function SubjectPage() {
           </div>
         )}
         {activeTab === "experiment" && <ExperimentSandbox subjectId={subjectId} />}
-        {activeTab === "quiz" && <Quiz questions={quizQuestions} subjectTitle={subject.name} onComplete={() => setQuizCompleted(true)} />}
-        {activeTab === "practice" && <ExtraPractice subjectId={subjectId} />}
-        {activeTab === "mock" && <MockExam subjectId={subjectId} />}
-        {activeTab === "sba" && <SBASection subjectId={subjectId} />}
+        {activeTab === "quiz" && (paid ? <Quiz questions={quizQuestions} subjectTitle={subject.name} onComplete={() => setQuizCompleted(true)} /> : (
+          <div className="s-upgrade-banner"><p><strong>🔒 Knowledge Check is locked.</strong> <Link to={"/pricing?subject=" + subjectId}>Unlock full access</Link> to test yourself on all lessons.</p></div>
+        ))}
+        {activeTab === "practice" && (paid ? <ExtraPractice subjectId={subjectId} /> : (
+          <div className="s-upgrade-banner"><p><strong>🔒 Extra Practice is locked.</strong> <Link to={"/pricing?subject=" + subjectId}>Unlock full access</Link> to practise all lessons.</p></div>
+        ))}
+        {activeTab === "mock" && (paid ? <MockExam subjectId={subjectId} /> : (
+          <div className="s-upgrade-banner"><p><strong>🔒 Mock Exam is locked.</strong> <Link to={"/pricing?subject=" + subjectId}>Unlock full access</Link> to sit the timed mock.</p></div>
+        ))}
+        {activeTab === "sba" && (paid ? <SBASection subjectId={subjectId} /> : (
+          <div className="s-upgrade-banner"><p><strong>🔒 SBA Guide is locked.</strong> <Link to={"/pricing?subject=" + subjectId}>Unlock full access</Link> to view the SBA tab.</p></div>
+        ))}
       </div>
     </div>
   );}

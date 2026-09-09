@@ -1,13 +1,21 @@
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
+import { usePurchases } from "../data/usePurchases";
 import { getSubject, getSubjectModules, normalizeModules, getLessonExperiment } from "../data/contentLoader";
 import ExperimentSandbox from "../components/ExperimentSandbox";
 import "./LessonView.css";
 
+// Direct deep-link guard: a locked lesson (beyond the 2-lesson preview)
+// shows a paywall instead of content unless the user has purchased access.
 export default function LessonView() {
   const { subjectId, lessonId } = useParams();
+  const { user } = useAuth();
+  const { hasAccess, loading: purchasesLoading } = usePurchases();
   const [lesson, setLesson] = useState(null);
   const [subject, setSubject] = useState(null);
+  const [lessonIndex, setLessonIndex] = useState(-1);
+  const [totalLessons, setTotalLessons] = useState(0);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -17,26 +25,50 @@ export default function LessonView() {
       const modules = normalizeModules(mods);
       const subj = await getSubject(subjectId);
       setSubject(subj);
+      const flat = modules.flatMap((m) => m.lessons);
+      setTotalLessons(flat.length);
       for (const mod of modules) {
-        for (const l of mod.lessons) {
-          if (l.id === lessonId) {
-            setLesson({ ...l, moduleTitle: mod.title });
-            break;
-          }
+        const found = mod.lessons.find((l) => l.id === lessonId);
+        if (found) {
+          setLesson({ ...found, moduleTitle: mod.title });
+          break;
         }
       }
+      const idx = flat.findIndex((l) => l.id === lessonId);
+      setLessonIndex(idx);
       setLoading(false);
     }
     load();
   }, [subjectId, lessonId]);
 
-  if (loading) return <div className="lv-loading">Loading lesson...</div>;
+  if (loading || (user && purchasesLoading))
+    return <div className="lv-loading">Loading lesson...</div>;
 
   if (!lesson) {
     return (
       <div className="lv-not-found">
         <h2>Lesson not found</h2>
         <Link to={"/subject/" + subjectId} className="back-link">{String.fromCharCode(8592)} Back to Subject</Link>
+      </div>
+    );
+  }
+
+  // Fail closed: only the first 2 lessons are free. Anything beyond that
+  // requires a verified purchase (or bundle). Unknown purchase state = locked.
+  const isPreviewLesson = lessonIndex >= 0 && lessonIndex < 2;
+  const paid = hasAccess(subjectId);
+  if (!isPreviewLesson && !paid) {
+    return (
+      <div className="lv-not-found">
+        <h2>🔒 This lesson requires full access</h2>
+        <p>
+          {user
+            ? `You are viewing the free preview (2 of ${totalLessons} lessons). Unlock all lessons to continue.`
+            : `Sign in to view the free 2-lesson preview, or unlock all ${totalLessons} lessons.`}
+        </p>
+        <Link to={"/pricing?subject=" + subjectId} className="back-link">Unlock full access</Link>
+        <br />
+        <Link to={"/subject/" + subjectId} className="back-link">{String.fromCharCode(8592)} Back to {subject?.name || subjectId}</Link>
       </div>
     );
   }
