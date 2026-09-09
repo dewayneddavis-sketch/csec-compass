@@ -1,1202 +1,1302 @@
 [
-  {
-    "id": "p1",
-    "question": "Which of the following is the correct response to '¿Cómo te llamas?'",
-    "options": [
-      "Tengo quince años.",
-      "Me llamo Roberto.",
-      "Soy de Jamaica.",
-      "Muy bien, gracias."
-    ],
-    "answer": "Me llamo Roberto.",
-    "explanation": "'¿Cómo te llamas?' asks for a person's name; 'Me llamo...' means 'My name is...'"
-  },
-  {
-    "id": "p2",
-    "question": "How do you say the number '75' in Spanish?",
-    "options": [
-      "Sesenta y cinco",
-      "Setenta y cinco",
-      "Ochenta y cinco",
-      "Cincuenta y siete"
-    ],
-    "answer": "Setenta y cinco",
-    "explanation": "Setenta = 70; cinco = 5. So, setenta y cinco = 75."
-  },
-  {
-    "id": "p3",
-    "question": "Which room in a house is 'la cocina'?",
-    "options": [
-      "The bedroom",
-      "The bathroom",
-      "The kitchen",
-      "The living room"
-    ],
-    "answer": "The kitchen",
-    "explanation": "'La cocina' is where food is prepared; 'el dormitorio' is the bedroom."
-  },
-  {
-    "id": "p4",
-    "question": "What is 'el desayuno' in English?",
-    "options": [
-      "Lunch",
-      "Dinner",
-      "Snack",
-      "Breakfast"
-    ],
-    "answer": "Breakfast",
-    "explanation": "'El desayuno' is the first meal of the day."
-  },
-  {
-    "id": "p5",
-    "question": "Choose the correct definite article for the word 'manzana' (apple).",
-    "options": [
-      "El",
-      "La",
-      "Los",
-      "Las"
-    ],
-    "answer": "La",
-    "explanation": "'Manzana' is a feminine singular noun, so it takes the article 'la'."
-  },
-  {
-    "id": "p6",
-    "question": "Which of the following phrases is grammatically correct?",
-    "options": [
-      "El libro roja",
-      "La casa blanco",
-      "Los gatos negros",
-      "Las gatas pequeño"
-    ],
-    "answer": "Los gatos negros",
-    "explanation": "In Spanish, adjectives must agree in gender and number with the noun they describe."
-  },
-  {
-    "id": "p7",
-    "question": "What is the present tense conjugation of 'hablar' (to speak) for the subject 'yo'?",
-    "options": [
-      "Hablas",
-      "Habla",
-      "Hablo",
-      "Hablan"
-    ],
-    "answer": "Hablo",
-    "explanation": "For regular -AR verbs, the 'yo' ending is '-o'."
-  },
-  {
-    "id": "p8",
-    "question": "How would you say 'I am going to study' using the 'ir + a + infinitive' structure?",
-    "options": [
-      "Voy a estudio",
-      "Vas a estudiar",
-      "Voy a estudiar",
-      "Vamo a estudiar"
-    ],
-    "answer": "Voy a estudiar",
-    "explanation": "Voy (I go) + a (to) + estudiar (to study)."
-  },
-  {
-    "id": "p9",
-    "question": "In a Spanish passage, if you see the word 'peligro', what does it mean?",
-    "options": [
-      "Pelican",
-      "Danger",
-      "Safety",
-      "Price"
-    ],
-    "answer": "Danger",
-    "explanation": "'Peligro' is a high-frequency word often found on public warning signs."
-  },
-  {
-    "id": "p10",
-    "question": "A sign in a restaurant says 'Abierto todos los días'. What does it mean?",
-    "options": [
-      "Closed on weekends",
-      "Open every day",
-      "No smoking allowed",
-      "Exit this way"
-    ],
-    "answer": "Open every day",
-    "explanation": "'Abierto' means open; 'todos los días' means every day."
-  },
-  {
-    "id": "p11",
-    "question": "Which famous Hispanic festival is known as the 'Day of the Dead'?",
-    "options": [
-      "Las Fallas",
-      "Semana Santa",
-      "Día de los Muertos",
-      "Carnaval"
-    ],
-    "answer": "Día de los Muertos",
-    "explanation": "Día de los Muertos is a significant tradition in Mexico for remembering ancestors."
-  },
-  {
-    "id": "p12",
-    "question": "Which of the following is a characteristic of Spanish spoken in some parts of the Caribbean?",
-    "options": [
-      "Pronouncing every 's' clearly",
-      "Dropping the final 's' in words",
-      "Speaking very slowly",
-      "Using only formal 'usted'"
-    ],
-    "answer": "Dropping the final 's' in words",
-    "explanation": "A common feature of Caribbean Spanish dialects is the aspiration or dropping of final 's' sounds."
-  },
-  {
-    "id": "p13",
-    "question": "How do you say 'good morning' in Spanish?",
-    "options": [
-      "Buenos días",
-      "Buenas noches",
-      "Buenas tardes",
-      "Hola"
-    ],
-    "answer": "Buenos días",
-    "explanation": "'Buenos días' is used in the morning."
-  },
-  {
-    "id": "p14",
-    "question": "What does 'adiós' mean?",
-    "options": [
-      "Goodbye",
-      "Hello",
-      "Please",
-      "Thank you"
-    ],
-    "answer": "Goodbye",
-    "explanation": "'Adiós' means goodbye."
-  },
-  {
-    "id": "p15",
-    "question": "Which is the correct Spanish for 'please'?",
-    "options": [
-      "Por favor",
-      "De nada",
-      "Lo siento",
-      "Perdón"
-    ],
-    "answer": "Por favor",
-    "explanation": "'Por favor' means please."
-  },
-  {
-    "id": "p16",
-    "question": "How do you say 'thank you' in Spanish?",
-    "options": [
-      "Gracias",
-      "Salud",
-      "Felicidades",
-      "Bienvenido"
-    ],
-    "answer": "Gracias",
-    "explanation": "'Gracias' means thank you."
-  },
-  {
-    "id": "p17",
-    "question": "What is the Spanish word for 'water'?",
-    "options": [
-      "Agua",
-      "Pan",
-      "Leche",
-      "Jugo"
-    ],
-    "answer": "Agua",
-    "explanation": "'Agua' means water."
-  },
-  {
-    "id": "p18",
-    "question": "Which word means 'food' in Spanish?",
-    "options": [
-      "Comida",
-      "Casa",
-      "Escuela",
-      "Trabajo"
-    ],
-    "answer": "Comida",
-    "explanation": "'Comida' means food."
-  },
-  {
-    "id": "p19",
-    "question": "How do you say 'I am' in Spanish?",
-    "options": [
-      "Yo soy / Yo estoy",
-      "Yo tengo",
-      "Yo voy",
-      "Yo hago"
-    ],
-    "answer": "Yo soy / Yo estoy",
-    "explanation": "'Soy' (ser) or 'estoy' (estar) mean 'I am'."
-  },
-  {
-    "id": "p20",
-    "question": "The correct response to '¿Cómo estás?' is:",
-    "options": [
-      "Estoy bien, gracias",
-      "Me llamo Juan",
-      "Tengo diez años",
-      "Soy de Jamaica"
-    ],
-    "answer": "Estoy bien, gracias",
-    "explanation": "'¿Cómo estás?' asks how you are."
-  },
-  {
-    "id": "p21",
-    "question": "What is the Spanish for 'my name is'?",
-    "options": [
-      "Me llamo",
-      "Me gusta",
-      "Me duele",
-      "Me voy"
-    ],
-    "answer": "Me llamo",
-    "explanation": "'Me llamo' introduces your name."
-  },
-  {
-    "id": "p22",
-    "question": "How do you say 'I am from Trinidad' in Spanish?",
-    "options": [
-      "Soy de Trinidad",
-      "Voy a Trinidad",
-      "Vivo en Trinidad",
-      "Trabajo en Trinidad"
-    ],
-    "answer": "Soy de Trinidad",
-    "explanation": "'Soy de' means 'I am from'."
-  },
-  {
-    "id": "p23",
-    "question": "What does '¿Dónde vives?' mean?",
-    "options": [
-      "Where do you live?",
-      "What is your name?",
-      "How old are you?",
-      "Where are you going?"
-    ],
-    "answer": "Where do you live?",
-    "explanation": "'¿Dónde vives?' asks where you live."
-  },
-  {
-    "id": "p24",
-    "question": "How do you say 'I live in Port of Spain' in Spanish?",
-    "options": [
-      "Vivo en Puerto España",
-      "Vengo de Puerto España",
-      "Estoy en Puerto España",
-      "Voy a Puerto España"
-    ],
-    "answer": "Vivo en Puerto España",
-    "explanation": "'Vivo en' means 'I live in'."
-  },
-  {
-    "id": "p25",
-    "question": "What is the Spanish word for 'house'?",
-    "options": [
-      "La casa",
-      "El carro",
-      "El libro",
-      "La mesa"
-    ],
-    "answer": "La casa",
-    "explanation": "'La casa' means the house."
-  },
-  {
-    "id": "p26",
-    "question": "Which word means 'school' in Spanish?",
-    "options": [
-      "La escuela",
-      "La iglesia",
-      "La playa",
-      "La tienda"
-    ],
-    "answer": "La escuela",
-    "explanation": "'La escuela' means school."
-  },
-  {
-    "id": "p27",
-    "question": "What does 'la familia' mean?",
-    "options": [
-      "The family",
-      "The friends",
-      "The teachers",
-      "The neighbours"
-    ],
-    "answer": "The family",
-    "explanation": "'La familia' is the family."
-  },
-  {
-    "id": "p28",
-    "question": "Which is the Spanish word for 'mother'?",
-    "options": [
-      "La madre",
-      "El padre",
-      "El hermano",
-      "La hermana"
-    ],
-    "answer": "La madre",
-    "explanation": "'La madre' means mother."
-  },
-  {
-    "id": "p29",
-    "question": "How do you say 'father' in Spanish?",
-    "options": [
-      "El padre",
-      "La madre",
-      "El abuelo",
-      "El tío"
-    ],
-    "answer": "El padre",
-    "explanation": "'El padre' means father."
-  },
-  {
-    "id": "p30",
-    "question": "What is the plural of 'el libro' (the book)?",
-    "options": [
-      "Los libros",
-      "Las libros",
-      "El libros",
-      "Un libros"
-    ],
-    "answer": "Los libros",
-    "explanation": "Masculine plural uses 'los'."
-  },
-  {
-    "id": "p31",
-    "question": "Choose the correct definite article for 'la mesa' (table):",
-    "options": [
-      "la",
-      "el",
-      "los",
-      "las"
-    ],
-    "answer": "la",
-    "explanation": "'Mesa' is feminine singular → 'la'."
-  },
-  {
-    "id": "p32",
-    "question": "Which word is feminine?",
-    "options": [
-      "La ventana",
-      "El zapato",
-      "El reloj",
-      "El sombrero"
-    ],
-    "answer": "La ventana",
-    "explanation": "'Ventana' is feminine (ends in -a)."
-  },
-  {
-    "id": "p33",
-    "question": "How do you say 'one' in Spanish?",
-    "options": [
-      "Uno",
-      "Dos",
-      "Tres",
-      "Cuatro"
-    ],
-    "answer": "Uno",
-    "explanation": "'Uno' means one."
-  },
-  {
-    "id": "p34",
-    "question": "What is 'cinco' in English?",
-    "options": [
-      "Five",
-      "Four",
-      "Six",
-      "Ten"
-    ],
-    "answer": "Five",
-    "explanation": "'Cinco' = five."
-  },
-  {
-    "id": "p35",
-    "question": "How do you say 'ten' in Spanish?",
-    "options": [
-      "Diez",
-      "Veinte",
-      "Cien",
-      "Doce"
-    ],
-    "answer": "Diez",
-    "explanation": "'Diez' means ten."
-  },
-  {
-    "id": "p36",
-    "question": "What is 'veinte' in English?",
-    "options": [
-      "Twenty",
-      "Twelve",
-      "Two",
-      "Fifty"
-    ],
-    "answer": "Twenty",
-    "explanation": "'Veinte' = twenty."
-  },
-  {
-    "id": "p37",
-    "question": "Which Spanish word means 'today'?",
-    "options": [
-      "Hoy",
-      "Ayer",
-      "Mañana",
-      "Noche"
-    ],
-    "answer": "Hoy",
-    "explanation": "'Hoy' means today; 'mañana' means tomorrow/morning."
-  },
-  {
-    "id": "p38",
-    "question": "What does 'mañana' mean?",
-    "options": [
-      "Tomorrow or morning",
-      "Yesterday",
-      "Tonight",
-      "Always"
-    ],
-    "answer": "Tomorrow or morning",
-    "explanation": "'Mañana' can mean tomorrow or morning."
-  },
-  {
-    "id": "p39",
-    "question": "How do you say 'yesterday' in Spanish?",
-    "options": [
-      "Ayer",
-      "Hoy",
-      "Mañana",
-      "Ahora"
-    ],
-    "answer": "Ayer",
-    "explanation": "'Ayer' means yesterday."
-  },
-  {
-    "id": "p40",
-    "question": "What is the Spanish for 'now'?",
-    "options": [
-      "Ahora",
-      "Luego",
-      "Siempre",
-      "Nunca"
-    ],
-    "answer": "Ahora",
-    "explanation": "'Ahora' means now."
-  },
-  {
-    "id": "p41",
-    "question": "Which word means 'always' in Spanish?",
-    "options": [
-      "Siempre",
-      "Nunca",
-      "A veces",
-      "A menudo"
-    ],
-    "answer": "Siempre",
-    "explanation": "'Siempre' means always."
-  },
-  {
-    "id": "p42",
-    "question": "What does 'nunca' mean?",
-    "options": [
-      "Never",
-      "Always",
-      "Sometimes",
-      "Often"
-    ],
-    "answer": "Never",
-    "explanation": "'Nunca' means never."
-  },
-  {
-    "id": "p43",
-    "question": "How do you say 'I like' in Spanish?",
-    "options": [
-      "Me gusta",
-      "Me llamo",
-      "Me duele",
-      "Me levanto"
-    ],
-    "answer": "Me gusta",
-    "explanation": "'Me gusta' expresses liking."
-  },
-  {
-    "id": "p44",
-    "question": "What does 'me gusta el fútbol' mean?",
-    "options": [
-      "I like football",
-      "I play football",
-      "I watch football",
-      "I hate football"
-    ],
-    "answer": "I like football",
-    "explanation": "'Me gusta' + noun = I like..."
-  },
-  {
-    "id": "p45",
-    "question": "How do you say 'I love you' in Spanish?",
-    "options": [
-      "Te quiero / Te amo",
-      "Te veo",
-      "Te llamo",
-      "Te espero"
-    ],
-    "answer": "Te quiero / Te amo",
-    "explanation": "'Te quiero' or 'Te amo' express love."
-  },
-  {
-    "id": "p46",
-    "question": "Which is the Spanish for 'friend' (male)?",
-    "options": [
-      "El amigo",
-      "La amiga",
-      "El hermano",
-      "El primo"
-    ],
-    "answer": "El amigo",
-    "explanation": "'El amigo' is a male friend."
-  },
-  {
-    "id": "p47",
-    "question": "What is 'la playa' in English?",
-    "options": [
-      "The beach",
-      "The park",
-      "The pool",
-      "The mountain"
-    ],
-    "answer": "The beach",
-    "explanation": "'La playa' = the beach."
-  },
-  {
-    "id": "p48",
-    "question": "Which word means 'car' in Spanish?",
-    "options": [
-      "El carro / El coche",
-      "El avión",
-      "El barco",
-      "El tren"
-    ],
-    "answer": "El carro / El coche",
-    "explanation": "'Carro' (Latin America) or 'coche' (Spain) mean car."
-  },
-  {
-    "id": "p49",
-    "question": "How do you say 'train' in Spanish?",
-    "options": [
-      "El tren",
-      "El avión",
-      "El barco",
-      "La bicicleta"
-    ],
-    "answer": "El tren",
-    "explanation": "'El tren' means train."
-  },
-  {
-    "id": "p50",
-    "question": "What does 'el aeropuerto' mean?",
-    "options": [
-      "The airport",
-      "The station",
-      "The harbour",
-      "The bus stop"
-    ],
-    "answer": "The airport",
-    "explanation": "'El aeropuerto' is the airport."
-  },
-  {
-    "id": "p51",
-    "question": "Which word means 'street' in Spanish?",
-    "options": [
-      "La calle",
-      "La esquina",
-      "La plaza",
-      "El edificio"
-    ],
-    "answer": "La calle",
-    "explanation": "'La calle' means street."
-  },
-  {
-    "id": "p52",
-    "question": "How do you say 'the market' in Spanish?",
-    "options": [
-      "El mercado",
-      "El supermercado",
-      "La farmacia",
-      "La tienda"
-    ],
-    "answer": "El mercado",
-    "explanation": "'El mercado' is the market."
-  },
-  {
-    "id": "p53",
-    "question": "What is 'la farmacia' in English?",
-    "options": [
-      "The pharmacy",
-      "The bakery",
-      "The bank",
-      "The post office"
-    ],
-    "answer": "The pharmacy",
-    "explanation": "'La farmacia' = the pharmacy."
-  },
-  {
-    "id": "p54",
-    "question": "Which Spanish word means 'bread'?",
-    "options": [
-      "El pan",
-      "El queso",
-      "La carne",
-      "El arroz"
-    ],
-    "answer": "El pan",
-    "explanation": "'El pan' means bread."
-  },
-  {
-    "id": "p55",
-    "question": "What does 'el desayuno' mean?",
-    "options": [
-      "Breakfast",
-      "Lunch",
-      "Dinner",
-      "Snack"
-    ],
-    "answer": "Breakfast",
-    "explanation": "'El desayuno' is breakfast."
-  },
-  {
-    "id": "p56",
-    "question": "How do you say 'lunch' in Spanish?",
-    "options": [
-      "El almuerzo",
-      "El desayuno",
-      "La cena",
-      "La merienda"
-    ],
-    "answer": "El almuerzo",
-    "explanation": "'El almuerzo' means lunch."
-  },
-  {
-    "id": "p57",
-    "question": "What is 'la cena' in English?",
-    "options": [
-      "Dinner",
-      "Breakfast",
-      "Lunch",
-      "Dessert"
-    ],
-    "answer": "Dinner",
-    "explanation": "'La cena' = dinner."
-  },
-  {
-    "id": "p58",
-    "question": "Which word means 'apple' in Spanish?",
-    "options": [
-      "La manzana",
-      "La naranja",
-      "El plátano",
-      "La uva"
-    ],
-    "answer": "La manzana",
-    "explanation": "'La manzana' means apple."
-  },
-  {
-    "id": "p59",
-    "question": "What does 'el pollo' mean?",
-    "options": [
-      "Chicken",
-      "Beef",
-      "Fish",
-      "Pork"
-    ],
-    "answer": "Chicken",
-    "explanation": "'El pollo' means chicken."
-  },
-  {
-    "id": "p60",
-    "question": "Which Spanish word means 'cheese'?",
-    "options": [
-      "El queso",
-      "El azúcar",
-      "La sal",
-      "La mantequilla"
-    ],
-    "answer": "El queso",
-    "explanation": "'El queso' means cheese."
-  },
-  {
-    "id": "p61",
-    "question": "How do you say 'I am hungry' in Spanish?",
-    "options": [
-      "Tengo hambre",
-      "Tengo sed",
-      "Tengo sueño",
-      "Tengo prisa"
-    ],
-    "answer": "Tengo hambre",
-    "explanation": "'Tener hambre' = to be hungry."
-  },
-  {
-    "id": "p62",
-    "question": "What does 'tengo sed' mean?",
-    "options": [
-      "I am thirsty",
-      "I am hungry",
-      "I am tired",
-      "I am cold"
-    ],
-    "answer": "I am thirsty",
-    "explanation": "'Tener sed' = to be thirsty."
-  },
-  {
-    "id": "p63",
-    "question": "How do you say 'I am tired' in Spanish?",
-    "options": [
-      "Estoy cansado",
-      "Estoy contento",
-      "Estoy enfermo",
-      "Estoy ocupado"
-    ],
-    "answer": "Estoy cansado",
-    "explanation": "'Estar cansado' = to be tired."
-  },
-  {
-    "id": "p64",
-    "question": "Which phrase means 'I am sick'?",
-    "options": [
-      "Estoy enfermo",
-      "Estoy bien",
-      "Estoy triste",
-      "Estoy feliz"
-    ],
-    "answer": "Estoy enfermo",
-    "explanation": "'Enfermo' means sick."
-  },
-  {
-    "id": "p65",
-    "question": "What does 'estoy feliz' mean?",
-    "options": [
-      "I am happy",
-      "I am sad",
-      "I am angry",
-      "I am nervous"
-    ],
-    "answer": "I am happy",
-    "explanation": "'Feliz' = happy."
-  },
-  {
-    "id": "p66",
-    "question": "How do you say 'it is hot' (weather) in Spanish?",
-    "options": [
-      "Hace calor",
-      "Hace frío",
-      "Hace viento",
-      "Llueve"
-    ],
-    "answer": "Hace calor",
-    "explanation": "'Hace calor' means it is hot."
-  },
-  {
-    "id": "p67",
-    "question": "What does 'hace frío' mean?",
-    "options": [
-      "It is cold",
-      "It is hot",
-      "It is windy",
-      "It is raining"
-    ],
-    "answer": "It is cold",
-    "explanation": "'Hace frío' = it is cold."
-  },
-  {
-    "id": "p68",
-    "question": "Which phrase means 'it is raining' in Spanish?",
-    "options": [
-      "Llueve",
-      "Nieva",
-      "Hace sol",
-      "Hay niebla"
-    ],
-    "answer": "Llueve",
-    "explanation": "'Llueve' means it is raining."
-  },
-  {
-    "id": "p69",
-    "question": "How do you say 'the sun' in Spanish?",
-    "options": [
-      "El sol",
-      "La luna",
-      "La estrella",
-      "El cielo"
-    ],
-    "answer": "El sol",
-    "explanation": "'El sol' means the sun."
-  },
-  {
-    "id": "p70",
-    "question": "What is 'la luna' in English?",
-    "options": [
-      "The moon",
-      "The sun",
-      "The star",
-      "The sky"
-    ],
-    "answer": "The moon",
-    "explanation": "'La luna' = the moon."
-  },
-  {
-    "id": "p71",
-    "question": "Which Spanish word means 'sky'?",
-    "options": [
-      "El cielo",
-      "El mar",
-      "La tierra",
-      "El fuego"
-    ],
-    "answer": "El cielo",
-    "explanation": "'El cielo' means sky."
-  },
-  {
-    "id": "p72",
-    "question": "How do you say 'I go' in Spanish?",
-    "options": [
-      "Voy",
-      "Vienes",
-      "Vamos",
-      "Van"
-    ],
-    "answer": "Voy",
-    "explanation": "'Voy' is the yo form of 'ir'."
-  },
-  {
-    "id": "p73",
-    "question": "What is the 'yo' form of 'hablar' (to speak) in the present tense?",
-    "options": [
-      "Hablo",
-      "Hablas",
-      "Habla",
-      "Hablamos"
-    ],
-    "answer": "Hablo",
-    "explanation": "Yo hablo — I speak."
-  },
-  {
-    "id": "p74",
-    "question": "Which is the correct form of 'comer' for 'tú' (you)?",
-    "options": [
-      "Comes",
-      "Como",
-      "Come",
-      "Comemos"
-    ],
-    "answer": "Comes",
-    "explanation": "Tú comes — you eat."
-  },
-  {
-    "id": "p75",
-    "question": "What is the 'nosotros' form of 'vivir' (to live)?",
-    "options": [
-      "Vivimos",
-      "Vivo",
-      "Vives",
-      "Viven"
-    ],
-    "answer": "Vivimos",
-    "explanation": "Nosotros vivimos — we live."
-  },
-  {
-    "id": "p76",
-    "question": "Which is the correct form of 'ser' for 'ellos' (they)?",
-    "options": [
-      "Son",
-      "Es",
-      "Soy",
-      "Eres"
-    ],
-    "answer": "Son",
-    "explanation": "Ellos son — they are."
-  },
-  {
-    "id": "p77",
-    "question": "What does 'tener' mean?",
-    "options": [
-      "To have",
-      "To be",
-      "To do",
-      "To go"
-    ],
-    "answer": "To have",
-    "explanation": "'Tener' means to have."
-  },
-  {
-    "id": "p78",
-    "question": "Which form of 'tener' is used with 'yo'?",
-    "options": [
-      "Tengo",
-      "Tienes",
-      "Tiene",
-      "Tenemos"
-    ],
-    "answer": "Tengo",
-    "explanation": "Yo tengo — I have."
-  },
-  {
-    "id": "p79",
-    "question": "What is 'hacer' in English?",
-    "options": [
-      "To do/make",
-      "To have",
-      "To go",
-      "To come"
-    ],
-    "answer": "To do/make",
-    "explanation": "'Hacer' means to do or make."
-  },
-  {
-    "id": "p80",
-    "question": "How do you say 'I am going to study' using 'ir + a + infinitive'?",
-    "options": [
-      "Voy a estudiar",
-      "Estudio",
-      "He estudiado",
-      "Estudié"
-    ],
-    "answer": "Voy a estudiar",
-    "explanation": "Ir a + infinitive expresses near future: voy a estudiar."
-  },
-  {
-    "id": "p81",
-    "question": "Which sentence is grammatically correct?",
-    "options": [
-      "Yo voy al mercado",
-      "Yo voy a el mercado",
-      "Yo va al mercado",
-      "Yo vas al mercado"
-    ],
-    "answer": "Yo voy al mercado",
-    "explanation": "'Voy a + el = al' and 'yo voy' are correct."
-  },
-  {
-    "id": "p82",
-    "question": "What does '¿Qué hora es?' mean?",
-    "options": [
-      "What time is it?",
-      "What day is it?",
-      "Where is it?",
-      "Who is it?"
-    ],
-    "answer": "What time is it?",
-    "explanation": "'¿Qué hora es?' asks the time."
-  },
-  {
-    "id": "p83",
-    "question": "How do you say 'It is two o'clock' in Spanish?",
-    "options": [
-      "Son las dos",
-      "Es la una",
-      "Son las tres",
-      "Son las cinco"
-    ],
-    "answer": "Son las dos",
-    "explanation": "Plural hours use 'son las'."
-  },
-  {
-    "id": "p84",
-    "question": "What does 'la una' mean in telling time?",
-    "options": [
-      "One o'clock",
-      "Two o'clock",
-      "Half past one",
-      "Quarter to one"
-    ],
-    "answer": "One o'clock",
-    "explanation": "'Es la una' = it is one o'clock."
-  },
-  {
-    "id": "p85",
-    "question": "Which word means 'Monday' in Spanish?",
-    "options": [
-      "Lunes",
-      "Martes",
-      "Miércoles",
-      "Domingo"
-    ],
-    "answer": "Lunes",
-    "explanation": "'Lunes' is Monday."
-  },
-  {
-    "id": "p86",
-    "question": "What is 'domingo' in English?",
-    "options": [
-      "Sunday",
-      "Saturday",
-      "Monday",
-      "Friday"
-    ],
-    "answer": "Sunday",
-    "explanation": "'Domingo' = Sunday."
-  },
-  {
-    "id": "p87",
-    "question": "How do you say 'week' in Spanish?",
-    "options": [
-      "La semana",
-      "El mes",
-      "El año",
-      "El día"
-    ],
-    "answer": "La semana",
-    "explanation": "'La semana' means the week."
-  },
-  {
-    "id": "p88",
-    "question": "Which Spanish word means 'month'?",
-    "options": [
-      "El mes",
-      "El año",
-      "La semana",
-      "El día"
-    ],
-    "answer": "El mes",
-    "explanation": "'El mes' means month."
-  },
-  {
-    "id": "p89",
-    "question": "What is 'enero' in English?",
-    "options": [
-      "January",
-      "June",
-      "July",
-      "December"
-    ],
-    "answer": "January",
-    "explanation": "'Enero' = January."
-  },
-  {
-    "id": "p90",
-    "question": "How do you say 'today is Monday' in Spanish?",
-    "options": [
-      "Hoy es lunes",
-      "Hoy es martes",
-      "Mañana es lunes",
-      "Ayer fue lunes"
-    ],
-    "answer": "Hoy es lunes",
-    "explanation": "'Hoy es' + day = today is..."
-  },
-  {
-    "id": "p91",
-    "question": "What does '¿Cuánto cuesta?' mean?",
-    "options": [
-      "How much does it cost?",
-      "How old are you?",
-      "Where is it?",
-      "When is it?"
-    ],
-    "answer": "How much does it cost?",
-    "explanation": "'¿Cuánto cuesta?' asks the price."
-  },
-  {
-    "id": "p92",
-    "question": "Which phrase would you use to order a coffee politely?",
-    "options": [
-      "Quisiera un café, por favor",
-      "¡Dame café ahora!",
-      "Café, rápido",
-      "No quiero café"
-    ],
-    "answer": "Quisiera un café, por favor",
-    "explanation": "'Quisiera... por favor' is polite."
-  },
-  {
-    "id": "p93",
-    "question": "What does 'la cuenta, por favor' mean?",
-    "options": [
-      "The bill, please",
-      "The menu, please",
-      "The table, please",
-      "The water, please"
-    ],
-    "answer": "The bill, please",
-    "explanation": "'La cuenta' is the bill."
-  },
-  {
-    "id": "p94",
-    "question": "In a restaurant, 'la carta' refers to:",
-    "options": [
-      "the menu",
-      "the letter",
-      "the bill",
-      "the napkin"
-    ],
-    "answer": "the menu",
-    "explanation": "'La carta' can mean the menu."
-  },
-  {
-    "id": "p95",
-    "question": "What does the sign 'Abierto' mean?",
-    "options": [
-      "Open",
-      "Closed",
-      "Reserved",
-      "For sale"
-    ],
-    "answer": "Open",
-    "explanation": "'Abierto' means open; 'cerrado' means closed."
-  },
-  {
-    "id": "p96",
-    "question": "What does 'peligro' mean?",
-    "options": [
-      "Danger",
-      "Exit",
-      "Entrance",
-      "Caution only"
-    ],
-    "answer": "Danger",
-    "explanation": "'Peligro' means danger."
-  },
-  {
-    "id": "p97",
-    "question": "Which sign would you see at an exit?",
-    "options": [
-      "Salida",
-      "Entrada",
-      "Prohibido",
-      "Baños"
-    ],
-    "answer": "Salida",
-    "explanation": "'Salida' means exit."
-  },
-  {
-    "id": "p98",
-    "question": "What does 'prohibido fumar' mean?",
-    "options": [
-      "No smoking",
-      "No parking",
-      "No entry",
-      "No running"
-    ],
-    "answer": "No smoking",
-    "explanation": "'Prohibido fumar' = smoking forbidden."
-  },
-  {
-    "id": "p99",
-    "question": "Which Spanish-speaking country is in the Caribbean?",
-    "options": [
-      "Cuba",
-      "Brazil",
-      "Haiti",
-      "Jamaica"
-    ],
-    "answer": "Cuba",
-    "explanation": "Cuba is a Spanish-speaking Caribbean nation."
-  },
-  {
-    "id": "p100",
-    "question": "The Day of the Dead ('Día de los Muertos') is mainly celebrated in:",
-    "options": [
-      "Mexico",
-      "Spain",
-      "Argentina",
-      "Puerto Rico"
-    ],
-    "answer": "Mexico",
-    "explanation": "Día de los Muertos is a Mexican tradition."
-  }
+ {
+  "id": "p1",
+  "question": "Which of the following is the correct response to '¿Cómo te llamas?'",
+  "options": [
+   "Tengo quince años.",
+   "Me llamo Roberto.",
+   "Soy de Jamaica.",
+   "Muy bien, gracias."
+  ],
+  "answer": "Me llamo Roberto.",
+  "explanation": "'¿Cómo te llamas?' asks for a person's name; 'Me llamo...' means 'My name is...'",
+  "topic": "spa-l1-1"
+ },
+ {
+  "id": "p2",
+  "question": "How do you say the number '75' in Spanish?",
+  "options": [
+   "Sesenta y cinco",
+   "Setenta y cinco",
+   "Ochenta y cinco",
+   "Cincuenta y siete"
+  ],
+  "answer": "Setenta y cinco",
+  "explanation": "Setenta = 70; cinco = 5. So, setenta y cinco = 75.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p3",
+  "question": "Which room in a house is 'la cocina'?",
+  "options": [
+   "The bedroom",
+   "The bathroom",
+   "The kitchen",
+   "The living room"
+  ],
+  "answer": "The kitchen",
+  "explanation": "'La cocina' is where food is prepared; 'el dormitorio' is the bedroom.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p4",
+  "question": "What is 'el desayuno' in English?",
+  "options": [
+   "Lunch",
+   "Dinner",
+   "Snack",
+   "Breakfast"
+  ],
+  "answer": "Breakfast",
+  "explanation": "'El desayuno' is the first meal of the day.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p5",
+  "question": "Choose the correct definite article for the word 'manzana' (apple).",
+  "options": [
+   "El",
+   "La",
+   "Los",
+   "Las"
+  ],
+  "answer": "La",
+  "explanation": "'Manzana' is a feminine singular noun, so it takes the article 'la'.",
+  "topic": "spa-l2-1"
+ },
+ {
+  "id": "p6",
+  "question": "Which of the following phrases is grammatically correct?",
+  "options": [
+   "El libro roja",
+   "La casa blanco",
+   "Los gatos negros",
+   "Las gatas pequeño"
+  ],
+  "answer": "Los gatos negros",
+  "explanation": "In Spanish, adjectives must agree in gender and number with the noun they describe.",
+  "topic": "spa-l2-2"
+ },
+ {
+  "id": "p7",
+  "question": "What is the present tense conjugation of 'hablar' (to speak) for the subject 'yo'?",
+  "options": [
+   "Hablas",
+   "Habla",
+   "Hablo",
+   "Hablan"
+  ],
+  "answer": "Hablo",
+  "explanation": "For regular -AR verbs, the 'yo' ending is '-o'.",
+  "topic": "spa-l2-2"
+ },
+ {
+  "id": "p8",
+  "question": "How would you say 'I am going to study' using the 'ir + a + infinitive' structure?",
+  "options": [
+   "Voy a estudio",
+   "Vas a estudiar",
+   "Voy a estudiar",
+   "Vamo a estudiar"
+  ],
+  "answer": "Voy a estudiar",
+  "explanation": "Voy (I go) + a (to) + estudiar (to study).",
+  "topic": "spa-l2-2"
+ },
+ {
+  "id": "p9",
+  "question": "In a Spanish passage, if you see the word 'peligro', what does it mean?",
+  "options": [
+   "Pelican",
+   "Danger",
+   "Safety",
+   "Price"
+  ],
+  "answer": "Danger",
+  "explanation": "'Peligro' is a high-frequency word often found on public warning signs.",
+  "topic": "spa-l3-1"
+ },
+ {
+  "id": "p10",
+  "question": "A sign in a restaurant says 'Abierto todos los días'. What does it mean?",
+  "options": [
+   "Closed on weekends",
+   "Open every day",
+   "No smoking allowed",
+   "Exit this way"
+  ],
+  "answer": "Open every day",
+  "explanation": "'Abierto' means open; 'todos los días' means every day.",
+  "topic": "spa-l3-2"
+ },
+ {
+  "id": "p11",
+  "question": "Which famous Hispanic festival is known as the 'Day of the Dead'?",
+  "options": [
+   "Las Fallas",
+   "Semana Santa",
+   "Día de los Muertos",
+   "Carnaval"
+  ],
+  "answer": "Día de los Muertos",
+  "explanation": "Día de los Muertos is a significant tradition in Mexico for remembering ancestors.",
+  "topic": "spa-l6-1"
+ },
+ {
+  "id": "p12",
+  "question": "Which of the following is a characteristic of Spanish spoken in some parts of the Caribbean?",
+  "options": [
+   "Pronouncing every 's' clearly",
+   "Dropping the final 's' in words",
+   "Speaking very slowly",
+   "Using only formal 'usted'"
+  ],
+  "answer": "Dropping the final 's' in words",
+  "explanation": "A common feature of Caribbean Spanish dialects is the aspiration or dropping of final 's' sounds.",
+  "topic": "spa-l6-2"
+ },
+ {
+  "id": "p13",
+  "question": "How do you say 'good morning' in Spanish?",
+  "options": [
+   "Buenos días",
+   "Buenas noches",
+   "Buenas tardes",
+   "Hola"
+  ],
+  "answer": "Buenos días",
+  "explanation": "'Buenos días' is used in the morning.",
+  "topic": "spa-l5-1"
+ },
+ {
+  "id": "p14",
+  "question": "What does 'adiós' mean?",
+  "options": [
+   "Goodbye",
+   "Hello",
+   "Please",
+   "Thank you"
+  ],
+  "answer": "Goodbye",
+  "explanation": "'Adiós' means goodbye.",
+  "topic": "spa-l1-1"
+ },
+ {
+  "id": "p15",
+  "question": "Which is the correct Spanish for 'please'?",
+  "options": [
+   "Por favor",
+   "De nada",
+   "Lo siento",
+   "Perdón"
+  ],
+  "answer": "Por favor",
+  "explanation": "'Por favor' means please.",
+  "topic": "spa-l1-1"
+ },
+ {
+  "id": "p16",
+  "question": "How do you say 'thank you' in Spanish?",
+  "options": [
+   "Gracias",
+   "Salud",
+   "Felicidades",
+   "Bienvenido"
+  ],
+  "answer": "Gracias",
+  "explanation": "'Gracias' means thank you.",
+  "topic": "spa-l1-1"
+ },
+ {
+  "id": "p17",
+  "question": "What is the Spanish word for 'water'?",
+  "options": [
+   "Agua",
+   "Pan",
+   "Leche",
+   "Jugo"
+  ],
+  "answer": "Agua",
+  "explanation": "'Agua' means water.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p18",
+  "question": "Which word means 'food' in Spanish?",
+  "options": [
+   "Comida",
+   "Casa",
+   "Escuela",
+   "Trabajo"
+  ],
+  "answer": "Comida",
+  "explanation": "'Comida' means food.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p19",
+  "question": "How do you say 'I am' in Spanish?",
+  "options": [
+   "Yo soy / Yo estoy",
+   "Yo tengo",
+   "Yo voy",
+   "Yo hago"
+  ],
+  "answer": "Yo soy / Yo estoy",
+  "explanation": "'Soy' (ser) or 'estoy' (estar) mean 'I am'.",
+  "topic": "spa-l2-2"
+ },
+ {
+  "id": "p20",
+  "question": "The correct response to '¿Cómo estás?' is:",
+  "options": [
+   "Estoy bien, gracias",
+   "Me llamo Juan",
+   "Tengo diez años",
+   "Soy de Jamaica"
+  ],
+  "answer": "Estoy bien, gracias",
+  "explanation": "'¿Cómo estás?' asks how you are.",
+  "topic": "spa-l5-1"
+ },
+ {
+  "id": "p21",
+  "question": "What is the Spanish for 'my name is'?",
+  "options": [
+   "Me llamo",
+   "Me gusta",
+   "Me duele",
+   "Me voy"
+  ],
+  "answer": "Me llamo",
+  "explanation": "'Me llamo' introduces your name.",
+  "topic": "spa-l1-1"
+ },
+ {
+  "id": "p22",
+  "question": "How do you say 'I am from Trinidad' in Spanish?",
+  "options": [
+   "Soy de Trinidad",
+   "Voy a Trinidad",
+   "Vivo en Trinidad",
+   "Trabajo en Trinidad"
+  ],
+  "answer": "Soy de Trinidad",
+  "explanation": "'Soy de' means 'I am from'.",
+  "topic": "spa-l1-1"
+ },
+ {
+  "id": "p23",
+  "question": "What does '¿Dónde vives?' mean?",
+  "options": [
+   "Where do you live?",
+   "What is your name?",
+   "How old are you?",
+   "Where are you going?"
+  ],
+  "answer": "Where do you live?",
+  "explanation": "'¿Dónde vives?' asks where you live.",
+  "topic": "spa-l3-1"
+ },
+ {
+  "id": "p24",
+  "question": "How do you say 'I live in Port of Spain' in Spanish?",
+  "options": [
+   "Vivo en Puerto España",
+   "Vengo de Puerto España",
+   "Estoy en Puerto España",
+   "Voy a Puerto España"
+  ],
+  "answer": "Vivo en Puerto España",
+  "explanation": "'Vivo en' means 'I live in'.",
+  "topic": "spa-l1-1"
+ },
+ {
+  "id": "p25",
+  "question": "What is the Spanish word for 'house'?",
+  "options": [
+   "La casa",
+   "El carro",
+   "El libro",
+   "La mesa"
+  ],
+  "answer": "La casa",
+  "explanation": "'La casa' means the house.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p26",
+  "question": "Which word means 'school' in Spanish?",
+  "options": [
+   "La escuela",
+   "La iglesia",
+   "La playa",
+   "La tienda"
+  ],
+  "answer": "La escuela",
+  "explanation": "'La escuela' means school.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p27",
+  "question": "What does 'la familia' mean?",
+  "options": [
+   "The family",
+   "The friends",
+   "The teachers",
+   "The neighbours"
+  ],
+  "answer": "The family",
+  "explanation": "'La familia' is the family.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p28",
+  "question": "Which is the Spanish word for 'mother'?",
+  "options": [
+   "La madre",
+   "El padre",
+   "El hermano",
+   "La hermana"
+  ],
+  "answer": "La madre",
+  "explanation": "'La madre' means mother.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p29",
+  "question": "How do you say 'father' in Spanish?",
+  "options": [
+   "El padre",
+   "La madre",
+   "El abuelo",
+   "El tío"
+  ],
+  "answer": "El padre",
+  "explanation": "'El padre' means father.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p30",
+  "question": "What is the plural of 'el libro' (the book)?",
+  "options": [
+   "Los libros",
+   "Las libros",
+   "El libros",
+   "Un libros"
+  ],
+  "answer": "Los libros",
+  "explanation": "Masculine plural uses 'los'.",
+  "topic": "spa-l2-1"
+ },
+ {
+  "id": "p31",
+  "question": "Choose the correct definite article for 'la mesa' (table):",
+  "options": [
+   "la",
+   "el",
+   "los",
+   "las"
+  ],
+  "answer": "la",
+  "explanation": "'Mesa' is feminine singular → 'la'.",
+  "topic": "spa-l2-1"
+ },
+ {
+  "id": "p32",
+  "question": "Which word is feminine?",
+  "options": [
+   "La ventana",
+   "El zapato",
+   "El reloj",
+   "El sombrero"
+  ],
+  "answer": "La ventana",
+  "explanation": "'Ventana' is feminine (ends in -a).",
+  "topic": "spa-l2-1"
+ },
+ {
+  "id": "p33",
+  "question": "How do you say 'one' in Spanish?",
+  "options": [
+   "Uno",
+   "Dos",
+   "Tres",
+   "Cuatro"
+  ],
+  "answer": "Uno",
+  "explanation": "'Uno' means one.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p34",
+  "question": "What is 'cinco' in English?",
+  "options": [
+   "Five",
+   "Four",
+   "Six",
+   "Ten"
+  ],
+  "answer": "Five",
+  "explanation": "'Cinco' = five.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p35",
+  "question": "How do you say 'ten' in Spanish?",
+  "options": [
+   "Diez",
+   "Veinte",
+   "Cien",
+   "Doce"
+  ],
+  "answer": "Diez",
+  "explanation": "'Diez' means ten.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p36",
+  "question": "What is 'veinte' in English?",
+  "options": [
+   "Twenty",
+   "Twelve",
+   "Two",
+   "Fifty"
+  ],
+  "answer": "Twenty",
+  "explanation": "'Veinte' = twenty.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p37",
+  "question": "Which Spanish word means 'today'?",
+  "options": [
+   "Hoy",
+   "Ayer",
+   "Mañana",
+   "Noche"
+  ],
+  "answer": "Hoy",
+  "explanation": "'Hoy' means today; 'mañana' means tomorrow/morning.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p38",
+  "question": "What does 'mañana' mean?",
+  "options": [
+   "Tomorrow or morning",
+   "Yesterday",
+   "Tonight",
+   "Always"
+  ],
+  "answer": "Tomorrow or morning",
+  "explanation": "'Mañana' can mean tomorrow or morning.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p39",
+  "question": "How do you say 'yesterday' in Spanish?",
+  "options": [
+   "Ayer",
+   "Hoy",
+   "Mañana",
+   "Ahora"
+  ],
+  "answer": "Ayer",
+  "explanation": "'Ayer' means yesterday.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p40",
+  "question": "What is the Spanish for 'now'?",
+  "options": [
+   "Ahora",
+   "Luego",
+   "Siempre",
+   "Nunca"
+  ],
+  "answer": "Ahora",
+  "explanation": "'Ahora' means now.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p41",
+  "question": "Which word means 'always' in Spanish?",
+  "options": [
+   "Siempre",
+   "Nunca",
+   "A veces",
+   "A menudo"
+  ],
+  "answer": "Siempre",
+  "explanation": "'Siempre' means always.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p42",
+  "question": "What does 'nunca' mean?",
+  "options": [
+   "Never",
+   "Always",
+   "Sometimes",
+   "Often"
+  ],
+  "answer": "Never",
+  "explanation": "'Nunca' means never.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p43",
+  "question": "How do you say 'I like' in Spanish?",
+  "options": [
+   "Me gusta",
+   "Me llamo",
+   "Me duele",
+   "Me levanto"
+  ],
+  "answer": "Me gusta",
+  "explanation": "'Me gusta' expresses liking.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p44",
+  "question": "What does 'me gusta el fútbol' mean?",
+  "options": [
+   "I like football",
+   "I play football",
+   "I watch football",
+   "I hate football"
+  ],
+  "answer": "I like football",
+  "explanation": "'Me gusta' + noun = I like...",
+  "topic": "spa-l3-1"
+ },
+ {
+  "id": "p45",
+  "question": "How do you say 'I love you' in Spanish?",
+  "options": [
+   "Te quiero / Te amo",
+   "Te veo",
+   "Te llamo",
+   "Te espero"
+  ],
+  "answer": "Te quiero / Te amo",
+  "explanation": "'Te quiero' or 'Te amo' express love.",
+  "topic": "spa-l1-1"
+ },
+ {
+  "id": "p46",
+  "question": "Which is the Spanish for 'friend' (male)?",
+  "options": [
+   "El amigo",
+   "La amiga",
+   "El hermano",
+   "El primo"
+  ],
+  "answer": "El amigo",
+  "explanation": "'El amigo' is a male friend.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p47",
+  "question": "What is 'la playa' in English?",
+  "options": [
+   "The beach",
+   "The park",
+   "The pool",
+   "The mountain"
+  ],
+  "answer": "The beach",
+  "explanation": "'La playa' = the beach.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p48",
+  "question": "Which word means 'car' in Spanish?",
+  "options": [
+   "El carro / El coche",
+   "El avión",
+   "El barco",
+   "El tren"
+  ],
+  "answer": "El carro / El coche",
+  "explanation": "'Carro' (Latin America) or 'coche' (Spain) mean car.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p49",
+  "question": "How do you say 'train' in Spanish?",
+  "options": [
+   "El tren",
+   "El avión",
+   "El barco",
+   "La bicicleta"
+  ],
+  "answer": "El tren",
+  "explanation": "'El tren' means train.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p50",
+  "question": "What does 'el aeropuerto' mean?",
+  "options": [
+   "The airport",
+   "The station",
+   "The harbour",
+   "The bus stop"
+  ],
+  "answer": "The airport",
+  "explanation": "'El aeropuerto' is the airport.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p51",
+  "question": "Which word means 'street' in Spanish?",
+  "options": [
+   "La calle",
+   "La esquina",
+   "La plaza",
+   "El edificio"
+  ],
+  "answer": "La calle",
+  "explanation": "'La calle' means street.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p52",
+  "question": "How do you say 'the market' in Spanish?",
+  "options": [
+   "El mercado",
+   "El supermercado",
+   "La farmacia",
+   "La tienda"
+  ],
+  "answer": "El mercado",
+  "explanation": "'El mercado' is the market.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p53",
+  "question": "What is 'la farmacia' in English?",
+  "options": [
+   "The pharmacy",
+   "The bakery",
+   "The bank",
+   "The post office"
+  ],
+  "answer": "The pharmacy",
+  "explanation": "'La farmacia' = the pharmacy.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p54",
+  "question": "Which Spanish word means 'bread'?",
+  "options": [
+   "El pan",
+   "El queso",
+   "La carne",
+   "El arroz"
+  ],
+  "answer": "El pan",
+  "explanation": "'El pan' means bread.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p55",
+  "question": "What does 'el desayuno' mean?",
+  "options": [
+   "Breakfast",
+   "Lunch",
+   "Dinner",
+   "Snack"
+  ],
+  "answer": "Breakfast",
+  "explanation": "'El desayuno' is breakfast.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p56",
+  "question": "How do you say 'lunch' in Spanish?",
+  "options": [
+   "El almuerzo",
+   "El desayuno",
+   "La cena",
+   "La merienda"
+  ],
+  "answer": "El almuerzo",
+  "explanation": "'El almuerzo' means lunch.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p57",
+  "question": "What is 'la cena' in English?",
+  "options": [
+   "Dinner",
+   "Breakfast",
+   "Lunch",
+   "Dessert"
+  ],
+  "answer": "Dinner",
+  "explanation": "'La cena' = dinner.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p58",
+  "question": "Which word means 'apple' in Spanish?",
+  "options": [
+   "La manzana",
+   "La naranja",
+   "El plátano",
+   "La uva"
+  ],
+  "answer": "La manzana",
+  "explanation": "'La manzana' means apple.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p59",
+  "question": "What does 'el pollo' mean?",
+  "options": [
+   "Chicken",
+   "Beef",
+   "Fish",
+   "Pork"
+  ],
+  "answer": "Chicken",
+  "explanation": "'El pollo' means chicken.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p60",
+  "question": "Which Spanish word means 'cheese'?",
+  "options": [
+   "El queso",
+   "El azúcar",
+   "La sal",
+   "La mantequilla"
+  ],
+  "answer": "El queso",
+  "explanation": "'El queso' means cheese.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p61",
+  "question": "How do you say 'I am hungry' in Spanish?",
+  "options": [
+   "Tengo hambre",
+   "Tengo sed",
+   "Tengo sueño",
+   "Tengo prisa"
+  ],
+  "answer": "Tengo hambre",
+  "explanation": "'Tener hambre' = to be hungry.",
+  "topic": "spa-l1-1"
+ },
+ {
+  "id": "p62",
+  "question": "What does 'tengo sed' mean?",
+  "options": [
+   "I am thirsty",
+   "I am hungry",
+   "I am tired",
+   "I am cold"
+  ],
+  "answer": "I am thirsty",
+  "explanation": "'Tener sed' = to be thirsty.",
+  "topic": "spa-l1-1"
+ },
+ {
+  "id": "p63",
+  "question": "How do you say 'I am tired' in Spanish?",
+  "options": [
+   "Estoy cansado",
+   "Estoy contento",
+   "Estoy enfermo",
+   "Estoy ocupado"
+  ],
+  "answer": "Estoy cansado",
+  "explanation": "'Estar cansado' = to be tired.",
+  "topic": "spa-l1-1"
+ },
+ {
+  "id": "p64",
+  "question": "Which phrase means 'I am sick'?",
+  "options": [
+   "Estoy enfermo",
+   "Estoy bien",
+   "Estoy triste",
+   "Estoy feliz"
+  ],
+  "answer": "Estoy enfermo",
+  "explanation": "'Enfermo' means sick.",
+  "topic": "spa-l1-1"
+ },
+ {
+  "id": "p65",
+  "question": "What does 'estoy feliz' mean?",
+  "options": [
+   "I am happy",
+   "I am sad",
+   "I am angry",
+   "I am nervous"
+  ],
+  "answer": "I am happy",
+  "explanation": "'Feliz' = happy.",
+  "topic": "spa-l1-1"
+ },
+ {
+  "id": "p66",
+  "question": "How do you say 'it is hot' (weather) in Spanish?",
+  "options": [
+   "Hace calor",
+   "Hace frío",
+   "Hace viento",
+   "Llueve"
+  ],
+  "answer": "Hace calor",
+  "explanation": "'Hace calor' means it is hot.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p67",
+  "question": "What does 'hace frío' mean?",
+  "options": [
+   "It is cold",
+   "It is hot",
+   "It is windy",
+   "It is raining"
+  ],
+  "answer": "It is cold",
+  "explanation": "'Hace frío' = it is cold.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p68",
+  "question": "Which phrase means 'it is raining' in Spanish?",
+  "options": [
+   "Llueve",
+   "Nieva",
+   "Hace sol",
+   "Hay niebla"
+  ],
+  "answer": "Llueve",
+  "explanation": "'Llueve' means it is raining.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p69",
+  "question": "How do you say 'the sun' in Spanish?",
+  "options": [
+   "El sol",
+   "La luna",
+   "La estrella",
+   "El cielo"
+  ],
+  "answer": "El sol",
+  "explanation": "'El sol' means the sun.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p70",
+  "question": "What is 'la luna' in English?",
+  "options": [
+   "The moon",
+   "The sun",
+   "The star",
+   "The sky"
+  ],
+  "answer": "The moon",
+  "explanation": "'La luna' = the moon.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p71",
+  "question": "Which Spanish word means 'sky'?",
+  "options": [
+   "El cielo",
+   "El mar",
+   "La tierra",
+   "El fuego"
+  ],
+  "answer": "El cielo",
+  "explanation": "'El cielo' means sky.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p72",
+  "question": "How do you say 'I go' in Spanish?",
+  "options": [
+   "Voy",
+   "Vienes",
+   "Vamos",
+   "Van"
+  ],
+  "answer": "Voy",
+  "explanation": "'Voy' is the yo form of 'ir'.",
+  "topic": "spa-l2-2"
+ },
+ {
+  "id": "p73",
+  "question": "What is the 'yo' form of 'hablar' (to speak) in the present tense?",
+  "options": [
+   "Hablo",
+   "Hablas",
+   "Habla",
+   "Hablamos"
+  ],
+  "answer": "Hablo",
+  "explanation": "Yo hablo — I speak.",
+  "topic": "spa-l2-2"
+ },
+ {
+  "id": "p74",
+  "question": "Which is the correct form of 'comer' for 'tú' (you)?",
+  "options": [
+   "Comes",
+   "Como",
+   "Come",
+   "Comemos"
+  ],
+  "answer": "Comes",
+  "explanation": "Tú comes — you eat.",
+  "topic": "spa-l2-2"
+ },
+ {
+  "id": "p75",
+  "question": "What is the 'nosotros' form of 'vivir' (to live)?",
+  "options": [
+   "Vivimos",
+   "Vivo",
+   "Vives",
+   "Viven"
+  ],
+  "answer": "Vivimos",
+  "explanation": "Nosotros vivimos — we live.",
+  "topic": "spa-l2-2"
+ },
+ {
+  "id": "p76",
+  "question": "Which is the correct form of 'ser' for 'ellos' (they)?",
+  "options": [
+   "Son",
+   "Es",
+   "Soy",
+   "Eres"
+  ],
+  "answer": "Son",
+  "explanation": "Ellos son — they are.",
+  "topic": "spa-l2-2"
+ },
+ {
+  "id": "p77",
+  "question": "What does 'tener' mean?",
+  "options": [
+   "To have",
+   "To be",
+   "To do",
+   "To go"
+  ],
+  "answer": "To have",
+  "explanation": "'Tener' means to have.",
+  "topic": "spa-l2-1"
+ },
+ {
+  "id": "p78",
+  "question": "Which form of 'tener' is used with 'yo'?",
+  "options": [
+   "Tengo",
+   "Tienes",
+   "Tiene",
+   "Tenemos"
+  ],
+  "answer": "Tengo",
+  "explanation": "Yo tengo — I have.",
+  "topic": "spa-l2-1"
+ },
+ {
+  "id": "p79",
+  "question": "What is 'hacer' in English?",
+  "options": [
+   "To do/make",
+   "To have",
+   "To go",
+   "To come"
+  ],
+  "answer": "To do/make",
+  "explanation": "'Hacer' means to do or make.",
+  "topic": "spa-l2-1"
+ },
+ {
+  "id": "p80",
+  "question": "How do you say 'I am going to study' using 'ir + a + infinitive'?",
+  "options": [
+   "Voy a estudiar",
+   "Estudio",
+   "He estudiado",
+   "Estudié"
+  ],
+  "answer": "Voy a estudiar",
+  "explanation": "Ir a + infinitive expresses near future: voy a estudiar.",
+  "topic": "spa-l2-2"
+ },
+ {
+  "id": "p81",
+  "question": "Which sentence is grammatically correct?",
+  "options": [
+   "Yo voy al mercado",
+   "Yo voy a el mercado",
+   "Yo va al mercado",
+   "Yo vas al mercado"
+  ],
+  "answer": "Yo voy al mercado",
+  "explanation": "'Voy a + el = al' and 'yo voy' are correct.",
+  "topic": "spa-l2-2"
+ },
+ {
+  "id": "p82",
+  "question": "What does '¿Qué hora es?' mean?",
+  "options": [
+   "What time is it?",
+   "What day is it?",
+   "Where is it?",
+   "Who is it?"
+  ],
+  "answer": "What time is it?",
+  "explanation": "'¿Qué hora es?' asks the time.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p83",
+  "question": "How do you say 'It is two o'clock' in Spanish?",
+  "options": [
+   "Son las dos",
+   "Es la una",
+   "Son las tres",
+   "Son las cinco"
+  ],
+  "answer": "Son las dos",
+  "explanation": "Plural hours use 'son las'.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p84",
+  "question": "What does 'la una' mean in telling time?",
+  "options": [
+   "One o'clock",
+   "Two o'clock",
+   "Half past one",
+   "Quarter to one"
+  ],
+  "answer": "One o'clock",
+  "explanation": "'Es la una' = it is one o'clock.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p85",
+  "question": "Which word means 'Monday' in Spanish?",
+  "options": [
+   "Lunes",
+   "Martes",
+   "Miércoles",
+   "Domingo"
+  ],
+  "answer": "Lunes",
+  "explanation": "'Lunes' is Monday.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p86",
+  "question": "What is 'domingo' in English?",
+  "options": [
+   "Sunday",
+   "Saturday",
+   "Monday",
+   "Friday"
+  ],
+  "answer": "Sunday",
+  "explanation": "'Domingo' = Sunday.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p87",
+  "question": "How do you say 'week' in Spanish?",
+  "options": [
+   "La semana",
+   "El mes",
+   "El año",
+   "El día"
+  ],
+  "answer": "La semana",
+  "explanation": "'La semana' means the week.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p88",
+  "question": "Which Spanish word means 'month'?",
+  "options": [
+   "El mes",
+   "El año",
+   "La semana",
+   "El día"
+  ],
+  "answer": "El mes",
+  "explanation": "'El mes' means month.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p89",
+  "question": "What is 'enero' in English?",
+  "options": [
+   "January",
+   "June",
+   "July",
+   "December"
+  ],
+  "answer": "January",
+  "explanation": "'Enero' = January.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p90",
+  "question": "How do you say 'today is Monday' in Spanish?",
+  "options": [
+   "Hoy es lunes",
+   "Hoy es martes",
+   "Mañana es lunes",
+   "Ayer fue lunes"
+  ],
+  "answer": "Hoy es lunes",
+  "explanation": "'Hoy es' + day = today is...",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p91",
+  "question": "What does '¿Cuánto cuesta?' mean?",
+  "options": [
+   "How much does it cost?",
+   "How old are you?",
+   "Where is it?",
+   "When is it?"
+  ],
+  "answer": "How much does it cost?",
+  "explanation": "'¿Cuánto cuesta?' asks the price.",
+  "topic": "spa-l1-2"
+ },
+ {
+  "id": "p92",
+  "question": "Which phrase would you use to order a coffee politely?",
+  "options": [
+   "Quisiera un café, por favor",
+   "¡Dame café ahora!",
+   "Café, rápido",
+   "No quiero café"
+  ],
+  "answer": "Quisiera un café, por favor",
+  "explanation": "'Quisiera... por favor' is polite.",
+  "topic": "spa-l5-1"
+ },
+ {
+  "id": "p93",
+  "question": "What does 'la cuenta, por favor' mean?",
+  "options": [
+   "The bill, please",
+   "The menu, please",
+   "The table, please",
+   "The water, please"
+  ],
+  "answer": "The bill, please",
+  "explanation": "'La cuenta' is the bill.",
+  "topic": "spa-l4-1"
+ },
+ {
+  "id": "p94",
+  "question": "In a restaurant, 'la carta' refers to:",
+  "options": [
+   "the menu",
+   "the letter",
+   "the bill",
+   "the napkin"
+  ],
+  "answer": "the menu",
+  "explanation": "'La carta' can mean the menu.",
+  "topic": "spa-l4-1"
+ },
+ {
+  "id": "p95",
+  "question": "What does the sign 'Abierto' mean?",
+  "options": [
+   "Open",
+   "Closed",
+   "Reserved",
+   "For sale"
+  ],
+  "answer": "Open",
+  "explanation": "'Abierto' means open; 'cerrado' means closed.",
+  "topic": "spa-l3-2"
+ },
+ {
+  "id": "p96",
+  "question": "What does 'peligro' mean?",
+  "options": [
+   "Danger",
+   "Exit",
+   "Entrance",
+   "Caution only"
+  ],
+  "answer": "Danger",
+  "explanation": "'Peligro' means danger.",
+  "topic": "spa-l3-2"
+ },
+ {
+  "id": "p97",
+  "question": "Which sign would you see at an exit?",
+  "options": [
+   "Salida",
+   "Entrada",
+   "Prohibido",
+   "Baños"
+  ],
+  "answer": "Salida",
+  "explanation": "'Salida' means exit.",
+  "topic": "spa-l3-2"
+ },
+ {
+  "id": "p98",
+  "question": "What does 'prohibido fumar' mean?",
+  "options": [
+   "No smoking",
+   "No parking",
+   "No entry",
+   "No running"
+  ],
+  "answer": "No smoking",
+  "explanation": "'Prohibido fumar' = smoking forbidden.",
+  "topic": "spa-l3-2"
+ },
+ {
+  "id": "p99",
+  "question": "Which Spanish-speaking country is in the Caribbean?",
+  "options": [
+   "Cuba",
+   "Brazil",
+   "Haiti",
+   "Jamaica"
+  ],
+  "answer": "Cuba",
+  "explanation": "Cuba is a Spanish-speaking Caribbean nation.",
+  "topic": "spa-l6-2"
+ },
+ {
+  "id": "p100",
+  "question": "The Day of the Dead ('Día de los Muertos') is mainly celebrated in:",
+  "options": [
+   "Mexico",
+   "Spain",
+   "Argentina",
+   "Puerto Rico"
+  ],
+  "answer": "Mexico",
+  "explanation": "Día de los Muertos is a Mexican tradition.",
+  "topic": "spa-l6-1"
+ }
 ]

@@ -1,302 +1,327 @@
 [
-  {
-    "question": "Which of these is a function of the human skeleton?",
-    "options": [
-      "Producing hormones",
-      "Protecting vital organs",
-      "Digesting proteins",
-      "Pumping blood"
-    ],
-    "answer": "Protecting vital organs",
-    "explanation": "One of the primary functions of the skeleton is the protection of soft internal organs, like the ribs protecting the heart and lungs.",
-    "id": "q1"
-  },
-  {
-    "question": "Where does the exchange of gases (oxygen and carbon dioxide) occur in the lungs?",
-    "options": [
-      "Bronchi",
-      "Trachea",
-      "Alveoli",
-      "Larynx"
-    ],
-    "answer": "Alveoli",
-    "explanation": "Alveoli are tiny air sacs at the end of the bronchioles where gas exchange between the air and blood takes place.",
-    "id": "q2"
-  },
-  {
-    "question": "Which organelle is responsible for releasing energy through aerobic respiration?",
-    "options": [
-      "Nucleus",
-      "Mitochondria",
-      "Ribosome",
-      "Cell Membrane"
-    ],
-    "answer": "Mitochondria",
-    "explanation": "Mitochondria are often called the 'powerhouse' of the cell because they produce energy in the form of ATP.",
-    "id": "q3"
-  },
-  {
-    "question": "Mitosis results in the production of two daughter cells that are:",
-    "options": [
-      "Genetically identical to the parent cell",
-      "Genetically different from each other",
-      "Haploid cells (half the chromosomes)",
-      "Used only for reproduction"
-    ],
-    "answer": "Genetically identical to the parent cell",
-    "explanation": "Mitosis is the process of cell division used for growth and repair, producing two identical daughter cells.",
-    "id": "q4"
-  },
-  {
-    "question": "A lack of Vitamin C in the diet can lead to which deficiency disease?",
-    "options": [
-      "Rickets",
-      "Night blindness",
-      "Scurvy",
-      "Anemia"
-    ],
-    "answer": "Scurvy",
-    "explanation": "Scurvy is a disease caused by a deficiency of Vitamin C, leading to swollen, bleeding gums and opening of previously healed wounds.",
-    "id": "q5"
-  },
-  {
-    "question": "Which food group is the primary source of energy for the human body?",
-    "options": [
-      "Proteins",
-      "Carbohydrates",
-      "Vitamins",
-      "Minerals"
-    ],
-    "answer": "Carbohydrates",
-    "explanation": "Carbohydrates, such as starches and sugars, are the body's main and most efficient source of energy.",
-    "id": "q6"
-  },
-  {
-    "question": "Which of the following is an example of a communicable disease?",
-    "options": [
-      "Diabetes",
-      "Hypertension",
-      "Influenza",
-      "Asthma"
-    ],
-    "answer": "Influenza",
-    "explanation": "Influenza (the flu) is caused by a virus and can be passed from person to person.",
-    "id": "q7"
-  },
-  {
-    "question": "What is the function of white blood cells in the human body?",
-    "options": [
-      "Transporting oxygen",
-      "Clotting blood at wounds",
-      "Defending against pathogens",
-      "Carrying nutrients"
-    ],
-    "answer": "Defending against pathogens",
-    "explanation": "White blood cells are part of the immune system and help the body fight off infections and foreign invaders.",
-    "id": "q8"
-  },
-  {
-    "question": "How do vaccines typically work?",
-    "options": [
-      "By killing bacteria directly with chemicals",
-      "By stimulating the immune system to produce antibodies",
-      "By repairing damaged tissues in the body",
-      "By providing a permanent layer of skin over wounds"
-    ],
-    "answer": "By stimulating the immune system to produce antibodies",
-    "explanation": "Vaccines introduce a weakened or dead version of a pathogen, training the immune system to recognize and fight it in the future.",
-    "id": "q9"
-  },
-  {
-    "question": "Which Gas is the main contributor to the Greenhouse Effect and Global Warming?",
-    "options": [
-      "Oxygen",
-      "Carbon dioxide",
-      "Nitrogen",
-      "Helium"
-    ],
-    "answer": "Carbon dioxide",
-    "explanation": "Carbon dioxide traps heat in the atmosphere, leading to the greenhouse effect and an increase in global temperatures.",
-    "id": "q10"
-  },
-  {
-    "question": "What is the first step in large-scale water purification?",
-    "options": [
-      "Chlorination",
-      "Filtration",
-      "Screening",
-      "Aeration"
-    ],
-    "answer": "Screening",
-    "explanation": "Screening involves passing water through bars or mesh to remove large objects like sticks, leaves, and trash.",
-    "id": "q11"
-  },
-  {
-    "question": "Which type of drug slows down the activity of the central nervous system?",
-    "options": [
-      "Stimulants",
-      "Depressants",
-      "Hallucinogens",
-      "Antibiotics"
-    ],
-    "answer": "Depressants",
-    "explanation": "Depressants, such as alcohol, slow down brain function and physical reactions.",
-    "id": "q12"
-  },
-  {
-    "question": "Smoking is a major risk factor for which of the following?",
-    "options": [
-      "Lung Cancer",
-      "Type 1 Diabetes",
-      "Color Blindness",
-      "Hearing Loss"
-    ],
-    "answer": "Lung Cancer",
-    "explanation": "Smoking introduces carcinogens into the lungs, significantly increasing the risk of developing lung cancer.",
-    "id": "q13"
-  },
-  {
-    "question": "Which of these is a permanent method of contraception for females?",
-    "options": [
-      "Condom",
-      "Diaphragm",
-      "Tubal Ligation",
-      "Birth Control Pill"
-    ],
-    "answer": "Tubal Ligation",
-    "explanation": "Tubal ligation is a surgical procedure that permanently prevents pregnancy by blocking the fallopian tubes.",
-    "id": "q14"
-  },
-  {
-    "question": "Which STI is caused by a virus and attacks the body's immune system?",
-    "options": [
-      "Syphilis",
-      "Gonorrhea",
-      "HIV/AIDS",
-      "Chlamydia"
-    ],
-    "answer": "HIV/AIDS",
-    "explanation": "Human Immunodeficiency Virus (HIV) targets the immune system, specifically CD4 cells, potentially leading to AIDS.",
-    "id": "q15"
-  },
-  {
-    "id": "q16",
-    "question": "Which disease is caused by a lack of Vitamin C?",
-    "options": [
-      "Rickets",
-      "Scurvy",
-      "Beriberi",
-      "Night blindness"
-    ],
-    "answer": "Scurvy",
-    "explanation": "Scurvy causes weakness, gum disease, and skin hemorrhages."
-  },
-  {
-    "id": "q17",
-    "question": "What is the main function of the kidneys?",
-    "options": [
-      "Digestion",
-      "Excretion of waste from the blood",
-      "Production of bile",
-      "Pumping blood"
-    ],
-    "answer": "Excretion of waste from the blood",
-    "explanation": "Kidneys filter blood to produce urine."
-  },
-  {
-    "id": "q18",
-    "question": "Which of these is a communicable disease?",
-    "options": [
-      "Diabetes",
-      "Hypertension",
-      "Influenza (Flu)",
-      "Cancer"
-    ],
-    "answer": "Influenza (Flu)",
-    "explanation": "Communicable diseases can be spread from one person to another."
-  },
-  {
-    "id": "q19",
-    "question": "What is the first stage of the human life cycle?",
-    "options": [
-      "Infancy",
-      "Childhood",
-      "Prenatal (Conception)",
-      "Adolescence"
-    ],
-    "answer": "Prenatal (Conception)",
-    "explanation": "The cycle begins with fertilization and development in the womb."
-  },
-  {
-    "id": "q20",
-    "question": "Which gas do we breathe out as a waste product of respiration?",
-    "options": [
-      "Oxygen",
-      "Nitrogen",
-      "Carbon Dioxide",
-      "Hydrogen"
-    ],
-    "answer": "Carbon Dioxide",
-    "explanation": "Respiration uses oxygen and produces carbon dioxide."
-  },
-  {
-    "id": "q21",
-    "question": "What is 'Sewage'?",
-    "options": [
-      "Clean drinking water",
-      "Wastewater from homes and industries",
-      "Solid garbage in the street",
-      "Smoke from factories"
-    ],
-    "answer": "Wastewater from homes and industries",
-    "explanation": "Proper sewage treatment is vital for public health."
-  },
-  {
-    "id": "q22",
-    "question": "Which part of the eye controls the amount of light entering?",
-    "options": [
-      "Retina",
-      "Iris",
-      "Cornea",
-      "Lens"
-    ],
-    "answer": "Iris",
-    "explanation": "The iris adjusts the size of the pupil."
-  },
-  {
-    "id": "q23",
-    "question": "What is a 'Vector' in terms of disease?",
-    "options": [
-      "The person who is sick",
-      "An organism that transmits a pathogen from one host to another",
-      "The medicine used for a cure",
-      "A type of virus"
-    ],
-    "answer": "An organism that transmits a pathogen from one host to another",
-    "explanation": "Examples include mosquitoes (malaria) and flies (cholera)."
-  },
-  {
-    "id": "q24",
-    "question": "Which method of contraception also helps prevent STIs?",
-    "options": [
-      "The Pill",
-      "Condom",
-      "IUD",
-      "Rhythm method"
-    ],
-    "answer": "Condom",
-    "explanation": "Condoms provide a physical barrier that reduces the risk of infection."
-  },
-  {
-    "id": "q25",
-    "question": "What is the 'Greenhouse Effect'?",
-    "options": [
-      "The growing of plants in a greenhouse",
-      "The trapping of the sun's warmth in the planet's lower atmosphere",
-      "A type of biological process",
-      "The cleaning of the environment"
-    ],
-    "answer": "The trapping of the sun's warmth in the planet's lower atmosphere",
-    "explanation": "It is caused by gases like CO2 trapping heat."
-  }
+ {
+  "id": "q1",
+  "question": "Which of these is a function of the human skeleton?",
+  "options": [
+   "Producing hormones",
+   "Protecting vital organs",
+   "Digesting proteins",
+   "Pumping blood"
+  ],
+  "answer": "Protecting vital organs",
+  "explanation": "One of the primary functions of the skeleton is the protection of soft internal organs, like the ribs protecting the heart and lungs.",
+  "topic": "hsb-l1-1"
+ },
+ {
+  "id": "q2",
+  "question": "Where does the exchange of gases (oxygen and carbon dioxide) occur in the lungs?",
+  "options": [
+   "Bronchi",
+   "Trachea",
+   "Alveoli",
+   "Larynx"
+  ],
+  "answer": "Alveoli",
+  "explanation": "Alveoli are tiny air sacs at the end of the bronchioles where gas exchange between the air and blood takes place.",
+  "topic": "hsb-l1-2"
+ },
+ {
+  "id": "q3",
+  "question": "Which organelle is responsible for releasing energy through aerobic respiration?",
+  "options": [
+   "Nucleus",
+   "Mitochondria",
+   "Ribosome",
+   "Cell Membrane"
+  ],
+  "answer": "Mitochondria",
+  "explanation": "Mitochondria are often called the 'powerhouse' of the cell because they produce energy in the form of ATP.",
+  "topic": "hsb-l2-1"
+ },
+ {
+  "id": "q4",
+  "question": "Mitosis results in the production of two daughter cells that are:",
+  "options": [
+   "Genetically identical to the parent cell",
+   "Genetically different from each other",
+   "Haploid cells (half the chromosomes)",
+   "Used only for reproduction"
+  ],
+  "answer": "Genetically identical to the parent cell",
+  "explanation": "Mitosis is the process of cell division used for growth and repair, producing two identical daughter cells.",
+  "topic": "hsb-l2-2"
+ },
+ {
+  "id": "q5",
+  "question": "A lack of Vitamin C in the diet can lead to which deficiency disease?",
+  "options": [
+   "Rickets",
+   "Night blindness",
+   "Scurvy",
+   "Anemia"
+  ],
+  "answer": "Scurvy",
+  "explanation": "Scurvy is a disease caused by a deficiency of Vitamin C, leading to swollen, bleeding gums and opening of previously healed wounds.",
+  "topic": "hsb-l3-1"
+ },
+ {
+  "id": "q6",
+  "question": "Which food group is the primary source of energy for the human body?",
+  "options": [
+   "Proteins",
+   "Carbohydrates",
+   "Vitamins",
+   "Minerals"
+  ],
+  "answer": "Carbohydrates",
+  "explanation": "Carbohydrates, such as starches and sugars, are the body's main and most efficient source of energy.",
+  "topic": "hsb-l3-1"
+ },
+ {
+  "id": "q7",
+  "question": "Which of the following is an example of a communicable disease?",
+  "options": [
+   "Diabetes",
+   "Hypertension",
+   "Influenza",
+   "Asthma"
+  ],
+  "answer": "Influenza",
+  "explanation": "Influenza (the flu) is caused by a virus and can be passed from person to person.",
+  "topic": "hsb-l4-1"
+ },
+ {
+  "id": "q8",
+  "question": "What is the function of white blood cells in the human body?",
+  "options": [
+   "Transporting oxygen",
+   "Clotting blood at wounds",
+   "Defending against pathogens",
+   "Carrying nutrients"
+  ],
+  "answer": "Defending against pathogens",
+  "explanation": "White blood cells are part of the immune system and help the body fight off infections and foreign invaders.",
+  "topic": "hsb-l4-2"
+ },
+ {
+  "id": "q9",
+  "question": "How do vaccines typically work?",
+  "options": [
+   "By killing bacteria directly with chemicals",
+   "By stimulating the immune system to produce antibodies",
+   "By repairing damaged tissues in the body",
+   "By providing a permanent layer of skin over wounds"
+  ],
+  "answer": "By stimulating the immune system to produce antibodies",
+  "explanation": "Vaccines introduce a weakened or dead version of a pathogen, training the immune system to recognize and fight it in the future.",
+  "topic": "hsb-l4-2"
+ },
+ {
+  "id": "q10",
+  "question": "Which Gas is the main contributor to the Greenhouse Effect and Global Warming?",
+  "options": [
+   "Oxygen",
+   "Carbon dioxide",
+   "Nitrogen",
+   "Helium"
+  ],
+  "answer": "Carbon dioxide",
+  "explanation": "Carbon dioxide traps heat in the atmosphere, leading to the greenhouse effect and an increase in global temperatures.",
+  "topic": "hsb-l5-1"
+ },
+ {
+  "id": "q11",
+  "question": "What is the first step in large-scale water purification?",
+  "options": [
+   "Chlorination",
+   "Filtration",
+   "Screening",
+   "Aeration"
+  ],
+  "answer": "Screening",
+  "explanation": "Screening involves passing water through bars or mesh to remove large objects like sticks, leaves, and trash.",
+  "topic": "hsb-l5-1"
+ },
+ {
+  "id": "q12",
+  "question": "Which type of drug slows down the activity of the central nervous system?",
+  "options": [
+   "Stimulants",
+   "Depressants",
+   "Hallucinogens",
+   "Antibiotics"
+  ],
+  "answer": "Depressants",
+  "explanation": "Depressants, such as alcohol, slow down brain function and physical reactions.",
+  "topic": "hsb-l6-1"
+ },
+ {
+  "id": "q13",
+  "question": "Smoking is a major risk factor for which of the following?",
+  "options": [
+   "Lung Cancer",
+   "Type 1 Diabetes",
+   "Color Blindness",
+   "Hearing Loss"
+  ],
+  "answer": "Lung Cancer",
+  "explanation": "Smoking introduces carcinogens into the lungs, significantly increasing the risk of developing lung cancer.",
+  "topic": "hsb-l6-1"
+ },
+ {
+  "id": "q14",
+  "question": "Which of these is a permanent method of contraception for females?",
+  "options": [
+   "Condom",
+   "Diaphragm",
+   "Tubal Ligation",
+   "Birth Control Pill"
+  ],
+  "answer": "Tubal Ligation",
+  "explanation": "Tubal ligation is a surgical procedure that permanently prevents pregnancy by blocking the fallopian tubes.",
+  "topic": "hsb-l6-2"
+ },
+ {
+  "id": "q15",
+  "question": "Which STI is caused by a virus and attacks the body's immune system?",
+  "options": [
+   "Syphilis",
+   "Gonorrhea",
+   "HIV/AIDS",
+   "Chlamydia"
+  ],
+  "answer": "HIV/AIDS",
+  "explanation": "Human Immunodeficiency Virus (HIV) targets the immune system, specifically CD4 cells, potentially leading to AIDS.",
+  "topic": "hsb-l6-2"
+ },
+ {
+  "id": "q16",
+  "question": "Which disease is caused by a lack of Vitamin C?",
+  "options": [
+   "Rickets",
+   "Scurvy",
+   "Beriberi",
+   "Night blindness"
+  ],
+  "answer": "Scurvy",
+  "explanation": "Scurvy causes weakness, gum disease, and skin hemorrhages.",
+  "topic": "hsb-l3-1"
+ },
+ {
+  "id": "q17",
+  "question": "What is the main function of the kidneys?",
+  "options": [
+   "Digestion",
+   "Excretion of waste from the blood",
+   "Production of bile",
+   "Pumping blood"
+  ],
+  "answer": "Excretion of waste from the blood",
+  "explanation": "Kidneys filter blood to produce urine.",
+  "topic": "hsb-l4-1"
+ },
+ {
+  "id": "q18",
+  "question": "Which of these is a communicable disease?",
+  "options": [
+   "Diabetes",
+   "Hypertension",
+   "Influenza (Flu)",
+   "Cancer"
+  ],
+  "answer": "Influenza (Flu)",
+  "explanation": "Communicable diseases can be spread from one person to another.",
+  "topic": "hsb-l4-1"
+ },
+ {
+  "id": "q19",
+  "question": "What is the first stage of the human life cycle?",
+  "options": [
+   "Infancy",
+   "Childhood",
+   "Prenatal (Conception)",
+   "Adolescence"
+  ],
+  "answer": "Prenatal (Conception)",
+  "explanation": "The cycle begins with fertilization and development in the womb.",
+  "topic": "hsb-l2-2"
+ },
+ {
+  "id": "q20",
+  "question": "Which gas do we breathe out as a waste product of respiration?",
+  "options": [
+   "Oxygen",
+   "Nitrogen",
+   "Carbon Dioxide",
+   "Hydrogen"
+  ],
+  "answer": "Carbon Dioxide",
+  "explanation": "Respiration uses oxygen and produces carbon dioxide.",
+  "topic": "hsb-l1-2"
+ },
+ {
+  "id": "q21",
+  "question": "What is 'Sewage'?",
+  "options": [
+   "Clean drinking water",
+   "Wastewater from homes and industries",
+   "Solid garbage in the street",
+   "Smoke from factories"
+  ],
+  "answer": "Wastewater from homes and industries",
+  "explanation": "Proper sewage treatment is vital for public health.",
+  "topic": "hsb-l5-2"
+ },
+ {
+  "id": "q22",
+  "question": "Which part of the eye controls the amount of light entering?",
+  "options": [
+   "Retina",
+   "Iris",
+   "Cornea",
+   "Lens"
+  ],
+  "answer": "Iris",
+  "explanation": "The iris adjusts the size of the pupil.",
+  "topic": "hsb-l2-1"
+ },
+ {
+  "id": "q23",
+  "question": "What is a 'Vector' in terms of disease?",
+  "options": [
+   "The person who is sick",
+   "An organism that transmits a pathogen from one host to another",
+   "The medicine used for a cure",
+   "A type of virus"
+  ],
+  "answer": "An organism that transmits a pathogen from one host to another",
+  "explanation": "Examples include mosquitoes (malaria) and flies (cholera).",
+  "topic": "hsb-l4-2"
+ },
+ {
+  "id": "q24",
+  "question": "Which method of contraception also helps prevent STIs?",
+  "options": [
+   "The Pill",
+   "Condom",
+   "IUD",
+   "Rhythm method"
+  ],
+  "answer": "Condom",
+  "explanation": "Condoms provide a physical barrier that reduces the risk of infection.",
+  "topic": "hsb-l6-2"
+ },
+ {
+  "id": "q25",
+  "question": "What is the 'Greenhouse Effect'?",
+  "options": [
+   "The growing of plants in a greenhouse",
+   "The trapping of the sun's warmth in the planet's lower atmosphere",
+   "A type of biological process",
+   "The cleaning of the environment"
+  ],
+  "answer": "The trapping of the sun's warmth in the planet's lower atmosphere",
+  "explanation": "It is caused by gases like CO2 trapping heat.",
+  "topic": "hsb-l5-1"
+ }
 ]

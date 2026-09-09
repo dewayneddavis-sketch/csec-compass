@@ -1,1202 +1,1302 @@
 [
-  {
-    "id": "p1",
-    "question": "Which of the following sentences is grammatically correct?",
-    "options": [
-      "The group of students were late.",
-      "Everyone in the class is invited.",
-      "Neither John nor his friends was there.",
-      "The teacher, along with her pupils, are attending."
-    ],
-    "answer": "Everyone in the class is invited.",
-    "explanation": "'Everyone' is an indefinite pronoun and is always singular, so it takes the singular verb 'is'."
-  },
-  {
-    "id": "p2",
-    "question": "Choose the correctly punctuated sentence.",
-    "options": [
-      "She studied hard, consequently she passed.",
-      "She studied hard; consequently, she passed.",
-      "She studied hard; consequently she passed.",
-      "She studied hard consequently, she passed."
-    ],
-    "answer": "She studied hard; consequently, she passed.",
-    "explanation": "A semicolon joins two independent clauses when a conjunctive adverb like 'consequently' is used, which is followed by a comma."
-  },
-  {
-    "id": "p3",
-    "question": "Which word is the best synonym for 'meticulous' in the sentence: 'She was meticulous about her work'?",
-    "options": [
-      "Careful",
-      "Fast",
-      "Careless",
-      "Happy"
-    ],
-    "answer": "Careful",
-    "explanation": "'Meticulous' means showing great attention to detail; very careful and precise."
-  },
-  {
-    "id": "p4",
-    "question": "Choose the best antonym for 'adversity'.",
-    "options": [
-      "Hardship",
-      "Prosperity",
-      "Conflict",
-      "Poverty"
-    ],
-    "answer": "Prosperity",
-    "explanation": "'Adversity' refers to a difficult or unpleasant situation; 'prosperity' refers to the state of being successful and flourishing."
-  },
-  {
-    "id": "p5",
-    "question": "Which sentence uses the apostrophe correctly?",
-    "options": [
-      "The boys' are playing football.",
-      "Its' a beautiful day.",
-      "The dog wagged its tail.",
-      "I saw the three cat's in the garden."
-    ],
-    "answer": "The dog wagged its tail.",
-    "explanation": "'Its' is the possessive form and does not take an apostrophe. 'It's' is the contraction of 'it is'."
-  },
-  {
-    "id": "p6",
-    "question": "Identify the figure of speech in: 'The world is a stage.'",
-    "options": [
-      "Simile",
-      "Metaphor",
-      "Personification",
-      "Onomatopoeia"
-    ],
-    "answer": "Metaphor",
-    "explanation": "This is a direct comparison between the world and a stage without using 'like' or 'as'."
-  },
-  {
-    "id": "p7",
-    "question": "What is the purpose of the 'rising action' in a narrative?",
-    "options": [
-      "To introduce the characters",
-      "To resolve the conflict",
-      "To build tension and develop the conflict",
-      "To conclude the story"
-    ],
-    "answer": "To build tension and develop the conflict",
-    "explanation": "The rising action is the part of the plot where the conflict develops and tension increases toward the climax."
-  },
-  {
-    "id": "p8",
-    "question": "Which of these is a 'false friend' when translating from Spanish 'embarazada' to English?",
-    "options": [
-      "Embarrassed",
-      "Pregnant",
-      "Enthusiastic",
-      "Excited"
-    ],
-    "answer": "Embarrassed",
-    "explanation": "'Embarazada' in Spanish means 'pregnant,' not 'embarrassed,' making it a classic false friend."
-  },
-  {
-    "id": "p9",
-    "question": "In summary writing, what should you generally omit?",
-    "options": [
-      "The main idea",
-      "Examples and redundant details",
-      "The conclusion",
-      "Key points"
-    ],
-    "answer": "Examples and redundant details",
-    "explanation": "A summary should only include the central points and exclude decorative or repetitive information."
-  },
-  {
-    "id": "p10",
-    "question": "What is a 'thesis statement' in an argumentative essay?",
-    "options": [
-      "A summary of the conclusion",
-      "A statement of the writer's main position",
-      "A quote from an expert",
-      "A list of references"
-    ],
-    "answer": "A statement of the writer's main position",
-    "explanation": "The thesis statement, usually in the introduction, clearly expresses the main argument or viewpoint of the essay."
-  },
-  {
-    "id": "p11",
-    "question": "Which word best completes the sentence: 'The smell of the roses was ________.'",
-    "options": [
-      "pungent",
-      "fragrant",
-      "stagnant",
-      "odorous"
-    ],
-    "answer": "fragrant",
-    "explanation": "'Fragrant' specifically refers to a pleasant or sweet smell, which is appropriate for roses."
-  },
-  {
-    "id": "p12",
-    "question": "Identify the error in: 'Neither of the two books are interesting.'",
-    "options": [
-      "Subject-verb agreement",
-      "Tense",
-      "Punctuation",
-      "Spelling"
-    ],
-    "answer": "Subject-verb agreement",
-    "explanation": "'Neither' is a singular pronoun and should take the singular verb 'is'."
-  },
-  {
-    "id": "p13",
-    "question": "Which of the following sentences is in the passive voice?",
-    "options": [
-      "The chef cooked the meal.",
-      "The meal was cooked by the chef.",
-      "The chef is cooking the meal.",
-      "The chef will cook the meal."
-    ],
-    "answer": "The meal was cooked by the chef.",
-    "explanation": "In passive voice, the subject receives the action: 'The meal was cooked'."
-  },
-  {
-    "id": "p14",
-    "question": "Choose the correct form: 'Neither of the boys ___ present.'",
-    "options": [
-      "was",
-      "were",
-      "are",
-      "have been"
-    ],
-    "answer": "was",
-    "explanation": "'Neither' takes a singular verb: 'was'."
-  },
-  {
-    "id": "p15",
-    "question": "What is the antonym of 'candid'?",
-    "options": [
-      "frank",
-      "secretive",
-      "open",
-      "honest"
-    ],
-    "answer": "secretive",
-    "explanation": "'Candid' means honest/open; the opposite is 'secretive'."
-  },
-  {
-    "id": "p16",
-    "question": "Identify the correctly spelt word:",
-    "options": [
-      "accommodate",
-      "accomodate",
-      "acommodate",
-      "acomodate"
-    ],
-    "answer": "accommodate",
-    "explanation": "'Accommodate' has double c and double m."
-  },
-  {
-    "id": "p17",
-    "question": "Which sentence uses the colon correctly?",
-    "options": [
-      "She bought: apples, pears and grapes.",
-      "She bought apples, pears: and grapes.",
-      "She bought the following: apples, pears and grapes.",
-      "She bought: apples, pears and grapes."
-    ],
-    "answer": "She bought the following: apples, pears and grapes.",
-    "explanation": "A colon introduces a list only after a complete sentence."
-  },
-  {
-    "id": "p18",
-    "question": "The prefix 'inter-' in 'international' means:",
-    "options": [
-      "between",
-      "within",
-      "against",
-      "self"
-    ],
-    "answer": "between",
-    "explanation": "'Inter-' means between or among."
-  },
-  {
-    "id": "p19",
-    "question": "Choose the best synonym for 'hasten'.",
-    "options": [
-      "hurry",
-      "delay",
-      "stop",
-      "ignore"
-    ],
-    "answer": "hurry",
-    "explanation": "'Hasten' means to hurry or move quickly."
-  },
-  {
-    "id": "p20",
-    "question": "Which word is a conjunction?",
-    "options": [
-      "because",
-      "quickly",
-      "under",
-      "beautiful"
-    ],
-    "answer": "because",
-    "explanation": "'Because' joins clauses; the others are adverb, preposition, adjective."
-  },
-  {
-    "id": "p21",
-    "question": "What is the plural of 'analysis'?",
-    "options": [
-      "analyses",
-      "analysises",
-      "analysi",
-      "analyzes"
-    ],
-    "answer": "analyses",
-    "explanation": "Words ending in -sis form plurals by changing to -ses."
-  },
-  {
-    "id": "p22",
-    "question": "Identify the figure of speech: 'The wind whispered through the trees.'",
-    "options": [
-      "personification",
-      "simile",
-      "metaphor",
-      "alliteration"
-    ],
-    "answer": "personification",
-    "explanation": "The wind is given human qualities (whispering)."
-  },
-  {
-    "id": "p23",
-    "question": "Which sentence is correctly punctuated?",
-    "options": [
-      "'Hello,' she said.",
-      "'Hello' she said.",
-      "'Hello,' She said.",
-      "'Hello.' she said,"
-    ],
-    "answer": "'Hello,' she said.",
-    "explanation": "Comma after the greeting, inside the quotation marks."
-  },
-  {
-    "id": "p24",
-    "question": "The word 'benevolent' most nearly means:",
-    "options": [
-      "kind",
-      "wealthy",
-      "famous",
-      "strict"
-    ],
-    "answer": "kind",
-    "explanation": "'Benevolent' means well-meaning and kind."
-  },
-  {
-    "id": "p25",
-    "question": "Choose the correct pronoun: 'Everyone must bring ___ own lunch.'",
-    "options": [
-      "their",
-      "his or her",
-      "them",
-      "they"
-    ],
-    "answer": "their",
-    "explanation": "With 'everyone', singular 'his or her' is formally correct."
-  },
-  {
-    "id": "p26",
-    "question": "Which of the following is a compound sentence?",
-    "options": [
-      "She slept and dreamed.",
-      "Tired, she slept.",
-      "She slept peacefully.",
-      "Because she was tired, she slept."
-    ],
-    "answer": "She slept and dreamed.",
-    "explanation": "Two independent clauses joined by 'and'."
-  },
-  {
-    "id": "p27",
-    "question": "What does the idiom 'to bite the bullet' mean?",
-    "options": [
-      "to face a difficult situation bravely",
-      "to eat quickly",
-      "to hurt someone",
-      "to speak harshly"
-    ],
-    "answer": "to face a difficult situation bravely",
-    "explanation": "It means to endure something painful with courage."
-  },
-  {
-    "id": "p28",
-    "question": "Select the correctly spelt word:",
-    "options": [
-      "embarrass",
-      "embarass",
-      "embarras",
-      "embaras"
-    ],
-    "answer": "embarrass",
-    "explanation": "'Embarrass' has double r and double s."
-  },
-  {
-    "id": "p29",
-    "question": "The opposite of 'expand' is:",
-    "options": [
-      "contract",
-      "enlarge",
-      "extend",
-      "increase"
-    ],
-    "answer": "contract",
-    "explanation": "'Contract' means to shrink or become smaller."
-  },
-  {
-    "id": "p30",
-    "question": "Which sentence contains an adverb?",
-    "options": [
-      "The dog barked loudly.",
-      "The loud dog barked.",
-      "The dog is loud.",
-      "The dog barked all night."
-    ],
-    "answer": "The dog barked loudly.",
-    "explanation": "'Loudly' modifies the verb 'barked'."
-  },
-  {
-    "id": "p31",
-    "question": "Choose the correct form: 'She has ___ to the market.'",
-    "options": [
-      "gone",
-      "went",
-      "go",
-      "going"
-    ],
-    "answer": "gone",
-    "explanation": "Present perfect 'has gone' requires the past participle."
-  },
-  {
-    "id": "p32",
-    "question": "In the sentence 'The runner, who trains daily, won the race', the clause 'who trains daily' is:",
-    "options": [
-      "relative clause",
-      "adverbial clause",
-      "noun clause",
-      "main clause"
-    ],
-    "answer": "relative clause",
-    "explanation": "It starts with 'who' and modifies 'the runner'."
-  },
-  {
-    "id": "p33",
-    "question": "What is the main function of a full stop?",
-    "options": [
-      "to end a declarative sentence",
-      "to ask a question",
-      "to show surprise",
-      "to pause briefly"
-    ],
-    "answer": "to end a declarative sentence",
-    "explanation": "A full stop ends a statement."
-  },
-  {
-    "id": "p34",
-    "question": "Which word is an abstract noun?",
-    "options": [
-      "bravery",
-      "table",
-      "river",
-      "teacher"
-    ],
-    "answer": "bravery",
-    "explanation": "'Bravery' is a quality, not a physical object."
-  },
-  {
-    "id": "p35",
-    "question": "Choose the correct word: 'The committee ___ agreed on the decision.'",
-    "options": [
-      "has",
-      "have",
-      "were",
-      "are"
-    ],
-    "answer": "has",
-    "explanation": "A committee acts as one unit here, so singular 'has'."
-  },
-  {
-    "id": "p36",
-    "question": "The suffix '-less' in 'fearless' means:",
-    "options": [
-      "without",
-      "full of",
-      "able to",
-      "one who"
-    ],
-    "answer": "without",
-    "explanation": "'-less' means without."
-  },
-  {
-    "id": "p37",
-    "question": "Identify the metaphor: 'Time is a thief.'",
-    "options": [
-      "metaphor",
-      "simile",
-      "personification",
-      "hyperbole"
-    ],
-    "answer": "metaphor",
-    "explanation": "It compares time to a thief directly, without 'like' or 'as'."
-  },
-  {
-    "id": "p38",
-    "question": "Which of the following is a simple sentence?",
-    "options": [
-      "The cat sat on the mat.",
-      "The cat sat on the mat and the dog slept.",
-      "Because the cat sat, the dog slept.",
-      "The cat, which is black, sat."
-    ],
-    "answer": "The cat sat on the mat.",
-    "explanation": "One independent clause only."
-  },
-  {
-    "id": "p39",
-    "question": "The word 'deceive' means to:",
-    "options": [
-      "mislead",
-      "discover",
-      "decide",
-      "deliver"
-    ],
-    "answer": "mislead",
-    "explanation": "'Deceive' means to trick or mislead."
-  },
-  {
-    "id": "p40",
-    "question": "Choose the correct sentence:",
-    "options": [
-      "I look forward to meeting you.",
-      "I look forward to meet you.",
-      "I look forward for meeting you.",
-      "I looking forward to meet you."
-    ],
-    "answer": "I look forward to meeting you.",
-    "explanation": "'Look forward to' is followed by the -ing form."
-  },
-  {
-    "id": "p41",
-    "question": "What is the antonym of 'ancient'?",
-    "options": [
-      "modern",
-      "old",
-      "aged",
-      "historic"
-    ],
-    "answer": "modern",
-    "explanation": "'Modern' is the opposite of ancient."
-  },
-  {
-    "id": "p42",
-    "question": "Which punctuation mark ends a question?",
-    "options": [
-      "question mark",
-      "exclamation mark",
-      "full stop",
-      "comma"
-    ],
-    "answer": "question mark",
-    "explanation": "A question mark ends an interrogative sentence."
-  },
-  {
-    "id": "p43",
-    "question": "Identify the misspelt word:",
-    "options": [
-      "recieve",
-      "believe",
-      "achieve",
-      "grieve"
-    ],
-    "answer": "recieve",
-    "explanation": "'Receive' follows 'i before e except after c'."
-  },
-  {
-    "id": "p44",
-    "question": "Choose the correct preposition: 'She is interested ___ music.'",
-    "options": [
-      "in",
-      "on",
-      "at",
-      "for"
-    ],
-    "answer": "in",
-    "explanation": "'Interested in' is the correct collocation."
-  },
-  {
-    "id": "p45",
-    "question": "The phrase 'at the eleventh hour' means:",
-    "options": [
-      "at the last moment",
-      "at noon",
-      "very early",
-      "at 11 o'clock"
-    ],
-    "answer": "at the last moment",
-    "explanation": "It means just in time, at the last minute."
-  },
-  {
-    "id": "p46",
-    "question": "Which word is an adjective in: 'The quick brown fox jumps.'",
-    "options": [
-      "quick",
-      "brown",
-      "fox",
-      "jumps"
-    ],
-    "answer": "quick",
-    "explanation": "'Quick' and 'brown' are adjectives; choose the clearest: 'quick'."
-  },
-  {
-    "id": "p47",
-    "question": "Choose the correct form: 'If I ___ you, I would apologise.'",
-    "options": [
-      "were",
-      "was",
-      "am",
-      "be"
-    ],
-    "answer": "were",
-    "explanation": "In the subjunctive, 'were' is used with 'if I'."
-  },
-  {
-    "id": "p48",
-    "question": "The root word in 'transportation' is:",
-    "options": [
-      "port",
-      "trans",
-      "tion",
-      "transpor"
-    ],
-    "answer": "port",
-    "explanation": "'Port' (to carry) is the root; trans- and -tion are affixes."
-  },
-  {
-    "id": "p49",
-    "question": "Which of these is an example of alliteration?",
-    "options": [
-      "Peter picked a peck of pickled peppers",
-      "He is as strong as an ox",
-      "The world is a stage",
-      "I've told you a million times"
-    ],
-    "answer": "Peter picked a peck of pickled peppers",
-    "explanation": "Repeated initial consonant 'p'."
-  },
-  {
-    "id": "p50",
-    "question": "What is the plural of 'child'?",
-    "options": [
-      "children",
-      "childs",
-      "childes",
-      "childrens"
-    ],
-    "answer": "children",
-    "explanation": "'Child' is irregular; plural is 'children'."
-  },
-  {
-    "id": "p51",
-    "question": "Choose the correctly punctuated sentence:",
-    "options": [
-      "He asked, 'Where are you going?'",
-      "He asked 'Where are you going'?",
-      "He asked where are you going?",
-      "'Where are you going?' he asked."
-    ],
-    "answer": "He asked, 'Where are you going?'",
-    "explanation": "Quoted question keeps the question mark inside quotes."
-  },
-  {
-    "id": "p52",
-    "question": "The word 'diligent' means:",
-    "options": [
-      "hardworking",
-      "lazy",
-      "careless",
-      "angry"
-    ],
-    "answer": "hardworking",
-    "explanation": "'Diligent' means showing care and effort."
-  },
-  {
-    "id": "p53",
-    "question": "Which sentence has correct subject-verb agreement?",
-    "options": [
-      "The list of items is on the desk.",
-      "The list of items are on the desk.",
-      "The items of the list is on the desk.",
-      "The list with items are on the desk."
-    ],
-    "answer": "The list of items is on the desk.",
-    "explanation": "The subject is 'list' (singular), so 'is'."
-  },
-  {
-    "id": "p54",
-    "question": "Identify the onomatopoeia:",
-    "options": [
-      "buzz",
-      "run",
-      "think",
-      "sleep"
-    ],
-    "answer": "buzz",
-    "explanation": "'Buzz' imitates the sound it names."
-  },
-  {
-    "id": "p55",
-    "question": "What is the purpose of a topic sentence in a paragraph?",
-    "options": [
-      "to state the main idea",
-      "to give an example",
-      "to conclude the paragraph",
-      "to ask a question"
-    ],
-    "answer": "to state the main idea",
-    "explanation": "A topic sentence expresses the paragraph's main idea."
-  },
-  {
-    "id": "p56",
-    "question": "The opposite of 'transparent' is:",
-    "options": [
-      "opaque",
-      "clear",
-      "translucent",
-      "visible"
-    ],
-    "answer": "opaque",
-    "explanation": "'Opaque' means not allowing light through."
-  },
-  {
-    "id": "p57",
-    "question": "Choose the correct form: 'He does not ___ football.'",
-    "options": [
-      "play",
-      "plays",
-      "playing",
-      "played"
-    ],
-    "answer": "play",
-    "explanation": "After 'does not', use the base form."
-  },
-  {
-    "id": "p58",
-    "question": "Which word is a verb in: 'She gave a brilliant performance.'",
-    "options": [
-      "gave",
-      "brilliant",
-      "performance",
-      "she"
-    ],
-    "answer": "gave",
-    "explanation": "'Gave' is the action word."
-  },
-  {
-    "id": "p59",
-    "question": "The comma in 'After dinner, we went home' is used to:",
-    "options": [
-      "separate an introductory phrase",
-      "list items",
-      "join sentences",
-      "show possession"
-    ],
-    "answer": "separate an introductory phrase",
-    "explanation": "A comma follows the introductory phrase 'After dinner'."
-  },
-  {
-    "id": "p60",
-    "question": "What does the proverb 'Actions speak louder than words' mean?",
-    "options": [
-      "what you do matters more than what you say",
-      "talking is important",
-      "listen before acting",
-      "words are powerful"
-    ],
-    "answer": "what you do matters more than what you say",
-    "explanation": "It emphasises deeds over promises."
-  },
-  {
-    "id": "p61",
-    "question": "Which of the following is a compound word?",
-    "options": [
-      "rainbow",
-      "happily",
-      "quickly",
-      "teacher"
-    ],
-    "answer": "rainbow",
-    "explanation": "'Rainbow' = rain + bow."
-  },
-  {
-    "id": "p62",
-    "question": "Choose the best conjunction: 'Study hard ___ you will fail.'",
-    "options": [
-      "or",
-      "and",
-      "but",
-      "so"
-    ],
-    "answer": "or",
-    "explanation": "'Or' presents the alternative consequence."
-  },
-  {
-    "id": "p63",
-    "question": "Identify the error: 'The team were playing well when the rain came.' (In formal writing, 'team' as a unit is...)",
-    "options": [
-      "singular — should be 'was'",
-      "correct as written",
-      "plural always",
-      "uncountable"
-    ],
-    "answer": "singular — should be 'was'",
-    "explanation": "As a collective unit, 'team' takes a singular verb in formal usage."
-  },
-  {
-    "id": "p64",
-    "question": "The word 'ambiguous' means:",
-    "options": [
-      "having more than one possible meaning",
-      "clearly defined",
-      "very short",
-      "extremely loud"
-    ],
-    "answer": "having more than one possible meaning",
-    "explanation": "'Ambiguous' means open to more than one interpretation."
-  },
-  {
-    "id": "p65",
-    "question": "Which sentence uses the semicolon correctly?",
-    "options": [
-      "She was tired; nevertheless, she continued.",
-      "She was tired; and continued.",
-      "She was; tired but continued.",
-      "She was tired; therefore."
-    ],
-    "answer": "She was tired; nevertheless, she continued.",
-    "explanation": "Semicolons join related independent clauses."
-  },
-  {
-    "id": "p66",
-    "question": "Choose the correct form: 'This is the book ___ I told you about.'",
-    "options": [
-      "which",
-      "who",
-      "whom",
-      "whose"
-    ],
-    "answer": "which",
-    "explanation": "'Which' refers to things (the book)."
-  },
-  {
-    "id": "p67",
-    "question": "What is the comparative form of 'good'?",
-    "options": [
-      "better",
-      "gooder",
-      "more good",
-      "best"
-    ],
-    "answer": "better",
-    "explanation": "Irregular comparative: good → better."
-  },
-  {
-    "id": "p68",
-    "question": "The suffix '-ology' means:",
-    "options": [
-      "study of",
-      "fear of",
-      "full of",
-      "without"
-    ],
-    "answer": "study of",
-    "explanation": "E.g. biology = study of life."
-  },
-  {
-    "id": "p69",
-    "question": "Identify the hyperbole: 'I'm so hungry I could eat a horse.'",
-    "options": [
-      "hyperbole",
-      "simile",
-      "metaphor",
-      "irony"
-    ],
-    "answer": "hyperbole",
-    "explanation": "Deliberate exaggeration for effect."
-  },
-  {
-    "id": "p70",
-    "question": "Choose the correct pronoun: 'The prize was given to Maria and ___.'",
-    "options": [
-      "me",
-      "I",
-      "myself",
-      "mine"
-    ],
-    "answer": "me",
-    "explanation": "Object of the preposition 'to' → object pronoun 'me'."
-  },
-  {
-    "id": "p71",
-    "question": "The word 'courteous' most nearly means:",
-    "options": [
-      "polite",
-      "rude",
-      "quiet",
-      "bold"
-    ],
-    "answer": "polite",
-    "explanation": "'Courteous' means polite and respectful."
-  },
-  {
-    "id": "p72",
-    "question": "Which is the correct spelling?",
-    "options": [
-      "necessary",
-      "neccessary",
-      "necesary",
-      "necessery"
-    ],
-    "answer": "necessary",
-    "explanation": "'Necessary' — one c, double s."
-  },
-  {
-    "id": "p73",
-    "question": "What type of sentence is: 'What a beautiful sunset!'",
-    "options": [
-      "exclamatory",
-      "interrogative",
-      "imperative",
-      "declarative"
-    ],
-    "answer": "exclamatory",
-    "explanation": "It expresses strong emotion with '!'."
-  },
-  {
-    "id": "p74",
-    "question": "Choose the correct form: 'Each of the students ___ a book.'",
-    "options": [
-      "has",
-      "have",
-      "were",
-      "are"
-    ],
-    "answer": "has",
-    "explanation": "'Each' is singular → 'has'."
-  },
-  {
-    "id": "p75",
-    "question": "The idiom 'break the ice' means:",
-    "options": [
-      "to start a conversation to reduce tension",
-      "to break something frozen",
-      "to be cold",
-      "to end a friendship"
-    ],
-    "answer": "to start a conversation to reduce tension",
-    "explanation": "It means to make people feel more comfortable."
-  },
-  {
-    "id": "p76",
-    "question": "Which word is the odd one out?",
-    "options": [
-      "blue",
-      "green",
-      "guitar",
-      "red"
-    ],
-    "answer": "guitar",
-    "explanation": "Guitar is an object; the others are colours."
-  },
-  {
-    "id": "p77",
-    "question": "Which option contains no grammatical error?",
-    "options": [
-      "The data are sufficient.",
-      "The data is sufficient.",
-      "The datas are sufficient.",
-      "The data's sufficient."
-    ],
-    "answer": "The data is sufficient.",
-    "explanation": "'Data' is commonly treated as singular mass noun in modern usage."
-  },
-  {
-    "id": "p78",
-    "question": "The word 'fragile' means:",
-    "options": [
-      "easily broken",
-      "very strong",
-      "heavy",
-      "expensive"
-    ],
-    "answer": "easily broken",
-    "explanation": "'Fragile' means delicate and easily damaged."
-  },
-  {
-    "id": "p79",
-    "question": "Identify the error: 'He don't like coffee.'",
-    "options": [
-      "don't should be doesn't",
-      "like should be likes",
-      "He should be Him",
-      "no error"
-    ],
-    "answer": "don't should be doesn't",
-    "explanation": "Third-person singular requires 'doesn't'."
-  },
-  {
-    "id": "p80",
-    "question": "Which of the following is a complex sentence?",
-    "options": [
-      "When the bell rang, the students left.",
-      "The students left.",
-      "The students left and the bell rang.",
-      "The bell rang loudly."
-    ],
-    "answer": "When the bell rang, the students left.",
-    "explanation": "Dependent clause + independent clause."
-  },
-  {
-    "id": "p81",
-    "question": "What does the prefix 'anti-' mean?",
-    "options": [
-      "against",
-      "before",
-      "after",
-      "with"
-    ],
-    "answer": "against",
-    "explanation": "'Anti-' means against (e.g. anti-war)."
-  },
-  {
-    "id": "p82",
-    "question": "Choose the correct form: 'She sings ___ than her sister.'",
-    "options": [
-      "better",
-      "good",
-      "well",
-      "best"
-    ],
-    "answer": "better",
-    "explanation": "Comparative of 'well' is 'better'."
-  },
-  {
-    "id": "p83",
-    "question": "The phrase 'once in a blue moon' means:",
-    "options": [
-      "rarely",
-      "often",
-      "always",
-      "every month"
-    ],
-    "answer": "rarely",
-    "explanation": "It means very rarely."
-  },
-  {
-    "id": "p84",
-    "question": "Which sentence uses 'their' correctly?",
-    "options": [
-      "They left their books at home.",
-      "Their going to the park.",
-      "The dog wagged their tail.",
-      "Their is a car outside."
-    ],
-    "answer": "They left their books at home.",
-    "explanation": "'Their' shows possession by 'they'."
-  },
-  {
-    "id": "p85",
-    "question": "Identify the simile: 'Her smile was like sunshine.'",
-    "options": [
-      "simile",
-      "metaphor",
-      "personification",
-      "alliteration"
-    ],
-    "answer": "simile",
-    "explanation": "Uses 'like' to compare."
-  },
-  {
-    "id": "p86",
-    "question": "The word 'deficient' means:",
-    "options": [
-      "lacking",
-      "abundant",
-      "sufficient",
-      "excessive"
-    ],
-    "answer": "lacking",
-    "explanation": "'Deficient' means not enough of something."
-  },
-  {
-    "id": "p87",
-    "question": "Choose the correct punctuation: 'We visited Paris France and London England.'",
-    "options": [
-      "We visited Paris, France, and London, England.",
-      "We visited Paris France and London England.",
-      "We visited Paris, France and London England.",
-      "We visited Paris France, and London, England."
-    ],
-    "answer": "We visited Paris, France, and London, England.",
-    "explanation": "Commas separate city and country pairs."
-  },
-  {
-    "id": "p88",
-    "question": "What is the superlative form of 'bad'?",
-    "options": [
-      "worst",
-      "badder",
-      "more bad",
-      "baddest"
-    ],
-    "answer": "worst",
-    "explanation": "Irregular: bad → worse → worst."
-  },
-  {
-    "id": "p89",
-    "question": "Which word is a determiner?",
-    "options": [
-      "this",
-      "quickly",
-      "run",
-      "beautiful"
-    ],
-    "answer": "this",
-    "explanation": "'This' points to a noun; the others are adverb, verb, adjective."
-  },
-  {
-    "id": "p90",
-    "question": "The phrase 'the calm before the storm' refers to:",
-    "options": [
-      "a quiet period before trouble",
-      "weather forecasting",
-      "a peaceful storm",
-      "a loud silence"
-    ],
-    "answer": "a quiet period before trouble",
-    "explanation": "It means a peaceful moment before problems begin."
-  },
-  {
-    "id": "p91",
-    "question": "Choose the correct form: 'I wish I ___ more time.'",
-    "options": [
-      "had",
-      "have",
-      "will have",
-      "am having"
-    ],
-    "answer": "had",
-    "explanation": "After 'I wish' about the present, use past tense 'had'."
-  },
-  {
-    "id": "p92",
-    "question": "The word 'persuade' means to:",
-    "options": [
-      "convince",
-      "confuse",
-      "prevent",
-      "permit"
-    ],
-    "answer": "convince",
-    "explanation": "'Persuade' means to convince someone."
-  },
-  {
-    "id": "p93",
-    "question": "Which sentence is in the present continuous tense?",
-    "options": [
-      "She is reading now.",
-      "She reads daily.",
-      "She read yesterday.",
-      "She has read."
-    ],
-    "answer": "She is reading now.",
-    "explanation": "'is reading' = present continuous."
-  },
-  {
-    "id": "p94",
-    "question": "Identify the direct object in: 'John threw the ball.'",
-    "options": [
-      "the ball",
-      "John",
-      "threw",
-      "the"
-    ],
-    "answer": "the ball",
-    "explanation": "The ball receives the action of the verb."
-  },
-  {
-    "id": "p95",
-    "question": "What does 'sincerely' indicate in a letter?",
-    "options": [
-      "the closing of a formal letter",
-      "the greeting",
-      "the address",
-      "the date"
-    ],
-    "answer": "the closing of a formal letter",
-    "explanation": "'Yours sincerely' closes formal letters."
-  },
-  {
-    "id": "p96",
-    "question": "Choose the correct form: 'There ___ many reasons for this.'",
-    "options": [
-      "are",
-      "is",
-      "was",
-      "be"
-    ],
-    "answer": "are",
-    "explanation": "'Reasons' is plural → 'are'."
-  },
-  {
-    "id": "p97",
-    "question": "The word 'rural' describes:",
-    "options": [
-      "the countryside",
-      "the city",
-      "the coast",
-      "the desert"
-    ],
-    "answer": "the countryside",
-    "explanation": "'Rural' relates to country areas."
-  },
-  {
-    "id": "p98",
-    "question": "Which of the following is a proper noun?",
-    "options": [
-      "Mount Kilimanjaro",
-      "mountain",
-      "river",
-      "city"
-    ],
-    "answer": "Mount Kilimanjaro",
-    "explanation": "It names a specific place and is capitalised."
-  },
-  {
-    "id": "p99",
-    "question": "Select the sentence with correct capitalization:",
-    "options": [
-      "We visited the Eiffel Tower in Paris.",
-      "We visited the eiffel tower in paris.",
-      "We visited The Eiffel Tower in Paris.",
-      "We visited the Eiffel tower in paris."
-    ],
-    "answer": "We visited the Eiffel Tower in Paris.",
-    "explanation": "Proper nouns: Eiffel Tower and Paris are capitalised."
-  },
-  {
-    "id": "p100",
-    "question": "The word 'reluctant' means:",
-    "options": [
-      "unwilling",
-      "eager",
-      "quick",
-      "happy"
-    ],
-    "answer": "unwilling",
-    "explanation": "'Reluctant' means hesitant or unwilling."
-  }
+ {
+  "id": "p1",
+  "question": "Which of the following sentences is grammatically correct?",
+  "options": [
+   "The group of students were late.",
+   "Everyone in the class is invited.",
+   "Neither John nor his friends was there.",
+   "The teacher, along with her pupils, are attending."
+  ],
+  "answer": "Everyone in the class is invited.",
+  "explanation": "'Everyone' is an indefinite pronoun and is always singular, so it takes the singular verb 'is'.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p2",
+  "question": "Choose the correctly punctuated sentence.",
+  "options": [
+   "She studied hard, consequently she passed.",
+   "She studied hard; consequently, she passed.",
+   "She studied hard; consequently she passed.",
+   "She studied hard consequently, she passed."
+  ],
+  "answer": "She studied hard; consequently, she passed.",
+  "explanation": "A semicolon joins two independent clauses when a conjunctive adverb like 'consequently' is used, which is followed by a comma.",
+  "topic": "punctuation-mastery"
+ },
+ {
+  "id": "p3",
+  "question": "Which word is the best synonym for 'meticulous' in the sentence: 'She was meticulous about her work'?",
+  "options": [
+   "Careful",
+   "Fast",
+   "Careless",
+   "Happy"
+  ],
+  "answer": "Careful",
+  "explanation": "'Meticulous' means showing great attention to detail; very careful and precise.",
+  "topic": "synonyms-antonyms"
+ },
+ {
+  "id": "p4",
+  "question": "Choose the best antonym for 'adversity'.",
+  "options": [
+   "Hardship",
+   "Prosperity",
+   "Conflict",
+   "Poverty"
+  ],
+  "answer": "Prosperity",
+  "explanation": "'Adversity' refers to a difficult or unpleasant situation; 'prosperity' refers to the state of being successful and flourishing.",
+  "topic": "synonyms-antonyms"
+ },
+ {
+  "id": "p5",
+  "question": "Which sentence uses the apostrophe correctly?",
+  "options": [
+   "The boys' are playing football.",
+   "Its' a beautiful day.",
+   "The dog wagged its tail.",
+   "I saw the three cat's in the garden."
+  ],
+  "answer": "The dog wagged its tail.",
+  "explanation": "'Its' is the possessive form and does not take an apostrophe. 'It's' is the contraction of 'it is'.",
+  "topic": "punctuation-mastery"
+ },
+ {
+  "id": "p6",
+  "question": "Identify the figure of speech in: 'The world is a stage.'",
+  "options": [
+   "Simile",
+   "Metaphor",
+   "Personification",
+   "Onomatopoeia"
+  ],
+  "answer": "Metaphor",
+  "explanation": "This is a direct comparison between the world and a stage without using 'like' or 'as'.",
+  "topic": "figurative-language"
+ },
+ {
+  "id": "p7",
+  "question": "What is the purpose of the 'rising action' in a narrative?",
+  "options": [
+   "To introduce the characters",
+   "To resolve the conflict",
+   "To build tension and develop the conflict",
+   "To conclude the story"
+  ],
+  "answer": "To build tension and develop the conflict",
+  "explanation": "The rising action is the part of the plot where the conflict develops and tension increases toward the climax.",
+  "topic": "plot-structure"
+ },
+ {
+  "id": "p8",
+  "question": "Which of these is a 'false friend' when translating from Spanish 'embarazada' to English?",
+  "options": [
+   "Embarrassed",
+   "Pregnant",
+   "Enthusiastic",
+   "Excited"
+  ],
+  "answer": "Embarrassed",
+  "explanation": "'Embarazada' in Spanish means 'pregnant,' not 'embarrassed,' making it a classic false friend.",
+  "topic": "literal-meaning"
+ },
+ {
+  "id": "p9",
+  "question": "In summary writing, what should you generally omit?",
+  "options": [
+   "The main idea",
+   "Examples and redundant details",
+   "The conclusion",
+   "Key points"
+  ],
+  "answer": "Examples and redundant details",
+  "explanation": "A summary should only include the central points and exclude decorative or repetitive information.",
+  "topic": "identifying-main-points"
+ },
+ {
+  "id": "p10",
+  "question": "What is a 'thesis statement' in an argumentative essay?",
+  "options": [
+   "A summary of the conclusion",
+   "A statement of the writer's main position",
+   "A quote from an expert",
+   "A list of references"
+  ],
+  "answer": "A statement of the writer's main position",
+  "explanation": "The thesis statement, usually in the introduction, clearly expresses the main argument or viewpoint of the essay.",
+  "topic": "argument-structure"
+ },
+ {
+  "id": "p11",
+  "question": "Which word best completes the sentence: 'The smell of the roses was ________.'",
+  "options": [
+   "pungent",
+   "fragrant",
+   "stagnant",
+   "odorous"
+  ],
+  "answer": "fragrant",
+  "explanation": "'Fragrant' specifically refers to a pleasant or sweet smell, which is appropriate for roses.",
+  "topic": "synonyms-antonyms"
+ },
+ {
+  "id": "p12",
+  "question": "Identify the error in: 'Neither of the two books are interesting.'",
+  "options": [
+   "Subject-verb agreement",
+   "Tense",
+   "Punctuation",
+   "Spelling"
+  ],
+  "answer": "Subject-verb agreement",
+  "explanation": "'Neither' is a singular pronoun and should take the singular verb 'is'.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p13",
+  "question": "Which of the following sentences is in the passive voice?",
+  "options": [
+   "The chef cooked the meal.",
+   "The meal was cooked by the chef.",
+   "The chef is cooking the meal.",
+   "The chef will cook the meal."
+  ],
+  "answer": "The meal was cooked by the chef.",
+  "explanation": "In passive voice, the subject receives the action: 'The meal was cooked'.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p14",
+  "question": "Choose the correct form: 'Neither of the boys ___ present.'",
+  "options": [
+   "was",
+   "were",
+   "are",
+   "have been"
+  ],
+  "answer": "was",
+  "explanation": "'Neither' takes a singular verb: 'was'.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p15",
+  "question": "What is the antonym of 'candid'?",
+  "options": [
+   "frank",
+   "secretive",
+   "open",
+   "honest"
+  ],
+  "answer": "secretive",
+  "explanation": "'Candid' means honest/open; the opposite is 'secretive'.",
+  "topic": "synonyms-antonyms"
+ },
+ {
+  "id": "p16",
+  "question": "Identify the correctly spelt word:",
+  "options": [
+   "accommodate",
+   "accomodate",
+   "acommodate",
+   "acomodate"
+  ],
+  "answer": "accommodate",
+  "explanation": "'Accommodate' has double c and double m.",
+  "topic": "punctuation-mastery"
+ },
+ {
+  "id": "p17",
+  "question": "Which sentence uses the colon correctly?",
+  "options": [
+   "She bought: apples, pears and grapes.",
+   "She bought apples, pears: and grapes.",
+   "She bought the following: apples, pears and grapes.",
+   "She bought: apples, pears and grapes."
+  ],
+  "answer": "She bought the following: apples, pears and grapes.",
+  "explanation": "A colon introduces a list only after a complete sentence.",
+  "topic": "punctuation-mastery"
+ },
+ {
+  "id": "p18",
+  "question": "The prefix 'inter-' in 'international' means:",
+  "options": [
+   "between",
+   "within",
+   "against",
+   "self"
+  ],
+  "answer": "between",
+  "explanation": "'Inter-' means between or among.",
+  "topic": "synonyms-antonyms"
+ },
+ {
+  "id": "p19",
+  "question": "Choose the best synonym for 'hasten'.",
+  "options": [
+   "hurry",
+   "delay",
+   "stop",
+   "ignore"
+  ],
+  "answer": "hurry",
+  "explanation": "'Hasten' means to hurry or move quickly.",
+  "topic": "synonyms-antonyms"
+ },
+ {
+  "id": "p20",
+  "question": "Which word is a conjunction?",
+  "options": [
+   "because",
+   "quickly",
+   "under",
+   "beautiful"
+  ],
+  "answer": "because",
+  "explanation": "'Because' joins clauses; the others are adverb, preposition, adjective.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p21",
+  "question": "What is the plural of 'analysis'?",
+  "options": [
+   "analyses",
+   "analysises",
+   "analysi",
+   "analyzes"
+  ],
+  "answer": "analyses",
+  "explanation": "Words ending in -sis form plurals by changing to -ses.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p22",
+  "question": "Identify the figure of speech: 'The wind whispered through the trees.'",
+  "options": [
+   "personification",
+   "simile",
+   "metaphor",
+   "alliteration"
+  ],
+  "answer": "personification",
+  "explanation": "The wind is given human qualities (whispering).",
+  "topic": "figurative-language"
+ },
+ {
+  "id": "p23",
+  "question": "Which sentence is correctly punctuated?",
+  "options": [
+   "'Hello,' she said.",
+   "'Hello' she said.",
+   "'Hello,' She said.",
+   "'Hello.' she said,"
+  ],
+  "answer": "'Hello,' she said.",
+  "explanation": "Comma after the greeting, inside the quotation marks.",
+  "topic": "punctuation-mastery"
+ },
+ {
+  "id": "p24",
+  "question": "The word 'benevolent' most nearly means:",
+  "options": [
+   "kind",
+   "wealthy",
+   "famous",
+   "strict"
+  ],
+  "answer": "kind",
+  "explanation": "'Benevolent' means well-meaning and kind.",
+  "topic": "synonyms-antonyms"
+ },
+ {
+  "id": "p25",
+  "question": "Choose the correct pronoun: 'Everyone must bring ___ own lunch.'",
+  "options": [
+   "their",
+   "his or her",
+   "them",
+   "they"
+  ],
+  "answer": "their",
+  "explanation": "With 'everyone', singular 'his or her' is formally correct.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p26",
+  "question": "Which of the following is a compound sentence?",
+  "options": [
+   "She slept and dreamed.",
+   "Tired, she slept.",
+   "She slept peacefully.",
+   "Because she was tired, she slept."
+  ],
+  "answer": "She slept and dreamed.",
+  "explanation": "Two independent clauses joined by 'and'.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p27",
+  "question": "What does the idiom 'to bite the bullet' mean?",
+  "options": [
+   "to face a difficult situation bravely",
+   "to eat quickly",
+   "to hurt someone",
+   "to speak harshly"
+  ],
+  "answer": "to face a difficult situation bravely",
+  "explanation": "It means to endure something painful with courage.",
+  "topic": "literal-meaning"
+ },
+ {
+  "id": "p28",
+  "question": "Select the correctly spelt word:",
+  "options": [
+   "embarrass",
+   "embarass",
+   "embarras",
+   "embaras"
+  ],
+  "answer": "embarrass",
+  "explanation": "'Embarrass' has double r and double s.",
+  "topic": "punctuation-mastery"
+ },
+ {
+  "id": "p29",
+  "question": "The opposite of 'expand' is:",
+  "options": [
+   "contract",
+   "enlarge",
+   "extend",
+   "increase"
+  ],
+  "answer": "contract",
+  "explanation": "'Contract' means to shrink or become smaller.",
+  "topic": "synonyms-antonyms"
+ },
+ {
+  "id": "p30",
+  "question": "Which sentence contains an adverb?",
+  "options": [
+   "The dog barked loudly.",
+   "The loud dog barked.",
+   "The dog is loud.",
+   "The dog barked all night."
+  ],
+  "answer": "The dog barked loudly.",
+  "explanation": "'Loudly' modifies the verb 'barked'.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p31",
+  "question": "Choose the correct form: 'She has ___ to the market.'",
+  "options": [
+   "gone",
+   "went",
+   "go",
+   "going"
+  ],
+  "answer": "gone",
+  "explanation": "Present perfect 'has gone' requires the past participle.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p32",
+  "question": "In the sentence 'The runner, who trains daily, won the race', the clause 'who trains daily' is:",
+  "options": [
+   "relative clause",
+   "adverbial clause",
+   "noun clause",
+   "main clause"
+  ],
+  "answer": "relative clause",
+  "explanation": "It starts with 'who' and modifies 'the runner'.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p33",
+  "question": "What is the main function of a full stop?",
+  "options": [
+   "to end a declarative sentence",
+   "to ask a question",
+   "to show surprise",
+   "to pause briefly"
+  ],
+  "answer": "to end a declarative sentence",
+  "explanation": "A full stop ends a statement.",
+  "topic": "punctuation-mastery"
+ },
+ {
+  "id": "p34",
+  "question": "Which word is an abstract noun?",
+  "options": [
+   "bravery",
+   "table",
+   "river",
+   "teacher"
+  ],
+  "answer": "bravery",
+  "explanation": "'Bravery' is a quality, not a physical object.",
+  "topic": "literal-meaning"
+ },
+ {
+  "id": "p35",
+  "question": "Choose the correct word: 'The committee ___ agreed on the decision.'",
+  "options": [
+   "has",
+   "have",
+   "were",
+   "are"
+  ],
+  "answer": "has",
+  "explanation": "A committee acts as one unit here, so singular 'has'.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p36",
+  "question": "The suffix '-less' in 'fearless' means:",
+  "options": [
+   "without",
+   "full of",
+   "able to",
+   "one who"
+  ],
+  "answer": "without",
+  "explanation": "'-less' means without.",
+  "topic": "synonyms-antonyms"
+ },
+ {
+  "id": "p37",
+  "question": "Identify the metaphor: 'Time is a thief.'",
+  "options": [
+   "metaphor",
+   "simile",
+   "personification",
+   "hyperbole"
+  ],
+  "answer": "metaphor",
+  "explanation": "It compares time to a thief directly, without 'like' or 'as'.",
+  "topic": "figurative-language"
+ },
+ {
+  "id": "p38",
+  "question": "Which of the following is a simple sentence?",
+  "options": [
+   "The cat sat on the mat.",
+   "The cat sat on the mat and the dog slept.",
+   "Because the cat sat, the dog slept.",
+   "The cat, which is black, sat."
+  ],
+  "answer": "The cat sat on the mat.",
+  "explanation": "One independent clause only.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p39",
+  "question": "The word 'deceive' means to:",
+  "options": [
+   "mislead",
+   "discover",
+   "decide",
+   "deliver"
+  ],
+  "answer": "mislead",
+  "explanation": "'Deceive' means to trick or mislead.",
+  "topic": "synonyms-antonyms"
+ },
+ {
+  "id": "p40",
+  "question": "Choose the correct sentence:",
+  "options": [
+   "I look forward to meeting you.",
+   "I look forward to meet you.",
+   "I look forward for meeting you.",
+   "I looking forward to meet you."
+  ],
+  "answer": "I look forward to meeting you.",
+  "explanation": "'Look forward to' is followed by the -ing form.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p41",
+  "question": "What is the antonym of 'ancient'?",
+  "options": [
+   "modern",
+   "old",
+   "aged",
+   "historic"
+  ],
+  "answer": "modern",
+  "explanation": "'Modern' is the opposite of ancient.",
+  "topic": "synonyms-antonyms"
+ },
+ {
+  "id": "p42",
+  "question": "Which punctuation mark ends a question?",
+  "options": [
+   "question mark",
+   "exclamation mark",
+   "full stop",
+   "comma"
+  ],
+  "answer": "question mark",
+  "explanation": "A question mark ends an interrogative sentence.",
+  "topic": "punctuation-mastery"
+ },
+ {
+  "id": "p43",
+  "question": "Identify the misspelt word:",
+  "options": [
+   "recieve",
+   "believe",
+   "achieve",
+   "grieve"
+  ],
+  "answer": "recieve",
+  "explanation": "'Receive' follows 'i before e except after c'.",
+  "topic": "punctuation-mastery"
+ },
+ {
+  "id": "p44",
+  "question": "Choose the correct preposition: 'She is interested ___ music.'",
+  "options": [
+   "in",
+   "on",
+   "at",
+   "for"
+  ],
+  "answer": "in",
+  "explanation": "'Interested in' is the correct collocation.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p45",
+  "question": "The phrase 'at the eleventh hour' means:",
+  "options": [
+   "at the last moment",
+   "at noon",
+   "very early",
+   "at 11 o'clock"
+  ],
+  "answer": "at the last moment",
+  "explanation": "It means just in time, at the last minute.",
+  "topic": "figurative-language"
+ },
+ {
+  "id": "p46",
+  "question": "Which word is an adjective in: 'The quick brown fox jumps.'",
+  "options": [
+   "quick",
+   "brown",
+   "fox",
+   "jumps"
+  ],
+  "answer": "quick",
+  "explanation": "'Quick' and 'brown' are adjectives; choose the clearest: 'quick'.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p47",
+  "question": "Choose the correct form: 'If I ___ you, I would apologise.'",
+  "options": [
+   "were",
+   "was",
+   "am",
+   "be"
+  ],
+  "answer": "were",
+  "explanation": "In the subjunctive, 'were' is used with 'if I'.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p48",
+  "question": "The root word in 'transportation' is:",
+  "options": [
+   "port",
+   "trans",
+   "tion",
+   "transpor"
+  ],
+  "answer": "port",
+  "explanation": "'Port' (to carry) is the root; trans- and -tion are affixes.",
+  "topic": "synonyms-antonyms"
+ },
+ {
+  "id": "p49",
+  "question": "Which of these is an example of alliteration?",
+  "options": [
+   "Peter picked a peck of pickled peppers",
+   "He is as strong as an ox",
+   "The world is a stage",
+   "I've told you a million times"
+  ],
+  "answer": "Peter picked a peck of pickled peppers",
+  "explanation": "Repeated initial consonant 'p'.",
+  "topic": "figurative-language"
+ },
+ {
+  "id": "p50",
+  "question": "What is the plural of 'child'?",
+  "options": [
+   "children",
+   "childs",
+   "childes",
+   "childrens"
+  ],
+  "answer": "children",
+  "explanation": "'Child' is irregular; plural is 'children'.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p51",
+  "question": "Choose the correctly punctuated sentence:",
+  "options": [
+   "He asked, 'Where are you going?'",
+   "He asked 'Where are you going'?",
+   "He asked where are you going?",
+   "'Where are you going?' he asked."
+  ],
+  "answer": "He asked, 'Where are you going?'",
+  "explanation": "Quoted question keeps the question mark inside quotes.",
+  "topic": "punctuation-mastery"
+ },
+ {
+  "id": "p52",
+  "question": "The word 'diligent' means:",
+  "options": [
+   "hardworking",
+   "lazy",
+   "careless",
+   "angry"
+  ],
+  "answer": "hardworking",
+  "explanation": "'Diligent' means showing care and effort.",
+  "topic": "synonyms-antonyms"
+ },
+ {
+  "id": "p53",
+  "question": "Which sentence has correct subject-verb agreement?",
+  "options": [
+   "The list of items is on the desk.",
+   "The list of items are on the desk.",
+   "The items of the list is on the desk.",
+   "The list with items are on the desk."
+  ],
+  "answer": "The list of items is on the desk.",
+  "explanation": "The subject is 'list' (singular), so 'is'.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p54",
+  "question": "Identify the onomatopoeia:",
+  "options": [
+   "buzz",
+   "run",
+   "think",
+   "sleep"
+  ],
+  "answer": "buzz",
+  "explanation": "'Buzz' imitates the sound it names.",
+  "topic": "figurative-language"
+ },
+ {
+  "id": "p55",
+  "question": "What is the purpose of a topic sentence in a paragraph?",
+  "options": [
+   "to state the main idea",
+   "to give an example",
+   "to conclude the paragraph",
+   "to ask a question"
+  ],
+  "answer": "to state the main idea",
+  "explanation": "A topic sentence expresses the paragraph's main idea.",
+  "topic": "identifying-main-points"
+ },
+ {
+  "id": "p56",
+  "question": "The opposite of 'transparent' is:",
+  "options": [
+   "opaque",
+   "clear",
+   "translucent",
+   "visible"
+  ],
+  "answer": "opaque",
+  "explanation": "'Opaque' means not allowing light through.",
+  "topic": "synonyms-antonyms"
+ },
+ {
+  "id": "p57",
+  "question": "Choose the correct form: 'He does not ___ football.'",
+  "options": [
+   "play",
+   "plays",
+   "playing",
+   "played"
+  ],
+  "answer": "play",
+  "explanation": "After 'does not', use the base form.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p58",
+  "question": "Which word is a verb in: 'She gave a brilliant performance.'",
+  "options": [
+   "gave",
+   "brilliant",
+   "performance",
+   "she"
+  ],
+  "answer": "gave",
+  "explanation": "'Gave' is the action word.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p59",
+  "question": "The comma in 'After dinner, we went home' is used to:",
+  "options": [
+   "separate an introductory phrase",
+   "list items",
+   "join sentences",
+   "show possession"
+  ],
+  "answer": "separate an introductory phrase",
+  "explanation": "A comma follows the introductory phrase 'After dinner'.",
+  "topic": "punctuation-mastery"
+ },
+ {
+  "id": "p60",
+  "question": "What does the proverb 'Actions speak louder than words' mean?",
+  "options": [
+   "what you do matters more than what you say",
+   "talking is important",
+   "listen before acting",
+   "words are powerful"
+  ],
+  "answer": "what you do matters more than what you say",
+  "explanation": "It emphasises deeds over promises.",
+  "topic": "figurative-language"
+ },
+ {
+  "id": "p61",
+  "question": "Which of the following is a compound word?",
+  "options": [
+   "rainbow",
+   "happily",
+   "quickly",
+   "teacher"
+  ],
+  "answer": "rainbow",
+  "explanation": "'Rainbow' = rain + bow.",
+  "topic": "synonyms-antonyms"
+ },
+ {
+  "id": "p62",
+  "question": "Choose the best conjunction: 'Study hard ___ you will fail.'",
+  "options": [
+   "or",
+   "and",
+   "but",
+   "so"
+  ],
+  "answer": "or",
+  "explanation": "'Or' presents the alternative consequence.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p63",
+  "question": "Identify the error: 'The team were playing well when the rain came.' (In formal writing, 'team' as a unit is...)",
+  "options": [
+   "singular — should be 'was'",
+   "correct as written",
+   "plural always",
+   "uncountable"
+  ],
+  "answer": "singular — should be 'was'",
+  "explanation": "As a collective unit, 'team' takes a singular verb in formal usage.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p64",
+  "question": "The word 'ambiguous' means:",
+  "options": [
+   "having more than one possible meaning",
+   "clearly defined",
+   "very short",
+   "extremely loud"
+  ],
+  "answer": "having more than one possible meaning",
+  "explanation": "'Ambiguous' means open to more than one interpretation.",
+  "topic": "synonyms-antonyms"
+ },
+ {
+  "id": "p65",
+  "question": "Which sentence uses the semicolon correctly?",
+  "options": [
+   "She was tired; nevertheless, she continued.",
+   "She was tired; and continued.",
+   "She was; tired but continued.",
+   "She was tired; therefore."
+  ],
+  "answer": "She was tired; nevertheless, she continued.",
+  "explanation": "Semicolons join related independent clauses.",
+  "topic": "punctuation-mastery"
+ },
+ {
+  "id": "p66",
+  "question": "Choose the correct form: 'This is the book ___ I told you about.'",
+  "options": [
+   "which",
+   "who",
+   "whom",
+   "whose"
+  ],
+  "answer": "which",
+  "explanation": "'Which' refers to things (the book).",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p67",
+  "question": "What is the comparative form of 'good'?",
+  "options": [
+   "better",
+   "gooder",
+   "more good",
+   "best"
+  ],
+  "answer": "better",
+  "explanation": "Irregular comparative: good → better.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p68",
+  "question": "The suffix '-ology' means:",
+  "options": [
+   "study of",
+   "fear of",
+   "full of",
+   "without"
+  ],
+  "answer": "study of",
+  "explanation": "E.g. biology = study of life.",
+  "topic": "synonyms-antonyms"
+ },
+ {
+  "id": "p69",
+  "question": "Identify the hyperbole: 'I'm so hungry I could eat a horse.'",
+  "options": [
+   "hyperbole",
+   "simile",
+   "metaphor",
+   "irony"
+  ],
+  "answer": "hyperbole",
+  "explanation": "Deliberate exaggeration for effect.",
+  "topic": "figurative-language"
+ },
+ {
+  "id": "p70",
+  "question": "Choose the correct pronoun: 'The prize was given to Maria and ___.'",
+  "options": [
+   "me",
+   "I",
+   "myself",
+   "mine"
+  ],
+  "answer": "me",
+  "explanation": "Object of the preposition 'to' → object pronoun 'me'.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p71",
+  "question": "The word 'courteous' most nearly means:",
+  "options": [
+   "polite",
+   "rude",
+   "quiet",
+   "bold"
+  ],
+  "answer": "polite",
+  "explanation": "'Courteous' means polite and respectful.",
+  "topic": "synonyms-antonyms"
+ },
+ {
+  "id": "p72",
+  "question": "Which is the correct spelling?",
+  "options": [
+   "necessary",
+   "neccessary",
+   "necesary",
+   "necessery"
+  ],
+  "answer": "necessary",
+  "explanation": "'Necessary' — one c, double s.",
+  "topic": "punctuation-mastery"
+ },
+ {
+  "id": "p73",
+  "question": "What type of sentence is: 'What a beautiful sunset!'",
+  "options": [
+   "exclamatory",
+   "interrogative",
+   "imperative",
+   "declarative"
+  ],
+  "answer": "exclamatory",
+  "explanation": "It expresses strong emotion with '!'.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p74",
+  "question": "Choose the correct form: 'Each of the students ___ a book.'",
+  "options": [
+   "has",
+   "have",
+   "were",
+   "are"
+  ],
+  "answer": "has",
+  "explanation": "'Each' is singular → 'has'.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p75",
+  "question": "The idiom 'break the ice' means:",
+  "options": [
+   "to start a conversation to reduce tension",
+   "to break something frozen",
+   "to be cold",
+   "to end a friendship"
+  ],
+  "answer": "to start a conversation to reduce tension",
+  "explanation": "It means to make people feel more comfortable.",
+  "topic": "figurative-language"
+ },
+ {
+  "id": "p76",
+  "question": "Which word is the odd one out?",
+  "options": [
+   "blue",
+   "green",
+   "guitar",
+   "red"
+  ],
+  "answer": "guitar",
+  "explanation": "Guitar is an object; the others are colours.",
+  "topic": "literal-meaning"
+ },
+ {
+  "id": "p77",
+  "question": "Which option contains no grammatical error?",
+  "options": [
+   "The data are sufficient.",
+   "The data is sufficient.",
+   "The datas are sufficient.",
+   "The data's sufficient."
+  ],
+  "answer": "The data is sufficient.",
+  "explanation": "'Data' is commonly treated as singular mass noun in modern usage.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p78",
+  "question": "The word 'fragile' means:",
+  "options": [
+   "easily broken",
+   "very strong",
+   "heavy",
+   "expensive"
+  ],
+  "answer": "easily broken",
+  "explanation": "'Fragile' means delicate and easily damaged.",
+  "topic": "synonyms-antonyms"
+ },
+ {
+  "id": "p79",
+  "question": "Identify the error: 'He don't like coffee.'",
+  "options": [
+   "don't should be doesn't",
+   "like should be likes",
+   "He should be Him",
+   "no error"
+  ],
+  "answer": "don't should be doesn't",
+  "explanation": "Third-person singular requires 'doesn't'.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p80",
+  "question": "Which of the following is a complex sentence?",
+  "options": [
+   "When the bell rang, the students left.",
+   "The students left.",
+   "The students left and the bell rang.",
+   "The bell rang loudly."
+  ],
+  "answer": "When the bell rang, the students left.",
+  "explanation": "Dependent clause + independent clause.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p81",
+  "question": "What does the prefix 'anti-' mean?",
+  "options": [
+   "against",
+   "before",
+   "after",
+   "with"
+  ],
+  "answer": "against",
+  "explanation": "'Anti-' means against (e.g. anti-war).",
+  "topic": "synonyms-antonyms"
+ },
+ {
+  "id": "p82",
+  "question": "Choose the correct form: 'She sings ___ than her sister.'",
+  "options": [
+   "better",
+   "good",
+   "well",
+   "best"
+  ],
+  "answer": "better",
+  "explanation": "Comparative of 'well' is 'better'.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p83",
+  "question": "The phrase 'once in a blue moon' means:",
+  "options": [
+   "rarely",
+   "often",
+   "always",
+   "every month"
+  ],
+  "answer": "rarely",
+  "explanation": "It means very rarely.",
+  "topic": "figurative-language"
+ },
+ {
+  "id": "p84",
+  "question": "Which sentence uses 'their' correctly?",
+  "options": [
+   "They left their books at home.",
+   "Their going to the park.",
+   "The dog wagged their tail.",
+   "Their is a car outside."
+  ],
+  "answer": "They left their books at home.",
+  "explanation": "'Their' shows possession by 'they'.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p85",
+  "question": "Identify the simile: 'Her smile was like sunshine.'",
+  "options": [
+   "simile",
+   "metaphor",
+   "personification",
+   "alliteration"
+  ],
+  "answer": "simile",
+  "explanation": "Uses 'like' to compare.",
+  "topic": "figurative-language"
+ },
+ {
+  "id": "p86",
+  "question": "The word 'deficient' means:",
+  "options": [
+   "lacking",
+   "abundant",
+   "sufficient",
+   "excessive"
+  ],
+  "answer": "lacking",
+  "explanation": "'Deficient' means not enough of something.",
+  "topic": "synonyms-antonyms"
+ },
+ {
+  "id": "p87",
+  "question": "Choose the correct punctuation: 'We visited Paris France and London England.'",
+  "options": [
+   "We visited Paris, France, and London, England.",
+   "We visited Paris France and London England.",
+   "We visited Paris, France and London England.",
+   "We visited Paris France, and London, England."
+  ],
+  "answer": "We visited Paris, France, and London, England.",
+  "explanation": "Commas separate city and country pairs.",
+  "topic": "punctuation-mastery"
+ },
+ {
+  "id": "p88",
+  "question": "What is the superlative form of 'bad'?",
+  "options": [
+   "worst",
+   "badder",
+   "more bad",
+   "baddest"
+  ],
+  "answer": "worst",
+  "explanation": "Irregular: bad → worse → worst.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p89",
+  "question": "Which word is a determiner?",
+  "options": [
+   "this",
+   "quickly",
+   "run",
+   "beautiful"
+  ],
+  "answer": "this",
+  "explanation": "'This' points to a noun; the others are adverb, verb, adjective.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p90",
+  "question": "The phrase 'the calm before the storm' refers to:",
+  "options": [
+   "a quiet period before trouble",
+   "weather forecasting",
+   "a peaceful storm",
+   "a loud silence"
+  ],
+  "answer": "a quiet period before trouble",
+  "explanation": "It means a peaceful moment before problems begin.",
+  "topic": "figurative-language"
+ },
+ {
+  "id": "p91",
+  "question": "Choose the correct form: 'I wish I ___ more time.'",
+  "options": [
+   "had",
+   "have",
+   "will have",
+   "am having"
+  ],
+  "answer": "had",
+  "explanation": "After 'I wish' about the present, use past tense 'had'.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p92",
+  "question": "The word 'persuade' means to:",
+  "options": [
+   "convince",
+   "confuse",
+   "prevent",
+   "permit"
+  ],
+  "answer": "convince",
+  "explanation": "'Persuade' means to convince someone.",
+  "topic": "argument-structure"
+ },
+ {
+  "id": "p93",
+  "question": "Which sentence is in the present continuous tense?",
+  "options": [
+   "She is reading now.",
+   "She reads daily.",
+   "She read yesterday.",
+   "She has read."
+  ],
+  "answer": "She is reading now.",
+  "explanation": "'is reading' = present continuous.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p94",
+  "question": "Identify the direct object in: 'John threw the ball.'",
+  "options": [
+   "the ball",
+   "John",
+   "threw",
+   "the"
+  ],
+  "answer": "the ball",
+  "explanation": "The ball receives the action of the verb.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p95",
+  "question": "What does 'sincerely' indicate in a letter?",
+  "options": [
+   "the closing of a formal letter",
+   "the greeting",
+   "the address",
+   "the date"
+  ],
+  "answer": "the closing of a formal letter",
+  "explanation": "'Yours sincerely' closes formal letters.",
+  "topic": "plot-structure"
+ },
+ {
+  "id": "p96",
+  "question": "Choose the correct form: 'There ___ many reasons for this.'",
+  "options": [
+   "are",
+   "is",
+   "was",
+   "be"
+  ],
+  "answer": "are",
+  "explanation": "'Reasons' is plural → 'are'.",
+  "topic": "subject-verb-agreement"
+ },
+ {
+  "id": "p97",
+  "question": "The word 'rural' describes:",
+  "options": [
+   "the countryside",
+   "the city",
+   "the coast",
+   "the desert"
+  ],
+  "answer": "the countryside",
+  "explanation": "'Rural' relates to country areas.",
+  "topic": "literal-meaning"
+ },
+ {
+  "id": "p98",
+  "question": "Which of the following is a proper noun?",
+  "options": [
+   "Mount Kilimanjaro",
+   "mountain",
+   "river",
+   "city"
+  ],
+  "answer": "Mount Kilimanjaro",
+  "explanation": "It names a specific place and is capitalised.",
+  "topic": "literal-meaning"
+ },
+ {
+  "id": "p99",
+  "question": "Select the sentence with correct capitalization:",
+  "options": [
+   "We visited the Eiffel Tower in Paris.",
+   "We visited the eiffel tower in paris.",
+   "We visited The Eiffel Tower in Paris.",
+   "We visited the Eiffel tower in paris."
+  ],
+  "answer": "We visited the Eiffel Tower in Paris.",
+  "explanation": "Proper nouns: Eiffel Tower and Paris are capitalised.",
+  "topic": "punctuation-mastery"
+ },
+ {
+  "id": "p100",
+  "question": "The word 'reluctant' means:",
+  "options": [
+   "unwilling",
+   "eager",
+   "quick",
+   "happy"
+  ],
+  "answer": "unwilling",
+  "explanation": "'Reluctant' means hesitant or unwilling.",
+  "topic": "synonyms-antonyms"
+ }
 ]

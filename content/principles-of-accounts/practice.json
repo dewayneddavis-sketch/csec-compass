@@ -1,1202 +1,1302 @@
 [
-  {
-    "id": "p1",
-    "question": "The 'Business Entity' concept states that:",
-    "options": [
-      "A business will continue forever",
-      "Transactions are recorded when cash is paid",
-      "The business and owner are separate entities",
-      "Assets must equal liabilities"
-    ],
-    "answer": "The business and owner are separate entities",
-    "explanation": "This principle ensures that the owner's personal finances are not mixed with those of the business."
-  },
-  {
-    "id": "p2",
-    "question": "If a business has Assets of $50,000 and Capital of $30,000, what are its Liabilities?",
-    "options": [
-      "$80,000",
-      "$30,000",
-      "$20,000",
-      "$50,000"
-    ],
-    "answer": "$20,000",
-    "explanation": "Accounting Equation: Assets = Liabilities + Capital. So, 50,000 = L + 30,000; L = 20,000."
-  },
-  {
-    "id": "p3",
-    "question": "Which of the following describes the rule for recording an increase in an asset?",
-    "options": [
-      "Debit the asset account",
-      "Credit the asset account",
-      "Debit the capital account",
-      "Credit the liability account"
-    ],
-    "answer": "Debit the asset account",
-    "explanation": "Increases in assets and expenses are always recorded as debits (left side)."
-  },
-  {
-    "id": "p4",
-    "question": "A business pays its rent by check. Which two accounts are affected?",
-    "options": [
-      "Rent and Cash",
-      "Rent and Bank",
-      "Rent and Capital",
-      "Bank and Cash"
-    ],
-    "answer": "Rent and Bank",
-    "explanation": "The Rent account (expense) increases (debit) and the Bank account (asset) decreases (credit)."
-  },
-  {
-    "id": "p5",
-    "question": "Which book of original entry is used to record credit sales?",
-    "options": [
-      "Cash Book",
-      "General Journal",
-      "Sales Journal",
-      "Purchases Journal"
-    ],
-    "answer": "Sales Journal",
-    "explanation": "The Sales Journal specifically records all goods sold on credit to customers."
-  },
-  {
-    "id": "p6",
-    "question": "A 'Contra Entry' in a three-column cash book involves:",
-    "options": [
-      "Cash and Discounts",
-      "Bank and Discounts",
-      "Cash and Bank",
-      "Sales and Purchases"
-    ],
-    "answer": "Cash and Bank",
-    "explanation": "Contra entries occur when cash is deposited into or withdrawn from the bank, affecting both columns."
-  },
-  {
-    "id": "p7",
-    "question": "What is the primary purpose of a Trial Balance?",
-    "options": [
-      "To calculate net profit",
-      "To check the arithmetical accuracy of the ledger",
-      "To list all the assets of the business",
-      "To show the financial position"
-    ],
-    "answer": "To check the arithmetical accuracy of the ledger",
-    "explanation": "A Trial Balance ensures that total debits equal total credits before preparing final statements."
-  },
-  {
-    "id": "p8",
-    "question": "Recording the purchase of a motor vehicle as a 'repairs expense' is an example of an error of:",
-    "options": [
-      "Omission",
-      "Commission",
-      "Principle",
-      "Original Entry"
-    ],
-    "answer": "Principle",
-    "explanation": "An error of principle occurs when a transaction is recorded in the wrong class of account (asset vs expense)."
-  },
-  {
-    "id": "p9",
-    "question": "An 'Accrued Expense' at the end of the year is classified as a:",
-    "options": [
-      "Current Asset",
-      "Non-current Asset",
-      "Current Liability",
-      "Non-current Liability"
-    ],
-    "answer": "Current Liability",
-    "explanation": "An accrual is an amount owed for an expense already incurred, so it is a short-term debt."
-  },
-  {
-    "id": "p10",
-    "question": "Calculate the annual depreciation of a machine costing $10,000 with a residual value of $1,000 and a life of 5 years (Straight Line).",
-    "options": [
-      "$2,000",
-      "$1,800",
-      "$1,500",
-      "$2,200"
-    ],
-    "answer": "$1,800",
-    "explanation": "Depreciation = (Cost - Residual Value) / Life = (10,000 - 1,000) / 5 = $1,800."
-  },
-  {
-    "id": "p11",
-    "question": "Gross Profit is calculated as:",
-    "options": [
-      "Sales - Expenses",
-      "Sales - Cost of Goods Sold",
-      "Sales + Other Income",
-      "Assets - Liabilities"
-    ],
-    "answer": "Sales - Cost of Goods Sold",
-    "explanation": "Gross Profit is the profit made solely from the trading activities of the business."
-  },
-  {
-    "id": "p12",
-    "question": "Which of the following is a 'Current Asset'?",
-    "options": [
-      "Machinery",
-      "Long-term Loan",
-      "Inventory",
-      "Accounts Payable"
-    ],
-    "answer": "Inventory",
-    "explanation": "Current assets are those expected to be converted into cash within one year, like inventory (stock)."
-  },
-  {
-    "id": "p13",
-    "question": "The accounting equation is:",
-    "options": [
-      "Assets = Liabilities + Capital",
-      "Assets = Liabilities - Capital",
-      "Capital = Assets + Liabilities",
-      "Liabilities = Assets + Capital"
-    ],
-    "answer": "Assets = Liabilities + Capital",
-    "explanation": "Assets are financed by liabilities and owner's capital."
-  },
-  {
-    "id": "p14",
-    "question": "If assets are $80,000 and liabilities are $25,000, the capital is:",
-    "options": [
-      "$55,000",
-      "$105,000",
-      "$25,000",
-      "$80,000"
-    ],
-    "answer": "$55,000",
-    "explanation": "Capital = Assets - Liabilities = 80,000 - 25,000 = 55,000."
-  },
-  {
-    "id": "p15",
-    "question": "Which of the following is a liability?",
-    "options": [
-      "Bank loan",
-      "Cash",
-      "Inventory",
-      "Equipment"
-    ],
-    "answer": "Bank loan",
-    "explanation": "A loan is money owed to others."
-  },
-  {
-    "id": "p16",
-    "question": "An asset that is expected to be used for more than one year is a:",
-    "options": [
-      "non-current asset",
-      "current asset",
-      "liability",
-      "expense"
-    ],
-    "answer": "non-current asset",
-    "explanation": "Non-current assets provide long-term benefit."
-  },
-  {
-    "id": "p17",
-    "question": "Which of the following is a current asset?",
-    "options": [
-      "Accounts receivable",
-      "Motor vehicle",
-      "Land",
-      "Buildings"
-    ],
-    "answer": "Accounts receivable",
-    "explanation": "Receivables are converted to cash within a year."
-  },
-  {
-    "id": "p18",
-    "question": "The accounting concept that states a business is separate from its owner is:",
-    "options": [
-      "business entity",
-      "going concern",
-      "prudence",
-      "materiality"
-    ],
-    "answer": "business entity",
-    "explanation": "The business entity concept separates business and personal affairs."
-  },
-  {
-    "id": "p19",
-    "question": "Under the 'going concern' concept, a business is assumed to:",
-    "options": [
-      "continue operating indefinitely",
-      "close immediately",
-      "be sold",
-      "make losses"
-    ],
-    "answer": "continue operating indefinitely",
-    "explanation": "Financial statements assume ongoing operations."
-  },
-  {
-    "id": "p20",
-    "question": "The 'prudence' concept means:",
-    "options": [
-      "not overstating assets or income",
-      "recording all expenses twice",
-      "ignoring losses",
-      "overstating profits"
-    ],
-    "answer": "not overstating assets or income",
-    "explanation": "Prudence avoids overstating assets/income and understating liabilities."
-  },
-  {
-    "id": "p21",
-    "question": "In double entry, every transaction is recorded:",
-    "options": [
-      "twice, once as debit and once as credit",
-      "once only",
-      "three times",
-      "in the cash book only"
-    ],
-    "answer": "twice, once as debit and once as credit",
-    "explanation": "Double entry: equal debits and credits."
-  },
-  {
-    "id": "p22",
-    "question": "An increase in an asset is recorded as a:",
-    "options": [
-      "debit",
-      "credit",
-      "journal",
-      "trial balance"
-    ],
-    "answer": "debit",
-    "explanation": "Assets increase on the debit side."
-  },
-  {
-    "id": "p23",
-    "question": "An increase in a liability is recorded as a:",
-    "options": [
-      "credit",
-      "debit",
-      "transfer",
-      "return"
-    ],
-    "answer": "credit",
-    "explanation": "Liabilities increase on the credit side."
-  },
-  {
-    "id": "p24",
-    "question": "An increase in capital is recorded as a:",
-    "options": [
-      "credit",
-      "debit",
-      "receipt",
-      "loss"
-    ],
-    "answer": "credit",
-    "explanation": "Capital increases on the credit side."
-  },
-  {
-    "id": "p25",
-    "question": "A business buys goods on credit. The double entry is:",
-    "options": [
-      "debit Purchases, credit Payables",
-      "debit Payables, credit Purchases",
-      "debit Cash, credit Sales",
-      "debit Sales, credit Cash"
-    ],
-    "answer": "debit Purchases, credit Payables",
-    "explanation": "Purchases increase (debit) and the amount owed increases (credit)."
-  },
-  {
-    "id": "p26",
-    "question": "Cash sales of $500 are recorded as:",
-    "options": [
-      "debit Cash, credit Sales",
-      "debit Sales, credit Cash",
-      "debit Cash, credit Purchases",
-      "debit Bank, credit Payables"
-    ],
-    "answer": "debit Cash, credit Sales",
-    "explanation": "Cash increases (debit) and sales revenue increases (credit)."
-  },
-  {
-    "id": "p27",
-    "question": "A payment of $300 to a creditor is recorded as:",
-    "options": [
-      "debit Payables, credit Bank",
-      "debit Bank, credit Payables",
-      "debit Cash, credit Sales",
-      "debit Purchases, credit Bank"
-    ],
-    "answer": "debit Payables, credit Bank",
-    "explanation": "Paying reduces the amount owed (debit) and reduces cash (credit)."
-  },
-  {
-    "id": "p28",
-    "question": "The book of original entry for credit sales is the:",
-    "options": [
-      "sales journal",
-      "cash book",
-      "general journal",
-      "purchases journal"
-    ],
-    "answer": "sales journal",
-    "explanation": "Credit sales are first recorded in the sales journal."
-  },
-  {
-    "id": "p29",
-    "question": "The purchases journal records:",
-    "options": [
-      "credit purchases",
-      "cash purchases",
-      "credit sales",
-      "returns inwards"
-    ],
-    "answer": "credit purchases",
-    "explanation": "Credit purchases are recorded in the purchases journal."
-  },
-  {
-    "id": "p30",
-    "question": "Which document is issued when goods are returned by a customer?",
-    "options": [
-      "Credit note",
-      "Debit note",
-      "Invoice",
-      "Receipt"
-    ],
-    "answer": "Credit note",
-    "explanation": "A credit note reduces what the customer owes."
-  },
-  {
-    "id": "p31",
-    "question": "A 'debit note' is issued to:",
-    "options": [
-      "request an adjustment for overcharge or returns",
-      "confirm a sale",
-      "record cash received",
-      "pay wages"
-    ],
-    "answer": "request an adjustment for overcharge or returns",
-    "explanation": "Debit notes notify suppliers of returns/overcharges."
-  },
-  {
-    "id": "p32",
-    "question": "The petty cash book is used to record:",
-    "options": [
-      "small cash payments",
-      "credit sales",
-      "large bank transfers",
-      "depreciation"
-    ],
-    "answer": "small cash payments",
-    "explanation": "Petty cash covers minor day-to-day expenses."
-  },
-  {
-    "id": "p33",
-    "question": "The imprest system of petty cash means:",
-    "options": [
-      "the float is restored to a fixed amount",
-      "no cash is used",
-      "all payments are large",
-      "cash is never counted"
-    ],
-    "answer": "the float is restored to a fixed amount",
-    "explanation": "Under imprest, the float is topped up to the fixed amount."
-  },
-  {
-    "id": "p34",
-    "question": "A 'contra entry' occurs when:",
-    "options": [
-      "cash is transferred to the bank",
-      "a sale is made",
-      "goods are returned",
-      "wages are paid"
-    ],
-    "answer": "cash is transferred to the bank",
-    "explanation": "Contra entries appear in both cash and bank columns of the cash book."
-  },
-  {
-    "id": "p35",
-    "question": "The cash book serves as:",
-    "options": [
-      "both a book of original entry and a ledger account",
-      "only a journal",
-      "only a ledger",
-      "a financial statement"
-    ],
-    "answer": "both a book of original entry and a ledger account",
-    "explanation": "The cash book is both journal and ledger for cash/bank."
-  },
-  {
-    "id": "p36",
-    "question": "A bank overdraft is a:",
-    "options": [
-      "liability",
-      "current asset",
-      "fixed asset",
-      "capital"
-    ],
-    "answer": "liability",
-    "explanation": "An overdraft is money owed to the bank."
-  },
-  {
-    "id": "p37",
-    "question": "When a cheque received from a customer is dishonoured, it is:",
-    "options": [
-      "debited to the customer's account",
-      "credited to the bank",
-      "recorded as profit",
-      "ignored"
-    ],
-    "answer": "debited to the customer's account",
-    "explanation": "The receivable is reinstated with a debit."
-  },
-  {
-    "id": "p38",
-    "question": "Which of the following is an expense?",
-    "options": [
-      "Rent paid",
-      "Inventory",
-      "Equipment",
-      "Cash"
-    ],
-    "answer": "Rent paid",
-    "explanation": "Rent is a cost of running the business."
-  },
-  {
-    "id": "p39",
-    "question": "Salaries paid in cash are recorded as:",
-    "options": [
-      "debit Salaries, credit Cash",
-      "debit Cash, credit Salaries",
-      "debit Capital, credit Cash",
-      "debit Sales, credit Cash"
-    ],
-    "answer": "debit Salaries, credit Cash",
-    "explanation": "Expenses increase (debit) and cash decreases (credit)."
-  },
-  {
-    "id": "p40",
-    "question": "The trial balance is prepared to:",
-    "options": [
-      "check the equality of debits and credits",
-      "calculate profit",
-      "prepare the cash book",
-      "record transactions"
-    ],
-    "answer": "check the equality of debits and credits",
-    "explanation": "The trial balance summarises ledger balances."
-  },
-  {
-    "id": "p41",
-    "question": "If total debits exceed total credits in the trial balance, the difference is:",
-    "options": [
-      "a debit balance",
-      "a credit balance",
-      "profit",
-      "loss"
-    ],
-    "answer": "a debit balance",
-    "explanation": "The difference is placed on the smaller side to balance."
-  },
-  {
-    "id": "p42",
-    "question": "Which error does NOT affect the trial balance?",
-    "options": [
-      "Error of omission",
-      "Posting to the wrong account",
-      "Recording on the wrong side",
-      "Transposition error"
-    ],
-    "answer": "Error of omission",
-    "explanation": "Errors that keep debits = credits, like omission, do not affect the TB."
-  },
-  {
-    "id": "p43",
-    "question": "An 'error of commission' is when:",
-    "options": [
-      "a transaction is posted to the wrong account of the same class",
-      "a transaction is completely omitted",
-      "the wrong amount is recorded",
-      "both sides are overstated"
-    ],
-    "answer": "a transaction is posted to the wrong account of the same class",
-    "explanation": "Commission errors use the wrong account of the same category."
-  },
-  {
-    "id": "p44",
-    "question": "An 'error of principle' occurs when:",
-    "options": [
-      "an item is posted to the wrong class of account",
-      "a transaction is omitted",
-      "the wrong amount is recorded",
-      "arithmetic is incorrect"
-    ],
-    "answer": "an item is posted to the wrong class of account",
-    "explanation": "Principle errors violate accounting rules (e.g. asset as expense)."
-  },
-  {
-    "id": "p45",
-    "question": "A suspense account is used to:",
-    "options": [
-      "temporarily hold a trial balance difference",
-      "record profits",
-      "pay dividends",
-      "record cash sales"
-    ],
-    "answer": "temporarily hold a trial balance difference",
-    "explanation": "Suspense accounts hold differences pending correction."
-  },
-  {
-    "id": "p46",
-    "question": "Gross profit is calculated as:",
-    "options": [
-      "Sales - Cost of Sales",
-      "Sales - Expenses",
-      "Sales + Returns",
-      "Net profit + Drawings"
-    ],
-    "answer": "Sales - Cost of Sales",
-    "explanation": "Gross profit = sales less cost of goods sold."
-  },
-  {
-    "id": "p47",
-    "question": "Cost of sales is calculated as:",
-    "options": [
-      "Opening stock + Purchases - Closing stock",
-      "Purchases - Sales",
-      "Opening stock - Purchases + Closing stock",
-      "Sales - Net profit"
-    ],
-    "answer": "Opening stock + Purchases - Closing stock",
-    "explanation": "COS = opening stock + purchases - closing stock."
-  },
-  {
-    "id": "p48",
-    "question": "If sales are $50,000 and cost of sales is $35,000, the gross profit is:",
-    "options": [
-      "$15,000",
-      "$85,000",
-      "$50,000",
-      "$35,000"
-    ],
-    "answer": "$15,000",
-    "explanation": "50,000 - 35,000 = 15,000."
-  },
-  {
-    "id": "p49",
-    "question": "Net profit is:",
-    "options": [
-      "gross profit less expenses",
-      "gross profit plus expenses",
-      "sales less purchases",
-      "assets less liabilities"
-    ],
-    "answer": "gross profit less expenses",
-    "explanation": "Net profit = gross profit - operating expenses."
-  },
-  {
-    "id": "p50",
-    "question": "Which account appears in the Trading Account?",
-    "options": [
-      "Sales",
-      "Rent",
-      "Salaries",
-      "Insurance"
-    ],
-    "answer": "Sales",
-    "explanation": "The trading account shows sales and cost of sales."
-  },
-  {
-    "id": "p51",
-    "question": "Closing stock is valued at:",
-    "options": [
-      "cost or net realisable value, whichever is lower",
-      "selling price always",
-      "cost price only",
-      "market price always"
-    ],
-    "answer": "cost or net realisable value, whichever is lower",
-    "explanation": "Prudence requires the lower of cost or NRV."
-  },
-  {
-    "id": "p52",
-    "question": "Carriage inwards is:",
-    "options": [
-      "added to purchases",
-      "deducted from sales",
-      "an expense only",
-      "a liability"
-    ],
-    "answer": "added to purchases",
-    "explanation": "Carriage inwards is part of cost of purchases."
-  },
-  {
-    "id": "p53",
-    "question": "Carriage outwards is:",
-    "options": [
-      "an expense in the Profit and Loss account",
-      "added to purchases",
-      "deducted from sales",
-      "a non-current asset"
-    ],
-    "answer": "an expense in the Profit and Loss account",
-    "explanation": "Carriage outwards is a selling/distribution expense."
-  },
-  {
-    "id": "p54",
-    "question": "Which of the following is a fixed asset?",
-    "options": [
-      "Buildings",
-      "Inventory",
-      "Bank",
-      "Debtors"
-    ],
-    "answer": "Buildings",
-    "explanation": "Buildings are long-term productive assets."
-  },
-  {
-    "id": "p55",
-    "question": "Depreciation is:",
-    "options": [
-      "the allocation of a fixed asset's cost over its useful life",
-      "the purchase of assets",
-      "a current liability",
-      "cash received"
-    ],
-    "answer": "the allocation of a fixed asset's cost over its useful life",
-    "explanation": "Depreciation spreads asset cost over useful life."
-  },
-  {
-    "id": "p56",
-    "question": "The straight-line method of depreciation:",
-    "options": [
-      "charges equal depreciation each year",
-      "charges more in early years",
-      "is based on usage",
-      "never charges depreciation"
-    ],
-    "answer": "charges equal depreciation each year",
-    "explanation": "Straight-line: (cost - residual)/useful life each year."
-  },
-  {
-    "id": "p57",
-    "question": "A machine costs $10,000, residual value $1,000, useful life 5 years. Annual straight-line depreciation is:",
-    "options": [
-      "$1,800",
-      "$2,000",
-      "$1,000",
-      "$9,000"
-    ],
-    "answer": "$1,800",
-    "explanation": "(10,000 - 1,000)/5 = 1,800."
-  },
-  {
-    "id": "p58",
-    "question": "The reducing balance method:",
-    "options": [
-      "charges more depreciation in early years",
-      "charges equal amounts",
-      "charges nothing",
-      "is used only for land"
-    ],
-    "answer": "charges more depreciation in early years",
-    "explanation": "A fixed percentage is charged on the reducing book value."
-  },
-  {
-    "id": "p59",
-    "question": "Accumulated depreciation is:",
-    "options": [
-      "a contra asset account",
-      "an expense",
-      "a liability",
-      "revenue"
-    ],
-    "answer": "a contra asset account",
-    "explanation": "Accumulated depreciation reduces the book value of assets."
-  },
-  {
-    "id": "p60",
-    "question": "A bad debt is:",
-    "options": [
-      "a debt that will not be paid",
-      "a cash sale",
-      "a prepayment",
-      "an asset"
-    ],
-    "answer": "a debt that will not be paid",
-    "explanation": "Bad debts are uncollectible receivables written off."
-  },
-  {
-    "id": "p61",
-    "question": "Writing off a bad debt is recorded as:",
-    "options": [
-      "debit Bad Debts, credit Receivables",
-      "debit Receivables, credit Bad Debts",
-      "debit Cash, credit Sales",
-      "debit Sales, credit Bank"
-    ],
-    "answer": "debit Bad Debts, credit Receivables",
-    "explanation": "The receivable is removed and the expense recorded."
-  },
-  {
-    "id": "p62",
-    "question": "A provision for doubtful debts is:",
-    "options": [
-      "an estimate of receivables that may not be collected",
-      "a fixed asset",
-      "cash set aside",
-      "a loan"
-    ],
-    "answer": "an estimate of receivables that may not be collected",
-    "explanation": "The provision matches possible future losses (prudence)."
-  },
-  {
-    "id": "p63",
-    "question": "An accrued expense at year end is:",
-    "options": [
-      "a liability",
-      "an asset",
-      "revenue",
-      "capital"
-    ],
-    "answer": "a liability",
-    "explanation": "Accrued expenses are amounts owed for services used."
-  },
-  {
-    "id": "p64",
-    "question": "A prepayment at year end is:",
-    "options": [
-      "a current asset",
-      "a liability",
-      "an expense",
-      "capital"
-    ],
-    "answer": "a current asset",
-    "explanation": "Prepayments are payments made in advance — an asset."
-  },
-  {
-    "id": "p65",
-    "question": "Rent paid in advance of $1,000 is treated as:",
-    "options": [
-      "a prepayment (asset)",
-      "an accrued expense",
-      "revenue",
-      "drawings"
-    ],
-    "answer": "a prepayment (asset)",
-    "explanation": "Advance payments are prepaid expenses."
-  },
-  {
-    "id": "p66",
-    "question": "Wages owing at year end of $800 are:",
-    "options": [
-      "an accrued expense (liability)",
-      "a prepayment",
-      "income",
-      "capital"
-    ],
-    "answer": "an accrued expense (liability)",
-    "explanation": "Unpaid wages at year end are accrued expenses."
-  },
-  {
-    "id": "p67",
-    "question": "The balance sheet is also known as the:",
-    "options": [
-      "statement of financial position",
-      "income statement",
-      "cash flow statement",
-      "trial balance"
-    ],
-    "answer": "statement of financial position",
-    "explanation": "The balance sheet shows financial position at a date."
-  },
-  {
-    "id": "p68",
-    "question": "Working capital is calculated as:",
-    "options": [
-      "Current Assets - Current Liabilities",
-      "Assets + Liabilities",
-      "Capital - Drawings",
-      "Sales - Purchases"
-    ],
-    "answer": "Current Assets - Current Liabilities",
-    "explanation": "Working capital measures short-term liquidity."
-  },
-  {
-    "id": "p69",
-    "question": "If current assets are $40,000 and current liabilities are $25,000, working capital is:",
-    "options": [
-      "$15,000",
-      "$65,000",
-      "$40,000",
-      "$25,000"
-    ],
-    "answer": "$15,000",
-    "explanation": "40,000 - 25,000 = 15,000."
-  },
-  {
-    "id": "p70",
-    "question": "Capital employed is:",
-    "options": [
-      "Non-current assets + Working capital",
-      "Total assets only",
-      "Current liabilities",
-      "Drawings"
-    ],
-    "answer": "Non-current assets + Working capital",
-    "explanation": "Capital employed = total assets - current liabilities."
-  },
-  {
-    "id": "p71",
-    "question": "Which of the following is NOT a current liability?",
-    "options": [
-      "Mortgage",
-      "Creditors",
-      "Bank overdraft",
-      "Accrued expenses"
-    ],
-    "answer": "Mortgage",
-    "explanation": "A mortgage is a long-term (non-current) liability."
-  },
-  {
-    "id": "p72",
-    "question": "Owner's drawings reduce:",
-    "options": [
-      "capital",
-      "assets always",
-      "liabilities",
-      "sales"
-    ],
-    "answer": "capital",
-    "explanation": "Drawings decrease the owner's capital."
-  },
-  {
-    "id": "p73",
-    "question": "Drawings are recorded as:",
-    "options": [
-      "debit Drawings, credit Cash/Goods",
-      "credit Drawings, debit Cash",
-      "debit Capital, credit Cash",
-      "debit Sales, credit Cash"
-    ],
-    "answer": "debit Drawings, credit Cash/Goods",
-    "explanation": "Drawings increase (debit) and assets decrease (credit)."
-  },
-  {
-    "id": "p74",
-    "question": "The current ratio is:",
-    "options": [
-      "Current Assets ÷ Current Liabilities",
-      "Sales ÷ Assets",
-      "Profit ÷ Capital",
-      "Debtors ÷ Creditors"
-    ],
-    "answer": "Current Assets ÷ Current Liabilities",
-    "explanation": "Current ratio = current assets / current liabilities."
-  },
-  {
-    "id": "p75",
-    "question": "If current assets are $60,000 and current liabilities are $30,000, the current ratio is:",
-    "options": [
-      "2:1",
-      "1:2",
-      "3:1",
-      "1:1"
-    ],
-    "answer": "2:1",
-    "explanation": "60,000/30,000 = 2:1."
-  },
-  {
-    "id": "p76",
-    "question": "The acid test (quick) ratio excludes:",
-    "options": [
-      "inventory",
-      "cash",
-      "receivables",
-      "short-term investments"
-    ],
-    "answer": "inventory",
-    "explanation": "Inventory is excluded as the least liquid current asset."
-  },
-  {
-    "id": "p77",
-    "question": "Gross profit percentage is:",
-    "options": [
-      "Gross profit ÷ Sales × 100",
-      "Net profit ÷ Sales",
-      "Sales ÷ Gross profit",
-      "Purchases ÷ Sales"
-    ],
-    "answer": "Gross profit ÷ Sales × 100",
-    "explanation": "Gross profit margin = GP/Sales × 100%."
-  },
-  {
-    "id": "p78",
-    "question": "Net profit margin measures:",
-    "options": [
-      "the profit left after expenses per dollar of sales",
-      "gross profit",
-      "liquidity",
-      "asset turnover"
-    ],
-    "answer": "the profit left after expenses per dollar of sales",
-    "explanation": "Net margin = Net profit/Sales × 100%."
-  },
-  {
-    "id": "p79",
-    "question": "Return on capital employed (ROCE) is:",
-    "options": [
-      "Net profit ÷ Capital employed × 100",
-      "Gross profit ÷ Sales",
-      "Current assets ÷ Sales",
-      "Sales ÷ Assets"
-    ],
-    "answer": "Net profit ÷ Capital employed × 100",
-    "explanation": "ROCE shows how efficiently capital generates profit."
-  },
-  {
-    "id": "p80",
-    "question": "Which ratio measures a business's ability to pay short-term debts?",
-    "options": [
-      "Current ratio",
-      "Gross profit margin",
-      "Net profit margin",
-      "Gearing ratio"
-    ],
-    "answer": "Current ratio",
-    "explanation": "Liquidity ratios like the current ratio assess short-term solvency."
-  },
-  {
-    "id": "p81",
-    "question": "The bank reconciliation statement is prepared to:",
-    "options": [
-      "explain differences between cash book and bank statement",
-      "calculate profit",
-      "prepare tax returns",
-      "record sales"
-    ],
-    "answer": "explain differences between cash book and bank statement",
-    "explanation": "It reconciles the cash book balance with the bank statement."
-  },
-  {
-    "id": "p82",
-    "question": "An unpresented cheque is one that:",
-    "options": [
-      "is issued but not yet presented to the bank",
-      "has been returned unpaid",
-      "is lost",
-      "is cancelled"
-    ],
-    "answer": "is issued but not yet presented to the bank",
-    "explanation": "Unpresented cheques cause timing differences."
-  },
-  {
-    "id": "p83",
-    "question": "A bank 'credit transfer' (direct debit) in the bank statement but not in the cash book is:",
-    "options": [
-      "added to the cash book balance",
-      "subtracted from the cash book",
-      "ignored",
-      "an error"
-    ],
-    "answer": "added to the cash book balance",
-    "explanation": "Update the cash book for such items first."
-  },
-  {
-    "id": "p84",
-    "question": "Which of the following is a cash flow item?",
-    "options": [
-      "Cash received from customers",
-      "Depreciation",
-      "Credit sales",
-      "Bad debts written off"
-    ],
-    "answer": "Cash received from customers",
-    "explanation": "Cash flows record actual cash movements."
-  },
-  {
-    "id": "p85",
-    "question": "The cash flow statement classifies flows into:",
-    "options": [
-      "operating, investing and financing",
-      "debit and credit",
-      "assets and liabilities",
-      "income and expenses only"
-    ],
-    "answer": "operating, investing and financing",
-    "explanation": "Cash flows are grouped into these three activities."
-  },
-  {
-    "id": "p86",
-    "question": "Depreciation is added back to net profit in the cash flow statement because it is:",
-    "options": [
-      "a non-cash expense",
-      "cash received",
-      "an asset",
-      "a liability"
-    ],
-    "answer": "a non-cash expense",
-    "explanation": "Depreciation does not involve cash outflow."
-  },
-  {
-    "id": "p87",
-    "question": "Which of the following is a financing activity?",
-    "options": [
-      "Issuing shares",
-      "Buying equipment",
-      "Paying suppliers",
-      "Collecting receivables"
-    ],
-    "answer": "Issuing shares",
-    "explanation": "Share issues raise finance."
-  },
-  {
-    "id": "p88",
-    "question": "A control account for receivables is used to:",
-    "options": [
-      "verify the accuracy of the sales ledger",
-      "record cash sales",
-      "calculate depreciation",
-      "prepare the balance sheet"
-    ],
-    "answer": "verify the accuracy of the sales ledger",
-    "explanation": "The receivables control account checks the sales ledger."
-  },
-  {
-    "id": "p89",
-    "question": "The sales ledger contains accounts of:",
-    "options": [
-      "credit customers",
-      "creditors",
-      "the owner",
-      "the bank"
-    ],
-    "answer": "credit customers",
-    "explanation": "The sales ledger tracks amounts owed by customers."
-  },
-  {
-    "id": "p90",
-    "question": "The purchases ledger contains accounts of:",
-    "options": [
-      "suppliers (creditors)",
-      "customers",
-      "employees",
-      "shareholders"
-    ],
-    "answer": "suppliers (creditors)",
-    "explanation": "The purchases ledger tracks amounts owed to suppliers."
-  },
-  {
-    "id": "p91",
-    "question": "In the receivables control account, cash received from customers is:",
-    "options": [
-      "credited",
-      "debited",
-      "ignored",
-      "transferred"
-    ],
-    "answer": "credited",
-    "explanation": "Cash received reduces receivables (credit)."
-  },
-  {
-    "id": "p92",
-    "question": "A partnership is a business owned by:",
-    "options": [
-      "two or more persons",
-      "one person",
-      "shareholders",
-      "the government"
-    ],
-    "answer": "two or more persons",
-    "explanation": "Partnerships have two or more partners."
-  },
-  {
-    "id": "p93",
-    "question": "In a partnership, profit is shared according to:",
-    "options": [
-      "the partnership agreement",
-      "the law always",
-      "who works hardest",
-      "equal shares always"
-    ],
-    "answer": "the partnership agreement",
-    "explanation": "The partnership agreement governs profit sharing."
-  },
-  {
-    "id": "p94",
-    "question": "Interest on partners' capital is:",
-    "options": [
-      "an appropriation of profit",
-      "an expense always",
-      "a liability",
-      "drawings"
-    ],
-    "answer": "an appropriation of profit",
-    "explanation": "It is part of profit distribution, not an expense."
-  },
-  {
-    "id": "p95",
-    "question": "A limited liability company's owners are called:",
-    "options": [
-      "shareholders",
-      "partners",
-      "debtors",
-      "creditors"
-    ],
-    "answer": "shareholders",
-    "explanation": "Shareholders own companies via shares."
-  },
-  {
-    "id": "p96",
-    "question": "The capital of a company is divided into:",
-    "options": [
-      "shares",
-      "drawings",
-      "debts",
-      "credits"
-    ],
-    "answer": "shares",
-    "explanation": "Companies raise capital by issuing shares."
-  },
-  {
-    "id": "p97",
-    "question": "Which of the following reduces capital?",
-    "options": [
-      "Drawings",
-      "Profits",
-      "Sale of assets",
-      "New loans"
-    ],
-    "answer": "Drawings",
-    "explanation": "Drawings reduce the owner's capital."
-  },
-  {
-    "id": "p98",
-    "question": "The statement of cash flows helps users to:",
-    "options": [
-      "assess liquidity and solvency",
-      "measure gross profit only",
-      "value inventory",
-      "record journal entries"
-    ],
-    "answer": "assess liquidity and solvency",
-    "explanation": "Cash flow statements reveal cash position and trends."
-  },
-  {
-    "id": "p99",
-    "question": "Which document shows money owed by the business to a supplier?",
-    "options": [
-      "Statement of account",
-      "Invoice from customer",
-      "Receipt",
-      "Credit note"
-    ],
-    "answer": "Statement of account",
-    "explanation": "A supplier's statement lists transactions and the balance due."
-  },
-  {
-    "id": "p100",
-    "question": "The period of accounts is called the:",
-    "options": [
-      "accounting period",
-      "budget",
-      "ledger",
-      "journal"
-    ],
-    "answer": "accounting period",
-    "explanation": "Financial statements cover an accounting period (e.g. one year)."
-  }
+ {
+  "id": "p1",
+  "question": "The 'Business Entity' concept states that:",
+  "options": [
+   "A business will continue forever",
+   "Transactions are recorded when cash is paid",
+   "The business and owner are separate entities",
+   "Assets must equal liabilities"
+  ],
+  "answer": "The business and owner are separate entities",
+  "explanation": "This principle ensures that the owner's personal finances are not mixed with those of the business.",
+  "topic": "accounting-concepts"
+ },
+ {
+  "id": "p2",
+  "question": "If a business has Assets of $50,000 and Capital of $30,000, what are its Liabilities?",
+  "options": [
+   "$80,000",
+   "$30,000",
+   "$20,000",
+   "$50,000"
+  ],
+  "answer": "$20,000",
+  "explanation": "Accounting Equation: Assets = Liabilities + Capital. So, 50,000 = L + 30,000; L = 20,000.",
+  "topic": "accounting-equation"
+ },
+ {
+  "id": "p3",
+  "question": "Which of the following describes the rule for recording an increase in an asset?",
+  "options": [
+   "Debit the asset account",
+   "Credit the asset account",
+   "Debit the capital account",
+   "Credit the liability account"
+  ],
+  "answer": "Debit the asset account",
+  "explanation": "Increases in assets and expenses are always recorded as debits (left side).",
+  "topic": "double-entry-system"
+ },
+ {
+  "id": "p4",
+  "question": "A business pays its rent by check. Which two accounts are affected?",
+  "options": [
+   "Rent and Cash",
+   "Rent and Bank",
+   "Rent and Capital",
+   "Bank and Cash"
+  ],
+  "answer": "Rent and Bank",
+  "explanation": "The Rent account (expense) increases (debit) and the Bank account (asset) decreases (credit).",
+  "topic": "double-entry-system"
+ },
+ {
+  "id": "p5",
+  "question": "Which book of original entry is used to record credit sales?",
+  "options": [
+   "Cash Book",
+   "General Journal",
+   "Sales Journal",
+   "Purchases Journal"
+  ],
+  "answer": "Sales Journal",
+  "explanation": "The Sales Journal specifically records all goods sold on credit to customers.",
+  "topic": "journals-daybooks"
+ },
+ {
+  "id": "p6",
+  "question": "A 'Contra Entry' in a three-column cash book involves:",
+  "options": [
+   "Cash and Discounts",
+   "Bank and Discounts",
+   "Cash and Bank",
+   "Sales and Purchases"
+  ],
+  "answer": "Cash and Bank",
+  "explanation": "Contra entries occur when cash is deposited into or withdrawn from the bank, affecting both columns.",
+  "topic": "cash-book"
+ },
+ {
+  "id": "p7",
+  "question": "What is the primary purpose of a Trial Balance?",
+  "options": [
+   "To calculate net profit",
+   "To check the arithmetical accuracy of the ledger",
+   "To list all the assets of the business",
+   "To show the financial position"
+  ],
+  "answer": "To check the arithmetical accuracy of the ledger",
+  "explanation": "A Trial Balance ensures that total debits equal total credits before preparing final statements.",
+  "topic": "preparing-trial-balance"
+ },
+ {
+  "id": "p8",
+  "question": "Recording the purchase of a motor vehicle as a 'repairs expense' is an example of an error of:",
+  "options": [
+   "Omission",
+   "Commission",
+   "Principle",
+   "Original Entry"
+  ],
+  "answer": "Principle",
+  "explanation": "An error of principle occurs when a transaction is recorded in the wrong class of account (asset vs expense).",
+  "topic": "double-entry-system"
+ },
+ {
+  "id": "p9",
+  "question": "An 'Accrued Expense' at the end of the year is classified as a:",
+  "options": [
+   "Current Asset",
+   "Non-current Asset",
+   "Current Liability",
+   "Non-current Liability"
+  ],
+  "answer": "Current Liability",
+  "explanation": "An accrual is an amount owed for an expense already incurred, so it is a short-term debt.",
+  "topic": "accruals-prepayments"
+ },
+ {
+  "id": "p10",
+  "question": "Calculate the annual depreciation of a machine costing $10,000 with a residual value of $1,000 and a life of 5 years (Straight Line).",
+  "options": [
+   "$2,000",
+   "$1,800",
+   "$1,500",
+   "$2,200"
+  ],
+  "answer": "$1,800",
+  "explanation": "Depreciation = (Cost - Residual Value) / Life = (10,000 - 1,000) / 5 = $1,800.",
+  "topic": "statement-financial-position"
+ },
+ {
+  "id": "p11",
+  "question": "Gross Profit is calculated as:",
+  "options": [
+   "Sales - Expenses",
+   "Sales - Cost of Goods Sold",
+   "Sales + Other Income",
+   "Assets - Liabilities"
+  ],
+  "answer": "Sales - Cost of Goods Sold",
+  "explanation": "Gross Profit is the profit made solely from the trading activities of the business.",
+  "topic": "income-statement"
+ },
+ {
+  "id": "p12",
+  "question": "Which of the following is a 'Current Asset'?",
+  "options": [
+   "Machinery",
+   "Long-term Loan",
+   "Inventory",
+   "Accounts Payable"
+  ],
+  "answer": "Inventory",
+  "explanation": "Current assets are those expected to be converted into cash within one year, like inventory (stock).",
+  "topic": "statement-financial-position"
+ },
+ {
+  "id": "p13",
+  "question": "The accounting equation is:",
+  "options": [
+   "Assets = Liabilities + Capital",
+   "Assets = Liabilities - Capital",
+   "Capital = Assets + Liabilities",
+   "Liabilities = Assets + Capital"
+  ],
+  "answer": "Assets = Liabilities + Capital",
+  "explanation": "Assets are financed by liabilities and owner's capital.",
+  "topic": "accounting-equation"
+ },
+ {
+  "id": "p14",
+  "question": "If assets are $80,000 and liabilities are $25,000, the capital is:",
+  "options": [
+   "$55,000",
+   "$105,000",
+   "$25,000",
+   "$80,000"
+  ],
+  "answer": "$55,000",
+  "explanation": "Capital = Assets - Liabilities = 80,000 - 25,000 = 55,000.",
+  "topic": "accounting-equation"
+ },
+ {
+  "id": "p15",
+  "question": "Which of the following is a liability?",
+  "options": [
+   "Bank loan",
+   "Cash",
+   "Inventory",
+   "Equipment"
+  ],
+  "answer": "Bank loan",
+  "explanation": "A loan is money owed to others.",
+  "topic": "statement-financial-position"
+ },
+ {
+  "id": "p16",
+  "question": "An asset that is expected to be used for more than one year is a:",
+  "options": [
+   "non-current asset",
+   "current asset",
+   "liability",
+   "expense"
+  ],
+  "answer": "non-current asset",
+  "explanation": "Non-current assets provide long-term benefit.",
+  "topic": "statement-financial-position"
+ },
+ {
+  "id": "p17",
+  "question": "Which of the following is a current asset?",
+  "options": [
+   "Accounts receivable",
+   "Motor vehicle",
+   "Land",
+   "Buildings"
+  ],
+  "answer": "Accounts receivable",
+  "explanation": "Receivables are converted to cash within a year.",
+  "topic": "statement-financial-position"
+ },
+ {
+  "id": "p18",
+  "question": "The accounting concept that states a business is separate from its owner is:",
+  "options": [
+   "business entity",
+   "going concern",
+   "prudence",
+   "materiality"
+  ],
+  "answer": "business entity",
+  "explanation": "The business entity concept separates business and personal affairs.",
+  "topic": "accounting-concepts"
+ },
+ {
+  "id": "p19",
+  "question": "Under the 'going concern' concept, a business is assumed to:",
+  "options": [
+   "continue operating indefinitely",
+   "close immediately",
+   "be sold",
+   "make losses"
+  ],
+  "answer": "continue operating indefinitely",
+  "explanation": "Financial statements assume ongoing operations.",
+  "topic": "accounting-concepts"
+ },
+ {
+  "id": "p20",
+  "question": "The 'prudence' concept means:",
+  "options": [
+   "not overstating assets or income",
+   "recording all expenses twice",
+   "ignoring losses",
+   "overstating profits"
+  ],
+  "answer": "not overstating assets or income",
+  "explanation": "Prudence avoids overstating assets/income and understating liabilities.",
+  "topic": "accounting-concepts"
+ },
+ {
+  "id": "p21",
+  "question": "In double entry, every transaction is recorded:",
+  "options": [
+   "twice, once as debit and once as credit",
+   "once only",
+   "three times",
+   "in the cash book only"
+  ],
+  "answer": "twice, once as debit and once as credit",
+  "explanation": "Double entry: equal debits and credits.",
+  "topic": "double-entry-system"
+ },
+ {
+  "id": "p22",
+  "question": "An increase in an asset is recorded as a:",
+  "options": [
+   "debit",
+   "credit",
+   "journal",
+   "trial balance"
+  ],
+  "answer": "debit",
+  "explanation": "Assets increase on the debit side.",
+  "topic": "double-entry-system"
+ },
+ {
+  "id": "p23",
+  "question": "An increase in a liability is recorded as a:",
+  "options": [
+   "credit",
+   "debit",
+   "transfer",
+   "return"
+  ],
+  "answer": "credit",
+  "explanation": "Liabilities increase on the credit side.",
+  "topic": "double-entry-system"
+ },
+ {
+  "id": "p24",
+  "question": "An increase in capital is recorded as a:",
+  "options": [
+   "credit",
+   "debit",
+   "receipt",
+   "loss"
+  ],
+  "answer": "credit",
+  "explanation": "Capital increases on the credit side.",
+  "topic": "double-entry-system"
+ },
+ {
+  "id": "p25",
+  "question": "A business buys goods on credit. The double entry is:",
+  "options": [
+   "debit Purchases, credit Payables",
+   "debit Payables, credit Purchases",
+   "debit Cash, credit Sales",
+   "debit Sales, credit Cash"
+  ],
+  "answer": "debit Purchases, credit Payables",
+  "explanation": "Purchases increase (debit) and the amount owed increases (credit).",
+  "topic": "double-entry-system"
+ },
+ {
+  "id": "p26",
+  "question": "Cash sales of $500 are recorded as:",
+  "options": [
+   "debit Cash, credit Sales",
+   "debit Sales, credit Cash",
+   "debit Cash, credit Purchases",
+   "debit Bank, credit Payables"
+  ],
+  "answer": "debit Cash, credit Sales",
+  "explanation": "Cash increases (debit) and sales revenue increases (credit).",
+  "topic": "double-entry-system"
+ },
+ {
+  "id": "p27",
+  "question": "A payment of $300 to a creditor is recorded as:",
+  "options": [
+   "debit Payables, credit Bank",
+   "debit Bank, credit Payables",
+   "debit Cash, credit Sales",
+   "debit Purchases, credit Bank"
+  ],
+  "answer": "debit Payables, credit Bank",
+  "explanation": "Paying reduces the amount owed (debit) and reduces cash (credit).",
+  "topic": "double-entry-system"
+ },
+ {
+  "id": "p28",
+  "question": "The book of original entry for credit sales is the:",
+  "options": [
+   "sales journal",
+   "cash book",
+   "general journal",
+   "purchases journal"
+  ],
+  "answer": "sales journal",
+  "explanation": "Credit sales are first recorded in the sales journal.",
+  "topic": "journals-daybooks"
+ },
+ {
+  "id": "p29",
+  "question": "The purchases journal records:",
+  "options": [
+   "credit purchases",
+   "cash purchases",
+   "credit sales",
+   "returns inwards"
+  ],
+  "answer": "credit purchases",
+  "explanation": "Credit purchases are recorded in the purchases journal.",
+  "topic": "journals-daybooks"
+ },
+ {
+  "id": "p30",
+  "question": "Which document is issued when goods are returned by a customer?",
+  "options": [
+   "Credit note",
+   "Debit note",
+   "Invoice",
+   "Receipt"
+  ],
+  "answer": "Credit note",
+  "explanation": "A credit note reduces what the customer owes.",
+  "topic": "journals-daybooks"
+ },
+ {
+  "id": "p31",
+  "question": "A 'debit note' is issued to:",
+  "options": [
+   "request an adjustment for overcharge or returns",
+   "confirm a sale",
+   "record cash received",
+   "pay wages"
+  ],
+  "answer": "request an adjustment for overcharge or returns",
+  "explanation": "Debit notes notify suppliers of returns/overcharges.",
+  "topic": "journals-daybooks"
+ },
+ {
+  "id": "p32",
+  "question": "The petty cash book is used to record:",
+  "options": [
+   "small cash payments",
+   "credit sales",
+   "large bank transfers",
+   "depreciation"
+  ],
+  "answer": "small cash payments",
+  "explanation": "Petty cash covers minor day-to-day expenses.",
+  "topic": "cash-book"
+ },
+ {
+  "id": "p33",
+  "question": "The imprest system of petty cash means:",
+  "options": [
+   "the float is restored to a fixed amount",
+   "no cash is used",
+   "all payments are large",
+   "cash is never counted"
+  ],
+  "answer": "the float is restored to a fixed amount",
+  "explanation": "Under imprest, the float is topped up to the fixed amount.",
+  "topic": "cash-book"
+ },
+ {
+  "id": "p34",
+  "question": "A 'contra entry' occurs when:",
+  "options": [
+   "cash is transferred to the bank",
+   "a sale is made",
+   "goods are returned",
+   "wages are paid"
+  ],
+  "answer": "cash is transferred to the bank",
+  "explanation": "Contra entries appear in both cash and bank columns of the cash book.",
+  "topic": "cash-book"
+ },
+ {
+  "id": "p35",
+  "question": "The cash book serves as:",
+  "options": [
+   "both a book of original entry and a ledger account",
+   "only a journal",
+   "only a ledger",
+   "a financial statement"
+  ],
+  "answer": "both a book of original entry and a ledger account",
+  "explanation": "The cash book is both journal and ledger for cash/bank.",
+  "topic": "cash-book"
+ },
+ {
+  "id": "p36",
+  "question": "A bank overdraft is a:",
+  "options": [
+   "liability",
+   "current asset",
+   "fixed asset",
+   "capital"
+  ],
+  "answer": "liability",
+  "explanation": "An overdraft is money owed to the bank.",
+  "topic": "cash-book"
+ },
+ {
+  "id": "p37",
+  "question": "When a cheque received from a customer is dishonoured, it is:",
+  "options": [
+   "debited to the customer's account",
+   "credited to the bank",
+   "recorded as profit",
+   "ignored"
+  ],
+  "answer": "debited to the customer's account",
+  "explanation": "The receivable is reinstated with a debit.",
+  "topic": "cash-book"
+ },
+ {
+  "id": "p38",
+  "question": "Which of the following is an expense?",
+  "options": [
+   "Rent paid",
+   "Inventory",
+   "Equipment",
+   "Cash"
+  ],
+  "answer": "Rent paid",
+  "explanation": "Rent is a cost of running the business.",
+  "topic": "income-statement"
+ },
+ {
+  "id": "p39",
+  "question": "Salaries paid in cash are recorded as:",
+  "options": [
+   "debit Salaries, credit Cash",
+   "debit Cash, credit Salaries",
+   "debit Capital, credit Cash",
+   "debit Sales, credit Cash"
+  ],
+  "answer": "debit Salaries, credit Cash",
+  "explanation": "Expenses increase (debit) and cash decreases (credit).",
+  "topic": "double-entry-system"
+ },
+ {
+  "id": "p40",
+  "question": "The trial balance is prepared to:",
+  "options": [
+   "check the equality of debits and credits",
+   "calculate profit",
+   "prepare the cash book",
+   "record transactions"
+  ],
+  "answer": "check the equality of debits and credits",
+  "explanation": "The trial balance summarises ledger balances.",
+  "topic": "preparing-trial-balance"
+ },
+ {
+  "id": "p41",
+  "question": "If total debits exceed total credits in the trial balance, the difference is:",
+  "options": [
+   "a debit balance",
+   "a credit balance",
+   "profit",
+   "loss"
+  ],
+  "answer": "a debit balance",
+  "explanation": "The difference is placed on the smaller side to balance.",
+  "topic": "preparing-trial-balance"
+ },
+ {
+  "id": "p42",
+  "question": "Which error does NOT affect the trial balance?",
+  "options": [
+   "Error of omission",
+   "Posting to the wrong account",
+   "Recording on the wrong side",
+   "Transposition error"
+  ],
+  "answer": "Error of omission",
+  "explanation": "Errors that keep debits = credits, like omission, do not affect the TB.",
+  "topic": "preparing-trial-balance"
+ },
+ {
+  "id": "p43",
+  "question": "An 'error of commission' is when:",
+  "options": [
+   "a transaction is posted to the wrong account of the same class",
+   "a transaction is completely omitted",
+   "the wrong amount is recorded",
+   "both sides are overstated"
+  ],
+  "answer": "a transaction is posted to the wrong account of the same class",
+  "explanation": "Commission errors use the wrong account of the same category.",
+  "topic": "preparing-trial-balance"
+ },
+ {
+  "id": "p44",
+  "question": "An 'error of principle' occurs when:",
+  "options": [
+   "an item is posted to the wrong class of account",
+   "a transaction is omitted",
+   "the wrong amount is recorded",
+   "arithmetic is incorrect"
+  ],
+  "answer": "an item is posted to the wrong class of account",
+  "explanation": "Principle errors violate accounting rules (e.g. asset as expense).",
+  "topic": "double-entry-system"
+ },
+ {
+  "id": "p45",
+  "question": "A suspense account is used to:",
+  "options": [
+   "temporarily hold a trial balance difference",
+   "record profits",
+   "pay dividends",
+   "record cash sales"
+  ],
+  "answer": "temporarily hold a trial balance difference",
+  "explanation": "Suspense accounts hold differences pending correction.",
+  "topic": "preparing-trial-balance"
+ },
+ {
+  "id": "p46",
+  "question": "Which formula correctly calculates gross profit?",
+  "options": [
+   "Sales - Cost of Sales",
+   "Sales - Expenses",
+   "Sales + Returns",
+   "Net profit + Drawings"
+  ],
+  "answer": "Sales - Cost of Sales",
+  "explanation": "Gross profit = sales less cost of goods sold.",
+  "topic": "income-statement"
+ },
+ {
+  "id": "p47",
+  "question": "Cost of sales is calculated as:",
+  "options": [
+   "Opening stock + Purchases - Closing stock",
+   "Purchases - Sales",
+   "Opening stock - Purchases + Closing stock",
+   "Sales - Net profit"
+  ],
+  "answer": "Opening stock + Purchases - Closing stock",
+  "explanation": "COS = opening stock + purchases - closing stock.",
+  "topic": "income-statement"
+ },
+ {
+  "id": "p48",
+  "question": "If sales are $50,000 and cost of sales is $35,000, the gross profit is:",
+  "options": [
+   "$15,000",
+   "$85,000",
+   "$50,000",
+   "$35,000"
+  ],
+  "answer": "$15,000",
+  "explanation": "50,000 - 35,000 = 15,000.",
+  "topic": "income-statement"
+ },
+ {
+  "id": "p49",
+  "question": "Net profit is:",
+  "options": [
+   "gross profit less expenses",
+   "gross profit plus expenses",
+   "sales less purchases",
+   "assets less liabilities"
+  ],
+  "answer": "gross profit less expenses",
+  "explanation": "Net profit = gross profit - operating expenses.",
+  "topic": "income-statement"
+ },
+ {
+  "id": "p50",
+  "question": "Which account appears in the Trading Account?",
+  "options": [
+   "Sales",
+   "Rent",
+   "Salaries",
+   "Insurance"
+  ],
+  "answer": "Sales",
+  "explanation": "The trading account shows sales and cost of sales.",
+  "topic": "income-statement"
+ },
+ {
+  "id": "p51",
+  "question": "Closing stock is valued at:",
+  "options": [
+   "cost or net realisable value, whichever is lower",
+   "selling price always",
+   "cost price only",
+   "market price always"
+  ],
+  "answer": "cost or net realisable value, whichever is lower",
+  "explanation": "Prudence requires the lower of cost or NRV.",
+  "topic": "income-statement"
+ },
+ {
+  "id": "p52",
+  "question": "Carriage inwards is:",
+  "options": [
+   "added to purchases",
+   "deducted from sales",
+   "an expense only",
+   "a liability"
+  ],
+  "answer": "added to purchases",
+  "explanation": "Carriage inwards is part of cost of purchases.",
+  "topic": "income-statement"
+ },
+ {
+  "id": "p53",
+  "question": "Carriage outwards is:",
+  "options": [
+   "an expense in the Profit and Loss account",
+   "added to purchases",
+   "deducted from sales",
+   "a non-current asset"
+  ],
+  "answer": "an expense in the Profit and Loss account",
+  "explanation": "Carriage outwards is a selling/distribution expense.",
+  "topic": "income-statement"
+ },
+ {
+  "id": "p54",
+  "question": "Which of the following is a fixed asset?",
+  "options": [
+   "Buildings",
+   "Inventory",
+   "Bank",
+   "Debtors"
+  ],
+  "answer": "Buildings",
+  "explanation": "Buildings are long-term productive assets.",
+  "topic": "statement-financial-position"
+ },
+ {
+  "id": "p55",
+  "question": "Depreciation is:",
+  "options": [
+   "the allocation of a fixed asset's cost over its useful life",
+   "the purchase of assets",
+   "a current liability",
+   "cash received"
+  ],
+  "answer": "the allocation of a fixed asset's cost over its useful life",
+  "explanation": "Depreciation spreads asset cost over useful life.",
+  "topic": "statement-financial-position"
+ },
+ {
+  "id": "p56",
+  "question": "The straight-line method of depreciation:",
+  "options": [
+   "charges equal depreciation each year",
+   "charges more in early years",
+   "is based on usage",
+   "never charges depreciation"
+  ],
+  "answer": "charges equal depreciation each year",
+  "explanation": "Straight-line: (cost - residual)/useful life each year.",
+  "topic": "statement-financial-position"
+ },
+ {
+  "id": "p57",
+  "question": "A machine costs $10,000, residual value $1,000, useful life 5 years. Annual straight-line depreciation is:",
+  "options": [
+   "$1,800",
+   "$2,000",
+   "$1,000",
+   "$9,000"
+  ],
+  "answer": "$1,800",
+  "explanation": "(10,000 - 1,000)/5 = 1,800.",
+  "topic": "statement-financial-position"
+ },
+ {
+  "id": "p58",
+  "question": "The reducing balance method:",
+  "options": [
+   "charges more depreciation in early years",
+   "charges equal amounts",
+   "charges nothing",
+   "is used only for land"
+  ],
+  "answer": "charges more depreciation in early years",
+  "explanation": "A fixed percentage is charged on the reducing book value.",
+  "topic": "statement-financial-position"
+ },
+ {
+  "id": "p59",
+  "question": "Accumulated depreciation is:",
+  "options": [
+   "a contra asset account",
+   "an expense",
+   "a liability",
+   "revenue"
+  ],
+  "answer": "a contra asset account",
+  "explanation": "Accumulated depreciation reduces the book value of assets.",
+  "topic": "statement-financial-position"
+ },
+ {
+  "id": "p60",
+  "question": "A bad debt is:",
+  "options": [
+   "a debt that will not be paid",
+   "a cash sale",
+   "a prepayment",
+   "an asset"
+  ],
+  "answer": "a debt that will not be paid",
+  "explanation": "Bad debts are uncollectible receivables written off.",
+  "topic": "income-statement"
+ },
+ {
+  "id": "p61",
+  "question": "Writing off a bad debt is recorded as:",
+  "options": [
+   "debit Bad Debts, credit Receivables",
+   "debit Receivables, credit Bad Debts",
+   "debit Cash, credit Sales",
+   "debit Sales, credit Bank"
+  ],
+  "answer": "debit Bad Debts, credit Receivables",
+  "explanation": "The receivable is removed and the expense recorded.",
+  "topic": "income-statement"
+ },
+ {
+  "id": "p62",
+  "question": "A provision for doubtful debts is:",
+  "options": [
+   "an estimate of receivables that may not be collected",
+   "a fixed asset",
+   "cash set aside",
+   "a loan"
+  ],
+  "answer": "an estimate of receivables that may not be collected",
+  "explanation": "The provision matches possible future losses (prudence).",
+  "topic": "income-statement"
+ },
+ {
+  "id": "p63",
+  "question": "An accrued expense at year end is:",
+  "options": [
+   "a liability",
+   "an asset",
+   "revenue",
+   "capital"
+  ],
+  "answer": "a liability",
+  "explanation": "Accrued expenses are amounts owed for services used.",
+  "topic": "accruals-prepayments"
+ },
+ {
+  "id": "p64",
+  "question": "A prepayment at year end is:",
+  "options": [
+   "a current asset",
+   "a liability",
+   "an expense",
+   "capital"
+  ],
+  "answer": "a current asset",
+  "explanation": "Prepayments are payments made in advance — an asset.",
+  "topic": "accruals-prepayments"
+ },
+ {
+  "id": "p65",
+  "question": "Rent paid in advance of $1,000 is treated as:",
+  "options": [
+   "a prepayment (asset)",
+   "an accrued expense",
+   "revenue",
+   "drawings"
+  ],
+  "answer": "a prepayment (asset)",
+  "explanation": "Advance payments are prepaid expenses.",
+  "topic": "accruals-prepayments"
+ },
+ {
+  "id": "p66",
+  "question": "Wages owing at year end of $800 are:",
+  "options": [
+   "an accrued expense (liability)",
+   "a prepayment",
+   "income",
+   "capital"
+  ],
+  "answer": "an accrued expense (liability)",
+  "explanation": "Unpaid wages at year end are accrued expenses.",
+  "topic": "accruals-prepayments"
+ },
+ {
+  "id": "p67",
+  "question": "The balance sheet is also known as the:",
+  "options": [
+   "statement of financial position",
+   "income statement",
+   "cash flow statement",
+   "trial balance"
+  ],
+  "answer": "statement of financial position",
+  "explanation": "The balance sheet shows financial position at a date.",
+  "topic": "statement-financial-position"
+ },
+ {
+  "id": "p68",
+  "question": "Working capital is calculated as:",
+  "options": [
+   "Current Assets - Current Liabilities",
+   "Assets + Liabilities",
+   "Capital - Drawings",
+   "Sales - Purchases"
+  ],
+  "answer": "Current Assets - Current Liabilities",
+  "explanation": "Working capital measures short-term liquidity.",
+  "topic": "statement-financial-position"
+ },
+ {
+  "id": "p69",
+  "question": "If current assets are $40,000 and current liabilities are $25,000, working capital is:",
+  "options": [
+   "$15,000",
+   "$65,000",
+   "$40,000",
+   "$25,000"
+  ],
+  "answer": "$15,000",
+  "explanation": "40,000 - 25,000 = 15,000.",
+  "topic": "statement-financial-position"
+ },
+ {
+  "id": "p70",
+  "question": "Capital employed is:",
+  "options": [
+   "Non-current assets + Working capital",
+   "Total assets only",
+   "Current liabilities",
+   "Drawings"
+  ],
+  "answer": "Non-current assets + Working capital",
+  "explanation": "Capital employed = total assets - current liabilities.",
+  "topic": "statement-financial-position"
+ },
+ {
+  "id": "p71",
+  "question": "Which of the following is NOT a current liability?",
+  "options": [
+   "Mortgage",
+   "Creditors",
+   "Bank overdraft",
+   "Accrued expenses"
+  ],
+  "answer": "Mortgage",
+  "explanation": "A mortgage is a long-term (non-current) liability.",
+  "topic": "statement-financial-position"
+ },
+ {
+  "id": "p72",
+  "question": "Owner's drawings reduce:",
+  "options": [
+   "capital",
+   "assets always",
+   "liabilities",
+   "sales"
+  ],
+  "answer": "capital",
+  "explanation": "Drawings decrease the owner's capital.",
+  "topic": "statement-financial-position"
+ },
+ {
+  "id": "p73",
+  "question": "Drawings are recorded as:",
+  "options": [
+   "debit Drawings, credit Cash/Goods",
+   "credit Drawings, debit Cash",
+   "debit Capital, credit Cash",
+   "debit Sales, credit Cash"
+  ],
+  "answer": "debit Drawings, credit Cash/Goods",
+  "explanation": "Drawings increase (debit) and assets decrease (credit).",
+  "topic": "statement-financial-position"
+ },
+ {
+  "id": "p74",
+  "question": "The current ratio is:",
+  "options": [
+   "Current Assets ÷ Current Liabilities",
+   "Sales ÷ Assets",
+   "Profit ÷ Capital",
+   "Debtors ÷ Creditors"
+  ],
+  "answer": "Current Assets ÷ Current Liabilities",
+  "explanation": "Current ratio = current assets / current liabilities.",
+  "topic": "statement-financial-position"
+ },
+ {
+  "id": "p75",
+  "question": "If current assets are $60,000 and current liabilities are $30,000, the current ratio is:",
+  "options": [
+   "2:1",
+   "1:2",
+   "3:1",
+   "1:1"
+  ],
+  "answer": "2:1",
+  "explanation": "60,000/30,000 = 2:1.",
+  "topic": "statement-financial-position"
+ },
+ {
+  "id": "p76",
+  "question": "The acid test (quick) ratio excludes:",
+  "options": [
+   "inventory",
+   "cash",
+   "receivables",
+   "short-term investments"
+  ],
+  "answer": "inventory",
+  "explanation": "Inventory is excluded as the least liquid current asset.",
+  "topic": "statement-financial-position"
+ },
+ {
+  "id": "p77",
+  "question": "Gross profit percentage is:",
+  "options": [
+   "Gross profit ÷ Sales × 100",
+   "Net profit ÷ Sales",
+   "Sales ÷ Gross profit",
+   "Purchases ÷ Sales"
+  ],
+  "answer": "Gross profit ÷ Sales × 100",
+  "explanation": "Gross profit margin = GP/Sales × 100%.",
+  "topic": "income-statement"
+ },
+ {
+  "id": "p78",
+  "question": "Net profit margin measures:",
+  "options": [
+   "the profit left after expenses per dollar of sales",
+   "gross profit",
+   "liquidity",
+   "asset turnover"
+  ],
+  "answer": "the profit left after expenses per dollar of sales",
+  "explanation": "Net margin = Net profit/Sales × 100%.",
+  "topic": "income-statement"
+ },
+ {
+  "id": "p79",
+  "question": "Return on capital employed (ROCE) is:",
+  "options": [
+   "Net profit ÷ Capital employed × 100",
+   "Gross profit ÷ Sales",
+   "Current assets ÷ Sales",
+   "Sales ÷ Assets"
+  ],
+  "answer": "Net profit ÷ Capital employed × 100",
+  "explanation": "ROCE shows how efficiently capital generates profit.",
+  "topic": "income-statement"
+ },
+ {
+  "id": "p80",
+  "question": "Which ratio measures a business's ability to pay short-term debts?",
+  "options": [
+   "Current ratio",
+   "Gross profit margin",
+   "Net profit margin",
+   "Gearing ratio"
+  ],
+  "answer": "Current ratio",
+  "explanation": "Liquidity ratios like the current ratio assess short-term solvency.",
+  "topic": "statement-financial-position"
+ },
+ {
+  "id": "p81",
+  "question": "The bank reconciliation statement is prepared to:",
+  "options": [
+   "explain differences between cash book and bank statement",
+   "calculate profit",
+   "prepare tax returns",
+   "record sales"
+  ],
+  "answer": "explain differences between cash book and bank statement",
+  "explanation": "It reconciles the cash book balance with the bank statement.",
+  "topic": "cash-book"
+ },
+ {
+  "id": "p82",
+  "question": "An unpresented cheque is one that:",
+  "options": [
+   "is issued but not yet presented to the bank",
+   "has been returned unpaid",
+   "is lost",
+   "is cancelled"
+  ],
+  "answer": "is issued but not yet presented to the bank",
+  "explanation": "Unpresented cheques cause timing differences.",
+  "topic": "cash-book"
+ },
+ {
+  "id": "p83",
+  "question": "A bank 'credit transfer' (direct debit) in the bank statement but not in the cash book is:",
+  "options": [
+   "added to the cash book balance",
+   "subtracted from the cash book",
+   "ignored",
+   "an error"
+  ],
+  "answer": "added to the cash book balance",
+  "explanation": "Update the cash book for such items first.",
+  "topic": "cash-book"
+ },
+ {
+  "id": "p84",
+  "question": "Which of the following is a cash flow item?",
+  "options": [
+   "Cash received from customers",
+   "Depreciation",
+   "Credit sales",
+   "Bad debts written off"
+  ],
+  "answer": "Cash received from customers",
+  "explanation": "Cash flows record actual cash movements.",
+  "topic": "cash-book"
+ },
+ {
+  "id": "p85",
+  "question": "The cash flow statement classifies flows into:",
+  "options": [
+   "operating, investing and financing",
+   "debit and credit",
+   "assets and liabilities",
+   "income and expenses only"
+  ],
+  "answer": "operating, investing and financing",
+  "explanation": "Cash flows are grouped into these three activities.",
+  "topic": "cash-book"
+ },
+ {
+  "id": "p86",
+  "question": "Depreciation is added back to net profit in the cash flow statement because it is:",
+  "options": [
+   "a non-cash expense",
+   "cash received",
+   "an asset",
+   "a liability"
+  ],
+  "answer": "a non-cash expense",
+  "explanation": "Depreciation does not involve cash outflow.",
+  "topic": "cash-book"
+ },
+ {
+  "id": "p87",
+  "question": "Which of the following is a financing activity?",
+  "options": [
+   "Issuing shares",
+   "Buying equipment",
+   "Paying suppliers",
+   "Collecting receivables"
+  ],
+  "answer": "Issuing shares",
+  "explanation": "Share issues raise finance.",
+  "topic": "cash-book"
+ },
+ {
+  "id": "p88",
+  "question": "A control account for receivables is used to:",
+  "options": [
+   "verify the accuracy of the sales ledger",
+   "record cash sales",
+   "calculate depreciation",
+   "prepare the balance sheet"
+  ],
+  "answer": "verify the accuracy of the sales ledger",
+  "explanation": "The receivables control account checks the sales ledger.",
+  "topic": "double-entry-system"
+ },
+ {
+  "id": "p89",
+  "question": "The sales ledger contains accounts of:",
+  "options": [
+   "credit customers",
+   "creditors",
+   "the owner",
+   "the bank"
+  ],
+  "answer": "credit customers",
+  "explanation": "The sales ledger tracks amounts owed by customers.",
+  "topic": "double-entry-system"
+ },
+ {
+  "id": "p90",
+  "question": "The purchases ledger contains accounts of:",
+  "options": [
+   "suppliers (creditors)",
+   "customers",
+   "employees",
+   "shareholders"
+  ],
+  "answer": "suppliers (creditors)",
+  "explanation": "The purchases ledger tracks amounts owed to suppliers.",
+  "topic": "double-entry-system"
+ },
+ {
+  "id": "p91",
+  "question": "In the receivables control account, cash received from customers is:",
+  "options": [
+   "credited",
+   "debited",
+   "ignored",
+   "transferred"
+  ],
+  "answer": "credited",
+  "explanation": "Cash received reduces receivables (credit).",
+  "topic": "double-entry-system"
+ },
+ {
+  "id": "p92",
+  "question": "A partnership is a business owned by:",
+  "options": [
+   "two or more persons",
+   "one person",
+   "shareholders",
+   "the government"
+  ],
+  "answer": "two or more persons",
+  "explanation": "Partnerships have two or more partners.",
+  "topic": "accounting-concepts"
+ },
+ {
+  "id": "p93",
+  "question": "In a partnership, profit is shared according to:",
+  "options": [
+   "the partnership agreement",
+   "the law always",
+   "who works hardest",
+   "equal shares always"
+  ],
+  "answer": "the partnership agreement",
+  "explanation": "The partnership agreement governs profit sharing.",
+  "topic": "accounting-concepts"
+ },
+ {
+  "id": "p94",
+  "question": "Interest on partners' capital is:",
+  "options": [
+   "an appropriation of profit",
+   "an expense always",
+   "a liability",
+   "drawings"
+  ],
+  "answer": "an appropriation of profit",
+  "explanation": "It is part of profit distribution, not an expense.",
+  "topic": "accounting-concepts"
+ },
+ {
+  "id": "p95",
+  "question": "A limited liability company's owners are called:",
+  "options": [
+   "shareholders",
+   "partners",
+   "debtors",
+   "creditors"
+  ],
+  "answer": "shareholders",
+  "explanation": "Shareholders own companies via shares.",
+  "topic": "accounting-concepts"
+ },
+ {
+  "id": "p96",
+  "question": "The capital of a company is divided into:",
+  "options": [
+   "shares",
+   "drawings",
+   "debts",
+   "credits"
+  ],
+  "answer": "shares",
+  "explanation": "Companies raise capital by issuing shares.",
+  "topic": "accounting-concepts"
+ },
+ {
+  "id": "p97",
+  "question": "Which of the following reduces capital?",
+  "options": [
+   "Drawings",
+   "Profits",
+   "Sale of assets",
+   "New loans"
+  ],
+  "answer": "Drawings",
+  "explanation": "Drawings reduce the owner's capital.",
+  "topic": "accounting-concepts"
+ },
+ {
+  "id": "p98",
+  "question": "The statement of cash flows helps users to:",
+  "options": [
+   "assess liquidity and solvency",
+   "measure gross profit only",
+   "value inventory",
+   "record journal entries"
+  ],
+  "answer": "assess liquidity and solvency",
+  "explanation": "Cash flow statements reveal cash position and trends.",
+  "topic": "cash-book"
+ },
+ {
+  "id": "p99",
+  "question": "Which document shows money owed by the business to a supplier?",
+  "options": [
+   "Statement of account",
+   "Invoice from customer",
+   "Receipt",
+   "Credit note"
+  ],
+  "answer": "Statement of account",
+  "explanation": "A supplier's statement lists transactions and the balance due.",
+  "topic": "journals-daybooks"
+ },
+ {
+  "id": "p100",
+  "question": "The period of accounts is called the:",
+  "options": [
+   "accounting period",
+   "budget",
+   "ledger",
+   "journal"
+  ],
+  "answer": "accounting period",
+  "explanation": "Financial statements cover an accounting period (e.g. one year).",
+  "topic": "accounting-concepts"
+ }
 ]

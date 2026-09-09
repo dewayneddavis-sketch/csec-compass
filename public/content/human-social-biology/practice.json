@@ -1,1202 +1,1302 @@
 [
-  {
-    "id": "p1",
-    "question": "Which of the following is NOT a function of the human skeleton?",
-    "options": [
-      "Production of blood cells",
-      "Storage of minerals",
-      "Coordination of nerve impulses",
-      "Protection of internal organs"
-    ],
-    "answer": "Coordination of nerve impulses",
-    "explanation": "Nerve coordination is a function of the nervous system, not the skeletal system."
-  },
-  {
-    "id": "p2",
-    "question": "When you bend your arm at the elbow, the biceps muscle ________ and the triceps muscle ________.",
-    "options": [
-      "contracts; relaxes",
-      "relaxes; contracts",
-      "contracts; contracts",
-      "relaxes; relaxes"
-    ],
-    "answer": "contracts; relaxes",
-    "explanation": "Biceps and triceps are an antagonistic pair; the biceps (agonist) must contract to bend the arm."
-  },
-  {
-    "id": "p3",
-    "question": "Which pathway correctly shows the flow of deoxygenated blood through the heart?",
-    "options": [
-      "Left atrium -> Left ventricle -> Aorta",
-      "Right atrium -> Right ventricle -> Pulmonary artery",
-      "Vena cava -> Left atrium -> Left ventricle",
-      "Pulmonary vein -> Right atrium -> Right ventricle"
-    ],
-    "answer": "Right atrium -> Right ventricle -> Pulmonary artery",
-    "explanation": "The right side of the heart receives deoxygenated blood and pumps it to the lungs via the pulmonary artery."
-  },
-  {
-    "id": "p4",
-    "question": "In which part of the respiratory system does gaseous exchange take place?",
-    "options": [
-      "Trachea",
-      "Bronchi",
-      "Alveoli",
-      "Diaphragm"
-    ],
-    "answer": "Alveoli",
-    "explanation": "Alveoli are tiny air sacs with thin walls where oxygen enters and carbon dioxide leaves the blood."
-  },
-  {
-    "id": "p5",
-    "question": "What is the main function of the 'villi' in the small intestine?",
-    "options": [
-      "To secrete digestive enzymes",
-      "To store waste before elimination",
-      "To increase surface area for absorption",
-      "To move food along the gut"
-    ],
-    "answer": "To increase surface area for absorption",
-    "explanation": "Villi and microvilli provide a massive surface area to maximize the absorption of digested nutrients."
-  },
-  {
-    "id": "p6",
-    "question": "A deficiency of Vitamin C in the diet can lead to which disease?",
-    "options": [
-      "Night blindness",
-      "Scurvy",
-      "Rickets",
-      "Anemia"
-    ],
-    "answer": "Scurvy",
-    "explanation": "Vitamin C is essential for healthy skin and gums; its lack causes scurvy."
-  },
-  {
-    "id": "p7",
-    "question": "Which of the following is a non-communicable disease?",
-    "options": [
-      "Malaria",
-      "HIV/AIDS",
-      "Diabetes",
-      "Tuberculosis"
-    ],
-    "answer": "Diabetes",
-    "explanation": "Diabetes is a metabolic disorder and cannot be spread from person to person."
-  },
-  {
-    "id": "p8",
-    "question": "Vaccinations provide 'active immunity' because they:",
-    "options": [
-      "Introduce ready-made antibodies",
-      "Stimulate the body to produce its own antibodies",
-      "Kill pathogens directly in the blood",
-      "Provide temporary protection only"
-    ],
-    "answer": "Stimulate the body to produce its own antibodies",
-    "explanation": "Vaccines use harmless pathogens to trigger the immune response and create long-term memory cells."
-  },
-  {
-    "id": "p9",
-    "question": "The excessive use of chemical fertilizers near a river can cause 'eutrophication,' which leads to:",
-    "options": [
-      "Increased fish population",
-      "Oxygen depletion and death of aquatic life",
-      "Clearer water for swimming",
-      "Reduced algae growth"
-    ],
-    "answer": "Oxygen depletion and death of aquatic life",
-    "explanation": "Fertilizers cause algae blooms that block light and use up oxygen when they decompose."
-  },
-  {
-    "id": "p10",
-    "question": "Which method of waste disposal involves burying waste in a large, lined hole in the ground?",
-    "options": [
-      "Incineration",
-      "Recycling",
-      "Landfill",
-      "Composting"
-    ],
-    "answer": "Landfill",
-    "explanation": "A sanitary landfill is a managed site for the disposal of non-biodegradable and other solid waste."
-  },
-  {
-    "id": "p11",
-    "question": "Which of the following is a stimulant drug that speeds up the central nervous system?",
-    "options": [
-      "Alcohol",
-      "Cocaine",
-      "Heroin",
-      "Cannabis"
-    ],
-    "answer": "Cocaine",
-    "explanation": "Cocaine is a powerful stimulant; alcohol and heroin are depressants."
-  },
-  {
-    "id": "p12",
-    "question": "Which contraceptive method also provides significant protection against Sexually Transmitted Infections (STIs)?",
-    "options": [
-      "The Pill",
-      "Condoms",
-      "Vasectomy",
-      "Intrauterine Device (IUD)"
-    ],
-    "answer": "Condoms",
-    "explanation": "Condoms act as a physical barrier, preventing the exchange of bodily fluids that carry STIs."
-  },
-  {
-    "id": "p13",
-    "question": "Which of the following is a function of the skeleton?",
-    "options": [
-      "Support and protection of organs",
-      "Producing urine",
-      "Digesting food",
-      "Carrying oxygen"
-    ],
-    "answer": "Support and protection of organs",
-    "explanation": "The skeleton supports the body and protects organs like the brain and heart."
-  },
-  {
-    "id": "p14",
-    "question": "The point where two bones meet is called a:",
-    "options": [
-      "joint",
-      "ligament",
-      "muscle",
-      "tendon"
-    ],
-    "answer": "joint",
-    "explanation": "Joints connect bones, allowing movement."
-  },
-  {
-    "id": "p15",
-    "question": "Which structure connects bone to bone?",
-    "options": [
-      "Ligament",
-      "Tendon",
-      "Cartilage",
-      "Muscle"
-    ],
-    "answer": "Ligament",
-    "explanation": "Ligaments hold bones together at joints."
-  },
-  {
-    "id": "p16",
-    "question": "A tendon connects:",
-    "options": [
-      "muscle to bone",
-      "bone to bone",
-      "muscle to muscle",
-      "nerve to bone"
-    ],
-    "answer": "muscle to bone",
-    "explanation": "Tendons attach muscles to bones."
-  },
-  {
-    "id": "p17",
-    "question": "Which type of muscle is found in the heart?",
-    "options": [
-      "Cardiac muscle",
-      "Skeletal muscle",
-      "Smooth muscle",
-      "Voluntary muscle"
-    ],
-    "answer": "Cardiac muscle",
-    "explanation": "Cardiac muscle pumps blood involuntarily."
-  },
-  {
-    "id": "p18",
-    "question": "When the biceps contracts, the arm:",
-    "options": [
-      "bends (flexes)",
-      "straightens",
-      "lifts sideways",
-      "remains still"
-    ],
-    "answer": "bends (flexes)",
-    "explanation": "The biceps is a flexor, bending the elbow."
-  },
-  {
-    "id": "p19",
-    "question": "The triceps is responsible for:",
-    "options": [
-      "straightening the arm",
-      "bending the arm",
-      "rotating the wrist",
-      "moving the fingers"
-    ],
-    "answer": "straightening the arm",
-    "explanation": "The triceps is an extensor, straightening the elbow."
-  },
-  {
-    "id": "p20",
-    "question": "Red blood cells are produced in the:",
-    "options": [
-      "bone marrow",
-      "liver",
-      "spleen",
-      "kidney"
-    ],
-    "answer": "bone marrow",
-    "explanation": "Bone marrow produces red blood cells (erythropoiesis)."
-  },
-  {
-    "id": "p21",
-    "question": "Which blood vessel has valves?",
-    "options": [
-      "Vein",
-      "Artery",
-      "Capillary",
-      "Aorta"
-    ],
-    "answer": "Vein",
-    "explanation": "Veins have valves preventing backflow of blood."
-  },
-  {
-    "id": "p22",
-    "question": "Blood flows from the right ventricle to the:",
-    "options": [
-      "lungs",
-      "aorta",
-      "left atrium",
-      "brain"
-    ],
-    "answer": "lungs",
-    "explanation": "The right ventricle pumps deoxygenated blood to the lungs."
-  },
-  {
-    "id": "p23",
-    "question": "The structure that prevents blood flowing back into the heart is the:",
-    "options": [
-      "valve",
-      "artery",
-      "capillary",
-      "septum"
-    ],
-    "answer": "valve",
-    "explanation": "Heart valves ensure one-way blood flow."
-  },
-  {
-    "id": "p24",
-    "question": "Which blood component transports carbon dioxide?",
-    "options": [
-      "Plasma",
-      "Platelets",
-      "White blood cells",
-      "Haemoglobin only"
-    ],
-    "answer": "Plasma",
-    "explanation": "Plasma carries CO₂ dissolved as bicarbonate."
-  },
-  {
-    "id": "p25",
-    "question": "The pulse is caused by:",
-    "options": [
-      "the expansion of arteries as blood is pumped",
-      "muscle contraction",
-      "breathing",
-      "nerve impulses"
-    ],
-    "answer": "the expansion of arteries as blood is pumped",
-    "explanation": "Each heartbeat creates a pressure wave in arteries."
-  },
-  {
-    "id": "p26",
-    "question": "Which is the correct path of blood through the heart?",
-    "options": [
-      "Right atrium → right ventricle → lungs → left atrium → left ventricle → body",
-      "Left atrium → right atrium → lungs → body",
-      "Right ventricle → left ventricle → lungs",
-      "Lungs → right ventricle → body"
-    ],
-    "answer": "Right atrium → right ventricle → lungs → left atrium → left ventricle → body",
-    "explanation": "Deoxygenated blood goes to lungs, then oxygenated blood circulates."
-  },
-  {
-    "id": "p27",
-    "question": "What is the function of haemoglobin?",
-    "options": [
-      "Carries oxygen",
-      "Clots blood",
-      "Fights infection",
-      "Produces hormones"
-    ],
-    "answer": "Carries oxygen",
-    "explanation": "Haemoglobin binds oxygen in red blood cells."
-  },
-  {
-    "id": "p28",
-    "question": "The walls of which blood vessel are only one cell thick?",
-    "options": [
-      "Capillary",
-      "Artery",
-      "Vein",
-      "Venule"
-    ],
-    "answer": "Capillary",
-    "explanation": "Capillary walls allow exchange of substances."
-  },
-  {
-    "id": "p29",
-    "question": "Breathing in is called:",
-    "options": [
-      "inhalation",
-      "exhalation",
-      "respiration",
-      "ventilation only"
-    ],
-    "answer": "inhalation",
-    "explanation": "Inhalation draws air into the lungs."
-  },
-  {
-    "id": "p30",
-    "question": "The dome-shaped muscle below the lungs is the:",
-    "options": [
-      "diaphragm",
-      "pleura",
-      "trachea",
-      "larynx"
-    ],
-    "answer": "diaphragm",
-    "explanation": "The diaphragm aids breathing by contracting and relaxing."
-  },
-  {
-    "id": "p31",
-    "question": "Which of the following increases the rate of breathing?",
-    "options": [
-      "Exercise",
-      "Sleeping",
-      "Sitting still",
-      "Meditation"
-    ],
-    "answer": "Exercise",
-    "explanation": "Exercise raises oxygen demand and CO₂ production."
-  },
-  {
-    "id": "p32",
-    "question": "Gaseous exchange in the lungs occurs by:",
-    "options": [
-      "diffusion",
-      "osmosis",
-      "active transport",
-      "filtration"
-    ],
-    "answer": "diffusion",
-    "explanation": "Oxygen and CO₂ diffuse across alveolar walls."
-  },
-  {
-    "id": "p33",
-    "question": "Which of the following is a product of anaerobic respiration in muscles?",
-    "options": [
-      "Lactic acid",
-      "Ethanol",
-      "Carbon dioxide only",
-      "Water"
-    ],
-    "answer": "Lactic acid",
-    "explanation": "Muscles produce lactic acid during anaerobic respiration."
-  },
-  {
-    "id": "p34",
-    "question": "Aerobic respiration releases energy from glucose using:",
-    "options": [
-      "oxygen",
-      "nitrogen",
-      "carbon dioxide",
-      "hydrogen"
-    ],
-    "answer": "oxygen",
-    "explanation": "Aerobic respiration requires oxygen."
-  },
-  {
-    "id": "p35",
-    "question": "The chemical equation for aerobic respiration is:",
-    "options": [
-      "Glucose + Oxygen → Carbon dioxide + Water + Energy",
-      "Glucose → Lactic acid + Energy",
-      "Carbon dioxide + Water → Glucose + Oxygen",
-      "Glucose + Water → Energy"
-    ],
-    "answer": "Glucose + Oxygen → Carbon dioxide + Water + Energy",
-    "explanation": "Glucose and oxygen yield CO₂, water and energy."
-  },
-  {
-    "id": "p36",
-    "question": "Which organ removes urea from the blood?",
-    "options": [
-      "Kidney",
-      "Lung",
-      "Heart",
-      "Stomach"
-    ],
-    "answer": "Kidney",
-    "explanation": "The kidneys filter urea and excrete it in urine."
-  },
-  {
-    "id": "p37",
-    "question": "Urea is produced in the:",
-    "options": [
-      "liver",
-      "kidney",
-      "bladder",
-      "pancreas"
-    ],
-    "answer": "liver",
-    "explanation": "The liver deaminates amino acids, producing urea."
-  },
-  {
-    "id": "p38",
-    "question": "Which of the following is NOT excreted by the body?",
-    "options": [
-      "Glucose",
-      "Urea",
-      "Carbon dioxide",
-      "Water"
-    ],
-    "answer": "Glucose",
-    "explanation": "Glucose is normally reabsorbed, not excreted."
-  },
-  {
-    "id": "p39",
-    "question": "The tube connecting the kidney to the bladder is the:",
-    "options": [
-      "ureter",
-      "urethra",
-      "nephron",
-      "aorta"
-    ],
-    "answer": "ureter",
-    "explanation": "Ureters carry urine from kidneys to bladder."
-  },
-  {
-    "id": "p40",
-    "question": "Urine leaves the body through the:",
-    "options": [
-      "urethra",
-      "ureter",
-      "kidney",
-      "bladder"
-    ],
-    "answer": "urethra",
-    "explanation": "The urethra carries urine out of the body."
-  },
-  {
-    "id": "p41",
-    "question": "Sweating helps regulate body temperature by:",
-    "options": [
-      "evaporation cooling the skin",
-      "producing heat",
-      "storing water",
-      "increasing blood flow only"
-    ],
-    "answer": "evaporation cooling the skin",
-    "explanation": "Evaporating sweat removes heat energy."
-  },
-  {
-    "id": "p42",
-    "question": "Which gland produces insulin?",
-    "options": [
-      "Pancreas",
-      "Thyroid",
-      "Adrenal",
-      "Pituitary"
-    ],
-    "answer": "Pancreas",
-    "explanation": "The pancreas secretes insulin."
-  },
-  {
-    "id": "p43",
-    "question": "Insulin lowers blood glucose by:",
-    "options": [
-      "converting glucose to glycogen",
-      "releasing more sugar",
-      "stopping glucose absorption",
-      "increasing appetite"
-    ],
-    "answer": "converting glucose to glycogen",
-    "explanation": "Insulin promotes glycogen storage, lowering blood sugar."
-  },
-  {
-    "id": "p44",
-    "question": "A deficiency of thyroxine can cause:",
-    "options": [
-      "slow metabolism",
-      "rapid growth",
-      "diabetes",
-      "anaemia"
-    ],
-    "answer": "slow metabolism",
-    "explanation": "Thyroxine controls metabolic rate."
-  },
-  {
-    "id": "p45",
-    "question": "Growth hormone is produced by the:",
-    "options": [
-      "pituitary gland",
-      "pancreas",
-      "adrenal gland",
-      "thyroid"
-    ],
-    "answer": "pituitary gland",
-    "explanation": "The pituitary gland secretes growth hormone."
-  },
-  {
-    "id": "p46",
-    "question": "Which of the following is a sense organ?",
-    "options": [
-      "Ear",
-      "Kidney",
-      "Liver",
-      "Pancreas"
-    ],
-    "answer": "Ear",
-    "explanation": "The ear detects sound (sensory organ)."
-  },
-  {
-    "id": "p47",
-    "question": "The retina of the eye contains:",
-    "options": [
-      "light-sensitive cells",
-      "bone cells",
-      "sweat glands",
-      "hair cells"
-    ],
-    "answer": "light-sensitive cells",
-    "explanation": "Rods and cones in the retina detect light."
-  },
-  {
-    "id": "p48",
-    "question": "The lens of the eye focuses light onto the:",
-    "options": [
-      "retina",
-      "iris",
-      "cornea",
-      "pupil"
-    ],
-    "answer": "retina",
-    "explanation": "The lens refracts light to focus on the retina."
-  },
-  {
-    "id": "p49",
-    "question": "Which part of the ear converts vibrations into nerve impulses?",
-    "options": [
-      "Cochlea",
-      "Eardrum",
-      "Pinna",
-      "Ear canal"
-    ],
-    "answer": "Cochlea",
-    "explanation": "The cochlea contains hair cells that generate impulses."
-  },
-  {
-    "id": "p50",
-    "question": "The sense of taste is detected by:",
-    "options": [
-      "taste buds on the tongue",
-      "the nose",
-      "the ears",
-      "the skin"
-    ],
-    "answer": "taste buds on the tongue",
-    "explanation": "Taste buds on the tongue detect chemicals in food."
-  },
-  {
-    "id": "p51",
-    "question": "Which of the following is a stimulant?",
-    "options": [
-      "Caffeine",
-      "Alcohol",
-      "Marijuana",
-      "Paracetamol"
-    ],
-    "answer": "Caffeine",
-    "explanation": "Caffeine speeds up the nervous system."
-  },
-  {
-    "id": "p52",
-    "question": "Alcohol abuse can cause:",
-    "options": [
-      "liver damage",
-      "better memory",
-      "stronger bones",
-      "healthier lungs"
-    ],
-    "answer": "liver damage",
-    "explanation": "Alcohol damages the liver (cirrhosis)."
-  },
-  {
-    "id": "p53",
-    "question": "Smoking tobacco increases the risk of:",
-    "options": [
-      "lung cancer",
-      "diabetes only",
-      "anaemia",
-      "goitre"
-    ],
-    "answer": "lung cancer",
-    "explanation": "Cigarette smoke contains carcinogens causing lung cancer."
-  },
-  {
-    "id": "p54",
-    "question": "Which drug is used as a pain reliever?",
-    "options": [
-      "Aspirin",
-      "Cocaine",
-      "Heroin",
-      "Nicotine"
-    ],
-    "answer": "Aspirin",
-    "explanation": "Aspirin is an analgesic (pain reliever)."
-  },
-  {
-    "id": "p55",
-    "question": "Drug addiction is best described as:",
-    "options": [
-      "a physical and psychological dependence on a drug",
-      "occasional use",
-      "prescribed medicine",
-      "a healthy habit"
-    ],
-    "answer": "a physical and psychological dependence on a drug",
-    "explanation": "Addiction involves compulsive drug use despite harm."
-  },
-  {
-    "id": "p56",
-    "question": "Which of the following is a communicable disease?",
-    "options": [
-      "Influenza",
-      "Heart disease",
-      "Cancer",
-      "Diabetes"
-    ],
-    "answer": "Influenza",
-    "explanation": "Influenza spreads from person to person."
-  },
-  {
-    "id": "p57",
-    "question": "Tuberculosis (TB) mainly affects the:",
-    "options": [
-      "lungs",
-      "kidneys",
-      "skin",
-      "brain"
-    ],
-    "answer": "lungs",
-    "explanation": "TB is a bacterial infection of the lungs."
-  },
-  {
-    "id": "p58",
-    "question": "Cholera is spread mainly through:",
-    "options": [
-      "contaminated water and food",
-      "mosquito bites",
-      "the air",
-      "blood transfusion"
-    ],
-    "answer": "contaminated water and food",
-    "explanation": "Cholera bacteria spread via faecal-oral contamination."
-  },
-  {
-    "id": "p59",
-    "question": "Which disease is transmitted by the Aedes mosquito?",
-    "options": [
-      "Dengue fever",
-      "Cholera",
-      "Tuberculosis",
-      "Measles"
-    ],
-    "answer": "Dengue fever",
-    "explanation": "Aedes aegypti transmits dengue."
-  },
-  {
-    "id": "p60",
-    "question": "Malaria is caused by a:",
-    "options": [
-      "protozoan",
-      "virus",
-      "bacterium",
-      "fungus"
-    ],
-    "answer": "protozoan",
-    "explanation": "Plasmodium, a protozoan, causes malaria."
-  },
-  {
-    "id": "p61",
-    "question": "Which of the following is a barrier method of contraception?",
-    "options": [
-      "Condom",
-      "Pill",
-      "Injection",
-      "Implant"
-    ],
-    "answer": "Condom",
-    "explanation": "Condoms physically block sperm."
-  },
-  {
-    "id": "p62",
-    "question": "The contraceptive pill works by:",
-    "options": [
-      "preventing ovulation",
-      "killing sperm",
-      "blocking the uterus",
-      "increasing sperm count"
-    ],
-    "answer": "preventing ovulation",
-    "explanation": "Hormonal pills inhibit ovulation."
-  },
-  {
-    "id": "p63",
-    "question": "Which contraceptive also protects against STIs?",
-    "options": [
-      "Condom",
-      "Pill",
-      "IUD",
-      "Vasectomy"
-    ],
-    "answer": "Condom",
-    "explanation": "Condoms prevent STI transmission."
-  },
-  {
-    "id": "p64",
-    "question": "HIV attacks which type of cells?",
-    "options": [
-      "White blood cells (lymphocytes)",
-      "Red blood cells",
-      "Platelets",
-      "Bone cells"
-    ],
-    "answer": "White blood cells (lymphocytes)",
-    "explanation": "HIV destroys helper T-lymphocytes, weakening immunity."
-  },
-  {
-    "id": "p65",
-    "question": "HIV can be transmitted through:",
-    "options": [
-      "unprotected sexual intercourse",
-      "sharing meals",
-      "hugging",
-      "mosquito bites"
-    ],
-    "answer": "unprotected sexual intercourse",
-    "explanation": "HIV spreads via body fluids like blood and semen."
-  },
-  {
-    "id": "p66",
-    "question": "A person with AIDS has:",
-    "options": [
-      "a severely weakened immune system",
-      "extra immunity",
-      "no symptoms ever",
-      "stronger bones"
-    ],
-    "answer": "a severely weakened immune system",
-    "explanation": "AIDS is the advanced stage of HIV infection."
-  },
-  {
-    "id": "p67",
-    "question": "Which of the following is classified as a non-communicable (lifestyle) disease?",
-    "options": [
-      "Diabetes",
-      "Measles",
-      "Chickenpox",
-      "Malaria"
-    ],
-    "answer": "Diabetes",
-    "explanation": "Diabetes is not transmitted between people."
-  },
-  {
-    "id": "p68",
-    "question": "Obesity increases the risk of:",
-    "options": [
-      "heart disease",
-      "cholera",
-      "malaria",
-      "flu"
-    ],
-    "answer": "heart disease",
-    "explanation": "Obesity is linked to hypertension and heart disease."
-  },
-  {
-    "id": "p69",
-    "question": "Which of the following helps prevent heart disease?",
-    "options": [
-      "Regular exercise",
-      "Smoking",
-      "High-fat diet",
-      "Stress"
-    ],
-    "answer": "Regular exercise",
-    "explanation": "Exercise strengthens the heart and lowers blood pressure."
-  },
-  {
-    "id": "p70",
-    "question": "Hypertension means:",
-    "options": [
-      "high blood pressure",
-      "low blood sugar",
-      "fast breathing",
-      "weak bones"
-    ],
-    "answer": "high blood pressure",
-    "explanation": "Hypertension is chronically elevated blood pressure."
-  },
-  {
-    "id": "p71",
-    "question": "A balanced diet should contain:",
-    "options": [
-      "all nutrients in correct proportions",
-      "only carbohydrates",
-      "only proteins",
-      "no fats"
-    ],
-    "answer": "all nutrients in correct proportions",
-    "explanation": "Balance means adequate carbohydrates, proteins, fats, vitamins and minerals."
-  },
-  {
-    "id": "p72",
-    "question": "Which nutrient is the body's main source of energy?",
-    "options": [
-      "Carbohydrates",
-      "Proteins",
-      "Vitamins",
-      "Minerals"
-    ],
-    "answer": "Carbohydrates",
-    "explanation": "Carbohydrates provide readily available energy."
-  },
-  {
-    "id": "p73",
-    "question": "Proteins are essential for:",
-    "options": [
-      "growth and repair of tissues",
-      "storing energy only",
-      "cooling the body",
-      "digesting fats"
-    ],
-    "answer": "growth and repair of tissues",
-    "explanation": "Proteins build and repair body cells."
-  },
-  {
-    "id": "p74",
-    "question": "Which vitamin prevents night blindness?",
-    "options": [
-      "Vitamin A",
-      "Vitamin C",
-      "Vitamin D",
-      "Vitamin B12"
-    ],
-    "answer": "Vitamin A",
-    "explanation": "Vitamin A is needed for vision in dim light."
-  },
-  {
-    "id": "p75",
-    "question": "A deficiency of Vitamin D causes:",
-    "options": [
-      "rickets",
-      "scurvy",
-      "anaemia",
-      "goitre"
-    ],
-    "answer": "rickets",
-    "explanation": "Vitamin D deficiency causes rickets (soft bones)."
-  },
-  {
-    "id": "p76",
-    "question": "Which mineral prevents goitre?",
-    "options": [
-      "Iodine",
-      "Iron",
-      "Calcium",
-      "Sodium"
-    ],
-    "answer": "Iodine",
-    "explanation": "Iodine is needed for thyroxine production."
-  },
-  {
-    "id": "p77",
-    "question": "Iron deficiency causes:",
-    "options": [
-      "anaemia",
-      "scurvy",
-      "rickets",
-      "night blindness"
-    ],
-    "answer": "anaemia",
-    "explanation": "Iron is needed to make haemoglobin."
-  },
-  {
-    "id": "p78",
-    "question": "Kwashiorkor is caused by a deficiency of:",
-    "options": [
-      "protein",
-      "carbohydrates",
-      "vitamin C",
-      "calcium"
-    ],
-    "answer": "protein",
-    "explanation": "Kwashiorkor is severe protein deficiency."
-  },
-  {
-    "id": "p79",
-    "question": "Which of the following is a symptom of marasmus?",
-    "options": [
-      "Severe wasting from energy deficiency",
-      "Bleeding gums",
-      "Soft bones",
-      "Swollen joints"
-    ],
-    "answer": "Severe wasting from energy deficiency",
-    "explanation": "Marasmus results from severe calorie deficiency."
-  },
-  {
-    "id": "p80",
-    "question": "The process of breaking down food into soluble substances is:",
-    "options": [
-      "digestion",
-      "absorption",
-      "egestion",
-      "respiration"
-    ],
-    "answer": "digestion",
-    "explanation": "Digestion breaks food into absorbable molecules."
-  },
-  {
-    "id": "p81",
-    "question": "Saliva contains which enzyme?",
-    "options": [
-      "Amylase",
-      "Pepsin",
-      "Lipase",
-      "Trypsin"
-    ],
-    "answer": "Amylase",
-    "explanation": "Salivary amylase digests starch."
-  },
-  {
-    "id": "p82",
-    "question": "Pepsin digests:",
-    "options": [
-      "proteins",
-      "carbohydrates",
-      "fats",
-      "fibre"
-    ],
-    "answer": "proteins",
-    "explanation": "Pepsin breaks proteins into peptides in the stomach."
-  },
-  {
-    "id": "p83",
-    "question": "Bile helps in the digestion of:",
-    "options": [
-      "fats",
-      "proteins",
-      "starch",
-      "minerals"
-    ],
-    "answer": "fats",
-    "explanation": "Bile emulsifies fats, aiding lipase action."
-  },
-  {
-    "id": "p84",
-    "question": "The small intestine is adapted for absorption by:",
-    "options": [
-      "villi",
-      "acid",
-      "teeth",
-      "peristalsis only"
-    ],
-    "answer": "villi",
-    "explanation": "Villi increase surface area for absorption."
-  },
-  {
-    "id": "p85",
-    "question": "Which of the following is absorbed directly into the bloodstream?",
-    "options": [
-      "Glucose",
-      "Starch",
-      "Cellulose",
-      "Fat droplets"
-    ],
-    "answer": "Glucose",
-    "explanation": "Glucose is absorbed into capillaries of villi."
-  },
-  {
-    "id": "p86",
-    "question": "Water is absorbed mainly in the:",
-    "options": [
-      "large intestine",
-      "stomach",
-      "mouth",
-      "oesophagus"
-    ],
-    "answer": "large intestine",
-    "explanation": "The colon absorbs water and minerals."
-  },
-  {
-    "id": "p87",
-    "question": "The appendix is attached to the:",
-    "options": [
-      "large intestine",
-      "stomach",
-      "liver",
-      "pancreas"
-    ],
-    "answer": "large intestine",
-    "explanation": "The appendix projects from the caecum of the large intestine."
-  },
-  {
-    "id": "p88",
-    "question": "Tooth decay is caused by:",
-    "options": [
-      "bacteria acting on sugars",
-      "chewing gum",
-      "cold drinks only",
-      "brushing too much"
-    ],
-    "answer": "bacteria acting on sugars",
-    "explanation": "Bacteria ferment sugars, producing acids that erode enamel."
-  },
-  {
-    "id": "p89",
-    "question": "Which of the following prevents tooth decay?",
-    "options": [
-      "Fluoride in toothpaste",
-      "Eating sweets",
-      "Skipping brushing",
-      "Drinking sugary drinks"
-    ],
-    "answer": "Fluoride in toothpaste",
-    "explanation": "Fluoride strengthens enamel against acid."
-  },
-  {
-    "id": "p90",
-    "question": "Fertilisation in humans occurs in the:",
-    "options": [
-      "fallopian tube",
-      "uterus",
-      "ovary",
-      "vagina"
-    ],
-    "answer": "fallopian tube",
-    "explanation": "The egg is fertilised in the fallopian tube."
-  },
-  {
-    "id": "p91",
-    "question": "The placenta allows:",
-    "options": [
-      "exchange of nutrients and wastes",
-      "production of eggs",
-      "urine storage",
-      "sperm production"
-    ],
-    "answer": "exchange of nutrients and wastes",
-    "explanation": "The placenta exchanges oxygen, nutrients and wastes."
-  },
-  {
-    "id": "p92",
-    "question": "Puberty in girls begins with:",
-    "options": [
-      "menstruation",
-      "menopause",
-      "pregnancy",
-      "lactation"
-    ],
-    "answer": "menstruation",
-    "explanation": "Menarche (first menstruation) marks puberty onset."
-  },
-  {
-    "id": "p93",
-    "question": "The menstrual cycle is controlled by:",
-    "options": [
-      "hormones",
-      "nerves only",
-      "blood pressure",
-      "diet only"
-    ],
-    "answer": "hormones",
-    "explanation": "Oestrogen and progesterone regulate the cycle."
-  },
-  {
-    "id": "p94",
-    "question": "The average duration of the menstrual cycle is:",
-    "options": [
-      "28 days",
-      "7 days",
-      "40 days",
-      "14 days"
-    ],
-    "answer": "28 days",
-    "explanation": "The typical cycle is about 28 days."
-  },
-  {
-    "id": "p95",
-    "question": "Which of the following is a method of preventing pregnancy?",
-    "options": [
-      "Contraception",
-      "Exercise",
-      "Dieting",
-      "Vaccination"
-    ],
-    "answer": "Contraception",
-    "explanation": "Contraception prevents conception."
-  },
-  {
-    "id": "p96",
-    "question": "Sexually transmitted infections can be prevented by:",
-    "options": [
-      "using condoms",
-      "sharing needles",
-      "multiple partners",
-      "avoiding testing"
-    ],
-    "answer": "using condoms",
-    "explanation": "Condoms reduce STI transmission."
-  },
-  {
-    "id": "p97",
-    "question": "Which of the following is a public health measure?",
-    "options": [
-      "Vaccination programmes",
-      "Private gyms",
-      "Personal cars",
-      "Gated communities"
-    ],
-    "answer": "Vaccination programmes",
-    "explanation": "Vaccination protects whole communities."
-  },
-  {
-    "id": "p98",
-    "question": "Vaccination provides immunity by:",
-    "options": [
-      "stimulating antibody production",
-      "killing all germs instantly",
-      "lowering body temperature",
-      "increasing white cell count only"
-    ],
-    "answer": "stimulating antibody production",
-    "explanation": "Vaccines trigger the immune system to produce antibodies."
-  },
-  {
-    "id": "p99",
-    "question": "Herd immunity occurs when:",
-    "options": [
-      "a large proportion of the population is immune",
-      "everyone is sick",
-      "no one is vaccinated",
-      "hospitals close"
-    ],
-    "answer": "a large proportion of the population is immune",
-    "explanation": "High vaccination rates protect the vulnerable."
-  },
-  {
-    "id": "p100",
-    "question": "Which of the following is a vector for disease?",
-    "options": [
-      "Mosquito",
-      "River",
-      "Building",
-      "Fruit"
-    ],
-    "answer": "Mosquito",
-    "explanation": "Mosquitoes transmit malaria and dengue."
-  }
+ {
+  "id": "p1",
+  "question": "Which of the following is NOT a function of the human skeleton?",
+  "options": [
+   "Production of blood cells",
+   "Storage of minerals",
+   "Coordination of nerve impulses",
+   "Protection of internal organs"
+  ],
+  "answer": "Coordination of nerve impulses",
+  "explanation": "Nerve coordination is a function of the nervous system, not the skeletal system.",
+  "topic": "hsb-l1-1"
+ },
+ {
+  "id": "p2",
+  "question": "When you bend your arm at the elbow, the biceps muscle ________ and the triceps muscle ________.",
+  "options": [
+   "contracts; relaxes",
+   "relaxes; contracts",
+   "contracts; contracts",
+   "relaxes; relaxes"
+  ],
+  "answer": "contracts; relaxes",
+  "explanation": "Biceps and triceps are an antagonistic pair; the biceps (agonist) must contract to bend the arm.",
+  "topic": "hsb-l1-1"
+ },
+ {
+  "id": "p3",
+  "question": "Which pathway correctly shows the flow of deoxygenated blood through the heart?",
+  "options": [
+   "Left atrium -> Left ventricle -> Aorta",
+   "Right atrium -> Right ventricle -> Pulmonary artery",
+   "Vena cava -> Left atrium -> Left ventricle",
+   "Pulmonary vein -> Right atrium -> Right ventricle"
+  ],
+  "answer": "Right atrium -> Right ventricle -> Pulmonary artery",
+  "explanation": "The right side of the heart receives deoxygenated blood and pumps it to the lungs via the pulmonary artery.",
+  "topic": "hsb-l1-2"
+ },
+ {
+  "id": "p4",
+  "question": "In which part of the respiratory system does gaseous exchange take place?",
+  "options": [
+   "Trachea",
+   "Bronchi",
+   "Alveoli",
+   "Diaphragm"
+  ],
+  "answer": "Alveoli",
+  "explanation": "Alveoli are tiny air sacs with thin walls where oxygen enters and carbon dioxide leaves the blood.",
+  "topic": "hsb-l1-2"
+ },
+ {
+  "id": "p5",
+  "question": "What is the main function of the 'villi' in the small intestine?",
+  "options": [
+   "To secrete digestive enzymes",
+   "To store waste before elimination",
+   "To increase surface area for absorption",
+   "To move food along the gut"
+  ],
+  "answer": "To increase surface area for absorption",
+  "explanation": "Villi and microvilli provide a massive surface area to maximize the absorption of digested nutrients.",
+  "topic": "hsb-l3-2"
+ },
+ {
+  "id": "p6",
+  "question": "A deficiency of Vitamin C in the diet can lead to which disease?",
+  "options": [
+   "Night blindness",
+   "Scurvy",
+   "Rickets",
+   "Anemia"
+  ],
+  "answer": "Scurvy",
+  "explanation": "Vitamin C is essential for healthy skin and gums; its lack causes scurvy.",
+  "topic": "hsb-l3-1"
+ },
+ {
+  "id": "p7",
+  "question": "Which of the following is a non-communicable disease?",
+  "options": [
+   "Malaria",
+   "HIV/AIDS",
+   "Diabetes",
+   "Tuberculosis"
+  ],
+  "answer": "Diabetes",
+  "explanation": "Diabetes is a metabolic disorder and cannot be spread from person to person.",
+  "topic": "hsb-l4-1"
+ },
+ {
+  "id": "p8",
+  "question": "Vaccinations provide 'active immunity' because they:",
+  "options": [
+   "Introduce ready-made antibodies",
+   "Stimulate the body to produce its own antibodies",
+   "Kill pathogens directly in the blood",
+   "Provide temporary protection only"
+  ],
+  "answer": "Stimulate the body to produce its own antibodies",
+  "explanation": "Vaccines use harmless pathogens to trigger the immune response and create long-term memory cells.",
+  "topic": "hsb-l4-2"
+ },
+ {
+  "id": "p9",
+  "question": "The excessive use of chemical fertilizers near a river can cause 'eutrophication,' which leads to:",
+  "options": [
+   "Increased fish population",
+   "Oxygen depletion and death of aquatic life",
+   "Clearer water for swimming",
+   "Reduced algae growth"
+  ],
+  "answer": "Oxygen depletion and death of aquatic life",
+  "explanation": "Fertilizers cause algae blooms that block light and use up oxygen when they decompose.",
+  "topic": "hsb-l5-1"
+ },
+ {
+  "id": "p10",
+  "question": "Which method of waste disposal involves burying waste in a large, lined hole in the ground?",
+  "options": [
+   "Incineration",
+   "Recycling",
+   "Landfill",
+   "Composting"
+  ],
+  "answer": "Landfill",
+  "explanation": "A sanitary landfill is a managed site for the disposal of non-biodegradable and other solid waste.",
+  "topic": "hsb-l5-2"
+ },
+ {
+  "id": "p11",
+  "question": "Which of the following is a stimulant drug that speeds up the central nervous system?",
+  "options": [
+   "Alcohol",
+   "Cocaine",
+   "Heroin",
+   "Cannabis"
+  ],
+  "answer": "Cocaine",
+  "explanation": "Cocaine is a powerful stimulant; alcohol and heroin are depressants.",
+  "topic": "hsb-l6-1"
+ },
+ {
+  "id": "p12",
+  "question": "Which contraceptive method also provides significant protection against Sexually Transmitted Infections (STIs)?",
+  "options": [
+   "The Pill",
+   "Condoms",
+   "Vasectomy",
+   "Intrauterine Device (IUD)"
+  ],
+  "answer": "Condoms",
+  "explanation": "Condoms act as a physical barrier, preventing the exchange of bodily fluids that carry STIs.",
+  "topic": "hsb-l6-2"
+ },
+ {
+  "id": "p13",
+  "question": "Which of the following is a function of the skeleton?",
+  "options": [
+   "Support and protection of organs",
+   "Producing urine",
+   "Digesting food",
+   "Carrying oxygen"
+  ],
+  "answer": "Support and protection of organs",
+  "explanation": "The skeleton supports the body and protects organs like the brain and heart.",
+  "topic": "hsb-l1-1"
+ },
+ {
+  "id": "p14",
+  "question": "The point where two bones meet is called a:",
+  "options": [
+   "joint",
+   "ligament",
+   "muscle",
+   "tendon"
+  ],
+  "answer": "joint",
+  "explanation": "Joints connect bones, allowing movement.",
+  "topic": "hsb-l1-1"
+ },
+ {
+  "id": "p15",
+  "question": "Which structure connects bone to bone?",
+  "options": [
+   "Ligament",
+   "Tendon",
+   "Cartilage",
+   "Muscle"
+  ],
+  "answer": "Ligament",
+  "explanation": "Ligaments hold bones together at joints.",
+  "topic": "hsb-l1-1"
+ },
+ {
+  "id": "p16",
+  "question": "A tendon connects:",
+  "options": [
+   "muscle to bone",
+   "bone to bone",
+   "muscle to muscle",
+   "nerve to bone"
+  ],
+  "answer": "muscle to bone",
+  "explanation": "Tendons attach muscles to bones.",
+  "topic": "hsb-l1-1"
+ },
+ {
+  "id": "p17",
+  "question": "Which type of muscle is found in the heart?",
+  "options": [
+   "Cardiac muscle",
+   "Skeletal muscle",
+   "Smooth muscle",
+   "Voluntary muscle"
+  ],
+  "answer": "Cardiac muscle",
+  "explanation": "Cardiac muscle pumps blood involuntarily.",
+  "topic": "hsb-l1-1"
+ },
+ {
+  "id": "p18",
+  "question": "When the biceps contracts, the arm:",
+  "options": [
+   "bends (flexes)",
+   "straightens",
+   "lifts sideways",
+   "remains still"
+  ],
+  "answer": "bends (flexes)",
+  "explanation": "The biceps is a flexor, bending the elbow.",
+  "topic": "hsb-l1-1"
+ },
+ {
+  "id": "p19",
+  "question": "The triceps is responsible for:",
+  "options": [
+   "straightening the arm",
+   "bending the arm",
+   "rotating the wrist",
+   "moving the fingers"
+  ],
+  "answer": "straightening the arm",
+  "explanation": "The triceps is an extensor, straightening the elbow.",
+  "topic": "hsb-l1-1"
+ },
+ {
+  "id": "p20",
+  "question": "Red blood cells are produced in the:",
+  "options": [
+   "bone marrow",
+   "liver",
+   "spleen",
+   "kidney"
+  ],
+  "answer": "bone marrow",
+  "explanation": "Bone marrow produces red blood cells (erythropoiesis).",
+  "topic": "hsb-l1-2"
+ },
+ {
+  "id": "p21",
+  "question": "Which blood vessel has valves?",
+  "options": [
+   "Vein",
+   "Artery",
+   "Capillary",
+   "Aorta"
+  ],
+  "answer": "Vein",
+  "explanation": "Veins have valves preventing backflow of blood.",
+  "topic": "hsb-l1-2"
+ },
+ {
+  "id": "p22",
+  "question": "Blood flows from the right ventricle to the:",
+  "options": [
+   "lungs",
+   "aorta",
+   "left atrium",
+   "brain"
+  ],
+  "answer": "lungs",
+  "explanation": "The right ventricle pumps deoxygenated blood to the lungs.",
+  "topic": "hsb-l1-2"
+ },
+ {
+  "id": "p23",
+  "question": "The structure that prevents blood flowing back into the heart is the:",
+  "options": [
+   "valve",
+   "artery",
+   "capillary",
+   "septum"
+  ],
+  "answer": "valve",
+  "explanation": "Heart valves ensure one-way blood flow.",
+  "topic": "hsb-l1-2"
+ },
+ {
+  "id": "p24",
+  "question": "Which blood component transports carbon dioxide?",
+  "options": [
+   "Plasma",
+   "Platelets",
+   "White blood cells",
+   "Haemoglobin only"
+  ],
+  "answer": "Plasma",
+  "explanation": "Plasma carries CO₂ dissolved as bicarbonate.",
+  "topic": "hsb-l1-2"
+ },
+ {
+  "id": "p25",
+  "question": "The pulse is caused by:",
+  "options": [
+   "the expansion of arteries as blood is pumped",
+   "muscle contraction",
+   "breathing",
+   "nerve impulses"
+  ],
+  "answer": "the expansion of arteries as blood is pumped",
+  "explanation": "Each heartbeat creates a pressure wave in arteries.",
+  "topic": "hsb-l1-2"
+ },
+ {
+  "id": "p26",
+  "question": "Which is the correct path of blood through the heart?",
+  "options": [
+   "Right atrium → right ventricle → lungs → left atrium → left ventricle → body",
+   "Left atrium → right atrium → lungs → body",
+   "Right ventricle → left ventricle → lungs",
+   "Lungs → right ventricle → body"
+  ],
+  "answer": "Right atrium → right ventricle → lungs → left atrium → left ventricle → body",
+  "explanation": "Deoxygenated blood goes to lungs, then oxygenated blood circulates.",
+  "topic": "hsb-l1-2"
+ },
+ {
+  "id": "p27",
+  "question": "What is the function of haemoglobin?",
+  "options": [
+   "Carries oxygen",
+   "Clots blood",
+   "Fights infection",
+   "Produces hormones"
+  ],
+  "answer": "Carries oxygen",
+  "explanation": "Haemoglobin binds oxygen in red blood cells.",
+  "topic": "hsb-l1-2"
+ },
+ {
+  "id": "p28",
+  "question": "The walls of which blood vessel are only one cell thick?",
+  "options": [
+   "Capillary",
+   "Artery",
+   "Vein",
+   "Venule"
+  ],
+  "answer": "Capillary",
+  "explanation": "Capillary walls allow exchange of substances.",
+  "topic": "hsb-l1-2"
+ },
+ {
+  "id": "p29",
+  "question": "Breathing in is called:",
+  "options": [
+   "inhalation",
+   "exhalation",
+   "respiration",
+   "ventilation only"
+  ],
+  "answer": "inhalation",
+  "explanation": "Inhalation draws air into the lungs.",
+  "topic": "hsb-l1-2"
+ },
+ {
+  "id": "p30",
+  "question": "The dome-shaped muscle below the lungs is the:",
+  "options": [
+   "diaphragm",
+   "pleura",
+   "trachea",
+   "larynx"
+  ],
+  "answer": "diaphragm",
+  "explanation": "The diaphragm aids breathing by contracting and relaxing.",
+  "topic": "hsb-l1-2"
+ },
+ {
+  "id": "p31",
+  "question": "Which of the following increases the rate of breathing?",
+  "options": [
+   "Exercise",
+   "Sleeping",
+   "Sitting still",
+   "Meditation"
+  ],
+  "answer": "Exercise",
+  "explanation": "Exercise raises oxygen demand and CO₂ production.",
+  "topic": "hsb-l1-2"
+ },
+ {
+  "id": "p32",
+  "question": "Gaseous exchange in the lungs occurs by:",
+  "options": [
+   "diffusion",
+   "osmosis",
+   "active transport",
+   "filtration"
+  ],
+  "answer": "diffusion",
+  "explanation": "Oxygen and CO₂ diffuse across alveolar walls.",
+  "topic": "hsb-l1-2"
+ },
+ {
+  "id": "p33",
+  "question": "Which of the following is a product of anaerobic respiration in muscles?",
+  "options": [
+   "Lactic acid",
+   "Ethanol",
+   "Carbon dioxide only",
+   "Water"
+  ],
+  "answer": "Lactic acid",
+  "explanation": "Muscles produce lactic acid during anaerobic respiration.",
+  "topic": "hsb-l1-2"
+ },
+ {
+  "id": "p34",
+  "question": "Aerobic respiration releases energy from glucose using:",
+  "options": [
+   "oxygen",
+   "nitrogen",
+   "carbon dioxide",
+   "hydrogen"
+  ],
+  "answer": "oxygen",
+  "explanation": "Aerobic respiration requires oxygen.",
+  "topic": "hsb-l1-2"
+ },
+ {
+  "id": "p35",
+  "question": "The chemical equation for aerobic respiration is:",
+  "options": [
+   "Glucose + Oxygen → Carbon dioxide + Water + Energy",
+   "Glucose → Lactic acid + Energy",
+   "Carbon dioxide + Water → Glucose + Oxygen",
+   "Glucose + Water → Energy"
+  ],
+  "answer": "Glucose + Oxygen → Carbon dioxide + Water + Energy",
+  "explanation": "Glucose and oxygen yield CO₂, water and energy.",
+  "topic": "hsb-l1-2"
+ },
+ {
+  "id": "p36",
+  "question": "Which organ removes urea from the blood?",
+  "options": [
+   "Kidney",
+   "Lung",
+   "Heart",
+   "Stomach"
+  ],
+  "answer": "Kidney",
+  "explanation": "The kidneys filter urea and excrete it in urine.",
+  "topic": "hsb-l4-1"
+ },
+ {
+  "id": "p37",
+  "question": "Urea is produced in the:",
+  "options": [
+   "liver",
+   "kidney",
+   "bladder",
+   "pancreas"
+  ],
+  "answer": "liver",
+  "explanation": "The liver deaminates amino acids, producing urea.",
+  "topic": "hsb-l4-1"
+ },
+ {
+  "id": "p38",
+  "question": "Which of the following is NOT excreted by the body?",
+  "options": [
+   "Glucose",
+   "Urea",
+   "Carbon dioxide",
+   "Water"
+  ],
+  "answer": "Glucose",
+  "explanation": "Glucose is normally reabsorbed, not excreted.",
+  "topic": "hsb-l4-1"
+ },
+ {
+  "id": "p39",
+  "question": "The tube connecting the kidney to the bladder is the:",
+  "options": [
+   "ureter",
+   "urethra",
+   "nephron",
+   "aorta"
+  ],
+  "answer": "ureter",
+  "explanation": "Ureters carry urine from kidneys to bladder.",
+  "topic": "hsb-l4-1"
+ },
+ {
+  "id": "p40",
+  "question": "Urine leaves the body through the:",
+  "options": [
+   "urethra",
+   "ureter",
+   "kidney",
+   "bladder"
+  ],
+  "answer": "urethra",
+  "explanation": "The urethra carries urine out of the body.",
+  "topic": "hsb-l4-1"
+ },
+ {
+  "id": "p41",
+  "question": "Sweating helps regulate body temperature by:",
+  "options": [
+   "evaporation cooling the skin",
+   "producing heat",
+   "storing water",
+   "increasing blood flow only"
+  ],
+  "answer": "evaporation cooling the skin",
+  "explanation": "Evaporating sweat removes heat energy.",
+  "topic": "hsb-l4-1"
+ },
+ {
+  "id": "p42",
+  "question": "Which gland produces insulin?",
+  "options": [
+   "Pancreas",
+   "Thyroid",
+   "Adrenal",
+   "Pituitary"
+  ],
+  "answer": "Pancreas",
+  "explanation": "The pancreas secretes insulin.",
+  "topic": "hsb-l4-2"
+ },
+ {
+  "id": "p43",
+  "question": "Insulin lowers blood glucose by:",
+  "options": [
+   "converting glucose to glycogen",
+   "releasing more sugar",
+   "stopping glucose absorption",
+   "increasing appetite"
+  ],
+  "answer": "converting glucose to glycogen",
+  "explanation": "Insulin promotes glycogen storage, lowering blood sugar.",
+  "topic": "hsb-l4-2"
+ },
+ {
+  "id": "p44",
+  "question": "A deficiency of thyroxine can cause:",
+  "options": [
+   "slow metabolism",
+   "rapid growth",
+   "diabetes",
+   "anaemia"
+  ],
+  "answer": "slow metabolism",
+  "explanation": "Thyroxine controls metabolic rate.",
+  "topic": "hsb-l4-2"
+ },
+ {
+  "id": "p45",
+  "question": "Growth hormone is produced by the:",
+  "options": [
+   "pituitary gland",
+   "pancreas",
+   "adrenal gland",
+   "thyroid"
+  ],
+  "answer": "pituitary gland",
+  "explanation": "The pituitary gland secretes growth hormone.",
+  "topic": "hsb-l6-1"
+ },
+ {
+  "id": "p46",
+  "question": "Which of the following is a sense organ?",
+  "options": [
+   "Ear",
+   "Kidney",
+   "Liver",
+   "Pancreas"
+  ],
+  "answer": "Ear",
+  "explanation": "The ear detects sound (sensory organ).",
+  "topic": "hsb-l4-2"
+ },
+ {
+  "id": "p47",
+  "question": "The retina of the eye contains:",
+  "options": [
+   "light-sensitive cells",
+   "bone cells",
+   "sweat glands",
+   "hair cells"
+  ],
+  "answer": "light-sensitive cells",
+  "explanation": "Rods and cones in the retina detect light.",
+  "topic": "hsb-l4-2"
+ },
+ {
+  "id": "p48",
+  "question": "The lens of the eye focuses light onto the:",
+  "options": [
+   "retina",
+   "iris",
+   "cornea",
+   "pupil"
+  ],
+  "answer": "retina",
+  "explanation": "The lens refracts light to focus on the retina.",
+  "topic": "hsb-l4-1"
+ },
+ {
+  "id": "p49",
+  "question": "Which part of the ear converts vibrations into nerve impulses?",
+  "options": [
+   "Cochlea",
+   "Eardrum",
+   "Pinna",
+   "Ear canal"
+  ],
+  "answer": "Cochlea",
+  "explanation": "The cochlea contains hair cells that generate impulses.",
+  "topic": "hsb-l4-2"
+ },
+ {
+  "id": "p50",
+  "question": "The sense of taste is detected by:",
+  "options": [
+   "taste buds on the tongue",
+   "the nose",
+   "the ears",
+   "the skin"
+  ],
+  "answer": "taste buds on the tongue",
+  "explanation": "Taste buds on the tongue detect chemicals in food.",
+  "topic": "hsb-l4-2"
+ },
+ {
+  "id": "p51",
+  "question": "Which of the following is a stimulant?",
+  "options": [
+   "Caffeine",
+   "Alcohol",
+   "Marijuana",
+   "Paracetamol"
+  ],
+  "answer": "Caffeine",
+  "explanation": "Caffeine speeds up the nervous system.",
+  "topic": "hsb-l6-1"
+ },
+ {
+  "id": "p52",
+  "question": "Alcohol abuse can cause:",
+  "options": [
+   "liver damage",
+   "better memory",
+   "stronger bones",
+   "healthier lungs"
+  ],
+  "answer": "liver damage",
+  "explanation": "Alcohol damages the liver (cirrhosis).",
+  "topic": "hsb-l6-1"
+ },
+ {
+  "id": "p53",
+  "question": "Smoking tobacco increases the risk of:",
+  "options": [
+   "lung cancer",
+   "diabetes only",
+   "anaemia",
+   "goitre"
+  ],
+  "answer": "lung cancer",
+  "explanation": "Cigarette smoke contains carcinogens causing lung cancer.",
+  "topic": "hsb-l6-1"
+ },
+ {
+  "id": "p54",
+  "question": "Which drug is used as a pain reliever?",
+  "options": [
+   "Aspirin",
+   "Cocaine",
+   "Heroin",
+   "Nicotine"
+  ],
+  "answer": "Aspirin",
+  "explanation": "Aspirin is an analgesic (pain reliever).",
+  "topic": "hsb-l6-1"
+ },
+ {
+  "id": "p55",
+  "question": "Drug addiction is best described as:",
+  "options": [
+   "a physical and psychological dependence on a drug",
+   "occasional use",
+   "prescribed medicine",
+   "a healthy habit"
+  ],
+  "answer": "a physical and psychological dependence on a drug",
+  "explanation": "Addiction involves compulsive drug use despite harm.",
+  "topic": "hsb-l6-1"
+ },
+ {
+  "id": "p56",
+  "question": "Which of the following is a communicable disease?",
+  "options": [
+   "Influenza",
+   "Heart disease",
+   "Cancer",
+   "Diabetes"
+  ],
+  "answer": "Influenza",
+  "explanation": "Influenza spreads from person to person.",
+  "topic": "hsb-l4-1"
+ },
+ {
+  "id": "p57",
+  "question": "Tuberculosis (TB) mainly affects the:",
+  "options": [
+   "lungs",
+   "kidneys",
+   "skin",
+   "brain"
+  ],
+  "answer": "lungs",
+  "explanation": "TB is a bacterial infection of the lungs.",
+  "topic": "hsb-l4-1"
+ },
+ {
+  "id": "p58",
+  "question": "Cholera is spread mainly through:",
+  "options": [
+   "contaminated water and food",
+   "mosquito bites",
+   "the air",
+   "blood transfusion"
+  ],
+  "answer": "contaminated water and food",
+  "explanation": "Cholera bacteria spread via faecal-oral contamination.",
+  "topic": "hsb-l4-1"
+ },
+ {
+  "id": "p59",
+  "question": "Which disease is transmitted by the Aedes mosquito?",
+  "options": [
+   "Dengue fever",
+   "Cholera",
+   "Tuberculosis",
+   "Measles"
+  ],
+  "answer": "Dengue fever",
+  "explanation": "Aedes aegypti transmits dengue.",
+  "topic": "hsb-l4-1"
+ },
+ {
+  "id": "p60",
+  "question": "Malaria is caused by a:",
+  "options": [
+   "protozoan",
+   "virus",
+   "bacterium",
+   "fungus"
+  ],
+  "answer": "protozoan",
+  "explanation": "Plasmodium, a protozoan, causes malaria.",
+  "topic": "hsb-l4-1"
+ },
+ {
+  "id": "p61",
+  "question": "Which of the following is a barrier method of contraception?",
+  "options": [
+   "Condom",
+   "Pill",
+   "Injection",
+   "Implant"
+  ],
+  "answer": "Condom",
+  "explanation": "Condoms physically block sperm.",
+  "topic": "hsb-l6-2"
+ },
+ {
+  "id": "p62",
+  "question": "The contraceptive pill works by:",
+  "options": [
+   "preventing ovulation",
+   "killing sperm",
+   "blocking the uterus",
+   "increasing sperm count"
+  ],
+  "answer": "preventing ovulation",
+  "explanation": "Hormonal pills inhibit ovulation.",
+  "topic": "hsb-l6-2"
+ },
+ {
+  "id": "p63",
+  "question": "Which contraceptive also protects against STIs?",
+  "options": [
+   "Condom",
+   "Pill",
+   "IUD",
+   "Vasectomy"
+  ],
+  "answer": "Condom",
+  "explanation": "Condoms prevent STI transmission.",
+  "topic": "hsb-l6-2"
+ },
+ {
+  "id": "p64",
+  "question": "HIV attacks which type of cells?",
+  "options": [
+   "White blood cells (lymphocytes)",
+   "Red blood cells",
+   "Platelets",
+   "Bone cells"
+  ],
+  "answer": "White blood cells (lymphocytes)",
+  "explanation": "HIV destroys helper T-lymphocytes, weakening immunity.",
+  "topic": "hsb-l4-2"
+ },
+ {
+  "id": "p65",
+  "question": "HIV can be transmitted through:",
+  "options": [
+   "unprotected sexual intercourse",
+   "sharing meals",
+   "hugging",
+   "mosquito bites"
+  ],
+  "answer": "unprotected sexual intercourse",
+  "explanation": "HIV spreads via body fluids like blood and semen.",
+  "topic": "hsb-l4-2"
+ },
+ {
+  "id": "p66",
+  "question": "A person with AIDS has:",
+  "options": [
+   "a severely weakened immune system",
+   "extra immunity",
+   "no symptoms ever",
+   "stronger bones"
+  ],
+  "answer": "a severely weakened immune system",
+  "explanation": "AIDS is the advanced stage of HIV infection.",
+  "topic": "hsb-l4-2"
+ },
+ {
+  "id": "p67",
+  "question": "Which of the following is classified as a non-communicable (lifestyle) disease?",
+  "options": [
+   "Diabetes",
+   "Measles",
+   "Chickenpox",
+   "Malaria"
+  ],
+  "answer": "Diabetes",
+  "explanation": "Diabetes is not transmitted between people.",
+  "topic": "hsb-l4-1"
+ },
+ {
+  "id": "p68",
+  "question": "Obesity increases the risk of:",
+  "options": [
+   "heart disease",
+   "cholera",
+   "malaria",
+   "flu"
+  ],
+  "answer": "heart disease",
+  "explanation": "Obesity is linked to hypertension and heart disease.",
+  "topic": "hsb-l4-1"
+ },
+ {
+  "id": "p69",
+  "question": "Which of the following helps prevent heart disease?",
+  "options": [
+   "Regular exercise",
+   "Smoking",
+   "High-fat diet",
+   "Stress"
+  ],
+  "answer": "Regular exercise",
+  "explanation": "Exercise strengthens the heart and lowers blood pressure.",
+  "topic": "hsb-l4-1"
+ },
+ {
+  "id": "p70",
+  "question": "Hypertension means:",
+  "options": [
+   "high blood pressure",
+   "low blood sugar",
+   "fast breathing",
+   "weak bones"
+  ],
+  "answer": "high blood pressure",
+  "explanation": "Hypertension is chronically elevated blood pressure.",
+  "topic": "hsb-l4-1"
+ },
+ {
+  "id": "p71",
+  "question": "A balanced diet should contain:",
+  "options": [
+   "all nutrients in correct proportions",
+   "only carbohydrates",
+   "only proteins",
+   "no fats"
+  ],
+  "answer": "all nutrients in correct proportions",
+  "explanation": "Balance means adequate carbohydrates, proteins, fats, vitamins and minerals.",
+  "topic": "hsb-l3-1"
+ },
+ {
+  "id": "p72",
+  "question": "Which nutrient is the body's main source of energy?",
+  "options": [
+   "Carbohydrates",
+   "Proteins",
+   "Vitamins",
+   "Minerals"
+  ],
+  "answer": "Carbohydrates",
+  "explanation": "Carbohydrates provide readily available energy.",
+  "topic": "hsb-l3-1"
+ },
+ {
+  "id": "p73",
+  "question": "Proteins are essential for:",
+  "options": [
+   "growth and repair of tissues",
+   "storing energy only",
+   "cooling the body",
+   "digesting fats"
+  ],
+  "answer": "growth and repair of tissues",
+  "explanation": "Proteins build and repair body cells.",
+  "topic": "hsb-l3-1"
+ },
+ {
+  "id": "p74",
+  "question": "Which vitamin prevents night blindness?",
+  "options": [
+   "Vitamin A",
+   "Vitamin C",
+   "Vitamin D",
+   "Vitamin B12"
+  ],
+  "answer": "Vitamin A",
+  "explanation": "Vitamin A is needed for vision in dim light.",
+  "topic": "hsb-l3-1"
+ },
+ {
+  "id": "p75",
+  "question": "A deficiency of Vitamin D causes:",
+  "options": [
+   "rickets",
+   "scurvy",
+   "anaemia",
+   "goitre"
+  ],
+  "answer": "rickets",
+  "explanation": "Vitamin D deficiency causes rickets (soft bones).",
+  "topic": "hsb-l3-1"
+ },
+ {
+  "id": "p76",
+  "question": "Which mineral prevents goitre?",
+  "options": [
+   "Iodine",
+   "Iron",
+   "Calcium",
+   "Sodium"
+  ],
+  "answer": "Iodine",
+  "explanation": "Iodine is needed for thyroxine production.",
+  "topic": "hsb-l3-1"
+ },
+ {
+  "id": "p77",
+  "question": "Iron deficiency causes:",
+  "options": [
+   "anaemia",
+   "scurvy",
+   "rickets",
+   "night blindness"
+  ],
+  "answer": "anaemia",
+  "explanation": "Iron is needed to make haemoglobin.",
+  "topic": "hsb-l3-1"
+ },
+ {
+  "id": "p78",
+  "question": "Kwashiorkor is caused by a deficiency of:",
+  "options": [
+   "protein",
+   "carbohydrates",
+   "vitamin C",
+   "calcium"
+  ],
+  "answer": "protein",
+  "explanation": "Kwashiorkor is severe protein deficiency.",
+  "topic": "hsb-l3-1"
+ },
+ {
+  "id": "p79",
+  "question": "Which of the following is a symptom of marasmus?",
+  "options": [
+   "Severe wasting from energy deficiency",
+   "Bleeding gums",
+   "Soft bones",
+   "Swollen joints"
+  ],
+  "answer": "Severe wasting from energy deficiency",
+  "explanation": "Marasmus results from severe calorie deficiency.",
+  "topic": "hsb-l3-1"
+ },
+ {
+  "id": "p80",
+  "question": "The process of breaking down food into soluble substances is:",
+  "options": [
+   "digestion",
+   "absorption",
+   "egestion",
+   "respiration"
+  ],
+  "answer": "digestion",
+  "explanation": "Digestion breaks food into absorbable molecules.",
+  "topic": "hsb-l3-1"
+ },
+ {
+  "id": "p81",
+  "question": "Saliva contains which enzyme?",
+  "options": [
+   "Amylase",
+   "Pepsin",
+   "Lipase",
+   "Trypsin"
+  ],
+  "answer": "Amylase",
+  "explanation": "Salivary amylase digests starch.",
+  "topic": "hsb-l3-1"
+ },
+ {
+  "id": "p82",
+  "question": "Pepsin digests:",
+  "options": [
+   "proteins",
+   "carbohydrates",
+   "fats",
+   "fibre"
+  ],
+  "answer": "proteins",
+  "explanation": "Pepsin breaks proteins into peptides in the stomach.",
+  "topic": "hsb-l3-2"
+ },
+ {
+  "id": "p83",
+  "question": "Bile helps in the digestion of:",
+  "options": [
+   "fats",
+   "proteins",
+   "starch",
+   "minerals"
+  ],
+  "answer": "fats",
+  "explanation": "Bile emulsifies fats, aiding lipase action.",
+  "topic": "hsb-l3-2"
+ },
+ {
+  "id": "p84",
+  "question": "The small intestine is adapted for absorption by:",
+  "options": [
+   "villi",
+   "acid",
+   "teeth",
+   "peristalsis only"
+  ],
+  "answer": "villi",
+  "explanation": "Villi increase surface area for absorption.",
+  "topic": "hsb-l3-2"
+ },
+ {
+  "id": "p85",
+  "question": "Which of the following is absorbed directly into the bloodstream?",
+  "options": [
+   "Glucose",
+   "Starch",
+   "Cellulose",
+   "Fat droplets"
+  ],
+  "answer": "Glucose",
+  "explanation": "Glucose is absorbed into capillaries of villi.",
+  "topic": "hsb-l3-1"
+ },
+ {
+  "id": "p86",
+  "question": "Water is absorbed mainly in the:",
+  "options": [
+   "large intestine",
+   "stomach",
+   "mouth",
+   "oesophagus"
+  ],
+  "answer": "large intestine",
+  "explanation": "The colon absorbs water and minerals.",
+  "topic": "hsb-l3-2"
+ },
+ {
+  "id": "p87",
+  "question": "The appendix is attached to the:",
+  "options": [
+   "large intestine",
+   "stomach",
+   "liver",
+   "pancreas"
+  ],
+  "answer": "large intestine",
+  "explanation": "The appendix projects from the caecum of the large intestine.",
+  "topic": "hsb-l3-2"
+ },
+ {
+  "id": "p88",
+  "question": "Tooth decay is caused by:",
+  "options": [
+   "bacteria acting on sugars",
+   "chewing gum",
+   "cold drinks only",
+   "brushing too much"
+  ],
+  "answer": "bacteria acting on sugars",
+  "explanation": "Bacteria ferment sugars, producing acids that erode enamel.",
+  "topic": "hsb-l3-2"
+ },
+ {
+  "id": "p89",
+  "question": "Which of the following prevents tooth decay?",
+  "options": [
+   "Fluoride in toothpaste",
+   "Eating sweets",
+   "Skipping brushing",
+   "Drinking sugary drinks"
+  ],
+  "answer": "Fluoride in toothpaste",
+  "explanation": "Fluoride strengthens enamel against acid.",
+  "topic": "hsb-l3-2"
+ },
+ {
+  "id": "p90",
+  "question": "Fertilisation in humans occurs in the:",
+  "options": [
+   "fallopian tube",
+   "uterus",
+   "ovary",
+   "vagina"
+  ],
+  "answer": "fallopian tube",
+  "explanation": "The egg is fertilised in the fallopian tube.",
+  "topic": "hsb-l6-2"
+ },
+ {
+  "id": "p91",
+  "question": "The placenta allows:",
+  "options": [
+   "exchange of nutrients and wastes",
+   "production of eggs",
+   "urine storage",
+   "sperm production"
+  ],
+  "answer": "exchange of nutrients and wastes",
+  "explanation": "The placenta exchanges oxygen, nutrients and wastes.",
+  "topic": "hsb-l6-2"
+ },
+ {
+  "id": "p92",
+  "question": "Puberty in girls begins with:",
+  "options": [
+   "menstruation",
+   "menopause",
+   "pregnancy",
+   "lactation"
+  ],
+  "answer": "menstruation",
+  "explanation": "Menarche (first menstruation) marks puberty onset.",
+  "topic": "hsb-l6-2"
+ },
+ {
+  "id": "p93",
+  "question": "The menstrual cycle is controlled by:",
+  "options": [
+   "hormones",
+   "nerves only",
+   "blood pressure",
+   "diet only"
+  ],
+  "answer": "hormones",
+  "explanation": "Oestrogen and progesterone regulate the cycle.",
+  "topic": "hsb-l6-2"
+ },
+ {
+  "id": "p94",
+  "question": "The average duration of the menstrual cycle is:",
+  "options": [
+   "28 days",
+   "7 days",
+   "40 days",
+   "14 days"
+  ],
+  "answer": "28 days",
+  "explanation": "The typical cycle is about 28 days.",
+  "topic": "hsb-l6-2"
+ },
+ {
+  "id": "p95",
+  "question": "Which of the following is a method of preventing pregnancy?",
+  "options": [
+   "Contraception",
+   "Exercise",
+   "Dieting",
+   "Vaccination"
+  ],
+  "answer": "Contraception",
+  "explanation": "Contraception prevents conception.",
+  "topic": "hsb-l6-2"
+ },
+ {
+  "id": "p96",
+  "question": "Sexually transmitted infections can be prevented by:",
+  "options": [
+   "using condoms",
+   "sharing needles",
+   "multiple partners",
+   "avoiding testing"
+  ],
+  "answer": "using condoms",
+  "explanation": "Condoms reduce STI transmission.",
+  "topic": "hsb-l6-2"
+ },
+ {
+  "id": "p97",
+  "question": "Which of the following is a public health measure?",
+  "options": [
+   "Vaccination programmes",
+   "Private gyms",
+   "Personal cars",
+   "Gated communities"
+  ],
+  "answer": "Vaccination programmes",
+  "explanation": "Vaccination protects whole communities.",
+  "topic": "hsb-l5-1"
+ },
+ {
+  "id": "p98",
+  "question": "Vaccination provides immunity by:",
+  "options": [
+   "stimulating antibody production",
+   "killing all germs instantly",
+   "lowering body temperature",
+   "increasing white cell count only"
+  ],
+  "answer": "stimulating antibody production",
+  "explanation": "Vaccines trigger the immune system to produce antibodies.",
+  "topic": "hsb-l4-2"
+ },
+ {
+  "id": "p99",
+  "question": "Herd immunity occurs when:",
+  "options": [
+   "a large proportion of the population is immune",
+   "everyone is sick",
+   "no one is vaccinated",
+   "hospitals close"
+  ],
+  "answer": "a large proportion of the population is immune",
+  "explanation": "High vaccination rates protect the vulnerable.",
+  "topic": "hsb-l4-2"
+ },
+ {
+  "id": "p100",
+  "question": "Which of the following is a vector for disease?",
+  "options": [
+   "Mosquito",
+   "River",
+   "Building",
+   "Fruit"
+  ],
+  "answer": "Mosquito",
+  "explanation": "Mosquitoes transmit malaria and dengue.",
+  "topic": "hsb-l5-1"
+ }
 ]

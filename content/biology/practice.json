@@ -1,1202 +1,1302 @@
 [
-  {
-    "id": "p1",
-    "question": "Which structure is present in plant cells but absent in animal cells?",
-    "options": [
-      "Nucleus",
-      "Mitochondria",
-      "Cell Wall",
-      "Cell Membrane"
-    ],
-    "answer": "Cell Wall",
-    "explanation": "Plant cells have a rigid cell wall made of cellulose for support, which animal cells lack."
-  },
-  {
-    "id": "p2",
-    "question": "What is the function of the mitochondria in a cell?",
-    "options": [
-      "Photosynthesis",
-      "Protein synthesis",
-      "Aerobic respiration",
-      "Genetic control"
-    ],
-    "answer": "Aerobic respiration",
-    "explanation": "Mitochondria are the site of aerobic respiration, where energy is released from glucose."
-  },
-  {
-    "id": "p3",
-    "question": "A cell is placed in a solution with a higher water potential than its cytoplasm. What will happen to the cell?",
-    "options": [
-      "It will shrink.",
-      "Water will enter by osmosis and it will swell.",
-      "There will be no change.",
-      "It will lose water by diffusion."
-    ],
-    "answer": "Water will enter by osmosis and it will swell.",
-    "explanation": "Water moves from an area of higher water potential to lower potential via osmosis."
-  },
-  {
-    "id": "p4",
-    "question": "Which of the following is the correct word equation for photosynthesis?",
-    "options": [
-      "Glucose + Oxygen -> Carbon Dioxide + Water",
-      "Carbon Dioxide + Water -> Glucose + Oxygen",
-      "Glucose + Carbon Dioxide -> Oxygen + Water",
-      "Water + Oxygen -> Glucose + Carbon Dioxide"
-    ],
-    "answer": "Carbon Dioxide + Water -> Glucose + Oxygen",
-    "explanation": "Plants use light energy to convert carbon dioxide and water into glucose and oxygen."
-  },
-  {
-    "id": "p5",
-    "question": "Which enzyme is responsible for the digestion of starch in the mouth?",
-    "options": [
-      "Protease",
-      "Lipase",
-      "Amylase",
-      "Maltase"
-    ],
-    "answer": "Amylase",
-    "explanation": "Salivary amylase begins the chemical digestion of starch in the mouth."
-  },
-  {
-    "id": "p6",
-    "question": "Aerobic respiration differs from anaerobic respiration because aerobic respiration:",
-    "options": [
-      "Produces more energy",
-      "Produces lactic acid",
-      "Occurs without oxygen",
-      "Produces ethanol"
-    ],
-    "answer": "Produces more energy",
-    "explanation": "Aerobic respiration fully breaks down glucose using oxygen, yielding 38 ATP vs only 2 ATP in anaerobic."
-  },
-  {
-    "id": "p7",
-    "question": "Which chamber of the human heart pumps oxygenated blood to the rest of the body?",
-    "options": [
-      "Right Atrium",
-      "Right Ventricle",
-      "Left Atrium",
-      "Left Ventricle"
-    ],
-    "answer": "Left Ventricle",
-    "explanation": "The left ventricle has thick muscular walls to pump oxygenated blood through the aorta to the entire body."
-  },
-  {
-    "id": "p8",
-    "question": "In a food chain, what do the arrows represent?",
-    "options": [
-      "The size of the organisms",
-      "The flow of energy",
-      "The movement of the organisms",
-      "The direction of predation"
-    ],
-    "answer": "The flow of energy",
-    "explanation": "Arrows point from the organism being eaten to the consumer, showing the direction energy is transferred."
-  },
-  {
-    "id": "p9",
-    "question": "What are the building blocks of DNA called?",
-    "options": [
-      "Amino acids",
-      "Nucleotides",
-      "Fatty acids",
-      "Monosaccharides"
-    ],
-    "answer": "Nucleotides",
-    "explanation": "DNA is a polymer made of repeating units called nucleotides (sugar, phosphate, and a base)."
-  },
-  {
-    "id": "p10",
-    "question": "If a brown-furred dog (Bb) is crossed with a white-furred dog (bb), what is the probability of having a white puppy? (B is dominant for brown)",
-    "options": [
-      "25%",
-      "50%",
-      "75%",
-      "100%"
-    ],
-    "answer": "50%",
-    "explanation": "A cross between Bb and bb results in 50% Bb (brown) and 50% bb (white) offspring."
-  },
-  {
-    "id": "p11",
-    "question": "Which process describes the enrichment of water with nutrients, leading to excessive algae growth?",
-    "options": [
-      "Deforestation",
-      "Eutrophication",
-      "Global Warming",
-      "Nitrification"
-    ],
-    "answer": "Eutrophication",
-    "explanation": "Eutrophication is caused by nutrient runoff (like fertilizers), leading to algae blooms and oxygen depletion."
-  },
-  {
-    "id": "p12",
-    "question": "Which type of blood vessel contains valves to prevent the backflow of blood?",
-    "options": [
-      "Arteries",
-      "Veins",
-      "Capillaries",
-      "Arterioles"
-    ],
-    "answer": "Veins",
-    "explanation": "Veins carry blood at low pressure and have valves to ensure blood only flows toward the heart."
-  },
-  {
-    "id": "p13",
-    "question": "Which organelle is known as the 'powerhouse of the cell'?",
-    "options": [
-      "Mitochondrion",
-      "Nucleus",
-      "Ribosome",
-      "Golgi body"
-    ],
-    "answer": "Mitochondrion",
-    "explanation": "Mitochondria carry out aerobic respiration, releasing energy (ATP)."
-  },
-  {
-    "id": "p14",
-    "question": "What is the function of the cell membrane?",
-    "options": [
-      "Controls what enters and leaves the cell",
-      "Produces proteins",
-      "Stores genetic material",
-      "Carries out photosynthesis"
-    ],
-    "answer": "Controls what enters and leaves the cell",
-    "explanation": "The membrane is selectively permeable, controlling transport."
-  },
-  {
-    "id": "p15",
-    "question": "Which of the following is found only in plant cells?",
-    "options": [
-      "Chloroplast",
-      "Nucleus",
-      "Mitochondrion",
-      "Ribosome"
-    ],
-    "answer": "Chloroplast",
-    "explanation": "Chloroplasts contain chlorophyll and are unique to plant cells."
-  },
-  {
-    "id": "p16",
-    "question": "The process by which water moves across a selectively permeable membrane is:",
-    "options": [
-      "osmosis",
-      "diffusion",
-      "active transport",
-      "transpiration"
-    ],
-    "answer": "osmosis",
-    "explanation": "Osmosis is the movement of water from high to low water potential across a membrane."
-  },
-  {
-    "id": "p17",
-    "question": "Which gas is taken in during photosynthesis?",
-    "options": [
-      "Carbon dioxide",
-      "Oxygen",
-      "Nitrogen",
-      "Hydrogen"
-    ],
-    "answer": "Carbon dioxide",
-    "explanation": "Plants take in CO₂ and release oxygen during photosynthesis."
-  },
-  {
-    "id": "p18",
-    "question": "The green pigment in leaves that absorbs light energy is:",
-    "options": [
-      "chlorophyll",
-      "carotene",
-      "xanthophyll",
-      "haemoglobin"
-    ],
-    "answer": "chlorophyll",
-    "explanation": "Chlorophyll absorbs light, mainly red and blue wavelengths."
-  },
-  {
-    "id": "p19",
-    "question": "What is the main product of photosynthesis?",
-    "options": [
-      "Glucose",
-      "Carbon dioxide",
-      "Water",
-      "Starch only"
-    ],
-    "answer": "Glucose",
-    "explanation": "Glucose is the primary carbohydrate produced; it may be stored as starch."
-  },
-  {
-    "id": "p20",
-    "question": "Which organelle is the site of protein synthesis?",
-    "options": [
-      "Ribosome",
-      "Mitochondrion",
-      "Chloroplast",
-      "Nucleus"
-    ],
-    "answer": "Ribosome",
-    "explanation": "Ribosomes assemble amino acids into proteins."
-  },
-  {
-    "id": "p21",
-    "question": "The movement of molecules from high to low concentration without energy is:",
-    "options": [
-      "diffusion",
-      "osmosis only",
-      "active transport",
-      "translocation"
-    ],
-    "answer": "diffusion",
-    "explanation": "Diffusion is passive movement down a concentration gradient."
-  },
-  {
-    "id": "p22",
-    "question": "Which type of cell division produces gametes?",
-    "options": [
-      "Meiosis",
-      "Mitosis",
-      "Binary fission",
-      "Budding"
-    ],
-    "answer": "Meiosis",
-    "explanation": "Meiosis halves the chromosome number to produce gametes."
-  },
-  {
-    "id": "p23",
-    "question": "Human body cells normally contain how many chromosomes?",
-    "options": [
-      "46",
-      "23",
-      "92",
-      "44"
-    ],
-    "answer": "46",
-    "explanation": "Humans have 23 pairs = 46 chromosomes in body cells."
-  },
-  {
-    "id": "p24",
-    "question": "What is the function of red blood cells?",
-    "options": [
-      "Transport oxygen",
-      "Fight infection",
-      "Clot blood",
-      "Produce antibodies"
-    ],
-    "answer": "Transport oxygen",
-    "explanation": "Haemoglobin in red blood cells carries oxygen."
-  },
-  {
-    "id": "p25",
-    "question": "Which blood vessel carries blood away from the heart?",
-    "options": [
-      "Artery",
-      "Vein",
-      "Capillary",
-      "Venule"
-    ],
-    "answer": "Artery",
-    "explanation": "Arteries carry blood away from the heart."
-  },
-  {
-    "id": "p26",
-    "question": "The exchange of gases in the lungs occurs in the:",
-    "options": [
-      "alveoli",
-      "bronchi",
-      "trachea",
-      "diaphragm"
-    ],
-    "answer": "alveoli",
-    "explanation": "Alveoli are thin-walled air sacs where gas exchange happens."
-  },
-  {
-    "id": "p27",
-    "question": "What is the function of the small intestine?",
-    "options": [
-      "Absorption of digested food",
-      "Digestion of proteins only",
-      "Storage of faeces",
-      "Production of bile"
-    ],
-    "answer": "Absorption of digested food",
-    "explanation": "Villi in the small intestine absorb digested nutrients."
-  },
-  {
-    "id": "p28",
-    "question": "Which enzyme breaks down starch?",
-    "options": [
-      "Amylase",
-      "Protease",
-      "Lipase",
-      "Pepsin"
-    ],
-    "answer": "Amylase",
-    "explanation": "Amylase catalyses starch → maltose."
-  },
-  {
-    "id": "p29",
-    "question": "Bile is produced by the:",
-    "options": [
-      "liver",
-      "gall bladder",
-      "pancreas",
-      "stomach"
-    ],
-    "answer": "liver",
-    "explanation": "The liver produces bile; the gall bladder stores it."
-  },
-  {
-    "id": "p30",
-    "question": "Which of the following is a vitamin?",
-    "options": [
-      "Vitamin C",
-      "Calcium",
-      "Iron",
-      "Protein"
-    ],
-    "answer": "Vitamin C",
-    "explanation": "Vitamin C is a vitamin; calcium and iron are minerals; protein is a nutrient."
-  },
-  {
-    "id": "p31",
-    "question": "A deficiency of iron causes:",
-    "options": [
-      "anaemia",
-      "scurvy",
-      "rickets",
-      "goitre"
-    ],
-    "answer": "anaemia",
-    "explanation": "Iron is needed for haemoglobin; deficiency causes anaemia."
-  },
-  {
-    "id": "p32",
-    "question": "Which nutrient provides the most energy per gram?",
-    "options": [
-      "Fats",
-      "Carbohydrates",
-      "Proteins",
-      "Vitamins"
-    ],
-    "answer": "Fats",
-    "explanation": "Fats provide about 37 kJ/g, more than carbohydrates or proteins."
-  },
-  {
-    "id": "p33",
-    "question": "What is the role of dietary fibre?",
-    "options": [
-      "Helps prevent constipation",
-      "Provides energy",
-      "Builds muscle",
-      "Transports oxygen"
-    ],
-    "answer": "Helps prevent constipation",
-    "explanation": "Fibre adds bulk, aiding bowel movement and preventing constipation."
-  },
-  {
-    "id": "p34",
-    "question": "Which organ filters waste from the blood to form urine?",
-    "options": [
-      "Kidney",
-      "Liver",
-      "Lungs",
-      "Spleen"
-    ],
-    "answer": "Kidney",
-    "explanation": "The kidneys filter blood and produce urine."
-  },
-  {
-    "id": "p35",
-    "question": "The functional unit of the kidney is the:",
-    "options": [
-      "nephron",
-      "neuron",
-      "alveolus",
-      "glomerulus"
-    ],
-    "answer": "nephron",
-    "explanation": "Nephrons filter blood and reabsorb useful substances."
-  },
-  {
-    "id": "p36",
-    "question": "Which hormone regulates blood sugar level?",
-    "options": [
-      "Insulin",
-      "Adrenaline",
-      "Thyroxine",
-      "Oestrogen"
-    ],
-    "answer": "Insulin",
-    "explanation": "Insulin lowers blood glucose; glucagon raises it."
-  },
-  {
-    "id": "p37",
-    "question": "Diabetes mellitus results from insufficient:",
-    "options": [
-      "insulin",
-      "thyroxine",
-      "adrenaline",
-      "growth hormone"
-    ],
-    "answer": "insulin",
-    "explanation": "Type 1 diabetes is due to lack of insulin production."
-  },
-  {
-    "id": "p38",
-    "question": "Which part of the brain controls balance and coordination?",
-    "options": [
-      "Cerebellum",
-      "Cerebrum",
-      "Medulla",
-      "Hypothalamus"
-    ],
-    "answer": "Cerebellum",
-    "explanation": "The cerebellum coordinates movement and balance."
-  },
-  {
-    "id": "p39",
-    "question": "The basic unit of the nervous system is the:",
-    "options": [
-      "neuron",
-      "nephron",
-      "axon",
-      "synapse"
-    ],
-    "answer": "neuron",
-    "explanation": "Neurons transmit nerve impulses."
-  },
-  {
-    "id": "p40",
-    "question": "Which disease is caused by a virus?",
-    "options": [
-      "Influenza",
-      "Cholera",
-      "Tuberculosis",
-      "Typhoid"
-    ],
-    "answer": "Influenza",
-    "explanation": "Influenza (flu) is viral; the others are bacterial."
-  },
-  {
-    "id": "p41",
-    "question": "Which disease is transmitted by the Aedes aegypti mosquito?",
-    "options": [
-      "Dengue fever",
-      "Malaria",
-      "Cholera",
-      "Tuberculosis"
-    ],
-    "answer": "Dengue fever",
-    "explanation": "Aedes aegypti transmits dengue; malaria is spread by Anopheles."
-  },
-  {
-    "id": "p42",
-    "question": "The body's first line of defence against pathogens is:",
-    "options": [
-      "the skin",
-      "white blood cells",
-      "antibodies",
-      "vaccination"
-    ],
-    "answer": "the skin",
-    "explanation": "Skin acts as a physical barrier."
-  },
-  {
-    "id": "p43",
-    "question": "Vaccination provides immunity by:",
-    "options": [
-      "stimulating antibody production",
-      "killing all bacteria",
-      "blocking all viruses",
-      "reducing body temperature"
-    ],
-    "answer": "stimulating antibody production",
-    "explanation": "Vaccines introduce antigens that trigger antibody production."
-  },
-  {
-    "id": "p44",
-    "question": "Which white blood cell engulfs pathogens?",
-    "options": [
-      "Phagocyte",
-      "Lymphocyte",
-      "Platelet",
-      "Erythrocyte"
-    ],
-    "answer": "Phagocyte",
-    "explanation": "Phagocytes engulf and destroy pathogens by phagocytosis."
-  },
-  {
-    "id": "p45",
-    "question": "Antibodies are produced by:",
-    "options": [
-      "lymphocytes",
-      "phagocytes",
-      "platelets",
-      "red blood cells"
-    ],
-    "answer": "lymphocytes",
-    "explanation": "Lymphocytes produce antibodies against specific antigens."
-  },
-  {
-    "id": "p46",
-    "question": "Which is a non-communicable disease?",
-    "options": [
-      "Heart disease",
-      "Measles",
-      "Chickenpox",
-      "Malaria"
-    ],
-    "answer": "Heart disease",
-    "explanation": "Heart disease is not transmitted from person to person."
-  },
-  {
-    "id": "p47",
-    "question": "What is the main cause of malaria?",
-    "options": [
-      "Plasmodium protozoan",
-      "Virus",
-      "Bacterium",
-      "Fungus"
-    ],
-    "answer": "Plasmodium protozoan",
-    "explanation": "Malaria is caused by the Plasmodium protozoan, spread by mosquitoes."
-  },
-  {
-    "id": "p48",
-    "question": "Which of the following is a symptom of cholera?",
-    "options": [
-      "Severe diarrhoea",
-      "Skin rash",
-      "Coughing",
-      "Fever with rash"
-    ],
-    "answer": "Severe diarrhoea",
-    "explanation": "Cholera causes severe watery diarrhoea leading to dehydration."
-  },
-  {
-    "id": "p49",
-    "question": "The safest method to prevent the spread of HIV is:",
-    "options": [
-      "abstinence or protected sex",
-      "sharing needles",
-      "blood transfusion without screening",
-      "close hugging"
-    ],
-    "answer": "abstinence or protected sex",
-    "explanation": "HIV spreads via body fluids; abstinence or protection prevents transmission."
-  },
-  {
-    "id": "p50",
-    "question": "What is a balanced diet?",
-    "options": [
-      "A diet containing all nutrients in correct proportions",
-      "A diet with only vegetables",
-      "A diet high in protein",
-      "A diet with no fats"
-    ],
-    "answer": "A diet containing all nutrients in correct proportions",
-    "explanation": "A balanced diet provides all nutrients in the right amounts."
-  },
-  {
-    "id": "p51",
-    "question": "Which vitamin is produced by the skin in sunlight?",
-    "options": [
-      "Vitamin D",
-      "Vitamin A",
-      "Vitamin C",
-      "Vitamin B12"
-    ],
-    "answer": "Vitamin D",
-    "explanation": "Sunlight converts a cholesterol derivative to vitamin D."
-  },
-  {
-    "id": "p52",
-    "question": "Scurvy is caused by a deficiency of:",
-    "options": [
-      "Vitamin C",
-      "Vitamin A",
-      "Vitamin D",
-      "Iron"
-    ],
-    "answer": "Vitamin C",
-    "explanation": "Vitamin C deficiency causes scurvy (bleeding gums, weakness)."
-  },
-  {
-    "id": "p53",
-    "question": "Which mineral is needed for strong bones and teeth?",
-    "options": [
-      "Calcium",
-      "Iron",
-      "Sodium",
-      "Potassium"
-    ],
-    "answer": "Calcium",
-    "explanation": "Calcium and phosphorus strengthen bones and teeth."
-  },
-  {
-    "id": "p54",
-    "question": "What is the function of the large intestine?",
-    "options": [
-      "Absorption of water",
-      "Absorption of glucose",
-      "Digestion of proteins",
-      "Production of enzymes"
-    ],
-    "answer": "Absorption of water",
-    "explanation": "The colon absorbs water and salts from undigested food."
-  },
-  {
-    "id": "p55",
-    "question": "Peristalsis refers to:",
-    "options": [
-      "wave-like muscle contractions moving food",
-      "the chewing of food",
-      "the breakdown of food by acid",
-      "the absorption of nutrients"
-    ],
-    "answer": "wave-like muscle contractions moving food",
-    "explanation": "Peristalsis propels food along the alimentary canal."
-  },
-  {
-    "id": "p56",
-    "question": "Which part of the digestive system produces pepsin?",
-    "options": [
-      "Stomach",
-      "Mouth",
-      "Small intestine",
-      "Pancreas"
-    ],
-    "answer": "Stomach",
-    "explanation": "Gastric glands in the stomach secrete pepsin."
-  },
-  {
-    "id": "p57",
-    "question": "The function of the pancreas includes:",
-    "options": [
-      "producing digestive enzymes and insulin",
-      "storing bile",
-      "absorbing water",
-      "producing urine"
-    ],
-    "answer": "producing digestive enzymes and insulin",
-    "explanation": "The pancreas secretes enzymes into the duodenum and insulin into blood."
-  },
-  {
-    "id": "p58",
-    "question": "Which is an example of a reflex action?",
-    "options": [
-      "Pulling your hand away from a hot object",
-      "Walking",
-      "Reading",
-      "Breathing deeply on purpose"
-    ],
-    "answer": "Pulling your hand away from a hot object",
-    "explanation": "Reflexes are automatic, rapid responses to stimuli."
-  },
-  {
-    "id": "p59",
-    "question": "The sensory receptors in the eye that detect colour are:",
-    "options": [
-      "cones",
-      "rods",
-      "lens cells",
-      "optic nerves"
-    ],
-    "answer": "cones",
-    "explanation": "Cone cells detect colour; rods detect light intensity."
-  },
-  {
-    "id": "p60",
-    "question": "What is the function of the iris?",
-    "options": [
-      "Controls the amount of light entering the eye",
-      "Focuses light on the retina",
-      "Transmits impulses to the brain",
-      "Produces tears"
-    ],
-    "answer": "Controls the amount of light entering the eye",
-    "explanation": "The iris adjusts pupil size to control light entry."
-  },
-  {
-    "id": "p61",
-    "question": "Which hormone is responsible for the 'fight or flight' response?",
-    "options": [
-      "Adrenaline",
-      "Insulin",
-      "Thyroxine",
-      "Progesterone"
-    ],
-    "answer": "Adrenaline",
-    "explanation": "Adrenaline prepares the body for emergency action."
-  },
-  {
-    "id": "p62",
-    "question": "Growth in plants is controlled by:",
-    "options": [
-      "auxins",
-      "insulin",
-      "adrenaline",
-      "glucagon"
-    ],
-    "answer": "auxins",
-    "explanation": "Auxins regulate plant growth, e.g. phototropism."
-  },
-  {
-    "id": "p63",
-    "question": "The male sex cell in plants is found in:",
-    "options": [
-      "pollen grains",
-      "ovules",
-      "sepals",
-      "petals"
-    ],
-    "answer": "pollen grains",
-    "explanation": "Pollen grains carry the male gametes."
-  },
-  {
-    "id": "p64",
-    "question": "Fertilisation in flowering plants occurs when:",
-    "options": [
-      "the pollen tube fuses with the ovule",
-      "the seed germinates",
-      "the flower opens",
-      "the fruit ripens"
-    ],
-    "answer": "the pollen tube fuses with the ovule",
-    "explanation": "The male gamete travels via the pollen tube to fuse with the ovule."
-  },
-  {
-    "id": "p65",
-    "question": "Which is an example of asexual reproduction?",
-    "options": [
-      "Budding in yeast",
-      "Fertilisation in humans",
-      "Pollination in plants",
-      "Egg and sperm fusion"
-    ],
-    "answer": "Budding in yeast",
-    "explanation": "Budding produces offspring from one parent without gametes."
-  },
-  {
-    "id": "p66",
-    "question": "The structure where a fetus develops is the:",
-    "options": [
-      "uterus",
-      "ovary",
-      "fallopian tube",
-      "vagina"
-    ],
-    "answer": "uterus",
-    "explanation": "The fetus develops in the uterus."
-  },
-  {
-    "id": "p67",
-    "question": "Which part of the male reproductive system produces sperm?",
-    "options": [
-      "Testes",
-      "Penis",
-      "Prostate gland",
-      "Urethra"
-    ],
-    "answer": "Testes",
-    "explanation": "Sperm are produced in the seminiferous tubules of the testes."
-  },
-  {
-    "id": "p68",
-    "question": "The placenta functions to:",
-    "options": [
-      "exchange nutrients and waste between mother and fetus",
-      "produce eggs",
-      "store urine",
-      "produce sperm"
-    ],
-    "answer": "exchange nutrients and waste between mother and fetus",
-    "explanation": "The placenta allows diffusion of oxygen and nutrients to the fetus."
-  },
-  {
-    "id": "p69",
-    "question": "A child's sex is determined by:",
-    "options": [
-      "the father's sperm chromosome",
-      "the mother's egg chromosome",
-      "both parents equally",
-      "the environment"
-    ],
-    "answer": "the father's sperm chromosome",
-    "explanation": "Sperm carrying X or Y determines sex; egg always carries X."
-  },
-  {
-    "id": "p70",
-    "question": "Genes are located on:",
-    "options": [
-      "chromosomes",
-      "ribosomes",
-      "mitochondria",
-      "cell walls"
-    ],
-    "answer": "chromosomes",
-    "explanation": "Genes are segments of DNA on chromosomes."
-  },
-  {
-    "id": "p71",
-    "question": "Which is a dominant trait in humans?",
-    "options": [
-      "Brown eyes",
-      "Blue eyes",
-      "Straight hair",
-      "Attached earlobes"
-    ],
-    "answer": "Brown eyes",
-    "explanation": "Brown eye colour is dominant over blue."
-  },
-  {
-    "id": "p72",
-    "question": "If both parents are heterozygous (Bb) for a trait, the chance of a homozygous recessive (bb) child is:",
-    "options": [
-      "25%",
-      "50%",
-      "75%",
-      "100%"
-    ],
-    "answer": "25%",
-    "explanation": "Bb × Bb → BB, Bb, Bb, bb → 1/4 = 25%."
-  },
-  {
-    "id": "p73",
-    "question": "The observable characteristics of an organism are its:",
-    "options": [
-      "phenotype",
-      "genotype",
-      "chromosome",
-      "allele"
-    ],
-    "answer": "phenotype",
-    "explanation": "Phenotype is the physical expression of genes."
-  },
-  {
-    "id": "p74",
-    "question": "Which of the following is an example of a decomposer?",
-    "options": [
-      "Fungus",
-      "Grass",
-      "Rabbit",
-      "Hawk"
-    ],
-    "answer": "Fungus",
-    "explanation": "Fungi and bacteria break down dead organic matter."
-  },
-  {
-    "id": "p75",
-    "question": "The original source of energy for most food chains is:",
-    "options": [
-      "the sun",
-      "plants",
-      "soil",
-      "water"
-    ],
-    "answer": "the sun",
-    "explanation": "Sunlight is captured by producers in photosynthesis."
-  },
-  {
-    "id": "p76",
-    "question": "In a food chain, the trophic level with the most energy is:",
-    "options": [
-      "producers",
-      "primary consumers",
-      "secondary consumers",
-      "tertiary consumers"
-    ],
-    "answer": "producers",
-    "explanation": "Energy decreases along the chain; producers have most."
-  },
-  {
-    "id": "p77",
-    "question": "What is the role of nitrogen-fixing bacteria?",
-    "options": [
-      "Convert nitrogen gas to nitrates",
-      "Release nitrogen to the air",
-      "Produce oxygen",
-      "Decompose proteins only"
-    ],
-    "answer": "Convert nitrogen gas to nitrates",
-    "explanation": "They convert atmospheric nitrogen into usable nitrates."
-  },
-  {
-    "id": "p78",
-    "question": "Eutrophication of rivers is mainly caused by:",
-    "options": [
-      "excess fertilisers in run-off",
-      "acid rain",
-      "oil spills",
-      "deforestation only"
-    ],
-    "answer": "excess fertilisers in run-off",
-    "explanation": "Nitrates and phosphates from fertilisers cause algal blooms."
-  },
-  {
-    "id": "p79",
-    "question": "Which gas is a major contributor to the greenhouse effect?",
-    "options": [
-      "Carbon dioxide",
-      "Oxygen",
-      "Nitrogen",
-      "Helium"
-    ],
-    "answer": "Carbon dioxide",
-    "explanation": "CO₂ traps heat in the atmosphere."
-  },
-  {
-    "id": "p80",
-    "question": "The removal of trees from a large area is called:",
-    "options": [
-      "deforestation",
-      "afforestation",
-      "desertification",
-      "conservation"
-    ],
-    "answer": "deforestation",
-    "explanation": "Deforestation is the clearing of forests."
-  },
-  {
-    "id": "p81",
-    "question": "Which is a renewable energy source?",
-    "options": [
-      "Solar energy",
-      "Coal",
-      "Oil",
-      "Natural gas"
-    ],
-    "answer": "Solar energy",
-    "explanation": "Solar energy is replenished naturally."
-  },
-  {
-    "id": "p82",
-    "question": "A food web differs from a food chain because it:",
-    "options": [
-      "shows multiple interconnected food chains",
-      "shows only one pathway",
-      "has no producers",
-      "excludes consumers"
-    ],
-    "answer": "shows multiple interconnected food chains",
-    "explanation": "Food webs show complex feeding relationships."
-  },
-  {
-    "id": "p83",
-    "question": "The process of transpiration is important for:",
-    "options": [
-      "water and mineral transport in plants",
-      "photosynthesis only",
-      "seed germination",
-      "flower colour"
-    ],
-    "answer": "water and mineral transport in plants",
-    "explanation": "Transpiration pulls water up the xylem."
-  },
-  {
-    "id": "p84",
-    "question": "Which tissue transports water in plants?",
-    "options": [
-      "Xylem",
-      "Phloem",
-      "Epidermis",
-      "Cortex"
-    ],
-    "answer": "Xylem",
-    "explanation": "Xylem transports water and minerals upward."
-  },
-  {
-    "id": "p85",
-    "question": "Phloem transports:",
-    "options": [
-      "sucrose and amino acids",
-      "water only",
-      "oxygen",
-      "carbon dioxide"
-    ],
-    "answer": "sucrose and amino acids",
-    "explanation": "Phloem transports organic solutes (translocation)."
-  },
-  {
-    "id": "p86",
-    "question": "What is the main function of the root hair cell?",
-    "options": [
-      "Increase surface area for water absorption",
-      "Photosynthesis",
-      "Storage of starch",
-      "Reproduction"
-    ],
-    "answer": "Increase surface area for water absorption",
-    "explanation": "Root hairs greatly increase absorption surface area."
-  },
-  {
-    "id": "p87",
-    "question": "Which of these is a characteristic of living things?",
-    "options": [
-      "Respiration",
-      "Density",
-      "Hardness",
-      "Conductivity"
-    ],
-    "answer": "Respiration",
-    "explanation": "Respiration releases energy and is a life process."
-  },
-  {
-    "id": "p88",
-    "question": "The scientific name of humans is Homo sapiens. 'Homo' is the:",
-    "options": [
-      "genus",
-      "species",
-      "family",
-      "kingdom"
-    ],
-    "answer": "genus",
-    "explanation": "Binomial nomenclature: genus + species."
-  },
-  {
-    "id": "p89",
-    "question": "A microscope magnifies an object 400 times. If the objective lens is 40×, the eyepiece is:",
-    "options": [
-      "10×",
-      "4×",
-      "100×",
-      "440×"
-    ],
-    "answer": "10×",
-    "explanation": "Total = eyepiece × objective → 400/40 = 10×."
-  },
-  {
-    "id": "p90",
-    "question": "Which is the correct order of biological classification?",
-    "options": [
-      "Kingdom, Phylum, Class, Order, Family, Genus, Species",
-      "Species, Genus, Family, Order, Class, Phylum, Kingdom",
-      "Kingdom, Class, Phylum, Order, Family, Genus, Species",
-      "Family, Order, Class, Phylum, Kingdom, Genus, Species"
-    ],
-    "answer": "Kingdom, Phylum, Class, Order, Family, Genus, Species",
-    "explanation": "Memory aid: King Philip Came Over For Good Soup."
-  },
-  {
-    "id": "p91",
-    "question": "A plant cell placed in a concentrated salt solution will:",
-    "options": [
-      "lose water and become flaccid",
-      "gain water and swell",
-      "remain unchanged",
-      "burst"
-    ],
-    "answer": "lose water and become flaccid",
-    "explanation": "Water leaves the cell by osmosis into the salt solution."
-  },
-  {
-    "id": "p92",
-    "question": "Turgor pressure in plant cells results from:",
-    "options": [
-      "water entering the vacuole",
-      "water leaving the cell",
-      "cell wall dissolving",
-      "chlorophyll production"
-    ],
-    "answer": "water entering the vacuole",
-    "explanation": "Water pushes against the cell wall, keeping the plant firm."
-  },
-  {
-    "id": "p93",
-    "question": "Which blood component helps clot blood at wounds?",
-    "options": [
-      "Platelets",
-      "Red blood cells",
-      "White blood cells",
-      "Plasma"
-    ],
-    "answer": "Platelets",
-    "explanation": "Platelets trigger clotting."
-  },
-  {
-    "id": "p94",
-    "question": "Plasma is mainly composed of:",
-    "options": [
-      "water",
-      "protein",
-      "fat",
-      "glucose"
-    ],
-    "answer": "water",
-    "explanation": "Plasma is about 90% water carrying dissolved substances."
-  },
-  {
-    "id": "p95",
-    "question": "The heartbeat is controlled by the:",
-    "options": [
-      "pacemaker",
-      "valves",
-      "aorta",
-      "coronary artery"
-    ],
-    "answer": "pacemaker",
-    "explanation": "The sinoatrial node (pacemaker) initiates each heartbeat."
-  },
-  {
-    "id": "p96",
-    "question": "Which lifestyle choice most reduces the risk of heart disease?",
-    "options": [
-      "Regular exercise and balanced diet",
-      "Smoking",
-      "High-fat diet",
-      "Sedentary lifestyle"
-    ],
-    "answer": "Regular exercise and balanced diet",
-    "explanation": "Exercise and diet lower cholesterol and blood pressure."
-  },
-  {
-    "id": "p97",
-    "question": "What is the function of the epiglottis?",
-    "options": [
-      "Prevents food from entering the trachea",
-      "Produces saliva",
-      "Grinds food",
-      "Absorbs water"
-    ],
-    "answer": "Prevents food from entering the trachea",
-    "explanation": "The epiglottis closes over the trachea during swallowing."
-  },
-  {
-    "id": "p98",
-    "question": "Breathing rate increases during exercise because:",
-    "options": [
-      "more oxygen is needed for respiration",
-      "muscles need less energy",
-      "carbon dioxide decreases",
-      "the heart slows down"
-    ],
-    "answer": "more oxygen is needed for respiration",
-    "explanation": "Muscles respire faster, needing more oxygen and removing more CO₂."
-  },
-  {
-    "id": "p99",
-    "question": "Which of the following reduces air pollution?",
-    "options": [
-      "Using catalytic converters in cars",
-      "Burning more fossil fuels",
-      "Cutting down forests",
-      "Using leaded petrol"
-    ],
-    "answer": "Using catalytic converters in cars",
-    "explanation": "Catalytic converters reduce harmful exhaust gases."
-  },
-  {
-    "id": "p100",
-    "question": "Which of the following is an example of a habitat?",
-    "options": [
-      "A mangrove swamp",
-      "A species",
-      "A population",
-      "An organism"
-    ],
-    "answer": "A mangrove swamp",
-    "explanation": "A habitat is the natural home of an organism."
-  }
+ {
+  "id": "p1",
+  "question": "Which structure is present in plant cells but absent in animal cells?",
+  "options": [
+   "Nucleus",
+   "Mitochondria",
+   "Cell Wall",
+   "Cell Membrane"
+  ],
+  "answer": "Cell Wall",
+  "explanation": "Plant cells have a rigid cell wall made of cellulose for support, which animal cells lack.",
+  "topic": "cell-structure"
+ },
+ {
+  "id": "p2",
+  "question": "What is the function of the mitochondria in a cell?",
+  "options": [
+   "Photosynthesis",
+   "Protein synthesis",
+   "Aerobic respiration",
+   "Genetic control"
+  ],
+  "answer": "Aerobic respiration",
+  "explanation": "Mitochondria are the site of aerobic respiration, where energy is released from glucose.",
+  "topic": "cell-structure"
+ },
+ {
+  "id": "p3",
+  "question": "A cell is placed in a solution with a higher water potential than its cytoplasm. What will happen to the cell?",
+  "options": [
+   "It will shrink.",
+   "Water will enter by osmosis and it will swell.",
+   "There will be no change.",
+   "It will lose water by diffusion."
+  ],
+  "answer": "Water will enter by osmosis and it will swell.",
+  "explanation": "Water moves from an area of higher water potential to lower potential via osmosis.",
+  "topic": "osmosis-diffusion"
+ },
+ {
+  "id": "p4",
+  "question": "Which of the following is the correct word equation for photosynthesis?",
+  "options": [
+   "Glucose + Oxygen -> Carbon Dioxide + Water",
+   "Carbon Dioxide + Water -> Glucose + Oxygen",
+   "Glucose + Carbon Dioxide -> Oxygen + Water",
+   "Water + Oxygen -> Glucose + Carbon Dioxide"
+  ],
+  "answer": "Carbon Dioxide + Water -> Glucose + Oxygen",
+  "explanation": "Plants use light energy to convert carbon dioxide and water into glucose and oxygen.",
+  "topic": "photosynthesis"
+ },
+ {
+  "id": "p5",
+  "question": "Which enzyme is responsible for the digestion of starch in the mouth?",
+  "options": [
+   "Protease",
+   "Lipase",
+   "Amylase",
+   "Maltase"
+  ],
+  "answer": "Amylase",
+  "explanation": "Salivary amylase begins the chemical digestion of starch in the mouth.",
+  "topic": "circulatory-system"
+ },
+ {
+  "id": "p6",
+  "question": "Aerobic respiration differs from anaerobic respiration because aerobic respiration:",
+  "options": [
+   "Produces more energy",
+   "Produces lactic acid",
+   "Occurs without oxygen",
+   "Produces ethanol"
+  ],
+  "answer": "Produces more energy",
+  "explanation": "Aerobic respiration fully breaks down glucose using oxygen, yielding 38 ATP vs only 2 ATP in anaerobic.",
+  "topic": "respiration"
+ },
+ {
+  "id": "p7",
+  "question": "Which chamber of the human heart pumps oxygenated blood to the rest of the body?",
+  "options": [
+   "Right Atrium",
+   "Right Ventricle",
+   "Left Atrium",
+   "Left Ventricle"
+  ],
+  "answer": "Left Ventricle",
+  "explanation": "The left ventricle has thick muscular walls to pump oxygenated blood through the aorta to the entire body.",
+  "topic": "food-chains"
+ },
+ {
+  "id": "p8",
+  "question": "In a food chain, what do the arrows represent?",
+  "options": [
+   "The size of the organisms",
+   "The flow of energy",
+   "The movement of the organisms",
+   "The direction of predation"
+  ],
+  "answer": "The flow of energy",
+  "explanation": "Arrows point from the organism being eaten to the consumer, showing the direction energy is transferred.",
+  "topic": "dna-inheritance"
+ },
+ {
+  "id": "p9",
+  "question": "What are the building blocks of DNA called?",
+  "options": [
+   "Amino acids",
+   "Nucleotides",
+   "Fatty acids",
+   "Monosaccharides"
+  ],
+  "answer": "Nucleotides",
+  "explanation": "DNA is a polymer made of repeating units called nucleotides (sugar, phosphate, and a base).",
+  "topic": "dna-inheritance"
+ },
+ {
+  "id": "p10",
+  "question": "If a brown-furred dog (Bb) is crossed with a white-furred dog (bb), what is the probability of having a white puppy? (B is dominant for brown)",
+  "options": [
+   "25%",
+   "50%",
+   "75%",
+   "100%"
+  ],
+  "answer": "50%",
+  "explanation": "A cross between Bb and bb results in 50% Bb (brown) and 50% bb (white) offspring.",
+  "topic": "dna-inheritance"
+ },
+ {
+  "id": "p11",
+  "question": "Which process describes the enrichment of water with nutrients, leading to excessive algae growth?",
+  "options": [
+   "Deforestation",
+   "Eutrophication",
+   "Global Warming",
+   "Nitrification"
+  ],
+  "answer": "Eutrophication",
+  "explanation": "Eutrophication is caused by nutrient runoff (like fertilizers), leading to algae blooms and oxygen depletion.",
+  "topic": "food-chains"
+ },
+ {
+  "id": "p12",
+  "question": "Which type of blood vessel contains valves to prevent the backflow of blood?",
+  "options": [
+   "Arteries",
+   "Veins",
+   "Capillaries",
+   "Arterioles"
+  ],
+  "answer": "Veins",
+  "explanation": "Veins carry blood at low pressure and have valves to ensure blood only flows toward the heart.",
+  "topic": "circulatory-system"
+ },
+ {
+  "id": "p13",
+  "question": "Which organelle is known as the 'powerhouse of the cell'?",
+  "options": [
+   "Mitochondrion",
+   "Nucleus",
+   "Ribosome",
+   "Golgi body"
+  ],
+  "answer": "Mitochondrion",
+  "explanation": "Mitochondria carry out aerobic respiration, releasing energy (ATP).",
+  "topic": "cell-structure"
+ },
+ {
+  "id": "p14",
+  "question": "What is the function of the cell membrane?",
+  "options": [
+   "Controls what enters and leaves the cell",
+   "Produces proteins",
+   "Stores genetic material",
+   "Carries out photosynthesis"
+  ],
+  "answer": "Controls what enters and leaves the cell",
+  "explanation": "The membrane is selectively permeable, controlling transport.",
+  "topic": "cell-structure"
+ },
+ {
+  "id": "p15",
+  "question": "Which of the following is found only in plant cells?",
+  "options": [
+   "Chloroplast",
+   "Nucleus",
+   "Mitochondrion",
+   "Ribosome"
+  ],
+  "answer": "Chloroplast",
+  "explanation": "Chloroplasts contain chlorophyll and are unique to plant cells.",
+  "topic": "cell-structure"
+ },
+ {
+  "id": "p16",
+  "question": "The process by which water moves across a selectively permeable membrane is:",
+  "options": [
+   "osmosis",
+   "diffusion",
+   "active transport",
+   "transpiration"
+  ],
+  "answer": "osmosis",
+  "explanation": "Osmosis is the movement of water from high to low water potential across a membrane.",
+  "topic": "osmosis-diffusion"
+ },
+ {
+  "id": "p17",
+  "question": "Which gas is taken in during photosynthesis?",
+  "options": [
+   "Carbon dioxide",
+   "Oxygen",
+   "Nitrogen",
+   "Hydrogen"
+  ],
+  "answer": "Carbon dioxide",
+  "explanation": "Plants take in CO₂ and release oxygen during photosynthesis.",
+  "topic": "photosynthesis"
+ },
+ {
+  "id": "p18",
+  "question": "The green pigment in leaves that absorbs light energy is:",
+  "options": [
+   "chlorophyll",
+   "carotene",
+   "xanthophyll",
+   "haemoglobin"
+  ],
+  "answer": "chlorophyll",
+  "explanation": "Chlorophyll absorbs light, mainly red and blue wavelengths.",
+  "topic": "photosynthesis"
+ },
+ {
+  "id": "p19",
+  "question": "What is the main product of photosynthesis?",
+  "options": [
+   "Glucose",
+   "Carbon dioxide",
+   "Water",
+   "Starch only"
+  ],
+  "answer": "Glucose",
+  "explanation": "Glucose is the primary carbohydrate produced; it may be stored as starch.",
+  "topic": "photosynthesis"
+ },
+ {
+  "id": "p20",
+  "question": "Which organelle is the site of protein synthesis?",
+  "options": [
+   "Ribosome",
+   "Mitochondrion",
+   "Chloroplast",
+   "Nucleus"
+  ],
+  "answer": "Ribosome",
+  "explanation": "Ribosomes assemble amino acids into proteins.",
+  "topic": "cell-structure"
+ },
+ {
+  "id": "p21",
+  "question": "The movement of molecules from high to low concentration without energy is:",
+  "options": [
+   "diffusion",
+   "osmosis only",
+   "active transport",
+   "translocation"
+  ],
+  "answer": "diffusion",
+  "explanation": "Diffusion is passive movement down a concentration gradient.",
+  "topic": "osmosis-diffusion"
+ },
+ {
+  "id": "p22",
+  "question": "Which type of cell division produces gametes?",
+  "options": [
+   "Meiosis",
+   "Mitosis",
+   "Binary fission",
+   "Budding"
+  ],
+  "answer": "Meiosis",
+  "explanation": "Meiosis halves the chromosome number to produce gametes.",
+  "topic": "dna-inheritance"
+ },
+ {
+  "id": "p23",
+  "question": "Human body cells normally contain how many chromosomes?",
+  "options": [
+   "46",
+   "23",
+   "92",
+   "44"
+  ],
+  "answer": "46",
+  "explanation": "Humans have 23 pairs = 46 chromosomes in body cells.",
+  "topic": "dna-inheritance"
+ },
+ {
+  "id": "p24",
+  "question": "What is the function of red blood cells?",
+  "options": [
+   "Transport oxygen",
+   "Fight infection",
+   "Clot blood",
+   "Produce antibodies"
+  ],
+  "answer": "Transport oxygen",
+  "explanation": "Haemoglobin in red blood cells carries oxygen.",
+  "topic": "circulatory-system"
+ },
+ {
+  "id": "p25",
+  "question": "Which blood vessel carries blood away from the heart?",
+  "options": [
+   "Artery",
+   "Vein",
+   "Capillary",
+   "Venule"
+  ],
+  "answer": "Artery",
+  "explanation": "Arteries carry blood away from the heart.",
+  "topic": "circulatory-system"
+ },
+ {
+  "id": "p26",
+  "question": "The exchange of gases in the lungs occurs in the:",
+  "options": [
+   "alveoli",
+   "bronchi",
+   "trachea",
+   "diaphragm"
+  ],
+  "answer": "alveoli",
+  "explanation": "Alveoli are thin-walled air sacs where gas exchange happens.",
+  "topic": "respiration"
+ },
+ {
+  "id": "p27",
+  "question": "What is the function of the small intestine?",
+  "options": [
+   "Absorption of digested food",
+   "Digestion of proteins only",
+   "Storage of faeces",
+   "Production of bile"
+  ],
+  "answer": "Absorption of digested food",
+  "explanation": "Villi in the small intestine absorb digested nutrients.",
+  "topic": "circulatory-system"
+ },
+ {
+  "id": "p28",
+  "question": "Which enzyme breaks down starch?",
+  "options": [
+   "Amylase",
+   "Protease",
+   "Lipase",
+   "Pepsin"
+  ],
+  "answer": "Amylase",
+  "explanation": "Amylase catalyses starch → maltose.",
+  "topic": "circulatory-system"
+ },
+ {
+  "id": "p29",
+  "question": "Bile is produced by the:",
+  "options": [
+   "liver",
+   "gall bladder",
+   "pancreas",
+   "stomach"
+  ],
+  "answer": "liver",
+  "explanation": "The liver produces bile; the gall bladder stores it.",
+  "topic": "circulatory-system"
+ },
+ {
+  "id": "p30",
+  "question": "Which of the following is a vitamin?",
+  "options": [
+   "Vitamin C",
+   "Calcium",
+   "Iron",
+   "Protein"
+  ],
+  "answer": "Vitamin C",
+  "explanation": "Vitamin C is a vitamin; calcium and iron are minerals; protein is a nutrient.",
+  "topic": "circulatory-system"
+ },
+ {
+  "id": "p31",
+  "question": "A deficiency of iron causes:",
+  "options": [
+   "anaemia",
+   "scurvy",
+   "rickets",
+   "goitre"
+  ],
+  "answer": "anaemia",
+  "explanation": "Iron is needed for haemoglobin; deficiency causes anaemia.",
+  "topic": "circulatory-system"
+ },
+ {
+  "id": "p32",
+  "question": "Which nutrient provides the most energy per gram?",
+  "options": [
+   "Fats",
+   "Carbohydrates",
+   "Proteins",
+   "Vitamins"
+  ],
+  "answer": "Fats",
+  "explanation": "Fats provide about 37 kJ/g, more than carbohydrates or proteins.",
+  "topic": "circulatory-system"
+ },
+ {
+  "id": "p33",
+  "question": "What is the role of dietary fibre?",
+  "options": [
+   "Helps prevent constipation",
+   "Provides energy",
+   "Builds muscle",
+   "Transports oxygen"
+  ],
+  "answer": "Helps prevent constipation",
+  "explanation": "Fibre adds bulk, aiding bowel movement and preventing constipation.",
+  "topic": "circulatory-system"
+ },
+ {
+  "id": "p34",
+  "question": "Which organ filters waste from the blood to form urine?",
+  "options": [
+   "Kidney",
+   "Liver",
+   "Lungs",
+   "Spleen"
+  ],
+  "answer": "Kidney",
+  "explanation": "The kidneys filter blood and produce urine.",
+  "topic": "osmosis-diffusion"
+ },
+ {
+  "id": "p35",
+  "question": "The functional unit of the kidney is the:",
+  "options": [
+   "nephron",
+   "neuron",
+   "alveolus",
+   "glomerulus"
+  ],
+  "answer": "nephron",
+  "explanation": "Nephrons filter blood and reabsorb useful substances.",
+  "topic": "osmosis-diffusion"
+ },
+ {
+  "id": "p36",
+  "question": "Which hormone regulates blood sugar level?",
+  "options": [
+   "Insulin",
+   "Adrenaline",
+   "Thyroxine",
+   "Oestrogen"
+  ],
+  "answer": "Insulin",
+  "explanation": "Insulin lowers blood glucose; glucagon raises it.",
+  "topic": "respiration"
+ },
+ {
+  "id": "p37",
+  "question": "Diabetes mellitus results from insufficient:",
+  "options": [
+   "insulin",
+   "thyroxine",
+   "adrenaline",
+   "growth hormone"
+  ],
+  "answer": "insulin",
+  "explanation": "Type 1 diabetes is due to lack of insulin production.",
+  "topic": "respiration"
+ },
+ {
+  "id": "p38",
+  "question": "Which part of the brain controls balance and coordination?",
+  "options": [
+   "Cerebellum",
+   "Cerebrum",
+   "Medulla",
+   "Hypothalamus"
+  ],
+  "answer": "Cerebellum",
+  "explanation": "The cerebellum coordinates movement and balance.",
+  "topic": "respiration"
+ },
+ {
+  "id": "p39",
+  "question": "The basic unit of the nervous system is the:",
+  "options": [
+   "neuron",
+   "nephron",
+   "axon",
+   "synapse"
+  ],
+  "answer": "neuron",
+  "explanation": "Neurons transmit nerve impulses.",
+  "topic": "respiration"
+ },
+ {
+  "id": "p40",
+  "question": "Which disease is caused by a virus?",
+  "options": [
+   "Influenza",
+   "Cholera",
+   "Tuberculosis",
+   "Typhoid"
+  ],
+  "answer": "Influenza",
+  "explanation": "Influenza (flu) is viral; the others are bacterial.",
+  "topic": "osmosis-diffusion"
+ },
+ {
+  "id": "p41",
+  "question": "Which disease is transmitted by the Aedes aegypti mosquito?",
+  "options": [
+   "Dengue fever",
+   "Malaria",
+   "Cholera",
+   "Tuberculosis"
+  ],
+  "answer": "Dengue fever",
+  "explanation": "Aedes aegypti transmits dengue; malaria is spread by Anopheles.",
+  "topic": "osmosis-diffusion"
+ },
+ {
+  "id": "p42",
+  "question": "The body's first line of defence against pathogens is:",
+  "options": [
+   "the skin",
+   "white blood cells",
+   "antibodies",
+   "vaccination"
+  ],
+  "answer": "the skin",
+  "explanation": "Skin acts as a physical barrier.",
+  "topic": "osmosis-diffusion"
+ },
+ {
+  "id": "p43",
+  "question": "Vaccination provides immunity by:",
+  "options": [
+   "stimulating antibody production",
+   "killing all bacteria",
+   "blocking all viruses",
+   "reducing body temperature"
+  ],
+  "answer": "stimulating antibody production",
+  "explanation": "Vaccines introduce antigens that trigger antibody production.",
+  "topic": "osmosis-diffusion"
+ },
+ {
+  "id": "p44",
+  "question": "Which white blood cell engulfs pathogens?",
+  "options": [
+   "Phagocyte",
+   "Lymphocyte",
+   "Platelet",
+   "Erythrocyte"
+  ],
+  "answer": "Phagocyte",
+  "explanation": "Phagocytes engulf and destroy pathogens by phagocytosis.",
+  "topic": "osmosis-diffusion"
+ },
+ {
+  "id": "p45",
+  "question": "Antibodies are produced by:",
+  "options": [
+   "lymphocytes",
+   "phagocytes",
+   "platelets",
+   "red blood cells"
+  ],
+  "answer": "lymphocytes",
+  "explanation": "Lymphocytes produce antibodies against specific antigens.",
+  "topic": "osmosis-diffusion"
+ },
+ {
+  "id": "p46",
+  "question": "Which is a non-communicable disease?",
+  "options": [
+   "Heart disease",
+   "Measles",
+   "Chickenpox",
+   "Malaria"
+  ],
+  "answer": "Heart disease",
+  "explanation": "Heart disease is not transmitted from person to person.",
+  "topic": "circulatory-system"
+ },
+ {
+  "id": "p47",
+  "question": "What is the main cause of malaria?",
+  "options": [
+   "Plasmodium protozoan",
+   "Virus",
+   "Bacterium",
+   "Fungus"
+  ],
+  "answer": "Plasmodium protozoan",
+  "explanation": "Malaria is caused by the Plasmodium protozoan, spread by mosquitoes.",
+  "topic": "osmosis-diffusion"
+ },
+ {
+  "id": "p48",
+  "question": "Which of the following is a symptom of cholera?",
+  "options": [
+   "Severe diarrhoea",
+   "Skin rash",
+   "Coughing",
+   "Fever with rash"
+  ],
+  "answer": "Severe diarrhoea",
+  "explanation": "Cholera causes severe watery diarrhoea leading to dehydration.",
+  "topic": "osmosis-diffusion"
+ },
+ {
+  "id": "p49",
+  "question": "The safest method to prevent the spread of HIV is:",
+  "options": [
+   "abstinence or protected sex",
+   "sharing needles",
+   "blood transfusion without screening",
+   "close hugging"
+  ],
+  "answer": "abstinence or protected sex",
+  "explanation": "HIV spreads via body fluids; abstinence or protection prevents transmission.",
+  "topic": "osmosis-diffusion"
+ },
+ {
+  "id": "p50",
+  "question": "What is a balanced diet?",
+  "options": [
+   "A diet containing all nutrients in correct proportions",
+   "A diet with only vegetables",
+   "A diet high in protein",
+   "A diet with no fats"
+  ],
+  "answer": "A diet containing all nutrients in correct proportions",
+  "explanation": "A balanced diet provides all nutrients in the right amounts.",
+  "topic": "circulatory-system"
+ },
+ {
+  "id": "p51",
+  "question": "Which vitamin is produced by the skin in sunlight?",
+  "options": [
+   "Vitamin D",
+   "Vitamin A",
+   "Vitamin C",
+   "Vitamin B12"
+  ],
+  "answer": "Vitamin D",
+  "explanation": "Sunlight converts a cholesterol derivative to vitamin D.",
+  "topic": "circulatory-system"
+ },
+ {
+  "id": "p52",
+  "question": "Scurvy is caused by a deficiency of:",
+  "options": [
+   "Vitamin C",
+   "Vitamin A",
+   "Vitamin D",
+   "Iron"
+  ],
+  "answer": "Vitamin C",
+  "explanation": "Vitamin C deficiency causes scurvy (bleeding gums, weakness).",
+  "topic": "circulatory-system"
+ },
+ {
+  "id": "p53",
+  "question": "Which mineral is needed for strong bones and teeth?",
+  "options": [
+   "Calcium",
+   "Iron",
+   "Sodium",
+   "Potassium"
+  ],
+  "answer": "Calcium",
+  "explanation": "Calcium and phosphorus strengthen bones and teeth.",
+  "topic": "circulatory-system"
+ },
+ {
+  "id": "p54",
+  "question": "What is the function of the large intestine?",
+  "options": [
+   "Absorption of water",
+   "Absorption of glucose",
+   "Digestion of proteins",
+   "Production of enzymes"
+  ],
+  "answer": "Absorption of water",
+  "explanation": "The colon absorbs water and salts from undigested food.",
+  "topic": "circulatory-system"
+ },
+ {
+  "id": "p55",
+  "question": "Peristalsis refers to:",
+  "options": [
+   "wave-like muscle contractions moving food",
+   "the chewing of food",
+   "the breakdown of food by acid",
+   "the absorption of nutrients"
+  ],
+  "answer": "wave-like muscle contractions moving food",
+  "explanation": "Peristalsis propels food along the alimentary canal.",
+  "topic": "circulatory-system"
+ },
+ {
+  "id": "p56",
+  "question": "Which part of the digestive system produces pepsin?",
+  "options": [
+   "Stomach",
+   "Mouth",
+   "Small intestine",
+   "Pancreas"
+  ],
+  "answer": "Stomach",
+  "explanation": "Gastric glands in the stomach secrete pepsin.",
+  "topic": "circulatory-system"
+ },
+ {
+  "id": "p57",
+  "question": "The function of the pancreas includes:",
+  "options": [
+   "producing digestive enzymes and insulin",
+   "storing bile",
+   "absorbing water",
+   "producing urine"
+  ],
+  "answer": "producing digestive enzymes and insulin",
+  "explanation": "The pancreas secretes enzymes into the duodenum and insulin into blood.",
+  "topic": "circulatory-system"
+ },
+ {
+  "id": "p58",
+  "question": "Which is an example of a reflex action?",
+  "options": [
+   "Pulling your hand away from a hot object",
+   "Walking",
+   "Reading",
+   "Breathing deeply on purpose"
+  ],
+  "answer": "Pulling your hand away from a hot object",
+  "explanation": "Reflexes are automatic, rapid responses to stimuli.",
+  "topic": "respiration"
+ },
+ {
+  "id": "p59",
+  "question": "The sensory receptors in the eye that detect colour are:",
+  "options": [
+   "cones",
+   "rods",
+   "lens cells",
+   "optic nerves"
+  ],
+  "answer": "cones",
+  "explanation": "Cone cells detect colour; rods detect light intensity.",
+  "topic": "respiration"
+ },
+ {
+  "id": "p60",
+  "question": "What is the function of the iris?",
+  "options": [
+   "Controls the amount of light entering the eye",
+   "Focuses light on the retina",
+   "Transmits impulses to the brain",
+   "Produces tears"
+  ],
+  "answer": "Controls the amount of light entering the eye",
+  "explanation": "The iris adjusts pupil size to control light entry.",
+  "topic": "respiration"
+ },
+ {
+  "id": "p61",
+  "question": "Which hormone is responsible for the 'fight or flight' response?",
+  "options": [
+   "Adrenaline",
+   "Insulin",
+   "Thyroxine",
+   "Progesterone"
+  ],
+  "answer": "Adrenaline",
+  "explanation": "Adrenaline prepares the body for emergency action.",
+  "topic": "respiration"
+ },
+ {
+  "id": "p62",
+  "question": "Growth in plants is controlled by:",
+  "options": [
+   "auxins",
+   "insulin",
+   "adrenaline",
+   "glucagon"
+  ],
+  "answer": "auxins",
+  "explanation": "Auxins regulate plant growth, e.g. phototropism.",
+  "topic": "photosynthesis"
+ },
+ {
+  "id": "p63",
+  "question": "The male sex cell in plants is found in:",
+  "options": [
+   "pollen grains",
+   "ovules",
+   "sepals",
+   "petals"
+  ],
+  "answer": "pollen grains",
+  "explanation": "Pollen grains carry the male gametes.",
+  "topic": "dna-inheritance"
+ },
+ {
+  "id": "p64",
+  "question": "Fertilisation in flowering plants occurs when:",
+  "options": [
+   "the pollen tube fuses with the ovule",
+   "the seed germinates",
+   "the flower opens",
+   "the fruit ripens"
+  ],
+  "answer": "the pollen tube fuses with the ovule",
+  "explanation": "The male gamete travels via the pollen tube to fuse with the ovule.",
+  "topic": "dna-inheritance"
+ },
+ {
+  "id": "p65",
+  "question": "Which is an example of asexual reproduction?",
+  "options": [
+   "Budding in yeast",
+   "Fertilisation in humans",
+   "Pollination in plants",
+   "Egg and sperm fusion"
+  ],
+  "answer": "Budding in yeast",
+  "explanation": "Budding produces offspring from one parent without gametes.",
+  "topic": "dna-inheritance"
+ },
+ {
+  "id": "p66",
+  "question": "The structure where a fetus develops is the:",
+  "options": [
+   "uterus",
+   "ovary",
+   "fallopian tube",
+   "vagina"
+  ],
+  "answer": "uterus",
+  "explanation": "The fetus develops in the uterus.",
+  "topic": "dna-inheritance"
+ },
+ {
+  "id": "p67",
+  "question": "Which part of the male reproductive system produces sperm?",
+  "options": [
+   "Testes",
+   "Penis",
+   "Prostate gland",
+   "Urethra"
+  ],
+  "answer": "Testes",
+  "explanation": "Sperm are produced in the seminiferous tubules of the testes.",
+  "topic": "dna-inheritance"
+ },
+ {
+  "id": "p68",
+  "question": "The placenta functions to:",
+  "options": [
+   "exchange nutrients and waste between mother and fetus",
+   "produce eggs",
+   "store urine",
+   "produce sperm"
+  ],
+  "answer": "exchange nutrients and waste between mother and fetus",
+  "explanation": "The placenta allows diffusion of oxygen and nutrients to the fetus.",
+  "topic": "osmosis-diffusion"
+ },
+ {
+  "id": "p69",
+  "question": "A child's sex is determined by:",
+  "options": [
+   "the father's sperm chromosome",
+   "the mother's egg chromosome",
+   "both parents equally",
+   "the environment"
+  ],
+  "answer": "the father's sperm chromosome",
+  "explanation": "Sperm carrying X or Y determines sex; egg always carries X.",
+  "topic": "dna-inheritance"
+ },
+ {
+  "id": "p70",
+  "question": "Genes are located on:",
+  "options": [
+   "chromosomes",
+   "ribosomes",
+   "mitochondria",
+   "cell walls"
+  ],
+  "answer": "chromosomes",
+  "explanation": "Genes are segments of DNA on chromosomes.",
+  "topic": "dna-inheritance"
+ },
+ {
+  "id": "p71",
+  "question": "Which is a dominant trait in humans?",
+  "options": [
+   "Brown eyes",
+   "Blue eyes",
+   "Straight hair",
+   "Attached earlobes"
+  ],
+  "answer": "Brown eyes",
+  "explanation": "Brown eye colour is dominant over blue.",
+  "topic": "dna-inheritance"
+ },
+ {
+  "id": "p72",
+  "question": "If both parents are heterozygous (Bb) for a trait, the chance of a homozygous recessive (bb) child is:",
+  "options": [
+   "25%",
+   "50%",
+   "75%",
+   "100%"
+  ],
+  "answer": "25%",
+  "explanation": "Bb × Bb → BB, Bb, Bb, bb → 1/4 = 25%.",
+  "topic": "dna-inheritance"
+ },
+ {
+  "id": "p73",
+  "question": "The observable characteristics of an organism are its:",
+  "options": [
+   "phenotype",
+   "genotype",
+   "chromosome",
+   "allele"
+  ],
+  "answer": "phenotype",
+  "explanation": "Phenotype is the physical expression of genes.",
+  "topic": "dna-inheritance"
+ },
+ {
+  "id": "p74",
+  "question": "Which of the following is an example of a decomposer?",
+  "options": [
+   "Fungus",
+   "Grass",
+   "Rabbit",
+   "Hawk"
+  ],
+  "answer": "Fungus",
+  "explanation": "Fungi and bacteria break down dead organic matter.",
+  "topic": "food-chains"
+ },
+ {
+  "id": "p75",
+  "question": "The original source of energy for most food chains is:",
+  "options": [
+   "the sun",
+   "plants",
+   "soil",
+   "water"
+  ],
+  "answer": "the sun",
+  "explanation": "Sunlight is captured by producers in photosynthesis.",
+  "topic": "food-chains"
+ },
+ {
+  "id": "p76",
+  "question": "In a food chain, the trophic level with the most energy is:",
+  "options": [
+   "producers",
+   "primary consumers",
+   "secondary consumers",
+   "tertiary consumers"
+  ],
+  "answer": "producers",
+  "explanation": "Energy decreases along the chain; producers have most.",
+  "topic": "food-chains"
+ },
+ {
+  "id": "p77",
+  "question": "What is the role of nitrogen-fixing bacteria?",
+  "options": [
+   "Convert nitrogen gas to nitrates",
+   "Release nitrogen to the air",
+   "Produce oxygen",
+   "Decompose proteins only"
+  ],
+  "answer": "Convert nitrogen gas to nitrates",
+  "explanation": "They convert atmospheric nitrogen into usable nitrates.",
+  "topic": "food-chains"
+ },
+ {
+  "id": "p78",
+  "question": "Eutrophication of rivers is mainly caused by:",
+  "options": [
+   "excess fertilisers in run-off",
+   "acid rain",
+   "oil spills",
+   "deforestation only"
+  ],
+  "answer": "excess fertilisers in run-off",
+  "explanation": "Nitrates and phosphates from fertilisers cause algal blooms.",
+  "topic": "food-chains"
+ },
+ {
+  "id": "p79",
+  "question": "Which gas is a major contributor to the greenhouse effect?",
+  "options": [
+   "Carbon dioxide",
+   "Oxygen",
+   "Nitrogen",
+   "Helium"
+  ],
+  "answer": "Carbon dioxide",
+  "explanation": "CO₂ traps heat in the atmosphere.",
+  "topic": "food-chains"
+ },
+ {
+  "id": "p80",
+  "question": "The removal of trees from a large area is called:",
+  "options": [
+   "deforestation",
+   "afforestation",
+   "desertification",
+   "conservation"
+  ],
+  "answer": "deforestation",
+  "explanation": "Deforestation is the clearing of forests.",
+  "topic": "food-chains"
+ },
+ {
+  "id": "p81",
+  "question": "Which is a renewable energy source?",
+  "options": [
+   "Solar energy",
+   "Coal",
+   "Oil",
+   "Natural gas"
+  ],
+  "answer": "Solar energy",
+  "explanation": "Solar energy is replenished naturally.",
+  "topic": "food-chains"
+ },
+ {
+  "id": "p82",
+  "question": "A food web differs from a food chain because it:",
+  "options": [
+   "shows multiple interconnected food chains",
+   "shows only one pathway",
+   "has no producers",
+   "excludes consumers"
+  ],
+  "answer": "shows multiple interconnected food chains",
+  "explanation": "Food webs show complex feeding relationships.",
+  "topic": "food-chains"
+ },
+ {
+  "id": "p83",
+  "question": "The process of transpiration is important for:",
+  "options": [
+   "water and mineral transport in plants",
+   "photosynthesis only",
+   "seed germination",
+   "flower colour"
+  ],
+  "answer": "water and mineral transport in plants",
+  "explanation": "Transpiration pulls water up the xylem.",
+  "topic": "photosynthesis"
+ },
+ {
+  "id": "p84",
+  "question": "Which tissue transports water in plants?",
+  "options": [
+   "Xylem",
+   "Phloem",
+   "Epidermis",
+   "Cortex"
+  ],
+  "answer": "Xylem",
+  "explanation": "Xylem transports water and minerals upward.",
+  "topic": "photosynthesis"
+ },
+ {
+  "id": "p85",
+  "question": "Phloem transports:",
+  "options": [
+   "sucrose and amino acids",
+   "water only",
+   "oxygen",
+   "carbon dioxide"
+  ],
+  "answer": "sucrose and amino acids",
+  "explanation": "Phloem transports organic solutes (translocation).",
+  "topic": "photosynthesis"
+ },
+ {
+  "id": "p86",
+  "question": "What is the main function of the root hair cell?",
+  "options": [
+   "Increase surface area for water absorption",
+   "Photosynthesis",
+   "Storage of starch",
+   "Reproduction"
+  ],
+  "answer": "Increase surface area for water absorption",
+  "explanation": "Root hairs greatly increase absorption surface area.",
+  "topic": "cell-structure"
+ },
+ {
+  "id": "p87",
+  "question": "Which of these is a characteristic of living things?",
+  "options": [
+   "Respiration",
+   "Density",
+   "Hardness",
+   "Conductivity"
+  ],
+  "answer": "Respiration",
+  "explanation": "Respiration releases energy and is a life process.",
+  "topic": "cell-structure"
+ },
+ {
+  "id": "p88",
+  "question": "The scientific name of humans is Homo sapiens. 'Homo' is the:",
+  "options": [
+   "genus",
+   "species",
+   "family",
+   "kingdom"
+  ],
+  "answer": "genus",
+  "explanation": "Binomial nomenclature: genus + species.",
+  "topic": "dna-inheritance"
+ },
+ {
+  "id": "p89",
+  "question": "A microscope magnifies an object 400 times. If the objective lens is 40×, the eyepiece is:",
+  "options": [
+   "10×",
+   "4×",
+   "100×",
+   "440×"
+  ],
+  "answer": "10×",
+  "explanation": "Total = eyepiece × objective → 400/40 = 10×.",
+  "topic": "cell-structure"
+ },
+ {
+  "id": "p90",
+  "question": "Which is the correct order of biological classification?",
+  "options": [
+   "Kingdom, Phylum, Class, Order, Family, Genus, Species",
+   "Species, Genus, Family, Order, Class, Phylum, Kingdom",
+   "Kingdom, Class, Phylum, Order, Family, Genus, Species",
+   "Family, Order, Class, Phylum, Kingdom, Genus, Species"
+  ],
+  "answer": "Kingdom, Phylum, Class, Order, Family, Genus, Species",
+  "explanation": "Memory aid: King Philip Came Over For Good Soup.",
+  "topic": "dna-inheritance"
+ },
+ {
+  "id": "p91",
+  "question": "A plant cell placed in a concentrated salt solution will:",
+  "options": [
+   "lose water and become flaccid",
+   "gain water and swell",
+   "remain unchanged",
+   "burst"
+  ],
+  "answer": "lose water and become flaccid",
+  "explanation": "Water leaves the cell by osmosis into the salt solution.",
+  "topic": "osmosis-diffusion"
+ },
+ {
+  "id": "p92",
+  "question": "Turgor pressure in plant cells results from:",
+  "options": [
+   "water entering the vacuole",
+   "water leaving the cell",
+   "cell wall dissolving",
+   "chlorophyll production"
+  ],
+  "answer": "water entering the vacuole",
+  "explanation": "Water pushes against the cell wall, keeping the plant firm.",
+  "topic": "osmosis-diffusion"
+ },
+ {
+  "id": "p93",
+  "question": "Which blood component helps clot blood at wounds?",
+  "options": [
+   "Platelets",
+   "Red blood cells",
+   "White blood cells",
+   "Plasma"
+  ],
+  "answer": "Platelets",
+  "explanation": "Platelets trigger clotting.",
+  "topic": "circulatory-system"
+ },
+ {
+  "id": "p94",
+  "question": "Plasma is mainly composed of:",
+  "options": [
+   "water",
+   "protein",
+   "fat",
+   "glucose"
+  ],
+  "answer": "water",
+  "explanation": "Plasma is about 90% water carrying dissolved substances.",
+  "topic": "circulatory-system"
+ },
+ {
+  "id": "p95",
+  "question": "The heartbeat is controlled by the:",
+  "options": [
+   "pacemaker",
+   "valves",
+   "aorta",
+   "coronary artery"
+  ],
+  "answer": "pacemaker",
+  "explanation": "The sinoatrial node (pacemaker) initiates each heartbeat.",
+  "topic": "circulatory-system"
+ },
+ {
+  "id": "p96",
+  "question": "Which lifestyle choice most reduces the risk of heart disease?",
+  "options": [
+   "Regular exercise and balanced diet",
+   "Smoking",
+   "High-fat diet",
+   "Sedentary lifestyle"
+  ],
+  "answer": "Regular exercise and balanced diet",
+  "explanation": "Exercise and diet lower cholesterol and blood pressure.",
+  "topic": "circulatory-system"
+ },
+ {
+  "id": "p97",
+  "question": "What is the function of the epiglottis?",
+  "options": [
+   "Prevents food from entering the trachea",
+   "Produces saliva",
+   "Grinds food",
+   "Absorbs water"
+  ],
+  "answer": "Prevents food from entering the trachea",
+  "explanation": "The epiglottis closes over the trachea during swallowing.",
+  "topic": "respiration"
+ },
+ {
+  "id": "p98",
+  "question": "Breathing rate increases during exercise because:",
+  "options": [
+   "more oxygen is needed for respiration",
+   "muscles need less energy",
+   "carbon dioxide decreases",
+   "the heart slows down"
+  ],
+  "answer": "more oxygen is needed for respiration",
+  "explanation": "Muscles respire faster, needing more oxygen and removing more CO₂.",
+  "topic": "respiration"
+ },
+ {
+  "id": "p99",
+  "question": "Which of the following reduces air pollution?",
+  "options": [
+   "Using catalytic converters in cars",
+   "Burning more fossil fuels",
+   "Cutting down forests",
+   "Using leaded petrol"
+  ],
+  "answer": "Using catalytic converters in cars",
+  "explanation": "Catalytic converters reduce harmful exhaust gases.",
+  "topic": "food-chains"
+ },
+ {
+  "id": "p100",
+  "question": "Which of the following is an example of a habitat?",
+  "options": [
+   "A mangrove swamp",
+   "A species",
+   "A population",
+   "An organism"
+  ],
+  "answer": "A mangrove swamp",
+  "explanation": "A habitat is the natural home of an organism.",
+  "topic": "food-chains"
+ }
 ]
