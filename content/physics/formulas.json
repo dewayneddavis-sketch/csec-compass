@@ -1,0 +1,196 @@
+{
+ "subject": "physics",
+ "introduction": "Quick-reference formulas and units for CSEC Physics Paper 1 and Paper 2. All SI units are given — always show the formula, substitution, and unit in calculations.",
+ "sections": [
+  {
+   "title": "Mechanics — motion, forces, energy",
+   "items": [
+    {
+     "name": "Average speed",
+     "formula": "v = d / t  (m/s)",
+     "notes": "Distance in metres, time in seconds. Convert km/h to m/s by dividing by 3.6."
+    },
+    {
+     "name": "Acceleration",
+     "formula": "a = (v − u) / t  (m/s²)",
+     "notes": "u = initial velocity, v = final velocity. Deceleration gives a negative value."
+    },
+    {
+     "name": "Newton's second law",
+     "formula": "F = m × a  (N = kg·m/s²)",
+     "notes": "Weight is a force: W = m × g, with g = 10 N/kg (or 10 m/s²) on Earth."
+    },
+    {
+     "name": "Momentum",
+     "formula": "p = m × v  (kg·m/s)",
+     "notes": "Conserved in collisions: total momentum before = total momentum after."
+    },
+    {
+     "name": "Kinetic energy",
+     "formula": "Ek = ½ × m × v²  (J)",
+     "notes": "Doubling speed quadruples kinetic energy."
+    },
+    {
+     "name": "Gravitational potential energy",
+     "formula": "Ep = m × g × h  (J)",
+     "notes": "Energy gained lifting a mass h metres against gravity."
+    },
+    {
+     "name": "Work done",
+     "formula": "W = F × d  (J)",
+     "notes": "Force must act in the direction of motion; 1 J = 1 N·m."
+    },
+    {
+     "name": "Power",
+     "formula": "P = W / t = E / t  (W = J/s)",
+     "notes": "1 kW = 1000 W. Electrical power: P = V × I = I²R = V²/R."
+    },
+    {
+     "name": "Efficiency",
+     "formula": "efficiency = (useful output / total input) × 100%",
+     "notes": "Always less than 100% — the rest is wasted, usually as heat."
+    },
+    {
+     "name": "Pressure (solids/fluids)",
+     "formula": "P = F / A  (Pa = N/m²)",
+     "notes": "Hydraulics: F₁/A₁ = F₂/A₂. Liquid pressure: P = ρ × g × h."
+    },
+    {
+     "name": "Archimedes / floating",
+     "formula": "upthrust = weight of fluid displaced",
+     "notes": "An object floats when its weight equals the upthrust; density of object < density of fluid."
+    }
+   ]
+  },
+  {
+   "title": "Thermal physics and gas laws",
+   "items": [
+    {
+     "name": "Kelvin conversion",
+     "formula": "T(K) = T(°C) + 273",
+     "notes": "Gas-law calculations MUST use kelvin. 0 °C = 273 K."
+    },
+    {
+     "name": "Boyle's law (constant T)",
+     "formula": "P₁V₁ = P₂V₂",
+     "notes": "Pressure × volume is constant; halving volume doubles pressure."
+    },
+    {
+     "name": "Charles' law (constant P)",
+     "formula": "V₁/T₁ = V₂/T₂",
+     "notes": "Volume proportional to absolute temperature."
+    },
+    {
+     "name": "Pressure law (constant V)",
+     "formula": "P₁/T₁ = P₂/T₂",
+     "notes": "Pressure proportional to absolute temperature."
+    },
+    {
+     "name": "General gas law",
+     "formula": "P₁V₁/T₁ = P₂V₂/T₂",
+     "notes": "Combined form — the workhorse for CSEC gas calculations."
+    },
+    {
+     "name": "Heat energy",
+     "formula": "Q = m × c × ΔT  (J)",
+     "notes": "c = specific heat capacity (water: 4200 J/kg°C)."
+    },
+    {
+     "name": "Latent heat",
+     "formula": "Q = m × l  (J)",
+     "notes": "l = specific latent heat; temperature stays constant during melting/boiling."
+    },
+    {
+     "name": "Linear expansion",
+     "formula": "ΔL = α × L₀ × ΔT",
+     "notes": "α = linear expansivity. Explains expansion gaps in rails and bridges."
+    }
+   ]
+  },
+  {
+   "title": "Waves, light and sound",
+   "items": [
+    {
+     "name": "Wave equation",
+     "formula": "v = f × λ  (m/s)",
+     "notes": "f = frequency (Hz), λ = wavelength (m). Period T = 1/f."
+    },
+    {
+     "name": "Speed of sound in air",
+     "formula": "≈ 340 m/s",
+     "notes": "Sound needs a medium — it cannot travel through a vacuum."
+    },
+    {
+     "name": "Speed of light",
+     "formula": "3.0 × 10⁸ m/s (vacuum)",
+     "notes": "Fastest possible speed; EM waves all travel at this speed in vacuum."
+    },
+    {
+     "name": "Law of reflection",
+     "formula": "angle of incidence = angle of reflection",
+     "notes": "Both angles measured from the normal, not the surface."
+    },
+    {
+     "name": "Refractive index",
+     "formula": "n = sin i / sin r = speed in vacuum / speed in medium",
+     "notes": "Bending toward the normal when entering a denser medium."
+    },
+    {
+     "name": "Critical angle & TIR",
+     "formula": "sin c = 1 / n",
+     "notes": "Total internal reflection when incidence exceeds c; used in optical fibres."
+    },
+    {
+     "name": "Lens power (qualitative)",
+     "formula": "converging (convex) lens focuses parallel rays to focal point",
+     "notes": "Real images form where rays meet and can be caught on a screen."
+    }
+   ]
+  },
+  {
+   "title": "Electricity and magnetism",
+   "items": [
+    {
+     "name": "Charge flow",
+     "formula": "Q = I × t  (C = A·s)",
+     "notes": "Current is the rate of flow of charge."
+    },
+    {
+     "name": "Potential difference",
+     "formula": "V = W / Q  (V = J/C)",
+     "notes": "Energy transferred per unit charge across a component."
+    },
+    {
+     "name": "Ohm's law",
+     "formula": "V = I × R",
+     "notes": "Only for ohmic conductors at constant temperature."
+    },
+    {
+     "name": "Resistors in series",
+     "formula": "R_total = R₁ + R₂ + …",
+     "notes": "Same current everywhere; voltages add."
+    },
+    {
+     "name": "Resistors in parallel",
+     "formula": "1/R_total = 1/R₁ + 1/R₂ + …",
+     "notes": "Same voltage across each branch; currents add."
+    },
+    {
+     "name": "Electrical energy",
+     "formula": "E = V × I × t = P × t  (J; 1 kWh = 3.6 MJ)",
+     "notes": "Domestic bills use kilowatt-hours: E(kWh) = power(kW) × time(h)."
+    },
+    {
+     "name": "Transformer turns ratio",
+     "formula": "Vp/Vs = Np/Ns;  Vp×Ip = Vs×Is (ideal)",
+     "notes": "Step-up: more secondary turns (higher V, lower I). Works on AC only, via electromagnetic induction."
+    },
+    {
+     "name": "Half-life",
+     "formula": "activity halves every half-life",
+     "notes": "After n half-lives: A = A₀ / 2ⁿ. Alpha = helium nucleus, beta = fast electron, gamma = EM wave (most penetrating)."
+    }
+   ]
+  }
+ ]
+}

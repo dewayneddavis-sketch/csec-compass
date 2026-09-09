@@ -1,0 +1,136 @@
+{
+ "subject": "spanish",
+ "introduction": "High-frequency grammar and vocabulary for CSEC Spanish Paper 1: verbs, agreements, and exam-room phrases.",
+ "sections": [
+  {
+   "title": "Ser vs estar and core verbs",
+   "items": [
+    {
+     "name": "Ser (permanent traits)",
+     "formula": "soy, eres, es, somos, sois, son",
+     "notes": "Origin, identity, time, material: 'Soy de Jamaica', 'Son las dos'."
+    },
+    {
+     "name": "Estar (states/location)",
+     "formula": "estoy, estás, está, estamos, estáis, están",
+     "notes": "Mood, health, place: 'Estoy feliz', 'Tengo hambre' uses tener for hunger!"
+    },
+    {
+     "name": "Tener (age, needs)",
+     "formula": "tengo, tienes, tiene, tenemos, tenéis, tienen",
+     "notes": "'Tengo 15 años' (I am 15); 'tengo sed/hambre' (I am thirsty/hungry)."
+    },
+    {
+     "name": "Ir + a + infinitive (near future)",
+     "formula": "voy / vas / va / vamos / vais / van + a + verb",
+     "notes": "'Voy a estudiar' = I am going to study."
+    },
+    {
+     "name": "Regular present endings (-ar/-er/-ir)",
+     "formula": "-ar: -o, -as, -a, -amos, -áis, -an (hablar → hablo)",
+     "notes": "-er/-ir: -o, -es, -e, -emos/-imos, -éis/-ís, -en (comer → como; vivir → vivo)."
+    },
+    {
+     "name": "Preterite (past) anchors",
+     "formula": "hablé, hablaste, habló…; comí, comiste, comió…",
+     "notes": "Completed past actions: 'Comí ayer' (I ate yesterday)."
+    },
+    {
+     "name": "Gustar (liking)",
+     "formula": "me gusta / me gustan (thing agrees, not the person)",
+     "notes": "'Me gusta el fútbol'; plural thing → 'me gustan los libros'."
+    }
+   ]
+  },
+  {
+   "title": "Agreement: articles, adjectives, plurals",
+   "items": [
+    {
+     "name": "Definite articles",
+     "formula": "el (m. sing.), la (f. sing.), los (m. pl.), las (f. pl.)",
+     "notes": "La manzana, el libro → los libros; el lápiz → los lápices."
+    },
+    {
+     "name": "Indefinite articles",
+     "formula": "un, una, unos, unas",
+     "notes": "'Una escuela', 'unos amigos'."
+    },
+    {
+     "name": "Adjective placement/agreement",
+     "formula": "usually AFTER the noun; match gender + number",
+     "notes": "'La casa roja' (the red house); 'los libros nuevos'."
+    },
+    {
+     "name": "Key opposites",
+     "formula": "alto/bajo, bueno/malo, grande/pequeño, feliz/triste",
+     "notes": "Comparatives: mejor (better), peor (worse); superlatives: el mejor."
+    },
+    {
+     "name": "Possessives",
+     "formula": "mi/mis, tu/tus, su/sus, nuestro/a/os/as",
+     "notes": "'Mi familia', 'nuestra escuela'."
+    }
+   ]
+  },
+  {
+   "title": "Time, numbers and daily life",
+   "items": [
+    {
+     "name": "Telling time",
+     "formula": "¿Qué hora es? — Es la una / Son las dos",
+     "notes": "'Son las tres y media'; days: lunes…domingo; months: enero…diciembre."
+    },
+    {
+     "name": "Numbers to watch",
+     "formula": "quince 15, veinte 20, veinticinco 25, setenta y cinco 75",
+     "notes": "Cien = 100; telling age, prices (¿Cuánto cuesta?), dates."
+    },
+    {
+     "name": "Weather",
+     "formula": "hace calor/frío/sol/viento; está lloviendo",
+     "notes": "'Hace frío' = it is cold; 'está nublado' = cloudy."
+    },
+    {
+     "name": "Food & routine",
+     "formula": "el desayuno (breakfast), el almuerzo (lunch), la cena (dinner)",
+     "notes": "'Tengo hambre/sed/cansancio' use tener, not estar."
+    },
+    {
+     "name": "Directions & places",
+     "formula": "¿Dónde vives? — Vivo en…; la playa, el mercado, la farmacia, el aeropuerto",
+     "notes": "Left/right: a la izquierda / a la derecha; near: cerca de."
+    }
+   ]
+  },
+  {
+   "title": "Reading signs and writing",
+   "items": [
+    {
+     "name": "Public signs",
+     "formula": "Abierto (open), Cerrado (closed), Peligro (danger), Prohibido fumar (no smoking), Salida (exit)",
+     "notes": "Restaurant: 'la carta' = the menu; 'la cuenta, por favor' = the bill, please."
+    },
+    {
+     "name": "Letter/email frames",
+     "formula": "greeting: Querido/a…; closing: Saludos / Atentamente / Un abrazo",
+     "notes": "Formal 'usted' for strangers; '¿En qué puedo servirle?' = how may I help you?"
+    },
+    {
+     "name": "Oral role-play openers",
+     "formula": "¿Cómo te llamas? — Me llamo…; ¿De dónde eres? — Soy de…",
+     "notes": "Polite requests: 'Por favor', 'gracias', 'perdón/disculpe'."
+    },
+    {
+     "name": "False friends & cognates",
+     "formula": "embarazada = pregnant (NOT embarrassed); éxito = success",
+     "notes": "Cognates like 'hospital', 'doctor' help in passages — check context."
+    },
+    {
+     "name": "Culture anchors",
+     "formula": "Día de los Muertos (Mexico, honours deceased); carnival & festivals across the Hispanic Caribbean",
+     "notes": "Caribbean Spanish: rapid speech, dropped final -s in some areas; notable figures: artists like Frida Kahlo."
+    }
+   ]
+  }
+ ]
+}

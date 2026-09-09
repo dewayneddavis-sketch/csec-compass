@@ -1,0 +1,181 @@
+{
+ "subject": "chemistry",
+ "introduction": "Quick-reference data for CSEC Chemistry: key equations, the reactivity series, periodic trends, and qualitative tests.",
+ "sections": [
+  {
+   "title": "The mole and concentration",
+   "items": [
+    {
+     "name": "Avogadro's number",
+     "formula": "1 mole = 6.02 × 10²³ particles",
+     "notes": "Particles = atoms, molecules, ions or electrons."
+    },
+    {
+     "name": "Moles from mass",
+     "formula": "n = m / Mr  (mol)",
+     "notes": "Mr = relative molecular/formula mass. Example: 40 g NaOH (Mr 40) = 1 mol."
+    },
+    {
+     "name": "Concentration",
+     "formula": "c = n / V  (mol/dm³)",
+     "notes": "V must be in dm³ (1000 cm³ = 1 dm³)."
+    },
+    {
+     "name": "Molar gas volume (r.t.p.)",
+     "formula": "1 mol of any gas = 24 dm³ (24000 cm³)",
+     "notes": "r.t.p. = room temperature and pressure. Example: 0.5 mol CO₂ = 12 dm³."
+    },
+    {
+     "name": "Empirical formula",
+     "formula": "divide each % or mass by Ar, then simplest whole-number ratio",
+     "notes": "Molecular formula = (empirical formula) × n."
+    },
+    {
+     "name": "Percentage yield / purity",
+     "formula": "% = (actual / theoretical) × 100%",
+     "notes": "Same form for percentage purity of a sample."
+    }
+   ]
+  },
+  {
+   "title": "Acids, bases and salts",
+   "items": [
+    {
+     "name": "pH scale",
+     "formula": "0–6 acidic, 7 neutral, 8–14 alkaline",
+     "notes": "Each pH unit = 10× change in H⁺ concentration. pH 2 is strongly acidic."
+    },
+    {
+     "name": "Neutralization (general)",
+     "formula": "acid + base → salt + water",
+     "notes": "Example: HCl + NaOH → NaCl + H₂O."
+    },
+    {
+     "name": "Acid + metal",
+     "formula": "acid + metal → salt + hydrogen",
+     "notes": "Test for H₂: squeaky pop with a lighted splint."
+    },
+    {
+     "name": "Acid + carbonate",
+     "formula": "acid + carbonate → salt + water + carbon dioxide",
+     "notes": "Test for CO₂: turns limewater milky."
+    },
+    {
+     "name": "Ionic equation (neutralization)",
+     "formula": "H⁺(aq) + OH⁻(aq) → H₂O(l)",
+     "notes": "Spectator ions cancel out."
+    },
+    {
+     "name": "Titration reading",
+     "formula": "titre = final burette reading − initial reading",
+     "notes": "Average concordant titres (within 0.10 cm³) for the calculation."
+    }
+   ]
+  },
+  {
+   "title": "Redox and electrochemistry",
+   "items": [
+    {
+     "name": "OILRIG",
+     "formula": "Oxidation Is Loss (of electrons); Reduction Is Gain",
+     "notes": "Oxidation number rises = oxidized; falls = reduced."
+    },
+    {
+     "name": "Displacement example",
+     "formula": "Zn + CuSO₄ → ZnSO₄ + Cu",
+     "notes": "Zinc is oxidized (0 → +2); copper ions reduced (+2 → 0)."
+    },
+    {
+     "name": "Reactivity series (key order)",
+     "formula": "K > Na > Ca > Mg > Al > (C) > Zn > Fe > (H) > Cu > Ag > Au",
+     "notes": "Metals above carbon extracted by electrolysis; below by reduction with carbon/coke."
+    },
+    {
+     "name": "Electrolysis products (rules)",
+     "formula": "cathode (−): metal or H₂ discharged; anode (+): non-metal or O₂ discharged",
+     "notes": "Brine: H₂ at cathode, Cl₂ at anode. Molten PbBr₂: Pb at cathode, Br₂ at anode."
+    },
+    {
+     "name": "Rust prevention",
+     "formula": "rusting needs oxygen AND water",
+     "notes": "Prevent by painting, oiling, galvanizing (zinc coating) or sacrificial protection."
+    }
+   ]
+  },
+  {
+   "title": "Periodic trends and bonding",
+   "items": [
+    {
+     "name": "Groups vs periods",
+     "formula": "group number = outer-shell electrons; period = number of shells",
+     "notes": "Group 0: noble gases (full shells, unreactive); Group VII: halogens; Group I: alkali metals."
+    },
+    {
+     "name": "Trend across a period",
+     "formula": "atomic radius decreases; electronegativity and ionization energy increase",
+     "notes": "Stronger nuclear pull on the same shell."
+    },
+    {
+     "name": "Trend down a group",
+     "formula": "reactivity increases (Group I), decreases (Group VII); melting/boiling falls (I), rises (VII)",
+     "notes": "Extra shells shield the outer electrons."
+    },
+    {
+     "name": "Ionic bonding",
+     "formula": "metal → non-metal electron TRANSFER, e.g. MgCl₂",
+     "notes": "Giant lattice; conducts when molten/aqueous, not solid; high m.p."
+    },
+    {
+     "name": "Covalent bonding",
+     "formula": "non-metal ↔ non-metal electron SHARING, e.g. CH₄",
+     "notes": "Simple molecules: low m.p./b.p., do not conduct."
+    },
+    {
+     "name": "Alkanes",
+     "formula": "general formula CnH₂n₊₂; CH₄, C₂H₆, C₃H₈, C₄H₁₀",
+     "notes": "Saturated (single bonds); burn in O₂ → CO₂ + H₂O (fuels)."
+    },
+    {
+     "name": "Alkenes / alcohols",
+     "formula": "alkenes: CnH₂n (C=C double bond); alcohols: –OH group",
+     "notes": "Test for unsaturation: bromine water decolourised (orange → colourless)."
+    }
+   ]
+  },
+  {
+   "title": "Qualitative tests and industrial processes",
+   "items": [
+    {
+     "name": "Gases: H₂ / O₂ / NH₃",
+     "formula": "H₂: squeaky pop; O₂: relights glowing splint; NH₃: damp red litmus → blue",
+     "notes": "CO₂: limewater milky. Cl₂: bleaches damp litmus."
+    },
+    {
+     "name": "Water in a sample",
+     "formula": "blue cobalt chloride → pink; white anhydrous CuSO₄ → blue",
+     "notes": "Both test for the presence of water."
+    },
+    {
+     "name": "Haber process (ammonia)",
+     "formula": "N₂ + 3H₂ ⇌ 2NH₃ (iron catalyst, ~450 °C, 200 atm)",
+     "notes": "Compromise conditions: good rate without killing the yield."
+    },
+    {
+     "name": "Contact process (sulfuric acid)",
+     "formula": "2SO₂ + O₂ ⇌ 2SO₃ (V₂O₅ catalyst)",
+     "notes": "SO₃ absorbed in concentrated H₂SO₄ to make oleum, then diluted."
+    },
+    {
+     "name": "Blast furnace",
+     "formula": "reducing agent is carbon monoxide: Fe₂O₃ + 3CO → 2Fe + 3CO₂",
+     "notes": "Limestone removes impurities as slag."
+    },
+    {
+     "name": "Aluminium extraction",
+     "formula": "electrolysis of bauxite in molten cryolite",
+     "notes": "Cryolite lowers the melting point, saving energy."
+    }
+   ]
+  }
+ ]
+}

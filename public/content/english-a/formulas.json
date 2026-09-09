@@ -1,0 +1,126 @@
+{
+ "subject": "english-a",
+ "introduction": "Writing frames and language rules for CSEC English A — summary, essay, grammar, and vocabulary strategies.",
+ "sections": [
+  {
+   "title": "Summary writing (30 marks habit)",
+   "items": [
+    {
+     "name": "Find main points",
+     "formula": "read twice; underline only what answers the question",
+     "notes": "Omit examples, repetitions, adjectives, and figurative decoration."
+    },
+    {
+     "name": "Draft in your words",
+     "formula": "one paragraph, ~120 words, no bullets, no intro/conclusion",
+     "notes": "Link points with connectives (furthermore, however, consequently)."
+    },
+    {
+     "name": "Length check",
+     "formula": "count words and adjust — over/under limit loses marks",
+     "notes": "Keep the original tense; never copy whole sentences if you can paraphrase."
+    }
+   ]
+  },
+  {
+   "title": "Essay and paragraph structures",
+   "items": [
+    {
+     "name": "PEEL paragraph",
+     "formula": "Point → Evidence/Example → Explanation → Link",
+     "notes": "One clear point per paragraph; link back to the question."
+    },
+    {
+     "name": "Expository essay frame",
+     "formula": "intro (thesis) → 3 body paragraphs (PEEL) → conclusion (restate + insight)",
+     "notes": "Thesis statement = your controlling idea in the opening paragraph."
+    },
+    {
+     "name": "Argument essay frame",
+     "formula": "claim → reasons + evidence → counter-argument + rebuttal → conclusion",
+     "notes": "Persuasive devices: rhetorical questions, statistics, emotive language, expert opinion."
+    },
+    {
+     "name": "Narrative arc",
+     "formula": "exposition → rising action → climax → falling action → resolution",
+     "notes": "Show, don't tell: dialogue, sensory detail, varied sentence lengths."
+    },
+    {
+     "name": "Descriptive toolkit",
+     "formula": "simile, metaphor, personification, alliteration, onomatopoeia, hyperbole",
+     "notes": "'The wind whispered' (personification); 'like sunshine' (simile); 'eat a horse' (hyperbole)."
+    },
+    {
+     "name": "Letter/email layout",
+     "formula": "address + date → greeting → purpose → details → close ('Yours sincerely/faithfully')",
+     "notes": "Formal vs informal register: no slang or contractions in formal letters."
+    }
+   ]
+  },
+  {
+   "title": "Grammar and mechanics",
+   "items": [
+    {
+     "name": "Subject–verb agreement",
+     "formula": "singular subject → singular verb: 'Each student HAS'; collective as unit → singular",
+     "notes": "'Neither of the boys IS present'; 'He DOES not' / 'He DOESN'T' (not 'don't')."
+    },
+    {
+     "name": "Tense consistency",
+     "formula": "stay in one tense unless the meaning shifts",
+     "notes": "Present continuous: am/is/are + verb-ing ('She is singing')."
+    },
+    {
+     "name": "Apostrophes",
+     "formula": "possession (Maria's book) vs contraction (don't = do not)",
+     "notes": "Plurals never take apostrophes ('books', not 'book's')."
+    },
+    {
+     "name": "Punctuation map",
+     "formula": "full stop ends statements; ? for questions; ! for exclamations; : introduces; ; joins related clauses",
+     "notes": "Comma after an intro phrase ('After dinner, we went home'); colon before lists/explanations."
+    },
+    {
+     "name": "Common confusions",
+     "formula": "their/there/they're; to/too/two; affect/effect; complement/compliment",
+     "notes": "Proofread backwards sentence by sentence to catch them."
+    },
+    {
+     "name": "Sentence types",
+     "formula": "simple (1 clause); compound (2 independent + conjunction); complex (independent + dependent)",
+     "notes": "Comma splice and run-on fixes: split, join with conjunction, or use a semicolon."
+    }
+   ]
+  },
+  {
+   "title": "Vocabulary strategy",
+   "items": [
+    {
+     "name": "Context clues",
+     "formula": "definition, synonym, antonym, example, or inference from surrounding text",
+     "notes": "'Ominous clouds' → threatening, from the storm context."
+    },
+    {
+     "name": "Word parts",
+     "formula": "prefix (un-, anti-, inter-) + root + suffix (-less = without; -ology = study of)",
+     "notes": "Transport = trans (across) + port (carry)."
+    },
+    {
+     "name": "Synonym/antonym pairs",
+     "formula": "meticulous/careful; diligent/hardworking; candid/honest; ambiguous/unclear",
+     "notes": "Antonyms: expand/contract; ancient/modern; transparent/opaque; reluctant/willing."
+    },
+    {
+     "name": "Idioms & proverbs",
+     "formula": "bite the bullet (face difficulty); break the ice (start conversation); eleventh hour (last moment)",
+     "notes": "Once in a blue moon (rarely); actions speak louder than words (deeds matter)."
+    },
+    {
+     "name": "Spelling demons",
+     "formula": "double-check: necessary, embarrass, recommend, separate, occurrence, sincerely",
+     "notes": "Sound it out by syllables; learn 'i before e except after c' limits."
+    }
+   ]
+  }
+ ]
+}

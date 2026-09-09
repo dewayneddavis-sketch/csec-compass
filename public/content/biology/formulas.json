@@ -1,0 +1,121 @@
+{
+ "subject": "biology",
+ "introduction": "Key units, formulas, and definitions for CSEC Biology — cells, transport, nutrition, respiration, and ecology.",
+ "sections": [
+  {
+   "title": "Cells, microscopes and movement",
+   "items": [
+    {
+     "name": "Magnification",
+     "formula": "magnification = image size / actual size (I = A × M)",
+     "notes": "Example: 40× objective × 10× eyepiece = 400× total."
+    },
+    {
+     "name": "Units of size",
+     "formula": "1 mm = 1000 µm;  1 µm = 1000 nm",
+     "notes": "Animal cells ≈ 10–30 µm; bacteria ≈ 1–5 µm."
+    },
+    {
+     "name": "Cell structures",
+     "formula": "nucleus (controls), mitochondria (release energy), chloroplast (photosynthesis), ribosome (protein synthesis)",
+     "notes": "Plant-only: cell wall, chloroplasts, large vacuole. Cell membrane controls entry/exit."
+    },
+    {
+     "name": "Diffusion / osmosis / active transport",
+     "formula": "diffusion: high→low, no energy; osmosis: water across a semi-permeable membrane; active: low→high USING energy",
+     "notes": "Turgor: plant cells firm when full of water; plasmolysis in strong salt solution."
+    }
+   ]
+  },
+  {
+   "title": "Nutrition, transport and respiration",
+   "items": [
+    {
+     "name": "Photosynthesis",
+     "formula": "6CO₂ + 6H₂O →(light/chlorophyll) C₆H₁₂O₆ + 6O₂",
+     "notes": "Chlorophyll traps light; gas exchange via stomata; transpiration stream carries water up the xylem."
+    },
+    {
+     "name": "Aerobic respiration",
+     "formula": "C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energy",
+     "notes": "In mitochondria; anaerobic in muscles also makes lactic acid."
+    },
+    {
+     "name": "Heart pathway",
+     "formula": "vena cava → right atrium → right ventricle → pulmonary artery → lungs → pulmonary vein → left atrium → left ventricle → aorta",
+     "notes": "Left ventricle wall is thickest (pumps to the body). Arteries away from heart; veins have valves; capillaries one cell thick."
+    },
+    {
+     "name": "Blood contents",
+     "formula": "red cells (haemoglobin carries O₂), white cells (fight infection), platelets (clot), plasma (~90% water, transports)",
+     "notes": "Pulse = surge of blood; pacemaker (sinoatrial node) sets the beat."
+    },
+    {
+     "name": "Balanced diet + deficiencies",
+     "formula": "carbs/fats (energy), protein (growth), fibre, water, vitamins/minerals",
+     "notes": "Iron→anaemia; calcium→bones/teeth; vitamin C→scurvy; vitamin D→rickets; iodine→goitre."
+    },
+    {
+     "name": "Kidney / homeostasis",
+     "formula": "nephron filters blood → urine; homeostasis = constant internal environment",
+     "notes": "Insulin lowers blood sugar (lack → diabetes); skin/kidneys regulate water and temperature."
+    }
+   ]
+  },
+  {
+   "title": "Coordination, reproduction and inheritance",
+   "items": [
+    {
+     "name": "Nervous vs hormonal",
+     "formula": "nerves: fast, short-lived electrical impulses via neurones; hormones: slower chemical messengers in blood",
+     "notes": "Reflex arc bypasses the brain for speed; adrenaline = fight-or-flight."
+    },
+    {
+     "name": "Eye / ear anchors",
+     "formula": "iris controls light entry; retina (rods/cones) detects it; lens focuses",
+     "notes": "Cochlea converts vibrations to nerve impulses."
+    },
+    {
+     "name": "Mitosis vs meiosis",
+     "formula": "mitosis: 2 identical cells (growth/repair); meiosis: 4 different gametes (half chromosomes)",
+     "notes": "Human body cells: 46 chromosomes (23 pairs); gametes: 23."
+    },
+    {
+     "name": "Monohybrid cross",
+     "formula": "dominant (B) masks recessive (b): Bb × bb → 50% brown, 50% white",
+     "notes": "Genotype = alleles (Bb); phenotype = appearance; homozygous = BB/bb, heterozygous = Bb."
+    },
+    {
+     "name": "Seed / foetal growth",
+     "formula": "pollen + ovule → seed; placenta supplies foetus (food/O₂) and removes waste",
+     "notes": "Reproduction vocab: ovary/testes, uterus, gestation, zygote → embryo → foetus."
+    }
+   ]
+  },
+  {
+   "title": "Ecology and human impact",
+   "items": [
+    {
+     "name": "Food chains / webs",
+     "formula": "arrows show ENERGY flow: producer → primary consumer → secondary consumer",
+     "notes": "Decomposers recycle nutrients; trophic level with most energy = producers."
+    },
+    {
+     "name": "Pyramids of energy",
+     "formula": "only ~10% passed to each next level",
+     "notes": "Explains why food chains rarely exceed 4–5 levels."
+    },
+    {
+     "name": "Eutrophication",
+     "formula": "fertilizer run-off → algal bloom → death/decay uses O₂ → aquatic life dies",
+     "notes": "Also: deforestation, greenhouse gases (CO₂, methane), pollution of water by sewage/chemicals."
+    },
+    {
+     "name": "Classification order",
+     "formula": "kingdom → phylum → class → order → family → genus → species",
+     "notes": "Humans: Homo sapiens ('Homo' = genus). Binomial = genus + species."
+    }
+   ]
+  }
+ ]
+}
