@@ -15,8 +15,8 @@ function getStripe() {
 }
 
 const PRICE_IDS = {
-  subject: "price_1UDn6IDDZe1IvigkHKyaFPoR",
-  bundle: "price_1UDn6IDDZe1IvigklbTOatf9",
+  subject: "price_1Tgqa4BMfL7i0JlrJuGSfD3E",
+  bundle: "price_1TgqfGBMfL7i0JlrqzpZgtJU",
 };
 
 export default async function handler(req, res) {
