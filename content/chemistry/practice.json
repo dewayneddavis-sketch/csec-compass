@@ -1,1202 +1,1302 @@
 [
-  {
-    "id": "p1",
-    "question": "Which of the following describes the arrangement of particles in a solid?",
-    "options": [
-      "Closely packed in a regular arrangement",
-      "Far apart and move rapidly",
-      "Close together but can move past each other",
-      "Arranged in a random pattern"
-    ],
-    "answer": "Closely packed in a regular arrangement",
-    "explanation": "Solid particles are tightly packed in a fixed, regular lattice structure."
-  },
-  {
-    "id": "p2",
-    "question": "An atom has 11 protons and 12 neutrons. What is its mass number?",
-    "options": [
-      "11",
-      "12",
-      "23",
-      "1"
-    ],
-    "answer": "23",
-    "explanation": "Mass Number (A) = Protons + Neutrons = 11 + 12 = 23."
-  },
-  {
-    "id": "p3",
-    "question": "Which trend is generally observed as you move from left to right across a period in the Periodic Table?",
-    "options": [
-      "Atomic radius increases",
-      "Electronegativity decreases",
-      "Ionization energy increases",
-      "Metallic character increases"
-    ],
-    "answer": "Ionization energy increases",
-    "explanation": "Across a period, nuclear charge increases, making it harder to remove an electron, thus increasing ionization energy."
-  },
-  {
-    "id": "p4",
-    "question": "Ionic bonding occurs between a metal and a non-metal through the:",
-    "options": [
-      "Sharing of electrons",
-      "Transfer of electrons",
-      "Delocalization of electrons",
-      "Attraction of dipoles"
-    ],
-    "answer": "Transfer of electrons",
-    "explanation": "Ionic bonds are formed when a metal atom transfers electrons to a non-metal atom."
-  },
-  {
-    "id": "p5",
-    "question": "How many moles are in 40 grams of Sodium hydroxide (NaOH)? (Molar mass: Na=23, O=16, H=1)",
-    "options": [
-      "0.5 moles",
-      "1.0 mole",
-      "2.0 moles",
-      "4.0 moles"
-    ],
-    "answer": "1.0 mole",
-    "explanation": "Molar mass of NaOH = 23 + 16 + 1 = 40 g/mol. Moles = 40g / 40g/mol = 1 mole."
-  },
-  {
-    "id": "p6",
-    "question": "Which of the following is most likely to have a pH of 2?",
-    "options": [
-      "Distilled water",
-      "Lemon juice",
-      "Bleach",
-      "Milk of magnesia"
-    ],
-    "answer": "Lemon juice",
-    "explanation": "Lemon juice is acidic (contains citric acid), and a pH of 2 represents a strong acid."
-  },
-  {
-    "id": "p7",
-    "question": "What are the products of a neutralization reaction between an acid and a base?",
-    "options": [
-      "Salt and Hydrogen",
-      "Salt and Water",
-      "Acid and Salt",
-      "Water and Oxygen"
-    ],
-    "answer": "Salt and Water",
-    "explanation": "Neutralization: Acid + Base -> Salt + Water."
-  },
-  {
-    "id": "p8",
-    "question": "Oxidation is defined as the:",
-    "options": [
-      "Gain of electrons",
-      "Loss of electrons",
-      "Gain of hydrogen",
-      "Loss of oxygen"
-    ],
-    "answer": "Loss of electrons",
-    "explanation": "OIL RIG: Oxidation Is Loss (of electrons)."
-  },
-  {
-    "id": "p9",
-    "question": "What is the general formula for the alkane homologous series?",
-    "options": [
-      "CnH2n",
-      "CnH2n+2",
-      "CnH2n-2",
-      "CnH2n+1"
-    ],
-    "answer": "CnH2n+2",
-    "explanation": "Alkanes are saturated hydrocarbons with the general formula CnH2n+2."
-  },
-  {
-    "id": "p10",
-    "question": "The process by which a solid turns directly into a gas without becoming a liquid is called:",
-    "options": [
-      "Evaporation",
-      "Condensation",
-      "Sublimation",
-      "Deposition"
-    ],
-    "answer": "Sublimation",
-    "explanation": "Sublimation is the direct change of state from solid to gas."
-  },
-  {
-    "id": "p11",
-    "question": "Isotopes of the same element have the same number of protons but different numbers of:",
-    "options": [
-      "Electrons",
-      "Neutrons",
-      "Shells",
-      "Valence electrons"
-    ],
-    "answer": "Neutrons",
-    "explanation": "Isotopes have the same atomic number but different mass numbers due to varying neutron counts."
-  },
-  {
-    "id": "p12",
-    "question": "Which of the following is a characteristic of simple covalent molecules?",
-    "options": [
-      "High melting point",
-      "Conduct electricity when molten",
-      "Low melting point",
-      "Solid at room temperature"
-    ],
-    "answer": "Low melting point",
-    "explanation": "Simple covalent molecules have weak intermolecular forces, resulting in low melting and boiling points."
-  },
-  {
-    "id": "p13",
-    "question": "Which particle determines the identity of an element?",
-    "options": [
-      "Proton",
-      "Neutron",
-      "Electron",
-      "Photon"
-    ],
-    "answer": "Proton",
-    "explanation": "The number of protons (atomic number) defines the element."
-  },
-  {
-    "id": "p14",
-    "question": "An atom with 11 protons, 12 neutrons and 11 electrons has a mass number of:",
-    "options": [
-      "23",
-      "11",
-      "12",
-      "22"
-    ],
-    "answer": "23",
-    "explanation": "Mass number = protons + neutrons = 11 + 12 = 23."
-  },
-  {
-    "id": "p15",
-    "question": "Isotopes are atoms of the same element with different numbers of:",
-    "options": [
-      "neutrons",
-      "protons",
-      "electrons",
-      "orbitals"
-    ],
-    "answer": "neutrons",
-    "explanation": "Isotopes differ in neutron number, hence mass number."
-  },
-  {
-    "id": "p16",
-    "question": "Which subatomic particle has a negative charge?",
-    "options": [
-      "Electron",
-      "Proton",
-      "Neutron",
-      "Positron"
-    ],
-    "answer": "Electron",
-    "explanation": "Electrons carry a -1 charge."
-  },
-  {
-    "id": "p17",
-    "question": "The electron configuration 2,8,1 corresponds to which element?",
-    "options": [
-      "Sodium",
-      "Magnesium",
-      "Aluminium",
-      "Potassium"
-    ],
-    "answer": "Sodium",
-    "explanation": "11 electrons total → atomic number 11 = sodium."
-  },
-  {
-    "id": "p18",
-    "question": "Which group of the periodic table contains the noble gases?",
-    "options": [
-      "Group 0",
-      "Group 1",
-      "Group 2",
-      "Group 7"
-    ],
-    "answer": "Group 0",
-    "explanation": "Group 0 (18) elements are unreactive noble gases."
-  },
-  {
-    "id": "p19",
-    "question": "Elements in the same group have the same number of:",
-    "options": [
-      "outer-shell electrons",
-      "shells",
-      "protons",
-      "neutrons"
-    ],
-    "answer": "outer-shell electrons",
-    "explanation": "Group number equals outer electrons for main groups."
-  },
-  {
-    "id": "p20",
-    "question": "Which element is a halogen?",
-    "options": [
-      "Chlorine",
-      "Sodium",
-      "Magnesium",
-      "Calcium"
-    ],
-    "answer": "Chlorine",
-    "explanation": "Chlorine is in Group 7, the halogens."
-  },
-  {
-    "id": "p21",
-    "question": "Which type of bonding involves the transfer of electrons?",
-    "options": [
-      "Ionic",
-      "Covalent",
-      "Metallic",
-      "Hydrogen"
-    ],
-    "answer": "Ionic",
-    "explanation": "Ionic bonding transfers electrons from metal to non-metal."
-  },
-  {
-    "id": "p22",
-    "question": "In a covalent bond, electrons are:",
-    "options": [
-      "shared",
-      "transferred",
-      "removed",
-      "created"
-    ],
-    "answer": "shared",
-    "explanation": "Covalent bonds share electron pairs between atoms."
-  },
-  {
-    "id": "p23",
-    "question": "The formula of magnesium chloride is:",
-    "options": [
-      "MgCl₂",
-      "MgCl",
-      "Mg₂Cl",
-      "Mg₂Cl₃"
-    ],
-    "answer": "MgCl₂",
-    "explanation": "Mg²⁺ and Cl⁻ combine in a 1:2 ratio."
-  },
-  {
-    "id": "p24",
-    "question": "Which of the following conducts electricity in the solid state?",
-    "options": [
-      "Copper",
-      "Sodium chloride",
-      "Sugar",
-      "Sulphur"
-    ],
-    "answer": "Copper",
-    "explanation": "Metals conduct electricity because of delocalised electrons."
-  },
-  {
-    "id": "p25",
-    "question": "Ionic compounds conduct electricity when:",
-    "options": [
-      "molten or dissolved",
-      "solid",
-      "gaseous",
-      "never"
-    ],
-    "answer": "molten or dissolved",
-    "explanation": "Free-moving ions carry charge in molten/aqueous state."
-  },
-  {
-    "id": "p26",
-    "question": "What is the pH of a neutral solution?",
-    "options": [
-      "7",
-      "0",
-      "14",
-      "1"
-    ],
-    "answer": "7",
-    "explanation": "pH 7 is neutral at 25°C."
-  },
-  {
-    "id": "p27",
-    "question": "Which of the following is a strong acid?",
-    "options": [
-      "Hydrochloric acid",
-      "Ethanoic acid",
-      "Citric acid",
-      "Carbonic acid"
-    ],
-    "answer": "Hydrochloric acid",
-    "explanation": "HCl ionises completely; the others are weak acids."
-  },
-  {
-    "id": "p28",
-    "question": "When an acid reacts with a base, the products are:",
-    "options": [
-      "salt and water",
-      "salt and hydrogen",
-      "salt and carbon dioxide",
-      "water and oxygen"
-    ],
-    "answer": "salt and water",
-    "explanation": "Neutralisation produces a salt and water."
-  },
-  {
-    "id": "p29",
-    "question": "Which gas is produced when an acid reacts with a metal?",
-    "options": [
-      "Hydrogen",
-      "Oxygen",
-      "Carbon dioxide",
-      "Chlorine"
-    ],
-    "answer": "Hydrogen",
-    "explanation": "Acid + metal → salt + hydrogen."
-  },
-  {
-    "id": "p30",
-    "question": "The reaction of an acid with a carbonate produces:",
-    "options": [
-      "carbon dioxide",
-      "hydrogen",
-      "oxygen",
-      "ammonia"
-    ],
-    "answer": "carbon dioxide",
-    "explanation": "Carbonates release CO₂ with acids."
-  },
-  {
-    "id": "p31",
-    "question": "What is the oxidation number of oxygen in most compounds?",
-    "options": [
-      "-2",
-      "+2",
-      "0",
-      "-1"
-    ],
-    "answer": "-2",
-    "explanation": "Oxygen usually has an oxidation state of -2."
-  },
-  {
-    "id": "p32",
-    "question": "In the reaction Zn + CuSO₄ → ZnSO₄ + Cu, zinc is:",
-    "options": [
-      "oxidised",
-      "reduced",
-      "unchanged",
-      "neutralised"
-    ],
-    "answer": "oxidised",
-    "explanation": "Zn loses electrons (0 → +2), so it is oxidised."
-  },
-  {
-    "id": "p33",
-    "question": "Reduction is defined as:",
-    "options": [
-      "gain of electrons",
-      "loss of electrons",
-      "gain of oxygen",
-      "gain of protons"
-    ],
-    "answer": "gain of electrons",
-    "explanation": "Reduction is gain of electrons (OIL RIG)."
-  },
-  {
-    "id": "p34",
-    "question": "Which is an example of a displacement reaction?",
-    "options": [
-      "Zn + CuSO₄ → ZnSO₄ + Cu",
-      "H₂O → H₂ + O₂",
-      "NaCl → Na + Cl₂",
-      "C + O₂ → CO₂"
-    ],
-    "answer": "Zn + CuSO₄ → ZnSO₄ + Cu",
-    "explanation": "Zinc displaces copper from its salt solution."
-  },
-  {
-    "id": "p35",
-    "question": "The rate of a reaction can be increased by:",
-    "options": [
-      "raising temperature",
-      "lowering temperature",
-      "diluting reactants",
-      "adding a solid block"
-    ],
-    "answer": "raising temperature",
-    "explanation": "Higher temperature increases particle kinetic energy and collisions."
-  },
-  {
-    "id": "p36",
-    "question": "A catalyst works by:",
-    "options": [
-      "lowering activation energy",
-      "raising activation energy",
-      "being consumed in the reaction",
-      "cooling the reactants"
-    ],
-    "answer": "lowering activation energy",
-    "explanation": "Catalysts provide an alternative pathway with lower activation energy."
-  },
-  {
-    "id": "p37",
-    "question": "Increasing the surface area of a solid reactant:",
-    "options": [
-      "increases rate of reaction",
-      "decreases rate",
-      "has no effect",
-      "stops the reaction"
-    ],
-    "answer": "increases rate of reaction",
-    "explanation": "More surface area → more frequent collisions."
-  },
-  {
-    "id": "p38",
-    "question": "Which factor does NOT affect the rate of reaction?",
-    "options": [
-      "Colour of the product",
-      "Temperature",
-      "Concentration",
-      "Surface area"
-    ],
-    "answer": "Colour of the product",
-    "explanation": "Product colour does not influence reaction rate."
-  },
-  {
-    "id": "p39",
-    "question": "In an endothermic reaction, heat energy is:",
-    "options": [
-      "absorbed",
-      "released",
-      "unchanged",
-      "converted to light"
-    ],
-    "answer": "absorbed",
-    "explanation": "Endothermic reactions absorb heat from surroundings."
-  },
-  {
-    "id": "p40",
-    "question": "Which reaction is exothermic?",
-    "options": [
-      "Burning of methane",
-      "Melting of ice",
-      "Photosynthesis",
-      "Dissolving ammonium nitrate"
-    ],
-    "answer": "Burning of methane",
-    "explanation": "Combustion releases heat energy."
-  },
-  {
-    "id": "p41",
-    "question": "The mole is defined as:",
-    "options": [
-      "6.02 × 10²³ particles",
-      "1000 particles",
-      "1 gram of substance",
-      "22.4 particles"
-    ],
-    "answer": "6.02 × 10²³ particles",
-    "explanation": "One mole contains Avogadro's number of particles."
-  },
-  {
-    "id": "p42",
-    "question": "How many moles are in 44 g of CO₂? (Mr = 44)",
-    "options": [
-      "1 mol",
-      "2 mol",
-      "0.5 mol",
-      "4 mol"
-    ],
-    "answer": "1 mol",
-    "explanation": "Moles = mass/molar mass = 44/44 = 1 mol."
-  },
-  {
-    "id": "p43",
-    "question": "What mass of sodium hydroxide (Mr = 40) is in 2 moles?",
-    "options": [
-      "80 g",
-      "40 g",
-      "20 g",
-      "120 g"
-    ],
-    "answer": "80 g",
-    "explanation": "Mass = moles × Mr = 2 × 40 = 80 g."
-  },
-  {
-    "id": "p44",
-    "question": "The concentration of a solution containing 2 moles of solute in 500 cm³ is:",
-    "options": [
-      "4 mol/dm³",
-      "2 mol/dm³",
-      "1 mol/dm³",
-      "0.5 mol/dm³"
-    ],
-    "answer": "4 mol/dm³",
-    "explanation": "500 cm³ = 0.5 dm³ → 2/0.5 = 4 mol/dm³."
-  },
-  {
-    "id": "p45",
-    "question": "At r.t.p., one mole of gas occupies:",
-    "options": [
-      "24 dm³",
-      "22.4 dm³",
-      "6 dm³",
-      "100 dm³"
-    ],
-    "answer": "24 dm³",
-    "explanation": "Molar volume at room temperature and pressure is 24 dm³."
-  },
-  {
-    "id": "p46",
-    "question": "What volume of CO₂ (in dm³) is produced from 0.5 mol at r.t.p.?",
-    "options": [
-      "12 dm³",
-      "24 dm³",
-      "6 dm³",
-      "48 dm³"
-    ],
-    "answer": "12 dm³",
-    "explanation": "0.5 × 24 = 12 dm³."
-  },
-  {
-    "id": "p47",
-    "question": "Which of these is a mixture?",
-    "options": [
-      "Sea water",
-      "Water",
-      "Salt",
-      "Carbon dioxide"
-    ],
-    "answer": "Sea water",
-    "explanation": "Sea water contains dissolved salts — a mixture."
-  },
-  {
-    "id": "p48",
-    "question": "The technique used to separate an insoluble solid from a liquid is:",
-    "options": [
-      "filtration",
-      "distillation",
-      "chromatography",
-      "crystallisation"
-    ],
-    "answer": "filtration",
-    "explanation": "Filtration separates insoluble solids from liquids."
-  },
-  {
-    "id": "p49",
-    "question": "Simple distillation is used to separate:",
-    "options": [
-      "a solvent from a solution",
-      "two insoluble solids",
-      "two dyes",
-      "two miscible liquids"
-    ],
-    "answer": "a solvent from a solution",
-    "explanation": "Distillation separates a liquid from a solution by boiling."
-  },
-  {
-    "id": "p50",
-    "question": "Which technique separates coloured dyes in a mixture?",
-    "options": [
-      "Chromatography",
-      "Filtration",
-      "Evaporation",
-      "Decanting"
-    ],
-    "answer": "Chromatography",
-    "explanation": "Chromatography separates substances by their movement through a medium."
-  },
-  {
-    "id": "p51",
-    "question": "A substance with a fixed composition and definite properties is:",
-    "options": [
-      "a compound",
-      "a mixture",
-      "an alloy",
-      "a solution"
-    ],
-    "answer": "a compound",
-    "explanation": "Compounds have fixed composition and unique properties."
-  },
-  {
-    "id": "p52",
-    "question": "Which state of matter has a definite shape and volume?",
-    "options": [
-      "Solid",
-      "Liquid",
-      "Gas",
-      "Plasma"
-    ],
-    "answer": "Solid",
-    "explanation": "Solids have fixed shape and volume."
-  },
-  {
-    "id": "p53",
-    "question": "The change of state from solid directly to gas is called:",
-    "options": [
-      "sublimation",
-      "evaporation",
-      "condensation",
-      "freezing"
-    ],
-    "answer": "sublimation",
-    "explanation": "Sublimation, e.g. dry ice → CO₂ gas."
-  },
-  {
-    "id": "p54",
-    "question": "Which process releases heat energy?",
-    "options": [
-      "Condensation",
-      "Melting",
-      "Evaporation",
-      "Sublimation"
-    ],
-    "answer": "Condensation",
-    "explanation": "Condensation is exothermic (gas → liquid)."
-  },
-  {
-    "id": "p55",
-    "question": "The melting point of a pure substance is:",
-    "options": [
-      "sharp and definite",
-      "a range",
-      "always 0°C",
-      "below its boiling point always"
-    ],
-    "answer": "sharp and definite",
-    "explanation": "Pure substances melt at a single sharp temperature."
-  },
-  {
-    "id": "p56",
-    "question": "Which of the following is an element?",
-    "options": [
-      "Oxygen",
-      "Water",
-      "Salt",
-      "Sugar"
-    ],
-    "answer": "Oxygen",
-    "explanation": "Oxygen is an element (O₂); the others are compounds."
-  },
-  {
-    "id": "p57",
-    "question": "The symbol for iron is:",
-    "options": [
-      "Fe",
-      "Ir",
-      "I",
-      "F"
-    ],
-    "answer": "Fe",
-    "explanation": "Fe comes from the Latin 'ferrum'."
-  },
-  {
-    "id": "p58",
-    "question": "Which non-metal is a liquid at room temperature?",
-    "options": [
-      "Bromine",
-      "Iodine",
-      "Chlorine",
-      "Fluorine"
-    ],
-    "answer": "Bromine",
-    "explanation": "Bromine is the only liquid non-metal at r.t.p."
-  },
-  {
-    "id": "p59",
-    "question": "Which of these metals reacts most vigorously with cold water?",
-    "options": [
-      "Potassium",
-      "Iron",
-      "Copper",
-      "Zinc"
-    ],
-    "answer": "Potassium",
-    "explanation": "Group 1 metals react vigorously; K is the most reactive listed."
-  },
-  {
-    "id": "p60",
-    "question": "The reactivity series lists metals in order of:",
-    "options": [
-      "reactivity with oxygen/water/acid",
-      "atomic mass",
-      "density",
-      "melting point"
-    ],
-    "answer": "reactivity with oxygen/water/acid",
-    "explanation": "Reactivity series ranks metals by how readily they react."
-  },
-  {
-    "id": "p61",
-    "question": "Which metal would NOT react with dilute hydrochloric acid?",
-    "options": [
-      "Copper",
-      "Magnesium",
-      "Zinc",
-      "Iron"
-    ],
-    "answer": "Copper",
-    "explanation": "Copper is below hydrogen in the reactivity series."
-  },
-  {
-    "id": "p62",
-    "question": "Aluminium is protected from corrosion by:",
-    "options": [
-      "a layer of aluminium oxide",
-      "painting only",
-      "electroplating",
-      "alloying with iron"
-    ],
-    "answer": "a layer of aluminium oxide",
-    "explanation": "Al₂O₃ forms a protective oxide layer."
-  },
-  {
-    "id": "p63",
-    "question": "Rusting of iron requires:",
-    "options": [
-      "oxygen and water",
-      "oxygen only",
-      "water only",
-      "carbon dioxide"
-    ],
-    "answer": "oxygen and water",
-    "explanation": "Both oxygen and water are needed for rusting."
-  },
-  {
-    "id": "p64",
-    "question": "Which method protects iron by sacrificial protection?",
-    "options": [
-      "Zinc galvanising",
-      "Painting",
-      "Oiling",
-      "Plastic coating"
-    ],
-    "answer": "Zinc galvanising",
-    "explanation": "Zinc is more reactive and corrodes instead of iron."
-  },
-  {
-    "id": "p65",
-    "question": "Which alloy is made of copper and zinc?",
-    "options": [
-      "Brass",
-      "Bronze",
-      "Steel",
-      "Solder"
-    ],
-    "answer": "Brass",
-    "explanation": "Brass = copper + zinc; bronze = copper + tin."
-  },
-  {
-    "id": "p66",
-    "question": "An organic compound containing only carbon and hydrogen is a:",
-    "options": [
-      "hydrocarbon",
-      "carbohydrate",
-      "carbonate",
-      "carbide"
-    ],
-    "answer": "hydrocarbon",
-    "explanation": "Hydrocarbons contain only C and H."
-  },
-  {
-    "id": "p67",
-    "question": "The general formula for alkanes is:",
-    "options": [
-      "CₙH₂ₙ₊₂",
-      "CₙH₂ₙ",
-      "CₙH₂ₙ₋₂",
-      "CₙHₙ"
-    ],
-    "answer": "CₙH₂ₙ₊₂",
-    "explanation": "Alkanes are saturated: CₙH₂ₙ₊₂."
-  },
-  {
-    "id": "p68",
-    "question": "Which is the first member of the alkene series?",
-    "options": [
-      "Ethene",
-      "Methane",
-      "Ethane",
-      "Propyne"
-    ],
-    "answer": "Ethene",
-    "explanation": "Ethene (C₂H₄) is the simplest alkene."
-  },
-  {
-    "id": "p69",
-    "question": "The functional group of alcohols is:",
-    "options": [
-      "-OH",
-      "-COOH",
-      "-CHO",
-      "-NH₂"
-    ],
-    "answer": "-OH",
-    "explanation": "Alcohols contain the hydroxyl (-OH) group."
-  },
-  {
-    "id": "p70",
-    "question": "Which substance is used to test for unsaturation?",
-    "options": [
-      "Bromine water",
-      "Limewater",
-      "Litmus paper",
-      "Silver nitrate"
-    ],
-    "answer": "Bromine water",
-    "explanation": "Bromine water decolourises in the presence of C=C bonds."
-  },
-  {
-    "id": "p71",
-    "question": "Ethanol is produced industrially by:",
-    "options": [
-      "fermentation of sugars",
-      "distillation of oil",
-      "fractional crystallisation",
-      "electrolysis of water"
-    ],
-    "answer": "fermentation of sugars",
-    "explanation": "Fermentation uses yeast to convert sugars to ethanol."
-  },
-  {
-    "id": "p72",
-    "question": "Which gas turns limewater milky?",
-    "options": [
-      "Carbon dioxide",
-      "Oxygen",
-      "Hydrogen",
-      "Ammonia"
-    ],
-    "answer": "Carbon dioxide",
-    "explanation": "CO₂ forms insoluble calcium carbonate with limewater."
-  },
-  {
-    "id": "p73",
-    "question": "Hydrogen gas is tested by:",
-    "options": [
-      "a lighted splint producing a 'pop'",
-      "a glowing splint relighting",
-      "turning limewater milky",
-      "bleaching damp litmus"
-    ],
-    "answer": "a lighted splint producing a 'pop'",
-    "explanation": "Hydrogen burns with a squeaky pop."
-  },
-  {
-    "id": "p74",
-    "question": "Oxygen gas relights:",
-    "options": [
-      "a glowing splint",
-      "a damp blue litmus",
-      "a burning splint with a pop",
-      "limewater"
-    ],
-    "answer": "a glowing splint",
-    "explanation": "Oxygen supports combustion, relighting a glowing splint."
-  },
-  {
-    "id": "p75",
-    "question": "Ammonia gas turns damp red litmus:",
-    "options": [
-      "blue",
-      "colourless",
-      "red",
-      "purple"
-    ],
-    "answer": "blue",
-    "explanation": "Ammonia is alkaline and turns red litmus blue."
-  },
-  {
-    "id": "p76",
-    "question": "Which of the following is a greenhouse gas?",
-    "options": [
-      "Methane",
-      "Oxygen",
-      "Nitrogen",
-      "Helium"
-    ],
-    "answer": "Methane",
-    "explanation": "Methane traps heat like CO₂."
-  },
-  {
-    "id": "p77",
-    "question": "Acid rain is mainly caused by:",
-    "options": [
-      "oxides of sulphur and nitrogen",
-      "carbon monoxide",
-      "ozone",
-      "hydrogen gas"
-    ],
-    "answer": "oxides of sulphur and nitrogen",
-    "explanation": "SO₂ and NOₓ dissolve in rainwater to form acids."
-  },
-  {
-    "id": "p78",
-    "question": "Which of the following reduces air pollution from vehicles?",
-    "options": [
-      "Catalytic converter",
-      "Lead petrol",
-      "Burning coal",
-      "Exhaust without filter"
-    ],
-    "answer": "Catalytic converter",
-    "explanation": "Catalytic converters convert harmful gases to less harmful ones."
-  },
-  {
-    "id": "p79",
-    "question": "The Haber process produces:",
-    "options": [
-      "ammonia",
-      "sulphuric acid",
-      "nitric acid",
-      "sodium hydroxide"
-    ],
-    "answer": "ammonia",
-    "explanation": "N₂ + 3H₂ ⇌ 2NH₃ over iron catalyst."
-  },
-  {
-    "id": "p80",
-    "question": "The raw materials for the Haber process are:",
-    "options": [
-      "nitrogen and hydrogen",
-      "oxygen and hydrogen",
-      "nitrogen and oxygen",
-      "ammonia and water"
-    ],
-    "answer": "nitrogen and hydrogen",
-    "explanation": "Nitrogen from air and hydrogen from natural gas."
-  },
-  {
-    "id": "p81",
-    "question": "Which of these is used as a fertiliser?",
-    "options": [
-      "Ammonium nitrate",
-      "Sodium chloride",
-      "Calcium carbonate",
-      "Silicon dioxide"
-    ],
-    "answer": "Ammonium nitrate",
-    "explanation": "Nitrogen compounds like ammonium nitrate enrich soil."
-  },
-  {
-    "id": "p82",
-    "question": "The Contact process produces:",
-    "options": [
-      "sulphuric acid",
-      "ammonia",
-      "chlorine",
-      "nitric acid"
-    ],
-    "answer": "sulphuric acid",
-    "explanation": "SO₃ is dissolved in H₂SO₄ to make oleum → H₂SO₄."
-  },
-  {
-    "id": "p83",
-    "question": "Electrolysis of brine produces:",
-    "options": [
-      "chlorine, hydrogen and sodium hydroxide",
-      "oxygen and hydrogen",
-      "sodium and chlorine",
-      "water only"
-    ],
-    "answer": "chlorine, hydrogen and sodium hydroxide",
-    "explanation": "Brine electrolysis yields Cl₂, H₂ and NaOH."
-  },
-  {
-    "id": "p84",
-    "question": "Which electrode is the positive electrode in electrolysis?",
-    "options": [
-      "Anode",
-      "Cathode",
-      "Both",
-      "Neither"
-    ],
-    "answer": "Anode",
-    "explanation": "The anode is positive; cations move to the cathode."
-  },
-  {
-    "id": "p85",
-    "question": "During electrolysis of molten lead(II) bromide, lead is formed at the:",
-    "options": [
-      "cathode",
-      "anode",
-      "both electrodes",
-      "solution"
-    ],
-    "answer": "cathode",
-    "explanation": "Pb²⁺ cations gain electrons at the cathode (reduction)."
-  },
-  {
-    "id": "p86",
-    "question": "Water is a compound because it:",
-    "options": [
-      "contains two elements chemically combined",
-      "can be filtered",
-      "is a liquid",
-      "contains dissolved gases"
-    ],
-    "answer": "contains two elements chemically combined",
-    "explanation": "H₂O has H and O chemically bonded in fixed ratio."
-  },
-  {
-    "id": "p87",
-    "question": "Which of the following has the highest boiling point?",
-    "options": [
-      "Salt solution",
-      "Pure water",
-      "Alcohol",
-      "Petrol"
-    ],
-    "answer": "Salt solution",
-    "explanation": "Dissolved solutes raise the boiling point above 100°C."
-  },
-  {
-    "id": "p88",
-    "question": "Solubility is usually expressed as:",
-    "options": [
-      "grams of solute per 100 g of water",
-      "litres per gram",
-      "moles per cm³ only",
-      "percentage of water"
-    ],
-    "answer": "grams of solute per 100 g of water",
-    "explanation": "Standard solubility: g solute/100 g solvent."
-  },
-  {
-    "id": "p89",
-    "question": "A saturated solution:",
-    "options": [
-      "contains the maximum dissolved solute at that temperature",
-      "has no water",
-      "is always dilute",
-      "cannot be heated"
-    ],
-    "answer": "contains the maximum dissolved solute at that temperature",
-    "explanation": "No more solute can dissolve at that temperature."
-  },
-  {
-    "id": "p90",
-    "question": "Crystallisation is used to obtain:",
-    "options": [
-      "a soluble salt from its solution",
-      "an insoluble solid",
-      "a gas",
-      "two liquids"
-    ],
-    "answer": "a soluble salt from its solution",
-    "explanation": "Evaporation and cooling produce crystals of the solute."
-  },
-  {
-    "id": "p91",
-    "question": "Which indicator is red in acid?",
-    "options": [
-      "Litmus",
-      "Universal indicator in alkali",
-      "Phenolphthalein in acid",
-      "Methyl orange in alkali"
-    ],
-    "answer": "Litmus",
-    "explanation": "Litmus is red in acid, blue in alkali."
-  },
-  {
-    "id": "p92",
-    "question": "A solution with pH 2 is:",
-    "options": [
-      "strongly acidic",
-      "weakly acidic",
-      "neutral",
-      "alkaline"
-    ],
-    "answer": "strongly acidic",
-    "explanation": "pH below 7 is acidic; pH 2 is strongly acidic."
-  },
-  {
-    "id": "p93",
-    "question": "Which salt is produced when hydrochloric acid reacts with sodium hydroxide?",
-    "options": [
-      "Sodium chloride",
-      "Sodium sulphate",
-      "Sodium nitrate",
-      "Sodium carbonate"
-    ],
-    "answer": "Sodium chloride",
-    "explanation": "HCl + NaOH → NaCl + H₂O."
-  },
-  {
-    "id": "p94",
-    "question": "Bases are substances that:",
-    "options": [
-      "neutralise acids",
-      "turn litmus red",
-      "have pH below 7",
-      "release hydrogen with metals"
-    ],
-    "answer": "neutralise acids",
-    "explanation": "Bases accept protons and neutralise acids."
-  },
-  {
-    "id": "p95",
-    "question": "Zinc oxide is an example of a:",
-    "options": [
-      "amphoteric oxide",
-      "acidic oxide",
-      "neutral oxide",
-      "noble gas"
-    ],
-    "answer": "amphoteric oxide",
-    "explanation": "Amphoteric oxides react with both acids and bases."
-  },
-  {
-    "id": "p96",
-    "question": "Which oxide is acidic?",
-    "options": [
-      "Carbon dioxide",
-      "Magnesium oxide",
-      "Sodium oxide",
-      "Calcium oxide"
-    ],
-    "answer": "Carbon dioxide",
-    "explanation": "Non-metal oxides like CO₂ are acidic."
-  },
-  {
-    "id": "p97",
-    "question": "The process of extracting aluminium from bauxite uses:",
-    "options": [
-      "electrolysis of molten alumina",
-      "heating with carbon",
-      "filtration",
-      "simple distillation"
-    ],
-    "answer": "electrolysis of molten alumina",
-    "explanation": "Aluminium is extracted by electrolysis of molten Al₂O₃ in cryolite."
-  },
-  {
-    "id": "p98",
-    "question": "Why is cryolite added to bauxite in aluminium extraction?",
-    "options": [
-      "To lower the melting point",
-      "To raise the temperature",
-      "To colour the metal",
-      "To remove impurities only"
-    ],
-    "answer": "To lower the melting point",
-    "explanation": "Cryolite lowers the melting point, saving energy."
-  },
-  {
-    "id": "p99",
-    "question": "Which metal is extracted by reduction with carbon?",
-    "options": [
-      "Iron",
-      "Sodium",
-      "Calcium",
-      "Potassium"
-    ],
-    "answer": "Iron",
-    "explanation": "Iron oxide is reduced by coke (carbon) in the blast furnace."
-  },
-  {
-    "id": "p100",
-    "question": "In the blast furnace, the reducing agent is:",
-    "options": [
-      "carbon monoxide",
-      "limestone",
-      "oxygen",
-      "iron ore"
-    ],
-    "answer": "carbon monoxide",
-    "explanation": "CO reduces iron(III) oxide to iron."
-  }
+ {
+  "id": "p1",
+  "question": "Which of the following describes the arrangement of particles in a solid?",
+  "options": [
+   "Closely packed in a regular arrangement",
+   "Far apart and move rapidly",
+   "Close together but can move past each other",
+   "Arranged in a random pattern"
+  ],
+  "answer": "Closely packed in a regular arrangement",
+  "explanation": "Solid particles are tightly packed in a fixed, regular lattice structure.",
+  "topic": "states-of-matter"
+ },
+ {
+  "id": "p2",
+  "question": "An atom has 11 protons and 12 neutrons. What is its mass number?",
+  "options": [
+   "11",
+   "12",
+   "23",
+   "1"
+  ],
+  "answer": "23",
+  "explanation": "Mass Number (A) = Protons + Neutrons = 11 + 12 = 23.",
+  "topic": "atomic-structure"
+ },
+ {
+  "id": "p3",
+  "question": "Which trend is generally observed as you move from left to right across a period in the Periodic Table?",
+  "options": [
+   "Atomic radius increases",
+   "Electronegativity decreases",
+   "Ionization energy increases",
+   "Metallic character increases"
+  ],
+  "answer": "Ionization energy increases",
+  "explanation": "Across a period, nuclear charge increases, making it harder to remove an electron, thus increasing ionization energy.",
+  "topic": "periodic-table-trends"
+ },
+ {
+  "id": "p4",
+  "question": "Ionic bonding occurs between a metal and a non-metal through the:",
+  "options": [
+   "Sharing of electrons",
+   "Transfer of electrons",
+   "Delocalization of electrons",
+   "Attraction of dipoles"
+  ],
+  "answer": "Transfer of electrons",
+  "explanation": "Ionic bonds are formed when a metal atom transfers electrons to a non-metal atom.",
+  "topic": "ionic-covalent-bonding"
+ },
+ {
+  "id": "p5",
+  "question": "How many moles are in 40 grams of Sodium hydroxide (NaOH)? (Molar mass: Na=23, O=16, H=1)",
+  "options": [
+   "0.5 moles",
+   "1.0 mole",
+   "2.0 moles",
+   "4.0 moles"
+  ],
+  "answer": "1.0 mole",
+  "explanation": "Molar mass of NaOH = 23 + 16 + 1 = 40 g/mol. Moles = 40g / 40g/mol = 1 mole.",
+  "topic": "molar-mass-calculations"
+ },
+ {
+  "id": "p6",
+  "question": "Which of the following is most likely to have a pH of 2?",
+  "options": [
+   "Distilled water",
+   "Lemon juice",
+   "Bleach",
+   "Milk of magnesia"
+  ],
+  "answer": "Lemon juice",
+  "explanation": "Lemon juice is acidic (contains citric acid), and a pH of 2 represents a strong acid.",
+  "topic": "ph-scale-indicators"
+ },
+ {
+  "id": "p7",
+  "question": "What are the products of a neutralization reaction between an acid and a base?",
+  "options": [
+   "Salt and Hydrogen",
+   "Salt and Water",
+   "Acid and Salt",
+   "Water and Oxygen"
+  ],
+  "answer": "Salt and Water",
+  "explanation": "Neutralization: Acid + Base -> Salt + Water.",
+  "topic": "neutralization"
+ },
+ {
+  "id": "p8",
+  "question": "Oxidation is defined as the:",
+  "options": [
+   "Gain of electrons",
+   "Loss of electrons",
+   "Gain of hydrogen",
+   "Loss of oxygen"
+  ],
+  "answer": "Loss of electrons",
+  "explanation": "OIL RIG: Oxidation Is Loss (of electrons).",
+  "topic": "defining-redox"
+ },
+ {
+  "id": "p9",
+  "question": "What is the general formula for the alkane homologous series?",
+  "options": [
+   "CnH2n",
+   "CnH2n+2",
+   "CnH2n-2",
+   "CnH2n+1"
+  ],
+  "answer": "CnH2n+2",
+  "explanation": "Alkanes are saturated hydrocarbons with the general formula CnH2n+2.",
+  "topic": "hydrocarbons-alkanes"
+ },
+ {
+  "id": "p10",
+  "question": "The process by which a solid turns directly into a gas without becoming a liquid is called:",
+  "options": [
+   "Evaporation",
+   "Condensation",
+   "Sublimation",
+   "Deposition"
+  ],
+  "answer": "Sublimation",
+  "explanation": "Sublimation is the direct change of state from solid to gas.",
+  "topic": "states-of-matter"
+ },
+ {
+  "id": "p11",
+  "question": "Isotopes of the same element have the same number of protons but different numbers of:",
+  "options": [
+   "Electrons",
+   "Neutrons",
+   "Shells",
+   "Valence electrons"
+  ],
+  "answer": "Neutrons",
+  "explanation": "Isotopes have the same atomic number but different mass numbers due to varying neutron counts.",
+  "topic": "atomic-structure"
+ },
+ {
+  "id": "p12",
+  "question": "Which of the following is a characteristic of simple covalent molecules?",
+  "options": [
+   "High melting point",
+   "Conduct electricity when molten",
+   "Low melting point",
+   "Solid at room temperature"
+  ],
+  "answer": "Low melting point",
+  "explanation": "Simple covalent molecules have weak intermolecular forces, resulting in low melting and boiling points.",
+  "topic": "ionic-covalent-bonding"
+ },
+ {
+  "id": "p13",
+  "question": "Which particle determines the identity of an element?",
+  "options": [
+   "Proton",
+   "Neutron",
+   "Electron",
+   "Photon"
+  ],
+  "answer": "Proton",
+  "explanation": "The number of protons (atomic number) defines the element.",
+  "topic": "atomic-structure"
+ },
+ {
+  "id": "p14",
+  "question": "An atom with 11 protons, 12 neutrons and 11 electrons has a mass number of:",
+  "options": [
+   "23",
+   "11",
+   "12",
+   "22"
+  ],
+  "answer": "23",
+  "explanation": "Mass number = protons + neutrons = 11 + 12 = 23.",
+  "topic": "atomic-structure"
+ },
+ {
+  "id": "p15",
+  "question": "Isotopes are atoms of the same element with different numbers of:",
+  "options": [
+   "neutrons",
+   "protons",
+   "electrons",
+   "orbitals"
+  ],
+  "answer": "neutrons",
+  "explanation": "Isotopes differ in neutron number, hence mass number.",
+  "topic": "atomic-structure"
+ },
+ {
+  "id": "p16",
+  "question": "Which subatomic particle has a negative charge?",
+  "options": [
+   "Electron",
+   "Proton",
+   "Neutron",
+   "Positron"
+  ],
+  "answer": "Electron",
+  "explanation": "Electrons carry a -1 charge.",
+  "topic": "atomic-structure"
+ },
+ {
+  "id": "p17",
+  "question": "The electron configuration 2,8,1 corresponds to which element?",
+  "options": [
+   "Sodium",
+   "Magnesium",
+   "Aluminium",
+   "Potassium"
+  ],
+  "answer": "Sodium",
+  "explanation": "11 electrons total → atomic number 11 = sodium.",
+  "topic": "atomic-structure"
+ },
+ {
+  "id": "p18",
+  "question": "Which group of the periodic table contains the noble gases?",
+  "options": [
+   "Group 0",
+   "Group 1",
+   "Group 2",
+   "Group 7"
+  ],
+  "answer": "Group 0",
+  "explanation": "Group 0 (18) elements are unreactive noble gases.",
+  "topic": "periodic-table-trends"
+ },
+ {
+  "id": "p19",
+  "question": "Elements in the same group have the same number of:",
+  "options": [
+   "outer-shell electrons",
+   "shells",
+   "protons",
+   "neutrons"
+  ],
+  "answer": "outer-shell electrons",
+  "explanation": "Group number equals outer electrons for main groups.",
+  "topic": "periodic-table-trends"
+ },
+ {
+  "id": "p20",
+  "question": "Which element is a halogen?",
+  "options": [
+   "Chlorine",
+   "Sodium",
+   "Magnesium",
+   "Calcium"
+  ],
+  "answer": "Chlorine",
+  "explanation": "Chlorine is in Group 7, the halogens.",
+  "topic": "periodic-table-trends"
+ },
+ {
+  "id": "p21",
+  "question": "Which type of bonding involves the transfer of electrons?",
+  "options": [
+   "Ionic",
+   "Covalent",
+   "Metallic",
+   "Hydrogen"
+  ],
+  "answer": "Ionic",
+  "explanation": "Ionic bonding transfers electrons from metal to non-metal.",
+  "topic": "ionic-covalent-bonding"
+ },
+ {
+  "id": "p22",
+  "question": "In a covalent bond, electrons are:",
+  "options": [
+   "shared",
+   "transferred",
+   "removed",
+   "created"
+  ],
+  "answer": "shared",
+  "explanation": "Covalent bonds share electron pairs between atoms.",
+  "topic": "ionic-covalent-bonding"
+ },
+ {
+  "id": "p23",
+  "question": "The formula of magnesium chloride is:",
+  "options": [
+   "MgCl₂",
+   "MgCl",
+   "Mg₂Cl",
+   "Mg₂Cl₃"
+  ],
+  "answer": "MgCl₂",
+  "explanation": "Mg²⁺ and Cl⁻ combine in a 1:2 ratio.",
+  "topic": "ionic-covalent-bonding"
+ },
+ {
+  "id": "p24",
+  "question": "Which of the following conducts electricity in the solid state?",
+  "options": [
+   "Copper",
+   "Sodium chloride",
+   "Sugar",
+   "Sulphur"
+  ],
+  "answer": "Copper",
+  "explanation": "Metals conduct electricity because of delocalised electrons.",
+  "topic": "ionic-covalent-bonding"
+ },
+ {
+  "id": "p25",
+  "question": "Ionic compounds conduct electricity when:",
+  "options": [
+   "molten or dissolved",
+   "solid",
+   "gaseous",
+   "never"
+  ],
+  "answer": "molten or dissolved",
+  "explanation": "Free-moving ions carry charge in molten/aqueous state.",
+  "topic": "ionic-covalent-bonding"
+ },
+ {
+  "id": "p26",
+  "question": "What is the pH of a neutral solution?",
+  "options": [
+   "7",
+   "0",
+   "14",
+   "1"
+  ],
+  "answer": "7",
+  "explanation": "pH 7 is neutral at 25°C.",
+  "topic": "ph-scale-indicators"
+ },
+ {
+  "id": "p27",
+  "question": "Which of the following is a strong acid?",
+  "options": [
+   "Hydrochloric acid",
+   "Ethanoic acid",
+   "Citric acid",
+   "Carbonic acid"
+  ],
+  "answer": "Hydrochloric acid",
+  "explanation": "HCl ionises completely; the others are weak acids.",
+  "topic": "ph-scale-indicators"
+ },
+ {
+  "id": "p28",
+  "question": "When an acid reacts with a base, the products are:",
+  "options": [
+   "salt and water",
+   "salt and hydrogen",
+   "salt and carbon dioxide",
+   "water and oxygen"
+  ],
+  "answer": "salt and water",
+  "explanation": "Neutralisation produces a salt and water.",
+  "topic": "neutralization"
+ },
+ {
+  "id": "p29",
+  "question": "Which gas is produced when an acid reacts with a metal?",
+  "options": [
+   "Hydrogen",
+   "Oxygen",
+   "Carbon dioxide",
+   "Chlorine"
+  ],
+  "answer": "Hydrogen",
+  "explanation": "Acid + metal → salt + hydrogen.",
+  "topic": "neutralization"
+ },
+ {
+  "id": "p30",
+  "question": "The reaction of an acid with a carbonate produces:",
+  "options": [
+   "carbon dioxide",
+   "hydrogen",
+   "oxygen",
+   "ammonia"
+  ],
+  "answer": "carbon dioxide",
+  "explanation": "Carbonates release CO₂ with acids.",
+  "topic": "neutralization"
+ },
+ {
+  "id": "p31",
+  "question": "What is the oxidation number of oxygen in most compounds?",
+  "options": [
+   "-2",
+   "+2",
+   "0",
+   "-1"
+  ],
+  "answer": "-2",
+  "explanation": "Oxygen usually has an oxidation state of -2.",
+  "topic": "defining-redox"
+ },
+ {
+  "id": "p32",
+  "question": "In the reaction Zn + CuSO₄ → ZnSO₄ + Cu, zinc is:",
+  "options": [
+   "oxidised",
+   "reduced",
+   "unchanged",
+   "neutralised"
+  ],
+  "answer": "oxidised",
+  "explanation": "Zn loses electrons (0 → +2), so it is oxidised.",
+  "topic": "defining-redox"
+ },
+ {
+  "id": "p33",
+  "question": "Reduction is defined as:",
+  "options": [
+   "gain of electrons",
+   "loss of electrons",
+   "gain of oxygen",
+   "gain of protons"
+  ],
+  "answer": "gain of electrons",
+  "explanation": "Reduction is gain of electrons (OIL RIG).",
+  "topic": "defining-redox"
+ },
+ {
+  "id": "p34",
+  "question": "Which is an example of a displacement reaction?",
+  "options": [
+   "Zn + CuSO₄ → ZnSO₄ + Cu",
+   "H₂O → H₂ + O₂",
+   "NaCl → Na + Cl₂",
+   "C + O₂ → CO₂"
+  ],
+  "answer": "Zn + CuSO₄ → ZnSO₄ + Cu",
+  "explanation": "Zinc displaces copper from its salt solution.",
+  "topic": "defining-redox"
+ },
+ {
+  "id": "p35",
+  "question": "The rate of a reaction can be increased by:",
+  "options": [
+   "raising temperature",
+   "lowering temperature",
+   "diluting reactants",
+   "adding a solid block"
+  ],
+  "answer": "raising temperature",
+  "explanation": "Higher temperature increases particle kinetic energy and collisions.",
+  "topic": "defining-redox"
+ },
+ {
+  "id": "p36",
+  "question": "A catalyst works by:",
+  "options": [
+   "lowering activation energy",
+   "raising activation energy",
+   "being consumed in the reaction",
+   "cooling the reactants"
+  ],
+  "answer": "lowering activation energy",
+  "explanation": "Catalysts provide an alternative pathway with lower activation energy.",
+  "topic": "defining-redox"
+ },
+ {
+  "id": "p37",
+  "question": "Increasing the surface area of a solid reactant:",
+  "options": [
+   "increases rate of reaction",
+   "decreases rate",
+   "has no effect",
+   "stops the reaction"
+  ],
+  "answer": "increases rate of reaction",
+  "explanation": "More surface area → more frequent collisions.",
+  "topic": "defining-redox"
+ },
+ {
+  "id": "p38",
+  "question": "Which factor does NOT affect the rate of reaction?",
+  "options": [
+   "Colour of the product",
+   "Temperature",
+   "Concentration",
+   "Surface area"
+  ],
+  "answer": "Colour of the product",
+  "explanation": "Product colour does not influence reaction rate.",
+  "topic": "defining-redox"
+ },
+ {
+  "id": "p39",
+  "question": "In an endothermic reaction, heat energy is:",
+  "options": [
+   "absorbed",
+   "released",
+   "unchanged",
+   "converted to light"
+  ],
+  "answer": "absorbed",
+  "explanation": "Endothermic reactions absorb heat from surroundings.",
+  "topic": "defining-redox"
+ },
+ {
+  "id": "p40",
+  "question": "Which reaction is exothermic?",
+  "options": [
+   "Burning of methane",
+   "Melting of ice",
+   "Photosynthesis",
+   "Dissolving ammonium nitrate"
+  ],
+  "answer": "Burning of methane",
+  "explanation": "Combustion releases heat energy.",
+  "topic": "defining-redox"
+ },
+ {
+  "id": "p41",
+  "question": "The mole is defined as:",
+  "options": [
+   "6.02 × 10²³ particles",
+   "1000 particles",
+   "1 gram of substance",
+   "22.4 particles"
+  ],
+  "answer": "6.02 × 10²³ particles",
+  "explanation": "One mole contains Avogadro's number of particles.",
+  "topic": "molar-mass-calculations"
+ },
+ {
+  "id": "p42",
+  "question": "How many moles are in 44 g of CO₂? (Mr = 44)",
+  "options": [
+   "1 mol",
+   "2 mol",
+   "0.5 mol",
+   "4 mol"
+  ],
+  "answer": "1 mol",
+  "explanation": "Moles = mass/molar mass = 44/44 = 1 mol.",
+  "topic": "molar-mass-calculations"
+ },
+ {
+  "id": "p43",
+  "question": "What mass of sodium hydroxide (Mr = 40) is in 2 moles?",
+  "options": [
+   "80 g",
+   "40 g",
+   "20 g",
+   "120 g"
+  ],
+  "answer": "80 g",
+  "explanation": "Mass = moles × Mr = 2 × 40 = 80 g.",
+  "topic": "molar-mass-calculations"
+ },
+ {
+  "id": "p44",
+  "question": "The concentration of a solution containing 2 moles of solute in 500 cm³ is:",
+  "options": [
+   "4 mol/dm³",
+   "2 mol/dm³",
+   "1 mol/dm³",
+   "0.5 mol/dm³"
+  ],
+  "answer": "4 mol/dm³",
+  "explanation": "500 cm³ = 0.5 dm³ → 2/0.5 = 4 mol/dm³.",
+  "topic": "molar-mass-calculations"
+ },
+ {
+  "id": "p45",
+  "question": "At r.t.p., one mole of gas occupies:",
+  "options": [
+   "24 dm³",
+   "22.4 dm³",
+   "6 dm³",
+   "100 dm³"
+  ],
+  "answer": "24 dm³",
+  "explanation": "Molar volume at room temperature and pressure is 24 dm³.",
+  "topic": "molar-mass-calculations"
+ },
+ {
+  "id": "p46",
+  "question": "What volume of CO₂ (in dm³) is produced from 0.5 mol at r.t.p.?",
+  "options": [
+   "12 dm³",
+   "24 dm³",
+   "6 dm³",
+   "48 dm³"
+  ],
+  "answer": "12 dm³",
+  "explanation": "0.5 × 24 = 12 dm³.",
+  "topic": "molar-mass-calculations"
+ },
+ {
+  "id": "p47",
+  "question": "Which of these is a mixture?",
+  "options": [
+   "Sea water",
+   "Water",
+   "Salt",
+   "Carbon dioxide"
+  ],
+  "answer": "Sea water",
+  "explanation": "Sea water contains dissolved salts — a mixture.",
+  "topic": "states-of-matter"
+ },
+ {
+  "id": "p48",
+  "question": "The technique used to separate an insoluble solid from a liquid is:",
+  "options": [
+   "filtration",
+   "distillation",
+   "chromatography",
+   "crystallisation"
+  ],
+  "answer": "filtration",
+  "explanation": "Filtration separates insoluble solids from liquids.",
+  "topic": "states-of-matter"
+ },
+ {
+  "id": "p49",
+  "question": "Simple distillation is used to separate:",
+  "options": [
+   "a solvent from a solution",
+   "two insoluble solids",
+   "two dyes",
+   "two miscible liquids"
+  ],
+  "answer": "a solvent from a solution",
+  "explanation": "Distillation separates a liquid from a solution by boiling.",
+  "topic": "states-of-matter"
+ },
+ {
+  "id": "p50",
+  "question": "Which technique separates coloured dyes in a mixture?",
+  "options": [
+   "Chromatography",
+   "Filtration",
+   "Evaporation",
+   "Decanting"
+  ],
+  "answer": "Chromatography",
+  "explanation": "Chromatography separates substances by their movement through a medium.",
+  "topic": "states-of-matter"
+ },
+ {
+  "id": "p51",
+  "question": "A substance with a fixed composition and definite properties is:",
+  "options": [
+   "a compound",
+   "a mixture",
+   "an alloy",
+   "a solution"
+  ],
+  "answer": "a compound",
+  "explanation": "Compounds have fixed composition and unique properties.",
+  "topic": "states-of-matter"
+ },
+ {
+  "id": "p52",
+  "question": "Which state of matter has a definite shape and volume?",
+  "options": [
+   "Solid",
+   "Liquid",
+   "Gas",
+   "Plasma"
+  ],
+  "answer": "Solid",
+  "explanation": "Solids have fixed shape and volume.",
+  "topic": "states-of-matter"
+ },
+ {
+  "id": "p53",
+  "question": "The change of state from solid directly to gas is called:",
+  "options": [
+   "sublimation",
+   "evaporation",
+   "condensation",
+   "freezing"
+  ],
+  "answer": "sublimation",
+  "explanation": "Sublimation, e.g. dry ice → CO₂ gas.",
+  "topic": "states-of-matter"
+ },
+ {
+  "id": "p54",
+  "question": "Which process releases heat energy?",
+  "options": [
+   "Condensation",
+   "Melting",
+   "Evaporation",
+   "Sublimation"
+  ],
+  "answer": "Condensation",
+  "explanation": "Condensation is exothermic (gas → liquid).",
+  "topic": "states-of-matter"
+ },
+ {
+  "id": "p55",
+  "question": "The melting point of a pure substance is:",
+  "options": [
+   "sharp and definite",
+   "a range",
+   "always 0°C",
+   "below its boiling point always"
+  ],
+  "answer": "sharp and definite",
+  "explanation": "Pure substances melt at a single sharp temperature.",
+  "topic": "states-of-matter"
+ },
+ {
+  "id": "p56",
+  "question": "Which of the following is an element?",
+  "options": [
+   "Oxygen",
+   "Water",
+   "Salt",
+   "Sugar"
+  ],
+  "answer": "Oxygen",
+  "explanation": "Oxygen is an element (O₂); the others are compounds.",
+  "topic": "states-of-matter"
+ },
+ {
+  "id": "p57",
+  "question": "The symbol for iron is:",
+  "options": [
+   "Fe",
+   "Ir",
+   "I",
+   "F"
+  ],
+  "answer": "Fe",
+  "explanation": "Fe comes from the Latin 'ferrum'.",
+  "topic": "atomic-structure"
+ },
+ {
+  "id": "p58",
+  "question": "Which non-metal is a liquid at room temperature?",
+  "options": [
+   "Bromine",
+   "Iodine",
+   "Chlorine",
+   "Fluorine"
+  ],
+  "answer": "Bromine",
+  "explanation": "Bromine is the only liquid non-metal at r.t.p.",
+  "topic": "states-of-matter"
+ },
+ {
+  "id": "p59",
+  "question": "Which of these metals reacts most vigorously with cold water?",
+  "options": [
+   "Potassium",
+   "Iron",
+   "Copper",
+   "Zinc"
+  ],
+  "answer": "Potassium",
+  "explanation": "Group 1 metals react vigorously; K is the most reactive listed.",
+  "topic": "periodic-table-trends"
+ },
+ {
+  "id": "p60",
+  "question": "The reactivity series lists metals in order of:",
+  "options": [
+   "reactivity with oxygen/water/acid",
+   "atomic mass",
+   "density",
+   "melting point"
+  ],
+  "answer": "reactivity with oxygen/water/acid",
+  "explanation": "Reactivity series ranks metals by how readily they react.",
+  "topic": "periodic-table-trends"
+ },
+ {
+  "id": "p61",
+  "question": "Which metal would NOT react with dilute hydrochloric acid?",
+  "options": [
+   "Copper",
+   "Magnesium",
+   "Zinc",
+   "Iron"
+  ],
+  "answer": "Copper",
+  "explanation": "Copper is below hydrogen in the reactivity series.",
+  "topic": "periodic-table-trends"
+ },
+ {
+  "id": "p62",
+  "question": "Aluminium is protected from corrosion by:",
+  "options": [
+   "a layer of aluminium oxide",
+   "painting only",
+   "electroplating",
+   "alloying with iron"
+  ],
+  "answer": "a layer of aluminium oxide",
+  "explanation": "Al₂O₃ forms a protective oxide layer.",
+  "topic": "periodic-table-trends"
+ },
+ {
+  "id": "p63",
+  "question": "Rusting of iron requires:",
+  "options": [
+   "oxygen and water",
+   "oxygen only",
+   "water only",
+   "carbon dioxide"
+  ],
+  "answer": "oxygen and water",
+  "explanation": "Both oxygen and water are needed for rusting.",
+  "topic": "periodic-table-trends"
+ },
+ {
+  "id": "p64",
+  "question": "Which method protects iron by sacrificial protection?",
+  "options": [
+   "Zinc galvanising",
+   "Painting",
+   "Oiling",
+   "Plastic coating"
+  ],
+  "answer": "Zinc galvanising",
+  "explanation": "Zinc is more reactive and corrodes instead of iron.",
+  "topic": "periodic-table-trends"
+ },
+ {
+  "id": "p65",
+  "question": "Which alloy is made of copper and zinc?",
+  "options": [
+   "Brass",
+   "Bronze",
+   "Steel",
+   "Solder"
+  ],
+  "answer": "Brass",
+  "explanation": "Brass = copper + zinc; bronze = copper + tin.",
+  "topic": "ionic-covalent-bonding"
+ },
+ {
+  "id": "p66",
+  "question": "An organic compound containing only carbon and hydrogen is a:",
+  "options": [
+   "hydrocarbon",
+   "carbohydrate",
+   "carbonate",
+   "carbide"
+  ],
+  "answer": "hydrocarbon",
+  "explanation": "Hydrocarbons contain only C and H.",
+  "topic": "hydrocarbons-alkanes"
+ },
+ {
+  "id": "p67",
+  "question": "The general formula for alkanes is:",
+  "options": [
+   "CₙH₂ₙ₊₂",
+   "CₙH₂ₙ",
+   "CₙH₂ₙ₋₂",
+   "CₙHₙ"
+  ],
+  "answer": "CₙH₂ₙ₊₂",
+  "explanation": "Alkanes are saturated: CₙH₂ₙ₊₂.",
+  "topic": "hydrocarbons-alkanes"
+ },
+ {
+  "id": "p68",
+  "question": "Which is the first member of the alkene series?",
+  "options": [
+   "Ethene",
+   "Methane",
+   "Ethane",
+   "Propyne"
+  ],
+  "answer": "Ethene",
+  "explanation": "Ethene (C₂H₄) is the simplest alkene.",
+  "topic": "hydrocarbons-alkanes"
+ },
+ {
+  "id": "p69",
+  "question": "The functional group of alcohols is:",
+  "options": [
+   "-OH",
+   "-COOH",
+   "-CHO",
+   "-NH₂"
+  ],
+  "answer": "-OH",
+  "explanation": "Alcohols contain the hydroxyl (-OH) group.",
+  "topic": "hydrocarbons-alkanes"
+ },
+ {
+  "id": "p70",
+  "question": "Which substance is used to test for unsaturation?",
+  "options": [
+   "Bromine water",
+   "Limewater",
+   "Litmus paper",
+   "Silver nitrate"
+  ],
+  "answer": "Bromine water",
+  "explanation": "Bromine water decolourises in the presence of C=C bonds.",
+  "topic": "hydrocarbons-alkanes"
+ },
+ {
+  "id": "p71",
+  "question": "Ethanol is produced industrially by:",
+  "options": [
+   "fermentation of sugars",
+   "distillation of oil",
+   "fractional crystallisation",
+   "electrolysis of water"
+  ],
+  "answer": "fermentation of sugars",
+  "explanation": "Fermentation uses yeast to convert sugars to ethanol.",
+  "topic": "hydrocarbons-alkanes"
+ },
+ {
+  "id": "p72",
+  "question": "Which gas turns limewater milky?",
+  "options": [
+   "Carbon dioxide",
+   "Oxygen",
+   "Hydrogen",
+   "Ammonia"
+  ],
+  "answer": "Carbon dioxide",
+  "explanation": "CO₂ forms insoluble calcium carbonate with limewater.",
+  "topic": "states-of-matter"
+ },
+ {
+  "id": "p73",
+  "question": "Hydrogen gas is tested by:",
+  "options": [
+   "a lighted splint producing a 'pop'",
+   "a glowing splint relighting",
+   "turning limewater milky",
+   "bleaching damp litmus"
+  ],
+  "answer": "a lighted splint producing a 'pop'",
+  "explanation": "Hydrogen burns with a squeaky pop.",
+  "topic": "states-of-matter"
+ },
+ {
+  "id": "p74",
+  "question": "Oxygen gas relights:",
+  "options": [
+   "a glowing splint",
+   "a damp blue litmus",
+   "a burning splint with a pop",
+   "limewater"
+  ],
+  "answer": "a glowing splint",
+  "explanation": "Oxygen supports combustion, relighting a glowing splint.",
+  "topic": "states-of-matter"
+ },
+ {
+  "id": "p75",
+  "question": "Ammonia gas turns damp red litmus:",
+  "options": [
+   "blue",
+   "colourless",
+   "red",
+   "purple"
+  ],
+  "answer": "blue",
+  "explanation": "Ammonia is alkaline and turns red litmus blue.",
+  "topic": "ph-scale-indicators"
+ },
+ {
+  "id": "p76",
+  "question": "Which of the following is a greenhouse gas?",
+  "options": [
+   "Methane",
+   "Oxygen",
+   "Nitrogen",
+   "Helium"
+  ],
+  "answer": "Methane",
+  "explanation": "Methane traps heat like CO₂.",
+  "topic": "hydrocarbons-alkanes"
+ },
+ {
+  "id": "p77",
+  "question": "Acid rain is mainly caused by:",
+  "options": [
+   "oxides of sulphur and nitrogen",
+   "carbon monoxide",
+   "ozone",
+   "hydrogen gas"
+  ],
+  "answer": "oxides of sulphur and nitrogen",
+  "explanation": "SO₂ and NOₓ dissolve in rainwater to form acids.",
+  "topic": "states-of-matter"
+ },
+ {
+  "id": "p78",
+  "question": "Which of the following reduces air pollution from vehicles?",
+  "options": [
+   "Catalytic converter",
+   "Lead petrol",
+   "Burning coal",
+   "Exhaust without filter"
+  ],
+  "answer": "Catalytic converter",
+  "explanation": "Catalytic converters convert harmful gases to less harmful ones.",
+  "topic": "states-of-matter"
+ },
+ {
+  "id": "p79",
+  "question": "The Haber process produces:",
+  "options": [
+   "ammonia",
+   "sulphuric acid",
+   "nitric acid",
+   "sodium hydroxide"
+  ],
+  "answer": "ammonia",
+  "explanation": "N₂ + 3H₂ ⇌ 2NH₃ over iron catalyst.",
+  "topic": "molar-mass-calculations"
+ },
+ {
+  "id": "p80",
+  "question": "The raw materials for the Haber process are:",
+  "options": [
+   "nitrogen and hydrogen",
+   "oxygen and hydrogen",
+   "nitrogen and oxygen",
+   "ammonia and water"
+  ],
+  "answer": "nitrogen and hydrogen",
+  "explanation": "Nitrogen from air and hydrogen from natural gas.",
+  "topic": "molar-mass-calculations"
+ },
+ {
+  "id": "p81",
+  "question": "Which of these is used as a fertiliser?",
+  "options": [
+   "Ammonium nitrate",
+   "Sodium chloride",
+   "Calcium carbonate",
+   "Silicon dioxide"
+  ],
+  "answer": "Ammonium nitrate",
+  "explanation": "Nitrogen compounds like ammonium nitrate enrich soil.",
+  "topic": "molar-mass-calculations"
+ },
+ {
+  "id": "p82",
+  "question": "The Contact process produces:",
+  "options": [
+   "sulphuric acid",
+   "ammonia",
+   "chlorine",
+   "nitric acid"
+  ],
+  "answer": "sulphuric acid",
+  "explanation": "SO₃ is dissolved in H₂SO₄ to make oleum → H₂SO₄.",
+  "topic": "molar-mass-calculations"
+ },
+ {
+  "id": "p83",
+  "question": "Electrolysis of brine produces:",
+  "options": [
+   "chlorine, hydrogen and sodium hydroxide",
+   "oxygen and hydrogen",
+   "sodium and chlorine",
+   "water only"
+  ],
+  "answer": "chlorine, hydrogen and sodium hydroxide",
+  "explanation": "Brine electrolysis yields Cl₂, H₂ and NaOH.",
+  "topic": "defining-redox"
+ },
+ {
+  "id": "p84",
+  "question": "Which electrode is the positive electrode in electrolysis?",
+  "options": [
+   "Anode",
+   "Cathode",
+   "Both",
+   "Neither"
+  ],
+  "answer": "Anode",
+  "explanation": "The anode is positive; cations move to the cathode.",
+  "topic": "defining-redox"
+ },
+ {
+  "id": "p85",
+  "question": "During electrolysis of molten lead(II) bromide, lead is formed at the:",
+  "options": [
+   "cathode",
+   "anode",
+   "both electrodes",
+   "solution"
+  ],
+  "answer": "cathode",
+  "explanation": "Pb²⁺ cations gain electrons at the cathode (reduction).",
+  "topic": "defining-redox"
+ },
+ {
+  "id": "p86",
+  "question": "Water is a compound because it:",
+  "options": [
+   "contains two elements chemically combined",
+   "can be filtered",
+   "is a liquid",
+   "contains dissolved gases"
+  ],
+  "answer": "contains two elements chemically combined",
+  "explanation": "H₂O has H and O chemically bonded in fixed ratio.",
+  "topic": "ionic-covalent-bonding"
+ },
+ {
+  "id": "p87",
+  "question": "Which of the following has the highest boiling point?",
+  "options": [
+   "Salt solution",
+   "Pure water",
+   "Alcohol",
+   "Petrol"
+  ],
+  "answer": "Salt solution",
+  "explanation": "Dissolved solutes raise the boiling point above 100°C.",
+  "topic": "states-of-matter"
+ },
+ {
+  "id": "p88",
+  "question": "Solubility is usually expressed as:",
+  "options": [
+   "grams of solute per 100 g of water",
+   "litres per gram",
+   "moles per cm³ only",
+   "percentage of water"
+  ],
+  "answer": "grams of solute per 100 g of water",
+  "explanation": "Standard solubility: g solute/100 g solvent.",
+  "topic": "states-of-matter"
+ },
+ {
+  "id": "p89",
+  "question": "A saturated solution:",
+  "options": [
+   "contains the maximum dissolved solute at that temperature",
+   "has no water",
+   "is always dilute",
+   "cannot be heated"
+  ],
+  "answer": "contains the maximum dissolved solute at that temperature",
+  "explanation": "No more solute can dissolve at that temperature.",
+  "topic": "states-of-matter"
+ },
+ {
+  "id": "p90",
+  "question": "Crystallisation is used to obtain:",
+  "options": [
+   "a soluble salt from its solution",
+   "an insoluble solid",
+   "a gas",
+   "two liquids"
+  ],
+  "answer": "a soluble salt from its solution",
+  "explanation": "Evaporation and cooling produce crystals of the solute.",
+  "topic": "states-of-matter"
+ },
+ {
+  "id": "p91",
+  "question": "Which indicator is red in acid?",
+  "options": [
+   "Litmus",
+   "Universal indicator in alkali",
+   "Phenolphthalein in acid",
+   "Methyl orange in alkali"
+  ],
+  "answer": "Litmus",
+  "explanation": "Litmus is red in acid, blue in alkali.",
+  "topic": "ph-scale-indicators"
+ },
+ {
+  "id": "p92",
+  "question": "A solution with pH 2 is:",
+  "options": [
+   "strongly acidic",
+   "weakly acidic",
+   "neutral",
+   "alkaline"
+  ],
+  "answer": "strongly acidic",
+  "explanation": "pH below 7 is acidic; pH 2 is strongly acidic.",
+  "topic": "ph-scale-indicators"
+ },
+ {
+  "id": "p93",
+  "question": "Which salt is produced when hydrochloric acid reacts with sodium hydroxide?",
+  "options": [
+   "Sodium chloride",
+   "Sodium sulphate",
+   "Sodium nitrate",
+   "Sodium carbonate"
+  ],
+  "answer": "Sodium chloride",
+  "explanation": "HCl + NaOH → NaCl + H₂O.",
+  "topic": "neutralization"
+ },
+ {
+  "id": "p94",
+  "question": "Bases are substances that:",
+  "options": [
+   "neutralise acids",
+   "turn litmus red",
+   "have pH below 7",
+   "release hydrogen with metals"
+  ],
+  "answer": "neutralise acids",
+  "explanation": "Bases accept protons and neutralise acids.",
+  "topic": "neutralization"
+ },
+ {
+  "id": "p95",
+  "question": "Zinc oxide is an example of a:",
+  "options": [
+   "amphoteric oxide",
+   "acidic oxide",
+   "neutral oxide",
+   "noble gas"
+  ],
+  "answer": "amphoteric oxide",
+  "explanation": "Amphoteric oxides react with both acids and bases.",
+  "topic": "neutralization"
+ },
+ {
+  "id": "p96",
+  "question": "Which oxide is acidic?",
+  "options": [
+   "Carbon dioxide",
+   "Magnesium oxide",
+   "Sodium oxide",
+   "Calcium oxide"
+  ],
+  "answer": "Carbon dioxide",
+  "explanation": "Non-metal oxides like CO₂ are acidic.",
+  "topic": "neutralization"
+ },
+ {
+  "id": "p97",
+  "question": "The process of extracting aluminium from bauxite uses:",
+  "options": [
+   "electrolysis of molten alumina",
+   "heating with carbon",
+   "filtration",
+   "simple distillation"
+  ],
+  "answer": "electrolysis of molten alumina",
+  "explanation": "Aluminium is extracted by electrolysis of molten Al₂O₃ in cryolite.",
+  "topic": "defining-redox"
+ },
+ {
+  "id": "p98",
+  "question": "Why is cryolite added to bauxite in aluminium extraction?",
+  "options": [
+   "To lower the melting point",
+   "To raise the temperature",
+   "To colour the metal",
+   "To remove impurities only"
+  ],
+  "answer": "To lower the melting point",
+  "explanation": "Cryolite lowers the melting point, saving energy.",
+  "topic": "defining-redox"
+ },
+ {
+  "id": "p99",
+  "question": "Which metal is extracted by reduction with carbon?",
+  "options": [
+   "Iron",
+   "Sodium",
+   "Calcium",
+   "Potassium"
+  ],
+  "answer": "Iron",
+  "explanation": "Iron oxide is reduced by coke (carbon) in the blast furnace.",
+  "topic": "defining-redox"
+ },
+ {
+  "id": "p100",
+  "question": "In the blast furnace, the reducing agent is:",
+  "options": [
+   "carbon monoxide",
+   "limestone",
+   "oxygen",
+   "iron ore"
+  ],
+  "answer": "carbon monoxide",
+  "explanation": "CO reduces iron(III) oxide to iron.",
+  "topic": "defining-redox"
+ }
 ]

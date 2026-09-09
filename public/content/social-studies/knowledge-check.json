@@ -1,302 +1,327 @@
 [
-  {
-    "question": "Which family type consists of a mother, a father, and their children?",
-    "options": [
-      "Extended Family",
-      "Nuclear Family",
-      "Single-parent Family",
-      "Reconstituted Family"
-    ],
-    "answer": "Nuclear Family",
-    "explanation": "A nuclear family is the traditional family structure consisting of two parents and their children.",
-    "id": "q1"
-  },
-  {
-    "question": "Which of the following is a function of the family in society?",
-    "options": [
-      "Enacting laws",
-      "Socializing children",
-      "Printing money",
-      "Defending the borders"
-    ],
-    "answer": "Socializing children",
-    "explanation": "Socialization is the process by which children learn the values and norms of their society, primarily through the family.",
-    "id": "q2"
-  },
-  {
-    "question": "A group of friends who meet regularly for social activities is an example of a:",
-    "options": [
-      "Primary Group",
-      "Secondary Group",
-      "Social Institution",
-      "Government Branch"
-    ],
-    "answer": "Primary Group",
-    "explanation": "Primary groups are characterized by close, personal, and enduring relationships, such as family and close friends.",
-    "id": "q3"
-  },
-  {
-    "question": "Which social institution is primarily responsible for spiritual guidance?",
-    "options": [
-      "Education",
-      "The Economy",
-      "Religion",
-      "The Justice System"
-    ],
-    "answer": "Religion",
-    "explanation": "Religion provides spiritual guidance, moral frameworks, and a sense of community for many people.",
-    "id": "q4"
-  },
-  {
-    "question": "In a Republic, who is typically the formal head of state?",
-    "options": [
-      "The King/Queen",
-      "The Prime Minister",
-      "The President",
-      "The Chief Justice"
-    ],
-    "answer": "The President",
-    "explanation": "In a republic, the head of state is usually a President, rather than a monarch.",
-    "id": "q5"
-  },
-  {
-    "question": "Which branch of government is responsible for making laws?",
-    "options": [
-      "Executive",
-      "Legislative",
-      "Judiciary",
-      "Administrative"
-    ],
-    "answer": "Legislative",
-    "explanation": "The Legislative branch (usually Parliament or Congress) has the power to debate and pass laws.",
-    "id": "q6"
-  },
-  {
-    "question": "What is one of the main objectives of CARICOM?",
-    "options": [
-      "To establish a space program",
-      "To promote economic integration among member states",
-      "To build a single island for all members",
-      "To replace all local languages with one"
-    ],
-    "answer": "To promote economic integration among member states",
-    "explanation": "CARICOM aims to improve the standards of living and work in its member states through economic integration.",
-    "id": "q7"
-  },
-  {
-    "question": "Which of the following is a member state of CARICOM?",
-    "options": [
-      "Brazil",
-      "Canada",
-      "Jamaica",
-      "Mexico"
-    ],
-    "answer": "Jamaica",
-    "explanation": "Jamaica is a founding and active member state of the Caribbean Community (CARICOM).",
-    "id": "q8"
-  },
-  {
-    "question": "The number of live births per 1,000 people in a population per year is called the:",
-    "options": [
-      "Mortality Rate",
-      "Fertility Rate",
-      "Birth Rate",
-      "Growth Rate"
-    ],
-    "answer": "Birth Rate",
-    "explanation": "The crude birth rate is the total number of live births per 1,000 population in a given year.",
-    "id": "q9"
-  },
-  {
-    "question": "Which of the following is a 'push factor' for migration?",
-    "options": [
-      "High salaries",
-      "Lack of employment opportunities",
-      "Good climate",
-      "Political stability"
-    ],
-    "answer": "Lack of employment opportunities",
-    "explanation": "Push factors are negative conditions that encourage people to leave their current location, such as unemployment.",
-    "id": "q10"
-  },
-  {
-    "question": "When a person moves from a rural area to a city within the same country, it is called:",
-    "options": [
-      "External Migration",
-      "Internal Migration",
-      "Emigration",
-      "Immigration"
-    ],
-    "answer": "Internal Migration",
-    "explanation": "Internal migration is the movement of people from one place to another within the same country.",
-    "id": "q11"
-  },
-  {
-    "question": "The gap between those who have access to modern information technology and those who do not is known as the:",
-    "options": [
-      "Digital Divide",
-      "Technological Leap",
-      "Communication Gap",
-      "Media Bias"
-    ],
-    "answer": "Digital Divide",
-    "explanation": "The digital divide refers to the economic and social inequality regarding access to, use of, or impact of ICT.",
-    "id": "q12"
-  },
-  {
-    "question": "Which consumer right ensures that you can return a faulty product for a refund or repair?",
-    "options": [
-      "Right to Safety",
-      "Right to Choose",
-      "Right to Redress",
-      "Right to Information"
-    ],
-    "answer": "Right to Redress",
-    "explanation": "The right to redress allows consumers to seek compensation or a remedy for unsatisfactory goods or services.",
-    "id": "q13"
-  },
-  {
-    "question": "What is the primary purpose of a budget?",
-    "options": [
-      "To spend as much money as possible",
-      "To track income and plan expenses",
-      "To borrow money from the bank",
-      "To avoid paying taxes"
-    ],
-    "answer": "To track income and plan expenses",
-    "explanation": "A budget is a financial plan that helps individuals or organizations manage their money effectively.",
-    "id": "q14"
-  },
-  {
-    "question": "Which of these is a form of non-verbal communication?",
-    "options": [
-      "A radio broadcast",
-      "A text message",
-      "Body language",
-      "A phone call"
-    ],
-    "answer": "Body language",
-    "explanation": "Non-verbal communication includes gestures, facial expressions, and body language.",
-    "id": "q15"
-  },
-  {
-    "id": "q16",
-    "question": "Which of these is a function of the government in a country?",
-    "options": [
-      "Choosing what people wear",
-      "Providing public services like education and healthcare",
-      "Telling people who to marry",
-      "Making sure everyone has the same car"
-    ],
-    "answer": "Providing public services like education and healthcare",
-    "explanation": "Governments are responsible for infrastructure and social services."
-  },
-  {
-    "id": "q17",
-    "question": "What is 'Urbanization'?",
-    "options": [
-      "The growth of forests",
-      "The movement of people from rural areas to cities",
-      "The decrease in population",
-      "The building of more farms"
-    ],
-    "answer": "The movement of people from rural areas to cities",
-    "explanation": "It leads to the expansion of urban centers."
-  },
-  {
-    "id": "q18",
-    "question": "Which regional organization was formed to promote economic integration among Caribbean nations?",
-    "options": [
-      "UN",
-      "CARICOM",
-      "OAS",
-      "WHO"
-    ],
-    "answer": "CARICOM",
-    "explanation": "The Caribbean Community (CARICOM) promotes cooperation and trade in the region."
-  },
-  {
-    "id": "q19",
-    "question": "What is the main cause of 'Brain Drain' in the Caribbean?",
-    "options": [
-      "Too much education",
-      "Migration of skilled professionals to other countries",
-      "Not enough schools",
-      "People forgetting what they learned"
-    ],
-    "answer": "Migration of skilled professionals to other countries",
-    "explanation": "Skilled workers leave for better opportunities abroad."
-  },
-  {
-    "id": "q20",
-    "question": "Which of these is a primary source of information for a historian?",
-    "options": [
-      "A history textbook",
-      "An original diary from the time period",
-      "A movie about the event",
-      "A Wikipedia article"
-    ],
-    "answer": "An original diary from the time period",
-    "explanation": "Primary sources are first-hand accounts of events."
-  },
-  {
-    "id": "q21",
-    "question": "What is a 'Constitutional Monarchy'?",
-    "options": [
-      "A system where the King has absolute power",
-      "A system where a Monarch is the head of state but follows a constitution",
-      "A system without a leader",
-      "A system where religious leaders rule"
-    ],
-    "answer": "A system where a Monarch is the head of state but follows a constitution",
-    "explanation": "Many Caribbean countries have this system with the British Monarch as the symbolic head."
-  },
-  {
-    "id": "q22",
-    "question": "The 'push factor' in migration refers to?",
-    "options": [
-      "Something that attracts you to a new country",
-      "Something that makes you want to leave your current country",
-      "A law that prevents moving",
-      "The cost of travel"
-    ],
-    "answer": "Something that makes you want to leave your current country",
-    "explanation": "Factors like lack of jobs or war push people away."
-  },
-  {
-    "id": "q23",
-    "question": "What is the purpose of a 'Referendum'?",
-    "options": [
-      "To elect a new President",
-      "A direct vote by the people on a specific proposal or issue",
-      "To pass a law in parliament",
-      "To hire new judges"
-    ],
-    "answer": "A direct vote by the people on a specific proposal or issue",
-    "explanation": "It allows citizens to express their opinion on important matters."
-  },
-  {
-    "id": "q24",
-    "question": "Which of these is a non-renewable resource?",
-    "options": [
-      "Solar energy",
-      "Wind",
-      "Petroleum (Oil)",
-      "Timber"
-    ],
-    "answer": "Petroleum (Oil)",
-    "explanation": "Fossil fuels take millions of years to form and cannot be replaced once used."
-  },
-  {
-    "id": "q25",
-    "question": "'Socialization' is the process of?",
-    "options": [
-      "Learning the rules and values of one's society",
-      "Moving to a new neighborhood",
-      "Voting in an election",
-      "Starting a business"
-    ],
-    "answer": "Learning the rules and values of one's society",
-    "explanation": "It begins in childhood through family and school."
-  }
+ {
+  "id": "q1",
+  "question": "Which family type consists of a mother, a father, and their children?",
+  "options": [
+   "Extended Family",
+   "Nuclear Family",
+   "Single-parent Family",
+   "Reconstituted Family"
+  ],
+  "answer": "Nuclear Family",
+  "explanation": "A nuclear family is the traditional family structure consisting of two parents and their children.",
+  "topic": "ss-l1-1"
+ },
+ {
+  "id": "q2",
+  "question": "Which of the following is a function of the family in society?",
+  "options": [
+   "Enacting laws",
+   "Socializing children",
+   "Printing money",
+   "Defending the borders"
+  ],
+  "answer": "Socializing children",
+  "explanation": "Socialization is the process by which children learn the values and norms of their society, primarily through the family.",
+  "topic": "ss-l1-2"
+ },
+ {
+  "id": "q3",
+  "question": "A group of friends who meet regularly for social activities is an example of a:",
+  "options": [
+   "Primary Group",
+   "Secondary Group",
+   "Social Institution",
+   "Government Branch"
+  ],
+  "answer": "Primary Group",
+  "explanation": "Primary groups are characterized by close, personal, and enduring relationships, such as family and close friends.",
+  "topic": "ss-l2-1"
+ },
+ {
+  "id": "q4",
+  "question": "Which social institution is primarily responsible for spiritual guidance?",
+  "options": [
+   "Education",
+   "The Economy",
+   "Religion",
+   "The Justice System"
+  ],
+  "answer": "Religion",
+  "explanation": "Religion provides spiritual guidance, moral frameworks, and a sense of community for many people.",
+  "topic": "ss-l2-2"
+ },
+ {
+  "id": "q5",
+  "question": "In a Republic, who is typically the formal head of state?",
+  "options": [
+   "The King/Queen",
+   "The Prime Minister",
+   "The President",
+   "The Chief Justice"
+  ],
+  "answer": "The President",
+  "explanation": "In a republic, the head of state is usually a President, rather than a monarch.",
+  "topic": "ss-l3-1"
+ },
+ {
+  "id": "q6",
+  "question": "Which branch of government is responsible for making laws?",
+  "options": [
+   "Executive",
+   "Legislative",
+   "Judiciary",
+   "Administrative"
+  ],
+  "answer": "Legislative",
+  "explanation": "The Legislative branch (usually Parliament or Congress) has the power to debate and pass laws.",
+  "topic": "ss-l3-2"
+ },
+ {
+  "id": "q7",
+  "question": "What is one of the main objectives of CARICOM?",
+  "options": [
+   "To establish a space program",
+   "To promote economic integration among member states",
+   "To build a single island for all members",
+   "To replace all local languages with one"
+  ],
+  "answer": "To promote economic integration among member states",
+  "explanation": "CARICOM aims to improve the standards of living and work in its member states through economic integration.",
+  "topic": "ss-l4-1"
+ },
+ {
+  "id": "q8",
+  "question": "Which of the following is a member state of CARICOM?",
+  "options": [
+   "Brazil",
+   "Canada",
+   "Jamaica",
+   "Mexico"
+  ],
+  "answer": "Jamaica",
+  "explanation": "Jamaica is a founding and active member state of the Caribbean Community (CARICOM).",
+  "topic": "ss-l4-1"
+ },
+ {
+  "id": "q9",
+  "question": "The number of live births per 1,000 people in a population per year is called the:",
+  "options": [
+   "Mortality Rate",
+   "Fertility Rate",
+   "Birth Rate",
+   "Growth Rate"
+  ],
+  "answer": "Birth Rate",
+  "explanation": "The crude birth rate is the total number of live births per 1,000 population in a given year.",
+  "topic": "ss-l5-1"
+ },
+ {
+  "id": "q10",
+  "question": "Which of the following is a 'push factor' for migration?",
+  "options": [
+   "High salaries",
+   "Lack of employment opportunities",
+   "Good climate",
+   "Political stability"
+  ],
+  "answer": "Lack of employment opportunities",
+  "explanation": "Push factors are negative conditions that encourage people to leave their current location, such as unemployment.",
+  "topic": "ss-l5-2"
+ },
+ {
+  "id": "q11",
+  "question": "When a person moves from a rural area to a city within the same country, it is called:",
+  "options": [
+   "External Migration",
+   "Internal Migration",
+   "Emigration",
+   "Immigration"
+  ],
+  "answer": "Internal Migration",
+  "explanation": "Internal migration is the movement of people from one place to another within the same country.",
+  "topic": "ss-l5-2"
+ },
+ {
+  "id": "q12",
+  "question": "The gap between those who have access to modern information technology and those who do not is known as the:",
+  "options": [
+   "Digital Divide",
+   "Technological Leap",
+   "Communication Gap",
+   "Media Bias"
+  ],
+  "answer": "Digital Divide",
+  "explanation": "The digital divide refers to the economic and social inequality regarding access to, use of, or impact of ICT.",
+  "topic": "ss-l6-1"
+ },
+ {
+  "id": "q13",
+  "question": "Which consumer right ensures that you can return a faulty product for a refund or repair?",
+  "options": [
+   "Right to Safety",
+   "Right to Choose",
+   "Right to Redress",
+   "Right to Information"
+  ],
+  "answer": "Right to Redress",
+  "explanation": "The right to redress allows consumers to seek compensation or a remedy for unsatisfactory goods or services.",
+  "topic": "ss-l6-2"
+ },
+ {
+  "id": "q14",
+  "question": "What is the primary purpose of a budget?",
+  "options": [
+   "To spend as much money as possible",
+   "To track income and plan expenses",
+   "To borrow money from the bank",
+   "To avoid paying taxes"
+  ],
+  "answer": "To track income and plan expenses",
+  "explanation": "A budget is a financial plan that helps individuals or organizations manage their money effectively.",
+  "topic": "ss-l3-1"
+ },
+ {
+  "id": "q15",
+  "question": "Which of these is a form of non-verbal communication?",
+  "options": [
+   "A radio broadcast",
+   "A text message",
+   "Body language",
+   "A phone call"
+  ],
+  "answer": "Body language",
+  "explanation": "Non-verbal communication includes gestures, facial expressions, and body language.",
+  "topic": "ss-l6-1"
+ },
+ {
+  "id": "q16",
+  "question": "Which of these is a function of the government in a country?",
+  "options": [
+   "Choosing what people wear",
+   "Providing public services like education and healthcare",
+   "Telling people who to marry",
+   "Making sure everyone has the same car"
+  ],
+  "answer": "Providing public services like education and healthcare",
+  "explanation": "Governments are responsible for infrastructure and social services.",
+  "topic": "ss-l3-1"
+ },
+ {
+  "id": "q17",
+  "question": "What is 'Urbanization'?",
+  "options": [
+   "The growth of forests",
+   "The movement of people from rural areas to cities",
+   "The decrease in population",
+   "The building of more farms"
+  ],
+  "answer": "The movement of people from rural areas to cities",
+  "explanation": "It leads to the expansion of urban centers.",
+  "topic": "ss-l5-1"
+ },
+ {
+  "id": "q18",
+  "question": "Which regional organization was formed to promote economic integration among Caribbean nations?",
+  "options": [
+   "UN",
+   "CARICOM",
+   "OAS",
+   "WHO"
+  ],
+  "answer": "CARICOM",
+  "explanation": "The Caribbean Community (CARICOM) promotes cooperation and trade in the region.",
+  "topic": "ss-l4-1"
+ },
+ {
+  "id": "q19",
+  "question": "What is the main cause of 'Brain Drain' in the Caribbean?",
+  "options": [
+   "Too much education",
+   "Migration of skilled professionals to other countries",
+   "Not enough schools",
+   "People forgetting what they learned"
+  ],
+  "answer": "Migration of skilled professionals to other countries",
+  "explanation": "Skilled workers leave for better opportunities abroad.",
+  "topic": "ss-l5-2"
+ },
+ {
+  "id": "q20",
+  "question": "Which of these is a primary source of information for a historian?",
+  "options": [
+   "A history textbook",
+   "An original diary from the time period",
+   "A movie about the event",
+   "A Wikipedia article"
+  ],
+  "answer": "An original diary from the time period",
+  "explanation": "Primary sources are first-hand accounts of events.",
+  "topic": "ss-l6-1"
+ },
+ {
+  "id": "q21",
+  "question": "What is a 'Constitutional Monarchy'?",
+  "options": [
+   "A system where the King has absolute power",
+   "A system where a Monarch is the head of state but follows a constitution",
+   "A system without a leader",
+   "A system where religious leaders rule"
+  ],
+  "answer": "A system where a Monarch is the head of state but follows a constitution",
+  "explanation": "Many Caribbean countries have this system with the British Monarch as the symbolic head.",
+  "topic": "ss-l3-1"
+ },
+ {
+  "id": "q22",
+  "question": "The 'push factor' in migration refers to?",
+  "options": [
+   "Something that attracts you to a new country",
+   "Something that makes you want to leave your current country",
+   "A law that prevents moving",
+   "The cost of travel"
+  ],
+  "answer": "Something that makes you want to leave your current country",
+  "explanation": "Factors like lack of jobs or war push people away.",
+  "topic": "ss-l5-2"
+ },
+ {
+  "id": "q23",
+  "question": "What is the purpose of a 'Referendum'?",
+  "options": [
+   "To elect a new President",
+   "A direct vote by the people on a specific proposal or issue",
+   "To pass a law in parliament",
+   "To hire new judges"
+  ],
+  "answer": "A direct vote by the people on a specific proposal or issue",
+  "explanation": "It allows citizens to express their opinion on important matters.",
+  "topic": "ss-l3-1"
+ },
+ {
+  "id": "q24",
+  "question": "Which of these is a non-renewable resource?",
+  "options": [
+   "Solar energy",
+   "Wind",
+   "Petroleum (Oil)",
+   "Timber"
+  ],
+  "answer": "Petroleum (Oil)",
+  "explanation": "Fossil fuels take millions of years to form and cannot be replaced once used.",
+  "topic": "ss-l5-1"
+ },
+ {
+  "id": "q25",
+  "question": "'Socialization' is the process of?",
+  "options": [
+   "Learning the rules and values of one's society",
+   "Moving to a new neighborhood",
+   "Voting in an election",
+   "Starting a business"
+  ],
+  "answer": "Learning the rules and values of one's society",
+  "explanation": "It begins in childhood through family and school.",
+  "topic": "ss-l1-2"
+ }
 ]
