@@ -127,7 +127,7 @@
   ],
   "answer": "Right side",
   "explanation": "By convention, the left side of a ledger account is the Debit side and the right side is the Credit side.",
-  "topic": "balancing-ledger"
+  "topic": "double-entry-system"
  },
  {
   "id": "q11",
@@ -166,7 +166,7 @@
   ],
   "answer": "The systematic allocation of the cost of a non-current asset over its useful life",
   "explanation": "Depreciation accounts for the wear and tear or obsolescence of fixed assets.",
-  "topic": "depreciation-assets"
+  "topic": "statement-financial-position"
  },
  {
   "id": "q14",
@@ -179,7 +179,7 @@
   ],
   "answer": "Complete omission of a transaction",
   "explanation": "If a transaction is completely omitted, both the debit and credit are missing, so the Trial Balance will still balance.",
-  "topic": "accounting-errors"
+  "topic": "preparing-trial-balance"
  },
  {
   "id": "q15",
@@ -205,7 +205,7 @@
   ],
   "answer": "Rent Account",
   "explanation": "Nominal accounts are accounts related to expenses, losses, incomes, or gains.",
-  "topic": "balancing-ledger"
+  "topic": "double-entry-system"
  },
  {
   "id": "q17",
@@ -283,7 +283,7 @@
   ],
   "answer": "Entering a capital expenditure as a revenue expenditure",
   "explanation": "An error of principle occurs when a transaction violates accounting principles.",
-  "topic": "accounting-errors"
+  "topic": "double-entry-system"
  },
  {
   "id": "q23",
