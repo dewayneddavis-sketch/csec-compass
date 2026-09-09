@@ -28,13 +28,27 @@ export default async function handler(req, res) {
         active: p.active,
       });
     }
-    res.status(200).json({
+    const s = {
       keyConfigured: true,
       keySuffix: secretKey.slice(-4),
       keyMode: secretKey.startsWith("sk_live_") ? "live" : "test",
       priceCount: rows.length,
       prices: rows,
-    });
+    };
+// --- sessions listing appended ---
+  try {
+    const sessions = await stripe.checkout.sessions.list({ limit: 5 });
+    s.sessions = sessions.data.map((x) => ({
+      id: x.id,
+      status: x.payment_status,
+      amount: x.amount_total,
+      clientRef: x.client_reference_id,
+      email: x.customer_details ? x.customer_details.email : null,
+      created: new Date(x.created * 1000).toISOString(),
+    }));
+  } catch (e) { s.sessionsError = e.message; }
+  res.status(200).json(s);
+
   } catch (err) {
     res.status(500).json({ error: err.message, keySuffix: secretKey.slice(-4) });
   }
