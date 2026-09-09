@@ -33,8 +33,17 @@ export default async function handler(req, res) {
       headers: { Authorization: `Bearer ${token}`, apikey: serviceKey },
     });
     if (!userRes.ok) return res.status(401).json({ error: "Invalid token" });
-    const { id: userId } = await userRes.json();
+    const userJson = await userRes.json();
+    const userId = userJson.id;
+    const userEmail = userJson.email;
     if (!userId) return res.status(401).json({ error: "Invalid token" });
+
+    // OWNER ALLOWLIST: only the owner email gets automatic full access.
+    const ownerEmails = (process.env.OWNER_EMAILS || "dewayneddavis@gmail.com")
+      .split(",").map((e) => e.trim().toLowerCase());
+    if (userEmail && ownerEmails.includes(userEmail.toLowerCase())) {
+      return res.status(200).json({ hasBundle: true, purchasedSubjects: [] });
+    }
 
     // Query purchases
     const dbRes = await fetch(
