@@ -24,6 +24,11 @@ export default async function handler(req, res) {
   if (event.type === "checkout.session.completed") {
     const session = event.data.object;
     const { price_type, subject_id } = session.metadata || {};
+    const userId = session.client_reference_id;
+    if (!userId) {
+      console.error("Webhook: missing client_reference_id on checkout session", session.id);
+      return res.status(400).json({ error: "Missing client_reference_id — cannot grant purchase" });
+    }
 
     try {
       const supabase = getSupabaseAdmin();
@@ -31,14 +36,14 @@ export default async function handler(req, res) {
       if (price_type === "bundle") {
         // Grant access to all subjects
         const { error } = await supabase.from("purchases").insert({
-          user_id: session.client_reference_id || session.id,
+          user_id: userId,
           subject_id: null,
           purchase_type: "bundle",
         });
         if (error) console.error("Insert bundle error:", error);
       } else if (price_type === "subject" && subject_id) {
         const { error } = await supabase.from("purchases").upsert({
-          user_id: session.client_reference_id || session.id,
+          user_id: userId,
           subject_id,
           purchase_type: "subject",
         }, { onConflict: "user_id,subject_id" });

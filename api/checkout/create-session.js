@@ -3,16 +3,19 @@
 import { getStripe } from "../_lib/stripe";
 
 const PRICE_IDS = {
-  subject: "price_1Tgqa4BMfL7i0JlrJuGSfD3E",
-  bundle: "price_1TgqfGBMfL7i0JlrqzpZgtJU",
+  subject: "price_1UDn6IDDZe1IvigkHKyaFPoR",
+  bundle: "price_1UDn6IDDZe1IvigklbTOatf9",
 };
 
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).json({ error: "Method not allowed" });
 
-  const { priceType, subjectId, successUrl, cancelUrl } = req.body;
+  const { priceType, subjectId, successUrl, cancelUrl, userId } = req.body;
   if (!priceType || !["subject", "bundle"].includes(priceType)) {
     return res.status(400).json({ error: "Invalid priceType. Use 'subject' or 'bundle'." });
+  }
+  if (!userId) {
+    return res.status(400).json({ error: "Missing userId. Sign in before purchasing." });
   }
 
   const stripe = getStripe();
@@ -24,6 +27,7 @@ export default async function handler(req, res) {
       payment_method_types: ["card"],
       line_items: [{ price: priceId, quantity: 1 }],
       mode: "payment",
+      client_reference_id: userId,
       success_url: successUrl || "https://csec-compass.vercel.app/account",
       cancel_url: cancelUrl || "https://csec-compass.vercel.app/pricing",
       metadata: {

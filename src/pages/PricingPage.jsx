@@ -38,6 +38,7 @@ export default function PricingPage() {
         body: JSON.stringify({
           priceType: planId,
           subjectId: subjectId || null,
+          userId: user.id,
           successUrl: window.location.origin + "/account",
           cancelUrl: window.location.origin + "/pricing",
         }),
