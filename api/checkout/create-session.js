@@ -1,6 +1,18 @@
 // POST /api/checkout/create-session
 // Creates a Stripe Checkout Session for per-subject or bundle purchase
-import { getStripe } from "../_lib/stripe";
+// NOTE: self-contained (inlines Stripe client init) — api/_lib/* imports crash
+// on Vercel with FUNCTION_INVOCATION_FAILED, so every function keeps its
+// own client init. See api/auth/user.js (same pattern, works live).
+import Stripe from "stripe";
+
+function getStripe() {
+  const secretKey = process.env.STRIPE_SECRET_KEY;
+  if (!secretKey) {
+    console.warn("Stripe secret key not configured. Set STRIPE_SECRET_KEY env var.");
+    return null;
+  }
+  return new Stripe(secretKey, { apiVersion: "2025-02-24.acacia" });
+}
 
 const PRICE_IDS = {
   subject: "price_1UDn6IDDZe1IvigkHKyaFPoR",
@@ -10,7 +22,7 @@ const PRICE_IDS = {
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).json({ error: "Method not allowed" });
 
-  const { priceType, subjectId, successUrl, cancelUrl, userId } = req.body;
+  const { priceType, subjectId, successUrl, cancelUrl, userId } = req.body || {};
   if (!priceType || !["subject", "bundle"].includes(priceType)) {
     return res.status(400).json({ error: "Invalid priceType. Use 'subject' or 'bundle'." });
   }

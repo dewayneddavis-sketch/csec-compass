@@ -1,8 +1,21 @@
 // GET /api/subjects/list — Returns all subjects
 // Auth optional: anon users get preview, logged-in users get full data
 // Requires Authorization: Bearer <token> header (optional)
+// NOTE: self-contained (inlines Supabase client) — api/_lib/* imports crash
+// on Vercel with FUNCTION_INVOCATION_FAILED, so every function keeps its
+// own client init. See api/auth/user.js (same pattern, works live).
+import { createClient } from "@supabase/supabase-js";
 
-import { getSupabaseAdmin } from "../_lib/supabase";
+function getSupabaseAdmin() {
+  const supabaseUrl = process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL;
+  const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!supabaseUrl || !supabaseServiceKey) {
+    throw new Error("Supabase server credentials not configured. Set SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY.");
+  }
+  return createClient(supabaseUrl, supabaseServiceKey, {
+    auth: { persistSession: false, autoRefreshToken: false },
+  });
+}
 
 // Hardcoded subject preview for anonymous users
 const previewSubjects = [
