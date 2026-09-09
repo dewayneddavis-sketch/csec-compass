@@ -1,0 +1,211 @@
+{
+ "subject": "mathematics",
+ "introduction": "Core formulas for CSEC Mathematics Paper 1 and Paper 2 — algebra, geometry, trigonometry, vectors, matrices, and statistics.",
+ "sections": [
+  {
+   "title": "Number, ratio and money",
+   "items": [
+    {
+     "name": "BODMAS order",
+     "formula": "Brackets, Orders, Division/Multiplication, Addition/Subtraction",
+     "notes": "Apply left to right within each pair."
+    },
+    {
+     "name": "Percentage change",
+     "formula": "change = (difference / original) × 100%",
+     "notes": "Discount, profit, VAT and depreciation all use this form."
+    },
+    {
+     "name": "Simple interest",
+     "formula": "I = P × R × T / 100",
+     "notes": "P = principal, R = % rate, T = years. Amount = P + I."
+    },
+    {
+     "name": "Compound amounts",
+     "formula": "A = P(1 + r/100)ⁿ",
+     "notes": "Interest added each period; n = number of periods."
+    },
+    {
+     "name": "Ratio sharing",
+     "formula": "share = (part / total parts) × whole",
+     "notes": "Example: 3:2 split of 25 → boys = 3/5 × 25 = 15."
+    },
+    {
+     "name": "Direct / inverse proportion",
+     "formula": "y = kx  /  y = k/x",
+     "notes": "Find k from given values first, then solve for the unknown."
+    },
+    {
+     "name": "Standard form",
+     "formula": "A × 10ⁿ, 1 ≤ A < 10",
+     "notes": "Move the decimal point; n counts the jumps (negative for small numbers)."
+    },
+    {
+     "name": "HCF / LCM",
+     "formula": "HCF: highest common factor; LCM: lowest common multiple",
+     "notes": "Use prime-factor trees for larger numbers."
+    }
+   ]
+  },
+  {
+   "title": "Algebra",
+   "items": [
+    {
+     "name": "Quadratic standard form",
+     "formula": "ax² + bx + c = 0",
+     "notes": "Solve by factoring, completing the square, or the formula below."
+    },
+    {
+     "name": "Quadratic formula",
+     "formula": "x = (−b ± √(b² − 4ac)) / 2a",
+     "notes": "Discriminant b²−4ac > 0: two roots; = 0: one; < 0: none real."
+    },
+    {
+     "name": "Difference of squares",
+     "formula": "a² − b² = (a − b)(a + b)",
+     "notes": "Example: x² − 9 = (x − 3)(x + 3)."
+    },
+    {
+     "name": "Laws of indices",
+     "formula": "aᵐ×aⁿ=aᵐ⁺ⁿ; aᵐ÷aⁿ=aᵐ⁻ⁿ; (aᵐ)ⁿ=aᵐⁿ; a⁰=1; a⁻ⁿ=1/aⁿ",
+     "notes": "Fractional powers: a^(1/n) = nth root of a."
+    },
+    {
+     "name": "Linear simultaneous equations",
+     "formula": "solve by substitution or elimination",
+     "notes": "Check by substituting both values into both equations."
+    },
+    {
+     "name": "Gradient / midpoint",
+     "formula": "m = (y₂−y₁)/(x₂−x₁); midpoint = ((x₁+x₂)/2, (y₁+y₂)/2)",
+     "notes": "Parallel lines share m; perpendicular lines: m₁×m₂ = −1."
+    },
+    {
+     "name": "Straight line",
+     "formula": "y = mx + c",
+     "notes": "m = gradient, c = y-intercept. x-intercept: set y = 0."
+    },
+    {
+     "name": "Inequalities",
+     "formula": "flip the sign when multiplying/dividing by a negative",
+     "notes": "'At most 5' means x ≤ 5; 'at least' means ≥."
+    }
+   ]
+  },
+  {
+   "title": "Functions, sequences and graphs",
+   "items": [
+    {
+     "name": "Function notation",
+     "formula": "f(x) means f of x; f(3) substitutes x = 3",
+     "notes": "Example: f(x) = 2x+1 → f(3) = 7."
+    },
+    {
+     "name": "nth term (linear)",
+     "formula": "nth term = an + b",
+     "notes": "a = common difference; find b by checking n = 1."
+    },
+    {
+     "name": "Geometric sequences",
+     "formula": "multiply by a common ratio r each term",
+     "notes": "Example: 2, 6, 18, … → ×3; 5th term = 2×3⁴ = 162."
+    },
+    {
+     "name": "Transformations",
+     "formula": "translation (slide), reflection (flip), rotation (turn), enlargement (scale)",
+     "notes": "90° clockwise about origin: (x, y) → (y, −x)."
+    },
+    {
+     "name": "Interior angles",
+     "formula": "sum = (n − 2) × 180°; regular: each = sum / n",
+     "notes": "Triangle: 180°; quadrilateral: 360°; pentagon: 540°; hexagon: 720°."
+    }
+   ]
+  },
+  {
+   "title": "Geometry, trigonometry and mensuration",
+   "items": [
+    {
+     "name": "Pythagoras",
+     "formula": "c² = a² + b² (c = hypotenuse)",
+     "notes": "Use to find a missing side or check for a right angle."
+    },
+    {
+     "name": "SOH CAH TOA",
+     "formula": "sin θ = opp/hyp; cos θ = adj/hyp; tan θ = opp/adj",
+     "notes": "Special values: sin 30° = cos 60° = 0.5; tan 45° = 1."
+    },
+    {
+     "name": "Circle: circumference & area",
+     "formula": "C = 2πr = πd;  A = πr²",
+     "notes": "Sector area = (θ/360) × πr². Use π = 22/7 or 3.14 as instructed."
+    },
+    {
+     "name": "Rectangle / triangle",
+     "formula": "A_rect = l × w, P = 2(l+w);  A_tri = ½ × b × h",
+     "notes": "Diagonal of a rectangle via Pythagoras."
+    },
+    {
+     "name": "Cylinder / cube / cuboid",
+     "formula": "V_cyl = πr²h;  V_cube = s³;  V_cuboid = l×w×h;  SA_cube = 6s²",
+     "notes": "Watch units: volume in cm³, area in cm²."
+    },
+    {
+     "name": "Circle theorems (key)",
+     "formula": "angle in a semicircle = 90°; angles in the same segment are equal",
+     "notes": "Radius meets a tangent at 90°."
+    },
+    {
+     "name": "Scale / maps",
+     "formula": "real distance = map distance × scale factor",
+     "notes": "Keep units consistent (cm → m → km)."
+    }
+   ]
+  },
+  {
+   "title": "Vectors and matrices",
+   "items": [
+    {
+     "name": "Vector addition",
+     "formula": "[a;b] + [c;d] = [a+c; b+d]",
+     "notes": "Subtract component-wise the same way; translation maps (x,y) → (x+a, y+b)."
+    },
+    {
+     "name": "2×2 determinant",
+     "formula": "det [[a,b],[c,d]] = ad − bc",
+     "notes": "Example: det [[4,2],[1,3]] = 12 − 2 = 10."
+    },
+    {
+     "name": "Singular matrix",
+     "formula": "determinant = 0 → no inverse",
+     "notes": "Check the determinant before attempting an inverse."
+    }
+   ]
+  },
+  {
+   "title": "Statistics and probability",
+   "items": [
+    {
+     "name": "Mean",
+     "formula": "mean = sum of values / number of values",
+     "notes": "Find a missing value: total = mean × count."
+    },
+    {
+     "name": "Median / mode / range",
+     "formula": "median = middle value (ordered); mode = most frequent; range = max − min",
+     "notes": "Even count: median = average of the two middle values."
+    },
+    {
+     "name": "Probability scale",
+     "formula": "P(E) = favourable outcomes / total outcomes;  0 ≤ P ≤ 1",
+     "notes": "P(not E) = 1 − P(E). Two coins, exactly one head: 2/4 = 0.5."
+    },
+    {
+     "name": "Pie chart angles",
+     "formula": "angle = (percentage/100) × 360°",
+     "notes": "40% of a pie chart = 144°."
+    }
+   ]
+  }
+ ]
+}

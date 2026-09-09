@@ -1,0 +1,131 @@
+{
+ "subject": "principles-of-accounts",
+ "introduction": "Key equations, ledger rules, and ratios for CSEC Principles of Accounts — from double entry to financial-statement analysis.",
+ "sections": [
+  {
+   "title": "Concepts and the accounting equation",
+   "items": [
+    {
+     "name": "Accounting equation",
+     "formula": "Assets = Capital + Liabilities",
+     "notes": "So Capital = Assets − Liabilities. Every transaction keeps the equation balanced."
+    },
+    {
+     "name": "Business entity concept",
+     "formula": "the business is separate from its owner",
+     "notes": "Owner's personal items are never business assets; drawings reduce capital."
+    },
+    {
+     "name": "Going concern / prudence / accruals",
+     "formula": "assume continuity; anticipate no profits but all losses; match income/costs to the period",
+     "notes": "Historic cost: record assets at original cost."
+    },
+    {
+     "name": "Double-entry rule",
+     "formula": "every transaction: equal debit and credit",
+     "notes": "Debits: increase assets/expenses, decrease liabilities/income/capital. Credits: the reverse."
+    }
+   ]
+  },
+  {
+   "title": "Books of original entry and the ledger",
+   "items": [
+    {
+     "name": "Sales journal / purchases journal",
+     "formula": "record CREDIT sales / CREDIT purchases",
+     "notes": "Cash sales/purchases go straight to the cash book, not the journals."
+    },
+    {
+     "name": "Returns",
+     "formula": "sales returns → sales returns journal (credit note issued); purchases returns → debit note issued",
+     "notes": "Carriage inwards (on purchases) is an expense added to cost of sales; carriage outwards (on sales) is a selling expense."
+    },
+    {
+     "name": "Cash book / petty cash",
+     "formula": "cash book is both book of entry and ledger; petty cash uses the imprest system",
+     "notes": "Contra entry: cash banked or withdrawn (Dr and Cr in the cash book at once)."
+    },
+    {
+     "name": "Trial balance purpose",
+     "formula": "checks arithmetical accuracy of double entry",
+     "notes": "It does NOT catch errors of omission, commission, principle, original entry, reversal, or compensation."
+    },
+    {
+     "name": "Suspense account",
+     "formula": "temporary account for the trial-balance difference",
+     "notes": "Opened when debits ≠ credits; cleared when errors are corrected."
+    }
+   ]
+  },
+  {
+   "title": "Final accounts",
+   "items": [
+    {
+     "name": "Cost of sales",
+     "formula": "opening stock + purchases (+ carriage inwards) − closing stock",
+     "notes": "Closing stock valued at lower of cost and net realizable value."
+    },
+    {
+     "name": "Gross profit",
+     "formula": "gross profit = sales − cost of sales",
+     "notes": "Gross profit % = (gross profit / sales) × 100."
+    },
+    {
+     "name": "Net profit",
+     "formula": "net profit = gross profit − expenses + other income",
+     "notes": "Net margin = (net profit / sales) × 100. Net profit is added to capital."
+    },
+    {
+     "name": "Statement of financial position",
+     "formula": "Assets = Capital + Liabilities at a date",
+     "notes": "Order: non-current assets, current assets; capital; non-current then current liabilities."
+    },
+    {
+     "name": "Working capital",
+     "formula": "working capital = current assets − current liabilities",
+     "notes": "Capital employed = non-current liabilities + equity (or total assets − current liabilities)."
+    },
+    {
+     "name": "Depreciation (straight line)",
+     "formula": "annual = (cost − residual value) / useful life",
+     "notes": "Reducing balance: fixed % of net book value each year. Depreciation is a non-cash expense."
+    },
+    {
+     "name": "Bad debts / provisions",
+     "formula": "bad debt written off: Dr Bad debts, Cr Debtor; provision for doubtful debts = estimated % of receivables",
+     "notes": "Accrued expense (owing) = current liability; prepayment (paid in advance) = current asset."
+    }
+   ]
+  },
+  {
+   "title": "Ratios, control accounts and business forms",
+   "items": [
+    {
+     "name": "Current ratio",
+     "formula": "current assets / current liabilities (ideal ≈ 2:1)",
+     "notes": "Acid test (quick) ratio = (current assets − stock) / current liabilities (≈ 1:1)."
+    },
+    {
+     "name": "Profitability ratios",
+     "formula": "ROCE = (net profit / capital employed) × 100",
+     "notes": "Higher gross/net margins and ROCE = better performance."
+    },
+    {
+     "name": "Bank reconciliation",
+     "formula": "updated cash book = bank statement ± timing differences",
+     "notes": "Unpresented cheques and uncleared deposits explain most differences."
+    },
+    {
+     "name": "Receivables / payables control",
+     "formula": "summarise total debtors / creditors ledgers",
+     "notes": "Cash received from customers credited in the receivables control."
+    },
+    {
+     "name": "Partnerships vs companies",
+     "formula": "partnership: 2–20 owners, profit per agreement; company: owned by shareholders, capital in shares",
+     "notes": "Partnership interest on capital is an appropriation of profit, not an expense."
+    }
+   ]
+  }
+ ]
+}
