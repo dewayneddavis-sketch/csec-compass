@@ -26,6 +26,7 @@ export default async function handler(req, res) {
     out.events = evs.data.map((e) => {
       const s = e.data?.object || {};
       return {
+        eventId: e.id,
         type: e.type,
         created: new Date(e.created * 1000).toISOString(),
         sessionId: s.id || null,
@@ -34,6 +35,23 @@ export default async function handler(req, res) {
         metadata: s.metadata || null,
       };
     });
+    // RETRY TEST: re-deliver the second buyer's real event to the webhook.
+    // If the deployed secret matches, the grant lands (self-heals). If not,
+    // Stripe returns a delivery failure we can read.
+    try {
+      const target = evs.data.find((e) => e.type === "checkout.session.completed" && e.data?.object?.client_reference_id === "60ed39f0-141f-4fc2-8eb5-df0e3d3c99c1");
+      if (target) {
+        const retryRes = await fetch(`https://api.stripe.com/v1/events/${target.id}/retry`, {
+          method: "POST",
+          headers: { Authorization: `Bearer ${process.env.STRIPE_SECRET_KEY}` },
+        });
+        out.eventRetry = { eventId: target.id, status: retryRes.status, body: (await retryRes.text()).slice(0, 600) };
+      } else {
+        out.eventRetry = { note: "target event not found" };
+      }
+    } catch (err) {
+      out.eventRetry = { error: err.message };
+    }
     const supabaseUrl = process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL;
     if (supabaseUrl && process.env.SUPABASE_SERVICE_ROLE_KEY) {
       const h = { apikey: process.env.SUPABASE_SERVICE_ROLE_KEY, Authorization: `Bearer ${process.env.SUPABASE_SERVICE_ROLE_KEY}` };
