@@ -137,3 +137,5 @@ export default async function handler(req, res) {
     res.status(200).json({ received: true });
   }
 }
+
+// env note: STRIPE_WEBHOOK_SECRET injected at build; verify via diag env flags
