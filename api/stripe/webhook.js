@@ -75,14 +75,23 @@ export default async function handler(req, res) {
           subject_id: null,
           purchase_type: "bundle",
         });
-        if (error) console.error("Insert bundle error:", error);
+        if (error) {
+          console.error("Insert bundle error:", error);
+          return res.status(500).json({ error: "Failed to record purchase: " + error.message });
+        }
       } else if (price_type === "subject" && subject_id) {
         const { error } = await supabase.from("purchases").upsert({
           user_id: userId,
           subject_id,
           purchase_type: "subject",
         }, { onConflict: "user_id,subject_id" });
-        if (error) console.error("Insert subject purchase error:", error);
+        if (error) {
+          console.error("Insert subject purchase error:", error);
+          return res.status(500).json({ error: "Failed to record purchase: " + error.message });
+        }
+      } else {
+        console.error("Webhook: unknown price_type/metadata on session", session.id, session.metadata);
+        return res.status(400).json({ error: "Unknown price_type or missing subject_id" });
       }
 
       res.status(200).json({ received: true });
