@@ -11,6 +11,12 @@ export default async function handler(req, res) {
         supabaseUrlSet: !!(process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL),
         serviceRoleSet: !!process.env.SUPABASE_SERVICE_ROLE_KEY,
       },
+      runtime: {
+        vercelEnv: process.env.VERCEL_ENV || null,
+        vercelGitSha: process.env.VERCEL_GIT_COMMIT_SHA || null,
+        vercelUrl: process.env.VERCEL_URL || null,
+        now: new Date().toISOString(),
+      },
     };
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
       apiVersion: "2025-02-24.acacia",
