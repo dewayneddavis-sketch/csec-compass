@@ -80,6 +80,26 @@ export default async function handler(req, res) {
     } catch (err) {
       out.selfWebhookTest = { error: err.message };
     }
+    // DELIVERY LOGS: what HTTP response did Stripe actually get for each delivery?
+    try {
+      const delRes = await fetch(
+        "https://api.stripe.com/v1/webhook_endpoints/we_1UDnXvBMfL7i0JlrRX1MEKPu/deliveries?limit=10",
+        { headers: { Authorization: `Bearer ${process.env.STRIPE_SECRET_KEY}` } }
+      );
+      const delJson = await delRes.json();
+      if (delJson.data) {
+        out.deliveries = delJson.data.map((d) => ({
+          attempt: d.attempt,
+          created: new Date(d.created * 1000).toISOString(),
+          responseStatus: d.response ? d.response.status : null,
+          eventType: d.webhook_event ? d.webhook_event.type : null,
+        }));
+      } else {
+        out.deliveries = { status: delRes.status, body: JSON.stringify(delJson).slice(0, 400) };
+      }
+    } catch (err) {
+      out.deliveries = { error: err.message };
+    }
     res.status(200).json(out);
   } catch (err) {
     res.status(500).json({ error: err.message, stack: String(err.stack).split("\n").slice(0, 3) });
