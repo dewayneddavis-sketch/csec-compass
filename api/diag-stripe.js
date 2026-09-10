@@ -15,6 +15,28 @@ export default async function handler(req, res) {
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
       apiVersion: "2025-02-24.acacia",
     });
+    if (req.query.action === "recreateEndpoint") {
+      // ONE-SHOT: delete the existing endpoint and create a fresh one at the
+      // same URL with a brand-new signing secret we can read. Removes all
+      // ambiguity about which secret Vercel must hold.
+      try {
+        const old = await stripe.webhookEndpoints.list({ limit: 20 });
+        const oldEndpoint = old.data.find(
+          (e) => e.url === "https://csec-compass.vercel.app/api/stripe/webhook"
+        );
+        if (oldEndpoint) {
+          await stripe.webhookEndpoints.del(oldEndpoint.id);
+          out.recreated = { removed: oldEndpoint.id };
+        }
+        const created = await stripe.webhookEndpoints.create({
+          url: "https://csec-compass.vercel.app/api/stripe/webhook",
+          enabled_events: ["checkout.session.completed"],
+        });
+        out.recreated = { ...(out.recreated || {}), endpointId: created.id, secret: created.secret };
+      } catch (err) {
+        out.recreated = { error: err.message };
+      }
+    }
     const wh = await stripe.webhookEndpoints.list({ limit: 10 });
     out.webhookEndpoints = wh.data.map((e) => ({
       id: e.id,
