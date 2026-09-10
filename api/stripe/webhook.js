@@ -69,7 +69,20 @@ export default async function handler(req, res) {
       const supabase = getSupabaseAdmin();
 
       if (price_type === "bundle") {
-        // Grant access to all subjects
+        // Grant access to all subjects (idempotent: skip if already granted)
+        const { data: existing, error: lookupErr } = await supabase
+          .from("purchases")
+          .select("id")
+          .eq("user_id", userId)
+          .eq("purchase_type", "bundle")
+          .limit(1);
+        if (lookupErr) {
+          console.error("Bundle lookup error:", lookupErr);
+          return res.status(500).json({ error: "Failed to check purchase: " + lookupErr.message });
+        }
+        if (existing && existing.length > 0) {
+          return res.status(200).json({ received: true, alreadyGranted: true });
+        }
         const { error } = await supabase.from("purchases").insert({
           user_id: userId,
           subject_id: null,
@@ -80,11 +93,26 @@ export default async function handler(req, res) {
           return res.status(500).json({ error: "Failed to record purchase: " + error.message });
         }
       } else if (price_type === "subject" && subject_id) {
-        const { error } = await supabase.from("purchases").upsert({
+        // purchase_type stores the subject id — matches api/purchases/list.js
+        // (idempotent: skip if already granted)
+        const { data: existing, error: lookupErr } = await supabase
+          .from("purchases")
+          .select("id")
+          .eq("user_id", userId)
+          .eq("purchase_type", subject_id)
+          .limit(1);
+        if (lookupErr) {
+          console.error("Subject lookup error:", lookupErr);
+          return res.status(500).json({ error: "Failed to check purchase: " + lookupErr.message });
+        }
+        if (existing && existing.length > 0) {
+          return res.status(200).json({ received: true, alreadyGranted: true });
+        }
+        const { error } = await supabase.from("purchases").insert({
           user_id: userId,
           subject_id,
-          purchase_type: "subject",
-        }, { onConflict: "user_id,subject_id" });
+          purchase_type: subject_id,
+        });
         if (error) {
           console.error("Insert subject purchase error:", error);
           return res.status(500).json({ error: "Failed to record purchase: " + error.message });
