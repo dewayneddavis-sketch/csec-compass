@@ -15,28 +15,6 @@ export default async function handler(req, res) {
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
       apiVersion: "2025-02-24.acacia",
     });
-    if (req.query.action === "recreateEndpoint") {
-      // ONE-SHOT: delete the existing endpoint and create a fresh one at the
-      // same URL with a brand-new signing secret we can read. Removes all
-      // ambiguity about which secret Vercel must hold.
-      try {
-        const old = await stripe.webhookEndpoints.list({ limit: 20 });
-        const oldEndpoint = old.data.find(
-          (e) => e.url === "https://csec-compass.vercel.app/api/stripe/webhook"
-        );
-        if (oldEndpoint) {
-          await stripe.webhookEndpoints.del(oldEndpoint.id);
-          out.recreated = { removed: oldEndpoint.id };
-        }
-        const created = await stripe.webhookEndpoints.create({
-          url: "https://csec-compass.vercel.app/api/stripe/webhook",
-          enabled_events: ["checkout.session.completed"],
-        });
-        out.recreated = { ...(out.recreated || {}), endpointId: created.id, secret: created.secret };
-      } catch (err) {
-        out.recreated = { error: err.message };
-      }
-    }
     const wh = await stripe.webhookEndpoints.list({ limit: 10 });
     out.webhookEndpoints = wh.data.map((e) => ({
       id: e.id,
@@ -103,58 +81,57 @@ export default async function handler(req, res) {
     } catch (err) {
       out.authUsers = { error: err.message };
     }
-    // SELF-CALL TEST: craft a signed checkout.session.completed with the
-    // DEPLOYED webhook secret and POST it to the webhook's own URL. This
-    // proves the deployed secret matches the endpoint (200) or not (400).
-    try {
-      const payload = JSON.stringify({
-        id: "evt_selftest_" + Date.now(),
-        object: "event",
-        api_version: "2025-02-24.acacia",
-        created: Math.floor(Date.now() / 1000),
-        type: "checkout.session.completed",
-        data: {
-          object: {
-            id: "cs_test_selftest_" + Date.now(),
-            object: "checkout.session",
-            client_reference_id: "0afb59ca-d7a6-48c1-9844-099a6a38d555",
-            metadata: { price_type: "bundle", subject_id: "" },
-            payment_status: "paid",
+    // SELF-CALL TEST (opt-in ?action=selftest): signs with the DEPLOYED
+    // webhook secret and posts to the endpoint, proving the deployed secret
+    // verifies (200) or not (500). Also exercises the grant path against an
+    // already-granted buyer so it is idempotent and side-effect-free.
+    if (req.query.action === "selftest") {
+      try {
+        const payload = JSON.stringify({
+          id: "evt_selftest_" + Date.now(),
+          object: "event",
+          api_version: "2025-02-24.acacia",
+          created: Math.floor(Date.now() / 1000),
+          type: "checkout.session.completed",
+          data: {
+            object: {
+              id: "cs_test_selftest_" + Date.now(),
+              object: "checkout.session",
+              client_reference_id: "0afb59ca-d7a6-48c1-9844-099a6a38d555",
+              metadata: { price_type: "bundle", subject_id: "" },
+              payment_status: "paid",
+            },
           },
-        },
-      });
-      const signature = stripe.webhooks.generateTestHeaderString({
-        payload,
-        secret: process.env.STRIPE_WEBHOOK_SECRET,
-      });
-      const self = await fetch("https://csec-compass.vercel.app/api/stripe/webhook", {
-        method: "POST",
-        headers: { "content-type": "application/json", "stripe-signature": signature },
-        body: payload,
-      });
-      out.selfWebhookTest = { status: self.status, body: (await self.text()).slice(0, 300) };
-    } catch (err) {
-      out.selfWebhookTest = { error: err.message };
-    }
-    // DELIVERY LOGS: what HTTP response did Stripe actually get for each delivery?
-    try {
-      const delRes = await fetch(
-        "https://api.stripe.com/v1/webhook_endpoints/we_1UDnXvBMfL7i0JlrRX1MEKPu/deliveries?limit=10",
-        { headers: { Authorization: `Bearer ${process.env.STRIPE_SECRET_KEY}` } }
-      );
-      const delJson = await delRes.json();
-      if (delJson.data) {
-        out.deliveries = delJson.data.map((d) => ({
-          attempt: d.attempt,
-          created: new Date(d.created * 1000).toISOString(),
-          responseStatus: d.response ? d.response.status : null,
-          eventType: d.webhook_event ? d.webhook_event.type : null,
-        }));
-      } else {
-        out.deliveries = { status: delRes.status, body: JSON.stringify(delJson).slice(0, 400) };
+        });
+        const signature = stripe.webhooks.generateTestHeaderString({
+          payload,
+          secret: process.env.STRIPE_WEBHOOK_SECRET,
+        });
+        const self = await fetch("https://csec-compass.vercel.app/api/stripe/webhook", {
+          method: "POST",
+          headers: { "content-type": "application/json", "stripe-signature": signature },
+          body: payload,
+        });
+        out.selfWebhookTest = { status: self.status, body: (await self.text()).slice(0, 300) };
+      } catch (err) {
+        out.selfWebhookTest = { error: err.message };
       }
-    } catch (err) {
-      out.deliveries = { error: err.message };
+    }
+    // RETRY TEST (opt-in ?action=retry=<eventId>): re-deliver a REAL past
+    // event to Stripe's webhook. If the deployed secret matches the endpoint,
+    // the webhook inserts the grant — definitive end-to-end proof for a paid
+    // buyer whose event originally failed.
+    if (req.query.action && String(req.query.action).startsWith("retry=")) {
+      try {
+        const eventId = String(req.query.action).slice("retry=".length);
+        const retryRes = await fetch(`https://api.stripe.com/v1/events/${eventId}/retry`, {
+          method: "POST",
+          headers: { Authorization: `Bearer ${process.env.STRIPE_SECRET_KEY}` },
+        });
+        out.eventRetry = { eventId, status: retryRes.status, body: (await retryRes.text()).slice(0, 300) };
+      } catch (err) {
+        out.eventRetry = { error: err.message };
+      }
     }
     res.status(200).json(out);
   } catch (err) {
