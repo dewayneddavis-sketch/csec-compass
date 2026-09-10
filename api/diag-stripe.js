@@ -47,6 +47,22 @@ export default async function handler(req, res) {
     } else {
       out.purchasesProbe = { status: "skipped", body: "missing supabase env" };
     }
+    // AUTH USERS PROBE: do the buyers actually exist in THIS project's auth.users?
+    try {
+      const adminRes = await fetch(`${supabaseUrl}/auth/v1/admin/users?per_page=200`, {
+        headers: { Authorization: `Bearer ${process.env.SUPABASE_SERVICE_ROLE_KEY}`, apikey: process.env.SUPABASE_SERVICE_ROLE_KEY },
+      });
+      const usersData = await adminRes.json();
+      const users = usersData.users || [];
+      out.authUsers = {
+        status: adminRes.status,
+        secondBuyerExists: users.some((u) => u.id === "60ed39f0-141f-4fc2-8eb5-df0e3d3c99c1"),
+        firstBuyerExists: users.some((u) => u.id === "0afb59ca-d7a6-48c1-9844-099a6a38d555"),
+        sampleEmails: users.slice(0, 5).map((u) => u.email),
+      };
+    } catch (err) {
+      out.authUsers = { error: err.message };
+    }
     // SELF-CALL TEST: craft a signed checkout.session.completed with the
     // DEPLOYED webhook secret and POST it to the webhook's own URL. This
     // proves the deployed secret matches the endpoint (200) or not (400).

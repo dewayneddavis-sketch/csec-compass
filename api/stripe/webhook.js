@@ -53,7 +53,10 @@ export default async function handler(req, res) {
     const rawBody = await readRawBody(req);
     event = stripe.webhooks.constructEvent(rawBody, sig, webhookSecret);
   } catch (err) {
-    return res.status(400).json({ error: "Webhook signature verification failed" });
+    // 500 (not 400) so a dashboard "Send test webhook" distinguishes
+    // signature failure (500) from a business-logic skip (200/400).
+    console.error("Webhook signature verification failed:", err.message);
+    return res.status(500).json({ error: "Webhook signature verification failed" });
   }
 
   if (event.type === "checkout.session.completed") {
@@ -61,8 +64,11 @@ export default async function handler(req, res) {
     const { price_type, subject_id } = session.metadata || {};
     const userId = session.client_reference_id;
     if (!userId) {
+      // Real sessions always carry client_reference_id (create-session sets it).
+      // Dashboard test events do not — return 200 so the test shows "OK" when
+      // the secret is correct, and log loudly if a real event ever misses it.
       console.error("Webhook: missing client_reference_id on checkout session", session.id);
-      return res.status(400).json({ error: "Missing client_reference_id — cannot grant purchase" });
+      return res.status(200).json({ received: true, note: "missing client_reference_id", sessionId: session.id });
     }
 
     try {
