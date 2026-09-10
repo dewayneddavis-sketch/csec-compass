@@ -44,17 +44,6 @@ export default async function handler(req, res) {
         { headers: h }
       );
       out.purchasesForBuyer = { status: buyerRes.status, body: (await buyerRes.text()).slice(0, 500) };
-      // Attempt the EXACT insert the webhook performs (bundle for the paid buyer)
-      const insertRes = await fetch(`${supabaseUrl}/rest/v1/purchases`, {
-        method: "POST",
-        headers: { ...h, "Content-Type": "application/json", Prefer: "return=representation" },
-        body: JSON.stringify({
-          user_id: "0afb59ca-d7a6-48c1-9844-099a6a38d555",
-          subject_id: null,
-          purchase_type: "bundle",
-        }),
-      });
-      out.webhookInsertTest = { status: insertRes.status, body: (await insertRes.text()).slice(0, 500) };
     } else {
       out.purchasesProbe = { status: "skipped", body: "missing supabase env" };
     }
