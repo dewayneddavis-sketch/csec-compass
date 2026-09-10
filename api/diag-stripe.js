@@ -47,6 +47,39 @@ export default async function handler(req, res) {
     } else {
       out.purchasesProbe = { status: "skipped", body: "missing supabase env" };
     }
+    // SELF-CALL TEST: craft a signed checkout.session.completed with the
+    // DEPLOYED webhook secret and POST it to the webhook's own URL. This
+    // proves the deployed secret matches the endpoint (200) or not (400).
+    try {
+      const payload = JSON.stringify({
+        id: "evt_selftest_" + Date.now(),
+        object: "event",
+        api_version: "2025-02-24.acacia",
+        created: Math.floor(Date.now() / 1000),
+        type: "checkout.session.completed",
+        data: {
+          object: {
+            id: "cs_test_selftest_" + Date.now(),
+            object: "checkout.session",
+            client_reference_id: "0afb59ca-d7a6-48c1-9844-099a6a38d555",
+            metadata: { price_type: "bundle", subject_id: "" },
+            payment_status: "paid",
+          },
+        },
+      });
+      const signature = stripe.webhooks.generateTestHeaderString({
+        payload,
+        secret: process.env.STRIPE_WEBHOOK_SECRET,
+      });
+      const self = await fetch("https://csec-compass.vercel.app/api/stripe/webhook", {
+        method: "POST",
+        headers: { "content-type": "application/json", "stripe-signature": signature },
+        body: payload,
+      });
+      out.selfWebhookTest = { status: self.status, body: (await self.text()).slice(0, 300) };
+    } catch (err) {
+      out.selfWebhookTest = { error: err.message };
+    }
     res.status(200).json(out);
   } catch (err) {
     res.status(500).json({ error: err.message, stack: String(err.stack).split("\n").slice(0, 3) });
