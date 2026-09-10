@@ -36,11 +36,14 @@ export default async function handler(req, res) {
     });
     const supabaseUrl = process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL;
     if (supabaseUrl && process.env.SUPABASE_SERVICE_ROLE_KEY) {
-      const dbRes = await fetch(
-        `${supabaseUrl}/rest/v1/purchases?select=id&limit=1`,
-        { headers: { apikey: process.env.SUPABASE_SERVICE_ROLE_KEY, Authorization: `Bearer ${process.env.SUPABASE_SERVICE_ROLE_KEY}` } }
+      const h = { apikey: process.env.SUPABASE_SERVICE_ROLE_KEY, Authorization: `Bearer ${process.env.SUPABASE_SERVICE_ROLE_KEY}` };
+      const dbRes = await fetch(`${supabaseUrl}/rest/v1/purchases?select=*&limit=5`, { headers: h });
+      out.purchasesProbe = { status: dbRes.status, body: (await dbRes.text()).slice(0, 800) };
+      const buyerRes = await fetch(
+        `${supabaseUrl}/rest/v1/purchases?user_id=eq.0afb59ca-d7a6-48c1-9844-099a6a38d555&select=*`,
+        { headers: h }
       );
-      out.purchasesProbe = { status: dbRes.status, body: (await dbRes.text()).slice(0, 200) };
+      out.purchasesForBuyer = { status: buyerRes.status, body: (await buyerRes.text()).slice(0, 500) };
     } else {
       out.purchasesProbe = { status: "skipped", body: "missing supabase env" };
     }
