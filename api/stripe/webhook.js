@@ -139,3 +139,5 @@ export default async function handler(req, res) {
 }
 
 // env note: STRIPE_WEBHOOK_SECRET injected at build; verify via diag env flags
+
+// env note: STRIPE_WEBHOOK_SECRET injected at build; verify via diag env flags
