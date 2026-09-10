@@ -37,13 +37,13 @@ export default async function handler(req, res) {
     const supabaseUrl = process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL;
     if (supabaseUrl && process.env.SUPABASE_SERVICE_ROLE_KEY) {
       const h = { apikey: process.env.SUPABASE_SERVICE_ROLE_KEY, Authorization: `Bearer ${process.env.SUPABASE_SERVICE_ROLE_KEY}` };
-      const dbRes = await fetch(`${supabaseUrl}/rest/v1/purchases?select=*&limit=5`, { headers: h });
-      out.purchasesProbe = { status: dbRes.status, body: (await dbRes.text()).slice(0, 800) };
+      const dbRes = await fetch(`${supabaseUrl}/rest/v1/purchases?select=*&order=id.desc&limit=12`, { headers: h });
+      out.purchasesProbe = { status: dbRes.status, body: (await dbRes.text()).slice(0, 1500) };
       const buyerRes = await fetch(
-        `${supabaseUrl}/rest/v1/purchases?user_id=eq.0afb59ca-d7a6-48c1-9844-099a6a38d555&select=*`,
+        `${supabaseUrl}/rest/v1/purchases?user_id=eq.60ed39f0-141f-4fc2-8eb5-df0e3d3c99c1&select=*&order=id.desc&limit=5`,
         { headers: h }
       );
-      out.purchasesForBuyer = { status: buyerRes.status, body: (await buyerRes.text()).slice(0, 500) };
+      out.purchasesSecondBuyer = { status: buyerRes.status, body: (await buyerRes.text()).slice(0, 800) };
     } else {
       out.purchasesProbe = { status: "skipped", body: "missing supabase env" };
     }
