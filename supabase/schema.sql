@@ -63,3 +63,24 @@ create policy "quiz_results: no direct client access"
   on public.quiz_results for all
   using (false)
   with check (false);
+
+-- ===========================================================================
+-- revision_plans — per-user revision planner state (exam dates + week plan)
+-- ONE row per user; `plan` is a JSONB blob holding the generated week-by-week
+-- plan, completion state, and streak data. Written/read by api/planner/sync.js
+-- and api/planner/load.js (service role) when the user is signed in;
+-- localStorage is the always-on fallback (works logged-out).
+-- ===========================================================================
+create table if not exists public.revision_plans (
+  user_id uuid primary key references auth.users (id) on delete cascade,
+  plan jsonb not null,
+  updated_at timestamptz not null default now()
+);
+
+alter table public.revision_plans enable row level security;
+
+drop policy if exists "revision_plans: no direct client access" on public.revision_plans;
+create policy "revision_plans: no direct client access"
+  on public.revision_plans for all
+  using (false)
+  with check (false);

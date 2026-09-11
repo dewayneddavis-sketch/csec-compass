@@ -10,6 +10,7 @@ import AuthPage from "./pages/AuthPage";
 import AccountPage from "./pages/AccountPage";
 import PricingPage from "./pages/PricingPage";
 import AdminPage from "./pages/AdminPage";
+import PlannerPage from "./pages/PlannerPage";
 import ProtectedRoute from "./components/ProtectedRoute";
 import "./App.css";
 
@@ -27,6 +28,7 @@ export default function App() {
               <Route path="/login" element={<LoginPage />} />
               <Route path="/signup" element={<SignupPage />} />
               <Route path="/pricing" element={<PricingPage />} />
+              <Route path="/planner" element={<PlannerPage />} />
               <Route path="/auth" element={<AuthPage mode="signin" />} />
               <Route path="/auth/signup" element={<AuthPage mode="signup" />} />
               <Route path="/auth/reset-password" element={<AuthPage mode="reset" />} />
