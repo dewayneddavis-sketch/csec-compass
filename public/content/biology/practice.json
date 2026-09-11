@@ -140,7 +140,7 @@
   ],
   "answer": "Eutrophication",
   "explanation": "Eutrophication is caused by nutrient runoff (like fertilizers), leading to algae blooms and oxygen depletion.",
-  "topic": "food-chains"
+  "topic": "human-impact"
  },
  {
   "id": "p12",
@@ -439,7 +439,7 @@
   ],
   "answer": "Kidney",
   "explanation": "The kidneys filter blood and produce urine.",
-  "topic": "osmosis-diffusion"
+  "topic": "excretion-homeostasis"
  },
  {
   "id": "p35",
@@ -452,7 +452,7 @@
   ],
   "answer": "nephron",
   "explanation": "Nephrons filter blood and reabsorb useful substances.",
-  "topic": "osmosis-diffusion"
+  "topic": "excretion-homeostasis"
  },
  {
   "id": "p36",
@@ -465,7 +465,7 @@
   ],
   "answer": "Insulin",
   "explanation": "Insulin lowers blood glucose; glucagon raises it.",
-  "topic": "respiration"
+  "topic": "excretion-homeostasis"
  },
  {
   "id": "p37",
@@ -478,7 +478,7 @@
   ],
   "answer": "insulin",
   "explanation": "Type 1 diabetes is due to lack of insulin production.",
-  "topic": "respiration"
+  "topic": "excretion-homeostasis"
  },
  {
   "id": "p38",
@@ -491,7 +491,7 @@
   ],
   "answer": "Cerebellum",
   "explanation": "The cerebellum coordinates movement and balance.",
-  "topic": "respiration"
+  "topic": "excretion-homeostasis"
  },
  {
   "id": "p39",
@@ -504,7 +504,7 @@
   ],
   "answer": "neuron",
   "explanation": "Neurons transmit nerve impulses.",
-  "topic": "respiration"
+  "topic": "excretion-homeostasis"
  },
  {
   "id": "p40",
@@ -517,7 +517,7 @@
   ],
   "answer": "Influenza",
   "explanation": "Influenza (flu) is viral; the others are bacterial.",
-  "topic": "osmosis-diffusion"
+  "topic": "human-impact"
  },
  {
   "id": "p41",
@@ -530,7 +530,7 @@
   ],
   "answer": "Dengue fever",
   "explanation": "Aedes aegypti transmits dengue; malaria is spread by Anopheles.",
-  "topic": "osmosis-diffusion"
+  "topic": "human-impact"
  },
  {
   "id": "p42",
@@ -543,7 +543,7 @@
   ],
   "answer": "the skin",
   "explanation": "Skin acts as a physical barrier.",
-  "topic": "osmosis-diffusion"
+  "topic": "excretion-homeostasis"
  },
  {
   "id": "p43",
@@ -556,7 +556,7 @@
   ],
   "answer": "stimulating antibody production",
   "explanation": "Vaccines introduce antigens that trigger antibody production.",
-  "topic": "osmosis-diffusion"
+  "topic": "excretion-homeostasis"
  },
  {
   "id": "p44",
@@ -569,7 +569,7 @@
   ],
   "answer": "Phagocyte",
   "explanation": "Phagocytes engulf and destroy pathogens by phagocytosis.",
-  "topic": "osmosis-diffusion"
+  "topic": "excretion-homeostasis"
  },
  {
   "id": "p45",
@@ -582,7 +582,7 @@
   ],
   "answer": "lymphocytes",
   "explanation": "Lymphocytes produce antibodies against specific antigens.",
-  "topic": "osmosis-diffusion"
+  "topic": "excretion-homeostasis"
  },
  {
   "id": "p46",
@@ -595,7 +595,7 @@
   ],
   "answer": "Heart disease",
   "explanation": "Heart disease is not transmitted from person to person.",
-  "topic": "circulatory-system"
+  "topic": "human-impact"
  },
  {
   "id": "p47",
@@ -608,7 +608,7 @@
   ],
   "answer": "Plasmodium protozoan",
   "explanation": "Malaria is caused by the Plasmodium protozoan, spread by mosquitoes.",
-  "topic": "osmosis-diffusion"
+  "topic": "human-impact"
  },
  {
   "id": "p48",
@@ -621,7 +621,7 @@
   ],
   "answer": "Severe diarrhoea",
   "explanation": "Cholera causes severe watery diarrhoea leading to dehydration.",
-  "topic": "osmosis-diffusion"
+  "topic": "human-impact"
  },
  {
   "id": "p49",
@@ -634,7 +634,7 @@
   ],
   "answer": "abstinence or protected sex",
   "explanation": "HIV spreads via body fluids; abstinence or protection prevents transmission.",
-  "topic": "osmosis-diffusion"
+  "topic": "human-impact"
  },
  {
   "id": "p50",
@@ -751,7 +751,7 @@
   ],
   "answer": "Pulling your hand away from a hot object",
   "explanation": "Reflexes are automatic, rapid responses to stimuli.",
-  "topic": "respiration"
+  "topic": "excretion-homeostasis"
  },
  {
   "id": "p59",
@@ -764,7 +764,7 @@
   ],
   "answer": "cones",
   "explanation": "Cone cells detect colour; rods detect light intensity.",
-  "topic": "respiration"
+  "topic": "excretion-homeostasis"
  },
  {
   "id": "p60",
@@ -777,7 +777,7 @@
   ],
   "answer": "Controls the amount of light entering the eye",
   "explanation": "The iris adjusts pupil size to control light entry.",
-  "topic": "respiration"
+  "topic": "excretion-homeostasis"
  },
  {
   "id": "p61",
@@ -790,7 +790,7 @@
   ],
   "answer": "Adrenaline",
   "explanation": "Adrenaline prepares the body for emergency action.",
-  "topic": "respiration"
+  "topic": "excretion-homeostasis"
  },
  {
   "id": "p62",
@@ -842,7 +842,7 @@
   ],
   "answer": "Budding in yeast",
   "explanation": "Budding produces offspring from one parent without gametes.",
-  "topic": "dna-inheritance"
+  "topic": "selection-evolution"
  },
  {
   "id": "p66",
@@ -881,7 +881,7 @@
   ],
   "answer": "exchange nutrients and waste between mother and fetus",
   "explanation": "The placenta allows diffusion of oxygen and nutrients to the fetus.",
-  "topic": "osmosis-diffusion"
+  "topic": "excretion-homeostasis"
  },
  {
   "id": "p69",
@@ -1011,7 +1011,7 @@
   ],
   "answer": "excess fertilisers in run-off",
   "explanation": "Nitrates and phosphates from fertilisers cause algal blooms.",
-  "topic": "food-chains"
+  "topic": "human-impact"
  },
  {
   "id": "p79",
@@ -1024,7 +1024,7 @@
   ],
   "answer": "Carbon dioxide",
   "explanation": "CO₂ traps heat in the atmosphere.",
-  "topic": "food-chains"
+  "topic": "human-impact"
  },
  {
   "id": "p80",
@@ -1037,7 +1037,7 @@
   ],
   "answer": "deforestation",
   "explanation": "Deforestation is the clearing of forests.",
-  "topic": "food-chains"
+  "topic": "human-impact"
  },
  {
   "id": "p81",
@@ -1050,7 +1050,7 @@
   ],
   "answer": "Solar energy",
   "explanation": "Solar energy is replenished naturally.",
-  "topic": "food-chains"
+  "topic": "human-impact"
  },
  {
   "id": "p82",
@@ -1141,7 +1141,7 @@
   ],
   "answer": "genus",
   "explanation": "Binomial nomenclature: genus + species.",
-  "topic": "dna-inheritance"
+  "topic": "selection-evolution"
  },
  {
   "id": "p89",
@@ -1167,7 +1167,7 @@
   ],
   "answer": "Kingdom, Phylum, Class, Order, Family, Genus, Species",
   "explanation": "Memory aid: King Philip Came Over For Good Soup.",
-  "topic": "dna-inheritance"
+  "topic": "selection-evolution"
  },
  {
   "id": "p91",
@@ -1232,7 +1232,7 @@
   ],
   "answer": "pacemaker",
   "explanation": "The sinoatrial node (pacemaker) initiates each heartbeat.",
-  "topic": "circulatory-system"
+  "topic": "excretion-homeostasis"
  },
  {
   "id": "p96",
@@ -1284,7 +1284,7 @@
   ],
   "answer": "Using catalytic converters in cars",
   "explanation": "Catalytic converters reduce harmful exhaust gases.",
-  "topic": "food-chains"
+  "topic": "human-impact"
  },
  {
   "id": "p100",
