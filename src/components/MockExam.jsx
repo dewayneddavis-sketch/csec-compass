@@ -1,4 +1,7 @@
 import { useState, useEffect, useRef } from "react";
+import { useAuth } from "../context/AuthContext";
+import { recordQuizResult } from "../data/analytics";
+import WeakTopicsPanel from "./WeakTopicsPanel";
 import "./ExtraPractice.css";
 import "./MockExam.css";
 
@@ -21,7 +24,26 @@ export default function MockExam({ subjectId }) {
   const [timeLeft, setTimeLeft] = useState(0);
   const [submitted, setSubmitted] = useState(false);
   const [timeTaken, setTimeTaken] = useState(null);
+  const [latestAttemptId, setLatestAttemptId] = useState(null);
   const totalSeconds = useRef(0);
+  const { session } = useAuth();
+
+  // Record the completed exam once, when it flips to submitted.
+  const answersRef = useRef(answers);
+  answersRef.current = answers;
+  const recordedRef = useRef(false);
+  useEffect(() => {
+    if (submitted && questions && questions.length > 0 && !recordedRef.current) {
+      recordedRef.current = true;
+      recordQuizResult({
+        subjectId,
+        quizType: "mock",
+        questions,
+        answers: answersRef.current,
+        session,
+      }).then((attempt) => setLatestAttemptId(attempt?.attemptId || null));
+    }
+  }, [submitted, questions, subjectId, session]);
 
   useEffect(() => {
     setLoading(true);
@@ -31,6 +53,8 @@ export default function MockExam({ subjectId }) {
     setAnswers({});
     setSubmitted(false);
     setTimeTaken(null);
+    setLatestAttemptId(null);
+    recordedRef.current = false;
     fetch(`/content/${subjectId}/practice.json`)
       .then((res) => {
         if (!res.ok) throw new Error("not found");
@@ -171,9 +195,10 @@ export default function MockExam({ subjectId }) {
               })}
             </div>
           </div>
-          <button className="ep-btn ep-btn-secondary" onClick={() => { setStarted(false); setSubmitted(false); setCurrent(0); setAnswers({}); setTimeTaken(null); }}>
+          <button className="ep-btn ep-btn-secondary" onClick={() => { setStarted(false); setSubmitted(false); setCurrent(0); setAnswers({}); setTimeTaken(null); setLatestAttemptId(null); recordedRef.current = false; }}>
             Retake Mock Exam
           </button>
+          <WeakTopicsPanel subjectId={subjectId} latestAttemptId={latestAttemptId} />
         </div>
       </div>
     );

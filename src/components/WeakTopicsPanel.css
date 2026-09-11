@@ -1,0 +1,129 @@
+.wtp {
+  margin-top: 1.25rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+.wtp-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.wtp-icon { font-size: 1.15rem; }
+.wtp-head h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #1e293b;
+}
+.wtp-sub {
+  width: 100%;
+  font-size: 0.78rem;
+  color: #64748b;
+}
+.wtp-empty, .wtp-allgood {
+  background: #ffffff;
+  border: 1px dashed #cbd5e1;
+  border-radius: 10px;
+  padding: 0.9rem;
+  font-size: 0.85rem;
+  color: #475569;
+  margin: 0.75rem 0 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.wtp-list {
+  margin: 0.75rem 0 0.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.wtp-row {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 0.65rem 0.8rem;
+}
+.wtp-row-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.wtp-topic {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #1e293b;
+  text-transform: capitalize;
+}
+.wtp-stat {
+  font-size: 0.75rem;
+  color: #64748b;
+  white-space: nowrap;
+}
+.wtp-bar {
+  margin: 0.4rem 0 0.35rem;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 99px;
+  overflow: hidden;
+}
+.wtp-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ef4444, #f59e0b);
+  border-radius: 99px;
+}
+.wtp-revise {
+  display: inline-block;
+  font-size: 0.78rem;
+  color: #2563eb;
+  text-decoration: none;
+  margin-top: 0.15rem;
+}
+.wtp-revise:hover { text-decoration: underline; }
+.wtp-revision-path {
+  margin-top: 0.9rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed #cbd5e1;
+}
+.wtp-revision-path h5 {
+  margin: 0 0 0.5rem;
+  font-size: 0.88rem;
+  color: #1e293b;
+}
+.wtp-revision-path ol {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.wtp-revision-path li {
+  font-size: 0.85rem;
+  color: #334155;
+}
+.wtp-revision-path a { color: #2563eb; text-decoration: none; }
+.wtp-revision-path a:hover { text-decoration: underline; }
+.wtp-li-sub {
+  display: block;
+  font-size: 0.72rem;
+  color: #94a3b8;
+}
+.wtp-note {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin: 0.6rem 0 0;
+}
+.wtp-mastered {
+  margin-top: 0.75rem;
+  font-size: 0.78rem;
+  color: #475569;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  padding: 0.5rem 0.7rem;
+}
+.wtp-mastered-label { font-weight: 600; color: #15803d; }

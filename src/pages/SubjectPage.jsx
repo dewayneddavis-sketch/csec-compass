@@ -9,6 +9,7 @@ import ExperimentSandbox from "../components/ExperimentSandbox";
 import ExtraPractice from "../components/ExtraPractice";
 import MockExam from "../components/MockExam";
 import SBASection from "../components/SBASection";
+import ProgressTab from "../components/ProgressTab";
 import "./SubjectPage.css";
 
 export default function SubjectPage() {
@@ -106,7 +107,7 @@ export default function SubjectPage() {
       )}
 
       <div className="s-tabs">
-        {[{ id: "lessons", label: "Lessons" }, { id: "experiment", label: "Interactive Lab" }, { id: "quiz", label: "Knowledge Check" }, { id: "practice", label: "Extra Practice" }, { id: "mock", label: "Mock Exam" }, { id: "sba", label: "CSEC SBA" }].map((tab) => (
+        {[{ id: "lessons", label: "Lessons" }, { id: "experiment", label: "Interactive Lab" }, { id: "quiz", label: "Knowledge Check" }, { id: "practice", label: "Extra Practice" }, { id: "mock", label: "Mock Exam" }, { id: "progress", label: "Progress" }, { id: "sba", label: "CSEC SBA" }].map((tab) => (
           <button key={tab.id} className={"s-tab " + (activeTab === tab.id ? "active" : "")} onClick={() => setActiveTab(tab.id)}>
             {tab.label}{tab.id === "quiz" && quizCompleted && <span className="s-tab-done">&check;</span>}
           </button>
@@ -160,7 +161,7 @@ export default function SubjectPage() {
           </div>
         )}
         {activeTab === "experiment" && <ExperimentSandbox subjectId={subjectId} />}
-        {activeTab === "quiz" && (paid ? <Quiz questions={quizQuestions} subjectTitle={subject.name} onComplete={() => setQuizCompleted(true)} /> : (
+        {activeTab === "quiz" && (paid ? <Quiz questions={quizQuestions} subjectTitle={subject.name} subjectId={subjectId} onComplete={() => setQuizCompleted(true)} /> : (
           <div className="s-upgrade-banner"><p><strong>🔒 Knowledge Check is locked.</strong> <Link to={"/pricing?subject=" + subjectId}>Unlock full access</Link> to test yourself on all lessons.</p></div>
         ))}
         {activeTab === "practice" && (paid ? <ExtraPractice subjectId={subjectId} /> : (
@@ -168,6 +169,9 @@ export default function SubjectPage() {
         ))}
         {activeTab === "mock" && (paid ? <MockExam subjectId={subjectId} /> : (
           <div className="s-upgrade-banner"><p><strong>🔒 Mock Exam is locked.</strong> <Link to={"/pricing?subject=" + subjectId}>Unlock full access</Link> to sit the timed mock.</p></div>
+        ))}
+        {activeTab === "progress" && (paid ? <ProgressTab subjectId={subjectId} /> : (
+          <div className="s-upgrade-banner"><p><strong>🔒 Progress tracking is locked.</strong> <Link to={"/pricing?subject=" + subjectId}>Unlock full access</Link> to see your weak topics and pass-rate trend.</p></div>
         ))}
         {activeTab === "sba" && (paid ? <SBASection subjectId={subjectId} /> : (
           <div className="s-upgrade-banner"><p><strong>🔒 SBA Guide is locked.</strong> <Link to={"/pricing?subject=" + subjectId}>Unlock full access</Link> to view the SBA tab.</p></div>

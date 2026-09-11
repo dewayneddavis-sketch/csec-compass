@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react";
+import { useAuth } from "../context/AuthContext";
+import { recordQuizResult } from "../data/analytics";
+import WeakTopicsPanel from "./WeakTopicsPanel";
 import "./ExtraPractice.css";
 
 export default function ExtraPractice({ subjectId }) {
@@ -9,6 +12,8 @@ export default function ExtraPractice({ subjectId }) {
   const [answers, setAnswers] = useState({});
   const [started, setStarted] = useState(false);
   const [showResult, setShowResult] = useState(false);
+  const [latestAttemptId, setLatestAttemptId] = useState(null);
+  const { session } = useAuth();
 
   useEffect(() => {
     setLoading(true);
@@ -88,12 +93,29 @@ export default function ExtraPractice({ subjectId }) {
     } else {
       // Last question — auto-submit
       setShowResult(true);
+      recordAttempt(chosen);
     }
+  }
+
+  async function recordAttempt(finalChosen) {
+    const finalAnswers = { ...answers };
+    if (finalChosen !== undefined && finalAnswers[current] === undefined) {
+      finalAnswers[current] = finalChosen;
+    }
+    const attempt = await recordQuizResult({
+      subjectId,
+      quizType: "practice",
+      questions: exercises,
+      answers: finalAnswers,
+      session,
+    });
+    setLatestAttemptId(attempt?.attemptId || null);
   }
 
   function handleShowResult() {
     setAnswers((prev) => ({ ...prev, [current]: chosen }));
     setShowResult(true);
+    recordAttempt(chosen);
   }
 
   function handleRetry() {
@@ -102,6 +124,7 @@ export default function ExtraPractice({ subjectId }) {
     setAnswers({});
     setStarted(false);
     setShowResult(false);
+    setLatestAttemptId(null);
   }
 
   // Start screen
@@ -179,6 +202,7 @@ export default function ExtraPractice({ subjectId }) {
             </div>
           </div>
           <button className="ep-btn ep-btn-secondary" onClick={handleRetry}>Retry Practice</button>
+          <WeakTopicsPanel subjectId={subjectId} latestAttemptId={latestAttemptId} />
         </div>
         <div className="ep-footer-link">
           <a href="https://www.cxc.org/students-and-parents/past-papers/" target="_blank" rel="noopener noreferrer">📄 CXC Official Past Papers</a>
