@@ -14,9 +14,12 @@ function getStripe() {
   return new Stripe(secretKey, { apiVersion: "2025-02-24.acacia" });
 }
 
+// Price IDs are env-driven so the live switchover (owner sets
+// STRIPE_PRICE_SUBJECT / STRIPE_PRICE_BUNDLE in Vercel) needs no code deploy.
+// Fallbacks are the current test-mode IDs.
 const PRICE_IDS = {
-  subject: "price_1Tgqa4BMfL7i0JlrJuGSfD3E",
-  bundle: "price_1TgqfGBMfL7i0JlrqzpZgtJU",
+  subject: process.env.STRIPE_PRICE_SUBJECT || "price_1Tgqa4BMfL7i0JlrJuGSfD3E",
+  bundle: process.env.STRIPE_PRICE_BUNDLE || "price_1TgqfGBMfL7i0JlrqzpZgtJU",
 };
 
 export default async function handler(req, res) {
