@@ -30,3 +30,36 @@ create policy "purchases: no direct client access"
   on public.purchases for all
   using (false)
   with check (false);
+
+-- ===========================================================================
+-- quiz_results — per-user, per-question quiz analytics (weak-topic tracking)
+-- Used by the weak-topic analytics + targeted revision path feature.
+-- Written by api/analytics/record.js (service role), read by
+-- api/analytics/summary.js (service role). One row per question answered.
+--   quiz_type   : 'knowledge-check' | 'practice' | 'mock'
+--   topic       : lesson id from the question's `topic` field
+--   attempt_id  : uuid grouping one quiz sitting, so per-attempt scores and
+--                 pass-rate trends can be reconstructed from individual rows
+-- ===========================================================================
+create table if not exists public.quiz_results (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references auth.users (id) on delete cascade,
+  subject_id text not null,
+  quiz_type text not null,
+  attempt_id uuid not null,
+  question_id text,
+  topic text,
+  correct boolean not null,
+  created_at timestamptz not null default now()
+);
+
+create index if not exists quiz_results_user_subject_idx
+  on public.quiz_results (user_id, subject_id, topic);
+
+alter table public.quiz_results enable row level security;
+
+drop policy if exists "quiz_results: no direct client access" on public.quiz_results;
+create policy "quiz_results: no direct client access"
+  on public.quiz_results for all
+  using (false)
+  with check (false);

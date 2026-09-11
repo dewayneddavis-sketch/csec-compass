@@ -1,11 +1,16 @@
 import { useState, useEffect } from "react";
+import { useAuth } from "../context/AuthContext";
+import { recordQuizResult } from "../data/analytics";
+import WeakTopicsPanel from "./WeakTopicsPanel";
 import "./Quiz.css";
 
-export default function Quiz({ questions, subjectTitle, onComplete }) {
+export default function Quiz({ questions, subjectTitle, subjectId, onComplete }) {
   const [current, setCurrent] = useState(0);
   const [answers, setAnswers] = useState({});
   const [showResult, setShowResult] = useState(false);
   const [started, setStarted] = useState(false);
+  const [latestAttemptId, setLatestAttemptId] = useState(null);
+  const { session } = useAuth();
 
   useEffect(() => {
     setCurrent(0); setAnswers({}); setShowResult(false); setStarted(false);
@@ -34,8 +39,21 @@ export default function Quiz({ questions, subjectTitle, onComplete }) {
   function handleSelect(value) { setAnswers((prev) => ({ ...prev, [current]: value })); }
   function handleNext() { if (current < total - 1) setCurrent((c) => c + 1); }
   function handlePrev() { if (current > 0) setCurrent((c) => c - 1); }
-  function handleSubmit() { setShowResult(true); if (onComplete) onComplete(); }
-  function handleRestart() { setCurrent(0); setAnswers({}); setShowResult(false); setStarted(false); }
+  async function handleSubmit() {
+    setShowResult(true);
+    if (subjectId) {
+      const attempt = await recordQuizResult({
+        subjectId,
+        quizType: "knowledge-check",
+        questions,
+        answers,
+        session,
+      });
+      setLatestAttemptId(attempt?.attemptId || null);
+    }
+    if (onComplete) onComplete();
+  }
+  function handleRestart() { setCurrent(0); setAnswers({}); setShowResult(false); setStarted(false); setLatestAttemptId(null); }
 
   if (!started) {
     return (
@@ -73,6 +91,7 @@ export default function Quiz({ questions, subjectTitle, onComplete }) {
           })}
         </div>
         <button className="quiz-btn quiz-btn-secondary" onClick={handleRestart}>Retake Knowledge Check</button>
+        {subjectId && <WeakTopicsPanel subjectId={subjectId} latestAttemptId={latestAttemptId} />}
       </div>
     );
   }
