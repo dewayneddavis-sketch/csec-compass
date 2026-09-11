@@ -101,7 +101,7 @@
   ],
   "answer": "Principle",
   "explanation": "An error of principle occurs when a transaction is recorded in the wrong class of account (asset vs expense).",
-  "topic": "double-entry-system"
+  "topic": "accounting-errors"
  },
  {
   "id": "p9",
@@ -127,7 +127,7 @@
   ],
   "answer": "$1,800",
   "explanation": "Depreciation = (Cost - Residual Value) / Life = (10,000 - 1,000) / 5 = $1,800.",
-  "topic": "statement-financial-position"
+  "topic": "depreciation-assets"
  },
  {
   "id": "p11",
@@ -543,7 +543,7 @@
   ],
   "answer": "Error of omission",
   "explanation": "Errors that keep debits = credits, like omission, do not affect the TB.",
-  "topic": "preparing-trial-balance"
+  "topic": "accounting-errors"
  },
  {
   "id": "p43",
@@ -556,7 +556,7 @@
   ],
   "answer": "a transaction is posted to the wrong account of the same class",
   "explanation": "Commission errors use the wrong account of the same category.",
-  "topic": "preparing-trial-balance"
+  "topic": "accounting-errors"
  },
  {
   "id": "p44",
@@ -569,7 +569,7 @@
   ],
   "answer": "an item is posted to the wrong class of account",
   "explanation": "Principle errors violate accounting rules (e.g. asset as expense).",
-  "topic": "double-entry-system"
+  "topic": "accounting-errors"
  },
  {
   "id": "p45",
@@ -582,7 +582,7 @@
   ],
   "answer": "temporarily hold a trial balance difference",
   "explanation": "Suspense accounts hold differences pending correction.",
-  "topic": "preparing-trial-balance"
+  "topic": "accounting-errors"
  },
  {
   "id": "p46",
@@ -712,7 +712,7 @@
   ],
   "answer": "the allocation of a fixed asset's cost over its useful life",
   "explanation": "Depreciation spreads asset cost over useful life.",
-  "topic": "statement-financial-position"
+  "topic": "depreciation-assets"
  },
  {
   "id": "p56",
@@ -725,7 +725,7 @@
   ],
   "answer": "charges equal depreciation each year",
   "explanation": "Straight-line: (cost - residual)/useful life each year.",
-  "topic": "statement-financial-position"
+  "topic": "depreciation-assets"
  },
  {
   "id": "p57",
@@ -738,7 +738,7 @@
   ],
   "answer": "$1,800",
   "explanation": "(10,000 - 1,000)/5 = 1,800.",
-  "topic": "statement-financial-position"
+  "topic": "depreciation-assets"
  },
  {
   "id": "p58",
@@ -751,7 +751,7 @@
   ],
   "answer": "charges more depreciation in early years",
   "explanation": "A fixed percentage is charged on the reducing book value.",
-  "topic": "statement-financial-position"
+  "topic": "depreciation-assets"
  },
  {
   "id": "p59",
@@ -764,7 +764,7 @@
   ],
   "answer": "a contra asset account",
   "explanation": "Accumulated depreciation reduces the book value of assets.",
-  "topic": "statement-financial-position"
+  "topic": "depreciation-assets"
  },
  {
   "id": "p60",
@@ -1141,7 +1141,7 @@
   ],
   "answer": "verify the accuracy of the sales ledger",
   "explanation": "The receivables control account checks the sales ledger.",
-  "topic": "double-entry-system"
+  "topic": "balancing-ledger"
  },
  {
   "id": "p89",
@@ -1154,7 +1154,7 @@
   ],
   "answer": "credit customers",
   "explanation": "The sales ledger tracks amounts owed by customers.",
-  "topic": "double-entry-system"
+  "topic": "balancing-ledger"
  },
  {
   "id": "p90",
@@ -1167,7 +1167,7 @@
   ],
   "answer": "suppliers (creditors)",
   "explanation": "The purchases ledger tracks amounts owed to suppliers.",
-  "topic": "double-entry-system"
+  "topic": "balancing-ledger"
  },
  {
   "id": "p91",
@@ -1180,7 +1180,7 @@
   ],
   "answer": "credited",
   "explanation": "Cash received reduces receivables (credit).",
-  "topic": "double-entry-system"
+  "topic": "balancing-ledger"
  },
  {
   "id": "p92",
@@ -1284,7 +1284,7 @@
   ],
   "answer": "Statement of account",
   "explanation": "A supplier's statement lists transactions and the balance due.",
-  "topic": "journals-daybooks"
+  "topic": "balancing-ledger"
  },
  {
   "id": "p100",
