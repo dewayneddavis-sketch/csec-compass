@@ -60,12 +60,29 @@ export default async function handler(req, res) {
     const rows = await dbRes.json();
     const list = Array.isArray(rows) ? rows : [];
 
-    const hasBundle = list.some((p) => p && p.purchase_type === "bundle");
-    const purchasedSubjects = list
-      .filter((p) => p && p.purchase_type && p.purchase_type !== "bundle")
+    // 365-DAY ACCESS WINDOW: each purchase grants access for 365 days from
+    // its created_at. Expiry is computed on read (no schema change), so the
+    // rule applies retroactively to existing rows. Only purchases whose
+    // expires_at is still in the future count toward access; expired rows are
+    // still returned (with their expires_at) so the UI can show "valid until".
+    const ACCESS_WINDOW_MS = 365 * 24 * 60 * 60 * 1000; // 365 days
+    const now = Date.now();
+    const withExpiry = list.map((p) => {
+      const created = p && p.created_at ? new Date(p.created_at).getTime() : null;
+      const expiresAt = created ? new Date(created + ACCESS_WINDOW_MS).toISOString() : null;
+      return { ...p, expires_at: expiresAt };
+    });
+    const active = withExpiry.filter((p) => {
+      if (!p || !p.expires_at) return false; // never expose an unexpiring row
+      return new Date(p.expires_at).getTime() > now;
+    });
+
+    const hasBundle = active.some((p) => p.purchase_type === "bundle");
+    const purchasedSubjects = active
+      .filter((p) => p.purchase_type && p.purchase_type !== "bundle")
       .map((p) => p.purchase_type);
 
-    return res.status(200).json({ hasBundle, purchasedSubjects });
+    return res.status(200).json({ hasBundle, purchasedSubjects, purchases: withExpiry });
   } catch (err) {
     console.error("API /api/purchases/list error:", err);
     return res.status(500).json({ error: "Purchase lookup failed — failing closed." });
