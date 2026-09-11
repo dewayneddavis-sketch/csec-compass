@@ -1,7 +1,8 @@
 // Revision Planner data layer.
 // Persistence: localStorage always (works logged-out); when signed in the
-// plan is also synced to Supabase `revision_plans` via /api/planner/sync
-// (fail-closed — localStorage stands if the request fails).
+// plan is also synced to Supabase `revision_plans` via the single
+// /api/planner/sync function (load = GET ?action=load, save/reset = POST;
+// fail-closed — localStorage stands if the request fails).
 //
 // Plan shape:
 // {
@@ -42,7 +43,7 @@ export async function loadPlanner(session) {
   const local = getLocalPlanner();
   if (session?.access_token) {
     try {
-      const res = await fetch("/api/planner/load", {
+      const res = await fetch("/api/planner/sync?action=load", {
         headers: { Authorization: "Bearer " + session.access_token },
       });
       if (res.ok) {
