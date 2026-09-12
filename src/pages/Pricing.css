@@ -17,3 +17,6 @@
 .pricing-btn:hover:not(:disabled){opacity:.9}
 .pricing-message{text-align:center;padding:1rem;color:#dc2626;margin-top:1rem}
 .pricing-note{text-align:center;color:#9ca3af;font-size:.85rem;margin-top:1.5rem}
+.pricing-subject-label{display:block;font-size:.85rem;font-weight:600;color:#6b7280;margin-bottom:.35rem}
+.pricing-select{width:100%;padding:.6rem .75rem;margin-bottom:1rem;border:2px solid #e5e7eb;border-radius:10px;font-size:.95rem;color:#111827;background:#fff;cursor:pointer;transition:border-color .2s}
+.pricing-select:focus{outline:none;border-color:#2563eb}
