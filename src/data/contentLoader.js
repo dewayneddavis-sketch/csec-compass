@@ -140,22 +140,37 @@ const fallbackQuizzes = {
   ],
 };
 
-// Get all subjects
+// Get all subjects.
+// The source of truth is content/subjects.json — the 10 purchasable subjects.
+// Fallback-only entries (history, geography, french, etc.) are NOT appended:
+// the home page and planner must show exactly what can be bought. Each
+// subject's modules come from its real /content/{id}/modules.json when present,
+// falling back to fallbackSubjects modules only for subjects without content.
+const moduleCache = {};
+
+async function loadSubjectModules(id, fallbackModules) {
+  if (moduleCache[id]) return moduleCache[id];
+  const real = await fetchJSON(`/content/${id}/modules.json`);
+  const modules = real && real.length > 0 ? real : (fallbackModules || []);
+  moduleCache[id] = modules;
+  return modules;
+}
+
 export async function getAllSubjects() {
   const subjectList = await fetchJSON("/content/subjects.json");
-  const merged = [];
-  const usedIds = new Set();
-
-  if (subjectList && Array.isArray(subjectList)) {
-    for (const s of subjectList) {
-      usedIds.add(s.id);
-      const fb = fallbackSubjects.find((f) => f.id === s.id);
-      merged.push({ ...s, icon: iconMap[s.icon] || iconMap.default, color: colorMap[s.id] || "#6b7280", modules: fb ? fb.modules : [], experiment: fb ? fb.experiment : null });
-    }
-  }
-  for (const f of fallbackSubjects) {
-    if (!usedIds.has(f.id)) merged.push(f);
-  }
+  const hasRealList = subjectList && Array.isArray(subjectList);
+  const list = hasRealList ? subjectList : fallbackSubjects;
+  const merged = await Promise.all(list.map(async (s) => {
+    const fb = fallbackSubjects.find((f) => f.id === s.id);
+    const modules = await loadSubjectModules(s.id, fb && fb.modules);
+    return {
+      ...s,
+      icon: hasRealList ? (iconMap[s.icon] || iconMap.default) : (s.icon || iconMap.default),
+      color: colorMap[s.id] || "#6b7280",
+      modules,
+      experiment: fb ? fb.experiment : null,
+    };
+  }));
   return merged;
 }
 
@@ -165,8 +180,10 @@ export async function getSubject(id) {
 }
 
 export async function getSubjectModules(id) {
-  const contentModules = await fetchJSON(`/content/${id}/modules.json`);
-  if (contentModules && contentModules.length > 0) return contentModules;
+  const fb = fallbackSubjects.find((f) => f.id === id);
+  const modules = await loadSubjectModules(id, fb && fb.modules);
+  if (modules.length > 0) return modules;
+  // Last resort for a list subject with no real content and no fallback entry.
   const subject = await getSubject(id);
   return subject ? subject.modules : [];
 }

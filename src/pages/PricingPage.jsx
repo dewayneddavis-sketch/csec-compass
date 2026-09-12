@@ -16,7 +16,7 @@ const plans = [
     name: "All Subjects Bundle",
     price: "$49.99",
     description: "Full access to ALL CSEC subjects",
-    features: ["Everything in Per Subject", "All 14+ subjects", "Bundle pricing (save 60%+)", "New subjects added free"],
+    features: ["Everything in Per Subject", "All 10 CSEC subjects", "Bundle pricing (save 50% vs buying subjects separately)"],
     popular: true,
   },
 ];

@@ -2,8 +2,12 @@
 .home-hero{text-align:center;padding:3rem 1rem 2.5rem}
 .home-title{font-size:2.5rem;font-weight:800;color:#111827;margin-bottom:.75rem;line-height:1.2}
 .home-subtitle{font-size:1.1rem;color:#6b7280;max-width:600px;margin:0 auto 1.5rem;line-height:1.6}
-.home-cta{display:inline-block;padding:.75rem 2rem;background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;border-radius:12px;font-weight:600;font-size:1rem;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.home-cta{display:inline-block;box-sizing:border-box;padding:.75rem 2rem;background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;border-radius:12px;font-weight:600;font-size:1rem;text-decoration:none;transition:transform .2s,box-shadow .2s,background .2s}
 .home-cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,99,235,.3)}
+.home-cta-row{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.home-cta-secondary{background:transparent;color:#2563eb;border:2px solid #2563eb}
+.home-cta-secondary:hover{background:rgba(37,99,235,.08);box-shadow:none}
+.home-cta-note{font-size:.85rem;color:#9ca3af;margin-top:.75rem}
 .home-subjects-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem}
 .home-subjects-header h2{font-size:1.3rem;font-weight:700;color:#111827}
 .home-count{font-size:.85rem;color:#6b7280;background:#f3f4f6;padding:.3rem .75rem;border-radius:999px}
