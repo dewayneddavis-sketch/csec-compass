@@ -17,6 +17,14 @@ create table if not exists public.purchases (
   created_at timestamptz not null default now()
 );
 
+-- Defensive: the live DB once carried a stray `purchases_purchase_type_check`
+-- CHECK constraint (created outside this repo) that rejected subject-id
+-- purchase_type rows (e.g. 'english-a') with a 500 "violates check constraint"
+-- on every subject grant, blocking all per-subject purchases. Drop it if
+-- present so a fresh or partially-migrated environment can never block
+-- subject grants again.
+alter table public.purchases drop constraint if exists purchases_purchase_type_check;
+
 create unique index if not exists purchases_user_bundle_uniq
   on public.purchases (user_id, purchase_type)
   where purchase_type = 'bundle';
