@@ -124,7 +124,11 @@ export default async function handler(req, res) {
           return res.status(500).json({ error: "Failed to record purchase: " + error.message });
         }
       } else {
-        console.error("Webhook: unknown price_type/metadata on session", session.id, session.metadata);
+        console.error("Webhook: unknown price_type/metadata on session", {
+          sessionId: session.id,
+          client_reference_id: userId,
+          metadata: session.metadata,
+        });
         return res.status(400).json({ error: "Unknown price_type or missing subject_id" });
       }
 

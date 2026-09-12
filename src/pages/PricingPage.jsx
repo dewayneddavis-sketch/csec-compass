@@ -21,14 +21,34 @@ const plans = [
   },
 ];
 
+// The 10 purchasable subjects (ids must match api/checkout/create-session +
+// api/stripe/webhook.js expectations; names are display labels).
+const SUBJECT_OPTIONS = [
+  { id: "biology", name: "Biology" },
+  { id: "chemistry", name: "Chemistry" },
+  { id: "english-a", name: "English A" },
+  { id: "human-social-biology", name: "Human & Social Biology" },
+  { id: "information-technology", name: "Information Technology" },
+  { id: "mathematics", name: "Mathematics" },
+  { id: "physics", name: "Physics" },
+  { id: "principles-of-accounts", name: "Principles of Accounts" },
+  { id: "social-studies", name: "Social Studies" },
+  { id: "spanish", name: "Spanish" },
+];
+
 export default function PricingPage() {
   const { user } = useAuth();
   const navigate = useNavigate();
   const [busy, setBusy] = useState(null);
   const [message, setMessage] = useState("");
+  const [subjectId, setSubjectId] = useState("");
 
-  async function handleBuy(planId, subjectId) {
+  async function handleBuy(planId, selectedSubjectId) {
     if (!user) { navigate("/login"); return; }
+    if (planId === "subject" && !selectedSubjectId) {
+      setMessage("Please select a subject first.");
+      return;
+    }
     setBusy(planId);
     setMessage("");
     try {
@@ -37,7 +57,7 @@ export default function PricingPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           priceType: planId,
-          subjectId: subjectId || null,
+          subjectId: planId === "subject" ? selectedSubjectId : null,
           userId: user.id,
           successUrl: window.location.origin + "/account",
           cancelUrl: window.location.origin + "/pricing",
@@ -69,7 +89,26 @@ export default function PricingPage() {
             <ul className="pricing-features">
               {plan.features.map((f, i) => <li key={i}>{f}</li>)}
             </ul>
-            <button className="pricing-btn" onClick={() => handleBuy(plan.id)} disabled={busy === plan.id}>
+            {plan.id === "subject" && (
+              <label className="pricing-subject-label">
+                Which subject?
+                <select
+                  className="pricing-select"
+                  value={subjectId || ""}
+                  onChange={(e) => setSubjectId(e.target.value)}
+                >
+                  <option value="" disabled>Select a subject…</option>
+                  {SUBJECT_OPTIONS.map((s) => (
+                    <option key={s.id} value={s.id}>{s.name}</option>
+                  ))}
+                </select>
+              </label>
+            )}
+            <button
+              className="pricing-btn"
+              onClick={() => handleBuy(plan.id, plan.id === "subject" ? subjectId : null)}
+              disabled={busy === plan.id || (plan.id === "subject" && !subjectId)}
+            >
               {busy === plan.id ? "Redirecting..." : "Buy Now"}
             </button>
           </div>
