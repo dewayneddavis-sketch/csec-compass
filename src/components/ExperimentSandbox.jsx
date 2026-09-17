@@ -143,6 +143,12 @@ function resolveInteractive(subjectId, experimentType, lessonId) {
     return <DragDropLabel subjectId="social-studies" experimentType={t} lessonId={lessonId} />;
   }
 
+  // ---- english-b: per-lesson sets (subjectId + lessonId), so every lesson's
+  //      Play tab shows its own topic-matched activity.
+  if (subjectId === "english-b") {
+    return <DragDropLabel subjectId="english-b" experimentType={t} lessonId={lessonId} />;
+  }
+
   // ---- spanish: dialogue-builder → spanish set; else spanish deck
   if (subjectId === "spanish") {
     return <DragDropLabel subjectId="spanish" experimentType={t} lessonId={lessonId} />;

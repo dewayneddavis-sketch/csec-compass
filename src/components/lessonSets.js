@@ -881,5 +881,275 @@ export const lessonSets = {
       ],
     },
   },
+  // ------------------------------------------------------------------ ENGLISH B
+  "english-b": {
+    // The Three Genres — match each kind of writing to its feature.
+    "eb-l1-1": {
+    title: "The Three Genres of Literature",
+    subtitle: "Match each kind of writing to its key feature.",
+    kind: "match",
+    pairs: [
+      { id: "g1", target: "Written in lines and stanzas, using imagery, rhythm and sound", label: "Poetry" },
+      { id: "g2", target: "Written in sentences and paragraphs and told by a narrator", label: "Prose fiction" },
+      { id: "g3", target: "Written to be performed, using dialogue and stage directions", label: "Drama" },
+      { id: "g4", target: "Writing about real people, events and ideas", label: "Non-fiction prose" },
+      { id: "g5", target: "A category of writing such as prose, poetry or drama", label: "Genre" },
+    ],
+    },
+    // Literal or Inferential? — sort each question by the kind of reading it needs.
+    "eb-l1-2": {
+    title: "Literal or Inferential?",
+    subtitle: "Sort each question into Literal (answered directly by the text) or Inferential (you must work it out).",
+    kind: "sort",
+    categories: [
+      { id: "lit", label: "Literal" },
+      { id: "inf", label: "Inferential" },
+    ],
+    items: [
+      { id: "q1", label: "What colour was the gate?", category: "lit" },
+      { id: "q2", label: "Where does the scene take place?", category: "lit" },
+      { id: "q3", label: "How many brothers does the narrator have?", category: "lit" },
+      { id: "q4", label: "How does the speaker feel about leaving?", category: "inf" },
+      { id: "q5", label: "What is the writer's attitude to the crowd?", category: "inf" },
+      { id: "q6", label: "Why does the character fall silent?", category: "inf" },
+    ],
+    },
+    // Subject and Theme — match each subject to the theme it explores.
+    "eb-l1-3": {
+    title: "Subject and Theme",
+    subtitle: "Match each subject to the theme it most naturally explores.",
+    kind: "match",
+    pairs: [
+      { id: "t1", target: "A family rebuilding after a hurricane", label: "Resilience" },
+      { id: "t2", target: "A boy leaving his village for the city", label: "Identity and belonging" },
+      { id: "t3", target: "A community divided over a new road", label: "Conflict and change" },
+      { id: "t4", target: "An old fisherman teaching his grandchild", label: "Tradition and inheritance" },
+      { id: "t5", target: "The idea a text explores through its subject", label: "Theme" },
+    ],
+    },
+    // Poetic Devices — match each quotation to the device it uses.
+    "eb-l2-1": {
+    title: "Poetic Devices",
+    subtitle: "Match each quotation to the device it uses.",
+    kind: "match",
+    pairs: [
+      { id: "d1", target: "Her voice was like gravel on a road", label: "Simile" },
+      { id: "d2", target: "The classroom was a beehive", label: "Metaphor" },
+      { id: "d3", target: "The mango tree stretched its arms across the yard", label: "Personification" },
+      { id: "d4", target: "I have told you a million times", label: "Hyperbole" },
+      { id: "d5", target: "A deafening silence", label: "Oxymoron" },
+      { id: "d6", target: "crash, hiss, clatter", label: "Onomatopoeia" },
+    ],
+    },
+    // Sound and Form — match each term to its definition.
+    "eb-l2-2": {
+    title: "Sound, Rhythm and Form",
+    subtitle: "Match each term to its definition.",
+    kind: "match",
+    pairs: [
+      { id: "s1", target: "A regular pattern of stressed and unstressed syllables", label: "Metre" },
+      { id: "s2", target: "The pattern of end rhymes across a poem", label: "Rhyme scheme" },
+      { id: "s3", target: "A sentence that runs past the end of a line", label: "Enjambment" },
+      { id: "s4", target: "A line repeated at intervals, often at the end of stanzas", label: "Refrain" },
+      { id: "s5", target: "A pause inside a line of poetry", label: "Caesura" },
+      { id: "s6", target: "Poetry with no regular rhyme or metre", label: "Free verse" },
+    ],
+    },
+    // Tone Words — match each tone word to what it describes.
+    "eb-l2-3": {
+    title: "Tone and Mood",
+    subtitle: "Match each tone word or term to what it describes.",
+    kind: "match",
+    pairs: [
+      { id: "tn1", target: "Admiring and deeply respectful", label: "Reverent" },
+      { id: "tn2", target: "Longing for something or somewhere in the past", label: "Nostalgic" },
+      { id: "tn3", target: "Calm and untroubled", label: "Serene" },
+      { id: "tn4", target: "Bitter and resentful about a wrong", label: "Acrimonious" },
+      { id: "tn5", target: "The speaker's attitude towards the subject", label: "Tone" },
+      { id: "tn6", target: "The feeling the poem creates in the reader", label: "Mood" },
+    ],
+    },
+    // Parts of a Play — sort each element into what it controls.
+    "eb-l3-1": {
+    title: "Elements of Drama",
+    subtitle: "Sort each element by what it controls: Plot & Action, Character, or Staging.",
+    kind: "sort",
+    categories: [
+      { id: "act", label: "Plot & Action" },
+      { id: "char", label: "Character" },
+      { id: "stage", label: "Staging" },
+    ],
+    items: [
+      { id: "e1", label: "The exposition that introduces the situation", category: "act" },
+      { id: "e2", label: "The climax, where tension is highest", category: "act" },
+      { id: "e3", label: "A stage direction that the lamp is switched on", category: "stage" },
+      { id: "e4", label: "The yard and verandah the play is set in", category: "stage" },
+      { id: "e5", label: "A soliloquy that reveals the speaker's motive", category: "char" },
+      { id: "e6", label: "Dialogue in which two sisters argue", category: "char" },
+    ],
+    },
+    // Dramatic Techniques — match each technique to its effect.
+    "eb-l3-2": {
+    title: "Dramatic Techniques and Conflict",
+    subtitle: "Match each technique to the effect it creates.",
+    kind: "match",
+    pairs: [
+      { id: "dt1", target: "The audience knows what a character does not", label: "Dramatic irony" },
+      { id: "dt2", target: "A brief remark the other characters cannot hear", label: "Aside" },
+      { id: "dt3", target: "A long speech alone on stage, revealing private thoughts", label: "Soliloquy" },
+      { id: "dt4", target: "Hints planted early about what will happen later", label: "Foreshadowing" },
+      { id: "dt5", target: "Two contrasting scenes placed side by side", label: "Dramatic juxtaposition" },
+      { id: "dt6", target: "A struggle between a character and her own conscience", label: "Internal conflict" },
+    ],
+    },
+    // Character and Motive — match each action to the motive behind it.
+    "eb-l3-3": {
+    title: "Character, Motivation and Theme",
+    subtitle: "Match each action to the motive that best explains it.",
+    kind: "match",
+    pairs: [
+      { id: "m1", target: "She hides the letter from her brother", label: "Fear of the truth coming out" },
+      { id: "m2", target: "He works two jobs and never complains", label: "Duty to family" },
+      { id: "m3", target: "She refuses a scholarship to stay home", label: "Sacrifice for others" },
+      { id: "m4", target: "He takes the blame for his friend's mistake", label: "Loyalty" },
+      { id: "m5", target: "She pretends not to know him in the market", label: "Shame and social ambition" },
+      { id: "m6", target: "He gives away the last of his money", label: "Generosity or guilt" },
+    ],
+    },
+    // Plot Structure — arrange the stages of a story in order.
+    "eb-l4-1": {
+    title: "Plot, Conflict and Structure",
+    subtitle: "Arrange the stages of a plot in the order they occur.",
+    kind: "order",
+    items: [
+      { id: "ps1", label: "Exposition — setting, characters and situation established", order: 1 },
+      { id: "ps2", label: "Complication — the balance is disturbed", order: 2 },
+      { id: "ps3", label: "Rising action — conflict builds through events", order: 3 },
+      { id: "ps4", label: "Climax — the moment of highest tension or decisive choice", order: 4 },
+      { id: "ps5", label: "Falling action — the consequences unfold", order: 5 },
+      { id: "ps6", label: "Resolution — the outcome settles, or is left open", order: 6 },
+    ],
+    },
+    // Narrative Voice — match each narrator or method to its description.
+    "eb-l4-2": {
+    title: "Characterisation and Point of View",
+    subtitle: "Match each narrator or method to its description.",
+    kind: "match",
+    pairs: [
+      { id: "n1", target: "Uses 'I' and may be unreliable", label: "First-person narrator" },
+      { id: "n2", target: "Knows the thoughts of every character", label: "Omniscient narrator" },
+      { id: "n3", target: "Stays close to one character's thoughts", label: "Third-person limited narrator" },
+      { id: "n4", target: "Reports only what can be seen and heard", label: "Objective narrator" },
+      { id: "n5", target: "Shows what a character is like through her actions", label: "Indirect characterisation" },
+      { id: "n6", target: "Tells the reader directly what a character is like", label: "Direct characterisation" },
+    ],
+    },
+    // Setting and Symbol — match each term to its example.
+    "eb-l4-3": {
+    title: "Setting, Atmosphere and Symbolism",
+    subtitle: "Match each term to its example or meaning.",
+    kind: "match",
+    pairs: [
+      { id: "sy1", target: "A storm breaking during a family quarrel", label: "Pathetic fallacy" },
+      { id: "sy2", target: "The feeling a place creates for the reader", label: "Atmosphere" },
+      { id: "sy3", target: "A locked gate that stands for exclusion", label: "Symbol" },
+      { id: "sy4", target: "The time and social world of a story", label: "Setting" },
+      { id: "sy5", target: "Language that appeals to the five senses", label: "Imagery" },
+      { id: "sy6", target: "The object or place a story keeps returning to", label: "Motif" },
+    ],
+    },
+    // Building an Argument — arrange the moves of a non-fiction piece in order.
+    "eb-l5-1": {
+    title: "Purpose, Audience and Form",
+    subtitle: "Arrange the moves of a persuasive article in the order that works best.",
+    kind: "order",
+    items: [
+      { id: "ar1", label: "Open with an anecdote or a striking claim", order: 1 },
+      { id: "ar2", label: "State the claim the writer wants accepted", order: 2 },
+      { id: "ar3", label: "Support the claim with evidence and examples", order: 3 },
+      { id: "ar4", label: "Answer the strongest counter-argument", order: 4 },
+      { id: "ar5", label: "Close with an appeal or a recommendation", order: 5 },
+    ],
+    },
+    // Appeals in Persuasion — sort each extract by the appeal it makes.
+    "eb-l5-2": {
+    title: "Persuasive and Emotive Language",
+    subtitle: "Sort each extract by its main appeal: Reason (logos), Trust (ethos) or Emotion (pathos).",
+    kind: "sort",
+    categories: [
+      { id: "logos", label: "Reason (logos)" },
+      { id: "ethos", label: "Trust (ethos)" },
+      { id: "pathos", label: "Emotion (pathos)" },
+    ],
+    items: [
+      { id: "ap1", label: "A national survey of 2,000 households found a 12% rise in rent", category: "logos" },
+      { id: "ap2", label: "Figures from the Ministry show the road carries 9,000 vehicles a day", category: "logos" },
+      { id: "ap3", label: "As a nurse of twenty years, I have watched children leave in ambulances", category: "ethos" },
+      { id: "ap4", label: "The Consumers' Association supports this proposal", category: "ethos" },
+      { id: "ap5", label: "Picture a child walking four miles with an empty bucket", category: "pathos" },
+      { id: "ap6", label: "Do we really want our children to breathe this air?", category: "pathos" },
+    ],
+    },
+    // Critical Reading — sort each statement as fact, opinion or unverifiable claim.
+    "eb-l5-3": {
+    title: "Reading Non-Fiction Critically",
+    subtitle: "Sort each statement: Fact (can be checked), Opinion (a judgement) or Unverifiable claim (source unnamed).",
+    kind: "sort",
+    categories: [
+      { id: "fact", label: "Fact" },
+      { id: "op", label: "Opinion" },
+      { id: "uv", label: "Unverifiable claim" },
+    ],
+    items: [
+      { id: "cs1", label: "Rainfall in the parish rose by 14% last year", category: "fact" },
+      { id: "cs2", label: "The school has 640 students on roll", category: "fact" },
+      { id: "cs3", label: "The council is the worst in the country", category: "op" },
+      { id: "cs4", label: "The new market is badly designed", category: "op" },
+      { id: "cs5", label: "Experts say the situation is getting worse", category: "uv" },
+      { id: "cs6", label: "It is widely believed that the road will be repaired", category: "uv" },
+    ],
+    },
+    // Planning an Essay — arrange the planning steps in order.
+    "eb-l6-1": {
+    title: "Planning and Structuring a Literature Essay",
+    subtitle: "Arrange the steps of planning a literature essay in the order you should do them.",
+    kind: "order",
+    items: [
+      { id: "pl1", label: "Unpack the question and identify its focus", order: 1 },
+      { id: "pl2", label: "Decide the line of argument you will defend", order: 2 },
+      { id: "pl3", label: "Select three or four moments that support it", order: 3 },
+      { id: "pl4", label: "Write a topic sentence for each body paragraph", order: 4 },
+      { id: "pl5", label: "Plan a conclusion that answers the question asked", order: 5 },
+    ],
+    },
+    // Using Evidence — match each technique to what it means.
+    "eb-l6-2": {
+    title: "Using Quotations and Evidence",
+    subtitle: "Match each technique to what it means in practice.",
+    kind: "match",
+    pairs: [
+      { id: "ev1", target: "A few words of the text inside your own sentence", label: "Short embedded quotation" },
+      { id: "ev2", target: "Restating a moment accurately when you cannot recall the words", label: "Paraphrase" },
+      { id: "ev3", target: "Point, evidence, explanation", label: "PEE structure" },
+      { id: "ev4", target: "Asking why the writer chose 'sea' rather than 'field'", label: "Word-level analysis" },
+      { id: "ev5", target: "Copying out four lines and leaving them unexplained", label: "Block quotation (to avoid)" },
+      { id: "ev6", target: "Using evidence that supports the point you have made", label: "Relevant evidence" },
+    ],
+    },
+    // Command Words — match each command word to what the examiner wants.
+    "eb-l6-3": {
+    title: "Writing Under Examination Conditions",
+    subtitle: "Match each command word to what it asks you to do.",
+    kind: "match",
+    pairs: [
+      { id: "cw1", target: "Give a fact or a single brief point", label: "State" },
+      { id: "cw2", target: "Give details about what something is like", label: "Describe" },
+      { id: "cw3", target: "Give reasons for something", label: "Explain" },
+      { id: "cw4", target: "Present both sides and reach a judgement", label: "Discuss" },
+      { id: "cw5", target: "Show similarities and differences", label: "Compare" },
+      { id: "cw6", target: "Judge against criteria and conclude", label: "Evaluate" },
+    ],
+    },
+  },
 };
 
