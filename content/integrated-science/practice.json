@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "p1",
+    "question": "Which piece of apparatus measures liquid volume most accurately?",
+    "options": [
+      "Beaker",
+      "Measuring cylinder",
+      "Conical flask",
+      "Evaporating dish"
+    ],
+    "answer": "Measuring cylinder",
+    "explanation": "A measuring cylinder is graduated for volume; a beaker only holds liquids approximately.",
+    "topic": "is-l1-1"
+  },
+  {
+    "id": "p2",
+    "question": "Before smelling an unknown chemical in the laboratory you should:",
+    "options": [
+      "Put your nose over the mouth of the container",
+      "Waft the vapour towards you with your hand",
+      "Shake the container",
+      "Heat it gently"
+    ],
+    "answer": "Waft the vapour towards you with your hand",
+    "explanation": "Wafting brings a little vapour to the nose and avoids inhaling concentrated fumes.",
+    "topic": "is-l1-1"
+  },
+  {
+    "id": "p3",
+    "question": "Hot glassware should be handled with:",
+    "options": [
+      "Damp cloth",
+      "Tongs",
+      "Bare hands",
+      "Filter paper"
+    ],
+    "answer": "Tongs",
+    "explanation": "Tongs grip hot glass without burning the hand.",
+    "topic": "is-l1-1"
+  },
+  {
+    "id": "p4",
+    "question": "Which apparatus is best for heating a crucible to a very high temperature?",
+    "options": [
+      "Tripod and gauze",
+      "Evaporating dish",
+      "Bunsen burner flame directly on glass",
+      "Water bath"
+    ],
+    "answer": "Tripod and gauze",
+    "explanation": "A tripod and gauze support a vessel safely over the flame.",
+    "topic": "is-l1-1"
+  },
+  {
+    "id": "p5",
+    "question": "A spatula is used to:",
+    "options": [
+      "Measure liquids",
+      "Transfer small amounts of solid",
+      "Hold a test tube",
+      "Filter a mixture"
+    ],
+    "answer": "Transfer small amounts of solid",
+    "explanation": "A spatula transfers small quantities of solid chemicals.",
+    "topic": "is-l1-1"
+  },
+  {
+    "id": "p7",
+    "question": "The SI unit of mass is the:",
+    "options": [
+      "Newton",
+      "Kilogram",
+      "Joule",
+      "Litre"
+    ],
+    "answer": "Kilogram",
+    "explanation": "Mass is measured in kilograms; the newton is a unit of force.",
+    "topic": "is-l1-2"
+  },
+  {
+    "id": "p8",
+    "question": "Volume of an irregular solid is found by:",
+    "options": [
+      "Multiplying length x width x height",
+      "Displacement of water in a measuring cylinder",
+      "Weighing it on a balance",
+      "Using a thermometer"
+    ],
+    "answer": "Displacement of water in a measuring cylinder",
+    "explanation": "The rise in water level when the solid is submerged equals its volume.",
+    "topic": "is-l1-2"
+  },
+  {
+    "id": "p9",
+    "question": "A mass of 2.5 kg is equal to:",
+    "options": [
+      "25 g",
+      "250 g",
+      "2500 g",
+      "25000 g"
+    ],
+    "answer": "2500 g",
+    "explanation": "Kilo means 1000, so 2.5 kg = 2500 g.",
+    "topic": "is-l1-2"
+  },
+  {
+    "id": "p10",
+    "question": "Repeated readings that are close to each other but far from the true value show:",
+    "options": [
+      "Good accuracy, poor precision",
+      "Good precision, poor accuracy",
+      "Both good",
+      "Both poor"
+    ],
+    "answer": "Good precision, poor accuracy",
+    "explanation": "Clustering shows precision; a shift from the true value indicates systematic error.",
+    "topic": "is-l1-2"
+  },
+  {
+    "id": "p11",
+    "question": "Which is a systematic error?",
+    "options": [
+      "An electronic balance that reads 0.5 g high",
+      "A reading misrecorded once",
+      "Wind shaking a balance",
+      "A dropped thermometer"
+    ],
+    "answer": "An electronic balance that reads 0.5 g high",
+    "explanation": "A zero error shifts every reading in the same direction.",
+    "topic": "is-l1-2"
+  },
+  {
+    "id": "p13",
+    "question": "The variable the experimenter deliberately changes is the:",
+    "options": [
+      "Dependent variable",
+      "Independent variable",
+      "Controlled variable",
+      "Anomalous variable"
+    ],
+    "answer": "Independent variable",
+    "explanation": "The independent variable is chosen and changed by the experimenter.",
+    "topic": "is-l1-3"
+  },
+  {
+    "id": "p14",
+    "question": "A line graph is most suitable for data where:",
+    "options": [
+      "Categories are compared",
+      "A quantity changes continuously",
+      "Proportions are shown",
+      "Nothing changes"
+    ],
+    "answer": "A quantity changes continuously",
+    "explanation": "Line graphs show continuous change, such as temperature over time.",
+    "topic": "is-l1-3"
+  },
+  {
+    "id": "p15",
+    "question": "A hypothesis is:",
+    "options": [
+      "A proven fact",
+      "A testable explanation that can be investigated",
+      "A random guess",
+      "A conclusion"
+    ],
+    "answer": "A testable explanation that can be investigated",
+    "explanation": "A hypothesis is a proposed explanation that evidence can support or contradict.",
+    "topic": "is-l1-3"
+  },
+  {
+    "id": "p16",
+    "question": "Keeping the same volume of water in every trial is an example of:",
+    "options": [
+      "Varying the independent variable",
+      "Controlling a variable",
+      "Measuring the dependent variable",
+      "Recording an anomaly"
+    ],
+    "answer": "Controlling a variable",
+    "explanation": "Controlled variables must be kept constant for a fair test.",
+    "topic": "is-l1-3"
+  },
+  {
+    "id": "p17",
+    "question": "An anomalous result should be:",
+    "options": [
+      "Ignored silently",
+      "Checked and repeated, then reported if genuine",
+      "Always included in the average",
+      "Changed to fit the pattern"
+    ],
+    "answer": "Checked and repeated, then reported if genuine",
+    "explanation": "Anomalies are investigated rather than hidden or forced to fit.",
+    "topic": "is-l1-3"
+  },
+  {
+    "id": "p19",
+    "question": "Which structure is found in plant cells but not animal cells?",
+    "options": [
+      "Cell membrane",
+      "Chloroplast",
+      "Nucleus",
+      "Cytoplasm"
+    ],
+    "answer": "Chloroplast",
+    "explanation": "Chloroplasts carry out photosynthesis and occur in green plant cells.",
+    "topic": "is-l2-1"
+  },
+  {
+    "id": "p20",
+    "question": "The movement of water across a partially permeable membrane is:",
+    "options": [
+      "Diffusion",
+      "Osmosis",
+      "Active transport",
+      "Transpiration"
+    ],
+    "answer": "Osmosis",
+    "explanation": "Osmosis is the diffusion of water through a partially permeable membrane.",
+    "topic": "is-l2-1"
+  },
+  {
+    "id": "p21",
+    "question": "Active transport differs from diffusion because it:",
+    "options": [
+      "Needs no energy",
+      "Moves substances against the concentration gradient using energy",
+      "Only happens in gases",
+      "Requires no membrane"
+    ],
+    "answer": "Moves substances against the concentration gradient using energy",
+    "explanation": "Active transport uses energy from respiration to move substances against the gradient.",
+    "topic": "is-l2-1"
+  },
+  {
+    "id": "p22",
+    "question": "A plant cell placed in concentrated salt solution becomes:",
+    "options": [
+      "Turgid",
+      "Flaccid or plasmolysed",
+      "Larger",
+      "Unchanged"
+    ],
+    "answer": "Flaccid or plasmolysed",
+    "explanation": "Water leaves the cell by osmosis, so the cell loses its firmness.",
+    "topic": "is-l2-1"
+  },
+  {
+    "id": "p23",
+    "question": "Which list gives life processes common to all organisms?",
+    "options": [
+      "Nutrition, respiration, growth, excretion, reproduction",
+      "Photosynthesis, digestion, flight",
+      "Locomotion, hibernation, migration",
+      "Cell division only"
+    ],
+    "answer": "Nutrition, respiration, growth, excretion, reproduction",
+    "explanation": "All living things carry out nutrition, respiration, movement, growth, excretion, reproduction and irritability.",
+    "topic": "is-l2-1"
+  },
+  {
+    "id": "p25",
+    "question": "Photosynthesis uses carbon dioxide and water to make:",
+    "options": [
+      "Starch and nitrogen",
+      "Glucose and oxygen",
+      "Protein and carbon dioxide",
+      "Fat and water"
+    ],
+    "answer": "Glucose and oxygen",
+    "explanation": "Light energy drives the conversion of carbon dioxide and water into glucose, releasing oxygen.",
+    "topic": "is-l2-2"
+  },
+  {
+    "id": "p26",
+    "question": "Which nutrient is mainly needed for growth and repair?",
+    "options": [
+      "Carbohydrate",
+      "Protein",
+      "Fat",
+      "Fibre"
+    ],
+    "answer": "Protein",
+    "explanation": "Proteins supply the amino acids used to build and repair tissue.",
+    "topic": "is-l2-2"
+  },
+  {
+    "id": "p27",
+    "question": "Aerobic respiration produces:",
+    "options": [
+      "Lactic acid only",
+      "Carbon dioxide, water and a large amount of energy",
+      "Ethanol and oxygen",
+      "Glucose and oxygen"
+    ],
+    "answer": "Carbon dioxide, water and a large amount of energy",
+    "explanation": "With oxygen, glucose is fully broken down, releasing much more energy than anaerobically.",
+    "topic": "is-l2-2"
+  },
+  {
+    "id": "p28",
+    "question": "Anaerobic respiration in yeast produces:",
+    "options": [
+      "Lactic acid",
+      "Ethanol and carbon dioxide",
+      "Oxygen",
+      "Starch"
+    ],
+    "answer": "Ethanol and carbon dioxide",
+    "explanation": "Yeast ferments sugar to ethanol and carbon dioxide.",
+    "topic": "is-l2-2"
+  },
+  {
+    "id": "p29",
+    "question": "Water and dissolved minerals move up a plant in the:",
+    "options": [
+      "Phloem",
+      "Xylem",
+      "Stomata",
+      "Cambium"
+    ],
+    "answer": "Xylem",
+    "explanation": "Xylem vessels carry water and minerals from the roots.",
+    "topic": "is-l2-2"
+  },
+  {
+    "id": "p30",
+    "question": "Loss of water vapour from leaves is called:",
+    "options": [
+      "Translocation",
+      "Transpiration",
+      "Respiration",
+      "Photosynthesis"
+    ],
+    "answer": "Transpiration",
+    "explanation": "Transpiration occurs mainly through stomata.",
+    "topic": "is-l2-2"
+  },
+  {
+    "id": "p33",
+    "question": "Organisms that make their own food in a food chain are:",
+    "options": [
+      "Consumers",
+      "Producers",
+      "Decomposers",
+      "Predators"
+    ],
+    "answer": "Producers",
+    "explanation": "Green plants are producers: they capture energy from sunlight.",
+    "topic": "is-l2-3"
+  },
+  {
+    "id": "p34",
+    "question": "Energy is lost at each step of a food chain mainly as:",
+    "options": [
+      "Sound",
+      "Heat",
+      "Light",
+      "Matter"
+    ],
+    "answer": "Heat",
+    "explanation": "Most energy is dissipated as heat, which is why food chains are short.",
+    "topic": "is-l2-3"
+  },
+  {
+    "id": "p35",
+    "question": "Decomposers are important because they:",
+    "options": [
+      "Produce oxygen",
+      "Return nutrients to the soil",
+      "Eat producers",
+      "Reduce rainfall"
+    ],
+    "answer": "Return nutrients to the soil",
+    "explanation": "Decomposers break down dead material and release nutrients for reuse.",
+    "topic": "is-l2-3"
+  },
+  {
+    "id": "p36",
+    "question": "The maximum population an area can support is its:",
+    "options": [
+      "Biotic potential",
+      "Carrying capacity",
+      "Population density",
+      "Habitat"
+    ],
+    "answer": "Carrying capacity",
+    "explanation": "Carrying capacity is set by food, space, disease and competition.",
+    "topic": "is-l2-3"
+  },
+  {
+    "id": "p37",
+    "question": "Which human activity most directly destroys coastal nursery habitats?",
+    "options": [
+      "Planting mangroves",
+      "Removing mangroves for development",
+      "Recycling glass",
+      "Terracing hillsides"
+    ],
+    "answer": "Removing mangroves for development",
+    "explanation": "Mangroves are nurseries for fish and protect coasts; clearing them removes both services.",
+    "topic": "is-l2-3"
+  },
+  {
+    "id": "p38",
+    "question": "A sustainable fishing rule would be to:",
+    "options": [
+      "Fish during the breeding season",
+      "Set minimum mesh and catch sizes",
+      "Increase the fleet each year",
+      "Target the largest breeders"
+    ],
+    "answer": "Set minimum mesh and catch sizes",
+    "explanation": "Size limits let fish breed at least once before capture.",
+    "topic": "is-l2-3"
+  },
+  {
+    "id": "p39",
+    "question": "In which state are particles furthest apart?",
+    "options": [
+      "Solid",
+      "Liquid",
+      "Gas",
+      "All the same"
+    ],
+    "answer": "Gas",
+    "explanation": "Gas particles are far apart and move rapidly in all directions.",
+    "topic": "is-l3-1"
+  },
+  {
+    "id": "p40",
+    "question": "During melting the temperature stays constant because the energy supplied:",
+    "options": [
+      "Raises the temperature",
+      "Breaks the forces between particles",
+      "Increases the mass",
+      "Is lost as sound"
+    ],
+    "answer": "Breaks the forces between particles",
+    "explanation": "Latent heat changes the state rather than the temperature.",
+    "topic": "is-l3-1"
+  },
+  {
+    "id": "p41",
+    "question": "A gas can be compressed easily because:",
+    "options": [
+      "Its particles are large",
+      "There is a lot of empty space between its particles",
+      "Its particles are fixed",
+      "It has no mass"
+    ],
+    "answer": "There is a lot of empty space between its particles",
+    "explanation": "Gas particles are widely spaced, so they can be pushed closer together.",
+    "topic": "is-l3-1"
+  },
+  {
+    "id": "p42",
+    "question": "The smell of perfume spreading across a room is an example of:",
+    "options": [
+      "Osmosis",
+      "Diffusion",
+      "Convection",
+      "Filtration"
+    ],
+    "answer": "Diffusion",
+    "explanation": "Particles move randomly from a region of higher concentration to lower.",
+    "topic": "is-l3-1"
+  },
+  {
+    "id": "p43",
+    "question": "Freezing is the change from:",
+    "options": [
+      "Gas to liquid",
+      "Liquid to solid",
+      "Solid to gas",
+      "Liquid to gas"
+    ],
+    "answer": "Liquid to solid",
+    "explanation": "Cooling removes energy and the liquid solidifies.",
+    "topic": "is-l3-1"
+  },
+  {
+    "id": "p44",
+    "question": "Which change of state is condensation?",
+    "options": [
+      "Solid to liquid",
+      "Gas to liquid",
+      "Liquid to solid",
+      "Liquid to gas"
+    ],
+    "answer": "Gas to liquid",
+    "explanation": "Condensation turns vapour into liquid as energy is lost.",
+    "topic": "is-l3-1"
+  },
+  {
+    "id": "p45",
+    "question": "Which is a mixture rather than a compound?",
+    "options": [
+      "Water",
+      "Sea water",
+      "Carbon dioxide",
+      "Sodium chloride"
+    ],
+    "answer": "Sea water",
+    "explanation": "Sea water contains dissolved salts and water that can be separated physically.",
+    "topic": "is-l3-2"
+  },
+  {
+    "id": "p46",
+    "question": "The substance that dissolves is the:",
+    "options": [
+      "Solvent",
+      "Solute",
+      "Solution",
+      "Suspension"
+    ],
+    "answer": "Solute",
+    "explanation": "The solute is dissolved in the solvent to form a solution.",
+    "topic": "is-l3-2"
+  },
+  {
+    "id": "p47",
+    "question": "Which method separates an insoluble solid from a liquid?",
+    "options": [
+      "Distillation",
+      "Filtration",
+      "Chromatography",
+      "Evaporation"
+    ],
+    "answer": "Filtration",
+    "explanation": "Filter paper traps the solid while the liquid passes through.",
+    "topic": "is-l3-2"
+  },
+  {
+    "id": "p48",
+    "question": "To recover dissolved salt from salt solution you would:",
+    "options": [
+      "Filter it",
+      "Evaporate or crystallise it",
+      "Distil the water only",
+      "Use a magnet"
+    ],
+    "answer": "Evaporate or crystallise it",
+    "explanation": "Evaporation leaves the dissolved solid behind as crystals.",
+    "topic": "is-l3-2"
+  },
+  {
+    "id": "p49",
+    "question": "Distillation can produce pure water from sea water because:",
+    "options": [
+      "Salt is filtered out",
+      "Water boils first and its vapour is condensed separately",
+      "Salt evaporates first",
+      "Salt sinks"
+    ],
+    "answer": "Water boils first and its vapour is condensed separately",
+    "explanation": "The liquids have different boiling points, so separation is possible.",
+    "topic": "is-l3-2"
+  },
+  {
+    "id": "p50",
+    "question": "Chromatography separates substances by:",
+    "options": [
+      "Boiling point",
+      "How far they travel in a solvent",
+      "Density alone",
+      "Magnetism"
+    ],
+    "answer": "How far they travel in a solvent",
+    "explanation": "Different substances travel different distances up the medium.",
+    "topic": "is-l3-2"
+  },
+  {
+    "id": "p51",
+    "question": "A substance with a pH of 3 is:",
+    "options": [
+      "Strongly alkaline",
+      "Weakly alkaline",
+      "Acidic",
+      "Neutral"
+    ],
+    "answer": "Acidic",
+    "explanation": "Below pH 7 is acidic.",
+    "topic": "is-l3-3"
+  },
+  {
+    "id": "p52",
+    "question": "Acid plus base gives:",
+    "options": [
+      "Salt and water",
+      "Salt and hydrogen",
+      "Acid and water",
+      "Only carbon dioxide"
+    ],
+    "answer": "Salt and water",
+    "explanation": "Neutralisation produces a salt and water.",
+    "topic": "is-l3-3"
+  },
+  {
+    "id": "p53",
+    "question": "Acid plus carbonate gives:",
+    "options": [
+      "Hydrogen",
+      "Carbon dioxide",
+      "Oxygen",
+      "Nitrogen"
+    ],
+    "answer": "Carbon dioxide",
+    "explanation": "Carbonates fizz with acid, releasing carbon dioxide.",
+    "topic": "is-l3-3"
+  },
+  {
+    "id": "p54",
+    "question": "The gas from acid plus metal is tested by:",
+    "options": [
+      "Limewater turning milky",
+      "A lit splint giving a squeaky pop",
+      "A glowing splint relighting",
+      "Smell alone"
+    ],
+    "answer": "A lit splint giving a squeaky pop",
+    "explanation": "Hydrogen burns with a squeaky pop.",
+    "topic": "is-l3-3"
+  },
+  {
+    "id": "p55",
+    "question": "Toothpaste is mildly alkaline because it:",
+    "options": [
+      "Dissolves enamel",
+      "Neutralises acid made by bacteria",
+      "Adds sugar",
+      "Removes calcium"
+    ],
+    "answer": "Neutralises acid made by bacteria",
+    "explanation": "Bacteria produce acid that attacks enamel; mild alkali reduces it.",
+    "topic": "is-l3-3"
+  },
+  {
+    "id": "p56",
+    "question": "When diluting concentrated acid you should:",
+    "options": [
+      "Add water to the acid",
+      "Add the acid slowly to the water",
+      "Heat the mixture first",
+      "Use bare hands"
+    ],
+    "answer": "Add the acid slowly to the water",
+    "explanation": "Adding water to strong acid can cause violent boiling and splashing.",
+    "topic": "is-l3-3"
+  },
+  {
+    "id": "p57",
+    "question": "The SI unit of energy is the:",
+    "options": [
+      "Newton",
+      "Joule",
+      "Watt",
+      "Pascal"
+    ],
+    "answer": "Joule",
+    "explanation": "Work and energy are measured in joules.",
+    "topic": "is-l4-1"
+  },
+  {
+    "id": "p58",
+    "question": "A stretched rubber band stores:",
+    "options": [
+      "Kinetic energy",
+      "Elastic potential energy",
+      "Thermal energy",
+      "Chemical energy"
+    ],
+    "answer": "Elastic potential energy",
+    "explanation": "Strain energy is stored when an elastic object is deformed.",
+    "topic": "is-l4-1"
+  },
+  {
+    "id": "p59",
+    "question": "Energy is conserved, which means it:",
+    "options": [
+      "Cannot be created or destroyed, only transferred",
+      "Always becomes kinetic energy",
+      "Disappears as heat",
+      "Increases in every change"
+    ],
+    "answer": "Cannot be created or destroyed, only transferred",
+    "explanation": "The total amount of energy stays the same, though some is dissipated.",
+    "topic": "is-l4-1"
+  },
+  {
+    "id": "p60",
+    "question": "A lamp with 100 J input gives 20 J of useful light. Its efficiency is:",
+    "options": [
+      "20%",
+      "80%",
+      "120%",
+      "5%"
+    ],
+    "answer": "20%",
+    "explanation": "Efficiency = useful output / total input x 100 per cent.",
+    "topic": "is-l4-1"
+  },
+  {
+    "id": "p61",
+    "question": "Which is a renewable energy source?",
+    "options": [
+      "Diesel",
+      "Natural gas",
+      "Wind",
+      "Kerosene"
+    ],
+    "answer": "Wind",
+    "explanation": "Wind is replenished naturally and produces no fuel emissions in use.",
+    "topic": "is-l4-1"
+  },
+  {
+    "id": "p62",
+    "question": "Energy that is dissipated is usually seen as:",
+    "options": [
+      "Light and sound",
+      "Heat and sound",
+      "Chemical energy",
+      "Potential energy"
+    ],
+    "answer": "Heat and sound",
+    "explanation": "Friction and movement usually dissipate energy as heat and sound.",
+    "topic": "is-l4-1"
+  },
+  {
+    "id": "p63",
+    "question": "The unit of force is the:",
+    "options": [
+      "Joule",
+      "Newton",
+      "Watt",
+      "Kilogram"
+    ],
+    "answer": "Newton",
+    "explanation": "Force is measured in newtons.",
+    "topic": "is-l4-2"
+  },
+  {
+    "id": "p64",
+    "question": "A car travelling 100 m in 5 s has an average speed of:",
+    "options": [
+      "5 m/s",
+      "10 m/s",
+      "20 m/s",
+      "500 m/s"
+    ],
+    "answer": "20 m/s",
+    "explanation": "Speed = distance / time = 100 / 5.",
+    "topic": "is-l4-2"
+  },
+  {
+    "id": "p65",
+    "question": "Which best reduces friction between moving machine parts?",
+    "options": [
+      "Roughening the surfaces",
+      "Lubricating the surfaces",
+      "Increasing the load",
+      "Removing bearings"
+    ],
+    "answer": "Lubricating the surfaces",
+    "explanation": "A lubricant separates surfaces and reduces friction, wear and heat.",
+    "topic": "is-l4-2"
+  },
+  {
+    "id": "p66",
+    "question": "Pressure is greatest when:",
+    "options": [
+      "A large force acts on a large area",
+      "A large force acts on a small area",
+      "A small force acts on a large area",
+      "The force is zero"
+    ],
+    "answer": "A large force acts on a small area",
+    "explanation": "Pressure = force / area, so a small area raises the pressure.",
+    "topic": "is-l4-2"
+  },
+  {
+    "id": "p67",
+    "question": "A person's mass remains the same on the Moon but their weight is less because:",
+    "options": [
+      "The Moon has less gravity",
+      "Their mass changes",
+      "Air resistance is lower",
+      "They move faster"
+    ],
+    "answer": "The Moon has less gravity",
+    "explanation": "Weight depends on the gravitational field strength, which is weaker on the Moon.",
+    "topic": "is-l4-2"
+  },
+  {
+    "id": "p68",
+    "question": "Work is done when:",
+    "options": [
+      "A force moves an object over a distance",
+      "An object stays still",
+      "A force is applied to a wall with no movement",
+      "Mass is measured"
+    ],
+    "answer": "A force moves an object over a distance",
+    "explanation": "Work = force x distance moved in the direction of the force.",
+    "topic": "is-l4-3"
+  },
+  {
+    "id": "p69",
+    "question": "Power is measured in:",
+    "options": [
+      "Joules",
+      "Watts",
+      "Newtons",
+      "Metres"
+    ],
+    "answer": "Watts",
+    "explanation": "One watt is one joule per second.",
+    "topic": "is-l4-3"
+  },
+  {
+    "id": "p70",
+    "question": "A lever helps because it:",
+    "options": [
+      "Reduces the total work needed",
+      "Changes the size or direction of the force",
+      "Removes friction",
+      "Increases the load"
+    ],
+    "answer": "Changes the size or direction of the force",
+    "explanation": "Machines trade force for distance; total work is not reduced.",
+    "topic": "is-l4-3"
+  },
+  {
+    "id": "p71",
+    "question": "In a pulley system the effort must move:",
+    "options": [
+      "A shorter distance than the load",
+      "A greater distance than the load",
+      "The same distance as the load",
+      "No distance"
+    ],
+    "answer": "A greater distance than the load",
+    "explanation": "Reducing the effort requires pulling a longer rope.",
+    "topic": "is-l4-3"
+  },
+  {
+    "id": "p72",
+    "question": "The efficiency of a real machine is always less than 100 per cent because of:",
+    "options": [
+      "Gravity",
+      "Friction and energy losses",
+      "Air pressure",
+      "The load"
+    ],
+    "answer": "Friction and energy losses",
+    "explanation": "Friction converts some input energy to heat and sound.",
+    "topic": "is-l4-3"
+  },
+  {
+    "id": "p73",
+    "question": "Current is measured in:",
+    "options": [
+      "Volts",
+      "Amperes",
+      "Ohms",
+      "Watts"
+    ],
+    "answer": "Amperes",
+    "explanation": "Current is the rate of flow of charge and is measured in amperes.",
+    "topic": "is-l5-1"
+  },
+  {
+    "id": "p74",
+    "question": "In a series circuit the current:",
+    "options": [
+      "Splits between components",
+      "Is the same at every point",
+      "Is zero",
+      "Doubles at each component"
+    ],
+    "answer": "Is the same at every point",
+    "explanation": "There is only one path, so the same current flows throughout.",
+    "topic": "is-l5-1"
+  },
+  {
+    "id": "p75",
+    "question": "Household wiring uses parallel circuits because:",
+    "options": [
+      "Components share the voltage equally",
+      "Each appliance receives the full voltage and can be switched separately",
+      "It uses less wire",
+      "Current is the same in every branch"
+    ],
+    "answer": "Each appliance receives the full voltage and can be switched separately",
+    "explanation": "Parallel branches operate independently at full mains voltage.",
+    "topic": "is-l5-1"
+  },
+  {
+    "id": "p76",
+    "question": "A fuse protects a circuit by:",
+    "options": [
+      "Increasing the current",
+      "Melting and breaking the circuit when the current is too high",
+      "Raising the voltage",
+      "Storing charge"
+    ],
+    "answer": "Melting and breaking the circuit when the current is too high",
+    "explanation": "The fuse wire overheats and melts, cutting the supply.",
+    "topic": "is-l5-1"
+  },
+  {
+    "id": "p77",
+    "question": "Electrical energy used in the home is charged in:",
+    "options": [
+      "Newtons",
+      "Kilowatt-hours",
+      "Ohms",
+      "Volts"
+    ],
+    "answer": "Kilowatt-hours",
+    "explanation": "Bills charge for energy: power x time in kW h.",
+    "topic": "is-l5-1"
+  },
+  {
+    "id": "p78",
+    "question": "Which is the safest practice?",
+    "options": [
+      "Touching switches with wet hands",
+      "Overloading one socket with adaptors",
+      "Switching off and unplugging before repairs",
+      "Running cables under water"
+    ],
+    "answer": "Switching off and unplugging before repairs",
+    "explanation": "Isolating an appliance prevents electric shock during work.",
+    "topic": "is-l5-1"
+  },
+  {
+    "id": "p79",
+    "question": "Like magnetic poles:",
+    "options": [
+      "Attract each other",
+      "Repel each other",
+      "Have no effect",
+      "Cancel out"
+    ],
+    "answer": "Repel each other",
+    "explanation": "Like poles repel; unlike poles attract.",
+    "topic": "is-l5-2"
+  },
+  {
+    "id": "p80",
+    "question": "A magnetic field around a magnet can be shown using:",
+    "options": [
+      "Litmus paper",
+      "Iron filings or a plotting compass",
+      "A thermometer",
+      "A measuring cylinder"
+    ],
+    "answer": "Iron filings or a plotting compass",
+    "explanation": "Filings line up along the field lines, and a compass needle points along them.",
+    "topic": "is-l5-2"
+  },
+  {
+    "id": "p81",
+    "question": "An electromagnet is made by:",
+    "options": [
+      "Heating a magnet",
+      "Passing current through a coil around an iron core",
+      "Cooling a magnet",
+      "Hammering a magnet"
+    ],
+    "answer": "Passing current through a coil around an iron core",
+    "explanation": "A current in a coil magnetises the core and can be switched off.",
+    "topic": "is-l5-2"
+  },
+  {
+    "id": "p82",
+    "question": "The motor effect occurs when:",
+    "options": [
+      "A coil carrying current is placed in a magnetic field",
+      "Iron is heated",
+      "A magnet is dropped",
+      "Two magnets are separated"
+    ],
+    "answer": "A coil carrying current is placed in a magnetic field",
+    "explanation": "The force on the coil turns it, which drives motors.",
+    "topic": "is-l5-2"
+  },
+  {
+    "id": "p83",
+    "question": "A generator produces electricity by:",
+    "options": [
+      "Heating a coil",
+      "Moving a magnet near a coil",
+      "Burning fuel directly",
+      "Charging a battery chemically"
+    ],
+    "answer": "Moving a magnet near a coil",
+    "explanation": "Electromagnetic induction generates a current in a coil.",
+    "topic": "is-l5-2"
+  },
+  {
+    "id": "p84",
+    "question": "Heat transfer by convection occurs in:",
+    "options": [
+      "Solids only",
+      "Fluids",
+      "A vacuum",
+      "Metals only"
+    ],
+    "answer": "Fluids",
+    "explanation": "Warm fluid expands, rises and is replaced by cooler fluid, forming a convection current.",
+    "topic": "is-l5-3"
+  },
+  {
+    "id": "p85",
+    "question": "Which method of heat transfer does not need a medium?",
+    "options": [
+      "Conduction",
+      "Convection",
+      "Radiation",
+      "Evaporation"
+    ],
+    "answer": "Radiation",
+    "explanation": "Radiation travels as electromagnetic waves, which is how the Sun's heat reaches us.",
+    "topic": "is-l5-3"
+  },
+  {
+    "id": "p86",
+    "question": "Metals are good conductors because they have:",
+    "options": [
+      "Closely packed particles only",
+      "Free electrons that transfer energy quickly",
+      "No particles",
+      "Low density"
+    ],
+    "answer": "Free electrons that transfer energy quickly",
+    "explanation": "Free electrons carry energy through the metal rapidly.",
+    "topic": "is-l5-3"
+  },
+  {
+    "id": "p87",
+    "question": "A thermos flask reduces heat loss by:",
+    "options": [
+      "Conduction only",
+      "Using a vacuum, silvered surfaces and a stopper",
+      "Adding water",
+      "Increasing pressure"
+    ],
+    "answer": "Using a vacuum, silvered surfaces and a stopper",
+    "explanation": "The vacuum stops conduction and convection, and shiny surfaces reduce radiation.",
+    "topic": "is-l5-3"
+  },
+  {
+    "id": "p88",
+    "question": "Coastal areas have steadier temperatures than inland areas mainly because:",
+    "options": [
+      "Water has a high specific heat capacity",
+      "Seas are colder",
+      "Wind is weaker",
+      "There are more clouds"
+    ],
+    "answer": "Water has a high specific heat capacity",
+    "explanation": "Water takes in and releases large amounts of energy with little temperature change.",
+    "topic": "is-l5-3"
+  },
+  {
+    "id": "p89",
+    "question": "The outermost layer of the Earth is the:",
+    "options": [
+      "Mantle",
+      "Crust",
+      "Outer core",
+      "Inner core"
+    ],
+    "answer": "Crust",
+    "explanation": "The crust is the thin rocky outer layer on which we live.",
+    "topic": "is-l6-1"
+  },
+  {
+    "id": "p90",
+    "question": "Earthquakes and volcanoes are most common:",
+    "options": [
+      "In the middle of plates",
+      "At plate boundaries",
+      "Only on continents",
+      "Only under oceans"
+    ],
+    "answer": "At plate boundaries",
+    "explanation": "Movement and interaction at plate margins cause most earthquakes and volcanic activity.",
+    "topic": "is-l6-1"
+  },
+  {
+    "id": "p91",
+    "question": "Rock formed from cooled magma is:",
+    "options": [
+      "Sedimentary",
+      "Igneous",
+      "Metamorphic",
+      "Fossiliferous"
+    ],
+    "answer": "Igneous",
+    "explanation": "Igneous rocks crystallise from molten material.",
+    "topic": "is-l6-1"
+  },
+  {
+    "id": "p92",
+    "question": "Fossils are most likely to be found in:",
+    "options": [
+      "Igneous rock",
+      "Sedimentary rock",
+      "Metamorphic rock",
+      "Lava"
+    ],
+    "answer": "Sedimentary rock",
+    "explanation": "Layers of sediment can preserve the remains of organisms.",
+    "topic": "is-l6-1"
+  },
+  {
+    "id": "p93",
+    "question": "Soil fertility is increased by:",
+    "options": [
+      "Removing humus",
+      "Adding compost and preventing erosion",
+      "Compacting the soil",
+      "Burning all vegetation"
+    ],
+    "answer": "Adding compost and preventing erosion",
+    "explanation": "Organic matter supplies nutrients and improves soil structure.",
+    "topic": "is-l6-1"
+  },
+  {
+    "id": "p94",
+    "question": "Contour ploughing on a hillside reduces:",
+    "options": [
+      "Soil erosion",
+      "Rainfall",
+      "Sunlight",
+      "Soil fertility"
+    ],
+    "answer": "Soil erosion",
+    "explanation": "Ploughing across the slope slows run-off and holds soil in place.",
+    "topic": "is-l6-1"
+  },
+  {
+    "id": "p95",
+    "question": "Weather differs from climate because weather:",
+    "options": [
+      "Is the long-term average",
+      "Describes conditions at a particular time",
+      "Never changes",
+      "Applies only to the tropics"
+    ],
+    "answer": "Describes conditions at a particular time",
+    "explanation": "Climate is the pattern of weather averaged over many years.",
+    "topic": "is-l6-2"
+  },
+  {
+    "id": "p96",
+    "question": "Humidity is measured with a:",
+    "options": [
+      "Barometer",
+      "Hygrometer",
+      "Anemometer",
+      "Thermometer"
+    ],
+    "answer": "Hygrometer",
+    "explanation": "A hygrometer measures the water vapour in the air.",
+    "topic": "is-l6-2"
+  },
+  {
+    "id": "p97",
+    "question": "Air pressure is measured with a:",
+    "options": [
+      "Barometer",
+      "Rain gauge",
+      "Wind vane",
+      "Hygrometer"
+    ],
+    "answer": "Barometer",
+    "explanation": "A barometer measures atmospheric pressure.",
+    "topic": "is-l6-2"
+  },
+  {
+    "id": "p98",
+    "question": "Water vapour becomes liquid water in the water cycle by:",
+    "options": [
+      "Evaporation",
+      "Condensation",
+      "Precipitation",
+      "Infiltration"
+    ],
+    "answer": "Condensation",
+    "explanation": "Cooling vapour condenses into droplets, forming clouds.",
+    "topic": "is-l6-2"
+  },
+  {
+    "id": "p99",
+    "question": "Sea-level rise threatens Caribbean islands mainly by:",
+    "options": [
+      "Increasing rainfall",
+      "Flooding coasts, eroding beaches and contaminating wells",
+      "Cooling the sea",
+      "Reducing hurricanes"
+    ],
+    "answer": "Flooding coasts, eroding beaches and contaminating wells",
+    "explanation": "Rising seas erode coasts and allow salt water into freshwater supplies.",
+    "topic": "is-l6-2"
+  },
+  {
+    "id": "p100",
+    "question": "Which is an adaptation to climate change?",
+    "options": [
+      "Increasing emissions",
+      "Building sea walls and restoring mangroves",
+      "Ignoring weather warnings",
+      "Clearing watersheds"
+    ],
+    "answer": "Building sea walls and restoring mangroves",
+    "explanation": "Adaptation reduces vulnerability to impacts; mitigation reduces emissions.",
+    "topic": "is-l6-2"
+  },
+  {
+    "id": "p101",
+    "question": "Which is the first step of the waste hierarchy?",
+    "options": [
+      "Recycle",
+      "Avoid or reduce",
+      "Dispose in landfill",
+      "Burn"
+    ],
+    "answer": "Avoid or reduce",
+    "explanation": "Preventing waste avoids all the costs of handling it.",
+    "topic": "is-l6-3"
+  },
+  {
+    "id": "p102",
+    "question": "Composting is suitable for:",
+    "options": [
+      "Batteries",
+      "Vegetable peelings and garden waste",
+      "Used engine oil",
+      "Medical waste"
+    ],
+    "answer": "Vegetable peelings and garden waste",
+    "explanation": "Organic waste decomposes into useful compost; other items are hazardous or non-compostable.",
+    "topic": "is-l6-3"
+  },
+  {
+    "id": "p103",
+    "question": "Which item must never be placed in general household refuse?",
+    "options": [
+      "Newspaper",
+      "Used battery",
+      "Plastic bottle",
+      "Cardboard box"
+    ],
+    "answer": "Used battery",
+    "explanation": "Batteries contain heavy metals and must be collected separately.",
+    "topic": "is-l6-3"
+  },
+  {
+    "id": "p104",
+    "question": "Illegal dumping of solid waste in drains most directly causes:",
+    "options": [
+      "Cleaner streets",
+      "Blocked drains and flooding",
+      "Lower rainfall",
+      "Better water quality"
+    ],
+    "answer": "Blocked drains and flooding",
+    "explanation": "Blocked watercourses overflow after heavy rain, causing flooding and disease risk.",
+    "topic": "is-l6-3"
+  },
+  {
+    "id": "p105",
+    "question": "A rainwater harvesting system helps a household mainly by:",
+    "options": [
+      "Increasing water bills",
+      "Providing an alternative water supply",
+      "Reducing soil fertility",
+      "Increasing energy use"
+    ],
+    "answer": "Providing an alternative water supply",
+    "explanation": "Stored rainwater reduces demand on mains supply, which matters in the dry season.",
+    "topic": "is-l6-3"
+  },
+  {
+    "id": "p106",
+    "question": "Water is disinfected during treatment in order to:",
+    "options": [
+      "Add minerals",
+      "Kill disease-causing micro-organisms",
+      "Remove colour only",
+      "Increase hardness"
+    ],
+    "answer": "Kill disease-causing micro-organisms",
+    "explanation": "Chlorination or ultraviolet treatment destroys pathogens that cause disease.",
+    "topic": "is-l6-3"
+  }
+]

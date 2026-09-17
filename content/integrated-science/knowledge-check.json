@@ -1,0 +1,327 @@
+[
+  {
+    "id": "kc1",
+    "question": "Which apparatus should be used to hold a test tube being heated?",
+    "options": [
+      "Tongs",
+      "Test tube holder",
+      "Spatula",
+      "Funnel"
+    ],
+    "answer": "Test tube holder",
+    "explanation": "A test tube holder keeps the hand away from the hot glass.",
+    "topic": "is-l1-1"
+  },
+  {
+    "id": "kc3",
+    "question": "The SI unit of force is the:",
+    "options": [
+      "Kilogram",
+      "Newton",
+      "Joule",
+      "Watt"
+    ],
+    "answer": "Newton",
+    "explanation": "Force is measured in newtons.",
+    "topic": "is-l1-2"
+  },
+  {
+    "id": "kc5",
+    "question": "In an investigation into how light affects plant growth, the dependent variable is:",
+    "options": [
+      "Amount of light",
+      "Height of the plant",
+      "Type of soil",
+      "Size of pot"
+    ],
+    "answer": "Height of the plant",
+    "explanation": "The dependent variable is what is measured as a result.",
+    "topic": "is-l1-3"
+  },
+  {
+    "id": "kc6",
+    "question": "Which graph is best for comparing the amount of waste produced by five schools?",
+    "options": [
+      "Line graph",
+      "Bar chart",
+      "Pie chart of one school",
+      "Scatter graph"
+    ],
+    "answer": "Bar chart",
+    "explanation": "Bar charts compare values across categories.",
+    "topic": "is-l1-3"
+  },
+  {
+    "id": "kc7",
+    "question": "Which structure controls what enters and leaves a cell?",
+    "options": [
+      "Nucleus",
+      "Cell membrane",
+      "Vacuole",
+      "Cytoplasm"
+    ],
+    "answer": "Cell membrane",
+    "explanation": "The membrane is partially permeable and regulates exchange.",
+    "topic": "is-l2-1"
+  },
+  {
+    "id": "kc8",
+    "question": "A plant wilts in dry soil because:",
+    "options": [
+      "Cells lose water and become flaccid",
+      "Cells gain water and burst",
+      "Chlorophyll is destroyed",
+      "Roots stop respiring"
+    ],
+    "answer": "Cells lose water and become flaccid",
+    "explanation": "Without water uptake, cells lose turgor and the plant droops.",
+    "topic": "is-l2-1"
+  },
+  {
+    "id": "kc9",
+    "question": "The main product of photosynthesis that is used for growth is:",
+    "options": [
+      "Oxygen",
+      "Glucose",
+      "Carbon dioxide",
+      "Water"
+    ],
+    "answer": "Glucose",
+    "explanation": "Glucose is used for respiration, storage or building materials.",
+    "topic": "is-l2-2"
+  },
+  {
+    "id": "kc10",
+    "question": "Which substance is needed for aerobic respiration?",
+    "options": [
+      "Carbon dioxide",
+      "Oxygen",
+      "Ethanol",
+      "Lactic acid"
+    ],
+    "answer": "Oxygen",
+    "explanation": "Aerobic respiration requires oxygen to release energy from glucose.",
+    "topic": "is-l2-2"
+  },
+  {
+    "id": "kc11",
+    "question": "In an ecosystem, energy enters mainly from:",
+    "options": [
+      "The soil",
+      "Sunlight",
+      "Decomposers",
+      "Rainfall"
+    ],
+    "answer": "Sunlight",
+    "explanation": "Producers capture light energy, which then passes along food chains.",
+    "topic": "is-l2-3"
+  },
+  {
+    "id": "kc12",
+    "question": "Which is an example of habitat destruction?",
+    "options": [
+      "Replanting a mangrove swamp",
+      "Clearing forest for a housing scheme",
+      "Building a wildlife reserve",
+      "Composting kitchen waste"
+    ],
+    "answer": "Clearing forest for a housing scheme",
+    "explanation": "Removing vegetation destroys shelter and food for many species.",
+    "topic": "is-l2-3"
+  },
+  {
+    "id": "kc13",
+    "question": "Which statement about gas particles is correct?",
+    "options": [
+      "They are tightly packed and vibrate in place",
+      "They are far apart and move rapidly",
+      "They cannot move",
+      "They are fixed in a regular pattern"
+    ],
+    "answer": "They are far apart and move rapidly",
+    "explanation": "The particle model explains why gases fill containers and compress easily.",
+    "topic": "is-l3-1"
+  },
+  {
+    "id": "kc14",
+    "question": "Which method would separate a mixture of sand and water?",
+    "options": [
+      "Distillation",
+      "Filtration",
+      "Chromatography",
+      "Neutralisation"
+    ],
+    "answer": "Filtration",
+    "explanation": "Sand is insoluble, so filter paper traps it.",
+    "topic": "is-l3-2"
+  },
+  {
+    "id": "kc15",
+    "question": "A solution with pH 12 is:",
+    "options": [
+      "Strongly acidic",
+      "Neutral",
+      "Alkaline",
+      "Weakly acidic"
+    ],
+    "answer": "Alkaline",
+    "explanation": "Values above 7 are alkaline, and 12 is strongly so.",
+    "topic": "is-l3-3"
+  },
+  {
+    "id": "kc16",
+    "question": "Antacid tablets relieve indigestion because they:",
+    "options": [
+      "Add acid",
+      "Neutralise stomach acid",
+      "Increase acidity",
+      "Coat the throat"
+    ],
+    "answer": "Neutralise stomach acid",
+    "explanation": "They are bases that neutralise excess hydrochloric acid.",
+    "topic": "is-l3-3"
+  },
+  {
+    "id": "kc17",
+    "question": "Which transformation happens in a hydroelectric station?",
+    "options": [
+      "Chemical to sound",
+      "Gravitational potential to kinetic to electrical",
+      "Electrical to chemical",
+      "Nuclear to light"
+    ],
+    "answer": "Gravitational potential to kinetic to electrical",
+    "explanation": "Falling water turns turbines connected to generators.",
+    "topic": "is-l4-1"
+  },
+  {
+    "id": "kc18",
+    "question": "A force of 20 N moves a box 3 m. The work done is:",
+    "options": [
+      "6 J",
+      "23 J",
+      "60 J",
+      "0.15 J"
+    ],
+    "answer": "60 J",
+    "explanation": "Work = force x distance = 20 x 3.",
+    "topic": "is-l4-2"
+  },
+  {
+    "id": "kc19",
+    "question": "Wide foundations are used under buildings because they:",
+    "options": [
+      "Increase pressure",
+      "Reduce pressure by spreading the load",
+      "Increase weight",
+      "Reduce friction"
+    ],
+    "answer": "Reduce pressure by spreading the load",
+    "explanation": "A larger area lowers the pressure on the ground.",
+    "topic": "is-l4-2"
+  },
+  {
+    "id": "kc20",
+    "question": "Which simple machine changes the direction of the effort?",
+    "options": [
+      "Fixed pulley",
+      "Inclined plane",
+      "Lever",
+      "Wedge"
+    ],
+    "answer": "Fixed pulley",
+    "explanation": "A fixed pulley changes direction without changing the force much.",
+    "topic": "is-l4-3"
+  },
+  {
+    "id": "kc21",
+    "question": "Which component measures current in a circuit?",
+    "options": [
+      "Voltmeter",
+      "Ammeter",
+      "Fuse",
+      "Resistor"
+    ],
+    "answer": "Ammeter",
+    "explanation": "An ammeter is connected in series to measure current.",
+    "topic": "is-l5-1"
+  },
+  {
+    "id": "kc22",
+    "question": "Which device converts electrical energy into kinetic energy using magnetism?",
+    "options": [
+      "Generator",
+      "Electric motor",
+      "Transformer",
+      "Thermometer"
+    ],
+    "answer": "Electric motor",
+    "explanation": "A current-carrying coil in a magnetic field turns, driving the motor.",
+    "topic": "is-l5-2"
+  },
+  {
+    "id": "kc23",
+    "question": "A wooden spoon is used to stir hot food because wood:",
+    "options": [
+      "Conducts heat well",
+      "Is a poor conductor of heat",
+      "Reflects radiation",
+      "Is a good conductor"
+    ],
+    "answer": "Is a poor conductor of heat",
+    "explanation": "Wood insulates, so the handle stays cool enough to hold.",
+    "topic": "is-l5-3"
+  },
+  {
+    "id": "kc24",
+    "question": "Which rock type forms when heat and pressure change existing rock?",
+    "options": [
+      "Igneous",
+      "Sedimentary",
+      "Metamorphic",
+      "Volcanic"
+    ],
+    "answer": "Metamorphic",
+    "explanation": "Metamorphic rocks are altered by heat and pressure.",
+    "topic": "is-l6-1"
+  },
+  {
+    "id": "kc25",
+    "question": "Which instrument records rainfall?",
+    "options": [
+      "Barometer",
+      "Rain gauge",
+      "Anemometer",
+      "Hygrometer"
+    ],
+    "answer": "Rain gauge",
+    "explanation": "A rain gauge collects and measures precipitation.",
+    "topic": "is-l6-2"
+  },
+  {
+    "id": "kc26",
+    "question": "Which is the correct order of the waste hierarchy?",
+    "options": [
+      "Dispose, recycle, reduce",
+      "Reduce, reuse, recycle",
+      "Recycle, reduce, dispose",
+      "Reuse, dispose, reduce"
+    ],
+    "answer": "Reduce, reuse, recycle",
+    "explanation": "Prevention comes first; disposal is a last resort.",
+    "topic": "is-l6-3"
+  },
+  {
+    "id": "kc27",
+    "question": "Water conservation in the home includes:",
+    "options": [
+      "Leaving taps running",
+      "Fixing leaks and using efficient fittings",
+      "Watering at midday",
+      "Washing cars daily"
+    ],
+    "answer": "Fixing leaks and using efficient fittings",
+    "explanation": "Leaks waste large volumes and efficient fittings cut use per task.",
+    "topic": "is-l6-3"
+  }
+]
