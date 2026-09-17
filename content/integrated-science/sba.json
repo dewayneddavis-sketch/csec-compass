@@ -1,0 +1,66 @@
+{
+  "subjectId": "integrated-science",
+  "introduction": "The Integrated Science School-Based Assessment is a practical investigation in which you plan, carry out and report on an experiment or field study of your own. It rewards a clear question, fair testing, careful measurement, honest analysis and an evaluation of your own method. Check the current CSEC syllabus and your teacher's guidance for the exact requirements for your session.",
+  "tasks": [
+    {
+      "section": "Statement of the Problem",
+      "title": "Research Question",
+      "explanation": "State what you are investigating as a question, and the hypothesis you will test.",
+      "marks": "2"
+    },
+    {
+      "section": "Aims and Objectives",
+      "title": "Aims",
+      "explanation": "List the specific objectives, including the variable you will measure and why it matters.",
+      "marks": "2"
+    },
+    {
+      "section": "Methodology",
+      "title": "Method",
+      "explanation": "List apparatus and materials, describe the steps so another student could repeat them, and identify the variables you will control.",
+      "marks": "5"
+    },
+    {
+      "section": "Data Collection",
+      "title": "Results",
+      "explanation": "Present all readings in a labelled table with units, calculate averages, and draw an appropriate graph.",
+      "marks": "6"
+    },
+    {
+      "section": "Analysis and Interpretation",
+      "title": "Analysis",
+      "explanation": "Describe the trend shown by your data, explain it using scientific ideas, and note any anomalous results.",
+      "marks": "8"
+    },
+    {
+      "section": "Findings, Limitations and Recommendations",
+      "title": "Conclusion",
+      "explanation": "State whether the hypothesis was supported, evaluate sources of error, and suggest improvements or further work.",
+      "marks": "4"
+    }
+  ],
+  "sampleTitle": "How does the temperature of water affect how quickly a crystal of copper sulfate dissolves?",
+  "sample": [
+    {
+      "section": "Statement of the Problem",
+      "body": "Does warming the water make copper sulfate dissolve faster, and how does the rate change as the temperature rises?",
+      "tips": "One clear independent variable and one measurable dependent variable."
+    },
+    {
+      "section": "Analysis and Interpretation",
+      "body": "The time taken fell from 96 s at 20 degrees C to 21 s at 60 degrees C. The graph curves rather than staying straight, which suggests that temperature speeds up the movement of both water and solute particles, so collisions between them are more frequent and more energetic. Doubling the temperature did not simply halve the time, so the relationship is not proportional.",
+      "tips": "Explain the trend with the particle model rather than just describing the numbers."
+    }
+  ],
+  "marking": "Marks reward a focused question, a safe and repeatable method, accurate measurements with units, correct tabulation and graphing, scientific explanation of the trend, and honest evaluation of limitations.",
+  "checklist": [
+    "Research question and hypothesis stated",
+    "Variables identified and controlled",
+    "Apparatus and method described clearly",
+    "All readings tabulated with units",
+    "Graph drawn with labelled axes and title",
+    "Trend explained using scientific ideas",
+    "Limitations and improvements discussed",
+    "Conclusions relate to the hypothesis"
+  ]
+}

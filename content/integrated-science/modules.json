@@ -1,0 +1,462 @@
+[
+  {
+    "id": "is-mod-1",
+    "title": "Science Skills and Measurement",
+    "lessons": [
+      {
+        "id": "is-l1-1",
+        "title": "Laboratory Safety and Apparatus",
+        "content": "Science begins with safety. A laboratory contains hazards - heat, glass, chemicals and electricity - and the rules that control them are not formalities. Before any practical you should know where the fire extinguisher, first-aid kit, eyewash and emergency exits are, keep your work area clear, tie back long hair, and never taste or smell a chemical directly. Handle hot glass with tongs, point test tubes away from people, and report every breakage or spill immediately.\n\nKnowing apparatus by name and use is part of the syllabus. A beaker holds and heats liquids but is not made for accurate measurement; a measuring cylinder, burette or pipette is. A tripod and gauze support a vessel over a Bunsen burner, while a retort stand holds apparatus steady. Crucibles withstand high temperatures, evaporating dishes concentrate solutions, and filter funnels with filter paper separate a solid from a liquid.\n\nGood technique protects both you and the result of the experiment. Read the method before you start, label your work, tidy up as you go, and wash your hands when you finish. A practical done safely and carefully produces readings you can trust; a practical done carelessly produces accidents and unreliable data.",
+        "objectives": [
+          "Identify common laboratory hazards and the rules that control them",
+          "Name common apparatus and select the right one for a task",
+          "Demonstrate safe, careful laboratory technique"
+        ],
+        "concepts": [
+          "Hazard",
+          "Bunsen burner",
+          "Measuring cylinder",
+          "Burette",
+          "Crucible",
+          "Filter funnel",
+          "Safety rule"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Apparatus Match: Match each piece of apparatus to the job it is designed to do."
+        }
+      },
+      {
+        "id": "is-l1-2",
+        "title": "Measurement, Units and Accuracy",
+        "content": "Measurement gives science its numbers. The SI system uses the metre, kilogram, second, ampere, kelvin and mole, with prefixes that scale them: kilo (x1000), centi (1/100) and milli (1/1000). Volume of a regular solid comes from length x width x height; volume of an irregular solid is found by displacement in a measuring cylinder. Mass is measured on a balance and must not be confused with weight, which is a force measured in newtons.\n\nEvery measurement carries uncertainty. Instrument precision sets the smallest division you can read, so a ruler marked in millimetres cannot justify an answer in hundredths. Accuracy is how close a reading is to the true value; precision (or reliability) is how close repeated readings are to each other. Systematic errors - a zero error, or a balance that reads high - shift all readings the same way, while random errors scatter them and can be reduced by averaging repeats.\n\nPresented data should be honest. Record the unit with every reading, use the same number of decimal places, and calculate an average from at least three repeats where possible. When you report a result, state the unit and the uncertainty, for example 24.6 cm +/- 0.1 cm. A figure without units means nothing in science.",
+        "objectives": [
+          "Use SI units and prefixes correctly",
+          "Measure length, volume, mass and temperature accurately",
+          "Distinguish accuracy from precision and describe how to reduce error"
+        ],
+        "concepts": [
+          "SI units",
+          "Prefix",
+          "Displacement",
+          "Mass",
+          "Weight",
+          "Accuracy",
+          "Precision",
+          "Systematic error"
+        ],
+        "experiment": {
+          "type": "balance-scale",
+          "description": "Measurement Lab: Compare mass and volume readings and choose the instrument that gives the most precise result."
+        }
+      },
+      {
+        "id": "is-l1-3",
+        "title": "The Scientific Method and Data",
+        "content": "Scientists answer questions with evidence, and the method that produces evidence follows a recognisable pattern. You start with an observation that raises a question, propose a hypothesis - a testable explanation - and design a fair test. A fair test changes one variable at a time: the independent variable that you choose, the dependent variable that you measure, and the controlled variables you keep the same so that the comparison is meaningful.\n\nResults become data when they are recorded in tables and displayed in the right kind of graph. Bar charts compare categories, line graphs show continuous change (with time usually on the horizontal axis) and pie charts show proportions. Always label both axes with the quantity and its unit, give the graph a title, and plot points carefully. Looking at a graph should let a reader see the relationship without reading the table.\n\nFinally, data must be interpreted. Do the results support the hypothesis, contradict it, or leave the question open? Are there anomalous points that need re-testing? A conclusion states what the evidence shows and how confident you can be; an evaluation identifies weaknesses - too few repeats, uncontrolled variables, imprecise instruments - and suggests improvements. This habit of testing ideas against evidence is the most transferable skill in the subject.",
+        "objectives": [
+          "Apply the steps of the scientific method to a question",
+          "Identify independent, dependent and controlled variables",
+          "Choose and interpret appropriate tables and graphs"
+        ],
+        "concepts": [
+          "Hypothesis",
+          "Independent variable",
+          "Dependent variable",
+          "Control",
+          "Anomaly",
+          "Conclusion",
+          "Evaluation"
+        ],
+        "experiment": {
+          "type": "data-explorer",
+          "description": "Data Investigator: Read the readings and graphs for an experiment, spot the anomalous point and judge whether the hypothesis holds."
+        }
+      }
+    ]
+  },
+  {
+    "id": "is-mod-2",
+    "title": "The Organism and Its Environment",
+    "lessons": [
+      {
+        "id": "is-l2-1",
+        "title": "Cells and Life Processes",
+        "content": "All living things share a set of life processes: nutrition, respiration, movement, growth, excretion, reproduction, irritability (response to stimuli) and a constant internal environment. These processes are carried out by cells, the basic units of life. A typical plant or animal cell has a cell membrane that controls what enters and leaves, cytoplasm where reactions occur, and genetic material that directs the cell's activities. Plant cells also have a cellulose cell wall, a large vacuole for water and sap, and chloroplasts for photosynthesis in green parts.\n\nSubstances move in and out of cells by diffusion, osmosis and active transport. Diffusion is the spreading of particles from a high to a low concentration. Osmosis is the movement of water across a partially permeable membrane from a dilute to a more concentrated solution. Active transport moves substances against the gradient and requires energy from respiration. These processes explain why plant cells become turgid in fresh water and flaccid in salty water, and why animal cells can burst or shrivel.\n\nCells are organised into tissues, organs, systems and whole organisms, and the systems depend on one another. Studying the organism therefore means looking at how its parts work together and how it exchanges materials with its surroundings - the link to the next lesson, ecology.",
+        "objectives": [
+          "State the life processes common to all organisms",
+          "Compare plant and animal cells and explain the function of their parts",
+          "Explain diffusion, osmosis and active transport in terms of concentration"
+        ],
+        "concepts": [
+          "Cell membrane",
+          "Cytoplasm",
+          "Chloroplast",
+          "Diffusion",
+          "Osmosis",
+          "Active transport",
+          "Turgid"
+        ],
+        "experiment": {
+          "type": "drag-drop",
+          "description": "Cell Builder: Drag each structure to the plant or animal cell it belongs to and match it to its function."
+        }
+      },
+      {
+        "id": "is-l2-2",
+        "title": "Nutrition, Respiration and Transport",
+        "content": "Organisms need matter and energy. Green plants make their own food by photosynthesis, using light energy to combine carbon dioxide and water into glucose, releasing oxygen. Glucose is used for respiration, converted to starch for storage, or built into cellulose and other materials. Animals cannot make food, so they eat it, and their diets must supply carbohydrates and fats for energy, proteins for growth and repair, vitamins and minerals for regulation, fibre for digestion and water for everything else.\n\nRespiration releases the energy stored in food. Aerobic respiration uses oxygen and gives carbon dioxide, water and a large amount of energy; anaerobic respiration in muscle produces lactic acid and much less energy, and in yeast produces ethanol and carbon dioxide. In mammals, oxygen and nutrients are carried to cells by blood: the heart pumps, arteries carry blood away and veins return it, and exchange happens in capillaries. In plants, water and minerals move up in xylem while sugars move in phloem, and water is lost through stomata in transpiration.\n\nThese systems link food, energy and health. A diet with too much refined carbohydrate and fat and too little activity leads to obesity and related disease, while a plant without light or minerals cannot photosynthesise well and grows pale and stunted. Both cases show the same principle: nutrition and transport determine what an organism can do.",
+        "objectives": [
+          "Explain photosynthesis and the requirements of a balanced diet",
+          "Compare aerobic and anaerobic respiration",
+          "Describe transport systems in plants and mammals"
+        ],
+        "concepts": [
+          "Photosynthesis",
+          "Glucose",
+          "Balanced diet",
+          "Aerobic respiration",
+          "Anaerobic respiration",
+          "Xylem",
+          "Phloem",
+          "Transpiration"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Energy and Nutrients: Match each nutrient, gas or tissue to the job it does in an organism."
+        }
+      },
+      {
+        "id": "is-l2-3",
+        "title": "Ecology, Populations and Human Impact",
+        "content": "An ecosystem is a community of organisms interacting with each other and with the non-living environment. Energy enters as sunlight, is captured by producers, and passes along food chains to consumers and decomposers; at every step some energy is lost as heat, which is why food chains are short and why top predators are few. Matter, unlike energy, is recycled: decomposers return nutrients to the soil, and carbon, nitrogen and water cycle through living and non-living parts of the system.\n\nPopulations change with births, deaths, immigration and emigration, and they are limited by food, space, predators, disease and competition. A population that grows beyond the carrying capacity of its habitat suffers starvation or disease and falls back. Adaptations - a camel's water storage, a mangrove's salt tolerance - fit organisms to their particular conditions, and competition decides which variants succeed.\n\nHuman activity now shapes most ecosystems. Habitat destruction, pollution, overfishing, invasive species and climate change reduce biodiversity and damage the services ecosystems provide: clean water, fertile soil, pollination and coastal protection. Conservation measures - protected areas, replanting mangroves, waste reduction and recycling, sustainable fishing rules - work when they are enforced and when the people who depend on the resource are involved in managing it.",
+        "objectives": [
+          "Describe energy flow and nutrient cycling in an ecosystem",
+          "Explain the factors that limit population growth",
+          "Evaluate human impacts on ecosystems and conservation measures"
+        ],
+        "concepts": [
+          "Ecosystem",
+          "Producer",
+          "Consumer",
+          "Decomposer",
+          "Food chain",
+          "Carrying capacity",
+          "Biodiversity",
+          "Conservation"
+        ],
+        "experiment": {
+          "type": "waste-sorter",
+          "description": "Ecosystem Sorter: Sort organisms into producers, consumers and decomposers, then sort human activities into harmful and sustainable."
+        }
+      }
+    ]
+  },
+  {
+    "id": "is-mod-3",
+    "title": "Matter, Mixtures and Household Chemistry",
+    "lessons": [
+      {
+        "id": "is-l3-1",
+        "title": "States of Matter and Changes",
+        "content": "Matter exists as solid, liquid or gas depending on how its particles are arranged and how much energy they have. In a solid the particles are packed closely in a fixed pattern and only vibrate; in a liquid they are close but free to slide past one another; in a gas they are far apart and move rapidly in all directions. This model explains the properties we observe: solids keep their shape, liquids take the shape of their container but keep their volume, and gases fill any container and are easily compressed.\n\nHeating transfers energy to the particles. At the melting point a solid becomes a liquid, and at the boiling point a liquid becomes a gas; cooling reverses the changes through condensation and freezing. During a change of state the temperature stays constant because the energy is being used to break the forces between particles rather than to raise the temperature. This is why a boiling pot stays at boiling point while heat continues to be supplied.\n\nThe particle model also explains diffusion: the smell of cooking spreading through a house, or a drop of ink spreading in water, happens because particles move randomly from where they are concentrated. Gases diffuse fastest because their particles move fastest and are furthest apart, and heating increases the rate of diffusion in every state.",
+        "objectives": [
+          "Describe the particle arrangement in solids, liquids and gases",
+          "Explain changes of state in terms of energy and particle behaviour",
+          "Use the particle model to explain diffusion and compression"
+        ],
+        "concepts": [
+          "Particle model",
+          "Melting point",
+          "Boiling point",
+          "Condensation",
+          "Diffusion",
+          "Latent heat"
+        ],
+        "experiment": {
+          "type": "heat-sim",
+          "description": "States Lab: Heat and cool a substance and observe what happens to particle movement, temperature and state."
+        }
+      },
+      {
+        "id": "is-l3-2",
+        "title": "Mixtures, Solutions and Separation",
+        "content": "Most materials we meet are mixtures rather than pure substances. A mixture contains two or more substances that are not chemically joined, so each keeps its own properties and the mixture can usually be separated by physical means. Sea water, air, soil, milk and brass are all mixtures. A solution is a special mixture in which a solute is dissolved in a solvent; water is the most common solvent, and the amount that will dissolve depends on temperature and on the substance.\n\nChoosing a separation method depends on the difference in properties between the parts. Filtration separates an insoluble solid from a liquid. Evaporation or crystallisation recovers a dissolved solid from solution. Distillation separates liquids with different boiling points and can also produce pure water from sea water. Chromatography separates dissolved substances by how far they travel up paper or another medium, which is how inks and dyes are analysed. A separating funnel, a magnet and sieving are used in the same property-driven way.\n\nIn the home and workplace these techniques have direct uses: filtering drinking water, distilling water for a car battery or an iron, decanting oil from water, and testing food colourings. Understanding them also explains environmental problems, since treating sewage and purifying drinking water are industrial-scale separations.",
+        "objectives": [
+          "Distinguish mixtures from pure substances and compounds",
+          "Select a separation method from the properties of the parts",
+          "Describe everyday and industrial uses of separation"
+        ],
+        "concepts": [
+          "Mixture",
+          "Solution",
+          "Solute",
+          "Solvent",
+          "Filtration",
+          "Distillation",
+          "Chromatography",
+          "Crystallisation"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Separation Station: Match each mixture to the method that will separate it, and say why that method works."
+        }
+      },
+      {
+        "id": "is-l3-3",
+        "title": "Acids, Bases and Household Chemicals",
+        "content": "Acids and bases are part of daily life. Acids taste sour - lemon juice, vinegar, car battery acid - and turn blue litmus red; bases feel soapy and turn red litmus blue. The pH scale runs from 0 to 14: below 7 is acidic, 7 is neutral, and above 7 is alkaline. Universal indicator gives a colour that shows the approximate pH, while a pH meter gives a reading. Strong acids and alkalis are corrosive and must be handled with care, using goggles and diluting acid by adding it to water, never the reverse.\n\nWhen an acid reacts with a base the products are a salt and water, in a reaction called neutralisation. This is the chemistry behind treating indigestion with an antacid, adding lime to acidic soil, treating insect stings and cleaning with baking soda. Acids also react with metals to give hydrogen and with carbonates to give carbon dioxide, which is the fizz when acid meets limestone or vinegar meets baking soda - and the test for the gas is that it turns limewater milky.\n\nHousehold products work because of these reactions: bleach and drain cleaners are strongly alkaline, vinegar and lemon juice are acids, soap is made by reacting a fat with an alkali, and toothpaste is mildly alkaline to neutralise the acid produced by bacteria on teeth. Reading labels and understanding the chemistry is a practical safety skill as well as an exam topic.",
+        "objectives": [
+          "Classify substances as acidic, alkaline or neutral using indicators and pH",
+          "Explain neutralisation and give everyday examples",
+          "Handle household chemicals safely and interpret their labels"
+        ],
+        "concepts": [
+          "Acid",
+          "Base",
+          "Alkali",
+          "pH scale",
+          "Indicator",
+          "Neutralisation",
+          "Salt",
+          "Corrosive"
+        ],
+        "experiment": {
+          "type": "interactive-summary",
+          "description": "Acid or Alkali? Sort household substances by their pH and predict the product when each meets an acid or a base."
+        }
+      }
+    ]
+  },
+  {
+    "id": "is-mod-4",
+    "title": "Energy, Forces and Machines",
+    "lessons": [
+      {
+        "id": "is-l4-1",
+        "title": "Energy Forms, Transfer and Conservation",
+        "content": "Energy is the ability to do work, and it exists in several forms: kinetic (movement), gravitational potential (position), elastic potential (stretched or compressed), thermal, chemical, electrical, light, sound and nuclear. Energy is measured in joules. One form can change into another - in a falling object gravitational potential becomes kinetic; in a battery chemical energy becomes electrical energy; in a motor electrical energy becomes kinetic and thermal energy.\n\nThe law of conservation of energy states that energy cannot be created or destroyed, only transferred and transformed. In every real change some energy is dissipated into the surroundings, usually as heat and sound, so the useful energy output is always less than the input. Efficiency compares them: efficiency = (useful energy output / total energy input) x 100 per cent. An incandescent bulb is inefficient because most of its input becomes heat, which is why it has been replaced by LEDs.\n\nEnergy sources are renewable or non-renewable. Fossil fuels are finite and add carbon dioxide to the atmosphere; solar, wind, hydro, geothermal and biomass are replenished but vary in availability and cost. Caribbean countries have strong solar and wind resources, which is why small island states are investing in them to cut fuel imports and emissions. Reducing demand - insulation, efficient appliances, public transport - is the cheapest energy resource of all.",
+        "objectives": [
+          "Identify energy forms and describe transfers and transformations",
+          "Apply conservation of energy and calculate efficiency",
+          "Compare renewable and non-renewable sources and explain conservation"
+        ],
+        "concepts": [
+          "Kinetic energy",
+          "Potential energy",
+          "Joule",
+          "Conservation of energy",
+          "Efficiency",
+          "Renewable",
+          "Dissipation"
+        ],
+        "experiment": {
+          "type": "energy-meter",
+          "description": "Energy Audit: Track a chain of energy transfers in a device and calculate how much of the input is useful output."
+        }
+      },
+      {
+        "id": "is-l4-2",
+        "title": "Forces, Motion and Pressure",
+        "content": "A force is a push or a pull that can change an object's speed, direction or shape; it is measured in newtons. Forces are often in balance, as when a book rests on a table (weight downward balanced by the table's upward force), and motion changes only when the forces are unbalanced. Friction opposes motion between surfaces and produces heat; it is reduced by lubrication, streamlining and bearings, and it is useful when we need grip - walking, braking, tyres on a wet road.\n\nSpeed is distance divided by time, and velocity includes direction; acceleration measures how quickly velocity changes. Objects fall under gravity with an acceleration of about 10 metres per second each second, but air resistance limits the top speed of a falling object. Mass and weight are different: mass is the amount of matter in kilograms and does not change with location, while weight is the force in newtons and depends on gravity. Pressure is force per unit area, which is why a sharp knife cuts more easily than a blunt one and why wide tyres sink less in soft ground.\n\nThese ideas explain equipment around the home and workplace: brakes, seat belts and airbags, pumps, hydraulic jacks, syringes and water tanks. A small force applied over a small area produces a large transmitted pressure in hydraulic systems, which is how a jack lifts a car.",
+        "objectives": [
+          "Describe the effects of balanced and unbalanced forces",
+          "Calculate speed, weight and pressure and distinguish mass from weight",
+          "Explain everyday applications of friction, gravity and pressure"
+        ],
+        "concepts": [
+          "Force",
+          "Newton",
+          "Friction",
+          "Gravity",
+          "Mass",
+          "Weight",
+          "Pressure",
+          "Hydraulics"
+        ],
+        "experiment": {
+          "type": "balance-scale",
+          "description": "Force Balance: Load a beam with masses and find the position where the forces balance."
+        }
+      },
+      {
+        "id": "is-l4-3",
+        "title": "Work, Machines and Efficiency",
+        "content": "Work is done when a force moves an object over a distance: work = force x distance, measured in joules. Lifting a load and pushing a box both involve work, while holding a heavy weight still does no work on it because there is no movement. Power is the rate of doing work, in watts - one joule per second - and it explains why two people lifting the same load take different times to do the same amount of work.\n\nMachines make work easier by changing the size or direction of a force, not by reducing the total work needed. A lever exploits the turning effect of a force about a pivot, so a small effort far from the pivot balances a large load close to it. Pulleys change the direction of an effort and can reduce the force needed, at the cost of pulling a longer rope. Inclined planes, screws, wedges and gears do the same job in other forms. The load-to-effort ratio is the mechanical advantage, and it is always bought by moving the effort a greater distance.\n\nReal machines lose energy to friction and heat, so efficiency is less than 100 per cent; oiling, aligning and replacing worn parts improve it. The same principle applies to the human body: a wheelbarrow, a mop, a screwdriver and the joints of the arm are all lever systems, and learning to use a machine well reduces the force a worker must supply and the risk of injury.",
+        "objectives": [
+          "Calculate work and power and use the correct units",
+          "Explain how levers, pulleys and inclined planes give mechanical advantage",
+          "Assess the efficiency of a machine and how to improve it"
+        ],
+        "concepts": [
+          "Work",
+          "Joule",
+          "Power",
+          "Watt",
+          "Lever",
+          "Pulley",
+          "Mechanical advantage",
+          "Efficiency"
+        ],
+        "experiment": {
+          "type": "simulation",
+          "description": "Simple Machines: Change the pivot or the rope arrangement and see how much effort a load requires."
+        }
+      }
+    ]
+  },
+  {
+    "id": "is-mod-5",
+    "title": "Electricity, Magnetism and Heat in the Home",
+    "lessons": [
+      {
+        "id": "is-l5-1",
+        "title": "Circuits and Household Electricity",
+        "content": "An electric current is a flow of charge, measured in amperes, driven by a potential difference (voltage) measured in volts, through a circuit of conductors. A simple circuit needs a source, connecting wires, a component and a switch. In a series circuit the current is the same at every point, the voltage is shared between components, and one failure breaks the whole circuit. In a parallel circuit components sit on separate branches, each receives the full voltage, the currents add up, and one branch can fail without stopping the others - which is why household wiring is parallel.\n\nResistance opposes current and is measured in ohms. For many conductors the current is proportional to the voltage (Ohm's law), and resistance rises with length and temperature and falls with greater thickness. Electric power is voltage x current, and the energy used in the home is measured in kilowatt-hours; the cost of running an appliance comes from its power rating and the time it is used.\n\nElectricity is dangerous because current through the body causes burns, muscle contraction and heart failure. Safety devices and habits matter: insulation, fuses and circuit breakers, earth wires, correct plugs and sockets, dry hands, no water near sockets, and never overloading an outlet. In the Caribbean, lightning, surges and illegal connections are added risks, and solar panels with batteries are increasingly used to keep supply stable and bills lower.",
+        "objectives": [
+          "Describe series and parallel circuits and why homes use parallel",
+          "Apply the relationships between current, voltage, resistance and power",
+          "Explain electrical safety devices and safe practice"
+        ],
+        "concepts": [
+          "Current",
+          "Voltage",
+          "Resistance",
+          "Series circuit",
+          "Parallel circuit",
+          "Fuse",
+          "Kilowatt-hour",
+          "Earthing"
+        ],
+        "experiment": {
+          "type": "circuit-builder",
+          "description": "Circuit Bench: Build series and parallel circuits, switch components and compare what happens to the brightness and the current."
+        }
+      },
+      {
+        "id": "is-l5-2",
+        "title": "Magnetism and Its Applications",
+        "content": "Magnetism is a force that acts at a distance. Magnets have north and south poles; like poles repel and unlike poles attract, and the field around a magnet can be shown with iron filings or a plotting compass. Some materials - iron, steel, cobalt and nickel - are magnetic and can be magnetised by stroking or by placing them in a coil carrying current; heating or hammering a magnet weakens it. A magnetic material loses its magnetism when the field is removed unless it has been made into a permanent magnet.\n\nThe link between electricity and magnetism is central to technology. A current-carrying wire produces a magnetic field, and a coil in a magnetic field experiences a force; reversing the current reverses the force. This single principle drives electric motors, loudspeakers, relays and doorbells. The reverse effect - moving a magnet near a coil to generate a current - is electromagnetic induction, the basis of generators, transformers and dynamos.\n\nMagnetism is also used in storage and information technology: hard disks, magnetic strip cards, electric bells, magnetic catches and separation of scrap metal. Understanding the field also explains navigation with a compass and the protective effect of the Earth's magnetic field, which deflects charged particles from the solar wind and produces auroras near the poles.",
+        "objectives": [
+          "Describe magnetic poles, fields and induced magnetism",
+          "Explain the motor and generator effects of the electricity-magnetism link",
+          "Give everyday and technological applications of magnetism"
+        ],
+        "concepts": [
+          "Magnetic field",
+          "Pole",
+          "Induction",
+          "Electromagnet",
+          "Motor effect",
+          "Generator",
+          "Compass"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Magnet Links: Match each device to the magnetic effect it uses - motor, generator or electromagnetic switch."
+        }
+      },
+      {
+        "id": "is-l5-3",
+        "title": "Heat Transfer and Temperature Control",
+        "content": "Heat is energy transferred because of a temperature difference, and it always moves from hot to cold until both are at the same temperature. There are three mechanisms. Conduction passes energy through a material by particle vibration and free electrons, which is why metals are good conductors and air, wood and plastic are poor ones. Convection moves energy in fluids as warmed liquid or gas expands, becomes less dense and rises, then cools and sinks. Radiation transfers energy by electromagnetic waves and needs no medium at all, which is why the Sun's heat reaches us through space.\n\nTemperature is measured with a thermometer in degrees Celsius; heat and temperature are not the same thing, since a large body of warm water contains far more energy than a small cup at the same temperature. Materials differ in specific heat capacity - water takes a lot of energy to warm up - which is why coastal areas have steadier temperatures than inland ones and why water is used in car radiators.\n\nControlling heat transfer is a practical problem. Insulation reduces conduction, convection and radiation through materials such as fibreglass, foam and double glazing. Cooking pots have metal bodies to conduct and wooden handles to insulate; a thermos flask combines a vacuum, silvered surfaces and a stopper to block all three mechanisms. In the Caribbean, roof insulation, shading, ventilation and light-coloured surfaces all reduce the heat load and the cost of cooling buildings.",
+        "objectives": [
+          "Explain conduction, convection and radiation with examples",
+          "Distinguish heat from temperature and use specific heat capacity",
+          "Design ways to control heat transfer in the home"
+        ],
+        "concepts": [
+          "Conduction",
+          "Convection",
+          "Radiation",
+          "Insulator",
+          "Specific heat capacity",
+          "Thermometer",
+          "Thermos flask"
+        ],
+        "experiment": {
+          "type": "heat-sim",
+          "description": "Heat Flow: Compare how quickly different materials and colours heat up and cool down, and test an insulator."
+        }
+      }
+    ]
+  },
+  {
+    "id": "is-mod-6",
+    "title": "Earth, Space and Environmental Science",
+    "lessons": [
+      {
+        "id": "is-l6-1",
+        "title": "Earth Structure, Rocks and Soil",
+        "content": "The Earth is layered: a thin rocky crust, a hot mantle that slowly flows, a liquid outer core and a solid inner core. Movement of material in the mantle drives the tectonic plates that make up the crust, and where plates meet we find earthquakes, volcanoes, fold mountains and ocean trenches. The Caribbean sits on a plate boundary, which is why the region experiences earthquakes and volcanic activity - and why hazard preparedness is part of everyday life.\n\nRocks are classified by how they formed. Igneous rocks crystallise from magma or lava and may be coarse or fine grained; sedimentary rocks form from compacted and cemented sediment and may contain fossils; metamorphic rocks are changed by heat and pressure, which makes them hard and often banded. The rock cycle links all three through melting, weathering, erosion, deposition and metamorphism.\n\nSoil is the product of weathered rock mixed with organic matter, air and water. Its fertility depends on mineral particles, humus, soil organisms and pH, and its depth and texture decide what can be grown and how easily it erodes. Terracing, contour ploughing, mulching, cover crops and windbreaks all hold soil in place, which matters greatly on steep Caribbean hillsides where heavy rain can strip a field in a season.",
+        "objectives": [
+          "Describe the Earth's layers and the causes of earthquakes and volcanoes",
+          "Classify rocks and explain the rock cycle",
+          "Explain soil formation, fertility and erosion control"
+        ],
+        "concepts": [
+          "Crust",
+          "Mantle",
+          "Plate tectonics",
+          "Igneous",
+          "Sedimentary",
+          "Metamorphic",
+          "Humus",
+          "Erosion"
+        ],
+        "experiment": {
+          "type": "classifier-sim",
+          "description": "Rock Classifier: Sort rock samples by how they formed and match each to a step in the rock cycle."
+        }
+      },
+      {
+        "id": "is-l6-2",
+        "title": "Weather, Climate and the Water Cycle",
+        "content": "Weather is the state of the atmosphere at a particular time and place; climate is the pattern of weather averaged over many years. Both are driven by the Sun's uneven heating of the Earth, which sets up winds, evaporation and the movement of air masses. Measuring weather means recording temperature, rainfall, humidity, wind direction and speed, and air pressure with the correct instruments, and reading the patterns shown by weather maps and data.\n\nWater moves continually through the water cycle: evaporation from sea and land, transpiration from plants, condensation into clouds, precipitation as rain, hail or snow, and run-off or infiltration back to the groundwater and the sea. The Caribbean's wet and dry seasons, its hurricanes and its droughts are all features of this cycle, and the region's small islands depend heavily on rainfall caught in reservoirs and on groundwater.\n\nClimate change is altering those patterns. Rising global temperatures from greenhouse gas emissions are linked to stronger hurricanes, sea-level rise, coastal erosion, saltwater intrusion into wells, coral bleaching and longer droughts. Adaptation measures include water storage and harvesting, coastal protection with mangroves and reefs, drought-resistant crops, and early-warning systems; mitigation means reducing emissions through renewable energy and efficiency. Both are examined through data, so reading graphs and records carefully is part of the science.",
+        "objectives": [
+          "Distinguish weather from climate and describe how each is measured",
+          "Describe the water cycle and the Caribbean's seasonal patterns",
+          "Explain the impacts of climate change and possible responses"
+        ],
+        "concepts": [
+          "Weather",
+          "Climate",
+          "Humidity",
+          "Air pressure",
+          "Water cycle",
+          "Greenhouse gas",
+          "Adaptation",
+          "Mitigation"
+        ],
+        "experiment": {
+          "type": "data-explorer",
+          "description": "Climate Records: Read rainfall and temperature records, identify seasonal patterns and compare years."
+        }
+      },
+      {
+        "id": "is-l6-3",
+        "title": "Water, Waste and Sustainable Living",
+        "content": "Water is essential, but fresh water is scarce: only a small fraction of the Earth's water is available as usable fresh water, and Caribbean islands depend on rainfall, rivers and aquifers. Water is treated before use by screening, settling, filtration and disinfection, and used water must be treated before it is returned to the environment. In the home, conservation means fixing leaks, using efficient fittings, collecting rainwater and watering gardens in the cool of the evening.\n\nWaste management follows a hierarchy: avoid, reduce, reuse, recycle, recover energy, and dispose of as a last resort. Organic waste can be composted, glass, metal and plastic can be recycled where facilities exist, and hazardous waste - batteries, oils, paints, medical items - must never go into general refuse. Illegal dumping blocks drains, causes flooding and breeds disease vectors, and the costs fall on the whole community.\n\nSustainable living brings these threads together. A household or school can cut its impact by using energy and water efficiently, choosing durable and repairable goods, growing some of its own food, managing waste carefully and reducing pollution. Science contributes the measurements that show whether any of this works: water quality tests, waste audits, energy bills and air or soil analysis. Evidence is what turns good intentions into improvements.",
+        "objectives": [
+          "Explain the treatment and conservation of water",
+          "Apply the waste hierarchy and manage waste safely",
+          "Evaluate practical measures for sustainable living"
+        ],
+        "concepts": [
+          "Aquifer",
+          "Filtration",
+          "Disinfection",
+          "Waste hierarchy",
+          "Composting",
+          "Recycling",
+          "Water quality",
+          "Sustainability"
+        ],
+        "experiment": {
+          "type": "waste-sorter",
+          "description": "Waste Hierarchy: Sort items into avoid, reuse, recycle, compost or dispose, and identify the hazardous ones."
+        }
+      }
+    ]
+  }
+]
