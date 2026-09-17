@@ -1,0 +1,432 @@
+[
+  {
+    "id": "eb-mod-1",
+    "title": "Reading Literature: The Foundations",
+    "lessons": [
+      {
+        "id": "eb-l1-1",
+        "title": "The Three Genres of Literature",
+        "content": "Literature is writing that shapes language imaginatively in order to explore human experience. CSEC English B asks you to respond to literature through three broad genres: prose, poetry and drama. Prose is written in sentences and paragraphs and includes novels, short stories, essays and biographies. It may be fiction (an invented story) or non-fiction (writing about real people, events and ideas). Poetry is written in lines and stanzas; it compresses meaning and relies on imagery, rhythm and sound to create feeling. Drama is written to be performed, so it is built from dialogue, characters and stage directions rather than from a narrator's voice.\n\nRecognising the genre of a text is the first step in responding to it, because each genre works in its own way. In prose you watch how a narrator tells a story and how a character develops over time. In poetry you listen to the sound of the language and weigh the pictures the poet creates in a few carefully chosen words. In drama you must imagine the text on a stage, paying attention to what characters say and do, and to what the audience sees that the characters do not.\n\nWhen you write about literature, name the genre and the technique you are discussing, then explain the effect the writer creates and how that effect supports the theme. A strong response never just retells the story; it argues a point about how the text works and why it matters.",
+        "objectives": [
+          "Identify the three genres of literature and their key features",
+          "Distinguish between fiction and non-fiction prose",
+          "Explain how genre shapes the way a text is read"
+        ],
+        "concepts": [
+          "Prose",
+          "Poetry",
+          "Drama",
+          "Fiction",
+          "Non-fiction",
+          "Genre"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Genre Sorter: Match each text description to the genre it belongs to and the features that give it away."
+        }
+      },
+      {
+        "id": "eb-l1-2",
+        "title": "Reading and Responding to Unseen Texts",
+        "content": "An unseen text is one you meet for the first time in the examination. You cannot memorise an answer for it, so the skill being tested is your method. Read the whole text once quickly to get the sense of it, then read the question and read the text again with the question in your mind. Mark words, images and details that seem important.\n\nQuestions on unseen texts usually ask for two kinds of meaning. Literal meaning is what the text says directly: a fact, an event, a description. Inferential meaning is what the text suggests without stating it: a character's feelings, the writer's attitude, or the mood of a scene. If a character slams a door and says nothing, the text does not tell you she is angry — you infer it from the action and the silence. Good readers move constantly between what is said and what is implied.\n\nWhen you answer, use evidence. Quote a short phrase, or point to a specific detail, and then explain how that detail supports your answer. Answers that make a claim without evidence earn few marks, and answers that quote without explaining earn even fewer. The safest structure is point, evidence, explanation: state your idea, anchor it in the text, then say why it matters.",
+        "objectives": [
+          "Apply a repeated reading method to an unseen text",
+          "Distinguish literal from inferential meaning",
+          "Support answers with short quotations and explanation"
+        ],
+        "concepts": [
+          "Unseen text",
+          "Literal meaning",
+          "Inference",
+          "Evidence",
+          "Point-evidence-explanation"
+        ],
+        "experiment": {
+          "type": "highlight-tool",
+          "description": "Main Idea Highlighter: Highlight the words in each passage that carry the main idea and the words that reveal how the character feels."
+        }
+      },
+      {
+        "id": "eb-l1-3",
+        "title": "Subject, Theme and Message",
+        "content": "Students often confuse subject and theme. The subject of a text is what it is about — a short description of its content, such as 'a family struggling after a hurricane' or 'a boy's first day at a new school'. The theme is the idea the text explores through that subject, such as resilience, loss, ambition, justice, identity or the conflict between tradition and change. A theme is usually expressed as an idea, not an event.\n\nA text may carry more than one theme, and themes often overlap. In a story about migration, for example, the themes might be hope, sacrifice and the meaning of home. The message or the writer's purpose is what the text seems to be saying about the theme: that sacrifice can strengthen a family, or that home is built from people rather than places. Writers rarely state a message directly — they build it through what happens, what characters learn, and the images and language they use.\n\nTo write confidently about theme, test your idea against the whole text. A theme you can support from several parts of the text — the opening, the climax and the ending — is far more convincing than one built on a single scene. And always link theme back to technique: how does the writer make you feel this idea rather than simply telling you about it?",
+        "objectives": [
+          "Distinguish subject, theme and message",
+          "Identify more than one theme in a text and support it with evidence",
+          "Link theme to the writer's techniques and purpose"
+        ],
+        "concepts": [
+          "Subject",
+          "Theme",
+          "Message",
+          "Writer's purpose",
+          "Recurring idea"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Theme Matcher: Match each subject to the theme it most naturally explores, then match the theme to a supporting detail."
+        }
+      }
+    ]
+  },
+  {
+    "id": "eb-mod-2",
+    "title": "Poetry",
+    "lessons": [
+      {
+        "id": "eb-l2-1",
+        "title": "Poetic Devices and Figurative Language",
+        "content": "Poets compress meaning, so a single image can carry several ideas at once. Figurative language is language used beyond its literal sense. A simile compares using like or as ('her voice was like gravel on a road'). A metaphor states that one thing is another ('the classroom was a beehive'). Personification gives human qualities to objects or ideas ('the mango tree stretched its arms across the yard'). Hyperbole exaggerates for effect, and oxymoron places opposites together to startle the reader.\n\nSound devices work alongside images. Alliteration repeats initial consonant sounds, assonance repeats vowel sounds, and onomatopoeia uses words that imitate sound ('crash', 'hiss', 'clatter'). Repetition and refrain create rhythm and emphasis. These devices are not decoration: they control pace, mood and the reader's attention, and Caribbean poets often use them to echo the cadences of nation language and oral storytelling.\n\nWhen you analyse a device, never stop at naming it. Complete the chain: identify the device, quote it, state what picture or feeling it creates, and link that effect to the theme. 'The poet uses a simile' earns nothing; 'the simile comparing her voice to gravel suggests the hardship of her daily work, reinforcing the poem's theme of endurance' shows understanding.",
+        "objectives": [
+          "Identify simile, metaphor, personification, hyperbole and oxymoron",
+          "Recognise sound devices and repetition",
+          "Explain the effect of a device and link it to theme"
+        ],
+        "concepts": [
+          "Simile",
+          "Metaphor",
+          "Personification",
+          "Hyperbole",
+          "Oxymoron",
+          "Alliteration",
+          "Onomatopoeia",
+          "Imagery"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Device Detective: Match each quoted line to the device it uses, then decide which effect the device creates."
+        }
+      },
+      {
+        "id": "eb-l2-2",
+        "title": "Sound, Rhythm and Form",
+        "content": "Rhythm in poetry is the pattern of stressed and unstressed syllables as you read aloud. Metre is a regular rhythm that repeats from line to line; free verse abandons that regularity in favour of the natural rhythms of speech. Rhyme is the repetition of end sounds, and a rhyme scheme (abab, abcb, for example) describes the pattern across a stanza. Not all poems rhyme, and a poem that begins with a fixed pattern may break it deliberately to signal a change in mood or thought.\n\nForm matters too. A couplet is two lines, a quatrain is four, and a sonnet is fourteen lines, usually turning on an argument or a change of direction. A refrain is a line repeated at intervals, often at the end of stanzas, and enjambment is a sentence that runs past the end of a line, pushing the reader forward quickly. Caesura, a pause inside a line, slows the line down.\n\nTo discuss rhythm and form, read the poem aloud. Where does your voice speed up? Where does it pause? Which lines carry the repetition, and which break the pattern? Then explain what the pattern does: a broken rhyme scheme may suggest disorder, a repeated refrain may suggest grief that will not go away, and a long run-on line may mirror breathlessness or urgency.",
+        "objectives": [
+          "Describe rhythm, metre, rhyme and rhyme scheme",
+          "Identify stanza forms, refrain, enjambment and caesura",
+          "Explain how sound and form shape meaning"
+        ],
+        "concepts": [
+          "Rhythm",
+          "Metre",
+          "Rhyme scheme",
+          "Stanza",
+          "Refrain",
+          "Enjambment",
+          "Caesura",
+          "Free verse"
+        ],
+        "experiment": {
+          "type": "drag-drop",
+          "description": "Rhythm Lab: Drag each line into the stanza pattern it belongs to and label where the rhythm breaks."
+        }
+      },
+      {
+        "id": "eb-l2-3",
+        "title": "Tone, Mood and Theme in Poetry",
+        "content": "Tone is the speaker's attitude towards the subject — admiring, bitter, wistful, angry, amused, reverent. Mood is the feeling the poem creates in the reader: calm, tense, sorrowful, hopeful. The two are closely related but not identical: a speaker may describe a scene with tenderness (tone) and leave the reader uneasy (mood). You detect tone through diction, imagery and the sounds the poet chooses, and you detect mood through the atmosphere those choices build.\n\nDiction is word choice. A poem that calls the sea 'the ocean' sounds different from one that calls it 'the drink' or 'the grave'. Connotation — the feelings a word carries beyond its dictionary meaning — does much of the work in poetry. Because poems are short, every word is load-bearing: a change of one adjective can turn a tender poem into a bitter one.\n\nComparisons of two poems are common in examinations. Choose a clear basis for comparison such as theme, tone or the treatment of a place, and organise your essay around that basis rather than describing one poem and then the other. Use connectives — 'whereas', 'similarly', 'in contrast' — so that your essay moves between the poems all the way through, and quote both.",
+        "objectives": [
+          "Distinguish tone from mood",
+          "Explain how diction and connotation create tone",
+          "Compare two poems using a clear common basis"
+        ],
+        "concepts": [
+          "Tone",
+          "Mood",
+          "Diction",
+          "Connotation",
+          "Comparison",
+          "Contrast"
+        ],
+        "experiment": {
+          "type": "vocab-flashcards",
+          "description": "Tone Deck: Flip through tone words, then match each tone to the diction that would create it in a poem."
+        }
+      }
+    ]
+  },
+  {
+    "id": "eb-mod-3",
+    "title": "Drama",
+    "lessons": [
+      {
+        "id": "eb-l3-1",
+        "title": "Elements of Drama",
+        "content": "A play is written to be performed, so drama is built from different materials than prose fiction. Dialogue is what characters say to each other; monologue is a long speech by one character. Stage directions are the playwright's instructions about movement, props, lighting, sound and setting, and they are part of the text, not decoration — an entrance, a slammed door or a lit lamp can carry meaning as strongly as a line of dialogue.\n\nDramatic structure follows the same broad arc as fiction: exposition introduces the situation and characters, rising action builds complications, the climax is the point of greatest tension, falling action releases it, and the resolution settles the outcome. Because a play has no narrator, the audience learns about characters through what they say, what they do and what others say about them.\n\nSetting in drama is more than a place name. It includes the period, the social world of the characters and the stage space itself — the house, the verandah, the yard. A playwright chooses a setting because it makes certain conflicts possible: a small island community where everyone knows everyone, a plantation yard, a city office. When you write about drama, always imagine the stage and ask what the audience would see and hear.",
+        "objectives": [
+          "Identify dialogue, monologue and stage directions",
+          "Trace dramatic structure from exposition to resolution",
+          "Explain how setting creates possibilities for conflict"
+        ],
+        "concepts": [
+          "Dialogue",
+          "Monologue",
+          "Stage directions",
+          "Exposition",
+          "Climax",
+          "Resolution",
+          "Setting"
+        ],
+        "experiment": {
+          "type": "drag-drop",
+          "description": "Stage Builder: Drag each element of drama to the part of the play it controls — action, character, or staging."
+        }
+      },
+      {
+        "id": "eb-l3-2",
+        "title": "Dramatic Techniques and Conflict",
+        "content": "Conflict is the engine of drama. It may be internal (a character at war with herself), between characters (family against family), between a character and society, or between characters and nature or fate. A play usually carries several conflicts at once, with one dominating the main plot and others running through subplots.\n\nPlaywrights use techniques that are possible only on stage. A soliloquy lets a character speak her thoughts aloud while alone, giving the audience privileged access to her mind. An aside is a brief remark to the audience that other characters do not hear. Dramatic irony occurs when the audience knows something a character does not, which creates tension or pity. Foreshadowing plants hints of what is to come, and dramatic juxtaposition places two scenes side by side so that each comments on the other.\n\nTo write about technique, explain what the audience gains. A soliloquy reveals motive; dramatic irony makes the audience complicit or anxious; a withheld entrance delays a revelation and builds suspense. Then link the technique to theme: for instance, dramatic irony can expose how narrow-minded a community is, or how a character's pride blinds him to the truth everyone else already sees.",
+        "objectives": [
+          "Classify internal and external conflict in a play",
+          "Explain soliloquy, aside, dramatic irony and foreshadowing",
+          "Link dramatic technique to the audience's response and to theme"
+        ],
+        "concepts": [
+          "Conflict",
+          "Soliloquy",
+          "Aside",
+          "Dramatic irony",
+          "Foreshadowing",
+          "Suspense"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Technique Table: Match each dramatic technique to the moment it creates and the effect it has on the audience."
+        }
+      },
+      {
+        "id": "eb-l3-3",
+        "title": "Character, Motivation and Theme in Drama",
+        "content": "Characters in drama are built from their choices. Motivation is the reason behind a character's actions — fear, love, ambition, duty, guilt, revenge or loyalty — and it is often revealed when a character is under pressure. A character who is generous when life is easy and selfish when it is hard tells you what the play believes about human nature.\n\nDistinguish a flat, one-dimensional character from a rounded one who changes. A dynamic character develops across the play, and the change usually carries the theme: a proud man humbled, a timid girl finding her voice, an opportunist exposed. Foils — characters placed in contrast with each other — sharpen this by making the difference in values visible.\n\nWhen you write an essay on a character, answer the question asked. If the question invites you to discuss how a character is presented, organise your essay around the techniques used: what she says, what she does, what others say about her and how she changes. If it asks whether we sympathise with her, take a position and defend it with evidence from several parts of the play, and consider the counter-argument before you conclude.",
+        "objectives": [
+          "Explain character motivation from textual evidence",
+          "Distinguish flat from rounded and static from dynamic characters",
+          "Build an argument about a character using evidence from across the play"
+        ],
+        "concepts": [
+          "Motivation",
+          "Rounded character",
+          "Dynamic character",
+          "Foil",
+          "Character arc"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Motivation Match: Match each character's action to the motive that best explains it and defend your choice."
+        }
+      }
+    ]
+  },
+  {
+    "id": "eb-mod-4",
+    "title": "Prose Fiction",
+    "lessons": [
+      {
+        "id": "eb-l4-1",
+        "title": "Plot, Conflict and Structure",
+        "content": "Plot is the sequence of events in a story; story is the order in which those events actually happened. A writer may begin in the middle of things, flash back to the past, or move between two time lines to control what the reader knows and when. Structure is the shape the writer gives the plot: linear, circular, framed by a story within a story, or broken into episodes that jump between times and places.\n\nMost plots follow a familiar arc. The exposition establishes setting, character and situation. A complication or inciting incident disturbs the balance. Rising action builds conflict through a series of events. The climax is the moment of highest tension or the decisive choice. Falling action shows the consequences, and the resolution closes the story — though many modern Caribbean stories end open-ended, leaving the reader to judge.\n\nConflict in prose may be internal or external, and it is usually both. To write about plot well, avoid retelling the story. Select the turning points that matter to your argument, explain how the writer builds tension or withholds information, and connect the shape of the plot to theme: a circular structure, for example, may suggest that nothing changes for the characters, or that history repeats in a community.",
+        "objectives": [
+          "Distinguish plot from story and identify narrative structure",
+          "Trace exposition, complication, climax and resolution",
+          "Explain how structure shapes the reader's understanding"
+        ],
+        "concepts": [
+          "Plot",
+          "Story",
+          "Flashback",
+          "Complication",
+          "Climax",
+          "Circular structure",
+          "Open ending"
+        ],
+        "experiment": {
+          "type": "plot-arranger",
+          "description": "Plot Arranger: Put the events of a short story into the order they happen in the story and in the order they happened in time."
+        }
+      },
+      {
+        "id": "eb-l4-2",
+        "title": "Characterisation and Point of View",
+        "content": "Writers build characters directly and indirectly. Direct characterisation tells you what a character is like; indirect characterisation shows it through appearance, speech, action, thoughts and the reactions of other characters. Indirect methods are usually more powerful, because the reader draws the conclusion.\n\nPoint of view is the angle from which the story is told. A first-person narrator uses 'I' and can be unreliable, limited to what she knows or willing to mislead. A third-person limited narrator stays close to one character's thoughts. A third-person omniscient narrator moves freely between characters and knows everything, while an objective narrator reports only what can be seen and heard. The choice of narrator controls how much the reader knows and how much she is asked to judge.\n\nA useful question in the examination is: how does the writer make us feel about this character? Answer it by analysing technique. Notice the adjectives attached to a character, the verbs of her actions, the imagery used about her, and the gap between what she says and what the reader understands. Then explain the effect: sympathy, distrust, admiration or unease. Always link that effect back to theme.",
+        "objectives": [
+          "Distinguish direct from indirect characterisation",
+          "Identify first-person, third-person limited and omniscient narration",
+          "Explain how point of view shapes the reader's judgement"
+        ],
+        "concepts": [
+          "Characterisation",
+          "Narrative voice",
+          "First-person narrator",
+          "Omniscient narrator",
+          "Unreliable narrator"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Voice Matcher: Match each extract to the narrative point of view it uses and the amount of knowledge it gives the reader."
+        }
+      },
+      {
+        "id": "eb-l4-3",
+        "title": "Setting, Atmosphere and Symbolism",
+        "content": "Setting is the time and place of a story, but it is never neutral. A setting carries social meaning: a yard in a Jamaican village, a colonial-era plantation house, a crowded bus, a hurricane shelter. Writers choose setting to place their characters under particular pressures and to make certain conflicts inevitable.\n\nAtmosphere is the feeling a setting creates, built through imagery, weather, light, colour, sound and smell. Pathetic fallacy is the technique of making the weather mirror human feeling — a storm at the moment of crisis, a still afternoon after a death. Because atmosphere prepares the reader, it can make an event feel hopeful, ominous or tragic before it happens.\n\nA symbol is an object, place or action that stands for something beyond itself: a locked gate for exclusion, a seedsman's plant for survival, a calabash for endurance. Symbols gain meaning from repetition and from context, so track them through the text rather than reading one occurrence in isolation. When you discuss a symbol, state what it represents, show the evidence that supports your reading, and connect it to the theme.",
+        "objectives": [
+          "Explain how setting carries social and emotional meaning",
+          "Identify atmosphere and pathetic fallacy",
+          "Interpret symbols using repeated textual evidence"
+        ],
+        "concepts": [
+          "Setting",
+          "Atmosphere",
+          "Pathetic fallacy",
+          "Symbol",
+          "Imagery"
+        ],
+        "experiment": {
+          "type": "vocab-flashcards",
+          "description": "Atmosphere Deck: Flip through atmosphere words, then choose the imagery that would create each mood in a story."
+        }
+      }
+    ]
+  },
+  {
+    "id": "eb-mod-5",
+    "title": "Prose Non-Fiction",
+    "lessons": [
+      {
+        "id": "eb-l5-1",
+        "title": "Purpose, Audience and Form in Non-Fiction",
+        "content": "Non-fiction prose deals with real people, events and ideas: newspaper reports, features, editorials, speeches, essays, letters, diaries, biographies and travel writing. Before you analyse a piece, establish three things: who wrote it, who it is for, and what it is trying to do. Purpose is usually one of four kinds — to inform, to explain, to persuade or to entertain — and many pieces combine them.\n\nAudience shapes language. A report for a broadsheet newspaper addresses readers differently from an editorial in a student magazine or a speech to a village council. Register, vocabulary and sentence length all shift with audience, and a writer who misjudges the audience loses them. Form matters too: a letter has a salutation and a sign-off; a speech opens with an address; an editorial usually states its position in the first paragraph and defends it.\n\nStructure in non-fiction is often argumentative. A writer may open with an anecdote to win attention, present a claim, support it with evidence or example, answer a counter-argument, and close with an appeal or a recommendation. Mapping that structure is a fast route to understanding the writer's purpose, and it gives you a ready-made plan for your own essays.",
+        "objectives": [
+          "Establish purpose and audience for a non-fiction text",
+          "Recognise the conventions of common non-fiction forms",
+          "Map the structure of an argument"
+        ],
+        "concepts": [
+          "Purpose",
+          "Audience",
+          "Register",
+          "Form",
+          "Claim",
+          "Counter-argument"
+        ],
+        "experiment": {
+          "type": "outliner",
+          "description": "Argument Outliner: Arrange the moves of a non-fiction piece into the order a strong argument would follow."
+        }
+      },
+      {
+        "id": "eb-l5-2",
+        "title": "Persuasive and Emotive Language",
+        "content": "Writers persuade by appealing to reason (logos), to character and trust (ethos) and to emotion (pathos). Rhetorical questions, repetition, the rule of three, and direct address pull the reader into the argument. Statistics, expert opinion and examples strengthen it; loaded adjectives and vivid imagery make it felt. Caribbean speeches and editorials often combine all three appeals, moving from data to anecdote to a stirring final call.\n\nEmotive language is powerful and dangerous. Words such as 'plague', 'flood', 'invasion' or 'hero' carry connotations that push a reader towards a conclusion before the evidence has been weighed. Exaggeration (hyperbole), sarcasm and innuendo are also persuasive devices. Whereas a fact can be checked, an emotive word must be evaluated: ask whether the writer is using the feeling honestly or manipulating it.\n\nTo analyse persuasion, identify the claim, list the appeals and devices used, quote them, and judge how convincing they are. A strong answer distinguishes what the writer does from how well it works: 'the repetition of the word 'now' builds urgency, but the claim rests on a single anecdote, so the argument is emotionally forceful yet thin on evidence'.",
+        "objectives": [
+          "Identify logos, ethos and pathos in a persuasive text",
+          "Recognise rhetorical questions, repetition and the rule of three",
+          "Evaluate the effect and fairness of emotive language"
+        ],
+        "concepts": [
+          "Rhetorical question",
+          "Repetition",
+          "Rule of three",
+          "Emotive language",
+          "Bias",
+          "Appeal to emotion"
+        ],
+        "experiment": {
+          "type": "highlight-tool",
+          "description": "Persuasion Highlighter: Highlight the appeals to reason, trust and emotion in each speech extract, then rank them by strength."
+        }
+      },
+      {
+        "id": "eb-l5-3",
+        "title": "Reading Non-Fiction Critically",
+        "content": "Critical reading means testing a text rather than absorbing it. Separate fact from opinion: a fact can be verified, while an opinion expresses a judgement. Separate the claim from the evidence, and check whether the evidence really supports the claim or merely sits beside it. Notice vague attribution — 'experts say', 'it is widely believed' — which gives an impression of authority without naming a source.\n\nConsider bias and reliability. Every writer has a standpoint, and a standpoint is not a fault; the fault is hidden or distorted evidence. Ask who benefits from the reader believing the piece, what has been left out, whose voice is missing, and whether opposing views are represented fairly. In Caribbean contexts, writing about tourism, crime, education or migration is rarely neutral, and a critical reader notices which interests are served.\n\nReading critically also improves your own writing. When you can name the techniques other writers use to sound convincing, you can use them deliberately and honestly, and you can explain in an examination why a passage persuades. Practise the habit of annotating: underline claims, bracket evidence, and write a one-line summary in the margin. An annotated passage is a plan for an answer.",
+        "objectives": [
+          "Distinguish fact from opinion and claim from evidence",
+          "Evaluate bias, reliability and missing viewpoints",
+          "Annotate a non-fiction passage to prepare an answer"
+        ],
+        "concepts": [
+          "Fact",
+          "Opinion",
+          "Bias",
+          "Reliability",
+          "Attribution",
+          "Annotation"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Fact or Opinion: Sort each statement into fact, opinion or unverifiable claim, and note the evidence you would need."
+        }
+      }
+    ]
+  },
+  {
+    "id": "eb-mod-6",
+    "title": "Writing about Literature",
+    "lessons": [
+      {
+        "id": "eb-l6-1",
+        "title": "Planning and Structuring a Literature Essay",
+        "content": "A literature essay is an argument, not a summary. Begin by unpacking the question: underline the key word (discuss, compare, how, why) and the focus of the question (character, theme, technique, setting). Then decide your position — the line of argument you will defend — and select three or four moments in the text that support it. Making your plan in the first five minutes of an examination question saves time later.\n\nThe standard structure is an introduction, a series of body paragraphs and a conclusion. Your introduction should name the text and the writer, restate the question in your own words, and state your argument. Each body paragraph should begin with a topic sentence that makes a point, then quote or describe evidence, then explain the effect and link back to the question. The conclusion should not repeat the introduction; it should state what your argument has shown.\n\nOrganise body paragraphs by idea, not by the order of events. Signpost your argument with connectives ('firstly', 'more significantly', 'however', 'therefore') so that the examiner can follow your thinking. Quality beats quantity: three well-developed points defended with evidence earn more than six points mentioned in passing.",
+        "objectives": [
+          "Unpack an essay question and identify its focus",
+          "Plan a line of argument with supporting evidence",
+          "Structure an essay with introduction, developed body paragraphs and conclusion"
+        ],
+        "concepts": [
+          "Essay question",
+          "Line of argument",
+          "Topic sentence",
+          "Paragraph structure",
+          "Signposting"
+        ],
+        "experiment": {
+          "type": "outliner",
+          "description": "Essay Outliner: Drag the moves of a literature essay into the order that builds the strongest argument."
+        }
+      },
+      {
+        "id": "eb-l6-2",
+        "title": "Using Quotations and Evidence",
+        "content": "Evidence is what separates an opinion from an argument. Use short quotations — a few words, embedded in your own sentence — rather than long block quotations copied out. Introduce the quotation so that it reads smoothly: the writer describes the yard as 'a sea of grass', suggests a landscape that is both beautiful and unmanageable. Then explain what the words do.\n\nThe point-evidence-explanation structure keeps you honest. State the point you want to make, provide the evidence, then explain how the evidence supports the point. Explain the specific words, not just the general idea: why 'sea' rather than 'field'? What does the choice suggest about freedom, danger or scale? Analysis of diction, imagery and structure at the level of individual words is what moves an answer into the top band.\n\nParaphrasing is acceptable when you cannot recall the exact words, but it must be accurate and signalled: the writer implies that the yard is impossible to control. Never invent a quotation. If you cannot remember the exact wording, describe the moment precisely instead — examiners reward accurate knowledge of the text, not guesswork.",
+        "objectives": [
+          "Embed short quotations smoothly into a sentence",
+          "Apply point-evidence-explanation to a paragraph",
+          "Use paraphrase accurately when quotation is not possible"
+        ],
+        "concepts": [
+          "Quotation",
+          "Embedding",
+          "Point-evidence-explanation",
+          "Paraphrase",
+          "Analysis"
+        ],
+        "experiment": {
+          "type": "sentence-fixer",
+          "description": "Quote Fixer: Repair sentences where quotations are dropped in without introduction or explanation."
+        }
+      },
+      {
+        "id": "eb-l6-3",
+        "title": "Writing Under Examination Conditions",
+        "content": "Examination writing is a performance under time pressure. Budget your time before you write: divide the minutes available by the number of questions, and keep a few minutes at the end for proofreading. For an essay question, allow about five minutes to plan, most of the time to write, and two or three minutes to check. Answering the question you were asked matters more than writing a beautiful answer to a different one.\n\nBegin by answering the question directly, and keep returning to it in every paragraph. Use the command word to control your depth: 'state' needs a fact, 'describe' needs detail, 'explain' needs reasons, 'discuss' needs a balanced argument, and 'evaluate' needs a judgement supported by criteria. Show the examiner that you know the text by naming characters and moments precisely rather than vaguely.\n\nCommon pitfalls cost easy marks: retelling the plot, ignoring the second half of a two-part question, writing about a text you were not asked about, and leaving questions unanswered. Also proofread for the basics — consistent tense, correct spelling of characters' names and titles, and clear paragraphing. A clean, well-organised script reads as confident, and examiners mark what they can follow.",
+        "objectives": [
+          "Allocate time across questions and leave room for proofreading",
+          "Answer precisely according to the command word",
+          "Avoid the common pitfalls that lose easy marks"
+        ],
+        "concepts": [
+          "Time management",
+          "Command words",
+          "Proofreading",
+          "Tense consistency",
+          "Exam strategy"
+        ],
+        "experiment": {
+          "type": "interactive-quiz",
+          "description": "Exam Coach: Work through exam-room scenarios and choose the best decision for planning, timing and answering."
+        }
+      }
+    ]
+  }
+]

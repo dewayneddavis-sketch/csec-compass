@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "p1",
+    "question": "Which genre is written in lines and stanzas and uses condensed language and imagery?",
+    "options": [
+      "Prose",
+      "Poetry",
+      "Drama",
+      "Non-fiction"
+    ],
+    "answer": "Poetry",
+    "explanation": "Poetry is arranged in lines and stanzas and compresses meaning through imagery, rhythm and sound.",
+    "topic": "eb-l1-1"
+  },
+  {
+    "id": "p2",
+    "question": "A biography of Marcus Garvey is best classified as:",
+    "options": [
+      "Prose fiction",
+      "Prose non-fiction",
+      "Drama",
+      "Poetry"
+    ],
+    "answer": "Prose non-fiction",
+    "explanation": "Non-fiction prose deals with real people, events and ideas, of which biography is an example.",
+    "topic": "eb-l1-1"
+  },
+  {
+    "id": "p3",
+    "question": "What is the main difference between a novel and a short story?",
+    "options": [
+      "A novel is always non-fiction",
+      "A novel is longer and develops plot and character more fully",
+      "A short story has no narrator",
+      "A novel must be written in stanzas"
+    ],
+    "answer": "A novel is longer and develops plot and character more fully",
+    "explanation": "Both are prose fiction, but the novel has greater length and fuller development of plot and character.",
+    "topic": "eb-l1-1"
+  },
+  {
+    "id": "p4",
+    "question": "A text written to be performed on a stage, built from dialogue and stage directions, is:",
+    "options": [
+      "Poetry",
+      "Drama",
+      "A short story",
+      "An editorial"
+    ],
+    "answer": "Drama",
+    "explanation": "Drama is written for performance, so it relies on dialogue and stage directions rather than a narrator.",
+    "topic": "eb-l1-1"
+  },
+  {
+    "id": "p5",
+    "question": "Which genre relies on a narrator to tell the story?",
+    "options": [
+      "Drama",
+      "Poetry",
+      "Prose",
+      "A stage play"
+    ],
+    "answer": "Prose",
+    "explanation": "Prose fiction is told by a narrator; in drama the audience watches the action unfold without one.",
+    "topic": "eb-l1-1"
+  },
+  {
+    "id": "p6",
+    "question": "The word 'genre' means:",
+    "options": [
+      "The setting of a text",
+      "A category or type of writing",
+      "The mood of a text",
+      "A figure of speech"
+    ],
+    "answer": "A category or type of writing",
+    "explanation": "Genre is the category a text belongs to, such as prose, poetry or drama.",
+    "topic": "eb-l1-1"
+  },
+  {
+    "id": "p7",
+    "question": "Meaning that is stated directly in a text is called:",
+    "options": [
+      "Inferential meaning",
+      "Literal meaning",
+      "Connotative meaning",
+      "Figurative meaning"
+    ],
+    "answer": "Literal meaning",
+    "explanation": "Literal meaning is what the text says plainly; inference is what you work out from it.",
+    "topic": "eb-l1-2"
+  },
+  {
+    "id": "p8",
+    "question": "The text says a girl 'chewed her lip and counted the tiles again'. The reader concludes she is anxious. This is:",
+    "options": [
+      "Literal meaning",
+      "Inference",
+      "Repetition",
+      "Foreshadowing"
+    ],
+    "answer": "Inference",
+    "explanation": "The text never states anxiety; the reader infers it from the described actions.",
+    "topic": "eb-l1-2"
+  },
+  {
+    "id": "p9",
+    "question": "What is the safest way to support an answer about a text?",
+    "options": [
+      "Summarise the whole story",
+      "Quote a short phrase and explain how it supports your point",
+      "State your opinion without evidence",
+      "Copy out a whole paragraph"
+    ],
+    "answer": "Quote a short phrase and explain how it supports your point",
+    "explanation": "A short quotation with an explanation earns marks; unconnected quotation and unsupported opinion do not.",
+    "topic": "eb-l1-2"
+  },
+  {
+    "id": "p10",
+    "question": "When you first meet an unseen text you should:",
+    "options": [
+      "Answer the questions immediately",
+      "Read the whole text quickly to get its sense",
+      "Memorise the first line",
+      "Count the paragraphs"
+    ],
+    "answer": "Read the whole text quickly to get its sense",
+    "explanation": "A quick first reading gives you the overall sense before you focus on the questions.",
+    "topic": "eb-l1-2"
+  },
+  {
+    "id": "p11",
+    "question": "Which order gives the strongest short answer?",
+    "options": [
+      "Evidence, point, explanation",
+      "Point, evidence, explanation",
+      "Explanation, point, evidence",
+      "Evidence, explanation, point"
+    ],
+    "answer": "Point, evidence, explanation",
+    "explanation": "State the point, anchor it in the text, then explain how the evidence supports the point.",
+    "topic": "eb-l1-2"
+  },
+  {
+    "id": "p12",
+    "question": "A question asks how the writer creates a tense atmosphere. The best answer will:",
+    "options": [
+      "Retell what happens in the passage",
+      "Identify the writer's techniques and explain their effect",
+      "Describe your own feelings about the passage",
+      "List every adjective in the passage"
+    ],
+    "answer": "Identify the writer's techniques and explain their effect",
+    "explanation": "Questions about how the writer works require technique plus effect, not plot summary.",
+    "topic": "eb-l1-2"
+  },
+  {
+    "id": "p13",
+    "question": "The subject of a text is:",
+    "options": [
+      "The idea the text explores",
+      "What the text is about",
+      "The writer's opinion",
+      "The emotion of the reader"
+    ],
+    "answer": "What the text is about",
+    "explanation": "Subject is the content, described briefly; theme is the idea explored through that content.",
+    "topic": "eb-l1-3"
+  },
+  {
+    "id": "p14",
+    "question": "A text about a family rebuilding after a hurricane most likely explores the theme of:",
+    "options": [
+      "Resilience",
+      "Urbanisation",
+      "Consumer rights",
+      "Grammar"
+    ],
+    "answer": "Resilience",
+    "explanation": "Rebuilding after disaster raises ideas about endurance and recovery, which is the theme of resilience.",
+    "topic": "eb-l1-3"
+  },
+  {
+    "id": "p15",
+    "question": "Which statement about theme is TRUE?",
+    "options": [
+      "A text can carry only one theme",
+      "A theme is usually stated in the first line",
+      "A text may carry more than one theme",
+      "Theme and subject mean the same thing"
+    ],
+    "answer": "A text may carry more than one theme",
+    "explanation": "Most texts explore several overlapping ideas, such as hope, sacrifice and the meaning of home.",
+    "topic": "eb-l1-3"
+  },
+  {
+    "id": "p16",
+    "question": "A theme is most convincing when it is supported by:",
+    "options": [
+      "One vivid scene",
+      "The title alone",
+      "Evidence from several parts of the text",
+      "The reader's personal experience"
+    ],
+    "answer": "Evidence from several parts of the text",
+    "explanation": "A theme traceable through the opening, climax and ending is far stronger than one built on a single scene.",
+    "topic": "eb-l1-3"
+  },
+  {
+    "id": "p17",
+    "question": "The writer's message is usually:",
+    "options": [
+      "Stated directly in the last sentence",
+      "Implied through events, characters and language",
+      "Explained in the title",
+      "Irrelevant to the theme"
+    ],
+    "answer": "Implied through events, characters and language",
+    "explanation": "Writers build a message through what happens and how it is described rather than stating it outright.",
+    "topic": "eb-l1-3"
+  },
+  {
+    "id": "p18",
+    "question": "A student writes: 'This poem is about a fisherman who loses his boat.' The student has identified:",
+    "options": [
+      "The theme",
+      "The subject",
+      "The writer's purpose",
+      "The tone"
+    ],
+    "answer": "The subject",
+    "explanation": "Naming what the text is about describes the subject; the theme would be the idea drawn from the loss, such as grief.",
+    "topic": "eb-l1-3"
+  },
+  {
+    "id": "p19",
+    "question": "'Her voice was like gravel on a road' is an example of:",
+    "options": [
+      "Metaphor",
+      "Simile",
+      "Personification",
+      "Hyperbole"
+    ],
+    "answer": "Simile",
+    "explanation": "A simile compares two things using 'like' or 'as'.",
+    "topic": "eb-l2-1"
+  },
+  {
+    "id": "p20",
+    "question": "'The classroom was a beehive' is an example of:",
+    "options": [
+      "Simile",
+      "Metaphor",
+      "Onomatopoeia",
+      "Oxymoron"
+    ],
+    "answer": "Metaphor",
+    "explanation": "A metaphor states that one thing is another, without using 'like' or 'as'.",
+    "topic": "eb-l2-1"
+  },
+  {
+    "id": "p21",
+    "question": "'The mango tree stretched its arms across the yard' uses:",
+    "options": [
+      "Personification",
+      "Alliteration",
+      "Hyperbole",
+      "Assonance"
+    ],
+    "answer": "Personification",
+    "explanation": "Human qualities (stretching arms) are given to a tree.",
+    "topic": "eb-l2-1"
+  },
+  {
+    "id": "p22",
+    "question": "'I have told you a million times' is an example of:",
+    "options": [
+      "Understatement",
+      "Hyperbole",
+      "Oxymoron",
+      "Metaphor"
+    ],
+    "answer": "Hyperbole",
+    "explanation": "Hyperbole is deliberate exaggeration for emphasis.",
+    "topic": "eb-l2-1"
+  },
+  {
+    "id": "p23",
+    "question": "'A deafening silence' is an example of:",
+    "options": [
+      "Oxymoron",
+      "Simile",
+      "Refrain",
+      "Assonance"
+    ],
+    "answer": "Oxymoron",
+    "explanation": "An oxymoron joins two contradictory words to startle the reader.",
+    "topic": "eb-l2-1"
+  },
+  {
+    "id": "p24",
+    "question": "Words such as 'crash', 'hiss' and 'clatter' are examples of:",
+    "options": [
+      "Alliteration",
+      "Onomatopoeia",
+      "Metaphor",
+      "Caesura"
+    ],
+    "answer": "Onomatopoeia",
+    "explanation": "Onomatopoeia uses words that imitate the sounds they describe.",
+    "topic": "eb-l2-1"
+  },
+  {
+    "id": "p25",
+    "question": "A regular pattern of stressed and unstressed syllables in poetry is called:",
+    "options": [
+      "Rhyme scheme",
+      "Metre",
+      "Caesura",
+      "Refrain"
+    ],
+    "answer": "Metre",
+    "explanation": "Metre is a repeated pattern of stressed and unstressed syllables.",
+    "topic": "eb-l2-2"
+  },
+  {
+    "id": "p26",
+    "question": "Poetry written without a regular rhyme or metre is called:",
+    "options": [
+      "Blank verse",
+      "Free verse",
+      "A sonnet",
+      "A couplet"
+    ],
+    "answer": "Free verse",
+    "explanation": "Free verse abandons regular rhyme and metre in favour of the rhythms of speech.",
+    "topic": "eb-l2-2"
+  },
+  {
+    "id": "p27",
+    "question": "The pattern of end rhymes across a poem is its:",
+    "options": [
+      "Rhythm",
+      "Rhyme scheme",
+      "Diction",
+      "Form"
+    ],
+    "answer": "Rhyme scheme",
+    "explanation": "A rhyme scheme (for example abab or abcb) describes the rhyme pattern of the stanzas.",
+    "topic": "eb-l2-2"
+  },
+  {
+    "id": "p28",
+    "question": "A sentence that runs past the end of a line of poetry demonstrates:",
+    "options": [
+      "Enjambment",
+      "Caesura",
+      "Refrain",
+      "Rhyme"
+    ],
+    "answer": "Enjambment",
+    "explanation": "Enjambment carries meaning over the line break, often speeding the reader forward.",
+    "topic": "eb-l2-2"
+  },
+  {
+    "id": "p29",
+    "question": "A line repeated at intervals in a poem is a:",
+    "options": [
+      "Couplet",
+      "Refrain",
+      "Quatrain",
+      "Sonnet"
+    ],
+    "answer": "Refrain",
+    "explanation": "A refrain repeats, often at the end of stanzas, to create emphasis or a sense of grief or celebration that persists.",
+    "topic": "eb-l2-2"
+  },
+  {
+    "id": "p30",
+    "question": "A pause inside a line of poetry is called:",
+    "options": [
+      "Enjambment",
+      "Caesura",
+      "Alliteration",
+      "Metre"
+    ],
+    "answer": "Caesura",
+    "explanation": "Caesura is a pause within a line, which slows the reading down.",
+    "topic": "eb-l2-2"
+  },
+  {
+    "id": "p31",
+    "question": "Tone in poetry refers to:",
+    "options": [
+      "The feeling the poem creates in the reader",
+      "The speaker's attitude towards the subject",
+      "The pattern of rhymes",
+      "The number of stanzas"
+    ],
+    "answer": "The speaker's attitude towards the subject",
+    "explanation": "Tone is the speaker's attitude - admiring, bitter, wistful, amused.",
+    "topic": "eb-l2-3"
+  },
+  {
+    "id": "p32",
+    "question": "Mood in poetry refers to:",
+    "options": [
+      "The speaker's attitude",
+      "The feeling created in the reader",
+      "The poet's biography",
+      "The rhyme scheme"
+    ],
+    "answer": "The feeling created in the reader",
+    "explanation": "Mood is the atmosphere the poem builds in the reader, such as tension or calm.",
+    "topic": "eb-l2-3"
+  },
+  {
+    "id": "p33",
+    "question": "A poet's choice of words is called:",
+    "options": [
+      "Diction",
+      "Mood",
+      "Form",
+      "Metre"
+    ],
+    "answer": "Diction",
+    "explanation": "Diction is word choice, and in poetry every word carries weight.",
+    "topic": "eb-l2-3"
+  },
+  {
+    "id": "p34",
+    "question": "The feelings a word carries beyond its dictionary meaning are its:",
+    "options": [
+      "Connotations",
+      "Denotations",
+      "Syllables",
+      "Rhymes"
+    ],
+    "answer": "Connotations",
+    "explanation": "Connotation is the emotional colour of a word, which does much of the work in poetry.",
+    "topic": "eb-l2-3"
+  },
+  {
+    "id": "p35",
+    "question": "The best way to organise an essay comparing two poems is:",
+    "options": [
+      "Describe poem one, then poem two",
+      "Organise around a shared basis such as theme or tone",
+      "Compare the poets' lives",
+      "Quote both poems once at the start"
+    ],
+    "answer": "Organise around a shared basis such as theme or tone",
+    "explanation": "A shared basis keeps the essay moving between the poems rather than describing them one after the other.",
+    "topic": "eb-l2-3"
+  },
+  {
+    "id": "p36",
+    "question": "Which word best describes an admiring, respectful tone?",
+    "options": [
+      "Reverent",
+      "Bitter",
+      "Mocking",
+      "Indifferent"
+    ],
+    "answer": "Reverent",
+    "explanation": "A reverent tone expresses deep respect, unlike a bitter or mocking one.",
+    "topic": "eb-l2-3"
+  },
+  {
+    "id": "p37",
+    "question": "A playwright's instructions about movement, props and lighting are:",
+    "options": [
+      "Dialogue",
+      "Stage directions",
+      "Asides",
+      "Soliloquies"
+    ],
+    "answer": "Stage directions",
+    "explanation": "Stage directions are part of the text and can carry meaning as strongly as dialogue.",
+    "topic": "eb-l3-1"
+  },
+  {
+    "id": "p38",
+    "question": "A long speech delivered by a character alone on stage is a:",
+    "options": [
+      "Aside",
+      "Monologue",
+      "Soliloquy",
+      "Refrain"
+    ],
+    "answer": "Soliloquy",
+    "explanation": "A soliloquy lets a character speak her thoughts aloud while alone, giving the audience access to her mind.",
+    "topic": "eb-l3-1"
+  },
+  {
+    "id": "p39",
+    "question": "The part of a play that introduces the setting, characters and situation is the:",
+    "options": [
+      "Climax",
+      "Exposition",
+      "Resolution",
+      "Falling action"
+    ],
+    "answer": "Exposition",
+    "explanation": "The exposition establishes the situation before the rising action begins.",
+    "topic": "eb-l3-1"
+  },
+  {
+    "id": "p40",
+    "question": "The point of greatest tension in a play is the:",
+    "options": [
+      "Exposition",
+      "Climax",
+      "Resolution",
+      "Aside"
+    ],
+    "answer": "Climax",
+    "explanation": "The climax is the moment of highest tension or the decisive choice.",
+    "topic": "eb-l3-1"
+  },
+  {
+    "id": "p41",
+    "question": "Because a play has no narrator, the audience learns about characters mainly through:",
+    "options": [
+      "The playwright's notes",
+      "What characters say and do",
+      "The programme notes",
+      "The title"
+    ],
+    "answer": "What characters say and do",
+    "explanation": "In drama, character is revealed through dialogue, action and what others say about them.",
+    "topic": "eb-l3-1"
+  },
+  {
+    "id": "p42",
+    "question": "Setting in drama matters because:",
+    "options": [
+      "It is always a single room",
+      "It makes certain conflicts possible",
+      "It replaces the need for dialogue",
+      "It is decided by the actors"
+    ],
+    "answer": "It makes certain conflicts possible",
+    "explanation": "A chosen setting - plantation yard, village, city office - makes particular conflicts believable and urgent.",
+    "topic": "eb-l3-1"
+  },
+  {
+    "id": "p43",
+    "question": "A brief remark heard by the audience but not by the other characters is an:",
+    "options": [
+      "Soliloquy",
+      "Aside",
+      "Monologue",
+      "Stage direction"
+    ],
+    "answer": "Aside",
+    "explanation": "An aside is directed at the audience and is unheard by the other characters on stage.",
+    "topic": "eb-l3-2"
+  },
+  {
+    "id": "p44",
+    "question": "Dramatic irony occurs when:",
+    "options": [
+      "A character speaks in verse",
+      "The audience knows something a character does not",
+      "Two characters argue",
+      "The play ends unhappily"
+    ],
+    "answer": "The audience knows something a character does not",
+    "explanation": "Dramatic irony makes the audience complicit or anxious because they hold knowledge the character lacks.",
+    "topic": "eb-l3-2"
+  },
+  {
+    "id": "p45",
+    "question": "Hints planted early in a play about what will happen later are:",
+    "options": [
+      "Foreshadowing",
+      "Asides",
+      "Exposition",
+      "Falling action"
+    ],
+    "answer": "Foreshadowing",
+    "explanation": "Foreshadowing prepares the audience and builds suspense.",
+    "topic": "eb-l3-2"
+  },
+  {
+    "id": "p46",
+    "question": "A struggle between a character and her own conscience is:",
+    "options": [
+      "External conflict",
+      "Internal conflict",
+      "Dramatic irony",
+      "Juxtaposition"
+    ],
+    "answer": "Internal conflict",
+    "explanation": "Internal conflict takes place within a character rather than against another person or society.",
+    "topic": "eb-l3-2"
+  },
+  {
+    "id": "p47",
+    "question": "Placing two contrasting scenes side by side so each comments on the other is:",
+    "options": [
+      "Dramatic juxtaposition",
+      "Foreshadowing",
+      "Soliloquy",
+      "Exposition"
+    ],
+    "answer": "Dramatic juxtaposition",
+    "explanation": "Juxtaposition invites the audience to compare the two scenes and draw conclusions.",
+    "topic": "eb-l3-2"
+  },
+  {
+    "id": "p48",
+    "question": "Which technique gives the audience privileged access to a character's thoughts?",
+    "options": [
+      "Stage direction",
+      "Soliloquy",
+      "Off-stage action",
+      "Title page"
+    ],
+    "answer": "Soliloquy",
+    "explanation": "The soliloquy reveals motive and inner conflict that the other characters cannot hear.",
+    "topic": "eb-l3-2"
+  },
+  {
+    "id": "p49",
+    "question": "The reason behind a character's action is her:",
+    "options": [
+      "Motivation",
+      "Foil",
+      "Register",
+      "Exposition"
+    ],
+    "answer": "Motivation",
+    "explanation": "Motivation - fear, love, ambition, duty, guilt - explains why a character acts as she does.",
+    "topic": "eb-l3-3"
+  },
+  {
+    "id": "p50",
+    "question": "A character who develops and changes during the course of a play is:",
+    "options": [
+      "Flat",
+      "Static",
+      "Dynamic",
+      "A foil"
+    ],
+    "answer": "Dynamic",
+    "explanation": "A dynamic character changes, and that change usually carries the play's theme.",
+    "topic": "eb-l3-3"
+  },
+  {
+    "id": "p51",
+    "question": "A character placed in contrast with another to sharpen the difference in values is a:",
+    "options": [
+      "Foil",
+      "Narrator",
+      "Protagonist",
+      "Chorus"
+    ],
+    "answer": "Foil",
+    "explanation": "A foil makes the contrasting qualities of the main character visible.",
+    "topic": "eb-l3-3"
+  },
+  {
+    "id": "p52",
+    "question": "A flat character is one who:",
+    "options": [
+      "Changes at the climax",
+      "Shows only one or two traits",
+      "Speaks only in asides",
+      "Narrates the play"
+    ],
+    "answer": "Shows only one or two traits",
+    "explanation": "Flat characters are one-dimensional, unlike rounded characters who are fully developed.",
+    "topic": "eb-l3-3"
+  },
+  {
+    "id": "p53",
+    "question": "Which is the strongest evidence of a character's true motives?",
+    "options": [
+      "How she dresses",
+      "Her choices when under pressure",
+      "What the play is called",
+      "Where she lives"
+    ],
+    "answer": "Her choices when under pressure",
+    "explanation": "Motives are revealed most clearly in what a character does when it costs her something.",
+    "topic": "eb-l3-3"
+  },
+  {
+    "id": "p54",
+    "question": "An essay asking whether we sympathise with a character should:",
+    "options": [
+      "Retell her story",
+      "Take a position and defend it with evidence from across the play",
+      "Describe the playwright's life",
+      "List the other characters"
+    ],
+    "answer": "Take a position and defend it with evidence from across the play",
+    "explanation": "A judgement question needs a position, evidence from several parts of the play, and an answer to the counter-argument.",
+    "topic": "eb-l3-3"
+  },
+  {
+    "id": "p55",
+    "question": "The order in which events actually happened is the:",
+    "options": [
+      "Plot",
+      "Story",
+      "Climax",
+      "Theme"
+    ],
+    "answer": "Story",
+    "explanation": "Story is chronological; plot is the order in which the writer chooses to present events.",
+    "topic": "eb-l4-1"
+  },
+  {
+    "id": "p56",
+    "question": "The order in which the writer presents events is the:",
+    "options": [
+      "Story",
+      "Plot",
+      "Setting",
+      "Genre"
+    ],
+    "answer": "Plot",
+    "explanation": "Plot is the arranged sequence of events, which may begin in the middle or move back in time.",
+    "topic": "eb-l4-1"
+  },
+  {
+    "id": "p57",
+    "question": "A scene that interrupts the present to show an earlier event is a:",
+    "options": [
+      "Flashback",
+      "Foreshadowing",
+      "Climax",
+      "Refrain"
+    ],
+    "answer": "Flashback",
+    "explanation": "A flashback controls what the reader knows and when they know it.",
+    "topic": "eb-l4-1"
+  },
+  {
+    "id": "p58",
+    "question": "The event that disturbs the balance of the situation at the start of a story is the:",
+    "options": [
+      "Resolution",
+      "Complication",
+      "Exposition",
+      "Setting"
+    ],
+    "answer": "Complication",
+    "explanation": "The complication (or inciting incident) sets the conflict in motion.",
+    "topic": "eb-l4-1"
+  },
+  {
+    "id": "p59",
+    "question": "A story that ends where it began has a:",
+    "options": [
+      "Linear structure",
+      "Circular structure",
+      "Framed structure",
+      "Open ending"
+    ],
+    "answer": "Circular structure",
+    "explanation": "A circular structure may suggest that little has changed, or that history repeats itself.",
+    "topic": "eb-l4-1"
+  },
+  {
+    "id": "p60",
+    "question": "An open ending:",
+    "options": [
+      "Resolves every conflict",
+      "Leaves the outcome unresolved for the reader to judge",
+      "Returns to the opening scene",
+      "Introduces the setting"
+    ],
+    "answer": "Leaves the outcome unresolved for the reader to judge",
+    "explanation": "Many modern Caribbean stories end open-ended, inviting the reader to weigh what has happened.",
+    "topic": "eb-l4-1"
+  },
+  {
+    "id": "p61",
+    "question": "'I walked into the yard and stopped.' This narrator is:",
+    "options": [
+      "Omniscient",
+      "First person",
+      "Third person limited",
+      "Objective"
+    ],
+    "answer": "First person",
+    "explanation": "The narrator uses 'I', so the account is first person and limited to what that character knows.",
+    "topic": "eb-l4-2"
+  },
+  {
+    "id": "p62",
+    "question": "A narrator who knows the thoughts of every character is:",
+    "options": [
+      "First person",
+      "Omniscient",
+      "Objective",
+      "Unreliable"
+    ],
+    "answer": "Omniscient",
+    "explanation": "An omniscient narrator moves freely between characters and knows everything.",
+    "topic": "eb-l4-2"
+  },
+  {
+    "id": "p63",
+    "question": "Revealing a character through speech, action, thoughts and the reactions of others is:",
+    "options": [
+      "Direct characterisation",
+      "Indirect characterisation",
+      "Foreshadowing",
+      "Registration"
+    ],
+    "answer": "Indirect characterisation",
+    "explanation": "Indirect methods let the reader draw conclusions about the character.",
+    "topic": "eb-l4-2"
+  },
+  {
+    "id": "p64",
+    "question": "A narrator whose account the reader cannot fully trust is:",
+    "options": [
+      "Omniscient",
+      "Unreliable",
+      "Objective",
+      "Detached"
+    ],
+    "answer": "Unreliable",
+    "explanation": "An unreliable narrator may be mistaken, limited or deliberately misleading.",
+    "topic": "eb-l4-2"
+  },
+  {
+    "id": "p65",
+    "question": "Point of view matters because it:",
+    "options": [
+      "Sets the story's ending",
+      "Controls how much the reader knows and judges",
+      "Determines the title",
+      "Decides the genre"
+    ],
+    "answer": "Controls how much the reader knows and judges",
+    "explanation": "The choice of narrator shapes what information reaches the reader and therefore how the reader judges.",
+    "topic": "eb-l4-2"
+  },
+  {
+    "id": "p66",
+    "question": "The time and place of a story is its:",
+    "options": [
+      "Setting",
+      "Theme",
+      "Plot",
+      "Tone"
+    ],
+    "answer": "Setting",
+    "explanation": "Setting includes the period, the social world of the characters and the physical place.",
+    "topic": "eb-l4-3"
+  },
+  {
+    "id": "p67",
+    "question": "Weather that mirrors a character's grief is an example of:",
+    "options": [
+      "Symbolism",
+      "Pathetic fallacy",
+      "Hyperbole",
+      "Flashback"
+    ],
+    "answer": "Pathetic fallacy",
+    "explanation": "Pathetic fallacy makes the weather reflect human feeling, preparing the reader for what follows.",
+    "topic": "eb-l4-3"
+  },
+  {
+    "id": "p68",
+    "question": "The feeling that a setting creates is its:",
+    "options": [
+      "Atmosphere",
+      "Register",
+      "Diction",
+      "Motive"
+    ],
+    "answer": "Atmosphere",
+    "explanation": "Atmosphere is built from imagery, weather, light, colour, sound and smell.",
+    "topic": "eb-l4-3"
+  },
+  {
+    "id": "p69",
+    "question": "An object that stands for something beyond itself is a:",
+    "options": [
+      "Symbol",
+      "Simile",
+      "Refrain",
+      "Caesura"
+    ],
+    "answer": "Symbol",
+    "explanation": "Symbols gain meaning from repetition and context, so they must be tracked through the text.",
+    "topic": "eb-l4-3"
+  },
+  {
+    "id": "p70",
+    "question": "Setting carries social meaning because it:",
+    "options": [
+      "Is chosen at random",
+      "Places characters under particular pressures",
+      "Replaces characterisation",
+      "Is usually described in one word"
+    ],
+    "answer": "Places characters under particular pressures",
+    "explanation": "A yard, a plantation house or a crowded bus makes particular conflicts and pressures believable.",
+    "topic": "eb-l4-3"
+  },
+  {
+    "id": "p71",
+    "question": "Writing that aims to convince the reader to agree is:",
+    "options": [
+      "Informative",
+      "Persuasive",
+      "Descriptive",
+      "Reflective"
+    ],
+    "answer": "Persuasive",
+    "explanation": "Persuasion seeks to change the reader's mind, often combining appeal with evidence.",
+    "topic": "eb-l5-1"
+  },
+  {
+    "id": "p72",
+    "question": "The intended readers of a text are its:",
+    "options": [
+      "Register",
+      "Audience",
+      "Form",
+      "Purpose"
+    ],
+    "answer": "Audience",
+    "explanation": "Audience shapes register, vocabulary and sentence length.",
+    "topic": "eb-l5-1"
+  },
+  {
+    "id": "p73",
+    "question": "The level of formality of a writer's language is its:",
+    "options": [
+      "Register",
+      "Form",
+      "Style of argument",
+      "Bias"
+    ],
+    "answer": "Register",
+    "explanation": "Register shifts with audience and situation, from formal report to informal diary entry.",
+    "topic": "eb-l5-1"
+  },
+  {
+    "id": "p74",
+    "question": "Which form opens with a salutation and closes with a sign-off?",
+    "options": [
+      "An editorial",
+      "A letter",
+      "A report",
+      "A speech"
+    ],
+    "answer": "A letter",
+    "explanation": "Letters follow the convention of a greeting and a closing, unlike an editorial or report.",
+    "topic": "eb-l5-1"
+  },
+  {
+    "id": "p75",
+    "question": "In an argument, the claim is:",
+    "options": [
+      "The evidence offered",
+      "The position the writer wants you to accept",
+      "The writer's tone",
+      "The counter-argument"
+    ],
+    "answer": "The position the writer wants you to accept",
+    "explanation": "The claim is the proposition; the evidence and reasoning are meant to support it.",
+    "topic": "eb-l5-1"
+  },
+  {
+    "id": "p76",
+    "question": "An appeal to the reader's emotions is:",
+    "options": [
+      "Logos",
+      "Ethos",
+      "Pathos",
+      "Register"
+    ],
+    "answer": "Pathos",
+    "explanation": "Pathos works through feeling, using vivid and emotive language.",
+    "topic": "eb-l5-2"
+  },
+  {
+    "id": "p77",
+    "question": "An appeal to reason, evidence and statistics is:",
+    "options": [
+      "Logos",
+      "Ethos",
+      "Pathos",
+      "Bias"
+    ],
+    "answer": "Logos",
+    "explanation": "Logos persuades through logic, evidence and example.",
+    "topic": "eb-l5-2"
+  },
+  {
+    "id": "p78",
+    "question": "An appeal based on the writer's credibility and trustworthiness is:",
+    "options": [
+      "Pathos",
+      "Logos",
+      "Ethos",
+      "Refrain"
+    ],
+    "answer": "Ethos",
+    "explanation": "Ethos depends on the authority and character the writer projects.",
+    "topic": "eb-l5-2"
+  },
+  {
+    "id": "p79",
+    "question": "'Do we really want our children to breathe this air?' is a:",
+    "options": [
+      "Rhetorical question",
+      "Rule of three",
+      "Simile",
+      "Caesura"
+    ],
+    "answer": "Rhetorical question",
+    "explanation": "A rhetorical question is asked for effect, not for an answer, and draws the reader into agreement.",
+    "topic": "eb-l5-2"
+  },
+  {
+    "id": "p80",
+    "question": "'Education, health, security' is an example of:",
+    "options": [
+      "The rule of three",
+      "Oxymoron",
+      "Hyperbole",
+      "Diction"
+    ],
+    "answer": "The rule of three",
+    "explanation": "Groups of three sound complete and memorable, which is why they are common in speeches.",
+    "topic": "eb-l5-2"
+  },
+  {
+    "id": "p81",
+    "question": "A statement that can be verified is a:",
+    "options": [
+      "Fact",
+      "Opinion",
+      "Claim",
+      "Rumour"
+    ],
+    "answer": "Fact",
+    "explanation": "Facts can be checked; opinions express judgements that can be argued with.",
+    "topic": "eb-l5-3"
+  },
+  {
+    "id": "p82",
+    "question": "'Experts say' weakens an argument because:",
+    "options": [
+      "It is too long",
+      "The source is not named",
+      "It uses emotion",
+      "It is an opinion"
+    ],
+    "answer": "The source is not named",
+    "explanation": "Vague attribution creates an impression of authority without allowing the reader to check it.",
+    "topic": "eb-l5-3"
+  },
+  {
+    "id": "p83",
+    "question": "Bias in a text means that:",
+    "options": [
+      "The facts are invented",
+      "The writer's standpoint distorts the presentation of evidence",
+      "The text is too short",
+      "The writer uses statistics"
+    ],
+    "answer": "The writer's standpoint distorts the presentation of evidence",
+    "explanation": "Every writer has a standpoint; the fault lies in hiding or distorting evidence to serve it.",
+    "topic": "eb-l5-3"
+  },
+  {
+    "id": "p84",
+    "question": "A critical reader always asks:",
+    "options": [
+      "How long is the text?",
+      "Whose voice is missing from the text?",
+      "Who printed the text?",
+      "How many paragraphs are there?"
+    ],
+    "answer": "Whose voice is missing from the text?",
+    "explanation": "Noticing absent voices reveals whose interests the text serves.",
+    "topic": "eb-l5-3"
+  },
+  {
+    "id": "p85",
+    "question": "Annotating a non-fiction passage helps because it:",
+    "options": [
+      "Replaces reading the passage",
+      "Becomes a plan for your answer",
+      "Proves the writer is wrong",
+      "Shortens the passage"
+    ],
+    "answer": "Becomes a plan for your answer",
+    "explanation": "Underlining claims and bracketing evidence turns a passage into a workable plan.",
+    "topic": "eb-l5-3"
+  },
+  {
+    "id": "p86",
+    "question": "The first step in answering an essay question is to:",
+    "options": [
+      "Start writing immediately",
+      "Identify the focus of the question",
+      "List every character",
+      "Plan a conclusion"
+    ],
+    "answer": "Identify the focus of the question",
+    "explanation": "Unpacking the key word and the focus (character, theme, technique) comes before planning.",
+    "topic": "eb-l6-1"
+  },
+  {
+    "id": "p87",
+    "question": "A line of argument is:",
+    "options": [
+      "A summary of the plot",
+      "The position you defend throughout the essay",
+      "The first sentence of the introduction",
+      "A list of quotations"
+    ],
+    "answer": "The position you defend throughout the essay",
+    "explanation": "A literature essay is an argument, so it needs a position defended from beginning to end.",
+    "topic": "eb-l6-1"
+  },
+  {
+    "id": "p88",
+    "question": "A topic sentence:",
+    "options": [
+      "Quotes the text",
+      "States the point of the paragraph",
+      "Concludes the essay",
+      "Names the writer"
+    ],
+    "answer": "States the point of the paragraph",
+    "explanation": "The topic sentence tells the examiner what the paragraph will argue.",
+    "topic": "eb-l6-1"
+  },
+  {
+    "id": "p89",
+    "question": "Body paragraphs in a literature essay should be organised:",
+    "options": [
+      "In the order events happen",
+      "By idea",
+      "By length",
+      "Alphabetically"
+    ],
+    "answer": "By idea",
+    "explanation": "Organising by idea produces an argument; retelling in chronological order produces summary.",
+    "topic": "eb-l6-1"
+  },
+  {
+    "id": "p90",
+    "question": "The conclusion of a literature essay should:",
+    "options": [
+      "Repeat the introduction word for word",
+      "State what the argument has shown",
+      "Introduce a new character",
+      "List the quotations used"
+    ],
+    "answer": "State what the argument has shown",
+    "explanation": "A conclusion should gather the argument into a final position rather than restate the opening.",
+    "topic": "eb-l6-1"
+  },
+  {
+    "id": "p91",
+    "question": "Short quotations are most effective when they are:",
+    "options": [
+      "Copied out as a block",
+      "Embedded in your own sentence",
+      "Placed at the end of the essay",
+      "Left unexplained"
+    ],
+    "answer": "Embedded in your own sentence",
+    "explanation": "Embedding keeps your prose fluent and shows control of the material.",
+    "topic": "eb-l6-2"
+  },
+  {
+    "id": "p92",
+    "question": "PEE stands for:",
+    "options": [
+      "Point, evidence, explanation",
+      "Poem, essay, evaluation",
+      "Plot, ending, emotion",
+      "Punctuation, expression, emphasis"
+    ],
+    "answer": "Point, evidence, explanation",
+    "explanation": "Point, evidence, explanation is the structure that keeps analysis honest and developed.",
+    "topic": "eb-l6-2"
+  },
+  {
+    "id": "p93",
+    "question": "Good analysis focuses on:",
+    "options": [
+      "The general idea of the quotation",
+      "The effect of specific words",
+      "How long the quotation is",
+      "The number of quotations used"
+    ],
+    "answer": "The effect of specific words",
+    "explanation": "Analysing why the writer chose 'sea' rather than 'field' is what moves an answer into the top band.",
+    "topic": "eb-l6-2"
+  },
+  {
+    "id": "p94",
+    "question": "A paraphrase of a quotation must be:",
+    "options": [
+      "Marked as a quotation",
+      "Accurate and signalled clearly",
+      "Written in verse",
+      "At least three lines long"
+    ],
+    "answer": "Accurate and signalled clearly",
+    "explanation": "Paraphrase is acceptable when accurate and signalled, but a quotation must never be invented.",
+    "topic": "eb-l6-2"
+  },
+  {
+    "id": "p95",
+    "question": "If you cannot remember an exact quotation, you should:",
+    "options": [
+      "Invent a line that sounds right",
+      "Describe the moment accurately and paraphrase",
+      "Leave the evidence out entirely",
+      "Quote a different text"
+    ],
+    "answer": "Describe the moment accurately and paraphrase",
+    "explanation": "Examiners reward accurate knowledge of the text, not invented evidence.",
+    "topic": "eb-l6-2"
+  },
+  {
+    "id": "p96",
+    "question": "Before writing in an examination you should:",
+    "options": [
+      "Choose the shortest question",
+      "Budget your time across the questions",
+      "Write the conclusion first",
+      "Copy the question"
+    ],
+    "answer": "Budget your time across the questions",
+    "explanation": "Dividing the available minutes between the questions leaves time to plan and proofread.",
+    "topic": "eb-l6-3"
+  },
+  {
+    "id": "p97",
+    "question": "The command word 'explain' requires you to:",
+    "options": [
+      "Give a single fact",
+      "Give reasons",
+      "Draw a diagram",
+      "Write a list"
+    ],
+    "answer": "Give reasons",
+    "explanation": "Explain means give reasons, whereas state or identify needs only a fact.",
+    "topic": "eb-l6-3"
+  },
+  {
+    "id": "p98",
+    "question": "Which is a common pitfall that loses marks?",
+    "options": [
+      "Using quotations",
+      "Retelling the plot instead of answering the question",
+      "Planning before writing",
+      "Naming the writer"
+    ],
+    "answer": "Retelling the plot instead of answering the question",
+    "explanation": "Plot summary does not answer an analysis question, however fluent it is.",
+    "topic": "eb-l6-3"
+  },
+  {
+    "id": "p99",
+    "question": "Proofreading at the end of an examination is mainly for:",
+    "options": [
+      "Rewriting the whole essay",
+      "Basics such as tense, spelling of names and paragraphing",
+      "Adding new arguments",
+      "Counting the words"
+    ],
+    "answer": "Basics such as tense, spelling of names and paragraphing",
+    "explanation": "A clean, well-organised script reads as confident and is easier for the examiner to follow.",
+    "topic": "eb-l6-3"
+  },
+  {
+    "id": "p100",
+    "question": "When a question has two parts, you should:",
+    "options": [
+      "Answer only the part you know best",
+      "Answer both parts fully",
+      "Answer the first part in detail and refer briefly to the second",
+      "Choose one part and explain why"
+    ],
+    "answer": "Answer both parts fully",
+    "explanation": "Ignoring the second half of a two-part question is one of the most common ways to lose marks.",
+    "topic": "eb-l6-3"
+  }
+]

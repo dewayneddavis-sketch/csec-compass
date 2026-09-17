@@ -1,0 +1,327 @@
+[
+  {
+    "id": "kc1",
+    "question": "Which of these texts is prose non-fiction?",
+    "options": [
+      "A poem about a hurricane",
+      "A play set in a village yard",
+      "A biography of a cricketer",
+      "A short story about a boy"
+    ],
+    "answer": "A biography of a cricketer",
+    "explanation": "Biography deals with real people and events, which makes it non-fiction prose.",
+    "topic": "eb-l1-1"
+  },
+  {
+    "id": "kc2",
+    "question": "A text built from dialogue and stage directions is:",
+    "options": [
+      "Prose fiction",
+      "Drama",
+      "Poetry",
+      "An essay"
+    ],
+    "answer": "Drama",
+    "explanation": "Drama is written to be performed, so dialogue and stage directions replace a narrator.",
+    "topic": "eb-l1-1"
+  },
+  {
+    "id": "kc3",
+    "question": "Working out that a character is ashamed, though the text never says so, is:",
+    "options": [
+      "Literal reading",
+      "Inference",
+      "Scanning",
+      "Summarising"
+    ],
+    "answer": "Inference",
+    "explanation": "Inference is meaning the reader draws from clues in the text.",
+    "topic": "eb-l1-2"
+  },
+  {
+    "id": "kc4",
+    "question": "Which answer structure earns the most marks?",
+    "options": [
+      "A long summary",
+      "A point supported by evidence and explained",
+      "A personal opinion",
+      "A list of quotations"
+    ],
+    "answer": "A point supported by evidence and explained",
+    "explanation": "Point, evidence and explanation together show both knowledge and understanding.",
+    "topic": "eb-l1-2"
+  },
+  {
+    "id": "kc5",
+    "question": "The theme of a text is best described as:",
+    "options": [
+      "What happens in it",
+      "The idea it explores",
+      "The place it is set in",
+      "The order of events"
+    ],
+    "answer": "The idea it explores",
+    "explanation": "Theme is the idea carried by the subject, such as loss, identity or justice.",
+    "topic": "eb-l1-3"
+  },
+  {
+    "id": "kc6",
+    "question": "'The sun smiled on the village' uses:",
+    "options": [
+      "Simile",
+      "Personification",
+      "Hyperbole",
+      "Onomatopoeia"
+    ],
+    "answer": "Personification",
+    "explanation": "Giving the sun the human ability to smile is personification.",
+    "topic": "eb-l2-1"
+  },
+  {
+    "id": "kc7",
+    "question": "Which device compares two things using 'like' or 'as'?",
+    "options": [
+      "Metaphor",
+      "Simile",
+      "Oxymoron",
+      "Refrain"
+    ],
+    "answer": "Simile",
+    "explanation": "A simile makes its comparison explicit through 'like' or 'as'.",
+    "topic": "eb-l2-1"
+  },
+  {
+    "id": "kc8",
+    "question": "A poem whose sentences run past the ends of its lines uses:",
+    "options": [
+      "Caesura",
+      "Enjambment",
+      "Refrain",
+      "Rhyme"
+    ],
+    "answer": "Enjambment",
+    "explanation": "Enjambment carries the sentence beyond the line break, often quickening the pace.",
+    "topic": "eb-l2-2"
+  },
+  {
+    "id": "kc9",
+    "question": "A rhyme scheme is:",
+    "options": [
+      "The pattern of end rhymes",
+      "The speed of reading",
+      "The number of stanzas",
+      "The subject of the poem"
+    ],
+    "answer": "The pattern of end rhymes",
+    "explanation": "Rhyme schemes are shown with letters such as abab or abcb.",
+    "topic": "eb-l2-2"
+  },
+  {
+    "id": "kc10",
+    "question": "Tone is best defined as:",
+    "options": [
+      "The reader's feeling",
+      "The speaker's attitude",
+      "The poem's length",
+      "The poet's birthplace"
+    ],
+    "answer": "The speaker's attitude",
+    "explanation": "Tone is the attitude of the speaker, detected through diction and imagery.",
+    "topic": "eb-l2-3"
+  },
+  {
+    "id": "kc11",
+    "question": "A comparison essay on two poems is strongest when it:",
+    "options": [
+      "Describes each poem separately",
+      "Is organised around a shared basis",
+      "Quotes the poets' biographies",
+      "Lists every device found"
+    ],
+    "answer": "Is organised around a shared basis",
+    "explanation": "A shared basis such as theme or tone lets the essay move between the poems throughout.",
+    "topic": "eb-l2-3"
+  },
+  {
+    "id": "kc12",
+    "question": "Stage directions are important because they:",
+    "options": [
+      "Tell the actors their wages",
+      "Carry meaning about action and staging",
+      "Replace the dialogue",
+      "Explain the playwright's life"
+    ],
+    "answer": "Carry meaning about action and staging",
+    "explanation": "Entrances, props and lighting can carry meaning as strongly as dialogue.",
+    "topic": "eb-l3-1"
+  },
+  {
+    "id": "kc13",
+    "question": "An aside differs from a soliloquy because an aside:",
+    "options": [
+      "Is always in verse",
+      "Is heard by the audience but not the other characters on stage",
+      "Is spoken by the narrator",
+      "Ends the play"
+    ],
+    "answer": "Is heard by the audience but not the other characters on stage",
+    "explanation": "Both address the audience, but the aside is short and made while others are present.",
+    "topic": "eb-l3-2"
+  },
+  {
+    "id": "kc14",
+    "question": "The audience knows a character's plan will fail, but he does not. This is:",
+    "options": [
+      "Foreshadowing",
+      "Dramatic irony",
+      "Falling action",
+      "Juxtaposition"
+    ],
+    "answer": "Dramatic irony",
+    "explanation": "Dramatic irony depends on the gap between the audience's knowledge and the character's.",
+    "topic": "eb-l3-2"
+  },
+  {
+    "id": "kc15",
+    "question": "A character's motivation is:",
+    "options": [
+      "Her accent",
+      "The reason for her actions",
+      "Her costume",
+      "Her position on stage"
+    ],
+    "answer": "The reason for her actions",
+    "explanation": "Motivation explains why a character acts, and it shows most clearly under pressure.",
+    "topic": "eb-l3-3"
+  },
+  {
+    "id": "kc16",
+    "question": "The difference between story and plot is that plot:",
+    "options": [
+      "Is the order events happened in",
+      "Is the order in which the writer presents events",
+      "Is the theme",
+      "Is the setting"
+    ],
+    "answer": "Is the order in which the writer presents events",
+    "explanation": "Writers rearrange events to control what the reader knows and when.",
+    "topic": "eb-l4-1"
+  },
+  {
+    "id": "kc17",
+    "question": "A story that begins with its ending and moves backwards uses:",
+    "options": [
+      "A flashback structure",
+      "An open ending",
+      "Linear structure",
+      "A frame narrative"
+    ],
+    "answer": "A flashback structure",
+    "explanation": "Flashback allows the writer to reveal the past at a chosen moment.",
+    "topic": "eb-l4-1"
+  },
+  {
+    "id": "kc18",
+    "question": "A narrator who moves freely between the minds of all the characters is:",
+    "options": [
+      "First person",
+      "Third person omniscient",
+      "Objective",
+      "Unreliable"
+    ],
+    "answer": "Third person omniscient",
+    "explanation": "An omniscient narrator knows everything and can enter any character's thoughts.",
+    "topic": "eb-l4-2"
+  },
+  {
+    "id": "kc19",
+    "question": "Showing what a character is like through her actions is:",
+    "options": [
+      "Direct characterisation",
+      "Indirect characterisation",
+      "Exposition",
+      "Pathetic fallacy"
+    ],
+    "answer": "Indirect characterisation",
+    "explanation": "Indirect methods make the reader draw the conclusion about the character.",
+    "topic": "eb-l4-2"
+  },
+  {
+    "id": "kc20",
+    "question": "A storm breaking at the moment of a family quarrel is an example of:",
+    "options": [
+      "Pathetic fallacy",
+      "Oxymoron",
+      "Flashback",
+      "Aside"
+    ],
+    "answer": "Pathetic fallacy",
+    "explanation": "Pathetic fallacy mirrors human feeling in the weather or setting.",
+    "topic": "eb-l4-3"
+  },
+  {
+    "id": "kc21",
+    "question": "Purpose, audience and form are useful first questions because they:",
+    "options": [
+      "Reveal the writer's name",
+      "Explain why a text is written as it is",
+      "Show the text's length",
+      "Give the text's date"
+    ],
+    "answer": "Explain why a text is written as it is",
+    "explanation": "Establishing who wrote it, for whom, and to what end explains the choices in the text.",
+    "topic": "eb-l5-1"
+  },
+  {
+    "id": "kc22",
+    "question": "The words 'plague', 'flood' and 'invasion' in a report are examples of:",
+    "options": [
+      "Emotive language",
+      "Simile",
+      "Onomatopoeia",
+      "Rhyme"
+    ],
+    "answer": "Emotive language",
+    "explanation": "Emotive words push the reader towards a conclusion before the evidence is weighed.",
+    "topic": "eb-l5-2"
+  },
+  {
+    "id": "kc23",
+    "question": "'It is widely believed that...' is weak evidence because:",
+    "options": [
+      "It is an opinion",
+      "The source is unnamed",
+      "It is too long",
+      "It uses statistics"
+    ],
+    "answer": "The source is unnamed",
+    "explanation": "Unnamed authority cannot be checked, so it must be treated with caution.",
+    "topic": "eb-l5-3"
+  },
+  {
+    "id": "kc24",
+    "question": "An introduction should:",
+    "options": [
+      "Summarise the plot",
+      "Name the text and writer and state your line of argument",
+      "List all the characters",
+      "Quote the longest line"
+    ],
+    "answer": "Name the text and writer and state your line of argument",
+    "explanation": "The introduction sets up the argument that the body paragraphs will develop.",
+    "topic": "eb-l6-1"
+  },
+  {
+    "id": "kc25",
+    "question": "Which approach best answers a 'discuss' question?",
+    "options": [
+      "Give one fact",
+      "Present a balanced argument and reach a judgement",
+      "Retell the story",
+      "List quotations"
+    ],
+    "answer": "Present a balanced argument and reach a judgement",
+    "explanation": "Discuss requires both sides and a conclusion, supported by evidence.",
+    "topic": "eb-l6-3"
+  }
+]

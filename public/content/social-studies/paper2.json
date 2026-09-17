@@ -1,0 +1,615 @@
+[
+  {
+    "id": "ss-p2-01",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "A household in rural St Elizabeth",
+    "topic": "ss-l1-2",
+    "commandWords": [
+      "Identify",
+      "Explain",
+      "Suggest"
+    ],
+    "marks": 24,
+    "suggestedMinutes": 28,
+    "source": "Miss Ivy, a 58-year-old grandmother, lives in a rural district in St Elizabeth. Her two sons have migrated to the United States and send money when they can. Miss Ivy cares for three grandchildren while their mother works as a hotel housekeeper an hour away. The eldest grandchild, Darren (15), helps with farming before school and supervises his younger brother and sister in the evenings, but his teacher reports he is often tired and has missed several days of school.\n\nThe household has no piped water. Each morning the children fetch water from a standpipe a kilometre away before walking to school. Miss Ivy says, 'We manage, but I worry about Darren. He is growing up too fast.'",
+    "prompt": "Study the scenario above and answer ALL parts of the question.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify TWO family structures present in the scenario.",
+        "marks": 4,
+        "commandWords": [
+          "Identify"
+        ],
+        "modelAnswer": "The scenario shows a single-parent household (the mother raises the children while the father is absent) and a grandparent-headed or extended family, because Miss Ivy, a grandmother, is the main caregiver. A sibling-headed arrangement also appears in part, since Darren supervises the younger children in the evenings.",
+        "markScheme": [
+          "1 mark for each correctly identified structure (maximum 2 marks): single-parent family; extended family; grandparent-headed household.",
+          "1 mark each for a supporting detail from the scenario (maximum 2 marks), e.g. the mother works away from home; Miss Ivy cares for the grandchildren; the sons have migrated."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain TWO ways in which migration has affected the functioning of this family.",
+        "marks": 8,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "First, migration has redistributed responsibility. The migrant sons cannot share daily care, so parenting falls on Miss Ivy and Darren, and Darren takes on adult duties before he is ready. This is a change in the roles and responsibilities within the family rather than a loss of the family itself. Second, remittances create economic dependence: the household relies on money from abroad for food and school expenses, which lifts income when transfers arrive but leaves the family vulnerable when they do not. Because the Caribbean has one of the world's highest rates of migration, this pattern is common: the family survives, but the cost is paid in the time and schooling of the youngest members.",
+        "markScheme": [
+          "1 mark for each clearly stated effect (maximum 2 marks).",
+          "1 mark for explaining how the effect works (maximum 2 marks).",
+          "1 mark for a relevant example or supporting detail from the scenario (maximum 2 marks).",
+          "1 mark for a conclusion that weighs the effect (maximum 2 marks)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Suggest TWO measures that the school, community or government could take to support families like this one, and say why each measure would help.",
+        "marks": 12,
+        "commandWords": [
+          "Suggest",
+          "Justify"
+        ],
+        "modelAnswer": "A school could run a homework and breakfast club for students who bear household duties; this would recover teaching time for children like Darren, since the scenario shows the problem is exhaustion rather than ability. The parish council or a community group could extend the piped water supply or install a community tank, which would remove a daily burden that currently costs the children hours and puts their safety at risk. A government ministry could strengthen the Programme of Advancement Through Health and Education (PATH) or similar cash transfers targeted at grandparent-headed households, because regular, predictable support helps most where remittances are irregular. Each measure is realistic, affordable at community level, and aimed at a specific cause identified in the scenario rather than at the symptom of tiredness alone.",
+        "markScheme": [
+          "1 mark for each appropriate measure (maximum 2 marks).",
+          "1 mark for each explanation of how the measure addresses a specific cause in the scenario (maximum 4 marks).",
+          "1 mark each for feasibility of the measure, including who carries it out (maximum 2 marks).",
+          "1-4 marks for the coherence and justification of the whole answer."
+        ]
+      }
+    ],
+    "planningHints": [
+      "Underline the command words: identify (a), explain (b), suggest and justify (c).",
+      "Work through the scenario and label the evidence: who lives there, who earns, who cares, who is affected.",
+      "For each 'explain' point, use the chain: what happened - how it works - what is the result."
+    ],
+    "examinerTips": "Part (a) rewards precise terminology from the syllabus, so use the correct names for family types. In (b) and (c), general answers that could apply to any family earn little; link every point to a detail from the scenario."
+  },
+  {
+    "id": "ss-p2-02",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "A youth group and a falling domino club",
+    "topic": "ss-l2-1",
+    "commandWords": [
+      "Distinguish",
+      "Explain"
+    ],
+    "marks": 20,
+    "suggestedMinutes": 24,
+    "source": "The Sunrise Youth Group in a small town has forty members who meet fortnightly to plan community projects. Meetings are run by an elected chairperson and secretary, decisions are recorded in minutes, and membership is open to anyone aged 14 to 25 who pays a monthly subscription of $200. Recently the group cleaned a playing field, organised a back-to-school drive and lobbied the parish council for street lights.\n\nWithin the group, a much smaller circle of six friends, who have known each other since primary school, plans most activities informally. They meet on the corner most evenings, share everything from lunch money to family problems, and are widely known as the group's real leaders.",
+    "prompt": "Study the scenario above and answer BOTH parts of the question.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Distinguish between a primary group and a secondary group, using examples from the scenario to support your answer.",
+        "marks": 8,
+        "commandWords": [
+          "Distinguish"
+        ],
+        "modelAnswer": "A primary group is small, personal and lasting, based on face-to-face relationships and emotional ties; the six friends who have known each other since primary school, share lunch money and talk about family problems, are a primary group. A secondary group is larger, more formal and goal-oriented, with rules and specific purposes. The Sunrise Youth Group is a secondary group: it has forty members, a subscription, elected officers, minutes and community projects. The relationship is that primary groups often form inside secondary groups and can influence how the larger group behaves, as the scenario shows.",
+        "markScheme": [
+          "1 mark for defining a primary group (small, personal, lasting) and 1 mark for an example from the scenario (2 marks).",
+          "1 mark for defining a secondary group (larger, formal, goal-oriented) and 1 mark for an example (2 marks).",
+          "1-2 marks for a clear contrast between the two (e.g. emotional ties versus formal rules).",
+          "1-2 marks for a conclusion that links the two concepts to the scenario."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain TWO ways in which the small informal group of friends influences the wider youth group.",
+        "marks": 12,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "First, the friends set the group's informal agenda. Because they meet daily, ideas are settled before the fortnightly meeting, so formal decisions tend to ratify what has already been agreed; the elected officers are then carrying out the informal group's choices. Second, they act as a channel of communication and social control: members who want to be part of the group's inner circle adopt its norms, and members who disagree may quietly withdraw rather than challenge the leaders. Both effects can be positive when the values of the friends match the group's goals, as with the back-to-school drive, but they can also undermine the democratic process the group claims to follow, because decisions are effectively made outside the documented meetings.",
+        "markScheme": [
+          "1 mark for each clearly stated way (maximum 2 marks).",
+          "1 mark each for explaining the process involved (maximum 4 marks).",
+          "1 mark each for using evidence from the scenario (maximum 2 marks).",
+          "1-4 marks for analysis, including whether the influence is constructive or destructive."
+        ]
+      }
+    ],
+    "planningHints": [
+      "List the features of each group in two columns before you write: size, rules, purpose, emotional ties.",
+      "In (b), think along two lines: how decisions get made, and how people are socialised."
+    ],
+    "examinerTips": "Distinguish questions need differences, not two definitions side by side. Use the word 'whereas' to make the contrast explicit, and always anchor your answer in the scenario."
+  },
+  {
+    "id": "ss-p2-03",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "Low turnout at the parish council election",
+    "topic": "ss-l3-1",
+    "commandWords": [
+      "Identify",
+      "Explain",
+      "Evaluate"
+    ],
+    "marks": 25,
+    "suggestedMinutes": 30,
+    "source": "In a recent parish council election, only 31% of registered voters turned out. Exit surveys suggested several reasons: young people said 'politics has nothing to do with us'; many said they had never met the candidates; others said the council had done nothing about drain cleaning and street lighting in their communities. One candidate was returned unopposed.\n\nThe local newspaper commented: 'Democracy is not a spectator sport. When the people stay at home, the decisions still get made - only without them.'",
+    "prompt": "Study the scenario above and answer ALL parts of the question.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify TWO features of a democratic system of government illustrated by the scenario.",
+        "marks": 4,
+        "commandWords": [
+          "Identify"
+        ],
+        "modelAnswer": "The scenario illustrates the conduct of free and periodic elections, since a parish council election was held and voters could decide whether or not to participate. It also illustrates popular participation or the right of adult citizens to vote, because the level of turnout measures how far that right is used. The newspaper's comment adds a third feature, accountability, since the comment draws attention to elected representatives making decisions in the people's name.",
+        "markScheme": [
+          "1 mark for each accurate feature named (maximum 2 marks).",
+          "1 mark each for a supporting reference to the scenario (maximum 2 marks)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain TWO reasons why low voter turnout may be a problem for the community.",
+        "marks": 9,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "Low turnout weakens representation: if councils are chosen by a minority, decisions on drains, street lighting and community projects may not reflect the needs of the majority, and groups that stay away - often young people - are the least likely to be served. Low turnout also weakens accountability and legitimacy: representatives who know that only a third of voters turn out have less pressure to report back, and residents who feel unrepresented are even less likely to engage next time, which deepens the cycle. Over time, a community can accept the newspaper's warning as normal, and decisions are then made without the people they affect.",
+        "markScheme": [
+          "1 mark for each clearly stated reason (maximum 2 marks).",
+          "1 mark each for explaining how the reason produces the problem (maximum 4 marks).",
+          "1 mark each for evidence drawn from the scenario (maximum 2 marks).",
+          "1 mark for a concluding link between turnout and democratic health."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Suggest TWO practical measures that could raise youth participation in local elections, and evaluate which is likely to be more effective.",
+        "marks": 12,
+        "commandWords": [
+          "Suggest",
+          "Evaluate"
+        ],
+        "modelAnswer": "One measure is voter education and school-based civic programmes, including mock elections and candidate debates for students in the term before an election; this attacks the belief that politics has nothing to do with them by showing how council decisions affect drains, buses and lighting. A second measure is making participation easier and more visible: registration drives in schools and colleges, weekend voting, and community meetings held in the evenings at times that suit working people. Civic education is likely to be more effective in the long term, because it changes the attitudes recorded in the exit survey, but it works slowly. Registration and convenience measures produce faster increases in turnout. The strongest approach is a combination: voter education to build the will, and easier registration and voting to remove the obstacles.",
+        "markScheme": [
+          "1 mark for each suitable measure (maximum 2 marks).",
+          "1-2 marks for explaining how each measure would work.",
+          "1-2 marks for evidence of feasibility and who would implement it.",
+          "1-4 marks for a reasoned judgement on effectiveness, with a criterion such as speed, cost or durability.",
+          "1-2 marks for a conclusion that weighs the strengths and weaknesses."
+        ]
+      }
+    ],
+    "planningHints": [
+      "For (c) choose a criterion before you judge: cost, speed, or how lasting the effect is.",
+      "Use democratic vocabulary accurately: participation, representation, legitimacy, accountability."
+    ],
+    "examinerTips": "'Evaluate' is not 'describe'. Weigh the two measures against each other and reach a clear position; candidates who simply describe two good ideas rarely reach the top band."
+  },
+  {
+    "id": "ss-p2-04",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "A new bill and three branches",
+    "topic": "ss-l3-2",
+    "commandWords": [
+      "Outline",
+      "Explain"
+    ],
+    "marks": 22,
+    "suggestedMinutes": 26,
+    "source": "A bill proposing a ban on single-use plastic bags and containers passes through its stages in the legislature. During debate, one member argues that the ban will destroy small businesses that package food in cheap containers. Another points out that drains blocked by plastic were a major cause of flooding in two parishes last year. A consumer group sends written submissions. The bill is amended to allow a one-year transition period and an exemption for small vendors. It is then sent for approval before becoming law, and it becomes the responsibility of a ministry and its agencies to enforce it. A business association sues, arguing that a fine imposed without warning was unlawful, and the dispute goes to court.",
+    "prompt": "Study the scenario above and answer BOTH parts of the question.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Outline the role performed by each of the three branches of government in the scenario.",
+        "marks": 10,
+        "commandWords": [
+          "Outline"
+        ],
+        "modelAnswer": "The legislature makes the law: it debates the bill, hears submissions from a consumer group and amends it to include a transition period and an exemption. The executive administers and enforces the law: the ministry and its agencies are given responsibility for implementing the ban. The judiciary interprets the law and settles disputes: the court decides whether the fine imposed without warning was lawful. Together the three branches show separation of powers, with each branch checked by the others.",
+        "markScheme": [
+          "1-2 marks for identifying the branch that makes law and its role.",
+          "1-2 marks for identifying the branch that administers law and its role.",
+          "1-2 marks for identifying the branch that interprets law and its role.",
+          "1-2 marks for evidence drawn from the scenario for each branch.",
+          "1-2 marks for linking the branches to the principle of separation of powers."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain TWO ways in which the amendment process in the scenario illustrates democratic government.",
+        "marks": 12,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "First, it shows consultation and representation: members debated competing interests - small businesses against public health and flood control - and a consumer group was able to make written submissions, so the law was shaped by more than one voice. Second, it shows compromise and the protection of minorities, because the bill was amended to add a transition period and an exemption for small vendors. A rigid law would have driven small traders out of business; the amendment reduces harm while keeping the policy's environmental aim. Both features show a government that can be influenced by argument and evidence, which is the essence of democratic law-making.",
+        "markScheme": [
+          "1 mark for each way identified (maximum 2 marks).",
+          "1 mark each for explaining how that way works in practice (maximum 4 marks).",
+          "1 mark each for supporting reference to the scenario (maximum 2 marks).",
+          "1-4 marks for the depth of the explanation and the concluding link to democracy."
+        ]
+      }
+    ],
+    "planningHints": [
+      "Sort the events in the scenario into three piles: making, carrying out, judging.",
+      "For (b) ask who benefited and who was protected by the amendment."
+    ],
+    "examinerTips": "Do not confuse the branches. The court does not make law, and the ministry does not decide who wins a dispute. Precision here earns marks quickly."
+  },
+  {
+    "id": "ss-p2-05",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "Free movement under the CSME",
+    "topic": "ss-l4-1",
+    "commandWords": [
+      "Identify",
+      "Explain",
+      "Discuss"
+    ],
+    "marks": 25,
+    "suggestedMinutes": 30,
+    "source": "Renée, a qualified nurse from Jamaica, applies for a post in Barbados under the free movement of skilled persons arrangements of the CARICOM Single Market and Economy. She finds the paperwork slow and is told her certificate must be verified before she can begin work. Six months later she is employed and sends money home each month. Her new hospital says she was hard to replace.\n\nMeanwhile, a small manufacturer in the region complains that he cannot sell his sauces in a neighbouring territory because of standards that differ from his own. 'CARICOM works for the big players,' he says. A regional official replies that the region has no choice but to integrate: 'Our markets are too small and our costs too high to stand alone.'",
+    "prompt": "Study the scenario above and answer ALL parts of the question.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify TWO objectives of CARICOM illustrated in the scenario.",
+        "marks": 4,
+        "commandWords": [
+          "Identify"
+        ],
+        "modelAnswer": "The scenario illustrates the free movement of skilled persons, since a nurse can seek work in another member state. It also illustrates the creation of a single market for goods and services, which is the aim the sauce manufacturer is complaining about, and cooperation among member states for the region's economic development, as the official's comment shows.",
+        "markScheme": [
+          "1 mark for each objective correctly identified (maximum 2 marks).",
+          "1 mark each for a supporting detail from the scenario (maximum 2 marks)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain TWO benefits of the CARICOM Single Market and Economy to Caribbean people.",
+        "marks": 9,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "First, the CSME widens opportunities for individuals: Renée can work where her skills are needed, earn a better salary and send remittances home, which benefits both households and the receiving economy. Second, it enlarges the market available to producers, so a small firm can sell to several territories without facing the costs of exporting outside the region, and consumers benefit from greater choice and competition. Both benefits flow from removing barriers between small economies that would otherwise be too small to support specialised production on their own.",
+        "markScheme": [
+          "1 mark for each benefit identified (maximum 2 marks).",
+          "1 mark each for explaining how the benefit arises from regional integration (maximum 4 marks).",
+          "1 mark each for evidence from the scenario (maximum 2 marks).",
+          "1 mark for a conclusion that connects the benefits."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Discuss the view that the benefits of regional integration are outweighed by its challenges.",
+        "marks": 12,
+        "commandWords": [
+          "Discuss"
+        ],
+        "modelAnswer": "Against integration, the scenario shows real frustrations: the process for recognising qualifications is slow, and differing standards act as non-tariff barriers that keep small producers out of neighbouring markets. Small firms also face freight costs and competition from larger regional producers, so integration can feel unequal. On the other side, the official's point stands: single Caribbean markets are small and production costs high, so isolation leaves the region dependent on imports and vulnerable to external shocks. Integration has also produced genuine gains, including the free movement that eventually employed Renée and the remittances her household now receives. On balance the challenges look like problems of implementation rather than reasons to abandon the project: the response should be faster recognition of qualifications, harmonised standards with technical support for small producers, and better information about the arrangements so that ordinary people can use them.",
+        "markScheme": [
+          "1-2 marks for a clear statement of the debate.",
+          "1-3 marks for arguments and evidence that integration creates difficulties.",
+          "1-3 marks for arguments and evidence that integration brings benefits.",
+          "1-2 marks for using the scenario as evidence.",
+          "1-2 marks for a reasoned conclusion that weighs both sides."
+        ]
+      }
+    ],
+    "planningHints": [
+      "In (c) aim for at least two points on each side before you conclude.",
+      "Use regional vocabulary: free movement, single market, non-tariff barrier, harmonisation."
+    ],
+    "examinerTips": "A 'discuss' answer needs both sides and a position. Writing only about the challenges, however well explained, cannot reach the top band."
+  },
+  {
+    "id": "ss-p2-06",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "The census report: a changing population",
+    "topic": "ss-l5-1",
+    "commandWords": [
+      "Describe",
+      "Explain",
+      "Suggest"
+    ],
+    "marks": 24,
+    "suggestedMinutes": 28,
+    "source": "A recent census report for a Caribbean country records the following.\n\nTotal population: 2.7 million, up 1.2% since the last census.\nPopulation aged 0-14: 21% (down from 27%).\nPopulation aged 65 and over: 12% (up from 8%).\nUrban population: 57% (up from 49%).\nAverage household size: 3.1 persons (down from 3.9).\n\nThe report notes that 'the country is growing older and more urban, and families are growing smaller'.",
+    "prompt": "Study the data above and answer ALL parts of the question.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Describe TWO changes in the population shown by the report.",
+        "marks": 4,
+        "commandWords": [
+          "Describe"
+        ],
+        "modelAnswer": "The population is ageing: the share aged 0-14 fell from 27% to 21% while the share aged 65 and over rose from 8% to 12%. The population is also becoming more urban and households smaller: the urban share rose from 49% to 57%, and average household size fell from 3.9 to 3.1 persons.",
+        "markScheme": [
+          "1 mark for each change accurately described with figures (maximum 2 marks).",
+          "1 mark each for a correct comparison of the two sets of data (maximum 2 marks)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain TWO likely consequences of an ageing population for the country.",
+        "marks": 8,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "An ageing population increases the demand for health and long-term care while the working-age population that finances it grows more slowly, so public spending on health and pensions rises and may require higher taxes or later retirement. It also affects the labour force: with fewer young people entering work, employers face shortages of workers, and the country may depend more on migration or technology to fill the gap. A smaller share of children can also mean fewer schools and a shift of resources towards adult and elderly services, which changes how the national budget is allocated.",
+        "markScheme": [
+          "1 mark for each consequence identified (maximum 2 marks).",
+          "1 mark each for explaining the process that produces it (maximum 4 marks).",
+          "1 mark each for using data from the report (maximum 2 marks)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Suggest TWO measures the government could take to respond to these population changes, and state one difficulty with each.",
+        "marks": 12,
+        "commandWords": [
+          "Suggest",
+          "Justify"
+        ],
+        "modelAnswer": "The government could expand training and retraining for health and care work, including nursing and elder care, so that services can be staffed; the difficulty is cost, since such training is expensive and trained workers are themselves likely to migrate. It could also improve urban services - housing, transport, water and drainage - in the areas receiving internal migrants, which is realistic because urban growth is already documented; the difficulty is that unplanned settlements expand faster than infrastructure, and land for housing is scarce and costly. A third option is to encourage later retirement and part-time work for older people, which raises labour supply but is unpopular where pensions are already low and jobs are physically demanding.",
+        "markScheme": [
+          "1 mark for each measure (maximum 2 marks).",
+          "1 mark each for explaining how the measure responds to the data (maximum 4 marks).",
+          "1 mark each for a difficulty identified with the measure (maximum 2 marks).",
+          "1-4 marks for the realism and justification of the whole answer."
+        ]
+      }
+    ],
+    "planningHints": [
+      "Quote the figures in part (a); data without numbers earns few marks.",
+      "For (c) make sure each suggestion has both a benefit and a difficulty."
+    ],
+    "examinerTips": "Questions built on data expect you to use the data. Refer to specific percentages rather than saying 'the population is getting older' in general terms."
+  },
+  {
+    "id": "ss-p2-07",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "Migration and the missing teachers",
+    "topic": "ss-l5-2",
+    "commandWords": [
+      "Explain",
+      "Evaluate"
+    ],
+    "marks": 25,
+    "suggestedMinutes": 30,
+    "source": "A newspaper headline reads: 'HUNDREDS OF TEACHERS RESIGN TO TAKE UP POSTS ABROAD'. The report says that in one school year, 480 trained teachers left the country for posts in the United Kingdom, Canada and the United States. Schools in rural districts were hardest hit; one principal reports that three mathematics classes have no specialist teacher and that students sit external examinations with substitute staff.\n\nA ministry official responds that 'you cannot stop people from seeking a better life', while an opposition spokesperson argues that 'we train the region's professionals for other people's economies'. Remittances from the teachers' new jobs, however, are the highest in five years.",
+    "prompt": "Study the scenario above and answer BOTH parts of the question.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Explain TWO push factors and TWO pull factors that may account for this migration.",
+        "marks": 10,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "Push factors are conditions at home that drive people away. Low pay relative to the cost of living and limited promotion in the education service are push factors, and so is the pressure of large classes and shortages of materials, which makes the job exhausting. Pull factors are attractions in the receiving country. Higher salaries with better conditions of service, including housing and professional development, pull trained teachers abroad, and active overseas recruitment of Caribbean teachers adds a further pull. The scenario shows the result: teachers leave for the United Kingdom, Canada and the United States, and rural schools, where the push factors are strongest, are hit hardest.",
+        "markScheme": [
+          "1 mark for each push factor correctly identified (maximum 2 marks).",
+          "1 mark for each pull factor correctly identified (maximum 2 marks).",
+          "1 mark each for explaining how the factor operates (maximum 4 marks).",
+          "1-2 marks for using the scenario as evidence, including the rural dimension."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Evaluate the view that this migration harms the country more than it helps it.",
+        "marks": 15,
+        "commandWords": [
+          "Evaluate"
+        ],
+        "modelAnswer": "The harm is visible in the scenario: the loss of 480 trained teachers in one year leaves mathematics classes without specialists, and students pay the price in external examinations. This is a loss of human capital that the state paid to produce, and rural schools suffer most because they cannot compete for replacement staff. The benefit is equally real: remittances are at a five-year high, and those transfers support households, fund school fees, and are a stable source of foreign currency when tourism or commodity prices fall. Some migrants return with further training, and the possibility of migration can raise the incentive to train as a teacher at all. On balance the migration harms the country more, for two reasons. First, the loss is concentrated and lasting: classrooms cannot be run on remittances, and a cohort of students does not repeat secondary school. Second, the benefit is diffuse and household-level, while the cost falls on the public education system. That does not mean the official is wrong - migration cannot simply be banned - but it does mean the country must reduce the push factors with better pay, housing and career paths, and must not treat remittances as a substitute for teachers.",
+        "markScheme": [
+          "1-2 marks for a clear statement of the position being evaluated.",
+          "1-3 marks for arguments and evidence that migration harms the country.",
+          "1-3 marks for arguments and evidence that migration helps the country.",
+          "1-3 marks for using the scenario as evidence on both sides.",
+          "1-2 marks for weighing criteria such as who bears the cost and who receives the benefit.",
+          "1-2 marks for a clear, supported conclusion."
+        ]
+      }
+    ],
+    "planningHints": [
+      "Sort the factors in (a) into two lists before writing: what pushes, what pulls.",
+      "For the evaluation, decide your position early and then make sure the other side is still presented fairly."
+    ],
+    "examinerTips": "Remittances are usually offered as the strongest counter-argument. Deal with them directly rather than ignoring them - a good evaluation answers the best point against it."
+  },
+  {
+    "id": "ss-p2-08",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "A faulty phone and the Consumer Affairs Commission",
+    "topic": "ss-l6-2",
+    "commandWords": [
+      "Identify",
+      "Explain",
+      "Evaluate"
+    ],
+    "marks": 24,
+    "suggestedMinutes": 28,
+    "source": "Sasha bought a smartphone for $48,000 from an electronics shop. The phone stopped charging after seventeen days. The shop refused to replace it, saying that 'sold goods are not returnable' and offering to repair it 'in about two months, if parts arrive'. Sasha was given a receipt but no written warranty.\n\nA friend told her to contact the Consumer Affairs Commission. Staff there explained her rights and helped her write a letter. The shop replaced the phone within a week. Sasha now says she was lucky to have a friend who knew what to do, and wonders how many people simply give up.",
+    "prompt": "Study the scenario above and answer ALL parts of the question.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify TWO consumer rights that were disregarded by the shop.",
+        "marks": 4,
+        "commandWords": [
+          "Identify"
+        ],
+        "modelAnswer": "The right to redress was disregarded, since the shop refused to replace goods that were faulty soon after purchase. The right to information and to be protected against unfair trade practices was also disregarded: Sasha was given no written warranty, and the shop relied on a rule ('sold goods are not returnable') that does not reflect her legal protection.",
+        "markScheme": [
+          "1 mark for each right correctly identified (maximum 2 marks).",
+          "1 mark each for a supporting detail from the scenario (maximum 2 marks)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain TWO responsibilities that Sasha had as a consumer in this situation.",
+        "marks": 8,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "Sasha was responsible for keeping her proof of purchase: the receipt made it possible for the Commission to take up her case, and without it she would have struggled to show when and where she bought the phone. She was also responsible for acting within a reasonable time and through the proper channels: she reported the fault promptly and, on advice, wrote a formal letter rather than returning to the shop to argue. Consumers who delay, buy without a receipt, or rely on verbal promises weaken their own position, which is why reading the terms of sale and asking about warranties before paying is part of the consumer's role.",
+        "markScheme": [
+          "1 mark for each responsibility identified (maximum 2 marks).",
+          "1 mark each for explaining why that responsibility matters (maximum 4 marks).",
+          "1 mark each for evidence from the scenario (maximum 2 marks)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Evaluate the effectiveness of consumer protection agencies such as the Consumer Affairs Commission, using the scenario as evidence.",
+        "marks": 12,
+        "commandWords": [
+          "Evaluate"
+        ],
+        "modelAnswer": "The Commission was effective for Sasha: it explained her rights, helped her to write a letter, and the phone was replaced within a week at no cost to her. That shows an agency can shift the balance of power between an individual consumer and a business, and it costs the consumer nothing. The weakness is that success depended on Sasha knowing where to turn; as she herself observes, people who do not know their rights simply give up, and complaints are likely to be concentrated among better-educated, urban consumers. Enforcement also depends on the size of the trader: a small shop may ignore an order, and pursuing a case through the courts is expensive. Overall the Commission is effective where consumers can reach it and firms respond, but it needs wider public education, clearer price and warranty rules, and faster enforcement if protection is to reach the people least able to speak for themselves.",
+        "markScheme": [
+          "1 mark for a clear judgement on effectiveness.",
+          "1-2 marks for evidence of effectiveness from the scenario.",
+          "1-2 marks for limitation or weakness.",
+          "1-2 marks for the reasons or criteria used to judge.",
+          "1-3 marks for depth of analysis, including who is least protected.",
+          "1-2 marks for a balanced conclusion."
+        ]
+      }
+    ],
+    "planningHints": [
+      "Keep rights and responsibilities separate; a common error is to answer (b) with rights.",
+      "For (c) judge against a criterion: cost, speed, or whether all consumers can use the service."
+    ],
+    "examinerTips": "Use the official language of consumer protection - redress, warranty, unfair trade practice - and then explain it in your own words."
+  },
+  {
+    "id": "ss-p2-09",
+    "type": "write",
+    "paper": 2,
+    "section": "Section B",
+    "title": "Essay: the family in a changing Caribbean",
+    "topic": "ss-l1-1",
+    "commandWords": [
+      "Discuss"
+    ],
+    "marks": 25,
+    "suggestedMinutes": 30,
+    "source": "A social commentator writes: 'The Caribbean family is in crisis. Households are smaller, parents are working longer hours, and grandparents are raising children for the second time. Yet the same families still hold communities together.'",
+    "prompt": "Using the statement above and your own knowledge, discuss the view that changes in Caribbean family life have weakened the family's role in society.",
+    "parts": [
+      {
+        "label": "(i)",
+        "prompt": "Explain ONE way in which Caribbean family structures have changed in recent decades.",
+        "marks": 10,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "Households have become smaller and more varied in structure. Larger extended households have given way to nuclear, single-parent, blended and grandparent-headed households, and the average household now contains fewer people. The causes include migration, which removes adults from the household, higher rates of separation and remarriage, later marriage, and the increased participation of women in paid work outside the home. The change is structural rather than a collapse: the family has reorganised itself around fewer resident adults and wider networks of support that stretch across parishes and countries.",
+        "markScheme": [
+          "1-2 marks for a clearly explained change in structure.",
+          "1-3 marks for explaining the causes of the change.",
+          "1-2 marks for using the statement as evidence.",
+          "1-3 marks for the depth of explanation and the use of appropriate terminology."
+        ]
+      },
+      {
+        "label": "(ii)",
+        "prompt": "Discuss whether these changes have weakened the family's role in society.",
+        "marks": 15,
+        "commandWords": [
+          "Discuss"
+        ],
+        "modelAnswer": "Changes in structure have weakened some functions of the family. Where parents work long hours and migrate, supervision and socialisation are shared with grandparents, neighbours and schools, and children may be cared for by people who are themselves tired or ill. Smaller households also mean fewer adults to share a heavy economic load, which can push families below the poverty line when one earner loses work. On the other hand the family continues to perform its central functions. Grandparent-headed households are not broken families; they are families adapting, and the commentator's own observation that families 'still hold communities together' supports this reading. Remittances, informal child-sharing and extended kinship networks keep support flowing even when the household changes shape. A fair judgement is that the family's role has changed rather than weakened: it has lost some residential functions while retaining - and in some cases strengthening - its functions of emotional support, cultural transmission and economic survival. The policy question, therefore, is not how to restore an older family form but how to support the families that exist, through childcare, employment protections and support for caregivers.",
+        "markScheme": [
+          "1-2 marks for a clear statement of the debate.",
+          "1-3 marks for arguments that the family's role has weakened, with evidence.",
+          "1-3 marks for arguments that it has adapted rather than weakened, with evidence.",
+          "1-3 marks for analysis of what the family's 'role in society' actually includes.",
+          "1-2 marks for a reasoned, balanced conclusion.",
+          "1-2 marks for the organisation and clarity of the essay."
+        ]
+      }
+    ],
+    "planningHints": [
+      "Decide exactly what 'the family's role in society' means to you before you argue: economic, socialising, emotional, protective.",
+      "Use Caribbean evidence - migration, remittances, grandparent-headed households, women's employment."
+    ],
+    "examinerTips": "An essay answer needs paragraphs with one idea each and a conclusion that answers the question asked, not a summary of the topic."
+  },
+  {
+    "id": "ss-p2-10",
+    "type": "write",
+    "paper": 2,
+    "section": "Section B",
+    "title": "Essay: communication, technology and community",
+    "topic": "ss-l6-1",
+    "commandWords": [
+      "Discuss",
+      "Suggest"
+    ],
+    "marks": 25,
+    "suggestedMinutes": 30,
+    "source": "A parish development committee reports that its public meetings attract fewer than twenty people, but its WhatsApp group has over eight hundred members, its live-streamed consultations reach several thousand viewers, and its online fundraising for a community centre surpassed its target in two weeks. An older resident comments that 'people used to meet face to face; now nobody knows their neighbour'.",
+    "prompt": "Using the report above and your own knowledge, discuss the effects of modern communication technology on community life, and suggest how technology and face-to-face communication can work together.",
+    "parts": [
+      {
+        "label": "(i)",
+        "prompt": "Explain TWO ways in which modern communication technology has changed how communities organise.",
+        "marks": 10,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "First, it has widened participation beyond physical meetings: the committee's WhatsApp group of eight hundred members and its live-streamed consultations reach people who cannot attend in person because of work, distance, disability or care responsibilities. Second, it has changed speed and cost: fundraising that once required door-to-door collection reached its target online in two weeks, allowing a project to proceed far more quickly. Both changes also alter who has influence, because the most active online voices are not always the same people who speak at public meetings.",
+        "markScheme": [
+          "1 mark for each change identified (maximum 2 marks).",
+          "1 mark each for explaining how the change operates (maximum 4 marks).",
+          "1 mark each for evidence from the report (maximum 2 marks).",
+          "1-2 marks for analysis of who gains and who is excluded."
+        ]
+      },
+      {
+        "label": "(ii)",
+        "prompt": "Suggest TWO ways in which technology and face-to-face communication could be combined to strengthen the community, and discuss ONE difficulty with each.",
+        "marks": 15,
+        "commandWords": [
+          "Suggest",
+          "Discuss"
+        ],
+        "modelAnswer": "One approach is hybrid decision-making: use the WhatsApp group to circulate proposals, budgets and minutes, then hold a smaller face-to-face meeting to debate and vote. Technology carries the information to everyone, while the meeting provides the deliberation, the chance to read a room and the credibility that a vote was publicly taken. The difficulty is that key decisions may still be made by those who attend in person, so the group must publish the outcome and take comments online afterwards. A second approach is pairing digital outreach with local, in-person contact: young volunteers help older residents use the platform and visit them to discuss the project, so that people without smartphones or data are not excluded. The difficulty is cost and time, because volunteers must be trained and sustained, and the work usually falls on a few energetic people. On balance the two approaches together are far stronger than either alone: the technology supplies reach, and face-to-face contact supplies trust, which is the resource the older resident fears is being lost.",
+        "markScheme": [
+          "1 mark for each sensible strategy (maximum 2 marks).",
+          "1 mark each for explaining how it combines the two forms of communication (maximum 4 marks).",
+          "1 mark each for a difficulty clearly stated (maximum 2 marks).",
+          "1-3 marks for the discussion of the difficulties and possible responses.",
+          "1-2 marks for analytical depth, including exclusion and inequality of access.",
+          "1-2 marks for a reasoned conclusion."
+        ]
+      }
+    ],
+    "planningHints": [
+      "For each suggestion, name who does it, what it costs and how you would know it worked.",
+      "Think about groups who may be excluded: elderly people, people with low literacy, people without data."
+    ],
+    "examinerTips": "Marks in the extension question come from the discussion of difficulties, not from the suggestions themselves. Give the difficulty real weight."
+  }
+]

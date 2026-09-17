@@ -1,0 +1,64 @@
+{
+  "subjectId": "english-b",
+  "introduction": "The English B School-Based Assessment is a portfolio of responses to the literature you have studied. It rewards close reading and independent thinking, so the evidence you select matters more than the length of your writing. The tasks below map the stages of building that portfolio; check the current CSEC syllabus for the exact marks and word limits for your examination session.",
+  "tasks": [
+    {
+      "section": "Choice of Texts",
+      "title": "Selecting Your Texts",
+      "explanation": "Choose the poems, play and prose works you will respond to for the examination you are sitting, and record the exact titles and authors.",
+      "marks": "2"
+    },
+    {
+      "section": "Close Reading",
+      "title": "Close Reading Notes",
+      "explanation": "For each text, note its subject, themes, key techniques and three or four supporting quotations with their sources.",
+      "marks": "6"
+    },
+    {
+      "section": "First Response",
+      "title": "Analytical Response",
+      "explanation": "Write a developed response to a question on one text, using point-evidence-explanation and a clear line of argument.",
+      "marks": "10"
+    },
+    {
+      "section": "Comparative Response",
+      "title": "Comparison of Two Texts",
+      "explanation": "Compare two texts on a shared basis such as theme, tone or treatment of place, moving between them throughout the response.",
+      "marks": "10"
+    },
+    {
+      "section": "Creative or Personal Response",
+      "title": "Creative Response",
+      "explanation": "Respond creatively to a text — a poem in the voice of a character, a diary entry, a missing scene — with a short commentary on your choices.",
+      "marks": "8"
+    },
+    {
+      "section": "Presentation",
+      "title": "Presentation and Accuracy",
+      "explanation": "Present the portfolio clearly: contents page, accurate quotations with titles, correct spelling of names and titles, and consistent tense.",
+      "marks": "4"
+    }
+  ],
+  "sampleTitle": "How does the poet present the sea as both a threat and a source of life in 'The Sea in September'?",
+  "sample": [
+    {
+      "section": "Statement of Focus",
+      "body": "This response argues that the poet uses the sea as a metaphor for Caribbean history: beautiful, sustaining and dangerous at the same time.",
+      "tips": "State your line of argument in one sentence before you begin to write."
+    },
+    {
+      "section": "Body Paragraph",
+      "body": "The poet describes the waves as 'climbing the wall with fists of salt'. The personification of the waves as fighters gives the sea a violent, human will, and the word 'salt' links that violence to sweat and toil on the plantation. The image suggests a sea that has taken lives as well as fed them.",
+      "tips": "Quote briefly, analyse the exact words, and connect the effect to your argument."
+    }
+  ],
+  "marking": "Marks reward accurate knowledge of the texts, analysis of language and technique, a sustained line of argument, relevant evidence and control of written English. Retelling the plot earns little.",
+  "checklist": [
+    "Texts and authors named accurately",
+    "Line of argument stated and sustained",
+    "Short quotations embedded and explained",
+    "Techniques named and their effects analysed",
+    "Comparisons organised around a shared basis",
+    "Language, spelling and tense accurate"
+  ]
+}
