@@ -39,6 +39,19 @@ const subjectSets = {
       { id: "alliteration", target: "Repeated initial consonant sounds", label: "Alliteration" },
     ],
   },
+  "english-b": {
+    title: "Literature Essentials",
+    subtitle: "Match each term to its definition.",
+    kind: "match",
+    pairs: [
+      { id: "lf1", target: "Uses 'like' or 'as' to compare two things", label: "Simile" },
+      { id: "lf2", target: "States that one thing IS another", label: "Metaphor" },
+      { id: "lf3", target: "Gives human qualities to an object or idea", label: "Personification" },
+      { id: "lf4", target: "The idea a text explores through its subject", label: "Theme" },
+      { id: "lf5", target: "A category or type of writing, such as prose or drama", label: "Genre" },
+      { id: "lf6", target: "The speaker's attitude towards the subject", label: "Tone" },
+    ],
+  },
   mathematics: {
     title: "Match Math Terms",
     subtitle: "Drag each term to its meaning.",
