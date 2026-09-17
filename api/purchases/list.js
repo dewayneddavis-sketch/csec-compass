@@ -4,7 +4,13 @@
 //   - missing Supabase server credentials -> loud 500 naming the vars
 //   - purchases table missing/unreadable -> loud 500 (never an empty
 //     success that a client could misread; see supabase/schema.sql)
-//   - fresh user with zero rows -> 200 { hasBundle: false, purchasedSubjects: [] }
+//   - fresh user with zero rows -> 200
+//     { hasBundle: false, hasSchoolLicense: false, schoolLicenseSeats: 0,
+//       purchasedSubjects: [] }
+//
+// A School License (purchase_type 'school-license-50' | '-100' | '-150')
+// grants every subject, exactly like the bundle — it is reported through
+// hasSchoolLicense + schoolLicenseSeats so the UI can show the tier.
 export default async function handler(req, res) {
   if (req.method !== "GET") return res.status(405).json({ error: "Method not allowed" });
 
@@ -42,7 +48,12 @@ export default async function handler(req, res) {
     const ownerEmails = (process.env.OWNER_EMAILS || "dewayneddavis@gmail.com")
       .split(",").map((e) => e.trim().toLowerCase());
     if (userEmail && ownerEmails.includes(userEmail.toLowerCase())) {
-      return res.status(200).json({ hasBundle: true, purchasedSubjects: [] });
+      return res.status(200).json({
+        hasBundle: true,
+        hasSchoolLicense: false,
+        schoolLicenseSeats: 0,
+        purchasedSubjects: [],
+      });
     }
 
     // Query purchases
@@ -78,11 +89,36 @@ export default async function handler(req, res) {
     });
 
     const hasBundle = active.some((p) => p.purchase_type === "bundle");
+
+    // SCHOOL LICENSE: purchase_type carries the tier ('school-license-50',
+    // '-100', '-150') because a school can buy more than one license. Any
+    // tier unlocks every subject (same as the bundle); seats are summed so
+    // the UI/teacher view can show "up to N students" across licenses.
+    // Strict allowlist (matches api/stripe/webhook.js); a bare
+    // 'school-license' row from the pre-ladder build still grants access.
+    const licenseMatch = (type) =>
+      typeof type === "string" ? /^school-license(?:-(50|100|150))?$/.exec(type) : null;
+    const licenseRows = active.filter((p) => licenseMatch(p.purchase_type));
+    const hasSchoolLicense = licenseRows.length > 0;
+    const schoolLicenseSeats = licenseRows.reduce((sum, p) => {
+      const m = licenseMatch(p.purchase_type);
+      return sum + (m && m[1] ? Number(m[1]) : 0);
+    }, 0);
+
+    // Per-subject rows only: bundle and school-license rows are full-access
+    // grants, not subject ids (a license row must never leak into the
+    // subject list as a bogus subject id).
     const purchasedSubjects = active
-      .filter((p) => p.purchase_type && p.purchase_type !== "bundle")
+      .filter((p) => p.purchase_type && p.purchase_type !== "bundle" && !licenseMatch(p.purchase_type))
       .map((p) => p.purchase_type);
 
-    return res.status(200).json({ hasBundle, purchasedSubjects, purchases: withExpiry });
+    return res.status(200).json({
+      hasBundle,
+      hasSchoolLicense,
+      schoolLicenseSeats,
+      purchasedSubjects,
+      purchases: withExpiry,
+    });
   } catch (err) {
     console.error("API /api/purchases/list error:", err);
     return res.status(500).json({ error: "Purchase lookup failed — failing closed." });

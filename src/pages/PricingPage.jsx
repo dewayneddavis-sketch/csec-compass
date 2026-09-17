@@ -15,14 +15,26 @@ const plans = [
     id: "bundle",
     name: "All Subjects Bundle",
     price: "$49.99",
-    description: "Full access to ALL CSEC subjects",
-    features: ["Everything in Per Subject", "All 10 CSEC subjects", "Bundle pricing (save 50% vs buying subjects separately)"],
+    description: "Full access to every CSEC subject on the platform",
+    features: ["Everything in Per Subject", "Every CSEC subject we publish", "Bundle pricing (save 50% vs buying subjects separately)"],
     popular: true,
   },
 ];
 
-// The 10 purchasable subjects (ids must match api/checkout/create-session +
-// api/stripe/webhook.js expectations; names are display labels).
+// School License ladder (owner decision 2026-09-13). Prices are the live
+// Stripe products — priceType is the tier id and must stay in sync with
+// api/checkout/create-session.js (SCHOOL_LICENSES), which owns the Stripe
+// price ids. Seats × per-student rate: 50×$25, 100×$20, 150×$15.
+const SCHOOL_LICENSES = [
+  { priceType: "school-license-50", seats: 50, price: 1250, perStudent: 25 },
+  { priceType: "school-license-100", seats: 100, price: 2000, perStudent: 20 },
+  { priceType: "school-license-150", seats: 150, price: 2250, perStudent: 15 },
+];
+
+// The subjects that can be bought on their own (ids must match
+// api/checkout/create-session + api/stripe/webhook.js expectations; names
+// are display labels). Subjects not listed here are still included in the
+// bundle and in a school license.
 const SUBJECT_OPTIONS = [
   { id: "biology", name: "Biology" },
   { id: "chemistry", name: "Chemistry" },
@@ -114,8 +126,51 @@ export default function PricingPage() {
           </div>
         ))}
       </div>
+
+      <section className="pricing-school">
+        <div className="pricing-school-header">
+          <h2>School Licenses</h2>
+          <p>
+            One-year licence for a whole class or year group. Every seat gets its own student
+            account with all subjects, lessons, interactive labs, practice questions, timed mock
+            exams and end-of-course knowledge checks.
+          </p>
+        </div>
+        <div className="pricing-school-grid">
+          {SCHOOL_LICENSES.map((tier) => (
+            <div key={tier.priceType} className="pricing-card tier">
+              <h3 className="pricing-name">Up to {tier.seats} students</h3>
+              <p className="pricing-price">
+                ${tier.price.toLocaleString("en-US")}
+                <span className="pricing-per-year"> / year</span>
+              </p>
+              <p className="pricing-desc">${tier.perStudent} per student, per year</p>
+              <ul className="pricing-features">
+                <li>Every CSEC subject on the platform</li>
+                <li>Up to {tier.seats} student accounts</li>
+                <li>One year of access</li>
+                <li>One payment — no recurring subscription</li>
+              </ul>
+              <button
+                className="pricing-btn"
+                onClick={() => handleBuy(tier.priceType, null)}
+                disabled={busy === tier.priceType}
+              >
+                {busy === tier.priceType ? "Redirecting..." : "Buy License"}
+              </button>
+            </div>
+          ))}
+        </div>
+        <p className="pricing-school-note">
+          Larger cohort? Add a second licence to the same account, or contact us for a custom
+          quote — the school pays per seat used.
+        </p>
+      </section>
+
       {message && <div className="pricing-message">{message}</div>}
-      <p className="pricing-note">All purchases are one-time payments. No recurring subscriptions.</p>
+      <p className="pricing-note">
+        All purchases are one-time payments. No recurring subscriptions.
+      </p>
     </div>
   );
 }

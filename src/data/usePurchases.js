@@ -4,17 +4,24 @@ import { useAuth } from "../context/AuthContext";
 // FAIL-CLOSED access hook.
 // Any unknown state (logged out, still loading, API error, missing token)
 // means NO access — the caller gets the 2-lesson preview + paywall.
-// Only a verified purchase (or bundle grant) returned by
+// Only a verified purchase, bundle, or school license returned by
 // /api/purchases/list unlocks a subject.
+const NO_ACCESS = {
+  hasBundle: false,
+  hasSchoolLicense: false,
+  schoolLicenseSeats: 0,
+  purchasedSubjects: [],
+};
+
 export function usePurchases() {
   const { user, session } = useAuth();
-  const [purchases, setPurchases] = useState({ hasBundle: false, purchasedSubjects: [] });
+  const [purchases, setPurchases] = useState(NO_ACCESS);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     if (!user) {
-      setPurchases({ hasBundle: false, purchasedSubjects: [] });
+      setPurchases(NO_ACCESS);
       setError(null);
       setLoading(false);
       return;
@@ -37,6 +44,11 @@ export function usePurchases() {
         if (!cancelled) {
           setPurchases({
             hasBundle: data.hasBundle === true,
+            // School license = every subject unlocked for up to N students
+            // (seats summed across licenses). Reported separately so the UI
+            // can show the licence instead of "All Subjects Bundle".
+            hasSchoolLicense: data.hasSchoolLicense === true,
+            schoolLicenseSeats: Number.isFinite(data.schoolLicenseSeats) ? data.schoolLicenseSeats : 0,
             purchasedSubjects: Array.isArray(data.purchasedSubjects) ? data.purchasedSubjects : [],
           });
         }
@@ -44,7 +56,7 @@ export function usePurchases() {
         if (!cancelled) {
           setError(err);
           // Fail closed: discard any stale purchase state on error.
-          setPurchases({ hasBundle: false, purchasedSubjects: [] });
+          setPurchases(NO_ACCESS);
         }
       } finally {
         if (!cancelled) setLoading(false);
@@ -58,7 +70,7 @@ export function usePurchases() {
     if (!user) return false;
     if (loading) return false;
     if (error) return false;
-    if (purchases.hasBundle) return true;
+    if (purchases.hasBundle || purchases.hasSchoolLicense) return true;
     return purchases.purchasedSubjects.includes(subjectId);
   }
 

@@ -71,19 +71,34 @@ export default async function handler(req, res) {
       return res.status(200).json({ received: true, note: "missing client_reference_id", sessionId: session.id });
     }
 
+    // School License tiers are 'school-license-50' | '-100' | '-150'
+    // (see api/checkout/create-session.js + the Pricing page ladder). Strict
+    // allowlist on purpose: any other value is refused below rather than
+    // granted full access. A bare 'school-license' row from the pre-ladder
+    // single-tier build is still honoured.
+    const SCHOOL_LICENSE_TIERS = ["school-license", "school-license-50", "school-license-100", "school-license-150"];
+    const isSchoolLicense = SCHOOL_LICENSE_TIERS.includes(price_type);
+
     try {
       const supabase = getSupabaseAdmin();
 
-      if (price_type === "bundle") {
-        // Grant access to all subjects (idempotent: skip if already granted)
-        const { data: existing, error: lookupErr } = await supabase
-          .from("purchases")
-          .select("id")
-          .eq("user_id", userId)
-          .eq("purchase_type", "bundle")
-          .limit(1);
+      if (price_type === "bundle" || isSchoolLicense) {
+        // FULL-ACCESS GRANT. The bundle covers every subject for the buyer; a
+        // school license does the same for the buying account (the school's
+        // contact can verify the platform) — per-student seats are granted by
+        // the owner via api/admin/grant-access.js.
+        //
+        // Idempotency differs per product, on purpose:
+        //   bundle         -> one per user, so dedupe on (user, purchase_type)
+        //   school license -> a school may legitimately buy the SAME tier twice
+        //                     (two 50-seat licenses for a 75-student cohort),
+        //                     so dedupe on the Stripe session id, which is all
+        //                     that a duplicate webhook delivery repeats.
+        const { data: existing, error: lookupErr } = isSchoolLicense
+          ? await supabase.from("purchases").select("id").eq("stripe_session_id", session.id).limit(1)
+          : await supabase.from("purchases").select("id").eq("user_id", userId).eq("purchase_type", "bundle").limit(1);
         if (lookupErr) {
-          console.error("Bundle lookup error:", lookupErr);
+          console.error("Full-access lookup error (" + price_type + "):", lookupErr);
           return res.status(500).json({ error: "Failed to check purchase: " + lookupErr.message });
         }
         if (existing && existing.length > 0) {
@@ -92,10 +107,13 @@ export default async function handler(req, res) {
         const { error } = await supabase.from("purchases").insert({
           user_id: userId,
           subject_id: null,
-          purchase_type: "bundle",
+          // Stores 'bundle' or the exact license tier ('school-license-150'),
+          // so the sold tier stays visible in api/purchases/list.js.
+          purchase_type: isSchoolLicense ? price_type : "bundle",
+          stripe_session_id: session.id,
         });
         if (error) {
-          console.error("Insert bundle error:", error);
+          console.error("Insert full-access error (" + price_type + "):", error);
           return res.status(500).json({ error: "Failed to record purchase: " + error.message });
         }
       } else if (price_type === "subject" && subject_id) {
@@ -118,6 +136,7 @@ export default async function handler(req, res) {
           user_id: userId,
           subject_id,
           purchase_type: subject_id,
+          stripe_session_id: session.id,
         });
         if (error) {
           console.error("Insert subject purchase error:", error);
@@ -141,7 +160,3 @@ export default async function handler(req, res) {
     res.status(200).json({ received: true });
   }
 }
-
-// env note: STRIPE_WEBHOOK_SECRET injected at build; verify via diag env flags
-
-// env note: STRIPE_WEBHOOK_SECRET injected at build; verify via diag env flags

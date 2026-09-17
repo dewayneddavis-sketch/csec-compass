@@ -20,3 +20,14 @@
 .pricing-subject-label{display:block;font-size:.85rem;font-weight:600;color:#6b7280;margin-bottom:.35rem}
 .pricing-select{width:100%;padding:.6rem .75rem;margin-bottom:1rem;border:2px solid #e5e7eb;border-radius:10px;font-size:.95rem;color:#111827;background:#fff;cursor:pointer;transition:border-color .2s}
 .pricing-select:focus{outline:none;border-color:#2563eb}
+/* School License ladder (50/100/150 seats) */
+.pricing-school{margin-top:3rem;padding-top:2.5rem;border-top:1px solid #e5e7eb}
+.pricing-school-header{text-align:center;margin-bottom:1.75rem}
+.pricing-school-header h2{font-size:1.5rem;font-weight:800;color:#111827;margin-bottom:.5rem}
+.pricing-school-header p{color:#6b7280;font-size:.95rem;max-width:640px;margin:0 auto}
+.pricing-school-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem;align-items:start}
+.pricing-card.tier{padding:1.5rem}
+.pricing-card.tier .pricing-name{font-size:1.1rem}
+.pricing-card.tier .pricing-price{font-size:2rem}
+.pricing-per-year{font-size:1rem;font-weight:600;color:#6b7280}
+.pricing-school-note{text-align:center;color:#6b7280;font-size:.88rem;margin-top:1.5rem}
