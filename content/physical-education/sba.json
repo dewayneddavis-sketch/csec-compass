@@ -1,0 +1,70 @@
+{
+  "subjectId": "physical-education",
+  "introduction": "The Physical Education School-Based Assessment has both a practical and a written element: you are assessed on your performance in selected practical activities and on a personal exercise programme or investigation that you plan, carry out over several weeks, record and evaluate. Marks are given for your planning and risk management, your fitness testing and records, the suitability of the programme, your performance improvement and your evaluation. Check the current CSEC syllabus and your teacher's guidance for the number of activities and the exact format required.",
+  "tasks": [
+    {
+      "section": "Fitness Testing and Baseline",
+      "title": "Test battery",
+      "explanation": "Record your baseline scores on at least four fitness components using standard tests, describing the protocol, the equipment and the conditions for each.",
+      "marks": "8"
+    },
+    {
+      "section": "Analysis of Results",
+      "title": "Strengths and weaknesses",
+      "explanation": "Compare your results with norms for your age and sex and with the demands of your sport or activity, and identify your two weakest components.",
+      "marks": "6"
+    },
+    {
+      "section": "Programme Planning",
+      "title": "Personal exercise programme",
+      "explanation": "Write a six- to eight-week programme showing frequency, intensity, time, type and progression for each session, and explain how it applies the principles of training.",
+      "marks": "12"
+    },
+    {
+      "section": "Safety and Risk Management",
+      "title": "Safety plan",
+      "explanation": "Identify the risks of the activities, state the control measures, and describe warm-up, cool-down, hydration and emergency procedures.",
+      "marks": "6"
+    },
+    {
+      "section": "Practical Performance",
+      "title": "Activity performance",
+      "explanation": "Perform in the selected practical activities, demonstrating correct technique, tactical awareness, rules, fair play and cooperation with others.",
+      "marks": "14"
+    },
+    {
+      "section": "Evaluation",
+      "title": "Retest and review",
+      "explanation": "Retest the components, present before-and-after results in a table or graph, evaluate what improved and what did not, explain why, and recommend changes to the programme.",
+      "marks": "8"
+    }
+  ],
+  "sampleTitle": "An eight-week programme to improve a 400 m runner's speed endurance and core strength",
+  "sample": [
+    {
+      "section": "Programme Planning",
+      "body": "Frequency: four sessions a week (two track, one circuit, one games session). Intensity: interval work at 80-90 per cent of maximum heart rate in weeks 3 to 6, reduced in week 8 for competition. Time: 60-75 minutes including warm-up and cool-down. Type: 200 m and 300 m repetitions with 2-3 minute recoveries to develop speed endurance (anaerobic system), circuit training of 8 stations for core and leg strength, and continuous jogging for aerobic base. Progression: repetitions rise from 4 x 200 m in week 1 to 6 x 300 m in week 5, while recovery time falls from 3 to 2 minutes. Specificity: interval distances and recovery ratios match the demands of the 400 m event, and the circuit focuses on the trunk and hip muscles used in sprinting.",
+      "tips": "Every principle of training named in the plan earns marks, and the reason must link to the event."
+    },
+    {
+      "section": "Evaluation",
+      "body": "The 30 m sprint time fell from 4.5 s to 4.2 s and the Illinois agility run from 17.1 s to 16.2 s, and the 400 m time improved by 3.4 s. The sit and reach score did not change because the programme contained no flexibility work beyond the cool-down stretch - a clear planning error. Two sessions were missed in week 4 because of rain and a school event, which showed how easy reversibility is. Improvement: add two dedicated flexibility sessions and a contingency plan for wet weather, since the runs had to be completed in the final week to complete the volume.",
+      "tips": "Use the before-and-after numbers, name the specific weaknesses in your own plan and say what you will change."
+    }
+  ],
+  "marking": "Marks reward a properly conducted baseline test, accurate interpretation of results against norms, a programme that applies the principles of training and matches the activity, thorough safety planning, good practical technique and fair play, and a candid, evidence-based evaluation with recommendations.",
+  "checklist": [
+    "At least four fitness components tested with protocols described",
+    "Results recorded with dates and conditions",
+    "Results compared with norms",
+    "Strengths and weaknesses identified",
+    "Programme states FITT for every session",
+    "Progression and specificity explained",
+    "Warm-up, cool-down and hydration included",
+    "Risks identified with control measures",
+    "Practical performance assessed in the chosen activity",
+    "Retest completed and compared with baseline",
+    "Improvements and failures explained",
+    "Recommendations for the next programme"
+  ]
+}

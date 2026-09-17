@@ -94,5 +94,11 @@
     "name": "Technical Drawing",
     "description": "Drawing instruments and standards, geometric construction, orthographic projection, pictorial drawing, building drawing and engineering drawing.",
     "icon": "Architecture"
+  },
+  {
+    "id": "physical-education",
+    "name": "Physical Education",
+    "description": "Sport in Caribbean society, anatomy and physiology, fitness and training, skill learning and sport psychology, officiating and administration, nutrition and health.",
+    "icon": "Sports"
   }
 ]
