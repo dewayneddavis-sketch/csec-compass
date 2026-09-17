@@ -1,0 +1,67 @@
+{
+  "subjectId": "agriculture-double-option",
+  "introduction": "The Agriculture School-Based Assessment is a practical farm project. You plan and carry out a crop or livestock enterprise or an investigation, keep records as you go, and report on what you did, what it cost, what you produced and what you would change. Because the marks come from planning, doing, recording and evaluating, keep your diary up to date from the first week. Check the current CSEC syllabus and your teacher's guidance for the exact requirements for your session.",
+  "tasks": [
+    {
+      "section": "Project Selection and Justification",
+      "title": "Choosing the enterprise",
+      "explanation": "State the crop or animal you will produce, the plot or pen and its size, and justify your choice by referring to soil, climate, market and resources.",
+      "marks": "4"
+    },
+    {
+      "section": "Plan of Activities",
+      "title": "Calendar and inputs",
+      "explanation": "Set out the operations in sequence with dates, and list the inputs, labour and equipment each will need.",
+      "marks": "6"
+    },
+    {
+      "section": "Materials, Inputs and Costing",
+      "title": "Budget",
+      "explanation": "Record quantities and prices of seed or stock, fertiliser or feed, chemicals, packaging and labour, and total the variable costs.",
+      "marks": "6"
+    },
+    {
+      "section": "Practical Work and Record Keeping",
+      "title": "Field or pen diary",
+      "explanation": "Keep dated entries for every operation, observation, problem and treatment. Include measurements - plant heights, weights, feed used, yields.",
+      "marks": "10"
+    },
+    {
+      "section": "Analysis and Interpretation",
+      "title": "Results",
+      "explanation": "Tabulate and graph your production data, compare performance with expectations, and explain the differences scientifically.",
+      "marks": "10"
+    },
+    {
+      "section": "Evaluation and Recommendations",
+      "title": "Conclusion",
+      "explanation": "State the profit or loss, evaluate problems such as pests, weather or management errors, and recommend improvements for the next cycle.",
+      "marks": "6"
+    }
+  ],
+  "sampleTitle": "A plot of sweet pepper grown on a raised bed for one season",
+  "sample": [
+    {
+      "section": "Plan of Activities",
+      "body": "Week 1: land preparation, compost applied at 4 kg per bed, seedlings raised in trays. Week 3: transplanting at 45 cm spacing with mulch. Weeks 4-12: weekly weeding, fortnightly foliar feed, scouting for aphids and thrips. Week 11: first harvest; successive harvests twice weekly until week 16.",
+      "tips": "Dates, quantities and the reason for each operation earn marks; vague plans do not."
+    },
+    {
+      "section": "Analysis and Interpretation",
+      "body": "Total marketable yield was 96 kg from 40 plants, an average of 2.4 kg per plant. The unsprayed half of the plot yielded 38 kg and the scouted and sprayed half 58 kg, so pest control added about 50 per cent, at a chemical cost of $620. Fruit from the mulched section was larger and suffered less sun-scald, probably because soil moisture was steadier.",
+      "tips": "Compare a treatment with a control wherever possible, then explain the difference."
+    }
+  ],
+  "marking": "Marks reward a justified choice of enterprise, a realistic activity plan and budget, complete dated records, accurate measurements and graphs, scientific explanation of results, and a candid evaluation with practical recommendations.",
+  "checklist": [
+    "Enterprise chosen and justified",
+    "Activity calendar with dates",
+    "Inputs, labour and costs listed and totalled",
+    "Dated diary of operations and observations",
+    "Production data measured and recorded",
+    "Results tabulated and graphed",
+    "Scientific explanation of performance",
+    "Profit or loss calculated",
+    "Problems evaluated and recommendations made"
+  ]
+}

@@ -76,5 +76,11 @@
     "name": "Integrated Science",
     "description": "Explore life, matter, energy, electricity, Earth and space, and how science serves the home and workplace.",
     "icon": "Science"
+  },
+  {
+    "id": "agriculture-double-option",
+    "name": "Agriculture (Double Option)",
+    "description": "Crop and animal production, tools and machinery, farm business and marketing, and sustainable practice.",
+    "icon": "Science"
   }
 ]
