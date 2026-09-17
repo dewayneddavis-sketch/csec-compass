@@ -1,0 +1,468 @@
+[
+  {
+    "id": "ag-mod-1",
+    "title": "The Farm and Its Environment",
+    "lessons": [
+      {
+        "id": "ag-l1-1",
+        "title": "Farm Systems: Inputs, Processes and Outputs",
+        "content": "A farm is a system. Inputs enter it - seed, fertiliser, feed, labour, machinery, water, fuel and money - and inside the system processes convert them into outputs: crops, livestock products, manure and, if the farm is run as a business, profit. Between input and output there are losses and by-products, and a good farmer watches all three, not only the harvest.\n\nAgricultural systems are classified in several ways. A subsistence system feeds the farm family with little surplus to sell; a commercial system produces mainly for sale. A monoculture grows one crop over a large area, while mixed farming combines crops and animals so that each supplies what the other needs - manure for the soil, crop residues for feed. Intensive systems use high inputs on small areas, extensive systems use low inputs on large areas, and arable, pastoral and plantation systems describe what is produced.\n\nSystems thinking exposes waste. If fertiliser is washed off a slope, or feed is spoilt by damp storage, or fruit is damaged because it was picked in the heat of the day, the farm has lost money before anything is sold. Recording the flow of inputs and outputs lets a farmer find those losses and fix them, which is the link between the science of the farm and the business of the farm.",
+        "objectives": [
+          "Describe a farm as a system of inputs, processes and outputs",
+          "Classify farms by purpose and intensity",
+          "Identify losses in a system and propose improvements"
+        ],
+        "concepts": [
+          "Input",
+          "Output",
+          "Monoculture",
+          "Mixed farming",
+          "Intensive",
+          "Extensive",
+          "Subsistence",
+          "Commercial"
+        ],
+        "experiment": {
+          "type": "interactive-summary",
+          "description": "Farm Systems Map: Trace inputs, processes and outputs for a farm and flag where value is lost."
+        }
+      },
+      {
+        "id": "ag-l1-2",
+        "title": "Soils: Formation, Types and Fertility",
+        "content": "Soil is the farm's most valuable asset. It forms slowly as rock is broken down by weather and roots and is mixed with air, water and the remains of plants and animals. A productive soil contains mineral particles of different sizes - sand, silt and clay - together with humus, soil water, soil air and living organisms. The mixture decides texture and structure, and therefore how well the soil holds water, drains and roots penetrate.\n\nSandy soils drain quickly and warm early but hold few nutrients and dry out fast; clay soils hold water and nutrients but are heavy, poorly aerated and hard to work when wet; loams, with a balance of particle sizes, are best for most crops. Tropical soils are often deep but low in nutrients and acidic, because heavy rain leaches soluble bases away and organic matter breaks down quickly. Plant nutrients come in macronutrients - nitrogen for leafy growth, phosphorus for roots and flowering, potassium for fruit quality and disease resistance, plus calcium, magnesium and sulfur - and micronutrients needed in tiny amounts.\n\nFertility is maintained, not fixed once. Compost and manure add humus and nutrients, fertiliser supplies particular nutrients to a deficiency confirmed by a soil test, lime raises pH, and crop rotation with legumes adds nitrogen through root nodules. Without these, continuous cropping on a hillside quickly leaves a thin, pale, eroded soil.",
+        "objectives": [
+          "Describe soil composition, formation and texture",
+          "Link soil type to drainage, nutrient holding and crop suitability",
+          "Explain how soil fertility is tested, maintained and restored"
+        ],
+        "concepts": [
+          "Humus",
+          "Texture",
+          "Loam",
+          "Leaching",
+          "Macronutrient",
+          "Soil pH",
+          "Compost",
+          "Crop rotation"
+        ],
+        "experiment": {
+          "type": "classifier-sim",
+          "description": "Soil Classifier: Judge each soil sample by texture, drainage and pH, then choose the crop and the amendment it needs."
+        }
+      },
+      {
+        "id": "ag-l1-3",
+        "title": "Caribbean Climate, Weather and Crop Planning",
+        "content": "The Caribbean's agriculture is shaped by a tropical climate: high temperatures, strong sunshine, a wet season and a dry season, high humidity and the risk of hurricanes, floods and drought. Rainfall varies sharply over short distances because mountains force moist trade winds to rise, so a farm in a sheltered valley may receive far less rain than one ten kilometres away. Farmers also distinguish the wet and dry seasons, the cooler months and the hurricane period that runs roughly from June to November.\n\nThese patterns decide what can be grown when. Crops differ in their water and temperature requirements, their day length sensitivity and their growth period, so planning means matching the crop to the season rather than fighting it. Farmers may plant on ridges to drain excess water, mulch to hold moisture, use shade for tender crops, irrigate in the dry season and select short-season varieties that finish before a dry spell or a storm.\n\nClimate risk must be managed deliberately. Hurricane preparedness means windbreaks, staking, harvesting what is ready, securing roofs and animal housing, and storing water and feed. Drought planning means water harvesting, efficient irrigation such as drip, drought-tolerant crops and livestock and reducing the planted area to what the available water can serve. Records of local rainfall and temperature build the evidence a farm needs to plan the next season.",
+        "objectives": [
+          "Relate Caribbean climatic conditions to farming practice",
+          "Match crops to a season according to light, water and temperature needs",
+          "Plan practical measures to reduce hurricane and drought risk"
+        ],
+        "concepts": [
+          "Wet and dry season",
+          "Trade winds",
+          "Rain shadow",
+          "Mulching",
+          "Drip irrigation",
+          "Windbreak",
+          "Drought tolerance"
+        ],
+        "experiment": {
+          "type": "data-explorer",
+          "description": "Season Planner: Read a district rainfall and temperature record and select the planting window, irrigation and shelter plan."
+        }
+      }
+    ]
+  },
+  {
+    "id": "ag-mod-2",
+    "title": "Crop Production",
+    "lessons": [
+      {
+        "id": "ag-l2-1",
+        "title": "Plant Growth, Seeds and Propagation",
+        "content": "A crop starts as a seed or a cutting, and understanding how plants grow makes every later operation more effective. Germination requires water, warmth and air: the seed absorbs water, its enzymes become active, the radicle and plumule emerge, and the young plant relies at first on the food stored in the seed. Good seed is true to variety, clean, of high germination percentage and stored cool, dry and away from pests.\n\nPlants grow through photosynthesis in the leaves and take up water and minerals through roots. Vegetative growth builds leaves, stems and roots, while reproductive growth produces flowers, fruit and seed; the balance between the two can be steered by spacing, pruning and nutrition. Nitrogen encourages leafy growth, phosphorus supports roots and flowering, and potassium improves fruit quality and stress tolerance.\n\nPropagation is either sexual or asexual. Sexual propagation - sowing seed - is cheap, gives variability and lets a farmer select new types, but it is slow to fruit and offspring may differ from the parent. Asexual or vegetative propagation - cuttings, suckers, grafting, budding, layering, tubers and rhizomes - keeps exactly the good qualities of the parent and gives a faster, more uniform crop. Grafted plants combine a disease-resistant rootstock with a productive top, which is why grafting is used for citrus, mango and cocoa.",
+        "objectives": [
+          "Describe the conditions required for germination and healthy seedling growth",
+          "Distinguish sexual from asexual propagation and their advantages",
+          "Select an appropriate method of propagation for named crops"
+        ],
+        "concepts": [
+          "Germination",
+          "Viability",
+          "Photosynthesis",
+          "Vegetative growth",
+          "Cutting",
+          "Grafting",
+          "Budding",
+          "Rootstock"
+        ],
+        "experiment": {
+          "type": "drag-drop",
+          "description": "Propagation Bench: Drag each planting material to the propagation method it belongs to and the crop it produces."
+        }
+      },
+      {
+        "id": "ag-l2-2",
+        "title": "Land Preparation and Crop Husbandry",
+        "content": "Land preparation makes the soil fit for the crop. Clearing removes bushes and previous crop residues; tillage breaks up and loosens soil so roots and water can move, and it also destroys weeds and buries residues to add organic matter. Ploughing and harrowing should be done at the right moisture content, because working wet clay destroys its structure and creates hard clods, while working very dry soil raises dust and loses moisture.\n\nPlanting decisions matter as much as the preparation. Correct spacing reduces competition for light, water and nutrients and lets the grower move through the field; planting depth must suit the seed size; and rows should follow the contour on sloping land to slow run-off. Raised beds or ridges suit heavy soils and wet periods, while flat beds suit light soils and dry periods.\n\nHusbandry is the day-to-day care that follows. Thinning removes weak seedlings, weeding controls competition early when crops are most vulnerable, mulching conserves moisture and suppresses weeds, staking supports tall crops, and pruning shapes plants and removes diseased wood. Watering must match need - too little stresses plants and too much waterlogs roots - and fertiliser is applied to the crop's requirement rather than by habit, ideally split into doses as the crop grows. Every one of these operations costs money, so each must earn its place.",
+        "objectives": [
+          "Sequence land preparation operations correctly for a named crop",
+          "Justify spacing, planting depth and bed shape",
+          "Carry out husbandry operations and explain why each is done"
+        ],
+        "concepts": [
+          "Tillage",
+          "Harrowing",
+          "Spacing",
+          "Thinning",
+          "Weeding",
+          "Mulching",
+          "Staking",
+          "Contour"
+        ],
+        "experiment": {
+          "type": "order-steps",
+          "description": "Crop Calendar: Put the operations for a season of sweet pepper into the right order and match each to its purpose."
+        }
+      },
+      {
+        "id": "ag-l2-3",
+        "title": "Crop Protection: Pests, Diseases and Weeds",
+        "content": "A crop can be lost before harvest. Pests, diseases and weeds are the three main biological threats, and each is managed by identification, monitoring and control. Insect pests damage plants by chewing leaves, sucking sap, boring stems and fruit or transmitting disease; examples include cutworms in seedlings, aphids and whiteflies on vegetables, and beetles in stored produce. Diseases are caused by fungi, bacteria, viruses and nematodes, and show as spots, wilts, rots, galls, mosaic patterns and die-back.\n\nCorrect identification comes first, because a fungicide will not control an insect and a resistant variety will not cure a nutrient deficiency. Control follows a ladder: cultural methods such as resistant varieties, clean seed, crop rotation, correct spacing, drainage and removal of infected plants; mechanical methods such as hand-picking, traps and barriers; biological control using natural enemies such as ladybirds and wasps; and finally chemical control with a labelled pesticide, applied at the right rate, at the right time, with protective clothing and strict attention to the pre-harvest interval.\n\nWeeds compete for water, light and nutrients, host pests and diseases and slow harvesting. They are controlled by hand weeding, mulching, cover crops, mechanical cultivation and herbicides. Whichever method is used, protection should be based on scouting the field regularly and acting early - an integrated pest management approach that keeps costs, chemical use and resistance down.",
+        "objectives": [
+          "Identify common pests, diseases and weeds and the damage they cause",
+          "Apply cultural, mechanical, biological and chemical control in the right order",
+          "Use pesticides safely, including protective equipment and pre-harvest intervals"
+        ],
+        "concepts": [
+          "Pest",
+          "Pathogen",
+          "Nematode",
+          "Cultural control",
+          "Biological control",
+          "Integrated pest management",
+          "Pre-harvest interval"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Pest Clinic: Match each symptom to the likely cause and to the first control measure to try."
+        }
+      }
+    ]
+  },
+  {
+    "id": "ag-mod-3",
+    "title": "Animal Production",
+    "lessons": [
+      {
+        "id": "ag-l3-1",
+        "title": "Farm Animals: Types, Breeds and Rearing Systems",
+        "content": "Animal production turns feed, forage and labour into meat, milk, eggs, hides and manure. The common farm animals of the Caribbean are poultry, pigs, goats, sheep and cattle, with rabbits and bees on many small holdings. Each species has breeds or types suited to particular purposes: layers for eggs and broilers for meat in poultry; dairy, beef and dual-purpose breeds of cattle; meat and dairy goats; and breeds chosen for heat tolerance, tick resistance and fertility in tropical conditions.\n\nRearing systems range from free range, where animals find much of their own feed, through semi-intensive systems with shelter and supplementary feeding, to intensive systems where animals are housed and all feed is brought to them. Intensive systems offer better control of nutrition, health and predation and use less land, but they need capital, reliable feed supply and careful ventilation and waste management. Extensive systems cost less to set up but expose animals to weather, parasites and theft, and produce more slowly.\n\nChoosing between them depends on land, capital, market and management skill. A small farmer may keep a few goats on a fenced pasture with a simple shelter, while a commercial unit may run a controlled-environment poultry house. In both cases success depends on the same fundamentals: suitable stock, adequate feed and clean water, a dry draught-free shelter, and a health programme.",
+        "objectives": [
+          "Describe breeds and types of farm animals and their purposes",
+          "Compare free range, semi-intensive and intensive rearing systems",
+          "Select a rearing system for given land, capital and market conditions"
+        ],
+        "concepts": [
+          "Layer",
+          "Broiler",
+          "Dual purpose",
+          "Free range",
+          "Housing",
+          "Stocking rate",
+          "Ventilation",
+          "Biosecurity"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Livestock Match: Match each class of stock to its purpose and to the housing or system of rearing it needs."
+        }
+      },
+      {
+        "id": "ag-l3-2",
+        "title": "Animal Nutrition, Feeding and Housing",
+        "content": "Animals must be fed to meet their requirements, not simply to fill a trough. A ration supplies energy from carbohydrates and fats, protein for growth, milk and eggs, minerals for bones and shells, vitamins for health and metabolism, water, and fibre to keep the gut working. Feeds are grouped as roughages - grasses, legumes, hay, silage and crop residues - and concentrates, which are energy-rich or protein-rich feeds such as maize, wheat bran, soybean meal and fish meal. Rations are balanced to the animal's age, weight and production stage, and a milking cow or laying hen needs far more protein than a dry goat.\n\nFeeding practice also counts. Feed must be stored cool and dry to prevent mould and aflatoxin, troughs must be clean, and there must be enough space so that weaker animals are not bullied away from feed. Clean water must be available at all times, since a laying hen may drink much more than she eats, and water shortage stops production faster than feed shortage. Pastures are improved by planting improved grasses and legumes and by rotational grazing, which prevents overgrazing and lets grass recover.\n\nHousing protects production. Good housing gives shelter from sun and rain, dry bedding, ventilation without draughts, protection from predators and theft, and facilities that make routine work - feeding, watering, egg collection, cleaning and manure removal - easy. Overcrowding and poor ventilation cause stress, respiratory disease, cannibalism in poultry and reduced growth, so stocking density and air quality are management decisions, not details.",
+        "objectives": [
+          "Classify feeds as roughages or concentrates and describe their roles",
+          "Balance a ration to the age and production stage of an animal",
+          "Design housing that meets shelter, ventilation, space and hygiene requirements"
+        ],
+        "concepts": [
+          "Ration",
+          "Concentrate",
+          "Roughage",
+          "Protein",
+          "Aflatoxin",
+          "Stocking density",
+          "Rotation grazing",
+          "Water requirement"
+        ],
+        "experiment": {
+          "type": "balance-scale",
+          "description": "Ration Balancer: Build a ration for a specified animal and check whether it supplies enough protein and energy."
+        }
+      },
+      {
+        "id": "ag-l3-3",
+        "title": "Animal Health, Reproduction and Records",
+        "content": "Healthy stock grows, breeds and pays. Health is protected long before any sickness appears: buy from reliable sources, quarantine new animals, keep housing clean and dry, control ticks and internal parasites on a schedule, vaccinate against the diseases common in the area, provide correct nutrition and clean water, and keep visitors and equipment from carrying infection in. This whole set of practices is called biosecurity, and its first rule is that a closed, well-managed herd stays healthier than one that is constantly restocked.\n\nSick animals must be recognised early. Warning signs include going off feed, separating from the group, fever, abnormal droppings, coughing, lameness, sudden drop in milk or egg production, discharges, swelling and loss of condition. A farmer should isolate the animal, record the signs, consult the veterinarian or extension officer, follow the prescribed treatment and respect any withdrawal period before milk, eggs or meat are sold.\n\nReproduction keeps the herd productive and replaces stock that is sold. Cattle, goats and sheep come into heat at regular intervals, and breeding should be timed so that calving or kidding falls when feed and weather are favourable; the gestation periods are roughly nine months for cattle, five for goats and sheep and nearly four for pigs, while poultry produce eggs continuously. Good body condition, minerals and parasite control all improve fertility. Records make this manageable: breeding dates, birth dates, weights, treatments, feed used and production per animal show which animals are profitable and which should be culled.",
+        "objectives": [
+          "Explain biosecurity and routine health measures",
+          "Recognise signs of illness and act correctly, including withdrawal periods",
+          "Use breeding and production records to select and cull stock"
+        ],
+        "concepts": [
+          "Biosecurity",
+          "Quarantine",
+          "Vaccination",
+          "Withdrawal period",
+          "Gestation",
+          "Oestrus",
+          "Culling",
+          "Body condition"
+        ],
+        "experiment": {
+          "type": "cull-decision",
+          "description": "Herd Decision: Review production and health records for a group of animals and decide which to keep, treat or cull."
+        }
+      }
+    ]
+  },
+  {
+    "id": "ag-mod-4",
+    "title": "Farm Tools, Machinery and Structures",
+    "lessons": [
+      {
+        "id": "ag-l4-1",
+        "title": "Hand Tools and Their Care",
+        "content": "Hand tools do most of the work on small Caribbean holdings, and knowing which tool suits a job protects both the worker and the crop. Cutting and clearing tools include the cutlass, machete, pruning saw, secateurs and brush hook. Digging and tillage tools include the fork, spade, hoe, mattock and rake. Planting and cultivation include the dibber, trowel, watering can and knapsack sprayer, and harvesting includes harvest knives, baskets and crates.\n\nTools fail through neglect more often than through wear. Metal parts should be cleaned after use, dried and oiled to prevent rust, and sharpened at the correct angle with a file or whetstone - a sharp cutlass requires less force and is therefore safer than a blunt one. Handles should be checked for cracks, and heads re-seated and wedged when loose. Sprayers need rinsing inside and out after every use, with nozzles cleared and the pump washers checked, because dried chemical residue both corrodes the equipment and spoils the next spray.\n\nSafety is part of tool craft. Cut away from the body, carry a cutlass in its sheath with the edge turned outwards, never leave a hoe edge-up in the field, keep tools out of the reach of children, and wear boots and gloves where a tool might slip. A tool store with a rack, a lock and a dry floor keeps equipment serviceable and makes it easy to see what is missing at the end of the day.",
+        "objectives": [
+          "Identify hand tools and match each to its correct use",
+          "Carry out routine cleaning, sharpening and repair",
+          "Apply safe working practices with hand tools"
+        ],
+        "concepts": [
+          "Cutlass",
+          "Secateurs",
+          "Mattock",
+          "Sprayer",
+          "Whetstone",
+          "Rust",
+          "Tool store",
+          "Safety practice"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Tool Shed: Match each tool to its job, its maintenance routine and the correct safety rule."
+        }
+      },
+      {
+        "id": "ag-l4-2",
+        "title": "Machinery, Mechanisation and Power",
+        "content": "Mechanisation replaces labour with power. The tractor is the heart of most mechanised farms, pulling a plough, harrow, rotavator, planter, fertiliser spreader or trailer through a three-point linkage or drawbar, and driving pumps, mills and sprayers through a power take-off. Other powered equipment includes water pumps, hammer mills for feed, brush cutters, and small two-wheel tractors suitable for steep or fragmented land.\n\nMatching the machine to the job is the essence of good mechanisation. Implements must be the right size for the tractor's power, the working width and depth must suit the soil, and tyre pressure and ballast must be set so the wheels grip without compacting the soil. Work should be done at the moisture content that gives good tilth, since ploughing wet clay smears and compacts it and turning very dry soil creates dust. Operating speed, gear selection and forward pattern determine both the quality of the work and fuel consumption.\n\nMaintenance is a schedule, not an emergency. Daily checks before starting cover fuel, oil, coolant, tyre pressure and leaks; weekly tasks include greasing points and cleaning filters; and periodic servicing replaces oils and filters on the manufacturer's interval. Records of fuel used, hours worked and repairs tell a farmer whether a machine is actually saving money, since a tractor used only a few days a year may cost more than hiring one. Safety rules - guards in place, PTO shield fitted, no passengers, engine off before adjusting anything - prevent the injuries that make machinery the most dangerous item on a farm.",
+        "objectives": [
+          "Describe the main powered equipment and implements used on farms",
+          "Match implements and operations to soil and moisture conditions",
+          "Carry out a maintenance schedule and apply machinery safety rules"
+        ],
+        "concepts": [
+          "Tractor",
+          "Three-point linkage",
+          "Power take-off",
+          "Implement",
+          "Compaction",
+          "Servicing",
+          "Fuel efficiency",
+          "Guarding"
+        ],
+        "experiment": {
+          "type": "simulation",
+          "description": "Machinery Match: Choose a tractor-implement combination for a field and see how size, depth and speed affect the work and the fuel bill."
+        }
+      },
+      {
+        "id": "ag-l4-3",
+        "title": "Farm Structures, Fencing, Irrigation and Drainage",
+        "content": "Farm structures support production. They include animal houses and pens, feed and fertiliser stores, produce-packing sheds, greenhouses and shade houses, compost heaps and manure pits, silos and water tanks. Each is designed for a purpose: a store must be dry, ventilated, vermin-proof and raised off the ground; an animal house must be dry, airy and easy to clean; a shade house must cut light and heat while allowing air movement. Siting matters too, since a store placed under trees stays damp and a pen built in a low spot floods.\n\nFencing controls animals and marks boundaries. Wire fences with posts and strainers, barbed wire for cattle, woven wire for goats and sheep, electric fencing for paddocks, and living fences of thorny plants such as gliricidia are all used in the Caribbean. Posts must be set below the frost-free depth or braced with diagonals at corners and gates, because a slack fence encourages animals to push through and stray.\n\nWater must be delivered where it is needed and removed where it is not wanted. Irrigation systems include furrow and basin methods, sprinkler systems and drip irrigation, which is the most efficient because it waters the root zone directly and reduces disease by keeping foliage dry. Pumps, filters, mainlines and emitters need maintenance to keep flow even. Drainage is the mirror image: open drains, cut-off drains above cultivated land, raised beds and contour ditches carry excess water away after heavy rain, protecting roots from waterlogging and preventing the gullies that start on bare, sloping soil.",
+        "objectives": [
+          "Describe the purpose and design features of common farm structures",
+          "Select and construct fencing suitable for different classes of livestock",
+          "Compare irrigation methods and design drainage for a sloping field"
+        ],
+        "concepts": [
+          "Store",
+          "Shade house",
+          "Strainer",
+          "Electric fence",
+          "Drip irrigation",
+          "Emitter",
+          "Cut-off drain",
+          "Waterlogging"
+        ],
+        "experiment": {
+          "type": "simulation",
+          "description": "Water Works: Lay out an irrigation and drainage plan for a sloping plot and test whether the soil stays moist but not waterlogged."
+        }
+      }
+    ]
+  },
+  {
+    "id": "ag-mod-5",
+    "title": "Farm Records, Business and Marketing",
+    "lessons": [
+      {
+        "id": "ag-l5-1",
+        "title": "Farm Records and Their Uses",
+        "content": "A farm without records is run on memory, and memory cannot tell a farmer which field paid and which did not. Farm records fall into groups: physical records such as field and animal records showing what was planted, sprayed, fed and produced; financial records such as receipts, invoices, the cash book and the bank statement; and statutory records required by law, including pesticide purchase and use records, animal health and movement records and tax documents.\n\nThe most useful records are simple enough to be kept every day. A field diary notes date, weather, operation, labour and materials for each plot; a livestock record notes breeding dates, births, weights, feed used, treatments and mortality; a cash book records every payment in and out with the date, amount and reason, and is supported by receipts filed in order. Stock, tools and chemical inventories prevent theft, spoilage and double buying, while production records - kilograms harvested, litres of milk, eggs collected - allow yield to be compared with inputs.\n\nRecords become decisions. Comparing cost per kilogram produced across two plots shows where to plant next season; comparing feed used per litre of milk shows whether the ration is efficient; tracking mortality shows whether a health problem is getting worse; and a record of prices received shows which market or buyer to use. Records also give evidence for loans, grants, insurance claims and certification, which matters because few farm businesses can grow without credit.",
+        "objectives": [
+          "Classify the records a farm should keep and describe what each records",
+          "Enter transactions correctly in a simple cash book and field diary",
+          "Use records to compare performance and support business decisions"
+        ],
+        "concepts": [
+          "Physical record",
+          "Financial record",
+          "Cash book",
+          "Inventory",
+          "Mortality",
+          "Yield",
+          "Statutory record",
+          "Cost per unit"
+        ],
+        "experiment": {
+          "type": "data-explorer",
+          "description": "Record Book: Read a season of field and cash records and identify the most and least profitable plot."
+        }
+      },
+      {
+        "id": "ag-l5-2",
+        "title": "Costs, Budgets and Farm Profit",
+        "content": "Farm profit is what remains when all costs are subtracted from all income. Costs are split into fixed and variable. Fixed costs continue whether or not anything is produced - land rent, loan interest, insurance, depreciation of buildings and machinery, and permanent labour - while variable costs change with the size of the enterprise: seed, fertiliser, pesticides, feed, fuel, casual labour, packaging and transport.\n\nA budget is a plan in numbers. An enterprise budget works out the variable costs, the expected yield and the expected price for one crop or animal enterprise to find the gross margin, which is income minus variable costs; gross margins are then compared to decide what to grow. A cash-flow budget spreads income and expenditure over the months, which is essential in agriculture because costs come early and income arrives at harvest, leaving a gap that must be financed. A partial budget tests a proposed change - such as adding drip irrigation or a second crop - by listing the extra income and savings against the extra costs and income forgone.\n\nBreak-even analysis answers how much must be sold to cover costs: break-even quantity equals fixed costs divided by the contribution per unit, where contribution is price minus variable cost per unit. If the break-even output is more than the farm can produce or sell, the enterprise will lose money however well the crop grows. Keeping these figures current, and comparing budget with actual every month, is what turns a farming activity into a farming business.",
+        "objectives": [
+          "Distinguish fixed from variable costs and give examples of each",
+          "Prepare a simple enterprise budget and calculate a gross margin",
+          "Calculate break-even output and use it to judge an enterprise"
+        ],
+        "concepts": [
+          "Fixed cost",
+          "Variable cost",
+          "Gross margin",
+          "Cash flow",
+          "Break-even",
+          "Contribution",
+          "Depreciation",
+          "Partial budget"
+        ],
+        "experiment": {
+          "type": "balance-scale",
+          "description": "Budget Bench: Build a crop budget and find the yield and price at which the enterprise breaks even."
+        }
+      },
+      {
+        "id": "ag-l5-3",
+        "title": "Marketing, Grading, Packaging and Pricing",
+        "content": "Production is only half of farming; the produce must be sold at a price that covers its cost. Marketing starts with knowing the market: who will buy, in what quantity, at what quality standard and at what time of year. Buyers include hotels, supermarkets, exporters, processors, schools, vendors at markets and direct sales to consumers, and each has different requirements for volume, consistency, size, variety and delivery schedule. A farmer who understands these requirements can plan production to match them instead of selling whatever happens to be ready.\n\nValue is added before sale. Grading sorts produce by size, colour and quality so that buyers can rely on the consignment and better grades earn a higher price. Cleaning, trimming and correct packaging protect the produce from bruising and contamination and reduce weight loss; crates and boxes must be strong, ventilated and the same size so they stack and can be counted. Post-harvest handling - harvesting in the cooler part of the day, shading produce, pre-cooling where possible, avoiding drops and damage, and moving quickly to market - protects the value that was grown in the field. Value addition such as washing, chopping, bottling jams, sauces, dried fruit or flour can raise returns sharply, but it brings food-safety and labelling obligations.\n\nPricing must be based on costs, not guesswork. The price must cover the cost of production per unit plus marketing costs and a margin, and pricing below cost sells a business out of existence. Contracts, cooperatives and group marketing help small farmers because they supply volume, share transport and storage, and give bargaining power that an individual grower does not have.",
+        "objectives": [
+          "Identify market requirements and plan production to meet them",
+          "Apply grading, packaging and post-harvest handling practice",
+          "Price produce from costs and use group marketing to bargain"
+        ],
+        "concepts": [
+          "Market research",
+          "Grading",
+          "Packaging",
+          "Post-harvest loss",
+          "Value addition",
+          "Cost of production",
+          "Contract",
+          "Cooperative"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Market Run: Match produce to the buyer's specification and work out the price that covers cost and margin."
+        }
+      }
+    ]
+  },
+  {
+    "id": "ag-mod-6",
+    "title": "Sustainability, Food Safety and Enterprise",
+    "lessons": [
+      {
+        "id": "ag-l6-1",
+        "title": "Soil and Water Conservation and Sustainable Practice",
+        "content": "Land in the Caribbean is often steep, rainfall is intense and the same plot is cropped season after season, so soil loss is the central threat to farming. Erosion starts when raindrops strike bare soil, break the surface into particles and run-off carries them and the nutrients attached to them downhill. The result is gullies in the field and silt in rivers, where it smothers coral reefs and reduces fish stocks.\n\nConservation practice works on two fronts: protecting soil from the impact of rain and slowing water's journey downhill. Contour ploughing and planting across the slope, contour drains and barriers, terraces, grass strips, living barriers of vetiver or gliricidia, mulching, cover crops, minimum tillage and keeping trees along watercourses all reduce run-off and hold soil in place. Organic matter builds structure, which increases infiltration, so compost, manure and crop residues are conservation materials as well as fertiliser. Shelterbelts and windbreaks reduce wind erosion and protect crops from storm damage.\n\nSustainable practice extends beyond the field. Water is used efficiently through drip irrigation, rainwater harvesting, tanks and ponds, and by irrigating in the cool of the evening. Nutrient and pesticide use is planned to avoid contaminating ground water and streams - buffers beside watercourses, no spraying before rain, correct dosing. Biodiversity is protected by keeping hedgerows, shade trees and natural vegetation, which support the pollinators and predators that make integrated pest management work. Agroforestry, rotation, integrated crop-livestock systems and organic approaches all aim at the same goal: keeping the farm productive in ten years' time, not only this season.",
+        "objectives": [
+          "Explain how erosion happens and its on-farm and off-farm effects",
+          "Select and justify conservation measures for a sloping plot",
+          "Describe practices that conserve water, nutrients and biodiversity"
+        ],
+        "concepts": [
+          "Erosion",
+          "Contour",
+          "Terrace",
+          "Cover crop",
+          "Living barrier",
+          "Mulching",
+          "Riparian buffer",
+          "Agroforestry"
+        ],
+        "experiment": {
+          "type": "waste-sorter",
+          "description": "Slope Rescue: Sort conservation measures by the problem they solve, then design a plan for a steep hillside plot."
+        }
+      },
+      {
+        "id": "ag-l6-2",
+        "title": "Food Safety, Post-Harvest Quality and Value Addition",
+        "content": "Food safety protects the consumer and the farm's reputation. Fresh produce carries soil, dust and micro-organisms from the field, so hygiene begins at harvest: clean hands, clean crates that are never used for chemicals or animals, clean water for washing, and nothing placed on bare ground. Animals and their manure must be kept away from produce areas, and workers who are unwell should not handle food. Water used for washing produce that will be eaten raw must itself be safe, since contaminated water contaminates everything it touches.\n\nQuality is lost after harvest through bruising, water loss, ripening and decay, so post-harvest handling is a set of deliberate steps. Harvest at the correct maturity and in the cool part of the day, use sharp clean tools, handle produce gently, shade it immediately, remove damaged fruit before it spoils the consignment, cool it as quickly as possible, grade it, pack it in ventilated containers and move it to market quickly. Storage conditions must suit the crop - cool and humid for leafy vegetables, warmer and dry for root crops, dry and ventilated for grain - and pests of stored produce are controlled by hygiene, dryness, sealed containers and, where used, approved treatments.\n\nValue addition turns surplus into saleable goods and extends the selling season: jams, jellies, sauces, juices, dried fruit, spices, flour from root crops, and packaged ready-to-cook produce. It demands food safety discipline - recipe control, sanitised equipment, correct processing times and temperatures, clean packaging, accurate labels with ingredients and dates, and safe storage - plus the business skills to price the product, meet labelling rules and find buyers. A processing enterprise is a manufacturing business growing out of a farm.",
+        "objectives": [
+          "Apply hygiene practice that keeps fresh produce safe",
+          "Carry out post-harvest handling and storage that preserves quality",
+          "Plan a simple value-added product with correct safety and labelling"
+        ],
+        "concepts": [
+          "Cross-contamination",
+          "Wash water",
+          "Maturity",
+          "Cold chain",
+          "Curing",
+          "Value addition",
+          "Sanitation",
+          "Labelling"
+        ],
+        "experiment": {
+          "type": "order-steps",
+          "description": "Field to Market: Order the post-harvest steps for a crate of tomatoes and spot where quality is lost."
+        }
+      },
+      {
+        "id": "ag-l6-3",
+        "title": "Agricultural Enterprise, Support Services and Policy",
+        "content": "Farming earns a living when it is run as an enterprise. The starting point is the farm plan: what will be produced, on how much land, with what inputs and labour, over what time, at what cost and for which market. The plan is then matched against resources - land, water, capital, labour, skill and time - because the most common cause of failure on a small holding is trying to run more enterprises than one person can manage well. Diversification spreads risk, but only within the limits of the farmer's management capacity.\n\nFarmers do not work alone. Support services include the extension service and agricultural officers who advise on crops, pests and practices; research and training institutions that release varieties and training; veterinary services; input suppliers and agro-shops; credit institutions, credit unions and micro-lenders; crop and livestock insurance; marketing organisations and cooperatives; and transport and storage providers. Cooperatives matter especially, because they let small farmers buy inputs in bulk, share equipment, grade and pack together, and negotiate prices collectively.\n\nPolicy and institutions set the conditions in which farms operate. Import duties and quotas, price supports, food-safety regulations, pesticide registration, quarantine rules for plant and animal health, land tenure, credit programmes and disaster relief all shape what is profitable and what is possible. Farmers influence these conditions through producer associations, and they adapt to them by choosing enterprises that fit both the market and the rules. Incentives such as crop insurance, irrigation programmes and training grants reduce risk; the farmer's own discipline, records and technical skill decide whether that support turns into a profitable, sustainable farm.",
+        "objectives": [
+          "Prepare a simple whole-farm plan matched to available resources",
+          "Identify the support services available to farmers and what each provides",
+          "Explain how policy measures affect farm profitability and risk"
+        ],
+        "concepts": [
+          "Farm plan",
+          "Diversification",
+          "Extension officer",
+          "Credit",
+          "Crop insurance",
+          "Cooperative",
+          "Quarantine",
+          "Land tenure"
+        ],
+        "experiment": {
+          "type": "classifier-sim",
+          "description": "Enterprise Choice: Match a farm's land, water, capital and labour to the enterprises that fit it."
+        }
+      }
+    ]
+  }
+]

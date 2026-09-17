@@ -1,0 +1,327 @@
+[
+  {
+    "id": "kc1",
+    "question": "Which set lists only farm inputs?",
+    "options": [
+      "Milk, eggs, vegetables",
+      "Seed, feed, fertiliser, labour",
+      "Manure, crates, profit",
+      "Cash book, receipts, invoices"
+    ],
+    "answer": "Seed, feed, fertiliser, labour",
+    "explanation": "Inputs enter the system to be converted into outputs.",
+    "topic": "ag-l1-1"
+  },
+  {
+    "id": "kc2",
+    "question": "Mixed farming combines:",
+    "options": [
+      "Two crop enterprises only",
+      "Crop and animal enterprises",
+      "Two livestock enterprises",
+      "Farming and fishing"
+    ],
+    "answer": "Crop and animal enterprises",
+    "explanation": "Each enterprise supplies the other with inputs such as manure and feed.",
+    "topic": "ag-l1-1"
+  },
+  {
+    "id": "kc3",
+    "question": "Which soil holds the most water and nutrients but drains poorly?",
+    "options": [
+      "Sand",
+      "Clay",
+      "Loam",
+      "Gravel"
+    ],
+    "answer": "Clay",
+    "explanation": "Small clay particles pack tightly, holding water and nutrients but draining slowly.",
+    "topic": "ag-l1-2"
+  },
+  {
+    "id": "kc4",
+    "question": "Adding compost to a poor soil improves:",
+    "options": [
+      "Only the colour",
+      "Structure, water holding and nutrient supply",
+      "Only the pH",
+      "Only drainage"
+    ],
+    "answer": "Structure, water holding and nutrient supply",
+    "explanation": "Humus improves structure, water retention and nutrient availability.",
+    "topic": "ag-l1-2"
+  },
+  {
+    "id": "kc5",
+    "question": "Planting a short-season variety is a response to:",
+    "options": [
+      "A long wet season",
+      "A short rainy period or the approach of the dry season",
+      "High soil pH",
+      "Cheap fertiliser"
+    ],
+    "answer": "A short rainy period or the approach of the dry season",
+    "explanation": "The crop must complete its cycle while moisture is available.",
+    "topic": "ag-l1-3"
+  },
+  {
+    "id": "kc6",
+    "question": "Windbreaks should be planted:",
+    "options": [
+      "Across the direction of the prevailing wind",
+      "Randomly in the field",
+      "Only beside roads",
+      "Along the contour only"
+    ],
+    "answer": "Across the direction of the prevailing wind",
+    "explanation": "A barrier across the wind slows it and shelters the leeward area.",
+    "topic": "ag-l1-3"
+  },
+  {
+    "id": "kc7",
+    "question": "A cutting produces a plant that is:",
+    "options": [
+      "Genetically different from the parent",
+      "Genetically identical to the parent",
+      "Always sterile",
+      "A hybrid"
+    ],
+    "answer": "Genetically identical to the parent",
+    "explanation": "Vegetative propagation produces clones of the parent.",
+    "topic": "ag-l2-1"
+  },
+  {
+    "id": "kc8",
+    "question": "A germination test tells the farmer:",
+    "options": [
+      "The price of seed",
+      "The percentage of seeds likely to sprout",
+      "The yield to expect",
+      "The fertiliser requirement"
+    ],
+    "answer": "The percentage of seeds likely to sprout",
+    "explanation": "It measures viability so sowing rates can be adjusted.",
+    "topic": "ag-l2-1"
+  },
+  {
+    "id": "kc9",
+    "question": "The purpose of harrowing is to:",
+    "options": [
+      "Break clods and level the seedbed",
+      "Remove all weeds permanently",
+      "Plant the crop",
+      "Apply fertiliser"
+    ],
+    "answer": "Break clods and level the seedbed",
+    "explanation": "Harrowing produces a fine, level tilth for sowing.",
+    "topic": "ag-l2-2"
+  },
+  {
+    "id": "kc10",
+    "question": "Which is the best first step when a pest problem appears?",
+    "options": [
+      "Spray the strongest chemical available",
+      "Identify the pest and assess the level of infestation",
+      "Ignore it for a week",
+      "Remove the whole crop"
+    ],
+    "answer": "Identify the pest and assess the level of infestation",
+    "explanation": "Correct identification and monitoring decide whether and what to spray.",
+    "topic": "ag-l2-3"
+  },
+  {
+    "id": "kc11",
+    "question": "Rotating crops helps to control pests because it:",
+    "options": [
+      "Starves pests of their host plant",
+      "Kills all insects",
+      "Increases pesticide use",
+      "Removes the need for fertiliser"
+    ],
+    "answer": "Starves pests of their host plant",
+    "explanation": "Pests specific to one crop die out when that crop is absent.",
+    "topic": "ag-l2-3"
+  },
+  {
+    "id": "kc12",
+    "question": "Semi-intensive rearing means:",
+    "options": [
+      "Animals are always housed",
+      "Animals have shelter and some free range with supplementary feed",
+      "Animals are never fed",
+      "Animals are tethered only"
+    ],
+    "answer": "Animals have shelter and some free range with supplementary feed",
+    "explanation": "It balances lower cost with some control of nutrition and health.",
+    "topic": "ag-l3-1"
+  },
+  {
+    "id": "kc13",
+    "question": "Pasture quality is improved by:",
+    "options": [
+      "Overgrazing",
+      "Planting improved grasses and legumes with rotational grazing",
+      "Removing all legumes",
+      "Burning the pasture"
+    ],
+    "answer": "Planting improved grasses and legumes with rotational grazing",
+    "explanation": "Better species and rest periods raise the feed value of the sward.",
+    "topic": "ag-l3-2"
+  },
+  {
+    "id": "kc14",
+    "question": "Which practice best prevents disease entering a herd?",
+    "options": [
+      "Buying animals from many sources",
+      "Quarantine and vaccination with clean housing",
+      "Sharing equipment between farms",
+      "Keeping animals wet"
+    ],
+    "answer": "Quarantine and vaccination with clean housing",
+    "explanation": "Biosecurity reduces the chance of introducing infection.",
+    "topic": "ag-l3-3"
+  },
+  {
+    "id": "kc15",
+    "question": "Which tool is used for digging and turning soil?",
+    "options": [
+      "Secateurs",
+      "Fork",
+      "Sprayer",
+      "Basket"
+    ],
+    "answer": "Fork",
+    "explanation": "Forks and spades lift and turn soil.",
+    "topic": "ag-l4-1"
+  },
+  {
+    "id": "kc16",
+    "question": "Before starting a tractor each day the operator should check:",
+    "options": [
+      "Only the radio",
+      "Fuel, oil, coolant, tyres and leaks",
+      "The paintwork",
+      "The trailer load"
+    ],
+    "answer": "Fuel, oil, coolant, tyres and leaks",
+    "explanation": "Daily checks prevent breakdowns and costly damage.",
+    "topic": "ag-l4-2"
+  },
+  {
+    "id": "kc17",
+    "question": "Raised beds and open drains are used together to:",
+    "options": [
+      "Conserve water in a dry season",
+      "Remove excess water from heavy soils in the wet season",
+      "Increase soil pH",
+      "Reduce sunlight"
+    ],
+    "answer": "Remove excess water from heavy soils in the wet season",
+    "explanation": "Getting water away from roots prevents waterlogging.",
+    "topic": "ag-l4-3"
+  },
+  {
+    "id": "kc18",
+    "question": "Which pair are both financial records?",
+    "options": [
+      "Field diary and cash book",
+      "Receipts and bank statement",
+      "Livestock record and inventory",
+      "Rain gauge and diary"
+    ],
+    "answer": "Receipts and bank statement",
+    "explanation": "Financial records document money received and spent.",
+    "topic": "ag-l5-1"
+  },
+  {
+    "id": "kc19",
+    "question": "Total variable costs rise when:",
+    "options": [
+      "Rent is paid",
+      "More land is planted and more inputs are used",
+      "Machinery is depreciated",
+      "Insurance is paid"
+    ],
+    "answer": "More land is planted and more inputs are used",
+    "explanation": "Variable costs change with the size of the enterprise.",
+    "topic": "ag-l5-2"
+  },
+  {
+    "id": "kc20",
+    "question": "Contribution per unit equals:",
+    "options": [
+      "Price minus variable cost per unit",
+      "Total income minus fixed costs",
+      "Yield times area",
+      "Fixed costs divided by area"
+    ],
+    "answer": "Price minus variable cost per unit",
+    "explanation": "It is the amount each unit sold contributes towards fixed costs and profit.",
+    "topic": "ag-l5-2"
+  },
+  {
+    "id": "kc21",
+    "question": "A buyer requiring consistent volume and quality means the farmer must:",
+    "options": [
+      "Sell whatever is available",
+      "Plan production and stagger planting to supply regularly",
+      "Only plant one week",
+      "Avoid grading"
+    ],
+    "answer": "Plan production and stagger planting to supply regularly",
+    "explanation": "Consistency is planned; it does not happen by chance.",
+    "topic": "ag-l5-3"
+  },
+  {
+    "id": "kc22",
+    "question": "Contour drains are built to:",
+    "options": [
+      "Store drinking water for animals",
+      "Intercept run-off and carry it away safely",
+      "Increase soil depth",
+      "Trap nutrients only"
+    ],
+    "answer": "Intercept run-off and carry it away safely",
+    "explanation": "They slow water and protect cultivated soil below.",
+    "topic": "ag-l6-1"
+  },
+  {
+    "id": "kc23",
+    "question": "The cold chain refers to:",
+    "options": [
+      "A chain of farm gates",
+      "Keeping produce cool continuously from harvest to sale",
+      "Frozen fertiliser",
+      "Cold-water irrigation"
+    ],
+    "answer": "Keeping produce cool continuously from harvest to sale",
+    "explanation": "Any break in cooling shortens shelf life and loses quality.",
+    "topic": "ag-l6-2"
+  },
+  {
+    "id": "kc24",
+    "question": "Before bottling a sauce for sale the producer must:",
+    "options": [
+      "Taste it only",
+      "Follow a controlled recipe with correct processing, sanitised equipment and accurate labels",
+      "Add extra salt only",
+      "Freeze it"
+    ],
+    "answer": "Follow a controlled recipe with correct processing, sanitised equipment and accurate labels",
+    "explanation": "Food safety and labelling rules protect consumers and are legally required.",
+    "topic": "ag-l6-2"
+  },
+  {
+    "id": "kc25",
+    "question": "A cooperative's main advantage for small farmers is:",
+    "options": [
+      "It removes the need to farm well",
+      "Collective buying, grading, marketing and bargaining power",
+      "It guarantees rain",
+      "It supplies free land"
+    ],
+    "answer": "Collective buying, grading, marketing and bargaining power",
+    "explanation": "Group scale lowers input costs and improves market access.",
+    "topic": "ag-l6-3"
+  }
+]

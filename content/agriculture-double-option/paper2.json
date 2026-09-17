@@ -1,0 +1,558 @@
+[
+  {
+    "id": "ag-p2-01",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "Planning a plot of sweet corn on a sloping hillside",
+    "topic": "ag-l1-2",
+    "commandWords": [
+      "Identify",
+      "Explain"
+    ],
+    "marks": 16,
+    "suggestedMinutes": 30,
+    "source": "Mr Brown farms two hectares of sloping land in Manchester. The soil is a red clay loam, the slope runs downhill towards a stream, and the sub-soil is shallow in places. He plans to plant sweet corn on the steeper half of the plot, which has been in grass for three years. His neighbour's plot, which was ploughed up and down the slope last year, now has several gullies and bare sub-soil showing.",
+    "prompt": "Study the information above and answer ALL parts of the question.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify TWO physical characteristics of the plot that affect how Mr Brown should prepare the land.",
+        "marks": 4,
+        "commandWords": [
+          "Identify"
+        ],
+        "modelAnswer": "1. The land is sloping, so run-off and soil erosion are serious risks. 2. The soil is a clay loam with shallow sub-soil in places, so it drains slowly, compacts easily if worked wet, and has limited depth for deep-rooted crops.",
+        "markScheme": [
+          "1 mark for each characteristic named (maximum 2 marks).",
+          "1 mark for each brief explanation of why the characteristic matters (maximum 2 marks)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain THREE ways Mr Brown should prepare and plant the land differently from his neighbour, and why.",
+        "marks": 6,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "1. Plough and plant along the contour rather than up and down the slope, because contour rows and furrows interrupt the downhill flow of water and hold soil in place. 2. Do the tillage when the clay soil is moist but not wet, because working wet clay smears and compacts it and it dries into hard clods. 3. Leave grass strips or a living barrier of vetiver across the slope, because their roots hold the soil and slow run-off.",
+        "markScheme": [
+          "1 mark for each correct practice identified (maximum 3 marks).",
+          "1 mark for each scientific reason given (maximum 3 marks).",
+          "Accept other valid practices: minimum tillage, mulching, cut-off drain above the plot, no burning of residues."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "State TWO consequences for the stream if erosion is not controlled, and suggest ONE way to protect it.",
+        "marks": 6,
+        "commandWords": [
+          "State",
+          "Suggest"
+        ],
+        "modelAnswer": "Consequences: silt settles on the stream bed and smothers aquatic life; nutrients attached to the soil particles enrich the water and cause algal growth that reduces oxygen. Protection: leave a strip of natural vegetation (a riparian buffer) along the stream bank to filter run-off and stabilise the bank.",
+        "markScheme": [
+          "1 mark for each consequence stated (maximum 2 marks).",
+          "1 mark for each explanation linking the consequence to the stream (maximum 2 marks).",
+          "2 marks for a workable protection measure with a reason."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ag-p2-02",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "Establishing a plantain plot by vegetative propagation",
+    "topic": "ag-l2-1",
+    "commandWords": [
+      "Describe",
+      "Explain"
+    ],
+    "marks": 14,
+    "suggestedMinutes": 28,
+    "source": "A farmer in St Mary wants to establish half a hectare of plantain. A neighbour offers him seed from a field where a virus-like disease (bunchy top symptoms) has appeared in a few stools, at a low price. Planting material would be suckers. Market prices for plantain are good and the farmer wants the first harvest as early as possible.",
+    "prompt": "Answer ALL parts of the question.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Explain TWO reasons why vegetative propagation is suitable for plantain.",
+        "marks": 4,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "1. Vegetative material (suckers) produces plants genetically identical to the parent, so the good bunch size and type are kept. 2. Plantain produces little or no viable seed, and plants from suckers come into bearing faster and more uniformly than seeded plants would.",
+        "markScheme": [
+          "1 mark for each reason (maximum 2 marks).",
+          "1 mark for each explanation (maximum 2 marks)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Advise the farmer whether to accept the neighbour's planting material. Justify your advice with TWO reasons.",
+        "marks": 4,
+        "commandWords": [
+          "Advise",
+          "Justify"
+        ],
+        "modelAnswer": "He should not accept it. 1. Disease is easily carried in vegetative planting material, so suckers from a field showing disease symptoms are likely to introduce the disease to his farm. 2. Infection would spread through the plot and be very difficult to remove once established, risking the whole investment; clean, certified planting material from a reliable source is worth the extra cost.",
+        "markScheme": [
+          "1 mark for a clear decision.",
+          "2 marks for each sound reason (maximum 4 marks for two reasons).",
+          "Accept answers that add the need to inspect and select only healthy sword suckers from a clean source."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Describe the steps you would take from receiving clean suckers to transplanting them in the field.",
+        "marks": 6,
+        "commandWords": [
+          "Describe"
+        ],
+        "modelAnswer": "Pare the suckers to remove old roots and any soil, treat or dip them where recommended, and cure them in a shaded dry place for a few days so cut surfaces heal and the risk of rotting is reduced. Meanwhile prepare the land: clear and loosen the soil, and open planting holes of about 30 cm at the recommended spacing on the contour. Place each sucker upright in the hole with the growing point just above soil level, firm the soil around it, and water it in. Mulch around the plants to conserve moisture and suppress weeds.",
+        "markScheme": [
+          "1 mark for each correct step (maximum 4 marks).",
+          "1 mark each for paring/curing, correct spacing and depth, and after-care such as watering or mulching (maximum 2 marks).",
+          "Accept a sound sequence even if the wording differs."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ag-p2-03",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "A vegetable plot losing soil and yield",
+    "topic": "ag-l6-1",
+    "commandWords": [
+      "Identify",
+      "Explain",
+      "Recommend"
+    ],
+    "marks": 20,
+    "suggestedMinutes": 30,
+    "source": "A school farm has grown vegetables on the same half-hectare slope for six years. The soil is now paler and shallower than it was, the fence line at the bottom of the plot is buried in soil, and yields of cabbage and carrot have fallen from about 3 tonnes to 1.5 tonnes per crop. Run-off after heavy rain is muddy. Agrochemicals, seed and fertiliser costs have risen each year.",
+    "prompt": "Answer ALL parts of the question.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify THREE signs in the scenario that indicate soil degradation is taking place.",
+        "marks": 6,
+        "commandWords": [
+          "Identify"
+        ],
+        "modelAnswer": "1. The soil is paler and shallower, showing loss of topsoil and humus. 2. Soil is accumulating against the fence line at the bottom of the slope, showing that soil has moved downhill. 3. Run-off is muddy after rain, showing that soil particles are being carried away in the water. Falling yields for the same crop indicate declining fertility.",
+        "markScheme": [
+          "1 mark for each sign identified (maximum 3 marks).",
+          "1 mark for each sign linked to its cause - erosion or loss of organic matter (maximum 3 marks)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain how the loss of topsoil reduces crop yield.",
+        "marks": 6,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "Topsoil carries most of the humus and nutrients, so removing it removes the store of nitrogen, phosphorus, potassium and micronutrients the crop needs and leaves a poorer, shallower rooting medium. Loss of humus also worsens structure, so the soil infiltrates less water, holds less moisture in the dry season and crusts over. Water-holding capacity falls, roots are restricted by the shallower profile, and the crop becomes more susceptible to drought stress, so growth and yield fall even when fertiliser is applied.",
+        "markScheme": [
+          "1 mark for each correct point made (maximum 4 marks).",
+          "Up to 2 further marks for linking loss of nutrients, structure and water holding to reduced growth and yield."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Recommend FOUR conservation practices for the plot and state the specific problem each solves.",
+        "marks": 8,
+        "commandWords": [
+          "Recommend"
+        ],
+        "modelAnswer": "1. Plant and cultivate along the contour so rows and furrows interrupt downhill run-off. 2. Establish grass strips or a living barrier of vetiver at intervals across the slope to trap moving soil. 3. Apply compost or manure and retain crop residues as mulch to rebuild humus, structure and water-holding capacity. 4. Build a cut-off drain above the plot and a grassed waterway below it to divert and carry run-off safely away. Crop rotation including a legume and a period under a cover crop would also help to restore fertility.",
+        "markScheme": [
+          "1 mark for each practice recommended (maximum 4 marks).",
+          "1 mark for each matching reason (maximum 4 marks).",
+          "Accept any four sound practices from the syllabus with a correct justification."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ag-p2-04",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "Rearing 100 broilers on a small holding",
+    "topic": "ag-l3-2",
+    "commandWords": [
+      "State",
+      "Explain",
+      "Calculate"
+    ],
+    "marks": 18,
+    "suggestedMinutes": 30,
+    "source": "A youth group plans to rear 100 broiler chicks to eight weeks in a 5 m by 4 m house with a concrete floor, open sides covered with wire mesh and a galvanised roof. They intend to buy a starter mash and a finisher mash from the local agro-shop, and to sell the birds to a hotel. The house stands in full sun with a single small window.",
+    "prompt": "Study the plan and answer ALL parts of the question.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "State THREE requirements of a good broiler house and say whether this house meets each one.",
+        "marks": 6,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "1. The house must be dry with good drainage - the concrete floor helps, provided litter is kept dry. 2. It must be well ventilated without draughts - the open wire sides give good air movement, but they must be orientated so that sun and driving rain do not enter. 3. It must give shade and shelter from sun and rain - the roof shades the birds, but the house is in full sun, so overheating at midday is a real risk and shade trees or a wider roof overhang would help.",
+        "markScheme": [
+          "1 mark for each requirement stated (maximum 3 marks).",
+          "1 mark for each judgement linked to the details in the scenario (maximum 3 marks)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain why the group needs both a starter and a finisher mash, and outline TWO other feeding or watering rules they must follow.",
+        "marks": 6,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "Chicks need a ration that is high in protein and easily digested for rapid early growth, while older birds need a ration with more energy and slightly less protein for finishing and deposit less fat; feeding the wrong ration for the stage wastes money and reduces growth. Other rules: provide clean water at all times, because a broiler drinks more than it eats and a short water shortage stops growth; and use enough trough and drinker space so every bird can feed without crowding, feeding little and often to avoid stale or spilt feed.",
+        "markScheme": [
+          "2 marks for explaining the change in nutrient requirement with age.",
+          "1 mark for each sound additional rule (maximum 2 marks).",
+          "Up to 2 marks for explaining why each rule matters."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Stocking density: if the house measures 5 m by 4 m, calculate the floor area and the floor space available per bird for 100 birds. Comment on whether this is adequate.",
+        "marks": 6,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Floor area = 5 m x 4 m = 20 m2. Space per bird = 20 / 100 = 0.2 m2, which is 2000 cm2. That is generally adequate for broilers at the finishing stage in warm conditions (about 10 to 15 birds per m2), though 0.2 m2 per bird is generous and the group could manage slightly more birds. The limiting factor would be ventilation and drinker space rather than floor area.",
+        "markScheme": [
+          "1 mark for 20 m2.",
+          "2 marks for correct division to give 0.2 m2 per bird.",
+          "1 mark for converting to another unit correctly (optional).",
+          "2 marks for a sound comment on adequacy linked to stocking density and ventilation."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ag-p2-05",
+    "type": "write",
+    "paper": 2,
+    "section": "Section B",
+    "title": "Farm records and the case for drip irrigation",
+    "topic": "ag-l5-2",
+    "commandWords": [
+      "Calculate",
+      "Interpret",
+      "Explain",
+      "Recommend"
+    ],
+    "marks": 36,
+    "suggestedMinutes": 45,
+    "source": "Miss Green farms one hectare of vegetables. Last year she spent $120,000 on seed, fertiliser, pesticides, casual labour, packaging and transport, and sold produce worth $300,000. Her fixed costs - land rent, insurance, depreciation on her pump and water tank, and interest on a loan - came to $90,000. She is considering borrowing $250,000 for a drip irrigation system. She expects the drip system to raise marketable yield by about 30 per cent, to cut her water bill by $25,000 a year and to reduce labour for watering by $35,000 a year. The loan would cost $45,000 a year in interest and $30,000 in repayment of capital. Fertiliser and seed costs would rise by about $15,000 because she would crop a larger area more intensively.",
+    "prompt": "Study the information above and answer ALL parts of the question.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Calculate the gross margin, fixed costs and net profit for last year. Show your working.",
+        "marks": 10,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Gross margin = gross income - variable costs = $300,000 - $120,000 = $180,000. Fixed costs = $90,000. Net profit = gross margin - fixed costs = $180,000 - $90,000 = $90,000.",
+        "markScheme": [
+          "2 marks for gross margin = $180,000 (1 mark for correct method, 1 mark for the figure).",
+          "2 marks for correctly using the fixed costs of $90,000.",
+          "4 marks for net profit = $90,000 (2 marks for correct method, 2 marks for the figure).",
+          "Up to 2 marks for clear, correctly laid out working."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Identify the figures that are irrelevant to the decision about the drip system, and explain why they are irrelevant.",
+        "marks": 6,
+        "commandWords": [
+          "Identify",
+          "Explain"
+        ],
+        "modelAnswer": "Her existing land rent, insurance, depreciation on the pump and water tank and existing loan interest - that is, the parts of her present fixed costs that the investment would not change - are not relevant to the decision, because a partial budget compares only the changes. Also irrelevant is her present packaging and transport cost, unless the higher yield would change it; only items that change with the decision belong in the comparison.",
+        "markScheme": [
+          "2 marks for identifying that existing fixed costs/loan interest are unaffected by the decision.",
+          "2 marks for explaining that a partial budget compares only what changes.",
+          "2 marks for a clear statement that unchanged costs cannot influence the choice."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Using a partial budget, calculate the extra income, savings, extra costs and income forgone, and state the net change in profit if the drip system is installed.",
+        "marks": 12,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Extra income: 30 per cent more marketable produce. Using last year's gross income as a base, 30 per cent x $300,000 = $90,000 extra income. Savings: water $25,000 + labour $35,000 = $60,000. Total extra returns = $90,000 + $60,000 = $150,000. Extra costs: interest $45,000 + capital repayment $30,000 + extra seed and fertiliser $15,000 = $90,000. Income forgone: none stated, so $0. Net change = extra returns - extra costs = $150,000 - $90,000 = $60,000 improvement in profit per year.",
+        "markScheme": [
+          "3 marks for extra income of $90,000.",
+          "2 marks for total savings of $60,000.",
+          "3 marks for total extra costs of $90,000.",
+          "2 marks for income forgone correctly stated as nil.",
+          "2 marks for a net change of $60,000 with a clear statement that the investment improves profit."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Recommend whether Miss Green should take the loan, and explain THREE non-financial factors she should consider before deciding.",
+        "marks": 8,
+        "commandWords": [
+          "Recommend",
+          "Explain"
+        ],
+        "modelAnswer": "On these figures she should proceed, because the partial budget shows a $60,000 annual improvement - though she should allow for the risk that the yield increase will not reach 30 per cent. Non-financial factors: 1. The reliability of the water supply and the quality of the water, because drip emitters block if water is dirty or if pressure is uneven. 2. Her management capacity - drip irrigation needs filters cleaned, lines flushed and emitters checked, so it demands more skill and routine attention than watering by hand. 3. Market capacity, because a 30 per cent yield increase is worthless if the market cannot absorb it at the same price, and a glut would lower her price and reduce the expected return. She should also consider whether her loan repayment schedule matches the cash flow of the crop.",
+        "markScheme": [
+          "2 marks for a justified recommendation.",
+          "2 marks for each well-explained non-financial factor (maximum 6 marks).",
+          "Accept correct points on water quality and filtration, management and maintenance skills, market capacity and price risk, risk of debt, and security of land tenure."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ag-p2-06",
+    "type": "write",
+    "paper": 2,
+    "section": "Section B",
+    "title": "Going to the hotel market",
+    "topic": "ag-l5-3",
+    "commandWords": [
+      "Identify",
+      "Explain",
+      "Recommend"
+    ],
+    "marks": 33,
+    "suggestedMinutes": 45,
+    "source": "Five farmers in a valley grow vegetables for a village market, where prices fall sharply when many of them harvest at the same time. A nearby hotel has offered a standing weekly order for graded, washed and correctly packed produce, provided supply is consistent every week and the packaging is a standard size. The hotel will collect. Requirements: tomatoes 120 kg, sweet pepper 80 kg, okra 60 kg and lettuce 100 heads each week; produce graded and packed in labelled crates; a record of the pre-harvest intervals for any pesticide used; and a written order two days in advance. One farmer, Mr Reid, keeps no records of spraying and says the paperwork is unnecessary.",
+    "prompt": "Study the scenario and answer ALL parts of the question.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify FOUR requirements the hotel is placing on the farmers and explain why each matters to the hotel.",
+        "marks": 10,
+        "commandWords": [
+          "Identify",
+          "Explain"
+        ],
+        "modelAnswer": "1. Consistent weekly supply of specified quantities, because the hotel must plan menus and cannot run short. 2. Grading and washing, because appearance and safety are part of what the hotel's guests pay for and inconsistent quality causes waste. 3. Standard, labelled packaging, because crates must stack, be counted and be identifiable. 4. Records of the pre-harvest interval for any pesticide used, because the hotel is legally responsible for the safety of food it serves and must be able to show traceability.",
+        "markScheme": [
+          "1 mark for each requirement identified (maximum 4 marks).",
+          "1 mark for each matching explanation (maximum 4 marks).",
+          "Up to 2 marks for additional credit clearly linked to hotel reputation or legal responsibility."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain TWO ways the farmers could organise themselves to meet a consistent weekly supply that no single farmer could meet alone.",
+        "marks": 6,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "1. Stagger plantings so that each farmer's harvest falls in a different week, and pool the produce so the total weekly quantity is met from several holdings. 2. Work through a cooperative or group arrangement with shared records, a common grading standard, pooled transport and one person responsible for the order and delivering each week. This also gives them volume to negotiate a better price and share the cost of crates and storage.",
+        "markScheme": [
+          "2 marks for each sound method (maximum 4 marks).",
+          "Up to 2 marks for explaining how the organisation solves the problem of inconsistent supply."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Mrs Reid argues that spraying records are unnecessary paperwork. Using the scenario, explain THREE reasons why she is wrong.",
+        "marks": 9,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "1. The hotel requires proof of the pre-harvest interval, so without records the group cannot show that residues are within safe limits and may lose the order. 2. Records of which chemical was used and when allow the farmer to respect the correct interval and avoid sending produce that is unsafe, protecting consumers and the group's reputation. 3. If a residue problem is traced back to the valley, records identify the plot and the treatment so it can be corrected; without them the whole group may be excluded from the market. Records also show whether a spray was worth its cost, which is the basis for deciding next season's pest-control programme.",
+        "markScheme": [
+          "2 marks for each reason given (maximum 6 marks).",
+          "Up to 3 marks for linking each reason to consequences in the scenario (loss of order, unsafe food, loss of reputation or market access)."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Recommend THREE changes the group should make to protect itself against low prices, and justify each.",
+        "marks": 8,
+        "commandWords": [
+          "Recommend",
+          "Justify"
+        ],
+        "modelAnswer": "1. Sell on contract to the hotel and other buyers so a known quantity has a known market and price, rather than all of them dumping produce on the village market at once. 2. Stagger production and diversify crops so that gluts are avoided and the market is supplied steadily across the season. 3. Add value and grade properly - washing, grading, packing and possibly processing surplus into sauces or dried products - so that excess produce is not sold cheaply or wasted, and so a higher share of the retail price returns to the farm. The group should also keep cost-of-production records so it knows the minimum price at which it can sell without making a loss.",
+        "markScheme": [
+          "1 mark for each recommendation (maximum 3 marks).",
+          "1 mark for each justification (maximum 3 marks).",
+          "Up to 2 marks for a justified point on knowing and pricing above cost of production."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ag-p2-07",
+    "type": "write",
+    "paper": 2,
+    "section": "Section B",
+    "title": "Tools, machinery and irrigation on two farms",
+    "topic": "ag-l4-2",
+    "commandWords": [
+      "Compare",
+      "Explain",
+      "Recommend"
+    ],
+    "marks": 40,
+    "suggestedMinutes": 45,
+    "source": "Farm A is one hectare of vegetables on a gentle slope, worked by one family using hand tools and a knapsack sprayer, with watering done by hand from a standpipe. Farm B is 40 hectares of cane on flat land owned by a company; it has two tractors with ploughs, harrows and trailers, a boom sprayer and a furrow irrigation system, and employs a machinery operator. Farm A has had two crop failures in dry years. Farm B has recently noticed that its soil has become harder and that water runs off the field faster than before.",
+    "prompt": "Answer ALL parts of the question.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Compare the two farms in terms of mechanisation, capital and labour, using the information given.",
+        "marks": 10,
+        "commandWords": [
+          "Compare"
+        ],
+        "modelAnswer": "Farm A is largely unmechanised, using hand tools and a knapsack sprayer; its capital investment in machinery is small and its labour is mostly family labour. Farm B is highly mechanised with tractors and implements; its capital investment in machinery and irrigation is large and it employs paid operators and workers. Farm A's operations are slower and depend on the availability of family labour, but its overheads are low. Farm B can prepare, plant and spray 40 hectares quickly with few workers, but it must carry depreciation, fuel, repairs, servicing and wages even when prices are low.",
+        "markScheme": [
+          "3 marks for describing Farm A's mechanisation, capital and labour with reference to the scenario.",
+          "3 marks for the same for Farm B.",
+          "2 marks for at least two valid comparisons (for example speed of operations against overhead costs).",
+          "Up to 2 marks for a clearly structured comparison rather than two separate descriptions."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain why Farm A suffers crop failure in dry years and suggest, with reasons, TWO affordable ways of reducing that risk.",
+        "marks": 10,
+        "commandWords": [
+          "Explain",
+          "Suggest"
+        ],
+        "modelAnswer": "Farm A depends on hand watering from a standpipe, so it cannot apply enough water over the whole plot when a dry spell lasts, and with no mulch or water storage there is nothing to fall back on. Affordable steps: 1. Mulch the beds heavily with crop residues or grass to cut evaporation from the soil surface and keep moisture in the root zone, which is cheap because the material is on the farm. 2. Harvest rainwater into tanks or a lined pond from the roof and use low-cost drip lines for the most valuable crops, so that stored water goes directly to the roots with little loss. Both changes need little capital but must be done before the dry season.",
+        "markScheme": [
+          "3 marks for explaining why the present system fails in dry years.",
+          "3 marks for each affordable measure suggested (maximum 6 marks).",
+          "1 mark for a stated reason for each measure - accept mulching, water harvesting, drip, shading or drought-tolerant crops."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Farm B's soil is harder and run-off has increased. Explain THREE likely causes and recommend a remedy for each.",
+        "marks": 12,
+        "commandWords": [
+          "Explain",
+          "Recommend"
+        ],
+        "modelAnswer": "1. Repeated tillage, especially of the same depth, creates a compacted layer (a plough pan) below the surface that roots and water cannot pass; remedy: vary the depth of working, use a sub-soiler to break the pan, and reduce the number of passes by combining operations. 2. Heavy tractor traffic and high tyre pressure compact the soil under the wheels; remedy: set correct tyre pressures, ballast the tractor properly to reduce wheel slip, and keep traffic to fixed tramlines. 3. Loss of organic matter from burning cane trash and clean cultivation weakens structure; remedy: retain trash as mulch, add compost or manure, and include a green manure or legume in the rotation to rebuild structure and infiltration, which will also slow run-off.",
+        "markScheme": [
+          "1 mark for each cause identified (maximum 3 marks).",
+          "1 mark for each explanation of how it compacts or hardens the soil (maximum 3 marks).",
+          "2 marks for each matching, practical remedy (maximum 6 marks)."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "State FOUR safety rules that must apply to machinery work on Farm B, and explain why each is needed.",
+        "marks": 8,
+        "commandWords": [
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "1. Never operate a tractor or implement with the power take-off shaft unguarded, because loose clothing and limbs are entangled instantly and such accidents are usually fatal. 2. Switch off the engine and remove the key before adjusting, cleaning or unblocking an implement, because a machine that starts or moves unexpectedly crushes or cuts the person working on it. 3. Carry no passengers on a tractor without a proper seat, because they can fall and be crushed by the implement or trailer. 4. Service the machine to schedule and check tyres, brakes and lights regularly, because brake failure on a loaded tractor or a sudden blowout on a slope causes loss of control.",
+        "markScheme": [
+          "1 mark for each rule stated (maximum 4 marks).",
+          "1 mark for each explanation (maximum 4 marks).",
+          "Accept well-reasoned rules on protective clothing, no riding on loads, safe refuelling and keeping children away."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ag-p2-08",
+    "type": "write",
+    "paper": 2,
+    "section": "Section B",
+    "title": "A school's broiler enterprise: records and decisions",
+    "topic": "ag-l3-3",
+    "commandWords": [
+      "Interpret",
+      "Explain",
+      "Recommend",
+      "Calculate"
+    ],
+    "marks": 40,
+    "suggestedMinutes": 45,
+    "source": "A school keeps a small pig unit. Records for the last two cycles show: sow A produced 9, 8 and 10 piglets weaned (average weaning weight 7 kg), while sow B produced 5, 4 and 6 piglets (average weaning weight 5 kg). Two growers died from scouring after housing was washed with cold water and not dried. Feed records show 3.2 kg of feed per kg of live weight gain for the herd, compared with 2.8 kg per kg achieved by a neighbouring farm. The neighbouring farm rotates its grazing and pens, quarantines new stock, and records every treatment. Market prices are firm and the school wants to expand to four sows next year.",
+    "prompt": "Study the records and answer ALL parts of the question.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Interpret the records for sows A and B. What action would you recommend for each and why?",
+        "marks": 10,
+        "commandWords": [
+          "Interpret",
+          "Recommend"
+        ],
+        "modelAnswer": "Sow A is the better producer, weaning 8 to 10 piglets each cycle at a higher average weight, which means more piglets to sell and better growth. Sow B weans fewer, lighter piglets consistently, which suggests a poorer milking ability, health or body-condition problem, or inferior genetics. Sow B should be examined for health and body condition and fed to improve condition; if her next litter is again poor she should be culled and replaced with a gilt from a productive line. Sow A should be kept and her daughters considered as replacements, because records show her performance is repeatable rather than a one-off.",
+        "markScheme": [
+          "2 marks for interpreting A's performance with reference to the figures.",
+          "2 marks for interpreting B's performance.",
+          "2 marks for the recommended action for B with a reason.",
+          "2 marks for the recommended action for A.",
+          "Up to 2 marks for stating that performance should be measured over more than one cycle before culling."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain the cause of the two deaths from scouring and state THREE biosecurity measures the unit should follow.",
+        "marks": 10,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "Scouring in newly weaned and housed pigs is usually caused by bacteria such as E. coli and by chilling and stress; washing with cold water leaves the pens damp and cold, so young pigs lose heat, their resistance falls and infection spreads readily in the wet environment. Measures: 1. Clean and disinfect pens, then allow them to dry completely before stock is moved in, and provide dry bedding and warmth for weaners. 2. Quarantine any new animals for a few weeks before they join the unit. 3. Follow a routine health programme with a veterinarian - vaccination where available, parasite control, clean water and feed, and keeping visitors and equipment away from the pens.",
+        "markScheme": [
+          "3 marks for a sound explanation linking damp, cold housing to stress, low resistance and scouring.",
+          "2 marks for each biosecurity measure (maximum 6 marks).",
+          "1 mark for linking any measure to reduced risk."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "The unit uses 3.2 kg of feed per kg gain while the neighbour uses 2.8 kg. Calculate the extra feed used per 100 kg of gain and explain TWO likely reasons for the difference, with a remedy for each.",
+        "marks": 12,
+        "commandWords": [
+          "Calculate",
+          "Explain"
+        ],
+        "modelAnswer": "Extra feed per 100 kg gain: 3.2 - 2.8 = 0.4 kg extra per kg gain, so 0.4 x 100 = 40 kg of feed extra per 100 kg of gain. Reasons: 1. Feed waste and spoilage - poorly designed or overfilled troughs, damp storage causing mould, or rodents and birds taking feed - which wastes money without producing growth; remedy: use suitable feeders and clean, rodent-proof, raised storage, and feed to requirement in measured amounts. 2. Poor health, parasites and comfort - worms, disease, cold, draughts or overcrowding mean energy is used fighting stress rather than producing meat; remedy: a parasite-control programme, dry draught-free housing with adequate space, clean water and prompt treatment of sick animals, as the neighbour's routine records and quarantine suggest.",
+        "markScheme": [
+          "3 marks for 0.4 kg per kg and 40 kg per 100 kg gain, with working shown.",
+          "3 marks for each reason explained with reference to the data (maximum 6 marks).",
+          "1 mark for each practical remedy (maximum 3 marks)."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Recommend whether the school should expand to four sows next year, and outline a simple record system to support the decision.",
+        "marks": 8,
+        "commandWords": [
+          "Recommend"
+        ],
+        "modelAnswer": "Expansion is reasonable because market prices are firm and the present sows already show that productive stock can perform, but it should be done only if the feed efficiency and health problems are corrected first, since expanding a herd that wastes 40 kg of feed per 100 kg gain and loses weaners simply multiplies the losses. A simple record system: a breeding record for each sow (mating date, farrowing date, litter size born and weaned, weaning weights), a feed record of quantity used per pen, a health record of treatments with dates and withdrawal periods, a mortality record, and a financial record of feed, stock, veterinary and sales costs, all entered weekly and reviewed each cycle so that each sow's performance and the cost per kg of gain are known before gilts are bought.",
+        "markScheme": [
+          "2 marks for a recommendation that refers to both the firm market and the need to fix efficiency first.",
+          "2 marks for a clear judgement on stocking and feed supply or housing capacity.",
+          "2 marks for naming the key records that must be kept.",
+          "2 marks for explaining how the records inform the expansion decision (per-sow performance, cost per kg gain)."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "p1",
+    "question": "In a farm system, seed, fertiliser and labour are:",
+    "options": [
+      "Outputs",
+      "Inputs",
+      "Processes",
+      "By-products"
+    ],
+    "answer": "Inputs",
+    "explanation": "Inputs enter the system; outputs leave it.",
+    "topic": "ag-l1-1"
+  },
+  {
+    "id": "p2",
+    "question": "A farm that produces mainly to feed the family is described as:",
+    "options": [
+      "Commercial",
+      "Subsistence",
+      "Intensive",
+      "Monoculture"
+    ],
+    "answer": "Subsistence",
+    "explanation": "Subsistence systems produce mainly for the farm household.",
+    "topic": "ag-l1-1"
+  },
+  {
+    "id": "p3",
+    "question": "Growing one crop over a large area is called:",
+    "options": [
+      "Mixed farming",
+      "Monoculture",
+      "Agroforestry",
+      "Rotation"
+    ],
+    "answer": "Monoculture",
+    "explanation": "Monoculture is a single crop over a wide area.",
+    "topic": "ag-l1-1"
+  },
+  {
+    "id": "p4",
+    "question": "Manure from cattle used to fertilise a vegetable plot is an example of:",
+    "options": [
+      "An output only",
+      "Recycling within the farm system",
+      "A fixed cost",
+      "Post-harvest loss"
+    ],
+    "answer": "Recycling within the farm system",
+    "explanation": "By-products of the animal enterprise become inputs to the crop enterprise.",
+    "topic": "ag-l1-1"
+  },
+  {
+    "id": "p5",
+    "question": "Which is a commercial farm output?",
+    "options": [
+      "Fuel purchased",
+      "Pesticide stored",
+      "Crates of tomatoes sold",
+      "Labour hired"
+    ],
+    "answer": "Crates of tomatoes sold",
+    "explanation": "Sold produce and livestock products are the outputs of the enterprise.",
+    "topic": "ag-l1-1"
+  },
+  {
+    "id": "p6",
+    "question": "Which soil particle size drains most quickly?",
+    "options": [
+      "Clay",
+      "Silt",
+      "Sand",
+      "Humus"
+    ],
+    "answer": "Sand",
+    "explanation": "Large sand particles leave big pore spaces, so water drains fast.",
+    "topic": "ag-l1-2"
+  },
+  {
+    "id": "p7",
+    "question": "The best soil for most crops is:",
+    "options": [
+      "Pure clay",
+      "Pure sand",
+      "Loam",
+      "Gravel"
+    ],
+    "answer": "Loam",
+    "explanation": "Loam balances sand, silt and clay, giving good drainage and nutrient holding.",
+    "topic": "ag-l1-2"
+  },
+  {
+    "id": "p8",
+    "question": "Heavy leaching in the tropics mainly removes:",
+    "options": [
+      "Sand",
+      "Soluble nutrients and bases",
+      "Humus only",
+      "Clay particles"
+    ],
+    "answer": "Soluble nutrients and bases",
+    "explanation": "Rain washes soluble nutrients down the profile, leaving soils acidic and infertile.",
+    "topic": "ag-l1-2"
+  },
+  {
+    "id": "p9",
+    "question": "The nutrient most responsible for leafy growth is:",
+    "options": [
+      "Nitrogen",
+      "Phosphorus",
+      "Potassium",
+      "Calcium"
+    ],
+    "answer": "Nitrogen",
+    "explanation": "Nitrogen promotes vegetative, leafy growth.",
+    "topic": "ag-l1-2"
+  },
+  {
+    "id": "p10",
+    "question": "A soil test is useful because it:",
+    "options": [
+      "Tells you the market price",
+      "Shows which nutrients are deficient and the pH",
+      "Removes weeds",
+      "Increases rainfall"
+    ],
+    "answer": "Shows which nutrients are deficient and the pH",
+    "explanation": "Fertiliser should be applied to a measured deficiency, not by habit.",
+    "topic": "ag-l1-2"
+  },
+  {
+    "id": "p13",
+    "question": "Hurricane season in the Caribbean runs roughly from:",
+    "options": [
+      "January to March",
+      "June to November",
+      "March to May",
+      "November to January"
+    ],
+    "answer": "June to November",
+    "explanation": "The Atlantic hurricane season runs from about June to November.",
+    "topic": "ag-l1-3"
+  },
+  {
+    "id": "p14",
+    "question": "A rain shadow is most likely on the:",
+    "options": [
+      "Windward slope",
+      "Leeward side of a mountain",
+      "Coastline facing the wind",
+      "Hilltop"
+    ],
+    "answer": "Leeward side of a mountain",
+    "explanation": "Moist air rises and rains on the windward slope, leaving the leeward side drier.",
+    "topic": "ag-l1-3"
+  },
+  {
+    "id": "p15",
+    "question": "Mulching helps a crop mainly by:",
+    "options": [
+      "Making the soil alkaline",
+      "Conserving soil moisture and suppressing weeds",
+      "Adding nitrogen directly",
+      "Increasing wind speed"
+    ],
+    "answer": "Conserving soil moisture and suppressing weeds",
+    "explanation": "The cover reduces evaporation and blocks weed growth.",
+    "topic": "ag-l1-3"
+  },
+  {
+    "id": "p16",
+    "question": "Which is the most water-efficient irrigation method?",
+    "options": [
+      "Furrow",
+      "Flood",
+      "Drip",
+      "Hand watering with a bucket"
+    ],
+    "answer": "Drip",
+    "explanation": "Drip delivers water to the root zone with little evaporation or run-off.",
+    "topic": "ag-l1-3"
+  },
+  {
+    "id": "p17",
+    "question": "Farmers plant on ridges in the wet season in order to:",
+    "options": [
+      "Conserve moisture",
+      "Improve drainage around the roots",
+      "Reduce light",
+      "Encourage weeds"
+    ],
+    "answer": "Improve drainage around the roots",
+    "explanation": "Ridges raise the root zone above standing water.",
+    "topic": "ag-l1-3"
+  },
+  {
+    "id": "p18",
+    "question": "A windbreak around a plot reduces:",
+    "options": [
+      "Rainfall",
+      "Wind damage to plants and soil",
+      "Soil fertility",
+      "Daylight entirely"
+    ],
+    "answer": "Wind damage to plants and soil",
+    "explanation": "Trees and hedges slow wind, limiting lodging and wind erosion.",
+    "topic": "ag-l1-3"
+  },
+  {
+    "id": "p19",
+    "question": "Which conditions are needed for seed germination?",
+    "options": [
+      "Light, fertiliser and soil",
+      "Water, warmth and air",
+      "Salt, heat and light",
+      "Dry air and cold"
+    ],
+    "answer": "Water, warmth and air",
+    "explanation": "Seeds need moisture, a suitable temperature and oxygen.",
+    "topic": "ag-l2-1"
+  },
+  {
+    "id": "p20",
+    "question": "Grafting is used mainly to:",
+    "options": [
+      "Produce many variable offspring",
+      "Combine a resistant rootstock with a productive top",
+      "Store seed",
+      "Reduce soil pH"
+    ],
+    "answer": "Combine a resistant rootstock with a productive top",
+    "explanation": "The rootstock supplies roots and resistance, the scion supplies the crop.",
+    "topic": "ag-l2-1"
+  },
+  {
+    "id": "p21",
+    "question": "Asexual propagation is preferred when the grower wants:",
+    "options": [
+      "Genetic variety",
+      "Uniform plants that keep the parent's qualities",
+      "Cheaper seed",
+      "New varieties"
+    ],
+    "answer": "Uniform plants that keep the parent's qualities",
+    "explanation": "Vegetative material is genetically identical to the parent.",
+    "topic": "ag-l2-1"
+  },
+  {
+    "id": "p22",
+    "question": "Viability of seed refers to:",
+    "options": [
+      "Seed size",
+      "The percentage of seeds that will germinate",
+      "Colour of the seed coat",
+      "Seed price"
+    ],
+    "answer": "The percentage of seeds that will germinate",
+    "explanation": "A germination test measures viability before planting.",
+    "topic": "ag-l2-1"
+  },
+  {
+    "id": "p23",
+    "question": "Seed should be stored:",
+    "options": [
+      "Damp and warm",
+      "Cool, dry and protected from pests",
+      "In sunlight",
+      "Mixed with fertiliser"
+    ],
+    "answer": "Cool, dry and protected from pests",
+    "explanation": "Moisture and heat reduce germination and encourage moulds and insects.",
+    "topic": "ag-l2-1"
+  },
+  {
+    "id": "p24",
+    "question": "The radicle that emerges first from a germinating seed becomes the:",
+    "options": [
+      "Shoot",
+      "Root",
+      "Leaf",
+      "Flower"
+    ],
+    "answer": "Root",
+    "explanation": "The radicle develops into the root system; the plumule forms the shoot.",
+    "topic": "ag-l2-1"
+  },
+  {
+    "id": "p25",
+    "question": "Ploughing clay soil when it is very wet causes:",
+    "options": [
+      "Better structure",
+      "Compaction and clodding",
+      "Less weed growth",
+      "Increased organic matter"
+    ],
+    "answer": "Compaction and clodding",
+    "explanation": "Working wet clay smears and compacts it, and it dries into hard clods.",
+    "topic": "ag-l2-2"
+  },
+  {
+    "id": "p26",
+    "question": "Correct spacing in a crop mainly reduces:",
+    "options": [
+      "Sunlight",
+      "Competition between plants",
+      "Soil depth",
+      "Germination"
+    ],
+    "answer": "Competition between plants",
+    "explanation": "Spacing gives each plant adequate light, water and nutrients.",
+    "topic": "ag-l2-2"
+  },
+  {
+    "id": "p27",
+    "question": "Thinning is carried out to:",
+    "options": [
+      "Remove weak seedlings so the remainder can develop",
+      "Increase plant density",
+      "Control insects",
+      "Improve drainage"
+    ],
+    "answer": "Remove weak seedlings so the remainder can develop",
+    "explanation": "Thinning reduces competition among seedlings.",
+    "topic": "ag-l2-2"
+  },
+  {
+    "id": "p28",
+    "question": "On a sloping plot, rows should be planted:",
+    "options": [
+      "Up and down the slope",
+      "Along the contour",
+      "Randomly",
+      "In a circle"
+    ],
+    "answer": "Along the contour",
+    "explanation": "Contour rows slow run-off and reduce soil loss.",
+    "topic": "ag-l2-2"
+  },
+  {
+    "id": "p29",
+    "question": "Staking is most useful for crops that:",
+    "options": [
+      "Grow tall and lodge easily",
+      "Grow as ground cover",
+      "Have deep taproots",
+      "Are harvested as roots"
+    ],
+    "answer": "Grow tall and lodge easily",
+    "explanation": "Support keeps fruit off the ground and prevents lodging.",
+    "topic": "ag-l2-2"
+  },
+  {
+    "id": "p30",
+    "question": "Applying fertiliser in split doses during the season is better because it:",
+    "options": [
+      "Saves labour",
+      "Matches supply to the crop's changing demand and reduces leaching",
+      "Increases pH",
+      "Kills weeds"
+    ],
+    "answer": "Matches supply to the crop's changing demand and reduces leaching",
+    "explanation": "Little and often keeps nutrients in the root zone.",
+    "topic": "ag-l2-2"
+  },
+  {
+    "id": "p31",
+    "question": "A fungicide will NOT control:",
+    "options": [
+      "A fungal leaf spot",
+      "An aphid infestation",
+      "A rust",
+      "A damping-off disease"
+    ],
+    "answer": "An aphid infestation",
+    "explanation": "Aphids are insects; correct identification prevents wasted and harmful spraying.",
+    "topic": "ag-l2-3"
+  },
+  {
+    "id": "p32",
+    "question": "Cultural control of pests includes:",
+    "options": [
+      "Hand-picking insects",
+      "Using resistant varieties and rotation",
+      "Applying insecticides weekly",
+      "Ignoring the crop"
+    ],
+    "answer": "Using resistant varieties and rotation",
+    "explanation": "Cultural methods change the crop environment to reduce pest pressure.",
+    "topic": "ag-l2-3"
+  },
+  {
+    "id": "p33",
+    "question": "Ladybirds feeding on aphids is an example of:",
+    "options": [
+      "Chemical control",
+      "Biological control",
+      "Mechanical control",
+      "Cultural control"
+    ],
+    "answer": "Biological control",
+    "explanation": "Natural enemies are used to suppress pest populations.",
+    "topic": "ag-l2-3"
+  },
+  {
+    "id": "p34",
+    "question": "The pre-harvest interval on a pesticide label is the:",
+    "options": [
+      "Time the sprayer must be cleaned",
+      "Period that must pass between spraying and harvest",
+      "Concentration to mix",
+      "Number of applications allowed"
+    ],
+    "answer": "Period that must pass between spraying and harvest",
+    "explanation": "It protects consumers from harmful residues.",
+    "topic": "ag-l2-3"
+  },
+  {
+    "id": "p35",
+    "question": "Weeds reduce crop yield mainly by:",
+    "options": [
+      "Adding humus",
+      "Competing for light, water and nutrients",
+      "Improving drainage",
+      "Attracting pollinators"
+    ],
+    "answer": "Competing for light, water and nutrients",
+    "explanation": "Weeds use resources the crop needs and can host pests and diseases.",
+    "topic": "ag-l2-3"
+  },
+  {
+    "id": "p36",
+    "question": "Scouting a field weekly is important because it:",
+    "options": [
+      "Replaces fertiliser",
+      "Detects pest and disease problems early, before losses build",
+      "Kills weeds",
+      "Increases yield directly"
+    ],
+    "answer": "Detects pest and disease problems early, before losses build",
+    "explanation": "Early detection allows cheaper, targeted control.",
+    "topic": "ag-l2-3"
+  },
+  {
+    "id": "p37",
+    "question": "A broiler is kept for:",
+    "options": [
+      "Egg production",
+      "Meat production",
+      "Milk",
+      "Draft work"
+    ],
+    "answer": "Meat production",
+    "explanation": "Broilers are meat-type poultry grown for slaughter.",
+    "topic": "ag-l3-1"
+  },
+  {
+    "id": "p38",
+    "question": "A layer is kept for:",
+    "options": [
+      "Meat",
+      "Eggs",
+      "Wool",
+      "Manure only"
+    ],
+    "answer": "Eggs",
+    "explanation": "Layers are selected for egg production.",
+    "topic": "ag-l3-1"
+  },
+  {
+    "id": "p39",
+    "question": "Which rearing system gives the greatest control over nutrition and health?",
+    "options": [
+      "Free range",
+      "Extensive grazing",
+      "Intensive housing",
+      "Nomadic herding"
+    ],
+    "answer": "Intensive housing",
+    "explanation": "Housed animals have all feed brought to them and are protected from weather and predators.",
+    "topic": "ag-l3-1"
+  },
+  {
+    "id": "p40",
+    "question": "Stocking rate is:",
+    "options": [
+      "The weight of one animal",
+      "The number of animals kept per unit area",
+      "Feed used per day",
+      "Price per animal"
+    ],
+    "answer": "The number of animals kept per unit area",
+    "explanation": "Overstocking causes overgrazing, parasite build-up and poor performance.",
+    "topic": "ag-l3-1"
+  },
+  {
+    "id": "p41",
+    "question": "Dual-purpose cattle breeds are kept for:",
+    "options": [
+      "Meat and draft only",
+      "Milk and meat",
+      "Eggs and meat",
+      "Wool and milk"
+    ],
+    "answer": "Milk and meat",
+    "explanation": "Dual-purpose breeds produce both milk and beef acceptably.",
+    "topic": "ag-l3-1"
+  },
+  {
+    "id": "p42",
+    "question": "Feeds high in energy are called:",
+    "options": [
+      "Roughages",
+      "Concentrates",
+      "Forages",
+      "Silage"
+    ],
+    "answer": "Concentrates",
+    "explanation": "Concentrates such as maize and bran are energy- or protein-rich.",
+    "topic": "ag-l3-2"
+  },
+  {
+    "id": "p43",
+    "question": "Which animal has the highest protein requirement?",
+    "options": [
+      "A dry goat",
+      "A laying hen",
+      "A mature bull at rest",
+      "A non-producing ewe"
+    ],
+    "answer": "A laying hen",
+    "explanation": "Egg production needs large amounts of protein and minerals every day.",
+    "topic": "ag-l3-2"
+  },
+  {
+    "id": "p44",
+    "question": "Clean water is critical because a shortage:",
+    "options": [
+      "Only affects flavour of milk",
+      "Stops production quickly, even before feed shortage does",
+      "Causes no harm",
+      "Increases egg size"
+    ],
+    "answer": "Stops production quickly, even before feed shortage does",
+    "explanation": "Water is needed for digestion, milk and eggs, and heat regulation.",
+    "topic": "ag-l3-2"
+  },
+  {
+    "id": "p45",
+    "question": "Aflatoxin in feed results from:",
+    "options": [
+      "Feeding too much protein",
+      "Mouldy feed stored in damp conditions",
+      "Overgrazing",
+      "Mineral deficiency"
+    ],
+    "answer": "Mouldy feed stored in damp conditions",
+    "explanation": "Moulds in damp stored feed produce toxins that damage animal health.",
+    "topic": "ag-l3-2"
+  },
+  {
+    "id": "p46",
+    "question": "Rotational grazing helps pasture because it:",
+    "options": [
+      "Removes all grass",
+      "Allows grass to recover between grazings",
+      "Increases parasite load",
+      "Prevents regrowth"
+    ],
+    "answer": "Allows grass to recover between grazings",
+    "explanation": "Rest periods keep the sward productive and reduce worm larvae on pasture.",
+    "topic": "ag-l3-2"
+  },
+  {
+    "id": "p47",
+    "question": "Poor ventilation in a poultry house most directly causes:",
+    "options": [
+      "Higher egg weight",
+      "Respiratory disease and stress",
+      "Better feed conversion",
+      "Lower humidity"
+    ],
+    "answer": "Respiratory disease and stress",
+    "explanation": "Ammonia and stale air damage the birds' airways and depress performance.",
+    "topic": "ag-l3-2"
+  },
+  {
+    "id": "p48",
+    "question": "Quarantining new animals means:",
+    "options": [
+      "Keeping them isolated before joining the herd",
+      "Vaccinating them immediately",
+      "Selling them",
+      "Grazing them with the herd"
+    ],
+    "answer": "Keeping them isolated before joining the herd",
+    "explanation": "Isolation allows disease to show before it spreads.",
+    "topic": "ag-l3-3"
+  },
+  {
+    "id": "p49",
+    "question": "A withdrawal period is the time between:",
+    "options": [
+      "Vaccination and breeding",
+      "The last treatment and the sale of milk, eggs or meat",
+      "Birth and weaning",
+      "Feeding and milking"
+    ],
+    "answer": "The last treatment and the sale of milk, eggs or meat",
+    "explanation": "It allows drug residues to clear the animal's products.",
+    "topic": "ag-l3-3"
+  },
+  {
+    "id": "p50",
+    "question": "The gestation period of a goat is about:",
+    "options": [
+      "3 months",
+      "5 months",
+      "9 months",
+      "12 months"
+    ],
+    "answer": "5 months",
+    "explanation": "Goats and sheep carry about five months; cattle about nine.",
+    "topic": "ag-l3-3"
+  },
+  {
+    "id": "p51",
+    "question": "Culling means:",
+    "options": [
+      "Selling all the animals",
+      "Removing unproductive or problem animals from the herd",
+      "Buying new stock",
+      "Vaccinating the herd"
+    ],
+    "answer": "Removing unproductive or problem animals from the herd",
+    "explanation": "Culling improves herd efficiency by removing animals that do not pay.",
+    "topic": "ag-l3-3"
+  },
+  {
+    "id": "p52",
+    "question": "Which is an early sign of illness in livestock?",
+    "options": [
+      "Steady weight gain",
+      "Going off feed and separating from the group",
+      "Bright eyes",
+      "Regular rumination only"
+    ],
+    "answer": "Going off feed and separating from the group",
+    "explanation": "Loss of appetite and isolation are among the first signs to act on.",
+    "topic": "ag-l3-3"
+  },
+  {
+    "id": "p53",
+    "question": "A cutlass is used mainly for:",
+    "options": [
+      "Pruning young trees",
+      "Cutting and clearing vegetation",
+      "Measuring distance",
+      "Applying fertiliser"
+    ],
+    "answer": "Cutting and clearing vegetation",
+    "explanation": "The cutlass clears brush and cuts cane and bananas.",
+    "topic": "ag-l4-1"
+  },
+  {
+    "id": "p54",
+    "question": "Secateurs are designed for:",
+    "options": [
+      "Digging soil",
+      "Cutting small stems and branches",
+      "Pruning mature tree trunks",
+      "Spraying"
+    ],
+    "answer": "Cutting small stems and branches",
+    "explanation": "Their curved blades make clean cuts on stems up to about a finger's thickness.",
+    "topic": "ag-l4-1"
+  },
+  {
+    "id": "p55",
+    "question": "A blunt cutlass is dangerous because it:",
+    "options": [
+      "Rusts faster",
+      "Requires more force and can slip",
+      "Is heavier",
+      "Cuts better"
+    ],
+    "answer": "Requires more force and can slip",
+    "explanation": "Sharpening is a safety measure as well as a maintenance task.",
+    "topic": "ag-l4-1"
+  },
+  {
+    "id": "p56",
+    "question": "After spraying, a knapsack sprayer should be:",
+    "options": [
+      "Left with the chemical inside",
+      "Rinsed thoroughly inside and out",
+      "Stored in the sun",
+      "Filled with fertiliser"
+    ],
+    "answer": "Rinsed thoroughly inside and out",
+    "explanation": "Residue corrodes parts and contaminates the next spray.",
+    "topic": "ag-l4-1"
+  },
+  {
+    "id": "p57",
+    "question": "Tools are best stored:",
+    "options": [
+      "On the ground outdoors",
+      "In a dry locked store on a rack",
+      "In a damp shed",
+      "Under a tree"
+    ],
+    "answer": "In a dry locked store on a rack",
+    "explanation": "Dry, organised storage prevents rust, loss and injury.",
+    "topic": "ag-l4-1"
+  },
+  {
+    "id": "p58",
+    "question": "A tractor pulls implements using the:",
+    "options": [
+      "Radiator",
+      "Three-point linkage and drawbar",
+      "Air filter",
+      "Steering wheel only"
+    ],
+    "answer": "Three-point linkage and drawbar",
+    "explanation": "The linkage carries mounted implements; the drawbar hauls trailed ones.",
+    "topic": "ag-l4-2"
+  },
+  {
+    "id": "p59",
+    "question": "The power take-off on a tractor is used to:",
+    "options": [
+      "Lift the implement",
+      "Drive machinery such as pumps and mills",
+      "Steer",
+      "Cool the engine"
+    ],
+    "answer": "Drive machinery such as pumps and mills",
+    "explanation": "The PTO transmits engine power to attached equipment.",
+    "topic": "ag-l4-2"
+  },
+  {
+    "id": "p60",
+    "question": "Working soil at the wrong moisture content causes:",
+    "options": [
+      "Better tilth",
+      "Compaction or clodding",
+      "Higher yields",
+      "Less fuel use"
+    ],
+    "answer": "Compaction or clodding",
+    "explanation": "Wet clay smears, dry soil clods; both damage structure.",
+    "topic": "ag-l4-2"
+  },
+  {
+    "id": "p61",
+    "question": "Over-inflated tyres on a tractor mainly cause:",
+    "options": [
+      "Better grip",
+      "More soil compaction under a smaller contact area",
+      "Lower fuel use",
+      "Higher engine power"
+    ],
+    "answer": "More soil compaction under a smaller contact area",
+    "explanation": "Correct pressure spreads the load and reduces compaction and wheel slip.",
+    "topic": "ag-l4-2"
+  },
+  {
+    "id": "p62",
+    "question": "The most dangerous part of the tractor for a bystander is:",
+    "options": [
+      "The exhaust pipe",
+      "The unguarded power take-off shaft",
+      "The door handle",
+      "The mirror"
+    ],
+    "answer": "The unguarded power take-off shaft",
+    "explanation": "PTO shafts are the most common cause of farm machinery entanglement injuries.",
+    "topic": "ag-l4-2"
+  },
+  {
+    "id": "p63",
+    "question": "Depreciation of a tractor means:",
+    "options": [
+      "Its purchase price",
+      "The loss in value as it wears out",
+      "Its fuel bill",
+      "Its servicing cost"
+    ],
+    "answer": "The loss in value as it wears out",
+    "explanation": "Depreciation is a fixed cost spread over the machine's working life.",
+    "topic": "ag-l4-2"
+  },
+  {
+    "id": "p64",
+    "question": "A feed store should be:",
+    "options": [
+      "Damp and dark",
+      "Dry, raised, ventilated and vermin-proof",
+      "Open to rain",
+      "Built in a low swampy spot"
+    ],
+    "answer": "Dry, raised, ventilated and vermin-proof",
+    "explanation": "Moisture and rodents spoil feed and can cause poisoning.",
+    "topic": "ag-l4-3"
+  },
+  {
+    "id": "p65",
+    "question": "Woven wire fencing is most suitable for:",
+    "options": [
+      "Goats and sheep",
+      "Cattle only",
+      "Poultry",
+      "Bees"
+    ],
+    "answer": "Goats and sheep",
+    "explanation": "Woven (sheep) netting stops small stock pushing through.",
+    "topic": "ag-l4-3"
+  },
+  {
+    "id": "p66",
+    "question": "Corner and gate posts need extra bracing because:",
+    "options": [
+      "They look better",
+      "They carry the greatest strain in tension",
+      "They are shorter",
+      "They rot faster"
+    ],
+    "answer": "They carry the greatest strain in tension",
+    "explanation": "Strain concentrated at corners pulls posts out if they are not braced.",
+    "topic": "ag-l4-3"
+  },
+  {
+    "id": "p67",
+    "question": "Drip irrigation saves water mainly because it:",
+    "options": [
+      "Floods the field quickly",
+      "Delivers water to the root zone with little evaporation or run-off",
+      "Keeps the foliage wet",
+      "Requires no maintenance"
+    ],
+    "answer": "Delivers water to the root zone with little evaporation or run-off",
+    "explanation": "Direct application cuts losses and reduces foliar disease.",
+    "topic": "ag-l4-3"
+  },
+  {
+    "id": "p68",
+    "question": "A cut-off drain above a cultivated plot is built to:",
+    "options": [
+      "Store water for irrigation",
+      "Divert run-off from higher ground around the plot",
+      "Raise the water table",
+      "Trap soil only"
+    ],
+    "answer": "Divert run-off from higher ground around the plot",
+    "explanation": "It protects cultivated soil from outside run-off.",
+    "topic": "ag-l4-3"
+  },
+  {
+    "id": "p69",
+    "question": "A shade house protects seedlings mainly from:",
+    "options": [
+      "Insects",
+      "Excessive sun and heat while allowing airflow",
+      "Rain only",
+      "Birds only"
+    ],
+    "answer": "Excessive sun and heat while allowing airflow",
+    "explanation": "Reduced light and temperature keep young plants from scorching and drying out.",
+    "topic": "ag-l4-3"
+  },
+  {
+    "id": "p70",
+    "question": "Which is a physical farm record?",
+    "options": [
+      "Cash book",
+      "Field diary of operations",
+      "Bank statement",
+      "Receipt book"
+    ],
+    "answer": "Field diary of operations",
+    "explanation": "Physical records describe what was done and produced; financial records track money.",
+    "topic": "ag-l5-1"
+  },
+  {
+    "id": "p71",
+    "question": "A cash book records:",
+    "options": [
+      "Only sales",
+      "All payments in and out with dates and reasons",
+      "Only bank transfers",
+      "Rainfall"
+    ],
+    "answer": "All payments in and out with dates and reasons",
+    "explanation": "Completeness is what makes the cash book useful.",
+    "topic": "ag-l5-1"
+  },
+  {
+    "id": "p72",
+    "question": "Records of feed used per litre of milk help a farmer to:",
+    "options": [
+      "Increase rainfall",
+      "Judge whether the ration is efficient",
+      "Set market price",
+      "Select a tractor"
+    ],
+    "answer": "Judge whether the ration is efficient",
+    "explanation": "Comparing input with output shows where efficiency can improve.",
+    "topic": "ag-l5-1"
+  },
+  {
+    "id": "p73",
+    "question": "Pesticide purchase and use records are kept mainly because they are:",
+    "options": [
+      "Optional convenience records",
+      "Required by law and needed for safe, traceable production",
+      "Only needed for exports",
+      "Purely for insurance"
+    ],
+    "answer": "Required by law and needed for safe, traceable production",
+    "explanation": "Statutory records support food safety, worker safety and traceability.",
+    "topic": "ag-l5-1"
+  },
+  {
+    "id": "p74",
+    "question": "Comparing yields of two plots requires records of:",
+    "options": [
+      "Cost of seed only",
+      "Area planted and quantity harvested for each plot",
+      "Number of rainy days",
+      "Labour only"
+    ],
+    "answer": "Area planted and quantity harvested for each plot",
+    "explanation": "Yield per unit area is the fair comparison.",
+    "topic": "ag-l5-1"
+  },
+  {
+    "id": "p75",
+    "question": "Which is a fixed cost?",
+    "options": [
+      "Seed",
+      "Fertiliser",
+      "Land rent",
+      "Packaging"
+    ],
+    "answer": "Land rent",
+    "explanation": "Fixed costs do not change with the level of production.",
+    "topic": "ag-l5-2"
+  },
+  {
+    "id": "p76",
+    "question": "Gross margin equals:",
+    "options": [
+      "Total income minus all costs",
+      "Gross income minus variable costs",
+      "Fixed costs minus income",
+      "Profit plus depreciation"
+    ],
+    "answer": "Gross income minus variable costs",
+    "explanation": "Gross margin is used to compare enterprises before fixed costs are charged.",
+    "topic": "ag-l5-2"
+  },
+  {
+    "id": "p77",
+    "question": "Break-even output is calculated as:",
+    "options": [
+      "Fixed costs divided by contribution per unit",
+      "Total costs minus income",
+      "Income divided by yield",
+      "Price times quantity"
+    ],
+    "answer": "Fixed costs divided by contribution per unit",
+    "explanation": "Contribution per unit is price minus variable cost per unit.",
+    "topic": "ag-l5-2"
+  },
+  {
+    "id": "p78",
+    "question": "A cash-flow budget is especially important in farming because:",
+    "options": [
+      "Costs are only paid at harvest",
+      "Costs come early and income arrives at harvest",
+      "Prices never change",
+      "Loans are unnecessary"
+    ],
+    "answer": "Costs come early and income arrives at harvest",
+    "explanation": "The gap between spending and income must be financed.",
+    "topic": "ag-l5-2"
+  },
+  {
+    "id": "p79",
+    "question": "A partial budget is used to:",
+    "options": [
+      "Record rainfall",
+      "Test the effect of a proposed change on profit",
+      "Value land",
+      "Calculate depreciation only"
+    ],
+    "answer": "Test the effect of a proposed change on profit",
+    "explanation": "It lists extra income and savings against extra costs and income forgone.",
+    "topic": "ag-l5-2"
+  },
+  {
+    "id": "p80",
+    "question": "Depreciation is treated as:",
+    "options": [
+      "A variable cost",
+      "A fixed cost",
+      "Income",
+      "A tax only"
+    ],
+    "answer": "A fixed cost",
+    "explanation": "Machinery and buildings lose value whether or not they are used.",
+    "topic": "ag-l5-2"
+  },
+  {
+    "id": "p81",
+    "question": "Grading produce is done to:",
+    "options": [
+      "Increase weight",
+      "Sort by size and quality so buyers can rely on the consignment",
+      "Raise costs",
+      "Delay sale"
+    ],
+    "answer": "Sort by size and quality so buyers can rely on the consignment",
+    "explanation": "Consistent grades earn better prices and repeat orders.",
+    "topic": "ag-l5-3"
+  },
+  {
+    "id": "p82",
+    "question": "Harvesting in the cool part of the day mainly:",
+    "options": [
+      "Increases weight",
+      "Reduces heat load and delays spoilage",
+      "Prevents pests",
+      "Improves soil"
+    ],
+    "answer": "Reduces heat load and delays spoilage",
+    "explanation": "Lower field heat slows respiration and decay after harvest.",
+    "topic": "ag-l5-3"
+  },
+  {
+    "id": "p83",
+    "question": "Post-harvest loss means:",
+    "options": [
+      "Crop failure before harvest",
+      "Produce that loses quality or quantity after harvest",
+      "Loss of soil fertility",
+      "Loss of land"
+    ],
+    "answer": "Produce that loses quality or quantity after harvest",
+    "explanation": "Bruising, water loss, ripening and decay all reduce the saleable product.",
+    "topic": "ag-l5-3"
+  },
+  {
+    "id": "p84",
+    "question": "Packaging for fresh produce should be:",
+    "options": [
+      "Sealed airtight for all crops",
+      "Strong, ventilated and a standard size",
+      "Made of newspaper only",
+      "Wet to keep produce cool"
+    ],
+    "answer": "Strong, ventilated and a standard size",
+    "explanation": "Ventilation prevents overheating and standard sizes simplify handling.",
+    "topic": "ag-l5-3"
+  },
+  {
+    "id": "p85",
+    "question": "Setting price below cost of production leads to:",
+    "options": [
+      "Higher profit",
+      "Losses however good the crop",
+      "Better bargaining",
+      "Lower costs"
+    ],
+    "answer": "Losses however good the crop",
+    "explanation": "Price must cover production and marketing costs plus a margin.",
+    "topic": "ag-l5-3"
+  },
+  {
+    "id": "p86",
+    "question": "A cooperative helps small farmers mainly by:",
+    "options": [
+      "Buying their land",
+      "Bulk buying and group marketing that improve prices",
+      "Fixing rainfall",
+      "Removing the need for records"
+    ],
+    "answer": "Bulk buying and group marketing that improve prices",
+    "explanation": "Group volume reduces input costs and strengthens bargaining power.",
+    "topic": "ag-l5-3"
+  },
+  {
+    "id": "p88",
+    "question": "Soil erosion begins when:",
+    "options": [
+      "Raindrops strike bare soil and run-off carries particles away",
+      "Compost is added",
+      "Contours are planted",
+      "Grass strips are left"
+    ],
+    "answer": "Raindrops strike bare soil and run-off carries particles away",
+    "explanation": "Bare, exposed soil is the starting condition for erosion.",
+    "topic": "ag-l6-1"
+  },
+  {
+    "id": "p89",
+    "question": "Which practice most directly slows run-off on a steep plot?",
+    "options": [
+      "Ploughing up and down the slope",
+      "Planting along the contour",
+      "Removing all vegetation",
+      "Burning residues"
+    ],
+    "answer": "Planting along the contour",
+    "explanation": "Contour barriers interrupt the flow of water downhill.",
+    "topic": "ag-l6-1"
+  },
+  {
+    "id": "p90",
+    "question": "Vetiver grass is used as:",
+    "options": [
+      "A living barrier against erosion",
+      "A feed concentrate",
+      "A pesticide",
+      "A fertiliser"
+    ],
+    "answer": "A living barrier against erosion",
+    "explanation": "Its dense root system holds soil and slows run-off.",
+    "topic": "ag-l6-1"
+  },
+  {
+    "id": "p91",
+    "question": "Silt from eroded fields damages coastal reefs by:",
+    "options": [
+      "Cooling the water",
+      "Smothering corals and reducing light",
+      "Adding nutrients only",
+      "Increasing salinity"
+    ],
+    "answer": "Smothering corals and reducing light",
+    "explanation": "Sediment settles on corals and blocks the light they need.",
+    "topic": "ag-l6-1"
+  },
+  {
+    "id": "p92",
+    "question": "Keeping vegetation along a stream bank is important because it:",
+    "options": [
+      "Increases run-off",
+      "Filters run-off and stabilises the bank",
+      "Removes nutrients",
+      "Dries the stream"
+    ],
+    "answer": "Filters run-off and stabilises the bank",
+    "explanation": "Riparian buffers trap sediment and nutrients before they reach the water.",
+    "topic": "ag-l6-1"
+  },
+  {
+    "id": "p93",
+    "question": "Cross-contamination of produce occurs when:",
+    "options": [
+      "Clean crates are used once",
+      "Crates used for chemicals or animals are then used for produce",
+      "Produce is cooled",
+      "Produce is graded"
+    ],
+    "answer": "Crates used for chemicals or animals are then used for produce",
+    "explanation": "Reusing unclean containers transfers hazards to food.",
+    "topic": "ag-l6-2"
+  },
+  {
+    "id": "p94",
+    "question": "Wash water used on produce eaten raw must be:",
+    "options": [
+      "Salty",
+      "Safe, clean water",
+      "Warm",
+      "Reused repeatedly"
+    ],
+    "answer": "Safe, clean water",
+    "explanation": "Contaminated water contaminates the produce it touches.",
+    "topic": "ag-l6-2"
+  },
+  {
+    "id": "p95",
+    "question": "Leafy vegetables keep best at:",
+    "options": [
+      "High temperature and dry air",
+      "Cool temperature and high humidity",
+      "Warm and airtight",
+      "Frozen for all crops"
+    ],
+    "answer": "Cool temperature and high humidity",
+    "explanation": "Cooling slows respiration and humidity limits wilting.",
+    "topic": "ag-l6-2"
+  },
+  {
+    "id": "p96",
+    "question": "Damaged fruit should be removed before packing because it:",
+    "options": [
+      "Improves appearance only",
+      "Spoils faster and can spread decay to sound fruit",
+      "Is worth more",
+      "Dries the consignment"
+    ],
+    "answer": "Spoils faster and can spread decay to sound fruit",
+    "explanation": "One rotting fruit can spoil a whole crate.",
+    "topic": "ag-l6-2"
+  },
+  {
+    "id": "p97",
+    "question": "Food labels on a value-added product must include:",
+    "options": [
+      "Only the brand name",
+      "Ingredients, quantity, dates and storage instructions",
+      "The farm's rainfall data",
+      "The farmer's age"
+    ],
+    "answer": "Ingredients, quantity, dates and storage instructions",
+    "explanation": "Labelling rules protect consumers and are a legal requirement.",
+    "topic": "ag-l6-2"
+  },
+  {
+    "id": "p98",
+    "question": "The most common cause of failure on a small holding is:",
+    "options": [
+      "Too much rain",
+      "Taking on more enterprises than can be managed well",
+      "Owning a tractor",
+      "Keeping records"
+    ],
+    "answer": "Taking on more enterprises than can be managed well",
+    "explanation": "Plans must match the farmer's labour, capital and management capacity.",
+    "topic": "ag-l6-3"
+  },
+  {
+    "id": "p99",
+    "question": "An extension officer provides:",
+    "options": [
+      "Credit only",
+      "Technical advice and training on crops, pests and practices",
+      "Pesticides free of charge",
+      "Land titles"
+    ],
+    "answer": "Technical advice and training on crops, pests and practices",
+    "explanation": "Extension services link farmers with research and good practice.",
+    "topic": "ag-l6-3"
+  },
+  {
+    "id": "p100",
+    "question": "Crop insurance helps a farm mainly by:",
+    "options": [
+      "Increasing yield",
+      "Reducing the financial impact of disasters and losses",
+      "Guaranteeing prices",
+      "Supplying labour"
+    ],
+    "answer": "Reducing the financial impact of disasters and losses",
+    "explanation": "Insurance spreads risk, which matters greatly in hurricane-prone areas.",
+    "topic": "ag-l6-3"
+  },
+  {
+    "id": "p101",
+    "question": "Quarantine regulations exist to:",
+    "options": [
+      "Raise tax revenue",
+      "Prevent the spread of pests and diseases across borders",
+      "Fix prices",
+      "Control rainfall"
+    ],
+    "answer": "Prevent the spread of pests and diseases across borders",
+    "explanation": "Plant and animal health rules protect the whole industry.",
+    "topic": "ag-l6-3"
+  },
+  {
+    "id": "p102",
+    "question": "Diversification reduces risk, but should be limited by:",
+    "options": [
+      "The farmer's management capacity",
+      "Market price only",
+      "The size of the tractor",
+      "Rainfall"
+    ],
+    "answer": "The farmer's management capacity",
+    "explanation": "More enterprises mean more decisions; beyond capacity, quality falls.",
+    "topic": "ag-l6-3"
+  },
+  {
+    "id": "p103",
+    "question": "A farm plan should first list:",
+    "options": [
+      "What will be produced, on what land, at what cost and for which market",
+      "Only the expected profit",
+      "The tractor's service history",
+      "The farmer's age"
+    ],
+    "answer": "What will be produced, on what land, at what cost and for which market",
+    "explanation": "The plan matches production to resources and market before work begins.",
+    "topic": "ag-l6-3"
+  }
+]
