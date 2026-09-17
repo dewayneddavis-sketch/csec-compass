@@ -1,0 +1,469 @@
+[
+  {
+    "id": "td-mod-1",
+    "title": "Instruments, Materials and Standards",
+    "lessons": [
+      {
+        "id": "td-l1-1",
+        "title": "Drawing Instruments and Their Correct Use",
+        "content": "Technical drawing depends on accuracy, and accuracy depends on using the right instrument correctly. The drawing board gives a true flat surface with a straight edge; the T-square slides along that edge to draw horizontal lines, and when it is combined with a set square it gives vertical lines and the standard angles of 30, 45 and 60 degrees. A pair of set squares - one 45-45-90 and one 30-60-90 - covers those angles and, used together, many others. The compass draws circles and arcs, with the needle point sharp and level with the pencil lead so that the centre does not shift, and the divider transfers distances.\n\nMeasuring and drawing aids each have a purpose. The scale rule gives marked scales without calculation; the protractor measures and sets angles; French curves and flexible curves draw smooth irregular curves that cannot be made with a compass; templates speed up circles, ellipses and lettering. Erasers, a sharpener, a dusting brush and masking tape to fix the sheet complete the kit.\n\nTechnique matters as much as equipment. Keep the pencil sharpened to a conical point for lines and a flattened chisel point for lettering, and use leads of different hardness - harder for construction lines, softer for the finished outlines. Always draw construction lines lightly and outline last, rotating the board or using the T-square rather than drawing freehand. Do not use the T-square as a hammer or a rule against the edge of the paper, and clean the board before starting, because a single grit particle under the T-square produces a wobbly line. Care of instruments is not a formality; it is what makes a drawing trustworthy.",
+        "objectives": [
+          "Identify drawing instruments and state the purpose of each",
+          "Use the T-square, set squares, compass and curves correctly",
+          "Care for instruments and select the right pencil grade for a task"
+        ],
+        "concepts": [
+          "T-square",
+          "Set square",
+          "Compass",
+          "Divider",
+          "French curve",
+          "Scale rule",
+          "Pencil grade",
+          "Dusting brush"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Instrument Bench: Match each instrument to the lines or shapes it is used for and to the care it needs."
+        }
+      },
+      {
+        "id": "td-l1-2",
+        "title": "Sheets, Title Blocks, Lines and Lettering",
+        "content": "A technical drawing is a means of communication, and it follows agreed conventions so that any reader anywhere can understand it. The sheet is used to a fixed layout: a border and margin around the drawing area, a title block in the bottom right corner (or along the bottom edge) carrying the title, scale, date, drawing number, projection symbol and the draughtsman's name, and a parts list where an assembly needs one. Sheets are used in standard sizes, A4 to A0, with A1 being a common working size and A4 suitable for single views.\n\nLines carry meaning, and mixing them up ruins a drawing. A continuous thick line is an outline; a continuous thin line is a projection, dimension or leader line; a thin short-dashed line is a hidden or concealed detail; a chain thin line with long and short dashes marks centre lines and cutting planes; and a continuous wavy or irregular thin line shows a break or partial view. Dimension lines thin and outside the figure, extension lines touching the feature, arrowheads at the ends, and the dimension figure above the middle of the line with its unit. Construction lines are very light and are never erased until the outline is finished.\n\nLettering and annotation are as important as the geometry. Standard lettering is upright or inclined Gothic-style single-stroke capital letters, drawn with a chisel-point pencil in heights that follow a standard series, with enough space between letters and words to be legible. Dimensions state the true size regardless of the scale, and notes and leader lines carry manufacturing information. A neat, correctly lettered drawing is read without explanation; an untidy one causes mistakes on site or in the workshop, however accurate the measurement may be.",
+        "objectives": [
+          "Lay out a sheet with border, title block and parts list",
+          "Identify and apply the standard line types and their uses",
+          "Letter and dimension a drawing to standard conventions"
+        ],
+        "concepts": [
+          "Title block",
+          "Border and margin",
+          "Outline",
+          "Hidden line",
+          "Centre line",
+          "Cutting plane",
+          "Dimension line",
+          "Gothic lettering"
+        ],
+        "experiment": {
+          "type": "drag-drop",
+          "description": "Line Detective: Drag each line type onto the feature it should show and label what it communicates."
+        }
+      },
+      {
+        "id": "td-l1-3",
+        "title": "Scales, Units and Proportioning",
+        "content": "Drawing to scale means representing a real object at a fixed ratio, so a 2 metre wall drawn at 1:20 becomes 100 mm on paper. A scale is written as a ratio of drawing to object: a reduction scale such as 1:2, 1:5, 1:10, 1:20, 1:50, 1:100 or 1:200 shrinks the object, and an enlargement scale such as 2:1 or 5:1 magnifies a small part so that its details can be shown. Full size is 1:1. Choosing a scale depends on the size of the object, the size of the sheet and how much detail must be legible: a building is drawn at 1:50 or 1:100 for plans and at 1:10 or 1:5 for construction details, while a small machined part may be drawn at 2:1.\n\nMeasurements are given in millimetres on engineering drawings and in millimetres or metres on building drawings. Dimension figures state the real dimension, never the measured length on the sheet, and the scale is stated once in the title block unless one view uses a different scale. When a dimension is not to scale, it is underlined or marked NTS, because readers must never scale a drawing to obtain a working dimension - a rule that prevents serious and expensive errors.\n\nScale also governs proportion and layout. A good draughtsman estimates the space each view will need and balances the sheet before drawing anything, leaves room for dimensions and notes, and keeps the same scale across related views so that they line up. Calculations of the sort met in the SBA - floor areas, quantities of material, lengths of timber in a roof - all rest on reading scaled drawings correctly, which is why scale is studied first.",
+        "objectives": [
+          "Interpret and apply reduction and enlargement scales",
+          "Choose an appropriate scale for a given object and sheet size",
+          "Calculate real dimensions, areas and quantities from a scaled drawing"
+        ],
+        "concepts": [
+          "Scale ratio",
+          "1:1",
+          "Reduction scale",
+          "Enlargement scale",
+          "True length",
+          "NTS",
+          "Proportion",
+          "Quantity take-off"
+        ],
+        "experiment": {
+          "type": "scale-converter",
+          "description": "Scale Bench: Convert between drawn length and real length at different scales and check the quantity take-off."
+        }
+      }
+    ]
+  },
+  {
+    "id": "td-mod-2",
+    "title": "Geometric Construction",
+    "lessons": [
+      {
+        "id": "td-l2-1",
+        "title": "Lines, Angles, Triangles and Polygons",
+        "content": "Geometric construction is the accurate drawing of shapes from given information using only instruments, not guesswork. Basic constructions begin with the line: bisecting a line, erecting a perpendicular at or from a point, dropping a perpendicular, and dividing a line into a given number of equal parts using similar triangles. Angles are bisected, copied and constructed - 60 degrees from an equilateral triangle, 30 and 45 by bisection - and the sum of the angles of a triangle is 180 degrees, of a quadrilateral 360 degrees.\n\nTriangles are constructed from the information given: three sides; two sides and the included angle; two angles and one side; or the hypotenuse and one side for a right-angled triangle. The angles of a triangle are found as the drawing proceeds, and the construction should begin with the longest line to reduce error. Polygons - regular figures with equal sides and equal angles - are constructed from a given side, from a given diagonal across the circumscribing circle, or by the general method in which the circumscribing circle is divided into the required number of parts. The exterior angle of a regular polygon is 360 degrees divided by the number of sides, and this relationship drives most of the constructions.\n\nAccuracy in construction is cumulative: an error of half a millimetre in the first line becomes several millimetres at the far end of a polygon, and a wrong arc produces a shape that will not close. Keep constructions light, keep the compass radius set by measurement rather than by eye, do not erase construction lines until the outline is complete, and check the figure against the given data before outlining. A constructed polygon that closes exactly is the proof that the method was carried out correctly.",
+        "objectives": [
+          "Bisect lines and angles and erect perpendiculars accurately",
+          "Construct triangles from given sides and angles",
+          "Construct regular polygons from a given side or diagonal"
+        ],
+        "concepts": [
+          "Perpendicular bisector",
+          "Angle bisector",
+          "Dividing a line",
+          "Regular polygon",
+          "Circumscribing circle",
+          "Exterior angle",
+          "Construction lines"
+        ],
+        "experiment": {
+          "type": "geometry-constructor",
+          "description": "Construction Steps: Choose the given information for a triangle or polygon and follow the correct construction order."
+        }
+      },
+      {
+        "id": "td-l2-2",
+        "title": "Circles, Arcs, Tangents and Blending",
+        "content": "Circles appear in almost every drawing, and the constructions around them are the ones most often needed in practice. The parts of a circle must be named: centre, radius, diameter, chord, arc, sector, segment, quadrant, circumference and tangent. A tangent touches a circle at one point only and is perpendicular to the radius at the point of contact, which is the key to every tangent construction - a tangent from a point outside the circle, a common external tangent to two circles, a common internal tangent, and tangents to circles of unequal sizes.\n\nBlending is joining lines and arcs so that the change of direction is smooth, with the curves meeting tangentially and no visible corner. Common blends include an arc joining two straight lines, an arc joining a line and a circle, two circles joined by an arc of given radius, and the familiar ogee and reversed curves used in arch and furniture shapes. In every case the centre of the blending arc lies at the intersection of lines drawn parallel to the given lines or offset from the given circles by the arc radius; finding that centre is the whole exercise, and marking each tangent point before drawing the arc prevents a lapsing joint.\n\nOther standard constructions on circles include dividing a circle into equal parts, drawing an ellipse by the concentric circle or trammel method, and constructing an involute or a helix. In the workshop and on site, these constructions appear as pipe bends, fillets and rounds on castings, cam profiles, and the smooth transitions between a wall and a handrail. A draughtsman who can blend curves accurately can draw anything from a machine bracket to a decorative balustrade, and the tangency construction is the single most useful skill in plane geometry.",
+        "objectives": [
+          "Name the parts of a circle and apply the tangent-radius relationship",
+          "Construct internal and external tangents to circles",
+          "Blend lines and arcs smoothly and mark correct tangent points"
+        ],
+        "concepts": [
+          "Tangent",
+          "Chord",
+          "Arc",
+          "Quadrant",
+          "Blend",
+          "Fillet",
+          "Offsets",
+          "Point of tangency"
+        ],
+        "experiment": {
+          "type": "geometry-constructor",
+          "description": "Blending Bench: Set two lines or circles and find the blending arc radius that gives a smooth join."
+        }
+      },
+      {
+        "id": "td-l2-3",
+        "title": "Loci and Conic Sections",
+        "content": "A locus is the path traced by a point moving according to a stated rule, and loci are the geometry behind every mechanism. The simplest are the circle, the locus of points at a fixed distance from a centre, and the perpendicular bisector, the locus of points equidistant from two fixed points. Others include the path of a point on a rolling circle (a cycloid or epicycloid used for gear teeth), the path traced by a link in a four-bar mechanism, the locus of a point on a slider-crank (the ellipse-like path that governs piston and connecting-rod design) and the path of a point on a ladder sliding down a wall, which is a quarter ellipse. Loci are drawn by plotting a series of positions of the moving point and joining them with a smooth curve, which is why accurate construction of the individual positions matters.\n\nConic sections are the curves produced when a cone is cut by a plane, and they are named by the angle of the cut. Cut parallel to the base gives a circle; cut at an angle steeper than the side gives an ellipse; cut parallel to the side gives a parabola; and cut steeper still, through both parts of a double cone, gives a hyperbola. Each has standard construction methods. The ellipse is drawn by the concentric circle method or the trammel method, and can also be drawn with a loop of string on two pins at the foci; the parabola by the rectangle or directrix-focus method; the hyperbola by plotting from its asymptotes and foci.\n\nThese curves are not abstract. An ellipse appears in pipe cut obliquely, in a cylinder cut at an angle and in arched openings; a parabola in the cable of a suspension bridge, the shape of headlight reflectors and the path of a projectile; and a hyperbola in cooling towers and gear profiles. In building and engineering practice the draughtsman must be able to construct them and to draw the true shape of a section through a cylinder or cone, which requires both the conic constructions and the projection methods met in the next module.",
+        "objectives": [
+          "Construct common loci including cycloids and mechanism paths",
+          "Name the conic sections and state the cutting angle that produces each",
+          "Construct an ellipse, parabola and hyperbola by standard methods"
+        ],
+        "concepts": [
+          "Locus",
+          "Cycloid",
+          "Mechanism path",
+          "Conic section",
+          "Ellipse",
+          "Parabola",
+          "Hyperbola",
+          "Directrix"
+        ],
+        "experiment": {
+          "type": "locus-tracer",
+          "description": "Loci Lab: Move the mechanism and trace the path of the point, then compare it with the constructed curve."
+        }
+      }
+    ]
+  },
+  {
+    "id": "td-mod-3",
+    "title": "Orthographic Projection",
+    "lessons": [
+      {
+        "id": "td-l3-1",
+        "title": "First and Third Angle Orthographic Projection",
+        "content": "Orthographic projection shows an object by projecting each view onto a plane perpendicular to the direction of sight, so that shapes and positions are shown true without the distortion of a pictorial view. The object is imagined inside a transparent box, and the box is unfolded to give the standard arrangement of views: a front view, a plan (top view) and a side view, with additional views for features that the three do not show clearly.\n\nThere are two conventions, and every drawing must use one consistently. In first angle projection the object is between the observer and the plane, so the plan is placed below the front view and the view from the left is placed on the right. In third angle projection the plane is between the observer and the object, so the plan is placed above the front view and the view from the left is placed on the left - the arrangement most readers find intuitive. First angle is common in Europe and the Caribbean; third angle is standard in North America. The projection symbol in the title block shows a truncated cone with its small end facing the same way as the views for first angle, and the reverse for third angle.\n\nDrawing procedure follows a disciplined order: study the object and decide which face gives the most information as the front view; choose the number of views needed and lay out their centres; draw light projection lines to establish heights and widths so that the views align; complete each view, adding hidden detail with dashed lines; then outline, dimension and title the drawing. The rule that views must align - heights from the front to the side, widths from the front to the plan - is what allows a reader to reconstruct the third dimension from flat views, and it is the standard by which orthographic drawings are judged.",
+        "objectives": [
+          "Explain the principle of orthographic projection",
+          "Distinguish first angle from third angle and their view arrangements",
+          "Draw aligned front, plan and side views of an object"
+        ],
+        "concepts": [
+          "Projection plane",
+          "Front view",
+          "Plan",
+          "Side elevation",
+          "First angle",
+          "Third angle",
+          "Projection symbol",
+          "Hidden detail"
+        ],
+        "experiment": {
+          "type": "projection-builder",
+          "description": "View Arrangement: Place each view in the correct position for first or third angle and check the alignment."
+        }
+      },
+      {
+        "id": "td-l3-2",
+        "title": "Missing Views and Auxiliary Views",
+        "content": "Real objects are not always given as a neat set of three views, and a draughtsman is often required to complete a drawing from partial information. A missing view is reconstructed by reading the given views carefully, feature by feature - heights taken from the front view and depths from the plan - and by projecting each corner and edge across to the new view. The discipline is to work in one direction at a time, printing projectors lightly, transferring each height with dividers or a scale rule, and joining only after all the feature points are located. Common errors are misreading the depth of a feature, omitting a hidden line for an internal edge, and mismatching a chamfer or round in one view with a square corner in another.\n\nAuxiliary views are used when a face is inclined and therefore appears foreshortened - shortened and distorted - in the principal views. To find the true shape of such a face, a new plane is set parallel to it, and the view is projected onto that plane. The first auxiliary view is taken from the principal view that shows the edge of the inclined face as a line, and further auxiliary views can be taken from the first if the face is inclined in two directions. Heights are transferred from the view in which they are true. Auxiliary views are essential for the true shapes of brace ends, lofted sheet-metal parts, inclined faces of brackets and the true angles between planes.\n\nWhere an object has an inclined face and no true length appears in any principal view, two related constructions are used: the true length of a line and the true angle between two lines or planes. Both depend on projecting from the view that shows the line or plane as a point or an edge, then measuring from the appropriate reference line. These constructions are also the basis for finding the true shape of a cut or the true length of a rafter in a roof, so the same technique is met in building drawing, sheet metal work and machine drawing.",
+        "objectives": [
+          "Reconstruct a missing view from two given views",
+          "Project an auxiliary view to obtain the true shape of an inclined face",
+          "Find the true length of an inclined line and the true angle between planes"
+        ],
+        "concepts": [
+          "Foreshortening",
+          "Auxiliary view",
+          "True shape",
+          "True length",
+          "Projector",
+          "Reference line",
+          "Edge view",
+          "First auxiliary"
+        ],
+        "experiment": {
+          "type": "projection-builder",
+          "description": "Missing View Puzzle: Given two views, project the third and check which feature each projector line fixes."
+        }
+      },
+      {
+        "id": "td-l3-3",
+        "title": "Sections, Conventions and Dimensioning",
+        "content": "An object with internal features - holes, slots, bores, threads - cannot be shown clearly by hidden lines alone, and hidden lines quickly become an unreadable mess. A section solves this by cutting the object with an imaginary plane and drawing what is seen beyond the plane, with the solid material that the plane passes through hatched. The cutting plane is shown in one of the principal views as a chain line with thick ends and arrows showing the direction of sight, and is labelled, usually A-A, with the resulting view titled Section A-A.\n\nSectioning follows strict conventions. Hatching is continuous thin lines at 45 degrees, evenly spaced across the part; adjacent parts in an assembly are hatched in opposite directions; parts that are not cut - shafts, bolts, nuts, rivets, webs, ribs and thin sections - are left unhatched. Hidden lines are normally omitted from a section because the section already shows the interior. Half sections, offset or aligned sections, revolved sections and removed sections are used where a full section would hide useful detail, and each has a fixed arrangement a reader expects. Broken-out sections show only the part of the object needing exposure.\n\nDimensioning completes the drawing. Dimensions are taken from a datum or a common reference, never from one feature to another in a chain unless the chain is intended, and each dimension is given once only - duplicating or omitting a dimension is an error. Principled dimensioning also follows the function of the part: location dimensions tie features to datums, size dimensions give diameter and length, and tolerance and limiting dimension arrows show the acceptable range. Notes for surface finish, threads, chamfers and fillets accompany the dimensions, and radius or diameter symbols precede their values. A fully dimensioned section gives every piece of information needed to make the part without any calculation by the reader, which is the purpose of the whole exercise.",
+        "objectives": [
+          "Explain the purpose and conventions of sectioning",
+          "Draw and hatch full, half and offset sections correctly",
+          "Apply correct dimensioning practice including datums and symbols"
+        ],
+        "concepts": [
+          "Cutting plane",
+          "Hatching",
+          "Full section",
+          "Half section",
+          "Revolved section",
+          "Datum",
+          "Diameter symbol",
+          "Tolerance"
+        ],
+        "experiment": {
+          "type": "section-cutter",
+          "description": "Section Cutter: Choose the cutting plane for an object and see which interior features the resulting section reveals."
+        }
+      }
+    ]
+  },
+  {
+    "id": "td-mod-4",
+    "title": "Pictorial Drawing and Presentation",
+    "lessons": [
+      {
+        "id": "td-l4-1",
+        "title": "Isometric Drawing and Projection",
+        "content": "A pictorial drawing shows three faces of an object in one view, so it can be understood at a glance without knowing projection conventions. The most widely used is isometric: three axes meeting at 120 degrees, with one vertical and the other two at 30 degrees above the horizontal, drawn on isometric grid lines. In isometric projection, all the edges along the three axes are drawn at their true length reduced by about 82 per cent; in isometric drawing, the simpler practice used in the workshop, edges are drawn at true length along the axes and the drawing is slightly larger. Both are accepted; the draughtsman must simply be consistent and never mix the two.\n\nIsometric has rules that keep a drawing convincing. Circles on any face appear as ellipses, and they are drawn with the ellipse template or by the four-centre method on the correct isometric plane - the ellipse on the top face has a different orientation from those on the side faces. Non-isometric lines, which are not parallel to any axis, do not appear at true length and must be plotted from their co-ordinates in the orthographic views rather than measured on the pictorial view. Hidden detail is normally omitted in pictorial drawings since the purpose is clarity, and shading, hatching of cut faces in sections, and careful line weight give depth.\n\nIsometric drawing is used for assembly instructions, parts catalogues, pipe layout sketches, cabinet and furniture illustrations and isometric piping and ductwork, where a quick pictorial view communicates an arrangement that would take three orthographic views to explain. For the SBA it is often the clearest way to present a design idea, and it is also the basis of the isometric detail used in plumbing and electrical installation drawings. The skill is to plan the view so that the important features face the reader and nothing is hidden by the object's own bulk.",
+        "objectives": [
+          "Draw objects in isometric using the correct axes and angles",
+          "Construct isometric ellipses for circles on each plane",
+          "Plot non-isometric lines from co-ordinates in orthographic views"
+        ],
+        "concepts": [
+          "Isometric axis",
+          "30 degrees",
+          "Isometric ellipse",
+          "Non-isometric line",
+          "Four-centre method",
+          "Isometric grid",
+          "Line weight",
+          "Depth"
+        ],
+        "experiment": {
+          "type": "iso-builder",
+          "description": "Isometric Bench: Build a block in isometric from given dimensions and place an ellipse on each face."
+        }
+      },
+      {
+        "id": "td-l4-2",
+        "title": "Oblique, Perspective and Freehand Sketching",
+        "content": "Oblique projection gives a pictorial view with one face drawn in true shape and the third dimension shown with receding lines, usually at 45 degrees. Cavalier projection uses full depth, which makes the drawing easy to measure but distorts deeply recessed shapes; cabinet projection halves the depth, which looks more natural. Oblique drawing suits objects with one flat face carrying most of the detail, such as a printed circuit board or a panel, but circles on the receding faces appear as distorted ellipses and objects with much depth look wrong, so its use is limited.\n\nPerspective drawing represents an object as the eye sees it, with parallel lines converging to vanishing points and objects diminishing with distance. One-point perspective has a single vanishing point and suits an interior seen straight on or a facade; two-point perspective uses two vanishing points for a corner view of a building; three-point adds a third for looking up or down at a tall structure. The horizon line, station point, picture plane, ground line and measuring points govern the construction, and heights and widths are scaled by the distance from the vanishing points. Perspective is the draughtsman's tool for presentation - selling a design to a client, illustrating a room or a building in a proposal - while orthographic drawing remains the means of construction.\n\nFreehand sketching underpins all of it. A designer records an idea in seconds with a soft pencil, drawing smooth straight lines from the shoulder, proportional rectangles, circles and ellipses with the wrist motion, and estimating proportions by eye rather than measuring. Sketching is used in site notes, design discussions, repair instructions and technical illustration, and it should follow the same conventions as instrument drawing, including dimension lines and notes. Being able to sketch clearly is often the difference between an idea that is understood and one that is not, and it is assessed in the SBA alongside the formal drawings.",
+        "objectives": [
+          "Produce oblique drawings in cavalier and cabinet forms",
+          "Construct one-point and two-point perspective views",
+          "Sketch freehand with correct proportion and line quality"
+        ],
+        "concepts": [
+          "Oblique projection",
+          "Cavalier",
+          "Cabinet",
+          "Vanishing point",
+          "Horizon line",
+          "Station point",
+          "One-point perspective",
+          "Freehand sketching"
+        ],
+        "experiment": {
+          "type": "perspective-viewer",
+          "description": "Perspective Lab: Move the vanishing point and horizon and watch the pictorial view change."
+        }
+      },
+      {
+        "id": "td-l4-3",
+        "title": "Computer-Aided Drawing and Plotting",
+        "content": "Computer-aided design (CAD) has replaced the drawing board for most commercial work, and the concepts behind it are the same geometry used by hand. A CAD drawing is built from precisely specified entities - lines, polylines, circles, arcs, splines, rectangles and polygons - created with commands such as line, circle and rectangle, edited with move, copy, mirror, offset, trim, extend, fillet and array, and controlled with object snaps so that endpoints, midpoints, centres and intersections are hit exactly rather than approximately. Dimensions are associative, so the drawing changes when the geometry changes.\n\nGood CAD practice is organised practice. Layers separate the parts of a drawing - outlines, dimensions, hidden lines, hatching, text and centre lines - each with its own colour, line type and line weight, so that a reader can switch a layer off and see only what is needed and a plot can be produced with the correct line weights. Model space is where geometry is drawn at full scale, and paper space or a layout handles the sheet, title block, viewports and the printed scale. Standard blocks and templates, dimension styles and text styles, and named views make drawings consistent and quick to produce.\n\nThe advantages of CAD are accuracy, easy revision, reuse of standard parts, three-dimensional modelling from which orthographic views, sections and isometric views are generated automatically, and output that can be plotted or sent as a file. Plotting itself requires care: choose the correct sheet size and scale, set line weights and pen settings so that outlines are heavy and dimension lines thin, check that text and dimensions plot legibly, and preview before printing. The principles of the earlier modules decide whether the result is a good drawing; the computer only makes the work faster and more consistent, and a badly planned CAD drawing is as confusing as a badly planned manual one.",
+        "objectives": [
+          "Use core CAD draw and modify commands with object snaps",
+          "Organise drawings with layers, line types and templates",
+          "Set up a layout and plot a drawing at the correct scale and line weights"
+        ],
+        "concepts": [
+          "CAD",
+          "Entity",
+          "Object snap",
+          "Layer",
+          "Line weight",
+          "Model space",
+          "Layout",
+          "Plot scale"
+        ],
+        "experiment": {
+          "type": "cad-simulator",
+          "description": "CAD Bench: Use draw and modify commands on a part, assign layers and preview the plot at the right scale."
+        }
+      }
+    ]
+  },
+  {
+    "id": "td-mod-5",
+    "title": "Building Drawing",
+    "lessons": [
+      {
+        "id": "td-l5-1",
+        "title": "Site Plans, Foundations and Ground Floors",
+        "content": "Building drawing begins with the site. A location or block plan shows the site in relation to roads, boundaries and neighbouring buildings, usually at 1:500 or 1:1250, and marks the position of the building, the north point, access, drainage runs and existing trees or services. A site plan is drawn at 1:200 or 1:100 and shows the building outline, setbacks from the boundaries, levels and contours, the path and parking, and the position of the septic tank, soakaway or sewer connection and the water supply. In the Caribbean the site plan also shows the direction of the prevailing wind and the sun path, because shading and cross ventilation are design requirements, and it must respect planning regulations on setbacks, coverage and height.\n\nBelow ground, the drawing shows what carries the load. Foundations are drawn in section: a strip foundation of mass concrete or reinforced concrete under load-bearing walls, a raft or pad foundation under columns, and piles where the soil is weak. The drawing states the width and depth of the foundation, the depth below ground level and the damp-proof course, and the hardcore, blinding, reinforcement and concrete thicknesses of the ground floor slab. Good practice also shows the soil or rock, the slope of the site and the drainage to a soakaway or main, since foundation failure is almost always a drainage or bearing problem.\n\nThe ground floor plan then sets out the rooms at a scale of 1:50. It shows the thickness of walls, the position and width of doors and windows, the swing of each door, the internal partitions, the floor levels and the position of fixtures - sink, sanitary fittings, built-in cupboards - plus the stair or steps, the room names and areas. Every plan carries dimensions: overall length and width, wall thickness, room sizes, and opening sizes. From this drawing alone it is possible to measure the floor area, count the openings and cost the concrete, blockwork and finishes, which is why the plan is the first drawing made and the one most often used.",
+        "objectives": [
+          "Draw and interpret location plans, site plans and ground floor plans",
+          "Show foundation and ground floor construction in section",
+          "Dimension a floor plan and calculate floor area and quantities"
+        ],
+        "concepts": [
+          "Location plan",
+          "Site plan",
+          "Setback",
+          "Strip foundation",
+          "Damp-proof course",
+          "Hardcore",
+          "Ground floor plan",
+          "Floor area"
+        ],
+        "experiment": {
+          "type": "plan-drawer",
+          "description": "Plan Builder: Set out rooms and walls on a grid and check wall thickness, door swings and total floor area."
+        }
+      },
+      {
+        "id": "td-l5-2",
+        "title": "Walls, Openings, Doors and Windows",
+        "content": "Walls in the Caribbean are usually of concrete block or brick laid in mortar, sometimes in timber or concrete with infill. A wall drawing shows the wall thickness, the type of bond and the position of reinforcement, the finish on each face - plaster, render, paint or tile - and the vertical dimensions of courses, sills and lintels. Load-bearing walls carry the roof or floor above them; a lintel or beam carries the load over an opening, and the drawing shows its size and bearing at each end. Where a wall meets a roof or floor, the drawing shows the wall plate, the tie beam and the mortar joint detail.\n\nOpenings are drawn with the same care as the walls. A door or window schedule lists every opening with a mark, its width and height, the sill and head heights, the type and the material, and each one appears in plan and elevation with the correct symbol and opening direction. Doors are drawn showing the frame, the leaf and the direction of swing, which must not obstruct a stair or block light, and windows show whether they are casement, sliding, louvred or fixed, with the position of glazing bars and the sill height above floor level. Louvre windows, fixed louvres, deep reveals and shading devices are particularly relevant in tropical design because they control glare and rain while allowing cross ventilation.\n\nEach opening also has a construction detail. The drawing shows the lintel or beam, the damp-proof course and flashing above an external opening, the architrave or plaster reveal, the threshold or sill with its slope and drip, and the junction between different materials. Wall and opening details must be coordinated with the structural, electrical and plumbing drawings so that a beam is not placed where a window is wanted and a socket is not hidden behind a cupboard. When the plans, elevations and sections agree, the builder can set out the openings from the drawing alone, and the building will close and weather as designed.",
+        "objectives": [
+          "Draw wall construction and bond in plan and section",
+          "Produce and read a door and window schedule with correct symbols",
+          "Detail lintels, sills, DPC and flashings at openings"
+        ],
+        "concepts": [
+          "Blockwork",
+          "Bond",
+          "Lintel",
+          "Bearing",
+          "Door schedule",
+          "Casement",
+          "Louvre",
+          "Sill"
+        ],
+        "experiment": {
+          "type": "detail-catalog",
+          "description": "Opening Schedule: Match each door or window symbol to its schedule entry, sill height and opening direction."
+        }
+      },
+      {
+        "id": "td-l5-3",
+        "title": "Roofs, Sections and Elevations",
+        "content": "A roof drawing shows how the building is covered and how the load reaches the walls. The plan of a roof shows the shape - flat, monopitch, gable, hip, valley or a combination - with ridge and hip lines, valleys, eaves, verges, gutters and downpipes, and the position of the roof covering, purlins and rafters or trusses. A trussed roof is drawn as a truss detail showing tie beam, principal rafters, struts, collars, ridge board, nogging, galvanised metal straps and the fixing to the wall plate, together with the spacing of the trusses, the overlap of the roof sheeting and the pitch of the slope. Drawing conventions are strict: ridge lines are shown as heavier chain lines, hips and valleys in the correct relationship, and the fall of gutters and the position of outlets are indicated.\n\nSections cut through the building to show heights and construction in a way that no plan can. A section is drawn at 1:50 or 1:20 with the floor, wall, roof and foundation levels shown, floor-to-ceiling heights dimensioned, the roof pitch, the eaves overhang, the gutter and fascia, the position of windows and their head and sill heights, and the construction of the floor and roof build-ups labelled. A structural section may show more of the reinforcement and framing; a construction detail at 1:5 or 1:2 picks out a junction such as eaves, ridge, verge, parapet or floor slab edge, with each material hatched and labelled. Elevations complete the set by showing each face of the building as seen from outside, with ground and floor levels, roof line, window and door positions, finishes, gutters, downpipes, finishes schedule marks and the finished ground line, all dimensioned with the overall heights and levels.\n\nTogether, plans, sections and elevations form a coordinated set: every feature must appear in each drawing where it is relevant, and measurements must agree between them. A mismatch is not a small error; a window drawn at one height on an elevation and another on a section is a defect that has to be resolved on site, at cost. Cross-checking the set, and noting the scale and drawing number of each sheet, is the practical discipline of building drawing.",
+        "objectives": [
+          "Draw roof plans and truss details for gable and hip roofs",
+          "Produce a building section with correct levels, heights and details",
+          "Draw elevations and coordinate levels and features across a drawing set"
+        ],
+        "concepts": [
+          "Ridge",
+          "Hip",
+          "Valley",
+          "Pitch",
+          "Purlin",
+          "Truss",
+          "Section",
+          "Elevation"
+        ],
+        "experiment": {
+          "type": "roof-framer",
+          "description": "Roof Builder: Choose a roof shape and pitch and see the truss, purlins, gutter and valley lines in plan and section."
+        }
+      }
+    ]
+  },
+  {
+    "id": "td-mod-6",
+    "title": "Engineering Drawing and Computer Applications",
+    "lessons": [
+      {
+        "id": "td-l6-1",
+        "title": "Fasteners, Threads, Keys and Joints",
+        "content": "Engineering drawings describe parts that must fit together, and the standard components and joints have their own drawing conventions. Screw threads are not drawn exactly - the outline is drawn as a thick continuous line for the major diameter and a thin line for the minor diameter, with the thread represented by a broken line or convention, because drawing each helix would be impossible. A thread is labelled with its form and size: M20 x 2.5 for a metric thread of 20 mm nominal diameter and 2.5 mm pitch, with LH added for left-hand threads. Internal threads are shown hidden or sectioned with the major diameter thin and the minor diameter thick, the reverse of the external convention.\n\nOther fasteners follow similarly fixed conventions. Hexagon and square bolt heads and nuts are drawn by the across-flats and across-corners construction, with chamfer curves drawn as arcs. Washers, set screws, machine screws, self-tapping screws, rivets and pins each have standard representation. Keys and keyways transmit torque between a shaft and a hub: a parallel or sunk key, a Woodruff key, a taper key and a splined or serrated shaft each have their drawing conventions, and the keyway depth on both shaft and hub must be dimensioned so that the key fits.\n\nJoints are drawn to show how parts are held together and where strength comes from. Bolted joints show clearance and tapped holes, nuts, washers and the projected head across flats and corners; riveted joints show the pitch, the edge distance and the rivet in place; welded joints use the standard symbol with its arrow, tail, size and supplementary symbols stating the type of weld, its size, length and whether it is on one side or both. Pin joints, splined and keyed joints, screw threads in tapped holes, and the representation of springs, gears and bearings complete the standard vocabulary. A reader who knows the conventions can build or repair the assembly from the drawing without measuring a single part, which is the point of standardisation: every drawing office, workshop and supplier reads the same language.",
+        "objectives": [
+          "Apply standard conventions for drawing screw threads and fasteners",
+          "Draw keys and keyways for a shaft and hub and dimension them",
+          "Represent bolted, riveted and welded joints with correct symbols"
+        ],
+        "concepts": [
+          "Thread convention",
+          "Pitch",
+          "Keyway",
+          "Across flats",
+          "Rivet pitch",
+          "Weld symbol",
+          "Clearance hole",
+          "Tapped hole"
+        ],
+        "experiment": {
+          "type": "fastener-lab",
+          "description": "Fastener Lab: Select a fastener for a joint and check the drawing convention, thread callout and dimensions."
+        }
+      },
+      {
+        "id": "td-l6-2",
+        "title": "Working Drawings, Limits, Fits and Assembly",
+        "content": "A working drawing gives the workshop everything needed to make a part: the shape in orthographic views, a section where the interior matters, all dimensions in millimetres, the material, the surface finish, the tolerances and any notes on heat treatment or treatment of edges. Detail drawings show a single part at a scale large enough for every dimension to be legible; an assembly drawing shows the parts together in their working positions, with a parts list or bill of materials keyed by item numbers, and enough dimensions - overall sizes and centres - for the assembly to be checked.\n\nBecause no manufacturing process is exact, dimensions are given with tolerances. A tolerance states the permissible variation: a limit dimension gives the largest and smallest acceptable sizes, and a bilateral tolerance gives a nominal size with plus and minus deviations. Fits describe the relationship between two mating parts. A clearance fit always leaves space between the parts so that they move or slide; an interference fit always leaves the shaft larger than the hole so that the parts must be forced or shrunk together and hold by friction; and a transition fit may be either, depending on the actual sizes produced. The hole basis system, in which the hole size is fixed and the shaft size varies, is used because holes are harder to machine to a precise size than shafts. Terms met in the standards include the basic size, the allowance, the maximum and minimum limits, the deviation and the tolerance zone, and interchangeability - the aim of the whole system - means any mating part from any supplier will fit without hand fitting, which is what makes mass production and spare parts possible.\n\nReading a working drawing therefore requires more than geometry. The draughtsman must decide what to dimension and from where, choose tolerances that are tight enough to work and loose enough to be manufacturable at a sensible cost, note surface finish where it affects friction or sealing, and order the information so the machinist works in a logical sequence. A correctly drawn and dimensioned working drawing is the contract between designer and maker, and an ambiguous one is the source of scrap, delay and dispute.",
+        "objectives": [
+          "Define tolerance, limit, allowance and fit and use them correctly",
+          "Distinguish clearance, interference and transition fits and the hole basis system",
+          "Prepare or interpret a working drawing with detail and assembly views and a parts list"
+        ],
+        "concepts": [
+          "Tolerance",
+          "Limits",
+          "Allowance",
+          "Clearance fit",
+          "Interference fit",
+          "Hole basis",
+          "Bill of materials",
+          "Interchangeability"
+        ],
+        "experiment": {
+          "type": "tolerance-tool",
+          "description": "Fit Selector: Choose the hole and shaft limits for a stated fit and check whether the parts will assemble."
+        }
+      },
+      {
+        "id": "td-l6-3",
+        "title": "Computer-Aided Design and Presentation of a Project",
+        "content": "The final stage of a drawing project is presenting it so that it can be read, checked and used. Whether produced by hand or by computer, a drawing set has a standard order: a title sheet and drawing list, location and site plans, floor plans, elevations, sections, construction details, roof and foundation plans, and the schedules for doors, windows, finishes and reinforcement. Each sheet carries a border, title block with title, scale, date, drawing number, revisions and the designer's name, a north point where relevant and a revision cloud and table showing what changed and when. Dimensions are complete, consistent between related drawings and readable at the plotted size.\n\nIn a computer-aided process the drawing is built as a model. Two-dimensional drafting assembles views that the draughtsman must keep coordinated by hand; three-dimensional modelling builds the object once and generates orthographic views, sections, auxiliary views, exploded assembly views and isometric or shaded pictorial views from the same model, so that a change made in one place appears everywhere. Drawings are organised in layers and named views, dimension and text styles are set to standards, blocks and templates hold repeated components, and plotting is controlled by a layout with the correct sheet size, plot scale and pen settings so that heavy outlines and thin dimension lines come out as intended. Files are named and stored systematically and, since drawings are legal records of a design, kept securely with a record of revisions.\n\nPresentation is also a design decision. A drawing is judged on whether a reader can extract the information quickly: views arranged logically, nothing overlapping, hatching and line weights giving depth, notes close to the features they describe, and the sheet neither cluttered nor empty. The same material can be presented well or badly, and the marks in the SBA and in the examination reward the drawing that communicates. In practice, presentation is a professional matter: a clear drawing reduces site queries and errors, and the quality of the drawing set is how a designer's competence is first judged.",
+        "objectives": [
+          "Assemble a building or engineering drawing set in the standard order",
+          "Use CAD modelling to generate views, sections and pictorial presentations",
+          "Apply presentation standards for line weights, notes, titles and revisions"
+        ],
+        "concepts": [
+          "Drawing set",
+          "Title block",
+          "Revision table",
+          "North point",
+          "2D drafting",
+          "3D model",
+          "Plot scale",
+          "Design record"
+        ],
+        "experiment": {
+          "type": "cad-simulator",
+          "description": "Drawing Set: Assemble a sheet set from the views of one model and check the title blocks, scales and revisions agree."
+        }
+      }
+    ]
+  }
+]

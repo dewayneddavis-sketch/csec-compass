@@ -1,0 +1,327 @@
+[
+  {
+    "id": "kc1",
+    "question": "Which instrument draws a vertical line when used with a T-square?",
+    "options": [
+      "A compass",
+      "A set square",
+      "A French curve",
+      "A protractor"
+    ],
+    "answer": "A set square",
+    "explanation": "Held against the T-square blade, a set square draws verticals and standard angles.",
+    "topic": "td-l1-1"
+  },
+  {
+    "id": "kc2",
+    "question": "The scale rule is used to:",
+    "options": [
+      "Draw curves",
+      "Set off dimensions at a stated scale without calculation",
+      "Measure angles",
+      "Letter the drawing"
+    ],
+    "answer": "Set off dimensions at a stated scale without calculation",
+    "explanation": "It carries graduations for the common scales.",
+    "topic": "td-l1-1"
+  },
+  {
+    "id": "kc3",
+    "question": "A thin continuous line on an engineering drawing normally represents:",
+    "options": [
+      "An outline",
+      "A projection or dimension line",
+      "A hidden edge",
+      "A centre line"
+    ],
+    "answer": "A projection or dimension line",
+    "explanation": "Thin lines carry projections, dimensions and leaders.",
+    "topic": "td-l1-2"
+  },
+  {
+    "id": "kc4",
+    "question": "A room 5 m wide drawn at 1:100 measures on the sheet:",
+    "options": [
+      "5 mm",
+      "50 mm",
+      "500 mm",
+      "5000 mm"
+    ],
+    "answer": "50 mm",
+    "explanation": "5000 mm divided by 100 gives 50 mm.",
+    "topic": "td-l1-3"
+  },
+  {
+    "id": "kc5",
+    "question": "To divide a line into equal parts you may use:",
+    "options": [
+      "Similar triangles with an inclined line",
+      "A French curve",
+      "A protractor only",
+      "Hatching"
+    ],
+    "answer": "Similar triangles with an inclined line",
+    "explanation": "A line divided in any convenient ratio is projected onto the given line.",
+    "topic": "td-l2-1"
+  },
+  {
+    "id": "kc6",
+    "question": "Two circles joined by a smooth arc of given radius require:",
+    "options": [
+      "The tangency points marked and arcs offset from each circle by the radius",
+      "Only the centres joined",
+      "A protractor",
+      "Hatching"
+    ],
+    "answer": "The tangency points marked and arcs offset from each circle by the radius",
+    "explanation": "Offsetting locates the blending centre; tangent points are then constructed.",
+    "topic": "td-l2-2"
+  },
+  {
+    "id": "kc7",
+    "question": "A locus construction is used mainly to:",
+    "options": [
+      "Dimension a drawing",
+      "Show the path of a moving point in a mechanism",
+      "Hatch a section",
+      "Set the scale"
+    ],
+    "answer": "Show the path of a moving point in a mechanism",
+    "explanation": "Loci link geometry with the motion of machine parts.",
+    "topic": "td-l2-3"
+  },
+  {
+    "id": "kc8",
+    "question": "In third angle projection the view from the left is placed:",
+    "options": [
+      "On the right of the front view",
+      "On the left of the front view",
+      "Above the plan",
+      "Below the front view"
+    ],
+    "answer": "On the left of the front view",
+    "explanation": "Third angle places each view on the same side as its direction of sight.",
+    "topic": "td-l3-1"
+  },
+  {
+    "id": "kc9",
+    "question": "An auxiliary view is projected onto a plane:",
+    "options": [
+      "Parallel to the inclined face",
+      "Perpendicular to the front view",
+      "Above the plan",
+      "At 45 degrees to the object"
+    ],
+    "answer": "Parallel to the inclined face",
+    "explanation": "Only then does the face appear in true shape.",
+    "topic": "td-l3-2"
+  },
+  {
+    "id": "kc10",
+    "question": "Hatching lines in a section are drawn:",
+    "options": [
+      "Vertically at 90 degrees",
+      "Thin, continuous and at 45 degrees",
+      "Thick and dashed",
+      "Only on the outline"
+    ],
+    "answer": "Thin, continuous and at 45 degrees",
+    "explanation": "Evenly spaced 45 degree lines are the convention.",
+    "topic": "td-l3-3"
+  },
+  {
+    "id": "kc11",
+    "question": "The isometric axes are drawn at 30 degrees above the horizontal for:",
+    "options": [
+      "All three axes",
+      "Two of the axes, with one vertical",
+      "One axis only",
+      "No axis"
+    ],
+    "answer": "Two of the axes, with one vertical",
+    "explanation": "One axis is vertical and the other two are at 30 degrees.",
+    "topic": "td-l4-1"
+  },
+  {
+    "id": "kc12",
+    "question": "In one-point perspective the vanishing point lies on the:",
+    "options": [
+      "Ground line",
+      "Horizon line",
+      "Picture plane only",
+      "Sky"
+    ],
+    "answer": "Horizon line",
+    "explanation": "The horizon is the eye level and the vanishing point sits on it.",
+    "topic": "td-l4-2"
+  },
+  {
+    "id": "kc13",
+    "question": "The 'trim' command in CAD is used to:",
+    "options": [
+      "Extend a line to a boundary",
+      "Cut an entity back to a boundary",
+      "Mirror an entity",
+      "Change the layer"
+    ],
+    "answer": "Cut an entity back to a boundary",
+    "explanation": "Trim removes unwanted portions between intersections.",
+    "topic": "td-l4-3"
+  },
+  {
+    "id": "kc14",
+    "question": "A location plan is drawn at a smaller scale than a site plan because it shows:",
+    "options": [
+      "More construction detail",
+      "A wider area in relation to roads and boundaries",
+      "Only the building",
+      "The roof"
+    ],
+    "answer": "A wider area in relation to roads and boundaries",
+    "explanation": "Small scales such as 1:1250 are used for the context of the site.",
+    "topic": "td-l5-1"
+  },
+  {
+    "id": "kc15",
+    "question": "The bearing of a lintel at each end should be shown so that:",
+    "options": [
+      "The finish can be priced",
+      "It is clear how much of the lintel rests on the wall",
+      "The door swing can be drawn",
+      "The lintel can be painted"
+    ],
+    "answer": "It is clear how much of the lintel rests on the wall",
+    "explanation": "Insufficient bearing is a structural fault.",
+    "topic": "td-l5-2"
+  },
+  {
+    "id": "kc16",
+    "question": "The pitch of a roof is:",
+    "options": [
+      "The length of the rafters",
+      "The angle of the roof slope",
+      "The width of the gutter",
+      "The spacing of the trusses"
+    ],
+    "answer": "The angle of the roof slope",
+    "explanation": "Pitch governs the covering, the drainage and the appearance.",
+    "topic": "td-l5-3"
+  },
+  {
+    "id": "kc17",
+    "question": "An internal thread is shown with:",
+    "options": [
+      "The major diameter thin and the minor diameter thick",
+      "Both lines thick",
+      "Both lines dashed only",
+      "A single centre line"
+    ],
+    "answer": "The major diameter thin and the minor diameter thick",
+    "explanation": "The convention is the reverse of the external thread representation.",
+    "topic": "td-l6-1"
+  },
+  {
+    "id": "kc18",
+    "question": "A clearance fit means:",
+    "options": [
+      "The parts must be forced together",
+      "There is always a gap so the parts can move or slide",
+      "The parts are identical in size",
+      "The parts are glued"
+    ],
+    "answer": "There is always a gap so the parts can move or slide",
+    "explanation": "Clearance fits are used where relative movement is required.",
+    "topic": "td-l6-2"
+  },
+  {
+    "id": "kc19",
+    "question": "Surface finish is specified on a working drawing because it:",
+    "options": [
+      "Affects appearance only",
+      "Affects friction, wear, sealing and cost",
+      "Is required by the title block",
+      "Shows the material"
+    ],
+    "answer": "Affects friction, wear, sealing and cost",
+    "explanation": "Roughness affects function and must be stated where it matters.",
+    "topic": "td-l6-2"
+  },
+  {
+    "id": "kc20",
+    "question": "A shaded or rendered pictorial view in a drawing set is used to:",
+    "options": [
+      "Replace the working drawings",
+      "Present the design to a client or reader",
+      "Dimension the object",
+      "Show tolerances"
+    ],
+    "answer": "Present the design to a client or reader",
+    "explanation": "Pictorial presentation communicates a design; working drawings build it.",
+    "topic": "td-l6-3"
+  },
+  {
+    "id": "kc21",
+    "question": "A break line in a drawing indicates:",
+    "options": [
+      "A fault in the object",
+      "That part of the view is omitted to save space",
+      "The cutting plane",
+      "The centre of a circle"
+    ],
+    "answer": "That part of the view is omitted to save space",
+    "explanation": "A wavy or irregular thin line shows that a long uniform part has been shortened.",
+    "topic": "td-l1-2"
+  },
+  {
+    "id": "kc22",
+    "question": "The interior angle of a regular pentagon is:",
+    "options": [
+      "108 degrees",
+      "120 degrees",
+      "90 degrees",
+      "135 degrees"
+    ],
+    "answer": "108 degrees",
+    "explanation": "(5 - 2) x 180 / 5 = 108 degrees.",
+    "topic": "td-l2-1"
+  },
+  {
+    "id": "kc23",
+    "question": "Auxiliary views are essential for the true shapes of:",
+    "options": [
+      "Rectangular blocks",
+      "Inclined faces such as brace ends and lofted sheet-metal parts",
+      "Circles on the front face",
+      "Hidden holes"
+    ],
+    "answer": "Inclined faces such as brace ends and lofted sheet-metal parts",
+    "explanation": "Any face not parallel to a principal plane is foreshortened without an auxiliary view.",
+    "topic": "td-l3-2"
+  },
+  {
+    "id": "kc24",
+    "question": "In an isometric drawing a rectangular block 60 mm x 40 mm x 20 mm is drawn:",
+    "options": [
+      "With all edges measured along the three axes at true length",
+      "With every edge halved",
+      "At 45 degrees to the horizontal",
+      "With the front face true shape"
+    ],
+    "answer": "With all edges measured along the three axes at true length",
+    "explanation": "Isometric drawing sets axis-parallel edges at true length.",
+    "topic": "td-l4-1"
+  },
+  {
+    "id": "kc25",
+    "question": "Floor area for costing a slab is calculated from the:",
+    "options": [
+      "Site plan",
+      "Ground floor plan",
+      "Elevation",
+      "Roof plan"
+    ],
+    "answer": "Ground floor plan",
+    "explanation": "The plan gives the lengths and widths for area calculations.",
+    "topic": "td-l5-1"
+  }
+]
