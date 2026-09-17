@@ -1,0 +1,434 @@
+[
+  {
+    "id": "ch-mod-1",
+    "title": "Indigenous Peoples and European Contact",
+    "lessons": [
+      {
+        "id": "ch-l1-1",
+        "title": "Taino and Kalinago Societies",
+        "content": "Before 1492 the Caribbean was home to peoples who had migrated northwards from South America along the island chain. The Taino, who lived mainly in the Greater Antilles, and the Kalinago (Island Caribs), who lived mainly in the Lesser Antilles, spoke related languages, farmed with cassava and other crops, fished, and built villages led by a chief or cacique. Their societies had organised labour, religious beliefs centred on zemis, and long-distance trade across the islands.\n\nThe two peoples differed in important ways. The Taino lived in larger, more stratified settlements and produced the elaborate ball courts, plazas and carved objects that survive in the archaeological record. The Kalinago organised themselves in smaller, more mobile communities and were known as skilled warriors and seafarers. Both used the resources of sea, forest and soil with great skill, and both understood the hurricane and the dry season as facts of life.\n\nThese societies matter because European colonisation did not begin in an empty region. The Caribbean was already inhabited, farmed and governed, and the first decades of Spanish settlement depended on indigenous knowledge, labour and food. When we study the arrival of Europeans, we are studying contact between peoples, not the discovery of an unknown place.",
+        "objectives": [
+          "Locate the Taino and Kalinago in the Caribbean and describe their societies",
+          "Compare their economies, settlements and political organisation",
+          "Explain why the Caribbean was not an empty region in 1492"
+        ],
+        "concepts": [
+          "Taino",
+          "Kalinago",
+          "Cacique",
+          "Zemi",
+          "Cassava",
+          "Lesser Antilles"
+        ],
+        "experiment": {
+          "type": "map-explorer",
+          "description": "Island Map: Place the Taino and Kalinago in the islands they inhabited and match each people to its way of life."
+        }
+      },
+      {
+        "id": "ch-l1-2",
+        "title": "European Exploration and Rivalry",
+        "content": "Columbus reached the Bahamas in 1492 and the Spanish crown quickly claimed the islands, founding settlements on Hispaniola and later Cuba, Puerto Rico and Jamaica. Spain based its claim on exploration and on papal grants, and treated the region as its monopoly. Other European states refused to accept that monopoly: the English, French and Dutch raided Spanish shipping, planted settlements on islands Spain could not defend, and eventually took Jamaica (1655), Barbados, Martinique and Curacao.\n\nRivalry shaped the islands' history long after first contact. Privateers and buccaneers operated with the blessing of rival crowns, and the Spanish Main became a zone of contest for more than a century. By the eighteenth century the Caribbean was a patchwork of European empires, each island governed according to the laws, religion and language of the power that held it, and each valued chiefly for the wealth its plantations produced.\n\nFor the islands' people, this rivalry meant repeated transfers of sovereignty and settlement by new colonists. Many islands changed hands several times, and each change brought new laws, new immigrants and new pressures on the existing population. The region's linguistic and legal diversity today is one of the most visible legacies of that contest.",
+        "objectives": [
+          "Explain why Spain claimed the Caribbean and how other powers challenged the claim",
+          "Identify key dates and islands of European rivalry",
+          "Describe the legacy of imperial rivalry for Caribbean societies"
+        ],
+        "concepts": [
+          "Columbus",
+          "Encomienda",
+          "Privateer",
+          "Monopoly",
+          "Sovereignty",
+          "Colonisation"
+        ],
+        "experiment": {
+          "type": "interactive-quiz",
+          "description": "Empire Quiz: Sort events and rival European powers into the sequence and island they belong to."
+        }
+      },
+      {
+        "id": "ch-l1-3",
+        "title": "The Impact of European Contact",
+        "content": "The first century of Spanish settlement transformed the Caribbean and devastated its indigenous peoples. Spanish settlers demanded labour through the encomienda system, forcing Taino communities to work in mines and on farms. Warfare, forced labour, the disruption of food production and above all disease - smallpox, measles and influenza to which the population had no immunity - caused a catastrophic fall in numbers. In many islands the indigenous population collapsed within a generation or two.\n\nThose who survived did not simply submit. They resisted, fled to the mountains and forests, and fought back; the Kalinago of the Lesser Antilles resisted European settlement for well over a century. Some people intermarried with colonists or with Africans, and their descendants survive across the region. The Taíno language, cassava cultivation, the hammock, the canoe and the place names of the Caribbean remain as cultural legacies.\n\nThe demographic disaster created the labour problem that drove the rest of Caribbean history. If the indigenous population could no longer supply the labour the plantations demanded, the colonists needed another source. That answer - the forced migration of millions of Africans - links this first period of contact directly to slavery and to the plantation economy that followed.",
+        "objectives": [
+          "Explain the main causes of the decline of the indigenous population",
+          "Describe indigenous resistance and survival",
+          "Link the labour shortage to the growth of African slavery"
+        ],
+        "concepts": [
+          "Encomienda",
+          "Epidemic",
+          "Depopulation",
+          "Resistance",
+          "Legacy",
+          "Forced labour"
+        ],
+        "experiment": {
+          "type": "drag-drop",
+          "description": "Cause and Effect: Drag each consequence of contact under the cause it belongs to - disease, labour or resistance."
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch-mod-2",
+    "title": "Sugar, Slavery and the Plantation Economy",
+    "lessons": [
+      {
+        "id": "ch-l2-1",
+        "title": "The Sugar Revolution",
+        "content": "In the middle of the seventeenth century the English and French islands moved from small farming - tobacco, cotton, indigo - to sugar, and the change was so rapid and so complete that historians call it the sugar revolution. Sugar needed capital for mills, boiling houses and curing houses, a large labour force, and land in big blocks. Smallholders sold out or were squeezed out, estates grew, and forests were cleared to plant cane.\n\nBarbados led the way from the 1640s, and Jamaica, St Kitts, Antigua, Martinique, Guadeloupe and Saint-Domingue followed. Because sugar is a demanding crop - it must be cut and ground quickly, and the work is hot, heavy and dangerous - planters came to rely on enslaved African labour in ever larger numbers. The same revolution that created enormous private fortunes also created the plantation society and the slave trade that supported it.\n\nThe sugar revolution also reorganised the region's place in the world economy. Caribbean islands became the most valuable colonies in the Atlantic system, supplying Europe with sugar, molasses and rum while importing food, timber and manufactures. That dependence on a single export crop - and on the unpaid labour of enslaved people - shaped Caribbean economies for the next two centuries.",
+        "objectives": [
+          "Explain why sugar replaced tobacco and cotton as the main Caribbean crop",
+          "Describe the capital and labour demands of sugar production",
+          "Assess the economic and social effects of the sugar revolution"
+        ],
+        "concepts": [
+          "Sugar revolution",
+          "Plantation",
+          "Capital",
+          "Monoculture",
+          "Boiling house",
+          "Molasses"
+        ],
+        "experiment": {
+          "type": "interactive-summary",
+          "description": "Sugar Chain: Order the steps from cane cutting to exported sugar and label where the capital and the labour are used."
+        }
+      },
+      {
+        "id": "ch-l2-2",
+        "title": "The Transatlantic Slave Trade",
+        "content": "Between the sixteenth and nineteenth centuries European ships carried roughly twelve million Africans across the Atlantic, and the great majority were landed in the Caribbean and Brazil. The trade operated in a triangle: European manufactured goods were carried to the West African coast, enslaved Africans were shipped across the ocean, and colonial produce - sugar, rum, cotton - returned to Europe. Africans were captured and sold by African states and traders as well as by Europeans, and the commerce was organised from fortified posts on the coast.\n\nThe Middle Passage was the crossing itself: weeks at sea in cramped, filthy conditions, with illness, suffocation and suicide killing many. Historians estimate that between ten and twenty per cent of those embarked died before landing. Survivors were sold at auction, branded, and separated from family and language groups - a deliberate scattering that made organised resistance harder.\n\nThe trade's consequences reached far beyond the ships. West African societies lost millions of people and suffered wars and disruption, while Caribbean islands gained an African majority whose labour built the plantation economies. African languages, foods, religions, music, medicine and family practices survived, adapted and combined, and became the foundation of Caribbean culture.",
+        "objectives": [
+          "Describe the triangular trade and the role of the Caribbean in it",
+          "Explain the conditions and mortality of the Middle Passage",
+          "Assess the consequences of the trade for Africa and the Caribbean"
+        ],
+        "concepts": [
+          "Triangular trade",
+          "Middle Passage",
+          "Abolition",
+          "Diaspora",
+          "Auction",
+          "Resistance"
+        ],
+        "experiment": {
+          "type": "interactive-quiz",
+          "description": "Triangle Trade: Match each leg of the trade to its cargo, then answer questions on the Middle Passage."
+        }
+      },
+      {
+        "id": "ch-l2-3",
+        "title": "Plantation Society and Economy",
+        "content": "The sugar plantation was a total institution: it housed, fed, disciplined and worked the people on it. At the top stood the planter or, very often, an attorney acting for an absentee owner who lived in Britain. Managers, bookkeepers and overseers ran the estate day to day, and below them came the enslaved field gangs, the skilled workers - carpenters, coopers, boilers - and the domestic servants. Free people of colour and poor whites occupied an uneasy middle position.\n\nThis hierarchy produced a stratified society based on race and legal status, and it shaped everything from housing and dress to the courts and the church. Enslaved people were denied legal personality, could be bought and sold, and were subject to brutal punishments; yet they built families, provision grounds, markets and religious communities of their own. The plantation was therefore both an instrument of control and a place of cultural creation.\n\nThe economy was equally lopsided. Island economies depended on one crop and on imported food and manufactures, and laws of trade such as the Navigation Acts tied colonial commerce to the mother country. Planters who borrowed heavily against future crops were vulnerable to falls in the sugar price, hurricanes and war, so the system's wealth was never secure as it appeared.",
+        "objectives": [
+          "Describe the social hierarchy of plantation society",
+          "Explain how the plantation worked as an economic unit",
+          "Assess the weaknesses of the plantation economy"
+        ],
+        "concepts": [
+          "Absentee planter",
+          "Attorney",
+          "Social stratification",
+          "Provision ground",
+          "Mercantilism",
+          "Navigation Acts"
+        ],
+        "experiment": {
+          "type": "drag-drop",
+          "description": "Plantation Pyramid: Drag each group into its place in the plantation hierarchy and note each group's role."
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch-mod-3",
+    "title": "Resistance, Revolt and Emancipation",
+    "lessons": [
+      {
+        "id": "ch-l3-1",
+        "title": "Resistance and Maroon Societies",
+        "content": "Resistance took many forms. Day to day, enslaved people broke tools, worked slowly, feigned illness, kept their own religions and languages, and ran away for short periods to visit family or provision grounds. More decisively, thousands escaped permanently. Those who reached the mountains and interior forests formed maroon communities, defended by terrain and by knowledge of the land.\n\nMaroon wars in Jamaica, Suriname, Brazil and elsewhere forced colonial governments to negotiate. Treaties in Jamaica in 1739 recognised maroon freedom and land in return for returning new runaways and helping to put down revolts - an accommodation that both secured freedom for the maroons and divided them from the enslaved population. Not all resistance ended in settlement: Tacky's revolt in Jamaica in 1760 took months to suppress, and revolts continued to the eve of emancipation.\n\nResistance matters because it demonstrates that enslaved people were never passive. It also explains why the colonial system remained militarised, why planters feared their own labour force, and why abolition was not simply given from above: the fear of revolt, and the cost of suppressing it, were part of the argument for ending slavery.",
+        "objectives": [
+          "Identify the forms resistance took",
+          "Explain the rise and significance of maroon communities",
+          "Assess how resistance influenced colonial policy"
+        ],
+        "concepts": [
+          "Maroon",
+          "Treaty of 1739",
+          "Tacky's revolt",
+          "Runaway",
+          "Passive resistance",
+          "Militia"
+        ],
+        "experiment": {
+          "type": "timeline",
+          "description": "Resistance Timeline: Place revolts and maroon events in chronological order and match each to its cause."
+        }
+      },
+      {
+        "id": "ch-l3-2",
+        "title": "Abolition and Emancipation",
+        "content": "The campaign against the slave trade and then against slavery itself grew in Britain from the late eighteenth century. Abolitionists argued from religion and morality, from natural rights, and increasingly from economics, and they organised petitions, sugar boycotts and parliamentary lobbying. The trade was abolished for British subjects in 1807, but slavery itself continued in British colonies until 1833.\n\nEnslaved people forced the pace. The Baptist War in Jamaica in 1831-32, led by figures including Samuel Sharpe, involved tens of thousands and showed that the system could not be sustained. The Slavery Abolition Act of 1833 provided for emancipation from 1834, and for a period of compulsory unpaid labour called apprenticeship, which ended in 1838. Crucially, the British government paid twenty million pounds in compensation to slave owners - not to the people who had been enslaved.\n\nFreedom did not bring economic independence. Former slaves had no land, no wages to speak of and no protection in law, and planters still needed labour. Understanding emancipation therefore means understanding both the achievement - the ending of a brutal system of property in human beings - and its limits, which the next decades of Caribbean history set out to test.",
+        "objectives": [
+          "Explain the arguments and methods of the abolitionists",
+          "Assess the role of slave revolts in bringing about emancipation",
+          "Evaluate the terms of the 1833 Act and its effects"
+        ],
+        "concepts": [
+          "Abolitionism",
+          "Baptist War",
+          "Samuel Sharpe",
+          "Slavery Abolition Act 1833",
+          "Compensation",
+          "Apprenticeship"
+        ],
+        "experiment": {
+          "type": "interactive-quiz",
+          "description": "Abolition Steps: Sort the events from 1807 to 1838 into order and identify who gained and who lost."
+        }
+      },
+      {
+        "id": "ch-l3-3",
+        "title": "Apprenticeship and Its Failure",
+        "content": "Apprenticeship was presented as a transition to freedom, but in practice it was a compromise between planters and the British government. Former slaves over six years of age were divided into two classes: praedials, who worked about forty-five unpaid hours a week for their former masters, and non-praedials, who were bound for four years. They were paid for extra labour, but wages were low and arbitrary, and the special magistrates appointed to protect them were too few and often too close to the planters to be effective.\n\nApprentices resisted by working slowly, withholding labour and, in some islands, striking. In St Kitts the governor had to impose martial law; the system was abolished in 1838, two years early, largely because it was unworkable and because anti-slavery opinion in Britain had turned against it.\n\nThe failure of apprenticeship taught the Caribbean two durable lessons. First, legal freedom without land, education or a fair wage is fragile. Second, workers' gains come from organisation as much as from legislation. Both lessons shaped the struggles of the post-emancipation period, and the labour movements of the twentieth century drew directly on them.",
+        "objectives": [
+          "Describe how apprenticeship worked and who it benefited",
+          "Explain why apprenticeship was ended early",
+          "Assess the lessons Caribbean societies drew from apprenticeship"
+        ],
+        "concepts": [
+          "Praedial",
+          "Non-praedial",
+          "Special magistrate",
+          "Stipendiary",
+          "Martial law",
+          "Free labour"
+        ],
+        "experiment": {
+          "type": "interactive-summary",
+          "description": "Apprenticeship Balance: Sort the terms of apprenticeship between what planters gained and what workers gained."
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch-mod-4",
+    "title": "Post-Emancipation Societies",
+    "lessons": [
+      {
+        "id": "ch-l4-1",
+        "title": "Indentureship and Immigration",
+        "content": "After 1838 planters searched for labour they could control cheaply. The answer was immigration under contract: indentured workers from India, contracted for five years in return for passage, wages and a return passage, arrived in the Caribbean from 1838 - in Trinidad from 1845, in Jamaica from 1845, and in British Guiana in large numbers. Smaller groups came from China, Madeira and Africa. Ships were crowded, mortality on the voyage was significant, and conditions on the estates often fell far short of what the contracts promised.\n\nIndentureship was not slavery: workers could in principle complain to a protector of immigrants and return home at the end of their contract. In practice the law bound them to the estate that held their contract, wages were low, and the protector's office was weak. Many stayed, sending for relatives and settling as small farmers, shopkeepers and traders after their contracts ended.\n\nThe effect on Caribbean society was profound. Trinidad and Guyana became plural societies with large Indo-Caribbean populations, new religions, languages, foods and festivals, and eventually new politics. Indentureship also left a lasting political argument about whether it rescued the plantation economy or created a new form of servitude, and both readings are argued by historians today.",
+        "objectives": [
+          "Explain why indentured immigration began after emancipation",
+          "Describe the terms and conditions of indentureship",
+          "Assess the impact of immigration on Caribbean societies"
+        ],
+        "concepts": [
+          "Indentureship",
+          "Protector of immigrants",
+          "Plural society",
+          "Emigration",
+          "Contract labour",
+          "East Indian"
+        ],
+        "experiment": {
+          "type": "map-explorer",
+          "description": "Migration Map: Place indentured immigration to Trinidad, Guyana, Jamaica and Suriname and match each group to its destination."
+        }
+      },
+      {
+        "id": "ch-l4-2",
+        "title": "The Peasantry and Free Villages",
+        "content": "The most important post-emancipation development was the growth of a peasantry. Freed people left the estates where they could, squatted on crown and abandoned land, and bought land where it was for sale. Baptist and Methodist missionaries helped them buy estates and divide them into plots, creating free villages in Jamaica, and similar settlements grew in Barbados, Antigua and Guyana. By the later nineteenth century the region had thousands of small farmers producing ground provisions, cocoa, coffee, bananas and sugar cane of their own.\n\nSmall farming did not make people rich, but it changed the balance of power. Planters who had commanded labour now had to offer wages to attract it, and women's marketing of produce-especially in Jamaica and Barbados-created an independent internal trade. Peasant producers freed the islands from total dependence on imported food and gave households a measure of control over their own labour.\n\nThe peasantry also faced hard limits: small plots, no credit, poor roads, and export taxes and structures designed for the plantation. Those limits explain why rural poverty persisted and why later generations migrated to towns and abroad. Even so, the free village remains one of the clearest examples of Caribbean people using land to convert legal freedom into economic independence.",
+        "objectives": [
+          "Explain how free villages and a peasantry developed after 1838",
+          "Describe the economic role of small farming and the internal market",
+          "Assess the achievements and limits of the peasantry"
+        ],
+        "concepts": [
+          "Peasantry",
+          "Free village",
+          "Squatting",
+          "Internal marketing",
+          "Crown land",
+          "Diversification"
+        ],
+        "experiment": {
+          "type": "drag-drop",
+          "description": "Free to Farming: Drag each step from emancipation to land ownership into the order in which it happened."
+        }
+      },
+      {
+        "id": "ch-l4-3",
+        "title": "Labour Unrest, Unions and Politics",
+        "content": "The 1930s exposed the poverty and anger that had built up since emancipation. In the middle of a world depression, falling export prices and wage cuts pushed workers into strikes and riots across the British Caribbean: Trinidad in 1937, Jamaica in 1938, Barbados, St Kitts, British Guiana and elsewhere. In Jamaica the unrest was led by labour figures such as Alexander Bustamante and Norman Manley, and it produced the modern trade union and party system.\n\nBritain responded by sending a Royal Commission, whose report - the Moyne Report of 1939 - documented low wages, bad housing, poor health and inadequate education, and recommended the development and welfare measures that became the basis of colonial policy after the war. Unions won recognition and minimum wage improvements, and the same leaders who had organised workers turned to politics: Bustamante's Jamaica Labour Party and Manley's People's National Party both date from 1938-43.\n\nThe sequence matters: organisation produced bargaining power, bargaining power produced political representation, and political representation produced the movement for self-government and independence. The 1930s are thus the hinge on which modern Caribbean history turns, joining the grievances of the post-emancipation countryside to the nationalism of the 1950s.",
+        "objectives": [
+          "Explain the causes of the labour unrest of the 1930s",
+          "Describe the findings and importance of the Moyne Report",
+          "Link the growth of unions to the rise of political parties"
+        ],
+        "concepts": [
+          "Labour unrest",
+          "Moyne Report",
+          "Trade union",
+          "Bustamante",
+          "Manley",
+          "Self-government"
+        ],
+        "experiment": {
+          "type": "timeline",
+          "description": "Riots and Revolts: Arrange the labour disturbances and their outcomes in chronological order."
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch-mod-5",
+    "title": "Nationalism, Federation and Independence",
+    "lessons": [
+      {
+        "id": "ch-l5-1",
+        "title": "Early Nationalism and Garveyism",
+        "content": "Caribbean nationalism grew from several roots. Educated professionals, black and coloured, challenged the colonial social order of the nineteenth century; the labour movements of the 1930s gave the nationalist argument a mass base; and international events - the two world wars, the Italian invasion of Ethiopia, and the growth of anti-colonial politics in India and Africa - connected the Caribbean to a wider struggle.\n\nMarcus Garvey, a Jamaican printer who founded the Universal Negro Improvement Association in 1914 and built it into a mass organisation in the United States, was central to that consciousness. His slogans of black pride, self-help and Africa for the Africans reached millions, and the UNIA's branches across the region made ordinary people part of a global black movement. Garvey's influence is visible in the later careers of nationalist leaders, in Rastafari, and in the language of cultural self-belief.\n\nNationalism in the British Caribbean also took institutional forms: adult suffrage campaigns, local government reform, the growth of federations of unions and the emergence of parties that demanded responsible government. By the 1940s the argument had shifted from whether the colonies should govern themselves to how and how soon.",
+        "objectives": [
+          "Describe the roots of Caribbean nationalism",
+          "Explain the significance of Garvey and the UNIA",
+          "Trace how nationalism translated into institutions and demands"
+        ],
+        "concepts": [
+          "Garveyism",
+          "UNIA",
+          "Pan-Africanism",
+          "Adult suffrage",
+          "Responsible government",
+          "Colonial Office"
+        ],
+        "experiment": {
+          "type": "interactive-quiz",
+          "description": "Nationalism Quiz: Match each nationalist figure and idea to its contribution, then judge which factors mattered most."
+        }
+      },
+      {
+        "id": "ch-l5-2",
+        "title": "The West Indies Federation",
+        "content": "The West Indies Federation, established in 1958, united ten British Caribbean territories in a single political unit with a federal government at Port of Spain, a Governor-General, and a legislature. Its supporters argued that small islands could speak in the world only together, that a federation could attract investment and provide services no island could afford alone, and that independence would be stronger if it were negotiated jointly.\n\nThe experiment collapsed in 1962. The federal government had limited powers, no power to tax directly, and no strong hold on popular loyalty; the larger members, especially Jamaica and Trinidad, believed they contributed more than they gained; there were disputes over the federal capital, over customs union and over free movement of people. In 1961 Jamaica voted in a referendum to withdraw, and the federation ended with it.\n\nThe failure had consequences that are still debated. Each territory negotiated independence on its own, which brought earlier flag independence but also left the region without a single market or common foreign policy. Later attempts at integration - CARIFTA in 1968 and CARICOM in 1973 - can be read as the Federation's unfinished business by economic means.",
+        "objectives": [
+          "Explain the aims of the West Indies Federation",
+          "Analyse the reasons for its collapse",
+          "Assess the consequences of its failure for regional integration"
+        ],
+        "concepts": [
+          "West Indies Federation",
+          "Referendum 1961",
+          "Federalism",
+          "Customs union",
+          "Port of Spain",
+          "Secession"
+        ],
+        "experiment": {
+          "type": "interactive-summary",
+          "description": "Federation Debrief: Sort the factors behind the collapse into political, economic and social causes."
+        }
+      },
+      {
+        "id": "ch-l5-3",
+        "title": "Independence and Nation-Building",
+        "content": "Jamaica and Trinidad and Tobago became independent in 1962, followed by Barbados and British Guiana (Guyana) in 1966 and most other territories over the next two decades; some islands chose associated statehood or remained British dependencies. Independence transferred control of the constitution, the public service and foreign policy to elected governments, and most territories kept the Privy Council as their final court until the Caribbean Court of Justice was created in 2001.\n\nNation-building proved harder than the transfer of power. New states inherited economies built on a few export crops or minerals, small domestic markets, weak manufacturing, high unemployment and educational systems shaped by the colonial past. Governments invested in schools, roads, health and tourism, negotiated for foreign investment, and tried to diversify; some pursued democratic socialism or cooperative strategies, with mixed results.\n\nIndependence also raised questions of identity that remain current: how to teach a Caribbean history rather than a European one, how to build national culture, what role language and religion play, and how far the region should look to Africa, to Europe or to the Americas. Debates over reparations, constitutional reform and the republic issue are direct continuations of the nation-building work that began in the 1960s.",
+        "objectives": [
+          "Identify the Caribbean territories and dates of independence",
+          "Explain the economic and social challenges of nation-building",
+          "Assess the continuing debates about identity and sovereignty"
+        ],
+        "concepts": [
+          "Independence",
+          "Nation-building",
+          "Associated statehood",
+          "Diversification",
+          "CCJ",
+          "Republic"
+        ],
+        "experiment": {
+          "type": "timeline",
+          "description": "Road to Independence: Arrange the independence dates and constitutional changes of Caribbean territories in order."
+        }
+      }
+    ]
+  },
+  {
+    "id": "ch-mod-6",
+    "title": "The Caribbean in the Modern World",
+    "lessons": [
+      {
+        "id": "ch-l6-1",
+        "title": "Regional Cooperation after Federation",
+        "content": "After 1962 the region rebuilt cooperation on narrower, mainly economic foundations. The Caribbean Free Trade Association (CARIFTA) began in 1968 and removed tariffs among members; it was replaced by the Caribbean Community and Common Market (CARICOM) in 1973, which added foreign policy coordination and functional cooperation in health, education and agriculture. The Organisation of Eastern Caribbean States, founded in 1981, provides closer cooperation among the smaller islands.\n\nIn 1989 CARICOM heads agreed to work towards a single market and economy, and the CARICOM Single Market and Economy came into force in 2006, providing for the free movement of goods, services, capital and skilled persons and for a common external tariff. Progress has been uneven: free movement of skilled workers has expanded, but non-tariff barriers, differing standards and slow implementation still frustrate traders and professionals.\n\nRegionalism remains contentious because the members are unequal in size and resources, because sovereignty is jealously held, and because each government answers to its own electorate first. Even so, CARICOM gives the region a single voice in trade negotiations with the European Union, the United States and within the United Nations, which no single island could command alone.",
+        "objectives": [
+          "Explain why regional cooperation moved from political to economic forms",
+          "Describe CARICOM and the CSME and what they provide",
+          "Assess the achievements and weaknesses of regional integration"
+        ],
+        "concepts": [
+          "CARIFTA",
+          "CARICOM",
+          "CSME",
+          "Common external tariff",
+          "OECS",
+          "Free movement"
+        ],
+        "experiment": {
+          "type": "map-explorer",
+          "description": "Caribbean Community: Match each regional body to what it does and locate its members on the map."
+        }
+      },
+      {
+        "id": "ch-l6-2",
+        "title": "Migration and the Diaspora",
+        "content": "Migration has shaped Caribbean life since 1492, and it continues. Large movements in the twentieth century took islanders to the Panama Canal works, to Cuba and the Dominican Republic, to the United States, and - after the Second World War - to Britain, where the arrival of the Empire Windrush in 1948 became a symbol of the Windrush generation. Later flows went to Canada, the Netherlands and other European countries.\n\nThe causes are familiar: limited jobs and low wages at home, higher wages abroad, the recruitment efforts of receiving countries, and family reunification. The effects work in both directions. Remittances sustain households and are a major source of foreign exchange, and diaspora communities provide investment, skills transfer and political links. At the same time the region loses trained nurses and teachers - the brain drain - and communities lose people in their productive years.\n\nGovernments and regional institutions now treat the diaspora as a development partner, through diaspora bonds, skills-exchange schemes and engagement by CARICOM. Scholars describe the result as transnational Caribbean societies: families and loyalties that stretch across borders, keeping culture, language and even politics connected to home.",
+        "objectives": [
+          "Explain the main waves and causes of Caribbean migration",
+          "Assess the costs and benefits of migration and remittances",
+          "Describe how governments engage with the diaspora"
+        ],
+        "concepts": [
+          "Windrush generation",
+          "Remittance",
+          "Brain drain",
+          "Diaspora",
+          "Transnational",
+          "Family reunification"
+        ],
+        "experiment": {
+          "type": "data-explorer",
+          "description": "Remittance Tracker: Read the migration and remittance figures and identify which countries depend most on transfers."
+        }
+      },
+      {
+        "id": "ch-l6-3",
+        "title": "Culture, Tourism and Caribbean Identity",
+        "content": "Caribbean identity has been made out of encounter. The historian would point to the combining of African, European, indigenous, Indian, Chinese and Middle Eastern traditions in language, food, music, religion and family life - a process scholars call creolisation - and to the region's distinctive achievements in literature, carnival, reggae, calypso, cricket and scholarship.\n\nCulture is also an industry. Tourism is the largest economic sector in many islands, and it sells precisely those cultural assets: music, food, festivals, beaches and heritage. This brings foreign exchange and employment, but also well-known risks: dependence on foreign markets and airlines, seasonal and low-wage work, pressure on land and water, and a version of Caribbean culture packaged for visitors. Governments try to manage the balance through community tourism, heritage sites, local content requirements and cultural policy.\n\nIdentity debates remain live: how to teach Caribbean history in schools, how to protect Creole and nation languages, whether to keep the Privy Council or complete the move to the Caribbean Court of Justice, and how to argue for reparations for slavery and colonisation. A student of Caribbean history is not studying a settled past but the arguments that continue to shape the region.",
+        "objectives": [
+          "Explain the concept of creolisation and its evidence",
+          "Assess the economic and cultural effects of tourism",
+          "Discuss continuing debates about Caribbean identity and reparations"
+        ],
+        "concepts": [
+          "Creolisation",
+          "Carnival",
+          "Cultural industry",
+          "Heritage tourism",
+          "Reparations",
+          "Sovereignty"
+        ],
+        "experiment": {
+          "type": "interactive-summary",
+          "description": "Culture and Cash: Sort the effects of tourism into economic, social and cultural columns and weigh the balance."
+        }
+      }
+    ]
+  }
+]
