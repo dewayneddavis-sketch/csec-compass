@@ -1,0 +1,327 @@
+[
+  {
+    "id": "kc1",
+    "question": "Which people inhabited the islands of the Lesser Antilles before European contact?",
+    "options": [
+      "Taino",
+      "Kalinago",
+      "Aztec",
+      "Inca"
+    ],
+    "answer": "Kalinago",
+    "explanation": "The Kalinago occupied the smaller islands of the Lesser Antilles.",
+    "topic": "ch-l1-1"
+  },
+  {
+    "id": "kc2",
+    "question": "Taino society was organised under leaders called:",
+    "options": [
+      "Zemis",
+      "Caciques",
+      "Encomenderos",
+      "Overseers"
+    ],
+    "answer": "Caciques",
+    "explanation": "Caciques were village chiefs.",
+    "topic": "ch-l1-1"
+  },
+  {
+    "id": "kc3",
+    "question": "Spain claimed the Caribbean on the basis of:",
+    "options": [
+      "Purchase from Portugal",
+      "Discovery and papal grants",
+      "A vote of settlers",
+      "A treaty with the Taino"
+    ],
+    "answer": "Discovery and papal grants",
+    "explanation": "Discovery and papal authority underpinned the Spanish claim.",
+    "topic": "ch-l1-2"
+  },
+  {
+    "id": "kc4",
+    "question": "The main reason for the collapse of the indigenous population was:",
+    "options": [
+      "Indentureship",
+      "Disease and forced labour",
+      "Crop failure",
+      "Emigration to Africa"
+    ],
+    "answer": "Disease and forced labour",
+    "explanation": "Epidemics combined with the encomienda's demands destroyed communities.",
+    "topic": "ch-l1-3"
+  },
+  {
+    "id": "kc5",
+    "question": "The encomienda gave settlers the right to:",
+    "options": [
+      "Own land in Spain",
+      "Use indigenous labour",
+      "Trade with Africa",
+      "Elect governors"
+    ],
+    "answer": "Use indigenous labour",
+    "explanation": "Indigenous people were forced to work in mines and on farms.",
+    "topic": "ch-l1-3"
+  },
+  {
+    "id": "kc6",
+    "question": "The labour shortage after depopulation led to:",
+    "options": [
+      "The importation of enslaved Africans",
+      "The end of mining",
+      "Free wage labour",
+      "Migration from Europe"
+    ],
+    "answer": "The importation of enslaved Africans",
+    "explanation": "African slavery replaced indigenous forced labour.",
+    "topic": "ch-l1-3"
+  },
+  {
+    "id": "kc7",
+    "question": "The shift from tobacco and cotton to sugar is called the:",
+    "options": [
+      "Industrial revolution",
+      "Sugar revolution",
+      "Commercial revolution",
+      "Navigation system"
+    ],
+    "answer": "Sugar revolution",
+    "explanation": "It transformed landholding, labour and the region's place in the world economy.",
+    "topic": "ch-l2-1"
+  },
+  {
+    "id": "kc8",
+    "question": "The Middle Passage was:",
+    "options": [
+      "The return leg to Europe",
+      "The crossing of enslaved Africans to the Americas",
+      "The route to West Africa",
+      "The journey from estate to port"
+    ],
+    "answer": "The crossing of enslaved Africans to the Americas",
+    "explanation": "It was the deadliest leg of the triangular trade.",
+    "topic": "ch-l2-2"
+  },
+  {
+    "id": "kc9",
+    "question": "Which best describes the triangular trade?",
+    "options": [
+      "Three islands trading together",
+      "Manufactures to Africa, enslaved people to the Americas, produce to Europe",
+      "Europe trading only with Asia",
+      "A trade in sugar alone"
+    ],
+    "answer": "Manufactures to Africa, enslaved people to the Americas, produce to Europe",
+    "explanation": "The three legs linked Europe, Africa and the Americas.",
+    "topic": "ch-l2-2"
+  },
+  {
+    "id": "kc10",
+    "question": "An estate owner living in Britain was called:",
+    "options": [
+      "An attorney",
+      "An absentee",
+      "An overseer",
+      "A driver"
+    ],
+    "answer": "An absentee",
+    "explanation": "Absentee owners managed estates through attorneys.",
+    "topic": "ch-l2-3"
+  },
+  {
+    "id": "kc11",
+    "question": "The Navigation Acts were designed to:",
+    "options": [
+      "Free colonial trade",
+      "Direct colonial trade to the mother country",
+      "End slavery",
+      "Encourage foreign ships"
+    ],
+    "answer": "Direct colonial trade to the mother country",
+    "explanation": "Mercantilist laws tied the colonies to the imperial economy.",
+    "topic": "ch-l2-3"
+  },
+  {
+    "id": "kc12",
+    "question": "Maroon communities were formed by:",
+    "options": [
+      "Escaped enslaved people",
+      "Indentured Indians",
+      "Poor whites",
+      "Free people of colour"
+    ],
+    "answer": "Escaped enslaved people",
+    "explanation": "Maroons established independent settlements defended by difficult terrain.",
+    "topic": "ch-l3-1"
+  },
+  {
+    "id": "kc13",
+    "question": "The Jamaican maroon treaties were signed in:",
+    "options": [
+      "1655",
+      "1739",
+      "1760",
+      "1831"
+    ],
+    "answer": "1739",
+    "explanation": "The 1739 treaties recognised maroon freedom in exchange for returning runaways.",
+    "topic": "ch-l3-1"
+  },
+  {
+    "id": "kc14",
+    "question": "Britain abolished its slave trade in:",
+    "options": [
+      "1787",
+      "1807",
+      "1833",
+      "1838"
+    ],
+    "answer": "1807",
+    "explanation": "The 1807 Act ended the trade for British subjects.",
+    "topic": "ch-l3-2"
+  },
+  {
+    "id": "kc15",
+    "question": "The 1831-32 Jamaican revolt is known as the:",
+    "options": [
+      "Morant Bay Rebellion",
+      "Baptist War",
+      "Maroon War",
+      "Sugar Strike"
+    ],
+    "answer": "Baptist War",
+    "explanation": "It was led by figures including Samuel Sharpe and hastened emancipation.",
+    "topic": "ch-l3-2"
+  },
+  {
+    "id": "kc16",
+    "question": "Under the 1833 Act, compensation was paid to:",
+    "options": [
+      "Enslaved people",
+      "Slave owners",
+      "Missionaries",
+      "The navy"
+    ],
+    "answer": "Slave owners",
+    "explanation": "Twenty million pounds went to owners; the enslaved received nothing.",
+    "topic": "ch-l3-2"
+  },
+  {
+    "id": "kc17",
+    "question": "Apprenticeship finally ended in:",
+    "options": [
+      "1834",
+      "1836",
+      "1838",
+      "1845"
+    ],
+    "answer": "1838",
+    "explanation": "It was terminated two years early.",
+    "topic": "ch-l3-3"
+  },
+  {
+    "id": "kc18",
+    "question": "Most indentured immigrants to the Caribbean came from:",
+    "options": [
+      "India",
+      "China",
+      "Ireland",
+      "Brazil"
+    ],
+    "answer": "India",
+    "explanation": "India supplied the largest numbers after 1838.",
+    "topic": "ch-l4-1"
+  },
+  {
+    "id": "kc19",
+    "question": "Free villages were established mainly with help from:",
+    "options": [
+      "Planters",
+      "Nonconformist missionaries",
+      "The militia",
+      "The Crown"
+    ],
+    "answer": "Nonconformist missionaries",
+    "explanation": "Baptist and Methodist missionaries helped freed people buy and divide land.",
+    "topic": "ch-l4-2"
+  },
+  {
+    "id": "kc20",
+    "question": "The Royal Commission that reported on conditions in the late 1930s was chaired by:",
+    "options": [
+      "Lord Moyne",
+      "Lord Durham",
+      "Lord Bentinck",
+      "Lord Stanley"
+    ],
+    "answer": "Lord Moyne",
+    "explanation": "The Moyne Commission documented poverty and recommended reform.",
+    "topic": "ch-l4-3"
+  },
+  {
+    "id": "kc21",
+    "question": "The West Indies Federation collapsed in:",
+    "options": [
+      "1958",
+      "1961",
+      "1962",
+      "1966"
+    ],
+    "answer": "1962",
+    "explanation": "It was dissolved in 1962 after Jamaica's withdrawal.",
+    "topic": "ch-l5-2"
+  },
+  {
+    "id": "kc22",
+    "question": "Jamaica and Trinidad and Tobago became independent in:",
+    "options": [
+      "1958",
+      "1962",
+      "1966",
+      "1973"
+    ],
+    "answer": "1962",
+    "explanation": "Both gained independence in 1962.",
+    "topic": "ch-l5-3"
+  },
+  {
+    "id": "kc23",
+    "question": "CARICOM was established in:",
+    "options": [
+      "1958",
+      "1968",
+      "1973",
+      "2006"
+    ],
+    "answer": "1973",
+    "explanation": "The Treaty of Chaguaramas created CARICOM in 1973.",
+    "topic": "ch-l6-1"
+  },
+  {
+    "id": "kc24",
+    "question": "Remittances are best described as:",
+    "options": [
+      "Government grants",
+      "Money sent home by migrants",
+      "Export taxes",
+      "Bank loans"
+    ],
+    "answer": "Money sent home by migrants",
+    "explanation": "They are a major source of foreign exchange for many islands.",
+    "topic": "ch-l6-2"
+  },
+  {
+    "id": "kc25",
+    "question": "Creolisation refers to:",
+    "options": [
+      "The mixing of cultural traditions",
+      "The growth of tourism",
+      "The end of slavery",
+      "The loss of language"
+    ],
+    "answer": "The mixing of cultural traditions",
+    "explanation": "It describes the combining of African, European, Asian and indigenous forms.",
+    "topic": "ch-l6-3"
+  }
+]

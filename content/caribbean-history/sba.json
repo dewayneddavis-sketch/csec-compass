@@ -1,0 +1,66 @@
+{
+  "subjectId": "caribbean-history",
+  "introduction": "The Caribbean History School-Based Assessment is a research project on a historical topic of your choice, based on primary and secondary sources. It rewards a clear question, evidence that is used rather than copied, and a judgement of your own. Check the current CSEC syllabus and your teacher's guidance for the exact requirements and marks for your examination session.",
+  "tasks": [
+    {
+      "section": "Statement of the Problem",
+      "title": "Research Question",
+      "explanation": "State the question your project will answer and why it is historically significant.",
+      "marks": "2"
+    },
+    {
+      "section": "Aims and Objectives",
+      "title": "Aims",
+      "explanation": "List two or three specific objectives that the research will achieve.",
+      "marks": "2"
+    },
+    {
+      "section": "Method of Investigation",
+      "title": "Methods",
+      "explanation": "Explain how you will gather evidence: which archives, libraries, newspapers, oral testimonies or interviews.",
+      "marks": "3"
+    },
+    {
+      "section": "Collection of Data",
+      "title": "Sources",
+      "explanation": "Present your evidence - extracts, photographs, tables, summaries of interviews - with the source of each item recorded.",
+      "marks": "5"
+    },
+    {
+      "section": "Analysis and Interpretation",
+      "title": "Analysis",
+      "explanation": "Interpret the evidence: what does it show, whose viewpoint does it represent, and how reliable is it?",
+      "marks": "10"
+    },
+    {
+      "section": "Findings and Recommendations",
+      "title": "Findings",
+      "explanation": "State your conclusions, answer your research question, and note what further research would help.",
+      "marks": "3"
+    }
+  ],
+  "sampleTitle": "How did the 1938 labour disturbances in Jamaica change the relationship between workers and the colonial government?",
+  "sample": [
+    {
+      "section": "Statement of the Problem",
+      "body": "This project examines why the 1938 unrest on the Kingston waterfront produced permanent trade unions and political parties, while earlier strikes had not.",
+      "tips": "Keep the question narrow enough to answer with the sources you can reach."
+    },
+    {
+      "section": "Analysis and Interpretation",
+      "body": "The Moyne Report (1939) states that wages on the waterfront were insufficient for a family to live on. Read against the newspaper reports of the strike, this shows that the commission's evidence confirmed what workers had already said in public - the argument was not only about wages but about who had the right to be heard.",
+      "tips": "Quote the source briefly, then explain what it shows and how far it can be trusted."
+    }
+  ],
+  "marking": "Marks reward a clear research question, evidence drawn from identified sources, analysis rather than narration, awareness of bias and viewpoint, and a supported conclusion. Copied extracts without comment earn little.",
+  "checklist": [
+    "Research question stated and answerable",
+    "Objectives listed",
+    "Sources identified and recorded",
+    "Evidence selected and presented clearly",
+    "Analysis shows use of evidence, not just narration",
+    "Viewpoint and reliability of sources discussed",
+    "Conclusion answers the research question",
+    "Bibliography included"
+  ]
+}
