@@ -1,0 +1,327 @@
+[
+  {
+    "id": "kc1",
+    "question": "Which fibre is a protein fibre?",
+    "options": [
+      "Cotton",
+      "Linen",
+      "Wool",
+      "Rayon"
+    ],
+    "answer": "Wool",
+    "explanation": "Wool and silk are animal protein fibres.",
+    "topic": "ctf-l1-1"
+  },
+  {
+    "id": "kc2",
+    "question": "Which fibre is synthetic?",
+    "options": [
+      "Viscose",
+      "Nylon",
+      "Jute",
+      "Silk"
+    ],
+    "answer": "Nylon",
+    "explanation": "Nylon is made from petrochemicals.",
+    "topic": "ctf-l1-2"
+  },
+  {
+    "id": "kc3",
+    "question": "A care symbol crossed through means:",
+    "options": [
+      "Use extra care",
+      "Do not do that process",
+      "Wash twice",
+      "Dry clean only"
+    ],
+    "answer": "Do not do that process",
+    "explanation": "A cross cancels the process.",
+    "topic": "ctf-l1-3"
+  },
+  {
+    "id": "kc4",
+    "question": "The part that moves the fabric under the needle is the:",
+    "options": [
+      "Bobbin case",
+      "Feed dogs",
+      "Take-up lever",
+      "Tension disc"
+    ],
+    "answer": "Feed dogs",
+    "explanation": "They grip and advance the fabric.",
+    "topic": "ctf-l2-1"
+  },
+  {
+    "id": "kc5",
+    "question": "Which seam is strongest for jeans and workwear?",
+    "options": [
+      "French seam",
+      "Flat fell seam",
+      "Plain seam",
+      "Bound seam"
+    ],
+    "answer": "Flat fell seam",
+    "explanation": "It encases both raw edges for strength.",
+    "topic": "ctf-l2-2"
+  },
+  {
+    "id": "kc6",
+    "question": "Pattern pieces are placed on the fabric with the grain line:",
+    "options": [
+      "Diagonal to the selvedge",
+      "Parallel to the selvedge",
+      "Across the width",
+      "On the bias"
+    ],
+    "answer": "Parallel to the selvedge",
+    "explanation": "Grain affects the hang and stretch of the garment.",
+    "topic": "ctf-l2-3"
+  },
+  {
+    "id": "kc7",
+    "question": "Harmony and unity in design mean:",
+    "options": [
+      "Parts clash deliberately",
+      "All parts work together as a whole",
+      "Only one colour is used",
+      "Nothing is repeated"
+    ],
+    "answer": "All parts work together as a whole",
+    "explanation": "Unity is achieved through deliberate use of the other principles.",
+    "topic": "ctf-l3-1"
+  },
+  {
+    "id": "kc8",
+    "question": "Under-stitching is used to:",
+    "options": [
+      "Strengthen a hem",
+      "Stop facings and waistbands rolling to the outside",
+      "Add stretch",
+      "Neaten a dart"
+    ],
+    "answer": "Stop facings and waistbands rolling to the outside",
+    "explanation": "It stitches the allowance to the facing, holding the edge flat.",
+    "topic": "ctf-l3-2"
+  },
+  {
+    "id": "kc9",
+    "question": "Which decoration uses wax as a resist?",
+    "options": [
+      "Smocking",
+      "Batik",
+      "Appliqué",
+      "Quilting"
+    ],
+    "answer": "Batik",
+    "explanation": "Wax is applied, dyed over and removed.",
+    "topic": "ctf-l3-3"
+  },
+  {
+    "id": "kc10",
+    "question": "Which is the best evidence when returning a faulty garment?",
+    "options": [
+      "A photograph only",
+      "The receipt and the care label",
+      "A friend's opinion",
+      "The original bag"
+    ],
+    "answer": "The receipt and the care label",
+    "explanation": "Proof of purchase is needed for a claim.",
+    "topic": "ctf-l4-1"
+  },
+  {
+    "id": "kc11",
+    "question": "Curtain hem is made deep and weighted so that the curtain:",
+    "options": [
+      "Hangs straight",
+      "Fades slowly",
+      "Needs no lining",
+      "Is easy to cut"
+    ],
+    "answer": "Hangs straight",
+    "explanation": "Weight and depth make the hem hang evenly.",
+    "topic": "ctf-l4-2"
+  },
+  {
+    "id": "kc12",
+    "question": "Break-even is reached when:",
+    "options": [
+      "Costs exceed sales",
+      "Sales income equals total costs",
+      "Profit is doubled",
+      "The first item is sold"
+    ],
+    "answer": "Sales income equals total costs",
+    "explanation": "Beyond break-even the business makes a profit.",
+    "topic": "ctf-l4-3"
+  },
+  {
+    "id": "kc13",
+    "question": "The safest way to pass scissors to another person is:",
+    "options": [
+      "Point first",
+      "Held by the blades with the handles offered",
+      "Thrown across",
+      "Open and sliding"
+    ],
+    "answer": "Held by the blades with the handles offered",
+    "explanation": "The receiver grips the handles, not the blades.",
+    "topic": "ctf-l5-1"
+  },
+  {
+    "id": "kc14",
+    "question": "Reduce, reuse, recycle placed in that order means:",
+    "options": [
+      "Recycling is the first choice",
+      "Avoiding unnecessary consumption matters most",
+      "Reuse is unimportant",
+      "Waste is unavoidable"
+    ],
+    "answer": "Avoiding unnecessary consumption matters most",
+    "explanation": "Prevention avoids the use of resources altogether.",
+    "topic": "ctf-l5-2"
+  },
+  {
+    "id": "kc15",
+    "question": "Traditional Caribbean head ties were made from:",
+    "options": [
+      "Nylon parachute fabric",
+      "Madras and bandana cloth",
+      "Polyester satin",
+      "Silk velvet"
+    ],
+    "answer": "Madras and bandana cloth",
+    "explanation": "These cloths were traded into the region and became traditional.",
+    "topic": "ctf-l5-3"
+  },
+  {
+    "id": "kc16",
+    "question": "The safest first step with an unidentified stain is to:",
+    "options": [
+      "Apply a hot iron",
+      "Blot with cold water and test the treatment on a hidden seam allowance",
+      "Scrub hard with bleach",
+      "Soak overnight in hot water"
+    ],
+    "answer": "Blot with cold water and test the treatment on a hidden seam allowance",
+    "explanation": "Testing prevents permanent damage and heat can set the stain.",
+    "topic": "ctf-l1-3"
+  },
+  {
+    "id": "kc17",
+    "question": "A French seam is chosen for fine fabric because it:",
+    "options": [
+      "Encloses the raw edges inside the seam",
+      "Is the quickest seam",
+      "Adds stretch",
+      "Needs no pressing"
+    ],
+    "answer": "Encloses the raw edges inside the seam",
+    "explanation": "No raw edge is visible, inside or out.",
+    "topic": "ctf-l2-2"
+  },
+  {
+    "id": "kc18",
+    "question": "A pattern piece marked 'place on fold' means the piece is:",
+    "options": [
+      "Cut out whole",
+      "Placed with the fold line on the fabric fold so one piece forms both sides",
+      "Cut in two pieces",
+      "Ignored"
+    ],
+    "answer": "Placed with the fold line on the fabric fold so one piece forms both sides",
+    "explanation": "This gives a symmetrical, seamless centre.",
+    "topic": "ctf-l2-3"
+  },
+  {
+    "id": "kc19",
+    "question": "Grading a seam allowance means:",
+    "options": [
+      "Trimming the layers to different widths so the seam lies flat",
+      "Adding extra width",
+      "Pressing it open",
+      "Stitching it twice"
+    ],
+    "answer": "Trimming the layers to different widths so the seam lies flat",
+    "explanation": "Grading removes bulk at curves and corners.",
+    "topic": "ctf-l3-2"
+  },
+  {
+    "id": "kc20",
+    "question": "Decoration should be avoided where it:",
+    "options": [
+      "Adds colour",
+      "Interferes with fit, fastenings or pressing",
+      "Uses local materials",
+      "Suits the fabric"
+    ],
+    "answer": "Interferes with fit, fastenings or pressing",
+    "explanation": "Decoration must never spoil function.",
+    "topic": "ctf-l3-3"
+  },
+  {
+    "id": "kc21",
+    "question": "A cushion cover with a zip opening is chosen because it:",
+    "options": [
+      "Cannot be washed",
+      "Gives a neat, secure closure that allows the pad to be removed",
+      "Is the cheapest opening",
+      "Needs no seam allowance"
+    ],
+    "answer": "Gives a neat, secure closure that allows the pad to be removed",
+    "explanation": "The pad can be taken out for washing.",
+    "topic": "ctf-l4-2"
+  },
+  {
+    "id": "kc22",
+    "question": "A cost sheet is important because it:",
+    "options": [
+      "Replaces the pattern",
+      "Shows whether the selling price covers all costs and leaves a profit",
+      "Is required by law",
+      "Makes the garment fit"
+    ],
+    "answer": "Shows whether the selling price covers all costs and leaves a profit",
+    "explanation": "Without it a maker can sell at a loss without realising.",
+    "topic": "ctf-l4-3"
+  },
+  {
+    "id": "kc23",
+    "question": "An accident in the workroom should be:",
+    "options": [
+      "Ignored if minor",
+      "Treated immediately and recorded so the cause can be corrected",
+      "Told to no one",
+      "Dealt with at the end of term"
+    ],
+    "answer": "Treated immediately and recorded so the cause can be corrected",
+    "explanation": "Recording prevents the same accident recurring.",
+    "topic": "ctf-l5-1"
+  },
+  {
+    "id": "kc24",
+    "question": "Upcycling means:",
+    "options": [
+      "Buying brand new fabric",
+      "Turning a worn or unwanted item into something of greater value",
+      "Sending cloth to landfill",
+      "Burning waste"
+    ],
+    "answer": "Turning a worn or unwanted item into something of greater value",
+    "explanation": "It keeps material in use and adds design value.",
+    "topic": "ctf-l5-2"
+  },
+  {
+    "id": "kc25",
+    "question": "Local textile traditions matter to designers today because they:",
+    "options": [
+      "Limit creativity",
+      "Provide distinctive materials, techniques and identity that imports cannot copy",
+      "Are only for museums",
+      "Are cheaper than any fabric"
+    ],
+    "answer": "Provide distinctive materials, techniques and identity that imports cannot copy",
+    "explanation": "Cultural distinctiveness is a market strength.",
+    "topic": "ctf-l5-3"
+  }
+]

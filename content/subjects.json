@@ -100,5 +100,11 @@
     "name": "Physical Education",
     "description": "Sport in Caribbean society, anatomy and physiology, fitness and training, skill learning and sport psychology, officiating and administration, nutrition and health.",
     "icon": "Sports"
+  },
+  {
+    "id": "clothing-textile-and-fashion",
+    "name": "Clothing, Textile and Fashion",
+    "description": "Fibres and fabrics, sewing tools and techniques, pattern work and garment construction, design, consumer skills and enterprise, safety and Caribbean textile craft.",
+    "icon": "Checkroom"
   }
 ]

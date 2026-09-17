@@ -1,0 +1,72 @@
+{
+  "subjectId": "clothing-textile-and-fashion",
+  "introduction": "The Clothing and Textiles School-Based Assessment requires a practical project - normally one or more constructed items for a named client or for the home - supported by a written folder. The folder records the whole process: research and design ideas, the chosen design with reasons, materials and costing, the production plan or order of work, an illustrated record of construction, and an evaluation of the finished item. Marks are given for the quality of the planning, the skill shown in construction and finishing, the record keeping and the evaluation. Check the current CSEC syllabus and your teacher's guidance for the number of items and the exact format and mark allocation required.",
+  "tasks": [
+    {
+      "section": "Research and Investigation",
+      "title": "Client and design research",
+      "explanation": "Describe the client or user, their needs, the occasion and the purpose of the item, and research the design ideas, fabrics and current fashions that could meet them.",
+      "marks": "8"
+    },
+    {
+      "section": "Design and Choice",
+      "title": "Design presentation",
+      "explanation": "Present at least three labelled design ideas (sketches or flats) with fabric swatches, colour schemes and trimmings, and justify the one chosen with reference to design elements and principles.",
+      "marks": "10"
+    },
+    {
+      "section": "Planning and Costing",
+      "title": "Production plan and cost sheet",
+      "explanation": "Set out the pattern, measurements, materials and trims; cost the item on a cost sheet; list the order of work with a time plan; and describe the safety measures to be taken.",
+      "marks": "10"
+    },
+    {
+      "section": "Construction Record",
+      "title": "Record of work",
+      "explanation": "Record each stage of construction with photographs, samples or sketches - pattern adjustment, cutting, marking, seams, neatening, features, fastenings, hem and pressing - showing techniques and problems solved.",
+      "marks": "12"
+    },
+    {
+      "section": "Practical Performance",
+      "title": "The made item",
+      "explanation": "Produce the item to a high standard of sewing, fit, safety, cleanliness, pressing and final finish, inside and out.",
+      "marks": "14"
+    },
+    {
+      "section": "Evaluation",
+      "title": "Evaluation and recommendations",
+      "explanation": "Evaluate the finished item against the client's needs and the design intention, comment on the standard of your own work, identity faults and their causes, and recommend improvements.",
+      "marks": "6"
+    }
+  ],
+  "sampleTitle": "A reversible summer dress for a twelve-year-old using madras cotton",
+  "sample": [
+    {
+      "section": "Design and Choice",
+      "body": "The client is a growing twelve-year-old who needs a cool dress for church and school functions that will not date quickly. Three ideas were sketched: a pinafore with a buttoned bodice, a gathered sundress with a band, and a simple A-line shift with a faced neckline and pockets. The shift was chosen because its vertical seams and A-line give a lengthening effect and allowance for growth, because the princess seams avoid a waistline that would be outgrown in a term, and because madras cotton - a plain weave, absorbent, washable, bright and traditional - suits the hot climate and shows the pattern to advantage. The madras check provides rhythm through repetition; the plain back panel was chosen so that the check does not clash at a centre back seam.",
+      "tips": "Name the design element and principle in each reason, and always link a property of the fabric to a need of the client."
+    },
+    {
+      "section": "Evaluation",
+      "body": "The dress fits and is comfortable, and the client wears it often, so the design aim was met. The seams pressed open cleanly and the faced neckline sits flat, but two faults remain: the left side seam is slightly puckered because the stitch length was too long for the fine cotton, and the hem is one centimetre lower at the back because the hem was levelled before the client tried it on. Marks were lost on the inside finish, where the raw edges of the darts were not neatened. Improvements: shorten the stitch length for lightweight cotton, level hems with the garment on the client, and neaten every raw edge before the final press. If repeated, the pattern would be cut with slightly larger seam allowances to allow letting out as the child grows.",
+      "tips": "Identify real faults, name their cause and give a specific, technical remedy - vague praise loses evaluation marks."
+    }
+  ],
+  "marking": "Marks reward thorough research, well-presented and justified designs, accurate planning and costing, a clear illustrated record of work, a practical item that shows good technique and a professional finish, and a candid evaluation that identifies faults and recommends improvements.",
+  "checklist": [
+    "Client, purpose and occasion described",
+    "At least three design ideas presented and labelled",
+    "Fabric swatches and colour scheme included",
+    "Chosen design justified with design principles",
+    "Measurements and pattern details recorded",
+    "Cost sheet shows materials, labour and overheads",
+    "Order of work with a time plan",
+    "Safety measures described",
+    "Construction stages recorded with samples or photographs",
+    "Techniques used are named correctly",
+    "Item is well sewn, neatened, pressed and finished",
+    "Faults identified with causes and remedies",
+    "Evaluation refers to the client's needs",
+    "Recommendations for improvement given"
+  ]
+}

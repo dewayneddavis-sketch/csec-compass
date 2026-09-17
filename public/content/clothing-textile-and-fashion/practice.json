@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "p1",
+    "question": "Which of these is a plant (cellulosic) fibre?",
+    "options": [
+      "Wool",
+      "Silk",
+      "Linen",
+      "Nylon"
+    ],
+    "answer": "Linen",
+    "explanation": "Linen comes from the stem of the flax plant.",
+    "topic": "ctf-l1-1"
+  },
+  {
+    "id": "p2",
+    "question": "Silk is produced by:",
+    "options": [
+      "Sheep",
+      "The silkworm",
+      "The cotton plant",
+      "Chemical synthesis"
+    ],
+    "answer": "The silkworm",
+    "explanation": "Silk is a continuous filament reeled from the cocoon.",
+    "topic": "ctf-l1-1"
+  },
+  {
+    "id": "p3",
+    "question": "Which property makes cotton suitable for school uniforms in the Caribbean?",
+    "options": [
+      "It is warm and bulky",
+      "It is absorbent and cool to wear",
+      "It never creases",
+      "It is waterproof"
+    ],
+    "answer": "It is absorbent and cool to wear",
+    "explanation": "Absorbency allows sweat to be taken up and evaporated.",
+    "topic": "ctf-l1-1"
+  },
+  {
+    "id": "p4",
+    "question": "Wool is damaged by:",
+    "options": [
+      "Cool water",
+      "Heat, agitation and alkalis",
+      "Mild detergent",
+      "Air drying"
+    ],
+    "answer": "Heat, agitation and alkalis",
+    "explanation": "These cause felting and shrinkage.",
+    "topic": "ctf-l1-1"
+  },
+  {
+    "id": "p5",
+    "question": "Coir is obtained from:",
+    "options": [
+      "Coconut husk",
+      "Sugar cane",
+      "Banana leaf",
+      "Seaweed"
+    ],
+    "answer": "Coconut husk",
+    "explanation": "Coir is used for mats, brushes and rope.",
+    "topic": "ctf-l1-1"
+  },
+  {
+    "id": "p6",
+    "question": "Which fibre is strongest when wet?",
+    "options": [
+      "Wool",
+      "Rayon",
+      "Linen",
+      "Acrylic"
+    ],
+    "answer": "Linen",
+    "explanation": "Linen gains strength when wet, unlike most fibres.",
+    "topic": "ctf-l1-1"
+  },
+  {
+    "id": "p7",
+    "question": "Which is a regenerated fibre?",
+    "options": [
+      "Polyester",
+      "Viscose rayon",
+      "Nylon",
+      "Acrylic"
+    ],
+    "answer": "Viscose rayon",
+    "explanation": "Rayon is made by re-forming cellulose from wood pulp.",
+    "topic": "ctf-l1-2"
+  },
+  {
+    "id": "p8",
+    "question": "A disadvantage of polyester for hot climates is that it:",
+    "options": [
+      "Creases badly",
+      "Is not absorbent and feels clammy",
+      "Is attacked by moths",
+      "Shrinks in cold water"
+    ],
+    "answer": "Is not absorbent and feels clammy",
+    "explanation": "It resists water and does not absorb perspiration.",
+    "topic": "ctf-l1-2"
+  },
+  {
+    "id": "p9",
+    "question": "Polycotton is a blend of:",
+    "options": [
+      "Wool and silk",
+      "Polyester and cotton",
+      "Nylon and linen",
+      "Rayon and acetate"
+    ],
+    "answer": "Polyester and cotton",
+    "explanation": "It gains crease resistance and strength but loses some absorbency.",
+    "topic": "ctf-l1-2"
+  },
+  {
+    "id": "p10",
+    "question": "Denim is usually made with which weave?",
+    "options": [
+      "Plain",
+      "Twill",
+      "Satin",
+      "Pile"
+    ],
+    "answer": "Plain",
+    "explanation": "Denim uses a twill weave, which is hard-wearing.",
+    "topic": "ctf-l1-2"
+  },
+  {
+    "id": "p11",
+    "question": "Knitted fabric is described as:",
+    "options": [
+      "Stable with no stretch",
+      "Built from interlocking loops so it stretches",
+      "Bonded from fibres",
+      "Woven from warp and weft"
+    ],
+    "answer": "Built from interlocking loops so it stretches",
+    "explanation": "Loops allow the fabric to give and drape.",
+    "topic": "ctf-l1-2"
+  },
+  {
+    "id": "p12",
+    "question": "Sanforising is a finish that:",
+    "options": [
+      "Prevents shrinkage",
+      "Adds flame resistance",
+      "Gives lustre to silk",
+      "Makes fabric waterproof"
+    ],
+    "answer": "Prevents shrinkage",
+    "explanation": "The fabric is mechanically compressed so it will not shrink later.",
+    "topic": "ctf-l1-2"
+  },
+  {
+    "id": "p13",
+    "question": "A care label showing a washtub with one dot means:",
+    "options": [
+      "Wash in cold water",
+      "Wash in hot water",
+      "Do not wash",
+      "Wash by hand only"
+    ],
+    "answer": "Wash in cold water",
+    "explanation": "Dots on the washtub indicate temperature, from cold to hot.",
+    "topic": "ctf-l1-3"
+  },
+  {
+    "id": "p14",
+    "question": "The correct way to treat a blood stain is with:",
+    "options": [
+      "Hot water",
+      "Cold water",
+      "Boiling water and bleach",
+      "A hot iron"
+    ],
+    "answer": "Cold water",
+    "explanation": "Heat sets protein stains permanently.",
+    "topic": "ctf-l1-3"
+  },
+  {
+    "id": "p15",
+    "question": "Whites and light colours are washed separately from darks to prevent:",
+    "options": [
+      "Shrinkage",
+      "Fading",
+      "Colour transfer",
+      "Felting"
+    ],
+    "answer": "Colour transfer",
+    "explanation": "Dye from dark garments can bleed onto light ones.",
+    "topic": "ctf-l1-3"
+  },
+  {
+    "id": "p16",
+    "question": "Wringing wool garments is wrong because it causes:",
+    "options": [
+      "Fading",
+      "Stretching and felting",
+      "Mildew",
+      "Yellowing"
+    ],
+    "answer": "Stretching and felting",
+    "explanation": "Agitation of wet wool locks the fibres together.",
+    "topic": "ctf-l1-3"
+  },
+  {
+    "id": "p17",
+    "question": "Fabric conditioner should be avoided on towels because it:",
+    "options": [
+      "Removes colour",
+      "Reduces absorbency",
+      "Causes mildew",
+      "Shrinks them"
+    ],
+    "answer": "Reduces absorbency",
+    "explanation": "Conditioner coats the fibres so they hold less water.",
+    "topic": "ctf-l1-3"
+  },
+  {
+    "id": "p18",
+    "question": "A grease stain should first be treated by:",
+    "options": [
+      "Soaking in hot water",
+      "Blotting with absorbent powder and a grease solvent",
+      "Rubbing with soap and a brush",
+      "Ironing over a cloth"
+    ],
+    "answer": "Blotting with absorbent powder and a grease solvent",
+    "explanation": "Grease needs solvent, and heat would set it.",
+    "topic": "ctf-l1-3"
+  },
+  {
+    "id": "p19",
+    "question": "Pinking shears are used to:",
+    "options": [
+      "Cut buttonholes",
+      "Neaten raw edges with a zigzag cut",
+      "Cut paper patterns",
+      "Trim threads"
+    ],
+    "answer": "Neaten raw edges with a zigzag cut",
+    "explanation": "The zigzag edge reduces fraying on firmly woven fabrics.",
+    "topic": "ctf-l2-1"
+  },
+  {
+    "id": "p20",
+    "question": "The feed dogs on a sewing machine:",
+    "options": [
+      "Hold the thread",
+      "Move the fabric along",
+      "Cut the fabric",
+      "Control the needle"
+    ],
+    "answer": "Move the fabric along",
+    "explanation": "They grip and advance the fabric under the needle.",
+    "topic": "ctf-l2-1"
+  },
+  {
+    "id": "p21",
+    "question": "Loops forming underneath the fabric usually mean:",
+    "options": [
+      "The bobbin is empty",
+      "The top tension is too loose or the threading is wrong",
+      "The needle is blunt",
+      "The stitch is too short"
+    ],
+    "answer": "The top tension is too loose or the threading is wrong",
+    "explanation": "The top thread is not being held back, so it loops below.",
+    "topic": "ctf-l2-1"
+  },
+  {
+    "id": "p22",
+    "question": "Skipped stitches are most often caused by:",
+    "options": [
+      "Too much thread on the bobbin",
+      "A blunt, bent or wrongly sized needle",
+      "A loose presser foot only",
+      "Old fabric"
+    ],
+    "answer": "A blunt, bent or wrongly sized needle",
+    "explanation": "The needle does not pick up the bobbin thread cleanly.",
+    "topic": "ctf-l2-1"
+  },
+  {
+    "id": "p23",
+    "question": "Before changing the needle or oiling the machine you should:",
+    "options": [
+      "Raise the presser foot only",
+      "Switch off and unplug the machine",
+      "Run the machine slowly",
+      "Remove the bobbin only"
+    ],
+    "answer": "Switch off and unplug the machine",
+    "explanation": "Isolating the power prevents injury and damage.",
+    "topic": "ctf-l2-1"
+  },
+  {
+    "id": "p24",
+    "question": "An overlocker differs from a sewing machine because it:",
+    "options": [
+      "Only sews straight stitch",
+      "Trims and neatens an edge in one pass",
+      "Cannot use thread",
+      "Is used only for buttonholes"
+    ],
+    "answer": "Trims and neatens an edge in one pass",
+    "explanation": "It cuts the raw edge and wraps it with thread.",
+    "topic": "ctf-l2-1"
+  },
+  {
+    "id": "p25",
+    "question": "Tacking (basting) is used to:",
+    "options": [
+      "Permanently join a seam",
+      "Hold layers temporarily until permanent stitching is done",
+      "Neaten a raw edge",
+      "Make a buttonhole"
+    ],
+    "answer": "Hold layers temporarily until permanent stitching is done",
+    "explanation": "Tacking is removed once the final stitching is complete.",
+    "topic": "ctf-l2-2"
+  },
+  {
+    "id": "p26",
+    "question": "Which seam encloses the raw edges inside a fold and is used on sheer fabric?",
+    "options": [
+      "Plain seam",
+      "French seam",
+      "Flat fell seam",
+      "Overlaid seam"
+    ],
+    "answer": "French seam",
+    "explanation": "The French seam hides the raw edges inside.",
+    "topic": "ctf-l2-2"
+  },
+  {
+    "id": "p27",
+    "question": "A flat fell seam is used on jeans because it is:",
+    "options": [
+      "Quick to press open",
+      "Strong and encases both raw edges",
+      "Invisible from the right side",
+      "Stretchy"
+    ],
+    "answer": "Strong and encases both raw edges",
+    "explanation": "It gives strength and a neat inside finish.",
+    "topic": "ctf-l2-2"
+  },
+  {
+    "id": "p28",
+    "question": "A dart is used to:",
+    "options": [
+      "Add fullness",
+      "Shape flat fabric to the curves of the body",
+      "Neaten a hem",
+      "Attach a button"
+    ],
+    "answer": "Shape flat fabric to the curves of the body",
+    "explanation": "Darts remove excess fabric to create shape.",
+    "topic": "ctf-l2-2"
+  },
+  {
+    "id": "p29",
+    "question": "Gathering is produced by:",
+    "options": [
+      "Cutting notches",
+      "Stitching two rows of long stitches and drawing up the threads",
+      "Pressing over a ham",
+      "Using a ballpoint needle"
+    ],
+    "answer": "Stitching two rows of long stitches and drawing up the threads",
+    "explanation": "The rows are pulled up evenly to the required measurement.",
+    "topic": "ctf-l2-2"
+  },
+  {
+    "id": "p30",
+    "question": "Which fastening is most suitable for an invisible opening on a skirt?",
+    "options": [
+      "Press studs",
+      "A concealed zip",
+      "Velcro",
+      "A hook and bar"
+    ],
+    "answer": "A concealed zip",
+    "explanation": "A concealed zip hides inside the seam allowance.",
+    "topic": "ctf-l2-2"
+  },
+  {
+    "id": "p31",
+    "question": "The grain line on a pattern piece must be:",
+    "options": [
+      "Cut across the selvedge",
+      "Placed parallel to the selvedge",
+      "Ignored for knits",
+      "Aligned with the hem only"
+    ],
+    "answer": "Placed parallel to the selvedge",
+    "explanation": "This keeps the garment hanging correctly.",
+    "topic": "ctf-l2-3"
+  },
+  {
+    "id": "p32",
+    "question": "A pattern notch is used to:",
+    "options": [
+      "Mark the hem",
+      "Match pieces and seam lines together",
+      "Show the cutting line",
+      "Indicate the fabric fold"
+    ],
+    "answer": "Match pieces and seam lines together",
+    "explanation": "Notches must be cut to match on the corresponding pieces.",
+    "topic": "ctf-l2-3"
+  },
+  {
+    "id": "p33",
+    "question": "Seam allowance is:",
+    "options": [
+      "The distance between the cutting line and the stitching line",
+      "The width of the fabric",
+      "The depth of a hem",
+      "The length of a dart"
+    ],
+    "answer": "The distance between the cutting line and the stitching line",
+    "explanation": "It is usually 1.5 cm on commercial patterns.",
+    "topic": "ctf-l2-3"
+  },
+  {
+    "id": "p34",
+    "question": "When checking a pattern envelope, the measurements given are:",
+    "options": [
+      "Finished garment measurements",
+      "Body measurements to select the size",
+      "Fabric measurement only",
+      "The model's measurements"
+    ],
+    "answer": "Body measurements to select the size",
+    "explanation": "Pattern size is chosen from the body chart, not the ready-to-wear size.",
+    "topic": "ctf-l2-3"
+  },
+  {
+    "id": "p35",
+    "question": "A dart that points away from the bust apex will:",
+    "options": [
+      "Fit perfectly",
+      "Draw the fabric and distort the shape",
+      "Be invisible",
+      "Add fullness"
+    ],
+    "answer": "Draw the fabric and distort the shape",
+    "explanation": "Darts must point towards the fullest part of the bust.",
+    "topic": "ctf-l2-3"
+  },
+  {
+    "id": "p36",
+    "question": "A toile is used to:",
+    "options": [
+      "Finish a hem",
+      "Test the fit of a pattern in cheap fabric",
+      "Neaten raw edges",
+      "Press a curved seam"
+    ],
+    "answer": "Test the fit of a pattern in cheap fabric",
+    "explanation": "Fitting faults are corrected on the toile before cutting the garment fabric.",
+    "topic": "ctf-l2-3"
+  },
+  {
+    "id": "p37",
+    "question": "Vertical lines in a garment generally:",
+    "options": [
+      "Widen the figure",
+      "Lengthen and slim the figure",
+      "Add warmth",
+      "Increase comfort"
+    ],
+    "answer": "Lengthen and slim the figure",
+    "explanation": "Line directs the eye; verticals create height.",
+    "topic": "ctf-l3-1"
+  },
+  {
+    "id": "p38",
+    "question": "A monochromatic colour scheme uses:",
+    "options": [
+      "Opposite colours",
+      "One hue in different values",
+      "Three primary colours",
+      "Random colours"
+    ],
+    "answer": "One hue in different values",
+    "explanation": "Tints and shades of one hue create harmony.",
+    "topic": "ctf-l3-1"
+  },
+  {
+    "id": "p39",
+    "question": "Complementary colours are:",
+    "options": [
+      "Next to each other on the wheel",
+      "Opposite each other on the colour wheel",
+      "Always warm",
+      "Only used for children"
+    ],
+    "answer": "Opposite each other on the colour wheel",
+    "explanation": "Opposites intensify each other when used together.",
+    "topic": "ctf-l3-1"
+  },
+  {
+    "id": "p40",
+    "question": "Which principle of design is created by repeating a trim three times?",
+    "options": [
+      "Balance",
+      "Rhythm",
+      "Emphasis",
+      "Proportion"
+    ],
+    "answer": "Rhythm",
+    "explanation": "Repetition leads the eye and creates rhythm.",
+    "topic": "ctf-l3-1"
+  },
+  {
+    "id": "p41",
+    "question": "Light values and warm colours tend to:",
+    "options": [
+      "Reduce the apparent size",
+      "Make an area appear larger and advance",
+      "Have no effect",
+      "Only suit winter wear"
+    ],
+    "answer": "Make an area appear larger and advance",
+    "explanation": "Warm, light colours come forward and enlarge.",
+    "topic": "ctf-l3-1"
+  },
+  {
+    "id": "p42",
+    "question": "Texture in design refers to:",
+    "options": [
+      "The colour only",
+      "The visual and tactile quality of the fabric",
+      "The silhouette",
+      "The cost"
+    ],
+    "answer": "The visual and tactile quality of the fabric",
+    "explanation": "Crisp cotton and soft jersey have different textures.",
+    "topic": "ctf-l3-1"
+  },
+  {
+    "id": "p43",
+    "question": "Which step should come first in the order of work?",
+    "options": [
+      "Stitch the hem",
+      "Read the pattern instructions and plan the tasks",
+      "Attach the zip",
+      "Press the finished garment"
+    ],
+    "answer": "Read the pattern instructions and plan the tasks",
+    "explanation": "Planning prevents wasted fabric and time.",
+    "topic": "ctf-l3-2"
+  },
+  {
+    "id": "p44",
+    "question": "Interfacing is used to:",
+    "options": [
+      "Add colour",
+      "Stiffen and stabilise collars, cuffs and waistbands",
+      "Neaten hems",
+      "Add stretch"
+    ],
+    "answer": "Stiffen and stabilise collars, cuffs and waistbands",
+    "explanation": "Fusible or sew-in interfacing is matched to the fabric weight.",
+    "topic": "ctf-l3-2"
+  },
+  {
+    "id": "p45",
+    "question": "Clipping a curved seam allowance is done to:",
+    "options": [
+      "Strengthen the seam",
+      "Allow the seam to lie flat around a curve",
+      "Prevent fraying",
+      "Shorten the seam"
+    ],
+    "answer": "Allow the seam to lie flat around a curve",
+    "explanation": "Notches are clipped into the allowance without cutting the stitching.",
+    "topic": "ctf-l3-2"
+  },
+  {
+    "id": "p46",
+    "question": "Stay stitching is worked:",
+    "options": [
+      "After the final press",
+      "On curved edges such as necklines before they stretch",
+      "Only on hems",
+      "On the wrong side of a zip"
+    ],
+    "answer": "On curved edges such as necklines before they stretch",
+    "explanation": "It stabilises the bias edge and prevents distortion.",
+    "topic": "ctf-l3-2"
+  },
+  {
+    "id": "p47",
+    "question": "When setting in a sleeve, the sleeve head is:",
+    "options": [
+      "Cut away",
+      "Eased in with gathering threads",
+      "Stretched",
+      "Interfaced"
+    ],
+    "answer": "Eased in with gathering threads",
+    "explanation": "Easing lets the larger sleeve head fit the armhole smoothly.",
+    "topic": "ctf-l3-2"
+  },
+  {
+    "id": "p48",
+    "question": "Pressing during construction should be done:",
+    "options": [
+      "Only at the very end",
+      "As each step is completed",
+      "Before cutting",
+      "Never on seams"
+    ],
+    "answer": "As each step is completed",
+    "explanation": "Pressing as you sew produces professional results.",
+    "topic": "ctf-l3-2"
+  },
+  {
+    "id": "p49",
+    "question": "A dart should be pressed:",
+    "options": [
+      "Flat with a hot iron on the point",
+      "Over a tailor's ham following its shape",
+      "With a rolling action on the seam line only",
+      "Without any heat"
+    ],
+    "answer": "Over a tailor's ham following its shape",
+    "explanation": "The ham supports the curve so the dart keeps its shape.",
+    "topic": "ctf-l3-2"
+  },
+  {
+    "id": "p50",
+    "question": "Appliqué is:",
+    "options": [
+      "A woven structure",
+      "Fabric applied to the surface of another fabric and stitched",
+      "A type of seam",
+      "A pressing technique"
+    ],
+    "answer": "Fabric applied to the surface of another fabric and stitched",
+    "explanation": "It may use satin stitch, blanket stitch or zigzag.",
+    "topic": "ctf-l3-3"
+  },
+  {
+    "id": "p51",
+    "question": "Batik is a decoration produced by:",
+    "options": [
+      "Tying the fabric before dyeing",
+      "Using wax as a resist before dyeing",
+      "Embroidery with beads",
+      "Smocking"
+    ],
+    "answer": "Using wax as a resist before dyeing",
+    "explanation": "The waxed areas resist the dye and are melted off afterwards.",
+    "topic": "ctf-l3-3"
+  },
+  {
+    "id": "p52",
+    "question": "Smocking is used to:",
+    "options": [
+      "Neaten a hem",
+      "Control fullness and allow fabric to stretch",
+      "Join two fabrics flat",
+      "Make a buttonhole"
+    ],
+    "answer": "Control fullness and allow fabric to stretch",
+    "explanation": "Rows of gathering are held by decorative stitches.",
+    "topic": "ctf-l3-3"
+  },
+  {
+    "id": "p53",
+    "question": "Which decoration is most suitable for washable children's play clothes?",
+    "options": [
+      "Delicate beading",
+      "Machine-appliqué with securely stitched edges",
+      "Fragile sequins",
+      "Loose ribbons"
+    ],
+    "answer": "Machine-appliqué with securely stitched edges",
+    "explanation": "Decoration must survive repeated washing and wear.",
+    "topic": "ctf-l3-3"
+  },
+  {
+    "id": "p54",
+    "question": "Heavy beading on fine fabric is a poor choice because it:",
+    "options": [
+      "Washes too easily",
+      "Distorts and damages the fabric",
+      "Is invisible",
+      "Costs nothing"
+    ],
+    "answer": "Distorts and damages the fabric",
+    "explanation": "The weight pulls the fine fabric out of shape.",
+    "topic": "ctf-l3-3"
+  },
+  {
+    "id": "p55",
+    "question": "Which is a consumer responsibility?",
+    "options": [
+      "Reading labels and keeping receipts",
+      "Demanding a refund without cause",
+      "Ignoring care instructions",
+      "Buying on impulse"
+    ],
+    "answer": "Reading labels and keeping receipts",
+    "explanation": "Rights come with responsibilities.",
+    "topic": "ctf-l4-1"
+  },
+  {
+    "id": "p56",
+    "question": "Cost per wear is calculated as:",
+    "options": [
+      "Purchase price plus tax",
+      "Total cost divided by the number of times it is worn",
+      "The shop price only",
+      "The price of the fabric"
+    ],
+    "answer": "Total cost divided by the number of times it is worn",
+    "explanation": "It shows the real value of a long-lasting garment.",
+    "topic": "ctf-l4-1"
+  },
+  {
+    "id": "p57",
+    "question": "Which is a selling tactic a consumer should resist?",
+    "options": [
+      "A written returns policy",
+      "Pressure to buy immediately in a limited-time offer",
+      "A printed care label",
+      "A receipt"
+    ],
+    "answer": "Pressure to buy immediately in a limited-time offer",
+    "explanation": "Manufactured urgency is a pressure tactic.",
+    "topic": "ctf-l4-1"
+  },
+  {
+    "id": "p58",
+    "question": "A garment label must state:",
+    "options": [
+      "The designer's hometown",
+      "Fibre content and care instructions",
+      "The model's name",
+      "The shop's address only"
+    ],
+    "answer": "Fibre content and care instructions",
+    "explanation": "This information lets the consumer care for the garment correctly.",
+    "topic": "ctf-l4-1"
+  },
+  {
+    "id": "p59",
+    "question": "Ready-made clothing is generally:",
+    "options": [
+      "Perfectly fitted",
+      "Convenient and often cheaper but less individual",
+      "Always better quality",
+      "Made to measure"
+    ],
+    "answer": "Convenient and often cheaper but less individual",
+    "explanation": "Handmade garments give fit and quality at the cost of time.",
+    "topic": "ctf-l4-1"
+  },
+  {
+    "id": "p60",
+    "question": "Curtain fabric is usually cut at what width relative to the window?",
+    "options": [
+      "Exactly the window width",
+      "One and a half to two and a half times the window width",
+      "Half the window width",
+      "Three times the window width"
+    ],
+    "answer": "One and a half to two and a half times the window width",
+    "explanation": "Extra width is needed for the pleats or gathers of the heading.",
+    "topic": "ctf-l4-2"
+  },
+  {
+    "id": "p61",
+    "question": "Interlining a curtain is done to:",
+    "options": [
+      "Add stretch",
+      "Improve insulation, privacy and protection from sun",
+      "Reduce cost",
+      "Make it washable"
+    ],
+    "answer": "Improve insulation, privacy and protection from sun",
+    "explanation": "It adds bulk and body to the hanging.",
+    "topic": "ctf-l4-2"
+  },
+  {
+    "id": "p62",
+    "question": "A mitred corner is used on table linen so that:",
+    "options": [
+      "The hem hangs evenly and neatly",
+      "It stretches",
+      "It is waterproof",
+      "It needs no pressing"
+    ],
+    "answer": "The hem hangs evenly and neatly",
+    "explanation": "The diagonal fold gives a flat, even corner.",
+    "topic": "ctf-l4-2"
+  },
+  {
+    "id": "p63",
+    "question": "Which fabric is best for kitchen oven gloves?",
+    "options": [
+      "Fine silk",
+      "A thick, heat-resistant, tightly woven fabric",
+      "Loose net",
+      "Single-layer shantung"
+    ],
+    "answer": "A thick, heat-resistant, tightly woven fabric",
+    "explanation": "Safety and heat resistance decide the choice.",
+    "topic": "ctf-l4-2"
+  },
+  {
+    "id": "p64",
+    "question": "In humid Caribbean conditions, household textiles should be:",
+    "options": [
+      "Stored damp to keep them soft",
+      "Dried thoroughly before storing to prevent mildew",
+      "Kept in sealed plastic while wet",
+      "Ironed while wet and folded"
+    ],
+    "answer": "Dried thoroughly before storing to prevent mildew",
+    "explanation": "Damp storage causes mildew and rot.",
+    "topic": "ctf-l4-2"
+  },
+  {
+    "id": "p65",
+    "question": "Unit cost of production includes:",
+    "options": [
+      "Only the fabric",
+      "Materials, labour, and overheads per item",
+      "Only labour",
+      "Only the selling price"
+    ],
+    "answer": "Materials, labour, and overheads per item",
+    "explanation": "All costs must be recovered before profit is made.",
+    "topic": "ctf-l4-3"
+  },
+  {
+    "id": "p66",
+    "question": "Mark-up is:",
+    "options": [
+      "The amount added to unit cost to give the selling price",
+      "A discount",
+      "The cost of fabric",
+      "The wage rate"
+    ],
+    "answer": "The amount added to unit cost to give the selling price",
+    "explanation": "It must cover overheads, risk and profit.",
+    "topic": "ctf-l4-3"
+  },
+  {
+    "id": "p67",
+    "question": "Which career involves making the pattern and first sample of a design?",
+    "options": [
+      "Visual merchandiser",
+      "Pattern maker or sample machinist",
+      "Buyer",
+      "Retail assistant"
+    ],
+    "answer": "Pattern maker or sample machinist",
+    "explanation": "They turn a design into a working pattern and sample.",
+    "topic": "ctf-l4-3"
+  },
+  {
+    "id": "p68",
+    "question": "Which is a sensible marketing step for a small textile business?",
+    "options": [
+      "Producing one unphotographed item and waiting for customers",
+      "Producing a small range, photographing it well and selling at markets and online",
+      "Hiding prices",
+      "Copying another designer's labels"
+    ],
+    "answer": "Producing a small range, photographing it well and selling at markets and online",
+    "explanation": "A small, well-presented range reaches more customers.",
+    "topic": "ctf-l4-3"
+  },
+  {
+    "id": "p69",
+    "question": "Which is the correct order in the fashion industry chain?",
+    "options": [
+      "Retail, design, fibre, manufacture",
+      "Fibre, design, manufacture, retail",
+      "Design, retail, fibre, manufacture",
+      "Manufacture, fibre, retail, design"
+    ],
+    "answer": "Fibre, design, manufacture, retail",
+    "explanation": "Production runs from raw fibre through design and making to selling.",
+    "topic": "ctf-l4-3"
+  },
+  {
+    "id": "p70",
+    "question": "Which is the correct action if a needle pierces a finger under the machine?",
+    "options": [
+      "Pull the needle out quickly",
+      "Switch off the machine, keep still and seek help",
+      "Continue sewing",
+      "Apply butter"
+    ],
+    "answer": "Switch off the machine, keep still and seek help",
+    "explanation": "Pulling a needle out can cause more damage.",
+    "topic": "ctf-l5-1"
+  },
+  {
+    "id": "p71",
+    "question": "A minor burn should be treated by:",
+    "options": [
+      "Applying butter or oil",
+      "Cooling under running water for at least twenty minutes",
+      "Pricking the blister",
+      "Covering with a tight bandage"
+    ],
+    "answer": "Cooling under running water for at least twenty minutes",
+    "explanation": "Cooling limits the depth of the burn.",
+    "topic": "ctf-l5-1"
+  },
+  {
+    "id": "p72",
+    "question": "Before touching a casualty in an electrical accident you must:",
+    "options": [
+      "Move them quickly",
+      "Switch off and isolate the power supply",
+      "Give them water",
+      "Apply a dressing"
+    ],
+    "answer": "Switch off and isolate the power supply",
+    "explanation": "Otherwise the rescuer also becomes a victim.",
+    "topic": "ctf-l5-1"
+  },
+  {
+    "id": "p73",
+    "question": "Good posture at the machine includes:",
+    "options": [
+      "Hunching forward to see",
+      "A chair at the correct height with the back straight and feet supported",
+      "Standing while sewing",
+      "Crossing the legs"
+    ],
+    "answer": "A chair at the correct height with the back straight and feet supported",
+    "explanation": "This reduces strain injuries.",
+    "topic": "ctf-l5-1"
+  },
+  {
+    "id": "p74",
+    "question": "Pins and needles are safest when:",
+    "options": [
+      "Held in the mouth",
+      "Kept in a pin cushion or box",
+      "Left on the floor",
+      "Pinned to the sleeve"
+    ],
+    "answer": "Kept in a pin cushion or box",
+    "explanation": "This prevents pricks, swallowing and losses.",
+    "topic": "ctf-l5-1"
+  },
+  {
+    "id": "p75",
+    "question": "Dyeing chemicals should be used:",
+    "options": [
+      "In a closed room with no ventilation",
+      "In a well-ventilated area with gloves and labelled containers",
+      "Near an open flame",
+      "Mixed together to save time"
+    ],
+    "answer": "In a well-ventilated area with gloves and labelled containers",
+    "explanation": "Ventilation, protection and correct storage prevent harm.",
+    "topic": "ctf-l5-1"
+  },
+  {
+    "id": "p76",
+    "question": "Fast fashion refers to:",
+    "options": [
+      "Clothing made to last for decades",
+      "Cheap, quickly produced clothing worn briefly and discarded",
+      "Second-hand clothing",
+      "Handmade clothing"
+    ],
+    "answer": "Cheap, quickly produced clothing worn briefly and discarded",
+    "explanation": "It drives high volume, high waste consumption.",
+    "topic": "ctf-l5-2"
+  },
+  {
+    "id": "p77",
+    "question": "Which is the best example of reusing textiles?",
+    "options": [
+      "Throwing worn garments away",
+      "Cutting worn fabric into quilts, bags and cleaning cloths",
+      "Burning old clothes",
+      "Buying more new clothes"
+    ],
+    "answer": "Cutting worn fabric into quilts, bags and cleaning cloths",
+    "explanation": "Reuse keeps usable material in service longer.",
+    "topic": "ctf-l5-2"
+  },
+  {
+    "id": "p78",
+    "question": "Washing synthetic clothing releases:",
+    "options": [
+      "Microplastics",
+      "Oxygen only",
+      "Cotton fibres",
+      "Nutrients"
+    ],
+    "answer": "Microplastics",
+    "explanation": "Shed microfibres pass into waterways.",
+    "topic": "ctf-l5-2"
+  },
+  {
+    "id": "p79",
+    "question": "Cutting fabric waste in production is reduced by:",
+    "options": [
+      "Buying more fabric than needed",
+      "Planning the pattern layout to use fabric efficiently",
+      "Cutting without a plan",
+      "Discarding scraps"
+    ],
+    "answer": "Planning the pattern layout to use fabric efficiently",
+    "explanation": "Efficient layout and a scrap box reduce waste.",
+    "topic": "ctf-l5-2"
+  },
+  {
+    "id": "p80",
+    "question": "Bamboo viscose is not automatically an eco-friendly choice because:",
+    "options": [
+      "Bamboo grows slowly",
+      "Its processing can use harsh chemicals",
+      "It cannot be dyed",
+      "It is always synthetic"
+    ],
+    "answer": "Its processing can use harsh chemicals",
+    "explanation": "The fibre source is only part of the environmental story.",
+    "topic": "ctf-l5-2"
+  },
+  {
+    "id": "p81",
+    "question": "Sustainability in textiles also includes:",
+    "options": [
+      "Only recycling",
+      "Fair wages, safe factories and no child labour",
+      "Only buying local",
+      "Only natural dyes"
+    ],
+    "answer": "Fair wages, safe factories and no child labour",
+    "explanation": "Sustainability has a social dimension.",
+    "topic": "ctf-l5-2"
+  },
+  {
+    "id": "p82",
+    "question": "Madras cloth became a Caribbean textile tradition through:",
+    "options": [
+      "Local sheep farming",
+      "Trade routes that brought Indian cloth to the region",
+      "Silk farming",
+      "Modern synthetics"
+    ],
+    "answer": "Trade routes that brought Indian cloth to the region",
+    "explanation": "Madras and bandana cloth were used for head ties and dress.",
+    "topic": "ctf-l5-3"
+  },
+  {
+    "id": "p83",
+    "question": "Carnival costume construction usually uses:",
+    "options": [
+      "Wire, cane or foam frames covered with fabric, sequins, beads and feathers",
+      "Plain woven shirting only",
+      "Leather only",
+      "Knitted wool only"
+    ],
+    "answer": "Wire, cane or foam frames covered with fabric, sequins, beads and feathers",
+    "explanation": "These lightweight materials allow large structures to be carried.",
+    "topic": "ctf-l5-3"
+  },
+  {
+    "id": "p84",
+    "question": "Straw, palm and coir craft in the Caribbean is used mainly for:",
+    "options": [
+      "Hats, mats, bags and brooms",
+      "Car engines",
+      "Bed sheets",
+      "School uniforms"
+    ],
+    "answer": "Hats, mats, bags and brooms",
+    "explanation": "Local plant fibres suit practical household craft items.",
+    "topic": "ctf-l5-3"
+  },
+  {
+    "id": "p85",
+    "question": "A major challenge for Caribbean textile producers is:",
+    "options": [
+      "Too many customers",
+      "Competition from cheap imports and the small domestic market",
+      "Lack of textile traditions",
+      "Absence of festivals"
+    ],
+    "answer": "Competition from cheap imports and the small domestic market",
+    "explanation": "Access to finance, materials and training also limits growth.",
+    "topic": "ctf-l5-3"
+  },
+  {
+    "id": "p86",
+    "question": "Choosing madras or hand-dyed cloth in contemporary design:",
+    "options": [
+      "Shows a deliberate use of local material and identity",
+      "Is required by law",
+      "Has no design value",
+      "Reduces quality"
+    ],
+    "answer": "Shows a deliberate use of local material and identity",
+    "explanation": "Local material signals cultural and economic choice.",
+    "topic": "ctf-l5-3"
+  },
+  {
+    "id": "p87",
+    "question": "A care label showing a triangle crossed through means:",
+    "options": [
+      "Bleach as needed",
+      "Do not bleach",
+      "Bleach in cold water",
+      "Use oxygen bleach only"
+    ],
+    "answer": "Do not bleach",
+    "explanation": "The cross cancels the bleaching instruction.",
+    "topic": "ctf-l1-3"
+  },
+  {
+    "id": "p88",
+    "question": "A binding is used to:",
+    "options": [
+      "Add stretch to a knit",
+      "Enclose a raw edge with a strip of fabric",
+      "Replace a zip",
+      "Make a dart"
+    ],
+    "answer": "Enclose a raw edge with a strip of fabric",
+    "explanation": "Binding gives a neat, strong edge finish.",
+    "topic": "ctf-l2-2"
+  },
+  {
+    "id": "p89",
+    "question": "Which measurement is needed to draft a bodice?",
+    "options": [
+      "Inseam",
+      "Bust, waist and nape-to-waist length",
+      "Calf",
+      "Shoe size"
+    ],
+    "answer": "Bust, waist and nape-to-waist length",
+    "explanation": "Bodice drafting needs bust, waist and vertical lengths.",
+    "topic": "ctf-l2-3"
+  },
+  {
+    "id": "p90",
+    "question": "Quilting is:",
+    "options": [
+      "Dyeing with wax",
+      "Stitching layers together with wadding between them",
+      "Joining two seams",
+      "Neatening a hem"
+    ],
+    "answer": "Stitching layers together with wadding between them",
+    "explanation": "It adds warmth and texture and uses up scraps.",
+    "topic": "ctf-l3-3"
+  },
+  {
+    "id": "p91",
+    "question": "Piping is used to:",
+    "options": [
+      "Add a decorative, reinforced edge",
+      "Make a buttonhole",
+      "Replace interfacing",
+      "Gather a sleeve"
+    ],
+    "answer": "Add a decorative, reinforced edge",
+    "explanation": "Bias piping is inserted into a seam to give a raised edge.",
+    "topic": "ctf-l3-3"
+  },
+  {
+    "id": "p92",
+    "question": "Which organ protects consumers who have been sold faulty goods?",
+    "options": [
+      "The standards bureau and consumer affairs body",
+      "The manufacturer only",
+      "The bank",
+      "The school"
+    ],
+    "answer": "The standards bureau and consumer affairs body",
+    "explanation": "Consumer protection legislation and agencies handle complaints.",
+    "topic": "ctf-l4-1"
+  },
+  {
+    "id": "p93",
+    "question": "Before buying, a consumer should ask about:",
+    "options": [
+      "The shop's returns policy",
+      "The shop's rent",
+      "The cashier's name",
+      "Where the fabric was woven"
+    ],
+    "answer": "The shop's returns policy",
+    "explanation": "Knowing the policy before paying prevents disputes.",
+    "topic": "ctf-l4-1"
+  },
+  {
+    "id": "p94",
+    "question": "Which fabric is most suitable for bathroom towels?",
+    "options": [
+      "Polyester satin",
+      "Absorbent, quick-drying cotton towelling",
+      "Wool flannel",
+      "Nylon net"
+    ],
+    "answer": "Absorbent, quick-drying cotton towelling",
+    "explanation": "Towelling must absorb water and dry quickly in humid conditions.",
+    "topic": "ctf-l4-2"
+  },
+  {
+    "id": "p95",
+    "question": "Curtain heading refers to:",
+    "options": [
+      "The lining",
+      "The top section of the curtain where it is gathered or pleated",
+      "The hem",
+      "The side turnings"
+    ],
+    "answer": "The top section of the curtain where it is gathered or pleated",
+    "explanation": "The heading determines the fullness and the hanging method.",
+    "topic": "ctf-l4-2"
+  },
+  {
+    "id": "p96",
+    "question": "A price below unit cost means the maker will:",
+    "options": [
+      "Make a profit",
+      "Lose money on every item sold",
+      "Break even",
+      "Gain customers only"
+    ],
+    "answer": "Lose money on every item sold",
+    "explanation": "Every sale must at least recover its cost.",
+    "topic": "ctf-l4-3"
+  },
+  {
+    "id": "p97",
+    "question": "Overheads are costs that:",
+    "options": [
+      "Vary directly with each item made",
+      "Are not directly tied to a single item, such as rent and electricity",
+      "Are paid only once a year",
+      "Do not exist in small business"
+    ],
+    "answer": "Are not directly tied to a single item, such as rent and electricity",
+    "explanation": "They are allocated across the items produced.",
+    "topic": "ctf-l4-3"
+  },
+  {
+    "id": "p98",
+    "question": "Hair should be tied back in the workroom mainly to:",
+    "options": [
+      "Look tidy",
+      "Prevent it being caught in the machine",
+      "Keep it clean",
+      "Improve posture"
+    ],
+    "answer": "Prevent it being caught in the machine",
+    "explanation": "Loose hair and clothing can be dragged into moving parts.",
+    "topic": "ctf-l5-1"
+  },
+  {
+    "id": "p99",
+    "question": "Wire bending is a skill used mainly in:",
+    "options": [
+      "School uniform production",
+      "Carnival costume construction",
+      "Curtain making",
+      "Table linen"
+    ],
+    "answer": "Carnival costume construction",
+    "explanation": "Costume frames are built from wire, cane and foam.",
+    "topic": "ctf-l5-3"
+  },
+  {
+    "id": "p100",
+    "question": "A craft market helps local textile producers because it:",
+    "options": [
+      "Guarantees high prices",
+      "Provides direct access to buyers and feedback",
+      "Removes the need for quality",
+      "Replaces costing"
+    ],
+    "answer": "Provides direct access to buyers and feedback",
+    "explanation": "Direct selling keeps more of the price with the maker.",
+    "topic": "ctf-l5-3"
+  }
+]
