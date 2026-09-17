@@ -1,27 +1,22 @@
+import { useState, useEffect } from "react";
 import { useAuth } from "../context/AuthContext";
+import { usePurchases } from "../data/usePurchases";
+import { getAllSubjects } from "../data/contentLoader";
 import { Link } from "react-router-dom";
 import "./Account.css";
 
-const subjectList = [
-  { id: "mathematics", name: "Mathematics", icon: "📐", purchased: true },
-  { id: "english-a", name: "English A", icon: "📝", purchased: true },
-  { id: "biology", name: "Biology", icon: "🧬", purchased: true },
-  { id: "chemistry", name: "Chemistry", icon: "⚗️", purchased: true },
-  { id: "physics", name: "Physics", icon: "⚡", purchased: true },
-  { id: "information-technology", name: "Information Technology", icon: "💻", purchased: true },
-  { id: "principles-of-accounts", name: "Principles of Accounts", icon: "📊", purchased: true },
-  { id: "principles-of-business", name: "Principles of Business", icon: "🏢", purchased: true },
-  { id: "social-studies", name: "Social Studies", icon: "🌍", purchased: true },
-  { id: "history", name: "History", icon: "📜", purchased: true },
-  { id: "geography", name: "Geography", icon: "🗺️", purchased: true },
-  { id: "human-social-biology", name: "Human & Social Biology", icon: "🫀", purchased: true },
-  { id: "spanish", name: "Spanish", icon: "🇪🇸", purchased: true },
-  { id: "french", name: "French", icon: "🇫🇷", purchased: false },
-  { id: "agricultural-science", name: "Agricultural Science", icon: "🌱", purchased: false },
-];
-
 export default function AccountPage() {
   const { user, signOut, loading } = useAuth();
+  const { hasAccess, hasBundle, hasSchoolLicense, schoolLicenseSeats, purchasedSubjects } = usePurchases();
+  const [subjects, setSubjects] = useState([]);
+
+  useEffect(() => {
+    let cancelled = false;
+    getAllSubjects()
+      .then((list) => { if (!cancelled) setSubjects(Array.isArray(list) ? list : []); })
+      .catch(() => { if (!cancelled) setSubjects([]); });
+    return () => { cancelled = true; };
+  }, []);
 
   if (loading) {
     return <div className="acct-loading">Loading your account...</div>;
@@ -43,6 +38,23 @@ export default function AccountPage() {
     );
   }
 
+  // Real plan, read from /api/purchases/list (fail-closed: anything unknown
+  // reads as the free preview, never as paid access).
+  let planName = "Free preview";
+  let planDesc = "Every subject is open for its 2 free lessons. Buy a subject or the bundle to unlock the full course.";
+  if (hasSchoolLicense) {
+    planName = "School License";
+    planDesc = schoolLicenseSeats > 0
+      ? `Up to ${schoolLicenseSeats} student accounts, all subjects, one year of access.`
+      : "All subjects, one year of access, for your school's student accounts.";
+  } else if (hasBundle) {
+    planName = "All Subjects Bundle";
+    planDesc = "Every CSEC subject on the platform, one year of access.";
+  } else if (purchasedSubjects.length > 0) {
+    planName = purchasedSubjects.length === 1 ? "Single Subject" : `${purchasedSubjects.length} Subjects`;
+    planDesc = "One year of access to the subjects you bought.";
+  }
+
   return (
     <div className="acct-page">
       <div className="acct-header">
@@ -62,20 +74,24 @@ export default function AccountPage() {
 
         <div className="acct-card">
           <h3>Subscription</h3>
-          <p className="acct-plan">Free Plan</p>
-          <p className="acct-plan-desc">All core subjects are available. Premium bundles coming soon!</p>
+          <p className="acct-plan">{planName}</p>
+          <p className="acct-plan-desc">{planDesc}</p>
         </div>
 
         <div className="acct-card acct-card-full">
           <h3>My Subjects</h3>
           <div className="acct-subjects">
-            {subjectList.map((s) => (
-              <Link key={s.id} to={`/subject/${s.id}`} className={`acct-subject ${s.purchased ? "unlocked" : "locked"}`}>
-                <span className="acct-subject-icon">{s.icon}</span>
-                <span className="acct-subject-name">{s.name}</span>
-                <span className="acct-subject-status">{s.purchased ? "✓" : "🔒"}</span>
-              </Link>
-            ))}
+            {(subjects.length > 0 ? subjects : []).map((s) => {
+              const unlocked = hasAccess(s.id);
+              return (
+                <Link key={s.id} to={`/subject/${s.id}`} className={`acct-subject ${unlocked ? "unlocked" : "locked"}`}>
+                  <span className="acct-subject-icon">{s.icon}</span>
+                  <span className="acct-subject-name">{s.name}</span>
+                  <span className="acct-subject-status">{unlocked ? "✓" : "🔒"}</span>
+                </Link>
+              );
+            })}
+            {subjects.length === 0 && <p className="acct-plan-desc">Loading subjects…</p>}
           </div>
         </div>
 

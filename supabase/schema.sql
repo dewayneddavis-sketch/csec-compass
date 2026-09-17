@@ -5,9 +5,15 @@
 -- Conventions (must match api/purchases/list.js, api/stripe/webhook.js,
 -- api/admin/grant-access.js):
 --   purchase_type = 'bundle'            -> grants every subject
---   purchase_type = 'school-license'    -> grants every subject (school
---                                          license: up to 150 students,
---                                          all 10 subjects, $2,250/year)
+--   purchase_type = 'school-license-50'
+--                 | 'school-license-100'
+--                 | 'school-license-150' -> grants every subject (school
+--                                          license ladder, one year per
+--                                          licence: 50 seats @ $25/student
+--                                          = $1,250; 100 @ $20 = $2,000;
+--                                          150 @ $15 = $2,250). The tier is
+--                                          kept in purchase_type because a
+--                                          school may buy the same tier twice.
 --   purchase_type = '<subjectId>'       -> grants that one subject
 --   subject_id    mirrors purchase_type for subject rows, NULL for bundle/school-license
 
