@@ -77,12 +77,17 @@ export default async function handler(req, res) {
       return new Date(p.expires_at).getTime() > now;
     });
 
-    const hasBundle = active.some((p) => p.purchase_type === "bundle");
+    // FULL-ACCESS types: bundle, and school license (one product covering up
+    // to 150 students across all 10 subjects). Both grant every subject.
+    const hasBundle = active.some((p) => p.purchase_type === "bundle" || p.purchase_type === "school-license");
+    const hasSchoolLicense = active.some((p) => p.purchase_type === "school-license");
     const purchasedSubjects = active
-      .filter((p) => p.purchase_type && p.purchase_type !== "bundle")
+      .filter((p) => p.purchase_type && p.purchase_type !== "bundle" && p.purchase_type !== "school-license")
       .map((p) => p.purchase_type);
 
-    return res.status(200).json({ hasBundle, purchasedSubjects, purchases: withExpiry });
+    return res
+      .status(200)
+      .json({ hasBundle, hasSchoolLicense, purchasedSubjects, purchases: withExpiry });
   } catch (err) {
     console.error("API /api/purchases/list error:", err);
     return res.status(500).json({ error: "Purchase lookup failed — failing closed." });

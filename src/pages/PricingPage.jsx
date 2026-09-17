@@ -19,6 +19,13 @@ const plans = [
     features: ["Everything in Per Subject", "All 10 CSEC subjects", "Bundle pricing (save 50% vs buying subjects separately)"],
     popular: true,
   },
+  {
+    id: "school-license",
+    name: "School License",
+    price: "$2,250 / year",
+    description: "Up to 150 students — all 10 CSEC subjects",
+    features: ["All 10 CSEC subjects", "Up to 150 students ($15/student)", "One-year access per license", "Larger cohorts: add a second license or get a custom quote"],
+  },
 ];
 
 // The 10 purchasable subjects (ids must match api/checkout/create-session +
@@ -109,7 +116,11 @@ export default function PricingPage() {
               onClick={() => handleBuy(plan.id, plan.id === "subject" ? subjectId : null)}
               disabled={busy === plan.id || (plan.id === "subject" && !subjectId)}
             >
-              {busy === plan.id ? "Redirecting..." : "Buy Now"}
+              {busy === plan.id
+                ? "Redirecting..."
+                : plan.id === "school-license"
+                  ? "Buy License"
+                  : "Buy Now"}
             </button>
           </div>
         ))}

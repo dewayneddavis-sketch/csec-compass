@@ -74,16 +74,20 @@ export default async function handler(req, res) {
     try {
       const supabase = getSupabaseAdmin();
 
-      if (price_type === "bundle") {
-        // Grant access to all subjects (idempotent: skip if already granted)
+      if (price_type === "bundle" || price_type === "school-license") {
+        // Full-access grant (bundle, or school license covering up to 150
+        // students across all 10 subjects) — idempotent: skip if already granted.
+        // The school license grants the buyer's own account full access too so
+        // the school contact can verify the platform; per-student seats are
+        // granted by the owner via the admin tool (api/admin/grant-access.js).
         const { data: existing, error: lookupErr } = await supabase
           .from("purchases")
           .select("id")
           .eq("user_id", userId)
-          .eq("purchase_type", "bundle")
+          .eq("purchase_type", price_type)
           .limit(1);
         if (lookupErr) {
-          console.error("Bundle lookup error:", lookupErr);
+          console.error(price_type + " lookup error:", lookupErr);
           return res.status(500).json({ error: "Failed to check purchase: " + lookupErr.message });
         }
         if (existing && existing.length > 0) {
@@ -92,10 +96,11 @@ export default async function handler(req, res) {
         const { error } = await supabase.from("purchases").insert({
           user_id: userId,
           subject_id: null,
-          purchase_type: "bundle",
+          purchase_type: price_type,
+          stripe_session_id: session.id,
         });
         if (error) {
-          console.error("Insert bundle error:", error);
+          console.error("Insert " + price_type + " error:", error);
           return res.status(500).json({ error: "Failed to record purchase: " + error.message });
         }
       } else if (price_type === "subject" && subject_id) {

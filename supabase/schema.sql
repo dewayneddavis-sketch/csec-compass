@@ -5,8 +5,11 @@
 -- Conventions (must match api/purchases/list.js, api/stripe/webhook.js,
 -- api/admin/grant-access.js):
 --   purchase_type = 'bundle'            -> grants every subject
+--   purchase_type = 'school-license'    -> grants every subject (school
+--                                          license: up to 150 students,
+--                                          all 10 subjects, $2,250/year)
 --   purchase_type = '<subjectId>'       -> grants that one subject
---   subject_id    mirrors purchase_type for subject rows, NULL for bundle
+--   subject_id    mirrors purchase_type for subject rows, NULL for bundle/school-license
 
 create table if not exists public.purchases (
   id uuid primary key default gen_random_uuid(),

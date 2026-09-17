@@ -1,5 +1,5 @@
 // POST /api/checkout/create-session
-// Creates a Stripe Checkout Session for per-subject or bundle purchase
+// Creates a Stripe Checkout Session for per-subject, bundle, or school-license purchase
 // NOTE: self-contained (inlines Stripe client init) — api/_lib/* imports crash
 // on Vercel with FUNCTION_INVOCATION_FAILED, so every function keeps its
 // own client init. See api/auth/user.js (same pattern, works live).
@@ -15,19 +15,22 @@ function getStripe() {
 }
 
 // Price IDs are env-driven so the live switchover (owner sets
-// STRIPE_PRICE_SUBJECT / STRIPE_PRICE_BUNDLE in Vercel) needs no code deploy.
-// Fallbacks are the current test-mode IDs.
+// STRIPE_PRICE_SUBJECT / STRIPE_PRICE_BUNDLE / STRIPE_PRICE_SCHOOL in Vercel)
+// needs no code deploy. Subject/bundle fallbacks are the current test-mode
+// IDs; the school-license fallback is the live ID — the school license product
+// (up to 150 students, all 10 subjects, $2,250/yr) is live in Stripe.
 const PRICE_IDS = {
   subject: process.env.STRIPE_PRICE_SUBJECT || "price_1Tgqa4BMfL7i0JlrJuGSfD3E",
   bundle: process.env.STRIPE_PRICE_BUNDLE || "price_1TgqfGBMfL7i0JlrqzpZgtJU",
+  "school-license": process.env.STRIPE_PRICE_SCHOOL || "price_1UFIuWDDZe1IvigkurygSgT9",
 };
 
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).json({ error: "Method not allowed" });
 
   const { priceType, subjectId, successUrl, cancelUrl, userId } = req.body || {};
-  if (!priceType || !["subject", "bundle"].includes(priceType)) {
-    return res.status(400).json({ error: "Invalid priceType. Use 'subject' or 'bundle'." });
+  if (!priceType || !["subject", "bundle", "school-license"].includes(priceType)) {
+    return res.status(400).json({ error: "Invalid priceType. Use 'subject', 'bundle' or 'school-license'." });
   }
   if (!userId) {
     return res.status(400).json({ error: "Missing userId. Sign in before purchasing." });

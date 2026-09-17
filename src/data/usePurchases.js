@@ -8,13 +8,13 @@ import { useAuth } from "../context/AuthContext";
 // /api/purchases/list unlocks a subject.
 export function usePurchases() {
   const { user, session } = useAuth();
-  const [purchases, setPurchases] = useState({ hasBundle: false, purchasedSubjects: [] });
+  const [purchases, setPurchases] = useState({ hasBundle: false, hasSchoolLicense: false, purchasedSubjects: [] });
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     if (!user) {
-      setPurchases({ hasBundle: false, purchasedSubjects: [] });
+      setPurchases({ hasBundle: false, hasSchoolLicense: false, purchasedSubjects: [] });
       setError(null);
       setLoading(false);
       return;
@@ -37,6 +37,7 @@ export function usePurchases() {
         if (!cancelled) {
           setPurchases({
             hasBundle: data.hasBundle === true,
+            hasSchoolLicense: data.hasSchoolLicense === true,
             purchasedSubjects: Array.isArray(data.purchasedSubjects) ? data.purchasedSubjects : [],
           });
         }
