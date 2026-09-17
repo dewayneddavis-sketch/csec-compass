@@ -1,0 +1,468 @@
+[
+  {
+    "id": "fn-mod-1",
+    "title": "Food, Nutrients and Health",
+    "lessons": [
+      {
+        "id": "fn-l1-1",
+        "title": "Nutrients and Their Functions",
+        "content": "The body needs food for energy, growth and repair, and protection from disease, and it obtains these from six groups of nutrients. Carbohydrates - sugars, starches and fibre - are the body's main and cheapest energy source and come from cereals, ground provisions, rice, breadfruit and sugar. Fats and oils are concentrated energy providers that also carry the fat-soluble vitamins and supply essential fatty acids; they occur in oils, butter, coconut, avocado, nuts and fatty fish. Proteins are built from amino acids and are needed for growth, repair, enzymes, hormones and antibodies; animal sources such as meat, fish, eggs, milk and cheese are complete, while vegetable sources such as peas, beans, nuts and grains are incomplete unless combined.\n\nVitamins and minerals are needed in small amounts but do essential work. Vitamin A supports vision and the immune system, the B group supports energy release and nerve function, vitamin C helps form collagen and aids iron absorption, vitamin D helps calcium be deposited in bone, and vitamin K is needed for clotting. Calcium and phosphorus build bones and teeth, iron makes haemoglobin, iodine is needed for thyroid hormones, and sodium and potassium regulate body fluids. Water makes up most of the body, carries nutrients, removes waste and controls temperature.\n\nNutrients work together, so a diet must be varied. Too little of a nutrient causes a deficiency disease - scurvy without vitamin C, anaemia without iron, rickets without vitamin D and calcium, goitre without iodine - while too much of some nutrients, especially fats, sugar and salt, contributes to obesity, diabetes and high blood pressure. A balanced diet supplies all the nutrients in the amounts the body needs, in the right proportions, and makes room for the pleasure that comes with eating.",
+        "objectives": [
+          "Name the six groups of nutrients and their main food sources",
+          "State the function of each nutrient group and the deficiencies of each",
+          "Explain why a balanced, varied diet is needed"
+        ],
+        "concepts": [
+          "Carbohydrate",
+          "Protein",
+          "Fat",
+          "Vitamin",
+          "Mineral",
+          "Fibre",
+          "Balanced diet",
+          "Deficiency disease"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Nutrient Match: Match each nutrient to its main function, two food sources and the deficiency it causes."
+        }
+      },
+      {
+        "id": "fn-l1-2",
+        "title": "A Balanced Diet and Meal Planning",
+        "content": "A balanced diet provides energy and nutrients in the proportions the body needs. Energy needs vary with age, sex, body size, activity and health, and they change through life: a growing adolescent needs more energy and protein than a small child, a pregnant or breastfeeding mother needs more of almost everything, and an older person needs less energy but still plenty of protein, calcium and vitamins.\n\nGuidelines for planning meals translate nutrients into food. Eat a variety of foods from each food group every day, with ground provisions, cereals and fruits and vegetables making up the largest share; choose lean protein foods; limit fats, especially saturated fat; use less sugar and salt; drink plenty of water; and choose fresh, minimally processed foods where possible. A good plate or bowl shows this quickly - about half vegetables and fruit, a quarter staples and a quarter protein foods, with a small amount of fat.\n\nPlanning meals also means matching food to the people and the occasion. Meals should be varied in colour, flavour and texture so that they are enjoyed and eaten; they should suit the family's budget, the time available and the cooking facilities; and they should use foods that are in season and locally available, which is both cheaper and fresher. For a school, workplace or institution, planning means calculating quantities for a given number of people, using standard recipes, and controlling cost per portion without losing nutritional quality. Meal planning is the bridge between what nutrition says people need and what they actually eat.",
+        "objectives": [
+          "Explain how nutritional needs change with age, activity and condition",
+          "Apply dietary guidelines to plan a day's meals for a named person",
+          "Justify food choices in terms of nutrition, cost, availability and acceptability"
+        ],
+        "concepts": [
+          "Energy requirement",
+          "Food group",
+          "Dietary guideline",
+          "Portion",
+          "Seasonal food",
+          "Standard recipe",
+          "Cost per portion"
+        ],
+        "experiment": {
+          "type": "meal-builder",
+          "description": "Plate Planner: Build a day's meals for a chosen person and check that every food group and nutrient requirement is covered."
+        }
+      },
+      {
+        "id": "fn-l1-3",
+        "title": "Nutrition-Related Health Conditions",
+        "content": "Poor nutrition shows itself in disease. Undernutrition and protein-energy malnutrition still occur in the Caribbean, but the greater burden now comes from over-nutrition and poor food quality. Obesity develops when energy intake exceeds expenditure over time, and it raises the risk of type 2 diabetes, hypertension, heart disease, some cancers, joint problems and breathing difficulties.\n\nThe main diet-related conditions are linked to particular dietary excesses and habits. Type 2 diabetes occurs when the body cannot control blood glucose; it is managed by restricting refined sugars, controlling carbohydrate portions, choosing high-fibre foods, taking exercise, maintaining healthy weight and, where prescribed, medication. Hypertension and stroke are linked to high salt intake, obesity, alcohol and lack of activity. Cardiovascular disease is associated with saturated fat and cholesterol, low fibre and smoking. Dental caries follow frequent sugar intake, especially sticky sweets and sweetened drinks, and anaemia follows iron deficiency, common in women and adolescents.\n\nPrevention and management work through the same food and lifestyle habits: eat more vegetables, fruit, ground provisions, peas and beans; use less sugar, salt and fried food; drink water rather than sweetened drinks; be physically active; keep to a healthy weight; limit alcohol; and avoid tobacco. Food labels help, since 'no added sugar', 'reduced salt' and low-fat claims have regulated meanings. Dietitians, community health workers and school feeding programmes are the practical way these messages reach the people who need them, and catering for a person with a named condition requires accuracy, not guesswork.",
+        "objectives": [
+          "Describe the causes and effects of obesity and undernutrition",
+          "Explain how diet is modified in diabetes, hypertension and anaemia",
+          "Plan or adapt meals for a person with a named diet-related condition"
+        ],
+        "concepts": [
+          "Obesity",
+          "Type 2 diabetes",
+          "Hypertension",
+          "Anaemia",
+          "Dental caries",
+          "Saturated fat",
+          "Dietary fibre",
+          "Food label"
+        ],
+        "experiment": {
+          "type": "classifier-sim",
+          "description": "Diet Clinic: Sort meals and foods by the condition they suit or put at risk, then adapt a menu for one condition."
+        }
+      }
+    ]
+  },
+  {
+    "id": "fn-mod-2",
+    "title": "Food Science and Preparation",
+    "lessons": [
+      {
+        "id": "fn-l2-1",
+        "title": "Heat Transfer and Cooking Methods",
+        "content": "Cooking makes food safe, easier to digest, more appetising and, usually, better keeping. Heat reaches food in three ways: conduction through direct contact with a hot surface, convection in moving air or liquid, and radiation from a hot source without contact. Methods are grouped by the medium used. Moist methods - boiling, simmering, steaming, stewing, poaching and pressure cooking - use water or steam; dry methods - baking, roasting, grilling, broiling, frying and microwaving - use hot air, hot fat or radiation.\n\nEach method has effects the cook must predict. Boiling in a large volume of water leaches water-soluble vitamins and minerals, so vegetables should be cut large, cooked briefly in a little water and steamed whenever possible. Frying at too low a temperature makes food greasy, and at too high a temperature burns the outside while the inside stays raw; deep frying also adds fat and energy. Grilling and roasting brown and flavour food through the Maillard reaction between proteins and sugars, producing crisp, aromatic surfaces. Stewing and pressure cooking suit tough, cheap cuts because long, moist heat softens connective tissue. Microwaving cooks quickly with little liquid and destroys fewer heat-sensitive vitamins, though heating can be uneven.\n\nChoosing the right method is a decision about nutrition, cost, flavour and safety at once. The same vegetable steamed, boiled or fried ends up with different vitamin content, different energy content and a different flavour, so a good cook matches method to purpose rather than habit.",
+        "objectives": [
+          "Explain conduction, convection and radiation in cooking",
+          "Classify moist and dry cooking methods and state their effects",
+          "Select a method that preserves nutrients and suits the food and occasion"
+        ],
+        "concepts": [
+          "Conduction",
+          "Convection",
+          "Radiation",
+          "Moist method",
+          "Dry method",
+          "Maillard reaction",
+          "Leaching",
+          "Steaming"
+        ],
+        "experiment": {
+          "type": "heat-sim",
+          "description": "Cooking Method Lab: Cook the same vegetable three ways and compare the water lost, the nutrients kept and the result."
+        }
+      },
+      {
+        "id": "fn-l2-2",
+        "title": "Changes in Food During Preparation and Cooking",
+        "content": "Food is physically and chemically changed by preparation and heat, and understanding those changes is what lets a cook control a recipe. Cutting, grating and mashing break cell walls and release enzymes, which can cause browning or loss of vitamins, so cut surfaces should be protected or used quickly. Soaking softens and rehydrates dried peas, beans and cereals. Whisking, creaming and beating trap air, which is why beaten egg white and creamed butter and sugar make cakes rise.\n\nHeat produces the changes that define many dishes. Proteins coagulate and set - egg white thickens, meat firms - and overcooking makes them tough and dry. Starches gelatinise and thicken liquids, which is how cornstarch and flour thicken sauces; cooling afterwards can make a starch gel set, as with pudding. Sugars dissolve, then caramelise when overheated, giving colour and flavour; overheating turns them bitter. Fats melt and can be used for frying, and fats that are overheated break down and smoke. Water evaporates and foods shrink, concentrate in flavour and can brown. Vegetables soften as pectin breaks down, and green vegetables lose their colour when overcooked because acids and heat alter the chlorophyll.\n\nSome changes must be prevented. Enzymic browning in sliced apple, banana and avocado is slowed by lemon juice, salt water or refrigeration. Vitamin losses are reduced by cooking quickly, using little water and keeping lids on. Yeast and baking powder produce gas that makes bread and cakes rise, and if the batter is over-mixed or the oven is too cool the structure collapses. Every one of these effects can be observed, measured and explained, which is why food preparation is a science as well as a craft.",
+        "objectives": [
+          "Describe the physical and chemical changes caused by preparation and heat",
+          "Explain gelatinisation, coagulation, caramelisation and aeration",
+          "Control changes to preserve quality, colour and nutrients"
+        ],
+        "concepts": [
+          "Enzymic browning",
+          "Coagulation",
+          "Gelatinisation",
+          "Caramelisation",
+          "Aeration",
+          "Pectin",
+          "Yeast",
+          "Leavening"
+        ],
+        "experiment": {
+          "type": "interactive-summary",
+          "description": "Change Detective: Identify the change happening in each cooking step and explain what caused it."
+        }
+      },
+      {
+        "id": "fn-l2-3",
+        "title": "Sensory Evaluation and Food Experiments",
+        "content": "Food must satisfy the senses as well as the body, and sensory evaluation is how that is tested systematically. The appearance of a dish - colour, shape, size, consistency - is judged first and influences expectation; aroma is detected through the nose before tasting; taste covers sweet, sour, salty, bitter and umami; texture is felt by the mouth and includes tenderness, crispness and chewiness; and flavour is the combination of taste, aroma and mouthfeel. Temperature, sound and the setting all affect how food is judged.\n\nTesting must be fair. A panel of tasters is used, samples are coded so tasters do not know which is which, each sample is the same size and served on identical dishes at the same temperature, water or plain cracker clears the palate between samples, and the taster records a judgement against a simple scale or preference ranking. The three common tests are preference (which do you like best?), discrimination (can you tell the difference?) and descriptive scoring, where each characteristic is rated on a scale. Results are averaged and reported, with comments, so the cook learns what to change.\n\nThe same discipline makes a food experiment valid. A good investigation changes one variable - the amount of sugar in a cake, the cooking time of a vegetable, the method of whisking - while controlling the rest, measures a result and compares it with a control sample. Recording what happened and why, in physical and chemical terms, is exactly what the School-Based Assessment requires, and it is how a kitchen improves rather than simply repeating itself.",
+        "objectives": [
+          "Identify the sensory properties used to evaluate food",
+          "Design and conduct a fair sensory test with a coded sample and score sheet",
+          "Run a controlled food experiment and report the results"
+        ],
+        "concepts": [
+          "Sensory evaluation",
+          "Aroma",
+          "Umami",
+          "Texture",
+          "Preference test",
+          "Discrimination test",
+          "Control sample",
+          "Palate cleanser"
+        ],
+        "experiment": {
+          "type": "data-explorer",
+          "description": "Tasting Panel: Score coded samples, average the ratings and work out which recipe the panel preferred and why."
+        }
+      }
+    ]
+  },
+  {
+    "id": "fn-mod-3",
+    "title": "Food Safety and Hygiene",
+    "lessons": [
+      {
+        "id": "fn-l3-1",
+        "title": "Micro-organisms, Spoilage and Food Poisoning",
+        "content": "Food spoils when micro-organisms grow in it or when its own enzymes and chemical reactions change it. Bacteria, yeasts and moulds are the main biological agents, and they need certain conditions to multiply: food, moisture, warmth, time and, for most, oxygen. Bacterial numbers double roughly every twenty minutes in ideal conditions, so a dish left at room temperature for a few hours can move from harmless to dangerous. The danger zone runs from about 5 degrees Celsius to 63 degrees Celsius, with the fastest growth in the middle of that range.\n\nFood poisoning causes vomiting, diarrhoea, abdominal pain and fever, and in severe cases dehydration and death. The common organisms include Salmonella from raw poultry and eggs, Campylobacter from raw chicken and unpasteurised milk, E. coli from contaminated water and undercooked meat, Staphylococcus aureus from the hands and nose of a food handler, Clostridium perfringens from cooled, reheated meat dishes and Bacillus cereus from cooked rice kept warm. Moulds spoil bread, fruit and jam, and some produce mycotoxins; yeasts ferment sugar and spoil sweet foods. Enzymic and chemical spoilage cause rancidity in fats, browning in fruit and staling in bread.\n\nControl follows directly from the conditions the organisms need. Keep them out (hygiene and covered food), deny them food and moisture (drying, salting, sugaring), keep them cold (refrigeration and freezing), make the food too acid (pickling and citrus), or kill them with heat (cooking and canning) and then prevent recontamination. Spoiled food must never be tasted to check it; if it looks, smells or feels wrong, or if it has been left in the danger zone too long, it must be thrown away.",
+        "objectives": [
+          "State the conditions micro-organisms need to grow and the danger zone",
+          "Name common food-poisoning organisms and their usual sources",
+          "Explain how preservation and hygienic practice prevent spoilage"
+        ],
+        "concepts": [
+          "Micro-organism",
+          "Danger zone",
+          "Salmonella",
+          "Spore",
+          "Mycotoxin",
+          "Rancidity",
+          "Cross-contamination",
+          "Preservation"
+        ],
+        "experiment": {
+          "type": "waste-sorter",
+          "description": "Safe or Not? Sort foods and practices into safe and unsafe, and decide which preservation method suits each food."
+        }
+      },
+      {
+        "id": "fn-l3-2",
+        "title": "Safe Handling, Storage and Kitchen Hygiene",
+        "content": "Safe food handling is a sequence of habits from shop to plate. Buy chilled and frozen food last, check dates and packaging, and get it home quickly. Store raw meat and fish below cooked and ready-to-eat foods in the refrigerator so that nothing can drip onto them, keep the refrigerator at about 1 to 4 degrees Celsius and the freezer at about minus 18 degrees, and cool cooked food quickly and refrigerate it within two hours. Defrost in the refrigerator or microwave, never on the counter. Wash hands thoroughly with soap before handling food, after the toilet, after handling raw meat, after touching animals and after sneezing or coughing. Use separate chopping boards and knives for raw meat and for ready-to-eat food, wash utensils and surfaces with hot soapy water, and use a clean cloth for each job.\n\nThorough cooking and correct reheating kill bacteria: mince and poultry must be cooked right through with no pink juices, and leftovers must be reheated piping hot all the way through and reheated only once. Hot food is kept above 63 degrees Celsius, cold below 5, and neither stays in the danger zone longer than two hours in total - including the time spent transporting and plating.\n\nThe kitchen itself must be kept clean, because pests and dirt bring contamination. Work surfaces are cleaned and disinfected before and after use, floors swept and washed, bins lined, covered and emptied often, and waste kept away from food preparation. Pests - cockroaches, rats, mice, ants and flies - are controlled by keeping food in sealed containers, sealing cracks, screening windows and doors, repairing leaks, and never leaving food or dirty dishes out overnight. A dirty kitchen loses food, money and reputation, and creates a real risk of illness.",
+        "objectives": [
+          "Apply safe practices for buying, storing, defrosting and reheating food",
+          "Demonstrate correct personal, hand, utensil and surface hygiene",
+          "Explain how kitchen cleanliness controls pests and contamination"
+        ],
+        "concepts": [
+          "Cross-contamination",
+          "Refrigeration",
+          "Defrosting",
+          "Reheating",
+          "Disinfectant",
+          "Pest control",
+          "Waste bin",
+          "Personal hygiene"
+        ],
+        "experiment": {
+          "type": "order-steps",
+          "description": "Kitchen Safety Order: Arrange the steps from shopping to serving in the correct safe order and flag where contamination could occur."
+        }
+      },
+      {
+        "id": "fn-l3-3",
+        "title": "Food Preservation and Processing",
+        "content": "Preservation slows or stops the changes that spoil food so that it is available out of season and can be carried to market. Heat treatment destroys organisms - boiling, pasteurising, sterilising and canning - but the food must then be sealed to prevent recontamination, which is why canning uses sterilised jars and airtight lids. Refrigeration and freezing slow growth; freezing does not kill micro-organisms, so thawed food must be handled as carefully as fresh. Drying removes the water organisms need and is used for fish, fruit, herbs and pepper; salting, sugaring, smoking and pickling create conditions in which bacteria cannot thrive; and chemical preservatives are used within legal limits.\n\nProcessing turns raw produce into stable products and adds value: jams, jellies, sauces, chutneys, juices, flour from cassava and sweet potato, dried fruit, spice blends, and ready-to-cook packages. Each process has its own rules. Jam needs enough sugar and acid and the right setting point to keep without spoiling; pickles need the correct vinegar strength; canned products need correct processing times and temperatures for their acidity, and low-acid foods such as vegetables and meat are far more hazardous than high-acid fruit. A label must carry the product name, ingredients in descending order of weight, net weight, manufacturer, date, storage instructions and, where relevant, allergen information.\n\nProcessing also carries risks. Over-processing destroys vitamins, especially vitamin C and thiamine; added sugar, salt and fat raise the health risk of processed foods; and poor hygiene in a small processing operation can make a whole batch unsafe. For a Caribbean producer, however, a safe, well-labelled local product made from seasonal surplus can replace imports, reduce waste and earn more than selling raw produce.",
+        "objectives": [
+          "Explain how heat, cold, drying, salting, sugaring, smoking and pickling preserve food",
+          "Describe a processing method for a named Caribbean product",
+          "State the information a food label must carry and the risks of processing"
+        ],
+        "concepts": [
+          "Pasteurisation",
+          "Canning",
+          "Drying",
+          "Pickling",
+          "Setting point",
+          "Vacuum seal",
+          "Allergen",
+          "Batch"
+        ],
+        "experiment": {
+          "type": "order-steps",
+          "description": "Preserve It: Order the steps of a preservation method for a named food and predict what happens if a step is missed."
+        }
+      }
+    ]
+  },
+  {
+    "id": "fn-mod-4",
+    "title": "Meals Through Life and Special Diets",
+    "lessons": [
+      {
+        "id": "fn-l4-1",
+        "title": "Feeding the Family on a Budget",
+        "content": "Most households eat what the budget allows, so a good cook plans with money as well as nutrients. Planning starts with the amount available for food, the number of people to be fed, the number of meals and snacks needed, the food already in the house and the foods in season. Drawing up a shopping list from planned menus prevents impulse buying and repeated small trips, which are expensive in both time and money.\n\nValue for money in food means comparing the cost per portion, not the pack price. Larger packs usually cost less per kilogram but only if the food will be used before it spoils; own-brand staples and market produce may be cheaper than branded and supermarket equivalents; and dried peas, beans and cereals cost far less per portion than meat but still supply protein, energy and fibre, especially when combined with a small amount of animal protein or eaten with rice or provision. Cheap cuts of meat, small fish, eggs, tinned fish, chicken back and liver are nutritious and economical. Ground provisions and green bananas, plantain, breadfruit, cassava, sweet potato and yam are energy-rich staples, and dark green leafy vegetables, callaloo, carrots, pumpkin and local fruit supply vitamins at low cost.\n\nWaste is the invisible enemy of a food budget. Using leftovers safely, storing food correctly, planning portions so that little is thrown away, using trimmings in stocks and soups and buying only what can be stored properly all stretch the same money. A family fed on a planned, varied and largely local menu can eat better on less than one that buys casually, which is why food management is a practical skill, not merely a lesson about nutrients.",
+        "objectives": [
+          "Plan a week of family meals within a stated budget",
+          "Compare foods by cost per portion and nutritional contribution",
+          "Identify and reduce food waste in the home"
+        ],
+        "concepts": [
+          "Budget",
+          "Cost per portion",
+          "Shopping list",
+          "Seasonal food",
+          "Staple",
+          "Legume",
+          "Leftover",
+          "Food waste"
+        ],
+        "experiment": {
+          "type": "data-explorer",
+          "description": "Shopping Trip: Compare prices, pack sizes and cost per portion and build the cheapest menu that still meets the family's needs."
+        }
+      },
+      {
+        "id": "fn-l4-2",
+        "title": "Nutrition Through the Life Cycle",
+        "content": "Nutritional needs change from before birth to old age, and meals must change with them. A pregnant mother needs extra energy, protein, iron, folate and calcium to build the baby and protect her own stores; folate before and early in pregnancy reduces the risk of neural tube defects, and iron prevents anaemia. She should also avoid alcohol, limit caffeine, eat well-cooked food and follow the advice of her health workers, and after the birth breastfeeding supplies ideal food for the baby and health benefits for both.\n\nInfants need breast milk or an appropriate formula for the first months, then weaning to soft, nutrient-dense foods introduced one at a time, without added salt or sugar. Toddlers and young children eat small amounts often and need energy- and nutrient-dense foods rather than bulky, low-energy meals. School-age children need regular meals - breakfast especially - plus protein, calcium and iron for growth; a breakfast eaten before school improves concentration and learning. Adolescents have high requirements during their growth spurt: boys need extra energy and protein, girls need extra iron to replace menstrual losses, and both benefit from calcium for bone growth. Poor diets at this age lead to anaemia, poor growth, obesity and poor school performance.\n\nAdults in work need meals that sustain energy without excess. Pregnant and breastfeeding women have already been considered; manual workers need more energy than sedentary ones. Older people have lower energy needs but need plenty of protein, calcium, vitamin D and fibre, and often have problems that affect eating: loss of teeth and appetite, difficulty swallowing, constipation, isolation and illness. Meals for them should be easy to chew and digest, attractive, small and frequent, and taken in company where possible. Recognising who is being fed - and why their needs differ - turns cooking into care.",
+        "objectives": [
+          "Describe the nutritional needs at each stage of the life cycle",
+          "Plan suitable meals for a pregnant woman, a child, an adolescent and an older person",
+          "Explain the health consequences of poor nutrition at each stage"
+        ],
+        "concepts": [
+          "Folate",
+          "Weaning",
+          "Growth spurt",
+          "Menstrual loss",
+          "Osteoporosis",
+          "Appetite",
+          "High-risk group",
+          "Anorexia of ageing"
+        ],
+        "experiment": {
+          "type": "meal-builder",
+          "description": "Life Cycle Menus: Plan a day's meals for four people at different stages of life and check the nutrients each needs."
+        }
+      },
+      {
+        "id": "fn-l4-3",
+        "title": "Special Diets and Modified Meals",
+        "content": "Some people must eat differently for medical, religious, ethical or lifestyle reasons, and catering for them means knowing exactly what to change and how to keep the meal attractive and complete. A diabetic diet controls total carbohydrate, spreads it evenly through the day, uses high-fibre, low-GI foods, reduces refined sugar and, where necessary, works with medication and regular meal times. A low-salt diet for hypertension and heart failure removes added salt and limits processed foods, tinned and cured meats, stock cubes, salted snacks and some sauces, replacing them with herbs, garlic, pepper, onion, lime and vinegar. A low-fat or low-cholesterol diet reduces fried food, fatty meats and full-fat dairy, and uses grilling, steaming, baking and stewing instead.\n\nOther modified diets have specific structures. A high-fibre diet increases whole grains, ground provisions, fruit and vegetables and uses more water, and is used for constipation and to help control diabetes. A gluten-free diet excludes wheat, barley and rye and requires care with flour, bread, pasta and many processed foods, and is essential in coeliac disease. A lactose-free diet removes milk sugar and needs alternative calcium sources. Diets for renal disease restrict protein, sodium, potassium and phosphorus under medical supervision. A vegetarian diet excludes meat, poultry and fish but, if planned well on pulses, grains, nuts, eggs and dairy, can meet all requirements; vegans exclude all animal products and must be careful with vitamin B12, iron, calcium and omega-3. Religious diets such as no pork, no beef, or fasting periods are managed by substituting other proteins.\n\nThe skill in all of this is substitution rather than removal, so the meal remains adequate and enjoyable. Removing salt means adding herbs, citrus and pepper; removing sugar means using ripe fruit and spices; removing a food means finding another that supplies what it supplied. Meals also need to be presented without making the diner feel excluded, and where a diet is medically prescribed it must be followed as advised by the health professional.",
+        "objectives": [
+          "Describe the foods allowed and avoided in named special diets",
+          "Modify a standard recipe for diabetes, hypertension, coeliac disease or vegetarianism",
+          "Explain substitution so the modified meal stays nutritionally adequate"
+        ],
+        "concepts": [
+          "Low-GI",
+          "Low-sodium",
+          "Sugar-free",
+          "Gluten-free",
+          "Lactose-free",
+          "Vegan",
+          "B12",
+          "Substitution"
+        ],
+        "experiment": {
+          "type": "classifier-sim",
+          "description": "Recipe Makeover: Take a standard Caribbean dish and modify it for a chosen special diet without losing nutrients or appeal."
+        }
+      }
+    ]
+  },
+  {
+    "id": "fn-mod-5",
+    "title": "Kitchen Management and Consumer Skills",
+    "lessons": [
+      {
+        "id": "fn-l5-1",
+        "title": "The Kitchen, Equipment and Work Organisation",
+        "content": "A well-designed kitchen saves steps, time and money. Good layout places the three main work areas - food storage (refrigerator and cupboards), the sink, and the cooking hob and oven - close enough that each operation flows into the next with little walking. Work surfaces at the right height reduce fatigue, adequate lighting and ventilation keep work safe and comfortable in a hot climate, and safe wiring, correctly placed outlets and a fire blanket or extinguisher are essential.\n\nEquipment should be chosen for the jobs the household actually does. Saucepan, frying pan, baking tin, mixing bowl, chopping board, sharp knives, measuring cups and spoons, sieve, grater, whisk, wooden spoon, colander, blender, and a refrigerator and stove are the working core; a pressure cooker, microwave, blender and slow cooker save time and energy in specific tasks. Materials matter: stainless steel conducts unevenly but is durable, aluminium conducts well and is light, cast iron holds heat but is heavy, and glass is suitable for the oven and microwave. Buying quality once is usually cheaper than replacing cheap items repeatedly, and equipment must be cleaned, dried, stored and repaired to last.\n\nThe organisation of work is what turns a kitchen into a productive place. Before starting, read the recipe, collect and prepare ingredients (mise en place), and clear the work surface. Then work in an order that uses waiting time - put the dish that takes longest to cook on first, prepare the salad while the stew simmer, wash as you go. Clean as you work rather than leaving everything for the end, keep the floor clear and dry, use the correct utensil for each job, and store food covered. Careful organisation reduces accidents, prevents burnt food, uses less energy and makes cooking far more enjoyable.",
+        "objectives": [
+          "Plan a kitchen layout that follows the work sequence",
+          "Select the right equipment, material and utensil for each task",
+          "Organise work to save time and energy and to work safely"
+        ],
+        "concepts": [
+          "Work triangle",
+          "Mise en place",
+          "Ventilation",
+          "Utensil",
+          "Heat conductivity",
+          "Energy efficiency",
+          "Safety hazard"
+        ],
+        "experiment": {
+          "type": "simulation",
+          "description": "Kitchen Layout: Place the work areas and equipment in a plan and see how much walking and time the layout saves."
+        }
+      },
+      {
+        "id": "fn-l5-2",
+        "title": "Buying Food and Managing the Food Budget",
+        "content": "Food buying is a set of decisions made before entering the shop. Decide what is needed from the menus planned, check what is in stock at home, write a list and set a limit; then compare the shops, markets and vendors available. Market produce bought in season is fresher and cheaper; farm produce or a roadside vendor may be cheapest of all; supermarkets offer convenience, packaging and reliable quality; and wholesale or group buying through a cooperative, church group or neighbours reduces the price per unit for staples and provisions.\n\nReading the food is as important as reading the price. Labels show ingredients in descending order of weight, the net weight, the best-before or use-by date, storage instructions, additives, allergen information and nutrition information per 100 g. A use-by date is a safety date and food must not be eaten after it, while a best-before date is a quality date. Tinned food should be undamaged, frozen food should be solid with no ice crystals inside the pack, and fresh food should be firm, bright and free of bruising or slime. Comparing the price per kilogram rather than the pack price is the single most useful habit for controlling cost.\n\nAfter buying comes storing, and poor storage wastes more food than poor shopping. Refrigerate perishables quickly, keep raw and cooked foods apart, store dry goods in airtight containers in a cool dark place, keep ground provisions in a dry airy spot and not in plastic bags, label leftovers with the date and eat them within a day or two, and rotate stock using the older items first. Managing food well means money spent is food eaten, not food thrown away.",
+        "objectives": [
+          "Draw up a shopping list from planned menus and a budget",
+          "Interpret food labels, dates and unit prices",
+          "Store each class of food correctly to prevent waste and spoilage"
+        ],
+        "concepts": [
+          "Unit price",
+          "Use-by date",
+          "Best-before date",
+          "Food additive",
+          "Stock rotation",
+          "Bulk buying",
+          "Airtight storage",
+          "Fortified"
+        ],
+        "experiment": {
+          "type": "data-explorer",
+          "description": "Label Reader: Compare two products by ingredients, unit price and dates and decide which one to buy."
+        }
+      },
+      {
+        "id": "fn-l5-3",
+        "title": "Consumer Rights, Food Legislation and the Food Industry",
+        "content": "Consumers of food have rights recognized in law and by consumer bodies: the right to safety, to be informed, to choose, to be heard, to redress and to consumer education. These translate into specific protection. Food offered for sale must be safe, wholesome and not misleadingly described; weights and measures must be accurate; prices must be displayed; labels must carry the required information; and advertising must not make false claims. A consumer who is sold spoiled food, short weight or a product described falsely has a right to complain, and to a replacement or refund.\n\nMaking a complaint well is a skill. Keep the receipt or another proof of purchase, keep the product and packaging, note the date, place and price, and contact the seller quickly, calmly and specifically, stating the problem and what remedy is wanted. If the trader does not respond, the consumer can go to the relevant consumer affairs body, a health department or, where food safety is concerned, the public health inspectorate. Records and evidence decide whether a complaint succeeds, which is one more reason to keep receipts and labels.\n\nBehind the consumer stands the food industry: farmers, fishers, food processors, manufacturers, wholesalers, distributors, supermarkets, vendors, hotels, restaurants and caterers. Each has a responsibility for safety along the chain, from farm to table, under public health regulations, food-handler training, food safety management systems and inspection. Understanding the chain explains why a problem at any stage - soiled water on the farm, a broken refrigeration unit in transit, a careless food handler in a restaurant - can end up making a consumer ill, and why the system relies on each link working.",
+        "objectives": [
+          "State consumer rights and how food law protects them",
+          "Make an effective complaint with evidence and follow it up appropriately",
+          "Describe the stages of the food industry and the responsibilities at each stage"
+        ],
+        "concepts": [
+          "Consumer right",
+          "Redress",
+          "Misdescription",
+          "Weights and measures",
+          "Consumer affairs body",
+          "Food handler",
+          "Food safety management",
+          "Traceability"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Consumer Case: Match each consumer problem to the law or body that protects the buyer and to the evidence needed."
+        }
+      }
+    ]
+  },
+  {
+    "id": "fn-mod-6",
+    "title": "Caribbean Food, Culture and Food Security",
+    "lessons": [
+      {
+        "id": "fn-l6-1",
+        "title": "Caribbean Foods and Foodways",
+        "content": "Caribbean food is the product of history and geography. The indigenous peoples contributed cassava, sweet potato, corn, pepper, and the pepper pot method of cooking; African peoples brought yam, okra, callaloo-type greens, groundnut, one-pot cooking and heavy seasoning; Europeans brought wheat, rice, livestock, sugar processing and preserving methods; and Indians brought roti, curry, dhal, rice and sweetmeats. The result is a cuisine built on ground provisions, rice, peas and beans, salted and fresh fish and meat, coconut, and generous seasoning, cooked by boiling, stewing, roasting, frying and steaming.\n\nTraditional dishes carry the nutrition lessons of the region. Rice and peas supplies carbohydrate and plant protein; callaloo soup supplies iron and vitamin A; ackee and saltfish with roasted breadfruit is protein, fat and carbohydrate with fibre; stew peas and peas soup are complete-protein meals; coconut adds fat and flavour; and fish, whether fresh, salted or dried, is a cheap source of protein and minerals. Fruits - mango, guinep, soursop, papaya, pineapple, guava, orange, star apple, sugar apple - supply vitamin C, vitamin A and fibre. Together these make a diet that can be both nutritious and economical when the traditional pattern is kept rather than replaced by imported refined foods.\n\nFood also carries culture: Sunday dinner, Christmas sorrel and black cake, Easter bun, harvest festivals, weddings, wakes, and the social meaning of food shared with family. Cooking skills, recipes and menus are passed on at home. Food and Nutrition studies them because menu planning that ignores what people customarily eat and enjoy is a plan that will not be followed, however sound the nutrition behind it.",
+        "objectives": [
+          "Identify Caribbean foods by nutrient group and their nutritional value",
+          "Explain how history shaped Caribbean food patterns",
+          "Plan meals that use traditional foods and meet nutritional needs"
+        ],
+        "concepts": [
+          "Ground provision",
+          "Callaloo",
+          "Rice and peas",
+          "Ackee",
+          "Pepper pot",
+          "One-pot meal",
+          "Foodway",
+          "Cultural food"
+        ],
+        "experiment": {
+          "type": "drag-drop",
+          "description": "Caribbean Plate: Sort traditional foods into nutrient groups and build a balanced traditional menu."
+        }
+      },
+      {
+        "id": "fn-l6-2",
+        "title": "Food Security, Availability and Sustainability",
+        "content": "Food security exists when everyone, at all times, has physical and economic access to sufficient, safe and nutritious food to lead an active, healthy life. It has four pillars: availability (is there enough food?), access (can households afford and reach it?), utilisation (is it safe, nutritious and properly used?) and stability (is supply reliable?). A country or household can fail on any one of them even if the others are met - food may be plentiful in the market but unaffordable for a poor family, or affordable but unsafe.\n\nThe Caribbean faces a particular combination of pressures. Small island economies import a very high proportion of their food, especially cereals, refined foods and processed goods, so global price rises and shipping costs pass straight to the consumer. Agriculture competes for limited land and water, is exposed to hurricanes and drought, and a large share of the workforce has moved away from farming. At the same time diet-related disease is increasing and traditional foods have been displaced in many households by cheaper imported refined products.\n\nResponses address each pillar. Availability is improved by supporting local agriculture, investing in irrigation, protected cultivation, extension advice and post-harvest handling so that less food is lost. Access is improved by employment, school feeding programmes, food assistance and price management. Utilisation is improved by nutrition education, food safety, fortification and preserving traditional cooking. Stability is improved by storage, disaster preparedness and diversified suppliers. Reducing food loss and waste - on the farm, in the market and in the kitchen - is the cheapest gain of all, since a third of food is lost or wasted before it is eaten.",
+        "objectives": [
+          "Define food security and explain its four pillars",
+          "Describe the threats to food security in the Caribbean",
+          "Evaluate measures that improve availability, access, utilisation and stability"
+        ],
+        "concepts": [
+          "Food security",
+          "Availability",
+          "Access",
+          "Utilisation",
+          "Stability",
+          "Food import dependence",
+          "Food loss",
+          "School feeding programme"
+        ],
+        "experiment": {
+          "type": "data-explorer",
+          "description": "Food Supply Audit: Read import, production and price data and identify the weakest pillar of food security."
+        }
+      },
+      {
+        "id": "fn-l6-3",
+        "title": "Planning and Producing Food for a Group",
+        "content": "Preparing food for a group - a family celebration, a school lunch, a cake sale or a community event - is a management exercise as much as a cooking one. It begins with a plan: decide how many people are to be served, at what time, in what setting, and with what facilities; agree the menu; calculate the quantity of each ingredient from standard recipes or portion guides; and price the whole thing. Then check the equipment, time and labour available and work out a schedule so that everything arrives ready at the right moment, because no one can roast, boil and serve five dishes at once.\n\nQuantity and cost control decide whether the event succeeds. Portion guides, weighing and measuring, standard recipes and a costing sheet keep costs predictable, and a simple rule is to allow for a stated portion per person of each dish with a small margin for waste. Buying begins with a list and, where possible, bulk or market purchasing for staples to lower the cost per portion, with storage arranged for quantities that cannot be used immediately. Presentation, safe holding temperatures, labelling of allergens and the needs of guests with special diets all have to be planned for, not discovered on the day.\n\nFinally, everything must be evaluated. What went well? What took longer than expected? Were the portions right? Did the cost per portion match the estimate? Were there safety problems? Feeding a group is also a small enterprise: the same skills - costing, planning, time management, hygiene, presentation and record-keeping - are used by caterers and food entrepreneurs. Keeping the costing sheet and the evaluation makes the next event cheaper, faster and better, and turns cooking skill into a way to earn.",
+        "objectives": [
+          "Plan a menu, quantities and a costing sheet for a group meal",
+          "Draw up a work schedule that sequences preparation, cooking and service",
+          "Evaluate the event for portions, cost, safety and the guests' needs"
+        ],
+        "concepts": [
+          "Standard recipe",
+          "Portion guide",
+          "Costing sheet",
+          "Work schedule",
+          "Bulk purchase",
+          "Allergen",
+          "Catering",
+          "Evaluation"
+        ],
+        "experiment": {
+          "type": "interactive-summary",
+          "description": "Event Planner: Plan quantities, cost and a time schedule for a school function and see whether the plan balances."
+        }
+      }
+    ]
+  }
+]

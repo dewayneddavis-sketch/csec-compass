@@ -1,0 +1,68 @@
+{
+  "subjectId": "food-and-nutrition",
+  "introduction": "The Food and Nutrition School-Based Assessment combines research and practical work: you choose a theme, gather background information, plan and prepare meals that demonstrate what you have learned, and evaluate the results. Marks are given for the quality of your research, the plan, the preparation and presentation of the food, safety and hygiene, the nutritional or cost justification, and your honest evaluation. Check the current CSEC syllabus and your teacher's guidance for the exact requirements and number of practical sessions for your year.",
+  "tasks": [
+    {
+      "section": "Choice of Theme and Research",
+      "title": "Theme and background",
+      "explanation": "State your theme (for example meals for a hypertensive adult, reducing food waste, or value-added use of local produce), and explain why it matters. Show evidence of research from books, articles or an interview.",
+      "marks": "6"
+    },
+    {
+      "section": "Planning",
+      "title": "Menus and costing",
+      "explanation": "Write out the menu or menus with standard recipes, the number of portions, the cost per portion, and the reasons for each food choice in relation to your theme.",
+      "marks": "10"
+    },
+    {
+      "section": "Work Schedule and Preparation",
+      "title": "Time plan",
+      "explanation": "Prepare a time plan sequencing all tasks from shopping to service, showing the order of work, the equipment and the time for each step.",
+      "marks": "8"
+    },
+    {
+      "section": "Practical Work",
+      "title": "Preparation and presentation",
+      "explanation": "Carry out the preparation and cooking safely and hygienically, manage time and equipment, and present the finished dishes attractively and at the correct temperature.",
+      "marks": "14"
+    },
+    {
+      "section": "Evaluation",
+      "title": "Judgement and improvements",
+      "explanation": "Evaluate the dishes by sensory properties and against your theme, compare plan with practice, discuss problems such as timing, cost or texture, and recommend specific improvements.",
+      "marks": "8"
+    },
+    {
+      "section": "Conclusion",
+      "title": "What you learned",
+      "explanation": "Summarise what the assignment showed about nutrition, food management or food science, and how you would apply it.",
+      "marks": "4"
+    }
+  ],
+  "sampleTitle": "Meals for a household with a hypertensive adult, prepared on a weekly food budget",
+  "sample": [
+    {
+      "section": "Planning",
+      "body": "Menu: steamed fish with herbs, lime and pepper; roasted breadfruit; steamed callaloo; sliced tomato and cucumber; fresh orange juice, no added sugar. Cost per portion: fish $180, breadfruit $60, callaloo $40, salad $35, juice $30 - total $345 per portion, against a budget of $400. Salt is omitted and flavour supplied by garlic, ginger, lime, pepper and scallion, since the theme requires a low-sodium diet.",
+      "tips": "State the cost per portion and justify each choice against the theme - this is where the nutrition marks are earned."
+    },
+    {
+      "section": "Evaluation",
+      "body": "The dish was attractive and evenly cooked, and the fish was moist although it was steamed five minutes longer than planned because two pieces were thick. Steaming preserved the vitamin C in the callaloo better than boiling would have, and omitting salt was accepted by the family once the herbs and lime were added. The juice was prepared last so it did not lose vitamin C before serving. Improvement: cut the fish into even portions next time and start the breadfruit earlier, because it delayed service by ten minutes.",
+      "tips": "Compare plan with practice, name specific problems and give specific remedies."
+    }
+  ],
+  "marking": "Marks reward relevant research, sound menu planning with costing, a complete and realistic time plan, good practical skill with safe and hygienic working, attractive presentation, and a thoughtful evaluation with recommendations.",
+  "checklist": [
+    "Theme chosen and justified",
+    "Research evidence included",
+    "Menus with standard recipes and portions",
+    "Cost per portion calculated",
+    "Reasons for food choices linked to the theme",
+    "Time plan from shopping to service",
+    "Safe and hygienic working",
+    "Dishes presented attractively at the right temperature",
+    "Sensory evaluation recorded",
+    "Problems discussed with specific improvements"
+  ]
+}
