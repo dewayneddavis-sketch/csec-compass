@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useAuth } from "../context/AuthContext";
+import { getSupabaseClient } from "../lib/supabase";
 import "./AdminPage.css";
 
 const SUBJECT_IDS = [
@@ -16,12 +17,26 @@ const SUBJECT_IDS = [
 ];
 
 export default function AdminPage() {
-  const { user } = useAuth();
+  const { user, session } = useAuth();
   const [email, setEmail] = useState("");
   const [purchaseType, setPurchaseType] = useState("bundle");
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
   const [error, setError] = useState(null);
+
+  // FIX (live bug): the old version scanned localStorage for keys containing
+  // "supabase" — but supabase-js stores its session under `sb-<ref>-auth-token`,
+  // which never contains "supabase", so the scan found nothing and admin grant
+  // always failed with "Not authenticated. Please sign in first." even when
+  // signed in. Get the token from the AuthContext session (same source
+  // /api/purchases/list consumers use), with a live getSession() fallback.
+  async function getAccessToken() {
+    if (session?.access_token) return session.access_token;
+    const supabase = getSupabaseClient();
+    if (!supabase) return null;
+    const { data } = await supabase.auth.getSession();
+    return data?.session?.access_token || null;
+  }
 
   async function handleAction(action) {
     if (!email.trim()) {
@@ -34,27 +49,7 @@ export default function AdminPage() {
     setError(null);
 
     try {
-      const session = JSON.parse(localStorage.getItem("sb-" + (window.__SUPABASE_URL || "").split("//")[1]?.replaceAll(".", "-") + "-auth") || "{}");
-      const token = session?.access_token;
-      if (!token) {
-        // Try from supabase auth context directly
-      }
-
-      // Get token from supabase
-      const supabaseUrls = ["qognlaemukntbqutdcjw"];
-      let accessToken = null;
-      for (const key of Object.keys(localStorage)) {
-        if (key.includes("supabase") && key.includes("auth")) {
-          try {
-            const s = JSON.parse(localStorage.getItem(key));
-            if (s?.access_token) {
-              accessToken = s.access_token;
-              break;
-            }
-          } catch {}
-        }
-      }
-
+      const accessToken = await getAccessToken();
       if (!accessToken) {
         setError("Not authenticated. Please sign in first.");
         setLoading(false);
@@ -72,7 +67,9 @@ export default function AdminPage() {
 
       const data = await res.json();
       if (!res.ok) {
-        setError(data.error || "Request failed");
+        // Surface the server error verbatim so a 403 owner-gate failure names
+        // the required email instead of showing a generic "Request failed".
+        setError(data.error || "Request failed (" + res.status + ")");
       } else {
         setResult(data.message || (action === "grant" ? "Access granted!" : "Access revoked!"));
       }

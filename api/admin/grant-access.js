@@ -17,7 +17,13 @@ function getSupabaseAdmin() {
   });
 }
 
-const OWNER_EMAIL = "dewayneddavis@gmail.com";
+// Owner allowlist — env-driven so the owner can authorize their actual
+// signed-in account (e.g. dddavis519@gmail.com) via Vercel's OWNER_EMAILS
+// without a code deploy. Defaults to the known owner email.
+const OWNER_EMAILS = (process.env.OWNER_EMAILS || "dewayneddavis@gmail.com")
+  .split(",")
+  .map((e) => e.trim().toLowerCase())
+  .filter(Boolean);
 
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).json({ error: "Method not allowed" });
@@ -41,9 +47,13 @@ export default async function handler(req, res) {
     const { data: { user: caller }, error: authError } = await supabase.auth.getUser(token);
     if (authError || !caller) return res.status(401).json({ error: "Invalid token" });
 
-    // Only the owner can execute
-    if (caller.email !== OWNER_EMAIL) {
-      return res.status(403).json({ error: "Forbidden: owner only" });
+    // Only the owner can execute — clear 403 that names the required email(s)
+    // so a wrong-account sign-in is diagnosable instead of a generic failure.
+    const callerEmail = (caller.email || "").toLowerCase();
+    if (!OWNER_EMAILS.includes(callerEmail)) {
+      return res.status(403).json({
+        error: `Forbidden: this action is restricted to the owner. You are signed in as ${caller.email || "unknown"}; the authorized owner email${OWNER_EMAILS.length > 1 ? "s are" : " is"} ${OWNER_EMAILS.join(", ")}.`,
+      });
     }
 
     // Resolve target user by email
