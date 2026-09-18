@@ -1,12 +1,18 @@
 import { useState, useEffect } from "react";
 import "./SBASection.css";
+import { isOralExamSubject, sbaGuideLabel, sbaTabNoun } from "../data/sbaTabs";
 
-// CSEC SBA (School-Based Assessment) guide.
+// CSEC SBA (School-Based Assessment) guide, with a subject-aware name:
+// French and Spanish have no SBA portfolio -- their Paper 03 IS the oral
+// examination -- so those two subjects see "Oral Exam / Paper 03".
 // Loads public/content/<subject>/sba.json and renders the subject's sample
 // SBA: introduction, the task breakdown (with marks), an example sample
 // (title + sections with body/tips), a marking note, and a checklist.
 // Shows a friendly "coming soon" state when the file isn't present yet.
 export default function SBASection({ subjectId }) {
+  const isOral = isOralExamSubject(subjectId);
+  const guide = sbaGuideLabel(subjectId);
+  const noun = sbaTabNoun(subjectId);
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -31,7 +37,7 @@ export default function SBASection({ subjectId }) {
   if (loading) {
     return (
       <div className="sba-container">
-        <div className="sba-empty"><p>Loading SBA guide...</p></div>
+        <div className="sba-empty"><p>Loading {guide}...</p></div>
       </div>
     );
   }
@@ -41,8 +47,8 @@ export default function SBASection({ subjectId }) {
       <div className="sba-container">
         <div className="sba-empty">
           <div className="sba-empty-icon">📋</div>
-          <h3>SBA Guide Coming Soon</h3>
-          <p>A step-by-step School-Based Assessment guide for this subject is being prepared.</p>
+          <h3>{guide} Coming Soon</h3>
+          <p>{isOral ? "A step-by-step guide to the Paper 03 oral examination for this subject is being prepared." : "A step-by-step School-Based Assessment guide for this subject is being prepared."}</p>
           <p className="sba-note">Check back soon to see the task breakdown, a worked sample, marking notes, and a checklist.</p>
         </div>
       </div>
@@ -59,7 +65,7 @@ export default function SBASection({ subjectId }) {
       <div className="sba-intro">
         <div className="sba-intro-icon">📋</div>
         <div>
-          <h3>CSEC School-Based Assessment</h3>
+          <h3>{isOral ? "CSEC Paper 03 — Oral Examination" : "CSEC School-Based Assessment"}</h3>
           <p>{data.introduction}</p>
         </div>
       </div>
@@ -87,7 +93,7 @@ export default function SBASection({ subjectId }) {
       {sample.length > 0 && (
         <section className="sba-card">
           <div className="sba-section-head">
-            <h4>Sample SBA</h4>
+            <h4>Sample {noun}</h4>
           </div>
           <p className="sba-sample-title">{data.sampleTitle}</p>
           {sample.map((s, i) => (

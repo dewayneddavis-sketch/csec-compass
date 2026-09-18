@@ -9,6 +9,7 @@ import ExperimentSandbox from "../components/ExperimentSandbox";
 import ExtraPractice from "../components/ExtraPractice";
 import MockExam from "../components/MockExam";
 import SBASection from "../components/SBASection";
+import { SBA_TAB_LABEL, sbaGuideLabel, sbaTabLabel, sbaTabNoun } from "../data/sbaTabs";
 import Paper2Section from "../components/Paper2Section";
 import ProgressTab from "../components/ProgressTab";
 import "./SubjectPage.css";
@@ -28,7 +29,7 @@ const TABS = [
   // Studies and English B today) — see the availability probe in load().
   { id: "paper2", label: "Paper 2", color: "#9d174d", tint: "#fdf2f8" },              // pink
   { id: "progress", label: "Progress", color: "#0e7490", tint: "#ecfeff" },            // cyan
-  { id: "sba", label: "CSEC SBA", color: "#0f766e", tint: "#f0fdfa" },                 // teal
+  { id: "sba", label: SBA_TAB_LABEL, color: "#0f766e", tint: "#f0fdfa" },                 // teal
 ];
 
 export default function SubjectPage() {
@@ -43,6 +44,10 @@ export default function SubjectPage() {
   const [activeTab, setActiveTab] = useState("lessons");
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [hasPaper2, setHasPaper2] = useState(false);
+  // The exam-support tab is "CSEC SBA" for most subjects, but French and
+  // Spanish have no SBA portfolio -- their Paper 03 IS the oral exam, so the
+  // label is per-subject (see src/data/sbaTabs.js).
+  const tabs = TABS.map((tab) => (tab.id === "sba" ? { ...tab, label: sbaTabLabel(subjectId) } : tab));
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -140,7 +145,7 @@ export default function SubjectPage() {
       )}
 
       <div className="s-tabs">
-        {TABS.filter((tab) => tab.id !== "paper2" || hasPaper2).map((tab) => (
+        {tabs.filter((tab) => tab.id !== "paper2" || hasPaper2).map((tab) => (
           <button
             key={tab.id}
             className={"s-tab " + (activeTab === tab.id ? "active" : "")}
@@ -216,7 +221,7 @@ export default function SubjectPage() {
           <div className="s-upgrade-banner"><p><strong>🔒 Progress tracking is locked.</strong> <Link to={"/pricing?subject=" + subjectId}>Unlock full access</Link> to see your weak topics and pass-rate trend.</p></div>
         ))}
         {activeTab === "sba" && (paid ? <SBASection subjectId={subjectId} /> : (
-          <div className="s-upgrade-banner"><p><strong>🔒 SBA Guide is locked.</strong> <Link to={"/pricing?subject=" + subjectId}>Unlock full access</Link> to view the SBA tab.</p></div>
+          <div className="s-upgrade-banner"><p><strong>🔒 {sbaGuideLabel(subjectId)} is locked.</strong> <Link to={"/pricing?subject=" + subjectId}>Unlock full access</Link> to view the {sbaTabNoun(subjectId)} tab.</p></div>
         ))}
       </div>
     </div>
