@@ -1,0 +1,70 @@
+{
+  "subjectId": "principles-of-business",
+  "introduction": "The Principles of Business School-Based Assessment is a research project in which you investigate a business or industry, or develop and present a business idea of your own, following the stages of a business plan. The folder presents your research, findings and a justified conclusion; marks are given for the quality of the research, the analysis and use of business concepts, the presentation and the recommendation. Check the current CSEC syllabus and your teacher's guidance for the exact project type, length and mark allocation required.",
+  "tasks": [
+    {
+      "section": "Aim and Method",
+      "title": "Purpose of the study",
+      "explanation": "State the aim of the research, the business or industry being studied and the specific questions to be answered, and describe the methods used to gather information.",
+      "marks": "6"
+    },
+    {
+      "section": "Business Description",
+      "title": "Profile of the business",
+      "explanation": "Describe the type of business, form of ownership, sector, size, location, product or service, and its importance to the local community and the economy.",
+      "marks": "8"
+    },
+    {
+      "section": "Research Findings",
+      "title": "Presentation of findings",
+      "explanation": "Present the information gathered under the chosen headings - for example marketing, production, finance, and human resources - using tables, graphs and quotations from interviews.",
+      "marks": "12"
+    },
+    {
+      "section": "Analysis and Discussion",
+      "title": "Application of business concepts",
+      "explanation": "Analyse the findings using the concepts and terms of the syllabus, identifying strengths, weaknesses, opportunities and threats, and explaining the effects on the business.",
+      "marks": "12"
+    },
+    {
+      "section": "Conclusion and Recommendation",
+      "title": "Justified conclusion",
+      "explanation": "Draw conclusions that answer the aim of the study, make practical recommendations with reasons, and evaluate how reliable and complete your evidence was.",
+      "marks": "8"
+    },
+    {
+      "section": "Presentation",
+      "title": "Structure and references",
+      "explanation": "Present the project with a title page, table of contents, headings, page numbers, references and a bibliography, in clear accurate language and within the required length.",
+      "marks": "4"
+    }
+  ],
+  "sampleTitle": "An investigation into the marketing strategy of a small bakery in a Jamaican town",
+  "sample": [
+    {
+      "section": "Research Findings",
+      "body": "The bakery employs eight workers and operates as a sole trader. Turnover in the last financial year was $4.8 million, of which bread accounted for 62 per cent, pastries 26 per cent and cakes 12 per cent. A questionnaire of 40 customers showed that 78 per cent buy bread daily, that price was the most important factor for 45 per cent and freshness for 37 per cent, and that 60 per cent said they would use a delivery service if one existed. Two competitors trade within 1.5 km; both sell at a lower price, but both are more than 20 minutes' walk from the school gate.",
+      "tips": "Present numbers in a table or graph as well as in words, and always state the source of each finding."
+    },
+    {
+      "section": "Analysis and Discussion",
+      "body": "Applying the marketing mix, the bakery's product and place are strong - fresh bread sold at the school gate at break time - while price is higher than the two competitors and promotion is limited to word of mouth and a signboard. This matches the Boston matrix position of a cash cow: a mature product with a high local share and little growth unless new segments are added. The distribution channel is entirely direct, which protects the margin but limits coverage. Weak promotion is the largest gap: 60 per cent of customers want delivery, which is demand for a new level of distribution rather than a lower price, and the fixed costs of the bakery mean that a price cut would reduce profit faster than the extra volume would replace it.",
+      "tips": "Name the concepts you use - marketing mix, cash cow, channel of distribution - and quantify the effect wherever you can."
+    }
+  ],
+  "marking": "Marks reward a clear aim and appropriate research methods, a thorough description of the business, well presented findings, correct use of business concepts in the analysis, a justified conclusion and recommendations, and a neatly structured and referenced project.",
+  "checklist": [
+    "Aim and research questions stated",
+    "Methods of research described",
+    "Sources of information listed",
+    "Business profile complete",
+    "Findings presented in tables, graphs or charts",
+    "Findings labelled and referenced",
+    "Business concepts applied correctly",
+    "SWOT or another analytical framework used",
+    "Conclusions answer the aim",
+    "Recommendations are practical and justified",
+    "Limitations of the research discussed",
+    "Title page, contents, page numbers and bibliography included"
+  ]
+}

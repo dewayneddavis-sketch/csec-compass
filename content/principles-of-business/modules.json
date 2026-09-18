@@ -1,0 +1,470 @@
+[
+  {
+    "id": "pob-mod-1",
+    "title": "The Business Environment and Ownership",
+    "lessons": [
+      {
+        "id": "pob-l1-1",
+        "title": "The Nature and Purpose of Business",
+        "content": "A business is an organised effort to produce and sell goods or services in order to satisfy needs and wants and, in most cases, to make a profit. A need is something a person must have to survive - food, shelter, clothing, health care, transport to work; a want is something that improves life or gives pleasure but is not essential - a phone upgrade, branded shoes, a holiday. Because resources are limited and wants are unlimited, every individual, business and government must choose how to use scarce resources, and every choice has an opportunity cost: the value of the next best alternative given up. Economics studies those choices; business applies them.\n\nBusiness activity is divided into three sectors. The primary sector extracts raw materials from nature - farming, fishing, mining, forestry - and in the Caribbean includes sugar, bananas, cocoa, coffee, bauxite and oil. The secondary sector processes and manufactures: sugar refining, food processing, garment making, furniture, building and craft production. The tertiary (service) sector provides services rather than goods: retailing, tourism and hospitality, transport, banking, insurance, hairdressing, repairs, education, health and information technology. Many Caribbean economies depend heavily on tertiary services, especially tourism and financial services, and the three sectors are linked - the tourism sector buys agricultural produce, and manufacturing sells to hotels.\n\nBusinesses exist to create and satisfy customers, and their functions reflect that: production, purchasing, marketing, distribution, finance and accounting, and human resource management. Businesses are classified in other ways too: by size (small, medium or large, judged by employees, capital, sales or market share), by ownership (private sector, public sector or mixed), and by objective (profit-making businesses versus non-profit organisations such as charities, churches, cooperatives and sporting bodies, which still need efficient management but use any surplus for their stated purpose rather than distributing it to owners). Profit is what remains when the total revenue of a business exceeds its total cost, and it is the reward for risk, effort and enterprise; losses are the price of poor decisions or unfavourable conditions.",
+        "objectives": [
+          "Define needs, wants, scarcity, opportunity cost, goods and services",
+          "Describe the primary, secondary and tertiary sectors with Caribbean examples",
+          "Classify businesses by size, ownership and objective and state the functions of business"
+        ],
+        "concepts": [
+          "Need",
+          "Want",
+          "Scarcity",
+          "Opportunity cost",
+          "Primary sector",
+          "Secondary sector",
+          "Tertiary sector",
+          "Profit"
+        ],
+        "experiment": {
+          "type": "business-sorter",
+          "description": "Business Sorter: Sort businesses into sectors, sizes and ownership types and match them to their main function."
+        }
+      },
+      {
+        "id": "pob-l1-2",
+        "title": "Forms of Business Ownership",
+        "content": "Choosing a form of ownership decides who owns the business, who controls it, who shares the profit and how far each owner is personally liable for the business's debts. The main forms are the sole trader, the partnership, the limited company, the cooperative, the franchise and the public (state) enterprise, and each suits a different situation.\n\nA sole trader is one person who owns, finances and manages the business. It is easy and cheap to start, the owner keeps all profit, makes decisions quickly, has personal contact with customers and pays tax on personal income - but the owner has unlimited liability, meaning personal assets can be taken to pay business debts, and the business lacks capital, specialist skills and continuity if the owner dies. A partnership has between two and twenty members (with exceptions for professional firms) operating under a partnership deed or agreement; it brings extra capital, shared skills and workload, but profits are shared, decisions need agreement, and ordinary partners again have unlimited liability, unless a limited partner or a limited liability partnership is used.\n\nA limited company is a separate legal entity from its owners: it can own property, sue and be sued, and its shareholders have limited liability, losing only what they invested. A private company (Ltd) has shares that are not offered to the public and usually few shareholders; a public company (Ltd or Inc) may sell shares to the public, often through a stock exchange, and must meet stricter reporting rules. Companies raise far more capital, have continuity, employ specialists and can grow, but forming one is costly and regulated, accounts must be filed, profits are shared, and the owners' control is separated from management. A cooperative is owned and democratically controlled by its members, each member having one vote, and it distributes surplus as dividends to members - the model behind credit unions, agricultural marketing cooperatives and consumer stores in the Caribbean. A franchise buys the right to trade under an established name and system for a fee and royalty, gaining brand, training and marketing but losing some independence. A public enterprise is owned by government to provide essential services such as water, electricity, ports and transport, prioritising service over profit and funded by taxpayers.",
+        "objectives": [
+          "Describe the main forms of business ownership and their features",
+          "Compare them in terms of liability, capital, control, continuity and regulation",
+          "Recommend a suitable form of ownership for a stated situation, with reasons"
+        ],
+        "concepts": [
+          "Unlimited liability",
+          "Partnership deed",
+          "Limited liability",
+          "Shareholder",
+          "Private company",
+          "Cooperative",
+          "Franchise",
+          "Public enterprise"
+        ],
+        "experiment": {
+          "type": "ownership-advisor",
+          "description": "Ownership Advisor: Answer questions about capital, risk and control and see which form of ownership fits."
+        }
+      },
+      {
+        "id": "pob-l1-3",
+        "title": "Stakeholders, Ethics and Social Responsibility",
+        "content": "A stakeholder is any person or group affected by, or with an interest in, what a business does. Stakeholders include owners and shareholders, who want profit and growth; employees, who want fair pay, safe conditions, security and progression; customers, who want quality, value and honesty; suppliers, who want prompt payment and continuing orders; creditors and lenders, who want repayment with interest; government, which wants taxes, employment and compliance; and the community, which wants jobs, a clean environment and local investment. Stakeholders' interests often conflict - higher wages reduce profit, lower prices reduce margin, environmental controls raise costs - so management's task is to balance them as far as possible and to communicate honestly about the choices made. Being transparent with employees and suppliers is as much a part of business success as good marketing.\n\nBusiness ethics is the application of moral principles to business conduct, above and beyond what the law requires. Ethical businesses are honest in advertising and accounting, honour contracts and warranties, protect employee safety and dignity, refuse bribery and insider dealing, protect customer data and avoid exploiting workers, suppliers or the environment. Unethical practice damages reputation, invites fines and legal action, raises staff turnover and destroys the trust on which repeat business depends; in small Caribbean markets, where everyone knows everyone, reputation is a decisive business asset.\n\nCorporate social responsibility (CSR) is the voluntary contribution a business makes to the welfare of society and the environment. It may take the form of sponsoring sports teams, schools and cultural events; scholarships and apprenticeship programmes; community projects and disaster relief; environmental measures such as recycling, energy and water conservation and reduced packaging; fair trade purchasing and local sourcing; and equal opportunity and health programmes for staff. CSR benefits the business through better reputation, staff loyalty, customer goodwill, easier recruitment and often lower long-run costs, and it is increasingly expected rather than optional. Consumer protection law, labour law and environmental regulation set the floor of acceptable behaviour, but ethics and social responsibility ask businesses to go beyond compliance and consider the long-term effect of their actions on the society that sustains them.",
+        "objectives": [
+          "Identify the stakeholders of a named business and their interests",
+          "Explain business ethics and the costs of unethical behaviour",
+          "Describe CSR activities and evaluate their benefits to business and community"
+        ],
+        "concepts": [
+          "Stakeholder",
+          "Shareholder",
+          "Business ethics",
+          "Bribery",
+          "Corporate social responsibility",
+          "Fair trade",
+          "Code of conduct",
+          "Reputation"
+        ],
+        "experiment": {
+          "type": "stakeholder-map",
+          "description": "Stakeholder Map: Place each group around a business and decide how a stated decision affects it."
+        }
+      }
+    ]
+  },
+  {
+    "id": "pob-mod-2",
+    "title": "Finance, Banking and Insurance",
+    "lessons": [
+      {
+        "id": "pob-l2-1",
+        "title": "Sources of Finance",
+        "content": "Every business needs money to start, to operate and to grow, and the sources available depend on the amount needed, the period for which it is needed and the cost the business can bear. Capital expenditure on long-term assets - premises, equipment, vehicles - requires long-term finance; working capital for stock, wages, rent and utility bills requires short-term or medium-term finance. Using the wrong type is a common cause of failure: financing a building with an overdraft, or buying stock with a ten-year loan, creates unnecessary cost or unnecessary risk of demands for repayment.\n\nInternal sources come from inside the business. The owner's own savings or capital introduced, retained profits not distributed, the sale of unused assets, and better management of stock and debtors (credit control, prompt invoicing, reducing stock levels) all generate finance without borrowing. External sources include bank overdrafts (short term, flexible, expensive and repayable on demand); bank loans (medium or long term, fixed instalments, secured on assets); trade credit from suppliers (very common and free up to the credit period); hire purchase and leasing (use of equipment without buying it outright); mortgages on property; and, for larger businesses, share issues, debentures, retained earnings and venture capital. Governments and development agencies provide grants, soft loans and incentive programmes, and microfinance institutions and credit unions serve small Caribbean businesses that banks consider too risky.\n\nChoosing between sources means weighing cost against control and risk. Interest and dividends are the financial cost; the cost in control arises when new shareholders or partners share ownership and decision making; the risk is that repayments fall due whether or not trading is good, so debt raises the chance of insolvency. A business should match the life of the finance to the life of the asset, keep debt in proportion to equity, compare the effective cost of each option including fees and interest, and keep cash-flow forecasts up to date so that repayment is planned rather than discovered. Finance is not just obtained, it is managed: a profitable business can still fail if it runs out of cash.",
+        "objectives": [
+          "Distinguish internal and external sources of finance",
+          "State the cost, control and risk implications of each source",
+          "Recommend suitable sources for stated business needs with reasons"
+        ],
+        "concepts": [
+          "Working capital",
+          "Retained profit",
+          "Overdraft",
+          "Trade credit",
+          "Leasing",
+          "Mortgage",
+          "Microfinance",
+          "Credit union"
+        ],
+        "experiment": {
+          "type": "funding-match",
+          "description": "Funding Match: State the need and the period, then choose the cheapest and safest source of finance."
+        }
+      },
+      {
+        "id": "pob-l2-2",
+        "title": "Financial Records, Budgets and Cash Flow",
+        "content": "Business decisions are only as good as the information behind them, and that information comes from records. A business keeps books of account so that it knows what it owns and owes, whether it is making a profit, where the money went, and what tax it must pay; the law and the tax authority also require records. The main records are the cash book or cash records, the sales and purchases records, the inventory or stock records, the wages and payroll records, and the bank statements and receipts, all supported by source documents: invoices, receipts, credit notes, cheque stubs, bank statements and delivery notes. The two central financial statements are the income statement (trading and profit and loss account), which shows revenue, cost of sales, expenses and profit for a period, and the statement of financial position (balance sheet), which shows assets, liabilities and capital at a point in time.\n\nA budget is a plan expressed in money for a future period - a month, a quarter or a year. Budgets are prepared for sales, production, purchases, labour, expenses and cash, so that the business knows in advance what it expects to earn and spend, can compare actual figures with budgeted ones and investigate the differences (variances), can control spending, and can set targets for departments. The sales budget usually comes first because every other budget depends on expected sales; budgets are then monitored monthly, and a favourable variance (spending less or earning more than planned) or an unfavourable one is explained before it becomes a crisis.\n\nA cash-flow forecast is the budget that keeps a business alive. It lists expected cash inflows (cash sales, collections from debtors, loans received, capital introduced) and outflows (payments to suppliers, wages, rent, utilities, loan repayments, taxes) month by month, and shows the opening balance, the net cash flow and the closing balance for each period. A negative closing balance means the business will run out of cash even if it is profitable on paper. Problems are solved in advance by speeding up collections, delaying payments within agreed terms, arranging an overdraft facility, cutting costs, selling assets or bringing in extra capital. Because Caribbean small businesses often sell on credit and hold heavy stock, cash-flow forecasting and debtor control are among the most valuable management skills, and the difference between profit and cash is one of the most important distinctions to understand: profit is accounting surplus over a period, cash is the money available to pay bills on time.",
+        "objectives": [
+          "Explain why a business keeps financial records and name the main records and documents",
+          "Prepare and use a simple budget and explain variances",
+          "Prepare a cash-flow forecast and explain the difference between profit and cash"
+        ],
+        "concepts": [
+          "Source document",
+          "Income statement",
+          "Statement of financial position",
+          "Budget",
+          "Variance",
+          "Cash-flow forecast",
+          "Closing balance",
+          "Liquidity"
+        ],
+        "experiment": {
+          "type": "cash-flow-lab",
+          "description": "Cash Flow Lab: Enter inflows and outflows month by month and find the month where cash is short."
+        }
+      },
+      {
+        "id": "pob-l2-3",
+        "title": "Banking Services, Insurance and Risk Management",
+        "content": "Banks and other financial institutions move money, hold savings and provide the credit that businesses need. The central bank sets monetary policy, issues currency, supervises banks and manages the country's reserves; commercial banks take deposits and lend, and offer current (chequing) accounts for day-to-day transactions, savings and deposit accounts, fixed deposits, overdrafts, loans, mortgages, credit and debit cards, standing orders, direct debits, electronic funds transfers, online and mobile banking, wire and international transfers, and safety deposit boxes. Credit unions, merchant banks, trust companies, insurance companies, finance houses, development banks and microfinance companies make up the rest of the financial system. For a business, the bank's services matter because they reduce the risk of holding cash, keep records of payments, allow large transactions to be made safely and provide credit; efficient record-keeping lets the business reconcile its own records against the bank statement and detect errors or fraud.\n\nInsurance is the transfer of the risk of loss to an insurer in return for a premium, and it depends on the principle of pooling: many people pay a premium into a fund from which the few who suffer loss are paid. Without insurance a single fire, storm, accident or lawsuit can destroy a business; with it, loss becomes a planned cost. The key terms are premium (the payment), policy (the contract), policyholder, sum insured, cover, benefit, excess, and claim. Insurance works on three principles: insurable interest, the insured must stand to lose from the event; utmost good faith, both parties must disclose all material facts honestly; and indemnity, the insured is restored to the same financial position as before the loss, not made a profit from it. Proximate cause identifies the nearest effective cause of a loss, which determines whether the policy responds, and subrogation lets the insurer recover from a third party at fault.\n\nBusinesses and individuals buy different types of insurance. Property insurance covers buildings, contents, stock and equipment against fire, storm, flood and theft. Liability insurance covers injury or damage caused to others, including employer's liability for employees, public liability for customers, and professional indemnity for advice given wrongly. Motor insurance is compulsory and covers third party, with comprehensive cover adding damage to the insured vehicle. Specialised covers include marine and goods-in-transit insurance, business interruption (loss of profit while closed), fidelity guarantee against employee dishonesty, credit insurance against bad debts, crop and livestock insurance, and life and health policies that protect a business against the loss of a key person. Risk management is wider than insurance: a business first identifies and assesses risks, then avoids them (change the activity), reduces them (safety measures, training, security, backups), retains them (accept small losses and set aside funds) or transfers them (insure, outsource, lease), and reviews the position regularly. Insurance is the last step of the process, not the first.",
+        "objectives": [
+          "Describe the banking and financial services available to a business",
+          "Explain the principles of insurance and the meaning of its key terms",
+          "Classify types of insurance and apply the risk-management steps to a stated business"
+        ],
+        "concepts": [
+          "Premium",
+          "Policy",
+          "Indemnity",
+          "Utmost good faith",
+          "Insurable interest",
+          "Business interruption",
+          "Fidelity guarantee",
+          "Risk retention"
+        ],
+        "experiment": {
+          "type": "risk-transfer",
+          "description": "Risk Transfer: List a business's risks and decide to avoid, reduce, retain or insure each one."
+        }
+      }
+    ]
+  },
+  {
+    "id": "pob-mod-3",
+    "title": "Marketing and the Market",
+    "lessons": [
+      {
+        "id": "pob-l3-1",
+        "title": "The Marketing Concept and Market Research",
+        "content": "Marketing is far more than selling. Selling is the attempt to persuade a customer to buy what a business has already produced; marketing begins before production, with finding out what customers want and designing the product, price, promotion and distribution to satisfy them profitably. The marketing concept holds that the customer, not the producer, is the starting point, and that a business succeeds by identifying and satisfying customer needs better than competitors do; the production concept (make as much as possible cheaply) and the selling concept (push hard to sell what is made) are older and less effective approaches. Marketing also recognises that customers differ, so the market is segmented: by geography, by demographic factors such as age, sex, income, occupation and family stage, by psychographic factors such as lifestyle, values and personality, and by behaviour such as usage rate, loyalty and benefits sought. A market segment is worth targeting when it is identifiable, measurable, reachable, large enough to be profitable and distinct in what it wants - and Caribbean firms often target narrow segments such as school boards, hoteliers, tourists, diaspora shoppers or Carnival bands.\n\nMarketing research is the systematic collection, recording, analysis and interpretation of information about a market, and it answers questions about who buys, why, how much they will pay, where they buy and what competitors offer. Primary data is collected first-hand by the business: questionnaires and surveys, interviews, focus groups, observation, test marketing in one area, and experiments. Secondary data already exists somewhere: government statistics and census reports, national and regional reports, trade and industry studies, competitor advertising, company records and sales reports, and published research. Primary data is more exactly suited to the question but slow and expensive to gather; secondary data is cheap and fast but may be outdated or too general to apply.\n\nSampling decides the quality of the findings. A sample is a chosen group of the whole population studied, and it must be large enough and representative enough to be reliable, or the conclusions will mislead. Random sampling gives every member an equal chance; stratified sampling divides the population into groups and samples each in proportion; quota sampling fills a target profile; and convenience sampling uses whoever is available, which is cheapest but least reliable. The instrument matters just as much: a questionnaire should be short, clearly worded, free of leading or double-barrelled questions, easy to answer and tested first on a small pilot group. Results are then tabulated, presented in tables and graphs, and interpreted into findings and recommendations that lead to a decision - for example to launch a new size, change a price, open a second outlet or drop a failing line. Marketing research is not a one-off exercise: markets change, and companies that keep listening keep ahead.",
+        "objectives": [
+          "Distinguish marketing from selling and state the marketing concept",
+          "Segment a market and describe how the marketing mix is designed for a segment",
+          "Distinguish primary and secondary data and evaluate sampling and questionnaire design"
+        ],
+        "concepts": [
+          "Marketing concept",
+          "Market segmentation",
+          "Primary data",
+          "Secondary data",
+          "Sample",
+          "Stratified sampling",
+          "Questionnaire",
+          "Pilot test"
+        ],
+        "experiment": {
+          "type": "research-planner",
+          "description": "Research Planner: Design a survey - choose the sample, write the questions and see whether the results are reliable."
+        }
+      },
+      {
+        "id": "pob-l3-2",
+        "title": "The Marketing Mix: Product and Pricing Decisions",
+        "content": "The marketing mix is the combination of controllable variables a business uses to satisfy its chosen market, traditionally grouped as the four Ps: product, price, place and promotion, extended for services to seven Ps by adding people, process and physical evidence. The mix must be consistent: a premium product, cheap price and downmarket outlet send contradictory signals and confuse the customer.\n\nProduct decisions concern what is offered: the goods and services themselves, their design, quality, features, size, colour, packaging, branding, labelling, and after-sales service, together with the product range and mix. A product has levels - the core benefit the customer really buys, the actual product, and the augmented product of guarantees, delivery, credit and service. Products have a life cycle: introduction, when sales are low and promotion costs high; growth, when sales and competition rise; maturity, when sales level off and competition is fiercest; and decline, when sales fall and the business must decide whether to harvest, reposition or withdraw. The Boston matrix classifies products by market growth and market share as stars, cash cows, question marks and dogs, which guides where to invest or withdraw. Branding gives a product a name and identity that customers recognise and trust, supports a higher price and eases new product launches; packaging protects, identifies, informs and sells the product, and must also respect environmental concerns and local regulation.\n\nPrice is the only element of the mix that generates revenue, and it must cover costs, match what the market will pay and fit the product's position. Cost-based pricing adds a mark-up to unit cost; competition-based pricing follows the market rate; and market-led or value-based pricing sets the price from what customers think the product is worth. Skimming sets a high price at launch to recover development costs from early adopters before lowering it; penetration sets a low price to win market share quickly; psychological pricing uses 9.99-style figures; loss leaders price one item very low to attract customers who buy other items; price discrimination charges different segments different prices; and discounts, credit terms, seasonal pricing and bundling adjust the effective price. New businesses must also respect price controls on some goods, taxes and import duties, and the awkward fact that in small markets a price war leaves everyone poorer - so price should follow value, cost and strategy rather than imitation or panic.",
+        "objectives": [
+          "Describe the elements of the marketing mix for a named product",
+          "Explain product levels, the product life cycle and the Boston matrix",
+          "Compare pricing methods and recommend a pricing strategy with reasons"
+        ],
+        "concepts": [
+          "Marketing mix",
+          "Product life cycle",
+          "Boston matrix",
+          "Branding",
+          "Cost-plus pricing",
+          "Price skimming",
+          "Penetration pricing",
+          "Loss leader"
+        ],
+        "experiment": {
+          "type": "price-setter",
+          "description": "Price Setter: Enter costs and the market's willingness to pay, then test each pricing strategy and see the profit."
+        }
+      },
+      {
+        "id": "pob-l3-3",
+        "title": "Promotion, Distribution and Customer Service",
+        "content": "Promotion is communication with the market, and it uses the promotion mix: advertising, sales promotion, personal selling, public relations and publicity, and direct or digital marketing. Advertising is paid, non-personal communication through television, radio, newspapers, magazines, billboards, cinema and online channels, and it informs, reminds and persuades over a wide audience at a low cost per contact, but it is expensive in total and cannot answer individual objections. Sales promotion gives a short-term reason to buy: discounts, coupons, samples, competitions, buy-one-get-one offers, loyalty cards, point-of-sale displays and trade allowances. Personal selling is face-to-face or telephone contact, the most persuasive and the most expensive per contact, and it suits high-value or technical goods. Public relations builds goodwill through press releases, sponsorships, community projects and events, and publicity is the free coverage media give to newsworthy activity - valuable because it is more credible than advertising, but not under the business's control. Direct and digital marketing uses mail, telephone, email, websites, social media, influencer content and search advertising to target chosen segments precisely and measure results, and it is the channel that has grown fastest in the Caribbean because it suits small budgets and a diaspora market.\n\nPlace, or distribution, covers how the product reaches the customer. A distribution channel may be direct from producer to consumer (farm gate sales, factory outlet, online store, door-to-door) or indirect through intermediaries: wholesalers, retailers, agents, distributors and brokers. Intermediaries give the producer wider coverage, lower selling costs, storage, credit and market information, but they take a share of the price and reduce the producer's control over display and final price. Physical distribution means transport, storage and warehousing, stock control, order processing and delivery - all critical in a region of islands where transport costs and shipping delays can decide a business's prices and reliability. Businesses choose between intensive distribution (as many outlets as possible, for convenience goods), selective distribution (chosen outlets, for shopping goods) and exclusive distribution (few authorised dealers, for luxury goods), and increasingly combine a physical presence with e-commerce for local and diaspora customers.\n\nCustomer service and the remaining elements of the service mix complete the offer. People means the staff whose skill and courtesy the customer experiences; process means the efficient, reliable systems through which the service is delivered; and physical evidence means the tangible cues - premises, uniforms, packaging, signage, website quality - that reassure customers about quality. Service quality is judged by reliability, responsiveness, assurance, empathy and tangibles, and complaints handled well create more loyalty than no complaint at all. Marketing also carries responsibilities: advertising must be truthful and not misleading, children must not be exploited, personal data must be protected, and publicity campaigns should respect the culture and dignity of the communities they address - a standard the region's advertising codes and consumer bodies now enforce.",
+        "objectives": [
+          "Describe the elements of the promotion mix and select suitable promotion for a stated product",
+          "Compare distribution channels, intermediaries and levels of distribution",
+          "Explain the service mix and the standards of responsible marketing"
+        ],
+        "concepts": [
+          "Promotion mix",
+          "Sales promotion",
+          "Public relations",
+          "Publicity",
+          "Channel of distribution",
+          "Wholesaler",
+          "Intensive distribution",
+          "Customer service"
+        ],
+        "experiment": {
+          "type": "promo-planner",
+          "description": "Promotion Planner: Set a budget, choose the media mix for a target segment and estimate the reach."
+        }
+      }
+    ]
+  },
+  {
+    "id": "pob-mod-4",
+    "title": "Production, Operations and Quality",
+    "lessons": [
+      {
+        "id": "pob-l4-1",
+        "title": "Production, Productivity and Economies of Scale",
+        "content": "Production is the creation of goods and services by combining the factors of production: land and other natural resources, labour, capital (money, machinery, buildings) and enterprise, the risk-taking and decision-making that organises the rest. Production is measured as output, and productivity measures how efficiently that output is produced - output per worker, per hour or per unit of capital. Raising productivity means producing more or better output from the same inputs, through better training, equipment, organisation, technology, motivation or layout, and it is the only sustainable way to raise wages and reduce costs; simply working harder without changing methods has strict limits.\n\nThere are three types of production. Primary production extracts raw materials from nature. Secondary production manufactures and constructs, and is divided into the construction industry (buildings, roads, dams, ships) and the manufacturing industry, which includes the analytical process (breaking a material into parts, as in oil refining or sugar boiling), the synthetic process (combining materials into a new product, as in baking, cement making or soap production), the processing and assembly processes (making and joining components), and the extractive industries treated as primary. Tertiary production provides services - commerce, transport, banking, insurance, tourism, education, health, communication and government - and it is the sector with commercial and direct services: commercial services help goods move and trade, direct services serve people personally.\n\nProduction methods are chosen by volume and variety. Job production makes one unique item to the customer's specification, using skilled labour, and suits custom furniture, wedding cakes, tailoring and costume making; it is flexible but expensive per unit. Batch production makes a set quantity of identical items, then switches to another batch, and suits bakeries, garment runs, furniture ranges and paint production; machinery is shared and costs fall, but stock and changeover time rise. Flow or mass production makes large volumes continuously with specialised machinery and division of labour, and suits bottled drinks, sugar, cement and packaged foods; unit costs are lowest but machinery is expensive and the method is inflexible. Economies of scale are the cost savings that come with size: internal economies include technical, purchasing (bulk discounts), financial, managerial, marketing and risk-bearing economies; external economies come from the industry or location, such as skilled labour pools, specialised suppliers and better infrastructure. Diseconomies of scale are the costs of being too large: coordination problems, slower decisions, poor communication, low morale and industrial unrest. Small Caribbean producers must therefore compete on flexibility, niche quality, design and service rather than on volume against much larger foreign manufacturers.",
+        "objectives": [
+          "Distinguish the factors of production and explain productivity",
+          "Describe job, batch and flow production and recommend one for a stated product",
+          "Explain internal and external economies and diseconomies of scale"
+        ],
+        "concepts": [
+          "Factors of production",
+          "Enterprise",
+          "Productivity",
+          "Job production",
+          "Batch production",
+          "Flow production",
+          "Division of labour",
+          "Diseconomies of scale"
+        ],
+        "experiment": {
+          "type": "factory-line",
+          "description": "Factory Line: Choose the product and the volume, test each production method and compare unit cost and flexibility."
+        }
+      },
+      {
+        "id": "pob-l4-2",
+        "title": "Business Location, Layout, Purchasing and Stock Control",
+        "content": "Where a business is sited affects its costs, its customers and its survival. Location factors differ by type of business. A manufacturer weighs the proximity of raw materials (to reduce transport cost and spoilage, as with sugar cane, fruit or fish), the market, the labour supply, power and water, transport links such as ports and roads, land cost and availability, government grants and tax incentives, and the local climate and risk of natural hazards. A retailer weighs the flow of passing customers, accessibility, parking and transport, the spending power of the area, the presence of complementary shops, competitors, rent and security. Careful siting can be cheaper than efficiency: placing a food processor near the farms, or a hotel near the airport and the beach, changes cost and demand more than most internal improvements.\n\nLayout is how the site is arranged, and it should follow the way the work flows. A fixed-position layout brings the workers and materials to the product, as in shipbuilding or construction; a process layout groups machines by function and suits job and batch work where products vary; a product or line layout orders work in the sequence of production and suits flow production; and a cellular layout groups people and machines into teams that complete a product or stage. In an office or shop, layout affects customer flow, staff supervision, security and comfort. Good layout reduces movement, handling and delay, reduces accidents, uses space better and speeds up production; poor layout wastes time and money invisibly.\n\nPurchasing and stock control connect the business to its suppliers. Purchasing covers identifying needs, choosing suppliers on price, quality, reliability, credit terms, delivery and after-sales service, negotiating, ordering, receiving and checking goods, authorising payment and evaluating supplier performance. Stock is held as raw materials, work in progress and finished goods, and the purpose of stock control is to hold enough to meet demand without tying up cash. Stock levels are set as maximum, minimum and reorder levels, with lead time (the delay between ordering and receiving) deciding when to reorder, and the economic order quantity balancing ordering costs against holding costs. Stock is monitored by physical stocktaking or by perpetual or continuous records, and valued on a consistent basis such as FIFO, LIFO or average cost. The costs of holding stock include storage, insurance, capital tied up, deterioration, obsolescence and theft; the costs of holding too little include lost sales, dissatisfied customers and expensive emergency orders. Just-in-time stock control reduces holding costs by arranging deliveries to arrive as needed, but it demands reliable suppliers and is fragile when shipping is delayed. Caribbean businesses vulnerable to hurricane, port delay and import price movement must plan stock deliberately rather than by habit, and should record every issue and receipt so that losses and shortages are visible.",
+        "objectives": [
+          "Compare location factors for manufacturing, retail and service businesses",
+          "Describe layout types and their advantages",
+          "Explain purchasing, stock levels, stock valuation and the costs of holding stock"
+        ],
+        "concepts": [
+          "Location factor",
+          "Fixed-position layout",
+          "Process layout",
+          "Cellular layout",
+          "Lead time",
+          "Reorder level",
+          "Economic order quantity",
+          "Just-in-time"
+        ],
+        "experiment": {
+          "type": "site-selector",
+          "description": "Site Selector: Score two sites against location factors and see which suits the business."
+        }
+      },
+      {
+        "id": "pob-l4-3",
+        "title": "Quality, Technology and Sustainable Operations",
+        "content": "Quality means meeting the customer's requirements reliably and consistently - fitness for purpose, with no defects and no unpleasant surprises. Quality control is the traditional approach: inspectors check finished goods, reject faulty items and send work back, which detects faults after the cost has already been incurred. Quality assurance is preventive: standards, specifications, supplier checks, staff training, documented procedures and certification such as ISO 9000 build quality into the process. Total quality management goes further, involving every employee in continuous improvement, giving responsibility for checking work to the people who do it, using statistical process control, benchmarking against the best, and quality circles where staff solve problems in teams. The costs of poor quality are large and often hidden: scrap, rework, warranty claims, returns, lost customers, damaged reputation and, in food and pharmaceuticals, risk to health. Quality brings higher prices, loyal customers, lower waste and easier entry into export markets that set standards - a route Caribbean food, craft and service businesses can take.\n\nTechnology changes how businesses produce, sell and communicate. In production, automation, computer-aided design and manufacture, computer-controlled machines and robotics raise speed, consistency and precision and reduce labour cost per unit, but require capital, skills, maintenance and reliable power. In administration, computers, accounting and payroll software, databases and cloud storage cut paperwork and make information available instantly. In commerce, electronic point-of-sale systems, barcode and inventory systems, e-commerce websites, digital payment platforms, mobile money and social media change how customers buy and how businesses advertise and take payment. In communication, email, video conferencing and messaging allow small firms to serve customers across islands and abroad at low cost. Technology also brings risks: the cost of equipment and obsolescence, cybercrime and fraud, data protection duties, the loss of jobs to automation and the need for continuous retraining. A business adopts technology when it lowers total cost, improves quality or speed, or opens a market it could not otherwise reach - not because the equipment is fashionable.\n\nSustainable operations manage the environmental and social effects of production. Businesses reduce waste by designing products and packaging efficiently, reusing materials, recycling paper, glass, metal, plastic and organics, and cutting energy and water consumption; they control pollution of air, water and land, and manage disposal of hazardous waste such as chemicals, oils and used equipment; they consider renewable energy such as solar, wind and biomass, which is particularly attractive where electricity is expensive; and they source responsibly, favouring local suppliers, sustainable inputs and fair labour practices. Sustainability also creates opportunity: eco-tourism, organic and agro-processed foods, recycled craft products and energy-saving services are growing Caribbean niche markets. Compliance with environmental law is compulsory, but the deeper business case is that waste is cost, energy is cost, and a community's health and goodwill are assets a business cannot buy back once lost.",
+        "objectives": [
+          "Distinguish quality control, quality assurance and total quality management",
+          "Describe how technology affects production, administration and commerce and weigh its risks",
+          "Propose sustainable operating measures and explain their business benefits"
+        ],
+        "concepts": [
+          "Quality control",
+          "Quality assurance",
+          "Total quality management",
+          "Benchmarking",
+          "Automation",
+          "E-commerce",
+          "Waste reduction",
+          "Renewable energy"
+        ],
+        "experiment": {
+          "type": "quality-audit",
+          "description": "Quality Audit: Inspect a production line, find the defects and choose the quality approach that prevents them."
+        }
+      }
+    ]
+  },
+  {
+    "id": "pob-mod-5",
+    "title": "People in Business",
+    "lessons": [
+      {
+        "id": "pob-l5-1",
+        "title": "Human Resource Planning, Recruitment and Training",
+        "content": "Human resource management covers everything to do with the people a business employs: planning how many and what kind of staff are needed, recruiting and selecting them, training and developing them, paying and motivating them, dealing with discipline and grievances, and meeting the legal duties of an employer. Human resource planning forecasts the number and skills of workers required to meet production and sales plans, then compares that demand with the staff available. It produces a plan to recruit new staff, redeploy or retrain existing ones, reduce staff through natural wastage, voluntary redundancy or, as a last resort, compulsory redundancy, and it identifies skills the business will need in future. Planning avoids the twin costs of overstaffing (wages for work that does not exist) and understaffing (lost orders, overtime, exhausted staff and poor service).\n\nRecruitment attracts candidates; selection chooses from among them. The process begins with a job analysis to establish the tasks of the post, from which a job description (duties, responsibilities, conditions) and a person specification (qualifications, experience, skills, attributes) are written. The vacancy is advertised internally or externally - through notices, the organisation's website, newspapers, employment agencies, job centres, schools and colleges, social media and word of mouth - and applicants apply by letter, application form or curriculum vitae. Selection then uses short listing against the person specification, interviews (individual, panel or group), tests of skills or aptitude, references and, for some posts, medical checks, presentations, practical tests and probation. Fair selection means basing decisions on the requirements of the job, asking consistent questions of every candidate, keeping records and avoiding unlawful discrimination on grounds of sex, race, age, religion, marital status or disability; it protects the business from legal claims and from losing good candidates to prejudice.\n\nTraining develops employees so that they can do their work well and take on more. Induction introduces a new employee to the organisation, its rules, safety, colleagues and culture. Off-the-job training - courses, college study, workshops, conferences and simulations - gives broad knowledge away from the pressure of work; on-the-job training - demonstration, coaching, job rotation, mentoring and projects - is practical, cheap and immediately relevant. Apprenticeships and national vocational training agencies combine both, and professional courses and qualifications support promotion. Training benefits the business through higher productivity, better quality, fewer accidents, lower staff turnover and greater flexibility; it benefits employees through skills, confidence, pay and promotion prospects. It costs money, time and lost output, and trained staff may leave for competitors, which is why businesses plan succession and career paths rather than treating training as a one-off. In a small Caribbean business, training is often the difference between a staff member who can run the operation and one who can only follow instructions.",
+        "objectives": [
+          "Describe the human resource planning process and its benefits",
+          "Distinguish recruitment from selection and set out the steps of each",
+          "Compare on-the-job and off-the-job training and evaluate their benefits and costs"
+        ],
+        "concepts": [
+          "Human resource planning",
+          "Job analysis",
+          "Job description",
+          "Person specification",
+          "Short listing",
+          "Induction",
+          "Job rotation",
+          "Succession planning"
+        ],
+        "experiment": {
+          "type": "hire-sim",
+          "description": "Hire Simulator: Write a person specification, advertise, and see which candidate fits the job and the law."
+        }
+      },
+      {
+        "id": "pob-l5-2",
+        "title": "Motivation, Leadership and Communication",
+        "content": "Motivation is the reason people behave as they do at work, and a motivated workforce produces more, better and more safely. Early theories assumed money was the main motivator: Taylor's scientific management broke work into simple tasks and paid by results, which raises output in the short term but ignores the human needs that follow. Mayo's Hawthorne studies showed that attention, group norms and informal relationships affect output as much as pay. Maslow's hierarchy arranges needs from physiological and safety needs, through social and esteem needs, to self-actualisation, and suggests that managers must satisfy each level before the next will motivate. Herzberg distinguished hygiene factors, whose absence causes dissatisfaction but whose presence does not motivate - pay, conditions, supervision, job security, company policy - from motivators, which do raise satisfaction: achievement, recognition, responsibility, advancement and the work itself. McGregor's Theory X assumes workers dislike work and need control, while Theory Y assumes they seek responsibility and can be self-directed; the assumption a manager holds shapes how they manage. In practice, businesses use a mixture of financial rewards (wages and salaries, commission, bonuses, piece rates, profit sharing, fringe benefits) and non-financial rewards (job enrichment and enlargement, rotation, teamwork, praise, responsibility, training, flexible hours, recognition schemes and clear promotion paths), because what motivates differs between people and changes over a career.\n\nLeadership is the process of influencing others to work towards shared goals, and management is the wider task of planning, organising, directing and controlling resources. Leadership styles range from autocratic (decisions made at the top, useful in emergencies and with inexperienced staff but resented by skilled staff), democratic (staff consulted, better decisions and morale but slower), laissez-faire (staff free to decide, suitable for experts but risky without self-discipline), bureaucratic (rule-bound, consistent but rigid) and paternalistic (leader decides in the staff's best interest). The best style depends on the task, the experience of the staff, the time available and the culture of the organisation, and effective leaders adapt - communicating a clear vision, setting an example, delegating, coaching, taking decisions, treating people consistently and giving credit.\n\nCommunication is the business's nervous system. Formal communication flows downward (instructions, policies, feedback), upward (reports, suggestions, grievances) and horizontally (between departments); informal communication spreads through the grapevine and can carry both information and rumour. Methods include meetings, memoranda, reports, notices, manuals, telephone, email, messaging apps, video calls, presentations, consultation committees, newsletters and suggestion schemes. Effective communication needs a clear message, a suitable channel, an appropriate time, an audience the sender understands and, crucially, feedback that confirms the message was received as intended. Barriers include technical language, poor listening, status differences, noise and physical distance, cultural and language differences, selective perception, information overload and the withholding of bad news; too many layers of management distort messages, which is one reason delayering (removing levels of management) reduces cost and improves communication. A business in which staff hear about problems from the grapevine and never from management has a communication failure that will surface as grievance, turnover or poor customer service.",
+        "objectives": [
+          "Compare motivation theories and apply them to a workplace",
+          "Describe leadership styles and choose one for a stated situation",
+          "Explain communication flows, methods and barriers and propose improvements"
+        ],
+        "concepts": [
+          "Motivation",
+          "Hygiene factor",
+          "Motivator",
+          "Theory X and Theory Y",
+          "Autocratic",
+          "Laissez-faire",
+          "Grapevine",
+          "Delayering"
+        ],
+        "experiment": {
+          "type": "motivate-me",
+          "description": "Motivate Me: Build a reward package for a stated employee and check which needs are met and which are ignored."
+        }
+      },
+      {
+        "id": "pob-l5-3",
+        "title": "Industrial Relations, Labour Law and Employee Rights",
+        "content": "Industrial relations is the relationship between employers and employees and their representatives, and in the Caribbean it is conducted within a framework of law, trade unions and collective bargaining. The law sets minimum terms for wages and hours, rest periods and leave, sick and maternity leave, health and safety, termination notice and severance pay, protection against unfair dismissal and unlawful discrimination, and the registration of trade unions. Employers must keep contracts and records, deduct and pay over statutory contributions (such as national insurance and income tax), provide a safe workplace and cannot discipline employees for lawfully belonging to a union or taking part in lawful union activity. Employees owe duties too: attendance, punctuality, competence, obedience to lawful instruction, care of property, honesty, confidentiality and loyalty to the employer.\n\nTrade unions exist to protect and advance their members' interests by negotiating collective agreements on pay, hours, conditions, benefits and grievance procedures; representing members in disputes and disciplinary matters; pressing for safety, training and equality; and providing some benefits and services. Collective bargaining is the process of negotiation between the employer or an employers' association and the union, and a collective agreement usually covers recognition, wages, hours, allowances, leave, overtime, promotion, discipline, redundancy and a dispute procedure. Industrial actions arise when bargaining breaks down: strike (members stop work), work-to-rule (employees follow rules exactly so work slows), go-slow, picketing, overtime ban, lock-out (the employer refuses work) and sit-in. Disputes may be resolved by negotiation, conciliation, mediation or arbitration by an independent party whose decision the parties accept, and most Caribbean territories provide a labour tribunal or industrial court and a labour department to conciliate and adjudicate. The cost of industrial action is borne by everyone: lost wages, lost output and customers, damaged reputation, and a deterioration in the relationship that must continue afterwards, which is why good grievance and communication procedures are economically valuable, not merely fair.\n\nEmployee protection extends into discipline and termination, health and safety and workplace conduct. Discipline should follow a fair procedure: a stated rule, an investigation, notice of the allegation, a hearing at which the employee can be accompanied, a decision proportionate to the offence, and a right of appeal; dismissal may be summary for gross misconduct such as theft, violence or wilful damage, or with notice for unsatisfactory performance after warnings, and redundancy is a separate matter requiring consultation, fair selection criteria and severance pay. Health and safety duties require risk assessment, safe systems of work, protective equipment, training, accident reporting, first aid and worker participation, and employers may be liable for injuries caused by negligence. Harassment and bullying, whether by a manager or a colleague, must be addressed through policy, training and a confidential complaints route, because the employer has a duty of care. Workplaces must also respect data protection, equality and, for young workers, restrictions on hours and dangerous work. The practical lesson is that employment law sets a floor of behaviour: a business that treats it as the whole of employee relations will satisfy inspectors, but a business that builds fair procedures and genuine consultation into its daily practice keeps its skilled staff and avoids the disputes that destroy both morale and profit.",
+        "objectives": [
+          "Describe the legal framework of employment and the duties of employer and employee",
+          "Explain collective bargaining, union rights and forms of industrial action",
+          "Apply fair disciplinary, dismissal and health-and-safety procedures"
+        ],
+        "concepts": [
+          "Industrial relations",
+          "Trade union",
+          "Collective bargaining",
+          "Strike",
+          "Conciliation",
+          "Arbitration",
+          "Summary dismissal",
+          "Duty of care"
+        ],
+        "experiment": {
+          "type": "fair-work-check",
+          "description": "Fair Work Check: Read an employee case, decide whether procedure and law were followed and what the fix is."
+        }
+      }
+    ]
+  },
+  {
+    "id": "pob-mod-6",
+    "title": "Government, Trade and Entrepreneurship",
+    "lessons": [
+      {
+        "id": "pob-l6-1",
+        "title": "Government and Business",
+        "content": "Government is both a regulator of business and a participant in it. As a regulator, government makes and enforces the laws within which businesses operate: company and business registration, consumer protection, labour and employment law, health and safety, environmental protection, weights and measures, food and drug standards, taxes and customs, competition and utilities regulation, and anti-money-laundering rules. Regulation raises costs for business, but it creates the trust that makes trade possible - enforceable contracts, safe products, honest weights, clean competition and confidence that a customer's money and data are secure.\n\nAs a participant and promoter, government does much more. It supplies infrastructure - roads, ports, airports, water, electricity, telecommunications and internet access - that lowers business costs; it provides education and training that supplies skilled labour; it runs public enterprises in utilities, transport and ports, and sometimes competes with private suppliers; it buys goods and services through public procurement, which is itself a major market for local firms; and it offers incentives to industry - tax holidays, duty-free concessions, grants, subsidised credit, export support, free zones and business development grants - usually to encourage investment, exports, employment or production in priority sectors. Agencies such as development banks, investment promotion agencies, standards bureaux, export promotion bodies and small business development companies exist to deliver those policies, and in the Caribbean these include the national development banks, JAMPRO-type investment promotion bodies and small business support programmes in each territory.\n\nTaxation is the most direct link between government and business, and each tax has a different effect. Direct taxes fall on income and profit: company income tax on business profit, personal income tax deducted from wages through Pay As You Earn, and property tax. Indirect taxes fall on spending: general consumption tax, value added tax or sales tax, which is collected by the business and paid over, and customs and excise duties on imports, which raise the price of imported goods and inputs. Other charges include import and export licences, user fees, licences and permits, and social security contributions. Taxes divert resources to public purposes, redistribute income, discourage some activities (tobacco, alcohol, sugar-sweetened drinks, pollution) and protect local industries, but they also raise costs, reduce disposable income and profit, can discourage investment if too high, and leave room for evasion and tax avoidance. Businesses must also plan for monetary policy: the central bank's interest rate affects borrowing costs, and exchange rate movements change the price of imports and the value of export earnings, which is decisive for firms that import stock or raw materials.",
+        "objectives": [
+          "Describe the roles of government as regulator, provider, promoter and buyer",
+          "Distinguish direct and indirect taxes and explain their effects on business",
+          "Explain how monetary policy and exchange rates affect business decisions"
+        ],
+        "concepts": [
+          "Regulation",
+          "Infrastructure",
+          "Public procurement",
+          "Tax incentive",
+          "Direct tax",
+          "Indirect tax",
+          "PAYE",
+          "Monetary policy"
+        ],
+        "experiment": {
+          "type": "policy-sim",
+          "description": "Policy Sim: Change tax rates, interest rates and incentives and see how a sample business's costs and profit respond."
+        }
+      },
+      {
+        "id": "pob-l6-2",
+        "title": "International Trade and Regional Integration",
+        "content": "Countries trade because no country can produce everything it needs efficiently. Absolute advantage means one country can produce a good using fewer resources than another; comparative advantage means it can produce it at a lower opportunity cost, so both countries gain by specialising and trading even if one is better at everything. Trade lets a country sell what it produces cheaply and buy what others produce cheaply, giving consumers wider choice and lower prices, and giving producers larger markets, scale economies, technology and competition to improve. It also brings dependence on foreign markets and supplies, vulnerability to price and demand shocks, competition that can destroy local industries, and for small islands a heavy reliance on imports of food, fuel and manufactured goods. Caribbean exports are concentrated in a few products and services - tourism, energy, minerals, agricultural commodities and some manufactured and processed goods - with the Caribbean diaspora and regional markets absorbing part of the output.\n\nThe balance of payments records a country's transactions with the rest of the world. The current account covers trade in goods (visible trade), services such as tourism, insurance and transport (invisible trade), income from investments and workers' remittances; the capital and financial account records investment flows and loans; and the change in reserves reconciles the two. A current account deficit means the country is importing and paying abroad more than it earns from abroad, and it must be financed by borrowing, selling assets, drawing down reserves or attracting investment. Caribbean responses to persistent deficits include promoting tourism and services exports, developing agro-processing and niche exports, import substitution, renewable energy to cut fuel imports, export diversification, and remittance and diaspora engagement. Trade barriers take the form of tariffs (taxes on imports), quotas (limits on quantity), embargoes (bans), and non-tariff barriers such as standards, licensing, health regulations and administrative delays, which may protect local producers and raise government revenue but raise prices and reduce choice, and can invite retaliation.\n\nRegional integration is the Caribbean's main strategy for overcoming small market size. CARICOM - the Caribbean Community - grew out of CARIFTA and the West Indies Federation, and its instruments include the single market and economy (the CSME) allowing free movement of goods, services, capital and skilled labour; a common external tariff; institutions such as the CARICOM Secretariat, the Caribbean Court of Justice, the Caribbean Development Bank, the Organisation of Eastern Caribbean States and the University of the West Indies; and functional cooperation in health, education, disaster management and security. Caribbean producers also trade under agreements with larger partners, including the Caribbean Basin Initiative, the Economic Partnership Agreement with the European Union, and trade and investment arrangements with Canada, the United States, the United Kingdom, Latin America and, increasingly, China and the diaspora. Integration brings a larger market, stronger bargaining power and shared institutions, but it is limited by differences in size and wealth between members, national interests, transport links between islands, and the difficulty of implementing agreed rules - which is why regional trade policy needs patient, practical cooperation rather than declarations alone.",
+        "objectives": [
+          "Explain absolute and comparative advantage and the benefits and risks of trade",
+          "Interpret the balance of payments and describe types of trade barriers",
+          "Describe CARICOM, the CSME and the benefits and challenges of regional integration"
+        ],
+        "concepts": [
+          "Absolute advantage",
+          "Comparative advantage",
+          "Balance of payments",
+          "Visible trade",
+          "Remittances",
+          "Tariff",
+          "Common external tariff",
+          "CARICOM Single Market"
+        ],
+        "experiment": {
+          "type": "trade-sim",
+          "description": "Trade Sim: Set tariffs and specialisation for two islands and see how the balance of trade and output change."
+        }
+      },
+      {
+        "id": "pob-l6-3",
+        "title": "Entrepreneurship and the Business Plan",
+        "content": "An entrepreneur is a person who starts, organises and takes the risk of a business in the hope of profit. Entrepreneurs identify an opportunity that others have missed, marshal the resources to exploit it - money, people, materials, premises, information - make the decisions and bear the consequences, and introduce something new: a product, a process, a market, a source of supply or a way of organising work. The characteristics associated with successful entrepreneurs are self-confidence, initiative, perseverance, willingness to take calculated risks, leadership, decision making under uncertainty, creativity, planning, hard work, willingness to learn from failure and honesty in dealings, supported by skills in finance, marketing, production and people management. Skills can be learned and bought; attitude cannot. Entrepreneurship matters because new small businesses create most of the new jobs in Caribbean economies, bring new products and services, push existing firms to improve, spread skills and spending through communities and can be started with modest capital - though most new firms fail within a few years, usually from poor planning, undercapitalisation, weak cash control, bad location, poor marketing, neglect of records or personal and family strain.\n\nThe business plan is the chief tool for reducing those risks, and it serves the entrepreneur as much as any bank. Its sections are the executive summary; the business idea and objectives; the description of the business - form of ownership, location, products or services, sector and size; the market analysis, covering the target market, size, trends, customers, competitors and the marketing strategy of product, price, place and promotion; the operational plan, covering production, equipment, suppliers, stock, layout, staff and quality; the management and organisation plan, naming the people and their roles, experience and training; the financial plan with start-up costs, sources of finance, projected sales, costs, profit and cash flow, and an assessment of risk and how each risk will be handled; the record-keeping and legal requirements, including registration, licences and taxes; and any supporting documents - quotations, letters of support, research data, insurance and legal agreements. A plan is not merely paperwork: it forces the entrepreneur to test whether the idea makes money, to identify how much cash is needed and when, and to state how success will be measured.\n\nStarting up is a staged process. The entrepreneur forms the idea, researches the market, tests the concept cheaply (a trial batch, a market stall, a short online shop), prepares the business plan, chooses a legal form and registers it, arranges finance and licenses, secures premises, equipment, suppliers and staff, then launches and monitors results, adjusting as evidence accumulates. Sources of help in the Caribbean include small business development agencies, chambers of commerce, business incubators, national training agencies, development banks, credit unions, microfinance institutions, business development programmes and competitions, and each territory's investment and export promotion agency; the Small Business Act-type legislation in several countries gives small firms access to credit and incentives. Two modern opportunities shape the field: digital tools that let a small firm sell beyond its island at low cost, and sustainability markets - eco-tourism, local food, upcycling and renewable energy services - where Caribbean knowledge and location are genuine advantages. The entrepreneur's essential discipline remains the same: find a real need, meet it reliably, keep accurate records, control cash, listen to customers and price for profit.",
+        "objectives": [
+          "Describe the role, characteristics and skills of the entrepreneur",
+          "Explain the sections of a business plan and their purpose",
+          "Set out the stages of setting up a business and the sources of support available"
+        ],
+        "concepts": [
+          "Entrepreneur",
+          "Enterprise",
+          "Business plan",
+          "Executive summary",
+          "Market analysis",
+          "Financial plan",
+          "Registration",
+          "Business incubator"
+        ],
+        "experiment": {
+          "type": "plan-builder",
+          "description": "Plan Builder: Assemble the sections of a business plan and see which are missing or unrealistic."
+        }
+      }
+    ]
+  }
+]

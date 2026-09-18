@@ -1,0 +1,327 @@
+[
+  {
+    "id": "kc1",
+    "question": "Scarcity in economics means that:",
+    "options": [
+      "Goods are rare in shops",
+      "Resources are limited relative to unlimited wants",
+      "Prices are always high",
+      "Some people are poor"
+    ],
+    "answer": "Resources are limited relative to unlimited wants",
+    "explanation": "Scarcity forces choice, and choice creates opportunity cost.",
+    "topic": "pob-l1-1"
+  },
+  {
+    "id": "kc2",
+    "question": "Which form of business has continuity beyond the life of its owners?",
+    "options": [
+      "Sole trader",
+      "Ordinary partnership",
+      "Limited company",
+      "None of them"
+    ],
+    "answer": "Limited company",
+    "explanation": "A company is a separate legal entity with perpetual succession.",
+    "topic": "pob-l1-2"
+  },
+  {
+    "id": "kc3",
+    "question": "Stakeholders of a business include:",
+    "options": [
+      "Only shareholders",
+      "Owners, employees, customers, suppliers, lenders, government and community",
+      "Only managers",
+      "Only customers"
+    ],
+    "answer": "Owners, employees, customers, suppliers, lenders, government and community",
+    "explanation": "Anyone affected by the business is a stakeholder.",
+    "topic": "pob-l1-3"
+  },
+  {
+    "id": "kc4",
+    "question": "Hire purchase differs from leasing because with hire purchase:",
+    "options": [
+      "The asset is never owned",
+      "Ownership passes to the buyer at the end of the payments",
+      "No interest is charged",
+      "The asset is rented indefinitely"
+    ],
+    "answer": "Ownership passes to the buyer at the end of the payments",
+    "explanation": "Leasing gives use without ownership.",
+    "topic": "pob-l2-1"
+  },
+  {
+    "id": "kc5",
+    "question": "The statement of financial position shows:",
+    "options": [
+      "Profit over a period",
+      "Assets, liabilities and capital at a point in time",
+      "Only cash received",
+      "Sales for the year"
+    ],
+    "answer": "Assets, liabilities and capital at a point in time",
+    "explanation": "It is a snapshot, not a period statement.",
+    "topic": "pob-l2-2"
+  },
+  {
+    "id": "kc6",
+    "question": "Insurable interest means the insured:",
+    "options": [
+      "Pays a premium",
+      "Must stand to lose financially if the event occurs",
+      "Must insure everything",
+      "Has no claim rights"
+    ],
+    "answer": "Must stand to lose financially if the event occurs",
+    "explanation": "It prevents people insuring what they do not own.",
+    "topic": "pob-l2-3"
+  },
+  {
+    "id": "kc7",
+    "question": "The main purpose of market research is to:",
+    "options": [
+      "Increase advertising",
+      "Reduce the risk of making decisions without information",
+      "Replace the marketing mix",
+      "Set prices by law"
+    ],
+    "answer": "Reduce the risk of making decisions without information",
+    "explanation": "Research supports better product, price, place and promotion decisions.",
+    "topic": "pob-l3-1"
+  },
+  {
+    "id": "kc8",
+    "question": "Packaging performs which functions?",
+    "options": [
+      "Protects, identifies, informs and promotes the product",
+      "Only protects the product",
+      "Only promotes the product",
+      "Reduces the price"
+    ],
+    "answer": "Protects, identifies, informs and promotes the product",
+    "explanation": "Packaging also affects cost and waste.",
+    "topic": "pob-l3-2"
+  },
+  {
+    "id": "kc9",
+    "question": "Publicity differs from advertising because publicity is:",
+    "options": [
+      "Paid for",
+      "Unpaid media coverage not controlled by the business",
+      "Always negative",
+      "Only online"
+    ],
+    "answer": "Unpaid media coverage not controlled by the business",
+    "explanation": "It is often more credible but less controllable.",
+    "topic": "pob-l3-3"
+  },
+  {
+    "id": "kc10",
+    "question": "Direct services in tertiary production:",
+    "options": [
+      "Help goods to move and trade",
+      "Serve people personally, such as hairdressing and teaching",
+      "Extract raw materials",
+      "Manufacture goods"
+    ],
+    "answer": "Serve people personally, such as hairdressing and teaching",
+    "explanation": "Commercial services support trade in goods.",
+    "topic": "pob-l4-1"
+  },
+  {
+    "id": "kc11",
+    "question": "Which layout suits shipbuilding?",
+    "options": [
+      "Product layout",
+      "Fixed-position layout",
+      "Cellular layout",
+      "Process layout"
+    ],
+    "answer": "Fixed-position layout",
+    "explanation": "The product is too large to move, so workers and materials come to it.",
+    "topic": "pob-l4-2"
+  },
+  {
+    "id": "kc12",
+    "question": "Quality assurance is best described as:",
+    "options": [
+      "Checking finished goods for faults",
+      "Preventing faults by setting standards and controlling the process",
+      "Paying for warranty claims",
+      "Advertising quality"
+    ],
+    "answer": "Preventing faults by setting standards and controlling the process",
+    "explanation": "It builds quality into production rather than inspecting it afterwards.",
+    "topic": "pob-l4-3"
+  },
+  {
+    "id": "kc13",
+    "question": "Recruitment is:",
+    "options": [
+      "Choosing the best applicant",
+      "Attracting applicants for a vacancy",
+      "Training new staff",
+      "Paying wages"
+    ],
+    "answer": "Attracting applicants for a vacancy",
+    "explanation": "Selection is the process of choosing among them.",
+    "topic": "pob-l5-1"
+  },
+  {
+    "id": "kc14",
+    "question": "Which is a motivator in Herzberg's theory?",
+    "options": [
+      "Salary",
+      "Job security",
+      "Recognition and responsibility",
+      "Working conditions"
+    ],
+    "answer": "Recognition and responsibility",
+    "explanation": "Salary and conditions are hygiene factors.",
+    "topic": "pob-l5-2"
+  },
+  {
+    "id": "kc15",
+    "question": "Which of these is a duty of the employee?",
+    "options": [
+      "Providing protective equipment",
+      "Punctuality, competence and care of the employer's property",
+      "Paying national insurance as the employer",
+      "Setting the wage rate"
+    ],
+    "answer": "Punctuality, competence and care of the employer's property",
+    "explanation": "Employers owe wages, safety and lawful treatment.",
+    "topic": "pob-l5-3"
+  },
+  {
+    "id": "kc16",
+    "question": "Which is an example of indirect tax?",
+    "options": [
+      "Company tax",
+      "Personal income tax",
+      "Value added tax",
+      "Property tax"
+    ],
+    "answer": "Value added tax",
+    "explanation": "Indirect taxes fall on spending and are collected by businesses.",
+    "topic": "pob-l6-1"
+  },
+  {
+    "id": "kc17",
+    "question": "CARICOM's single market aims to allow free movement of:",
+    "options": [
+      "Money only",
+      "Goods, services, capital and skilled labour",
+      "Tourists only",
+      "Raw materials only"
+    ],
+    "answer": "Goods, services, capital and skilled labour",
+    "explanation": "The CSME is the single market and economy.",
+    "topic": "pob-l6-2"
+  },
+  {
+    "id": "kc18",
+    "question": "Which is the best reason for writing a business plan?",
+    "options": [
+      "It is required by law for all businesses",
+      "It tests whether the idea can make money and shows how much cash is needed",
+      "It replaces registration",
+      "It guarantees success"
+    ],
+    "answer": "It tests whether the idea can make money and shows how much cash is needed",
+    "explanation": "It is also used to obtain finance and manage the start-up.",
+    "topic": "pob-l6-3"
+  },
+  {
+    "id": "kc19",
+    "question": "Which of these is a good rather than a service?",
+    "options": [
+      "A haircut",
+      "A loaf of bread",
+      "A bus journey",
+      "A dental check-up"
+    ],
+    "answer": "A loaf of bread",
+    "explanation": "Goods are tangible; services are intangible acts.",
+    "topic": "pob-l1-1"
+  },
+  {
+    "id": "kc20",
+    "question": "A microfinance institution is useful to a small Caribbean business because it:",
+    "options": [
+      "Lends large sums only to companies",
+      "Provides small loans and support that banks may refuse",
+      "Offers only insurance",
+      "Collects taxes"
+    ],
+    "answer": "Provides small loans and support that banks may refuse",
+    "explanation": "Microfinance and credit unions serve small borrowers.",
+    "topic": "pob-l2-1"
+  },
+  {
+    "id": "kc21",
+    "question": "Which records would a business use to control what customers owe?",
+    "options": [
+      "The wages book",
+      "The sales and debtors records",
+      "The stock records only",
+      "The payroll"
+    ],
+    "answer": "The sales and debtors records",
+    "explanation": "Debtor control speeds up cash collection.",
+    "topic": "pob-l2-2"
+  },
+  {
+    "id": "kc22",
+    "question": "Product development decisions are guided mainly by:",
+    "options": [
+      "The owner's preference",
+      "The needs of the target market",
+      "Competitors' prices alone",
+      "The cost of packaging only"
+    ],
+    "answer": "The needs of the target market",
+    "explanation": "Products are designed to satisfy identified customer needs.",
+    "topic": "pob-l3-2"
+  },
+  {
+    "id": "kc23",
+    "question": "Stock valuation on a consistent basis matters because:",
+    "options": [
+      "It changes the amount of profit reported and the tax due",
+      "It affects employee wages",
+      "It sets the selling price directly",
+      "It replaces stocktaking"
+    ],
+    "answer": "It changes the amount of profit reported and the tax due",
+    "explanation": "FIFO, LIFO and average cost give different values.",
+    "topic": "pob-l4-2"
+  },
+  {
+    "id": "kc24",
+    "question": "Communication in a business is effective when:",
+    "options": [
+      "The message is sent by email",
+      "The receiver understands the message as intended and can give feedback",
+      "It is written down",
+      "It is sent to everyone"
+    ],
+    "answer": "The receiver understands the message as intended and can give feedback",
+    "explanation": "Feedback confirms understanding.",
+    "topic": "pob-l5-2"
+  },
+  {
+    "id": "kc25",
+    "question": "Infrastructure such as roads, ports and reliable electricity helps business by:",
+    "options": [
+      "Raising transport and production costs",
+      "Lowering business costs and widening markets",
+      "Replacing private investment",
+      "Removing the need for insurance"
+    ],
+    "answer": "Lowering business costs and widening markets",
+    "explanation": "Public infrastructure is a foundation for private activity.",
+    "topic": "pob-l6-1"
+  }
+]
