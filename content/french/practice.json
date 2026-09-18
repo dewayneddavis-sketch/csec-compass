@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "p1",
+    "question": "Which word means 'my mother'?",
+    "options": [
+      "mon père",
+      "ma mère",
+      "mes parents",
+      "ma sœur"
+    ],
+    "answer": "ma mère",
+    "explanation": "mère is feminine, so the possessive adjective is ma: ma mère.",
+    "topic": "fre-l1-1"
+  },
+  {
+    "id": "p2",
+    "question": "Complete: J'___ quinze ans.",
+    "options": [
+      "suis",
+      "ai",
+      "est",
+      "as"
+    ],
+    "answer": "ai",
+    "explanation": "Age is given with avoir: J'ai quinze ans (literally 'I have fifteen years').",
+    "topic": "fre-l1-1"
+  },
+  {
+    "id": "p3",
+    "question": "Which sentence is correct?",
+    "options": [
+      "Je suis seize ans.",
+      "J'ai seize ans.",
+      "J'ai seize année.",
+      "Je ai seize ans."
+    ],
+    "answer": "J'ai seize ans.",
+    "explanation": "Use avoir for age, and note the elision J'ai (not 'je ai').",
+    "topic": "fre-l1-1"
+  },
+  {
+    "id": "p4",
+    "question": "What does 'les grands-parents' mean?",
+    "options": [
+      "the great friends",
+      "the grandparents",
+      "the grown-ups",
+      "the parents-in-law"
+    ],
+    "answer": "the grandparents",
+    "explanation": "grands-parents = grandparents; les petits-enfants = grandchildren.",
+    "topic": "fre-l1-1"
+  },
+  {
+    "id": "p5",
+    "question": "Choose the correct form: ___ frère s'appelle Marc.",
+    "options": [
+      "Ma",
+      "Mon",
+      "Mes",
+      "Moi"
+    ],
+    "answer": "Mon",
+    "explanation": "frère is masculine singular, so mon frère.",
+    "topic": "fre-l1-1"
+  },
+  {
+    "id": "p6",
+    "question": "How would you say 'my aunt is married'?",
+    "options": [
+      "Ma tante est mariée.",
+      "Ma tante a marié.",
+      "Ma tante est marié.",
+      "Mon tante est mariée."
+    ],
+    "answer": "Ma tante est mariée.",
+    "explanation": "tante is feminine (ma tante) and the adjective agrees: mariée.",
+    "topic": "fre-l1-1"
+  },
+  {
+    "id": "p7",
+    "question": "Which sentence describes hair correctly?",
+    "options": [
+      "Elle a les cheveux longs.",
+      "Elle est les cheveux longs.",
+      "Elle a les cheveux long.",
+      "Elle est cheveux longs."
+    ],
+    "answer": "Elle a les cheveux longs.",
+    "explanation": "Hair and eyes use avoir, and the adjective agrees with cheveux (masculine plural): longs.",
+    "topic": "fre-l1-2"
+  },
+  {
+    "id": "p8",
+    "question": "Which adjective goes BEFORE the noun?",
+    "options": [
+      "intelligent",
+      "petit",
+      "sportif",
+      "bavard"
+    ],
+    "answer": "petit",
+    "explanation": "Short, common adjectives such as petit, grand, jeune, beau and bon come before the noun: un petit garçon.",
+    "topic": "fre-l1-2"
+  },
+  {
+    "id": "p9",
+    "question": "What is the feminine of 'travailleur'?",
+    "options": [
+      "travailleure",
+      "travailleuse",
+      "travailleureuse",
+      "travailleur"
+    ],
+    "answer": "travailleuse",
+    "explanation": "Adjectives ending in -eur form the feminine in -euse: travailleur / travailleuse.",
+    "topic": "fre-l1-2"
+  },
+  {
+    "id": "p10",
+    "question": "Complete: Mon frère est plus grand ___ moi.",
+    "options": [
+      "de",
+      "que",
+      "comme",
+      "à"
+    ],
+    "answer": "que",
+    "explanation": "Comparatives use plus ... que: plus grand que moi.",
+    "topic": "fre-l1-2"
+  },
+  {
+    "id": "p11",
+    "question": "Which is the correct plural?",
+    "options": [
+      "des yeux bleu",
+      "des yeux bleus",
+      "des oeil bleus",
+      "des yeux bleues"
+    ],
+    "answer": "des yeux bleus",
+    "explanation": "yeux is masculine plural, so the adjective adds -s: bleus.",
+    "topic": "fre-l1-2"
+  },
+  {
+    "id": "p12",
+    "question": "What does 'Elle est paresseuse' mean?",
+    "options": [
+      "She is hard-working.",
+      "She is lazy.",
+      "She is shy.",
+      "She is kind."
+    ],
+    "answer": "She is lazy.",
+    "explanation": "paresseux / paresseuse = lazy; travailleur / travailleuse = hard-working.",
+    "topic": "fre-l1-2"
+  },
+  {
+    "id": "p13",
+    "question": "Which room is 'la cuisine'?",
+    "options": [
+      "the bedroom",
+      "the kitchen",
+      "the bathroom",
+      "the living room"
+    ],
+    "answer": "the kitchen",
+    "explanation": "la cuisine = kitchen; la chambre = bedroom; la salle de bains = bathroom.",
+    "topic": "fre-l1-3"
+  },
+  {
+    "id": "p14",
+    "question": "Complete: Dans ma chambre il y ___ un lit.",
+    "options": [
+      "est",
+      "a",
+      "sont",
+      "ont"
+    ],
+    "answer": "a",
+    "explanation": "il y a = there is / there are.",
+    "topic": "fre-l1-3"
+  },
+  {
+    "id": "p15",
+    "question": "Which sentence is negative and correct?",
+    "options": [
+      "Il y a pas de garage.",
+      "Il n'y a pas de garage.",
+      "Il n'y a pas un garage.",
+      "Il y n'a pas garage."
+    ],
+    "answer": "Il n'y a pas de garage.",
+    "explanation": "The negative of il y a is il n'y a pas de + noun.",
+    "topic": "fre-l1-3"
+  },
+  {
+    "id": "p16",
+    "question": "Where is the table? 'La table est ___ la fenêtre.' (in front of)",
+    "options": [
+      "derrière",
+      "devant",
+      "sous",
+      "sur"
+    ],
+    "answer": "devant",
+    "explanation": "devant = in front of; derrière = behind.",
+    "topic": "fre-l1-3"
+  },
+  {
+    "id": "p17",
+    "question": "What does 'J'habite à Kingston' mean?",
+    "options": [
+      "I am going to Kingston.",
+      "I live in Kingston.",
+      "I come from Kingston.",
+      "I work in Kingston."
+    ],
+    "answer": "I live in Kingston.",
+    "explanation": "habiter à + place = to live in a place.",
+    "topic": "fre-l1-3"
+  },
+  {
+    "id": "p18",
+    "question": "Which word means 'the neighbourhood'?",
+    "options": [
+      "le quartier",
+      "le jardin",
+      "le toit",
+      "l'escalier"
+    ],
+    "answer": "le quartier",
+    "explanation": "le quartier = the neighbourhood or area.",
+    "topic": "fre-l1-3"
+  },
+  {
+    "id": "p19",
+    "question": "Which is a school subject?",
+    "options": [
+      "la boulangerie",
+      "la biologie",
+      "la bibliothèque",
+      "la cantine"
+    ],
+    "answer": "la biologie",
+    "explanation": "la biologie is a subject; la bibliothèque is the library and la cantine is the canteen.",
+    "topic": "fre-l2-1"
+  },
+  {
+    "id": "p20",
+    "question": "How do you say 2.30 p.m. in French?",
+    "options": [
+      "deux heures et demie",
+      "quatorze heures et demie",
+      "deux heures et quart",
+      "quatorze heures moins le quart"
+    ],
+    "answer": "quatorze heures et demie",
+    "explanation": "French timetables use the 24-hour clock: 14.30 = quatorze heures et demie.",
+    "topic": "fre-l2-1"
+  },
+  {
+    "id": "p21",
+    "question": "Complete: J'___ la physique le lundi.",
+    "options": [
+      "étudies",
+      "étudie",
+      "étudions",
+      "étudier"
+    ],
+    "answer": "étudie",
+    "explanation": "First person singular of a regular -er verb: j'étudie.",
+    "topic": "fre-l2-1"
+  },
+  {
+    "id": "p22",
+    "question": "Which sentence gives an opinion?",
+    "options": [
+      "J'ai un cours d'anglais.",
+      "J'aime l'anglais parce que c'est intéressant.",
+      "Le cours commence à huit heures.",
+      "Ma salle de classe est grande."
+    ],
+    "answer": "J'aime l'anglais parce que c'est intéressant.",
+    "explanation": "J'aime ... parce que + adjective is the standard opinion structure.",
+    "topic": "fre-l2-1"
+  },
+  {
+    "id": "p23",
+    "question": "What is 'l'emploi du temps'?",
+    "options": [
+      "the homework",
+      "the timetable",
+      "the exam",
+      "the school bag"
+    ],
+    "answer": "the timetable",
+    "explanation": "l'emploi du temps = the timetable; les devoirs = homework.",
+    "topic": "fre-l2-1"
+  },
+  {
+    "id": "p24",
+    "question": "Which means 'boring'?",
+    "options": [
+      "intéressant",
+      "ennuyeux",
+      "facile",
+      "utile"
+    ],
+    "answer": "ennuyeux",
+    "explanation": "ennuyeux = boring; intéressant = interesting.",
+    "topic": "fre-l2-1"
+  },
+  {
+    "id": "p25",
+    "question": "Which is the feminine of 'un infirmier'?",
+    "options": [
+      "une infirmier",
+      "une infirmière",
+      "une infirmiere",
+      "une infirmieur"
+    ],
+    "answer": "une infirmière",
+    "explanation": "un infirmier / une infirmière = nurse.",
+    "topic": "fre-l2-2"
+  },
+  {
+    "id": "p26",
+    "question": "Which is the polite way to say what you would like to be?",
+    "options": [
+      "Je veux être médecin.",
+      "Je voudrais être médecin.",
+      "Je suis médecin.",
+      "Je serai être médecin."
+    ],
+    "answer": "Je voudrais être médecin.",
+    "explanation": "je voudrais (conditional) is the polite form of je veux.",
+    "topic": "fre-l2-2"
+  },
+  {
+    "id": "p27",
+    "question": "Complete: Je voudrais être professeur ___ j'aime aider les jeunes.",
+    "options": [
+      "mais",
+      "parce que",
+      "donc",
+      "ou"
+    ],
+    "answer": "parce que",
+    "explanation": "parce que gives a reason: 'because I like helping young people'.",
+    "topic": "fre-l2-2"
+  },
+  {
+    "id": "p28",
+    "question": "Where does a pilot work?",
+    "options": [
+      "à l'hôpital",
+      "à l'aéroport",
+      "au bureau",
+      "à l'usine"
+    ],
+    "answer": "à l'aéroport",
+    "explanation": "un pilote works at l'aéroport (the airport).",
+    "topic": "fre-l2-2"
+  },
+  {
+    "id": "p29",
+    "question": "Which quality suits a nurse?",
+    "options": [
+      "impatient",
+      "patient",
+      "paresseux",
+      "distrait"
+    ],
+    "answer": "patient",
+    "explanation": "A nurse must be patient (patient / patiente).",
+    "topic": "fre-l2-2"
+  },
+  {
+    "id": "p30",
+    "question": "What does 'Je veux travailler dans un hôtel' mean?",
+    "options": [
+      "I want to work in a hotel.",
+      "I want to work in a hospital.",
+      "I work in a hotel.",
+      "I would work in a hotel."
+    ],
+    "answer": "I want to work in a hotel.",
+    "explanation": "travailler dans un hôtel = to work in a hotel.",
+    "topic": "fre-l2-2"
+  },
+  {
+    "id": "p31",
+    "question": "What is the future stem of 'aller'?",
+    "options": [
+      "all-",
+      "ir-",
+      "ser-",
+      "aur-"
+    ],
+    "answer": "ir-",
+    "explanation": "aller has the irregular future stem ir-: j'irai, tu iras.",
+    "topic": "fre-l2-3"
+  },
+  {
+    "id": "p32",
+    "question": "Complete: L'année prochaine, je ___ à l'université.",
+    "options": [
+      "vais",
+      "irai",
+      "allais",
+      "suis allé"
+    ],
+    "answer": "irai",
+    "explanation": "The future time marker l'année prochaine needs the future tense: j'irai.",
+    "topic": "fre-l2-3"
+  },
+  {
+    "id": "p33",
+    "question": "Which is the immediate future?",
+    "options": [
+      "je travaillerai",
+      "je vais travailler",
+      "je travaillais",
+      "j'ai travaillé"
+    ],
+    "answer": "je vais travailler",
+    "explanation": "aller + infinitive = immediate future (going to work).",
+    "topic": "fre-l2-3"
+  },
+  {
+    "id": "p34",
+    "question": "Complete: Si j'obtiens une bourse, je ___ en France.",
+    "options": [
+      "voyage",
+      "voyagerai",
+      "voyageais",
+      "ai voyagé"
+    ],
+    "answer": "voyagerai",
+    "explanation": "si + present is followed by the future: je voyagerai.",
+    "topic": "fre-l2-3"
+  },
+  {
+    "id": "p35",
+    "question": "Future of 'être' in the first person?",
+    "options": [
+      "je serai",
+      "je serais",
+      "j'aurai",
+      "je suis"
+    ],
+    "answer": "je serai",
+    "explanation": "être has the future stem ser-: je serai (I will be).",
+    "topic": "fre-l2-3"
+  },
+  {
+    "id": "p36",
+    "question": "Complete: Je joue ___ football.",
+    "options": [
+      "à le",
+      "au",
+      "à la",
+      "aux"
+    ],
+    "answer": "au",
+    "explanation": "jouer à + le contracts to au: je joue au football.",
+    "topic": "fre-l3-1"
+  },
+  {
+    "id": "p37",
+    "question": "Complete: Elle fait ___ natation.",
+    "options": [
+      "de le",
+      "du",
+      "de la",
+      "des"
+    ],
+    "answer": "de la",
+    "explanation": "faire de + la = de la: elle fait de la natation.",
+    "topic": "fre-l3-1"
+  },
+  {
+    "id": "p38",
+    "question": "Which sentence is correct?",
+    "options": [
+      "Je fais du cricket.",
+      "Je joue du cricket.",
+      "Je fais au cricket.",
+      "Je joue à le cricket."
+    ],
+    "answer": "Je fais du cricket.",
+    "explanation": "Both faire du and jouer au are used with ball games; 'faire au' and 'jouer du' are wrong.",
+    "topic": "fre-l3-1"
+  },
+  {
+    "id": "p39",
+    "question": "What does 'deux fois par semaine' mean?",
+    "options": [
+      "twice a week",
+      "two weeks ago",
+      "every two weeks",
+      "two times daily"
+    ],
+    "answer": "twice a week",
+    "explanation": "deux fois par semaine = twice a week.",
+    "topic": "fre-l3-1"
+  },
+  {
+    "id": "p40",
+    "question": "Complete: Je joue au cricket ___ cinq ans.",
+    "options": [
+      "pour",
+      "depuis",
+      "pendant",
+      "dans"
+    ],
+    "answer": "depuis",
+    "explanation": "depuis + present tense expresses duration: I have played for five years.",
+    "topic": "fre-l3-1"
+  },
+  {
+    "id": "p41",
+    "question": "Where do you swim?",
+    "options": [
+      "au stade",
+      "à la piscine",
+      "au terrain",
+      "au court"
+    ],
+    "answer": "à la piscine",
+    "explanation": "à la piscine = at the swimming pool.",
+    "topic": "fre-l3-1"
+  },
+  {
+    "id": "p42",
+    "question": "Which verb takes 'être' in the perfect tense?",
+    "options": [
+      "regarder",
+      "jouer",
+      "aller",
+      "écouter"
+    ],
+    "answer": "aller",
+    "explanation": "Verbs of movement such as aller take être: je suis allé(e).",
+    "topic": "fre-l3-2"
+  },
+  {
+    "id": "p43",
+    "question": "Complete: Hier soir, j'___ un film.",
+    "options": [
+      "ai regardé",
+      "suis regardé",
+      "regardais",
+      "regarde"
+    ],
+    "answer": "ai regardé",
+    "explanation": "regarder takes avoir: j'ai regardé un film.",
+    "topic": "fre-l3-2"
+  },
+  {
+    "id": "p44",
+    "question": "Which is the correct agreement?",
+    "options": [
+      "Elle est allé au cinéma.",
+      "Elle est allée au cinéma.",
+      "Elle a allée au cinéma.",
+      "Elle est aller au cinéma."
+    ],
+    "answer": "Elle est allée au cinéma.",
+    "explanation": "With être the past participle agrees with the subject: elle est allée.",
+    "topic": "fre-l3-2"
+  },
+  {
+    "id": "p45",
+    "question": "What does 'Quand j'étais petit, je jouais au football' describe?",
+    "options": [
+      "a single finished action",
+      "a habit in the past",
+      "a future plan",
+      "a present habit"
+    ],
+    "answer": "a habit in the past",
+    "explanation": "The imperfect describes repeated or habitual past actions.",
+    "topic": "fre-l3-2"
+  },
+  {
+    "id": "p46",
+    "question": "Which means 'I love reading'?",
+    "options": [
+      "J'adore lire.",
+      "Je déteste lire.",
+      "Je préfère lire.",
+      "Je n'aime pas lire."
+    ],
+    "answer": "J'adore lire.",
+    "explanation": "j'adore = I love; je déteste = I hate.",
+    "topic": "fre-l3-2"
+  },
+  {
+    "id": "p47",
+    "question": "Complete: Nous ___ restés à la maison.",
+    "options": [
+      "avons",
+      "sommes",
+      "êtes",
+      "ont"
+    ],
+    "answer": "sommes",
+    "explanation": "rester takes être: nous sommes restés.",
+    "topic": "fre-l3-2"
+  },
+  {
+    "id": "p48",
+    "question": "Which is healthy advice?",
+    "options": [
+      "Il faut manger plus de légumes.",
+      "Il faut fumer.",
+      "Il faut boire des boissons sucrées.",
+      "Il ne faut pas faire de sport."
+    ],
+    "answer": "Il faut manger plus de légumes.",
+    "explanation": "il faut + infinitive gives impersonal advice: you must eat more vegetables.",
+    "topic": "fre-l3-3"
+  },
+  {
+    "id": "p49",
+    "question": "Complete: Je bois beaucoup ___ eau.",
+    "options": [
+      "de l'",
+      "du",
+      "le",
+      "des"
+    ],
+    "answer": "de l'",
+    "explanation": "eau is feminine and begins with a vowel: de l'eau.",
+    "topic": "fre-l3-3"
+  },
+  {
+    "id": "p50",
+    "question": "Negative form: Je ne mange pas ___ viande.",
+    "options": [
+      "de la",
+      "de",
+      "du",
+      "la"
+    ],
+    "answer": "de",
+    "explanation": "After a negative, du/de la/des become de: je ne mange pas de viande.",
+    "topic": "fre-l3-3"
+  },
+  {
+    "id": "p51",
+    "question": "What does 'en bonne forme' mean?",
+    "options": [
+      "in good shape",
+      "in hospital",
+      "out of breath",
+      "well behaved"
+    ],
+    "answer": "in good shape",
+    "explanation": "être en bonne forme = to be fit.",
+    "topic": "fre-l3-3"
+  },
+  {
+    "id": "p52",
+    "question": "Which food belongs to 'les produits laitiers'?",
+    "options": [
+      "le poisson",
+      "le fromage",
+      "le riz",
+      "les haricots"
+    ],
+    "answer": "le fromage",
+    "explanation": "Dairy products (produits laitiers) include le fromage, le lait and le yaourt.",
+    "topic": "fre-l3-3"
+  },
+  {
+    "id": "p53",
+    "question": "Complete: Je ___ lève à six heures.",
+    "options": [
+      "me",
+      "se",
+      "te",
+      "nous"
+    ],
+    "answer": "me",
+    "explanation": "Reflexive verb se lever: je me lève.",
+    "topic": "fre-l4-1"
+  },
+  {
+    "id": "p54",
+    "question": "What time is 'sept heures moins le quart'?",
+    "options": [
+      "6.45",
+      "7.15",
+      "7.45",
+      "6.15"
+    ],
+    "answer": "6.45",
+    "explanation": "moins le quart = quarter to: 6.45.",
+    "topic": "fre-l4-1"
+  },
+  {
+    "id": "p55",
+    "question": "Complete: Nous ___ brossons les dents.",
+    "options": [
+      "se",
+      "me",
+      "nous",
+      "vous"
+    ],
+    "answer": "nous",
+    "explanation": "The reflexive pronoun matches the subject: nous nous brossons.",
+    "topic": "fre-l4-1"
+  },
+  {
+    "id": "p56",
+    "question": "Which connective shows the next event in a sequence?",
+    "options": [
+      "mais",
+      "ensuite",
+      "parce que",
+      "jamais"
+    ],
+    "answer": "ensuite",
+    "explanation": "ensuite = then / next; d'abord = first, enfin = finally.",
+    "topic": "fre-l4-1"
+  },
+  {
+    "id": "p57",
+    "question": "What does 'Je me couche vers dix heures' mean?",
+    "options": [
+      "I go to bed around ten.",
+      "I get up at ten.",
+      "I have a bath at ten.",
+      "I go out at ten."
+    ],
+    "answer": "I go to bed around ten.",
+    "explanation": "se coucher = to go to bed; vers = around (time).",
+    "topic": "fre-l4-1"
+  },
+  {
+    "id": "p58",
+    "question": "What does 'faire la vaisselle' mean?",
+    "options": [
+      "to make the bed",
+      "to wash up",
+      "to do the washing",
+      "to tidy the room"
+    ],
+    "answer": "to wash up",
+    "explanation": "faire la vaisselle = to wash the dishes; faire le lit = to make the bed.",
+    "topic": "fre-l4-2"
+  },
+  {
+    "id": "p59",
+    "question": "Which sentence expresses obligation?",
+    "options": [
+      "Je dois ranger ma chambre.",
+      "Je range ma chambre.",
+      "J'aime ranger ma chambre.",
+      "Je vais ranger ma chambre."
+    ],
+    "answer": "Je dois ranger ma chambre.",
+    "explanation": "devoir + infinitive expresses obligation: I must tidy my room.",
+    "topic": "fre-l4-2"
+  },
+  {
+    "id": "p60",
+    "question": "Complete: Hier, j'___ la lessive.",
+    "options": [
+      "ai fait",
+      "suis fait",
+      "faisais",
+      "fais"
+    ],
+    "answer": "ai fait",
+    "explanation": "faire has the irregular past participle fait: j'ai fait la lessive.",
+    "topic": "fre-l4-2"
+  },
+  {
+    "id": "p61",
+    "question": "Which chore happens outdoors?",
+    "options": [
+      "sortir les poubelles",
+      "mettre la table",
+      "faire le lit",
+      "passer l'aspirateur"
+    ],
+    "answer": "sortir les poubelles",
+    "explanation": "sortir les poubelles = to take out the rubbish.",
+    "topic": "fre-l4-2"
+  },
+  {
+    "id": "p62",
+    "question": "What does 'une fois par semaine' mean?",
+    "options": [
+      "once a week",
+      "once a month",
+      "every day",
+      "one week ago"
+    ],
+    "answer": "once a week",
+    "explanation": "une fois par semaine = once a week.",
+    "topic": "fre-l4-2"
+  },
+  {
+    "id": "p63",
+    "question": "Which is a weekend activity?",
+    "options": [
+      "faire les courses",
+      "passer un examen",
+      "prendre l'avion à midi",
+      "aller au travail"
+    ],
+    "answer": "faire les courses",
+    "explanation": "faire les courses = to do the shopping, a typical Saturday activity.",
+    "topic": "fre-l4-3"
+  },
+  {
+    "id": "p64",
+    "question": "Complete: Le samedi, je ___ mes amis au terrain.",
+    "options": [
+      "retrouve",
+      "retrouvé",
+      "retrouvais",
+      "retrouverai"
+    ],
+    "answer": "retrouve",
+    "explanation": "The present tense describes a regular weekend routine: je retrouve.",
+    "topic": "fre-l4-3"
+  },
+  {
+    "id": "p65",
+    "question": "Which festival comes before Lent?",
+    "options": [
+      "Noël",
+      "le Carnaval",
+      "la Fête de la Musique",
+      "le Nouvel An"
+    ],
+    "answer": "le Carnaval",
+    "explanation": "Carnival is celebrated in the days before Lent, with processions and costumes.",
+    "topic": "fre-l4-3"
+  },
+  {
+    "id": "p66",
+    "question": "Complete: L'année dernière, je ___ allé en Guadeloupe.",
+    "options": [
+      "ai",
+      "suis",
+      "étais",
+      "vais"
+    ],
+    "answer": "suis",
+    "explanation": "aller takes être: je suis allé(e).",
+    "topic": "fre-l4-3"
+  },
+  {
+    "id": "p67",
+    "question": "What does 'il faisait très beau' mean?",
+    "options": [
+      "It is very beautiful.",
+      "The weather was lovely.",
+      "He is very handsome.",
+      "It was very noisy."
+    ],
+    "answer": "The weather was lovely.",
+    "explanation": "In the imperfect, il faisait beau describes past weather.",
+    "topic": "fre-l4-3"
+  },
+  {
+    "id": "p68",
+    "question": "Which phrase gives a past opinion?",
+    "options": [
+      "C'était magnifique.",
+      "C'est magnifique.",
+      "Ce sera magnifique.",
+      "C'est mieux."
+    ],
+    "answer": "C'était magnifique.",
+    "explanation": "c'était = it was (imperfect), used for a past opinion.",
+    "topic": "fre-l4-3"
+  },
+  {
+    "id": "p69",
+    "question": "Where do you buy bread?",
+    "options": [
+      "à la boucherie",
+      "à la boulangerie",
+      "à la pharmacie",
+      "à la poissonnerie"
+    ],
+    "answer": "à la boulangerie",
+    "explanation": "la boulangerie sells bread and pastries.",
+    "topic": "fre-l5-1"
+  },
+  {
+    "id": "p70",
+    "question": "Which is the correct French number for 90?",
+    "options": [
+      "quatre-vingt-dix",
+      "nonante",
+      "quatre-vingts-dix",
+      "dix-quatre-vingt"
+    ],
+    "answer": "quatre-vingt-dix",
+    "explanation": "French counts 90 as quatre-vingt-dix (four twenties and ten).",
+    "topic": "fre-l5-1"
+  },
+  {
+    "id": "p71",
+    "question": "Complete: Je voudrais un kilo ___ riz.",
+    "options": [
+      "de",
+      "du",
+      "le",
+      "des"
+    ],
+    "answer": "de",
+    "explanation": "Quantity expressions take de + noun with no article: un kilo de riz.",
+    "topic": "fre-l5-1"
+  },
+  {
+    "id": "p72",
+    "question": "How do you ask the price politely?",
+    "options": [
+      "Combien coûte ce melon?",
+      "Combien est ce melon?",
+      "Quel prix ce melon?",
+      "Combien ce melon coûter?"
+    ],
+    "answer": "Combien coûte ce melon?",
+    "explanation": "Combien coûte + singular noun (coûtent for plural).",
+    "topic": "fre-l5-1"
+  },
+  {
+    "id": "p73",
+    "question": "Complete: Je voudrais ___ eau minérale.",
+    "options": [
+      "une bouteille de",
+      "une bouteille du",
+      "un bouteille de",
+      "une bouteille de l'"
+    ],
+    "answer": "une bouteille de",
+    "explanation": "une bouteille de + noun: une bouteille d'eau minérale.",
+    "topic": "fre-l5-1"
+  },
+  {
+    "id": "p74",
+    "question": "What does 'C'est trop cher' mean?",
+    "options": [
+      "It is too expensive.",
+      "It is very cheap.",
+      "It is free.",
+      "It is too small."
+    ],
+    "answer": "It is too expensive.",
+    "explanation": "trop cher = too expensive; bon marché = cheap.",
+    "topic": "fre-l5-1"
+  },
+  {
+    "id": "p75",
+    "question": "Which item do you wear on your feet?",
+    "options": [
+      "la chemise",
+      "les chaussures",
+      "la casquette",
+      "la jupe"
+    ],
+    "answer": "les chaussures",
+    "explanation": "les chaussures = shoes, always plural.",
+    "topic": "fre-l5-2"
+  },
+  {
+    "id": "p76",
+    "question": "Complete: Elle porte une robe ___.",
+    "options": [
+      "blanc",
+      "blanche",
+      "blanches",
+      "blancs"
+    ],
+    "answer": "blanche",
+    "explanation": "robe is feminine singular, so the colour agrees: blanche.",
+    "topic": "fre-l5-2"
+  },
+  {
+    "id": "p77",
+    "question": "How do you ask to try something on?",
+    "options": [
+      "Est-ce que je peux l'essayer?",
+      "Est-ce que je peux le porter?",
+      "Combien coûte-t-il?",
+      "Avez-vous une taille?"
+    ],
+    "answer": "Est-ce que je peux l'essayer?",
+    "explanation": "essayer = to try (on): je peux l'essayer?",
+    "topic": "fre-l5-2"
+  },
+  {
+    "id": "p78",
+    "question": "What does 'trop serré' mean?",
+    "options": [
+      "too loose",
+      "too tight",
+      "too long",
+      "too expensive"
+    ],
+    "answer": "too tight",
+    "explanation": "serré = tight; large = loose.",
+    "topic": "fre-l5-2"
+  },
+  {
+    "id": "p79",
+    "question": "Which colour is invariable (does not change)?",
+    "options": [
+      "vert",
+      "marron",
+      "bleu",
+      "noir"
+    ],
+    "answer": "marron",
+    "explanation": "marron and orange are invariable in gender and number: des chaussures marron.",
+    "topic": "fre-l5-2"
+  },
+  {
+    "id": "p80",
+    "question": "What is 'le petit déjeuner'?",
+    "options": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "a snack"
+    ],
+    "answer": "breakfast",
+    "explanation": "petit déjeuner = breakfast; déjeuner = lunch; dîner = dinner.",
+    "topic": "fre-l5-3"
+  },
+  {
+    "id": "p81",
+    "question": "Complete: Je voudrais un jus ___ orange.",
+    "options": [
+      "de l'",
+      "d'",
+      "du",
+      "des"
+    ],
+    "answer": "d'",
+    "explanation": "jus d'orange: de elides before a vowel.",
+    "topic": "fre-l5-3"
+  },
+  {
+    "id": "p82",
+    "question": "How do you ask for the bill?",
+    "options": [
+      "L'addition, s'il vous plaît.",
+      "Le menu, s'il vous plaît.",
+      "Le pourboire, s'il vous plaît.",
+      "La carte, s'il vous plaît."
+    ],
+    "answer": "L'addition, s'il vous plaît.",
+    "explanation": "l'addition = the bill; la carte = the menu.",
+    "topic": "fre-l5-3"
+  },
+  {
+    "id": "p83",
+    "question": "What does 'bien frais' mean?",
+    "options": [
+      "very fresh",
+      "quite cold",
+      "too ripe",
+      "well cooked"
+    ],
+    "answer": "very fresh",
+    "explanation": "frais / fraîche = fresh; trop mûr = overripe.",
+    "topic": "fre-l5-3"
+  },
+  {
+    "id": "p84",
+    "question": "Which sentence is in a market?",
+    "options": [
+      "C'est combien le kilo de tomates?",
+      "Je voudrais deux billets pour le train.",
+      "Quelle est votre taille?",
+      "Je peux essayer cette chemise?"
+    ],
+    "answer": "C'est combien le kilo de tomates?",
+    "explanation": "Market shopping asks about the price per kilo.",
+    "topic": "fre-l5-3"
+  },
+  {
+    "id": "p85",
+    "question": "Which word means 'spicy'?",
+    "options": [
+      "sucré",
+      "salé",
+      "épicé",
+      "délicieux"
+    ],
+    "answer": "épicé",
+    "explanation": "épicé = spicy; salé = salty; sucré = sweet.",
+    "topic": "fre-l5-3"
+  },
+  {
+    "id": "p86",
+    "question": "Complete: Je vais à l'école ___ bus.",
+    "options": [
+      "à",
+      "en",
+      "dans",
+      "sur"
+    ],
+    "answer": "en",
+    "explanation": "en bus, en train, en avion, en voiture; but à vélo and à pied.",
+    "topic": "fre-l6-1"
+  },
+  {
+    "id": "p87",
+    "question": "What is a return ticket?",
+    "options": [
+      "un aller simple",
+      "un aller-retour",
+      "un billet de quai",
+      "un abonnement"
+    ],
+    "answer": "un aller-retour",
+    "explanation": "un aller-retour = a return ticket; un aller simple = one way.",
+    "topic": "fre-l6-1"
+  },
+  {
+    "id": "p88",
+    "question": "Where do you catch a train?",
+    "options": [
+      "à la gare",
+      "à l'aéroport",
+      "au port",
+      "à l'arrêt"
+    ],
+    "answer": "à la gare",
+    "explanation": "la gare = the railway station; l'arrêt = the bus stop.",
+    "topic": "fre-l6-1"
+  },
+  {
+    "id": "p89",
+    "question": "Complete: Le train part ___ quatorze heures.",
+    "options": [
+      "en",
+      "à",
+      "de",
+      "vers de"
+    ],
+    "answer": "à",
+    "explanation": "à + time: le train part à quatorze heures.",
+    "topic": "fre-l6-1"
+  },
+  {
+    "id": "p90",
+    "question": "What does 'Le prochain départ est à midi' mean?",
+    "options": [
+      "The next departure is at noon.",
+      "The last departure was at noon.",
+      "The train is late.",
+      "The departure is cancelled."
+    ],
+    "answer": "The next departure is at noon.",
+    "explanation": "prochain = next; midi = noon.",
+    "topic": "fre-l6-1"
+  },
+  {
+    "id": "p91",
+    "question": "Which expression describes rain?",
+    "options": [
+      "il fait du vent",
+      "il pleut",
+      "il y a du soleil",
+      "il fait chaud"
+    ],
+    "answer": "il pleut",
+    "explanation": "il pleut = it is raining; il fait du vent = it is windy.",
+    "topic": "fre-l6-2"
+  },
+  {
+    "id": "p92",
+    "question": "Complete: Il ___ beau hier.",
+    "options": [
+      "fait",
+      "faisait",
+      "fera",
+      "a fait beau"
+    ],
+    "answer": "faisait",
+    "explanation": "The imperfect describes the weather on a past occasion: il faisait beau.",
+    "topic": "fre-l6-2"
+  },
+  {
+    "id": "p93",
+    "question": "Complete: Nous avons ___ une excursion en bateau.",
+    "options": [
+      "fait",
+      "faire",
+      "faite",
+      "faisons"
+    ],
+    "answer": "fait",
+    "explanation": "The perfect tense uses the past participle: nous avons fait.",
+    "topic": "fre-l6-2"
+  },
+  {
+    "id": "p94",
+    "question": "Which sentence gives a holiday preference?",
+    "options": [
+      "Je préfère les vacances à la mer.",
+      "Je suis allé à la mer.",
+      "La mer était chaude.",
+      "Nous avons nagé."
+    ],
+    "answer": "Je préfère les vacances à la mer.",
+    "explanation": "je préfère ... expresses a preference; the others are narrative.",
+    "topic": "fre-l6-2"
+  },
+  {
+    "id": "p95",
+    "question": "What does 'séjourner à l'hôtel' mean?",
+    "options": [
+      "to stay at the hotel",
+      "to book the hotel",
+      "to leave the hotel",
+      "to work at the hotel"
+    ],
+    "answer": "to stay at the hotel",
+    "explanation": "séjourner = to stay (for a period).",
+    "topic": "fre-l6-2"
+  },
+  {
+    "id": "p96",
+    "question": "Which of these is a francophone Caribbean country?",
+    "options": [
+      "la Jamaïque",
+      "Haïti",
+      "la Barbade",
+      "Trinité"
+    ],
+    "answer": "Haïti",
+    "explanation": "Haiti is francophone, with French and créole as official languages.",
+    "topic": "fre-l6-3"
+  },
+  {
+    "id": "p97",
+    "question": "What is 'le gwoka'?",
+    "options": [
+      "a Martinican dance",
+      "a Guadeloupean drumming and dance tradition",
+      "a Haitian soup",
+      "a Canadian festival"
+    ],
+    "answer": "a Guadeloupean drumming and dance tradition",
+    "explanation": "gwoka is a Guadeloupean tradition of drums, song and dance.",
+    "topic": "fre-l6-3"
+  },
+  {
+    "id": "p98",
+    "question": "Complete: La Martinique est plus petite ___ la Guadeloupe.",
+    "options": [
+      "de",
+      "que",
+      "comme",
+      "à"
+    ],
+    "answer": "que",
+    "explanation": "Comparative: plus petite que.",
+    "topic": "fre-l6-3"
+  },
+  {
+    "id": "p99",
+    "question": "Which is a superlative?",
+    "options": [
+      "plus grand que",
+      "la plus grande ville",
+      "aussi grand que",
+      "moins grand que"
+    ],
+    "answer": "la plus grande ville",
+    "explanation": "le/la/les plus + adjective forms the superlative.",
+    "topic": "fre-l6-3"
+  },
+  {
+    "id": "p100",
+    "question": "Where is Québec?",
+    "options": [
+      "in France",
+      "in Canada",
+      "in Belgium",
+      "in Senegal"
+    ],
+    "answer": "in Canada",
+    "explanation": "Québec is the French-speaking province of Canada.",
+    "topic": "fre-l6-3"
+  }
+]

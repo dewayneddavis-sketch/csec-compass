@@ -1,0 +1,506 @@
+[
+  {
+    "id": "fre-p2-01",
+    "type": "write",
+    "paper": 2,
+    "section": "Section 1: Directed Situations",
+    "title": "Directed situations: ten everyday scenarios",
+    "topic": "fre-l6-1",
+    "commandWords": [
+      "Write",
+      "Ask",
+      "Invite",
+      "Describe"
+    ],
+    "marks": 20,
+    "suggestedMinutes": 25,
+    "source": "SECTION 1 - DIRECTED SITUATIONS (20 marks)\n\nWrite ONE complete sentence in French for each of the ten situations below. Each sentence must do exactly what the situation asks - greet, ask, invite, order, describe or explain - and must be addressed to the right person ('tu' for a friend, 'vous' for an adult or a stranger).\n\nSpend about twenty-five minutes on this section. Do not write more than one sentence for each situation; the examiner marks the first correct idea.",
+    "prompt": "Write one complete sentence in French for EACH of the ten situations (a) to (j).",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "You arrive at school at 8 a.m. and meet your French teacher in the corridor. Greet her politely and ask how she is.",
+        "marks": 2,
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "Model answer: \"Bonjour, Madame. Comment allez-vous ?\"",
+        "markScheme": [
+          "1 mark for a correct greeting (Bonjour / Bonsoir + Madame / Monsieur).",
+          "1 mark for asking how she is (Comment allez-vous ? / Comment ça va ?).",
+          "Deduct the mark if you address her as 'tu': a teacher takes 'vous'."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "You are sitting next to a new student. Ask him his name and how old he is.",
+        "marks": 2,
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "Model answer: \"Comment t'appelles-tu et quel âge as-tu ?\"",
+        "markScheme": [
+          "1 mark for asking his name (Comment t'appelles-tu ? / Comment tu t'appelles ?).",
+          "1 mark for asking his age (Quel âge as-tu ? / Tu as quel âge ?).",
+          "Two questions joined by 'et' is acceptable; incorrect question form loses the mark."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "You are at the market in Castries. Ask the seller the price of a kilo of tomatoes.",
+        "marks": 2,
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "Model answer: \"C'est combien le kilo de tomates, s'il vous plaît ?\"",
+        "markScheme": [
+          "1 mark for asking the price (C'est combien / Combien coûte).",
+          "1 mark for naming the quantity and the item (le kilo de tomates).",
+          "s'il vous plaît is expected in a polite request; its absence may lose the second mark."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "At the bus station you want to travel to Fort-de-France and come back the same day. Ask for the right ticket.",
+        "marks": 2,
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "Model answer: \"Je voudrais un aller-retour pour Fort-de-France, s'il vous plaît.\"",
+        "markScheme": [
+          "1 mark for un aller-retour (a return ticket).",
+          "1 mark for the correct use of pour + the destination.",
+          "An aller simple (one way) does not answer the situation and loses the first mark."
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "Your French pen-friend asks what you did last weekend. Say that you went to the beach with your family and that you swam.",
+        "marks": 2,
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "Model answer: \"Le week-end dernier, je suis allé(e) à la plage avec ma famille et j'ai nagé.\"",
+        "markScheme": [
+          "1 mark for the perfect tense of aller with être and the correct agreement (je suis allé(e)).",
+          "1 mark for the second action in the perfect tense (j'ai nagé) plus the family/beach detail.",
+          "The time marker le week-end dernier must be present."
+        ]
+      },
+      {
+        "label": "(f)",
+        "prompt": "You are going to the cinema tonight but you do not know the time. Ask your friend what time the film begins.",
+        "marks": 2,
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "Model answer: \"À quelle heure commence le film ?\"",
+        "markScheme": [
+          "1 mark for the question form À quelle heure...?",
+          "1 mark for the correct verb and subject (commence le film).",
+          "An English word order such as 'Le film commence à quelle heure' is accepted if the question form is correct."
+        ]
+      },
+      {
+        "label": "(g)",
+        "prompt": "You are inviting your friend to your birthday party next Saturday. Invite him and give the time.",
+        "marks": 2,
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "Model answer: \"Tu veux venir à ma fête d'anniversaire samedi à sept heures ?\"",
+        "markScheme": [
+          "1 mark for an invitation (Tu veux venir...? / Je t'invite à...).",
+          "1 mark for the event and a time expression (ma fête d'anniversaire + samedi / sept heures).",
+          "The invitation must be addressed to 'tu'; 'vous' changes the marks."
+        ]
+      },
+      {
+        "label": "(h)",
+        "prompt": "You are in a restaurant in Guadeloupe. Order grilled fish and a fruit juice politely.",
+        "marks": 2,
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "Model answer: \"Je voudrais du poisson grillé et un jus de fruits, s'il vous plaît.\"",
+        "markScheme": [
+          "1 mark for a polite order (Je voudrais / Pour moi, s'il vous plaît).",
+          "1 mark for both items ordered correctly with the right articles (du poisson, un jus).",
+          "Omitting the partitive article (poisson instead of du poisson) loses the second mark."
+        ]
+      },
+      {
+        "label": "(i)",
+        "prompt": "You are lost in town. Stop a passer-by, apologise and ask where the railway station is.",
+        "marks": 2,
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "Model answer: \"Excusez-moi, où est la gare, s'il vous plaît ?\"",
+        "markScheme": [
+          "1 mark for the apology and apology form (Excusez-moi / Pardon).",
+          "1 mark for the question Où est la gare ?",
+          "Using 'vous' is essential: the passer-by is a stranger."
+        ]
+      },
+      {
+        "label": "(j)",
+        "prompt": "Your teacher asks why you were absent yesterday. Say that you were ill and that you stayed at home.",
+        "marks": 2,
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "Model answer: \"Hier, j'étais malade et je suis resté(e) à la maison.\"",
+        "markScheme": [
+          "1 mark for the past description of illness (j'étais malade).",
+          "1 mark for the second action, using être correctly with rester (je suis resté(e)).",
+          "A present-tense answer (je suis malade) does not answer the situation."
+        ]
+      }
+    ],
+    "planningHints": [
+      "Count the situations: ten sentences, ten marks of two each.",
+      "Decide 'tu' or 'vous' before you write - it changes the verb form throughout."
+    ],
+    "examinerTips": "One sentence, and make it complete: a verb, and the detail asked for. Accuracy matters more than length."
+  },
+  {
+    "id": "fre-p2-02",
+    "type": "write",
+    "paper": 2,
+    "section": "Section 2: Letter / Composition",
+    "title": "Letter to a French pen-friend about your school year and summer plans",
+    "topic": "fre-l2-3",
+    "commandWords": [
+      "Describe",
+      "Explain",
+      "Narrate",
+      "Ask"
+    ],
+    "marks": 30,
+    "suggestedMinutes": 45,
+    "source": "SECTION 2 - LETTER / COMPOSITION (30 marks)\n\nYou have a French pen-friend in Guadeloupe called Lucie. Write a letter of about 130 to 150 words in French in which you:\n\n  - say how you are and when you received her letter;\n  - describe what you have been doing at school this year (present tense);\n  - describe something you did recently that you enjoyed (past tense);\n  - explain what you are going to do in the summer holidays (future tense);\n  - ask her at least one question about her own life.\n\nBegin the letter with a greeting and end it with a suitable closing. Use the three tenses asked for - present, past and future. This section carries 30 marks.",
+    "prompt": "Plan your letter in (a), then write it in (b).",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Write a short plan of your letter as five or six bullet points in French (for example: 'où j'habite', 'mon école', 'le week-end dernier', 'les vacances').",
+        "marks": 6,
+        "commandWords": [
+          "Plan"
+        ],
+        "modelAnswer": "A model plan:\n  - Salutations et nouvelles\n  - Ma vie au lycée cette année (mes matières préférées, mes professeurs)\n  - Le mois dernier: l'excursion de mon club de français\n  - Mes projets pour les vacances d'été: visite chez ma grand-mère et stage de natation\n  - Une question pour Lucie sur sa famille et ses loisirs\n  - La formule de politesse finale",
+        "markScheme": [
+          "1 mark for a greeting and a closing in the plan.",
+          "1 mark for a school/study point (present tense).",
+          "1 mark for a past-event point.",
+          "1 mark for a future-plan point.",
+          "1 mark for a question to the pen-friend.",
+          "1 mark for planning six points that cover all the bullet points asked in the question."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Write your letter of about 130-150 words, using the present, past and future tenses.",
+        "marks": 24,
+        "commandWords": [
+          "Write",
+          "Narrate",
+          "Describe"
+        ],
+        "modelAnswer": "Model letter (139 words):\n\nFort-de-France, le 18 septembre\n\nSalut Lucie,\n\nComment vas-tu ? J'ai reçu ta lettre la semaine dernière et j'étais très content de lire tes nouvelles. Merci beaucoup !\n\nEn ce moment, je travaille beaucoup au lycée parce que mes examens commencent en mai. Mes matières préférées sont la biologie et le français ; j'aime aussi l'informatique. Les cours finissent à trois heures et demie, alors je fais mes devoirs à la bibliothèque.\n\nLe mois dernier, mon club de français a fait une excursion à la côte. Nous avons visité un marché typique et nous avons goûté des plats créoles. C'était délicieux.\n\nCet été, je vais passer deux semaines chez ma grand-mère, puis je vais faire un stage de natation. J'espère aussi améliorer mon français en lisant des bandes dessinées.\n\nEt toi ? Qu'est-ce que tu fais pendant les vacances ? Comment va ta sœur ?\n\nRéponds vite et écris-moi en français si possible.\n\nAmitiés,\n\nTon ami(e)",
+        "markScheme": [
+          "Content (8 marks): 2 marks for each of the four bullet points answered - greeting and news; school life; a past event; summer plans.",
+          "Range of vocabulary and structures (4 marks): 4 marks for a varied range with connectives (d'abord, ensuite, alors, puis) and at least one opinion (j'aime, je préfère, c'était délicieux).",
+          "Use of tenses (6 marks): 2 marks for the present tense used accurately, 2 marks for the past (perfect / imperfect) and 2 marks for the future.",
+          "Accuracy (6 marks): 6 marks for a letter with only occasional small errors; 3-4 marks when errors do not prevent understanding; 1-2 marks when the reader has to guess the meaning.",
+          "Layout and length (included in content): a greeting, paragraphs and a closing; a letter far below 100 words cannot reach the top band."
+        ]
+      }
+    ],
+    "planningHints": [
+      "Plan first, then write: the four bullet points of the question are your four paragraphs.",
+      "Check your tenses are really three: a present sentence, a past sentence and a future one."
+    ],
+    "examinerTips": "Watch the word count - 130 to 150 words. A longer letter with many errors scores lower than a shorter, accurate one."
+  },
+  {
+    "id": "fre-p2-03",
+    "type": "write",
+    "paper": 2,
+    "section": "Section 3: Contextual Dialogue",
+    "title": "Completing a dialogue with a French friend",
+    "topic": "fre-l4-3",
+    "commandWords": [
+      "Write",
+      "Respond",
+      "Ask",
+      "Invite"
+    ],
+    "marks": 20,
+    "suggestedMinutes": 20,
+    "source": "SECTION 3 - CONTEXTUAL DIALOGUE (20 marks)\n\nYour French friend Lucie has invited you to spend the weekend at her home. Below is the conversation. Lucie's lines are given; YOUR lines are missing. Complete the dialogue by writing what YOU would say in each of the ten numbered gaps.\n\nWrite about 80 to 100 words in total, in complete sentences in French. The register is 'tu' throughout, since Lucie is a friend.\n\na) Lucie: Salut ! Ça va ?\nb) Lucie: Qu'est-ce que tu as fait samedi dernier ?\nc) Lucie: Tu aimes le sport ? Quel sport préfères-tu ?\nd) Lucie: Tu veux venir chez moi le week-end prochain ?\ne) Lucie: Qu'est-ce que tu voudrais faire ?\nf) Lucie: Comment vas-tu venir ? Tu prends le train ?\ng) Lucie: Est-ce qu'il faut apporter quelque chose ?\nh) Lucie: Quelle heure préfères-tu arriver ?\ni) Lucie: Tu as des frères et sœurs ?\nj) Lucie: Bon, à bientôt alors !",
+    "prompt": "Write the missing line for each of the ten gaps (a) to (j).",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Lucie: Lucie: Salut ! Ça va ?\n\nYour line:",
+        "marks": 2,
+        "commandWords": [
+          "Respond",
+          "Write"
+        ],
+        "modelAnswer": "Model answer: \"Ça va très bien, merci, et toi ?\"",
+        "markScheme": [
+          "1 mark for answering the question (Ça va bien / Très bien, merci).",
+          "1 mark for returning the question (et toi ? / et vous ?)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Lucie: Lucie: Qu'est-ce que tu as fait samedi dernier ?\n\nYour line:",
+        "marks": 2,
+        "commandWords": [
+          "Respond",
+          "Write"
+        ],
+        "modelAnswer": "Model answer: \"Samedi dernier, je suis allé(e) au marché avec ma mère.\"",
+        "markScheme": [
+          "1 mark for the perfect tense with a time marker (samedi dernier).",
+          "1 mark for a complete, sensible answer with the correct auxiliary."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Lucie: Lucie: Tu aimes le sport ? Quel sport préfères-tu ?\n\nYour line:",
+        "marks": 2,
+        "commandWords": [
+          "Respond",
+          "Write"
+        ],
+        "modelAnswer": "Model answer: \"Oui, j'adore le sport ; je préfère le cricket parce qu'on travaille en équipe.\"",
+        "markScheme": [
+          "1 mark for an opinion (j'aime / j'adore / je préfère).",
+          "1 mark for naming a sport with the correct article and giving a reason."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Lucie: Lucie: Tu veux venir chez moi le week-end prochain ?\n\nYour line:",
+        "marks": 2,
+        "commandWords": [
+          "Respond",
+          "Write"
+        ],
+        "modelAnswer": "Model answer: \"Oui, avec plaisir ! Merci beaucoup de m'inviter.\"",
+        "markScheme": [
+          "1 mark for accepting (Oui, avec plaisir / Oui, je veux bien).",
+          "1 mark for a polite form (merci / c'est gentil de ta part)."
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "Lucie: Lucie: Qu'est-ce que tu voudrais faire ?\n\nYour line:",
+        "marks": 2,
+        "commandWords": [
+          "Respond",
+          "Write"
+        ],
+        "modelAnswer": "Model answer: \"Je voudrais visiter la ville et goûter la cuisine locale.\"",
+        "markScheme": [
+          "1 mark for using je voudrais + infinitive.",
+          "1 mark for a sensible activity connected with the invitation."
+        ]
+      },
+      {
+        "label": "(f)",
+        "prompt": "Lucie: Lucie: Comment vas-tu venir ? Tu prends le train ?\n\nYour line:",
+        "marks": 2,
+        "commandWords": [
+          "Respond",
+          "Write"
+        ],
+        "modelAnswer": "Model answer: \"Non, je vais venir en bus ; je prendrai le bus de huit heures.\"",
+        "markScheme": [
+          "1 mark for naming a means of transport with the right preposition (en bus, en voiture).",
+          "1 mark for a future or immediate-future form (je vais venir / je prendrai)."
+        ]
+      },
+      {
+        "label": "(g)",
+        "prompt": "Lucie: Lucie: Est-ce qu'il faut apporter quelque chose ?\n\nYour line:",
+        "marks": 2,
+        "commandWords": [
+          "Respond",
+          "Write"
+        ],
+        "modelAnswer": "Model answer: \"Non, merci, mais je peux apporter un dessert si tu veux.\"",
+        "markScheme": [
+          "1 mark for answering the question directly (Non, merci / Oui, s'il te plaît).",
+          "1 mark for a polite offer or request that fits the situation."
+        ]
+      },
+      {
+        "label": "(h)",
+        "prompt": "Lucie: Lucie: Quelle heure préfères-tu arriver ?\n\nYour line:",
+        "marks": 2,
+        "commandWords": [
+          "Respond",
+          "Write"
+        ],
+        "modelAnswer": "Model answer: \"Je préfère arriver vers dix heures, si c'est possible pour toi.\"",
+        "markScheme": [
+          "1 mark for giving a time (vers dix heures / à dix heures).",
+          "1 mark for the polite addition (si c'est possible / ça te va ?)."
+        ]
+      },
+      {
+        "label": "(i)",
+        "prompt": "Lucie: Lucie: Tu as des frères et sœurs ?\n\nYour line:",
+        "marks": 2,
+        "commandWords": [
+          "Respond",
+          "Write"
+        ],
+        "modelAnswer": "Model answer: \"Oui, j'ai une sœur plus jeune et un frère qui a dix ans.\"",
+        "markScheme": [
+          "1 mark for answering with the correct form of avoir.",
+          "1 mark for giving ages or a detail about each person."
+        ]
+      },
+      {
+        "label": "(j)",
+        "prompt": "Lucie: Lucie: Bon, à bientôt alors !\n\nYour line:",
+        "marks": 2,
+        "commandWords": [
+          "Respond",
+          "Write"
+        ],
+        "modelAnswer": "Model answer: \"À bientôt, Lucie ! Merci encore et passe une bonne semaine.\"",
+        "markScheme": [
+          "1 mark for a suitable closing (À bientôt / À la semaine prochaine).",
+          "1 mark for a polite closing remark addressed to 'tu'."
+        ]
+      }
+    ],
+    "planningHints": [
+      "Read Lucie's line first: it usually contains the words your answer must repeat.",
+      "Keep the register consistent: 'tu' everywhere, because Lucie is a friend."
+    ],
+    "examinerTips": "Answers must be complete sentences and must respond to the line before them, not repeat it. Repeating Lucie's words loses the mark."
+  },
+  {
+    "id": "fre-p2-04",
+    "type": "write",
+    "paper": 2,
+    "section": "Section 4: Reading Comprehension",
+    "title": "Reading comprehension: a letter from Martinique",
+    "topic": "fre-l6-3",
+    "commandWords": [
+      "Answer",
+      "Explain",
+      "Give details"
+    ],
+    "marks": 30,
+    "suggestedMinutes": 45,
+    "source": "SECTION 4 - READING COMPREHENSION (30 marks)\n\nRead the letter below, then answer ALL the questions that follow. The questions and your answers are in ENGLISH.\n\n------------------------------\nBonjour !\n\nJe m'appelle Amélie et j'ai seize ans. J'habite à Fort-de-France, en Martinique, avec ma mère, mon beau-père et mes deux petits frères. Notre appartement est assez petit, mais il y a un joli balcon où nous mangeons souvent le soir.\n\nJe vais au lycée en bus et le trajet dure vingt minutes. Mes matières préférées sont la biologie et l'espagnol, mais je n'aime pas beaucoup les mathématiques parce que c'est difficile. L'année prochaine, je voudrais étudier la médecine à l'université. Ma mère est infirmière et elle pense que ce métier est très utile.\n\nLe week-end dernier, il faisait très beau, alors nous sommes allés à la plage de la Grande Anse. Le matin, nous avons nagé et l'après-midi j'ai joué au volley-ball avec mes cousins. Le soir, nous avons mangé du poisson grillé et des bananes. C'était délicieux.\n\nÀ la maison, ma famille parle français et créole, mais à l'école nous étudions aussi l'anglais et l'espagnol. Écris-moi bientôt et raconte-moi ta vie chez toi !\n\nAmélie\n------------------------------",
+    "prompt": "Read the letter and answer questions (a) to (f) in English in the spaces provided.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Where does Amélie live, and with whom does she share the flat?",
+        "marks": 4,
+        "commandWords": [
+          "Answer"
+        ],
+        "modelAnswer": "Amélie lives in Fort-de-France, in Martinique. She shares the flat with her mother, her stepfather (beau-père) and her two little brothers.",
+        "markScheme": [
+          "1 mark for Fort-de-France.",
+          "1 mark for Martinique.",
+          "1 mark for her mother AND her stepfather.",
+          "1 mark for her two little brothers."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "How does she travel to school, and how long does the journey take?",
+        "marks": 4,
+        "commandWords": [
+          "Answer"
+        ],
+        "modelAnswer": "She goes to school by bus, and the journey takes twenty minutes.",
+        "markScheme": [
+          "2 marks for 'by bus' (en bus).",
+          "2 marks for twenty minutes (vingt minutes)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Which school subjects does she like, which one does she dislike, and why?",
+        "marks": 6,
+        "commandWords": [
+          "Answer"
+        ],
+        "modelAnswer": "She likes biology and Spanish best. She does not like mathematics much because she finds it difficult.",
+        "markScheme": [
+          "1 mark for biology.",
+          "1 mark for Spanish.",
+          "1 mark for saying she does not like mathematics.",
+          "1 mark for the reason 'because it is difficult'.",
+          "1-2 marks for answers written in clear English sentences rather than one-word answers."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "What does she want to do next year, and what is her mother's opinion of that job?",
+        "marks": 6,
+        "commandWords": [
+          "Answer"
+        ],
+        "modelAnswer": "Next year she would like to study medicine at university. Her mother is a nurse and thinks the job is very useful.",
+        "markScheme": [
+          "1 mark for 'study medicine next year'.",
+          "1 mark for 'at university'.",
+          "1 mark for her mother being a nurse (infirmière).",
+          "1 mark for 'she thinks the job is very useful'.",
+          "1-2 marks for using the passage's own words accurately rather than guessing."
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "What did Amélie and her family do last weekend? Give THREE details.",
+        "marks": 6,
+        "commandWords": [
+          "Answer"
+        ],
+        "modelAnswer": "The weather was lovely, so they went to the Grande Anse beach. In the morning they swam; in the afternoon she played volleyball with her cousins; in the evening they ate grilled fish and bananas.",
+        "markScheme": [
+          "2 marks for going to the Grande Anse beach (and the good weather).",
+          "2 marks for swimming in the morning.",
+          "2 marks for playing volleyball with her cousins (accept the evening meal of grilled fish and bananas as one of the three details).",
+          "No marks for details that are not in the passage."
+        ]
+      },
+      {
+        "label": "(f)",
+        "prompt": "Which languages are spoken at home, and what does Amélie ask you to do?",
+        "marks": 4,
+        "commandWords": [
+          "Answer"
+        ],
+        "modelAnswer": "French and créole are spoken at home (and she also studies English and Spanish at school). She asks the reader to write to her soon and to tell her about life back home.",
+        "markScheme": [
+          "1 mark for French.",
+          "1 mark for créole (accept 'Creole').",
+          "1 mark for 'write to me soon'.",
+          "1 mark for 'tell me about your life at home'."
+        ]
+      }
+    ],
+    "planningHints": [
+      "Read the whole letter once before you answer anything.",
+      "Answer in English, in full sentences, and use the passage's own details."
+    ],
+    "examinerTips": "One-word answers lose the marks for full sentences. Quote the letter's details (names, times, places) rather than paraphrasing loosely."
+  }
+]
