@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "p1",
+    "question": "Which element of art is defined by length and direction?",
+    "options": [
+      "Tone",
+      "Line",
+      "Texture",
+      "Form"
+    ],
+    "answer": "Line",
+    "explanation": "Line defines edges, creates pattern and carries feeling.",
+    "topic": "va-l1-1"
+  },
+  {
+    "id": "p2",
+    "question": "Tone (value) in a drawing refers to:",
+    "options": [
+      "The name of the colour",
+      "The lightness or darkness of a surface",
+      "The roughness of the paper",
+      "The size of the shapes"
+    ],
+    "answer": "The lightness or darkness of a surface",
+    "explanation": "Tone creates the illusion of form and light.",
+    "topic": "va-l1-1"
+  },
+  {
+    "id": "p3",
+    "question": "A geometric shape is:",
+    "options": [
+      "An irregular free-form area",
+      "A circle, square or triangle",
+      "A three-dimensional form",
+      "A texture"
+    ],
+    "answer": "A circle, square or triangle",
+    "explanation": "Organic shapes are free-form, as in leaves and clouds.",
+    "topic": "va-l1-1"
+  },
+  {
+    "id": "p4",
+    "question": "Negative space is:",
+    "options": [
+      "The space inside a shape",
+      "The space around and between shapes",
+      "A dark area of tone",
+      "An area of texture"
+    ],
+    "answer": "The space around and between shapes",
+    "explanation": "Positive and negative shapes define each other.",
+    "topic": "va-l1-1"
+  },
+  {
+    "id": "p5",
+    "question": "Which element is described as real or implied?",
+    "options": [
+      "Colour",
+      "Texture",
+      "Line",
+      "Form"
+    ],
+    "answer": "Texture",
+    "explanation": "Real texture can be felt; implied texture is drawn.",
+    "topic": "va-l1-1"
+  },
+  {
+    "id": "p7",
+    "question": "Gesture drawing aims to capture:",
+    "options": [
+      "Every detail of the model",
+      "Movement, weight and attitude quickly",
+      "Only the outline",
+      "The background"
+    ],
+    "answer": "Movement, weight and attitude quickly",
+    "explanation": "Gesture studies are done in a minute or less.",
+    "topic": "va-l1-2"
+  },
+  {
+    "id": "p8",
+    "question": "In one-point perspective, parallel lines receding from the viewer converge at:",
+    "options": [
+      "The horizon line only",
+      "A single vanishing point on the horizon",
+      "Two vanishing points",
+      "The centre of the page always"
+    ],
+    "answer": "A single vanishing point on the horizon",
+    "explanation": "Two-point perspective uses two vanishing points.",
+    "topic": "va-l1-2"
+  },
+  {
+    "id": "p9",
+    "question": "Atmospheric perspective shows distance by:",
+    "options": [
+      "Sharper edges and stronger contrast",
+      "Lighter, cooler colour, softer edges and less detail",
+      "Darker tones in the distance",
+      "Larger detail in the background"
+    ],
+    "answer": "Lighter, cooler colour, softer edges and less detail",
+    "explanation": "It is the effect seen in distant blue hills.",
+    "topic": "va-l1-2"
+  },
+  {
+    "id": "p10",
+    "question": "The core shadow on a rounded form is found:",
+    "options": [
+      "Where the light is strongest",
+      "Where the form turns away from the light",
+      "In the cast shadow",
+      "On the highlight"
+    ],
+    "answer": "Where the form turns away from the light",
+    "explanation": "Reflected light appears within the shadow near the base.",
+    "topic": "va-l1-2"
+  },
+  {
+    "id": "p11",
+    "question": "Chiaroscuro refers to:",
+    "options": [
+      "Fine line drawing",
+      "Strong contrast between light and dark",
+      "Flat colour",
+      "Symmetrical balance"
+    ],
+    "answer": "Strong contrast between light and dark",
+    "explanation": "It creates drama and volume.",
+    "topic": "va-l1-2"
+  },
+  {
+    "id": "p13",
+    "question": "Symmetrical balance is also called:",
+    "options": [
+      "Informal balance",
+      "Formal balance",
+      "Radial balance",
+      "Asymmetrical balance"
+    ],
+    "answer": "Formal balance",
+    "explanation": "One side mirrors the other.",
+    "topic": "va-l1-3"
+  },
+  {
+    "id": "p14",
+    "question": "A focal point is created by:",
+    "options": [
+      "Even distribution of detail",
+      "Contrast, isolation, position or colour intensity",
+      "Repeating every element",
+      "Using one tone only"
+    ],
+    "answer": "Contrast, isolation, position or colour intensity",
+    "explanation": "It is the part the artist wants seen first.",
+    "topic": "va-l1-3"
+  },
+  {
+    "id": "p15",
+    "question": "Rhythm in a composition is produced mainly by:",
+    "options": [
+      "Repetition with variation",
+      "One large shape only",
+      "Absence of pattern",
+      "A single colour"
+    ],
+    "answer": "Repetition with variation",
+    "explanation": "It can be regular, alternating, progressive or flowing.",
+    "topic": "va-l1-3"
+  },
+  {
+    "id": "p16",
+    "question": "Unity in a work is achieved by:",
+    "options": [
+      "Introducing as many unrelated elements as possible",
+      "Limiting the palette and repeating shapes, colours and treatment",
+      "Removing the focal point",
+      "Breaking every rule"
+    ],
+    "answer": "Limiting the palette and repeating shapes, colours and treatment",
+    "explanation": "Variety prevents unity from becoming dullness.",
+    "topic": "va-l1-3"
+  },
+  {
+    "id": "p17",
+    "question": "Radial balance arranges visual weight:",
+    "options": [
+      "Evenly left to right",
+      "Around a central point",
+      "Only along one diagonal",
+      "Randomly"
+    ],
+    "answer": "Around a central point",
+    "explanation": "Examples include wheels, mandalas and decorated ceilings.",
+    "topic": "va-l1-3"
+  },
+  {
+    "id": "p19",
+    "question": "Hue is:",
+    "options": [
+      "The lightness or darkness of a colour",
+      "The name of the colour",
+      "The purity of a colour",
+      "The temperature of a colour"
+    ],
+    "answer": "The name of the colour",
+    "explanation": "Value is lightness, intensity is purity.",
+    "topic": "va-l2-1"
+  },
+  {
+    "id": "p20",
+    "question": "Adding white to a colour produces:",
+    "options": [
+      "A shade",
+      "A tint",
+      "A neutral",
+      "A glaze"
+    ],
+    "answer": "A tint",
+    "explanation": "Darkening produces a shade.",
+    "topic": "va-l2-1"
+  },
+  {
+    "id": "p21",
+    "question": "Complementary colours are:",
+    "options": [
+      "Adjacent on the colour wheel",
+      "Opposite each other on the colour wheel",
+      "Always warm",
+      "Always primary colours"
+    ],
+    "answer": "Opposite each other on the colour wheel",
+    "explanation": "Red and green, blue and orange, yellow and violet.",
+    "topic": "va-l2-1"
+  },
+  {
+    "id": "p22",
+    "question": "Mixing two primary colours of paint produces:",
+    "options": [
+      "A tertiary colour",
+      "A secondary colour",
+      "A neutral grey",
+      "A tint"
+    ],
+    "answer": "A secondary colour",
+    "explanation": "Orange, green and violet are secondary colours.",
+    "topic": "va-l2-1"
+  },
+  {
+    "id": "p23",
+    "question": "A monochromatic colour scheme uses:",
+    "options": [
+      "Three evenly spaced hues",
+      "One hue in varying values and intensities",
+      "Only warm colours",
+      "Complementary pairs"
+    ],
+    "answer": "One hue in varying values and intensities",
+    "explanation": "Analogous schemes use neighbouring hues.",
+    "topic": "va-l2-1"
+  },
+  {
+    "id": "p26",
+    "question": "Which medium is transparent and cannot use white paint to create lights?",
+    "options": [
+      "Acrylic",
+      "Watercolour",
+      "Gouache",
+      "Oil"
+    ],
+    "answer": "Watercolour",
+    "explanation": "In watercolour the paper supplies the whites.",
+    "topic": "va-l2-2"
+  },
+  {
+    "id": "p27",
+    "question": "Wet-on-wet watercolour technique produces:",
+    "options": [
+      "Crisp hard edges",
+      "Soft bleeding edges",
+      "An opaque flat surface",
+      "An impasto texture"
+    ],
+    "answer": "Soft bleeding edges",
+    "explanation": "Wet-on-dry gives crisper edges.",
+    "topic": "va-l2-2"
+  },
+  {
+    "id": "p28",
+    "question": "Which medium dries quickly into a plastic film and suits mural work?",
+    "options": [
+      "Oil",
+      "Acrylic",
+      "Tempera",
+      "Watercolour"
+    ],
+    "answer": "Acrylic",
+    "explanation": "It adheres to many surfaces and can be used thin or thick.",
+    "topic": "va-l2-2"
+  },
+  {
+    "id": "p29",
+    "question": "An advantage of oil paint is that it:",
+    "options": [
+      "Dries within minutes",
+      "Allows blending, glazing and reworking over days",
+      "Requires no solvent",
+      "Cannot be applied to canvas"
+    ],
+    "answer": "Allows blending, glazing and reworking over days",
+    "explanation": "Its slow drying also brings solvent and safety demands.",
+    "topic": "va-l2-2"
+  },
+  {
+    "id": "p30",
+    "question": "Gesso is used to:",
+    "options": [
+      "Thin the paint",
+      "Prime a surface before painting",
+      "Clean brushes",
+      "Fix charcoal"
+    ],
+    "answer": "Prime a surface before painting",
+    "explanation": "Priming gives a good surface key and prevents absorption.",
+    "topic": "va-l2-2"
+  },
+  {
+    "id": "p32",
+    "question": "A 9B pencil is:",
+    "options": [
+      "Harder and lighter than a 9H pencil",
+      "Softer and darker than a 9H pencil",
+      "A type of charcoal",
+      "A brush"
+    ],
+    "answer": "Softer and darker than a 9H pencil",
+    "explanation": "H pencils are hard; B pencils are soft and dark.",
+    "topic": "va-l2-3"
+  },
+  {
+    "id": "p33",
+    "question": "Hatching and cross-hatching are techniques for:",
+    "options": [
+      "Creating tone with lines",
+      "Mixing colour",
+      "Stretching paper",
+      "Firing clay"
+    ],
+    "answer": "Creating tone with lines",
+    "explanation": "Stippling uses dots instead.",
+    "topic": "va-l2-3"
+  },
+  {
+    "id": "p34",
+    "question": "In relief printing:",
+    "options": [
+      "Lines are cut into the plate and filled with ink",
+      "The raised surface of the block prints and cut-away areas stay white",
+      "The image is printed from a flat stone",
+      "Ink is forced through a screen"
+    ],
+    "answer": "The raised surface of the block prints and cut-away areas stay white",
+    "explanation": "Linocut and woodcut are relief methods.",
+    "topic": "va-l2-3"
+  },
+  {
+    "id": "p35",
+    "question": "An edition of 20 prints is numbered to show:",
+    "options": [
+      "The price of each print",
+      "The position of each print in the limited run",
+      "The date of printing",
+      "The size of the paper"
+    ],
+    "answer": "The position of each print in the limited run",
+    "explanation": "Numbering supports the value of a limited edition.",
+    "topic": "va-l2-3"
+  },
+  {
+    "id": "p36",
+    "question": "Batik is produced by:",
+    "options": [
+      "Block printing with carved stamps",
+      "Applying wax resist to cloth before dyeing",
+      "Screen printing with a stencil",
+      "Painting directly with acrylics"
+    ],
+    "answer": "Applying wax resist to cloth before dyeing",
+    "explanation": "Cracked wax creates the characteristic veined line.",
+    "topic": "va-l2-3"
+  },
+  {
+    "id": "p38",
+    "question": "Carving is which kind of process?",
+    "options": [
+      "Additive",
+      "Subtractive",
+      "Casting",
+      "Assemblage"
+    ],
+    "answer": "Subtractive",
+    "explanation": "Material is removed and cannot easily be replaced.",
+    "topic": "va-l3-1"
+  },
+  {
+    "id": "p39",
+    "question": "Modelling is done with:",
+    "options": [
+      "Hard stone",
+      "Soft material such as clay or wax that can be built up",
+      "Molten metal",
+      "Sheet metal"
+    ],
+    "answer": "Soft material such as clay or wax that can be built up",
+    "explanation": "It is the most forgiving sculptural method.",
+    "topic": "va-l3-1"
+  },
+  {
+    "id": "p40",
+    "question": "An armature in sculpture is:",
+    "options": [
+      "The base or plinth",
+      "An internal support that holds the form",
+      "A type of mould",
+      "A finishing coat"
+    ],
+    "answer": "An internal support that holds the form",
+    "explanation": "It is essential for tall or projecting modelled forms.",
+    "topic": "va-l3-1"
+  },
+  {
+    "id": "p41",
+    "question": "A maquette is:",
+    "options": [
+      "A finished cast",
+      "A small preliminary model of a sculpture",
+      "A carving tool",
+      "A type of clay"
+    ],
+    "answer": "A small preliminary model of a sculpture",
+    "explanation": "Maquettes test form, balance and scale.",
+    "topic": "va-l3-1"
+  },
+  {
+    "id": "p42",
+    "question": "Assemblage is built by:",
+    "options": [
+      "Cutting away from a solid block",
+      "Joining separate pieces of material",
+      "Pouring into a mould",
+      "Throwing on a wheel"
+    ],
+    "answer": "Joining separate pieces of material",
+    "explanation": "It often uses found, recycled and industrial materials.",
+    "topic": "va-l3-1"
+  },
+  {
+    "id": "p44",
+    "question": "Wedging clay is done to:",
+    "options": [
+      "Add water only",
+      "Remove air pockets and even out moisture",
+      "Harden the clay",
+      "Glaze the surface"
+    ],
+    "answer": "Remove air pockets and even out moisture",
+    "explanation": "Trapped air can explode in the kiln.",
+    "topic": "va-l3-2"
+  },
+  {
+    "id": "p45",
+    "question": "Coil building involves:",
+    "options": [
+      "Rolling ropes of clay and joining them with score and slip",
+      "Pressing clay into a mould",
+      "Throwing on a wheel",
+      "Carving a solid block"
+    ],
+    "answer": "Rolling ropes of clay and joining them with score and slip",
+    "explanation": "Walls are built up evenly to avoid trapped air.",
+    "topic": "va-l3-2"
+  },
+  {
+    "id": "p46",
+    "question": "Score and slip is used to:",
+    "options": [
+      "Decorate a fired pot",
+      "Join two pieces of clay securely",
+      "Colour a glaze",
+      "Clean tools"
+    ],
+    "answer": "Join two pieces of clay securely",
+    "explanation": "Roughening the surfaces and using liquid clay makes the join.",
+    "topic": "va-l3-2"
+  },
+  {
+    "id": "p47",
+    "question": "The first firing of clay work is called:",
+    "options": [
+      "Glaze firing",
+      "Bisque firing",
+      "Raku firing",
+      "Salt firing"
+    ],
+    "answer": "Bisque firing",
+    "explanation": "It is slow so that steam escapes without cracking the work.",
+    "topic": "va-l3-2"
+  },
+  {
+    "id": "p48",
+    "question": "Sgraffito is:",
+    "options": [
+      "A glazing method",
+      "Scratching through a surface layer to reveal the clay beneath",
+      "A wheel-throwing technique",
+      "A type of kiln"
+    ],
+    "answer": "Scratching through a surface layer to reveal the clay beneath",
+    "explanation": "It is a decorative technique applied while the clay is soft.",
+    "topic": "va-l3-2"
+  },
+  {
+    "id": "p49",
+    "question": "Clay shrinks during drying and firing, which means the maker must:",
+    "options": [
+      "Allow for shrinkage in the design and size",
+      "Add extra water before firing",
+      "Fire at the lowest setting",
+      "Work only with porcelain"
+    ],
+    "answer": "Allow for shrinkage in the design and size",
+    "explanation": "Shrinkage of around ten per cent is common.",
+    "topic": "va-l3-2"
+  },
+  {
+    "id": "p50",
+    "question": "Junkanoo and Carnival costumes are best described as:",
+    "options": [
+      "Two-dimensional paintings",
+      "Temporary sculptural and textile constructions",
+      "Printed editions",
+      "Glazed ceramics"
+    ],
+    "answer": "Temporary sculptural and textile constructions",
+    "explanation": "They combine frame building, textiles and decoration.",
+    "topic": "va-l3-3"
+  },
+  {
+    "id": "p51",
+    "question": "In basket weaving, warp and weft refer to:",
+    "options": [
+      "The colours used",
+      "The structural strands and the strands woven across them",
+      "The tools used",
+      "The finishing coat"
+    ],
+    "answer": "The structural strands and the strands woven across them",
+    "explanation": "The pattern depends on the count and the sequence.",
+    "topic": "va-l3-3"
+  },
+  {
+    "id": "p52",
+    "question": "Gourd or calabash work involves:",
+    "options": [
+      "Melting and casting the shell",
+      "Carving, burning or engraving the dried shell",
+      "Weaving the fibres",
+      "Printing on the surface"
+    ],
+    "answer": "Carving, burning or engraving the dried shell",
+    "explanation": "It is a long-standing Caribbean craft.",
+    "topic": "va-l3-3"
+  },
+  {
+    "id": "p53",
+    "question": "A craft producer costing work for sale must include:",
+    "options": [
+      "Materials only",
+      "Materials, time, overheads and a margin",
+      "The cost of the stall only",
+      "No costs at all"
+    ],
+    "answer": "Materials, time, overheads and a margin",
+    "explanation": "Pricing for approval rather than profit is a common failure.",
+    "topic": "va-l3-3"
+  },
+  {
+    "id": "p54",
+    "question": "Traditional craft skills are usually passed on by:",
+    "options": [
+      "Formal examinations only",
+      "Apprenticeship and family transmission",
+      "Books alone",
+      "Importing the technique"
+    ],
+    "answer": "Apprenticeship and family transmission",
+    "explanation": "Community practice keeps the traditions alive.",
+    "topic": "va-l3-3"
+  },
+  {
+    "id": "p55",
+    "question": "A design brief states:",
+    "options": [
+      "Only the client's name",
+      "Purpose, audience, message, format, deadline and budget",
+      "The designer's fee only",
+      "The final layout"
+    ],
+    "answer": "Purpose, audience, message, format, deadline and budget",
+    "explanation": "It is the foundation of every design decision.",
+    "topic": "va-l4-1"
+  },
+  {
+    "id": "p56",
+    "question": "Thumbnail sketches are used to:",
+    "options": [
+      "Present the final design",
+      "Explore many compositional ideas quickly",
+      "Cost the job",
+      "Print the artwork"
+    ],
+    "answer": "Explore many compositional ideas quickly",
+    "explanation": "The best ideas are then developed as roughs.",
+    "topic": "va-l4-1"
+  },
+  {
+    "id": "p57",
+    "question": "A grid in layout design is used to:",
+    "options": [
+      "Decorate the page",
+      "Align elements so the design holds together",
+      "Measure the paper thickness",
+      "Set the price"
+    ],
+    "answer": "Align elements so the design holds together",
+    "explanation": "Columns, margins and fields create order.",
+    "topic": "va-l4-1"
+  },
+  {
+    "id": "p58",
+    "question": "Visual hierarchy decides:",
+    "options": [
+      "What the reader sees first, second and third",
+      "The number of colours",
+      "The size of the print run",
+      "The type of paper"
+    ],
+    "answer": "What the reader sees first, second and third",
+    "explanation": "Size, weight, position and colour create it.",
+    "topic": "va-l4-1"
+  },
+  {
+    "id": "p59",
+    "question": "A logo must be versatile, which means it:",
+    "options": [
+      "Works in colour only",
+      "Works in one colour, at tiny size and on large formats",
+      "Can only be used online",
+      "Uses as many typefaces as possible"
+    ],
+    "answer": "Works in one colour, at tiny size and on large formats",
+    "explanation": "Simplicity, memorability and durability also matter.",
+    "topic": "va-l4-1"
+  },
+  {
+    "id": "p60",
+    "question": "Images intended for commercial printing are usually prepared at:",
+    "options": [
+      "72 dpi in RGB",
+      "300 dpi at final size in CMYK",
+      "Screen resolution only",
+      "Any size, since the printer adjusts"
+    ],
+    "answer": "300 dpi at final size in CMYK",
+    "explanation": "Screen images use RGB at lower resolution.",
+    "topic": "va-l4-1"
+  },
+  {
+    "id": "p61",
+    "question": "An illustrator's first task on a commission is to:",
+    "options": [
+      "Draw the final artwork",
+      "Read and understand the text or brief and the audience",
+      "Choose the typeface",
+      "Print a proof"
+    ],
+    "answer": "Read and understand the text or brief and the audience",
+    "explanation": "The image must serve the text and the reader.",
+    "topic": "va-l4-2"
+  },
+  {
+    "id": "p62",
+    "question": "A storyboard is:",
+    "options": [
+      "A finished illustration",
+      "A plan of the sequence of images for a story or film",
+      "A type of printing plate",
+      "A colour palette"
+    ],
+    "answer": "A plan of the sequence of images for a story or film",
+    "explanation": "It controls pacing and framing before production.",
+    "topic": "va-l4-2"
+  },
+  {
+    "id": "p63",
+    "question": "In comics, the gutter is:",
+    "options": [
+      "The caption box",
+      "The space between panels",
+      "The speech balloon",
+      "The sound effect"
+    ],
+    "answer": "The space between panels",
+    "explanation": "Panels, balloons, captions and gutters form the visual grammar.",
+    "topic": "va-l4-2"
+  },
+  {
+    "id": "p64",
+    "question": "A close-up shot is used to:",
+    "options": [
+      "Show the setting",
+      "Create intimacy or tension with a character",
+      "Show a long sequence of events",
+      "Establish the weather"
+    ],
+    "answer": "Create intimacy or tension with a character",
+    "explanation": "Wide shots establish setting.",
+    "topic": "va-l4-2"
+  },
+  {
+    "id": "p65",
+    "question": "Copyright in an illustration:",
+    "options": [
+      "Belongs to the client automatically",
+      "Remains with the artist unless it is assigned in writing",
+      "Ends when the artwork is delivered",
+      "Applies only to fine art"
+    ],
+    "answer": "Remains with the artist unless it is assigned in writing",
+    "explanation": "Licensing terms state how the image may be used.",
+    "topic": "va-l4-2"
+  },
+  {
+    "id": "p66",
+    "question": "A character sheet records:",
+    "options": [
+      "The price of the artwork",
+      "A character's appearance, proportion, costume and expressions",
+      "The printing instructions",
+      "The client's address"
+    ],
+    "answer": "A character's appearance, proportion, costume and expressions",
+    "explanation": "It keeps a character consistent across drawings.",
+    "topic": "va-l4-2"
+  },
+  {
+    "id": "p67",
+    "question": "The rule of thirds suggests placing points of interest:",
+    "options": [
+      "At the exact centre of the frame",
+      "Where the lines dividing the frame into thirds intersect",
+      "Only in the top half",
+      "Outside the frame"
+    ],
+    "answer": "Where the lines dividing the frame into thirds intersect",
+    "explanation": "It gives a more dynamic composition than dead centre.",
+    "topic": "va-l4-3"
+  },
+  {
+    "id": "p68",
+    "question": "A wide aperture (small f/number) produces:",
+    "options": [
+      "Greater depth of field",
+      "Shallow depth of field with a blurred background",
+      "A slower shutter speed",
+      "More noise"
+    ],
+    "answer": "Shallow depth of field with a blurred background",
+    "explanation": "A small aperture keeps more of the scene sharp.",
+    "topic": "va-l4-3"
+  },
+  {
+    "id": "p69",
+    "question": "A fast shutter speed is used to:",
+    "options": [
+      "Blur movement deliberately",
+      "Freeze fast movement",
+      "Increase depth of field",
+      "Reduce noise"
+    ],
+    "answer": "Freeze fast movement",
+    "explanation": "A slow shutter speed blurs moving subjects.",
+    "topic": "va-l4-3"
+  },
+  {
+    "id": "p70",
+    "question": "Raising the ISO setting:",
+    "options": [
+      "Increases sensitivity to light and also increases noise",
+      "Reduces sensitivity to light",
+      "Increases depth of field",
+      "Freezes action"
+    ],
+    "answer": "Increases sensitivity to light and also increases noise",
+    "explanation": "It is used in low light with a cost in image quality.",
+    "topic": "va-l4-3"
+  },
+  {
+    "id": "p71",
+    "question": "The best natural light for most outdoor photography in the Caribbean is:",
+    "options": [
+      "Flat midday sun",
+      "Early morning and late afternoon",
+      "Under a midday sky with the sun behind the camera",
+      "Night with no light"
+    ],
+    "answer": "Early morning and late afternoon",
+    "explanation": "Low-angle light models form and gives warmer colour.",
+    "topic": "va-l4-3"
+  },
+  {
+    "id": "p72",
+    "question": "Model releases are important because they:",
+    "options": [
+      "Improve image quality",
+      "Record the subject's consent for the image to be used",
+      "Transfer copyright to the subject",
+      "Reduce file size"
+    ],
+    "answer": "Record the subject's consent for the image to be used",
+    "explanation": "Consent, privacy and cultural sensitivity all matter.",
+    "topic": "va-l4-3"
+  },
+  {
+    "id": "p73",
+    "question": "Taino zemis or cemis were:",
+    "options": [
+      "Ceremonial seats",
+      "Spirit figures and images carved in wood, stone or shell",
+      "Musical instruments",
+      "Fishing nets"
+    ],
+    "answer": "Spirit figures and images carved in wood, stone or shell",
+    "explanation": "Duhos were the ceremonial seats.",
+    "topic": "va-l5-1"
+  },
+  {
+    "id": "p74",
+    "question": "Petroglyphs are:",
+    "options": [
+      "Painted pots",
+      "Images carved into rock surfaces",
+      "Woven baskets",
+      "Metal ornaments"
+    ],
+    "answer": "Images carved into rock surfaces",
+    "explanation": "They survive across the Caribbean as indigenous art.",
+    "topic": "va-l5-1"
+  },
+  {
+    "id": "p75",
+    "question": "Junkanoo is associated especially with:",
+    "options": [
+      "Haiti",
+      "The Bahamas and Jamaica",
+      "Trinidad only",
+      "Cuba"
+    ],
+    "answer": "The Bahamas and Jamaica",
+    "explanation": "It is a street festival of costume, music and parade.",
+    "topic": "va-l5-1"
+  },
+  {
+    "id": "p76",
+    "question": "African visual traditions in the Caribbean survive in:",
+    "options": [
+      "Drum-making, ironwork, textiles and ritual objects",
+      "Only in music",
+      "Nothing at all",
+      "Only imported goods"
+    ],
+    "answer": "Drum-making, ironwork, textiles and ritual objects",
+    "explanation": "Enslaved and indentured Africans carried the skills.",
+    "topic": "va-l5-1"
+  },
+  {
+    "id": "p77",
+    "question": "East Indian indentured workers contributed to Caribbean visual culture through:",
+    "options": [
+      "Textiles, embroidery, jewellery and architecture",
+      "Nothing measurable",
+      "Only music",
+      "Only food"
+    ],
+    "answer": "Textiles, embroidery, jewellery and architecture",
+    "explanation": "Their patterns and colours remain in local design.",
+    "topic": "va-l5-1"
+  },
+  {
+    "id": "p78",
+    "question": "Using motifs from a tradition that is not your own responsibly means:",
+    "options": [
+      "Copying freely without credit",
+      "Understanding the meaning, giving credit and where possible collaborating",
+      "Using the motif as decoration only",
+      "Renaming the motif"
+    ],
+    "answer": "Understanding the meaning, giving credit and where possible collaborating",
+    "explanation": "Cultural appropriation ignores context and ownership.",
+    "topic": "va-l5-1"
+  },
+  {
+    "id": "p79",
+    "question": "Edna Manley is significant in Jamaican art because she:",
+    "options": [
+      "Introduced photography",
+      "Made Jamaican people and labour the subject of serious sculpture and taught a generation",
+      "Painted only landscapes of England",
+      "Worked only in ceramics"
+    ],
+    "answer": "Made Jamaican people and labour the subject of serious sculpture and taught a generation",
+    "explanation": "She helped found the art school that bears her name.",
+    "topic": "va-l5-2"
+  },
+  {
+    "id": "p80",
+    "question": "Albert Huie is best known for:",
+    "options": [
+      "Abstract sculpture",
+      "Paintings of Jamaican market and rural life",
+      "Photography",
+      "Ceramics"
+    ],
+    "answer": "Paintings of Jamaican market and rural life",
+    "explanation": "His work made everyday Jamaican subjects the material of fine art.",
+    "topic": "va-l5-2"
+  },
+  {
+    "id": "p81",
+    "question": "The artists called the Intuitives were:",
+    "options": [
+      "Trained at European academies",
+      "Self-taught artists including Kapo and Everald Brown",
+      "Printmakers from Haiti",
+      "Sculptors from Cuba"
+    ],
+    "answer": "Self-taught artists including Kapo and Everald Brown",
+    "explanation": "Their work carries religious and visionary imagery.",
+    "topic": "va-l5-2"
+  },
+  {
+    "id": "p82",
+    "question": "Wifredo Lam is associated with which country's modern art?",
+    "options": [
+      "Jamaica",
+      "Cuba",
+      "Barbados",
+      "Trinidad"
+    ],
+    "answer": "Cuba",
+    "explanation": "He linked African ritual imagery with European modernism.",
+    "topic": "va-l5-2"
+  },
+  {
+    "id": "p83",
+    "question": "A common thread in early Caribbean nationalist art was:",
+    "options": [
+      "Rejecting local subjects",
+      "Using landscape and the human figure to express identity",
+      "Working only in abstraction",
+      "Ignoring politics"
+    ],
+    "answer": "Using landscape and the human figure to express identity",
+    "explanation": "Folk and religious imagery was reclaimed as fine art.",
+    "topic": "va-l5-2"
+  },
+  {
+    "id": "p84",
+    "question": "The Centre d'Art tradition is associated with the popular painting of:",
+    "options": [
+      "Haiti",
+      "Jamaica",
+      "Guyana",
+      "Puerto Rico"
+    ],
+    "answer": "Haiti",
+    "explanation": "Its naive painters became internationally known.",
+    "topic": "va-l5-2"
+  },
+  {
+    "id": "p85",
+    "question": "A curator is responsible for:",
+    "options": [
+      "Selling the tickets only",
+      "Selecting and arranging works and shaping the exhibition's meaning",
+      "Transporting artworks only",
+      "Printing the catalogue only"
+    ],
+    "answer": "Selecting and arranging works and shaping the exhibition's meaning",
+    "explanation": "Curators write statements and interpret the theme.",
+    "topic": "va-l5-3"
+  },
+  {
+    "id": "p86",
+    "question": "Works in an exhibition are usually hung:",
+    "options": [
+      "Randomly, to fill the space",
+      "At around eye level with attention to sight lines, spacing and lighting",
+      "All at floor level",
+      "All above head height"
+    ],
+    "answer": "At around eye level with attention to sight lines, spacing and lighting",
+    "explanation": "Labels state title, artist, year, medium, dimensions and price.",
+    "topic": "va-l5-3"
+  },
+  {
+    "id": "p87",
+    "question": "Copyright arises:",
+    "options": [
+      "Only when the work is registered",
+      "Automatically when an original work is created and fixed",
+      "Only when the work is sold",
+      "Only for published works"
+    ],
+    "answer": "Automatically when an original work is created and fixed",
+    "explanation": "It protects the expression, not the idea.",
+    "topic": "va-l5-3"
+  },
+  {
+    "id": "p88",
+    "question": "Moral rights include the right to:",
+    "options": [
+      "Prevent anyone from seeing the work",
+      "Be identified as the author and object to treatment that harms your reputation",
+      "Sell the work twice",
+      "Publish the work anonymously in all cases"
+    ],
+    "answer": "Be identified as the author and object to treatment that harms your reputation",
+    "explanation": "They are separate from economic rights.",
+    "topic": "va-l5-3"
+  },
+  {
+    "id": "p89",
+    "question": "A commission agreement should state:",
+    "options": [
+      "Only the total price",
+      "Scope, deadline, payment, ownership of the work and licensing of copyright",
+      "Only the size of the work",
+      "Nothing in writing"
+    ],
+    "answer": "Scope, deadline, payment, ownership of the work and licensing of copyright",
+    "explanation": "Written terms prevent most disputes.",
+    "topic": "va-l5-3"
+  },
+  {
+    "id": "p90",
+    "question": "A gallery commission on sales is:",
+    "options": [
+      "A tax paid to government",
+      "The share of the sale price the gallery retains",
+      "The artist's materials cost",
+      "A transport charge"
+    ],
+    "answer": "The share of the sale price the gallery retains",
+    "explanation": "It should be agreed in writing before the exhibition.",
+    "topic": "va-l5-3"
+  },
+  {
+    "id": "p91",
+    "question": "The main purpose of a sketchbook is to:",
+    "options": [
+      "Produce finished saleable work",
+      "Record observation, experimentation and the development of ideas",
+      "Replace the portfolio",
+      "Display in a gallery"
+    ],
+    "answer": "Record observation, experimentation and the development of ideas",
+    "explanation": "Its value is cumulative and daily use matters.",
+    "topic": "va-l6-1"
+  },
+  {
+    "id": "p92",
+    "question": "A process journal should record:",
+    "options": [
+      "Only the finished outcomes",
+      "Stimulus, research, development, processes, problems and evaluation",
+      "Only the prices of materials",
+      "Only the dates of submission"
+    ],
+    "answer": "Stimulus, research, development, processes, problems and evaluation",
+    "explanation": "It is assessed evidence of how the work was made.",
+    "topic": "va-l6-1"
+  },
+  {
+    "id": "p93",
+    "question": "Visual research sources should be:",
+    "options": [
+      "Left unrecorded",
+      "Dated and cited in full",
+      "Kept secret",
+      "Photocopied without credit"
+    ],
+    "answer": "Dated and cited in full",
+    "explanation": "Uncited images create academic and legal risk.",
+    "topic": "va-l6-1"
+  },
+  {
+    "id": "p94",
+    "question": "Documenting finished work means:",
+    "options": [
+      "Photographing it in even light and recording title, date, medium and dimensions",
+      "Copying it by hand",
+      "Filing the receipt only",
+      "Storing it unlabelled"
+    ],
+    "answer": "Photographing it in even light and recording title, date, medium and dimensions",
+    "explanation": "The digital record protects the work and supports sales.",
+    "topic": "va-l6-1"
+  },
+  {
+    "id": "p95",
+    "question": "An artist's statement explains:",
+    "options": [
+      "What you make, why and how, and the tradition you work in",
+      "Your prices",
+      "The gallery's commission",
+      "Your examination results"
+    ],
+    "answer": "What you make, why and how, and the tradition you work in",
+    "explanation": "It is required for exhibitions, applications and study.",
+    "topic": "va-l6-1"
+  },
+  {
+    "id": "p96",
+    "question": "A practical way to protect against losing digital files is to:",
+    "options": [
+      "Keep one copy on the desktop",
+      "Back up to more than one place including cloud storage",
+      "Print everything",
+      "Avoid saving versions"
+    ],
+    "answer": "Back up to more than one place including cloud storage",
+    "explanation": "Redundancy is the only reliable protection.",
+    "topic": "va-l6-1"
+  },
+  {
+    "id": "p97",
+    "question": "The SBA work plan should schedule the riskiest or most demanding pieces:",
+    "options": [
+      "Last, when time is short",
+      "Early, with buffer time before the deadline",
+      "During examination week",
+      "Never"
+    ],
+    "answer": "Early, with buffer time before the deadline",
+    "explanation": "Buffer time absorbs illness, weather and other subjects.",
+    "topic": "va-l6-2"
+  },
+  {
+    "id": "p98",
+    "question": "A portfolio is judged as a whole, so consistency of presentation means:",
+    "options": [
+      "Using the same mount, labelling and framing standards for every piece",
+      "Making every piece the same size",
+      "Using one medium only",
+      "Hiding the weaker pieces"
+    ],
+    "answer": "Using the same mount, labelling and framing standards for every piece",
+    "explanation": "Mismatched mounts undermine good work.",
+    "topic": "va-l6-2"
+  },
+  {
+    "id": "p99",
+    "question": "Acid-free mount board is used because:",
+    "options": [
+      "It is cheaper",
+      "It protects the artwork from discolouration and deterioration",
+      "It looks modern",
+      "It dries faster"
+    ],
+    "answer": "It protects the artwork from discolouration and deterioration",
+    "explanation": "Cheap board can burn the work over time.",
+    "topic": "va-l6-2"
+  },
+  {
+    "id": "p100",
+    "question": "A portfolio should show:",
+    "options": [
+      "Unrelated exercises in random order",
+      "Development of ideas, a range of media and progression in ambition",
+      "Only the largest pieces",
+      "Only copied work"
+    ],
+    "answer": "Development of ideas, a range of media and progression in ambition",
+    "explanation": "Assessors look for an idea pursued.",
+    "topic": "va-l6-2"
+  },
+  {
+    "id": "p101",
+    "question": "Work in progress should be protected from:",
+    "options": [
+      "Light only",
+      "Dust, damp, sun, insects and careless handling",
+      "Other artists",
+      "The sketchbook"
+    ],
+    "answer": "Dust, damp, sun, insects and careless handling",
+    "explanation": "Physical damage cannot always be repaired.",
+    "topic": "va-l6-2"
+  },
+  {
+    "id": "p102",
+    "question": "A digital portfolio submission should include:",
+    "options": [
+      "Low-resolution snapshots",
+      "High-resolution images with captions, contents page and statement",
+      "Only a link to social media",
+      "Unlabelled files"
+    ],
+    "answer": "High-resolution images with captions, contents page and statement",
+    "explanation": "The assessor must be able to find and identify everything.",
+    "topic": "va-l6-2"
+  },
+  {
+    "id": "p103",
+    "question": "Costing a piece of work for sale should include:",
+    "options": [
+      "Materials only",
+      "Materials, time, overheads, framing, commission and tax",
+      "The artist's other income",
+      "Nothing but a guess"
+    ],
+    "answer": "Materials, time, overheads, framing, commission and tax",
+    "explanation": "A price must allow a discount without a loss.",
+    "topic": "va-l6-3"
+  },
+  {
+    "id": "p104",
+    "question": "A deposit on a commission is normally:",
+    "options": [
+      "Returned if the client cancels for any reason",
+      "A third to a half of the agreed price, protecting the artist's work",
+      "Not requested",
+      "Paid only on delivery"
+    ],
+    "answer": "A third to a half of the agreed price, protecting the artist's work",
+    "explanation": "Written terms should state what happens on cancellation.",
+    "topic": "va-l6-3"
+  },
+  {
+    "id": "p105",
+    "question": "Which is a hazard in the painting studio?",
+    "options": [
+      "Ventilated solvent use",
+      "Solvent and aerosol vapours in a closed room",
+      "Gloves and aprons",
+      "Labelled containers"
+    ],
+    "answer": "Solvent and aerosol vapours in a closed room",
+    "explanation": "Ventilation, extraction and masks control the risk.",
+    "topic": "va-l6-3"
+  },
+  {
+    "id": "p106",
+    "question": "Dust from dry clay, plaster or sanding should be controlled by:",
+    "options": [
+      "Dry sweeping",
+      "Wet working, extraction, sealed storage and masks",
+      "Opening a window briefly",
+      "Doing the work quickly"
+    ],
+    "answer": "Wet working, extraction, sealed storage and masks",
+    "explanation": "Silica and other dusts damage the lungs.",
+    "topic": "va-l6-3"
+  },
+  {
+    "id": "p107",
+    "question": "Blunt carving tools are dangerous because:",
+    "options": [
+      "They are harder to hold",
+      "They require more force and slip more easily",
+      "They cut too cleanly",
+      "They rust quickly"
+    ],
+    "answer": "They require more force and slip more easily",
+    "explanation": "Sharp tools used away from the body are safer.",
+    "topic": "va-l6-3"
+  },
+  {
+    "id": "p108",
+    "question": "Waste solvent and paint should be:",
+    "options": [
+      "Poured down the drain",
+      "Disposed of according to local regulations",
+      "Poured on the ground",
+      "Stored with food"
+    ],
+    "answer": "Disposed of according to local regulations",
+    "explanation": "Improper disposal harms the environment and may be illegal.",
+    "topic": "va-l6-3"
+  }
+]
