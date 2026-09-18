@@ -1,0 +1,449 @@
+[
+  {
+    "id": "it-p2-01",
+    "type": "write",
+    "paper": 2,
+    "section": "Question 1",
+    "title": "Setting up an online ordering system for a small business",
+    "topic": "it-l1-1",
+    "commandWords": [
+      "Identify",
+      "State",
+      "Explain",
+      "Describe",
+      "Give",
+      "Name"
+    ],
+    "marks": 20,
+    "suggestedMinutes": 27,
+    "source": "Kimone owns and operates Sweet Lime Catering, a small business in Montego Bay that prepares meals for offices, parties and school events. At present customers send their orders by telephone and by WhatsApp message, so the orders are written on scraps of paper and some of them are lost.\n\nKimone has decided to move her ordering online. She will have a website built, store her customers' details and their orders in a database, and employ extra staff to help her run the new system. Her home office already has three computers, a printer, a scanner and a broadband connection, which she uses to prepare quotations and to keep her accounts.",
+    "prompt": "Answer ALL parts. Write in complete sentences where you are asked to explain or describe, and use correct technical terms.",
+    "planningHints": [
+      "Read the whole question first: parts (a) to (c) ask about people and security, part (d) about how the system handles a single order, and parts (e) and (f) about the database that stores the orders.",
+      "In part (a) a job needs an information-technology title and a duty that matches that title - for example a web developer builds and updates the website.",
+      "In part (b) think like the bank: a real bank knows your name, writes from its own address and never asks for your password by email.",
+      "In part (d) name the stage AND apply it to the order - for example 'input: the customer enters the items and quantities ordered'.",
+      "In part (e) every table needs a key that is different for every record, and every field needs a data type and a size (text(6), number(3), currency(8) with 2 decimal places).",
+      "In part (f) match the operation to the job: selecting records with a criterion is a query, printing a formatted summary is a report."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "marks": 4,
+        "prompt": "Kimone must employ people with the right skills. Identify TWO jobs in the field of Information Technology that she may need in order to build and run her online ordering system, and state ONE duty of each.",
+        "commandWords": [
+          "Identify",
+          "State"
+        ],
+        "modelAnswer": "1. Web developer (or web designer): builds, tests and updates the web pages that customers use to place their orders; writes the HTML and CSS and links the order form to the database so that the order is saved.\n2. Database administrator: designs the tables that hold the customers and the orders, sets the primary keys and the relationships, and makes sure the data is backed up and secure.\n(Other acceptable jobs and duties: network administrator/technician - installs and maintains the cables, router and wireless network so that the system stays connected; IT support officer - answers users' questions and fixes faults with the system; computer programmer - writes the code that processes each order; social media specialist - posts the menus and responds to customers' messages.)",
+        "markScheme": [
+          "1 mark for naming a valid IT job, and 1 mark for a correct duty of that job - maximum 4 marks for two jobs with their duties.",
+          "Accept: web developer/web designer, database administrator, network administrator/technician, IT support officer/help desk technician, computer programmer, cybersecurity officer, social media specialist.",
+          "Do not award a mark for a job with no information-technology content (for example 'cashier', 'sales clerk' or 'waiter'), or for a duty that does not match the job named."
+        ]
+      },
+      {
+        "label": "(b)",
+        "marks": 4,
+        "prompt": "Kimone receives an email that appears to come from her bank. It asks her to click a link and 'confirm your account details and password' because the account will otherwise be closed. Explain TWO checks she should carry out on the email before she responds to it.",
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "1. Check the sender's full email address: a genuine bank writes from an address that ends with its own domain name (the bank's name followed by .com, .jm, .com.jm and so on), not from a free webmail account or from a misspelled version of the bank's name, so the wrong domain shows that the message is not from the bank.\n2. Treat the urgent threat and the request for a password as warning signs: banks do not ask customers to confirm a password, PIN or full account details by email, and they do not close a customer's account at a moment's notice. A message that does so is a phishing (spoofing) attempt, and clicking the link would take her to a fake page that copies her details.\n(Also acceptable: she should hover over the link to see the real address it points to, because it will not be the bank's address; she should confirm the message by telephoning the bank on the number printed on her statement or bank card.)",
+        "markScheme": [
+          "1 mark for each valid check identified - maximum 2 marks for two checks.",
+          "1 mark for explaining what each check shows - that the email is not genuine, so it is a phishing or spoofing attack - maximum 2 marks.",
+          "Award marks for: checking the sender's full address/domain; checking the real destination of the link; noting that a bank never asks for a password, PIN or full account details by email; treating the threat to close the account as a sign of a phishing message; telephoning the bank using a number from a statement or a card.",
+          "Do not award a mark for 'delete the email' or 'do not click the link' on its own - the question asks for checks that Kimone should make."
+        ]
+      },
+      {
+        "label": "(c)",
+        "marks": 2,
+        "prompt": "State TWO measures Kimone can take to protect her computer system from viruses and other malicious software.",
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "1. Install antivirus (anti-malware) software and allow it to update itself, so that every file that is downloaded or opened is scanned and any threat is removed.\n2. Install a firewall and keep the operating system and applications updated with the latest security patches, so that unwanted programs cannot reach her computer through the network.",
+        "markScheme": [
+          "1 mark for each valid measure - maximum 2 marks.",
+          "Accept: antivirus/anti-malware software kept up to date; a firewall; regular operating-system and software updates (patches); opening files and attachments only from trusted sources; scanning USB flash drives and other removable media before use.",
+          "Do not accept a measure that only guards against the loss of data (for example 'use a password' or 'make a backup') unless it is explained as protection against malware."
+        ]
+      },
+      {
+        "label": "(d)",
+        "marks": 4,
+        "prompt": "Every order that is placed on the website passes through the information processing cycle. Describe the four stages of the cycle, using an order placed on Kimone's website as the example.",
+        "commandWords": [
+          "Describe"
+        ],
+        "modelAnswer": "Input: the customer enters the order on the website - the items and quantities, the delivery address and the date required - and the computer captures these data.\nProcessing: the system calculates the cost of the order, adds the delivery charge and checks the customer's details against the customer table in the database.\nStorage: the completed order is saved in the orders table and the customer's record is updated, so that the information can be retrieved later.\nOutput: the order number and confirmation are displayed on the screen and emailed to the customer, and the order is printed for the kitchen as the packing list.",
+        "markScheme": [
+          "1 mark for each correct stage - input, processing, storage, output - maximum 4 marks.",
+          "Award the mark only where the stage is correctly applied to the online order (for example input = the customer entering the items and quantities ordered).",
+          "Do not award a mark for merely listing the four stage names with no application to the order."
+        ]
+      },
+      {
+        "label": "(e)",
+        "marks": 3,
+        "prompt": "The orders will be stored in a database. State ONE field that should be the primary key of the ORDERS table, and give TWO other fields the table should contain with a suitable data type and a sensible size for each of them.",
+        "commandWords": [
+          "State",
+          "Give"
+        ],
+        "modelAnswer": "Primary key: OrderID - an order number that is generated automatically and is different for every order.\n1. CustomerID - the code of the customer who placed the order; data type text (alphanumeric), size 6.\n2. OrderTotal - the total cost of the order in dollars and cents; data type currency (or number), size 8 with 2 decimal places.",
+        "markScheme": [
+          "1 mark for a valid primary key (OrderID, OrderNumber or OrderRef) - the field must be unique to each order.",
+          "1 mark for each other valid field with a data type that matches it and a sensible size - maximum 2 marks. For example CustomerID text(6); Quantity number(3); UnitPrice currency(8) with 2 decimal places; OrderDate date(10); Delivered yes/no(1).",
+          "Do not award the data-type mark where the type does not match the field (for example a customer's name stored as a number) or where no size is given."
+        ]
+      },
+      {
+        "label": "(f)",
+        "marks": 3,
+        "prompt": "Kimone wants (i) to see only those customers who spent more than $5,000 in one month, and (ii) a printed summary of the month's orders. Name the database operation she would use in each case, and name ONE other database operation that would show only the orders that have not yet been delivered.",
+        "commandWords": [
+          "Name"
+        ],
+        "modelAnswer": "(i) A query - Kimone would search the ORDERS table using the criterion OrderTotal > 5000, and she could add a calculated field to work out each customer's monthly total.\n(ii) A report - a formatted, printable summary of the records, which can group the orders by customer and show the totals.\n(iii) A filter on the Delivered field (Delivered = No), which selects only those records and hides the others.",
+        "markScheme": [
+          "1 mark for 'query' in part (i).",
+          "1 mark for 'report' in part (ii).",
+          "1 mark for 'filter' in the third case (accept 'sort' or 'order by the Delivered field' only where the answer shows that the records are being restricted to the undelivered orders).",
+          "A calculated field alone does not earn the mark for (i) - a query or search is required."
+        ]
+      }
+    ],
+    "examinerTips": "Marks in this question are for the technical term plus the explanation, so never write only 'a query' or only 'a firewall' without saying what it does or where it is used. A field is only complete when it has a name, a data type and a size: 'OrderTotal currency(8), 2 decimal places' earns the mark, 'total' does not. In part (d) the four stages must be in the order input - processing - storage - output and each one must be applied to the order; listing the four names earns nothing."
+  },
+  {
+    "id": "it-p2-02",
+    "type": "write",
+    "paper": 2,
+    "section": "Question 2",
+    "title": "A fundraising letter, spreadsheet and members database",
+    "topic": "it-l6-2",
+    "commandWords": [
+      "Name",
+      "State",
+      "Write",
+      "Explain",
+      "Give"
+    ],
+    "marks": 20,
+    "suggestedMinutes": 27,
+    "source": "Members of the Roseau Youth Club are raising funds to repair the club house. The secretary, Devonte, has to write to all 60 members inviting them to the fundraising fair, and he keeps the club's souvenir sales in a spreadsheet. Part of the spreadsheet is shown below; the target for the year is stored in cell F2.\n\n        A                 B              C                  D             F\n1   Roseau Youth Club - Souvenir Sales\n2   Sales target for the year ($):                              350,000\n3\n4   Item               Quantity   Cost per unit ($)   Amount ($)\n5   Club cap              120            600\n6   Club T-shirt          300            850\n7   Water bottle          250            400\n8   Key ring              400            150\n9   Note book             180            950\n10  Pen                   500            100\n11  Mug                   150            700\n12  Bag                   100          1,200\n13  Umbrella               80          1,500\n14  Total\n\nThe club's members are listed on a second sheet (name, address, telephone number, date joined). Devonte will move the members' details into a database table so that he can search them and print mailing labels.",
+    "prompt": "Answer ALL parts. Where a formula is required, write it exactly as it would be typed into the cell, beginning with the = sign. Use the cell references shown in the extract.",
+    "planningHints": [
+      "Part (a) is about producing 60 copies of one letter and about formatting the heading, so think of the word-processing feature that joins a standard letter to a list of names.",
+      "In part (b) name the range from the first data row to the last data row, not the whole column - the nine items are in rows 5 to 13.",
+      "In part (b)(iv) remember the three parts of an IF: the condition, the text to show when it is true, and the text to show when it is false.",
+      "In part (c) a relative reference moves when the formula is copied; an absolute reference is locked with $ signs and does not move.",
+      "In part (d) verification is done by a person (or by entering the data twice) and validation is done by the software, so the two answers must be different kinds of check.",
+      "In part (e) a primary key must be unique for every record in the table forever - a name or an address is not unique."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "marks": 4,
+        "prompt": "(i) The club's name must be printed in the largest text on the invitation and centred between the left and right margins. Name the word-processing features Devonte should use and state how each one is applied.\n(ii) The name and address of each of the 60 members are stored in the Members sheet of the workbook. Name the feature Devonte should use to print a personalised letter for every member without retyping the letter, and name the TWO documents that the feature needs.",
+        "commandWords": [
+          "Name",
+          "State"
+        ],
+        "modelAnswer": "(i) Type the club's name, select it and apply a heading style (for example Heading 1) - a style that is already set to the largest font size and bold - then click the Centre alignment button (or press Ctrl+E) so that the name is centred between the left and right margins. (Equivalently, select the name and set the font size to the required size, for example 20 point, make it bold, and then apply centre alignment.)\n(ii) Mail merge. It needs the main document - the letter, with the merge fields (for example <<MemberName>> and <<Address>>) in the places where the personal details must appear - and the data source - the table of members' names and addresses (the Members sheet or a database table of members).",
+        "markScheme": [
+          "(i) 1 mark for naming a heading style / changing the font size of the selected text, and 1 mark for stating how it is applied (select the text, apply the style or set the largest font size, then click the Centre alignment button so that the text is centred between the margins).",
+          "(ii) 1 mark for 'mail merge', and 1 mark for naming BOTH documents - the main document (the letter with the merge fields) and the data source (the table of members).",
+          "Do not award the (ii) mark where only one of the two documents is named, or where the candidate describes copying and pasting the details by hand for each member."
+        ]
+      },
+      {
+        "label": "(b)",
+        "marks": 9,
+        "prompt": "Study the spreadsheet extract in the source. Write the formula that Devonte should enter in EACH of the following cells.\n(i) Cell D5, to calculate the amount collected from the club caps. [2]\n(ii) Cell D14, to total the Amount column. [2]\n(iii) Cell C14, to show the average cost per unit of the nine items. [2]\n(iv) Cell F4, to display the words Target met when the total in D14 is greater than or equal to the target held in F2, and Target not met when it is not. [3]",
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "(i) =B5*C5\n(ii) =SUM(D5:D13)   (also accepted: =D5+D6+D7+D8+D9+D10+D11+D12+D13)\n(iii) =AVERAGE(C5:C13)\n(iv) =IF(D14>=F2,\"Target met\",\"Target not met\")",
+        "markScheme": [
+          "(i) 1 mark for the correct cell references B5 and C5 and 1 mark for the multiplication operator (*) - the answer must begin with =.",
+          "(ii) 1 mark for the correct function SUM and 1 mark for the correct range D5:D13 (accept the equivalent list of cells added together).",
+          "(iii) 1 mark for the correct function AVERAGE and 1 mark for the correct range on the Cost per unit column (C5:C13).",
+          "(iv) 1 mark for =IF and the correct condition (D14>=F2); 1 mark for the correct TRUE text, \"Target met\"; 1 mark for the correct FALSE text, \"Target not met\", with the two texts separated by a comma and enclosed in quotation marks.",
+          "Award the formula marks even where the candidate has not used the = sign, but deduct one mark from the part in every case where the range is wrong (for example D5:D14 or C4:C13) or where the condition uses the wrong operator (> instead of >=)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "marks": 3,
+        "prompt": "Devonte copies the formula in D5 down to D13, and he also copies a formula that refers to the target in F2. Explain the difference between a relative cell reference and an absolute cell reference, and state which one he must use for the cell that holds the target, giving a reason for your answer.",
+        "commandWords": [
+          "Explain",
+          "State",
+          "Give"
+        ],
+        "modelAnswer": "A relative reference such as B5 changes when the formula is copied to another cell: copied down one row it becomes B6, and copied one column across it becomes C5. This is why =B5*C5 can be copied down the whole Amount column and still use each row's own quantity and cost.\nAn absolute reference is locked with dollar signs, for example $F$2. It does not change when the formula is copied, so every copy of the formula still refers to the same cell.\nDevonte must use the absolute reference $F$2 for the target, because a relative reference would move down the sheet as the formula is copied and would no longer point to the cell holding the target.",
+        "markScheme": [
+          "1 mark for explaining that a relative reference changes (the row and/or the column adjusts) when the formula is copied.",
+          "1 mark for explaining that an absolute reference (written with $ signs, for example $F$2) stays fixed when the formula is copied.",
+          "1 mark for stating that the target cell must be referred to absolutely ($F$2), with the reason that a relative reference would point to the wrong cell as the formula is copied."
+        ]
+      },
+      {
+        "label": "(d)",
+        "marks": 2,
+        "prompt": "The secretary will type the quantities sold into the spreadsheet. State ONE way the data entered in the Quantity column can be verified, and ONE way the spreadsheet itself can validate an entry in that column.",
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "Verification: a second person reads the quantities from the club's sales slips while the secretary reads them back from the screen (double entry / reading back), or the secretary prints the sheet and checks the printed figures against the slips.\nValidation: the Quantity column is set up so that only whole numbers greater than zero are accepted, for example a validation rule (data validation) with a range or a presence check, so that a text entry or a negative quantity is rejected.",
+        "markScheme": [
+          "1 mark for a valid verification method (double entry, reading the data back to a second person, proofreading against the source document, checking a printed control total).",
+          "1 mark for a valid validation check applied to the column (a range/limit check that accepts only whole numbers greater than zero, a presence check that refuses a blank, or a type check that refuses text in a numeric field).",
+          "Do not award the validation mark for 'check the spelling' or for any check that is made by a person rather than by the software."
+        ]
+      },
+      {
+        "label": "(e)",
+        "marks": 2,
+        "prompt": "The members' details will be moved from the spreadsheet into a database table. State the field that should be the primary key of the MEMBERS table and give ONE reason for your choice.",
+        "commandWords": [
+          "State",
+          "Give"
+        ],
+        "modelAnswer": "MemberID (a membership number allocated to each member when they join). It is the primary key because it is unique to each member and never changes, so two members who share the same name and address can still be told apart; a field such as MemberName would risk duplicate records.",
+        "markScheme": [
+          "1 mark for naming a suitable unique field (MemberID, membership number, member code).",
+          "1 mark for a valid reason: the field is unique and is never duplicated, unlike a name; it is short and can be used to link the MEMBERS table to other tables (for example the payments table); or it never changes."
+        ]
+      }
+    ],
+    "examinerTips": "Write formulas exactly as the software expects them: begin with =, use the correct range (D5:D13, not D4:D14), and put the texts inside an IF in quotation marks. In part (c) explain what happens to the reference when the formula is copied - candidates who only define the two kinds of reference lose the explanation mark. Keep verification (double-checking by a person) and validation (a rule applied by the software) clearly apart; marks are lost when both answers describe the same kind of check."
+  },
+  {
+    "id": "it-p2-03",
+    "type": "write",
+    "paper": 2,
+    "section": "Question 3",
+    "title": "Algorithms and a sales spreadsheet for a juice bar",
+    "topic": "it-l2-1",
+    "commandWords": [
+      "Write",
+      "Describe",
+      "State",
+      "Explain"
+    ],
+    "marks": 25,
+    "suggestedMinutes": 33,
+    "source": "Marcia sells freshly squeezed juice at her school's sports day. A small cup costs $200 and customers may buy several cups at a time. She keeps a record of each day's sales in a spreadsheet and she wants a program that will work out each customer's bill and tell her whether the day's takings covered the cost of the stall. Part of her spreadsheet is shown below; the cost of the stall and the ingredients is stored in cell F2.\n\n        A                 B              C                   D             F\n1   Marcia's Juice Bar - Sports Day Sales\n2   Cost of stall and ingredients ($):                         3,500\n3\n4   Day                Cups sold   Price per cup ($)   Amount ($)\n5   Day 1                 180             200\n6   Day 2                 240             200\n7   Day 3                 210             200\n8   Day 4                 270             200\n9   Total\n10  Sales less costs\n\nMarcia charged the same price for every cup she sold at the fair.",
+    "prompt": "Answer ALL parts. Write every algorithm in pseudocode - no particular programming language is required. Write every formula exactly as it would be typed into the cell, beginning with the = sign.",
+    "planningHints": [
+      "In part (a) work through the algorithm in the order the computer would follow it: declare, input, calculate, decide, calculate, output.",
+      "A variable that is used in a calculation but only gets a value inside a selection must still be given a value (initialised) before the selection, or it holds nothing when the condition is false.",
+      "In part (b)(ii) trace the loop line by line with a table: each time round, add the value to Sum, add 1 to Count, then read the next value. Stop when the value read is -1.",
+      "The sentinel value -1 controls the loop; it is read but it is never added to Sum and never counted.",
+      "In part (c) check the ranges against the extract: the data runs from row 5 to row 8, and the totals belong in row 9 and row 10.",
+      "In part (d) ask yourself what the computer does with Sum / Count when no value has ever been read - dividing by zero is an error."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "marks": 8,
+        "prompt": "At the fair Marcia sells her juice in small cups at $200 each, and a customer may buy more than one cup. Write an algorithm in pseudocode that prompts the cashier for the number of cups a customer has bought, calculates the amount due at $200 per cup, gives a 10% discount when 5 or more cups are bought and prints the amount that the customer must pay. Declare all the variables you use.",
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "Begin\n    Declare Cups as Integer\n    Declare AmountDue, Discount, AmountToPay as Real\n    Constant Price = 200\n    Print \"Enter the number of cups bought\"\n    Read Cups\n    AmountDue = Cups * Price\n    Discount = 0\n    If Cups >= 5 Then\n        Discount = AmountDue * 0.10\n    End If\n    AmountToPay = AmountDue - Discount\n    Print \"Amount due: \", AmountDue\n    Print \"Discount allowed: \", Discount\n    Print \"Amount to pay: \", AmountToPay\nEnd",
+        "markScheme": [
+          "1 mark for Begin/End (Start/Stop), so that the algorithm has a definite beginning and end.",
+          "1 mark for declaring the variables with suitable data types (Cups integer; AmountDue, Discount and AmountToPay real or currency) and/or declaring the price once as a constant.",
+          "1 mark for prompting for and reading the number of cups (input).",
+          "1 mark for calculating the amount due as Cups * 200 (accept the declared constant in place of 200).",
+          "1 mark for initialising Discount to 0 before it is used, so that it still has a value when fewer than 5 cups are bought.",
+          "1 mark for the selection structure (IF ... THEN ... END IF, or CASE) with the correct condition Cups >= 5.",
+          "1 mark for calculating the discount as 10% of the amount due (AmountDue * 0.10).",
+          "1 mark for printing the final amount to be paid (the amount due less the discount) with a suitable message.",
+          "Deduct 1 mark (to a minimum of 0) where the amount due is calculated only inside the selection, so that it is never worked out when fewer than 5 cups are bought."
+        ]
+      },
+      {
+        "label": "(b)",
+        "marks": 5,
+        "prompt": "Study the algorithm below and answer the questions that follow.\n\nBegin\n    Sum = 0\n    Count = 0\n    Print \"Enter the first sale; enter -1 to stop\"\n    Read Sale\n    While Sale <> -1\n        Sum = Sum + Sale\n        Count = Count + 1\n        Read Sale\n    End While\n    If Count > 0 Then\n        Average = Sum / Count\n    End If\n    Print \"Total sales: \", Sum\n    Print \"Number of sales: \", Count\n    Print \"Average sale: \", Average\nEnd\n\n(i) Describe what the algorithm does with the values that are entered. [2]\n(ii) State exactly what is printed when the cashier enters 400, 600, 800 and then -1. Show your working. [3]",
+        "commandWords": [
+          "Describe",
+          "State"
+        ],
+        "modelAnswer": "(i) The algorithm reads sales one at a time and adds each one to a running total (Sum) while counting how many sales have been entered (Count). The value -1 is a sentinel: it is not added to the total, it simply stops the loop. When the loop ends, if at least one sale was entered the algorithm divides the total by the count to find the average, and it then prints the total, the number of sales and the average sale.\n(ii) Sum = 400 + 600 + 800 = 1800 (the -1 is not added because it ends the loop).\nCount = 3.\nAverage = 1800 / 3 = 600.\nSo the output is: 'Total sales: 1800', 'Number of sales: 3', 'Average sale: 600'.",
+        "markScheme": [
+          "(i) 1 mark for stating that each value is added to a running total (Sum) while the number of values is counted (Count), and that the sentinel -1 ends the loop without being added.",
+          "(i) 1 mark for stating that the algorithm then prints the total, the count and the average (the total divided by the count).",
+          "(ii) 1 mark for the total 1800.",
+          "(ii) 1 mark for the count 3.",
+          "(ii) 1 mark for the average 600 (1800 / 3), with the working shown.",
+          "Where a candidate adds the sentinel to the total (total 1799) and then divides by 4 to get 449.75, award 2 of the 3 marks in (ii) - the method is right but the treatment of the sentinel is wrong."
+        ]
+      },
+      {
+        "label": "(c)",
+        "marks": 6,
+        "prompt": "Marcia also records her sales in a spreadsheet. Study the extract in the source and write the formula that she should enter in EACH of the following cells.\n(i) Cell D5, to calculate the money collected on Day 1. [1]\n(ii) Cell D9, to total the Amount column. [2]\n(iii) Cell D10, to show how much of the money collected was left after the cost of the stall and the ingredients (the cost is held in F2) was paid. [1]\n(iv) Cell F5, to display the word Profit when the amount in D10 is greater than zero and the word Loss when it is not. [2]",
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "(i) =B5*C5\n(ii) =SUM(D5:D8)   (also accepted: =D5+D6+D7+D8)\n(iii) =D9-F2\n(iv) =IF(D10>0,\"Profit\",\"Loss\")",
+        "markScheme": [
+          "(i) 1 mark for =B5*C5 (correct cells and the multiplication operator).",
+          "(ii) 1 mark for the function SUM and 1 mark for the correct range D5:D8.",
+          "(iii) 1 mark for subtracting the cost cell from the sales total (=D9-F2). Accept the absolute form =D9-$F$2.",
+          "(iv) 1 mark for =IF and the correct condition (D10>0); 1 mark for both texts (\"Profit\" and \"Loss\") in the correct order, separated by a comma and enclosed in quotation marks.",
+          "Do not award the range mark where the wrong rows are used (for example D5:D9, which would add the total to itself, or D4:D8, which includes the heading row)."
+        ]
+      },
+      {
+        "label": "(d)",
+        "marks": 3,
+        "prompt": "In the algorithm in part (b), the statement Average = Sum / Count is carried out only when Count > 0. Explain why this check is necessary, and state what would happen if the check were removed and the cashier entered -1 as the first value.",
+        "commandWords": [
+          "Explain",
+          "State"
+        ],
+        "modelAnswer": "The check is necessary because the Average line divides by Count, and Count is still 0 if no sale has been entered. Dividing by zero is not possible, so the check keeps the algorithm from carrying out an impossible calculation.\nIf the check were removed and -1 were entered first, the loop would never run, Count would remain 0, and the statement Sum / Count would be a division by zero - a logic (run-time) error that would stop the program or make it display an error message such as 'division by zero' instead of an average.\nWith the check in place the program simply prints Total sales: 0 and Number of sales: 0, and no average is printed.",
+        "markScheme": [
+          "1 mark for explaining that the check prevents a division by zero, because Count would be 0 when no sale has been entered.",
+          "1 mark for stating that the program would try to evaluate Sum / Count with Count = 0 and would fail (a run-time or logic error, or an error message).",
+          "1 mark for stating what the checked algorithm prints instead: a total of 0 and a count of 0, with no average."
+        ]
+      },
+      {
+        "label": "(e)",
+        "marks": 3,
+        "prompt": "Marcia advertises her juice bar on the internet. Explain ONE way in which the use of information and communications technology could affect employment, and ONE way in which it could affect education.",
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "Employment: ICT creates new kinds of jobs (web developer, data analyst, IT support officer, delivery driver for an online store) and allows some people to work from home, but it also replaces routine work with automation - for example self-checkout machines and automatic order taking - so employees in those jobs must be retrained or may lose their jobs.\nEducation: students can use online lessons, videos and past papers to learn at any time and from any place, and lessons can continue at a distance when school is closed; however, students who have no computer or no reliable internet connection at home are placed at a disadvantage, and it is easier to copy work from the internet.",
+        "markScheme": [
+          "1 mark for a valid effect on employment, with the explanation of how it comes about.",
+          "1 mark for a valid effect on education, with the explanation of how it comes about.",
+          "1 mark for a second explained effect, or for a well-developed explanation of either the employment or the education effect - maximum 3 marks in total.",
+          "Accept any of: new ICT job types; teleworking/working from home; automation replacing routine jobs; jobs requiring new ICT skills. Education: online and distance learning; access to information at any time; the digital divide for students without devices or internet; plagiarism."
+        ]
+      }
+    ],
+    "examinerTips": "Examiners award a mark for each line of the algorithm that does the job asked for, so write one statement per line and use Begin/End. Always declare your variables, always initialise a total or a counter before the loop, and always read the first value before the loop and the next value inside the loop - an algorithm that never reads a new value inside the loop earns very few marks. In part (b) show the working for each line of the trace; a bare answer cannot earn the method marks."
+  },
+  {
+    "id": "it-p2-04",
+    "type": "write",
+    "paper": 2,
+    "section": "Question 4",
+    "title": "A school laboratory network and a pass/fail algorithm",
+    "topic": "it-l4-1",
+    "commandWords": [
+      "Describe",
+      "Give",
+      "Explain",
+      "State",
+      "Write"
+    ],
+    "marks": 25,
+    "suggestedMinutes": 33,
+    "source": "Harbour View High School is upgrading its computer laboratory. The laboratory will have twenty desktop computers, two network printers and a file server, all connected to the school's broadband service by cable. The principal also wants a wireless network so that teachers can use laptops and tablets in the classrooms. She has asked for the school's examination records to be kept in the cloud as well as on the file server.\n\nThe school's technician, Mr Whyte, has to test the new network. He has also been asked to write a small program that will tell the principal how many students passed the end-of-term examination and how many failed.",
+    "prompt": "Answer ALL parts. Write the algorithm in pseudocode - no particular programming language is required. Use correct technical terms when you describe the network.",
+    "planningHints": [
+      "For part (a) say what each device does, not what it looks like - for example the switch sends a message only to the intended computer, and the router joins two different networks.",
+      "In part (b) the advantage usually comes down to cost, installation and mobility; the disadvantage comes down to security and signal quality.",
+      "In part (c) one technology name is enough - no explanation is asked for.",
+      "In part (d) give TWO clear benefits and only ONE risk, and say how the risk would be managed - the mark for the risk is not given if there is no explanation.",
+      "For part (d) think about what happens to the records if the internet is down, and about who else can reach the records when a third party stores them.",
+      "For part (e) remember the priming read, the two counters initialised to 0, the selection for a pass and a read of the next mark inside the loop."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "marks": 5,
+        "prompt": "Describe the function of EACH of the following in the school's laboratory network: a network interface card, a switch, a router, a modem and a wireless access point.",
+        "commandWords": [
+          "Describe"
+        ],
+        "modelAnswer": "Network interface card (NIC): the adapter fitted in (or plugged into) each computer; it converts the computer's data into signals that can travel along the network medium and controls the flow of data between the computer and the network.\nSwitch: the device inside the laboratory that all the computers connect to; it reads the address of each message and sends it only to the computer for which it is intended.\nRouter: the device that connects two different networks together - the school's local area network and the internet - and chooses the best path for the data to travel.\nModem: converts the digital signals of the computers into the analogue signals that are used on the broadband (telephone) line, and converts incoming signals back into digital form.\nWireless access point: connects the teachers' wireless devices (laptops, tablets and phones) by radio waves to the wired network, so that they can share the printers and use the internet connection.",
+        "markScheme": [
+          "1 mark for each correct function - maximum 5 marks: network interface card; switch; router; modem; wireless access point.",
+          "Award the switch mark only where the answer shows that the message is sent only to the intended computer (a device that sends every message to every computer is a hub, not a switch).",
+          "Award the router mark only where a connection between two networks (or between the network and the internet) is described.",
+          "Do not award a mark where the candidate only repeats the name of the device without stating what it does."
+        ]
+      },
+      {
+        "label": "(b)",
+        "marks": 4,
+        "prompt": "The teachers will use the wireless network in their classrooms. Give ONE advantage and ONE disadvantage of using a wireless network in the school rather than running cables to every classroom, and explain each of them.",
+        "commandWords": [
+          "Give",
+          "Explain"
+        ],
+        "modelAnswer": "Advantage: it is cheaper and much quicker to install and to extend, because no cables have to be run through walls and ceilings; teachers and students can also move from room to room with their laptops and tablets and stay connected, where a cabled machine is fixed in one place.\nDisadvantage: wireless signals leave the building and travel through the air, so they can be intercepted or picked up by anyone within range; if the network is not encrypted with a strong password, an outsider can use the school's connection or read its data. Signal strength and speed also fall off with distance and are reduced by walls and interference from other devices.",
+        "markScheme": [
+          "1 mark for a valid advantage and 1 mark for explaining it - for example lower installation cost or easier extension, explained by the fact that no cabling is needed, or mobility, explained by the users being able to move around while staying connected.",
+          "1 mark for a valid disadvantage and 1 mark for explaining it - for example weaker security, explained by the signal travelling through the air and being interceptable, or reduced speed and reliability, explained by distance, walls and interference.",
+          "Maximum 4 marks. Accept any other correct advantage or disadvantage that is properly explained; do not award the explanation mark where the candidate only lists the point."
+        ]
+      },
+      {
+        "label": "(c)",
+        "marks": 1,
+        "prompt": "State the name of the technology that allows the teachers' laptops and tablets to connect to the network and to the internet without cables.",
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "Wi-Fi (IEEE 802.11).",
+        "markScheme": [
+          "1 mark for Wi-Fi.",
+          "Accept: IEEE 802.11; WLAN / wireless local area network; a wireless access point."
+        ]
+      },
+      {
+        "label": "(d)",
+        "marks": 6,
+        "prompt": "The principal wants the school's examination records to be stored in the cloud as well as on the file server. Explain TWO benefits of storing the records in the cloud, and ONE risk that must be managed if this is done.",
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "Benefit 1: the records can be reached at any time and from any device that has an internet connection, so teachers can mark and update them from home, and a copy is held off the school compound, so the records survive a fire, a theft or a failed file server.\nBenefit 2: the school does not have to buy further storage hardware or pay staff to install and update the software - the service provider runs it - and the school pays only for the storage it actually uses, which can be increased or reduced as the need changes.\nRisk: the records can only be reached while the internet connection and the provider's service are working, and the school gives up direct control of the data to a third party, so it must insist that the data are encrypted, that each user has a password and only the permissions needed for the job, and that the provider's privacy and data-protection terms are acceptable (parental permission may also be needed for students' records).",
+        "markScheme": [
+          "1 mark for each valid benefit - maximum 2 marks - and 1 mark for the explanation of each benefit - maximum 2 marks.",
+          "Accept benefits: access from anywhere at any time and from any device; an off-site copy that survives a fire, a theft or a failed server; no need to buy or maintain extra storage hardware; software and updates run by the provider; paying only for what is used; easier sharing of files with colleagues.",
+          "1 mark for a valid risk - maximum 1 mark - and 1 mark for stating how it is managed - maximum 1 mark.",
+          "Accept risks: loss of the internet connection or of the provider's service; loss of direct control over the records; unauthorised access or a data leak. Management: encryption; passwords and user permissions; regular backups; a privacy/data-protection agreement with the provider.",
+          "Maximum 6 marks. A benefit or a risk that is named but cannot be explained earns the naming mark only."
+        ]
+      },
+      {
+        "label": "(e)",
+        "marks": 9,
+        "prompt": "The principal wants to know how many students passed the end-of-term examination and how many failed. Write an algorithm in pseudocode that reads the mark obtained by each student, one mark at a time, until the sentinel value -1 is entered; counts how many students passed (a mark of 50 or more) and how many failed; and, at the end, prints both numbers. Declare all the variables you use.",
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "Begin\n    Declare Mark, Passed, Failed as Integer\n    Passed = 0\n    Failed = 0\n    Print \"Enter the first mark; enter -1 to finish\"\n    Read Mark\n    While Mark <> -1\n        If Mark >= 50 Then\n            Passed = Passed + 1\n        Else\n            Failed = Failed + 1\n        End If\n        Print \"Enter the next mark; enter -1 to finish\"\n        Read Mark\n    End While\n    Print \"Number of students who passed: \", Passed\n    Print \"Number of students who failed: \", Failed\nEnd",
+        "markScheme": [
+          "1 mark for Begin/End (Start/Stop).",
+          "1 mark for declaring the variables (Mark, Passed and Failed) with a suitable data type - integer for a count and for a whole-number mark.",
+          "1 mark for initialising both counters to 0 before the loop, so that they do not count from an undefined value.",
+          "1 mark for reading the first mark before the loop (the priming read).",
+          "1 mark for the correct loop condition (While Mark <> -1, or Repeat ... Until Mark = -1).",
+          "1 mark for the selection that separates a pass from a fail (Mark >= 50).",
+          "1 mark for adding 1 to the correct counter in each branch of the selection (Passed or Failed).",
+          "1 mark for reading the next mark inside the loop, so that the loop can end when -1 is entered.",
+          "1 mark for printing both totals at the end with suitable messages (Passed and Failed).",
+          "Deduct 1 mark where the sentinel -1 is counted as a student's mark, giving a maximum of 8 marks; deduct 1 mark where the loop never reads a further mark, giving a maximum of 8 marks."
+        ]
+      }
+    ],
+    "examinerTips": "In part (a) a name is not a function: 'a router connects two networks' earns the mark, 'a router' does not. In part (e) the sentinel -1 controls the loop and must never be counted as a mark - the mark scheme deducts for that. Always initialise Passed and Failed to 0 before the loop, and make sure the loop reads a new mark every time it repeats; an algorithm that never reads inside the loop will not end."
+  }
+]
