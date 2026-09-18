@@ -130,28 +130,49 @@ export default async function handler(req, res) {
       const users = await fetchAllUsers(supabase);
       const emailById = new Map(users.map((u) => [u.id, u.email || null]));
 
+      // DELIBERATELY `select("*")` — no column is named anywhere in this query.
+      // The owner's live `purchases` table was created from an older schema than
+      // supabase/schema.sql and has no `stripe_session_id` column, so naming it
+      // (as this query used to) failed the WHOLE list with
+      //   "column purchases.stripe_session_id does not exist"
+      // which left the owner unable to see the access they had granted. Asking
+      // for whatever columns the live table actually has cannot raise that error,
+      // so this works on the older and the current schema alike — and the rows are
+      // shaped and sorted here in JS, so the list also does not depend on
+      // `created_at` (or any other column name) existing.
       const { data: rows, error: listError } = await supabase
         .from("purchases")
-        .select("id,user_id,purchase_type,subject_id,stripe_session_id,created_at")
-        .order("created_at", { ascending: false })
+        .select("*")
         .limit(1000);
       if (listError) throw listError;
 
       const now = Date.now();
-      const grants = (rows || []).map((r) => {
-        const created = r.created_at ? new Date(r.created_at).getTime() : null;
-        const expiresAt = created ? new Date(created + ACCESS_WINDOW_MS).toISOString() : null;
-        return {
-          id: r.id,
-          userId: r.user_id,
-          email: emailById.has(r.user_id) ? emailById.get(r.user_id) : null,
-          purchaseType: r.purchase_type,
-          subjectId: r.subject_id || null,
-          createdAt: r.created_at || null,
-          expiresAt,
-          active: expiresAt ? new Date(expiresAt).getTime() > now : false,
-        };
-      });
+      // Epoch for a missing/unparseable timestamp, so those rows sort last
+      // instead of making the comparator return NaN.
+      const timeOf = (value) => {
+        const t = value ? Date.parse(value) : NaN;
+        return Number.isFinite(t) ? t : 0;
+      };
+      const grants = (rows || [])
+        .map((r) => {
+          // Older schema variant: the grant timestamp may be `granted_at`.
+          const createdAt = r.created_at || r.granted_at || null;
+          const created = timeOf(createdAt);
+          // One expiry rule for the whole platform (api/purchases/list.js):
+          // a grant is live for 365 days from the row's creation.
+          const expiresAt = created ? new Date(created + ACCESS_WINDOW_MS).toISOString() : null;
+          return {
+            id: r.id,
+            userId: r.user_id,
+            email: emailById.has(r.user_id) ? emailById.get(r.user_id) : null,
+            purchaseType: r.purchase_type || null,
+            subjectId: r.subject_id || null,
+            createdAt,
+            expiresAt,
+            active: expiresAt ? new Date(expiresAt).getTime() > now : false,
+          };
+        })
+        .sort((a, b) => timeOf(b.createdAt) - timeOf(a.createdAt)); // newest first
 
       return res.status(200).json({
         grants,
