@@ -1,0 +1,631 @@
+[
+  {
+    "id": "ch-p2-01",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "Taino society before 1492",
+    "topic": "ch-l1-1",
+    "commandWords": [
+      "Describe",
+      "Explain",
+      "Discuss"
+    ],
+    "marks": 30,
+    "suggestedMinutes": 40,
+    "source": "Source: life in a Taino village in the Greater Antilles, fifteenth century (summary).\n\nThe village stands beside a river. Around it are conucos — mounds of heaped earth in which the people grow cassava, sweet potato, maize and beans. Fishing nets and dugout canoes lie at the water's edge, and heaps of cotton thread and finished hammocks wait to be carried to the meeting place.\n\nThe village is led by a cacique, advised by elders and by priests called behiques. His house, built of poles and thatch, is the largest in the settlement and stands beside a paved court where the young men play a ball game with a rubber ball. Most families live in smaller one-room bohios with hammocks, clay pots and a fire in the middle. Houses, crops and fishing grounds are worked in common, and produce is shared among the families of the village. When the Spanish arrived they found a people who worked hard, traded along the coast in cotton, salt and stone tools, and fought the Kalinago of the Lesser Antilles with whom they were in constant dispute.",
+    "prompt": "Study the source above and answer ALL parts of the question.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Describe TWO features of Taino economic life shown in the source.",
+        "marks": 6,
+        "commandWords": [
+          "Describe"
+        ],
+        "modelAnswer": "The Taino farmed using conucos — heaped mounds of earth in which they grew cassava, sweet potato, maize and beans. They also fished, using nets and dugout canoes, and they traded along the coast in cotton, salt and stone tools. These activities show an economy based on agriculture supported by fishing and coastal trade.",
+        "markScheme": [
+          "1 mark for each feature named from the source (maximum 2 marks).",
+          "1 mark each for explaining how that feature worked, e.g. conuco mounds for root crops (maximum 2 marks).",
+          "1 mark for each reference to evidence in the source, e.g. nets and canoes, trade in cotton and salt (maximum 2 marks).",
+          "Award 6 marks for two features fully described with supporting evidence."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain how religion and leadership were organised in Taino society.",
+        "marks": 10,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "The village was led by a hereditary chief, the cacique, whose authority came from his family line and who was advised by a council of elders. Religion was in the hands of the behiques, part priest, part healer, who led ceremonies, treated the sick and explained the will of the zemis, the spiritual forces the Taino honoured in the crops, the sea and the ancestors. Belief and government were closely joined: the cacique's house stood next to the batey, the paved court used both for the ball game and for public ceremony and celebration. Produce and labour were shared, so the chief's standing rested on giving rather than on force.",
+        "markScheme": [
+          "1-2 marks for identifying the cacique as the village leader (maximum 2 marks).",
+          "1-2 marks for explaining that leadership passed through a family line and was advised by elders (maximum 2 marks).",
+          "1 mark for naming the behiques (maximum 1 mark) and 1-2 marks for their role — ceremonies, healing, zemis (maximum 2 marks).",
+          "1-2 marks for linking belief to daily life, e.g. ceremonies at the batey, zemis tied to crops and sea (maximum 2 marks).",
+          "1 mark for any accurate point on sharing of produce and labour."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "\"European contact destroyed Taino society through disease and forced labour rather than warfare.\" Discuss this statement, using evidence from the period of Spanish settlement.",
+        "marks": 14,
+        "commandWords": [
+          "Discuss",
+          "Evaluate"
+        ],
+        "modelAnswer": "The statement is largely true, although warfare played a serious part. Spanish settlement brought forced labour: under the encomienda and then the repartimiento system, villages were handed to settlers who demanded labour in mines and on farms. Spanish demands for maize and cassava in addition to tribute broke the system of shared production that had fed the villages. Far more deadly were the diseases the Spanish carried — smallpox, measles and influenza — against which the Taino had no resistance; whole villages were lost in weeks. The Spanish also used the requerimiento and, after 1511, the Laws of Burgos, which admitted that the treatment of the people was wrong but still required their labour. Warfare mattered, especially the resistance led by Enriquillo in Hispaniola and the campaigns that drove many people to the hills and to the Lesser Antilles, but by 1540 the islands' populations had collapsed mainly through epidemic disease and the exhaustion of a people worked and moved at will. The balance of the argument therefore supports the statement.",
+        "markScheme": [
+          "1-2 marks for an introduction that shows understanding of the statement and takes it on (maximum 2 marks).",
+          "2-4 marks for developed knowledge of disease and its effects, with examples (maximum 4 marks).",
+          "2-4 marks for developed knowledge of forced labour systems — encomienda, repartimiento (maximum 4 marks).",
+          "1-3 marks for treating warfare and resistance fairly, e.g. Enriquillo, flight to the Lesser Antilles (maximum 3 marks).",
+          "1-2 marks for a reasoned conclusion that answers the question asked (maximum 2 marks).",
+          "Do not award more than 6 marks for knowledge alone: this part is marked for argument and use of evidence."
+        ]
+      }
+    ],
+    "planningHints": [
+      "Decide what each part is asking: (a) describe, (b) explain, (c) discuss."
+    ],
+    "examinerTips": "In (c) you are being asked to weigh two explanations against each other. The best answers state a position, support it with named evidence and deal briefly with the other side."
+  },
+  {
+    "id": "ch-p2-02",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "European rivalry and the struggle for the Caribbean",
+    "topic": "ch-l1-2",
+    "commandWords": [
+      "Identify",
+      "Explain",
+      "Assess"
+    ],
+    "marks": 30,
+    "suggestedMinutes": 40,
+    "source": "Source: European holdings in the Caribbean, about 1655 (summary).\n\nSpain claims the whole region after 1492, and Spanish fleets carry bullion from Mexico and Panama to Seville each year. That trade attracts attack. English, French and Dutch traders and privateers, licensed by their governments, seize Spanish ships; settlements are planted in islands Spain never fully occupied. St Kitts is shared and then divided between English and French in 1625-27; the English take Barbados (1627), Nevis and Antigua; the French take Martinique and Guadeloupe (1635); the Dutch hold Curacao and St Eustatius, trading in salt and sugar from their base. The English seize Jamaica from Spain in 1655. By the middle of the century the region is a patchwork of rival colonies, each tied to its own European government and each competing for the same markets.",
+    "prompt": "Study the source above and answer ALL parts of the question.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify TWO ways in which rival European powers challenged Spain's claim to the Caribbean.",
+        "marks": 6,
+        "commandWords": [
+          "Identify"
+        ],
+        "modelAnswer": "They licensed privateers to attack Spanish shipping carrying bullion, and they planted their own colonies on islands Spain had not occupied — the English in St Kitts, Barbados and Jamaica, the French in St Kitts, Martinique and Guadeloupe and the Dutch in Curacao and St Eustatius. Each planted settlement traded directly with the colonies, breaking Spain's monopoly.",
+        "markScheme": [
+          "1 mark for each way identified (maximum 2 marks).",
+          "1-2 marks for evidence naming privateering or the seizure of Spanish ships carrying bullion (maximum 2 marks).",
+          "1-2 marks for evidence naming rival settlements and their islands (maximum 2 marks)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain why control of trade mattered more than control of land in the Caribbean rivalry of this period.",
+        "marks": 10,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "Wealth in this period came from trade: bullion, sugar, tobacco, cotton, indigo and salt, and the enslaved labour that produced them. A small island such as St Eustatius or Curacao was valuable out of all proportion to its size because it could be used as a trading depot, free port or base from which to take another power's ships. Spain's claim rested on a monopoly of trade, so the other powers attacked that monopoly by trading directly with Spanish colonists, legal or not. Land mattered mainly as a place to produce the crops that fed the trade, and because islands could be exchanged or captured at the peace table as bargaining counters.",
+        "markScheme": [
+          "1-2 marks for identifying the trade goods involved — bullion, sugar, tobacco, salt (maximum 2 marks).",
+          "1-2 marks for explaining that Spain's wealth rested on a trading monopoly (maximum 2 marks).",
+          "1-3 marks for explaining the value of small islands as depots, free ports or bases (maximum 3 marks).",
+          "1-2 marks for showing that land mattered mainly as a base for producing traded crops (maximum 2 marks).",
+          "1 mark for a clear concluding judgement."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Assess the effects of European rivalry on the lives of the people already living in the Caribbean.",
+        "marks": 14,
+        "commandWords": [
+          "Assess",
+          "Discuss"
+        ],
+        "modelAnswer": "Rivalry multiplied the harm done to the indigenous peoples. Competition meant repeated expeditions, raids and reprisals, so warfare lasted far longer than the first Spanish conquest. Rival powers sold firearms, horses and alcohol and encouraged one group to fight another, and the Kalinago of the Lesser Antilles were able to hold off Spanish settlement longer partly because they could trade with the English, French and Dutch for iron weapons. But this cut both ways: the same trade drew the islands' peoples into Europe's wars, and the settlements that followed brought disease, enslavement and the seizure of land for plantations. Those who would not submit were removed to the mountains, to the smaller islands or, in some cases, to islands such as St Vincent; the survivors were pushed to the margins of the societies that replaced them. On balance, rivalry reduced the indigenous peoples' room to negotiate and hastened their decline.",
+        "markScheme": [
+          "1-2 marks for showing understanding of what rivalry involved (maximum 2 marks).",
+          "2-4 marks for developed knowledge of prolonged warfare, raids and expeditions (maximum 4 marks).",
+          "1-3 marks for the effect of trade in weapons and goods, with examples (maximum 3 marks).",
+          "1-3 marks for the further effects — disease, dispossession, removal from the islands (maximum 3 marks).",
+          "1-2 marks for a reasoned conclusion responding to the question (maximum 2 marks)."
+        ]
+      }
+    ],
+    "planningHints": [
+      "Use the source for (a) and your own knowledge for (b) and (c)."
+    ],
+    "examinerTips": "In (c) 'assess' means say how serious the effects were and how far they can be traced to rivalry rather than to Spanish colonisation alone."
+  },
+  {
+    "id": "ch-p2-03",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "The sugar revolution and the plantation economy",
+    "topic": "ch-l2-1",
+    "commandWords": [
+      "Describe",
+      "Explain",
+      "Discuss"
+    ],
+    "marks": 30,
+    "suggestedMinutes": 40,
+    "source": "Source: agriculture in Jamaica and Barbados, 1660-1770 (summary of records).\n\nIn 1660 Barbados already has more land in cane than in any other crop; Jamaica, captured in 1655, begins to follow. Tobacco, indigo, cotton and cocoa, the early export crops of both islands, are pushed aside as the price of sugar in London holds high. By 1680 Jamaica exports more sugar than tobacco. Small farms held by indentured servants from Britain and Ireland are bought up and combined into estates, some of several hundred acres, worked by growing numbers of enslaved Africans. Each estate needs a mill, boiling house and curing house, and capital to build them. By the 1770s Jamaica is the largest British sugar producer in the Caribbean: about 600 estates, and imports of enslaved Africans have passed 600 a year for decades. Land in cane has swallowed the forests and the smallholdings alike.",
+    "prompt": "Study the source above and answer ALL parts of the question.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Describe TWO changes in agriculture in the islands shown in the source.",
+        "marks": 6,
+        "commandWords": [
+          "Describe"
+        ],
+        "modelAnswer": "Cane replaced the early export crops of tobacco, indigo, cotton and cocoa, and the small holdings of indentured servants were combined into large estates worked by enslaved Africans. The source shows Barbados with more land in cane than any other crop from 1660 and Jamaica exporting more sugar than tobacco by 1680.",
+        "markScheme": [
+          "1 mark for each change named (maximum 2 marks).",
+          "1-2 marks for evidence from the source, e.g. dates, crop names, the number of estates (maximum 2 marks).",
+          "1-2 marks for describing the change in scale — smallholdings to estates, growing numbers of enslaved workers (maximum 2 marks)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain why sugar replaced tobacco, indigo and cocoa in the British Caribbean.",
+        "marks": 10,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "Sugar fetched a far higher and steadier price in Europe, where it was in growing demand as a sweetener, a preservative and a medicine, and it stored and shipped well. Tobacco from the Caribbean could not compete with the plentiful supply from the North American mainland colonies, so its price fell. Sugar also demanded capital and labour in far larger units, which suited planters who could borrow money in London, buy an estate and its mill and boilers, and work it with hundreds of enslaved Africans bought on credit. Cane exhausted soil quickly, so planters needed large acreages and were ready to move into new land, taking over forests and smallholdings.",
+        "markScheme": [
+          "1-2 marks for the high and rising demand and price of sugar in Europe (maximum 2 marks).",
+          "1-2 marks for the fall in the price of tobacco through mainland competition (maximum 2 marks).",
+          "1-3 marks for the capital, machinery and scale of sugar production — mill, boiling house, curing house (maximum 3 marks).",
+          "1-2 marks for the role of enslaved African labour and credit (maximum 2 marks).",
+          "1 mark for a concluding link between profit and land use."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Discuss the consequences of the sugar revolution for Caribbean society up to 1838.",
+        "marks": 14,
+        "commandWords": [
+          "Discuss"
+        ],
+        "modelAnswer": "The consequences were economic, social and demographic. Economically, the islands became single-crop export economies tied to European markets and credit, wealthy for a minority of planters but dependent and vulnerable. Socially, the sugar revolution produced plantation society: a small white planter and merchant class, a middling group of overseers, bookkeepers and artisans, and a large enslaved majority with no legal standing; class and colour hardened into a hierarchy that lasted long after emancipation. Demographically the decline of the small farming population and the arrival of hundreds of thousands of enslaved Africans made the islands majority African in population. Forests were cut for cane and fuel, and land was concentrated in a few hands, a pattern that shaped the land hunger of the post-emancipation period. Population figures show the scale of the change: by the 1770s Jamaica's estates alone had absorbed hundreds of thousands of Africans.",
+        "markScheme": [
+          "1-2 marks for an introduction defining the sugar revolution (maximum 2 marks).",
+          "2-4 marks for developed economic consequences — single-crop dependence, credit, European market ties, planter wealth (maximum 4 marks).",
+          "2-4 marks for developed social consequences — plantation hierarchy, colour and class, the legal position of the enslaved majority (maximum 4 marks).",
+          "1-3 marks for demographic and environmental consequences — African majority, forest clearance, concentrated landholding (maximum 3 marks).",
+          "1-2 marks for a reasoned conclusion, linking to later periods where possible (maximum 2 marks)."
+        ]
+      }
+    ],
+    "planningHints": [
+      "Note the dates and figures in the source; they are the evidence for (a)."
+    ],
+    "examinerTips": "In (c) make sure you go beyond the economy: the question asks about 'Caribbean society'."
+  },
+  {
+    "id": "ch-p2-04",
+    "type": "write",
+    "paper": 2,
+    "section": "Section B",
+    "title": "Plantation society and the enslaved majority",
+    "topic": "ch-l2-3",
+    "commandWords": [
+      "Describe",
+      "Explain",
+      "Evaluate"
+    ],
+    "marks": 30,
+    "suggestedMinutes": 40,
+    "source": "Source: a working day on a Jamaican sugar estate, about 1780 (summary).\n\nThe first gang is in the field before sunrise and stays until the horn sounds at nightfall, hoeing, planting and cutting cane in rows under the eye of a driver. After the crop is cut the mill must be fed without stopping; during crop time the boilers and the mill work through the night in shifts. The estate's success rests on a small number of skilled workers — carpenters, coopers, masons, sugar boilers, drivers — many of them men, who are housed apart from the field gangs. Rations of salt fish, herrings and a plot of land for growing food are given instead of money. The Great House, where the owner or his attorney lives, stands where it can see the works; the overseer's house is nearer the mill. Punishment is understood to be the driver's duty as much as instruction, and the estate's doctor is supposed to attend the sick.",
+    "prompt": "Study the source above and answer ALL parts of the question.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Describe TWO features of the working lives of enslaved people shown in the source.",
+        "marks": 6,
+        "commandWords": [
+          "Describe"
+        ],
+        "modelAnswer": "The field gang worked from before sunrise until nightfall at hoeing, planting and cutting cane, and during crop time the mill, boilers and mill hands worked through the night in shifts. Workers were rewarded with rations and a plot of land rather than with money, and the driver supervised and punished them.",
+        "markScheme": [
+          "1 mark for each feature named (maximum 2 marks).",
+          "1 mark each for supporting detail from the source, e.g. the horn at nightfall, crop-time shifts (maximum 2 marks).",
+          "1-2 marks for describing the system of rations and provision grounds rather than wages (maximum 2 marks)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain why the planter class was able to control the lives of enslaved people so completely.",
+        "marks": 10,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "The planters controlled land, law and force. The enslaved had no legal standing: they could not give evidence in court, hold property, marry legally or move without a pass. The assemblies of the islands were made up of planters and merchants who passed the slave codes, set the punishments and paid the militia, so planter interests were the law. Force was organised on the estate itself through drivers, the overseer and the attorney, and beyond it through the militia and the courts. Control was reinforced by the physical separation of the Great House from the slave village, by the use of skilled workers as a privileged group, and by the threat of sale away from family and provision ground — a penalty the enslaved feared as much as the whip.",
+        "markScheme": [
+          "1-2 marks for the lack of legal standing of the enslaved — no property, no evidence in court, passes (maximum 2 marks).",
+          "1-2 marks for the planter-dominated assemblies and slave codes (maximum 2 marks).",
+          "1-3 marks for organised estate control — drivers, overseer, attorney, militia, courts (maximum 3 marks).",
+          "1-2 marks for methods that divided the enslaved, e.g. privileges for skilled workers (maximum 2 marks).",
+          "1 mark for the threat of sale and its effects on families."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Evaluate the extent to which plantation society in the British Caribbean can be described as a society of classes rather than of one community.",
+        "marks": 14,
+        "commandWords": [
+          "Evaluate",
+          "Discuss"
+        ],
+        "modelAnswer": "Plantation society was divided by law, colour, occupation and money, and no one living in it would have described it as a single community. At the top stood the planters and merchants, who owned the land and made the law; below them came the attorneys and overseers; then the smaller group of white bookkeepers, artisans and poor whites, some of whom were little better off than the free coloureds. Free people of colour, often artisans and shopkeepers, occupied an uneasy middle place, restricted by law but sometimes owning land and even enslaved workers themselves. At the base were the enslaved, divided again among themselves by occupation — drivers, boilers and carpenters against the field gangs — and by birthplace. Yet a shared Creole culture grew up in spite of this: language, food, religion, music and marketing in the Sunday markets drew people together across the divisions. The best answers therefore accept the class reading of the society while showing the size and significance of that shared culture.",
+        "markScheme": [
+          "1-2 marks for an introduction that takes a position on the statement (maximum 2 marks).",
+          "2-4 marks for developed knowledge of the class hierarchy, with named groups (maximum 4 marks).",
+          "1-3 marks for the position of the free coloured population (maximum 3 marks).",
+          "1-3 marks for recognising shared Creole culture and the divisions among the enslaved themselves (maximum 3 marks).",
+          "1-2 marks for a conclusion that weighs the evidence — both words 'classes' and 'community' must be addressed (maximum 2 marks)."
+        ]
+      }
+    ],
+    "planningHints": [
+      "Every point you make should be supported by something in the source or by what you know of the period."
+    ],
+    "examinerTips": "The phrase 'to what extent' invites a judgement. A one-sided answer cannot reach the top band."
+  },
+  {
+    "id": "ch-p2-05",
+    "type": "write",
+    "paper": 2,
+    "section": "Section B",
+    "title": "Resistance, revolt and the Maroons",
+    "topic": "ch-l3-1",
+    "commandWords": [
+      "Identify",
+      "Explain",
+      "Discuss"
+    ],
+    "marks": 30,
+    "suggestedMinutes": 40,
+    "source": "Source: the Maroon settlements of Jamaica (summary of the 1739 treaties).\n\nFrom the 1650s onwards, groups of enslaved people escaped into the mountains of Jamaica, where the rough land and the absence of roads made pursuit difficult. These Maroons farmed in hidden valleys, traded with the enslaved on the estates and raided plantations for tools, salt and weapons. Two long wars against them (1725-39 in the Windward, and the 1730s in the Leeward) cost the colony money and lives and ended in treaties in 1739. Under the treaties the Maroons kept their own land and self-government, in return for returning future runaways and helping the government against invasion. Elsewhere resistance took other forms: the 1760 uprising in St Mary, led by Tacky, cost many lives before it was put down; other enslaved people slowed work, broke tools, pretended illness, destroyed cane or poisoned livestock; and thousands simply fled, sometimes to live in towns where they could pass as free.",
+    "prompt": "Study the source above and answer ALL parts of the question.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify TWO forms of resistance mentioned in the source.",
+        "marks": 6,
+        "commandWords": [
+          "Identify"
+        ],
+        "modelAnswer": "Escape into the mountains, where Maroon communities were organised under their own leaders, and the 1760 uprising led by Tacky in St Mary. The source also mentions slower and quieter resistance — slowing work, breaking tools, feigning illness, destroying cane or poisoning livestock.",
+        "markScheme": [
+          "1 mark for each form named (maximum 2 marks).",
+          "1-2 marks for accurate support from the source (maximum 2 marks).",
+          "1-2 marks for recognising resistance that was not violent, such as feigned illness or tool-breaking (maximum 2 marks)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain why the Maroon communities were able to survive in the Jamaican mountains.",
+        "marks": 10,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "The terrain protected them: steep, forested hills with few roads made organised pursuit slow and expensive, and the Maroons knew the land far better than the militia. They combined small farming with hunting and fishing, so they could feed themselves without the estates, and they traded with enslaved people and sympathetic free people for what they could not grow. They organised themselves into communities under elected leaders with scouts and a warning system, and they used guerrilla tactics — ambush, night attack and swift withdrawal — against troops who fought in formation. Their own knowledge of the estate system gave them intelligence and recruits, since new runaways joined them.",
+        "markScheme": [
+          "1-2 marks for the protective geography of the interior (maximum 2 marks).",
+          "1-2 marks for self-sufficiency in food through cultivation and hunting (maximum 2 marks).",
+          "1-2 marks for trade and information links with the enslaved and the free (maximum 2 marks).",
+          "1-3 marks for organisation and tactics — leadership, scouts, guerrilla methods (maximum 3 marks).",
+          "1 mark for noting that new runaways added to their numbers."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "\"Resistance by the enslaved themselves did more to end slavery than the work of abolitionists in Britain.\" Discuss this claim.",
+        "marks": 14,
+        "commandWords": [
+          "Discuss",
+          "Evaluate"
+        ],
+        "modelAnswer": "Both sides must be weighed. Resistance made slavery expensive and unsafe: the Maroon wars, Tacky's revolt, the 1816 rebellion in Barbados, the 1823 rising in Demerara and, above all, the Christmas Rebellion of 1831-32 in Jamaica forced planters and governors to ask for troops, damaged estates and convinced many in Britain that the system could not be held down indefinitely. The 1831-32 rebellion was followed within eighteen months by the Emancipation Act, and its cost in property and lives was one reason the planter interest in Parliament lost heart. On the other hand, abolitionists such as Wilberforce, Clarkson and the Anti-Slavery Society built the public pressure, the petitions, the boycott of slave-grown sugar and the parliamentary case; the Amelioration policy of the 1820s and the 1833 Act itself were their work, and the trade had already been abolished in 1807 by their efforts. The stronger answers argue that resistance made abolition possible and abolitionists made it happen — the system was both morally condemned and becoming unworkable.",
+        "markScheme": [
+          "1-2 marks for an introduction that sets out the two sides (maximum 2 marks).",
+          "2-4 marks for developed knowledge of revolts and their consequences, with dates and places (maximum 4 marks).",
+          "1-3 marks for the economic and military cost of resistance — troops, damages, fear (maximum 3 marks).",
+          "1-3 marks for developed knowledge of abolitionist methods and achievements, e.g. 1807 Act, petitions, sugar boycott (maximum 3 marks).",
+          "1-2 marks for a reasoned conclusion that weighs both and answers the question (maximum 2 marks)."
+        ]
+      }
+    ],
+    "planningHints": [
+      "Read the whole source: it lists violent and non-violent resistance."
+    ],
+    "examinerTips": "Notice the word 'themselves' in the statement: it excludes help the enslaved received from missionaries and free people of colour."
+  },
+  {
+    "id": "ch-p2-06",
+    "type": "write",
+    "paper": 2,
+    "section": "Section B",
+    "title": "Abolition, emancipation and the failure of apprenticeship",
+    "topic": "ch-l3-3",
+    "commandWords": [
+      "Describe",
+      "Explain",
+      "Assess"
+    ],
+    "marks": 30,
+    "suggestedMinutes": 40,
+    "source": "Source: the Emancipation Act of 1833 and its aftermath (summary).\n\nThe Act of 1833 abolished slavery in the British colonies from 1 August 1834, but freed only children under six immediately. All other enslaved people became 'apprentices': field apprentices, who were grouped with the land and had to give their former owners forty and a half hours of unpaid work each week, and house apprentices, who worked for wages in a trade and were to be free in 1838. Owners received £20 million in compensation in London; the apprentices received nothing. The Act promised that special magistrates would protect the apprentices, hear complaints and punish unfair treatment. In practice there were far too few magistrates, the colonial courts and juries sided with the planters, and planters charged rents and fees for the use of land and buildings to keep their apprentices in debt. After repeated protests and a further rebellion scare, the apprenticeship period was cut short and full freedom was granted on 1 August 1838.",
+    "prompt": "Study the source above and answer ALL parts of the question.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Describe TWO terms of the Emancipation Act of 1833 shown in the source.",
+        "marks": 6,
+        "commandWords": [
+          "Describe"
+        ],
+        "modelAnswer": "The Act came into force on 1 August 1834 but most enslaved people became apprentices rather than being freed at once, with field apprentices required to give their former owners forty and a half hours of unpaid work each week. It also paid £20 million in compensation to slave owners in London, and promised special magistrates to protect apprentices.",
+        "markScheme": [
+          "1 mark for each term correctly described (maximum 2 marks).",
+          "1-2 marks for accurate figures or dates from the source (maximum 2 marks).",
+          "1-2 marks for describing the distinction between field and house apprentices (maximum 2 marks)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain why apprenticeship was ended early, in 1838.",
+        "marks": 10,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "Apprenticeship satisfied nobody. The apprentices resented giving unpaid labour, so they left the estates when they could and refused to return; planters complained constantly that they had lost control of their workforce. The special magistrates were too few and their decisions were often appealed or ignored, while planters used rents, fees and charges for the use of houses and grounds to keep workers tied to the estates — practices that produced unrest and repeated prosecutions. In Britain, the anti-slavery movement and the missionaries kept up pressure, arguing that the apprenticeship was 'slavery under another name'; the reformed Parliament was less willing to defend the planter interest. The final straw was the fear of another rebellion, after the unrest of 1837 in both Jamaica and the Windward Islands.",
+        "markScheme": [
+          "1-2 marks for the apprentices' resistance — refusal to work unpaid, withdrawal from estates (maximum 2 marks).",
+          "1-2 marks for the planters' difficulties in controlling labour (maximum 2 marks).",
+          "1-3 marks for the failings of the special magistrates and the use of rents and fees (maximum 3 marks).",
+          "1-2 marks for continued pressure from abolitionists and missionaries in Britain (maximum 2 marks).",
+          "1 mark for the fear of further rebellion."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Assess the claim that emancipation in 1834 changed the legal position of the enslaved more than it changed their everyday lives.",
+        "marks": 14,
+        "commandWords": [
+          "Assess",
+          "Discuss"
+        ],
+        "modelAnswer": "The claim is strong for the years immediately after 1834. The law changed at once: an apprentice could not be bought and sold, could marry in church, could not legally be flogged, and the special magistrates gave him somewhere to complain. But apprenticeship kept unpaid labour, the whip and the planter's authority in place, and the courts and juries continued to favour the owners. Even after full freedom in 1838 many freed people found that land, credit, education and political power remained in the hands of the planters: the attempt to force wages down to keep the estates supplied with labour, the high price of crown land, the property qualification for voting and the limited number of schools all kept everyday life hard. Yet the change was real and lasting. Freed people withdrew their labour, bought land in free villages, grew food for the market, moved into teaching and the trades, and built churches and schools; planters never recovered the power to give orders without a price. The best answers argue that the legal change was a decisive break in status even though material conditions improved slowly on many estates.",
+        "markScheme": [
+          "1-2 marks for an introduction that frames the distinction between legal status and living conditions (maximum 2 marks).",
+          "2-4 marks for developed knowledge of the immediate legal gains and the continuities of apprenticeship (maximum 4 marks).",
+          "2-4 marks for developed knowledge of post-1838 obstacles — land, wages, franchise, education (maximum 4 marks).",
+          "1-3 marks for evidence of real change — free villages, provision grounds, churches, schools, mobility (maximum 3 marks).",
+          "1-2 marks for a reasoned conclusion answering the claim made (maximum 2 marks)."
+        ]
+      }
+    ],
+    "planningHints": [
+      "Part (c) asks you to weigh TWO things: legal status and everyday life."
+    ],
+    "examinerTips": "Use dates carefully: 1834 (the Act), 1838 (full freedom). A vague chronology loses marks."
+  },
+  {
+    "id": "ch-p2-07",
+    "type": "write",
+    "paper": 2,
+    "section": "Section C",
+    "title": "Adjustments to emancipation: immigration and the small farmer",
+    "topic": "ch-l4-2",
+    "commandWords": [
+      "Identify",
+      "Explain",
+      "Discuss"
+    ],
+    "marks": 30,
+    "suggestedMinutes": 40,
+    "source": "Source: after emancipation in Trinidad and British Guiana, 1838-1880 (summary).\n\nAs soon as they were able, freed people in both colonies left the estates, settled on uncultivated land or bought plots, and grew provisions, cocoa and coffee for their own use and for sale in the towns. Estate owners complained of a labour shortage and turned to immigration: from 1838 freed Africans from captured slave ships; from 1845 labourers from India, mostly from Calcutta, under indentures of five years; Portuguese from Madeira after 1846; Chinese from 1853. In Trinidad the indentured population came to outnumber the rest of the rural population. Meanwhile the small farmers of the larger islands formed the backbone of a new internal marketing system: by the 1870s Jamaica's peasant holdings were supplying the island with ground provisions, and villages such as Sligoville, bought with missionary help, had their own schools and chapels.",
+    "prompt": "Study the source above and answer ALL parts of the question.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify TWO groups of immigrants who came to Trinidad and British Guiana after 1838, according to the source.",
+        "marks": 6,
+        "commandWords": [
+          "Identify"
+        ],
+        "modelAnswer": "Labourers from India, who began arriving in 1845 on indentures of five years; Portuguese from Madeira after 1846; Chinese from 1853; and freed Africans taken from captured slave ships from 1838.",
+        "markScheme": [
+          "1 mark for each group named (maximum 2 marks).",
+          "1-2 marks for accurate detail from the source, e.g. dates or the length of the indenture (maximum 2 marks).",
+          "1-2 marks for showing that these were separate migrations with different origins (maximum 2 marks)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain why estate owners in Trinidad and British Guiana wanted immigrant labour after 1838.",
+        "marks": 10,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "After 1838 the estates could no longer compel labour. Freed people left for land of their own or worked only when wages and conditions suited them, so the planters found themselves short of hands at crop time. Sugar production needed continuous gangs of workers for planting, cutting, hauling and boiling, and the planters had borrowed heavily against future crops. Immigrant labourers were attractive because they arrived under a legal contract: an indenture bound them to one employer for five years, could be enforced in the courts, and left them without land of their own in a country they did not know. Immigrant workers also made it possible for planters to hold down wages for everyone, and to divide the workforce.",
+        "markScheme": [
+          "1-2 marks for the withdrawal of freed labour from the estates (maximum 2 marks).",
+          "1-2 marks for the labour demands of sugar production and the planters' debts (maximum 2 marks).",
+          "1-3 marks for explaining the value of a binding indenture contract (maximum 3 marks).",
+          "1-2 marks for the effect on wages and the division of the workforce (maximum 2 marks).",
+          "1 mark for a concluding point on the planters' aim of restoring control of labour."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Discuss the effects of immigration on Caribbean society between 1838 and 1880.",
+        "marks": 14,
+        "commandWords": [
+          "Discuss"
+        ],
+        "modelAnswer": "The effects were demographic, economic, social and cultural. Demographically, Trinidad and British Guiana became plantation colonies again, and in Trinidad indentured Indians came to outnumber the rest of the rural population; smaller groups of Portuguese, Chinese and liberated Africans settled in towns and villages. Economically, immigration kept sugar going longer than it would otherwise have done and allowed the planters to keep wages low, but it also created a small class of settled immigrant farmers who later moved into cocoa, rice and market gardening. Socially, the society became plural: groups kept their languages, religions and marriage customs, and lived in separate villages, though in the towns they met in markets and schools. There were costs as well: the harshness of the indentures, the deaths on the voyage, the punishments recorded in the immigration registers, and the tension between immigrant and Creole workers. Culturally the result was the Caribbean's later richness — Hindu and Muslim festivals, Chinese and Portuguese trades, African and Indian cooking side by side — which is why the 1865 riots at Morant Bay and the later movements for self-government had to speak to a far more varied population than existed in 1838.",
+        "markScheme": [
+          "1-2 marks for an introduction that identifies the main effects (maximum 2 marks).",
+          "2-4 marks for demographic and economic effects, with figures or places where possible (maximum 4 marks).",
+          "2-4 marks for social effects — plural society, separate villages, language and religion (maximum 4 marks).",
+          "1-3 marks for costs — conditions of indenture, mortality, labour tension (maximum 3 marks).",
+          "1-2 marks for a conclusion that weighs benefit and cost (maximum 2 marks)."
+        ]
+      }
+    ],
+    "planningHints": [
+      "(a) asks about the planters' reasons — be careful not to describe the workers' experience instead."
+    ],
+    "examinerTips": "In (b) 'society' is wider than 'economy'. Plan for at least three kinds of effect."
+  },
+  {
+    "id": "ch-p2-08",
+    "type": "write",
+    "paper": 2,
+    "section": "Section C",
+    "title": "Labour rebellion, unions and the road to self-government",
+    "topic": "ch-l4-3",
+    "commandWords": [
+      "Identify",
+      "Explain",
+      "Discuss"
+    ],
+    "marks": 30,
+    "suggestedMinutes": 40,
+    "source": "Source: the disturbances of 1937-38 and their results (summary).\n\nIn 1937 workers in the Trinidad oilfields struck for higher wages and were joined by estate and urban workers; the governor declared a state of emergency, and there were deaths in several places. In Barbados, St Lucia, St Kitts and British Guiana similar strikes followed. In 1938 Jamaica saw a general strike in Kingston and serious rioting in the west of the island, and Bustamante was arrested and then released after public protest. The same events produced organisation: the Bustamante Industrial Trade Union and the People's National Party in Jamaica, the Oilfields Workers' Trade Union in Trinidad, and the first successful candidates elected on a labour platform. A Royal Commission (the Moyne Commission) was sent out in 1938 and its report, published after the war, described poor housing, disease, low wages and the 'discontent' behind the disturbances; a Colonial Development and Welfare fund followed, along with land settlement schemes, and the property qualification for voting was lowered.",
+    "prompt": "Study the source above and answer ALL parts of the question.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify TWO results of the disturbances of 1937-38 shown in the source.",
+        "marks": 6,
+        "commandWords": [
+          "Identify"
+        ],
+        "modelAnswer": "Trade unions and labour political parties were formed, such as the Bustamante Industrial Trade Union and the People's National Party in Jamaica and the Oilfields Workers' Trade Union in Trinidad; and the British government sent the Moyne Commission, which led to Colonial Development and Welfare funding, land settlement and a lower property qualification for voting.",
+        "markScheme": [
+          "1 mark for each result identified (maximum 2 marks).",
+          "1-2 marks for accurate naming of unions, parties or the Commission (maximum 2 marks).",
+          "1-2 marks for any further detail on reform, e.g. welfare fund, land settlement, franchise (maximum 2 marks)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain why the disturbances of the 1930s led to political rather than only industrial organisation.",
+        "marks": 10,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "Strikers discovered that wages and conditions were set by governments and colonial officers as much as by employers, so action at the workplace had to be backed by action at the ballot box. The property qualification and the nominated members of the colonial legislatures meant working people had almost no political voice, and the middle-class professionals who led the new unions — Bustamante and Manley in Jamaica, Cipriani and others in Trinidad — understood that franchise reform and elected majorities were needed to change anything. The colonies were also being pressed, especially after the Moyne report, towards representative government, and the war made Britain more willing to concede reforms. Finally, organising a union had given working people the skills, funds and membership lists from which a party could be built.",
+        "markScheme": [
+          "1-2 marks for identifying that government and colonial officers shaped wages and conditions (maximum 2 marks).",
+          "1-2 marks for the restricted franchise and nominated legislatures (maximum 2 marks).",
+          "1-3 marks for the role of the middle-class leaders who moved from union work to politics (maximum 3 marks).",
+          "1-2 marks for the impact of the Moyne report and the war on British policy (maximum 2 marks).",
+          "1 mark for the organisational advantage unions gave to a new party."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "\"The labour rebellions of the 1930s did more to win self-government for the Caribbean than the constitutional talks that followed.\" Discuss.",
+        "marks": 14,
+        "commandWords": [
+          "Discuss",
+          "Evaluate"
+        ],
+        "modelAnswer": "The rebellions set the agenda and the timetable. They showed that the colonial system could not rely on the consent of the majority, and they produced the unions and parties that campaigned for adult suffrage and an elected majority — the vehicles of the constitutional advance that followed in Jamaica (1944), Trinidad (1946), Barbados (1951) and elsewhere. The Moyne Commission's findings, published in 1945, gave the reformers their evidence, and the welfare reforms it produced together with the growth of a professional middle class created the social base for self-government. On the other hand, constitutions are won at tables, not on the streets: the talks of the 1940s and 1950s, the Montego Bay conference of 1947 on federation, the gradual enlargement of the electorate and the transfer of portfolios to elected ministers did the legal work, and the British decision to withdraw after 1945 was taken in London for reasons of its own, including the cost of empire. The strongest answers treat the rebellions as the cause that made the constitutional process possible and the talks as the means by which independence was actually achieved.",
+        "markScheme": [
+          "1-2 marks for an introduction that takes a position (maximum 2 marks).",
+          "2-4 marks for developed knowledge of the rebellions and the organisations they produced (maximum 4 marks).",
+          "1-3 marks for the link from the disturbances to welfare reform and the Moyne report (maximum 3 marks).",
+          "2-4 marks for developed knowledge of the constitutional steps and the context of British policy (maximum 4 marks).",
+          "1-2 marks for a reasoned conclusion weighing both (maximum 2 marks)."
+        ]
+      }
+    ],
+    "planningHints": [
+      "Keep your dates in order: rebellions (1937-38) come before the reforms and constitutions."
+    ],
+    "examinerTips": "The statement contrasts two things. Do not simply narrate the events of 1937-38."
+  },
+  {
+    "id": "ch-p2-09",
+    "type": "write",
+    "paper": 2,
+    "section": "Section C",
+    "title": "Federation, independence and regional cooperation",
+    "topic": "ch-l5-2",
+    "commandWords": [
+      "Identify",
+      "Explain",
+      "Discuss"
+    ],
+    "marks": 30,
+    "suggestedMinutes": 40,
+    "source": "Source: the rise and fall of the West Indies Federation (summary).\n\nThe West Indies Federation came into being on 3 January 1958, with a federal parliament at Port of Spain, a nominated governor-general, a prime minister (Grantley Adams) and an elected house for which the first and only federal election was held in March 1958. The federal capital was to be built at Chaguaramas in Trinidad, on land then leased to the United States for a naval base. The unit carried responsibility for some ports, shipping, currency and customs and for external affairs, while the larger units kept their own governments, budgets and premiers and continued to deal directly with Britain. Jamaica, with more than half the federation's population, complained that it paid too much and got too little; Trinidad complained that the federal capital and the civil service would swallow the cost; and the smaller islands feared that they would be neglected. A referendum in Jamaica in September 1961 voted to withdraw, and the Federation was dissolved in 1962, after which Jamaica and Trinidad and Tobago became independent separately that August. In 1965 three smaller islands attempted a union of their own, and in 1973 the Treaty of Chaguaramas created CARICOM.",
+    "prompt": "Study the source above and answer ALL parts of the question.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify TWO features of the West Indies Federation shown in the source.",
+        "marks": 6,
+        "commandWords": [
+          "Identify"
+        ],
+        "modelAnswer": "The Federation was created on 3 January 1958 with a federal parliament at Port of Spain, a governor-general, a prime minister (Grantley Adams) and an elected house, and the federal capital was to be built at Chaguaramas in Trinidad. The units kept their own governments and premiers and continued to deal directly with Britain.",
+        "markScheme": [
+          "1 mark for each feature identified (maximum 2 marks).",
+          "1-2 marks for accurate detail from the source, e.g. the date, the capital, the prime minister (maximum 2 marks).",
+          "1-2 marks for showing that the Federation was a limited union, with the units keeping their own governments (maximum 2 marks)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain why the West Indies Federation failed to hold together.",
+        "marks": 10,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "The Federation was a skeleton state: it had a parliament but very little money of its own, since it could not tax and depended on contributions from the units, and it had no real control over the policies that mattered most to the people, such as wages, education and local services. The larger islands calculated their interests separately. Jamaica believed it contributed more than it received, and its premier campaigned for withdrawal before the 1961 referendum; Trinidad objected to the cost of the federal capital and to the American lease at Chaguaramas. The smaller islands feared domination by the two largest units. The units also kept their own direct relationship with Britain, so there was little to hold them together when the choice came; the delayed question of the capital at Chaguaramas poisoned the atmosphere in 1960. When Jamaica withdrew in 1961, the Federation could not survive without it.",
+        "markScheme": [
+          "1-2 marks for the Federation's lack of financial and policy power (maximum 2 marks).",
+          "1-2 marks for Jamaica's contribution concerns and the 1961 referendum (maximum 2 marks).",
+          "1-2 marks for Trinidad's objections, including the capital and Chaguaramas (maximum 2 marks).",
+          "1-3 marks for the separate interests of the smaller islands and the continuing direct ties to Britain (maximum 3 marks).",
+          "1 mark for a concluding point about the absence of shared loyalty."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Discuss the effects of the Federation's collapse on the Caribbean after 1962.",
+        "marks": 14,
+        "commandWords": [
+          "Discuss"
+        ],
+        "modelAnswer": "The collapse changed the shape of Caribbean politics but did not end the idea of union. The larger islands became independent on their own terms, so the region entered the 1960s as a set of separate states, each of which had to build its own economy, currency and diplomatic service, and the planned federal capital was abandoned. The smaller islands lost the prospect of sharing the cost of government and became associated states or colonies for longer, and some attempted a smaller union of their own in 1965. Yet cooperation continued through other means: the University of the West Indies (1948), the regional cricket team, the Common Services and the later Caribbean Free Trade Association; in 1973 the Treaty of Chaguaramas created CARICOM, and the West Indies Cricket Board and the University remained regional. Migration and the diaspora, calypso and carnival, and the campaign for a common cricket team kept the sense of a common Caribbean identity alive. The best answers also note the costs of separatism: small markets, competing tax incentives, and weak collective bargaining with outside powers.",
+        "markScheme": [
+          "1-2 marks for an introduction that identifies the main effects (maximum 2 marks).",
+          "2-4 marks for the effect on the larger islands — separate independence, separate economy and foreign policy (maximum 4 marks).",
+          "1-3 marks for the effect on the smaller islands and the attempted 1965 union (maximum 3 marks).",
+          "1-3 marks for continuing cooperation — UWI, CARIFTA, CARICOM, Chaguaramas treaty (maximum 3 marks).",
+          "1-2 marks for a conclusion weighing the losses against the continuing integration (maximum 2 marks)."
+        ]
+      }
+    ],
+    "planningHints": [
+      "(a) is about reasons; keep the detail of dates and names to the places where it proves a point."
+    ],
+    "examinerTips": "Notice the source mentions CARICOM: this shows that regionalism did not die with the Federation."
+  }
+]

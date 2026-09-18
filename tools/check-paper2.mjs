@@ -14,7 +14,7 @@
 //      into a surface that scores by exact string match
 //   8. the Paper 2 tab is wired in SubjectPage (import + tab + paid gate)
 
-import { readFileSync, existsSync } from "node:fs";
+import { readFileSync, existsSync, readdirSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
@@ -43,12 +43,21 @@ function readJson(path) {
 const md5 = (p) => createHash("md5").update(readFileSync(p)).digest("hex");
 
 // Subjects that ship the write type today (from the business plan / build-out).
-const SUBJECTS = ["social-studies", "english-b"];
-
-// Documented totals (content/WRITE-QUESTION-FORMAT.md §Counting).
+// Every subject that ships a paper2.json is checked — discovered from disk, so a
+// new subject PR only adds its own content files and never edits this tool.
+const SUBJECTS = readdirSync(join(root, "content"), { withFileTypes: true })
+  .filter((d) => d.isDirectory() && existsSync(join(root, "content", d.name, "paper2.json")))
+  .map((d) => d.name)
+  .sort();
+// Documented totals (content/WRITE-QUESTION-FORMAT.md §Counting). Optional: a subject
+// missing from this table still gets every structural check, and its totals are printed.
 const EXPECTED = {
   "social-studies": { items: 10, marks: 239 },
   "english-b": { items: 9, marks: 265 },
+  "agriculture-double-option": { items: 8, marks: 217 },
+  // Caribbean History: 9 questions (3 per section, one answered from each),
+  // 30 marks each = 270, written for the 2 h 10 min of the real Paper 02.
+  "caribbean-history": { items: 9, marks: 270 },
 };
 
 const shapes = { withParts: 0, flat: 0 };
@@ -129,15 +138,21 @@ for (const subject of SUBJECTS) {
   check(emptyParts === 0, "no item carries an empty parts array");
   check(badPartsSum === 0, "sum(part.marks) === item.marks for every item");
 
+  // Counts are asserted only where they are documented; every subject always gets
+  // the structural checks above.
   const expected = EXPECTED[subject];
-  check(
-    items.length === expected.items,
-    `item count is ${expected.items} (found ${items.length})`
-  );
-  check(
-    totalMarks === expected.marks,
-    `total marks is ${expected.marks} (found ${totalMarks})`
-  );
+  if (expected) {
+    check(
+      items.length === expected.items,
+      `item count is ${expected.items} (found ${items.length})`
+    );
+    check(
+      totalMarks === expected.marks,
+      `total marks is ${expected.marks} (found ${totalMarks})`
+    );
+  } else {
+    console.log(`  • ${items.length} items, ${totalMarks} marks (count not yet documented)`);
+  }
 
   // Auto-graded banks must stay multiple-choice only.
   let writeLeak = 0;
