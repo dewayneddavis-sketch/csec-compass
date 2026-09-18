@@ -1,0 +1,466 @@
+[
+  {
+    "id": "poa-p2-01",
+    "type": "write",
+    "paper": 2,
+    "section": "Question 1",
+    "title": "The income statement of a sole trader",
+    "topic": "income-statement",
+    "commandWords": [
+      "Prepare",
+      "Calculate",
+      "Comment",
+      "State",
+      "Explain"
+    ],
+    "marks": 20,
+    "suggestedMinutes": 36,
+    "source": "M. Brown is a sole trader who sells goods on credit and for cash. The following balances were taken from his books for the year ended 31 December 2016.\n\nTRIAL BALANCE EXTRACT AT 31 DECEMBER 2016\n                                        $            $\nSales                                               $520,000\nReturns inwards                         $20,000\nInventory (1 January 2016)              $45,000\nPurchases                               $325,000\nCarriage inwards                        $10,000\nReturns outwards                                    $25,000\nWages and salaries                      $68,000\nRent and rates                          $26,000\nInsurance                               $9,000\nGeneral expenses                        $14,000\nBad debts written off                   $3,000\n\nAdditional information:\n(i) Inventory at 31 December 2016 was valued at $55,000.\n(ii) The gross profit percentage for the year ended 31 December 2015 was 35%.",
+    "prompt": "Answer ALL parts. Show all workings. Where an account is required, use a proper accounting format with a heading showing the name of the business and the period. Label the figures clearly and show the cost of sales section in full.",
+    "planningHints": [
+      "A trial balance extract has two money columns: debits on the left, credits on the right. Only the balances relevant to the income statement are needed here.",
+      "Build the trading section in stages: net sales (sales less returns inwards), then net purchases (purchases plus carriage inwards less returns outwards), then goods available for sale, then cost of sales (less closing inventory).",
+      "Gross profit = net sales less cost of sales. Net profit = gross profit less all the expenses.",
+      "A percentage is the part divided by the whole, multiplied by 100; use NET sales as the whole when you calculate the gross profit and net profit percentages.",
+      "Returns inwards is deducted from sales; returns outwards is deducted from purchases. Do not mix them up."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Prepare the income statement of M. Brown for the year ended 31 December 2016, showing clearly the cost of sales, the gross profit and the net profit.",
+        "marks": 10,
+        "commandWords": [
+          "Prepare"
+        ],
+        "modelAnswer": "M. Brown\nIncome Statement for the year ended 31 December 2016\n\nSales                                        $520,000\nLess returns inwards                        ($20,000)\nNet sales                                     $500,000\n\nOpening inventory                              $45,000\nPurchases                     $325,000\nAdd carriage inwards           $10,000\n                              $335,000\nLess returns outwards         ($25,000)\nNet purchases                                 $310,000\nGoods available for sale                      $355,000\nLess closing inventory                       ($55,000)\nCost of sales                                ($300,000)\nGROSS PROFIT                                   $200,000\n\nLess expenses:\nWages and salaries            $68,000\nRent and rates                $26,000\nInsurance                     $9,000\nGeneral expenses              $14,000\nBad debts written off         $3,000\nTotal expenses                               ($120,000)\nNET PROFIT                                     $80,000",
+        "markScheme": [
+          "1 mark for the heading (name of the business and the period ended 31 December 2016).",
+          "1 mark for net sales: $520,000 less returns inwards $20,000 = $500,000.",
+          "1 mark for net purchases: $325,000 + $10,000 - $25,000 = $310,000.",
+          "1 mark for goods available for sale: $45,000 + $310,000 = $355,000.",
+          "1 mark for cost of sales: $355,000 - $55,000 = $300,000.",
+          "1 mark for gross profit: $500,000 - $300,000 = $200,000.",
+          "1 mark for listing all five expenses (wages and salaries, rent and rates, insurance, general expenses, bad debts written off).",
+          "1 mark for total expenses = $120,000.",
+          "1 mark for net profit = $200,000 - $120,000 = $80,000.",
+          "1 mark for presenting the account in a proper accounting format (correct order, figures in the money column, cost of sales shown in full)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate, to one decimal place, (i) the gross profit percentage and (ii) the net profit percentage for the year ended 31 December 2016. Show the formula you use.",
+        "marks": 4,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "(i) Gross profit percentage = Gross profit / Net sales x 100 = $200,000 / $500,000 x 100 = 40%\n(ii) Net profit percentage = Net profit / Net sales x 100 = $80,000 / $500,000 x 100 = 16%",
+        "markScheme": [
+          "1 mark for the correct formula for the gross profit percentage (gross profit / net sales x 100) and 1 mark for the answer 40%.",
+          "1 mark for the correct formula for the net profit percentage (net profit / net sales x 100) and 1 mark for the answer 16%.",
+          "Award the formula marks even if the answer is wrong because net sales was used incorrectly, provided net sales is used as the denominator."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Compare the gross profit percentage you calculated in (b)(i) with the previous year's result and comment on what the change could mean for M. Brown's business.",
+        "marks": 2,
+        "commandWords": [
+          "Comment"
+        ],
+        "modelAnswer": "The gross profit percentage has improved from 35% last year to 40% this year, an increase of 5% percentage points. This means M. Brown is making more gross profit from every dollar of sales. It would arise if he raised his selling prices without a matching rise in the cost of the goods he buys, or if he bought his goods more cheaply or cut down on returns.",
+        "markScheme": [
+          "1 mark for stating that the gross profit percentage has improved (risen by 5% percentage points from 35% to 40%).",
+          "1 mark for a valid interpretation or reason, such as higher selling prices, lower purchase costs or a reduction in returns."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "State TWO accounting concepts that have been applied in preparing M. Brown's income statement, and explain how each one has been applied.",
+        "marks": 4,
+        "commandWords": [
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "1. The accruals (matching) concept: the figures for the year are matched to the period in which they were earned or incurred. Sales of $520,000 are shown in full even though some customers have not yet paid, and the closing inventory of $55,000 is matched against the sales of the year.\n2. The business entity concept: the income statement records only the transactions of the business, so the owner's private drawings never appear in it.\n(Also acceptable: the going concern concept, which assumes the business will continue trading, so the inventory is valued on that basis; and the prudence concept, which led to the bad debts of $3,000 being written off as soon as they were known to be doubtful.)",
+        "markScheme": [
+          "1 mark for naming a valid concept (accruals/matching, business entity, going concern, prudence, consistency).",
+          "1 mark for correctly explaining how that concept has been applied in this income statement.",
+          "1 mark for naming a second valid concept.",
+          "1 mark for correctly explaining how the second concept has been applied."
+        ]
+      }
+    ],
+    "examinerTips": "Marks are given for the method as well as the answer. Show the cost of sales section in full stage by stage, use the heading 'for the year ended', and put every figure in a money column with the correct label. When you calculate a percentage, the denominator must be NET sales."
+  },
+  {
+    "id": "poa-p2-02",
+    "type": "write",
+    "paper": 2,
+    "section": "Question 2",
+    "title": "Statement of financial position and liquidity ratios",
+    "topic": "statement-financial-position",
+    "commandWords": [
+      "Prepare",
+      "Calculate",
+      "Comment",
+      "Define",
+      "Explain"
+    ],
+    "marks": 20,
+    "suggestedMinutes": 36,
+    "source": "The following information relates to M. Brown at 31 December 2016, the end of the year you have just dealt with. He gave you the following additional details.\n\nNon-current assets at 31 December 2016:\nLand and buildings at valuation                         $250,000\nFixtures and fittings at cost            $80,000\nLess accumulated depreciation           ($32,000)\nMotor vehicle at cost                    $95,000\nLess accumulated depreciation           ($15,000)\n\nCurrent assets at 31 December 2016:\nInventory                                  $55,000\nTrade receivables                          $68,000\nPrepayments                                $4,000\nBank                                       $23,000\nCash                                       $5,000\n\nCurrent liabilities at 31 December 2016:\nTrade payables                             $47,000\nAccrued expenses                           $7,000\n\nLong-term liability:\nLoan repayable in 2021                    $120,000\n\nAdditional information:\n(i) The capital on 1 January 2016 was $300,000.\n(ii) The net profit for the year was $80,000 and drawings were $21,000.",
+    "prompt": "Answer ALL parts. Show all workings. The statement of financial position must show clearly the non-current assets, the current assets, the current liabilities, the net current assets (working capital) and the capital section.",
+    "planningHints": [
+      "A statement of financial position is a statement of assets, liabilities and capital on one day - so the heading is 'as at 31 December 2016', not 'for the year ended'.",
+      "Non-current assets are shown at their NET book value: cost less the accumulated depreciation to date.",
+      "Work out the sub-totals before you write the statement: total non-current assets, total current assets and total current liabilities.",
+      "Capital (the owner's equity) = opening capital + net profit - drawings. It must equal (non-current assets + working capital - non-current liabilities).",
+      "A ratio is written with a colon (for example 2.5 : 1) and shows how many dollars of one item there are for each dollar of the other."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Prepare the statement of financial position of M. Brown as at 31 December 2016.",
+        "marks": 10,
+        "commandWords": [
+          "Prepare"
+        ],
+        "modelAnswer": "M. Brown\nStatement of Financial Position as at 31 December 2016\n\nNON-CURRENT ASSETS                         $          $\nLand and buildings at valuation              $250,000\nFixtures and fittings (net book value)       $48,000\nMotor vehicle (net book value)               $80,000\nTotal non-current assets                                $378,000\n\nCURRENT ASSETS\nInventory                        $55,000\nTrade receivables                $68,000\nPrepayments                      $4,000\nBank                             $23,000\nCash                             $5,000\n                                                         $155,000\n\nCURRENT LIABILITIES\nTrade payables                   $47,000\nAccrued expenses                 $7,000\n                                        ($54,000)\nNET CURRENT ASSETS (working capital)                     $101,000\n                                                         $479,000\nLess non-current liability: loan repayable in 2021       ($120,000)\nNET ASSETS                                               $359,000\n\nFINANCED BY:\nOpening capital                  $300,000\nAdd net profit                   $80,000\n                                 $380,000\nLess drawings                   ($21,000)\nCLOSING CAPITAL                                          $359,000",
+        "markScheme": [
+          "1 mark for the correct heading ('as at 31 December 2016').",
+          "1 mark for the net book values of fixtures and fittings ($48,000) and the motor vehicle ($80,000).",
+          "1 mark for total non-current assets = $378,000.",
+          "1 mark for listing all five current assets.",
+          "1 mark for total current assets = $155,000.",
+          "1 mark for total current liabilities = $54,000.",
+          "1 mark for net current assets (working capital) = $101,000.",
+          "1 mark for showing the loan as a non-current liability (because it is repayable in 2021, not within twelve months).",
+          "1 mark for net assets = $359,000.",
+          "1 mark for the closing capital: $300,000 + $80,000 - $21,000 = $359,000 (it must agree with net assets)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the current ratio and the quick (acid test) ratio at 31 December 2016. Give each ratio to two decimal places.",
+        "marks": 4,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Current ratio = Current assets / Current liabilities = $155,000 / $54,000 = 2.87 : 1\nQuick (acid test) ratio = (Current assets - Inventory) / Current liabilities = ($155,000 - $55,000) / $54,000 = $100,000 / $54,000 = 1.85 : 1",
+        "markScheme": [
+          "1 mark for the correct formula/working for the current ratio and 1 mark for the answer 2.87 : 1.",
+          "1 mark for the correct formula/working for the quick ratio (inventory excluded) and 1 mark for the answer 1.85 : 1.",
+          "Accept 2.87 to 1 and 1.85 to 1 (without the colon) as correct forms."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Comment on the liquidity position of M. Brown's business, using both ratios.",
+        "marks": 2,
+        "commandWords": [
+          "Comment"
+        ],
+        "modelAnswer": "Both ratios are above the usual guide of 2 : 1 for the current ratio and 1 : 1 for the quick ratio, so M. Brown has more than enough current assets to pay his short-term debts as they fall due: he is in a strong, liquid position. A current ratio of 2.87 : 1 is, however, rather high, which suggests he may be holding too much cash or too much inventory that is not being used productively; the money tied up could be invested or used to expand the business.",
+        "markScheme": [
+          "1 mark for stating that the business is liquid / able to pay its short-term debts (both ratios exceed the usual 2:1 and 1:1 guides).",
+          "1 mark for a valid evaluative comment, such as the current ratio being rather high, so cash or inventory may be excessive and is not being used productively."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Define 'working capital' and explain ONE reason why a business such as M. Brown's needs to maintain adequate working capital.",
+        "marks": 4,
+        "commandWords": [
+          "Define",
+          "Explain"
+        ],
+        "modelAnswer": "Working capital is the amount by which the current assets of a business exceed its current liabilities; it is the money available for the day-to-day running of the business. For M. Brown it is $155,000 - $54,000 = $101,000.\nA business needs adequate working capital to pay its day-to-day expenses as they fall due - wages, rent, rates and the suppliers of the goods it buys on credit - before the cash from its customers comes in. If working capital is too low the business may be unable to pay its debts on time, it may lose the cash discounts offered by its suppliers, and it could be forced into insolvency.",
+        "markScheme": [
+          "1 mark for defining working capital as current assets less current liabilities.",
+          "1 mark for applying the definition to the figures ($155,000 - $54,000 = $101,000).",
+          "1 mark for a valid reason: to pay day-to-day expenses and suppliers as they fall due before cash is collected from customers.",
+          "1 mark for explaining the consequence of inadequate working capital (inability to pay debts on time, loss of cash discounts, insolvency)."
+        ]
+      }
+    ],
+    "examinerTips": "The statement of financial position and the capital section MUST agree - if they do not, you have made an arithmetic error, so check your sub-totals. The heading is 'as at' a date, unlike the income statement which is 'for the year ended'."
+  },
+  {
+    "id": "poa-p2-03",
+    "type": "write",
+    "paper": 2,
+    "section": "Question 3",
+    "title": "The three-column cash book and the petty cash imprest system",
+    "topic": "cash-book",
+    "commandWords": [
+      "Prepare",
+      "State",
+      "Calculate",
+      "Explain"
+    ],
+    "marks": 20,
+    "suggestedMinutes": 36,
+    "source": "Maharaj Traders provides goods on both cash and credit terms. The following transactions took place during May 2016.\n\nMay 1  Balances brought down: cash in hand $2,400; cash at bank $9,600.\nMay 3  Cash sales $6,500.\nMay 6  Paid rent by cheque $2,000.\nMay 8  Received a cheque from A. Ali in full settlement of his account of $4,000 after allowing him a cash discount of $200.\nMay 12 Paid B. Singh by cheque $2,600 in full settlement of his account of $2,750.\nMay 15 Withdrew $1,500 from the bank for office use.\nMay 18 Paid wages in cash $1,200.\nMay 22 Received a cheque from C. Deen for $3,200 (no discount allowed).\nMay 26 Paid rates by cheque $900.\nMay 29 The owner withdrew cash for private use, $700.\nMay 31 Paid the petty cashier by cheque $500 to restore the float.",
+    "prompt": "Answer ALL parts. Prepare the three-column cash book with the discount, cash and bank columns. Total and balance the cash book on 31 May 2016 and bring the balances down on 1 June 2016. Show the discount columns as memorandum columns.",
+    "planningHints": [
+      "A three-column cash book records discounts in the first column, then cash, then bank. It acts as both a book of original entry and a ledger account.",
+      "Enter the discount and the net amount on the SAME side and the SAME date: a customer paying early is a debit entry with the discount allowed beside it.",
+      "Contra entries (cash withdrawn from the bank, or cash paid into the bank) appear on BOTH sides of the cash book - debit cash, credit bank, and write a 'C' in the folio column.",
+      "The discount columns are memorandum columns: add them up and carry the totals to the discount allowed and discount received accounts. They are NOT balanced against each other.",
+      "Total each money column, write the balance carried down on the smaller side, and bring the balance down on the opposite side on the first day of the next month."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Write up and balance the three-column cash book of Maharaj Traders for May 2016, showing the discount, cash and bank columns.",
+        "marks": 12,
+        "commandWords": [
+          "Prepare"
+        ],
+        "modelAnswer": "MAHARAJ TRADERS\nCASH BOOK FOR MAY 2016\n\n                     Disc.   Cash    Bank  |                       Disc.   Cash    Bank\nMay 1  Bal. b/d          $2,400  $9,600  | May 6  Rent              $2,000\nMay 3  Sales            $6,500         | May 12 B. Singh   $150          $2,600\nMay 8  A. Ali   $200          $3,800  | May 15 Cash  C             $1,500\nMay 15 Bank  C                  $1,500  | May 18 Wages           $1,200\nMay 22 C. Deen                  $3,200  | May 26 Rates              $900\n                | May 29 Drawings        $700\n                | May 31 Petty cash         $500\n                | May 31 Bal. c/d        $8,500  $9,100\n        $200  $10,400  $16,600  |         $150  $10,400  $16,600\nJune 1  Bal. b/d       $8,500  $9,100  |\n\nNote: the cash and bank columns agree on both sides at $10,400 and $16,600 respectively. The discount columns are memorandum columns, so $200 + $150 = $350 is NOT the column total.",
+        "markScheme": [
+          "1 mark for the correct heading and the three column headings (Disc., Cash, Bank) with the dates.",
+          "1 mark for the opening balances on 1 May, cash $2,400 and bank $9,600 on the debit side.",
+          "1 mark for cash sales $6,500 in the cash column (debit).",
+          "1 mark for A. Ali $3,800 in the bank column with the discount allowed $200 beside it (debit).",
+          "1 mark for C. Deen $3,200 in the bank column (debit).",
+          "1 mark for rent $2,000 and rates $900 in the bank column (credit).",
+          "1 mark for B. Singh $2,600 in the bank column with the discount received $150 beside it (credit).",
+          "1 mark for wages $1,200, drawings $700 and petty cash $500 correctly placed in the cash and bank columns.",
+          "1 mark for the contra entry on 15 May: $1,500 in the cash column (debit) and $1,500 in the bank column (credit), marked 'C'.",
+          "1 mark for the column totals, cash $10,400 and bank $16,600 on both sides.",
+          "1 mark for the balances carried down: cash $8,500 and bank $9,100.",
+          "1 mark for bringing both balances down on 1 June 2016 in the correct columns."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "State the closing balance of the cash column and of the bank column, and explain what each balance tells the owner.",
+        "marks": 2,
+        "commandWords": [
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "The cash column has a debit balance of $8,500 and the bank column a debit balance of $9,100. Both are debit balances, which means both are current assets of the business: the owner has $8,500 of cash in hand and $9,100 in the bank account. The bank is not overdrawn, because an overdraft would have given the bank column a credit balance.",
+        "markScheme": [
+          "1 mark for stating both closing balances (cash $8,500, bank $9,100).",
+          "1 mark for explaining that both are debit balances representing current assets (cash in hand and cash at bank), and that the bank is not overdrawn."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Calculate the total discount allowed and the total discount received for May 2016.",
+        "marks": 2,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Total discount allowed = $4,000 - $3,800 = $200.\nTotal discount received = $2,750 - $2,600 = $150.",
+        "markScheme": [
+          "1 mark for discount allowed = $200.",
+          "1 mark for discount received = $150."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "State TWO advantages to a business of operating its petty cash on the imprest system.",
+        "marks": 4,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "1. Control: the petty cashier can never spend more than the fixed float, so the amount of cash at risk is limited and the owner always knows exactly how much petty cash should be on hand ($500 in this case) at any time.\n2. It saves the main cash book from being cluttered with many small payments, and it makes checking easier because the petty cashier must account for every payment before the float is restored. It also trains a junior member of staff in handling cash and keeps responsibility for small payments separate from the main cashier.\n(Any TWO, well explained.)",
+        "markScheme": [
+          "1 mark for stating a valid advantage (control over the amount of cash at risk / a known fixed float).",
+          "1 mark for explaining that advantage.",
+          "1 mark for a second valid advantage (keeps the main cash book free of small payments / makes checking and accountability easier / trains staff / separates responsibility).",
+          "1 mark for explaining the second advantage."
+        ]
+      }
+    ],
+    "examinerTips": "The discount columns are memorandum columns - add them and carry the totals to the discount allowed and discount received accounts, but never balance them against the cash and bank columns. A contra entry goes on both sides of the cash book, and the cash and bank columns must total the same on each side."
+  },
+  {
+    "id": "poa-p2-04",
+    "type": "write",
+    "paper": 2,
+    "section": "Question 4",
+    "title": "Types of accounting error, corrections and the suspense account",
+    "topic": "accounting-errors",
+    "commandWords": [
+      "Identify",
+      "State",
+      "Explain",
+      "Prepare"
+    ],
+    "marks": 20,
+    "suggestedMinutes": 36,
+    "source": "The trial balance of R. Persaud, a trader, was prepared on 31 December 2016. In the course of checking the books the following errors were found.\n\n1. A credit sale of $1,500 to P. James was completely left out of the books.\n2. A credit purchase of $2,000 from K. Singh was entered in the account of J. Singh.\n3. Rent paid by cheque of $850 was entered in the rent account as $580.\n4. The purchase of a new computer for $25,000 was debited to the office expenses account.\n5. The sales account was undercast by $2,000.\n\nThe trial balance did not agree and the difference of $3,000 was entered in a suspense account.",
+    "prompt": "Answer ALL parts. For each journal entry give the accounts to be debited and credited, with the amounts and a suitable narration.",
+    "planningHints": [
+      "Ask two questions of each error: does it put a wrong amount in a right account, a right amount in a wrong account, or leave the entry out altogether - and does it affect only one side of the double entry?",
+      "An error affects the trial balance only when ONE side of the double entry is wrong. If both the debit and the credit are wrong (or both are missing) the trial balance still agrees.",
+      "Error of principle: a capital item treated as revenue, or a revenue item treated as capital. Error of commission: the right amount in the wrong account of the same class. Error of original entry: the wrong amount entered in both accounts. Error of complete omission: the transaction is left out of the books entirely.",
+      "A journal entry must have a narration, and the total of the debits must equal the total of the credits.",
+      "When a suspense account has been opened, correct the error by writing the entry the other way round against the suspense account, then work out the balance left on it."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify the type of error in each of the five cases, 1 to 5, and name it.",
+        "marks": 5,
+        "commandWords": [
+          "Identify"
+        ],
+        "modelAnswer": "1. Error of complete omission - the whole transaction was left out of the books.\n2. Error of commission - the correct amount was posted to the wrong person's account (J. Singh instead of K. Singh).\n3. Error of commission (a posting error / transposition) - the correct amount was posted to the right account, but as the wrong figure.\n4. Error of principle - a capital expenditure (a non-current asset) was treated as revenue expenditure.\n5. Error of commission (a casting error) - the total of the sales account was added up incorrectly.",
+        "markScheme": [
+          "1 mark for each correctly named error, maximum 5 marks.",
+          "1. Error of complete omission. 2. Error of commission. 3. Error of commission (posting/transposition error). 4. Error of principle. 5. Error of commission (casting error)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "State which TWO of the errors 1 to 5 would be revealed by a trial balance that does not agree, and explain why the other errors would not be revealed.",
+        "marks": 4,
+        "commandWords": [
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "Errors 3 and 5 would be revealed by the trial balance. In error 3 the rent account was debited with $580 instead of $850, so the debit side is short by $270 - only one side of the double entry is wrong. In error 5 the sales account was undercast by $2,000, so the credit side is short by that amount. In each case the two sides of the trial balance no longer agree.\nErrors 1, 2 and 4 would NOT be revealed, because in each of them the wrong amount (or no amount at all) is on BOTH sides of the double entry. Error 1 left out both the debit and the credit; error 2 put the debit in the wrong personal account but the total of the debits is still correct; and error 4 used a valid account but the wrong class of account, so the totals still agree.",
+        "markScheme": [
+          "1 mark for correctly naming error 3 and error 5 as the two that would be revealed.",
+          "1 mark for explaining that in those two errors only ONE side of the double entry is affected (rent understated by $270, sales undercast by $2,000).",
+          "1 mark for explaining that in errors 1, 2 and 4 the error is on both sides of the double entry (or the entry is omitted from both sides) so the totals still agree.",
+          "1 mark for a clear and complete explanation referring to at least one specific error."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Prepare the journal entries needed to correct errors 1, 2 and 4. Show the accounts to be debited and credited, the amounts and a narration for each entry.",
+        "marks": 6,
+        "commandWords": [
+          "Prepare"
+        ],
+        "modelAnswer": "GENERAL JOURNAL                                     Dr        Cr\n\n1. P. James                             $1,500\n       To Sales                                     $1,500\n   Narration: being the credit sale to P. James $1,500 which had been completely omitted from the books.\n\n2. K. Singh                             $2,000\n       To J. Singh                                  $2,000\n   Narration: being the correction of a credit purchase of $2,000 from K. Singh which had been posted in error to the account of J. Singh.\n\n4. Computer (non-current asset)         $25,000\n       To Office expenses                            $25,000\n   Narration: being the correction of an error of principle - the purchase of a computer, a capital item, had been debited to the office expenses account.\n\nEach entry debits and credits the same amount, so each is a complete double entry.",
+        "markScheme": [
+          "1 mark for the first journal entry: debit P. James $1,500, credit Sales $1,500.",
+          "1 mark for the narration to the first entry (the credit sale had been omitted).",
+          "1 mark for the second journal entry: debit K. Singh $2,000, credit J. Singh $2,000.",
+          "1 mark for the narration to the second entry (the purchase was posted to the wrong personal account).",
+          "1 mark for the third journal entry: debit Computer $25,000, credit Office expenses $25,000.",
+          "1 mark for the narration to the third entry (an error of principle - capital expenditure treated as revenue expenditure)."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "It was later found that the total of the purchases day book, $30,000, had been posted to the purchases account as $27,000.\n\n(i) Prepare the journal entry needed to correct this error.\n(ii) State whether the suspense account had a debit or a credit balance before the correction, and state the balance on the suspense account after the correction.",
+        "marks": 5,
+        "commandWords": [
+          "Prepare",
+          "State"
+        ],
+        "modelAnswer": "(i) GENERAL JOURNAL                        Dr          Cr\n    Purchases                      $3,000\n          To Suspense account                   $3,000\n    Narration: being the correction of an error in which the total of the purchases day book $30,000 was posted to the purchases account as $27,000, an understatement of purchases by $3,000.\n\n(ii) The purchases account was debited with only $27,000 instead of $30,000, while the suppliers' accounts were correctly credited with $30,000. The debit side was therefore $3,000 short, so the suspense account had a DEBIT balance of $3,000 before the correction. The entry above credits the suspense account with $3,000, which clears it, so after the correction the balance on the suspense account is NIL.",
+        "markScheme": [
+          "1 mark for the journal entry: debit Purchases $3,000.",
+          "1 mark for crediting the suspense account with $3,000.",
+          "1 mark for a suitable narration.",
+          "1 mark for stating that the suspense account had a DEBIT balance of $3,000 before the correction.",
+          "1 mark for stating that the balance on the suspense account after the correction is NIL (the account is cleared)."
+        ]
+      }
+    ],
+    "examinerTips": "The single test for whether an error affects the trial balance is: is only ONE side of the double entry wrong? If both sides are wrong in the same way, the trial balance still agrees. Every journal entry needs a narration, and debits must equal credits."
+  },
+  {
+    "id": "poa-p2-05",
+    "type": "write",
+    "paper": 2,
+    "section": "Question 5",
+    "title": "Year-end adjustments: accruals, prepayments and depreciation",
+    "topic": "accruals-prepayments",
+    "commandWords": [
+      "Calculate",
+      "Prepare",
+      "State",
+      "Explain"
+    ],
+    "marks": 20,
+    "suggestedMinutes": 36,
+    "source": "L. Charles prepared her income statement for the year ended 31 December 2016 and arrived at a draft net profit of $64,000. She then remembered that she had forgotten to make the following year-end adjustments.\n\n1. Insurance paid during the year was $12,000, of which $3,000 relates to the year 2017.\n2. Wages paid during the year were $48,000, and $5,000 was owing for December 2016.\n3. Rent received during the year was $9,000, of which $1,500 relates to the year 2017.\n4. Depreciation has not yet been provided on the motor vehicle. The vehicle cost $180,000 and is to be depreciated at 20% per annum.\n5. A debt of $2,000 is to be written off as bad.",
+    "prompt": "Answer ALL parts. Show all workings. State clearly whether each adjustment increases or decreases the net profit.",
+    "planningHints": [
+      "An accrual is an expense that belongs to the year but has not yet been paid: ADD it to the expense and it REDUCES the profit.",
+      "A prepayment is an expense that has been paid but belongs to the next year: DEDUCT it from the expense and it INCREASES the profit.",
+      "Income received in advance belongs to the next year: DEDUCT it from the income and it REDUCES the profit.",
+      "Bad debts written off and depreciation for the year are both expenses: they REDUCE the profit.",
+      "Handle each adjustment one at a time and state whether it goes up or down; a schedule is the safest way to avoid a sign error."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Prepare a schedule of the five adjustments showing, for each one, whether it increases or decreases the net profit, and calculate the adjusted net profit for the year ended 31 December 2016.",
+        "marks": 10,
+        "commandWords": [
+          "Prepare",
+          "Calculate"
+        ],
+        "modelAnswer": "L. CHARLES\nSchedule of adjustments for the year ended 31 December 2016\n\nDraft net profit                                       $64,000\n1. Less prepaid insurance (paid but relates to 2017)       $3,000  (increases profit)\n2. Less accrued wages owing for December 2016             ($5,000) (decreases profit)\n3. Less rent received in advance (relates to 2017)        ($1,500) (decreases profit)\n4. Less depreciation on the motor vehicle                ($36,000) (decreases profit)\n5. Less bad debts written off                            ($2,000) (decreases profit)\nADJUSTED NET PROFIT                                    $22,500\n\nWorkings: $64,000 + $3,000 - $5,000 - $1,500 - $36,000 - $2,000 = $22,500.",
+        "markScheme": [
+          "1 mark for adjusting the draft net profit for the prepaid insurance of $3,000 (an increase of profit, because the amount belongs to 2017).",
+          "1 mark for the accrued wages of $5,000 (a decrease of profit).",
+          "1 mark for the rent received in advance of $1,500 (a decrease of profit).",
+          "1 mark for the depreciation charge of $36,000 (a decrease of profit).",
+          "1 mark for the bad debts written off of $2,000 (a decrease of profit).",
+          "1 mark for stating correctly, for each adjustment, whether it increases or decreases the net profit.",
+          "1 mark for the correct arithmetic $64,000 + $3,000 - $5,000 - $1,500 - $36,000 - $2,000.",
+          "1 mark for the adjusted net profit = $22,500.",
+          "1 mark for a clearly presented schedule with the workings shown.",
+          "1 mark for the correct heading (name of the business and the period ended 31 December 2016)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the depreciation charge on the motor vehicle for the second year if L. Charles had used the reducing (diminishing) balance method at 20% per annum instead of the straight line method. Show your working.",
+        "marks": 4,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Year 1 (reducing balance): $180,000 x 20% = $36,000\nNet book value at the end of year 1 = $180,000 - $36,000 = $144,000\nYear 2 (reducing balance): $144,000 x 20% = $28,800\n\nUnder the reducing balance method the charge falls each year, because it is calculated on the net book value (cost less accumulated depreciation) rather than on the cost. Under the straight line method the charge would be $36,000 every year.",
+        "markScheme": [
+          "1 mark for the year 1 charge of $36,000 and the net book value of $144,000 at the end of year 1.",
+          "1 mark for calculating the year 2 charge on the net book value, not on the cost ($144,000 x 20%).",
+          "1 mark for the answer $28,800.",
+          "1 mark for stating that the reducing balance charge falls each year while the straight line charge is constant."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "State the accounting concept that requires the adjustments in (a) to be made, and explain why the concept makes these adjustments necessary.",
+        "marks": 2,
+        "commandWords": [
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "The accruals (matching) concept. It requires that the income and expenses of a period are matched to that period, whether or not the cash has been received or paid in it. So the insurance that belongs to 2017 must be taken out of this year's expenses, the wages owing for December 2016 must be brought in, and the rent that belongs to 2017 must not be counted as this year's income. Without the adjustments the profit would be misstated and the accounts would not give a true and fair view.",
+        "markScheme": [
+          "1 mark for naming the accruals (matching) concept.",
+          "1 mark for explaining that income and expenses must be matched to the period to which they relate, whether or not the cash has moved, so that the profit is not misstated."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Prepare the TWO journal entries needed to record the accrued wages of $5,000 and the prepaid insurance of $3,000. Give a narration for each.",
+        "marks": 4,
+        "commandWords": [
+          "Prepare"
+        ],
+        "modelAnswer": "GENERAL JOURNAL                                   Dr          Cr\n\nWages                              $5,000\n      To Accrued wages (current liability)      $5,000\nNarration: being the wages owing for December 2016, brought into the accounts for the year as an accrued expense.\n\nPrepaid insurance (current asset)  $3,000\n      To Insurance                              $3,000\nNarration: being the part of the insurance paid that relates to the year 2017, carried forward as a prepayment.",
+        "markScheme": [
+          "1 mark for the first entry: debit Wages $5,000, credit Accrued wages $5,000.",
+          "1 mark for the narration to the first entry.",
+          "1 mark for the second entry: debit Prepaid insurance $3,000, credit Insurance $3,000.",
+          "1 mark for the narration to the second entry."
+        ]
+      }
+    ],
+    "examinerTips": "State whether each adjustment increases or decreases the profit before you combine them - that is where most marks are lost. An accrual is added to the expense and reduces profit; a prepayment is deducted from the expense and increases profit; income received in advance is deducted from the income and reduces profit."
+  }
+]
