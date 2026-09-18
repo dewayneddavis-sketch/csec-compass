@@ -12,6 +12,21 @@ import SBASection from "../components/SBASection";
 import ProgressTab from "../components/ProgressTab";
 import "./SubjectPage.css";
 
+// One distinct colour per tab so students can tell them apart at a glance
+// (owner feedback, school visit 2026-09-18: "It is hard to distinguish between
+// tabs"). Each colour is a dark, accessible shade used as the tab's text on a
+// pale tint, and as the active tab's background carrying white text — every
+// text/background pair is at or above a 4.5:1 contrast ratio.
+const TABS = [
+  { id: "lessons", label: "Lessons", color: "#1d4ed8", tint: "#eff6ff" },              // blue
+  { id: "experiment", label: "Interactive Lab", color: "#047857", tint: "#ecfdf5" },  // green
+  { id: "quiz", label: "Knowledge Check", color: "#b45309", tint: "#fffbeb" },         // amber
+  { id: "practice", label: "Extra Practice", color: "#6d28d9", tint: "#f5f3ff" },      // purple
+  { id: "mock", label: "Mock Exam", color: "#b91c1c", tint: "#fef2f2" },               // red
+  { id: "progress", label: "Progress", color: "#0e7490", tint: "#ecfeff" },            // cyan
+  { id: "sba", label: "CSEC SBA", color: "#0f766e", tint: "#f0fdfa" },                 // teal
+];
+
 export default function SubjectPage() {
   const { subjectId } = useParams();
   const { user } = useAuth();
@@ -107,8 +122,14 @@ export default function SubjectPage() {
       )}
 
       <div className="s-tabs">
-        {[{ id: "lessons", label: "Lessons" }, { id: "experiment", label: "Interactive Lab" }, { id: "quiz", label: "Knowledge Check" }, { id: "practice", label: "Extra Practice" }, { id: "mock", label: "Mock Exam" }, { id: "progress", label: "Progress" }, { id: "sba", label: "CSEC SBA" }].map((tab) => (
-          <button key={tab.id} className={"s-tab " + (activeTab === tab.id ? "active" : "")} onClick={() => setActiveTab(tab.id)}>
+        {TABS.map((tab) => (
+          <button
+            key={tab.id}
+            className={"s-tab " + (activeTab === tab.id ? "active" : "")}
+            style={{ "--tab-color": tab.color, "--tab-tint": tab.tint }}
+            aria-pressed={activeTab === tab.id}
+            onClick={() => setActiveTab(tab.id)}
+          >
             {tab.label}{tab.id === "quiz" && quizCompleted && <span className="s-tab-done">&check;</span>}
           </button>
         ))}
