@@ -106,5 +106,11 @@
     "name": "Clothing, Textile and Fashion",
     "description": "Fibres and fabrics, sewing tools and techniques, pattern work and garment construction, design, consumer skills and enterprise, safety and Caribbean textile craft.",
     "icon": "Checkroom"
+  },
+  {
+    "id": "principles-of-business",
+    "name": "Principles of Business",
+    "description": "Business and its environment, ownership, finance, marketing, production and quality, people in business, government, trade and entrepreneurship.",
+    "icon": "Storefront"
   }
 ]
