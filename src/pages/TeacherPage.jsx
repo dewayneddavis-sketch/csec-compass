@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import { experimentTypes } from "../data/contentLoader";
+import { experimentLabel, labLessonPath, loadLessonNameIndex, subjectName } from "../data/lessonNames";
 import "./TeacherPage.css";
 
 // Teacher progress dashboard.
@@ -62,14 +64,14 @@ function QuizCells({ subject }) {
   );
 }
 
-function SubjectCard({ subject }) {
+function SubjectCard({ subject, nameIndex }) {
   const labs = subject.labs || { opened: 0, completed: 0, lessons: [] };
   const completedLabs = (labs.lessons || []).filter((l) => l.completed);
   const openedOnly = (labs.lessons || []).filter((l) => !l.completed);
   return (
     <div className="tp-subject">
       <div className="tp-subject-head">
-        <strong>{subject.subjectId}</strong>
+        <strong>{subjectName(subject.subjectId, nameIndex) || subject.subjectId}</strong>
         <span className="tp-muted">last active {formatWhen(subject.lastActivityAt)}</span>
       </div>
       <div className="tp-subject-stats">
@@ -87,13 +89,15 @@ function SubjectCard({ subject }) {
           <ul>
             {completedLabs.map((l) => (
               <li key={l.lessonId}>
-                <span className="tp-lab-done">✅</span> {l.lessonId}
+                <span className="tp-lab-done">✅</span> {labLessonPath(subject.subjectId, l.lessonId, nameIndex)}
+                {l.experimentType && <span className="tp-lab-type"> · {experimentLabel(l.experimentType, experimentTypes)}</span>}
                 <span className="tp-muted"> · {l.opens}× · completed {formatWhen(l.lastActivityAt)}</span>
               </li>
             ))}
             {openedOnly.map((l) => (
               <li key={l.lessonId}>
-                <span className="tp-lab-open">◻︎</span> {l.lessonId}
+                <span className="tp-lab-open">◻︎</span> {labLessonPath(subject.subjectId, l.lessonId, nameIndex)}
+                {l.experimentType && <span className="tp-lab-type"> · {experimentLabel(l.experimentType, experimentTypes)}</span>}
                 <span className="tp-muted"> · opened {l.opens}× · last {formatWhen(l.lastActivityAt)} (no completion recorded)</span>
               </li>
             ))}
@@ -117,6 +121,29 @@ export default function TeacherPage() {
   const [expanded, setExpanded] = useState(null);
   const [filter, setFilter] = useState("");
   const [sort, setSort] = useState("least-active");
+  const [nameIndex, setNameIndex] = useState(null);
+
+  // Lab rows arrive as ids (subject_id + lesson_id) because that is what the
+  // lesson page records. Resolve them to the Subject -> Module -> Lesson names
+  // a teacher recognises. Best-effort: when the content fetch fails the rows
+  // fall back to the raw lesson id instead of showing nothing.
+  useEffect(() => {
+    const ids = new Set();
+    for (const student of state.data?.students || []) {
+      for (const subj of student.subjects || []) {
+        if ((subj.labs?.lessons || []).length > 0) ids.add(subj.subjectId);
+      }
+    }
+    if (ids.size === 0) {
+      setNameIndex(null);
+      return;
+    }
+    let cancelled = false;
+    loadLessonNameIndex([...ids])
+      .then((index) => { if (!cancelled) setNameIndex(index); })
+      .catch(() => {});
+    return () => { cancelled = true; };
+  }, [state.data]);
 
   const token = session?.access_token;
 
@@ -301,7 +328,7 @@ export default function TeacherPage() {
                     {s.subjects.length === 0 ? (
                       <p className="tp-muted">No activity recorded for this student yet.</p>
                     ) : (
-                      s.subjects.map((subj) => <SubjectCard key={subj.subjectId} subject={subj} />)
+                      s.subjects.map((subj) => <SubjectCard key={subj.subjectId} subject={subj} nameIndex={nameIndex} />)
                     )}
                   </div>
                 )}
