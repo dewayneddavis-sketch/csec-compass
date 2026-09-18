@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useAuth } from "../context/AuthContext";
 import { getSupabaseClient } from "../lib/supabase";
+import TeacherLinksCard from "../components/TeacherLinksCard";
 import "./AdminPage.css";
 
 // Fallback if /content/subjects.json can't be read — the 10 original subjects.
@@ -282,6 +283,8 @@ export default function AdminPage() {
         {result && <div className="admin-msg admin-success">{result}</div>}
         {error && <div className="admin-msg admin-error">{error}</div>}
       </div>
+
+      <TeacherLinksCard />
 
       <div className="admin-form" style={{ marginTop: "1.5rem" }}>
         <h3 className="admin-section-title">Bulk Grant — Pilot Class</h3>

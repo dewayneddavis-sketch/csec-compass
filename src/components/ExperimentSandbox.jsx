@@ -1,5 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { getExperimentConfig, getLessonExperiment, experimentTypes } from "../data/contentLoader";
+import { useAuth } from "../context/AuthContext";
+import { recordLabOpen } from "../data/labActivity";
 import GraphingCalculator from "./GraphingCalculator";
 import DragDropLabel from "./DragDropLabel";
 import CircuitBuilder from "./CircuitBuilder";
@@ -161,6 +163,24 @@ function resolveInteractive(subjectId, experimentType, lessonId) {
 
 export default function ExperimentSandbox({ subjectId, config, lessonExperiment, lessonId }) {
   const [activeTab, setActiveTab] = useState("play");
+  const { session } = useAuth();
+
+  // Lab engagement for the teacher dashboard: one "open" per lab the student
+  // actually lands on. Completion is reported by the lab itself when it has a
+  // right answer to finish (see DragDropLabel), so a teacher never sees a false
+  // "done" for an exploratory tool.
+  useEffect(() => {
+    if (!subjectId || !lessonId) return;
+    let experimentType = null;
+    if (typeof lessonExperiment === "string" && experimentTypes[lessonExperiment]) {
+      experimentType = lessonExperiment;
+    } else if (lessonExperiment && typeof lessonExperiment === "object") {
+      experimentType = lessonExperiment.type || lessonExperiment.interactive || null;
+    }
+    recordLabOpen(subjectId, lessonId, experimentType, session);
+    // One record per (subject, lesson) view — session changes are included so a
+    // sign-in mid-session starts syncing without recording a second open.
+  }, [subjectId, lessonId, lessonExperiment, session]);
 
   let experimentType = null;
   let experimentConfig = config || null;

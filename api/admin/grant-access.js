@@ -69,8 +69,10 @@ export default async function handler(req, res) {
 
   const { email, emails, purchaseType, action, id, ids } = req.body || {};
 
-  if (!action || !["grant", "revoke", "list"].includes(action)) {
-    return res.status(400).json({ error: "action must be 'grant', 'revoke' or 'list'" });
+  if (!action || !["grant", "revoke", "list", "teacher-link", "teacher-unlink", "teacher-links"].includes(action)) {
+    return res.status(400).json({
+      error: "action must be 'grant', 'revoke', 'list', 'teacher-link', 'teacher-unlink' or 'teacher-links'",
+    });
   }
 
   // Row ids for a row-level revoke (single id or a selected batch).
@@ -161,6 +163,88 @@ export default async function handler(req, res) {
       });
     }
 
+    // ------------------------------------------------------- TEACHER LINKS
+    // Who may see whose progress in the teacher dashboard. Owner-only, like
+    // every other grant in the platform: a teacher can never link themselves to
+    // a student, and the dashboard only ever reads links created here.
+    //
+    //   { action: "teacher-links" }                          -> every link
+    //   { action: "teacher-link",   teacherEmail, email | emails }
+    //   { action: "teacher-unlink", teacherEmail, email | emails }
+    if (action === "teacher-links") {
+      const { data: rows, error: linksError } = await supabase
+        .from("teacher_students")
+        .select("id,teacher_email,student_email,created_at")
+        .order("teacher_email", { ascending: true })
+        .limit(2000);
+      if (linksError) {
+        return res.status(500).json({
+          error: "Teacher links unavailable (failing closed). Ensure the `teacher_students` table exists — see supabase/schema.sql.",
+        });
+      }
+      const allowedTeachers = (process.env.TEACHER_EMAILS || "")
+        .split(",")
+        .map((e) => e.trim().toLowerCase())
+        .filter(Boolean);
+      return res.status(200).json({
+        links: rows || [],
+        count: (rows || []).length,
+        teachers: [...new Set((rows || []).map((r) => r.teacher_email))],
+        allowedTeachers, // TEACHER_EMAILS — who can actually open the dashboard
+      });
+    }
+
+    if (action === "teacher-link" || action === "teacher-unlink") {
+      const teacherEmail =
+        typeof req.body?.teacherEmail === "string" ? req.body.teacherEmail.trim().toLowerCase() : "";
+      if (!teacherEmail || targetEmails.length === 0) {
+        return res.status(400).json({
+          error: "Missing required fields: teacherEmail and email (or an emails array)",
+        });
+      }
+
+      if (action === "teacher-unlink") {
+        const { error: unlinkError } = await supabase
+          .from("teacher_students")
+          .delete()
+          .eq("teacher_email", teacherEmail)
+          .in("student_email", targetEmails);
+        if (unlinkError) throw unlinkError;
+        return res.status(200).json({
+          message: `Unlinked ${targetEmails.length} student(s) from ${teacherEmail}`,
+          removed: targetEmails,
+        });
+      }
+
+      // LINK — a student may be linked before they sign up (their progress
+      // simply appears once they do), but the owner is told who has no account
+      // yet so an empty dashboard is never a mystery.
+      const allUsers = await fetchAllUsers(supabase);
+      const known = new Map(allUsers.filter((u) => u.email).map((u) => [u.email.toLowerCase(), u.id]));
+      const withoutAccount = targetEmails.filter((e) => !known.has(e));
+      const allowedTeachers = (process.env.TEACHER_EMAILS || "")
+        .split(",")
+        .map((e) => e.trim().toLowerCase())
+        .filter(Boolean);
+
+      const { error: linkError } = await supabase
+        .from("teacher_students")
+        .upsert(
+          targetEmails.map((student_email) => ({ teacher_email: teacherEmail, student_email })),
+          { onConflict: "teacher_email,student_email" }
+        );
+      if (linkError) throw linkError;
+
+      return res.status(200).json({
+        message: `Linked ${targetEmails.length} student(s) to ${teacherEmail}`,
+        linked: targetEmails,
+        withoutAccount,
+        teacherHasAccount: known.has(teacherEmail),
+        teacherInAllowlist: allowedTeachers.includes(teacherEmail),
+      });
+    }
+
+    // ---------------------------------------------------------------- GRANT
     const users = await fetchAllUsers(supabase);
     const usersByEmail = new Map(
       users.filter((u) => u.email).map((u) => [u.email.toLowerCase(), u])
