@@ -84,6 +84,10 @@ Rules the content guarantees (validated at authoring time):
 
 - Social Studies `paper2.json`: 10 items, 239 marks total.
 - English B `paper2.json`: 9 items, 265 marks total.
+- Agriculture Double Option `paper2.json`: 8 items, 217 marks total.
+- Caribbean History `paper2.json`: 9 items, 270 marks total — 3 questions in each of
+  Sections A, B and C at 30 marks each, matching the real Paper 02 (2 h 10 min), in which
+  the candidate answers one question from each section.
 - Neither file replaces `practice.json` (the 100-question multiple-choice bank, which the
   Mock Exam also reads) or `knowledge-check.json` (the 25-question end-of-course check).
 
