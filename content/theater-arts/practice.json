@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "p1",
+    "question": "Theatre differs from film chiefly because theatre is:",
+    "options": [
+      "Recorded and repeatable",
+      "Live and unrepeatable, with an audience present",
+      "Always scripted",
+      "Performed without design"
+    ],
+    "answer": "Live and unrepeatable, with an audience present",
+    "explanation": "Its liveness makes performance the event itself.",
+    "topic": "ta-l1-1"
+  },
+  {
+    "id": "p2",
+    "question": "Which is a basic element of theatre?",
+    "options": [
+      "Camera",
+      "Performer and audience",
+      "Editing",
+      "Playback"
+    ],
+    "answer": "Performer and audience",
+    "explanation": "Also the space, the text and the design support.",
+    "topic": "ta-l1-1"
+  },
+  {
+    "id": "p3",
+    "question": "The theatre of ancient Greece developed from:",
+    "options": [
+      "Court trials",
+      "Festivals of Dionysus",
+      "Military parades",
+      "Trade fairs"
+    ],
+    "answer": "Festivals of Dionysus",
+    "explanation": "Ritual and festival lie behind most theatre traditions.",
+    "topic": "ta-l1-1"
+  },
+  {
+    "id": "p4",
+    "question": "Jonkonnu is best described as:",
+    "options": [
+      "A Greek choral form",
+      "A costumed Caribbean Christmas masquerade with set characters",
+      "A type of stage lighting",
+      "A modern dance technique"
+    ],
+    "answer": "A costumed Caribbean Christmas masquerade with set characters",
+    "explanation": "It has named characters and their own dances.",
+    "topic": "ta-l1-1"
+  },
+  {
+    "id": "p5",
+    "question": "Theatre is called an ephemeral art because:",
+    "options": [
+      "It is short",
+      "It exists only in the moment of performance",
+      "It has no script",
+      "It cannot be designed"
+    ],
+    "answer": "It exists only in the moment of performance",
+    "explanation": "This is why documentation matters.",
+    "topic": "ta-l1-1"
+  },
+  {
+    "id": "p7",
+    "question": "Who is responsible for the business side of a production?",
+    "options": [
+      "The director",
+      "The producer",
+      "The stage manager",
+      "The playwright"
+    ],
+    "answer": "The producer",
+    "explanation": "Budgets, contracts, rights, venue and marketing are producer's work.",
+    "topic": "ta-l1-2"
+  },
+  {
+    "id": "p8",
+    "question": "The director's main responsibility is to:",
+    "options": [
+      "Sell tickets",
+      "Interpret the script and unify the production's vision",
+      "Build the set",
+      "Sell programmes"
+    ],
+    "answer": "Interpret the script and unify the production's vision",
+    "explanation": "The director guides casting, rehearsals and design.",
+    "topic": "ta-l1-2"
+  },
+  {
+    "id": "p9",
+    "question": "The prompt book is kept by the:",
+    "options": [
+      "Actor",
+      "Stage manager",
+      "Producer",
+      "Costume designer"
+    ],
+    "answer": "Stage manager",
+    "explanation": "It holds cues, blocking and running order.",
+    "topic": "ta-l1-2"
+  },
+  {
+    "id": "p10",
+    "question": "A dramaturge or script adviser contributes mainly by:",
+    "options": [
+      "Operating the lights",
+      "Researching and advising on the text and context",
+      "Making costumes",
+      "Selling tickets"
+    ],
+    "answer": "Researching and advising on the text and context",
+    "explanation": "Dramaturgy supports the director's interpretation.",
+    "topic": "ta-l1-2"
+  },
+  {
+    "id": "p11",
+    "question": "Front-of-house staff are responsible for:",
+    "options": [
+      "Technical cues",
+      "The audience - tickets, seating, comfort and safety",
+      "Building the set",
+      "Rehearsing the actors"
+    ],
+    "answer": "The audience - tickets, seating, comfort and safety",
+    "explanation": "The house manager oversees audience safety.",
+    "topic": "ta-l1-2"
+  },
+  {
+    "id": "p13",
+    "question": "In a proscenium arch theatre the audience is:",
+    "options": [
+      "On all four sides",
+      "Facing the stage through a framed opening",
+      "On three sides",
+      "Moving through the space"
+    ],
+    "answer": "Facing the stage through a framed opening",
+    "explanation": "The imaginary fourth wall separates stage from audience.",
+    "topic": "ta-l1-3"
+  },
+  {
+    "id": "p14",
+    "question": "Theatre-in-the-round is also called:",
+    "options": [
+      "Arena staging",
+      "Thrust staging",
+      "Traverse staging",
+      "Promenade staging"
+    ],
+    "answer": "Arena staging",
+    "explanation": "The audience surrounds the acting area.",
+    "topic": "ta-l1-3"
+  },
+  {
+    "id": "p15",
+    "question": "A thrust stage has the audience:",
+    "options": [
+      "On one side only",
+      "On three sides",
+      "On two opposing sides",
+      "On all sides"
+    ],
+    "answer": "On three sides",
+    "explanation": "The stage projects into the auditorium.",
+    "topic": "ta-l1-3"
+  },
+  {
+    "id": "p16",
+    "question": "Traverse staging places the audience:",
+    "options": [
+      "On two opposite sides of a central acting area",
+      "In the round",
+      "In a proscenium arch",
+      "Behind the actors only"
+    ],
+    "answer": "On two opposite sides of a central acting area",
+    "explanation": "It is common in black box and studio spaces.",
+    "topic": "ta-l1-3"
+  },
+  {
+    "id": "p17",
+    "question": "Presentational staging means:",
+    "options": [
+      "The audience is invisible to the performers",
+      "Performers acknowledge and address the audience directly",
+      "The play is performed outdoors",
+      "There is no design"
+    ],
+    "answer": "Performers acknowledge and address the audience directly",
+    "explanation": "Carnival, calypso and storytelling are strongly presentational.",
+    "topic": "ta-l1-3"
+  },
+  {
+    "id": "p19",
+    "question": "Diaphragmatic breathing is important to the actor because it:",
+    "options": [
+      "Makes the voice high",
+      "Gives support and control for carrying the voice",
+      "Lowers the pitch",
+      "Prevents articulation"
+    ],
+    "answer": "Gives support and control for carrying the voice",
+    "explanation": "It allows the actor to be heard without straining.",
+    "topic": "ta-l2-1"
+  },
+  {
+    "id": "p20",
+    "question": "Projection on stage means:",
+    "options": [
+      "Shouting as loudly as possible",
+      "Using supported breath and resonance to be heard clearly",
+      "Speaking in a monotone",
+      "Using a microphone always"
+    ],
+    "answer": "Using supported breath and resonance to be heard clearly",
+    "explanation": "It carries without damaging the voice.",
+    "topic": "ta-l2-1"
+  },
+  {
+    "id": "p21",
+    "question": "Which is the most powerful of the actor's vocal dynamics?",
+    "options": [
+      "Pitch",
+      "Pause",
+      "Volume",
+      "Speed"
+    ],
+    "answer": "Pause",
+    "explanation": "Pause gives weight to the words around it.",
+    "topic": "ta-l2-1"
+  },
+  {
+    "id": "p22",
+    "question": "Articulation depends mainly on:",
+    "options": [
+      "The lungs",
+      "The lips, tongue, teeth, palate and jaw",
+      "The vocal cords only",
+      "The diaphragm alone"
+    ],
+    "answer": "The lips, tongue, teeth, palate and jaw",
+    "explanation": "Clear consonants make the words audible.",
+    "topic": "ta-l2-1"
+  },
+  {
+    "id": "p23",
+    "question": "Choral speaking requires the group to:",
+    "options": [
+      "Speak at different times",
+      "Decide unison, solo, dynamics, pace and pause to speak as one instrument",
+      "Ignore rhythm",
+      "Speak only in dialect"
+    ],
+    "answer": "Decide unison, solo, dynamics, pace and pause to speak as one instrument",
+    "explanation": "It suits folk poetry and storytelling.",
+    "topic": "ta-l2-1"
+  },
+  {
+    "id": "p25",
+    "question": "Isolation in movement training means:",
+    "options": [
+      "Separating the company",
+      "Moving one body part independently of the others",
+      "Freezing on stage",
+      "Working alone in rehearsal"
+    ],
+    "answer": "Moving one body part independently of the others",
+    "explanation": "It builds control and precision.",
+    "topic": "ta-l2-2"
+  },
+  {
+    "id": "p26",
+    "question": "Masking in stage movement means:",
+    "options": [
+      "Hiding behind scenery",
+      "Blocking another actor or the audience's view of the action",
+      "Covering the face",
+      "Using a mask"
+    ],
+    "answer": "Blocking another actor or the audience's view of the action",
+    "explanation": "Actors must share the stage, not obscure it.",
+    "topic": "ta-l2-2"
+  },
+  {
+    "id": "p27",
+    "question": "The fixed point in mime is:",
+    "options": [
+      "The actor's centre of gravity",
+      "A point that does not move in the imagined space, against which the movement works",
+      "A prop",
+      "The back wall"
+    ],
+    "answer": "A point that does not move in the imagined space, against which the movement works",
+    "explanation": "It makes the imaginary object consistent.",
+    "topic": "ta-l2-2"
+  },
+  {
+    "id": "p28",
+    "question": "Stage combat must always be:",
+    "options": [
+      "Improvised for realism",
+      "Choreographed, rehearsed slowly and cut to the sight lines",
+      "Performed at full speed first",
+      "Kept secret from the director"
+    ],
+    "answer": "Choreographed, rehearsed slowly and cut to the sight lines",
+    "explanation": "Safety calls and reduced speed come first.",
+    "topic": "ta-l2-2"
+  },
+  {
+    "id": "p29",
+    "question": "Which is the correct technique for moving a heavy piece of scenery?",
+    "options": [
+      "Lifting with the back and twisting",
+      "Using a trolley or two people, and lifting with the legs",
+      "Dragging it alone",
+      "Lifting it above shoulder height"
+    ],
+    "answer": "Using a trolley or two people, and lifting with the legs",
+    "explanation": "Back injuries are among the commonest stage accidents.",
+    "topic": "ta-l2-2"
+  },
+  {
+    "id": "p31",
+    "question": "Given circumstances include:",
+    "options": [
+      "The furniture only",
+      "Time, place, relationships, past and social position",
+      "The ticket price",
+      "The lighting design"
+    ],
+    "answer": "Time, place, relationships, past and social position",
+    "explanation": "They are found in the script and the research.",
+    "topic": "ta-l2-3"
+  },
+  {
+    "id": "p32",
+    "question": "An actor's objective is:",
+    "options": [
+      "The theme of the play",
+      "What the character wants in the scene and each beat",
+      "The director's concept",
+      "The character's costume"
+    ],
+    "answer": "What the character wants in the scene and each beat",
+    "explanation": "Obstacles stand in the way of it.",
+    "topic": "ta-l2-3"
+  },
+  {
+    "id": "p33",
+    "question": "Subtext is:",
+    "options": [
+      "The stage directions",
+      "What is really meant beneath the words",
+      "The subplot",
+      "The playwright's biography"
+    ],
+    "answer": "What is really meant beneath the words",
+    "explanation": "Actors play the subtext, not just the line.",
+    "topic": "ta-l2-3"
+  },
+  {
+    "id": "p34",
+    "question": "A useful question to ask of every line is:",
+    "options": [
+      "How should it sound?",
+      "What is the character doing with this line?",
+      "How long is it?",
+      "Was it in the first draft?"
+    ],
+    "answer": "What is the character doing with this line?",
+    "explanation": "Doing produces the sound; playing an emotion produces cliche.",
+    "topic": "ta-l2-3"
+  },
+  {
+    "id": "p35",
+    "question": "'Off book' means:",
+    "options": [
+      "The script has been published",
+      "The actor has learned their lines and no longer needs the script",
+      "The play is cancelled",
+      "The book is missing"
+    ],
+    "answer": "The actor has learned their lines and no longer needs the script",
+    "explanation": "Off-book deadlines are set in the rehearsal schedule.",
+    "topic": "ta-l2-3"
+  },
+  {
+    "id": "p37",
+    "question": "The inciting incident is:",
+    "options": [
+      "The ending",
+      "The event that upsets the balance and sets the action in motion",
+      "The interval",
+      "The stage direction at the start"
+    ],
+    "answer": "The event that upsets the balance and sets the action in motion",
+    "explanation": "It usually occurs early in the play.",
+    "topic": "ta-l3-1"
+  },
+  {
+    "id": "p38",
+    "question": "Exposition is best delivered:",
+    "options": [
+      "By announcement in the opening speech",
+      "Through action and conflict as the play proceeds",
+      "In the programme",
+      "By the director"
+    ],
+    "answer": "Through action and conflict as the play proceeds",
+    "explanation": "Drama shows rather than announces.",
+    "topic": "ta-l3-1"
+  },
+  {
+    "id": "p39",
+    "question": "The climax of a play is:",
+    "options": [
+      "Any loud moment",
+      "The point of highest tension where the central conflict is engaged decisively",
+      "The last line",
+      "The denouement"
+    ],
+    "answer": "The point of highest tension where the central conflict is engaged decisively",
+    "explanation": "Falling action follows it.",
+    "topic": "ta-l3-1"
+  },
+  {
+    "id": "p40",
+    "question": "A flat character is one that is:",
+    "options": [
+      "Uninteresting",
+      "Simple and consistent rather than complex and changing",
+      "Always comic",
+      "Silent"
+    ],
+    "answer": "Simple and consistent rather than complex and changing",
+    "explanation": "Rounded characters are complex and may change.",
+    "topic": "ta-l3-1"
+  },
+  {
+    "id": "p41",
+    "question": "Farce depends mainly on:",
+    "options": [
+      "Slow naturalistic dialogue",
+      "Absurd situation, mistaken identity and physical comedy at speed",
+      "Verse",
+      "Tragic flaw"
+    ],
+    "answer": "Absurd situation, mistaken identity and physical comedy at speed",
+    "explanation": "Timing and precision make it work.",
+    "topic": "ta-l3-1"
+  },
+  {
+    "id": "p42",
+    "question": "The Jamaican traditional pantomime is:",
+    "options": [
+      "A silent mime form",
+      "A musical comedy of local life staged annually",
+      "A British import performed unchanged",
+      "A dance-only form"
+    ],
+    "answer": "A musical comedy of local life staged annually",
+    "explanation": "It is distinct from the British pantomime.",
+    "topic": "ta-l3-1"
+  },
+  {
+    "id": "p43",
+    "question": "In script analysis, a fact is distinguished from an inference so that:",
+    "options": [
+      "Only facts are used on stage",
+      "The company knows what the text states and what it has decided",
+      "The director can change the play",
+      "Actors can cut lines"
+    ],
+    "answer": "The company knows what the text states and what it has decided",
+    "explanation": "Invention must not contradict the text.",
+    "topic": "ta-l3-2"
+  },
+  {
+    "id": "p44",
+    "question": "A French scene breakdown marks a new scene each time:",
+    "options": [
+      "The lighting changes",
+      "A character enters or exits",
+      "The act ends",
+      "The music starts"
+    ],
+    "answer": "A character enters or exits",
+    "explanation": "It reveals structure and playing units.",
+    "topic": "ta-l3-2"
+  },
+  {
+    "id": "p45",
+    "question": "A character through-line traces:",
+    "options": [
+      "The costume changes",
+      "What the character wants and how it changes through the play",
+      "The actor's rehearsal diary",
+      "The number of lines"
+    ],
+    "answer": "What the character wants and how it changes through the play",
+    "explanation": "It keeps the performance coherent.",
+    "topic": "ta-l3-2"
+  },
+  {
+    "id": "p46",
+    "question": "A directorial concept must be:",
+    "options": [
+      "Completely original, ignoring the script",
+      "A reading supported by the text and applied consistently",
+      "Based only on the design",
+      "Kept secret from the actors"
+    ],
+    "answer": "A reading supported by the text and applied consistently",
+    "explanation": "Concepts that contradict the text confuse the audience.",
+    "topic": "ta-l3-2"
+  },
+  {
+    "id": "p47",
+    "question": "A cue-to-cue technical rehearsal is held in order to:",
+    "options": [
+      "Run the whole play at performance pace",
+      "Work rapidly through the technical cues, skipping dialogue between them",
+      "Rehearse the actors' lines",
+      "Audition the cast"
+    ],
+    "answer": "Work rapidly through the technical cues, skipping dialogue between them",
+    "explanation": "It concentrates time on the complex sequences.",
+    "topic": "ta-l3-2"
+  },
+  {
+    "id": "p48",
+    "question": "Research into period, place and social conditions matters because:",
+    "options": [
+      "It impresses the audience",
+      "An audience believes a world that is accurately furnished",
+      "It fills the programme",
+      "It reduces the budget"
+    ],
+    "answer": "An audience believes a world that is accurately furnished",
+    "explanation": "Accuracy supports the acting and design.",
+    "topic": "ta-l3-2"
+  },
+  {
+    "id": "p49",
+    "question": "A first draft of a play is best regarded as:",
+    "options": [
+      "The finished text",
+      "Material to be rewritten after readings and cuts",
+      "A performance script",
+      "The programme note"
+    ],
+    "answer": "Material to be rewritten after readings and cuts",
+    "explanation": "Reading aloud with actors always changes the script.",
+    "topic": "ta-l3-3"
+  },
+  {
+    "id": "p50",
+    "question": "Devising means making theatre:",
+    "options": [
+      "From a published script only",
+      "Collaboratively without a pre-existing script, from a stimulus",
+      "By translating a film",
+      "From a novel"
+    ],
+    "answer": "Collaboratively without a pre-existing script, from a stimulus",
+    "explanation": "The stimulus may be an image, story, place or theme.",
+    "topic": "ta-l3-3"
+  },
+  {
+    "id": "p51",
+    "question": "In improvisation, 'accepting an offer' means:",
+    "options": [
+      "Agreeing to the other player's idea and building on it",
+      "Ignoring the other actor",
+      "Changing the subject",
+      "Breaking character"
+    ],
+    "answer": "Agreeing to the other player's idea and building on it",
+    "explanation": "Blocking offers kills the scene.",
+    "topic": "ta-l3-3"
+  },
+  {
+    "id": "p52",
+    "question": "Hot-seating is used in rehearsal to:",
+    "options": [
+      "Warm up the voice",
+      "Question a performer in character to deepen their understanding",
+      "Test the lighting",
+      "Set the blocking"
+    ],
+    "answer": "Question a performer in character to deepen their understanding",
+    "explanation": "Other performers or the director ask the questions.",
+    "topic": "ta-l3-3"
+  },
+  {
+    "id": "p53",
+    "question": "Derek Walcott contributed to Caribbean theatre mainly as:",
+    "options": [
+      "A lighting designer",
+      "A playwright and director whose plays brought Caribbean language and myth to the stage",
+      "A producer of pantomime only",
+      "A critic"
+    ],
+    "answer": "A playwright and director whose plays brought Caribbean language and myth to the stage",
+    "explanation": "Dream on Monkey Mountain and Ti-Jean and His Brothers are landmarks.",
+    "topic": "ta-l3-3"
+  },
+  {
+    "id": "p54",
+    "question": "Trevor Rhone is known for:",
+    "options": [
+      "Jamaican plays of social comedy satirising class and migration",
+      "Trinidadian dance works",
+      "Cuban opera",
+      "Carnival costume design"
+    ],
+    "answer": "Jamaican plays of social comedy satirising class and migration",
+    "explanation": "He also co-wrote the film The Harder They Come.",
+    "topic": "ta-l3-3"
+  },
+  {
+    "id": "p55",
+    "question": "In the elements of dance, locomotion means:",
+    "options": [
+      "Moving on the spot",
+      "Travelling movement such as walking, running and skipping",
+      "Stillness",
+      "Isolating a body part"
+    ],
+    "answer": "Travelling movement such as walking, running and skipping",
+    "explanation": "Non-locomotion stays in place, such as bending and twisting.",
+    "topic": "ta-l4-1"
+  },
+  {
+    "id": "p56",
+    "question": "The 'energy' element of dance describes:",
+    "options": [
+      "The speed of the music",
+      "Whether movement is strong or light, sustained or sudden, bound or free",
+      "The size of the stage",
+      "The number of dancers"
+    ],
+    "answer": "Whether movement is strong or light, sustained or sudden, bound or free",
+    "explanation": "It conveys emotion powerfully.",
+    "topic": "ta-l4-1"
+  },
+  {
+    "id": "p57",
+    "question": "Space in dance includes:",
+    "options": [
+      "Level, direction, pathway, size and shape",
+      "Only the stage size",
+      "Only the formation",
+      "Only the music"
+    ],
+    "answer": "Level, direction, pathway, size and shape",
+    "explanation": "Group shape and formations are also part of space.",
+    "topic": "ta-l4-1"
+  },
+  {
+    "id": "p58",
+    "question": "Syncopation in dance means:",
+    "options": [
+      "Moving on the beat only",
+      "Accenting or moving off the main beats",
+      "Moving in time",
+      "Counting in eights"
+    ],
+    "answer": "Accenting or moving off the main beats",
+    "explanation": "It gives movement its character and drive.",
+    "topic": "ta-l4-1"
+  },
+  {
+    "id": "p59",
+    "question": "Which is correct warm-up practice for dancers?",
+    "options": [
+      "Static stretching first, then mobilising",
+      "Mobilise joints and raise the heart rate, then dynamic stretching",
+      "Work at full intensity immediately",
+      "No warm-up if the rehearsal is short"
+    ],
+    "answer": "Mobilise joints and raise the heart rate, then dynamic stretching",
+    "explanation": "Cooling down after work also matters.",
+    "topic": "ta-l4-1"
+  },
+  {
+    "id": "p60",
+    "question": "Lifts and partner work require:",
+    "options": [
+      "Improvisation at full speed",
+      "Trained strength, agreed technique, spotting and rehearsal at reduced speed",
+      "One dancer only",
+      "No rehearsal"
+    ],
+    "answer": "Trained strength, agreed technique, spotting and rehearsal at reduced speed",
+    "explanation": "Partner work carries real injury risk.",
+    "topic": "ta-l4-1"
+  },
+  {
+    "id": "p61",
+    "question": "The quadrille is:",
+    "options": [
+      "A set dance performed in figures by couples to a caller",
+      "A carnival character dance",
+      "A Haitian ritual form",
+      "A contemporary dance technique"
+    ],
+    "answer": "A set dance performed in figures by couples to a caller",
+    "explanation": "European figure-dance inheritance transformed locally.",
+    "topic": "ta-l4-2"
+  },
+  {
+    "id": "p62",
+    "question": "Maypole dancing involves:",
+    "options": [
+      "Dancers weaving ribbons around a pole in patterns",
+      "Stilt walking",
+      "Masked characters",
+      "Sword fighting"
+    ],
+    "answer": "Dancers weaving ribbons around a pole in patterns",
+    "explanation": "It derives from spring and harvest celebrations.",
+    "topic": "ta-l4-2"
+  },
+  {
+    "id": "p63",
+    "question": "Jonkonnu characters include:",
+    "options": [
+      "Pierrot Grenade and Midnight Robber",
+      "Pitchy Patchy, the House and the Horse Head",
+      "Moko Jumbie only",
+      "Saci and Bélé"
+    ],
+    "answer": "Pitchy Patchy, the House and the Horse Head",
+    "explanation": "Each character has its own costume and dance.",
+    "topic": "ta-l4-2"
+  },
+  {
+    "id": "p64",
+    "question": "Bruckins is associated with:",
+    "options": [
+      "Christmas masquerade",
+      "The commemoration of emancipation, in stately processional costume",
+      "Hindu festival processions",
+      "Maypole weaving"
+    ],
+    "answer": "The commemoration of emancipation, in stately processional costume",
+    "explanation": "It is one of Jamaica's oldest post-emancipation forms.",
+    "topic": "ta-l4-2"
+  },
+  {
+    "id": "p65",
+    "question": "Moko Jumbie is a Caribbean carnival tradition of:",
+    "options": [
+      "Masked drumming",
+      "Stilt-walking figures",
+      "Ribbon weaving",
+      "Choral singing"
+    ],
+    "answer": "Stilt-walking figures",
+    "explanation": "The height gives the character authority and visibility.",
+    "topic": "ta-l4-2"
+  },
+  {
+    "id": "p66",
+    "question": "Adapting a sacred or communal dance form for the stage responsibly means:",
+    "options": [
+      "Using it freely without credit",
+      "Researching its origin and rules, working with its practitioners and crediting the source",
+      "Shortening it for time",
+      "Removing the music"
+    ],
+    "answer": "Researching its origin and rules, working with its practitioners and crediting the source",
+    "explanation": "Many forms are sacred or contested.",
+    "topic": "ta-l4-2"
+  },
+  {
+    "id": "p67",
+    "question": "A motif in choreography is:",
+    "options": [
+      "The final pose",
+      "A short memorable movement phrase used as the basis of development",
+      "The music's tempo",
+      "A formation"
+    ],
+    "answer": "A short memorable movement phrase used as the basis of development",
+    "explanation": "It is developed by varying one element at a time.",
+    "topic": "ta-l4-3"
+  },
+  {
+    "id": "p68",
+    "question": "A canon in dance is:",
+    "options": [
+      "All dancers moving in unison",
+      "A phrase performed by dancers entering one after another, overlapping",
+      "A solo",
+      "A lift"
+    ],
+    "answer": "A phrase performed by dancers entering one after another, overlapping",
+    "explanation": "It creates depth and texture.",
+    "topic": "ta-l4-3"
+  },
+  {
+    "id": "p69",
+    "question": "Unison movement means:",
+    "options": [
+      "Dancers performing different material",
+      "All dancers performing the same movement at the same time",
+      "Dancers moving in canon",
+      "Only one dancer moving"
+    ],
+    "answer": "All dancers performing the same movement at the same time",
+    "explanation": "It emphasises shape and power.",
+    "topic": "ta-l4-3"
+  },
+  {
+    "id": "p70",
+    "question": "Lighting designed for dance usually favours:",
+    "options": [
+      "Front light only",
+      "Side and back light to define shape and throw the body into relief",
+      "Complete darkness",
+      "A single colour wash"
+    ],
+    "answer": "Side and back light to define shape and throw the body into relief",
+    "explanation": "Front light alone flattens movement.",
+    "topic": "ta-l4-3"
+  },
+  {
+    "id": "p71",
+    "question": "Costume for dance must above all:",
+    "options": [
+      "Look good in the photographs",
+      "Allow the required movement and be safe",
+      "Be heavy",
+      "Match the set exactly"
+    ],
+    "answer": "Allow the required movement and be safe",
+    "explanation": "It must not slip, catch or shed.",
+    "topic": "ta-l4-3"
+  },
+  {
+    "id": "p72",
+    "question": "If a dance is not documented, it:",
+    "options": [
+      "Survives in the performers' memories only",
+      "Becomes public property",
+      "Is automatically copyrighted",
+      "Improves with time"
+    ],
+    "answer": "Survives in the performers' memories only",
+    "explanation": "Video and notation records preserve choreography.",
+    "topic": "ta-l4-3"
+  },
+  {
+    "id": "p73",
+    "question": "A ground plan shows:",
+    "options": [
+      "The vertical design of the set",
+      "The position of scenery and furniture from above, drawn to scale",
+      "The lighting positions only",
+      "The costumes"
+    ],
+    "answer": "The position of scenery and furniture from above, drawn to scale",
+    "explanation": "Elevations show the vertical design.",
+    "topic": "ta-l5-1"
+  },
+  {
+    "id": "p74",
+    "question": "A model box is used to:",
+    "options": [
+      "Store props",
+      "Show the set in scale, in three dimensions, open on the audience side",
+      "Measure the actors",
+      "Test the sound"
+    ],
+    "answer": "Show the set in scale, in three dimensions, open on the audience side",
+    "explanation": "It reveals volume, colour and proportion.",
+    "topic": "ta-l5-1"
+  },
+  {
+    "id": "p75",
+    "question": "Set dressing refers to:",
+    "options": [
+      "The actor's costume",
+      "The small items that make the space look inhabited",
+      "The lighting gel",
+      "The stage crew"
+    ],
+    "answer": "The small items that make the space look inhabited",
+    "explanation": "Hand props are used by the actors; furniture is the largest set dressing.",
+    "topic": "ta-l5-1"
+  },
+  {
+    "id": "p76",
+    "question": "A practical door in a set must:",
+    "options": [
+      "Be painted only on one side",
+      "Open and close reliably and quietly as the action requires",
+      "Be made of glass",
+      "Be bolted shut"
+    ],
+    "answer": "Open and close reliably and quietly as the action requires",
+    "explanation": "Practical scenery serves the action.",
+    "topic": "ta-l5-1"
+  },
+  {
+    "id": "p77",
+    "question": "Scenery is flatted and textured because:",
+    "options": [
+      "It is cheaper",
+      "Stage light flattens form and shifts colour, so scenery is painted to look right under stage light",
+      "It hides mistakes",
+      "It makes it heavier"
+    ],
+    "answer": "Stage light flattens form and shifts colour, so scenery is painted to look right under stage light",
+    "explanation": "Realistic paint under stage light can look wrong.",
+    "topic": "ta-l5-1"
+  },
+  {
+    "id": "p78",
+    "question": "Scenery must be weighted and secured so that:",
+    "options": [
+      "It is easier to paint",
+      "Nothing can topple onto a performer",
+      "It lasts longer",
+      "It can be flown"
+    ],
+    "answer": "Nothing can topple onto a performer",
+    "explanation": "Stability is a primary safety requirement.",
+    "topic": "ta-l5-1"
+  },
+  {
+    "id": "p79",
+    "question": "A costume plot lists:",
+    "options": [
+      "The fabric cost only",
+      "Every character and every costume change with its scene",
+      "The lighting cues",
+      "The props"
+    ],
+    "answer": "Every character and every costume change with its scene",
+    "explanation": "It reveals the quick changes that will fail.",
+    "topic": "ta-l5-2"
+  },
+  {
+    "id": "p80",
+    "question": "Which is a practical costume requirement?",
+    "options": [
+      "Restricting the actor's movement",
+      "Fitting, mobility, durability, laundering and safety",
+      "Being made of synthetic fabric near flame",
+      "Tripping hems for style"
+    ],
+    "answer": "Fitting, mobility, durability, laundering and safety",
+    "explanation": "Beauty that cannot be changed in ninety seconds wrecks the show.",
+    "topic": "ta-l5-2"
+  },
+  {
+    "id": "p81",
+    "question": "Straight make-up is used to:",
+    "options": [
+      "Age a character dramatically",
+      "Correct and enhance the face so it reads under stage light",
+      "Create wounds",
+      "Build prosthetics"
+    ],
+    "answer": "Correct and enhance the face so it reads under stage light",
+    "explanation": "Character make-up ages or alters the face.",
+    "topic": "ta-l5-2"
+  },
+  {
+    "id": "p82",
+    "question": "Which is correct hygiene practice in the make-up room?",
+    "options": [
+      "Sharing sponges between performers",
+      "Using separate applicators where possible and disinfecting shared items",
+      "Reusing a sponge without cleaning",
+      "Trying colours on three faces at once"
+    ],
+    "answer": "Using separate applicators where possible and disinfecting shared items",
+    "explanation": "Allergy tests and proper removal also matter.",
+    "topic": "ta-l5-2"
+  },
+  {
+    "id": "p83",
+    "question": "A masked performer must:",
+    "options": [
+      "Look with their own eyes at everything",
+      "Direct the mask's attention and carry meaning through the body",
+      "Speak more loudly",
+      "Remove the mask for soliloquies"
+    ],
+    "answer": "Direct the mask's attention and carry meaning through the body",
+    "explanation": "The mask is animated by movement.",
+    "topic": "ta-l5-2"
+  },
+  {
+    "id": "p84",
+    "question": "A neutral mask is used in training to:",
+    "options": [
+      "Hide the actor's identity permanently",
+      "Develop physical clarity, presence and economy of movement",
+      "Create a comic character",
+      "Replace make-up"
+    ],
+    "answer": "Develop physical clarity, presence and economy of movement",
+    "explanation": "It removes facial expression as a support.",
+    "topic": "ta-l5-2"
+  },
+  {
+    "id": "p85",
+    "question": "Which is a function of stage lighting?",
+    "options": [
+      "Reducing the ticket price",
+      "Visibility, focus, mood, style and composition",
+      "Punctuating the dialogue only",
+      "Heating the auditorium"
+    ],
+    "answer": "Visibility, focus, mood, style and composition",
+    "explanation": "Lighting shapes what and how the audience sees.",
+    "topic": "ta-l5-3"
+  },
+  {
+    "id": "p86",
+    "question": "A lighting plot is:",
+    "options": [
+      "The cue sheet",
+      "A plan showing the position of every instrument and its circuit",
+      "The gel list",
+      "The running order"
+    ],
+    "answer": "A plan showing the position of every instrument and its circuit",
+    "explanation": "Focus and cue sheets follow from it.",
+    "topic": "ta-l5-3"
+  },
+  {
+    "id": "p87",
+    "question": "A gobo in a profile spot is used to:",
+    "options": [
+      "Change the colour",
+      "Project a pattern or texture",
+      "Amplify sound",
+      "Raise the lantern"
+    ],
+    "answer": "Project a pattern or texture",
+    "explanation": "It creates effects such as windows, foliage or water.",
+    "topic": "ta-l5-3"
+  },
+  {
+    "id": "p88",
+    "question": "Sound reinforcement means:",
+    "options": [
+      "Adding recorded effects",
+      "Making voices and music audible in the space",
+      "Raising the volume for its own sake",
+      "Playing music during the interval"
+    ],
+    "answer": "Making voices and music audible in the space",
+    "explanation": "Levels must suit the venue and comfort of the audience.",
+    "topic": "ta-l5-3"
+  },
+  {
+    "id": "p89",
+    "question": "Stage cues are called using the standard sequence:",
+    "options": [
+      "Ready, set, action",
+      "Warning, standby, go",
+      "Cue, hold, cut",
+      "Start, stop, repeat"
+    ],
+    "answer": "Warning, standby, go",
+    "explanation": "Consistency makes cues reliable.",
+    "topic": "ta-l5-3"
+  },
+  {
+    "id": "p90",
+    "question": "After each performance the stage manager writes:",
+    "options": [
+      "A review",
+      "A performance report with timings, audience numbers and problems",
+      "A press release",
+      "A rehearsal schedule only"
+    ],
+    "answer": "A performance report with timings, audience numbers and problems",
+    "explanation": "The report is the record that improves the next show.",
+    "topic": "ta-l5-3"
+  },
+  {
+    "id": "p91",
+    "question": "Auditions are run in order to:",
+    "options": [
+      "Raise money",
+      "See and hear performers before casting",
+      "Rehearse the whole play",
+      "Design the set"
+    ],
+    "answer": "See and hear performers before casting",
+    "explanation": "Rights and the budget are settled in the same period.",
+    "topic": "ta-l6-1"
+  },
+  {
+    "id": "p92",
+    "question": "A read-through is held at the beginning of rehearsals so that:",
+    "options": [
+      "The company hears the play and the director presents the concept",
+      "The set can be built",
+      "Tickets can be sold",
+      "Costumes can be fitted"
+    ],
+    "answer": "The company hears the play and the director presents the concept",
+    "explanation": "It establishes the shared understanding.",
+    "topic": "ta-l6-1"
+  },
+  {
+    "id": "p93",
+    "question": "Props rehearsals matter because:",
+    "options": [
+      "Actors handling objects for the first time on the first night are slow and uncertain",
+      "They are required by law",
+      "They reduce rehearsal time",
+      "They replace costume fittings"
+    ],
+    "answer": "Actors handling objects for the first time on the first night are slow and uncertain",
+    "explanation": "Business must be rehearsed with the real object.",
+    "topic": "ta-l6-1"
+  },
+  {
+    "id": "p94",
+    "question": "A dress rehearsal should:",
+    "options": [
+      "Be stopped constantly for notes",
+      "Run at performance pace in full costume and technical state",
+      "Include no lighting",
+      "Be open to the public"
+    ],
+    "answer": "Run at performance pace in full costume and technical state",
+    "explanation": "It is the last chance to find the problems.",
+    "topic": "ta-l6-1"
+  },
+  {
+    "id": "p95",
+    "question": "A preview performance is given in order to:",
+    "options": [
+      "Earn extra money only",
+      "Learn from an audience's responses before the official opening",
+      "Test the tickets",
+      "Replace the dress rehearsal"
+    ],
+    "answer": "Learn from an audience's responses before the official opening",
+    "explanation": "Audience laughter and silences change the playing.",
+    "topic": "ta-l6-1"
+  },
+  {
+    "id": "p96",
+    "question": "Strike means:",
+    "options": [
+      "Cancelling the production",
+      "Dismantling the set and returning, cleaning and storing everything after the run",
+      "Refusing to perform",
+      "Starting the performance"
+    ],
+    "answer": "Dismantling the set and returning, cleaning and storing everything after the run",
+    "explanation": "It is followed by an evaluation meeting.",
+    "topic": "ta-l6-1"
+  },
+  {
+    "id": "p97",
+    "question": "Good appreciation of a performance begins with:",
+    "options": [
+      "Deciding whether you like it",
+      "Attending to the whole event and noticing what happens on stage and in the audience",
+      "Reading reviews first",
+      "Leaving at the interval"
+    ],
+    "answer": "Attending to the whole event and noticing what happens on stage and in the audience",
+    "explanation": "Judgement comes after attention.",
+    "topic": "ta-l6-2"
+  },
+  {
+    "id": "p98",
+    "question": "A review should include:",
+    "options": [
+      "Personal attacks on the performers",
+      "The play, playwright, company, venue and dates, with evidence and specific examples",
+      "Only the reviewer's feelings",
+      "A plot summary alone"
+    ],
+    "answer": "The play, playwright, company, venue and dates, with evidence and specific examples",
+    "explanation": "It is written for a reader who may not have seen the show.",
+    "topic": "ta-l6-2"
+  },
+  {
+    "id": "p99",
+    "question": "The audience affects a live performance by:",
+    "options": [
+      "Nothing at all",
+      "Laughter, silence, attention and restlessness that shape pace and energy",
+      "Determining the ticket price",
+      "Writing the script"
+    ],
+    "answer": "Laughter, silence, attention and restlessness that shape pace and energy",
+    "explanation": "Actors adjust to the responses they get.",
+    "topic": "ta-l6-2"
+  },
+  {
+    "id": "p100",
+    "question": "A talkback is:",
+    "options": [
+      "A technical rehearsal note",
+      "A discussion between the company and the audience after a performance",
+      "A cue",
+      "A review"
+    ],
+    "answer": "A discussion between the company and the audience after a performance",
+    "explanation": "It is a form of audience research.",
+    "topic": "ta-l6-2"
+  },
+  {
+    "id": "p101",
+    "question": "Which is correct theatre etiquette for an audience member?",
+    "options": [
+      "Filming the whole performance",
+      "Arriving late and talking through the overture",
+      "Silencing phones, arriving on time, not talking or filming during the performance",
+      "Eating loudly"
+    ],
+    "answer": "Silencing phones, arriving on time, not talking or filming during the performance",
+    "explanation": "In participatory forms, joining in when invited is correct.",
+    "topic": "ta-l6-2"
+  },
+  {
+    "id": "p102",
+    "question": "CARIFESTA is:",
+    "options": [
+      "A Caribbean festival of the arts bringing the region's performers together",
+      "A theatre training school",
+      "A funding agency only",
+      "A carnival band"
+    ],
+    "answer": "A Caribbean festival of the arts bringing the region's performers together",
+    "explanation": "It has been held in several Caribbean territories.",
+    "topic": "ta-l6-3"
+  },
+  {
+    "id": "p103",
+    "question": "Performance rights must be obtained before staging someone else's script because:",
+    "options": [
+      "The playwright's copyright requires permission and often a fee",
+      "It is only polite",
+      "The script will not work otherwise",
+      "It affects the cast size"
+    ],
+    "answer": "The playwright's copyright requires permission and often a fee",
+    "explanation": "Unauthorised performance infringes copyright.",
+    "topic": "ta-l6-3"
+  },
+  {
+    "id": "p104",
+    "question": "A freelance theatre practitioner should keep:",
+    "options": [
+      "Only their scripts",
+      "A curriculum vitae and portfolio of work, photographs, reviews and invoices",
+      "Nothing in writing",
+      "Only their costumes"
+    ],
+    "answer": "A curriculum vitae and portfolio of work, photographs, reviews and invoices",
+    "explanation": "Evidence and records support the next booking.",
+    "topic": "ta-l6-3"
+  },
+  {
+    "id": "p105",
+    "question": "Which control applies to smoke, fire, water, heights or weapons in a production?",
+    "options": [
+      "Rehearsing them without telling anyone",
+      "A written risk assessment, trained operators and specialist supervision",
+      "Improvisation on the night",
+      "Using them in the dress rehearsal only"
+    ],
+    "answer": "A written risk assessment, trained operators and specialist supervision",
+    "explanation": "Unusual effects require proper permission and control.",
+    "topic": "ta-l6-3"
+  },
+  {
+    "id": "p106",
+    "question": "A theatre company's policies on working with minors and on harassment exist because:",
+    "options": [
+      "Insurance requires paperwork",
+      "Every member of the company must be protected and treated with dignity",
+      "They raise ticket sales",
+      "Actors request them"
+    ],
+    "answer": "Every member of the company must be protected and treated with dignity",
+    "explanation": "A company cannot speak for a community while mistreating its members.",
+    "topic": "ta-l6-3"
+  }
+]
