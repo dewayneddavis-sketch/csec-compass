@@ -26,6 +26,12 @@ export default function TeacherLinksCard() {
   const [teacherEmail, setTeacherEmail] = useState("");
   const [studentEmails, setStudentEmails] = useState("");
 
+  // Bulk link: the owner pastes the school's roster instead of typing pairs.
+  // The text goes to the server as-is — the server owns CSV parsing and row
+  // validation, so the browser cannot invent a row the server did not check.
+  const [bulkCsv, setBulkCsv] = useState("");
+  const [bulkResult, setBulkResult] = useState(null);
+
   async function call(body) {
     const res = await fetch("/api/admin/grant-access", {
       method: "POST",
@@ -95,6 +101,25 @@ export default function TeacherLinksCard() {
 
   const teacherOptions = [...new Set([...allowedTeachers, ...(links || []).map((l) => l.teacher_email)])];
 
+  async function linkBulk() {
+    setBusy(true);
+    setMessage(null);
+    setError(null);
+    setBulkResult(null);
+    try {
+      const data = await call({ action: "teacher-link-bulk", csv: bulkCsv });
+      setBulkResult(data);
+      setMessage(data.message);
+      // The paste stays in the box on purpose: if a row needs fixing the owner
+      // can correct it in place instead of going back to the spreadsheet.
+      setReloadKey((k) => k + 1);
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setBusy(false);
+    }
+  }
+
   return (
     <div className="tlc-card">
       <h3 className="admin-section-title">Teacher progress dashboard — link students</h3>
@@ -162,6 +187,103 @@ export default function TeacherLinksCard() {
 
       {message && <div className="admin-msg admin-success">{message}</div>}
       {error && <div className="admin-msg admin-error">{error}</div>}
+
+      <div className="tlc-bulk">
+        <h4 className="tlc-bulk-title">Bulk link (CSV)</h4>
+        <p className="tlc-bulk-lead">
+          Linking a whole school one pair at a time is not workable, so paste the roster instead: two
+          columns — <strong>teacher_email, student_email</strong> — one pair per line. A copy straight
+          out of Excel or Google Sheets works (tabs), and so does a comma or semicolon file. A header
+          row is fine; extra columns (name, class) are ignored.
+        </p>
+        <pre className="tlc-bulk-sample">{`teacher_email,student_email
+ms.brown@school.edu,student1@school.edu
+ms.brown@school.edu,student2@school.edu`}</pre>
+        <label className="tlc-field">
+          <span>Paste the pairs</span>
+          <textarea
+            className="tlc-bulk-input"
+            rows={6}
+            value={bulkCsv}
+            spellCheck={false}
+            placeholder={"teacher_email,student_email\nms.brown@school.edu,student1@school.edu"}
+            onChange={(e) => setBulkCsv(e.target.value)}
+          />
+        </label>
+        <div className="tlc-actions">
+          <button
+            className="admin-btn grant-btn"
+            disabled={busy || !bulkCsv.trim()}
+            onClick={linkBulk}
+          >
+            {busy ? "Working…" : "Link all pairs"}
+          </button>
+        </div>
+
+        {bulkResult && (
+          <div className="tlc-bulk-result">
+            <p className="tlc-bulk-counts">
+              <strong className="tlc-ok">{bulkResult.linked} linked</strong>
+              <span> · {bulkResult.skipped} skipped</span>
+              <span className={bulkResult.invalid > 0 ? "tlc-bad" : undefined}>
+                {" "}
+                · {bulkResult.invalid} row{bulkResult.invalid === 1 ? "" : "s"} to fix
+              </span>
+              <span className="tlc-bulk-total"> (of {bulkResult.total} pasted rows)</span>
+            </p>
+
+            {bulkResult.invalidRows?.length > 0 && (
+              <details className="tlc-bulk-details" open>
+                <summary>Rows that were not linked ({bulkResult.invalidRows.length})</summary>
+                <ul>
+                  {bulkResult.invalidRows.map((r, i) => (
+                    <li key={i}>
+                      {r.line ? <span className="tlc-bulk-line">line {r.line}</span> : null}
+                      <code>{r.text}</code> — {r.reason}
+                    </li>
+                  ))}
+                </ul>
+                <p className="tlc-bulk-fix">Fix these in the box above and click Link all pairs again — the pairs that already linked are skipped, not duplicated.</p>
+              </details>
+            )}
+
+            {bulkResult.skippedRows?.length > 0 && (
+              <details className="tlc-bulk-details">
+                <summary>Skipped rows ({bulkResult.skippedRows.length})</summary>
+                <ul>
+                  {bulkResult.skippedRows.map((r, i) => (
+                    <li key={i}>
+                      <code>
+                        {r.teacher_email} → {r.student_email}
+                      </code>{" "}
+                      — {r.reason}
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            )}
+
+            {bulkResult.withoutAccount?.length > 0 && (
+              <p className="tlc-bulk-note">
+                Linked, but no account exists yet for: {bulkResult.withoutAccount.join(", ")} — their
+                progress appears once they sign up.
+              </p>
+            )}
+            {bulkResult.teachersNotInAllowlist?.length > 0 && (
+              <p className="tlc-warn">
+                ⚠ {bulkResult.teachersNotInAllowlist.join(", ")} is not in the <code>TEACHER_EMAILS</code>{" "}
+                secret yet, so the dashboard will still refuse them. The links are saved and start
+                working as soon as that email is added.
+              </p>
+            )}
+            {(bulkResult.warnings || []).map((w, i) => (
+              <p className="tlc-warn" key={i}>
+                {w}
+              </p>
+            ))}
+          </div>
+        )}
+      </div>
 
       {links && links.length > 0 && (
         <div className="tlc-table-wrap">

@@ -410,6 +410,207 @@ section("api/admin/grant-access.js — owner-only teacher links");
 }
 
 // =========================================================================
+section("api/admin/grant-access.js — bulk CSV teacher links");
+
+{
+  // A class that already has one link, and accounts for three students.
+  reset();
+  setTable("teacher_students", [
+    { id: "l1", teacher_email: TEACHER, student_email: STUDENT_A, created_at: "2026-09-17T00:00:00Z" },
+  ]);
+  state.users = [
+    { id: "student-1", email: STUDENT_A },
+    { id: "teacher-1", email: TEACHER },
+  ];
+
+  // --- the gate comes first ------------------------------------------------
+  state.user = { id: "student-1", email: STUDENT_A };
+  let res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-link-bulk", csv: `${TEACHER},${STUDENT_B}` } });
+  check("a non-owner cannot bulk-link (403)", res.statusCode === 403, `${res.statusCode}`);
+  check("the 403 names the owner requirement", /owner/i.test(res.body.error || ""), res.body.error);
+  check("no rows are written for a rejected caller", rows("teacher_students").length === 1, `${rows("teacher_students").length}`);
+
+  res = await call(adminHandler, { method: "POST", headers: {}, body: { action: "teacher-link-bulk", csv: `${TEACHER},${STUDENT_B}` } });
+  check("bulk-link without an auth header is a 401", res.statusCode === 401, `${res.statusCode}`);
+  check("no rows are written without a token", rows("teacher_students").length === 1);
+
+  // --- the happy path + every skip/invalid case in one paste ---------------
+  // A pasted spreadsheet: tab-separated, CRLF, header row, a duplicate row, an
+  // already-linked row, two malformed emails, a single-column row, a blank line.
+  state.user = { id: "owner-1", email: OWNER };
+  reset();
+  setTable("teacher_students", [
+    { id: "l1", teacher_email: TEACHER, student_email: STUDENT_A, created_at: "2026-09-17T00:00:00Z" },
+  ]);
+  state.users = [
+    { id: "student-1", email: STUDENT_A },
+    { id: "teacher-1", email: TEACHER },
+  ];
+  state.user = { id: "owner-1", email: OWNER };
+
+  const paste = [
+    "teacher_email\tstudent_email",
+    `${TEACHER}\t${STUDENT_A}`, // already linked → skipped
+    `${TEACHER}\tnew1@school.edu`, // linked
+    `${TEACHER}\tnew1@school.edu`, // duplicate in this paste → skipped
+    "NEW.TEACHER@School.edu\tnew2@School.edu", // linked, normalised to lower case
+    "not-an-email,new3@school.edu", // invalid teacher
+    "teacher2@school.edu,also bad", // invalid student
+    "", // blank line — ignored, not data
+    "onlyone@school.edu", // single column → invalid
+  ].join("\r\n");
+
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-link-bulk", csv: paste } });
+  check("the owner bulk-links a pasted spreadsheet (200)", res.statusCode === 200, `${res.statusCode} ${JSON.stringify(res.body).slice(0, 160)}`);
+  check("two new pairs are linked", res.body.linked === 2, `linked=${res.body.linked}`);
+  check("the already-linked row and the in-paste duplicate are skipped", res.body.skipped === 2, `skipped=${res.body.skipped}`);
+  check("malformed + unreadable rows are reported invalid, not fatal", res.body.invalid === 3, `invalid=${res.body.invalid}`);
+  check("the counts add up to the rows pasted (header and blank line excluded)", res.body.total === 7, `total=${res.body.total} ${JSON.stringify(res.body).slice(0, 120)}`);
+  check("linked + skipped + invalid === total", res.body.linked + res.body.skipped + res.body.invalid === res.body.total);
+  check("the skipped rows say why", (res.body.skippedRows || []).map((r) => r.reason).sort().join(" | ") === "already linked | duplicate row in this paste", JSON.stringify(res.body.skippedRows));
+  check("invalid rows carry their line number in the paste", (res.body.invalidRows || []).some((r) => r.line === 6 && /not a valid email/.test(r.reason)), JSON.stringify(res.body.invalidRows));
+  check("invalid rows name which column is wrong", (res.body.invalidRows || []).filter((r) => /student: not a valid email/.test(r.reason)).length === 1 && (res.body.invalidRows || []).filter((r) => /teacher: not a valid email/.test(r.reason)).length === 1, JSON.stringify(res.body.invalidRows));
+  check("the single-column row explains the expected shape", (res.body.invalidRows || []).some((r) => /two columns/.test(r.reason)), JSON.stringify(res.body.invalidRows));
+
+  const written = state.upserts.at(-1);
+  check("one write carries both new rows", written?.rows.length === 2, `${written?.rows.length}`);
+  check("rows are lower-cased and trimmed before writing", written?.rows.every((r) => r.teacher_email === r.teacher_email.toLowerCase() && r.student_email === r.student_email.toLowerCase()), JSON.stringify(written?.rows));
+  check("the write keys on the (teacher,student) unique pair", written?.conflict === "teacher_email,student_email", written?.conflict);
+  check("the write lets an existing row win (ignoreDuplicates)", written?.ignoreDuplicates === true, `${written?.ignoreDuplicates}`);
+  check("only the two new pairs are written, never the skipped ones", !JSON.stringify(written?.rows).includes(STUDENT_A), JSON.stringify(written?.rows));
+  check("the links exist once each in the store", rows("teacher_students").length === 3, `${rows("teacher_students").length}`);
+  check("the new teacher link is stored", rows("teacher_students").some((r) => r.teacher_email === "new.teacher@school.edu" && r.student_email === "new2@school.edu"));
+  check("the response lists the created pairs", (res.body.linkedPairs || []).length === 2);
+  check("students with no account yet are named", (res.body.withoutAccount || []).sort().join(",") === "new1@school.edu,new2@school.edu", JSON.stringify(res.body.withoutAccount));
+  check("a linked student who already has an account is not flagged", !(res.body.withoutAccount || []).includes(STUDENT_A));
+  check("a teacher outside TEACHER_EMAILS is flagged, the links still stand", (res.body.teachersNotInAllowlist || []).join(",") === "new.teacher@school.edu", JSON.stringify(res.body.teachersNotInAllowlist));
+
+  // --- a header with extra columns picks the right two ---------------------
+  reset();
+  setTable("teacher_students", []);
+  state.users = [{ id: "student-1", email: STUDENT_A }];
+  state.user = { id: "owner-1", email: OWNER };
+  res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: {
+      action: "teacher-link-bulk",
+      csv: [
+        "student_name,teacher_email,student_email,class", // student email is NOT column 2
+        "Aaliyah Brown,ms.brown@school.edu,aaliyah@school.edu,5A",
+      ].join("\n"),
+    },
+  });
+  check("a header row maps the columns by name", res.statusCode === 200 && res.body.linked === 1, `${res.statusCode}/${res.body.linked}`);
+  check("the header columns are honoured, not the position", JSON.stringify(state.upserts.at(-1)?.rows) === JSON.stringify([{ teacher_email: "ms.brown@school.edu", student_email: "aaliyah@school.edu" }]), JSON.stringify(state.upserts.at(-1)?.rows));
+
+  // --- semicolons, quotes, CRLF-only, and no header ------------------------
+  reset();
+  setTable("teacher_students", []);
+  state.users = [];
+  state.user = { id: "owner-1", email: OWNER };
+  res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: { action: "teacher-link-bulk", csv: `"${TEACHER}";"${STUDENT_B}"` },
+  });
+  check("a semicolon paste with quoted cells links", res.statusCode === 200 && res.body.linked === 1, `${res.statusCode}/${JSON.stringify(res.body).slice(0, 120)}`);
+  check("quotes are stripped from the cells", state.upserts.at(-1)?.rows[0].student_email === STUDENT_B, JSON.stringify(state.upserts.at(-1)?.rows));
+
+  // --- duplicates across the whole paste, and a self-link ------------------
+  reset();
+  setTable("teacher_students", []);
+  state.users = [];
+  state.user = { id: "owner-1", email: OWNER };
+  res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: {
+      action: "teacher-link-bulk",
+      csv: [`${TEACHER},${STUDENT_A}`, `${TEACHER},${STUDENT_A}`, `${TEACHER},${TEACHER}`].join("\n"),
+    },
+  });
+  check("the same pair pasted three ways links once", res.body.linked === 1, `linked=${res.body.linked}`);
+  check("the repeat is a skip, not a second link", res.body.skipped === 1 && rows("teacher_students").length === 1, `skipped=${res.body.skipped}/${rows("teacher_students").length}`);
+  check("linking a teacher to themselves is rejected as invalid", res.body.invalid === 1 && /same email/.test(res.body.invalidRows[0].reason), JSON.stringify(res.body.invalidRows));
+
+  // --- the pairs array shape (no paste box needed) -------------------------
+  reset();
+  setTable("teacher_students", []);
+  state.users = [];
+  state.user = { id: "owner-1", email: OWNER };
+  res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: { action: "teacher-link-bulk", pairs: [{ teacher_email: " T1@School.edu ", student_email: "S1@School.edu" }, ["t1@school.edu", "s2@school.edu"]] },
+  });
+  check("the pairs array shape works too", res.statusCode === 200 && res.body.linked === 2, `${res.statusCode}/${res.body.linked}`);
+  check("pairs array emails are normalised", rows("teacher_students").every((r) => r.teacher_email === "t1@school.edu"), JSON.stringify(rows("teacher_students")));
+
+  // --- empty / missing / oversized input ----------------------------------
+  state.user = { id: "owner-1", email: OWNER };
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-link-bulk", csv: "   \n  \n" } });
+  check("an empty paste is a 400", res.statusCode === 400, `${res.statusCode}`);
+  check("the 400 shows the expected format", /teacher@school\.edu/.test(res.body.error || ""), res.body.error);
+
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-link-bulk" } });
+  check("neither csv nor pairs is a 400", res.statusCode === 400, `${res.statusCode}`);
+
+  const before = rows("teacher_students").length;
+  res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: { action: "teacher-link-bulk", csv: "t@school.edu,s@school.edu\n".repeat(1001) },
+  });
+  check("an oversized paste is a 400 (no partial write)", res.statusCode === 400 && rows("teacher_students").length === before, `${res.statusCode}/${rows("teacher_students").length}`);
+  check("the 400 tells the owner to split the list", /split/i.test(res.body.error || ""), res.body.error);
+
+  // --- failures fail closed ------------------------------------------------
+  reset();
+  setTable("teacher_students", []);
+  state.users = [];
+  state.user = { id: "owner-1", email: OWNER };
+  state.selectErrors.teacher_students = { message: 'relation "public.teacher_students" does not exist' };
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-link-bulk", csv: `${TEACHER},${STUDENT_A}` } });
+  check("a missing teacher_students table fails closed (500)", res.statusCode === 500, `${res.statusCode}`);
+  check("that error names the schema fix", /schema\.sql/.test(res.body.error || ""), res.body.error);
+  check("nothing is written when the lookup fails", state.upserts.length === 0, `${state.upserts.length}`);
+
+  reset();
+  setTable("teacher_students", []);
+  state.users = [];
+  state.user = { id: "owner-1", email: OWNER };
+  state.writeErrors.teacher_students = { message: "connection reset" };
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-link-bulk", csv: `${TEACHER},${STUDENT_A}` } });
+  check("a failed write is reported, not swallowed", res.statusCode === 500, `${res.statusCode}`);
+
+  // The informational account lookup must never sink a batch that linked.
+  reset();
+  setTable("teacher_students", []);
+  state.users = [];
+  state.listUsersError = { message: "auth admin unavailable" };
+  state.user = { id: "owner-1", email: OWNER };
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-link-bulk", csv: `${TEACHER},${STUDENT_A}` } });
+  check("an unavailable account list still links and warns", res.statusCode === 200 && res.body.linked === 1 && (res.body.warnings || []).length === 1, `${res.statusCode}/${JSON.stringify(res.body).slice(0, 140)}`);
+  check("the warning says which students are known to have signed up is unknown", /signed up/i.test(res.body.warnings?.[0] || ""), res.body.warnings?.[0]);
+  state.listUsersError = null;
+
+  // --- the new action must not disturb the older ones ----------------------
+  seedClass();
+  state.user = { id: "owner-1", email: OWNER };
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-links" } });
+  check("teacher-links (the list) still works after bulk linking", res.statusCode === 200 && res.body.count === 3, `${res.statusCode}/${res.body.count}`);
+  res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: { action: "teacher-link", teacherEmail: TEACHER, emails: [STUDENT_B] },
+  });
+  check("the single-pair link still works after bulk linking", res.statusCode === 200, `${res.statusCode}`);
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "nonsense" } });
+  check("an unknown action is still a 400", res.statusCode === 400, `${res.statusCode}`);
+}
+
+// =========================================================================
 section("src/data/labActivity.js — client tracking");
 
 {
@@ -466,6 +667,7 @@ const dragDrop = readFileSync(join(root, "src/components/DragDropLabel.jsx"), "u
 const app = readFileSync(join(root, "src/App.jsx"), "utf8");
 const adminPage = readFileSync(join(root, "src/pages/AdminPage.jsx"), "utf8");
 const teacherPage = readFileSync(join(root, "src/pages/TeacherPage.jsx"), "utf8");
+const linksCard = readFileSync(join(root, "src/components/TeacherLinksCard.jsx"), "utf8");
 const schema = readFileSync(join(root, "supabase/schema.sql"), "utf8");
 
 check(/recordLabOpen/.test(sandbox) && /subjectId && !lessonId/.test(sandbox), "the sandbox records a lab open per lesson");
@@ -474,6 +676,11 @@ check(/reportedRef/.test(dragDrop), "completion is reported once per solve, not 
 check(!/onComplete/.test(sandbox) || true, "the sandbox does not fake a completion signal");
 check(/import TeacherPage/.test(app) && /path="\/teacher"/.test(app), "the /teacher route is registered");
 check(/TeacherLinksCard/.test(adminPage), "the admin screen renders the owner-only linking card");
+check(/teacher-link-bulk/.test(linksCard), "the linking card posts the bulk action");
+check(/Bulk link \(CSV\)/.test(linksCard) && /<textarea/.test(linksCard), "the card has a paste box for a whole roster");
+check(/bulkResult\.linked/.test(linksCard) && /bulkResult\.invalid/.test(linksCard), "the card shows the linked/skipped/invalid counts");
+check(/bulkResult\.invalidRows/.test(linksCard) && /bulkResult\.skippedRows/.test(linksCard), "the card gives a per-row summary of what needs fixing");
+check(/setBulkCsv\(e\.target\.value\)/.test(linksCard), "the paste box is controlled by state (the paste is not lost)");
 check(/Forbidden: teacher access required|not a teacher account/.test(teacherPage), "the page has an explicit not-a-teacher state");
 check(/scope=class/.test(teacherPage), "the page reads the class scope endpoint");
 check(/create table if not exists public\.lab_activity/.test(schema), "schema creates lab_activity");

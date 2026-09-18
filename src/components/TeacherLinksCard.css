@@ -113,3 +113,119 @@
   color: #64748b;
   white-space: nowrap;
 }
+
+/* Bulk link (CSV paste) ---------------------------------------------------- */
+
+.tlc-bulk {
+  margin-top: 1.1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed #cbd5e1;
+}
+
+.tlc-bulk-title {
+  margin: 0 0 0.4rem;
+  font-size: 0.95rem;
+  color: #0f172a;
+}
+
+.tlc-bulk-lead {
+  margin: 0 0 0.6rem;
+  color: #475569;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.tlc-bulk-sample {
+  margin: 0 0 0.75rem;
+  padding: 0.55rem 0.7rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  color: #334155;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  overflow-x: auto;
+}
+
+.tlc-bulk-input {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  white-space: pre;
+  overflow-wrap: normal;
+  overflow-x: auto;
+}
+
+.tlc-bulk-result {
+  margin-top: 0.75rem;
+}
+
+.tlc-bulk-counts {
+  margin: 0 0 0.5rem;
+  padding: 0.5rem 0.7rem;
+  background: #f8fafc;
+  border-left: 4px solid #0f766e;
+  border-radius: 0 6px 6px 0;
+  color: #334155;
+  font-size: 0.92rem;
+}
+
+.tlc-bulk-counts .tlc-ok {
+  color: #115e59;
+}
+
+.tlc-bulk-counts .tlc-bad {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.tlc-bulk-total {
+  color: #64748b;
+  font-size: 0.86rem;
+}
+
+.tlc-bulk-details {
+  margin: 0 0 0.6rem;
+  padding: 0.5rem 0.7rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.88rem;
+}
+
+.tlc-bulk-details summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #334155;
+}
+
+.tlc-bulk-details ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.tlc-bulk-details code {
+  color: #0f172a;
+  word-break: break-all;
+}
+
+.tlc-bulk-line {
+  display: inline-block;
+  margin-right: 0.35rem;
+  padding: 0 0.35rem;
+  background: #fef3c7;
+  border-radius: 4px;
+  color: #92400e;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.tlc-bulk-fix,
+.tlc-bulk-note {
+  margin: 0.5rem 0 0;
+  color: #475569;
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
