@@ -17,7 +17,15 @@ function getSupabaseAdmin() {
   });
 }
 
-// Hardcoded subject preview for anonymous users
+// Hardcoded subject preview for anonymous users.
+//
+// NOTE (2026-09-18): nothing in the app calls this endpoint today — the real
+// catalog is content/subjects.json, read by src/data/contentLoader.js (the home
+// page, planner and pricing all go through that). This list is therefore
+// stale-by-design and must NOT be treated as the source of truth. It is kept
+// working (and gains new subjects as they ship) so that if anything is ever
+// pointed at it, it describes subjects that really exist — but the catalog is
+// what decides what a student can see and buy.
 const previewSubjects = [
   { id: "mathematics", name: "Mathematics", description: "Master CSEC Mathematics with interactive lessons.", icon: "📐", color: "#2563eb" },
   { id: "english-a", name: "English A", description: "Excel in CSEC English A with comprehension and grammar.", icon: "📝", color: "#7c3aed" },
@@ -32,6 +40,7 @@ const previewSubjects = [
   { id: "geography", name: "Geography", description: "Physical and human geography, map reading.", icon: "🗺️", color: "#65a30d" },
   { id: "human-social-biology", name: "Human & Social Biology", description: "Body systems, health, nutrition, and disease.", icon: "🫀", color: "#e11d48" },
   { id: "spanish", name: "Spanish", description: "Vocabulary, grammar, reading, and oral communication.", icon: "🇪🇸", color: "#c2410c" },
+  { id: "french", name: "French", description: "Vocabulary, grammar, reading, and oral communication.", icon: "🇫🇷", color: "#4338ca" },
 ];
 
 export default async function handler(req, res) {
