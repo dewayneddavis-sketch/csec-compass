@@ -1,8 +1,18 @@
 import { useState, useEffect } from "react";
 import { useAuth } from "../context/AuthContext";
 import { recordQuizResult } from "../data/analytics";
+import {
+  showYourWorkEnabled,
+  isWorkingComplete,
+  loadWorkingDrafts,
+  saveWorkingDrafts,
+  clearWorkingDrafts,
+} from "../data/showYourWork";
+import ShowYourWork from "./ShowYourWork";
 import WeakTopicsPanel from "./WeakTopicsPanel";
 import "./ExtraPractice.css";
+
+const QUIZ_TYPE = "practice";
 
 export default function ExtraPractice({ subjectId }) {
   const [exercises, setExercises] = useState(null);
@@ -13,7 +23,9 @@ export default function ExtraPractice({ subjectId }) {
   const [started, setStarted] = useState(false);
   const [showResult, setShowResult] = useState(false);
   const [latestAttemptId, setLatestAttemptId] = useState(null);
+  const [working, setWorking] = useState({});
   const { session } = useAuth();
+  const showWork = showYourWorkEnabled(subjectId, QUIZ_TYPE);
 
   useEffect(() => {
     setLoading(true);
@@ -23,6 +35,7 @@ export default function ExtraPractice({ subjectId }) {
     setAnswers({});
     setStarted(false);
     setShowResult(false);
+    setWorking(showYourWorkEnabled(subjectId, QUIZ_TYPE) ? loadWorkingDrafts(subjectId, QUIZ_TYPE) : {});
 
     fetch(`/content/${subjectId}/practice.json`)
       .then((res) => {
@@ -73,11 +86,26 @@ export default function ExtraPractice({ subjectId }) {
   const answeredCount = Object.keys(answers).length;
   const allAnswered = answeredCount === total;
 
+  // Show-Your-Work: working must be typed before the answer is banked/moved on.
+  // Extra Practice moves forwards only, so the gate is per question rather than
+  // over the whole attempt (a whole-attempt gate could strand a student on the
+  // last question with no way back to an earlier one).
+  const currentWorking = working[current] || "";
+  const workingOk = !showWork || isWorkingComplete(currentWorking);
+
   const correctCount = showResult
     ? exercises.reduce((acc, ex, i) => acc + (answers[i] === ex.answer ? 1 : 0), 0)
     : 0;
   const scorePct = Math.round((correctCount / total) * 100);
   const passed = scorePct >= 60;
+
+  function handleWorking(value) {
+    setWorking((prev) => {
+      const next = { ...prev, [current]: value };
+      saveWorkingDrafts(subjectId, QUIZ_TYPE, next);
+      return next;
+    });
+  }
 
   function handleSelect(value) {
     if (answers[current] !== undefined) return; // already answered
@@ -85,6 +113,7 @@ export default function ExtraPractice({ subjectId }) {
   }
 
   function handleNext() {
+    if (!workingOk) return; // show your work first
     // Save answer and move on
     setAnswers((prev) => ({ ...prev, [current]: chosen }));
     setSelected(null);
@@ -104,15 +133,17 @@ export default function ExtraPractice({ subjectId }) {
     }
     const attempt = await recordQuizResult({
       subjectId,
-      quizType: "practice",
+      quizType: QUIZ_TYPE,
       questions: exercises,
       answers: finalAnswers,
+      working,
       session,
     });
     setLatestAttemptId(attempt?.attemptId || null);
   }
 
   function handleShowResult() {
+    if (!workingOk) return; // show your work first
     setAnswers((prev) => ({ ...prev, [current]: chosen }));
     setShowResult(true);
     recordAttempt(chosen);
@@ -122,9 +153,11 @@ export default function ExtraPractice({ subjectId }) {
     setCurrent(0);
     setSelected(null);
     setAnswers({});
+    setWorking({});
     setStarted(false);
     setShowResult(false);
     setLatestAttemptId(null);
+    clearWorkingDrafts(subjectId, QUIZ_TYPE);
   }
 
   // Start screen
@@ -135,6 +168,12 @@ export default function ExtraPractice({ subjectId }) {
           <div className="ep-icon-large">📝</div>
           <h3>Practice: {subjectId.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}</h3>
           <p>Test your skills with {total} practice questions. Get{" "}<strong>immediate feedback</strong>{" "}on each answer.</p>
+          {showWork && (
+            <p className="ep-syw-notice">
+              ✍️ <strong>Show your work:</strong> every question has a working box below the answer
+              choices. Type the steps you used, then move on — your working is saved with the attempt.
+            </p>
+          )}
           <p className="ep-note">You need 60% to pass. Retry as many times as you like!</p>
           <button className="ep-btn ep-btn-primary" onClick={() => setStarted(true)}>Start Practice</button>
         </div>
@@ -174,6 +213,14 @@ export default function ExtraPractice({ subjectId }) {
                       delete next[i];
                       return next;
                     });
+                    // Clear that question's working too, so it is re-done rather
+                    // than carried over from the previous attempt.
+                    setWorking((prev) => {
+                      const next = { ...prev };
+                      delete next[i];
+                      saveWorkingDrafts(subjectId, QUIZ_TYPE, next);
+                      return next;
+                    });
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}
                   title={`Question ${i + 1}`}
@@ -195,6 +242,12 @@ export default function ExtraPractice({ subjectId }) {
                       Your answer: <strong>{answers[i] || "—"}</strong>
                       {!isRight && <> — Correct: <strong>{ex.answer}</strong></>}
                     </p>
+                    {showWork && working[i] && String(working[i]).trim() !== "" && (
+                      <div className="ep-review-working">
+                        <span className="ep-review-working-label">Your working</span>
+                        {working[i]}
+                      </div>
+                    )}
                     {ex.explanation && <p className="ep-review-explain">{ex.explanation}</p>}
                   </div>
                 );
@@ -256,12 +309,27 @@ export default function ExtraPractice({ subjectId }) {
           </div>
         )}
 
+        <ShowYourWork
+          subjectId={subjectId}
+          quizType={QUIZ_TYPE}
+          questionNumber={current + 1}
+          value={currentWorking}
+          onChange={handleWorking}
+          disabled={isAnswered}
+        />
+
+        {showWork && isAnswered && !workingOk && (
+          <p className="ep-syw-progress">
+            Type your working in the box above to continue.
+          </p>
+        )}
+
         <div className="ep-nav">
           {isAnswered && current < total - 1 && (
-            <button className="ep-btn ep-btn-primary" onClick={handleNext}>Next →</button>
+            <button className="ep-btn ep-btn-primary" onClick={handleNext} disabled={!workingOk}>Next →</button>
           )}
           {isAnswered && current === total - 1 && (
-            <button className="ep-btn ep-btn-success" onClick={handleShowResult}>
+            <button className="ep-btn ep-btn-success" onClick={handleShowResult} disabled={!workingOk}>
               {allAnswered ? "View Results" : "Finish & View Results"}
             </button>
           )}

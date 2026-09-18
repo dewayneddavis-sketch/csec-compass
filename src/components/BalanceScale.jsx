@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { solveBalanceMethod } from "../data/mathWorking";
+import MathWorkingReveal from "./MathWorkingReveal";
 
 const mathWeights = [1, 2, 3, 5, "x"];
 const poaItems = [
@@ -24,6 +26,8 @@ export default function BalanceScale({ subjectId, experimentType }) {
   const [message, setMessage] = useState("");
   const [xValue, setXValue] = useState(null);
   const [dragging, setDragging] = useState(null);
+  // Worked method for the equation on the pans: { answer, steps, tone }.
+  const [method, setMethod] = useState(null);
 
   useEffect(() => {
     if (subjectId === "principles-of-accounts") setMode("poa");
@@ -32,10 +36,13 @@ export default function BalanceScale({ subjectId, experimentType }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [subjectId, experimentType]);
 
-  function addLeft(item) { setLeftSide((p) => [...p, item]); setMessage(""); }
-  function addRight(item) { setRightSide((p) => [...p, item]); setMessage(""); }
-  function removeLeft(i) { setLeftSide((p) => p.filter((_, idx) => idx !== i)); }
-  function removeRight(i) { setRightSide((p) => p.filter((_, idx) => idx !== i)); }
+  // Any change to the pans makes a shown solution stale.
+  function clearMethod() { setMethod(null); }
+
+  function addLeft(item) { setLeftSide((p) => [...p, item]); setMessage(""); clearMethod(); }
+  function addRight(item) { setRightSide((p) => [...p, item]); setMessage(""); clearMethod(); }
+  function removeLeft(i) { setLeftSide((p) => p.filter((_, idx) => idx !== i)); clearMethod(); }
+  function removeRight(i) { setRightSide((p) => p.filter((_, idx) => idx !== i)); clearMethod(); }
 
   // Drag handlers
   function handleDragStart(e, item, side) {
@@ -60,6 +67,7 @@ export default function BalanceScale({ subjectId, experimentType }) {
       }
     } catch {}
     setDragging(null);
+    clearMethod();
   }
 
   function handleDragOver(e) { e.preventDefault(); }
@@ -72,10 +80,26 @@ export default function BalanceScale({ subjectId, experimentType }) {
       const rightX = rightSide.filter((item) => item === "x").length;
       const netX = leftX - rightX;
       const netVal = rightVal - leftVal;
-      if (netX === 0 && netVal === 0) { setXValue(0); setMessage("Balanced! Both sides are equal."); return; }
-      if (netX === 0) { setMessage(`Not balanced. Left: ${leftVal}, Right: ${rightVal}. Diff: ${Math.abs(netVal)}`); setXValue(null); return; }
+      // The worked method is computed from the student's OWN pans, so it always
+      // matches what they built. It shows whether the check passed or failed —
+      // on a failed check it is the whole point: the correct answer plus the
+      // step-by-step maths.
+      const solved = solveBalanceMethod(leftSide, rightSide);
+      if (netX === 0 && netVal === 0) {
+        setXValue(0);
+        setMessage("Balanced! Both sides are equal.");
+        setMethod({ ...solved, tone: "info" });
+        return;
+      }
+      if (netX === 0) {
+        setMessage(`Not balanced. Left: ${leftVal}, Right: ${rightVal}. Diff: ${Math.abs(netVal)}`);
+        setXValue(null);
+        setMethod({ ...solved, tone: "wrong" });
+        return;
+      }
       setXValue(netVal / netX);
       setMessage(`Equation: ${netX}x = ${netVal}  =>  x = ${(netVal / netX).toFixed(1)}`);
+      setMethod({ ...solved, tone: "info" });
     } else {
       // POA mode: check accounting equation
       const leftAssets = leftSide.filter((i) => i.category === "asset").reduce((s) => s + 1, 0);
@@ -88,8 +112,13 @@ export default function BalanceScale({ subjectId, experimentType }) {
     }
   }
 
+  // "Show the method" — ask for the working instead of (or before) checking.
+  function handleShowMethod() {
+    setMethod({ ...solveBalanceMethod(leftSide, rightSide), tone: "info" });
+  }
+
   function handleReset() {
-    setLeftSide([]); setRightSide([]); setXValue(null); setMessage("");
+    setLeftSide([]); setRightSide([]); setXValue(null); setMessage(""); setMethod(null);
   }
 
   const leftTotal = mode === "math"
@@ -180,8 +209,20 @@ export default function BalanceScale({ subjectId, experimentType }) {
       <button className="bs-btn bs-btn-check" onClick={handleCheckBalance}>
         {mode === "math" ? "Check Balance" : "Verify Equation"}
       </button>
+      {mode === "math" && (
+        <button className="mwr-toggle" onClick={handleShowMethod}>📘 Show the method</button>
+      )}
 
       {message && <div className={`bs-message ${message.startsWith("Balanced") || message.startsWith("Equation") || message.startsWith("Assets") ? "success" : "error"}`}>{message}</div>}
+
+      {mode === "math" && method && (
+        <MathWorkingReveal
+          tone={method.tone}
+          title={method.tone === "wrong" ? "Not balanced — here's the working" : "The working for this equation"}
+          answer={method.answer !== null ? `x = ${Number.isInteger(method.answer) ? method.answer : Math.round(method.answer * 100) / 100}` : null}
+          steps={method.steps}
+        />
+      )}
     </div>
   );
 }

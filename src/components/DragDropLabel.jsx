@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { lessonSets } from "./lessonSets";
+import { getLabWorking } from "../data/mathWorking";
+import MathWorkingReveal from "./MathWorkingReveal";
 
 // ---- Subject-aware content sets ------------------------------------------
 // Every set's CONTENT belongs to its own subject. `kind: "diagram"` keeps the
@@ -705,6 +707,8 @@ export default function DragDropLabel({ subjectId, experimentType, lessonId }) {
     set.kind === "diagram" ? set.labels : (set.kind === "match" ? set.pairs : set.items)
   ))[0];
   const [feedback, setFeedback] = useState("");
+  // Wrong-answer reveal: the correct answer + step-by-step maths (Mathematics).
+  const [reveal, setReveal] = useState(null);
 
   function handleDragStart(e, itemId) {
     setDragging(itemId);
@@ -723,6 +727,21 @@ export default function DragDropLabel({ subjectId, experimentType, lessonId }) {
     }
     const pair = set.pairs.find((p) => p.id === itemId);
     return pair && pair.id === zoneId;
+  }
+
+  // The answer this item should have gone to, read straight from the set so the
+  // reveal can never disagree with the activity itself.
+  function correctAnswerFor(itemId) {
+    if (set.kind === "match") return set.pairs.find((p) => p.id === itemId)?.target || null;
+    if (set.kind === "sort") {
+      const item = set.items.find((i) => i.id === itemId);
+      return set.categories.find((c) => c.id === item?.category)?.label || null;
+    }
+    if (set.kind === "order") {
+      const item = set.items.find((i) => i.id === itemId);
+      return item ? `${ord(item.order)} position` : null;
+    }
+    return null;
   }
 
   function displayLabel(itemId) {
@@ -749,8 +768,18 @@ export default function DragDropLabel({ subjectId, experimentType, lessonId }) {
       });
       setDragging(null);
       setFeedback(`✅ Correct! "${displayLabel(itemId)}" is right!`);
+      setReveal(null);
     } else {
       setFeedback(`❌ Not quite. "${displayLabel(itemId)}" doesn't go there. Try again!`);
+      // Mathematics labs teach on a wrong answer: reveal the correct answer and
+      // the step-by-step maths. Other subjects get the feedback line only.
+      const steps = getLabWorking(subjectId, experimentType, itemId);
+      const answer = correctAnswerFor(itemId);
+      setReveal(
+        steps && answer
+          ? { label: displayLabel(itemId), answer, steps }
+          : null
+      );
     }
   }
 
@@ -762,6 +791,7 @@ export default function DragDropLabel({ subjectId, experimentType, lessonId }) {
     setPlaced({});
     setDragging(null);
     setFeedback("");
+    setReveal(null);
   }
 
   const totalItems = set.kind === "sort"
@@ -784,6 +814,14 @@ export default function DragDropLabel({ subjectId, experimentType, lessonId }) {
 
   const feedbackEl = feedback && (
     <div className={`dd-feedback ${feedback.startsWith("✅") ? "correct" : "incorrect"}`}>{feedback}</div>
+  );
+
+  const revealEl = reveal && (
+    <MathWorkingReveal
+      title={`Not quite — here's the working for "${reveal.label}"`}
+      answer={reveal.answer}
+      steps={reveal.steps}
+    />
   );
 
   const actionsEl = (
@@ -855,6 +893,7 @@ export default function DragDropLabel({ subjectId, experimentType, lessonId }) {
           </div>
         </div>
         {feedbackEl}
+        {revealEl}
         {actionsEl}
       </div>
     );
@@ -920,6 +959,7 @@ export default function DragDropLabel({ subjectId, experimentType, lessonId }) {
         </div>
       </div>
       {feedbackEl}
+      {revealEl}
       {actionsEl}
     </div>
   );
