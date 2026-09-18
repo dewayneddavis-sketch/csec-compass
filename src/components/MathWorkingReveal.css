@@ -1,0 +1,83 @@
+/* MathWorkingReveal — correct answer + step-by-step working, shown by the
+   Mathematics labs when a student answers wrong. */
+
+.mwr {
+  margin: 0.75rem 0 0.25rem;
+  padding: 0.85rem 1rem;
+  border: 2px solid #fca5a5;
+  border-left: 6px solid #dc2626;
+  border-radius: 10px;
+  background: #fff7f7;
+}
+
+.mwr-info {
+  border-color: #93c5fd;
+  border-left-color: #2563eb;
+  background: #f8fbff;
+}
+
+.mwr-head {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #991b1b;
+  margin-bottom: 0.4rem;
+}
+
+.mwr-info .mwr-head {
+  color: #1e3a8a;
+}
+
+.mwr-icon {
+  margin-right: 0.3rem;
+}
+
+.mwr-answer {
+  margin: 0 0 0.55rem;
+  font-size: 0.98rem;
+  color: #0f172a;
+}
+
+.mwr-answer strong {
+  color: #166534;
+  background: #dcfce7;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+}
+
+.mwr-steps {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: #1f2937;
+}
+
+.mwr-steps li {
+  margin-bottom: 0.25rem;
+  line-height: 1.5;
+  font-size: 0.93rem;
+}
+
+.mwr-steps li::marker {
+  font-weight: 700;
+  color: #b91c1c;
+}
+
+.mwr-info .mwr-steps li::marker {
+  color: #2563eb;
+}
+
+/* Button that asks for the method before checking (balance-scale lab). */
+.mwr-toggle {
+  margin-top: 0.5rem;
+  padding: 0.45rem 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  background: #eff6ff;
+  border: 1.5px solid #93c5fd;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.mwr-toggle:hover {
+  background: #dbeafe;
+}

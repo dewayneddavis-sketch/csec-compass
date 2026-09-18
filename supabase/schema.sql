@@ -67,8 +67,15 @@ create table if not exists public.quiz_results (
   question_id text,
   topic text,
   correct boolean not null,
+  -- Show-Your-Work: the student's typed working for THIS question
+  -- (Mathematics prove-your-answer feature, 2026-09-18). NULL for subjects
+  -- without the feature and for rows written before it shipped.
+  working text,
   created_at timestamptz not null default now()
 );
+
+-- Idempotent upgrade for databases created before Show-Your-Work shipped.
+alter table public.quiz_results add column if not exists working text;
 
 create index if not exists quiz_results_user_subject_idx
   on public.quiz_results (user_id, subject_id, topic);

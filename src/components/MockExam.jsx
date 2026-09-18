@@ -1,6 +1,15 @@
 import { useState, useEffect, useRef } from "react";
 import { useAuth } from "../context/AuthContext";
 import { recordQuizResult } from "../data/analytics";
+import {
+  showYourWorkEnabled,
+  isWorkingComplete,
+  countMissingWorking,
+  loadWorkingDrafts,
+  saveWorkingDrafts,
+  clearWorkingDrafts,
+} from "../data/showYourWork";
+import ShowYourWork from "./ShowYourWork";
 import WeakTopicsPanel from "./WeakTopicsPanel";
 import "./ExtraPractice.css";
 import "./MockExam.css";
@@ -8,6 +17,7 @@ import "./MockExam.css";
 const SECONDS_PER_QUESTION = 90; // ~1.5 min per question
 const MAX_QUESTIONS = 40; // CSEC Paper 1-style fixed length
 const PASS_PERCENTAGE = 60;
+const QUIZ_TYPE = "mock";
 
 function formatTime(totalSeconds) {
   const m = Math.floor(totalSeconds / 60);
@@ -25,8 +35,10 @@ export default function MockExam({ subjectId }) {
   const [submitted, setSubmitted] = useState(false);
   const [timeTaken, setTimeTaken] = useState(null);
   const [latestAttemptId, setLatestAttemptId] = useState(null);
+  const [working, setWorking] = useState({});
   const totalSeconds = useRef(0);
   const { session } = useAuth();
+  const showWork = showYourWorkEnabled(subjectId, QUIZ_TYPE);
 
   // Record the completed exam once, when it flips to submitted.
   const answersRef = useRef(answers);
@@ -37,13 +49,14 @@ export default function MockExam({ subjectId }) {
       recordedRef.current = true;
       recordQuizResult({
         subjectId,
-        quizType: "mock",
+        quizType: QUIZ_TYPE,
         questions,
         answers: answersRef.current,
+        working,
         session,
       }).then((attempt) => setLatestAttemptId(attempt?.attemptId || null));
     }
-  }, [submitted, questions, subjectId, session]);
+  }, [submitted, questions, subjectId, session, working]);
 
   useEffect(() => {
     setLoading(true);
@@ -51,6 +64,7 @@ export default function MockExam({ subjectId }) {
     setStarted(false);
     setCurrent(0);
     setAnswers({});
+    setWorking(showYourWorkEnabled(subjectId, QUIZ_TYPE) ? loadWorkingDrafts(subjectId, QUIZ_TYPE) : {});
     setSubmitted(false);
     setTimeTaken(null);
     setLatestAttemptId(null);
@@ -119,6 +133,20 @@ export default function MockExam({ subjectId }) {
   const q = questions[current];
   const chosen = answers[current];
 
+  // Show-Your-Work: nothing is graded during the exam, but the working must be
+  // typed as the student goes so the paper can be marked as solved-by-hand.
+  const currentWorking = working[current] || "";
+  const workingOk = !showWork || isWorkingComplete(currentWorking);
+  const missingWorking = showWork ? countMissingWorking(total, working) : 0;
+
+  function handleWorking(value) {
+    setWorking((prev) => {
+      const next = { ...prev, [current]: value };
+      saveWorkingDrafts(subjectId, QUIZ_TYPE, next);
+      return next;
+    });
+  }
+
   function handleStart() {
     totalSeconds.current = examSeconds;
     setTimeLeft(examSeconds);
@@ -129,14 +157,21 @@ export default function MockExam({ subjectId }) {
     setAnswers((prev) => ({ ...prev, [current]: value }));
   }
   function handleNext() {
-    if (current < total - 1) setCurrent((c) => c + 1);
+    if (current < total - 1 && workingOk) setCurrent((c) => c + 1);
   }
   function handlePrev() {
     if (current > 0) setCurrent((c) => c - 1);
   }
   function handleSubmit() {
+    if (missingWorking > 0) return; // every answer needs its working
     setSubmitted(true);
     setTimeTaken(totalSeconds.current - timeLeft);
+  }
+  function handleRetake() {
+    setStarted(false); setSubmitted(false); setCurrent(0); setAnswers({});
+    setWorking({}); setTimeTaken(null); setLatestAttemptId(null);
+    recordedRef.current = false;
+    clearWorkingDrafts(subjectId, QUIZ_TYPE);
   }
 
   if (!started) {
@@ -149,6 +184,13 @@ export default function MockExam({ subjectId }) {
             <strong>{formatTime(examSeconds)}</strong> ({SECONDS_PER_QUESTION} seconds each).</p>
           <p>Exam conditions: questions appear one at a time, there is <strong>no feedback until you submit</strong>, and the exam{" "}
             <strong>auto-submits when time runs out</strong>.</p>
+          {showWork && (
+            <p className="ep-syw-notice">
+              ✍️ <strong>Show your work:</strong> this paper has a working box under every question.
+              Type your steps before moving on. Your working is saved with the attempt — if the timer
+              runs out, whatever you have written is submitted with your answers.
+            </p>
+          )}
           <p className="ep-note">You need {PASS_PERCENTAGE}% to pass. Good luck!</p>
           <button className="ep-btn ep-btn-primary" onClick={handleStart}>Start Mock Exam</button>
         </div>
@@ -189,13 +231,19 @@ export default function MockExam({ subjectId }) {
                       Your answer: <strong>{answers[i] || "—"}</strong>
                       {!isRight && <> — Correct: <strong>{qq.answer}</strong></>}
                     </p>
+                    {showWork && working[i] && String(working[i]).trim() !== "" && (
+                      <div className="ep-review-working">
+                        <span className="ep-review-working-label">Your working</span>
+                        {working[i]}
+                      </div>
+                    )}
                     {qq.explanation && <p className="ep-review-explain">{qq.explanation}</p>}
                   </div>
                 );
               })}
             </div>
           </div>
-          <button className="ep-btn ep-btn-secondary" onClick={() => { setStarted(false); setSubmitted(false); setCurrent(0); setAnswers({}); setTimeTaken(null); setLatestAttemptId(null); recordedRef.current = false; }}>
+          <button className="ep-btn ep-btn-secondary" onClick={handleRetake}>
             Retake Mock Exam
           </button>
           <WeakTopicsPanel subjectId={subjectId} latestAttemptId={latestAttemptId} />
@@ -227,15 +275,28 @@ export default function MockExam({ subjectId }) {
               </button>
             ))}
           </div>
+          <ShowYourWork
+            subjectId={subjectId}
+            quizType={QUIZ_TYPE}
+            questionNumber={current + 1}
+            value={currentWorking}
+            onChange={handleWorking}
+          />
         </div>
+        {showWork && missingWorking > 0 && Object.keys(answers).length > 0 && (
+          <p className="ep-syw-progress">
+            {missingWorking} question{missingWorking === 1 ? "" : "s"} still need your working before the
+            paper can be submitted. You can move back with ← Back.
+          </p>
+        )}
         <div className="ep-nav">
           {current > 0 && (
             <button className="ep-btn ep-btn-secondary" onClick={handlePrev}>← Back</button>
           )}
           {current < total - 1 ? (
-            <button className="ep-btn ep-btn-primary" onClick={handleNext}>Next →</button>
+            <button className="ep-btn ep-btn-primary" onClick={handleNext} disabled={!workingOk}>Next →</button>
           ) : (
-            <button className="ep-btn ep-btn-success" onClick={handleSubmit}>Submit Exam</button>
+            <button className="ep-btn ep-btn-success" onClick={handleSubmit} disabled={missingWorking > 0}>Submit Exam</button>
           )}
         </div>
         <div className="ep-progress-bar">

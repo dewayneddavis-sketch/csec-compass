@@ -30,13 +30,24 @@ export default async function handler(req, res) {
     const { data: { user }, error: authError } = await supabase.auth.getUser(token);
     if (authError || !user) return res.status(401).json({ error: "Invalid token" });
 
-    const { subjectId, quizType, attemptId, results } = req.body || {};
+    const { subjectId, quizType, attemptId, results, working } = req.body || {};
     if (!subjectId || !quizType || !attemptId || !Array.isArray(results) || results.length === 0) {
       return res.status(400).json({ error: "subjectId, quizType, attemptId and results[] are required" });
     }
     const validQuizTypes = ["knowledge-check", "practice", "mock"];
     if (!validQuizTypes.includes(quizType)) {
       return res.status(400).json({ error: "quizType must be one of: " + validQuizTypes.join(", ") });
+    }
+
+    // Show-Your-Work: the student's typed working, one entry per question.
+    // Optional — subjects without the feature simply send nothing.
+    const workingByQuestion = new Map();
+    if (Array.isArray(working)) {
+      for (const w of working) {
+        const qid = w?.questionId ?? w?.question_id;
+        const text = typeof w?.text === "string" ? w.text : "";
+        if (qid && text.trim() !== "") workingByQuestion.set(String(qid), text);
+      }
     }
 
     const rows = results.map((r) => ({
@@ -49,7 +60,28 @@ export default async function handler(req, res) {
       correct: !!r.correct,
     }));
 
-    const { data, error } = await supabase.from("quiz_results").insert(rows).select("id");
+    const rowsWithWorking = rows.map((row) => ({
+      ...row,
+      working: row.question_id ? workingByQuestion.get(String(row.question_id)) ?? null : null,
+    }));
+
+    let data;
+    let error;
+    if (workingByQuestion.size > 0) {
+      ({ data, error } = await supabase.from("quiz_results").insert(rowsWithWorking).select("id"));
+      // Progressive enhancement: if the `working` column has not been applied to
+      // this database yet (owner runs supabase/schema.sql), fall back to the
+      // original insert so analytics recording never regresses.
+      if (error && /working/i.test(error.message) && /column|schema cache/i.test(error.message)) {
+        console.warn(
+          "API /api/analytics/record: quiz_results.working column missing — recording without working (apply supabase/schema.sql)"
+        );
+        ({ data, error } = await supabase.from("quiz_results").insert(rows).select("id"));
+      }
+    } else {
+      ({ data, error } = await supabase.from("quiz_results").insert(rows).select("id"));
+    }
+
     if (error) {
       // 500 is intentional (fails closed): the client falls back to
       // localStorage analytics on non-2xx rather than misreading success.
@@ -57,7 +89,11 @@ export default async function handler(req, res) {
       return res.status(500).json({ error: "Failed to record results: " + error.message });
     }
 
-    return res.status(200).json({ success: true, inserted: data ? data.length : rows.length });
+    return res.status(200).json({
+      success: true,
+      inserted: data ? data.length : rows.length,
+      workingSaved: workingByQuestion.size,
+    });
   } catch (err) {
     console.error("API /api/analytics/record error:", err);
     return res.status(500).json({ error: "Failed to record results." });

@@ -54,11 +54,26 @@ export function makeAttemptId() {
   return "att-" + Date.now() + "-" + Math.random().toString(36).slice(2, 10);
 }
 
+// Show-Your-Work: pair each typed working with the question it belongs to.
+// `working` is { index: text } from the quiz component; only questions the
+// student actually wrote something on are kept, keyed by the stable question id
+// so the working still lines up if the question order ever changes.
+export function normalizeWorking(questions, working) {
+  const out = [];
+  (questions || []).forEach((q, i) => {
+    const text = String((working || {})[i] ?? "").trim();
+    if (!text) return;
+    out.push({ questionId: q.id || String(i), index: i, text });
+  });
+  return out;
+}
+
 // Record one completed quiz attempt. Returns the attempt object.
-export async function recordQuizResult({ subjectId, quizType, questions, answers, session }) {
+export async function recordQuizResult({ subjectId, quizType, questions, answers, working, session }) {
   const results = computeResults(questions, answers);
   const total = results.length;
   const score = results.filter((r) => r.correct).length;
+  const workingList = normalizeWorking(questions, working);
   const attempt = {
     attemptId: makeAttemptId(),
     quizType,
@@ -69,6 +84,8 @@ export async function recordQuizResult({ subjectId, quizType, questions, answers
     passed: total > 0 && score / total >= 0.6,
     results,
   };
+  // The student's own working travels with the attempt (Show-Your-Work).
+  if (workingList.length > 0) attempt.working = workingList;
 
   // 1) Always persist locally (synchronous, works logged-out).
   const local = getLocalAttempts(subjectId);
@@ -93,6 +110,7 @@ export async function recordQuizResult({ subjectId, quizType, questions, answers
             topic: r.topic,
             correct: r.correct,
           })),
+          working: workingList.map((w) => ({ questionId: w.questionId, text: w.text })),
         }),
       });
     } catch {
