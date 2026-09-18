@@ -12,6 +12,8 @@
 // server-side: lab tracking is telemetry, so a missing table or a failed write
 // must never interrupt a student's lab session.
 
+import { markLessonComplete } from "./lessonProgress.js";
+
 const LS_PREFIX = "csec-lab-activity-";
 
 export function loadLabActivity() {
@@ -71,6 +73,14 @@ export function recordLabComplete(subjectId, lessonId, experimentType, session) 
   all[key] = entry;
   saveLabActivity(all);
   syncLab(subjectId, lessonId, entry, { completed: true }, session);
+  // Finishing a lab IS completing that lesson: also tick it in the student's OWN
+  // progress (subject-page checkmarks + progress bar), through the one shared
+  // store. Best-effort -- recording progress must never break a lab session.
+  try {
+    markLessonComplete(subjectId, lessonId);
+  } catch {
+    /* progress is best-effort */
+  }
   return entry;
 }
 

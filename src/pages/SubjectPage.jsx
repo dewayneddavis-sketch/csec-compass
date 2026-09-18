@@ -12,6 +12,7 @@ import SBASection from "../components/SBASection";
 import { SBA_TAB_LABEL, sbaGuideLabel, sbaTabLabel, sbaTabNoun } from "../data/sbaTabs";
 import Paper2Section from "../components/Paper2Section";
 import ProgressTab from "../components/ProgressTab";
+import { sameLessonIds, loadLessonProgress, saveLessonProgress, setLessonComplete, subscribeLessonProgress } from "../data/lessonProgress";
 import "./SubjectPage.css";
 
 // One distinct colour per tab so students can tell them apart at a glance
@@ -78,18 +79,22 @@ export default function SubjectPage() {
   }, [subjectId]);
 
   useEffect(() => {
-    try {
-      const saved = localStorage.getItem("csec-" + subjectId + "-progress");
-      if (saved) {
-        const d = JSON.parse(saved);
-        if (d.lessons) setCompletedLessons(d.lessons);
-        if (d.quizCompleted) setQuizCompleted(d.quizCompleted);
-      }
-    } catch {}
+    // Read the shared progress store, then follow it. A lab finished on the
+    // lesson page ticks its lesson through src/data/lessonProgress.js, and this
+    // subscription turns that into the checkmark + progress bar without a
+    // reload. Comparing before setting means a write -> notify -> write cycle
+    // cannot spin.
+    const saved = loadLessonProgress(subjectId);
+    setCompletedLessons((prev) => (sameLessonIds(prev, saved.lessons) ? prev : saved.lessons));
+    setQuizCompleted((prev) => (prev === saved.quizCompleted ? prev : saved.quizCompleted));
+    return subscribeLessonProgress(subjectId, (next) => {
+      setCompletedLessons((prev) => (sameLessonIds(prev, next.lessons) ? prev : next.lessons));
+      setQuizCompleted((prev) => (prev === next.quizCompleted ? prev : next.quizCompleted));
+    });
   }, [subjectId]);
 
   useEffect(() => {
-    localStorage.setItem("csec-" + subjectId + "-progress", JSON.stringify({ lessons: completedLessons, quizCompleted }));
+    saveLessonProgress(subjectId, { lessons: completedLessons, quizCompleted });
   }, [completedLessons, quizCompleted, subjectId]);
 
   if (loading) return <div className="s-loading">Loading subject...</div>;
@@ -114,10 +119,14 @@ export default function SubjectPage() {
   const lessonCount = paid ? allLessons.length : Math.min(2, allLessons.length);
   const completedCount = completedLessons.length;
 
+  // One reducer for the manual tick and the lab path (see
+  // src/data/lessonProgress.js), so the two can never disagree about what
+  // "complete" means. Manual un-tick stays possible.
   function toggleLesson(lessonId) {
-    setCompletedLessons((prev) =>
-      prev.includes(lessonId) ? prev.filter((id) => id !== lessonId) : [...prev, lessonId]
-    );
+    setCompletedLessons((prev) => {
+      const next = setLessonComplete({ lessons: prev, quizCompleted }, lessonId, !prev.includes(lessonId));
+      return sameLessonIds(prev, next.lessons) ? prev : next.lessons;
+    });
   }
 
   return (
