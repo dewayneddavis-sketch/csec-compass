@@ -1,0 +1,470 @@
+[
+  {
+    "id": "pe-mod-1",
+    "title": "Foundations of Physical Education and Sport",
+    "lessons": [
+      {
+        "id": "pe-l1-1",
+        "title": "What Physical Education Is and Why It Matters",
+        "content": "Physical education is the planned, progressive development of a person through movement. It is not the same as sport, although sport is one of its tools: physical education is educational, led by objectives, available to everyone and assessed on personal improvement, while sport is competitive, selective and judged by results. Physical education has three broad aims - to develop physical competence and fitness, to develop social skills and positive attitudes, and to develop the knowledge and understanding that lets a person make healthy choices for life.\n\nIts benefits are physical, mental and social. Physically, regular activity strengthens the heart, lungs, bones and muscles, improves posture and weight control, and reduces the risk of chronic disease. Mentally, it relieves stress, improves mood and sleep and builds confidence. Socially, it teaches cooperation, leadership, discipline, fair play, respect for rules and the handling of winning and losing. These are transferable benefits: an adolescent who learns to train regularly, tolerate fatigue and work in a team carries those habits into work and family life.\n\nIn the Caribbean these aims matter urgently. Non-communicable diseases - hypertension, diabetes, obesity and heart disease - are the leading causes of illness and death, and physical inactivity, poor diet and obesity are major causes. Physical education is therefore also public health policy. It is delivered through the school curriculum, sport clubs, community programmes and national sports councils, and it is assessed practically and theoretically at CSEC, where students must show both performance and knowledge.",
+        "objectives": [
+          "Distinguish physical education from sport and state the aims of physical education",
+          "Describe the physical, mental and social benefits of regular activity",
+          "Explain why physical activity matters for Caribbean health"
+        ],
+        "concepts": [
+          "Physical education",
+          "Sport",
+          "Physical competence",
+          "Fair play",
+          "Lifestyle",
+          "Non-communicable disease",
+          "Inactivity",
+          "Wellbeing"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Benefit Match: Match each benefit of physical activity to the physical, mental or social domain and to an example."
+        }
+      },
+      {
+        "id": "pe-l1-2",
+        "title": "Sport and Society in the Caribbean",
+        "content": "Sport is a social institution: it reflects the society around it and shapes it in return. As a socialising agent it teaches values, roles and group membership; as a cultural expression it carries community and national identity; as an economic sector it creates employment and business; and as a political arena it can build national unity or be used for prestige. Cricket, football, athletics, netball, basketball, dominoes and track and field have all carried Caribbean identity far beyond the region, and achievements in athletics, cricket and boxing are a source of pride and of regional recognition.\n\nSport also reflects inequality. Access depends on class, gender, location and income: schools with facilities, equipment and trained coaches produce more athletes than those with dusty fields and no equipment; urban communities have more clubs than rural ones; and girls have historically had fewer opportunities and less media coverage than boys, though women's cricket, netball and athletics are changing that. Elite pathways depend on scholarships, sponsorship and family support, so talent alone is not enough. There are also social issues sport must confront: violence and hooliganism among spectators, corruption and match fixing, doping, exploitative contracts for young players, and abuse of athletes in elite training.\n\nGovernance structures connect sport and society. At school level there are physical education departments, teams and intramural programmes; at national level sports councils, national federations and Olympic committees, which select, fund and administer; and at regional level bodies such as the Caribbean Association of National Olympic Committees and CARICOM institutions, plus regional competitions like the CARIFTA Games. Media, sponsors and government policy all influence who plays, how well they are supported and what example they set.",
+        "objectives": [
+          "Describe the roles of sport in Caribbean society",
+          "Discuss how class, gender, income and location affect access and opportunity",
+          "Identify the institutions and bodies that govern and support sport in the region"
+        ],
+        "concepts": [
+          "Socialisation",
+          "National identity",
+          "Gender inequality",
+          "Access",
+          "Sports council",
+          "National federation",
+          "Sponsorship",
+          "Doping"
+        ],
+        "experiment": {
+          "type": "case-study",
+          "description": "Sport and Society Case: Read a case about access or ethics in Caribbean sport and decide who has responsibility and why."
+        }
+      },
+      {
+        "id": "pe-l1-3",
+        "title": "Growth, Development and the Active Lifestyle",
+        "content": "Participation should be matched to the person's stage of growth and development. Childhood is a period of rapid skill learning, when coordination, balance and basic movement patterns - running, jumping, throwing, catching, striking - are best developed, and activity should be varied, playful and frequent. During adolescence growth is rapid and uneven: long bones grow faster than muscles and tendons can adapt, which temporarily reduces coordination and raises the risk of overuse injury, so training should be progressive and should not be based on the adult model. Maturation differs between individuals of the same age, and matches should be matched to physical development rather than birth date alone.\n\nAdulthood brings the need to maintain what was built. Peak performance comes in the twenties for most sports; from the thirties muscle mass, bone density, flexibility and aerobic capacity gradually decline, but training slows each of these. Inactivity, not age, is the largest single cause of the decline in capacity we see in unfit adults. Physical activity should include aerobic work for the heart and lungs, strength work to preserve muscle and bone, flexibility work, and balance work - and adults should accumulate moderate activity on most days.\n\nThe lifespan view is what makes physical education a preparation for life rather than for a school team. A person who leaves school with the skills, knowledge and habit of activity is more likely to stay active, and the benefits extend to older age: independence, fall prevention, mental health and lower health costs. Programmes for older adults emphasise low-impact aerobic activity, strength and balance; for pregnancy, medical advice and appropriate activity; for people with disabilities, adapted physical education so that activity is genuinely available to all. The message is that participation should be adapted to the person at every stage.",
+        "objectives": [
+          "Describe changes in the body during childhood and adolescence that affect participation",
+          "Explain how physical capacity changes across adulthood and how training slows it",
+          "Adapt activity to the needs of older adults, pregnancy and disability"
+        ],
+        "concepts": [
+          "Growth spurt",
+          "Maturation",
+          "Overuse injury",
+          "Peak performance",
+          "Muscle mass",
+          "Adapted physical education",
+          "Lifelong activity",
+          "Age-related decline"
+        ],
+        "experiment": {
+          "type": "lifespan-explorer",
+          "description": "Lifespan Profile: Match the stage of life to suitable activities, training emphasis and precautions."
+        }
+      }
+    ]
+  },
+  {
+    "id": "pe-mod-2",
+    "title": "Anatomy and Physiology for Movement",
+    "lessons": [
+      {
+        "id": "pe-l2-1",
+        "title": "The Skeletal System and Joints",
+        "content": "The skeleton has five main functions: support, protection of vital organs, movement through the lever action of bones, storage of minerals such as calcium and phosphorus, and the production of blood cells in the marrow. It is made of about two hundred bones, grouped into the axial skeleton (skull, vertebral column, ribs and sternum) and the appendicular skeleton (limbs and girdles). Bone is living tissue, remodelled throughout life: load-bearing increases density, while inactivity or poor nutrition reduces it.\n\nJoints are where movement happens, and they are classified by how much and what kind of movement they allow. Fibrous joints such as the skull sutures barely move; cartilaginous joints such as the vertebrae allow slight movement; and synovial joints are freely movable, having a joint capsule, synovial membrane and fluid to lubricate and nourish, articular cartilage to cushion, and ligaments to hold the bones. Synovial joints are further divided by shape and movement: hinge (elbow, knee), ball and socket (shoulder, hip), pivot (neck), gliding (wrist, foot), saddle (thumb) and condyloid (knuckle).\n\nMovements must be named correctly, because coaching and assessment use the terms precisely. Flexion decreases the angle at a joint and extension increases it; abduction moves a limb away from the midline and adduction towards it; rotation turns a bone about its own axis; circumduction describes a circle; pronation and supination turn the forearm; plantar flexion points the foot and dorsiflexion lifts the toes; inversion and eversion turn the sole in and out; and elevation and depression raise and lower the shoulder. Bones act as levers: the bone is the lever, the joint the fulcrum, and the muscle provides the effort. Levers are described by the relative positions of fulcrum, load and effort, and different classes have different mechanical advantages, which is why the human body can lift heavy loads at some joints and move quickly at others.",
+        "objectives": [
+          "State the functions of the skeleton and name the main bone groups",
+          "Classify the types of joint and the movements each allows",
+          "Identify lever systems in the body and name joint movements accurately"
+        ],
+        "concepts": [
+          "Axial skeleton",
+          "Appendicular skeleton",
+          "Synovial joint",
+          "Ligament",
+          "Cartilage",
+          "Synovial fluid",
+          "Flexion",
+          "Lever"
+        ],
+        "experiment": {
+          "type": "skeleton-explorer",
+          "description": "Joint Mover: Pick a joint and see which movements it permits, which bones and ligaments are involved and how the lever works."
+        }
+      },
+      {
+        "id": "pe-l2-2",
+        "title": "The Muscular System and How Muscles Work",
+        "content": "Movement is produced by muscle contraction, and there are three types of muscle in the body. Skeletal (voluntary) muscle is attached to bone and produces movement under conscious control; smooth (involuntary) muscle lines the walls of the gut, blood vessels and other internal organs; and cardiac muscle forms the heart wall and contracts rhythmically and continuously without conscious control. Skeletal muscle is described by its structure - bundles of fibres containing myofibrils, supplied by blood vessels and nerves - and by its fibre types.\n\nMuscle fibres come in two main types with different properties. Slow twitch (type I) fibres contract slowly but resist fatigue, use oxygen efficiently and dominate in endurance events, so they are abundant in the muscles of a distance runner. Fast twitch (type II) fibres contract quickly and powerfully but fatigue fast; type IIa fibres are useful for middle-distance and repeated sprint work, while type IIx fibres produce the greatest force for short explosive efforts and dominate in sprinting, jumping and throwing. Training can improve the capacity of both, but the proportion of fibre types a person has is largely inherited, which partly explains why different people excel in different events.\n\nMuscles act in pairs and groups. A muscle that produces the desired movement is the prime mover or agonist; the muscle on the opposite side that relaxes and lengthens to allow the movement is the antagonist; synergists assist the prime mover, and fixators stabilise the origin so that the movement is efficient. Contraction itself is described by how the muscle changes length: isotonic contraction shortens the muscle and moves a load, and is concentric when shortening and eccentric when the muscle lengthens under load; isometric contraction generates force without changing length, as when holding a plank. Growth and strength come from the principle of overload: training a muscle harder than it is used to produces micro-damage that is repaired stronger, and recovery is when that adaptation happens, which is why rest and sleep are part of training rather than an interruption to it.",
+        "objectives": [
+          "Compare the three types of muscle and their functions",
+          "Describe slow and fast twitch fibres and their events",
+          "Explain agonist, antagonist, synergist and fixator roles and types of contraction"
+        ],
+        "concepts": [
+          "Skeletal muscle",
+          "Cardiac muscle",
+          "Slow twitch",
+          "Fast twitch",
+          "Agonist",
+          "Antagonist",
+          "Isometric",
+          "Concentric"
+        ],
+        "experiment": {
+          "type": "muscle-lab",
+          "description": "Muscle Roles: For a chosen movement, drag the muscles to their roles and label the type of contraction."
+        }
+      },
+      {
+        "id": "pe-l2-3",
+        "title": "The Cardiorespiratory System and Energy Systems",
+        "content": "Endurance depends on the heart, lungs, blood vessels and muscles working together. The lungs ventilate and exchange gases in the alveoli, where oxygen diffuses into the blood and carbon dioxide out. The heart pumps that blood: the right side sends it to the lungs and the left side pumps it around the body, with the left ventricle thickest because it works against the greatest pressure. Arteries carry blood away from the heart, veins return it, and capillaries, only one cell thick, are where exchange with the tissues happens. Blood carries oxygen attached to haemoglobin, plus glucose, and removes carbon dioxide and heat.\n\nEnergy for muscular work comes from the breakdown of ATP, which must be re-formed by one of three systems, used in different proportions depending on intensity and duration. The ATP-PC (phosphagen) system uses stored creatine phosphate to supply energy for a few seconds at maximal effort - a sprint start, a jump, a throw. The anaerobic (lactic acid) system breaks down glucose without oxygen for up to about two minutes of high-intensity work, producing lactic acid that is associated with fatigue in events such as the 400 m. The aerobic system uses oxygen to break down carbohydrate and fat and supplies most of the energy in endurance events, from a few minutes to several hours. The crossover point is the intensity at which the contribution shifts from predominantly anaerobic to aerobic.\n\nTraining changes these systems measurably, which is why fitness can be tested. Regular aerobic exercise increases stroke volume and cardiac output, so the heart pumps more blood per beat and resting heart rate falls; it increases capillarisation and blood volume, improves the muscles' use of oxygen, and increases lung ventilation efficiency. Resting and working heart rates, blood pressure, recovery rate after exercise and vital capacity are practical indicators of cardiorespiratory fitness. Training also raises the anaerobic threshold, the intensity at which lactic acid accumulates faster than it can be removed, which is one of the best predictors of endurance performance.",
+        "objectives": [
+          "Describe the path of blood and gas exchange during exercise",
+          "Compare the ATP-PC, anaerobic and aerobic energy systems and their events",
+          "Explain the cardiorespiratory adaptations to training and how they are measured"
+        ],
+        "concepts": [
+          "Alveolus",
+          "Stroke volume",
+          "Cardiac output",
+          "Haemoglobin",
+          "ATP-PC",
+          "Lactic acid",
+          "Aerobic system",
+          "Anaerobic threshold"
+        ],
+        "experiment": {
+          "type": "heart-lab",
+          "description": "Heart Rate Lab: Set an intensity and see which energy system dominates, then see how trained and untrained hearts respond."
+        }
+      }
+    ]
+  },
+  {
+    "id": "pe-mod-3",
+    "title": "Fitness, Testing and Training",
+    "lessons": [
+      {
+        "id": "pe-l3-1",
+        "title": "Components of Fitness and Fitness Testing",
+        "content": "Fitness is the ability to meet the demands of a task, and it is measured through its components. Health-related components are those that affect health and everyday functioning: cardiorespiratory endurance, muscular strength, muscular endurance, flexibility and body composition. Skill-related or performance components are those that affect athletic performance: speed, agility, power, balance, coordination and reaction time. A sport demands a particular mix - a distance runner needs endurance and body composition, a netball shooter needs power, balance and reaction time - and training should match the demand rather than develop everything at once.\n\nEach component has standard tests that are cheap, safe and repeatable. Cardiorespiratory endurance is measured by the multi-stage fitness (bleep) test, a twelve-minute run, the Harvard step test or a sub-maximal cycle test. Muscular strength is measured by a one-repetition maximum or grip dynamometer; muscular endurance by press-ups, sit-ups or a flexed-arm hang. Flexibility is measured by the sit and reach or a shoulder rotation test; speed by a 30 m or 50 m sprint; agility by the Illinois test or a shuttle run; power by the vertical jump or standing long jump; balance by a stork stand; and reaction time by a ruler drop. Body composition is estimated by body mass index, skinfold calipers or waist circumference.\n\nTesting is only useful when it is done correctly and used honestly. Tests must be the same for everyone, done in the same order, at the same time of day and under the same conditions; the tester must be trained to count, time and measure accurately; warm-up and safe technique must be complete; and results must be compared with previous results for the same person as well as with norms for their age and sex. Scores are recorded on a card or spreadsheet so that progress can be tracked against a baseline, because improvement is what motivates continued training. A single maximum-effort test without a warm-up risks injury and produces meaningless data.",
+        "objectives": [
+          "Name the health-related and skill-related components of fitness",
+          "Select a valid test for each component and describe how it is carried out",
+          "Interpret test scores and explain the conditions needed for reliable testing"
+        ],
+        "concepts": [
+          "Cardiorespiratory endurance",
+          "Strength",
+          "Muscular endurance",
+          "Flexibility",
+          "Body composition",
+          "Agility",
+          "Power",
+          "Reaction time"
+        ],
+        "experiment": {
+          "type": "fitness-test-box",
+          "description": "Fitness Battery: Choose a component and test, enter a score and compare it with the norm for age and sex."
+        }
+      },
+      {
+        "id": "pe-l3-2",
+        "title": "Principles and Methods of Training",
+        "content": "Training works because of a set of principles. Overload means working harder than the body is used to, and it is applied through the FITT variables: frequency, intensity, time and type. Progression means increasing the load gradually as the body adapts. Specificity means that training must match the demands of the sport or activity, in the energy system, muscles, movements and skills used. Reversibility means that fitness is lost when training stops, so long layoffs must be followed by gradual rebuilding. Recovery is part of training, since adaptation happens during rest; and individual differences mean that the same programme will not suit two different people. Overuse of any one principle too quickly leads to injury, staleness and loss of motivation.\n\nMethods are chosen to match the component being developed. Continuous training - steady running, swimming or cycling for twenty minutes or more - builds aerobic endurance. Interval training alternates work and recovery and can be set for endurance (longer intervals, short rest), speed or power with the work-to-rest ratio adjusted to the energy system targeted. Fartlek mixes speeds within one session. Circuit training uses a series of stations to develop strength, endurance and general fitness together and is very suitable for school and community settings with little equipment. Weight or resistance training builds strength and power using body weight, bands, free weights or machines, and circuit or interval methods with short rests build power. Plyometrics use jumps and bounds to develop explosive power. Flexibility is improved by static stretching held at the end of a session, dynamic stretching in the warm-up and PNF or ballistic methods where appropriate.\n\nA training session follows a fixed structure: warm-up, main activity, cool-down and stretching, with the main activity matching the aim of the session. A training programme extends that over the long term through periodisation: pre-season, competition and off-season phases with different volume and intensity, general preparation giving way to specific preparation, and peaking timed for major competition. The programme sets out frequency, intensity, duration, the methods and the tests that will show whether it worked - which is exactly what the SBA personal exercise programme requires.",
+        "objectives": [
+          "Apply the principles of training, including FITT, to a stated goal",
+          "Describe and compare training methods and choose one for a component of fitness",
+          "Design a session and a periodised programme with warm-up and cool-down"
+        ],
+        "concepts": [
+          "Overload",
+          "FITT",
+          "Progression",
+          "Specificity",
+          "Reversibility",
+          "Continuous training",
+          "Interval training",
+          "Periodisation"
+        ],
+        "experiment": {
+          "type": "programme-builder",
+          "description": "Programme Builder: Set a goal, frequency, intensity and method, and see whether the resulting programme follows the training principles."
+        }
+      },
+      {
+        "id": "pe-l3-3",
+        "title": "Warm-Up, Cool-Down, Recovery and Injury Prevention",
+        "content": "Every session begins with a warm-up and ends with a cool-down, and neither is optional. A warm-up raises muscle temperature and blood flow, increases the elasticity of muscle and connective tissue, improves the efficiency of nerve transmission and prepares the mind for the activity, reducing the risk of injury. It has three stages: a general pulse raiser of five to ten minutes of jogging, skipping or cycling; dynamic mobility and stretching that move the joints through their range; and specific drills that rehearse the movements and skills of the sport, ending with short bursts at competition pace. Static, long-held stretching before explosive activity can reduce power output, so it belongs at the end of the session rather than the start.\n\nThe cool-down returns the body to its resting state. Gentle jogging and walking keep blood circulating so that it does not pool in the legs, and it helps clear lactic acid and gradually lowers heart rate, temperature and breathing rate. Static stretching while the muscles are still warm improves flexibility and reduces stiffness and delayed soreness. Recovery extends beyond the session: adequate sleep, hydration, good nutrition, active recovery such as walking or swimming, rest days, and the treatment of niggles before they become injuries. Overtraining - too much training with too little recovery - shows as persistent fatigue, poor performance, disturbed sleep, irritability and recurrent illness, and its treatment is rest, not more training.\n\nInjuries are prevented rather than simply treated. Correct technique, appropriate footwear and equipment, safe surfaces and facilities, progressive training loads, adequate warm-up, a balanced diet, hydration and rest all reduce risk, as does matching training and competition to the individual's maturity and fitness. Rule enforcement in sport, including rules against dangerous play, protects participants. When injuries do occur they are classified as acute (sprains, strains, fractures, cuts and concussion) or chronic (overuse conditions such as tendinitis, shin splints and stress fractures). Acute soft-tissue injuries are managed by the RICER protocol - rest, ice, compression, elevation and referral - for the first 48 to 72 hours, with no heat, alcohol, running or massage in that period; suspected fractures, head injuries, loss of consciousness, spinal injury and airway or breathing problems require urgent medical attention, and any concussed player is removed from play and not returned the same day.",
+        "objectives": [
+          "Describe the stages and physiological purposes of the warm-up and cool-down",
+          "Explain recovery, overtraining and their signs and management",
+          "Apply injury prevention measures and the RICER protocol for soft-tissue injury"
+        ],
+        "concepts": [
+          "Warm-up",
+          "Cool-down",
+          "Static stretching",
+          "Delayed onset muscle soreness",
+          "Overtraining",
+          "RICER",
+          "Concussion",
+          "Stress fracture"
+        ],
+        "experiment": {
+          "type": "injury-triage",
+          "description": "Injury Triage: Match the situation to the correct immediate action and decide who should return to play."
+        }
+      }
+    ]
+  },
+  {
+    "id": "pe-mod-4",
+    "title": "Skill Acquisition and Sports Psychology",
+    "lessons": [
+      {
+        "id": "pe-l4-1",
+        "title": "Skill, Classification and Stages of Learning",
+        "content": "A skill is a learned, coordinated pattern of movement performed with the minimum of wasted effort to achieve a goal; it differs from an ability, which is largely inherited, and from a technique, which is the method used. Skills can be classified in several ways that help a coach choose the right teaching method. Open skills are performed in an unpredictable, changing environment - a pass in football, a return in tennis - and depend on perception and decision making; closed skills are performed in a predictable environment with a fixed pattern - a gymnastic routine, a free throw. Gross skills use large muscle groups and little precision, such as running and jumping; fine skills need precision and control, such as a dart throw or a spin bowl. Discrete skills have a clear beginning and end, serial skills link discrete actions into a sequence, and continuous skills have no obvious beginning or end. Skills are also described as self-paced or externally paced, and as simple or complex.\n\nLearning passes through recognised stages. In the cognitive (novice) stage the learner must think about each part of the skill, makes many errors and needs demonstration, clear verbal guidance and simple practice. In the associative (practice) stage movements become smoother and more consistent, errors decrease, and the learner benefits from feedback, drills and rehearsal in varied conditions. In the autonomous stage the skill is performed automatically, attention is freed to deal with tactics and the environment, and performance is consistent even under pressure. Learners move at different rates, may plateau and need new challenges, and skills learned in one sport transfer partially to another when the movement patterns are similar.\n\nThree models explain how learners move from initially clumsy to skilled. Fitts and Posner describe the cognitive, associative and autonomous stages above; the cognitive model of information processing describes a closed loop of input, decision making, output and feedback; and the dynamic or ecological model stresses the importance of the environment and of practising in conditions close to the real game. For a coach, the practical consequence is that a novice and an expert should not be taught in the same way: novices need the skill broken down, plenty of success and clear instruction, while experts need variety, pressure and tactical problems.",
+        "objectives": [
+          "Classify skills using the main classification systems",
+          "Describe the cognitive, associative and autonomous stages of learning",
+          "Choose teaching methods appropriate to the stage of the learner"
+        ],
+        "concepts": [
+          "Open skill",
+          "Closed skill",
+          "Gross skill",
+          "Fine skill",
+          "Cognitive stage",
+          "Autonomous stage",
+          "Plateau",
+          "Transfer of learning"
+        ],
+        "experiment": {
+          "type": "skill-classifier",
+          "description": "Skill Sorter: Classify a set of sports skills across the classification systems and pick suitable teaching methods."
+        }
+      },
+      {
+        "id": "pe-l4-2",
+        "title": "Feedback, Practice and Motivation",
+        "content": "Feedback is the information a performer receives about the movement, and it drives learning. Intrinsic feedback comes from the performer's own senses - how the movement felt, sounded and looked - while extrinsic (augmented) feedback comes from outside, from a coach, a video, a stopwatch or the scoreboard. Knowledge of results tells the performer the outcome of the action, and knowledge of performance tells them about the quality of the technique. Guidance may be visual, verbal, manual or mechanical, and it should be enough to correct the error and no more, or it makes the learner dependent. Feedback that is specific, accurate and well timed is far more useful than general praise; delayed feedback allows the learner to reflect, and immediate feedback helps in the cognitive stage but may be unnecessary later.\n\nHow practice is organised changes what is learned. Massed practice is continuous with little rest, while distributed practice includes rest intervals and suits difficult or new skills and fatiguing work. The whole method teaches the skill complete, the part method breaks it into components, and the progressive part method chains them together - the choice depends on the complexity of the skill and the ability of the learner. Fixed practice repeats the same movement in the same conditions and suits closed skills; variable practice changes conditions, distance, speed and opposition, and builds the adaptability needed for open skills. Mental rehearsal - imagining the movement - and observation of a skilled model both improve performance, and transfer of learning means practice in one activity can help another.\n\nMotivation is the drive that keeps a learner practising. Intrinsic motivation comes from the activity itself: enjoyment, interest, satisfaction and personal improvement. Extrinsic motivation comes from outside: medals, prizes, selection, praise, money or fear of punishment. Extrinsic rewards can help establish a habit, but over-reliance on them undermines intrinsic motivation, and when rewards stop the activity often stops with them. Goal setting is the practical link between motivation and feedback: specific, measurable, achievable, realistic and time-bound goals, in both the short and the long term, with outcome goals (winning) supported by performance goals (a personal best) and process goals (a technical change). Coaches, parents and teachers influence motivation most by making progress visible and valuing effort as well as results.",
+        "objectives": [
+          "Distinguish types and timing of feedback and their uses",
+          "Compare practice methods and select one for a given skill and learner",
+          "Distinguish intrinsic and extrinsic motivation and set effective SMARTER goals"
+        ],
+        "concepts": [
+          "Intrinsic feedback",
+          "Knowledge of results",
+          "Knowledge of performance",
+          "Massed practice",
+          "Variable practice",
+          "Intrinsic motivation",
+          "Extrinsic motivation",
+          "SMARTER goals"
+        ],
+        "experiment": {
+          "type": "coaching-clinic",
+          "description": "Coaching Clinic: Choose the feedback and practice method for a learner at a given stage and check the goal set."
+        }
+      },
+      {
+        "id": "pe-l4-3",
+        "title": "Sport Psychology: Arousal, Anxiety and Teamwork",
+        "content": "Performance depends on the mind as much as the body. Arousal is the level of mental and physical activation a performer experiences, and its relationship with performance is explained by three theories. The drive theory says that performance improves as arousal rises, provided the skill is well learned. The inverted-U theory says performance is best at a moderate level of arousal and falls when arousal is too low (careless, unready) or too high (tense, rushed), and that the optimum is lower for fine, complex skills and higher for gross, simple ones. The catastrophe theory adds that once arousal passes the optimum, performance drops sharply rather than gradually, and only recovers after a marked reduction in arousal. Individual optimum arousal differs, so a coach must learn how each athlete responds.\n\nAnxiety is a negative emotional state associated with worry and nervousness, and it has two parts: cognitive anxiety, the worry and negative thoughts, and somatic anxiety, the physical symptoms such as racing heart, sweating, dry mouth, nausea and trembling. Trait anxiety is a personal disposition; state anxiety is the reaction to a particular situation, and competition, audience, importance of the event, uncertainty and fear of failure all raise it. Concentration and attention are also trained: performers must shift appropriately between broad and narrow, internal and external focus, and selective attention means attending to the relevant cue and ignoring distractions such as crowd noise, an umpire's decision or a mistake already made.\n\nPsychological skills are learned and practised like physical ones. Self-talk, imagery and visualisation, pre-performance routines, controlled breathing, progressive relaxation, and correct goal setting all regulate arousal and anxiety, and progressive muscle relaxation or physical activity itself can reduce excessive somatic symptoms. Teams add a further dimension: cohesion - the attraction of members to the group and to its task - improves communication, roles, cooperation and performance, and it is built by shared goals, defined roles, fair leadership and success together. Leadership styles vary from autocratic to democratic and laissez-faire, and effective captains and coaches match the style to the group, the situation and the individual.",
+        "objectives": [
+          "Explain the drive, inverted-U and catastrophe theories of arousal",
+          "Distinguish cognitive and somatic anxiety and describe their effects",
+          "Describe psychological techniques and factors that build team cohesion"
+        ],
+        "concepts": [
+          "Arousal",
+          "Inverted U",
+          "Cognitive anxiety",
+          "Somatic anxiety",
+          "Selective attention",
+          "Imagery",
+          "Cohesion",
+          "Leadership style"
+        ],
+        "experiment": {
+          "type": "pressure-sim",
+          "description": "Pressure Chamber: Raise the crowd noise, importance and scoreboard pressure and see how a performer's focus and arousal change."
+        }
+      }
+    ]
+  },
+  {
+    "id": "pe-mod-5",
+    "title": "Officiating, Administration and Safety",
+    "lessons": [
+      {
+        "id": "pe-l5-1",
+        "title": "Rules, Officials and Fair Play",
+        "content": "Every sport is defined by its rules, and rules exist for four reasons: to define the sport and what counts as fair contest, to ensure safety, to ensure that competition is fair, and to give officials a framework for decisions. The rules specify the playing area and equipment, the number of players, the duration and scoring, what is permitted and what is a foul, the penalties for infringements, and the conduct expected of players and spectators.\n\nEach sport has its own officials, and their roles differ. The referee in football, the umpires in cricket and netball, the referees in basketball and volleyball, judges in gymnastics and boxing, timekeepers, scorers, touch judges and linesmen, and the fourth official all have defined duties: to apply the rules, control the game, keep time and score, position themselves to see play, communicate decisions clearly, protect players from dangerous play and manage the behaviour of players and spectators. Officials use clear signals so that everyone single knows the decision, and in many sports technology now assists. Officiating demands knowledge, fitness, positioning, decisiveness, consistency, calmness under pressure and the integrity to apply the rule to both teams equally.\n\nFair play is the spirit behind the rules: respect for opponents, officials, team-mates and the rules, competing honestly and accepting victory and defeat with grace. Gamesmanship - using the rules to gain an unfair advantage without breaking them, such as time wasting or feigning injury - is against the spirit even when it is not against the letter, and cheating is the deliberate breaking of rules for advantage. Sportsmanship is shown by shaking hands, acknowledging the better performance, respecting the referee's decision and playing on. Codes of conduct for players, coaches, parents and spectators translate fair play into expectations, and their enforcement, from warnings to suspension, is what keeps sport a positive educational experience rather than a place where winning is the only thing that matters.",
+        "objectives": [
+          "Explain the purposes of rules in sport",
+          "Describe the roles and qualities of officials in named sports",
+          "Distinguish fair play, gamesmanship and cheating and apply codes of conduct"
+        ],
+        "concepts": [
+          "Rules",
+          "Referee",
+          "Umpire",
+          "Signals",
+          "Foul",
+          "Fair play",
+          "Gamesmanship",
+          "Code of conduct"
+        ],
+        "experiment": {
+          "type": "officiating-drill",
+          "description": "Officials' Bench: Take the whistle, watch the incident and pick the correct decision, signal and restart."
+        }
+      },
+      {
+        "id": "pe-l5-2",
+        "title": "Sports Administration, Events and Budgeting",
+        "content": "Sport is organised through structures. At the base are clubs and school teams, run by a committee - chair, secretary, treasurer and ordinary members - that manages membership, fixtures, equipment and finance. Above them are associations and national federations, which organise leagues and national teams, register players, train coaches and officials, set rules and discipline; national sports councils and Olympic committees support, fund and coordinate; and regional and international bodies run competitions and standards. Good administration rests on written constitutions, clear roles, accurate minutes, participation from members and, above all, transparent finance.\n\nOrganising an event is a practical administrative task. The organiser must define the objective and the level of competition, choose a date, venue and time that avoid clashes, invite and enter teams, draw up the fixture list and the competition format - league, knockout or a combination - appoint officials, scorers and first-aid cover, arrange equipment, ground marking and changing facilities, plan transport, refreshments and accommodation if needed, arrange registration and results, publicise the event, and set up a safety plan for the crowd and for medical emergencies. A checklist and a running schedule keep the day on time, and a post-event review records what to improve.\n\nFinance runs through all of it. A budget sets out expected income - entry fees, gate receipts, sponsorship, grants from government or council, fundraising, canteen or merchandise sales - against expected expenditure: venue and ground hire, officials' fees, equipment, prizes, publicity, transport, refreshments, insurance and administration. A surplus supports the club's future; a deficit must be covered. Sponsorship and grants are obtained by writing a proposal that states who you are, what the event or programme achieves, what the sponsor receives in return - exposure, association with community benefit, hospitality, naming rights - and how the money will be accounted for, with a report afterwards. Delivering what was promised, keeping records and thanking sponsors properly is what earns the next sponsorship, and accounting for funds honestly is a duty to members, sponsors and young athletes alike.",
+        "objectives": [
+          "Describe the administrative structure of a club, federation and national body",
+          "Plan an event with fixtures, officials, equipment and safety arrangements",
+          "Prepare an event budget and write a sponsorship proposal"
+        ],
+        "concepts": [
+          "Committee",
+          "Constitution",
+          "Federation",
+          "Fixture list",
+          "Knockout",
+          "Budget",
+          "Sponsorship",
+          "Risk assessment"
+        ],
+        "experiment": {
+          "type": "event-manager",
+          "description": "Event Control: Build a fixture list, budget and checklist for a school competition and find the shortfall."
+        }
+      },
+      {
+        "id": "pe-l5-3",
+        "title": "Facilities, Risk Management and Ethics",
+        "content": "Safe participation is a matter of management, not luck. Facilities must be suitable and maintained: playing surfaces free of holes, stones and glass; goalposts and backboards securely anchored; nets and padding in place; courts and pitches drained and marked; gymnastic equipment inspected before use and mats arranged without gaps. Changing rooms, toilets, drinking water and shade are part of basic provision, especially in tropical heat. Equipment must suit the age, size and ability of the users, be checked before and after use, and be stored so that it does not deteriorate.\n\nRisk management is the systematic process of keeping people safe. It begins with a risk assessment: identify the hazards - surfaces, fixed equipment, layout, weather, heat, other users, unsafe behaviour - then assess who might be harmed and how likely and severe the harm is, decide what control measures reduce the risk, carry them out, and record and review them. Practical measures include supervision by a trained person, warm-up and technique instruction, rules matched to ability, adequate space and numbers, screening, hydration and heat management, appropriate insurance, consent and medical information, first-aid provision, and an emergency plan with access for an ambulance. Teachers and coaches also have legal duties of care and must act as a reasonable professional would, with supervision appropriate to the age and ability of the group.\n\nEthics completes the picture, since safe sport is also fair and honest sport. Doping is prohibited by the World Anti-Doping Agency code because it harms athletes' health, is contrary to the spirit of sport and gives an unfair advantage; athletes are strictly liable for what is in their bodies, must respect testing, and may apply for therapeutic use exemptions for genuine medical treatment. Other ethical issues include cheating and match fixing, betting-related corruption, age falsification in youth competitions, exploitation of young athletes through unsuitable contracts or training loads, abuse and harassment, and the use of performance-enhancing technologies. National federations, ethics committees, safeguarding policies and education are the response, and the responsibility rests on administrators, coaches, officials and spectators as much as on athletes.",
+        "objectives": [
+          "Assess the safety of a facility, equipment and session",
+          "Carry out a risk assessment and set control measures and an emergency plan",
+          "Explain anti-doping rules, strict liability and other ethical issues in sport"
+        ],
+        "concepts": [
+          "Risk assessment",
+          "Hazard",
+          "Control measure",
+          "Duty of care",
+          "Safeguarding",
+          "WADA",
+          "Strict liability",
+          "Therapeutic use exemption"
+        ],
+        "experiment": {
+          "type": "risk-assessor",
+          "description": "Risk Audit: Inspect a venue, list the hazards and rate each risk before and after control measures."
+        }
+      }
+    ]
+  },
+  {
+    "id": "pe-mod-6",
+    "title": "Nutrition, Health and Lifestyle for Sport",
+    "lessons": [
+      {
+        "id": "pe-l6-1",
+        "title": "Nutrition for Sport and Performance",
+        "content": "Performance depends on what is eaten, when it is eaten and how much fluid is drunk. Carbohydrate is the body's main fuel for high-intensity work and is stored as glycogen in muscle and liver, in limited amounts; carbohydrate loading in the days before a long event tops up those stores, and a pre-event meal eaten two to four hours beforehand should be high in carbohydrate, low in fat and fibre and familiar to the athlete. Protein builds and repairs muscle and is needed in greater amounts by growing athletes and those in heavy training, taken in small amounts through the day and, at the elite level, after training. Fat is a major fuel for long low-intensity work and supplies essential fatty acids and fat-soluble vitamins. Vitamins and minerals support energy release, bone health (calcium and vitamin D), oxygen transport (iron) and many reactions, and a varied diet from the food groups supplies them; supplements do not compensate for a poor diet.\n\nFluid and electrolyte balance is the most easily neglected part of preparation. Exercise generates heat that must be lost by sweating, and in a tropical climate losses are large: sweating rates of a litre an hour are common in the Caribbean heat, and dehydration of even two per cent of body mass reduces performance, concentration and thermoregulation. Athletes should be well hydrated before exercise, drink regularly during it - plain water for sessions under about an hour, and a drink containing carbohydrate and electrolytes for longer or very sweaty sessions - and weigh themselves before and after training to estimate losses, replacing about one and a half times the loss afterwards. Heat illness is a genuine emergency: cramps, dizziness, nausea, headache, confusion or cessation of sweating mean stop, move to shade, cool actively and get medical help.\n\nRecovery nutrition and timing support adaptation. After hard training or competition, carbohydrate to restore glycogen and protein to repair muscle are best taken within about half an hour to two hours, along with fluid. Alcohol impairs recovery, hydration, sleep and muscle protein synthesis and should be avoided after competition. What an athlete eats on ordinary training days - a balanced diet with plenty of vegetables, fruit, provisions, whole grains, pulses, fish and lean meat - matters more than any special product, and for a school athlete in the Caribbean the practical message is to eat regularly, eat local whole foods, drink water before thirst, and treat sports supplements with great caution, because they are unregulated, expensive and a common cause of accidental doping violations.",
+        "objectives": [
+          "Describe the role of carbohydrate, protein, fat and micronutrients in performance",
+          "Explain hydration, the effects of dehydration and heat illness in a tropical climate",
+          "Plan pre-event, during-event and recovery nutrition for a named athlete"
+        ],
+        "concepts": [
+          "Glycogen",
+          "Carbohydrate loading",
+          "Pre-event meal",
+          "Electrolyte",
+          "Dehydration",
+          "Heat exhaustion",
+          "Recovery window",
+          "Supplement contamination"
+        ],
+        "experiment": {
+          "type": "hydration-monitor",
+          "description": "Hydration Planner: Set training intensity, heat and duration and see the fluid loss and the fluid and carbohydrate needed."
+        }
+      },
+      {
+        "id": "pe-l6-2",
+        "title": "Body Composition, Weight Management and Drugs in Sport",
+        "content": "Body composition - the proportion of fat to lean tissue - affects performance, health and appearance, and in some sports it affects how the body moves: excess fat raises the energy cost of running and jumping, while too little fat and muscle undermines health, immunity, bone density and performance. Athletes need a composition that suits their event, not a single ideal figure, and it should be assessed by trained people using appropriate measures such as body mass index, waist circumference, skinfold measurements or bioelectrical impedance, interpreted with age, sex and maturation in mind.\n\nHealthy weight management for sport follows the same principles as for health. Energy balance determines weight change; loss should be gradual - no more than about half a kilogram a week for a young athlete - achieved by eating slightly less energy-dense food, keeping protein and micronutrients adequate and increasing activity, with food intake spread over the day and never skipped. Growth, menstruation, adolescence and high training loads mean that aggressive dieting in young athletes is dangerous. Poor weight-control practices include skipping meals, omitting entire food groups, using saunas or diuretics, fasting and self-induced vomiting; they lead to fatigue, injury, poor bone health, hormone disruption and eating disorders, and in female athletes can combine with low energy availability and menstrual disturbance - the female athlete triad of low energy availability, menstrual dysfunction and low bone density. Warning signs include preoccupation with weight and food, secretive eating, mood change, repeated injury and rapid weight fluctuation, and they call for support from parents, coaches and health professionals, not punishment.\n\nPerformance-enhancing and recreational drugs are prohibited for reasons of health, fairness and the spirit of sport. Anabolic steroids build muscle but damage the liver and heart, disturb hormones and moods and carry legal penalties; stimulants raise alertness but cause heart and heat problems and are banned in competition; diuretics are misused to cut weight and mask other drugs; and blood doping and EPO raise oxygen-carrying capacity at the cost of dangerous blood thickness. Alcohol and cannabis impair performance, judgement and recovery, and tobacco harms lung function and cardiovascular health. Athletes are strictly liable for substances in their body, must check medications - many common cold and asthma remedies contain banned substances - respect testing, and apply for therapeutic use exemptions only for genuine, documented medical needs. Education, honest coaching, role models and support for athletes under pressure are the most effective anti-doping measures.",
+        "objectives": [
+          "Explain how body composition affects health and performance and how it is assessed",
+          "Describe safe weight management and the risks of poor weight-control practices",
+          "Classify prohibited drugs and explain anti-doping rules and strict liability"
+        ],
+        "concepts": [
+          "Body composition",
+          "Energy balance",
+          "Low energy availability",
+          "Female athlete triad",
+          "Anabolic steroid",
+          "Diuretic",
+          "Blood doping",
+          "Strict liability"
+        ],
+        "experiment": {
+          "type": "substance-brief",
+          "description": "Banned List: Match substances to their effects, health risks and status in and out of competition."
+        }
+      },
+      {
+        "id": "pe-l6-3",
+        "title": "Physical Activity, Health and Caribbean Public Health",
+        "content": "Regular physical activity is one of the most effective health measures available. It reduces the risk of hypertension, type 2 diabetes, heart disease, stroke, several cancers, osteoporosis and depression; helps control weight; improves sleep, mood, confidence and academic performance; and it is effective in the prevention and treatment of the non-communicable diseases that dominate Caribbean mortality. Inactive living is a behavioural risk factor alongside poor diet, tobacco and alcohol, and it is the one most responsive to school and community programmes.\n\nHealth guidelines translate this into targets: children and adolescents should accumulate about sixty minutes a day of moderate to vigorous activity, including activities that build muscle and bone, and adults should aim for at least one hundred and fifty minutes a week of moderate or seventy-five minutes of vigorous aerobic activity, plus strength work twice a week, with older adults adding balance work. Any activity is better than none, and the largest health gain comes from moving from inactive to moderately active. In the Caribbean, climate, cost, security, urban design and school scheduling all influence whether people meet these targets: midday heat discourages outdoor activity, unsafe neighbourhoods limit walking, and car-oriented development and screen time reduce incidental movement.\n\nPublic health responses are therefore both structural and personal. Structural measures include physical education in schools and mandatory class time for it, school sports and intramural programmes, community playgrounds, parks, walking and cycling routes, sports facilities, nutrition and activity campaigns, workplace programmes and public health screening. Personal and family measures include an active commute, using stairs, walking, dancing and household activity, limiting screen time, playing a sport regularly, eating local whole foods and drinking water. Physical education is where these two meet: the teacher who builds skill, fitness and confidence in every student - not only the talented ones - is delivering measurable public health benefit, and a student who leaves school active is far more likely to remain active for life.",
+        "objectives": [
+          "Explain the relationships between physical activity, NCDs and Caribbean public health",
+          "State current activity guidelines for children, adults and older adults",
+          "Propose school and community measures that increase participation"
+        ],
+        "concepts": [
+          "Non-communicable disease",
+          "Behavioural risk factor",
+          "Moderate intensity",
+          "Vigorous intensity",
+          "Sedentary behaviour",
+          "Active commute",
+          "Health promotion",
+          "Screening"
+        ],
+        "experiment": {
+          "type": "policy-planner",
+          "description": "School Activity Plan: Read a school's timetable and facilities and design a programme that raises minutes of activity for everyone."
+        }
+      }
+    ]
+  }
+]

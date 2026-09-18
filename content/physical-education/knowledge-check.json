@@ -1,0 +1,327 @@
+[
+  {
+    "id": "kc1",
+    "question": "Physical education aims to develop:",
+    "options": [
+      "Only physical fitness",
+      "Physical competence, social skills and knowledge for healthy living",
+      "Only competitive athletes",
+      "Only theoretical knowledge"
+    ],
+    "answer": "Physical competence, social skills and knowledge for healthy living",
+    "explanation": "The subject develops the whole person.",
+    "topic": "pe-l1-1"
+  },
+  {
+    "id": "kc2",
+    "question": "Sport can promote national unity because it:",
+    "options": [
+      "Excludes spectators",
+      "Brings diverse people together behind a common team",
+      "Is only played in cities",
+      "Replaces education"
+    ],
+    "answer": "Brings diverse people together behind a common team",
+    "explanation": "Shared identity is one of sport's social functions.",
+    "topic": "pe-l1-2"
+  },
+  {
+    "id": "kc3",
+    "question": "During adolescence, training should be:",
+    "options": [
+      "Based on adult elite programmes",
+      "Progressive and adapted to growth and maturation",
+      "Maximal from the start",
+      "Avoided completely"
+    ],
+    "answer": "Progressive and adapted to growth and maturation",
+    "explanation": "Uneven growth raises the risk of overuse injury.",
+    "topic": "pe-l1-3"
+  },
+  {
+    "id": "kc4",
+    "question": "Which joint allows movement in all directions?",
+    "options": [
+      "Hinge",
+      "Ball and socket",
+      "Pivot",
+      "Gliding"
+    ],
+    "answer": "Ball and socket",
+    "explanation": "The shoulder and hip permit flexion, extension, abduction, adduction and rotation.",
+    "topic": "pe-l2-1"
+  },
+  {
+    "id": "kc5",
+    "question": "Fast twitch fibres are most useful for:",
+    "options": [
+      "Marathon running",
+      "Sprinting and jumping",
+      "Standing balance",
+      "Slow stretching"
+    ],
+    "answer": "Sprinting and jumping",
+    "explanation": "They contract powerfully and quickly but fatigue quickly.",
+    "topic": "pe-l2-2"
+  },
+  {
+    "id": "kc6",
+    "question": "The energy system used mainly in a marathon is:",
+    "options": [
+      "ATP-PC",
+      "Anaerobic lactic",
+      "Aerobic",
+      "Phosphagen"
+    ],
+    "answer": "Aerobic",
+    "explanation": "Oxygen is available and fat and carbohydrate are oxidised for long-duration work.",
+    "topic": "pe-l2-3"
+  },
+  {
+    "id": "kc7",
+    "question": "Aerobic training improves endurance mainly by increasing:",
+    "options": [
+      "Muscle fibre diameter only",
+      "Stroke volume, capillarisation and the muscles' use of oxygen",
+      "Bone length",
+      "Reaction time"
+    ],
+    "answer": "Stroke volume, capillarisation and the muscles' use of oxygen",
+    "explanation": "These adaptations raise oxygen delivery and use during exercise.",
+    "topic": "pe-l2-3"
+  },
+  {
+    "id": "kc8",
+    "question": "Which is a health-related component of fitness?",
+    "options": [
+      "Agility",
+      "Reaction time",
+      "Muscular endurance",
+      "Coordination"
+    ],
+    "answer": "Muscular endurance",
+    "explanation": "Health-related components are endurance, strength, muscular endurance, flexibility and body composition.",
+    "topic": "pe-l3-1"
+  },
+  {
+    "id": "kc9",
+    "question": "Overload in training means:",
+    "options": [
+      "Training every day without rest",
+      "Working harder than the body is used to",
+      "Lifting the maximum once",
+      "Ignoring recovery"
+    ],
+    "answer": "Working harder than the body is used to",
+    "explanation": "The extra demand is what forces adaptation.",
+    "topic": "pe-l3-2"
+  },
+  {
+    "id": "kc10",
+    "question": "A session's structure should be:",
+    "options": [
+      "Main activity, warm-up, cool-down",
+      "Warm-up, main activity, cool-down and stretching",
+      "Cool-down, main activity",
+      "Warm-up and main activity only"
+    ],
+    "answer": "Warm-up, main activity, cool-down and stretching",
+    "explanation": "Preparation and recovery are part of every session.",
+    "topic": "pe-l3-2"
+  },
+  {
+    "id": "kc11",
+    "question": "Ice is applied to an acute soft-tissue injury to:",
+    "options": [
+      "Increase blood flow",
+      "Reduce bleeding, swelling and pain",
+      "Warm the tissue",
+      "Increase flexibility"
+    ],
+    "answer": "Reduce bleeding, swelling and pain",
+    "explanation": "Cold reduces blood flow and limits secondary damage.",
+    "topic": "pe-l3-3"
+  },
+  {
+    "id": "kc12",
+    "question": "A free throw in basketball is best classified as:",
+    "options": [
+      "Open",
+      "Closed",
+      "Continuous",
+      "Gross and open"
+    ],
+    "answer": "Closed",
+    "explanation": "The environment is stable and the movement is consistent.",
+    "topic": "pe-l4-1"
+  },
+  {
+    "id": "kc13",
+    "question": "Immediate, specific feedback is most useful in the:",
+    "options": [
+      "Autonomous stage",
+      "Cognitive stage",
+      "Elite stage",
+      "Recovery stage"
+    ],
+    "answer": "Cognitive stage",
+    "explanation": "Novices need clear, quick information to build the movement pattern.",
+    "topic": "pe-l4-2"
+  },
+  {
+    "id": "kc14",
+    "question": "Too much arousal for a fine skill typically causes:",
+    "options": [
+      "Better accuracy",
+      "Tension and loss of control",
+      "Improved decisions",
+      "Increased flexibility"
+    ],
+    "answer": "Tension and loss of control",
+    "explanation": "Precision degrades at high arousal.",
+    "topic": "pe-l4-3"
+  },
+  {
+    "id": "kc15",
+    "question": "Channelling arousal through breathing, routines and self-talk is called:",
+    "options": [
+      "Doping",
+      "Psychological skills training",
+      "Periodisation",
+      "Tapering"
+    ],
+    "answer": "Psychological skills training",
+    "explanation": "These techniques are learned and practised like physical skills.",
+    "topic": "pe-l4-3"
+  },
+  {
+    "id": "kc16",
+    "question": "An umpire's main responsibilities include:",
+    "options": [
+      "Coaching the teams",
+      "Applying the rules, controlling the game and protecting players",
+      "Selling tickets",
+      "Choosing the team"
+    ],
+    "answer": "Applying the rules, controlling the game and protecting players",
+    "explanation": "Officials ensure the contest is safe and fair.",
+    "topic": "pe-l5-1"
+  },
+  {
+    "id": "kc17",
+    "question": "An event budget is a statement of:",
+    "options": [
+      "Expected income and expenditure",
+      "The rules",
+      "The fixture list only",
+      "The team selection"
+    ],
+    "answer": "Expected income and expenditure",
+    "explanation": "It shows whether the event can pay for itself.",
+    "topic": "pe-l5-2"
+  },
+  {
+    "id": "kc18",
+    "question": "The purpose of a risk assessment is to:",
+    "options": [
+      "Prove the coach is careful",
+      "Reduce the likelihood and severity of harm through control measures",
+      "End all contact sport",
+      "Satisfy insurers only"
+    ],
+    "answer": "Reduce the likelihood and severity of harm through control measures",
+    "explanation": "It is a practical, recorded process reviewed regularly.",
+    "topic": "pe-l5-3"
+  },
+  {
+    "id": "kc19",
+    "question": "Carbohydrate is the main fuel for:",
+    "options": [
+      "Low-intensity walking only",
+      "High-intensity exercise",
+      "Sleep",
+      "Digestion"
+    ],
+    "answer": "High-intensity exercise",
+    "explanation": "Glycolysis supplies energy quickly for hard efforts.",
+    "topic": "pe-l6-1"
+  },
+  {
+    "id": "kc20",
+    "question": "Water is important during exercise because it:",
+    "options": [
+      "Improves flavour",
+      "Regulates temperature and maintains blood volume and performance",
+      "Provides energy",
+      "Builds muscle"
+    ],
+    "answer": "Regulates temperature and maintains blood volume and performance",
+    "explanation": "Sweat losses in tropical heat are large and must be replaced.",
+    "topic": "pe-l6-1"
+  },
+  {
+    "id": "kc21",
+    "question": "Weight control for an athlete should be based on:",
+    "options": [
+      "Skipping meals",
+      "Energy balance with adequate nutrient intake and increased activity",
+      "Diuretics",
+      "Sauna use"
+    ],
+    "answer": "Energy balance with adequate nutrient intake and increased activity",
+    "explanation": "Energy balance determines weight; nutrition quality protects health.",
+    "topic": "pe-l6-2"
+  },
+  {
+    "id": "kc22",
+    "question": "An athlete taking prescribed medicine should:",
+    "options": [
+      "Take it without checking",
+      "Check it against the banned list and apply for an exemption if needed",
+      "Stop all training",
+      "Ignore testing rules"
+    ],
+    "answer": "Check it against the banned list and apply for an exemption if needed",
+    "explanation": "Strict liability makes checking the athlete's responsibility.",
+    "topic": "pe-l6-2"
+  },
+  {
+    "id": "kc23",
+    "question": "Regular physical activity reduces the risk of:",
+    "options": [
+      "Only obesity",
+      "Hypertension, type 2 diabetes, heart disease and depression",
+      "Only fractures",
+      "No conditions"
+    ],
+    "answer": "Hypertension, type 2 diabetes, heart disease and depression",
+    "explanation": "It is effective in prevention and in treatment.",
+    "topic": "pe-l6-3"
+  },
+  {
+    "id": "kc24",
+    "question": "The largest health improvement usually comes from:",
+    "options": [
+      "Elite training",
+      "Moving from inactive to moderately active",
+      "Sprinting once a year",
+      "Watching sport"
+    ],
+    "answer": "Moving from inactive to moderately active",
+    "explanation": "The greatest gain is at the bottom of the activity range.",
+    "topic": "pe-l6-3"
+  },
+  {
+    "id": "kc25",
+    "question": "School physical education contributes to public health by:",
+    "options": [
+      "Selecting only the best athletes",
+      "Building skill, fitness and confidence in all students",
+      "Replacing family activity",
+      "Reducing academic time"
+    ],
+    "answer": "Building skill, fitness and confidence in all students",
+    "explanation": "Inclusive programmes produce lifelong participation.",
+    "topic": "pe-l6-3"
+  }
+]
