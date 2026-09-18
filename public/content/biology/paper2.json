@@ -1,0 +1,614 @@
+[
+  {
+    "id": "bi-p2-01",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "Data analysis: sampling a mangrove plant community",
+    "topic": "food-chains",
+    "commandWords": [
+      "Name",
+      "Describe",
+      "State",
+      "Calculate",
+      "Draw",
+      "Explain"
+    ],
+    "marks": 25,
+    "suggestedMinutes": 30,
+    "source": "A group of students studied the organisms living in and around a mangrove swamp on the Caribbean coast.\n\nTABLE 1: RESULTS FROM QUADRAT THROWS\n(Each quadrat is 1 m2. Ten quadrats were thrown at random in the mangrove area.)\n\nPlant species              Quadrat number\n                           1   2   3   4   5   6   7   8   9   10\nSmall flowering shrub      5   2   3   2   2   1   2   1   3   1\nGrass growing in clumps    4   2   3   2   0   1   2   4   0   0\nSucculent plant           10  10  12  15  20  25  15  22   5  18\n\nThe area of mangrove sampled for the shrubs is 500 m2.\n\nTABLE 2: FEEDING RELATIONSHIPS OF ORGANISMS IN THE POND\nOrganism            Food eaten\nCrab                Decaying plant matter\nGuppy (fish)        Mosquito larvae, tadpoles\nWater bird          Guppy, frog, crab\nWater snail         Algae, water weed\nMosquito larvae     Moss, decaying plant matter\nWater weed          Makes its own food by photosynthesis\nFrog                Dragonfly adults, mosquito larvae\nTadpoles            Water weed\nDragonfly adults    Mosquito adults, mosquito larvae\nMosquito adults     Nectar (it makes no food of its own)\n\nTABLE 3: FROG POPULATION OBSERVED FROM OCTOBER 1997 TO OCTOBER 2004\nYear    Population size of frogs (number of individuals)\n1997    125\n1998     75\n1999    no data (no field trip because of a hurricane)\n2000    110\n2001     80\n2002     35\n2003      5\n2004      5",
+    "prompt": "Answer ALL parts. Use the tables of data in your answers. Show your working for every calculation and give the unit with every numerical answer. Plot the graph in part (d)(i) on graph paper.",
+    "planningHints": [
+      "Species density is the number of individuals of a species per unit area; divide the total number counted by the total area sampled.",
+      "Percentage frequency is the number of quadrats in which a species occurs, divided by the total number of quadrats, multiplied by 100.",
+      "Put the independent variable (the year) on the x-axis and the dependent variable (population size) on the y-axis, and label each axis with the quantity and its unit.",
+      "A food web is several food chains joined together; draw the arrows from the organism that is eaten to the organism that eats it."
+    ],
+    "parts": [
+      {
+        "label": "(a)(i)",
+        "prompt": "Name ONE piece of apparatus that the students could use to sample the distribution of the plants.",
+        "marks": 1,
+        "commandWords": [
+          "Name"
+        ],
+        "modelAnswer": "A quadrat (accept: a 1 m2 quadrat frame, or a transect line with a quadrat).",
+        "markScheme": [
+          "1 mark for naming a quadrat (accept a 1 m2 quadrat frame)."
+        ]
+      },
+      {
+        "label": "(a)(ii)",
+        "prompt": "Describe how the apparatus you named in (a)(i) can be used to study the distribution of the plant species in this area.",
+        "marks": 3,
+        "commandWords": [
+          "Describe"
+        ],
+        "modelAnswer": "The quadrat is placed at random in the area to be sampled, for example by throwing it over the shoulder or by using random coordinates. For each quadrat placed, every plant species inside the frame is identified and the number of individuals of each species is counted and recorded. The quadrat is then placed at a number of different random positions and the counts are repeated, and the results are used to calculate the density or the percentage frequency of each species.",
+        "markScheme": [
+          "1 mark for placing the quadrat at random (throwing it, or using random coordinates).",
+          "1 mark for counting / identifying the plants of each species inside the frame for each throw.",
+          "1 mark for repeating the throws at several positions and using the results to calculate density or frequency."
+        ]
+      },
+      {
+        "label": "(a)(iii)",
+        "prompt": "State ONE precaution that should be taken when using the apparatus.",
+        "marks": 1,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "Place the quadrat at random, not where the plants look most interesting, so that the sample is representative (accept: take a large number of throws; or count only plants whose roots/root-like base lie inside the frame).",
+        "markScheme": [
+          "1 mark for a valid precaution: random placement / large number of throws / a consistent rule for plants on the edge of the quadrat."
+        ]
+      },
+      {
+        "label": "(b)(i)",
+        "prompt": "Calculate the species density of the small flowering shrub in the area. Show your working and give the unit.",
+        "marks": 2,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Total number of shrubs counted = 22. Total area sampled = 10 quadrats x 1.0 m2 = 10 m2. Species density = 22 / 10 = 2.2 per m2",
+        "markScheme": [
+          "1 mark for the correct method, total number counted divided by total area sampled (22 / 10).",
+          "1 mark for the answer 2.2 shrubs per m2 (accept 2.2 m-2)."
+        ]
+      },
+      {
+        "label": "(b)(ii)",
+        "prompt": "Calculate the percentage frequency of the grass in the sampled area.",
+        "marks": 2,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "The grass occurs in 7 of the 10 quadrats. Percentage frequency = (7 / 10) x 100 = 70 %",
+        "markScheme": [
+          "1 mark for the correct number of quadrats in which the grass occurs (7 of 10).",
+          "1 mark for the answer 70 %."
+        ]
+      },
+      {
+        "label": "(b)(iii)",
+        "prompt": "Use your answer to (b)(i) to estimate the total number of small flowering shrubs in the whole 500 m2 of mangrove.",
+        "marks": 2,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Estimated number = species density x area = 2.2 per m2 x 500 m2 = 1100 shrubs",
+        "markScheme": [
+          "1 mark for multiplying the density by the total area (2.2 x 500).",
+          "1 mark for the answer 1100 (accept 1050 - 1150 to allow for sampling error)."
+        ]
+      },
+      {
+        "label": "(c)(i)",
+        "prompt": "Using the information in Table 2, draw a food web for the pond that contains all TEN organisms. Use arrows to show the direction in which energy flows.",
+        "marks": 3,
+        "commandWords": [
+          "Draw"
+        ],
+        "modelAnswer": "The food web joins the food chains together. The water weed, the moss and the algae are the producers (the water weed makes its own food by photosynthesis); the mosquito adults, the water snail, the mosquito larvae and the tadpoles feed on the producers or on decaying matter; the frog, the dragonfly adults and the guppy are the consumers that eat them; and the water bird is the top consumer that eats the guppy, the frog and the crab. Every arrow points from the organism that is eaten to the organism that eats it, for example water weed to tadpole, tadpole to guppy, guppy to water bird.",
+        "markScheme": [
+          "1 mark for correctly identifying the producers (water weed, moss, algae) and placing them at the base of the web.",
+          "1 mark for joining at least four of the food chains correctly so that the frog, dragonfly adults and guppy feed on more than one organism each.",
+          "1 mark for the water bird as the top consumer and for every arrow pointing in the direction of energy flow (eaten to eater)."
+        ]
+      },
+      {
+        "label": "(c)(ii)",
+        "prompt": "Explain why there are usually no more than four trophic levels in a food web.",
+        "marks": 2,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "Energy is lost at every trophic level, mainly as heat during respiration and in the undigested material that is egested. Only about 10 % of the energy in one level is passed on to the next, so after three or four transfers there is too little energy left to support another population of consumers.",
+        "markScheme": [
+          "1 mark for stating that energy is lost at each trophic level (as heat in respiration, and in egested/undigested material).",
+          "1 mark for explaining that only about 10 % of the energy is transferred, so too little energy remains after about four levels to support another level."
+        ]
+      },
+      {
+        "label": "(c)(iii)",
+        "prompt": "State TWO physical (abiotic) factors that could affect the population of the organisms in the pond.",
+        "marks": 2,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "Light intensity (which limits photosynthesis by the water weed), temperature, pH of the water, dissolved oxygen concentration, or salinity of the water. (Any TWO.)",
+        "markScheme": [
+          "1 mark for each correct abiotic factor, maximum 2 marks (light intensity, temperature, pH, dissolved oxygen, salinity, water depth)."
+        ]
+      },
+      {
+        "label": "(d)(i)",
+        "prompt": "Plot a graph of the frog population size against the year, using the data in Table 3. Label each axis with the quantity and its unit, choose a suitable scale and plot the points accurately.",
+        "marks": 4,
+        "commandWords": [
+          "Draw"
+        ],
+        "modelAnswer": "The year is on the x-axis and the population size (number of individuals) on the y-axis. A suitable scale, for example 1 cm = 2 years on the x-axis and 1 cm = 20 frogs on the y-axis, uses more than half of the paper. The seven points that were recorded are plotted accurately: 1997 = 125, 1998 = 75, 2000 = 110, 2001 = 80, 2002 = 35, 2003 = 5 and 2004 = 5. The point for 1999 is left out and is not joined across.",
+        "markScheme": [
+          "1 mark for both axes labelled with the correct quantity and unit (year on the x-axis, number of frogs on the y-axis).",
+          "1 mark for scales that are linear, clearly marked and use at least half of each axis.",
+          "1 mark for all seven recorded points plotted accurately.",
+          "1 mark for the point for 1999 being left out (the line is not joined across the missing year)."
+        ]
+      },
+      {
+        "label": "(d)(ii)",
+        "prompt": "Account for the trend in the frog population before the hurricane (1997-1998) and after it (2000-2004).",
+        "marks": 3,
+        "commandWords": [
+          "Account for"
+        ],
+        "modelAnswer": "Between 1997 and 1998 the population fell from 125 to 75, probably because of normal losses such as predation, disease and competition for food, and because the population had reached the carrying capacity of the pond. The hurricane in 1999 damaged the habitat: it destroyed plants, washed away breeding sites and food, and killed many frogs, so after the hurricane the population fell sharply from 110 in 2000 to 5 in 2004 as the surviving frogs struggled to breed and find food and shelter in the damaged habitat.",
+        "markScheme": [
+          "1 mark for a valid reason for the fall before the hurricane (predation / disease / competition / reaching the carrying capacity / normal mortality).",
+          "1 mark for stating that the hurricane destroyed the habitat, killing frogs and removing their food and breeding sites.",
+          "1 mark for explaining that the surviving frogs could not breed or find enough food, so the population kept falling (2000-2004)."
+        ]
+      }
+    ],
+    "examinerTips": "The data-analysis question rewards clear use of the data and the graph. Always show your working in a density or frequency calculation, label each axis with the quantity and its unit, and do not join the graph across a year for which there is no data."
+  },
+  {
+    "id": "bi-p2-02",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "The eye and the control of the internal environment",
+    "topic": "excretion-homeostasis",
+    "commandWords": [
+      "Identify",
+      "Explain",
+      "Name",
+      "State"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 24,
+    "source": "Figure 1 shows a vertical section through the human eye with four parts labelled A, B, C and D.\n\nFIGURE 1 (description): the front of the eye is covered by a transparent outer layer; behind it is a coloured ring with a hole in the centre; a curved lens sits behind the hole, held by muscles; and the inside of the back wall of the eye is lined by a light-sensitive layer. A, B, C and D label, in order: the transparent front layer, the coloured ring, the curved lens, and the light-sensitive lining at the back.",
+    "prompt": "Answer ALL parts. Where a named structure is asked for, use the correct biological name.",
+    "planningHints": [
+      "The rods and cones of the retina are the receptors that respond to light; the information travels along the optic nerve to the brain.",
+      "Accommodation is brought about by the muscles and the suspensory ligaments changing the shape of the lens.",
+      "Homeostasis keeps the internal environment constant using negative feedback: a change is detected, a corrective response is triggered, and the change is reversed."
+    ],
+    "parts": [
+      {
+        "label": "(a)(i)",
+        "prompt": "Identify the four parts of the eye labelled A, B, C and D in Figure 1.",
+        "marks": 4,
+        "commandWords": [
+          "Identify"
+        ],
+        "modelAnswer": "A is the cornea, B is the iris, C is the lens and D is the retina.",
+        "markScheme": [
+          "1 mark for A = cornea.",
+          "1 mark for B = iris.",
+          "1 mark for C = lens.",
+          "1 mark for D = retina."
+        ]
+      },
+      {
+        "label": "(a)(ii)",
+        "prompt": "Explain how the eye is able to produce a clear image of a near object, and describe the change in the shape of the lens that is involved.",
+        "marks": 4,
+        "commandWords": [
+          "Explain",
+          "Describe"
+        ],
+        "modelAnswer": "Light from the near object is reflected into the eye and is refracted (bent) mainly by the cornea and the lens, so that it is focused on the retina. The ciliary muscles contract, which releases the tension on the suspensory ligaments, and the lens becomes thicker (more convex). This shorter focal length focuses the diverging rays from the near object onto the retina. The light-sensitive cells (rods and cones) in the retina are stimulated, and impulses pass along the optic nerve to the brain, which interprets the image.",
+        "markScheme": [
+          "1 mark for light being refracted by the cornea and the lens and focused on the retina.",
+          "1 mark for the ciliary muscles contracting and the suspensory ligaments slackening.",
+          "1 mark for the lens becoming thicker / more convex (shorter focal length) to focus the diverging rays.",
+          "1 mark for the stimulation of the rods and cones in the retina and the impulses passing along the optic nerve to the brain."
+        ]
+      },
+      {
+        "label": "(a)(iii)",
+        "prompt": "A person cannot see distant objects clearly, but can see near objects clearly. Name this eye defect and state the type of lens used to correct it.",
+        "marks": 2,
+        "commandWords": [
+          "Name",
+          "State"
+        ],
+        "modelAnswer": "The defect is short sight (near sight / myopia). It is corrected with a diverging (concave) lens.",
+        "markScheme": [
+          "1 mark for naming the defect: short sight (myopia / near sight).",
+          "1 mark for the corrective lens: a diverging (concave) lens."
+        ]
+      },
+      {
+        "label": "(b)(i)",
+        "prompt": "Excess amino acids cannot be stored by the body. Explain what happens to the excess amino acids and how the waste product is removed from the blood by the kidney.",
+        "marks": 3,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "Excess amino acids are broken down in the liver by deamination. The amino group is removed and converted into urea, and the remainder is used as a source of energy. The urea is carried in the blood plasma to the kidneys, where each kidney contains many nephrons. In the nephron the blood is filtered at the glomerulus under pressure, and most of the water, glucose and salts are reabsorbed in the tubule. The urea is not reabsorbed, so it is concentrated in the small volume of urine that passes down the ureter to the bladder for excretion.",
+        "markScheme": [
+          "1 mark for deamination of excess amino acids in the liver, forming urea.",
+          "1 mark for urea being carried in the blood plasma to the kidney and filtered out at the glomerulus (ultrafiltration).",
+          "1 mark for the urea not being reabsorbed while useful substances are reabsorbed, so the urea leaves the body in urine."
+        ]
+      },
+      {
+        "label": "(b)(ii)",
+        "prompt": "Explain how negative feedback keeps the water content of the blood constant when a person has been sweating heavily.",
+        "marks": 2,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "Heavy sweating lowers the water content of the blood, and this change is detected by receptors in the hypothalamus. The pituitary gland releases more ADH (antidiuretic hormone), which makes the collecting ducts of the kidney tubules more permeable to water. More water is reabsorbed, so less urine (of higher concentration) is produced and the water content of the blood returns to normal.",
+        "markScheme": [
+          "1 mark for the change being detected by the hypothalamus and the pituitary releasing more ADH.",
+          "1 mark for more water being reabsorbed in the kidney tubules so that less, more concentrated urine is produced and the blood water content returns to normal."
+        ]
+      }
+    ],
+    "examinerTips": "In a homeostasis answer, always name the receptor, the hormone or response and the correction: a change is detected, a corrective action follows, and the change is reversed back to normal."
+  },
+  {
+    "id": "bi-p2-03",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "Photosynthesis and the transport of water in plants",
+    "topic": "photosynthesis",
+    "commandWords": [
+      "State",
+      "Explain",
+      "Calculate",
+      "Describe"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 24,
+    "source": "A student carried out two experiments with a green plant.\n\nExperiment 1: She used a variegated leaf (a leaf with green and white areas). The plant had been kept in the dark for 48 hours. The leaf was then fixed to the plant and left in bright sunlight for six hours. Afterwards the leaf was tested for the presence of starch.\n\nTABLE 1: VOLUME OF OXYGEN COLLECTED AT DIFFERENT LIGHT INTENSITIES\nLight intensity (arbitrary units)   Volume of oxygen collected in 5.0 minutes (cm3)\n2                                    3.0\n4                                    6.0\n6                                    9.0\n8                                    11.0\n10                                   12.0\n12                                   12.0",
+    "prompt": "Answer ALL parts. Show your working for the calculation and give the unit with every numerical answer.",
+    "planningHints": [
+      "The word equation for photosynthesis names the raw materials on the left and the products on the right.",
+      "In a starch test the leaf is boiled in water, then in ethanol to remove the chlorophyll, and then iodine solution is added.",
+      "A limiting factor is the factor in shortest supply; increasing it increases the rate, until some other factor becomes limiting."
+    ],
+    "parts": [
+      {
+        "label": "(a)(i)",
+        "prompt": "Write the word equation for photosynthesis, naming the raw materials and the products.",
+        "marks": 2,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "carbon dioxide + water  ->  glucose + oxygen\n(Light energy is absorbed by chlorophyll, and the reaction takes place in the chloroplasts.)",
+        "markScheme": [
+          "1 mark for the correct raw materials: carbon dioxide and water.",
+          "1 mark for the correct products: glucose (accept carbohydrate/sugar) and oxygen."
+        ]
+      },
+      {
+        "label": "(a)(ii)",
+        "prompt": "State TWO conditions that are necessary for photosynthesis to take place.",
+        "marks": 2,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "Light and chlorophyll (accept: carbon dioxide; a suitable temperature).",
+        "markScheme": [
+          "1 mark for light.",
+          "1 mark for chlorophyll (accept carbon dioxide or a suitable temperature as the second condition)."
+        ]
+      },
+      {
+        "label": "(b)(i)",
+        "prompt": "State the result of the starch test on the green areas and on the white areas of the variegated leaf in Experiment 1, and explain the difference.",
+        "marks": 4,
+        "commandWords": [
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "The green areas of the leaf turn blue-black with iodine solution, showing that starch is present. The white areas do not turn blue-black; they stay brown/yellow, showing that no starch has been made. Starch is made only where there is chlorophyll, because chlorophyll absorbs the light energy needed for photosynthesis. The white areas have no chlorophyll, so no photosynthesis takes place there and no starch is produced.",
+        "markScheme": [
+          "1 mark for the green areas turning blue-black with iodine (starch present).",
+          "1 mark for the white areas staying brown/yellow with iodine (no starch).",
+          "1 mark for stating that starch is produced only where chlorophyll is present.",
+          "1 mark for explaining that chlorophyll absorbs the light energy needed for photosynthesis, so no photosynthesis (and no starch) in the white areas."
+        ]
+      },
+      {
+        "label": "(b)(ii)",
+        "prompt": "Explain why the plant was kept in the dark for 48 hours before Experiment 1 was carried out.",
+        "marks": 2,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "Keeping the plant in the dark stops photosynthesis, so the plant uses up (translocates) any starch already in its leaves. This destarching makes sure that any starch found in the leaf at the end of the experiment was made during the experiment, and not left over from before it.",
+        "markScheme": [
+          "1 mark for stating that the plant is destarched - the starch already present is used up.",
+          "1 mark for explaining that any starch found afterwards must have been made during the experiment."
+        ]
+      },
+      {
+        "label": "(c)(i)",
+        "prompt": "Using Table 1, calculate the rate of oxygen production at a light intensity of 10 units. Give the rate in cm3 per minute.",
+        "marks": 2,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Rate = volume / time = 12.0 cm3 / 5.0 minutes = 2.4 cm3 per minute",
+        "markScheme": [
+          "1 mark for using rate = volume / time (12.0 / 5.0).",
+          "1 mark for the answer 2.4 cm3 per minute."
+        ]
+      },
+      {
+        "label": "(c)(ii)",
+        "prompt": "Explain why the volume of oxygen collected stops increasing between a light intensity of 10 units and 12 units.",
+        "marks": 3,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "At low light intensities the light intensity is the limiting factor, so increasing it increases the rate of photosynthesis and more oxygen is produced. Between 10 and 12 units the graph flattens, so light is no longer the limiting factor. Some other factor is now in short supply and is limiting the rate: for example the temperature is too low, or the concentration of carbon dioxide has been used up, or the plant already has as much chlorophyll as it can use.",
+        "markScheme": [
+          "1 mark for stating that light intensity was the limiting factor at the low light intensities.",
+          "1 mark for stating that light is no longer the limiting factor above 10 units (the graph has flattened).",
+          "1 mark for naming another factor that has become limiting: carbon dioxide concentration, or temperature."
+        ]
+      }
+    ],
+    "examinerTips": "When a graph of rate against a factor flattens, the factor on the x-axis has stopped being limiting - always name a different factor that has become limiting."
+  },
+  {
+    "id": "bi-p2-04",
+    "type": "write",
+    "paper": 2,
+    "section": "Section B",
+    "title": "Gaseous exchange in humans and in flowering plants",
+    "topic": "respiration",
+    "commandWords": [
+      "Describe",
+      "Compare",
+      "Explain",
+      "State"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 24,
+    "source": "Gaseous exchange is the movement of oxygen into an organism and of carbon dioxide out of it. In humans this takes place in the lungs; in a flowering plant it takes place mainly through the leaves.",
+    "prompt": "Answer ALL parts. Name every structure you refer to.",
+    "planningHints": [
+      "The mechanism of inhalation involves the ribs, the diaphragm and the volume and pressure of the thorax.",
+      "Diffusion is the movement of particles from a region of higher concentration to a region of lower concentration.",
+      "A good comparison states a feature of the human structure, the matching feature of the plant structure, and the reason the feature matters."
+    ],
+    "parts": [
+      {
+        "label": "(a)(i)",
+        "prompt": "Describe the mechanisms by which air is moved into the lungs during inhalation in humans.",
+        "marks": 4,
+        "commandWords": [
+          "Describe"
+        ],
+        "modelAnswer": "The external intercostal muscles contract, pulling the ribs upwards and outwards. At the same time the diaphragm muscles contract, so the diaphragm flattens and moves downwards. The volume of the thorax therefore increases, which lowers the pressure inside the lungs below atmospheric pressure. Air flows in through the nose or mouth, down the trachea and bronchi and into the alveoli until the pressure inside equals the pressure outside.",
+        "markScheme": [
+          "1 mark for the external intercostal muscles contracting and the ribs moving upwards and outwards.",
+          "1 mark for the diaphragm contracting and flattening (moving downwards).",
+          "1 mark for the increase in the volume of the thorax and the fall in pressure inside the lungs.",
+          "1 mark for air flowing in through the trachea and bronchi into the alveoli (until the pressures are equal)."
+        ]
+      },
+      {
+        "label": "(a)(ii)",
+        "prompt": "Explain why gaseous exchange is important in the human body.",
+        "marks": 2,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "Oxygen is needed for aerobic respiration, which releases the energy the body needs for movement, growth, keeping warm and all other life processes. Carbon dioxide is a waste product of respiration and must be removed, because it is toxic if it builds up and it would make the blood too acidic.",
+        "markScheme": [
+          "1 mark for supplying oxygen for aerobic respiration to release energy.",
+          "1 mark for removing carbon dioxide, a toxic waste product of respiration."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Compare the characteristics of the structures involved in gaseous exchange in humans and in flowering plants. You must state the name of EACH of the structures.",
+        "marks": 5,
+        "commandWords": [
+          "Compare"
+        ],
+        "modelAnswer": "In humans gaseous exchange takes place across the alveoli in the lungs; in a flowering plant the equivalent gas-exchange surfaces are the air spaces inside the spongy mesophyll of the leaf, reached through the stomata. Both surfaces are thin and have a large surface area and a moist surface so that gases can dissolve and diffuse quickly. The alveoli have a rich blood supply, so oxygen is carried away by the blood and a steep concentration gradient is maintained; the leaf is supplied by air spaces and the stomata open to the air, and the gases diffuse in and out directly without blood. In the leaf, the stomata can be closed by the guard cells to reduce water loss, whereas the human airways are always open.",
+        "markScheme": [
+          "1 mark for naming the human structure (the alveoli) and its characteristics: thin, moist, large surface area, rich blood supply.",
+          "1 mark for naming the plant structure (the air spaces in the spongy mesophyll / the stomata) and its characteristics: thin, moist, large surface area.",
+          "1 mark for giving in full the named structures in both organisms (alveoli and stomata or mesophyll air spaces).",
+          "1 mark for one similarity, such as both being thin and moist with a large surface area so that diffusion is rapid.",
+          "1 mark for one difference, such as the alveoli having a blood supply while the leaf exchanges gases with the air directly, or the stomata being able to close while the airways do not."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Explain TWO ways in which smoking tobacco may reduce the efficiency of gaseous exchange in the lungs.",
+        "marks": 4,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "1. The tar in tobacco smoke paralyses and destroys the cilia in the airways and causes the mucus-secreting cells to make more mucus. Mucus and dust therefore collect in the airways, partly blocking them and reducing the area available for gaseous exchange, and this causes the smoker's cough. 2. The smoke damages the alveoli, so they lose their elasticity and the walls may break down, leaving a smaller surface area for diffusion; this reduces the efficiency of gaseous exchange and can lead to emphysema. Cigarette smoke also contains carbon monoxide, which reduces the amount of oxygen the red blood cells can carry.",
+        "markScheme": [
+          "1 mark for the cilia being destroyed / paralysed and mucus building up (the smoker's cough).",
+          "1 mark for explaining that the mucus blocks the airways and reduces the surface area for diffusion.",
+          "1 mark for the alveoli being damaged and losing elasticity / breaking down.",
+          "1 mark for explaining that this reduces the surface area for gaseous exchange (leading to emphysema), or for the effect of carbon monoxide in reducing the oxygen carried by the blood."
+        ]
+      }
+    ],
+    "examinerTips": "A 'compare' question needs both similarities and differences, each with the correctly named structure from both organisms. Two marks are available for describing a surface well, so use all the features: thin, moist, large surface area, good supply."
+  },
+  {
+    "id": "bi-p2-05",
+    "type": "write",
+    "paper": 2,
+    "section": "Section B",
+    "title": "Transport in the blood and the human circulatory system",
+    "topic": "circulatory-system",
+    "commandWords": [
+      "Describe",
+      "Explain",
+      "State"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 24,
+    "source": "The human circulatory system is a double circulation: the right side of the heart pumps blood to the lungs and the left side pumps blood to the rest of the body. The heart valves keep the blood flowing in one direction.",
+    "prompt": "Answer ALL parts. Name every structure you refer to, and where a reason is asked for, relate it to the structure's function.",
+    "planningHints": [
+      "Follow the blood in order: vena cava, right atrium, right ventricle, pulmonary artery, lungs, pulmonary vein, left atrium, left ventricle, aorta.",
+      "An artery carries blood away from the heart, a vein carries blood towards the heart, and a capillary connects them in the tissues.",
+      "Relate each structural feature (wall thickness, lumen size, valves) to the pressure of the blood and the job the vessel does."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Describe the series of events that take place as blood passes from the vena cava to the aorta and the reason for the double circulation in mammals.",
+        "marks": 6,
+        "commandWords": [
+          "Describe"
+        ],
+        "modelAnswer": "Deoxygenated blood returns from the body in the vena cava and enters the right atrium. The right atrium contracts and pushes the blood through the tricuspid valve into the right ventricle; the valve prevents backflow. The right ventricle contracts and pumps the blood through the pulmonary valve into the pulmonary artery, which carries it to the lungs. In the lungs the blood takes up oxygen and gives off carbon dioxide. The oxygenated blood returns to the heart in the pulmonary vein and enters the left atrium, passes through the bicuspid valve into the left ventricle. The thick muscular wall of the left ventricle contracts and forces the blood through the aorta to the whole body. Blood passes through the lungs before being pumped around the body so that it is fully oxygenated and at a high enough pressure to reach every tissue.",
+        "markScheme": [
+          "1 mark for the vena cava to right atrium to right ventricle (through the tricuspid valve).",
+          "1 mark for the right ventricle pumping blood to the lungs in the pulmonary artery.",
+          "1 mark for the return of oxygenated blood in the pulmonary vein to the left atrium.",
+          "1 mark for the left atrium to left ventricle (through the bicuspid valve).",
+          "1 mark for the left ventricle pumping blood to the body in the aorta, with the valves preventing backflow.",
+          "1 mark for the reason for the double circulation: blood is passed through the lungs first so that it is oxygenated and pumped to the body at high pressure."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Compare the structure of an artery with that of a vein, and relate each difference to the function of the vessel.",
+        "marks": 4,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "An artery has a thick muscular and elastic wall and a narrow lumen, because blood leaves the heart at high pressure and the vessel must withstand the pressure and recoil to keep the blood moving. A vein has a thinner wall and a wide lumen, because blood returning to the heart is at low pressure. A vein also has semilunar valves along its length, which prevent the blood from flowing backwards, whereas an artery has no valves (except at its exit from the heart).",
+        "markScheme": [
+          "1 mark for an artery having a thick, muscular/elastic wall and a narrow lumen.",
+          "1 mark for relating the artery's structure to blood leaving the heart at high pressure.",
+          "1 mark for a vein having a thin wall and a wide lumen, and relating this to the low pressure of the returning blood.",
+          "1 mark for the semilunar valves in veins preventing backflow (and their absence in arteries)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Explain how TWO lifestyle or dietary factors can increase a person's risk of developing coronary heart disease.",
+        "marks": 5,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "1. A diet high in saturated fat and cholesterol raises the level of cholesterol in the blood. Cholesterol and other fatty substances are deposited in the walls of the coronary arteries as atheroma / plaque, which narrows the arteries and restricts the blood flow to the heart muscle. The heart muscle therefore receives less oxygen when it is working harder, causing chest pain (angina) or a heart attack if an artery becomes blocked. 2. Smoking raises the heart rate and blood pressure and makes the blood more likely to clot. The higher pressure damages the artery walls, and a clot may block a narrowed coronary artery, cutting off the blood supply to part of the heart. (Stress, lack of exercise, obesity and a high salt intake raise the risk in the same ways.)",
+        "markScheme": [
+          "1 mark for naming a valid factor: a diet high in saturated fat/cholesterol, smoking, little exercise, obesity, high salt intake or stress.",
+          "1 mark for explaining how a high-saturated-fat diet deposits cholesterol in the coronary arteries and narrows them.",
+          "1 mark for relating the narrowed arteries to a reduced blood/oxygen supply to the heart muscle (angina or heart attack).",
+          "1 mark for a second valid factor, such as smoking raising blood pressure and the risk of clotting.",
+          "1 mark for explaining the consequence of the second factor, for example that a clot can block a narrowed artery and cause a heart attack."
+        ]
+      }
+    ],
+    "examinerTips": "In a structure-and-function question, always state the feature and then say why it matters: 'a thick wall because the blood is at high pressure'. Naming the structure alone is usually worth only one mark."
+  },
+  {
+    "id": "bi-p2-06",
+    "type": "write",
+    "paper": 2,
+    "section": "Section B",
+    "title": "Natural selection, selective breeding and genetic engineering",
+    "topic": "selection-evolution",
+    "commandWords": [
+      "State",
+      "Explain",
+      "Discuss"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 24,
+    "source": "Populations of organisms vary, and the environment acts on that variation. Humans have also changed species directly, by selective breeding and, more recently, by genetic engineering. For example, scientists have transferred a gene from the bacterium Bacillus thuringiensis into maize so that the plant produces its own insecticide, and the human insulin gene has been transferred into bacteria to make insulin for treating diabetes.",
+    "prompt": "Answer ALL parts. In part (c) you must state what genetic engineering means, discuss TWO possible negative outcomes and THREE benefits.",
+    "planningHints": [
+      "Natural selection acts on variation that already exists: those individuals whose characteristics make them best suited to the environment survive and reproduce, so their alleles become more frequent.",
+      "Selective breeding is humans choosing which individuals to breed; natural selection is the environment choosing which survive.",
+      "For a 'discuss' question give a balanced answer: negative outcomes with reasons and benefits with reasons."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "State what is meant by 'natural selection' and explain why genetic variation is important in natural selection.",
+        "marks": 4,
+        "commandWords": [
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "Natural selection is the process in which individuals that are better adapted to their environment are more likely to survive and reproduce, passing on the alleles that gave them the advantageous characteristics; those alleles therefore become more common in the population. Genetic variation matters because it gives the population a range of characteristics to select from - for example differences in resistance to a disease or in beak size. Without variation every individual would be equally suited to the environment, so there would be nothing for selection to act on and the population could not adapt if the environment changed.",
+        "markScheme": [
+          "1 mark for stating that better-adapted individuals survive and reproduce, passing on their alleles.",
+          "1 mark for stating that the advantageous alleles become more common in the population over generations.",
+          "1 mark for stating that variation gives a range of characteristics for selection to act on.",
+          "1 mark for explaining that without variation a population could not adapt to a change in the environment (all individuals would be equally suited)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain TWO ways in which selective breeding of a crop plant differs from natural selection, and give TWO possible disadvantages of selective breeding.",
+        "marks": 4,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "1. In selective breeding it is the breeder, not the environment, who chooses which individuals reproduce: only the plants with the desired characteristics are allowed to breed. 2. Selective breeding acts on desirable features chosen by humans (for example larger fruit or higher yield) and can produce very rapid change in a few generations, while natural selection acts on features that help survival and usually takes many generations. Disadvantages: selective breeding reduces genetic variation, so the crop becomes genetically uniform and is more easily wiped out by a new disease or a change in climate; and favourable and unfavourable alleles may be linked, so a desirable feature such as high yield may come with an undesirable one such as poor disease resistance, or the plants may need extra fertiliser and water.",
+        "markScheme": [
+          "1 mark for the breeder (humans) choosing which individuals breed, rather than the environment.",
+          "1 mark for selective breeding being driven by characteristics wanted by humans and producing rapid change, whereas natural selection acts on characteristics that aid survival over many generations.",
+          "1 mark for a valid disadvantage, such as reduced genetic variation / a genetically uniform crop that is vulnerable to a new disease.",
+          "1 mark for a second valid disadvantage, such as linkage of undesirable alleles, or the crop needing extra fertiliser, water or care."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "State what is meant by genetic engineering. Discuss TWO possible negative outcomes and THREE benefits of continuing to use genetic engineering techniques.",
+        "marks": 7,
+        "commandWords": [
+          "Discuss"
+        ],
+        "modelAnswer": "Genetic engineering is the deliberate transfer of a gene (or genes) from one organism into the cells of another organism, so that the receiving organism shows the new characteristic; the gene may come from a different species, and the organism produced is called a genetically modified organism.\n\nNegative outcomes. 1. The transferred gene may escape into wild populations, for example when pollen from an insect-resistant crop fertilises a wild relative, producing a 'superweed' that cannot be controlled. 2. The long-term effect on human health is not fully known, and some people are concerned that the new gene may cause an unexpected allergic reaction or alter the nutritional value of a food; there are also concerns about the ethics of altering living things and about the cost of GM seed to small farmers.\n\nBenefits. 1. Crops such as Bt maize make their own insecticide, so fewer chemical insecticides are needed; this lowers costs and reduces pollution of soil and water. 2. Crops can be given higher yields and resistance to drought, disease or salt, which helps to feed a growing population and reduce hunger, especially on poor soils. 3. In medicine, the human insulin gene has been transferred into bacteria so that insulin can be produced in large quantities to treat diabetes, and vaccines, human growth hormone and other medicines are made in the same way - safer and in greater quantity than extracting them from animals.",
+        "markScheme": [
+          "1 mark for a definition of genetic engineering: the transfer of a gene from one organism into another, from a different species, so that the new characteristic appears.",
+          "1 mark for naming the product a genetically modified organism (or for stating that genes can be moved between species).",
+          "1 mark for one negative outcome with a reason (for example the gene escaping into wild populations and creating a superweed).",
+          "1 mark for a second negative outcome with a reason (for example unknown long-term health effects / allergic reactions / ethical concerns / the cost of GM seed to small farmers).",
+          "1 mark for one benefit with a reason (for example insect-resistant Bt crops so that fewer chemical insecticides are used, reducing pollution).",
+          "1 mark for a second benefit with a reason (for example higher yield and resistance to drought or disease, which helps to feed the growing population).",
+          "1 mark for a third benefit with a reason (for example the production of human insulin, vaccines or growth hormone in large quantities for medicine)."
+        ]
+      }
+    ],
+    "examinerTips": "A 'discuss' question wants a balanced answer: give both the negative outcomes and the benefits, each with a reason. Always define the key term asked for at the start of the answer, as that carries a mark."
+  }
+]
