@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "p1",
+    "question": "A T-square is used mainly to draw:",
+    "options": [
+      "Circles",
+      "Horizontal lines",
+      "Curves",
+      "Ellipses"
+    ],
+    "answer": "Horizontal lines",
+    "explanation": "The T-square slides along the board edge and its blade draws horizontal lines.",
+    "topic": "td-l1-1"
+  },
+  {
+    "id": "p2",
+    "question": "Which pair of set squares is standard?",
+    "options": [
+      "30-60-90 and 45-45-90",
+      "20-70-90 and 40-50-90",
+      "60-60-60 and 30-30-120",
+      "Any two right-angled triangles"
+    ],
+    "answer": "30-60-90 and 45-45-90",
+    "explanation": "These two give 30, 45, 60 and 90 degrees, and combinations of them give other angles.",
+    "topic": "td-l1-1"
+  },
+  {
+    "id": "p3",
+    "question": "When using a compass the needle point should be:",
+    "options": [
+      "Above the pencil lead level",
+      "Level with the pencil lead and sharp",
+      "Blunt and short",
+      "Replaced by a pencil"
+    ],
+    "answer": "Level with the pencil lead and sharp",
+    "explanation": "If the needle and lead are not level the centre shifts and the circle is inaccurate.",
+    "topic": "td-l1-1"
+  },
+  {
+    "id": "p4",
+    "question": "A French curve is used to draw:",
+    "options": [
+      "Straight lines",
+      "Smooth irregular curves",
+      "Circles",
+      "Parallel lines"
+    ],
+    "answer": "Smooth irregular curves",
+    "explanation": "French curves give smooth curves that cannot be drawn with a compass.",
+    "topic": "td-l1-1"
+  },
+  {
+    "id": "p5",
+    "question": "Which pencil grade is used for construction lines?",
+    "options": [
+      "Very soft and dark",
+      "Harder and lighter",
+      "A chisel point",
+      "A ballpoint"
+    ],
+    "answer": "Harder and lighter",
+    "explanation": "Harder leads give light lines that are easily erased, and construction lines must not show in the finished drawing.",
+    "topic": "td-l1-1"
+  },
+  {
+    "id": "p6",
+    "question": "A divider is used to:",
+    "options": [
+      "Draw circles",
+      "Transfer distances",
+      "Measure angles",
+      "Letter a drawing"
+    ],
+    "answer": "Transfer distances",
+    "explanation": "Dividers step off and transfer distances accurately.",
+    "topic": "td-l1-1"
+  },
+  {
+    "id": "p8",
+    "question": "A hidden edge is shown by:",
+    "options": [
+      "A thick continuous line",
+      "A thin short-dashed line",
+      "A chain line",
+      "A wavy line"
+    ],
+    "answer": "A thin short-dashed line",
+    "explanation": "Dashed lines show edges that cannot be seen from the viewing direction.",
+    "topic": "td-l1-2"
+  },
+  {
+    "id": "p9",
+    "question": "A chain line with long and short dashes is used for:",
+    "options": [
+      "Outlines",
+      "Centre lines and cutting planes",
+      "Dimensions",
+      "Lettering guides"
+    ],
+    "answer": "Centre lines and cutting planes",
+    "explanation": "Chain lines mark axes of symmetry and the paths of cutting planes.",
+    "topic": "td-l1-2"
+  },
+  {
+    "id": "p10",
+    "question": "The title block of a drawing normally carries:",
+    "options": [
+      "Only the title",
+      "Title, scale, date, drawing number and name",
+      "Only the dimensions",
+      "The parts list"
+    ],
+    "answer": "Title, scale, date, drawing number and name",
+    "explanation": "The title block identifies the drawing and records who drew it and when.",
+    "topic": "td-l1-2"
+  },
+  {
+    "id": "p11",
+    "question": "Dimension figures on a drawing state:",
+    "options": [
+      "The measured length on the sheet",
+      "The true size of the feature",
+      "The scale",
+      "The tolerance only"
+    ],
+    "answer": "The true size of the feature",
+    "explanation": "Dimensions always give the real dimension, whatever the scale.",
+    "topic": "td-l1-2"
+  },
+  {
+    "id": "p12",
+    "question": "Standard technical lettering is:",
+    "options": [
+      "Cursive and flowing",
+      "Single-stroke Gothic capitals, upright or inclined",
+      "Very small and close together",
+      "Written with a ballpoint"
+    ],
+    "answer": "Single-stroke Gothic capitals, upright or inclined",
+    "explanation": "Single-stroke letters are quick to draw and easy to read.",
+    "topic": "td-l1-2"
+  },
+  {
+    "id": "p13",
+    "question": "Adjacent letters and words in standard lettering should be:",
+    "options": [
+      "Touching",
+      "Spaced so the text is legible",
+      "All the same height as the drawing",
+      "Very widely spaced"
+    ],
+    "answer": "Spaced so the text is legible",
+    "explanation": "Letter and word spacing is part of legibility.",
+    "topic": "td-l1-2"
+  },
+  {
+    "id": "p14",
+    "question": "A drawing at a scale of 1:50 means:",
+    "options": [
+      "The drawing is fifty times the object",
+      "Every drawn length is one fiftieth of the real length",
+      "The object is fifty metres long",
+      "The drawing is half size"
+    ],
+    "answer": "Every drawn length is one fiftieth of the real length",
+    "explanation": "The first figure refers to the drawing and the second to the object.",
+    "topic": "td-l1-3"
+  },
+  {
+    "id": "p15",
+    "question": "A wall 4 m long drawn at 1:20 measures:",
+    "options": [
+      "20 mm",
+      "200 mm",
+      "2 mm",
+      "2000 mm"
+    ],
+    "answer": "200 mm",
+    "explanation": "4000 mm divided by 20 gives 200 mm on the sheet.",
+    "topic": "td-l1-3"
+  },
+  {
+    "id": "p16",
+    "question": "Which scale suits a small machined component needing detail?",
+    "options": [
+      "1:100",
+      "1:50",
+      "2:1",
+      "1:200"
+    ],
+    "answer": "2:1",
+    "explanation": "An enlargement scale shows small parts clearly.",
+    "topic": "td-l1-3"
+  },
+  {
+    "id": "p17",
+    "question": "If a drawing is marked NTS it means:",
+    "options": [
+      "Not to scale",
+      "National Technical Standard",
+      "No tolerance stated",
+      "New Title Sheet"
+    ],
+    "answer": "Not to scale",
+    "explanation": "Such dimensions must never be scaled from the drawing.",
+    "topic": "td-l1-3"
+  },
+  {
+    "id": "p18",
+    "question": "The overall length of a room 6 m x 4 m drawn at 1:50 gives a drawn area of:",
+    "options": [
+      "24 square centimetres",
+      "96 square centimetres",
+      "240 square centimetres",
+      "48 square centimetres"
+    ],
+    "answer": "96 square centimetres",
+    "explanation": "Drawn dimensions are 120 mm by 80 mm, giving 9600 mm2 = 96 cm2.",
+    "topic": "td-l1-3"
+  },
+  {
+    "id": "p19",
+    "question": "The angle between the sides of a regular hexagon is:",
+    "options": [
+      "60 degrees",
+      "120 degrees",
+      "108 degrees",
+      "135 degrees"
+    ],
+    "answer": "120 degrees",
+    "explanation": "For a regular hexagon the interior angle is 120 degrees.",
+    "topic": "td-l2-1"
+  },
+  {
+    "id": "p20",
+    "question": "The exterior angle of a regular polygon is found by:",
+    "options": [
+      "360 divided by the number of sides",
+      "180 divided by the number of sides",
+      "90 divided by the number of sides",
+      "360 minus the interior angle"
+    ],
+    "answer": "360 divided by the number of sides",
+    "explanation": "The exterior angles of any polygon total 360 degrees.",
+    "topic": "td-l2-1"
+  },
+  {
+    "id": "p21",
+    "question": "A triangle can be constructed from all of these EXCEPT:",
+    "options": [
+      "Three sides",
+      "Two sides and the included angle",
+      "Two angles and one side",
+      "Three angles only"
+    ],
+    "answer": "Three angles only",
+    "explanation": "Three angles fix the shape but not the size, so an infinite number of similar triangles results.",
+    "topic": "td-l2-1"
+  },
+  {
+    "id": "p22",
+    "question": "To bisect an angle you use:",
+    "options": [
+      "A compass and a straight edge only",
+      "A protractor only",
+      "A French curve",
+      "A scale rule"
+    ],
+    "answer": "A compass and a straight edge only",
+    "explanation": "Arcs struck from the vertex and from points on the arms locate the bisector.",
+    "topic": "td-l2-1"
+  },
+  {
+    "id": "p23",
+    "question": "A perpendicular bisector of a line is the locus of points:",
+    "options": [
+      "At a fixed distance from one end",
+      "Equidistant from both ends of the line",
+      "On the line",
+      "At 45 degrees to the line"
+    ],
+    "answer": "Equidistant from both ends of the line",
+    "explanation": "Every point on the perpendicular bisector is the same distance from each end.",
+    "topic": "td-l2-1"
+  },
+  {
+    "id": "p24",
+    "question": "A tangent to a circle:",
+    "options": [
+      "Cuts the circle at two points",
+      "Touches the circle at one point and is perpendicular to the radius there",
+      "Passes through the centre",
+      "Is a chord"
+    ],
+    "answer": "Touches the circle at one point and is perpendicular to the radius there",
+    "explanation": "The tangent-radius relationship is the basis of all tangent constructions.",
+    "topic": "td-l2-2"
+  },
+  {
+    "id": "p25",
+    "question": "A straight line joining two points on the circumference is a:",
+    "options": [
+      "Radius",
+      "Chord",
+      "Tangent",
+      "Secant arc"
+    ],
+    "answer": "Chord",
+    "explanation": "A chord spans the circle without passing through the centre.",
+    "topic": "td-l2-2"
+  },
+  {
+    "id": "p26",
+    "question": "The centre of a blending arc joining two straight lines lies:",
+    "options": [
+      "On one of the lines",
+      "At the intersection of lines drawn parallel to the given lines at the arc radius",
+      "At the corner",
+      "On the bisector only"
+    ],
+    "answer": "At the intersection of lines drawn parallel to the given lines at the arc radius",
+    "explanation": "Offsetting both lines by the arc radius locates the blending centre.",
+    "topic": "td-l2-2"
+  },
+  {
+    "id": "p27",
+    "question": "A smooth join between a straight line and an arc must be:",
+    "options": [
+      "A sharp corner",
+      "Tangential, with the tangency point marked",
+      "An offset of 2 mm",
+      "Drawn freehand"
+    ],
+    "answer": "Tangential, with the tangency point marked",
+    "explanation": "Only a tangential join gives a smooth transition without a visible kink.",
+    "topic": "td-l2-2"
+  },
+  {
+    "id": "p28",
+    "question": "A quadrant of a circle is:",
+    "options": [
+      "Half the circle",
+      "A quarter of the circumference",
+      "The same as a diameter",
+      "A tangent"
+    ],
+    "answer": "A quarter of the circumference",
+    "explanation": "Four quadrants make the full circle.",
+    "topic": "td-l2-2"
+  },
+  {
+    "id": "p29",
+    "question": "A locus is:",
+    "options": [
+      "A fixed point",
+      "The path traced by a point moving according to a rule",
+      "A type of line convention",
+      "A scale"
+    ],
+    "answer": "The path traced by a point moving according to a rule",
+    "explanation": "Loci describe the motion of points in mechanisms.",
+    "topic": "td-l2-3"
+  },
+  {
+    "id": "p30",
+    "question": "The path traced by a point on a circle rolling along a straight line is a:",
+    "options": [
+      "Cycloid",
+      "Ellipse",
+      "Parabola",
+      "Spiral"
+    ],
+    "answer": "Cycloid",
+    "explanation": "The cycloid is the basis of many gear tooth profiles.",
+    "topic": "td-l2-3"
+  },
+  {
+    "id": "p31",
+    "question": "A cut through a cone parallel to one side produces a:",
+    "options": [
+      "Circle",
+      "Ellipse",
+      "Parabola",
+      "Hyperbola"
+    ],
+    "answer": "Parabola",
+    "explanation": "The parabola results when the cutting plane is parallel to the sloping side.",
+    "topic": "td-l2-3"
+  },
+  {
+    "id": "p32",
+    "question": "A cut through a cone at an angle steeper than the side and cutting both parts of a double cone produces a:",
+    "options": [
+      "Circle",
+      "Ellipse",
+      "Parabola",
+      "Hyperbola"
+    ],
+    "answer": "Hyperbola",
+    "explanation": "This cut intersects both nappes, giving the two branches of a hyperbola.",
+    "topic": "td-l2-3"
+  },
+  {
+    "id": "p33",
+    "question": "An ellipse can be constructed by the:",
+    "options": [
+      "Concentric circle method",
+      "Bisection method",
+      "Cycloid method",
+      "Tangent method only"
+    ],
+    "answer": "Concentric circle method",
+    "explanation": "The concentric circle and trammel methods both give an accurate ellipse.",
+    "topic": "td-l2-3"
+  },
+  {
+    "id": "p34",
+    "question": "The path of a point on a ladder sliding down a wall is part of:",
+    "options": [
+      "A circle",
+      "An ellipse",
+      "A parabola",
+      "A hyperbola"
+    ],
+    "answer": "An ellipse",
+    "explanation": "The point traces a quarter ellipse.",
+    "topic": "td-l2-3"
+  },
+  {
+    "id": "p35",
+    "question": "In third angle projection the plan is placed:",
+    "options": [
+      "Below the front view",
+      "Above the front view",
+      "Beside the front view",
+      "On a separate sheet"
+    ],
+    "answer": "Above the front view",
+    "explanation": "In third angle the view is placed on the same side as the direction of sight.",
+    "topic": "td-l3-1"
+  },
+  {
+    "id": "p36",
+    "question": "In first angle projection the view from the left of an object is placed:",
+    "options": [
+      "On the left of the front view",
+      "On the right of the front view",
+      "Above the front view",
+      "Below the plan"
+    ],
+    "answer": "On the right of the front view",
+    "explanation": "First angle projection reverses the placement, so the left view appears on the right.",
+    "topic": "td-l3-1"
+  },
+  {
+    "id": "p37",
+    "question": "The projection symbol on a drawing shows a truncated cone and identifies:",
+    "options": [
+      "The scale",
+      "Whether first or third angle is used",
+      "The material",
+      "The tolerance"
+    ],
+    "answer": "Whether first or third angle is used",
+    "explanation": "The way the small end of the cone faces shows the system used.",
+    "topic": "td-l3-1"
+  },
+  {
+    "id": "p38",
+    "question": "The height of a feature is transferred to a side view from the:",
+    "options": [
+      "Plan",
+      "Front view",
+      "Auxiliary view",
+      "Title block"
+    ],
+    "answer": "Front view",
+    "explanation": "Heights come from the front view; depths come from the plan.",
+    "topic": "td-l3-1"
+  },
+  {
+    "id": "p39",
+    "question": "Hidden lines in orthographic views are:",
+    "options": [
+      "Always omitted",
+      "Drawn as thin dashed lines where edges are concealed",
+      "Drawn as thick solid lines",
+      "Replaced by hatching"
+    ],
+    "answer": "Drawn as thin dashed lines where edges are concealed",
+    "explanation": "They show internal or concealed edges that the view cannot see.",
+    "topic": "td-l3-1"
+  },
+  {
+    "id": "p40",
+    "question": "The correct drawing order for an orthographic drawing is:",
+    "options": [
+      "Outline, then construction lines, then dimension",
+      "Construction and projection lines lightly, outline last, then dimension",
+      "Dimension first",
+      "Lettering first"
+    ],
+    "answer": "Construction and projection lines lightly, outline last, then dimension",
+    "explanation": "Working from light construction lines to a firm outline prevents mistakes.",
+    "topic": "td-l3-1"
+  },
+  {
+    "id": "p41",
+    "question": "An auxiliary view is used to show:",
+    "options": [
+      "A larger scale of the whole object",
+      "The true shape of an inclined face",
+      "Hidden detail only",
+      "The title block"
+    ],
+    "answer": "The true shape of an inclined face",
+    "explanation": "The auxiliary plane is set parallel to the inclined face so it is not foreshortened.",
+    "topic": "td-l3-2"
+  },
+  {
+    "id": "p42",
+    "question": "Foreshortening means a feature appears:",
+    "options": [
+      "Larger than actual",
+      "Shorter or distorted because the viewing plane is not parallel to it",
+      "Hidden",
+      "Hatched"
+    ],
+    "answer": "Shorter or distorted because the viewing plane is not parallel to it",
+    "explanation": "Inclined faces do not show true shape in the principal views.",
+    "topic": "td-l3-2"
+  },
+  {
+    "id": "p43",
+    "question": "A missing view is reconstructed by:",
+    "options": [
+      "Guessing from the object",
+      "Projecting heights and depths from the given views",
+      "Measuring the drawing",
+      "Copying a similar drawing"
+    ],
+    "answer": "Projecting heights and depths from the given views",
+    "explanation": "Each feature point is projected across from the views that show it.",
+    "topic": "td-l3-2"
+  },
+  {
+    "id": "p44",
+    "question": "The first auxiliary view is taken from:",
+    "options": [
+      "The plan only",
+      "The principal view in which the inclined face appears as a line",
+      "The title block",
+      "Any view"
+    ],
+    "answer": "The principal view in which the inclined face appears as a line",
+    "explanation": "The edge view of the face is the correct starting point.",
+    "topic": "td-l3-2"
+  },
+  {
+    "id": "p45",
+    "question": "True length of an inclined line can be found by projecting from the view in which the line appears:",
+    "options": [
+      "At its longest",
+      "As a point or with its other projection available for measurement",
+      "Hidden",
+      "With the dimension"
+    ],
+    "answer": "As a point or with its other projection available for measurement",
+    "explanation": "True length construction measures from a reference line to each end of the line.",
+    "topic": "td-l3-2"
+  },
+  {
+    "id": "p46",
+    "question": "Material cut by a cutting plane in a section is shown by:",
+    "options": [
+      "Shading",
+      "Hatching with thin continuous lines",
+      "Dots",
+      "Cross hatching at right angles"
+    ],
+    "answer": "Hatching with thin continuous lines",
+    "explanation": "Hatching is evenly spaced at 45 degrees.",
+    "topic": "td-l3-3"
+  },
+  {
+    "id": "p47",
+    "question": "In a section of an assembly, adjacent parts are hatched:",
+    "options": [
+      "In the same direction",
+      "In opposite directions",
+      "Not at all",
+      "Only if round"
+    ],
+    "answer": "In opposite directions",
+    "explanation": "Alternating hatch direction distinguishes mating parts.",
+    "topic": "td-l3-3"
+  },
+  {
+    "id": "p48",
+    "question": "Which part is normally NOT hatched in a section?",
+    "options": [
+      "The housing",
+      "A shaft or bolt cut longitudinally",
+      "A rib cut across",
+      "A base plate cut across"
+    ],
+    "answer": "A shaft or bolt cut longitudinally",
+    "explanation": "Shafts, bolts, rivets and webs are left unhatched by convention.",
+    "topic": "td-l3-3"
+  },
+  {
+    "id": "p49",
+    "question": "A half section is useful because it:",
+    "options": [
+      "Shows half the drawing only",
+      "Shows external shape on one half and internal detail on the other",
+      "Hides the interior",
+      "Doubles the scale"
+    ],
+    "answer": "Shows external shape on one half and internal detail on the other",
+    "explanation": "It gives both external and internal information in one view.",
+    "topic": "td-l3-3"
+  },
+  {
+    "id": "p50",
+    "question": "Dimensions should be taken from:",
+    "options": [
+      "A datum or common reference",
+      "One feature to the next in a chain where possible",
+      "The title block",
+      "The drawing border"
+    ],
+    "answer": "A datum or common reference",
+    "explanation": "Datum dimensioning avoids accumulation of errors and reflects function.",
+    "topic": "td-l3-3"
+  },
+  {
+    "id": "p51",
+    "question": "A dimension must appear:",
+    "options": [
+      "Twice for safety",
+      "Once only, and be complete",
+      "Only on the plan",
+      "Only in a section"
+    ],
+    "answer": "Once only, and be complete",
+    "explanation": "Duplicated or missing dimensions both cause errors in manufacture.",
+    "topic": "td-l3-3"
+  },
+  {
+    "id": "p52",
+    "question": "In isometric drawing the three axes are at:",
+    "options": [
+      "90 degrees to each other",
+      "120 degrees to each other",
+      "45 degrees to each other",
+      "30 degrees to each other"
+    ],
+    "answer": "120 degrees to each other",
+    "explanation": "One axis is vertical and the other two are at 30 degrees above the horizontal.",
+    "topic": "td-l4-1"
+  },
+  {
+    "id": "p53",
+    "question": "In isometric projection the axes are drawn at:",
+    "options": [
+      "True length",
+      "True length reduced by about 82 per cent",
+      "Twice length",
+      "Half length"
+    ],
+    "answer": "True length reduced by about 82 per cent",
+    "explanation": "Isometric projection uses the adjustment; isometric drawing uses true length along the axes.",
+    "topic": "td-l4-1"
+  },
+  {
+    "id": "p54",
+    "question": "A circle on an isometric face is drawn as:",
+    "options": [
+      "A circle",
+      "An ellipse",
+      "A rectangle",
+      "A parabola"
+    ],
+    "answer": "An ellipse",
+    "explanation": "The circle appears foreshortened as an ellipse on each isometric plane.",
+    "topic": "td-l4-1"
+  },
+  {
+    "id": "p55",
+    "question": "A non-isometric line in an isometric drawing:",
+    "options": [
+      "Appears at true length",
+      "Does not appear at true length and must be plotted from co-ordinates",
+      "Is drawn horizontally",
+      "Is always hidden"
+    ],
+    "answer": "Does not appear at true length and must be plotted from co-ordinates",
+    "explanation": "Lines not parallel to an isometric axis are distorted.",
+    "topic": "td-l4-1"
+  },
+  {
+    "id": "p56",
+    "question": "Hidden detail in a pictorial drawing is usually:",
+    "options": [
+      "Shown with heavy dashed lines",
+      "Omitted so that the view stays clear",
+      "Hatched",
+      "Shaded"
+    ],
+    "answer": "Omitted so that the view stays clear",
+    "explanation": "The purpose is clarity of form.",
+    "topic": "td-l4-1"
+  },
+  {
+    "id": "p57",
+    "question": "Isometric drawing is commonly used for:",
+    "options": [
+      "Site plans",
+      "Assembly instructions and pipe layouts",
+      "Detail sections",
+      "Title sheets"
+    ],
+    "answer": "Assembly instructions and pipe layouts",
+    "explanation": "A single pictorial view communicates an arrangement quickly.",
+    "topic": "td-l4-1"
+  },
+  {
+    "id": "p58",
+    "question": "In cavalier oblique projection the receding lines are drawn:",
+    "options": [
+      "At half true length",
+      "At full true length",
+      "At 30 degrees and half length",
+      "Parallel to the picture plane"
+    ],
+    "answer": "At full true length",
+    "explanation": "Cavalier uses full depth, which is easy to measure but looks deep.",
+    "topic": "td-l4-2"
+  },
+  {
+    "id": "p59",
+    "question": "Cabinet oblique projection reduces the depth by:",
+    "options": [
+      "One quarter",
+      "One half",
+      "Three quarters",
+      "No reduction"
+    ],
+    "answer": "One half",
+    "explanation": "Halving the depth makes the view look more natural.",
+    "topic": "td-l4-2"
+  },
+  {
+    "id": "p60",
+    "question": "In perspective drawing, parallel lines going away from the viewer appear to:",
+    "options": [
+      "Stay parallel",
+      "Converge to a vanishing point",
+      "Get thicker",
+      "Disappear immediately"
+    ],
+    "answer": "Converge to a vanishing point",
+    "explanation": "Convergence to a vanishing point is the basis of perspective.",
+    "topic": "td-l4-2"
+  },
+  {
+    "id": "p61",
+    "question": "A two-point perspective drawing is used for:",
+    "options": [
+      "A facade seen straight on",
+      "A corner view of a building",
+      "A section",
+      "A detail"
+    ],
+    "answer": "A corner view of a building",
+    "explanation": "Two vanishing points handle the two receding directions of a corner view.",
+    "topic": "td-l4-2"
+  },
+  {
+    "id": "p62",
+    "question": "The horizon line in a perspective drawing represents:",
+    "options": [
+      "The ground line",
+      "The eye level of the viewer",
+      "The picture plane",
+      "The scale"
+    ],
+    "answer": "The eye level of the viewer",
+    "explanation": "Vanishing points lie on the horizon line at eye level.",
+    "topic": "td-l4-2"
+  },
+  {
+    "id": "p63",
+    "question": "Freehand sketching is useful because it:",
+    "options": [
+      "Replaces all scale drawing",
+      "Records an idea quickly and communicates it",
+      "Is always accurate",
+      "Needs no conventions"
+    ],
+    "answer": "Records an idea quickly and communicates it",
+    "explanation": "Sketches are used in design discussion, site notes and illustration.",
+    "topic": "td-l4-2"
+  },
+  {
+    "id": "p64",
+    "question": "In CAD an object snap is used to:",
+    "options": [
+      "Change the drawing scale",
+      "Lock onto exact points such as endpoints and centres",
+      "Delete an entity",
+      "Print the drawing"
+    ],
+    "answer": "Lock onto exact points such as endpoints and centres",
+    "explanation": "Object snaps give precision without measuring.",
+    "topic": "td-l4-3"
+  },
+  {
+    "id": "p65",
+    "question": "Layers in a CAD drawing are used to:",
+    "options": [
+      "Speed up the computer",
+      "Separate groups of entities with their own colour, line type and weight",
+      "Store blocks",
+      "Set the plot size"
+    ],
+    "answer": "Separate groups of entities with their own colour, line type and weight",
+    "explanation": "Layers let a reader show or hide what is needed and control line weights.",
+    "topic": "td-l4-3"
+  },
+  {
+    "id": "p66",
+    "question": "The 'offset' command is used to:",
+    "options": [
+      "Rotate an entity",
+      "Draw a parallel copy at a set distance",
+      "Trim a line",
+      "Mirror an entity"
+    ],
+    "answer": "Draw a parallel copy at a set distance",
+    "explanation": "Offset is used for wall thicknesses, pipes and repeated parallel lines.",
+    "topic": "td-l4-3"
+  },
+  {
+    "id": "p67",
+    "question": "Model space in CAD is used to:",
+    "options": [
+      "Lay out the printed sheet",
+      "Draw the geometry at full scale",
+      "Insert the title block",
+      "Set the plot scale"
+    ],
+    "answer": "Draw the geometry at full scale",
+    "explanation": "The layout or paper space handles the sheet and printing scale.",
+    "topic": "td-l4-3"
+  },
+  {
+    "id": "p68",
+    "question": "Line weights are set so that:",
+    "options": [
+      "Every line is the same",
+      "Outlines are heavy and dimension or projection lines are thin",
+      "Hidden lines are heaviest",
+      "Only the border shows"
+    ],
+    "answer": "Outlines are heavy and dimension or projection lines are thin",
+    "explanation": "Contrasting line weights make a drawing readable.",
+    "topic": "td-l4-3"
+  },
+  {
+    "id": "p69",
+    "question": "A site plan would NOT normally show:",
+    "options": [
+      "Setbacks from boundaries",
+      "North point and access",
+      "Roof truss details",
+      "Position of drainage"
+    ],
+    "answer": "Roof truss details",
+    "explanation": "Truss details belong on a roof plan and detail drawings.",
+    "topic": "td-l5-1"
+  },
+  {
+    "id": "p70",
+    "question": "A setback is:",
+    "options": [
+      "The depth of the foundation",
+      "The distance a building must be from the boundary",
+      "The roof overhang",
+      "The floor level"
+    ],
+    "answer": "The distance a building must be from the boundary",
+    "explanation": "Planning regulations fix minimum setbacks.",
+    "topic": "td-l5-1"
+  },
+  {
+    "id": "p71",
+    "question": "A strip foundation is used to:",
+    "options": [
+      "Support a column",
+      "Spread the load of a load-bearing wall over a wider area",
+      "Carry a roof",
+      "Form a retaining wall"
+    ],
+    "answer": "Spread the load of a load-bearing wall over a wider area",
+    "explanation": "The strip is wider than the wall so the pressure on the soil is reduced.",
+    "topic": "td-l5-1"
+  },
+  {
+    "id": "p72",
+    "question": "Hardcore is placed under a ground floor slab to:",
+    "options": [
+      "Provide a firm, drained base",
+      "Insulate the floor",
+      "Reinforce the concrete",
+      "Act as a damp-proof course"
+    ],
+    "answer": "Provide a firm, drained base",
+    "explanation": "Compacted hardcore spreads the load and allows drainage.",
+    "topic": "td-l5-1"
+  },
+  {
+    "id": "p73",
+    "question": "The ground floor plan is normally drawn at a scale of:",
+    "options": [
+      "1:5",
+      "1:50",
+      "1:500",
+      "1:1250"
+    ],
+    "answer": "1:50",
+    "explanation": "1:50 shows room layouts and openings clearly on an A1 sheet.",
+    "topic": "td-l5-1"
+  },
+  {
+    "id": "p74",
+    "question": "Wall thickness, room sizes and opening widths are all dimensions found on the:",
+    "options": [
+      "Site plan",
+      "Floor plan",
+      "Location plan",
+      "Title block"
+    ],
+    "answer": "Floor plan",
+    "explanation": "The floor plan sets out the building.",
+    "topic": "td-l5-1"
+  },
+  {
+    "id": "p75",
+    "question": "A lintel is used to:",
+    "options": [
+      "Support the wall below an opening",
+      "Carry the load over an opening",
+      "Insulate the wall",
+      "Fix the window frame"
+    ],
+    "answer": "Carry the load over an opening",
+    "explanation": "The lintel spans the opening and bears on the wall at each end.",
+    "topic": "td-l5-2"
+  },
+  {
+    "id": "p76",
+    "question": "A damp-proof course is placed:",
+    "options": [
+      "At roof level",
+      "In the wall to stop moisture rising",
+      "Under the floor finish",
+      "Above the lintel"
+    ],
+    "answer": "In the wall to stop moisture rising",
+    "explanation": "The DPC blocks capillary movement of water up the wall.",
+    "topic": "td-l5-2"
+  },
+  {
+    "id": "p77",
+    "question": "Doors and windows in a building drawing set are listed in a:",
+    "options": [
+      "Title block",
+      "Schedule",
+      "Section",
+      "Site plan"
+    ],
+    "answer": "Schedule",
+    "explanation": "The schedule gives mark, size, type and material for each opening.",
+    "topic": "td-l5-2"
+  },
+  {
+    "id": "p78",
+    "question": "In plan, a door symbol shows:",
+    "options": [
+      "Only the opening width",
+      "The frame, the leaf and the direction of swing",
+      "The lintel",
+      "The wall thickness only"
+    ],
+    "answer": "The frame, the leaf and the direction of swing",
+    "explanation": "Door swing must be drawn to avoid clashes with furniture and circulation.",
+    "topic": "td-l5-2"
+  },
+  {
+    "id": "p79",
+    "question": "Louvred windows are common in tropical buildings because they:",
+    "options": [
+      "Are the cheapest",
+      "Allow ventilation while excluding rain and glare",
+      "Are stronger",
+      "Need no lintel"
+    ],
+    "answer": "Allow ventilation while excluding rain and glare",
+    "explanation": "Louvres give controlled ventilation and shading.",
+    "topic": "td-l5-2"
+  },
+  {
+    "id": "p80",
+    "question": "In a roof plan, a ridge line is drawn:",
+    "options": [
+      "Thin and faint",
+      "As a heavier line along the apex of two slopes",
+      "As a dashed line",
+      "As a wavy line"
+    ],
+    "answer": "As a heavier line along the apex of two slopes",
+    "explanation": "Ridges, hips and valleys use conventional line weights.",
+    "topic": "td-l5-3"
+  },
+  {
+    "id": "p81",
+    "question": "A valley in a roof occurs where:",
+    "options": [
+      "Two slopes meet at the top",
+      "Two slopes meet at the bottom of an internal corner",
+      "The roof meets a wall",
+      "A gutter runs"
+    ],
+    "answer": "Two slopes meet at the bottom of an internal corner",
+    "explanation": "Valleys collect water and must be detailed and flashed carefully.",
+    "topic": "td-l5-3"
+  },
+  {
+    "id": "p82",
+    "question": "Purlins in a roof:",
+    "options": [
+      "Carry the roof covering between rafters or trusses",
+      "Support the floor",
+      "Form the eaves",
+      "Act as the DPC"
+    ],
+    "answer": "Carry the roof covering between rafters or trusses",
+    "explanation": "Purlins run at right angles to rafters or trusses and support the sheeting.",
+    "topic": "td-l5-3"
+  },
+  {
+    "id": "p83",
+    "question": "A section drawing is used to show:",
+    "options": [
+      "The plan of the rooms",
+      "Heights, levels and construction cut through",
+      "The site layout",
+      "The schedule"
+    ],
+    "answer": "Heights, levels and construction cut through",
+    "explanation": "A section reveals floor-to-ceiling heights, roof pitch and build-ups.",
+    "topic": "td-l5-3"
+  },
+  {
+    "id": "p84",
+    "question": "An elevation shows:",
+    "options": [
+      "A horizontal cut through the building",
+      "The external face of the building as seen from outside",
+      "The foundation",
+      "The roof truss"
+    ],
+    "answer": "The external face of the building as seen from outside",
+    "explanation": "Elevations show openings, finishes, levels and roof lines on each face.",
+    "topic": "td-l5-3"
+  },
+  {
+    "id": "p85",
+    "question": "Levels of floors, sills and ridges are usually given relative to:",
+    "options": [
+      "The roof",
+      "A datum, commonly ground floor level taken as 0",
+      "The boundary",
+      "The site plan scale"
+    ],
+    "answer": "A datum, commonly ground floor level taken as 0",
+    "explanation": "A common datum keeps all levels consistent across the drawing set.",
+    "topic": "td-l5-3"
+  },
+  {
+    "id": "p86",
+    "question": "An external metric thread of 20 mm nominal diameter and 2.5 mm pitch is written:",
+    "options": [
+      "M20 x 2.5",
+      "20M 2.5",
+      "M2.5 x 20",
+      "20 x 2.5M"
+    ],
+    "answer": "M20 x 2.5",
+    "explanation": "Metric threads are designated by nominal diameter and pitch.",
+    "topic": "td-l6-1"
+  },
+  {
+    "id": "p87",
+    "question": "In the representation of an external thread, the major diameter is drawn:",
+    "options": [
+      "Thin",
+      "Thick continuous",
+      "Dashed",
+      "Hatched"
+    ],
+    "answer": "Thick continuous",
+    "explanation": "The convention is the reverse for an internal thread.",
+    "topic": "td-l6-1"
+  },
+  {
+    "id": "p88",
+    "question": "A key and keyway are used to:",
+    "options": [
+      "Locate a bearing",
+      "Transmit torque between a shaft and a hub",
+      "Seal a joint",
+      "Reduce friction in a thread"
+    ],
+    "answer": "Transmit torque between a shaft and a hub",
+    "explanation": "The key prevents relative rotation.",
+    "topic": "td-l6-1"
+  },
+  {
+    "id": "p89",
+    "question": "Across flats is a dimension taken:",
+    "options": [
+      "Across the corners of a hexagon",
+      "Between opposite flat faces of a nut or bolt head",
+      "Across the thread",
+      "Across the keyway"
+    ],
+    "answer": "Between opposite flat faces of a nut or bolt head",
+    "explanation": "Wrenches are sized by the across-flats dimension.",
+    "topic": "td-l6-1"
+  },
+  {
+    "id": "p90",
+    "question": "A weld symbol includes the type of weld, its size, length and:",
+    "options": [
+      "The material cost",
+      "Whether it is on one side or both sides",
+      "The painter's name",
+      "The scale"
+    ],
+    "answer": "Whether it is on one side or both sides",
+    "explanation": "Supplementary symbols define the weld further.",
+    "topic": "td-l6-1"
+  },
+  {
+    "id": "p91",
+    "question": "A tolerance is:",
+    "options": [
+      "The nominal size",
+      "The permissible variation in a dimension",
+      "The surface finish",
+      "The material specification"
+    ],
+    "answer": "The permissible variation in a dimension",
+    "explanation": "Every manufacturing process needs an allowed range.",
+    "topic": "td-l6-2"
+  },
+  {
+    "id": "p92",
+    "question": "An interference fit means:",
+    "options": [
+      "There is always a gap between the parts",
+      "The shaft is always larger than the hole, so the parts must be forced or shrunk together",
+      "The parts are the same size",
+      "The parts are welded"
+    ],
+    "answer": "The shaft is always larger than the hole, so the parts must be forced or shrunk together",
+    "explanation": "Interference holds the parts by friction.",
+    "topic": "td-l6-2"
+  },
+  {
+    "id": "p93",
+    "question": "In the hole basis system:",
+    "options": [
+      "The shaft size is fixed and the hole varies",
+      "The hole size is fixed and the shaft size varies",
+      "Both vary together",
+      "Neither varies"
+    ],
+    "answer": "The hole size is fixed and the shaft size varies",
+    "explanation": "Holes are harder to machine accurately, so the hole is held constant.",
+    "topic": "td-l6-2"
+  },
+  {
+    "id": "p94",
+    "question": "Interchangeability of parts means:",
+    "options": [
+      "Parts must be hand fitted",
+      "Any mating part will fit without hand fitting",
+      "Parts are all the same size regardless of tolerance",
+      "Parts are made on site"
+    ],
+    "answer": "Any mating part will fit without hand fitting",
+    "explanation": "It is what makes mass production and spares possible.",
+    "topic": "td-l6-2"
+  },
+  {
+    "id": "p95",
+    "question": "A bill of materials or parts list gives:",
+    "options": [
+      "The dimensions of each view",
+      "Item number, description, quantity and material of each part",
+      "The plot scale",
+      "The weld sequence"
+    ],
+    "answer": "Item number, description, quantity and material of each part",
+    "explanation": "It is keyed to the item numbers on the assembly drawing.",
+    "topic": "td-l6-2"
+  },
+  {
+    "id": "p96",
+    "question": "A revision table on a drawing records:",
+    "options": [
+      "The materials used",
+      "What was changed, when and by whom",
+      "The dimensions",
+      "The plot scale"
+    ],
+    "answer": "What was changed, when and by whom",
+    "explanation": "Drawings are legal records, so changes must be traceable.",
+    "topic": "td-l6-3"
+  },
+  {
+    "id": "p97",
+    "question": "Three-dimensional CAD modelling is advantageous because:",
+    "options": [
+      "It needs no layers",
+      "Views, sections and pictorials are generated from the same model and stay consistent",
+      "It removes the need for dimensions",
+      "It is always faster to learn"
+    ],
+    "answer": "Views, sections and pictorials are generated from the same model and stay consistent",
+    "explanation": "One model produces the whole coordinated drawing set.",
+    "topic": "td-l6-3"
+  },
+  {
+    "id": "p98",
+    "question": "Before plotting a drawing you should check:",
+    "options": [
+      "Only the file name",
+      "Sheet size, plot scale, line weights and legibility of text",
+      "The colour of the paper",
+      "The computer speed"
+    ],
+    "answer": "Sheet size, plot scale, line weights and legibility of text",
+    "explanation": "Previewing prevents a plot that cannot be read or does not fit.",
+    "topic": "td-l6-3"
+  },
+  {
+    "id": "p99",
+    "question": "A drawing set is normally ordered with:",
+    "options": [
+      "Details first",
+      "Title sheet and drawing list, then plans, elevations, sections and details",
+      "Schedules first",
+      "No particular order"
+    ],
+    "answer": "Title sheet and drawing list, then plans, elevations, sections and details",
+    "explanation": "A standard order lets a reader find a drawing quickly.",
+    "topic": "td-l6-3"
+  },
+  {
+    "id": "p101",
+    "question": "A window schedule entry would NOT normally state:",
+    "options": [
+      "Opening size",
+      "Type and material",
+      "Sill height",
+      "The cost of the glass"
+    ],
+    "answer": "The cost of the glass",
+    "explanation": "Schedules describe the opening and its component, not its price.",
+    "topic": "td-l5-2"
+  },
+  {
+    "id": "p102",
+    "question": "The main reason drawings are given a revision number is so that:",
+    "options": [
+      "They look professional",
+      "Everyone works from the same, current information",
+      "The scale is known",
+      "The materials can be listed"
+    ],
+    "answer": "Everyone works from the same, current information",
+    "explanation": "Controlled revisions prevent site work from superseded drawings.",
+    "topic": "td-l6-3"
+  }
+]

@@ -88,5 +88,11 @@
     "name": "Food and Nutrition",
     "description": "Nutrients, meal planning, food science, safety and hygiene, special diets, kitchen management and Caribbean food security.",
     "icon": "Restaurant"
+  },
+  {
+    "id": "technical-drawing",
+    "name": "Technical Drawing",
+    "description": "Drawing instruments and standards, geometric construction, orthographic projection, pictorial drawing, building drawing and engineering drawing.",
+    "icon": "Architecture"
   }
 ]

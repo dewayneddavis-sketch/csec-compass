@@ -1,0 +1,71 @@
+{
+  "subjectId": "technical-drawing",
+  "introduction": "The Technical Drawing School-Based Assessment is a drawing project: you choose an object or building, research and design it, and present a full set of drawings with construction details on standard sheets. Marks are awarded for research and design, the accuracy of the geometry and projection, the completeness and correctness of the dimensioning and conventions, the building or engineering details, the quality of lettering and presentation, and your evaluation of the finished set. Check the current CSEC syllabus and your teacher's guidance for the exact schedule of drawings required.",
+  "tasks": [
+    {
+      "section": "Research and Investigation",
+      "title": "Background",
+      "explanation": "State what you are designing or drawing and why, and record the research you did - site visits, interviews, catalogues, measurements of a similar object, planning requirements.",
+      "marks": "6"
+    },
+    {
+      "section": "Design Proposal",
+      "title": "Ideas and choice",
+      "explanation": "Present two or three freehand design ideas or layouts with sketches, and justify the one you selected in terms of space, materials, cost, climate and function.",
+      "marks": "8"
+    },
+    {
+      "section": "Working Drawings",
+      "title": "Plans, elevations and sections",
+      "explanation": "Draw the required views to a stated scale with correct projection, line types, hatching and hidden detail, and coordinate the levels and features across the drawings.",
+      "marks": "16"
+    },
+    {
+      "section": "Construction Details",
+      "title": "Details and schedule",
+      "explanation": "Provide the details asked for - foundation, floor, wall, roof, joint or fitting - at a larger scale, with every material labelled, plus a schedule of doors, windows, finishes or parts.",
+      "marks": "10"
+    },
+    {
+      "section": "Dimensioning and Annotation",
+      "title": "Dimensions and lettering",
+      "explanation": "Dimension all views completely and once only, from datums where appropriate, with correct symbols, notes, titles, title block and scale.",
+      "marks": "8"
+    },
+    {
+      "section": "Evaluation",
+      "title": "Review of the set",
+      "explanation": "Evaluate your drawings: what is accurate, what had to be redrawn, what you would change, and how the drawings would be used on site or in the workshop. Identify any calculation - area, quantity, true length - that you made from them.",
+      "marks": "6"
+    }
+  ],
+  "sampleTitle": "A two-bedroom dwelling of about 70 square metres on a sloping plot",
+  "sample": [
+    {
+      "section": "Design Proposal",
+      "body": "Three layouts were sketched. Layout A put the bedrooms on the road side and a long corridor through the middle. Layout B grouped the bedrooms at one end and the living, dining and kitchen at the other, with a short circulation route and cross ventilation through load-bearing openings on both sides. Layout C was a courtyard plan, which gave the best ventilation but needed more wall for the same floor area. Layout B was selected: it costs less in blockwork and roof, gives every bedroom an external wall for cross ventilation, and keeps the wet areas together for the plumbing runs.",
+      "tips": "Justify the choice with reasons that can be seen in the drawings - areas, wall lengths, ventilation, cost."
+    },
+    {
+      "section": "Evaluation",
+      "body": "The plan, elevations and section agree on floor-to-ceiling height of 2700 mm and roof pitch of 22 degrees. The window schedule was altered after the section showed the bedroom window head clashing with the wall plate; the sill was lowered by 300 mm instead of raising the head. The roof plan had to be redrawn after the hip construction was set out correctly. Improvement: dimension the foundation plan before the roof plan next time, because the later change meant redrawing the dimension string. The quantity take-off from the plan gave 186 square metres of block wall, which was used to cost the wall construction.",
+      "tips": "Name specific mistakes and specific remedies, and show that the drawings were used for a calculation."
+    }
+  ],
+  "marking": "Marks reward relevant research, a justified design decision, accurate construction and projection, complete and correct dimensioning and conventions, well-detailed construction drawings, neat lettering and layout, and an honest evaluation showing what the drawings could be used for.",
+  "checklist": [
+    "Object or building chosen and researched",
+    "Two or more design ideas sketched and compared",
+    "Selected design justified",
+    "All required views drawn to a stated scale",
+    "Correct projection, line types and hatching",
+    "Hidden detail and centre lines correct",
+    "Levels and features agree across the set",
+    "Construction details drawn with materials labelled",
+    "Schedules completed",
+    "Dimensions complete, correct and given once only",
+    "Title block, scales and north point present",
+    "Lettering neat and legible",
+    "Evaluation names problems and improvements"
+  ]
+}
