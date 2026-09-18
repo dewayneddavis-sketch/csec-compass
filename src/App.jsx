@@ -10,6 +10,7 @@ import AuthPage from "./pages/AuthPage";
 import AccountPage from "./pages/AccountPage";
 import PricingPage from "./pages/PricingPage";
 import AdminPage from "./pages/AdminPage";
+import TeacherPage from "./pages/TeacherPage";
 import PlannerPage from "./pages/PlannerPage";
 import ProtectedRoute from "./components/ProtectedRoute";
 import "./App.css";
@@ -34,6 +35,7 @@ export default function App() {
               <Route path="/auth/reset-password" element={<AuthPage mode="reset" />} />
               <Route path="/account" element={<ProtectedRoute><AccountPage /></ProtectedRoute>} />
               <Route path="/admin" element={<ProtectedRoute><AdminPage /></ProtectedRoute>} />
+              <Route path="/teacher" element={<TeacherPage />} />
             </Routes>
           </main>
           <footer className="app-footer">

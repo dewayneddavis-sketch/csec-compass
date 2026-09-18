@@ -1,0 +1,115 @@
+/* Owner-only teacher→student linking card — prefix: tlc- */
+
+.tlc-card {
+  margin-top: 1.5rem;
+  padding: 1rem 1.1rem 1.15rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.tlc-lead {
+  margin: 0 0 0.6rem;
+  color: #475569;
+  line-height: 1.55;
+  font-size: 0.92rem;
+}
+
+.tlc-allowed {
+  margin: 0 0 0.75rem;
+  padding: 0.5rem 0.7rem;
+  background: #f0fdfa;
+  border-left: 4px solid #0f766e;
+  border-radius: 0 6px 6px 0;
+  color: #115e59;
+  font-size: 0.9rem;
+}
+
+.tlc-warn {
+  margin: 0 0 0.75rem;
+  padding: 0.5rem 0.7rem;
+  background: #fffbeb;
+  border-left: 4px solid #f59e0b;
+  border-radius: 0 6px 6px 0;
+  color: #92400e;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.tlc-warn code {
+  padding: 0 0.25rem;
+  background: #fef3c7;
+  border-radius: 4px;
+}
+
+.tlc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 0.75rem;
+}
+
+.tlc-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.tlc-field input,
+.tlc-field textarea {
+  padding: 0.5rem 0.6rem;
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 400;
+  color: #0f172a;
+  background: #ffffff;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.tlc-field input:focus,
+.tlc-field textarea:focus {
+  outline: none;
+  border-color: #0f766e;
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.16);
+}
+
+.tlc-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0.9rem 0 0.4rem;
+}
+
+.tlc-table-wrap {
+  margin-top: 0.75rem;
+  overflow-x: auto;
+}
+
+.tlc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.tlc-table th,
+.tlc-table td {
+  padding: 0.45rem 0.6rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+  color: #1f2937;
+}
+
+.tlc-table th {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #475569;
+}
+
+.tlc-when {
+  color: #64748b;
+  white-space: nowrap;
+}

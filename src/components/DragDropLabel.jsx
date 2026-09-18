@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { lessonSets } from "./lessonSets";
 import { getLabWorking } from "../data/mathWorking";
 import MathWorkingReveal from "./MathWorkingReveal";
+import { useAuth } from "../context/AuthContext";
+import { recordLabComplete } from "../data/labActivity";
 
 // ---- Subject-aware content sets ------------------------------------------
 // Every set's CONTENT belongs to its own subject. `kind: "diagram"` keeps the
@@ -687,6 +689,7 @@ function ord(n) {
 }
 
 export default function DragDropLabel({ subjectId, experimentType, lessonId }) {
+  const { session } = useAuth();
   // Resolve per lesson: subjects with per-lesson sets match on lessonId first,
   // then English A and Mathematics/Physics/Chemistry use their per-
   // (subject, experimentType) set library, and finally the subject-level set.
@@ -803,6 +806,21 @@ export default function DragDropLabel({ subjectId, experimentType, lessonId }) {
     ? Object.values(placed).reduce((s, arr) => s + arr.length, 0)
     : Object.keys(placed).length;
   const allPlaced = placedCount === totalItems;
+
+  // Lab completion for the teacher dashboard. This lab HAS a right answer, so
+  // finishing the set is a real completion signal — report it once per solve
+  // (resetting the activity re-arms it). Never reported for other subjects'
+  // labs, which are exploratory.
+  const reportedRef = useRef(false);
+  useEffect(() => {
+    if (!allPlaced) {
+      reportedRef.current = false;
+      return;
+    }
+    if (reportedRef.current) return;
+    reportedRef.current = true;
+    if (subjectId && lessonId) recordLabComplete(subjectId, lessonId, experimentType, session);
+  }, [allPlaced, subjectId, lessonId, experimentType, session]);
 
   // ---- Render ------------------------------------------------------------
   const header = (

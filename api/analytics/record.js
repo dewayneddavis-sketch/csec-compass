@@ -30,7 +30,65 @@ export default async function handler(req, res) {
     const { data: { user }, error: authError } = await supabase.auth.getUser(token);
     if (authError || !user) return res.status(401).json({ error: "Invalid token" });
 
-    const { subjectId, quizType, attemptId, results, working } = req.body || {};
+    const { subjectId, quizType, attemptId, results, working, kind } = req.body || {};
+
+    // ------------------------------------------------------------------ LABS
+    // Interactive-lab activity for the teacher dashboard.
+    // Payload: { kind: "lab", subjectId, lessonId, experimentType?, completed? }
+    // One row per (student, subject, lesson): `opens` counts how many times the
+    // student opened that lesson's lab, `completed` is set once the lab itself
+    // reports a finish and never un-set by a later open.
+    //
+    // This is telemetry, not access control, so it FAILS OPEN: if the table has
+    // not been applied yet (owner runs supabase/schema.sql) or the write fails,
+    // the student's lab still works and the handler answers 200 with
+    // `stored: false` so the client can retry later. Contrast with quiz records
+    // below, which fail closed (a 500) because a lost attempt would corrupt the
+    // student's own analytics.
+    if (kind === "lab") {
+      const labSubject = req.body?.subjectId;
+      const lessonId = req.body?.lessonId;
+      if (!labSubject || !lessonId) {
+        return res.status(400).json({ error: "subjectId and lessonId are required for kind=lab" });
+      }
+      const experimentType = req.body?.experimentType || null;
+      const completed = !!req.body?.completed;
+
+      try {
+        const { data: existing, error: readError } = await supabase
+          .from("lab_activity")
+          .select("opens, completed")
+          .eq("user_id", user.id)
+          .eq("subject_id", labSubject)
+          .eq("lesson_id", lessonId)
+          .maybeSingle();
+        if (readError) throw readError;
+
+        const row = {
+          user_id: user.id,
+          subject_id: labSubject,
+          lesson_id: lessonId,
+          experiment_type: experimentType,
+          opens: (existing?.opens || 0) + 1,
+          completed: completed || !!existing?.completed,
+          last_activity_at: new Date().toISOString(),
+        };
+        const { error: writeError } = await supabase
+          .from("lab_activity")
+          .upsert(row, { onConflict: "user_id,subject_id,lesson_id" });
+        if (writeError) throw writeError;
+
+        return res.status(200).json({ success: true, stored: true, opens: row.opens, completed: row.completed });
+      } catch (labErr) {
+        console.warn("API /api/analytics/record: lab_activity write skipped:", labErr?.message || labErr);
+        return res.status(200).json({
+          success: true,
+          stored: false,
+          reason: "lab_activity not available (apply supabase/schema.sql)",
+        });
+      }
+    }
+
     if (!subjectId || !quizType || !attemptId || !Array.isArray(results) || results.length === 0) {
       return res.status(400).json({ error: "subjectId, quizType, attemptId and results[] are required" });
     }

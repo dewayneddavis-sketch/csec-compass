@@ -108,3 +108,75 @@ create policy "revision_plans: no direct client access"
   on public.revision_plans for all
   using (false)
   with check (false);
+
+-- ===========================================================================
+-- lab_activity — per-student interactive-lab engagement (teacher dashboard)
+-- Written by api/analytics/record.js with { kind: "lab" } (service role) and
+-- read by api/analytics/summary.js?scope=class (service role). One row per
+-- (student, subject, lesson) — the lab for that lesson.
+--   opens       : how many times the student opened that lesson's lab
+--   completed   : true only when the lab itself reported a finish (labs with a
+--                 right answer, e.g. DragDropLabel sets, signal completion);
+--                 exploratory labs leave it false and are shown as "opened N
+--                 times" rather than a false "done"
+--   experiment_type : the lab type routed for that lesson (e.g. "flashcard")
+-- ===========================================================================
+create table if not exists public.lab_activity (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references auth.users (id) on delete cascade,
+  subject_id text not null,
+  lesson_id text not null,
+  experiment_type text,
+  opens integer not null default 0,
+  completed boolean not null default false,
+  first_activity_at timestamptz not null default now(),
+  last_activity_at timestamptz not null default now()
+);
+
+create unique index if not exists lab_activity_user_lesson_uniq
+  on public.lab_activity (user_id, subject_id, lesson_id);
+
+create index if not exists lab_activity_user_idx
+  on public.lab_activity (user_id, subject_id);
+
+alter table public.lab_activity enable row level security;
+
+drop policy if exists "lab_activity: no direct client access" on public.lab_activity;
+create policy "lab_activity: no direct client access"
+  on public.lab_activity for all
+  using (false)
+  with check (false);
+
+-- ===========================================================================
+-- teacher_students — which teacher may see which student (teacher dashboard)
+-- ONE row per (teacher, student). Both sides are stored by EMAIL because the
+-- owner creates the link in the admin screen (the student may not have signed
+-- up yet) and emails are what the owner actually knows.
+--   - Links are created/removed ONLY by the owner through
+--     api/admin/grant-access.js { action: "teacher-link" | "teacher-unlink" },
+--     which is behind the existing OWNER_EMAILS gate.
+--   - Reads happen server-side in api/analytics/summary.js?scope=class, which
+--     checks the caller's email against TEACHER_EMAILS (env) and then reads
+--     only the students linked to that teacher. A teacher never sees another
+--     teacher's class, and nobody reads this table from the browser.
+-- ===========================================================================
+create table if not exists public.teacher_students (
+  id uuid primary key default gen_random_uuid(),
+  teacher_email text not null,
+  student_email text not null,
+  created_at timestamptz not null default now()
+);
+
+create unique index if not exists teacher_students_pair_uniq
+  on public.teacher_students (teacher_email, student_email);
+
+create index if not exists teacher_students_teacher_idx
+  on public.teacher_students (teacher_email);
+
+alter table public.teacher_students enable row level security;
+
+drop policy if exists "teacher_students: no direct client access" on public.teacher_students;
+create policy "teacher_students: no direct client access"
+  on public.teacher_students for all
+  using (false)
+  with check (false);
