@@ -1,0 +1,470 @@
+[
+  {
+    "id": "edpm-mod-1",
+    "title": "The Office and the Document Processing Cycle",
+    "lessons": [
+      {
+        "id": "edpm-l1-1",
+        "title": "The Office, its Functions and Organisation",
+        "content": "An office is the place where the administrative work of an organisation is carried out: information is received, recorded, processed, stored and sent out, and the decisions that keep the organisation running are made. Offices exist in every kind of organisation - businesses, schools, hospitals, government ministries, churches, sports clubs and non-profit bodies - because someone must handle correspondence, keep records, manage money, look after people and coordinate activity. The main functions of an office are receiving and recording information; processing and arranging it; storing it so that it can be found again; retrieving it on demand; communicating it inside and outside the organisation; safeguarding assets and information; managing personnel records; and providing the services that support the organisation's main work.\n\nOffices are organised to match those functions. A small business may have one general office where a single clerk does everything; a large organisation divides work into departments such as personnel or human resources, accounts, purchasing, sales and marketing, production, and general administration, with a reception area, a registry or records room, a mailroom, reprographics room and a manager's office. The layout may be open-plan, where staff share a large space and communication and supervision are easy but noise and lack of privacy are problems, or cellular, with separate rooms that give privacy, status and quiet at the cost of space, cost and ease of communication. The way an office is organised directly affects the speed, accuracy and cost of its work.\n\nWorking in an office demands more than technical skill. Office staff - administrative assistants, receptionists, clerks, secretaries, data entry operators, records managers, payroll clerks and office managers - are expected to be punctual, accurate, well groomed, polite, loyal and discreet, to keep confidential information confidential, to work as part of a team, to accept responsibility, to use initiative within their authority and to keep improving their skills. Because offices are where the organisation meets the public, courtesy and correct procedure are part of the job description, not optional extras. Modern offices also expect good keyboarding and computer skills, the ability to learn new software quickly, and an understanding of health, safety, security and data protection rules.",
+        "objectives": [
+          "Explain what an office is and list its main functions",
+          "Describe types of office organisation, departments and layouts",
+          "State the personal qualities and duties expected of office staff"
+        ],
+        "concepts": [
+          "Office",
+          "Registry",
+          "Open-plan",
+          "Cellular office",
+          "Department",
+          "Confidentiality",
+          "Teamwork",
+          "Initiative"
+        ],
+        "experiment": {
+          "type": "office-map",
+          "description": "Office Map: Arrange the departments and services of a large office and trace how work flows between them."
+        }
+      },
+      {
+        "id": "edpm-l1-2",
+        "title": "The Document Processing Cycle and Business Documents",
+        "content": "Documents carry the organisation's business, and every document passes through the same cycle: origination (the document is created or dictated), input (the information is prepared and keyed in), processing (the document is produced, formatted and checked), output (it is printed, sent or displayed) and storage or disposal (it is filed or destroyed according to policy). Knowing the cycle matters because quality depends on every stage: an error introduced at input cannot be corrected by good printing, and a document that is not filed correctly may as well never have been produced. Efficient offices reduce the number of times information is handled, because each handling costs time and adds a chance of error.\n\nDocuments are classified by who they go to, where they come from and what they do. Internal documents circulate inside the organisation - memoranda, notices, circulars, reports, minutes, agendas, job descriptions, payslips, requisitions and internal emails. External documents pass between the organisation and the outside world: letters, invoices, statements of account, receipts, purchase orders, quotations, credit notes, delivery notes, circulars to customers, contracts and advertisements. Documents may be incoming or outgoing, confidential, routine or urgent, and they may be formal (letters, contracts, reports) or informal (notes, messages, reminders). The right document, in the right format, sent to the right person at the right time is the test of good document management.\n\nBusiness documents are produced to standard conventions because they carry legal and financial weight. An invoice requests payment and states goods, quantities, unit prices, totals, terms and reference; a statement of account summarises transactions and the balance owed; a credit note corrects an overcharge or records returned goods; a delivery note travels with goods and is signed on receipt; a purchase order authorises a supplier to supply; a quotation offers a price before supply; and a remittance advice tells the supplier which invoices are being paid. Each has a purpose, a required set of details and a stored copy, and the office system must ensure that the original goes to the right recipient, the copy is filed, and the record can be produced if a dispute arises. Errors in these documents cost money directly, which is why accuracy, checking and proofreading are core skills of document preparation.",
+        "objectives": [
+          "Describe the stages of the document processing cycle",
+          "Classify documents as internal or external and identify their purposes",
+          "State the purpose and required details of common business documents"
+        ],
+        "concepts": [
+          "Origination",
+          "Input",
+          "Processing",
+          "Output",
+          "Memorandum",
+          "Invoice",
+          "Credit note",
+          "Remittance advice"
+        ],
+        "experiment": {
+          "type": "doc-cycle",
+          "description": "Document Cycle: Trace a job from dictation to filing and find where errors can enter."
+        }
+      },
+      {
+        "id": "edpm-l1-3",
+        "title": "Records Management: Filing, Classification and Security",
+        "content": "Filing is the systematic arrangement of documents so that they can be found quickly when needed. A good filing system keeps records complete and up to date, allows fast retrieval, saves space and equipment, protects documents from loss, damage and unauthorised reading, satisfies legal requirements, and shows the history of a transaction or decision. Filing may be manual - box files, folders, ring binders, cabinets, shelving, card indexes and cross-reference slips - or electronic, with folders and subfolders, document management software, databases, scanned images and cloud storage. Electronic filing saves space, allows searching by keyword, permits several authorised people to use a document at once and makes backup easy, but it depends on reliable power, equipment, software and disciplined naming, and it introduces risks of data loss, hacking and accidental deletion.\n\nRecords must be classified before they can be filed. Alphabetic classification arranges files by name and suits personnel and customer records; numeric filing gives each file a number and is suitable where volume is large; alphanumeric combines letters and numbers, as in a customer account code; geographic classification files by place and suits sales territories and branches; subject or topical classification groups by topic; and chronological filing arranges by date, often used for invoices, receipts and correspondence. Some systems cross-reference a document filed under one heading from another, so that it can be found through either route. Whatever the system, it must be simple enough for everyone to use consistently, because a filing system that only one person understands is a filing system that fails when that person is absent.\n\nRecords management also covers how long records are kept and how they are protected (the life cycle of a record). Active records are used regularly; semi-active records are kept for reference; and inactive records are archived or destroyed according to a retention schedule set by law and by the organisation's own policy - tax, employment and company records must be kept for the periods the law requires. Confidential documents are protected by restricted access, locked cabinets, password protection, encryption and a clear desk policy, and staff must respect confidentiality both during and after employment. Because fire, flood, hurricane, theft and equipment failure can destroy records, offices keep duplicate copies off-site or in the cloud, back up files regularly to separate media, test that backups can be restored, control who may alter or delete a record, and keep an audit trail of access - especially where personal data is held, since data protection law obliges the organisation to keep personal information accurate, secure and used only for the purpose for which it was collected.",
+        "objectives": [
+          "Explain the purposes of filing and compare manual and electronic systems",
+          "Describe methods of classifying records and choosing a method for a stated set of documents",
+          "Explain retention, archiving, confidential storage, backup and data protection duties"
+        ],
+        "concepts": [
+          "Filing",
+          "Alphabetic classification",
+          "Numeric filing",
+          "Cross-reference",
+          "Retention schedule",
+          "Archiving",
+          "Backup",
+          "Audit trail"
+        ],
+        "experiment": {
+          "type": "records-sorter",
+          "description": "Records Sorter: File a batch of documents by classification method, then set a retention period for each."
+        }
+      }
+    ]
+  },
+  {
+    "id": "edpm-mod-2",
+    "title": "Hardware, Software and Input Skills",
+    "lessons": [
+      {
+        "id": "edpm-l2-1",
+        "title": "Computer Hardware and Office Equipment",
+        "content": "Document preparation is done with hardware, so an office worker must know what each device does and how to use it safely. The system unit contains the processor (CPU) that carries out instructions, main memory (RAM) that holds the work in progress, and storage: an internal solid-state or hard disk for programs and files, and removable or external storage such as flash drives, memory cards, CD or DVD discs and external hard disks for transfer and backup. Input devices include the keyboard, mouse or trackpad, scanner, digital camera, microphone, touch screen, barcode reader and webcam; output devices include the monitor, printer, plotter and speakers. Printers may be inkjet, laser or dot matrix, and each has different costs, speeds and print quality - laser printers suit fast, high-volume text, inkjet printers suit cheaper colour work, and dot matrix printers still serve multi-part carbonised forms. Multifunction devices combine printing, scanning, copying and faxing in one unit.\n\nOther office equipment supports the same cycle. Photocopiers reproduce documents, scanners convert paper to electronic images and use optical character recognition to produce editable text, shredders destroy confidential paper, binders, laminators, guillotines, staplers, hole punches, letter openers, date stamps and franking machines finish and despatch documents, and telephone systems, headsets and conferencing equipment handle communication. Equipment should be chosen on suitability for the work, initial cost, running costs (consumables such as toner, paper and staples), speed, quality, reliability, service and warranty, and the capacity to grow with the business - buying the cheapest machine that cannot keep up is more expensive than buying the right one.\n\nUsing equipment safely and looking after it prevents breakdown, injury and wasted money. Workstations should be arranged ergonomically: the monitor at eye level and about an arm's length away, the keyboard and mouse at elbow height so the wrists stay straight, the chair adjustable with good lower-back support and the feet supported, and the screen free of glare from windows and lights. Staff should take short breaks from the screen every hour, vary tasks and stretch. Equipment must be cleaned according to the manual, kept free of dust and liquids, switched off and unplugged before cleaning or maintenance, and connected through proper sockets and surge protection; printers and copiers should never be opened while hot, and cables must be kept out of walkways. Consumables are monitored so that the office does not run out of paper, toner or staples in the middle of an urgent job.",
+        "objectives": [
+          "Identify the components of a computer system and the purpose of each",
+          "Describe office equipment, its uses and the factors considered when buying it",
+          "Apply good ergonomic practice and routine care for equipment"
+        ],
+        "concepts": [
+          "CPU",
+          "RAM",
+          "Storage device",
+          "Peripheral",
+          "Multifunction device",
+          "Optical character recognition",
+          "Ergonomics",
+          "Consumable"
+        ],
+        "experiment": {
+          "type": "hardware-tour",
+          "description": "Hardware Tour: Match each office task to the hardware or equipment that performs it best."
+        }
+      },
+      {
+        "id": "edpm-l2-2",
+        "title": "Software Applications and File Management",
+        "content": "Software is the set of programs that makes hardware useful. System software includes the operating system (which manages files, memory, devices and users, and provides the interface and utilities such as backup, disk checking and antivirus), device drivers and utility programs. Application software does the office's actual work: word processing for letters, reports, memoranda and tables; spreadsheets for calculations, financial records and charts; database management for organised collections of records that can be searched and reported on; presentation software for slides; desktop publishing for newsletters, posters, brochures and certificates; accounting or payroll packages for financial processing; and email, browser, calendar and collaboration tools for communication. Many offices now use integrated suites and cloud services that combine several of these and allow documents to be shared and worked on at the same time.\n\nChoosing software follows the job: the application must produce the required output, be compatible with the files of clients and colleagues, run on the available hardware, be affordable including licence costs, be secure and supported, and be usable by the staff who have it. Some work is better done with one tool than another - a table of figures that must be recalculated belongs in a spreadsheet, not typed into a word processor as text, and a mailing list of hundreds of addresses belongs in a database or spreadsheet used for a mail merge, not in a notebook. Using the wrong tool wastes time, invites error and makes updating difficult.\n\nFile management is the discipline that keeps work findable. Files are given descriptive names with consistent elements - for example date, client and document type - and stored in a logical folder structure; versions are controlled so that the latest is identifiable; documents are saved in the appropriate format (a word-processed file to edit, a PDF to send or print so that the layout cannot change, a CSV or plain text file for data exchange, an image format for pictures); and the file size is considered when sending by email. Files should be saved frequently while working, backed up at regular intervals to separate media or cloud storage, and protected with passwords where confidential. A consistent naming and folder convention, agreed by the whole office, is what prevents the search for 'the final version' from consuming the working day.",
+        "objectives": [
+          "Distinguish system software from application software and give examples of each",
+          "Select the most suitable application for a stated office task",
+          "Apply file naming, folder structures, formats, version control and backup practice"
+        ],
+        "concepts": [
+          "Operating system",
+          "Utility program",
+          "Application software",
+          "Database",
+          "Desktop publishing",
+          "File format",
+          "Version control",
+          "Cloud storage"
+        ],
+        "experiment": {
+          "type": "software-picker",
+          "description": "Software Picker: Match office tasks to the right application and choose the right file format for sending."
+        }
+      },
+      {
+        "id": "edpm-l2-3",
+        "title": "Keyboarding, Accuracy and Proofreading",
+        "content": "Keyboard skills are the foundation of document preparation, and speed without accuracy is worthless: a typist producing 60 words a minute with 10 per cent errors is slower, in real terms, than one producing 40 words a minute accurately, because time must be spent finding and correcting mistakes. Accuracy is built on technique. Touch typing means keeping the fingers on the home keys - the left hand on A S D F and the right on J K L semicolon, with the thumbs on the space bar and the index fingers locating the raised markers on F and J - and learning to reach each key without looking at the hands. The full keyboard, including the number row, shift keys, punctuation, the tab, enter, backspace and function keys, and the numeric keypad, should be learned deliberately rather than discovered.\n\nCorrect posture and habits prevent fatigue and injury. Sit with the back straight and supported, the feet flat on the floor, the elbows close to the body and at about right angles, the wrists straight and floating rather than resting on the desk edge, the shoulders relaxed, the head upright and the screen at eye level. Typing should be rhythmic and even, using a light, quick keystroke rather than a heavy one; the eyes should be on the copy or the screen, not on the keys; and the typist should avoid gripping the mouse, hunching the shoulders or crossing the legs. Regular short pauses, stretching the fingers and hands, walking about and looking into the distance reduce eye strain and the risk of repetitive strain injury, headache and back pain.\n\nProofreading is the deliberate search for error, and it must be done in a systematic way because the brain corrects what it expects to see. Reading aloud, reading backwards, reading line by line with a ruler, checking figures and dates separately from prose, verifying names and addresses against the source document, using spelling and grammar checkers as aids rather than as authorities (they miss wrongly used words such as their and there, and cannot check sense), and checking the final printed copy as well as the screen all help. Common errors to hunt are spelling of names, transposed figures, missing words, repeated words, inconsistent spacing, wrong dates, incorrect figures and missing enclosures. In an office, the rule is that a document is checked by the person who produced it before it leaves the desk, because a document with an error damages the organisation's reputation and, if it is financial or legal, can cost money. Accuracy is a professional habit, not a talent.",
+        "objectives": [
+          "Demonstrate correct keyboarding technique and home key position",
+          "Describe correct posture and practices that avoid strain and fatigue",
+          "Apply systematic proofreading and correction procedures"
+        ],
+        "concepts": [
+          "Touch typing",
+          "Home keys",
+          "Words per minute",
+          "Accuracy rate",
+          "Repetitive strain injury",
+          "Proofreading",
+          "Spell checker",
+          "Enclosure"
+        ],
+        "experiment": {
+          "type": "speed-drill",
+          "description": "Speed Drill: Type a passage, see speed and accuracy, then proofread two documents and count the errors."
+        }
+      }
+    ]
+  },
+  {
+    "id": "edpm-mod-3",
+    "title": "Word Processing and Business Documents",
+    "lessons": [
+      {
+        "id": "edpm-l3-1",
+        "title": "Creating, Formatting and Editing Documents",
+        "content": "Word processing software lets a document be created, changed, formatted, saved, printed and reused, which is why it replaced the typewriter in every office. A document is planned before it is typed: the purpose, the reader, the information required and the most suitable layout are decided first, then a draft is produced, checked, corrected and approved. Starting a document properly means setting the page up - paper size, orientation (portrait or landscape), margins, the appropriate line spacing and any columns - because changing these later disturbs pagination and layout.\n\nFormatting is the appearance of the text, and it is used to make the document readable and professional. Character formatting covers font (typeface) and font size, bold, italic and underline, colour, superscript and subscript, and text effects such as small capitals; paragraph formatting covers alignment (left, centre, right or fully justified), indents, line and paragraph spacing, bullets and numbering, borders and shading, tabs and leader dots; and page or document formatting covers margins, orientation, headers and footers with page numbers and document titles, footnotes, columns, page breaks and section breaks. Styles and templates save time and keep a house consistent: a template holds the standard layout and typing style, and a style applies a set of formats in one action, so that a whole report can be restyled by changing one definition. The editing tools are equally important: cut, copy and paste, find and replace, undo and redo, spelling and grammar checking, thesaurus, word count, comments and tracked changes for review, and auto-correct for frequently mistyped words.\n\nAdvanced features turn a word processor into a document production system. Mail merge combines a main document with a data source of names and addresses to produce personalised letters, labels or certificates without typing each one; it is used for circulars, invitations, examination results and payslips. Tables, columns, text boxes, borders and shading, watermarks, images, charts and drawing tools allow layout and illustration; automatic tables of contents and indexes, cross-references, footnotes and captions serve long reports and theses; and document protection, password saving and print options (number of copies, pages, paper size, scale, collating) control output. The final check before printing is always the same: does the document say what it is meant to say, is it accurate, complete and correctly addressed, and does it look neat enough to represent the organisation?",
+        "objectives": [
+          "Plan and set up a document and apply character, paragraph and page formatting",
+          "Use editing tools, styles, templates and mail merge efficiently",
+          "Apply advanced document features and final checks before printing"
+        ],
+        "concepts": [
+          "Margins",
+          "Justified",
+          "Header and footer",
+          "Style",
+          "Template",
+          "Mail merge",
+          "Find and replace",
+          "Tracked changes"
+        ],
+        "experiment": {
+          "type": "format-lab",
+          "description": "Format Lab: Format a sample business letter and report to a stated house style and check every requirement."
+        }
+      },
+      {
+        "id": "edpm-l3-2",
+        "title": "Business Correspondence and Meetings Documents",
+        "content": "Business correspondence is the written voice of an organisation, and convention makes it fast to read and easy to answer. A business letter is normally typed on letterhead paper and contains the reference, the date, the inside address of the recipient, the salutation, a subject heading where useful, the body in paragraphs that state the purpose, give the details and indicate the required action, the complimentary close, the signature, the typed name and designation, and the reference initials of the typist or the writer and typist together. Notations such as Enclosures, Copies to or Private and Confidential are added below. The two common layouts are the full block style, in which every line starts at the left margin, and the modified block style, in which the date, complementary close and signature block begin at the centre or at a set indentation while other parts begin at the left margin. Punctuation styles (open, mixed or closed) must be used consistently within a letter.\n\nOther correspondence follows its own conventions. A memorandum is for internal communication and has no inside address or salutation: it carries the organisation's name, the heading 'Memorandum' or 'MEMO', and the guide words To, From, Date, and Subject (or REF), followed by the message and the initials of the sender and typist. A memorandum is short and direct and is used for instructions, requests, announcements and reports within the organisation. An email is a business document too: it needs a meaningful subject line, an appropriate greeting, a clear and brief message in short paragraphs or bullet points, correct grammar and spelling, a signature block with name, position and contact details, and attachments that are named clearly and mentioned in the text - and it should never be sent in anger, in capitals, or to an unintended recipient. Agenda and notice of meeting, minutes, reports, circulars, notices and memoranda of understanding complete the standard list.\n\nMeeting documents are prepared in a strict sequence. The secretary, in consultation with the chair, prepares and circulates the notice of meeting and the agenda - which lists apologies, minutes of the previous meeting, matters arising, items of business, any other business and the date of the next meeting, with supporting papers attached. At the meeting the secretary records the attendance, absences with apologies, decisions and resolutions, the main points of discussion, actions to be taken and by whom, and the exact wording of motions carried or lost. The minutes are then written up in the past tense, in reported speech and in a consistent format, checked with the chair, circulated before the next meeting and formally confirmed (signed) at that meeting, after which they are filed as the official record. Notes for the minutes must be taken during the meeting rather than reconstructed from memory, and corrections are made only before the minutes are confirmed.",
+        "objectives": [
+          "Identify the parts of a business letter and the layouts used",
+          "Prepare memoranda, emails and other business documents in correct form",
+          "Prepare agendas, notices and minutes, and explain how minutes are confirmed and kept"
+        ],
+        "concepts": [
+          "Letterhead",
+          "Full block layout",
+          "Modified block",
+          "Reference initials",
+          "Memorandum",
+          "Agenda",
+          "Minutes",
+          "Matters arising"
+        ],
+        "experiment": {
+          "type": "letter-builder",
+          "description": "Letter Builder: Assemble a business letter to a given brief and check every required part and layout rule."
+        }
+      },
+      {
+        "id": "edpm-l3-3",
+        "title": "Tables, Graphics and Presenting Information",
+        "content": "Not all information is best expressed in prose. A table arranges figures or short facts in rows and columns so they can be compared, and it is the correct form for price lists, timetables, comparisons, statements and stock records. A well-designed table has a clear title, column headings with units stated, a consistent number of decimal places, alignment that suits the data (figures right-aligned or aligned on the decimal point, text left-aligned), rows and columns that are separated by borders or shading rather than a mass of lines, and totals that are labelled and checked. Most word processors create tables by specifying the number of rows and columns, then allow cells to be merged or split, widths adjusted, borders and shading applied, rows repeated as header rows across pages and simple formulas such as sums and averages inserted; but heavy calculation belongs in a spreadsheet, whose table can be linked or copied into the document.\n\nGraphics communicate what words cannot. Charts and graphs show trends and comparisons: a bar chart compares quantities, a line graph shows change over time, a pie chart shows proportions of a whole, and a scatter graph shows the relationship between two variables. Diagrams, flow charts, organisation charts, maps, photographs, logos and clip art illustrate reports, notices, leaflets and presentations. Graphics must be chosen for the message, must be labelled - title, axis labels, units, legend, source - must be large enough to read, must not distort the proportions of the data (a pie chart must add to 100 per cent, and a truncated axis misleads), and must be placed near the text that discusses them and referred to by number, for example 'as shown in Figure 2'.\n\nLayout and page composition bring text, tables and graphics together. Columns and text boxes position blocks of information; borders, shading, rules and white space separate and emphasise; headers, footers, page numbers, captions and a title or cover page give a document structure; and a consistent, limited range of fonts and colours keeps it professional rather than fussy. For notices, leaflets, posters and newsletters the office may use desktop publishing or the drawing tools of a word processor, choosing a clear hierarchy of headings, an appealing but readable typeface, images with permission, and a call to action. In every case the test is the same: can the intended reader find the information quickly and understand it correctly? Presentation is not decoration - it is how information is made usable.",
+        "objectives": [
+          "Create and format tables with appropriate alignment, headings and totals",
+          "Select suitable charts and graphics for a stated message and label them correctly",
+          "Compose the layout of a document combining text, tables and graphics"
+        ],
+        "concepts": [
+          "Table",
+          "Cell",
+          "Header row",
+          "Bar chart",
+          "Pie chart",
+          "Legend",
+          "Caption",
+          "White space"
+        ],
+        "experiment": {
+          "type": "chart-chooser",
+          "description": "Chart Chooser: Match a set of data to the best chart or table and check the labels and scale."
+        }
+      }
+    ]
+  },
+  {
+    "id": "edpm-mod-4",
+    "title": "Spreadsheets and Numeric Documents",
+    "lessons": [
+      {
+        "id": "edpm-l4-1",
+        "title": "Spreadsheet Fundamentals",
+        "content": "A spreadsheet is an electronic grid of rows and columns used to organise, calculate and present data, and it is the office's main tool for anything numerical. The grid is made of cells, each identified by its column letter and row number, such as B4 or F12, and the cell reference is used in formulas and in instructions. A file is called a workbook and contains one or more worksheets, each with its own grid; rows are numbered and columns lettered along the edges, and the active cell is shown in the name box with its contents in the formula bar. Ranges are groups of cells, written with a colon such as A1:C10, and named ranges make formulas readable in large sheets.\n\nData is entered by typing into the active cell or directly into the formula bar, and a spreadsheet recognises the kind of data it receives: text (labels) is left-aligned by default; numbers, including dates and times, are right-aligned and can be calculated with; and formulas begin with an equals sign. Efficient entry uses autofill and fill series to copy or continue data and formulas, copy and paste, the fill handle, data validation to restrict what can be typed into a cell, and 'enter, tab and arrow' movement rather than the mouse for speed. Data can also be imported from text, CSV files, database exports or copied tables, which is common in payroll and accounting work.\n\nFormatting a spreadsheet makes it readable and makes the numbers mean what they appear to mean. Number formatting sets currency symbols, decimal places, percentages and thousands separators; text formatting sets font, size, style, colour and alignment; cells may be merged and centred for titles; column widths and row heights are adjusted so that content fits and text wraps; borders, shading and cell styles separate heading rows from data; and freeze panes keep headings visible when scrolling. Every sheet should carry a title, dates, units, headings and a clear indication of what is calculated rather than typed, and figures entered once should be used everywhere by reference rather than retyped - because a spreadsheet's value depends entirely on the accuracy of the data entered into it. The principle of 'garbage in, garbage out' is literal in a spreadsheet.",
+        "objectives": [
+          "Identify the parts of a spreadsheet and use cell references and ranges",
+          "Enter, edit and validate different types of data efficiently",
+          "Format cells, columns, rows and worksheets for clarity and accuracy"
+        ],
+        "concepts": [
+          "Cell",
+          "Cell reference",
+          "Workbook",
+          "Worksheet",
+          "Range",
+          "Autofill",
+          "Data validation",
+          "Freeze panes"
+        ],
+        "experiment": {
+          "type": "sheet-basics",
+          "description": "Sheet Basics: Build a stock sheet with headings, formats and validated entries."
+        }
+      },
+      {
+        "id": "edpm-l4-2",
+        "title": "Formulas, Functions and Charts",
+        "content": "Calculations are the reason spreadsheets exist. A formula is written in the cell where the answer is wanted and begins with =, using operators for addition (+), subtraction (-), multiplication (*), division (/) and exponentiation (^), with brackets to control the order of operations, so =B4*C4 multiplies the quantity by the unit price. Because formulas use cell references rather than typed numbers, changing an input automatically updates every dependent calculation - the single most important advantage of a spreadsheet over a hand-kept ledger. Copying a formula down a column adjusts the references relatively (B4 becomes B5, B6 and so on); a reference that must not move is made absolute with dollar signs, as in $B$4, which is essential when a rate, tax percentage or exchange rate is applied to a whole column.\n\nFunctions are built-in formulas that save time and reduce error. The essential ones are SUM to add a range, AVERAGE, MAX and MIN for the largest and smallest values, COUNT and COUNTA to count numbers or entries, ROUND to control decimal places, and IF to make a decision, as in =IF(D4>=50,\"Pass\",\"Fail\"), which can be nested for several grades or bands. Useful additions include SUMIF and COUNTIF for conditional totals, VLOOKUP or INDEX and MATCH to find a value in a table, and date functions for interest, ageing of debts and due dates. Functions are entered with the Insert Function tool or typed and accepted, and they need the correct argument order; a misplaced bracket or comma produces a diagnostic error value such as ####, #DIV/0!, #NAME?, #VALUE! or #REF!, each of which points to a particular mistake in the formula.\n\nCharts turn the figures into a picture that a manager can use. A chart is created by selecting the data range (including headings) and choosing a chart type: column or bar for comparing quantities, line for trends over time, pie for proportions of a whole, and scatter for relationships between two variables. The chart is then edited - title, axis titles and scales, gridlines, legend, data labels, colours, and the choice of plotting rows or columns - so that it communicates without explanation. Data can also be organised for analysis with sorting (ascending or descending by one or more keys), filtering and autofilter to show selected records, subtotals, conditional formatting that colours cells by their value, and pivot tables that summarise large tables by category. Before any of this is trusted, formulas must be checked: verify a few results by hand calculation, inspect a sample of copied formulas for wrong references, check that ranges cover all the data and none of the totals, and check that the numbers make sense in size and direction.",
+        "objectives": [
+          "Write arithmetic formulas using correct operators, brackets and relative and absolute references",
+          "Use common functions including SUM, AVERAGE, IF, and explain error values",
+          "Create, label and interpret charts and use sorting, filtering and conditional formatting"
+        ],
+        "concepts": [
+          "Formula",
+          "Operator",
+          "Absolute reference",
+          "IF function",
+          "Nested function",
+          "Error value",
+          "Data labels",
+          "Pivot table"
+        ],
+        "experiment": {
+          "type": "formula-fixer",
+          "description": "Formula Fixer: Repair broken formulas, predict the result and check the chart that displays it."
+        }
+      },
+      {
+        "id": "edpm-l4-3",
+        "title": "Spreadsheets in Business Documents",
+        "content": "Spreadsheets produce the numeric documents that keep a business trading, and the same skills build all of them. An invoice is created from a price list and a customer order: the items, quantities, unit prices, extended amounts (quantity multiplied by unit price), subtotal, discount, tax, total, and terms of payment, together with the invoice number and date, and it should be produced from a template so that formatting and calculations are consistent and an invoice register can be kept. A statement of account lists the transactions of a period and the balance owed, in date order, and depends on accurate recording of invoices and payments. A credit note records returns and overcharges and must be cross-referenced to the invoice it corrects.\n\nInternal records are equally spreadsheet-based. A stock or inventory record holds item codes, descriptions, quantities in and out, reorder levels and values, and calculates the closing balance; reorder reports are produced by filtering the items whose quantity has fallen to the reorder level. A payroll sheet holds employee details, gross pay (hours or basic, plus overtime, allowances and commission), deductions (statutory contributions, income tax, loan repayments, union dues) and net pay, and totals the payroll cost by department; because payroll data is confidential and must be accurate to the cent, it is protected by passwords and access control. A budget or cash-flow sheet sets planned income and expenditure by month and calculates the surplus or deficit and the closing balance, showing where action is needed. Other common uses include petty cash books, debtors' and creditors' ageing lists, quotation comparisons, sales analyses by product or territory, examination mark sheets with grades calculated by formula, and timetables.\n\nPresentation is part of the job. Sheets are set up for printing deliberately: page orientation and scaling, margins, print area, repeating title rows and columns on every page, gridlines and headings as needed, headers and footers with the sheet name, date and page number, page breaks where a table should not divide, and footers showing totals carried forward. Large sheets are printed on more than one page in a logical order, formulas are protected and locked so that users cannot overwrite them, and the document is filed with a name and version that make it findable. Above all, a spreadsheet is not evidence of its own correctness: the office worker must check figures against source documents, reconcile totals, keep the source data, and be able to explain how each figure was produced - because a business decision taken on an unchecked spreadsheet is a decision taken on hope.",
+        "objectives": [
+          "Create invoices, statements and internal records using spreadsheet formulas",
+          "Design a payroll, stock or budget sheet with totals, deductions and reorder or variance indicators",
+          "Prepare a sheet for printing and protect the formulas and data"
+        ],
+        "concepts": [
+          "Subtotal",
+          "Extended amount",
+          "Statement of account",
+          "Gross pay",
+          "Net pay",
+          "Reorder level",
+          "Print area",
+          "Protection"
+        ],
+        "experiment": {
+          "type": "invoice-build",
+          "description": "Invoice Builder: Turn an order and price list into an invoice with correct totals, then reconcile it to the payment."
+        }
+      }
+    ]
+  },
+  {
+    "id": "edpm-mod-5",
+    "title": "Databases, Presentations and Electronic Communication",
+    "lessons": [
+      {
+        "id": "edpm-l5-1",
+        "title": "Databases and Managing Structured Information",
+        "content": "A database is an organised collection of related data that can be stored, searched, updated and reported on. Where a list becomes too large or too repetitive for a spreadsheet - customers, employees, students, members, stock items, suppliers - a database is the right tool, because it separates the data into tables, avoids repeating the same information in every record, allows powerful searching and sorting, and produces standard printed reports. A relational database holds several tables linked by a common field (a key), so that a customer table, an orders table and a stock table work together: the customer code appears in all three and links the records without duplicating names and addresses.\n\nDesigning a database means planning before creating. The purpose and the users are identified, then the tables are listed and the fields chosen for each, with a data type for every field - text, number, currency, date and time, yes/no (boolean), memo or long text, and object or attachment fields for images and files. One field is set as the primary key, the unique identifier of each record, and where no natural key exists an automatic number or code is used. Field properties control what can be entered: size, format, decimal places, default value, caption, input mask, validation rule and validation text, required and indexed. Good design prevents the same data being stored in several places, which is the main cause of inconsistent records; poor design produces a database that is harder to use than the notebook it replaced.\n\nOnce the tables hold records, the database's power comes from what it can do with them. Forms provide a screen layout for entering and editing data, safer and easier than typing straight into a table and restricted to the fields the user needs. Queries retrieve and calculate: a query can select records matching criteria (students who passed, invoices unpaid after thirty days, stock below reorder level), sort them, group them with totals and averages, and combine data from linked tables. Reports present the results in a printable form with headings, totals, subtotals, grouping and a date, and are the documents managers actually read - class lists, payroll summaries, debtors' lists, membership directories. Mail merge or the export of query results to a word processor or spreadsheet links the database to other documents. Because databases usually hold personal and commercially sensitive information, security matters: user names and passwords, levels of access, the locking of areas, regular backup and recovery, an audit trail of changes, and compliance with data protection rules that require personal data to be accurate, secure, relevant and used only for the purpose for which it was obtained.",
+        "objectives": [
+          "Explain the advantages of a database and the structure of a relational database",
+          "Design tables, fields, data types, keys and validation rules for a stated purpose",
+          "Use forms, queries and reports and apply security and data protection rules"
+        ],
+        "concepts": [
+          "Database",
+          "Record",
+          "Field",
+          "Primary key",
+          "Data type",
+          "Validation rule",
+          "Query",
+          "Report"
+        ],
+        "experiment": {
+          "type": "db-designer",
+          "description": "Database Designer: Design the fields, types and keys for a small customer database and build a query."
+        }
+      },
+      {
+        "id": "edpm-l5-2",
+        "title": "Presentations and Desktop Publishing",
+        "content": "A presentation is a talk supported by visual aids, and it is prepared differently from a written report. Preparation begins with the audience and the purpose: what they already know, what they must understand or decide, how long the talk lasts, and where it will be given. The content is then structured - an opening that states the purpose, a body of three to six main points each with evidence, and a close that summarises and states any action required - and a storyboard or plan of the slides is sketched before any software is opened. A useful rule is that each slide carries one idea: a short heading and a few brief points or a single graphic, with the detail delivered by the speaker. Slides stuffed with text are read rather than heard, and the audience learns nothing.\n\nPresentation software provides layouts, themes and templates that set consistent fonts, colours and backgrounds; placeholders for titles, text, images, charts and tables; bullet and numbered lists; speaker notes; transitions between slides and animations within them; and the tools to insert sound, video, hyperlinks and action buttons. Good practice is to use a plain, readable font at a size that can be read from the back of the room, keep colours and effects restrained, use images and charts that support the point rather than decorate it, spell-check and rehearse, and prepare handouts - printed copies of the slides, notes pages or a summary - so that the audience has something to take away. When presenting, the equipment is checked in advance, a backup copy of the file is carried on a separate device, the speaker faces the audience rather than the screen, and time is kept. A presentation is delivered, not merely displayed.\n\nDesktop publishing (DTP) is the production of documents that are laid out with design in mind - newsletters, brochures, leaflets, flyers, posters, certificates, menus, business cards, prospectuses and annual reports - using specialised page layout software or the drawing and layout tools of a word processor. DTP work combines text and graphics on a page grid, using frames and text boxes, columns, headings and subheadings, pull quotes, images with captions, rules and borders, and a limited, consistent palette of colours and two or three typefaces. The principles of design apply as they do to textiles or any other visual work: alignment, proximity, repetition and contrast make a page easy to read, and white space is part of the design, not wasted space. In an office, DTP documents are proofread by a second person, printed or exported to PDF for distribution, and stored with their source files so that they can be updated for the next edition - a file that cannot be edited is a document that must be rebuilt.",
+        "objectives": [
+          "Plan and structure a presentation for a stated audience and purpose",
+          "Create and deliver slides using layouts, graphics, notes, transitions and handouts",
+          "Design and produce a desktop-published document applying layout and proofreading practice"
+        ],
+        "concepts": [
+          "Storyboard",
+          "Layout",
+          "Theme",
+          "Speaker notes",
+          "Transition",
+          "Handout",
+          "Text frame",
+          "Proofreading"
+        ],
+        "experiment": {
+          "type": "slide-builder",
+          "description": "Slide Builder: Plan a five-slide talk for a given audience and check the text, contrast and handout."
+        }
+      },
+      {
+        "id": "edpm-l5-3",
+        "title": "Electronic Communication, the Internet and Security",
+        "content": "Electronic communication has replaced much of the paper that used to move through offices, and it brings its own rules. Email is the standard business message: it needs a clear subject line, a proper greeting and closing, brief well-organised text, correct spelling and grammar, an appropriate tone - never all capitals, which reads as shouting - care with humour and sarcasm, correct use of To, Cc and Bcc, attachments that are named clearly, mentioned in the message and not too large for the recipient's system, and a signature block with the sender's name, position and contact details. Replies should be timely, and a message sent in anger should be drafted and left rather than sent. The same standards of courtesy, brevity and confidentiality - netiquette - apply to instant messaging, discussion groups and video meetings, where cameras, microphones, backgrounds and dress all form part of the professional impression.\n\nThe internet and its services underpin modern office work. The world wide web and search engines give access to information; cloud storage and collaboration platforms allow files to be saved, shared, co-edited and version-controlled from several locations, which suits work that involves staff on different islands or clients abroad; video conferencing replaces some travel; e-commerce and digital payment systems let small businesses sell and be paid online; government portals allow tax, customs and registration business to be done electronically; and intranets hold an organisation's internal policies and forms. Using these services effectively requires an understanding of browsers, bookmarks, search technique, downloading and uploading, file transfer, streaming, and the practical limit of bandwidth and data cost, which is a real constraint in many Caribbean offices.\n\nSecurity and legal responsibility go with electronic working. The threats include malware such as viruses, worms, trojans and ransomware; phishing and other social-engineering attacks, which are the commonest way organisations are breached; spam; spyware and keyloggers; hacking and data theft; identity theft and fraud; and the simple human errors of losing a device or sending a file to the wrong person. The countermeasures are strong, unique passwords changed regularly and never shared, two-factor authentication, updated software, antivirus and firewall protection, encryption of sensitive files and devices, careful checking of links and attachments, no use of unknown storage media, secure disposal of documents and old equipment, and regular, tested backups kept separately from the original - the only reliable defence against ransomware. Organisations must also comply with data protection legislation: collecting only the personal data they need, keeping it accurate and secure, using it only for the stated purpose, allowing individuals access to their own data, and reporting breaches. Under copyright and licensing law, software, images, music and text must be used only as the licence or fair dealing permits. Security is not the job of one person: every member of staff who opens an attachment or chooses a password is part of it.",
+        "objectives": [
+          "Apply good practice and netiquette in email and other electronic communication",
+          "Describe internet services and cloud collaboration tools used in the office",
+          "Identify security threats and apply countermeasures and data protection duties"
+        ],
+        "concepts": [
+          "Netiquette",
+          "Cloud storage",
+          "Malware",
+          "Phishing",
+          "Two-factor authentication",
+          "Encryption",
+          "Backup",
+          "Data protection"
+        ],
+        "experiment": {
+          "type": "security-drill",
+          "description": "Security Drill: Read a set of emails and decide which are safe, which are phishing and what the correct response is."
+        }
+      }
+    ]
+  },
+  {
+    "id": "edpm-mod-6",
+    "title": "Reprographics, Mail, Safety and the Office Environment",
+    "lessons": [
+      {
+        "id": "edpm-l6-1",
+        "title": "Reprographics and Document Finishing",
+        "content": "Reprographics is the reproduction of documents, and every office needs it for copies, forms, circulars, examination papers, reports and records. Photocopying uses a photocopier to make same-size or reduced and enlarged copies in black and white or colour, single or double sided, collated and stapled; modern machines also scan to email, print from a network and store jobs. Printing from a computer is done on inkjet, laser or dot matrix printers, and the choice depends on volume, quality, colour and cost per page. Duplicating methods such as the digital duplicator and offset printing suit long runs cheaply, digital printing suits short runs and variable data, and large-format plotters produce drawings, plans and posters. The office selects a method by weighing the number of copies, the quality required, the cost per copy, the speed and the finishing needed - running 5000 leaflets one at a time on a desktop printer is neither economical nor sensible.\n\nDocument finishing turns printed sheets into usable documents. Pages are collated into sets, stapled or stitched, punched and put into ring binders or lever-arch files, bound with comb, wire, thermal or perfect binding for reports and booklets, padded into duplicate books, folded, perforated, trimmed with a guillotine, laminated to protect cards and notices, and given covers, index tabs, dividers and page numbers. Labels, envelopes and address lists are prepared and printed for despatch, forms are numbered and controlled, and multi-part carbonless sets are used where a handwritten copy must be kept. Good finishing is part of the document's quality: a report whose pages are out of order, whose tables do not line up or whose binding fails in a meeting reflects badly on everyone who prepared it.\n\nReprographics also carries responsibilities. Copyright law restricts copying of books, articles, music, software and other protected material, and licences or permission may be required; examination papers and personal records must be kept confidential, collected immediately and not left in the machine or the output tray; and the volume of copying should be controlled because paper, toner and electricity are real costs and because waste paper is an environmental burden. Offices reduce consumption by printing only what is needed, using double-sided and multiple-pages-per-sheet printing, proofreading on screen, circulating documents electronically, reusing paper for drafts, and recycling waste paper, toner cartridges and equipment responsibly. Equipment is maintained, jam-cleared safely and monitored for cost per copy so that the cheapest method for each job, not the most familiar, is used.",
+        "objectives": [
+          "Describe reprographic methods and select the most suitable for a stated job",
+          "Apply finishing techniques to produce a professional, usable document",
+          "Explain copyright, confidentiality, cost control and environmental practice in reprographics"
+        ],
+        "concepts": [
+          "Photocopier",
+          "Duplicator",
+          "Offset printing",
+          "Collating",
+          "Comb binding",
+          "Laminating",
+          "Guillotine",
+          "Cost per copy"
+        ],
+        "experiment": {
+          "type": "copy-shop",
+          "description": "Copy Shop: Match five jobs to the cheapest suitable reprographic method and finishing treatment."
+        }
+      },
+      {
+        "id": "edpm-l6-2",
+        "title": "Mail Handling, Reception and Telephone Duties",
+        "content": "Mail is the office's incoming and outgoing communication on paper, and it must be handled promptly, accurately and confidentially. Incoming mail is collected, sorted into departments or recipients, opened - usually with a letter opener, by authorised staff only - date-stamped, checked for enclosures and remittances, entered into a mail register or post book with the date, sender, subject and action required, and distributed, with urgent, legal, confidential or financial items given priority. Cheques, money orders and other remittances are recorded immediately and passed to the accounts section; remittance advices are attached to the relevant invoice; and letters requiring a reply are noted in the diary or brought-forward system so that deadlines are not missed. Confidential items are opened only by the named person, and mail bearing the addressee's name is not opened by anyone else.\n\nOutgoing mail is prepared with equal care. The document is checked, signed by the authorised person, folded, inserted in the correct envelope with any enclosures, sealed, addressed, weighed and franked or stamped at the correct rate, and recorded in the outgoing mail book or despatch register. The method is chosen to suit the item and the urgency: ordinary post, registered post or recorded delivery for items needing proof of posting, courier or express service for urgent parcels and documents, local messenger or driver for deliveries within the area, and electronic mail or transmission for documents that can be scanned or sent as files. Where a document must be traced, the despatch record and any tracking number are filed, and proof of posting is kept. Postal regulations, correct addressing, return addresses and customs declarations for overseas parcels are all part of the job.\n\nReception and telephone work are the office's front door, and they shape the caller's and visitor's impression of the whole organisation. A receptionist receives and welcomes visitors, records their names and business, issues visitor passes, contacts the person being visited, offers a seat, keeps the reception area tidy and handles enquiries that do not need referral. On the telephone, the standard is to answer promptly - usually within three rings - with a greeting that identifies the organisation and the speaker, to speak clearly and courteously, to listen without interrupting, to take an accurate message using the message pad or electronic system with caller's name, organisation, telephone number, time and purpose, and to repeat it back to confirm accuracy; and to close the call politely. Calls are transferred only after explaining what will happen, hold time is limited by keeping information at hand, and difficult callers are handled calmly with referral to a manager when necessary. The receptionist also manages appointments - keeping the appointment diary or electronic calendar, confirming, rescheduling and reminding, ensuring appointments do not clash, and keeping the person concerned informed - and maintains the visitors' book and telephone directory. Discretion, patience and a good memory are as important as a pleasant voice.",
+        "objectives": [
+          "Describe the procedures for handling incoming and outgoing mail",
+          "Select a suitable method of despatch for a stated item and keep the necessary records",
+          "Apply correct reception, telephone, message-taking and appointment procedures"
+        ],
+        "concepts": [
+          "Mail register",
+          "Remittance",
+          "Franked mail",
+          "Registered post",
+          "Despatch register",
+          "Telephone message pad",
+          "Appointment diary",
+          "Visitors' book"
+        ],
+        "experiment": {
+          "type": "front-desk",
+          "description": "Front Desk: Handle a queue of calls, visits and mail items and choose the right procedure for each."
+        }
+      },
+      {
+        "id": "edpm-l6-3",
+        "title": "Health, Safety, Security and the Environment in the Office",
+        "content": "Office work looks safe, but it has real hazards. Poor posture and badly arranged workstations cause neck, shoulder, back and wrist pain; long hours at a screen cause eye strain, headache and fatigue; and continuous keyboarding and mouse use can lead to repetitive strain injury such as tenosynovitis and carpal tunnel syndrome. There are also physical risks: slips, trips and falls on wet floors, trailing cables and cluttered walkways; cuts from guillotines, shredders and letter openers; burns from copiers, printers and laminators; electric shock from damaged cables, overloaded sockets and equipment used near water; fire from faulty wiring and overheated equipment; lifting injuries from moving boxes, furniture and heavy files; and chemical exposure to toner, solvents, correcting fluid, cleaning materials and adhesives. Offices that store many files also carry the risk of fire and the risk of falling objects from overloaded shelving.\n\nPrevention is a matter of design and habit. Workstations are arranged ergonomically, chairs adjusted, footrests provided and screens positioned to avoid glare; users take regular short breaks from the screen, change tasks, stretch and look at distant objects; equipment is maintained and used according to the manufacturer's instructions; walkways, stairs and exits are kept clear; cables are routed or covered; heavy loads are lifted with the legs, or moved with trolleys, or by two people; fire extinguishers are appropriate to the risk and checked, and fire drills and evacuation routes are known to all staff; electrical equipment is tested and damaged leads reported immediately; and cleaning chemicals and toners are stored in labelled containers away from heat and food. First-aid provision, trained first aiders, an accident book to record every incident, protective equipment where required, and reporting of serious injuries are legal duties in most territories, as is general duty of care by the employer to provide a safe workplace and by employees to take reasonable care of themselves and others.\n\nOffice security protects people, property and information. Physical security includes locks, key control, alarms, closed-circuit television, safes for cash and valuables, visitor signing-in and passes, identification badges, controlled access to records rooms and server rooms, and secure disposal of confidential paper by shredding or secure collection. Information security covers passwords and access levels, encryption, screen locking when leaving a desk, a clear desk and clear screen policy, careful handling of confidential documents, secure transmission, tested backups, and awareness of fraud and social engineering; personal data must also be handled according to data protection law. Staff themselves are a security concern: they must be honest and discreet, must never disclose information to unauthorised people however plausible the request, and must follow procedures for cash handling, banking and the movement of valuables. Environmental responsibility in the office follows the same practical logic: reduce printing and paper use, print double-sided, reuse paper for drafts, recycle paper, cardboard, glass, plastic, batteries and toner cartridges, switch off lights, computers and air-conditioning when not needed, use energy-efficient equipment, conserve water, choose refillable and recyclable supplies, use video conferencing instead of unnecessary travel, and dispose of electronic waste responsibly - an office that is safe, secure and thrifty is also an office that is well managed.",
+        "objectives": [
+          "Identify office hazards and describe ergonomic and safety control measures",
+          "Explain physical and information security measures and confidentiality duties",
+          "Propose environmentally responsible office practices"
+        ],
+        "concepts": [
+          "Ergonomics",
+          "Repetitive strain injury",
+          "Duty of care",
+          "Accident book",
+          "Access control",
+          "Clear desk policy",
+          "Confidential waste",
+          "E-waste"
+        ],
+        "experiment": {
+          "type": "office-audit",
+          "description": "Office Audit: Walk the office, list the hazards and security gaps and set a control measure for each."
+        }
+      }
+    ]
+  }
+]

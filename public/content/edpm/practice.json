@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "p1",
+    "question": "Which is a function of an office?",
+    "options": [
+      "Manufacturing goods",
+      "Receiving, processing, storing and communicating information",
+      "Growing crops",
+      "Building roads"
+    ],
+    "answer": "Receiving, processing, storing and communicating information",
+    "explanation": "The office handles the administrative work of an organisation.",
+    "topic": "edpm-l1-1"
+  },
+  {
+    "id": "p2",
+    "question": "A disadvantage of an open-plan office is:",
+    "options": [
+      "Difficulty of supervision",
+      "Noise and lack of privacy",
+      "Excessive cost of walls",
+      "Slow communication"
+    ],
+    "answer": "Noise and lack of privacy",
+    "explanation": "Open planning aids supervision and communication but reduces privacy.",
+    "topic": "edpm-l1-1"
+  },
+  {
+    "id": "p3",
+    "question": "The office that keeps the organisation's written records is the:",
+    "options": [
+      "Registry or records office",
+      "Reception",
+      "Mailroom",
+      "Reprographics room"
+    ],
+    "answer": "Registry or records office",
+    "explanation": "The registry stores and retrieves files.",
+    "topic": "edpm-l1-1"
+  },
+  {
+    "id": "p4",
+    "question": "Which quality is essential for handling confidential information?",
+    "options": [
+      "Curiosity",
+      "Discretion",
+      "Speed",
+      "Ambition"
+    ],
+    "answer": "Discretion",
+    "explanation": "Staff must not disclose what they learn at work.",
+    "topic": "edpm-l1-1"
+  },
+  {
+    "id": "p5",
+    "question": "The department that deals with staff recruitment and welfare is:",
+    "options": [
+      "Accounts",
+      "Human resources or personnel",
+      "Sales",
+      "Production"
+    ],
+    "answer": "Human resources or personnel",
+    "explanation": "Personnel work covers staffing, records and welfare.",
+    "topic": "edpm-l1-1"
+  },
+  {
+    "id": "p7",
+    "question": "The correct order of the document processing cycle is:",
+    "options": [
+      "Input, origination, output, processing",
+      "Origination, input, processing, output",
+      "Output, input, storage, origination",
+      "Processing, origination, input, output"
+    ],
+    "answer": "Origination, input, processing, output",
+    "explanation": "Storage or disposal follows output.",
+    "topic": "edpm-l1-2"
+  },
+  {
+    "id": "p8",
+    "question": "A memorandum is used for:",
+    "options": [
+      "Communication with customers",
+      "Internal communication within the organisation",
+      "Payment requests to suppliers",
+      "Legal contracts"
+    ],
+    "answer": "Internal communication within the organisation",
+    "explanation": "Memoranda use guide words instead of an inside address.",
+    "topic": "edpm-l1-2"
+  },
+  {
+    "id": "p9",
+    "question": "A document requesting payment for goods supplied is:",
+    "options": [
+      "A credit note",
+      "An invoice",
+      "A quotation",
+      "A delivery note"
+    ],
+    "answer": "An invoice",
+    "explanation": "It states goods, quantities, prices, terms and total.",
+    "topic": "edpm-l1-2"
+  },
+  {
+    "id": "p10",
+    "question": "A credit note is issued when:",
+    "options": [
+      "Goods are delivered",
+      "Goods are returned or an overcharge is corrected",
+      "Payment is received",
+      "A quotation is accepted"
+    ],
+    "answer": "Goods are returned or an overcharge is corrected",
+    "explanation": "It reduces the amount the customer owes.",
+    "topic": "edpm-l1-2"
+  },
+  {
+    "id": "p11",
+    "question": "A delivery note is important because it:",
+    "options": [
+      "Requests payment",
+      "Travels with the goods and is signed as proof of receipt",
+      "Lists prices only",
+      "Replaces the invoice"
+    ],
+    "answer": "Travels with the goods and is signed as proof of receipt",
+    "explanation": "It evidences what was received and when.",
+    "topic": "edpm-l1-2"
+  },
+  {
+    "id": "p13",
+    "question": "The main purpose of filing is to:",
+    "options": [
+      "Decorate the office",
+      "Store documents so that they can be found quickly",
+      "Reduce the number of documents",
+      "Increase paper use"
+    ],
+    "answer": "Store documents so that they can be found quickly",
+    "explanation": "Filing also protects documents from loss and damage.",
+    "topic": "edpm-l1-3"
+  },
+  {
+    "id": "p14",
+    "question": "Filing customer records by surname uses which classification?",
+    "options": [
+      "Numeric",
+      "Alphabetic",
+      "Geographic",
+      "Chronological"
+    ],
+    "answer": "Alphabetic",
+    "explanation": "Names are filed in alphabetical order.",
+    "topic": "edpm-l1-3"
+  },
+  {
+    "id": "p15",
+    "question": "Chronological filing is most suitable for:",
+    "options": [
+      "Invoices and receipts",
+      "Personnel files",
+      "Sales territories",
+      "Equipment manuals"
+    ],
+    "answer": "Invoices and receipts",
+    "explanation": "Date order suits documentary sequences of transactions.",
+    "topic": "edpm-l1-3"
+  },
+  {
+    "id": "p16",
+    "question": "Which is an advantage of electronic filing?",
+    "options": [
+      "It needs no equipment",
+      "Documents can be searched by keyword and used by several people at once",
+      "It cannot be lost",
+      "It requires no naming discipline"
+    ],
+    "answer": "Documents can be searched by keyword and used by several people at once",
+    "explanation": "It also saves space, but it needs disciplined naming and backup.",
+    "topic": "edpm-l1-3"
+  },
+  {
+    "id": "p17",
+    "question": "A cross-reference slip is used to:",
+    "options": [
+      "Destroy a file",
+      "Indicate that a document is filed under another heading",
+      "Order new folders",
+      "Record the borrower's telephone number"
+    ],
+    "answer": "Indicate that a document is filed under another heading",
+    "explanation": "It allows retrieval through a second route.",
+    "topic": "edpm-l1-3"
+  },
+  {
+    "id": "p19",
+    "question": "RAM in a computer is:",
+    "options": [
+      "Permanent storage for files",
+      "Main memory holding the work in progress",
+      "A type of printer",
+      "An input device"
+    ],
+    "answer": "Main memory holding the work in progress",
+    "explanation": "RAM is volatile, so work must be saved.",
+    "topic": "edpm-l2-1"
+  },
+  {
+    "id": "p20",
+    "question": "Which device converts a paper document into an electronic image?",
+    "options": [
+      "Plotter",
+      "Scanner",
+      "Franking machine",
+      "Shredder"
+    ],
+    "answer": "Scanner",
+    "explanation": "Optical character recognition can make the text editable.",
+    "topic": "edpm-l2-1"
+  },
+  {
+    "id": "p21",
+    "question": "Multifunction devices combine which functions?",
+    "options": [
+      "Printing, scanning, copying and faxing",
+      "Binding and laminating",
+      "Shredding and filing",
+      "Typing and filing"
+    ],
+    "answer": "Printing, scanning, copying and faxing",
+    "explanation": "They save space and cost in a small office.",
+    "topic": "edpm-l2-1"
+  },
+  {
+    "id": "p22",
+    "question": "The correct ergonomic position of the monitor is:",
+    "options": [
+      "Below the desk",
+      "At eye level about an arm's length away",
+      "Directly under a bright light",
+      "Turned away from the user"
+    ],
+    "answer": "At eye level about an arm's length away",
+    "explanation": "This reduces neck strain and glare.",
+    "topic": "edpm-l2-1"
+  },
+  {
+    "id": "p23",
+    "question": "A dot matrix printer is still used mainly to:",
+    "options": [
+      "Print colour photographs",
+      "Produce multi-part carbonised forms",
+      "Scan documents",
+      "Bind reports"
+    ],
+    "answer": "Produce multi-part carbonised forms",
+    "explanation": "Impact printing produces several copies at once.",
+    "topic": "edpm-l2-1"
+  },
+  {
+    "id": "p25",
+    "question": "Which is system software?",
+    "options": [
+      "A spreadsheet program",
+      "The operating system",
+      "A word processing program",
+      "A payroll package"
+    ],
+    "answer": "The operating system",
+    "explanation": "System software manages files, devices and other software.",
+    "topic": "edpm-l2-2"
+  },
+  {
+    "id": "p26",
+    "question": "A table of figures that must be recalculated belongs in:",
+    "options": [
+      "A word processor as text",
+      "A spreadsheet",
+      "A presentation",
+      "A database report"
+    ],
+    "answer": "A spreadsheet",
+    "explanation": "Spreadsheets recalculate automatically when inputs change.",
+    "topic": "edpm-l2-2"
+  },
+  {
+    "id": "p27",
+    "question": "A PDF file is best sent when the sender wants to:",
+    "options": [
+      "Allow the recipient to edit freely",
+      "Preserve the layout so it cannot change",
+      "Reduce the file to data only",
+      "Store it in a database"
+    ],
+    "answer": "Preserve the layout so it cannot change",
+    "explanation": "PDF preserves fonts, images and layout for printing.",
+    "topic": "edpm-l2-2"
+  },
+  {
+    "id": "p28",
+    "question": "Good file management requires:",
+    "options": [
+      "Descriptive names and a logical folder structure",
+      "Saving every file on the desktop",
+      "Naming files version 1, 2, 3 only",
+      "Deleting the previous version immediately"
+    ],
+    "answer": "Descriptive names and a logical folder structure",
+    "explanation": "Consistent conventions keep files findable.",
+    "topic": "edpm-l2-2"
+  },
+  {
+    "id": "p29",
+    "question": "A backup is:",
+    "options": [
+      "A duplicate copy of data kept separately from the original",
+      "A deleted file",
+      "A compressed file",
+      "A password"
+    ],
+    "answer": "A duplicate copy of data kept separately from the original",
+    "explanation": "Backups must be tested and stored separately.",
+    "topic": "edpm-l2-2"
+  },
+  {
+    "id": "p31",
+    "question": "Touch typing means:",
+    "options": [
+      "Typing with two fingers while watching the keyboard",
+      "Typing without looking at the keyboard using the home keys",
+      "Typing very fast with many errors",
+      "Typing only numbers"
+    ],
+    "answer": "Typing without looking at the keyboard using the home keys",
+    "explanation": "The fingers return to A S D F and J K L ;.",
+    "topic": "edpm-l2-3"
+  },
+  {
+    "id": "p32",
+    "question": "Speed without accuracy is a problem because:",
+    "options": [
+      "It uses more ink",
+      "Time is lost finding and correcting errors",
+      "It damages the keyboard",
+      "It uses more paper"
+    ],
+    "answer": "Time is lost finding and correcting errors",
+    "explanation": "Accuracy is the real measure of productivity.",
+    "topic": "edpm-l2-3"
+  },
+  {
+    "id": "p33",
+    "question": "The correct typing posture includes:",
+    "options": [
+      "Feet flat, back supported, wrists straight",
+      "Hunching over the keyboard",
+      "Crossing the legs",
+      "Resting the wrists on a sharp desk edge"
+    ],
+    "answer": "Feet flat, back supported, wrists straight",
+    "explanation": "Good posture prevents strain injuries.",
+    "topic": "edpm-l2-3"
+  },
+  {
+    "id": "p34",
+    "question": "Repetitive strain injury is caused mainly by:",
+    "options": [
+      "Sitting still and continuous keyboard or mouse use without breaks",
+      "Reading documents",
+      "Lifting heavy boxes",
+      "Loud noise"
+    ],
+    "answer": "Sitting still and continuous keyboard or mouse use without breaks",
+    "explanation": "Breaks, stretching and correct posture reduce the risk.",
+    "topic": "edpm-l2-3"
+  },
+  {
+    "id": "p35",
+    "question": "Which is the most reliable proofreading aid?",
+    "options": [
+      "Relying on the spell checker alone",
+      "Reading the document carefully line by line and checking figures against the source",
+      "Assuming the software is correct",
+      "Reading only the first page"
+    ],
+    "answer": "Reading the document carefully line by line and checking figures against the source",
+    "explanation": "Spell checkers miss wrongly used words and wrong figures.",
+    "topic": "edpm-l2-3"
+  },
+  {
+    "id": "p37",
+    "question": "The margin of a document is:",
+    "options": [
+      "The space between the text and the edge of the paper",
+      "The space between lines",
+      "The size of the font",
+      "The number of pages"
+    ],
+    "answer": "The space between the text and the edge of the paper",
+    "explanation": "Margins frame the text and allow for binding.",
+    "topic": "edpm-l3-1"
+  },
+  {
+    "id": "p38",
+    "question": "A template is:",
+    "options": [
+      "A saved document that provides a standard layout for new documents",
+      "A type of printer",
+      "A proofreading mark",
+      "A file format"
+    ],
+    "answer": "A saved document that provides a standard layout for new documents",
+    "explanation": "Templates keep the house style consistent.",
+    "topic": "edpm-l3-1"
+  },
+  {
+    "id": "p39",
+    "question": "Mail merge is used to:",
+    "options": [
+      "Combine a main document with a data source to produce personalised documents",
+      "Join two files into one",
+      "Print on both sides",
+      "Check spelling"
+    ],
+    "answer": "Combine a main document with a data source to produce personalised documents",
+    "explanation": "It is used for circulars, labels and payslips.",
+    "topic": "edpm-l3-1"
+  },
+  {
+    "id": "p40",
+    "question": "A header appears:",
+    "options": [
+      "At the top of every page",
+      "At the bottom of every page",
+      "Only on page one",
+      "In the margin"
+    ],
+    "answer": "At the top of every page",
+    "explanation": "Headers carry titles, references or logos; footers carry page numbers.",
+    "topic": "edpm-l3-1"
+  },
+  {
+    "id": "p41",
+    "question": "Justified alignment means the text is:",
+    "options": [
+      "Aligned at the left margin only",
+      "Aligned at both the left and right margins",
+      "Centred",
+      "Aligned at the right margin only"
+    ],
+    "answer": "Aligned at both the left and right margins",
+    "explanation": "Extra space is inserted between words to fill the line.",
+    "topic": "edpm-l3-1"
+  },
+  {
+    "id": "p43",
+    "question": "Which part of a business letter is placed immediately above the salutation?",
+    "options": [
+      "The complimentary close",
+      "The inside address",
+      "The signature block",
+      "The reference initials"
+    ],
+    "answer": "The inside address",
+    "explanation": "The order is reference, date, inside address, salutation.",
+    "topic": "edpm-l3-2"
+  },
+  {
+    "id": "p44",
+    "question": "In the full block layout:",
+    "options": [
+      "Every line begins at the left margin",
+      "The date begins at the centre",
+      "The close is indented",
+      "Paragraphs are indented"
+    ],
+    "answer": "Every line begins at the left margin",
+    "explanation": "Modified block indents the date, close and signature block.",
+    "topic": "edpm-l3-2"
+  },
+  {
+    "id": "p45",
+    "question": "A memorandum uses which guide words?",
+    "options": [
+      "Dear Sir and Yours faithfully",
+      "To, From, Date and Subject",
+      "Reference and Enclosure only",
+      "Invoice and Total"
+    ],
+    "answer": "To, From, Date and Subject",
+    "explanation": "It has no inside address or salutation.",
+    "topic": "edpm-l3-2"
+  },
+  {
+    "id": "p46",
+    "question": "The reference initials in a letter typed by Joan Brown for Peter Shaw are usually:",
+    "options": [
+      "JB",
+      "PS",
+      "PS/JB or PS:JB",
+      "JBPS"
+    ],
+    "answer": "PS/JB or PS:JB",
+    "explanation": "The writer's initials come before the typist's.",
+    "topic": "edpm-l3-2"
+  },
+  {
+    "id": "p47",
+    "question": "Minutes of a meeting should record:",
+    "options": [
+      "Every word spoken",
+      "Attendance, decisions, resolutions and actions with responsibility",
+      "Only the agenda",
+      "Only the treasurer's report"
+    ],
+    "answer": "Attendance, decisions, resolutions and actions with responsibility",
+    "explanation": "Minutes are a record of decisions, not a transcript.",
+    "topic": "edpm-l3-2"
+  },
+  {
+    "id": "p48",
+    "question": "Minutes are confirmed when:",
+    "options": [
+      "They are typed",
+      "They are circulated",
+      "They are approved and signed at the following meeting",
+      "They are filed"
+    ],
+    "answer": "They are approved and signed at the following meeting",
+    "explanation": "Corrections may be made before confirmation.",
+    "topic": "edpm-l3-2"
+  },
+  {
+    "id": "p49",
+    "question": "A pie chart is most suitable for showing:",
+    "options": [
+      "Change over time",
+      "Proportions of a whole",
+      "The relationship between two variables",
+      "Comparisons of quantities"
+    ],
+    "answer": "Proportions of a whole",
+    "explanation": "The sectors must add to 100 per cent.",
+    "topic": "edpm-l3-3"
+  },
+  {
+    "id": "p50",
+    "question": "A line graph is most suitable for showing:",
+    "options": [
+      "Trends over a period of time",
+      "Parts of a whole",
+      "One figure only",
+      "Names and addresses"
+    ],
+    "answer": "Trends over a period of time",
+    "explanation": "The line shows how a value changes.",
+    "topic": "edpm-l3-3"
+  },
+  {
+    "id": "p51",
+    "question": "Numbers in a table should usually be:",
+    "options": [
+      "Right-aligned or aligned on the decimal point",
+      "Centred regardless of decimals",
+      "Left-aligned with text",
+      "Hidden"
+    ],
+    "answer": "Right-aligned or aligned on the decimal point",
+    "explanation": "This makes figures easy to compare.",
+    "topic": "edpm-l3-3"
+  },
+  {
+    "id": "p52",
+    "question": "A chart legend explains:",
+    "options": [
+      "The date of the chart",
+      "What each colour or symbol represents",
+      "The chart's source only",
+      "How to print the chart"
+    ],
+    "answer": "What each colour or symbol represents",
+    "explanation": "Axes, labels and units should also be shown.",
+    "topic": "edpm-l3-3"
+  },
+  {
+    "id": "p53",
+    "question": "A header row in a long table is repeated so that:",
+    "options": [
+      "The table is longer",
+      "Column headings are visible on every page",
+      "Totals are calculated",
+      "The table is centred"
+    ],
+    "answer": "Column headings are visible on every page",
+    "explanation": "Readers can identify columns on any page.",
+    "topic": "edpm-l3-3"
+  },
+  {
+    "id": "p54",
+    "question": "The cell reference C5 refers to:",
+    "options": [
+      "Row C, column 5",
+      "Column C, row 5",
+      "The fifth sheet",
+      "A range of five cells"
+    ],
+    "answer": "Column C, row 5",
+    "explanation": "Columns are lettered and rows numbered.",
+    "topic": "edpm-l4-1"
+  },
+  {
+    "id": "p55",
+    "question": "A workbook is:",
+    "options": [
+      "A single cell",
+      "A file that contains one or more worksheets",
+      "A range of cells",
+      "A printed sheet"
+    ],
+    "answer": "A file that contains one or more worksheets",
+    "explanation": "Each worksheet is a grid of rows and columns.",
+    "topic": "edpm-l4-1"
+  },
+  {
+    "id": "p56",
+    "question": "Data validation in a spreadsheet is used to:",
+    "options": [
+      "Format the numbers",
+      "Restrict what may be entered into a cell",
+      "Sort the data",
+      "Print the sheet"
+    ],
+    "answer": "Restrict what may be entered into a cell",
+    "explanation": "It prevents invalid entries and reduces errors.",
+    "topic": "edpm-l4-1"
+  },
+  {
+    "id": "p57",
+    "question": "By default, numbers entered in a spreadsheet are:",
+    "options": [
+      "Left-aligned",
+      "Right-aligned",
+      "Centred",
+      "Hidden"
+    ],
+    "answer": "Right-aligned",
+    "explanation": "Text is left-aligned by default.",
+    "topic": "edpm-l4-1"
+  },
+  {
+    "id": "p58",
+    "question": "Freeze panes is used to:",
+    "options": [
+      "Hide rows",
+      "Keep headings visible while scrolling",
+      "Lock the file",
+      "Delete columns"
+    ],
+    "answer": "Keep headings visible while scrolling",
+    "explanation": "It is useful in long sheets.",
+    "topic": "edpm-l4-1"
+  },
+  {
+    "id": "p59",
+    "question": "Autofill is useful because it:",
+    "options": [
+      "Copies data or continues a series",
+      "Changes the font",
+      "Prints the sheet",
+      "Protects the cells"
+    ],
+    "answer": "Copies data or continues a series",
+    "explanation": "It saves time when filling rows or columns.",
+    "topic": "edpm-l4-1"
+  },
+  {
+    "id": "p60",
+    "question": "Which formula correctly multiplies the value in B4 by the value in C4?",
+    "options": [
+      "B4+C4",
+      "=B4*C4",
+      "=B4,C4",
+      "#B4*C4"
+    ],
+    "answer": "=B4*C4",
+    "explanation": "A formula must begin with an equals sign.",
+    "topic": "edpm-l4-2"
+  },
+  {
+    "id": "p61",
+    "question": "The formula =SUM(B4:B10) will:",
+    "options": [
+      "Count the cells",
+      "Add the values from B4 to B10",
+      "Multiply the values",
+      "Find the largest value"
+    ],
+    "answer": "Add the values from B4 to B10",
+    "explanation": "SUM adds a range of values.",
+    "topic": "edpm-l4-2"
+  },
+  {
+    "id": "p62",
+    "question": "An absolute cell reference is written as:",
+    "options": [
+      "B4",
+      "$B$4",
+      "B$4 only",
+      "=B4"
+    ],
+    "answer": "$B$4",
+    "explanation": "Dollar signs stop the reference changing when copied.",
+    "topic": "edpm-l4-2"
+  },
+  {
+    "id": "p63",
+    "question": "The IF function is used to:",
+    "options": [
+      "Add a range",
+      "Return one value or another depending on a condition",
+      "Sort data",
+      "Create a chart"
+    ],
+    "answer": "Return one value or another depending on a condition",
+    "explanation": "For example =IF(D4>=50,\"Pass\",\"Fail\").",
+    "topic": "edpm-l4-2"
+  },
+  {
+    "id": "p64",
+    "question": "The error value #DIV/0! means:",
+    "options": [
+      "A name was misspelt",
+      "A number was divided by zero or by an empty cell",
+      "A column is too narrow",
+      "A reference is invalid"
+    ],
+    "answer": "A number was divided by zero or by an empty cell",
+    "explanation": "The divisor must contain a value.",
+    "topic": "edpm-l4-2"
+  },
+  {
+    "id": "p65",
+    "question": "The error value ##### in a cell usually means:",
+    "options": [
+      "The formula is wrong",
+      "The column is too narrow to display the number",
+      "The cell is locked",
+      "The sheet is protected"
+    ],
+    "answer": "The column is too narrow to display the number",
+    "explanation": "Widening the column displays the value.",
+    "topic": "edpm-l4-2"
+  },
+  {
+    "id": "p67",
+    "question": "On an invoice the extended amount is:",
+    "options": [
+      "Quantity multiplied by unit price",
+      "The subtotal plus tax",
+      "The discount",
+      "The total of all invoices"
+    ],
+    "answer": "Quantity multiplied by unit price",
+    "explanation": "Extended amounts are then added to give the subtotal.",
+    "topic": "edpm-l4-3"
+  },
+  {
+    "id": "p68",
+    "question": "Gross pay minus deductions equals:",
+    "options": [
+      "Taxable pay",
+      "Net pay",
+      "Overtime",
+      "The payroll total"
+    ],
+    "answer": "Net pay",
+    "explanation": "Net pay is the amount the employee receives.",
+    "topic": "edpm-l4-3"
+  },
+  {
+    "id": "p69",
+    "question": "A reorder report is produced by:",
+    "options": [
+      "Filtering items whose quantity has fallen to the reorder level",
+      "Sorting the file alphabetically",
+      "Printing the whole stock list",
+      "Deleting old records"
+    ],
+    "answer": "Filtering items whose quantity has fallen to the reorder level",
+    "explanation": "It tells the buyer what must be ordered.",
+    "topic": "edpm-l4-3"
+  },
+  {
+    "id": "p70",
+    "question": "A statement of account:",
+    "options": [
+      "Lists the transactions of a period and the balance owed",
+      "Requests payment for one delivery only",
+      "Records returned goods only",
+      "Authorises a purchase"
+    ],
+    "answer": "Lists the transactions of a period and the balance owed",
+    "explanation": "It is usually sent monthly.",
+    "topic": "edpm-l4-3"
+  },
+  {
+    "id": "p71",
+    "question": "Protecting a worksheet is done so that:",
+    "options": [
+      "Users cannot overwrite formulas and fixed data",
+      "The file cannot be printed",
+      "The sheet cannot be sorted",
+      "Data is deleted"
+    ],
+    "answer": "Users cannot overwrite formulas and fixed data",
+    "explanation": "Selected cells may still be left unprotected for input.",
+    "topic": "edpm-l4-3"
+  },
+  {
+    "id": "p72",
+    "question": "Before relying on a spreadsheet's totals you should:",
+    "options": [
+      "Assume the software is correct",
+      "Hand-check a sample of the calculations and check the ranges",
+      "Print the sheet",
+      "Change the font"
+    ],
+    "answer": "Hand-check a sample of the calculations and check the ranges",
+    "explanation": "Wrong ranges and copied formulas are common errors.",
+    "topic": "edpm-l4-3"
+  },
+  {
+    "id": "p73",
+    "question": "In a database, a record is:",
+    "options": [
+      "A single item of information about a person or thing",
+      "All the information about one person or thing held in one row of the table",
+      "A collection of tables",
+      "A printed query"
+    ],
+    "answer": "All the information about one person or thing held in one row of the table",
+    "explanation": "Each field holds one item of that record.",
+    "topic": "edpm-l5-1"
+  },
+  {
+    "id": "p74",
+    "question": "A primary key is:",
+    "options": [
+      "The first field in a table",
+      "A field that uniquely identifies each record",
+      "A password",
+      "A type of query"
+    ],
+    "answer": "A field that uniquely identifies each record",
+    "explanation": "Customer codes and student numbers are common keys.",
+    "topic": "edpm-l5-1"
+  },
+  {
+    "id": "p75",
+    "question": "Which data type would store a date of birth?",
+    "options": [
+      "Text",
+      "Date and time",
+      "Currency",
+      "Yes or no"
+    ],
+    "answer": "Date and time",
+    "explanation": "Date fields can be sorted and used in calculations.",
+    "topic": "edpm-l5-1"
+  },
+  {
+    "id": "p76",
+    "question": "A query is used to:",
+    "options": [
+      "Enter data",
+      "Retrieve records that match stated criteria",
+      "Print a form",
+      "Design a field"
+    ],
+    "answer": "Retrieve records that match stated criteria",
+    "explanation": "Queries can also sort, group and calculate.",
+    "topic": "edpm-l5-1"
+  },
+  {
+    "id": "p77",
+    "question": "A form in a database provides:",
+    "options": [
+      "A printed summary",
+      "A screen layout for entering and viewing data",
+      "A backup of the data",
+      "A type of field"
+    ],
+    "answer": "A screen layout for entering and viewing data",
+    "explanation": "It makes entry easier and safer than typing in the table.",
+    "topic": "edpm-l5-1"
+  },
+  {
+    "id": "p78",
+    "question": "Relating a customer table to an orders table is done by:",
+    "options": [
+      "Copying the customer details into every order",
+      "Using a common field such as the customer code in both tables",
+      "Printing both tables",
+      "Merging the tables into one"
+    ],
+    "answer": "Using a common field such as the customer code in both tables",
+    "explanation": "This avoids duplicating information.",
+    "topic": "edpm-l5-1"
+  },
+  {
+    "id": "p79",
+    "question": "The first step in preparing a presentation is to:",
+    "options": [
+      "Open the presentation software",
+      "Identify the audience, purpose and time available",
+      "Choose the colours",
+      "Add animations"
+    ],
+    "answer": "Identify the audience, purpose and time available",
+    "explanation": "Content and structure follow the audience.",
+    "topic": "edpm-l5-2"
+  },
+  {
+    "id": "p80",
+    "question": "Good slides usually contain:",
+    "options": [
+      "Full paragraphs of text",
+      "One idea with a short heading and brief points or a graphic",
+      "Many fonts and colours",
+      "Animation on every element"
+    ],
+    "answer": "One idea with a short heading and brief points or a graphic",
+    "explanation": "Detail should be spoken, not read from the slide.",
+    "topic": "edpm-l5-2"
+  },
+  {
+    "id": "p81",
+    "question": "Speaker notes are used to:",
+    "options": [
+      "Show the audience extra detail",
+      "Remind the speaker what to say",
+      "Change the slide order",
+      "Print certificates"
+    ],
+    "answer": "Remind the speaker what to say",
+    "explanation": "Notes pages can also be printed for reference.",
+    "topic": "edpm-l5-2"
+  },
+  {
+    "id": "p82",
+    "question": "Handouts are:",
+    "options": [
+      "Printed copies of the slides or notes given to the audience",
+      "The speaker's notes only",
+      "The projector cable",
+      "A type of transition"
+    ],
+    "answer": "Printed copies of the slides or notes given to the audience",
+    "explanation": "They give the audience something to take away.",
+    "topic": "edpm-l5-2"
+  },
+  {
+    "id": "p83",
+    "question": "Alignment, proximity, repetition and contrast are principles of:",
+    "options": [
+      "Database design",
+      "Page layout and design",
+      "Keyboard technique",
+      "Filing"
+    ],
+    "answer": "Page layout and design",
+    "explanation": "They make a page easy to read.",
+    "topic": "edpm-l5-2"
+  },
+  {
+    "id": "p84",
+    "question": "A desktop-published file should be kept with its source file because:",
+    "options": [
+      "It takes more space",
+      "The document can then be updated for a later edition",
+      "It is required by law",
+      "It prints faster"
+    ],
+    "answer": "The document can then be updated for a later edition",
+    "explanation": "Without the source file the work must be rebuilt.",
+    "topic": "edpm-l5-2"
+  },
+  {
+    "id": "p85",
+    "question": "Typing an email in capital letters is considered:",
+    "options": [
+      "Good practice",
+      "Rude, because it reads as shouting",
+      "Necessary for urgent messages",
+      "Suitable for managers"
+    ],
+    "answer": "Rude, because it reads as shouting",
+    "explanation": "Sentence case and clear layout are preferred.",
+    "topic": "edpm-l5-3"
+  },
+  {
+    "id": "p86",
+    "question": "The Bcc field in an email is used to:",
+    "options": [
+      "Copy others openly",
+      "Send a copy without other recipients seeing the address",
+      "Reply to all",
+      "Attach a file"
+    ],
+    "answer": "Send a copy without other recipients seeing the address",
+    "explanation": "It protects the privacy of recipients.",
+    "topic": "edpm-l5-3"
+  },
+  {
+    "id": "p87",
+    "question": "Phishing is:",
+    "options": [
+      "A legitimate marketing email",
+      "An attempt to trick a user into revealing confidential information",
+      "A type of backup",
+      "A file format"
+    ],
+    "answer": "An attempt to trick a user into revealing confidential information",
+    "explanation": "Suspicious links and attachments should never be opened.",
+    "topic": "edpm-l5-3"
+  },
+  {
+    "id": "p88",
+    "question": "The strongest defence against ransomware is:",
+    "options": [
+      "Paying the ransom",
+      "Regular tested backups kept separately from the original data",
+      "Using one password everywhere",
+      "Turning off the antivirus"
+    ],
+    "answer": "Regular tested backups kept separately from the original data",
+    "explanation": "Updates, antivirus and user care also reduce risk.",
+    "topic": "edpm-l5-3"
+  },
+  {
+    "id": "p89",
+    "question": "Cloud storage allows an office to:",
+    "options": [
+      "Save and share files that can be accessed from different locations",
+      "Avoid all security risks",
+      "Eliminate the need for passwords",
+      "Store unlimited paper"
+    ],
+    "answer": "Save and share files that can be accessed from different locations",
+    "explanation": "Access control and encryption still matter.",
+    "topic": "edpm-l5-3"
+  },
+  {
+    "id": "p90",
+    "question": "Data protection legislation requires organisations to:",
+    "options": [
+      "Collect as much personal data as possible",
+      "Keep personal data accurate, secure and used only for its stated purpose",
+      "Share personal data freely",
+      "Publish all records"
+    ],
+    "answer": "Keep personal data accurate, secure and used only for its stated purpose",
+    "explanation": "Individuals also have rights over their own data.",
+    "topic": "edpm-l5-3"
+  },
+  {
+    "id": "p91",
+    "question": "Which reprographic method is most suitable for 5000 leaflets?",
+    "options": [
+      "Desktop inkjet printer",
+      "Offset or digital duplicating",
+      "Photocopier set to single copies",
+      "Plotter"
+    ],
+    "answer": "Offset or digital duplicating",
+    "explanation": "Long runs are far cheaper by duplicating or offset printing.",
+    "topic": "edpm-l6-1"
+  },
+  {
+    "id": "p92",
+    "question": "Collating means:",
+    "options": [
+      "Arranging printed pages into complete sets in order",
+      "Trimming the edges",
+      "Laminating the pages",
+      "Folding the paper"
+    ],
+    "answer": "Arranging printed pages into complete sets in order",
+    "explanation": "Sets are then stapled or bound.",
+    "topic": "edpm-l6-1"
+  },
+  {
+    "id": "p93",
+    "question": "Comb binding is used to:",
+    "options": [
+      "Hold pages together in a report that can open flat",
+      "Laminate a card",
+      "Shred documents",
+      "Number forms"
+    ],
+    "answer": "Hold pages together in a report that can open flat",
+    "explanation": "It allows pages to be added or removed.",
+    "topic": "edpm-l6-1"
+  },
+  {
+    "id": "p94",
+    "question": "Copyright law means an office may copy protected material:",
+    "options": [
+      "Freely, because copying is internal",
+      "Only within the limits of a licence or fair dealing",
+      "If the copies are not sold",
+      "Always, if the source is acknowledged"
+    ],
+    "answer": "Only within the limits of a licence or fair dealing",
+    "explanation": "Permissions may be required.",
+    "topic": "edpm-l6-1"
+  },
+  {
+    "id": "p95",
+    "question": "Photocopying examination papers requires particular care because:",
+    "options": [
+      "The paper is expensive",
+      "Confidentiality must be maintained and copies collected",
+      "Colour copying is slow",
+      "Copies must be stapled"
+    ],
+    "answer": "Confidentiality must be maintained and copies collected",
+    "explanation": "Leaving a copy in the machine breaches security.",
+    "topic": "edpm-l6-1"
+  },
+  {
+    "id": "p96",
+    "question": "Reducing paper consumption in the office is done by:",
+    "options": [
+      "Printing single-sided copies only",
+      "Printing double-sided, proofreading on screen and circulating electronically",
+      "Using more toner",
+      "Printing extra drafts"
+    ],
+    "answer": "Printing double-sided, proofreading on screen and circulating electronically",
+    "explanation": "Paper, toner and energy are real costs.",
+    "topic": "edpm-l6-1"
+  },
+  {
+    "id": "p97",
+    "question": "Incoming mail is date-stamped so that:",
+    "options": [
+      "The postman can be traced",
+      "The date of receipt is recorded for reference and reply deadlines",
+      "It looks neat",
+      "It can be filed alphabetically"
+    ],
+    "answer": "The date of receipt is recorded for reference and reply deadlines",
+    "explanation": "The mail register also records the action required.",
+    "topic": "edpm-l6-2"
+  },
+  {
+    "id": "p98",
+    "question": "Remittances received in the mail should be:",
+    "options": [
+      "Left in the mail tray",
+      "Recorded immediately and passed to the accounts section",
+      "Given to the messenger",
+      "Sent back"
+    ],
+    "answer": "Recorded immediately and passed to the accounts section",
+    "explanation": "Cheques and money orders need immediate secure handling.",
+    "topic": "edpm-l6-2"
+  },
+  {
+    "id": "p99",
+    "question": "Registered post is used when the sender needs:",
+    "options": [
+      "The cheapest possible rate",
+      "Proof of posting and delivery for an important item",
+      "To send a parcel overseas only",
+      "To send an email"
+    ],
+    "answer": "Proof of posting and delivery for an important item",
+    "explanation": "It provides a record and often compensation.",
+    "topic": "edpm-l6-2"
+  },
+  {
+    "id": "p100",
+    "question": "The outgoing mail book is kept to:",
+    "options": [
+      "Record what was sent, when and by what method",
+      "Record incoming mail",
+      "List visitors",
+      "Record telephone calls"
+    ],
+    "answer": "Record what was sent, when and by what method",
+    "explanation": "It provides evidence of despatch.",
+    "topic": "edpm-l6-2"
+  },
+  {
+    "id": "p101",
+    "question": "A telephone message should record:",
+    "options": [
+      "Only the caller's name",
+      "Caller's name, organisation, number, time and the purpose of the call",
+      "The caller's accent",
+      "The length of the call"
+    ],
+    "answer": "Caller's name, organisation, number, time and the purpose of the call",
+    "explanation": "The message should be read back to confirm accuracy.",
+    "topic": "edpm-l6-2"
+  },
+  {
+    "id": "p102",
+    "question": "When answering a business telephone you should:",
+    "options": [
+      "Say 'Hello' only",
+      "Greet the caller, identify the organisation and yourself, and offer help",
+      "Let it ring until the caller hangs up",
+      "Transfer immediately"
+    ],
+    "answer": "Greet the caller, identify the organisation and yourself, and offer help",
+    "explanation": "Answering within about three rings is good practice.",
+    "topic": "edpm-l6-2"
+  },
+  {
+    "id": "p104",
+    "question": "Ergonomics is the study of:",
+    "options": [
+      "Filing systems",
+      "Designing the workplace and equipment to suit the worker",
+      "Office finance",
+      "Postal regulations"
+    ],
+    "answer": "Designing the workplace and equipment to suit the worker",
+    "explanation": "It reduces strain, fatigue and injury.",
+    "topic": "edpm-l6-3"
+  },
+  {
+    "id": "p105",
+    "question": "Which is a control measure for slips and trips in the office?",
+    "options": [
+      "Leaving cables across the walkway",
+      "Keeping walkways clear and routing cables safely",
+      "Polishing floors during working hours",
+      "Stacking files on the floor"
+    ],
+    "answer": "Keeping walkways clear and routing cables safely",
+    "explanation": "Spills should also be cleaned immediately.",
+    "topic": "edpm-l6-3"
+  },
+  {
+    "id": "p106",
+    "question": "An accident book is kept because:",
+    "options": [
+      "It is required, and it helps identify and correct the cause of accidents",
+      "It replaces first aid",
+      "It lists visitors",
+      "It records holidays"
+    ],
+    "answer": "It is required, and it helps identify and correct the cause of accidents",
+    "explanation": "Records support legal and insurance claims.",
+    "topic": "edpm-l6-3"
+  },
+  {
+    "id": "p107",
+    "question": "A clear desk policy means:",
+    "options": [
+      "All documents are destroyed daily",
+      "Confidential papers and media are secured when the desk is left",
+      "Nothing may be kept on the desk",
+      "Desks are cleared at night only"
+    ],
+    "answer": "Confidential papers and media are secured when the desk is left",
+    "explanation": "It reduces the risk of information leakage.",
+    "topic": "edpm-l6-3"
+  },
+  {
+    "id": "p108",
+    "question": "Shredding confidential paper is a control measure for:",
+    "options": [
+      "Fire safety",
+      "Information security",
+      "Ergonomics",
+      "Copyright"
+    ],
+    "answer": "Information security",
+    "explanation": "It prevents recovery of discarded information.",
+    "topic": "edpm-l6-3"
+  },
+  {
+    "id": "p109",
+    "question": "Which practice reduces the office's environmental impact?",
+    "options": [
+      "Leaving computers and air-conditioning on overnight",
+      "Switching off equipment and recycling paper, cartridges and e-waste",
+      "Printing every email",
+      "Discarding toner cartridges in general waste"
+    ],
+    "answer": "Switching off equipment and recycling paper, cartridges and e-waste",
+    "explanation": "Reducing, reusing and recycling cut cost as well as waste.",
+    "topic": "edpm-l6-3"
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "subjectId": "edpm",
+  "introduction": "The EDPM School-Based Assessment is a practical portfolio: you research an office or department, then prepare and present a defined set of electronic documents that an office would actually use, with a written account of how each was produced. Marks are given for the range and accuracy of the documents, the correct application of software features, the professionalism of the presentation and the quality of your explanation and evaluation. Check the current CSEC syllabus and your teacher's guidance for the exact documents, tasks and mark allocation required.",
+  "tasks": [
+    {
+      "section": "Research",
+      "title": "Investigation of an office",
+      "explanation": "Describe the organisation and the office or department you studied: its functions, layout, staff and duties, equipment, software and the documents it handles, using interviews and observation.",
+      "marks": "8"
+    },
+    {
+      "section": "Plan",
+      "title": "Portfolio plan",
+      "explanation": "List the documents you will produce, the software you will use for each, the data you need, the house style to be applied and a time plan for the work.",
+      "marks": "6"
+    },
+    {
+      "section": "Document Preparation",
+      "title": "The document set",
+      "explanation": "Prepare each required document - business letter, memorandum, notice or agenda and minutes, table, spreadsheet with formulas, database with query and report, presentation, and a desktop-published item - each complete, correctly formatted and accurate.",
+      "marks": "20"
+    },
+    {
+      "section": "Application of Features",
+      "title": "Software features used",
+      "explanation": "For each document, note the software features applied - mail merge, styles, headers and footers, tables, absolute references, functions, validation, sorting, charts, queries, transitions - and why each was chosen.",
+      "marks": "10"
+    },
+    {
+      "section": "Accuracy and Proofreading",
+      "title": "Checking and correcting",
+      "explanation": "Keep a record of the errors found in your drafts and the corrections made, showing the checks used for figures, formulae, names, addresses and layout.",
+      "marks": "6"
+    },
+    {
+      "section": "Evaluation",
+      "title": "Evaluation and improvement",
+      "explanation": "Evaluate the finished portfolio against the office's needs, identify the documents or features that did not work as intended, and recommend improvements to your method and any further training you need.",
+      "marks": "6"
+    }
+  ],
+  "sampleTitle": "A portfolio prepared for the accounts office of a small distribution company",
+  "sample": [
+    {
+      "section": "Document Preparation",
+      "body": "The letter was produced in the full block layout on the company's letterhead with the reference, date, inside address, subject heading, body, complimentary close, designation, reference initials and an Enclosures notation, and was then printed for signature and filed as a PDF. The customer circular was produced by mail merge from a spreadsheet of 210 customer records, which reduced the job to one main document plus a data source and produced individually addressed labels at the same time. The invoice was built on a spreadsheet using the price list sheet, with extended amounts calculated as quantity multiplied by unit price, a discount of 5 per cent applied to orders over $20,000 through an IF formula, tax applied using an absolute reference to the tax rate cell, and totals protected so that they cannot be overwritten. The following month's statement of account was produced from the same workbook by filtering on the account code and the period.",
+      "tips": "Name every software feature you used - layout, merge, absolute reference, IF function, protection - and state the reason for choosing it."
+    },
+    {
+      "section": "Accuracy and Proofreading",
+      "body": "On checking the invoice sheet I found three faults: the discount formula had been copied without absolute references, so the tax rate moved down the column and gave wrong totals for rows 6 to 12; two customer addresses in the mail merge data were missing the postal zone; and the statement carried last month's date because the footer was typed rather than inserted as a field. The tax rate was corrected with $B$2, the two addresses were verified against the customer file and amended, and the footer was replaced with an automatic date field. I then recalculated a sample of five invoices by hand and reconciled the totals to the payment records before printing.",
+      "tips": "Real, specific errors with the correction used score far better than a list of general checks."
+    }
+  ],
+  "marking": "Marks reward thorough research, a realistic plan, correctly prepared and accurate documents covering the required range, deliberate and appropriate use of software features, evidence of systematic checking, professional presentation and a candid evaluation with recommendations.",
+  "checklist": [
+    "Office or department described with functions and layout",
+    "Staff duties and equipment recorded",
+    "Document list and software chosen for each",
+    "Letter in correct layout with all parts",
+    "Memorandum and notice correctly set out",
+    "Agenda and minutes produced and formatted",
+    "Table with headings, units and totals",
+    "Spreadsheet with formulas, functions and an absolute reference",
+    "Database with field types, key, query and report",
+    "Presentation with consistent design and handouts",
+    "Desktop-published item with balanced layout",
+    "Software features named and justified",
+    "Draft errors and corrections recorded",
+    "Hand-checked sample of figures included",
+    "Documents proofread and professionally presented",
+    "Evaluation with specific recommendations"
+  ]
+}

@@ -112,5 +112,11 @@
     "name": "Principles of Business",
     "description": "Business and its environment, ownership, finance, marketing, production and quality, people in business, government, trade and entrepreneurship.",
     "icon": "Storefront"
+  },
+  {
+    "id": "edpm",
+    "name": "EDPM",
+    "description": "Electronic Document Preparation and Management: the office, the document cycle, hardware and software, word processing, spreadsheets, databases, security and office services.",
+    "icon": "Computer"
   }
 ]

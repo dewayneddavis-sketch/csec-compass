@@ -1,0 +1,327 @@
+[
+  {
+    "id": "kc1",
+    "question": "The main function of an office is to:",
+    "options": [
+      "Produce goods",
+      "Process and communicate information and support the organisation's work",
+      "Sell shares",
+      "Transport goods"
+    ],
+    "answer": "Process and communicate information and support the organisation's work",
+    "explanation": "Every organisation with records has some form of office.",
+    "topic": "edpm-l1-1"
+  },
+  {
+    "id": "kc2",
+    "question": "Storing and disposing of documents belongs to which stage of the cycle?",
+    "options": [
+      "Origination",
+      "Input",
+      "Output",
+      "Storage or disposal"
+    ],
+    "answer": "Storage or disposal",
+    "explanation": "The final stage keeps records findable and lawful.",
+    "topic": "edpm-l1-2"
+  },
+  {
+    "id": "kc3",
+    "question": "Backing up files is important because:",
+    "options": [
+      "It makes the computer faster",
+      "Fire, theft, hurricane or equipment failure can destroy the only copy",
+      "It saves paper",
+      "It removes viruses"
+    ],
+    "answer": "Fire, theft, hurricane or equipment failure can destroy the only copy",
+    "explanation": "Backups should be stored separately and tested.",
+    "topic": "edpm-l1-3"
+  },
+  {
+    "id": "kc4",
+    "question": "A consumable in an office is:",
+    "options": [
+      "A printer",
+      "Paper, toner or staples used up in the work",
+      "A scanner",
+      "A desk"
+    ],
+    "answer": "Paper, toner or staples used up in the work",
+    "explanation": "Consumables must be monitored and reordered.",
+    "topic": "edpm-l2-1"
+  },
+  {
+    "id": "kc5",
+    "question": "File version control matters because:",
+    "options": [
+      "It prevents anyone from finding the latest version otherwise",
+      "It increases file size",
+      "It is required by the printer",
+      "It changes the format"
+    ],
+    "answer": "It prevents anyone from finding the latest version otherwise",
+    "explanation": "Names should show dates or version numbers.",
+    "topic": "edpm-l2-2"
+  },
+  {
+    "id": "kc6",
+    "question": "A keyboarding accuracy rate of 95 per cent means:",
+    "options": [
+      "5 per cent of the characters were wrong",
+      "95 words per minute",
+      "95 errors",
+      "5 words per minute"
+    ],
+    "answer": "5 per cent of the characters were wrong",
+    "explanation": "Speed and accuracy are both measured.",
+    "topic": "edpm-l2-3"
+  },
+  {
+    "id": "kc7",
+    "question": "A footnote is placed:",
+    "options": [
+      "At the bottom of the page it refers to",
+      "At the end of the document",
+      "In the header",
+      "In a text box"
+    ],
+    "answer": "At the bottom of the page it refers to",
+    "explanation": "Endnotes appear at the end of the document.",
+    "topic": "edpm-l3-1"
+  },
+  {
+    "id": "kc8",
+    "question": "An email subject line should be:",
+    "options": [
+      "Left blank",
+      "Short and descriptive of the message",
+      "Written in capitals",
+      "The sender's name"
+    ],
+    "answer": "Short and descriptive of the message",
+    "explanation": "It helps the recipient prioritise and search.",
+    "topic": "edpm-l3-2"
+  },
+  {
+    "id": "kc9",
+    "question": "A bar chart is best for:",
+    "options": [
+      "Showing proportions of a whole",
+      "Comparing quantities across categories",
+      "Showing a continuous trend",
+      "Showing one figure"
+    ],
+    "answer": "Comparing quantities across categories",
+    "explanation": "Line graphs suit trends, pie charts suit proportions.",
+    "topic": "edpm-l3-3"
+  },
+  {
+    "id": "kc10",
+    "question": "A merged cell in a spreadsheet is used mainly to:",
+    "options": [
+      "Centre a title across several columns",
+      "Hide data",
+      "Create a formula",
+      "Protect the sheet"
+    ],
+    "answer": "Centre a title across several columns",
+    "explanation": "Merging combines cells into one.",
+    "topic": "edpm-l4-1"
+  },
+  {
+    "id": "kc11",
+    "question": "Copying a formula down a column changes:",
+    "options": [
+      "The relative cell references",
+      "The font",
+      "The number format",
+      "The column width"
+    ],
+    "answer": "The relative cell references",
+    "explanation": "Absolute references stay fixed.",
+    "topic": "edpm-l4-2"
+  },
+  {
+    "id": "kc12",
+    "question": "A spreadsheet is the correct tool for a payroll because:",
+    "options": [
+      "It recalculates gross pay, deductions and net pay automatically when rates change",
+      "It prints the payslips only",
+      "It stores photographs",
+      "It replaces the bank"
+    ],
+    "answer": "It recalculates gross pay, deductions and net pay automatically when rates change",
+    "explanation": "Confidentiality is protected by passwords and access control.",
+    "topic": "edpm-l4-3"
+  },
+  {
+    "id": "kc13",
+    "question": "A report in a database is:",
+    "options": [
+      "A printed or displayed summary of data selected by a query",
+      "A screen for data entry",
+      "A field type",
+      "A backup"
+    ],
+    "answer": "A printed or displayed summary of data selected by a query",
+    "explanation": "Reports are the documents managers read.",
+    "topic": "edpm-l5-1"
+  },
+  {
+    "id": "kc14",
+    "question": "A presentation transition is:",
+    "options": [
+      "The effect used when moving from one slide to the next",
+      "A type of chart",
+      "A slide layout",
+      "The speaker's notes"
+    ],
+    "answer": "The effect used when moving from one slide to the next",
+    "explanation": "Used sparingly, transitions help; overused they distract.",
+    "topic": "edpm-l5-2"
+  },
+  {
+    "id": "kc15",
+    "question": "Two-factor authentication improves security because:",
+    "options": [
+      "It uses a longer password",
+      "It requires a second proof of identity beyond the password",
+      "It encrypts the hard disk",
+      "It blocks all email"
+    ],
+    "answer": "It requires a second proof of identity beyond the password",
+    "explanation": "Even a stolen password is then insufficient.",
+    "topic": "edpm-l5-3"
+  },
+  {
+    "id": "kc16",
+    "question": "Before using a guillotine, the user should:",
+    "options": [
+      "Hold the paper near the blade",
+      "Keep fingers clear of the blade, use the guard and cut one firm stroke",
+      "Ask a colleague to hold the paper",
+      "Sharpen the blade first"
+    ],
+    "answer": "Keep fingers clear of the blade, use the guard and cut one firm stroke",
+    "explanation": "Guillotines are a common cause of office cuts.",
+    "topic": "edpm-l6-1"
+  },
+  {
+    "id": "kc17",
+    "question": "Transferring a call should be done:",
+    "options": [
+      "Without telling the caller",
+      "After explaining to the caller what will happen",
+      "By hanging up",
+      "Only by a manager"
+    ],
+    "answer": "After explaining to the caller what will happen",
+    "explanation": "The caller should be told the number or extension if needed.",
+    "topic": "edpm-l6-2"
+  },
+  {
+    "id": "kc18",
+    "question": "Recording and reporting every accident in the office is required because:",
+    "options": [
+      "It protects staff and enables the cause to be corrected",
+      "It replaces insurance",
+      "It reduces wages",
+      "It prevents all accidents"
+    ],
+    "answer": "It protects staff and enables the cause to be corrected",
+    "explanation": "Employers also have a duty of care to employees and visitors.",
+    "topic": "edpm-l6-3"
+  },
+  {
+    "id": "kc19",
+    "question": "Office staff are expected to keep improving their skills because:",
+    "options": [
+      "Software and office procedures change",
+      "It is a legal requirement",
+      "It reduces wages",
+      "It replaces training"
+    ],
+    "answer": "Software and office procedures change",
+    "explanation": "Employers value staff who can learn new software quickly.",
+    "topic": "edpm-l1-1"
+  },
+  {
+    "id": "kc20",
+    "question": "An internal circular is used to:",
+    "options": [
+      "Request payment from a customer",
+      "Inform all staff of a policy or change",
+      "Order goods from a supplier",
+      "Invoice a client"
+    ],
+    "answer": "Inform all staff of a policy or change",
+    "explanation": "Circulars give the same information to many people at once.",
+    "topic": "edpm-l1-2"
+  },
+  {
+    "id": "kc21",
+    "question": "A scanner with optical character recognition is useful because it:",
+    "options": [
+      "Produces an editable text file from a printed page",
+      "Prints in colour",
+      "Stores files permanently",
+      "Destroys confidential paper"
+    ],
+    "answer": "Produces an editable text file from a printed page",
+    "explanation": "Without OCR the scan is only a picture.",
+    "topic": "edpm-l2-1"
+  },
+  {
+    "id": "kc22",
+    "question": "Line spacing of 1.5 or double is used for:",
+    "options": [
+      "Documents that will be edited or marked, such as drafts and scripts",
+      "Letters only",
+      "Labels",
+      "Invoices"
+    ],
+    "answer": "Documents that will be edited or marked, such as drafts and scripts",
+    "explanation": "It leaves room for comments and corrections.",
+    "topic": "edpm-l3-1"
+  },
+  {
+    "id": "kc23",
+    "question": "The function =AVERAGE(B4:B10) returns:",
+    "options": [
+      "The total of the values",
+      "The mean of the values in the range",
+      "The largest value",
+      "The number of values"
+    ],
+    "answer": "The mean of the values in the range",
+    "explanation": "AVERAGE adds the range and divides by the count.",
+    "topic": "edpm-l4-2"
+  },
+  {
+    "id": "kc24",
+    "question": "Encryption of a file means:",
+    "options": [
+      "The file cannot be opened by anyone",
+      "The file is scrambled so that only authorised users with the key can read it",
+      "The file is backed up",
+      "The file is compressed"
+    ],
+    "answer": "The file is scrambled so that only authorised users with the key can read it",
+    "explanation": "It protects data in transit and on lost devices.",
+    "topic": "edpm-l5-3"
+  },
+  {
+    "id": "kc25",
+    "question": "An appointment diary is kept to:",
+    "options": [
+      "Record telephone messages",
+      "Prevent clashes and remind the person concerned of commitments",
+      "Record mail received",
+      "List visitors' car numbers"
+    ],
+    "answer": "Prevent clashes and remind the person concerned of commitments",
+    "explanation": "Appointments should be confirmed and reminded.",
+    "topic": "edpm-l6-2"
+  }
+]

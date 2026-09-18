@@ -1,6 +1,6 @@
 // Content Loader — fetches from public/content/ JSON with hardcoded fallback
 
-const iconMap = { Calculate: "📐", Description: "📝", Science: "🧬", Sports: "🏅", Checkroom: "👗", Storefront: "🏢", default: "📚" };
+const iconMap = { Calculate: "📐", Description: "📝", Science: "🧬", Sports: "🏅", Checkroom: "👗", Storefront: "🏢", default: "📚", Computer: "💻" };
 
 const colorMap = {
   mathematics: "#2563eb", "english-a": "#7c3aed", biology: "#059669",
