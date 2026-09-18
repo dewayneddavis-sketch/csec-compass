@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useAuth } from "../context/AuthContext";
+import { hasSubjectAccess } from "./access";
 
 // FAIL-CLOSED access hook.
 // Any unknown state (logged out, still loading, API error, missing token)
@@ -66,12 +67,20 @@ export function usePurchases() {
     return () => { cancelled = true; };
   }, [user, session]);
 
+  // The rule itself lives in ./access.js (pure, so the harnesses can drive it
+  // directly); this wrapper only supplies the hook's state.
   function hasAccess(subjectId) {
-    if (!user) return false;
-    if (loading) return false;
-    if (error) return false;
-    if (purchases.hasBundle || purchases.hasSchoolLicense) return true;
-    return purchases.purchasedSubjects.includes(subjectId);
+    return hasSubjectAccess(
+      {
+        user,
+        loading,
+        error: error != null,
+        hasBundle: purchases.hasBundle,
+        hasSchoolLicense: purchases.hasSchoolLicense,
+        purchasedSubjects: purchases.purchasedSubjects,
+      },
+      subjectId
+    );
   }
 
   return { ...purchases, loading, error: error != null, hasAccess };

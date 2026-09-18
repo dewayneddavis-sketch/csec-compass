@@ -1,25 +1,43 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useAuth } from "../context/AuthContext";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
+import {
+  FALLBACK_SUBJECT_OPTIONS,
+  buildSubjectOptions,
+  bundleSavingsLabel,
+  resolvePreselectedSubject,
+} from "../data/pricingSubjects";
 import "./Pricing.css";
 
-const plans = [
-  {
-    id: "subject",
-    name: "Per Subject",
-    price: "$9.99",
-    description: "Full access to one CSEC subject",
-    features: ["All lessons and modules", "Interactive experiments", "Knowledge check quizzes", "Progress tracking"],
-  },
-  {
-    id: "bundle",
-    name: "All Subjects Bundle",
-    price: "$49.99",
-    description: "Full access to every CSEC subject on the platform",
-    features: ["Everything in Per Subject", "Every CSEC subject we publish", "Bundle pricing (save 50% vs buying subjects separately)"],
-    popular: true,
-  },
-];
+// The per-subject plan and the bundle. Every subject on the platform is
+// purchasable on its own at the same $9.99 (owner decision 2026-09-18) — the
+// dropdown below the "Per Subject" card lists all of them, and it is populated
+// from content/subjects.json (see src/data/pricingSubjects.js) so it cannot fall
+// behind the catalog again. The bundle's saving is computed from the number of
+// subjects rather than written down, so the copy stays true as subjects ship.
+function plansFor(subjectCount) {
+  return [
+    {
+      id: "subject",
+      name: "Per Subject",
+      price: "$9.99",
+      description: "Full access to one CSEC subject",
+      features: ["All lessons and modules", "Interactive experiments", "Knowledge check quizzes", "Progress tracking"],
+    },
+    {
+      id: "bundle",
+      name: "All Subjects Bundle",
+      price: "$49.99",
+      description: "Full access to every CSEC subject on the platform",
+      features: [
+        "Everything in Per Subject",
+        "Every CSEC subject we publish",
+        `Bundle pricing — ${bundleSavingsLabel(subjectCount)}`,
+      ],
+      popular: true,
+    },
+  ];
+}
 
 // School License ladder (owner decision 2026-09-13). Prices are the live
 // Stripe products — priceType is the tier id and must stay in sync with
@@ -31,29 +49,43 @@ const SCHOOL_LICENSES = [
   { priceType: "school-license-150", seats: 150, price: 2250, perStudent: 15 },
 ];
 
-// The subjects that can be bought on their own (ids must match
-// api/checkout/create-session + api/stripe/webhook.js expectations; names
-// are display labels). Subjects not listed here are still included in the
-// bundle and in a school license.
-const SUBJECT_OPTIONS = [
-  { id: "biology", name: "Biology" },
-  { id: "chemistry", name: "Chemistry" },
-  { id: "english-a", name: "English A" },
-  { id: "human-social-biology", name: "Human & Social Biology" },
-  { id: "information-technology", name: "Information Technology" },
-  { id: "mathematics", name: "Mathematics" },
-  { id: "physics", name: "Physics" },
-  { id: "principles-of-accounts", name: "Principles of Accounts" },
-  { id: "social-studies", name: "Social Studies" },
-  { id: "spanish", name: "Spanish" },
-];
-
 export default function PricingPage() {
   const { user } = useAuth();
   const navigate = useNavigate();
+  // Every paywall link in the app is /pricing?subject=<id>.
+  const [searchParams] = useSearchParams();
+  const requestedSubject = searchParams.get("subject") || "";
   const [busy, setBusy] = useState(null);
   const [message, setMessage] = useState("");
-  const [subjectId, setSubjectId] = useState("");
+  // null = the buyer has not chosen yet, so the link's subject (if any) applies.
+  const [chosenSubject, setChosenSubject] = useState(null);
+  // Start from the full static list so the dropdown is never empty or partial,
+  // then replace it with the catalog (the same 23 subjects) when it arrives.
+  const [subjectOptions, setSubjectOptions] = useState(FALLBACK_SUBJECT_OPTIONS);
+
+  useEffect(() => {
+    let cancelled = false;
+    fetch("/content/subjects.json")
+      .then((res) => (res.ok ? res.json() : null))
+      .then((catalog) => {
+        if (!cancelled && catalog) setSubjectOptions(buildSubjectOptions(catalog));
+      })
+      .catch(() => {
+        // Keep the static list — a failed fetch must never shrink the dropdown.
+      });
+    return () => { cancelled = true; };
+  }, []);
+
+  // The paywall link's subject preselects the dropdown — derived rather than
+  // written into state, so it is right on the first paint and an explicit choice
+  // by the buyer always wins over the link.
+  const requestedSubjectId = resolvePreselectedSubject(requestedSubject, subjectOptions);
+  const subjectId = chosenSubject === null ? requestedSubjectId : chosenSubject;
+
+  // A link naming a subject we do not know is a stale link, not a forgotten
+  // choice: say so plainly instead of "Please select a subject first".
+  const unmatchedSubjectLink = Boolean(requestedSubject) && !subjectId;
+  const plans = plansFor(subjectOptions.length);
 
   async function handleBuy(planId, selectedSubjectId) {
     if (!user) { navigate("/login"); return; }
@@ -107,14 +139,20 @@ export default function PricingPage() {
                 <select
                   className="pricing-select"
                   value={subjectId || ""}
-                  onChange={(e) => setSubjectId(e.target.value)}
+                  onChange={(e) => setChosenSubject(e.target.value)}
                 >
                   <option value="" disabled>Select a subject…</option>
-                  {SUBJECT_OPTIONS.map((s) => (
+                  {subjectOptions.map((s) => (
                     <option key={s.id} value={s.id}>{s.name}</option>
                   ))}
                 </select>
               </label>
+            )}
+            {plan.id === "subject" && unmatchedSubjectLink && (
+              <p className="pricing-subject-note">
+                That link didn&rsquo;t match a subject on the platform — choose the subject you
+                want above. Any of the {subjectOptions.length} subjects can be bought on its own.
+              </p>
             )}
             <button
               className="pricing-btn"

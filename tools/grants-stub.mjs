@@ -150,7 +150,10 @@ export function createClient() {
             const next = [...(state.tableRows[table] || [])];
             for (const row of incoming) {
               const stamped = { id: `row-${next.length + 1}`, ...row };
-              if (!known || known.includes("created_at")) stamped.created_at = "2026-09-18T00:00:00Z";
+              // Stamp a real "now": the 365-day access window is computed from this
+              // column, so a frozen date would one day make freshly-granted rows look
+              // expired to a harness that (rightly) trusts the real expiry logic.
+              if (!known || known.includes("created_at")) stamped.created_at = new Date().toISOString();
               next.push(stamped);
             }
             state.tableRows[table] = next;
