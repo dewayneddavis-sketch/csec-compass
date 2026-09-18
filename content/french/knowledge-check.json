@@ -1,0 +1,327 @@
+[
+  {
+    "id": "q1",
+    "question": "Complete the sentence: ___ sœur s'appelle Marie et j'ai aussi deux frères.",
+    "options": [
+      "Mon",
+      "Ma",
+      "Mes",
+      "Moi"
+    ],
+    "answer": "Ma",
+    "explanation": "sœur is feminine singular: ma sœur.",
+    "topic": "fre-l1-1"
+  },
+  {
+    "id": "q2",
+    "question": "How do you say 'I am fifteen years old'?",
+    "options": [
+      "Je suis quinze.",
+      "J'ai quinze ans.",
+      "J'ai quinze années.",
+      "Je ai quinze ans."
+    ],
+    "answer": "J'ai quinze ans.",
+    "explanation": "Age uses avoir: j'ai quinze ans.",
+    "topic": "fre-l1-1"
+  },
+  {
+    "id": "q3",
+    "question": "Which sentence is correct?",
+    "options": [
+      "Ma cousine est travailleuse.",
+      "Ma cousine est travailleur.",
+      "Mon cousine est travailleuse.",
+      "Ma cousine est travailleure."
+    ],
+    "answer": "Ma cousine est travailleuse.",
+    "explanation": "cousine is feminine and -eur becomes -euse.",
+    "topic": "fre-l1-2"
+  },
+  {
+    "id": "q4",
+    "question": "Complete: Dans le salon il y a un canapé et deux ___ (chairs).",
+    "options": [
+      "chaises",
+      "chaise",
+      "chaison",
+      "chaises de"
+    ],
+    "answer": "chaises",
+    "explanation": "deux chaises — the plural noun takes -s.",
+    "topic": "fre-l1-3"
+  },
+  {
+    "id": "q5",
+    "question": "Which sentence describes a timetable?",
+    "options": [
+      "Le lundi, j'ai les mathématiques de huit heures à dix heures.",
+      "J'aime les mathématiques.",
+      "Mon professeur est sévère.",
+      "Je fais mes devoirs."
+    ],
+    "answer": "Le lundi, j'ai les mathématiques de huit heures à dix heures.",
+    "explanation": "The timetable uses the day, the subject and the times.",
+    "topic": "fre-l2-1"
+  },
+  {
+    "id": "q6",
+    "question": "What is the feminine of 'un acteur'?",
+    "options": [
+      "une actrice",
+      "une acteuse",
+      "une acteur",
+      "une acteure"
+    ],
+    "answer": "une actrice",
+    "explanation": "un acteur / une actrice.",
+    "topic": "fre-l2-2"
+  },
+  {
+    "id": "q7",
+    "question": "Complete: Je voudrais être infirmière ___ j'aime aider les malades.",
+    "options": [
+      "mais",
+      "parce que",
+      "donc",
+      "et puis"
+    ],
+    "answer": "parce que",
+    "explanation": "parce que gives the reason for the choice.",
+    "topic": "fre-l2-2"
+  },
+  {
+    "id": "q8",
+    "question": "Complete: Après mes examens, je ___ en France.",
+    "options": [
+      "voyage",
+      "voyagerai",
+      "voyageais",
+      "ai voyagé"
+    ],
+    "answer": "voyagerai",
+    "explanation": "A future time marker takes the future tense.",
+    "topic": "fre-l2-3"
+  },
+  {
+    "id": "q9",
+    "question": "What is the immediate future of 'nous finissons'?",
+    "options": [
+      "nous finirons",
+      "nous allons finir",
+      "nous finissions",
+      "nous avons fini"
+    ],
+    "answer": "nous allons finir",
+    "explanation": "aller + infinitive = immediate future.",
+    "topic": "fre-l2-3"
+  },
+  {
+    "id": "q10",
+    "question": "Complete: Mon frère fait ___ cyclisme.",
+    "options": [
+      "du",
+      "de la",
+      "au",
+      "de le"
+    ],
+    "answer": "du",
+    "explanation": "faire de + le = du: il fait du cyclisme.",
+    "topic": "fre-l3-1"
+  },
+  {
+    "id": "q11",
+    "question": "Which sentence is correct?",
+    "options": [
+      "Je joue aux cartes avec mes amis.",
+      "Je joue à les cartes.",
+      "Je fais aux cartes.",
+      "Je joue de les cartes."
+    ],
+    "answer": "Je joue aux cartes avec mes amis.",
+    "explanation": "jouer à + les = aux.",
+    "topic": "fre-l3-1"
+  },
+  {
+    "id": "q12",
+    "question": "Complete: Le week-end dernier, elle ___ allée au cinéma.",
+    "options": [
+      "a",
+      "est",
+      "était",
+      "va"
+    ],
+    "answer": "est",
+    "explanation": "aller takes être in the perfect tense: elle est allée.",
+    "topic": "fre-l3-2"
+  },
+  {
+    "id": "q13",
+    "question": "Which tense describes a repeated past habit?",
+    "options": [
+      "le passé composé",
+      "l'imparfait",
+      "le futur",
+      "le présent"
+    ],
+    "answer": "l'imparfait",
+    "explanation": "The imperfect describes habits and descriptions in the past.",
+    "topic": "fre-l3-2"
+  },
+  {
+    "id": "q14",
+    "question": "Complete: Il ne faut pas manger trop ___ sucre.",
+    "options": [
+      "de",
+      "du",
+      "le",
+      "des"
+    ],
+    "answer": "de",
+    "explanation": "trop de + noun: trop de sucre.",
+    "topic": "fre-l3-3"
+  },
+  {
+    "id": "q15",
+    "question": "Complete: D'abord je me lève, ___ je prends mon petit déjeuner.",
+    "options": [
+      "mais",
+      "ensuite",
+      "parce que",
+      "jamais"
+    ],
+    "answer": "ensuite",
+    "explanation": "Sequencing: d'abord ... ensuite ... enfin.",
+    "topic": "fre-l4-1"
+  },
+  {
+    "id": "q16",
+    "question": "Which is the correct reflexive form?",
+    "options": [
+      "Elles se couchent tard.",
+      "Elles se couche tard.",
+      "Elles s'couchent tard.",
+      "Elles couchent se tard."
+    ],
+    "answer": "Elles se couchent tard.",
+    "explanation": "The reflexive pronoun goes before the verb and the verb agrees: elles se couchent.",
+    "topic": "fre-l4-1"
+  },
+  {
+    "id": "q17",
+    "question": "Complete: Je ___ ranger ma chambre avant de sortir.",
+    "options": [
+      "dois",
+      "aime mieux",
+      "vais être",
+      "suis"
+    ],
+    "answer": "dois",
+    "explanation": "devoir + infinitive expresses obligation.",
+    "topic": "fre-l4-2"
+  },
+  {
+    "id": "q18",
+    "question": "Complete: Pendant les vacances, il ___ beau tous les jours.",
+    "options": [
+      "fait",
+      "faisait",
+      "fera",
+      "a fait"
+    ],
+    "answer": "faisait",
+    "explanation": "Past weather uses the imperfect: il faisait beau.",
+    "topic": "fre-l4-3"
+  },
+  {
+    "id": "q19",
+    "question": "Complete: Je voudrais trois ___ d'œufs.",
+    "options": [
+      "douzaines",
+      "douzaine",
+      "kilos",
+      "paquets"
+    ],
+    "answer": "douzaines",
+    "explanation": "une douzaine d'œufs; three dozen = trois douzaines.",
+    "topic": "fre-l5-1"
+  },
+  {
+    "id": "q20",
+    "question": "What does 'l'arrêt de bus' mean?",
+    "options": [
+      "the bus station building",
+      "the bus stop",
+      "the bus ticket",
+      "the bus driver"
+    ],
+    "answer": "the bus stop",
+    "explanation": "l'arrêt de bus = the bus stop.",
+    "topic": "fre-l5-1"
+  },
+  {
+    "id": "q21",
+    "question": "Complete: Avez-vous cette jupe en ___ ? (in blue)",
+    "options": [
+      "bleu",
+      "bleue",
+      "bleus",
+      "bleues"
+    ],
+    "answer": "bleu",
+    "explanation": "In 'en + colour' the colour stays invariable: en bleu.",
+    "topic": "fre-l5-2"
+  },
+  {
+    "id": "q22",
+    "question": "Which reply suits 'Combien coûtent ces mangues?'",
+    "options": [
+      "Elles coûtent deux dollars le kilo.",
+      "Il coûte deux dollars.",
+      "Je coûte deux dollars.",
+      "Vous coûtez deux dollars."
+    ],
+    "answer": "Elles coûtent deux dollars le kilo.",
+    "explanation": "The verb agrees with the plural subject: elles coûtent.",
+    "topic": "fre-l5-3"
+  },
+  {
+    "id": "q23",
+    "question": "Complete: Nous voyageons ___ avion.",
+    "options": [
+      "à",
+      "en",
+      "dans",
+      "sur"
+    ],
+    "answer": "en",
+    "explanation": "en avion; but à pied, à vélo.",
+    "topic": "fre-l6-1"
+  },
+  {
+    "id": "q24",
+    "question": "Complete: Le lendemain, nous ___ visité la ville.",
+    "options": [
+      "avons",
+      "sommes",
+      "étions",
+      "allons"
+    ],
+    "answer": "avons",
+    "explanation": "visiter takes avoir: nous avons visité.",
+    "topic": "fre-l6-2"
+  },
+  {
+    "id": "q25",
+    "question": "Complete: Le Sénégal est ___ grand que la Jamaïque.",
+    "options": [
+      "plus",
+      "aussi",
+      "moins de",
+      "le plus"
+    ],
+    "answer": "plus",
+    "explanation": "Comparative: plus grand que.",
+    "topic": "fre-l6-3"
+  }
+]
