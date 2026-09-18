@@ -40,23 +40,27 @@ export default function TeacherLinksCard() {
     return data;
   }
 
-  async function load() {
-    if (!token) return;
-    try {
-      const data = await call({ action: "teacher-links" });
-      setLinks(data.links || []);
-      setAllowedTeachers(data.allowedTeachers || []);
-      setError(null);
-    } catch (err) {
-      setError(err.message);
-      setLinks([]);
-    }
-  }
-
+  // Refresh after a change by bumping the key the load effect depends on.
+  const [reloadKey, setReloadKey] = useState(0);
   useEffect(() => {
-    load();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [token]);
+    if (!token) return;
+    let cancelled = false;
+    call({ action: "teacher-links" })
+      .then((data) => {
+        if (cancelled) return;
+        setLinks(data.links || []);
+        setAllowedTeachers(data.allowedTeachers || []);
+        setError(null);
+      })
+      .catch((err) => {
+        if (cancelled) return;
+        setError(err.message);
+        setLinks([]);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [token, reloadKey]);
 
   async function submit(action) {
     setBusy(true);
@@ -81,7 +85,7 @@ export default function TeacherLinksCard() {
             : "")
       );
       setStudentEmails("");
-      await load();
+      setReloadKey((k) => k + 1);
     } catch (err) {
       setError(err.message);
     } finally {
