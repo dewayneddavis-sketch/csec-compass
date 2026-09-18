@@ -30,6 +30,34 @@ function getSupabaseAdmin() {
 // Vercel's default JSON body parsing for this route.
 export const config = { api: { bodyParser: false } };
 
+// Did PostgREST reject this because a column supabase/schema.sql declares is
+// missing from the live table? 42703 = undefined_column; PGRST204 = unknown
+// column in the schema cache (what an insert returns). The code is the reliable
+// signal — the message text differs between a read and a write.
+function isUnknownColumnError(err) {
+  if (!err) return false;
+  if (err.code === "42703" || err.code === "PGRST204") return true;
+  const msg = String(err.message || "");
+  return /column .* does not exist/i.test(msg) || /Could not find the '.*' column/i.test(msg);
+}
+
+// Record a grant. `stripe_session_id` is written whenever the live table has it
+// (it is what dedupes a re-delivered school-license event); on a table that
+// predates that column — the owner's, until supabase/schema.sql is applied — the
+// row is recorded WITHOUT it instead of the sale failing with a 500. An audit
+// column must never be the reason a paying customer gets no access.
+async function insertPurchaseRow(supabase, payload) {
+  const first = await supabase.from("purchases").insert(payload);
+  if (!first.error || !isUnknownColumnError(first.error)) return first;
+  if (!Object.prototype.hasOwnProperty.call(payload, "stripe_session_id")) return first;
+  console.warn(
+    "purchases table has no stripe_session_id column — recording the grant without it. Apply supabase/schema.sql to add the column."
+  );
+  const withoutSession = { ...payload };
+  delete withoutSession.stripe_session_id;
+  return await supabase.from("purchases").insert(withoutSession);
+}
+
 async function readRawBody(req) {
   const chunks = [];
   for await (const chunk of req) chunks.push(chunk);
@@ -94,9 +122,25 @@ export default async function handler(req, res) {
         //                     (two 50-seat licenses for a 75-student cohort),
         //                     so dedupe on the Stripe session id, which is all
         //                     that a duplicate webhook delivery repeats.
-        const { data: existing, error: lookupErr } = isSchoolLicense
+        let { data: existing, error: lookupErr } = isSchoolLicense
           ? await supabase.from("purchases").select("id").eq("stripe_session_id", session.id).limit(1)
           : await supabase.from("purchases").select("id").eq("user_id", userId).eq("purchase_type", "bundle").limit(1);
+        // Without a session column the session-id lookup cannot run at all, so
+        // dedupe the school license on (account, tier) instead: a re-delivered
+        // event still cannot double-grant. The one case that fallback cannot tell
+        // apart is a school legitimately buying the same tier twice — on such a
+        // table the owner grants the second license by hand.
+        if (lookupErr && isSchoolLicense && isUnknownColumnError(lookupErr)) {
+          console.warn(
+            "purchases table has no stripe_session_id column — deduping the school license on (account, tier) instead."
+          );
+          ({ data: existing, error: lookupErr } = await supabase
+            .from("purchases")
+            .select("id")
+            .eq("user_id", userId)
+            .eq("purchase_type", price_type)
+            .limit(1));
+        }
         if (lookupErr) {
           console.error("Full-access lookup error (" + price_type + "):", lookupErr);
           return res.status(500).json({ error: "Failed to check purchase: " + lookupErr.message });
@@ -104,7 +148,7 @@ export default async function handler(req, res) {
         if (existing && existing.length > 0) {
           return res.status(200).json({ received: true, alreadyGranted: true });
         }
-        const { error } = await supabase.from("purchases").insert({
+        const { error } = await insertPurchaseRow(supabase, {
           user_id: userId,
           subject_id: null,
           // Stores 'bundle' or the exact license tier ('school-license-150'),
@@ -132,7 +176,7 @@ export default async function handler(req, res) {
         if (existing && existing.length > 0) {
           return res.status(200).json({ received: true, alreadyGranted: true });
         }
-        const { error } = await supabase.from("purchases").insert({
+        const { error } = await insertPurchaseRow(supabase, {
           user_id: userId,
           subject_id,
           purchase_type: subject_id,
