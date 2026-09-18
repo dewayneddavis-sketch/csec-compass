@@ -130,5 +130,11 @@
     "name": "Theater Arts",
     "description": "Foundations of theatre, acting voice and movement, dramatic literature and playmaking, dance in theatre, technical theatre and design, production and careers.",
     "icon": "Theaters"
+  },
+  {
+    "id": "french",
+    "name": "French",
+    "description": "Learn CSEC French: build vocabulary and grammar, practise the Paper 02 sections and prepare for the oral examination through interactive lessons.",
+    "icon": "Language"
   }
 ]

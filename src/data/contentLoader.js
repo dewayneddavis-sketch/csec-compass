@@ -141,9 +141,12 @@ const fallbackQuizzes = {
 };
 
 // Get all subjects.
-// The source of truth is content/subjects.json — the 10 purchasable subjects.
-// Fallback-only entries (history, geography, french, etc.) are NOT appended:
-// the home page and planner must show exactly what can be bought. Each
+// The source of truth is content/subjects.json — the whole catalog (23 subjects,
+// french included since it became a real subject). Fallback-only entries
+// (history, geography, etc.) are NOT appended: the home page and planner must
+// show exactly what is in the catalog, no more and no less. A subject whose
+// content exists but which is missing from the catalog is invisible in the app
+// — tools/check-subject-catalog.mjs guards against exactly that. Each
 // subject's modules come from its real /content/{id}/modules.json when present,
 // falling back to fallbackSubjects modules only for subjects without content.
 const moduleCache = {};
