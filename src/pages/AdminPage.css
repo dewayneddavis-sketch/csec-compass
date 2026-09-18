@@ -7,7 +7,7 @@
 .admin-field input,.admin-field select,.admin-field textarea{width:100%;padding:.6rem .75rem;border:2px solid #d1d5db;border-radius:8px;font-size:.92rem;transition:border-color .15s;font-family:inherit}
 .admin-field textarea{resize:vertical;min-height:8rem;line-height:1.5}
 .admin-field input:focus,.admin-field select:focus,.admin-field textarea:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.12)}
-.admin-actions{display:flex;gap:.75rem;margin-top:.5rem}
+.admin-actions{display:flex;gap:.75rem;margin-top:.5rem;flex-wrap:wrap}
 .admin-btn{flex:1;padding:.65rem 1rem;border:none;border-radius:8px;font-size:.9rem;font-weight:600;cursor:pointer;transition:all .15s}
 .admin-btn:disabled{opacity:.5;cursor:not-allowed}
 .grant-btn{background:#059669;color:#fff}
@@ -17,3 +17,28 @@
 .admin-msg{margin-top:1rem;padding:.75rem 1rem;border-radius:8px;font-size:.88rem}
 .admin-success{background:#f0fdf4;color:#065f46;border:1px solid #bbf7d0}
 .admin-error{background:#fef2f2;color:#991b1b;border:1px solid #fecaca}
+
+/* ---- All Grants table ---- */
+.admin-page{max-width:880px}
+.admin-section-title{margin:0 0 .25rem;font-size:1.05rem;color:#111827}
+.admin-btn-small{flex:0 0 auto;padding:.3rem .65rem;font-size:.76rem;border-radius:6px}
+.admin-grants-meta{margin:.85rem 0 0;font-size:.85rem;font-weight:600;color:#374151}
+.admin-table-wrap{margin-top:.6rem;border:1px solid #e5e7eb;border-radius:10px;overflow-x:auto}
+.admin-table{width:100%;border-collapse:collapse;font-size:.85rem}
+.admin-table th{background:#f9fafb;text-align:left;padding:.55rem .7rem;font-weight:600;color:#374151;white-space:nowrap;border-bottom:1px solid #e5e7eb}
+.admin-table td{padding:.55rem .7rem;border-bottom:1px solid #f3f4f6;color:#111827;vertical-align:middle}
+.admin-table tbody tr:last-child td{border-bottom:none}
+.admin-table tbody tr:hover{background:#fbfbfd}
+.admin-col-check{width:2.25rem;text-align:center}
+.admin-col-action{width:5.5rem;text-align:right}
+.admin-cell-email{font-weight:600;word-break:break-all;min-width:12rem}
+.admin-muted{color:#9ca3af;font-weight:400;font-style:italic}
+.admin-pill{display:inline-block;padding:.15rem .5rem;border-radius:999px;font-size:.72rem;font-weight:700;white-space:nowrap}
+.admin-pill.active{background:#dcfce7;color:#166534}
+.admin-pill.expired{background:#f3f4f6;color:#6b7280}
+.admin-grants-note{margin:1rem 0 0;font-size:.78rem;color:#6b7280;line-height:1.5}
+
+@media (max-width:640px){
+  .admin-page{padding:0 .75rem}
+  .admin-col-action{width:auto}
+}
