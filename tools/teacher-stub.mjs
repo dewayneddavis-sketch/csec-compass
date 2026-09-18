@@ -64,6 +64,7 @@ export function createClient() {
       let op = "select";
       let payload = null;
       let conflict = null;
+      let ignoreDuplicates = false;
 
       const run = () => {
         const tableRows = state.tables[table] || [];
@@ -79,7 +80,7 @@ export function createClient() {
         if (op === "insert" || op === "upsert") {
           const incoming = Array.isArray(payload) ? payload : [payload];
           if (op === "insert") state.inserts.push({ table, rows: incoming });
-          else state.upserts.push({ table, rows: incoming, conflict });
+          else state.upserts.push({ table, rows: incoming, conflict, ignoreDuplicates });
           const error = state.writeErrors[table] || null;
           if (error) return { data: null, error };
           const keyFields = conflict ? conflict.split(",") : null;
@@ -89,8 +90,11 @@ export function createClient() {
             const idx = keyFields
               ? next.findIndex((r) => keyFields.every((k) => r[k] === stamped[k]))
               : -1;
-            if (idx >= 0) next[idx] = { ...next[idx], ...stamped };
-            else next.push(stamped);
+            // ignoreDuplicates mirrors Postgres `ON CONFLICT … DO NOTHING`:
+            // the stored row wins and the incoming one is dropped.
+            if (idx >= 0) {
+              if (!ignoreDuplicates) next[idx] = { ...next[idx], ...stamped };
+            } else next.push(stamped);
           }
           state.tables[table] = next;
           return { data: incoming, error: null };
@@ -129,6 +133,7 @@ export function createClient() {
           op = "upsert";
           payload = nextPayload;
           conflict = options?.onConflict || null;
+          ignoreDuplicates = !!options?.ignoreDuplicates;
           return builder;
         },
         delete() {
