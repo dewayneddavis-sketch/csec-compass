@@ -82,5 +82,11 @@
     "name": "Agriculture (Double Option)",
     "description": "Crop and animal production, tools and machinery, farm business and marketing, and sustainable practice.",
     "icon": "Science"
+  },
+  {
+    "id": "food-and-nutrition",
+    "name": "Food and Nutrition",
+    "description": "Nutrients, meal planning, food science, safety and hygiene, special diets, kitchen management and Caribbean food security.",
+    "icon": "Restaurant"
   }
 ]

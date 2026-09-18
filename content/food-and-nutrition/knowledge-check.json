@@ -1,0 +1,327 @@
+[
+  {
+    "id": "kc1",
+    "question": "Which nutrient group is the body's main source of energy?",
+    "options": [
+      "Proteins",
+      "Carbohydrates",
+      "Minerals",
+      "Vitamins"
+    ],
+    "answer": "Carbohydrates",
+    "explanation": "Starches and sugars supply most of the body's energy needs.",
+    "topic": "fn-l1-1"
+  },
+  {
+    "id": "kc2",
+    "question": "Which vitamin deficiency causes scurvy?",
+    "options": [
+      "Vitamin A",
+      "Vitamin C",
+      "Vitamin D",
+      "Vitamin K"
+    ],
+    "answer": "Vitamin C",
+    "explanation": "Without vitamin C, collagen formation fails and gums bleed and wounds heal poorly.",
+    "topic": "fn-l1-1"
+  },
+  {
+    "id": "kc3",
+    "question": "The largest share of a balanced plate should be:",
+    "options": [
+      "Sugary foods",
+      "Vegetables and fruits",
+      "Oils",
+      "Meat"
+    ],
+    "answer": "Vegetables and fruits",
+    "explanation": "They provide vitamins, minerals and fibre with little energy.",
+    "topic": "fn-l1-2"
+  },
+  {
+    "id": "kc4",
+    "question": "High blood pressure is most closely linked to a high intake of:",
+    "options": [
+      "Fibre",
+      "Salt and fat",
+      "Water",
+      "Vitamin C"
+    ],
+    "answer": "Salt and fat",
+    "explanation": "Sodium and obesity both raise blood pressure.",
+    "topic": "fn-l1-3"
+  },
+  {
+    "id": "kc5",
+    "question": "Boiling vegetables in a large volume of water causes loss of:",
+    "options": [
+      "Fibre only",
+      "Water-soluble vitamins",
+      "Starch only",
+      "Protein only"
+    ],
+    "answer": "Water-soluble vitamins",
+    "explanation": "Vitamins B and C dissolve into the cooking water and are poured away.",
+    "topic": "fn-l2-1"
+  },
+  {
+    "id": "kc6",
+    "question": "Gelatinisation describes:",
+    "options": [
+      "Egg white setting",
+      "Starch thickening a liquid",
+      "Sugar browning",
+      "Fat melting"
+    ],
+    "answer": "Starch thickening a liquid",
+    "explanation": "Starch granules absorb water and swell on heating, thickening the mixture.",
+    "topic": "fn-l2-2"
+  },
+  {
+    "id": "kc7",
+    "question": "A sensory test in which samples are coded is designed to:",
+    "options": [
+      "Save food",
+      "Remove bias from the tasters",
+      "Speed up cooking",
+      "Reduce cost"
+    ],
+    "answer": "Remove bias from the tasters",
+    "explanation": "Tasters must not know which sample is which.",
+    "topic": "fn-l2-3"
+  },
+  {
+    "id": "kc8",
+    "question": "Bacteria multiply fastest at:",
+    "options": [
+      "Freezer temperature",
+      "Warm room temperature",
+      "Boiling point",
+      "Refrigerator temperature"
+    ],
+    "answer": "Warm room temperature",
+    "explanation": "The middle of the danger zone gives the fastest growth.",
+    "topic": "fn-l3-1"
+  },
+  {
+    "id": "kc9",
+    "question": "Which action prevents cross-contamination?",
+    "options": [
+      "Using the same knife for raw chicken and salad",
+      "Using separate boards and knives for raw and ready-to-eat foods",
+      "Rinsing hands in cold water only",
+      "Storing raw meat above cooked food"
+    ],
+    "answer": "Using separate boards and knives for raw and ready-to-eat foods",
+    "explanation": "Separation prevents bacteria from raw food reaching food that will not be cooked again.",
+    "topic": "fn-l3-2"
+  },
+  {
+    "id": "kc10",
+    "question": "Leftover stew should be:",
+    "options": [
+      "Left on the stove to cool overnight",
+      "Cooled quickly, refrigerated and reheated piping hot once",
+      "Kept warm for hours",
+      "Reheated several times"
+    ],
+    "answer": "Cooled quickly, refrigerated and reheated piping hot once",
+    "explanation": "Rapid cooling and thorough reheating keep it safe.",
+    "topic": "fn-l3-2"
+  },
+  {
+    "id": "kc11",
+    "question": "Jam is preserved mainly by:",
+    "options": [
+      "Salt",
+      "Sugar and acid",
+      "Smoking",
+      "Drying in the sun only"
+    ],
+    "answer": "Sugar and acid",
+    "explanation": "Sugar reduces available water and the fruit acid inhibits organisms.",
+    "topic": "fn-l3-3"
+  },
+  {
+    "id": "kc12",
+    "question": "A bulging tin of food should be:",
+    "options": [
+      "Opened and eaten quickly",
+      "Thrown away unopened",
+      "Boiled for an hour",
+      "Refrigerated"
+    ],
+    "answer": "Thrown away unopened",
+    "explanation": "Bulging suggests gas production by micro-organisms and possible toxin formation.",
+    "topic": "fn-l3-3"
+  },
+  {
+    "id": "kc13",
+    "question": "The cheapest way to compare the value of two food packs is by:",
+    "options": [
+      "Pack size",
+      "Price per kilogram or per portion",
+      "Brand",
+      "Colour of packaging"
+    ],
+    "answer": "Price per kilogram or per portion",
+    "explanation": "Unit price is the fair basis for comparison.",
+    "topic": "fn-l4-1"
+  },
+  {
+    "id": "kc14",
+    "question": "Folate in pregnancy is important because it:",
+    "options": [
+      "Prevents anaemia only",
+      "Helps prevent neural tube defects",
+      "Increases energy intake",
+      "Builds bone in the mother"
+    ],
+    "answer": "Helps prevent neural tube defects",
+    "explanation": "Adequate folate early in pregnancy protects the baby's developing nervous system.",
+    "topic": "fn-l4-2"
+  },
+  {
+    "id": "kc15",
+    "question": "A vegetarian who eats pulses, grains, nuts and dairy can meet requirements but must be careful about:",
+    "options": [
+      "Fibre",
+      "Iron, zinc and vitamin B12",
+      "Sugar",
+      "Sodium"
+    ],
+    "answer": "Iron, zinc and vitamin B12",
+    "explanation": "These nutrients are less available or absent in plant foods.",
+    "topic": "fn-l4-3"
+  },
+  {
+    "id": "kc16",
+    "question": "The three points of the kitchen work triangle are:",
+    "options": [
+      "Stove, sink, refrigerator",
+      "Table, bin, door",
+      "Cupboard, window, chair",
+      "Oven, microwave, kettle"
+    ],
+    "answer": "Stove, sink, refrigerator",
+    "explanation": "Grouping storage, washing and cooking reduces unnecessary movement.",
+    "topic": "fn-l5-1"
+  },
+  {
+    "id": "kc17",
+    "question": "A 'best-before' date indicates:",
+    "options": [
+      "A safety limit",
+      "The date after which quality may decline",
+      "The date of packaging",
+      "The date of harvest"
+    ],
+    "answer": "The date after which quality may decline",
+    "explanation": "Best-before dates concern quality; use-by dates concern safety.",
+    "topic": "fn-l5-2"
+  },
+  {
+    "id": "kc18",
+    "question": "A consumer who is sold short weight should:",
+    "options": [
+      "Ignore it",
+      "Complain with evidence to the seller and, if needed, the consumer affairs body",
+      "Pay the extra",
+      "Stop buying food"
+    ],
+    "answer": "Complain with evidence to the seller and, if needed, the consumer affairs body",
+    "explanation": "Consumers have the right to accurate weights and to redress.",
+    "topic": "fn-l5-3"
+  },
+  {
+    "id": "kc19",
+    "question": "Rice and peas is nutritionally valuable because it supplies:",
+    "options": [
+      "Fat and sugar only",
+      "Carbohydrate plus plant protein and fibre",
+      "Vitamin C only",
+      "Calcium only"
+    ],
+    "answer": "Carbohydrate plus plant protein and fibre",
+    "explanation": "Cereal and legume together give protein, energy and fibre.",
+    "topic": "fn-l6-1"
+  },
+  {
+    "id": "kc20",
+    "question": "Import dependence makes Caribbean food supplies vulnerable because:",
+    "options": [
+      "Local food is unavailable",
+      "Global price rises and shipping costs are passed to consumers",
+      "Imported food is always unsafe",
+      "Local farms refuse to supply"
+    ],
+    "answer": "Global price rises and shipping costs are passed to consumers",
+    "explanation": "A high import share transfers external price shocks straight to the household.",
+    "topic": "fn-l6-2"
+  },
+  {
+    "id": "kc21",
+    "question": "When catering for a group, the cost per portion is worked out using:",
+    "options": [
+      "The total bill only",
+      "A costing sheet based on quantities, prices and the number of portions",
+      "The price of one ingredient",
+      "The menu price"
+    ],
+    "answer": "A costing sheet based on quantities, prices and the number of portions",
+    "explanation": "Costing per portion is what makes the event financially predictable.",
+    "topic": "fn-l6-3"
+  },
+  {
+    "id": "kc23",
+    "question": "Overcooking green vegetables causes loss of colour because:",
+    "options": [
+      "Starch gelatinises",
+      "Chlorophyll is altered by heat and acid",
+      "Fat melts",
+      "Protein coagulates"
+    ],
+    "answer": "Chlorophyll is altered by heat and acid",
+    "explanation": "Brief cooking in a little water keeps them greener and preserves vitamins.",
+    "topic": "fn-l2-2"
+  },
+  {
+    "id": "kc24",
+    "question": "The main reason cooked food should be covered is to:",
+    "options": [
+      "Keep it hot only",
+      "Prevent contamination by insects, dust and micro-organisms",
+      "Improve flavour",
+      "Reduce cost"
+    ],
+    "answer": "Prevent contamination by insects, dust and micro-organisms",
+    "explanation": "Covering protects food from airborne and animal contamination.",
+    "topic": "fn-l3-1"
+  },
+  {
+    "id": "kc25",
+    "question": "A nutritious weaning food for a six-month-old would be:",
+    "options": [
+      "Salted rice water",
+      "Mashed ripe banana without added sugar or salt",
+      "Sugary drink",
+      "Fried dumpling"
+    ],
+    "answer": "Mashed ripe banana without added sugar or salt",
+    "explanation": "Soft, plain, nutrient-dense food without added salt or sugar is appropriate.",
+    "topic": "fn-l4-2"
+  },
+  {
+    "id": "kc26",
+    "question": "Food loss between farm and plate is important because:",
+    "options": [
+      "It raises exports",
+      "It wastes the land, water, labour and money used to produce the food",
+      "It improves quality",
+      "It lowers prices"
+    ],
+    "answer": "It wastes the land, water, labour and money used to produce the food",
+    "explanation": "Loss and waste waste every input that went into the food.",
+    "topic": "fn-l6-2"
+  }
+]

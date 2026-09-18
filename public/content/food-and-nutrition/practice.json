@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "p1",
+    "question": "Which nutrient is the body's main and cheapest source of energy?",
+    "options": [
+      "Protein",
+      "Carbohydrate",
+      "Vitamin C",
+      "Calcium"
+    ],
+    "answer": "Carbohydrate",
+    "explanation": "Sugars and starches from cereals, provisions and fruit supply most dietary energy.",
+    "topic": "fn-l1-1"
+  },
+  {
+    "id": "p2",
+    "question": "Which food is a complete protein?",
+    "options": [
+      "Rice",
+      "Red peas",
+      "Eggs",
+      "Cassava"
+    ],
+    "answer": "Eggs",
+    "explanation": "Eggs contain all the essential amino acids in useful amounts.",
+    "topic": "fn-l1-1"
+  },
+  {
+    "id": "p3",
+    "question": "Vitamin C is needed mainly for:",
+    "options": [
+      "Blood clotting",
+      "Collagen formation and iron absorption",
+      "Bone mineralisation",
+      "Thyroid function"
+    ],
+    "answer": "Collagen formation and iron absorption",
+    "explanation": "Vitamin C builds collagen in skin and blood vessels and helps the body absorb iron.",
+    "topic": "fn-l1-1"
+  },
+  {
+    "id": "p4",
+    "question": "A deficiency of vitamin A causes:",
+    "options": [
+      "Scurvy",
+      "Night blindness",
+      "Rickets",
+      "Goitre"
+    ],
+    "answer": "Night blindness",
+    "explanation": "Vitamin A is needed for vision in dim light.",
+    "topic": "fn-l1-1"
+  },
+  {
+    "id": "p5",
+    "question": "The mineral needed to make haemoglobin is:",
+    "options": [
+      "Calcium",
+      "Iron",
+      "Iodine",
+      "Sodium"
+    ],
+    "answer": "Iron",
+    "explanation": "Iron forms part of haemoglobin, which carries oxygen.",
+    "topic": "fn-l1-1"
+  },
+  {
+    "id": "p6",
+    "question": "Which nutrient supplies no energy but aids digestion?",
+    "options": [
+      "Fat",
+      "Fibre",
+      "Protein",
+      "Sugar"
+    ],
+    "answer": "Fibre",
+    "explanation": "Fibre is largely indigestible but keeps the gut working and prevents constipation.",
+    "topic": "fn-l1-1"
+  },
+  {
+    "id": "p8",
+    "question": "A balanced diet is one that:",
+    "options": [
+      "Contains only vegetables",
+      "Supplies all nutrients in the amounts needed, in the right proportions",
+      "Is expensive",
+      "Avoids all fats"
+    ],
+    "answer": "Supplies all nutrients in the amounts needed, in the right proportions",
+    "explanation": "Balance and variety together supply what the body requires.",
+    "topic": "fn-l1-2"
+  },
+  {
+    "id": "p9",
+    "question": "Which group of people generally has the highest energy requirement per kilogram of body weight?",
+    "options": [
+      "Older sedentary adults",
+      "Growing adolescents",
+      "Young children",
+      "Retired people"
+    ],
+    "answer": "Growing adolescents",
+    "explanation": "Growth plus activity raises energy and protein needs sharply in adolescence.",
+    "topic": "fn-l1-2"
+  },
+  {
+    "id": "p10",
+    "question": "Choosing foods that are in season is good practice mainly because they are:",
+    "options": [
+      "Always imported",
+      "Cheaper and fresher",
+      "Higher in fat",
+      "Longer lasting in the fridge"
+    ],
+    "answer": "Cheaper and fresher",
+    "explanation": "Seasonal local produce costs less and retains more nutrients.",
+    "topic": "fn-l1-2"
+  },
+  {
+    "id": "p11",
+    "question": "On a balanced plate, the largest share should be:",
+    "options": [
+      "Fatty and sugary foods",
+      "Vegetables and fruit",
+      "Fried foods",
+      "Meat"
+    ],
+    "answer": "Vegetables and fruit",
+    "explanation": "They supply vitamins, minerals and fibre with few kilojoules.",
+    "topic": "fn-l1-2"
+  },
+  {
+    "id": "p12",
+    "question": "A standard recipe is used in quantity catering because it:",
+    "options": [
+      "Is always cheaper",
+      "Gives consistent results and predictable quantities and cost",
+      "Needs no weighing",
+      "Uses only local food"
+    ],
+    "answer": "Gives consistent results and predictable quantities and cost",
+    "explanation": "Standard recipes make large-scale cooking reliable.",
+    "topic": "fn-l1-2"
+  },
+  {
+    "id": "p13",
+    "question": "Breakfast is important for school children because it:",
+    "options": [
+      "Makes them sleepy",
+      "Provides energy that improves concentration and learning",
+      "Prevents all illness",
+      "Replaces lunch"
+    ],
+    "answer": "Provides energy that improves concentration and learning",
+    "explanation": "Overnight fasting means the brain needs glucose in the morning.",
+    "topic": "fn-l1-2"
+  },
+  {
+    "id": "p14",
+    "question": "Obesity develops when:",
+    "options": [
+      "Energy intake exceeds energy expenditure over time",
+      "Too much fibre is eaten",
+      "Only vegetables are eaten",
+      "Water intake is high"
+    ],
+    "answer": "Energy intake exceeds energy expenditure over time",
+    "explanation": "Sustained positive energy balance is stored as fat.",
+    "topic": "fn-l1-3"
+  },
+  {
+    "id": "p15",
+    "question": "A person with diabetes should limit:",
+    "options": [
+      "Water",
+      "Refined sugar and control carbohydrate portions",
+      "Green vegetables",
+      "Fresh fish"
+    ],
+    "answer": "Refined sugar and control carbohydrate portions",
+    "explanation": "Blood glucose control depends on the amount and type of carbohydrate eaten.",
+    "topic": "fn-l1-3"
+  },
+  {
+    "id": "p16",
+    "question": "A low-salt diet is prescribed mainly for:",
+    "options": [
+      "Anaemia",
+      "Hypertension and heart failure",
+      "Scurvy",
+      "Rickets"
+    ],
+    "answer": "Hypertension and heart failure",
+    "explanation": "Reducing sodium helps lower blood pressure and fluid retention.",
+    "topic": "fn-l1-3"
+  },
+  {
+    "id": "p17",
+    "question": "Dental caries are most closely associated with:",
+    "options": [
+      "Frequent sugary foods and drinks",
+      "Eating vegetables",
+      "Drinking water",
+      "Eating fish"
+    ],
+    "answer": "Frequent sugary foods and drinks",
+    "explanation": "Oral bacteria ferment sugar and produce acid that dissolves enamel.",
+    "topic": "fn-l1-3"
+  },
+  {
+    "id": "p18",
+    "question": "Iron-deficiency anaemia is most common in:",
+    "options": [
+      "Women of childbearing age and adolescents",
+      "Elderly men only",
+      "Infants fed on breast milk",
+      "Athletes only"
+    ],
+    "answer": "Women of childbearing age and adolescents",
+    "explanation": "Menstrual losses and rapid growth raise iron requirements.",
+    "topic": "fn-l1-3"
+  },
+  {
+    "id": "p19",
+    "question": "Heat transfer through direct contact with a hot surface is:",
+    "options": [
+      "Convection",
+      "Conduction",
+      "Radiation",
+      "Evaporation"
+    ],
+    "answer": "Conduction",
+    "explanation": "Conduction passes energy from particle to particle.",
+    "topic": "fn-l2-1"
+  },
+  {
+    "id": "p20",
+    "question": "Steaming vegetables is nutritionally better than boiling because it:",
+    "options": [
+      "Adds fat",
+      "Reduces leaching of water-soluble vitamins",
+      "Makes them sweeter",
+      "Destroys fibre"
+    ],
+    "answer": "Reduces leaching of water-soluble vitamins",
+    "explanation": "Less contact with water means less vitamin loss by leaching.",
+    "topic": "fn-l2-1"
+  },
+  {
+    "id": "p21",
+    "question": "Cooking food in hot oil is:",
+    "options": [
+      "A moist method",
+      "A dry method",
+      "Steaming",
+      "Poaching"
+    ],
+    "answer": "A dry method",
+    "explanation": "Frying uses hot fat rather than water or steam.",
+    "topic": "fn-l2-1"
+  },
+  {
+    "id": "p22",
+    "question": "Grilling browns food through the:",
+    "options": [
+      "Maillard reaction",
+      "Gelatinisation of starch",
+      "Coagulation of egg white",
+      "Action of yeast"
+    ],
+    "answer": "Maillard reaction",
+    "explanation": "Proteins and sugars react under dry heat to give colour and flavour.",
+    "topic": "fn-l2-1"
+  },
+  {
+    "id": "p23",
+    "question": "A pressure cooker cooks food faster because it:",
+    "options": [
+      "Adds fat",
+      "Raises the boiling point of water under pressure",
+      "Uses radiation",
+      "Removes moisture"
+    ],
+    "answer": "Raises the boiling point of water under pressure",
+    "explanation": "Higher pressure means a higher boiling temperature and shorter cooking time.",
+    "topic": "fn-l2-1"
+  },
+  {
+    "id": "p24",
+    "question": "Deep fried food cooked at too low a temperature will be:",
+    "options": [
+      "Dry and crisp",
+      "Greasy and pale",
+      "Burnt outside",
+      "Raw only inside"
+    ],
+    "answer": "Greasy and pale",
+    "explanation": "Food absorbs fat when the oil is not hot enough to seal the surface.",
+    "topic": "fn-l2-1"
+  },
+  {
+    "id": "p25",
+    "question": "The setting of egg white when heated is an example of:",
+    "options": [
+      "Gelatinisation",
+      "Coagulation",
+      "Caramelisation",
+      "Aeration"
+    ],
+    "answer": "Coagulation",
+    "explanation": "Heat denatures and sets protein.",
+    "topic": "fn-l2-2"
+  },
+  {
+    "id": "p26",
+    "question": "Cornstarch thickens a sauce by:",
+    "options": [
+      "Coagulating",
+      "Gelatinising",
+      "Caramelising",
+      "Fermenting"
+    ],
+    "answer": "Gelatinising",
+    "explanation": "Starch granules absorb water, swell and thicken the liquid.",
+    "topic": "fn-l2-2"
+  },
+  {
+    "id": "p27",
+    "question": "Overheating sugar until it turns brown and bitter is:",
+    "options": [
+      "Aeration",
+      "Caramelisation",
+      "Gelatinisation",
+      "Emulsification"
+    ],
+    "answer": "Caramelisation",
+    "explanation": "Sugar melts and browns; taken too far it burns.",
+    "topic": "fn-l2-2"
+  },
+  {
+    "id": "p28",
+    "question": "Beating egg white until stiff traps:",
+    "options": [
+      "Fat",
+      "Air",
+      "Water",
+      "Salt"
+    ],
+    "answer": "Air",
+    "explanation": "Air bubbles give lightness to the cooked product.",
+    "topic": "fn-l2-2"
+  },
+  {
+    "id": "p29",
+    "question": "Sliced avocado turns brown because of:",
+    "options": [
+      "Enzymic browning",
+      "Mould growth",
+      "Caramelisation",
+      "Rancidity"
+    ],
+    "answer": "Enzymic browning",
+    "explanation": "Enzymes react with oxygen on the cut surface.",
+    "topic": "fn-l2-2"
+  },
+  {
+    "id": "p30",
+    "question": "Adding lemon juice to sliced banana slows browning because lemon juice is:",
+    "options": [
+      "Alkaline",
+      "Acidic and low in oxygen",
+      "Oily",
+      "A preservative by law"
+    ],
+    "answer": "Acidic and low in oxygen",
+    "explanation": "Acid slows the enzymes responsible for browning.",
+    "topic": "fn-l2-2"
+  },
+  {
+    "id": "p32",
+    "question": "The sensory property detected by the nose before eating is:",
+    "options": [
+      "Texture",
+      "Aroma",
+      "Colour",
+      "Temperature"
+    ],
+    "answer": "Aroma",
+    "explanation": "Aroma strongly influences perceived flavour.",
+    "topic": "fn-l2-3"
+  },
+  {
+    "id": "p33",
+    "question": "In a sensory test, samples should be:",
+    "options": [
+      "Labelled with the recipe names",
+      "Coded so tasters do not know which is which",
+      "Served at different temperatures",
+      "Different sizes"
+    ],
+    "answer": "Coded so tasters do not know which is which",
+    "explanation": "Coding removes the expectation that affects judgement.",
+    "topic": "fn-l2-3"
+  },
+  {
+    "id": "p34",
+    "question": "A preference test asks tasters to:",
+    "options": [
+      "Identify all ingredients",
+      "Rank samples in order of liking",
+      "Weigh the samples",
+      "Describe the recipe"
+    ],
+    "answer": "Rank samples in order of liking",
+    "explanation": "Preference tests measure acceptability rather than difference.",
+    "topic": "fn-l2-3"
+  },
+  {
+    "id": "p35",
+    "question": "A palate cleanser between samples is used to:",
+    "options": [
+      "Add flavour",
+      "Remove the taste of the previous sample",
+      "Cool the food",
+      "Increase sweetness"
+    ],
+    "answer": "Remove the taste of the previous sample",
+    "explanation": "Water or a plain cracker prevents carry-over of taste.",
+    "topic": "fn-l2-3"
+  },
+  {
+    "id": "p36",
+    "question": "In a food experiment the control sample is the one that:",
+    "options": [
+      "Has the variable applied",
+      "Is prepared in the standard way for comparison",
+      "Is always wasted",
+      "Is tasted first"
+    ],
+    "answer": "Is prepared in the standard way for comparison",
+    "explanation": "The control shows what happens without the change being tested.",
+    "topic": "fn-l2-3"
+  },
+  {
+    "id": "p37",
+    "question": "Micro-organisms need all of the following to multiply EXCEPT:",
+    "options": [
+      "Food",
+      "Moisture",
+      "Warmth",
+      "Direct sunlight"
+    ],
+    "answer": "Direct sunlight",
+    "explanation": "Ultraviolet light kills many organisms rather than helping them grow.",
+    "topic": "fn-l3-1"
+  },
+  {
+    "id": "p38",
+    "question": "The temperature danger zone for food is about:",
+    "options": [
+      "0 to 4 degrees C",
+      "5 to 63 degrees C",
+      "70 to 100 degrees C",
+      "minus 18 to 0 degrees C"
+    ],
+    "answer": "5 to 63 degrees C",
+    "explanation": "Bacteria multiply fastest in this range, which is why hot food stays hot and cold food stays cold.",
+    "topic": "fn-l3-1"
+  },
+  {
+    "id": "p39",
+    "question": "Salmonella food poisoning is most often associated with:",
+    "options": [
+      "Raw poultry and eggs",
+      "Cooked rice kept warm",
+      "Tinned peas",
+      "Fried plantain"
+    ],
+    "answer": "Raw poultry and eggs",
+    "explanation": "Poultry and eggs are common carriers, so they must be cooked through.",
+    "topic": "fn-l3-1"
+  },
+  {
+    "id": "p40",
+    "question": "Bacillus cereus is commonly associated with:",
+    "options": [
+      "Milk",
+      "Cooked rice left at room temperature",
+      "Bread",
+      "Oranges"
+    ],
+    "answer": "Cooked rice left at room temperature",
+    "explanation": "Rice held warm or cooled slowly is a well-known source.",
+    "topic": "fn-l3-1"
+  },
+  {
+    "id": "p41",
+    "question": "Rancidity in fats is caused by:",
+    "options": [
+      "Bacterial growth only",
+      "Chemical oxidation of the fat",
+      "Freezing",
+      "Adding salt"
+    ],
+    "answer": "Chemical oxidation of the fat",
+    "explanation": "Oxygen attack turns fats stale and unpleasant, which is why oils are stored sealed and dark.",
+    "topic": "fn-l3-1"
+  },
+  {
+    "id": "p42",
+    "question": "Mould growth on bread is discouraged by:",
+    "options": [
+      "Warm damp storage",
+      "Cool, dry storage or freezing",
+      "Wrapping it tightly while warm",
+      "Adding water"
+    ],
+    "answer": "Cool, dry storage or freezing",
+    "explanation": "Moulds need warmth and moisture.",
+    "topic": "fn-l3-1"
+  },
+  {
+    "id": "p44",
+    "question": "Raw meat in a refrigerator should be stored:",
+    "options": [
+      "Above cooked food",
+      "Below cooked and ready-to-eat food",
+      "Beside the door",
+      "With the vegetables"
+    ],
+    "answer": "Below cooked and ready-to-eat food",
+    "explanation": "This prevents juices dripping onto foods that will not be cooked again.",
+    "topic": "fn-l3-2"
+  },
+  {
+    "id": "p45",
+    "question": "The refrigerator temperature should be about:",
+    "options": [
+      "10 to 15 degrees C",
+      "1 to 4 degrees C",
+      "minus 18 degrees C",
+      "20 degrees C"
+    ],
+    "answer": "1 to 4 degrees C",
+    "explanation": "Cool enough to slow bacterial growth without freezing the food.",
+    "topic": "fn-l3-2"
+  },
+  {
+    "id": "p46",
+    "question": "Frozen food should be defrosted:",
+    "options": [
+      "On the kitchen counter overnight",
+      "In the refrigerator or microwave",
+      "In hot water in the sink",
+      "In direct sunlight"
+    ],
+    "answer": "In the refrigerator or microwave",
+    "explanation": "Controlled thawing keeps the food out of the danger zone.",
+    "topic": "fn-l3-2"
+  },
+  {
+    "id": "p47",
+    "question": "Which practice prevents cross-contamination?",
+    "options": [
+      "Using the same board for raw chicken and salad",
+      "Using separate colour-coded boards for raw meat and ready-to-eat food",
+      "Rinsing the board with cold water only",
+      "Wiping hands on a cloth"
+    ],
+    "answer": "Using separate colour-coded boards for raw meat and ready-to-eat food",
+    "explanation": "Separation stops bacteria from raw food reaching food eaten without further cooking.",
+    "topic": "fn-l3-2"
+  },
+  {
+    "id": "p48",
+    "question": "Which of these is NOT a reason to wash your hands before handling food?",
+    "options": [
+      "After handling raw meat",
+      "After using the toilet",
+      "After coughing or sneezing into your hand",
+      "After wiping a dry clean work surface"
+    ],
+    "answer": "After wiping a dry clean work surface",
+    "explanation": "The first three all introduce bacteria to the hands; wiping a clean dry surface does not.",
+    "topic": "fn-l3-2"
+  },
+  {
+    "id": "p49",
+    "question": "Cooked leftovers must be reheated:",
+    "options": [
+      "Gently until just warm",
+      "Piping hot all the way through, once only",
+      "Twice, if needed",
+      "In a slow cooker for hours"
+    ],
+    "answer": "Piping hot all the way through, once only",
+    "explanation": "Thorough reheating kills bacteria; repeated reheating multiplies risk.",
+    "topic": "fn-l3-2"
+  },
+  {
+    "id": "p51",
+    "question": "Freezing food preserves it because it:",
+    "options": [
+      "Kills all bacteria",
+      "Stops or slows the growth of micro-organisms",
+      "Adds preservatives",
+      "Removes water"
+    ],
+    "answer": "Stops or slows the growth of micro-organisms",
+    "explanation": "Freezing does not sterilise, so thawed food must still be handled carefully.",
+    "topic": "fn-l3-3"
+  },
+  {
+    "id": "p52",
+    "question": "Drying preserves fish and fruit by:",
+    "options": [
+      "Adding salt",
+      "Removing the water organisms need",
+      "Raising the pH",
+      "Adding oxygen"
+    ],
+    "answer": "Removing the water organisms need",
+    "explanation": "Without available moisture, microbial growth stops.",
+    "topic": "fn-l3-3"
+  },
+  {
+    "id": "p53",
+    "question": "Pickling preserves food because vinegar:",
+    "options": [
+      "Is alkaline",
+      "Creates an acid environment that inhibits organisms",
+      "Freezes the food",
+      "Adds moisture"
+    ],
+    "answer": "Creates an acid environment that inhibits organisms",
+    "explanation": "Most spoilage organisms cannot grow in strong acid.",
+    "topic": "fn-l3-3"
+  },
+  {
+    "id": "p54",
+    "question": "Jam keeps because of its:",
+    "options": [
+      "High sugar content and acidity",
+      "Low sugar content",
+      "High water content",
+      "Neutral pH"
+    ],
+    "answer": "High sugar content and acidity",
+    "explanation": "Sugar binds water and acid inhibits organisms; the setting point must also be reached.",
+    "topic": "fn-l3-3"
+  },
+  {
+    "id": "p55",
+    "question": "On a food label, ingredients are listed:",
+    "options": [
+      "Alphabetically",
+      "In descending order of weight",
+      "In order of cost",
+      "By colour"
+    ],
+    "answer": "In descending order of weight",
+    "explanation": "The ingredient present in the greatest amount is listed first.",
+    "topic": "fn-l3-3"
+  },
+  {
+    "id": "p56",
+    "question": "Canned low-acid foods such as vegetables and meat are more hazardous than canned fruit because:",
+    "options": [
+      "They taste worse",
+      "Clostridium botulinum can grow in them if processing is inadequate",
+      "They contain more sugar",
+      "They are always under-processed"
+    ],
+    "answer": "Clostridium botulinum can grow in them if processing is inadequate",
+    "explanation": "Low-acid foods need more severe heat processing to be safe.",
+    "topic": "fn-l3-3"
+  },
+  {
+    "id": "p57",
+    "question": "An allergen on a label must be declared because:",
+    "options": [
+      "It affects the taste",
+      "Some consumers can suffer a severe reaction",
+      "It adds cost",
+      "It is always artificial"
+    ],
+    "answer": "Some consumers can suffer a severe reaction",
+    "explanation": "Allergen labelling protects susceptible consumers.",
+    "topic": "fn-l3-3"
+  },
+  {
+    "id": "p58",
+    "question": "Value for money in food is best judged by:",
+    "options": [
+      "The pack price",
+      "The cost per portion or per kilogram",
+      "The brand name",
+      "The packaging"
+    ],
+    "answer": "The cost per portion or per kilogram",
+    "explanation": "Unit cost allows a fair comparison between different pack sizes.",
+    "topic": "fn-l4-1"
+  },
+  {
+    "id": "p59",
+    "question": "Which is usually the cheapest source of protein per portion?",
+    "options": [
+      "Beef steak",
+      "Dried peas and beans",
+      "Canned ham",
+      "Cheese"
+    ],
+    "answer": "Dried peas and beans",
+    "explanation": "Pulses supply protein at low cost, especially combined with cereals.",
+    "topic": "fn-l4-1"
+  },
+  {
+    "id": "p60",
+    "question": "A shopping list helps a family mainly by:",
+    "options": [
+      "Increasing spending",
+      "Preventing impulse buying and forgotten items",
+      "Making food last longer",
+      "Replacing meal planning"
+    ],
+    "answer": "Preventing impulse buying and forgotten items",
+    "explanation": "A list turns planned menus into controlled purchases.",
+    "topic": "fn-l4-1"
+  },
+  {
+    "id": "p61",
+    "question": "Which is a good way to reduce food waste at home?",
+    "options": [
+      "Cooking more than can be eaten",
+      "Planning portions and using leftovers safely",
+      "Storing all foods together",
+      "Buying perishables in bulk regardless of storage"
+    ],
+    "answer": "Planning portions and using leftovers safely",
+    "explanation": "Matching quantities to need and using what remains keeps food out of the bin.",
+    "topic": "fn-l4-1"
+  },
+  {
+    "id": "p62",
+    "question": "Ground provisions should be stored:",
+    "options": [
+      "In sealed plastic bags in the sun",
+      "In a cool, dry, airy place",
+      "In water",
+      "In the freezer"
+    ],
+    "answer": "In a cool, dry, airy place",
+    "explanation": "Air movement prevents mould and rot.",
+    "topic": "fn-l4-1"
+  },
+  {
+    "id": "p63",
+    "question": "Folate is especially important during pregnancy because it:",
+    "options": [
+      "Builds strong teeth",
+      "Reduces the risk of neural tube defects",
+      "Prevents anaemia only",
+      "Increases appetite"
+    ],
+    "answer": "Reduces the risk of neural tube defects",
+    "explanation": "Adequate folate before and early in pregnancy protects the developing nervous system.",
+    "topic": "fn-l4-2"
+  },
+  {
+    "id": "p64",
+    "question": "A pregnant woman should avoid:",
+    "options": [
+      "Fresh fruit",
+      "Alcohol",
+      "Cooked fish",
+      "Vegetables"
+    ],
+    "answer": "Alcohol",
+    "explanation": "Alcohol crosses the placenta and harms the developing baby.",
+    "topic": "fn-l4-2"
+  },
+  {
+    "id": "p65",
+    "question": "Weaning foods for infants should be introduced:",
+    "options": [
+      "All at once",
+      "One at a time, soft and without added salt or sugar",
+      "With salt for flavour",
+      "Only after 18 months"
+    ],
+    "answer": "One at a time, soft and without added salt or sugar",
+    "explanation": "One at a time allows reactions to be noticed; infants' kidneys cannot handle added salt.",
+    "topic": "fn-l4-2"
+  },
+  {
+    "id": "p66",
+    "question": "Adolescent girls need extra iron because of:",
+    "options": [
+      "Rapid growth and menstrual losses",
+      "High vitamin C intake",
+      "Low activity",
+      "Increased sleep"
+    ],
+    "answer": "Rapid growth and menstrual losses",
+    "explanation": "Both growth and menstruation raise iron requirements.",
+    "topic": "fn-l4-2"
+  },
+  {
+    "id": "p67",
+    "question": "Older people often need:",
+    "options": [
+      "More energy than teenagers",
+      "Plenty of protein, calcium, vitamin D and fibre with less energy",
+      "No protein",
+      "Only sugary foods"
+    ],
+    "answer": "Plenty of protein, calcium, vitamin D and fibre with less energy",
+    "explanation": "Energy needs fall while nutrient needs for bone, muscle and gut health stay high.",
+    "topic": "fn-l4-2"
+  },
+  {
+    "id": "p68",
+    "question": "Meals for an older person with chewing difficulties should be:",
+    "options": [
+      "Hard and dry",
+      "Soft, moist, easy to chew and attractively served",
+      "Very highly spiced",
+      "Served infrequently"
+    ],
+    "answer": "Soft, moist, easy to chew and attractively served",
+    "explanation": "Appetite and chewing ability both affect intake, so texture matters.",
+    "topic": "fn-l4-2"
+  },
+  {
+    "id": "p69",
+    "question": "A low-salt diet means avoiding:",
+    "options": [
+      "Fresh vegetables",
+      "Stock cubes, cured meats and salted snacks",
+      "Fresh fish",
+      "Fruit"
+    ],
+    "answer": "Stock cubes, cured meats and salted snacks",
+    "explanation": "Processed and cured foods carry most of the hidden sodium.",
+    "topic": "fn-l4-3"
+  },
+  {
+    "id": "p70",
+    "question": "A gluten-free diet excludes:",
+    "options": [
+      "Rice and corn",
+      "Wheat, barley and rye",
+      "Milk",
+      "Potatoes"
+    ],
+    "answer": "Wheat, barley and rye",
+    "explanation": "These cereals contain gluten, which damages the gut in coeliac disease.",
+    "topic": "fn-l4-3"
+  },
+  {
+    "id": "p71",
+    "question": "A vegan diet must be planned carefully to supply:",
+    "options": [
+      "Carbohydrate",
+      "Vitamin B12, iron, calcium and omega-3",
+      "Sodium",
+      "Sugar"
+    ],
+    "answer": "Vitamin B12, iron, calcium and omega-3",
+    "explanation": "These nutrients come mainly from animal foods or are absorbed less well from plant sources.",
+    "topic": "fn-l4-3"
+  },
+  {
+    "id": "p72",
+    "question": "In a diabetic diet, carbohydrate should be:",
+    "options": [
+      "Removed entirely",
+      "Controlled in amount and spread evenly through the day",
+      "Eaten only at night",
+      "Replaced with fat"
+    ],
+    "answer": "Controlled in amount and spread evenly through the day",
+    "explanation": "Even distribution keeps blood glucose steadier.",
+    "topic": "fn-l4-3"
+  },
+  {
+    "id": "p73",
+    "question": "When modifying a recipe for a special diet, the best approach is to:",
+    "options": [
+      "Remove the ingredient and add nothing",
+      "Substitute another ingredient that supplies similar properties",
+      "Double the salt to compensate",
+      "Serve the dish without comment"
+    ],
+    "answer": "Substitute another ingredient that supplies similar properties",
+    "explanation": "Substitution keeps the dish adequate and acceptable.",
+    "topic": "fn-l4-3"
+  },
+  {
+    "id": "p74",
+    "question": "The kitchen work triangle links:",
+    "options": [
+      "The refrigerator, the stove and the sink",
+      "The table, chairs and door",
+      "The bin, the mop and the broom",
+      "Cupboards and shelves"
+    ],
+    "answer": "The refrigerator, the stove and the sink",
+    "explanation": "Good layout minimises walking between storage, washing and cooking.",
+    "topic": "fn-l5-1"
+  },
+  {
+    "id": "p75",
+    "question": "Mise en place means:",
+    "options": [
+      "Cooking quickly",
+      "Everything in its place - ingredients prepared and arranged before starting",
+      "Washing up at the end",
+      "Storing food"
+    ],
+    "answer": "Everything in its place - ingredients prepared and arranged before starting",
+    "explanation": "Preparation before cooking saves time and prevents mistakes.",
+    "topic": "fn-l5-1"
+  },
+  {
+    "id": "p76",
+    "question": "A cast iron pot is chosen for:",
+    "options": [
+      "Light weight",
+      "Holding and distributing heat well",
+      "Use in the microwave",
+      "Non-stick frying"
+    ],
+    "answer": "Holding and distributing heat well",
+    "explanation": "Cast iron is heavy but retains heat, suiting slow cooking and frying.",
+    "topic": "fn-l5-1"
+  },
+  {
+    "id": "p77",
+    "question": "Which utensil is used to remove lumps from flour?",
+    "options": [
+      "Grater",
+      "Sieve",
+      "Whisk",
+      "Colander"
+    ],
+    "answer": "Sieve",
+    "explanation": "Sifting aerates flour and removes lumps.",
+    "topic": "fn-l5-1"
+  },
+  {
+    "id": "p78",
+    "question": "To save energy when cooking, you should:",
+    "options": [
+      "Use the largest pot for a small amount of food",
+      "Use lids, match the pot to the hotplate and cook several dishes together",
+      "Open the oven often",
+      "Boil everything at a rolling boil"
+    ],
+    "answer": "Use lids, match the pot to the hotplate and cook several dishes together",
+    "explanation": "Lids and correct pot size reduce heat loss and cooking time.",
+    "topic": "fn-l5-1"
+  },
+  {
+    "id": "p79",
+    "question": "Which is a kitchen safety hazard?",
+    "options": [
+      "A dry floor",
+      "Trailing flexes across the floor",
+      "Storing knives in a rack",
+      "Using a fire blanket"
+    ],
+    "answer": "Trailing flexes across the floor",
+    "explanation": "Cables across walking routes cause trips and spillage.",
+    "topic": "fn-l5-1"
+  },
+  {
+    "id": "p80",
+    "question": "A use-by date is:",
+    "options": [
+      "A quality guide only",
+      "A safety date after which the food must not be eaten",
+      "The date of manufacture",
+      "The harvest date"
+    ],
+    "answer": "A safety date after which the food must not be eaten",
+    "explanation": "Use-by dates relate to safety; best-before dates relate to quality.",
+    "topic": "fn-l5-2"
+  },
+  {
+    "id": "p81",
+    "question": "Which product would you reject?",
+    "options": [
+      "A tin with a small dent and no bulging",
+      "A tin that is bulging and leaking",
+      "Frozen peas that are solid",
+      "A box of cereal one month within its best-before date"
+    ],
+    "answer": "A tin that is bulging and leaking",
+    "explanation": "Bulging indicates gas from microbial activity and possible spoilage.",
+    "topic": "fn-l5-2"
+  },
+  {
+    "id": "p82",
+    "question": "Rice and flour should be stored:",
+    "options": [
+      "In damp cupboards",
+      "In airtight containers in a cool, dark, dry place",
+      "In the refrigerator with raw meat",
+      "In open bags on the floor"
+    ],
+    "answer": "In airtight containers in a cool, dark, dry place",
+    "explanation": "Warmth, moisture and pests spoil dry goods.",
+    "topic": "fn-l5-2"
+  },
+  {
+    "id": "p83",
+    "question": "Buying staples in bulk is worthwhile only if:",
+    "options": [
+      "They are fashionable",
+      "The price per unit is lower and the food can be stored and used before it spoils",
+      "The packaging is attractive",
+      "It is convenient to carry"
+    ],
+    "answer": "The price per unit is lower and the food can be stored and used before it spoils",
+    "explanation": "Bulk buying saves money only when nothing is wasted.",
+    "topic": "fn-l5-2"
+  },
+  {
+    "id": "p84",
+    "question": "Stock rotation means:",
+    "options": [
+      "Buying new stock each week",
+      "Using older stock before newer stock",
+      "Storing everything together",
+      "Selling food at a discount"
+    ],
+    "answer": "Using older stock before newer stock",
+    "explanation": "First in, first out prevents food passing its date and being thrown away.",
+    "topic": "fn-l5-2"
+  },
+  {
+    "id": "p85",
+    "question": "Chilled food should be bought:",
+    "options": [
+      "First, so the shopping is done early",
+      "Last, and taken home quickly",
+      "With the cleaning supplies",
+      "Only at weekends"
+    ],
+    "answer": "Last, and taken home quickly",
+    "explanation": "Chilled and frozen food spends the least possible time out of cold storage.",
+    "topic": "fn-l5-2"
+  },
+  {
+    "id": "p86",
+    "question": "Which is a consumer right?",
+    "options": [
+      "The right to a discount always",
+      "The right to safety, information and redress",
+      "The right to return any food after use",
+      "The right to demand free samples"
+    ],
+    "answer": "The right to safety, information and redress",
+    "explanation": "Consumer protection covers safety, information, choice, being heard, redress and education.",
+    "topic": "fn-l5-3"
+  },
+  {
+    "id": "p87",
+    "question": "When making a complaint about spoiled food, the most important thing to keep is:",
+    "options": [
+      "The shopping bag only",
+      "The receipt, the product and its packaging",
+      "A photograph of the shop",
+      "Nothing"
+    ],
+    "answer": "The receipt, the product and its packaging",
+    "explanation": "Evidence of purchase and of the problem is what makes a complaint effective.",
+    "topic": "fn-l5-3"
+  },
+  {
+    "id": "p88",
+    "question": "Food described as 'low fat' on a label must:",
+    "options": [
+      "Be free of all fat",
+      "Meet a legal definition for fat content",
+      "Be more expensive",
+      "Be imported"
+    ],
+    "answer": "Meet a legal definition for fat content",
+    "explanation": "Nutrition claims have regulated meanings to prevent misleading descriptions.",
+    "topic": "fn-l5-3"
+  },
+  {
+    "id": "p89",
+    "question": "The food chain includes all of the following EXCEPT:",
+    "options": [
+      "Farmers and fishers",
+      "Processors and wholesalers",
+      "Restaurants and vendors",
+      "Consumers' recreational clubs"
+    ],
+    "answer": "Consumers' recreational clubs",
+    "explanation": "The chain covers production, processing, distribution, retail and catering.",
+    "topic": "fn-l5-3"
+  },
+  {
+    "id": "p90",
+    "question": "Public health inspectors are responsible for:",
+    "options": [
+      "Setting food prices",
+      "Inspecting food premises and enforcing food safety rules",
+      "Selling food licences to consumers",
+      "Advertising food"
+    ],
+    "answer": "Inspecting food premises and enforcing food safety rules",
+    "explanation": "Enforcement of hygiene standards protects the public.",
+    "topic": "fn-l5-3"
+  },
+  {
+    "id": "p91",
+    "question": "Which traditional Caribbean meal is a complete-protein combination?",
+    "options": [
+      "Rice and peas with stewed chicken",
+      "Fried plantain only",
+      "Black cake",
+      "Orange juice"
+    ],
+    "answer": "Rice and peas with stewed chicken",
+    "explanation": "Cereal plus legume and animal protein supplies all essential amino acids.",
+    "topic": "fn-l6-1"
+  },
+  {
+    "id": "p92",
+    "question": "Callaloo is valuable in the diet mainly because it supplies:",
+    "options": [
+      "Fat",
+      "Iron and vitamin A",
+      "Pure starch",
+      "Refined sugar"
+    ],
+    "answer": "Iron and vitamin A",
+    "explanation": "Dark green leaves are rich in iron, vitamin A and folate.",
+    "topic": "fn-l6-1"
+  },
+  {
+    "id": "p93",
+    "question": "Ground provisions include:",
+    "options": [
+      "Yam, sweet potato and cassava",
+      "Wheat and barley",
+      "Beef and pork",
+      "Milk and cheese"
+    ],
+    "answer": "Yam, sweet potato and cassava",
+    "explanation": "Ground provisions are starchy roots and tubers grown locally.",
+    "topic": "fn-l6-1"
+  },
+  {
+    "id": "p94",
+    "question": "Ackee and saltfish is usually served with roasted breadfruit because breadfruit supplies:",
+    "options": [
+      "Iron",
+      "Carbohydrate",
+      "Vitamin C",
+      "Calcium"
+    ],
+    "answer": "Carbohydrate",
+    "explanation": "Breadfruit is a starchy staple that completes the meal.",
+    "topic": "fn-l6-1"
+  },
+  {
+    "id": "p95",
+    "question": "Traditional Caribbean one-pot cooking developed partly because it:",
+    "options": [
+      "Required many pots",
+      "Was economical on fuel and used locally grown foods",
+      "Was faster than frying",
+      "Suited imported ingredients"
+    ],
+    "answer": "Was economical on fuel and used locally grown foods",
+    "explanation": "One-pot meals were practical for households with limited fuel and equipment.",
+    "topic": "fn-l6-1"
+  },
+  {
+    "id": "p96",
+    "question": "Food security means:",
+    "options": [
+      "Food is available in shops",
+      "All people at all times have physical and economic access to sufficient safe nutritious food",
+      "A country grows all its own food",
+      "Food is cheap"
+    ],
+    "answer": "All people at all times have physical and economic access to sufficient safe nutritious food",
+    "explanation": "Food security has four pillars: availability, access, utilisation and stability.",
+    "topic": "fn-l6-2"
+  },
+  {
+    "id": "p97",
+    "question": "The four pillars of food security are:",
+    "options": [
+      "Production, price, profit, transport",
+      "Availability, access, utilisation, stability",
+      "Imports, exports, tariffs, quotas",
+      "Crops, livestock, fish, forestry"
+    ],
+    "answer": "Availability, access, utilisation, stability",
+    "explanation": "All four must be satisfied for food security to exist.",
+    "topic": "fn-l6-2"
+  },
+  {
+    "id": "p98",
+    "question": "Caribbean countries are vulnerable because they:",
+    "options": [
+      "Produce all their own food",
+      "Import a high proportion of their food, especially cereals and processed goods",
+      "Have no agriculture",
+      "Have no coastline"
+    ],
+    "answer": "Import a high proportion of their food, especially cereals and processed goods",
+    "explanation": "Import dependence passes global price rises directly to consumers.",
+    "topic": "fn-l6-2"
+  },
+  {
+    "id": "p99",
+    "question": "A school feeding programme improves food security mainly by improving:",
+    "options": [
+      "Availability only",
+      "Access and utilisation of nutritious food",
+      "Stability of imports",
+      "Food exports"
+    ],
+    "answer": "Access and utilisation of nutritious food",
+    "explanation": "It gives children reliable access to nutritious meals.",
+    "topic": "fn-l6-2"
+  },
+  {
+    "id": "p100",
+    "question": "Reducing food loss and waste helps food security because it:",
+    "options": [
+      "Increases imports",
+      "Makes more of the food already produced available to eat",
+      "Raises prices",
+      "Reduces farming"
+    ],
+    "answer": "Makes more of the food already produced available to eat",
+    "explanation": "Avoiding loss is the cheapest way to increase available food.",
+    "topic": "fn-l6-2"
+  },
+  {
+    "id": "p101",
+    "question": "The first step in catering for a group is to:",
+    "options": [
+      "Buy the ingredients",
+      "Decide the number to be served, the setting, the menu and the facilities",
+      "Start cooking",
+      "Arrange the table"
+    ],
+    "answer": "Decide the number to be served, the setting, the menu and the facilities",
+    "explanation": "Planning precedes shopping and cooking.",
+    "topic": "fn-l6-3"
+  },
+  {
+    "id": "p102",
+    "question": "Quantities for a group are calculated from:",
+    "options": [
+      "Guesswork",
+      "Portion guides and standard recipes",
+      "The price of the food",
+      "The number of cooks"
+    ],
+    "answer": "Portion guides and standard recipes",
+    "explanation": "Portion guides give a reliable amount per person for each dish.",
+    "topic": "fn-l6-3"
+  },
+  {
+    "id": "p103",
+    "question": "A time plan for a group meal should show:",
+    "options": [
+      "Only the serving time",
+      "The order of tasks with the time each takes and the equipment needed",
+      "The menu only",
+      "The cost only"
+    ],
+    "answer": "The order of tasks with the time each takes and the equipment needed",
+    "explanation": "Sequencing prevents bottlenecks and keeps food hot.",
+    "topic": "fn-l6-3"
+  },
+  {
+    "id": "p104",
+    "question": "Evaluating an event helps most because it:",
+    "options": [
+      "Fills time",
+      "Identifies what to keep and what to change next time",
+      "Increases the cost",
+      "Satisfies the guests"
+    ],
+    "answer": "Identifies what to keep and what to change next time",
+    "explanation": "Recorded evaluation turns experience into improvement.",
+    "topic": "fn-l6-3"
+  }
+]
