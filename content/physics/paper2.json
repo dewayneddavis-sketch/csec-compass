@@ -1,0 +1,586 @@
+[
+  {
+    "id": "ph-p2-01",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "Data analysis: the resistance of a fixed resistor",
+    "topic": "electric-circuits",
+    "commandWords": [
+      "Draw",
+      "Determine",
+      "Calculate",
+      "State"
+    ],
+    "marks": 25,
+    "suggestedMinutes": 35,
+    "source": "A student sets up a circuit to investigate how the current through a fixed resistor varies with the potential difference across it. The ammeter, the voltmeter and the variable power supply are connected correctly. The results are shown in Table 1.\n\nTABLE 1\nPotential difference, V (V): 1.0   2.0   3.0   4.0   5.0   6.0\nCurrent, I (A):              0.19  0.41  0.58  0.82  0.99  1.21\n\nThe student plotted a graph of V against I on graph paper and drew the line of best fit through the origin.",
+    "prompt": "Answer ALL parts. Show all working clearly, use the graph where the question asks you to, and give the unit with every answer. Plot your graph on graph paper; the questions below are about the graph you have drawn.",
+    "planningHints": [
+      "Plot V on the y-axis and I on the x-axis so that the gradient is the resistance.",
+      "Choose scales that use at least half of each axis, and label every axis with both the quantity and its unit.",
+      "A best-fit line is drawn so that the points are evenly distributed above and below it; since the resistor obeys Ohm's law, the line must pass through the origin.",
+      "For the gradient, draw the largest triangle you can on the line you drew and mark the two points you read off."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Plot a graph of potential difference, V, on the y-axis against current, I, on the x-axis. Label each axis with the quantity and its unit, choose a suitable scale, plot the six points accurately and draw the line of best fit through the origin.",
+        "marks": 7,
+        "commandWords": [
+          "Draw"
+        ],
+        "modelAnswer": "Axes: current, I, in amperes on the x-axis; potential difference, V, in volts on the y-axis. Scale: for example 1 cm per 0.20 A on the x-axis and 1 cm per 1.0 V on the y-axis, so that the points occupy more than half of the graph paper. The six points (0.19, 1.0), (0.41, 2.0), (0.58, 3.0), (0.82, 4.0), (0.99, 5.0) and (1.21, 6.0) are plotted accurately and lie close to a straight line. The line of best fit is drawn as a single straight line from the origin, with the points distributed evenly above and below it.",
+        "markScheme": [
+          "L - label: 1 mark for both axes labelled with the correct quantity and the correct unit (current in amperes on the x-axis, potential difference in volts on the y-axis).",
+          "A - axes: 1 mark for the correct quantities on the correct axes (V on the y-axis and I on the x-axis).",
+          "S - scales: 1 mark for scales that are linear, clearly marked and use at least half of the paper in both directions.",
+          "P - plots: 3 marks for accurate plots - 6 or 5 points correct, 3 marks; 4 or 3 points correct, 2 marks; 2 or 1 point correct, 1 mark. Allow a tolerance of half a small square on each coordinate.",
+          "Best fit: 1 mark for a single straight line of best fit passing through the origin with the points evenly distributed about it.",
+          "Total 7 marks. XS (experimental skills) profile."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Determine the gradient of the line of best fit. Show clearly on the graph the two points you use, and give the unit of the gradient.",
+        "marks": 4,
+        "commandWords": [
+          "Determine"
+        ],
+        "modelAnswer": "Two points are read off the line of best fit, as far apart as possible: (I1, V1) = (0.20 A, 1.0 V) and (I2, V2) = (1.20 A, 6.0 V).\n\ngradient = (V2 - V1) / (I2 - I1) = (6.0 - 1.0) V / (1.20 - 0.20) A = 5.0 V/A = 5.0 ohm\n\nThe gradient of the graph is 5.0 ohm (the value of R).",
+        "markScheme": [
+          "1 mark for a large triangle drawn on the line of best fit, with the two points read off from the line and not from the table.",
+          "1 mark for the correct readings of both points, to the accuracy of the graph.",
+          "1 mark for the correct formula or substitution: gradient = (V2 - V1) / (I2 - I1).",
+          "1 mark for the answer in the range 4.7 - 5.3 V/A with the correct unit.",
+          "The unit of the gradient is the volt per ampere (V/A), which is the ohm.",
+          "Total 4 marks. XS profile; no marks are awarded for restating the table values."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "State what the gradient of the graph represents, and hence write down the resistance of the resistor used.",
+        "marks": 2,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "The gradient of a graph of V against I is V/I, which is the resistance of the resistor. The resistance is therefore 5 ohm.",
+        "markScheme": [
+          "1 mark for stating that the gradient represents the resistance of the resistor (V/I = R).",
+          "1 mark for the value of the resistance, 5.0 ohm, with the unit (accept the candidate's gradient from part (b) with the correct unit).",
+          "Total 2 marks. UK (use of knowledge) profile."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Use your graph to determine the potential difference across the resistor when the current through it is 0.75 A. Show your working.",
+        "marks": 5,
+        "commandWords": [
+          "Determine",
+          "Calculate"
+        ],
+        "modelAnswer": "From the graph, at I = 0.75 A the line of best fit gives V = 3.7 V.\n\nBy calculation: V = IR = 0.75 A x 5.0 ohm = 3.75 V, which agrees with the graph.\n\nThe potential difference is approximately 3.75 V.",
+        "markScheme": [
+          "1 mark for reading the correct value from the graph at I = 0.75 A (accept any value in the range 3.6 - 3.9 V, marked on the graph).",
+          "1 mark for stating the relationship V = IR (or R = V/I rearranged).",
+          "1 mark for the correct substitution: 0.75 x 5.0 (using the candidate's own resistance from part (b) is acceptable).",
+          "1 mark for the correct value, 3.75 V (accept 3.7 - 3.8 V).",
+          "1 mark for the correct unit, the volt (V).",
+          "Total 5 marks. UK and XS profiles."
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "The student repeats the experiment with a different resistor and finds that the gradient of the new graph is twice as large. State, with a reason, what this tells you about the second resistor.",
+        "marks": 4,
+        "commandWords": [
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "Since the gradient of the graph is the resistance, a gradient twice as large means that the second resistor has twice the resistance of the first: 2 x 5.0 ohm = 10.0 ohm. The second resistor needs twice the potential difference to drive the same current through it (or, for the same potential difference, only half the current flows).",
+        "markScheme": [
+          "1 mark for stating that the second resistor has a greater resistance.",
+          "1 mark for the reason that the gradient of the graph equals the resistance (V/I).",
+          "1 mark for the value of the second resistance, 10.0 ohm (twice the candidate's own value from part (b) is acceptable).",
+          "1 mark for the explanation in terms of the effect: a larger potential difference is needed to produce the same current (or half the current flows for the same potential difference).",
+          "Total 4 marks. UK profile."
+        ]
+      },
+      {
+        "label": "(f)",
+        "prompt": "State THREE precautions the student should take to make the results as accurate as possible.",
+        "marks": 3,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "1. Keep the current small and switch off between readings so that the resistor does not heat up and change its resistance.\n2. Take each reading more than once and average the results, to reduce random error.\n3. Read the ammeter and the voltmeter with the eye directly above the pointer, to avoid parallax error.\n4. Use the correct range of each meter and check that the ammeter is in series and the voltmeter in parallel with the resistor.\n5. Make sure all connections are clean and tight so that the contact resistance is small.",
+        "markScheme": [
+          "1 mark for each sensible precaution, to a maximum of 3 marks.",
+          "Accept: keep the current low or switch off between readings to prevent the resistor heating; repeat readings and average them; read the meters at eye level to avoid parallax; ensure the meters are connected correctly (ammeter in series, voltmeter in parallel); use a suitable range on each meter; ensure good electrical contacts; allow the resistor to cool between readings.",
+          "Do not accept vague answers such as 'be careful' or 'do it properly'.",
+          "Total 3 marks. XS profile."
+        ]
+      }
+    ],
+    "examinerTips": "Question 1 is always the data-analysis question and carries the most marks in Section A, so it deserves the most time. Marks are awarded for the graph itself (labels, axes, scales, plots, best-fit line) before any calculation, so never skip it. When a question says 'use your graph', read the value from the line of best fit and not from the table, and quote your answer to the same number of significant figures as the data."
+  },
+  {
+    "id": "ph-p2-02",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "Structured: the motion of a car on a straight road",
+    "topic": "motion-graphs",
+    "commandWords": [
+      "Calculate",
+      "Sketch"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 20,
+    "source": "A car waiting at a set of traffic lights moves off along a straight, level road. Its journey has three stages:\n\nStage 1: the car accelerates uniformly at 2.0 m/s2 for 6.0 s from rest.\nStage 2: the car then travels at the constant velocity it has reached for 10.0 s.\nStage 3: the car then decelerates uniformly and comes to rest in a further 5.0 s.\n\nFriction and air resistance are ignored in these calculations.",
+    "prompt": "Answer ALL parts. Show all working clearly, write the formula you use, and give the unit with every answer.",
+    "planningHints": [
+      "List the three quantities you know for each stage (u, v, a, t) before you start calculating.",
+      "A velocity-time graph shows acceleration as the gradient and distance as the area under the line.",
+      "For a uniformly accelerating body starting from rest, v = u + at with u = 0.",
+      "Average speed is the total distance divided by the total time, not the average of the separate speeds."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Calculate the maximum velocity reached by the car.",
+        "marks": 3,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "v = u + at, where u = 0, a = 2.0 m/s2 and t = 6.0 s.\nv = 0 + (2.0 x 6.0) = 12.0 m/s\n\nThe maximum velocity is 12.0 m/s.",
+        "markScheme": [
+          "1 mark for the correct formula, v = u + at (or a = (v - u)/t rearranged).",
+          "1 mark for the correct substitution: 0 + (2.0 x 6.0).",
+          "1 mark for the answer 12.0 m/s with the unit (accept 12.0 m s-1).",
+          "Total 3 marks. UK profile."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Sketch the velocity-time graph for the whole journey. Label both axes with the quantity and the unit, and mark clearly the three stages of the journey.",
+        "marks": 4,
+        "commandWords": [
+          "Sketch"
+        ],
+        "modelAnswer": "Axes: time, t, in seconds on the x-axis and velocity, v, in m/s on the y-axis. The graph has three straight sections: a line rising from the origin to 12 m/s at t = 6.0 s (constant acceleration, so the gradient is 2.0 m/s2); a horizontal line at 12 m/s from t = 6.0 s to t = 16.0 s (constant velocity, zero acceleration); and a line falling to zero at t = 21.0 s (uniform deceleration of 2.4 m/s2).",
+        "markScheme": [
+          "1 mark for both axes labelled correctly with the quantity and the unit (time in seconds, velocity in m/s).",
+          "1 mark for a straight line rising from the origin to a maximum velocity of 12 m/s at 6.0 s.",
+          "1 mark for a horizontal section at 12 m/s between 6.0 s and 16.0 s.",
+          "1 mark for a straight line falling from 12 m/s to zero between 16.0 s and 21.0 s.",
+          "The graph need not be drawn to scale, but the three stages and the values 6.0 s, 16.0 s, 21.0 s and 12 m/s must be identifiable.",
+          "Total 4 marks. UK profile."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Calculate the total distance travelled by the car.",
+        "marks": 4,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "The distance travelled is the area under the velocity-time graph.\n\nStage 1 (triangle): 0.5 x 6.0 s x 12.0 m/s = 36 m\nStage 2 (rectangle): 12.0 m/s x 10.0 s = 120 m\nStage 3 (triangle): 0.5 x 5.0 s x 12.0 m/s = 30 m\n\nTotal distance = 36 + 120 + 30 = 186 m",
+        "markScheme": [
+          "1 mark for the method: distance is the area under the velocity-time graph (accept the correct use of the equations of motion for each stage).",
+          "1 mark for the area of the first stage (or the distance in stage 1), 36 m.",
+          "1 mark for the area of the second stage, 120 m, and the third stage, 30 m.",
+          "1 mark for the total distance, 186 m, with the unit. Award the answer mark only if the value follows from the candidate's own working.",
+          "Total 4 marks. UK profile."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Calculate the average speed of the car for the whole journey.",
+        "marks": 4,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Total time = 6.0 + 10.0 + 5.0 = 21.0 s\n\naverage speed = total distance / total time\n= 186 m / 21.0 s = 8.86 m/s\n\nThe average speed is 8.9 m/s (8.857 m/s before rounding, quoted to two significant figures as the data suggests).",
+        "markScheme": [
+          "1 mark for the total time, 21.0 s.",
+          "1 mark for the correct formula: average speed = total distance / total time.",
+          "1 mark for the correct substitution of the candidate's own total distance and total time.",
+          "1 mark for the answer 8.9 m/s (accept 8.8 - 8.9 m/s, or 8.86 m/s to three significant figures) with the unit. Do not accept the average of the three separate speeds.",
+          "Total 4 marks. UK profile."
+        ]
+      }
+    ],
+    "examinerTips": "Section A structured questions are marked step by step, so write the formula, the substitution and the answer on separate lines. An answer with no working loses method marks in every part of the paper."
+  },
+  {
+    "id": "ph-p2-03",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "Structured: heating water in an electric kettle",
+    "topic": "temperature-heat",
+    "commandWords": [
+      "Name",
+      "Explain",
+      "Calculate"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 20,
+    "source": "A student uses an electric kettle rated at 1500 W to heat 0.50 kg of water. The water is at 20 degrees C and is heated to 100 degrees C. The specific heat capacity of water is 4200 J kg-1 degrees C-1.",
+    "prompt": "Answer ALL parts. Show all working clearly, write the formula you use, and give the unit with every answer.",
+    "planningHints": [
+      "Work out the temperature change first - it is a difference, not a temperature.",
+      "Use Q = mc(delta T) for the energy needed to raise the temperature of a substance.",
+      "Power is energy per second, so P = E/t; rearrange it for t when the energy is known.",
+      "When a question asks 'why is the real answer different?', think about where else the energy goes."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Name the three processes by which heat is transferred, and give ONE example of each.",
+        "marks": 3,
+        "commandWords": [
+          "Name",
+          "Identify"
+        ],
+        "modelAnswer": "1. Conduction - heat travelling along a metal spoon left in a hot drink (or along the metal base of the kettle).\n2. Convection - hot water rising and cooler water sinking as the kettle heats (or air circulating in a room heated by a radiator).\n3. Radiation - energy reaching the Earth from the Sun, or heat felt from the glowing element of a toaster, which needs no medium to travel.",
+        "markScheme": [
+          "1 mark for each correctly named process with a valid example (conduction, convection, radiation).",
+          "A correct name with a wrong or missing example scores 0 for that process; a correct example with the wrong name also scores 0, since the two must be linked.",
+          "Total 3 marks. KC (knowledge and comprehension) profile."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain, in terms of particles or electrons, why a metal rod conducts heat much better than a wooden rod.",
+        "marks": 2,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "A metal contains free (delocalised) electrons which move quickly through the metal and carry energy from the hot end to the cold end. Wood has no free electrons, so energy is passed on only by the slower vibration of its particles; wood is therefore a poor conductor (a good insulator).",
+        "markScheme": [
+          "1 mark for stating that metals contain free or delocalised electrons which carry energy quickly through the metal.",
+          "1 mark for explaining that wood has no free electrons, so energy is transferred only by the much slower vibration of its particles.",
+          "Total 2 marks. UK profile."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Calculate the heat energy needed to raise the temperature of the water from 20 degrees C to 100 degrees C.",
+        "marks": 4,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Temperature change, delta T = 100 - 20 = 80 degrees C\n\nQ = mc(delta T) = 0.5 x 4200 x 80\n= 168,000 J\n\nThe energy needed is 168,000 J, that is 1.68 x 10^5 J.",
+        "markScheme": [
+          "1 mark for the correct formula, Q = mc(delta T).",
+          "1 mark for the correct temperature change, 80 degrees C.",
+          "1 mark for the correct substitution: 0.5 x 4200 x 80.",
+          "1 mark for the answer 168,000 J (accept 1.68 x 10^5 J or 168 kJ) with the unit.",
+          "Total 4 marks. UK profile. A candidate who uses a temperature of 100 (instead of the change) can score no more than 2 of these 4 marks."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Calculate the minimum time the kettle would take to heat the water if no energy were lost to the surroundings.",
+        "marks": 3,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "P = E / t, so t = E / P = 168,000 J / 1500 W = 112 s\n\nThe minimum time is 112 s (about 1.9 minutes).",
+        "markScheme": [
+          "1 mark for the correct relationship, P = E/t, rearranged to t = E/P.",
+          "1 mark for the correct substitution using the energy from part (c): 168,000 / 1500.",
+          "1 mark for the answer 112 s with the unit (accept 1 minute 52 seconds).",
+          "Total 3 marks. UK profile. Follow through the candidate's own energy value from part (c)."
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "In practice the kettle takes longer than your answer to part (d). Give ONE reason for this and suggest ONE way in which the energy wasted could be reduced.",
+        "marks": 3,
+        "commandWords": [
+          "Suggest",
+          "Explain"
+        ],
+        "modelAnswer": "Reason: not all of the electrical energy reaches the water. Some is transferred to the kettle body, the element and the surrounding air by conduction, convection and radiation, and some is used to heat the kettle itself, so a greater total energy (and therefore a longer time) is needed.\n\nSuggestion: reduce the waste by lagging (insulating) the kettle, fitting a close-fitting lid, keeping the element fully covered by water, and heating only as much water as is needed.",
+        "markScheme": [
+          "1 mark for a valid reason (energy is lost to the surroundings by conduction, convection or radiation, or energy is used to heat the kettle and the element itself).",
+          "1 mark for an explanation linking the loss of energy to the longer time needed (or to the efficiency of the kettle being less than 100%).",
+          "1 mark for a valid way of reducing the loss, such as insulating or lagging the kettle, using a lid, heating only the required amount of water, or using a more efficient kettle.",
+          "Total 3 marks. UK profile."
+        ]
+      }
+    ],
+    "examinerTips": "Thermal calculations in Paper 02 almost always need the temperature CHANGE. Write delta T on its own line before you substitute. Keep the units consistent: mass in kilograms, specific heat capacity in J kg-1 degrees C-1, energy in joules, power in watts and time in seconds."
+  },
+  {
+    "id": "ph-p2-04",
+    "type": "write",
+    "paper": 2,
+    "section": "Section B",
+    "title": "Extended response: waves and the speed of sound",
+    "topic": "wave-properties",
+    "commandWords": [
+      "Define",
+      "Calculate",
+      "Distinguish",
+      "Describe"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 25,
+    "source": "A radio station in Kingston broadcasts at a frequency of 96.5 MHz. Radio waves travel through air at a speed of 3.0 x 10^8 m/s.\n\nA student stands a distance d from a high wall, claps her hands once and hears the echo 0.60 s later. The speed of sound in air is 330 m/s.",
+    "prompt": "Answer ALL parts. Write in continuous prose where an explanation is asked for, show all working in the calculations, and give the unit with every answer.",
+    "planningHints": [
+      "Definitions in this question should be precise: a definition that uses the word being defined scores no marks.",
+      "1 MHz = 1 x 10^6 Hz - convert the frequency to hertz before you substitute.",
+      "In the echo experiment the sound travels to the wall AND back, so the distance travelled is 2d.",
+      "When you describe an experiment, say what is measured, with what instrument, and what is done to make the result reliable."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Define the terms frequency, wavelength and amplitude of a wave.",
+        "marks": 3,
+        "commandWords": [
+          "Define"
+        ],
+        "modelAnswer": "Frequency: the number of complete waves (or vibrations) produced per second, measured in hertz (Hz).\nWavelength: the distance between two successive points in the same phase on a wave, for example the distance from one crest to the next, measured in metres.\nAmplitude: the maximum displacement of a point on the wave from its rest (undisturbed) position, measured in metres.",
+        "markScheme": [
+          "1 mark for each complete and accurate definition (frequency, wavelength, amplitude), to a maximum of 3 marks.",
+          "Frequency must include 'per second' or 'in one second'; wavelength must refer to the distance between corresponding points on successive waves (crest to crest, or trough to trough); amplitude must refer to the maximum displacement from the rest position.",
+          "A definition that repeats the word being defined, or that gives only a unit, scores 0 for that term.",
+          "Total 3 marks. KC profile."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the wavelength of the radio waves broadcast by the station.",
+        "marks": 3,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "f = 96.5 MHz = 9.65e+07 Hz\n\nv = f x lambda, so lambda = v / f\nlambda = 3.0e+08 m/s / 9.65e+07 Hz = 3.1088 m\n\nThe wavelength is 3.11 m (about 3.1 m).",
+        "markScheme": [
+          "1 mark for the correct relationship, v = f x lambda.",
+          "1 mark for converting the frequency to hertz, 9.65e+07 Hz, and substituting it with the speed of the waves, 3.0 x 10^8 m/s.",
+          "1 mark for the answer 3.11 m (accept 3.1 m) with the unit. Candidates who use 96.5 Hz instead of 96.5 MHz can score no more than 1 mark.",
+          "Total 3 marks. UK profile."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Distinguish between transverse and longitudinal waves, and give ONE example of EACH.",
+        "marks": 3,
+        "commandWords": [
+          "Distinguish"
+        ],
+        "modelAnswer": "In a transverse wave the particles of the medium vibrate at right angles (perpendicular) to the direction in which the wave travels - for example a water wave or a light wave. In a longitudinal wave the particles vibrate back and forth along (parallel to) the direction of travel, forming compressions and rarefactions - for example a sound wave or a wave travelling along a stretched spring.",
+        "markScheme": [
+          "1 mark for stating that in a transverse wave the vibration is perpendicular to the direction of travel.",
+          "1 mark for stating that in a longitudinal wave the vibration is parallel to the direction of travel (accept the mention of compressions and rarefactions).",
+          "1 mark for one correct example of each type (for example light or a water wave for transverse; sound or a spring wave for longitudinal).",
+          "Total 3 marks. KC profile."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Describe how the student could use her clap and the echo from the wall to determine the speed of sound in air, and then use the data given to calculate the distance d from the student to the wall.",
+        "marks": 6,
+        "commandWords": [
+          "Describe",
+          "Calculate"
+        ],
+        "modelAnswer": "Method. Measure the distance from the student to the wall with a long measuring tape. Start the stopwatch at the moment of the clap and stop it when the echo is heard, so that the time recorded is the time for the sound to travel to the wall and back. Repeat the clap and the timing several times and take an average, because the reaction time of the student makes a single reading unreliable; a partner can time the clap separately and the two results can be compared.\n\nCalculation. The sound travels a total distance of 2d in the time t, so\n2d = v x t = 330 m/s x 0.6 s = 198 m\nd = 198 m / 2 = 99 m\n\nThe distance to the wall is 99 m.",
+        "markScheme": [
+          "1 mark for measuring the distance to the wall with a tape or by pacing it out accurately.",
+          "1 mark for timing the interval between the clap and the echo with a stopwatch (or a timing app), starting at the clap and stopping at the echo.",
+          "1 mark for repeating the measurement and averaging the times (or comparing the results of two timers) to reduce the effect of reaction time.",
+          "1 mark for recognising that the sound travels to the wall and back, so the distance travelled is 2d.",
+          "1 mark for the correct substitution: 2d = 330 x 0.6 or d = (330 x 0.6) / 2.",
+          "1 mark for the answer 99 m with the unit.",
+          "Total 6 marks. XS and UK profiles. Marks for the method do not depend on the calculation, and vice versa."
+        ]
+      }
+    ],
+    "examinerTips": "In Section B extended-response questions, the marks are for physics, not for length. Answer each part in the order it is asked, define every term in a definition question, and always show the formula, the substitution and the answer with its unit in a calculation."
+  },
+  {
+    "id": "ph-p2-05",
+    "type": "write",
+    "paper": 2,
+    "section": "Section B",
+    "title": "Extended response: radioactivity, half-life and safety",
+    "topic": "radioactivity",
+    "commandWords": [
+      "Define",
+      "Calculate",
+      "Complete",
+      "Discuss"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 25,
+    "source": "A sample of a radioactive isotope has a half-life of 6.0 days. Its activity when it is first measured is 800 counts per minute.\n\nA second sample contains radium-226, which decays by emitting an alpha particle and forms radon.",
+    "prompt": "Answer ALL parts. Show all working in the calculations and give the unit with every answer. Write in continuous prose where an explanation is asked for.",
+    "planningHints": [
+      "A half-life question is a halving question: find how many half-lives have passed first.",
+      "In a nuclear equation the mass numbers (top) and the atomic numbers (bottom) must balance on both sides.",
+      "For the safety part, think in terms of time, distance, shielding and monitoring."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Define the half-life of a radioactive isotope.",
+        "marks": 2,
+        "commandWords": [
+          "Define"
+        ],
+        "modelAnswer": "The half-life of a radioactive isotope is the time taken for half of the nuclei in a given sample to decay, which is also the time taken for the activity (count rate) of the sample to fall to half of its original value.",
+        "markScheme": [
+          "1 mark for stating that half-life is the time taken for half of the nuclei (or atoms) in a sample to decay.",
+          "1 mark for adding that it is also the time taken for the activity or count rate of the sample to halve.",
+          "Total 2 marks. KC profile. A definition that says only 'the time for half of something to disappear' without saying what, scores 1 mark."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the activity of the sample after 18 days.",
+        "marks": 3,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Number of half-lives = 18 days / 6 days = 3\n\n800 counts/min -> 400 -> 200 -> 100 counts/min\n\nAfter 18 days the activity is 100 counts per minute.",
+        "markScheme": [
+          "1 mark for the correct number of half-lives, 3.",
+          "1 mark for the correct method: halving the activity three times (or dividing by 2^3 = 8).",
+          "1 mark for the answer 100 counts per minute with the unit.",
+          "Total 3 marks. UK profile."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Complete the nuclear equation for the decay of radium-226, and state ONE property of alpha radiation.",
+        "marks": 4,
+        "commandWords": [
+          "Complete",
+          "State"
+        ],
+        "modelAnswer": "226/88 Ra  ->  222/86 Rn  +  4/2 He  (an alpha particle)\n\nIn words: radium-226 decays into radon-222 with the emission of an alpha particle, which is a helium nucleus of mass number 4 and atomic number 2.\n\nProperty of alpha radiation: it is strongly ionising but has very little penetrating power - it is stopped by a sheet of paper or by the outer layer of the skin, and travels only a few centimetres in air.",
+        "markScheme": [
+          "1 mark for the correct mass number of radon, 222.",
+          "1 mark for the correct atomic number of radon, 86, with the symbol Rn.",
+          "1 mark for the alpha particle written as 4/2 He (or 4/2 alpha), with the correct mass number 4 and atomic number 2.",
+          "1 mark for a correct property of alpha radiation: strongly ionising; weakly penetrating (stopped by paper or skin); short range in air (a few centimetres); deflected by electric and magnetic fields; charge +2; mass 4.",
+          "Total 4 marks. KC and UK profiles. The mass numbers of both sides must balance (226 = 222 + 4) and the atomic numbers must balance (88 = 86 + 2) for the first three marks."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Describe TWO uses of radioactivity and explain the safety precautions that must be taken when radioactive sources are used in a laboratory or a hospital.",
+        "marks": 6,
+        "commandWords": [
+          "Describe",
+          "Discuss"
+        ],
+        "modelAnswer": "Uses.\n1. In medicine, a weak source of gamma radiation (a tracer) is swallowed or injected so that its path through the body can be followed with a detector, which allows a doctor to find a blockage or a tumour. Strong gamma beams are also used in radiotherapy to destroy cancer cells.\n2. In industry, radiation is used to check the thickness of paper or metal as it is produced, or to look for cracks in welds, because the amount of radiation passing through the material depends on its thickness. Gamma radiation is also used to sterilise medical equipment.\n\nSafety precautions.\n1. Keep the source in a thick lead-lined container when it is not in use, and handle it only with long tongs, so that the body is never close to it.\n2. Keep as far away from the source as possible and spend as little time near it as possible, since the dose received increases with time and falls rapidly with distance.\n3. Never point a source towards anyone and keep it away from the eyes; place lead or concrete shielding between the source and people where possible.\n4. Wear a film badge or dosemeter so that the radiation dose each worker receives is monitored, and dispose of radioactive waste through the approved channels.",
+        "markScheme": [
+          "Uses: 1 mark for each of two uses correctly described (maximum 2 marks). Accept medical tracers and diagnosis; radiotherapy treatment of cancer; sterilising equipment and food; thickness gauges; checking welds and cracks; smoke detectors; carbon dating. A use with no explanation scores 0.",
+          "Safety: 1 mark for each valid precaution that is explained, to a maximum of 4 marks. Accept: storing the source in a lead-lined container; handling with long tongs or forceps; keeping the distance as large as possible and the exposure time as short as possible; shielding with lead or concrete; wearing a film badge or dosemeter; never pointing the source at anyone; using the smallest activity that will do the job; disposing of waste correctly and never eating or drinking near a source.",
+          "Total 6 marks. UK and XS profiles. Do not credit answers that describe a danger without a precaution."
+        ]
+      }
+    ],
+    "examinerTips": "In half-life calculations, show the halving sequence - that way you can still score the method marks if your final arithmetic slips. In nuclear equations, always check the top line and the bottom line separately before you write your answer."
+  },
+  {
+    "id": "ph-p2-06",
+    "type": "write",
+    "paper": 2,
+    "section": "Section B",
+    "title": "Extended response: refraction and total internal reflection",
+    "topic": "light-refraction",
+    "commandWords": [
+      "State",
+      "Calculate",
+      "Explain"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 25,
+    "source": "A ray of light travelling in air strikes the flat surface of a glass block at an angle of incidence of 40 degrees. The refractive index of the glass is 1.50.\n\nThe same glass is then used in a demonstration of total internal reflection, and in an optical fibre.",
+    "prompt": "Answer ALL parts. Write in continuous prose where an explanation is asked for, show all working in the calculations, and give the unit with every answer.",
+    "planningHints": [
+      "Always measure the angles of incidence and refraction from the NORMAL, not from the surface.",
+      "Snell's law is sin i / sin r = n for light passing from air into glass.",
+      "The critical angle is the angle of incidence in the denser medium for which the angle of refraction is 90 degrees.",
+      "In an explanation of total internal reflection, say what happens to the light, not just that it is 'reflected'."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "State the TWO laws of refraction of light.",
+        "marks": 2,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "1. The incident ray, the refracted ray and the normal at the point of incidence all lie in the same plane.\n2. For a given pair of media, the ratio of the sine of the angle of incidence to the sine of the angle of refraction is a constant (Snell's law): sin i / sin r = n.",
+        "markScheme": [
+          "1 mark for stating that the incident ray, the refracted ray and the normal lie in the same plane.",
+          "1 mark for Snell's law: for a given pair of media, sin i / sin r is a constant (equal to the refractive index).",
+          "Total 2 marks. KC profile."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the angle of refraction of the ray inside the glass.",
+        "marks": 4,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "sin i / sin r = n, so sin r = sin i / n\n\nsin r = sin 40 degrees / 1.50 = 0.6428 / 1.50 = 0.4285\n\nr = sin-1 (0.4285) = 25.4 degrees\n\nThe angle of refraction is 25.4 degrees (measured from the normal).",
+        "markScheme": [
+          "1 mark for the correct relationship: sin i / sin r = n, or n = sin i / sin r.",
+          "1 mark for the correct substitution: sin r = sin 40 degrees / 1.50.",
+          "1 mark for the correct value of sin r, 0.4285 (accept 0.429).",
+          "1 mark for the answer 25.4 degrees (accept 25.4 - 25.5 degrees) with the correct unit or with 'degrees' stated.",
+          "Total 4 marks. UK profile. An answer that gives the angle from the surface of the glass (64.6 degrees) scores no marks for the final value."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Explain what is meant by total internal reflection, and calculate the critical angle of the air-glass boundary.",
+        "marks": 5,
+        "commandWords": [
+          "Explain",
+          "Calculate"
+        ],
+        "modelAnswer": "Explanation. Total internal reflection occurs when light travelling in a denser medium (the glass) meets the boundary with a less dense medium (the air). If the angle of incidence in the glass is greater than the critical angle of the boundary, none of the light is refracted out of the glass: all of it is reflected back into the glass. No light escapes, so the reflection is total.\n\nCalculation. At the critical angle c, the angle of refraction is 90 degrees, so sin c = 1 / n.\n\nsin c = 1 / 1.50 = 0.6667\nc = sin-1 (0.6667) = 41.8 degrees\n\nThe critical angle of the air-glass boundary is 41.8 degrees.",
+        "markScheme": [
+          "1 mark for stating that the light must be travelling in the denser medium (glass) and meeting the boundary with a less dense medium (air).",
+          "1 mark for stating that the angle of incidence must be greater than the critical angle.",
+          "1 mark for stating that (at and beyond that angle) all the light is reflected back into the glass and none is refracted out of it.",
+          "1 mark for using sin c = 1 / n (or 1 / sin c = n) with the correct substitution, 1 / 1.50.",
+          "1 mark for the answer 41.8 degrees (accept 41.8 - 41.9 degrees).",
+          "Total 5 marks. UK profile. Maximum 2 of the 3 explanation marks if the candidate writes only 'the light is reflected inside the glass' with no mention of the denser medium or of the critical angle."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Explain, using total internal reflection, how an optical fibre is used to carry images from inside the human body or to carry telephone signals over long distances.",
+        "marks": 4,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "An optical fibre is a very thin thread of glass (the core) surrounded by a layer of glass of slightly lower refractive index (the cladding). Light entering the core at an angle greater than the critical angle of the core-cladding boundary is totally internally reflected, and is reflected again and again as it travels along the fibre. Almost none of the light is absorbed or lost through the sides, so the signal can travel a great distance with very little loss of energy. In an endoscope, a bundle of fibres carries light into the body and another bundle carries the image back out, which allows a doctor to see inside a patient without surgery.",
+        "markScheme": [
+          "1 mark for stating that total internal reflection takes place at the boundary between the core and the cladding, where the cladding has the lower refractive index.",
+          "1 mark for stating that the light must strike that boundary at an angle greater than the critical angle.",
+          "1 mark for explaining that the light is reflected repeatedly along the fibre and stays inside the core, so very little energy is lost and the signal can travel a long distance (or the image can be carried).",
+          "1 mark for linking the fibre to the application: a bundle of fibres in an endoscope carries light in and an image out so that a doctor can see inside the body; or the low loss makes optical fibres better than copper cables for telephone and Internet signals.",
+          "Total 4 marks. UK profile."
+        ]
+      }
+    ],
+    "examinerTips": "Refraction answers are marked on the angles measured from the normal - a correct calculation with the angle measured from the surface of the block still loses the answer mark. In 'explain' parts of Section B, the examiner wants the cause and the effect: light strikes the boundary at more than the critical angle, so all of it is reflected back into the denser medium."
+  }
+]
