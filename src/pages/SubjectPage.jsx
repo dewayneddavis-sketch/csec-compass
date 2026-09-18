@@ -9,6 +9,7 @@ import ExperimentSandbox from "../components/ExperimentSandbox";
 import ExtraPractice from "../components/ExtraPractice";
 import MockExam from "../components/MockExam";
 import SBASection from "../components/SBASection";
+import Paper2Section from "../components/Paper2Section";
 import ProgressTab from "../components/ProgressTab";
 import "./SubjectPage.css";
 
@@ -23,6 +24,9 @@ const TABS = [
   { id: "quiz", label: "Knowledge Check", color: "#b45309", tint: "#fffbeb" },         // amber
   { id: "practice", label: "Extra Practice", color: "#6d28d9", tint: "#f5f3ff" },      // purple
   { id: "mock", label: "Mock Exam", color: "#b91c1c", tint: "#fef2f2" },               // red
+  // Paper 2 only appears for subjects that actually ship paper2.json (Social
+  // Studies and English B today) — see the availability probe in load().
+  { id: "paper2", label: "Paper 2", color: "#9d174d", tint: "#fdf2f8" },              // pink
   { id: "progress", label: "Progress", color: "#0e7490", tint: "#ecfeff" },            // cyan
   { id: "sba", label: "CSEC SBA", color: "#0f766e", tint: "#f0fdfa" },                 // teal
 ];
@@ -38,6 +42,7 @@ export default function SubjectPage() {
   const [completedLessons, setCompletedLessons] = useState([]);
   const [activeTab, setActiveTab] = useState("lessons");
   const [quizCompleted, setQuizCompleted] = useState(false);
+  const [hasPaper2, setHasPaper2] = useState(false);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -49,6 +54,19 @@ export default function SubjectPage() {
       setModules(normalizeModules(mods));
       const quiz = await getSubjectQuiz(subjectId);
       if (quiz) setQuizQuestions(quiz);
+      // The Paper 2 tab is only offered when the subject actually ships
+      // paper2.json — otherwise the tab would lead to an empty panel.
+      let paper2 = false;
+      try {
+        const res = await fetch(`/content/${subjectId}/paper2.json`, { method: "GET" });
+        if (res.ok) {
+          const data = await res.json();
+          paper2 = Array.isArray(data) && data.length > 0;
+        }
+      } catch {
+        paper2 = false;
+      }
+      setHasPaper2(paper2);
       setLoading(false);
     }
     load();
@@ -122,7 +140,7 @@ export default function SubjectPage() {
       )}
 
       <div className="s-tabs">
-        {TABS.map((tab) => (
+        {TABS.filter((tab) => tab.id !== "paper2" || hasPaper2).map((tab) => (
           <button
             key={tab.id}
             className={"s-tab " + (activeTab === tab.id ? "active" : "")}
@@ -190,6 +208,9 @@ export default function SubjectPage() {
         ))}
         {activeTab === "mock" && (paid ? <MockExam subjectId={subjectId} /> : (
           <div className="s-upgrade-banner"><p><strong>🔒 Mock Exam is locked.</strong> <Link to={"/pricing?subject=" + subjectId}>Unlock full access</Link> to sit the timed mock.</p></div>
+        ))}
+        {activeTab === "paper2" && (paid ? <Paper2Section subjectId={subjectId} /> : (
+          <div className="s-upgrade-banner"><p><strong>🔒 Paper 2 is locked.</strong> <Link to={"/pricing?subject=" + subjectId}>Unlock full access</Link> to practise the typed-answer Paper 2 questions.</p></div>
         ))}
         {activeTab === "progress" && (paid ? <ProgressTab subjectId={subjectId} /> : (
           <div className="s-upgrade-banner"><p><strong>🔒 Progress tracking is locked.</strong> <Link to={"/pricing?subject=" + subjectId}>Unlock full access</Link> to see your weak topics and pass-rate trend.</p></div>
