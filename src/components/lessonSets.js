@@ -1151,5 +1151,235 @@ export const lessonSets = {
     ],
     },
   },
+  // ------------------------------------------- CLOTHING, TEXTILE AND FASHION
+  "clothing-textile-and-fashion": {
+    // Natural Fibres — match each fibre to the description that fits it.
+    "ctf-l1-1": {
+      title: "Natural Fibres and their Properties",
+      subtitle: "Drag each fibre to the description that matches it.",
+      kind: "match",
+      pairs: [
+        { id: "f1", target: "From the seed boll of a plant; absorbent, cool and strong when wet", label: "Cotton" },
+        { id: "f2", target: "From the stalk of a plant; crisp, cool and creases easily", label: "Linen" },
+        { id: "f3", target: "From the cocoon of a moth larva; smooth, lustrous and expensive", label: "Silk" },
+        { id: "f4", target: "From the fleece of a sheep; warm, resilient and shrinks if washed badly", label: "Wool" },
+        { id: "f5", target: "From the leaves of a plant; hard-wearing, used for rope and sacking", label: "Manila hemp" },
+      ],
+    },
+    // Man-made fibres and fabric construction — match term to description.
+    "ctf-l1-2": {
+      title: "Man-made Fibres and Fabric Construction",
+      subtitle: "Drag each term to the description that matches it.",
+      kind: "match",
+      pairs: [
+        { id: "m1", target: "A synthetic fibre made from petroleum; strong, quick-drying, used for sportswear", label: "Polyester" },
+        { id: "m2", target: "A regenerated fibre made from wood pulp; soft, absorbent and drapes well", label: "Viscose (rayon)" },
+        { id: "m3", target: "A synthetic fibre with high stretch and recovery; used in swimwear", label: "Spandex (elastane)" },
+        { id: "m4", target: "Made by interlacing warp and weft threads on a loom; firm and does not stretch", label: "Woven fabric" },
+        { id: "m5", target: "Made from interlocking loops of yarn; stretches and does not fray", label: "Knitted fabric" },
+        { id: "m6", target: "Made by bonding fibres with heat or adhesive instead of weaving", label: "Non-woven fabric" },
+      ],
+    },
+    // Care labels and laundering — match the care symbol to what it means.
+    "ctf-l1-3": {
+      title: "Reading a Care Label",
+      subtitle: "Drag each instruction to the care symbol it belongs to.",
+      kind: "match",
+      pairs: [
+        { id: "c1", target: "A washtub with the number 40 written inside it", label: "Machine wash at 40 °C" },
+        { id: "c2", target: "A triangle with a cross through it", label: "Do not bleach" },
+        { id: "c3", target: "A square with a circle inside it and one dot", label: "Tumble dry on low heat" },
+        { id: "c4", target: "An iron containing one dot", label: "Iron on a cool setting" },
+        { id: "c5", target: "A circle with a cross through it", label: "Do not dry clean" },
+      ],
+    },
+    // Tools and the sewing machine — match each tool or part to its job.
+    "ctf-l2-1": {
+      title: "Tools, Equipment and the Sewing Machine",
+      subtitle: "Drag each tool or machine part to the job it does.",
+      kind: "match",
+      pairs: [
+        { id: "t1", target: "Used to take body measurements accurately", label: "Tape measure" },
+        { id: "t2", target: "Used to cut fabric and can be re-sharpened by a professional", label: "Dressmaker's shears" },
+        { id: "t3", target: "Used to unpick a line of stitching without cutting the fabric", label: "Seam ripper" },
+        { id: "t4", target: "Holds the fabric layers together temporarily before stitching", label: "Pins" },
+        { id: "t5", target: "Carries the thread down through the fabric to form the stitch", label: "Machine needle" },
+        { id: "t6", target: "Sets how long each machine stitch is", label: "Stitch length regulator" },
+      ],
+    },
+    // Hand and machine stitches — sort each stitch by how it is made.
+    "ctf-l2-2": {
+      title: "Hand and Machine Stitches",
+      subtitle: "Sort each stitch into Hand stitch or Machine stitch.",
+      kind: "sort",
+      categories: [
+        { id: "hand", label: "Hand stitch" },
+        { id: "mach", label: "Machine stitch" },
+      ],
+      items: [
+        { id: "s1", label: "Running stitch", category: "hand" },
+        { id: "s2", label: "Backstitch", category: "hand" },
+        { id: "s3", label: "Blanket stitch", category: "hand" },
+        { id: "s4", label: "Chain stitch used as embroidery", category: "hand" },
+        { id: "s5", label: "Straight stitch", category: "mach" },
+        { id: "s6", label: "Zigzag stitch", category: "mach" },
+        { id: "s7", label: "Overlocking to neaten a raw edge", category: "mach" },
+        { id: "s8", label: "Stay-stitching a curved neckline", category: "mach" },
+      ],
+    },
+    // Taking measurements — match each body measurement to its description.
+    "ctf-l2-3": {
+      title: "Taking Body Measurements",
+      subtitle: "Drag each measurement name to the description of how it is taken.",
+      kind: "match",
+      pairs: [
+        { id: "b1", target: "Taken around the fullest part of the chest with the tape level all round", label: "Bust or chest" },
+        { id: "b2", target: "Taken around the narrowest part of the torso, without pulling tight", label: "Waist" },
+        { id: "b3", target: "Taken around the fullest part of the seat with the feet together", label: "Hip" },
+        { id: "b4", target: "Taken from the nape of the neck down to the natural waistline", label: "Centre back length" },
+        { id: "b5", target: "Taken from the shoulder tip to the wrist with the arm slightly bent", label: "Sleeve length" },
+        { id: "b6", target: "Taken from the waist down to the hem level you want", label: "Skirt length" },
+      ],
+    },
+    // Elements and principles of design — sort each into the right group.
+    "ctf-l3-1": {
+      title: "Elements and Principles of Design",
+      subtitle: "Sort each term into Element of design or Principle of design.",
+      kind: "sort",
+      categories: [
+        { id: "el", label: "Element" },
+        { id: "pr", label: "Principle" },
+      ],
+      items: [
+        { id: "e1", label: "Line", category: "el" },
+        { id: "e2", label: "Shape", category: "el" },
+        { id: "e3", label: "Colour", category: "el" },
+        { id: "e4", label: "Texture", category: "el" },
+        { id: "p1", label: "Balance", category: "pr" },
+        { id: "p2", label: "Rhythm", category: "pr" },
+        { id: "p3", label: "Proportion", category: "pr" },
+        { id: "p4", label: "Emphasis", category: "pr" },
+      ],
+    },
+    // Constructing a garment — put the order of work in sequence.
+    "ctf-l3-2": {
+      title: "Constructing a Garment in Order",
+      subtitle: "Arrange the stages of making up a garment in the correct order.",
+      kind: "order",
+      items: [
+        { id: "o1", label: "Take body measurements and choose the right pattern size", order: 1 },
+        { id: "o2", label: "Prepare and cut out the paper pattern pieces", order: 2 },
+        { id: "o3", label: "Lay, pin and cut out the fabric, following the grain line", order: 3 },
+        { id: "o4", label: "Transfer all pattern markings — darts, notches and balance marks", order: 4 },
+        { id: "o5", label: "Tack the pieces together and check the fit", order: 5 },
+        { id: "o6", label: "Machine stitch the seams and press each one as you go", order: 6 },
+        { id: "o7", label: "Insert the fastening — zip or buttonholes", order: 7 },
+        { id: "o8", label: "Attach facings or waistband and neaten the raw edges", order: 8 },
+        { id: "o9", label: "Work the hem and give the garment a final press", order: 9 },
+      ],
+    },
+    // Decorative techniques — match each technique to its description.
+    "ctf-l3-3": {
+      title: "Decorative Techniques and Embellishment",
+      subtitle: "Drag each technique to the description that matches it.",
+      kind: "match",
+      pairs: [
+        { id: "d1", target: "Shapes cut from fabric and stitched onto a background", label: "Appliqué" },
+        { id: "d2", target: "Decorative stitching worked by hand or machine to form a pattern", label: "Embroidery" },
+        { id: "d3", target: "Rows of gathered stitches held in place by decorative stitching, giving stretch", label: "Smocking" },
+        { id: "d4", target: "Hot wax is applied to cloth before dyeing so the dye is resisted", label: "Batik" },
+        { id: "d5", target: "Cloth is tied or bound tightly so dye cannot reach some areas", label: "Tie-dye" },
+        { id: "d6", target: "Beads, sequins or shells sewn on as surface decoration", label: "Beadwork" },
+      ],
+    },
+    // Consumer skills — match each document or term to its meaning.
+    "ctf-l4-1": {
+      title: "Smart Clothing Consumer",
+      subtitle: "Drag each term to the meaning that matches it.",
+      kind: "match",
+      pairs: [
+        { id: "k1", target: "Proof of where and when you bought an item, needed for a complaint", label: "Receipt" },
+        { id: "k2", target: "The maker's promise to repair or replace a faulty item within a set time", label: "Guarantee" },
+        { id: "k3", target: "States the fibre content, washing instructions and country of origin", label: "Care and content label" },
+        { id: "k4", target: "Judging a garment by how much wear you will get for the price paid", label: "Value for money" },
+        { id: "k5", target: "Buying quickly without checking fit, quality or the returns policy", label: "Impulse buying" },
+        { id: "k6", target: "The law that protects you when goods are faulty or not as described", label: "Consumer protection" },
+      ],
+    },
+    // Textiles in the home — match each item to the fabric quality it needs.
+    "ctf-l4-2": {
+      title: "Textiles in the Home",
+      subtitle: "Drag each item to the fabric quality it needs.",
+      kind: "match",
+      pairs: [
+        { id: "h1", target: "Hangs at the window; needs a fabric that resists fading and can be lined", label: "Curtains" },
+        { id: "h2", target: "Takes the hardest wear of all; needs a strong, closely woven fabric", label: "Upholstery" },
+        { id: "h3", target: "Next to the skin every night; needs a soft, absorbent fabric that washes well", label: "Bed linen" },
+        { id: "h4", target: "Used for drying dishes; needs a fabric that absorbs water and dries quickly", label: "Tea towels" },
+        { id: "h5", target: "Covers for a seat; needs a zip or flap so it can be removed and laundered", label: "Cushions" },
+        { id: "h6", target: "Protects the tabletop and decorates the room for meals", label: "Table linen" },
+      ],
+    },
+    // The fashion industry — match each job to its duty.
+    "ctf-l4-3": {
+      title: "Jobs in the Fashion Industry",
+      subtitle: "Drag each job title to the work it involves.",
+      kind: "match",
+      pairs: [
+        { id: "j1", target: "Sketches designs and selects the colours, fabrics and trims for a range", label: "Fashion designer" },
+        { id: "j2", target: "Turns a design into pattern pieces in the full range of sizes", label: "Pattern cutter" },
+        { id: "j3", target: "Operates industrial machines to join the parts of a garment", label: "Machinist" },
+        { id: "j4", target: "Chooses and buys stock for a store and negotiates prices with suppliers", label: "Buyer" },
+        { id: "j5", target: "Plans quantities, delivery dates and promotes the range to shops", label: "Merchandiser" },
+        { id: "j6", target: "Sells the finished garment face to face and advises the customer", label: "Retail sales assistant" },
+      ],
+    },
+    // Workroom safety — sort each habit by whether it is safe.
+    "ctf-l5-1": {
+      title: "Safety in the Workroom",
+      subtitle: "Sort each habit into Safe practice or Unsafe practice.",
+      kind: "sort",
+      categories: [
+        { id: "ok", label: "Safe practice" },
+        { id: "bad", label: "Unsafe practice" },
+      ],
+      items: [
+        { id: "w1", label: "Storing pins in a pin cushion", category: "ok" },
+        { id: "w2", label: "Switching the iron off and unplugging it after use", category: "ok" },
+        { id: "w3", label: "Reporting a bent or broken machine needle at once", category: "ok" },
+        { id: "w4", label: "Tying back long hair before using a machine", category: "ok" },
+        { id: "w5", label: "Holding pins in your mouth", category: "bad" },
+        { id: "w6", label: "Leaving a hot iron face down on the fabric", category: "bad" },
+        { id: "w7", label: "Running and pushing in the workroom", category: "bad" },
+        { id: "w8", label: "Using a machine with the needle guard removed", category: "bad" },
+      ],
+    },
+    // Sustainable textiles — order the waste hierarchy.
+    "ctf-l5-2": {
+      title: "The Textile Waste Hierarchy",
+      subtitle: "Arrange the choices from best for the planet down to the last resort.",
+      kind: "order",
+      items: [
+        { id: "g1", label: "Reduce — buy less, choose good quality that will last", order: 1 },
+        { id: "g2", label: "Reuse — pass garments on, swap or restyle them", order: 2 },
+        { id: "g3", label: "Repair — mend, darn or alter a garment instead of replacing it", order: 3 },
+        { id: "g4", label: "Recycle — cut down into patchwork or send to textile recycling", order: 4 },
+        { id: "g5", label: "Dispose — throw away in the rubbish bin, the very last resort", order: 5 },
+      ],
+    },
+    // Caribbean textiles and craft — match each tradition to its description.
+    "ctf-l5-3": {
+      title: "Caribbean Textiles and Craft Traditions",
+      subtitle: "Drag each tradition to the description that matches it.",
+      kind: "match",
+      pairs: [
+        { id: "n1", target: "Bright checked cloth used for head ties and national dress", label: "Madras" },
+        { id: "n2", target: "Wax-resist dyed cloth with fine crackle lines, worked across the region", label: "Batik" },
+        { id: "n3", target: "Looping yarn with a hook to make doilies, bags and garments", label: "Crochet" },
+        { id: "n4", target: "Plaiting dried straw or palm to make hats, mats and baskets", label: "Straw plaiting" },
+        { id: "n5", target: "Cloth tied and bound before dyeing, used for T-shirts and home textiles", label: "Tie-dye" },
+      ],
+    },
+  },
 };
 
