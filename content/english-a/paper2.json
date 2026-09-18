@@ -1,0 +1,304 @@
+[
+  {
+    "id": "ea-p2-01",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "Summary: the sargassum invasion",
+    "topic": "identifying-main-points",
+    "commandWords": [
+      "List",
+      "Identify"
+    ],
+    "marks": 25,
+    "suggestedMinutes": 40,
+    "source": "Sargassum: the sea's unwelcome gift\n\nFor most of the year the Caribbean sea looks like a postcard. Since 2011, however, thousands of kilometres of coastline have been invaded by sargassum, a free-floating brown seaweed that normally drifts far out in the Atlantic Ocean. The mats arrive in such volume that some beaches stay brown for weeks and the air smells of rotting eggs.\n\nScientists trace the blooms to three forces working together. Fertiliser washed from farms in South America and Africa feeds the weed, warmer seas speed its growth, and dust blown from the Sahara adds iron. As the planet warms, researchers expect the invasions to become larger rather than smaller.\n\nAway from land, sargassum is not a villain. The floating mats are nurseries: young turtles, flying fish, eels and dozens of other species shelter in them, and the weed absorbs carbon as it grows.\n\nThe damage begins when the weed reaches the shore. A beach covered in sargassum cannot be sold to visitors, so hotels lose bookings, and fishing boats cannot leave their moorings because nets come up full of weed. Worse, as the sargassum decays it releases hydrogen sulphide, the gas responsible for the rotting-egg smell. The gas can cause headaches, eye irritation and nausea, and it has forced schools to keep their windows closed and clinics to treat residents who live near the shore.\n\nCleaning up is expensive. Countries spend millions of dollars each season on barriers, barges and tractors, and most of the weed is simply buried or dumped. Researchers are testing better endings for it: compost and fertiliser, animal feed, bioplastics and even fuel. Because sargassum collects heavy metals from the sea, however, it must be treated before it can be used safely. Forecasting is improving too, and satellite maps now warn governments several weeks in advance.\n\nThe lesson is a regional one. One island's bloom becomes another island's landing, and no country can predict or clear the weed alone. Shared research, shared warning systems and shared clean-up plans are the only way to keep the beaches usable.",
+    "prompt": "Read the article above carefully. List FIVE main points discussed, then write a summary of the article in NOT MORE THAN 120 words. If this limit is exceeded, only the first 120 words of your answer will be read and assessed. Use your own words as far as possible, and write your summary in continuous prose. (25 marks)",
+    "planningHints": [
+      "Read the whole article once for meaning before you write anything.",
+      "Underline the main ideas, not the examples. 'Countries spend millions on clean-up' is a main point; 'tractors and barges' is a detail.",
+      "Write the five points as very short notes, then join them into continuous prose in your own words - a summary that copies whole sentences scores badly on expression.",
+      "Count your words. Anything after word 120 will not be marked."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "List the FIVE main points discussed in the article. (Your summary must be based on these points.)",
+        "marks": 5,
+        "commandWords": [
+          "List",
+          "Identify"
+        ],
+        "modelAnswer": "1. Since 2011 huge quantities of sargassum seaweed have washed onto Caribbean beaches.\n2. The blooms are caused by fertiliser run-off, warmer seas and Saharan dust, and scientists expect them to grow.\n3. At sea the weed is valuable - it shelters young fish and turtles and absorbs carbon.\n4. On shore it damages tourism and fishing, and as it rots it releases a gas that harms people's health.\n5. Clean-up costs countries millions, and only shared research, forecasting and clean-up plans can solve a regional problem.",
+        "markScheme": [
+          "1 mark for each main point correctly identified, to a maximum of 5 marks.",
+          "The point must be central to the article, not an example or an illustration of it (for example, 'the weed collects heavy metals' is a detail, not a main point).",
+          "Wording need not match the article, but the idea must be accurate and complete.",
+          "Accept any five of the six main ideas in the model answer."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Write your summary in continuous prose in NOT MORE THAN 120 words, using your own words as far as possible.",
+        "marks": 20,
+        "commandWords": [
+          "Identify",
+          "Describe"
+        ],
+        "modelAnswer": "Since 2011 vast quantities of sargassum, a floating seaweed, have washed onto Caribbean beaches. Scientists blame fertiliser run-off, warming seas and Saharan dust, and expect larger invasions. Far out at sea the weed shelters young fish and turtles and stores carbon, but on shore it drives away tourists, blocks fishermen and, as it decays, releases a gas that causes headaches and nausea. Clean-up costs millions and most of the weed is dumped. Compost, animal feed, bioplastics and fuel are being tested, though heavy metals must first be removed. Better satellite forecasts help governments prepare, and the problem can only be solved if the islands share research and clean-up plans.",
+        "markScheme": [
+          "Content and organization of content - 10 marks. Content: selection, accuracy and completeness of the main points, within the first 120 words of the response (5 marks, following the grid on the five points listed in part (a)).",
+          "Organization: arrangement of the material with regard to sequencing, coherence, conciseness and sense of audience; the summary must be continuous prose with effective transitions between sentences, not a string of unconnected points (5 marks).",
+          "Language usage and mechanics - 10 marks: complete and clear sentences, subject-verb agreement, pronoun agreement, consistent tense, correct spelling and punctuation, and correct paragraphing.",
+          "Marks are awarded on the information within the first 120 words only. If the limit is exceeded, only the first 120 words are read and assessed.",
+          "A response that copies long stretches of the article may not receive more than 4 of the 10 language marks."
+        ]
+      }
+    ],
+    "examinerTips": "Section A is the only part of the paper where the examiner stops reading: word 121 does not exist. Spend the first five minutes planning the five points - candidates who list the points first almost always write tighter summaries than candidates who simply begin to write."
+  },
+  {
+    "id": "ea-p2-02",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "Summary: the plastic-bag ban",
+    "topic": "drafting-summary",
+    "commandWords": [
+      "List",
+      "Identify"
+    ],
+    "marks": 25,
+    "suggestedMinutes": 40,
+    "source": "Small bags, big trouble\n\nTen years ago the plastic bag was a convenience nobody questioned. Today more than a dozen Caribbean countries have banned or taxed single-use plastic bags, straws and styrofoam containers, and the arguments for the change are easy to see. Discarded bags block drains and gullies, so heavy rain floods streets that would otherwise stay dry. They blow into the sea, where turtles mistake them for jellyfish and seabirds feed them to their chicks. On the beaches, litter costs the region the very visitors on whom it depends.\n\nThe first years brought encouraging news. In parishes that enforced the rules, drains were reported clear of plastic, and supermarkets found that customers adjusted quickly to reusable bags. Teachers say the campaign gave children a simple, visible way to talk about caring for the environment, and many families now carry their own bags as a matter of habit.\n\nEnforcement, though, remains uneven. Inspectors are few, penalties are small, and some importers simply relabel thick plastic as 'reusable'. Street vendors who were never consulted still sell thin bags in bulk, while customs officers admit that shipments arrive without proper labels. In several countries the ban is obeyed in the capital and quietly ignored in the countryside.\n\nReplacing plastic is not as simple as it sounds, either. Paper and starch bags cost more, and some of them need more energy to produce than the bags they replace. Workers in plastics factories fear for their jobs, and small businesses complain that the change has raised their costs.\n\nThe better answer is a mixture: stronger enforcement, cheaper alternatives, recycling that actually works, and steady public education. Laws can change what shops hand out; habits are what fill the drains.",
+    "prompt": "Read the article above carefully. List FIVE main points discussed, then write a summary of the article in NOT MORE THAN 120 words. If this limit is exceeded, only the first 120 words of your answer will be read and assessed. Use your own words as far as possible, and write your summary in continuous prose. (25 marks)",
+    "planningHints": [
+      "This article weighs an argument, so your summary must carry both sides: what the bans have achieved and what is still going wrong.",
+      "Do not let the examples ('turtles mistake them for jellyfish') take the place of the main points.",
+      "Turn each main point into one sentence of your own, then check that the sentences join logically.",
+      "Spend a full minute counting words before you stop."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "List the FIVE main points discussed in the article. (Your summary must be based on these points.)",
+        "marks": 5,
+        "commandWords": [
+          "List",
+          "Identify"
+        ],
+        "modelAnswer": "1. More than a dozen Caribbean countries have banned or taxed single-use plastics.\n2. The main reasons are blocked drains and flooding, harm to sea life, and damage to tourism.\n3. The first years brought encouraging results, including cleared drains and quick public acceptance.\n4. Enforcement is uneven - few inspectors, small fines, mislabelled imports and unconsulted street vendors.\n5. Cheap replacements are not always greener, and jobs in plastics factories are at risk.\n6. A mixture of enforcement, affordable alternatives, working recycling and public education is needed.",
+        "markScheme": [
+          "1 mark for each main point correctly identified, to a maximum of 5 marks.",
+          "The point must be central to the article; details, examples and individual statistics do not earn marks.",
+          "Both achievements and problems are main ideas in this article - a summary of only one side loses content marks.",
+          "Accept any five of the six main ideas in the model answer, accurately expressed."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Write your summary in continuous prose in NOT MORE THAN 120 words, using your own words as far as possible.",
+        "marks": 20,
+        "commandWords": [
+          "Identify",
+          "Describe"
+        ],
+        "modelAnswer": "More than a dozen Caribbean countries have banned or taxed single-use plastic bags, straws and styrofoam, mainly because discarded plastic blocks drains and causes flooding, kills marine life and spoils beaches. Early results are encouraging: drains cleared of plastic, quick public acceptance and changed family habits. Enforcement is uneven, however - few inspectors, small fines, mislabelled imports and street vendors who were never consulted - so towns obey while rural areas ignore the rules. Paper and starch bags cost more and are not always greener, and factory jobs are at risk. Stronger enforcement, affordable alternatives, working recycling and public education are the real answer, because laws change what shops hand out but habits fill the drains.",
+        "markScheme": [
+          "Content and organization of content - 10 marks. Content: selection, accuracy and completeness of the main points within the first 120 words (5 marks, following the points in part (a)).",
+          "Organization: logical sequence, coherence, conciseness and sense of audience; continuous prose with effective transitions (5 marks).",
+          "Language usage and mechanics - 10 marks: complete and clear sentences, agreement of subject and verb and of pronoun and antecedent, consistency of tense, accurate spelling, punctuation and paragraphing.",
+          "Marks are awarded on the first 120 words only; anything beyond the limit is not read.",
+          "Lifting whole sentences from the article limits the language marks to a maximum of 4 out of 10."
+        ]
+      }
+    ],
+    "examinerTips": "Two summaries in this bank, two very different articles - the skill being tested is the same. Practise on any newspaper article: list five points, then compress them into 120 words, and time yourself to twenty-five minutes including the planning."
+  },
+  {
+    "id": "ea-p2-03",
+    "type": "write",
+    "paper": 2,
+    "section": "Section B",
+    "title": "Letter of complaint: the cancelled tour",
+    "topic": "diction-context",
+    "commandWords": [
+      "Describe",
+      "Explain"
+    ],
+    "marks": 30,
+    "suggestedMinutes": 35,
+    "source": "You paid a deposit of J$8,500 by bank transfer to a small tour company for a weekend trip to a river and waterfall. The advertisement promised air-conditioned transport, a trained guide, lunch and all entrance fees. On the day, the bus arrived four hours late, no guide appeared, no lunch was provided, and you had to pay the entrance fees yourself. You telephoned the office twice and sent one email with photographs and receipts. Nobody has replied and no refund has been paid.",
+    "prompt": "Write a letter of complaint to the Manager of the tour company. Your letter should include: (a) the date and amount of your deposit; (b) exactly what the company promised; (c) what actually happened on the day; (d) the attempts you have made to settle the matter; and (e) what you now want the company to do. Your letter must be in continuous prose and correctly formatted, with your address, the manager's address, the date, a salutation and a close. Select only information that is relevant and complete; do not pad the letter with detail that does not help the reader act. (30 marks)",
+    "planningHints": [
+      "Decide on the two things your reader must understand: what was promised and what actually happened. Everything else supports those.",
+      "Section B awards 10 of the 30 marks for the accuracy and completeness of the facts you choose, so numbers, dates and names matter.",
+      "Keep the register formal and the tone firm but never rude - the person reading your letter has the power to refund you.",
+      "Use paragraphs for the complaint, the chronology, your attempts to settle, and your request."
+    ],
+    "modelAnswer": "14 Almond Crescent\nBrown's Town\nSt Ann\n\n18 September 2026\n\nThe Manager\nRiverbend Tours Limited\n12 Market Street\nOcho Rios\n\nDear Sir or Madam,\n\nI am writing to complain about the weekend trip to Cascade Falls which I booked and paid for on 5 September 2026, and to request a full refund.\n\nOn 5 September I paid a deposit of J$8,500 by bank transfer for the trip advertised in your brochure as the 'Cascade Falls Weekend Escape'. The advertisement promised air-conditioned transport from Brown's Town, a trained guide throughout the day, lunch and all entrance fees. The balance of J$8,500 was to be paid on the day of the trip.\n\nWhat actually happened fell far short of that promise. The bus, which was due at 6.00 a.m., arrived at 10.05 a.m., so we reached the falls long after lunchtime. No guide met us; the driver told us that he 'only drives'. No meal was provided, although lunch was included in the price, and I had to pay the J$1,500 entrance fee for myself and for my younger brother.\n\nI telephoned your office on 12 September and again on 15 September, and I sent an email with photographs and receipts on 13 September. To date nobody has replied, and no refund has been paid.\n\nI therefore ask you to refund the deposit of J$8,500 and the entrance fees of J$3,000, a total of J$11,500, within fourteen days. If I do not hear from you, I shall refer the matter to the Consumer Affairs Commission.\n\nYours faithfully,\nAndre Palmer",
+    "markScheme": [
+      "Content - 10 marks: all five required details included accurately and completely (date and amount of deposit; the promises made; what happened on the day - late bus, no guide, no lunch, entrance fees paid; the two telephone calls and the email; the refund requested). 2 marks for each of the five areas, or 1 mark where the detail is present but incomplete or unclear.",
+      "Organization - 10 marks: correct letter format (addresses, date, salutation, body paragraphs, close); factual information in a clear, logical order; relevant material only; concise and free of repetition; clear opening purpose and a specific request in the closing paragraph.",
+      "Language usage and mechanics - 10 marks: continuous prose; complete and clear sentences; appropriate formal register and a firm but respectful tone; subject-verb and pronoun agreement; consistency of tense; accurate spelling, punctuation and paragraphing.",
+      "One overall impression mark should not be given: content, organization and mechanics are marked separately, as in the real Paper 02 mark scheme for Section B."
+    ],
+    "examinerTips": "Section B rewards conciseness - it is the paper's test of 'communicating factual information concisely'. A short letter that contains every required detail and no irrelevant history scores higher than a long letter that buries the request in the middle of paragraph four."
+  },
+  {
+    "id": "ea-p2-04",
+    "type": "write",
+    "paper": 2,
+    "section": "Section B",
+    "title": "Report to the parish council: flooding in Spring Garden",
+    "topic": "literal-meaning",
+    "commandWords": [
+      "Describe",
+      "Explain"
+    ],
+    "marks": 30,
+    "suggestedMinutes": 35,
+    "source": "Your community, like others in the parish, is flooded whenever it rains heavily. Water stands knee-deep on the main road for hours, the primary school loses days of teaching, shop owners lose stock, and several elderly residents had to be moved to the community centre last month. Residents say that the two main drains have not been cleared for three years and that the hillside above the road has been cleared for new houses.\n\nYou are the secretary of the community development committee. The parish council has invited written submissions from community groups before it decides what to do.",
+    "prompt": "Write a report to the parish council describing the flooding problem in your community and recommending practical measures to reduce it. Your report should include: (a) the area affected and how long the problem has existed; (b) what happens when the area floods, with specific effects; (c) the causes you have observed; (d) what residents have already done; and (e) your recommendations. Use the format of a report (title, headings, conclusion) and a tone suited to a formal reader. Be complete, factual and concise. (30 marks)",
+    "planningHints": [
+      "A report is read by busy people: headings and numbered sections do half the work for you.",
+      "Content marks come from specific, verifiable facts - how many houses, how many school days lost, how many signatures.",
+      "Recommendations should follow from the causes you describe; a report that lists causes and then recommends nothing is incomplete.",
+      "Keep the tone impersonal. 'The committee observed' reads better in a report than 'I saw'."
+    ],
+    "modelAnswer": "REPORT ON FLOODING IN THE SPRING GARDEN COMMUNITY\n\nPrepared for: The Parish Council\nPrepared by: The Secretary, Spring Garden Community Development Committee\nDate: 18 September 2026\n\n1. Introduction\nThis report describes the flooding that affects Spring Garden whenever there is heavy rain. It sets out the area affected, the effects on residents, the causes observed, the action already taken and the committee's recommendations.\n\n2. Area affected and how long the problem has lasted\nThe flooding covers the main road from the community centre to the bus stop, the lane behind the primary school and about twenty houses on the low side of the road. Residents report that water began standing regularly after the new housing scheme was built three years ago. It has flooded nine times this year, twice reaching knee height.\n\n3. Effects of the flooding\nWhen the area floods, the primary school closes, and between two and four days of teaching are lost each term. Shop owners on the corner lose stock and customers, mosquitoes breed in the standing water, and in June three elderly residents had to be moved to the community centre. Ambulances and taxis refuse to enter the lane.\n\n4. Causes observed\n- The two main drains have not been cleared for at least three years. They are blocked with silt, plastic bottles and rubble from building sites.\n- The hillside above the school was cleared for house lots last year, and soil now washes down with every shower.\n- The culvert at the bus stop is narrower than the drains that feed it, so water backs up along the road.\n\n5. Action already taken by residents\nResidents cleared the drain in front of the school by hand in April and again in July. The committee wrote to the council in March and received no reply, and a petition with 214 signatures was submitted in May.\n\n6. Recommendations\n(a) Clear both main drains of silt and rubble before the rainy season begins.\n(b) Require building sites on the hillside to install silt traps and replant cleared ground.\n(c) Replace the culvert at the bus stop with one wide enough for the volume of water.\n(d) Hold a monthly community clean-up and teach drain care in the primary school.\n(e) Store rope, warning signs and sandbags at the community centre for use while water is rising.\n\n7. Conclusion\nThe flooding is not caused by unusually heavy rain alone. Blocked drains and unmanaged building have turned ordinary showers into emergencies. The measures recommended above would protect the school and the residents of Spring Garden at a modest cost.",
+    "markScheme": [
+      "Content - 10 marks: the five required areas covered with relevant, complete and accurate detail (area affected and duration; effects on the community; causes observed; action already taken; recommendations). 2 marks per area, or 1 mark where the area is addressed thinly or vaguely.",
+      "Organization - 10 marks: appropriate report format (title, addressee, headings or numbered sections, conclusion); information in a logical sequence; clear links between causes and recommendations; concise, without repetition.",
+      "Language usage and mechanics - 10 marks: continuous prose in a formal, impersonal register suited to the council; complete and clear sentences; agreement and consistency of tense; accurate spelling, punctuation, and correct use of headings.",
+      "Candidates who write a letter or an article where a report has been asked for should lose format marks under Organization, although the content marks are still available."
+    ],
+    "examinerTips": "The real Section B question tells you the form the answer must take - email, letter, report, notice or article - and it changes from year to year. Read that instruction twice: candidates regularly lose organization marks for writing a good answer in the wrong form."
+  },
+  {
+    "id": "ea-p2-05",
+    "type": "write",
+    "paper": 2,
+    "section": "Section C",
+    "title": "Short story: the boat on the beach",
+    "topic": "plot-structure",
+    "commandWords": [
+      "Describe"
+    ],
+    "marks": 25,
+    "suggestedMinutes": 45,
+    "source": "A photograph taken at sunrise on a fishing beach. An old wooden boat lies on its side in the sand, one plank stove in. A woman in a head-tie and a boy of about twelve stand beside it, facing the sea. In the background another boat is already moving out of the bay.",
+    "prompt": "Write a story based on the picture described above. Your answer should be approximately 400 to 450 words in length. You MUST write in Standard English, although dialect may be used in conversation. In the examination Section C prints TWO story choices and you answer ONE of them only - this is one of those choices. (25 marks)",
+    "planningHints": [
+      "Decide in two minutes what the conflict is (a decision, a loss, a disagreement) and who wants what. A story with no conflict drifts.",
+      "Use the picture for setting: sunrise, a broken boat, a boy and a woman. Establish where and when the action happens in the first paragraph.",
+      "Plan the shape: opening scene, complication, a turning point, resolution. Know your last line before you write your first.",
+      "Show feeling through action and dialogue rather than telling the examiner that someone was sad."
+    ],
+    "modelAnswer": "The boat lay on its side like a tired animal, its hull stove in where the sea had thrown it against the rocks. Ionie stood with her arms folded, counting the damage. Behind her, Kenton was watching Delroy's boat slide out of the bay into the grey morning.\n\n'Every morning he goes out,' Kenton said. 'Every morning he comes back with fish.'\n\n'And every morning his mother sits on that rock watching for him,' Ionie replied. 'I am not going to be that woman.'\n\n'I am twelve now.'\n\n'Twelve is not a licence.'\n\nThe storm had come on a Friday, without warning, and had taken the church roof and the boat that had fed them since Kenton's father drowned. The insurance man arrived in a clean shirt, looked into the broken hull and explained that the policy did not cover acts of God. Kenton had wanted to tear the paper out of his hands. His mother thanked the man for coming and gave him a glass of water.\n\nFor three weeks the two of them did nothing about the boat. Ionie sold the last of the salt fish, took in washing and sewed school uniforms late into the night under one bulb. Each evening Kenton watched the other boats come home and grew quieter and quieter.\n\nIt was a Thursday when Miss Adlyn, the fish vendor who bought from the whole village, stopped her van at the gate. She wanted more fish than Delroy and his uncle could supply, she said, and she would pay in advance for a boat that came to her regularly. She stood chewing her bottom lip and looked at Kenton.\n\n'I hear the boy helps well.'\n\n'He helps,' Ionie said.\n\n'Then let him,' said Miss Adlyn. 'A boat is not a bad thing to own if it is repaired properly. And he can repair it. I have seen him mending net.'\n\nThat evening Ionie found Kenton sharpening the plane that had belonged to his father. She did not shout. She sat down on the step beside him, held the wood steady while he cut the first shaving - thin and clean as a wave curling - and then said the thing she had been carrying all day. He would finish school. He would work on Saturdays. The two of them would rebuild the boat together, plank by plank.\n\nThe sea was still out there, patient and dangerous. But in the morning, when the tide came in, the boat was standing upright, and two pairs of hands were already working on it.",
+    "markScheme": [
+      "This composition is marked on one 25-mark scale for creative writing (Expression C), exactly as in the real Paper 02 mark scheme for Section C.",
+      "24-25 (superior): skilful use of the stimulus; action structure and characterization fully controlled; conflict resolved convincingly; setting firmly established; excellent, error-free language.",
+      "20-23 (very good): clear and well-developed story line, believable characters, effective organization, very good use of language with at most occasional lapses.",
+      "15-19 (competent): features of action structure handled with some unevenness; organized; effective, accurate language with a few lapses.",
+      "10-14 (weakly competent): inconsistent plot and characterization; some ability to organize; language accurate enough to be understood.",
+      "5-9 (incompetent): vital features of a story missing; events poorly organized; frequent inaccuracies. 0-4: too little information to assess.",
+      "A response under 200 words should not be given more than 14 marks."
+    ],
+    "examinerTips": "Markers read hundreds of stories: the ones that stand out are the ones with a clear turning point, not the ones with the most adjectives. Use the stimulus sentence or picture in your first paragraph so the examiner can see at once that you have used it."
+  },
+  {
+    "id": "ea-p2-06",
+    "type": "write",
+    "paper": 2,
+    "section": "Section C",
+    "title": "Short story: the second letter",
+    "topic": "figurative-language",
+    "commandWords": [
+      "Describe"
+    ],
+    "marks": 25,
+    "suggestedMinutes": 45,
+    "source": "The words your story must include: 'Nobody in the village believed me until the second letter arrived.'",
+    "prompt": "Write a story which includes the words given above. Your answer should be approximately 400 to 450 words in length. You MUST write in Standard English, although dialect may be used in conversation. In the examination Section C prints TWO story choices and you answer ONE of them only - this is one of those choices. (25 marks)",
+    "planningHints": [
+      "The quoted words may open your story, close it, or appear inside it - but the story must be shaped around them, not merely contain them.",
+      "Plan the narrator: a first-person story about being disbelieved is easier to make convincing than a third-person account.",
+      "Build tension with detail - the fish floating, the smell of the river, the voices at Sunday dinner.",
+      "Leave time to check your paragraphs and your tenses; tense slips are the commonest language error in narrative writing."
+    ],
+    "modelAnswer": "The river gave itself away slowly. First a grey film where the water turned, then a smell like rotten eggs, then fish floating up as white as paper. I stood at the ford every afternoon after school and wrote down what I saw in my exercise book, with the date beside each entry.\n\n'Stop your foolishness,' my grandmother said when I told her. 'Rivers get low. Fish die.'\n\nI wrote to the National Environment Agency. I copied the address from the telephone book at Aunt Ruth's shop and spent my own money on the stamp. Three weeks later, nothing. By then the water was black down to the mango tree, and Miss Sylvia's goats had to be led a mile to drink.\n\n'Letters do nothing,' my uncle said at Sunday dinner. 'The man who owns that pig farm is a big man. Sit down and eat your rice.'\n\nI did not sit down. I wrote the second letter, and this time I enclosed two pages from my exercise book and the photographs my cousin printed for me at the Internet cafe, and in the last line I said: I am twelve years old, and I am asking you to come and see it for yourself.\n\nNobody in the village believed me until the second letter arrived. It came on a Tuesday in a long brown envelope with the blue coat of arms in the corner, and the shopkeeper read it aloud twice to be sure: inspectors were coming on Friday, and residents were invited to attend.\n\nFriday was unrecognisable. Two pickup trucks parked beside the ford, men in boots walked along the bank taking photographs, and a woman in uniform wrote in a folder while Miss Sylvia wept and pointed at her goats. When an inspector asked who had reported the matter, my grandmother stepped forward.\n\n'She did,' she said, and put her hand on my shoulder as though she were holding me safe.\n\nThe pig farm was closed for six weeks. Tanks were built, and fences, and a sign went up with a telephone number for anyone who saw black water. The river did not turn into a postcard. It is still brown when it rains. But in the dry season the boys catch guppies by the ford again, and they call me the one who wrote the letter, and that, I have decided, is an improvement on the old name.",
+    "markScheme": [
+      "This composition is marked on one 25-mark scale for creative writing (Expression C), exactly as in the real Paper 02 mark scheme for Section C.",
+      "24-25 (superior): the given words are fully integrated into a controlled plot; characters and setting convincing; conflict resolved; fluent, figurative and error-free language.",
+      "20-23 (very good): well-developed story line, believable characters, effective organization, very good language with occasional lapses.",
+      "15-19 (competent): plot and characters handled with some unevenness but organized, with accurate language on the whole.",
+      "10-14 (weakly competent): story line inconsistent or thin; the given words inserted mechanically; some ability to organize.",
+      "5-9 (incompetent): events poorly organized, little sense of story; frequent language errors. 0-4: too little information to assess.",
+      "A response under 200 words should not be given more than 14 marks."
+    ],
+    "examinerTips": "Candidates lose marks here by bolting the given sentence onto an unrelated story. Decide what has to be true for that sentence to make sense - who doubted whom, and why - and build the whole story towards it."
+  },
+  {
+    "id": "ea-p2-07",
+    "type": "write",
+    "paper": 2,
+    "section": "Section D",
+    "title": "Speech: should students use phones in school?",
+    "topic": "argument-structure",
+    "commandWords": [
+      "Discuss",
+      "Justify"
+    ],
+    "marks": 25,
+    "suggestedMinutes": 45,
+    "source": "The National Youth Council is debating the following motion:\n\n'School students should be allowed to use their mobile phones during the school day.'\n\nYou are a member of the Council and have been invited to speak in the debate.",
+    "prompt": "Write the speech you would make to the National Youth Council, giving your views on the motion. Your answer should be approximately 250 to 300 words in length. You MUST write in Standard English. Use the format of a speech - address your audience in the opening and close with a direct appeal. (25 marks)",
+    "planningHints": [
+      "Take a clear position in your first two sentences; an argument that sits on the fence earns content marks poorly.",
+      "Choose three reasons and develop each one in its own paragraph with a specific example (a classroom without textbooks, a late bus, an examination breach).",
+      "Anticipate one objection and answer it - the mark scheme rewards awareness of the opposite view.",
+      "Write for the ear: short sentences, direct address, repetition for emphasis. Read it back before you stop."
+    ],
+    "modelAnswer": "Honourable Chair, members of the National Youth Council, friends.\n\nThe motion before us says that students should be allowed to use their mobile phones during the school day. I rise to support it, with one condition, and I will give my reasons plainly.\n\nFirst, the phone is already in the school bag. A ban that cannot be enforced teaches us something dangerous: that rules are only words on a wall. Every teacher in this room knows that phones travel along corridors inside shirts, that they ring in the middle of lessons, and that the students who are punished are usually the careless ones, never the careful ones. Enforced honesty would be better than comfortable pretence.\n\nSecond, the phone is a tool. In a classroom that has too few textbooks, students photograph pages, look up the meaning of a word, share notes after an illness and use maps in geography lessons. Many of us travel an hour to school. Our parents need to reach us, not at three o'clock, but when the bus is late or a storm is coming.\n\nThird, and this is my condition, permission must come with rules that we help to write: no phones during lessons unless a teacher allows it; no photograph of another student without permission; no phones at all in examinations; and a clear penalty for breaking those terms. Teachers should be able to hold a phone for the day, and we should accept it.\n\nChair, our schools teach us to be citizens. A citizen is not a person locked away from the most powerful tools of the age; a citizen is a person who has been taught to use them responsibly. I ask this Council to support the motion, and to let us draft the rules ourselves. Thank you.",
+    "markScheme": [
+      "Area I - argument and content (15 marks): clear focus on the motion; clear sense of audience and purpose and register appropriate to a youth council; supporting details that expand, explain or illustrate the argument; a range of strategies (definition, cause and effect, comparison); a consistent point of view that answers the opposing case without contradicting itself.",
+      "14-15 marks: excellent management of argument and content; 11-13 very good; 7-10 good; 4-6 inconsistent; 1-3 incompetent; 0 no argument or too little material to assess.",
+      "Area II - expression (10 marks): complete, clear and meaningful sentences; effective transitions between sentences and paragraphs; subject-verb and pronoun agreement; consistency of tense; accurate spelling, punctuation and paragraphing.",
+      "10 marks: excellent, effective and error-free use of language; 8-9 very good with occasional lapses; 6-7 good with a few lapses; 4-5 accurate enough to be understood, with inconsistency; 2-3 frequent inaccuracy; 0-1 unable to be assessed.",
+      "A response that ignores the speech format (no address to the audience, no direct appeal) loses marks under Area I even where the argument is sound."
+    ],
+    "examinerTips": "Section D is called an argumentative essay, but the paper tells you the form it must take - a speech, a letter to the Editor or an essay - and the form changes from year to year. Structure is always the same underneath: position, three developed reasons, one answered objection, conclusion."
+  },
+  {
+    "id": "ea-p2-08",
+    "type": "write",
+    "paper": 2,
+    "section": "Section D",
+    "title": "Letter to the editor: practical skills or examinations?",
+    "topic": "argument-structure",
+    "commandWords": [
+      "Discuss",
+      "Evaluate"
+    ],
+    "marks": 25,
+    "suggestedMinutes": 45,
+    "source": "An article in your national newspaper argued that schools spend too much time preparing students for examinations and too little time teaching practical skills such as cooking, budgeting, simple repairs and farming. The article ended with the sentence:\n\n'Our schools should spend less time on examinations and more time teaching practical skills.'",
+    "prompt": "Write a letter to the editor of the newspaper giving your views on the statement that schools should spend less time on examinations and more time teaching practical skills. Your answer should be approximately 250 to 300 words in length. You MUST write in Standard English. Use the format of a letter to the Editor, beginning 'Dear Editor' and closing with your name. (25 marks)",
+    "planningHints": [
+      "Decide your position precisely: disagree completely, agree completely, or agree with a condition. The third is the strongest and the easiest to argue well.",
+      "Answer the other side directly - 'I accept that...' - the mark scheme rewards a writer who anticipates the opposition without contradicting himself.",
+      "Use one concrete example from your own school life; a letter that is all general statements reads as an essay with a heading.",
+      "Keep the register suited to a newspaper: formal, but a real person writing, not a report."
+    ],
+    "modelAnswer": "Dear Editor,\n\nYour article on Monday argued that our schools spend too much time preparing students for examinations and too little time teaching practical skills. I agree with much of it, but as a fifth form student I want to explain why the choice is not as simple as it looks.\n\nFirst, the examination is the gate that most of us must pass. It decides our places in sixth form and college, and a student who reaches that gate unprepared does not become practical; he becomes unemployed. I accept, though, that passing an examination is not the same as being able to live. Many students in my class can define 'interest' but cannot work out the change in a shop; we can write about a balanced meal but cannot cook one.\n\nSecond, practical skills need time and money, and both are scarce. A school of nine hundred students has two stoves and one workshop. If practical subjects are added without equipment and trained teachers, they simply become subjects examined on paper, which is exactly what your article complains about.\n\nThird, there is a fairer answer. Practical work does not have to replace examination work; it can be examined. Let students be assessed on a garden they planted, a repair they made or a budget they kept. Mark those projects as seriously as an essay, and teachers will teach them as seriously.\n\nSchools should not spend less time preparing us for examinations. They should spend time preparing us for more than examinations. I hope your readers will ask their schools how many hours students actually spend on their feet with tools in their hands.\n\nYours faithfully,\nJayden Mills\nForm 5 student",
+    "markScheme": [
+      "Area I - argument and content (15 marks): selection of relevant information directed at the focus; awareness of the audience and an appropriate register for a newspaper letter; a clear purpose; supporting detail that expands, explains or illustrates each reason; a range of argumentative strategies; a consistent point of view that answers the opposing case.",
+      "14-15 marks: excellent management of argument and content; 11-13 very good; 7-10 good; 4-6 inconsistent; 1-3 incompetent; 0 no argument or too little material to assess.",
+      "Area II - expression (10 marks): complete, clear sentences; logical development within and between paragraphs; agreement and consistency of tense; accurate spelling, punctuation and paragraphing.",
+      "10 marks: excellent, effective and error-free language; 8-9 very good; 6-7 good with a few lapses; 4-5 understandable but inconsistent; 2-3 frequent inaccuracy; 0-1 unable to be assessed.",
+      "Losing the letter form (no salutation, no signature, no reference to the article) should be penalized under Area I, since the candidate has not written for the specified audience."
+    ],
+    "examinerTips": "Both Section D questions in this bank are marked with the same split: 15 marks for the argument and 10 for the expression. Practise the argument on any statement in the news - take a position, give three developed reasons, answer the other side, close by returning to your first sentence."
+  }
+]
