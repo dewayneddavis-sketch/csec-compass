@@ -1,0 +1,757 @@
+[
+  {
+    "id": "ch-p2-01",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "Data analysis: the cooling curve of a pure substance",
+    "topic": "states-of-matter",
+    "commandWords": [
+      "Draw",
+      "Determine",
+      "Explain",
+      "Calculate",
+      "Sketch",
+      "Describe"
+    ],
+    "marks": 25,
+    "suggestedMinutes": 30,
+    "source": "A student investigated how the temperature of a molten sample of stearic acid changed as it cooled. 20.0 g of molten stearic acid was poured into a boiling tube, which was stood in a test tube rack at room temperature. The temperature of the acid was recorded every 0.5 minutes using a thermometer. The results are shown in Table 1.\n\nTABLE 1: TEMPERATURE OF STEARIC ACID AS IT COOLS\nTime (min):            0.0   0.5   1.0   1.5   2.0   2.5   3.0   3.5   4.0   4.5   5.0   5.5   6.0\nTemperature (°C):      80.0  77.1  73.6  71.2  69.2  69.1  69.0  69.1  68.2  66.1  64.0  62.0  60.1\n\nA second sample of stearic acid, also of mass 20.0 g, contained some sand mixed with it. This sample was cooled in exactly the same way.\n\nTABLE 2: TESTS ON SOLUTION X\nTest 1: Aqueous sodium hydroxide was added to solution X until in excess.\nObservation: a white precipitate forms, which dissolves in excess to give a colourless solution.\nTest 2: Aqueous ammonia was added to solution X until in excess.\nObservation: a white precipitate forms, which dissolves in excess to give a colourless solution.\n\nThe specific latent heat of fusion of stearic acid is 199 J/g.",
+    "prompt": "Answer ALL parts. Show all your working clearly and give the unit with every numerical answer. Plot the graph on graph paper; the questions about the graph refer to the graph you have drawn.",
+    "planningHints": [
+      "Temperature is the dependent variable, so it goes on the y-axis; time is the independent variable and goes on the x-axis. Label each axis with the quantity and its unit.",
+      "Choose scales that make the points fill more than half of each axis, and plot each point once with a small cross.",
+      "Join the points with a smooth curve, not a series of straight lines - you are looking for the flat part of the curve.",
+      "When you read a value from the graph, mark on the graph where you read it (dotted lines to each axis) so the examiner can see your working.",
+      "Use the word 'plateau' for the flat part of a cooling curve - that is the change of state."
+    ],
+    "parts": [
+      {
+        "label": "(a)(i)",
+        "prompt": "Define the term 'freezing point'.",
+        "marks": 1,
+        "commandWords": [
+          "Define"
+        ],
+        "modelAnswer": "The freezing point is the temperature at which a liquid changes into a solid. For a pure substance it is the same temperature as its melting point.",
+        "markScheme": [
+          "1 mark for the temperature at which a liquid changes into a solid (accept: the temperature at which a pure liquid solidifies)."
+        ]
+      },
+      {
+        "label": "(a)(ii)",
+        "prompt": "Plot a graph of temperature (y-axis) against time (x-axis). Label each axis with the quantity and its unit, choose a suitable scale, plot the points accurately and draw a smooth curve through them.",
+        "marks": 3,
+        "commandWords": [
+          "Draw"
+        ],
+        "modelAnswer": "Temperature in °C on the y-axis (from about 58 °C to 82 °C) and time in minutes on the x-axis (0 to 6.0 min). A scale of 1 cm = 2.0 °C on the y-axis and 1 cm = 0.5 min on the x-axis uses more than half of the paper in both directions. All thirteen points are plotted accurately. A smooth curve is drawn through the points: it falls steadily from 80.0 °C, flattens into a horizontal plateau at 69.0 °C between 2.0 min and 3.5 min, and then falls again.",
+        "markScheme": [
+          "1 mark for both axes labelled with the correct quantity and unit (temperature in °C on the y-axis, time in minutes on the x-axis).",
+          "1 mark for scales that are linear, clearly marked and use at least half of each axis.",
+          "1 mark for all (or all but one) points plotted correctly and a smooth curve drawn through them, showing the flat plateau."
+        ]
+      },
+      {
+        "label": "(a)(iii)",
+        "prompt": "Using your graph, determine the freezing point of pure stearic acid. Show on your graph how you obtained your answer.",
+        "marks": 2,
+        "commandWords": [
+          "Determine"
+        ],
+        "modelAnswer": "The graph has a horizontal plateau (the flat section of the cooling curve) between 2.0 min and 3.5 min. Reading from this plateau on the temperature axis gives 69.0 °C. The freezing point of pure stearic acid is therefore 69.0 °C.",
+        "markScheme": [
+          "1 mark for reading the plateau (the flat section) of the curve from the graph.",
+          "1 mark for the value 69 °C (accept 68.5 - 69.5 °C) with the unit °C."
+        ]
+      },
+      {
+        "label": "(a)(iv)",
+        "prompt": "Explain, in terms of the particles and energy, why the temperature stays constant while the stearic acid is freezing.",
+        "marks": 3,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "As the stearic acid freezes, the particles lose energy and become arranged in a regular lattice. The energy removed from the particles is the latent heat of fusion, released to the surroundings as the particles move from the more random arrangement of the liquid into the fixed positions of the solid. While the change of state is taking place this released energy does not lower the temperature, so the temperature stays constant until all the liquid has frozen.",
+        "markScheme": [
+          "1 mark for stating that the particles lose energy as the liquid changes into a solid.",
+          "1 mark for stating that the energy released is the latent heat of fusion, released as the particles become arranged in a regular lattice.",
+          "1 mark for stating that the energy released does not change the temperature while the change of state is taking place (the temperature stays constant until freezing is complete)."
+        ]
+      },
+      {
+        "label": "(a)(v)",
+        "prompt": "The mass of the stearic acid is 20.0 g and its specific latent heat of fusion is 199 J/g. Calculate the energy released when the stearic acid freezes.",
+        "marks": 2,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "E = mL = 20.0 g × 199 J/g = 3980 J = 3.98 kJ",
+        "markScheme": [
+          "1 mark for using E = mL with the correct values (20.0 × 199).",
+          "1 mark for the answer 3980 J (accept 3.98 kJ, accept 3976 - 3984 J)."
+        ]
+      },
+      {
+        "label": "(a)(vi)",
+        "prompt": "On the same axes, sketch the cooling curve you would expect for the second sample that contains sand, and explain how it differs from the curve for the pure stearic acid.",
+        "marks": 3,
+        "commandWords": [
+          "Sketch",
+          "Explain"
+        ],
+        "modelAnswer": "The curve for the impure sample has the same general shape but it begins to freeze at a lower temperature and does not show a sharp, flat plateau. The impurity lowers the freezing point, so the substance solidifies over a range of temperatures and the curve slopes gradually instead of staying horizontal.",
+        "markScheme": [
+          "1 mark for a curve that starts at the same temperature (accept a slightly lower starting temperature).",
+          "1 mark for a curve that changes direction at a lower temperature than 69 °C.",
+          "1 mark for explaining that an impurity lowers the freezing point and that the substance solidifies over a range of temperatures, so the plateau is not flat."
+        ]
+      },
+      {
+        "label": "(a)(vii)",
+        "prompt": "Draw a labelled diagram of the apparatus the student used to obtain the cooling curve, showing how the thermometer is held in the molten stearic acid.",
+        "marks": 3,
+        "commandWords": [
+          "Draw"
+        ],
+        "modelAnswer": "A boiling tube about one-third filled with molten stearic acid, standing upright in a test tube rack (or held by a clamp on a retort stand). A thermometer is supported so that its bulb is fully immersed in the liquid but not touching the side or the base of the tube. Labels for the boiling tube, the thermometer and the stearic acid complete the diagram.",
+        "markScheme": [
+          "1 mark for a labelled boiling tube (or test tube) containing the stearic acid.",
+          "1 mark for a thermometer supported in the liquid with its bulb fully immersed and not touching the glass.",
+          "1 mark for one further correct label, for example the stand/clamp or the test tube rack."
+        ]
+      },
+      {
+        "label": "(b)(i)",
+        "prompt": "Give the inference for Test 1 (aqueous sodium hydroxide) in Table 2.",
+        "marks": 2,
+        "commandWords": [
+          "Identify"
+        ],
+        "modelAnswer": "A white precipitate that dissolves in excess sodium hydroxide shows that solution X contains an amphoteric metal ion, so aluminium ions (Al3+) or zinc ions (Zn2+) could be present.",
+        "markScheme": [
+          "1 mark for the inference that aluminium ions (Al3+) or zinc ions (Zn2+) are present.",
+          "1 mark for noting that the hydroxide is amphoteric, that is it dissolves in excess alkali to give a colourless solution."
+        ]
+      },
+      {
+        "label": "(b)(ii)",
+        "prompt": "Give the inference for Test 2 (aqueous ammonia) and hence name the metal ion present in solution X.",
+        "marks": 2,
+        "commandWords": [
+          "Identify",
+          "Name"
+        ],
+        "modelAnswer": "The white precipitate also dissolves in excess aqueous ammonia, which is the test for zinc ions; aluminium hydroxide does not dissolve in excess ammonia. Solution X therefore contains zinc ions, Zn2+.",
+        "markScheme": [
+          "1 mark for stating that the precipitate dissolves in excess ammonia, so zinc ions are present.",
+          "1 mark for naming the ion Zn2+ and ruling out Al3+ (aluminium hydroxide is insoluble in excess ammonia)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "A mixture contains sodium chloride and sand. Describe how a student would obtain a pure, dry sample of sodium chloride from this mixture.",
+        "marks": 4,
+        "commandWords": [
+          "Describe"
+        ],
+        "modelAnswer": "1. Add distilled water to the mixture and stir: the sodium chloride dissolves but the sand does not. 2. Filter the mixture through filter paper in a funnel; the sand is left behind as the residue and the sodium chloride solution passes through as the filtrate. 3. Heat the filtrate gently in an evaporating dish to evaporate some of the water and concentrate the solution. 4. Allow the concentrated solution to cool so that crystals of sodium chloride form, then dry the crystals between two pieces of filter paper.",
+        "markScheme": [
+          "1 mark for adding water and stirring to dissolve the sodium chloride.",
+          "1 mark for filtering to remove the sand (sand collected as the residue).",
+          "1 mark for heating the filtrate in an evaporating dish to concentrate the solution (partial evaporation, not to dryness).",
+          "1 mark for allowing crystals to form and drying them between filter paper (accept: dry in a warm oven)."
+        ]
+      }
+    ],
+    "examinerTips": "The data-analysis question rewards the graph and the practical detail, not only the calculations. Always label axes with both the quantity and its unit, show where you read a value from the graph, and use the word 'plateau' for the flat part of a cooling curve - that is where the change of state is taking place."
+  },
+  {
+    "id": "ch-p2-02",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "The periodic table, isotopes and bonding",
+    "topic": "periodic-table-trends",
+    "commandWords": [
+      "Identify",
+      "State",
+      "Draw",
+      "Define",
+      "Calculate"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 24,
+    "source": "A portion of the periodic table is shown in Table 3. The letters P, Q, R and T represent four different elements; the group numbers are given at the top of the columns. All four elements are in Period 3.\n\nTABLE 3: A PORTION OF THE PERIODIC TABLE\nGroup:      I     II    III   IV    V     VI    VII   0\nPeriod 3:   P     Q     -     -     -     -     R     T\n\nChlorine consists of two isotopes: chlorine-35 (relative abundance 75.8 %) and chlorine-37 (relative abundance 24.2 %).",
+    "prompt": "Answer ALL parts. Where a diagram is asked for, draw it clearly and label it. Show the working for the calculation.",
+    "planningHints": [
+      "Use the group number to decide the number of electrons in the outer shell of each element, and the period number to decide how many shells it has.",
+      "A dot-and-cross diagram shows the outer shell only; electrons of one atom are drawn as dots and electrons of the other atom as crosses.",
+      "For an ion, put square brackets around the symbol and write the charge outside the bracket."
+    ],
+    "parts": [
+      {
+        "label": "(a)(i)",
+        "prompt": "Identify the element that is an alkali metal and the element that is an alkaline earth metal.",
+        "marks": 2,
+        "commandWords": [
+          "Identify"
+        ],
+        "modelAnswer": "P is in Group I, so P (sodium) is the alkali metal. Q is in Group II, so Q (magnesium) is the alkaline earth metal.",
+        "markScheme": [
+          "1 mark for P as the alkali metal (Group I).",
+          "1 mark for Q as the alkaline earth metal (Group II)."
+        ]
+      },
+      {
+        "label": "(a)(ii)",
+        "prompt": "State the group and the period of element R, and identify the element with the highest atomic number.",
+        "marks": 2,
+        "commandWords": [
+          "State",
+          "Identify"
+        ],
+        "modelAnswer": "R is in Group VII and in Period 3. T is the Group 0 element of Period 3 (argon), which has the highest atomic number of the four.",
+        "markScheme": [
+          "1 mark for Group VII and Period 3 for R.",
+          "1 mark for T (the Group 0 element, argon) having the highest atomic number."
+        ]
+      },
+      {
+        "label": "(a)(iii)",
+        "prompt": "Write the electronic configuration of R, and state the charge on the ion that R forms.",
+        "marks": 2,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "R is in Group VII and Period 3, so it has 17 electrons arranged 2, 8, 7. To gain a complete outer shell it gains one electron, forming an ion with a single negative charge: R⁻ (the chloride ion, Cl⁻).",
+        "markScheme": [
+          "1 mark for the electronic configuration 2, 8, 7.",
+          "1 mark for the ion charge of 1− (R⁻ / Cl⁻)."
+        ]
+      },
+      {
+        "label": "(a)(iv)",
+        "prompt": "P reacts with R to form a compound. State the type of bonding in this compound and give its formula.",
+        "marks": 2,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "P is a metal (Group I) and R is a non-metal (Group VII), so electrons are transferred from P to R and the bonding is ionic. One atom of P gives one electron to one atom of R, so the formula of the compound is PR (sodium chloride, NaCl).",
+        "markScheme": [
+          "1 mark for ionic bonding (transfer of electrons from a metal to a non-metal).",
+          "1 mark for the formula PR (NaCl)."
+        ]
+      },
+      {
+        "label": "(a)(v)",
+        "prompt": "Draw a dot-and-cross diagram to show the bonding in the compound formed between Q and R.",
+        "marks": 3,
+        "commandWords": [
+          "Draw"
+        ],
+        "modelAnswer": "Q is magnesium (2, 8, 2) and R is chlorine (2, 8, 7). Each magnesium atom loses its two outer electrons, one to each of two chlorine atoms. The diagram shows a Mg2+ ion with the electronic configuration of neon (2, 8) and two Cl⁻ ions, each with the electronic configuration of argon (2, 8, 8). The two electrons lost by magnesium are drawn as dots and the electrons of each chlorine atom as crosses; each ion is enclosed in square brackets with its charge written outside. The ion ratio is one Mg2+ to two Cl⁻, so the formula is MgCl2.",
+        "markScheme": [
+          "1 mark for showing one Mg2+ ion and two Cl⁻ ions.",
+          "1 mark for the correct electron arrangements (2, 8 for Mg2+ and 2, 8, 8 for each Cl⁻) with dots used for the electrons from magnesium and crosses for the electrons of chlorine.",
+          "1 mark for square brackets around each ion with the correct charges shown, giving MgCl2."
+        ]
+      },
+      {
+        "label": "(b)(i)",
+        "prompt": "Define the term 'isotopes'.",
+        "marks": 2,
+        "commandWords": [
+          "Define"
+        ],
+        "modelAnswer": "Isotopes are atoms of the same element that have the same number of protons (the same atomic number) but different numbers of neutrons (different mass numbers).",
+        "markScheme": [
+          "1 mark for atoms of the same element (same number of protons / the same atomic number).",
+          "1 mark for different numbers of neutrons (different mass numbers)."
+        ]
+      },
+      {
+        "label": "(b)(ii)",
+        "prompt": "Calculate the relative atomic mass of chlorine from the two isotopes and their relative abundances.",
+        "marks": 2,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Ar = (75.8/100 × 35) + (24.2/100 × 37) = 26.53 + 8.954 = 35.484 = 35.5 (to 3 significant figures)",
+        "markScheme": [
+          "1 mark for the correct method, (0.758 × 35) + (0.242 × 37).",
+          "1 mark for the answer 35.5 (accept 35.48)."
+        ]
+      }
+    ],
+    "examinerTips": "This question tests bonding as well as the periodic table. In a dot-and-cross diagram show the outer shell only, use dots for the electrons of one atom and crosses for the electrons of the other, put square brackets around each ion and write the charge outside the bracket."
+  },
+  {
+    "id": "ch-p2-03",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "The mole concept and volumetric calculations",
+    "topic": "molar-mass-calculations",
+    "commandWords": [
+      "Calculate",
+      "State"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 24,
+    "source": "A student prepared a standard solution of sodium carbonate, Na2CO3, by dissolving 5.30 g of the anhydrous solid in distilled water and making the volume up to 250 cm3 in a volumetric flask.\n\nShe then titrated 25.0 cm3 portions of this sodium carbonate solution with hydrochloric acid, HCl, of concentration 0.100 mol/dm3.\n\nThe equation for the reaction is:\n\nNa2CO3(aq) + 2HCl(aq) → 2NaCl(aq) + H2O(l) + CO2(g)\n\n[Relative atomic masses, Ar: H = 1.0, C = 12.0, O = 16.0, Na = 23.0, Cl = 35.5]",
+    "prompt": "Answer ALL parts. Show every step of your working clearly and give the unit with each answer. Volume must be converted to dm3 before the concentration formula c = n / V is used.",
+    "planningHints": [
+      "Mr is found by adding the relative atomic masses of every atom in the formula.",
+      "n = m / Mr converts a mass in grams into moles; c = n / V gives concentration, with V in dm3.",
+      "1 dm3 = 1000 cm3, so 250 cm3 = 0.250 dm3 and 25.0 cm3 = 0.0250 dm3.",
+      "Read the mole ratio from the balanced equation before you calculate the amount of any product: 1 mol Na2CO3 reacts with 2 mol HCl and gives 2 mol NaCl."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Calculate the relative formula mass (molar mass) of Na2CO3.",
+        "marks": 2,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Mr(Na2CO3) = (2 × 23.0) + 12.0 + (3 × 16.0) = 46.0 + 12.0 + 48.0 = 106.0",
+        "markScheme": [
+          "1 mark for substituting the correct Ar values: (2 × 23.0) + 12.0 + (3 × 16.0).",
+          "1 mark for the answer 106.0 (accept 106 g/mol)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the number of moles of Na2CO3 in the 5.30 g used to make the solution.",
+        "marks": 2,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "n = m / Mr = 5.30 / 106.0 = 0.0500 mol",
+        "markScheme": [
+          "1 mark for using n = m / Mr.",
+          "1 mark for the answer 0.0500 mol."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Calculate the concentration of the sodium carbonate solution in mol/dm3.",
+        "marks": 2,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "250 cm3 = 0.250 dm3, so c = n / V = 0.0500 / 0.250 = 0.200 mol/dm3",
+        "markScheme": [
+          "1 mark for converting the volume to dm3 (0.250 dm3) and using c = n / V.",
+          "1 mark for the answer 0.200 mol/dm3."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Calculate the number of moles of Na2CO3 in a 25.0 cm3 portion of the solution.",
+        "marks": 1,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "n = c × V = 0.200 × 0.0250 = 0.00500 mol",
+        "markScheme": [
+          "1 mark for the answer 0.00500 mol (accept 5.00 × 10⁻³ mol)."
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "Calculate the volume of 0.100 mol/dm3 hydrochloric acid that would be needed to react completely with a 25.0 cm3 portion of the sodium carbonate solution.",
+        "marks": 3,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "From the equation, 1 mol Na2CO3 reacts with 2 mol HCl, so n(HCl) = 2 × 0.00500 = 0.0100 mol. V = n / c = 0.0100 / 0.100 = 0.100 dm3 = 100 cm3",
+        "markScheme": [
+          "1 mark for the mole ratio 1 : 2 from the equation and n(HCl) = 0.0100 mol.",
+          "1 mark for using V = n / c (0.0100 / 0.100).",
+          "1 mark for the answer 0.100 dm3 (100 cm3)."
+        ]
+      },
+      {
+        "label": "(f)",
+        "prompt": "Calculate the maximum mass of sodium chloride that could be formed when a 25.0 cm3 portion of the sodium carbonate solution reacts completely.",
+        "marks": 3,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "From the equation, 1 mol Na2CO3 gives 2 mol NaCl, so n(NaCl) = 2 × 0.00500 = 0.0100 mol. Mr(NaCl) = 23.0 + 35.5 = 58.5. m = n × Mr = 0.0100 × 58.5 = 0.585 g",
+        "markScheme": [
+          "1 mark for n(NaCl) = 0.0100 mol (2 mol NaCl per mol Na2CO3, so 2 × 0.00500).",
+          "1 mark for Mr(NaCl) = 58.5.",
+          "1 mark for the answer 0.585 g."
+        ]
+      },
+      {
+        "label": "(g)",
+        "prompt": "Methyl orange is used as the indicator for this titration. State the colour of methyl orange in the sodium carbonate solution, and the colour change seen at the end point as the acid is added.",
+        "marks": 2,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "Sodium carbonate solution is alkaline, so methyl orange is yellow in it. At the end point the colour changes from yellow to orange (the first permanent orange/red colour).",
+        "markScheme": [
+          "1 mark for yellow in the alkaline sodium carbonate solution.",
+          "1 mark for the change to orange (accept red or red-orange) at the end point."
+        ]
+      }
+    ],
+    "examinerTips": "Volumetric questions are marked for method as well as for the final answer. Convert every volume to dm3 before using c = n / V, and always write down the mole ratio you are using from the equation - it carries a mark."
+  },
+  {
+    "id": "ch-p2-04",
+    "type": "write",
+    "paper": 2,
+    "section": "Section B",
+    "title": "Acids, bases and the heat of neutralization",
+    "topic": "neutralization",
+    "commandWords": [
+      "Define",
+      "Name",
+      "Calculate",
+      "State",
+      "Suggest"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 24,
+    "source": "A student investigated the heat change when an acid reacts with an alkali. She placed 25.0 cm3 of 1.00 mol/dm3 sodium hydroxide solution in a polystyrene cup and recorded its temperature. She then added 25.0 cm3 of 1.00 mol/dm3 hydrochloric acid, stirred the mixture and recorded the highest temperature reached.\n\nInitial temperature of the sodium hydroxide solution: 25.0 °C\nHighest temperature after adding the acid: 31.7 °C\n\nAssume the density of both solutions is 1.00 g/cm3 and that the specific heat capacity of the mixture is 4.2 J/g°C. The heat absorbed by the polystyrene cup may be ignored.\n\nThe equation for the reaction is:\n\nNaOH(aq) + HCl(aq) → NaCl(aq) + H2O(l)",
+    "prompt": "Answer ALL parts. Show all your working clearly and give the unit with every numerical answer.",
+    "planningHints": [
+      "The mass of the mixture is the sum of the volumes of the two solutions, since the density is 1.00 g/cm3.",
+      "The temperature change is the rise in temperature, T(final) - T(initial).",
+      "The energy released is E = mc(Delta T); use the mass of the whole mixture and c = 4.2 J/g°C.",
+      "The number of moles of water formed comes from the moles of the limiting reactant, calculated with n = c × V (V in dm3).",
+      "Report an enthalpy change of neutralization in kJ per mole and remember the negative sign for an exothermic reaction."
+    ],
+    "parts": [
+      {
+        "label": "(a)(i)",
+        "prompt": "Define the term 'neutralization'.",
+        "marks": 2,
+        "commandWords": [
+          "Define"
+        ],
+        "modelAnswer": "Neutralization is the reaction between an acid and a base (an alkali) in which hydrogen ions, H+, from the acid react with hydroxide ions, OH−, from the base to form water, giving a salt and water.",
+        "markScheme": [
+          "1 mark for a reaction between an acid and a base (an alkali) that produces a salt and water.",
+          "1 mark for the reaction of H+ ions with OH− ions to form water (H+ + OH− → H2O)."
+        ]
+      },
+      {
+        "label": "(a)(ii)",
+        "prompt": "Name the salt formed in this reaction and write the balanced chemical equation for the reaction.",
+        "marks": 2,
+        "commandWords": [
+          "Name"
+        ],
+        "modelAnswer": "The salt is sodium chloride.\nNaOH(aq) + HCl(aq) → NaCl(aq) + H2O(l)",
+        "markScheme": [
+          "1 mark for naming sodium chloride.",
+          "1 mark for the balanced equation with the correct formulae and state symbols: NaOH(aq) + HCl(aq) → NaCl(aq) + H2O(l)."
+        ]
+      },
+      {
+        "label": "(a)(iii)",
+        "prompt": "Write the ionic equation for this neutralization reaction.",
+        "marks": 2,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "H+(aq) + OH−(aq) → H2O(l)\nThe sodium ions and chloride ions are spectator ions and are left out of the equation.",
+        "markScheme": [
+          "1 mark for the correct ionic equation, H+(aq) + OH−(aq) → H2O(l).",
+          "1 mark for the correct state symbols (H+ and OH− aqueous, water liquid)."
+        ]
+      },
+      {
+        "label": "(a)(iv)",
+        "prompt": "Calculate the heat energy, in joules, released when the acid and the alkali are mixed.",
+        "marks": 3,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Total mass of mixture = 25.0 + 25.0 = 50.0 g. Temperature rise, Delta T = 31.7 − 25.0 = 6.7 °C. E = mc(Delta T) = 50.0 × 4.2 × 6.7 = 1407 J",
+        "markScheme": [
+          "1 mark for the mass of the mixture (50.0 g) and the temperature rise (6.7 °C).",
+          "1 mark for using E = mc(Delta T) with c = 4.2 J/g°C.",
+          "1 mark for the answer 1407 J (accept 1400 - 1410 J)."
+        ]
+      },
+      {
+        "label": "(a)(v)",
+        "prompt": "Calculate the number of moles of water formed, and hence calculate the enthalpy change of neutralization, in kJ per mole, for this reaction.",
+        "marks": 3,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "n(NaOH) = c × V = 1.00 × 0.0250 = 0.0250 mol, and from the equation 1 mol NaOH gives 1 mol water, so n(H2O) = 0.0250 mol. Enthalpy change = −1407 / 0.0250 = −56280 J/mol = −56.3 kJ/mol",
+        "markScheme": [
+          "1 mark for n = 0.0250 mol (1.00 × 0.0250).",
+          "1 mark for dividing the heat released by the number of moles (1407 / 0.0250).",
+          "1 mark for the answer −56.3 kJ/mol (accept −56.0 to −56.3 kJ/mol; the negative sign is required)."
+        ]
+      },
+      {
+        "label": "(a)(vi)",
+        "prompt": "Suggest why the value obtained experimentally is slightly less negative than the accepted value of −57.3 kJ/mol.",
+        "marks": 1,
+        "commandWords": [
+          "Suggest"
+        ],
+        "modelAnswer": "Some of the heat released is lost to the surroundings (the cup, the air and the thermometer), so a smaller temperature rise is measured than the reaction actually produces.",
+        "markScheme": [
+          "1 mark for heat loss to the surroundings (the cup, the air or the thermometer); accept another sensible reason such as incomplete reaction."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "State the colour of phenolphthalein in an acidic solution and in an alkaline solution.",
+        "marks": 2,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "Phenolphthalein is colourless in an acidic solution and pink (magenta) in an alkaline solution.",
+        "markScheme": [
+          "1 mark for colourless in an acidic solution.",
+          "1 mark for pink (or magenta) in an alkaline solution."
+        ]
+      }
+    ],
+    "examinerTips": "In an energy calculation the mass used in E = mc(Delta T) is the mass of the whole mixture, and the temperature change is the rise, not the final temperature. Never forget the negative sign when you report an enthalpy change of neutralization - the reaction releases heat."
+  },
+  {
+    "id": "ch-p2-05",
+    "type": "write",
+    "paper": 2,
+    "section": "Section B",
+    "title": "Redox, oxidation numbers and the extraction of metals",
+    "topic": "defining-redox",
+    "commandWords": [
+      "Define",
+      "State",
+      "Calculate",
+      "Explain"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 24,
+    "source": "Redox reactions involve the transfer of electrons.\n\nReaction 1: Fe(s) + CuSO4(aq) → FeSO4(aq) + Cu(s)\nReaction 2: 2Fe(s) + 3Cl2(g) → 2FeCl3(s)\n\nIron is extracted from haematite, Fe2O3, in a blast furnace. Carbon monoxide, formed by burning coke in a limited supply of air, reduces the haematite:\n\nFe2O3(s) + 3CO(g) → 2Fe(l) + 3CO2(g)",
+    "prompt": "Answer ALL parts. Show your working for every oxidation number and half-equation, and remember to write the state symbols where they are asked for.",
+    "planningHints": [
+      "Oxidation is the loss of electrons; reduction is the gain of electrons. Remember OIL RIG.",
+      "An oxidising agent accepts electrons and is itself reduced; a reducing agent gives electrons away and is itself oxidised.",
+      "An oxidation number is the charge an atom would have if the compound were ionic. In a neutral compound the oxidation numbers add up to zero, and in an ion they add up to the charge on the ion.",
+      "Use the usual values: oxygen is −2 (except in peroxides) and hydrogen is +1."
+    ],
+    "parts": [
+      {
+        "label": "(a)(i)",
+        "prompt": "Define the term 'oxidation' in terms of electrons, and define an 'oxidising agent'.",
+        "marks": 3,
+        "commandWords": [
+          "Define"
+        ],
+        "modelAnswer": "Oxidation is the loss of electrons by a substance. An oxidising agent is a substance that accepts (gains) electrons from another substance, so it causes that substance to be oxidised; the oxidising agent is itself reduced.",
+        "markScheme": [
+          "1 mark for oxidation = loss of electrons.",
+          "1 mark for an oxidising agent accepting (gaining) electrons.",
+          "1 mark for an oxidising agent causing another substance to be oxidised and itself being reduced."
+        ]
+      },
+      {
+        "label": "(a)(ii)",
+        "prompt": "For Reaction 1, state the oxidation number of iron before and after the reaction, and the oxidation number of copper before and after the reaction.",
+        "marks": 4,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "In Fe(s) the oxidation number of iron is 0; in FeSO4(aq) it is +2, so iron has been oxidised (its oxidation number has increased). In CuSO4(aq) the oxidation number of copper is +2; in Cu(s) it is 0, so copper has been reduced (its oxidation number has decreased).",
+        "markScheme": [
+          "1 mark for iron: 0 in Fe and +2 in FeSO4.",
+          "1 mark for stating that iron has been oxidised (its oxidation number has increased).",
+          "1 mark for copper: +2 in CuSO4 and 0 in Cu.",
+          "1 mark for stating that copper has been reduced (its oxidation number has decreased)."
+        ]
+      },
+      {
+        "label": "(a)(iii)",
+        "prompt": "Write the two half-equations for Reaction 1 and identify the reducing agent.",
+        "marks": 2,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "Oxidation: Fe(s) → Fe2+(aq) + 2e−\nReduction: Cu2+(aq) + 2e− → Cu(s)\nIron is the reducing agent because it loses electrons and so reduces the copper(II) ions.",
+        "markScheme": [
+          "1 mark for the two correct half-equations, Fe → Fe2+ + 2e− and Cu2+ + 2e− → Cu.",
+          "1 mark for identifying iron (Fe) as the reducing agent."
+        ]
+      },
+      {
+        "label": "(b)(i)",
+        "prompt": "State why copper can be found in the Earth as the uncombined metal, but iron is always found combined with other elements in its ores.",
+        "marks": 1,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "Copper is low in the reactivity series and is unreactive enough to occur naturally as the metal, while iron is more reactive and so reacts with other elements (for example oxygen) to form compounds.",
+        "markScheme": [
+          "1 mark for copper being low in the reactivity series (less reactive) while iron is more reactive and therefore forms compounds."
+        ]
+      },
+      {
+        "label": "(b)(ii)",
+        "prompt": "Calculate the oxidation number of iron in Fe2O3 and of carbon in CO.",
+        "marks": 2,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "In Fe2O3: 2x + 3(−2) = 0, so 2x = +6 and x = +3; the oxidation number of iron is +3.\nIn CO: x + (−2) = 0, so x = +2; the oxidation number of carbon is +2.",
+        "markScheme": [
+          "1 mark for iron = +3 in Fe2O3, with the working 2x − 6 = 0.",
+          "1 mark for carbon = +2 in CO, with the working x − 2 = 0."
+        ]
+      },
+      {
+        "label": "(b)(iii)",
+        "prompt": "Explain, using the oxidation numbers you obtained in (b)(ii), why the extraction of iron from haematite by carbon monoxide is a redox reaction.",
+        "marks": 3,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "In Fe2O3 the oxidation number of iron is +3 and in the iron produced it is 0, so iron has been reduced (its oxidation number has decreased). In CO the oxidation number of carbon is +2 and in CO2 it is +4, so carbon has been oxidised (its oxidation number has increased). Reduction and oxidation occur together in the same reaction, so it is a redox reaction.",
+        "markScheme": [
+          "1 mark for iron changing from +3 to 0 (reduction).",
+          "1 mark for carbon changing from +2 to +4 (oxidation).",
+          "1 mark for stating that reduction and oxidation occur together, so the reaction is a redox reaction."
+        ]
+      }
+    ],
+    "examinerTips": "An oxidation number is the charge an atom would have if the compound were ionic. Work it out from the formula and the usual values (oxygen −2, hydrogen +1): the sum of the oxidation numbers is zero in a neutral compound and equals the charge on the ion for a polyatomic ion."
+  },
+  {
+    "id": "ch-p2-06",
+    "type": "write",
+    "paper": 2,
+    "section": "Section B",
+    "title": "Hydrocarbons: alkanes, alkenes and polymers",
+    "topic": "hydrocarbons-alkanes",
+    "commandWords": [
+      "Name",
+      "State",
+      "Draw",
+      "Describe",
+      "Calculate"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 24,
+    "source": "Pentane and pentene are two hydrocarbons, each containing five carbon atoms. Pentane has the molecular formula C5H12 and pentene has the molecular formula C5H10. Under suitable conditions ethene, C2H4, is converted into poly(ethene), a common synthetic polymer.\n\n[Relative atomic masses, Ar: H = 1.0, C = 12.0]",
+    "prompt": "Answer ALL parts. Draw displayed (full structural) formulae where they are asked for, and show the working for the calculation.",
+    "planningHints": [
+      "A homologous series is a family of compounds with the same general formula and the same functional group, differing by one CH2 unit from member to member.",
+      "In a displayed (full structural) formula every bond is drawn; do not use a condensed formula such as CH3CH2CH3.",
+      "Isomers have the same molecular formula but a different arrangement of the carbon atoms.",
+      "An alkene decolourises bromine water by addition; an alkane does not react, so there is no colour change.",
+      "Relative molecular mass is found by adding the relative atomic masses of all the atoms in the molecule."
+    ],
+    "parts": [
+      {
+        "label": "(a)(i)",
+        "prompt": "Name the homologous series to which pentane and pentene belong.",
+        "marks": 2,
+        "commandWords": [
+          "Name"
+        ],
+        "modelAnswer": "Pentane belongs to the alkanes and pentene belongs to the alkenes.",
+        "markScheme": [
+          "1 mark for alkanes (pentane).",
+          "1 mark for alkenes (pentene)."
+        ]
+      },
+      {
+        "label": "(a)(ii)",
+        "prompt": "State the general formula of the alkane series and of the alkene series.",
+        "marks": 2,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "Alkanes: CnH2n+2. Alkenes: CnH2n.",
+        "markScheme": [
+          "1 mark for CnH2n+2 (alkanes).",
+          "1 mark for CnH2n (alkenes)."
+        ]
+      },
+      {
+        "label": "(a)(iii)",
+        "prompt": "Write the balanced chemical equation for the complete combustion of pentane in excess oxygen.",
+        "marks": 2,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "C5H12 + 8O2 → 5CO2 + 6H2O",
+        "markScheme": [
+          "1 mark for the correct products, 5CO2 and 6H2O.",
+          "1 mark for the correctly balanced equation, C5H12 + 8O2 → 5CO2 + 6H2O."
+        ]
+      },
+      {
+        "label": "(a)(iv)",
+        "prompt": "Draw the fully displayed (full structural) formula of pentane, and of one other isomer of pentane.",
+        "marks": 3,
+        "commandWords": [
+          "Draw"
+        ],
+        "modelAnswer": "Pentane is the unbranched chain of five carbon atoms, CH3–CH2–CH2–CH2–CH3, drawn with every carbon bonded to enough hydrogen atoms to make four bonds. A second isomer is 2-methylbutane: a chain of four carbon atoms with a CH3 group attached to the second carbon atom. Both structures have the molecular formula C5H12.",
+        "markScheme": [
+          "1 mark for the correct unbranched displayed structure of pentane (five carbon atoms in a single chain).",
+          "1 mark for a correctly drawn branched isomer (for example 2-methylbutane) showing all the bonds and hydrogen atoms.",
+          "1 mark for both structures having the same molecular formula, C5H12."
+        ]
+      },
+      {
+        "label": "(a)(v)",
+        "prompt": "Describe a chemical test that would distinguish pentane from pentene, stating the reagent used and the observation in each case.",
+        "marks": 2,
+        "commandWords": [
+          "Describe"
+        ],
+        "modelAnswer": "Add bromine water (orange-brown) to each hydrocarbon. Pentene, an alkene, decolourises the bromine water (orange-brown to colourless) by addition. Pentane, an alkane, gives no visible change, so the bromine water stays orange-brown.",
+        "markScheme": [
+          "1 mark for naming bromine water (accept acidified potassium manganate(VII)).",
+          "1 mark for the observation that pentene decolourises it while pentane does not."
+        ]
+      },
+      {
+        "label": "(a)(vi)",
+        "prompt": "Name the type of polymerisation by which ethene is converted into poly(ethene), and state ONE problem caused by the disposal of synthetic polymers.",
+        "marks": 2,
+        "commandWords": [
+          "Name",
+          "State"
+        ],
+        "modelAnswer": "Ethene undergoes addition polymerisation: many ethene molecules join together to give poly(ethene) with no other product. Synthetic polymers are not biodegradable, so they are not broken down by microorganisms, and they persist in the environment, causing litter and polluting land and oceans. Burning them can also release toxic gases.",
+        "markScheme": [
+          "1 mark for addition polymerisation.",
+          "1 mark for a valid problem: synthetic polymers are non-biodegradable and persist in the environment (accept: they cause litter or pollution, harm wildlife, or release toxic gases when burned)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the relative molecular mass of pentane, C5H12, and hence the number of moles in 7.2 g of pentane.",
+        "marks": 2,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Mr(C5H12) = (5 × 12.0) + (12 × 1.0) = 60.0 + 12.0 = 72.0. n = m / Mr = 7.2 / 72.0 = 0.10 mol",
+        "markScheme": [
+          "1 mark for Mr = 72.0.",
+          "1 mark for n = 0.10 mol (0.100 mol)."
+        ]
+      }
+    ],
+    "examinerTips": "In a displayed (full structural) formula every bond is drawn; a condensed formula such as CH3CH2CH2CH2CH3 is not a displayed structure. An isomer must have the same molecular formula but a different arrangement of the carbon atoms."
+  }
+]
