@@ -311,3 +311,8 @@
     white-space: normal;
   }
 }
+
+.tp-lab-type {
+  color: #475569;
+  font-size: 0.82em;
+}
