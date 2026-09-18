@@ -1,0 +1,985 @@
+[
+  {
+    "id": "math-p2-01",
+    "type": "write",
+    "paper": 2,
+    "section": "Section I",
+    "title": "Sets: a survey of sport in a class",
+    "topic": "real-numbers",
+    "commandWords": [
+      "Draw",
+      "Calculate",
+      "Describe"
+    ],
+    "marks": 5,
+    "suggestedMinutes": 7,
+    "source": "Forty students in a Form 4 class were asked which of two sports they play.\n\n25 students play football (F).\n20 students play cricket (C).\n8 students play both football and cricket.\n\nEvery student in the class answered the question.",
+    "prompt": "Answer ALL parts of the question. (This question is the Sets question of Section I and carries 5 marks.)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Draw a Venn diagram to show this information, writing in the number of students in each region.",
+        "marks": 2,
+        "commandWords": [
+          "Draw"
+        ],
+        "modelAnswer": "Draw two overlapping circles labelled F and C inside a rectangle for the class. The overlap holds 8 (both sports). Football only = 25 - 8 = 17. Cricket only = 20 - 8 = 12. Outside the circles, inside the rectangle, write 3 for the students who play neither sport.",
+        "markScheme": [
+          "1 mark for two correctly labelled overlapping sets with 8 in the intersection.",
+          "1 mark for 17 in F only, 12 in C only and 3 outside the circles.",
+          "No marks for an unlabelled diagram or for regions that do not add up to 40."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the number of students in the class who play neither sport.",
+        "marks": 2,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "n(F U C) = 17 + 8 + 12 = 37. Students who play neither = 40 - 37 = 3.",
+        "markScheme": [
+          "1 mark for n(F U C) = 37 (or for adding the regions correctly).",
+          "1 mark for 40 - 37 = 3."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Describe, in words, the set F ' (F complement) in this context, and state how many students it contains.",
+        "marks": 1,
+        "commandWords": [
+          "Describe",
+          "State"
+        ],
+        "modelAnswer": "F ' is the set of students who do NOT play football. It contains the 12 cricket-only students and the 3 students who play neither sport, that is 15 students in all.",
+        "markScheme": [
+          "1 mark for a correct description (students who do not play football) with the cardinality 15."
+        ]
+      }
+    ],
+    "planningHints": [
+      "Start with the overlap, then take it away from each total.",
+      "Check the four regions add to 40."
+    ],
+    "examinerTips": "Diagrams must be pencil-sharp and labelled; examiners cannot award a mark for a region they cannot identify."
+  },
+  {
+    "id": "math-p2-02",
+    "type": "write",
+    "paper": 2,
+    "section": "Section I",
+    "title": "Consumer arithmetic: discounts, hire purchase and commission",
+    "topic": "fractions-decimals-percentages",
+    "commandWords": [
+      "Calculate",
+      "Compare",
+      "Evaluate"
+    ],
+    "marks": 10,
+    "suggestedMinutes": 13,
+    "source": "A furniture and appliance store advertises a refrigerator with a marked price of $4,800.00.\n\nThe store offers two ways of buying it:\n\n  Cash: a discount of 15% off the marked price.\n  Hire purchase: a deposit of 20% of the marked price and 12 monthly instalments of $372.00.\n\nThe store also advertises a savings plan paying 6% per annum compound interest, and its sales staff earn a basic wage of $2,400.00 a month plus a commission of 2% on all sales above $50,000.00.",
+    "prompt": "Answer ALL parts of the question, showing your working. (This question is the Consumer Arithmetic and Computation question of Section I and carries 10 marks.)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Calculate the cash price of the refrigerator.",
+        "marks": 2,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Discount = 15% of $4,800.00 = 0.15 x 4,800.00 = $720.00.\nCash price = $4,800.00 - $720.00 = $4,080.00.",
+        "markScheme": [
+          "1 mark for finding the discount, $720.00.",
+          "1 mark for the cash price, $4,080.00.",
+          "Award the answer mark for their own correct subtraction even if the discount is wrong."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the total hire-purchase price and the extra amount paid compared with the cash price.",
+        "marks": 3,
+        "commandWords": [
+          "Calculate",
+          "Compare"
+        ],
+        "modelAnswer": "Deposit = 20% of $4,800.00 = $960.00.\nInstalments = 12 x $372.00 = $4,464.00.\nTotal hire purchase = $960.00 + $4,464.00 = $5,424.00.\nExtra paid = $5,424.00 - $4,080.00 = $1,344.00.",
+        "markScheme": [
+          "1 mark for the deposit, $960.00.",
+          "1 mark for the total hire-purchase price, $5,424.00.",
+          "1 mark for the extra amount, $1,344.00.",
+          "Follow through their cash price from (a) for the extra amount."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "A customer invests $8,000.00 at 6% per annum compound interest for 2 years. Calculate the total interest earned.",
+        "marks": 3,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Amount = P(1 + r)^n = 8,000.00 x (1.06)^2 = 8,000.00 x 1.1236 = $8,988.80.\nInterest = $8,988.80 - $8,000.00 = $988.80.",
+        "markScheme": [
+          "1 mark for using the compound-interest formula with n = 2.",
+          "1 mark for the amount, $8,988.80 (or 1 mark for 8,000.00 x 1.06 = 8,480.00 as a first step).",
+          "1 mark for the interest, $988.80."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "A sales assistant sells $78,000.00 worth of goods in March. Calculate her total earnings for the month.",
+        "marks": 2,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Sales above $50,000.00 = $78,000.00 - $50,000.00 = $28,000.00.\nCommission = 2% of 28,000.00 = $560.00.\nTotal earnings = $2,400.00 + $560.00 = $2,960.00.",
+        "markScheme": [
+          "1 mark for the commission, $560.00 (commission is paid only on sales ABOVE $50,000.00).",
+          "1 mark for total earnings, $2,960.00."
+        ]
+      }
+    ],
+    "planningHints": [
+      "Deal with each part separately and label your answers (a), (b), (c), (d).",
+      "Percentages can be found with a decimal multiplier: 15% off means multiply by 0.85."
+    ],
+    "examinerTips": "In (b) read the question again at the end: it asks for the total AND the extra amount."
+  },
+  {
+    "id": "math-p2-03",
+    "type": "write",
+    "paper": 2,
+    "section": "Section I",
+    "title": "Measurement: the school garden",
+    "topic": "perimeter-area",
+    "commandWords": [
+      "Calculate",
+      "Determine",
+      "Justify"
+    ],
+    "marks": 10,
+    "suggestedMinutes": 13,
+    "source": "A school is laying out a rectangular garden measuring 12 m by 8 m.\n\nInside the garden there is a circular fish pond of diameter 4 m.\n\nThe rest of the garden is to be sown with grass seed, which is sold in boxes. Each box covers 10 m2 and costs $18.50.\n\nA fence is to be erected around the whole garden, leaving a gate opening of 1.2 m. (Take pi = 3.14.)",
+    "prompt": "Answer ALL parts of the question, showing your working. (This question is the Measurement question of Section I and carries 10 marks.)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Calculate the area of the garden.",
+        "marks": 1,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Area = length x width = 12 x 8 = 96 m2.",
+        "markScheme": [
+          "1 mark for 96 m2."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the area of the pond.",
+        "marks": 2,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Radius = 4 / 2 = 2 m.\nArea = pi r^2 = 3.14 x 2^2 = 12.56 m2.",
+        "markScheme": [
+          "1 mark for the radius, 2 m.",
+          "1 mark for using pi r^2 to get 12.56 m2 (accept 12.56)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Calculate the area that will be sown with grass seed.",
+        "marks": 1,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "96 - 12.56 = 83.44 m2.",
+        "markScheme": [
+          "1 mark for 83.44 m2 (follow through an incorrect pond area).",
+          "Accept 83.44 m2."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Determine the LEAST number of boxes of seed that must be bought, and the cost of the seed.",
+        "marks": 3,
+        "commandWords": [
+          "Determine",
+          "Justify"
+        ],
+        "modelAnswer": "Boxes needed = 83.44 / 10 = 8.344, so 9 whole boxes must be bought (you cannot buy part of a box).\nCost = 9 x $18.50 = $166.50.",
+        "markScheme": [
+          "1 mark for dividing the grass area by 10 to get about 8.344 boxes.",
+          "1 mark for rounding UP to 9 boxes and saying why.",
+          "1 mark for the cost, $166.50.",
+          "No mark for 8 boxes: part boxes cannot be bought."
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "Calculate the length of fencing needed for the garden.",
+        "marks": 3,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Perimeter = 2(l + w) = 2(12 + 8) = 40 m.\nFencing = 40 - 1.2 = 38.8 m.",
+        "markScheme": [
+          "1 mark for the perimeter, 40 m.",
+          "1 mark for subtracting the 1.2 m gate.",
+          "1 mark for the answer 38.8 m."
+        ]
+      }
+    ],
+    "planningHints": [
+      "Sketch the garden and write the measurements on it before you start.",
+      "In (d) think about what is physically possible, not just the arithmetic."
+    ],
+    "examinerTips": "Rounding up in (d) is worth a mark of its own: the reason must appear in your answer."
+  },
+  {
+    "id": "math-p2-04",
+    "type": "write",
+    "paper": 2,
+    "section": "Section I",
+    "title": "Statistics: goals scored in a season",
+    "topic": "central-tendency",
+    "commandWords": [
+      "State",
+      "Calculate",
+      "Describe"
+    ],
+    "marks": 10,
+    "suggestedMinutes": 13,
+    "source": "A football team played 20 matches in a season, and the number of goals scored in each match was recorded:\n\n  0 goals: 2 matches\n  1 goals: 5 matches\n  2 goals: 6 matches\n  3 goals: 4 matches\n  4 goals: 2 matches\n  5 goals: 1 matches\n\nTotal matches: 20. Total goals scored: 42.",
+    "prompt": "Answer ALL parts of the question. (This question is the Statistics question of Section I and carries 10 marks.)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "State the mode of the number of goals scored.",
+        "marks": 1,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "The mode is 2 goals, because 2 goals were scored in 6 matches, more often than any other number.",
+        "markScheme": [
+          "1 mark for 2 (with or without a reason)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the mean number of goals scored per match.",
+        "marks": 3,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Mean = total goals / number of matches = 42 / 20 = 2.10 goals per match.",
+        "markScheme": [
+          "1 mark for using total goals / number of matches.",
+          "1 mark for the total, 42 goals (from the frequency table).",
+          "1 mark for 2.10."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Find the median number of goals scored.",
+        "marks": 2,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "With 20 matches the median is the mean of the 10th and 11th values when the results are put in order. Both fall in the group of 6 matches with 2 goals, so the median is 2 goals.",
+        "markScheme": [
+          "1 mark for ordering the 20 results (or for finding the 10th and 11th values).",
+          "1 mark for the median, 2 (accept 2.0)."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "In the next match the team scores 7 goals. State, with a reason, how this affects the mean number of goals per match.",
+        "marks": 2,
+        "commandWords": [
+          "State",
+          "Justify"
+        ],
+        "modelAnswer": "The new mean is (42 + 7) / 21 = 2.33 goals, so the mean increases from 2.10 to 2.33. The mean rises because 7 is greater than the old mean.",
+        "markScheme": [
+          "1 mark for the new mean, 2.33.",
+          "1 mark for stating that the mean increases, with the reason that 7 exceeds the previous mean."
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "A match is selected at random from the 20 matches. Find the probability that exactly 2 goals were scored in it.",
+        "marks": 2,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "P(2 goals) = 6 / 20 = 0.30 = 3/10.",
+        "markScheme": [
+          "1 mark for the fraction 6/20.",
+          "1 mark for the answer 0.3 or 3/10 in its simplest form."
+        ]
+      }
+    ],
+    "planningHints": [
+      "A frequency table is a quick way to record the numbers before you calculate.",
+      "Show the working for the total: 0x2 + 1x5 + 2x6 + ..."
+    ],
+    "examinerTips": "In (d) 'state ... with a reason' means both the effect and why."
+  },
+  {
+    "id": "math-p2-05",
+    "type": "write",
+    "paper": 2,
+    "section": "Section I",
+    "title": "Algebra: simultaneous equations, quadratics and inequalities",
+    "topic": "quadratic-equations",
+    "commandWords": [
+      "Solve",
+      "Factorise",
+      "Form",
+      "Justify"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 20,
+    "source": "A small business makes and sells x items a week. Its income is modelled by the straight-line graph y = 3x - 5 and its costs are modelled by the line y = 11 - x, where y is in hundreds of dollars. The business breaks even when its income equals its costs.\n\nIts profit for a different product is modelled by the quadratic expression x2 - 7x + 12 (in hundreds of dollars) for x thousand items sold, and it is preparing a rectangular sign whose length is (x + 3) cm and width (x - 1) cm.",
+    "prompt": "Answer ALL parts of the question, showing your working. (This question is the Algebra question of Section I and carries 15 marks.)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Solve the pair of simultaneous equations y = 3x - 5 and y = 11 - x.",
+        "marks": 4,
+        "commandWords": [
+          "Solve"
+        ],
+        "modelAnswer": "3x - 5 = 11 - x\n3x + x = 11 + 5\n4x = 16\nx = 4\ny = 3(4) - 5 = 7\nCheck with the second equation: 11 - 4 = 7, so the solution is x = 4, y = 7.",
+        "markScheme": [
+          "1 mark for equating the two expressions (3x - 5 = 11 - x).",
+          "1 mark for collecting terms to get 4x = 16.",
+          "1 mark for x = 4.",
+          "1 mark for y = 7 (or for checking the second equation)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Factorise x2 - 7x + 12 and hence solve x2 - 7x + 12 = 0.",
+        "marks": 3,
+        "commandWords": [
+          "Factorise",
+          "Solve"
+        ],
+        "modelAnswer": "x2 - 7x + 12 = (x - 3)(x - 4).\nSo (x - 3)(x - 4) = 0, giving x = 3 or x = 4.",
+        "markScheme": [
+          "1 mark for (x - 3)(x - 4) (or for two correct factors).",
+          "1 mark for x = 3.",
+          "1 mark for x = 4."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Solve the inequality 5x - 3 < 2x + 9 and show the solution on a number line.",
+        "marks": 3,
+        "commandWords": [
+          "Solve"
+        ],
+        "modelAnswer": "5x - 3 < 2x + 9\n5x - 2x < 9 + 3\n3x < 12\nx < 4\nOn a number line, draw an open circle at 4 and shade the arrow pointing to the left.",
+        "markScheme": [
+          "1 mark for 3x < 12.",
+          "1 mark for x < 4.",
+          "1 mark for a correct number line: open (unshaded) circle at 4, arrow to the left."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "The rectangular sign has length (x + 3) cm and width (x - 1) cm, and its area is 45 cm2. Form an equation in x, solve it, and state the dimensions of the sign.",
+        "marks": 5,
+        "commandWords": [
+          "Form",
+          "Solve",
+          "Justify"
+        ],
+        "modelAnswer": "(x + 3)(x - 1) = 45\nx2 + 2x - 3 = 45\nx2 + 2x - 48 = 0\n(x + 8)(x - 6) = 0\nx = -8 or x = 6.\nA length cannot be negative, so x = 6.\nLength = 6 + 3 = 9 cm, width = 6 - 1 = 5 cm.\nCheck: 9 x 5 = 45 cm2.",
+        "markScheme": [
+          "1 mark for forming (x + 3)(x - 1) = 45.",
+          "1 mark for expanding to x2 + 2x - 48 = 0.",
+          "1 mark for factorising to (x + 8)(x - 6) = 0.",
+          "1 mark for rejecting x = -8 with the reason that a length must be positive.",
+          "1 mark for 9 cm by 5 cm (or for checking 9 x 5 = 45)."
+        ]
+      }
+    ],
+    "planningHints": [
+      "In (a) both expressions equal y, so they equal each other.",
+      "In (d) always test both roots against the context of the question."
+    ],
+    "examinerTips": "Do not lose the context marks: a root that is mathematically correct can still be rejected with a reason, and that reason earns a mark."
+  },
+  {
+    "id": "math-p2-06",
+    "type": "write",
+    "paper": 2,
+    "section": "Section I",
+    "title": "Relations, functions and graphs: the line through A and B",
+    "topic": "coordinate-geometry",
+    "commandWords": [
+      "Calculate",
+      "Determine",
+      "Evaluate"
+    ],
+    "marks": 10,
+    "suggestedMinutes": 13,
+    "source": "The points A(2, 1) and B(6, 5) lie on a straight line.\n\nThe function f is defined by f(x) = 2x2 - 3x + 1.",
+    "prompt": "Answer ALL parts of the question, showing your working. (This question is the Relations, Functions and Graphs question of Section I and carries 10 marks.)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Calculate the gradient of the line AB.",
+        "marks": 2,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Gradient = (y2 - y1)/(x2 - x1) = (5 - 1)/(6 - 2) = 4/4 = 1.",
+        "markScheme": [
+          "1 mark for substituting into (y2 - y1)/(x2 - x1).",
+          "1 mark for the gradient 1."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Determine the equation of the line AB in the form y = mx + c.",
+        "marks": 2,
+        "commandWords": [
+          "Determine"
+        ],
+        "modelAnswer": "m = 1, and A(2, 1) lies on the line, so 1 = 1(2) + c, giving c = -1.\nThe equation is y = x - 1.",
+        "markScheme": [
+          "1 mark for substituting a point into y = x + c to find c = -1.",
+          "1 mark for y = x - 1."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Find the coordinates of the point where the line AB crosses the x-axis.",
+        "marks": 2,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "At the x-axis y = 0: 0 = x - 1, so x = 1. The line crosses the x-axis at (1, 0).",
+        "markScheme": [
+          "1 mark for putting y = 0 (or reading the intercept from a sketch).",
+          "1 mark for (1, 0)."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Find the coordinates of the midpoint of AB.",
+        "marks": 2,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Midpoint = ((2 + 6)/2, (1 + 5)/2) = (4, 3).",
+        "markScheme": [
+          "1 mark for adding the coordinates correctly.",
+          "1 mark for (4, 3)."
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "Evaluate f(-2) for f(x) = 2x2 - 3x + 1.",
+        "marks": 2,
+        "commandWords": [
+          "Evaluate"
+        ],
+        "modelAnswer": "f(-2) = 2(-2)^2 - 3(-2) + 1 = 2(4) + 6 + 1 = 8 + 6 + 1 = 15.",
+        "markScheme": [
+          "1 mark for 2(4) - 3(-2) + 1 with the signs handled correctly.",
+          "1 mark for 15.",
+          "Common error: (-2)^2 = 4, not -4."
+        ]
+      }
+    ],
+    "planningHints": [
+      "A sketch of the two points helps you see whether the gradient should be positive.",
+      "For f(-2) write the substitution out in full before simplifying."
+    ],
+    "examinerTips": "In (c) the x-axis means y = 0; in (e) watch the signs of a negative input."
+  },
+  {
+    "id": "math-p2-07",
+    "type": "write",
+    "paper": 2,
+    "section": "Section I",
+    "title": "Geometry and trigonometry: the flagpole, the circle and the cosine rule",
+    "topic": "trig-ratios",
+    "commandWords": [
+      "Calculate",
+      "Explain",
+      "Justify"
+    ],
+    "marks": 20,
+    "suggestedMinutes": 27,
+    "source": "A vertical flagpole stands on level ground. A straight wire runs from the top of the pole to a point on the ground 9 m from the foot of the pole. The pole is 12 m tall.\n\nIn a different diagram, AB is a diameter of a circle with centre O and C is a point on the circumference. Angle ABC = 35 degrees.\n\nIn triangle XYZ, XY = 7 cm, XZ = 9 cm and angle YXZ = 60 degrees.\n\nFinally, a ladder 5 m long rests against a vertical wall with its foot 2 m from the wall.",
+    "prompt": "Answer ALL parts of the question, showing your working. (This question is the Geometry and Trigonometry question of Section I and carries 20 marks.)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Calculate the length of the wire from the top of the flagpole to the point on the ground.",
+        "marks": 3,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "The pole is vertical, so the wire, the pole and the ground form a right-angled triangle with the right angle at the foot of the pole.\nWire^2 = 12^2 + 9^2 = 144 + 81 = 225\nWire = sqrt(225) = 15 m.",
+        "markScheme": [
+          "1 mark for recognising a right-angled triangle and using Pythagoras' theorem.",
+          "1 mark for 144 + 81 = 225.",
+          "1 mark for 15 m (accept 15 m)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the angle of elevation of the top of the pole from the point on the ground.",
+        "marks": 3,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "tan(theta) = opposite/adjacent = 12/9 = 1.3333\ntheta = tan^-1(1.3333) = 53.1 degrees (to the nearest 0.1 degree).",
+        "markScheme": [
+          "1 mark for choosing tan with opposite 12 and adjacent 9.",
+          "1 mark for 1.3333 or for tan^-1(4/3).",
+          "1 mark for 53.1 degrees (accept 53 degrees or 53.1 degrees)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Explain why angle ACB is a right angle, and calculate the size of angle BAC.",
+        "marks": 5,
+        "commandWords": [
+          "Explain",
+          "Calculate"
+        ],
+        "modelAnswer": "Angle ACB is the angle in a semicircle: AB is a diameter, so the angle subtended by AB at any point C on the circumference is 90 degrees.\nIn triangle ACB, the angles add to 180 degrees:\nangle BAC = 180 - 90 - 35 = 55 degrees.",
+        "markScheme": [
+          "1-2 marks for the reason: the angle in a semicircle is a right angle (2 marks).",
+          "1 mark for using the angle sum of a triangle (180 degrees).",
+          "1 mark for 90 + 35 = 125.",
+          "1 mark for 55 degrees."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "In triangle XYZ, calculate (i) the length YZ and (ii) the area of triangle XYZ.",
+        "marks": 6,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "(i) Cosine rule: YZ^2 = XY^2 + XZ^2 - 2(XY)(XZ)cos(X)\n= 7^2 + 9^2 - 2(7)(9)cos 60 degrees\n= 49 + 81 - 63.0\n= 67.0\nYZ = sqrt(67.0) = 8.19 cm.\n\n(ii) Area = 1/2 x XY x XZ x sin(X) = 0.5 x 7 x 9 x sin 60 degrees = 0.5 x 7 x 9 x 0.8660 = 27.28 cm2.",
+        "markScheme": [
+          "1 mark for the correct form of the cosine rule.",
+          "1 mark for substituting the three values correctly.",
+          "1 mark for YZ^2 = 67.0.",
+          "1 mark for YZ = 8.19 cm (accept 8.2 cm).",
+          "1 mark for the area formula 1/2 ab sin C.",
+          "1 mark for the area, 27.28 cm2 (accept 27.3 cm2)."
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "Calculate the height the ladder reaches up the wall and the angle the ladder makes with the ground.",
+        "marks": 3,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Height^2 = 5^2 - 2^2 = 25 - 4 = 21, so height = sqrt(21) = 4.58 m.\ncos(theta) = 2/5 = 0.4, so theta = 66.4 degrees.",
+        "markScheme": [
+          "1 mark for using Pythagoras to get the height, 4.58 m.",
+          "1 mark for using cos (adjacent/hypotenuse) for the angle with the ground.",
+          "1 mark for 66.4 degrees."
+        ]
+      }
+    ],
+    "planningHints": [
+      "Draw a separate, labelled diagram for each part of this question.",
+      "Write down which ratio you are using (sin, cos or tan) and why."
+    ],
+    "examinerTips": "The angle of elevation is measured UP from the horizontal; name the sides of the triangle before you substitute into a ratio."
+  },
+  {
+    "id": "math-p2-08",
+    "type": "write",
+    "paper": 2,
+    "section": "Section I",
+    "title": "Combination question: the school water tank",
+    "topic": "volume-capacity",
+    "commandWords": [
+      "Calculate",
+      "Determine",
+      "Justify"
+    ],
+    "marks": 10,
+    "suggestedMinutes": 14,
+    "source": "A school is installing a cylindrical water tank to store water during the dry season. The tank has a radius of 1.5 m and a height of 2 m.\n\nThe inside of the tank, including the base, must be painted with two coats to protect the water. One litre of paint covers 8 m2.\n\nA pump fills the tank at 15 litres per minute. (Take pi = 3.14; 1 m3 = 1000 litres.)",
+    "prompt": "Answer ALL parts of the question, showing your working. (This is the combination question/investigation of Section I and carries 10 marks. It combines Measurement, Computation and Number Theory.)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Calculate the volume of the tank in cubic metres.",
+        "marks": 2,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "V = pi r^2 h = 3.14 x 1.5^2 x 2 = 3.14 x 2.25 x 2 = 14.13 m3.",
+        "markScheme": [
+          "1 mark for using pi r^2 h with r = 1.5 and h = 2.",
+          "1 mark for 14.13 m3 (accept 14.1 m3)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Determine how many litres of water the tank holds when full.",
+        "marks": 1,
+        "commandWords": [
+          "Determine"
+        ],
+        "modelAnswer": "14.13 m3 x 1000 = 14,130.00 litres.",
+        "markScheme": [
+          "1 mark for 14,130.00 litres (accept 14 130 litres)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Determine the least number of whole litres of paint that must be bought to give the inside of the tank two coats.",
+        "marks": 4,
+        "commandWords": [
+          "Determine",
+          "Justify"
+        ],
+        "modelAnswer": "Curved surface = 2 pi r h = 2 x 3.14 x 1.5 x 2 = 18.84 m2.\nBase = pi r^2 = 3.14 x 2.25 = 7.07 m2.\nOne coat = 18.84 + 7.07 = 25.91 m2.\nTwo coats = 2 x 25.91 = 51.81 m2.\nPaint = 51.81 / 8 = 6.48 litres, so 7 whole litres must be bought.",
+        "markScheme": [
+          "1 mark for the curved surface area, 18.84 m2.",
+          "1 mark for the base area, 7.07 m2.",
+          "1 mark for doubling to allow for two coats: 51.81 m2.",
+          "1 mark for rounding UP to 7 litres, with the reason that part litres cannot be bought."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "The pump is switched on at 08:00. Determine the time, to the nearest minute, at which the tank will be full.",
+        "marks": 3,
+        "commandWords": [
+          "Determine",
+          "Justify"
+        ],
+        "modelAnswer": "Time = 14,130.00 litres / 15 litres per minute = 942.0 minutes.\n942.0 minutes = 15 hours and 42 minutes.\n08:00 + 15 hours 42 minutes = 23:42.",
+        "markScheme": [
+          "1 mark for dividing the capacity by the flow rate to get 942.0 minutes.",
+          "1 mark for converting to 15 hours 42 minutes (not a decimal of an hour).",
+          "1 mark for 23:42 (accept 11:42 p.m.)."
+        ]
+      }
+    ],
+    "planningHints": [
+      "Part (c) is an 'investigation': decide what surfaces are painted and how many coats.",
+      "In (d) convert minutes into hours AND minutes before adding to the start time."
+    ],
+    "examinerTips": "Marks are given for the reasoning in (c) and (d), so state why you round up and how you converted the time."
+  },
+  {
+    "id": "math-p2-09",
+    "type": "write",
+    "paper": 2,
+    "section": "Section II",
+    "title": "Algebra and graphs: the height of a thrown ball",
+    "topic": "algebraic-expressions",
+    "commandWords": [
+      "Complete",
+      "Draw",
+      "Read",
+      "Solve"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 20,
+    "source": "A ball is thrown vertically upwards. Its height, h metres, above the ground after t seconds is given by h = 20t - 5t2.\n\nA table of values is to be completed for t = 0, 1, 2, 3 and 4, and the graph of h against t drawn on graph paper.",
+    "prompt": "Answer ALL parts of the question. (This is a Section II question carrying 15 marks; in the real Paper 02 you answer any TWO of the three Section II questions in about 20 minutes each.)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Complete the table of values for t = 0, 1, 2, 3 and 4, showing your substitutions for t = 2.",
+        "marks": 2,
+        "commandWords": [
+          "Complete"
+        ],
+        "modelAnswer": "t = 2: h = 20(2) - 5(2)^2 = 40 - 20 = 20 m.\nThe complete table is:\n  t = 0, h = 0 m\n  t = 1, h = 15 m\n  t = 2, h = 20 m\n  t = 3, h = 15 m\n  t = 4, h = 0 m",
+        "markScheme": [
+          "1 mark for h = 20 at t = 2 with the substitution shown.",
+          "1 mark for all five values correct: 0, 15, 20, 15, 0."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Draw the graph of h against t for 0 <= t <= 4, using a scale of 2 cm for 1 second on the t-axis and 1 cm for 5 m on the h-axis.",
+        "marks": 3,
+        "commandWords": [
+          "Draw"
+        ],
+        "modelAnswer": "Plot the points (0, 0), (1, 15), (2, 20), (3, 15) and (4, 0), then join them with a smooth curve. The curve is symmetrical about the line t = 2 and is highest at t = 2.",
+        "markScheme": [
+          "1 mark for plotting at least four points correctly.",
+          "1 mark for a smooth symmetrical curve (not straight lines between the points).",
+          "1 mark for correct labelling: axes named with units, a scale and a title."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "From your graph, state the maximum height reached by the ball and the time at which it occurs.",
+        "marks": 2,
+        "commandWords": [
+          "Read"
+        ],
+        "modelAnswer": "The maximum height is 20 m, reached at t = 2 seconds.",
+        "markScheme": [
+          "1 mark for 20 m.",
+          "1 mark for t = 2 seconds."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Solve 20t - 5t2 = 0 and explain what the two solutions mean in this problem.",
+        "marks": 3,
+        "commandWords": [
+          "Solve",
+          "Explain"
+        ],
+        "modelAnswer": "20t - 5t2 = 0\n5t(4 - t) = 0\nt = 0 or t = 4.\nt = 0 is the moment the ball is thrown (on the ground); t = 4 is the moment it returns to the ground.",
+        "markScheme": [
+          "1 mark for factorising 5t(4 - t) = 0 (or an equivalent method).",
+          "1 mark for t = 0 and t = 4.",
+          "1 mark for explaining both: the ball leaves the ground at 0 s and lands 4 s later."
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "Use your graph to find the two times at which the ball is 15 m above the ground.",
+        "marks": 2,
+        "commandWords": [
+          "Read"
+        ],
+        "modelAnswer": "Drawing the line h = 15 m across the graph cuts the curve at t = 1 s and t = 3 s.",
+        "markScheme": [
+          "1 mark for t = 1 s.",
+          "1 mark for t = 3 s."
+        ]
+      },
+      {
+        "label": "(f)",
+        "prompt": "Show that the ball is 10 m above the ground when t2 - 4t + 2 = 0, and solve this equation, giving your answers to 2 decimal places.",
+        "marks": 3,
+        "commandWords": [
+          "Show",
+          "Solve"
+        ],
+        "modelAnswer": "h = 10 gives 20t - 5t2 = 10.\nDividing by 5: 4t - t2 = 2, that is t2 - 4t + 2 = 0.\nUsing the formula: t = (4 +/- sqrt(16 - 8))/2 = (4 +/- sqrt(8))/2.\nsqrt(8) = 2.83, so t = 0.59 or t = 3.41 (2 d.p.).",
+        "markScheme": [
+          "1 mark for forming t2 - 4t + 2 = 0 from 20t - 5t2 = 10.",
+          "1 mark for using the quadratic formula with a = 1, b = -4, c = 2.",
+          "1 mark for t = 0.59 and t = 3.41 (2 d.p.)."
+        ]
+      }
+    ],
+    "planningHints": [
+      "Complete the table first: every later part depends on the graph being right.",
+      "Use a sharp pencil and label the curve; a sketch without a scale loses marks."
+    ],
+    "examinerTips": "In (f) 'show that' means the working must lead to the printed equation - a bare answer earns nothing."
+  },
+  {
+    "id": "math-p2-10",
+    "type": "write",
+    "paper": 2,
+    "section": "Section II",
+    "title": "Measurement and geometry: painting the shed and the diagonal brace",
+    "topic": "pythagoras-theorem",
+    "commandWords": [
+      "Calculate",
+      "Determine",
+      "Justify"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 20,
+    "source": "A school workshop is a rectangular shed 4 m long, 3 m wide and 2.5 m high.\n\nThe walls and the ceiling are to be painted white. The shed has one door 1 m by 2 m and two windows, each 1 m by 1 m, which are not painted.\n\nPaint is sold in tins covering 6 m2 each and costing $18.75 a tin.\n\nA metal brace is to run from a floor corner of the shed to the opposite ceiling corner.",
+    "prompt": "Answer ALL parts of the question, showing your working. (This is a Section II question carrying 15 marks; in the real Paper 02 you answer any TWO of the three Section II questions.)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Calculate the total area of the four walls.",
+        "marks": 4,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Two long walls: 2 x (4 x 2.5) = 20.0 m2.\nTwo end walls: 2 x (3 x 2.5) = 15.0 m2.\nTotal wall area = 20.0 + 15.0 = 35.0 m2.",
+        "markScheme": [
+          "1 mark for the area of one long wall, 10.0 m2.",
+          "1 mark for the area of one end wall, 7.5 m2.",
+          "1 mark for doubling both pairs.",
+          "1 mark for the total, 35.0 m2."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the area of the ceiling and the total area of the door and windows.",
+        "marks": 3,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Ceiling = 4 x 3 = 12.0 m2.\nDoor and windows = (1 x 2) + 2(1 x 1) = 2 + 2 = 4 m2.",
+        "markScheme": [
+          "1 mark for the ceiling, 12.0 m2.",
+          "1 mark for the door area, 2 m2.",
+          "1 mark for the two windows, 2 m2 (total 4 m2)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Calculate the area to be painted.",
+        "marks": 2,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "35.0 + 12.0 - 4 = 43.0 m2.",
+        "markScheme": [
+          "1 mark for adding the walls and ceiling, 47.0 m2.",
+          "1 mark for subtracting the door and windows to get 43.0 m2."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Determine the least number of tins of paint needed and the total cost of the paint.",
+        "marks": 3,
+        "commandWords": [
+          "Determine",
+          "Justify"
+        ],
+        "modelAnswer": "Tins = 43.0 / 6 = 7.17, so 8 tins must be bought.\nCost = 8 x $18.75 = $150.00.",
+        "markScheme": [
+          "1 mark for dividing the painted area by 6 m2.",
+          "1 mark for rounding UP to 8 tins with a reason.",
+          "1 mark for the cost, $150.00."
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "Calculate the length of the metal brace, giving your answer to 2 decimal places.",
+        "marks": 3,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "The brace is the space diagonal:\nbrace^2 = 4^2 + 3^2 + 2.5^2 = 16.0 + 9.0 + 6.25 = 31.25\nbrace = sqrt(31.25) = 5.59 m.",
+        "markScheme": [
+          "1 mark for squaring all three dimensions.",
+          "1 mark for adding the three squares to get 31.25.",
+          "1 mark for 5.59 m (2 d.p.)."
+        ]
+      }
+    ],
+    "planningHints": [
+      "Draw the shed as a net or a labelled sketch before you calculate.",
+      "Diagonal questions in three dimensions are solved by applying Pythagoras twice."
+    ],
+    "examinerTips": "Only the two decimal places asked for in (e) are required - do not lose time writing extra figures."
+  },
+  {
+    "id": "math-p2-11",
+    "type": "write",
+    "paper": 2,
+    "section": "Section II",
+    "title": "Vectors and matrices: position vectors and a matrix solution",
+    "topic": "vectors",
+    "commandWords": [
+      "Calculate",
+      "Show",
+      "Determine",
+      "Solve"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 20,
+    "source": "In a coordinate system, the position vectors a and b are given by a = (3, 4) and b = (-1, 2) written as column vectors.\n\nThe points A(1, 2), B(3, 6) and C(5, 10) are also marked on the same grid.\n\nThe matrix M = (2 1 / 3 4) is used to solve the simultaneous equations 2x + y = 10 and 3x + 4y = 25.",
+    "prompt": "Answer ALL parts of the question, showing your working. (This is a Section II question carrying 15 marks; in the real Paper 02 you answer any TWO of the three Section II questions.)",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Calculate a + 2b as a column vector.",
+        "marks": 2,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "2b = 2(-1, 2) = (-2, 4).\na + 2b = (3 + (-2), 4 + 4) = (1, 8).",
+        "markScheme": [
+          "1 mark for 2b = (-2, 4).",
+          "1 mark for (1, 8)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the magnitude of a, giving your answer to 3 significant figures.",
+        "marks": 2,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "|a| = sqrt(3^2 + 4^2) = sqrt(9 + 16) = sqrt(25) = 5.",
+        "markScheme": [
+          "1 mark for sqrt(3^2 + 4^2).",
+          "1 mark for 5 (5.00 to 3 s.f.)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Show that the points A(1, 2), B(3, 6) and C(5, 10) are collinear.",
+        "marks": 3,
+        "commandWords": [
+          "Show",
+          "Justify"
+        ],
+        "modelAnswer": "AB = (3 - 1, 6 - 2) = (2, 4).\nBC = (5 - 3, 10 - 6) = (2, 4).\nAB = BC, so AB and BC are parallel; because they share the point B, the three points lie on one straight line. (AB = BC also shows B is the midpoint of AC.)",
+        "markScheme": [
+          "1 mark for AB = (2, 4).",
+          "1 mark for BC = (2, 4) and the statement that the vectors are equal (parallel).",
+          "1 mark for the reason: because they share B, the points are collinear."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "For M = (2 1 / 3 4), calculate the determinant of M and write down M inverse.",
+        "marks": 4,
+        "commandWords": [
+          "Calculate",
+          "Determine"
+        ],
+        "modelAnswer": "det M = (2)(4) - (1)(3) = 5\nM^-1 = 1/5 (4  -1 / -3  2) = (0.80  -0.20 / -0.60  0.40).",
+        "markScheme": [
+          "1 mark for the determinant, 5.",
+          "1 mark for interchanging 2 and 4 on the leading diagonal.",
+          "1 mark for changing the signs of the other two elements (-1 and -3).",
+          "1 mark for the complete inverse, 1/5 x (4 -1 / -3 2)."
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "Use M and M inverse to solve 2x + y = 10 and 3x + 4y = 25.",
+        "marks": 4,
+        "commandWords": [
+          "Solve"
+        ],
+        "modelAnswer": "Write the equations as M(x / y) = (10 / 25).\n(x / y) = M^-1 (10 / 25) = 1/5 (4(10) + (-1)(25) / (-3)(10) + 2(25)) = 1/5 (40 - 25 / -30 + 50) = 1/5 (15 / 20).\nSo x = 3 and y = 4.\nCheck: 2(3) + 4 = 10 and 3(3) + 4(4) = 25.",
+        "markScheme": [
+          "1 mark for writing the equations in matrix form.",
+          "1 mark for multiplying M^-1 by the column vector (10 / 25).",
+          "1 mark for (15 / 20) divided by 5.",
+          "1 mark for x = 3 and y = 4."
+        ]
+      }
+    ],
+    "planningHints": [
+      "Write column vectors in the correct order - top element is the x-component.",
+      "Show the matrix multiplication one row at a time so the method is visible."
+    ],
+    "examinerTips": "In (c) the words 'because they share the point B' carry a mark: equal vectors alone do not prove collinearity."
+  }
+]
