@@ -2,6 +2,7 @@ import { useState } from "react";
 import { getExperimentConfig, getLessonExperiment, experimentTypes } from "../data/contentLoader";
 import GraphingCalculator from "./GraphingCalculator";
 import DragDropLabel from "./DragDropLabel";
+import { lessonSets } from "./lessonSets";
 import CircuitBuilder from "./CircuitBuilder";
 import BalanceScale from "./BalanceScale";
 import FlashcardSystem from "./FlashcardSystem";
@@ -154,7 +155,17 @@ function resolveInteractive(subjectId, experimentType, lessonId) {
     return <DragDropLabel subjectId="spanish" experimentType={t} lessonId={lessonId} />;
   }
 
-  // ---- any other subject (french, history, geography, POB, ag-science):
+  // ---- every other subject that has per-lesson lab sets (the newer subjects:
+  //      Caribbean History, Integrated Science, Agriculture, Food & Nutrition,
+  //      Technical Drawing, Physical Education, Clothing Textile & Fashion,
+  //      Principles of Business, EDPM, Visual Arts, Theater Arts). Each lesson
+  //      resolves to its OWN topic-matched set via lessonSets[subject][lessonId].
+  //      A subject-level lab (no lessonId) keeps that subject's own deck, so no
+  //      foreign-subject component is ever rendered.
+  if (lessonId && lessonSets[subjectId]) {
+    return <DragDropLabel subjectId={subjectId} experimentType={t} lessonId={lessonId} />;
+  }
+  // ---- any other subject (french, history, geography, ag-science):
   // NEVER a foreign-subject component — that subject's own deck.
   return flash(subjectId);
 }
