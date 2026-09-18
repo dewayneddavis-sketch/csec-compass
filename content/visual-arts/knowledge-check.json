@@ -1,0 +1,327 @@
+[
+  {
+    "id": "kc1",
+    "question": "Form differs from shape because form is:",
+    "options": [
+      "Two-dimensional",
+      "Three-dimensional",
+      "Always geometric",
+      "An area of tone"
+    ],
+    "answer": "Three-dimensional",
+    "explanation": "Form may be actual or implied by tone and shading.",
+    "topic": "va-l1-1"
+  },
+  {
+    "id": "kc2",
+    "question": "A viewfinder is used to:",
+    "options": [
+      "Measure the paper",
+      "Isolate and compare a section of the subject",
+      "Mix colour",
+      "Fix charcoal"
+    ],
+    "answer": "Isolate and compare a section of the subject",
+    "explanation": "It helps with composition and proportion.",
+    "topic": "va-l1-2"
+  },
+  {
+    "id": "kc3",
+    "question": "Asymmetrical balance is achieved when:",
+    "options": [
+      "One side mirrors the other exactly",
+      "Different elements on each side have equal visual weight",
+      "The work is symmetrical but rotated",
+      "There is no focal point"
+    ],
+    "answer": "Different elements on each side have equal visual weight",
+    "explanation": "A large pale mass can be balanced by a small dark shape.",
+    "topic": "va-l1-3"
+  },
+  {
+    "id": "kc4",
+    "question": "Intensity (saturation) of a colour is reduced by:",
+    "options": [
+      "Adding white",
+      "Mixing in its complement or a neutral",
+      "Adding water only",
+      "Applying it thickly"
+    ],
+    "answer": "Mixing in its complement or a neutral",
+    "explanation": "This produces natural earthy tones and shadows.",
+    "topic": "va-l2-1"
+  },
+  {
+    "id": "kc5",
+    "question": "A graded wash in watercolour:",
+    "options": [
+      "Has one flat tone throughout",
+      "Moves from dark to light across the paper in one stroke",
+      "Is applied over dry paint only",
+      "Requires masking fluid"
+    ],
+    "answer": "Moves from dark to light across the paper in one stroke",
+    "explanation": "It is used for skies, water and backgrounds.",
+    "topic": "va-l2-2"
+  },
+  {
+    "id": "kc6",
+    "question": "An intaglio print is taken from:",
+    "options": [
+      "The raised surface of the plate",
+      "Ink held in lines cut or etched into the plate and wiped clean at the surface",
+      "Ink forced through a screen",
+      "A flat stone with grease and water"
+    ],
+    "answer": "Ink held in lines cut or etched into the plate and wiped clean at the surface",
+    "explanation": "Etching, drypoint and aquatint are intaglio methods.",
+    "topic": "va-l2-3"
+  },
+  {
+    "id": "kc7",
+    "question": "Lost-wax casting is used to:",
+    "options": [
+      "Build a form from found objects",
+      "Reproduce a modelled form in metal through a mould",
+      "Carve a wooden figure",
+      "Throw a pot"
+    ],
+    "answer": "Reproduce a modelled form in metal through a mould",
+    "explanation": "The wax model is melted out of the mould.",
+    "topic": "va-l3-1"
+  },
+  {
+    "id": "kc8",
+    "question": "Throwing a pot requires the clay to be:",
+    "options": [
+      "Leather-hard and wedged",
+      "Centred on the wheel",
+      "Fired once",
+      "Mixed with sand"
+    ],
+    "answer": "Centred on the wheel",
+    "explanation": "Only a centred lump will make a symmetrical pot.",
+    "topic": "va-l3-2"
+  },
+  {
+    "id": "kc9",
+    "question": "Practical concerns of a craft business include:",
+    "options": [
+      "Costing, pricing, markets and consistent quality",
+      "Only the making",
+      "Only the cost of materials",
+      "Only the design"
+    ],
+    "answer": "Costing, pricing, markets and consistent quality",
+    "explanation": "Enterprise skills are as important as craft skill.",
+    "topic": "va-l3-3"
+  },
+  {
+    "id": "kc10",
+    "question": "White space in a layout:",
+    "options": [
+      "Is wasted space",
+      "Gives the eye rest and strengthens emphasis",
+      "Should always be filled with text",
+      "Reduces the cost of printing only"
+    ],
+    "answer": "Gives the eye rest and strengthens emphasis",
+    "explanation": "Cramped pages lose clarity and elegance.",
+    "topic": "va-l4-1"
+  },
+  {
+    "id": "kc11",
+    "question": "Illustration differs from fine art in that it:",
+    "options": [
+      "Is always abstract",
+      "Works with and serves a text or message",
+      "Cannot be exhibited",
+      "Is not protected by copyright"
+    ],
+    "answer": "Works with and serves a text or message",
+    "explanation": "It illuminates rather than replaces the text.",
+    "topic": "va-l4-2"
+  },
+  {
+    "id": "kc12",
+    "question": "Depth of field refers to:",
+    "options": [
+      "The distance from the camera to the subject",
+      "The range of distance within the image that appears sharp",
+      "The brightness of the image",
+      "The colour temperature"
+    ],
+    "answer": "The range of distance within the image that appears sharp",
+    "explanation": "Aperture controls it.",
+    "topic": "va-l4-3"
+  },
+  {
+    "id": "kc13",
+    "question": "Duhos are associated with:",
+    "options": [
+      "Jamaican wood carving",
+      "Taino ceremonial seats",
+      "Haitian painting",
+      "Trinidad carnival"
+    ],
+    "answer": "Taino ceremonial seats",
+    "explanation": "They were carved by the indigenous peoples of the islands.",
+    "topic": "va-l5-1"
+  },
+  {
+    "id": "kc14",
+    "question": "Kapo (Mallica Reynolds) is known for:",
+    "options": [
+      "Photography of Kingston",
+      "Visionary paintings and carvings rooted in religion and healing",
+      "Graphic design",
+      "Ceramic tableware"
+    ],
+    "answer": "Visionary paintings and carvings rooted in religion and healing",
+    "explanation": "He is among the celebrated Intuitives.",
+    "topic": "va-l5-2"
+  },
+  {
+    "id": "kc15",
+    "question": "Moral rights protect:",
+    "options": [
+      "The buyer's investment only",
+      "Attribution of authorship and the integrity of the work",
+      "The gallery's commission",
+      "The printer's licence"
+    ],
+    "answer": "Attribution of authorship and the integrity of the work",
+    "explanation": "They are distinct from economic copyright.",
+    "topic": "va-l5-3"
+  },
+  {
+    "id": "kc16",
+    "question": "A dated journal is valuable evidence because it:",
+    "options": [
+      "Shows the work was done over time and by you",
+      "Proves the work is expensive",
+      "Increases the price",
+      "Replaces the portfolio"
+    ],
+    "answer": "Shows the work was done over time and by you",
+    "explanation": "A journal written at the end convinces no one.",
+    "topic": "va-l6-1"
+  },
+  {
+    "id": "kc17",
+    "question": "Mounting a drawing with a window mount means:",
+    "options": [
+      "The paper is glued flat to the board",
+      "The artwork is held behind a cut opening so that it is not glued",
+      "The work is rolled",
+      "The work is laminated"
+    ],
+    "answer": "The artwork is held behind a cut opening so that it is not glued",
+    "explanation": "It protects the surface and allows for expansion.",
+    "topic": "va-l6-2"
+  },
+  {
+    "id": "kc18",
+    "question": "A safety data sheet tells the artist:",
+    "options": [
+      "The price of the material",
+      "The hazards, safe handling, protective measures and first aid for a material",
+      "The colour fastness only",
+      "The drying time only"
+    ],
+    "answer": "The hazards, safe handling, protective measures and first aid for a material",
+    "explanation": "It should be kept for every hazardous material in the studio.",
+    "topic": "va-l6-3"
+  },
+  {
+    "id": "kc20",
+    "question": "Squinting at a subject helps a draughtsman because it:",
+    "options": [
+      "Improves eyesight",
+      "Reduces the subject to masses of light and dark",
+      "Sharpens the outlines",
+      "Restores the colours"
+    ],
+    "answer": "Reduces the subject to masses of light and dark",
+    "explanation": "It reveals the tonal structure beneath the detail.",
+    "topic": "va-l1-2"
+  },
+  {
+    "id": "kc21",
+    "question": "Contrast in a composition is created by joining:",
+    "options": [
+      "Similar elements together",
+      "Opposites such as dark and light or rough and smooth",
+      "Only warm colours",
+      "Only repeated shapes"
+    ],
+    "answer": "Opposites such as dark and light or rough and smooth",
+    "explanation": "Contrast creates energy and legibility.",
+    "topic": "va-l1-3"
+  },
+  {
+    "id": "kc22",
+    "question": "Before painting on canvas, the surface is usually:",
+    "options": [
+      "Soaked in water",
+      "Stretched and primed with gesso",
+      "Covered in varnish",
+      "Left shiny with size only"
+    ],
+    "answer": "Stretched and primed with gesso",
+    "explanation": "Priming improves the key and prevents absorption.",
+    "topic": "va-l2-2"
+  },
+  {
+    "id": "kc23",
+    "question": "Glaze firing is carried out to:",
+    "options": [
+      "Dry the clay",
+      "Fuse the glaze into a glass-like surface",
+      "Remove the pot's water content only",
+      "Test the clay's plasticity"
+    ],
+    "answer": "Fuse the glaze into a glass-like surface",
+    "explanation": "It follows the bisque firing and is usually at a higher temperature.",
+    "topic": "va-l3-2"
+  },
+  {
+    "id": "kc24",
+    "question": "A photograph is prepared for screen use at:",
+    "options": [
+      "300 dpi in CMYK",
+      "Screen resolution in RGB",
+      "Any resolution in TIFF only",
+      "Full file size in CMYK"
+    ],
+    "answer": "Screen resolution in RGB",
+    "explanation": "Print work needs high resolution and the printer's colour mode.",
+    "topic": "va-l4-3"
+  },
+  {
+    "id": "kc25",
+    "question": "Which of these is a Caribbean biennial or major recurring exhibition?",
+    "options": [
+      "The Havana Biennial",
+      "The Venice Biennale of Architecture",
+      "Documenta",
+      "The Turner Prize"
+    ],
+    "answer": "The Havana Biennial",
+    "explanation": "The Jamaica Biennial and Santo Domingo events are also significant.",
+    "topic": "va-l5-2"
+  },
+  {
+    "id": "kc26",
+    "question": "Material and equipment safety information should be kept:",
+    "options": [
+      "In the artist's memory only",
+      "On the safety data sheet, available in the studio",
+      "At the supplier's premises only",
+      "In the gallery's records"
+    ],
+    "answer": "On the safety data sheet, available in the studio",
+    "explanation": "It gives hazards, first aid and handling requirements.",
+    "topic": "va-l6-1"
+  }
+]
