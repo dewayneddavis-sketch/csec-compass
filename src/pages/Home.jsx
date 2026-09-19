@@ -40,8 +40,14 @@ export default function Home() {
             <p className="home-teacher-text">
               Track your class's progress — lessons completed, labs solved, quiz scores — all in one view.
             </p>
+            <p className="home-teacher-text home-teacher-sub">
+              School admin? Keep your own school's teachers and class links in order in the school console.
+            </p>
           </div>
-          <Link to="/teacher" className="home-cta home-teacher-cta">Open Teacher's Dashboard →</Link>
+          <div className="home-teacher-actions">
+            <Link to="/teacher" className="home-cta home-teacher-cta">Open Teacher's Dashboard →</Link>
+            <Link to="/school" className="home-cta home-teacher-cta home-teacher-cta-ghost">School admin console →</Link>
+          </div>
         </div>
       </section>
       <section id="subjects" className="home-subjects">

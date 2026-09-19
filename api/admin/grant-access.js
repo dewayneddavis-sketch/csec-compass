@@ -44,6 +44,95 @@ const OWNER_EMAILS = (process.env.OWNER_EMAILS || "dewayneddavis@gmail.com")
 // is live for 365 days from the row's created_at.
 const ACCESS_WINDOW_MS = 365 * 24 * 60 * 60 * 1000;
 
+// ------------------------------------------------------------------ ACTIONS
+// One endpoint, two gates. Which gate applies is decided ONLY by this list —
+// never by the request body — so a new action has to be written into the owner
+// list to become owner-only, and a school action can never be reached by
+// anything but the caller's own `school_admins` row.
+//
+//   OWNER_ACTIONS       — the platform owner (OWNER_EMAILS). Grant/revoke
+//                         access, every teacher link, and creating schools +
+//                         their designated admins.
+//   SCHOOL_SCOPED_ACTIONS — the school's own designated admin. Each one is
+//                         locked to the single school named by the caller's
+//                         school_admins row; a schoolId in the body is ignored.
+const OWNER_ACTIONS = [
+  "grant",
+  "revoke",
+  "list",
+  "teacher-link",
+  "teacher-unlink",
+  "teacher-links",
+  "teacher-link-bulk",
+  "school-list",
+  "school-create",
+  "school-admin",
+  "school-member",
+];
+
+const SCHOOL_SCOPED_ACTIONS = [
+  "school-roster",
+  "school-link",
+  "school-unlink",
+  "school-member-add",
+  "school-member-remove",
+];
+
+const ALL_ACTIONS = [...OWNER_ACTIONS, ...SCHOOL_SCOPED_ACTIONS];
+
+// Remove one person from a school's roster together with the class links that
+// school created for them (either side of the link). EVERY statement is scoped
+// by school_id, so another school's member or link with the same email address
+// is never touched — and neither is an owner-created platform link, whose
+// school_id is NULL.
+async function removeSchoolMember(supabase, schoolId, email) {
+  const asTeacher = await supabase
+    .from("teacher_students")
+    .delete()
+    .eq("school_id", schoolId)
+    .eq("teacher_email", email)
+    .select("student_email");
+  if (asTeacher.error) return { error: asTeacher.error };
+
+  const asStudent = await supabase
+    .from("teacher_students")
+    .delete()
+    .eq("school_id", schoolId)
+    .eq("student_email", email)
+    .select("teacher_email");
+  if (asStudent.error) return { error: asStudent.error };
+
+  const member = await supabase
+    .from("school_members")
+    .delete()
+    .eq("school_id", schoolId)
+    .eq("email", email);
+  if (member.error) return { error: member.error };
+
+  return { removedLinks: (asTeacher.data?.length || 0) + (asStudent.data?.length || 0) };
+}
+
+// Every school, oldest name-order first. One query, one shape, shared by the
+// owner's school actions and the owner override below, so a school is always
+// resolved the same way — by id, else by exact name (case-insensitive).
+async function loadSchools(supabase) {
+  const { data, error } = await supabase
+    .from("schools")
+    .select("id,name,created_at")
+    .order("name", { ascending: true })
+    .limit(500);
+  if (error) return { error };
+  return { schools: data || [] };
+}
+
+function findSchool(schools, id, name) {
+  const wantedId = typeof id === "string" ? id.trim() : "";
+  if (wantedId) return schools.find((s) => s.id === wantedId) || null;
+  const wantedName = typeof name === "string" && name.trim() ? name.trim().toLowerCase() : "";
+  if (wantedName) return schools.find((s) => String(s.name).toLowerCase() === wantedName) || null;
+  return null;
+}
+
 // Who may open the teacher dashboard. Read per request so the owner can change
 // TEACHER_EMAILS in Vercel without a redeploy — a link to a teacher who is not
 // listed yet is still saved, it simply does not grant access until they are.
@@ -163,6 +252,13 @@ function cleanEmail(value) {
   return String(value ?? "").trim().toLowerCase();
 }
 
+// The school roster is what gates every link, so a malformed address must never
+// reach it: an unchecked roster row would silently become the source of truth for
+// who may be linked. Judged by the same rule as a pasted bulk-link pair.
+function rosterProblem(value) {
+  return emailProblem(cleanEmail(value));
+}
+
 // Returns a human-readable problem, or null when the email is usable.
 function emailProblem(email) {
   if (!email) return "email is empty";
@@ -269,23 +365,12 @@ export default async function handler(req, res) {
   const authHeader = req.headers.authorization;
   if (!authHeader) return res.status(401).json({ error: "No auth header" });
 
-  const { email, emails, purchaseType, action, id, ids, csv, pairs } = req.body || {};
+  const { email, emails, purchaseType, action, id, ids, csv, pairs, name, role, schoolId, schoolName, adminEmail, remove } =
+    req.body || {};
 
-  if (
-    !action ||
-    ![
-      "grant",
-      "revoke",
-      "list",
-      "teacher-link",
-      "teacher-unlink",
-      "teacher-links",
-      "teacher-link-bulk",
-    ].includes(action)
-  ) {
+  if (!action || !ALL_ACTIONS.includes(action)) {
     return res.status(400).json({
-      error:
-        "action must be 'grant', 'revoke', 'list', 'teacher-link', 'teacher-link-bulk', 'teacher-unlink' or 'teacher-links'",
+      error: `action must be one of: ${ALL_ACTIONS.join(", ")}`,
     });
   }
 
@@ -330,8 +415,67 @@ export default async function handler(req, res) {
     // Only the owner can execute — clear 403 that names the required email(s)
     // so a wrong-account sign-in is diagnosable instead of a generic failure.
     // Every action below (grant, revoke, list) runs AFTER this gate.
+    //
+    // The one exception is the school-scoped list: those actions are what a
+    // SCHOOL's own designated admin uses, so they are gated on their
+    // `school_admins` row instead. The exception is the explicit
+    // SCHOOL_SCOPED_ACTIONS allowlist above — anything else falls through to
+    // the owner check, which is what keeps the owner gate the default.
     const callerEmail = (caller.email || "").toLowerCase();
-    if (!OWNER_EMAILS.includes(callerEmail)) {
+    const isOwnerCaller = OWNER_EMAILS.includes(callerEmail);
+
+    let callerSchoolId = null; // set only for a school admin, only for their own school
+    if (SCHOOL_SCOPED_ACTIONS.includes(action)) {
+      if (isOwnerCaller) {
+        // Owner override. The owner may run a school-scoped action, but ONLY by
+        // naming one school explicitly — there is deliberately no "every school"
+        // mode, so an override can never sweep a platform-wide change into a
+        // school action. A missing school name is an error, not an implicit all.
+        const wantedName =
+          (typeof schoolName === "string" && schoolName.trim() ? schoolName : name) || "";
+        const { schools, error: schoolsError } = await loadSchools(supabase);
+        if (schoolsError) {
+          console.error("API /api/admin/grant-access: schools lookup failed:", schoolsError.message);
+          return res.status(500).json({
+            error:
+              "Schools unavailable (failing closed). Ensure the `schools`, `school_admins` and `school_members` tables exist — see supabase/schema.sql.",
+          });
+        }
+        const target = findSchool(schools, schoolId, wantedName);
+        if (!target) {
+          return res.status(400).json({
+            error:
+              "The owner must name one existing school for this action: pass schoolId or schoolName (see action \"school-list\").",
+          });
+        }
+        callerSchoolId = target.id;
+      } else {
+        const { data: adminRow, error: adminError } = await supabase
+          .from("school_admins")
+          .select("school_id,email")
+          .eq("email", callerEmail)
+          .maybeSingle();
+        if (adminError) {
+          console.error("API /api/admin/grant-access: school_admins lookup failed:", adminError.message);
+          return res.status(500).json({
+            error:
+              "School admin lookup failed (failing closed). Ensure the `schools`, `school_admins` and `school_members` tables exist — see supabase/schema.sql.",
+          });
+        }
+        if (!adminRow || !adminRow.school_id) {
+          return res.status(403).json({
+            error:
+              "Forbidden: school admin access required. Ask the account owner to designate your email as a school admin.",
+          });
+        }
+        // The school comes from THIS row and from nowhere else. A schoolId in the
+        // request body is never read for a school admin — that is what makes it
+        // impossible for one school's admin to name, read or edit another school.
+        callerSchoolId = adminRow.school_id;
+      }
+    }
+
+    if (!callerSchoolId && !isOwnerCaller) {
       return res.status(403).json({
         error: `Forbidden: this action is restricted to the owner. You are signed in as ${caller.email || "unknown"}; the authorized owner email${OWNER_EMAILS.length > 1 ? "s are" : " is"} ${OWNER_EMAILS.join(", ")}.`,
       });
@@ -638,6 +782,573 @@ export default async function handler(req, res) {
         teachersNotInAllowlist,
         warnings,
       });
+    }
+
+    // ---------------------------------------------------------------- SCHOOLS
+    // Owner side: create a school, designate ONE admin for it, and seed or fix
+    // its roster. The school's own admin does not call these — they use the
+    // school-scoped actions further down, which are locked to their own school.
+    //
+    //   { action: "school-list" }                        -> schools + admins + roster
+    //   { action: "school-create", name, adminEmail? }    -> new school (idempotent by name)
+    //   { action: "school-admin",  email, schoolId | schoolName, remove? }
+    //   { action: "school-member", schoolId | schoolName, email, role, remove? }
+    if (
+      action === "school-list" ||
+      action === "school-create" ||
+      action === "school-admin" ||
+      action === "school-member"
+    ) {
+      const schoolTablesHint =
+        "Ensure the `schools`, `school_admins` and `school_members` tables exist — see supabase/schema.sql.";
+
+      const { schools: schoolList, error: schoolError } = await loadSchools(supabase);
+      if (schoolError) {
+        console.error("API /api/admin/grant-access: schools lookup failed:", schoolError.message);
+        return res.status(500).json({ error: `Schools unavailable (failing closed). ${schoolTablesHint}` });
+      }
+
+      // A school is named either by id or by name (the owner types a name in
+      // the admin card). Ambiguity is resolved here, once, for every action.
+      const pickSchool = () =>
+        findSchool(
+          schoolList,
+          schoolId,
+          typeof schoolName === "string" && schoolName.trim() ? schoolName : name
+        );
+
+      if (action === "school-list") {
+        const [adminRows, memberRows, linkRows] = await Promise.all([
+          supabase.from("school_admins").select("school_id,email").limit(1000),
+          supabase.from("school_members").select("school_id,email,role").limit(5000),
+          supabase.from("teacher_students").select("school_id").limit(10000),
+        ]);
+        if (adminRows.error || memberRows.error || linkRows.error) {
+          const message =
+            adminRows.error?.message || memberRows.error?.message || linkRows.error?.message || "";
+          console.error("API /api/admin/grant-access: school lists lookup failed:", message);
+          return res.status(500).json({ error: `Schools unavailable (failing closed). ${schoolTablesHint}` });
+        }
+
+        const admins = adminRows.data || [];
+        const members = memberRows.data || [];
+        const links = linkRows.data || [];
+        const ofSchool = (schoolRef, role) =>
+          (members || [])
+            .filter((m) => m.school_id === schoolRef && (!role || m.role === role))
+            .map((m) => m.email)
+            .sort();
+
+        const schools = schoolList.map((s) => ({
+          id: s.id,
+          name: s.name,
+          createdAt: s.created_at || null,
+          admins: (admins || [])
+            .filter((a) => a.school_id === s.id)
+            .map((a) => a.email)
+            .sort(),
+          teachers: ofSchool(s.id, "teacher"),
+          students: ofSchool(s.id, "student"),
+          linkCount: (links || []).filter((l) => l.school_id === s.id).length,
+        }));
+
+        return res.status(200).json({
+          schools,
+          count: schools.length,
+          // The owner's own platform-wide links belong to no school, so no
+          // school admin can see or remove them. Counted here so the owner can
+          // see how many exist.
+          platformLinks: (links || []).filter((l) => !l.school_id).length,
+        });
+      }
+
+      if (action === "school-create") {
+        const cleanName = typeof name === "string" ? name.trim().replace(/\s+/g, " ") : "";
+        if (!cleanName) {
+          return res.status(400).json({ error: "Missing required field: name (the school's name)" });
+        }
+
+        const lower = cleanName.toLowerCase();
+        let school = schoolList.find((s) => String(s.name).toLowerCase() === lower) || null;
+        let created = false;
+        if (!school) {
+          const { error: createError } = await supabase.from("schools").insert({ name: cleanName });
+          if (createError) {
+            console.error("API /api/admin/grant-access: school insert failed:", createError.message);
+            return res
+              .status(500)
+              .json({ error: `Could not create the school (failing closed). ${schoolTablesHint}` });
+          }
+          // Re-read rather than trusting the insert's echo, so the id is the
+          // one the database actually assigned.
+          const { data: reread } = await supabase
+            .from("schools")
+            .select("id,name,created_at")
+            .eq("name", cleanName)
+            .maybeSingle();
+          school = reread || { id: null, name: cleanName, created_at: null };
+          created = true;
+        }
+
+        const newAdmin = cleanEmail(adminEmail);
+        if (newAdmin) {
+          const problem = emailProblem(newAdmin);
+          if (problem) {
+            return res.status(400).json({ error: `School admin email: ${problem} (${newAdmin})` });
+          }
+        }
+        if (newAdmin && school.id) {
+          const { error: adminError } = await supabase
+            .from("school_admins")
+            .upsert([{ school_id: school.id, email: newAdmin }], { onConflict: "email" });
+          if (adminError) {
+            console.error("API /api/admin/grant-access: school admin upsert failed:", adminError.message);
+            return res
+              .status(500)
+              .json({ error: `School saved, but its admin could not be set (failing closed). ${schoolTablesHint}` });
+          }
+        }
+
+        return res.status(200).json({
+          message: created
+            ? `Created ${school.name}${newAdmin ? ` — ${newAdmin} is its school admin` : ""}.`
+            : `${school.name} already existed${newAdmin ? ` — ${newAdmin} is now its school admin` : ""}.`,
+          school: { id: school.id, name: school.name },
+          created,
+          admin: newAdmin || null,
+        });
+      }
+
+      if (action === "school-admin") {
+        const target = pickSchool();
+        if (!target) {
+          return res.status(400).json({
+            error: "Unknown school: pass schoolId or schoolName (create it first with school-create).",
+          });
+        }
+        const adminTarget = cleanEmail(email) || cleanEmail(adminEmail);
+        if (!adminTarget) {
+          return res.status(400).json({ error: "Missing required field: email (the school admin's email)" });
+        }
+        const invalidAdmin = emailProblem(adminTarget);
+        if (invalidAdmin) {
+          return res.status(400).json({ error: `School admin email: ${invalidAdmin} (${adminTarget})` });
+        }
+
+        if (remove) {
+          const { data: removedRows, error: removeError } = await supabase
+            .from("school_admins")
+            .delete()
+            .eq("school_id", target.id)
+            .eq("email", adminTarget)
+            .select("email");
+          if (removeError) {
+            console.error("API /api/admin/grant-access: school admin delete failed:", removeError.message);
+            return res
+              .status(500)
+              .json({ error: `Could not remove the school admin (failing closed). ${schoolTablesHint}` });
+          }
+          return res.status(200).json({
+            message: `${adminTarget} no longer administers ${target.name}.`,
+            removed: (removedRows || []).map((r) => r.email),
+          });
+        }
+
+        const { error: adminError } = await supabase
+          .from("school_admins")
+          .upsert([{ school_id: target.id, email: adminTarget }], { onConflict: "email" });
+        if (adminError) {
+          console.error("API /api/admin/grant-access: school admin upsert failed:", adminError.message);
+          return res
+            .status(500)
+            .json({ error: `Could not set the school admin (failing closed). ${schoolTablesHint}` });
+        }
+        return res.status(200).json({
+          message: `${adminTarget} now administers ${target.name}.`,
+          school: { id: target.id, name: target.name },
+          email: adminTarget,
+        });
+      }
+
+      // action === "school-member" — add, re-role, or remove one person.
+      const target = pickSchool();
+      if (!target) {
+        return res.status(400).json({
+          error: "Unknown school: pass schoolId or schoolName (create it first with school-create).",
+        });
+      }
+      const memberEmail = cleanEmail(email);
+      if (!memberEmail) {
+        return res.status(400).json({ error: "Missing required field: email" });
+      }
+      const memberProblem = rosterProblem(memberEmail);
+      if (memberProblem) {
+        return res.status(400).json({ error: `Roster email: ${memberProblem} (${memberEmail})` });
+      }
+
+      const wantedRole =
+        typeof role === "string" && role.trim() ? role.trim().toLowerCase() : "student";
+      if (wantedRole !== "teacher" && wantedRole !== "student") {
+        return res.status(400).json({ error: 'role must be "teacher" or "student"' });
+      }
+
+      if (remove) {
+        const { data: memberRow, error: memberError } = await supabase
+          .from("school_members")
+          .select("email,role")
+          .eq("school_id", target.id)
+          .eq("email", memberEmail)
+          .maybeSingle();
+        if (memberError) {
+          console.error("API /api/admin/grant-access: school member lookup failed:", memberError.message);
+          return res.status(500).json({ error: `Schools unavailable (failing closed). ${schoolTablesHint}` });
+        }
+        if (!memberRow) {
+          return res.status(400).json({ error: `${memberEmail} is not on ${target.name}'s roster.` });
+        }
+
+        const result = await removeSchoolMember(supabase, target.id, memberEmail);
+        if (result.error) {
+          console.error("API /api/admin/grant-access: school member removal failed:", result.error.message);
+          return res
+            .status(500)
+            .json({ error: `Could not remove the member (failing closed). ${schoolTablesHint}` });
+        }
+        return res.status(200).json({
+          message: `Removed ${memberEmail} from ${target.name}${
+            result.removedLinks ? ` and unlinked ${result.removedLinks} class link(s)` : ""
+          }.`,
+          removedLinks: result.removedLinks,
+          role: memberRow.role,
+        });
+      }
+
+      const { error: memberUpsertError } = await supabase
+        .from("school_members")
+        .upsert([{ school_id: target.id, email: memberEmail, role: wantedRole }], {
+          onConflict: "school_id,email",
+        });
+      if (memberUpsertError) {
+        console.error("API /api/admin/grant-access: school member upsert failed:", memberUpsertError.message);
+        return res
+          .status(500)
+          .json({ error: `Could not add the member (failing closed). ${schoolTablesHint}` });
+      }
+      return res.status(200).json({
+        message: `Added ${memberEmail} to ${target.name} as a ${wantedRole}.`,
+        school: { id: target.id, name: target.name },
+        member: { email: memberEmail, role: wantedRole },
+      });
+    }
+
+    // ------------------------------------------- SCHOOL ADMIN (own school only)
+    // What the school's own designated admin can do — and the whole of it.
+    // `callerSchoolId` was taken from their school_admins row above; nothing in
+    // the body is consulted. So: no other school's roster, members or links are
+    // reachable, and owner-created platform links (school_id NULL) can neither
+    // be seen nor removed.
+    //
+    // Deliberately absent: any student progress. A school admin manages WHO is
+    // linked, never what anyone did. Progress stays behind
+    // api/analytics/summary.js and its TEACHER_EMAILS gate.
+    //
+    //   { action: "school-roster" }        -> school + roster + own links
+    //   { action: "school-link",   teacherEmail, email | emails }
+    //   { action: "school-unlink", teacherEmail, email | emails }
+    //   { action: "school-member-add",    email, role: "teacher" | "student" }
+    //   { action: "school-member-remove", email }
+    if (callerSchoolId) {
+      const schoolTablesHint =
+        "Ensure the `schools`, `school_admins` and `school_members` tables exist — see supabase/schema.sql.";
+
+      const { data: schoolRow, error: schoolReadError } = await supabase
+        .from("schools")
+        .select("id,name")
+        .eq("id", callerSchoolId)
+        .maybeSingle();
+      if (schoolReadError || !schoolRow) {
+        console.error(
+          "API /api/admin/grant-access: school read failed:",
+          schoolReadError?.message || "no school row"
+        );
+        return res.status(500).json({ error: `School lookup failed (failing closed). ${schoolTablesHint}` });
+      }
+      const school = { id: schoolRow.id, name: schoolRow.name };
+
+      if (action === "school-roster") {
+        const { data: memberRows, error: memberError } = await supabase
+          .from("school_members")
+          .select("email,role")
+          .eq("school_id", callerSchoolId)
+          .limit(2000);
+        if (memberError) {
+          console.error("API /api/admin/grant-access: school roster lookup failed:", memberError.message);
+          return res.status(500).json({ error: `School roster unavailable (failing closed). ${schoolTablesHint}` });
+        }
+
+        const members = memberRows;
+        const teachers = members
+          .filter((m) => m.role === "teacher")
+          .map((m) => cleanEmail(m.email))
+          .sort();
+        const students = members
+          .filter((m) => m.role === "student")
+          .map((m) => cleanEmail(m.email))
+          .sort();
+
+        // Only links that involve one of THIS school's own teachers are ever
+        // read — the query itself is scoped, so another school's rows are not
+        // fetched even to be discarded. Each row is then split by who created
+        // it: this school's own, the owner's platform-wide ones (school_id
+        // NULL), and any that belong to a different school. Only the first
+        // group is listed — and only that group can be unlinked from here.
+        let linkRows = [];
+        if (teachers.length > 0) {
+          const { data: linkData, error: linkError } = await supabase
+            .from("teacher_students")
+            .select("id,teacher_email,student_email,created_at,school_id")
+            .in("teacher_email", teachers)
+            .limit(5000);
+          if (linkError) {
+            console.error("API /api/admin/grant-access: school link lookup failed:", linkError.message);
+            return res.status(500).json({ error: `School roster unavailable (failing closed). ${schoolTablesHint}` });
+          }
+          linkRows = linkData || [];
+        }
+
+        const own = linkRows.filter((l) => l.school_id === callerSchoolId);
+        const platform = linkRows.filter((l) => !l.school_id);
+        const elsewhere = linkRows.filter((l) => l.school_id && l.school_id !== callerSchoolId);
+
+        return res.status(200).json({
+          school,
+          schoolAdmin: callerEmail,
+          teachers,
+          students,
+          links: own.map((l) => ({
+            id: l.id,
+            teacherEmail: cleanEmail(l.teacher_email),
+            studentEmail: cleanEmail(l.student_email),
+            createdAt: l.created_at || null,
+          })),
+          linkCount: own.length,
+          platformLinkCount: platform.length,
+          otherSchoolLinkCount: elsewhere.length,
+          note:
+            platform.length > 0 || elsewhere.length > 0
+              ? "Only the links your school created are listed and can be removed here. Links created by CSEC Compass itself, or by another school, show as counts only — ask the platform owner if one of those needs to change."
+              : null,
+        });
+      }
+
+      if (action === "school-link" || action === "school-unlink") {
+        const teacherEmail = cleanEmail(req.body?.teacherEmail ?? req.body?.teacher_email);
+        const students = targetEmails;
+        if (!teacherEmail || students.length === 0) {
+          return res.status(400).json({
+            error: "Missing required fields: teacherEmail and email (or an emails array)",
+          });
+        }
+        if (students.length > 500) {
+          return res.status(400).json({ error: "Too many students in one call — link up to 500 at a time." });
+        }
+
+        if (action === "school-unlink") {
+          const { data: removedRows, error: unlinkError } = await supabase
+            .from("teacher_students")
+            .delete()
+            .eq("school_id", callerSchoolId)
+            .eq("teacher_email", teacherEmail)
+            .in("student_email", students)
+            .select("student_email");
+          if (unlinkError) {
+            console.error("API /api/admin/grant-access: school unlink failed:", unlinkError.message);
+            return res.status(500).json({ error: `Unlinking failed (failing closed). ${schoolTablesHint}` });
+          }
+          const removed = (removedRows || []).map((r) => cleanEmail(r.student_email));
+          return res.status(200).json({
+            message: removed.length
+              ? `Unlinked ${removed.length} student(s) from ${teacherEmail} in ${school.name}.`
+              : `Nothing to unlink: ${teacherEmail} has no ${school.name} link to those student(s).`,
+            school: school.name,
+            removed,
+            notRemoved: students.filter((e) => !removed.includes(e)),
+            note:
+              "Only links this school created can be removed here. A link created by CSEC Compass itself stays until the platform owner removes it.",
+          });
+        }
+
+        // school-link — both sides must be on THIS school's roster.
+        const { data: memberRows, error: memberError } = await supabase
+          .from("school_members")
+          .select("email,role")
+          .eq("school_id", callerSchoolId)
+          .limit(2000);
+        if (memberError) {
+          console.error("API /api/admin/grant-access: roster lookup failed:", memberError.message);
+          return res.status(500).json({ error: `School roster unavailable (failing closed). ${schoolTablesHint}` });
+        }
+        const roleByEmail = new Map((memberRows || []).map((m) => [cleanEmail(m.email), m.role]));
+
+        if (roleByEmail.get(teacherEmail) !== "teacher") {
+          return res.status(400).json({
+            error: `${teacherEmail} is not one of ${school.name}'s teachers. Add them to the roster as a teacher first — a link can only join two people in your own school.`,
+          });
+        }
+
+        const notInSchool = students.filter((e) => !roleByEmail.has(e));
+        const inSchool = students.filter((e) => roleByEmail.has(e));
+        if (inSchool.length === 0) {
+          return res.status(400).json({
+            error: `None of those students are on ${school.name}'s roster, so nothing was linked.`,
+            notInSchool,
+          });
+        }
+
+        // The same pair can exist only once (unique index on teacher + student),
+        // so say honestly what is already there — including links the school did
+        // not create.
+        const { data: existingRows, error: existingError } = await supabase
+          .from("teacher_students")
+          .select("student_email,school_id")
+          .eq("teacher_email", teacherEmail)
+          .in("student_email", inSchool);
+        if (existingError) {
+          console.error("API /api/admin/grant-access: existing links lookup failed:", existingError.message);
+          return res.status(500).json({ error: `Linking failed (failing closed). ${schoolTablesHint}` });
+        }
+        const alreadyOwn = [];
+        const alreadyPlatform = [];
+        const alreadyElsewhere = [];
+        for (const row of existingRows || []) {
+          const student = cleanEmail(row.student_email);
+          if (!row.school_id) alreadyPlatform.push(student);
+          else if (row.school_id === callerSchoolId) alreadyOwn.push(student);
+          else alreadyElsewhere.push(student);
+        }
+        const skip = new Set([...alreadyOwn, ...alreadyPlatform, ...alreadyElsewhere]);
+        const toInsert = inSchool.filter((e) => !skip.has(e));
+
+        if (toInsert.length > 0) {
+          // school_id is stamped here and only here — never from the request.
+          const { error: insertError } = await supabase
+            .from("teacher_students")
+            .upsert(
+              toInsert.map((student_email) => ({
+                teacher_email: teacherEmail,
+                student_email,
+                school_id: callerSchoolId,
+              })),
+              { onConflict: "teacher_email,student_email", ignoreDuplicates: true }
+            );
+          if (insertError) {
+            console.error("API /api/admin/grant-access: school link failed:", insertError.message);
+            return res.status(500).json({ error: `Linking failed (failing closed). ${schoolTablesHint}` });
+          }
+        }
+
+        // Informational only — a student may be linked before they sign up.
+        let withoutAccount = [];
+        let warning = null;
+        try {
+          const allUsers = await fetchAllUsers(supabase);
+          const known = new Set(allUsers.filter((u) => u.email).map((u) => u.email.toLowerCase()));
+          withoutAccount = inSchool.filter((e) => !known.has(e));
+        } catch {
+          warning =
+            "Linked, but the account list could not be read — so which of these students have signed up yet is unknown.";
+        }
+
+        const parts = [`Linked ${toInsert.length} student(s) to ${teacherEmail} in ${school.name}.`];
+        if (alreadyOwn.length) parts.push(`${alreadyOwn.length} were already linked by this school.`);
+        if (alreadyPlatform.length) {
+          parts.push(`${alreadyPlatform.length} were already linked by CSEC Compass itself.`);
+        }
+        if (alreadyElsewhere.length) parts.push(`${alreadyElsewhere.length} are linked under another school.`);
+        if (notInSchool.length) parts.push(`${notInSchool.length} are not on the roster.`);
+
+        return res.status(200).json({
+          message: parts.join(" "),
+          school: { id: school.id, name: school.name },
+          linked: toInsert,
+          alreadyLinked: alreadyOwn,
+          alreadyLinkedPlatform: alreadyPlatform,
+          linkedElsewhere: alreadyElsewhere,
+          notInSchool,
+          withoutAccount,
+          warning,
+        });
+      }
+
+      if (action === "school-member-add") {
+        const memberEmail = cleanEmail(email);
+        if (!memberEmail) {
+          return res.status(400).json({ error: "Missing required field: email" });
+        }
+        const memberProblem = rosterProblem(memberEmail);
+        if (memberProblem) {
+          return res.status(400).json({ error: `Roster email: ${memberProblem} (${memberEmail})` });
+        }
+        const wantedRole =
+          typeof role === "string" && role.trim() ? role.trim().toLowerCase() : "student";
+        if (wantedRole !== "teacher" && wantedRole !== "student") {
+          return res.status(400).json({ error: 'role must be "teacher" or "student"' });
+        }
+
+        const { error: upsertError } = await supabase
+          .from("school_members")
+          .upsert([{ school_id: callerSchoolId, email: memberEmail, role: wantedRole }], {
+            onConflict: "school_id,email",
+          });
+        if (upsertError) {
+          console.error("API /api/admin/grant-access: roster upsert failed:", upsertError.message);
+          return res.status(500).json({ error: `Could not update the roster (failing closed). ${schoolTablesHint}` });
+        }
+        return res.status(200).json({
+          message: `Added ${memberEmail} to ${school.name} as a ${wantedRole}.`,
+          school: { id: school.id, name: school.name },
+          member: { email: memberEmail, role: wantedRole },
+        });
+      }
+
+      if (action === "school-member-remove") {
+        const memberEmail = cleanEmail(email);
+        if (!memberEmail) {
+          return res.status(400).json({ error: "Missing required field: email" });
+        }
+        const { data: memberRow, error: memberError } = await supabase
+          .from("school_members")
+          .select("email,role")
+          .eq("school_id", callerSchoolId)
+          .eq("email", memberEmail)
+          .maybeSingle();
+        if (memberError) {
+          console.error("API /api/admin/grant-access: roster lookup failed:", memberError.message);
+          return res.status(500).json({ error: `School roster unavailable (failing closed). ${schoolTablesHint}` });
+        }
+        if (!memberRow) {
+          return res.status(400).json({ error: `${memberEmail} is not on ${school.name}'s roster.` });
+        }
+
+        const result = await removeSchoolMember(supabase, callerSchoolId, memberEmail);
+        if (result.error) {
+          console.error("API /api/admin/grant-access: roster removal failed:", result.error.message);
+          return res.status(500).json({ error: `Could not update the roster (failing closed). ${schoolTablesHint}` });
+        }
+        return res.status(200).json({
+          message: `Removed ${memberEmail} from ${school.name}${
+            result.removedLinks ? ` and unlinked ${result.removedLinks} class link(s)` : ""
+          }.`,
+          school: { id: school.id, name: school.name },
+          removedLinks: result.removedLinks,
+          role: memberRow.role,
+        });
+      }
+
+      // Every school-scoped action is handled above, so reaching here means a
+      // new one was added to SCHOOL_SCOPED_ACTIONS without a branch. Fail
+      // closed rather than fall through to the owner actions below.
+      return res.status(400).json({ error: `Unhandled school action: ${action}` });
     }
 
     // ---------------------------------------------------------------- GRANT
