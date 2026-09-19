@@ -10,6 +10,12 @@
 // — the shape existing students already have, so their ticks survive.
 // Everything is best-effort: private mode, a quota error or corrupt JSON must
 // never break a page or interrupt a lab session.
+//
+// The teacher's view is written from here too. The dashboard reads
+// user_progress (api/analytics/summary.js), and localStorage is only the
+// student's own copy — so a tick that never leaves the device is invisible to
+// their teacher. Because every path funnels through saveLessonProgress, that is
+// the one place the push happens (see queueProgressSync below), never the pages.
 
 const PREFIX = "csec-";
 const SUFFIX = "-progress";
@@ -102,10 +108,134 @@ function notify(subjectId, progress) {
   }
 }
 
+// ---------------------------------------------------------------------------
+// Pushing progress to the teacher's view (POST /api/progress/sync → user_progress)
+// ---------------------------------------------------------------------------
+//
+// Rules this has to keep, all learned from the bug it fixes:
+//   - Signed out (or no token yet) means localStorage only. Never a network call.
+//   - ONE request per burst of ticks per subject: a student ticking ten lessons
+//     sends the final list once, not ten times (debounced; the payload is always
+//     the current full state, so a coalesced request cannot lose a tick).
+//   - FAIL OPEN. A tick is the student's own record of work; a failed push, a
+//     missing fetch or a dead network must never throw, retry-spin or block it.
+//   - An un-tick is reported too, otherwise the teacher keeps seeing work the
+//     student removed.
+
+const SYNC_ENDPOINT = "/api/progress/sync";
+const SYNC_DEBOUNCE_MS = 1200;
+let syncSession = null;
+const pendingSyncs = new Map(); // subjectId -> latest progress, not yet sent
+const syncTimers = new Map(); // subjectId -> debounce timer
+
+/**
+ * Point the store at the signed-in session (called by AuthContext on every auth
+ * change, so signing out stops the pushes immediately). Anything without an
+ * access token counts as signed out.
+ */
+export function setSyncSession(session) {
+  syncSession = session && session.access_token ? session : null;
+}
+
+/** The exact body api/progress/sync.js expects. Exported so it can be asserted. */
+export function progressSyncPayload(subjectId, progress) {
+  const value = normalizeProgress(progress);
+  return {
+    subjectId,
+    completedLessons: [...value.lessons],
+    quizCompleted: !!value.quizCompleted,
+  };
+}
+
+function sendProgressSync(subjectId, progress) {
+  let res;
+  try {
+    res = fetch(SYNC_ENDPOINT, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + syncSession.access_token,
+      },
+      body: JSON.stringify(progressSyncPayload(subjectId, progress)),
+    });
+  } catch {
+    return; // fetch missing/blocked — the tick still stands
+  }
+  // Never awaited by the caller, and a rejection is swallowed: a failed push is
+  // a missing teacher update, never a broken lesson page.
+  Promise.resolve(res).catch(() => {});
+}
+
+function queueProgressSync(subjectId, progress) {
+  if (!subjectId || !syncSession) return;
+  pendingSyncs.set(subjectId, normalizeProgress(progress));
+  if (syncTimers.has(subjectId)) return; // already scheduled: the newest value wins
+  const timer = setTimeout(() => {
+    syncTimers.delete(subjectId);
+    flushProgressSync(subjectId);
+  }, SYNC_DEBOUNCE_MS);
+  // Node has no unref-less timers to worry about; browsers don't care either.
+  if (typeof timer?.unref === "function") timer.unref();
+  syncTimers.set(subjectId, timer);
+}
+
+/**
+ * Send pending pushes now, without waiting out the debounce. With no argument it
+ * flushes every subject; returns how many requests it sent.
+ */
+export function flushProgressSync(subjectId) {
+  const subjects = subjectId ? [subjectId] : [...pendingSyncs.keys()];
+  let sent = 0;
+  for (const subject of subjects) {
+    const timer = syncTimers.get(subject);
+    if (timer) {
+      clearTimeout(timer);
+      syncTimers.delete(subject);
+    }
+    if (!pendingSyncs.has(subject)) continue;
+    const progress = pendingSyncs.get(subject);
+    pendingSyncs.delete(subject);
+    if (!syncSession) continue; // signed out mid-flight
+    sendProgressSync(subject, progress);
+    sent++;
+  }
+  return sent;
+}
+
+/**
+ * Push everything this device already has for the signed-in student. Called once
+ * per sign-in: a student who ticked lessons before signing in (or before this
+ * existed) would otherwise stay invisible to their teacher until they tick
+ * something new. Returns how many subjects it queued.
+ */
+export function syncStoredProgress() {
+  if (!syncSession) return 0;
+  const store = storage();
+  if (!store || typeof store.key !== "function") return 0;
+  let queued = 0;
+  try {
+    const count = Number(store.length) || 0;
+    for (let i = 0; i < count; i++) {
+      const key = store.key(i);
+      if (typeof key !== "string" || !key.startsWith(PREFIX) || !key.endsWith(SUFFIX)) continue;
+      const subjectId = key.slice(PREFIX.length, key.length - SUFFIX.length);
+      const progress = loadLessonProgress(subjectId);
+      // Nothing ticked for this subject — nothing to tell a teacher.
+      if (!progress.lessons.length && !progress.quizCompleted) continue;
+      queueProgressSync(subjectId, progress);
+      queued++;
+    }
+  } catch {
+    // A storage that cannot enumerate its keys is not worth breaking a sign-in over.
+  }
+  return queued;
+}
+
 /**
  * Persist progress for one subject. An unchanged value is not written and does
  * not notify (this is what keeps "page writes -> subscriber sets state ->
- * page writes" from spinning). Returns what was stored.
+ * page writes" from spinning), and is not pushed to the teacher's view either.
+ * Returns what was stored.
  */
 export function saveLessonProgress(subjectId, progress) {
   const next = normalizeProgress(progress);
@@ -121,6 +251,9 @@ export function saveLessonProgress(subjectId, progress) {
     }
   }
   notify(subjectId, next);
+  // The student's own copy is saved; now let their teacher see it e.g. by
+  // debounced async push. Never awaited, never gating the tick.
+  queueProgressSync(subjectId, next);
   return next;
 }
 

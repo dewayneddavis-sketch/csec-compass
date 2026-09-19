@@ -1,6 +1,30 @@
 // Vercel Serverless API — Sync Progress
 // POST /api/progress/sync
 // Requires auth token in Authorization header
+//
+// This is the ONLY writer of user_progress, and user_progress is what a linked
+// teacher sees (api/analytics/summary.js: lessonsCompleted / quizCompleted per
+// subject). Two consequences shape the code below:
+//   - the row's user_id comes from the verified token and NOTHING else, so a
+//     student can only ever write their own row;
+//   - the lesson list is normalised here, because a teacher reads it and the
+//     client is untrusted input.
+const MAX_LESSONS = 500; // a CSEC subject has far fewer lessons; the cap only trips on junk
+
+function normalizeLessons(raw) {
+  if (!Array.isArray(raw)) return [];
+  const out = [];
+  const seen = new Set();
+  for (const id of raw) {
+    if (typeof id !== "string") continue;
+    const key = id.trim();
+    if (!key || key.length > 120 || seen.has(key)) continue;
+    seen.add(key);
+    out.push(key);
+    if (out.length >= MAX_LESSONS) break;
+  }
+  return out;
+}
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
@@ -31,8 +55,8 @@ export default async function handler(req, res) {
     }
 
     // Upsert progress
-    const { subjectId, completedLessons, quizCompleted } = req.body;
-    if (!subjectId) {
+    const { subjectId, completedLessons, quizCompleted } = req.body || {};
+    if (!subjectId || typeof subjectId !== "string") {
       return res.status(400).json({ error: "subjectId required" });
     }
 
@@ -41,8 +65,8 @@ export default async function handler(req, res) {
       .upsert({
         user_id: user.id,
         subject_id: subjectId,
-        completed_lessons: completedLessons || [],
-        quiz_completed: quizCompleted || false,
+        completed_lessons: normalizeLessons(completedLessons),
+        quiz_completed: !!quizCompleted,
         updated_at: new Date().toISOString(),
       }, { onConflict: "user_id,subject_id" })
       .select()

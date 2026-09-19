@@ -19,6 +19,8 @@ class MemoryStorage {
   getItem(k) { if (this.failGet) throw new Error("storage unavailable"); return this.map.has(k) ? this.map.get(k) : null; }
   setItem(k, v) { if (this.failSet) throw new Error("quota exceeded"); this.map.set(k, String(v)); }
   removeItem(k) { this.map.delete(k); }
+  get length() { return this.map.size; }
+  key(i) { return [...this.map.keys()][i] ?? null; }
 }
 
 const store = new MemoryStorage();
@@ -154,6 +156,111 @@ for (const subject of catalog) {
 }
 check(subjectsChecked >= 20, `real lesson ids round-trip through the store (${subjectsChecked} subjects)`);
 check(idProblems === 0, `real lesson ids round-trip through the store (${idProblems} problems)`);
+
+// ---- THE FIX: the teacher's view is WRITTEN, not just read ---------------
+// api/analytics/summary.js reads user_progress (lessonsCompleted/quizCompleted
+// per subject) to build a student card; localStorage is only the student's own
+// copy. Nothing ever wrote user_progress, so a linked teacher saw lab rows only.
+const netCalls = [];
+const preSyncFetch = globalThis.fetch;
+globalThis.fetch = (url, opts) => {
+  netCalls.push({ url, opts, body: opts?.body ? JSON.parse(opts.body) : null });
+  return Promise.resolve({ ok: true, json: () => Promise.resolve({ success: true }) });
+};
+store.map.clear();
+
+lp.setSyncSession(null);
+lp.markLessonComplete("mathematics", "m1");
+eq(lp.flushProgressSync(), 0, "signed out: a tick is never pushed");
+eq(netCalls.length, 0, "signed out: no network call at all");
+lp.setSyncSession({}); // an auth object with no token is not signed in
+lp.markLessonComplete("mathematics", "m2");
+eq(lp.flushProgressSync(), 0, "a session without an access token is treated as signed out");
+
+lp.setSyncSession({ access_token: "tok-1" });
+lp.markLessonComplete("mathematics", "m3");
+lp.markLessonComplete("mathematics", "m4");
+lp.markLessonComplete("mathematics", "m5");
+eq(netCalls.length, 0, "a burst of ticks has not reached the network yet (debounced)");
+eq(lp.flushProgressSync(), 1, "flushing a burst sends exactly ONE request");
+eq(netCalls.length, 1, "one request, not one per tick");
+eq(netCalls[0].url, "/api/progress/sync", "the push goes to the progress sync endpoint");
+eq(netCalls[0].opts.method, "POST", "as a POST");
+eq(netCalls[0].opts.headers.Authorization, "Bearer tok-1", "with the signed-in token");
+eq(netCalls[0].body.subjectId, "mathematics", "carrying the subject id");
+eq(netCalls[0].body.completedLessons.join(","), "m1,m2,m3,m4,m5", "and the full current lesson list (no tick lost to coalescing, including the ones ticked before sign-in)");
+eq(netCalls[0].body.quizCompleted, false, "and the quiz flag");
+
+const payload = lp.progressSyncPayload("biology", { lessons: ["b1", "b2", "b1"], quizCompleted: true });
+eq(Object.keys(payload).sort().join(","), "completedLessons,quizCompleted,subjectId", "the payload is exactly the contract api/progress/sync.js reads");
+eq(payload.completedLessons.join(","), "b1,b2", "the payload drops duplicates");
+eq(payload.quizCompleted, true, "the payload carries the knowledge-check flag");
+
+// Two subjects are tracked (and pushed) separately.
+lp.markLessonComplete("biology", "b1");
+lp.markLessonComplete("physics", "p1");
+eq(lp.flushProgressSync(), 2, "two subjects flush as two requests");
+eq(netCalls.slice(1).map((c) => c.body.subjectId).sort().join(","), "biology,physics", "each request names its own subject");
+
+// An un-tick is reported too, or the teacher keeps seeing removed work.
+lp.unmarkLessonComplete("biology", "b1");
+lp.flushProgressSync();
+eq(netCalls.at(-1).body.completedLessons.length, 0, "un-ticking every lesson is pushed as an empty list (the teacher sees truth)");
+
+// Re-saving the same value is not a tick, so it is not a request.
+const beforeNoop = netCalls.length;
+lp.saveLessonProgress("biology", { lessons: [], quizCompleted: false });
+eq(netCalls.length, beforeNoop, "re-saving an unchanged value pushes nothing");
+eq(lp.flushProgressSync(), 0, "and leaves nothing pending");
+
+// The debounce fires on its own, without an explicit flush.
+lp.markLessonComplete("chemistry", "c1");
+await new Promise((r) => setTimeout(r, 1400));
+eq(netCalls.filter((c) => c.body.subjectId === "chemistry").length, 1, "the debounce sends the push by itself");
+
+// The sign-in backfill: a student who ticked while signed out is not invisible.
+store.map.clear();
+lp.setSyncSession(null);
+lp.markLessonComplete("spanish", "s1");
+lp.markLessonComplete("food-nutrition", "f1");
+lp.saveLessonProgress("technical-drawing", { lessons: [], quizCompleted: false });
+eq(lp.syncStoredProgress(), 0, "signed out: the backfill queues nothing");
+lp.setSyncSession({ access_token: "tok-1" });
+eq(lp.syncStoredProgress(), 2, "sign-in queues the subjects this device already has ticks for");
+eq(lp.flushProgressSync(), 2, "and pushes them");
+eq(netCalls.slice(-2).map((c) => c.body.subjectId).sort().join(","), "food-nutrition,spanish", "skipping subjects with nothing ticked");
+
+// Fail-open: the push must never break the student's tick.
+globalThis.fetch = () => Promise.reject(new Error("offline"));
+try {
+  eq(lp.markLessonComplete("mathematics", "m9").lessons.includes("m9"), true, "a tick stands even when the push cannot be sent");
+  eq(lp.flushProgressSync(), 1, "the flush still counts the attempt");
+  check(true, "a rejected push does not throw");
+} catch (e) {
+  check(false, "a rejected push does not throw -- " + e.message);
+}
+globalThis.fetch = () => { throw new Error("fetch blocked"); };
+try {
+  lp.markLessonComplete("mathematics", "m10");
+  lp.flushProgressSync();
+  check(true, "a fetch that throws synchronously does not break the tick");
+} catch (e) {
+  check(false, "a fetch that throws synchronously does not break the tick -- " + e.message);
+}
+globalThis.fetch = preSyncFetch;
+
+// The lab path reaches the teacher too: one funnel, both writers.
+const labSyncCalls = [];
+globalThis.fetch = (url, opts) => { labSyncCalls.push({ url, body: JSON.parse(opts.body) }); return Promise.resolve({ ok: true }); };
+lp.setSyncSession({ access_token: "tok-1" });
+lab.recordLabComplete("biology", "bio-l9", "drag-drop-label", { access_token: "tok-1" });
+lp.flushProgressSync();
+check(labSyncCalls.some((c) => c.url === "/api/analytics/record" && c.body.kind === "lab"), "the lab still reports to the lab telemetry endpoint (unchanged)");
+const labProgressCall = labSyncCalls.find((c) => c.url === "/api/progress/sync");
+check(Boolean(labProgressCall), "finishing a lab ALSO updates the teacher's progress view");
+eq(labProgressCall?.body.completedLessons.includes("bio-l9"), true, "the lab-completed lesson is in the pushed list");
+lp.setSyncSession(null);
+globalThis.fetch = preSyncFetch;
 
 // ---- wiring guards: one store, two writers ------------------------------
 const page = read("src/pages/SubjectPage.jsx");

@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, useEffect, useCallback } from "react";
 import { getSupabaseClient } from "../lib/supabase";
+import { setSyncSession, syncStoredProgress } from "../data/lessonProgress";
 
 const AuthContext = createContext(null);
 
@@ -19,6 +20,16 @@ export function AuthProvider({ children }) {
     });
     return () => subscription?.unsubscribe();
   }, []);
+
+  // The teacher dashboard reads user_progress, which only the student's own
+  // browser can write. Point the shared progress store at the current session
+  // (so signing out stops the pushes at once) and, on sign-in, push what this
+  // device already has — a student who ticked lessons while signed out, or
+  // before this existed, would otherwise stay invisible to their teacher.
+  useEffect(() => {
+    setSyncSession(session);
+    if (session) syncStoredProgress();
+  }, [session]);
 
   const signUp = useCallback(async (email, password) => {
     const supabase = getSupabaseClient();
