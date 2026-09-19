@@ -33,6 +33,17 @@ export default function Home() {
         </div>
         <p className="home-cta-note">No signup needed — see how it works first</p>
       </section>
+      <section className="home-teacher">
+        <div className="home-teacher-card">
+          <div>
+            <h2 className="home-teacher-title">👩‍🏫 Teacher's Dashboard</h2>
+            <p className="home-teacher-text">
+              Track your class's progress — lessons completed, labs solved, quiz scores — all in one view.
+            </p>
+          </div>
+          <Link to="/teacher" className="home-cta home-teacher-cta">Open Teacher's Dashboard →</Link>
+        </div>
+      </section>
       <section id="subjects" className="home-subjects">
         <div className="home-subjects-header">
           <h2>All Subjects</h2>
