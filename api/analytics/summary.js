@@ -59,12 +59,26 @@ export default async function handler(req, res) {
     // ------------------------------------------------------------- TEACHER
     // GET /api/analytics/summary?scope=class — the teacher dashboard.
     //
-    // Access: the caller's email must be in TEACHER_EMAILS (set by the owner) or
-    // OWNER_EMAILS. Anyone else gets 403 and ZERO student data — this fails
-    // closed, like every other access check in the platform.
+    // Access, in this order (any one is enough):
+    //   1. the caller is the owner (OWNER_EMAILS) — may open any class;
+    //   2. the caller is in TEACHER_EMAILS (the owner's global allowlist);
+    //   3. the caller is NAMED AS A TEACHER in `teacher_students` — the row only
+    //      ever exists because the owner made it in the admin card, or because a
+    //      designated school admin made it inside their own school. Being linked
+    //      IS the authorization step, and a teacher can never create one. This is
+    //      what keeps the owner from having to edit an env var for every teacher
+    //      a school onboards.
     //
-    // Scope: a teacher sees exactly the students the owner linked to them in
-    // `teacher_students` — never the whole platform, never another teacher's
+    // `teacher_students` carries rule 3 (rather than the newer `school_members`
+    // roster) on purpose: it already exists in the live database, so the
+    // dashboard cannot start failing closed for teachers because the schools
+    // tables have not been applied yet.
+    //
+    // Anyone else gets 403 and ZERO student data — this fails closed, like every
+    // other access check in the platform.
+    //
+    // Scope: a teacher sees exactly the students the owner (or their school's
+    // admin) linked to them — never the whole platform, never another teacher's
     // class. The owner may pass ?teacher=<email> to open any single class, and
     // gets every class when no teacher is named.
     //
@@ -76,10 +90,29 @@ export default async function handler(req, res) {
       const ownerEmails = csv(process.env.OWNER_EMAILS, "dewayneddavis@gmail.com");
       const isOwner = ownerEmails.includes(callerEmail);
 
-      if (!isOwner && !teacherEmails.includes(callerEmail)) {
+      let access = isOwner ? "owner" : teacherEmails.includes(callerEmail) ? "allowlist" : null;
+      if (!access) {
+        // Rule 3 — are they a teacher on anyone's link? Read-only, and only the
+        // row's existence matters, so this leaks nothing to the caller.
+        const { data: linkedRows, error: linkedError } = await supabase
+          .from("teacher_students")
+          .select("teacher_email")
+          .eq("teacher_email", callerEmail)
+          .limit(1);
+        if (linkedError) {
+          console.error("API /api/analytics/summary: teacher_students lookup failed:", linkedError.message);
+          return res.status(500).json({
+            error:
+              "Class lookup failed (failing closed). Ensure the `teacher_students` table exists — see supabase/schema.sql.",
+          });
+        }
+        if ((linkedRows || []).length > 0) access = "linked";
+      }
+
+      if (!access) {
         return res.status(403).json({
           error:
-            "Forbidden: teacher access required. Ask the account owner to add your email to the teacher list.",
+            "Forbidden: teacher access required. Ask the account owner to add your email to the teacher list, or to link you to your students.",
         });
       }
 

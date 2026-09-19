@@ -11,6 +11,7 @@ import AccountPage from "./pages/AccountPage";
 import PricingPage from "./pages/PricingPage";
 import AdminPage from "./pages/AdminPage";
 import TeacherPage from "./pages/TeacherPage";
+import SchoolConsolePage from "./pages/SchoolConsolePage";
 import PlannerPage from "./pages/PlannerPage";
 import ProtectedRoute from "./components/ProtectedRoute";
 import "./App.css";
@@ -36,6 +37,7 @@ export default function App() {
               <Route path="/account" element={<ProtectedRoute><AccountPage /></ProtectedRoute>} />
               <Route path="/admin" element={<ProtectedRoute><AdminPage /></ProtectedRoute>} />
               <Route path="/teacher" element={<TeacherPage />} />
+              <Route path="/school" element={<SchoolConsolePage />} />
             </Routes>
           </main>
           <footer className="app-footer">

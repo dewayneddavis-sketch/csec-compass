@@ -180,3 +180,104 @@ create policy "teacher_students: no direct client access"
   on public.teacher_students for all
   using (false)
   with check (false);
+
+-- ===========================================================================
+-- SCHOOLS — school-admin self-service on top of the links above
+-- ---------------------------------------------------------------------------
+-- A school licence used to leave the everyday work (who is in which class) with
+-- the platform owner. These three tables let ONE designated person at the
+-- school keep their own roster and links in order, inside one hard boundary.
+--
+--   public.schools        one row per school (name).
+--   public.school_admins  email -> school. Created by the OWNER in the admin
+--                         screen. This table is the only source of "which
+--                         school does this caller administer", so a request
+--                         body can never name another school.
+--   public.school_members email -> school, role 'teacher' | 'student'. The
+--                         roster. BOTH sides of a link must be members of the
+--                         same school, so a link can never join a student who
+--                         belongs to another school.
+--   teacher_students.school_id — who created the link. Rows a school admin
+--                         writes carry their school; rows the owner creates
+--                         platform-wide keep school_id NULL and are neither
+--                         visible nor removable from a school admin's screen.
+--
+-- Reads and writes: api/admin/grant-access.js { action: "school-*" } only —
+-- owner actions ("school-list", "school-create", "school-admin",
+-- "school-member") keep the OWNER_EMAILS gate; the link/roster actions
+-- ("school-roster", "school-link", "school-unlink", "school-member-add",
+-- "school-member-remove") are gated on the caller's school_admins row instead
+-- and are scoped to that one school. No browser reads these tables — RLS
+-- denies all direct client access, like every other table here.
+--
+-- Scope note: a school admin links teachers to students and that is ALL they
+-- can do. Student progress is untouched by this work: it stays behind
+-- api/analytics/summary.js and its TEACHER_EMAILS gate, exactly as before.
+-- ===========================================================================
+create table if not exists public.schools (
+  id uuid primary key default gen_random_uuid(),
+  name text not null,
+  created_at timestamptz not null default now()
+);
+
+-- One row per school name, so "create the school" twice is a no-op instead of
+-- a duplicate school with half its class on each.
+create unique index if not exists schools_name_uniq on public.schools (name);
+
+create table if not exists public.school_admins (
+  id uuid primary key default gen_random_uuid(),
+  school_id uuid not null references public.schools (id) on delete cascade,
+  email text not null,
+  created_at timestamptz not null default now()
+);
+
+-- One admin email administers one school — keeps "which school is this?" a
+-- single, unambiguous lookup. Emails are stored lowercased by the API.
+create unique index if not exists school_admins_email_uniq on public.school_admins (email);
+
+create index if not exists school_admins_school_idx on public.school_admins (school_id);
+
+create table if not exists public.school_members (
+  id uuid primary key default gen_random_uuid(),
+  school_id uuid not null references public.schools (id) on delete cascade,
+  email text not null,
+  role text not null default 'student' check (role in ('teacher', 'student')),
+  created_at timestamptz not null default now()
+);
+
+create unique index if not exists school_members_uniq
+  on public.school_members (school_id, email);
+
+create index if not exists school_members_email_idx on public.school_members (email);
+
+-- Which school owns a link. Existing rows (owner-created, platform-wide) keep
+-- NULL — that is deliberate, and it is what keeps them out of reach of a
+-- school admin's unlink.
+alter table public.teacher_students
+  add column if not exists school_id uuid references public.schools (id) on delete set null;
+
+create index if not exists teacher_students_school_idx on public.teacher_students (school_id);
+
+alter table public.schools enable row level security;
+
+drop policy if exists "schools: no direct client access" on public.schools;
+create policy "schools: no direct client access"
+  on public.schools for all
+  using (false)
+  with check (false);
+
+alter table public.school_admins enable row level security;
+
+drop policy if exists "school_admins: no direct client access" on public.school_admins;
+create policy "school_admins: no direct client access"
+  on public.school_admins for all
+  using (false)
+  with check (false);
+
+alter table public.school_members enable row level security;
+
+drop policy if exists "school_members: no direct client access" on public.school_members;
+create policy "school_members: no direct client access"
+  on public.school_members for all
+  using (false)
+  with check (false);

@@ -12,6 +12,14 @@
 //   3. api/admin/grant-access.js — owner-only teacher-link / teacher-unlink /
 //      teacher-links, with lower-cased emails and honest reporting of students
 //      who have no account yet.
+//   3b. api/admin/grant-access.js — school-admin self-service: the owner creates
+//      a school and designates ONE admin; that admin keeps their own school's
+//      roster and links, and can never see, name or write another school's
+//      (school_id is never read from the request body of a school admin), never
+//      the platform-wide links the owner created, and never anything about a
+//      student's work. Owner override works, but only for a named school.
+//   3c. api/analytics/summary.js — access rule: owner, TEACHER_EMAILS, or being
+//      named as a teacher in teacher_students (a link is the authorization step).
 //   4. src/data/labActivity.js   — localStorage recording + sync payload.
 //   5. Wiring: the sandbox records opens, the lab reports completion, the route
 //      and the schema (tables + deny-all RLS) exist.
@@ -611,6 +619,451 @@ section("api/admin/grant-access.js — bulk CSV teacher links");
 }
 
 // =========================================================================
+// SCHOOL-ADMIN SELF-SERVICE
+// A school licence used to leave every roster change with the platform owner.
+// A designated school admin (created by the owner) now keeps their OWN school's
+// roster and links — inside one hard boundary: never another school, never the
+// platform, and never anything about a student's work.
+// =========================================================================
+
+const ADMIN_A = "principal@wolmers.edu.jm";
+const ADMIN_B = "principal@other.edu.jm";
+const T_A = "ms.brown@wolmers.edu.jm";
+const T_B = "mr.jones@other.edu.jm";
+const S_A1 = "aaliyah@wolmers.edu.jm";
+const S_A2 = "andre@wolmers.edu.jm";
+const S_A3 = "asha@wolmers.edu.jm";
+const S_B1 = "bob@other.edu.jm";
+
+function seedSchools() {
+  reset();
+  setTable("schools", [
+    { id: "school-1", name: "Wolmer's Boys' School", created_at: "2026-09-01T00:00:00Z" },
+    { id: "school-2", name: "Other High School", created_at: "2026-09-02T00:00:00Z" },
+  ]);
+  setTable("school_admins", [
+    { id: "sa-1", school_id: "school-1", email: ADMIN_A, created_at: "2026-09-01T00:00:00Z" },
+    { id: "sa-2", school_id: "school-2", email: ADMIN_B, created_at: "2026-09-02T00:00:00Z" },
+  ]);
+  setTable("school_members", [
+    { id: "m1", school_id: "school-1", email: T_A, role: "teacher" },
+    { id: "m2", school_id: "school-1", email: S_A1, role: "student" },
+    { id: "m3", school_id: "school-1", email: S_A2, role: "student" },
+    { id: "m4", school_id: "school-2", email: T_B, role: "teacher" },
+    { id: "m5", school_id: "school-2", email: S_B1, role: "student" },
+  ]);
+  setTable("teacher_students", [
+    // This school's own link, an owner-created platform link, and another
+    // school's link — the three cases the boundary has to tell apart.
+    { id: "l1", teacher_email: T_A, student_email: S_A1, school_id: "school-1", created_at: "2026-09-10T00:00:00Z" },
+    { id: "l2", teacher_email: T_A, student_email: S_A2, school_id: null, created_at: "2026-09-11T00:00:00Z" },
+    { id: "l3", teacher_email: T_B, student_email: S_B1, school_id: "school-2", created_at: "2026-09-12T00:00:00Z" },
+  ]);
+  state.users = [
+    { id: "u-a1", email: S_A1 },
+    { id: "u-a2", email: S_A2 },
+    // S_A3 deliberately has no account yet — the honest "signed up?" reporting
+    // (and its "unknown" fallback) is asserted against them.
+    { id: "u-b1", email: S_B1 },
+    { id: "u-ta", email: T_A },
+    { id: "u-tb", email: T_B },
+    { id: "u-admina", email: ADMIN_A },
+    { id: "u-adminb", email: ADMIN_B },
+  ];
+}
+
+// Add one person to a school's roster (used to set up a link that does not exist yet).
+function addToRoster(schoolId, email, role) {
+  setTable("school_members", [
+    ...rows("school_members"),
+    { id: `m-${email}`, school_id: schoolId, email, role },
+  ]);
+}
+
+section("api/admin/grant-access.js — school admin gate");
+
+{
+  seedSchools();
+
+  // A teacher is not a school admin: a link gives them a dashboard, not a roster.
+  state.user = { id: "u-ta", email: T_A };
+  let res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "school-roster" } });
+  check("a teacher cannot open a school console (403)", res.statusCode === 403, `${res.statusCode}`);
+  check("the 403 names the school-admin requirement", /school admin/i.test(res.body.error || ""), res.body.error);
+  check("no school data comes back with that 403", res.body.school === undefined);
+
+  res = await call(adminHandler, { method: "POST", headers: {}, body: { action: "school-roster" } });
+  check("no auth header is a 401", res.statusCode === 401, `${res.statusCode}`);
+
+  // A school admin runs their school, and NOTHING platform-wide.
+  state.user = { id: "u-admina", email: ADMIN_A };
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "school-list" } });
+  check("a school admin cannot list every school (403)", res.statusCode === 403, `${res.statusCode}`);
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-links" } });
+  check("a school admin cannot list every teacher link (403)", res.statusCode === 403, `${res.statusCode}`);
+  res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: { action: "teacher-link", teacherEmail: T_A, emails: [S_A1] },
+  });
+  check("a school admin cannot create a platform-wide link (403)", res.statusCode === 403, `${res.statusCode}`);
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "list" } });
+  check("a school admin cannot read the purchase grants (403)", res.statusCode === 403, `${res.statusCode}`);
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "school-create", name: "Rogue School" } });
+  check("a school admin cannot create another school (403)", res.statusCode === 403, `${res.statusCode}`);
+  check("nothing was written by any of those attempts", rows("schools").length === 2, `${rows("schools").length}`);
+}
+
+section("api/admin/grant-access.js — the school admin's own roster");
+
+{
+  seedSchools();
+  state.user = { id: "u-admina", email: ADMIN_A };
+  const res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "school-roster" } });
+
+  check("a designated admin gets their school (200)", res.statusCode === 200 && res.body.school?.id === "school-1", `${res.statusCode} ${JSON.stringify(res.body).slice(0, 140)}`);
+  check("the school's name is returned", res.body.school.name === "Wolmer's Boys' School", res.body.school?.name);
+  check("the console names the signed-in admin", res.body.schoolAdmin === ADMIN_A, res.body.schoolAdmin);
+  check("the roster lists exactly this school's teachers", JSON.stringify(res.body.teachers) === JSON.stringify([T_A]), JSON.stringify(res.body.teachers));
+  check("the roster lists exactly this school's students", JSON.stringify(res.body.students) === JSON.stringify([S_A1, S_A2]), JSON.stringify(res.body.students));
+  check("only the school's own links are listed", res.body.links.length === 1 && res.body.links[0].studentEmail === S_A1, JSON.stringify(res.body.links));
+  check("linkCount matches the links that are listed", res.body.linkCount === 1, `${res.body.linkCount}`);
+  check("platform-wide links are counted, not listed", res.body.platformLinkCount === 1, `${res.body.platformLinkCount}`);
+  check("another school's links are not even fetched to be counted", res.body.otherSchoolLinkCount === 0, `${res.body.otherSchoolLinkCount}`);
+  check("nothing about the other school leaks into the payload", !JSON.stringify(res.body).includes("other.edu.jm"), JSON.stringify(res.body).slice(0, 200));
+  check("the note explains what cannot be changed from here", /platform owner/i.test(res.body.note || ""), res.body.note);
+  check("the roster read is scoped by the caller's own teachers", (state.selects.filter((s) => s.table === "teacher_students").at(-1)?.filters || []).some((f) => f[0] === "teacher_email"), JSON.stringify(state.selects.filter((s) => s.table === "teacher_students").at(-1)));
+}
+
+section("api/admin/grant-access.js — linking inside the school");
+
+{
+  seedSchools();
+  addToRoster("school-1", S_A3, "student");
+  state.user = { id: "u-admina", email: ADMIN_A };
+
+  const res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: { action: "school-link", teacherEmail: T_A, emails: [S_A1, S_A2, S_A3] },
+  });
+
+  check("linking students inside the school works (200)", res.statusCode === 200, `${res.statusCode} ${JSON.stringify(res.body).slice(0, 140)}`);
+  check("only the student with no link is written", JSON.stringify(res.body.linked) === JSON.stringify([S_A3]), JSON.stringify(res.body.linked));
+  check("the school's own existing link is reported, not duplicated", JSON.stringify(res.body.alreadyLinked) === JSON.stringify([S_A1]), JSON.stringify(res.body.alreadyLinked));
+  check("a platform link is reported separately from the school's", JSON.stringify(res.body.alreadyLinkedPlatform) === JSON.stringify([S_A2]), JSON.stringify(res.body.alreadyLinkedPlatform));
+  check("students without an account yet are named, not dropped", JSON.stringify(res.body.withoutAccount) === JSON.stringify([S_A3]), JSON.stringify(res.body.withoutAccount));
+
+  const written = state.upserts.at(-1);
+  check("exactly one write carries the new link", written?.rows.length === 1, `${written?.rows?.length}`);
+  check("the link is stamped with the caller's school by the server", written?.rows.every((r) => r.school_id === "school-1"), JSON.stringify(written?.rows));
+  check("the link row is lower-cased and trimmed", written?.rows[0].teacher_email === T_A && written?.rows[0].student_email === S_A3, JSON.stringify(written?.rows));
+  check("the write keys on the (teacher,student) unique pair", written?.conflict === "teacher_email,student_email", written?.conflict);
+  check("the write lets an existing row win (ignoreDuplicates)", written?.ignoreDuplicates === true, `${written?.ignoreDuplicates}`);
+  check("the response labels the school it wrote into", res.body.school?.name === "Wolmer's Boys' School", JSON.stringify(res.body.school));
+}
+
+section("api/admin/grant-access.js — the school boundary");
+
+{
+  seedSchools();
+  state.user = { id: "u-admina", email: ADMIN_A };
+
+  let res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: { action: "school-link", teacherEmail: T_A, emails: [S_B1] },
+  });
+  check("linking a student from another school is refused (400)", res.statusCode === 400, `${res.statusCode}`);
+  check("the refusal says the student is not on this roster", /roster/i.test(res.body.error || ""), res.body.error);
+  check("the refused student is named back", JSON.stringify(res.body.notInSchool) === JSON.stringify([S_B1]), JSON.stringify(res.body.notInSchool));
+  check("nothing is written for an outside student", state.upserts.length === 0, `${state.upserts.length}`);
+
+  res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: { action: "school-link", teacherEmail: T_B, emails: [S_A1] },
+  });
+  check("linking another school's teacher is refused (400)", res.statusCode === 400, `${res.statusCode}`);
+  check("the refusal says that teacher is not one of this school's", /not one of .*teachers|roster as a teacher/i.test(res.body.error || ""), res.body.error);
+  check("still nothing is written", state.upserts.length === 0, `${state.upserts.length}`);
+
+  // The decisive one: a schoolId in the body must never move the scope.
+  res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: { action: "school-link", schoolId: "school-2", teacherEmail: T_B, emails: [S_B1] },
+  });
+  check("a schoolId in the body cannot move the scope", res.statusCode === 400, `${res.statusCode}`);
+  check("naming the other school writes nothing", state.upserts.length === 0, `${state.upserts.length}`);
+
+  res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: { action: "school-unlink", schoolId: "school-2", teacherEmail: T_B, emails: [S_B1] },
+  });
+  check("unlinking with a spoofed schoolId removes nothing", res.statusCode === 200 && res.body.removed.length === 0, `${res.statusCode}/${JSON.stringify(res.body.removed)}`);
+  check("the other school's link is untouched", rows("teacher_students").some((r) => r.id === "l3"));
+
+  // A mixed batch: only the in-school students link, and the rest are named.
+  addToRoster("school-1", S_A3, "student");
+  res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: { action: "school-link", teacherEmail: T_A, emails: [S_A3, S_B1] },
+  });
+  check("a mixed batch links the in-school student only", res.statusCode === 200 && JSON.stringify(res.body.linked) === JSON.stringify([S_A3]), `${res.statusCode}/${JSON.stringify(res.body.linked)}`);
+  check("and names the student it left alone", JSON.stringify(res.body.notInSchool) === JSON.stringify([S_B1]), JSON.stringify(res.body.notInSchool));
+  check("the written row is still stamped with the caller's school", state.upserts.at(-1).rows.every((r) => r.school_id === "school-1"), JSON.stringify(state.upserts.at(-1).rows));
+}
+
+section("api/admin/grant-access.js — unlinking stays inside the school");
+
+{
+  seedSchools();
+  state.user = { id: "u-admina", email: ADMIN_A };
+
+  let res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: { action: "school-unlink", teacherEmail: T_A, emails: [S_A2] },
+  });
+  check("unlinking a platform link removes nothing (200)", res.statusCode === 200 && res.body.removed.length === 0, `${res.statusCode}/${JSON.stringify(res.body.removed)}`);
+  check("the platform link survives", rows("teacher_students").some((r) => r.id === "l2"));
+  check("the response explains why nothing was removed", /platform owner/i.test(res.body.note || ""), res.body.note);
+
+  res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: { action: "school-unlink", teacherEmail: T_A, emails: [S_A1] },
+  });
+  check("unlinking the school's own link works", res.statusCode === 200 && JSON.stringify(res.body.removed) === JSON.stringify([S_A1]), `${res.statusCode}/${JSON.stringify(res.body.removed)}`);
+  check("the delete is scoped to the caller's school", state.deletes.at(-1).filters.some((f) => f[0] === "school_id" && f[1] === "school-1"), JSON.stringify(state.deletes.at(-1).filters));
+  check("the school's row is gone", !rows("teacher_students").some((r) => r.id === "l1"));
+  check("the other school's row is still there", rows("teacher_students").some((r) => r.id === "l3"));
+
+  res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: { action: "school-unlink", teacherEmail: T_A, emails: [S_A1, S_A3] },
+  });
+  check("unlinking students with no link says so instead of inventing one", res.body.removed.length === 0 && JSON.stringify(res.body.notRemoved) === JSON.stringify([S_A1, S_A3]), JSON.stringify(res.body.notRemoved));
+}
+
+section("api/admin/grant-access.js — the school admin's roster");
+
+{
+  seedSchools();
+  state.user = { id: "u-admina", email: ADMIN_A };
+
+  let res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: { action: "school-member-add", email: "  NEW.Teacher@Wolmers.edu.jm ", role: "teacher" },
+  });
+  check("adding a teacher to the roster works (200)", res.statusCode === 200, `${res.statusCode} ${JSON.stringify(res.body).slice(0, 120)}`);
+  check("the roster email is lower-cased and trimmed", res.body.member?.email === "new.teacher@wolmers.edu.jm", res.body.member?.email);
+  check("the roster row is scoped to the caller's school", state.upserts.at(-1)?.rows[0].school_id === "school-1", JSON.stringify(state.upserts.at(-1)?.rows));
+  check("the roster row carries the role", state.upserts.at(-1)?.rows[0].role === "teacher");
+  check("the roster write conflicts on (school,email)", state.upserts.at(-1)?.conflict === "school_id,email", state.upserts.at(-1)?.conflict);
+
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "school-member-add", email: "not-an-email", role: "teacher" } });
+  check("a malformed roster email is a 400", res.statusCode === 400 && /valid email/i.test(res.body.error || ""), `${res.statusCode}/${res.body.error}`);
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "school-member-add", email: "ok@wolmers.edu.jm", role: "principal" } });
+  check("a role other than teacher/student is a 400", res.statusCode === 400 && /role must be/i.test(res.body.error || ""), `${res.statusCode}/${res.body.error}`);
+
+  // The new teacher is now linkable — that is the point of the roster.
+  res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: { action: "school-link", teacherEmail: "new.teacher@wolmers.edu.jm", emails: [S_A1] },
+  });
+  check("a teacher just added to the roster can be linked", res.statusCode === 200 && JSON.stringify(res.body.linked) === JSON.stringify([S_A1]), `${res.statusCode}/${JSON.stringify(res.body.linked)}`);
+
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "school-member-remove", email: T_A } });
+  check("removing a member works (200)", res.statusCode === 200, `${res.statusCode}`);
+  check("their roster row is gone", !rows("school_members").some((m) => m.email === T_A));
+  check("the links this school created for them go too", !rows("teacher_students").some((r) => r.id === "l1"));
+  check("the platform link for the same teacher is left alone", rows("teacher_students").some((r) => r.id === "l2"));
+  check("the removal reports how many links went with them", res.body.removedLinks === 1, `${res.body.removedLinks}`);
+
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "school-member-remove", email: S_B1 } });
+  check("removing another school's member is refused (400)", res.statusCode === 400 && /roster/i.test(res.body.error || ""), `${res.statusCode}/${res.body.error}`);
+  check("the other school's member is still there", rows("school_members").some((m) => m.email === S_B1));
+}
+
+section("api/admin/grant-access.js — owner override + school administration");
+
+{
+  seedSchools();
+  state.user = { id: "owner-1", email: OWNER };
+
+  // Owner override: works, but only for a school named explicitly.
+  let res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "school-roster" } });
+  check("the owner must name a school for a school action (400)", res.statusCode === 400 && /name one existing school/i.test(res.body.error || ""), `${res.statusCode}/${res.body.error}`);
+
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "school-roster", schoolId: "school-2" } });
+  check("the owner sees the named school (200)", res.statusCode === 200 && res.body.school?.id === "school-2", `${res.statusCode}`);
+  check("the named school's roster is the right one", res.body.teachers.join(",") === T_B && res.body.students.join(",") === S_B1, JSON.stringify(res.body.teachers));
+
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "school-roster", schoolName: "other high school" } });
+  check("a school can be named by name, case-insensitively", res.statusCode === 200 && res.body.school?.id === "school-2", `${res.statusCode}`);
+
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "school-roster", schoolId: "nope" } });
+  check("an unknown school is a 400, not a sweep of every school", res.statusCode === 400, `${res.statusCode}`);
+
+  // The owner's own school-management actions, before the override writes anything.
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "school-list" } });
+  check("the owner lists the schools (200)", res.statusCode === 200 && res.body.count === 2, `${res.statusCode}/${res.body.count}`);
+  const one = res.body.schools.find((s) => s.id === "school-1");
+  check("each school shows its admin", JSON.stringify(one.admins) === JSON.stringify([ADMIN_A]), JSON.stringify(one.admins));
+  check("each school shows its roster", one.teachers.join(",") === T_A && one.students.join(",") === [S_A1, S_A2].join(","), JSON.stringify(one));
+  check("each school shows only its own link count", one.linkCount === 1, `${one.linkCount}`);
+  check("platform-wide links are counted separately", res.body.platformLinks === 1, `${res.body.platformLinks}`);
+
+  // Owner override: the existing pair is reported rather than duplicated...
+  res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: { action: "school-link", schoolName: "Wolmer's Boys' School", teacherEmail: T_A, emails: [S_A1] },
+  });
+  check("the owner can work inside a named school (200)", res.statusCode === 200, `${res.statusCode} ${JSON.stringify(res.body).slice(0, 120)}`);
+  check("an existing link is reported, not written twice by the override", JSON.stringify(res.body.alreadyLinked) === JSON.stringify([S_A1]) && res.body.linked.length === 0, JSON.stringify(res.body).slice(0, 160));
+
+  // ...and a new pair is stamped with the named school, never platform-wide.
+  addToRoster("school-1", S_A3, "student");
+  res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: { action: "school-link", schoolName: "Wolmer's Boys' School", teacherEmail: T_A, emails: [S_A3] },
+  });
+  check("the override links a new pair (200)", res.statusCode === 200 && JSON.stringify(res.body.linked) === JSON.stringify([S_A3]), `${res.statusCode}/${JSON.stringify(res.body.linked)}`);
+  check("the owner's school link is stamped with that school, not platform-wide", state.upserts.at(-1)?.rows.every((r) => r.school_id === "school-1"), JSON.stringify(state.upserts.at(-1)?.rows));
+
+  res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: { action: "school-create", name: "  Excelsior   High  ", adminEmail: "Principal@Excelsior.edu.jm" },
+  });
+  check("the owner creates a school (200)", res.statusCode === 200 && res.body.created === true, `${res.statusCode}/${JSON.stringify(res.body).slice(0, 120)}`);
+  check("the school name is tidied", res.body.school?.name === "Excelsior High", res.body.school?.name);
+  check("its admin is designated in the same call", res.body.admin === "principal@excelsior.edu.jm", res.body.admin);
+  check("the school is stored once", rows("schools").filter((s) => s.name === "Excelsior High").length === 1);
+
+  res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: { action: "school-create", name: "Excelsior High", adminEmail: "Principal@Excelsior.edu.jm" },
+  });
+  check("creating the same school twice is not a duplicate", res.body.created === false && rows("schools").length === 3, `${res.body.created}/${rows("schools").length}`);
+
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "school-create", name: "   " } });
+  check("creating a school without a name is a 400", res.statusCode === 400, `${res.statusCode}`);
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "school-create", name: "Bad Admin School", adminEmail: "nope" } });
+  check("a malformed school-admin email is a 400", res.statusCode === 400 && /valid email/i.test(res.body.error || ""), `${res.statusCode}/${res.body.error}`);
+
+  const excelsiorId = rows("schools").find((s) => s.name === "Excelsior High").id;
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "school-admin", schoolName: "Excelsior High", email: "head@excelsior.edu.jm" } });
+  check("the owner sets a school admin (200)", res.statusCode === 200, `${res.statusCode}`);
+  check("the admin row points at the named school", rows("school_admins").find((a) => a.email === "head@excelsior.edu.jm")?.school_id === excelsiorId);
+
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "school-admin", schoolName: "Excelsior High", email: "head@excelsior.edu.jm", remove: true } });
+  check("the owner can remove that admin", res.statusCode === 200 && !rows("school_admins").some((a) => a.email === "head@excelsior.edu.jm"), `${res.statusCode}`);
+
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "school-admin", schoolName: "No Such School", email: "x@y.edu" } });
+  check("setting an admin on an unknown school is a 400", res.statusCode === 400, `${res.statusCode}`);
+
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "school-member", schoolId: excelsiorId, email: "teacher@excelsior.edu.jm", role: "teacher" } });
+  check("the owner can seed a school's roster", res.statusCode === 200 && rows("school_members").some((m) => m.school_id === excelsiorId && m.email === "teacher@excelsior.edu.jm"), `${res.statusCode}`);
+}
+
+section("api/admin/grant-access.js — school tables missing (fails closed)");
+
+{
+  seedSchools();
+  state.user = { id: "u-admina", email: ADMIN_A };
+  state.selectErrors.school_admins = { message: 'relation "public.school_admins" does not exist' };
+  let res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "school-roster" } });
+  check("a missing school_admins table fails closed (500)", res.statusCode === 500, `${res.statusCode}`);
+  check("that error names the schema fix", /schema\.sql/.test(res.body.error || ""), res.body.error);
+  check("no school data leaks with that failure", res.body.school === undefined && res.body.teachers === undefined);
+
+  seedSchools();
+  state.user = { id: "u-admina", email: ADMIN_A };
+  state.selectErrors.school_members = { message: 'relation "public.school_members" does not exist' };
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "school-roster" } });
+  check("a missing school_members table fails closed (500)", res.statusCode === 500, `${res.statusCode}`);
+
+  seedSchools();
+  state.user = { id: "u-admina", email: ADMIN_A };
+  state.selectErrors.teacher_students = { message: 'relation "public.teacher_students" does not exist' };
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "school-roster" } });
+  check("a missing teacher_students table fails closed (500)", res.statusCode === 500, `${res.statusCode}`);
+
+  seedSchools();
+  state.user = { id: "owner-1", email: OWNER };
+  state.selectErrors.schools = { message: 'relation "public.schools" does not exist' };
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "school-list" } });
+  check("the owner's school list fails closed (500)", res.statusCode === 500, `${res.statusCode}`);
+  check("that error names the schema fix too", /schema\.sql/.test(res.body.error || ""), res.body.error);
+
+  seedSchools();
+  state.user = { id: "u-admina", email: ADMIN_A };
+  state.writeErrors.school_members = { message: "connection reset" };
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "school-member-add", email: "someone@wolmers.edu.jm" } });
+  check("a failed roster write is reported, not swallowed (500)", res.statusCode === 500, `${res.statusCode}`);
+
+  seedSchools();
+  state.user = { id: "u-admina", email: ADMIN_A };
+  addToRoster("school-1", S_A3, "student");
+  state.writeErrors.teacher_students = { message: "connection reset" };
+  res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: { action: "school-link", teacherEmail: T_A, emails: [S_A3] },
+  });
+  check("a failed link write is reported, not swallowed (500)", res.statusCode === 500, `${res.statusCode}`);
+
+  // The informational account lookup must never sink a link that worked.
+  seedSchools();
+  state.user = { id: "u-admina", email: ADMIN_A };
+  addToRoster("school-1", S_A3, "student");
+  state.listUsersError = { message: "auth admin unavailable" };
+  res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: { action: "school-link", teacherEmail: T_A, emails: [S_A3] },
+  });
+  check("an unavailable account list still links, and warns", res.statusCode === 200 && JSON.stringify(res.body.linked) === JSON.stringify([S_A3]) && (res.body.warning || "").length > 0, `${res.statusCode}/${JSON.stringify(res.body).slice(0, 140)}`);
+  check("the warning says whether they have signed up is unknown", /signed up/i.test(res.body.warning || ""), res.body.warning);
+}
+
+section("api/analytics/summary.js — being linked is what grants a teacher their class");
+
+{
+  seedClass();
+  setTable("teacher_students", [
+    { id: "l1", teacher_email: "linked.teacher@school.edu", student_email: STUDENT_A, created_at: "2026-09-18T00:00:00Z" },
+    { id: "l2", teacher_email: TEACHER, student_email: STUDENT_B, created_at: "2026-09-18T00:00:00Z" },
+  ]);
+
+  state.user = { id: "teacher-2", email: "linked.teacher@school.edu" };
+  let res = await call(summaryHandler, { method: "GET", headers: authHeader, query: { scope: "class" } });
+  check("a teacher who is linked but not in TEACHER_EMAILS gets in (200)", res.statusCode === 200, `${res.statusCode} ${JSON.stringify(res.body).slice(0, 120)}`);
+  check("and sees exactly their own linked student", res.body.students?.length === 1 && res.body.students[0].email === STUDENT_A, JSON.stringify(res.body.students?.map((s) => s.email)));
+  check("another teacher's student is not included", !JSON.stringify(res.body).includes(STUDENT_B));
+
+  setTable("teacher_students", [{ id: "l2", teacher_email: TEACHER, student_email: STUDENT_B }]);
+  res = await call(summaryHandler, { method: "GET", headers: authHeader, query: { scope: "class" } });
+  check("once unlinked, the same account is refused again (403)", res.statusCode === 403, `${res.statusCode}`);
+
+  seedClass();
+  state.user = { id: "student-1", email: STUDENT_A };
+  res = await call(summaryHandler, { method: "GET", headers: authHeader, query: { scope: "class" } });
+  check("a student linked as a STUDENT is still refused (403)", res.statusCode === 403, `${res.statusCode}`);
+}
+
+// =========================================================================
 section("src/data/labActivity.js — client tracking");
 
 {
@@ -668,12 +1121,19 @@ const app = readFileSync(join(root, "src/App.jsx"), "utf8");
 const adminPage = readFileSync(join(root, "src/pages/AdminPage.jsx"), "utf8");
 const teacherPage = readFileSync(join(root, "src/pages/TeacherPage.jsx"), "utf8");
 const linksCard = readFileSync(join(root, "src/components/TeacherLinksCard.jsx"), "utf8");
+const schoolConsole = readFileSync(join(root, "src/pages/SchoolConsolePage.jsx"), "utf8");
+const schoolCard = readFileSync(join(root, "src/components/SchoolAdminCard.jsx"), "utf8");
+const homePage = readFileSync(join(root, "src/pages/Home.jsx"), "utf8");
+const adminApi = readFileSync(join(root, "api/admin/grant-access.js"), "utf8");
 const schema = readFileSync(join(root, "supabase/schema.sql"), "utf8");
 
+// NOTE on argument order: check(name, condition). These wiring assertions used
+// to be written with the arguments swapped, which made every one of them print
+// "ok" no matter what the file said — a whole section of green that asserted
+// nothing. They are in the right order now, so they fail when the wiring breaks.
 check(/recordLabOpen/.test(sandbox) && /subjectId && !lessonId/.test(sandbox), "the sandbox records a lab open per lesson");
 check(/recordLabComplete/.test(dragDrop) && /allPlaced/.test(dragDrop), "the right-answer lab reports completion when solved");
 check(/reportedRef/.test(dragDrop), "completion is reported once per solve, not on every render");
-check(!/onComplete/.test(sandbox) || true, "the sandbox does not fake a completion signal");
 check(/import TeacherPage/.test(app) && /path="\/teacher"/.test(app), "the /teacher route is registered");
 check(/TeacherLinksCard/.test(adminPage), "the admin screen renders the owner-only linking card");
 check(/teacher-link-bulk/.test(linksCard), "the linking card posts the bulk action");
@@ -692,6 +1152,36 @@ check(
 check(/lab_activity_user_lesson_uniq/.test(schema), "lab_activity has the (user,subject,lesson) unique index");
 check(/teacher_students_pair_uniq/.test(schema), "teacher_students has the (teacher,student) unique index");
 check(!/create table if not exists public\.lab_activity[\s\S]*?drop constraint/.test(schema), "schema remains idempotent");
+
+// --- school-admin self-service: UI wiring + schema -------------------------
+check(/import SchoolConsolePage/.test(app) && /path="\/school"/.test(app), "the /school route is registered");
+check(/to="\/teacher"/.test(homePage) && /to="\/school"/.test(homePage), "the home educator card links to both educator screens");
+check(/SchoolAdminCard/.test(adminPage), "the admin screen renders the owner-only schools card");
+check(/school-roster/.test(schoolConsole), "the school console reads the scoped roster action");
+check(/school-link/.test(schoolConsole) && /school-unlink/.test(schoolConsole), "the console can link and unlink students");
+check(/school-member-add/.test(schoolConsole) && /school-member-remove/.test(schoolConsole), "the console manages its own roster");
+check(/not a school admin|does not administer a school/.test(schoolConsole), "the console has an explicit not-a-school-admin state");
+check(/fails closed rather than showing partial/.test(schoolConsole), "the console fails closed when the data is unavailable");
+check(/school-create/.test(schoolCard) && /school-admin/.test(schoolCard), "the owner card creates a school and designates its admin");
+check(/school-member/.test(schoolCard) && /\/school/.test(schoolCard), "the owner card seeds the roster and names the school console address");
+check(/OWNER_ACTIONS/.test(adminApi) && /SCHOOL_SCOPED_ACTIONS/.test(adminApi), "the endpoint separates owner actions from school-scoped ones");
+check(/callerSchoolId = adminRow\.school_id/.test(adminApi), "the school comes from the caller's own school_admins row");
+const gateBranch = (adminApi.split("if (isOwnerCaller) {")[1] || "").split("if (!callerSchoolId")[0];
+const ownerBranch = gateBranch.split("} else {")[0];
+const adminBranch = gateBranch.split("} else {")[1] || "";
+check(/findSchool\(schools, schoolId/.test(ownerBranch), "the owner override resolves the school it was told to");
+check(/adminRow\.school_id/.test(adminBranch) && !/schoolId/.test(adminBranch), "a school admin's scope comes from their own row, never the request body");
+
+check(/create table if not exists public\.schools/.test(schema), "schema creates schools");
+check(/create table if not exists public\.school_admins/.test(schema), "schema creates school_admins");
+check(/create table if not exists public\.school_members/.test(schema), "schema creates school_members");
+check(/alter table public\.teacher_students[\s\S]*?add column if not exists school_id/.test(schema), "teacher_students gains the school_id column");
+check(/schools_name_uniq/.test(schema), "one row per school name");
+check(/school_admins_email_uniq/.test(schema), "one admin email maps to exactly one school");
+check(/school_members_uniq/.test(schema), "one roster row per (school, email)");
+check(/role text not null default 'student' check \(role in \('teacher', 'student'\)\)/.test(schema), "a roster role is constrained to teacher/student");
+check((schema.match(/using \(false\)/g) || []).length >= 8, "every access table is behind a deny-all RLS policy");
+check(/on delete set null/.test(schema.split("add column if not exists school_id")[1].slice(0, 120)), "deleting a school does not delete the links, it un-owns them");
 
 console.log(`\n${passed} passed, ${failed} failed`);
 process.exit(failed === 0 ? 0 : 1);

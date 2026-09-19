@@ -21,3 +21,7 @@
 .home-teacher-text { margin: 0; color: #4b5563; font-size: .95rem; max-width: 46rem; }
 .home-teacher-cta { white-space: nowrap; background: linear-gradient(135deg, #2563eb, #7c3aed); color: #fff; border-radius: 12px; padding: .75rem 1.5rem; font-weight: 600; text-decoration: none; transition: transform .2s, box-shadow .2s; }
 .home-teacher-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(37,99,235,.3); }
+.home-teacher-sub { margin-top: .5rem; font-size: .88rem; color: #6b7280; }
+.home-teacher-actions { display: flex; flex-direction: column; gap: .6rem; align-items: stretch; }
+.home-teacher-cta-ghost { background: #fff; color: #4338ca; border: 2px solid #c7d2fe; }
+.home-teacher-cta-ghost:hover { background: #eef2ff; box-shadow: 0 8px 24px rgba(67,56,202,.18); }
