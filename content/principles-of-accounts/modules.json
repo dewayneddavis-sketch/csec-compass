@@ -233,5 +233,269 @@
                 }
             }
         ]
+    },
+    {
+        "id": "accounting-profession",
+        "title": "Accounting as a Profession",
+        "lessons": [
+            {
+                "id": "users-and-ethics",
+                "title": "Users of Accounting Information and Ethics",
+                "content": "Accounting information is prepared for the people who need it to make decisions. Internal users work inside the business: the owner or manager uses the accounts to see whether the business is making a profit, which expenses are rising and whether there is enough cash to pay the bills, and employees use them when they are negotiating wages and working conditions. External users stand outside the business: investors and shareholders want to know whether their money is safe and earning a return, lenders such as banks want to see whether a loan will be repaid, suppliers want to know whether they will be paid, customers want to know that the business will keep trading, the government needs the figures to assess taxes and to measure the economy, and the public may want to know what the business does to employment and to the environment.\n\nBecause so many people rely on the accounts, the accountant must behave ethically. Ethics in accounting means being honest, objective and professional: recording only real transactions, refusing to hide expenses or to inflate income, keeping clients' information confidential, declaring any conflict of interest and refusing to take part in any plan to mislead the users of the accounts. An accountant who is asked to 'adjust' the figures so that the business can obtain a loan must refuse and must report the matter through the proper channels, because the bank would be lending on a false picture and the accountant would be helping to defraud it.\n\nFraud is the deliberate use of deception for personal gain. Common examples are teeming and lading, where a cashier uses money received from a later customer to cover the shortage left by an earlier one; writing off a customer's debt as bad and then keeping the money when the customer pays; paying wages to a 'ghost' employee; and altering cheques, receipts or invoices. A business guards against fraud by separating duties (the person who keeps the cash records is never the person who banks the cash), requiring two signatures on cheques and payments, having the bank statement checked by someone who does not handle the cash, using pre-numbered documents, rotating staff and arranging regular independent audits.",
+                "objectives": [
+                    "Distinguish between internal and external users of accounting information",
+                    "Explain the ethical responsibilities of an accountant",
+                    "Identify common types of fraud and the controls that prevent them"
+                ],
+                "concepts": [
+                    "Internal users",
+                    "External users",
+                    "Ethics",
+                    "Fraud",
+                    "Teeming and lading",
+                    "Segregation of duties",
+                    "Audit"
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Who Uses the Accounts? Sort each user - manager, bank, tax authority, employee, supplier - into Internal user or External user, and see the decision each one makes from the accounting information."
+                }
+            },
+            {
+                "id": "accounting-software",
+                "title": "Computerised Accounting and Accounting Software",
+                "content": "Most businesses now keep their books on a computer. A computerised accounting system does the same job as a manual set of books: it records the source documents, posts each transaction to the ledgers by double entry, balances the accounts, draws up the trial balance and prints the financial statements. The accountant still has to decide what a transaction means and which accounts it affects; the computer only performs the posting, the arithmetic and the formatting.\n\nPackages are built from modules that cover the different tasks - the sales (debtors) ledger, the purchases (creditors) ledger, the general (nominal) ledger, inventory, payroll and the bank. A transaction entered in one module updates the others automatically, so the debtors control account in the general ledger always agrees with the total of the individual debtors' accounts. Reports can be produced at any time: the trial balance, an individual customer's statement of account, an aged debtors list, the inventory valuation, the payroll summary and the financial statements.\n\nSpreadsheets are used alongside accounting packages for budgets, cash flow projections, payroll schedules, depreciation schedules and 'what if' questions. A spreadsheet does not understand double entry, so the user must build the formulas correctly and protect the file: keep one input area, make every total a formula, use an absolute reference for a rate or a constant, protect the cells that hold formulas, keep a backup and check the results against the ledger. The advantages of computerised accounting are speed, arithmetical accuracy, automatic posting, easy storage and retrieval and instant reports; the risks are entering the wrong data (garbage in, garbage out), losing data through a failure or a virus and unauthorised access - all controlled with passwords and user rights, regular backups and an audit trail.",
+                "objectives": [
+                    "Describe the modules of a computerised accounting system and how they work together",
+                    "State the advantages and the risks of computerised accounting",
+                    "Explain how a spreadsheet is used in accounting and how errors are prevented"
+                ],
+                "concepts": [
+                    "Accounting software",
+                    "Modules",
+                    "Automatic posting",
+                    "Audit trail",
+                    "Spreadsheet",
+                    "Absolute reference",
+                    "Backup"
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Accounting Package Tour: Match each module - sales ledger, purchases ledger, general ledger, inventory, payroll - to the job it does for the business."
+                }
+            }
+        ]
+    },
+    {
+        "id": "control-systems",
+        "title": "Control Systems",
+        "lessons": [
+            {
+                "id": "bank-reconciliation",
+                "title": "Bank Reconciliation Statements",
+                "content": "The bank column of the cash book and the bank statement are two records of the same bank account, but they rarely agree on the same day. The business records a payment when it writes the cheque, while the bank records it only when the cheque is presented and paid, so a cheque that has not yet been cashed is an unpresented cheque. A deposit recorded by the business may be credited by the bank a day or two later, giving an outstanding lodgement. The bank also makes entries the business knows nothing about until the statement arrives: bank charges and interest on an overdraft, standing orders and direct debits paid on the business's behalf, interest or dividends credited directly, and dishonoured cheques. Either side may also make an error.\n\nThe reconciliation is prepared in two stages. First the cash book is brought up to date: items that appear on the bank statement but not in the cash book are entered in the cash book (bank charges and interest paid on the debit side, direct credits, standing orders and dishonoured cheques on the credit side), and the bank balance is corrected. Then the bank reconciliation statement is drawn up, starting from the corrected cash book balance and adjusting for the items that are still only in one record: add lodgements not yet credited by the bank, deduct cheques not yet presented, and the result must equal the balance shown on the bank statement.\n\nFor example, the corrected cash book shows a debit balance of $4,200, lodgements of $800 have not yet been credited and cheques totalling $1,150 have not yet been presented, so the bank statement shows $4,200 + $800 - $1,150 = $3,850. The reconciliation is a control: it proves that the bank account in the ledger is correct, it uncovers errors and omissions, and it exposes cash that has been received but never banked - which is how teeming and lading is usually detected.",
+                "objectives": [
+                    "Explain why the bank column of the cash book and the bank statement may disagree",
+                    "Update the cash book with the items that appear only on the bank statement",
+                    "Prepare a bank reconciliation statement and prove the bank statement balance"
+                ],
+                "concepts": [
+                    "Bank statement",
+                    "Unpresented cheque",
+                    "Outstanding lodgement",
+                    "Standing order",
+                    "Direct debit",
+                    "Dishonoured cheque",
+                    "Bank reconciliation statement"
+                ],
+                "experiment": {
+                    "type": "statement-builder",
+                    "description": "Reconciliation Builder: Sort each item - unpresented cheque, bank charge, standing order, outstanding lodgement - into the updated cash book or the bank reconciliation statement, then build the statement and prove the bank balance."
+                }
+            }
+        ]
+    },
+    {
+        "id": "business-entities",
+        "title": "Business Organisations",
+        "lessons": [
+            {
+                "id": "business-organisations",
+                "title": "Forms of Business Organisation",
+                "content": "A sole trader is a business owned by one person. It is the easiest and cheapest to set up, the owner keeps all the profit and makes all the decisions, but the owner has unlimited liability - personal assets can be used to pay the debts of the business - and the capital and the skills of the business are limited to one person. A partnership is owned by two or more people (up to twenty in most Caribbean jurisdictions) who agree, usually in writing, how the capital is contributed and how the profit is shared. A partnership brings in more capital and more skills and spreads the workload, but each partner is normally an agent of the firm - one partner's actions can bind them all - and in an ordinary partnership the liability is still unlimited.\n\nA limited company is a separate legal entity: it is registered, it can own property, sue and be sued in its own name, and it exists apart from the people who own it. The owners are the shareholders, who hold shares, and their liability is limited to the amount they have paid or agreed to pay for those shares. The company is run by directors appointed by the shareholders. Money is raised by issuing shares (share capital, with dividends paid out of profit to shareholders) or by borrowing through debentures - a debenture is a loan, so a debenture holder is a creditor of the company who receives fixed interest whether a profit is made or not, and who is repaid before any dividend is considered. A company must keep proper accounting records, prepare financial statements each year and file its returns.\n\nA co-operative is owned and controlled by its members, who are also its customers - a credit union, a farmers' co-operative or a consumers' co-operative. Its principles are open membership, democratic control (one member, one vote, whatever the size of the shareholding) and service rather than profit. Any surplus is shared among members as a dividend on their purchases or as interest on their shares, and members' liability is usually limited to their shareholding. The form of the organisation decides what the accounts must show: a sole trader or partnership needs capital accounts and a profit and loss appropriation, a company needs share capital and reserves, and a co-operative or club needs members' funds or an accumulated fund.",
+                "objectives": [
+                    "Compare a sole trader, a partnership, a limited company and a co-operative",
+                    "Explain the meaning of limited liability, share capital and a debenture",
+                    "Relate the form of the organisation to the accounting records it must keep"
+                ],
+                "concepts": [
+                    "Sole trader",
+                    "Partnership",
+                    "Limited liability",
+                    "Share capital",
+                    "Debenture",
+                    "Co-operative",
+                    "Separate legal entity"
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Which Business Type? Sort statements such as 'one member, one vote', 'unlimited liability' and 'shares are bought and sold' into Sole trader, Partnership, Limited company or Co-operative."
+                }
+            },
+            {
+                "id": "partnership-accounts",
+                "title": "Partnership Accounts",
+                "content": "A partnership keeps the same books as a sole trader, but the profit must be shared among the partners according to their agreement. The agreement (a partnership deed, or the Partnership Act if there is none) sets out the profit-sharing ratio, the capital each partner contributes, any interest allowed on that capital, any salary paid to a partner who does more work, and any interest charged on the amounts the partners withdraw for their own use. Most partnerships use the fixed capital method: each partner has a capital account that changes only when capital is introduced or withdrawn permanently, and a separate current account that collects salaries, interest on capital, the share of profit, drawings and interest on drawings.\n\nThe appropriation account is prepared after the income statement and starts with the net profit for the year. Interest charged on the partners' drawings is added; interest allowed on capital and the partners' salaries are deducted; the balance is the profit available for sharing, and it is divided in the agreed ratio. Take two partners, Ann and Ben, with net profit of $120,000, capitals of $100,000 and $60,000, interest on capital at 5%, a salary of $18,000 to Ben, interest on drawings of $1,500 (Ann) and $2,500 (Ben) and a ratio of 3:2. The account reads: net profit $120,000 plus interest on drawings $4,000 = $124,000; less interest on capital of $5,000 (Ann) and $3,000 (Ben) and Ben's salary $18,000 = $98,000 to share; Ann receives $58,800 and Ben $39,200.\n\nEach partner's current account then shows the opening balance, plus salary, plus interest on capital, plus the share of profit, less drawings and interest on drawings, and the closing balance is carried to the statement of financial position, where each partner's capital and current account are shown separately and any loan made by a partner to the firm is shown as a liability. When a new partner is admitted the partners usually revalue the assets and account for goodwill, so that the incoming partner pays for a share of the reputation and assets already built up.",
+                "objectives": [
+                    "Prepare a partnership appropriation account",
+                    "Distinguish between partners' capital accounts and current accounts",
+                    "Calculate each partner's share of profit using the agreed ratio"
+                ],
+                "concepts": [
+                    "Partnership deed",
+                    "Profit-sharing ratio",
+                    "Appropriation account",
+                    "Interest on capital",
+                    "Partner's salary",
+                    "Current account",
+                    "Goodwill"
+                ],
+                "experiment": {
+                    "type": "workbook-tool",
+                    "description": "Appropriation Account Workbench: Enter net profit, interest on capital, partners' salaries and interest on drawings, and watch the residual profit split in the partners' 3:2 ratio."
+                }
+            },
+            {
+                "id": "non-profit-clubs",
+                "title": "Accounts of Non-Profit Organisations",
+                "content": "A club, society or association is not run to make a profit. It is controlled by an elected committee and it exists to provide a service to its members, so its income comes from subscriptions, entrance fees, donations, fundraising events, grants and bank interest. Because there are no owners, the club has no capital: the money it has built up over the years is called the accumulated fund, and any surplus for the year is added to that fund (a deficit is deducted).\n\nThe receipts and payments account is a summary of the club's cash book for the year. It shows the opening balance of cash and bank, every amount actually received, every amount actually paid, and the closing balance - so it includes capital items such as the purchase of equipment or the proceeds of a loan, and it takes no account of subscriptions still owed or of expenses still unpaid. The income and expenditure account is the club's equivalent of an income statement and is prepared on the accruals basis: it includes only revenue items for the year, so subscriptions received for next year are excluded and subscriptions owed by members are included, and each expense is charged for the period it covers. The difference between the income and the expenditure is the surplus or the deficit for the year.\n\nThe club's statement of financial position then shows its non-current assets (equipment, furniture), its current assets (inventory of stock for resale, subscriptions in arrears, cash and bank) and its current liabilities (creditors, subscriptions in advance, accrued expenses), with the accumulated fund as the balancing figure - the fund at the start of the year plus the surplus (or less the deficit) - together with any special funds such as a building fund or a life membership fund. The work is to convert the cash record into the accruals record: open with the opening balances of the items owed and prepaid, adjust the subscriptions figure for amounts in arrears and in advance, provide for depreciation, and take out the capital receipts and payments that belong in the statement of financial position instead.",
+                "objectives": [
+                    "Distinguish between a receipts and payments account and an income and expenditure account",
+                    "Prepare an income and expenditure account from given receipts and payments details",
+                    "Calculate the accumulated fund for the club's statement of financial position"
+                ],
+                "concepts": [
+                    "Accumulated fund",
+                    "Receipts and payments account",
+                    "Income and expenditure account",
+                    "Surplus and deficit",
+                    "Subscriptions in arrears",
+                    "Subscriptions in advance",
+                    "Life membership fund"
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Club Funds: Match each item - a member's subscription, a donation, the purchase of equipment, bank interest - to where it belongs in the club's accounts."
+                }
+            }
+        ]
+    },
+    {
+        "id": "manufacturing-inventory",
+        "title": "Manufacturing and Inventory Control",
+        "lessons": [
+            {
+                "id": "manufacturing-accounts",
+                "title": "Manufacturing Accounts",
+                "content": "A manufacturer does not buy goods ready to resell: it buys raw materials and turns them into finished goods. Its costs are divided into direct costs, which can be traced to the goods produced - direct materials, direct labour and direct (chargeable) expenses such as royalties paid on each item made - and indirect costs, or factory overheads, which help production but cannot be traced to a single unit: factory rent and rates, power and water, factory insurance, depreciation of machinery, indirect wages and factory maintenance. The direct costs added together give the prime cost, and the prime cost plus the factory overheads gives the factory or works cost.\n\nThe manufacturing account is drawn up in stages. First the direct materials used: opening raw materials plus purchases plus carriage inwards less returns outwards less closing raw materials. Then add direct labour and direct expenses to reach the prime cost. Add the factory overheads, adjust for work in progress (add the opening work in progress and deduct the closing work in progress, because the partly finished goods at the end of the year are not yet a cost of the goods completed), and the result is the cost of production of the finished goods. If the finished goods are transferred to the trading section of the business, the transfer price is the cost of production plus any manufacturing profit, and a transfer price above cost is written back to the income statement so that the manufacturing and trading sides are both fairly reported.\n\nA worked example: opening raw materials $20,000, purchases $180,000, carriage inwards $5,000 and closing raw materials $25,000 give direct materials used of $180,000; direct labour $120,000 and direct expenses $10,000 give a prime cost of $310,000; factory overheads of $90,000 give a factory cost of $400,000; and with opening work in progress of $15,000 and closing work in progress of $20,000 the cost of production is $400,000 + $15,000 - $20,000 = $395,000. Manufacturers prepare the account in order to know the true cost of production, to set selling prices and to compare them with competitors, to control factory costs, and to value the raw materials, work in progress and finished goods that appear in the statement of financial position.",
+                "objectives": [
+                    "Distinguish between direct costs and factory overheads",
+                    "Calculate prime cost, factory cost and cost of production, valuing work in progress",
+                    "Prepare a manufacturing account"
+                ],
+                "concepts": [
+                    "Direct materials",
+                    "Direct labour",
+                    "Direct expenses",
+                    "Prime cost",
+                    "Factory overhead",
+                    "Work in progress",
+                    "Cost of production",
+                    "Transfer price"
+                ],
+                "experiment": {
+                    "type": "statement-builder",
+                    "description": "Cost Build-Up: Place each cost - raw materials, direct labour, factory rent, machine depreciation - into the right section of the manufacturing account and watch prime cost and cost of production update."
+                }
+            },
+            {
+                "id": "inventory-valuation",
+                "title": "Inventory Valuation and Stock Control",
+                "content": "Inventory (stock) is valued at the lower of cost and net realisable value, where cost is the cost of buying or making the item and net realisable value is the estimated selling price less any further costs of finishing and selling it. The accountant may assume that items are used in a particular order: first in, first out (FIFO) assumes the oldest goods are sold first; last in, first out (LIFO) assumes the newest are sold first; weighted average cost (AVCO) recalculates an average cost every time goods are received; and specific identification follows the actual cost of each unique item.\n\nTake a trader with 100 units bought at $10 each, who then buys 200 units at $12, issues 250 units, buys 100 units at $14 and issues a further 100 units. Under FIFO the first issue costs $100x10 + 150x12 = $2,800 and the second costs $50x12 + 50x14 = $1,300, leaving 50 units at $14 = $700. Under LIFO the first issue costs $200x12 + 50x10 = $2,900 and the second costs $100x14 = $1,400, leaving 50 units at $10 = $500. Under AVCO the average after the second purchase is $3,400 / 300 units = $11.33, so the first issue costs $2,833 and, after the third purchase, the second issue costs $1,311, leaving 50 units at about $13.11 = $655.56. When prices are rising, FIFO gives the highest closing inventory and the highest profit, LIFO gives the lowest of each, and AVCO falls between them - so the method chosen changes the profit, the tax on it and the figures in the statement of financial position, which is why a business must apply the same method every year (consistency).\n\nControlling the inventory is as important as valuing it. A business sets a reorder level (the quantity at which a new order must be placed, allowing for the time the supplier takes to deliver), a minimum or buffer level below which stock must never fall, and a maximum level above which money would be tied up unnecessarily; it records every receipt and issue on an inventory card and checks the card against a physical stocktake. Holding too much inventory costs money in storage, insurance and obsolescence, while holding too little means turning customers away. An error in valuing closing inventory also distorts two years' profit: if closing inventory is overstated, this year's profit is overstated and next year's opening inventory is overstated, so next year's profit is understated.",
+                "objectives": [
+                    "Value closing inventory using FIFO, LIFO and weighted average cost",
+                    "Explain the effect of each method on profit and on the statement of financial position",
+                    "State the inventory levels a business sets and the effect of an error in the valuation"
+                ],
+                "concepts": [
+                    "First in first out (FIFO)",
+                    "Last in first out (LIFO)",
+                    "Weighted average cost (AVCO)",
+                    "Net realisable value",
+                    "Reorder level",
+                    "Inventory card",
+                    "Stocktake"
+                ],
+                "experiment": {
+                    "type": "calculator-tool",
+                    "description": "Inventory Costing Calculator: Enter the receipts and issues, choose FIFO, LIFO or AVCO, and compare the closing inventory value and cost of sales each method gives."
+                }
+            }
+        ]
+    },
+    {
+        "id": "entrepreneurship",
+        "title": "Accounting for the Entrepreneur",
+        "lessons": [
+            {
+                "id": "payroll-and-deductions",
+                "title": "Payroll and Statutory Deductions",
+                "content": "Payroll is the record of what an employer owes each worker, and it starts with gross pay - the total earned before anything is taken out. A wage is paid for the hours worked, so an hourly-paid worker who works more than the normal week is paid overtime, usually at time and a half or double time; a salary is a fixed amount for the month or the year. Gross pay is made up of the basic wage or salary plus overtime, commission, bonus and any allowances for travelling, housing or meals. Net pay, the amount the worker actually takes home, is gross pay less every deduction.\n\nDeductions are either statutory - required by law - or voluntary - agreed by the worker. Statutory deductions include PAYE income tax, which is calculated on the worker's taxable pay after the allowances allowed by law; contributions to the National Insurance Scheme (NIS), which pay for sickness, maternity and retirement benefits; the National Housing Trust (NHT) contribution; and Education Tax. The employer must also pay its own NIS, NHT and Education Tax contributions on behalf of each employee, so the total cost of employing a worker is the gross pay plus the employer's contributions. Voluntary deductions include pension contributions, trade union dues, credit union savings, health or life insurance, loan repayments and savings plans.\n\nA worked example: an employee earns a basic salary of $150,000, overtime of $12,000 and a travelling allowance of $8,000, so gross pay is $170,000. The deductions are PAYE $18,500, NIS $5,000, NHT $3,000, Education Tax $2,500, a pension contribution of $7,500 and union dues of $1,200 - $37,700 in total - so net pay is $170,000 - $37,700 = $132,300. The employer records this in the payroll register, gives each worker a pay slip showing gross pay, each deduction and net pay, and posts a summary to the ledger: the Wages and Salaries account is debited with the gross pay, the statutory deductions and other amounts withheld are credited to amounts payable accounts, and the net pay is credited to the bank. The money withheld from the workers must then be paid over to the government and the other bodies by the due date, and the records kept for inspection. A payroll package or spreadsheet calculates the deductions, prints the pay slips and produces the statutory returns, but the rates and the accuracy of the input must still be checked by a person.",
+                "objectives": [
+                    "Calculate gross pay, total deductions and net pay",
+                    "Distinguish between statutory and voluntary deductions and name examples of each",
+                    "Record the payroll in the books and state the employer's legal obligations"
+                ],
+                "concepts": [
+                    "Gross pay",
+                    "Net pay",
+                    "Overtime",
+                    "Statutory deductions",
+                    "PAYE",
+                    "NIS",
+                    "NHT",
+                    "Voluntary deductions",
+                    "Payroll register",
+                    "Pay slip"
+                ],
+                "experiment": {
+                    "type": "data-entry-sim",
+                    "description": "Payroll Run: Enter basic pay, overtime and each deduction into the payroll spreadsheet and see gross pay, total deductions and net pay calculated for the whole staff list."
+                }
+            },
+            {
+                "id": "business-plans",
+                "title": "Business Plans and Cash Flow Projections",
+                "content": "An entrepreneur who wants to start or expand a business writes a business plan - a written statement of what the business will do and how it will be financed. It is needed to raise money, because a bank or an investor will not lend on an idea alone; it also forces the owner to test the idea, to set targets and to think about the risks before spending money. A plan usually contains an executive summary, a description of the business and its objectives, a market analysis of the customers and competitors, a marketing plan (product, price, place, promotion), an operations plan, the management and staffing of the business, a financial plan and a statement of the main risks and how they will be handled.\n\nThe financial part of the plan works out the start-up capital needed - the money for equipment, the first inventory, deposits, licences and working capital - and how it will be provided: the owner's own savings, a bank loan, an investor, a grant or a credit union loan. It then shows a projected income statement and, most important of all, a cash flow projection. Profit and cash are not the same thing: a business can make a profit on paper and still run out of cash, because sales made on credit bring cash in only when the customers pay, while wages, rent and suppliers must be paid on time. That is why lenders always ask for a cash flow projection.\n\nA six-month cash flow projection is built month by month: the opening bank balance, plus the receipts for the month (cash sales, money collected from debtors, loans, capital introduced), gives the total cash available; less the payments for the month (purchases paid, wages, rent, utilities, loan repayments, equipment) gives the net cash flow, and the opening balance plus the net cash flow is the closing balance, which becomes the opening balance of the next month. If month 1 opens with nothing, receives $80,000 and pays out $95,000, the net cash flow is -$15,000 and the closing balance is -$15,000, so the business needs an overdraft or more capital; if month 2 then receives $110,000 and pays $85,000, the net cash flow is $25,000 and the closing balance becomes $10,000. Where a month shows a negative closing balance the owner can delay a payment, arrange an overdraft, inject more capital or collect the money owed by debtors more quickly - and the projection shows the problem months in advance, which is its whole purpose.",
+                "objectives": [
+                    "State the sections of a business plan and explain the purpose of each",
+                    "Prepare a six-month cash flow projection from given receipts and payments",
+                    "Explain the difference between profit and cash flow and how a cash shortage is handled"
+                ],
+                "concepts": [
+                    "Business plan",
+                    "Entrepreneur",
+                    "Start-up capital",
+                    "Cash flow projection",
+                    "Net cash flow",
+                    "Opening and closing balance",
+                    "Overdraft"
+                ],
+                "experiment": {
+                    "type": "workbook-tool",
+                    "description": "Six-Month Cash Flow Planner: Enter each month's receipts and payments and watch the opening balance, net cash flow and closing balance roll forward month by month."
+                }
+            }
+        ]
     }
 ]
