@@ -110,6 +110,33 @@ create policy "revision_plans: no direct client access"
   with check (false);
 
 -- ===========================================================================
+-- user_progress — per-user, per-subject lesson progress (teacher dashboard)
+-- Written ONLY by api/progress/sync.js (service role), from the student's own
+-- browser after a tick or a finished lab. Read by api/analytics/summary.js
+-- (service role) to show a linked teacher lessonsCompleted / quizCompleted per
+-- subject, and by api/subjects/list.js.
+--   completed_lessons : the lesson ids the student has ticked (a JSON array)
+--   quiz_completed    : the end-of-course knowledge check is finished
+-- ONE row per (user, subject) — the upsert targets that pair.
+-- ===========================================================================
+create table if not exists public.user_progress (
+  user_id uuid not null references auth.users (id) on delete cascade,
+  subject_id text not null,
+  completed_lessons jsonb not null default '[]'::jsonb,
+  quiz_completed boolean not null default false,
+  updated_at timestamptz not null default now(),
+  primary key (user_id, subject_id)
+);
+
+alter table public.user_progress enable row level security;
+
+drop policy if exists "user_progress: no direct client access" on public.user_progress;
+create policy "user_progress: no direct client access"
+  on public.user_progress for all
+  using (false)
+  with check (false);
+
+-- ===========================================================================
 -- lab_activity — per-student interactive-lab engagement (teacher dashboard)
 -- Written by api/analytics/record.js with { kind: "lab" } (service role) and
 -- read by api/analytics/summary.js?scope=class (service role). One row per
