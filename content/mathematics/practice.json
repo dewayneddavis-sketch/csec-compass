@@ -9,7 +9,7 @@
    "x - 1"
   ],
   "answer": "x - 11",
-  "explanation": "Expand: 4x - 8 - 3x - 3. Combine like terms: (4x - 3x) + (-8 - 3) = x - 11.",
+  "explanation": "Step 1 — Expand each bracket:\n4(x - 2) = 4x - 8 and -3(x + 1) = -3x - 3\nStep 2 — Write the expression with the brackets gone:\n4x - 8 - 3x - 3\nStep 3 — Group the like terms:\n(4x - 3x) + (-8 - 3)\nStep 4 — Simplify:\nx - 11",
   "topic": "algebraic-expressions"
  },
  {
@@ -22,7 +22,7 @@
    "x = 18"
   ],
   "answer": "x = 12",
-  "explanation": "Subtract 2: 3x/4 = 9. Multiply by 4: 3x = 36. Divide by 3: x = 12.",
+  "explanation": "Step 1 — Subtract 2 from both sides:\n3x/4 = 9\nStep 2 — Multiply both sides by 4:\n3x = 36\nStep 3 — Divide both sides by 3:\nx = 12",
   "topic": "algebraic-expressions"
  },
  {
@@ -35,7 +35,7 @@
    "5"
   ],
   "answer": "6",
-  "explanation": "BODMAS: Multiply and divide first. 4×2=8, 6÷3=2. Expression becomes 12 - 8 + 2 = 4 + 2 = 6.",
+  "explanation": "Step 1 — BODMAS: do the multiplication and division before adding or subtracting.\n4 × 2 = 8 and 6 ÷ 3 = 2\nStep 2 — Rewrite the question with those values:\n12 - 8 + 2\nStep 3 — Work from left to right:\n12 - 8 = 4, then 4 + 2 = 6",
   "topic": "real-numbers"
  },
  {
@@ -48,7 +48,7 @@
    "7/20"
   ],
   "answer": "3/8",
-  "explanation": "0.375 = 375/1000. Dividing both by 125 gives 3/8.",
+  "explanation": "Step 1 — 0.375 has three decimal places, so write it over 1000:\n0.375 = 375/1000\nStep 2 — Divide the top and the bottom by a common factor. Both divide by 125:\n375 ÷ 125 = 3 and 1000 ÷ 125 = 8\nStep 3 — Lowest terms:\n3/8",
   "topic": "fractions-decimals-percentages"
  },
  {
@@ -61,7 +61,7 @@
    "$108"
   ],
   "answer": "$102",
-  "explanation": "Discount = 0.15 × 120 = $18. Sale price = 120 - 18 = $102.",
+  "explanation": "Step 1 — Build 15% from 10% + 5% of $120:\n10% = $12 and 5% = $6\nStep 2 — Add them to get the discount:\n$12 + $6 = $18\nStep 3 — Take the discount off the marked price:\n$120 - $18 = $102",
   "topic": "fractions-decimals-percentages"
  },
  {
@@ -74,7 +74,7 @@
    "20 cm"
   ],
   "answer": "17 cm",
-  "explanation": "Pythagoras: 8² + 15² = 64 + 225 = 289. √289 = 17 cm.",
+  "explanation": "Step 1 — Write Pythagoras' theorem:\nc² = a² + b²\nStep 2 — Substitute the two shorter sides:\nc² = 8² + 15² = 64 + 225 = 289\nStep 3 — Take the square root of both sides:\nc = √289 = 17 cm",
   "topic": "pythagoras-theorem"
  },
  {
@@ -87,7 +87,7 @@
    "1/5"
   ],
   "answer": "4/5",
-  "explanation": "If opposite=3 and hypotenuse=5, then adjacent = √(5² - 3²) = √16 = 4. Cos(θ) = adj/hyp = 4/5.",
+  "explanation": "Step 1 — sin θ = opposite/hypotenuse = 3/5, so opposite = 3 and hypotenuse = 5.\nStep 2 — Find the adjacent side with Pythagoras:\nadj² = 5² - 3² = 25 - 9 = 16, so adj = 4\nStep 3 — Write the cosine ratio:\ncos θ = adjacent/hypotenuse = 4/5",
   "topic": "trig-ratios"
  },
  {
@@ -100,7 +100,7 @@
    "[4; 2]"
   ],
   "answer": "[2; 2]",
-  "explanation": "Add corresponding components: [3 + (-1); -2 + 4] = [2; 2].",
+  "explanation": "Step 1 — Add the x-components:\n3 + (-1) = 2\nStep 2 — Add the y-components:\n-2 + 4 = 2\nStep 3 — Write the answer as a column vector:\n[2; 2]",
   "topic": "vectors"
  },
  {
@@ -113,7 +113,7 @@
    "6"
   ],
   "answer": "10",
-  "explanation": "Determinant = (ad - bc) = (4×3) - (2×1) = 12 - 2 = 10.",
+  "explanation": "Step 1 — For the matrix [[a, b], [c, d]] the determinant is ad - bc.\nStep 2 — Substitute a = 4, b = 2, c = 1, d = 3:\ndet = (4 × 3) - (2 × 1)\nStep 3 — Work it out:\n12 - 2 = 10",
   "topic": "matrices"
  },
  {
@@ -126,7 +126,7 @@
    "4"
   ],
   "answer": "5",
-  "explanation": "Sort the data: 1, 2, 3, 5, 5, 8, 9. The middle value is 5.",
+  "explanation": "Step 1 — Sort the values into order:\n1, 2, 3, 5, 5, 8, 9\nStep 2 — Count them: 7 values, so the median is the 4th value.\nStep 3 — Read off the middle value:\n5",
   "topic": "central-tendency"
  },
  {
@@ -139,7 +139,7 @@
    "1/4"
   ],
   "answer": "2/5",
-  "explanation": "Total balls = 4 + 6 = 10. P(red) = 4/10 = 2/5.",
+  "explanation": "Step 1 — Find the total number of balls:\n4 + 6 = 10\nStep 2 — Write the probability as a fraction:\nP(red) = 4/10\nStep 3 — Cancel to lowest terms:\n4/10 = 2/5",
   "topic": "probability"
  },
  {
@@ -152,7 +152,7 @@
    "440 cm³"
   ],
   "answer": "1540 cm³",
-  "explanation": "Volume = πr²h = (22/7) × 7² × 10 = 22 × 7 × 10 = 1540 cm³.",
+  "explanation": "Step 1 — Write the volume formula for a cylinder:\nV = πr²h\nStep 2 — Substitute r = 7, h = 10 and π = 22/7:\nV = (22/7) × 7² × 10\nStep 3 — Cancel 7 into 7²:\nV = 22 × 7 × 10 = 1540 cm³",
   "topic": "volume-capacity"
  },
  {
@@ -165,7 +165,7 @@
    "27"
   ],
   "answer": "31",
-  "explanation": "3(3)² - 2(-2) = 3(9) + 4 = 27 + 4 = 31.",
+  "explanation": "Step 1 — Substitute x = 3 and y = -2 into 3x² - 2y:\n3(3)² - 2(-2)\nStep 2 — Do the power first, then multiply:\n(3)² = 9, so 3 × 9 = 27\nStep 3 — Multiplying two negatives gives a positive:\n-2 × -2 = +4\nStep 4 — Add:\n27 + 4 = 31",
   "topic": "algebraic-expressions"
  },
  {
@@ -178,7 +178,7 @@
    "53"
   ],
   "answer": "53",
-  "explanation": "53 is only divisible by 1 and itself; 39, 51 and 57 all have other factors.",
+  "explanation": "Step 1 — Test 39: 39 = 3 × 13, so 39 has another factor.\nStep 2 — Test 51 = 3 × 17 and 57 = 3 × 19, so neither is prime.\nStep 3 — 53 has no factors other than 1 and 53.\nStep 4 — The prime number is 53.",
   "topic": "real-numbers"
  },
  {
@@ -191,7 +191,7 @@
    "7.2 × 10⁻³"
   ],
   "answer": "7.2 × 10⁻⁴",
-  "explanation": "Move the decimal point 4 places to the right: 7.2 × 10⁻⁴.",
+  "explanation": "Step 1 — Put the decimal point after the first non-zero digit:\n7.2\nStep 2 — Count the places the point moved: 0.00072 → 7.2 is 4 places to the right.\nStep 3 — The number is smaller than 1, so the index is negative:\n7.2 × 10⁻⁴",
   "topic": "real-numbers"
  },
  {
@@ -204,7 +204,7 @@
    "18"
   ],
   "answer": "15",
-  "explanation": "Total parts = 5. Boys = (3/5) × 25 = 15.",
+  "explanation": "Step 1 — Add the parts of the ratio:\n3 + 2 = 5 parts\nStep 2 — Find the value of one part:\n25 ÷ 5 = 5 students\nStep 3 — Boys take 3 parts:\n3 × 5 = 15 boys",
   "topic": "real-numbers"
  },
  {
@@ -217,7 +217,7 @@
    "100 km/h"
   ],
   "answer": "80 km/h",
-  "explanation": "Speed = distance ÷ time = 240 ÷ 3 = 80 km/h.",
+  "explanation": "Step 1 — Write the average-speed formula:\nspeed = distance ÷ time\nStep 2 — Substitute the values:\n240 ÷ 3\nStep 3 — Divide:\n80 km/h",
   "topic": "real-numbers"
  },
  {
@@ -230,7 +230,7 @@
    "45%"
   ],
   "answer": "40%",
-  "explanation": "2/5 × 100% = 40%.",
+  "explanation": "Step 1 — To change a fraction to a percentage, multiply by 100:\n2/5 × 100%\nStep 2 — Divide 100 by the denominator:\n100 ÷ 5 = 20\nStep 3 — Multiply by the numerator:\n2 × 20 = 40%",
   "topic": "fractions-decimals-percentages"
  },
  {
@@ -243,7 +243,7 @@
    "$72"
   ],
   "answer": "$96",
-  "explanation": "I = PRT/100 = 800 × 6 × 2 / 100 = $96.",
+  "explanation": "Step 1 — Write the simple-interest formula:\nI = PRT/100\nStep 2 — Substitute P = 800, R = 6 and T = 2:\nI = (800 × 6 × 2)/100\nStep 3 — Work out the top, then divide:\n9600/100 = $96",
   "topic": "fractions-decimals-percentages"
  },
  {
@@ -256,7 +256,7 @@
    "x = 4"
   ],
   "answer": "x = 8",
-  "explanation": "5x - 3x = 9 + 7 → 2x = 16 → x = 8.",
+  "explanation": "Step 1 — Subtract 3x from both sides to gather the x terms:\n2x - 7 = 9\nStep 2 — Add 7 to both sides:\n2x = 16\nStep 3 — Divide both sides by 2:\nx = 8",
   "topic": "algebraic-expressions"
  },
  {
@@ -269,7 +269,7 @@
    "(x + 9)(x - 1)"
   ],
   "answer": "(x + 3)(x - 3)",
-  "explanation": "Difference of two squares: x² - 9 = (x + 3)(x - 3).",
+  "explanation": "Step 1 — Recognise the difference of two squares:\na² - b² = (a + b)(a - b)\nStep 2 — Here a = x and b = 3, because 3² = 9:\nx² - 3²\nStep 3 — Factorise:\n(x + 3)(x - 3)",
   "topic": "quadratic-equations"
  },
  {
@@ -282,7 +282,7 @@
    "5x + 9"
   ],
   "answer": "-x + 9",
-  "explanation": "2x + 6 - 3x + 3 = -x + 9.",
+  "explanation": "Step 1 — Expand the first bracket:\n2(x + 3) = 2x + 6\nStep 2 — Expand the second bracket, taking the minus sign through:\n-3(x - 1) = -3x + 3\nStep 3 — Collect the like terms:\n(2x - 3x) + (6 + 3)\nStep 4 — Simplify:\n-x + 9",
   "topic": "algebraic-expressions"
  },
  {
@@ -295,7 +295,7 @@
    "1/2"
   ],
   "answer": "2",
-  "explanation": "m = (10 - 2)/(5 - 1) = 8/4 = 2.",
+  "explanation": "Step 1 — Write the gradient formula:\nm = (y2 - y1)/(x2 - x1)\nStep 2 — Substitute the two points (1, 2) and (5, 10):\nm = (10 - 2)/(5 - 1) = 8/4\nStep 3 — Simplify:\nm = 2",
   "topic": "coordinate-geometry"
  },
  {
@@ -308,7 +308,7 @@
    "y = 3"
   ],
   "answer": "y = 3x - 4",
-  "explanation": "Parallel lines have the same gradient (3).",
+  "explanation": "Step 1 — Read the gradient off the given line: y = 3x + 1 has gradient 3.\nStep 2 — Parallel lines have equal gradients, so the answer needs gradient 3.\nStep 3 — Check the options: y = 3x - 4 has gradient 3 (-3 is not parallel, 1/3 is perpendicular and y = 3 is horizontal).\nSo the parallel line is y = 3x - 4.",
   "topic": "coordinate-geometry"
  },
  {
@@ -321,7 +321,7 @@
    "x = 2"
   ],
   "answer": "x = 3",
-  "explanation": "Set y = 0: 2x - 6 = 0 → x = 3.",
+  "explanation": "Step 1 — On the x-axis the y-coordinate is 0, so put y = 0:\n2x - 6 = 0\nStep 2 — Add 6 to both sides:\n2x = 6\nStep 3 — Divide both sides by 2:\nx = 3",
   "topic": "coordinate-geometry"
  },
  {
@@ -334,7 +334,7 @@
    "(-2, 3)"
   ],
   "answer": "(2, 3)",
-  "explanation": "Reflection in y-axis changes the sign of x only.",
+  "explanation": "Step 1 — A reflection in the y-axis changes the sign of the x-coordinate only.\nStep 2 — x = -2 becomes 2.\nStep 3 — y stays 3, so the image is (2, 3).",
   "topic": "coordinate-geometry"
  },
  {
@@ -347,7 +347,7 @@
    "x = 5 or 1"
   ],
   "answer": "x = 2 or 3",
-  "explanation": "(x - 2)(x - 3) = 0 → x = 2 or 3.",
+  "explanation": "Step 1 — Look for two numbers that multiply to +6 and add to -5:\n-2 and -3\nStep 2 — Factorise:\n(x - 2)(x - 3) = 0\nStep 3 — Put each bracket equal to zero:\nx = 2 or x = 3",
   "topic": "quadratic-equations"
  },
  {
@@ -360,7 +360,7 @@
    "8"
   ],
   "answer": "7",
-  "explanation": "f(3) = 2(3) + 1 = 7.",
+  "explanation": "Step 1 — Substitute x = 3 into the rule:\nf(3) = 2(3) + 1\nStep 2 — Multiply first:\n2 × 3 = 6\nStep 3 — Add:\n6 + 1 = 7",
   "topic": "functions"
  },
  {
@@ -373,7 +373,7 @@
    "31"
   ],
   "answer": "29",
-  "explanation": "3(10) - 1 = 29.",
+  "explanation": "Step 1 — Substitute n = 10 into the rule 3n - 1:\n3(10) - 1\nStep 2 — Multiply:\n3 × 10 = 30\nStep 3 — Subtract:\n30 - 1 = 29",
   "topic": "functions"
  },
  {
@@ -386,7 +386,7 @@
    "1.6"
   ],
   "answer": "0.6",
-  "explanation": "sin θ = opposite/hypotenuse = 6/10 = 0.6.",
+  "explanation": "Step 1 — Write the sine ratio:\nsin θ = opposite/hypotenuse\nStep 2 — Substitute opposite = 6 and hypotenuse = 10:\nsin θ = 6/10\nStep 3 — Divide:\nsin θ = 0.6",
   "topic": "trig-ratios"
  },
  {
@@ -399,7 +399,7 @@
    "50°"
   ],
   "answer": "70°",
-  "explanation": "180° - 65° - 45° = 70°.",
+  "explanation": "Step 1 — The three angles of a triangle add up to 180°.\nStep 2 — Add the two angles you know:\n65° + 45° = 110°\nStep 3 — Subtract from 180°:\n180° - 110° = 70°",
   "topic": "perimeter-area"
  },
  {
@@ -412,7 +412,7 @@
    "7 cm"
   ],
   "answer": "10 cm",
-  "explanation": "√(8² + 6²) = √100 = 10 cm.",
+  "explanation": "Step 1 — The diagonal is the hypotenuse of a right-angled triangle with sides 8 cm and 6 cm.\nStep 2 — Pythagoras:\nd² = 8² + 6² = 64 + 36 = 100\nStep 3 — Square root:\nd = √100 = 10 cm",
   "topic": "pythagoras-theorem"
  },
  {
@@ -425,7 +425,7 @@
    "308 cm²"
   ],
   "answer": "154 cm²",
-  "explanation": "A = πr² = (22/7)(7)(7) = 154 cm².",
+  "explanation": "Step 1 — Write the area formula for a circle:\nA = πr²\nStep 2 — Substitute r = 7 and π = 22/7:\nA = (22/7) × 7 × 7\nStep 3 — Cancel a 7:\nA = 22 × 7 = 154 cm²",
   "topic": "perimeter-area"
  },
  {
@@ -438,7 +438,7 @@
    "48 cm³"
   ],
   "answer": "64 cm³",
-  "explanation": "V = s³ = 4³ = 64 cm³.",
+  "explanation": "Step 1 — Write the volume formula for a cube:\nV = s³\nStep 2 — Substitute s = 4:\nV = 4³ = 4 × 4 × 4\nStep 3 — Multiply:\nV = 64 cm³",
   "topic": "volume-capacity"
  },
  {
@@ -451,7 +451,7 @@
    "9000 s"
   ],
   "answer": "5400 s",
-  "explanation": "1.5 × 3600 = 5400 s.",
+  "explanation": "Step 1 — Change hours to minutes (60 minutes in an hour):\n1.5 × 60 = 90 minutes\nStep 2 — Change minutes to seconds (60 seconds in a minute):\n90 × 60 = 5400 seconds\nStep 3 — In one step: 1.5 × 3600 = 5400 s.",
   "topic": "real-numbers"
  },
  {
@@ -464,7 +464,7 @@
    "200 km"
   ],
   "answer": "2 km",
-  "explanation": "4 × 50,000 = 200,000 cm = 2 km.",
+  "explanation": "Step 1 — Multiply the map length by the scale:\n4 × 50 000 = 200 000 cm\nStep 2 — Change centimetres to metres (÷ 100):\n200 000 ÷ 100 = 2000 m\nStep 3 — Change metres to kilometres (÷ 1000):\n2000 ÷ 1000 = 2 km",
   "topic": "real-numbers"
  },
  {
@@ -477,7 +477,7 @@
    "24"
   ],
   "answer": "48",
-  "explanation": "Sum = mean × count = 12 × 4 = 48.",
+  "explanation": "Step 1 — Write the mean formula:\nmean = sum ÷ count\nStep 2 — Rearrange it to make the sum the subject:\nsum = mean × count\nStep 3 — Substitute mean = 12 and count = 4:\n12 × 4 = 48",
   "topic": "central-tendency"
  },
  {
@@ -490,7 +490,7 @@
    "3"
   ],
   "answer": "9",
-  "explanation": "9 appears most often (3 times).",
+  "explanation": "Step 1 — Count how often each value appears:\n3 once, 5 twice, 7 once, 9 three times\nStep 2 — The mode is the value with the highest count.\nStep 3 — 9 appears three times, so the mode is 9.",
   "topic": "central-tendency"
  },
  {
@@ -503,7 +503,7 @@
    "10"
   ],
   "answer": "8",
-  "explanation": "Range = 12 - 4 = 8.",
+  "explanation": "Step 1 — Find the highest mark:\n12\nStep 2 — Find the lowest mark:\n4\nStep 3 — Range = highest - lowest:\n12 - 4 = 8",
   "topic": "central-tendency"
  },
  {
@@ -516,7 +516,7 @@
    "3/10"
   ],
   "answer": "1/2",
-  "explanation": "5/10 = 1/2.",
+  "explanation": "Step 1 — Find the total number of marbles:\n3 + 2 + 5 = 10\nStep 2 — Write the probability as a fraction:\nP(green) = 5/10\nStep 3 — Cancel to lowest terms:\n5/10 = 1/2",
   "topic": "probability"
  },
  {
@@ -529,7 +529,7 @@
    "1/3"
   ],
   "answer": "1/2",
-  "explanation": "Outcomes HT, TH are favourable out of 4 → 2/4 = 1/2.",
+  "explanation": "Step 1 — List all the equally likely outcomes of tossing two coins:\nHH, HT, TH, TT - that is 4 outcomes\nStep 2 — Count the outcomes with exactly one head:\nHT and TH, so 2 outcomes\nStep 3 — Divide the favourable outcomes by the total:\nP(exactly one head) = 2/4 = 1/2",
   "topic": "probability"
  },
  {
@@ -542,7 +542,7 @@
    "2/5"
   ],
   "answer": "1/2",
-  "explanation": "Even numbers: 2,4,6,8,10 → 5/10 = 1/2.",
+  "explanation": "Step 1 — List the even numbers from 1 to 10:\n2, 4, 6, 8, 10 - that is 5 numbers\nStep 2 — There are 10 numbers altogether.\nStep 3 — P(even) = 5/10 = 1/2",
   "topic": "probability"
  },
  {
@@ -555,7 +555,7 @@
    "$30"
   ],
   "answer": "$36",
-  "explanation": "0.15 × 240 = $36.",
+  "explanation": "Step 1 — Split 15% into 10% + 5% of $240:\n10% = $24 and 5% = half of that = $12\nStep 2 — Add the two parts:\n$24 + $12 = $36\nStep 3 — So 15% of $240 is $36.",
   "topic": "fractions-decimals-percentages"
  },
  {
@@ -568,7 +568,7 @@
    "$90"
   ],
   "answer": "$100",
-  "explanation": "80 × 1.25 = $100.",
+  "explanation": "Step 1 — An increase of 25% leaves 125% of the original amount.\nStep 2 — Write 125% as a decimal multiplier:\n1.25\nStep 3 — Multiply:\n80 × 1.25 = $100",
   "topic": "fractions-decimals-percentages"
  },
  {
@@ -581,7 +581,7 @@
    "85.3"
   ],
   "answer": "80",
-  "explanation": "0.8x = 64 → x = 80.",
+  "explanation": "Step 1 — After a decrease of 20%, 80% of the number is left.\nStep 2 — Write that as an equation:\n0.8x = 64\nStep 3 — Divide both sides by 0.8:\nx = 64 ÷ 0.8 = 80",
   "topic": "fractions-decimals-percentages"
  },
  {
@@ -594,7 +594,7 @@
    "0.8"
   ],
   "answer": "0.875",
-  "explanation": "7 ÷ 8 = 0.875.",
+  "explanation": "Step 1 — A fraction is a division, so 7/8 means 7 ÷ 8.\nStep 2 — Divide: 8 into 7.000 gives 0.8 (8 × 8 = 64), remainder 6, then 7 (8 × 7 = 56), remainder 4, then 5 (8 × 5 = 40).\nStep 3 — So 7/8 = 0.875",
   "topic": "fractions-decimals-percentages"
  },
  {
@@ -607,7 +607,7 @@
    "12"
   ],
   "answer": "81",
-  "explanation": "3 × 3 × 3 × 3 = 81.",
+  "explanation": "Step 1 — The index 4 means 3 is used as a factor four times:\n3 × 3 × 3 × 3\nStep 2 — Multiply in pairs:\n3 × 3 = 9 and 3 × 3 = 9\nStep 3 — 9 × 9 = 81",
   "topic": "real-numbers"
  },
  {
@@ -620,7 +620,7 @@
    "16"
   ],
   "answer": "4",
-  "explanation": "2⁷ ÷ 2⁵ = 2² = 4.",
+  "explanation": "Step 1 — Multiplying powers of the same base: add the indices.\n2³ × 2⁴ = 2⁷  (add the indices: 3 + 4 = 7)\nStep 2 — Dividing powers of the same base: subtract the indices.\n2⁷ ÷ 2⁵ = 2²\nStep 3 — Work out the power:\n2² = 4",
   "topic": "real-numbers"
  },
  {
@@ -633,7 +633,7 @@
    "23"
   ],
   "answer": "21",
-  "explanation": "12 + 9 = 21.",
+  "explanation": "Step 1 — √144 = 12, because 12 × 12 = 144.\nStep 2 — √81 = 9, because 9 × 9 = 81.\nStep 3 — Add them:\n12 + 9 = 21",
   "topic": "real-numbers"
  },
  {
@@ -646,7 +646,7 @@
    "√3"
   ],
   "answer": "0.75",
-  "explanation": "0.75 = 3/4, which can be written as a fraction.",
+  "explanation": "Step 1 — A rational number can be written as a fraction of two integers.\nStep 2 — √2, √3 and π are non-recurring, non-terminating decimals, so they are irrational.\nStep 3 — 0.75 = 3/4, so 0.75 is the rational number.",
   "topic": "real-numbers"
  },
  {
@@ -659,7 +659,7 @@
    "50"
   ],
   "answer": "48",
-  "explanation": "The tenths digit is 6, so round up to 48.",
+  "explanation": "Step 1 — Look at the first digit after the whole-number place (the tenths digit):\n6\nStep 2 — 6 is 5 or more, so round up.\nStep 3 — 47.65 ≈ 48",
   "topic": "real-numbers"
  },
  {
@@ -672,7 +672,7 @@
    "1.1"
   ],
   "answer": "0.3",
-  "explanation": "6 × 5 = 30; place 2 decimal places → 0.30 = 0.3.",
+  "explanation": "Step 1 — Multiply the digits, ignoring the decimal points for now:\n6 × 5 = 30\nStep 2 — Count the decimal places in the question: one in 0.6 and one in 0.5, so 2 places.\nStep 3 — Put 2 decimal places into the answer: 0.30 = 0.3",
   "topic": "fractions-decimals-percentages"
  },
  {
@@ -685,7 +685,7 @@
    "7.8"
   ],
   "answer": "8",
-  "explanation": "5.6 ÷ 0.7 = 56 ÷ 7 = 8.",
+  "explanation": "Step 1 — Multiply both numbers by 10 to clear the decimal point:\n5.6 ÷ 0.7 becomes 56 ÷ 7\nStep 2 — Divide:\n56 ÷ 7 = 8\nStep 3 — Multiplying both numbers by 10 does not change the answer, so 5.6 ÷ 0.7 = 8.",
   "topic": "fractions-decimals-percentages"
  },
  {
@@ -698,7 +698,7 @@
    "x > 5"
   ],
   "answer": "x ≤ 5",
-  "explanation": "'At most' means less than or equal to.",
+  "explanation": "Step 1 — 'At most 5' means 5 itself or anything smaller than 5.\nStep 2 — ('Fewer than 5' would be x < 5, and 'at least 5' would be x ≥ 5.)\nStep 3 — '5 or smaller' is written with the ≤ symbol, so:\nx ≤ 5",
   "topic": "inequalities"
  },
  {
@@ -711,7 +711,7 @@
    "x ≤ 7"
   ],
   "answer": "x ≤ 4",
-  "explanation": "2x ≤ 8 → x ≤ 4.",
+  "explanation": "Step 1 — Subtract 3 from both sides:\n2x ≤ 8\nStep 2 — Divide both sides by 2. Dividing by a positive number keeps the inequality pointing the same way:\nx ≤ 4\nStep 3 — The solution is x ≤ 4 (check: 2(4) + 3 = 11 ✓, while x = 5 gives 13, which is too big).",
   "topic": "inequalities"
  },
  {
@@ -724,7 +724,7 @@
    "2"
   ],
   "answer": "6",
-  "explanation": "x - 2 = 4 → x = 6.",
+  "explanation": "Step 1 — Divide both sides by 3:\nx - 2 = 4\nStep 2 — Add 2 to both sides:\nx = 6\nStep 3 — Check: 3(6 - 2) = 3 × 4 = 12 ✓",
   "topic": "algebraic-expressions"
  },
  {
@@ -737,7 +737,7 @@
    "x = y/2 - 5"
   ],
   "answer": "x = (y - 5)/2",
-  "explanation": "y - 5 = 2x → x = (y - 5)/2.",
+  "explanation": "Step 1 — Subtract 5 from both sides:\ny - 5 = 2x\nStep 2 — Divide both sides by 2:\n(y - 5)/2 = x\nStep 3 — Write x first:\nx = (y - 5)/2",
   "topic": "algebraic-expressions"
  },
  {
@@ -750,7 +750,7 @@
    "$18"
   ],
   "answer": "$21",
-  "explanation": "One pen = $3, so 7 pens = $21.",
+  "explanation": "Step 1 — Find the cost of one pen:\n$12 ÷ 4 = $3\nStep 2 — Multiply by 7 pens:\n7 × $3\nStep 3 — = $21",
   "topic": "real-numbers"
  },
  {
@@ -763,7 +763,7 @@
    "3 h"
   ],
   "answer": "5 h",
-  "explanation": "Time = 300/60 = 5 h.",
+  "explanation": "Step 1 — Write the time formula:\ntime = distance ÷ speed\nStep 2 — Substitute the values:\n300 ÷ 60\nStep 3 — = 5 hours",
   "topic": "real-numbers"
  },
  {
@@ -776,7 +776,7 @@
    "4"
   ],
   "answer": "12",
-  "explanation": "24 = 2³×3, 36 = 2²×3² → HCF = 2²×3 = 12.",
+  "explanation": "Step 1 — Write both numbers as products of primes:\n24 = 2³ × 3 and 36 = 2² × 3²\nStep 2 — HCF: take the lowest power of each prime the two numbers share:\n2² and 3\nStep 3 — Multiply:\n2² × 3 = 4 × 3 = 12",
   "topic": "real-numbers"
  },
  {
@@ -789,7 +789,7 @@
    "16"
   ],
   "answer": "24",
-  "explanation": "Multiples: 24 is the smallest common multiple.",
+  "explanation": "Step 1 — List the multiples of 6:\n6, 12, 18, 24, 30, ...\nStep 2 — List the multiples of 8:\n8, 16, 24, 32, ...\nStep 3 — The first multiple the two lists share is 24, so LCM = 24.",
   "topic": "real-numbers"
  },
  {
@@ -802,7 +802,7 @@
    "1/2"
   ],
   "answer": "3/5",
-  "explanation": "18/30 = 3/5.",
+  "explanation": "Step 1 — Find the total number of students:\n12 + 18 = 30\nStep 2 — Write the girls as a fraction of the class:\n18/30\nStep 3 — Cancel by 6:\n18/30 = 3/5",
   "topic": "fractions-decimals-percentages"
  },
  {
@@ -815,7 +815,7 @@
    "2/7"
   ],
   "answer": "11/12",
-  "explanation": "Common denominator 12: 3/12 + 8/12 = 11/12.",
+  "explanation": "Step 1 — The LCM of 4 and 3 is 12, so use 12 as the common denominator.\nStep 2 — Convert both fractions: 1/4 = 3/12 and 2/3 = 8/12.\nStep 3 — Add the numerators:\n3/12 + 8/12 = 11/12",
   "topic": "fractions-decimals-percentages"
  },
  {
@@ -828,7 +828,7 @@
    "6"
   ],
   "answer": "3/2",
-  "explanation": "3/4 × 2/1 = 6/4 = 3/2.",
+  "explanation": "Step 1 — Dividing by a fraction is the same as multiplying by its reciprocal:\n3/4 ÷ 1/2 = 3/4 × 2/1\nStep 2 — Multiply across:\n6/4\nStep 3 — Cancel by 2:\n6/4 = 3/2",
   "topic": "fractions-decimals-percentages"
  },
  {
@@ -841,7 +841,7 @@
    "157 cm²"
   ],
   "answer": "78.5 cm²",
-  "explanation": "Area = (90/360) × π × 100 = 25π ≈ 78.5 cm².",
+  "explanation": "Step 1 — Write the sector-area formula:\nA = (θ/360) × πr²\nStep 2 — Substitute θ = 90°, r = 10 and π ≈ 3.14:\nA = (90/360) × 3.14 × 100 = 1/4 × 314\nStep 3 — A = 78.5 cm²",
   "topic": "perimeter-area"
  },
  {
@@ -854,7 +854,7 @@
    "90°"
   ],
   "answer": "120°",
-  "explanation": "Sum = (6-2)×180 = 720°; each = 720/6 = 120°.",
+  "explanation": "Step 1 — Sum of the interior angles = (n - 2) × 180° with n = 6:\n(6 - 2) × 180° = 720°\nStep 2 — A regular hexagon has 6 equal angles.\nStep 3 — Divide:\n720° ÷ 6 = 120°",
   "topic": "perimeter-area"
  },
  {
@@ -867,7 +867,7 @@
    "1"
   ],
   "answer": "4",
-  "explanation": "A square has 4 lines of symmetry.",
+  "explanation": "Step 1 — A square folds onto itself along the line through the midpoints of the top and bottom sides.\nStep 2 — It also folds along the other pair of opposite sides, and along both diagonals.\nStep 3 — That is 2 + 2 = 4 lines of symmetry.",
   "topic": "perimeter-area"
  },
  {
@@ -880,7 +880,7 @@
    "Triangle"
   ],
   "answer": "Cone",
-  "explanation": "A cone has 3 dimensions (height, width, depth).",
+  "explanation": "Step 1 — A 3D shape has length, width and height and encloses a volume.\nStep 2 — A circle, a square and a triangle are flat (2D) shapes.\nStep 3 — A cone encloses a volume, so the cone is the 3D shape.",
   "topic": "volume-capacity"
  },
  {
@@ -893,7 +893,7 @@
    "88 cm"
   ],
   "answer": "44 cm",
-  "explanation": "C = 2πr = 2 × 22/7 × 7 = 44 cm.",
+  "explanation": "Step 1 — Write the circumference formula:\nC = 2πr\nStep 2 — Substitute r = 7 and π = 22/7:\nC = 2 × (22/7) × 7\nStep 3 — Cancel the 7s:\nC = 2 × 22 = 44 cm",
   "topic": "perimeter-area"
  },
  {
@@ -906,7 +906,7 @@
    "18 cm²"
   ],
   "answer": "54 cm²",
-  "explanation": "6 faces × 9 = 54 cm².",
+  "explanation": "Step 1 — A cube has 6 square faces.\nStep 2 — Area of one face:\n3 × 3 = 9 cm²\nStep 3 — Total surface area:\n6 × 9 = 54 cm²",
   "topic": "volume-capacity"
  },
  {
@@ -919,7 +919,7 @@
    "1/5"
   ],
   "answer": "1/4",
-  "explanation": "0.25 = 25/100 = 1/4.",
+  "explanation": "Step 1 — 0.25 is twenty-five hundredths, so write it over 100:\n25/100\nStep 2 — Divide the top and bottom by 25:\n25 ÷ 25 = 1 and 100 ÷ 25 = 4\nStep 3 — Lowest terms:\n1/4",
   "topic": "fractions-decimals-percentages"
  },
  {
@@ -932,7 +932,7 @@
    "Cannot tell"
   ],
   "answer": "0.3",
-  "explanation": "0.30 > 0.29.",
+  "explanation": "Step 1 — Give both numbers the same number of decimal places:\n0.30 and 0.29\nStep 2 — Compare the tenths digits:\n3 and 2\nStep 3 — 3 is bigger than 2, so 0.30 > 0.29 and 0.3 is the larger number.",
   "topic": "fractions-decimals-percentages"
  },
  {
@@ -945,7 +945,7 @@
    "-13"
   ],
   "answer": "5",
-  "explanation": "-4 + 9 = 5.",
+  "explanation": "Step 1 — Start at -4 on the number line.\nStep 2 — Adding 9 means moving 9 places to the right; 4 places take you to 0.\nStep 3 — That leaves 9 - 4 = 5 places, so\n-4 + 9 = 5",
   "topic": "real-numbers"
  },
  {
@@ -958,7 +958,7 @@
    "-9"
   ],
   "answer": "18",
-  "explanation": "Product of two negatives is positive: 18.",
+  "explanation": "Step 1 — Multiply the digits:\n3 × 6 = 18\nStep 2 — Apply the signs: a negative × a negative gives a positive.\nStep 3 — So (-3) × (-6) = +18.",
   "topic": "real-numbers"
  },
  {
@@ -971,7 +971,7 @@
    "75"
   ],
   "answer": "60",
-  "explanation": "(2/3) × 90 = 60.",
+  "explanation": "Step 1 — In maths, 'of' means multiply:\n2/3 × 90\nStep 2 — Divide by the denominator:\n90 ÷ 3 = 30\nStep 3 — Multiply by the numerator:\n30 × 2 = 60",
   "topic": "fractions-decimals-percentages"
  },
  {
@@ -984,7 +984,7 @@
    "50"
   ],
   "answer": "25",
-  "explanation": "k = 10/2 = 5; y = 5 × 5 = 25.",
+  "explanation": "Step 1 — Direct proportion means y = kx.\nStep 2 — Find k from the pair given: 10 = k × 2, so\nk = 10 ÷ 2 = 5\nStep 3 — When x = 5:\ny = 5 × 5 = 25",
   "topic": "functions"
  },
  {
@@ -997,7 +997,7 @@
    "Distance and time at fixed speed"
   ],
   "answer": "Speed and time for fixed distance",
-  "explanation": "As speed increases, time decreases for the same distance.",
+  "explanation": "Step 1 — In inverse proportion, one quantity rises as the other falls.\nStep 2 — For a fixed distance, speed × time = distance, a constant - a faster speed means less time.\nStep 3 — The other pairs rise together or are unrelated, so speed and time is the inverse proportion.",
   "topic": "functions"
  },
  {
@@ -1010,7 +1010,7 @@
    "$53.70"
   ],
   "answer": "$135",
-  "explanation": "50 × 2.70 = 135 TTD.",
+  "explanation": "Step 1 — Every US dollar buys 2.70 TTD, so multiply.\nStep 2 — 50 × 2.70\nStep 3 — = 135 TTD",
   "topic": "real-numbers"
  },
  {
@@ -1023,7 +1023,7 @@
    "12%"
   ],
   "answer": "15%",
-  "explanation": "Discount = $180; 180/1200 × 100 = 15%.",
+  "explanation": "Step 1 — Find the discount in dollars:\n1200 - 1020 = $180\nStep 2 — Write it as a fraction of the marked price:\n180/1200\nStep 3 — Change to a percentage:\n180/1200 × 100 = 15%",
   "topic": "fractions-decimals-percentages"
  },
  {
@@ -1036,7 +1036,7 @@
    "$30"
   ],
   "answer": "$20",
-  "explanation": "I = 500 × 8 × 0.5 / 100 = $20.",
+  "explanation": "Step 1 — Write the simple-interest formula, with the time in years:\nI = PRT/100\nStep 2 — 6 months = 0.5 years, so substitute P = 500, R = 8, T = 0.5:\nI = (500 × 8 × 0.5)/100\nStep 3 — The top is 2000, so\nI = 2000/100 = $20",
   "topic": "fractions-decimals-percentages"
  },
  {
@@ -1049,7 +1049,7 @@
    "x = 5, y = 5"
   ],
   "answer": "x = 7, y = 3",
-  "explanation": "Add: 2x = 14 → x = 7, y = 3.",
+  "explanation": "Step 1 — Add the two equations so the y terms cancel:\n(x + y) + (x - y) = 10 + 4\nStep 2 — That gives:\n2x = 14, so x = 7\nStep 3 — Substitute x = 7 into x + y = 10:\n7 + y = 10, so y = 3, giving x = 7, y = 3",
   "topic": "algebraic-expressions"
  },
  {
@@ -1062,7 +1062,7 @@
    "(0, 0)"
   ],
   "answer": "(1, 3)",
-  "explanation": "3 = 1 + 2. ✓",
+  "explanation": "Step 1 — A point lies on a line when its coordinates make the equation true.\nStep 2 — Test (1, 3): the right-hand side gives 1 + 2 = 3.\nStep 3 — The y-coordinate is also 3, so 3 = 3 ✓ and (1, 3) lies on y = x + 2.",
   "topic": "coordinate-geometry"
  },
  {
@@ -1075,7 +1075,7 @@
    "(2, 4)"
   ],
   "answer": "(4, 2)",
-  "explanation": "(1+3, 4-2) = (4, 2).",
+  "explanation": "Step 1 — A translation adds the vector to the coordinates.\nStep 2 — x: 1 + 3 = 4\nStep 3 — y: 4 + (-2) = 2, so the image is (4, 2).",
   "topic": "vectors"
  },
  {
@@ -1088,7 +1088,7 @@
    "(2, -3)"
   ],
   "answer": "(3, -2)",
-  "explanation": "90° clockwise: (x, y) → (y, -x) = (3, -2).",
+  "explanation": "Step 1 — For a 90° clockwise rotation about the origin:\n(x, y) → (y, -x)\nStep 2 — Substitute x = 2 and y = 3:\n(3, -2)\nStep 3 — Check the quadrant: a quarter turn clockwise from the first quadrant lands in the fourth, and (3, -2) is there.",
   "topic": "vectors"
  },
  {
@@ -1101,7 +1101,7 @@
    "5/2"
   ],
   "answer": "5",
-  "explanation": "In y = mx + c, c is the y-intercept = 5.",
+  "explanation": "Step 1 — Compare y = -2x + 5 with the form y = mx + c.\nStep 2 — The constant term is c = 5, and c is the y-intercept.\nStep 3 — The line crosses the y-axis at (0, 5), so the y-intercept is 5.",
   "topic": "coordinate-geometry"
  },
  {
@@ -1114,7 +1114,7 @@
    "180°"
   ],
   "answer": "540°",
-  "explanation": "(5-2) × 180 = 540°.",
+  "explanation": "Step 1 — Write the formula for the angle sum:\nsum = (n - 2) × 180°\nStep 2 — A pentagon has n = 5 sides:\n(5 - 2) × 180°\nStep 3 — = 3 × 180° = 540°",
   "topic": "perimeter-area"
  },
  {
@@ -1127,7 +1127,7 @@
    "90°"
   ],
   "answer": "45°",
-  "explanation": "tan 45° = 1.",
+  "explanation": "Step 1 — tan θ = opposite/adjacent, so tan θ = 1 means the opposite and adjacent sides are equal.\nStep 2 — A right-angled triangle with two equal shorter sides has two equal angles: 90° + 45° + 45°.\nStep 3 — So θ = 45°, and tan 45° = 1.",
   "topic": "trig-ratios"
  },
  {
@@ -1140,7 +1140,7 @@
    "6 m"
   ],
   "answer": "5 m",
-  "explanation": "√(13² - 12²) = √(169-144) = √25 = 5 m.",
+  "explanation": "Step 1 — The ladder is the hypotenuse, so:\n13² = 12² + d²\nStep 2 — Rearrange and subtract:\nd² = 169 - 144 = 25\nStep 3 — Square root:\nd = √25 = 5 m",
   "topic": "pythagoras-theorem"
  },
  {
@@ -1153,7 +1153,7 @@
    "√3/2"
   ],
   "answer": "0.5",
-  "explanation": "cos 60° = 1/2 = 0.5.",
+  "explanation": "Step 1 — cos 60° is one of the exact values:\ncos 60° = 1/2\nStep 2 — (√3/2 ≈ 0.866 is cos 30°, so it is not the answer here.)\nStep 3 — Change the fraction to a decimal:\n1/2 = 0.5",
   "topic": "trig-ratios"
  },
  {
@@ -1166,7 +1166,7 @@
    "250 cm³"
   ],
   "answer": "785 cm³",
-  "explanation": "V = πr²h = 3.14 × 25 × 10 = 785 cm³.",
+  "explanation": "Step 1 — Write the volume formula for a cylinder:\nV = πr²h\nStep 2 — Substitute r = 5, h = 10 and π ≈ 3.14:\nV = 3.14 × 25 × 10\nStep 3 — V = 3.14 × 250 = 785 cm³",
   "topic": "volume-capacity"
  },
  {
@@ -1179,7 +1179,7 @@
    "48 cm"
   ],
   "answer": "40 cm",
-  "explanation": "2(12 + 8) = 40 cm.",
+  "explanation": "Step 1 — The perimeter is the distance all the way round: two lengths and two widths.\nStep 2 — Write it as a formula:\nP = 2(l + w) = 2(12 + 8)\nStep 3 — Add inside the bracket, then double:\n2 × 20 = 40 cm",
   "topic": "perimeter-area"
  },
  {
@@ -1192,7 +1192,7 @@
    "0.03"
   ],
   "answer": "0.7",
-  "explanation": "1 - 0.3 = 0.7.",
+  "explanation": "Step 1 — All the possible outcomes together have probability 1.\nStep 2 — P(no rain) = 1 - P(rain) = 1 - 0.3\nStep 3 — = 0.7",
   "topic": "probability"
  },
  {
@@ -1205,7 +1205,7 @@
    "1/5"
   ],
   "answer": "3/5",
-  "explanation": "Odd: 1,3,5 → 3/5.",
+  "explanation": "Step 1 — List the odd numbers on the spinner:\n1, 3, 5 - that is 3 favourable outcomes\nStep 2 — There are 5 outcomes altogether.\nStep 3 — P(odd) = 3/5",
   "topic": "probability"
  },
  {
@@ -1218,7 +1218,7 @@
    "72"
   ],
   "answer": "162",
-  "explanation": "Multiply by 3: 54 × 3 = 162.",
+  "explanation": "Step 1 — Find the pattern between the terms:\n2 × 3 = 6, 6 × 3 = 18, 18 × 3 = 54\nStep 2 — Each term is 3 times the one before it.\nStep 3 — The 5th term = 54 × 3 = 162",
   "topic": "functions"
  },
  {
@@ -1231,7 +1231,7 @@
    "18"
   ],
   "answer": "6",
-  "explanation": "8 - 6 + 4 = 6 (multiplication first).",
+  "explanation": "Step 1 — BODMAS: do the multiplication before adding or subtracting.\n3 × 2 = 6\nStep 2 — Rewrite the question:\n8 - 6 + 4\nStep 3 — Work from left to right:\n8 - 6 = 2, then 2 + 4 = 6",
   "topic": "real-numbers"
  },
  {
@@ -1244,7 +1244,7 @@
    "112"
   ],
   "answer": "7",
-  "explanation": "x = 28/4 = 7.",
+  "explanation": "Step 1 — 4x means 4 × x, so undo the multiplication by dividing.\nStep 2 — Divide both sides by 4:\nx = 28/4\nStep 3 — x = 7",
   "topic": "algebraic-expressions"
  },
  {
@@ -1257,7 +1257,7 @@
    "35000"
   ],
   "answer": "3500",
-  "explanation": "3.5 × 1000 = 3500.",
+  "explanation": "Step 1 — Work out the power of 10:\n10³ = 1000\nStep 2 — Multiply:\n3.5 × 1000\nStep 3 — Move the decimal point 3 places to the right:\n3500",
   "topic": "real-numbers"
  },
  {
@@ -1270,7 +1270,7 @@
    "120°"
   ],
   "answer": "144°",
-  "explanation": "40% of 360° = 144°.",
+  "explanation": "Step 1 — A full circle is 360°.\nStep 2 — Write 40% as a decimal and multiply:\n0.4 × 360°\nStep 3 — = 144°",
   "topic": "central-tendency"
  },
  {
@@ -1283,7 +1283,7 @@
    "7"
   ],
   "answer": "8",
-  "explanation": "(3+7+x+10)/4 = 7 → 20 + x = 28 → x = 8.",
+  "explanation": "Step 1 — Write the mean as an equation:\n(3 + 7 + x + 10)/4 = 7\nStep 2 — Multiply both sides by 4:\n20 + x = 28\nStep 3 — Subtract 20 from both sides:\nx = 8",
   "topic": "central-tendency"
  },
  {
@@ -1296,7 +1296,7 @@
    "$220"
   ],
   "answer": "$225",
-  "explanation": "VAT = $25; total = $225.",
+  "explanation": "Step 1 — Split 12.5% into 10% + 2.5% of $200:\n10% = $20 and 2.5% = $5\nStep 2 — Add them for the VAT:\n$20 + $5 = $25\nStep 3 — Add the VAT to the price:\n$200 + $25 = $225",
   "topic": "fractions-decimals-percentages"
  }
 ]
