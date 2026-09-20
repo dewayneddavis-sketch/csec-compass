@@ -58,6 +58,18 @@ const EXPECTED = {
   // Caribbean History: 9 questions (3 per section, one answered from each),
   // 30 marks each = 270, written for the 2 h 10 min of the real Paper 02.
   "caribbean-history": { items: 9, marks: 270 },
+  // Modern Languages (French, Spanish): 4 compulsory sections, 100 marks in
+  // 2 h 15 min — Directed Situations 30 + Letter 30 + Dialogue 20 + Reading 20.
+  french: { items: 4, marks: 100 },
+  spanish: { items: 4, marks: 100 },
+};
+
+// Section weights of the shared Modern Languages Paper 02 (CXC 27/O/SYLL 15), in
+// paper order. Asserted because French shipped with sections I and IV swapped
+// (20/30/20/30), which the total-marks check alone cannot catch.
+const MODERN_LANGUAGES = {
+  french: [30, 30, 20, 20],
+  spanish: [30, 30, 20, 20],
 };
 
 const shapes = { withParts: 0, flat: 0 };
@@ -152,6 +164,15 @@ for (const subject of SUBJECTS) {
     );
   } else {
     console.log(`  • ${items.length} items, ${totalMarks} marks (count not yet documented)`);
+  }
+
+  const modernLanguageWeights = MODERN_LANGUAGES[subject];
+  if (modernLanguageWeights) {
+    const weights = items.map((item) => item.marks || 0).join("/");
+    check(
+      weights === modernLanguageWeights.join("/"),
+      `sections are ${modernLanguageWeights.join("/")} in paper order (found ${weights})`
+    );
   }
 
   // Auto-graded banks must stay multiple-choice only.
