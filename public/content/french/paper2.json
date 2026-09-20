@@ -12,157 +12,158 @@
       "Invite",
       "Describe"
     ],
-    "marks": 20,
-    "suggestedMinutes": 25,
-    "source": "SECTION 1 - DIRECTED SITUATIONS (20 marks)\n\nWrite ONE complete sentence in French for each of the ten situations below. Each sentence must do exactly what the situation asks - greet, ask, invite, order, describe or explain - and must be addressed to the right person ('tu' for a friend, 'vous' for an adult or a stranger).\n\nSpend about twenty-five minutes on this section. Do not write more than one sentence for each situation; the examiner marks the first correct idea.",
+    "marks": 30,
+    "suggestedMinutes": 40,
+    "source": "SECTION 1 - DIRECTED SITUATIONS (30 marks)\n\nWrite ONE complete sentence in French for each of the ten situations below. Each sentence must do exactly what the situation asks - greet, ask, invite, order, describe or explain - and must be addressed to the right person ('tu' for a friend, 'vous' for an adult or a stranger).\n\nEach situation carries 3 marks: the marks are awarded for the content asked for AND for the accuracy of the French together, so an answer with the right idea and several small errors loses marks. Spend about forty minutes on this section. Do not write more than one sentence for each situation; the examiner marks the first correct idea.",
     "prompt": "Write one complete sentence in French for EACH of the ten situations (a) to (j).",
     "parts": [
       {
         "label": "(a)",
         "prompt": "You arrive at school at 8 a.m. and meet your French teacher in the corridor. Greet her politely and ask how she is.",
-        "marks": 2,
+        "marks": 3,
         "commandWords": [
           "Write"
         ],
         "modelAnswer": "Model answer: \"Bonjour, Madame. Comment allez-vous ?\"",
         "markScheme": [
-          "1 mark for a correct greeting (Bonjour / Bonsoir + Madame / Monsieur).",
-          "1 mark for asking how she is (Comment allez-vous ? / Comment ça va ?).",
-          "Deduct the mark if you address her as 'tu': a teacher takes 'vous'."
+          "Award up to 3 marks where the response is written in French, is no more than ONE sentence, greets the teacher politely with vous (Bonjour, Madame / Bonjour, Monsieur) and asks how she is (Comment allez-vous ?).",
+          "Deduct for errors of grammar, spelling, accents and vocabulary: 0-1 errors, no deduction; 2-4 errors, deduct 1 mark; 5-6 errors, deduct 2 marks; more than 6 errors, no marks for the item.",
+          "Accept any correct French wording that conveys the same meaning; do NOT award marks for translating the English situation word for word."
         ]
       },
       {
         "label": "(b)",
         "prompt": "You are sitting next to a new student. Ask him his name and how old he is.",
-        "marks": 2,
+        "marks": 3,
         "commandWords": [
           "Write"
         ],
         "modelAnswer": "Model answer: \"Comment t'appelles-tu et quel âge as-tu ?\"",
         "markScheme": [
-          "1 mark for asking his name (Comment t'appelles-tu ? / Comment tu t'appelles ?).",
-          "1 mark for asking his age (Quel âge as-tu ? / Tu as quel âge ?).",
-          "Two questions joined by 'et' is acceptable; incorrect question form loses the mark."
+          "Award up to 3 marks where the response is written in French, is no more than ONE sentence, asks the new pupil his name (Comment t'appelles-tu ?) and asks his age (Quel âge as-tu ?); a fellow pupil takes 'tu'.",
+          "Deduct for errors of grammar, spelling, accents and vocabulary: 0-1 errors, no deduction; 2-4 errors, deduct 1 mark; 5-6 errors, deduct 2 marks; more than 6 errors, no marks for the item.",
+          "Accept any correct French wording that conveys the same meaning; do NOT award marks for translating the English situation word for word."
         ]
       },
       {
         "label": "(c)",
         "prompt": "You are at the market in Castries. Ask the seller the price of a kilo of tomatoes.",
-        "marks": 2,
+        "marks": 3,
         "commandWords": [
           "Write"
         ],
         "modelAnswer": "Model answer: \"C'est combien le kilo de tomates, s'il vous plaît ?\"",
         "markScheme": [
-          "1 mark for asking the price (C'est combien / Combien coûte).",
-          "1 mark for naming the quantity and the item (le kilo de tomates).",
-          "s'il vous plaît is expected in a polite request; its absence may lose the second mark."
+          "Award up to 3 marks where the response is written in French, is no more than ONE sentence, asks the seller the price with vous (C'est combien ? / Combien coûte...?) and names the quantity and the item (le kilo de tomates).",
+          "Deduct for errors of grammar, spelling, accents and vocabulary: 0-1 errors, no deduction; 2-4 errors, deduct 1 mark; 5-6 errors, deduct 2 marks; more than 6 errors, no marks for the item.",
+          "Accept any correct French wording that conveys the same meaning; do NOT award marks for translating the English situation word for word."
         ]
       },
       {
         "label": "(d)",
         "prompt": "At the bus station you want to travel to Fort-de-France and come back the same day. Ask for the right ticket.",
-        "marks": 2,
+        "marks": 3,
         "commandWords": [
           "Write"
         ],
         "modelAnswer": "Model answer: \"Je voudrais un aller-retour pour Fort-de-France, s'il vous plaît.\"",
         "markScheme": [
-          "1 mark for un aller-retour (a return ticket).",
-          "1 mark for the correct use of pour + the destination.",
-          "An aller simple (one way) does not answer the situation and loses the first mark."
+          "Award up to 3 marks where the response is written in French, is no more than ONE sentence, asks for a return ticket (un aller-retour) and gives the destination with the right preposition (pour Fort-de-France / à Fort-de-France).",
+          "Deduct for errors of grammar, spelling, accents and vocabulary: 0-1 errors, no deduction; 2-4 errors, deduct 1 mark; 5-6 errors, deduct 2 marks; more than 6 errors, no marks for the item.",
+          "Accept any correct French wording that conveys the same meaning; do NOT award marks for translating the English situation word for word."
         ]
       },
       {
         "label": "(e)",
         "prompt": "Your French pen-friend asks what you did last weekend. Say that you went to the beach with your family and that you swam.",
-        "marks": 2,
+        "marks": 3,
         "commandWords": [
           "Write"
         ],
         "modelAnswer": "Model answer: \"Le week-end dernier, je suis allé(e) à la plage avec ma famille et j'ai nagé.\"",
         "markScheme": [
-          "1 mark for the perfect tense of aller with être and the correct agreement (je suis allé(e)).",
-          "1 mark for the second action in the perfect tense (j'ai nagé) plus the family/beach detail.",
-          "The time marker le week-end dernier must be present."
+          "Award up to 3 marks where the response is written in French, is no more than ONE sentence, says that you went to the beach with your family (je suis allé(e) à la plage avec ma famille), that you swam (j'ai nagé), and gives the time marker for last weekend (le week-end dernier).",
+          "Deduct for errors of grammar, spelling, accents and vocabulary: 0-1 errors, no deduction; 2-4 errors, deduct 1 mark; 5-6 errors, deduct 2 marks; more than 6 errors, no marks for the item.",
+          "Accept any correct French wording that conveys the same meaning; do NOT award marks for translating the English situation word for word."
         ]
       },
       {
         "label": "(f)",
         "prompt": "You are going to the cinema tonight but you do not know the time. Ask your friend what time the film begins.",
-        "marks": 2,
+        "marks": 3,
         "commandWords": [
           "Write"
         ],
         "modelAnswer": "Model answer: \"À quelle heure commence le film ?\"",
         "markScheme": [
-          "1 mark for the question form À quelle heure...?",
-          "1 mark for the correct verb and subject (commence le film).",
-          "An English word order such as 'Le film commence à quelle heure' is accepted if the question form is correct."
+          "Award up to 3 marks where the response is written in French, is no more than ONE sentence, uses the question form À quelle heure...? and the correct verb and subject (commence le film); 'Le film commence à quelle heure' is accepted if the question form is right.",
+          "Deduct for errors of grammar, spelling, accents and vocabulary: 0-1 errors, no deduction; 2-4 errors, deduct 1 mark; 5-6 errors, deduct 2 marks; more than 6 errors, no marks for the item.",
+          "Accept any correct French wording that conveys the same meaning; do NOT award marks for translating the English situation word for word."
         ]
       },
       {
         "label": "(g)",
         "prompt": "You are inviting your friend to your birthday party next Saturday. Invite him and give the time.",
-        "marks": 2,
+        "marks": 3,
         "commandWords": [
           "Write"
         ],
         "modelAnswer": "Model answer: \"Tu veux venir à ma fête d'anniversaire samedi à sept heures ?\"",
         "markScheme": [
-          "1 mark for an invitation (Tu veux venir...? / Je t'invite à...).",
-          "1 mark for the event and a time expression (ma fête d'anniversaire + samedi / sept heures).",
-          "The invitation must be addressed to 'tu'; 'vous' changes the marks."
+          "Award up to 3 marks where the response is written in French, is no more than ONE sentence, invites your friend with 'tu' (Tu veux venir...? / Je t'invite à...) and gives the event with a time expression (ma fête d'anniversaire samedi à sept heures).",
+          "Deduct for errors of grammar, spelling, accents and vocabulary: 0-1 errors, no deduction; 2-4 errors, deduct 1 mark; 5-6 errors, deduct 2 marks; more than 6 errors, no marks for the item.",
+          "Accept any correct French wording that conveys the same meaning; do NOT award marks for translating the English situation word for word."
         ]
       },
       {
         "label": "(h)",
         "prompt": "You are in a restaurant in Guadeloupe. Order grilled fish and a fruit juice politely.",
-        "marks": 2,
+        "marks": 3,
         "commandWords": [
           "Write"
         ],
         "modelAnswer": "Model answer: \"Je voudrais du poisson grillé et un jus de fruits, s'il vous plaît.\"",
         "markScheme": [
-          "1 mark for a polite order (Je voudrais / Pour moi, s'il vous plaît).",
-          "1 mark for both items ordered correctly with the right articles (du poisson, un jus).",
-          "Omitting the partitive article (poisson instead of du poisson) loses the second mark."
+          "Award up to 3 marks where the response is written in French, is no more than ONE sentence, orders politely with vous (Je voudrais... s'il vous plaît) and names both items with the correct articles (du poisson grillé, un jus de fruits).",
+          "Deduct for errors of grammar, spelling, accents and vocabulary: 0-1 errors, no deduction; 2-4 errors, deduct 1 mark; 5-6 errors, deduct 2 marks; more than 6 errors, no marks for the item.",
+          "Accept any correct French wording that conveys the same meaning; do NOT award marks for translating the English situation word for word."
         ]
       },
       {
         "label": "(i)",
         "prompt": "You are lost in town. Stop a passer-by, apologise and ask where the railway station is.",
-        "marks": 2,
+        "marks": 3,
         "commandWords": [
           "Write"
         ],
         "modelAnswer": "Model answer: \"Excusez-moi, où est la gare, s'il vous plaît ?\"",
         "markScheme": [
-          "1 mark for the apology and apology form (Excusez-moi / Pardon).",
-          "1 mark for the question Où est la gare ?",
-          "Using 'vous' is essential: the passer-by is a stranger."
+          "Award up to 3 marks where the response is written in French, is no more than ONE sentence, apologises to the stranger with vous (Excusez-moi / Pardon) and asks where the railway station is (Où est la gare ?).",
+          "Deduct for errors of grammar, spelling, accents and vocabulary: 0-1 errors, no deduction; 2-4 errors, deduct 1 mark; 5-6 errors, deduct 2 marks; more than 6 errors, no marks for the item.",
+          "Accept any correct French wording that conveys the same meaning; do NOT award marks for translating the English situation word for word."
         ]
       },
       {
         "label": "(j)",
         "prompt": "Your teacher asks why you were absent yesterday. Say that you were ill and that you stayed at home.",
-        "marks": 2,
+        "marks": 3,
         "commandWords": [
           "Write"
         ],
         "modelAnswer": "Model answer: \"Hier, j'étais malade et je suis resté(e) à la maison.\"",
         "markScheme": [
-          "1 mark for the past description of illness (j'étais malade).",
-          "1 mark for the second action, using être correctly with rester (je suis resté(e)).",
-          "A present-tense answer (je suis malade) does not answer the situation."
+          "Award up to 3 marks where the response is written in French, is no more than ONE sentence, says that you were ill in the past (j'étais malade) and that you stayed at home (je suis resté(e) à la maison); a present-tense answer (je suis malade) does not answer the situation.",
+          "Deduct for errors of grammar, spelling, accents and vocabulary: 0-1 errors, no deduction; 2-4 errors, deduct 1 mark; 5-6 errors, deduct 2 marks; more than 6 errors, no marks for the item.",
+          "Accept any correct French wording that conveys the same meaning; do NOT award marks for translating the English situation word for word."
         ]
       }
     ],
     "planningHints": [
-      "Count the situations: ten sentences, ten marks of two each.",
-      "Decide 'tu' or 'vous' before you write - it changes the verb form throughout."
+      "Count the situations: ten sentences, three marks each. The marks cover the content and the correctness of the French together.",
+      "Decide 'tu' or 'vous' before you write - it changes the verb form throughout.",
+      "One sentence is enough: make it complete, with a verb and the detail the situation asks for."
     ],
-    "examinerTips": "One sentence, and make it complete: a verb, and the detail asked for. Accuracy matters more than length."
+    "examinerTips": "Each situation is marked out of 3 for appropriateness AND correctness together: an answer that gives the information asked for but makes five or six small errors loses 2 of its 3 marks, so check genders, verb endings, elisions and accents. Write one sentence only - the examiner marks the first correct idea."
   },
   {
     "id": "fre-p2-02",
@@ -401,9 +402,9 @@
       "Explain",
       "Give details"
     ],
-    "marks": 30,
-    "suggestedMinutes": 45,
-    "source": "SECTION 4 - READING COMPREHENSION (30 marks)\n\nRead the letter below, then answer ALL the questions that follow. The questions and your answers are in ENGLISH.\n\n------------------------------\nBonjour !\n\nJe m'appelle Amélie et j'ai seize ans. J'habite à Fort-de-France, en Martinique, avec ma mère, mon beau-père et mes deux petits frères. Notre appartement est assez petit, mais il y a un joli balcon où nous mangeons souvent le soir.\n\nJe vais au lycée en bus et le trajet dure vingt minutes. Mes matières préférées sont la biologie et l'espagnol, mais je n'aime pas beaucoup les mathématiques parce que c'est difficile. L'année prochaine, je voudrais étudier la médecine à l'université. Ma mère est infirmière et elle pense que ce métier est très utile.\n\nLe week-end dernier, il faisait très beau, alors nous sommes allés à la plage de la Grande Anse. Le matin, nous avons nagé et l'après-midi j'ai joué au volley-ball avec mes cousins. Le soir, nous avons mangé du poisson grillé et des bananes. C'était délicieux.\n\nÀ la maison, ma famille parle français et créole, mais à l'école nous étudions aussi l'anglais et l'espagnol. Écris-moi bientôt et raconte-moi ta vie chez toi !\n\nAmélie\n------------------------------",
+    "marks": 20,
+    "suggestedMinutes": 30,
+    "source": "SECTION 4 - READING COMPREHENSION (20 marks)\n\nRead the letter below, then answer ALL the questions that follow. The questions and your answers are in ENGLISH.\n\n------------------------------\nBonjour !\n\nJe m'appelle Amélie et j'ai seize ans. J'habite à Fort-de-France, en Martinique, avec ma mère, mon beau-père et mes deux petits frères. Notre appartement est assez petit, mais il y a un joli balcon où nous mangeons souvent le soir.\n\nJe vais au lycée en bus et le trajet dure vingt minutes. Mes matières préférées sont la biologie et l'espagnol, mais je n'aime pas beaucoup les mathématiques parce que c'est difficile. L'année prochaine, je voudrais étudier la médecine à l'université. Ma mère est infirmière et elle pense que ce métier est très utile.\n\nLe week-end dernier, il faisait très beau, alors nous sommes allés à la plage de la Grande Anse. Le matin, nous avons nagé et l'après-midi j'ai joué au volley-ball avec mes cousins. Le soir, nous avons mangé du poisson grillé et des bananes. C'était délicieux.\n\nÀ la maison, ma famille parle français et créole, mais à l'école nous étudions aussi l'anglais et l'espagnol. Écris-moi bientôt et raconte-moi ta vie chez toi !\n\nAmélie\n------------------------------",
     "prompt": "Read the letter and answer questions (a) to (f) in English in the spaces provided.",
     "parts": [
       {
@@ -424,20 +425,20 @@
       {
         "label": "(b)",
         "prompt": "How does she travel to school, and how long does the journey take?",
-        "marks": 4,
+        "marks": 2,
         "commandWords": [
           "Answer"
         ],
         "modelAnswer": "She goes to school by bus, and the journey takes twenty minutes.",
         "markScheme": [
-          "2 marks for 'by bus' (en bus).",
-          "2 marks for twenty minutes (vingt minutes)."
+          "1 mark for 'by bus' (en bus).",
+          "1 mark for twenty minutes (vingt minutes)."
         ]
       },
       {
         "label": "(c)",
         "prompt": "Which school subjects does she like, which one does she dislike, and why?",
-        "marks": 6,
+        "marks": 4,
         "commandWords": [
           "Answer"
         ],
@@ -446,14 +447,13 @@
           "1 mark for biology.",
           "1 mark for Spanish.",
           "1 mark for saying she does not like mathematics.",
-          "1 mark for the reason 'because it is difficult'.",
-          "1-2 marks for answers written in clear English sentences rather than one-word answers."
+          "1 mark for the reason 'because it is difficult'."
         ]
       },
       {
         "label": "(d)",
         "prompt": "What does she want to do next year, and what is her mother's opinion of that job?",
-        "marks": 6,
+        "marks": 4,
         "commandWords": [
           "Answer"
         ],
@@ -462,36 +462,34 @@
           "1 mark for 'study medicine next year'.",
           "1 mark for 'at university'.",
           "1 mark for her mother being a nurse (infirmière).",
-          "1 mark for 'she thinks the job is very useful'.",
-          "1-2 marks for using the passage's own words accurately rather than guessing."
+          "1 mark for 'she thinks the job is very useful'."
         ]
       },
       {
         "label": "(e)",
         "prompt": "What did Amélie and her family do last weekend? Give THREE details.",
-        "marks": 6,
+        "marks": 3,
         "commandWords": [
           "Answer"
         ],
         "modelAnswer": "The weather was lovely, so they went to the Grande Anse beach. In the morning they swam; in the afternoon she played volleyball with her cousins; in the evening they ate grilled fish and bananas.",
         "markScheme": [
-          "2 marks for going to the Grande Anse beach (and the good weather).",
-          "2 marks for swimming in the morning.",
-          "2 marks for playing volleyball with her cousins (accept the evening meal of grilled fish and bananas as one of the three details).",
+          "1 mark for going to the Grande Anse beach (and the good weather).",
+          "1 mark for swimming in the morning.",
+          "1 mark for playing volleyball with her cousins (accept the evening meal of grilled fish and bananas as one of the three details).",
           "No marks for details that are not in the passage."
         ]
       },
       {
         "label": "(f)",
         "prompt": "Which languages are spoken at home, and what does Amélie ask you to do?",
-        "marks": 4,
+        "marks": 3,
         "commandWords": [
           "Answer"
         ],
         "modelAnswer": "French and créole are spoken at home (and she also studies English and Spanish at school). She asks the reader to write to her soon and to tell her about life back home.",
         "markScheme": [
-          "1 mark for French.",
-          "1 mark for créole (accept 'Creole').",
+          "1 mark for the languages spoken at home: French AND créole (accept 'Creole').",
           "1 mark for 'write to me soon'.",
           "1 mark for 'tell me about your life at home'."
         ]
@@ -499,8 +497,9 @@
     ],
     "planningHints": [
       "Read the whole letter once before you answer anything.",
+      "Look at the marks before you answer: 4 marks means four separate pieces of information are wanted, so do not stop at one.",
       "Answer in English, in full sentences, and use the passage's own details."
     ],
-    "examinerTips": "One-word answers lose the marks for full sentences. Quote the letter's details (names, times, places) rather than paraphrasing loosely."
+    "examinerTips": "This section is marked analytically: one mark for each correct piece of information, so the mark shown at the end of each question is also the number of facts to look for. Answer in English with complete sentences - a bare word such as 'bus' earns nothing, and copying out the French instead of answering the question loses the mark even where the passage has been understood."
   }
 ]
