@@ -1,0 +1,484 @@
+[
+  {
+    "id": "spa-p2-01",
+    "type": "write",
+    "paper": 2,
+    "section": "Section 1: Directed Situations",
+    "title": "Directed Situations - ten notes, messages and notices in Spanish",
+    "topic": "spa-l5-1",
+    "commandWords": [
+      "Write",
+      "Ask",
+      "Tell",
+      "Invite",
+      "Describe"
+    ],
+    "marks": 30,
+    "suggestedMinutes": 40,
+    "source": "SECTION 1 - DIRECTED SITUATIONS (30 marks)\n\nThe situations below are described in ENGLISH. Read each one and write the information required IN SPANISH.\nWrite NO MORE THAN ONE SENTENCE for each situation - for some situations a complete sentence is not necessary. Do NOT translate the situations given. Do NOT use abbreviations. YOU WILL BE PENALIZED FOR DISREGARDING THESE INSTRUCTIONS.\n\nThe ten situations (a) to (j) are each worth 3 marks.",
+    "prompt": "Write in SPANISH the information required for EACH of the ten situations (a) to (j). One sentence per situation, and do not translate the English.",
+    "planningHints": [
+      "Work out what each situation is really asking you to do - give information, ask, invite, congratulate, apologise or warn - and use the verb form that matches.",
+      "One sentence is enough: make it a complete one (a verb, and the detail asked for). A note or a sign may be shorter, but it must still carry the information.",
+      "Watch the small words: por / para, desde / desde hace, and the difference between tú and usted - a doctor or a nurse is addressed as usted.",
+      "Check your accents and agreement (el dolor de cabeza, la pierna rota) before you move on: the marks are awarded for correctness of expression as well as for content."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "marks": 3,
+        "prompt": "Your doctor is unable to see you today. He asks you to send a short note telling him what is wrong with you. Write the note.",
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "Doctor, me duele mucho la garganta y tengo fiebre desde ayer por la noche.",
+        "markScheme": [
+          "Award up to 3 marks where the response is written in Spanish, is no more than ONE sentence, and states what is wrong with you (for example a sore throat and a fever).",
+          "Deduct for errors of grammar, spelling and vocabulary: 0-1 errors, no deduction; 2-4 errors, deduct 1 mark; 5-6 errors, deduct 2 marks; more than 6 errors, no marks for the item.",
+          "Accept any correct Spanish wording that conveys the same meaning; do NOT award marks for translating the English situation word for word."
+        ]
+      },
+      {
+        "label": "(b)",
+        "marks": 3,
+        "prompt": "During a lesson you begin to feel ill. Write the note you send to the school nurse asking for help.",
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "Enfermera, no me siento bien; tengo dolor de cabeza y necesito ayuda.",
+        "markScheme": [
+          "Award up to 3 marks where the response is written in Spanish, is no more than ONE sentence, and tells the nurse that you are unwell and asks for help.",
+          "Deduct for errors of grammar, spelling and vocabulary: 0-1 errors, no deduction; 2-4 errors, deduct 1 mark; 5-6 errors, deduct 2 marks; more than 6 errors, no marks for the item.",
+          "Accept any correct Spanish wording that conveys the same meaning; do NOT award marks for translating the English situation word for word."
+        ]
+      },
+      {
+        "label": "(c)",
+        "marks": 3,
+        "prompt": "Your best friend has just passed her driving test. Write the message you send to congratulate her.",
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "¡Felicidades, Ana! Me alegro muchísimo de que hayas aprobado el examen de conducir.",
+        "markScheme": [
+          "Award up to 3 marks where the response is written in Spanish, is no more than ONE sentence, and congratulates your friend on passing the driving test.",
+          "Deduct for errors of grammar, spelling and vocabulary: 0-1 errors, no deduction; 2-4 errors, deduct 1 mark; 5-6 errors, deduct 2 marks; more than 6 errors, no marks for the item.",
+          "Accept any correct Spanish wording that conveys the same meaning; do NOT award marks for translating the English situation word for word."
+        ]
+      },
+      {
+        "label": "(d)",
+        "marks": 3,
+        "prompt": "There is a shortage of cooking oil. Write the sign that the supermarket puts up to limit what each customer may buy.",
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "Solo se permite comprar tres botellas de aceite por cliente.",
+        "markScheme": [
+          "Award up to 3 marks where the response is written in Spanish, is no more than ONE sentence, and states the limit (for example three bottles of oil per customer) as a sign.",
+          "Deduct for errors of grammar, spelling and vocabulary: 0-1 errors, no deduction; 2-4 errors, deduct 1 mark; 5-6 errors, deduct 2 marks; more than 6 errors, no marks for the item.",
+          "Accept any correct Spanish wording that conveys the same meaning; do NOT award marks for translating the English situation word for word."
+        ]
+      },
+      {
+        "label": "(e)",
+        "marks": 3,
+        "prompt": "Your neighbour invites you to her house to see what she has bought. Write the note you leave for your parents explaining where you are.",
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "Mamá, estoy en casa de la vecina viendo lo que compró; vuelvo antes de las seis.",
+        "markScheme": [
+          "Award up to 3 marks where the response is written in Spanish, is no more than ONE sentence, and explains that you are at the neighbour's house and why.",
+          "Deduct for errors of grammar, spelling and vocabulary: 0-1 errors, no deduction; 2-4 errors, deduct 1 mark; 5-6 errors, deduct 2 marks; more than 6 errors, no marks for the item.",
+          "Accept any correct Spanish wording that conveys the same meaning; do NOT award marks for translating the English situation word for word."
+        ]
+      },
+      {
+        "label": "(f)",
+        "marks": 3,
+        "prompt": "Your doctor wants you to remember one instruction about your broken leg. Write the instruction.",
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "Mantenga la pierna en alto y no camine sin muletas.",
+        "markScheme": [
+          "Award up to 3 marks where the response is written in Spanish, is no more than ONE sentence, and gives one clear instruction about the broken leg (for example keep it raised, do not walk without crutches).",
+          "Deduct for errors of grammar, spelling and vocabulary: 0-1 errors, no deduction; 2-4 errors, deduct 1 mark; 5-6 errors, deduct 2 marks; more than 6 errors, no marks for the item.",
+          "Accept any correct Spanish wording that conveys the same meaning; do NOT award marks for translating the English situation word for word."
+        ]
+      },
+      {
+        "label": "(g)",
+        "marks": 3,
+        "prompt": "You went to the shopping mall and found that it was unexpectedly closed. Write the notice that told customers when it would reopen.",
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "Cerrado por reparaciones; volvemos a abrir el lunes a las nueve de la mañana.",
+        "markScheme": [
+          "Award up to 3 marks where the response is written in Spanish, is no more than ONE sentence, and says that the mall is closed and gives the day or time when it will reopen.",
+          "Deduct for errors of grammar, spelling and vocabulary: 0-1 errors, no deduction; 2-4 errors, deduct 1 mark; 5-6 errors, deduct 2 marks; more than 6 errors, no marks for the item.",
+          "Accept any correct Spanish wording that conveys the same meaning; do NOT award marks for translating the English situation word for word."
+        ]
+      },
+      {
+        "label": "(h)",
+        "marks": 3,
+        "prompt": "You arrived late for school this morning. Write the note your mother sends to the teacher explaining why.",
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "Estimada profesora: Juan llegó tarde porque tuvimos una cita en el hospital.",
+        "markScheme": [
+          "Award up to 3 marks where the response is written in Spanish, is no more than ONE sentence, and explains why you were late (for example a medical appointment).",
+          "Deduct for errors of grammar, spelling and vocabulary: 0-1 errors, no deduction; 2-4 errors, deduct 1 mark; 5-6 errors, deduct 2 marks; more than 6 errors, no marks for the item.",
+          "Accept any correct Spanish wording that conveys the same meaning; do NOT award marks for translating the English situation word for word."
+        ]
+      },
+      {
+        "label": "(i)",
+        "marks": 3,
+        "prompt": "Your dog is lost. Write the notice you put on the lamp post asking people to help you find it.",
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "Se busca perro pequeño de color marrón; hay recompensa; llame al 555-0199.",
+        "markScheme": [
+          "Award up to 3 marks where the response is written in Spanish, is no more than ONE sentence, and asks for help to find the dog and gives a contact number or an offer of a reward.",
+          "Deduct for errors of grammar, spelling and vocabulary: 0-1 errors, no deduction; 2-4 errors, deduct 1 mark; 5-6 errors, deduct 2 marks; more than 6 errors, no marks for the item.",
+          "Accept any correct Spanish wording that conveys the same meaning; do NOT award marks for translating the English situation word for word."
+        ]
+      },
+      {
+        "label": "(j)",
+        "marks": 3,
+        "prompt": "You borrowed your friend's bicycle and broke the lamp. Write the note in which you apologise and say when you will repair it.",
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "Lo siento mucho, Pedro; rompí la lámpara de tu bicicleta y voy a repararla el sábado.",
+        "markScheme": [
+          "Award up to 3 marks where the response is written in Spanish, is no more than ONE sentence, and apologises for breaking the lamp and says when you will repair it.",
+          "Deduct for errors of grammar, spelling and vocabulary: 0-1 errors, no deduction; 2-4 errors, deduct 1 mark; 5-6 errors, deduct 2 marks; more than 6 errors, no marks for the item.",
+          "Accept any correct Spanish wording that conveys the same meaning; do NOT award marks for translating the English situation word for word."
+        ]
+      }
+    ],
+    "examinerTips": "Each item is marked out of 3 for appropriateness AND correctness together. A response that gives all the information asked for but makes 5 or 6 small errors loses 2 of its 3 marks, so check genders, verb endings and accents. Write one sentence only - the marker reads the first sentence unless you write two short, highly relevant ones."
+  },
+  {
+    "id": "spa-p2-02",
+    "type": "write",
+    "paper": 2,
+    "section": "Section 2: Letter",
+    "title": "An informal letter to a friend in Venezuela (130-150 words)",
+    "topic": "spa-l4-1",
+    "commandWords": [
+      "Write",
+      "Describe",
+      "Explain",
+      "Narrate",
+      "Ask"
+    ],
+    "marks": 30,
+    "suggestedMinutes": 41,
+    "source": "SECTION 2 - LETTER (30 marks)\n\nYour family has just moved to a new town because of your father's job and you have started at a new school. Write a letter IN SPANISH to your friend Marta, who lives in Venezuela, and include ALL of the following:\n\n  (i) when and why your family moved;\n  (ii) your new school and two things you like about it;\n  (iii) a sport or other activity you have started and how you feel about it;\n  (iv) what you would like your friend to do when she comes to visit you.\n\nWrite 130-150 words. Do NOT write your real name and address, but include the date in SPANISH and use the appropriate beginning and ending. YOU WILL BE PENALIZED FOR DISREGARDING THESE INSTRUCTIONS.",
+    "prompt": "Plan your letter in (a), then write the letter itself in (b). Cover all four points (i) to (iv) and keep the letter between 130 and 150 words.",
+    "planningHints": [
+      "Plan first: four bullet points, one for each of (i) to (iv), plus the greeting and the ending. A plan costs you nothing and stops you from leaving a point out.",
+      "An informal letter to a friend uses tú: «Querida Marta», «¿Cómo estás?», «Un abrazo» - and it needs the date written in Spanish at the top.",
+      "Mix your tenses the way the points demand: the preterite for the move (nos mudamos), the present for your school and training (son, entreno), the present perfect for what has happened recently (he hecho) and the subjunctive or future for the invitation (cuando vengas, me gustaría que conocieras...).",
+      "Do not write your real name or address, and count your words at the end - 130 to 150."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "marks": 6,
+        "prompt": "Write a short plan of your letter as five or six bullet points in Spanish, showing what each paragraph will contain.",
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "- Saludo: «Querida Marta»\n- Cuándo y por qué nos mudamos: el mes pasado, el trabajo nuevo de mi padre\n- Mi nuevo colegio: los profesores y el laboratorio de ciencias\n- El deporte nuevo: el voleibol, tres entrenamientos por semana\n- La invitación: que venga en julio al festival de música\n- Despedida: «Un abrazo, Carmen»",
+        "markScheme": [
+          "1 mark for a greeting and 1 mark for a closing in the plan (for example «Querida Marta» and «Un abrazo»).",
+          "1 mark for each of the four content points planned - (i) the move, (ii) the new school, (iii) the new activity, (iv) the invitation - maximum 4 marks.",
+          "Award the marks where the plan is written in Spanish and clearly covers the four points; the plan itself is a study aid and carries no marks of its own in the real paper, but it is the fastest way to protect the 24 marks in (b)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "marks": 24,
+        "prompt": "Write your letter of 130-150 words in Spanish, covering the four points (i) to (iv). Include the date in Spanish and an appropriate greeting and ending.",
+        "commandWords": [
+          "Write",
+          "Describe",
+          "Explain"
+        ],
+        "modelAnswer": "Querida Marta:\nSantiago, 15 de marzo de 2026\n\n¿Cómo estás? Espero que tú y tu familia estén bien. Te escribo para contarte todas mis noticias.\n\nMi familia y yo nos mudamos a Santiago el mes pasado porque mi padre encontró un trabajo nuevo en un hospital de la ciudad.\n\nEmpecé clases en el colegio San Martín hace dos semanas. Los profesores son muy simpáticos y la escuela tiene un laboratorio de ciencias moderno. Mis asignaturas favoritas son biología e inglés.\n\nTambién me apunté a un equipo de voleibol. Entreno tres veces por semana y estoy muy contenta porque ya hice muchos amigos nuevos.\n\nCuando vengas en julio, me gustaría que conocieras a mis amigos y que fuéramos juntos al festival de música del pueblo. ¿Puedes traer las fotos de tu viaje a Mérida?\n\nEscríbeme pronto. Un abrazo,\nCarmen",
+        "markScheme": [
+          "Content and appropriateness (8 marks): 2 marks for each of the four points (i)-(iv) fully covered and developed; 1 mark where a point is mentioned but not developed; 0 marks for a point omitted or copied from the question in English.",
+          "Fluency, coherence and clarity (8 marks): the letter reads naturally in Spanish with ideas linked in a logical order (además, también, porque, cuando) and an informal register throughout. 4-5 marks where the writing can be understood but is disjointed or repetitive.",
+          "Grammar, range of vocabulary and idiom (8 marks): correct agreement, pronouns, accents and a range of tenses (preterite, imperfect, present perfect, present, future or subjunctive) with some idiomatic expressions. Deduct 1 mark where the same serious error is repeated throughout.",
+          "Form and length: the letter needs the date written in Spanish and an appropriate greeting and ending, and must not use a real name or address; no marks are awarded at all where the candidate writes a composition instead of a letter.",
+          "Length: the acceptable range for marking is 120-170 words - below 120 words the content or fluency band is capped at 4, and nothing is read beyond 170 words."
+        ]
+      }
+    ],
+    "examinerTips": "The examiner reads for the four content points first, so make each one easy to see: one short paragraph each, with the tenses that suit it. Length is assessed before the letter is marked - a letter of around 140 words is right on target. Do not waste words copying the English bullet points, and remember the date in Spanish: «Santiago, 15 de marzo de 2026» (the day on the month on the year)."
+  },
+  {
+    "id": "spa-p2-03",
+    "type": "write",
+    "paper": 2,
+    "section": "Section 3: Contextual Dialogue",
+    "title": "A telephone call to your grandmother (80-100 words)",
+    "topic": "spa-l1-2",
+    "commandWords": [
+      "Write",
+      "Respond",
+      "Describe",
+      "Explain"
+    ],
+    "marks": 20,
+    "suggestedMinutes": 27,
+    "source": "SECTION 3 - CONTEXTUAL DIALOGUE (20 marks)\n\nYou are spending two weeks with your uncle in Panama City and you telephone your grandmother, who lives in Jamaica. Complete the dialogue below by writing YOUR responses in SPANISH. Use 80-100 words in total. Responses to ALL the cues must be included.\n\n------------------------------\nAbuela:  ¿Aló? ¡Hola, mi amor! ¿Cómo estás?\n\nAbuela:  Muy bien, gracias. Cuéntame, ¿dónde estás y qué haces todos los días?\n\nAbuela:  ¡Qué interesante! ¿Y qué has comprado en el mercado?\n\nAbuela:  Hablas mucho de una amiga nueva. ¿Cómo es ella?\n\nAbuela:  Ya es tarde aquí y tengo que preparar la cena. ¿Cuándo vuelves a casa?\n------------------------------",
+    "prompt": "Write the missing responses (a) to (e) in SPANISH, one for each cue, so that the dialogue makes sense from beginning to end. The five responses together should be 80-100 words.",
+    "planningHints": [
+      "Each cue tells you what the response must contain: count the points (for example TWO things you have bought AND their prices) and make sure every one of them is there.",
+      "Keep the exchange real: a greeting that answers a greeting, a description that answers a question about a person, and so on.",
+      "Use the informal tú forms - you are speaking to your grandmother - and the preterite for what you have already done (compré, visité) and the present for your daily routine (voy, bailamos).",
+      "Watch the total length: 80-100 words across the five responses is about sixteen words for each one."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "marks": 4,
+        "prompt": "Greet your grandmother and ask how she is and how the family is.",
+        "commandWords": [
+          "Write",
+          "Respond"
+        ],
+        "modelAnswer": "¡Hola, abuela! Estoy muy bien, gracias. ¿Cómo estás tú y cómo está toda la familia?",
+        "markScheme": [
+          "The dialogue is marked holistically out of 20 in the examination. This cue carries 4 of those marks.",
+          "4 marks: the response covers the whole cue in natural, correct Spanish with no more than one error. 3 marks: most of the cue is covered, or 2-3 errors are made. 1-2 marks: a very short or partly relevant response. 0 marks: the response is missing, is in English, or does not convey the meaning.",
+          "Accept any correct Spanish wording that conveys the same information, and keep the response in the informal register of a phone call to your grandmother (tú, not usted)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "marks": 4,
+        "prompt": "Say how you are enjoying your stay and what you do every morning.",
+        "commandWords": [
+          "Write",
+          "Respond"
+        ],
+        "modelAnswer": "Estoy muy contento aquí, abuela, y todas las mañanas voy a la playa con mi tío y mis primos.",
+        "markScheme": [
+          "The dialogue is marked holistically out of 20 in the examination. This cue carries 4 of those marks.",
+          "4 marks: the response covers the whole cue in natural, correct Spanish with no more than one error. 3 marks: most of the cue is covered, or 2-3 errors are made. 1-2 marks: a very short or partly relevant response. 0 marks: the response is missing, is in English, or does not convey the meaning.",
+          "Accept any correct Spanish wording that conveys the same information, and keep the response in the informal register of a phone call to your grandmother (tú, not usted)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "marks": 4,
+        "prompt": "Say TWO things you have bought in the market and how much they cost.",
+        "commandWords": [
+          "Write",
+          "Respond"
+        ],
+        "modelAnswer": "Compré dos camisetas por veinte dólares y un sombrero bonito por cinco dólares.",
+        "markScheme": [
+          "The dialogue is marked holistically out of 20 in the examination. This cue carries 4 of those marks.",
+          "4 marks: the response covers the whole cue in natural, correct Spanish with no more than one error. 3 marks: most of the cue is covered, or 2-3 errors are made. 1-2 marks: a very short or partly relevant response. 0 marks: the response is missing, is in English, or does not convey the meaning.",
+          "Accept any correct Spanish wording that conveys the same information, and keep the response in the informal register of a phone call to your grandmother (tú, not usted)."
+        ]
+      },
+      {
+        "label": "(d)",
+        "marks": 4,
+        "prompt": "Describe your new friend and say what you do together.",
+        "commandWords": [
+          "Write",
+          "Respond"
+        ],
+        "modelAnswer": "Mi amiga se llama Lucía, es muy simpática y juntas bailamos salsa y vamos al cine los sábados.",
+        "markScheme": [
+          "The dialogue is marked holistically out of 20 in the examination. This cue carries 4 of those marks.",
+          "4 marks: the response covers the whole cue in natural, correct Spanish with no more than one error. 3 marks: most of the cue is covered, or 2-3 errors are made. 1-2 marks: a very short or partly relevant response. 0 marks: the response is missing, is in English, or does not convey the meaning.",
+          "Accept any correct Spanish wording that conveys the same information, and keep the response in the informal register of a phone call to your grandmother (tú, not usted)."
+        ]
+      },
+      {
+        "label": "(e)",
+        "marks": 4,
+        "prompt": "Explain why you have to end the call and say when you will return home.",
+        "commandWords": [
+          "Write",
+          "Respond"
+        ],
+        "modelAnswer": "Ahora tengo que colgar porque vamos a cenar; vuelvo a casa el domingo por la tarde, abuela.",
+        "markScheme": [
+          "The dialogue is marked holistically out of 20 in the examination. This cue carries 4 of those marks.",
+          "4 marks: the response covers the whole cue in natural, correct Spanish with no more than one error. 3 marks: most of the cue is covered, or 2-3 errors are made. 1-2 marks: a very short or partly relevant response. 0 marks: the response is missing, is in English, or does not convey the meaning.",
+          "Accept any correct Spanish wording that conveys the same information, and keep the response in the informal register of a phone call to your grandmother (tú, not usted)."
+        ]
+      }
+    ],
+    "examinerTips": "In the examination this section is marked holistically: all five responses are read together and placed on a band scale out of 20 (20-16 excellent to very good: all cues used well, language flowing naturally, wide vocabulary; 15-13 good: at least four cues used well; 12-10 fair: three cues; 9-6 weak: two cues, with frequent errors; 5-0 poor: responses missing or in English). Length is checked before the marking - the acceptable range is 70-110 words - so a very short dialogue cannot score in the top bands, and nothing beyond 110 words is read."
+  },
+  {
+    "id": "spa-p2-04",
+    "type": "write",
+    "paper": 2,
+    "section": "Section 4: Reading Comprehension",
+    "title": "Reading comprehension: 'El mercado de los sábados'",
+    "topic": "spa-l3-1",
+    "commandWords": [
+      "Answer",
+      "Explain",
+      "Give details",
+      "State"
+    ],
+    "marks": 20,
+    "suggestedMinutes": 27,
+    "source": "SECTION 4 - READING COMPREHENSION (20 marks)\n\nRead the following selection carefully. Do NOT translate it, but answer the questions in ENGLISH, using a complete sentence for EACH response. YOU WILL BE PENALIZED FOR DISREGARDING THESE INSTRUCTIONS.\n\n------------------------------\nEL MERCADO DE LOS SÁBADOS\n\nEl sábado pasado Elena se levantó a las cinco de la mañana porque iba a ayudar a su abuela en el mercado. Su abuela vende frutas y verduras en el mercado de la ciudad desde hace treinta años. Elena desayunó rápidamente, se puso un vestido viejo y salió de la casa con su padre, que las llevó en su camioneta.\n\nCuando llegaron, el mercado ya estaba lleno de gente. Elena y su abuela colocaron las frutas en dos mesas grandes y pusieron los precios: los mangos a dos dólares, las piñas a tres y las naranjas a un dólar. A las ocho de la mañana, un señor compró todas las piñas porque iba a preparar jugos para una fiesta. Elena se puso muy contenta porque, por primera vez, había vendido sola una caja entera.\n\nA las once empezó a llover muy fuerte. La mayoría de los clientes se fue corriendo a sus casas y el mercado quedó casi vacío. Mientras recogían las frutas, Elena encontró una cartera negra debajo de una de las mesas. Dentro había cien dólares, una tarjeta de crédito y una fotografía de una familia. La abuela quería guardarla hasta el lunes, pero Elena insistió en buscar al dueño inmediatamente.\n\nMedia hora más tarde apareció una señora muy nerviosa preguntando por su cartera. Cuando Elena se la entregó, la señora empezó a llorar de alegría y le quiso dar veinte dólares. Elena no aceptó el dinero, pero le pidió que volviera al mercado el sábado siguiente para comprar frutas.\n\nPor la tarde volvieron a casa cansadas, pero muy felices. La abuela le dijo a Elena: «Hoy aprendiste algo más importante que vender frutas». Y Elena respondió: «Sí, abuela, aprendí que la honestidad vale más que el dinero».\n------------------------------",
+    "prompt": "Answer ALL the questions (a) to (h) in ENGLISH, in complete sentences, based on the selection above. The marks shown in each part tell you how many pieces of information are needed.",
+    "planningHints": [
+      "Look at the number of marks before you answer: 3 marks means three separate pieces of information are wanted, so do not stop at one.",
+      "Answer in English, in a complete sentence - no marks are given for copying out the Spanish, and no marks for a one-word answer.",
+      "The questions follow the passage in order: (a) to (d) come from the first two paragraphs, (e) and (f) from the third, (g) from the fourth and (h) from the last.",
+      "For the last question you must explain the meaning in your own words: what the grandmother really means by 'algo más importante que vender frutas'."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "marks": 1,
+        "prompt": "At what time did Elena get up?",
+        "commandWords": [
+          "Answer",
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "She got up at five o'clock in the morning.",
+        "markScheme": [
+          "1 mark for five o'clock in the morning (accept 'at 5 a.m.')."
+        ]
+      },
+      {
+        "label": "(b)",
+        "marks": 2,
+        "prompt": "Why did Elena get up so early?",
+        "commandWords": [
+          "Answer",
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "Because she was going to help her grandmother to sell fruit and vegetables at the market.",
+        "markScheme": [
+          "1 mark for helping her grandmother.",
+          "1 mark for at the market, selling fruit and vegetables."
+        ]
+      },
+      {
+        "label": "(c)",
+        "marks": 2,
+        "prompt": "How long has Elena's grandmother been selling fruit and vegetables at the market, and how did the family travel there?",
+        "commandWords": [
+          "Answer",
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "She has been selling there for thirty years, and the family travelled in her father's van.",
+        "markScheme": [
+          "1 mark for thirty years.",
+          "1 mark for travelling in her father's van (accept 'in her father's pick-up/truck')."
+        ]
+      },
+      {
+        "label": "(d)",
+        "marks": 2,
+        "prompt": "What did the man buy at eight o'clock, and why did he buy it?",
+        "commandWords": [
+          "Answer",
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "He bought all the pineapples because he was going to make juices for a party.",
+        "markScheme": [
+          "1 mark for buying all the pineapples.",
+          "1 mark for the reason - to make/prepare juices for a party."
+        ]
+      },
+      {
+        "label": "(e)",
+        "marks": 3,
+        "prompt": "What happened at eleven o'clock and what effect did it have on the market?",
+        "commandWords": [
+          "Answer",
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "At eleven o'clock it began to rain heavily, most of the customers ran home to their houses, and the market became almost empty.",
+        "markScheme": [
+          "1 mark for the heavy rain starting at eleven o'clock.",
+          "1 mark for most of the customers running home / leaving.",
+          "1 mark for the market becoming almost empty (accept 'there were very few customers left')."
+        ]
+      },
+      {
+        "label": "(f)",
+        "marks": 3,
+        "prompt": "What did Elena find, and what THREE things were inside it?",
+        "commandWords": [
+          "Answer",
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "She found a black wallet under one of the tables, and inside it there were one hundred dollars, a credit card and a photograph of a family.",
+        "markScheme": [
+          "1 mark for a black wallet found under one of the tables.",
+          "1 mark for one hundred dollars and a credit card.",
+          "1 mark for the photograph of a family.",
+          "Maximum 3 marks; no mark where the answer is copied in Spanish instead of English."
+        ]
+      },
+      {
+        "label": "(g)",
+        "marks": 3,
+        "prompt": "What did the owner of the wallet offer Elena, and how did Elena respond?",
+        "commandWords": [
+          "Answer",
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "The owner offered her twenty dollars, but Elena did not accept the money and instead asked her to come back to the market the following Saturday to buy fruit.",
+        "markScheme": [
+          "1 mark for the offer of twenty dollars.",
+          "1 mark for Elena refusing the money.",
+          "1 mark for asking the woman to return the following Saturday to buy fruit."
+        ]
+      },
+      {
+        "label": "(h)",
+        "marks": 4,
+        "prompt": "Explain what Elena's grandmother meant by her words at the end, and what Elena said she had learned.",
+        "commandWords": [
+          "Answer",
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "The grandmother meant that Elena had done something more valuable than simply selling fruit: that honesty and returning what does not belong to you matter more than money. Elena answered that she had learned that honesty is worth more than money.",
+        "markScheme": [
+          "1 mark for the idea that honesty matters more than money.",
+          "1 mark for returning what belongs to someone else / helping another person.",
+          "1 mark for Elena's own words: honesty (la honestidad) is worth more than money.",
+          "1 mark for a full sentence in the candidate's own words; no mark for copying the Spanish text without explanation."
+        ]
+      }
+    ],
+    "examinerTips": "This section is marked analytically: one mark for each correct piece of information, so the mark shown at the end of each question is also the number of facts to look for. Answer in English with complete sentences - a bare word such as 'thirty' earns nothing, and translating the passage instead of answering the question loses the mark even where the Spanish has been understood."
+  }
+]
