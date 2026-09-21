@@ -9,7 +9,7 @@
    "13"
   ],
   "answer": "11",
-  "explanation": "According to BODMAS, multiplication is done before addition. 3 * 2 = 6, and 5 + 6 = 11.",
+  "explanation": "Step 1 — BODMAS: multiplication is done before addition.\n3 × 2 = 6\nStep 2 — Rewrite the question with that value:\n5 + 6\nStep 3 — Add:\n5 + 6 = 11",
   "topic": "real-numbers"
  },
  {
@@ -22,7 +22,7 @@
    "400"
   ],
   "answer": "200",
-  "explanation": "20% is 1/5. If 1/5 of a number is 40, the number is 40 * 5 = 200.",
+  "explanation": "Step 1 — Change the percentage to a fraction:\n20% = 20/100 = 1/5\nStep 2 — If one fifth of the number is 40, the whole number is 5 fifths:\n40 × 5\nStep 3 — = 200",
   "topic": "fractions-decimals-percentages"
  },
  {
@@ -35,7 +35,7 @@
    "4x + 3y"
   ],
   "answer": "2x + 7y",
-  "explanation": "Combine like terms: (3x - x) + (5y + 2y) = 2x + 7y.",
+  "explanation": "Step 1 — Collect the x terms:\n3x - x = 2x\nStep 2 — Collect the y terms:\n5y + 2y = 7y\nStep 3 — Write them together:\n2x + 7y",
   "topic": "algebraic-expressions"
  },
  {
@@ -48,7 +48,7 @@
    "14"
   ],
   "answer": "7",
-  "explanation": "Add 4 to both sides: 2x = 14. Divide by 2: x = 7.",
+  "explanation": "Step 1 — Add 4 to both sides:\n2x = 14\nStep 2 — Divide both sides by 2:\nx = 7\nStep 3 — Check: 2(7) - 4 = 14 - 4 = 10 ✓",
   "topic": "algebraic-expressions"
  },
  {
@@ -61,7 +61,7 @@
    "3"
   ],
   "answer": "2",
-  "explanation": "Gradient m = (y2 - y1) / (x2 - x1) = (6 - 2) / (3 - 1) = 4 / 2 = 2.",
+  "explanation": "Step 1 — Write the gradient formula:\nm = (y2 - y1)/(x2 - x1)\nStep 2 — Substitute (1, 2) and (3, 6):\nm = (6 - 2)/(3 - 1) = 4/2\nStep 3 — Simplify:\nm = 2",
   "topic": "coordinate-geometry"
  },
  {
@@ -74,7 +74,7 @@
    "15"
   ],
   "answer": "13",
-  "explanation": "Substitute 5 for x: f(5) = 2(5) + 3 = 10 + 3 = 13.",
+  "explanation": "Step 1 — Substitute x = 5 into the rule:\nf(5) = 2(5) + 3\nStep 2 — Multiply:\n2 × 5 = 10\nStep 3 — Add:\n10 + 3 = 13",
   "topic": "functions"
  },
  {
@@ -87,7 +87,7 @@
    "25cm"
   ],
   "answer": "5cm",
-  "explanation": "Using Pythagoras' theorem: 3^2 + 4^2 = 9 + 16 = 25. The square root of 25 is 5.",
+  "explanation": "Step 1 — Write Pythagoras' theorem:\nc² = a² + b²\nStep 2 — Substitute the two shorter sides 3 cm and 4 cm:\nc² = 3² + 4² = 9 + 16 = 25\nStep 3 — Take the square root:\nc = √25 = 5 cm",
   "topic": "pythagoras-theorem"
  },
  {
@@ -100,7 +100,7 @@
    "0"
   ],
   "answer": "0.5",
-  "explanation": "The cosine of 60 degrees is exactly 0.5.",
+  "explanation": "Step 1 — cos 60° is one of the exact values:\ncos 60° = 1/2\nStep 2 — (0.866 is cos 30°, so it is not the answer here.)\nStep 3 — Change the fraction to a decimal:\n1/2 = 0.5",
   "topic": "trig-ratios"
  },
  {
@@ -113,7 +113,7 @@
    "(4, 2)"
   ],
   "answer": "(4, 6)",
-  "explanation": "Add the corresponding components: (3+1, 4+2) = (4, 6).",
+  "explanation": "Step 1 — Add the first components:\n3 + 1 = 4\nStep 2 — Add the second components:\n4 + 2 = 6\nStep 3 — Write the sum as a vector:\n(4, 6)",
   "topic": "vectors"
  },
  {
@@ -126,7 +126,7 @@
    "8"
   ],
   "answer": "5",
-  "explanation": "Determinant = (2 * 4) - (3 * 1) = 8 - 3 = 5.",
+  "explanation": "Step 1 — For the matrix [a b; c d] the determinant is ad - bc.\nStep 2 — Substitute a = 2, b = 3, c = 1, d = 4:\ndet = (2 × 4) - (3 × 1)\nStep 3 — Work it out:\n8 - 3 = 5",
   "topic": "matrices"
  },
  {
@@ -139,7 +139,7 @@
    "12"
   ],
   "answer": "8",
-  "explanation": "The median is the middle value of a sorted data set. Here, it is 8.",
+  "explanation": "Step 1 — The values are already in order:\n2, 5, 8, 10, 12\nStep 2 — There are 5 values, so the median is the 3rd value.\nStep 3 — Read off the middle value:\n8",
   "topic": "central-tendency"
  },
  {
@@ -152,7 +152,7 @@
    "0.5"
   ],
   "answer": "0.3",
-  "explanation": "P(Red) = 3 / (3 + 7) = 3 / 10 = 0.3.",
+  "explanation": "Step 1 — Find the total number of balls:\n3 + 7 = 10\nStep 2 — Write the probability:\nP(red) = 3/10\nStep 3 — Change to a decimal:\n3 ÷ 10 = 0.3",
   "topic": "probability"
  },
  {
@@ -165,7 +165,7 @@
    "77cm²"
   ],
   "answer": "154cm²",
-  "explanation": "Area = πr^2 = (22/7) * 7 * 7 = 22 * 7 = 154cm².",
+  "explanation": "Step 1 — Write the area formula for a circle:\nA = πr²\nStep 2 — Substitute r = 7 and π = 22/7:\nA = (22/7) × 7 × 7\nStep 3 — Cancel a 7:\nA = 22 × 7 = 154 cm²",
   "topic": "perimeter-area"
  },
  {
@@ -178,7 +178,7 @@
    "Complement"
   ],
   "answer": "Union",
-  "explanation": "The symbol ∪ represents the union of sets.",
+  "explanation": "Step 1 — The symbol ∪ joins two sets together: A ∪ B holds everything in A or in B (or both).\nStep 2 — The symbol ∩ is the intersection, and only keeps what is in both sets.\nStep 3 — So ∪ means union.",
   "topic": "real-numbers"
  },
  {
@@ -191,7 +191,7 @@
    "{4, 5}"
   ],
   "answer": "{3}",
-  "explanation": "The intersection (∩) consists of elements that are in both sets.",
+  "explanation": "Step 1 — ∩ means the elements that are in BOTH sets.\nStep 2 — Compare: 1 and 2 are only in A; 4 and 5 are only in B.\nStep 3 — 3 is in both sets, so A ∩ B = {3}.",
   "topic": "real-numbers"
  },
  {
@@ -204,7 +204,7 @@
    "21"
   ],
   "answer": "7",
-  "explanation": "3x - 6 = 15 => 3x = 21 => x = 7.",
+  "explanation": "Step 1 — Divide both sides by 3:\nx - 2 = 5\nStep 2 — Add 2 to both sides:\nx = 7\nStep 3 — Check: 3(7 - 2) = 3 × 5 = 15 ✓",
   "topic": "algebraic-expressions"
  },
  {
@@ -217,7 +217,7 @@
    "128cm³"
   ],
   "answer": "64cm³",
-  "explanation": "Volume = s³ = 4³ = 64.",
+  "explanation": "Step 1 — Write the volume formula for a cube:\nV = s³\nStep 2 — Substitute s = 4:\nV = 4³ = 4 × 4 × 4\nStep 3 — Multiply:\nV = 64 cm³",
   "topic": "volume-capacity"
  },
  {
@@ -230,7 +230,7 @@
    "750%"
   ],
   "answer": "75%",
-  "explanation": "0.75 * 100 = 75%.",
+  "explanation": "Step 1 — To change a decimal to a percentage, multiply by 100:\n0.75 × 100\nStep 2 — Multiply:\n0.75 × 100 = 75\nStep 3 — = 75%",
   "topic": "fractions-decimals-percentages"
  },
  {
@@ -243,7 +243,7 @@
    "8"
   ],
   "answer": "7",
-  "explanation": "The mode is the most frequent value. 7 appears three times.",
+  "explanation": "Step 1 — Count how often each value appears:\n2 once, 4 twice, 5 once, 7 three times, 8 once\nStep 2 — The mode is the value with the highest count.\nStep 3 — 7 appears three times, so the mode is 7.",
   "topic": "central-tendency"
  },
  {
@@ -256,7 +256,7 @@
    "360°"
   ],
   "answer": "180°",
-  "explanation": "The sum of interior angles in any triangle is always 180°.",
+  "explanation": "Step 1 — The three interior angles of any triangle add up to 180°.\nStep 2 — This is true whatever the triangle: equilateral, isosceles or scalene.\nStep 3 — So the sum is 180°.",
   "topic": "perimeter-area"
  },
  {
@@ -269,7 +269,7 @@
    "5"
   ],
   "answer": "7",
-  "explanation": "2² - (-3) = 4 + 3 = 7.",
+  "explanation": "Step 1 — Substitute a = 2 and b = -3 into a² - b:\n2² - (-3)\nStep 2 — Work out the power:\n2² = 4\nStep 3 — Subtracting a negative adds, so:\n4 + 3 = 7",
   "topic": "algebraic-expressions"
  },
  {
@@ -282,7 +282,7 @@
    "25m"
   ],
   "answer": "30m",
-  "explanation": "Perimeter = 2(l + w) = 2(10 + 5) = 2(15) = 30.",
+  "explanation": "Step 1 — Write the perimeter formula for a rectangle:\nP = 2(l + w)\nStep 2 — Substitute l = 10 and w = 5:\nP = 2(10 + 5) = 2 × 15\nStep 3 — = 30 m",
   "topic": "perimeter-area"
  },
  {
@@ -295,7 +295,7 @@
    "14"
   ],
   "answer": "12",
-  "explanation": "12 * 12 = 144.",
+  "explanation": "Step 1 — Look for the number that multiplies by itself to give 144.\nStep 2 — 12 × 12 = 144\nStep 3 — So √144 = 12.",
   "topic": "real-numbers"
  },
  {
@@ -308,7 +308,7 @@
    "1/2"
   ],
   "answer": "1/2",
-  "explanation": "4/10 + 1/10 = 5/10 = 1/2.",
+  "explanation": "Step 1 — Use 10 as the common denominator, so 2/5 = 4/10.\nStep 2 — Add the numerators:\n4/10 + 1/10 = 5/10\nStep 3 — Cancel by 5:\n5/10 = 1/2",
   "topic": "fractions-decimals-percentages"
  },
  {
@@ -321,7 +321,7 @@
    "50cm"
   ],
   "answer": "10cm",
-  "explanation": "5km = 500,000cm. 500,000 / 50,000 = 10cm.",
+  "explanation": "Step 1 — Change 5 km to centimetres:\n5 × 100 000 = 500 000 cm\nStep 2 — Divide by the scale 1 : 50 000:\n500 000 ÷ 50 000\nStep 3 — = 10 cm on the map",
   "topic": "real-numbers"
  }
 ]

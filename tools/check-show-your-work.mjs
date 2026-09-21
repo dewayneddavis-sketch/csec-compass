@@ -342,5 +342,37 @@ check("identical sides → balanced for every x", identical.balanced === true &&
 check("sideText reads algebraically", mathWorking.sideText(["x", "x", 3]) === "2x + 3" && mathWorking.sideText([11]) === "11");
 
 // ---------------------------------------------------------------------------
+// 6. Mathematics question banks: every explanation is a multi-line worked
+//    solution (owner direction 2026-09-20 — "proper multi-line worked
+//    solutions, not one-liners"). The renderers show q.explanation with
+//    white-space: pre-line, so the line breaks are what the student reads.
+// ---------------------------------------------------------------------------
+section("worked solutions: every Mathematics explanation is step-by-step");
+const { createHash } = await import("node:crypto");
+const md5 = (p) => createHash("md5").update(readFileSync(p)).digest("hex");
+for (const bank of ["practice", "knowledge-check"]) {
+  const contentPath = join(root, "content", "mathematics", `${bank}.json`);
+  const publicPath = join(root, "public", "content", "mathematics", `${bank}.json`);
+  check(`${bank}: mirror is byte-identical to content/`, md5(contentPath) === md5(publicPath));
+  const questions = JSON.parse(readFileSync(contentPath, "utf8"));
+  const oneLiners = questions
+    .filter((q) => String(q.explanation || "").split("\n").length - 1 < 2)
+    .map((q) => q.id);
+  const tooShort = questions
+    .filter((q) => String(q.explanation || "").length < 40)
+    .map((q) => q.id);
+  check(
+    `${bank}: every explanation has at least 2 line breaks (${questions.length} questions)`,
+    oneLiners.length === 0,
+    oneLiners.slice(0, 6).join(", ")
+  );
+  check(
+    `${bank}: every explanation is at least 40 characters`,
+    tooShort.length === 0,
+    tooShort.slice(0, 6).join(", ")
+  );
+}
+
+// ---------------------------------------------------------------------------
 console.log(`\n${passed} passed, ${failed} failed`);
 process.exit(failed === 0 ? 0 : 1);
