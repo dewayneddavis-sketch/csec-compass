@@ -26,3 +26,11 @@
   0%, 100% { opacity: 1; }
   50% { opacity: 0.55; }
 }
+
+/* Exam review: the worked solution renders inside the shared "How to solve it"
+   card (src/components/HowToSolveIt.jsx). The mock exam reviews with its own
+   class so the pre-line pin for the \n-separated Mathematics steps lives in this
+   stylesheet too, not only in the ExtraPractice one it layers on top of. */
+.me-review-explain {
+  white-space: pre-line;
+}

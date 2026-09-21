@@ -10,6 +10,9 @@ import {
 } from "../data/showYourWork";
 import ShowYourWork from "./ShowYourWork";
 import WeakTopicsPanel from "./WeakTopicsPanel";
+import ReviewSolution from "./ReviewSolution";
+import SimilarQuestionPractice from "./SimilarQuestionPractice";
+import { canPractice, questionKey } from "../data/similarQuestion";
 import "./ExtraPractice.css";
 
 const QUIZ_TYPE = "practice";
@@ -24,6 +27,9 @@ export default function ExtraPractice({ subjectId }) {
   const [showResult, setShowResult] = useState(false);
   const [latestAttemptId, setLatestAttemptId] = useState(null);
   const [working, setWorking] = useState({});
+  // Which wrong answer (if any) has the "Practice a similar question" card open —
+  // in the per-question feedback or in the review list. One at a time.
+  const [practiceKey, setPracticeKey] = useState(null);
   const { session } = useAuth();
   const showWork = showYourWorkEnabled(subjectId, QUIZ_TYPE);
 
@@ -35,6 +41,7 @@ export default function ExtraPractice({ subjectId }) {
     setAnswers({});
     setStarted(false);
     setShowResult(false);
+    setPracticeKey(null);
     setWorking(showYourWorkEnabled(subjectId, QUIZ_TYPE) ? loadWorkingDrafts(subjectId, QUIZ_TYPE) : {});
 
     fetch(`/content/${subjectId}/practice.json`)
@@ -117,6 +124,7 @@ export default function ExtraPractice({ subjectId }) {
     // Save answer and move on
     setAnswers((prev) => ({ ...prev, [current]: chosen }));
     setSelected(null);
+    setPracticeKey(null); // leave any open practice card behind with this question
     if (current < total - 1) {
       setCurrent((c) => c + 1);
     } else {
@@ -145,6 +153,7 @@ export default function ExtraPractice({ subjectId }) {
   function handleShowResult() {
     if (!workingOk) return; // show your work first
     setAnswers((prev) => ({ ...prev, [current]: chosen }));
+    setPracticeKey(null);
     setShowResult(true);
     recordAttempt(chosen);
   }
@@ -157,6 +166,7 @@ export default function ExtraPractice({ subjectId }) {
     setStarted(false);
     setShowResult(false);
     setLatestAttemptId(null);
+    setPracticeKey(null);
     clearWorkingDrafts(subjectId, QUIZ_TYPE);
   }
 
@@ -248,7 +258,21 @@ export default function ExtraPractice({ subjectId }) {
                         {working[i]}
                       </div>
                     )}
-                    {ex.explanation && <p className="ep-review-explain">{ex.explanation}</p>}
+                    <ReviewSolution
+                      explanation={ex.explanation}
+                      isCorrect={isRight}
+                      textClass="ep-review-explain"
+                      buttonClass="ep-btn ep-btn-ghost"
+                      canPractice={canPractice(exercises, ex)}
+                      onPractice={() => setPracticeKey(questionKey(ex))}
+                    />
+                    {practiceKey === questionKey(ex) && (
+                      <SimilarQuestionPractice
+                        bank={exercises}
+                        missed={ex}
+                        onClose={() => setPracticeKey(null)}
+                      />
+                    )}
                   </div>
                 );
               })}
@@ -305,7 +329,24 @@ export default function ExtraPractice({ subjectId }) {
         {isAnswered && (
           <div className={`ep-feedback ${isCorrect ? "ep-fb-correct" : "ep-fb-incorrect"}`}>
             <strong>{isCorrect ? "✅ Correct!" : "❌ Incorrect"}</strong>
-            {q.explanation && <p>{q.explanation}</p>}
+            {/* Immediate feedback is where the learning loop bites hardest: the
+                student just missed this one, so teach it and offer a fresh
+                question on the same topic right here. */}
+            <ReviewSolution
+              explanation={q.explanation}
+              isCorrect={isCorrect}
+              textClass="ep-review-explain"
+              buttonClass="ep-btn ep-btn-ghost"
+              canPractice={canPractice(exercises, q)}
+              onPractice={() => setPracticeKey(questionKey(q))}
+            />
+            {practiceKey === questionKey(q) && (
+              <SimilarQuestionPractice
+                bank={exercises}
+                missed={q}
+                onClose={() => setPracticeKey(null)}
+              />
+            )}
           </div>
         )}
 

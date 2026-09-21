@@ -3,7 +3,13 @@
  * One source of truth for the box itself; each review screen adds its own class
  * (quiz-review-explain / ep-review-explain / me-review-explain) and pins
  * white-space: pre-line for the multi-line worked solutions, so the steps render
- * as steps even if a screen's stylesheet is loaded on its own. */
+ * as steps even if a screen's stylesheet is loaded on its own.
+ *
+ * Every inner rule is scoped to `.hsw-card` on purpose: the card mounts inside
+ * the quiz/practice/exam result cards, which style their own bare `p` elements
+ * (`.ep-result-card p`, `.quiz-result-card p`). Unscoped, those rules would win
+ * on specificity and grey out the worked solution — this card owns its type
+ * wherever it is mounted. */
 
 .hsw-card {
   border: 1px solid #c7d2fe;
@@ -14,7 +20,7 @@
   margin: 10px 0;
 }
 
-.hsw-heading {
+.hsw-card .hsw-heading {
   margin: 0 0 6px;
   font-size: 0.82rem;
   font-weight: 700;
@@ -23,7 +29,7 @@
   color: #3730a3;
 }
 
-.hsw-text {
+.hsw-card .hsw-text {
   margin: 0;
   /* Mathematics worked solutions are \n-separated steps — without this they
    * collapse into a single blob. */
@@ -34,7 +40,7 @@
 
 /* The follow-up practice button, shared look; each screen passes its own button
  * class so the colour still matches that screen. */
-.hsw-practice-btn {
+.hsw-card .hsw-practice-btn {
   margin-top: 8px;
 }
 
@@ -43,10 +49,10 @@
     border-color: #4338ca;
     background: #1e1b4b1a;
   }
-  .hsw-heading {
+  .hsw-card .hsw-heading {
     color: #a5b4fc;
   }
-  .hsw-text {
+  .hsw-card .hsw-text {
     color: #e5e7eb;
   }
 }

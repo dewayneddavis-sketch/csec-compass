@@ -40,8 +40,8 @@
 .ep-feedback{padding:.85rem 1rem;border-radius:10px;margin:.75rem 0;font-size:.9rem;line-height:1.5}
 .ep-fb-correct{background:#f0fdf4;border:1px solid #bbf7d0;color:#166534}
 .ep-fb-incorrect{background:#fef2f2;border:1px solid #fecaca;color:#991b1b}
-.ep-feedback strong{display:block;margin-bottom:.25rem;font-size:.95rem}
-.ep-feedback p{margin:0;font-size:.88rem}
+.ep-feedback > strong{display:block;margin-bottom:.25rem;font-size:.95rem}
+.ep-feedback > p{margin:0;font-size:.88rem}
 
 .ep-nav{display:flex;justify-content:flex-end;gap:1rem;margin-top:1rem;min-height:44px}
 .ep-btn{padding:.65rem 1.5rem;border:none;border-radius:10px;font-weight:600;font-size:.9rem;cursor:pointer;transition:all .2s}
@@ -72,7 +72,9 @@
 .ep-review-q{font-weight:500;font-size:.9rem;margin-bottom:.25rem;color:#111827}
 .ep-review-icon{margin-right:.5rem}
 .ep-review-answer{font-size:.85rem;color:#6b7280;margin-bottom:.25rem}
-.ep-review-explain{font-size:.8rem;color:#9ca3af;font-style:italic}
+/* The worked solution renders inside the shared "How to solve it" card
+   (src/components/HowToSolveIt.jsx); this class pins the \n-separated steps. */
+.ep-review-explain{white-space:pre-line}
 
 .ep-footer-link{text-align:center;margin-top:1rem;font-size:.82rem}
 .ep-footer-link a{color:#6b7280;text-decoration:none;transition:color .2s}

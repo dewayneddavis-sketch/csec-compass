@@ -11,6 +11,9 @@ import {
 } from "../data/showYourWork";
 import ShowYourWork from "./ShowYourWork";
 import WeakTopicsPanel from "./WeakTopicsPanel";
+import ReviewSolution from "./ReviewSolution";
+import SimilarQuestionPractice from "./SimilarQuestionPractice";
+import { canPractice, questionKey } from "../data/similarQuestion";
 import "./ExtraPractice.css";
 import "./MockExam.css";
 
@@ -36,6 +39,9 @@ export default function MockExam({ subjectId }) {
   const [timeTaken, setTimeTaken] = useState(null);
   const [latestAttemptId, setLatestAttemptId] = useState(null);
   const [working, setWorking] = useState({});
+  // Which wrong answer (if any) has the "Practice a similar question" card open
+  // in the review. Outside the exam: it never touches the timer or the score.
+  const [practiceKey, setPracticeKey] = useState(null);
   const totalSeconds = useRef(0);
   const { session } = useAuth();
   const showWork = showYourWorkEnabled(subjectId, QUIZ_TYPE);
@@ -68,6 +74,7 @@ export default function MockExam({ subjectId }) {
     setSubmitted(false);
     setTimeTaken(null);
     setLatestAttemptId(null);
+    setPracticeKey(null);
     recordedRef.current = false;
     fetch(`/content/${subjectId}/practice.json`)
       .then((res) => {
@@ -170,6 +177,7 @@ export default function MockExam({ subjectId }) {
   function handleRetake() {
     setStarted(false); setSubmitted(false); setCurrent(0); setAnswers({});
     setWorking({}); setTimeTaken(null); setLatestAttemptId(null);
+    setPracticeKey(null);
     recordedRef.current = false;
     clearWorkingDrafts(subjectId, QUIZ_TYPE);
   }
@@ -221,6 +229,7 @@ export default function MockExam({ subjectId }) {
             <div className="ep-review-list">
               {questions.map((qq, i) => {
                 const isRight = answers[i] === qq.answer;
+                const qKey = questionKey(qq);
                 return (
                   <div key={qq.id || i} className={`ep-review-item ${isRight ? "correct" : "incorrect"}`}>
                     <p className="ep-review-q">
@@ -237,7 +246,24 @@ export default function MockExam({ subjectId }) {
                         {working[i]}
                       </div>
                     )}
-                    {qq.explanation && <p className="ep-review-explain">{qq.explanation}</p>}
+                    {/* Exam review is where the teacher-absent loop pays off: the
+                        worked solution plus a fresh question on the topic missed.
+                        The practice card sits outside the exam — no timer, no score. */}
+                    <ReviewSolution
+                      explanation={qq.explanation}
+                      isCorrect={isRight}
+                      textClass="me-review-explain"
+                      buttonClass="ep-btn ep-btn-ghost"
+                      canPractice={canPractice(questions, qq)}
+                      onPractice={() => setPracticeKey(qKey)}
+                    />
+                    {practiceKey === qKey && (
+                      <SimilarQuestionPractice
+                        bank={questions}
+                        missed={qq}
+                        onClose={() => setPracticeKey(null)}
+                      />
+                    )}
                   </div>
                 );
               })}

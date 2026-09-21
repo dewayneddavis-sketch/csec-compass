@@ -12,11 +12,15 @@
 // Pure and side-effect free on purpose: it never records an attempt, and
 // tools/check-math-review-loop.mjs drives it directly.
 
-// Questions carry a stable `id` in every bank (p1…p100, q1…q25). Fall back to
-// the question object itself so a bank without ids still de-duplicates.
+// Questions carry a stable `id` in every bank (p1…p100, q1…q25). If a bank ever
+// arrives without ids, fall back to the question text — so a copy of the question
+// just missed is still recognised as that question — and only then to the object
+// itself.
 export function questionKey(question) {
   if (!question) return null;
-  return question.id !== undefined && question.id !== null ? `id:${question.id}` : question;
+  if (question.id !== undefined && question.id !== null) return `id:${question.id}`;
+  if (typeof question.question === "string" && question.question !== "") return `text:${question.question}`;
+  return question;
 }
 
 function sameTopic(a, b) {
