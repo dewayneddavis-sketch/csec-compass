@@ -31,6 +31,15 @@ export function reset() {
   state.selects = [];
 }
 
+// A configured error may be a plain object (that table always fails) or a
+// FUNCTION of the attempt — which is how a harness stages "the first query names
+// a column the live table does not have, and the retry without it succeeds"
+// without touching the handlers.
+function failure(configured, context) {
+  if (!configured) return null;
+  return (typeof configured === "function" ? configured(context) : configured) || null;
+}
+
 export function setTable(name, rows) {
   state.tables[name] = rows.map((r) => ({ ...r }));
 }
@@ -65,6 +74,7 @@ export function createClient() {
       let payload = null;
       let conflict = null;
       let ignoreDuplicates = false;
+      let projection = "*";
 
       const run = () => {
         const tableRows = state.tables[table] || [];
@@ -74,14 +84,14 @@ export function createClient() {
           const kept = tableRows.filter((r) => !matches(r, filters));
           const removed = tableRows.filter((r) => matches(r, filters));
           state.tables[table] = kept;
-          return { data: removed, error: state.writeErrors[table] || null };
+          return { data: removed, error: failure(state.writeErrors[table], { op, table, filters }) };
         }
 
         if (op === "insert" || op === "upsert") {
           const incoming = Array.isArray(payload) ? payload : [payload];
           if (op === "insert") state.inserts.push({ table, rows: incoming });
           else state.upserts.push({ table, rows: incoming, conflict, ignoreDuplicates });
-          const error = state.writeErrors[table] || null;
+          const error = failure(state.writeErrors[table], { op, table, rows: incoming, filters, projection });
           if (error) return { data: null, error };
           const keyFields = conflict ? conflict.split(",") : null;
           const next = [...tableRows];
@@ -92,22 +102,33 @@ export function createClient() {
               : -1;
             // ignoreDuplicates mirrors Postgres `ON CONFLICT … DO NOTHING`:
             // the stored row wins and the incoming one is dropped.
+            // A conflict update never rewrites the primary key or created_at —
+            // `on conflict (name) do update set license_tier = …` leaves the
+            // school's id alone, and a harness that checks identity needs that.
             if (idx >= 0) {
-              if (!ignoreDuplicates) next[idx] = { ...next[idx], ...stamped };
+              if (!ignoreDuplicates) {
+                next[idx] = {
+                  ...next[idx],
+                  ...stamped,
+                  id: next[idx].id,
+                  created_at: next[idx].created_at || stamped.created_at,
+                };
+              }
             } else next.push(stamped);
           }
           state.tables[table] = next;
           return { data: incoming, error: null };
         }
 
-        const error = state.selectErrors[table] || null;
-        state.selects.push({ table, filters: filters.map((f) => [...f]) });
+        const error = failure(state.selectErrors[table], { op, table, filters, projection });
+        state.selects.push({ table, filters: filters.map((f) => [...f]), projection });
         if (error) return { data: null, error };
         return { data: tableRows.filter((r) => matches(r, filters)), error: null };
       };
 
       const builder = {
-        select() {
+        select(nextProjection = "*") {
+          if (op !== "insert" && op !== "upsert") projection = nextProjection;
           return builder;
         },
         eq(column, value) {
