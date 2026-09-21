@@ -11,6 +11,9 @@ import {
 } from "../data/showYourWork";
 import ShowYourWork from "./ShowYourWork";
 import WeakTopicsPanel from "./WeakTopicsPanel";
+import ReviewSolution from "./ReviewSolution";
+import SimilarQuestionPractice from "./SimilarQuestionPractice";
+import { canPractice, questionKey } from "../data/similarQuestion";
 import "./Quiz.css";
 
 const QUIZ_TYPE = "knowledge-check";
@@ -22,11 +25,14 @@ export default function Quiz({ questions, subjectTitle, subjectId, onComplete })
   const [showResult, setShowResult] = useState(false);
   const [started, setStarted] = useState(false);
   const [latestAttemptId, setLatestAttemptId] = useState(null);
+  // Which missed question (if any) has the "Practice a similar question" card
+  // open in the review. One at a time, keyed by the question.
+  const [practiceKey, setPracticeKey] = useState(null);
   const { session } = useAuth();
   const showWork = showYourWorkEnabled(subjectId, QUIZ_TYPE);
 
   useEffect(() => {
-    setCurrent(0); setAnswers({}); setShowResult(false); setStarted(false);
+    setCurrent(0); setAnswers({}); setShowResult(false); setStarted(false); setPracticeKey(null);
     setWorking(showYourWorkEnabled(subjectId, QUIZ_TYPE) ? loadWorkingDrafts(subjectId, QUIZ_TYPE) : {});
   }, [questions, subjectId]);
 
@@ -84,6 +90,7 @@ export default function Quiz({ questions, subjectTitle, subjectId, onComplete })
   function handleRestart() {
     setCurrent(0); setAnswers({}); setWorking({}); setShowResult(false); setStarted(false);
     setLatestAttemptId(null);
+    setPracticeKey(null);
     clearWorkingDrafts(subjectId, QUIZ_TYPE);
   }
 
@@ -120,6 +127,7 @@ export default function Quiz({ questions, subjectTitle, subjectId, onComplete })
           {questions.map((q, i) => {
             const correctAnswer = q.answer !== undefined ? q.answer : q.correctAnswer;
             const isCorrect = answers[i] === correctAnswer;
+            const qKey = questionKey(q);
             return (
               <div key={q.id} className={`quiz-review-item ${isCorrect ? "correct" : "incorrect"}`}>
                 <p className="quiz-review-q"><span className="qr-icon">{isCorrect ? "✅" : "❌"}</span>{q.question || q.question}</p>
@@ -130,7 +138,23 @@ export default function Quiz({ questions, subjectTitle, subjectId, onComplete })
                     {working[i]}
                   </div>
                 )}
-                {q.explanation && <p className="quiz-review-explain">{q.explanation}</p>}
+                {/* The learning loop: a wrong answer gets the worked solution and a
+                    fresh question on the same topic. A right one stays clean. */}
+                <ReviewSolution
+                  explanation={q.explanation}
+                  isCorrect={isCorrect}
+                  textClass="quiz-review-explain"
+                  buttonClass="quiz-btn quiz-btn-ghost"
+                  canPractice={canPractice(questions, q)}
+                  onPractice={() => setPracticeKey(qKey)}
+                />
+                {practiceKey === qKey && (
+                  <SimilarQuestionPractice
+                    bank={questions}
+                    missed={q}
+                    onClose={() => setPracticeKey(null)}
+                  />
+                )}
               </div>
             );
           })}

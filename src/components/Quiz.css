@@ -43,4 +43,8 @@
 .quiz-review-q{font-weight:500;font-size:.9rem;margin-bottom:.25rem;color:#111827}
 .qr-icon{margin-right:.5rem}
 .quiz-review-answer{font-size:.85rem;color:#6b7280;margin-bottom:.25rem}
-.quiz-review-explain{font-size:.8rem;color:#9ca3af;font-style:italic}
+/* The worked solution is no longer bare italic text: it renders inside the
+   shared "How to solve it" card (src/components/HowToSolveIt.jsx), which brings
+   its own box and type. This class only pins the \n-separated steps so the
+   Mathematics worked solutions read as steps rather than one blob. */
+.quiz-review-explain{white-space:pre-line}

@@ -1,0 +1,173 @@
+/* The untimed "Practice a similar question" card.
+ *
+ * Deliberately reads as a side-room off the review screen, not part of the exam:
+ * quieter than the exam card, with its own "not graded" note.
+ *
+ * Every rule is scoped to `.sqp-card` for the same reason as the worked-solution
+ * card: it is mounted inside the quiz/practice/exam result cards, whose
+ * `.ep-result-card p` / `.quiz-result-card p` rules would otherwise reach in and
+ * restyle this card's text (grey, larger margins, block `strong`). */
+
+.sqp-card {
+  margin: 10px 0 4px;
+  padding: 14px 16px;
+  border: 1px dashed #93c5fd;
+  border-radius: 12px;
+  background: #f8fbff;
+}
+
+.sqp-card .sqp-head {
+  margin-bottom: 8px;
+}
+
+.sqp-card .sqp-title {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1e3a8a;
+}
+
+.sqp-card .sqp-note {
+  margin: 2px 0 0;
+  font-size: 0.78rem;
+  color: #64748b;
+}
+
+.sqp-card .sqp-topic {
+  margin: 0 0 6px;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #475569;
+}
+
+.sqp-card .sqp-question {
+  margin: 0 0 10px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.sqp-card .sqp-options {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sqp-card .sqp-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 10px;
+  text-align: left;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+
+.sqp-card .sqp-option:hover {
+  border-color: #6366f1;
+}
+
+.sqp-card .sqp-option-selected {
+  border-color: #4f46e5;
+  background: #eef2ff;
+}
+
+.sqp-card .sqp-opt-letter {
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  color: #334155;
+}
+
+.sqp-card .sqp-feedback {
+  margin-top: 4px;
+}
+
+.sqp-card .sqp-verdict {
+  margin: 0 0 4px;
+  font-weight: 700;
+}
+
+.sqp-card .sqp-verdict-correct {
+  color: #15803d;
+}
+
+.sqp-card .sqp-verdict-wrong {
+  color: #b91c1c;
+}
+
+.sqp-card .sqp-answer {
+  margin: 0;
+  color: #334155;
+}
+
+.sqp-card .sqp-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.sqp-card .sqp-btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sqp-card .sqp-btn-primary {
+  background: #4f46e5;
+  color: #ffffff;
+}
+
+.sqp-card .sqp-btn-primary:disabled {
+  background: #c7d2fe;
+  cursor: not-allowed;
+}
+
+.sqp-card .sqp-btn-ghost {
+  background: transparent;
+  border-color: #cbd5e1;
+  color: #334155;
+}
+
+/* This card's own worked solution — the shared .hsw-text also sets pre-line,
+ * pinned here so the steps survive if this stylesheet loads on its own. */
+.sqp-card .sqp-explain {
+  white-space: pre-line;
+}
+
+@media (prefers-color-scheme: dark) {
+  .sqp-card {
+    background: #0f172a80;
+    border-color: #3b82f6;
+  }
+  .sqp-card .sqp-title {
+    color: #bfdbfe;
+  }
+  .sqp-card .sqp-question,
+  .sqp-card .sqp-answer {
+    color: #e5e7eb;
+  }
+  .sqp-card .sqp-option {
+    background: #1f2937;
+    border-color: #475569;
+    color: #e5e7eb;
+  }
+  .sqp-card .sqp-option-selected {
+    background: #312e81;
+  }
+}
