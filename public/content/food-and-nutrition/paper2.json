@@ -1,0 +1,608 @@
+[
+  {
+    "id": "fn-p2-01",
+    "type": "write",
+    "paper": 2,
+    "section": "Section 1 - Diet and Health",
+    "title": "Structured: diet, diet-related diseases and the Caribbean dietary guidelines",
+    "topic": "fn-l1-3",
+    "commandWords": [
+      "Define",
+      "Name",
+      "Discuss",
+      "Explain"
+    ],
+    "marks": 16,
+    "suggestedMinutes": 25,
+    "source": "Marsha is 47 years old and lives with her husband and three children in a village in St Elizabeth, Jamaica. At a recent visit to the health centre she was told that she has type 2 diabetes mellitus and hypertension (high blood pressure). She is overweight, and her blood pressure was recorded as 160/100 mmHg.\n\nMarsha does the cooking for the family. They eat fried chicken, fried fish and white bread most days, and the children drink sweetened drinks instead of water. Fresh vegetables, fruit and ground provisions are bought only when someone is travelling to the market 30 km away, because the village shop sells mostly tinned and packaged foods.\n\nBetween 2020 and 2025, the number of adults from Marsha's parish who were treated for diabetes and hypertension at the health centre increased by 30 per cent.",
+    "prompt": "Answer ALL parts of this question. This is one of SIX compulsory questions on Paper 02 (2 hours 30 minutes); each question is worth 16 marks.",
+    "planningHints": [
+      "Read the source twice: the answers to part (e) are inside it - the village shop, the 30 km trip to the market, the cost of transport and the children's likes.",
+      "Every 'discuss' or 'explain' part on this paper is worth 2 marks per point: one mark for the point itself and one for the reason. Plan your answer as a list of points with a reason under each one.",
+      "'Define' and 'name' need no explanation - keep them short and spend your time on the discuss parts.",
+      "There are six questions and 2 hours 30 minutes, so budget about 25 minutes for this question."
+    ],
+    "examinerTips": "This question carries 6 Knowledge and 10 Use of Knowledge marks (16 marks in all), the split the syllabus gives to every Paper 02 question. Parts (a) to (c) ask you to remember and name; the definition of health needs all three aspects (physical, mental and social well-being) for the second mark. Parts (d) and (e) are the applied marks: a guideline or a factor on its own earns 1 mark, and the second mark comes only from the reason that links it to Marsha's diabetes, her blood pressure, her weight or the way her family shops. Write the reason down even when it seems obvious.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Define the term 'diet'.",
+        "marks": 2,
+        "commandWords": [
+          "Define"
+        ],
+        "modelAnswer": "A diet is the food and drink that a person normally takes. It describes the kinds of food a person eats, how much of them, how often and in what combinations - that is, the person's eating pattern.",
+        "markScheme": [
+          "2 marks for a complete definition: the food and drink a person normally eats and drinks, described as a pattern of eating (what is eaten, how much and how often).",
+          "1 mark for a partial definition, for example 'the food a person eats' with no reference to the amounts or to the pattern of eating.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Define the term 'health' as stated by the World Health Organization (1948).",
+        "marks": 2,
+        "commandWords": [
+          "Define"
+        ],
+        "modelAnswer": "'Health is a state of complete physical, mental and social well-being and not merely the absence of disease or infirmity' (World Health Organization, 1948).",
+        "markScheme": [
+          "2 marks for the complete definition, naming all three aspects - physical, mental and social well-being - and stating that health is not merely the absence of disease or infirmity.",
+          "1 mark for a partial definition, for example naming one or two aspects of well-being only.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Name TWO diet-related lifestyle diseases that Marsha has or that are increasing in her parish, as shown in the source.",
+        "marks": 2,
+        "commandWords": [
+          "Name"
+        ],
+        "modelAnswer": "Diabetes (type 2 diabetes mellitus) and hypertension (high blood pressure). Overweight/obesity would also be accepted from the source.",
+        "markScheme": [
+          "1 mark for EACH correct diet-related disease named (maximum 2 marks).",
+          "Accept: diabetes mellitus / type 2 diabetes; hypertension / high blood pressure; overweight or obesity.",
+          "Do not award marks for an infectious disease such as influenza, or for a deficiency disease such as anaemia in this part.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Discuss THREE basic dietary guidelines for the Caribbean that Marsha should follow in order to manage her diabetes mellitus and her hypertension. Give a reason for EACH guideline.",
+        "marks": 6,
+        "commandWords": [
+          "Discuss"
+        ],
+        "modelAnswer": "1. Eat less fat and use cooking methods that need little or no oil: the fried chicken, fried fish and coconut milk the family uses add a lot of energy and saturated fat, which worsens weight gain and raises the blood cholesterol and the blood pressure; grilling, baking, steaming and stewing in its own juice give the same dishes with far less fat.\n2. Use less sugar and fewer sweetened drinks: the sweetened drinks the children take give many calories with no nutrients and raise the blood glucose quickly, which makes diabetes difficult to control; water and fresh fruit should replace them.\n3. Eat more vegetables, fruit, ground provisions and peas, and eat them in season: callaloo, pumpkin, carrots, green banana, peas and whole grains supply vitamins, minerals and dietary fibre with very little fat, and the fibre slows the rise in blood sugar and helps her to feel full, which helps with weight control.\n4. Use less salt and fewer salty tinned and packaged foods: sodium raises the blood pressure, and Marsha's blood pressure is already 160/100 mmHg; pepper, pimento, garlic, lime and herbs should season the food instead.\n5. Eat regular meals in controlled portions and take regular physical activity: overweight makes both diabetes and hypertension worse, and losing even a small amount of weight lowers the blood pressure and improves blood sugar control.",
+        "markScheme": [
+          "2 marks for EACH guideline discussed: 1 mark for a correct Caribbean dietary guideline, 1 mark for the reason or explanation that links it to diabetes, to hypertension or to weight control.",
+          "3 x 2 = 6 marks. Accept any three of: reduce fat and avoid fried food; reduce sugar and sweetened drinks; increase vegetables, fruit, dietary fibre and ground provisions; reduce salt and salty tinned and packaged foods; eat regular meals in smaller portions and take regular exercise to lose weight; drink more water; eat a variety of foods from all the food groups, in season and locally grown.",
+          "A guideline with no reason earns 1 mark only; a reason that does not relate to her conditions earns no second mark.",
+          "Total 6 marks. Use of Knowledge (UK)."
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "Explain TWO factors that influence the eating patterns and dietary choices of families in Marsha's village, as suggested by the source.",
+        "marks": 4,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "1. Availability of and access to food: the village shop sells mostly tinned and packaged foods and the market with fresh produce is 30 km away, so the family eats what is easy to get - salted, sweetened and packaged food rather than fresh vegetables, fruit and meat.\n2. Income and cost: the fare to the market and the higher price of fresh food mean that a family on a small income buys the cheaper tinned, packaged and starchy foods, and the sweetened drinks, which cost less than fresh juice.\n3. Advertisement and food fads: advertising for sweetened drinks and snacks (and the children wanting what their friends eat) makes the family buy these in place of the local fruits and ground provisions.\n4. Cultural habits and personal likes and dislikes: the family is used to fried food and white bread, and the children 'will not eat anything else', so habit and the children's preferences decide what is cooked.",
+        "markScheme": [
+          "2 marks for EACH factor fully explained: 1 mark for naming a factor that influences eating patterns or food choice, 1 mark for explaining how it influences what this family eats.",
+          "2 x 2 = 4 marks. Accept any two of: availability and access to food; income, cost and distance/transport; advertisement; cultural habits and food fads and fallacies; personal likes and dislikes; age-group and dietary needs; knowledge and education about nutrition; government policy and school feeding programmes; natural disasters.",
+          "A factor that is simply named earns 1 mark; the second mark is for the explanation drawn from the source.",
+          "Total 4 marks. Use of Knowledge (UK)."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fn-p2-02",
+    "type": "write",
+    "paper": 2,
+    "section": "Section 2 - Nutrition and Health",
+    "title": "Structured: the nutrients in a meal, deficiency diseases and the digestion of bread",
+    "topic": "fn-l1-1",
+    "commandWords": [
+      "Define",
+      "Name",
+      "Describe"
+    ],
+    "marks": 16,
+    "suggestedMinutes": 25,
+    "source": "Betty, a Form 5 student, had bread, cheese, an orange and a glass of water for lunch. During her physical education class in the afternoon she complained of feeling very tired.\n\nBetty's three-year-old brother, Ryan, has been fed on sweetened condensed milk, white bread and sweet drinks for the past three months. He is given very little meat, peas, vegetables or fruit. His hair is thin and pale, his skin is dry, his legs and feet are swollen, he is much smaller than other children of his age and he often has diarrhoea.\n\nThe school nurse has told Betty's mother that Ryan is suffering from the effects of a deficient diet and that the family should look at the food groups in the meals they serve.",
+    "prompt": "Answer ALL parts of this question. This is one of SIX compulsory questions on Paper 02 (2 hours 30 minutes); each question is worth 16 marks.",
+    "planningHints": [
+      "In part (c) a deficiency disease scores only when the nutrient that is missing is named with it - write both together, for example 'kwashiorkor - protein'.",
+      "Part (d) is a 'describe' question with a 3 + 3 split between physical and chemical digestion. Plan it as two short paragraphs, and in the chemical paragraph make sure the enzyme, the food it acts on and the products are all there.",
+      "The marks in part (e) come from the explanation, so give a reason after each way in which water helps (for example, enzymes work only in solution).",
+      "About 25 minutes for this question; the source is short, so most of the time is for (d) and (e)."
+    ],
+    "examinerTips": "This question carries 6 Knowledge and 10 Use of Knowledge marks (16 marks in all). The Knowledge marks are in (a) to (c): a definition needs the full idea for both marks, and a deficiency disease earns a mark only when the missing nutrient is named with it. In part (d) the marks are split 3 for physical digestion and 3 for chemical digestion - the enzyme (salivary amylase), the food it acts on (the cooked starch in the bread) and the products (maltose and dextrins) collect that half of the question. In part (e) each way is worth 2 marks: the second mark is for saying how the water helps, not for repeating that water is important.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Define the term 'nutritive value of food'.",
+        "marks": 2,
+        "commandWords": [
+          "Define"
+        ],
+        "modelAnswer": "The nutritive value of a food is the kind and the amount of nutrients - for example protein, carbohydrate, fat, vitamins, minerals and water - that the food supplies to the body.",
+        "markScheme": [
+          "2 marks for a complete definition: the KIND of nutrients a food contains AND the AMOUNT of them that it supplies to the body.",
+          "1 mark for a partial definition, for example 'the nutrients in a food' with no reference to how much the food supplies.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Name the MAJOR nutrient supplied by EACH of the following foods in Betty's lunch: (i) bread (ii) cheese.",
+        "marks": 2,
+        "commandWords": [
+          "Name"
+        ],
+        "modelAnswer": "(i) Bread - carbohydrate (starch). (ii) Cheese - protein (it also supplies fat and calcium, but protein is its major nutrient).",
+        "markScheme": [
+          "1 mark for each correct major nutrient: carbohydrate (starch) in the bread and protein in the cheese.",
+          "2 x 1 = 2 marks.",
+          "Do not award a mark for 'energy', or for 'vitamins and minerals', in place of the major nutrient.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Name TWO deficiency diseases and state the nutrient that is lacking in EACH case.",
+        "marks": 2,
+        "commandWords": [
+          "Name"
+        ],
+        "modelAnswer": "Kwashiorkor - protein. (Ryan's swollen legs and feet, his pale thin hair and his dry skin are the signs of a lack of protein.) Iron-deficiency anaemia - iron. Also accepted: scurvy - vitamin C; rickets - vitamin D and calcium; night blindness - vitamin A; beri-beri - vitamin B1.",
+        "markScheme": [
+          "1 mark for each deficiency disease named TOGETHER WITH the nutrient that is lacking (maximum 2 marks).",
+          "Accept any two of: kwashiorkor - protein; marasmus - energy and protein; iron-deficiency anaemia - iron; scurvy - vitamin C; rickets - vitamin D or calcium; night blindness (xerophthalmia) - vitamin A; beri-beri - vitamin B1 (thiamine); goitre - iodine; dental caries - fluoride.",
+          "No mark where the disease is named without the missing nutrient, or where the disease and the nutrient do not match.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Describe the physical and chemical digestion of the bread in Betty's mouth.",
+        "marks": 6,
+        "commandWords": [
+          "Describe"
+        ],
+        "modelAnswer": "Physical digestion: the teeth bite, tear and grind the bread into smaller pieces (mastication), which greatly increases the surface area on which the enzymes can act. The tongue moves the food around the mouth, mixes it with the saliva and rolls it into a bolus, and then pushes it to the back of the mouth so that it can be swallowed (deglutition). The salivary glands produce saliva, which moistens and softens the bread so that it can be swallowed easily.\nChemical digestion: the saliva contains the enzyme salivary amylase (ptyalin), which acts on the cooked starch in the bread and converts part of it to maltose and dextrins. The bread has been baked, so its starch has already been gelatinised and softened, which is why amylase can begin to break it down in the mouth. The saliva also contains mucus, which lubricates the food and the lining of the mouth and the oesophagus.",
+        "markScheme": [
+          "Physical digestion, 3 marks: 1 mark for the teeth biting, tearing and grinding (chewing/mastication) the bread into smaller pieces; 1 mark for the tongue moving the food around the mouth and pushing it towards the throat to be swallowed; 1 mark for the salivary glands producing saliva (mucus) that moistens and softens the food so that it can be swallowed.",
+          "Chemical digestion, 3 marks: 1 mark for the enzyme salivary amylase (ptyalin) in the saliva; 1 mark for the food it acts on - the cooked starch in the bread; 1 mark for naming the products - maltose and dextrins.",
+          "Award the marks only for points that are actually described; simply writing 'the teeth chew the bread' earns 1 mark, not 3.",
+          "Total 6 marks. Use of Knowledge (UK)."
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "Describe TWO ways in which the water Betty drank with her lunch will assist in the digestion and absorption of the meal.",
+        "marks": 4,
+        "commandWords": [
+          "Describe"
+        ],
+        "modelAnswer": "1. Water is needed to make the digestive juices and to keep them flowing: the gastric, pancreatic and intestinal juices contain enzymes that break the food down, and enzymes can act only in solution, so water is needed for the chemical breakdown of the bread, the cheese and the orange.\n2. Nutrients dissolve in the water so that they can be absorbed through the wall of the small intestine into the blood and be carried to the cells, where they are used for energy, growth and repair.\n3. Water is mixed with mucus to lubricate the food and the lining of the digestive tract, so that the bolus moves easily along the oesophagus and the intestines and does not scratch them.\n4. Water is needed for the absorption of the water-soluble vitamins (for example the vitamin C in the orange and the B vitamins in the bread) and the minerals in the meal.",
+        "markScheme": [
+          "2 marks for EACH way fully described: 1 mark for naming the way in which water helps, 1 mark for the description of how it helps.",
+          "2 x 2 = 4 marks. Accept any two of: water is needed for the production of the digestive juices and enzymes, which act only in solution; nutrients dissolve in water for absorption and transport in the blood; mucus made with water lubricates the food and the lining of the digestive tract so that the food moves along it; water is needed for the absorption of the water-soluble vitamins and the minerals in the meal; water is the medium in which the chemical digestion of the meal takes place.",
+          "The second mark is for the explanation, not for a second example of a food.",
+          "Total 4 marks. Use of Knowledge (UK)."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fn-p2-03",
+    "type": "write",
+    "paper": 2,
+    "section": "Section 3 - Meal Planning, Preparation and Dining",
+    "title": "Structured: planning a two-course dinner menu and modifying it for special guests",
+    "topic": "fn-l4-3",
+    "commandWords": [
+      "Define",
+      "State",
+      "Plan",
+      "Explain"
+    ],
+    "marks": 16,
+    "suggestedMinutes": 25,
+    "source": "The Food and Nutrition class at a secondary school in Jamaica has been asked to prepare and serve a two-course dinner for 20 guests at the school's graduation ceremony. The dinner will be served at 7:00 p.m. in the school's food laboratory, and the class has $18 000 to spend on the food.\n\nAmong the guests are:\n- Mr Clarke, an 82-year-old man who has diabetes mellitus and hypertension and who wears dentures;\n- a married couple who are lacto-ovo vegetarians;\n- four students who are athletes in training.\n\nThe class must hand a written menu to the teacher before they shop for the food.",
+    "prompt": "Answer ALL parts of this question. This is one of SIX compulsory questions on Paper 02 (2 hours 30 minutes); each question is worth 16 marks.",
+    "planningHints": [
+      "Before you write, list the groups of guests in the source and one requirement for each: tender food for Mr Clarke's dentures, no sugar and no added salt for his diabetes and hypertension, no meat, fish or poultry for the vegetarians, and generous portions of energy and body-building foods for the athletes.",
+      "Write the menu AS a menu: the heading 'Main course' with the dishes under it, then 'Dessert' with the dish. A menu written as a paragraph loses the first mark.",
+      "Two courses means a main course and a dessert - do not plan three courses and run out of time.",
+      "For the 'explain' part use the pattern: the modification, then the reason why it suits that guest."
+    ],
+    "examinerTips": "This question carries 6 Knowledge and 10 Use of Knowledge marks (16 marks in all). The two definitions and the two reasons in (a) to (c) are the 6 Knowledge marks - keep them brief. In (d) the examiner is marking a menu and not an essay: write the courses and the dishes, then say which food groups the dishes come from. A menu that ignores the vegetarians, or offers a hard or bony dish to an 82-year-old guest who wears dentures, or a sweet dessert to the guest with diabetes, loses the relevant mark. In (e) each modification needs its reason (sugar raises the blood glucose, salt raises the blood pressure, a tender texture is needed for dentures) because the reason carries the second mark.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Define the term 'table appointments'.",
+        "marks": 2,
+        "commandWords": [
+          "Define"
+        ],
+        "modelAnswer": "Table appointments are the items used to set the table and to serve a meal: the crockery (plates, cups and saucers), the cutlery (knives, forks and spoons), the glassware, the table linen (cloth, runners and napkins) and the table decorations or centre-piece.",
+        "markScheme": [
+          "2 marks for a complete definition that names the items used to set and decorate a table for a meal (crockery, cutlery, glassware, linen and decorations) or that identifies them as the items used to set, serve and eat a meal.",
+          "1 mark for a partial definition, for example naming only one group of items, such as the plates and the cutlery.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Define the term 'à la carte' as it is used on a menu.",
+        "marks": 2,
+        "commandWords": [
+          "Define"
+        ],
+        "modelAnswer": "À la carte describes a menu on which each item is priced and ordered separately, so that the customer chooses each dish and pays for exactly what is ordered - unlike a table d'hote menu, on which a complete meal of fixed courses is sold at one price.",
+        "markScheme": [
+          "2 marks for a complete definition: each dish is priced and ordered separately (the customer chooses the individual items and pays for each of them).",
+          "1 mark for a partial definition, for example 'a list of dishes with prices' with no reference to the ordering or the paying for each item separately.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "State TWO reasons why the class should plan and write the menu before they buy the food.",
+        "marks": 2,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "1. So that they know exactly which foods, and how much of each, to buy: this prevents waste, allows them to compare prices and keeps them inside the $18 000 the class has to spend. 2. So that they can check that the menu suits the guests (Mr Clarke's diabetes, hypertension and dentures, the vegetarians and the athletes) and can be prepared with the equipment, the time and the help available in the food laboratory.",
+        "markScheme": [
+          "1 mark for each valid reason stated (maximum 2 marks).",
+          "Accept: to know exactly what and how much to buy; to keep inside the budget and avoid waste; to make sure the menu suits the guests and their special needs; to make sure the dishes can be prepared with the equipment, time and labour available; to ensure variety in colour, flavour, texture and nutrients; to make out the shopping list and the order of work.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Plan a nutritious TWO-COURSE dinner menu (main course and dessert) for these guests, using foods from at least THREE food groups. Name each course and each dish, and state the food group(s) from which the main dishes come.",
+        "marks": 6,
+        "commandWords": [
+          "Plan"
+        ],
+        "modelAnswer": "MENU - Graduation Dinner\nMAIN COURSE\n- Baked escovitch fish with rice and peas, steamed callaloo, sliced tomato and baked pumpkin, seasoned with lime, pepper and pimento and no salt (for the guests who eat fish).\n- Vegetarian main course: curried chick peas served with rice and peas, roasted breadfruit and steamed vegetables.\nDESSERT\n- Fruit salad of sliced mango, pawpaw (papaya) and orange with a little lime juice, served chilled and with no added sugar.\n\nFood groups used (at least three): food from animals - the fish; legumes - the peas in the rice and peas and the chick peas; staples - the rice, the pumpkin and the ground provisions; vegetables - the callaloo and the tomato; fruit - the mango, papaya and orange. The meal therefore supplies protein, carbohydrate (starch), vitamins A and C, minerals such as calcium and iron and dietary fibre, with little fat and no added sugar; the athletes are given a generous portion of the rice and peas for energy.",
+        "markScheme": [
+          "1 mark for the menu written in the correct format: the two courses named (main course and dessert) with the dishes set out under them in order.",
+          "1 mark for a main course that suits the guests named in the source: tender and easily chewed for the guest who wears dentures, no added salt and no added sugar for the guest with diabetes and hypertension, and a meat-free, fish-free main dish (for example peas, beans, lentils, soya or chick peas with a staple) for the lacto-ovo vegetarians.",
+          "1 mark for using and naming foods from at least THREE food groups (food from animals or legumes; staples; vegetables and/or fruit).",
+          "1 mark for a dessert that suits the guest with diabetes - fresh fruit, or a dish with little or no added sugar - rather than a sweet, heavily iced cake or pudding.",
+          "1 mark for stating the food group(s) from which the dishes come, correctly matched to the dishes named.",
+          "1 mark for a menu that is balanced overall: a good supply of protein, carbohydrate, vitamins, minerals and fibre, some fat, nothing that the guests must avoid (no meat or fish for the vegetarians, no salted or cured meats, no sweetened drinks or sweet desserts) and larger portions of energy foods for the athletes in training.",
+          "Total 6 marks. Use of Knowledge (UK)."
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "Explain TWO ways in which the dishes in your menu, or the way in which they are prepared, must be modified so that the meal suits Mr Clarke, who has diabetes mellitus and hypertension and who wears dentures.",
+        "marks": 4,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "1. No sugar and no sweetened dessert: I would leave the sugar out of the fruit salad, use fresh fruit instead of a sweet pudding or cake, and use ripe fruit and spices such as cinnamon, nutmeg and lime for sweetness, because sugar raises his blood glucose very quickly and makes his diabetes harder to control.\n2. Little or no salt and no salty or cured meat or fish: I would season the fish, the rice and peas and the vegetables with pepper, pimento, garlic, lime and herbs instead of salt, salt pork, salted fish or a seasoning salt, and avoid the tinned and packaged seasonings, because sodium raises the blood pressure and he already has hypertension.\n3. Fat reduced and changed: I would bake or steam the fish instead of frying it, trim the fat and remove the skin, and use little oil, to help him to lose weight and to lower his blood cholesterol.\n4. Texture modified for the dentures: I would steam or stew the vegetables until they are tender instead of serving them raw and crisp, flake the fish and remove every bone, leave out the hard nuts and seeds, and cut the fruit into small, soft pieces, because he must be able to chew and swallow the meal in comfort.\n5. Portion control and fibre: I would give a smaller portion of the rice and peas, a larger portion of the vegetables and the fish, and plenty of dietary fibre (peas, vegetables and whole grains), because the fibre slows the rise in his blood sugar and helps him to feel full.",
+        "markScheme": [
+          "2 marks for EACH modification fully explained: 1 mark for a correct modification, 1 mark for the reason that links it to diabetes mellitus, to hypertension or to the dentures.",
+          "2 x 2 = 4 marks. Accept any two of: omit the sugar and serve no sweetened foods or drinks; use little or no salt and avoid salty, cured and tinned foods; bake, grill or steam instead of frying and trim the fat and the skin; modify the texture - tender, flaked, boneless, soft foods for the dentures; reduce the staple portion and increase the vegetables; use herbs and spices for flavour instead of salt; include plenty of dietary fibre to help control the blood sugar; serve water instead of a sweetened drink.",
+          "A modification with no reason earns 1 mark only.",
+          "Total 4 marks. Use of Knowledge (UK)."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fn-p2-04",
+    "type": "write",
+    "paper": 2,
+    "section": "Section 4 - Food Science and Technology",
+    "title": "Structured: food spoilage, food-borne illness and the preservation of food",
+    "topic": "fn-l3-1",
+    "commandWords": [
+      "List",
+      "Distinguish",
+      "Describe",
+      "Suggest"
+    ],
+    "marks": 16,
+    "suggestedMinutes": 25,
+    "source": "On Friday afternoon the cook in a small restaurant in Mandeville, Jamaica, received a delivery of a large piece of beef, a carton of fresh milk, a bag of rice and a jar of mayonnaise. The refrigerator was full of drinks, so she left the beef on the counter in the warm kitchen overnight, and the carton of milk, once it was opened, stood beside the stove.\n\nOn Saturday morning the beef was dull and sticky, it smelt sour and a slimy film had formed on it; the milk smelt sour and had curdled in the carton. The cook then used the same unwashed knife and chopping board to cut up raw chicken and to prepare the salad that was served with the lunch.\n\nBy Saturday evening, six customers who had eaten the lunch had vomiting, stomach cramps and diarrhoea. Two of them were treated at the hospital and one was admitted.",
+    "prompt": "Answer ALL parts of this question. This is one of SIX compulsory questions on Paper 02 (2 hours 30 minutes); each question is worth 16 marks.",
+    "planningHints": [
+      "Write part (b) as two short paragraphs, one for each term: the word 'toxin' belongs in the first one and 'grows in the body' in the second.",
+      "For part (c), look again at the source: the full refrigerator, the warm counter, the overnight time, the moist food and the unwashed knife and board are all conditions you can name, and each one earns 2 marks.",
+      "In part (d) name methods that really preserve a piece of beef - refrigeration, freezing, salting, drying, smoking, canning - and then explain what each one does to the microorganisms.",
+      "There are about 25 minutes for this question, and (c) and (d) carry 10 of the 16 marks, so leave at least half of the time for them."
+    ],
+    "examinerTips": "This question carries 6 Knowledge and 10 Use of Knowledge marks (16 marks in all). Part (b) is worth 4 marks and needs both halves of each term: for food intoxication the toxin was produced in the food BEFORE it was eaten and it is the toxin that causes the illness; for food infection the microorganism itself is eaten and grows in the gastrointestinal tract. In (c) and (d) the second mark of every point is for the explanation: 'warmth' alone is half a point, while 'warmth - bacteria multiply fastest between about 5 C and 63 C and the beef was left there all night' is the full pair. Do not confuse preservation with preparation: part (d) asks how the method keeps the beef from spoiling.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "List TWO microorganisms that can contaminate food.",
+        "marks": 2,
+        "commandWords": [
+          "List"
+        ],
+        "modelAnswer": "Bacteria (for example Salmonella, Staphylococcus aureus, Escherichia coli and Clostridium botulinum) and moulds (for example Aspergillus and Penicillium). Yeasts and viruses (for example the norovirus) also contaminate food.",
+        "markScheme": [
+          "1 mark for each microorganism listed (maximum 2 marks).",
+          "Accept any two of: bacteria, moulds, yeasts, viruses - or a named example of any of these, such as Salmonella, Staphylococcus aureus or E. coli.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Distinguish between 'food intoxication' and 'food infection'.",
+        "marks": 4,
+        "commandWords": [
+          "Distinguish"
+        ],
+        "modelAnswer": "Food intoxication is an illness caused by a toxin (a poison) that the microorganism has already produced in the food before the food is eaten - it is the poison, and not the living microorganism, that makes the person ill. An example is the toxin of Staphylococcus aureus left in a warm meat or milk dish. Food infection is an illness caused by eating the microorganism itself: the pathogen is swallowed, passes into the gastrointestinal tract and grows and multiplies there, and it is that growth in the body which causes the illness after an incubation period. An example is Salmonella from raw or undercooked chicken, or from food contaminated by an unwashed knife and board.",
+        "markScheme": [
+          "Food intoxication, 2 marks: 1 mark for an illness caused by a toxin that has already been produced in the food by the microorganism before the food is eaten; 1 mark for stating that it is the toxin, and not the living microorganism, that causes the illness.",
+          "Food infection, 2 marks: 1 mark for an illness caused by eating the microorganism itself; 1 mark for stating that the pathogen grows and multiplies in the gastrointestinal tract, so it is the growth in the body that causes the illness (usually after an incubation period).",
+          "A description of only one of the two terms earns a maximum of 2 marks.",
+          "Total 4 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Describe THREE conditions that allowed the microorganisms on the beef and in the milk to multiply, and explain in each case how the condition helped the spoilage or the food poisoning to occur.",
+        "marks": 6,
+        "commandWords": [
+          "Describe",
+          "Explain"
+        ],
+        "modelAnswer": "1. Warmth: both foods were kept in the warm kitchen instead of in the refrigerator. Microorganisms grow fastest between about 5 C and 63 C (the danger zone), so leaving the beef on the counter overnight gave them hours at the ideal temperature in which to multiply; in a refrigerator at 4 C or below they multiply very slowly.\n2. Moisture: the beef and the milk are moist foods. Microorganisms need water to grow and to take in their food, so a moist, juicy food such as raw meat supports growth, while a dry food such as the uncooked rice does not spoil in the same way.\n3. Food and nutrients: the beef and the milk are rich in protein, sugar and minerals, which the microorganisms use as food, so these perishable, high-risk foods spoil quickly - much faster than the dry rice or the acid mayonnaise that was not left open.\n4. Time: the beef was left for more than 12 hours. Given warmth, moisture and food, the bacteria divide every 20 minutes or so, so a long time at room temperature is what turns a few bacteria into enough to spoil the food and to cause illness.\n5. Cleanliness and cross-contamination: the unwashed knife and chopping board carried the bacteria from the raw chicken into the salad, which was not cooked afterwards, so bacteria that had been on the chicken were eaten in the salad.",
+        "markScheme": [
+          "2 marks for EACH condition fully described: 1 mark for naming the condition, 1 mark for explaining how it allowed the microorganisms to multiply or how it led to spoilage or illness.",
+          "3 x 2 = 6 marks. Accept any three of: warmth and time in the danger zone (about 5 C to 63 C); moisture - microorganisms need water; food and nutrients - protein-rich and sugar-rich perishable foods; time - the food was left overnight; the acidity/pH of the food; oxygen, or the absence of oxygen in a sealed container; poor hygiene and cross-contamination from the unwashed knife and board, using the same equipment for raw chicken and for a ready-to-eat salad; a dirty kitchen or uncovered food exposed to flies and dust.",
+          "Naming a condition without the explanation earns 1 mark only.",
+          "Total 6 marks. Use of Knowledge (UK)."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Suggest TWO suitable methods of preserving the beef, and explain in each case how the method prevents spoilage.",
+        "marks": 4,
+        "commandWords": [
+          "Suggest",
+          "Explain"
+        ],
+        "modelAnswer": "1. Refrigeration or freezing: the beef should be stored in a refrigerator at 4 C or below (or frozen at -18 C). The low temperature slows down the growth and the reproduction of the microorganisms and the action of the enzymes in the meat, so the beef keeps for several days instead of spoiling overnight.\n2. Salt curing, with drying: the beef may be rubbed with salt and dried, as in corned beef or salted beef. The salt draws water out of the microorganism cells by osmosis, so they cannot grow, and the food keeps for a long time without refrigeration.\n3. Canning or bottling with heat: the beef is cooked, packed into clean cans or jars, sealed and heated to a high temperature. The heat destroys the microorganisms and the enzymes, and the airtight seal prevents new microorganisms from entering, so the meat can be stored for months.\n4. Smoking with drying: the smoke dries the surface of the meat and deposits chemicals that slow the growth of the microorganisms, so the meat keeps longer and takes on a smoked flavour.",
+        "markScheme": [
+          "2 marks for EACH method: 1 mark for naming an appropriate method of preserving meat, 1 mark for the explanation of how the method prevents spoilage.",
+          "2 x 2 = 4 marks. Accept any two of: refrigeration or freezing (the low temperature slows microbial growth and enzyme action); salting or curing (salt draws water out of the microorganisms by osmosis); drying or dehydration (removing the water that the microorganisms need); smoking (drying plus the chemicals in the smoke); canning or bottling (the heat destroys the microorganisms and enzymes and the airtight seal keeps new ones out); pickling in an acid (the low pH stops growth).",
+          "A method that suits the beef but with no explanation of how it works earns 1 mark only.",
+          "Total 4 marks. Use of Knowledge (UK)."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fn-p2-05",
+    "type": "write",
+    "paper": 2,
+    "section": "Sections 5 and 6 - Kitchen Design and Equipment Management; Consumerism and Purchasing of Food",
+    "title": "Structured: remodelling a kitchen and buying the equipment",
+    "topic": "fn-l5-1",
+    "commandWords": [
+      "Define",
+      "State",
+      "List",
+      "Explain",
+      "Discuss"
+    ],
+    "marks": 16,
+    "suggestedMinutes": 25,
+    "source": "The Henry family is remodelling the kitchen of their 30-year-old house in Portmore, Jamaica. The kitchen is small and narrow, with one door and one small window. The sink is at one end of the room, the gas cooker is at the other end, and the refrigerator stands in the dining room. Mrs Henry says the family 'walks miles' between them while she prepares a meal, that the room is hot and poorly lit, and that food is stored on the floor because there is nowhere else to put it. The floor is covered with smooth glazed tiles that have become slippery.\n\nThe family has saved $250 000 towards a new refrigerator and a gas cooker. Mrs Henry keeps the receipt and the guarantee for the refrigerator they bought three years ago, which has just stopped working.",
+    "prompt": "Answer ALL parts of this question. This is one of SIX compulsory questions on Paper 02 (2 hours 30 minutes); each question is worth 16 marks.",
+    "planningHints": [
+      "The source describes the faults in the kitchen - use them. 'Food stored on the floor' is about storage, 'slippery glazed tiles' is about the floor material, 'hot and poorly lit' is about ventilation and lighting, and the widely separated sink, cooker and refrigerator is about the layout and the work triangle.",
+      "Part (e) is about BUYING, not designing: keep every point on the purchase - quality, size and suitability, service and the guarantee, running costs, advice and price.",
+      "Write each point in (d) and (e) as two sentences: the first names the factor, the second says what it does to the plan or how it gets her value for money. That is exactly how the two marks are awarded.",
+      "Budget about 25 minutes for this question; its discuss part and the next question's explain parts are the longest on the paper."
+    ],
+    "examinerTips": "This question carries 6 Knowledge and 10 Use of Knowledge marks (16 marks in all) and draws on two syllabus sections, Sections 5 and 6, because six questions cannot cover all seven sections on their own. Parts (a) to (c) are recall: the work triangle earns both marks only when the three work centres AND the point about short distances or through traffic are given, and the thermostat and the oven fan must be explained by what they do to the oven. Parts (d) and (e) are applied to this family: the slippery floor, the food on the floor, the heat and the poor light, the old refrigerator with its receipt, and the $250 000 are all clues in the source.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Define the term 'work triangle'.",
+        "marks": 2,
+        "commandWords": [
+          "Define"
+        ],
+        "modelAnswer": "The work triangle is formed by the three main work centres in a kitchen - the sink (cleaning and water), the cooker or stove (cooking and heating) and the refrigerator (cold storage) - together with the imaginary lines that join them. The three centres should be close enough that the cook takes only a few steps between them, and the triangle should not be crossed by the path of people walking through the kitchen.",
+        "markScheme": [
+          "2 marks for a complete definition: the three main work centres (the sink, the cooker and the refrigerator) AND the imaginary lines joining them, with the point that the distances between them should be short or that through traffic should not cross the triangle.",
+          "1 mark for a partial definition, for example naming the sink, the cooker and the refrigerator with no reference to the distances between them or to the triangle.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "State the purpose of EACH of the following features of a gas cooker: (i) the thermostat (ii) the fan in the oven.",
+        "marks": 2,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "(i) The thermostat controls the temperature of the oven and keeps it constant at the temperature that has been set, so that the food cooks evenly and does not burn. (ii) The fan circulates the hot air evenly around the oven, so that the food cooks more quickly and more evenly, and bakes on any shelf without turning the tin.",
+        "markScheme": [
+          "1 mark for each correct purpose: (i) the thermostat controls, regulates and maintains the oven temperature at the setting chosen; (ii) the fan circulates the hot air evenly around the oven so that the food cooks quickly and evenly.",
+          "2 x 1 = 2 marks.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "List TWO large pieces of kitchen equipment, other than the refrigerator and the gas cooker, that the family may need to buy for the remodelled kitchen.",
+        "marks": 2,
+        "commandWords": [
+          "List"
+        ],
+        "modelAnswer": "A freezer (chest or upright) and a microwave oven. Also accepted: a dishwasher, a washing machine, a sink unit or an electric water heater.",
+        "markScheme": [
+          "1 mark for each large piece of equipment listed (maximum 2 marks).",
+          "Accept any two of: freezer, microwave oven, dishwasher, washing machine, sink or sink unit, electric water heater.",
+          "Do not accept small equipment or utensils such as a blender, a toaster or a knife.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Explain TWO factors that the Henry family should consider when planning to remodel the kitchen, and say how each factor would affect the plan.",
+        "marks": 4,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "1. The layout and the work triangle: the sink, the cooker and the refrigerator are widely separated and the room is narrow, so the plan should place the three work centres at the corners of a compact triangle in the order in which the work is done (store, wash, prepare, cook); this means fewer steps and less time and energy wasted while a meal is prepared.\n2. The material of the floor and the work surfaces: the smooth glazed tiles become slippery, so the plan should use a non-slip, easy-to-clean floor covering and smooth, washable work surfaces - this prevents falls when something is spilled and makes cleaning quicker and more hygienic.\n3. Ventilation, lighting and heat: the kitchen has only one small window and is hot, so the plan should provide an extractor fan or a hood over the cooker and lighting above the work surfaces, so that smoke, steam and heat can escape and the cook can see what is being cut.\n4. Storage: the food is stored on the floor, so the plan must include cupboards, shelves and a correctly sized refrigerator placed near the work surfaces, so that food is stored hygienically off the floor and the work area is kept free.\n5. The structure of the house and the money available: the position of the doors, the window, the water pipes, the drain and the electrical points, together with the $250 000, will limit what can be moved, so the sink should stay near the existing pipes and drain and the appliances bought must be ones the family can afford.",
+        "markScheme": [
+          "2 marks for EACH factor fully explained: 1 mark for a factor that should be considered, 1 mark for explaining how it would affect the plan or the kitchen.",
+          "2 x 2 = 4 marks. Accept any two of: the layout and the work triangle or the sequence of work; the floor and work-surface materials (non-slip, easy to clean); ventilation, lighting and temperature (extractor fan, window, lighting over the work surfaces); storage space; the size, shape and existing structure of the room (doors, window, plumbing and electrical points) and the money available; the number and the ages of the people who use the kitchen and the equipment they need.",
+          "A factor that is simply named earns 1 mark only.",
+          "Total 4 marks. Use of Knowledge (UK)."
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "Discuss THREE factors that Mrs Henry should consider when purchasing the new refrigerator and gas cooker so that she gets the best value for money.",
+        "marks": 6,
+        "commandWords": [
+          "Discuss"
+        ],
+        "modelAnswer": "1. Compare the types, makes and prices, and check the quality of the materials and the finish: an appliance that is cheap and breaks down within a year is not value for money, so she should compare several makes and models (and read consumer magazines) before she decides.\n2. Suitability for the family's needs and for the space available: the refrigerator must be large enough for a family that cooks at home and small enough to fit the planned space in the remodelled kitchen, and the cooker must have the number of burners, the oven size and the fuel (gas or electricity) that the family uses.\n3. After-sales service, spare parts and the guarantee: she should buy from a dealer who demonstrates the appliance, gives a written guarantee and provides servicing and spare parts, and she should keep the receipt and the guarantee - as she has done for the refrigerator that has now stopped working - so that she can ask for a repair, a replacement or redress.\n4. Running costs and energy efficiency: she should compare the energy consumption of the appliances, because an energy-efficient refrigerator costs less to run on the electricity bill each month, and check that the appliance matches the gas or electricity supply in the house.\n5. Reading the information and asking for advice: she should read the instruction leaflet and the labels on the appliance carefully, ask the salesperson for a demonstration of the controls, and ask people who own the same model how it has performed, rather than being hurried into a purchase.\n6. Price, the method of payment and the old appliance: she should compare the cash price with hire-purchase terms and the interest charged, ask whether the old refrigerator can be traded in, and keep within the $250 000 that the family has saved.",
+        "markScheme": [
+          "2 marks for EACH factor fully discussed: 1 mark for naming a factor to consider when purchasing kitchen equipment, 1 mark for explaining how it helps her to get the best value for money.",
+          "3 x 2 = 6 marks. Accept any three of: comparing types, makes, prices and quality before buying; suitability for the family's needs and for the space available (size, capacity, fuel); after-sales service, the availability of spare parts and the guarantee or warranty; running costs and energy efficiency; asking for a demonstration and reading the instruction leaflet, the label and the guarantee; asking the opinions of people who have bought a similar item or consulting consumer magazines; comparing the cash price with hire-purchase terms and the interest; not being pressured by the salesperson; keeping the receipt and the sales agreement so that redress is possible if the appliance malfunctions; buying from a reputable dealer.",
+          "A factor that is simply named earns 1 mark only; the second mark is for the link to value for money.",
+          "Total 6 marks. Use of Knowledge (UK)."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fn-p2-06",
+    "type": "write",
+    "paper": 2,
+    "section": "Section 7 - Food Management, Preparation and Service",
+    "title": "Structured: preparation skills, sensory evaluation and the serving of dishes",
+    "topic": "fn-l2-3",
+    "commandWords": [
+      "Define",
+      "State",
+      "Discuss",
+      "Describe"
+    ],
+    "marks": 16,
+    "suggestedMinutes": 25,
+    "source": "Deryk's Food and Nutrition class prepared and served lunch for a group of teachers at their school in Jamaica. The menu was baked fish, rice and peas, a tossed green salad and a fruit punch. One of the teachers, Mr Grant, has hypertension, so the class was asked to prepare his portion of fish with no added salt.\n\nBefore the meal was served, the class carried out a sensory evaluation of the baked fish in the food laboratory, using score cards, and recorded their findings for their portfolios. Deryk then arranged the serving table: the fish on a platter, the salad in a glass bowl, and beside the plates a container of lime twists and a packet of bread. The teacher reminded the class that the appearance of the food and the way it is served form part of the marks, and then asked them to explain why some foods are cooked at all.",
+    "prompt": "Answer ALL parts of this question. This is one of SIX compulsory questions on Paper 02 (2 hours 30 minutes); each question is worth 16 marks.",
+    "planningHints": [
+      "Write (a) and (b) as one-sentence definitions and move on: they are only 2 marks each, while (e) and (f) carry 8 of the 16 marks in this question.",
+      "In part (e) use the pattern 'observation - then what it shows': 'the fish tastes very salty, which shows that too much salt was used and that the dish would raise Mr Grant's blood pressure'.",
+      "For 'reasons for cooking food' think in pairs: one reason about safety (destroying microorganisms) and one about eating quality (flavour, texture, digestibility).",
+      "In part (f) the question names the foods, so write only about bread and limes: name the food, describe how it is prepared and say where it is placed on the dish."
+    ],
+    "examinerTips": "This question carries 6 Knowledge and 10 Use of Knowledge marks (16 marks in all). The definitions in (a) and (b) each need their distinguishing detail for the second mark: 'bake blind' means baking pastry with no filling in it, and a batter is beaten to a pouring consistency. Parts (d) to (f) are the applied marks: in (e) the observation alone earns 1 mark and the discussion - what it shows about the preparation, or whether the fish is suitable for the teacher with hypertension - earns the second. In (f) answer only on bread and limes: a correct technique that is not applied to one of the named foods earns nothing.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Define the term 'bake blind'.",
+        "marks": 2,
+        "commandWords": [
+          "Define"
+        ],
+        "modelAnswer": "To bake blind is to bake a pastry case (a flan or pie shell) with no filling in it, so that the pastry is cooked and firm before a filling that needs less cooking is added. The pastry is lined and pricked, then covered with greaseproof paper and dried beans or rice to keep its shape while it bakes.",
+        "markScheme": [
+          "2 marks for a complete definition: the baking of a pastry case WITHOUT a filling in it (the purpose - to cook and firm the pastry before the filling is added - is accepted for the second mark).",
+          "1 mark for a partial definition, for example 'baking pastry' or 'baking a pie shell' with no reference to the absence of a filling.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Define the term 'batter'.",
+        "marks": 2,
+        "commandWords": [
+          "Define"
+        ],
+        "modelAnswer": "A batter is a mixture of flour, a liquid (milk or water) and usually eggs, beaten together to a smooth, pouring consistency - thinner than a dough - which is used for pancakes, waffles and fritters, in cakes, and for coating foods before frying.",
+        "markScheme": [
+          "2 marks for a complete definition: a mixture of flour, a liquid (and usually eggs) beaten together to a pouring consistency, or with a correct named use such as pancakes, fritters or coating food for frying.",
+          "1 mark for a partial definition, for example naming the flour and the liquid but not that they are beaten to a pouring consistency.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "State TWO reasons for cooking food.",
+        "marks": 2,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "1. To make the food safe to eat: cooking destroys the harmful microorganisms (bacteria, moulds and yeasts) and parasites that may be in it. 2. To improve the eating quality: cooking softens and tenderises the food, develops its flavour and aroma, improves its colour and appearance, and makes it easier to chew and to digest. Other reasons are to preserve the food for longer, to provide variety in the diet, and to make some nutrients more available to the body.",
+        "markScheme": [
+          "1 mark for each valid reason stated (maximum 2 marks).",
+          "Accept any two of: to destroy harmful microorganisms and parasites and so make the food safe; to soften and tenderise the food and make it easier to chew, swallow and digest; to develop and improve the flavour and aroma; to improve the colour and appearance; to preserve the food by destroying spoilage organisms and enzymes; to provide variety in the diet; to make some nutrients more available.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "State TWO factors that the class could evaluate during the sensory evaluation of the baked fish.",
+        "marks": 2,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "Appearance (colour, shape and presentation on the plate) and flavour (taste). Texture or tenderness, aroma (odour), consistency, temperature at serving and portion size could also be evaluated.",
+        "markScheme": [
+          "1 mark for each valid factor (maximum 2 marks).",
+          "Accept any two of: appearance (sight, colour, presentation), flavour (taste), texture or tenderness (touch, including in the mouth), aroma or odour (smell), consistency, temperature, portion size, moistness or juiciness.",
+          "Total 2 marks. Use of Knowledge (UK)."
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "For EACH of the factors you stated in (d), discuss ONE observation that the class may record for the baked fish that was prepared for the teacher with hypertension.",
+        "marks": 4,
+        "commandWords": [
+          "Discuss"
+        ],
+        "modelAnswer": "1. Appearance: the fish may look dark brown and dry, which shows that it was overcooked or kept too long under the heat, or pale and translucent, which shows that it was undercooked; a correctly baked fish for this dish should look opaque, firm and moist, with the lime and the seasoning giving a good colour.\n2. Flavour: if the fish tastes very salty the class should record that too much salt was used, and that the sodium would raise Mr Grant's blood pressure still further, so the dish is not suitable for him; if it tastes bland or lightly seasoned, the class should record that the salt was successfully left out and that lime, pepper, pimento and herbs were used instead.\n3. Texture or tenderness: if the fish is tough, dry and stringy, or if it breaks into dry flakes, it has been overcooked and the moisture has been driven off; a fish that flakes easily and is moist, and that is free of bones, is correctly cooked and easier for the teacher to eat.\n4. Aroma or odour: a stale, strongly 'fishy' or unpleasant smell would show that the fish was not fresh or had not been stored properly; a fresh, pleasant smell together with the aroma of the seasonings shows that the fish was fresh and correctly prepared.",
+        "markScheme": [
+          "2 marks for EACH observation discussed: 1 mark for an observation that the class could record, 1 mark for discussing what it shows about the food, its preparation or its suitability for the teacher with hypertension.",
+          "2 x 2 = 4 marks. Accept any two of: appearance - pale and translucent (undercooked) or dark and dry (overcooked), and what that shows; flavour - too salty (unsuitable for hypertension, because sodium raises the blood pressure) or bland and seasoned with lime and herbs instead of salt; texture - moist and flaking easily (correctly cooked) or tough, dry and breaking into flakes (overcooked); aroma - a fresh, pleasant smell, or a stale, strongly fishy smell showing that the fish was not fresh or was badly stored.",
+          "A bare observation such as 'it looked dark' earns 1 mark; the second mark is for the discussion of what it shows.",
+          "Total 4 marks. Use of Knowledge (UK)."
+        ]
+      },
+      {
+        "label": "(f)",
+        "prompt": "Describe how EACH of the following may be used to enhance the appearance of the dishes: (i) bread (ii) limes.",
+        "marks": 4,
+        "commandWords": [
+          "Describe"
+        ],
+        "modelAnswer": "(i) Bread: it may be cut into shapes - triangles, squares, rounds or fingers - and toasted or lightly fried as croutons to garnish the salad or the soup; it may be made into small open sandwiches or canapes, or into melba toast, and used as a border or a base for the fish on the platter; dried bread may be made into breadcrumbs, mixed with herbs and used to coat the fish so that it bakes to an even golden brown.\n(ii) Limes: thin slices may be twisted into curls or cut into butterflies and placed on the fish or the salad for a contrast in colour and shape; the limes may be cut into wedges to be squeezed over the fish at the table; the grated rind (zest) may be sprinkled over the fish or floated on the fruit punch for colour and flavour; and a half-lime may be hollowed and used as a small container for a sauce or a salad dressing.",
+        "markScheme": [
+          "2 marks for EACH named food: 1 mark for a correct and relevant way of using it to enhance appearance, 1 mark for the description of how it is prepared or where it is used on the dish.",
+          "2 x 2 = 4 marks.",
+          "Bread: cut into triangles, squares, rounds, fingers or cubes; toasted or lightly fried as croutons; made into small sandwiches, a border or a base for the fish; made into crumbs to coat the fish and brown it evenly; used as a crisp contrast to a soft dish.",
+          "Limes: thin slices twisted into curls or butterflies as a garnish; wedges to be squeezed over the fish; grated rind (zest) as a colour and flavour accent; a hollowed half-lime used as a container; the juice sprinkled over fruit to keep it from browning.",
+          "No marks for a food that is not named in the question, and only 1 mark where a technique is named without saying how it is used on the dish.",
+          "Total 4 marks. Use of Knowledge (UK)."
+        ]
+      }
+    ]
+  }
+]
