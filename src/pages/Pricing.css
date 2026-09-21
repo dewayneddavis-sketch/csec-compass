@@ -28,6 +28,16 @@
 .pricing-school-header{text-align:center;margin-bottom:1.75rem}
 .pricing-school-header h2{font-size:1.5rem;font-weight:800;color:#111827;margin-bottom:.5rem}
 .pricing-school-header p{color:#6b7280;font-size:.95rem;max-width:640px;margin:0 auto}
+/* Whose licence is this and who runs it — asked once, above the three tiers
+   (owner direction 2026-09-20: the school names itself and its own admin). */
+.pricing-school-form{max-width:720px;margin:0 auto 1.75rem;padding:1.1rem 1.25rem;background:#f8fafc;border:1px solid #e2e8f0;border-radius:14px;text-align:left}
+.pricing-school-form-title{font-size:1rem;font-weight:700;color:#111827;margin:0 0 .3rem}
+.pricing-school-form-hint{color:#6b7280;font-size:.85rem;line-height:1.5;margin:0}
+.pricing-school-form-hint code{padding:0 .25rem;background:#eef2f7;border-radius:4px;color:#0f172a}
+.pricing-school-form-fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:.75rem;margin:.85rem 0}
+.pricing-field{display:flex;flex-direction:column;gap:.3rem;font-size:.85rem;font-weight:600;color:#374151}
+.pricing-input{width:100%;padding:.6rem .75rem;border:2px solid #e5e7eb;border-radius:10px;font-family:inherit;font-size:.95rem;font-weight:400;color:#111827;background:#fff;transition:border-color .2s}
+.pricing-input:focus{outline:none;border-color:#2563eb}
 .pricing-school-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem;align-items:start}
 .pricing-card.tier{padding:1.5rem}
 .pricing-card.tier .pricing-name{font-size:1.1rem}

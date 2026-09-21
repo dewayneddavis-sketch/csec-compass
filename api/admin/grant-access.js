@@ -51,8 +51,11 @@ const ACCESS_WINDOW_MS = 365 * 24 * 60 * 60 * 1000;
 // anything but the caller's own `school_admins` row.
 //
 //   OWNER_ACTIONS       — the platform owner (OWNER_EMAILS). Grant/revoke
-//                         access, every teacher link, and creating schools +
-//                         their designated admins.
+//                         access, every teacher link, and the school actions
+//                         below. Schools name themselves (and their own admin)
+//                         at licence purchase, so these are the owner's global
+//                         OVERSIGHT and correction path — a window onto every
+//                         school, not the gatekeeper that creates them.
 //   SCHOOL_SCOPED_ACTIONS — the school's own designated admin. Each one is
 //                         locked to the single school named by the caller's
 //                         school_admins row; a schoolId in the body is ignored.
@@ -112,15 +115,41 @@ async function removeSchoolMember(supabase, schoolId, email) {
   return { removedLinks: (asTeacher.data?.length || 0) + (asStudent.data?.length || 0) };
 }
 
+// Same column-tolerance as api/stripe/webhook.js and api/purchases/list.js: a
+// statement naming a column the live table does not have is a schema that is
+// older than this file, not a broken request. 42703 = undefined_column;
+// PGRST204 = unknown column in the schema cache (what a write returns).
+function isUnknownColumnError(err) {
+  if (!err) return false;
+  if (err.code === "42703" || err.code === "PGRST204") return true;
+  const message = String(err.message || "");
+  return /column .* does not exist/i.test(message) || /Could not find the '.*' column/i.test(message);
+}
+
 // Every school, oldest name-order first. One query, one shape, shared by the
 // owner's school actions and the owner override below, so a school is always
 // resolved the same way — by id, else by exact name (case-insensitive).
+//
+// The licence columns are newer than the table itself (schools now provision
+// themselves at purchase — see api/stripe/webhook.js). A database that predates
+// them still lists every school, with the licence unknown rather than an error:
+// the owner's oversight view must never be the thing that breaks.
 async function loadSchools(supabase) {
-  const { data, error } = await supabase
+  let { data, error } = await supabase
     .from("schools")
-    .select("id,name,created_at")
+    .select("id,name,created_at,license_tier,seats")
     .order("name", { ascending: true })
     .limit(500);
+  if (error && isUnknownColumnError(error)) {
+    console.warn(
+      "API /api/admin/grant-access: schools has no license_tier/seats columns — listing schools without their licence. Apply supabase/schema.sql."
+    );
+    ({ data, error } = await supabase
+      .from("schools")
+      .select("id,name,created_at")
+      .order("name", { ascending: true })
+      .limit(500));
+  }
   if (error) return { error };
   return { schools: data || [] };
 }
@@ -786,8 +815,13 @@ export default async function handler(req, res) {
 
     // ---------------------------------------------------------------- SCHOOLS
     // Owner side: create a school, designate ONE admin for it, and seed or fix
-    // its roster. The school's own admin does not call these — they use the
-    // school-scoped actions further down, which are locked to their own school.
+    // its roster. A school normally creates ITSELF and names its own admin when
+    // it buys a licence (api/stripe/webhook.js provisions public.schools /
+    // school_admins / school_members from the checkout metadata) — so these
+    // actions are the owner's global oversight and correction path, and they
+    // list every school, self-provisioned ones included. The school's own admin
+    // does not call these — they use the school-scoped actions further down,
+    // which are locked to their own school.
     //
     //   { action: "school-list" }                        -> schools + admins + roster
     //   { action: "school-create", name, adminEmail? }    -> new school (idempotent by name)
@@ -850,6 +884,15 @@ export default async function handler(req, res) {
           teachers: ofSchool(s.id, "teacher"),
           students: ofSchool(s.id, "student"),
           linkCount: (links || []).filter((l) => l.school_id === s.id).length,
+          // What this school bought, as recorded by the webhook that sold it
+          // (schools name themselves at purchase — api/stripe/webhook.js). Null
+          // for a school created here by hand, or on a database that predates the
+          // columns: the card shows that as unknown rather than guessing.
+          licenseTier: s.license_tier || null,
+          seats:
+            s.seats === null || s.seats === undefined || !Number.isFinite(Number(s.seats))
+              ? null
+              : Number(s.seats),
         }));
 
         return res.status(200).json({

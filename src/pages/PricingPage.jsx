@@ -49,6 +49,14 @@ const SCHOOL_LICENSES = [
   { priceType: "school-license-150", seats: 150, price: 2250, perStudent: 15 },
 ];
 
+// A school licence is bought by the school, which names itself and the person
+// who will run its console (owner direction 2026-09-20). Both travel with the
+// checkout so the school is set up the moment the payment lands — nobody has to
+// create it by hand. The server re-validates both (this is only a courtesy
+// check so the buyer is not bounced to Stripe with a field missing).
+const EMAIL_RE = /^[a-z0-9._%+-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)+$/i;
+const MAX_SCHOOL_NAME = 120;
+
 export default function PricingPage() {
   const { user } = useAuth();
   const navigate = useNavigate();
@@ -62,6 +70,10 @@ export default function PricingPage() {
   // Start from the full static list so the dropdown is never empty or partial,
   // then replace it with the catalog (the same 23 subjects) when it arrives.
   const [subjectOptions, setSubjectOptions] = useState(FALLBACK_SUBJECT_OPTIONS);
+  // Who the licence belongs to and who runs its console — asked once, above the
+  // three tiers, because every tier needs the same two answers.
+  const [schoolName, setSchoolName] = useState("");
+  const [adminEmail, setAdminEmail] = useState("");
 
   useEffect(() => {
     let cancelled = false;
@@ -93,6 +105,30 @@ export default function PricingPage() {
       setMessage("Please select a subject first.");
       return;
     }
+    // A school licence needs the school and its admin before we send the buyer
+    // to Stripe — that is what lets the school set itself up with no one in the
+    // middle. The server refuses a school tier without them, so this check keeps
+    // the buyer from losing their place to a round trip.
+    let school = null;
+    if (SCHOOL_LICENSES.some((tier) => tier.priceType === planId)) {
+      const name = schoolName.trim().replace(/\s+/g, " ");
+      const admin = adminEmail.trim().toLowerCase();
+      if (!name) {
+        setMessage("Enter your school's name above — the licence is registered to that school.");
+        return;
+      }
+      if (name.length > MAX_SCHOOL_NAME) {
+        setMessage(`School name is too long (max ${MAX_SCHOOL_NAME} characters).`);
+        return;
+      }
+      if (!EMAIL_RE.test(admin)) {
+        setMessage(
+          "Enter the email of the person who will run your school's account (for example principal@school.edu.jm)."
+        );
+        return;
+      }
+      school = { name, adminEmail: admin };
+    }
     setBusy(planId);
     setMessage("");
     try {
@@ -105,6 +141,8 @@ export default function PricingPage() {
           userId: user.id,
           successUrl: window.location.origin + "/account",
           cancelUrl: window.location.origin + "/pricing",
+          schoolName: school ? school.name : null,
+          adminEmail: school ? school.adminEmail : null,
         }),
       });
       const data = await res.json();
@@ -174,6 +212,45 @@ export default function PricingPage() {
             exams and end-of-course knowledge checks.
           </p>
         </div>
+
+        {/* Asked once, for whichever tier is bought. These two answers are what
+            set the school up: the payment creates the school and hands its
+            console to this person, so nothing waits on us. */}
+        <div className="pricing-school-form">
+          <h3 className="pricing-school-form-title">Your school</h3>
+          <p className="pricing-school-form-hint">
+            Tell us whose licence this is and who will run it. The account is ready as soon as the
+            payment goes through — classes, teachers and students are yours to arrange from there.
+          </p>
+          <div className="pricing-school-form-fields">
+            <label className="pricing-field">
+              <span>School name</span>
+              <input
+                className="pricing-input"
+                type="text"
+                value={schoolName}
+                maxLength={MAX_SCHOOL_NAME}
+                placeholder="e.g. Wolmer's Boys' School"
+                onChange={(e) => setSchoolName(e.target.value)}
+              />
+            </label>
+            <label className="pricing-field">
+              <span>Who should run this school&rsquo;s account?</span>
+              <input
+                className="pricing-input"
+                type="email"
+                value={adminEmail}
+                placeholder="principal@school.edu.jm"
+                onChange={(e) => setAdminEmail(e.target.value)}
+              />
+            </label>
+          </div>
+          <p className="pricing-school-form-hint">
+            That person signs in at <code>/school</code> with their own account to add teachers,
+            students and classes — and sees only this school, never another.
+          </p>
+        </div>
+
         <div className="pricing-school-grid">
           {SCHOOL_LICENSES.map((tier) => (
             <div key={tier.priceType} className="pricing-card tier">

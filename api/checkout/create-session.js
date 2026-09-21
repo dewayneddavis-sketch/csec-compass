@@ -53,10 +53,30 @@ const PRICE_IDS = {
 
 const PRICE_TYPES = ["subject", "bundle", ...Object.keys(SCHOOL_LICENSES)];
 
+// A school licence is bought BY the school, which names itself and the person
+// who will run its console (owner direction 2026-09-20: "whichever school buys
+// the licence, at that time that school will select its own school admin").
+// Both values ride along in the checkout metadata; api/stripe/webhook.js is the
+// other half of this contract and reads exactly these two keys to provision
+// public.schools / school_admins / school_members after payment.
+const MAX_SCHOOL_NAME = 120;
+// Deliberately strict, and the same rule as api/admin/grant-access.js (each
+// api/*.js file is self-contained, so the pattern is repeated rather than
+// imported). A malformed address must never become a school's admin.
+const EMAIL_RE = /^[a-z0-9._%+-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)+$/;
+
+function cleanSchoolName(value) {
+  return String(value ?? "").trim().replace(/\s+/g, " ");
+}
+
+function cleanEmail(value) {
+  return String(value ?? "").trim().toLowerCase();
+}
+
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).json({ error: "Method not allowed" });
 
-  const { priceType, subjectId, successUrl, cancelUrl, userId } = req.body || {};
+  const { priceType, subjectId, successUrl, cancelUrl, userId, schoolName, adminEmail } = req.body || {};
   if (!priceType || !PRICE_TYPES.includes(priceType)) {
     return res.status(400).json({
       error: "Invalid priceType. Use 'subject', 'bundle' or a school-license tier (" +
@@ -67,12 +87,37 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: "Missing userId. Sign in before purchasing." });
   }
 
+  // Only a school licence carries a school: a subject or bundle purchase must
+  // keep working exactly as before, whatever else the body contains.
+  const license = SCHOOL_LICENSES[priceType];
+  let school = null;
+  if (license) {
+    const name = cleanSchoolName(schoolName);
+    const admin = cleanEmail(adminEmail);
+    if (!name) {
+      return res.status(400).json({
+        error: "Enter your school's name — the licence and its console are registered to that school.",
+      });
+    }
+    if (name.length > MAX_SCHOOL_NAME) {
+      return res.status(400).json({
+        error: `School name is too long (max ${MAX_SCHOOL_NAME} characters).`,
+      });
+    }
+    if (!admin || admin.length > 254 || !EMAIL_RE.test(admin)) {
+      return res.status(400).json({
+        error:
+          "Enter the email of the person who will run your school's account (for example principal@school.edu.jm).",
+      });
+    }
+    school = { name, adminEmail: admin };
+  }
+
   const stripe = getStripe();
   if (!stripe) return res.status(500).json({ error: "Stripe not configured" });
 
   try {
     const priceId = PRICE_IDS[priceType];
-    const license = SCHOOL_LICENSES[priceType];
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       line_items: [{ price: priceId, quantity: 1 }],
@@ -86,6 +131,11 @@ export default async function handler(req, res) {
         // Seats for a school-license tier ("" for subject/bundle) so the
         // webhook row is self-describing even if the tier list changes.
         seats: license ? String(license.seats) : "",
+        // Which school bought this licence, and who runs its console. Always
+        // present (empty for subject/bundle — Stripe metadata values are
+        // strings) so the webhook can tell "no school named" from "key missing".
+        school_name: school ? school.name : "",
+        admin_email: school ? school.adminEmail : "",
       },
     });
 

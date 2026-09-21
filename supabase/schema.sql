@@ -215,11 +215,14 @@ create policy "teacher_students: no direct client access"
 -- the platform owner. These three tables let ONE designated person at the
 -- school keep their own roster and links in order, inside one hard boundary.
 --
---   public.schools        one row per school (name).
---   public.school_admins  email -> school. Created by the OWNER in the admin
---                         screen. This table is the only source of "which
---                         school does this caller administer", so a request
---                         body can never name another school.
+--   public.schools        one row per school (name + the licence it bought).
+--   public.school_admins  email -> school. A school names its own admin when it
+--                         buys a licence (api/stripe/webhook.js provisions the
+--                         row then); the OWNER can also create/name one in the
+--                         admin screen, which stays the oversight + correction
+--                         path. This table is the only source of "which school
+--                         does this caller administer", so a request body can
+--                         never name another school.
 --   public.school_members email -> school, role 'teacher' | 'student'. The
 --                         roster. BOTH sides of a link must be members of the
 --                         same school, so a link can never join a student who
@@ -250,6 +253,15 @@ create table if not exists public.schools (
 -- One row per school name, so "create the school" twice is a no-op instead of
 -- a duplicate school with half its class on each.
 create unique index if not exists schools_name_uniq on public.schools (name);
+
+-- The licence the school bought, written by the webhook that recorded the
+-- payment (school self-service — api/stripe/webhook.js). `seats` is the LARGEST
+-- licence the school holds; both stay NULL for a school created by hand in the
+-- admin card, which the card shows as "not on record" rather than guessing.
+-- Added after the table itself, so an existing database picks them up here, and
+-- the API tolerates a database that has not run this yet.
+alter table public.schools add column if not exists license_tier text;
+alter table public.schools add column if not exists seats integer;
 
 create table if not exists public.school_admins (
   id uuid primary key default gen_random_uuid(),

@@ -2,12 +2,19 @@ import { useCallback, useEffect, useState } from "react";
 import { useAuth } from "../context/AuthContext";
 import "./SchoolAdminCard.css";
 
-// Owner-only: create a school, designate ONE admin for it, and keep its roster.
+// Owner-only: the global view of every school on the platform, plus the
+// create/designate/roster tools to correct one by hand.
 //
-// This is the switchboard for school-admin self-service. The owner does the two
-// things only the owner may do — name the school and name the person at that
-// school who runs it — and from then on that person keeps their own roster at
-// /school without the owner touching anything per teacher.
+// Schools normally create THEMSELVES: at licence purchase the buyer names the
+// school and the person who will run its console, and the webhook provisions
+// public.schools / school_admins / school_members from that (see
+// api/stripe/webhook.js). Nobody has to approve a school before it can use what
+// it paid for.
+//
+// That makes this card the owner's OVERSIGHT window, not a gatekeeper: it lists
+// every school — self-provisioned ones included — with its admin, its roster and
+// the licence it bought, and it can still create a school or name an admin when a
+// school asks for help or something needs correcting.
 //
 // The server (api/admin/grant-access.js) keeps the OWNER_EMAILS gate on every
 // action this card calls ("school-list", "school-create", "school-admin",
@@ -16,6 +23,18 @@ import "./SchoolAdminCard.css";
 //
 // Exactly one admin email maps to one school (a unique index on the email), so
 // "which school does this person run?" is never ambiguous.
+
+// The tier a school bought, in words. The value comes straight from the Stripe
+// product id the webhook recorded ('school-license-150'), which is exactly what
+// the owner needs to reconcile a payment — so it is shown rather than prettified
+// beyond the seat count.
+function licenseLabel(tier) {
+  if (typeof tier !== "string" || !tier) return null;
+  const seats = /^school-license-(\d+)$/.exec(tier);
+  if (seats) return `School licence — up to ${seats[1]} students`;
+  if (tier === "school-license") return "School licence (single-tier)";
+  return tier;
+}
 
 export default function SchoolAdminCard() {
   const { session } = useAuth();
@@ -110,12 +129,20 @@ export default function SchoolAdminCard() {
 
   return (
     <div className="sac-card">
-      <h3 className="admin-section-title">Schools — designate an admin</h3>
+      <h3 className="admin-section-title">Schools — every school, its admin and its licence</h3>
       <p className="sac-lead">
-        A school's own admin keeps that school's teacher → student links in order, so you are not the
-        bottleneck for every roster. They sign in at <code>/school</code> (their own account, the same
-        sign-up as anyone) and can only ever see and change their own school — never another school,
-        never the platform. You create the school and name its admin here.
+        A school sets itself up when it buys a licence: it names itself there and names the person
+        who will run its console, and that person keeps the school&rsquo;s teacher → student links in
+        order at <code>/school</code> from then on. This card is your window onto all of it — every
+        school, renamed or created anywhere, appears below with its admin, its roster and the
+        licence it bought. Use the fields on a school to step in when a school asks for help or
+        something needs correcting.
+      </p>
+
+      <h4 className="sac-subtitle">Create a school or name its admin by hand</h4>
+      <p className="sac-lead">
+        Only needed as a fallback — e.g. a school paid by another route, or its admin has changed.
+        The school keeps managing itself from that point.
       </p>
 
       <div className="sac-grid">
@@ -149,7 +176,10 @@ export default function SchoolAdminCard() {
       {error && <div className="admin-msg admin-error">{error}</div>}
 
       {schools && schools.length === 0 && !error && (
-        <p className="sac-lead">No schools yet. Create the first one above.</p>
+        <p className="sac-lead">
+          No schools yet. The first school that buys a licence appears here on its own — or create
+          one below.
+        </p>
       )}
 
       {(schools || []).map((school) => {
@@ -163,6 +193,17 @@ export default function SchoolAdminCard() {
                 {school.students.length} student{school.students.length === 1 ? "" : "s"} ·{" "}
                 {school.linkCount} link{school.linkCount === 1 ? "" : "s"}
               </span>
+            </div>
+
+            <div className="sac-row">
+              <span className="sac-label">Licence</span>
+              {licenseLabel(school.licenseTier) ? (
+                <span className="sac-license">{licenseLabel(school.licenseTier)}</span>
+              ) : (
+                <span className="sac-muted">
+                  not on record — either created here by hand or bought through a payment link
+                </span>
+              )}
             </div>
 
             <div className="sac-row">
@@ -295,8 +336,9 @@ export default function SchoolAdminCard() {
 
       {schools && schools.length > 0 && (
         <p className="sac-note">
-          Send each school admin the address <code>/school</code>. They sign in with their own account
-          and manage only their own school's teachers and students.
+          Each school admin was told the address <code>/school</code> when their school was set up.
+          They sign in with their own account and manage only their own school&rsquo;s teachers and
+          students. A school with no admin yet cannot manage itself — name one on that school above.
         </p>
       )}
     </div>
