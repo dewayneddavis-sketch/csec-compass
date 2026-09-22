@@ -11,6 +11,7 @@ import AccountPage from "./pages/AccountPage";
 import PricingPage from "./pages/PricingPage";
 import AdminPage from "./pages/AdminPage";
 import TeacherPage from "./pages/TeacherPage";
+import ParentPage from "./pages/ParentPage";
 import SchoolConsolePage from "./pages/SchoolConsolePage";
 import PlannerPage from "./pages/PlannerPage";
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -37,6 +38,10 @@ export default function App() {
               <Route path="/account" element={<ProtectedRoute><AccountPage /></ProtectedRoute>} />
               <Route path="/admin" element={<ProtectedRoute><AdminPage /></ProtectedRoute>} />
               <Route path="/teacher" element={<TeacherPage />} />
+              {/* Public like /teacher: the page itself decides what to show,
+                  and the server fails closed with 403 for an account with no
+                  linked child. */}
+              <Route path="/parent" element={<ParentPage />} />
               <Route path="/school" element={<SchoolConsolePage />} />
             </Routes>
           </main>

@@ -127,14 +127,20 @@ eq(experimentLabel(null, typeMap), null, "no experiment type renders nothing");
 eq(experimentLabel("mystery-lab", typeMap || {}), "mystery-lab", "an unknown experiment type shows its slug, never a blank");
 
 // ---- wiring guards ------------------------------------------------------
+// The Subject -> Module -> Lesson rendering moved into the component the teacher
+// AND parent dashboards share (src/components/StudentProgressDashboard.jsx), so
+// that is where the resolution must live — both pages import it.
 const page = read("src/pages/TeacherPage.jsx");
+const sharedView = read("src/components/StudentProgressDashboard.jsx");
+check(page.includes("StudentProgressDashboard"), "the teacher dashboard renders the shared progress view");
+check(read("src/pages/ParentPage.jsx").includes("StudentProgressDashboard"), "the parent dashboard renders the same shared progress view");
 const api = read("api/analytics/summary.js");
-check(page.includes("labLessonPath(subject.subjectId, l.lessonId, nameIndex)"), "lab rows render the resolved Subject - Module - Lesson path");
-check(!page.includes("</span> {l.lessonId}"), "lab rows no longer print the bare lesson id");
-check(page.includes("experimentLabel(l.experimentType, experimentTypes)"), "lab rows show the experiment name");
-check(page.includes("loadLessonNameIndex("), "the dashboard builds the name index from the content tree");
-check(page.includes("subjectName(subject.subjectId, nameIndex)"), "the subject card heading shows the subject name, not the id");
-check(page.includes("no completion recorded"), "the opens-vs-completed explanation is kept");
+check(sharedView.includes("labLessonPath(subject.subjectId, l.lessonId, nameIndex)"), "lab rows render the resolved Subject - Module - Lesson path");
+check(!sharedView.includes("</span> {l.lessonId}"), "lab rows no longer print the bare lesson id");
+check(sharedView.includes("experimentLabel(l.experimentType, experimentTypes)"), "lab rows show the experiment name");
+check(sharedView.includes("loadLessonNameIndex("), "the dashboard builds the name index from the content tree");
+check(sharedView.includes("subjectName(subject.subjectId, nameIndex)"), "the subject card heading shows the subject name, not the id");
+check(sharedView.includes("no completion recorded"), "the opens-vs-completed explanation is kept");
 check(api.includes("lessonId: row.lesson_id"), "the API still returns the recorded lesson id to resolve");
 check(api.includes("experiment_type") && api.includes("last_activity_at"), "the API still returns the experiment type and timestamp");
 check(api.includes("subject_id") && api.includes("lab_activity"), "the API still returns lab rows keyed by subject");

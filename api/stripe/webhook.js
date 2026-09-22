@@ -65,6 +65,58 @@ async function readRawBody(req) {
 }
 
 // ---------------------------------------------------------------------------
+// Parent -> child link (owner decision 2026-09-22)
+//
+// "When parents purchase a single or bundle, parents can link their child."
+// The link is created HERE and nowhere else — no admin step, no approval, no
+// owner action — so it needs no queue and no follow-up: the payment that names a
+// child IS the link.
+//
+//   * WHO the parent is comes from the purchase's own account
+//     (client_reference_id -> the signed-in account's email), never from the
+//     metadata, so a buyer cannot link a child to somebody else's family.
+//   * The child is linked by email because a child may not have signed up yet.
+//   * Idempotent: the pair is unique and the write is ON CONFLICT DO NOTHING, so
+//     a re-delivered Stripe event cannot duplicate a link.
+//   * FAILS OPEN, deliberately: a missing table, a missing column or a failed
+//     insert is logged and reported, never raised. A parent-dashboard link must
+//     never cost a paying customer their access.
+// ---------------------------------------------------------------------------
+async function linkParentToChild(supabase, { userId, childEmail }) {
+  const child = cleanEmail(childEmail);
+  if (!child) return { status: "skipped", reason: "no child email on the session" };
+  if (!EMAIL_RE.test(child) || child.length > 254) {
+    // create-session.js already refuses a malformed address, so this only
+    // happens for a session created outside the Pricing page (an owner-issued
+    // payment link, say). Recorded loudly, and never a reason to fail the sale.
+    return { status: "invalid", reason: "child email is not a valid address" };
+  }
+
+  const { data, error: userError } = await supabase.auth.admin.getUserById(userId);
+  const parentEmail = cleanEmail(data?.user?.email);
+  if (userError || !parentEmail) {
+    return {
+      status: "error",
+      reason: userError ? `buyer lookup failed: ${userError.message}` : "buyer has no email on their account",
+    };
+  }
+  if (parentEmail === child) {
+    return { status: "invalid", reason: "the child email is the buyer's own account" };
+  }
+
+  const { error } = await supabase
+    .from("parent_students")
+    .upsert([{ parent_email: parentEmail, student_email: child }], {
+      onConflict: "parent_email,student_email",
+      ignoreDuplicates: true,
+    });
+  if (error) {
+    return { status: "error", reason: error.message };
+  }
+  return { status: "linked", parentEmail, studentEmail: child };
+}
+
+// ---------------------------------------------------------------------------
 // School self-service (owner direction 2026-09-20)
 //
 // The school names itself and its own admin on the Pricing page; those two
@@ -260,6 +312,28 @@ export default async function handler(req, res) {
       // Reported back on every 200 from this event, so the outcome of the school
       // self-service provisioning is visible in the Stripe delivery log.
       let schoolProvisioning = null;
+      // Same idea for the parent dashboard: { status: "linked" } and the pair it
+      // wrote, or the reason it could not. Never fatal (see linkParentToChild).
+      let parentLink = null;
+      if (!isSchoolLicense && (price_type === "bundle" || (price_type === "subject" && subject_id))) {
+        try {
+          parentLink = await linkParentToChild(supabase, {
+            userId,
+            childEmail: session.metadata?.child_email,
+          });
+        } catch (err) {
+          console.error("Webhook: parent link threw (the purchase is still granted):", err);
+          parentLink = { status: "error", reason: err.message };
+        }
+        if (parentLink.status === "error" || parentLink.status === "invalid") {
+          console.error("Webhook: parent link not created:", parentLink);
+        } else if (parentLink.status === "linked") {
+          console.log(
+            `Webhook: parent link created (${parentLink.parentEmail} -> ${parentLink.studentEmail})`,
+            session.id
+          );
+        }
+      }
 
       if (price_type === "bundle" || isSchoolLicense) {
         // FULL-ACCESS GRANT. The bundle covers every subject for the buyer; a
@@ -340,6 +414,7 @@ export default async function handler(req, res) {
             received: true,
             alreadyGranted: true,
             ...(schoolProvisioning ? { school: schoolProvisioning } : {}),
+            ...(parentLink ? { parent: parentLink } : {}),
           });
         }
         const { error } = await insertPurchaseRow(supabase, {
@@ -368,7 +443,11 @@ export default async function handler(req, res) {
           return res.status(500).json({ error: "Failed to check purchase: " + lookupErr.message });
         }
         if (existing && existing.length > 0) {
-          return res.status(200).json({ received: true, alreadyGranted: true });
+          return res.status(200).json({
+            received: true,
+            alreadyGranted: true,
+            ...(parentLink ? { parent: parentLink } : {}),
+          });
         }
         const { error } = await insertPurchaseRow(supabase, {
           user_id: userId,
@@ -392,6 +471,7 @@ export default async function handler(req, res) {
       res.status(200).json({
         received: true,
         ...(schoolProvisioning ? { school: schoolProvisioning } : {}),
+        ...(parentLink ? { parent: parentLink } : {}),
       });
     } catch (err) {
       console.error("Webhook processing error:", err);

@@ -95,6 +95,18 @@ export default function AccountPage() {
           </div>
         </div>
 
+        {/* Bought a course for a child? The link is made at checkout (the
+            parent dashboard explains it too); this is the way in. The page
+            itself shows the "no child linked yet" state for anyone else. */}
+        <div className="acct-card">
+          <h3>Family</h3>
+          <p className="acct-plan-desc">
+            Bought a subject or the all-subjects bundle and added your child’s email at checkout?
+            Track their lessons, labs and quiz scores on the parent dashboard.
+          </p>
+          <Link to="/parent" className="acct-btn acct-btn-secondary">Parent dashboard</Link>
+        </div>
+
         <div className="acct-card">
           <h3>Account Actions</h3>
           <button className="acct-btn acct-btn-danger" onClick={signOut}>Sign Out</button>
