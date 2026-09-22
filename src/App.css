@@ -1,4 +1,14 @@
 /* CSEC Compass — Global Application Styles */
 .app { min-height: 100vh; display: flex; flex-direction: column; background: #f8fafc; }
 .app-main { flex: 1; }
+.app-footer-legal {
+  max-width: 720px;
+  margin: 0.6rem auto 0;
+  color: #6b7280;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+.app-footer-links { margin: 0.5rem 0 0; font-size: 0.8rem; }
+.app-footer-links a { color: #0e7490; text-decoration: none; font-weight: 600; }
+.app-footer-links a:hover { text-decoration: underline; }
 .app-footer { text-align: center; padding: 2rem 1.5rem; color: #9ca3af; font-size: 0.85rem; border-top: 1px solid #e5e7eb; background: #fff; }
