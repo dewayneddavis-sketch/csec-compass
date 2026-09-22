@@ -18,3 +18,9 @@
 .sp-links a:hover{color:#1d4ed8}
 .sp-back{display:block;text-align:center;margin-top:1rem;color:#6b7280;font-size:.85rem;text-decoration:none}
 .sp-back:hover{color:#374151;text-decoration:underline}
+/* Consent to the Terms + Privacy Policy, required before an account is created. */
+.sp-consent{margin:0 0 1rem;padding:.7rem .8rem;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px}
+.sp-consent-label{display:flex;gap:.55rem;align-items:flex-start;font-size:.82rem;line-height:1.5;color:#374151;cursor:pointer}
+.sp-consent-box{margin:.15rem 0 0;width:1rem;height:1rem;flex:0 0 auto;accent-color:#2563eb;cursor:pointer}
+.sp-consent-link{color:#2563eb;font-weight:600;text-decoration:underline}
+.sp-consent-link:hover{color:#1d4ed8}

@@ -11,11 +11,23 @@ export default function SignupPage() {
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
+  // Consent to the Terms and the Privacy Policy, taken BEFORE the account is
+  // created. This is the second account-creation form on the site (/signup
+  // alongside /auth/signup), so it carries the same requirement: a consent step
+  // that one of the two forms skips would not be consent (owner legal review
+  // 2026-09-22).
+  const [agreed, setAgreed] = useState(false);
 
   async function handleSubmit(e) {
     e.preventDefault();
     setError("");
     setMessage("");
+    // Enter inside a field can submit a form whose button is disabled in some
+    // browsers, so the rule is enforced here as well as on the button.
+    if (!agreed) {
+      setError("Please agree to the Terms of Service and the Privacy Policy to create an account.");
+      return;
+    }
     if (password !== confirm) {
       setError("Passwords do not match");
       return;
@@ -56,7 +68,22 @@ export default function SignupPage() {
             <label>Confirm Password</label>
             <input type="password" value={confirm} onChange={(e) => setConfirm(e.target.value)} required placeholder="Repeat your password" />
           </div>
-          <button className="sp-btn sp-btn-primary" disabled={busy}>{busy ? "Creating account..." : "Create Account"}</button>
+          <div className="sp-consent">
+            <label className="sp-consent-label">
+              <input
+                type="checkbox"
+                className="sp-consent-box"
+                checked={agreed}
+                onChange={(e) => setAgreed(e.target.checked)}
+              />
+              <span>
+                I agree to the{" "}
+                <Link to="/terms" className="sp-consent-link">Terms of Service</Link> and the{" "}
+                <Link to="/privacy" className="sp-consent-link">Privacy Policy</Link>.
+              </span>
+            </label>
+          </div>
+          <button className="sp-btn sp-btn-primary" disabled={busy || !agreed}>{busy ? "Creating account..." : "Create Account"}</button>
         </form>
         <div className="sp-links">
           <Link to="/login">Already have an account? Sign in</Link>

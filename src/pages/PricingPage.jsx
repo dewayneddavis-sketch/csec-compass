@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useAuth } from "../context/AuthContext";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams, Link } from "react-router-dom";
 import {
   FALLBACK_SUBJECT_OPTIONS,
   buildSubjectOptions,
@@ -326,6 +326,15 @@ export default function PricingPage() {
       {message && <div className="pricing-message">{message}</div>}
       <p className="pricing-note">
         All purchases are one-time payments. No recurring subscriptions.
+      </p>
+      {/* The refund/access policy lives in the Terms. Said on the page where the
+          money changes hands, so nobody has to go looking for it (owner legal
+          review 2026-09-22). */}
+      <p className="pricing-note pricing-legal-note">
+        One year of access from purchase. Refunds per our{" "}
+        <Link to="/terms" className="pricing-legal-link">Terms of Service</Link> — how we handle
+        your data is in the{" "}
+        <Link to="/privacy" className="pricing-legal-link">Privacy Policy</Link>.
       </p>
     </div>
   );

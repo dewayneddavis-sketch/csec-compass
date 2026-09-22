@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import "./Auth.css";
 
@@ -10,11 +11,21 @@ export default function AuthPage({ mode: initialMode }) {
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
+  // Consent to the Terms and the Privacy Policy, taken BEFORE the account is
+  // created (owner's legal review, 2026-09-22). Only the signup mode uses it.
+  const [agreed, setAgreed] = useState(false);
 
   async function handleSubmit(e) {
     e.preventDefault();
     setMessage("");
     setError("");
+    // The button is disabled until the box is ticked, but Enter inside a field
+    // can submit a form whose button is disabled in some browsers — so the rule
+    // is enforced here too, where it cannot be skipped.
+    if (mode === "signup" && !agreed) {
+      setError("Please agree to the Terms of Service and the Privacy Policy to create an account.");
+      return;
+    }
     setBusy(true);
 
     try {
@@ -58,21 +69,40 @@ export default function AuthPage({ mode: initialMode }) {
               <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required minLength={6} placeholder="At least 6 characters" />
             </div>
           )}
-          <button className="auth-btn" disabled={busy}>{busy ? "Please wait..." : title}</button>
+          {mode === "signup" && (
+            <div className="auth-consent">
+              <label className="auth-consent-label">
+                <input
+                  type="checkbox"
+                  className="auth-consent-box"
+                  checked={agreed}
+                  onChange={(e) => setAgreed(e.target.checked)}
+                />
+                <span>
+                  I agree to the{" "}
+                  <Link to="/terms" className="auth-consent-link">Terms of Service</Link> and the{" "}
+                  <Link to="/privacy" className="auth-consent-link">Privacy Policy</Link>.
+                </span>
+              </label>
+            </div>
+          )}
+          <button className="auth-btn" disabled={busy || (mode === "signup" && !agreed)}>
+            {busy ? "Please wait..." : title}
+          </button>
         </form>
         <div className="auth-links">
           {altText && (
-            <button className="auth-link" onClick={() => { setMode(mode === "signin" ? "signup" : "signin"); setError(""); setMessage(""); }}>
+            <button className="auth-link" onClick={() => { setMode(mode === "signin" ? "signup" : "signin"); setError(""); setMessage(""); setAgreed(false); }}>
               {altText} {mode === "signin" ? "Sign up" : "Sign in"}
             </button>
           )}
           {mode === "signin" && (
-            <button className="auth-link" onClick={() => { setMode("reset"); setError(""); setMessage(""); }}>
+            <button className="auth-link" onClick={() => { setMode("reset"); setError(""); setMessage(""); setAgreed(false); }}>
               Forgot password?
             </button>
           )}
           {mode === "reset" && (
-            <button className="auth-link" onClick={() => { setMode("signin"); setError(""); setMessage(""); }}>
+            <button className="auth-link" onClick={() => { setMode("signin"); setError(""); setMessage(""); setAgreed(false); }}>
               Back to sign in
             </button>
           )}
