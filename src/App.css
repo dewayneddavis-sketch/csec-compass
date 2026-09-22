@@ -11,4 +11,7 @@
 .app-footer-links { margin: 0.5rem 0 0; font-size: 0.8rem; }
 .app-footer-links a { color: #0e7490; text-decoration: none; font-weight: 600; }
 .app-footer-links a:hover { text-decoration: underline; }
+/* Two links now share this line (Terms + Privacy), so the separator needs its
+   own spacing rather than a literal " · " inside the markup. */
+.app-footer-sep { margin: 0 0.5rem; color: #d1d5db; }
 .app-footer { text-align: center; padding: 2rem 1.5rem; color: #9ca3af; font-size: 0.85rem; border-top: 1px solid #e5e7eb; background: #fff; }

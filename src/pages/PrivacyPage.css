@@ -1,0 +1,95 @@
+/* Privacy Policy. Deliberately the same layout as TermsPage.css so the two
+   legal pages read as a pair — but with its own class names, so a change to one
+   page can never reshape the other. */
+.privacy-page {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+.privacy-header { margin-bottom: 1.5rem; }
+.privacy-header h1 {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 0.35rem;
+}
+.privacy-updated {
+  color: #64748b;
+  font-size: 0.85rem;
+  margin: 0 0 0.75rem;
+}
+.privacy-lead {
+  color: #374151;
+  line-height: 1.6;
+  margin: 0;
+}
+.privacy-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 1.1rem 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+.privacy-card h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.6rem;
+}
+.privacy-card p {
+  color: #374151;
+  line-height: 1.65;
+  margin: 0 0 0.7rem;
+}
+.privacy-card p:last-child { margin-bottom: 0; }
+.privacy-callout {
+  background: #f0f9ff;
+  border-color: #bae6fd;
+}
+.privacy-strong {
+  font-weight: 600;
+  color: #0c4a6e;
+}
+.privacy-list {
+  margin: 0 0 0.7rem;
+  padding-left: 1.15rem;
+  color: #374151;
+  line-height: 1.65;
+}
+.privacy-list:last-child { margin-bottom: 0; }
+.privacy-list li { margin-bottom: 0.55rem; }
+.privacy-list li:last-child { margin-bottom: 0; }
+/* The one address a person writes to, so it has to be unmissable. */
+.privacy-contact {
+  font-weight: 700;
+  color: #0c4a6e;
+  background: #e0f2fe;
+  border: 1px solid #bae6fd;
+  border-radius: 10px;
+  padding: 0.55rem 0.75rem;
+  display: inline-block;
+  word-break: break-all;
+}
+.privacy-inline-link { color: #0e7490; font-weight: 600; }
+.privacy-foot {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+.privacy-btn {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  background: #0e7490;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.privacy-btn-ghost {
+  background: #fff;
+  color: #0e7490;
+  border: 1px solid #0e7490;
+}

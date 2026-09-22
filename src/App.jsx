@@ -15,6 +15,7 @@ import ParentPage from "./pages/ParentPage";
 import SchoolConsolePage from "./pages/SchoolConsolePage";
 import PlannerPage from "./pages/PlannerPage";
 import TermsPage from "./pages/TermsPage";
+import PrivacyPage from "./pages/PrivacyPage";
 import { TRADEMARK_DISCLAIMER } from "./data/legal";
 import ProtectedRoute from "./components/ProtectedRoute";
 import "./App.css";
@@ -36,6 +37,7 @@ export default function App() {
               {/* Public. The terms and trademark disclaimer the owner's legal
                   review asked for (2026-09-22). */}
               <Route path="/terms" element={<TermsPage />} />
+              <Route path="/privacy" element={<PrivacyPage />} />
               <Route path="/planner" element={<PlannerPage />} />
               <Route path="/auth" element={<AuthPage mode="signin" />} />
               <Route path="/auth/signup" element={<AuthPage mode="signup" />} />
@@ -58,6 +60,8 @@ export default function App() {
             <p className="app-footer-legal">{TRADEMARK_DISCLAIMER}</p>
             <p className="app-footer-links">
               <Link to="/terms">Terms of Service</Link>
+              <span className="app-footer-sep" aria-hidden="true">·</span>
+              <Link to="/privacy">Privacy Policy</Link>
             </p>
           </footer>
         </div>
