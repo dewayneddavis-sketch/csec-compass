@@ -38,6 +38,10 @@ process.env.SUPABASE_SERVICE_ROLE_KEY = "service-role-test";
 process.env.STRIPE_SECRET_KEY = "sk_test_offline";
 process.env.STRIPE_WEBHOOK_SECRET = "whsec_offline";
 process.env.OWNER_EMAILS = OWNER;
+// Both teacher-allowlist labels are cleared, so nothing inherited from the
+// environment can leak in: the gate reads TEACHER_EMAIL (the label set in
+// Vercel) and falls back to the older TEACHER_EMAILS.
+process.env.TEACHER_EMAIL = "";
 process.env.TEACHER_EMAILS = "";
 
 const stub = await import("./teacher-stub.mjs");

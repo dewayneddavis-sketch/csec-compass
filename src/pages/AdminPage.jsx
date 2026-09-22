@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useAuth } from "../context/AuthContext";
 import { getSupabaseClient } from "../lib/supabase";
-import TeacherLinksCard from "../components/TeacherLinksCard";
 import SchoolAdminCard from "../components/SchoolAdminCard";
 import "./AdminPage.css";
 
@@ -284,8 +283,6 @@ export default function AdminPage() {
         {result && <div className="admin-msg admin-success">{result}</div>}
         {error && <div className="admin-msg admin-error">{error}</div>}
       </div>
-
-      <TeacherLinksCard />
 
       <SchoolAdminCard />
 

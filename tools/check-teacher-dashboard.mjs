@@ -9,22 +9,32 @@
 //      a teacher sees ONLY their linked students, the owner may inspect any
 //      class, and the aggregation (attempts, best/last %, pass counts, labs,
 //      lessons) is correct.
-//   3. api/admin/grant-access.js — owner-only teacher-link / teacher-unlink /
-//      teacher-links, with lower-cased emails and honest reporting of students
-//      who have no account yet.
+//   3. api/admin/grant-access.js — the owner's global teacher-link actions
+//      (teacher-link / teacher-unlink / teacher-links / teacher-link-bulk),
+//      with lower-cased emails and honest reporting of students who have no
+//      account yet.
+//   3d. api/admin/grant-access.js — a teacher's OWN class list: the
+//      teacher-self-link / teacher-self-unlink / teacher-self-links actions.
+//      Identity is always the CALLER (never a teacherEmail in the body), a
+//      teacher on their school's roster writes school-stamped links, an
+//      allowlisted teacher writes platform-level ones, re-linking is
+//      idempotent, and anyone who is not a teacher gets 403 with zero data.
 //   3b. api/admin/grant-access.js — school-admin self-service: the owner creates
 //      a school and designates ONE admin; that admin keeps their own school's
 //      roster and links, and can never see, name or write another school's
 //      (school_id is never read from the request body of a school admin), never
 //      the platform-wide links the owner created, and never anything about a
 //      student's work. Owner override works, but only for a named school.
-//   3c. api/analytics/summary.js — access rule: owner, TEACHER_EMAILS, or being
-//      named as a teacher in teacher_students (a link is the authorization step).
+//   3c. api/analytics/summary.js — access rule: owner, the teacher allowlist
+//      (TEACHER_EMAIL, or the older TEACHER_EMAILS), being a teacher on a
+//      school's roster, or being named as a teacher in teacher_students.
 //   4. src/data/labActivity.js   — localStorage recording + sync payload.
 //   5. Wiring: the sandbox records opens, the lab reports completion, the route
-//      and the schema (tables + deny-all RLS) exist.
+//      and the schema (tables + deny-all RLS) exist, the owner-only Admin
+//      linking card is GONE, and the teacher dashboard carries its own
+//      link/unlink card.
 
-import { readFileSync } from "node:fs";
+import { readFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { register } from "node:module";
@@ -85,6 +95,10 @@ const STUDENT_B = "student2@school.edu";
 process.env.SUPABASE_URL = "https://example.supabase.co";
 process.env.SUPABASE_SERVICE_ROLE_KEY = "service-role-test";
 process.env.OWNER_EMAILS = OWNER;
+// BOTH labels are set, because the gate must accept either: the live Vercel
+// variable is TEACHER_EMAIL (singular), older deployments used TEACHER_EMAILS.
+// The singular-only and plural-only cases are asserted in their own section.
+process.env.TEACHER_EMAIL = TEACHER;
 process.env.TEACHER_EMAILS = TEACHER;
 
 const authHeader = { authorization: "Bearer test-token" };
@@ -1064,6 +1078,233 @@ section("api/analytics/summary.js — being linked is what grants a teacher thei
 }
 
 // =========================================================================
+// A TEACHER'S OWN CLASS LIST
+//
+// Owner decision 2026-09-22: "the school admin will link the teachers … the
+// teacher can also link students once linked by school admin", and the
+// owner-only Admin linking card was to be removed. So a teacher keeps their own
+// class list from the dashboard — and the one thing that must never vary is
+// whose list it is: the teacher is ALWAYS the caller (there is no teacherEmail
+// in this action's request shape at all).
+// =========================================================================
+section("api/admin/grant-access.js — a teacher's own class list (gate)");
+
+{
+  seedSchools();
+
+  // A student is on a roster, but not as a teacher: no class list, ever.
+  state.user = { id: "u-a1", email: S_A1 };
+  let res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-self-links" } });
+  check("a student cannot read a class list (403)", res.statusCode === 403, `${res.statusCode}`);
+  check("the 403 names the teacher requirement", /teacher access required/i.test(res.body.error || ""), res.body.error);
+  check("no links come back with that 403", res.body.links === undefined);
+  check("the 403 says how to get access", /roster|owner/i.test(res.body.error || ""), res.body.error);
+
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-self-link", emails: [S_A2] } });
+  check("a student cannot link anyone (403)", res.statusCode === 403, `${res.statusCode}`);
+  check("nothing is written for a rejected caller", state.upserts.length === 0 && rows("teacher_students").length === 3, `${state.upserts.length}/${rows("teacher_students").length}`);
+
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-self-unlink", emails: [S_A1] } });
+  check("a student cannot unlink anyone either (403)", res.statusCode === 403, `${res.statusCode}`);
+  check("no delete was attempted", state.deletes.length === 0, `${state.deletes.length}`);
+
+  res = await call(adminHandler, { method: "POST", headers: {}, body: { action: "teacher-self-link", emails: [S_A2] } });
+  check("no auth header is a 401", res.statusCode === 401, `${res.statusCode}`);
+}
+
+section("api/admin/grant-access.js — a school-designated teacher links students");
+
+{
+  seedSchools();
+  // T_A is on school-1's roster with role 'teacher' — added there by the school's
+  // OWN admin. That row alone is what opens this teacher's class list.
+  state.user = { id: "u-ta", email: T_A };
+
+  let res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-self-links" } });
+  check("a school-designated teacher reads their own class list (200)", res.statusCode === 200, `${res.statusCode} ${JSON.stringify(res.body).slice(0, 140)}`);
+  check("the list is exactly their own links", JSON.stringify((res.body.links || []).map((l) => l.studentEmail)) === JSON.stringify([S_A1, S_A2]), JSON.stringify(res.body.links));
+  check("the response names the caller as the teacher", res.body.teacherEmail === T_A, res.body.teacherEmail);
+  check("another school's student is not listed", !JSON.stringify(res.body).includes(S_B1));
+  check("the list query is scoped to the caller", (state.selects.filter((s) => s.table === "teacher_students").at(-1)?.filters || []).some((f) => f[0] === "teacher_email" && f[1] === T_A), JSON.stringify(state.selects.filter((s) => s.table === "teacher_students").at(-1)));
+
+  // S_A3 is NOT on the school's roster at all: the owner's rule is that a
+  // teacher links ANY student email they know, with no approval step.
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-self-link", emails: [S_A3] } });
+  check("a school-designated teacher links a student (200)", res.statusCode === 200, `${res.statusCode} ${JSON.stringify(res.body).slice(0, 140)}`);
+  check("the new link is reported", JSON.stringify(res.body.linked) === JSON.stringify([S_A3]), JSON.stringify(res.body.linked));
+  check("a student who is not on the school roster still links (no roster step)", rows("teacher_students").some((r) => r.teacher_email === T_A && r.student_email === S_A3));
+  const written = state.upserts.at(-1);
+  check("the teacher in the new row is the CALLER", written?.rows.every((r) => r.teacher_email === T_A), JSON.stringify(written?.rows));
+  check("the link is stamped with the caller's own school", written?.rows.every((r) => r.school_id === "school-1"), JSON.stringify(written?.rows));
+  check("the write keys on the (teacher,student) unique pair", written?.conflict === "teacher_email,student_email", written?.conflict);
+  check("the write lets an existing row win (ignoreDuplicates)", written?.ignoreDuplicates === true, `${written?.ignoreDuplicates}`);
+  check("students who have no account yet are named", JSON.stringify(res.body.withoutAccount) === JSON.stringify([S_A3]), JSON.stringify(res.body.withoutAccount));
+  check("the response says which rule let the caller in", res.body.access === "school", res.body.access);
+}
+
+section("api/admin/grant-access.js — an allowlisted teacher links platform-level");
+
+{
+  seedSchools();
+  // On the allowlist, on NO school roster: their links belong to the platform,
+  // exactly like the owner's.
+  state.user = { id: "teacher-1", email: TEACHER };
+  const res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-self-link", emails: [STUDENT_A] } });
+  check("an allowlisted teacher can self-link (200)", res.statusCode === 200, `${res.statusCode} ${JSON.stringify(res.body).slice(0, 140)}`);
+  check("a platform-level teacher's link carries no school", state.upserts.at(-1)?.rows.every((r) => !("school_id" in r)), JSON.stringify(state.upserts.at(-1)?.rows));
+  check("the response says how the caller qualified", res.body.access === "allowlist", res.body.access);
+  check("the row is stored against the caller", rows("teacher_students").some((r) => r.teacher_email === TEACHER && r.student_email === STUDENT_A));
+  check("the school's own link count is unchanged", rows("teacher_students").filter((r) => r.school_id === "school-1").length === 1, JSON.stringify(rows("teacher_students")));
+}
+
+section("api/admin/grant-access.js — a teacher can only ever touch their own list");
+
+{
+  seedSchools();
+  state.user = { id: "u-ta", email: T_A };
+
+  // The identity is the caller. Anything the body claims about the teacher is
+  // ignored — there is nothing to trust and nothing to spoof.
+  let res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: { action: "teacher-self-link", teacherEmail: T_B, teacher_email: T_B, emails: [S_A3] },
+  });
+  check("a teacherEmail in the body is ignored", state.upserts.at(-1)?.rows.every((r) => r.teacher_email === T_A), JSON.stringify(state.upserts.at(-1)?.rows));
+  check("the response names the caller, not the body", res.body.teacherEmail === T_A, res.body.teacherEmail);
+  check("no link is written for the named teacher", !rows("teacher_students").some((r) => r.teacher_email === T_B && r.student_email === S_A3));
+  check("the other teacher's list is untouched", JSON.stringify(rows("teacher_students").filter((r) => r.teacher_email === T_B).map((r) => r.student_email)) === JSON.stringify([S_B1]));
+
+  // Another teacher's class is neither readable nor editable.
+  state.user = { id: "u-tb", email: T_B };
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-self-links" } });
+  check("a different teacher sees only their own links", JSON.stringify((res.body.links || []).map((l) => l.studentEmail)) === JSON.stringify([S_B1]), JSON.stringify(res.body.links));
+  check("another school's class is not in the payload", !JSON.stringify(res.body).includes(S_A1));
+
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-self-unlink", emails: [S_A1] } });
+  check("unlinking a student who belongs to another teacher removes nothing", res.statusCode === 200 && res.body.removed.length === 0, `${res.statusCode}/${JSON.stringify(res.body.removed)}`);
+  check("that student's real link survives", rows("teacher_students").some((r) => r.teacher_email === T_A && r.student_email === S_A1));
+  const del = state.deletes.at(-1);
+  check("the delete is scoped to the caller's email", (del?.filters || []).some((f) => f[0] === "teacher_email" && f[1] === T_B), JSON.stringify(del?.filters));
+  check("the delete never names the other teacher", !(del?.filters || []).some((f) => f[0] === "teacher_email" && f[1] === T_A), JSON.stringify(del?.filters));
+}
+
+section("api/admin/grant-access.js — a teacher unlinking their own students");
+
+{
+  seedSchools();
+  state.user = { id: "u-ta", email: T_A };
+
+  let res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-self-unlink", emails: [S_A2] } });
+  check("unlinking your own student works (200)", res.statusCode === 200, `${res.statusCode} ${JSON.stringify(res.body).slice(0, 140)}`);
+  check("the removed student is reported", JSON.stringify(res.body.removed) === JSON.stringify([S_A2]), JSON.stringify(res.body.removed));
+  check("the link is gone from the store", !rows("teacher_students").some((r) => r.id === "l2"));
+  check("their other link is untouched", rows("teacher_students").some((r) => r.id === "l1"));
+  check("another school's student is untouched", rows("teacher_students").some((r) => r.id === "l3"));
+
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-self-unlink", emails: [S_A2] } });
+  check("unlinking again says there was nothing to unlink", res.body.removed.length === 0 && /nothing to unlink/i.test(res.body.message || ""), res.body.message);
+  check("and names what was not removed", JSON.stringify(res.body.notRemoved) === JSON.stringify([S_A2]), JSON.stringify(res.body.notRemoved));
+}
+
+section("api/admin/grant-access.js — re-linking is idempotent");
+
+{
+  seedSchools();
+  state.user = { id: "u-ta", email: T_A };
+
+  let res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-self-link", emails: [S_A2, S_A3] } });
+  check("only the student with no link is written", JSON.stringify(res.body.linked) === JSON.stringify([S_A3]), JSON.stringify(res.body.linked));
+  check("the existing link is reported, not duplicated", JSON.stringify(res.body.alreadyLinked) === JSON.stringify([S_A2]), JSON.stringify(res.body.alreadyLinked));
+  check("the write carries only the new pair", state.upserts.at(-1)?.rows.length === 1, `${state.upserts.at(-1)?.rows.length}`);
+  check("a student who already signed up is not flagged", !(res.body.withoutAccount || []).includes(S_A2), JSON.stringify(res.body.withoutAccount));
+  const before = rows("teacher_students").length;
+
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-self-link", emails: [S_A2, S_A3] } });
+  check("re-linking the same students links nothing new", res.body.linked.length === 0 && res.body.alreadyLinked.length === 2, JSON.stringify(res.body).slice(0, 160));
+  check("no row is added by the repeat", rows("teacher_students").length === before, `${rows("teacher_students").length}/${before}`);
+}
+
+section("api/admin/grant-access.js — what a teacher cannot link");
+
+{
+  seedSchools();
+  state.user = { id: "u-ta", email: T_A };
+
+  let res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: { action: "teacher-self-link", emails: ["not-an-email", T_A, "  New.Student@Wolmers.edu.JM  "] },
+  });
+  check("a malformed email is refused with a reason", (res.body.invalid || []).some((i) => /not a valid email/.test(i.reason)), JSON.stringify(res.body.invalid));
+  check("a teacher cannot link themselves as a student", (res.body.invalid || []).some((i) => /your own email/.test(i.reason)), JSON.stringify(res.body.invalid));
+  check("the valid student is still linked", JSON.stringify(res.body.linked) === JSON.stringify(["new.student@wolmers.edu.jm"]), JSON.stringify(res.body.linked));
+  check("only the valid address is written", state.upserts.at(-1)?.rows.length === 1, `${state.upserts.at(-1)?.rows.length}`);
+  check("the address is lower-cased and trimmed", state.upserts.at(-1)?.rows[0].student_email === "new.student@wolmers.edu.jm", JSON.stringify(state.upserts.at(-1)?.rows));
+
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-self-link", email: "single@wolmers.edu.jm" } });
+  check("the single email field works too", res.statusCode === 200 && JSON.stringify(res.body.linked) === JSON.stringify(["single@wolmers.edu.jm"]), `${res.statusCode}/${JSON.stringify(res.body.linked)}`);
+
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-self-link" } });
+  check("linking with no student email is a 400", res.statusCode === 400, `${res.statusCode}`);
+  check("that 400 says what is missing", /email/i.test(res.body.error || ""), res.body.error);
+
+  const beforeOversized = rows("teacher_students").length;
+  res = await call(adminHandler, {
+    method: "POST",
+    headers: authHeader,
+    body: { action: "teacher-self-link", emails: Array.from({ length: 501 }, (_, i) => `s${i}@school.edu`) },
+  });
+  check("an oversized batch is a 400 (no partial write)", res.statusCode === 400 && rows("teacher_students").length === beforeOversized, `${res.statusCode}/${rows("teacher_students").length}`);
+  check("the 400 says the ceiling", /500/.test(res.body.error || ""), res.body.error);
+}
+
+section("api/admin/grant-access.js — a teacher's class list fails closed");
+
+{
+  seedSchools();
+  state.user = { id: "u-ta", email: T_A };
+  state.selectErrors.teacher_students = { message: 'relation "public.teacher_students" does not exist' };
+  let res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-self-links" } });
+  check("a missing teacher_students table fails closed (500)", res.statusCode === 500, `${res.statusCode}`);
+  check("that error names the schema fix", /schema\.sql/.test(res.body.error || ""), res.body.error);
+  check("no links leak with that failure", res.body.links === undefined);
+
+  seedSchools();
+  state.user = { id: "u-ta", email: T_A };
+  state.writeErrors.teacher_students = { message: "connection reset" };
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-self-link", emails: [S_A3] } });
+  check("a failed link write is reported, not swallowed (500)", res.statusCode === 500, `${res.statusCode}`);
+  check("that 500 also names the schema hint", /schema\.sql/.test(res.body.error || ""), res.body.error);
+
+  seedSchools();
+  state.user = { id: "u-ta", email: T_A };
+  state.writeErrors.teacher_students = { message: "connection reset" };
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-self-unlink", emails: [S_A1] } });
+  check("a failed unlink is reported, not swallowed (500)", res.statusCode === 500, `${res.statusCode}`);
+
+  // The informational account lookup must never sink a link that worked.
+  seedSchools();
+  state.user = { id: "u-ta", email: T_A };
+  state.listUsersError = { message: "auth admin unavailable" };
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-self-link", emails: [S_A3] } });
+  check("an unavailable account list still links, and warns", res.statusCode === 200 && JSON.stringify(res.body.linked) === JSON.stringify([S_A3]), `${res.statusCode}/${JSON.stringify(res.body).slice(0, 140)}`);
+  check("the warning says who signed up is unknown", /signed up/i.test(res.body.warning || ""), res.body.warning);
+  state.listUsersError = null;
+
+  // The newer schools tables are NOT a prerequisite for the other routes in.
+  seedSchools();
+  state.selectErrors.school_members = { message: 'relation "public.school_members" does not exist' };
+  state.user = { id: "teacher-1", email: TEACHER }; // allowlisted — no roster needed
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-self-links" } });
+  check("a missing school_members table does not break an allowlisted teacher", res.statusCode === 200, `${res.statusCode}`);
+  state.user = { id: "u-a1", email: S_A1 };
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-self-links" } });
+  check("and someone who is not a teacher is still refused (403)", res.statusCode === 403, `${res.statusCode}`);
+  check("still no data with that 403", res.body.links === undefined);
+}
+
+// =========================================================================
 section("src/data/labActivity.js — client tracking");
 
 {
@@ -1113,6 +1354,47 @@ section("src/data/labActivity.js — client tracking");
 }
 
 // =========================================================================
+// THE ENV LABEL: TEACHER_EMAIL (as set in Vercel) OR TEACHER_EMAILS (older)
+// =========================================================================
+section("api/admin/grant-access.js + summary.js — either env label works");
+
+{
+  const savedSingular = process.env.TEACHER_EMAIL;
+  const savedPlural = process.env.TEACHER_EMAILS;
+
+  seedSchools();
+  process.env.TEACHER_EMAIL = TEACHER; // the label the owner actually has
+  delete process.env.TEACHER_EMAILS;
+
+  state.user = { id: "teacher-1", email: TEACHER };
+  let res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-self-links" } });
+  check("the class list opens with ONLY TEACHER_EMAIL set", res.statusCode === 200, `${res.statusCode} ${JSON.stringify(res.body).slice(0, 120)}`);
+  res = await call(summaryHandler, { method: "GET", headers: authHeader, query: { scope: "class" } });
+  check("the dashboard opens with ONLY TEACHER_EMAIL set", res.statusCode === 200, `${res.statusCode} ${JSON.stringify(res.body).slice(0, 120)}`);
+
+  delete process.env.TEACHER_EMAIL;
+  process.env.TEACHER_EMAILS = TEACHER; // the older label — must keep working
+  res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-self-links" } });
+  check("the class list still opens with only the older TEACHER_EMAILS", res.statusCode === 200, `${res.statusCode}`);
+  res = await call(summaryHandler, { method: "GET", headers: authHeader, query: { scope: "class" } });
+  check("the dashboard still opens with only the older TEACHER_EMAILS", res.statusCode === 200, `${res.statusCode}`);
+
+  // Both present: the singular (the label the owner uses) wins, so a stale
+  // plural value can never silently keep granting access it no longer should.
+  process.env.TEACHER_EMAIL = TEACHER;
+  process.env.TEACHER_EMAILS = "someone.else@school.edu";
+  state.user = { id: "teacher-1", email: TEACHER };
+  res = await call(summaryHandler, { method: "GET", headers: authHeader, query: { scope: "class" } });
+  check("with both labels set, the singular one is in force", res.statusCode === 200, `${res.statusCode}`);
+  state.user = { id: "nobody-1", email: "someone.else@school.edu" };
+  res = await call(summaryHandler, { method: "GET", headers: authHeader, query: { scope: "class" } });
+  check("and the stale plural value no longer grants access", res.statusCode === 403, `${res.statusCode}`);
+
+  process.env.TEACHER_EMAIL = savedSingular;
+  process.env.TEACHER_EMAILS = savedPlural;
+}
+
+// =========================================================================
 section("wiring + schema");
 
 const sandbox = readFileSync(join(root, "src/components/ExperimentSandbox.jsx"), "utf8");
@@ -1120,68 +1402,106 @@ const dragDrop = readFileSync(join(root, "src/components/DragDropLabel.jsx"), "u
 const app = readFileSync(join(root, "src/App.jsx"), "utf8");
 const adminPage = readFileSync(join(root, "src/pages/AdminPage.jsx"), "utf8");
 const teacherPage = readFileSync(join(root, "src/pages/TeacherPage.jsx"), "utf8");
-const linksCard = readFileSync(join(root, "src/components/TeacherLinksCard.jsx"), "utf8");
 const schoolConsole = readFileSync(join(root, "src/pages/SchoolConsolePage.jsx"), "utf8");
 const schoolCard = readFileSync(join(root, "src/components/SchoolAdminCard.jsx"), "utf8");
 const homePage = readFileSync(join(root, "src/pages/Home.jsx"), "utf8");
 const adminApi = readFileSync(join(root, "api/admin/grant-access.js"), "utf8");
+const summaryApi = readFileSync(join(root, "api/analytics/summary.js"), "utf8");
 const schema = readFileSync(join(root, "supabase/schema.sql"), "utf8");
 
-// NOTE on argument order: check(name, condition). These wiring assertions used
-// to be written with the arguments swapped, which made every one of them print
-// "ok" no matter what the file said — a whole section of green that asserted
-// nothing. They are in the right order now, so they fail when the wiring breaks.
-check(/recordLabOpen/.test(sandbox) && /subjectId && !lessonId/.test(sandbox), "the sandbox records a lab open per lesson");
-check(/recordLabComplete/.test(dragDrop) && /allPlaced/.test(dragDrop), "the right-answer lab reports completion when solved");
-check(/reportedRef/.test(dragDrop), "completion is reported once per solve, not on every render");
-check(/import TeacherPage/.test(app) && /path="\/teacher"/.test(app), "the /teacher route is registered");
-check(/TeacherLinksCard/.test(adminPage), "the admin screen renders the owner-only linking card");
-check(/teacher-link-bulk/.test(linksCard), "the linking card posts the bulk action");
-check(/Bulk link \(CSV\)/.test(linksCard) && /<textarea/.test(linksCard), "the card has a paste box for a whole roster");
-check(/bulkResult\.linked/.test(linksCard) && /bulkResult\.invalid/.test(linksCard), "the card shows the linked/skipped/invalid counts");
-check(/bulkResult\.invalidRows/.test(linksCard) && /bulkResult\.skippedRows/.test(linksCard), "the card gives a per-row summary of what needs fixing");
-check(/setBulkCsv\(e\.target\.value\)/.test(linksCard), "the paste box is controlled by state (the paste is not lost)");
-check(/Forbidden: teacher access required|not a teacher account/.test(teacherPage), "the page has an explicit not-a-teacher state");
-check(/scope=class/.test(teacherPage), "the page reads the class scope endpoint");
-check(/create table if not exists public\.lab_activity/.test(schema), "schema creates lab_activity");
-check(/create table if not exists public\.teacher_students/.test(schema), "schema creates teacher_students");
+// NOTE on argument order: check(name, condition). These wiring assertions were
+// written with the arguments swapped for a long time, which made every one of
+// them print "ok   true" no matter what the file said — a whole section of green
+// that asserted nothing (three of them were in fact already stale). They are in
+// the right order now, and this section fails when the wiring breaks.
+check("the sandbox records a lab open per lesson", /recordLabOpen/.test(sandbox) && /if \(!subjectId \|\| !lessonId\) return;/.test(sandbox));
+check("the right-answer lab reports completion when solved", /recordLabComplete/.test(dragDrop) && /allPlaced/.test(dragDrop));
+check("completion is reported once per solve, not on every render", /reportedRef/.test(dragDrop));
+check("the /teacher route is registered", /import TeacherPage/.test(app) && /path="\/teacher"/.test(app));
+// The owner-only linking card is GONE (owner decision 2026-09-22): a teacher
+// keeps their own class list from the dashboard, and the owner's Admin screen no
+// longer carries a linking UI. The component and its stylesheet are DELETED, not
+// merely unwired — the harness reads the files to prove it.
+check("the admin screen no longer renders the owner-only linking card", !/TeacherLinksCard/.test(adminPage));
 check(
-  (schema.match(/using \(false\)/g) || []).length >= 5,
-  "every new table is behind a deny-all RLS policy"
+  "the owner-only linking card component and its stylesheet are deleted",
+  !existsSync(join(root, "src/components/TeacherLinksCard.jsx")) &&
+    !existsSync(join(root, "src/components/TeacherLinksCard.css"))
 );
-check(/lab_activity_user_lesson_uniq/.test(schema), "lab_activity has the (user,subject,lesson) unique index");
-check(/teacher_students_pair_uniq/.test(schema), "teacher_students has the (teacher,student) unique index");
-check(!/create table if not exists public\.lab_activity[\s\S]*?drop constraint/.test(schema), "schema remains idempotent");
+check("the admin screen still renders the owner's schools window", /SchoolAdminCard/.test(adminPage));
+check(
+  "the teacher dashboard links and unlinks its own students",
+  /teacher-self-link/.test(teacherPage) && /teacher-self-unlink/.test(teacherPage)
+);
+check("the teacher card takes a list of student emails", /Link students/.test(teacherPage) && /<textarea/.test(teacherPage));
+check("the teacher's email box is controlled by state (a paste is not lost)", /setEmails\(e\.target\.value\)/.test(teacherPage));
+check("the teacher card is titled for the teacher", /Your students/.test(teacherPage) && /Linked students/.test(teacherPage));
+check("the copy says the student does not have to approve", /don’t need to approve|don't need to approve/.test(teacherPage));
+check("the teacher's card never sends a teacher email — identity comes from the session", !/teacherEmail/.test(teacherPage));
+check("linking refreshes the dashboard it just changed", /refresh/.test(teacherPage) && /onChanged/.test(teacherPage));
+check("each linked student can be unlinked from the card", /Unlink/.test(teacherPage));
+check("the page has an explicit not-a-teacher state", /Forbidden: teacher access required|not a teacher account/.test(teacherPage));
+check("the page reads the class scope endpoint", /scope=class/.test(teacherPage));
+check("schema creates lab_activity", /create table if not exists public\.lab_activity/.test(schema));
+check("schema creates teacher_students", /create table if not exists public\.teacher_students/.test(schema));
+check(
+  "every new table is behind a deny-all RLS policy",
+  (schema.match(/using \(false\)/g) || []).length >= 5
+);
+check("lab_activity has the (user,subject,lesson) unique index", /lab_activity_user_lesson_uniq/.test(schema));
+check("teacher_students has the (teacher,student) unique index", /teacher_students_pair_uniq/.test(schema));
+check("schema remains idempotent", !/create table if not exists public\.lab_activity[\s\S]*?drop constraint/.test(schema));
 
 // --- school-admin self-service: UI wiring + schema -------------------------
-check(/import SchoolConsolePage/.test(app) && /path="\/school"/.test(app), "the /school route is registered");
-check(/to="\/teacher"/.test(homePage) && /to="\/school"/.test(homePage), "the home educator card links to both educator screens");
-check(/SchoolAdminCard/.test(adminPage), "the admin screen renders the owner-only schools card");
-check(/school-roster/.test(schoolConsole), "the school console reads the scoped roster action");
-check(/school-link/.test(schoolConsole) && /school-unlink/.test(schoolConsole), "the console can link and unlink students");
-check(/school-member-add/.test(schoolConsole) && /school-member-remove/.test(schoolConsole), "the console manages its own roster");
-check(/not a school admin|does not administer a school/.test(schoolConsole), "the console has an explicit not-a-school-admin state");
-check(/fails closed rather than showing partial/.test(schoolConsole), "the console fails closed when the data is unavailable");
-check(/school-create/.test(schoolCard) && /school-admin/.test(schoolCard), "the owner card creates a school and designates its admin");
-check(/school-member/.test(schoolCard) && /\/school/.test(schoolCard), "the owner card seeds the roster and names the school console address");
-check(/OWNER_ACTIONS/.test(adminApi) && /SCHOOL_SCOPED_ACTIONS/.test(adminApi), "the endpoint separates owner actions from school-scoped ones");
-check(/callerSchoolId = adminRow\.school_id/.test(adminApi), "the school comes from the caller's own school_admins row");
+check("the /school route is registered", /import SchoolConsolePage/.test(app) && /path="\/school"/.test(app));
+check("the home educator card links to both educator screens", /to="\/teacher"/.test(homePage) && /to="\/school"/.test(homePage));
+check("the admin screen renders the owner-only schools card", /SchoolAdminCard/.test(adminPage));
+check("the school console reads the scoped roster action", /school-roster/.test(schoolConsole));
+check("the console can link and unlink students", /school-link/.test(schoolConsole) && /school-unlink/.test(schoolConsole));
+check("the console manages its own roster", /school-member-add/.test(schoolConsole) && /school-member-remove/.test(schoolConsole));
+check("the console has an explicit not-a-school-admin state", /not a school admin|does not administer a school/.test(schoolConsole));
+check("the console fails closed when the data is unavailable", /fails closed rather than\s+showing partial/.test(schoolConsole));
+check("the owner card creates a school and designates its admin", /school-create/.test(schoolCard) && /school-admin/.test(schoolCard));
+check("the owner card seeds the roster and names the school console address", /school-member/.test(schoolCard) && /\/school/.test(schoolCard));
+check("the endpoint separates owner actions from school-scoped ones", /OWNER_ACTIONS/.test(adminApi) && /SCHOOL_SCOPED_ACTIONS/.test(adminApi));
+check("the allowlist reads TEACHER_EMAIL, falling back to TEACHER_EMAILS", /TEACHER_EMAIL \|\| process\.env\.TEACHER_EMAILS/.test(adminApi));
+check("the dashboard gate reads both env labels too", /TEACHER_EMAIL \|\| process\.env\.TEACHER_EMAILS/.test(summaryApi));
+const teacherSelfActions = (adminApi.split("const TEACHER_SELF_ACTIONS = [")[1] || "").split("]")[0];
+check(
+  "the three teacher self-service actions are declared together",
+  /teacher-self-links/.test(teacherSelfActions) && /teacher-self-link/.test(teacherSelfActions) && /teacher-self-unlink/.test(teacherSelfActions)
+);
+const ownerActionsList = (adminApi.split("const OWNER_ACTIONS = [")[1] || "").split("]")[0];
+check("the teacher self-service actions are not owner-only", !/teacher-self/.test(ownerActionsList));
+const teacherGateAt = adminApi.indexOf("if (TEACHER_SELF_ACTIONS.includes(action))");
+const ownerFallbackAt = adminApi.indexOf("Forbidden: this action is restricted to the owner");
+check("the teacher gate runs before the owner-only fallback", teacherGateAt > 0 && teacherGateAt < ownerFallbackAt);
+check("a teacher's link rows are always stamped with the CALLER", /const teacherEmail = callerEmail/.test(adminApi));
+check("the teacher gate accepts a school-designated teacher", /from\("school_members"\)[\s\S]{0,600}?role/.test(adminApi));
+check("the dashboard gate accepts a school-designated teacher too", /from\("school_members"\)[\s\S]{0,600}?role/.test(summaryApi));
+check("the roster rule requires role 'teacher', not just any roster row", /=== "teacher"/.test(summaryApi));
+check("the teacher's own list is always read by the caller's email", /\.eq\("teacher_email", teacherEmail\)/.test(adminApi));
+
+check("the school comes from the caller's own school_admins row", /callerSchoolId = adminRow\.school_id/.test(adminApi));
 const gateBranch = (adminApi.split("if (isOwnerCaller) {")[1] || "").split("if (!callerSchoolId")[0];
 const ownerBranch = gateBranch.split("} else {")[0];
-const adminBranch = gateBranch.split("} else {")[1] || "";
-check(/findSchool\(schools, schoolId/.test(ownerBranch), "the owner override resolves the school it was told to");
-check(/adminRow\.school_id/.test(adminBranch) && !/schoolId/.test(adminBranch), "a school admin's scope comes from their own row, never the request body");
+// The branch ends where the teacher self-service block begins (that block is
+// not part of the school-admin gate), so nothing from it can satisfy or trip
+// these assertions.
+const adminBranch = (gateBranch.split("} else {")[1] || "").split("if (TEACHER_SELF_ACTIONS")[0];
+check("the owner override resolves the school it was told to", /findSchool\(schools, schoolId/.test(ownerBranch));
+check("a school admin's scope comes from their own row, never the request body", /callerSchoolId = adminRow\.school_id/.test(adminBranch) && !/req\.body/.test(adminBranch));
 
-check(/create table if not exists public\.schools/.test(schema), "schema creates schools");
-check(/create table if not exists public\.school_admins/.test(schema), "schema creates school_admins");
-check(/create table if not exists public\.school_members/.test(schema), "schema creates school_members");
-check(/alter table public\.teacher_students[\s\S]*?add column if not exists school_id/.test(schema), "teacher_students gains the school_id column");
-check(/schools_name_uniq/.test(schema), "one row per school name");
-check(/school_admins_email_uniq/.test(schema), "one admin email maps to exactly one school");
-check(/school_members_uniq/.test(schema), "one roster row per (school, email)");
-check(/role text not null default 'student' check \(role in \('teacher', 'student'\)\)/.test(schema), "a roster role is constrained to teacher/student");
-check((schema.match(/using \(false\)/g) || []).length >= 8, "every access table is behind a deny-all RLS policy");
-check(/on delete set null/.test(schema.split("add column if not exists school_id")[1].slice(0, 120)), "deleting a school does not delete the links, it un-owns them");
+check("schema creates schools", /create table if not exists public\.schools/.test(schema));
+check("schema creates school_admins", /create table if not exists public\.school_admins/.test(schema));
+check("schema creates school_members", /create table if not exists public\.school_members/.test(schema));
+check("teacher_students gains the school_id column", /alter table public\.teacher_students[\s\S]*?add column if not exists school_id/.test(schema));
+check("one row per school name", /schools_name_uniq/.test(schema));
+check("one admin email maps to exactly one school", /school_admins_email_uniq/.test(schema));
+check("one roster row per (school, email)", /school_members_uniq/.test(schema));
+check("a roster role is constrained to teacher/student", /role text not null default 'student' check \(role in \('teacher', 'student'\)\)/.test(schema));
+check("every access table is behind a deny-all RLS policy", (schema.match(/using \(false\)/g) || []).length >= 8);
+check("deleting a school does not delete the links, it un-owns them", /on delete set null/.test(schema.split("add column if not exists school_id")[1].slice(0, 120)));
 
 console.log(`\n${passed} passed, ${failed} failed`);
 process.exit(failed === 0 ? 0 : 1);

@@ -1,6 +1,9 @@
 // POST /api/admin/grant-access
-// Admin endpoint to grant / revoke / list purchase access. OWNER-ONLY.
-// Requires authentication. Only the owner (OWNER_EMAILS) can use this.
+// Admin endpoint to grant / revoke / list purchase access, plus the school
+// console's roster actions and a teacher's own class-list actions.
+// Requires authentication — WHICH gate applies is decided by the action list
+// below and never by the request body (owner, a school's own admin, or a
+// teacher acting on their own account).
 //
 // Request shapes (one endpoint — keeps the Vercel 12-function cap intact):
 //   list:   { action: "list" }
@@ -15,6 +18,13 @@
 //                       grants of the same type)
 //   If both a row id and an email are supplied, the row id wins (the caller
 //   selected a specific row).
+//
+//   teacher-self-links / teacher-self-link / teacher-self-unlink
+//           the signed-in TEACHER's own class list. There is deliberately no
+//           teacherEmail field: the teacher is always the caller, so one
+//           teacher can neither read nor write another's class. The owner's
+//           teacher-link / teacher-unlink / teacher-link-bulk actions stay for
+//           global oversight.
 //
 // NOTE: self-contained (inlines Supabase client) — api/_lib/* imports crash
 // on Vercel with FUNCTION_INVOCATION_FAILED, so every function keeps its
@@ -45,20 +55,24 @@ const OWNER_EMAILS = (process.env.OWNER_EMAILS || "dewayneddavis@gmail.com")
 const ACCESS_WINDOW_MS = 365 * 24 * 60 * 60 * 1000;
 
 // ------------------------------------------------------------------ ACTIONS
-// One endpoint, two gates. Which gate applies is decided ONLY by this list —
-// never by the request body — so a new action has to be written into the owner
-// list to become owner-only, and a school action can never be reached by
-// anything but the caller's own `school_admins` row.
+// One endpoint, three gates. Which gate applies is decided ONLY by these lists
+// — never by the request body — so a new action has to be written into a list
+// to become reachable at all, a school action can never be reached by anything
+// but the caller's own `school_admins` row, and a teacher action can never act
+// for anyone but the caller.
 //
 //   OWNER_ACTIONS       — the platform owner (OWNER_EMAILS). Grant/revoke
-//                         access, every teacher link, and the school actions
-//                         below. Schools name themselves (and their own admin)
-//                         at licence purchase, so these are the owner's global
+//                         access, every teacher link (global oversight of who
+//                         is linked to whom, on any account), and the school
+//                         actions below. Schools name themselves (and their own
+//                         admin) at licence purchase, so these are the owner's
 //                         OVERSIGHT and correction path — a window onto every
 //                         school, not the gatekeeper that creates them.
 //   SCHOOL_SCOPED_ACTIONS — the school's own designated admin. Each one is
 //                         locked to the single school named by the caller's
 //                         school_admins row; a schoolId in the body is ignored.
+//   TEACHER_SELF_ACTIONS — a teacher's own class list, always scoped to the
+//                         caller's own email (see below).
 const OWNER_ACTIONS = [
   "grant",
   "revoke",
@@ -81,7 +95,23 @@ const SCHOOL_SCOPED_ACTIONS = [
   "school-member-remove",
 ];
 
-const ALL_ACTIONS = [...OWNER_ACTIONS, ...SCHOOL_SCOPED_ACTIONS];
+// The teacher's OWN tools (owner decision 2026-09-22): a teacher links the
+// students they teach themselves, without the owner in the loop —
+//
+//   "the school admin will link the teachers … the teacher can also link
+//    students once linked by school admin."
+//
+// Every one of these is locked to the caller: `teacher_email` is ALWAYS the
+// caller's own signed-in email and never read from the request body, so no
+// caller can read or write another teacher's class. The gate is the teacher
+// gate below (allowlist, owner, school roster as a teacher, or already linked).
+const TEACHER_SELF_ACTIONS = ["teacher-self-links", "teacher-self-link", "teacher-self-unlink"];
+
+const ALL_ACTIONS = [...OWNER_ACTIONS, ...SCHOOL_SCOPED_ACTIONS, ...TEACHER_SELF_ACTIONS];
+
+// How many students one self-link call may carry. The same ceiling as the school
+// console's own bulk link: a teacher pastes a class, not a whole school.
+const MAX_SELF_LINK_STUDENTS = 500;
 
 // Remove one person from a school's roster together with the class links that
 // school created for them (either side of the link). EVERY statement is scoped
@@ -163,13 +193,89 @@ function findSchool(schools, id, name) {
 }
 
 // Who may open the teacher dashboard. Read per request so the owner can change
-// TEACHER_EMAILS in Vercel without a redeploy — a link to a teacher who is not
-// listed yet is still saved, it simply does not grant access until they are.
+// the allowlist in Vercel without a redeploy — a teacher who is not listed yet
+// is still linkable, they simply cannot open the dashboard until they are.
+//
+// TWO LABELS, on purpose. The value is set as TEACHER_EMAIL in Vercel (singular,
+// no trailing S), while older code and docs used TEACHER_EMAILS. Both are read,
+// and the singular wins when both are present, so the owner never has to rename
+// anything in Vercel for teachers to get in.
 function teacherAllowlist() {
-  return (process.env.TEACHER_EMAILS || "")
+  return (process.env.TEACHER_EMAIL || process.env.TEACHER_EMAILS || "")
     .split(",")
     .map((e) => e.trim().toLowerCase())
     .filter(Boolean);
+}
+
+// Is this email a TEACHER ON A SCHOOL'S ROSTER (`school_members.role =
+// 'teacher'`)? That row is created by the school's own admin at /school — the
+// owner's model for how a school onboards its teachers.
+//
+// Returns { rostered, schoolId } — schoolId is the school stamped on any link
+// this teacher creates, or null for a platform-level teacher (the allowlist),
+// whose links belong to no school. A missing `school_members` table is NOT an
+// error here: the schooling tables are newer than teacher_students, and the
+// other routes into the dashboard (allowlist, owner, an existing link) have to
+// keep working on a database that predates them.
+//
+// The `error` flag is returned so a CALLER that must fail closed can, while the
+// dashboard gate treats "no roster" as simply "not school-designated".
+async function schoolTeacherRow(supabase, email) {
+  const { data, error } = await supabase
+    .from("school_members")
+    .select("school_id,role")
+    .eq("email", email)
+    .limit(50);
+  if (error) {
+    console.warn(
+      "API /api/admin/grant-access: school_members lookup failed:",
+      error.message
+    );
+    return { rostered: false, schoolId: null, error };
+  }
+  const rows = (data || []).filter((m) => String(m.role || "").toLowerCase() === "teacher");
+  if (rows.length === 0) return { rostered: false, schoolId: null, error: null };
+  // A teacher can be on more than one school's roster. Pick one deterministically
+  // (lowest school id) rather than by query order, so the school stamped on their
+  // links is stable across requests.
+  const schoolIds = rows.map((m) => m.school_id).filter(Boolean).sort();
+  return { rostered: true, schoolId: schoolIds[0] || null, error: null };
+}
+
+// The teacher gate, used by every teacher-self-* action — and mirroring the
+// access rule api/analytics/summary.js applies to ?scope=class, so anyone who
+// can open the dashboard can also keep their own class list in order.
+//
+// Any ONE of these is enough:
+//   1. the caller is the owner (OWNER_EMAILS) — the global oversight path;
+//   2. the caller is in the allowlist (TEACHER_EMAIL, or TEACHER_EMAILS);
+//   3. the caller is a teacher on a school's roster (school_members);
+//   4. the caller is already named as a teacher on a link (teacher_students) —
+//      which is how the owner-verified live teachers keep working, and how a
+//      school admin's link to a teacher authorises them.
+//
+// Returns { reason, schoolId } when qualified, or null. Fails CLOSED: no rule
+// satisfied anywhere means no access and no data.
+async function teacherSelfGate(supabase, callerEmail, isOwnerCaller) {
+  const school = await schoolTeacherRow(supabase, callerEmail);
+  const schoolId = school.schoolId;
+
+  if (isOwnerCaller) return { reason: "owner", schoolId };
+  if (teacherAllowlist().includes(callerEmail)) return { reason: "allowlist", schoolId };
+  if (school.rostered) return { reason: "school", schoolId };
+
+  // rule 4 — read-only, and only the row's existence matters.
+  const { data: linkedRows, error: linkedError } = await supabase
+    .from("teacher_students")
+    .select("teacher_email")
+    .eq("teacher_email", callerEmail)
+    .limit(1);
+  if (linkedError) {
+    console.error("API /api/admin/grant-access: teacher_students lookup failed:", linkedError.message);
+    return null; // fails closed
+  }
+  if ((linkedRows || []).length > 0) return { reason: "linked", schoolId };
+  return null;
 }
 
 // Page through auth users. supabase.auth.admin.listUsers() defaults to
@@ -504,6 +610,172 @@ export default async function handler(req, res) {
       }
     }
 
+    // --------------------------------------- THE TEACHER'S OWN CLASS LIST
+    // Placed BEFORE the owner-only fallback, because a teacher is neither the
+    // owner nor a school admin: these three actions are theirs. Every write is
+    // stamped with the caller's own signed-in email — there is no teacherEmail
+    // field in this protocol at all, so no request can read or write another
+    // teacher's class.
+    //
+    //   { action: "teacher-self-links" }                 -> the caller's links
+    //   { action: "teacher-self-link",   email | emails }
+    //   { action: "teacher-self-unlink", email | emails }
+    if (TEACHER_SELF_ACTIONS.includes(action)) {
+      const linksTablesHint =
+        "Ensure the `teacher_students` table exists — see supabase/schema.sql.";
+
+      const gate = await teacherSelfGate(supabase, callerEmail, isOwnerCaller);
+      if (!gate) {
+        // Fails closed: no student data, no rows, no hint about anyone else.
+        return res.status(403).json({
+          error: `Forbidden: teacher access required. You are signed in as ${caller.email || "unknown"}. A teacher account is one the account owner has listed, or one your school's admin added to the school roster as a teacher — ask them to add ${callerEmail || "your email"} and sign in again.`,
+        });
+      }
+
+      const teacherEmail = callerEmail; // ALWAYS the caller — never req.body
+
+      if (action === "teacher-self-links") {
+        const { data: rows, error: linksError } = await supabase
+          .from("teacher_students")
+          .select("id,student_email,school_id,created_at")
+          .eq("teacher_email", teacherEmail)
+          .limit(2000);
+        if (linksError) {
+          console.error("API /api/admin/grant-access: teacher self links lookup failed:", linksError.message);
+          return res.status(500).json({ error: `Your class list is unavailable (failing closed). ${linksTablesHint}` });
+        }
+        const links = (rows || []).map((r) => ({
+          id: r.id,
+          studentEmail: cleanEmail(r.student_email),
+          schoolId: r.school_id || null,
+          createdAt: r.created_at || null,
+        }));
+        return res.status(200).json({ teacherEmail, access: gate.reason, links, count: links.length });
+      }
+
+      const students = targetEmails; // normalised + de-duplicated above
+      if (students.length === 0) {
+        return res.status(400).json({
+          error: "Missing required field: email (or an emails array) — the student email(s).",
+        });
+      }
+      if (students.length > MAX_SELF_LINK_STUDENTS) {
+        return res.status(400).json({
+          error: `Too many students in one call (${students.length}) — link up to ${MAX_SELF_LINK_STUDENTS} at a time.`,
+        });
+      }
+
+      if (action === "teacher-self-unlink") {
+        // Only the caller's own rows: teacher_email is the caller, so this can
+        // never touch a link belonging to anyone else — and a school admin's
+        // link to a different teacher is out of reach.
+        const { data: removedRows, error: unlinkError } = await supabase
+          .from("teacher_students")
+          .delete()
+          .eq("teacher_email", teacherEmail)
+          .in("student_email", students)
+          .select("student_email");
+        if (unlinkError) {
+          console.error("API /api/admin/grant-access: teacher self unlink failed:", unlinkError.message);
+          return res.status(500).json({ error: `Unlinking failed (failing closed). ${linksTablesHint}` });
+        }
+        const removed = (removedRows || []).map((r) => cleanEmail(r.student_email));
+        return res.status(200).json({
+          message: removed.length
+            ? `Unlinked ${removed.length} student(s) — they no longer appear on your dashboard.`
+            : `Nothing to unlink: you have no link to those student(s).`,
+          teacherEmail,
+          removed,
+          notRemoved: students.filter((e) => !removed.includes(e)),
+        });
+      }
+
+      // teacher-self-link — link ANY student email the teacher knows. There is
+      // no student approval step: a student can be linked before they sign up,
+      // and their progress appears the moment they do.
+      const invalid = [];
+      const valid = [];
+      for (const em of students) {
+        const problem = emailProblem(em);
+        if (problem) {
+          invalid.push({ email: em, reason: problem });
+          continue;
+        }
+        if (em === teacherEmail) {
+          invalid.push({ email: em, reason: "that is your own email — a teacher is not their own student" });
+          continue;
+        }
+        valid.push(em);
+      }
+
+      let alreadyLinked = [];
+      if (valid.length > 0) {
+        const { data: existingRows, error: existingError } = await supabase
+          .from("teacher_students")
+          .select("student_email")
+          .eq("teacher_email", teacherEmail)
+          .in("student_email", valid);
+        if (existingError) {
+          console.error("API /api/admin/grant-access: teacher self link lookup failed:", existingError.message);
+          return res.status(500).json({ error: `Linking failed (failing closed). ${linksTablesHint}` });
+        }
+        alreadyLinked = (existingRows || []).map((r) => cleanEmail(r.student_email));
+      }
+      const skip = new Set(alreadyLinked);
+      const toInsert = valid.filter((e) => !skip.has(e));
+
+      if (toInsert.length > 0) {
+        // school_id comes from the CALLER's own roster row (never the body):
+        // a teacher the school added writes their links into that school, so
+        // the school admin can see and manage them; a teacher who is only on
+        // the platform allowlist writes a platform-level link, like the
+        // owner's. ignoreDuplicates keeps the unique (teacher, student) index
+        // in charge — re-linking is a no-op, not a duplicate.
+        const { error: linkError } = await supabase
+          .from("teacher_students")
+          .upsert(
+            toInsert.map((student_email) => ({
+              teacher_email: teacherEmail,
+              student_email,
+              ...(gate.schoolId ? { school_id: gate.schoolId } : {}),
+            })),
+            { onConflict: "teacher_email,student_email", ignoreDuplicates: true }
+          );
+        if (linkError) {
+          console.error("API /api/admin/grant-access: teacher self link failed:", linkError.message);
+          return res.status(500).json({ error: `Linking failed (failing closed). ${linksTablesHint}` });
+        }
+      }
+
+      // Informational only — never a reason to fail a link that worked.
+      let withoutAccount = [];
+      let warning = null;
+      try {
+        const allUsers = await fetchAllUsers(supabase);
+        const known = new Set(allUsers.filter((u) => u.email).map((u) => u.email.toLowerCase()));
+        withoutAccount = toInsert.filter((e) => !known.has(e));
+      } catch {
+        warning =
+          "Linked, but the account list could not be read — so which of these students have signed up yet is unknown.";
+      }
+
+      const parts = [`Linked ${toInsert.length} student(s) to ${teacherEmail}.`];
+      if (alreadyLinked.length > 0) parts.push(`${alreadyLinked.length} were already linked.`);
+      if (invalid.length > 0) parts.push(`${invalid.length} could not be linked.`);
+
+      return res.status(200).json({
+        message: parts.join(" "),
+        teacherEmail,
+        access: gate.reason,
+        linked: toInsert,
+        alreadyLinked,
+        invalid,
+        withoutAccount,
+        schoolId: gate.schoolId || null,
+        warning,
+      });
+    }
+
     if (!callerSchoolId && !isOwnerCaller) {
       return res.status(403).json({
         error: `Forbidden: this action is restricted to the owner. You are signed in as ${caller.email || "unknown"}; the authorized owner email${OWNER_EMAILS.length > 1 ? "s are" : " is"} ${OWNER_EMAILS.join(", ")}.`,
@@ -572,9 +844,11 @@ export default async function handler(req, res) {
     }
 
     // ------------------------------------------------------- TEACHER LINKS
-    // Who may see whose progress in the teacher dashboard. Owner-only, like
-    // every other grant in the platform: a teacher can never link themselves to
-    // a student, and the dashboard only ever reads links created here.
+    // The owner's global view of who is linked to whom — every link in the
+    // platform, for any teacher, on any account. A teacher keeps their OWN
+    // class list with the teacher-self-* actions above (identity always taken
+    // from the caller); these three are the oversight and correction path, and
+    // the place to fix a link for a school that has asked for help.
     //
     //   { action: "teacher-links" }                          -> every link
     //   { action: "teacher-link",   teacherEmail, email | emails }
