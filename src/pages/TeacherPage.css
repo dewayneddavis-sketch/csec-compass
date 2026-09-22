@@ -316,3 +316,132 @@
   color: #475569;
   font-size: 0.82em;
 }
+
+/* --- the teacher's own class list (link / unlink students) -------------- */
+
+.tp-links {
+  margin: 1rem 0 1.25rem;
+  padding: 1rem 1.1rem 0.9rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.tp-links-title {
+  margin: 0 0 0.35rem;
+  font-size: 1.1rem;
+  color: #0f172a;
+}
+
+.tp-links-sub {
+  margin: 1.1rem 0 0.4rem;
+  font-size: 0.95rem;
+  color: #0f172a;
+}
+
+.tp-links-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: flex-end;
+  margin-top: 0.8rem;
+}
+
+.tp-links-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex: 1 1 20rem;
+  font-size: 0.85rem;
+  color: #475569;
+}
+
+.tp-links-input {
+  padding: 0.5rem 0.7rem;
+  font-family: inherit;
+  font-size: 0.92rem;
+  color: #0f172a;
+  background: #ffffff;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+.tp-links-input:focus {
+  outline: none;
+  border-color: #0e7490;
+  box-shadow: 0 0 0 3px rgba(14, 116, 144, 0.18);
+}
+
+.tp-links-form .tp-btn,
+.tp-unlink {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.tp-links-form .tp-btn:disabled,
+.tp-unlink:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.tp-links-msg {
+  margin-top: 0.7rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.tp-links-ok {
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  color: #065f46;
+}
+
+.tp-links-bad {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+}
+
+.tp-roster {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tp-roster-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.9rem;
+  align-items: center;
+  padding: 0.55rem 0.75rem;
+  border-top: 1px solid #f1f5f9;
+  font-size: 0.92rem;
+}
+
+.tp-roster-row:first-child {
+  border-top: none;
+}
+
+.tp-roster-email {
+  flex: 1 1 14rem;
+  color: #0f172a;
+  word-break: break-all;
+}
+
+.tp-roster-state {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #0e7490;
+}
+
+.tp-unlink {
+  padding: 0.35rem 0.7rem;
+  font-size: 0.85rem;
+}

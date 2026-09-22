@@ -61,38 +61,63 @@ export default async function handler(req, res) {
     //
     // Access, in this order (any one is enough):
     //   1. the caller is the owner (OWNER_EMAILS) — may open any class;
-    //   2. the caller is in TEACHER_EMAILS (the owner's global allowlist);
-    //   3. the caller is NAMED AS A TEACHER in `teacher_students` — the row only
-    //      ever exists because the owner made it in the admin card, or because a
-    //      designated school admin made it inside their own school. Being linked
-    //      IS the authorization step, and a teacher can never create one. This is
-    //      what keeps the owner from having to edit an env var for every teacher
-    //      a school onboards.
-    //
-    // `teacher_students` carries rule 3 (rather than the newer `school_members`
-    // roster) on purpose: it already exists in the live database, so the
-    // dashboard cannot start failing closed for teachers because the schools
-    // tables have not been applied yet.
+    //   2. the caller is in the teacher allowlist (TEACHER_EMAIL, or the older
+    //      TEACHER_EMAILS — both are read so nothing has to be renamed in
+    //      Vercel);
+    //   3. the caller is a TEACHER ON A SCHOOL'S ROSTER (`school_members.role =
+    //      'teacher'`). This is the owner's model for a school that bought a
+    //      licence: its own admin adds the school's teachers at /school, and
+    //      every one of them may open their dashboard without the owner editing
+    //      an env var;
+    //   4. the caller is NAMED AS A TEACHER in `teacher_students` — a row only
+    //      exists because the owner made it, a designated school admin made it
+    //      inside their own school, or the teacher linked their own students.
+    //      Being linked IS an authorization step. This rule also keeps the
+    //      teachers who were verified live before schools existed working.
     //
     // Anyone else gets 403 and ZERO student data — this fails closed, like every
     // other access check in the platform.
     //
-    // Scope: a teacher sees exactly the students the owner (or their school's
-    // admin) linked to them — never the whole platform, never another teacher's
-    // class. The owner may pass ?teacher=<email> to open any single class, and
-    // gets every class when no teacher is named.
+    // Scope: a teacher sees exactly the students linked to them — never the whole
+    // platform, never another teacher's class. The owner may pass ?teacher=<email>
+    // to open any single class, and gets every class when no teacher is named.
     //
     // Data is aggregated server-side into a compact per-student, per-subject
     // summary; the raw per-question rows never leave the server.
     if (req.query.scope === "class") {
       const callerEmail = (user.email || "").toLowerCase();
-      const teacherEmails = csv(process.env.TEACHER_EMAILS);
+      const teacherEmails = csv(process.env.TEACHER_EMAIL || process.env.TEACHER_EMAILS);
       const ownerEmails = csv(process.env.OWNER_EMAILS, "dewayneddavis@gmail.com");
       const isOwner = ownerEmails.includes(callerEmail);
 
       let access = isOwner ? "owner" : teacherEmails.includes(callerEmail) ? "allowlist" : null;
+
       if (!access) {
-        // Rule 3 — are they a teacher on anyone's link? Read-only, and only the
+        // Rule 3 — is this email a teacher on a school's roster? The roster is
+        // written by the school's own admin (or the owner) at /school. Read-only,
+        // and only the role on the caller's own row matters.
+        //
+        // A missing `school_members` table is not an error here: it is a database
+        // that predates the schooling tables, and rules 1, 2 and 4 must keep
+        // working on it — so it is logged and treated as "not a school teacher"
+        // rather than failing the dashboard closed for everyone.
+        const { data: rosterRows, error: rosterError } = await supabase
+          .from("school_members")
+          .select("role")
+          .eq("email", callerEmail)
+          .limit(50);
+        if (rosterError) {
+          console.warn(
+            "API /api/analytics/summary: school_members lookup failed — treating the caller as not school-designated:",
+            rosterError.message
+          );
+        } else if ((rosterRows || []).some((m) => String(m.role || "").toLowerCase() === "teacher")) {
+          access = "school";
+        }
+      }
+
+      if (!access) {
+        // Rule 4 — are they a teacher on anyone's link? Read-only, and only the
         // row's existence matters, so this leaks nothing to the caller.
         const { data: linkedRows, error: linkedError } = await supabase
           .from("teacher_students")
@@ -112,7 +137,7 @@ export default async function handler(req, res) {
       if (!access) {
         return res.status(403).json({
           error:
-            "Forbidden: teacher access required. Ask the account owner to add your email to the teacher list, or to link you to your students.",
+            "Forbidden: teacher access required. Ask your school's admin to add your email to your school's teacher roster (or the account owner to add it to the teacher list), and sign in again.",
         });
       }
 
