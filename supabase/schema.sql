@@ -209,6 +209,48 @@ create policy "teacher_students: no direct client access"
   with check (false);
 
 -- ===========================================================================
+-- parent_students — which parent may see which child (parent dashboard)
+-- ONE row per (parent, child). Both sides are stored by EMAIL, like
+-- teacher_students, because the child may not have signed up yet.
+--   - A link is created in exactly ONE place: api/stripe/webhook.js, after a
+--     parent pays for a single subject or the all-subjects bundle and typed
+--     the child's email at checkout. There is no admin step, no approval and
+--     no owner action (owner decision 2026-09-22: "when parents purchase a
+--     single or bundle, parents can link their child").
+--   - School licences never create one: the licence is not a family purchase.
+--   - Writes are idempotent on the unique pair (ON CONFLICT DO NOTHING), so a
+--     re-delivered Stripe event cannot duplicate a link, and linking never
+--     costs the buyer their purchase (the webhook fails OPEN — a missing table
+--     is logged and the grant still happens).
+--   - Reads happen server-side in api/analytics/summary.js?scope=parent, which
+--     checks the caller's own email against parent_email and then reads only
+--     the children linked to that parent. A parent never sees another family,
+--     and nobody reads this table from the browser.
+--   - A link is a VIEW, not access: the child does not receive the parent's
+--     purchase. They sign up free and practise on their own account.
+-- ===========================================================================
+create table if not exists public.parent_students (
+  id uuid primary key default gen_random_uuid(),
+  parent_email text not null,
+  student_email text not null,
+  created_at timestamptz not null default now()
+);
+
+create unique index if not exists parent_students_pair_uniq
+  on public.parent_students (parent_email, student_email);
+
+create index if not exists parent_students_parent_idx
+  on public.parent_students (parent_email);
+
+alter table public.parent_students enable row level security;
+
+drop policy if exists "parent_students: no direct client access" on public.parent_students;
+create policy "parent_students: no direct client access"
+  on public.parent_students for all
+  using (false)
+  with check (false);
+
+-- ===========================================================================
 -- SCHOOLS — school-admin self-service on top of the links above
 -- ---------------------------------------------------------------------------
 -- A school licence used to leave the everyday work (who is in which class) with

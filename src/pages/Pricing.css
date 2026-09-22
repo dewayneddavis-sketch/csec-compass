@@ -22,6 +22,8 @@
 .pricing-select:focus{outline:none;border-color:#2563eb}
 /* A paywall link asked for a subject the platform does not sell: guidance, not an
    error — the buyer has not forgotten anything. */
+.pricing-child{margin:0 0 1.25rem;padding:.9rem 1rem;background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;display:flex;flex-direction:column;gap:.45rem}
+.pricing-child-hint{margin:0;color:#6b7280;font-size:.83rem;line-height:1.5}
 .pricing-subject-note{margin:-.5rem 0 1rem;padding:.6rem .75rem;background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;color:#1e3a8a;font-size:.85rem;line-height:1.4}
 /* School License ladder (50/100/150 seats) */
 .pricing-school{margin-top:3rem;padding-top:2.5rem;border-top:1px solid #e5e7eb}

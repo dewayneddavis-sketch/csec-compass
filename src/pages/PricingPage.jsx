@@ -74,6 +74,9 @@ export default function PricingPage() {
   // three tiers, because every tier needs the same two answers.
   const [schoolName, setSchoolName] = useState("");
   const [adminEmail, setAdminEmail] = useState("");
+  // Optional: the child this subject/bundle purchase is for. Sent to the
+  // checkout, and the webhook turns it into a parent↔child link after payment.
+  const [childEmail, setChildEmail] = useState("");
 
   useEffect(() => {
     let cancelled = false;
@@ -129,6 +132,19 @@ export default function PricingPage() {
       }
       school = { name, adminEmail: admin };
     }
+    // The child's email rides with a subject or bundle purchase only (a school
+    // licence is not a family purchase). A typo here is the parent's only chance
+    // to make the link, so it is caught before the buyer is sent to Stripe.
+    let child = "";
+    if (planId === "subject" || planId === "bundle") {
+      child = childEmail.trim().toLowerCase();
+      if (child && !EMAIL_RE.test(child)) {
+        setMessage(
+          "That child's email doesn't look right — check it, or clear the field to buy without linking a child."
+        );
+        return;
+      }
+    }
     setBusy(planId);
     setMessage("");
     try {
@@ -143,6 +159,7 @@ export default function PricingPage() {
           cancelUrl: window.location.origin + "/pricing",
           schoolName: school ? school.name : null,
           adminEmail: school ? school.adminEmail : null,
+          childEmail: child || null,
         }),
       });
       const data = await res.json();
@@ -161,6 +178,30 @@ export default function PricingPage() {
         <h1>Choose Your Plan</h1>
         <p>Unlock full access to CSEC exam prep materials.</p>
       </div>
+        {/* Optional, and only for the two plans above: a parent who buys a
+            single subject or the bundle can name their child so the purchase
+            also links that child to their parent dashboard. The webhook writes
+            the link after payment (api/stripe/webhook.js) — this field is the
+            only place a child link is ever made, which is why leaving it blank
+            simply buys without one. */}
+        <div className="pricing-child">
+          <label className="pricing-field">
+            <span>Your child&rsquo;s email (optional) — track their progress</span>
+            <input
+              className="pricing-input"
+              type="email"
+              value={childEmail}
+              placeholder="aaliyah@school.edu"
+              onChange={(e) => setChildEmail(e.target.value)}
+            />
+          </label>
+          <p className="pricing-child-hint">
+            Add your child&rsquo;s email and this purchase also links them to your Parent dashboard,
+            where you can follow their lessons, labs and quiz scores. Access stays with your account
+            — they practise on their own free account.
+          </p>
+        </div>
+
       <div className="pricing-grid">
         {plans.map((plan) => (
           <div key={plan.id} className={`pricing-card ${plan.popular ? "popular" : ""}`}>

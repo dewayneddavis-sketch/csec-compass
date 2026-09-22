@@ -33,6 +33,207 @@ function roundPct(part, whole) {
   return whole > 0 ? Math.round((part / whole) * 100) : 0;
 }
 
+// ---- shared per-student aggregation ----------------------------------------
+// Both dashboards render the SAME per-student, per-subject summary — lessons
+// marked complete, interactive labs opened and completed, Extra Practice / Mock
+// Exam / Knowledge Check attempts with best and latest scores, and when the
+// student was last active — so the aggregation lives here once and the teacher
+// dashboard (?scope=class) and the parent dashboard (?scope=parent) cannot drift
+// apart. The raw per-question rows never leave the server.
+//
+// `links` are the rows that say who may see whom; `ownerField` names the column
+// holding the dashboard owner's email and `rosterKey` the key the route returns
+// it under (teacherEmail / parentEmail), so each scope keeps its own vocabulary
+// while the payload shape stays identical.
+async function buildStudentSummaries(supabase, links, { rosterKey, ownerField }) {
+  const warnings = [];
+  const users = await fetchAllUsers(supabase);
+  const idByEmail = new Map(
+    users.filter((u) => u.email).map((u) => [u.email.toLowerCase(), u.id])
+  );
+  const emailById = new Map(
+    users.filter((u) => u.email).map((u) => [u.id, u.email.toLowerCase()])
+  );
+
+  const roster = (links || []).map((l) => ({
+    [rosterKey]: l[ownerField],
+    email: l.student_email,
+    userId: idByEmail.get(String(l.student_email).toLowerCase()) || null,
+  }));
+  const studentIds = [...new Set(roster.map((r) => r.userId).filter(Boolean))];
+  if (roster.some((r) => !r.userId)) {
+    warnings.push("Some linked students have not created an account yet — they are listed without progress.");
+  }
+
+  if (studentIds.length === 0) {
+    return { students: [], roster, warnings, studentIds };
+  }
+
+  const [quizRes, progressRes, labRes] = await Promise.all([
+    supabase
+      .from("quiz_results")
+      .select("user_id,subject_id,quiz_type,attempt_id,question_id,correct,created_at")
+      .in("user_id", studentIds)
+      .order("created_at", { ascending: true })
+      .limit(50000),
+    supabase
+      .from("user_progress")
+      .select("user_id,subject_id,completed_lessons,quiz_completed,updated_at")
+      .in("user_id", studentIds),
+    supabase
+      .from("lab_activity")
+      .select("user_id,subject_id,lesson_id,experiment_type,opens,completed,last_activity_at")
+      .in("user_id", studentIds),
+  ]);
+
+  if (quizRes.error) {
+    console.error("API /api/analytics/summary: quiz_results lookup failed:", quizRes.error.message);
+    return { error: "Progress analytics lookup failed (failing closed).", roster, warnings };
+  }
+  if (progressRes.error) {
+    // user_progress predates these dashboards; treat it as optional data.
+    warnings.push("Lesson-completion records are unavailable right now — quiz and lab data is still shown.");
+    console.error("API /api/analytics/summary: user_progress lookup failed:", progressRes.error.message);
+  }
+  if (labRes.error) {
+    warnings.push("Lab activity is not being recorded yet (apply supabase/schema.sql).");
+    console.error("API /api/analytics/summary: lab_activity lookup failed:", labRes.error.message);
+  }
+
+  const byStudent = new Map();
+  function studentEntry(userId) {
+    let s = byStudent.get(userId);
+    if (!s) {
+      s = {
+        userId,
+        email: emailById.get(userId) || null,
+        subjects: new Map(),
+        lastActivityAt: null,
+      };
+      byStudent.set(userId, s);
+    }
+    return s;
+  }
+  function subjectEntry(student, subjectId) {
+    let subj = student.subjects.get(subjectId);
+    if (!subj) {
+      subj = {
+        subjectId,
+        lessonsCompleted: 0,
+        quizCompleted: false,
+        attempts: { "knowledge-check": 0, practice: 0, mock: 0 },
+        lastPct: { "knowledge-check": null, practice: null, mock: null },
+        bestPct: { "knowledge-check": null, practice: null, mock: null },
+        passed: { "knowledge-check": 0, practice: 0, mock: 0 },
+        labs: { opened: 0, completed: 0, tracked: 0, lessons: [] },
+        lastActivityAt: null,
+      };
+      student.subjects.set(subjectId, subj);
+    }
+    return subj;
+  }
+  function touch(student, subj, at) {
+    if (!at) return;
+    if (!student.lastActivityAt || at > student.lastActivityAt) student.lastActivityAt = at;
+    if (!subj.lastActivityAt || at > subj.lastActivityAt) subj.lastActivityAt = at;
+  }
+
+  // Quiz attempts: one attempt = many question rows; score it then count it once.
+  const attempts = new Map();
+  for (const row of quizRes.data || []) {
+    const key = row.attempt_id || `${row.user_id}|${row.subject_id}|${row.quiz_type}|${row.created_at}`;
+    let attempt = attempts.get(key);
+    if (!attempt) {
+      attempt = {
+        userId: row.user_id,
+        subjectId: row.subject_id,
+        quizType: row.quiz_type,
+        correct: 0,
+        total: 0,
+        createdAt: row.created_at,
+      };
+      attempts.set(key, attempt);
+    }
+    attempt.total += 1;
+    if (row.correct) attempt.correct += 1;
+  }
+  for (const attempt of attempts.values()) {
+    const student = studentEntry(attempt.userId);
+    const subj = subjectEntry(student, attempt.subjectId);
+    const type = attempt.quizType;
+    const pct = roundPct(attempt.correct, attempt.total);
+    if (subj.attempts[type] === undefined) {
+      subj.attempts[type] = 0;
+      subj.lastPct[type] = null;
+      subj.bestPct[type] = null;
+      subj.passed[type] = 0;
+    }
+    subj.attempts[type] += 1;
+    subj.lastPct[type] = pct;
+    subj.bestPct[type] = subj.bestPct[type] === null ? pct : Math.max(subj.bestPct[type], pct);
+    if (pct >= 60) subj.passed[type] += 1;
+    touch(student, subj, attempt.createdAt);
+  }
+
+  for (const row of progressRes.data || []) {
+    const student = studentEntry(row.user_id);
+    const subj = subjectEntry(student, row.subject_id);
+    subj.lessonsCompleted = Array.isArray(row.completed_lessons) ? row.completed_lessons.length : 0;
+    subj.quizCompleted = !!row.quiz_completed;
+    touch(student, subj, row.updated_at);
+  }
+
+  for (const row of labRes.data || []) {
+    const student = studentEntry(row.user_id);
+    const subj = subjectEntry(student, row.subject_id);
+    subj.labs.opened += row.opens || 0;
+    subj.labs.tracked += 1;
+    if (row.completed) subj.labs.completed += 1;
+    subj.labs.lessons.push({
+      lessonId: row.lesson_id,
+      experimentType: row.experiment_type || null,
+      opens: row.opens || 0,
+      completed: !!row.completed,
+      lastActivityAt: row.last_activity_at || null,
+    });
+    touch(student, subj, row.last_activity_at);
+  }
+
+  const students = studentIds.map((id) => {
+    const s = byStudent.get(id) || studentEntry(id);
+    const subjects = [...s.subjects.values()]
+      .map((subj) => ({
+        ...subj,
+        labs: {
+          ...subj.labs,
+          lessons: subj.labs.lessons.sort((a, b) => String(a.lessonId).localeCompare(String(b.lessonId))),
+        },
+      }))
+      .sort((a, b) => a.subjectId.localeCompare(b.subjectId));
+    return {
+      userId: s.userId,
+      email: s.email,
+      lastActivityAt: s.lastActivityAt,
+      subjects,
+      totals: {
+        subjectsStarted: subjects.length,
+        lessonsCompleted: subjects.reduce((n, x) => n + x.lessonsCompleted, 0),
+        labsOpened: subjects.reduce((n, x) => n + x.labs.opened, 0),
+        labsCompleted: subjects.reduce((n, x) => n + x.labs.completed, 0),
+        quizAttempts: subjects.reduce(
+          (n, x) => n + x.attempts["knowledge-check"] + x.attempts.practice + x.attempts.mock,
+          0
+        ),
+      },
+    };
+  });
+
+  const inactive = students.filter((s) => !s.lastActivityAt).map((s) => s.email);
+  if (inactive.length > 0) warnings.push(`${inactive.length} linked student(s) have no recorded activity yet.`);
+
+  return { students, roster, warnings, studentIds };
+}
+
 export default async function handler(req, res) {
   if (req.method !== "GET") return res.status(405).json({ error: "Method not allowed" });
 
@@ -158,192 +359,16 @@ export default async function handler(req, res) {
         });
       }
 
-      const users = await fetchAllUsers(supabase);
-      const idByEmail = new Map(
-        users.filter((u) => u.email).map((u) => [u.email.toLowerCase(), u.id])
-      );
-      const emailById = new Map(
-        users.filter((u) => u.email).map((u) => [u.id, u.email.toLowerCase()])
-      );
-
-      const roster = (links || []).map((l) => ({
-        teacherEmail: l.teacher_email,
-        email: l.student_email,
-        userId: idByEmail.get(String(l.student_email).toLowerCase()) || null,
-      }));
-      const studentIds = [...new Set(roster.map((r) => r.userId).filter(Boolean))];
-      const warnings = [];
-      if (roster.some((r) => !r.userId)) {
-        warnings.push("Some linked students have not created an account yet — they are listed without progress.");
-      }
-
-      if (studentIds.length === 0) {
-        return res.status(200).json({ students: [], roster, warnings, counts: { students: roster.length } });
-      }
-
-      const [quizRes, progressRes, labRes] = await Promise.all([
-        supabase
-          .from("quiz_results")
-          .select("user_id,subject_id,quiz_type,attempt_id,question_id,correct,created_at")
-          .in("user_id", studentIds)
-          .order("created_at", { ascending: true })
-          .limit(50000),
-        supabase
-          .from("user_progress")
-          .select("user_id,subject_id,completed_lessons,quiz_completed,updated_at")
-          .in("user_id", studentIds),
-        supabase
-          .from("lab_activity")
-          .select("user_id,subject_id,lesson_id,experiment_type,opens,completed,last_activity_at")
-          .in("user_id", studentIds),
-      ]);
-
-      if (quizRes.error) {
-        console.error("API /api/analytics/summary: quiz_results lookup failed:", quizRes.error.message);
-        return res.status(500).json({ error: "Class analytics lookup failed (failing closed)." });
-      }
-      if (progressRes.error) {
-        // user_progress predates this dashboard; treat it as optional data.
-        warnings.push("Lesson-completion records are unavailable right now — quiz and lab data is still shown.");
-        console.error("API /api/analytics/summary: user_progress lookup failed:", progressRes.error.message);
-      }
-      if (labRes.error) {
-        warnings.push("Lab activity is not being recorded yet (apply supabase/schema.sql).");
-        console.error("API /api/analytics/summary: lab_activity lookup failed:", labRes.error.message);
-      }
-
-      // ---- aggregate ------------------------------------------------------
-      const byStudent = new Map();
-      function studentEntry(userId) {
-        let s = byStudent.get(userId);
-        if (!s) {
-          s = {
-            userId,
-            email: emailById.get(userId) || null,
-            subjects: new Map(),
-            lastActivityAt: null,
-          };
-          byStudent.set(userId, s);
-        }
-        return s;
-      }
-      function subjectEntry(student, subjectId) {
-        let subj = student.subjects.get(subjectId);
-        if (!subj) {
-          subj = {
-            subjectId,
-            lessonsCompleted: 0,
-            quizCompleted: false,
-            attempts: { "knowledge-check": 0, practice: 0, mock: 0 },
-            lastPct: { "knowledge-check": null, practice: null, mock: null },
-            bestPct: { "knowledge-check": null, practice: null, mock: null },
-            passed: { "knowledge-check": 0, practice: 0, mock: 0 },
-            labs: { opened: 0, completed: 0, tracked: 0, lessons: [] },
-            lastActivityAt: null,
-          };
-          student.subjects.set(subjectId, subj);
-        }
-        return subj;
-      }
-      function touch(student, subj, at) {
-        if (!at) return;
-        if (!student.lastActivityAt || at > student.lastActivityAt) student.lastActivityAt = at;
-        if (!subj.lastActivityAt || at > subj.lastActivityAt) subj.lastActivityAt = at;
-      }
-
-      // Quiz attempts: one attempt = many question rows; score it then count it once.
-      const attempts = new Map();
-      for (const row of quizRes.data || []) {
-        const key = row.attempt_id || `${row.user_id}|${row.subject_id}|${row.quiz_type}|${row.created_at}`;
-        let attempt = attempts.get(key);
-        if (!attempt) {
-          attempt = {
-            userId: row.user_id,
-            subjectId: row.subject_id,
-            quizType: row.quiz_type,
-            correct: 0,
-            total: 0,
-            createdAt: row.created_at,
-          };
-          attempts.set(key, attempt);
-        }
-        attempt.total += 1;
-        if (row.correct) attempt.correct += 1;
-      }
-      for (const attempt of attempts.values()) {
-        const student = studentEntry(attempt.userId);
-        const subj = subjectEntry(student, attempt.subjectId);
-        const type = attempt.quizType;
-        const pct = roundPct(attempt.correct, attempt.total);
-        if (subj.attempts[type] === undefined) {
-          subj.attempts[type] = 0;
-          subj.lastPct[type] = null;
-          subj.bestPct[type] = null;
-          subj.passed[type] = 0;
-        }
-        subj.attempts[type] += 1;
-        subj.lastPct[type] = pct;
-        subj.bestPct[type] = subj.bestPct[type] === null ? pct : Math.max(subj.bestPct[type], pct);
-        if (pct >= 60) subj.passed[type] += 1;
-        touch(student, subj, attempt.createdAt);
-      }
-
-      for (const row of progressRes.data || []) {
-        const student = studentEntry(row.user_id);
-        const subj = subjectEntry(student, row.subject_id);
-        subj.lessonsCompleted = Array.isArray(row.completed_lessons) ? row.completed_lessons.length : 0;
-        subj.quizCompleted = !!row.quiz_completed;
-        touch(student, subj, row.updated_at);
-      }
-
-      for (const row of labRes.data || []) {
-        const student = studentEntry(row.user_id);
-        const subj = subjectEntry(student, row.subject_id);
-        subj.labs.opened += row.opens || 0;
-        subj.labs.tracked += 1;
-        if (row.completed) subj.labs.completed += 1;
-        subj.labs.lessons.push({
-          lessonId: row.lesson_id,
-          experimentType: row.experiment_type || null,
-          opens: row.opens || 0,
-          completed: !!row.completed,
-          lastActivityAt: row.last_activity_at || null,
-        });
-        touch(student, subj, row.last_activity_at);
-      }
-
-      const students = studentIds.map((id) => {
-        const s = byStudent.get(id) || studentEntry(id);
-        const subjects = [...s.subjects.values()]
-          .map((subj) => ({
-            ...subj,
-            labs: {
-              ...subj.labs,
-              lessons: subj.labs.lessons.sort((a, b) => String(a.lessonId).localeCompare(String(b.lessonId))),
-            },
-          }))
-          .sort((a, b) => a.subjectId.localeCompare(b.subjectId));
-        return {
-          userId: s.userId,
-          email: s.email,
-          lastActivityAt: s.lastActivityAt,
-          subjects,
-          totals: {
-            subjectsStarted: subjects.length,
-            lessonsCompleted: subjects.reduce((n, x) => n + x.lessonsCompleted, 0),
-            labsOpened: subjects.reduce((n, x) => n + x.labs.opened, 0),
-            labsCompleted: subjects.reduce((n, x) => n + x.labs.completed, 0),
-            quizAttempts: subjects.reduce(
-              (n, x) => n + x.attempts["knowledge-check"] + x.attempts.practice + x.attempts.mock,
-              0
-            ),
-          },
-        };
+      const built = await buildStudentSummaries(supabase, links || [], {
+        rosterKey: "teacherEmail",
+        ownerField: "teacher_email",
       });
+      if (built.error) {
+        console.error("API /api/analytics/summary: class analytics failed:", built.error);
+        return res.status(500).json({ error: built.error });
+      }
 
-      const inactive = students.filter((s) => !s.lastActivityAt).map((s) => s.email);
-      if (inactive.length > 0) warnings.push(`${inactive.length} linked student(s) have no recorded activity yet.`);
-
+      const { students, roster, warnings } = built;
       return res.status(200).json({
         scope: "class",
         teacher: teacherFilter || "all",
@@ -353,6 +378,94 @@ export default async function handler(req, res) {
         counts: {
           students: roster.length,
           withProgress: students.filter((s) => s.totals.quizAttempts > 0 || s.totals.lessonsCompleted > 0).length,
+        },
+      });
+    }
+
+    // ---------------------------------------------------------------- PARENT
+    // GET /api/analytics/summary?scope=parent — the parent dashboard.
+    //
+    // A parent↔child link exists ONLY because a parent bought a single subject
+    // or the all-subjects bundle and named their child's email at checkout; the
+    // Stripe webhook writes that row (api/stripe/webhook.js). There is no roster,
+    // no approval step and no owner action — so the only question here is: is the
+    // caller named as a parent in `parent_students`?
+    //
+    // Anyone else gets 403 and ZERO student data (fails closed, like every other
+    // access check in the platform). Scope: a parent sees exactly the children
+    // linked to them — never another family. The owner may pass ?parent=<email>
+    // to open one family, and sees every family when no parent is named,
+    // mirroring ?scope=class.
+    //
+    // The payload is deliberately the SAME shape as ?scope=class (same
+    // aggregation, same per-student/per-subject fields) so the parent dashboard
+    // shows a parent exactly what a teacher sees, under its own vocabulary.
+    if (req.query.scope === "parent") {
+      const callerEmail = (user.email || "").toLowerCase();
+      const ownerEmails = csv(process.env.OWNER_EMAILS, "dewayneddavis@gmail.com");
+      const isOwner = ownerEmails.includes(callerEmail);
+
+      let access = isOwner ? "owner" : null;
+
+      if (!access) {
+        // Read-only, and only the existence of the caller's OWN row matters.
+        const { data: linkRows, error: linkLookupError } = await supabase
+          .from("parent_students")
+          .select("parent_email")
+          .eq("parent_email", callerEmail)
+          .limit(1);
+        if (linkLookupError) {
+          console.error("API /api/analytics/summary: parent_students lookup failed:", linkLookupError.message);
+          return res.status(500).json({
+            error:
+              "Family lookup failed (failing closed). Ensure the `parent_students` table exists — see supabase/schema.sql.",
+          });
+        }
+        if ((linkRows || []).length > 0) access = "parent";
+      }
+
+      if (!access) {
+        return res.status(403).json({
+          error:
+            "Forbidden: this dashboard is for a parent who linked a child when they bought a course. Buy a subject or the all-subjects bundle and add your child's email at checkout.",
+        });
+      }
+
+      const parentFilter = isOwner
+        ? req.query.parent
+          ? String(req.query.parent).toLowerCase()
+          : null
+        : callerEmail;
+
+      let linkQuery = supabase.from("parent_students").select("parent_email,student_email");
+      if (parentFilter) linkQuery = linkQuery.eq("parent_email", parentFilter);
+      const { data: links, error: linkError } = await linkQuery;
+      if (linkError) {
+        console.error("API /api/analytics/summary: parent_students lookup failed:", linkError.message);
+        return res.status(500).json({
+          error:
+            "Family lookup failed (failing closed). Ensure the `parent_students` table exists — see supabase/schema.sql.",
+        });
+      }
+
+      const built = await buildStudentSummaries(supabase, links || [], {
+        rosterKey: "parentEmail",
+        ownerField: "parent_email",
+      });
+      if (built.error) {
+        console.error("API /api/analytics/summary: family analytics failed:", built.error);
+        return res.status(500).json({ error: built.error });
+      }
+
+      return res.status(200).json({
+        scope: "parent",
+        parent: parentFilter || "all",
+        students: built.students,
+        roster: built.roster,
+        warnings: built.warnings,
+        counts: {
+          students: built.roster.length,
+          withProgress: built.students.filter((s) => s.totals.quizAttempts > 0 || s.totals.lessonsCompleted > 0).length,
         },
       });
     }

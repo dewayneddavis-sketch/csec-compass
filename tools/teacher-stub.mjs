@@ -8,6 +8,7 @@ export const state = {
   authError: null,
   users: [], // auth.admin.listUsers() results
   listUsersError: null,
+  getUserByIdError: null, // auth.admin.getUserById() failure (the webhook's buyer lookup)
   tables: {}, // table name -> rows[]
   selectErrors: {}, // table name -> error thrown on select
   writeErrors: {}, // table name -> error thrown on insert/upsert
@@ -22,6 +23,7 @@ export function reset() {
   state.authError = null;
   state.users = [];
   state.listUsersError = null;
+  state.getUserByIdError = null;
   state.tables = {};
   state.selectErrors = {};
   state.writeErrors = {};
@@ -66,6 +68,15 @@ export function createClient() {
           state.listUsersError
             ? { data: null, error: state.listUsersError }
             : { data: { users: state.users }, error: null },
+        // api/stripe/webhook.js resolves the BUYER's email from the purchase's
+        // own account id (client_reference_id) to write a parent↔child link, so
+        // the double has to answer that lookup: state.users is the account list
+        // (id + email), exactly like listUsers().
+        getUserById: async (id) => {
+          if (state.getUserByIdError) return { data: { user: null }, error: state.getUserByIdError };
+          const found = (state.users || []).find((u) => u.id === id) || null;
+          return { data: { user: found }, error: null };
+        },
       },
     },
     from(table) {

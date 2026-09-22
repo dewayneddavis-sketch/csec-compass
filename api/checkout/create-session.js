@@ -76,7 +76,7 @@ function cleanEmail(value) {
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).json({ error: "Method not allowed" });
 
-  const { priceType, subjectId, successUrl, cancelUrl, userId, schoolName, adminEmail } = req.body || {};
+  const { priceType, subjectId, successUrl, cancelUrl, userId, schoolName, adminEmail, childEmail } = req.body || {};
   if (!priceType || !PRICE_TYPES.includes(priceType)) {
     return res.status(400).json({
       error: "Invalid priceType. Use 'subject', 'bundle' or a school-license tier (" +
@@ -113,6 +113,30 @@ export default async function handler(req, res) {
     school = { name, adminEmail: admin };
   }
 
+  // Parent -> child link (owner decision 2026-09-22): a parent buying a SINGLE
+  // SUBJECT or the BUNDLE may name their child's email so the purchase also
+  // links that child to their parent dashboard. It travels in the checkout
+  // metadata and api/stripe/webhook.js writes the link after payment — the link
+  // is created at purchase and nowhere else, which is what makes it need no
+  // approval and no admin.
+  //
+  // A school licence never carries one (the licence is not a family purchase),
+  // and a malformed address is REFUSED rather than quietly dropped: this is the
+  // parent's only chance to make the link, so a typo must be visible here.
+  let child = "";
+  if (priceType === "subject" || priceType === "bundle") {
+    const wanted = cleanEmail(childEmail);
+    if (wanted) {
+      if (wanted.length > 254 || !EMAIL_RE.test(wanted)) {
+        return res.status(400).json({
+          error:
+            "That child's email doesn't look right. Check it, or clear the field to buy without linking a child.",
+        });
+      }
+      child = wanted;
+    }
+  }
+
   const stripe = getStripe();
   if (!stripe) return res.status(500).json({ error: "Stripe not configured" });
 
@@ -136,6 +160,11 @@ export default async function handler(req, res) {
         // strings) so the webhook can tell "no school named" from "key missing".
         school_name: school ? school.name : "",
         admin_email: school ? school.adminEmail : "",
+        // The child this purchase is for, if the buyer named one ("" for
+        // school-licence tiers and for a buyer who left the field empty).
+        // Always present so the webhook can tell "no child named" from "key
+        // missing". api/stripe/webhook.js reads exactly this key.
+        child_email: child,
       },
     });
 
