@@ -17,6 +17,7 @@ export default function Navbar() {
           <Link to="/" className={`navbar-link ${location.pathname === "/" ? "active" : ""}`}>Subjects</Link>
           <Link to="/planner" className={`navbar-link ${location.pathname === "/planner" ? "active" : ""}`}>Planner</Link>
           <Link to="/pricing" className={`navbar-link ${location.pathname === "/pricing" ? "active" : ""}`}>Pricing</Link>
+          <Link to="/contact" className={`navbar-link navbar-contact ${location.pathname === "/contact" ? "active" : ""}`}>Contact</Link>
           <Link to="/teacher" className={`navbar-link navbar-teacher ${location.pathname === "/teacher" ? "active" : ""}`}>Teacher's Dashboard</Link>
         </div>
         <div className="navbar-auth">

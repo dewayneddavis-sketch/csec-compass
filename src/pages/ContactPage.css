@@ -1,0 +1,136 @@
+/* Contact tab (owner spec 2026-09-23). Card style follows the legal pages so
+   the form looks like the rest of the site. */
+.contact-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+.contact-header { margin-bottom: 1.25rem; }
+.contact-header h1 {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 0.4rem;
+}
+.contact-lead {
+  color: #374151;
+  line-height: 1.65;
+  margin: 0 0 0.5rem;
+}
+.contact-direct {
+  color: #0e7490;
+  font-weight: 600;
+  line-height: 1.6;
+  margin: 0;
+  word-break: break-word;
+}
+.contact-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 1.25rem;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+.contact-field { margin-bottom: 1.1rem; }
+.contact-field label {
+  display: block;
+  font-weight: 700;
+  color: #0f172a;
+  font-size: 0.92rem;
+  margin-bottom: 0.35rem;
+}
+.contact-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.6rem 0.7rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #0f172a;
+  background: #fff;
+}
+.contact-input:focus {
+  outline: 2px solid #0e7490;
+  outline-offset: 1px;
+  border-color: #0e7490;
+}
+.contact-to {
+  background: #f1f5f9;
+  color: #475569;
+  cursor: default;
+}
+.contact-textarea { resize: vertical; min-height: 8rem; }
+.contact-hint {
+  color: #64748b;
+  font-size: 0.82rem;
+  margin: 0.3rem 0 0;
+}
+.contact-error {
+  color: #b91c1c;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0.3rem 0 0;
+}
+.contact-notice {
+  border-radius: 10px;
+  padding: 0.7rem 0.85rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  margin: 0 0 1rem;
+}
+.contact-notice-error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+}
+.contact-submit {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background: #0e7490;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.contact-submit:hover:not(:disabled) { background: #155e75; }
+.contact-submit:disabled { opacity: 0.65; cursor: progress; }
+.contact-secondary {
+  margin-top: 0.5rem;
+  padding: 0.6rem 1rem;
+  border: 1px solid #0e7490;
+  border-radius: 10px;
+  background: #fff;
+  color: #0e7490;
+  font-weight: 700;
+  cursor: pointer;
+}
+.contact-privacy-note {
+  color: #64748b;
+  font-size: 0.82rem;
+  margin: 0.8rem 0 0;
+}
+.contact-privacy-note a { color: #0e7490; font-weight: 600; }
+.contact-sent h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.5rem;
+}
+.contact-sent p {
+  color: #374151;
+  line-height: 1.65;
+  margin: 0 0 0.6rem;
+}
+.contact-sent-note { font-size: 0.88rem; color: #64748b; }
+/* The honeypot: off-screen, not readable, not focusable. Kept in the DOM so a
+   bot still finds and fills it. */
+.contact-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

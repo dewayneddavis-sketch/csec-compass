@@ -15,3 +15,12 @@ export const PRIVACY_LAST_UPDATED = "22 September 2026";
 // every piece of material. Kept here so the page and any future surface cannot
 // disagree about how to reach us.
 export const PRIVACY_CONTACT_EMAIL = "csec-compass-01a1f7d3@ctomail.io";
+
+// The PUBLIC support address (owner spec 2026-09-23): what the contact form
+// delivers to and what product pages show. Cloudflare routes it to the owner's
+// inbox. It is not the data-protection address above — that one stays the
+// business inbox — so keep the two apart: this is where a customer writes in,
+// the other is where a data request goes. The contact form and the API route
+// both read THIS constant, and the owner's personal address appears nowhere.
+export const SUPPORT_EMAIL = "support@csec-compass.com";
+

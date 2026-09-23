@@ -16,6 +16,7 @@ import SchoolConsolePage from "./pages/SchoolConsolePage";
 import PlannerPage from "./pages/PlannerPage";
 import TermsPage from "./pages/TermsPage";
 import PrivacyPage from "./pages/PrivacyPage";
+import ContactPage from "./pages/ContactPage";
 import { TRADEMARK_DISCLAIMER } from "./data/legal";
 import ProtectedRoute from "./components/ProtectedRoute";
 import "./App.css";
@@ -38,6 +39,10 @@ export default function App() {
                   review asked for (2026-09-22). */}
               <Route path="/terms" element={<TermsPage />} />
               <Route path="/privacy" element={<PrivacyPage />} />
+              {/* Public contact form (owner spec 2026-09-23). The form emails
+                  support; if the email service is not configured the page says
+                  so and points at the address instead of claiming success. */}
+              <Route path="/contact" element={<ContactPage />} />
               <Route path="/planner" element={<PlannerPage />} />
               <Route path="/auth" element={<AuthPage mode="signin" />} />
               <Route path="/auth/signup" element={<AuthPage mode="signup" />} />
