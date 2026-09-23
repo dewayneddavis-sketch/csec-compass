@@ -17,6 +17,12 @@ import { SUPPORT_EMAIL } from "./legal.js";
 // Length caps. The client uses them as maxLength AND as its own pre-submit
 // check; the server uses them as the real rule (a client check is a courtesy,
 // never the guard).
+//
+// The name cap is the same number as the subject cap, and for the same reason:
+// the owner's notification email renders the submitter's name in a table cell,
+// so a name is required (a blank cell tells the owner nothing) and bounded (an
+// essay in a table cell is unreadable).
+export const CONTACT_NAME_MAX = 120;
 export const CONTACT_SUBJECT_MAX = 120;
 export const CONTACT_MESSAGE_MAX = 3000;
 
@@ -71,11 +77,20 @@ export function contactNotificationSubject(subject) {
 // the page to show the same messages before it ever calls the API.
 export function validateContactSubmission(input) {
   const src = input && typeof input === "object" ? input : {};
+  const name = String(src.name == null ? "" : src.name).trim();
   const email = String(src.email == null ? "" : src.email).trim();
   const subject = String(src.subject == null ? "" : src.subject).trim();
   const message = String(src.message == null ? "" : src.message).trim();
   const errors = {};
 
+  // A name is required, not optional: the owner's notification email renders it
+  // in a table cell next to the address, so an empty one is a blank row in the
+  // mailbox and no way to tell who wrote in.
+  if (!name) {
+    errors.name = "Enter your name so we know who to reply to.";
+  } else if (name.length > CONTACT_NAME_MAX) {
+    errors.name = `Keep your name to ${CONTACT_NAME_MAX} characters or fewer.`;
+  }
   if (!contactEmailIsValid(email)) {
     errors.email = "Enter a valid email address so we can reply to you.";
   }
@@ -91,5 +106,5 @@ export function validateContactSubmission(input) {
   }
 
   const ok = Object.keys(errors).length === 0;
-  return { ok, errors, value: { email, subject, message } };
+  return { ok, errors, value: { name, email, subject, message } };
 }

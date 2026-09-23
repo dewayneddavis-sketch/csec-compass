@@ -13,17 +13,25 @@
 //      on its way while nothing left the building, and the visitor would never
 //      know to try again. Asserted here by driving the real handler with the
 //      key absent AND with Knock failing, and pinning that neither returns ok.
-//   2. AN ADDRESS WRITTEN IN TWO PLACES. The delivery address lives in
-//      src/data/legal.js; the sentences that name it are built from it. A
-//      second literal copy is how the form and the API start disagreeing, and
-//      how the owner's personal address leaks into user-facing copy. Asserted
-//      by counting the literal everywhere in src/ and api/, and by grepping for
-//      that personal address in all of it.
+//   2. A SECOND COPY OF THE COPY THAT HAS DRIFTED FROM THE FIRST. The API route
+//      is self-contained by design (it imports nothing, because Vercel builds
+//      each api/ file on its own and an import from ../src/ failed the deploy on
+//      2026-09-23), so it MIRRORS the shared wording and validation instead of
+//      importing them. A mirror is only safe if something proves it has not
+//      drifted — this file does: every mirrored value must equal the real one in
+//      src/data/legal.js / src/data/contact.js, the mirrored validator must
+//      return byte-identical results, and the delivery address may be spelled
+//      out only in those two files (plus the owner's personal address may not
+//      appear anywhere at all).
 //
 // What else it checks: the tab is reachable (route + site-wide nav), the rules
-// can't drift (caps/honeypot/copy come from the shared module on BOTH sides),
-// the honeypot really drops a submission, the rate limit really bites, and the
-// exact wording of the automatic reply is the wording the owner asked for.
+// can't drift (caps/honeypot/copy agree with the page's shared module), the
+// honeypot really drops a submission, the rate limit really bites, the
+// submitter's NAME is collected by the form, required by both copies of the
+// validator and carried into the notification trigger (the owner's notification
+// template renders `data.name` in a table cell, so a blank one is a blank row in
+// the mailbox), and the exact wording of the automatic reply is the wording the
+// owner asked for.
 //
 // Run it with the rest before any contact/pricing PR:
 //   for f in tools/check-*.mjs; do node "$f"; done
@@ -77,6 +85,9 @@ const privacySrc = read("src/pages/PrivacyPage.jsx");
 const legal = await import("../src/data/legal.js");
 const shared = await import("../src/data/contact.js");
 const handler = (await import("../api/contact.js")).default;
+// The API route is self-contained, so its mirrored copy is imported here and
+// every one of its values is compared against the real thing below.
+const apiContact = await import("../api/contact.js");
 
 // The route logs honestly whenever it cannot send. Those lines would read like
 // harness noise, so they are captured and asserted on instead of printed — a
@@ -120,6 +131,7 @@ function postReq(body, ip = "10.0.0.1") {
   };
 }
 const GOOD = {
+  name: "Jane Smith",
   email: "parent@example.com",
   subject: "Bundle question",
   message: "Does the bundle cover Food and Nutrition as well?",
@@ -179,16 +191,21 @@ function walk(dir) {
 const sourceFiles = [...walk("src"), ...walk("api")];
 const addressFiles = sourceFiles.filter((f) => /support@csec-compass\.com/.test(readFileSync(join(root, f), "utf8")));
 check(
-  "the support address is spelled out in exactly one file (src/data/legal.js)",
-  addressFiles.length === 1 && addressFiles[0] === "src/data/legal.js",
+  "the support address is spelled out in exactly two files, and they agree",
+  addressFiles.length === 2 &&
+    [...addressFiles].sort().join(",") === "api/contact.js,src/data/legal.js" &&
+    apiContact.SUPPORT_EMAIL === legal.SUPPORT_EMAIL,
   addressFiles.join(", ")
 );
 check("contact.js builds its sentences from that constant", /import \{ SUPPORT_EMAIL \} from "\.\/legal\.js"/.test(contactSrc));
 check("ContactPage uses the constant for the recipient field", /import \{ SUPPORT_EMAIL \} from "\.\.\/data\/legal\.js"/.test(pageSrc) && /value=\{SUPPORT_EMAIL\}/.test(pageSrc));
-check("api/contact.js delivers to the same constant", /import \{ SUPPORT_EMAIL \} from "\.\.\/src\/data\/legal\.js"/.test(apiSrc));
+check(
+  "api/contact.js is self-contained: no relative import, and its mirror is the same address",
+  !/from\s+"\.\.?\//.test(apiSrc) && apiContact.SUPPORT_EMAIL === legal.SUPPORT_EMAIL
+);
 check(
   "the delivery address is not a request field (a visitor cannot redirect our mail)",
-  !/body\.(recipient|to|support_email)\b/.test(apiSrc) && /recipients: \[\{ id: SUPPORT_EMAIL, email: SUPPORT_EMAIL \}\]/.test(apiSrc)
+  !/body\.(recipient|to|support_email)\b/.test(apiSrc) && /recipients: \[\{ id: NOTIFICATION_RECIPIENT_ID, email: SUPPORT_EMAIL \}\]/.test(apiSrc)
 );
 
 // ---------------------------------------------------------------------------
@@ -215,15 +232,40 @@ if (built) {
 section("client and server share the rules (they cannot drift)");
 
 check("ContactPage imports the shared rules", /from "\.\.\/data\/contact\.js"/.test(pageSrc));
-check("api/contact.js imports the same shared rules", /from "\.\.\/src\/data\/contact\.js"/.test(apiSrc));
+check(
+  "api/contact.js mirrors the shared rules instead of importing them (it must stay self-contained)",
+  !/^\s*import\b.*from\s+"[^"]*(\.\.\/|src\/)/m.test(apiSrc) && !/from "\.\.\/src\//.test(apiSrc)
+);
+// Every mirrored constant must equal the real one — this is the drift gate.
+const MIRRORED = [
+  ["SUPPORT_EMAIL", legal],
+  ["CONTACT_NAME_MAX", shared],
+  ["CONTACT_SUBJECT_MAX", shared],
+  ["CONTACT_MESSAGE_MAX", shared],
+  ["CONTACT_RATE_LIMIT", shared],
+  ["CONTACT_RATE_WINDOW_MINUTES", shared],
+  ["CONTACT_HONEYPOT_FIELD", shared],
+  ["CONTACT_ACK_SUBJECT", shared],
+  ["CONTACT_ACK_BODY", shared],
+  ["CONTACT_ACK_NOTE", shared],
+];
+for (const [name, source] of MIRRORED) {
+  check(
+    `the api mirror of ${name} equals the shared constant`,
+    apiContact[name] !== undefined && apiContact[name] === source[name],
+    `api=${JSON.stringify(apiContact[name])} shared=${JSON.stringify(source[name])}`
+  );
+}
 check("the subject cap comes from the constant on the page", /maxLength=\{CONTACT_SUBJECT_MAX\}/.test(pageSrc));
 check("the message cap comes from the constant on the page", /maxLength=\{CONTACT_MESSAGE_MAX\}/.test(pageSrc));
+check("the name cap comes from the constant on the page", /maxLength=\{CONTACT_NAME_MAX\}/.test(pageSrc));
 check("the page does not hardcode the caps", !/maxLength=\{120\}|maxLength=\{3000\}/.test(pageSrc));
-check("the server validates with the shared validator", /validateContactSubmission\(body\)/.test(apiSrc));
+check("the server validates with its own copy of the shared validator", /validateContactSubmission\(body\)/.test(apiSrc));
 check("the honeypot field name comes from the constant on both sides", /CONTACT_HONEYPOT_FIELD/.test(pageSrc) && /CONTACT_HONEYPOT_FIELD/.test(apiSrc));
 check("the success sentence on screen is the shared one", /\{CONTACT_ACK_BODY\}/.test(pageSrc) && shared.CONTACT_ACK_BODY.length > 0);
 
 check("caps are the owner's numbers", shared.CONTACT_SUBJECT_MAX === 120 && shared.CONTACT_MESSAGE_MAX === 3000);
+check("the name cap is 120 — the same number the route slices to", shared.CONTACT_NAME_MAX === 120 && apiContact.CONTACT_NAME_MAX === 120);
 check("the rate limit is 5 per hour", shared.CONTACT_RATE_LIMIT === 5 && shared.CONTACT_RATE_WINDOW_MINUTES === 60);
 check("the honeypot field is named website", shared.CONTACT_HONEYPOT_FIELD === "website");
 check(
@@ -246,11 +288,153 @@ check(
   shared.contactEmailIsValid("parent@example.com") && !shared.contactEmailIsValid("parent@example") && !shared.contactEmailIsValid("a b@c.com")
 );
 
+// The mirror has to behave, not just look, the same: same inputs, byte-identical
+// output. If someone edits one validator and not the other, this goes red.
+{
+  const INPUTS = [
+    undefined,
+    null,
+    "not an object",
+    {},
+    { name: "Jane Smith", email: "parent@example.com", subject: "Bundle question", message: "Does it cover Food?" },
+    { name: "not-an-email", email: "not-an-email", subject: "ok", message: "ok" },
+    { name: "Jane Smith", email: "parent@example.com", subject: "   ", message: "ok" },
+    { name: "Jane Smith", email: "parent@example.com", subject: "s".repeat(120), message: "ok" },
+    { name: "Jane Smith", email: "parent@example.com", subject: "s".repeat(121), message: "ok" },
+    { name: "Jane Smith", email: "parent@example.com", subject: "ok", message: "" },
+    { name: "Jane Smith", email: "parent@example.com", subject: "ok", message: "m".repeat(3000) },
+    { name: "Jane Smith", email: "parent@example.com", subject: "ok", message: "m".repeat(3001) },
+    { name: "  Jane Smith  ", email: "  parent@example.com  ", subject: "  padded  ", message: "  padded  " },
+    { name: "Jane Smith", email: "a".repeat(250) + "@x.com", subject: "ok", message: "ok" },
+    { name: "Jane Smith", email: "parent@example.com", subject: 42, message: 7 },
+    // The name is mandatory, so the mirror has to treat every shape of a missing
+    // or over-long one the same way the shared validator does.
+    { email: "parent@example.com", subject: "ok", message: "ok" },
+    { name: "", email: "parent@example.com", subject: "ok", message: "ok" },
+    { name: "   ", email: "parent@example.com", subject: "ok", message: "ok" },
+    { name: null, email: "parent@example.com", subject: "ok", message: "ok" },
+    { name: 42, email: "parent@example.com", subject: "ok", message: "ok" },
+    { name: "n".repeat(120), email: "parent@example.com", subject: "ok", message: "ok" },
+    { name: "n".repeat(121), email: "parent@example.com", subject: "ok", message: "ok" },
+  ];
+  const mismatches = INPUTS.filter(
+    (input) =>
+      JSON.stringify(apiContact.validateContactSubmission(input)) !==
+      JSON.stringify(shared.validateContactSubmission(input))
+  );
+  check(
+    `the api validator returns byte-identical results to the shared one on ${INPUTS.length} payloads`,
+    mismatches.length === 0,
+    `${mismatches.length} mismatch(es)`
+  );
+  const emailCases = ["parent@example.com", "parent@example", "a b@c.com", "", "  ", "x@y.z", "a".repeat(250) + "@x.com", null, undefined, 7];
+  check(
+    "the api email check agrees with the shared one on every case",
+    emailCases.every((v) => apiContact.contactEmailIsValid(v) === shared.contactEmailIsValid(v))
+  );
+  check(
+    "the api notification subject is built the same way",
+    ["Hi", "  spaced  ", "", "About the Maths bundle"].every(
+      (s) => apiContact.contactNotificationSubject(s) === shared.contactNotificationSubject(s)
+    ) && apiContact.contactNotificationSubject("Hi") === "New contact message: Hi"
+  );
+  check(
+    "the api mirror uses its own constants (a stray import or shared object would hide drift)",
+    apiContact.CONTACT_SUBJECT_MAX === shared.CONTACT_SUBJECT_MAX &&
+      apiContact.validateContactSubmission !== shared.validateContactSubmission
+  );
+  check(
+    "the mirror's own name cap is its own constant, not the shared one",
+    apiContact.CONTACT_NAME_MAX === 120 && apiContact.CONTACT_NAME_MAX === shared.CONTACT_NAME_MAX
+  );
+}
+
+// ---------------------------------------------------------------------------
+section("the submitter's name is required, and it reaches the owner's email");
+
+// The owner's notification template renders data.name in a table cell. A form
+// that lets a blank name through puts an empty row in the owner's mailbox, so
+// the rule is pinned here on BOTH copies of the validator.
+{
+  const name = (v) => shared.validateContactSubmission({ ...GOOD, name: v });
+  check(
+    "a missing name is a field error, not a silent empty cell",
+    name(undefined).ok === false && typeof name(undefined).errors.name === "string",
+    JSON.stringify(name(undefined).errors)
+  );
+  check(
+    "a whitespace-only name is rejected too (trim first, then judge)",
+    name("   ").ok === false && name("   ").errors.name === "Enter your name so we know who to reply to.",
+    JSON.stringify(name("   ").errors)
+  );
+  check(
+    "the error tells the sender why we want it",
+    /know who to reply to/i.test(name("").errors.name),
+    name("").errors.name
+  );
+  check(
+    "a name of exactly the cap passes",
+    name("n".repeat(shared.CONTACT_NAME_MAX)).ok === true,
+    JSON.stringify(name("n".repeat(shared.CONTACT_NAME_MAX)).errors)
+  );
+  check(
+    "a name one character over the cap is rejected",
+    name("n".repeat(shared.CONTACT_NAME_MAX + 1)).ok === false && !!name("n".repeat(121)).errors.name,
+    JSON.stringify(name("n".repeat(121)).errors)
+  );
+  check(
+    "a valid name is trimmed and passed through as the ready-to-send value",
+    shared.validateContactSubmission({ ...GOOD, name: "  Jane Smith  " }).value.name === "Jane Smith",
+    JSON.stringify(shared.validateContactSubmission({ ...GOOD, name: "  Jane Smith  " }).value)
+  );
+  check(
+    "the ready-to-send value carries name alongside email/subject/message",
+    JSON.stringify(Object.keys(shared.validateContactSubmission(GOOD).value).sort()) ===
+      JSON.stringify(["email", "message", "name", "subject"]),
+    Object.keys(shared.validateContactSubmission(GOOD).value).join(",")
+  );
+  check(
+    "the api mirror refuses a missing name exactly as the shared one does",
+    JSON.stringify(apiContact.validateContactSubmission({ ...GOOD, name: "" })) ===
+      JSON.stringify(shared.validateContactSubmission({ ...GOOD, name: "" })) &&
+      apiContact.validateContactSubmission({ ...GOOD, name: "" }).ok === false
+  );
+}
+
 // ---------------------------------------------------------------------------
 section("the form itself");
 
 check("the recipient field is read-only", /readOnly/.test(pageSrc) && /aria-readonly="true"/.test(pageSrc) && /className="contact-input contact-to"/.test(pageSrc));
 check("the recipient field is not a free-text field the visitor fills", /id="contact-to"[\s\S]{0,200}value=\{SUPPORT_EMAIL\}/.test(pageSrc));
+// The name input. The owner's notification renders it, so the form MUST collect
+// it: a form without it sends an empty name on every real submission.
+check(
+  "there is a name field for the sender",
+  /id="contact-name"/.test(pageSrc) &&
+    /<label htmlFor="contact-name">Your name<\/label>/.test(pageSrc) &&
+    /name="name"/.test(pageSrc) &&
+    /type="text"/.test(pageSrc) &&
+    /autoComplete="name"/.test(pageSrc) &&
+    /placeholder="Jane Smith"/.test(pageSrc),
+  "id/label/name/type/autoComplete/placeholder"
+);
+check(
+  "the name field is wired to the form state like the other fields",
+  /value=\{form\.name\}/.test(pageSrc) && /onChange=\{update\("name"\)\}/.test(pageSrc)
+);
+check(
+  "the name field comes before the email field",
+  pageSrc.indexOf('id="contact-name"') > 0 && pageSrc.indexOf('id="contact-name"') < pageSrc.indexOf('id="contact-email"')
+);
+check(
+  "the form state starts with an empty name, so it is submitted with the form",
+  /const EMPTY = \{ name: "", email: "", subject: "", message: "" \}/.test(pageSrc) &&
+    /JSON\.stringify\(\{ \.\.\.form, \[CONTACT_HONEYPOT_FIELD\]/.test(pageSrc)
+);
+check(
+  "the name field's error is announced like the others",
+  /id="contact-name-error"[\s\S]{0,40}role="alert"/.test(pageSrc)
+);
 check("there is an email field for the sender", /id="contact-email"/.test(pageSrc) && /type="email"/.test(pageSrc) && /autoComplete="email"/.test(pageSrc));
 check("there is a subject field", /id="contact-subject"/.test(pageSrc) && /name="subject"/.test(pageSrc));
 check("there is a message textarea", /<textarea/.test(pageSrc) && /id="contact-message"/.test(pageSrc));
@@ -315,7 +499,7 @@ resetCalls();
   check("the two workflows are distinct", notification.url !== autoreply.url);
   check(
     "the notification goes to the support address",
-    JSON.stringify(notification.body.recipients) === JSON.stringify([{ id: legal.SUPPORT_EMAIL, email: legal.SUPPORT_EMAIL }]),
+    JSON.stringify(notification.body.recipients) === JSON.stringify([{ id: "csec-compass-support", email: legal.SUPPORT_EMAIL }]),
     JSON.stringify(notification.body.recipients)
   );
   check("the notification carries the submitter as reply-to", notification.body.data.reply_to === GOOD.email);
@@ -336,6 +520,76 @@ resetCalls();
   check("the automatic reply carries the exact approved subject", autoreply.body.data.ack_subject === shared.CONTACT_ACK_SUBJECT);
   check("the automatic reply carries the exact approved body", autoreply.body.data.ack_body === shared.CONTACT_ACK_BODY);
   check("the automatic reply carries the not-monitored note", /not monitored/i.test(autoreply.body.data.ack_note));
+  // --- The owner's real Knock workflows (created 2026-09-23) ---------------
+  // Their templates render data.name / data.email / data.subject / data.message
+  // (notification) and data.subject / vars.app_name (acknowledgement). These
+  // checks pin the exact key set, so a rename here goes red instead of quietly
+  // emptying a cell of the owner's email.
+  const dataJson = JSON.stringify(notification.body.data);
+  check(
+    "the notification carries the template's keys: name, email, subject, message",
+    ["name", "email", "subject", "message"].every((k) => k in notification.body.data) &&
+      notification.body.data.email === GOOD.email &&
+      notification.body.data.subject === GOOD.subject &&
+      notification.body.data.message === GOOD.message,
+    Object.keys(notification.body.data).join(",")
+  );
+  check(
+    "data.name is the submitter's name, never invented from the address",
+    notification.body.data.name === GOOD.name && notification.body.data.name !== GOOD.email,
+    JSON.stringify(notification.body.data.name)
+  );
+  check(
+    "the submitter's name reaches the notification the owner reads",
+    notification.body.data.name === "Jane Smith" && typeof notification.body.data.name === "string",
+    JSON.stringify(notification.body.data.name)
+  );
+  check(
+    "the name is trimmed on the way through, not passed through raw",
+    notification.body.data.name.trim() === notification.body.data.name
+  );
+  check(
+    "the acknowledgement carries the submitter's name too",
+    autoreply.body.data.name === GOOD.name,
+    JSON.stringify(autoreply.body.data.name)
+  );
+  check(
+    "the notification recipient's own email is the support address",
+    notification.body.recipients.length === 1 &&
+      notification.body.recipients[0].email === legal.SUPPORT_EMAIL &&
+      typeof notification.body.recipients[0].id === "string" &&
+      notification.body.recipients[0].id.length > 0,
+    JSON.stringify(notification.body.recipients)
+  );
+  check(
+    "the acknowledgement carries the submitter's own subject for its template",
+    autoreply.body.data.subject === GOOD.subject,
+    JSON.stringify(autoreply.body.data.subject)
+  );
+  check(
+    "the acknowledgement carries app_name ('CSEC Compass') for the template",
+    autoreply.body.data.app_name === "CSEC Compass",
+    JSON.stringify(autoreply.body.data.app_name)
+  );
+  check(
+    "neither trigger overrides from_name (the owner's 'No Reply' sender stands)",
+    !/from_name/.test(dataJson) && !/from_name/.test(JSON.stringify(autoreply.body.data))
+  );
+  check(
+    "no trigger payload smuggles a to_address / channel override / variables field",
+    !/to_address|channel_overrides|"variables"/.test(JSON.stringify(notification.body)) &&
+      !/to_address|channel_overrides|"variables"/.test(JSON.stringify(autoreply.body))
+  );
+  check(
+    "a trigger body carries only the two documented fields (recipients, data)",
+    JSON.stringify(Object.keys(notification.body).sort()) === JSON.stringify(["data", "recipients"]) &&
+      JSON.stringify(Object.keys(autoreply.body).sort()) === JSON.stringify(["data", "recipients"]),
+    Object.keys(notification.body).join(",")
+  );
+  check(
+    "the route documents where a trigger CANNOT set the recipient or vars",
+    /no per-trigger `to_address`/i.test(apiSrc) && /Variables page/i.test(apiSrc)
+  );
   check(
     "the automatic reply has no reply-to pointing at a person",
     autoreply.body.data.reply_to === undefined
@@ -345,19 +599,58 @@ resetCalls();
 }
 
 // ---------------------------------------------------------------------------
+section("the API route: the name travels trimmed end to end");
+
+// A padded name is what a real person types after copy-pasting; the notification
+// the owner reads must not show leading spaces in the Name cell.
+resetCalls();
+{
+  const res = await call(postReq({ ...GOOD, name: "  Jane Smith  " }, "10.2.1.1"));
+  const [notification, autoreply] = calls;
+  check("a padded name is still accepted", res.statusCode === 200 && res.body.ok === true, `${res.statusCode}`);
+  check(
+    "the notification carries the name trimmed, not padded",
+    notification.body.data.name === "Jane Smith",
+    JSON.stringify(notification.body.data.name)
+  );
+  check(
+    "the automatic reply carries the same trimmed name",
+    autoreply.body.data.name === "Jane Smith",
+    JSON.stringify(autoreply.body.data.name)
+  );
+}
+
+// An over-long name must never reach Knock — the owner's table cell would be
+// unreadable, and the sender deserves to know before the message goes.
+resetCalls();
+{
+  const res = await call(postReq({ ...GOOD, name: "n".repeat(121) }, "10.2.2.1"));
+  check("an over-long name is refused before anything is sent", res.statusCode === 400 && calls.length === 0, `${res.statusCode} / ${calls.length} calls`);
+  check("the refusal names the name field", !!res.body.fields?.name, JSON.stringify(res.body.fields));
+}
+
+// ---------------------------------------------------------------------------
 section("the API route: it refuses bad input and never trusts the body");
 
 resetCalls();
 {
   const bad = [
+    ["a missing name", { ...GOOD, name: undefined }, "name"],
+    ["an empty name", { ...GOOD, name: "" }, "name"],
+    ["a whitespace-only name", { ...GOOD, name: "   " }, "name"],
+    ["a name over the cap", { ...GOOD, name: "n".repeat(121) }, "name"],
     ["a malformed email", { ...GOOD, email: "not-an-email" }, "email"],
     ["an empty subject", { ...GOOD, subject: "   " }, "subject"],
     ["a subject over the cap", { ...GOOD, subject: "s".repeat(121) }, "subject"],
     ["an empty message", { ...GOOD, message: "" }, "message"],
     ["a message over the cap", { ...GOOD, message: "m".repeat(3001) }, "message"],
   ];
-  for (const [label, body, field] of bad) {
-    const res = await call(postReq(body, "10.3.0.1"));
+  for (const [i, [label, body, field]] of bad.entries()) {
+    // A fresh connection per case: the rate limiter counts every POST, rejected
+    // ones included, so a shared IP would let the 6th case be rate-limited
+    // instead of validation-rejected and the check would fail for the wrong
+    // reason.
+    const res = await call(postReq(body, `10.7.0.${i + 1}`));
     check(
       `${label} is rejected with a field error`,
       res.statusCode === 400 && res.body.fields && res.body.fields[field],
@@ -365,8 +658,8 @@ resetCalls();
     );
   }
   check("none of the rejected submissions were sent", calls.length === 0);
-  const boundary = await call(postReq({ ...GOOD, subject: "s".repeat(120), message: "m".repeat(3000) }, "10.3.0.2"));
-  check("the exact boundary lengths are accepted", boundary.statusCode === 200, `${boundary.statusCode}`);
+  const boundary = await call(postReq({ ...GOOD, name: "n".repeat(120), subject: "s".repeat(120), message: "m".repeat(3000) }, "10.3.0.2"));
+  check("the exact boundary lengths are accepted (name included)", boundary.statusCode === 200, `${boundary.statusCode}`);
   check("the boundary submission sent both emails", calls.length === 2);
 }
 
