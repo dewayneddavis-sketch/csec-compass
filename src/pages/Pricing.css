@@ -2,6 +2,16 @@
 .pricing-header{text-align:center;margin-bottom:2.5rem}
 .pricing-header h1{font-size:2rem;font-weight:800;color:#111827;margin-bottom:.5rem}
 .pricing-header p{color:#6b7280;font-size:1.05rem}
+/* The A5 one-pager is the site's downloadable flyer too (owner decision
+   2026-09-22). Same stable URL as before — /leave-behind.pdf, served straight
+   out of public/ — but now it is the final two-sided A5 that opens without a
+   password, where the file it replaces asked for one. It sits with the
+   access/refund line at the foot of the page (lead's re-scope): findable, not
+   loud, in the same link colour as the legal links beside it. */
+.pricing-flyer-note{margin-top:.4rem}
+.pricing-flyer-link{color:#0e7490;font-weight:600;text-decoration:none;white-space:nowrap}
+.pricing-flyer-link:hover{text-decoration:underline}
+.pricing-flyer-link::before{content:"↓ ";font-weight:700}
 .pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;align-items:start}
 .pricing-card{background:#fff;border-radius:16px;padding:2rem;box-shadow:0 1px 3px rgba(0,0,0,.06),0 4px 12px rgba(0,0,0,.03);border:2px solid #e5e7eb;position:relative;transition:border-color .2s}
 .pricing-card.popular{border-color:#2563eb;box-shadow:0 4px 24px rgba(37,99,235,.1)}

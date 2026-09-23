@@ -336,6 +336,23 @@ export default function PricingPage() {
         your data is in the{" "}
         <Link to="/privacy" className="pricing-legal-link">Privacy Policy</Link>.
       </p>
+      {/* The owner's A5 one-pager is also the site's downloadable flyer (owner
+          decision 2026-09-22): same stable URL as before — /leave-behind.pdf —
+          but now the final two-sided A5 that opens without a password, where the
+          file it replaces asked for one. Kept down here with the access/refund
+          line rather than up in the header (lead's re-scope): a parent or a
+          school weighing a licence can find it, and it does not shout over the
+          plans. */}
+      <p className="pricing-note pricing-flyer-note">
+        Prefer something you can print and pass on?{" "}
+        <a
+          className="pricing-flyer-link"
+          href="/leave-behind.pdf"
+          download="csec-compass-flyer.pdf"
+        >
+          Download our flyer (PDF)
+        </a>
+      </p>
     </div>
   );
 }
