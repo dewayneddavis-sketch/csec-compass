@@ -13,16 +13,20 @@
 //      on its way while nothing left the building, and the visitor would never
 //      know to try again. Asserted here by driving the real handler with the
 //      key absent AND with Knock failing, and pinning that neither returns ok.
-//   2. AN ADDRESS WRITTEN IN TWO PLACES. The delivery address lives in
-//      src/data/legal.js; the sentences that name it are built from it. A
-//      second literal copy is how the form and the API start disagreeing, and
-//      how the owner's personal address leaks into user-facing copy. Asserted
-//      by counting the literal everywhere in src/ and api/, and by grepping for
-//      that personal address in all of it.
+//   2. A SECOND COPY OF THE COPY THAT HAS DRIFTED FROM THE FIRST. The API route
+//      is self-contained by design (it imports nothing, because Vercel builds
+//      each api/ file on its own and an import from ../src/ failed the deploy on
+//      2026-09-23), so it MIRRORS the shared wording and validation instead of
+//      importing them. A mirror is only safe if something proves it has not
+//      drifted — this file does: every mirrored value must equal the real one in
+//      src/data/legal.js / src/data/contact.js, the mirrored validator must
+//      return byte-identical results, and the delivery address may be spelled
+//      out only in those two files (plus the owner's personal address may not
+//      appear anywhere at all).
 //
 // What else it checks: the tab is reachable (route + site-wide nav), the rules
-// can't drift (caps/honeypot/copy come from the shared module on BOTH sides),
-// the honeypot really drops a submission, the rate limit really bites, and the
+// can't drift (caps/honeypot/copy agree with the page's shared module), the
+// honeypot really drops a submission, the rate limit really bites, and the
 // exact wording of the automatic reply is the wording the owner asked for.
 //
 // Run it with the rest before any contact/pricing PR:
@@ -77,6 +81,9 @@ const privacySrc = read("src/pages/PrivacyPage.jsx");
 const legal = await import("../src/data/legal.js");
 const shared = await import("../src/data/contact.js");
 const handler = (await import("../api/contact.js")).default;
+// The API route is self-contained, so its mirrored copy is imported here and
+// every one of its values is compared against the real thing below.
+const apiContact = await import("../api/contact.js");
 
 // The route logs honestly whenever it cannot send. Those lines would read like
 // harness noise, so they are captured and asserted on instead of printed — a
@@ -179,13 +186,18 @@ function walk(dir) {
 const sourceFiles = [...walk("src"), ...walk("api")];
 const addressFiles = sourceFiles.filter((f) => /support@csec-compass\.com/.test(readFileSync(join(root, f), "utf8")));
 check(
-  "the support address is spelled out in exactly one file (src/data/legal.js)",
-  addressFiles.length === 1 && addressFiles[0] === "src/data/legal.js",
+  "the support address is spelled out in exactly two files, and they agree",
+  addressFiles.length === 2 &&
+    [...addressFiles].sort().join(",") === "api/contact.js,src/data/legal.js" &&
+    apiContact.SUPPORT_EMAIL === legal.SUPPORT_EMAIL,
   addressFiles.join(", ")
 );
 check("contact.js builds its sentences from that constant", /import \{ SUPPORT_EMAIL \} from "\.\/legal\.js"/.test(contactSrc));
 check("ContactPage uses the constant for the recipient field", /import \{ SUPPORT_EMAIL \} from "\.\.\/data\/legal\.js"/.test(pageSrc) && /value=\{SUPPORT_EMAIL\}/.test(pageSrc));
-check("api/contact.js delivers to the same constant", /import \{ SUPPORT_EMAIL \} from "\.\.\/src\/data\/legal\.js"/.test(apiSrc));
+check(
+  "api/contact.js is self-contained: no relative import, and its mirror is the same address",
+  !/from\s+"\.\.?\//.test(apiSrc) && apiContact.SUPPORT_EMAIL === legal.SUPPORT_EMAIL
+);
 check(
   "the delivery address is not a request field (a visitor cannot redirect our mail)",
   !/body\.(recipient|to|support_email)\b/.test(apiSrc) && /recipients: \[\{ id: SUPPORT_EMAIL, email: SUPPORT_EMAIL \}\]/.test(apiSrc)
@@ -215,11 +227,33 @@ if (built) {
 section("client and server share the rules (they cannot drift)");
 
 check("ContactPage imports the shared rules", /from "\.\.\/data\/contact\.js"/.test(pageSrc));
-check("api/contact.js imports the same shared rules", /from "\.\.\/src\/data\/contact\.js"/.test(apiSrc));
+check(
+  "api/contact.js mirrors the shared rules instead of importing them (it must stay self-contained)",
+  !/^\s*import\b.*from\s+"[^"]*(\.\.\/|src\/)/m.test(apiSrc) && !/from "\.\.\/src\//.test(apiSrc)
+);
+// Every mirrored constant must equal the real one — this is the drift gate.
+const MIRRORED = [
+  ["SUPPORT_EMAIL", legal],
+  ["CONTACT_SUBJECT_MAX", shared],
+  ["CONTACT_MESSAGE_MAX", shared],
+  ["CONTACT_RATE_LIMIT", shared],
+  ["CONTACT_RATE_WINDOW_MINUTES", shared],
+  ["CONTACT_HONEYPOT_FIELD", shared],
+  ["CONTACT_ACK_SUBJECT", shared],
+  ["CONTACT_ACK_BODY", shared],
+  ["CONTACT_ACK_NOTE", shared],
+];
+for (const [name, source] of MIRRORED) {
+  check(
+    `the api mirror of ${name} equals the shared constant`,
+    apiContact[name] !== undefined && apiContact[name] === source[name],
+    `api=${JSON.stringify(apiContact[name])} shared=${JSON.stringify(source[name])}`
+  );
+}
 check("the subject cap comes from the constant on the page", /maxLength=\{CONTACT_SUBJECT_MAX\}/.test(pageSrc));
 check("the message cap comes from the constant on the page", /maxLength=\{CONTACT_MESSAGE_MAX\}/.test(pageSrc));
 check("the page does not hardcode the caps", !/maxLength=\{120\}|maxLength=\{3000\}/.test(pageSrc));
-check("the server validates with the shared validator", /validateContactSubmission\(body\)/.test(apiSrc));
+check("the server validates with its own copy of the shared validator", /validateContactSubmission\(body\)/.test(apiSrc));
 check("the honeypot field name comes from the constant on both sides", /CONTACT_HONEYPOT_FIELD/.test(pageSrc) && /CONTACT_HONEYPOT_FIELD/.test(apiSrc));
 check("the success sentence on screen is the shared one", /\{CONTACT_ACK_BODY\}/.test(pageSrc) && shared.CONTACT_ACK_BODY.length > 0);
 
@@ -245,6 +279,54 @@ check(
   "shared validation accepts a real address and rejects a broken one",
   shared.contactEmailIsValid("parent@example.com") && !shared.contactEmailIsValid("parent@example") && !shared.contactEmailIsValid("a b@c.com")
 );
+
+// The mirror has to behave, not just look, the same: same inputs, byte-identical
+// output. If someone edits one validator and not the other, this goes red.
+{
+  const INPUTS = [
+    undefined,
+    null,
+    "not an object",
+    {},
+    { email: "parent@example.com", subject: "Bundle question", message: "Does it cover Food?" },
+    { email: "not-an-email", subject: "ok", message: "ok" },
+    { email: "parent@example.com", subject: "   ", message: "ok" },
+    { email: "parent@example.com", subject: "s".repeat(120), message: "ok" },
+    { email: "parent@example.com", subject: "s".repeat(121), message: "ok" },
+    { email: "parent@example.com", subject: "ok", message: "" },
+    { email: "parent@example.com", subject: "ok", message: "m".repeat(3000) },
+    { email: "parent@example.com", subject: "ok", message: "m".repeat(3001) },
+    { email: "  parent@example.com  ", subject: "  padded  ", message: "  padded  " },
+    { email: "a".repeat(250) + "@x.com", subject: "ok", message: "ok" },
+    { email: "parent@example.com", subject: 42, message: 7 },
+  ];
+  const mismatches = INPUTS.filter(
+    (input) =>
+      JSON.stringify(apiContact.validateContactSubmission(input)) !==
+      JSON.stringify(shared.validateContactSubmission(input))
+  );
+  check(
+    "the api validator returns byte-identical results to the shared one on 15 payloads",
+    mismatches.length === 0,
+    `${mismatches.length} mismatch(es)`
+  );
+  const emailCases = ["parent@example.com", "parent@example", "a b@c.com", "", "  ", "x@y.z", "a".repeat(250) + "@x.com", null, undefined, 7];
+  check(
+    "the api email check agrees with the shared one on every case",
+    emailCases.every((v) => apiContact.contactEmailIsValid(v) === shared.contactEmailIsValid(v))
+  );
+  check(
+    "the api notification subject is built the same way",
+    ["Hi", "  spaced  ", "", "About the Maths bundle"].every(
+      (s) => apiContact.contactNotificationSubject(s) === shared.contactNotificationSubject(s)
+    ) && apiContact.contactNotificationSubject("Hi") === "New contact message: Hi"
+  );
+  check(
+    "the api mirror uses its own constants (a stray import or shared object would hide drift)",
+    apiContact.CONTACT_SUBJECT_MAX === shared.CONTACT_SUBJECT_MAX &&
+      apiContact.validateContactSubmission !== shared.validateContactSubmission
+  );
+}
 
 // ---------------------------------------------------------------------------
 section("the form itself");

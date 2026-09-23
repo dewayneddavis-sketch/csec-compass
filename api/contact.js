@@ -3,9 +3,9 @@
 // Sends two emails through Knock (the team's email service), and stores
 // nothing: there is no database write here by design (owner spec 2026-09-23).
 //
-//   1. NOTIFICATION to SUPPORT_EMAIL (src/data/legal.js — the one place any
-//      address is written down). Reply-To is the submitter, so the owner
-//      hitting Reply in their inbox answers the customer directly.
+//   1. NOTIFICATION to SUPPORT_EMAIL, the public support address. Reply-To is
+//      the submitter, so the owner hitting Reply in their inbox answers the
+//      customer directly.
 //   2. AUTOMATIC REPLY to the submitter, from a no-reply-style sender, saying
 //      the message arrived and that the address is not monitored.
 //
@@ -17,20 +17,102 @@
 // workflows do not exist yet, Knock answers 404 and this route says so
 // honestly (502) instead of reporting a success nobody received.
 //
-// Self-contained like the other functions here (no api/_lib imports, which
-// crash on Vercel with FUNCTION_INVOCATION_FAILED). The shared constants come
-// from src/, which is plain ESM and traced into the function bundle.
-import { SUPPORT_EMAIL } from "../src/data/legal.js";
-import {
-  CONTACT_ACK_BODY,
-  CONTACT_ACK_NOTE,
-  CONTACT_ACK_SUBJECT,
-  CONTACT_HONEYPOT_FIELD,
-  CONTACT_RATE_LIMIT,
-  CONTACT_RATE_WINDOW_MINUTES,
-  contactNotificationSubject,
-  validateContactSubmission,
-} from "../src/data/contact.js";
+// ---------------------------------------------------------------------------
+// FULLY SELF-CONTAINED ON PURPOSE (deploy fix 2026-09-23).
+//
+// Vercel builds each file in api/ as its own Serverless Function and bundles
+// only what that file needs. This route used to import its shared wording and
+// validation from ../src/data/*.js — a directory outside api/ that only the
+// React app uses — and the deployment failed. Every function that has ever
+// deployed from this repo imports npm packages and its own directory only, so
+// this file now does the same: the npm-free parts it shares with the browser
+// are MIRRORED below (the block marked "MIRROR") instead of imported.
+//
+// A mirror is only safe if something proves it has not drifted, so
+// tools/check-contact.mjs imports this file and asserts every mirrored value
+// equals the real one in src/data/legal.js and src/data/contact.js, and that
+// the mirrored validator returns byte-identical results to the shared one.
+// Change the copy in ONE place and that harness goes red here.
+//
+// (The names below are exported for that harness. Vercel routes this file by
+// its default export.)
+// No imports at all: this file needs nothing from npm or from elsewhere in the
+// repo, so the function bundle is exactly this one file.
+
+// === MIRROR OF src/data/legal.js ===========================================
+// The public support address: what the contact form delivers to and what
+// product pages show. Never the owner's personal address.
+export const SUPPORT_EMAIL = "support@csec-compass.com";
+
+// === MIRROR OF src/data/contact.js =========================================
+// Length caps. The client uses them as maxLength AND as its own pre-submit
+// check; the server uses them as the real rule (a client check is a courtesy,
+// never the guard).
+export const CONTACT_SUBJECT_MAX = 120;
+export const CONTACT_MESSAGE_MAX = 3000;
+
+// Server-side rate limit: 5 submissions per IP per hour (owner spec).
+export const CONTACT_RATE_LIMIT = 5;
+export const CONTACT_RATE_WINDOW_MINUTES = 60;
+
+// The hidden field a bot fills in and a person never sees. Named here because
+// the page must render exactly the field the API looks for — a rename on one
+// side would silently turn the trap off.
+export const CONTACT_HONEYPOT_FIELD = "website";
+
+// The automatic reply. The owner's review fixed this wording, so it is written
+// once in src/ and mirrored here verbatim.
+export const CONTACT_ACK_SUBJECT = "We received your message — CSEC Compass";
+export const CONTACT_ACK_BODY =
+  "We have received your message. Please allow 24–48 hours for a response.";
+// Honesty line: the reply address is not monitored, and the message says so
+// rather than leaving someone replying into a void.
+export const CONTACT_ACK_NOTE =
+  "This is an automated confirmation. Replies to this message are not monitored — to add anything, use the contact form again or write to " +
+  SUPPORT_EMAIL +
+  ".";
+
+// The same validation on both sides of the wire. Deliberately simple and
+// deliberately shared: 254 characters, one @, no spaces, a dot in the domain.
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+export function contactEmailIsValid(value) {
+  const email = String(value == null ? "" : value).trim();
+  return email.length > 0 && email.length <= 254 && EMAIL_RE.test(email);
+}
+
+// "New contact message: <their subject>" — built in one place so the API and
+// any future surface cannot disagree about the notification's subject line.
+export function contactNotificationSubject(subject) {
+  return `New contact message: ${String(subject == null ? "" : subject).trim()}`;
+}
+
+// Validates a raw form/JSON payload. Returns { ok, errors, value } where value
+// is the trimmed, ready-to-send payload.
+export function validateContactSubmission(input) {
+  const src = input && typeof input === "object" ? input : {};
+  const email = String(src.email == null ? "" : src.email).trim();
+  const subject = String(src.subject == null ? "" : src.subject).trim();
+  const message = String(src.message == null ? "" : src.message).trim();
+  const errors = {};
+
+  if (!contactEmailIsValid(email)) {
+    errors.email = "Enter a valid email address so we can reply to you.";
+  }
+  if (!subject) {
+    errors.subject = "Add a subject so we know what this is about.";
+  } else if (subject.length > CONTACT_SUBJECT_MAX) {
+    errors.subject = `Keep the subject to ${CONTACT_SUBJECT_MAX} characters or fewer.`;
+  }
+  if (!message) {
+    errors.message = "Tell us what you need help with.";
+  } else if (message.length > CONTACT_MESSAGE_MAX) {
+    errors.message = `Keep your message to ${CONTACT_MESSAGE_MAX} characters or fewer.`;
+  }
+
+  const ok = Object.keys(errors).length === 0;
+  return { ok, errors, value: { email, subject, message } };
+}
+// === END MIRROR ============================================================
 
 const KNOCK_API_BASE = "https://api.knock.app/v1";
 // The two workflows the owner creates in Knock's dashboard. Overridable by env
