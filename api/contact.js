@@ -115,6 +115,22 @@ export function validateContactSubmission(input) {
 // === END MIRROR ============================================================
 
 const KNOCK_API_BASE = "https://api.knock.app/v1";
+// --- The Knock trigger contract (verified against Knock's own OpenAPI, 2026-09-23) -
+// POST /v1/workflows/{key}/trigger accepts exactly recipients, data, actor,
+// tenant, cancellation_key and settings. There is no per-trigger `to_address`
+// override and no `variables` field, which decides two things in this file:
+//   * WHERE THE MAIL LANDS is the recipient's own `email` property — Knock's
+//     docs: "by default, Knock will send your emails to the email property
+//     stored on the recipient". The owner's notification step sets no
+//     to_address, so the recipient below IS the delivery mechanism, and it must
+//     be the support address.
+//   * `vars.*` in a template comes from the account's Variables page, which a
+//     trigger CANNOT set. app_name is therefore also passed as data.app_name,
+//     so a template can read it either way without a dashboard edit.
+// The recipient id is a stable, human-readable handle (Knock keys a user by
+// id); the address itself travels in `email`.
+export const NOTIFICATION_RECIPIENT_ID = "csec-compass-support";
+export const APP_NAME = "CSEC Compass";
 // The two workflows the owner creates in Knock's dashboard. Overridable by env
 // so a renamed workflow needs no deploy.
 const NOTIFICATION_WORKFLOW = process.env.KNOCK_CONTACT_WORKFLOW || "contact-notification";
@@ -251,20 +267,34 @@ export default async function handler(req, res) {
     });
   }
 
+  // The form collects email/subject/message (there is no name field), so a name
+  // is forwarded only when a client actually sends one - never invented, and
+  // never lifted out of the email address.
+  const submitterName = String(body?.name == null ? "" : body.name).trim().slice(0, 120);
   const submittedAt = new Date().toISOString();
 
   // 1. The notification the owner reads. Everything the owner needs to reply is
   // in here: who wrote, what about, the message, the time.
   const notification = await triggerWorkflow(NOTIFICATION_WORKFLOW, {
-    recipients: [{ id: SUPPORT_EMAIL, email: SUPPORT_EMAIL }],
+    // The owner's notification step has no to_address, so this recipient's email
+    // is what makes the mail arrive at support@csec-compass.com.
+    recipients: [{ id: NOTIFICATION_RECIPIENT_ID, email: SUPPORT_EMAIL }],
+    // name/email/subject/message are the keys the owner's notification template
+    // renders (subject = the submitter's own subject line; reply_to_address in
+    // the workflow reads {{ data.email }}). The remaining keys are extras the
+    // same template may use; none of them route mail.
     data: {
+      name: submitterName,
+      email: value.email,
+      subject: value.subject,
+      message: value.message,
       reply_to: value.email,
       submitter_email: value.email,
       submission_subject: value.subject,
-      message: value.message,
-      submitted_at: submittedAt,
       notification_subject: contactNotificationSubject(value.subject),
       support_email: SUPPORT_EMAIL,
+      submitted_at: submittedAt,
+      app_name: APP_NAME,
     },
   });
 
@@ -280,14 +310,21 @@ export default async function handler(req, res) {
   // us, so a failure here is logged and reported in the response but does not
   // turn a delivered message into an error the sender has to resend.
   const autoreply = await triggerWorkflow(AUTOREPLY_WORKFLOW, {
+    // The acknowledgement goes to the submitter: the template's from_name
+    // ("No Reply") is set in the owner's workflow and is deliberately NOT
+    // overridden here.
     recipients: [{ id: value.email, email: value.email }],
     data: {
+      subject: value.subject,
+      name: submitterName,
+      email: value.email,
+      app_name: APP_NAME,
+      submission_subject: value.subject,
       ack_subject: CONTACT_ACK_SUBJECT,
       ack_body: CONTACT_ACK_BODY,
       ack_note: CONTACT_ACK_NOTE,
-      submission_subject: value.subject,
-      submitted_at: submittedAt,
       support_email: SUPPORT_EMAIL,
+      submitted_at: submittedAt,
     },
   });
   if (!autoreply.ok) {

@@ -200,7 +200,7 @@ check(
 );
 check(
   "the delivery address is not a request field (a visitor cannot redirect our mail)",
-  !/body\.(recipient|to|support_email)\b/.test(apiSrc) && /recipients: \[\{ id: SUPPORT_EMAIL, email: SUPPORT_EMAIL \}\]/.test(apiSrc)
+  !/body\.(recipient|to|support_email)\b/.test(apiSrc) && /recipients: \[\{ id: NOTIFICATION_RECIPIENT_ID, email: SUPPORT_EMAIL \}\]/.test(apiSrc)
 );
 
 // ---------------------------------------------------------------------------
@@ -397,7 +397,7 @@ resetCalls();
   check("the two workflows are distinct", notification.url !== autoreply.url);
   check(
     "the notification goes to the support address",
-    JSON.stringify(notification.body.recipients) === JSON.stringify([{ id: legal.SUPPORT_EMAIL, email: legal.SUPPORT_EMAIL }]),
+    JSON.stringify(notification.body.recipients) === JSON.stringify([{ id: "csec-compass-support", email: legal.SUPPORT_EMAIL }]),
     JSON.stringify(notification.body.recipients)
   );
   check("the notification carries the submitter as reply-to", notification.body.data.reply_to === GOOD.email);
@@ -418,6 +418,62 @@ resetCalls();
   check("the automatic reply carries the exact approved subject", autoreply.body.data.ack_subject === shared.CONTACT_ACK_SUBJECT);
   check("the automatic reply carries the exact approved body", autoreply.body.data.ack_body === shared.CONTACT_ACK_BODY);
   check("the automatic reply carries the not-monitored note", /not monitored/i.test(autoreply.body.data.ack_note));
+  // --- The owner's real Knock workflows (created 2026-09-23) ---------------
+  // Their templates render data.name / data.email / data.subject / data.message
+  // (notification) and data.subject / vars.app_name (acknowledgement). These
+  // checks pin the exact key set, so a rename here goes red instead of quietly
+  // emptying a cell of the owner's email.
+  const dataJson = JSON.stringify(notification.body.data);
+  check(
+    "the notification carries the template's keys: name, email, subject, message",
+    ["name", "email", "subject", "message"].every((k) => k in notification.body.data) &&
+      notification.body.data.email === GOOD.email &&
+      notification.body.data.subject === GOOD.subject &&
+      notification.body.data.message === GOOD.message,
+    Object.keys(notification.body.data).join(",")
+  );
+  check(
+    "data.name is the submitter's name, never invented from the address",
+    typeof notification.body.data.name === "string" && notification.body.data.name !== GOOD.email,
+    JSON.stringify(notification.body.data.name)
+  );
+  check(
+    "the notification recipient's own email is the support address",
+    notification.body.recipients.length === 1 &&
+      notification.body.recipients[0].email === legal.SUPPORT_EMAIL &&
+      typeof notification.body.recipients[0].id === "string" &&
+      notification.body.recipients[0].id.length > 0,
+    JSON.stringify(notification.body.recipients)
+  );
+  check(
+    "the acknowledgement carries the submitter's own subject for its template",
+    autoreply.body.data.subject === GOOD.subject,
+    JSON.stringify(autoreply.body.data.subject)
+  );
+  check(
+    "the acknowledgement carries app_name ('CSEC Compass') for the template",
+    autoreply.body.data.app_name === "CSEC Compass",
+    JSON.stringify(autoreply.body.data.app_name)
+  );
+  check(
+    "neither trigger overrides from_name (the owner's 'No Reply' sender stands)",
+    !/from_name/.test(dataJson) && !/from_name/.test(JSON.stringify(autoreply.body.data))
+  );
+  check(
+    "no trigger payload smuggles a to_address / channel override / variables field",
+    !/to_address|channel_overrides|"variables"/.test(JSON.stringify(notification.body)) &&
+      !/to_address|channel_overrides|"variables"/.test(JSON.stringify(autoreply.body))
+  );
+  check(
+    "a trigger body carries only the two documented fields (recipients, data)",
+    JSON.stringify(Object.keys(notification.body).sort()) === JSON.stringify(["data", "recipients"]) &&
+      JSON.stringify(Object.keys(autoreply.body).sort()) === JSON.stringify(["data", "recipients"]),
+    Object.keys(notification.body).join(",")
+  );
+  check(
+    "the route documents where a trigger CANNOT set the recipient or vars",
+    /no per-trigger `to_address`/i.test(apiSrc) && /Variables page/i.test(apiSrc)
+  );
   check(
     "the automatic reply has no reply-to pointing at a person",
     autoreply.body.data.reply_to === undefined
