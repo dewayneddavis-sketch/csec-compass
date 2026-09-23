@@ -6,6 +6,7 @@ import {
   CONTACT_DIRECT_NOTE,
   CONTACT_HONEYPOT_FIELD,
   CONTACT_MESSAGE_MAX,
+  CONTACT_NAME_MAX,
   CONTACT_RESPONSE_WINDOW,
   CONTACT_SUBJECT_MAX,
   CONTACT_UNAVAILABLE_NOTE,
@@ -22,7 +23,11 @@ import "./ContactPage.css";
 //   2. It never shows the success sentence unless the API said it sent. If the
 //      email service is not configured (503) or the send fails (502/429), the
 //      visitor is told the truth and given the direct address instead.
-const EMPTY = { email: "", subject: "", message: "" };
+// The form's fields, in the order a visitor fills them in. Your name comes
+// first (under the fixed, read-only "To" row) because the notification the
+// owner reads renders it beside the address — it is what tells the owner who
+// wrote in, so the form asks for it before it asks for anything else.
+const EMPTY = { name: "", email: "", subject: "", message: "" };
 
 export default function ContactPage() {
   const [form, setForm] = useState(EMPTY);
@@ -137,6 +142,29 @@ export default function ContactPage() {
               tabIndex={-1}
             />
             <p className="contact-hint">Messages go straight to our support inbox.</p>
+          </div>
+
+          <div className="contact-field">
+            <label htmlFor="contact-name">Your name</label>
+            <input
+              id="contact-name"
+              className="contact-input"
+              type="text"
+              name="name"
+              autoComplete="name"
+              placeholder="Jane Smith"
+              maxLength={CONTACT_NAME_MAX}
+              value={form.name}
+              onChange={update("name")}
+              aria-invalid={errors.name ? "true" : undefined}
+              aria-describedby={errors.name ? "contact-name-error" : undefined}
+            />
+            <p className="contact-hint">So we know who we are replying to.</p>
+            {errors.name ? (
+              <p className="contact-error" id="contact-name-error" role="alert">
+                {errors.name}
+              </p>
+            ) : null}
           </div>
 
           <div className="contact-field">

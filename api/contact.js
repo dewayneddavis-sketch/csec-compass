@@ -48,6 +48,12 @@ export const SUPPORT_EMAIL = "support@csec-compass.com";
 // Length caps. The client uses them as maxLength AND as its own pre-submit
 // check; the server uses them as the real rule (a client check is a courtesy,
 // never the guard).
+//
+// The name cap is the same number as the subject cap, and for the same reason:
+// the owner's notification email renders the submitter's name in a table cell,
+// so a name is required (a blank cell tells the owner nothing) and bounded (an
+// essay in a table cell is unreadable).
+export const CONTACT_NAME_MAX = 120;
 export const CONTACT_SUBJECT_MAX = 120;
 export const CONTACT_MESSAGE_MAX = 3000;
 
@@ -90,11 +96,20 @@ export function contactNotificationSubject(subject) {
 // is the trimmed, ready-to-send payload.
 export function validateContactSubmission(input) {
   const src = input && typeof input === "object" ? input : {};
+  const name = String(src.name == null ? "" : src.name).trim();
   const email = String(src.email == null ? "" : src.email).trim();
   const subject = String(src.subject == null ? "" : src.subject).trim();
   const message = String(src.message == null ? "" : src.message).trim();
   const errors = {};
 
+  // A name is required, not optional: the owner's notification email renders it
+  // in a table cell next to the address, so an empty one is a blank row in the
+  // mailbox and no way to tell who wrote in.
+  if (!name) {
+    errors.name = "Enter your name so we know who to reply to.";
+  } else if (name.length > CONTACT_NAME_MAX) {
+    errors.name = `Keep your name to ${CONTACT_NAME_MAX} characters or fewer.`;
+  }
   if (!contactEmailIsValid(email)) {
     errors.email = "Enter a valid email address so we can reply to you.";
   }
@@ -110,7 +125,7 @@ export function validateContactSubmission(input) {
   }
 
   const ok = Object.keys(errors).length === 0;
-  return { ok, errors, value: { email, subject, message } };
+  return { ok, errors, value: { name, email, subject, message } };
 }
 // === END MIRROR ============================================================
 
@@ -267,10 +282,11 @@ export default async function handler(req, res) {
     });
   }
 
-  // The form collects email/subject/message (there is no name field), so a name
-  // is forwarded only when a client actually sends one - never invented, and
-  // never lifted out of the email address.
-  const submitterName = String(body?.name == null ? "" : body.name).trim().slice(0, 120);
+  // The form collects a name/email/subject/message. value.name is already
+  // trimmed and length-checked by the shared validator, so it is exactly what
+  // the submitter typed; the slice is belt-and-braces, never an invention (an
+  // empty name was refused above with a field error).
+  const submitterName = value.name.slice(0, CONTACT_NAME_MAX);
   const submittedAt = new Date().toISOString();
 
   // 1. The notification the owner reads. Everything the owner needs to reply is
