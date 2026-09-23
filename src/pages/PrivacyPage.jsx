@@ -99,6 +99,12 @@ export default function PrivacyPage() {
             The card number, expiry date and security code are entered there, are used by Stripe to
             take the payment, and never reach CSEC Compass.
           </li>
+          <li>
+            <strong>Messages you send us.</strong> When you use the contact form we receive the email
+            address you give, your subject and your message. They are used to reply to your enquiry
+            and are not shared or used for anything else. The form emails us rather than writing to a
+            database, so there is no separate inbox copy stored on the platform.
+          </li>
         </ul>
       </section>
 
