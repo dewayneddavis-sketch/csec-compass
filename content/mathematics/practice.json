@@ -1298,5 +1298,941 @@
   "answer": "$225",
   "explanation": "Step 1 — Split 12.5% into 10% + 2.5% of $200:\n10% = $20 and 2.5% = $5\nStep 2 — Add them for the VAT:\n$20 + $5 = $25\nStep 3 — Add the VAT to the price:\n$200 + $25 = $225",
   "topic": "fractions-decimals-percentages"
+ },
+ {
+  "id": "p101",
+  "question": "A shop buys a phone case for $350 and sells it for $420. What is the percentage profit?",
+  "options": [
+   "20%",
+   "17%",
+   "70%",
+   "83.3%"
+  ],
+  "answer": "20%",
+  "explanation": "Step 1 — Find the profit in dollars:\nProfit = selling price − cost price = 420 − 350 = $70\nStep 2 — Write profit as a percentage of the COST price:\n(70 ÷ 350) × 100 = 20%",
+  "topic": "profit-loss-and-discounts"
+ },
+ {
+  "id": "p102",
+  "question": "A dress is marked at $6,500 and sold at a 30% discount. What is the selling price?",
+  "options": [
+   "$4,550",
+   "$1,950",
+   "$4,500",
+   "$6,470"
+  ],
+  "answer": "$4,550",
+  "explanation": "Step 1 — Work out the discount in dollars:\n30% of 6,500 = 0.30 × 6,500 = $1,950\nStep 2 — Subtract the discount from the marked price:\n6,500 − 1,950 = $4,550\nShortcut: 70% of 6,500 = $4,550",
+  "topic": "profit-loss-and-discounts"
+ },
+ {
+  "id": "p103",
+  "question": "A trader makes a 15% profit when she sells a bag for $5,750. What was the cost price?",
+  "options": [
+   "$5,000",
+   "$4,887.50",
+   "$6,612.50",
+   "$5,350"
+  ],
+  "answer": "$5,000",
+  "explanation": "Step 1 — Realise that the selling price is 115% of the cost price:\nselling price = 100% + 15% = 115% of cost price\nStep 2 — Divide by the decimal equivalent of 115%:\ncost price = 5,750 ÷ 1.15 = $5,000\nCheck: 15% of 5,000 = 750, and 5,000 + 750 = 5,750",
+  "topic": "profit-loss-and-discounts"
+ },
+ {
+  "id": "p104",
+  "question": "Find the simple interest on $8,000 invested at 6% per annum for 2.5 years.",
+  "options": [
+   "$1,200",
+   "$1,440",
+   "$480",
+   "$1,280"
+  ],
+  "answer": "$1,200",
+  "explanation": "Step 1 — Write the simple interest formula:\nI = (P × R × T) ÷ 100\nStep 2 — Substitute P = 8,000, R = 6 and T = 2.5:\nI = (8,000 × 6 × 2.5) ÷ 100 = 120,000 ÷ 100\nStep 3 — State the interest:\nI = $1,200",
+  "topic": "simple-and-compound-interest"
+ },
+ {
+  "id": "p105",
+  "question": "$5,000 is invested at 10% per annum compound interest. What is the total amount after 2 years?",
+  "options": [
+   "$6,050",
+   "$6,000",
+   "$6,100",
+   "$5,500"
+  ],
+  "answer": "$6,050",
+  "explanation": "Step 1 — Write the compound interest formula:\nA = P(1 + R/100)^n\nStep 2 — Substitute P = 5,000, R = 10 and n = 2:\nA = 5,000(1 + 0.10)² = 5,000 × 1.21\nStep 3 — State the amount (not the interest):\nA = $6,050, so the interest earned is $1,050",
+  "topic": "simple-and-compound-interest"
+ },
+ {
+  "id": "p106",
+  "question": "How much more interest does $10,000 earn at 5% per annum compound rather than simple interest over 2 years?",
+  "options": [
+   "$25",
+   "$50",
+   "$500",
+   "$0"
+  ],
+  "answer": "$25",
+  "explanation": "Step 1 — Find the simple interest over 2 years:\nI = (10,000 × 5 × 2) ÷ 100 = $1,000\nStep 2 — Find the compound interest:\nA = 10,000(1.05)² = $11,025, so interest = $1,025\nStep 3 — Subtract to find the extra interest:\n1,025 − 1,000 = $25",
+  "topic": "simple-and-compound-interest"
+ },
+ {
+  "id": "p107",
+  "question": "A motorcycle has a cash price of $60,000. On hire purchase it is bought with a 25% deposit and 18 monthly instalments of $3,500. What is the total hire purchase price?",
+  "options": [
+   "$78,000",
+   "$63,000",
+   "$75,000",
+   "$72,000"
+  ],
+  "answer": "$78,000",
+  "explanation": "Step 1 — Find the deposit:\n25% of 60,000 = 0.25 × 60,000 = $15,000\nStep 2 — Find the total paid in instalments:\n18 × 3,500 = $63,000\nStep 3 — Add the deposit and the instalments:\n15,000 + 63,000 = $78,000",
+  "topic": "hire-purchase-and-instalments"
+ },
+ {
+  "id": "p108",
+  "question": "The same motorcycle costs $78,000 on hire purchase against a cash price of $60,000. The extra cost is what percentage of the cash price?",
+  "options": [
+   "30%",
+   "25%",
+   "18%",
+   "23%"
+  ],
+  "answer": "30%",
+  "explanation": "Step 1 — Find the extra cost in dollars:\n78,000 − 60,000 = $18,000\nStep 2 — Express it as a percentage of the CASH price:\n(18,000 ÷ 60,000) × 100\nStep 3 — Complete the calculation:\n0.30 × 100 = 30%",
+  "topic": "hire-purchase-and-instalments"
+ },
+ {
+  "id": "p109",
+  "question": "A stove is sold on hire purchase for a deposit of $4,000 plus 10 monthly payments of $1,850. What is the total hire purchase price?",
+  "options": [
+   "$22,500",
+   "$18,500",
+   "$22,000",
+   "$23,500"
+  ],
+  "answer": "$22,500",
+  "explanation": "Step 1 — Multiply to find the total of the instalments:\n10 × 1,850 = $18,500\nStep 2 — Add the deposit:\n18,500 + 4,000 = $22,500",
+  "topic": "hire-purchase-and-instalments"
+ },
+ {
+  "id": "p110",
+  "question": "GCT is charged at 15%. What does a customer pay in total for goods priced at $4,200?",
+  "options": [
+   "$4,830",
+   "$4,230",
+   "$4,800",
+   "$630"
+  ],
+  "answer": "$4,830",
+  "explanation": "Step 1 — Find the tax on the price:\n15% of 4,200 = 0.15 × 4,200 = $630\nStep 2 — Add the tax to the marked price:\n4,200 + 630 = $4,830\nShortcut: 4,200 × 1.15 = $4,830",
+  "topic": "taxes-and-utility-bills"
+ },
+ {
+  "id": "p111",
+  "question": "A household uses 240 kWh of electricity in a month. The rate is $28.50 per kWh and there is a fixed service charge of $900. What is the bill before tax?",
+  "options": [
+   "$7,740",
+   "$6,840",
+   "$8,640",
+   "$7,650"
+  ],
+  "answer": "$7,740",
+  "explanation": "Step 1 — Work out the charge for the units used:\n240 × 28.50 = $6,840\nStep 2 — Add the fixed service charge:\n6,840 + 900 = $7,740",
+  "topic": "taxes-and-utility-bills"
+ },
+ {
+  "id": "p112",
+  "question": "Chargeable income of $120,000 is taxed at 25% on the first $100,000 and 30% on the remainder. How much income tax is due?",
+  "options": [
+   "$31,000",
+   "$30,000",
+   "$36,000",
+   "$25,000"
+  ],
+  "answer": "$31,000",
+  "explanation": "Step 1 — Tax the first band:\n25% of 100,000 = $25,000\nStep 2 — Tax the amount above the threshold:\n120,000 − 100,000 = 20,000, and 30% of 20,000 = $6,000\nStep 3 — Add the two bands:\n25,000 + 6,000 = $31,000",
+  "topic": "taxes-and-utility-bills"
+ },
+ {
+  "id": "p113",
+  "question": "The exchange rate is US$1 = J$158.40. How many US dollars does J$79,200 buy?",
+  "options": [
+   "US$500",
+   "US$506.25",
+   "US$620",
+   "US$501.60"
+  ],
+  "answer": "US$500",
+  "explanation": "Step 1 — Decide the operation: Jamaican dollars to US dollars means dividing.\nJ$79,200 ÷ 158.40\nStep 2 — Complete the division:\n79,200 ÷ 158.40 = 500\nStep 3 — State the answer with its currency:\nUS$500",
+  "topic": "exchange-rates-and-currency"
+ },
+ {
+  "id": "p114",
+  "question": "At US$1 = J$158.40, how much is US$420 worth in Jamaican dollars?",
+  "options": [
+   "J$66,528",
+   "J$2,651.52",
+   "J$66,000",
+   "J$68,400"
+  ],
+  "answer": "J$66,528",
+  "explanation": "Step 1 — Decide the operation: US dollars to Jamaican dollars means multiplying.\nUS$420 × 158.40\nStep 2 — Complete the multiplication:\n420 × 158.40 = 66,528\nStep 3 — State the answer:\nJ$66,528",
+  "topic": "exchange-rates-and-currency"
+ },
+ {
+  "id": "p115",
+  "question": "A customer buys US$300 at J$158.40 per US dollar and the bank charges 2% commission. How much does the customer pay in total?",
+  "options": [
+   "J$48,470.40",
+   "J$47,520.00",
+   "J$48,400.00",
+   "J$47,520.40"
+  ],
+  "answer": "J$48,470.40",
+  "explanation": "Step 1 — Convert the US dollars to Jamaican dollars:\n300 × 158.40 = J$47,520.00\nStep 2 — Add the 2% commission:\n47,520 × 1.02 = 48,470.40\nStep 3 — State the total paid:\nJ$48,470.40",
+  "topic": "exchange-rates-and-currency"
+ },
+ {
+  "id": "p116",
+  "question": "A house is insured for $2,500,000 at an annual premium rate of 0.8%. What is the yearly premium?",
+  "options": [
+   "$20,000",
+   "$2,000",
+   "$200,000",
+   "$18,000"
+  ],
+  "answer": "$20,000",
+  "explanation": "Step 1 — Write the premium as a percentage of the sum insured:\npremium = 0.8% of 2,500,000\nStep 2 — Change the percentage to a decimal and multiply:\n0.008 × 2,500,000 = 20,000\nStep 3 — State the premium:\n$20,000 per year",
+  "topic": "insurance-and-budgeting"
+ },
+ {
+  "id": "p117",
+  "question": "A policy has a $25,000 excess. A theft causes a loss of $180,000. How much will the insurer pay?",
+  "options": [
+   "$155,000",
+   "$180,000",
+   "$205,000",
+   "$150,000"
+  ],
+  "answer": "$155,000",
+  "explanation": "Step 1 — Write the payout rule:\npayout = loss − excess\nStep 2 — Substitute the loss and the excess:\n180,000 − 25,000 = 155,000\nStep 3 — State the payout:\n$155,000, with the policyholder meeting the first $25,000",
+  "topic": "insurance-and-budgeting"
+ },
+ {
+  "id": "p118",
+  "question": "A family has a net monthly income of $85,000. Fixed expenses are $32,000 and variable expenses are $41,500. How much can they save each month?",
+  "options": [
+   "$11,500",
+   "$10,500",
+   "$12,000",
+   "$11,000"
+  ],
+  "answer": "$11,500",
+  "explanation": "Step 1 — Add the expenses:\n32,000 + 41,500 = $73,500\nStep 2 — Subtract the expenses from the income:\n85,000 − 73,500 = 11,500\nStep 3 — State the monthly surplus:\n$11,500 of savings",
+  "topic": "insurance-and-budgeting"
+ },
+ {
+  "id": "p119",
+  "question": "Which of these is a well-defined set?",
+  "options": [
+   "The prime numbers less than 20",
+   "The tall students in Form 5",
+   "Some of the best cricketers in Jamaica",
+   "Interesting books in the library"
+  ],
+  "answer": "The prime numbers less than 20",
+  "explanation": "Step 1 — Recall what 'well-defined' means:\nEveryone must be able to say for certain whether an object belongs or not.\nStep 2 — Test each description:\n'Tall', 'some of the best' and 'interesting' are matters of opinion, so those three are not sets.\nStep 3 — State the set:\nThe prime numbers less than 20 = {2, 3, 5, 7, 11, 13, 17, 19}",
+  "topic": "set-notation"
+ },
+ {
+  "id": "p120",
+  "question": "How many elements are in the set {2, 4, 4, 6, 8, 8, 10}?",
+  "options": [
+   "5",
+   "7",
+   "6",
+   "8"
+  ],
+  "answer": "5",
+  "explanation": "Step 1 — Remember that repeated elements are counted once:\n{2, 4, 4, 6, 8, 8, 10} = {2, 4, 6, 8, 10}\nStep 2 — Count the elements of the simplified set:\n2, 4, 6, 8 and 10 give n(A) = 5",
+  "topic": "set-notation"
+ },
+ {
+  "id": "p121",
+  "question": "Which statement is TRUE?",
+  "options": [
+   "8 ∈ {2, 4, 6, 8}",
+   "3 ∈ {2, 4, 6, 8}",
+   "9 ∈ {2, 4, 6, 8}",
+   "0 ∈ ∅"
+  ],
+  "answer": "8 ∈ {2, 4, 6, 8}",
+  "explanation": "Step 1 — Recall that ∈ means 'is an element of':\nA statement is true only when the number really appears in the set.\nStep 2 — Check each option:\n3, 9 are not in {2, 4, 6, 8}, and the empty set has no elements at all.\nStep 3 — State the true statement:\n8 ∈ {2, 4, 6, 8} is true",
+  "topic": "set-notation"
+ },
+ {
+  "id": "p122",
+  "question": "How many subsets does a set with 4 elements have?",
+  "options": [
+   "16",
+   "8",
+   "15",
+   "4"
+  ],
+  "answer": "16",
+  "explanation": "Step 1 — Write the rule for the number of subsets:\na set with n elements has 2^n subsets\nStep 2 — Substitute n = 4:\n2^4 = 16\nStep 3 — Note the difference from proper subsets:\n16 subsets in total, of which 15 are proper subsets",
+  "topic": "subsets-and-cardinality"
+ },
+ {
+  "id": "p123",
+  "question": "A = {1, 2, 3, 4}. Which of the following is NOT a subset of A?",
+  "options": [
+   "{5}",
+   "{1, 2, 3}",
+   "{2, 4}",
+   "∅"
+  ],
+  "answer": "{5}",
+  "explanation": "Step 1 — Recall that a subset contains only elements of the original set:\nB ⊆ A means every element of B is also in A.\nStep 2 — Test each option against A = {1, 2, 3, 4}:\n{1, 2, 3} and {2, 4} use only elements of A, and ∅ is a subset of every set.\nStep 3 — Identify the odd one out:\n{5} contains 5, which is not in A, so {5} is not a subset of A",
+  "topic": "subsets-and-cardinality"
+ },
+ {
+  "id": "p124",
+  "question": "If ξ = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10} and A = {2, 4, 6, 8, 10}, what is A'?",
+  "options": [
+   "{1, 3, 5, 7, 9}",
+   "{1, 2, 3, 4, 5}",
+   "{2, 4, 6, 8, 10}",
+   "∅"
+  ],
+  "answer": "{1, 3, 5, 7, 9}",
+  "explanation": "Step 1 — Recall what the complement means:\nA' contains the elements of ξ that are NOT in A.\nStep 2 — Remove the even numbers from ξ:\nξ without 2, 4, 6, 8, 10 leaves 1, 3, 5, 7, 9\nStep 3 — State the complement:\nA' = {1, 3, 5, 7, 9}",
+  "topic": "subsets-and-cardinality"
+ },
+ {
+  "id": "p125",
+  "question": "In a class of 40 students, 24 like cricket, 20 like football and 12 like both. How many like cricket only?",
+  "options": [
+   "12",
+   "8",
+   "24",
+   "4"
+  ],
+  "answer": "12",
+  "explanation": "Step 1 — Write the number in the overlap first:\nBoth sports = 12\nStep 2 — Subtract the overlap from the cricket total:\ncricket only = 24 − 12 = 12\nStep 3 — State the answer:\n12 students like cricket only",
+  "topic": "venn-diagrams"
+ },
+ {
+  "id": "p126",
+  "question": "Using the same class (40 students, 24 like cricket, 20 like football, 12 like both), how many students like neither sport?",
+  "options": [
+   "8",
+   "12",
+   "4",
+   "16"
+  ],
+  "answer": "8",
+  "explanation": "Step 1 — Fill in the regions you know:\ncricket only = 24 − 12 = 12, both = 12, football only = 20 − 12 = 8\nStep 2 — Add the three filled regions:\n12 + 12 + 8 = 32\nStep 3 — Subtract from the total in the class:\n40 − 32 = 8 students like neither sport",
+  "topic": "venn-diagrams"
+ },
+ {
+  "id": "p127",
+  "question": "On a two-set Venn diagram, which region shows the elements that are in A but not in B?",
+  "options": [
+   "The part of circle A outside circle B",
+   "The overlap of the two circles",
+   "The part of circle B outside circle A",
+   "The area outside both circles"
+  ],
+  "answer": "The part of circle A outside circle B",
+  "explanation": "Step 1 — Break the diagram into its three inner regions:\nA only, A and B together (the overlap), and B only.\nStep 2 — Match the wording to a region:\n'In A but not in B' means inside A and outside the overlap.\nStep 3 — Name the region:\nThe part of circle A that lies outside circle B",
+  "topic": "venn-diagrams"
+ },
+ {
+  "id": "p128",
+  "question": "A = {1, 3, 5, 7} and B = {2, 3, 5, 8}. What is A ∩ B?",
+  "options": [
+   "{3, 5}",
+   "{1, 2, 3, 5, 7, 8}",
+   "{1, 7}",
+   "{1, 2, 7, 8}"
+  ],
+  "answer": "{3, 5}",
+  "explanation": "Step 1 — Recall that ∩ means 'in both sets':\nList the elements that appear in A and also in B.\nStep 2 — Compare the two sets element by element:\n3 and 5 appear in both A and B; 1 and 7 are only in A; 2 and 8 are only in B.\nStep 3 — State the intersection:\nA ∩ B = {3, 5}",
+  "topic": "union-intersection-complement"
+ },
+ {
+  "id": "p129",
+  "question": "A = {1, 3, 5, 7} and B = {2, 3, 5, 8}. What is A ∪ B?",
+  "options": [
+   "{1, 2, 3, 5, 7, 8}",
+   "{3, 5}",
+   "{1, 3, 5, 7}",
+   "{1, 2, 7, 8}"
+  ],
+  "answer": "{1, 2, 3, 5, 7, 8}",
+  "explanation": "Step 1 — Recall that ∪ means 'in A or in B or in both':\nCollect every element that appears in either set.\nStep 2 — Combine the two sets, writing each element once:\n1, 3, 5, 7 together with 2, 8 gives 1, 2, 3, 5, 7, 8\nStep 3 — State the union:\nA ∪ B = {1, 2, 3, 5, 7, 8}, which has 6 elements",
+  "topic": "union-intersection-complement"
+ },
+ {
+  "id": "p130",
+  "question": "If n(A) = 18, n(B) = 14 and n(A ∩ B) = 6, what is n(A ∪ B)?",
+  "options": [
+   "26",
+   "32",
+   "38",
+   "20"
+  ],
+  "answer": "26",
+  "explanation": "Step 1 — Write the counting formula for two sets:\nn(A ∪ B) = n(A) + n(B) − n(A ∩ B)\nStep 2 — Substitute the given values:\n18 + 14 − 6\nStep 3 — Complete the calculation:\n32 − 6 = 26, because the 6 who are in both were counted twice",
+  "topic": "union-intersection-complement"
+ },
+ {
+  "id": "p131",
+  "question": "Which notation describes the students who study Mathematics and Physics but not Chemistry?",
+  "options": [
+   "M ∩ P ∩ C'",
+   "M ∩ P ∩ C",
+   "M ∪ P ∪ C",
+   "(M ∩ P)'"
+  ],
+  "answer": "M ∩ P ∩ C'",
+  "explanation": "Step 1 — Translate the words one at a time:\n'Mathematics and Physics' gives M ∩ P.\nStep 2 — Add the condition 'but not Chemistry':\n'Not in C' is written C'.\nStep 3 — Combine the parts:\nM ∩ P ∩ C'",
+  "topic": "shading-venn-regions"
+ },
+ {
+  "id": "p132",
+  "question": "Which area is described by (A ∪ B)'?",
+  "options": [
+   "The area outside both circles, inside the rectangle",
+   "The overlap of the two circles",
+   "The part of A that is outside B",
+   "The whole of circles A and B"
+  ],
+  "answer": "The area outside both circles, inside the rectangle",
+  "explanation": "Step 1 — Interpret the union first:\nA ∪ B is everything inside circle A or circle B.\nStep 2 — Apply the complement:\nThe dash means 'everything in ξ that is not in A ∪ B'.\nStep 3 — Name the region:\nThe part of the rectangle outside both circles, written inside ξ",
+  "topic": "shading-venn-regions"
+ },
+ {
+  "id": "p133",
+  "question": "Into how many regions is a three-set Venn diagram divided?",
+  "options": [
+   "8",
+   "6",
+   "7",
+   "9"
+  ],
+  "answer": "8",
+  "explanation": "Step 1 — Count the regions systematically:\nInside all three: A ∩ B ∩ C (1 region).\nStep 2 — Count the pairwise and single regions:\nPairs: A ∩ B, A ∩ C, B ∩ C (3), singles: A, B, C (3), and the outside region (1).\nStep 3 — Add them up:\n1 + 3 + 3 + 1 = 8 regions",
+  "topic": "shading-venn-regions"
+ },
+ {
+  "id": "p134",
+  "question": "In a class of 35 students, 22 own a smartphone, 18 own a laptop and 9 own both. How many own a smartphone only?",
+  "options": [
+   "13",
+   "9",
+   "22",
+   "26"
+  ],
+  "answer": "13",
+  "explanation": "Step 1 — Write the overlap first:\nstudents who own both = 9\nStep 2 — Subtract the overlap from the smartphone total:\n22 − 9 = 13\nStep 3 — State the answer:\n13 students own a smartphone only",
+  "topic": "set-word-problems"
+ },
+ {
+  "id": "p135",
+  "question": "Using the same class (35 students, 22 own a smartphone, 18 own a laptop, 9 own both), how many own neither device?",
+  "options": [
+   "4",
+   "9",
+   "13",
+   "0"
+  ],
+  "answer": "4",
+  "explanation": "Step 1 — Complete the diagram:\nsmartphone only = 22 − 9 = 13, both = 9, laptop only = 18 − 9 = 9\nStep 2 — Add the regions inside the circles:\n13 + 9 + 9 = 31\nStep 3 — Subtract from the total surveyed:\n35 − 31 = 4 students own neither",
+  "topic": "set-word-problems"
+ },
+ {
+  "id": "p136",
+  "question": "In a survey of 50 people, 30 drink tea, 25 drink coffee and 12 drink both. How many drink neither tea nor coffee?",
+  "options": [
+   "7",
+   "12",
+   "5",
+   "18"
+  ],
+  "answer": "7",
+  "explanation": "Step 1 — Find the 'only' regions:\ntea only = 30 − 12 = 18 and coffee only = 25 − 12 = 13\nStep 2 — Add every region inside the circles:\n18 + 12 + 13 = 43\nStep 3 — Subtract from the number surveyed:\n50 − 43 = 7 people drink neither",
+  "topic": "set-word-problems"
+ },
+ {
+  "id": "p137",
+  "question": "Which of the following is a prime number?",
+  "options": [
+   "89",
+   "91",
+   "87",
+   "51"
+  ],
+  "answer": "89",
+  "explanation": "Step 1 — Recall that a prime has exactly two factors, 1 and itself:\nTest each number for factors other than 1 and itself.\nStep 2 — Test the distractors:\n91 = 7 × 13, 87 = 3 × 29 and 51 = 3 × 17, so all three are composite.\nStep 3 — State the prime:\n89 has no factors other than 1 and 89",
+  "topic": "types-of-numbers"
+ },
+ {
+  "id": "p138",
+  "question": "What is the highest common factor (HCF) of 24 and 36?",
+  "options": [
+   "12",
+   "6",
+   "72",
+   "18"
+  ],
+  "answer": "12",
+  "explanation": "Step 1 — Write each number as a product of primes:\n24 = 2³ × 3 and 36 = 2² × 3²\nStep 2 — Take the common primes with the SMALLER index:\n2² × 3\nStep 3 — Evaluate:\n4 × 3 = 12",
+  "topic": "types-of-numbers"
+ },
+ {
+  "id": "p139",
+  "question": "What is the lowest common multiple (LCM) of 12 and 18?",
+  "options": [
+   "36",
+   "6",
+   "216",
+   "30"
+  ],
+  "answer": "36",
+  "explanation": "Step 1 — Write each number as a product of primes:\n12 = 2² × 3 and 18 = 2 × 3²\nStep 2 — Take every prime with the LARGER index:\n2² × 3²\nStep 3 — Evaluate:\n4 × 9 = 36",
+  "topic": "types-of-numbers"
+ },
+ {
+  "id": "p140",
+  "question": "Simplify 2³ × 2⁴, leaving your answer as a single power or number.",
+  "options": [
+   "128",
+   "64",
+   "2¹²",
+   "256"
+  ],
+  "answer": "128",
+  "explanation": "Step 1 — Use the law for multiplying powers of the same base:\na^m × a^n = a^(m+n)\nStep 2 — Add the indices:\n2³ × 2⁴ = 2⁷\nStep 3 — Evaluate:\n2⁷ = 128",
+  "topic": "indices-and-surds"
+ },
+ {
+  "id": "p141",
+  "question": "Evaluate 5⁻².",
+  "options": [
+   "1/25",
+   "−25",
+   "25",
+   "−1/25"
+  ],
+  "answer": "1/25",
+  "explanation": "Step 1 — Recall what a negative index means:\na^−n = 1 ÷ a^n\nStep 2 — Apply it to 5⁻²:\n5⁻² = 1 ÷ 5² = 1 ÷ 25\nStep 3 — State the value:\n1/25",
+  "topic": "indices-and-surds"
+ },
+ {
+  "id": "p142",
+  "question": "Simplify √75.",
+  "options": [
+   "5√3",
+   "3√5",
+   "15√3",
+   "25√3"
+  ],
+  "answer": "5√3",
+  "explanation": "Step 1 — Look for a square factor of 75:\n75 = 25 × 3\nStep 2 — Split the root:\n√75 = √25 × √3\nStep 3 — Simplify the perfect square:\n√25 × √3 = 5√3",
+  "topic": "indices-and-surds"
+ },
+ {
+  "id": "p143",
+  "question": "Write 0.000406 in standard form.",
+  "options": [
+   "4.06 × 10⁻⁴",
+   "4.06 × 10⁴",
+   "40.6 × 10⁻⁵",
+   "4.06 × 10⁻³"
+  ],
+  "answer": "4.06 × 10⁻⁴",
+  "explanation": "Step 1 — Move the decimal point until one digit remains in front of it:\n0.000406 becomes 4.06 after moving the point 4 places to the right.\nStep 2 — Decide the index: moving right gives a negative index.\n4 places to the right gives 10⁻⁴\nStep 3 — Write the answer:\n0.000406 = 4.06 × 10⁻⁴",
+  "topic": "standard-form"
+ },
+ {
+  "id": "p144",
+  "question": "Work out (4 × 10³) × (3 × 10⁵) and give the answer in standard form.",
+  "options": [
+   "1.2 × 10⁹",
+   "12 × 10⁸",
+   "1.2 × 10⁸",
+   "7 × 10⁸"
+  ],
+  "answer": "1.2 × 10⁹",
+  "explanation": "Step 1 — Multiply the number parts and add the indices:\n4 × 3 = 12 and 10³ × 10⁵ = 10⁸, giving 12 × 10⁸\nStep 2 — Adjust because 12 is not less than 10:\n12 × 10⁸ = 1.2 × 10⁹\nStep 3 — Check the form: 1 ≤ 1.2 < 10, so the answer is valid",
+  "topic": "standard-form"
+ },
+ {
+  "id": "p145",
+  "question": "Which of the numbers 7.2 × 10⁻³ and 9.1 × 10⁻⁴ is the larger?",
+  "options": [
+   "7.2 × 10⁻³",
+   "9.1 × 10⁻⁴",
+   "They are equal",
+   "There is not enough information"
+  ],
+  "answer": "7.2 × 10⁻³",
+  "explanation": "Step 1 — Compare the powers of ten first:\n10⁻³ is greater than 10⁻⁴ because −3 is greater than −4.\nStep 2 — Confirm with ordinary numbers:\n7.2 × 10⁻³ = 0.0072 and 9.1 × 10⁻⁴ = 0.00091\nStep 3 — State the larger number:\n7.2 × 10⁻³ is larger",
+  "topic": "standard-form"
+ },
+ {
+  "id": "p146",
+  "question": "Factorise x² − 49.",
+  "options": [
+   "(x + 7)(x − 7)",
+   "(x − 7)(x − 7)",
+   "(x + 7)(x + 7)",
+   "(x − 49)(x + 1)"
+  ],
+  "answer": "(x + 7)(x − 7)",
+  "explanation": "Step 1 — Recognise the difference of two squares:\na² − b² = (a + b)(a − b)\nStep 2 — Identify a and b:\nx² − 49 = x² − 7², so a = x and b = 7\nStep 3 — Write the factors:\n(x + 7)(x − 7)",
+  "topic": "factorization"
+ },
+ {
+  "id": "p147",
+  "question": "Factorise x² + 9x + 20.",
+  "options": [
+   "(x + 4)(x + 5)",
+   "(x + 2)(x + 10)",
+   "(x + 9)(x + 20)",
+   "(x − 4)(x − 5)"
+  ],
+  "answer": "(x + 4)(x + 5)",
+  "explanation": "Step 1 — Look for two numbers that multiply to 20 and add to 9:\n4 × 5 = 20 and 4 + 5 = 9\nStep 2 — Write the factorised form:\nx² + 9x + 20 = (x + 4)(x + 5)\nStep 3 — Check by expanding:\nx² + 5x + 4x + 20 = x² + 9x + 20",
+  "topic": "factorization"
+ },
+ {
+  "id": "p148",
+  "question": "Solve x² − 7x + 12 = 0.",
+  "options": [
+   "x = 3 or x = 4",
+   "x = −3 or x = −4",
+   "x = 2 or x = 6",
+   "x = 1 or x = 12"
+  ],
+  "answer": "x = 3 or x = 4",
+  "explanation": "Step 1 — Factorise the left-hand side:\ntwo numbers that multiply to 12 and add to −7 are −3 and −4\nStep 2 — Write the equation in factorised form:\n(x − 3)(x − 4) = 0\nStep 3 — Use the zero product rule:\nx − 3 = 0 gives x = 3, and x − 4 = 0 gives x = 4",
+  "topic": "factorization"
+ },
+ {
+  "id": "p149",
+  "question": "Simplify (x² − 25)/(x + 5).",
+  "options": [
+   "x − 5",
+   "x + 5",
+   "x² − 5",
+   "5x"
+  ],
+  "answer": "x − 5",
+  "explanation": "Step 1 — Factorise the numerator as a difference of two squares:\nx² − 25 = (x + 5)(x − 5)\nStep 2 — Write the fraction with the numerator factorised:\n((x + 5)(x − 5)) ÷ (x + 5)\nStep 3 — Cancel the common factor (x + 5):\nthe answer is x − 5",
+  "topic": "algebraic-fractions"
+ },
+ {
+  "id": "p150",
+  "question": "Express 1/x + 1/y as a single fraction.",
+  "options": [
+   "(x + y)/xy",
+   "2/(x + y)",
+   "(x + y)/(2xy)",
+   "1/(x + y)"
+  ],
+  "answer": "(x + y)/xy",
+  "explanation": "Step 1 — Find the common denominator:\nthe lowest common denominator of x and y is xy\nStep 2 — Rewrite each fraction over xy:\n1/x = y/xy and 1/y = x/xy\nStep 3 — Add the numerators:\n(y + x)/xy, which is (x + y)/xy",
+  "topic": "algebraic-fractions"
+ },
+ {
+  "id": "p151",
+  "question": "Solve 1/x + 1/4 = 1/2.",
+  "options": [
+   "x = 4",
+   "x = 2",
+   "x = 8",
+   "x = 1/4"
+  ],
+  "answer": "x = 4",
+  "explanation": "Step 1 — Subtract 1/4 from both sides:\n1/x = 1/2 − 1/4\nStep 2 — Combine the right-hand side over a common denominator of 4:\n1/2 − 1/4 = 2/4 − 1/4 = 1/4, so 1/x = 1/4\nStep 3 — Invert both sides:\nx = 4",
+  "topic": "algebraic-fractions"
+ },
+ {
+  "id": "p152",
+  "question": "Make t the subject of v = u + at.",
+  "options": [
+   "t = (v − u)/a",
+   "t = v − u",
+   "t = (u − v)/a",
+   "t = a(v − u)"
+  ],
+  "answer": "t = (v − u)/a",
+  "explanation": "Step 1 — Subtract u from both sides:\nv − u = at\nStep 2 — Divide both sides by a:\n(v − u) ÷ a = t\nStep 3 — Write with t as the subject:\nt = (v − u)/a",
+  "topic": "transposition-and-substitution"
+ },
+ {
+  "id": "p153",
+  "question": "Make r the subject of C = 2πr.",
+  "options": [
+   "r = C/(2π)",
+   "r = 2πC",
+   "r = C − 2π",
+   "r = C/2"
+  ],
+  "answer": "r = C/(2π)",
+  "explanation": "Step 1 — Divide both sides by 2π:\nC ÷ (2π) = r\nStep 2 — Write with r as the subject:\nr = C/(2π)\nStep 3 — Check with numbers: if C = 20π then r = 20π/(2π) = 10",
+  "topic": "transposition-and-substitution"
+ },
+ {
+  "id": "p154",
+  "question": "Use s = ut + ½at² to find s when u = 6, a = 4 and t = 3.",
+  "options": [
+   "36",
+   "54",
+   "45",
+   "30"
+  ],
+  "answer": "36",
+  "explanation": "Step 1 — Substitute the values into the formula:\ns = 6 × 3 + ½ × 4 × 3²\nStep 2 — Work out each term (square t first):\n6 × 3 = 18 and ½ × 4 × 9 = 18\nStep 3 — Add the terms:\n18 + 18 = 36",
+  "topic": "transposition-and-substitution"
+ },
+ {
+  "id": "p155",
+  "question": "What is the gradient of the line passing through (1, 2) and (4, 11)?",
+  "options": [
+   "3",
+   "9",
+   "1/3",
+   "−3"
+  ],
+  "answer": "3",
+  "explanation": "Step 1 — Write the gradient formula:\nm = (y₂ − y₁) ÷ (x₂ − x₁)\nStep 2 — Substitute the two points:\n(11 − 2) ÷ (4 − 1) = 9 ÷ 3\nStep 3 — State the gradient:\nm = 3, a line rising 3 units for every 1 unit across",
+  "topic": "linear-and-quadratic-graphs"
+ },
+ {
+  "id": "p156",
+  "question": "At which points does the graph of y = x² − 4x + 3 cut the x-axis?",
+  "options": [
+   "(1, 0) and (3, 0)",
+   "(0, 1) and (0, 3)",
+   "(−1, 0) and (−3, 0)",
+   "(2, −1) and (0, 3)"
+  ],
+  "answer": "(1, 0) and (3, 0)",
+  "explanation": "Step 1 — On the x-axis y = 0, so solve x² − 4x + 3 = 0:\nx² − 4x + 3 = (x − 1)(x − 3)\nStep 2 — Use the zero product rule:\nx = 1 or x = 3\nStep 3 — Write the points with y = 0:\n(1, 0) and (3, 0)",
+  "topic": "linear-and-quadratic-graphs"
+ },
+ {
+  "id": "p157",
+  "question": "The curve y = x² − 6x + 5 has its turning point at x = 3. What are the coordinates of the turning point?",
+  "options": [
+   "(3, −4)",
+   "(−3, −4)",
+   "(3, 4)",
+   "(0, 5)"
+  ],
+  "answer": "(3, −4)",
+  "explanation": "Step 1 — Substitute x = 3 into the equation:\ny = 3² − 6 × 3 + 5\nStep 2 — Work out the arithmetic:\n9 − 18 + 5 = −4\nStep 3 — State the turning point:\n(3, −4), the minimum point of the curve",
+  "topic": "linear-and-quadratic-graphs"
+ },
+ {
+  "id": "p158",
+  "question": "What is the size of each interior angle of a regular hexagon?",
+  "options": [
+   "120°",
+   "60°",
+   "108°",
+   "135°"
+  ],
+  "answer": "120°",
+  "explanation": "Step 1 — Find each exterior angle first:\n360° ÷ 6 = 60°\nStep 2 — Use the fact that interior + exterior = 180°:\n180° − 60° = 120°\nStep 3 — Check with the interior angle sum: (6 − 2) × 180° = 720° and 720° ÷ 6 = 120°",
+  "topic": "angles-and-polygons"
+ },
+ {
+  "id": "p159",
+  "question": "What is the sum of the interior angles of a polygon with 12 sides?",
+  "options": [
+   "1800°",
+   "2160°",
+   "1980°",
+   "360°"
+  ],
+  "answer": "1800°",
+  "explanation": "Step 1 — Write the formula for the interior angle sum:\n(n − 2) × 180°\nStep 2 — Substitute n = 12:\n(12 − 2) × 180° = 10 × 180°\nStep 3 — Evaluate:\n1800°",
+  "topic": "angles-and-polygons"
+ },
+ {
+  "id": "p160",
+  "question": "Two co-interior angles between parallel lines add to 180°. If one of them is 115°, what is the other?",
+  "options": [
+   "65°",
+   "115°",
+   "245°",
+   "55°"
+  ],
+  "answer": "65°",
+  "explanation": "Step 1 — Write the co-interior angle fact:\nco-interior (allied) angles add to 180°\nStep 2 — Subtract the known angle:\n180° − 115° = 65°\nStep 3 — State the answer with its reason:\n65°, because co-interior angles are supplementary",
+  "topic": "angles-and-polygons"
+ },
+ {
+  "id": "p161",
+  "question": "What is the size of the angle in a semicircle?",
+  "options": [
+   "90°",
+   "180°",
+   "45°",
+   "It depends on the radius"
+  ],
+  "answer": "90°",
+  "explanation": "Step 1 — Recall the theorem:\nthe angle in a semicircle is a right angle.\nStep 2 — Explain why:\nthe angle at the centre on a diameter is 180°, and the angle at the circumference is half of it.\nStep 3 — State the size:\n90°",
+  "topic": "circle-theorems"
+ },
+ {
+  "id": "p162",
+  "question": "In a circle with centre O, the angle at the centre AOB is 84°. What is the angle at the circumference ACB standing on the same arc?",
+  "options": [
+   "42°",
+   "168°",
+   "84°",
+   "96°"
+  ],
+  "answer": "42°",
+  "explanation": "Step 1 — Recall the angle-at-the-centre theorem:\nthe angle at the centre is twice the angle at the circumference on the same arc.\nStep 2 — Work backwards to find the circumference angle:\n84° ÷ 2\nStep 3 — State the answer with its reason:\n42°, because the angle at the centre is double the angle at the circumference",
+  "topic": "circle-theorems"
+ },
+ {
+  "id": "p163",
+  "question": "A cyclic quadrilateral has an angle of 108°. What is the size of the opposite angle?",
+  "options": [
+   "72°",
+   "108°",
+   "252°",
+   "90°"
+  ],
+  "answer": "72°",
+  "explanation": "Step 1 — Recall the cyclic quadrilateral theorem:\nopposite angles of a cyclic quadrilateral add to 180°.\nStep 2 — Subtract the known angle:\n180° − 108° = 72°\nStep 3 — State the answer with its reason:\n72°, because opposite angles of a cyclic quadrilateral are supplementary",
+  "topic": "circle-theorems"
+ },
+ {
+  "id": "p164",
+  "question": "The point (3, −2) is reflected in the x-axis. What are the coordinates of the image?",
+  "options": [
+   "(3, 2)",
+   "(−3, −2)",
+   "(−3, 2)",
+   "(2, −3)"
+  ],
+  "answer": "(3, 2)",
+  "explanation": "Step 1 — Recall what a reflection in the x-axis does:\nthe x-coordinate stays the same and the y-coordinate changes sign.\nStep 2 — Apply it to (3, −2):\nx stays 3 and y becomes +2\nStep 3 — State the image:\n(3, 2)",
+  "topic": "transformations"
+ },
+ {
+  "id": "p165",
+  "question": "The point (2, 5) is translated by the column vector (3, −4). Where does it land?",
+  "options": [
+   "(5, 1)",
+   "(−1, 9)",
+   "(5, 9)",
+   "(6, −20)"
+  ],
+  "answer": "(5, 1)",
+  "explanation": "Step 1 — Recall that a translation adds the vector to the coordinates:\n(x, y) + (a, b) = (x + a, y + b)\nStep 2 — Add each component:\n(2 + 3, 5 + (−4))\nStep 3 — State the image:\n(5, 1)",
+  "topic": "transformations"
+ },
+ {
+  "id": "p166",
+  "question": "A shape is enlarged with scale factor 3. The area of the image is how many times the area of the object?",
+  "options": [
+   "9 times",
+   "3 times",
+   "6 times",
+   "27 times"
+  ],
+  "answer": "9 times",
+  "explanation": "Step 1 — Recall how lengths change under an enlargement:\nevery length is multiplied by the scale factor, here 3.\nStep 2 — Square the scale factor for area:\n3² = 9\nStep 3 — State the answer:\nthe image has 9 times the area of the object",
+  "topic": "transformations"
+ },
+ {
+  "id": "p167",
+  "question": "A data set contains 40 values. At which cumulative frequency is the median read from an ogive?",
+  "options": [
+   "20",
+   "10",
+   "30",
+   "40"
+  ],
+  "answer": "20",
+  "explanation": "Step 1 — Recall the position of the median:\nthe median is at n/2 on the cumulative frequency axis.\nStep 2 — Substitute n = 40:\n40 ÷ 2 = 20\nStep 3 — Read across:\ngo to 20 on the cumulative frequency axis, then across to the curve and down to the median value",
+  "topic": "frequency-tables-and-cumulative-frequency"
+ },
+ {
+  "id": "p168",
+  "question": "A data set contains 80 values. At which cumulative frequency is the upper quartile read?",
+  "options": [
+   "60",
+   "20",
+   "40",
+   "80"
+  ],
+  "answer": "60",
+  "explanation": "Step 1 — Recall the position of the upper quartile:\nthe upper quartile is at 3n/4 on the cumulative frequency axis.\nStep 2 — Substitute n = 80:\n3 × 80 ÷ 4 = 60\nStep 3 — Note the other positions:\nthe lower quartile would be at 20 and the median at 40",
+  "topic": "frequency-tables-and-cumulative-frequency"
+ },
+ {
+  "id": "p169",
+  "question": "From an ogive, Q1 = 28 marks and Q3 = 45 marks. What is the interquartile range?",
+  "options": [
+   "17 marks",
+   "73 marks",
+   "8.5 marks",
+   "45 marks"
+  ],
+  "answer": "17 marks",
+  "explanation": "Step 1 — Write the formula for the interquartile range:\ninterquartile range = Q3 − Q1\nStep 2 — Substitute the quartile values:\n45 − 28\nStep 3 — State the range in the units of the data:\n17 marks, the range of the middle half of the marks",
+  "topic": "frequency-tables-and-cumulative-frequency"
+ },
+ {
+  "id": "p170",
+  "question": "Convert 4.5 m² into cm².",
+  "options": [
+   "45,000 cm²",
+   "450 cm²",
+   "4,500 cm²",
+   "450,000 cm²"
+  ],
+  "answer": "45,000 cm²",
+  "explanation": "Step 1 — Convert the linear unit first:\n1 m = 100 cm\nStep 2 — Square the conversion for area:\n1 m² = 100 × 100 = 10,000 cm²\nStep 3 — Multiply by the number of square metres:\n4.5 × 10,000 = 45,000 cm²",
+  "topic": "si-units-and-conversion"
+ },
+ {
+  "id": "p171",
+  "question": "A car travels at 90 km/h. What is this speed in metres per second?",
+  "options": [
+   "25 m/s",
+   "32.4 m/s",
+   "324 m/s",
+   "15 m/s"
+  ],
+  "answer": "25 m/s",
+  "explanation": "Step 1 — Write the conversion factor:\nto change km/h to m/s multiply by 1000 ÷ 3600, which is 5/18\nStep 2 — Apply it to 90 km/h:\n90 × 5/18 = 450 ÷ 18\nStep 3 — State the speed:\n25 m/s",
+  "topic": "si-units-and-conversion"
+ },
+ {
+  "id": "p172",
+  "question": "A journey takes 1.75 hours. How long is this in hours and minutes?",
+  "options": [
+   "1 hour 45 minutes",
+   "1 hour 75 minutes",
+   "1 hour 15 minutes",
+   "1 hour 7 minutes"
+  ],
+  "answer": "1 hour 45 minutes",
+  "explanation": "Step 1 — Keep the whole hours and convert only the decimal part:\n1.75 hours = 1 hour + 0.75 hour\nStep 2 — Multiply the decimal part by 60:\n0.75 × 60 = 45 minutes\nStep 3 — State the time:\n1 hour 45 minutes (time is not decimal, so 1.75 hours is not 1 hour 75 minutes)",
+  "topic": "si-units-and-conversion"
  }
 ]

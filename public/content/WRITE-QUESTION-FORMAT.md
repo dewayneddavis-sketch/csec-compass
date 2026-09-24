@@ -88,8 +88,9 @@ Rules the content guarantees (validated at authoring time):
 - Caribbean History `paper2.json`: 9 items, 270 marks total — 3 questions in each of
   Sections A, B and C at 30 marks each, matching the real Paper 02 (2 h 10 min), in which
   the candidate answers one question from each section.
-- Neither file replaces `practice.json` (the 100-question multiple-choice bank, which the
-  Mock Exam also reads) or `knowledge-check.json` (the 25-question end-of-course check).
+- Neither file replaces `practice.json` (the multiple-choice practice bank, at least 100
+  questions per subject and 172 for Mathematics, which the Mock Exam also reads) or
+  `knowledge-check.json` (the 25-question end-of-course check, always exactly 25).
 
 ## Implemented renderer (engineer, 2026-09-18)
 

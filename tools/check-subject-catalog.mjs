@@ -11,7 +11,7 @@
 // checks both directions:
 //
 //   1. the catalog is well formed (ids unique, slug-shaped, every field present)
-//   2. every catalog subject has real content (modules + the 100-question
+//   2. every catalog subject has real content (modules + the 100+-question
 //      practice bank + the 25-question knowledge check the product promises)
 //   3. NO content directory is missing from the catalog (the French bug class)
 //   4. the subject's own metadata.json agrees with its catalog entry
@@ -126,14 +126,15 @@ for (const subject of catalog) {
     `${id}: lesson ids are unique (${lessons.length} lessons in ${modules.length} modules)`
   );
 
-  // The product promise: a 100-question Extra Practice bank and a 25-question
+  // The product promise: at least a 100-question Extra Practice bank (Mathematics
+  // grew to 172 with the syllabus-gap lessons) and a 25-question
   // knowledge check per subject. A missing/short bank is a broken subject, not
   // a style choice.
   const practice = existsSync(join(dir, "practice.json")) ? readJson(join(dir, "practice.json")) : null;
   const kc = existsSync(join(dir, "knowledge-check.json")) ? readJson(join(dir, "knowledge-check.json")) : null;
   check(
-    Array.isArray(practice) && practice.length === 100,
-    `${id}: 100-question Extra Practice bank (${Array.isArray(practice) ? practice.length : "missing"})`
+    Array.isArray(practice) && practice.length >= 100,
+    `${id}: Extra Practice bank of at least 100 questions (${Array.isArray(practice) ? practice.length : "missing"})`
   );
   check(
     Array.isArray(kc) && kc.length === 25,

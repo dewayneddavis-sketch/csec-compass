@@ -97,6 +97,13 @@ function resolveInteractive(subjectId, experimentType, lessonId) {
 
   // ---- mathematics: graphs / balance / per-lesson drag sets
   if (subjectId === "mathematics") {
+    // Syllabus-gap lessons (Consumer Arithmetic, Sets and the additions to the
+    // existing modules) carry their own topic-matched set, so they resolve by
+    // lessonId first. The older lessons are not keys here and keep resolving
+    // through the per-experiment-type library below, which matches their topics.
+    if (lessonId && lessonSets["mathematics"] && lessonSets["mathematics"][lessonId]) {
+      return <DragDropLabel subjectId="mathematics" experimentType={t} lessonId={lessonId} />;
+    }
     if (MATH_DRAG_TYPES.has(t)) return <DragDropLabel subjectId="mathematics" experimentType={t} />;
     if (MATH_LINEAR_TYPES.has(t)) return <GraphingCalculator mode="linear" />;
     if (MATH_PARABOLA_TYPES.has(t)) return <GraphingCalculator mode="parabola" />;
