@@ -14,12 +14,13 @@ import WeakTopicsPanel from "./WeakTopicsPanel";
 import ReviewSolution from "./ReviewSolution";
 import SimilarQuestionPractice from "./SimilarQuestionPractice";
 import { canPractice, questionKey } from "../data/similarQuestion";
+import { SECONDS_PER_QUESTION, MAX_QUESTIONS, PASS_PERCENTAGE } from "../data/mockExamRules";
 import "./ExtraPractice.css";
 import "./MockExam.css";
 
-const SECONDS_PER_QUESTION = 90; // ~1.5 min per question
-const MAX_QUESTIONS = 40; // CSEC Paper 1-style fixed length
-const PASS_PERCENTAGE = 60;
+// SECONDS_PER_QUESTION / MAX_QUESTIONS / PASS_PERCENTAGE are imported from
+// src/data/mockExamRules.js, so the Compass Guide quotes the same pass mark and
+// question timing this component enforces.
 const QUIZ_TYPE = "mock";
 
 function formatTime(totalSeconds) {

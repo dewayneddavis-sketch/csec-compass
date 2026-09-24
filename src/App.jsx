@@ -19,6 +19,7 @@ import PrivacyPage from "./pages/PrivacyPage";
 import ContactPage from "./pages/ContactPage";
 import { TRADEMARK_DISCLAIMER } from "./data/legal";
 import ProtectedRoute from "./components/ProtectedRoute";
+import GuideBot from "./components/GuideBot";
 import "./App.css";
 
 export default function App() {
@@ -69,6 +70,12 @@ export default function App() {
               <Link to="/privacy">Privacy Policy</Link>
             </p>
           </footer>
+          {/* The Compass Guide (owner decision 2026-09-24): a floating,
+              deterministic help panel on EVERY page — the questions it answers
+              (price, free preview, access, refunds, contact) are asked at the
+              paywall and on the landing page, so it lives in the shell rather
+              than behind a route. Outside <Routes> on purpose, like the footer. */}
+          <GuideBot />
         </div>
       </AuthProvider>
     </BrowserRouter>
