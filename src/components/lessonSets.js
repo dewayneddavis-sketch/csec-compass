@@ -4324,5 +4324,127 @@ export const lessonSets = {
       ],
     },
   },
+  "english-a": {
+    // Per-lesson labs for the English A syllabus-gap lessons. The 10 older
+    // lessons are deliberately NOT keys here: they keep resolving through
+    // englishSets[experimentType] exactly as before.
+    "visual-text-literacy": {
+      title: "What the Visual Says",
+      subtitle: "Match each visual-text term to what it tells a reader.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "Names what is measured and in what unit", label: "Axis label" },
+        { id: "p2", target: "Explains the picture or figure beneath it", label: "Caption" },
+        { id: "p3", target: "The direction the data moves over time", label: "Trend" },
+        { id: "p4", target: "Image that combines data with short text", label: "Infographic" },
+        { id: "p5", target: "What the visual actually says", label: "Stated meaning" },
+        { id: "p6", target: "What the reader concludes from it", label: "Implied meaning" },
+      ],
+    },
+    "expository-and-poetic-comprehension": {
+      title: "Claim, Evidence or Attitude?",
+      subtitle: "Sort each line of an expository extract by the reading job it does.",
+      kind: "sort",
+      categories: [
+        { id: "claim", label: "The writer's position" },
+        { id: "evidence", label: "Support for the position" },
+        { id: "attitude", label: "The writer's feeling" },
+      ],
+      items: [
+        { id: "i1", label: "Motorists should be fined for speeding", category: "claim" },
+        { id: "i2", label: "Roads must be repaired before the rainy season", category: "claim" },
+        { id: "i3", label: "One in three accidents happened at night", category: "evidence" },
+        { id: "i4", label: "Traffic officers recorded 240 offences", category: "evidence" },
+        { id: "i5", label: "The phrase 'needless tragedy' signals sorrow", category: "attitude" },
+        { id: "i6", label: "'Reckless drivers' shows the writer's disapproval", category: "attitude" },
+      ],
+    },
+    "syntax-and-sentence-structure": {
+      title: "Sentence Types",
+      subtitle: "Sort each sentence as simple, compound or complex.",
+      kind: "sort",
+      categories: [
+        { id: "simple", label: "One independent clause" },
+        { id: "compound", label: "Two independent clauses joined" },
+        { id: "complex", label: "An independent clause plus a dependent one" },
+      ],
+      items: [
+        { id: "i1", label: "The choir rehearses on Thursdays", category: "simple" },
+        { id: "i2", label: "The vendor sold ripe mangoes", category: "simple" },
+        { id: "i3", label: "The vendor sold mangoes, so the stall emptied by noon", category: "compound" },
+        { id: "i4", label: "She studies every evening and reviews her notes", category: "compound" },
+        { id: "i5", label: "Because the rain fell heavily, the stall closed early", category: "complex" },
+        { id: "i6", label: "Although the bus was late, we reached school on time", category: "complex" },
+      ],
+    },
+    "descriptive-writing": {
+      title: "Show, Don't Tell",
+      subtitle: "Match each flat telling sentence to the showing version of it.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "A vendor shouted prices over the crowd", label: "The market was busy" },
+        { id: "p2", target: "He read the same line of the letter three times", label: "He was nervous" },
+        { id: "p3", target: "Wet sand squeaked underfoot", label: "The beach was pleasant" },
+        { id: "p4", target: "Books leaned off the shelf onto the floor", label: "The room was untidy" },
+        { id: "p5", target: "She let the heavy bag slide to the ground", label: "She was tired" },
+        { id: "p6", target: "Pepper and thyme hit the back of the throat", label: "The food was tasty" },
+      ],
+    },
+    "persuasive-techniques": {
+      title: "Name That Device",
+      subtitle: "Match each persuasive device to a sentence that uses it.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "Do we really want our children breathing this air?", label: "Rhetorical question" },
+        { id: "p2", target: "Cleaner, safer, fairer", label: "Rule of three" },
+        { id: "p3", target: "This shameful waste must end", label: "Emotive language" },
+        { id: "p4", target: "Nine out of ten residents want change", label: "Statistic" },
+        { id: "p5", target: "Last year a fisherman lost his boat in the storm", label: "Anecdote" },
+        { id: "p6", target: "You can help today", label: "Direct address" },
+      ],
+    },
+    "functional-writing": {
+      title: "PARF Planner",
+      subtitle: "Sort each part of a Section B task by the decision it forces.",
+      kind: "sort",
+      categories: [
+        { id: "purpose", label: "What the piece must achieve" },
+        { id: "audience", label: "Who will read it" },
+        { id: "register", label: "How formal it must sound" },
+        { id: "form", label: "Which text type it must be" },
+      ],
+      items: [
+        { id: "i1", label: "To persuade the council to repair the road", category: "purpose" },
+        { id: "i2", label: "To explain a decision to parents", category: "purpose" },
+        { id: "i3", label: "The manager of the hotel", category: "audience" },
+        { id: "i4", label: "Readers of the school magazine", category: "audience" },
+        { id: "i5", label: "Formal and impersonal", category: "register" },
+        { id: "i6", label: "Semi-formal but polite", category: "register" },
+        { id: "i7", label: "A letter of complaint", category: "form" },
+        { id: "i8", label: "A report with headings", category: "form" },
+      ],
+    },
+    "functional-text-formats": {
+      title: "Which Form Is It?",
+      subtitle: "Sort each feature into the Section B text type it belongs to.",
+      kind: "sort",
+      categories: [
+        { id: "letter", label: "Letters and emails" },
+        { id: "report", label: "Reports" },
+        { id: "notice", label: "Notices" },
+        { id: "article", label: "Articles" },
+      ],
+      items: [
+        { id: "i1", label: "Dear Sir or Madam", category: "letter" },
+        { id: "i2", label: "Yours faithfully", category: "letter" },
+        { id: "i3", label: "To / From / Date / Subject headings", category: "report" },
+        { id: "i4", label: "Recommendations, signed off", category: "report" },
+        { id: "i5", label: "Heading, issuing body and date", category: "notice" },
+        { id: "i6", label: "Short lines with a contact for replies", category: "notice" },
+        { id: "i7", label: "Headline and byline", category: "article" },
+        { id: "i8", label: "Lively first-person opening", category: "article" },
+      ],
+    },
+  },
 };
 

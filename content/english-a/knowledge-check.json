@@ -114,7 +114,7 @@
   ],
   "answer": "Writing an instruction manual on how to build a shelf.",
   "explanation": "Expository writing aims to inform or explain.",
-  "topic": "argument-structure"
+  "topic": "functional-writing"
  },
  {
   "id": "q10",
@@ -140,19 +140,6 @@
   ],
   "answer": "Delay",
   "explanation": "To procrastinate means to put off or delay doing something.",
-  "topic": "synonyms-antonyms"
- },
- {
-  "id": "q12",
-  "question": "What is the antonym of 'rigid'?",
-  "options": [
-   "Stiff",
-   "Firm",
-   "Flexible",
-   "Hard"
-  ],
-  "answer": "Flexible",
-  "explanation": "Rigid means stiff or unbending; flexible is the opposite.",
   "topic": "synonyms-antonyms"
  },
  {
@@ -192,7 +179,7 @@
   ],
   "answer": "Adverb",
   "explanation": "'Quickly' describes the verb 'ran', so it is an adverb.",
-  "topic": "subject-verb-agreement"
+  "topic": "syntax-and-sentence-structure"
  },
  {
   "id": "q16",
@@ -218,7 +205,7 @@
   ],
   "answer": "Old man",
   "explanation": "The subject is the person or thing performing the action.",
-  "topic": "subject-verb-agreement"
+  "topic": "syntax-and-sentence-structure"
  },
  {
   "id": "q18",
@@ -231,33 +218,7 @@
   ],
   "answer": "She likes tea but he likes coffee.",
   "explanation": "A compound sentence contains at least two independent clauses joined by a coordinating conjunction.",
-  "topic": "subject-verb-agreement"
- },
- {
-  "id": "q19",
-  "question": "Choose the correctly spelled word.",
-  "options": [
-   "Accomodate",
-   "Accommodate",
-   "Acomodate",
-   "Acommodate"
-  ],
-  "answer": "Accommodate",
-  "explanation": "Accommodate is spelled with two 'c's and two 'm's.",
-  "topic": "diction-context"
- },
- {
-  "id": "q20",
-  "question": "What is a metaphor?",
-  "options": [
-   "A comparison using like or as",
-   "A direct comparison without using like or as",
-   "Giving human qualities to objects",
-   "An exaggeration"
-  ],
-  "answer": "A direct comparison without using like or as",
-  "explanation": "A metaphor states that one thing is another thing for symbolic effect.",
-  "topic": "figurative-language"
+  "topic": "syntax-and-sentence-structure"
  },
  {
   "id": "q21",
@@ -299,19 +260,6 @@
   "topic": "argument-structure"
  },
  {
-  "id": "q24",
-  "question": "Identify the antonym of 'Arrogant'.",
-  "options": [
-   "Proud",
-   "Humble",
-   "Confident",
-   "Rude"
-  ],
-  "answer": "Humble",
-  "explanation": "Humble is the opposite of arrogant.",
-  "topic": "synonyms-antonyms"
- },
- {
   "id": "q25",
   "question": "Which of these is an example of alliteration?",
   "options": [
@@ -323,5 +271,57 @@
   "answer": "Peter Piper picked a peck.",
   "explanation": "Alliteration is the repetition of the same letter or sound at the beginning of adjacent or closely connected words.",
   "topic": "figurative-language"
+ },
+ {
+  "id": "q26",
+  "question": "An advertisement claims 'nine out of ten doctors recommend'. What should a careful reader ask first?",
+  "options": [
+   "Who was asked, and how many were asked?",
+   "How large is the lettering in the advert?",
+   "What colour is the company logo?",
+   "How long has the advert been running?"
+  ],
+  "answer": "Who was asked, and how many were asked?",
+  "explanation": "A statistic is only as strong as its sample. Unless the advert says who was asked, how many people were asked and what they were asked, the figure cannot be checked - which is usually the point of quoting it. Read the small print, or note its absence.",
+  "topic": "visual-text-literacy"
+ },
+ {
+  "id": "q27",
+  "question": "Which sentence best shows rather than tells?",
+  "options": [
+   "Wet sand squeaked underfoot",
+   "The beach was very nice",
+   "It was a pleasant day at the sea",
+   "The beach was extremely lovely"
+  ],
+  "answer": "Wet sand squeaked underfoot",
+  "explanation": "Three options tell the reader the beach was pleasant and rely on adjectives to do the work. The first gives a sound the reader can almost hear, so the pleasantness is inferred. Concrete detail beats stacked adjectives in descriptive writing.",
+  "topic": "descriptive-writing"
+ },
+ {
+  "id": "q28",
+  "question": "What does PATHOS appeal to?",
+  "options": [
+   "The reader's emotions",
+   "The reader's sense of logic",
+   "The writer's credentials",
+   "The length of the argument"
+  ],
+  "answer": "The reader's emotions",
+  "explanation": "PATHOS appeals to feeling through story, image and emotive language; LOGOS appeals to reason through evidence; ETHOS appeals to the writer's credibility. Strong argument uses all three, so learn to spot which one a sentence is leaning on.",
+  "topic": "persuasive-techniques"
+ },
+ {
+  "id": "q29",
+  "question": "Which text type needs a subject line and a polite salutation, but no postal address of the sender?",
+  "options": [
+   "An email",
+   "A report",
+   "A notice",
+   "A newspaper article"
+  ],
+  "answer": "An email",
+  "explanation": "An email keeps the politeness of a letter but replaces the addresses with a subject line that tells the reader what the message is about. A report uses headed sections, a notice is posted for a group, and an article carries a headline and byline.",
+  "topic": "functional-text-formats"
  }
 ]

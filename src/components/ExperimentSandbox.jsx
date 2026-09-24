@@ -132,6 +132,11 @@ function resolveInteractive(subjectId, experimentType, lessonId) {
 
   // ---- english-a: per-lesson set by type; diction → dedicated vocab deck
   if (subjectId === "english-a") {
+    // The syllabus-gap lessons (functional writing, visual texts, syntax, ...)
+    // carry their own set, so resolve by lessonId before the type library.
+    if (lessonId && lessonSets["english-a"] && lessonSets["english-a"][lessonId]) {
+      return <DragDropLabel subjectId="english-a" experimentType={t} lessonId={lessonId} />;
+    }
     if (ENG_DRAG_TYPES.has(t)) return <DragDropLabel subjectId="english-a" experimentType={t} />;
     if (ENG_DICTION_TYPES.has(t)) return <FlashcardSystem subjectId="english-diction" />;
     return flash("english-a");

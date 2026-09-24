@@ -1,18 +1,5 @@
 [
  {
-  "id": "p1",
-  "question": "Which of the following sentences is grammatically correct?",
-  "options": [
-   "The group of students were late.",
-   "Everyone in the class is invited.",
-   "Neither John nor his friends was there.",
-   "The teacher, along with her pupils, are attending."
-  ],
-  "answer": "Everyone in the class is invited.",
-  "explanation": "'Everyone' is an indefinite pronoun and is always singular, so it takes the singular verb 'is'.",
-  "topic": "subject-verb-agreement"
- },
- {
   "id": "p2",
   "question": "Choose the correctly punctuated sentence.",
   "options": [
@@ -169,19 +156,6 @@
   "topic": "subject-verb-agreement"
  },
  {
-  "id": "p14",
-  "question": "Choose the correct form: 'Neither of the boys ___ present.'",
-  "options": [
-   "was",
-   "were",
-   "are",
-   "have been"
-  ],
-  "answer": "was",
-  "explanation": "'Neither' takes a singular verb: 'was'.",
-  "topic": "subject-verb-agreement"
- },
- {
   "id": "p15",
   "question": "What is the antonym of 'candid'?",
   "options": [
@@ -193,19 +167,6 @@
   "answer": "secretive",
   "explanation": "'Candid' means honest/open; the opposite is 'secretive'.",
   "topic": "synonyms-antonyms"
- },
- {
-  "id": "p16",
-  "question": "Identify the correctly spelt word:",
-  "options": [
-   "accommodate",
-   "accomodate",
-   "acommodate",
-   "acomodate"
-  ],
-  "answer": "accommodate",
-  "explanation": "'Accommodate' has double c and double m.",
-  "topic": "diction-context"
  },
  {
   "id": "p17",
@@ -335,7 +296,7 @@
   ],
   "answer": "She slept and dreamed.",
   "explanation": "Two independent clauses joined by 'and'.",
-  "topic": "subject-verb-agreement"
+  "topic": "syntax-and-sentence-structure"
  },
  {
   "id": "p27",
@@ -349,19 +310,6 @@
   "answer": "to face a difficult situation bravely",
   "explanation": "It means to endure something painful with courage.",
   "topic": "literal-meaning"
- },
- {
-  "id": "p28",
-  "question": "Select the correctly spelt word:",
-  "options": [
-   "embarrass",
-   "embarass",
-   "embarras",
-   "embaras"
-  ],
-  "answer": "embarrass",
-  "explanation": "'Embarrass' has double r and double s.",
-  "topic": "diction-context"
  },
  {
   "id": "p29",
@@ -413,7 +361,7 @@
   ],
   "answer": "relative clause",
   "explanation": "It starts with 'who' and modifies 'the runner'.",
-  "topic": "subject-verb-agreement"
+  "topic": "syntax-and-sentence-structure"
  },
  {
   "id": "p33",
@@ -491,7 +439,7 @@
   ],
   "answer": "The cat sat on the mat.",
   "explanation": "One independent clause only.",
-  "topic": "subject-verb-agreement"
+  "topic": "syntax-and-sentence-structure"
  },
  {
   "id": "p39",
@@ -505,19 +453,6 @@
   "answer": "mislead",
   "explanation": "'Deceive' means to trick or mislead.",
   "topic": "synonyms-antonyms"
- },
- {
-  "id": "p40",
-  "question": "Choose the correct sentence:",
-  "options": [
-   "I look forward to meeting you.",
-   "I look forward to meet you.",
-   "I look forward for meeting you.",
-   "I looking forward to meet you."
-  ],
-  "answer": "I look forward to meeting you.",
-  "explanation": "'Look forward to' is followed by the -ing form.",
-  "topic": "subject-verb-agreement"
  },
  {
   "id": "p41",
@@ -635,19 +570,6 @@
   "answer": "Peter picked a peck of pickled peppers",
   "explanation": "Repeated initial consonant 'p'.",
   "topic": "figurative-language"
- },
- {
-  "id": "p50",
-  "question": "What is the plural of 'child'?",
-  "options": [
-   "children",
-   "childs",
-   "childes",
-   "childrens"
-  ],
-  "answer": "children",
-  "explanation": "'Child' is irregular; plural is 'children'.",
-  "topic": "diction-context"
  },
  {
   "id": "p51",
@@ -946,7 +868,7 @@
   ],
   "answer": "exclamatory",
   "explanation": "It expresses strong emotion with '!'.",
-  "topic": "subject-verb-agreement"
+  "topic": "syntax-and-sentence-structure"
  },
  {
   "id": "p74",
@@ -1037,7 +959,7 @@
   ],
   "answer": "When the bell rang, the students left.",
   "explanation": "Dependent clause + independent clause.",
-  "topic": "subject-verb-agreement"
+  "topic": "syntax-and-sentence-structure"
  },
  {
   "id": "p81",
@@ -1235,19 +1157,6 @@
   "topic": "plot-structure"
  },
  {
-  "id": "p96",
-  "question": "Choose the correct form: 'There ___ many reasons for this.'",
-  "options": [
-   "are",
-   "is",
-   "was",
-   "be"
-  ],
-  "answer": "are",
-  "explanation": "'Reasons' is plural → 'are'.",
-  "topic": "subject-verb-agreement"
- },
- {
   "id": "p97",
   "question": "The word 'rural' describes:",
   "options": [
@@ -1298,5 +1207,96 @@
   "answer": "unwilling",
   "explanation": "'Reluctant' means hesitant or unwilling.",
   "topic": "synonyms-antonyms"
+ },
+ {
+  "id": "p101",
+  "question": "A bar chart is titled 'Road deaths by parish, 2019-2023' but the vertical axis starts at 40 instead of 0. What is the main risk for a reader?",
+  "options": [
+   "The bars look more dramatic than the real differences",
+   "The title no longer matches the data",
+   "The chart cannot show a trend over time",
+   "The parishes must be listed in the wrong order"
+  ],
+  "answer": "The bars look more dramatic than the real differences",
+  "explanation": "A truncated axis is the most common trick in graphs. Starting at 40 instead of 0 stretches every bar until a small change looks like a cliff. Read the axis before you read the bars, and quote the numbers rather than the impression the picture gives.",
+  "topic": "visual-text-literacy"
+ },
+ {
+  "id": "p102",
+  "question": "An expository extract argues that schools should ban plastic bottles. Which of these is EVIDENCE rather than a claim?",
+  "options": [
+   "A school of 900 pupils discards 1,200 bottles every week",
+   "Schools have a duty to protect the environment",
+   "This waste is shameful and must stop",
+   "Bottled water is more convenient for students"
+  ],
+  "answer": "A school of 900 pupils discards 1,200 bottles every week",
+  "explanation": "Evidence is a fact that can be checked; a claim is a position that has to be proved. The number of bottles discarded in a week is evidence because a reader could verify it. 'Schools have a duty' and 'must stop' are claims, and 'more convenient' is the opposing view.",
+  "topic": "expository-and-poetic-comprehension"
+ },
+ {
+  "id": "p103",
+  "question": "Which sentence uses the 'show, don't tell' technique?",
+  "options": [
+   "He read the same line of the letter three times",
+   "He was extremely nervous about the letter",
+   "The letter made him feel very anxious indeed",
+   "He felt nervous as he opened the letter"
+  ],
+  "answer": "He read the same line of the letter three times",
+  "explanation": "Three of the four options name the emotion ('nervous', 'anxious') and leave the reader to take the writer's word for it. The first option gives observable behaviour instead, so the reader infers the nervousness. In Section C that inference is what earns the creative marks.",
+  "topic": "descriptive-writing"
+ },
+ {
+  "id": "p104",
+  "question": "'Do we really want our children breathing this air?' - which persuasive device is being used?",
+  "options": [
+   "Rhetorical question",
+   "Rule of three",
+   "Anecdote",
+   "Statistic"
+  ],
+  "answer": "Rhetorical question",
+  "explanation": "A rhetorical question is asked for effect, not for an answer: it pushes the reader to agree before they have thought about it. Naming the device earns part of the mark; the rest comes from stating the effect, here that it makes the reader feel responsible for children's health.",
+  "topic": "persuasive-techniques"
+ },
+ {
+  "id": "p105",
+  "question": "A Paper 02 Section B task asks for a letter to the manager of a hotel complaining about a cancelled tour. Which register does the task require?",
+  "options": [
+   "Formal and impersonal",
+   "Informal and friendly",
+   "Conversational with slang",
+   "Humorous and playful"
+  ],
+  "answer": "Formal and impersonal",
+  "explanation": "The reader is a business contact you do not know, and the purpose is to state a problem and ask for action. That combination calls for a formal, impersonal register: no contractions, no slang, no jokes. Register is worth marks in Section B because it is part of writing for an audience.",
+  "topic": "functional-writing"
+ },
+ {
+  "id": "p106",
+  "question": "You must write to a business whose manager's name you do not know. Which salutation is correct?",
+  "options": [
+   "Dear Sir or Madam",
+   "Dear Manager Smith",
+   "Hi there",
+   "Hello friend"
+  ],
+  "answer": "Dear Sir or Madam",
+  "explanation": "A named recipient takes 'Dear Mr/Ms [name]' and closes with 'Yours sincerely'. An unnamed recipient takes 'Dear Sir or Madam' and closes with 'Yours faithfully'. Inventing a name, or opening with 'Hi there', breaks the register of a business letter.",
+  "topic": "functional-text-formats"
+ },
+ {
+  "id": "p107",
+  "question": "A summary question sets a limit of 120 words and your draft has 137. What is the best way to cut it down?",
+  "options": [
+   "Replace wordy phrases with single words",
+   "Delete the final sentence and nothing else",
+   "Remove every transition word from the draft",
+   "Leave it and trust that the examiner will not count"
+  ],
+  "answer": "Replace wordy phrases with single words",
+  "explanation": "Cutting wordiness keeps the marks because no point is lost: 'at this point in time' becomes 'now' and 'in spite of the fact that' becomes 'although'. Deleting a whole sentence loses a point, and removing transitions damages the flow that the expression marks reward.",
+  "topic": "drafting-summary"
  }
 ]
