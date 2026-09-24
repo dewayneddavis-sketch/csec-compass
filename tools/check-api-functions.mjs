@@ -30,6 +30,14 @@
 // It also drives the consolidated auth function and asserts both legacy paths
 // still answer exactly as the two files it replaced did — consolidating to get
 // back under the cap must not quietly change a response.
+// That consolidation itself produced the third lesson (2026-09-24):
+// api/auth/[action].js never registered, because a bracketed filename is a
+// Next.js feature and this is a plain Vite project — Vercel read "[action]" as a
+// literal segment, so /api/auth/me fell through to the SPA rewrite and answered
+// index.html. The function is now api/auth.js (non-dynamic) reached through a
+// vercel.json rewrite, and this file guards that shape: no bracketed name under
+// api/, the rewrite present and ordered before the SPA fallback, and the handler
+// answering for both the rewritten (?action=…) and bare-URL deliveries.
 //
 // Run it with the rest before any PR that touches api/:
 //   for f in tools/check-*.mjs; do node "$f"; done
@@ -141,12 +149,68 @@ check(
 );
 
 // --- the consolidation that made room for the contact route -----------------
-section("the two auth lookups still answer, in one function");
+section("the two auth lookups still answer, in one routed function");
 
-const AUTH_FILE = "api/auth/[action].js";
-check("api/auth/[action].js is the one auth function", existsSync(join(root, AUTH_FILE)));
+const AUTH_FILE = "api/auth.js";
+// A bracketed filename is a dynamic route in Next.js only. This project builds
+// api/ with Vercel's plain Serverless Functions convention, where "[action]" is
+// a literal path segment — so the old api/auth/[action].js matched nothing and
+// /api/auth/me fell through to index.html. Guard the whole class of mistake.
+const bracketed = apiFiles.filter((f) => /[[\]]/.test(f));
+check(
+  "no file under api/ uses a bracketed (dynamic) name — Vercel supports those in Next.js, not here",
+  bracketed.length === 0,
+  bracketed.join(", ")
+);
+check("api/auth.js is the one auth function", existsSync(join(root, AUTH_FILE)));
+check(
+  "api/auth/[action].js is gone (its dynamic name never matched a URL)",
+  !existsSync(join(root, "api/auth/[action].js"))
+);
 check("api/auth/me.js is gone (its path is served by the consolidated function)", !existsSync(join(root, "api/auth/me.js")));
 check("api/auth/user.js is gone (its path is served by the consolidated function)", !existsSync(join(root, "api/auth/user.js")));
+
+// What replaced the dynamic filename: one rewrite that turns the path segment
+// into a query parameter (Vercel's documented behaviour for a named source
+// segment — their own example turns /resize/:width/:height into
+// /api/sharp?width=800&height=600).
+function rewriteMatches(source, path) {
+  const pattern = source
+    .replace(/[.*+?^${}()|[\]\\]/g, "\\$&") // everything is literal…
+    .replace(/:([A-Za-z0-9_]+)/g, "([^/]+)"); // …except a named segment
+  const m = new RegExp(`^${pattern}$`).exec(path);
+  return m ? m.slice(1) : null;
+}
+const vercelConfig = JSON.parse(readFileSync(join(root, "vercel.json"), "utf8"));
+const rewrites = Array.isArray(vercelConfig.rewrites) ? vercelConfig.rewrites : [];
+const authRuleIndex = rewrites.findIndex(
+  (r) => r && r.source === "/api/auth/:action" && r.destination === "/api/auth"
+);
+const spaIndex = rewrites.findIndex((r) => r && r.destination === "/index.html");
+check(
+  "vercel.json routes /api/auth/:action to the single non-dynamic auth function",
+  authRuleIndex !== -1,
+  JSON.stringify(rewrites)
+);
+check(
+  "that rule is evaluated before the SPA fallback (Vercel takes the first match)",
+  authRuleIndex !== -1 && spaIndex !== -1 && authRuleIndex < spaIndex,
+  `auth rule at ${authRuleIndex}, SPA fallback at ${spaIndex}`
+);
+check(
+  "the rewrite matches both live paths and hands the segment over",
+  JSON.stringify(rewriteMatches("/api/auth/:action", "/api/auth/me")) === JSON.stringify(["me"]) &&
+    JSON.stringify(rewriteMatches("/api/auth/:action", "/api/auth/user")) === JSON.stringify(["user"]),
+  `${JSON.stringify(rewriteMatches("/api/auth/:action", "/api/auth/me"))} / ${JSON.stringify(rewriteMatches("/api/auth/:action", "/api/auth/user"))}`
+);
+check(
+  "the rewrite does not swallow the function's own path (/api/auth stays itself)",
+  rewriteMatches("/api/auth/:action", "/api/auth") === null
+);
+check(
+  "the auth function explains why a dynamic filename cannot be used here",
+  /Next\.js/.test(readFileSync(join(root, AUTH_FILE), "utf8"))
+);
 
 function mockRes() {
   return {
@@ -174,7 +238,7 @@ async function call(handler, req) {
 // The consolidated file imports the Supabase client, so it is imported the same
 // way Vercel would load it. No request below reaches the network: each one is
 // answered before any client call can happen.
-const authHandler = (await import("../api/auth/[action].js")).default;
+const authHandler = (await import("../api/auth.js")).default;
 
 const realUrl = process.env.VITE_SUPABASE_URL;
 const realKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
@@ -228,6 +292,32 @@ process.env.SUPABASE_SERVICE_ROLE_KEY = "service-role-key-for-checks-only";
   check("the action is taken from the routed param when it is present", viaQuery.statusCode === 401 && viaQuery.body.user === null);
   const viaArrayQuery = await call(authHandler, { method: "GET", url: "/api/auth/user", query: { action: ["user"] }, headers: {} });
   check("a catch-all-style array param resolves to the same place", viaArrayQuery.statusCode === 401 && viaArrayQuery.body.error === "No auth header");
+  // The delivery the vercel.json rewrite actually produces in production:
+  // /api/auth/me arrives as /api/auth?action=me. This is the one that must work.
+  const viaRewrite = await call(authHandler, {
+    method: "GET",
+    url: "/api/auth?action=me",
+    query: { action: "me" },
+    headers: {},
+  });
+  check(
+    "delivered as the rewrite delivers it (?action=me) it answers the same JSON 401",
+    viaRewrite.statusCode === 401 &&
+      viaRewrite.body.error === "No authorization header" &&
+      viaRewrite.body.user === null,
+    `${viaRewrite.statusCode} ${JSON.stringify(viaRewrite.body)}`
+  );
+  const viaRewriteUser = await call(authHandler, {
+    method: "GET",
+    url: "/api/auth?action=user",
+    query: { action: "user" },
+    headers: {},
+  });
+  check(
+    "the same delivery for /api/auth/user",
+    viaRewriteUser.statusCode === 401 && viaRewriteUser.body.error === "No auth header",
+    `${viaRewriteUser.statusCode} ${JSON.stringify(viaRewriteUser.body)}`
+  );
 }
 {
   const unknown = await call(authHandler, { method: "GET", url: "/api/auth/register", headers: {} });
