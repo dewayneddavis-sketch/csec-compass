@@ -14,13 +14,20 @@ import WeakTopicsPanel from "./WeakTopicsPanel";
 import ReviewSolution from "./ReviewSolution";
 import SimilarQuestionPractice from "./SimilarQuestionPractice";
 import { canPractice, questionKey } from "../data/similarQuestion";
-import { SECONDS_PER_QUESTION, MAX_QUESTIONS, PASS_PERCENTAGE } from "../data/mockExamRules";
+import { SECONDS_PER_QUESTION, PASS_PERCENTAGE } from "../data/mockExamRules";
+import { buildMockPaper, newMockSeed } from "../data/mockPaper";
 import "./ExtraPractice.css";
 import "./MockExam.css";
 
-// SECONDS_PER_QUESTION / MAX_QUESTIONS / PASS_PERCENTAGE are imported from
-// src/data/mockExamRules.js, so the Compass Guide quotes the same pass mark and
+// SECONDS_PER_QUESTION / PASS_PERCENTAGE are imported from src/data/mockExamRules.js
+// (and the paper size, MAX_QUESTIONS, by src/data/mockPaper.js), so the Compass
+// Guide quotes the same pass mark and
 // question timing this component enforces.
+//
+// The paper itself is drawn by src/data/mockPaper.js from the subject's WHOLE
+// practice bank — see that file for why (head-slicing the first 40 made every
+// newly authored question mock-invisible for good). One seed per attempt: the
+// paper stays fixed while you sit it, and a retake draws a fresh one.
 const QUIZ_TYPE = "mock";
 
 function formatTime(totalSeconds) {
@@ -44,6 +51,10 @@ export default function MockExam({ subjectId }) {
   // in the review. Outside the exam: it never touches the timer or the score.
   const [practiceKey, setPracticeKey] = useState(null);
   const totalSeconds = useRef(0);
+  // The unsampled bank for this subject (kept so a retake can draw a new paper)
+  // and the seed for the paper currently loaded.
+  const bankRef = useRef(null);
+  const seedRef = useRef(newMockSeed());
   const { session } = useAuth();
   const showWork = showYourWorkEnabled(subjectId, QUIZ_TYPE);
 
@@ -77,6 +88,9 @@ export default function MockExam({ subjectId }) {
     setLatestAttemptId(null);
     setPracticeKey(null);
     recordedRef.current = false;
+    // A different subject is a different bank and a new paper.
+    bankRef.current = null;
+    seedRef.current = newMockSeed();
     fetch(`/content/${subjectId}/practice.json`)
       .then((res) => {
         if (!res.ok) throw new Error("not found");
@@ -85,8 +99,9 @@ export default function MockExam({ subjectId }) {
       .then((data) => {
         const qs = data?.exercises || data;
         if (Array.isArray(qs) && qs.length > 0) {
-          const examQuestions = qs.length > MAX_QUESTIONS ? qs.slice(0, MAX_QUESTIONS) : qs;
-          setQuestions(examQuestions);
+          // Sample the whole bank instead of taking its first MAX_QUESTIONS.
+          bankRef.current = qs;
+          setQuestions(buildMockPaper(qs, { seed: seedRef.current }));
         } else {
           setQuestions(null);
         }
@@ -181,6 +196,11 @@ export default function MockExam({ subjectId }) {
     setPracticeKey(null);
     recordedRef.current = false;
     clearWorkingDrafts(subjectId, QUIZ_TYPE);
+    // A retake is a fresh paper over the same bank (not the same 40 again).
+    if (bankRef.current && bankRef.current.length > 0) {
+      seedRef.current = newMockSeed();
+      setQuestions(buildMockPaper(bankRef.current, { seed: seedRef.current }));
+    }
   }
 
   if (!started) {
