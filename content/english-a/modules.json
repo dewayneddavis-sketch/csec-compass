@@ -37,6 +37,46 @@
                     "description": "Figure of Speech Match: Drag literary devices to their corresponding examples in a series of poem snippets."
                 },
                 "content": "Figurative language uses words beyond their literal meaning to create vivid imagery, emphasis, or emotional effect. Key devices tested on CSEC include: simile (comparison using 'like' or 'as' \u2014 'she ran like the wind'), metaphor (direct comparison \u2014 'time is a thief'), personification (giving human qualities to non-human things \u2014 'the wind whispered'), and hyperbole (deliberate exaggeration \u2014 'I've told you a million times').\n\nOther important devices include onomatopoeia (words that sound like their meaning \u2014 'buzz', 'crash'), alliteration (repetition of initial consonant sounds \u2014 'Peter Piper picked'), and irony (saying the opposite of what you mean, or a situation turning out unexpectedly). Writers use these devices to make their writing more engaging and to reinforce themes or emotions.\n\nOn the CSEC exam, you'll be asked to identify the device used and explain its effect. A strong answer identifies the device, quotes the exact phrase, and explains what it adds \u2014 e.g., 'The simile \"like a caged bird\" emphasizes the character's feeling of being trapped and wanting freedom.'"
+            },
+            {
+                "id": "visual-text-literacy",
+                "title": "Reading Visual Texts",
+                "objectives": [
+                    "Read charts, graphs, advertisements and infographics accurately",
+                    "Separate what a visual states from what it implies",
+                    "Answer the three question types Paper 01 asks about visuals"
+                ],
+                "concepts": [
+                    "Non-continuous text",
+                    "Charts and graphs",
+                    "Advertisements",
+                    "Stated vs implied meaning"
+                ],
+                "experiment": {
+                    "type": "highlight-tool",
+                    "description": "Chart Detective: highlight the claims a bar chart and an advertisement actually make, and the ones a reader only assumes."
+                },
+                "content": "Paper 01 Section 2 includes a visual text: a bar or line graph, a pie chart, an advertisement or an infographic. Read it in this order: the title, then the labels on both axes or the caption, then the figures, and only then the picture. A title such as 'Road deaths by parish, 2019-2023' tells you the subject and the period; the labels tell you the units. Most wrong answers come from reading the bar heights without checking whether the axis starts at zero.\n\nVisual questions fall into three families. COMPREHENSION asks what the visual states: the value in 2019, the largest category, the total. INTERPRETATION asks what the data implies: a trend, a comparison between two categories, a likely cause that the data supports. EVALUATION asks how effective the visual is: which claim it is designed to support, who the audience is, what the producer left out. Advertisements work mostly at this third level, so always ask what the advertiser wants the reader to feel and do.\n\nTwo habits keep you safe. First, quote the number or the label that supports your answer instead of relying on an impression. Second, notice the missing information: a chart that shows spending falling may not show prices rising; an advert that claims 'nine out of ten' rarely says who was asked. In your written answers, use the visual's own vocabulary (axis, category, trend, caption) and keep the answer to the number of marks offered - one clear point for each mark."
+            },
+            {
+                "id": "expository-and-poetic-comprehension",
+                "title": "Expository and Poetic Comprehension",
+                "objectives": [
+                    "Apply a step-by-step method to expository extracts",
+                    "Read a poem for speaker, form and effect, not just topic",
+                    "Turn an impression into an answer that earns marks"
+                ],
+                "concepts": [
+                    "Argument and evidence in prose",
+                    "Speaker, tone and form in poetry",
+                    "Imagery and sound devices",
+                    "Answering for marks"
+                ],
+                "experiment": {
+                    "type": "text-trimmer",
+                    "description": "Claims and Evidence: trim an expository paragraph down to its claim plus the evidence that supports it, then match three poetic devices to their effects."
+                },
+                "content": "An expository extract explains, informs or argues. Read it once for the subject, then read it again with three questions in mind: what is the writer claiming, what evidence is offered, and what attitude does the writer take? Claims usually sit at the start or end of a paragraph, signalled by 'should', 'must' or 'therefore'. Evidence arrives as statistics, examples, comparisons or expert opinion. The attitude shows in the writer's word choices and in contrast words such as 'however' or 'yet'.\n\nA poem needs a different first step: find the speaker, not the poet. Ask who is talking, to whom, and in what situation. Then look at form - line lengths, stanza pattern, rhyme, repetition - because every form choice is a rhythm choice that shapes the feeling. Finally, track the images. Note the device (simile, metaphor, personification, alliteration, onomatopoeia) and, more importantly, the effect it creates: 'the sea gnawed the shore' makes the water sound hungry and relentless, not simply rough.\n\nBoth extracts are answered the same way: point, evidence, explanation. State your point in the words of the question, quote a short phrase as evidence, then explain how it supports the point. For a three-mark question, give three separate points rather than one long paragraph, and never leave a quotation unexplained - the explanation is where the mark is. Answer in the order the extract is written, so your examiner can follow you easily."
             }
         ]
     },
@@ -118,6 +158,26 @@
                     "description": "Punctuation Placement: Drag punctuation marks ( , ; : . ) into an unpunctuated paragraph to restore its meaning."
                 },
                 "content": "Punctuation marks are the traffic signals of writing \u2014 they tell the reader when to pause, stop, or expect more. The comma (,) separates items in a list, sets off introductory phrases ('However, ...'), and separates clauses. The semicolon (;) joins two closely related independent clauses without a conjunction: 'She studied hard; she passed the exam.'\n\nThe apostrophe (') shows possession ('John's book') or contraction ('don't' for 'do not'). Never use apostrophes for simple plurals \u2014 'apple's' means something belonging to an apple, not multiple apples. Quotation marks ('...') enclose direct speech or exact words from a text. The colon (:) introduces a list, explanation, or quotation.\n\nCSEC editing questions often test these distinctions. Common errors to watch for: comma splices (joining two sentences with just a comma \u2014 use a period, semicolon, or add a conjunction), missing commas in complex sentences, and apostrophe misuse with 'its' (possessive, no apostrophe) vs. 'it's' (contraction of 'it is')."
+            },
+            {
+                "id": "syntax-and-sentence-structure",
+                "title": "Syntax and Sentence Structure",
+                "objectives": [
+                    "Tell simple, compound and complex sentences apart",
+                    "Find and fix sentence fragments and run-on sentences",
+                    "Keep lists and paired ideas parallel"
+                ],
+                "concepts": [
+                    "Clauses and sentence types",
+                    "Fragments and run-ons",
+                    "Parallel structure",
+                    "Word order"
+                ],
+                "experiment": {
+                    "type": "sentence-fixer",
+                    "description": "Sentence Clinic: drag each group of words to Fragment, Run-on or Complete sentence, then fix the faulty ones."
+                },
+                "content": "A clause is a group of words with a subject and a verb. One independent clause on its own makes a SIMPLE sentence: 'The vendor sold ripe mangoes.' Two independent clauses joined by a comma plus a conjunction (and, but, or, so, yet, for, nor) make a COMPOUND sentence: 'The vendor sold ripe mangoes, so the stall was empty by noon.' A COMPLEX sentence adds a dependent clause that cannot stand alone: 'Because the rain fell heavily, the stall closed early.' CSEC Paper 01 tests this directly, so learn to count clauses before you read the options.\n\nTwo errors appear again and again. A FRAGMENT is a dependent clause or phrase punctuated as a sentence: 'Although the bus was late.' It needs a main clause to complete the thought. A RUN-ON (including the comma splice) joins two independent clauses with nothing or with a comma alone: 'The bus was late we missed the start.' Repair a run-on in one of four ways: a full stop, a semicolon, a comma plus a conjunction, or a subordinating word such as 'because' or 'although'.\n\nWord order and parallelism carry marks in both papers. Keep the subject before its verb unless you have a reason to invert, and keep listed items in the same grammatical form: 'She likes swimming, cycling and to run' is faulty; 'She likes swimming, cycling and running' is parallel. The same rule applies to paired constructions: 'not only ... but also' must be followed by matching forms. In Paper 02 these choices affect the 20 expression marks, so treat them as content, not polish."
             }
         ]
     },
@@ -196,6 +256,93 @@
                     "description": "Argument Organizer: Drag and drop 'Intro', 'Body Paragraphs', and 'Conclusion' blocks into the correct order to form a coherent essay structure."
                 },
                 "content": "Persuasive and argumentative writing requires a clear, logical structure. Start with a strong introduction that states your position (thesis) and previews your main arguments. Each body paragraph should present one main point, supported by evidence, examples, or reasoning. Use transition words (firstly, furthermore, however, consequently, in conclusion) to guide the reader through your argument.\n\nA key CSEC distinction: persuasive writing aims to convince the reader to adopt your viewpoint or take action, while argumentative writing presents both sides of an issue before arriving at a reasoned conclusion. In either case, address counterarguments \u2014 acknowledging the opposing view and explaining why your position is stronger makes your writing more convincing and mature.\n\nEnd with a conclusion that restates your position (in different words), summarizes your key points, and leaves the reader with a final thought or call to action. Avoid introducing new arguments in the conclusion. Practice by taking a stand on Caribbean-relevant topics like environmental protection, technology in education, or youth involvement in politics."
+            },
+            {
+                "id": "descriptive-writing",
+                "title": "Descriptive Writing",
+                "objectives": [
+                    "Build a description from specific sensory detail",
+                    "Show rather than tell when you describe a scene or a person",
+                    "Handle the 'describe' prompt in Paper 02 Section C"
+                ],
+                "concepts": [
+                    "Sensory detail",
+                    "Show, don't tell",
+                    "Imagery and figurative language",
+                    "Organising a description"
+                ],
+                "experiment": {
+                    "type": "word-swap",
+                    "description": "Vivid Swap: replace flat, general words with precise, sensory ones, then order the strongest images into a descriptive opening."
+                },
+                "content": "A description works when the reader can see, hear, smell, touch or taste the scene. Build it from specific detail rather than adjectives stacked on a general noun: not 'a nice beach' but 'wet sand that squeaked underfoot, the smell of salt and frying fish, a calypso drifting from a rum shop'. Choose two or three senses for each paragraph instead of listing all five, and let the strongest image carry the sentence.\n\n'Show, don't tell' is the practical rule. Instead of writing 'The market was busy', show it: 'A vendor shouted prices over the crowd while a woman balanced three bags of oranges on her head.' Instead of 'He was nervous', show the tell-tale behaviour: 'He read the same line of the letter three times.' Concrete verbs and one well-chosen simile do more than a pile of adverbs. Keep figurative language controlled - one clear comparison is stronger than three mixed ones.\n\nIn Paper 02 Section C a 'describe' prompt may ask for a place, a person, an occasion or a moment. Plan before you write: decide on the impression you want (the market as lively, the storm as frightening), list four or five images that create it, and choose an order - by space, by time, or from the general scene to one close detail. Open with your best image, keep the tense consistent, and close with a sentence that returns to the impression. Section C is marked on a single creative scale, so shape, detail and control matter more than length."
+            },
+            {
+                "id": "persuasive-techniques",
+                "title": "Persuasive Techniques",
+                "objectives": [
+                    "Recognise the devices a writer uses to persuade",
+                    "Match an appeal to the audience it is meant to move",
+                    "Wield tone and structure in Paper 02 Section D"
+                ],
+                "concepts": [
+                    "Rhetorical devices",
+                    "Ethos, pathos and logos",
+                    "Tone and register",
+                    "Structuring an argument"
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Device Match: match each persuasive device (rhetorical question, repetition, emotive language, statistic, anecdote) to the sentence that uses it, then to the appeal it works through."
+                },
+                "content": "Persuasive writers use a small set of devices on purpose: the rhetorical question that makes the reader answer silently, the rule of three, deliberate repetition ('not now, not ever'), emotive words chosen to shock or comfort, statistics that lend weight, personal anecdote that creates sympathy, and the direct address of 'you'. When a Paper 01 question asks how the writer persuades, name the device and then state its effect on the reader - the effect is the mark, not the label.\n\nBehind the devices sit three appeals. LOGOS appeals to reason through evidence and logical steps; PATHOS appeals to feeling through story, image and language; ETHOS appeals to the writer's credibility through expertise, fairness or shared values. Strong Caribbean argument on paper uses all three: a statistic, a story from a real community, and a tone that sounds reasonable. Tone is a choice, not a mood: angry, ironic, respectful and urgent tones each suit a different audience, and the same argument can fail simply because the tone insults the reader.\n\nIn Paper 02 Section D, structure earns marks as surely as ideas. Open by stating your position clearly; then give two or three developed reasons, each with evidence or example; then answer the strongest objection against you before dismissing it; then close by restating your position in different words. Vary sentence length for emphasis, use connectives so the examiner can follow your reasoning, and keep the register formal enough for a speech or a letter to the editor. Argument and content carry 15 marks and expression 10, so proofread for the expression marks."
+            }
+        ]
+    },
+    {
+        "id": "functional-writing",
+        "title": "Functional Writing",
+        "description": "Paper 02 Section B: transactional writing by purpose, audience, register and format - letters, emails, reports, notices and articles.",
+        "lessons": [
+            {
+                "id": "functional-writing",
+                "title": "Functional Writing: Purpose, Audience and Form",
+                "objectives": [
+                    "Work out the purpose, audience, register and form the task demands",
+                    "Plan a Section B answer in five minutes",
+                    "Choose between a letter, email, report, notice and article correctly"
+                ],
+                "concepts": [
+                    "Purpose, audience, register, form (PARF)",
+                    "Transactional forms",
+                    "Planning in five minutes",
+                    "Section B mark breakdown"
+                ],
+                "experiment": {
+                    "type": "outliner",
+                    "description": "PARF Planner: sort task instructions into Purpose, Audience, Register and Form, then build the outline the paper expects."
+                },
+                "content": "Paper 02 Section B is functional (transactional) writing: one compulsory task worth 30 marks, split 10 for content and 20 for expression. It has had no lesson of its own until now, yet it is the section where format errors cost marks fastest. Every task hands you four decisions at once, and the acronym PARF keeps them together: PURPOSE (what must this piece achieve), AUDIENCE (who will read it), REGISTER (how formal it must sound) and FORM (which text type it is). Read the question and write all four out before you plan a single sentence.\n\nThe instruction words give PARF away. 'Write a letter to the manager' fixes the form and a formal register; 'write an article for the school magazine' fixes a semi-formal register and an audience of fellow students; 'write a report to the parish council' demands headings, an impersonal tone and a recommendation. Notice that the marks include expression: a well-formatted letter full of vague sentences will not reach 20, and a lively piece in the wrong form loses the same 20 quickly. Match the layout to the form first, then spend your energy on the sentences.\n\nPlan in five minutes: four or five content points, each answerable in a paragraph, plus the opening and closing lines your chosen form requires. Aim for around 250-350 words - long enough to develop points and show range, short enough to keep control under exam timing. Then check three things before you move on: does every paragraph serve the stated purpose, is the register consistent from the salutation to the sign-off, and does the format match the text type the question asked for. Those three checks are worth more than any decoration."
+            },
+            {
+                "id": "functional-text-formats",
+                "title": "Letter, Email, Report, Notice and Article Formats",
+                "objectives": [
+                    "Lay out each Section B text type correctly",
+                    "Use the right opening, headings and sign-off every time",
+                    "Avoid the format errors that cost the expression marks"
+                ],
+                "concepts": [
+                    "Letters and emails",
+                    "Reports",
+                    "Notices and articles",
+                    "Format errors to avoid"
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Form Match: match each task (complain to a manager, warn staff about a water cut, explain a decision to a council) to the correct text type and its opening line."
+                },
+                "content": "A LETTER has the sender's address and the date at the top, a salutation, body paragraphs, a closing formula and your name. A letter of complaint to a business is formal and impersonal: 'Dear Sir/Madam', a clear statement of the problem, evidence, the action you want, then 'Yours faithfully'. When you know the reader's name, use the name and 'Yours sincerely'. An EMAIL carries a subject line and is shorter and more direct, but it keeps the same politeness and purpose; do not forget the subject line - it is part of the form.\n\nA REPORT is headed (To / From / Date / Subject or title), written in an impersonal register, organised under headings such as Introduction, Findings, Conclusion and Recommendations, and signed off. It reports and recommends; it does not chat. A NOTICE is the shortest form: a heading that says what the notice is about, who is issuing it, the details as short lines or a paragraph, and where or to whom to respond - posters and club notices reward clarity and a title that can be read at a glance. Headings and layout are content in these two forms, not decoration.\n\nAn ARTICLE for a magazine or newspaper has a headline, sometimes a byline, an opening that catches the reader, developed paragraphs, and often a short conclusion that leaves the reader with a thought or a call to action. It can be lively and use the first person, which letters of complaint and reports cannot. The errors that cost most in Section B are consistent: a missing salutation or sign-off, a letter shaped like an essay with no addresses, a report with no headings, a notice with no issuing body, a register that slides from formal to casual mid-way, and paragraphs that never state the action the reader must take. Check the form before the vocabulary."
             }
         ]
     }
