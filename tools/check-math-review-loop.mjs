@@ -165,9 +165,7 @@ const practiceBank = (() => {
 })();
 
 check("the knowledge check bank is the 25-question bank", kcBank.length === 25, String(kcBank.length));
-// 100 is the floor of the product promise, not a ceiling: the syllabus-gap
-// lessons took the Mathematics bank to 172 questions (extra practice 101-172).
-check("the practice bank holds the 100-question promise", practiceBank.length >= 100, String(practiceBank.length));
+check("the practice bank is the 100-question bank", practiceBank.length === 100, String(practiceBank.length));
 check("every question carries an id", [...kcBank, ...practiceBank].every((q) => q.id !== undefined));
 check("every question carries a topic", [...kcBank, ...practiceBank].every((q) => !!q.topic));
 check(
