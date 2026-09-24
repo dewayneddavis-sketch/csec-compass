@@ -192,7 +192,7 @@ eq(netCalls[0].body.completedLessons.join(","), "m1,m2,m3,m4,m5", "and the full 
 eq(netCalls[0].body.quizCompleted, false, "and the quiz flag");
 
 const payload = lp.progressSyncPayload("biology", { lessons: ["b1", "b2", "b1"], quizCompleted: true });
-eq(Object.keys(payload).sort().join(","), "completedLessons,quizCompleted,subjectId", "the payload is exactly the contract api/progress/sync.js reads");
+eq(Object.keys(payload).sort().join(","), "completedLessons,quizCompleted,subjectId", "the payload is exactly the contract the progress sync handler reads");
 eq(payload.completedLessons.join(","), "b1,b2", "the payload drops duplicates");
 eq(payload.quizCompleted, true, "the payload carries the knowledge-check flag");
 

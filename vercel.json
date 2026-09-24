@@ -8,6 +8,14 @@
       "destination": "/api/auth"
     },
     {
+      "source": "/api/progress/sync",
+      "destination": "/api/sync?module=progress"
+    },
+    {
+      "source": "/api/planner/sync",
+      "destination": "/api/sync?module=planner"
+    },
+    {
       "source": "/api/(.*)",
       "destination": "/api/$1"
     },

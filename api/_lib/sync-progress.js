@@ -1,5 +1,7 @@
 // Vercel Serverless API — Sync Progress
-// POST /api/progress/sync
+// POST /api/progress/sync  (served by api/sync.js via a vercel.json rewrite —
+// this module is in _lib/ so it costs nothing against the 12-function cap; the
+// body below is the original handler, unchanged.)
 // Requires auth token in Authorization header
 //
 // This is the ONLY writer of user_progress, and user_progress is what a linked

@@ -330,6 +330,104 @@ process.env.SUPABASE_SERVICE_ROLE_KEY = "service-role-key-for-checks-only";
   check("a request with no action at all answers the same 404", bare.statusCode === 404);
 }
 
+// --- the chat's consolidation: two sync routes now share one function ---------
+// PR "teacher↔student chat — PR 1" needed a Serverless Function for
+// api/messages.js and api/ was exactly at the cap, so /api/progress/sync and
+// /api/planner/sync were folded into ONE non-dynamic api/sync.js (their bodies
+// moved to api/_lib/, which Vercel does not count) and vercel.json keeps both
+// original URLs. Same shape as the auth consolidation above, same two ways to
+// get it wrong: a rule in the wrong order, or the legacy path answering HTML.
+section("the two sync routes still answer, in one routed function");
+const SYNC_FILE = "api/sync.js";
+check("api/sync.js is the one sync function", existsSync(join(root, SYNC_FILE)));
+check(
+  "the two files it replaced are gone",
+  !existsSync(join(root, "api/progress/sync.js")) && !existsSync(join(root, "api/planner/sync.js"))
+);
+check(
+  "their handler bodies moved into _lib/ (which does not count against the cap) and both export a handler",
+  existsSync(join(root, "api/_lib/sync-progress.js")) &&
+    existsSync(join(root, "api/_lib/sync-planner.js")) &&
+    /export default async function handler/.test(readFileSync(join(root, "api/_lib/sync-progress.js"), "utf8")) &&
+    /export default async function handler/.test(readFileSync(join(root, "api/_lib/sync-planner.js"), "utf8"))
+);
+const progressRuleIndex = rewrites.findIndex((r) => r && r.source === "/api/progress/sync");
+const plannerRuleIndex = rewrites.findIndex((r) => r && r.source === "/api/planner/sync");
+const apiPassthroughIndex = rewrites.findIndex((r) => r && r.destination === "/api/$1");
+check(
+  "vercel.json routes both legacy sync URLs to the one function",
+  progressRuleIndex !== -1 &&
+    rewrites[progressRuleIndex].destination === "/api/sync?module=progress" &&
+    plannerRuleIndex !== -1 &&
+    rewrites[plannerRuleIndex].destination === "/api/sync?module=planner",
+  JSON.stringify(rewrites)
+);
+check(
+  "both rules are evaluated before the /api passthrough and the SPA fallback",
+  progressRuleIndex !== -1 && plannerRuleIndex !== -1 && spaIndex !== -1 &&
+    apiPassthroughIndex !== -1 && progressRuleIndex < apiPassthroughIndex && plannerRuleIndex < apiPassthroughIndex &&
+    progressRuleIndex < spaIndex && plannerRuleIndex < spaIndex,
+  `progress ${progressRuleIndex}, planner ${plannerRuleIndex}, api passthrough ${apiPassthroughIndex}, spa ${spaIndex}`
+);
+check(
+  "the routed param is `module`, not `action` (the planner's own URL already uses ?action=load)",
+  !rewrites.some((r) => /^\/api\/sync\?action=/.test(r.destination || "")),
+  JSON.stringify(rewrites.map((r) => r.destination))
+);
+const syncHandler = (await import("../api/sync.js")).default;
+{
+  // None of these requests reaches Supabase: each is refused before a client
+  // call could happen, which is what makes this safe to assert without a stub.
+  const noModule = await call(syncHandler, { method: "GET", url: "/api/sync", headers: {} });
+  check(
+    "no module at all answers JSON 404 (never the app's HTML)",
+    noModule.statusCode === 404 && noModule.body.error === "Not found",
+    `${noModule.statusCode} ${JSON.stringify(noModule.body)}`
+  );
+  const junkModule = await call(syncHandler, { method: "GET", url: "/api/sync?module=nope", query: { module: "nope" }, headers: {} });
+  check("an unknown module is the same JSON 404", junkModule.statusCode === 404 && junkModule.body.error === "Not found");
+  const progressAsRewritten = await call(syncHandler, {
+    method: "POST",
+    url: "/api/sync?module=progress",
+    query: { module: "progress" },
+    headers: {},
+  });
+  check(
+    "delivered as the rewrite delivers it, the progress handler still answers first",
+    progressAsRewritten.statusCode === 401 && progressAsRewritten.body.error === "Missing authorization header",
+    `${progressAsRewritten.statusCode} ${JSON.stringify(progressAsRewritten.body)}`
+  );
+  const plannerAsRewritten = await call(syncHandler, {
+    method: "GET",
+    url: "/api/sync?module=planner",
+    query: { module: "planner" },
+    headers: {},
+  });
+  check(
+    "and the planner keeps its own 401 wording",
+    plannerAsRewritten.statusCode === 401 && plannerAsRewritten.body.error === "No auth header",
+    `${plannerAsRewritten.statusCode} ${JSON.stringify(plannerAsRewritten.body)}`
+  );
+  const legacyProgressPath = await call(syncHandler, { method: "GET", url: "/api/progress/sync", headers: {} });
+  check(
+    "the request path alone resolves the progress module (no query param needed)",
+    legacyProgressPath.statusCode === 405 && legacyProgressPath.body.error === "Method not allowed",
+    `${legacyProgressPath.statusCode} ${JSON.stringify(legacyProgressPath.body)}`
+  );
+  const legacyPlannerPath = await call(syncHandler, { method: "GET", url: "/api/planner/sync?action=load", headers: {} });
+  check(
+    "the planner's legacy path (and its own ?action=load) still resolves to the planner",
+    legacyPlannerPath.statusCode === 401 && legacyPlannerPath.body.error === "No auth header",
+    `${legacyPlannerPath.statusCode}`
+  );
+  const badMethod = await call(syncHandler, { method: "PUT", url: "/api/sync?module=progress", query: { module: "progress" }, headers: {} });
+  check(
+    "a bad method is refused by the module's own 405, not by the dispatcher",
+    badMethod.statusCode === 405 && badMethod.body.error === "Method not allowed",
+    `${badMethod.statusCode}`
+  );
+}
+
 if (realUrl === undefined) delete process.env.VITE_SUPABASE_URL;
 else process.env.VITE_SUPABASE_URL = realUrl;
 if (realKey === undefined) delete process.env.SUPABASE_SERVICE_ROLE_KEY;

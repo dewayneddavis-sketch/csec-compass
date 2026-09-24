@@ -91,7 +91,8 @@ create policy "quiz_results: no direct client access"
 -- ===========================================================================
 -- revision_plans — per-user revision planner state (exam dates + week plan)
 -- ONE row per user; `plan` is a JSONB blob holding the generated week-by-week
--- plan, completion state, and streak data. Written/read by api/planner/sync.js
+-- plan, completion state, and streak data. Written/read by the planner sync
+-- handler (api/_lib/sync-planner.js, reached at /api/planner/sync via api/sync.js)
 -- and api/planner/load.js (service role) when the user is signed in;
 -- localStorage is the always-on fallback (works logged-out).
 -- ===========================================================================
@@ -111,7 +112,8 @@ create policy "revision_plans: no direct client access"
 
 -- ===========================================================================
 -- user_progress — per-user, per-subject lesson progress (teacher dashboard)
--- Written ONLY by api/progress/sync.js (service role), from the student's own
+-- Written ONLY by the progress sync handler (api/_lib/sync-progress.js, reached
+-- at /api/progress/sync via api/sync.js) with the service role, from the student's own
 -- browser after a tick or a finished lab. Read by api/analytics/summary.js
 -- (service role) to show a linked teacher lessonsCompleted / quizCompleted per
 -- subject, and by api/subjects/list.js.
@@ -362,3 +364,12 @@ create policy "school_members: no direct client access"
   on public.school_members for all
   using (false)
   with check (false);
+
+-- ===========================================================================
+-- private_messages — the teacher↔student chat (chat PR 1, 2026-09-24)
+-- ONE table, reached only by api/messages.js with the service role, deny-all
+-- under RLS, and a message can only travel along a link that already exists in
+-- teacher_students. Its DDL lives in supabase/messages.sql — APPLY THAT FILE
+-- (it is the single source for the chat's table, indexes and policy, so the
+-- linkage rule and the schema cannot drift apart).
+-- ===========================================================================
