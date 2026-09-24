@@ -26,19 +26,6 @@
   "topic": "fractions-decimals-percentages"
  },
  {
-  "id": "q3",
-  "question": "Simplify the expression: 3x + 5y - x + 2y",
-  "options": [
-   "2x + 7y",
-   "4x + 7y",
-   "2x + 3y",
-   "4x + 3y"
-  ],
-  "answer": "2x + 7y",
-  "explanation": "Step 1 — Collect the x terms:\n3x - x = 2x\nStep 2 — Collect the y terms:\n5y + 2y = 7y\nStep 3 — Write them together:\n2x + 7y",
-  "topic": "algebraic-expressions"
- },
- {
   "id": "q4",
   "question": "Solve for x: 2x - 4 = 10",
   "options": [
@@ -179,7 +166,7 @@
   ],
   "answer": "Union",
   "explanation": "Step 1 — The symbol ∪ joins two sets together: A ∪ B holds everything in A or in B (or both).\nStep 2 — The symbol ∩ is the intersection, and only keeps what is in both sets.\nStep 3 — So ∪ means union.",
-  "topic": "real-numbers"
+  "topic": "union-intersection-complement"
  },
  {
   "id": "q15",
@@ -192,7 +179,7 @@
   ],
   "answer": "{3}",
   "explanation": "Step 1 — ∩ means the elements that are in BOTH sets.\nStep 2 — Compare: 1 and 2 are only in A; 4 and 5 are only in B.\nStep 3 — 3 is in both sets, so A ∩ B = {3}.",
-  "topic": "real-numbers"
+  "topic": "union-intersection-complement"
  },
  {
   "id": "q16",
@@ -221,32 +208,6 @@
   "topic": "volume-capacity"
  },
  {
-  "id": "q18",
-  "question": "Convert 0.75 to a percentage.",
-  "options": [
-   "7.5%",
-   "75%",
-   "0.75%",
-   "750%"
-  ],
-  "answer": "75%",
-  "explanation": "Step 1 — To change a decimal to a percentage, multiply by 100:\n0.75 × 100\nStep 2 — Multiply:\n0.75 × 100 = 75\nStep 3 — = 75%",
-  "topic": "fractions-decimals-percentages"
- },
- {
-  "id": "q19",
-  "question": "Find the mode of the following data: 2, 4, 4, 5, 7, 7, 7, 8.",
-  "options": [
-   "4",
-   "5",
-   "7",
-   "8"
-  ],
-  "answer": "7",
-  "explanation": "Step 1 — Count how often each value appears:\n2 once, 4 twice, 5 once, 7 three times, 8 once\nStep 2 — The mode is the value with the highest count.\nStep 3 — 7 appears three times, so the mode is 7.",
-  "topic": "central-tendency"
- },
- {
   "id": "q20",
   "question": "What is the sum of the interior angles of a triangle?",
   "options": [
@@ -257,7 +218,7 @@
   ],
   "answer": "180°",
   "explanation": "Step 1 — The three interior angles of any triangle add up to 180°.\nStep 2 — This is true whatever the triangle: equilateral, isosceles or scalene.\nStep 3 — So the sum is 180°.",
-  "topic": "perimeter-area"
+  "topic": "angles-and-polygons"
  },
  {
   "id": "q21",
@@ -299,29 +260,68 @@
   "topic": "real-numbers"
  },
  {
-  "id": "q24",
-  "question": "Simplify: 2/5 + 1/10.",
+  "id": "q26",
+  "question": "A shirt costs a vendor $1,800 and is sold for $2,160. What is the percentage profit?",
   "options": [
-   "3/10",
-   "3/15",
-   "5/10",
-   "1/2"
+   "20%",
+   "16.7%",
+   "360%",
+   "18%"
   ],
-  "answer": "1/2",
-  "explanation": "Step 1 — Use 10 as the common denominator, so 2/5 = 4/10.\nStep 2 — Add the numerators:\n4/10 + 1/10 = 5/10\nStep 3 — Cancel by 5:\n5/10 = 1/2",
-  "topic": "fractions-decimals-percentages"
+  "answer": "20%",
+  "explanation": "Step 1 — Find the profit in dollars:\nprofit = 2,160 − 1,800 = $360\nStep 2 — Write it as a percentage of the cost price:\n(360 ÷ 1,800) × 100 = 20%",
+  "topic": "profit-loss-and-discounts"
  },
  {
-  "id": "q25",
-  "question": "If a map has a scale of 1:50,000, what distance on the map represents 5km in reality?",
+  "id": "q27",
+  "question": "Find the simple interest on $12,000 invested at 5% per annum for 3 years.",
   "options": [
-   "1cm",
-   "5cm",
-   "10cm",
-   "50cm"
+   "$1,800",
+   "$600",
+   "$1,890",
+   "$2,000"
   ],
-  "answer": "10cm",
-  "explanation": "Step 1 — Change 5 km to centimetres:\n5 × 100 000 = 500 000 cm\nStep 2 — Divide by the scale 1 : 50 000:\n500 000 ÷ 50 000\nStep 3 — = 10 cm on the map",
-  "topic": "real-numbers"
+  "answer": "$1,800",
+  "explanation": "Step 1 — Write the simple interest formula:\nI = (P × R × T) ÷ 100\nStep 2 — Substitute P = 12,000, R = 5 and T = 3:\nI = (12,000 × 5 × 3) ÷ 100 = 180,000 ÷ 100\nStep 3 — State the interest:\nI = $1,800",
+  "topic": "simple-and-compound-interest"
+ },
+ {
+  "id": "q28",
+  "question": "A fridge has a cash price of $30,000. On hire purchase it is bought with a $6,000 deposit and 8 monthly instalments of $3,400. What is the total hire purchase price?",
+  "options": [
+   "$33,200",
+   "$27,200",
+   "$30,000",
+   "$34,600"
+  ],
+  "answer": "$33,200",
+  "explanation": "Step 1 — Total the instalments:\n8 × 3,400 = $27,200\nStep 2 — Add the deposit:\n27,200 + 6,000 = $33,200\nStep 3 — Note the extra cost over cash: $3,200",
+  "topic": "hire-purchase-and-instalments"
+ },
+ {
+  "id": "q29",
+  "question": "How many elements are in the set {3, 6, 9, 12, 15}?",
+  "options": [
+   "5",
+   "4",
+   "3",
+   "15"
+  ],
+  "answer": "5",
+  "explanation": "Step 1 — Remember what n(A) counts:\nthe number of different elements in the set\nStep 2 — Count the elements:\n3, 6, 9, 12 and 15 are five different elements\nStep 3 — State the cardinal number:\nn(A) = 5",
+  "topic": "set-notation"
+ },
+ {
+  "id": "q30",
+  "question": "On a Venn diagram for two sets A and B, which region represents the elements that are in both A and B?",
+  "options": [
+   "The region where the two circles overlap",
+   "The part of A outside B",
+   "The part of B outside A",
+   "The region outside both circles"
+  ],
+  "answer": "The region where the two circles overlap",
+  "explanation": "Step 1 — Recall what each region of a two-set diagram means:\nthe rectangle is the universal set and each circle is one set\nStep 2 — Match 'in both A and B' to a region:\nelements in both sets are written in the overlap of the two circles, the region A ∩ B\nStep 3 — Note the contrast: the part of A outside B is 'A but not B'",
+  "topic": "venn-diagrams"
  }
 ]

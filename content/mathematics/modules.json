@@ -36,6 +36,201 @@
                     "type": "visual-converter",
                     "description": "Visual Fraction/Percentage Slider: A bar that you can slide to see how a fraction (e.g., 3/4) converts to a decimal (0.75) and a percentage (75%) visually."
                 }
+            },
+            {
+                "id": "types-of-numbers",
+                "title": "Types of Numbers, Factors and Multiples",
+                "content": "Numbers are grouped into families. Natural numbers are the counting numbers 1, 2, 3, ...; whole numbers add zero; integers include negatives as well as positives; rational numbers can be written as a fraction of two integers (1/2, 0.75, \u20143, 0.3 recurring); and irrational numbers such as \u03c0 and \u221a2 cannot be written as exact fractions. Together, the rational and irrational numbers make up the real numbers that you plot on a number line.\n\nA prime number has exactly two factors, 1 and itself, so 2, 3, 5, 7, 11 and 13 are prime while 1 is not (it has only one factor) and 9 is not (it is 3 \u00d7 3). Every whole number greater than 1 can be written as a product of primes, and that prime factorisation is the key to finding the highest common factor (HCF) and the lowest common multiple (LCM). For 24 = 2\u00b3 \u00d7 3 and 36 = 2\u00b2 \u00d7 3\u00b2, the HCF is the product of the common primes with the smaller indices, 2\u00b2 \u00d7 3 = 12, and the LCM uses the larger indices, 2\u00b3 \u00d7 3\u00b2 = 72.\n\nSquares, cubes and their roots belong to this topic too: 7\u00b2 = 49 and \u221a49 = 7; 4\u00b3 = 64 and the cube root of 64 is 4. Knowing the square numbers to at least 15\u00b2 = 225 and the cubes to 5\u00b3 = 125 saves time in the exam. When a question asks you to classify a number, give the most specific family that applies, and when it asks for factors of an expression, remember that factors multiply together to give it while multiples come from multiplying it by whole numbers.",
+                "objectives": [
+                    "Classify numbers as natural, whole, integer, rational, irrational or real",
+                    "Identify prime numbers and write a number as a product of its prime factors",
+                    "Find the HCF and LCM of two or three numbers using prime factorisation",
+                    "Use squares, cubes and their roots accurately"
+                ],
+                "concepts": [
+                    "Natural \u2282 whole \u2282 integers \u2282 rational; rational plus irrational gives the real numbers.",
+                    "A prime has exactly two factors; 1 is not prime and 2 is the only even prime.",
+                    "Prime factorisation gives the HCF (smaller indices) and the LCM (larger indices).",
+                    "Squares have even-index exponents in prime factorisation; cubes have multiples of three."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Number Family Sort: sort a mixed list of numbers into natural, integer, rational, irrational and prime categories."
+                }
+            },
+            {
+                "id": "indices-and-surds",
+                "title": "Indices and Surds",
+                "content": "An index (power) shows how many times a base is multiplied by itself: 2\u00b3 = 2 \u00d7 2 \u00d7 2 = 8. The laws of indices let you simplify expressions quickly: when multiplying powers of the same base you add the indices (2\u00b3 \u00d7 2\u00b2 = 2^5 = 32); when dividing you subtract them (5^6 \u00f7 5^4 = 5\u00b2 = 25); and a power of a power multiplies them ((3\u00b2)\u00b3 = 3^6 = 729).\n\nTwo special indices follow from those laws. Anything (except 0) raised to the power zero is 1, because a^3 \u00f7 a^3 = 1; and a negative index means a reciprocal, so 2^-3 = 1/2\u00b3 = 1/8. Fractional indices are roots: a^(1/2) = \u221aa and a^(m/n) means the n-th root of a raised to the power m, so 16^(3/4) = (\u221a16... written as the 4th root) cubed = 2\u00b3 = 8. Solve equations such as 2^x = 32 by writing both sides with the same base: 2^x = 2^5, so x = 5.\n\nA surd is a root that cannot be simplified to a whole number, such as \u221a2 or \u221a50. Surds are simplified by removing square factors: \u221a50 = \u221a25 x 2 = 5\u221a2. To add or subtract surds, simplify each one first so that like surds can be combined: \u221a8 + \u221a18 = 2\u221a2 + 3\u221a2 = 5\u221a2. To rationalise a denominator, multiply top and bottom by the surd: 1/\u221a3 = \u221a3/3. Leave an exact surd in your answer when the question does not ask for a decimal.",
+                "objectives": [
+                    "Apply the laws of indices to simplify expressions",
+                    "Evaluate zero, negative and fractional indices",
+                    "Solve simple equations where the unknown is an index",
+                    "Simplify surds and rationalise a denominator"
+                ],
+                "concepts": [
+                    "a^m \u00d7 a^n = a^(m+n); a^m \u00f7 a^n = a^(m\u2014n); (a^m)^n = a^(mn).",
+                    "a^0 = 1 (a \u2260 0) and a^-n = 1/a^n.",
+                    "a^(1/n) is the n-th root of a; a^(m/n) is that root raised to the power m.",
+                    "Surds simplify by removing square factors: \u221a50 = 5\u221a2."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Index and Surd Match: match each expression with indices or square roots to its simplest exact value."
+                }
+            },
+            {
+                "id": "standard-form",
+                "title": "Standard Form",
+                "content": "Standard form (scientific notation) writes a number as A \u00d7 10^n where A is at least 1 but less than 10 and n is an integer. Large numbers have positive powers of ten: 45,000 = 4.5 \u00d7 10^4 and 6,700,000 = 6.7 \u00d7 10^6. Small numbers have negative powers: 0.00072 = 7.2 \u00d7 10^-4, because the decimal point has moved four places to the right. Count the places you move the point \u2014 that count is the index.\n\nMultiplying and dividing in standard form uses the laws of indices. (3 \u00d7 10^5) \u00d7 (2 \u00d7 10^3) = 6 \u00d7 10^8; and (8 \u00d7 10^6) \u00f7 (2 \u00d7 10^2) = 4 \u00d7 10^4. If the number part of your answer is not between 1 and 10, adjust it: (5 \u00d7 10^3) \u00d7 (4 \u00d7 10^2) = 20 \u00d7 10^5 = 2 \u00d7 10^6. Always finish by checking that 1 \u2264 A < 10.\n\nStandard form is used for measurements that are very large or very small \u2014 the distance from the Earth to the Sun is about 1.5 \u00d7 10^8 km and the mass of a dust particle about 3 \u00d7 10^-7 kg. To compare two such numbers, compare the powers of ten first, because the larger index means the larger number. Adding and subtracting in standard form is easier if you first write both numbers as ordinary numbers, or rewrite them with the same power of ten.",
+                "objectives": [
+                    "Write large and small numbers in standard form",
+                    "Convert numbers from standard form back to ordinary form",
+                    "Multiply and divide numbers given in standard form",
+                    "Compare two numbers written in standard form and order them by size"
+                ],
+                "concepts": [
+                    "Standard form is A \u00d7 10^n with 1 \u2264 A < 10 and n an integer.",
+                    "Moving the decimal point left gives a positive index, right gives a negative index.",
+                    "Multiply or divide the number parts, then add or subtract the indices.",
+                    "If A ends up outside 1 to 10, adjust A and the index until it is inside."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Powers of Ten Match: match each ordinary number, from a country's population to the width of a virus, to its correct standard form."
+                }
+            }
+        ]
+    },
+    {
+        "id": "consumer-arithmetic",
+        "title": "Consumer Arithmetic",
+        "lessons": [
+            {
+                "id": "profit-loss-and-discounts",
+                "title": "Profit, Loss and Discounts",
+                "content": "A trader buys goods at a cost price and sells them at a selling price. When the selling price is higher than the cost price the difference is a profit; when it is lower the difference is a loss. Profit and loss are compared with the cost price, so percentage profit = (profit \u00f7 cost price) \u00d7 100 and percentage loss = (loss \u00f7 cost price) \u00d7 100. A discount is different: it is a reduction from the marked price, so it is always worked out on the marked price, never on the cost price.\n\nWorked example. A vendor buys a box of oranges for $2,500 and sells it for $3,000. Profit = $3,000 \u2014 $2,500 = $500, and percentage profit = (500 \u00f7 2,500) \u00d7 100 = 20%. If the same box were sold for $2,000 the loss would be $500 and the percentage loss would also be 20%. For a discount, a phone marked at $40,000 with 25% off sells for $40,000 \u2014 (0.25 \u00d7 $40,000) = $30,000, which is 75% of the marked price.\n\nPaper 02 questions often work backwards. If a shopkeeper makes 15% profit and the selling price is $4,600, then the cost price is the unknown 100%: cost price = $4,600 \u00f7 1.15 = $4,000. Always decide which price is the 100% base before you calculate \u2014 cost price for profit and loss, marked price for a discount. Remember too that successive discounts are multiplied, not added: 20% then 10% off $1,000 gives $1,000 \u00d7 0.8 \u00d7 0.9 = $720, not $700.",
+                "objectives": [
+                    "Calculate profit and loss as amounts and as percentages of cost price",
+                    "Find the selling price of an item after a percentage discount on the marked price",
+                    "Work backwards to find an unknown cost price or marked price",
+                    "Explain why successive discounts must be multiplied, not added"
+                ],
+                "concepts": [
+                    "Profit = selling price \u2014 cost price; loss is the same calculation when the selling price is smaller.",
+                    "Percentage profit or loss = (profit or loss \u00f7 cost price) \u00d7 100.",
+                    "A discount is a percentage of the MARKED price; the customer pays (100 \u2014 discount)% of it.",
+                    "To reverse a percentage change, divide by the decimal multiplier, for example divide by 1.15 for a 15% profit."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Shop Floor Match: match each buying-and-selling story (cost price and selling price, or marked price and discount) to its correct profit, loss or sale price."
+                }
+            },
+            {
+                "id": "simple-and-compound-interest",
+                "title": "Simple and Compound Interest",
+                "content": "When money is invested or borrowed, the original sum is the principal (P), the yearly percentage is the rate (R) and the length of the deal is the time (T) in years. Simple interest is paid only on the principal, so I = (P \u00d7 R \u00d7 T) \u00f7 100 and the amount at the end is A = P + I. If the time is given in months, convert it to years first: 9 months is 9/12 = 0.75 years.\n\nWorked example. $10,000 is placed in a credit union at 8% per annum simple interest for 3 years. I = (10,000 \u00d7 8 \u00d7 3) \u00f7 100 = $2,400, so A = $12,400. Compound interest is different because each year's interest also earns interest: A = P(1 + R/100)^n. For the same $10,000, A = 10,000(1.08)^3 = 10,000 \u00d7 1.259712 = $12,597.12, so the compound interest is $2,597.12 \u2014 $197.12 more than simple interest.\n\nCompound interest can be calculated for any period. If interest is compounded quarterly, each quarter earns R/4 percent and there are 4T periods, so use A = P(1 + R/400)^(4T). A negative rate models depreciation: a car worth $3,200,000 losing 12% of its value each year is worth 3,200,000(1 \u2014 0.12)^4 after four years. Read each question for the words 'per annum', 'each year' and 'compounded' before choosing the formula, and round money to two decimal places.",
+                "objectives": [
+                    "Use I = PRT/100 to find simple interest, the rate, the time or the principal",
+                    "Use A = P(1 + R/100)^n to calculate compound interest",
+                    "Convert a time given in months or weeks into years",
+                    "Decide when simple or compound interest is the correct model and use a negative rate for depreciation"
+                ],
+                "concepts": [
+                    "Simple interest is charged on the principal only: I = (P \u00d7 R \u00d7 T) \u00f7 100.",
+                    "Compound interest is charged on the growing amount: A = P(1 + R/100)^n.",
+                    "For compounding more often than once a year, divide the rate and multiply the number of periods.",
+                    "Depreciation is compound interest with a negative rate, A = P(1 \u2014 R/100)^n."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Interest Sort: sort each savings or loan situation into simple interest or compound interest, then check the amount earned in the feedback."
+                }
+            },
+            {
+                "id": "hire-purchase-and-instalments",
+                "title": "Hire Purchase and Instalments",
+                "content": "Many people cannot pay the full cash price of a stove, a motorcycle or a sewing machine, so they buy on hire purchase (HP). With hire purchase the buyer pays a deposit at once and then a fixed instalment each month for an agreed number of months. The total hire purchase price is the deposit plus every instalment added together, and it is always greater than the cash price because the seller is charging for the use of the money.\n\nWorked example. A generator has a cash price of $48,000. On hire purchase the buyer pays a 20% deposit and then 12 monthly instalments of $3,600. Deposit = 0.20 \u00d7 $48,000 = $9,600. Instalments = 12 \u00d7 $3,600 = $43,200. Total HP price = $9,600 + $43,200 = $52,800, so hire purchase costs $4,800 more than cash \u2014 an extra 4,800 \u00f7 48,000 \u00d7 100 = 10% of the cash price.\n\nExam questions ask you to find the deposit, the deposit as a percentage, the monthly instalment, the number of payments or the extra cost compared with the cash price. Read the agreement carefully: some stores charge a late-payment penalty and some give a discount for paying the balance early. When comparing offers, work out the total each way and then the difference as a percentage of the cash price before you advise which is cheaper.",
+                "objectives": [
+                    "Calculate the deposit and the total hire purchase price of an item",
+                    "Find the extra cost of hire purchase compared with the cash price, as an amount and as a percentage",
+                    "Work backwards to find an unknown deposit percentage or monthly instalment",
+                    "Compare hire purchase, cash and loan offers and state which is cheaper, with reasons"
+                ],
+                "concepts": [
+                    "Total hire purchase price = deposit + (instalment \u00d7 number of instalments).",
+                    "Hire purchase costs more than the cash price because the buyer pays for credit.",
+                    "Extra cost as a percentage = (extra cost \u00f7 cash price) \u00d7 100.",
+                    "A deposit is usually a percentage of the cash price, so deposit = rate \u00d7 cash price."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Deal or No Deal Match: match each payment plan (deposit and instalments) to its total hire purchase price and its extra cost over the cash price."
+                }
+            },
+            {
+                "id": "taxes-and-utility-bills",
+                "title": "Taxes and Utility Bills",
+                "content": "A worker's pay is reduced by statutory deductions before it reaches the bank. Gross pay is the money earned, allowances such as pension contributions are taken off to give chargeable income, and income tax is charged in bands: a lower percentage on chargeable income up to a stated threshold and a higher percentage on the amount above it. National Insurance and education tax are also deducted, so net pay = gross pay \u2014 total deductions. Always calculate the tax on the band above the threshold separately.\n\nConsumption tax works the other way round: General Consumption Tax (GCT) is added to the price of goods. With GCT at 15%, an item priced at $5,000 costs $5,000 \u00d7 1.15 = $5,750, of which $750 is tax. If you are given the tax-inclusive price and must find the price before tax, divide by 1.15: $8,050 \u00f7 1.15 = $7,000.\n\nUtility bills combine several charges. An electricity bill is the number of kilowatt-hours used multiplied by the rate, plus a fuel charge and a fixed service charge, and GCT on the total; water bills use banded rates per cubic metre with a minimum charge. To find the units used, subtract the previous meter reading from the present one. Add the separate charges carefully, keep decimals in line, and round the final answer to two decimal places as money.",
+                "objectives": [
+                    "Calculate income tax on banded chargeable income and find net pay after deductions",
+                    "Add GCT to a price and recover the pre-tax price from a tax-inclusive amount",
+                    "Work out an electricity or water bill from meter readings, usage rates and fixed charges",
+                    "Interpret a pay slip or bill and check that the figures are reasonable"
+                ],
+                "concepts": [
+                    "Chargeable income = gross pay \u2014 allowances; income tax is charged in bands.",
+                    "Net pay = gross pay \u2014 (income tax + other statutory deductions).",
+                    "Tax-inclusive price = pre-tax price \u00d7 (1 + tax rate); divide to reverse it.",
+                    "Utility charges are the sum of usage costs, fixed charges and any tax."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Bill Sort: sort each line from a pay slip and a utility bill into gross pay, deduction, usage charge or fixed charge."
+                }
+            },
+            {
+                "id": "exchange-rates-and-currency",
+                "title": "Exchange Rates and Currency Conversion",
+                "content": "An exchange rate tells you how much one currency is worth in another, for example US$1 = J$155.60. Banks and cambios publish two rates: a buying rate (what they pay you for foreign currency) and a selling rate (what they charge you for it). A customer going abroad buys foreign currency at the higher selling rate, so the rate that appears in a question is part of what you must read carefully.\n\nConverting between currencies is a multiplication or a division. To change Jamaican dollars into US dollars, divide by the rate: J$50,000 \u00f7 155.60 = US$321.34. To change US dollars into Jamaican dollars, multiply: US$250 \u00d7 155.60 = J$38,900. Keep the units with the numbers as you work so that you can see which currency you have at each step, and round money to two decimal places.\n\nReal transactions have charges. If a bank charges 1.5% commission, the customer receives less foreign currency (or pays more local currency) than the plain conversion suggests: US$321.34 \u00d7 0.985 = US$316.52. Questions also ask you to compare two banks' rates and say which gives the better deal, or to convert through a third currency. Work out the amount both ways, show the difference and state the cheaper option clearly in a sentence.",
+                "objectives": [
+                    "Convert amounts between two currencies using a given exchange rate",
+                    "Distinguish a bank's buying rate from its selling rate and choose the correct one",
+                    "Include commission or service charges in a currency conversion",
+                    "Compare two exchange offers and state which is better for the customer"
+                ],
+                "concepts": [
+                    "To change local currency into foreign currency, divide by the exchange rate.",
+                    "To change foreign currency into local currency, multiply by the exchange rate.",
+                    "Buying rate < selling rate; a customer buying foreign currency uses the selling rate.",
+                    "Commission reduces the amount received, so multiply by (1 \u2014 commission rate)."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Money Changer Match: match each traveller's request to the correct amount received, using the buying or selling rate shown."
+                }
+            },
+            {
+                "id": "insurance-and-budgeting",
+                "title": "Insurance and Budgeting",
+                "content": "Insurance spreads the cost of an unexpected loss across many policyholders. The policyholder pays a premium, usually each year; the sum insured is the most the insurer will pay; the excess is the first part of any loss the policyholder must pay; and a claim is the request for payment after a loss. Insurers often reward a claim-free year with a no-claim discount, which reduces the next premium.\n\nThe premium is normally a percentage of the sum insured. If a house is insured for $2,000,000 at 0.6% per annum, the premium is 0.006 \u00d7 $2,000,000 = $12,000 a year. When a claim is made, the excess is deducted: a theft of $150,000 under a policy with a $20,000 excess is paid as $150,000 \u2014 $20,000 = $130,000. A claim larger than the sum insured is limited to the sum insured, however great the loss.\n\nA budget is a plan for spending income. Net income is the money actually received; fixed expenses such as rent, insurance and loan repayments stay the same each month, while variable expenses such as food, transport and electricity change. A budget balances when income equals total expenses plus savings, and a deficit exists when planned spending is greater than income. Questions ask you to complete a budget table, find an item as a percentage of income, or decide whether a new commitment such as a hire purchase instalment fits within the surplus.",
+                "objectives": [
+                    "Explain premium, sum insured, excess, claim and no-claim discount",
+                    "Calculate an insurance premium as a percentage of the sum insured and the payout on a claim",
+                    "Prepare and check a simple monthly budget of fixed and variable expenses",
+                    "Use a budget to decide whether a new expense can be afforded"
+                ],
+                "concepts": [
+                    "Premium = rate \u00d7 sum insured; the excess is paid by the policyholder on each claim.",
+                    "Claim payout = loss \u2014 excess, and never more than the sum insured.",
+                    "Budget: income = fixed expenses + variable expenses + savings.",
+                    "A deficit occurs when planned spending is greater than income; every budget figure must be traceable."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Budget Sort: sort each household payment into fixed expense, variable expense, saving or insurance, then balance the budget in the activity."
+                }
             }
         ]
     },
@@ -93,6 +288,201 @@
                     "type": "number-line-plotter",
                     "description": "Inequality Mapper: Input an inequality (e.g., 2x + 3 > 7) and watch the solution shade automatically on an interactive number line."
                 }
+            },
+            {
+                "id": "factorization",
+                "title": "Factorisation and Quadratic Equations",
+                "content": "Factorising is the reverse of expanding: it rewrites an expression as a product of factors. Look for the highest common factor first: 6x\u00b2 + 9x = 3x(2x + 3). If there is no common factor, check whether the expression is the difference of two squares, a\u00b2 \u2014 b\u00b2 = (a + b)(a \u2014 b), so 25x\u00b2 \u2014 16 = (5x + 4)(5x \u2014 4). Expressions with four terms are often factored in pairs: ax + ay + bx + by = a(x + y) + b(x + y) = (x + y)(a + b).\n\nA quadratic trinomial x\u00b2 + bx + c is factorised by finding two numbers that multiply to c and add to b: x\u00b2 + 7x + 12 = (x + 3)(x + 4) because 3 \u00d7 4 = 12 and 3 + 4 = 7. When the coefficient of x\u00b2 is not 1, split the middle term: 6x\u00b2 + 11x + 4 needs two numbers multiplying to 24 and adding to 11, namely 8 and 3, so 6x\u00b2 + 8x + 3x + 4 = 2x(3x + 4) + 1(3x + 4) = (3x + 4)(2x + 1).\n\nFactorising solves quadratic equations because if a product is zero then at least one factor must be zero. For x\u00b2 \u2014 5x + 6 = 0, factorise to (x \u2014 2)(x \u2014 3) = 0, so x = 2 or x = 3. Always rearrange the equation to equal zero before factorising, and check your factors by expanding them mentally. In Paper 02 you gain method marks for showing the factorisation, so write both the factorised form and the roots.",
+                "objectives": [
+                    "Take out a common factor and factorise by grouping",
+                    "Factorise the difference of two squares",
+                    "Factorise quadratic trinomials of the form x\u00b2 + bx + c and ax\u00b2 + bx + c",
+                    "Solve quadratic equations by factorising"
+                ],
+                "concepts": [
+                    "Highest common factor first, then the pattern that fits (difference of squares, grouping, trinomial).",
+                    "a\u00b2 \u2014 b\u00b2 = (a + b)(a \u2014 b).",
+                    "For x\u00b2 + bx + c, find two numbers with product c and sum b.",
+                    "If a \u00d7 b = 0 then a = 0 or b = 0, which gives the roots of a quadratic equation."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Factor Match: match each quadratic expression to its fully factorised form, then read the roots from the pairs."
+                }
+            },
+            {
+                "id": "algebraic-fractions",
+                "title": "Algebraic Fractions",
+                "content": "An algebraic fraction behaves like a numerical fraction, so the same skills apply: factorise before you cancel, and cancel only factors that multiply, never terms that are added. (x\u00b2 \u2014 9)/(x + 3) becomes ((x + 3)(x \u2014 3))/(x + 3) = x \u2014 3. You may not 'cancel the x terms' in (x + 3)/(x + 5), because 3 and 5 are not factors of the whole numerator and denominator.\n\nTo add or subtract algebraic fractions, first find a common denominator, exactly as you would with 2/3 + 1/4. For 1/x + 1/y the common denominator is xy, giving (y + x)/xy. For 3/(x + 1) + 2/(x \u2014 2), the common denominator is (x + 1)(x \u2014 2), so the numerator becomes 3(x \u2014 2) + 2(x + 1) = 5x \u2014 4 and the answer is (5x \u2014 4)/((x + 1)(x \u2014 2)).\n\nMultiplying fractions means multiplying numerators and multiplying denominators, and dividing means multiplying by the reciprocal: (a/b) \u00f7 (c/d) = (a/b) \u00d7 (d/c). Factorise wherever possible so the answer is in its simplest form. To solve an equation containing fractions, multiply every term by the common denominator to clear the fractions first: 1/x + 1/3 = 1/2 becomes 6 + 2x = 3x, so x = 6. State any value that would make a denominator zero, since the fraction is undefined there.",
+                "objectives": [
+                    "Simplify algebraic fractions by factorising and cancelling factors",
+                    "Add and subtract algebraic fractions using a common denominator",
+                    "Multiply and divide algebraic fractions",
+                    "Solve simple equations that contain algebraic fractions"
+                ],
+                "concepts": [
+                    "Factorise first; cancel factors only, never separate terms.",
+                    "The common denominator of 1/x and 1/y is xy.",
+                    "Dividing by a fraction means multiplying by its reciprocal.",
+                    "Multiply through by the common denominator to solve a fractional equation."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Fraction Simplifier Match: match each algebraic fraction to its simplest form, checking which ones cannot be simplified at all."
+                }
+            },
+            {
+                "id": "transposition-and-substitution",
+                "title": "Changing the Subject and Substitution",
+                "content": "A formula links quantities, and its subject is the single letter on its own, usually on the left. Changing the subject means rearranging the formula so that another letter becomes the subject, and it is done with inverse operations, applied in reverse order and to both sides. To make t the subject of v = u + at, subtract u from both sides and then divide by a: t = (v \u2014 u)/a.\n\nWork through the operations in the opposite order to the one that built the expression, and keep the equation balanced at every step. To make r the subject of A = \u03c0r\u00b2, first divide by \u03c0 to get A/\u03c0 = r\u00b2, then take the square root: r = \u221a(A/\u03c0). If the new subject appears twice, collect those terms on one side and factorise: from P = 2(l + b), divide by 2 and subtract to get b = P/2 \u2014 l.\n\nSubstitution replaces each letter in a formula with a number. Given s = ut + \u00bdat\u00b2 with u = 4, a = 3 and t = 5, s = (4 \u00d7 5) + \u00bd \u00d7 3 \u00d7 25 = 20 + 37.5 = 57.5. Watch the signs when a value is negative and square it inside brackets: if a = \u20142 then a\u00b2 = (\u20142)\u00b2 = 4, not \u20144. Write the formula, then the substitution, then the arithmetic, and give the unit of the answer where the formula measures a real quantity.",
+                "objectives": [
+                    "Change the subject of a formula using inverse operations",
+                    "Handle formulas in which the new subject appears more than once",
+                    "Substitute numbers, including negatives and fractions, into a formula",
+                    "Evaluate a formula from the CSEC formula sheet accurately and with units"
+                ],
+                "concepts": [
+                    "Inverse operations, applied to both sides, keep an equation balanced.",
+                    "Work in the reverse order to the order of operations in the formula.",
+                    "If the subject appears twice, collect the terms and factorise.",
+                    "Substitute inside brackets before squaring, and carry the units through."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Formula Rearranger Match: match each formula to the correct rearrangement for the letter requested."
+                }
+            }
+        ]
+    },
+    {
+        "id": "sets",
+        "title": "Sets",
+        "lessons": [
+            {
+                "id": "set-notation",
+                "title": "Sets and Set Notation",
+                "content": "A set is a well-defined collection of objects. 'Well-defined' means that anyone looking at the collection can say for certain whether an object belongs to it or not: 'the students in Form 5A' is a set, but 'the tall students' is not, because 'tall' is a matter of opinion. The objects in a set are called its elements or members, and the symbol \u2208 means 'is an element of' while \u2209 means 'is not an element of'.\n\nSets are written in one of two ways. In roster (tabular) form the elements are listed inside braces: A = {2, 4, 6, 8}. In set-builder notation the rule is given: B = {x : x is an even number and 0 < x < 10}, which describes the same set. Order does not matter and repeated elements are counted once, so {2, 4, 6, 8} = {8, 6, 4, 2} = {2, 2, 4, 6, 8}. The number of elements in A is written n(A); here n(A) = 4.\n\nThe empty set, written \u2205 or { }, has no elements, and it is not the same as {0}, which has one element. A set with a countable number of elements is finite, while P = {2, 4, 6, 8, ...} continues without end and is infinite. The universal set, written with the symbol \u03be, contains every element being discussed in a particular problem, so the choice of universal set can change the answer. Read the defining property carefully before you list elements.",
+                "objectives": [
+                    "Decide whether a described collection is a well-defined set",
+                    "Write a set in roster form, in set-builder notation and in words",
+                    "Use the symbols \u2208, \u2209, n(A) and \u2205 correctly",
+                    "Distinguish finite sets, infinite sets and the universal set"
+                ],
+                "concepts": [
+                    "A set is a well-defined collection; \u2208 and \u2209 show membership.",
+                    "Roster form lists the elements in braces; set-builder form states the rule.",
+                    "The order of elements and repeated elements do not change a set.",
+                    "n(A) is the number of elements (the cardinal number) of A; \u2205 has none and {0} has one."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Set or Not a Set: match each collection description to the correct set written in roster form or to 'not a set'."
+                }
+            },
+            {
+                "id": "subsets-and-cardinality",
+                "title": "Subsets, Universal Sets and Complement",
+                "content": "Set A is a subset of set B (written A \u2286 B) when every element of A is also an element of B. If A also has fewer elements than B, A is a proper subset of B and we write A \u2282 B. Every set is a subset of itself, and the empty set is a subset of every set, including itself.\n\nIf a set has n elements, it has 2^n subsets in total, of which 2^n \u2014 1 are proper subsets. For A = {1, 2, 3}, the list runs \u2205, {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}, {1, 2, 3} \u2014 eight subsets, which is 2\u00b3, and seven of them are proper subsets. Listing them systematically (start with none, then each single element, then each pair, then the whole set) guarantees you miss none.\n\nThe universal set \u03be contains every element under discussion, and the complement of A, written A', is the set of elements that are in \u03be but not in A. If \u03be = {1, 2, 3, 4, 5} and A = {2, 4}, then A' = {1, 3, 5}. Notice the difference between \u2208 and \u2282: 2 \u2208 A says 2 is an element of A, while {2} \u2282 A says the set containing 2 is a proper subset of A.",
+                "objectives": [
+                    "Use the subset and proper-subset symbols correctly",
+                    "List all the subsets of a set and use the rule 2^n",
+                    "Find the complement of a set within a given universal set",
+                    "Distinguish the relation of a single element from the relation of a subset"
+                ],
+                "concepts": [
+                    "A \u2286 B means every element of A is in B; A \u2282 B means A is a smaller subset of B.",
+                    "A set with n elements has 2^n subsets and 2^n \u2014 1 proper subsets.",
+                    "The complement A' = {x : x \u2208 \u03be, x \u2209 A}.",
+                    "Every set is a subset of itself and \u2205 is a subset of every set."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Subset Checker: sort each statement about a small set into 'element of', 'proper subset of' or 'neither', using the same set throughout."
+                }
+            },
+            {
+                "id": "venn-diagrams",
+                "title": "Venn Diagrams and Two Sets",
+                "content": "A Venn diagram shows how sets overlap. The rectangle stands for the universal set \u03be and each circle inside it stands for a set. The region where two circles overlap contains the elements that belong to both sets, and the region inside a circle but outside the overlap contains the elements that belong to only that set. When elements are counted, the number in each region is written inside that region.\n\nFilling a two-set Venn diagram is always done in the same order. Suppose 40 students are surveyed, 25 play cricket (C), 18 play football (F) and 10 play both. Write 10 in the overlap first. Then the 'cricket only' region is 25 \u2014 10 = 15 and the 'football only' region is 18 \u2014 10 = 8. The students who play neither are what is left of the 40: 40 \u2014 (15 + 10 + 8) = 7, and that 7 is written inside the rectangle but outside both circles.\n\nAlways check your work by adding the regions: 15 + 10 + 8 + 7 = 40, which is n(\u03be). No element can be counted in two regions, and a zero must still be written where a region is empty so that the diagram is complete. Diagrams are usually worth marks for the correct regions as well as for the final answer, so label the circles C and F and write the numbers clearly.",
+                "objectives": [
+                    "Draw a Venn diagram for two sets and label the universal set",
+                    "Enter the intersection first, then the 'only' regions, then the 'neither' region",
+                    "Use a Venn diagram to answer counting questions about two sets",
+                    "Check a completed diagram by adding all the regions"
+                ],
+                "concepts": [
+                    "The rectangle is \u03be; each circle is one set; the overlap is the intersection.",
+                    "The number in the overlap is used first; 'only' regions are found by subtraction.",
+                    "The 'neither' region = n(\u03be) \u2014 (sum of all the other regions).",
+                    "The regions must add to n(\u03be) \u2014 always verify before writing the final answer."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Venn Region Match: match each region of a two-set survey diagram (only cricket, both, neither) to the number of students it contains."
+                }
+            },
+            {
+                "id": "union-intersection-complement",
+                "title": "Union, Intersection and Complement",
+                "content": "Sets can be combined. The union A \u222a B contains everything that is in A or in B or in both, and the word 'or' in a question usually points to a union. The intersection A \u2229 B contains only the elements that are in both A and B, and matches the word 'and'. The complement A' contains the elements of \u03be that are not in A, and A \u2014 B (also written A \u2229 B') is the set difference: the elements of A that are not in B.\n\nWorked example. If \u03be = {1, 2, 3, 4, 5, 6, 7, 8}, A = {1, 2, 3, 4, 5} and B = {4, 5, 6, 7}, then A \u222a B = {1, 2, 3, 4, 5, 6, 7}, A \u2229 B = {4, 5}, A \u2014 B = {1, 2, 3}, B \u2014 A = {6, 7} and A' = {6, 7, 8}. Notice that A \u222a B has 7 elements while n(A) + n(B) = 12, because 4 and 5 were counted twice.\n\nThat double count gives the counting formula n(A \u222a B) = n(A) + n(B) \u2014 n(A \u2229 B), which is the quickest way to find a missing number when the sets are large. It also shows why (A \u222a B)' = A' \u2229 B': an element outside the union is in neither set, so it is in both complements. Read every question twice and write the symbols down before you work with the numbers.",
+                "objectives": [
+                    "Find the union, intersection, complement and difference of two sets",
+                    "Translate words such as 'and', 'or', 'not' and 'but not' into set notation",
+                    "Use n(A \u222a B) = n(A) + n(B) \u2014 n(A \u2229 B) to solve counting problems",
+                    "Use a Venn diagram to check a set calculation"
+                ],
+                "concepts": [
+                    "A \u222a B = elements in A or B (or both); A \u2229 B = elements in both.",
+                    "A' = elements of \u03be not in A; A \u2014 B = elements in A but not in B.",
+                    "n(A \u222a B) = n(A) + n(B) \u2014 n(A \u2229 B).",
+                    "'But not' means set difference; 'not' means complement."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Set Operation Match: match each expression such as A \u222a B or A' to the set of elements it describes."
+                }
+            },
+            {
+                "id": "shading-venn-regions",
+                "title": "Shading Regions and Three Sets",
+                "content": "Exam questions often show a Venn diagram and ask you to shade a region such as A' \u2229 B or (A \u222a B)'. Translate the symbols into words first: A' \u2229 B means 'not in A and in B'. Then decide which basic areas to shade \u2014 the part of B outside A \u2014 and combine them. Shading A \u222a B first and then taking the area outside both circles is the reliable way to handle a complement of a union.\n\nA three-set Venn diagram (sets A, B and C) is divided into eight regions. Each region has a notation: A \u2229 B \u2229 C is the middle region; A \u2229 B \u2229 C' is in A and B but not C; and A \u2229 B' \u2229 C' is in A only. Writing the notation beside each region before you shade keeps you from shading one region too many, which is the commonest error.\n\nWord questions translate the same way. 'Students who study Mathematics and Physics but not Chemistry' is M \u2229 P \u2229 C'; 'students who study at least two of the three subjects' is the union of the three pairwise overlaps; and 'students who study neither Mathematics nor Physics' is (M \u222a P)'. Underline the words 'only', 'but not' and 'at least' as you read, because they change the region that the marks depend on.",
+                "objectives": [
+                    "Shade a region described by set notation on a two-set Venn diagram",
+                    "Name each of the eight regions of a three-set Venn diagram",
+                    "Translate words such as 'but not' and 'at least two' into three-set notation",
+                    "Check a shaded region against its written meaning before finishing"
+                ],
+                "concepts": [
+                    "Translate notation into words before shading: A' \u2229 B is 'in B but not in A'.",
+                    "(A \u222a B)' is the area outside both circles, inside the rectangle.",
+                    "A three-set diagram has 8 regions; the central one is A \u2229 B \u2229 C.",
+                    "'At least two' is a union of pairwise overlaps, not a single region."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Shade It Match: match each written description (for example 'in A and B but not C') to its correct set notation."
+                }
+            },
+            {
+                "id": "set-word-problems",
+                "title": "Sets in Word Problems",
+                "content": "Survey problems in the real world usually involve two sets. Start by naming them, for example S for students who own a smartphone and L for students who own a laptop, and write n(\u03be) from the total number of people asked. Then take the numbers from the question and place them: the number who own both goes in the overlap, and every other figure is reduced by the overlap before it is written in an 'only' region.\n\nWorked example. In a class of 35 students, 22 belong to the debating club (D), 18 belong to the chess club (C) and 9 belong to both. Both = 9; D only = 22 \u2014 9 = 13; C only = 18 \u2014 9 = 9; neither = 35 \u2014 (13 + 9 + 9) = 4. From the finished diagram you can answer any part of the question: 31 students belong to at least one club, and 4 belong to neither. The checking sum 13 + 9 + 9 + 4 = 35 confirms the diagram.\n\nThree-set problems are filled in the same order, innermost first: the triple overlap, then each pairwise overlap, then the three 'only' regions, and finally the number outside all three circles. Words such as 'only', 'both', 'at least one' and 'neither' tell you exactly which region is wanted, and the mark scheme usually rewards the correct diagram as well as the answer. Show every subtraction, and state your final answer in a sentence that names the group asked about.",
+                "objectives": [
+                    "Define suitable sets and enter survey data on a Venn diagram",
+                    "Work from the intersection outwards to complete every region",
+                    "Answer 'only', 'at least one' and 'neither' questions from a completed diagram",
+                    "Solve a three-set word problem by filling the regions from the centre outwards"
+                ],
+                "concepts": [
+                    "Write n(\u03be) from the total surveyed before filling regions.",
+                    "Fill the overlap first, then subtract it from each set total for the 'only' regions.",
+                    "'At least one' = union of the sets; 'neither' = the region outside all circles.",
+                    "Verify the diagram by adding the regions to get n(\u03be)."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Survey Sort: sort the students in a two-club survey into the four regions of the Venn diagram, then add the regions to check the total."
+                }
             }
         ]
     },
@@ -133,6 +523,27 @@
                     "type": "function-machine",
                     "description": "Function Machine: Drop a number into a 'machine' that applies f(x) and g(x) to show composite functions visually."
                 }
+            },
+            {
+                "id": "linear-and-quadratic-graphs",
+                "title": "Graphs of Linear and Quadratic Functions",
+                "content": "The graph of y = mx + c is a straight line: m is the gradient (how steeply it rises) and c is the intercept on the y-axis. Gradient is calculated as rise \u00f7 run between two points, m = (y\u00b2 \u2014 y\u2081)/(x\u00b2 \u2014 x\u2081), and a negative gradient slopes downwards. To draw the line, make a table of values for at least three points, or plot c and then step along by the gradient.\n\nThe graph of y = ax\u00b2 + bx + c is a parabola: it opens upwards when a is positive and downwards when a is negative. It is symmetrical about a vertical line through its turning point, and it crosses the x-axis at the roots of ax\u00b2 + bx + c = 0. Build a table of values covering the turning point \u2014 the middle value is the axis of symmetry \u2014 then join the points with a smooth curve, not straight segments.\n\nGraphs answer equations that algebra alone makes slow. To solve x\u00b2 \u2014 2x \u2014 3 = 0 graphically, read the x-values where the curve cuts the x-axis: x = \u20141 and x = 3. To solve simultaneous equations, plot both lines and read the coordinates where they cross. Read values from the graph as accurately as you can (half a small square), and always label the axes, the scale and the curve.",
+                "objectives": [
+                    "Find the gradient and y-intercept of a straight line and draw its graph",
+                    "Complete a table of values and draw the graph of a quadratic function",
+                    "Read the roots and turning point of a quadratic from its graph",
+                    "Use graphs to solve equations and simultaneous equations approximately"
+                ],
+                "concepts": [
+                    "y = mx + c has gradient m and intercept c; m = rise/run.",
+                    "y = ax\u00b2 + bx + c is a parabola, opening up when a > 0 and down when a < 0.",
+                    "Roots are where the curve crosses the x-axis; the turning point lies on the axis of symmetry.",
+                    "The solution of simultaneous equations is the point where the graphs intersect."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Graph Match: match each linear or quadratic equation to its graph and to its gradient, intercepts or turning point."
+                }
             }
         ]
     },
@@ -171,6 +582,48 @@
                 "experiment": {
                     "type": "trig-circle",
                     "description": "Unit Circle Explorer: Move a point around a circle to see how the sine and cosine values relate to the coordinates of the point."
+                }
+            },
+            {
+                "id": "angles-and-polygons",
+                "title": "Angles and Polygons",
+                "content": "Most angle questions are solved from a small set of facts. Angles on a straight line add to 180\u00b0 and angles at a point add to 360\u00b0; vertically opposite angles are equal. When a transversal crosses parallel lines, corresponding angles are equal, alternate angles are equal and co-interior (allied) angles add to 180\u00b0. Identify the fact you are using and, in a proof question, write the reason beside each step.\n\nIn any triangle the three interior angles add to 180\u00b0, and an exterior angle equals the sum of the two opposite interior angles. Any quadrilateral has interior angles adding to 360\u00b0. For a polygon with n sides, the interior angles add to (n \u2014 2) \u00d7 180\u00b0, and the exterior angles always add to 360\u00b0 whatever the number of sides. A regular polygon has equal sides and equal angles, so each exterior angle is 360\u00b0/n and each interior angle is 180\u00b0 \u2014 360\u00b0/n.\n\nWorked example. A regular polygon has 12 sides: each exterior angle is 360\u00b0 \u00f7 12 = 30\u00b0, so each interior angle is 180\u00b0 \u2014 30\u00b0 = 150\u00b0, and the interior angles total (12 \u2014 2) \u00d7 180\u00b0 = 1800\u00b0, which agrees with 12 \u00d7 150\u00b0 = 1800\u00b0. These facts also explain why regular hexagons, squares and equilateral triangles tile a floor: their interior angles divide exactly into 360\u00b0.",
+                "objectives": [
+                    "Use the angle facts for straight lines, points, parallel lines and triangles",
+                    "Find interior and exterior angles of polygons using (n \u2014 2) \u00d7 180\u00b0 and 360\u00b0/n",
+                    "Calculate angles in a regular polygon and decide whether a shape will tessellate",
+                    "Give a reason for each step in an angle calculation"
+                ],
+                "concepts": [
+                    "Straight line 180\u00b0, point 360\u00b0, parallel-line facts: corresponding and alternate equal, co-interior summing to 180\u00b0.",
+                    "Triangle interior angles 180\u00b0; exterior angle = sum of the two opposite interior angles.",
+                    "Polygon interior angle sum = (n \u2014 2) \u00d7 180\u00b0; exterior angle sum = 360\u00b0.",
+                    "Regular polygon: each exterior angle = 360\u00b0/n, each interior angle = 180\u00b0 \u2014 360\u00b0/n."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Angle Facts Sort: sort each angle statement into straight line, point, parallel lines, triangle or polygon, with the numerical fact it gives."
+                }
+            },
+            {
+                "id": "circle-theorems",
+                "title": "Circle Theorems",
+                "content": "Circle theorems are used to find unknown angles and to prove results. The angle in a semicircle is a right angle; the angle at the centre is twice the angle at the circumference standing on the same arc; and angles in the same segment (subtended by the same arc) are equal. A cyclic quadrilateral has opposite angles that add to 180\u00b0, and its exterior angle equals the opposite interior angle.\n\nTangent facts go with the others. A tangent is perpendicular to the radius drawn to the point of contact, so a radius and tangent meeting at a circle create a right angle; two tangents drawn from the same external point are equal in length and the line from the centre to that point bisects the angle between them; and the alternate segment theorem says the angle between a tangent and a chord equals the angle in the alternate segment.\n\nWorked example. In a circle centre O, angle AOB at the centre is 130\u00b0 and C is a point on the major arc. The angle at the centre is twice the angle at the circumference on the same arc, so angle ACB = 130\u00b0 \u00f7 2 = 65\u00b0. Each answer needs a reason: write 'angle at centre = 2 \u00d7 angle at circumference' or 'angle in a semicircle = 90\u00b0' beside the value, because examination mark schemes award the reason separately. Set out the work as a short chain of deductions from the given angles to the one asked for.",
+                "objectives": [
+                    "Use the angle in a semicircle and the angle at the centre theorem",
+                    "Apply the equal-angles-in-the-same-segment and cyclic quadrilateral facts",
+                    "Use tangent and radius, equal tangents and the alternate segment theorem",
+                    "Give the correct name of the theorem used for every deduction"
+                ],
+                "concepts": [
+                    "Angle in a semicircle = 90\u00b0; angle at centre = 2 \u00d7 angle at circumference on the same arc.",
+                    "Angles in the same segment are equal; opposite angles of a cyclic quadrilateral add to 180\u00b0.",
+                    "Tangent \u22a5 radius at the point of contact; tangents from an external point are equal.",
+                    "Alternate segment theorem: angle between tangent and chord = angle in the alternate segment."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Circle Theorem Match: match each given angle fact in a circle diagram to the theorem that justifies it."
                 }
             }
         ]
@@ -212,6 +665,27 @@
                     "type": "matrix-transformer",
                     "description": "Shape Shifter: Apply a 2x2 matrix to a square on a grid and watch the square undergo rotation, scaling, or shearing based on the matrix values."
                 }
+            },
+            {
+                "id": "transformations",
+                "title": "Transformations",
+                "content": "A transformation moves a shape on the coordinate plane. In a reflection, every point of the object is the same distance from the mirror line on the opposite side; the mirror line may be the x-axis, the y-axis or a line such as y = x. In a rotation, the shape turns through a given angle, usually 90\u00b0, 180\u00b0 or 270\u00b0 clockwise or anticlockwise, about a fixed centre. In a translation, every point moves by the same column vector such as (3 over \u20142), so the shape keeps its orientation.\n\nAn enlargement changes size. The scale factor k multiplies the distance of every point from the centre of enlargement, so a scale factor of 2 doubles all lengths and a negative scale factor (for example \u20141) produces an image on the other side of the centre, rotated through 180\u00b0. Area is affected by the square of the scale factor: images under an enlargement of scale factor 3 have nine times the area of the object.\n\nTo describe a transformation fully you must name its type and its details: reflection \u2014 the mirror line; rotation \u2014 the angle, direction and centre; translation \u2014 the column vector; enlargement \u2014 the scale factor and the centre. Points on the mirror line are invariant (they do not move), as are points at the centre of a rotation and the centre of an enlargement. Combined transformations are performed in the order given, and for shapes, actually tracing the coordinates on squared paper is the safest way to avoid a slip.",
+                "objectives": [
+                    "Perform and identify reflections, rotations and translations on the coordinate plane",
+                    "Enlarge a shape from a given centre using positive, fractional or negative scale factors",
+                    "Describe a transformation completely, naming its centre, line, vector or scale factor",
+                    "State the invariant points and the effect of an enlargement on area"
+                ],
+                "concepts": [
+                    "Reflection: mirror line; rotation: centre, angle, direction; translation: column vector.",
+                    "Enlargement: centre and scale factor; area scales by the square of the scale factor.",
+                    "Negative scale factors place the image on the other side of the centre of enlargement.",
+                    "Invariant points lie on the mirror line or at the centre of a rotation or enlargement."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Transformation Match: match each statement of a transformation to the correct image coordinates of a point."
+                }
             }
         ]
     },
@@ -252,6 +726,27 @@
                     "type": "probability-sim",
                     "description": "Coin Flip Lab: Simulate flipping a coin 100 or 1000 times to see how the experimental probability approaches 0.5 (theoretical)."
                 }
+            },
+            {
+                "id": "frequency-tables-and-cumulative-frequency",
+                "title": "Frequency Tables and Cumulative Frequency",
+                "content": "Raw data is easier to read in a frequency table. Tally each value, count the tallies and write the frequency. When the data is continuous or spread over a wide range, group it into class intervals of equal width, such as 10 \u2014 19, 20 \u2014 29, 30 \u2014 39; the intervals must not overlap, and the midpoint of each interval (14.5, 24.5, 34.5) is used for calculation. Grouped data loses the individual values, so give the class interval as the measure of spread rather than pretending to know each value.\n\nThe cumulative frequency column is a running total of the frequencies: each entry is the number of items up to and including that value or interval. Plot cumulative frequency against the upper class boundary to draw an ogive (cumulative frequency curve). From the ogive you read the median at half the total frequency, the lower quartile at one quarter and the upper quartile at three quarters, then find the interquartile range as Q3 \u2014 Q1, which describes the middle half of the data.\n\nWorked example. If 40 students are surveyed, the median is read from the curve at cumulative frequency 20, the lower quartile at 10 and the upper quartile at 30. If these give 52, 44 and 61 marks, then the interquartile range is 61 \u2014 44 = 17 marks and the semi-interquartile range is 8.5. For grouped data the estimated mean is \u03a3fx \u00f7 \u03a3f using the class midpoints, and the modal class is the interval with the highest frequency. Always answer in the units of the data.",
+                "objectives": [
+                    "Build a tally and frequency table, including grouped class intervals",
+                    "Complete a cumulative frequency column and draw an ogive",
+                    "Read the median, quartiles and interquartile range from a cumulative frequency curve",
+                    "Estimate the mean of grouped data using class midpoints"
+                ],
+                "concepts": [
+                    "Grouped class intervals are equal in width and must not overlap; use midpoints for calculations.",
+                    "Cumulative frequency is a running total; plot it against the upper boundary.",
+                    "Median at n/2, lower quartile at n/4, upper quartile at 3n/4 on the cumulative axis.",
+                    "Interquartile range = Q3 \u2014 Q1; estimated mean of grouped data = \u03a3fx/\u03a3f."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Ogive Reading Match: match each statistic (median, lower quartile, upper quartile, interquartile range) to its value read from the cumulative frequency curve."
+                }
             }
         ]
     },
@@ -289,6 +784,27 @@
                 "experiment": {
                     "type": "volume-filler",
                     "description": "Water Tank: Fill different shaped 3D containers (prism, cylinder) with water to visualize how volume relates to base area and height."
+                }
+            },
+            {
+                "id": "si-units-and-conversion",
+                "title": "SI Units, Conversion and Rates",
+                "content": "The International System (SI) uses base units: the metre (m) for length, the kilogram (kg) for mass, the second (s) for time and the ampere (A) for current. Prefixes scale these units \u2014 kilo means 1000, centi means 1/100, milli means 1/1000 and micro means 1/1,000,000 \u2014 so 1 km = 1000 m, 1 cm = 0.01 m and 1 mg = 0.001 g. Because area is measured in square units, 1 m\u00b2 = 100 cm \u00d7 100 cm = 10,000 cm\u00b2; because volume is measured in cubic units, 1 m\u00b3 = 1,000,000 cm\u00b3. Capacity and volume are linked: 1 cm\u00b3 = 1 mL and 1 m\u00b3 = 1000 L.\n\nA rate compares two quantities with different units. Speed is the commonest: speed = distance \u00f7 time, distance = speed \u00d7 time and time = distance \u00f7 speed. To change km/h into m/s, multiply by 1000/3600 = 5/18; to change m/s into km/h, multiply by 18/5. A car travelling at 72 km/h covers 72 \u00d7 5/18 = 20 m each second. Density (mass \u00f7 volume), flow rate (litres per minute) and fuel consumption (km per litre) are handled the same way, and the unit of the answer comes from the units you divided.\n\nConversion questions ask you to change one unit to another by multiplying or dividing by a power of ten, and it is worth checking that the answer is sensible: a distance in metres should be much larger than in kilometres. Time needs care because it is not decimal \u2014 1.5 hours is 1 hour 30 minutes, and 2 hours 45 minutes is 2.75 hours, not 2.45 hours. In measurement problems, copy the given values with their units, convert to a single system, then calculate, and state the unit with the final answer.",
+                "objectives": [
+                    "Convert between metric units of length, mass, capacity, area and volume",
+                    "Use base units and prefixes correctly, including milli, centi and kilo",
+                    "Calculate speed, distance and time and convert between km/h and m/s",
+                    "Convert between decimal hours and hours and minutes in a real problem"
+                ],
+                "concepts": [
+                    "SI base units: metre, kilogram, second, ampere; prefixes scale by powers of ten.",
+                    "Area conversions square the length factor; volume conversions cube it.",
+                    "1 cm\u00b3 = 1 mL; 1 m\u00b3 = 1000 L.",
+                    "km/h to m/s: multiply by 5/18; m/s to km/h: multiply by 18/5."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Unit Conversion Match: match each quantity in one metric unit to its equivalent in another, including an hours-and-minutes conversion."
                 }
             }
         ]

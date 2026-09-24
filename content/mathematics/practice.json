@@ -221,32 +221,6 @@
   "topic": "real-numbers"
  },
  {
-  "id": "p18",
-  "question": "Express 2/5 as a percentage.",
-  "options": [
-   "25%",
-   "40%",
-   "20%",
-   "45%"
-  ],
-  "answer": "40%",
-  "explanation": "Step 1 — To change a fraction to a percentage, multiply by 100:\n2/5 × 100%\nStep 2 — Divide 100 by the denominator:\n100 ÷ 5 = 20\nStep 3 — Multiply by the numerator:\n2 × 20 = 40%",
-  "topic": "fractions-decimals-percentages"
- },
- {
-  "id": "p19",
-  "question": "What is the simple interest on $800 at 6% per annum for 2 years?",
-  "options": [
-   "$96",
-   "$48",
-   "$120",
-   "$72"
-  ],
-  "answer": "$96",
-  "explanation": "Step 1 — Write the simple-interest formula:\nI = PRT/100\nStep 2 — Substitute P = 800, R = 6 and T = 2:\nI = (800 × 6 × 2)/100\nStep 3 — Work out the top, then divide:\n9600/100 = $96",
-  "topic": "fractions-decimals-percentages"
- },
- {
   "id": "p20",
   "question": "Solve: 5x - 7 = 3x + 9",
   "options": [
@@ -403,19 +377,6 @@
   "topic": "perimeter-area"
  },
  {
-  "id": "p32",
-  "question": "The sides of a rectangle are 8 cm and 6 cm. What is the length of the diagonal?",
-  "options": [
-   "10 cm",
-   "14 cm",
-   "12 cm",
-   "7 cm"
-  ],
-  "answer": "10 cm",
-  "explanation": "Step 1 — The diagonal is the hypotenuse of a right-angled triangle with sides 8 cm and 6 cm.\nStep 2 — Pythagoras:\nd² = 8² + 6² = 64 + 36 = 100\nStep 3 — Square root:\nd = √100 = 10 cm",
-  "topic": "pythagoras-theorem"
- },
- {
   "id": "p33",
   "question": "What is the area of a circle with radius 7 cm? (π ≈ 22/7)",
   "options": [
@@ -452,19 +413,6 @@
   ],
   "answer": "5400 s",
   "explanation": "Step 1 — Change hours to minutes (60 minutes in an hour):\n1.5 × 60 = 90 minutes\nStep 2 — Change minutes to seconds (60 seconds in a minute):\n90 × 60 = 5400 seconds\nStep 3 — In one step: 1.5 × 3600 = 5400 s.",
-  "topic": "real-numbers"
- },
- {
-  "id": "p36",
-  "question": "A map scale is 1:50,000. What distance on the ground does 4 cm on the map represent?",
-  "options": [
-   "2 km",
-   "4 km",
-   "20 km",
-   "200 km"
-  ],
-  "answer": "2 km",
-  "explanation": "Step 1 — Multiply the map length by the scale:\n4 × 50 000 = 200 000 cm\nStep 2 — Change centimetres to metres (÷ 100):\n200 000 ÷ 100 = 2000 m\nStep 3 — Change metres to kilometres (÷ 1000):\n2000 ÷ 1000 = 2 km",
   "topic": "real-numbers"
  },
  {
@@ -505,19 +453,6 @@
   "answer": "8",
   "explanation": "Step 1 — Find the highest mark:\n12\nStep 2 — Find the lowest mark:\n4\nStep 3 — Range = highest - lowest:\n12 - 4 = 8",
   "topic": "central-tendency"
- },
- {
-  "id": "p40",
-  "question": "A bag has 3 red, 2 blue and 5 green marbles. What is P(green)?",
-  "options": [
-   "1/2",
-   "1/5",
-   "1/3",
-   "3/10"
-  ],
-  "answer": "1/2",
-  "explanation": "Step 1 — Find the total number of marbles:\n3 + 2 + 5 = 10\nStep 2 — Write the probability as a fraction:\nP(green) = 5/10\nStep 3 — Cancel to lowest terms:\n5/10 = 1/2",
-  "topic": "probability"
  },
  {
   "id": "p41",
@@ -661,19 +596,6 @@
   "answer": "48",
   "explanation": "Step 1 — Look at the first digit after the whole-number place (the tenths digit):\n6\nStep 2 — 6 is 5 or more, so round up.\nStep 3 — 47.65 ≈ 48",
   "topic": "real-numbers"
- },
- {
-  "id": "p52",
-  "question": "What is 0.6 × 0.5?",
-  "options": [
-   "0.3",
-   "3",
-   "0.30",
-   "1.1"
-  ],
-  "answer": "0.3",
-  "explanation": "Step 1 — Multiply the digits, ignoring the decimal points for now:\n6 × 5 = 30\nStep 2 — Count the decimal places in the question: one in 0.6 and one in 0.5, so 2 places.\nStep 3 — Put 2 decimal places into the answer: 0.30 = 0.3",
-  "topic": "fractions-decimals-percentages"
  },
  {
   "id": "p53",
@@ -845,32 +767,6 @@
   "topic": "perimeter-area"
  },
  {
-  "id": "p66",
-  "question": "The interior angle of a regular hexagon is:",
-  "options": [
-   "120°",
-   "60°",
-   "108°",
-   "90°"
-  ],
-  "answer": "120°",
-  "explanation": "Step 1 — Sum of the interior angles = (n - 2) × 180° with n = 6:\n(6 - 2) × 180° = 720°\nStep 2 — A regular hexagon has 6 equal angles.\nStep 3 — Divide:\n720° ÷ 6 = 120°",
-  "topic": "perimeter-area"
- },
- {
-  "id": "p67",
-  "question": "How many lines of symmetry does a square have?",
-  "options": [
-   "4",
-   "2",
-   "8",
-   "1"
-  ],
-  "answer": "4",
-  "explanation": "Step 1 — A square folds onto itself along the line through the midpoints of the top and bottom sides.\nStep 2 — It also folds along the other pair of opposite sides, and along both diagonals.\nStep 3 — That is 2 + 2 = 4 lines of symmetry.",
-  "topic": "perimeter-area"
- },
- {
   "id": "p68",
   "question": "Which of the following is a 3D shape?",
   "options": [
@@ -910,32 +806,6 @@
   "topic": "volume-capacity"
  },
  {
-  "id": "p71",
-  "question": "Convert 0.25 to a fraction in lowest terms.",
-  "options": [
-   "1/4",
-   "25/10",
-   "2/5",
-   "1/5"
-  ],
-  "answer": "1/4",
-  "explanation": "Step 1 — 0.25 is twenty-five hundredths, so write it over 100:\n25/100\nStep 2 — Divide the top and bottom by 25:\n25 ÷ 25 = 1 and 100 ÷ 25 = 4\nStep 3 — Lowest terms:\n1/4",
-  "topic": "fractions-decimals-percentages"
- },
- {
-  "id": "p72",
-  "question": "Which is larger: 0.3 or 0.29?",
-  "options": [
-   "0.3",
-   "0.29",
-   "They are equal",
-   "Cannot tell"
-  ],
-  "answer": "0.3",
-  "explanation": "Step 1 — Give both numbers the same number of decimal places:\n0.30 and 0.29\nStep 2 — Compare the tenths digits:\n3 and 2\nStep 3 — 3 is bigger than 2, so 0.30 > 0.29 and 0.3 is the larger number.",
-  "topic": "fractions-decimals-percentages"
- },
- {
   "id": "p73",
   "question": "Evaluate: -4 + 9",
   "options": [
@@ -946,19 +816,6 @@
   ],
   "answer": "5",
   "explanation": "Step 1 — Start at -4 on the number line.\nStep 2 — Adding 9 means moving 9 places to the right; 4 places take you to 0.\nStep 3 — That leaves 9 - 4 = 5 places, so\n-4 + 9 = 5",
-  "topic": "real-numbers"
- },
- {
-  "id": "p74",
-  "question": "Evaluate: (-3) × (-6)",
-  "options": [
-   "18",
-   "-18",
-   "9",
-   "-9"
-  ],
-  "answer": "18",
-  "explanation": "Step 1 — Multiply the digits:\n3 × 6 = 18\nStep 2 — Apply the signs: a negative × a negative gives a positive.\nStep 3 — So (-3) × (-6) = +18.",
   "topic": "real-numbers"
  },
  {
@@ -1001,32 +858,6 @@
   "topic": "functions"
  },
  {
-  "id": "p78",
-  "question": "The exchange rate is 1 USD = 2.70 TTD. How many TTD for $50 USD?",
-  "options": [
-   "$135",
-   "$18.52",
-   "$1350",
-   "$53.70"
-  ],
-  "answer": "$135",
-  "explanation": "Step 1 — Every US dollar buys 2.70 TTD, so multiply.\nStep 2 — 50 × 2.70\nStep 3 — = 135 TTD",
-  "topic": "real-numbers"
- },
- {
-  "id": "p79",
-  "question": "A television set marked $1,200 is sold for $1,020. What is the percentage discount?",
-  "options": [
-   "15%",
-   "10%",
-   "20%",
-   "12%"
-  ],
-  "answer": "15%",
-  "explanation": "Step 1 — Find the discount in dollars:\n1200 - 1020 = $180\nStep 2 — Write it as a fraction of the marked price:\n180/1200\nStep 3 — Change to a percentage:\n180/1200 × 100 = 15%",
-  "topic": "fractions-decimals-percentages"
- },
- {
   "id": "p80",
   "question": "What is the interest on $500 at 8% p.a. for 6 months?",
   "options": [
@@ -1053,19 +884,6 @@
   "topic": "algebraic-expressions"
  },
  {
-  "id": "p82",
-  "question": "Which of the following points lies on the line y = x + 2?",
-  "options": [
-   "(1, 3)",
-   "(2, 2)",
-   "(3, 1)",
-   "(0, 0)"
-  ],
-  "answer": "(1, 3)",
-  "explanation": "Step 1 — A point lies on a line when its coordinates make the equation true.\nStep 2 — Test (1, 3): the right-hand side gives 1 + 2 = 3.\nStep 3 — The y-coordinate is also 3, so 3 = 3 ✓ and (1, 3) lies on y = x + 2.",
-  "topic": "coordinate-geometry"
- },
- {
   "id": "p83",
   "question": "The translation vector (3, -2) moves a point (1, 4) to:",
   "options": [
@@ -1077,45 +895,6 @@
   "answer": "(4, 2)",
   "explanation": "Step 1 — A translation adds the vector to the coordinates.\nStep 2 — x: 1 + 3 = 4\nStep 3 — y: 4 + (-2) = 2, so the image is (4, 2).",
   "topic": "vectors"
- },
- {
-  "id": "p84",
-  "question": "A rotation of 90° clockwise about the origin maps (2, 3) to:",
-  "options": [
-   "(3, -2)",
-   "(-3, 2)",
-   "(-2, -3)",
-   "(2, -3)"
-  ],
-  "answer": "(3, -2)",
-  "explanation": "Step 1 — For a 90° clockwise rotation about the origin:\n(x, y) → (y, -x)\nStep 2 — Substitute x = 2 and y = 3:\n(3, -2)\nStep 3 — Check the quadrant: a quarter turn clockwise from the first quadrant lands in the fourth, and (3, -2) is there.",
-  "topic": "vectors"
- },
- {
-  "id": "p85",
-  "question": "What is the y-intercept of y = -2x + 5?",
-  "options": [
-   "5",
-   "-2",
-   "2",
-   "5/2"
-  ],
-  "answer": "5",
-  "explanation": "Step 1 — Compare y = -2x + 5 with the form y = mx + c.\nStep 2 — The constant term is c = 5, and c is the y-intercept.\nStep 3 — The line crosses the y-axis at (0, 5), so the y-intercept is 5.",
-  "topic": "coordinate-geometry"
- },
- {
-  "id": "p86",
-  "question": "The sum of the interior angles of a pentagon is:",
-  "options": [
-   "540°",
-   "360°",
-   "720°",
-   "180°"
-  ],
-  "answer": "540°",
-  "explanation": "Step 1 — Write the formula for the angle sum:\nsum = (n - 2) × 180°\nStep 2 — A pentagon has n = 5 sides:\n(5 - 2) × 180°\nStep 3 — = 3 × 180° = 540°",
-  "topic": "perimeter-area"
  },
  {
   "id": "p87",
@@ -1144,32 +923,6 @@
   "topic": "pythagoras-theorem"
  },
  {
-  "id": "p89",
-  "question": "What is the value of cos 60°?",
-  "options": [
-   "0.5",
-   "1",
-   "0",
-   "√3/2"
-  ],
-  "answer": "0.5",
-  "explanation": "Step 1 — cos 60° is one of the exact values:\ncos 60° = 1/2\nStep 2 — (√3/2 ≈ 0.866 is cos 30°, so it is not the answer here.)\nStep 3 — Change the fraction to a decimal:\n1/2 = 0.5",
-  "topic": "trig-ratios"
- },
- {
-  "id": "p90",
-  "question": "A cylinder has radius 5 cm and height 10 cm. What is its volume? (π ≈ 3.14)",
-  "options": [
-   "785 cm³",
-   "1570 cm³",
-   "314 cm³",
-   "250 cm³"
-  ],
-  "answer": "785 cm³",
-  "explanation": "Step 1 — Write the volume formula for a cylinder:\nV = πr²h\nStep 2 — Substitute r = 5, h = 10 and π ≈ 3.14:\nV = 3.14 × 25 × 10\nStep 3 — V = 3.14 × 250 = 785 cm³",
-  "topic": "volume-capacity"
- },
- {
   "id": "p91",
   "question": "What is the perimeter of a rectangle 12 cm by 8 cm?",
   "options": [
@@ -1194,45 +947,6 @@
   "answer": "0.7",
   "explanation": "Step 1 — All the possible outcomes together have probability 1.\nStep 2 — P(no rain) = 1 - P(rain) = 1 - 0.3\nStep 3 — = 0.7",
   "topic": "probability"
- },
- {
-  "id": "p93",
-  "question": "A spinner has 5 equal sections numbered 1-5. What is P(odd)?",
-  "options": [
-   "3/5",
-   "2/5",
-   "1/2",
-   "1/5"
-  ],
-  "answer": "3/5",
-  "explanation": "Step 1 — List the odd numbers on the spinner:\n1, 3, 5 - that is 3 favourable outcomes\nStep 2 — There are 5 outcomes altogether.\nStep 3 — P(odd) = 3/5",
-  "topic": "probability"
- },
- {
-  "id": "p94",
-  "question": "What is the 5th term of the sequence 2, 6, 18, 54, ...?",
-  "options": [
-   "162",
-   "108",
-   "486",
-   "72"
-  ],
-  "answer": "162",
-  "explanation": "Step 1 — Find the pattern between the terms:\n2 × 3 = 6, 6 × 3 = 18, 18 × 3 = 54\nStep 2 — Each term is 3 times the one before it.\nStep 3 — The 5th term = 54 × 3 = 162",
-  "topic": "functions"
- },
- {
-  "id": "p95",
-  "question": "Evaluate: 8 - 3 × 2 + 4",
-  "options": [
-   "6",
-   "14",
-   "10",
-   "18"
-  ],
-  "answer": "6",
-  "explanation": "Step 1 — BODMAS: do the multiplication before adding or subtracting.\n3 × 2 = 6\nStep 2 — Rewrite the question:\n8 - 6 + 4\nStep 3 — Work from left to right:\n8 - 6 = 2, then 2 + 4 = 6",
-  "topic": "real-numbers"
  },
  {
   "id": "p96",
@@ -1261,32 +975,6 @@
   "topic": "real-numbers"
  },
  {
-  "id": "p98",
-  "question": "A pie chart shows 40% for one category. What is its angle?",
-  "options": [
-   "144°",
-   "40°",
-   "90°",
-   "120°"
-  ],
-  "answer": "144°",
-  "explanation": "Step 1 — A full circle is 360°.\nStep 2 — Write 40% as a decimal and multiply:\n0.4 × 360°\nStep 3 — = 144°",
-  "topic": "central-tendency"
- },
- {
-  "id": "p99",
-  "question": "If the mean of 3, 7, x and 10 is 7, what is x?",
-  "options": [
-   "8",
-   "6",
-   "9",
-   "7"
-  ],
-  "answer": "8",
-  "explanation": "Step 1 — Write the mean as an equation:\n(3 + 7 + x + 10)/4 = 7\nStep 2 — Multiply both sides by 4:\n20 + x = 28\nStep 3 — Subtract 20 from both sides:\nx = 8",
-  "topic": "central-tendency"
- },
- {
   "id": "p100",
   "question": "A shop adds 12.5% VAT to a $200 item. What is the final price?",
   "options": [
@@ -1298,5 +986,317 @@
   "answer": "$225",
   "explanation": "Step 1 — Split 12.5% into 10% + 2.5% of $200:\n10% = $20 and 2.5% = $5\nStep 2 — Add them for the VAT:\n$20 + $5 = $25\nStep 3 — Add the VAT to the price:\n$200 + $25 = $225",
   "topic": "fractions-decimals-percentages"
+ },
+ {
+  "id": "p101",
+  "question": "A shop buys a phone case for $350 and sells it for $420. What is the percentage profit?",
+  "options": [
+   "20%",
+   "17%",
+   "70%",
+   "83.3%"
+  ],
+  "answer": "20%",
+  "explanation": "Step 1 — Find the profit in dollars:\nProfit = selling price − cost price = 420 − 350 = $70\nStep 2 — Write profit as a percentage of the COST price:\n(70 ÷ 350) × 100 = 20%",
+  "topic": "profit-loss-and-discounts"
+ },
+ {
+  "id": "p102",
+  "question": "Find the simple interest on $8,000 invested at 6% per annum for 2.5 years.",
+  "options": [
+   "$1,200",
+   "$1,440",
+   "$480",
+   "$1,280"
+  ],
+  "answer": "$1,200",
+  "explanation": "Step 1 — Write the simple interest formula:\nI = (P × R × T) ÷ 100\nStep 2 — Substitute P = 8,000, R = 6 and T = 2.5:\nI = (8,000 × 6 × 2.5) ÷ 100 = 120,000 ÷ 100\nStep 3 — State the interest:\nI = $1,200",
+  "topic": "simple-and-compound-interest"
+ },
+ {
+  "id": "p103",
+  "question": "A motorcycle has a cash price of $60,000. On hire purchase it is bought with a 25% deposit and 18 monthly instalments of $3,500. What is the total hire purchase price?",
+  "options": [
+   "$78,000",
+   "$63,000",
+   "$75,000",
+   "$72,000"
+  ],
+  "answer": "$78,000",
+  "explanation": "Step 1 — Find the deposit:\n25% of 60,000 = 0.25 × 60,000 = $15,000\nStep 2 — Find the total paid in instalments:\n18 × 3,500 = $63,000\nStep 3 — Add the deposit and the instalments:\n15,000 + 63,000 = $78,000",
+  "topic": "hire-purchase-and-instalments"
+ },
+ {
+  "id": "p104",
+  "question": "GCT is charged at 15%. What does a customer pay in total for goods priced at $4,200?",
+  "options": [
+   "$4,830",
+   "$4,230",
+   "$4,800",
+   "$630"
+  ],
+  "answer": "$4,830",
+  "explanation": "Step 1 — Find the tax on the price:\n15% of 4,200 = 0.15 × 4,200 = $630\nStep 2 — Add the tax to the marked price:\n4,200 + 630 = $4,830\nShortcut: 4,200 × 1.15 = $4,830",
+  "topic": "taxes-and-utility-bills"
+ },
+ {
+  "id": "p105",
+  "question": "The exchange rate is US$1 = J$158.40. How many US dollars does J$79,200 buy?",
+  "options": [
+   "US$500",
+   "US$506.25",
+   "US$620",
+   "US$501.60"
+  ],
+  "answer": "US$500",
+  "explanation": "Step 1 — Decide the operation: Jamaican dollars to US dollars means dividing.\nJ$79,200 ÷ 158.40\nStep 2 — Complete the division:\n79,200 ÷ 158.40 = 500\nStep 3 — State the answer with its currency:\nUS$500",
+  "topic": "exchange-rates-and-currency"
+ },
+ {
+  "id": "p106",
+  "question": "A house is insured for $2,500,000 at an annual premium rate of 0.8%. What is the yearly premium?",
+  "options": [
+   "$20,000",
+   "$2,000",
+   "$200,000",
+   "$18,000"
+  ],
+  "answer": "$20,000",
+  "explanation": "Step 1 — Write the premium as a percentage of the sum insured:\npremium = 0.8% of 2,500,000\nStep 2 — Change the percentage to a decimal and multiply:\n0.008 × 2,500,000 = 20,000\nStep 3 — State the premium:\n$20,000 per year",
+  "topic": "insurance-and-budgeting"
+ },
+ {
+  "id": "p107",
+  "question": "Which of these is a well-defined set?",
+  "options": [
+   "The prime numbers less than 20",
+   "The tall students in Form 5",
+   "Some of the best cricketers in Jamaica",
+   "Interesting books in the library"
+  ],
+  "answer": "The prime numbers less than 20",
+  "explanation": "Step 1 — Recall what 'well-defined' means:\nEveryone must be able to say for certain whether an object belongs or not.\nStep 2 — Test each description:\n'Tall', 'some of the best' and 'interesting' are matters of opinion, so those three are not sets.\nStep 3 — State the set:\nThe prime numbers less than 20 = {2, 3, 5, 7, 11, 13, 17, 19}",
+  "topic": "set-notation"
+ },
+ {
+  "id": "p108",
+  "question": "How many subsets does a set with 4 elements have?",
+  "options": [
+   "16",
+   "8",
+   "15",
+   "4"
+  ],
+  "answer": "16",
+  "explanation": "Step 1 — Write the rule for the number of subsets:\na set with n elements has 2^n subsets\nStep 2 — Substitute n = 4:\n2^4 = 16\nStep 3 — Note the difference from proper subsets:\n16 subsets in total, of which 15 are proper subsets",
+  "topic": "subsets-and-cardinality"
+ },
+ {
+  "id": "p109",
+  "question": "In a class of 40 students, 24 like cricket, 20 like football and 12 like both. How many like cricket only?",
+  "options": [
+   "12",
+   "8",
+   "24",
+   "4"
+  ],
+  "answer": "12",
+  "explanation": "Step 1 — Write the number in the overlap first:\nBoth sports = 12\nStep 2 — Subtract the overlap from the cricket total:\ncricket only = 24 − 12 = 12\nStep 3 — State the answer:\n12 students like cricket only",
+  "topic": "venn-diagrams"
+ },
+ {
+  "id": "p110",
+  "question": "A = {1, 3, 5, 7} and B = {2, 3, 5, 8}. What is A ∩ B?",
+  "options": [
+   "{3, 5}",
+   "{1, 2, 3, 5, 7, 8}",
+   "{1, 7}",
+   "{1, 2, 7, 8}"
+  ],
+  "answer": "{3, 5}",
+  "explanation": "Step 1 — Recall that ∩ means 'in both sets':\nList the elements that appear in A and also in B.\nStep 2 — Compare the two sets element by element:\n3 and 5 appear in both A and B; 1 and 7 are only in A; 2 and 8 are only in B.\nStep 3 — State the intersection:\nA ∩ B = {3, 5}",
+  "topic": "union-intersection-complement"
+ },
+ {
+  "id": "p111",
+  "question": "Which notation describes the students who study Mathematics and Physics but not Chemistry?",
+  "options": [
+   "M ∩ P ∩ C'",
+   "M ∩ P ∩ C",
+   "M ∪ P ∪ C",
+   "(M ∩ P)'"
+  ],
+  "answer": "M ∩ P ∩ C'",
+  "explanation": "Step 1 — Translate the words one at a time:\n'Mathematics and Physics' gives M ∩ P.\nStep 2 — Add the condition 'but not Chemistry':\n'Not in C' is written C'.\nStep 3 — Combine the parts:\nM ∩ P ∩ C'",
+  "topic": "shading-venn-regions"
+ },
+ {
+  "id": "p112",
+  "question": "In a class of 35 students, 22 own a smartphone, 18 own a laptop and 9 own both. How many own a smartphone only?",
+  "options": [
+   "13",
+   "9",
+   "22",
+   "26"
+  ],
+  "answer": "13",
+  "explanation": "Step 1 — Write the overlap first:\nstudents who own both = 9\nStep 2 — Subtract the overlap from the smartphone total:\n22 − 9 = 13\nStep 3 — State the answer:\n13 students own a smartphone only",
+  "topic": "set-word-problems"
+ },
+ {
+  "id": "p113",
+  "question": "Which of the following is a prime number?",
+  "options": [
+   "89",
+   "91",
+   "87",
+   "51"
+  ],
+  "answer": "89",
+  "explanation": "Step 1 — Recall that a prime has exactly two factors, 1 and itself:\nTest each number for factors other than 1 and itself.\nStep 2 — Test the distractors:\n91 = 7 × 13, 87 = 3 × 29 and 51 = 3 × 17, so all three are composite.\nStep 3 — State the prime:\n89 has no factors other than 1 and 89",
+  "topic": "types-of-numbers"
+ },
+ {
+  "id": "p114",
+  "question": "Simplify 2³ × 2⁴, leaving your answer as a single power or number.",
+  "options": [
+   "128",
+   "64",
+   "2¹²",
+   "256"
+  ],
+  "answer": "128",
+  "explanation": "Step 1 — Use the law for multiplying powers of the same base:\na^m × a^n = a^(m+n)\nStep 2 — Add the indices:\n2³ × 2⁴ = 2⁷\nStep 3 — Evaluate:\n2⁷ = 128",
+  "topic": "indices-and-surds"
+ },
+ {
+  "id": "p115",
+  "question": "Write 0.000406 in standard form.",
+  "options": [
+   "4.06 × 10⁻⁴",
+   "4.06 × 10⁴",
+   "40.6 × 10⁻⁵",
+   "4.06 × 10⁻³"
+  ],
+  "answer": "4.06 × 10⁻⁴",
+  "explanation": "Step 1 — Move the decimal point until one digit remains in front of it:\n0.000406 becomes 4.06 after moving the point 4 places to the right.\nStep 2 — Decide the index: moving right gives a negative index.\n4 places to the right gives 10⁻⁴\nStep 3 — Write the answer:\n0.000406 = 4.06 × 10⁻⁴",
+  "topic": "standard-form"
+ },
+ {
+  "id": "p116",
+  "question": "Factorise x² − 49.",
+  "options": [
+   "(x + 7)(x − 7)",
+   "(x − 7)(x − 7)",
+   "(x + 7)(x + 7)",
+   "(x − 49)(x + 1)"
+  ],
+  "answer": "(x + 7)(x − 7)",
+  "explanation": "Step 1 — Recognise the difference of two squares:\na² − b² = (a + b)(a − b)\nStep 2 — Identify a and b:\nx² − 49 = x² − 7², so a = x and b = 7\nStep 3 — Write the factors:\n(x + 7)(x − 7)",
+  "topic": "factorization"
+ },
+ {
+  "id": "p117",
+  "question": "Simplify (x² − 25)/(x + 5).",
+  "options": [
+   "x − 5",
+   "x + 5",
+   "x² − 5",
+   "5x"
+  ],
+  "answer": "x − 5",
+  "explanation": "Step 1 — Factorise the numerator as a difference of two squares:\nx² − 25 = (x + 5)(x − 5)\nStep 2 — Write the fraction with the numerator factorised:\n((x + 5)(x − 5)) ÷ (x + 5)\nStep 3 — Cancel the common factor (x + 5):\nthe answer is x − 5",
+  "topic": "algebraic-fractions"
+ },
+ {
+  "id": "p118",
+  "question": "Make t the subject of v = u + at.",
+  "options": [
+   "t = (v − u)/a",
+   "t = v − u",
+   "t = (u − v)/a",
+   "t = a(v − u)"
+  ],
+  "answer": "t = (v − u)/a",
+  "explanation": "Step 1 — Subtract u from both sides:\nv − u = at\nStep 2 — Divide both sides by a:\n(v − u) ÷ a = t\nStep 3 — Write with t as the subject:\nt = (v − u)/a",
+  "topic": "transposition-and-substitution"
+ },
+ {
+  "id": "p119",
+  "question": "What is the gradient of the line passing through (1, 2) and (4, 11)?",
+  "options": [
+   "3",
+   "9",
+   "1/3",
+   "−3"
+  ],
+  "answer": "3",
+  "explanation": "Step 1 — Write the gradient formula:\nm = (y₂ − y₁) ÷ (x₂ − x₁)\nStep 2 — Substitute the two points:\n(11 − 2) ÷ (4 − 1) = 9 ÷ 3\nStep 3 — State the gradient:\nm = 3, a line rising 3 units for every 1 unit across",
+  "topic": "linear-and-quadratic-graphs"
+ },
+ {
+  "id": "p120",
+  "question": "What is the size of each interior angle of a regular hexagon?",
+  "options": [
+   "120°",
+   "60°",
+   "108°",
+   "135°"
+  ],
+  "answer": "120°",
+  "explanation": "Step 1 — Find each exterior angle first:\n360° ÷ 6 = 60°\nStep 2 — Use the fact that interior + exterior = 180°:\n180° − 60° = 120°\nStep 3 — Check with the interior angle sum: (6 − 2) × 180° = 720° and 720° ÷ 6 = 120°",
+  "topic": "angles-and-polygons"
+ },
+ {
+  "id": "p121",
+  "question": "What is the size of the angle in a semicircle?",
+  "options": [
+   "90°",
+   "180°",
+   "45°",
+   "It depends on the radius"
+  ],
+  "answer": "90°",
+  "explanation": "Step 1 — Recall the theorem:\nthe angle in a semicircle is a right angle.\nStep 2 — Explain why:\nthe angle at the centre on a diameter is 180°, and the angle at the circumference is half of it.\nStep 3 — State the size:\n90°",
+  "topic": "circle-theorems"
+ },
+ {
+  "id": "p122",
+  "question": "The point (3, −2) is reflected in the x-axis. What are the coordinates of the image?",
+  "options": [
+   "(3, 2)",
+   "(−3, −2)",
+   "(−3, 2)",
+   "(2, −3)"
+  ],
+  "answer": "(3, 2)",
+  "explanation": "Step 1 — Recall what a reflection in the x-axis does:\nthe x-coordinate stays the same and the y-coordinate changes sign.\nStep 2 — Apply it to (3, −2):\nx stays 3 and y becomes +2\nStep 3 — State the image:\n(3, 2)",
+  "topic": "transformations"
+ },
+ {
+  "id": "p123",
+  "question": "A data set contains 40 values. At which cumulative frequency is the median read from an ogive?",
+  "options": [
+   "20",
+   "10",
+   "30",
+   "40"
+  ],
+  "answer": "20",
+  "explanation": "Step 1 — Recall the position of the median:\nthe median is at n/2 on the cumulative frequency axis.\nStep 2 — Substitute n = 40:\n40 ÷ 2 = 20\nStep 3 — Read across:\ngo to 20 on the cumulative frequency axis, then across to the curve and down to the median value",
+  "topic": "frequency-tables-and-cumulative-frequency"
+ },
+ {
+  "id": "p124",
+  "question": "Convert 4.5 m² into cm².",
+  "options": [
+   "45,000 cm²",
+   "450 cm²",
+   "4,500 cm²",
+   "450,000 cm²"
+  ],
+  "answer": "45,000 cm²",
+  "explanation": "Step 1 — Convert the linear unit first:\n1 m = 100 cm\nStep 2 — Square the conversion for area:\n1 m² = 100 × 100 = 10,000 cm²\nStep 3 — Multiply by the number of square metres:\n4.5 × 10,000 = 45,000 cm²",
+  "topic": "si-units-and-conversion"
  }
 ]
