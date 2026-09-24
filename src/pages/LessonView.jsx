@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { usePurchases } from "../data/usePurchases";
+import { FREE_PREVIEW_LESSONS } from "../data/access";
 import { getSubject, getSubjectModules, normalizeModules, getLessonExperiment } from "../data/contentLoader";
 import ExperimentSandbox from "../components/ExperimentSandbox";
 import "./LessonView.css";
@@ -53,9 +54,10 @@ export default function LessonView() {
     );
   }
 
-  // Fail closed: only the first 2 lessons are free. Anything beyond that
-  // requires a verified purchase (or bundle). Unknown purchase state = locked.
-  const isPreviewLesson = lessonIndex >= 0 && lessonIndex < 2;
+  // Fail closed: only the first FREE_PREVIEW_LESSONS lessons are free. Anything
+  // beyond that requires a verified purchase (or bundle). Unknown purchase state
+  // = locked.
+  const isPreviewLesson = lessonIndex >= 0 && lessonIndex < FREE_PREVIEW_LESSONS;
   const paid = hasAccess(subjectId);
   if (!isPreviewLesson && !paid) {
     return (
@@ -63,8 +65,8 @@ export default function LessonView() {
         <h2>🔒 This lesson requires full access</h2>
         <p>
           {user
-            ? `You are viewing the free preview (2 of ${totalLessons} lessons). Unlock all lessons to continue.`
-            : `Sign in to view the free 2-lesson preview, or unlock all ${totalLessons} lessons.`}
+            ? `You are viewing the free preview (${FREE_PREVIEW_LESSONS} of ${totalLessons} lessons). Unlock all lessons to continue.`
+            : `Sign in to view the free ${FREE_PREVIEW_LESSONS}-lesson preview, or unlock all ${totalLessons} lessons.`}
         </p>
         <Link to={"/pricing?subject=" + subjectId} className="back-link">Unlock full access</Link>
         <br />

@@ -111,3 +111,21 @@ export function bundleSavingsLabel(subjectCount) {
     ? "Every CSEC subject in one payment"
     : `Save ${pct}% vs buying every subject separately`;
 }
+
+// School licence ladder (owner decision 2026-09-13): one-year licences,
+// seats × per-student rate — 50×$25, 100×$20, 150×$15. The amounts here are the
+// DISPLAY values; the Stripe price ids are owned by
+// api/checkout/create-session.js (SCHOOL_LICENSES there), and priceType is the
+// key the two must agree on.
+//
+// These tiers used to live inside src/pages/PricingPage.jsx, which meant the only
+// way to read them was to parse a .jsx file — impossible from a Node harness, and
+// impossible from the Compass Guide's fact table, which would have had to carry a
+// second copy of every amount. So they moved HERE: the Pricing page renders this
+// array, src/data/guideFacts.js quotes it, and tools/check-guide-bot.mjs asserts
+// the guide's school answer matches it tier for tier.
+export const SCHOOL_LICENSES = [
+  { priceType: "school-license-50", seats: 50, price: 1250, perStudent: 25 },
+  { priceType: "school-license-100", seats: 100, price: 2000, perStudent: 20 },
+  { priceType: "school-license-150", seats: 150, price: 2250, perStudent: 15 },
+];

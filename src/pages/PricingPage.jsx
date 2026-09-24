@@ -3,6 +3,7 @@ import { useAuth } from "../context/AuthContext";
 import { useNavigate, useSearchParams, Link } from "react-router-dom";
 import {
   FALLBACK_SUBJECT_OPTIONS,
+  SCHOOL_LICENSES,
   buildSubjectOptions,
   bundleSavingsLabel,
   resolvePreselectedSubject,
@@ -39,15 +40,12 @@ function plansFor(subjectCount) {
   ];
 }
 
-// School License ladder (owner decision 2026-09-13). Prices are the live
-// Stripe products — priceType is the tier id and must stay in sync with
-// api/checkout/create-session.js (SCHOOL_LICENSES), which owns the Stripe
-// price ids. Seats × per-student rate: 50×$25, 100×$20, 150×$15.
-const SCHOOL_LICENSES = [
-  { priceType: "school-license-50", seats: 50, price: 1250, perStudent: 25 },
-  { priceType: "school-license-100", seats: 100, price: 2000, perStudent: 20 },
-  { priceType: "school-license-150", seats: 150, price: 2250, perStudent: 15 },
-];
+// School License ladder: imported from src/data/pricingSubjects.js, which owns
+// the display amounts and is also what src/data/guideFacts.js (the Compass Guide)
+// quotes — one array, so the page and the guide cannot quote different prices.
+// priceType is the tier id and must stay in sync with
+// api/checkout/create-session.js (SCHOOL_LICENSES), which owns the Stripe price
+// ids. Seats × per-student rate: 50×$25, 100×$20, 150×$15.
 
 // A school licence is bought by the school, which names itself and the person
 // who will run its console (owner direction 2026-09-20). Both travel with the

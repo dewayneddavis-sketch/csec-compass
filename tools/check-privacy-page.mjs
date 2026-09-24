@@ -75,6 +75,13 @@ const signupPage = read("src/pages/SignupPage.jsx");
 const signupCss = read("src/pages/SignupPage.css");
 const pricingPage = read("src/pages/PricingPage.jsx");
 const pricingCss = read("src/pages/Pricing.css");
+// The school ladder's amounts now live in the pricing data module — one copy,
+// because the Compass Guide (src/data/guideFacts.js) quotes the same three tiers
+// and tools/check-guide-bot.mjs cross-checks them against the Stripe ladder in
+// api/checkout/create-session.js. So the "no price changed" guard below reads
+// them where they live now, and also asserts the Pricing page renders that
+// shared ladder rather than growing a second copy of it again.
+const pricingData = read("src/data/pricingSubjects.js");
 
 const flatLegal = flat(legal);
 const flatPrivacy = flat(privacyPage);
@@ -253,7 +260,18 @@ check(
 );
 check("the pointer sits with the existing one-time-payment note", /pricing-note pricing-legal-note/.test(pricingPage));
 check("it is styled, not left bare", /\.pricing-legal-note\s*\{/.test(pricingCss) && /\.pricing-legal-link\s*\{/.test(pricingCss));
-check("no price changed", /\$9\.99/.test(pricingPage) && /\$49\.99/.test(pricingPage) && /1250/.test(pricingPage) && /2000/.test(pricingPage) && /2250/.test(pricingPage));
+check(
+  "no price changed",
+  /\$9\.99/.test(pricingPage) &&
+    /\$49\.99/.test(pricingPage) &&
+    /SCHOOL_LICENSES/.test(pricingPage) &&
+    /from "\.\.\/data\/pricingSubjects"/.test(pricingPage) &&
+    !/const SCHOOL_LICENSES = \[/.test(pricingPage) &&
+    ["school-license-50", "school-license-100", "school-license-150"].every((tier) => pricingData.includes(tier)) &&
+    /price: 1250/.test(pricingData) &&
+    /price: 2000/.test(pricingData) &&
+    /price: 2250/.test(pricingData)
+);
 check("the child-email field is untouched", /Your child&rsquo;s email \(optional\)/.test(pricingPage) && /childEmail/.test(pricingPage));
 check("the school tiers still need a school name and admin", /Who should run this school&rsquo;s account\?/.test(pricingPage));
 

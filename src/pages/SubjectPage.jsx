@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { usePurchases } from "../data/usePurchases";
+import { FREE_PREVIEW_LESSONS } from "../data/access";
 import { getSubject, getSubjectModules, getSubjectQuiz, normalizeModules } from "../data/contentLoader";
 import ProgressBar from "../components/ProgressBar";
 import Quiz from "../components/Quiz";
@@ -116,7 +117,7 @@ export default function SubjectPage() {
   const currentModule = modules[activeModule];
   const allLessons = modules.flatMap((m) => m.lessons);
   const totalLessonCount = allLessons.length;
-  const lessonCount = paid ? allLessons.length : Math.min(2, allLessons.length);
+  const lessonCount = paid ? allLessons.length : Math.min(FREE_PREVIEW_LESSONS, allLessons.length);
   const completedCount = completedLessons.length;
 
   // One reducer for the manual tick and the lab path (see
@@ -149,7 +150,7 @@ export default function SubjectPage() {
         </div>
       ) : !paid && (
         <div className="s-upgrade-banner">
-          <p><strong>Preview Mode</strong> &mdash; You are viewing 2 of {totalLessonCount} lessons. <Link to={"/pricing?subject=" + subjectId}>Unlock full access to all {totalLessonCount} lessons!</Link></p>
+          <p><strong>Preview Mode</strong> &mdash; You are viewing {FREE_PREVIEW_LESSONS} of {totalLessonCount} lessons. <Link to={"/pricing?subject=" + subjectId}>Unlock full access to all {totalLessonCount} lessons!</Link></p>
         </div>
       )}
 
@@ -184,11 +185,12 @@ export default function SubjectPage() {
                   <h3 className="s-lesson-module-title">Module {activeModule + 1}: {currentModule.title}</h3>
                   <div className="s-lesson-items">
                     {currentModule.lessons.map((lesson) => {
-                      // Global position across all modules: only the first 2
-                      // lessons overall are free preview; the rest are locked
-                      // until purchase (verified via hasAccess, fail-closed).
+                      // Global position across all modules: only the first
+                      // FREE_PREVIEW_LESSONS lessons overall are free preview;
+                      // the rest are locked until purchase (verified via
+                      // hasAccess, fail-closed).
                       const globalIdx = allLessons.findIndex((l) => l.id === lesson.id);
-                      const locked = !paid && globalIdx >= 2;
+                      const locked = !paid && globalIdx >= FREE_PREVIEW_LESSONS;
                       const done = completedLessons.includes(lesson.id);
                       if (locked) {
                         return (

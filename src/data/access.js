@@ -1,3 +1,9 @@
+// How many lessons of a subject are usable without a purchase. SubjectPage
+// derives its lesson gate and its "viewing N of M" banner from this, LessonView
+// derives its deep-link guard, and the Compass Guide quotes it — one number, so
+// the guide can never advertise a bigger free preview than the app allows.
+export const FREE_PREVIEW_LESSONS = 2;
+
 // The fail-closed access predicate, as a pure function.
 //
 // Extracted from usePurchases() (which cannot be imported outside React) so
