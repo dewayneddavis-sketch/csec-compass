@@ -32,7 +32,7 @@ two samples show a completed oral-examination dossier instead of an SBA report.
 | 2 | chemistry | CSEC SBA | 30 | 2 - science SBA | DONE |
 | 3 | physics | CSEC SBA | 30 | 2 - science SBA | DONE |
 | 4 | integrated-science | CSEC SBA | 27 | 2 - science SBA | DONE |
-| 5 | human-social-biology | CSEC SBA | 18 | 2 - science SBA | TODO |
+| 5 | human-social-biology | CSEC SBA | 18 | 2 - science SBA | DONE |
 | 6 | information-technology | CSEC SBA | 60 | 3 - portfolio SBA | TODO |
 | 7 | edpm | CSEC SBA | 56 | 3 - portfolio SBA | TODO |
 | 8 | clothing-textile-and-fashion | CSEC SBA | 60 | 3 - portfolio SBA | TODO |
