@@ -7,12 +7,13 @@
 // Why this file exists — the two failures that would matter most are both
 // silent:
 //
-//   1. A FORM THAT CLAIMS SUCCESS WITHOUT SENDING. If KNOCK_API_KEY is absent
-//      (or Knock refuses), the honest answer is a 503/502 the page turns into
-//      "email us directly". A 200 there would tell a parent their message was
-//      on its way while nothing left the building, and the visitor would never
-//      know to try again. Asserted here by driving the real handler with the
-//      key absent AND with Knock failing, and pinning that neither returns ok.
+//   1. A FORM THAT CLAIMS SUCCESS WITHOUT SENDING. If the sending key is absent
+//      (or the provider refuses), the honest answer is a 503/502 the page turns
+//      into "email us directly". A 200 there would tell a parent their message
+//      was on its way while nothing left the building, and the visitor would
+//      never know to try again. Asserted here by driving the real handler with
+//      the key absent AND with the provider failing, and pinning that neither
+//      returns ok.
 //   2. A SECOND COPY OF THE COPY THAT HAS DRIFTED FROM THE FIRST. The API route
 //      is self-contained by design (it imports nothing, because Vercel builds
 //      each api/ file on its own and an import from ../src/ failed the deploy on
@@ -28,10 +29,17 @@
 // can't drift (caps/honeypot/copy agree with the page's shared module), the
 // honeypot really drops a submission, the rate limit really bites, the
 // submitter's NAME is collected by the form, required by both copies of the
-// validator and carried into the notification trigger (the owner's notification
-// template renders `data.name` in a table cell, so a blank one is a blank row in
-// the mailbox), and the exact wording of the automatic reply is the wording the
-// owner asked for.
+// validator and carried into the notification EMAIL (the owner's notification
+// renders the submitter's name, so a blank one is a blank row in the mailbox),
+// and the exact wording of the automatic reply is the wording the owner asked
+// for.
+//
+// PROVIDER (owner decision 2026-09-26). The route now sends through Resend: two
+// direct POSTs to https://api.resend.com/emails, no template layer in between.
+// The old integration — two workflow triggers through a channel that kept
+// reporting the mail as undelivered while the form said "sent" — is asserted
+// GONE below (no host, no trigger call, no old key name, anywhere in src/ or
+// api/), so a revert to the layer that was failing cannot pass this file.
 //
 // Run it with the rest before any contact/pricing PR:
 //   for f in tools/check-*.mjs; do node "$f"; done
@@ -137,7 +145,7 @@ const GOOD = {
   message: "Does the bundle cover Food and Nutrition as well?",
 };
 
-// The Knock calls are recorded here; each case starts from a clean slate.
+// The provider calls are recorded here; each case starts from a clean slate.
 const calls = [];
 let fetchImpl = null;
 const realFetch = globalThis.fetch;
@@ -205,7 +213,16 @@ check(
 );
 check(
   "the delivery address is not a request field (a visitor cannot redirect our mail)",
-  !/body\.(recipient|to|support_email)\b/.test(apiSrc) && /recipients: \[\{ id: NOTIFICATION_RECIPIENT_ID, email: SUPPORT_EMAIL \}\]/.test(apiSrc)
+  // The notification's recipient is the mirrored SUPPORT_EMAIL constant and
+  // nothing else: no body field is read to decide where our mail goes.
+  !/body\.(recipient|to|support_email)\b/.test(apiSrc) && /to: SUPPORT_EMAIL,/.test(apiSrc)
+);
+check(
+  "the sending domain is the brand's own, not a personal mailbox",
+  apiContact.CONTACT_FROM_ADDRESS === "noreply@csec-compass.com" &&
+    apiContact.NOTIFICATION_FROM === "CSEC Compass <noreply@csec-compass.com>" &&
+    apiContact.AUTOREPLY_FROM === "No Reply <noreply@csec-compass.com>",
+  `${apiContact.NOTIFICATION_FROM} | ${apiContact.AUTOREPLY_FROM}`
 );
 
 // ---------------------------------------------------------------------------
@@ -460,139 +477,131 @@ check("the privacy policy mentions contact-form messages", /contact form/i.test(
 section("the API route: honest when it cannot send");
 
 resetCalls();
-delete process.env.KNOCK_API_KEY;
+delete process.env.RESEND_API_KEY;
 {
   const res = await call(postReq({ ...GOOD }, "10.1.0.1"));
   check("a GET is refused with 405", (await call({ method: "GET", headers: {} })).statusCode === 405);
-  check("no KNOCK_API_KEY → 503, not a fake success", res.statusCode === 503, `got ${res.statusCode}`);
+  check("no RESEND_API_KEY → 503, not a fake success", res.statusCode === 503, `got ${res.statusCode}`);
   check("that 503 response never says ok", res.body.ok !== true && typeof res.body.error === "string");
   check("that 503 names the direct address as the way through", String(res.body.detail || "").includes(legal.SUPPORT_EMAIL));
-  check("nothing was sent to the email service", calls.length === 0, `${calls.length} calls`);
+  check("nothing was sent to the email provider", calls.length === 0, `${calls.length} calls`);
   check(
     "the missing key is logged loudly rather than failing silently",
-    logged("error", /KNOCK_API_KEY/) && logged("error", /must not claim success/)
+    logged("error", /RESEND_API_KEY/) && logged("error", /must not claim success/)
   );
 }
 
 // ---------------------------------------------------------------------------
 section("the API route: a valid submission sends both emails");
 
-process.env.KNOCK_API_KEY = "sk_test_offline";
+process.env.RESEND_API_KEY = "re_test_offline";
 resetCalls();
 {
   const res = await call(postReq({ ...GOOD }, "10.2.0.1"));
   check("a valid submission returns 200 ok", res.statusCode === 200 && res.body.ok === true, JSON.stringify(res.body));
-  check("both emails were triggered (notification + automatic reply)", calls.length === 2, `${calls.length} calls`);
+  check("both emails were sent (notification + automatic reply)", calls.length === 2, `${calls.length} calls`);
   const [notification, autoreply] = calls;
+  const jsonType = (c) => String(c.opts.headers["Content-Type"] || c.opts.headers["content-type"] || "");
   check(
-    "both go to Knock's workflow trigger endpoint",
-    /^https:\/\/api\.knock\.app\/v1\/workflows\/[^/]+\/trigger$/.test(notification.url) &&
-      /^https:\/\/api\.knock\.app\/v1\/workflows\/[^/]+\/trigger$/.test(autoreply.url),
+    "both go to the provider's send endpoint",
+    notification.url === "https://api.resend.com/emails" && autoreply.url === "https://api.resend.com/emails",
     `${notification.url} | ${autoreply.url}`
   );
   check("both are POSTs", notification.opts.method === "POST" && autoreply.opts.method === "POST");
   check(
     "both carry the API key as a bearer token",
-    notification.opts.headers.Authorization === "Bearer sk_test_offline" &&
-      autoreply.opts.headers.Authorization === "Bearer sk_test_offline"
+    notification.opts.headers.Authorization === "Bearer re_test_offline" &&
+      autoreply.opts.headers.Authorization === "Bearer re_test_offline",
+    `${notification.opts.headers.Authorization} | ${autoreply.opts.headers.Authorization}`
   );
-  check("the two workflows are distinct", notification.url !== autoreply.url);
+  check("both declare JSON bodies", /application\/json/.test(jsonType(notification)) && /application\/json/.test(jsonType(autoreply)), jsonType(notification));
+  check(
+    "the request is given a timeout so a hung provider cannot hang the form",
+    !!notification.opts.signal && !!autoreply.opts.signal
+  );
+
+  // --- 1. the notification the owner reads ---------------------------------
   check(
     "the notification goes to the support address",
-    JSON.stringify(notification.body.recipients) === JSON.stringify([{ id: "csec-compass-support", email: legal.SUPPORT_EMAIL }]),
-    JSON.stringify(notification.body.recipients)
+    JSON.stringify(notification.body.to) === JSON.stringify([legal.SUPPORT_EMAIL]),
+    JSON.stringify(notification.body.to)
   );
-  check("the notification carries the submitter as reply-to", notification.body.data.reply_to === GOOD.email);
-  check("the notification carries the submitter's address", notification.body.data.submitter_email === GOOD.email);
-  check("the notification carries the subject", notification.body.data.submission_subject === GOOD.subject);
-  check("the notification carries the whole message", notification.body.data.message === GOOD.message);
+  check(
+    "the notification comes from the brand sender on the verified domain",
+    notification.body.from === "CSEC Compass <noreply@csec-compass.com>",
+    notification.body.from
+  );
+  check("the notification carries the submitter as reply-to", notification.body.reply_to === GOOD.email, String(notification.body.reply_to));
   check(
     "the notification subject line is the required shape",
-    notification.body.data.notification_subject === `New contact message: ${GOOD.subject}`,
-    notification.body.data.notification_subject
-  );
-  check("the notification is timestamped", !Number.isNaN(Date.parse(notification.body.data.submitted_at)));
-  check(
-    "the automatic reply goes to the submitter, not to us",
-    JSON.stringify(autoreply.body.recipients) === JSON.stringify([{ id: GOOD.email, email: GOOD.email }]),
-    JSON.stringify(autoreply.body.recipients)
-  );
-  check("the automatic reply carries the exact approved subject", autoreply.body.data.ack_subject === shared.CONTACT_ACK_SUBJECT);
-  check("the automatic reply carries the exact approved body", autoreply.body.data.ack_body === shared.CONTACT_ACK_BODY);
-  check("the automatic reply carries the not-monitored note", /not monitored/i.test(autoreply.body.data.ack_note));
-  // --- The owner's real Knock workflows (created 2026-09-23) ---------------
-  // Their templates render data.name / data.email / data.subject / data.message
-  // (notification) and data.subject / vars.app_name (acknowledgement). These
-  // checks pin the exact key set, so a rename here goes red instead of quietly
-  // emptying a cell of the owner's email.
-  const dataJson = JSON.stringify(notification.body.data);
-  check(
-    "the notification carries the template's keys: name, email, subject, message",
-    ["name", "email", "subject", "message"].every((k) => k in notification.body.data) &&
-      notification.body.data.email === GOOD.email &&
-      notification.body.data.subject === GOOD.subject &&
-      notification.body.data.message === GOOD.message,
-    Object.keys(notification.body.data).join(",")
+    notification.body.subject === `New contact message: ${GOOD.subject}`,
+    notification.body.subject
   );
   check(
-    "data.name is the submitter's name, never invented from the address",
-    notification.body.data.name === GOOD.name && notification.body.data.name !== GOOD.email,
-    JSON.stringify(notification.body.data.name)
+    "the notification body carries the submitter's name",
+    String(notification.body.text).includes(`Name: ${GOOD.name}`),
+    String(notification.body.text).slice(0, 120)
+  );
+  check("the notification body carries the submitter's address", String(notification.body.text).includes(GOOD.email));
+  check("the notification body carries the subject", String(notification.body.text).includes(GOOD.subject));
+  check("the notification body carries the whole message", String(notification.body.text).includes(GOOD.message));
+  check(
+    "the notification is timestamped",
+    !Number.isNaN(Date.parse(String(notification.body.text).match(/Submitted at: (\S+)/)?.[1] || "")),
+    String(notification.body.text).match(/Submitted at: .*/)?.[0]
   );
   check(
-    "the submitter's name reaches the notification the owner reads",
-    notification.body.data.name === "Jane Smith" && typeof notification.body.data.name === "string",
-    JSON.stringify(notification.body.data.name)
+    "nothing in the notification body is empty or invented",
+    !/undefined|\[object Object\]|null/.test(String(notification.body.text))
+  );
+
+  // --- 2. the submitter's acknowledgement ----------------------------------
+  check(
+    "the acknowledgement goes to the submitter, not to us",
+    JSON.stringify(autoreply.body.to) === JSON.stringify([GOOD.email]),
+    JSON.stringify(autoreply.body.to)
   );
   check(
-    "the name is trimmed on the way through, not passed through raw",
-    notification.body.data.name.trim() === notification.body.data.name
+    "the acknowledgement comes from the no-reply sender",
+    autoreply.body.from === "No Reply <noreply@csec-compass.com>",
+    autoreply.body.from
   );
+  check("the acknowledgement carries the exact approved subject", autoreply.body.subject === shared.CONTACT_ACK_SUBJECT, autoreply.body.subject);
   check(
-    "the acknowledgement carries the submitter's name too",
-    autoreply.body.data.name === GOOD.name,
-    JSON.stringify(autoreply.body.data.name)
+    "the acknowledgement text is the approved body + note, byte for byte",
+    autoreply.body.text === `${shared.CONTACT_ACK_BODY}\n\n${shared.CONTACT_ACK_NOTE}`,
+    JSON.stringify(String(autoreply.body.text).slice(0, 80))
   );
+  check("the acknowledgement carries the not-monitored note", /not monitored/i.test(autoreply.body.text));
+  check("the acknowledgement names the way to add to the message", String(autoreply.body.text).includes(legal.SUPPORT_EMAIL));
   check(
-    "the notification recipient's own email is the support address",
-    notification.body.recipients.length === 1 &&
-      notification.body.recipients[0].email === legal.SUPPORT_EMAIL &&
-      typeof notification.body.recipients[0].id === "string" &&
-      notification.body.recipients[0].id.length > 0,
-    JSON.stringify(notification.body.recipients)
+    "the acknowledgement has no reply-to pointing at a person",
+    autoreply.body.reply_to === undefined,
+    String(autoreply.body.reply_to)
   );
+
+  // --- 3. the request carries nothing but the documented fields ------------
   check(
-    "the acknowledgement carries the submitter's own subject for its template",
-    autoreply.body.data.subject === GOOD.subject,
-    JSON.stringify(autoreply.body.data.subject)
-  );
-  check(
-    "the acknowledgement carries app_name ('CSEC Compass') for the template",
-    autoreply.body.data.app_name === "CSEC Compass",
-    JSON.stringify(autoreply.body.data.app_name)
-  );
-  check(
-    "neither trigger overrides from_name (the owner's 'No Reply' sender stands)",
-    !/from_name/.test(dataJson) && !/from_name/.test(JSON.stringify(autoreply.body.data))
-  );
-  check(
-    "no trigger payload smuggles a to_address / channel override / variables field",
-    !/to_address|channel_overrides|"variables"/.test(JSON.stringify(notification.body)) &&
-      !/to_address|channel_overrides|"variables"/.test(JSON.stringify(autoreply.body))
-  );
-  check(
-    "a trigger body carries only the two documented fields (recipients, data)",
-    JSON.stringify(Object.keys(notification.body).sort()) === JSON.stringify(["data", "recipients"]) &&
-      JSON.stringify(Object.keys(autoreply.body).sort()) === JSON.stringify(["data", "recipients"]),
+    "the notification body carries only the fields the provider documents",
+    JSON.stringify(Object.keys(notification.body).sort()) === JSON.stringify(["from", "reply_to", "subject", "text", "to"]),
     Object.keys(notification.body).join(",")
   );
   check(
-    "the route documents where a trigger CANNOT set the recipient or vars",
-    /no per-trigger `to_address`/i.test(apiSrc) && /Variables page/i.test(apiSrc)
+    "the acknowledgement body carries only the fields the provider documents",
+    JSON.stringify(Object.keys(autoreply.body).sort()) === JSON.stringify(["from", "subject", "text", "to"]),
+    Object.keys(autoreply.body).join(",")
   );
   check(
-    "the automatic reply has no reply-to pointing at a person",
-    autoreply.body.data.reply_to === undefined
+    "no template/channel leftovers ride along in a send",
+    !/to_address|channel_overrides|"variables"|recipients/.test(JSON.stringify(notification.body) + JSON.stringify(autoreply.body))
+  );
+  check(
+    "the route documents the provider it uses and why it switched",
+    /api\.resend\.com\/emails/.test(apiSrc) && /owner decision 2026-09-26/i.test(apiSrc)
+  );
+  check(
+    "the provider host is written once, as a constant (not re-typed per send)",
+    (apiSrc.match(/"https:\/\/api\.resend\.com\/emails"/g) || []).length === 1
   );
   check("the response reports the acknowledgement went out", res.body.acknowledged === true);
   check("the response is not cached", res.headers["cache-control"] === "no-store");
@@ -610,18 +619,18 @@ resetCalls();
   check("a padded name is still accepted", res.statusCode === 200 && res.body.ok === true, `${res.statusCode}`);
   check(
     "the notification carries the name trimmed, not padded",
-    notification.body.data.name === "Jane Smith",
-    JSON.stringify(notification.body.data.name)
+    String(notification.body.text).includes("Name: Jane Smith") &&
+      !String(notification.body.text).includes("Name:  Jane"),
+    String(notification.body.text).split("\n")[0]
   );
   check(
-    "the automatic reply carries the same trimmed name",
-    autoreply.body.data.name === "Jane Smith",
-    JSON.stringify(autoreply.body.data.name)
+    "the automatic reply is still the approved wording after a padded name",
+    autoreply.body.text === `${shared.CONTACT_ACK_BODY}\n\n${shared.CONTACT_ACK_NOTE}`
   );
 }
 
-// An over-long name must never reach Knock — the owner's table cell would be
-// unreadable, and the sender deserves to know before the message goes.
+// An over-long name must never reach the provider — the owner's notification
+// would be unreadable, and the sender deserves to know before the message goes.
 resetCalls();
 {
   const res = await call(postReq({ ...GOOD, name: "n".repeat(121) }, "10.2.2.1"));
@@ -666,9 +675,9 @@ resetCalls();
 resetCalls();
 {
   const res = await call(postReq({ ...GOOD, recipient: "attacker@evil.example" }, "10.3.1.1"));
-  const targets = calls.map((c) => JSON.stringify(c.body.recipients)).join(" ");
+  const targets = calls.map((c) => JSON.stringify(c.body.to)).join(" ");
   check("a body field cannot redirect the notification anywhere else", !targets.includes("evil.example"), targets);
-  check("the notification still goes to support", calls.some((c) => c.body.recipients[0].email === legal.SUPPORT_EMAIL));
+  check("the notification still goes to support", calls.some((c) => c.body.to[0] === legal.SUPPORT_EMAIL));
   check("that submission is still a normal success", res.statusCode === 200);
 }
 
@@ -702,10 +711,10 @@ resetCalls();
 section("the API route: upstream failure is reported, never dressed up");
 
 resetCalls();
-fetchImpl = async () => ({ ok: false, status: 500, text: async () => "knock is down" });
+fetchImpl = async () => ({ ok: false, status: 500, text: async () => "provider is down" });
 {
   const res = await call(postReq({ ...GOOD }, "10.6.0.1"));
-  check("a Knock 500 becomes a 502, not a success", res.statusCode === 502, `${res.statusCode}`);
+  check("a provider 500 becomes a 502, not a success", res.statusCode === 502, `${res.statusCode}`);
   check("the failure body never claims ok", res.body.ok !== true);
   check("the failure tells the sender to email directly", String(res.body.detail || "").includes(legal.SUPPORT_EMAIL));
   check("the automatic reply was not attempted after the notification failed", calls.length === 1, `${calls.length} calls`);
@@ -733,12 +742,37 @@ resetCalls();
   fetchImpl = async () => {
     n += 1;
     if (n === 1) return { ok: true, status: 200, text: async () => "" };
-    return { ok: false, status: 404, text: async () => "workflow not found" };
+    return { ok: false, status: 422, text: async () => "email rejected" };
   };
   const res = await call(postReq({ ...GOOD }, "10.6.2.1"));
   check("a delivered message stays a success when only the auto-reply fails", res.statusCode === 200 && res.body.ok === true, `${res.statusCode}`);
   check("…but the response admits the reply did not go out", res.body.acknowledged === false);
 }
+
+// ---------------------------------------------------------------------------
+// The provider that was failing is gone, not shadowed. The route used to trigger
+// two workflows through a channel that kept reporting the mail as undelivered
+// while the form said "sent"; the whole point of this PR is that the layer which
+// failed is no longer in the sending path. Any reappearance of it — a stale host,
+// a stale call, a stale key — is a regression, so it goes red here.
+section("the provider that was failing is gone, not shadowed");
+
+check("the route no longer names the old provider's API host", !/api\.knock\.app/.test(apiSrc));
+check("the route no longer calls a workflow trigger", !/triggerWorkflow/.test(apiSrc));
+check("the route no longer reads the old key name", !/KNOCK_API_KEY/.test(apiSrc));
+const staleRefs = [...walk("src"), ...walk("api")].filter((f) =>
+  /api\.knock\.app|KNOCK_API_KEY|triggerWorkflow/.test(readFileSync(join(root, f), "utf8"))
+);
+check("no file under src/ or api/ still reaches for the old provider", staleRefs.length === 0, staleRefs.join(", "));
+check(
+  "the route reads exactly one sending key, and it is the provider's own",
+  (apiSrc.match(/process\.env\.[A-Z0-9_]+/g) || []).every((v) => v === "process.env.RESEND_API_KEY"),
+  [...new Set(apiSrc.match(/process\.env\.[A-Z0-9_]+/g) || [])].join(", ")
+);
+check(
+  "the sending path is the route's own code, not a third-party SDK",
+  !/^import /m.test(apiSrc) && !/require\(/.test(apiSrc)
+);
 
 // ---------------------------------------------------------------------------
 section("no database, no storage");
