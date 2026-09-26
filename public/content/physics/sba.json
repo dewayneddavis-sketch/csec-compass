@@ -42,5 +42,248 @@
     "Calculated T squared values",
     "Graph with line of best fit",
     "Gradient and intercept calculation"
-  ]
+  ],
+  "completedSample": {
+    "title": "A complete, full-mark Physics SBA: how the load on a spring affects its extension, and finding the spring constant",
+    "viewOnlyNote": "For viewing and learning only. This is an original worked example written for CSEC Compass, not a real candidate's submission and not a CXC exemplar. Read it, study how each category is satisfied, then write your own investigation in your own words. This sample cannot be copied.",
+    "profile": [
+      {
+        "label": "Candidate",
+        "value": "Sample Candidate (invented)"
+      },
+      {
+        "label": "Centre",
+        "value": "Sample Secondary School (invented)"
+      },
+      {
+        "label": "Subject",
+        "value": "CSEC Physics - School-Based Assessment"
+      },
+      {
+        "label": "Submission",
+        "value": "One bound report, 12 pages, with the log sheet and the graph in an appendix"
+      }
+    ],
+    "categories": [
+      {
+        "section": "Planning and Designing",
+        "marks": "10",
+        "awarded": "10",
+        "comment": "A testable hypothesis, a named independent variable, a measured dependent variable, four controlled variables, a stated way of finding the zero, and a deliberate test beyond the expected range."
+      },
+      {
+        "section": "A&I",
+        "marks": "10",
+        "awarded": "10",
+        "comment": "Extension and extension per unit load are calculated from the means, the graph is a straight line through the origin up to 2.5 N, and the gradient is converted into a spring constant of 24.8 N/m with the deviation of the 3.0 N point explained."
+      },
+      {
+        "section": "ORR",
+        "marks": "10",
+        "awarded": "10",
+        "comment": "Three readings per load recorded to the nearest mm in a ruled table with units and a mean column, the zero reading taken before and after, and the graph labelled with axes, scales and units."
+      }
+    ],
+    "pages": [
+      {
+        "heading": "Cover page and contents",
+        "body": "Title: An investigation into the relationship between the load on a spring and the extension it produces, and the determination of the spring constant of the spring.",
+        "bullets": [
+          "Candidate: Sample Candidate (invented) - Class: Form 5P",
+          "Subject and teacher: CSEC Physics, SBA report",
+          "Date submitted: 20 March",
+          "Contents: Aim, Hypothesis, Variables, Apparatus, Method, Results, Sample calculation, Graph, Analysis, Discussion, Sources of error, Conclusion, Bibliography",
+          "Acknowledgement: laboratory technician for checking the masses and the metre rule against a standard"
+        ]
+      },
+      {
+        "heading": "Aim",
+        "body": "To determine how the extension of a spring depends on the load hanging from it, and to use the results to find the spring constant of the spring."
+      },
+      {
+        "heading": "Hypothesis",
+        "body": "Up to a certain load the extension of the spring will be directly proportional to the load, because within its elastic limit the atoms of the spring are pulled slightly further apart and the force each one exerts is proportional to the distance it has moved. A graph of extension against load should therefore be a straight line through the origin, and the reciprocal of its gradient will give the spring constant. Above the limit of proportionality the graph will curve and the spring will no longer obey Hooke's law."
+      },
+      {
+        "heading": "Variables",
+        "body": "One variable is changed deliberately, one is measured, and everything else is held constant so the result can be attributed to the load alone.",
+        "table": {
+          "caption": "Table 1: Variables and how each was controlled",
+          "columns": [
+            "Type of variable",
+            "Variable",
+            "How it was handled"
+          ],
+          "rows": [
+            [
+              "Independent",
+              "Load on the spring",
+              "Slotted masses of 50 g added one at a time from 50 g to 300 g; the load in newtons was calculated from W = mg with g taken as 10 N/kg"
+            ],
+            [
+              "Dependent",
+              "Extension of the spring",
+              "The position of the pointer read against a metre rule to the nearest mm, then the unloaded reading subtracted"
+            ],
+            [
+              "Controlled",
+              "The spring",
+              "The same spring used throughout, and never stretched beyond 300 g so that it was not permanently damaged"
+            ],
+            [
+              "Controlled",
+              "Zero reading",
+              "The pointer position was read with no load before the first reading and again after the last load was removed, to check the spring returned to its natural length"
+            ],
+            [
+              "Controlled",
+              "Line of sight",
+              "Every reading was taken with the eye level with the pointer, so that parallax could not make the reading too high or too low"
+            ],
+            [
+              "Controlled",
+              "Time the load was left on",
+              "Each load was left hanging for 30 seconds and the reading taken while it was steady, so that the spring was not still moving"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Apparatus and materials",
+        "body": "The apparatus was chosen so that the only quantity measured was the position of the pointer, and so that the rule and the spring stayed in the same relative position all through the experiment.",
+        "bullets": [
+          "Steel spring with a hook and a pointer attached",
+          "Retort stand, boss and clamp holding the spring so that it hung freely",
+          "Metre rule clamped vertically beside the spring, with the 0 mm mark at the top",
+          "Slotted masses: six 50 g discs, with a hanger (masses checked against a standard balance)",
+          "Stop-clock, set square or plumb line to check that the rule was vertical",
+          "Safety: masses were hung over the bench, not over anyone's feet, and the clamp was checked before every load was added"
+        ]
+      },
+      {
+        "heading": "Method",
+        "body": "1. The spring was hung from the retort stand and the metre rule was clamped vertically beside it, with the 0 mm mark level with the top of the rule and the scale facing the observer.\n2. With no load on the spring except the hanger, the position of the pointer was read against the rule to the nearest mm and recorded as the zero (unloaded) reading.\n3. Fifty grams was added to the hanger, the load was left for 30 seconds to become steady, and the new pointer position was read with the eye level with the pointer.\n4. The load was increased in steps of 50 g up to 250 g, and at every step the pointer position was read and recorded in the table as it was taken.\n5. Steps 3 and 4 were repeated twice more from the start, so that three sets of readings were obtained for each load.\n6. A final load of 300 g was added on purpose, to test what happens to the spring beyond the loads where the extension had been steady.\n7. All the masses were then removed and the pointer position was read again; it had returned to the unloaded reading, so the spring had not been stretched permanently.\n8. For each load the extension was found by subtracting the unloaded reading from the loaded reading, and the mean of the three extensions was calculated."
+      },
+      {
+        "heading": "Results",
+        "body": "With no load the pointer stood at 12.0 cm, and it returned to 12.0 cm when every mass had been removed, so there was no permanent stretch. Each extension below is therefore quoted from that same zero. The readings were taken to the nearest millimetre (0.1 cm) because the smallest division on the metre rule is 1 mm.",
+        "table": {
+          "caption": "Table 2: Extension of the spring for each load, three trials, with the mean extension and the extension per unit load",
+          "columns": [
+            "Load (N)",
+            "Mass (g)",
+            "Trial 1 (cm)",
+            "Trial 2 (cm)",
+            "Trial 3 (cm)",
+            "Mean extension (cm)",
+            "Extension per unit load (cm/N)"
+          ],
+          "rows": [
+            [
+              "0.5",
+              "50",
+              "2.0",
+              "2.1",
+              "1.9",
+              "2.0",
+              "4.00"
+            ],
+            [
+              "1.0",
+              "100",
+              "4.1",
+              "4.0",
+              "3.9",
+              "4.0",
+              "4.00"
+            ],
+            [
+              "1.5",
+              "150",
+              "6.1",
+              "6.0",
+              "6.2",
+              "6.1",
+              "4.07"
+            ],
+            [
+              "2.0",
+              "200",
+              "8.0",
+              "8.1",
+              "7.9",
+              "8.0",
+              "4.00"
+            ],
+            [
+              "2.5",
+              "250",
+              "10.1",
+              "10.0",
+              "10.2",
+              "10.1",
+              "4.04"
+            ],
+            [
+              "3.0 - beyond the limit of proportionality",
+              "300",
+              "13.4",
+              "13.6",
+              "13.5",
+              "13.5",
+              "4.50"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Sample calculation",
+        "body": "Load for a 250 g mass:\nW = mg = 0.250 kg x 10 N/kg = 2.5 N.\n\nMean extension at 2.0 N:\nmean = (8.0 + 8.1 + 7.9) / 3 = 24.0 / 3 = 8.0 cm.\n\nSpring constant from that single load, with the extension converted to metres:\n8.0 cm = 0.080 m\nk = F / x = 2.0 N / 0.080 m = 25.0 N/m.\n\nSpring constant from the graph gradient (see the graph page):\ngradient = 4.04 cm/N = 0.0404 m/N\nk = 1 / gradient = 1 / 0.0404 m/N = 24.8 N/m.\n\nThe two ways of finding the spring constant agree to within about 2 per cent, which is the agreement expected from readings taken to the nearest millimetre."
+      },
+      {
+        "heading": "Graph",
+        "body": "A graph of mean extension (cm) against load (N) was plotted on graph paper. The x-axis was labelled 'Load / N' with a scale of 1 cm = 0.25 N running from 0 to 3.0, and the y-axis was labelled 'Mean extension / cm' with a scale of 1 cm = 1.0 cm running from 0 to 14. Small crosses were used for the points, a line of best fit was drawn through the origin, and the 300 g point was marked differently because it does not lie on the line.\n\nThe first five points lie on a straight line that passes through the origin, so over 0 to 2.5 N the extension is proportional to the load. The gradient of the line was found from a large triangle: rise = 10.1 cm and run = 2.5 N, so the gradient is 4.04 cm/N, which is 0.0404 m/N in SI units.\n\nThe point at 3.0 N (mean extension 13.5 cm) lies well above the line: it would have needed to be about 12.0 cm to stay on it. It was plotted but deliberately not used to draw the line of best fit, because it is beyond the point where the extension stopped being proportional to the load."
+      },
+      {
+        "heading": "Analysis and interpretation",
+        "body": "The mean extension grows by about 2.0 cm for every 0.5 N added: 2.0 cm at 0.5 N, 4.0 cm at 1.0 N, 6.1 cm at 1.5 N, 8.0 cm at 2.0 N and 10.1 cm at 2.5 N. The extension per unit load column is constant at about 4.04 cm/N, and the values do not drift upwards or downwards as the load grows.\n\nDividing one reading by the other shows the same thing: 2.0 N gives twice the extension of 1.0 N (8.0 cm against 4.0 cm), and 2.5 N gives twice the extension of 1.25 N. The graph makes it visible: a single straight line through the origin fits the first five points.\n\nThe 3.0 N reading does not fit the pattern. Its mean extension of 13.5 cm is 1.4 cm more than the line predicts, and its extension per unit load has risen to 4.50 cm/N, well above the constant 4.04 cm/N. That change is the evidence that the limit of proportionality for this spring lies between 2.5 N and 3.0 N.\n\nThe hypothesis is accepted for loads up to 2.5 N, and the spring constant of the spring is 24.8 N/m."
+      },
+      {
+        "heading": "Discussion",
+        "body": "The results agree with Hooke's law, which states that the extension of a spring is directly proportional to the load producing it, provided the limit of proportionality is not exceeded. Within the elastic limit the atoms of the metal are pulled a little further apart from each other, and the force between them increases in proportion to the distance moved, so doubling the load doubles the extension. The spring constant k is the force needed to stretch the spring by one metre, and from the gradient it is 24.8 N/m, which means roughly 0.25 N for every centimetre.\n\nThe 3.0 N point shows what happens past the limit of proportionality. Once the load is great enough, some of the metal atoms are pulled so far apart that they begin to slip past each other instead of springing back. Beyond that point the extension grows faster than the load, the graph curves upwards, and the material has begun to behave plastically. The experiment was stopped at 300 g for that reason, and the pointer did return to 12.0 cm when the masses were removed, which shows that the spring had not yet been permanently deformed.\n\nTwo further points deserve to be noticed. First, the line passes through the origin, which is the physical meaning of the unloaded reading having been subtracted: with no load there is no extension. Second, the two independent ways of finding k - a single reading converted to metres and the gradient of the graph - agree to within 2 per cent, which is a useful check that no single reading is carrying the result.\n\nThe conclusion is limited to loads up to 2.5 N and to this particular spring. A stiffer spring would give a smaller gradient and a larger value of k; a softer spring would give the opposite."
+      },
+      {
+        "heading": "Sources of error and limitations",
+        "body": "The weaknesses of the investigation were identified honestly, with the effect each one could have had on the result.",
+        "bullets": [
+          "Each reading was taken to the nearest mm, so every extension could be out by up to 0.1 cm; on the smallest extension of 2.0 cm that is 5 per cent, and on the largest it is only 1 per cent.",
+          "The masses are sold as 50 g but each could be out by a gram or so, which is up to 2 per cent of the smallest load.",
+          "The spring was left to settle for 30 seconds but could still have been swinging slightly when the pointer was read.",
+          "The metre rule was clamped by eye; if it was not perfectly vertical the extensions would all be slightly too large.",
+          "The 3.0 N point was taken on purpose to find the limit of proportionality, but a single load cannot locate that limit precisely - it only shows it lies between 2.5 N and 3.0 N.",
+          "Improvement: add smaller masses in the region of 2.5 N to 3.0 N to locate the limit of proportionality, use a travelling microscope or a vernier scale on the pointer for more precise readings, and use ten 20 g masses instead of six 50 g masses so the readings are more closely spaced."
+        ]
+      },
+      {
+        "heading": "Conclusion",
+        "body": "For loads up to 2.5 N the extension of the spring was directly proportional to the load, so the spring obeyed Hooke's law. The mean extension rose steadily from 2.0 cm at 0.5 N to 10.1 cm at 2.5 N, the extension per unit load stayed constant at about 4.04 cm/N, and the graph of extension against load was a straight line through the origin. Its gradient of 4.04 cm/N gives a spring constant of 24.8 N/m. At 3.0 N the extension was larger than the line predicted (13.5 cm instead of about 12.0 cm), which shows that the limit of proportionality of this spring lies between 2.5 N and 3.0 N."
+      },
+      {
+        "heading": "Bibliography",
+        "body": "Sources are listed in a consistent format.",
+        "bullets": [
+          "CSEC Physics syllabus, section on forces, Hooke's law and the spring constant.",
+          "CSEC Physics data sheet: value of the acceleration due to gravity used in W = mg.",
+          "School laboratory handbook: safe handling of slotted masses and retort stands.",
+          "Class notes and practical worksheets on Hooke's law, elastic deformation and the limit of proportionality."
+        ]
+      }
+    ],
+    "examinerNotes": [
+      "Each category of the Task Breakdown is answered where the examiner expects it: the hypothesis is in its own section, the variables are tabulated with four controlled ones named, the method is numbered, the readings are in a ruled table with a mean and an extension-per-unit-load column, and the analysis calculates before it explains.",
+      "The unloaded reading taken before and after is the control in this practical, and it does two jobs at once: it defines the zero for every extension, and its return to 12.0 cm proves the spring was not permanently stretched.",
+      "The deliberate 3.0 N reading is what separates this report from a routine one. It shows the limit of proportionality instead of assuming the line continues, and the report draws the line of best fit through the first five points only, then explains why.",
+      "The spring constant is found twice - from one load converted into metres and from the gradient of the graph - and the two answers are compared. Candidate, centre and teacher details are invented placeholders. Write your own investigation, in your own words, with your own readings."
+    ]
+  }
 }
