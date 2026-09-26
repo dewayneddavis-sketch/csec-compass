@@ -15,3 +15,7 @@
    own spacing rather than a literal " · " inside the markup. */
 .app-footer-sep { margin: 0 0.5rem; color: #d1d5db; }
 .app-footer { text-align: center; padding: 2rem 1.5rem; color: #9ca3af; font-size: 0.85rem; border-top: 1px solid #e5e7eb; background: #fff; }
+/* The footer's Instagram link (owner addition 2026-09-26): the shared
+   <InstagramLink>, sized to sit in the small-print link row. */
+.app-footer-instagram { color: #0e7490; font-size: 0.8rem; vertical-align: middle; }
+.app-footer-instagram .instagram-link-icon { width: 15px; height: 15px; }
