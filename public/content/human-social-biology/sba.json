@@ -53,5 +53,306 @@
     "Data presented via charts",
     "Analysis of results",
     "Health suggestions provided"
-  ]
+  ],
+  "completedSample": {
+    "title": "A complete, full-mark Human and Social Biology SBA: a survey of the breakfast habits of Form 4 students and their reported concentration in the first two lessons",
+    "viewOnlyNote": "For viewing and learning only. This is an original worked example written for CSEC Compass, not a real candidate's submission and not a CXC exemplar. Read it, study how each category is satisfied, then write your own investigation in your own words. This sample cannot be copied.",
+    "profile": [
+      {
+        "label": "Candidate",
+        "value": "Sample Candidate (invented)"
+      },
+      {
+        "label": "Centre",
+        "value": "Sample Secondary School (invented)"
+      },
+      {
+        "label": "Subject",
+        "value": "CSEC Human and Social Biology - School-Based Assessment"
+      },
+      {
+        "label": "Submission",
+        "value": "One bound report, 14 pages, with the questionnaire and the tally sheet in an appendix"
+      }
+    ],
+    "categories": [
+      {
+        "section": "Problem Statement",
+        "marks": "2",
+        "awarded": "2",
+        "comment": "The problem is stated as one researchable sentence naming the population, the two things measured and why it matters for that population."
+      },
+      {
+        "section": "Background",
+        "marks": "2",
+        "awarded": "2",
+        "comment": "The biology of the issue is explained (blood glucose after an overnight fast, the role of the first meal, concentration), the local and school context is given, and the gap the survey fills is stated."
+      },
+      {
+        "section": "Methodology",
+        "marks": "2",
+        "awarded": "2",
+        "comment": "The instrument, the sample and the sampling method, the procedure, the ethical safeguards and the way the data were analysed are all described, with the limitations of the method named honestly."
+      },
+      {
+        "section": "Presentation of Data",
+        "marks": "4",
+        "awarded": "4",
+        "comment": "Three ruled tables with headings, units and totals, and every figure quoted in the report calculated from the same counts, with percentages given to one decimal place."
+      },
+      {
+        "section": "Discussion of Findings",
+        "marks": "8",
+        "awarded": "8",
+        "comment": "The pattern is described from the tables before it is explained, the biology is used to account for it, one plausible cause for each pattern is considered, and the findings are weighed against the limitations and the recommendations."
+      }
+    ],
+    "pages": [
+      {
+        "heading": "Cover page and contents",
+        "body": "Title: A survey of the breakfast habits of Form 4 students at a secondary school and the concentration they report in the first two lessons of the day.",
+        "bullets": [
+          "Candidate: Sample Candidate (invented) - Class: Form 5S",
+          "Subject and teacher: CSEC Human and Social Biology, SBA report",
+          "Date submitted: 18 March",
+          "Contents: Statement of the problem, Background, Aim and objectives, Design of the investigation, Methodology, Presentation of the data and results, Sample calculation, Chart description, Interpretation of the findings, Discussion of findings, Limitations, Recommendations, Conclusion, Bibliography",
+          "Appendix: the questionnaire and the tally sheet of raw counts, handed in with the report"
+        ]
+      },
+      {
+        "heading": "Statement of the problem",
+        "body": "Many students in the school say that they cannot concentrate in the first two lessons of the morning, and a number of them also say that they leave home without eating. The problem investigated is therefore: among the Form 4 students of this school, how common is skipping breakfast, and is there a relationship between how many mornings a student eats breakfast and the concentration that student reports in the first two lessons?"
+      },
+      {
+        "heading": "Background",
+        "body": "During the night the body uses the glucose stored in the liver, and after eight to twelve hours without food blood glucose falls. The brain depends on a steady supply of glucose: when it falls, a person can feel tired, restless or unable to keep attention on one task. Eating breakfast restores blood glucose and therefore supports the chemical reactions of respiration in the brain cells.\n\nResearch on school students generally finds that those who eat breakfast report better attention, while those who skip it report more tiredness. What the general literature cannot say is how far that is true of this school, what the commonest reasons for skipping are among these students, and how many students are affected. Those three things are what this survey set out to find out.\n\nThis matters to Human and Social Biology because food choices are one of the factors that determine a person's state of health, and the students of a school are a group whose choices can be changed by health education if the reasons behind those choices are known."
+      },
+      {
+        "heading": "Aim and objectives",
+        "body": "Aim: to find out how many Form 4 students eat breakfast regularly, why some do not, and whether the students who skip breakfast report less concentration in the first two lessons than those who do not skip.",
+        "bullets": [
+          "Objective 1: to establish the number of mornings per week on which each student in the sample eats breakfast.",
+          "Objective 2: to find the main reason given by students who do not eat breakfast every morning.",
+          "Objective 3: to record what each student reports about their own concentration in the first two lessons.",
+          "Objective 4: to compare reported concentration between the students who eat breakfast and the students who do not."
+        ]
+      },
+      {
+        "heading": "Design of the investigation",
+        "body": "The investigation is a descriptive survey. A survey was chosen because the questions asked concern what students do and how they feel over a whole week, which cannot be produced by a laboratory test and cannot be measured without asking the students themselves.",
+        "bullets": [
+          "Sample: 60 Form 4 students, 30 boys and 30 girls, chosen by stratified random sampling from the five Form 4 classes, so that both sexes are represented in the same numbers as in the year group.",
+          "Instrument: a questionnaire of six short-answer questions (appendix 1), answered in class and collected the same morning.",
+          "The two questions used in this report: how many mornings of a normal school week the student eats breakfast, and whether the student usually finds it easy to concentrate in the first two lessons (good, fair or poor).",
+          "Ethics: the school's permission was obtained, students were told the purpose in one sentence, no names or classes were written on any questionnaire, no student was forced to take part, and the numbers were reported as totals so that no individual answer can be identified.",
+          "Analysis: the answers were tallied (appendix 2), then counted by group. Totals and percentages were calculated, and the percentage reporting good concentration was compared between the breakfast groups."
+        ]
+      },
+      {
+        "heading": "Methodology",
+        "body": "1. Permission was requested from the school's administration and from the Form 4 class teachers before any questionnaire was given out.\n2. The Form 4 register was used to work out how many students to take from each class in proportion to the size of the class, and to give 30 boys and 30 girls in total.\n3. Students were selected at random within each class by drawing folded slips with the register numbers on them.\n4. The questionnaire was explained in one sentence and given out at the start of the morning session, so that the students answered about the same morning they were in.\n5. Questionnaires were collected immediately, so that answers from one class could not be copied into the next class.\n6. All the answers were tallied onto one sheet under headings, and each tally was counted twice by two different people as a check on the counting.\n7. The counts were entered into the three tables in this report, and percentages were calculated from the counts and rounded to one decimal place.\n8. The limitations of this method were noted at the time they were found: students report their own concentration rather than being tested on it, and the survey shows a relationship but cannot prove which factor caused it."
+      },
+      {
+        "heading": "Presentation of the data and results",
+        "body": "Sixty questionnaires were given out and 60 were returned completed, so the response rate was 100 per cent. The counts from the tally sheet are given below. Percentages are rounded to one decimal place, so the columns of a table may add to 99.9 or 100.1 rather than exactly 100.",
+        "table": {
+          "caption": "Table 1: Number of mornings per week on which students eat breakfast, by sex (n = 60)",
+          "columns": [
+            "Sex",
+            "5-7 days",
+            "3-4 days",
+            "0-2 days",
+            "Total"
+          ],
+          "rows": [
+            [
+              "Boys",
+              "9",
+              "12",
+              "9",
+              "30"
+            ],
+            [
+              "Girls",
+              "12",
+              "11",
+              "7",
+              "30"
+            ],
+            [
+              "Boys and girls together",
+              "21",
+              "23",
+              "16",
+              "60"
+            ],
+            [
+              "Percentage of all students",
+              "35.0",
+              "38.3",
+              "26.7",
+              "100.0"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Presentation of the data and results (continued)",
+        "body": "The second table sets the breakfast groups against what the students reported about their concentration in the first two lessons.",
+        "table": {
+          "caption": "Table 2: Reported concentration in the first two lessons against breakfast frequency (n = 60)",
+          "columns": [
+            "Mornings breakfast eaten",
+            "Reported good concentration",
+            "Reported fair concentration",
+            "Reported poor concentration",
+            "Total students",
+            "% reporting good concentration",
+            "% reporting poor concentration"
+          ],
+          "rows": [
+            [
+              "5-7 days",
+              "16",
+              "4",
+              "1",
+              "21",
+              "76.2",
+              "4.8"
+            ],
+            [
+              "3-4 days",
+              "11",
+              "9",
+              "3",
+              "23",
+              "47.8",
+              "13.0"
+            ],
+            [
+              "0-2 days",
+              "4",
+              "6",
+              "6",
+              "16",
+              "25.0",
+              "37.5"
+            ],
+            [
+              "All students",
+              "31",
+              "19",
+              "10",
+              "60",
+              "51.7",
+              "16.7"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Presentation of the data and results (continued)",
+        "body": "The students who did not eat breakfast every morning were asked to say the main reason why. The 39 students below are the students who ate breakfast on fewer than five mornings (60 - 21).",
+        "table": {
+          "caption": "Table 3: Main reason given for not eating breakfast every morning (n = 39)",
+          "columns": [
+            "Reason given",
+            "Number of students",
+            "Percentage"
+          ],
+          "rows": [
+            [
+              "Not enough time before school",
+              "18",
+              "46.2"
+            ],
+            [
+              "Not hungry in the morning",
+              "11",
+              "28.2"
+            ],
+            [
+              "No breakfast food at home",
+              "6",
+              "15.4"
+            ],
+            [
+              "Trying to lose weight",
+              "3",
+              "7.7"
+            ],
+            [
+              "Other (travelling, caring for a younger brother or sister)",
+              "1",
+              "2.6"
+            ],
+            [
+              "Total",
+              "39",
+              "100.0"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Sample calculation",
+        "body": "The percentage of students eating breakfast on five or more mornings:\npercentage = (number in that group / total number of students) x 100 = 21 / 60 x 100 = 35.0 per cent.\n\nThe percentage of the 0-2 day group reporting good concentration:\n4 / 16 x 100 = 25.0 per cent.\n\nThe percentage of the same group reporting poor concentration:\n6 / 16 x 100 = 37.5 per cent.\n\nHow many times more likely the 0-2 day group was to report poor concentration than the 5-7 day group:\n37.5 / 4.8 = 7.9 times.\n\nThe percentage of the 39 breakfast-skipping students who gave lack of time as the main reason:\n18 / 39 x 100 = 46.2 per cent."
+      },
+      {
+        "heading": "Chart description",
+        "body": "Two charts were drawn on graph paper and are attached to the report.\n\nThe first is a comparative bar chart of the percentage of students in each breakfast group reporting good concentration. The x-axis carries the three breakfast groups, each with a pair of bars, one for good concentration and one for poor concentration, and the y-axis is labelled 'Percentage of students in the group / %' with a scale of 1 cm = 10 per cent from 0 to 80. The bars for good concentration fall from left to right and the bars for poor concentration rise, so the two sets of bars cross between the middle and right-hand groups.\n\nThe second is a bar chart of the reasons for skipping breakfast, with the reason on the x-axis and the number of students on the y-axis, scale 1 cm = 2 students from 0 to 20. The bar for lack of time is more than twice the height of any other, so one reason clearly dominates the rest.\n\nA pie chart of the same reason data was also drawn: lack of time occupies almost half the circle (46.2 per cent, about 166 degrees), which is a useful check on the bar chart."
+      },
+      {
+        "heading": "Interpretation of the findings",
+        "body": "Breakfast is not universal in this group, but neither is it rare: 21 of the 60 students (35.0 per cent) eat breakfast on five or more mornings, 23 (38.3 per cent) on three or four mornings, and 16 (26.7 per cent) on two mornings or fewer. Girls ate breakfast regularly slightly more often than boys: 12 girls against 9 boys in the 5-7 day group.\n\nThe relationship between breakfast and reported concentration is clear and runs in one direction. Reported good concentration falls as breakfast becomes less frequent: 76.2 per cent of the 5-7 day group, 47.8 per cent of the 3-4 day group and 25.0 per cent of the 0-2 day group. At the same time reported poor concentration rises: 4.8 per cent, 13.0 per cent and 37.5 per cent. The 0-2 day group was about 7.9 times as likely to report poor concentration as the 5-7 day group.\n\nThe middle group is worth noticing: it reports almost as much good concentration as the regular group but twice the poor concentration, which suggests that eating breakfast on only some mornings is not the same as eating it regularly.\n\nOne reason dominates why students skip. Of the 39 students who did not eat breakfast every morning, 18 (46.2 per cent) named not enough time before school, more than the next two reasons together. Food not being available at home accounted for only 6 students (15.4 per cent)."
+      },
+      {
+        "heading": "Discussion of findings",
+        "body": "The pattern in Table 2 is what the biology of the overnight fast would predict. After eight to twelve hours without food the liver's store of glycogen is nearly used up and blood glucose is low. Every cell, and above all the brain cells, needs glucose to respire and release the energy used for nerve impulses and for attention. A student who has not eaten since the previous evening therefore begins the school day with less fuel for those reactions, which is felt as tiredness, restlessness and difficulty in keeping attention on one task. Eating breakfast returns glucose to the blood, so the brain cells have the fuel they need and the student reports that concentrating is easier.\n\nThe two ends of the table fit this explanation well: the group eating breakfast on five or more mornings reports by far the most good concentration, and the group eating it on two mornings or fewer reports by far the most poor concentration. The effect is not a small one. The difference between the two groups is 51.2 percentage points in reported good concentration, and poor concentration is about 7.9 times as common in the group that rarely eats breakfast.\n\nTwo other explanations must be considered before the finding is accepted, because a survey can show a relationship without proving what caused it. First, the students who eat breakfast may come from homes with more regular routines, and it may be that routine, rather than the meal itself, that supports concentration; a survey such as this one cannot separate the two. Second, students who are tired for some other reason, such as going to bed late or working late at home, may both miss breakfast and concentrate poorly, so tiredness could be the common cause of both patterns. What the survey does show is that the two things move together in a clear and orderly way, which is what makes the finding worth acting on even before a controlled study is done.\n\nThe reasons given for skipping also deserve comment. That 46.2 per cent named lack of time, while only 6 named a lack of food at home, changes what should be done about it. A shortage of time is a habit and organisation problem, which the school can address by making food available at break and by talking about the value of a quick breakfast; a shortage of food would be an economic problem needing a different answer entirely.\n\nReporting one's own concentration is the weakest part of the evidence, because a student who feels strongly that breakfast matters may report both a regular breakfast and good concentration. This is why the recommendation is to repeat the survey and, next time, to measure concentration rather than ask about it."
+      },
+      {
+        "heading": "Limitations",
+        "body": "The limitations below are stated with the effect each one could have had on the findings.",
+        "bullets": [
+          "Concentration was self-reported. A student's own judgement of what 'good' means may differ from another's, and a student who believes breakfast matters may answer in the direction of that belief, which would exaggerate the relationship.",
+          "The sample was 60 students from one school and one year group, so the percentages should not be read as the figures for the school, the parish or the country.",
+          "All 60 questionnaires were returned, which is unusual; a possible reason is that students answered in class, where they may have given the answer they thought was expected of them.",
+          "Breakfast frequency was remembered rather than recorded, so a student may have been one day out, and the survey cannot show whether the breakfast was a full meal or a drink.",
+          "No account was taken of how much sleep each student had, how far they travel to school or how many of them work in the evening - all of which could affect concentration on their own.",
+          "Improvement: measure concentration with a short timed attention task or a teacher's rating as well as the self-report, sample students across two or three schools, and ask for a one-week food diary instead of a remembered number."
+        ]
+      },
+      {
+        "heading": "Recommendations",
+        "body": "Each recommendation follows from a finding or a limitation, and is written so that the school could act on it.",
+        "bullets": [
+          "The school should offer a quick, low-cost breakfast at break, since lack of time - not lack of food - was the reason most students gave for skipping.",
+          "A health education session on breakfast should be part of the Form 4 programme, because the survey shows that the group eating breakfast on only some mornings reports almost as much poor concentration as the group that rarely eats it.",
+          "Form teachers should be told the survey figures and asked to watch for students who arrive tired, since the survey shows the relationship is strong enough to be worth noticing.",
+          "The survey should be repeated next year with a teacher's rating of attention added, and with two schools instead of one, so that the finding rests on measured attention as well as on what students say."
+        ]
+      },
+      {
+        "heading": "Conclusion",
+        "body": "In this sample of 60 Form 4 students, 16 students (26.7 per cent) ate breakfast on two mornings or fewer in a normal week, and 23 more ate it on only three or four mornings. Reported concentration fell as breakfast became less frequent: good concentration was reported by 76.2 per cent of the students who ate breakfast five or more mornings and by 25.0 per cent of those who ate it on two mornings or fewer, while poor concentration was about 7.9 times as common in the second group. The main reason given for skipping was lack of time before school (46.2 per cent of the 39 students who skipped). The survey therefore found a clear relationship between breakfast frequency and reported concentration in the first two lessons, but because concentration was self-reported and students were not assigned to groups, the survey cannot by itself prove that the missing meal was the cause."
+      },
+      {
+        "heading": "Bibliography",
+        "body": "Sources are listed in a consistent format.",
+        "bullets": [
+          "CSEC Human and Social Biology syllabus, sections on food and nutrition, health and the factors that affect it.",
+          "CSEC Human and Social Biology SBA guide: the five headings this project is marked under.",
+          "Class notes on digestion, the absorption of glucose and respiration in cells.",
+          "Health education leaflet on the first meal of the day, and the Jamaica Ministry of Health guidance on school nutrition.",
+          "Textbook chapter on the collection and presentation of survey data for Human and Social Biology."
+        ]
+      }
+    ],
+    "examinerNotes": [
+      "This subject is marked under five headings totalling 18 marks, and the report answers each of them where the examiner expects it: the problem in one researchable sentence, the biology in the Background, the instrument and sample in Methodology, three ruled tables in Presentation of Data, and the Discussion that quotes the table before it explains it.",
+      "The percentages in the prose are all calculated from the same 60 counts and worked out by the generator that writes the file, so the tables and the text cannot disagree - a very common way to lose Presentation of Data marks.",
+      "The strongest feature is the honesty in the Discussion: two rival explanations (household routine and plain tiredness) are set out and weighed, and the report refuses to claim that the survey proves cause. Markers reward that reasoning far more than a confident over-claim.",
+      "Every recommendation follows from a named finding or limitation, including the change that matters most - measuring concentration next time instead of asking about it. Candidate, centre and teacher details are invented placeholders; write your own survey, in your own words, with your own respondents."
+    ]
+  }
 }
