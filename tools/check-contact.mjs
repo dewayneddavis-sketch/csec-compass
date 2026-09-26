@@ -490,6 +490,25 @@ delete process.env.RESEND_API_KEY;
     logged("error", /RESEND_API_KEY/) && logged("error", /must not claim success/)
   );
 }
+// The required secret is RESEND_API_KEY (owner-confirmed 2026-09-26). A variable
+// left over from the old provider may exist in some environment and may be
+// deleted as "unused" — the form must not depend on it, so with the provider's
+// own key missing a set KNOCK_API_KEY must still be a 503 with nothing sent.
+// (The old name must not appear in the route at all; that is asserted in the
+// "the provider that was failing is gone" section below.)
+process.env.KNOCK_API_KEY = "leftover_from_the_old_provider";
+resetCalls();
+{
+  const res = await call(postReq({ ...GOOD }, "10.1.0.9"));
+  check(
+    "RESEND_API_KEY missing → 503 even when the old Knock-named variable is set",
+    res.statusCode === 503,
+    `got ${res.statusCode}`
+  );
+  check("…and that submission still sends nothing", calls.length === 0, `${calls.length} calls`);
+  check("…and it still never claims ok", res.body.ok !== true && typeof res.body.error === "string");
+}
+delete process.env.KNOCK_API_KEY;
 
 // ---------------------------------------------------------------------------
 section("the API route: a valid submission sends both emails");
