@@ -1,3 +1,7 @@
+// Vercel Serverless API — revision planner sync (the planner handler)
+// GET/POST /api/planner/sync — served by api/sync.js through a vercel.json
+// rewrite. This module lives in _lib/ so it costs nothing against Vercel's
+// 12-function Hobby cap; the handler below is the original one, unchanged.
 // Single Serverless Function for the revision planner (one api/planner/*.js
 // file total — merged here to stay under Vercel's 12-function Hobby cap):
 //

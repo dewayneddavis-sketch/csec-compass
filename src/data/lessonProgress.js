@@ -137,7 +137,8 @@ export function setSyncSession(session) {
   syncSession = session && session.access_token ? session : null;
 }
 
-/** The exact body api/progress/sync.js expects. Exported so it can be asserted. */
+/** The exact body the progress sync handler expects (api/_lib/sync-progress.js,
+ * served at /api/progress/sync through api/sync.js). Exported so it can be asserted. */
 export function progressSyncPayload(subjectId, progress) {
   const value = normalizeProgress(progress);
   return {
