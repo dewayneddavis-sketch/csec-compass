@@ -1298,6 +1298,102 @@ export const lessonSets = {
       { id: "cw6", target: "Judge against criteria and conclude", label: "Evaluate" },
     ],
     },
+    // ------------------------------------------------------------------
+    // PRESCRIBED TEXTS - the 2026 gap module. One topic-matched set per new
+    // lesson; the 18 older lessons keep the sets they already had.
+    // Twelfth Night - the main plot in order.
+    "eb-l7-1": {
+    title: "Twelfth Night: the Main Plot in Order",
+    subtitle: "Drag the beats of Viola's story into the order Shakespeare gives them.",
+    kind: "order",
+    items: [
+      { id: "o1", label: "Viola is shipwrecked in Illyria and believes her twin brother Sebastian has drowned", order: 1 },
+      { id: "o2", label: "Viola disguises herself as the young man Cesario and enters Duke Orsino's service", order: 2 },
+      { id: "o3", label: "Orsino sends Cesario to plead his love to the Countess Olivia", order: 3 },
+      { id: "o4", label: "Olivia falls in love with the messenger instead of the Duke", order: 4 },
+      { id: "o5", label: "Sir Toby, Maria and Feste trick Malvolio into believing that Olivia loves him", order: 5 },
+      { id: "o6", label: "Sebastian arrives with Antonio and the twins are mistaken for one another", order: 6 },
+      { id: "o7", label: "The twins are seen together, the confusion is resolved and the marriages are arranged", order: 7 },
+    ],
+    },
+    // Reading a trickster play - match each part of the study map to the question it answers.
+    "eb-l7-2": {
+    title: "Reading a Trickster Play",
+    subtitle: "Match each part of your study map to the question about the play it answers.",
+    kind: "match",
+    pairs: [
+      { id: "tk1", target: "What actually happens, in what order, and who wins or loses each encounter?", label: "A one-line summary of every scene" },
+      { id: "tk2", target: "Who is being tricked, who is doing the tricking, and why does the audience take sides?", label: "The characters and what each one wants" },
+      { id: "tk3", target: "Where does the play get its dramatic irony, and how is the irony used for comedy?", label: "Moments the audience knows more about than a character does" },
+      { id: "tk4", target: "How does the play draw on song, dance, storytelling and direct address?", label: "Uses of folk performance and stagecraft" },
+      { id: "tk5", target: "Which evidence supports a claim about cleverness, survival or community?", label: "Twelve to fifteen short quotations under two or three themes" },
+      { id: "tk6", target: "How do you turn knowledge of the play into an argument worth 25 marks?", label: "A written position on what the play finally says" },
+    ],
+    },
+    // The poem fact file - match each part of the card to the planning question it answers.
+    "eb-l7-3": {
+    title: "The Poem Fact File",
+    subtitle: "Match each part of a poem's fact file to the planning question it answers.",
+    kind: "match",
+    pairs: [
+      { id: "pf1", target: "What is the poem about, and who wrote it?", label: "Title, poet and subject in one sentence" },
+      { id: "pf2", target: "How is the poem shaped on the page, and what does that shape do?", label: "Form: stanzas, line lengths, rhyme" },
+      { id: "pf3", target: "Whose experience is being reported, and how close to it does the speaker stand?", label: "Voice: who speaks and from how far" },
+      { id: "pf4", target: "Which techniques carry the meaning, and what do they make the reader feel?", label: "Four or five devices, each with its effect" },
+      { id: "pf5", target: "How does the feeling change, and where does the turn come?", label: "Tone and the places where it shifts" },
+      { id: "pf6", target: "Which second poem can I pair with this one, and on what ground?", label: "Links to other poems on the same ground" },
+    ],
+    },
+    // Which Section C question type? - sort Type A (single text) from Type B (comparative).
+    "eb-l7-4": {
+    title: "Which Section C Question Type?",
+    subtitle: "Sort each question into Type A (a single novel) or Type B (two stories compared).",
+    kind: "sort",
+    categories: [
+      { id: "type-a", label: "Type A - a single text" },
+      { id: "type-b", label: "Type B - two texts compared" },
+    ],
+    items: [
+      { id: "ct1", label: "How does the writer present Laetitia's relationship with her family?", category: "type-a" },
+      { id: "ct2", label: "Compare the ways two stories explore the experience of leaving home.", category: "type-b" },
+      { id: "ct3", label: "What does the novel show about the value of education for a girl in the Caribbean?", category: "type-a" },
+      { id: "ct4", label: "How do two stories use a child's point of view to shape the reader's sympathy?", category: "type-b" },
+      { id: "ct5", label: "Discuss the significance of the title of the novel.", category: "type-a" },
+      { id: "ct6", label: "Compare how two stories present conflict between parents and children.", category: "type-b" },
+    ],
+    },
+    // Animal Farm - match each character to the force it stands for.
+    "eb-l7-5": {
+    title: "Animal Farm: Characters and What They Stand For",
+    subtitle: "Match each character to the force it represents in the allegory.",
+    kind: "match",
+    pairs: [
+      { id: "af1", target: "The vision of a fairer world that outlives the thinker who inspires the revolt", label: "Old Major" },
+      { id: "af2", target: "Power seized by force and kept by fear", label: "Napoleon" },
+      { id: "af3", target: "The rival whose plans and bravery are erased from the record after he is driven out", label: "Snowball" },
+      { id: "af4", target: "The persuasive voice that rewrites facts and figures until they are believed", label: "Squealer" },
+      { id: "af5", target: "Loyal labour, worked past breaking point and then discarded", label: "Boxer" },
+      { id: "af6", target: "The sceptic who understands what is happening and says nothing", label: "Benjamin" },
+    ],
+    },
+    // Compare or summarise? - sort sentences by what they actually do.
+    "eb-l7-6": {
+    title: "Compare or Summarise?",
+    subtitle: "Sort each sentence into one that compares two stories and one that summarises a single story.",
+    kind: "sort",
+    categories: [
+      { id: "compares", label: "Compares two stories" },
+      { id: "summarises", label: "Summarises one story" },
+    ],
+    items: [
+      { id: "cs1", label: "Both writers use a child narrator, but only one lets us hear the child's own words.", category: "compares" },
+      { id: "cs2", label: "The first story is about a boy who loses his dog.", category: "summarises" },
+      { id: "cs3", label: "Whereas one story ends with a meal shared, the other ends with a door closed.", category: "compares" },
+      { id: "cs4", label: "In the second story the family moves to the city and everything changes.", category: "summarises" },
+      { id: "cs5", label: "Each writer uses one moment of decision to reveal what the character values most.", category: "compares" },
+      { id: "cs6", label: "The second story has a surprise at the end.", category: "summarises" },
+    ],
+    },
   },
   // ------------------------------------------- CLOTHING, TEXTILE AND FASHION
   "clothing-textile-and-fashion": {
