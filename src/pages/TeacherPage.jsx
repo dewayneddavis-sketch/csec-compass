@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import StudentProgressDashboard from "../components/StudentProgressDashboard";
+import TeacherMessages from "../components/TeacherMessages";
 import "./TeacherPage.css";
 
 // Teacher progress dashboard.
@@ -303,6 +304,12 @@ export default function TeacherPage() {
           <LinkStudentsCard roster={roster} token={token} onChanged={() => setRefresh((n) => n + 1)} />
         }
       />
+
+      {/* The Messages panel (chat PR 2 of 3). It reads /api/messages, which
+          decides on the server who this teacher may talk to, so it is shown
+          only where the server has already accepted this account as a teacher
+          of this class — it never widens who is listed here. */}
+      <TeacherMessages token={token} me={user.email} />
     </div>
   );
 }
