@@ -65,19 +65,6 @@
     "topic": "eb-l1-1"
   },
   {
-    "id": "p6",
-    "question": "The word 'genre' means:",
-    "options": [
-      "The setting of a text",
-      "A category or type of writing",
-      "The mood of a text",
-      "A figure of speech"
-    ],
-    "answer": "A category or type of writing",
-    "explanation": "Genre is the category a text belongs to, such as prose, poetry or drama.",
-    "topic": "eb-l1-1"
-  },
-  {
     "id": "p7",
     "question": "Meaning that is stated directly in a text is called:",
     "options": [
@@ -127,19 +114,6 @@
     ],
     "answer": "Read the whole text quickly to get its sense",
     "explanation": "A quick first reading gives you the overall sense before you focus on the questions.",
-    "topic": "eb-l1-2"
-  },
-  {
-    "id": "p11",
-    "question": "Which order gives the strongest short answer?",
-    "options": [
-      "Evidence, point, explanation",
-      "Point, evidence, explanation",
-      "Explanation, point, evidence",
-      "Evidence, explanation, point"
-    ],
-    "answer": "Point, evidence, explanation",
-    "explanation": "State the point, anchor it in the text, then explain how the evidence supports the point.",
     "topic": "eb-l1-2"
   },
   {
@@ -205,19 +179,6 @@
     ],
     "answer": "Evidence from several parts of the text",
     "explanation": "A theme traceable through the opening, climax and ending is far stronger than one built on a single scene.",
-    "topic": "eb-l1-3"
-  },
-  {
-    "id": "p17",
-    "question": "The writer's message is usually:",
-    "options": [
-      "Stated directly in the last sentence",
-      "Implied through events, characters and language",
-      "Explained in the title",
-      "Irrelevant to the theme"
-    ],
-    "answer": "Implied through events, characters and language",
-    "explanation": "Writers build a message through what happens and how it is described rather than stating it outright.",
     "topic": "eb-l1-3"
   },
   {
@@ -296,19 +257,6 @@
     ],
     "answer": "Oxymoron",
     "explanation": "An oxymoron joins two contradictory words to startle the reader.",
-    "topic": "eb-l2-1"
-  },
-  {
-    "id": "p24",
-    "question": "Words such as 'crash', 'hiss' and 'clatter' are examples of:",
-    "options": [
-      "Alliteration",
-      "Onomatopoeia",
-      "Metaphor",
-      "Caesura"
-    ],
-    "answer": "Onomatopoeia",
-    "explanation": "Onomatopoeia uses words that imitate the sounds they describe.",
     "topic": "eb-l2-1"
   },
   {
@@ -452,7 +400,7 @@
     ],
     "answer": "Organise around a shared basis such as theme or tone",
     "explanation": "A shared basis keeps the essay moving between the poems rather than describing them one after the other.",
-    "topic": "eb-l2-3"
+    "topic": "eb-l7-3"
   },
   {
     "id": "p36",
@@ -533,19 +481,6 @@
     "topic": "eb-l3-1"
   },
   {
-    "id": "p42",
-    "question": "Setting in drama matters because:",
-    "options": [
-      "It is always a single room",
-      "It makes certain conflicts possible",
-      "It replaces the need for dialogue",
-      "It is decided by the actors"
-    ],
-    "answer": "It makes certain conflicts possible",
-    "explanation": "A chosen setting - plantation yard, village, city office - makes particular conflicts believable and urgent.",
-    "topic": "eb-l3-1"
-  },
-  {
     "id": "p43",
     "question": "A brief remark heard by the audience but not by the other characters is an:",
     "options": [
@@ -608,19 +543,6 @@
     ],
     "answer": "Dramatic juxtaposition",
     "explanation": "Juxtaposition invites the audience to compare the two scenes and draw conclusions.",
-    "topic": "eb-l3-2"
-  },
-  {
-    "id": "p48",
-    "question": "Which technique gives the audience privileged access to a character's thoughts?",
-    "options": [
-      "Stage direction",
-      "Soliloquy",
-      "Off-stage action",
-      "Title page"
-    ],
-    "answer": "Soliloquy",
-    "explanation": "The soliloquy reveals motive and inner conflict that the other characters cannot hear.",
     "topic": "eb-l3-2"
   },
   {
@@ -1298,5 +1220,83 @@
     "answer": "Answer both parts fully",
     "explanation": "Ignoring the second half of a two-part question is one of the most common ways to lose marks.",
     "topic": "eb-l6-3"
+  },
+  {
+    "id": "p101",
+    "question": "In Twelfth Night, why does Viola disguise herself as the young man Cesario?",
+    "options": [
+      "To take revenge on Duke Orsino",
+      "To serve Duke Orsino after she believes her brother has drowned",
+      "To marry the Countess Olivia",
+      "To escape from her father's court"
+    ],
+    "answer": "To serve Duke Orsino after she believes her brother has drowned",
+    "explanation": "Viola is shipwrecked and believes her twin brother Sebastian is dead. Dressed as Cesario she can take service in Orsino's household, and the disguise also keeps her close to the man she comes to love.",
+    "topic": "eb-l7-1"
+  },
+  {
+    "id": "p102",
+    "question": "The central character of Campbell's Anansi comes out of which storytelling tradition?",
+    "options": [
+      "Greek tragedy",
+      "The Akan trickster tradition, carried to the Caribbean",
+      "Mediaeval morality plays",
+      "Victorian melodrama"
+    ],
+    "answer": "The Akan trickster tradition, carried to the Caribbean",
+    "explanation": "Anansi the spider is a trickster of Akan origin. The tales travelled with enslaved Africans to the Caribbean, where Anansi became a folk hero whose weapon is cleverness rather than strength.",
+    "topic": "eb-l7-2"
+  },
+  {
+    "id": "p103",
+    "question": "A Paper 02 Section B poetry essay must:",
+    "options": [
+      "describe one poem in detail and mention a second one briefly",
+      "compare two prescribed poems, holding both of them in each paragraph",
+      "summarise the life of each poet before discussing the poems",
+      "write about a poem of your own choosing from outside the anthology"
+    ],
+    "answer": "compare two prescribed poems, holding both of them in each paragraph",
+    "explanation": "Section B is a comparative question on two poems from the prescribed anthology. The marks reward a woven comparison, so each paragraph should make one point about both poems.",
+    "topic": "eb-l7-3"
+  },
+  {
+    "id": "p104",
+    "question": "On a Section C question about a single prescribed novel, the highest marks go to an answer that:",
+    "options": [
+      "retells the story in the order of the chapters",
+      "argues a claim about the character or theme and supports it with chapter-level evidence",
+      "lists every theme the novel contains",
+      "describes the writer's life and other books"
+    ],
+    "answer": "argues a claim about the character or theme and supports it with chapter-level evidence",
+    "explanation": "A single-text essay is an argument. Three or four developed points, each supported by short evidence and an explanation of the writer's choice, earn more than a complete plot summary.",
+    "topic": "eb-l7-4"
+  },
+  {
+    "id": "p105",
+    "question": "In Animal Farm, Squealer's main function is to:",
+    "options": [
+      "lead the animals in battle",
+      "persuade the animals to accept Napoleon's version of events",
+      "organise the building of the windmill",
+      "stand for the ordinary working animal"
+    ],
+    "answer": "persuade the animals to accept Napoleon's version of events",
+    "explanation": "Squealer is the farm's persuasive voice. He explains away the pigs' privileges, adjusts the figures and revises the commandments so that the other animals keep believing in the revolution.",
+    "topic": "eb-l7-5"
+  },
+  {
+    "id": "p106",
+    "question": "Which sentence compares two short stories rather than summarising one of them?",
+    "options": [
+      "The first story is about a girl who is sent away to school.",
+      "In the second story the family loses everything in a flood.",
+      "Both writers use a child's silence as loyalty, whereas in one story that silence becomes fear.",
+      "The second story ends with a surprise for the reader."
+    ],
+    "answer": "Both writers use a child's silence as loyalty, whereas in one story that silence becomes fear.",
+    "explanation": "A comparative sentence names both stories and states a relationship between them (both ... whereas). The other options report what happens in one story only.",
+    "topic": "eb-l7-6"
   }
 ]

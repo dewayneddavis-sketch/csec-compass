@@ -1,18 +1,5 @@
 [
   {
-    "id": "kc1",
-    "question": "Which of these texts is prose non-fiction?",
-    "options": [
-      "A poem about a hurricane",
-      "A play set in a village yard",
-      "A biography of a cricketer",
-      "A short story about a boy"
-    ],
-    "answer": "A biography of a cricketer",
-    "explanation": "Biography deals with real people and events, which makes it non-fiction prose.",
-    "topic": "eb-l1-1"
-  },
-  {
     "id": "kc2",
     "question": "A text built from dialogue and stage directions is:",
     "options": [
@@ -39,19 +26,6 @@
     "topic": "eb-l1-2"
   },
   {
-    "id": "kc4",
-    "question": "Which answer structure earns the most marks?",
-    "options": [
-      "A long summary",
-      "A point supported by evidence and explained",
-      "A personal opinion",
-      "A list of quotations"
-    ],
-    "answer": "A point supported by evidence and explained",
-    "explanation": "Point, evidence and explanation together show both knowledge and understanding.",
-    "topic": "eb-l1-2"
-  },
-  {
     "id": "kc5",
     "question": "The theme of a text is best described as:",
     "options": [
@@ -63,19 +37,6 @@
     "answer": "The idea it explores",
     "explanation": "Theme is the idea carried by the subject, such as loss, identity or justice.",
     "topic": "eb-l1-3"
-  },
-  {
-    "id": "kc6",
-    "question": "'The sun smiled on the village' uses:",
-    "options": [
-      "Simile",
-      "Personification",
-      "Hyperbole",
-      "Onomatopoeia"
-    ],
-    "answer": "Personification",
-    "explanation": "Giving the sun the human ability to smile is personification.",
-    "topic": "eb-l2-1"
   },
   {
     "id": "kc7",
@@ -104,19 +65,6 @@
     "topic": "eb-l2-2"
   },
   {
-    "id": "kc9",
-    "question": "A rhyme scheme is:",
-    "options": [
-      "The pattern of end rhymes",
-      "The speed of reading",
-      "The number of stanzas",
-      "The subject of the poem"
-    ],
-    "answer": "The pattern of end rhymes",
-    "explanation": "Rhyme schemes are shown with letters such as abab or abcb.",
-    "topic": "eb-l2-2"
-  },
-  {
     "id": "kc10",
     "question": "Tone is best defined as:",
     "options": [
@@ -140,7 +88,7 @@
     ],
     "answer": "Is organised around a shared basis",
     "explanation": "A shared basis such as theme or tone lets the essay move between the poems throughout.",
-    "topic": "eb-l2-3"
+    "topic": "eb-l7-3"
   },
   {
     "id": "kc12",
@@ -195,19 +143,6 @@
     "topic": "eb-l3-3"
   },
   {
-    "id": "kc16",
-    "question": "The difference between story and plot is that plot:",
-    "options": [
-      "Is the order events happened in",
-      "Is the order in which the writer presents events",
-      "Is the theme",
-      "Is the setting"
-    ],
-    "answer": "Is the order in which the writer presents events",
-    "explanation": "Writers rearrange events to control what the reader knows and when.",
-    "topic": "eb-l4-1"
-  },
-  {
     "id": "kc17",
     "question": "A story that begins with its ending and moves backwards uses:",
     "options": [
@@ -219,19 +154,6 @@
     "answer": "A flashback structure",
     "explanation": "Flashback allows the writer to reveal the past at a chosen moment.",
     "topic": "eb-l4-1"
-  },
-  {
-    "id": "kc18",
-    "question": "A narrator who moves freely between the minds of all the characters is:",
-    "options": [
-      "First person",
-      "Third person omniscient",
-      "Objective",
-      "Unreliable"
-    ],
-    "answer": "Third person omniscient",
-    "explanation": "An omniscient narrator knows everything and can enter any character's thoughts.",
-    "topic": "eb-l4-2"
   },
   {
     "id": "kc19",
@@ -323,5 +245,83 @@
     "answer": "Present a balanced argument and reach a judgement",
     "explanation": "Discuss requires both sides and a conclusion, supported by evidence.",
     "topic": "eb-l6-3"
+  },
+  {
+    "id": "kc26",
+    "question": "In Twelfth Night, Olivia falls in love with:",
+    "options": [
+      "Duke Orsino",
+      "Cesario, the messenger Orsino sends to her",
+      "Sir Toby Belch",
+      "Antonio, the sea captain"
+    ],
+    "answer": "Cesario, the messenger Orsino sends to her",
+    "explanation": "Olivia refuses Orsino but falls for the young messenger he sends, not knowing that Cesario is Viola in disguise - the misunderstanding that drives the comedy.",
+    "topic": "eb-l7-1"
+  },
+  {
+    "id": "kc27",
+    "question": "A trickster hero such as Anansi asks the audience to:",
+    "options": [
+      "condemn every trick as a crime",
+      "enjoy the cleverness while also noticing who pays for it",
+      "ignore the story and study the staging instead",
+      "treat the play as history rather than fiction"
+    ],
+    "answer": "enjoy the cleverness while also noticing who pays for it",
+    "explanation": "Trickster tales invite admiration for the small, quick-witted character who outsmarts the powerful; a strong essay also weighs the cost of the trick and what the ending asks you to think.",
+    "topic": "eb-l7-2"
+  },
+  {
+    "id": "kc28",
+    "question": "Which preparation is most useful for a Section C essay on a single prescribed novel?",
+    "options": [
+      "Learning the writer's biography by heart",
+      "A chapter map, a relationship web and short quotations grouped by theme",
+      "Memorising the first and last chapters word for word",
+      "Reading other students' reviews of the novel"
+    ],
+    "answer": "A chapter map, a relationship web and short quotations grouped by theme",
+    "explanation": "A single-text essay is argued from knowledge of the whole text: a one-line map of every chapter, who is related to whom and what each one wants, and a bank of short quotations sorted under themes you can defend.",
+    "topic": "eb-l7-4"
+  },
+  {
+    "id": "kc29",
+    "question": "In Animal Farm, the pigs' rewriting of the commandments is used by Orwell to show:",
+    "options": [
+      "that animals cannot read",
+      "how easily a principle can be hollowed out while its wording survives",
+      "that the windmill was a mistake",
+      "that Mr Jones was a fair master"
+    ],
+    "answer": "how easily a principle can be hollowed out while its wording survives",
+    "explanation": "The commandments are a recurring motif. Each quiet revision removes a promise while leaving the animals with the memory of having agreed to it, so the language of equality outlives the equality itself.",
+    "topic": "eb-l7-5"
+  },
+  {
+    "id": "kc30",
+    "question": "In a comparative short-story essay the ending usually matters because:",
+    "options": [
+      "it is the only part the examiner reads closely",
+      "a short story turns on a single effect, and the ending decides what that effect means",
+      "short stories always end unhappily",
+      "the ending contains the writer's own opinion"
+    ],
+    "answer": "a short story turns on a single effect, and the ending decides what that effect means",
+    "explanation": "A short story concentrates on one conflict and one turning point, so how it closes is where the writer's meaning is settled - which is why comparative questions so often ask you to compare endings.",
+    "topic": "eb-l7-6"
+  },
+  {
+    "id": "kc31",
+    "question": "Which use of a quotation earns the most credit in a literature essay?",
+    "options": [
+      "A long block quotation copied out in full",
+      "A few words woven into your own sentence, followed by an explanation of their effect",
+      "A quotation with no page, scene or chapter reference",
+      "As many quotations as you can fit into one paragraph"
+    ],
+    "answer": "A few words woven into your own sentence, followed by an explanation of their effect",
+    "explanation": "Short quotations embedded in your own sentence keep the argument moving; the marks come from what you say the words do, not from how many you can remember. This item fills the knowledge-check coverage gap on quotations and evidence (eb-l6-2).",
+    "topic": "eb-l6-2"
   }
 ]
