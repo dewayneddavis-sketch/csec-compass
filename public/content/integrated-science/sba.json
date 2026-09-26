@@ -62,5 +62,275 @@
     "Trend explained using scientific ideas",
     "Limitations and improvements discussed",
     "Conclusions relate to the hypothesis"
-  ]
+  ],
+  "completedSample": {
+    "title": "A complete, full-mark Integrated Science SBA: how the temperature of water affects how quickly a crystal of copper sulfate dissolves",
+    "viewOnlyNote": "For viewing and learning only. This is an original worked example written for CSEC Compass, not a real candidate's submission and not a CXC exemplar. Read it, study how each category is satisfied, then write your own investigation in your own words. This sample cannot be copied.",
+    "profile": [
+      {
+        "label": "Candidate",
+        "value": "Sample Candidate (invented)"
+      },
+      {
+        "label": "Centre",
+        "value": "Sample Secondary School (invented)"
+      },
+      {
+        "label": "Subject",
+        "value": "CSEC Integrated Science - School-Based Assessment"
+      },
+      {
+        "label": "Submission",
+        "value": "One bound report, 12 pages, with the log sheet and the graph in an appendix"
+      }
+    ],
+    "categories": [
+      {
+        "section": "Statement of the Problem",
+        "marks": "2",
+        "awarded": "2",
+        "comment": "The problem is stated as one answerable question with the two variables named: does the temperature of the water change how long a copper sulfate crystal takes to dissolve?"
+      },
+      {
+        "section": "Aims and Objectives",
+        "marks": "2",
+        "awarded": "2",
+        "comment": "One broad aim and four numbered objectives, each of which can be checked against the data at the end."
+      },
+      {
+        "section": "Methodology",
+        "marks": "5",
+        "awarded": "5",
+        "comment": "A numbered method with the apparatus listed, five controlled variables, a stated range and interval, three repeats, a control for crystal size, and a note on safety."
+      },
+      {
+        "section": "Data Collection",
+        "marks": "6",
+        "awarded": "6",
+        "comment": "Three timed trials at each of five temperatures recorded in a ruled table with units and means, plus the qualitative observation from the crushed-crystal check."
+      },
+      {
+        "section": "Analysis and Interpretation",
+        "marks": "8",
+        "awarded": "8",
+        "comment": "The mean times and the rate (1/time) are calculated, the step-to-step factor and the halving temperature are worked out from the data, the graph is described, and the pattern is explained with the particle model."
+      },
+      {
+        "section": "Findings, Limitations and Recommendations",
+        "marks": "4",
+        "awarded": "4",
+        "comment": "The findings are stated against the objectives, five limitations are named with their effect, and each recommendation follows from a named limitation."
+      }
+    ],
+    "pages": [
+      {
+        "heading": "Cover page and contents",
+        "body": "Title: An investigation into the effect of the temperature of water on the rate at which a crystal of copper sulfate dissolves in it.",
+        "bullets": [
+          "Candidate: Sample Candidate (invented) - Class: Form 5I",
+          "Subject and teacher: CSEC Integrated Science, SBA report",
+          "Date submitted: 22 March",
+          "Contents: Statement of the problem, Aim and objectives, Research question and hypothesis, Variables, Apparatus, Method, Data collection and results, Sample calculation, Graph, Analysis, Discussion, Findings and limitations, Conclusion, Bibliography",
+          "Acknowledgement: laboratory technician for checking the balance and the thermometers against a standard"
+        ]
+      },
+      {
+        "heading": "Statement of the problem",
+        "body": "Copper sulfate crystals dissolve faster in hot water than in cold water, but it is not known how large that difference is or whether it follows a steady pattern. The problem investigated is therefore: does the temperature of the water change how long a 0.05 g crystal of copper sulfate takes to dissolve completely, and if it does, how does the dissolving time change as the temperature rises from 20 °C to 60 °C?"
+      },
+      {
+        "heading": "Aims and objectives",
+        "body": "Aim: to find out how the temperature of the water affects the time a crystal of copper sulfate takes to dissolve, and to look for a pattern in the results.",
+        "bullets": [
+          "Objective 1: to measure the time taken for a 0.05 g crystal of copper sulfate to dissolve completely at 20, 30, 40, 50 and 60 °C.",
+          "Objective 2: to take three readings at each temperature and calculate a mean, so that one unusual reading cannot decide the answer.",
+          "Objective 3: to plot a graph of the results and decide whether the relationship between temperature and dissolving time is a straight line or a curve.",
+          "Objective 4: to compare the results with the particle theory of dissolving and to suggest improvements to the method."
+        ]
+      },
+      {
+        "heading": "Research question and hypothesis",
+        "body": "Research question: what is the relationship between the temperature of the water and the time taken for a copper sulfate crystal to dissolve?\n\nHypothesis: as the temperature of the water increases, the time taken for the crystal to dissolve will decrease. The hypothesis will be judged successful if the mean time at 60 °C is clearly less than the mean time at 20 °C and if the fall is steady rather than sudden, which would show a real relationship rather than a single odd result."
+      },
+      {
+        "heading": "Variables",
+        "body": "One variable is changed deliberately, one is measured, and everything else is held constant so that the result can be attributed to temperature alone.",
+        "table": {
+          "caption": "Table 1: Variables and how each was controlled",
+          "columns": [
+            "Type of variable",
+            "Variable",
+            "How it was handled"
+          ],
+          "rows": [
+            [
+              "Independent",
+              "Temperature of the water",
+              "Water held at 20, 30, 40, 50 and 60 °C, checked with a thermometer before the crystal was added and again at the end"
+            ],
+            [
+              "Dependent",
+              "Time taken to dissolve",
+              "Stop-clock started as the crystal touched the water and stopped when no blue solid could be seen"
+            ],
+            [
+              "Controlled",
+              "Mass and size of the crystal",
+              "Every crystal weighed on a balance to 0.05 g and whole, not crushed"
+            ],
+            [
+              "Controlled",
+              "Volume of water",
+              "100 cm3 of distilled water measured in a 100 cm3 measuring cylinder for every run"
+            ],
+            [
+              "Controlled",
+              "Container",
+              "The same 250 cm3 beaker used every time, washed and dried between runs"
+            ],
+            [
+              "Controlled",
+              "Stirring",
+              "Not stirred: the crystal was allowed to dissolve undisturbed, so that stirring could not become a second variable"
+            ],
+            [
+              "Controlled",
+              "Depth the crystal was dropped from",
+              "The crystal was dropped from just above the surface at the same point of the beaker every time"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Apparatus and materials",
+        "body": "The apparatus was chosen so that the only quantity measured was time, and so that every run started from the same volume, mass and depth.",
+        "bullets": [
+          "Copper sulfate crystals, 15 crystals each weighing about 0.05 g",
+          "Distilled water, about 1.5 dm3",
+          "100 cm3 measuring cylinder, 250 cm3 beaker, glass rod",
+          "Thermometer (0-100 °C), water bath or hot plate to heat the water, cold water and ice for the 20 °C runs",
+          "Electronic balance reading to 0.01 g, stop-clock, white card under the beaker to help see when the blue solid has gone",
+          "Safety: goggles and apron; copper sulfate is harmful if swallowed and stains skin and clothing, so the crystals were handled with a spatula and the beaker was not leaned over"
+        ]
+      },
+      {
+        "heading": "Method",
+        "body": "1. The balance was checked against a 0.05 g standard mass, then fifteen crystals were weighed out, each about 0.05 g, and set aside.\n2. 100 cm3 of distilled water was measured into the 250 cm3 beaker with the measuring cylinder.\n3. The water was warmed or cooled until it stood at 20 °C, checked with the thermometer, and the beaker was placed on a white card so any remaining blue solid could be seen clearly.\n4. One crystal was dropped from just above the surface at the same point of the beaker and the stop-clock was started.\n5. The beaker was watched without stirring. When no blue solid could be seen anywhere in the water, the stop-clock was stopped and the time in seconds was recorded.\n6. Steps 2 to 5 were repeated twice more at 20 °C, using fresh water and a fresh crystal each time, so three times were recorded at that temperature.\n7. Steps 2 to 6 were repeated for 30, 40, 50 and 60 °C, topping up with warm water when the temperature fell by more than 1 °C during a run.\n8. As a check on one of the controlled variables, one extra run was done at 20 °C with a crystal of the same mass that had been crushed to powder first.\n9. All readings were entered in the table as they were taken, before any mean was calculated, and the temperature was recorded at the end of every run."
+      },
+      {
+        "heading": "Data collection and results",
+        "body": "Three times were recorded at each temperature. Times were read to the nearest second because the end point was judged by eye and the clock was started and stopped by hand.",
+        "table": {
+          "caption": "Table 2: Time taken for a 0.05 g crystal of copper sulfate to dissolve completely at each water temperature",
+          "columns": [
+            "Temperature (°C)",
+            "Trial 1 (s)",
+            "Trial 2 (s)",
+            "Trial 3 (s)",
+            "Mean time (s)",
+            "Factor from the temperature below",
+            "Rate 1/time (s-1)"
+          ],
+          "rows": [
+            [
+              "20",
+              "240",
+              "232",
+              "248",
+              "240",
+              "-",
+              "0.0042"
+            ],
+            [
+              "30",
+              "150",
+              "146",
+              "154",
+              "150",
+              "0.62",
+              "0.0067"
+            ],
+            [
+              "40",
+              "96",
+              "94",
+              "98",
+              "96",
+              "0.64",
+              "0.0104"
+            ],
+            [
+              "50",
+              "62",
+              "60",
+              "64",
+              "62",
+              "0.65",
+              "0.0161"
+            ],
+            [
+              "60",
+              "40",
+              "39",
+              "41",
+              "40",
+              "0.65",
+              "0.0250"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Sample calculation",
+        "body": "Mean time at 40 °C:\nmean = (96 + 94 + 98) / 3 = 288 / 3 = 96 s.\n\nThe same mean expressed as a rate:\nrate = 1 / mean time = 1 / 96 = 0.0104 s-1.\n\nThe step from 30 °C to 40 °C:\nfactor = mean time at 40 / mean time at 30 = 96 / 150 = 0.64.\n\nThe average of the four step factors is 0.64, which means that a rise of 10 °C cuts the dissolving time to about 0.64 of its previous value, a fall of about 36 per cent.\n\nFrom that average factor, the temperature rise needed to halve the time is worked out as:\nlog(0.5) / log(0.64) x 10 = 15.5 °C.\n\nRate check between the coldest and hottest water:\nrate ratio = 0.0250 / 0.0042 = 6.0, so the crystal dissolved about 6 times as fast at 60 °C as at 20 °C."
+      },
+      {
+        "heading": "Graph",
+        "body": "A graph of mean dissolving time (s) against water temperature (°C) was plotted on graph paper. The x-axis was labelled 'Temperature / °C' with a scale of 1 cm = 5 °C from 0 to 70, and the y-axis was labelled 'Mean time to dissolve / s' with a scale of 1 cm = 20 s from 0 to 260. The points were joined with a smooth curve and not with straight lines, because the time depends continuously on the temperature.\n\nThe curve falls steeply at first and then more gently: from 240 s at 20 °C to 150 s at 30 °C, but only from 62 s at 50 °C to 40 s at 60 °C. The drop for the first 10 °C is 90 s and for the last 10 °C it is 22 s.\n\nBecause the curve does not straighten out, the relationship is not a simple straight-line one over this range. A second graph of rate (1/time) against temperature rises with an ever-steeper slope, which is the same information seen from the other side."
+      },
+      {
+        "heading": "Analysis and interpretation",
+        "body": "The mean dissolving time falls at every step: 240 s at 20 °C, 150 s at 30 °C, 96 s at 40 °C, 62 s at 50 °C and 40 s at 60 °C. Over the whole range the time was cut to 0.17 of the value at 20 °C, and the rate was about 6 times greater at the hottest temperature.\n\nThe clearest pattern is in the factor column. From 30 °C onwards the mean time falls by very nearly the same factor at each step: 0.62, 0.64, 0.65, 0.65 for the four steps. Their average, 0.64, means that each 10 °C rise cuts the time to roughly two thirds of what it was. Working from that average, the temperature would have to rise by about 15.5 °C to halve the dissolving time.\n\nThe repeats support each other: the three readings at each temperature lie within a few seconds of one another, and at 60 °C they are within 2 s, which is less than the reaction time of the person holding the stop-clock.\n\nThe extra check on crystal size is important. The crushed crystal of the same mass dissolved in 96 s at 20 °C, while the whole crystal at that temperature took 240 s. This shows that surface area changes the dissolving time even more than a 10 °C temperature change does at the cold end, and it is the reason every other run used the same whole crystal mass.\n\nThe hypothesis is accepted: the time taken falls as the temperature rises, and the fall is steady with the same factor at each step rather than sudden. The relationship is a curve, not a straight line, so the answer to the research question is that dissolving time falls roughly by a fixed factor for every 10 °C rise in temperature."
+      },
+      {
+        "heading": "Discussion",
+        "body": "Dissolving happens at the surface of the solid, where particles of copper sulfate leave the crystal and become surrounded by water particles. Three things control how fast that happens: how often the water particles strike the surface, how much energy they carry, and how much surface the crystal offers.\n\nRaising the temperature increases the average kinetic energy of the water particles and of the particles on the crystal surface. The water particles move faster, so they strike and pull at the surface more often and with more energy, so more particles leave the crystal each second and the crystal disappears sooner. This explains the fall in dissolving time in every step of the table.\n\nIt also explains the shape of the curve. The factor column shows the change per 10 °C is nearly constant - about 0.64 - rather than a fixed number of seconds saved. A fixed number of seconds would give a straight line; a fixed factor gives the curve that was plotted. In the same way, the surface area check shows why a crushed crystal of the same mass dissolves so much sooner: it presents far more surface to the water, and the particles can leave from many more places at once.\n\nThe investigation also shows the difference between a controlled variable and a variable that was measured. Temperature was the only thing deliberately changed, and stirring, volume, container, depth and crystal mass were all held constant - but the crushed-crystal check proves that crystal size is a variable worth controlling, and that if it had been allowed to vary the results would have been worthless.\n\nTwo limits on the conclusion should be stated. The result covers only 20 to 60 °C and only copper sulfate of this crystal size: below 20 °C the curve would flatten out, and above 60 °C the water itself starts to evaporate quickly, which would change the volume and so change the test."
+      },
+      {
+        "heading": "Findings, limitations and recommendations",
+        "body": "Findings, stated against the objectives: (1) the crystal dissolved in 240 s at 20 °C and 40 s at 60 °C; (2) three readings were taken at each temperature and the means were used; (3) the graph is a curve, not a straight line, so the relationship is not a simple proportion; (4) the pattern matches the particle theory of dissolving, with the time falling by about the same factor (0.64) for each 10 °C rise.",
+        "bullets": [
+          "Limitation 1: the end point was judged by eye, so each time could be out by about a second. Effect: at 60 °C (40 s) that is 2-3 per cent, but at 20 °C it is only 0.4 per cent.",
+          "Limitation 2: the water cooled during the longer runs. Effect: the 20 °C run may have been slightly cooler than recorded at the end, making its time a little longer than it should be.",
+          "Limitation 3: the crystals were weighed to the nearest 0.01 g but their shapes differed. Effect: a crystal with a larger surface area would dissolve sooner, adding scatter to the readings.",
+          "Limitation 4: the water was not stirred, so dissolved copper sulfate built up around the crystal and slowed dissolving later in a run. Effect: the times may be a little longer than they would be in moving water.",
+          "Limitation 5: only five temperatures were used, all in steps of 10 °C. Effect: the halving temperature of about 15.5 °C is an estimate taken from an average, not a measured point.",
+          "Recommendation 1: judge the end point with a light sensor or by filming the beaker, instead of by eye, so the timing error is removed.",
+          "Recommendation 2: keep the beaker in a water bath at the set temperature for the whole run so no run cools down.",
+          "Recommendation 3: use a slow magnetic stirrer at the same setting for every run, and then repeat the whole set of runs to see whether the times fall.",
+          "Recommendation 4: test the crushed crystal formally as a second investigation, with three readings at each crystal size, so that surface area has its own data and not just a single check."
+        ]
+      },
+      {
+        "heading": "Conclusion",
+        "body": "The temperature of the water had a large effect on how quickly a 0.05 g crystal of copper sulfate dissolved. The mean time fell from 240 s at 20 °C to 150 s at 30 °C, 96 s at 40 °C, 62 s at 50 °C and 40 s at 60 °C, so the crystal dissolved about 6 times as fast in the hottest water as in the coldest. The pattern was a curve rather than a straight line: each 10 °C rise cut the dissolving time to about 0.64 of its previous value, which suggests that a rise of about 15.5 °C would halve the time. The hypothesis was supported, and the way the surface-area check behaved shows that crystal size would have to be added to the controlled variables in any repeat."
+      },
+      {
+        "heading": "Bibliography",
+        "body": "Sources are listed in a consistent format.",
+        "bullets": [
+          "CSEC Integrated Science syllabus, sections on the particle model, solutions and rates of dissolving.",
+          "CSEC Integrated Science SBA guide: the six headings the project is marked under.",
+          "School laboratory handbook: safe handling of copper sulfate and hot water.",
+          "Class notes and worksheets on solubility, surface area and the effect of temperature on dissolving."
+        ]
+      }
+    ],
+    "examinerNotes": [
+      "This subject is marked under six headings, and each one is answered where the examiner expects it: the problem is posed as one question, the aim is followed by four checkable objectives, the method is numbered, the readings are tabulated with means, the analysis calculates before it explains, and the last section matches findings and recommendations to limitations.",
+      "The data were built so that a real pattern exists rather than a straight line: the factor column is nearly constant, so the report can say each 10 °C rise cuts the time to about two thirds, and work out a halving temperature of about 15.5 °C from the data instead of asserting a number.",
+      "The crushed-crystal check is the strongest single feature of the sample: one extra run turns an assumption about crystal size into evidence, which is exactly what the Data Collection and Methodology headings reward.",
+      "Every recommendation follows from a named limitation, and the three repeats at each temperature mean no conclusion rests on a single reading. Candidate, centre and teacher details are invented placeholders - write your own investigation, in your own words, with your own readings."
+    ]
+  }
 }
