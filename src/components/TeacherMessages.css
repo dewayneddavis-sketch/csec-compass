@@ -1,0 +1,260 @@
+/* Teacher↔student Messages panel — prefix: tmsg-
+   Shared with the student Messages tab (chat PR 3), so the two sides of the
+   same conversation look the same. Colours follow the teacher dashboard
+   (src/pages/TeacherPage.css): teal #0e7490, slate text, white cards. */
+.tmsg {
+  margin: 1.75rem 0 0;
+  padding: 1.25rem 1.25rem 1.4rem;
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.tmsg-title {
+  margin: 0 0 0.35rem;
+  font-size: 1.25rem;
+  color: #0f172a;
+}
+
+.tmsg-lead {
+  margin: 0 0 1rem;
+  max-width: 46rem;
+  color: #475569;
+  line-height: 1.55;
+}
+
+.tmsg-sub {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  color: #0f172a;
+}
+
+.tmsg-muted {
+  margin: 0.5rem 0;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.tmsg-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.tmsg-contacts {
+  flex: 1 1 15rem;
+  min-width: 14rem;
+}
+
+.tmsg-contacts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 22rem;
+  overflow-y: auto;
+}
+
+.tmsg-contacts-list li + li {
+  margin-top: 0.3rem;
+}
+
+.tmsg-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.6rem;
+  align-items: baseline;
+  width: 100%;
+  padding: 0.55rem 0.7rem;
+  font: inherit;
+  font-size: 0.9rem;
+  text-align: left;
+  color: #0f172a;
+  background: #f8fafc;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.tmsg-contact:hover {
+  background: #ecfeff;
+}
+
+.tmsg-contact:focus-visible {
+  outline: 3px solid #0e7490;
+  outline-offset: 1px;
+}
+
+.tmsg-contact.is-open {
+  background: #ecfeff;
+  border-color: #0e7490;
+}
+
+.tmsg-contact-email {
+  flex: 1 1 auto;
+  word-break: break-all;
+}
+
+.tmsg-contact-role {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #155e75;
+  background: #cffafe;
+  border-radius: 999px;
+  padding: 0.1rem 0.5rem;
+}
+
+.tmsg-thread {
+  flex: 2 1 24rem;
+  min-width: 18rem;
+}
+
+.tmsg-thread-title {
+  word-break: break-all;
+}
+
+.tmsg-list {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+  max-height: 26rem;
+  overflow-y: auto;
+}
+
+.tmsg-item {
+  margin: 0 0 0.6rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: 10px;
+  max-width: 34rem;
+}
+
+.tmsg-item-mine {
+  margin-left: auto;
+  background: #ecfeff;
+  border: 1.5px solid #a5f3fc;
+}
+
+.tmsg-item-theirs {
+  background: #f8fafc;
+  border: 1.5px solid #e2e8f0;
+}
+
+.tmsg-item-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.75rem;
+  margin: 0 0 0.25rem;
+  font-size: 0.78rem;
+  color: #64748b;
+}
+
+.tmsg-item-from {
+  font-weight: 600;
+  color: #155e75;
+  word-break: break-all;
+}
+
+.tmsg-item-body {
+  margin: 0;
+  color: #0f172a;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.tmsg-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: flex-start;
+  padding-top: 0.75rem;
+  border-top: 1.5px solid #e2e8f0;
+}
+
+.tmsg-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #334155;
+  word-break: break-all;
+}
+
+.tmsg-input {
+  width: 100%;
+  max-width: 34rem;
+  padding: 0.55rem 0.7rem;
+  font: inherit;
+  font-size: 0.92rem;
+  color: #0f172a;
+  background: #ffffff;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+.tmsg-input:focus-visible {
+  outline: 3px solid #0e7490;
+  outline-offset: 1px;
+}
+
+.tmsg-count {
+  margin: 0;
+  font-size: 0.78rem;
+  color: #64748b;
+}
+
+.tmsg-btn {
+  padding: 0.5rem 0.9rem;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #0e7490;
+  border: 1.5px solid #0e7490;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.tmsg-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.tmsg-btn-ghost {
+  margin-bottom: 0.75rem;
+  color: #334155;
+  background: #ffffff;
+  border-color: #cbd5e1;
+}
+
+.tmsg-notice {
+  margin: 0.5rem 0 0.75rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+}
+
+.tmsg-notice-warn {
+  background: #fef3c7;
+  border-left: 5px solid #b45309;
+  color: #78350f;
+}
+
+.tmsg-notice-warn p {
+  margin: 0.2rem 0;
+  line-height: 1.5;
+}
+
+.tmsg-notice-line {
+  min-height: 1.2rem;
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+  color: #155e75;
+}
+
+.tmsg-footnote {
+  margin: 1rem 0 0;
+  font-size: 0.82rem;
+  color: #64748b;
+  line-height: 1.5;
+}
