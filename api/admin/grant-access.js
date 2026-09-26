@@ -242,6 +242,34 @@ async function schoolTeacherRow(supabase, email) {
   return { rostered: true, schoolId: schoolIds[0] || null, error: null };
 }
 
+// Is this account a PAYING purchaser who told us at checkout that they are a
+// teacher? (owner addition 2026-09-26: "a teacher may buy independently of the
+// school admin and pull a class"). The row only exists because
+// api/stripe/webhook.js wrote it after a VERIFIED Stripe payment, and the
+// purchases table is deny-all RLS behind the service-role key — so its
+// existence IS the proof of purchase and a caller cannot manufacture it.
+//
+// Fails CLOSED: no user id, no row, or a table that predates the buyer_role
+// column all mean "this rule does not qualify". The rules above it still stand,
+// so a database without that column keeps working exactly as before.
+async function purchasedTeacherRow(supabase, userId) {
+  if (!userId) return { paid: false };
+  const { data, error } = await supabase
+    .from("purchases")
+    .select("id")
+    .eq("user_id", userId)
+    .eq("buyer_role", "teacher")
+    .limit(1);
+  if (error) {
+    console.warn(
+      "API /api/admin/grant-access: purchases.buyer_role lookup failed:",
+      error.message
+    );
+    return { paid: false, error };
+  }
+  return { paid: (data || []).length > 0 };
+}
+
 // The teacher gate, used by every teacher-self-* action — and mirroring the
 // access rule api/analytics/summary.js applies to ?scope=class, so anyone who
 // can open the dashboard can also keep their own class list in order.
@@ -253,10 +281,12 @@ async function schoolTeacherRow(supabase, email) {
 //   4. the caller is already named as a teacher on a link (teacher_students) —
 //      which is how the owner-verified live teachers keep working, and how a
 //      school admin's link to a teacher authorises them.
+//   5. the caller BOUGHT access and said they are a teacher (owner addition
+//      2026-09-26) — a verified paying purchaser, recorded by the webhook.
 //
 // Returns { reason, schoolId } when qualified, or null. Fails CLOSED: no rule
 // satisfied anywhere means no access and no data.
-async function teacherSelfGate(supabase, callerEmail, isOwnerCaller) {
+async function teacherSelfGate(supabase, callerEmail, isOwnerCaller, callerId) {
   const school = await schoolTeacherRow(supabase, callerEmail);
   const schoolId = school.schoolId;
 
@@ -275,6 +305,12 @@ async function teacherSelfGate(supabase, callerEmail, isOwnerCaller) {
     return null; // fails closed
   }
   if ((linkedRows || []).length > 0) return { reason: "linked", schoolId };
+
+  // rule 5 — a paying purchaser who self-identified as a teacher. Their links
+  // belong to no school (they bought on their own), so schoolId stays null.
+  const purchase = await purchasedTeacherRow(supabase, callerId);
+  if (purchase.paid) return { reason: "purchase", schoolId: null };
+
   return null;
 }
 
@@ -624,11 +660,11 @@ export default async function handler(req, res) {
       const linksTablesHint =
         "Ensure the `teacher_students` table exists — see supabase/schema.sql.";
 
-      const gate = await teacherSelfGate(supabase, callerEmail, isOwnerCaller);
+      const gate = await teacherSelfGate(supabase, callerEmail, isOwnerCaller, caller.id);
       if (!gate) {
         // Fails closed: no student data, no rows, no hint about anyone else.
         return res.status(403).json({
-          error: `Forbidden: teacher access required. You are signed in as ${caller.email || "unknown"}. A teacher account is one the account owner has listed, or one your school's admin added to the school roster as a teacher — ask them to add ${callerEmail || "your email"} and sign in again.`,
+          error: `Forbidden: teacher access required. You are signed in as ${caller.email || "unknown"}. A teacher account is one the account owner has listed, one your school's admin added to the school roster as a teacher, or an account that bought access and chose "Teacher" at checkout — ask the owner to add ${callerEmail || "your email"} and sign in again.`,
         });
       }
 

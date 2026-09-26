@@ -38,6 +38,22 @@ create unique index if not exists purchases_user_bundle_uniq
   on public.purchases (user_id, purchase_type)
   where purchase_type = 'bundle';
 
+-- Who the buyer said they were at checkout (owner addition 2026-09-26): the
+-- "I am a…" answer at purchase — 'teacher' | 'student' | 'parent', or NULL when
+-- the buyer did not answer / for rows written before this column existed / for a
+-- school licence (there the school is the buyer). Written by
+-- api/stripe/webhook.js from the checkout metadata, read by the teacher gate
+-- (api/admin/grant-access.js) and by api/analytics/summary.js?scope=class:
+-- a VERIFIED paying purchaser whose row says 'teacher' may link students.
+-- Deny-all RLS below is unchanged — the row itself is the proof of purchase, and
+-- only the service-role key can write it, so a caller cannot manufacture one.
+alter table public.purchases add column if not exists buyer_role text;
+
+-- The gate looks a caller up by (user_id, buyer_role); this keeps that probe an
+-- index hit instead of a scan of every grant on the platform.
+create index if not exists purchases_user_buyer_role_idx
+  on public.purchases (user_id, buyer_role);
+
 -- Row Level Security: clients must NOT read/write purchases directly.
 -- All access goes through the server-side service-role key in /api/*.
 alter table public.purchases enable row level security;

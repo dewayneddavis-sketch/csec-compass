@@ -41,27 +41,43 @@ function isUnknownColumnError(err) {
   return /column .* does not exist/i.test(msg) || /Could not find the '.*' column/i.test(msg);
 }
 
-// Record a grant. `stripe_session_id` is written whenever the live table has it
-// (it is what dedupes a re-delivered school-license event); on a table that
-// predates that column — the owner's, until supabase/schema.sql is applied — the
-// row is recorded WITHOUT it instead of the sale failing with a 500. An audit
-// column must never be the reason a paying customer gets no access.
+// Record a grant. Two audit columns are newer than the table itself —
+// `stripe_session_id` (it is what dedupes a re-delivered school-license event)
+// and `buyer_role` (who the buyer said they were at checkout, owner addition
+// 2026-09-26) — and on a table that predates them the row is recorded WITHOUT
+// them instead of the sale failing with a 500. An audit column must never be the
+// reason a paying customer gets no access.
 async function insertPurchaseRow(supabase, payload) {
-  const first = await supabase.from("purchases").insert(payload);
-  if (!first.error || !isUnknownColumnError(first.error)) return first;
-  if (!Object.prototype.hasOwnProperty.call(payload, "stripe_session_id")) return first;
-  console.warn(
-    "purchases table has no stripe_session_id column — recording the grant without it. Apply supabase/schema.sql to add the column."
-  );
-  const withoutSession = { ...payload };
-  delete withoutSession.stripe_session_id;
-  return await supabase.from("purchases").insert(withoutSession);
+  const optional = ["buyer_role", "stripe_session_id"];
+  let candidate = { ...payload };
+  for (;;) {
+    const result = await supabase.from("purchases").insert(candidate);
+    if (!result.error || !isUnknownColumnError(result.error)) return result;
+    const dropped = optional.find((key) => Object.prototype.hasOwnProperty.call(candidate, key));
+    if (!dropped) return result;
+    console.warn(
+      `purchases table has no ${dropped} column — recording the grant without it. Apply supabase/schema.sql to add the column.`
+    );
+    candidate = { ...candidate };
+    delete candidate[dropped];
+  }
 }
 
 async function readRawBody(req) {
   const chunks = [];
   for await (const chunk of req) chunks.push(chunk);
   return Buffer.concat(chunks);
+}
+
+// The self-identified buyer role, MIRROR of src/data/buyerRoles.js (api/*.js
+// files are self-contained by design and cannot import from src/; the harness
+// asserts the lists are equal). An unrecognised value is recorded as "" rather
+// than 400ing: the metadata is written by our own checkout, and a payment must
+// never fail because of a role string.
+const BUYER_ROLE_IDS = ["teacher", "student", "parent"];
+function cleanBuyerRole(value) {
+  const v = String(value ?? "").trim().toLowerCase();
+  return BUYER_ROLE_IDS.includes(v) ? v : "";
 }
 
 // ---------------------------------------------------------------------------
@@ -307,6 +323,12 @@ export default async function handler(req, res) {
     const SCHOOL_LICENSE_TIERS = ["school-license", "school-license-50", "school-license-100", "school-license-150"];
     const isSchoolLicense = SCHOOL_LICENSE_TIERS.includes(price_type);
 
+    // Who the buyer said they were at checkout (owner addition 2026-09-26):
+    // recorded on the grant row below, which is what later lets a teacher who
+    // bought on their own link students. Only the two personal plans carry it —
+    // a school licence is bought by the school, not by a teacher or a parent.
+    const buyerRole = isSchoolLicense ? "" : cleanBuyerRole(session.metadata?.buyer_role);
+
     try {
       const supabase = getSupabaseAdmin();
       // Reported back on every 200 from this event, so the outcome of the school
@@ -424,6 +446,11 @@ export default async function handler(req, res) {
           // so the sold tier stays visible in api/purchases/list.js.
           purchase_type: isSchoolLicense ? price_type : "bundle",
           stripe_session_id: session.id,
+          // Who the buyer said they were — written only when they answered, so a
+          // grant on a table that predates the column is byte-identical to what
+          // this route wrote before (and old rows have no role, which is exactly
+          // what "did not answer" means). The teacher gate reads this column.
+          ...(buyerRole ? { buyer_role: buyerRole } : {}),
         });
         if (error) {
           console.error("Insert full-access error (" + price_type + "):", error);
@@ -454,6 +481,7 @@ export default async function handler(req, res) {
           subject_id,
           purchase_type: subject_id,
           stripe_session_id: session.id,
+          ...(buyerRole ? { buyer_role: buyerRole } : {}),
         });
         if (error) {
           console.error("Insert subject purchase error:", error);

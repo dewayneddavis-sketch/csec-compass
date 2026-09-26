@@ -53,6 +53,12 @@ const PRICE_IDS = {
 
 const PRICE_TYPES = ["subject", "bundle", ...Object.keys(SCHOOL_LICENSES)];
 
+// The self-identified buyer role (owner addition 2026-09-26): "I am a…" —
+// teacher / student / parent. MIRROR of src/data/buyerRoles.js (api/*.js files
+// are self-contained by design and cannot import from src/); the harness asserts
+// the two lists are equal, so a role cannot be added in one place only.
+const BUYER_ROLE_IDS = ["teacher", "student", "parent"];
+
 // A school licence is bought BY the school, which names itself and the person
 // who will run its console (owner direction 2026-09-20: "whichever school buys
 // the licence, at that time that school will select its own school admin").
@@ -76,7 +82,7 @@ function cleanEmail(value) {
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).json({ error: "Method not allowed" });
 
-  const { priceType, subjectId, successUrl, cancelUrl, userId, schoolName, adminEmail, childEmail } = req.body || {};
+  const { priceType, subjectId, successUrl, cancelUrl, userId, schoolName, adminEmail, childEmail, buyerRole } = req.body || {};
   if (!priceType || !PRICE_TYPES.includes(priceType)) {
     return res.status(400).json({
       error: "Invalid priceType. Use 'subject', 'bundle' or a school-license tier (" +
@@ -137,6 +143,23 @@ export default async function handler(req, res) {
     }
   }
 
+  // Who the buyer says they are. It rides in the metadata so api/stripe/webhook.js
+  // can record it on the grant after a VERIFIED payment — which is what later
+  // lets a teacher who bought on their own link students, with no school and no
+  // admin in the middle. A school licence never carries it (there the school is
+  // the buyer), and an unrecognised value is REFUSED rather than dropped: the
+  // answer is the whole point of asking, and guessing would mislabel the account.
+  let role = "";
+  if (priceType === "subject" || priceType === "bundle") {
+    const wanted = String(buyerRole ?? "").trim().toLowerCase();
+    if (wanted && !BUYER_ROLE_IDS.includes(wanted)) {
+      return res.status(400).json({
+        error: "Tell us who this purchase is for — teacher, student or parent.",
+      });
+    }
+    role = wanted;
+  }
+
   const stripe = getStripe();
   if (!stripe) return res.status(500).json({ error: "Stripe not configured" });
 
@@ -165,6 +188,12 @@ export default async function handler(req, res) {
         // Always present so the webhook can tell "no child named" from "key
         // missing". api/stripe/webhook.js reads exactly this key.
         child_email: child,
+        // Who the buyer says they are, if they answered ("" for a school-licence
+        // tier and for a buyer who somehow skipped the question). Always present
+        // so the webhook can tell "not answered" from "key missing".
+        // api/stripe/webhook.js reads exactly this key and records it on the
+        // grant row, which is what the teacher gate later reads.
+        buyer_role: role,
       },
     });
 
