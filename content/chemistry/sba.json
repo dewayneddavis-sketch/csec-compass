@@ -41,5 +41,254 @@
     "Titration performed",
     "Calculations (moles) shown",
     "Sources of error identified"
-  ]
+  ],
+  "completedSample": {
+    "title": "A complete, full-mark Chemistry SBA: how the concentration of sodium thiosulfate solution affects the rate of its reaction with hydrochloric acid",
+    "viewOnlyNote": "For viewing and learning only. This is an original worked example written for CSEC Compass, not a real candidate's submission and not a CXC exemplar. Read it, study how each category is satisfied, then write your own investigation in your own words. This sample cannot be copied.",
+    "profile": [
+      {
+        "label": "Candidate",
+        "value": "Sample Candidate (invented)"
+      },
+      {
+        "label": "Centre",
+        "value": "Sample Secondary School (invented)"
+      },
+      {
+        "label": "Subject",
+        "value": "CSEC Chemistry - School-Based Assessment"
+      },
+      {
+        "label": "Submission",
+        "value": "One bound report, 12 pages, with the log sheet and the graph in an appendix"
+      }
+    ],
+    "categories": [
+      {
+        "section": "Planning and Designing",
+        "marks": "10",
+        "awarded": "10",
+        "comment": "A testable hypothesis, a named independent variable, a measured dependent variable and five controlled variables, including the one that matters most here - the total volume in every run is kept at 30 cm3 so the dilution itself cannot slow the reaction."
+      },
+      {
+        "section": "ORR",
+        "marks": "10",
+        "awarded": "10",
+        "comment": "Times recorded to the nearest second in a ruled table with units, trial numbers and calculated means; the method is numbered and written in the past tense, and the qualitative observation for the control is recorded in words."
+      },
+      {
+        "section": "A&I",
+        "marks": "10",
+        "awarded": "10",
+        "comment": "1/time is calculated as a measure of rate and plotted against concentration, giving a straight line through the origin; the constant concentration x time shows the inverse relationship, and the pattern is explained with collision theory."
+      }
+    ],
+    "pages": [
+      {
+        "heading": "Cover page and contents",
+        "body": "Title: An investigation into the effect of the concentration of sodium thiosulfate solution on the rate of its reaction with dilute hydrochloric acid, measured as the time taken for a black cross to disappear from view.",
+        "bullets": [
+          "Candidate: Sample Candidate (invented) - Class: Form 5C",
+          "Subject and teacher: CSEC Chemistry, SBA report",
+          "Date submitted: 18 March",
+          "Contents: Aim, Hypothesis, Variables, Apparatus, Method, Results, Sample calculation, Graph, Analysis, Discussion, Sources of error, Conclusion, Bibliography",
+          "Acknowledgement: laboratory technician for preparing the stock solutions, teacher for safety supervision"
+        ]
+      },
+      {
+        "heading": "Aim",
+        "body": "To determine the effect of the concentration of sodium thiosulfate solution on the rate of its reaction with dilute hydrochloric acid, by measuring the time taken for a black cross drawn on white paper to disappear when viewed through the reaction mixture."
+      },
+      {
+        "heading": "Hypothesis",
+        "body": "As the concentration of the sodium thiosulfate solution is increased, the time taken for the cross to disappear will decrease, because there are more thiosulfate ions in each cm3 of solution and the ions will collide with hydrogen ions more frequently. Because the time taken is inversely proportional to the rate, the rate of reaction is expected to be directly proportional to the concentration of the sodium thiosulfate."
+      },
+      {
+        "heading": "Variables",
+        "body": "One variable is changed deliberately, one is measured, and everything else is held constant so that the result can be attributed to concentration alone.",
+        "table": {
+          "caption": "Table 1: Variables and how each was controlled",
+          "columns": [
+            "Type of variable",
+            "Variable",
+            "How it was handled"
+          ],
+          "rows": [
+            [
+              "Independent",
+              "Concentration of sodium thiosulfate solution",
+              "Five solutions of 0.50, 0.40, 0.30, 0.20 and 0.10 mol/dm3, made by diluting the 0.50 mol/dm3 stock with distilled water"
+            ],
+            [
+              "Dependent",
+              "Rate of reaction",
+              "Time in seconds for the black cross to disappear, measured with a stop-clock; rate taken as 1/time"
+            ],
+            [
+              "Controlled",
+              "Total volume in the flask",
+              "The diluted thiosulfate solution was made up to 25 cm3 with distilled water and 5 cm3 of acid was added, so every run held exactly 30 cm3 of liquid"
+            ],
+            [
+              "Controlled",
+              "Concentration and volume of hydrochloric acid",
+              "5 cm3 of 1.0 mol/dm3 hydrochloric acid measured with the same 10 cm3 measuring cylinder in every run"
+            ],
+            [
+              "Controlled",
+              "Temperature",
+              "All solutions and the flask were left in the same water bath at 30 \u00b0C for ten minutes before mixing, and the flask was stood in the bath during each run"
+            ],
+            [
+              "Controlled",
+              "Depth of liquid above the cross",
+              "The same 100 cm3 conical flask was used, standing on the same white tile, and the cross was viewed from directly above"
+            ],
+            [
+              "Controlled",
+              "Judging the end point",
+              "The same observer timed every run with the same stop-clock, watching for the moment the cross could no longer be seen at all"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Apparatus and materials",
+        "body": "The apparatus was chosen so that the only quantity measured was time, and so that the volume, depth and temperature of the mixture were the same in every run.",
+        "bullets": [
+          "Sodium thiosulfate solution, 0.50 mol/dm3, 250 cm3",
+          "Hydrochloric acid, 1.0 mol/dm3, 100 cm3",
+          "Distilled water in a wash bottle, 250 cm3",
+          "Burette (50 cm3), pipette (25 cm3) and pipette filler, two 10 cm3 measuring cylinders",
+          "100 cm3 conical flask, white tile with a black cross drawn on it, stop-clock",
+          "Water bath at 30 \u00b0C, thermometer, two 250 cm3 beakers",
+          "Safety: goggles, apron and gloves; dilute hydrochloric acid is corrosive to eyes and the sulfur dioxide formed must not be breathed in, so the flask was kept at arm's length and the room was kept ventilated"
+        ]
+      },
+      {
+        "heading": "Method",
+        "body": "1. A stock solution of sodium thiosulfate of concentration 0.50 mol/dm3 was provided; the other four solutions (0.40, 0.30, 0.20 and 0.10 mol/dm3) were made by diluting 20, 15, 10 and 5 cm3 portions of the stock to 25 cm3 with distilled water in separate beakers.\n2. All five solutions and the hydrochloric acid were stood in the water bath at 30 \u00b0C for ten minutes so that every run started at the same temperature.\n3. A black cross was drawn on white paper with a fine marker and the paper was placed under a 100 cm3 conical flask.\n4. 25 cm3 of the 0.50 mol/dm3 sodium thiosulfate solution was pipetted into the flask.\n5. 5 cm3 of 1.0 mol/dm3 hydrochloric acid was measured in a 10 cm3 measuring cylinder and poured into the flask, and the stop-clock was started at once.\n6. The flask was swirled once, placed on the cross and viewed from directly above; the moment the cross could no longer be seen, the stop-clock was stopped and the time in seconds was recorded.\n7. Step 4 to 6 was repeated twice more with the same solution, so that three times were recorded for 0.50 mol/dm3.\n8. Steps 4 to 7 were repeated for each of the other four concentrations, rinsing the flask with distilled water between runs.\n9. A control was carried out in the same way, using 25 cm3 of distilled water instead of sodium thiosulfate solution, to show that the cloudiness comes from the thiosulfate and not from the acid alone.\n10. All readings were entered in a ruled table as they were taken, before any mean was calculated."
+      },
+      {
+        "heading": "Results",
+        "body": "Three times were recorded for each concentration. The times were recorded to the nearest second because the stop-clock was started and stopped by hand, and the mean was calculated to one decimal place.",
+        "table": {
+          "caption": "Table 2: Time for the cross to disappear (s) at each concentration of sodium thiosulfate, with the mean time, the rate (1/time) and the product of concentration and mean time",
+          "columns": [
+            "Concentration (mol/dm3)",
+            "Trial 1 (s)",
+            "Trial 2 (s)",
+            "Trial 3 (s)",
+            "Mean time (s)",
+            "Rate 1/time (s-1)",
+            "Concentration x mean time (mol s/dm3)"
+          ],
+          "rows": [
+            [
+              "0.50",
+              "18",
+              "17",
+              "19",
+              "18.0",
+              "0.056",
+              "9.0"
+            ],
+            [
+              "0.40",
+              "23",
+              "22",
+              "24",
+              "23.0",
+              "0.043",
+              "9.2"
+            ],
+            [
+              "0.30",
+              "30",
+              "31",
+              "29",
+              "30.0",
+              "0.033",
+              "9.0"
+            ],
+            [
+              "0.20",
+              "45",
+              "44",
+              "46",
+              "45.0",
+              "0.022",
+              "9.0"
+            ],
+            [
+              "0.10",
+              "90",
+              "88",
+              "92",
+              "90.0",
+              "0.011",
+              "9.0"
+            ],
+            [
+              "0.00 (water - control)",
+              "no cloudiness",
+              "no cloudiness",
+              "no cloudiness",
+              "no reaction after 300",
+              "0.00",
+              "-"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Sample calculation",
+        "body": "Mean time at 0.50 mol/dm3:\nmean = (18 + 17 + 19) / 3 = 54 / 3 = 18.0 s.\n\nRate expressed as 1/time:\nrate = 1 / mean time = 1 / 18.0 = 0.056 s-1.\n\nAmount of sodium thiosulfate used in this run:\nn = c x V = 0.50 mol/dm3 x (25 / 1000) dm3 = 0.0125 mol.\n\nThe same three calculations were done for each concentration. Because the five solutions were all made up to 25 cm3, the volume of solution was the same in every run and only the concentration changed."
+      },
+      {
+        "heading": "Graph",
+        "body": "The rate, expressed as 1/time, was plotted against the concentration of sodium thiosulfate on graph paper. The x-axis was labelled 'Concentration of sodium thiosulfate / mol dm3' with a scale of 1 cm = 0.05 mol/dm3 running from 0 to 0.60, and the y-axis was labelled 'Rate, 1/time / s-1' with a scale of 1 cm = 0.005 s-1 running from 0 to 0.065. The five points were marked with small crosses and a single straight line of best fit was drawn through the origin.\n\nAll five points lie on or very close to the straight line, and the line passes through the origin. The gradient of the line is read from a large triangle: rise = 0.056 s-1, run = 0.50 mol/dm3, so gradient = 0.056 / 0.50 = 0.11 dm3 mol-1 s-1.\n\nA straight line through the origin means that the rate is directly proportional to the concentration of sodium thiosulfate. Because the five concentrations are evenly spaced and their points are evenly spaced on the graph, the plot is evidence that doubling the concentration doubles the rate."
+      },
+      {
+        "heading": "Analysis and interpretation",
+        "body": "The mean time falls steadily as the concentration rises: 90.0 s at 0.10 mol/dm3 and 18.0 s at 0.50 mol/dm3, a factor of five. The rate, taken as 1/time, rises over the same range from 0.011 to 0.056 s-1, also a factor of five.\n\nBecause time and concentration are inversely related, the product of concentration and mean time should be a constant if the relationship is a simple inverse proportion. The values in the last column of Table 2 are 9.0, 9.2, 9.0, 9.0 and 9.0 mol s/dm3: they are constant to within about 2 per cent, which is about as close as hand timing can come. This is the strongest single piece of evidence in the investigation.\n\nThe graph settles the question too: 1/time against concentration is a straight line through the origin with a gradient of 0.11 dm3 mol-1 s-1, so the rate is proportional to concentration.\n\nThe control gave no cloudiness at all after 300 s. This shows that the sulfur that makes the mixture cloudy is formed from the thiosulfate ions and not from the acid on its own, so the reaction being timed is the one intended.\n\nThe hypothesis is accepted: the rate of this reaction is directly proportional to the concentration of sodium thiosulfate."
+      },
+      {
+        "heading": "Discussion",
+        "body": "Sodium thiosulfate reacts with dilute hydrochloric acid according to the equation\nNa2S2O3(aq) + 2HCl(aq) -> 2NaCl(aq) + S(s) + SO2(g) + H2O(l).\nThe solid sulfur formed is a pale yellow precipitate that makes the solution cloudy, and it is this cloudiness that hides the cross. The time taken for the cross to disappear is therefore a measure of how long the reaction takes to produce enough sulfur, so 1/time is a measure of the rate.\n\nThe results are explained by collision theory. A reaction can only happen when reacting particles collide with enough energy. When the concentration of the sodium thiosulfate is increased, there are more thiosulfate ions in each cm3 of solution, so the ions are closer together. In the same time the ions collide with hydrogen ions more often, so more successful collisions occur per second and the sulfur appears sooner. This is exactly what the data show: at 0.50 mol/dm3 there are five times as many thiosulfate ions per cm3 as at 0.10 mol/dm3, and the reaction is five times as fast (18.0 s against 90.0 s).\n\nTemperature was not varied, and that matters, because a change of temperature would have changed the rate for a different reason - the particles would have gained kinetic energy and more collisions would have carried enough energy to react. Holding the water bath at 30 \u00b0C kept that effect out of the investigation. The total volume was also kept at 30 cm3; if the diluted solutions had been made up by adding water without keeping the volume constant, the dilution itself would have changed the concentration in an uncontrolled way, and the experiment would have measured two things at once.\n\nOne further point should be noticed about the gradient. The straight line shows proportionality over the range tested, but it says nothing about how the rate would behave at much higher concentrations, where the solution is nearly saturated and the sulfur can be seen almost immediately. The range 0.10 to 0.50 mol/dm3 is the range over which this conclusion is safe."
+      },
+      {
+        "heading": "Sources of error and limitations",
+        "body": "The weaknesses of the investigation were identified honestly, with the effect each could have had on the result.",
+        "bullets": [
+          "The end point was judged by eye and timed by hand, so each reading could be out by about half a second. At 0.50 mol/dm3 (18.0 s) that is an error of nearly 3 per cent, while at 0.10 mol/dm3 (90.0 s) it is only about 0.5 per cent, so the fast runs are the least reliable.",
+          "The flask was swirled once by hand and not stirred mechanically, so mixing was not identical in every run.",
+          "The temperature of the laboratory changed slightly during the session; standing the flask in the water bath reduced this but did not remove it.",
+          "The measuring cylinders and beakers used to make the diluted solutions could each be out by about 0.5 cm3, which is up to 5 per cent of a 10 cm3 portion.",
+          "The depth of liquid and the light in the room affect how clearly the cross can be seen, so the same flask, tile and viewing position were used every time, but the light did change as the afternoon went on.",
+          "Improvement: use a light sensor or colorimeter to detect the end point instead of the eye, place the flask on a magnetic stirrer, use a larger total volume to reduce the effect of the measuring errors, keep the whole set of solutions in the 30 \u00b0C bath throughout, and take five readings instead of three at each concentration."
+        ]
+      },
+      {
+        "heading": "Conclusion",
+        "body": "The rate of the reaction between sodium thiosulfate solution and dilute hydrochloric acid is directly proportional to the concentration of the sodium thiosulfate over the range 0.10 to 0.50 mol/dm3. The mean time for the cross to disappear fell from 90.0 s at 0.10 mol/dm3 to 18.0 s at 0.50 mol/dm3, the product of concentration and mean time was constant at about 9.0 mol s/dm3, and the graph of 1/time against concentration was a straight line through the origin. The hypothesis is therefore supported, and the result agrees with collision theory, because a more concentrated solution contains more reacting ions, which collide more frequently."
+      },
+      {
+        "heading": "Bibliography",
+        "body": "Sources are listed in a consistent format.",
+        "bullets": [
+          "CSEC Chemistry syllabus, sections on rates of reaction and collision theory.",
+          "CSEC Chemistry laboratory manual: volumetric technique, use of the burette, pipette and conical flask.",
+          "School laboratory safety rules for handling dilute acids and sulfur dioxide.",
+          "Class notes and worksheets on concentration, rate of reaction and the sodium thiosulfate and acid practical."
+        ]
+      }
+    ],
+    "examinerNotes": [
+      "Each category of the Task Breakdown is answered where the examiner expects it: the hypothesis is in its own short section, the variables are tabulated with the controlled ones named, the method is numbered, the readings are in a ruled table, and the analysis quotes the numbers before explaining them.",
+      "The two marks that most candidates lose in Chemistry SBAs are planning marks: a dependent variable that is not measurable (\"how fast the reaction goes\") and a controlled variable that has been missed. Here the dependent variable is defined as the time for the cross to disappear and the fifth controlled variable is the total volume, which is the trick of this practical.",
+      "The analysis does what full marks require: rate is calculated as 1/time, plotted against concentration, and then checked a second way by showing that concentration x time is constant. Quoting the control and the limit of the concentration range tested are also part of the A and I category.",
+      "Candidate, centre and teacher details are invented placeholders. Write your own investigation, in your own words, with your own readings."
+    ]
+  }
 }

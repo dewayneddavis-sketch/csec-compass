@@ -28,9 +28,10 @@ two samples show a completed oral-examination dossier instead of an SBA report.
 | # | subject | exam surface | SBA marks in our guide | sample wave | status |
 |---|---|---|---|---|---|
 | 1 | biology | CSEC SBA | 40 | 1 - science SBA (P&D, ORR, A&I, M&M) | DONE |
-| 2 | chemistry | CSEC SBA | 30 | 2 - science SBA | TODO |
+
+| 2 | chemistry | CSEC SBA | 30 | 2 - science SBA | DONE |
 | 3 | physics | CSEC SBA | 30 | 2 - science SBA | DONE |
-| 4 | integrated-science | CSEC SBA | 27 | 2 - science SBA | TODO |
+| 4 | integrated-science | CSEC SBA | 27 | 2 - science SBA | DONE |
 | 5 | human-social-biology | CSEC SBA | 18 | 2 - science SBA | TODO |
 | 6 | information-technology | CSEC SBA | 60 | 3 - portfolio SBA | TODO |
 | 7 | edpm | CSEC SBA | 56 | 3 - portfolio SBA | TODO |

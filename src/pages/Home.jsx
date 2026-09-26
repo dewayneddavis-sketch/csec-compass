@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getAllSubjects } from "../data/contentLoader";
 import SubjectCard from "../components/SubjectCard";
+import InstagramLink from "../components/InstagramLink";
 import "./Home.css";
 
 export default function Home() {
@@ -62,6 +63,16 @@ export default function Home() {
             subjects.map((s) => (<SubjectCard key={s.id} subject={s} />))
           )}
         </div>
+      </section>
+      {/* Instagram (owner addition 2026-09-26): one click through to the
+          confirmed profile. The URL, the label and the visible copy all come
+          from src/data/social.js — nothing about the handle is retyped here. */}
+      <section className="home-social">
+        <h2 className="home-social-title">Follow along</h2>
+        <p className="home-social-text">
+          Study tips, new lesson drops and exam countdowns go up on Instagram.
+        </p>
+        <InstagramLink className="home-social-link" />
       </section>
     </div>
   );
