@@ -8,6 +8,14 @@ import {
   bundleSavingsLabel,
   resolvePreselectedSubject,
 } from "../data/pricingSubjects";
+import {
+  BUYER_ROLE_IDS,
+  BUYER_ROLE_LABELS,
+  BUYER_ROLE_QUESTION,
+  BUYER_ROLE_HINT,
+  BUYER_ROLE_REQUIRED_MESSAGE,
+  cleanBuyerRole,
+} from "../data/buyerRoles";
 import "./Pricing.css";
 
 // The per-subject plan and the bundle. Every subject on the platform is
@@ -75,6 +83,11 @@ export default function PricingPage() {
   // Optional: the child this subject/bundle purchase is for. Sent to the
   // checkout, and the webhook turns it into a parent↔child link after payment.
   const [childEmail, setChildEmail] = useState("");
+  // Who the buyer says they are (owner addition 2026-09-26): asked under the
+  // subject selector and on the bundle, before the money moves. It travels in
+  // the checkout metadata and the webhook records it on the grant, so a teacher
+  // who buys on their own can link students afterwards. "" = not answered yet.
+  const [buyerRole, setBuyerRole] = useState("");
 
   useEffect(() => {
     let cancelled = false;
@@ -145,6 +158,15 @@ export default function PricingPage() {
     }
     setBusy(planId);
     setMessage("");
+    // The self-identified role (subject/bundle only). Answered here rather than
+    // guessed: a teacher who is recorded as a student can link nobody, and the
+    // server refuses to invent a role, so this is the buyer's only chance to say.
+    const role = planId === "subject" || planId === "bundle" ? cleanBuyerRole(buyerRole) : "";
+    if ((planId === "subject" || planId === "bundle") && !role) {
+      setBusy(null);
+      setMessage(BUYER_ROLE_REQUIRED_MESSAGE);
+      return;
+    }
     try {
       const res = await fetch("/api/checkout/create-session", {
         method: "POST",
@@ -158,6 +180,7 @@ export default function PricingPage() {
           schoolName: school ? school.name : null,
           adminEmail: school ? school.adminEmail : null,
           childEmail: child || null,
+          buyerRole: role || null,
         }),
       });
       const data = await res.json();
@@ -231,10 +254,39 @@ export default function PricingPage() {
                 want above. Any of the {subjectOptions.length} subjects can be bought on its own.
               </p>
             )}
+            {/* Who the buyer is (owner addition 2026-09-26). Asked on the two
+                plans a person buys for themselves or a class — under the
+                subject selector on the single-subject card, and on the bundle
+                before purchase. A school licence deliberately does NOT ask:
+                there the school is the buyer and its admin arranges its own
+                teachers and students. */}
+            {(plan.id === "subject" || plan.id === "bundle") && (
+              <div className="pricing-role">
+                <label className="pricing-subject-label" htmlFor={`buyer-role-${plan.id}`}>
+                  {BUYER_ROLE_QUESTION}
+                </label>
+                <select
+                  id={`buyer-role-${plan.id}`}
+                  className="pricing-select pricing-role-select"
+                  value={buyerRole}
+                  onChange={(e) => setBuyerRole(e.target.value)}
+                >
+                  <option value="" disabled>{BUYER_ROLE_QUESTION}</option>
+                  {BUYER_ROLE_IDS.map((id) => (
+                    <option key={id} value={id}>{BUYER_ROLE_LABELS[id]}</option>
+                  ))}
+                </select>
+                <p className="pricing-role-hint">{BUYER_ROLE_HINT}</p>
+              </div>
+            )}
             <button
               className="pricing-btn"
               onClick={() => handleBuy(plan.id, plan.id === "subject" ? subjectId : null)}
-              disabled={busy === plan.id || (plan.id === "subject" && !subjectId)}
+              disabled={
+                busy === plan.id ||
+                (plan.id === "subject" && !subjectId) ||
+                ((plan.id === "subject" || plan.id === "bundle") && !cleanBuyerRole(buyerRole))
+              }
             >
               {busy === plan.id ? "Redirecting..." : "Buy Now"}
             </button>

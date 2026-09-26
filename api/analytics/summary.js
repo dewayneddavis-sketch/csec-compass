@@ -275,6 +275,9 @@ export default async function handler(req, res) {
     //      inside their own school, or the teacher linked their own students.
     //      Being linked IS an authorization step. This rule also keeps the
     //      teachers who were verified live before schools existed working.
+    //   5. the caller BOUGHT access and chose "Teacher" at checkout (owner
+    //      addition 2026-09-26) — a verified paying purchaser, recorded by the
+    //      Stripe webhook on their grant row.
     //
     // Anyone else gets 403 and ZERO student data — this fails closed, like every
     // other access check in the platform.
@@ -336,9 +339,33 @@ export default async function handler(req, res) {
       }
 
       if (!access) {
+        // Rule 5 — a PAYING purchaser who chose "Teacher" at checkout (owner
+        // addition 2026-09-26: a teacher may buy on their own and pull a class).
+        // api/stripe/webhook.js wrote that row after a VERIFIED Stripe payment
+        // and purchases is deny-all RLS behind the service-role key, so the row
+        // itself is the proof of purchase. Fails closed: no id, no row, or a
+        // table without the buyer_role column simply does not qualify, and the
+        // rules above still stand on such a database.
+        const { data: paidRows, error: paidError } = await supabase
+          .from("purchases")
+          .select("id")
+          .eq("user_id", user.id)
+          .eq("buyer_role", "teacher")
+          .limit(1);
+        if (paidError) {
+          console.warn(
+            "API /api/analytics/summary: purchases.buyer_role lookup failed — treating the caller as not a purchasing teacher:",
+            paidError.message
+          );
+        } else if ((paidRows || []).length > 0) {
+          access = "purchase";
+        }
+      }
+
+      if (!access) {
         return res.status(403).json({
           error:
-            "Forbidden: teacher access required. Ask your school's admin to add your email to your school's teacher roster (or the account owner to add it to the teacher list), and sign in again.",
+            "Forbidden: teacher access required. Ask your school's admin to add your email to your school's teacher roster (or the account owner to add it to the teacher list), or buy access and choose \"Teacher\" at checkout — then sign in again.",
         });
       }
 
