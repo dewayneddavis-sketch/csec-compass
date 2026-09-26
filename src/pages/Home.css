@@ -25,3 +25,8 @@
 .home-teacher-actions { display: flex; flex-direction: column; gap: .6rem; align-items: stretch; }
 .home-teacher-cta-ghost { background: #fff; color: #4338ca; border: 2px solid #c7d2fe; }
 .home-teacher-cta-ghost:hover { background: #eef2ff; box-shadow: 0 8px 24px rgba(67,56,202,.18); }
+/* Instagram strip at the foot of the homepage (owner addition 2026-09-26) */
+.home-social { padding: 2.5rem 1.5rem 3rem; text-align: center; }
+.home-social-title { font-size: 1.25rem; font-weight: 700; color: #111827; margin: 0 0 .4rem; }
+.home-social-text { color: #6b7280; font-size: .95rem; margin: 0 0 .9rem; }
+.home-social-link { font-size: .95rem; }

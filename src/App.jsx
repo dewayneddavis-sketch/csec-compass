@@ -18,6 +18,8 @@ import TermsPage from "./pages/TermsPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import ContactPage from "./pages/ContactPage";
 import { TRADEMARK_DISCLAIMER } from "./data/legal";
+import InstagramLink from "./components/InstagramLink";
+import { INSTAGRAM_SHORT_CTA } from "./data/social";
 import ProtectedRoute from "./components/ProtectedRoute";
 import GuideBot from "./components/GuideBot";
 import "./App.css";
@@ -68,6 +70,10 @@ export default function App() {
               <Link to="/terms">Terms of Service</Link>
               <span className="app-footer-sep" aria-hidden="true">·</span>
               <Link to="/privacy">Privacy Policy</Link>
+              {/* Instagram (owner addition 2026-09-26): the same single-source
+                  link the homepage uses, so the handle lives in one place. */}
+              <span className="app-footer-sep" aria-hidden="true">·</span>
+              <InstagramLink className="app-footer-instagram" text={INSTAGRAM_SHORT_CTA} />
             </p>
           </footer>
           {/* The Compass Guide (owner decision 2026-09-24): a floating,
