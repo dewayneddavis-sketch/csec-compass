@@ -49,5 +49,239 @@
     "Data table prepared",
     "Graph plotted",
     "Conclusion linked to hypothesis"
-  ]
+  ],
+  "completedSample": {
+    "title": "A complete, full-mark Biology SBA: how temperature affects catalase activity in potato tissue",
+    "viewOnlyNote": "For viewing and learning only. This is an original worked example written for CSEC Compass, not a real candidate's submission and not a CXC exemplar. Read it, study how each category is satisfied, then write your own investigation in your own words. This sample cannot be copied.",
+    "profile": [
+      {
+        "label": "Candidate",
+        "value": "Sample Candidate (invented)"
+      },
+      {
+        "label": "Centre",
+        "value": "Sample Secondary School (invented)"
+      },
+      {
+        "label": "Subject",
+        "value": "CSEC Biology - School-Based Assessment"
+      },
+      {
+        "label": "Submission",
+        "value": "One bound report, 12 pages, with graphs in an appendix"
+      }
+    ],
+    "categories": [
+      {
+        "section": "Planning and Designing",
+        "marks": "10",
+        "awarded": "10",
+        "comment": "A testable hypothesis, a named independent variable, a measured dependent variable and four controlled variables, plus a design that produces quantitative data in triplicate."
+      },
+      {
+        "section": "Observation, Recording and Reporting",
+        "marks": "10",
+        "awarded": "10",
+        "comment": "Raw readings recorded to the nearest mm in a ruled table with units, trial numbers and calculated means; the graph has labelled axes, a scale, units and a smooth curve."
+      },
+      {
+        "section": "Analysis and Interpretation",
+        "marks": "10",
+        "awarded": "10",
+        "comment": "The pattern is described from the data, explained with enzyme theory (collision frequency, then denaturation above the optimum), and the hypothesis is accepted with the evidence quoted."
+      },
+      {
+        "section": "Measurement and Manipulation",
+        "marks": "10",
+        "awarded": "10",
+        "comment": "Safe, competent technique with the correct apparatus, justified use of a water bath and a control, and consistent cork-borer and ruler technique recorded in the method."
+      }
+    ],
+    "pages": [
+      {
+        "heading": "Cover page and contents",
+        "body": "Title: An investigation into the effect of temperature on the activity of the enzyme catalase in potato tissue, measured by the volume of oxygen foam produced in two minutes.",
+        "bullets": [
+          "Candidate: Sample Candidate (invented) - Class: Form 5B",
+          "Subject and teacher: CSEC Biology, SBA report",
+          "Date submitted: 14 March",
+          "Contents: Aim, Hypothesis, Variables, Apparatus, Method, Results, Graph, Analysis, Discussion, Sources of error, Conclusion, Bibliography",
+          "Acknowledgement: laboratory technician for preparing the water baths, teacher for safety supervision"
+        ]
+      },
+      {
+        "heading": "Aim",
+        "body": "To determine the effect of temperature on the activity of the enzyme catalase in potato tissue, measured as the height of oxygen foam produced when potato cylinders are placed in hydrogen peroxide."
+      },
+      {
+        "heading": "Hypothesis",
+        "body": "As the temperature increases from 10 \u00b0C to 40 \u00b0C, the height of foam produced in two minutes will increase, because the enzyme and substrate molecules gain kinetic energy and collide more often. Above 40 \u00b0C the height of foam will decrease sharply, because the enzyme molecules are denatured and lose the shape of their active sites."
+      },
+      {
+        "heading": "Variables",
+        "body": "One variable is changed deliberately, one is measured, and everything else is held constant so the result can be attributed to temperature alone.",
+        "table": {
+          "caption": "Table 1: Variables and how each was controlled",
+          "columns": [
+            "Type of variable",
+            "Variable",
+            "How it was handled"
+          ],
+          "rows": [
+            [
+              "Independent",
+              "Temperature of the hydrogen peroxide and potato tissue",
+              "Water baths at 10, 20, 30, 40 and 50 \u00b0C; a thermometer checked each bath before the reaction started"
+            ],
+            [
+              "Dependent",
+              "Volume of oxygen produced",
+              "Height of foam measured in mm with a ruler after exactly 2 minutes"
+            ],
+            [
+              "Controlled",
+              "Volume and concentration of hydrogen peroxide",
+              "10 cm3 of 2-volume hydrogen peroxide measured with a 10 cm3 measuring cylinder for every trial"
+            ],
+            [
+              "Controlled",
+              "Size of potato tissue",
+              "Cylinders cut with the same size 4 cork borer, trimmed to exactly 20 mm"
+            ],
+            [
+              "Controlled",
+              "Time allowed for the reaction",
+              "Stop-clock started as the potato was dropped in; foam height read at 2 minutes"
+            ],
+            [
+              "Controlled",
+              "Pre-treatment of tissue",
+              "All cylinders taken from the same potato and left at room temperature for 10 minutes so they started at the same condition"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Apparatus and materials",
+        "body": "The apparatus was selected so that the only measured quantity was foam height and so that the temperature could be held steady.",
+        "bullets": [
+          "Fresh potato (one large tuber), cork borer (4 mm), scalpel and tile",
+          "Hydrogen peroxide, 2-volume, 50 cm3",
+          "Five water baths at 10, 20, 30, 40 and 50 \u00b0C, five thermometers",
+          "Five boiling tubes, test-tube rack, 10 cm3 measuring cylinder",
+          "Stop-clock, 300 mm ruler, paper towels",
+          "Safety: goggles, apron, gloves; hydrogen peroxide is an irritant"
+        ]
+      },
+      {
+        "heading": "Method",
+        "body": "1. The five water baths were set to 10, 20, 30, 40 and 50 \u00b0C and the temperature of each was confirmed with a thermometer.\n2. A cork borer was used to cut ten cylinders of potato, and each cylinder was trimmed with a scalpel on a tile to exactly 20 mm.\n3. 10 cm3 of 2-volume hydrogen peroxide was measured into each of five boiling tubes and the tubes were stood in their water baths for five minutes to reach the bath temperature.\n4. The first boiling tube was removed from the bath, one potato cylinder was added and the stop-clock was started immediately.\n5. After exactly two minutes the height of the foam above the liquid was measured in mm with the ruler held against the side of the tube, and the reading was recorded.\n6. Steps 4 and 5 were repeated twice more at the same temperature, so that three readings were obtained for each temperature.\n7. Steps 4 to 6 were repeated for the remaining four temperatures, using a clean boiling tube for each trial.\n8. A control was set up in the same way at 30 \u00b0C using a cylinder of boiled potato, to show that the reaction depends on the enzyme and not on the peroxide alone."
+      },
+      {
+        "heading": "Results",
+        "body": "Each temperature was tested three times. The raw readings were recorded as they were taken, before any averaging, and the mean was calculated to the nearest whole mm because the ruler could only be read to 1 mm.",
+        "table": {
+          "caption": "Table 2: Height of oxygen foam (mm) after 2 minutes at each temperature",
+          "columns": [
+            "Temperature (\u00b0C)",
+            "Trial 1 (mm)",
+            "Trial 2 (mm)",
+            "Trial 3 (mm)",
+            "Mean (mm)"
+          ],
+          "rows": [
+            [
+              "10",
+              "18",
+              "17",
+              "19",
+              "18"
+            ],
+            [
+              "20",
+              "34",
+              "33",
+              "35",
+              "34"
+            ],
+            [
+              "30",
+              "52",
+              "51",
+              "53",
+              "52"
+            ],
+            [
+              "40",
+              "61",
+              "60",
+              "62",
+              "61"
+            ],
+            [
+              "50",
+              "12",
+              "11",
+              "13",
+              "12"
+            ],
+            [
+              "30 (boiled potatoes - control)",
+              "1",
+              "1",
+              "2",
+              "1"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Sample calculation",
+        "body": "Mean foam height at 30 \u00b0C:\nmean = (52 + 51 + 53) / 3 = 156 / 3 = 52 mm.\nThe rate of reaction can also be expressed as a rate:\nrate = foam height / time = 52 mm / 2 min = 26 mm per minute at 30 \u00b0C."
+      },
+      {
+        "heading": "Graph",
+        "body": "A graph of mean foam height (mm) against temperature (\u00b0C) was plotted on graph paper. The x-axis was labelled 'Temperature / \u00b0C' with a scale of 1 cm = 5 \u00b0C from 0 to 60, and the y-axis was labelled 'Mean height of foam / mm' with a scale of 1 cm = 10 mm from 0 to 70. The points were joined with a smooth curve rather than a series of straight lines, because a line graph shows a trend in continuous data.\n\nThe curve rises from 18 mm at 10 \u00b0C to a peak of 61 mm at 40 \u00b0C, then falls steeply to 12 mm at 50 \u00b0C. The control point (boiled potato at 30 \u00b0C, 1 mm) is shown as a separate labelled point, not joined to the curve, because it is a control rather than part of the temperature series."
+      },
+      {
+        "heading": "Analysis and interpretation",
+        "body": "Between 10 \u00b0C and 40 \u00b0C the mean foam height rises by 43 mm, an increase of roughly 3.4 times the value at 10 \u00b0C. The relationship is not a straight line: the increase per 10 \u00b0C is 16 mm, 18 mm and then 9 mm, so the rate of increase slows as the temperature approaches 40 \u00b0C. At 50 \u00b0C the mean falls by 49 mm from the peak, to a value below the reading at 10 \u00b0C.\n\nThe control gave a mean of 1 mm at 30 \u00b0C, compared with 52 mm for fresh potato at the same temperature. This supports the conclusion that the foam is produced by an enzyme in the potato and not by the hydrogen peroxide breaking down by itself.\n\nThe hypothesis is accepted. The evidence is the steady increase from 10 \u00b0C to 40 \u00b0C and the much lower mean at 50 \u00b0C."
+      },
+      {
+        "heading": "Discussion",
+        "body": "Catalase is an enzyme found in potato tissue that speeds up the breakdown of hydrogen peroxide into water and oxygen. The oxygen released is what forms the foam measured in this investigation, so the height of the foam is a measure of the rate at which the enzyme worked.\n\nBetween 10 \u00b0C and 40 \u00b0C the results can be explained by kinetic energy. As the temperature rises, both enzyme and substrate molecules move faster, so they collide more often and more of the collisions have enough energy to form enzyme-substrate complexes. More complexes break down per second, so more oxygen is released and the foam is higher.\n\nAbove the optimum temperature the active site of the enzyme loses its shape, so the substrate no longer fits and the enzyme is denatured. This change is permanent. That explains why the mean at 50 \u00b0C fell to 12 mm, well below the value at 40 \u00b0C, and why the boiled potato in the control produced almost no foam at all: boiling had already denatured the catalase. The optimum temperature for potato catalase in this experiment lies between 30 \u00b0C and 50 \u00b0C, closer to 40 \u00b0C, and a further test at 45 \u00b0C would locate it more precisely.\n\nThe shape of the curve is therefore a balance of two effects: faster collisions up to the optimum, then loss of active sites above it."
+      },
+      {
+        "heading": "Sources of error and limitations",
+        "body": "The main weaknesses of the investigation were identified honestly, with the effect each one could have had on the result.",
+        "bullets": [
+          "Foam height is only an indirect measure of oxygen volume, and the top of the foam is difficult to read, so each reading could be out by about 1-2 mm.",
+          "The thermometer was read before the reaction but the tube did cool slightly while foam was being measured, especially at 50 \u00b0C.",
+          "Cylinders cut by hand may differ very slightly in surface area; the cork borer and 20 mm trim reduced this but did not remove it.",
+          "Only one potato was used, so the result may depend on that particular tuber.",
+          "Two minutes is a single time point: a faster method would be to collect the gas in a syringe and record the volume every 10 seconds.",
+          "Improvement: repeat the whole investigation with three potatoes, use a gas syringe to measure oxygen volume, and test 35, 40 and 45 \u00b0C to find the optimum more precisely."
+        ]
+      },
+      {
+        "heading": "Conclusion",
+        "body": "The activity of catalase in potato tissue increased as temperature rose from 10 \u00b0C to 40 \u00b0C and then fell sharply at 50 \u00b0C. The mean foam height was highest at 40 \u00b0C (61 mm) and lowest at 50 \u00b0C (12 mm), and the boiled-potato control produced almost no foam. The results support the hypothesis and the biological theory that enzyme activity increases with temperature up to an optimum and falls sharply above it because the enzyme is denatured."
+      },
+      {
+        "heading": "Bibliography",
+        "body": "Sources are listed in a consistent format.",
+        "bullets": [
+          "CSEC Biology syllabus, section on enzymes and their optimum conditions.",
+          "School laboratory handbook: safety rules for handling hydrogen peroxide and hot water baths.",
+          "Class notes and practical worksheets on enzymes, temperature and denaturation."
+        ]
+      }
+    ],
+    "examinerNotes": [
+      "Every category in the Task Breakdown is answered where the examiner expects it: the hypothesis is in its own short section, the variables are tabulated, the method is numbered, the data is in a ruled table, the graph has axes, scales and units, and the discussion explains the trend using enzyme theory.",
+      "The sample shows the difference between describing data and interpreting it: the numbers are quoted, then explained, then the hypothesis is accepted or rejected against them.",
+      "The control, the repeats and the sources of error are the three things most often missing from real submissions, and all three are present here.",
+      "Candidate, centre and teacher details are invented placeholders. Write your own investigation, in your own words, with your own readings."
+    ]
+  }
 }

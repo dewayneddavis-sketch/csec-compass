@@ -59,6 +59,8 @@ export default function SBASection({ subjectId }) {
   const sample = data.sample || [];
   const tasks = data.tasks || [];
   const checklist = data.checklist || [];
+  const completed = data.completedSample || null;
+  const blockCopy = (e) => e.preventDefault();
 
   return (
     <div className="sba-container">
@@ -123,6 +125,90 @@ export default function SBASection({ subjectId }) {
           </ul>
         </section>
       )}
+      {completed && (
+        <section className="sba-card sba-completed-card">
+          <div className="sba-section-head">
+            <h4>Completed Sample {noun}</h4>
+            <span className="sba-badge">View only</span>
+          </div>
+          <p className="sba-viewonly">{completed.viewOnlyNote || "For viewing and learning only. This is an original worked example written for CSEC Compass -- read it, study how each category is earned, then write your own submission in your own words."}</p>
+          <div
+            className="sba-protected"
+            style={{ userSelect: "none", WebkitUserSelect: "none", msUserSelect: "none" }}
+            onCopy={blockCopy}
+            onCut={blockCopy}
+            onContextMenu={blockCopy}
+            onDragStart={blockCopy}
+          >
+            {completed.title && <p className="sba-sample-title">{completed.title}</p>}
+            {Array.isArray(completed.profile) && completed.profile.length > 0 && (
+              <div className="sba-profile">
+                {completed.profile.map((p, i) => (
+                  <span key={i} className="sba-profile-chip"><strong>{p.label}:</strong> {p.value}</span>
+                ))}
+              </div>
+            )}
+            {Array.isArray(completed.categories) && completed.categories.length > 0 && (
+              <div className="sba-cat-wrap">
+                <h5 className="sba-subhead">How this sample earns each SBA category</h5>
+                <div className="sba-table-wrap">
+                  <table className="sba-cat-table">
+                    <thead>
+                      <tr><th>Category</th><th>Marks</th><th>Awarded</th><th>What the examiner sees</th></tr>
+                    </thead>
+                    <tbody>
+                      {completed.categories.map((c, i) => (
+                        <tr key={i}>
+                          <td>{c.section}</td>
+                          <td>{c.marks}</td>
+                          <td className="sba-awarded">{c.awarded}</td>
+                          <td>{c.comment}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+            {(completed.pages || []).map((pg, i) => (
+              <div key={i} className="sba-page">
+                <h5>{pg.heading}</h5>
+                {pg.body && String(pg.body).split("\n\n").map((para, j) => (<p key={j}>{para}</p>))}
+                {pg.table && (
+                  <div className="sba-table-wrap">
+                    {pg.table.caption && <p className="sba-table-caption">{pg.table.caption}</p>}
+                    <table className="sba-sample-table">
+                      <thead>
+                        <tr>{(pg.table.columns || []).map((c, k) => (<th key={k}>{c}</th>))}</tr>
+                      </thead>
+                      <tbody>
+                        {(pg.table.rows || []).map((r, k) => (
+                          <tr key={k}>{r.map((cell, m) => (<td key={m}>{cell}</td>))}</tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                )}
+                {Array.isArray(pg.bullets) && pg.bullets.length > 0 && (
+                  <ul className="sba-sample-list">
+                    {pg.bullets.map((b, j) => (<li key={j}>{b}</li>))}
+                  </ul>
+                )}
+              </div>
+            ))}
+            {Array.isArray(completed.examinerNotes) && completed.examinerNotes.length > 0 && (
+              <div className="sba-examiner">
+                <h5 className="sba-subhead">Why this sample scores full marks</h5>
+                <ul className="sba-sample-list">
+                  {completed.examinerNotes.map((n, i) => (<li key={i}>{n}</li>))}
+                </ul>
+              </div>
+            )}
+            <p className="sba-protect-note">Selection and copying are switched off on this sample.</p>
+          </div>
+        </section>
+      )}
+
     </div>
   );
 }
