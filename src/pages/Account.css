@@ -11,6 +11,11 @@
 .acct-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.25rem}
 .acct-card{background:#fff;border-radius:16px;padding:1.5rem;box-shadow:0 1px 3px rgba(0,0,0,.06),0 4px 12px rgba(0,0,0,.03);border:1px solid #f3f4f6}
 .acct-card-full{grid-column:1/-1}
+/* The student's Messages tab (chat PR 3). Full width, and NOT .acct-card: the
+   shared MessagesPanel draws its own white card, so nesting it in a second one
+   would read as a box inside a box. */
+.acct-messages{grid-column:1/-1}
+.acct-messages .tmsg{margin-top:0}
 .acct-card h3{font-size:1rem;font-weight:700;color:#111827;margin-bottom:1rem;padding-bottom:.5rem;border-bottom:1px solid #f3f4f6}
 .acct-field{display:flex;justify-content:space-between;padding:.4rem 0;font-size:.88rem;color:#374151}
 .acct-field span:first-child{color:#6b7280}

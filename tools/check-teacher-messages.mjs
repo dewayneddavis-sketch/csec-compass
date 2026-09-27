@@ -24,9 +24,13 @@
 //      a failed send.
 //   5. FAILURE COPY IS HONEST — each status has its own sentence and none of
 //      them reads as "you have no messages".
-//   6. WIRING + BUDGET — the panel is on /teacher (not /parent), is reachable
-//      and labelled for a keyboard/screen-reader user, stores nothing locally,
-//      and api/ is still at 12 Serverless Functions.
+//   6. WIRING + BUDGET — the teacher's panel is on /teacher (not /parent), the
+//      panel it shares with the student's tab is reachable and labelled for a
+//      keyboard/screen-reader user, stores nothing locally, and api/ is still at
+//      12 Serverless Functions.
+//
+// The student's half of this same panel (chat PR 3, /account) has its own
+// harness: tools/check-student-messages.mjs.
 import { readFileSync, readdirSync, statSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join, relative } from "node:path";
@@ -557,11 +561,11 @@ section("7. wiring: where the panel lives, and what it must never do");
 
 {
   const teacherPage = read("src/pages/TeacherPage.jsx");
-  const component = read("src/components/TeacherMessages.jsx");
-  const css = read("src/components/TeacherMessages.css");
+  const panel = read("src/components/MessagesPanel.jsx");
+  const css = read("src/components/MessagesPanel.css");
   const parentPage = read("src/pages/ParentPage.jsx");
 
-  check("the teacher dashboard imports the Messages panel", /import TeacherMessages from "\.\.\/components\/TeacherMessages";/.test(teacherPage));
+  check("the teacher dashboard imports its Messages wrapper", /import TeacherMessages from "\.\.\/components\/TeacherMessages";/.test(teacherPage));
   check(
     "and renders it with the session's token and the signed-in email",
     /<TeacherMessages token=\{token\} me=\{user\.email\} \/>/.test(teacherPage)
@@ -570,32 +574,37 @@ section("7. wiring: where the panel lives, and what it must never do");
     "the panel is only reached after the server has accepted this account as a teacher",
     teacherPage.indexOf("<TeacherMessages") > teacherPage.indexOf("const roster = data?.roster || []")
   );
-  check("the parent dashboard does not carry it (PR 3 is the student side)", !/TeacherMessages/.test(parentPage));
+  check("the parent dashboard carries no Messages panel (it is not a side of the chat)", !/TeacherMessages|StudentMessages/.test(parentPage));
 
-  check("the panel imports its logic module with an explicit extension (Node-ESM resolvable)", /from "\.\.\/data\/teacherMessages\.js"/.test(component));
-  check("the panel has its own stylesheet", /import "\.\/TeacherMessages\.css";/.test(component) && css.includes(".tmsg-contacts"));
-  check("the panel talks to exactly one endpoint", /MESSAGES_ENDPOINT/.test(component) && !/\/api\/(analytics|admin|sync|auth)/.test(component));
-  check("it names no student's email in its source (the list always comes from the server)", !/[\w.+-]+@[\w-]+\.\w+/.test(component));
-  check("it never sends an identity field", !/senderEmail|senderId|sender_email/.test(component));
-  check("it never stores a private message on the device", !/localStorage|sessionStorage/.test(component));
-  check("every request carries the bearer token", (component.match(/authHeaders\(token\)/g) || []).length >= 2 && /sendInit\(token,/.test(component));
+  check("the panel imports its logic module with an explicit extension (Node-ESM resolvable)", /from "\.\.\/data\/teacherMessages\.js"/.test(panel));
+  check("the panel has its own stylesheet", /import "\.\/MessagesPanel\.css";/.test(panel) && css.includes(".tmsg-contacts"));
+  check("the panel talks to exactly one endpoint", /MESSAGES_ENDPOINT/.test(panel) && !/\/api\/(analytics|admin|sync|auth)/.test(panel));
+  check("it names no student's email in its source (the list always comes from the server)", !/[\w.+-]+@[\w-]+\.\w+/.test(panel));
+  check("it never sends an identity field", !/senderEmail|senderId|sender_email/.test(panel));
+  check("it never stores a private message on the device", !/localStorage|sessionStorage/.test(panel));
+  check("every request carries the bearer token", (panel.match(/authHeaders\(token\)/g) || []).length >= 2 && /sendInit\(token,/.test(panel));
+
+  // The same panel serves the student's tab (PR 3) — that side has its own
+  // harness (tools/check-student-messages.mjs); this one keeps the teacher's
+  // wrapper honest, and both are wired through the ONE shared panel.
+  check("the two sides share one panel and differ only by their copy", /copy=\{CHAT_COPY\.teacher\}/.test(read("src/components/TeacherMessages.jsx")) && /copy=\{CHAT_COPY\.student\}/.test(read("src/components/StudentMessages.jsx")));
 
   // Accessibility of the panel.
-  check("the panel is a labelled region", /<section className="tmsg" aria-labelledby="tmsg-title">/.test(component) && /id="tmsg-title"/.test(component));
-  check("the list of people has a nav label", /aria-label="Students you can message"/.test(component));
-  check("the open conversation is marked with aria-current", /aria-current=\{person\.email === selected \? "true" : undefined\}/.test(component));
-  check("the send box has a real <label> and an id", /htmlFor="tmsg-draft"/.test(component) && /id="tmsg-draft"/.test(component));
-  check("the character count is described to assistive tech", /aria-describedby="tmsg-count"/.test(component) && /id="tmsg-count"/.test(component));
-  check("errors are announced (role=alert)", (component.match(/role="alert"/g) || []).length >= 2);
-  check("progress and the sent/failed line are announced politely", /role="status" aria-live="polite"/.test(component));
-  check("the message list is an ordered list, so order is conveyed", /<ol className="tmsg-list">/.test(component) && /<time className="tmsg-item-time" dateTime=/.test(component));
-  check("buttons that only act in the page are type=button", /type="button"/.test(component) && /type="submit"/.test(component));
-  check("the panel is reachable by keyboard (no tabindex=-1 / clickable divs)", !/tabIndex=\{-1\}|onClick=\{[\s\S]{0,40}<div/.test(component));
+  check("the panel is a labelled region", /<section className="tmsg" aria-labelledby="tmsg-title">/.test(panel) && /id="tmsg-title"/.test(panel));
+  check("the list of people has a nav label", /aria-label=\{contactsHeading\}/.test(panel) && /const contactsHeading = `\$\{Word\} you can message`;/.test(panel));
+  check("the open conversation is marked with aria-current", /aria-current=\{person\.email === selected \? "true" : undefined\}/.test(panel));
+  check("the send box has a real <label> and an id", /htmlFor="tmsg-draft"/.test(panel) && /id="tmsg-draft"/.test(panel));
+  check("the character count is described to assistive tech", /aria-describedby="tmsg-count"/.test(panel) && /id="tmsg-count"/.test(panel));
+  check("errors are announced (role=alert)", (panel.match(/role="alert"/g) || []).length >= 2);
+  check("progress and the sent/failed line are announced politely", /role="status" aria-live="polite"/.test(panel));
+  check("the message list is an ordered list, so order is conveyed", /<ol className="tmsg-list">/.test(panel) && /<time className="tmsg-item-time" dateTime=/.test(panel));
+  check("buttons that only act in the page are type=button", /type="button"/.test(panel) && /type="submit"/.test(panel));
+  check("the panel is reachable by keyboard (no tabindex=-1 / clickable divs)", !/tabIndex=\{-1\}|onClick=\{[\s\S]{0,40}<div/.test(panel));
 
   // The draft survives a failed send: no clearing before the store is confirmed.
-  const sendBody = component.slice(component.indexOf("const res = await fetch(MESSAGES_ENDPOINT"), component.indexOf("const stored = readMessage"));
+  const sendBody = panel.slice(panel.indexOf("const res = await fetch(MESSAGES_ENDPOINT"), panel.indexOf("const stored = readMessage"));
   check("a failed send is reported and the draft is kept", /setNotice\(chatError\(/.test(sendBody) && !/setDraft\(""\)/.test(sendBody), sendBody.slice(0, 120));
-  const errorBranch = component.slice(component.indexOf("const loadThread = useCallback("));
+  const errorBranch = panel.slice(panel.indexOf("const loadThread = useCallback("));
   check(
     "a refused thread is cleared, never shown from memory",
     /setThread\(null\)/.test(errorBranch.slice(0, 600)) && /setThreadError\(chatError\(/.test(errorBranch.slice(0, 600))
