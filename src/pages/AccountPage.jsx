@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import { useAuth } from "../context/AuthContext";
+import StudentMessages from "../components/StudentMessages";
 import { usePurchases } from "../data/usePurchases";
 import { getAllSubjects } from "../data/contentLoader";
 import { Link } from "react-router-dom";
 import "./Account.css";
 
 export default function AccountPage() {
-  const { user, signOut, loading } = useAuth();
+  const { user, session, signOut, loading } = useAuth();
   const { hasAccess, hasBundle, hasSchoolLicense, schoolLicenseSeats, purchasedSubjects } = usePurchases();
   const [subjects, setSubjects] = useState([]);
 
@@ -107,6 +108,15 @@ export default function AccountPage() {
           <Link to="/parent" className="acct-btn acct-btn-secondary">Parent dashboard</Link>
         </div>
 
+        {/* The student's Messages tab (chat PR 3 of 3). Private threads with the
+            teachers linked to THIS email address — the server decides who that is
+            (GET /api/messages?contacts=1), so the card can never show, or claim, a
+            teacher the account is not linked to. It sits full width in the grid
+            (the panel brings its own card) and without a <h3>, because the panel
+            is already a labelled region titled "Messages". */}
+        <div className="acct-messages">
+          <StudentMessages token={session?.access_token} me={user.email} />
+        </div>
         <div className="acct-card">
           <h3>Account Actions</h3>
           <button className="acct-btn acct-btn-danger" onClick={signOut}>Sign Out</button>

@@ -1,4 +1,6 @@
-// Client-side logic for the teacher↔student chat (chat PR 2 of 3).
+// Client-side logic for the teacher↔student chat, shared by BOTH sides of it:
+// the teacher dashboard's Messages panel (chat PR 2) and the student's Messages
+// tab (chat PR 3). api/messages.js takes no side — the caller's token decides.
 //
 // api/messages.js (PR #90) is the whole server contract:
 //   GET  /api/messages?contacts=1        → the people the CALLER is linked to
@@ -10,7 +12,9 @@
 // shapes, merging pages without showing a message twice, the cursor a poll
 // asks "what is new since…" with, the key a retried send must reuse so a
 // timeout cannot post twice, and the honest sentence for each failure status.
-// src/components/TeacherMessages.jsx only renders what these return.
+// src/components/MessagesPanel.jsx only renders what these return, for both
+// sides, and CHAT_COPY at the bottom of this file holds the wording both
+// perspectives use, in one place, so the two panels cannot drift apart.
 //
 // tools/check-teacher-messages.mjs drives the REAL api/messages.js handler with
 // the offline Supabase stub and pushes its actual responses through these
@@ -211,4 +215,67 @@ export function canSend(draft, sending) {
   if (typeof draft !== "string") return false;
   const trimmed = draft.trim();
   return trimmed.length > 0 && draft.length <= MAX_MESSAGE_CHARS;
+}
+
+// ---------------------------------------------------------------------------
+// The WORDING both sides of the chat use, in ONE place.
+//
+// The panel (src/components/MessagesPanel.jsx) takes a `copy` object — CHAT_COPY
+// .teacher from the teacher dashboard, CHAT_COPY.student from the student's
+// Messages tab on /account — so neither side can invent a sentence of its own and
+// changing what one side promises is a change in one file.
+//
+// Every string that NAMES the other side lives here, which is the point: the
+// panel's own source contains no role word at all, so a student can never be told
+// to "link a student" (the failure this table exists to prevent).
+//
+// `empty` and `refusedHint` describe the caller's OWN situation, and before any
+// link exists there is nothing else to go on, so the perspective decides those two.
+// The rest is the same sentence with the other side's name in it.
+export const CHAT_COPY = {
+  teacher: {
+    otherRole: "student",
+    otherPlural: "students",
+    intro:
+      "Private messages with the students linked to you. Students see these in their own Messages tab, and nobody else can read them — a student you have not linked cannot be messaged.",
+    empty:
+      "No students are linked to you yet, so there is nobody to message. Link the students you teach with the card above and their names appear here.",
+    refusedHint:
+      "Messaging uses the same links as your dashboard. Link a student first — the Links card above does that — then come back here.",
+    footnote:
+      "Messages are between you and that student only. Unlinking a student stops them appearing here, and neither side can message the other after that.",
+    pick: "Choose a student to open your conversation.",
+    loading: "Loading your linked students…",
+  },
+  student: {
+    otherRole: "teacher",
+    otherPlural: "teachers",
+    intro:
+      "Private messages with the teachers linked to you. Your teachers see these in their own Messages view, and nobody else can read them — a teacher you are not linked to cannot message you.",
+    empty:
+      "No teacher is linked to your account yet, so there is nobody to message. When a teacher links the email address you signed up with, their name appears here.",
+    refusedHint:
+      "Messaging works along the same links your teachers' class lists use. If you expect a conversation here, ask your teacher to link the email address you signed up with.",
+    footnote:
+      "Messages are between you and that teacher only. If a teacher unlinks you this conversation stops, and neither side can message the other after that.",
+    pick: "Choose a teacher to open your conversation.",
+    loading: "Loading your linked teachers…",
+  },
+};
+
+// The word the contacts list is headed with, taken from the ROLES THE SERVER SENT
+// (every contact arrives with its own role): a teacher's list reads "Students you
+// can message", a student's reads "Teachers you can message". A caller linked BOTH
+// ways — a teacher who is also somebody's student — reads "People" rather than
+// picking one and being wrong about half of the list. With nothing returned yet
+// there is nothing to derive, and this heading is not rendered at all.
+export function contactsWord(roles, copy) {
+  const set = new Set(
+    (roles || [])
+      // Either the contacts themselves or just their role strings — a caller
+      // passing the wrong one must not silently read as "no links".
+      .map((entry) => (entry && typeof entry === "object" ? entry.role : entry))
+      .filter((role) => role === "student" || role === "teacher")
+  );
+  return set.size === 1 && set.has(copy.otherRole) ? copy.otherPlural : "people";
 }
