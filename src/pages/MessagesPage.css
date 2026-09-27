@@ -1,0 +1,30 @@
+/* The student's Messages page (/messages) — prefix: msg-.
+   Frame follows the teacher dashboard (src/pages/TeacherPage.css): same
+   max-width, padding and h1 size, so the two sides of a conversation look like
+   the same app. The panel inside brings its own card and title. */
+
+.msg-page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+.msg-page h1 {
+  margin: 0 0 0.35rem;
+  font-size: 1.6rem;
+  color: #0f172a;
+}
+
+.msg-lead {
+  margin: 0;
+  max-width: 46rem;
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+/* The shared panel's card starts with a top margin meant to separate it from a
+   card above it; here it is the first thing under the page heading. */
+.msg-page .tmsg {
+  margin-top: 1.25rem;
+}

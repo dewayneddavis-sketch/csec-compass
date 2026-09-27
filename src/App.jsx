@@ -8,6 +8,7 @@ import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
 import AuthPage from "./pages/AuthPage";
 import AccountPage from "./pages/AccountPage";
+import MessagesPage from "./pages/MessagesPage";
 import PricingPage from "./pages/PricingPage";
 import AdminPage from "./pages/AdminPage";
 import TeacherPage from "./pages/TeacherPage";
@@ -51,6 +52,11 @@ export default function App() {
               <Route path="/auth/signup" element={<AuthPage mode="signup" />} />
               <Route path="/auth/reset-password" element={<AuthPage mode="reset" />} />
               <Route path="/account" element={<ProtectedRoute><AccountPage /></ProtectedRoute>} />
+              {/* The student's Messages page — where the navbar's Messages link
+                  goes (owner direction 2026-09-27). Protected like /account: the
+                  page reads /api/messages, which scopes itself to the caller's own
+                  links on the server. */}
+              <Route path="/messages" element={<ProtectedRoute><MessagesPage /></ProtectedRoute>} />
               <Route path="/admin" element={<ProtectedRoute><AdminPage /></ProtectedRoute>} />
               <Route path="/teacher" element={<TeacherPage />} />
               {/* Public like /teacher: the page itself decides what to show,

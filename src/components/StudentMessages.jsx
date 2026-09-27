@@ -1,9 +1,10 @@
 import MessagesPanel from "./MessagesPanel";
 import { CHAT_COPY } from "../data/teacherMessages.js";
 
-// The student's Messages tab (chat PR 3 of 3): the SAME panel the teacher
-// dashboard uses, with the student's perspective copy, mounted inside the
-// student's own area (/account).
+// The student's Messages view (chat PR 3 of 3): the SAME panel the teacher
+// dashboard uses, with the student's perspective copy, mounted on the student's
+// own page. It lived on /account (first as a card, then as a tab) until the owner
+// moved it to the top navbar's /messages page on 2026-09-27.
 //
 // It shows only the teachers LINKED to this student's email address, because
 // api/messages.js answers with the caller's own links and nothing else — the

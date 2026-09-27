@@ -11,18 +11,6 @@
 .acct-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.25rem}
 .acct-card{background:#fff;border-radius:16px;padding:1.5rem;box-shadow:0 1px 3px rgba(0,0,0,.06),0 4px 12px rgba(0,0,0,.03);border:1px solid #f3f4f6}
 .acct-card-full{grid-column:1/-1}
-/* The account tab bar (Messages one tap from the top, not a card at the bottom).
-   Follows the house blue #2563eb used by the rest of this page. */
-.acct-tabs{display:flex;gap:.25rem;margin:0 0 1.5rem;border-bottom:1px solid #e5e7eb}
-.acct-tab{appearance:none;background:none;border:none;border-bottom:3px solid transparent;margin-bottom:-1px;padding:.6rem 1rem;font:inherit;font-size:.95rem;font-weight:600;color:#6b7280;cursor:pointer;border-radius:6px 6px 0 0}
-.acct-tab:hover{color:#111827;background:#f9fafb}
-.acct-tab.is-active{color:#2563eb;border-bottom-color:#2563eb}
-.acct-tab:focus-visible{outline:3px solid #2563eb;outline-offset:2px}
-/* An inactive tab panel is hidden with the `hidden` attribute, which sets
-   display:none in the UA stylesheet — a display rule of ours would out-specify it,
-   so keep it explicit here. */
-.acct-panel[hidden]{display:none}
-.acct-panel:focus-visible{outline:none}
 .acct-card h3{font-size:1rem;font-weight:700;color:#111827;margin-bottom:1rem;padding-bottom:.5rem;border-bottom:1px solid #f3f4f6}
 .acct-field{display:flex;justify-content:space-between;padding:.4rem 0;font-size:.88rem;color:#374151}
 .acct-field span:first-child{color:#6b7280}
