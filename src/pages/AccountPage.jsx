@@ -1,15 +1,30 @@
 import { useState, useEffect } from "react";
 import { useAuth } from "../context/AuthContext";
 import StudentMessages from "../components/StudentMessages";
+import { AccountTabBar, AccountTabPanel } from "../components/AccountTabs";
 import { usePurchases } from "../data/usePurchases";
 import { getAllSubjects } from "../data/contentLoader";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import "./Account.css";
 
 export default function AccountPage() {
   const { user, session, signOut, loading } = useAuth();
   const { hasAccess, hasBundle, hasSchoolLicense, schoolLicenseSeats, purchasedSubjects } = usePurchases();
   const [subjects, setSubjects] = useState([]);
+
+  // Which tab is showing lives in the URL, not in component state: a link to
+  // /account?tab=messages opens Messages directly, a reload stays on the tab,
+  // and the browser's own Back returns to the previous one. No new route — one
+  // query parameter on the page that already exists.
+  const [params, setParams] = useSearchParams();
+  const tab = params.get("tab") === "messages" ? "messages" : "overview";
+  function selectTab(id) {
+    const next = new URLSearchParams(params);
+    if (id === "overview") next.delete("tab");
+    else next.set("tab", id);
+    // replace, so flicking between tabs does not fill the Back history.
+    setParams(next, { replace: true });
+  }
 
   useEffect(() => {
     let cancelled = false;
@@ -66,62 +81,70 @@ export default function AccountPage() {
         </div>
       </div>
 
-      <div className="acct-grid">
-        <div className="acct-card">
-          <h3>Profile</h3>
-          <div className="acct-field"><span>Email</span><span>{user.email}</span></div>
-          <div className="acct-field"><span>Member since</span><span>{user.created_at ? new Date(user.created_at).toLocaleDateString() : "N/A"}</span></div>
-        </div>
+      {/* One tap from the top: the tab bar sits directly under the header, above
+          every card. Messages used to be a card at the bottom of the grid and the
+          owner reported students missing it. */}
+      <AccountTabBar active={tab} onSelect={selectTab} />
 
-        <div className="acct-card">
-          <h3>Subscription</h3>
-          <p className="acct-plan">{planName}</p>
-          <p className="acct-plan-desc">{planDesc}</p>
-        </div>
+      <AccountTabPanel id="overview" active={tab === "overview"}>
+        <div className="acct-grid">
+          <div className="acct-card">
+            <h3>Profile</h3>
+            <div className="acct-field"><span>Email</span><span>{user.email}</span></div>
+            <div className="acct-field"><span>Member since</span><span>{user.created_at ? new Date(user.created_at).toLocaleDateString() : "N/A"}</span></div>
+          </div>
 
-        <div className="acct-card acct-card-full">
-          <h3>My Subjects</h3>
-          <div className="acct-subjects">
-            {(subjects.length > 0 ? subjects : []).map((s) => {
-              const unlocked = hasAccess(s.id);
-              return (
-                <Link key={s.id} to={`/subject/${s.id}`} className={`acct-subject ${unlocked ? "unlocked" : "locked"}`}>
-                  <span className="acct-subject-icon">{s.icon}</span>
-                  <span className="acct-subject-name">{s.name}</span>
-                  <span className="acct-subject-status">{unlocked ? "✓" : "🔒"}</span>
-                </Link>
-              );
-            })}
-            {subjects.length === 0 && <p className="acct-plan-desc">Loading subjects…</p>}
+          <div className="acct-card">
+            <h3>Subscription</h3>
+            <p className="acct-plan">{planName}</p>
+            <p className="acct-plan-desc">{planDesc}</p>
+          </div>
+
+          <div className="acct-card acct-card-full">
+            <h3>My Subjects</h3>
+            <div className="acct-subjects">
+              {(subjects.length > 0 ? subjects : []).map((s) => {
+                const unlocked = hasAccess(s.id);
+                return (
+                  <Link key={s.id} to={`/subject/${s.id}`} className={`acct-subject ${unlocked ? "unlocked" : "locked"}`}>
+                    <span className="acct-subject-icon">{s.icon}</span>
+                    <span className="acct-subject-name">{s.name}</span>
+                    <span className="acct-subject-status">{unlocked ? "✓" : "🔒"}</span>
+                  </Link>
+                );
+              })}
+              {subjects.length === 0 && <p className="acct-plan-desc">Loading subjects…</p>}
+            </div>
+          </div>
+
+          {/* Bought a course for a child? The link is made at checkout (the
+              parent dashboard explains it too); this is the way in. The page
+              itself shows the "no child linked yet" state for anyone else. */}
+          <div className="acct-card">
+            <h3>Family</h3>
+            <p className="acct-plan-desc">
+              Bought a subject or the all-subjects bundle and added your child’s email at checkout?
+              Track their lessons, labs and quiz scores on the parent dashboard.
+            </p>
+            <Link to="/parent" className="acct-btn acct-btn-secondary">Parent dashboard</Link>
+          </div>
+
+          {/* The student's Messages tab (chat PR 3 of 3). Private threads with the
+              teachers linked to THIS email address — the server decides who that is
+              (GET /api/messages?contacts=1), so the panel can never show, or claim, a
+              teacher the account is not linked to. It used to be a card at the
+              bottom of this grid; the owner reported students missing it, so it is
+              now the "Messages" tab (see AccountTabBar above). */}
+          <div className="acct-card">
+            <h3>Account Actions</h3>
+            <button className="acct-btn acct-btn-danger" onClick={signOut}>Sign Out</button>
           </div>
         </div>
+      </AccountTabPanel>
 
-        {/* Bought a course for a child? The link is made at checkout (the
-            parent dashboard explains it too); this is the way in. The page
-            itself shows the "no child linked yet" state for anyone else. */}
-        <div className="acct-card">
-          <h3>Family</h3>
-          <p className="acct-plan-desc">
-            Bought a subject or the all-subjects bundle and added your child’s email at checkout?
-            Track their lessons, labs and quiz scores on the parent dashboard.
-          </p>
-          <Link to="/parent" className="acct-btn acct-btn-secondary">Parent dashboard</Link>
-        </div>
-
-        {/* The student's Messages tab (chat PR 3 of 3). Private threads with the
-            teachers linked to THIS email address — the server decides who that is
-            (GET /api/messages?contacts=1), so the card can never show, or claim, a
-            teacher the account is not linked to. It sits full width in the grid
-            (the panel brings its own card) and without a <h3>, because the panel
-            is already a labelled region titled "Messages". */}
-        <div className="acct-messages">
-          <StudentMessages token={session?.access_token} me={user.email} />
-        </div>
-        <div className="acct-card">
-          <h3>Account Actions</h3>
-          <button className="acct-btn acct-btn-danger" onClick={signOut}>Sign Out</button>
-        </div>
-      </div>
+      <AccountTabPanel id="messages" active={tab === "messages"}>
+        <StudentMessages token={session?.access_token} me={user.email} />
+      </AccountTabPanel>
     </div>
   );
 }
