@@ -35,8 +35,6 @@ const stub = await import("./messages-stub.mjs");
 const { state, reset, setTable, rows } = stub;
 
 const client = await import("../src/data/teacherMessages.js");
-const tabs = await import("../src/data/accountTabs.js");
-const { ACCOUNT_TABS, nextTabId } = tabs;
 const {
   CHAT_COPY,
   MESSAGES_ENDPOINT,
@@ -471,10 +469,11 @@ section("6. failure copy: nothing reads as 'no messages'");
 }
 
 // ===========================================================================
-section("7. wiring: where the tab lives, what it must never do, and the budget");
+section("7. wiring: where the messages home is, what it must never do, and the budget");
 
 {
   const app = read("src/App.jsx");
+  const messagesPage = read("src/pages/MessagesPage.jsx");
   const accountPage = read("src/pages/AccountPage.jsx");
   const studentWrapper = read("src/components/StudentMessages.jsx");
   const teacherWrapper = read("src/components/TeacherMessages.jsx");
@@ -482,22 +481,26 @@ section("7. wiring: where the tab lives, what it must never do, and the budget")
   const css = read("src/components/MessagesPanel.css");
 
   check(
-    "the student's tab is on /account — the student's own page, not /teacher",
-    /<Route path="\/account" element=\{<ProtectedRoute><AccountPage \/><\/ProtectedRoute>\} \/>/.test(app)
+    "the account page is still the student's own protected page",
+    /<Route path="\/account" element=\{<ProtectedRoute><AccountPage \/><\/ProtectedRoute>\} \/>/.test(app) &&
+      /ProtectedRoute/.test(app.split('path="/account"')[1].slice(0, 80))
   );
-  check("…and that route is behind the sign-in gate", /ProtectedRoute/.test(app.split('path="/account"')[1].slice(0, 80)));
-  check("the account page imports the student tab", /import StudentMessages from "\.\.\/components\/StudentMessages";/.test(accountPage));
+  // The home moved twice (card on /account → tab on /account → top navbar's own
+  // page, owner direction 2026-09-27). These checks follow it rather than
+  // assuming it: whatever page mounts the shared view is the one asserted.
+  check(
+    "the student's Messages home is the navbar's own /messages route",
+    /<Route path="\/messages" element=\{<ProtectedRoute><MessagesPage \/><\/ProtectedRoute>\} \/>/.test(app)
+  );
+  check("…and /messages sits behind the same sign-in gate", /ProtectedRoute/.test(app.split('path="/messages"')[1].slice(0, 90)));
+  check("the /messages page imports the shared student view", /import StudentMessages from "\.\.\/components\/StudentMessages";/.test(messagesPage));
   check(
     "…and renders it with the session token and the signed-in email",
-    /<StudentMessages token=\{session\?\.access_token\} me=\{user\.email\} \/>/.test(accountPage)
+    /<StudentMessages token=\{session\?\.access_token\} me=\{user\?\.email\} \/>/.test(messagesPage)
   );
-  check("the account page resolves the session it passes down", /const \{ user, session, signOut, loading \} = useAuth\(\)/.test(accountPage));
-  check(
-    "the tab is a panel of the account page now, not a card at the bottom of the grid",
-    /<AccountTabPanel id="messages" active=\{tab === "messages"\}>/.test(accountPage) &&
-      /import \{ AccountTabBar, AccountTabPanel \} from "\.\.\/components\/AccountTabs";/.test(accountPage)
-  );
-  check("the student tab does not also carry the teacher panel", !/TeacherMessages/.test(accountPage));
+  check("the page resolves the session it passes down", /const \{ user, session \} = useAuth\(\)/.test(messagesPage));
+  check("the account page no longer mounts the messages view at all", !/StudentMessages|AccountTab|acct-messages/.test(accountPage));
+  check("the /messages page does not also carry the teacher panel", !/TeacherMessages/.test(messagesPage));
 
   check(
     "the wrapper adds words, not logic (no state, no effect, no request of its own)",
@@ -549,34 +552,36 @@ section("7. wiring: where the tab lives, what it must never do, and the budget")
 }
 
 // ===========================================================================
-section("8. the account page: Messages is one tap from the top");
+section("8. the home is the top navbar: /messages (and /account is not it)");
 
 {
-  // The owner's complaint was findability: the panel shipped as a card at the
-  // BOTTOM of the account grid, after Profile, Subscription, My Subjects and
-  // Family. This section renders the REAL src/pages/AccountPage.jsx and proves
-  // the tab bar is above the cards, that Messages is a real tab, and that the
-  // tab/panel ARIA contract holds in the actual markup.
+  // Owner direction 2026-09-27: Messages belongs in the TOP NAVIGATION BAR with
+  // its own page, not as a card (PR #102) or a tab (PR #103) inside /account.
+  // This section renders the REAL Navbar, the REAL /messages page and the REAL
+  // /account page (esbuild + react-dom/server) and asserts the new home — plus
+  // the reverse guard, because "messages inside /account" is now the bug.
   //
-  // AccountPage gets the signed-in identity from useAuth, the plan from
-  // usePurchases and the subject list from contentLoader — three things that want
-  // a live session or the network. They are redirected to a stub by an esbuild
-  // plugin below; the page, the tab bar, the panels and the Messages panel inside
-  // them are the real shipped code.
-  const { writeFileSync } = await import("node:fs");
+  // Only useAuth/usePurchases/contentLoader are stubbed (via the esbuild plugin
+  // below), so a signed-in student, an anonymous visitor and the still-loading
+  // state can all be rendered without a live session.
+  const { existsSync, readdirSync, writeFileSync } = await import("node:fs");
   const { build } = await import("esbuild").catch(() => ({ build: null }));
   const outdir = "node_modules/.cache/check-student-messages";
   let page = null;
 
   if (build) {
-    const stubFile = join(root, outdir, "account-stubs.js");
+    const stubFile = join(root, outdir, "auth-stub.js");
     writeFileSync(
       stubFile,
       [
-        "// Generated by tools/check-student-messages.mjs — the three data hooks of",
-        "// AccountPage, stubbed so the page renders without a session or a network.",
+        "// Generated by tools/check-student-messages.mjs — the identity hooks of the",
+        "// Navbar, the /messages page and the account page, so each can be rendered",
+        "// signed in, signed out and mid-load without a live session.",
+        "function authState() { return globalThis.__CHECK_AUTH__ || 'in'; }",
         "export function useAuth() {",
-        "  if (globalThis.__CHECK_SIGNED_OUT__) return { user: null, session: null, signOut() {}, loading: false, isAuthenticated: false };",
+        "  const state = authState();",
+        "  if (state === 'loading') return { user: null, session: null, signOut() {}, loading: true, isAuthenticated: false };",
+        "  if (state === 'out') return { user: null, session: null, signOut() {}, loading: false, isAuthenticated: false };",
         "  return { user: { email: 'sam@home.jm', created_at: '2026-01-05T00:00:00.000Z' },",
         "           session: { access_token: 'check-token' }, signOut() {}, loading: false, isAuthenticated: true };",
         "}",
@@ -588,15 +593,19 @@ section("8. the account page: Messages is one tap from the top");
       ].join("\n")
     );
     const stubHooks = {
-      name: "stub-account-hooks",
+      name: "stub-auth-hooks",
       setup(b) {
         b.onResolve({ filter: /(AuthContext|usePurchases|contentLoader)$/ }, (args) =>
-          String(args.importer).includes("AccountPage") ? { path: stubFile } : undefined
+          /(AccountPage|Navbar|MessagesPage)\.jsx$/.test(String(args.importer)) ? { path: stubFile } : undefined
         );
       },
     };
     await build({
-      entryPoints: { "account-page": "src/pages/AccountPage.jsx" },
+      entryPoints: {
+        "account-page": "src/pages/AccountPage.jsx",
+        navbar: "src/components/Navbar.jsx",
+        "messages-page": "src/pages/MessagesPage.jsx",
+      },
       outdir,
       bundle: true,
       format: "esm",
@@ -612,118 +621,109 @@ section("8. the account page: Messages is one tap from the top");
     const { renderToStaticMarkup } = await import("react-dom/server");
     const { MemoryRouter } = await import("react-router-dom");
     const AccountPage = (await import(`../${outdir}/account-page.js`)).default;
-    const render = (url, signedOut = false) => {
-      globalThis.__CHECK_SIGNED_OUT__ = signedOut;
-      const html = renderToStaticMarkup(
-        React.createElement(MemoryRouter, { initialEntries: [url] }, React.createElement(AccountPage))
-      );
-      delete globalThis.__CHECK_SIGNED_OUT__;
+    const Navbar = (await import(`../${outdir}/navbar.js`)).default;
+    const MessagesPage = (await import(`../${outdir}/messages-page.js`)).default;
+    const render = (element, url, auth) => {
+      globalThis.__CHECK_AUTH__ = auth;
+      const html = renderToStaticMarkup(React.createElement(MemoryRouter, { initialEntries: [url] }, element));
+      delete globalThis.__CHECK_AUTH__;
       return html;
     };
-    page = { overview: render("/account"), messages: render("/account?tab=messages"), guest: render("/account", true) };
+    page = {
+      messages: render(React.createElement(MessagesPage), "/messages", "in"),
+      navIn: render(React.createElement(Navbar), "/messages", "in"),
+      navAccount: render(React.createElement(Navbar), "/account", "in"),
+      navOut: render(React.createElement(Navbar), "/", "out"),
+      navLoading: render(React.createElement(Navbar), "/", "loading"),
+      account: render(React.createElement(AccountPage), "/account", "in"),
+      accountGuest: render(React.createElement(AccountPage), "/account", "out"),
+    };
   }
-  check("the account page renders (esbuild + react-dom/server produced markup)", !!page && page.overview.length > 500, page && page.overview.slice(0, 80));
+
+  check("the navbar, the page and the account page all render", !!page && page.messages.length > 400 && page.navIn.length > 200 && page.account.length > 400, page && `messages:${page.messages.length} nav:${page.navIn.length} account:${page.account.length}`);
 
   if (page) {
-    const openTag = (html, needle, tag) => {
+    const strip = (html) => html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
+    const linkTag = (html, needle) => {
       const at = html.indexOf(needle);
       if (at === -1) return "";
-      return html.slice(html.lastIndexOf(`<${tag}`, at), html.indexOf(">", at) + 1);
+      return html.slice(html.lastIndexOf("<a", at), html.indexOf(">", at) + 1);
     };
-    const tabButton = (html, id) => openTag(html, `id="acct-tab-${id}"`, "button");
-    const tabPanel = (html, id) => openTag(html, `id="acct-panel-${id}"`, "div");
-    const strip = (html) => html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
+    const srcFiles = (dir) =>
+      readdirSync(join(root, dir), { withFileTypes: true }).flatMap((entry) =>
+        entry.isDirectory() ? srcFiles(`${dir}/${entry.name}`) : [`${dir}/${entry.name}`]
+      );
 
-    // 1. a real tab bar, above every card.
-    check("the page renders a real tablist", /role="tablist"/.test(page.overview) && /aria-label="My account sections"/.test(page.overview));
+    // (a) the navbar link ---------------------------------------------------
+    check("a signed-in student sees a Messages link in the top navbar", /href="\/messages"/.test(page.navIn));
+    check("the link reads 'Messages' — not an icon, not a bare URL", /<a[^>]*href="\/messages"[^>]*>\s*Messages\s*<\//.test(page.navIn), linkTag(page.navIn, 'href="/messages"'));
     check(
-      "every tab is a real <button role=tab>, never a clickable div",
-      (page.overview.match(/<button[^>]*role="tab"/g) || []).length === 2 && !/<div[^>]*role="tab"/.test(page.overview)
+      "it sits in the main link row, in the owner's order (Teacher's Dashboard → Messages → My Account)",
+      page.navIn.indexOf("Teacher") < page.navIn.indexOf('href="/messages"') &&
+        page.navIn.indexOf('href="/messages"') < page.navIn.indexOf("My Account"),
+      `${page.navIn.indexOf("Teacher")} / ${page.navIn.indexOf('href="/messages"')} / ${page.navIn.indexOf("My Account")}`
     );
     check(
-      "the two tabs are Overview and Messages",
-      /id="acct-tab-overview"[^>]*>Overview</.test(page.overview) && /id="acct-tab-messages"[^>]*>Messages</.test(page.overview)
+      "it is styled as a top-level nav item, a sibling of Subjects and Planner",
+      /class="navbar-link navbar-messages/.test(linkTag(page.navIn, 'href="/messages"')) &&
+        /class="navbar-link navbar-messages active/.test(linkTag(page.navIn, 'href="/messages"')),
+      linkTag(page.navIn, 'href="/messages"')
     );
-    check(
-      "the tab bar sits ABOVE the cards it used to be buried under (the owner's complaint)",
-      page.overview.indexOf('role="tablist"') < page.overview.indexOf("Profile") &&
-        page.overview.indexOf('role="tablist"') < page.overview.indexOf("My Subjects") &&
-        page.overview.indexOf('role="tablist"') < page.overview.indexOf("Account Actions"),
-      `${page.overview.indexOf('role="tablist"')} / ${page.overview.indexOf("My Subjects")}`
-    );
+    check("marked active on /messages, and not on other pages", /active/.test(linkTag(page.navIn, 'href="/messages"')) && !/active/.test(linkTag(page.navAccount, 'href="/messages"')));
+    check("an anonymous visitor gets no Messages link — they get Sign In", !/href="\/messages"/.test(page.navOut) && /Sign In/.test(strip(page.navOut)));
+    check("no Messages link while the session is still loading (no wrong-nav flash)", !/href="\/messages"/.test(page.navLoading));
 
-    // 2. the selected tab, and the panel it controls.
-    check("Overview is the tab you land on", /aria-selected="true"/.test(tabButton(page.overview, "overview")) && /aria-selected="false"/.test(tabButton(page.overview, "messages")));
-    check("exactly one tab is selected at a time", (page.overview.match(/aria-selected="true"/g) || []).length === 1);
+    // (b) the /messages page ------------------------------------------------
+    check("the /messages page renders with a heading", /<h1>Messages<\/h1>/.test(page.messages));
+    check("its body is the shared messages panel", /class="tmsg"/.test(page.messages) && /id="tmsg-title"/.test(page.messages));
+    check("…carrying the student's own wording and never the teacher's", /the teachers linked to you/i.test(strip(page.messages)) && !/link a student/i.test(strip(page.messages)));
     check(
-      "the overview panel is the visible one by default, and the messages panel is inert",
-      !/hidden/.test(tabPanel(page.overview, "overview")) && /hidden/.test(tabPanel(page.overview, "messages")),
-      `${tabPanel(page.overview, "overview")} || ${tabPanel(page.overview, "messages")}`
+      "the page reuses the shared component instead of forking the panel",
+      /import StudentMessages from "\.\.\/components\/StudentMessages";/.test(read("src/pages/MessagesPage.jsx")) && !/import MessagesPanel/.test(read("src/pages/MessagesPage.jsx"))
     );
     check(
-      "the Messages tab selects and reveals its panel on a deep link (/account?tab=messages)",
-      /aria-selected="true"/.test(tabButton(page.messages, "messages")) &&
-        /aria-selected="false"/.test(tabButton(page.messages, "overview")) &&
-        !/hidden/.test(tabPanel(page.messages, "messages")) &&
-        /hidden/.test(tabPanel(page.messages, "overview")),
-      tabPanel(page.messages, "messages")
+      "it hands the panel the session token and the signed-in email (never a typed identity)",
+      /<StudentMessages token=\{session\?\.access_token\} me=\{user\?\.email\} \/>/.test(read("src/pages/MessagesPage.jsx"))
     );
     check(
-      "…and the student's own wording comes with it",
-      /the teachers linked to you/i.test(strip(page.messages)) && !/link a student/i.test(strip(page.messages))
+      "it brings its own stylesheet, and it is the one it imports",
+      /import "\.\/MessagesPage\.css";/.test(read("src/pages/MessagesPage.jsx")) && existsSync(join(root, "src/pages/MessagesPage.css"))
     );
-
-    // 3. ARIA wiring: every tab points at a panel that exists, and back again.
-    for (const id of ["overview", "messages"]) {
-      const button = tabButton(page.overview, id);
-      check(`the ${id} tab's aria-controls resolves to a panel in the markup`, button.includes(`aria-controls="acct-panel-${id}"`) && page.overview.includes(`id="acct-panel-${id}"`), button);
-      check(`the ${id} panel is labelled by its own tab`, tabPanel(page.overview, id).includes(`aria-labelledby="acct-tab-${id}"`));
-    }
-    check("both panels are tabpanels", (page.overview.match(/role="tabpanel"/g) || []).length === 2);
     check(
-      "the Messages panel really contains the shared StudentMessages panel",
-      (() => {
-        const panel = page.messages.slice(page.messages.indexOf('id="acct-panel-messages"'));
-        return panel.slice(0, 4000).includes('class="tmsg"') && panel.includes('id="tmsg-title"');
-      })()
+      "the page frame matches the app's other pages",
+      /\.msg-page \{[\s\S]{0,80}max-width: 1080px/.test(read("src/pages/MessagesPage.css")) && /\.msg-page h1 \{[\s\S]{0,60}font-size: 1\.6rem/.test(read("src/pages/MessagesPage.css"))
     );
 
-    // 4. keyboard: roving tabIndex + arrow/Home/End keys (without the keys a
-    //    roving tabIndex would trap a keyboard user on the selected tab).
-    check("the selected tab is the one in the tab order", /tabindex="0"/.test(tabButton(page.overview, "overview")) && /tabindex="-1"/.test(tabButton(page.overview, "messages")));
-    check("arrow keys move right and wrap around", nextTabId("overview", "ArrowRight") === "messages" && nextTabId("messages", "ArrowRight") === "overview");
-    check("arrow keys move left and wrap around", nextTabId("messages", "ArrowLeft") === "overview" && nextTabId("overview", "ArrowLeft") === "messages");
-    check("Home and End jump to the first and last tab", nextTabId("messages", "Home") === "overview" && nextTabId("overview", "End") === "messages");
-    check("any other key is left alone (typing, Tab and Escape are not hijacked)", nextTabId("overview", "Tab") === null && nextTabId("overview", "a") === null && nextTabId("overview", "Enter") === null);
-    check("an unknown selected id moves nowhere rather than throwing", nextTabId("nope", "ArrowRight") === null);
-    check("the bar handles those keys itself", /onKeyDown=\{onKeyDown\}/.test(read("src/components/AccountTabs.jsx")) && /event\.preventDefault\(\)/.test(read("src/components/AccountTabs.jsx")));
+    // (c) the route ---------------------------------------------------------
+    check("App.jsx declares /messages behind ProtectedRoute", /<Route path="\/messages" element=\{<ProtectedRoute><MessagesPage \/><\/ProtectedRoute>\} \/>/.test(read("src/App.jsx")));
+    check("…and imports the page it names", /import MessagesPage from "\.\/pages\/MessagesPage";/.test(read("src/App.jsx")));
 
-    // 5. the tab bar itself is still the account page's, and a signed-out visitor
-    //    gets no tab bar pointing at a panel that needs a session.
+    // (d) /account is a single page again — the regression guard flipped -----
+    check("the account page no longer shows the messages panel", !/class="tmsg"/.test(page.account) && !/StudentMessages/.test(read("src/pages/AccountPage.jsx")));
     check(
-      "the tab bar is the account page's, and its tabs come from the shared list",
-      /<AccountTabBar active=\{tab\} onSelect=\{selectTab\} \/>/.test(read("src/pages/AccountPage.jsx")) &&
-        /className="acct-tabs"/.test(read("src/components/AccountTabs.jsx")) &&
-        /from "\.\.\/data\/accountTabs\.js"/.test(read("src/components/AccountTabs.jsx")) &&
-        !/const ACCOUNT_TABS = \[/.test(read("src/components/AccountTabs.jsx"))
-    );
-    check("the tab list is exactly Overview then Messages (the shared source)", ACCOUNT_TABS.length === 2 && ACCOUNT_TABS[0].id === "overview" && ACCOUNT_TABS[1].label === "Messages", JSON.stringify(ACCOUNT_TABS));
-    check("a signed-out visitor sees the sign-in card and no tabs", /Please Log In/.test(strip(page.guest)) && !/role="tablist"/.test(page.guest));
-
-    // 6. the old buried card is gone for good (a regression guard).
-    check(
-      "the Messages card at the bottom of the grid is gone from the page and its CSS",
-      !/acct-messages/.test(read("src/pages/AccountPage.jsx")) && !/acct-messages/.test(read("src/pages/Account.css"))
+      "…and no tab machinery survives in it",
+      !/role="tablist"|acct-tab|acct-panel/.test(page.account) &&
+        !/AccountTabs|useSearchParams|params\.get\("tab"\)/.test(read("src/pages/AccountPage.jsx"))
     );
     check(
-      "an inactive panel is really hidden (no display rule of ours out-specifies [hidden])",
-      /\.acct-panel\[hidden\]\{display:none\}/.test(read("src/pages/Account.css"))
+      "the tab component and its data module are deleted",
+      !existsSync(join(root, "src/components/AccountTabs.jsx")) && !existsSync(join(root, "src/data/accountTabs.js"))
     );
     check(
-      "the bar is styled as a real tab strip, not a small link",
-      /\.acct-tab\{[^}]*padding:\.6rem 1rem/.test(read("src/pages/Account.css")) &&
-        /\.acct-tab\.is-active\{[^}]*color:#2563eb/.test(read("src/pages/Account.css"))
+      "nothing under src/ still references them (a dangling import is a blank page)",
+      srcFiles("src").filter((file) => /AccountTabs|accountTabs/.test(read(file))).length === 0,
+      srcFiles("src").filter((file) => /AccountTabs|accountTabs/.test(read(file))).join(", ")
     );
+    check(
+      "the tab CSS is gone from Account.css",
+      !/acct-tabs|\.acct-tab|acct-panel|acct-messages/.test(read("src/pages/Account.css"))
+    );
+    check(
+      "the four cards the owner asked for are still on the account page",
+      ["Profile", "Subscription", "My Subjects", "Family", "Account Actions"].every((title) => strip(page.account).includes(title)),
+      strip(page.account).slice(0, 120)
+    );
+    check("a signed-out visitor to /account still gets the sign-in card", /Please Log In/.test(strip(page.accountGuest)));
   }
 }
 

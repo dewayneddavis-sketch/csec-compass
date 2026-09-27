@@ -1,7 +1,7 @@
 /* Teacher↔student Messages panel — prefix: tmsg-
-   Shared with the student Messages tab (chat PR 3), so the two sides of the
-   same conversation look the same. Colours follow the teacher dashboard
-   (src/pages/TeacherPage.css): teal #0e7490, slate text, white cards. */
+   Shared by the teacher dashboard and the student /messages page, so the two
+   sides of the same conversation look the same. Colours follow the teacher
+   dashboard (src/pages/TeacherPage.css): teal #0e7490, slate text, white cards. */
 .tmsg {
   margin: 1.75rem 0 0;
   padding: 1.25rem 1.25rem 1.4rem;
