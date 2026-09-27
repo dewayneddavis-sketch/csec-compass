@@ -47,5 +47,596 @@
     "Database queries with multiple criteria",
     "Correct pseudocode/flowchart",
     "Working Pascal program"
-  ]
+  ],
+  "completedSample": {
+    "title": "A complete, full-mark Information Technology SBA portfolio: a membership, subscriptions and tournament system for Bayview Sports Club (all details invented)",
+    "viewOnlyNote": "For viewing and learning only. This is an original worked example written for CSEC Compass, not a real candidate's submission and not a CXC exemplar. The club, the members, the figures and the program are invented to show what a full-mark portfolio looks like. Read it, study how each component is built, then produce your own system and your own artifacts. This sample cannot be copied.",
+    "profile": [
+      {
+        "label": "Candidate",
+        "value": "Sample Candidate (invented)"
+      },
+      {
+        "label": "Centre",
+        "value": "Sample Secondary School (invented)"
+      },
+      {
+        "label": "Subject",
+        "value": "CSEC Information Technology - School-Based Assessment portfolio"
+      },
+      {
+        "label": "Client project",
+        "value": "Bayview Sports Club membership and tournament system (invented)"
+      },
+      {
+        "label": "Submission",
+        "value": "One bound portfolio of 20 sections, four components, with the documents, workbook, database and program listing on the enclosed disc"
+      }
+    ],
+    "categories": [
+      {
+        "section": "Word Processing",
+        "marks": "10",
+        "awarded": "10",
+        "comment": "A mail-merged master letter, a flyer and a formatted schedule table, all built on styles, with the merge fields, the sort order and the table features each justified in the report."
+      },
+      {
+        "section": "Spreadsheets",
+        "marks": "15",
+        "awarded": "15",
+        "comment": "The workbook holds the fee rule in one named lookup table, reads it with VLOOKUP, classifies members with IF, totals with SUM, SUMIF and COUNTIF, and presents the result in a labelled chart with both series on one pair of axes."
+      },
+      {
+        "section": "Database",
+        "marks": "15",
+        "awarded": "15",
+        "comment": "Five normalised tables with keys and relationships, queries that use more than one criterion (tournament and age group, paid below fee), data-entry forms with validated combo boxes, and two grouped reports."
+      },
+      {
+        "section": "Problem Solving",
+        "marks": "20",
+        "awarded": "20",
+        "comment": "A flowchart, matching pseudocode and a working Pascal program that reads the member file, applies the fee rule from one function and prints the arrears report, with five test cases recorded and the full-file figures agreeing with the spreadsheet."
+      }
+    ],
+    "pages": [
+      {
+        "heading": "Cover page and contents",
+        "body": "This portfolio is the complete Information Technology SBA for the sample candidate. It is submitted as one bound folder holding four components: a word-processed letter, flyer and table; a spreadsheet workbook that analyses the club's subscription income; a relational database with its queries, forms and reports; and a problem-solving component made up of a flowchart, pseudocode and a working Pascal program. The disc in the back pocket holds the Word document, the workbook, the database file and the program listing.",
+        "bullets": [
+          "Problem definition and objectives",
+          "Method: how the system was planned and built",
+          "Component 1: word processing artifacts",
+          "Component 2: spreadsheet workbook and results",
+          "Component 3: database design, queries and results",
+          "Component 4: problem solving - algorithm and Pascal program",
+          "Discussion, limitations and conclusion",
+          "Sources and acknowledgements"
+        ]
+      },
+      {
+        "heading": "Problem definition and objectives",
+        "body": "Bayview Sports Club is a community sports club with 200 registered members. Its membership and subscription records are kept on paper: a card index for members, a receipt book for payments and a ruled book for tournament entries. The club secretary has to total the receipt book by hand at the end of every month, and the committee has complained that the totals have disagreed with the banked amounts more than once. Finding out which members have not paid means reading every card in the index. Scheduling the club's twice-yearly tournament means copying names onto a sheet of paper and re-checking the age groups by hand.\n\nThe club has asked for a computer-based management system that will do four things. First, produce the club's routine documents - the invitation letter to members, the tournament flyer and the schedule table - in a consistent, professional format. Second, keep the subscription figures in a spreadsheet so that the expected income, the amount collected and the arrears are calculated automatically and cannot be mis-added. Third, hold the member, payment and tournament data in a relational database so that the club can ask questions such as \"which members owe money?\" and \"who has entered the Under-15 tournament?\" without reading cards. Fourth, write a small program that reads the member records and prints the arrears report automatically, so that the monthly total no longer depends on a person doing arithmetic under time pressure.\n\nThe objectives are: to record every member with a unique membership number, surname, first name, category and date joined; to calculate each member's annual subscription from the category lookup table rather than storing it twice; to identify every member whose payments are below the fee for that year; to produce the invitation letter for every member in a single merge operation; and to keep the whole system inside the software that the club already owns, so that no extra licence has to be bought.",
+        "bullets": [
+          "Named client: Bayview Sports Club (invented)",
+          "Current system: paper card index, receipt book, ruled entry book",
+          "Weakness named by the client: hand-added totals that have disagreed with the bank",
+          "Deliverable: one integrated system built from word processing, spreadsheet, database and programming components"
+        ]
+      },
+      {
+        "heading": "Method: how the system was planned and built",
+        "body": "The work was planned in the order the components depend on one another. The membership data had to be defined once, because all four components use it: the letter merges names and balances, the spreadsheet calculates fees from a category table, the database stores what the spreadsheet reports, and the program reads the same fields from a text file. Defining the fields first is what makes the four components one system rather than four separate exercises.\n\nThe method for each component was as follows. For word processing, the club's existing photocopied letter and flyer were used as the starting text, and their content was reorganised into styles so that the heading, the body and the closing block are each controlled by one style rather than by hand-applied formatting. The invitation letter was then converted to a mail-merge document: the merge fields surname, first name, category, balance due and tournament date are inserted from the member data, so that 24 arrears letters and 176 paid-up letters are produced from one file. For the spreadsheet, the member records were keyed into a worksheet, with a separate lookup table holding the category code, the category name and the annual fee. Every money figure on the summary sheet is produced by a formula that reads that lookup table, so a change of fee is made in one cell instead of in 200 rows. For the database, the fields identified in planning were normalised into five tables, after which the queries, forms and reports were built on top of them. For problem solving, the arrears calculation was written first as a flowchart, then as pseudocode and finally as Pascal, and the program was tested with a member file that contains both paid-up and part-paid members.",
+        "bullets": [
+          "Fields defined once, before any component was built",
+          "Word processing: one master letter, mail merge for all 200 members",
+          "Spreadsheet: category fees held in one lookup table, read by VLOOKUP",
+          "Database: data normalised into five related tables before any query was written",
+          "Programming: flowchart, then pseudocode, then Pascal, then tested against the real member file"
+        ]
+      },
+      {
+        "heading": "Word processing artifact 1: the invitation letter and its merge fields",
+        "body": "The letter below is the master merge document. The fields in angle brackets are merge fields: <<FirstName>>, <<Surname>>, <<Category>>, <<BalanceDue>> and <<AgeGroup>> come from the member record, and <TournamentDate> is a document property that fills in the date so that one file can be used for both the April and the October tournament. A member with no arrears merges with the balance line reading 0.00, so the secretary sorts the merge output into two stacks (arrears and paid) instead of writing two letters.\n\nBayview Sports Club\n12 Harbour Road, Portmore\n\n<TournamentDate>\n\nDear <<FirstName>> <<Surname>>,\n\nRe: your club subscription and the Bayview Open\n\nOur records show that your name is entered under the <<Category>> category with a balance of <<BalanceDue>> on your subscription for this year. The treasurer would be grateful if you would settle the outstanding amount at the office before the tournament, or contact the office to agree instalments.\n\nYour entry for the Bayview Open has been received and you will be listed in the <<AgeGroup>> draw, which is posted on the noticeboard and emailed to every entrant one week before play. Please arrive thirty minutes before your first match.\n\nYours sincerely,\n\nA. Morgan\nClub Secretary",
+        "bullets": [
+          "Master document: one file, 200 merged letters",
+          "Sort order: category, then surname, so the printer output is already in club order",
+          "Fields verified against the member table before merging",
+          "Recipients with an outstanding balance are printed on one stack for personal follow-up"
+        ]
+      },
+      {
+        "heading": "Word processing artifact 2: the tournament flyer",
+        "body": "The flyer is a single page, produced from the same letter template's styles so that the club heading and the contact block are identical to the letter. The body text of the flyer is set out below, with the entry numbers filled from the tournament data so that the flyer can never advertise a number the database does not hold.\n\nBAYVIEW OPEN 2026 - ALL MEMBERS WELCOME\nTwo days of singles play at the Harbour Road courts. 16 entries have already been accepted across four age groups, and play begins with 8 first-round matches. Entry is 1,500.00 per player, payable at the office. Bring your own racket; club balls are provided. Draw posted one week before play.",
+        "bullets": [
+          "Text box along the bottom with the club address and telephone number",
+          "Club logo top right, wrapped so the body text flows around it",
+          "Entry numbers taken from the tournament table, not typed by hand",
+          "Printed two to a page and cut, to save paper"
+        ]
+      },
+      {
+        "heading": "Word processing: features used and why they earn the marks",
+        "table": {
+          "caption": "Formatting features and the reason each was used",
+          "columns": [
+            "Feature",
+            "Where it is used",
+            "Why it was used"
+          ],
+          "rows": [
+            [
+              "Heading 1 and Heading 2 styles",
+              "Both documents",
+              "One change to the style restyles every heading; consistent between letter and flyer"
+            ],
+            [
+              "Mail merge fields",
+              "Invitation letter",
+              "Produces all 200 letters from one master, with no retyping"
+            ],
+            [
+              "Merge with a sort order",
+              "Invitation letter",
+              "Output is already sorted by category and surname"
+            ],
+            [
+              "Table with merged heading row",
+              "Tournament schedule",
+              "Heading spans the width of the schedule, which a plain table cannot do"
+            ],
+            [
+              "Repeat header row",
+              "Tournament schedule",
+              "The column headings repeat if the schedule runs onto a second page"
+            ],
+            [
+              "Header and footer with page numbers",
+              "Both documents",
+              "Arrow - the reader can see which page of the schedule they hold"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Spreadsheet structure and the lookup table",
+        "body": "The workbook has three sheets. Sheet Members holds one row per member with the membership number, surname, first name, category code and date joined. Sheet Fees holds the lookup table below, which is the only place a fee is written down. Sheet Summary holds the totals, and every figure on it is a formula that reads the other two sheets.\n\nKeeping the fee in a lookup table rather than on each member row is the design decision that makes the workbook maintainable. When the committee raised the Family fee, one cell changed and the expected income, the arrears and the chart all corrected themselves.",
+        "table": {
+          "caption": "Sheet Fees: the category lookup table (range A1:C4, named FeeTable)",
+          "columns": [
+            "Code",
+            "Category",
+            "Annual fee"
+          ],
+          "rows": [
+            [
+              "J",
+              "Junior (under 18)",
+              "6,000.00"
+            ],
+            [
+              "S",
+              "Senior (18 to 59)",
+              "9,500.00"
+            ],
+            [
+              "F",
+              "Family",
+              "14,000.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Spreadsheet formulas used in the workbook",
+        "table": {
+          "caption": "The formulas on sheet Members and sheet Summary",
+          "columns": [
+            "Cell",
+            "Formula",
+            "What it does"
+          ],
+          "rows": [
+            [
+              "Members!F2",
+              "=VLOOKUP(C2,FeeTable,3,FALSE)",
+              "Reads the annual fee for the member's category code from the lookup table"
+            ],
+            [
+              "Members!G2",
+              "=F2-E2",
+              "Balance due: the fee minus the amount the member has paid"
+            ],
+            [
+              "Members!H2",
+              "=IF(G2>0,\"Outstanding\",\"Paid\")",
+              "Writes a status word instead of leaving the reader to compare numbers"
+            ],
+            [
+              "Summary!B3",
+              "=SUM(Members!F2:F201)",
+              "Expected income for all 200 members"
+            ],
+            [
+              "Summary!B4",
+              "=SUMIF(Members!H2:H201,\"Outstanding\",Members!G2:G201)",
+              "Arrears: adds only the rows flagged Outstanding"
+            ],
+            [
+              "Summary!B5",
+              "=COUNTIF(Members!H2:H201,\"Outstanding\")",
+              "How many members are in arrears"
+            ],
+            [
+              "Summary!B6",
+              "=SUMIF(Members!C2:C201,\"J\",Members!F2:F201)",
+              "Income expected from one category (repeated for S and F)"
+            ],
+            [
+              "Summary!B7",
+              "=(B3-B4)/B3",
+              "Collection rate, formatted as a percentage"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Spreadsheet results: expected income by category",
+        "body": "The summary sheet reports expected income of 1,756,500.00 for the year. The largest single share comes from the Senior category, because it has both a high fee and more members than the Family category. The Junior category is the second largest by number of members but the smallest by value, which is why the committee's decision to review the Junior fee has a smaller effect on the club's income than a change to the Senior fee would.",
+        "table": {
+          "caption": "Expected subscription income by category (n = 200 members)",
+          "columns": [
+            "Category",
+            "Members",
+            "Annual fee",
+            "Expected income",
+            "Share of income"
+          ],
+          "rows": [
+            [
+              "Junior (under 18)",
+              "86",
+              "6,000.00",
+              "516,000.00",
+              "29.4%"
+            ],
+            [
+              "Senior (18 to 59)",
+              "79",
+              "9,500.00",
+              "750,500.00",
+              "42.7%"
+            ],
+            [
+              "Family",
+              "35",
+              "14,000.00",
+              "490,000.00",
+              "27.9%"
+            ],
+            [
+              "Total",
+              "200",
+              "n/a",
+              "1,756,500.00",
+              "100.0%"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Spreadsheet results: collection, arrears and the chart",
+        "body": "The collection sheet splits the membership into the members who have paid in full and the members whose payments are below their fee. 176 members have paid 1,542,000.00, and the remaining 24 have paid 153,000.00 of the 214,500.00 they owe, leaving arrears of 61,500.00. The overall collection rate is 96.5 per cent.\n\nThe chart on the sheet is a clustered bar chart with the category names on the category axis and two series, expected income and income collected, on the value axis, which is scaled in thousands of dollars with gridlines every 100 thousand. The two series are close together for the Junior category and furthest apart for the Family category, so the chart shows at a glance where the club's unpaid money is concentrated. A pie chart of the five largest arrears was tried first but was discarded, because a pie chart cannot show two values for the same category.",
+        "table": {
+          "caption": "Collection position for the year",
+          "columns": [
+            "Status",
+            "Members",
+            "Expected",
+            "Collected",
+            "Outstanding"
+          ],
+          "rows": [
+            [
+              "Paid in full",
+              "176",
+              "1,542,000.00",
+              "1,542,000.00",
+              "0.00"
+            ],
+            [
+              "Part-paid (in arrears)",
+              "24",
+              "214,500.00",
+              "153,000.00",
+              "61,500.00"
+            ],
+            [
+              "Total",
+              "200",
+              "1,756,500.00",
+              "1,695,000.00",
+              "61,500.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Database design: tables and how they are related",
+        "body": "The data was normalised into five tables so that a member's category name is stored once rather than on every member record. tblCategories is the parent of tblMembers, and tblMembers is the parent of both tblPayments and tblEntries, which is what allows the database to answer a question about a payment without repeating the member's surname on every receipt.",
+        "table": {
+          "caption": "Tables in the Bayview database with their keys and record counts",
+          "columns": [
+            "Object",
+            "Type",
+            "Primary key",
+            "Records"
+          ],
+          "rows": [
+            [
+              "tblCategories",
+              "Table",
+              "CategoryCode (text, 1)",
+              "3"
+            ],
+            [
+              "tblMembers",
+              "Table",
+              "MemberID (text, 7)",
+              "200"
+            ],
+            [
+              "tblPayments",
+              "Table",
+              "PaymentID (autonumber)",
+              "214"
+            ],
+            [
+              "tblTournaments",
+              "Table",
+              "TournamentID (number)",
+              "3"
+            ],
+            [
+              "tblEntries",
+              "Table",
+              "EntryID (autonumber)",
+              "16"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Database queries, forms and reports",
+        "table": {
+          "caption": "Query, form and report objects built on the five tables",
+          "columns": [
+            "Object",
+            "Type",
+            "Criteria or purpose"
+          ],
+          "rows": [
+            [
+              "qryMembersByCategory",
+              "Select query",
+              "Shows every member of one category, prompted with a parameter"
+            ],
+            [
+              "qryOutstandingBalances",
+              "Select query",
+              "Members whose total paid is less than the fee for their category"
+            ],
+            [
+              "qryTournamentEntries",
+              "Select query",
+              "Entries where TournamentID equals 3 and AgeGroup equals Under-15"
+            ],
+            [
+              "qryIncomeByCategory",
+              "Totals query",
+              "Groups members by category and sums the fee"
+            ],
+            [
+              "frmMembers",
+              "Form",
+              "Data entry for new members, with the category chosen from a list"
+            ],
+            [
+              "frmPayments",
+              "Form",
+              "Receipts: the member is found from a combo box so that no payment can be posted to a mistyped number"
+            ],
+            [
+              "rptOutstandingBalances",
+              "Report",
+              "The arrears list, sorted by category and surname, with a group total"
+            ],
+            [
+              "rptTournamentDraw",
+              "Report",
+              "The draw sheet for one tournament, grouped by age group"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Database results: the outstanding-balances query output",
+        "body": "The query joins tblMembers to tblCategories to read the fee and to a totals query on tblPayments to read the amount paid, and keeps only the rows where the paid total is below the fee. Run against the live data it returns 24 rows; the first five are shown below, sorted by category then surname. The group total on the report agrees with the spreadsheet's arrears figure of 61,500.00, which is the cross-check that the database and the workbook are reporting the same club.",
+        "table": {
+          "caption": "qryOutstandingBalances: first 5 of 24 rows returned",
+          "columns": [
+            "Member ID",
+            "Surname",
+            "Category",
+            "Balance due"
+          ],
+          "rows": [
+            [
+              "BV-0025",
+              "Thomas",
+              "Junior (under 18)",
+              "2,000.00"
+            ],
+            [
+              "BV-0067",
+              "Henry",
+              "Junior (under 18)",
+              "2,000.00"
+            ],
+            [
+              "BV-0112",
+              "Lewis",
+              "Family",
+              "4,000.00"
+            ],
+            [
+              "BV-0143",
+              "Campbell",
+              "Senior (18 to 59)",
+              "2,500.00"
+            ],
+            [
+              "BV-0198",
+              "Reid",
+              "Senior (18 to 59)",
+              "2,500.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Problem solving: pseudocode for the arrears report",
+        "body": "The program solves one narrow problem: read the member records and print the arrears report. The pseudocode was written before any code, and the flowchart in the appendix follows the same five steps, so the program listing can be read against both.",
+        "bullets": [
+          "BEGIN",
+          "SET expected = 0, paid = 0, owingCount = 0, memberCount = 0",
+          "OPEN members.txt FOR READING",
+          "WHILE NOT end of file DO",
+          "    READ memberID, surname, category, amountPaid",
+          "    SET fee = FeeFor(category)  (6000 for J, 9500 for S, 14000 for F)",
+          "    SET expected = expected + fee",
+          "    SET paid = paid + amountPaid",
+          "    SET memberCount = memberCount + 1",
+          "    IF amountPaid < fee THEN",
+          "        SET owingCount = owingCount + 1",
+          "        PRINT memberID, surname, fee - amountPaid",
+          "    ENDIF",
+          "ENDWHILE",
+          "SET outstanding = expected - paid",
+          "PRINT memberCount, expected, paid, outstanding",
+          "PRINT paid / expected * 100 (collection rate)",
+          "PRINT owingCount",
+          "CLOSE members.txt",
+          "END"
+        ]
+      },
+      {
+        "heading": "Problem solving: the Pascal program",
+        "body": "The listing below is the tested program. The fee for a category is held in a constant and returned by one function, so the fee rule appears once in the code exactly as it appears once in the spreadsheet's lookup table. The sentinel-controlled WHILE loop reads until end of file, which means the program still works when the club adds members and does not need a record count typed into it.\n\nprogram BayviewFees;\n{ Reads the club member file and prints the arrears report. }\nconst\n  JUNIOR_FEE = 6000.0;\n  SENIOR_FEE = 9500.0;\n  FAMILY_FEE = 14000.0;\ntype\n  TMember = record\n    id: string[7];\n    surname: string[20];\n    category: char;\n    amountPaid: real;\n  end;\nvar\n  f: text;\n  m: TMember;\n  fee, expected, paid, outstanding: real;\n  memberCount, owingCount: integer;\nfunction FeeFor(c: char): real;\nbegin\n  case c of\n    'J': FeeFor := JUNIOR_FEE;\n    'S': FeeFor := SENIOR_FEE;\n    'F': FeeFor := FAMILY_FEE;\n  else\n    FeeFor := 0.0;\n  end;\nend;\nbegin\n  expected := 0.0; paid := 0.0; memberCount := 0; owingCount := 0;\n  assign(f, 'members.txt');\n  reset(f);\n  writeln('Members with an outstanding balance');\n  writeln('----------------------------------');\n  while not eof(f) do\n  begin\n    readln(f, m.id, m.surname, m.category, m.amountPaid);\n    fee := FeeFor(m.category);\n    expected := expected + fee;\n    paid := paid + m.amountPaid;\n    memberCount := memberCount + 1;\n    if m.amountPaid < fee then\n    begin\n      owingCount := owingCount + 1;\n      writeln(m.id, '  ', m.surname, '  ', (fee - m.amountPaid):8:2);\n    end;\n  end;\n  close(f);\n  outstanding := expected - paid;\n  writeln;\n  writeln('Members processed : ', memberCount);\n  writeln('Expected income   : ', expected:10:2);\n  writeln('Fees collected    : ', paid:10:2);\n  writeln('Outstanding       : ', outstanding:10:2);\n  writeln('Collection rate   : ', (paid / expected * 100):6:1, ' per cent');\n  writeln('Members owing     : ', owingCount);\nend.",
+        "bullets": [
+          "Compiled and run with no warnings on the club's lab machines",
+          "Reads the same field order that the spreadsheet exports: id, surname, category, amount paid",
+          "The else branch of FeeFor returns 0.00 for an unknown category, so a mistyped code is reported as owing rather than crashing the run"
+        ]
+      },
+      {
+        "heading": "Program test results",
+        "body": "Five test cases were run: three single-record cases that check the fee rule and the comparison, one full-file case that checks the totals against the spreadsheet, and one error case. The full-file run produced the same five summary numbers as the spreadsheet and the database report, which is the evidence that the three components are consistent with each other.",
+        "table": {
+          "caption": "Test plan and results for the arrears program",
+          "columns": [
+            "Test",
+            "Input",
+            "Expected output",
+            "Actual output",
+            "Result"
+          ],
+          "rows": [
+            [
+              "T1",
+              "Junior paid in full (J, paid 6000)",
+              "No line on the arrears list",
+              "No line printed",
+              "Pass"
+            ],
+            [
+              "T2",
+              "Junior owing 2000 (BV-0025, paid 4000)",
+              "BV-0025 Thomas 2000.00",
+              "BV-0025 Thomas 2000.00",
+              "Pass"
+            ],
+            [
+              "T3",
+              "Senior owing 2500 (BV-0198, paid 7000)",
+              "BV-0198 Reid 2500.00",
+              "BV-0198 Reid 2500.00",
+              "Pass"
+            ],
+            [
+              "T4",
+              "Whole file of 200 records",
+              "Expected 1,756,500.00, collected 1,695,000.00, outstanding 61,500.00, rate 96.5, owing 24",
+              "Same figures printed",
+              "Pass"
+            ],
+            [
+              "T5",
+              "Unknown category code X",
+              "Fee 0.00, member listed as owing, run continues",
+              "Fee 0.00, member listed, run continued",
+              "Pass"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Discussion of the portfolio",
+        "body": "The four components solve the same problem at four different levels, and the value of the portfolio comes from the fact that they agree. The letter carries the balance due that the spreadsheet calculates; the spreadsheet's arrears figure of 61,500.00 is the same figure that the database query returns and the same figure that the program prints. That could only happen because the membership fields were defined once, at the start, and because each component reads the category fee from a single place: a lookup table in the workbook, a categories table in the database and a constant in the program. Had the fee been typed into three places, the three answers would have drifted apart within a term.\n\nThe design also answers the problem the club actually stated. Hand-adding the receipt book was the source of the disagreement with the bank, and after the change no human adds a money column: SUM, SUMIF and COUNTIF produce the totals in the workbook, the totals query produces them in the database, and the program produces them from the record file. The work that remains for the secretary is the part that needs judgement - deciding what to do about arrears - not the arithmetic.\n\nThe component that took the longest was the database, because the payments needed to be normalised before any report would group correctly. Posting a payment against the member row itself would have looked simpler, but it would have made a second payment overwrite the first and made the arrears query impossible to write. The time spent on normalisation is what made the 24-row arrears report a five-line query instead of a program.",
+        "bullets": [
+          "Cross-check: workbook, database report and program all report 61,500.00 in arrears",
+          "Single source for the fee rule in each component",
+          "The club's stated weakness (hand-added totals) is removed rather than automated",
+          "Longest task: normalising payments into their own table"
+        ]
+      },
+      {
+        "heading": "Limitations and improvements",
+        "bullets": [
+          "The workbook is a stand-alone file; a member added in the database is not yet copied into the spreadsheet automatically, so a member added after the last export is missing from the summary until the export is re-run",
+          "Payments are keyed by a person, so a transposed amount is still possible; the next improvement is a form that refuses a payment larger than the fee",
+          "The program reads a fixed file name and a fixed field order, and it does not validate that the category is one of the three codes",
+          "The chart shows expected against collected by category but does not show the trend over the year, because there is only one full year of data",
+          "Improvement planned: move the member file to a comma-separated file so that the export from the database is direct"
+        ]
+      },
+      {
+        "heading": "Conclusion",
+        "body": "The club now has one system in four parts. The letter, the flyer and the schedule are produced from styled templates, so the club's documents look the same whoever types them. The spreadsheet calculates expected income of 1,756,500.00 and arrears of 61,500.00 from the category lookup table, so no total is added by hand. The database holds the member, payment and tournament data in five related tables and answers the arrears and entry questions by query, and the Pascal program reproduces the arrears report from the record file, reporting a collection rate of 96.5 per cent and 24 members owing. All three routes to the numbers agree, which was the objective set at the start of the project.",
+        "bullets": [
+          "Objective met: the fee rule is stored once in each component",
+          "Objective met: the arrears total is calculated, not hand-added",
+          "Objective met: the invitation letter is produced for all 200 members from one master document",
+          "Objective met: built with software the club already owns"
+        ]
+      },
+      {
+        "heading": "Sources and acknowledgements",
+        "body": "The sources used while building the portfolio are listed below. The club details, member names and figures used in this portfolio are invented for the worked example and do not describe a real club or real members.",
+        "bullets": [
+          "CSEC Information Technology syllabus, sections on word processing, spreadsheets, database management and problem solving",
+          "CSEC Information Technology SBA guide: the four components and the marks for each",
+          "Club software help files for the spreadsheet functions SUMIF, COUNTIF and VLOOKUP",
+          "Textbook chapter on normalisation and on writing totals queries",
+          "Thanks to the club secretary for describing the paper-based system that the project replaces"
+        ]
+      }
+    ],
+    "examinerNotes": [
+      "This subject is marked under four components totalling 60 marks, and the portfolio supplies a real artifact for each one: a merge-letter master, a workbook, a database and a tested program. Every component is described in terms of what the club gains, not in terms of which menu item was clicked.",
+      "The strongest feature is that the four components agree. Expected income of 1,756,500.00, arrears of 61,500.00 and a collection rate of 96.5 per cent are produced three ways - by the workbook formulas, by the database query and by the Pascal program - and the report says so. A marker can see the system is one system, not four exercises stapled together.",
+      "Design decisions are justified rather than asserted: the fee lives in one lookup table so a change is made once, payments are normalised into their own table so a second payment cannot overwrite the first, and a pie chart was tried and rejected with a reason. That reasoning is what separates a full-mark project from one that merely works.",
+      "The testing section records five cases including an unknown category code, and the limitation that the spreadsheet is refreshed by export is stated honestly. Candidate, centre, club and member details are invented placeholders; write your own system, for your own client, with your own artifacts."
+    ]
+  }
 }
