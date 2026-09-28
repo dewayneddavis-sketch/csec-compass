@@ -70,5 +70,1226 @@
     "Hand-checked sample of figures included",
     "Documents proofread and professionally presented",
     "Evaluation with specific recommendations"
-  ]
+  ],
+  "completedSample": {
+    "title": "A complete, full-mark EDPM SBA portfolio: a document set prepared for the accounts office of a distribution company (all details invented)",
+    "viewOnlyNote": "For viewing and learning only. This is an original worked example written for CSEC Compass, not a real candidate's submission and not a CXC exemplar. The company, the office, its staff, its customers and every figure are invented to show what a full-mark EDPM portfolio looks like. Read it, study how each document is set out and why each software feature was chosen, then produce your own document set for your own office. This sample cannot be copied.",
+    "profile": [
+      {
+        "label": "Candidate",
+        "value": "Sample Candidate (invented)"
+      },
+      {
+        "label": "Centre",
+        "value": "Sample Secondary School (invented)"
+      },
+      {
+        "label": "Subject",
+        "value": "CSEC Electronic Document Preparation and Management - School-Based Assessment portfolio"
+      },
+      {
+        "label": "Office studied",
+        "value": "The accounts (sales ledger) office of Pimento Grove Distributors Ltd, a small distribution company (invented)"
+      },
+      {
+        "label": "Submission",
+        "value": "One bound portfolio of 25 sections holding the research, the plan, the prepared documents with the features used, the checking record and the evaluation"
+      }
+    ],
+    "categories": [
+      {
+        "section": "Research",
+        "marks": "8",
+        "awarded": "8",
+        "comment": "Three observation sessions and two interviews produce a real description of the office: its functions, layout, four staff and their duties, the equipment and software, and the eleven documents it handles, with two weaknesses in the present routine identified and carried into the plan."
+      },
+      {
+        "section": "Plan",
+        "marks": "6",
+        "awarded": "6",
+        "comment": "Every document in the set has its software, its data source, the house style it must follow and a deadline, and the house style is fixed before any document is started, so the set looks like one office's work rather than eight separate exercises."
+      },
+      {
+        "section": "Document Preparation",
+        "marks": "20",
+        "awarded": "20",
+        "comment": "Eight documents and a report are prepared in full: a block letter with every part present, a memorandum, a notice and agenda, minutes matched to the agenda, a price list, an invoice and statement workbook, a database with an entry form, a query and a grouped report, a presentation and a desktop-published leaflet."
+      },
+      {
+        "section": "Application of Features",
+        "marks": "10",
+        "awarded": "10",
+        "comment": "Fifteen features are named, located and justified in terms of what the office gains: styles, automatic date and page fields, mail merge, an absolute reference, IF, VLOOKUP, SUMIF and COUNTIF, a primary key with a related table, validation and combo boxes, a two-criteria query, grouping and a design theme."
+      },
+      {
+        "section": "Accuracy and Proofreading",
+        "marks": "6",
+        "awarded": "6",
+        "comment": "Five checks are described, eight real faults are recorded with the correction made for each, and a hand-checked sample of five invoices is recomputed from the price list and reconciled to the workbook to the cent, including the invoice and the ledger totals that appear elsewhere in the portfolio."
+      },
+      {
+        "section": "Evaluation",
+        "marks": "6",
+        "awarded": "6",
+        "comment": "The evaluation measures the set against the three needs the office stated, says plainly which part of the work is strongest and which is weakest, and lists six specific limitations with the improvement each one needs rather than general comment."
+      }
+    ],
+    "pages": [
+      {
+        "heading": "Cover page and contents",
+        "body": "This is the portfolio I prepared for the CSEC Electronic Document Preparation and Management School-Based Assessment. It is a practical portfolio: the accounts (sales ledger) office of Pimento Grove Distributors Ltd, a small distribution company that supplies packaged foods to shops and supermarkets in central Jamaica, was studied over nine weeks, and a defined set of electronic documents that the office actually uses was then prepared, presented and explained. The company, the office, its staff, its customers and every figure in the portfolio are invented for this worked example; they do not describe a real business. The portfolio holds 25 sections: the research into the office, the plan for the document set, the eight documents themselves with the software features used to produce each one, the record of checking and correcting, and an honest evaluation against what the office needs.",
+        "bullets": [
+          "1. Cover page and contents",
+          "2. Research: the office studied, its functions and its layout",
+          "3. Research: staff duties, equipment and software",
+          "4. Research: the documents and records the office handles",
+          "5. Method: how the portfolio was planned and produced",
+          "6. Plan: the document set, the software and the house style",
+          "7. Plan: the data collected and the file structure",
+          "8. Document preparation: the business letter and the memorandum",
+          "9. Document preparation: the notice and the agenda",
+          "10. Document preparation: the minutes of the credit control meeting",
+          "11. Document preparation results: the price list",
+          "12. Spreadsheet results: the invoice line by line",
+          "13. Spreadsheet results: the invoice totals",
+          "14. Spreadsheet results: the March summary",
+          "15. Database design: the customer table and its fields",
+          "16. Database queries, forms and reports",
+          "17. Database results: the overdue accounts the query returned",
+          "18. Database results: the report grouped by parish",
+          "19. Application of features: every feature used and why",
+          "20. Accuracy and proofreading: the errors found and corrected",
+          "21. Accuracy and proofreading: the checks and the hand-checked sample",
+          "22. Discussion: the portfolio measured against the office's needs",
+          "23. Limitations and improvements",
+          "24. Conclusion",
+          "25. Sources and acknowledgements"
+        ]
+      },
+      {
+        "heading": "Research: the office studied, its functions and its layout",
+        "body": "I chose the accounts office of Pimento Grove Distributors Ltd because the company is small enough for one student to study properly but busy enough to issue a real volume of documents: 47 invoices were issued in March alone, and the office keeps a credit ledger of 12 customer accounts. The office occupies an L-shaped room behind the front counter. The counter section is open to delivery staff and customers who come to settle an account, and it holds a filing counter, a receipt book, a card index of old accounts and a wall chart of the credit control procedure. The working section behind it holds three desks, each with a computer; a shared laser printer and a flatbed scanner stand between the middle and right desks; there is one photocopier against the far wall; and a two-drawer fireproof cabinet holds the signed delivery notes and the correspondence file. A whiteboard on the near wall carries the month-end dates, and a notice board next to it holds staff memoranda and the roster. The office's main functions are: preparing and issuing invoices and delivery notes; recording receipts and posting them to the customer accounts; controlling credit, including approving credit limits and chasing accounts that run past the agreed terms; preparing monthly statements of account; recording supplier invoices and preparing the payment schedule; keeping the payroll records for the eighteen staff of the company; and producing the month-end reports for the manager. I gathered the information by interviewing the accounts supervisor and the sales ledger clerk, by observing the office on three weekday mornings, and by reading the blank document templates the office already uses. The interview questions, the notes from the three observation sessions and a sketch of the layout are in the appendix of the portfolio.",
+        "bullets": [
+          "Interview 1: the accounts supervisor, on credit limits, authorisation and month-end work",
+          "Interview 2: the sales ledger clerk, on the daily routine from delivery note to receipt",
+          "Observation 1: Tuesday morning, 8:30 to 11:30, the invoicing run",
+          "Observation 2: Wednesday morning, 8:30 to 11:30, receipts opened and posted",
+          "Observation 3: Friday afternoon, 1:00 to 4:00, statements prepared and letters typed",
+          "Document templates collected: blank invoice, statement, credit note, memorandum and the notice sheet"
+        ]
+      },
+      {
+        "heading": "Research: staff duties, equipment and software",
+        "body": "Four staff share the accounts office: the accounts supervisor, a sales ledger clerk, a purchases and payments clerk and an office attendant who also works the counter. Each member of staff works at a computer of their own, except the office attendant, who uses the spare workstation at the counter. Duties are written down in the office's own procedure note and I checked them against what I saw during the three observation sessions. The table below sets out the duties and the software each person uses every day; the office procedure note requires every document to be saved in the shared accounts folder and printed only when it needs a signature or has to leave the office.",
+        "table": {
+          "caption": "Staff, duties and the software each person uses daily",
+          "columns": [
+            "Staff and role",
+            "Main duties",
+            "Software used daily",
+            "Equipment used"
+          ],
+          "rows": [
+            [
+              "Accounts supervisor (Yvette Campbell, invented)",
+              "Approves credit limits and credit notes, signs statements and letters, checks the month-end reports, supervises the credit control routine",
+              "Spreadsheet, database, word processing, email",
+              "Desktop computer, printer, scanner"
+            ],
+            [
+              "Sales ledger clerk",
+              "Posts invoices and receipts to the ledger, keeps the customer file, prepares and mails monthly statements, telephones accounts that run past 60 days",
+              "Spreadsheet, database, word processing",
+              "Desktop computer, printer, telephone"
+            ],
+            [
+              "Purchases and payments clerk",
+              "Records supplier invoices, checks them against delivery notes, prepares payment vouchers and the payment schedule, files the signed notes",
+              "Spreadsheet, word processing",
+              "Desktop computer, printer, scanner"
+            ],
+            [
+              "Office attendant and counter clerk",
+              "Receives and sorts the mail, answers the telephone, writes receipts for counter payments, keeps the stationery register, files delivery notes",
+              "Word processing, email",
+              "Counter workstation, receipt book, filing cabinet"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Research: the documents and records the office handles",
+        "body": "The office handles eleven main documents and records. The table below records, for each one, who produces it, how often it is produced, the software used and how it is filed. Reading the table against what I observed showed two weaknesses that the portfolio tries to answer. First, the statements were typed from the ledger each month, so the same names and balances were keyed twice and the office accepted that a few errors would creep in. Second, there was no single list of accounts that had run past the agreed terms: the clerk worked from the card index and a handwritten reminder list, which meant an account could be chased late. Both problems can be solved with the software the office already owns - a mail merge for the statements, and a query on the customer database for the overdue accounts - which is why the portfolio set out to build the documents that way rather than by hand.",
+        "table": {
+          "caption": "The documents and records the accounts office handles",
+          "columns": [
+            "Document or record",
+            "Produced by",
+            "Frequency",
+            "Software used",
+            "How it is filed"
+          ],
+          "rows": [
+            [
+              "Business letter",
+              "Accounts supervisor",
+              "As needed, about 6 a month",
+              "Word processing",
+              "Signed original posted, copy filed by month"
+            ],
+            [
+              "Memorandum",
+              "Accounts supervisor",
+              "As needed, 2 or 3 a month",
+              "Word processing",
+              "Notice board, then the correspondence file"
+            ],
+            [
+              "Notice and agenda",
+              "Accounts supervisor",
+              "Monthly, before the credit meeting",
+              "Word processing",
+              "Issued to the five staff, spare copies filed"
+            ],
+            [
+              "Minutes",
+              "Sales ledger clerk",
+              "Monthly, after the credit meeting",
+              "Word processing",
+              "Signed by the supervisor, filed in the minutes folder"
+            ],
+            [
+              "Invoice and delivery note",
+              "Sales ledger clerk",
+              "Daily, 47 in March",
+              "Spreadsheet",
+              "Numbered and filed by month"
+            ],
+            [
+              "Price list",
+              "Accounts supervisor",
+              "Twice a year",
+              "Word processing, spreadsheet",
+              "Issued to customers, master copy held"
+            ],
+            [
+              "Statement of account",
+              "Sales ledger clerk",
+              "Monthly, one per active account",
+              "Spreadsheet, mail merge",
+              "Posted, copy filed with the account"
+            ],
+            [
+              "Credit note",
+              "Accounts supervisor",
+              "As needed, 5 in March",
+              "Spreadsheet",
+              "Numbered, filed with the invoice it corrects"
+            ],
+            [
+              "Customer database",
+              "Sales ledger clerk",
+              "Kept up to date daily",
+              "Database",
+              "Held on the server, backed up nightly"
+            ],
+            [
+              "Month-end report",
+              "Accounts supervisor",
+              "Monthly",
+              "Spreadsheet",
+              "Sent to the manager, copy filed"
+            ],
+            [
+              "Customer leaflet",
+              "Accounts supervisor",
+              "Once a year, revised as needed",
+              "Desktop publishing",
+              "Included with statements, stock held at the counter"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Method: how the portfolio was planned and produced",
+        "body": "The work ran over nine weeks, using the 90-minute EDPM periods on Wednesdays and an afternoon in the computer laboratory each fortnight. Week 1 was spent on the research: the two interviews and the three observation sessions were done, the blank templates were collected and the layout was sketched. In week 2 I wrote up the research and drew up the plan: the list of documents, the software for each one, the data each document needs, the house style that ties the set together and a time plan with a deadline for every document. Weeks 3 and 4 produced the word-processed documents - the letter, the memorandum, the notice, the agenda and the minutes - each built on styles so that the heading levels, the body font and the spacing are identical across the set. Weeks 5 and 6 produced the spreadsheet and the database: the price list and the invoice workbook first, because the invoice, the statement and the month-end summary all read their figures from the one workbook, then the customer table, the entry form, the overdue query and the grouped report. Week 7 produced the presentation and the desktop-published leaflet. Week 8 was the checking week: every document was spell-checked, printed and read aloud, the formulas were recalculated, a sample of five invoices was recomputed by hand and the wording was checked against the office's procedure note. Week 9 was spent on the evaluation, on correcting the last faults the checks turned up, and on binding the portfolio. The rule I set myself was that a document was finished only when its printed copy could be handed to the supervisor without a correction, so every document in the set is the corrected version, not the first draft.",
+        "bullets": [
+          "Weeks 1 to 2: research, interviews, observation and the plan",
+          "Weeks 3 to 4: the word-processed documents built on styles and a template",
+          "Weeks 5 to 6: the workbook, the database, the query and the report",
+          "Week 7: the presentation and the desktop-published leaflet",
+          "Week 8: checking - spell check, recalculation, the hand-checked sample, printing",
+          "Week 9: evaluation, final corrections and binding"
+        ]
+      },
+      {
+        "heading": "Plan: the document set, the software and the house style",
+        "body": "The plan lists the documents the portfolio would produce, the software chosen for each one, the data each document needs, the house style it must follow and the week it would be finished. Fixing the house style before any document was started is the reason the set looks like one office's work rather than eleven separate exercises: every document uses the same font and size for body text, the same two heading levels, the same spacing, the same money format and the same footer carrying the document name, the date and a page number. Two documents in the list - the statement and the invoice - share the workbook as their data source, which is deliberate: it means a price change is made once and every document that quotes it follows.",
+        "table": {
+          "caption": "The plan: document, software, data, house style and deadline",
+          "columns": [
+            "Document",
+            "Software",
+            "Data needed",
+            "House style applied",
+            "Deadline"
+          ],
+          "rows": [
+            [
+              "Business letter to a customer whose account has run past the terms",
+              "Word processing",
+              "Account code, customer name and address, invoice numbers, amounts, days overdue",
+              "Full block, house font, one-page letterhead, reference and Enclosures notation",
+              "Week 3"
+            ],
+            [
+              "Memorandum to the staff about the new 60-day chase rule",
+              "Word processing",
+              "The old rule, the new rule, the date it starts, the signature block",
+              "To, From, Date and Subject headings above a rule, flush left, no inside address",
+              "Week 3"
+            ],
+            [
+              "Notice and agenda for the monthly credit control meeting",
+              "Word processing",
+              "Meeting date, time, venue, the five agenda items, the papers to bring",
+              "Centred heading, bulleted agenda with numbering, footer with page number",
+              "Week 4"
+            ],
+            [
+              "Minutes of the credit control meeting",
+              "Word processing",
+              "Attendance, apologies, the decisions, the action list with names and dates",
+              "Numbered agenda items matched to the agenda, action table, signature line",
+              "Week 4"
+            ],
+            [
+              "Price list for the product range",
+              "Word processing and spreadsheet",
+              "Product code, description, pack size, unit price, units in stock",
+              "Table with repeated heading row, right-aligned money, totals row in bold",
+              "Week 5"
+            ],
+            [
+              "Invoice workbook for a credit sale",
+              "Spreadsheet",
+              "Order lines, unit prices, the discount rule, the tax rate, the terms",
+              "Printed to one page, gridlines hidden, money in thousands separator, 2 decimals",
+              "Week 5"
+            ],
+            [
+              "Monthly statement of account for the same customer",
+              "Spreadsheet and mail merge",
+              "Opening balance, the month's invoices and credit notes, receipts, closing balance",
+              "Same letterhead as the letter, balances right-aligned, mail merge fields in one column",
+              "Week 6"
+            ],
+            [
+              "Customer database with an entry form, a query and a grouped report",
+              "Database",
+              "Account code, name, parish, credit limit, balance, days overdue, last payment date",
+              "Field captions in title case, currency to 2 decimals, dates as dd/mm/yyyy",
+              "Week 6"
+            ],
+            [
+              "Presentation on the credit control routine for new staff",
+              "Presentation software",
+              "The routine step by step, the 60-day rule, the wording of a chase call, the do's and don'ts",
+              "One design theme, eight slides, 6 by 6 rule, notes and a printed handout",
+              "Week 7"
+            ],
+            [
+              "Customer leaflet explaining the terms of trade",
+              "Desktop publishing",
+              "Terms, the early settlement discount, the payment methods, the office contact details",
+              "Two columns, masthead, pull quote, two-colour scheme, no ragged text",
+              "Week 7"
+            ],
+            [
+              "Evaluation of the finished portfolio",
+              "Word processing",
+              "The checked documents, the faults found, the office's comments, the training needed",
+              "Numbered headings, table for faults and corrections, honest wording",
+              "Week 9"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Plan: the data collected and the file structure",
+        "body": "The data for the document set came from four sources: the customer master list, which gave the 12 account codes, names, parishes and credit limits; the March sales daybook, which gave the invoice lines; the price list, which gave the unit prices for the 7 products; and the receipts book, which gave the payments. The figures were keyed once into the workbook's price list and customer sheets, and every other document reads them from there, so a mistake in one number cannot make two documents disagree. Files are named with the document, the customer or period, and the version, for example Invoice SIM-014 v02 and Minutes March v01, and the superseded drafts are kept in an old folder rather than deleted, because the checking record has to show what was corrected. The folder structure is given below. A backup copy of the whole portfolio folder was taken to a flash drive every Friday and the files were also saved to the school network drive, so losing one copy could not lose the work.",
+        "bullets": [
+          "Portfolio folder: 01 Research, 02 Plan, 03 Word processing, 04 Spreadsheets, 05 Database, 06 Presentation, 07 Desktop publishing",
+          "04 Spreadsheets holds PriceList.xlsx, Invoice-SIM-014.xlsx and March-Summary.xlsx",
+          "05 Database holds PimentoGrove.accdb with the customer table, the entry form, two queries and two reports",
+          "old\\ inside each folder holds the superseded drafts, which the checking record refers to",
+          "Backup: the flash drive every Friday and the school network drive on the same day"
+        ]
+      },
+      {
+        "heading": "Document preparation: the business letter and the memorandum",
+        "body": "The letter is a chase letter to Sunrise Mini Mart (invented, account SIM-014), whose balance has run past the agreed 30-day terms. It is set out in full block layout on the company letterhead: reference PG/ACC/2026-031, the date, the inside address, a subject heading in bold, the body in four paragraphs, the complimentary close, the supervisor's designation, the reference initials and an Enclosures notation for the statement of account. The letter states the balance, lists the two invoices that make it up, asks for settlement by a stated date, offers a telephone call if any invoice is disputed and closes courteously, because the office wants the account kept, not just the money. The memorandum is the internal document that goes with the letter: it is addressed to all accounts staff, has To, From, Date and Subject headings above a horizontal rule, and announces that from 1 April every account 60 days or more overdue is telephoned before a chase letter is posted, with the call logged on the account. It carries no inside address or complimentary close, because a memorandum is not a letter and setting it out like one loses presentation marks.",
+        "bullets": [
+          "Letter: full block layout, all eleven parts present, one page, no orphan line",
+          "Letter: reference, date, inside address, bold subject heading, body, close, designation, reference initials, Enclosures",
+          "Memorandum: To, From, Date and Subject headings, rule beneath, numbered points, no inside address",
+          "Both documents built on the same body style, so the paragraph spacing and the font match",
+          "Both use the automatic date field, so a reprint always carries the correct date"
+        ]
+      },
+      {
+        "heading": "Document preparation: the notice and the agenda",
+        "body": "The notice and the agenda are one document, issued five working days before the monthly credit control meeting, as the office's procedure note requires. The notice carries a centred heading, the meeting name, the date, the time, the venue and the names of those required to attend, then a note that the papers listed are attached. The agenda below it is numbered, with the apologies, the minutes of the last meeting and the matters arising kept in the conventional order, and an Any Other Business item that asks members to submit items in advance so that nothing is raised for the first time in the meeting. The footer carries the document name, the date and a page number, inserted as a field rather than typed, so the numbering cannot drift when the agenda is edited.",
+        "table": {
+          "caption": "The agenda as issued for the meeting",
+          "columns": [
+            "Item",
+            "Agenda item",
+            "Paper to bring",
+            "Time allowed"
+          ],
+          "rows": [
+            [
+              "1",
+              "Apologies for absence and welcome",
+              "None",
+              "2 minutes"
+            ],
+            [
+              "2",
+              "Minutes of the previous meeting and matters arising",
+              "Minutes of February",
+              "5 minutes"
+            ],
+            [
+              "3",
+              "The overdue list: accounts 60 days or more past the terms",
+              "The grouped parish report",
+              "15 minutes"
+            ],
+            [
+              "4",
+              "Accounts over their credit limit",
+              "The credit limit query output",
+              "10 minutes"
+            ],
+            [
+              "5",
+              "The new chase routine from 1 April",
+              "Draft memorandum",
+              "10 minutes"
+            ],
+            [
+              "6",
+              "Any other business notified in advance",
+              "None",
+              "3 minutes"
+            ],
+            [
+              "7",
+              "Date of the next meeting and close",
+              "None",
+              "1 minute"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Document preparation: the minutes of the credit control meeting",
+        "body": "The minutes follow the agenda item for item, so a reader can match each decision to the item it came from. They open with the meeting name, the date and time, the venue, the names of those present and the apologies, and they close with the time the meeting ended and the signature line for the chair. Two things are done carefully. Decisions are recorded in the past tense and in the words that were agreed, not tidied into a personal opinion, and every action is given to one named person with a date, so the action table can be used as a checklist at the next meeting. The figures quoted in the minutes are taken from the query output in section 17 and the grouped report in section 18, which is why those two sections sit with the database work and the minutes quote them rather than repeat a number that might be out of date.",
+        "table": {
+          "caption": "The action list from the meeting",
+          "columns": [
+            "Item",
+            "What was discussed",
+            "Action agreed",
+            "By whom",
+            "By when"
+          ],
+          "rows": [
+            [
+              "1",
+              "Apologies from one clerk, who was on leave",
+              "The apology was accepted and noted",
+              "Supervisor",
+              "Meeting close"
+            ],
+            [
+              "2",
+              "The minutes of February were read and confirmed as correct",
+              "Minutes signed by the chair",
+              "Supervisor",
+              "After the meeting"
+            ],
+            [
+              "3",
+              "The grouped report shows 6 accounts 60 days or more overdue with 557,500.00 owing",
+              "Telephone the 6 accounts before the next letter run, starting with the largest balance",
+              "Sales ledger clerk",
+              "Within 10 working days"
+            ],
+            [
+              "4",
+              "Two accounts are above their credit limit",
+              "Suspend further credit sales on those two accounts until the balance is below the limit, and write to both customers",
+              "Supervisor",
+              "Within 5 working days"
+            ],
+            [
+              "5",
+              "The new chase routine starting 1 April",
+              "Approve the wording of the memorandum and issue it to all staff",
+              "Supervisor",
+              "Before 1 April"
+            ],
+            [
+              "6",
+              "No item was notified in advance",
+              "No item was taken",
+              "Chair",
+              "Meeting close"
+            ],
+            [
+              "7",
+              "The next meeting date was agreed",
+              "Book the room and issue the notice",
+              "Office attendant",
+              "5 days before the date"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Document preparation results: the price list",
+        "body": "The price list is the document the rest of the portfolio reads from, so it is built in the spreadsheet rather than typed in the word processor and its figures are the same cells the invoice and the statement use. It holds 7 product lines with the product code, the description, the pack size, the unit price, the units in stock and the stock value, which is the unit price multiplied by the units in stock. The total stock value is 1,462,320.00 for 1262 units. The table is printed with the heading row repeated on a second page if it spills over, the money columns right-aligned and formatted to two decimal places with a thousands separator, and the totals row in bold above a double line. The unit prices in this table are the ones used in the invoice in the next two sections, which is checked by reading the invoice line values back to this list.",
+        "table": {
+          "caption": "The price list and the stock valuation at the end of March",
+          "columns": [
+            "Product code",
+            "Description",
+            "Pack size",
+            "Unit price (J$)",
+            "Units in stock",
+            "Stock value (J$)"
+          ],
+          "rows": [
+            [
+              "PG-101",
+              "Whole wheat crackers",
+              "24 x 200 g",
+              "1,150.00",
+              "340",
+              "391,000.00"
+            ],
+            [
+              "PG-114",
+              "Coconut crunch biscuits",
+              "30 x 150 g",
+              "980.00",
+              "256",
+              "250,880.00"
+            ],
+            [
+              "PG-207",
+              "Mountain blend coffee",
+              "12 x 100 g",
+              "1,640.00",
+              "148",
+              "242,720.00"
+            ],
+            [
+              "PG-233",
+              "Guava jelly",
+              "12 x 375 g",
+              "1,425.00",
+              "96",
+              "136,800.00"
+            ],
+            [
+              "PG-318",
+              "Pepper sauce",
+              "12 x 150 ml",
+              "890.00",
+              "210",
+              "186,900.00"
+            ],
+            [
+              "PG-402",
+              "Sorrel drink concentrate",
+              "12 x 750 ml",
+              "1,275.00",
+              "124",
+              "158,100.00"
+            ],
+            [
+              "PG-455",
+              "Ginger beer syrup",
+              "6 x 1 L",
+              "1,090.00",
+              "88",
+              "95,920.00"
+            ],
+            [
+              "Total",
+              "7 product lines",
+              "Mixed packs",
+              "Average 1,158.73",
+              "1262",
+              "1,462,320.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Spreadsheet results: the invoice line by line",
+        "body": "The invoice to Sunrise Mini Mart is a credit sale of 51 units on 5 order lines. Each line's extended amount is worked out by the workbook, not typed: the formula reads the order quantity from the order sheet, looks the unit price up from the price list sheet and multiplies the two, so a price change in one cell corrects every invoice that quotes that product. The lines total 56,990.00 before the discount. The workbook also checks the order against the customer's credit limit and shows a warning in a cell beside the totals if the balance after this invoice would pass the limit; for this customer it does not. The printed invoice is set to one page with the gridlines hidden and the column headings printed once, because an invoice that splits over two sheets is one of the presentation faults the office asked to avoid.",
+        "table": {
+          "caption": "Invoice SIM-014, the order lines and the extended amounts",
+          "columns": [
+            "Line",
+            "Product",
+            "Quantity",
+            "Unit price (J$)",
+            "Extended amount (J$)"
+          ],
+          "rows": [
+            [
+              "1",
+              "PG-101 Whole wheat crackers",
+              "12",
+              "1,150.00",
+              "13,800.00"
+            ],
+            [
+              "2",
+              "PG-114 Coconut crunch biscuits",
+              "10",
+              "980.00",
+              "9,800.00"
+            ],
+            [
+              "3",
+              "PG-207 Mountain blend coffee",
+              "6",
+              "1,640.00",
+              "9,840.00"
+            ],
+            [
+              "4",
+              "PG-318 Pepper sauce",
+              "15",
+              "890.00",
+              "13,350.00"
+            ],
+            [
+              "5",
+              "PG-402 Sorrel drink concentrate",
+              "8",
+              "1,275.00",
+              "10,200.00"
+            ],
+            [
+              "-",
+              "Total of the 5 order lines",
+              "51",
+              "Mixed",
+              "56,990.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Spreadsheet results: the invoice totals",
+        "body": "The totals block is where the deliberate software features earn their marks, because each figure is produced by a formula that uses a reference rather than a typed number. The discount applies itself: an IF function tests the subtotal against the 20,000.00 order value that the office uses for its 5 per cent settlement discount and returns the discount if the order is over it, or nothing if it is not. The tax is worked out with an absolute reference to the single cell that holds the rate, so if the rate changes the workbook is corrected in one place and no formula has to be edited. The same idea runs through the statement and the month-end summary, which read their opening balances from this workbook. I checked the block two ways: I read the formulas back in the formula bar, and I recomputed the whole invoice by hand in section 21. Both agreed to the cent.",
+        "table": {
+          "caption": "The totals block of invoice SIM-014, with the formula used for each line",
+          "columns": [
+            "Item",
+            "Formula or rule used",
+            "Amount (J$)"
+          ],
+          "rows": [
+            [
+              "Subtotal of the order lines",
+              "=SUM(E4:E8)",
+              "56,990.00"
+            ],
+            [
+              "Discount at 5 per cent on orders over 20,000.00",
+              "=IF(B14>20,000.00,B14*0.05,0)",
+              "2,849.50"
+            ],
+            [
+              "Amount before tax",
+              "=B14-B15",
+              "54,140.50"
+            ],
+            [
+              "Tax at the rate held in cell $B$2 (15 per cent in this example)",
+              "=B16*$B$2",
+              "8,121.08"
+            ],
+            [
+              "Invoice total",
+              "=B16+B17",
+              "62,261.58"
+            ],
+            [
+              "Terms",
+              "Printed text: net 30 days, 5 per cent settlement discount as shown",
+              "30 days"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Spreadsheet results: the March summary",
+        "body": "The March summary is the sheet the supervisor prints for the manager. It gathers the month's figures from the daybook into one page: the value of the 47 invoices issued, the average value of an invoice, the receipts posted, the credit notes raised and the total balance left on the ledger of 12 customer accounts. Every line in the table is a formula, not a typed number: the sales value is the sum of the extended amounts on the sales sheet, the average is that total divided by the count of invoice numbers, the receipts are summed with SUMIF on the transaction type, and the ledger balance is looked up from the customer sheet so the summary and the database cannot disagree. One useful check falls out of the summary: the sales value of 639,500.00 divided by the 47 invoices gives an average of 13,606.38, which is well above the 20,000.00 discount threshold, so most orders in the month earned the settlement discount and the discount column is material rather than decorative.",
+        "table": {
+          "caption": "The March summary sheet, with the working shown",
+          "columns": [
+            "Measure",
+            "How it was worked out",
+            "Figure"
+          ],
+          "rows": [
+            [
+              "Value of the month's sales",
+              "=SUM of the extended amount column on the sales sheet",
+              "639,500.00"
+            ],
+            [
+              "Invoices issued",
+              "=COUNT of the invoice numbers on the sales sheet",
+              "47"
+            ],
+            [
+              "Average value of an invoice",
+              "Sales value divided by the number of invoices",
+              "13,606.38"
+            ],
+            [
+              "Receipts posted",
+              "=SUMIF(transaction type, receipt, amount)",
+              "42 receipts"
+            ],
+            [
+              "Credit notes raised",
+              "=COUNTIF(transaction type, credit note)",
+              "5 credit notes"
+            ],
+            [
+              "Reply-paid follow-up letters typed",
+              "Mail merge from the chase list, one per account over the terms",
+              "11 letters"
+            ],
+            [
+              "Balance on the ledger at the end of March",
+              "Linked from the customer sheet so it agrees with the database report",
+              "765,900.00"
+            ],
+            [
+              "Balance owed by accounts 60 days or more overdue",
+              "=SUMIF(days overdue, 60 or more, balance)",
+              "609,800.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Database design: the customer table and its fields",
+        "body": "The database holds one table for the customer accounts, with a second table for the transactions that make up each balance. The customer table is the one described below: the account code is the primary key, because every account already has a unique code and using it means the code, the invoice numbers and the statements all refer to the same thing. A separate transaction table holds the invoices, credit notes and receipts, so a second payment on an account does not overwrite the first and the balance can always be traced back to the documents that make it up; the two tables are related on the account code. Data types and field sizes were chosen so the office cannot key nonsense: the parish is a text field of 15 characters with a look-up list, the balance and the credit limit are currency fields formatted to two decimal places, the days overdue is a whole number, and the telephone number carries an input mask so the three-part local format cannot be typed wrongly. Validation on the credit limit refuses a negative figure and a validation text explains why.",
+        "table": {
+          "caption": "The customer table: fields, data types and why each was chosen",
+          "columns": [
+            "Field name",
+            "Data type",
+            "Size or format",
+            "Key or index",
+            "Purpose"
+          ],
+          "rows": [
+            [
+              "Account code",
+              "Text",
+              "8 characters, first three letters and three digits",
+              "Primary key",
+              "Identifies the account on every invoice, statement and query"
+            ],
+            [
+              "Customer name",
+              "Text",
+              "40 characters",
+              "Indexed",
+              "The name printed on the statement and the chase letter"
+            ],
+            [
+              "Parish",
+              "Text",
+              "15 characters, look-up list of the fourteen parishes",
+              "Indexed",
+              "Groups the report by parish for the representative's visits"
+            ],
+            [
+              "Address",
+              "Text",
+              "60 characters, two lines",
+              "None",
+              "The postal address used by the mail merge"
+            ],
+            [
+              "Telephone number",
+              "Text",
+              "Input mask 000-0000",
+              "None",
+              "Used for the chase telephone call"
+            ],
+            [
+              "Credit limit",
+              "Currency",
+              "2 decimal places, validation: must not be negative",
+              "None",
+              "The figure the balance is tested against before further credit sales"
+            ],
+            [
+              "Balance outstanding",
+              "Currency",
+              "2 decimal places, calculated from the transactions",
+              "None",
+              "What the account owes today"
+            ],
+            [
+              "Days overdue",
+              "Number",
+              "Whole number, calculated from the due date and today",
+              "Indexed",
+              "Finds the accounts that have run past the terms"
+            ],
+            [
+              "Last payment date",
+              "Date and time",
+              "Short date, dd/mm/yyyy",
+              "None",
+              "Shows how long the account has been quiet"
+            ],
+            [
+              "Credit status",
+              "Text",
+              "5 characters, look-up list: open or stop",
+              "None",
+              "Marks an account that is over its limit so a sale is refused"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Database queries, forms and reports",
+        "body": "Four database objects were built on the table. The entry form is used by the sales ledger clerk to key a new account: it uses combo boxes for the parish and the credit status so a value can only be chosen from the list, shows the validation text if a negative credit limit is keyed, and has the account code as a required field so a record cannot be saved without one. The first query is the one this portfolio reports on: it returns the accounts whose balance is over 60,000.00 and that are 60 days or more overdue. The second is a parameter query that asks for a parish when it is run, so the supervisor can print the accounts for one parish at a time. The grouped report prints those accounts by parish with a count and a total for each parish, and the labels report prints the statement addresses in the mail-merge layout the office uses.",
+        "table": {
+          "caption": "The database objects and what each one does",
+          "columns": [
+            "Object",
+            "Type",
+            "Criteria or setting",
+            "What it does"
+          ],
+          "rows": [
+            [
+              "Customer entry form",
+              "Form",
+              "Combo boxes for parish and credit status; account code required; validation text on the credit limit",
+              "Keys a new account, or corrects an existing one, without letting an invalid value be saved"
+            ],
+            [
+              "Overdue accounts",
+              "Select query",
+              "Balance > 60,000.00 AND Days overdue >= 60, sorted largest balance first",
+              "Lists the accounts to be telephoned before the next letter run"
+            ],
+            [
+              "Accounts by parish",
+              "Parameter query",
+              "Parish = [Enter the parish]",
+              "Prints the accounts for one parish for the representative's visit"
+            ],
+            [
+              "Over credit limit",
+              "Select query",
+              "Balance > Credit limit",
+              "Finds the accounts where further credit sales must be stopped"
+            ],
+            [
+              "Overdue by parish",
+              "Grouped report",
+              "Grouped on parish, with a count of accounts and a sum of the balance in each group, grand total at the end",
+              "The one-page report taken to the credit control meeting"
+            ],
+            [
+              "Statement labels",
+              "Labels report",
+              "One label per open account, name and address fields only, three across the sheet",
+              "Feeds stationery for the statements, so the addresses are never re-typed"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Database results: the overdue accounts the query returned",
+        "body": "The query returned 6 accounts out of the 12 on the ledger, owing 557,500.00 between them. Two accounts from the ledger were expected to appear and did not: Harbour View Mini Mart and Linstead Grocers. Harbour View fails on the balance, because 38,900.00 is below the 60,000.00 the query counts as material even though the account is 41 days old, and Linstead Grocers fails on the days, because 55 days is inside the 60-day mark even though its balance is close to the limit. Papine Corner Shop is the opposite case: it is 96 days old, the oldest on the ledger, but owes 52,300.00, so the query leaves it out. That is exactly why the meeting's action list sends the clerk to the 6 accounts the query returned and keeps the card index reminder for the rest. The balance over the limit query found 0 accounts, marked in the credit status field, and those two are the ones the minutes put on stop.",
+        "table": {
+          "caption": "The output of the overdue accounts query, largest balance first",
+          "columns": [
+            "Account",
+            "Customer",
+            "Parish",
+            "Balance (J$)",
+            "Days overdue",
+            "Credit limit (J$)"
+          ],
+          "rows": [
+            [
+              "STC-002",
+              "Old Harbour Cash and Carry",
+              "St Catherine",
+              "142,300.00",
+              "68",
+              "250,000.00"
+            ],
+            [
+              "CLA-004",
+              "May Pen Wholesale",
+              "Clarendon",
+              "118,500.00",
+              "83",
+              "200,000.00"
+            ],
+            [
+              "MAN-005",
+              "Mandeville Food Centre",
+              "Manchester",
+              "91,200.00",
+              "70",
+              "180,000.00"
+            ],
+            [
+              "STJ-001",
+              "Montego Bay Provisions",
+              "St James",
+              "76,300.00",
+              "63",
+              "220,000.00"
+            ],
+            [
+              "CLA-011",
+              "Spalding Variety Store",
+              "Clarendon",
+              "66,800.00",
+              "61",
+              "100,000.00"
+            ],
+            [
+              "KIN-003",
+              "Beckford's Grocery",
+              "Kingston",
+              "62,400.00",
+              "74",
+              "150,000.00"
+            ],
+            [
+              "-",
+              "Total of the 6 accounts returned by the query",
+              "5 parishes",
+              "557,500.00",
+              "Average 69.8 days",
+              "Limits total 1,100,000.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Database results: the report grouped by parish",
+        "body": "The grouped report turns the query output into the one page the credit control meeting works from. It is grouped on the parish field, so the clerk telephoning the accounts can plan one journey or one block of calls at a time, and each group carries a count of the accounts and the total owed. Clarendon holds the largest share at 11.2 per cent of the overdue money, because May Pen Wholesale alone owes 118,500.00, which is the single largest balance in the portfolio. Kingston, Manchester, St Catherine and St James each hold one account. The grand total of 557,500.00 is the same figure the query produced in the previous section and the same figure the spreadsheet summary worked out with SUMIF, which is the check that shows the workbook and the database agree even though they were built separately.",
+        "table": {
+          "caption": "The grouped report: overdue accounts and balances by parish",
+          "columns": [
+            "Parish",
+            "Accounts",
+            "Balance (J$)",
+            "Share of the total"
+          ],
+          "rows": [
+            [
+              "Clarendon",
+              "2",
+              "185,300.00",
+              "33.2 per cent"
+            ],
+            [
+              "St Catherine",
+              "1",
+              "142,300.00",
+              "25.5 per cent"
+            ],
+            [
+              "Manchester",
+              "1",
+              "91,200.00",
+              "16.4 per cent"
+            ],
+            [
+              "St James",
+              "1",
+              "76,300.00",
+              "13.7 per cent"
+            ],
+            [
+              "Kingston",
+              "1",
+              "62,400.00",
+              "11.2 per cent"
+            ],
+            [
+              "Grand total",
+              "6",
+              "557,500.00",
+              "100.0 per cent"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Application of features: every feature used and why",
+        "body": "This section is the one the examiner reads to see whether the software was used deliberately. Each feature in the table is named, the document it was applied to is given, and the reason it was chosen is stated in terms of what the office gains. Two examples show the difference between using a feature and choosing one. The memos and the notices could have been formatted by hand, but they are built on styles instead, so when the office changed its body font the whole set was updated in one operation. The statements could have been typed one by one, but the name and address block is a mail merge from the customer list, so a customer who moves house is corrected once and every later statement follows. Nothing in the table is a feature that was used because it was available: every entry answers the question the office asked.",
+        "table": {
+          "caption": "Features applied, where they were used and why each was chosen",
+          "columns": [
+            "Document",
+            "Feature",
+            "Where it was applied",
+            "Why it was chosen"
+          ],
+          "rows": [
+            [
+              "All word-processed documents",
+              "Styles for the heading levels and the body text",
+              "Heading 1 and Heading 2 styles plus one body style in the master template",
+              "Keeps the font, size and spacing identical across eleven documents and lets a change be made once"
+            ],
+            [
+              "All word-processed documents",
+              "Automatic date field and automatic page number field",
+              "Footer of every document, and the date line of the letter",
+              "A reprinted document always carries the correct date and the numbering cannot drift"
+            ],
+            [
+              "Business letter",
+              "Full block layout on letterhead with reference and Enclosures notation",
+              "The chase letter to Sunrise Mini Mart",
+              "Matches the house style the office uses and shows every part a business letter needs"
+            ],
+            [
+              "Memorandum and notice",
+              "Table for the agenda and the action list, with borders set off",
+              "The agenda and the minutes",
+              "Lines the item numbers up with the times and actions so nothing is missed"
+            ],
+            [
+              "Statement and letters",
+              "Mail merge with a spreadsheet data source",
+              "Names and addresses for the statements and the chase letters",
+              "Removes double keying, which was the source of the office's address errors"
+            ],
+            [
+              "Price list and invoice",
+              "Absolute reference to the tax rate cell",
+              "Tax formula =B16*$B$2 on the invoice sheet",
+              "One cell holds the rate, so a rate change corrects every invoice without editing formulas"
+            ],
+            [
+              "Invoice and statement",
+              "IF function for the settlement discount",
+              "Discount formula on orders over 20,000.00",
+              "Applies the office rule automatically and shows a zero rather than a blank when it does not apply"
+            ],
+            [
+              "Invoice workbook",
+              "VLOOKUP to the price list sheet",
+              "Unit price on every invoice line",
+              "The invoice cannot quote a price that disagrees with the price list"
+            ],
+            [
+              "March summary",
+              "SUM, SUMIF and COUNTIF",
+              "Sales value, receipts posted and credit notes raised",
+              "Gathers the month's figures from the daybook without any re-keying"
+            ],
+            [
+              "Price list sheet",
+              "Currency format with a thousands separator, and column width set",
+              "Every money column in the workbook",
+              "Figures line up so a misplaced decimal is seen at once"
+            ],
+            [
+              "Customer database",
+              "Primary key and a related transaction table",
+              "Account code field, related to the transactions table",
+              "Keeps a full history, so a second payment does not overwrite the first"
+            ],
+            [
+              "Customer entry form",
+              "Validation, an input mask and combo boxes",
+              "Credit limit, telephone number, parish and credit status",
+              "Stops invalid data being saved instead of finding it later"
+            ],
+            [
+              "Overdue query and grouped report",
+              "Select query with two criteria, and grouping with a sum and a count",
+              "The overdue accounts query and the by-parish report",
+              "Produces the chase list in seconds and turns it into the page the meeting uses"
+            ],
+            [
+              "Presentation",
+              "One design theme with notes and a printed handout",
+              "All eight slides of the credit control briefing",
+              "The slides look like one set, and the handout means new staff can read it without the slides"
+            ],
+            [
+              "Customer leaflet",
+              "Two-column text frame with a masthead and a pull quote",
+              "The terms of trade leaflet",
+              "Gives a balanced, readable page that fits one sheet when printed two-sided"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Accuracy and proofreading: the errors found and corrected",
+        "body": "Every draft was checked and the faults found were written down as they were corrected, because the marks are for the record of checking, not for a claim that nothing was ever wrong. The table below lists the eight faults found in the document set, where each one was, how it was found and what was done about it. Two of them are worth reading carefully. The first is the copied formula in the invoice workbook: the discount formula was filled down without making the tax rate cell absolute, so the reference moved off the rate row and the tax for every line after the fourth was calculated from an empty cell. It was found by recalculating the sheet after changing the rate cell to 20 per cent as a test - the totals did not move, which proved the formula was not reading the cell at all. The second is the typed footer date, found by reprinting a January statement in March: the footer still said January, so the typed date was replaced with an automatic date field.",
+        "table": {
+          "caption": "The faults found in the drafts and the correction made",
+          "columns": [
+            "Fault found",
+            "Where",
+            "How it was found",
+            "Correction made"
+          ],
+          "rows": [
+            [
+              "Discount formula copied without an absolute reference, so the tax was read from an empty cell",
+              "Invoice workbook, lines 4 to 8",
+              "Rate cell changed to 20 per cent as a test and the totals did not move",
+              "Rate cell made absolute as $B$2 and the formula filled down again"
+            ],
+            [
+              "Two customer addresses in the mail merge data were missing the postal zone",
+              "Statement merge, data sheet rows 12 and 40",
+              "Statement addressed to the town only; checked against the customer list",
+              "Both addresses corrected from the customer list and the merge re-run"
+            ],
+            [
+              "Statements carried the previous month's date because the footer date was typed",
+              "Statement template footer",
+              "A January statement reprinted in March still carried January",
+              "Typed date replaced with an automatic date field; all templates corrected"
+            ],
+            [
+              "Account code keyed as CLA-04 instead of CLA-004 on one invoice",
+              "Invoice SIM-014, cover block",
+              "The query did not pick the account up although the balance was overdue",
+              "Code corrected on the invoice and the ledger, and an input mask added to the code field"
+            ],
+            [
+              "Notice sent four days before the meeting instead of five",
+              "Notice and agenda",
+              "Meeting date checked against the office procedure note",
+              "Procedures checklist added to the plan and the notice re-issued"
+            ],
+            [
+              "Agenda item numbering restarted at 1 under item 4 after a paragraph was inserted",
+              "Agenda, second page",
+              "Printed and read aloud; the sequence 1, 2, 3, 4, 1, 2 was seen",
+              "Numbering applied as a list so it renumbers itself when an item is inserted"
+            ],
+            [
+              "Table of prices split over two pages with no heading row on the second page",
+              "Price list, print preview",
+              "Print preview showed the second page of figures without headings",
+              "Heading row set to repeat, and the sheet set to fit one page wide"
+            ],
+            [
+              "Two spelling errors and one wrong product description",
+              "Letter and price list",
+              "Spell check plus a read of the printed copies against the price list",
+              "Errors corrected, and the description taken from the price list sheet rather than typed"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Accuracy and proofreading: the checks and the hand-checked sample",
+        "body": "Five checks were used on every document. The spelling and grammar check was run with the language set to English (Jamaica), and every name, product and place it flagged was checked against the office's own list rather than accepted or ignored. Find and replace was used to look for double spaces, for the old tax rate and for the words that the office spells its own way, and it was also used to replace the draft account code CLA-04 with CLA-004 throughout. The formulas were recalculated after every change to a rate or a price cell, and the printed copies were read against the source documents, because a figure can be right on screen and wrong on the page when a column is too narrow. Finally, a hand-checked sample of five invoices was recomputed from the price list with a calculator, and the whole of the invoice worked through in this portfolio was one of the five. The hand working is given below: the lines run to 56,990.00, the 5 per cent discount takes off 2,849.50 leaving 54,140.50, tax at 15 per cent of that is 8,121.08, and the invoice total is 62,261.58. Every one of those figures matches the workbook to the cent, and the same ledger balance of 765,900.00 was produced by the customer sheet and by the database report. The checking record, the marked-up drafts and the handwritten working for the five invoices are in the appendix.",
+        "bullets": [
+          "PG-101: 12 x 1,150.00 = 13,800.00, running total 13,800.00",
+          "PG-114: 10 x 980.00 = 9,800.00, running total 23,600.00",
+          "PG-207: 6 x 1,640.00 = 9,840.00, running total 33,440.00",
+          "PG-318: 15 x 890.00 = 13,350.00, running total 46,790.00",
+          "PG-402: 8 x 1,275.00 = 10,200.00, running total 56,990.00",
+          "Subtotal 56,990.00; discount at 5 per cent 2,849.50; amount before tax 54,140.50; tax at 15 per cent 8,121.08; invoice total 62,261.58",
+          "The hand working and the workbook agree to the cent, on all five sampled invoices",
+          "The ledger balance of 765,900.00 was produced three ways: the customer sheet, the query total and the summary sheet"
+        ]
+      },
+      {
+        "heading": "Discussion: the portfolio measured against the office's needs",
+        "body": "The office asked for a document set that would cut the double keying, give the credit control routine a single reliable list and make the presentation of anything that leaves the office look professional. The portfolio does all three. The double keying is gone from the statements and the chase letters, which are merged from the customer list, and from the price list, which is read by the invoice with a lookup rather than retyped. The credit control routine now starts from the overdue query and the grouped parish report: the 6 accounts the meeting agreed to telephone are produced by the query rather than remembered, and the accounts over their limit are flagged automatically, which is what the handwritten reminder list could not do. Presentation is held together by the house style: the letter, the memorandum, the notice, the agenda and the minutes all use the same two heading levels and the same spacing, so a document from this office is recognisable. The strongest part of the work is that the documents agree with one another. The balance of 765,900.00 on the ledger and the overdue total of 557,500.00 appear in the summary sheet, in the database report and in the minutes, and they agree because they are produced from the same keyed data through different routes. The weakest part is the volume of checking still left to a person: the workbook tests a credit limit and the form refuses invalid data, but nothing prevents a correct-looking figure being keyed against the wrong account, and I found that mistake only by hand.",
+        "bullets": [
+          "Double keying removed from the statements, the chase letters and the price list",
+          "Credit control now starts from a query instead of a handwritten reminder list",
+          "House styles make the whole document set look like one office's work",
+          "The ledger and overdue totals agree across the workbook, the database and the minutes",
+          "Weakest point: a figure can still be keyed against the wrong account and only a hand check finds it"
+        ]
+      },
+      {
+        "heading": "Limitations and improvements",
+        "body": "The limitations below are stated honestly, because a portfolio that claims to have no weakness is not credible and does not tell the office what to do next.",
+        "bullets": [
+          "The database and the workbook both hold the figures; they are checked against each other but they are not linked automatically, so the customer sheet is refreshed from the database by export each week.",
+          "Nothing checks that a payment has been keyed against the right account, so a wrong keying can still pass the automatic checks. Improvement: print a daily posting report and have the supervisor initial it.",
+          "The overdue query uses a fixed balance floor of 60,000.00 and a fixed 60-day mark. Improvement: move both to a small settings sheet so the office can change them without opening the query design.",
+          "The presentation was tested on the office's own computer only, so the transitions were not checked on the older machine used at the counter. Improvement: test on both machines and keep a version with no transitions.",
+          "The leaflet is designed for two-sided printing on the office's sheet, so it must be checked again if the paper size changes. Improvement: save a PDF master alongside the design file.",
+          "Working entirely on one computer with the shared folder means the drafts are safe, but the portfolio would be stronger with one week set aside for a dry run of the whole month-end routine."
+        ]
+      },
+      {
+        "heading": "Conclusion",
+        "body": "The portfolio answered the question the accounts office of Pimento Grove Distributors Ltd set. Eight documents and a report were produced - a business letter, a memorandum, a notice and agenda, minutes, a price list, an invoice and statement workbook, a customer database with an entry form, an overdue query and a grouped report, a presentation and a desktop-published leaflet - and every one of them carries a deliberate set of software features that the office would otherwise type by hand. The figures agree across the documents: the invoice totals 62,261.58, the ledger balance is 765,900.00 and the 6 accounts the query returned owe 557,500.00, and each of those figures was produced more than one way and checked to the cent. The checking week found eight real faults, including a formula that was not reading the cell it was supposed to read, and all eight were corrected before the documents were printed for submission. If I were starting again I would build the workbook's settings sheet first, so that rates and limits sat in one place from the beginning, and I would set aside one full week for the checking rather than fitting it into the periods between other work.",
+        "bullets": [
+          "Eight documents and a database report prepared, presented and explained",
+          "Every figure that appears more than once was produced and checked more than one way",
+          "Eight faults found in the checking week and all of them corrected before printing",
+          "What I would change: one settings sheet for rates and limits from the start, and a full week for checking"
+        ]
+      },
+      {
+        "heading": "Sources and acknowledgements",
+        "body": "The sources used while preparing the portfolio are listed below. Pimento Grove Distributors Ltd, the accounts (sales ledger) office, its staff, its customers and every figure in this portfolio are invented for this worked example, so nothing here describes a real business, a real customer or a real account.",
+        "bullets": [
+          "CSEC Electronic Document Preparation and Management syllabus, the sections on word processing, spreadsheets, database management, presentation and desktop publishing",
+          "CSEC EDPM School-Based Assessment guide: the research, plan, document preparation, features, checking and evaluation tasks and the marks for each",
+          "The office's own procedure note and its blank invoice, statement, credit note and memorandum templates",
+          "Software help files for the mail merge, the absolute reference, the IF function, the VLOOKUP function and the database query criteria",
+          "Textbook chapters on document layout, business letter parts, minutes and on file naming and backup",
+          "Thanks to the accounts supervisor and the sales ledger clerk, who gave their time for the two interviews and the three observation sessions"
+        ]
+      }
+    ],
+    "examinerNotes": [
+      "This subject is marked out of 56 under six tasks, and the portfolio answers each one with real work: research with interviews and observation, a plan that fixes the house style, eight prepared documents, a features table that justifies every feature, a checking record with the faults in it, and an evaluation that admits a weakness.",
+      "The strongest feature is that the documents agree. The invoice total of 62,261.58, the ledger balance of 765,900.00 and the overdue total of 557,500.00 each appear more than once, produced through different routes - a spreadsheet formula, a database query and a hand calculation - and the report says where each figure came from. That is the difference between a document set and eight exercises stapled together.",
+      "The checking section earns full marks because it records what actually went wrong, including the discount formula that was not reading the tax rate cell and the query that exposed a mistyped account code. Finding a fault and showing the correction is worth more than claiming a clean draft, and the hand-checked sample of five invoices proves the checks were real.",
+      "The evaluation is candid: the portfolio states that the workbook and the database are reconciled rather than linked, and that a correct figure can still be keyed against the wrong account. Candidate, centre, company, office and customer details are invented placeholders; produce your own document set for your own office, with your own artifacts."
+    ]
+  }
 }
