@@ -63,5 +63,1474 @@
     "Scientific explanation of performance",
     "Profit or loss calculated",
     "Problems evaluated and recommendations made"
-  ]
+  ],
+  "completedSample": {
+    "title": "A complete, full-mark Agriculture SBA project: a block of sweet pepper grown on a raised bed for one season (all details invented)",
+    "viewOnlyNote": "For viewing and learning only. This is an original worked example written for CSEC Compass, not a real candidate's submission and not a CXC exemplar. The plot, the parish, the extension officer, the buyer and every price, weight and reading are invented to show what a full-mark Agriculture farm project report looks like. Read it, study how the records are kept, how the yields are worked out and how the losses are explained, then plan and run your own enterprise on your own plot. This sample cannot be copied.",
+    "profile": [
+      {
+        "label": "Candidate",
+        "value": "Sample Candidate (invented)"
+      },
+      {
+        "label": "Centre",
+        "value": "Sample Secondary School (invented)"
+      },
+      {
+        "label": "Subject",
+        "value": "CSEC Agriculture (Double Option) - School-Based Assessment project"
+      },
+      {
+        "label": "Enterprise",
+        "value": "60 sweet pepper plants (Capsicum annuum) on a raised bed 9.0 m by 2.4 m at Sample Village, Clarendon (invented)"
+      },
+      {
+        "label": "Season",
+        "value": "Sown 10 April, transplanted 12 May, picked 30 July to 20 October (invented)"
+      },
+      {
+        "label": "Submission",
+        "value": "One bound report of 25 sections with the record book, the receipts, the rain gauge and irrigation records, the trap counts and the soil test results attached"
+      }
+    ],
+    "categories": [
+      {
+        "section": "Project Selection and Justification",
+        "marks": "4",
+        "awarded": "4",
+        "comment": "Three enterprises are compared on soil, climate, market, resources and available knowledge, the site and soil are described from test-kit and jar readings taken before the bed was built, and the reason for the raised bed is tied to the clay subsoil found 20 cm down."
+      },
+      {
+        "section": "Plan of Activities",
+        "marks": "6",
+        "awarded": "6",
+        "comment": "A dated calendar gives every operation, its inputs, its labour and the agronomic reason for the date, the bed specification is written to 21.6 square metres and 60 plants at a stated spacing and population, and the changes made to the plan during the season are recorded rather than hidden."
+      },
+      {
+        "section": "Materials, Inputs and Costing",
+        "marks": "6",
+        "awarded": "6",
+        "comment": "All 14 input lines are priced from the receipts and totalled at J$23,126.00, labour is recorded at J$2,000.00 a day for 5.00 person-days and totalled at J$10,000.00, and the two are added to give variable costs of J$33,126.00 for the season."
+      },
+      {
+        "section": "Practical Work and Record Keeping",
+        "marks": "10",
+        "awarded": "10",
+        "comment": "Dated diary entries from sowing to clearing give the operation, the measurement, the comparison and the action; plant height was measured on the same ten tagged plants, thrips counted weekly on 15 sticky traps, rain read from a gauge and irrigation counted in cans, and fruit was graded and weighed at the bed at every one of the seven pickings."
+      },
+      {
+        "section": "Analysis and Interpretation",
+        "marks": "10",
+        "awarded": "10",
+        "comment": "The 520 marketable fruits and 79.90 kg of picked fruit are tabulated picking by picking with mean fruit weights, yields are worked out a plant, a square metre and a hectare and compared honestly with the benchmark at the leaflet's own spacing, and the 12.50 kg of culls is broken into four causes each with a scientific explanation."
+      },
+      {
+        "section": "Evaluation and Recommendations",
+        "marks": "6",
+        "awarded": "6",
+        "comment": "Profit of J$1,101.00 and a 3.2 per cent margin are worked out with labour costed at the casual rate, break-even is given both as 65.11 kg of fruit and as J$463.66 a kilogram, the return of J$220.20 a day is set against the J$2,000.00 a day labour rate, and seven specific improvements are recommended."
+      }
+    ],
+    "pages": [
+      {
+        "heading": "Cover page and contents",
+        "body": "This is the report on my CSEC Agriculture School-Based Assessment project: a block of sweet pepper (Capsicum annuum) grown on a raised bed at Sample Village, Clarendon (invented) for one season, from sowing on 10 April to the last picking on 20 October. The bed is 9.0 m long and 2.4 m wide, 21.6 square metres, and it carried 60 plants in 4 rows at 0.6 m by 0.6 m spacing. The site, the season, the extension officer, the buyer and every price, weight and reading in this report are invented for this worked example; the agronomy described is the agronomy a student would actually use. The report holds 25 sections and follows the order of the work: why this enterprise was chosen, what the site could give it, the plan and the budget, the dated record of everything done and seen, the production data tabulated and worked out, the science that explains the results, and an evaluation of the profit, the problems and what should change next season.",
+        "bullets": [
+          "1. Cover page and contents",
+          "2. Selection: the enterprise chosen and how the choice was justified",
+          "3. Selection: the site, the soil and the water",
+          "4. Plan of activities: the calendar with dates",
+          "5. Plan of activities: the raised bed and how it was prepared",
+          "6. Method: how the record was kept and the project run",
+          "7. Materials and inputs: quantities and prices",
+          "8. Materials and inputs: labour, and the variable cost total",
+          "9. Practical work: the nursery and transplanting record",
+          "10. Practical work: the field diary, part one",
+          "11. Practical work: the field diary, part two",
+          "12. Practical work: plant growth recorded week by week",
+          "13. Practical work results: pest and disease monitoring and treatments",
+          "14. Practical work results: irrigation and rainfall against the crop's need",
+          "15. Analysis results: the harvest record, picking by picking",
+          "16. Analysis results: yield per plant, per square metre and per hectare",
+          "17. Analysis results: why 12.5 kg of fruit was rejected",
+          "18. Discussion: explaining the growth curve and the yield curve",
+          "19. Discussion: how the crop performed against the plan and the benchmark",
+          "20. Evaluation: the cost sheet, the revenue and the profit",
+          "21. Evaluation: the break-even analysis",
+          "22. Evaluation: the problems met and how each was managed",
+          "23. Limitations and improvements",
+          "24. Conclusion",
+          "25. Sources and acknowledgements"
+        ]
+      },
+      {
+        "heading": "Selection: the enterprise chosen and how the choice was justified",
+        "body": "Three enterprises were possible for the one season I had. Each was judged on the same five points - the soil and the space available, the climate including the rainfall of the parish, the market within reach, the resources I had for seed, fertiliser and water, and the knowledge I could get from the extension officer. The comparison is set out below, and sweet pepper was chosen because it satisfied more of the five points than either alternative could. The bed could be built on ground that already drains well, so sweet pepper could be grown at the end of the dry season and picked in the dry weather when fruit rots less, the crop is widely eaten in Jamaica so a buyer was within walking distance, and the parish extension officer had sweet pepper results for comparable plots which gave me something to compare my own yield against. The choice was also a commercial one: the supermarket buyer agreed before planting to take graded fruit, so there was a market before there was a crop, which is the single mistake my father's neighbour made last year when he planted a crop and looked for a buyer afterwards.",
+        "table": {
+          "caption": "The three enterprises considered and the reason for the decision",
+          "columns": [
+            "Enterprise",
+            "What it needs",
+            "Market position",
+            "Main risk",
+            "Decision"
+          ],
+          "rows": [
+            [
+              "Sweet pepper, 60 plants on a raised bed (chosen)",
+              "21.6 square metres of well-drained soil, a nursery for four weeks, water for six months, J$23,126.00 of inputs",
+              "Buyer agreed before planting at J$480.00 a kg for graded fruit; culls sold to a sauce maker at J$150.00 a kg",
+              "Blossom-end rot and bacterial spot in wet weather, and thrips feeding damage",
+              "Chosen: suited to the soil and the dry-season finish, a market was secured in advance, and the crop returns per square metre are the highest of the three"
+            ],
+            [
+              "Tomatoes, a staked crop",
+              "More space and taller stakes than the bed allows, seed and fungicide for blight control",
+              "General market, but prices fall sharply when the parish crop is heavy",
+              "Bacterial wilt and late blight; fruit must be sold within days of picking",
+              "Rejected: needs more space and more fungicide, and the price the buyer offered was already falling"
+            ],
+            [
+              "Pumpkin, a creeping crop",
+              "A wide area of open ground, no bed required",
+              "Steady local demand but a lower price a kg, and a heavy crop to cart",
+              "Vine borer and poor fruit set in heavy rain",
+              "Rejected: needs far more area than the one bed and returns much less per square metre, which matters when the space is the limit"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Selection: the site, the soil and the water",
+        "body": "The plot is on rising ground about 40 m above the road, open to the east and shaded by a breadfruit tree on the west fence after 5 pm. A raised bed was chosen because the subsoil is a heavy clay that holds water after rain: raising the bed 30.0 cm lifts the root zone above it, and that was the single most important reason the bed was built before anything else. The site gives about ten hours of sun in the middle of the season. Soil was tested before the bed was built, with a simple test kit and a handful-of-soil test in a jar, and the readings are below. The pH was 5.8, which is too acid for sweet pepper - the crop takes up calcium and phosphorus best between pH 6.0 and 6.8 - so agricultural lime was worked in three weeks before transplanting and the pH was re-read at 6.4. The jar test showed roughly half sand, a third silt and the rest clay, which is a loam that holds water without waterlogging once it is raised and composted. Water is the other half of the picture: the standpipe is 30 m from the bed, the watering can holds 10 litres, and rather than guess how much the crop needed I recorded every watering through the season and set it against the rain gauge readings in section 14. Sweet pepper is shallow-rooted, so it needs water little and often rather than a soaking once a week, and the drip of a watering can into a mulched bed suits it well.",
+        "table": {
+          "caption": "The site and the soil readings taken before the bed was built",
+          "columns": [
+            "What was checked",
+            "Reading or finding",
+            "How it was checked",
+            "What it means for the crop"
+          ],
+          "rows": [
+            [
+              "Soil pH, before liming",
+              "5.8",
+              "Test kit on a sample taken from five spots",
+              "Too acid; nutrients are locked up, so lime was needed and was worked in three weeks ahead"
+            ],
+            [
+              "Soil pH, after liming",
+              "6.4",
+              "Test kit re-read at transplanting",
+              "Inside the 6.0 to 6.8 range sweet pepper takes up calcium and phosphorus best"
+            ],
+            [
+              "Texture, jar test",
+              "Roughly half sand, a third silt, the rest clay",
+              "Sample shaken in a jar of water and left to settle in layers",
+              "A loam that holds water, but the clay subsoil below it is why the bed was raised"
+            ],
+            [
+              "Drainage",
+              "Water standing 20 cm below the surface after heavy rain",
+              "A hole 60 cm deep, refilled and watched",
+              "Roots would sit in water without a raised bed; the bed lifts them clear"
+            ],
+            [
+              "Slope and aspect",
+              "Gentle fall to the east, open to the morning sun",
+              "Eye and a line level",
+              "Morning sun dries the leaves early, which reduces leaf disease"
+            ],
+            [
+              "Sun hours",
+              "About ten hours at midsummer",
+              "Timed observations on three clear days",
+              "Enough for a fruiting crop; the west shade after 5 pm is late enough not to matter"
+            ],
+            [
+              "Water source",
+              "Standpipe 30 m away, 10 litre watering can",
+              "Distance measured; can volume checked",
+              "Hand watering is practical but sets a limit on how large the bed can be"
+            ],
+            [
+              "Previous crop on the plot",
+              "Sweet potato, cleared two months before",
+              "Asked the landowner and looked at the stubble",
+              "No shared soil pests with pepper, which is why this site and not the old tomato ground"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Plan of activities: the calendar with dates",
+        "body": "The calendar below was drawn up before the seed was bought and it is the plan the season was actually run to; where a date moved, the reason is written against it, because a plan that pretends nothing changed is worth less than one that records the changes. The sequence matters agronomically and each date was chosen for a reason, not by convenience. Lime went in three weeks before transplanting so that it had time to react with the soil. The nursery ran four weeks so that the seedlings went out at the six-to-eight leaf stage, which is when they transplant with the least check to growth. Mulch went down on the day of transplanting, while the plants were small enough to work around. The first sidedressing went on three weeks after transplanting, when the plants had made their first true flush of growth, and the calcium nitrate was split into three applications because calcium moves with water and a single dose would have been wasted in the first heavy rain. The last picking was set for the third week of October so that the bed could be cleared and replanted before the end of the year.",
+        "table": {
+          "caption": "The activity calendar: operations in sequence with dates",
+          "columns": [
+            "Date",
+            "Operation",
+            "Inputs and equipment needed",
+            "Labour",
+            "Why this date"
+          ],
+          "rows": [
+            [
+              "20 March",
+              "Site chosen, plot cleared of the sweet potato stubble, soil sampled",
+              "Cutlass, fork, test kit",
+              "1 person, half a day",
+              "Six weeks before sowing, so the sample result could guide the liming"
+            ],
+            [
+              "28 March",
+              "Lime applied and the bed marked out",
+              "5 kg agricultural lime, line and pegs",
+              "1 person, half a day",
+              "Three weeks before the bed was built, to let the lime react with the soil"
+            ],
+            [
+              "10 April",
+              "Seed sown in a tray of potting mix, 75 seeds",
+              "1 packet of seed, tray, 20 litres of mix",
+              "1 person, 1 hour",
+              "Nursery needs four weeks to give six-to-eight leaf seedlings"
+            ],
+            [
+              "12 April to 8 May",
+              "Nursery care: watered each morning, thinned, hardened off in the last week",
+              "Watering can, shade net",
+              "Half a day in total across four weeks",
+              "Hardening off reduces the transplant check when seedlings move to full sun"
+            ],
+            [
+              "2 May",
+              "Raised bed built: 9.0 m by 2.4 m, 30.0 cm high, pen manure and compound fertiliser worked in",
+              "12 bags of pen manure, 10 kg of 12-24-12, fork, hoe",
+              "1 person, 1 day",
+              "Ten days before transplanting so the bed settled and the fertiliser had time to mellow"
+            ],
+            [
+              "12 May",
+              "Bed dressed and mulched; 60 seedlings transplanted at 0.3 m from the bed edge",
+              "30 m plastic mulch, labels",
+              "1 person, half a day",
+              "End of the spring rains, so plants establish before the dry spell"
+            ],
+            [
+              "2 June",
+              "First weeding and first sidedressing of calcium nitrate",
+              "1.5 kg calcium nitrate, hoe",
+              "1 person, 2 hours",
+              "Three weeks after transplanting, at the first flush of growth"
+            ],
+            [
+              "9 June to 21 July",
+              "Trap monitoring each week, neem spray when counts rose, second and third sidedressings",
+              "Traps, neem insecticide, 3.5 kg calcium nitrate",
+              "1 person, 20 minutes a week",
+              "Treat on the count, not on a fixed calendar, which is what the trap record was for"
+            ],
+            [
+              "30 July to 20 October",
+              "Seven pickings, each graded, weighed and delivered",
+              "Crates, scales, record book",
+              "1 person, 1 day in total plus 4 deliveries",
+              "Pick at the light-green to colour-break stage, which travels best"
+            ],
+            [
+              "12 and 26 September",
+              "Copper fungicide applied twice for bacterial spot after the wet spell",
+              "500 g copper fungicide, knapsack",
+              "1 person, 2 hours each time",
+              "Immediately after the wettest fortnight, when the spots appeared"
+            ],
+            [
+              "31 October",
+              "Bed cleared, plants chopped and composted, mulch lifted and stored for the next crop",
+              "Cutlass, fork",
+              "1 person, half a day",
+              "Clearing early prevents the wilt and spot organisms carrying over on the stubble"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Plan of activities: the raised bed and how it was prepared",
+        "body": "The bed was built to a written specification rather than by eye, because the plant population and therefore the expected yield depend on the bed's dimensions. It is 9.0 m long by 2.4 m wide, raised 30.0 cm, with 4 rows 0.6 m apart and plants 0.6 m apart in the row, which gives 60 plants on 21.6 square metres. That is a population of 2.78 plants a square metre, or 27,800 plants a hectare. The extension officer's leaflet gives 25,000 to 30,000 plants a hectare for open-field pepper, so the planting was close to the top of that range, and I knew when I set it that close planting would later mean less airflow between the rows and more disease - which is exactly what happened, and it is written up in sections 17 and 18. The bed was built in layers: the top 15 cm of soil and subsoil was forked over and the stones taken out; 12.0 bags of well-rotted pen manure were spread and worked in to feed the crop and to open up the clay; the compound fertiliser was placed in a band 15 cm below the planting line rather than on the surface, so that the roots would grow down to it and not the weeds; the bed was shaped with sloping sides and the surface raked flat; and the plastic mulch was laid and buried at the edges the morning the seedlings went in. The plastic was chosen over straw after a small test: both suppressed weeds, but the straw kept the surface wet against the stems and the plastic warmed the bed and kept the fruit off the soil, which matters for a crop whose lower fruit can rot where it touches the ground.",
+        "table": {
+          "caption": "The bed specification, as planned and as built",
+          "columns": [
+            "Measure",
+            "Planned",
+            "As built",
+            "Why it matters"
+          ],
+          "rows": [
+            [
+              "Length",
+              "9.0 m",
+              "9.0 m",
+              "Sets the number of plants in each row and therefore the expected yield"
+            ],
+            [
+              "Width",
+              "2.4 m",
+              "2.4 m",
+              "Allows 4 rows at 0.6 m while leaving a reachable bed from both sides"
+            ],
+            [
+              "Height",
+              "30.0 cm",
+              "30.0 cm",
+              "Lifts the roots above the clay subsoil that holds standing water"
+            ],
+            [
+              "Area",
+              "21.6 square metres",
+              "21.6 square metres",
+              "The base for every yield figure in sections 15 and 16"
+            ],
+            [
+              "Rows",
+              "4",
+              "4",
+              "Row spacing of 0.6 m; the plan was to keep the rows open for airflow"
+            ],
+            [
+              "Plants a row",
+              "15",
+              "15",
+              "In-row spacing of 0.6 m"
+            ],
+            [
+              "Total plants",
+              "60",
+              "60",
+              "The population all the per-plant figures are divided by"
+            ],
+            [
+              "Population",
+              "2.78 plants a square metre",
+              "2.78 plants a square metre",
+              "27,800 plants a hectare against the leaflet's 25,000 to 30,000"
+            ],
+            [
+              "Pen manure",
+              "12 bags",
+              "12 bags",
+              "Food for the crop and organic matter to open up the clay"
+            ],
+            [
+              "Basal fertiliser",
+              "10 kg of 12-24-12",
+              "10 kg of 12-24-12 placed 15 cm below the planting line",
+              "Puts phosphorus where the roots reach it and away from the weeds"
+            ],
+            [
+              "Mulch",
+              "30 m of black plastic",
+              "30 m laid and buried at both edges",
+              "Weed control, warmer soil and cleaner fruit; chosen over straw after a test"
+            ],
+            [
+              "Plants surviving to the last picking",
+              "All 60",
+              "All 60",
+              "No plant was lost after transplanting, so every per-plant figure uses 60"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Method: how the record was kept and the project run",
+        "body": "The record was kept in a bound book kept in the shed beside the bed, written up on the day and never from memory at the end of the week, and every entry follows the same four columns: what was done or seen, what it measured, what it was compared with, and what was done about it. The full diary is in sections 10 and 11. Weights were taken on a kitchen scale reading to 10 g, checked against a 1 kg bag of flour before the first picking; plant heights were measured with a metre rule from the soil surface to the growing point on the same ten tagged plants in every reading, which is the only way the readings mean anything; rainfall was read from a rain gauge emptied each morning at seven; and irrigation was counted in cans and written down as litres, which is why the water figures in section 14 can be set against the rain. Pests were monitored with 15 yellow sticky traps set among the rows and changed weekly, and the counts were used to decide when to spray rather than spraying on a calendar. Fruit was graded at every picking into marketable, meaning sound fruit at least 60 mm across and free of spots, and cull, meaning anything with rot, scald or damage, and the two weights were booked separately at the moment of picking. Grading at the bed rather than at the buyer is the reason the cull weight in this report is a real measurement and not an estimate, because the rejects never left the plot. At the end of the season the figures were worked out from those booked weights rather than from a total that might have been guessed at: J$67.40 kg of marketable fruit came from 520 fruits weighed at the bed, and J$12.50 kg was rejected and weighed the same way.",
+        "bullets": [
+          "One bound record book, dated entries written on the day, kept in the shed beside the bed",
+          "Every entry recorded the operation, the measurement, the comparison and the action taken",
+          "Weights by kitchen scale reading to 10 g, checked against a 1 kg check weight before the first picking",
+          "Plant heights from the soil surface to the growing point on the same ten tagged plants each time",
+          "Rain from a gauge read at seven each morning; irrigation counted in 10 litre cans and booked as litres",
+          "Pests counted weekly on 15 sticky traps, so sprays were timed on the count",
+          "Fruit graded at the bed into marketable and cull and both weights booked at picking",
+          "All yields in this report worked out from the booked weights, not from an end-of-season estimate"
+        ]
+      },
+      {
+        "heading": "Materials and inputs: quantities and prices",
+        "body": "Every input was bought before it was needed and the receipt stapled into the record book, so the cost sheet is built from receipts rather than from memory. The one packet of seed cost more than the whole of the fertiliser, which is worth saying out loud: J$2,750.00 for a packet of hybrid seed against J$2,400.00 for 10 kg of compound fertiliser shows how much of the risk sits in the seed, and it is the reason the nursery was watered twice a day and watched so closely. The lime is on the list even though it is a soil treatment rather than a crop input, because without it the calcium and phosphorus in the fertiliser would have stayed locked up at a pH of 5.8. The plastic mulch is the largest single input line of all at J$2,850.00, a little more than the seed itself, and it is partly a cost that comes back: the mulch was lifted and stored at the end of the season and can be used for a second crop, which turns it from a cost of this crop into a cost shared between two. The water is charged at the standpipe rate for the 16.8 cubic metres actually applied, counted in cans, and the crates were bought rather than hired for the same reason as the mulch. The total of the input lines is J$23,126.00.",
+        "table": {
+          "caption": "Inputs, quantities and prices, from the receipts in the record book",
+          "columns": [
+            "Input",
+            "How it was bought or used",
+            "Cost"
+          ],
+          "rows": [
+            [
+              "Sweet pepper seed, hybrid blocky type",
+              "1 packet of 500 seeds",
+              "J$2,750.00"
+            ],
+            [
+              "Well-rotted pen manure for the bed",
+              "12 bags at J$200.00 a bag",
+              "J$2,400.00"
+            ],
+            [
+              "Agricultural lime",
+              "5 kg at J$80.00 a kg",
+              "J$400.00"
+            ],
+            [
+              "Compound fertiliser 12-24-12, basal",
+              "10 kg at J$240.00 a kg",
+              "J$2,400.00"
+            ],
+            [
+              "Calcium nitrate, sidedressing",
+              "5 kg at J$310.00 a kg",
+              "J$1,550.00"
+            ],
+            [
+              "Black plastic mulch, 1.2 m wide",
+              "30 m at J$95.00 a metre",
+              "J$2,850.00"
+            ],
+            [
+              "Neem-based insecticide",
+              "1 litre",
+              "J$1,850.00"
+            ],
+            [
+              "Yellow sticky traps",
+              "15 at J$120.00 each",
+              "J$1,800.00"
+            ],
+            [
+              "Copper-based fungicide",
+              "500 g",
+              "J$1,400.00"
+            ],
+            [
+              "Seed tray and potting mix",
+              "1 tray and 20 litres of mix",
+              "J$1,100.00"
+            ],
+            [
+              "Water for the season",
+              "16.8 m3 at J$70.00 an m3",
+              "J$1,176.00"
+            ],
+            [
+              "Harvest crates, 20 kg",
+              "3 bought at J$900.00 each, reusable next crop",
+              "J$2,700.00"
+            ],
+            [
+              "Cane strips, twine and ties",
+              "1 bundle and 1 roll",
+              "J$450.00"
+            ],
+            [
+              "Labels, marker and record book",
+              "1 of each",
+              "J$300.00"
+            ],
+            [
+              "Total inputs",
+              "The 14 input lines added together",
+              "J$23,126.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Materials and inputs: labour, and the variable cost total",
+        "body": "The labour record is kept in person-days at the rate the parish extension officer gave for casual farm labour, J$2,000.00 a day, and the whole 5.00 days were my own work with help from my father on the day the bed was built. Costing my own time at the casual rate is the honest thing to do even though no money changed hands, because a crop that only pays when the labour is free is not a crop that pays, and the difference between the two answers is the whole point of the evaluation in sections 20 and 21. The plan budgeted J$23,500.00 of inputs and J$15,000.00 of labour, 7.50 person-days at the same rate. The inputs came in at J$23,126.00, a little under the budget, and the labour at J$10,000.00, well under it, because the two operations that changed went in opposite directions: harvesting grew from the half day I had allowed for six pickings to a full day for seven, as the last three pickings had to be graded much more slowly once the cull proportion rose, while weeding fell from the day allowed to half a day because the plastic mulch did its job and the weekly monitoring took twenty minutes a visit rather than the half hour budgeted. Adding the inputs of J$23,126.00 to the labour of J$10,000.00 gives the total variable cost of J$33,126.00 for the season, which is the figure the revenue is set against in section 20.",
+        "table": {
+          "caption": "The labour record and the variable cost total",
+          "columns": [
+            "Operation",
+            "Person-days",
+            "Rate a day",
+            "Cost"
+          ],
+          "rows": [
+            [
+              "Bed construction, lime and compost worked in",
+              "1.50 days",
+              "J$2,000.00",
+              "J$3,000.00"
+            ],
+            [
+              "Nursery: sowing, watering, hardening off",
+              "0.50 days",
+              "J$2,000.00",
+              "J$1,000.00"
+            ],
+            [
+              "Transplanting and mulching",
+              "0.50 days",
+              "J$2,000.00",
+              "J$1,000.00"
+            ],
+            [
+              "Weeding, staking and tying",
+              "0.50 days",
+              "J$2,000.00",
+              "J$1,000.00"
+            ],
+            [
+              "Fertiliser, sprays and trap changes",
+              "0.50 days",
+              "J$2,000.00",
+              "J$1,000.00"
+            ],
+            [
+              "Harvesting, grading and weighing, 7 pickings",
+              "1.00 days",
+              "J$2,000.00",
+              "J$2,000.00"
+            ],
+            [
+              "Marketing: 4 deliveries to the supermarket",
+              "0.50 days",
+              "J$2,000.00",
+              "J$1,000.00"
+            ],
+            [
+              "Total labour",
+              "5.00 person-days",
+              "J$2,000.00",
+              "J$10,000.00"
+            ],
+            [
+              "Total variable costs",
+              "Inputs of J$23,126.00 plus labour of J$10,000.00",
+              "-",
+              "J$33,126.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Practical work: the nursery and transplanting record",
+        "body": "The nursery is where this crop was won or lost, because a seedling that is checked at transplanting is a plant that fruits a fortnight later than it should. 75 seeds were sown into a tray of potting mix on 10 April, one seed to a cell and no deeper than twice the seed's own diameter, and the tray was kept in the shade of the shed for the first four days so that the seedlings came up into soft light rather than full sun. 61 seeds came up, a germination of 81.3 per cent, which is normal for a hybrid blocky pepper and below the 90 per cent the packet promised; the ten that did not come up were all in the outside rows of the tray, where the mix dried fastest, which is the evidence for keeping the tray evenly watered rather than watering the middle. Thinning to one seedling a cell followed at the crown-leaf stage, and in the last week the tray was moved into full sun for increasing parts of the day, which is the hardening off that stops the seedlings scorching when they reach the bed. Of the 61 seedlings, 48 were strong enough to plant and 60 were actually planted at 0.6 m spacing on 12 May; the rest were kept in the tray as replacements and were not needed, because every planted seedling survived, an establishment of 125.0 per cent of the plants that went into the bed. Transplanting was done in the late afternoon into a bed that had been watered the evening before, with the seedling set so that its first true leaves sat just above the mulch.",
+        "table": {
+          "caption": "The nursery and transplanting record with dates",
+          "columns": [
+            "Date",
+            "Operation",
+            "Quantity",
+            "Result or reading",
+            "Comment"
+          ],
+          "rows": [
+            [
+              "10 April",
+              "Seed sown in a tray of potting mix",
+              "75 seeds in 75 cells",
+              "Tray set in light shade",
+              "One seed a cell, sown twice the seed's depth; no pricking out needed later"
+            ],
+            [
+              "12 April to 18 April",
+              "Tray watered morning and evening, shade kept on",
+              "About 2 litres a day",
+              "First seedlings visible on 17 April",
+              "The mix was kept damp, never wet, to avoid damping off"
+            ],
+            [
+              "24 April",
+              "Germination counted and the tray thinned",
+              "61 seedlings up",
+              "Germination 81.3 per cent of 75 seeds",
+              "The ten empty cells were all in the outside rows, where the mix dried fastest"
+            ],
+            [
+              "1 May to 8 May",
+              "Hardening off: tray moved into full sun for longer each day",
+              "Sun from 2 hours rising to 8 hours",
+              "Stems thickened, leaves darkened",
+              "Stops the check to growth that follows transplanting"
+            ],
+            [
+              "2 May",
+              "Bed built and fertiliser banded 15 cm below the planting line",
+              "9.0 m by 2.4 m, 30.0 cm high",
+              "Bed settled for ten days before planting",
+              "Settling first means the plants are not pulled down as the soil sinks"
+            ],
+            [
+              "12 May",
+              "Bed watered, plastic mulch laid and buried, seedlings transplanted",
+              "60 seedlings of the 48 strong enough",
+              "Spacing 0.6 m by 0.6 m",
+              "Planted in the late afternoon into soil watered the evening before"
+            ],
+            [
+              "19 May",
+              "Establishment counted after one week",
+              "60 of 60 alive",
+              "Establishment 125.0 per cent",
+              "No replacements needed; two plants were slightly wilted on the first day and recovered"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Practical work: the field diary, part one",
+        "body": "The diary is reproduced below as it was written, with the measurements in the fourth column exactly as they were taken. Rain is given in millimetres and irrigation in litres, and the two together decide how the crop grew in that fortnight. The entries from transplanting to the end of June show the crop building its frame: the plants gained their height steadily, the first flowers opened in the first week of June and were dropped in the third week, which is normal for the first flush in hot weather, and the thrips counts on the sticky traps stayed low enough that no spray was needed until the middle of June. Reading these entries back at the end of the season, the two that matter most are 14 June, when the traps first jumped, and 21 June, when the neem spray was applied on the strength of the count rather than on a date in the calendar.",
+        "table": {
+          "caption": "Field diary, part one: transplanting to the end of June",
+          "columns": [
+            "Date",
+            "Operation or observation",
+            "Measurement",
+            "Comparison with what was expected",
+            "Action taken"
+          ],
+          "rows": [
+            [
+              "12 May",
+              "Transplanted 60 seedlings; mulch laid and buried",
+              "Soil temperature under the mulch 29 C",
+              "Warm enough for pepper roots to move at once",
+              "Watered 2 litres a plant at the end of the day"
+            ],
+            [
+              "15 May",
+              "Checked the transplants early; two wilted by mid-morning",
+              "2 plants wilted of 60",
+              "A small check is normal in the first week",
+              "Shaded the two with a leaf for three days; both recovered"
+            ],
+            [
+              "19 May",
+              "Establishment counted",
+              "60 of 60 alive",
+              "Better than the 90 per cent I had allowed for",
+              "No replacements needed"
+            ],
+            [
+              "26 May",
+              "Weeded the bed edges and hoed between the rows",
+              "Weeds removed from 6 m of edge",
+              "Fewer weeds than expected, because the mulch covers the row",
+              "Half a day allowed in the plan was not needed; weeds were left until June"
+            ],
+            [
+              "2 June",
+              "First sidedressing and the first height reading",
+              "1.5 kg calcium nitrate; mean height 22 cm",
+              "Height is on the plan's curve; leaves a good dark green",
+              "Applied fertiliser 10 cm from the stems, then watered it in"
+            ],
+            [
+              "9 June",
+              "First flowers open",
+              "Flowers on 24 of 60 plants",
+              "Flowering about a week earlier than the plan allowed",
+              "No action; bee activity was good in the morning"
+            ],
+            [
+              "14 June",
+              "Sticky trap counts read; thrips seen on the young leaves",
+              "Mean 11 insects a trap",
+              "Double the count of the previous week",
+              "Decided to spray if the count reached 20, and to check again in a week"
+            ],
+            [
+              "21 June",
+              "Neem spray applied to both sides of the leaves",
+              "Mean 19 insects a trap; 2 litres of spray used",
+              "Above the level I set, so the spray was due",
+              "Sprayed in the evening; repeated after seven days"
+            ],
+            [
+              "28 June",
+              "Second height reading and flowers dropped",
+              "Mean height 34 cm; about 30 flowers dropped",
+              "First flush drop is normal in heat; the next flush should set fruit",
+              "Kept watering even; no fertiliser change"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Practical work: the field diary, part two",
+        "body": "Part two of the diary covers the fruiting period and the end of the season, and it is the part that explains why the crop ended where it did. Three things changed in September. The rain arrived - 132.0 mm in that month against 44.0 mm in the driest month - and with it the bacterial spot; the fruit on the lower trusses began to touch the mulch and scald on the west side where the leaves had been lost; and the thrips count began to fall after the sprays and the cooler weather. Reading the entries together shows the sequence that the analysis in sections 17 and 18 works from: the sunscald followed the leaf loss, the leaf loss followed the bacterial spot, and both followed the wet spell at the end of a season in which the plants had already spent their vigour on a heavy crop. The last entry, 20 October, is the picking that paid least: 4.40 kg of marketable fruit at a mean of 112.82 g a fruit, against 5.30 kg rejected in the last two pickings together. Those two pickings gave 11.50 kg between them, 17.1 per cent of the season's marketable weight, and every small fruit in them had to be picked and graded one at a time, so they took far more work for each kilogram they gave than the pickings in August did.",
+        "table": {
+          "caption": "Field diary, part two: the fruiting period and the end of the season",
+          "columns": [
+            "Date",
+            "Operation or observation",
+            "Measurement",
+            "Comparison with what was expected",
+            "Action taken"
+          ],
+          "rows": [
+            [
+              "5 July",
+              "Third height reading; fruits forming on the second flush",
+              "Mean height 61 cm; 41 small fruits set",
+              "Fruit set is good; the flower drop of 28 June cost about ten days",
+              "Third sidedressing of calcium nitrate applied"
+            ],
+            [
+              "12 July",
+              "Blossom-end rot seen on the first fruits of the lower trusses",
+              "9 fruits affected on 7 plants",
+              "Not expected this early; the soil had dried between waterings",
+              "Watering changed from every second day to a little every day, and the affected fruits were picked off"
+            ],
+            [
+              "19 July",
+              "Trap counts read; leaf miner damage on the lower leaves",
+              "Mean 34 insects a trap; 12 leaves mined",
+              "Count still rising despite two sprays",
+              "Sprayed again and removed the mined lower leaves, which also improved airflow"
+            ],
+            [
+              "26 July",
+              "Fruit colour-break checked twice daily against the buyer's requirement",
+              "First fruit at colour break on 31 plants",
+              "Ready four days before the planned first picking",
+              "Told the buyer and the first picking moved to 30 July"
+            ],
+            [
+              "30 July",
+              "First picking, graded at the bed and weighed",
+              "51 fruits, 7.40 kg marketable, 0.60 kg cull",
+              "Mean fruit 145.10 g, below the 140.0 g target",
+              "Delivered the same evening; noted the small fruit size for the next crop"
+            ],
+            [
+              "15 August",
+              "Peak picking week; two pickings, weather dry and bright",
+              "188 fruits over the two pickings, 26.30 kg marketable",
+              "Best fortnight of the season; fruit size back to the target",
+              "Grading took longer than allowed; the buyer accepted the whole lot"
+            ],
+            [
+              "12 September",
+              "Bacterial spot seen after 132.0 mm of rain in eleven days",
+              "Spots on 22 of 60 plants; 1.90 kg culled at this picking",
+              "Cull weight nearly doubled from the previous picking",
+              "Copper fungicide applied; affected leaves removed; tools wiped between rows"
+            ],
+            [
+              "26 September",
+              "Second copper application; the spots slowed but did not stop",
+              "Spots on 29 plants; mean 38 insects a trap",
+              "The sprays slowed the spread but the wet spell had done its damage",
+              "No further sprays; the crop was too late to benefit"
+            ],
+            [
+              "20 October",
+              "Last picking and the bed cleared",
+              "4.40 kg marketable and 2.70 kg cull at this picking; mean fruit 112.82 g",
+              "The smallest picking of the season, and the lightest fruit of the season",
+              "Bed cleared on 31 October; mulch lifted and stored for the next crop"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Practical work: plant growth recorded week by week",
+        "body": "Plant height was measured on the same ten tagged plants at every reading, from the soil surface to the growing point, and the reading was taken before the first watering so that wet leaves did not change the figure. Height is only one measure of growth and on its own it says nothing about yield - a tall plant can be a plant that has run to leaves instead of fruit - so the readings are used in section 18 together with the harvest weights rather than on their own. The pattern in the table is the pattern of a healthy but finite crop. From transplanting to the eighth week the plants grew at 5.9 cm a week, which is the sort of steady rate the extension officer's figure describes for a well-grown blocky pepper, and by the eighth week the plants were 61.0 cm tall and the second flush of fruit was setting. After that the rate fell to 2.5 cm a week, so the plants added only 15.0 cm in the last six weeks, which is 31.9 per cent of all the extension they had made in the first eight weeks. That is not a fault in the crop; it is what a pepper plant does when it switches from growing leaves to filling fruit, and it is the reason the sidedressings in July were aimed at fruit size rather than at height.",
+        "table": {
+          "caption": "Mean height of ten tagged plants, week by week",
+          "columns": [
+            "Weeks after transplanting",
+            "Date",
+            "Mean height",
+            "Growth since the last reading",
+            "How it was measured"
+          ],
+          "rows": [
+            [
+              "0",
+              "12 May",
+              "14.0 cm",
+              "-",
+              "Measured on the same ten tagged plants from the soil surface to the growing point"
+            ],
+            [
+              "2",
+              "26 May",
+              "22.0 cm",
+              "4.0 cm a week",
+              "Measured on the same ten tagged plants from the soil surface to the growing point"
+            ],
+            [
+              "4",
+              "9 June",
+              "34.0 cm",
+              "6.0 cm a week",
+              "Measured on the same ten tagged plants from the soil surface to the growing point"
+            ],
+            [
+              "6",
+              "23 June",
+              "48.0 cm",
+              "7.0 cm a week",
+              "Measured on the same ten tagged plants from the soil surface to the growing point"
+            ],
+            [
+              "8",
+              "7 July",
+              "61.0 cm",
+              "6.5 cm a week",
+              "Measured on the same ten tagged plants from the soil surface to the growing point"
+            ],
+            [
+              "10",
+              "21 July",
+              "70.0 cm",
+              "4.5 cm a week",
+              "Measured on the same ten tagged plants from the soil surface to the growing point"
+            ],
+            [
+              "12",
+              "4 August",
+              "74.0 cm",
+              "2.0 cm a week",
+              "Measured on the same ten tagged plants from the soil surface to the growing point"
+            ],
+            [
+              "14",
+              "18 August",
+              "76.0 cm",
+              "1.0 cm a week",
+              "Measured on the same ten tagged plants from the soil surface to the growing point"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Practical work results: pest and disease monitoring and treatments",
+        "body": "Pests were monitored rather than guessed at, and the two pest problems and the one disease are set out below with the count or incidence that was measured, the treatment applied and what happened after it. The trap counts in the first column are the mean number of insects caught a trap in the week; because the same 15 traps were set in the same positions and changed on the same day each week, the counts can be compared with one another and they show a clear rise, a clear peak and a clear fall. The rise began in the first week of June and reached its peak of 47 insects a trap at counting week twelve; after that the neem sprays, the removal of the worst-infested lower leaves and the cooler, wetter weather together brought the count down to 22 a trap by week sixteen, a fall of 53.2 per cent from the peak. The honest reading, however, is that the spraying trailed the pest: the first spray went on at a count of 19 and the peak still reached 47, which means the threshold I set - spray at 20 - was too high for a crop whose fruit was already set, and that recommendation is repeated in section 23. The disease tells a different story: bacterial spot could not be cured once the rain arrived, and what the copper did was slow it, which is why the cull weight went up in the last three pickings rather than the disease being stopped.",
+        "table": {
+          "caption": "Pest and disease records with the treatments applied and their results",
+          "columns": [
+            "Week after transplanting",
+            "Pest or disease and the count",
+            "Treatment applied",
+            "Result measured"
+          ],
+          "rows": [
+            [
+              "2",
+              "Thrips, mean 3 a trap; no leaf damage seen",
+              "Nothing: count below the threshold",
+              "Count rose to 6 by week 4, so monitoring continued"
+            ],
+            [
+              "4",
+              "Thrips, mean 6 a trap",
+              "Nothing: below the threshold",
+              "Count rose to 11 by week 6"
+            ],
+            [
+              "6",
+              "Thrips, mean 11 a trap; first silvering on the young leaves",
+              "Nothing; the threshold was set at 20",
+              "Count doubled to 19 by week 8"
+            ],
+            [
+              "8",
+              "Thrips, mean 19 a trap; 9 leaves silvered",
+              "Neem spray to both leaf surfaces, evening, repeated after 7 days",
+              "Count rose to 34 by week 10; the spray slowed the rate of increase but did not stop it"
+            ],
+            [
+              "10",
+              "Thrips, mean 34 a trap; leaf miner mines on 12 lower leaves",
+              "Neem spray again; mined lower leaves removed",
+              "Count reached 47 at week 12, the peak of the season"
+            ],
+            [
+              "12",
+              "Thrips, mean 47 a trap, the season's peak; whitefly also present",
+              "Neem spray; weeds on the boundary cut, as they harbour whitefly",
+              "Count fell to 38 by week 14; fruit already set was not damaged further"
+            ],
+            [
+              "14",
+              "Bacterial spot: dark raised spots on leaves and fruit",
+              "Copper fungicide applied twice, 12 and 26 September; spot-affected leaves removed",
+              "Spots slowed from 22 plants to 29 plants over a fortnight rather than doubling weekly"
+            ],
+            [
+              "16",
+              "Thrips, mean 22 a trap; spot still present on 29 plants",
+              "No further spray; the crop was too late to benefit",
+              "Count down 53.2 per cent from the peak; cull weight still rising at picking"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Practical work results: irrigation and rainfall against the crop's need",
+        "body": "The crop was watered by hand from a can, so the only way to know how much it received was to count, and the count is in the table. Over the season the crop had 529.0 mm of rain and 16.8 cubic metres of applied water, and the pattern matters more than the total. July was the driest month with only 44.0 mm of rain, so 4,200 litres were applied in that month and the water bill for the crop peaked with it; September was the wettest with 132.0 mm, so irrigation dropped to 1,900 litres and the problem changed from shortage to excess. Sweet pepper is shallow-rooted, so the aim was a steady supply rather than a soaking once a week, and the records show the crop was watered most days in the dry months and that the water went on in the evening so that less was lost to the sun. The failure to keep that steady supply in late June and the first week of July is the single most important line in this table: the soil was allowed to dry out between waterings for about ten days, and the blossom-end rot recorded on 12 July, 4.10 kg of it over the season, is the direct result. That is the clearest case in the whole project of a management error producing a measured loss, and it is why the first recommendation in section 23 is about water and not about pests or fertiliser.",
+        "table": {
+          "caption": "Rainfall and irrigation month by month, both measured",
+          "columns": [
+            "Month",
+            "Rain",
+            "Irrigation applied",
+            "Irrigation in cubic metres",
+            "Comment"
+          ],
+          "rows": [
+            [
+              "May",
+              "96.0 mm",
+              "2,600 litres",
+              "2.6 m3",
+              "Rain did most of the watering this month"
+            ],
+            [
+              "June",
+              "61.0 mm",
+              "3,400 litres",
+              "3.4 m3",
+              "Hand watered with cans"
+            ],
+            [
+              "July",
+              "44.0 mm",
+              "4,200 litres",
+              "4.2 m3",
+              "Hand watered with cans"
+            ],
+            [
+              "August",
+              "78.0 mm",
+              "3,000 litres",
+              "3.0 m3",
+              "Hand watered with cans"
+            ],
+            [
+              "September",
+              "132.0 mm",
+              "1,900 litres",
+              "1.9 m3",
+              "Rain did most of the watering this month"
+            ],
+            [
+              "October",
+              "118.0 mm",
+              "1,700 litres",
+              "1.7 m3",
+              "Rain did most of the watering this month"
+            ],
+            [
+              "Season total",
+              "529.0 mm",
+              "16,800 litres",
+              "16.8 m3",
+              "Rain plus irrigation, both measured rather than estimated"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Analysis results: the harvest record, picking by picking",
+        "body": "Seven pickings were taken between 30 July and 20 October and each was weighed at the bed before it left the plot. The season produced 520 marketable fruits weighing 67.40 kg, and a further 12.50 kg was rejected, so 15.6 per cent of everything picked was thrown away or sold off cheaply. The shape of the pickings is the first thing to read. Fruit weight rose from 7.40 kg at the first picking to a peak of 14.00 kg on 27 August, and then fell away to 4.40 kg at the last picking, which is the ordinary curve of a blocky pepper carrying three flushes of fruit. The second thing to read is the mean fruit weight, and it tells a different story from the totals. Mean fruit weight fell almost without a break: it was 145.1 g at the first picking on 30 July, right at the top of the large grade the buyer wanted, and 112.8 g at the last picking on 20 October, a fall of 32.3 g a fruit across the season. So the season's mean of 129.6 g hides a trend: the early fruit filled well and the late fruit did not, because those plants were filling fruit on a shrinking leaf area, and the small fruit still had to be picked, graded and delivered one at a time. The third thing to read is the cull column, and this is where the season turned: the first three pickings produced 2.90 kg of rejects and the last two produced 5.30 kg, an increase of 82.8 per cent, with 42.4 per cent of the whole season's rejects coming from those last two pickings. The reason is in section 17 and the science is in section 18.",
+        "table": {
+          "caption": "The harvest record: every picking, graded and weighed at the bed",
+          "columns": [
+            "Picking date",
+            "Marketable fruits",
+            "Marketable weight",
+            "Cull weight",
+            "Mean fruit weight",
+            "Culls as a share of the picking"
+          ],
+          "rows": [
+            [
+              "30 July",
+              "51",
+              "7.40 kg",
+              "0.60 kg",
+              "145.1 g",
+              "7.5 per cent"
+            ],
+            [
+              "13 August",
+              "87",
+              "12.30 kg",
+              "1.00 kg",
+              "141.4 g",
+              "7.5 per cent"
+            ],
+            [
+              "27 August",
+              "107",
+              "14.00 kg",
+              "1.30 kg",
+              "130.8 g",
+              "8.5 per cent"
+            ],
+            [
+              "10 September",
+              "93",
+              "12.10 kg",
+              "1.90 kg",
+              "130.1 g",
+              "13.6 per cent"
+            ],
+            [
+              "24 September",
+              "81",
+              "10.10 kg",
+              "2.40 kg",
+              "124.7 g",
+              "19.2 per cent"
+            ],
+            [
+              "8 October",
+              "62",
+              "7.10 kg",
+              "2.60 kg",
+              "114.5 g",
+              "26.8 per cent"
+            ],
+            [
+              "20 October",
+              "39",
+              "4.40 kg",
+              "2.70 kg",
+              "112.8 g",
+              "38.0 per cent"
+            ],
+            [
+              "Season total",
+              "520",
+              "67.40 kg",
+              "12.50 kg",
+              "129.6 g",
+              "15.6 per cent"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Analysis results: yield per plant, per square metre and per hectare",
+        "body": "One total weight on its own says nothing about how well the bed performed, so the yield was worked out in the three ways that can be compared with something. There were 60 plants on 21.6 square metres, and the marketable harvest of 67.40 kg gives 1.12 kg a plant, 3.12 kg a square metre and 31.2 tonnes a hectare. The per-plant figure is the one to judge the crop itself by, and it is good: the extension officer's range for a well-managed open-field crop is 1.0 to 1.5 kg a plant, and this crop came in at 1.12 kg, inside that range and close to its middle. The per-hectare figure, 31.2 tonnes, has to be read with the spacing in mind. The leaflet's range is 25.0 to 35.0 tonnes a hectare, so this crop looks as though it beat the top of the range - but it was planted at 27,800 plants a hectare against the 25,000 the leaflet's figure assumes, and a hectare carrying a fifth more plants should be expected to yield a fifth more. Worked out on a per-plant basis, which takes the crowding out of the comparison, the crop is inside the range rather than above it, and the extra plants bought nothing except more disease. That is the honest way to compare the two, and it is the reason the plan's planting density is on the list of things to change in section 23. Setting the 14 input lines of J$23,126.00 against the marketable harvest gives a cost of J$343.12 of bought inputs for every kilogram of fruit grown, and J$491.48 a kilogram once the labour is counted, which is the figure that decides whether this crop was worth growing at all.",
+        "table": {
+          "caption": "Yield worked out in three ways, and compared with the target and the benchmark",
+          "columns": [
+            "Measure",
+            "How it is worked out",
+            "Result",
+            "Comparison"
+          ],
+          "rows": [
+            [
+              "Marketable yield, total",
+              "The 7 marketable pickings added",
+              "67.40 kg",
+              "Target was 75.00 kg, so 89.9 per cent of target"
+            ],
+            [
+              "Yield a plant",
+              "Marketable kg divided by 60 plants",
+              "1.12 kg a plant",
+              "Benchmark 1.0 to 1.5 kg a plant, so the crop is inside the range"
+            ],
+            [
+              "Yield a square metre",
+              "Marketable kg divided by 21.6 square metres",
+              "3.12 kg a square metre",
+              "A useful figure only because the bed area is measured and known"
+            ],
+            [
+              "Yield a hectare, on this spacing",
+              "Yield a square metre multiplied by 10,000",
+              "31.2 tonnes a hectare",
+              "Looks above the leaflet's 25.0 to 35.0 tonnes, but this bed carried 27,800 plants a hectare against 25,000"
+            ],
+            [
+              "Yield a hectare, at the leaflet's spacing",
+              "Per-plant yield multiplied by 25,000 plants",
+              "28.0 tonnes a hectare",
+              "Inside the benchmark range, which is the honest comparison; the extra plants added disease, not yield"
+            ],
+            [
+              "Mean fruit weight",
+              "Marketable kg divided by 520 fruits",
+              "129.6 g",
+              "Target 140.0 g; the crop came in one grade lower than planned"
+            ],
+            [
+              "Culls as a share of everything picked",
+              "Cull kg divided by total kg",
+              "15.6 per cent",
+              "Target was 8.0 per cent, so nearly twice the loss planned for"
+            ],
+            [
+              "Bought inputs a kilogram of fruit",
+              "Inputs of J$23,126.00 divided by 67.40 kg",
+              "J$343.12",
+              "Compares with the price received of J$480.00 a kg"
+            ],
+            [
+              "Variable cost a kilogram of fruit",
+              "Variable costs of J$33,126.00 divided by 67.40 kg",
+              "J$491.48",
+              "Set against the J$480.00 a kg received, this is the margin the profit in section 20 comes from"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Analysis results: why 12.50 kg of fruit was rejected",
+        "body": "Rejecting 12.50 kg out of 79.90 kg picked is the biggest single failure of the season, and it is worth more to write it up honestly than to report a clean crop that did not exist. Every rejected fruit was looked at and put into one of four groups as it was picked, and the groups are in the table with the science that explains each one. Two of the four were management errors on my part and two were not. Blossom-end rot, 4.10 kg, was mine: it is not a disease but a calcium shortage inside the fruit, and calcium reaches the fruit only in the water the plant takes up, so when the bed was allowed to dry out between waterings in late June the fruit at the flower end was starved of it while the leaves went on taking their share. Sunscald, 3.20 kg, followed from the bacterial spot that stripped the leaves off the west side: a fruit with no leaf over it is cooked by the afternoon sun, and that is why the scald appeared on the same side of the bed as the worst spot. Bacterial spot itself, 2.90 kg, was partly mine and partly the weather: the organism was almost certainly carried on the leaves from the wet spell in September, but I had planted at 2.78 plants a square metre, and closer rows keep the leaves wet for longer after rain, which is exactly what this disease needs. The undersized fruit, 2.30 kg, was the subsoil: the western end of the bed is shallower over the clay, those plants had less root room and less water, and they filled fruit that never reached the grade. Set against the whole harvest, the culls cost J$6,000.00 at the marketable price, which is more than the whole profit the crop made.",
+        "table": {
+          "caption": "The four reasons fruit was rejected, with the science behind each",
+          "columns": [
+            "Cause",
+            "Weight",
+            "Share of the culls",
+            "The science that explains it"
+          ],
+          "rows": [
+            [
+              "Blossom-end rot",
+              "4.10 kg",
+              "32.8 per cent of the culls",
+              "A dark sunken patch at the flower end, caused by a calcium shortage inside the fruit brought on by uneven watering - the plant cannot move calcium into the fruit when the soil dries out between waterings."
+            ],
+            [
+              "Sunscald and wind rub",
+              "3.20 kg",
+              "25.6 per cent of the culls",
+              "Pale blistered patches on the west side of the bed where the fruit lost the leaf cover that had shaded it, made worse by a week of very bright weather in September."
+            ],
+            [
+              "Bacterial spot and fruit rot",
+              "2.90 kg",
+              "23.2 per cent of the culls",
+              "Small raised dark spots that spread in the wet weather in late September and were carried from plant to plant on hands, tools and rain splash."
+            ],
+            [
+              "Undersized and misshapen fruit",
+              "2.30 kg",
+              "18.4 per cent of the culls",
+              "Fruit that never filled, mostly from the plants at the western end where the soil is shallower over the subsoil and where water ran off the bed."
+            ],
+            [
+              "Total rejected",
+              "12.50 kg",
+              "100.0 per cent of the culls",
+              "15.6 per cent of everything picked; all of it weighed at the bed"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Discussion: explaining the growth curve and the yield curve",
+        "body": "The growth readings in section 12 and the harvest weights in section 15 are two views of the same plant behaviour, and putting them together explains the whole season. From transplanting the plants grew at 5.9 cm a week and built a frame of leaves and roots; the first flowers that opened in the first week of June were dropped, which is what pepper does in heat, and that cost about ten days because fruit set only began properly on the second flush. Once fruit set began, growth slowed to 2.5 cm a week - the plants had stopped building and started filling - and the harvest weights followed the same logic with a lag of about two weeks. Picking climbed to its peak on 27 August and then fell, because a pepper plant carries a finite number of fruits and a finite root system, and after three flushes it has spent its vigour. That is the scientific reason the last two pickings produced small fruit: the plants were filling fruits from a smaller leaf area because the spot had stripped leaves, and the fruit that did fill was competing with fewer resources, so mean fruit weight fell from 145.1 g to 112.8 g. There is one more relationship worth naming, because it ties the whole report together: water, calcium and blossom-end rot. Calcium is taken up passively, carried in the transpiration stream, and it cannot move from an old leaf to a young fruit the way nitrogen can; the fruit at the end of a truss and the fruit on the plant under the most stress get the least of it. That is why 4.10 kg of fruit was lost to a shortage that had nothing to do with how much calcium nitrate was applied and everything to do with whether the soil was kept evenly moist. In the same way, the bacterial spot explains the loss of 3.20 kg to sunscald: the cause was a leaf disease two steps removed from the damage, and treating it as a sunscald problem would have been treating the symptom.",
+        "bullets": [
+          "Steady extension growth of 5.9 cm a week to week 8, then a switch to filling fruit at 2.5 cm a week",
+          "The flower drop in early June pushed fruit set back about ten days, which is why the first picking came late relative to the height curve",
+          "Harvest weight peaked on 27 August and fell thereafter: three flushes of fruit from one root system",
+          "Mean fruit weight fell from 145.1 g to 112.8 g, a fall of 32.3 g a fruit, as leaf area and plant resources declined",
+          "Blossom-end rot is a calcium transport problem caused by uneven watering, not a disease and not simply a shortage of fertiliser",
+          "Sunscald followed leaf loss from bacterial spot, so the cause of the scald was a disease two steps away",
+          "The close planting kept leaves wet longer after rain, which is what bacterial spot needs to spread",
+          "Thrips pressure rose with the dry weather and fell with the sprays, the cooler weather and the removal of the worst-infested leaves"
+        ]
+      },
+      {
+        "heading": "Discussion: how the crop performed against the plan and the benchmark",
+        "body": "Before planting I set out what I expected, and this section sets the plan against what actually happened, because the differences are more instructive than the totals. The plan was for 75.00 kg of marketable fruit, which was 1.25 kg a plant over 60 plants. The bed produced 67.40 kg, or 89.9 per cent of the target, at 1.12 kg a plant. Of the eight measures in the table below, six came in below the plan and two above it. Fruit size came in one grade low - 129.6 g against the 140.0 g planned - but the buyer took it as large grade without a deduction, so that miss cost nothing directly. The cull proportion was the serious miss: 15.6 per cent against 8.0 per cent, nearly twice the loss allowed for, which is what turned a comfortable profit into the thin one worked out in section 20. Revenue reached 95.1 per cent of the figure in the plan, and the surplus came in at J$1,101.00 against the J$5,000.00 planned. Reading the misses together, they are one miss: the season was lost to water and to leaves. The fortnight of uneven watering in late June started the blossom-end rot, the wet spell in September carried the spot, and the spot cost the leaves that would have shaded the fruit and filled it. None of the three was a failure of the plan's structure - the calendar, the spacing calculations and the budget were all sound and all followed - and that is worth saying plainly, because a student reading this should understand that a well-planned crop can still be beaten by a fortnight of water and a fortnight of rain.",
+        "table": {
+          "caption": "The plan's targets against what the bed actually produced",
+          "columns": [
+            "What was planned",
+            "Target",
+            "Actual",
+            "Difference",
+            "Why"
+          ],
+          "rows": [
+            [
+              "Marketable yield",
+              "75.00 kg",
+              "67.40 kg",
+              "-7.60 kg (89.9 per cent of target)",
+              "Culls took the difference: the sound fruit that grew was close to plan but a fifteenth of the crop was rejected"
+            ],
+            [
+              "Yield a plant",
+              "1.25 kg",
+              "1.12 kg",
+              "-0.13 kg a plant",
+              "Still inside the extension officer's benchmark range of 1.0 to 1.5 kg a plant"
+            ],
+            [
+              "Mean fruit weight",
+              "140.0 g",
+              "129.6 g",
+              "-10.4 g",
+              "Fruit never quite reached the planned size; the buyer accepted it as large grade with no deduction"
+            ],
+            [
+              "Cull proportion",
+              "8.0 per cent",
+              "15.6 per cent",
+              "+7.6 percentage points",
+              "Blossom-end rot, sunscald and spot; the single biggest miss of the season"
+            ],
+            [
+              "Revenue",
+              "J$36,000.00",
+              "J$34,227.00",
+              "-J$1,773.00 (95.1 per cent of target)",
+              "Less marketable fruit and a mean grade one step lower than planned"
+            ],
+            [
+              "Surplus after variable costs",
+              "J$5,000.00",
+              "J$1,101.00",
+              "-J$3,899.00",
+              "Inputs and labour both came in under budget, but the revenue fell further than the costs did"
+            ],
+            [
+              "Input cost",
+              "J$23,500.00",
+              "J$23,126.00",
+              "-J$374.00",
+              "Receipts came in slightly under the budget; the lime and the compost cost less than the allowance"
+            ],
+            [
+              "Labour",
+              "7.50 person-days allowed",
+              "5.00 person-days",
+              "-2.50 person-days",
+              "Mulch cut the weeding to half a day and the monitoring to twenty minutes a visit, which more than covered the extra half day harvesting took"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Evaluation: the cost sheet, the revenue and the profit",
+        "body": "The enterprise made a profit of J$1,101.00 on revenue of J$34,227.00 and variable costs of J$33,126.00, which is a margin of 3.2 per cent. The marketable fruit was sold to one buyer at J$480.00 a kilogram and the 12.50 kg of rejects to a sauce maker at J$150.00 a kilogram, which is worth noting: the rejects were not a total loss. Without the J$1,875.00 they brought in, the season would have ended J$774.00 in the red, so grading them out separately and selling them was worth the trouble. A hotel offered J$560.00 a kilogram, which would have added J$5,392.00 to the revenue, but it wanted two deliveries a week and I could not make them, so the firm price from the supermarket was taken. The figure this section turns on, though, is the return on my own labour: J$1,101.00 for 5.00 person-days of work is J$220.20 a day, against the J$2,000.00 a day casual labour is paid in the parish, a shortfall of J$1,779.80 a day. In other words the crop paid better than nothing but it did not pay the labour that produced it, and that is the honest headline for the season. If no value is put on my own time the cash position was a surplus of J$11,101.00, which is real money, but a business cannot run on unpaid family labour indefinitely; the answer is not a higher price, because J$480.00 a kilogram is a fair farm-gate price, it is more kilos from the same labour, which is what a second bed and a lower planting density are for.",
+        "table": {
+          "caption": "The cost sheet, the revenue and the profit or loss for the season",
+          "columns": [
+            "Item",
+            "How it is worked out",
+            "Amount"
+          ],
+          "rows": [
+            [
+              "Variable inputs, 14 lines",
+              "From the receipts, detailed in section 7",
+              "J$23,126.00"
+            ],
+            [
+              "Labour",
+              "5.00 person-days at J$2,000.00 a day, detailed in section 8",
+              "J$10,000.00"
+            ],
+            [
+              "Total variable costs",
+              "Inputs plus labour",
+              "J$33,126.00"
+            ],
+            [
+              "Revenue: marketable fruit",
+              "67.40 kg at J$480.00 a kg",
+              "J$32,352.00"
+            ],
+            [
+              "Revenue: cull fruit",
+              "12.50 kg at J$150.00 a kg to a sauce maker",
+              "J$1,875.00"
+            ],
+            [
+              "Total revenue",
+              "Marketable plus cull sales",
+              "J$34,227.00"
+            ],
+            [
+              "Gross profit for the season",
+              "Total revenue less total variable costs",
+              "J$1,101.00"
+            ],
+            [
+              "Profit as a share of revenue",
+              "Profit divided by revenue",
+              "3.2 per cent"
+            ],
+            [
+              "Cash position, counting only money paid out",
+              "Revenue less the inputs actually bought",
+              "J$11,101.00"
+            ],
+            [
+              "Return for each day of my own labour",
+              "Profit divided by 5.00 person-days",
+              "J$220.20 a day"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Evaluation: the break-even analysis",
+        "body": "Break-even turns the profit into a target a farmer can aim at, and it was worked out two ways. Counting the cull sales as income, the bed had to produce 65.11 kg of marketable fruit to cover its variable costs. It produced 67.40 kg, so it cleared break-even by 2.29 kg, which is a margin of 3.4 per cent. Put the other way round, J$463.66 a kilogram was the price needed to cover the costs at the yield actually achieved, against the J$480.00 a kilogram received, so the crop cleared the price it had to clear by J$-16.34 a kilogram - a margin so thin that it explains the whole result. Two conclusions follow, and both are in the recommendations. First, the margin is so narrow that a single extra cull weighing a few kilograms would have turned the profit into a loss: at J$480.00 a kilogram, losing 2.29 kg more fruit would have wiped out the season's profit completely. Second, break-even was passed by volume rather than by price, which means the way to make the enterprise worthwhile is to spread the fixed elements of the cost - the seed packet, the crates, the mulch and the deliveries - over two beds rather than one. The seed packet alone costs J$2,750.00 and it holds far more seed than 60 plants, and the mulch and crates are both reusable, so a second bed of the same size would add input cost but almost no fixed cost, and the profit would rise by much more than half.",
+        "table": {
+          "caption": "Break-even worked out by yield and by price",
+          "columns": [
+            "Break-even measure",
+            "How it is worked out",
+            "Figure",
+            "What it means"
+          ],
+          "rows": [
+            [
+              "Total variable costs to be covered",
+              "Inputs of J$23,126.00 plus labour of J$10,000.00",
+              "J$33,126.00",
+              "The costs the crop had to earn back before it earned anything"
+            ],
+            [
+              "Break-even marketable yield",
+              "Variable costs less cull revenue of J$1,875.00, divided by J$480.00 a kg",
+              "65.11 kg",
+              "The bed had to produce this much marketable fruit; it produced 67.40 kg"
+            ],
+            [
+              "Margin over break-even",
+              "67.40 kg less 65.11 kg",
+              "2.29 kg",
+              "3.4 per cent above break-even, which is the whole of the profit of J$1,101.00"
+            ],
+            [
+              "Break-even price a kilogram",
+              "Variable costs less cull revenue, divided by the 67.40 kg actually sold",
+              "J$463.66",
+              "The price needed at this yield; the buyer paid J$480.00 a kg, so the crop cleared it by J$-16.34"
+            ],
+            [
+              "Extra culls that would have wiped out the profit",
+              "Profit of J$1,101.00 divided by J$480.00 a kg",
+              "2.29 kg",
+              "About 2 kilograms of extra rejects, which one bad fortnight could have produced"
+            ],
+            [
+              "Cash surplus if my own labour were unpaid",
+              "Revenue of J$34,227.00 less inputs of J$23,126.00",
+              "J$11,101.00",
+              "Real money in hand, but it is the return on 5.00 days of my own work at J$220.20 a day"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Evaluation: the problems met and how each was managed",
+        "body": "Five problems affected the crop and each is set out below with its cause, what was done at the time, what it cost and what should have been done instead. The first and the largest was my own: the bed dried out between waterings for about ten days in late June and the first week of July, and the blossom-end rot that followed cost 4.10 kg of marketable fruit. The cause was not really the weather, it was the way the watering was organised - I watered when the surface looked dry rather than on a fixed amount, so on the days I was busy the plants went without. The second was the bacterial spot, which was a mixture of weather and my own close spacing, and which cost 2.90 kg directly and a further 3.20 kg of fruit through the leaf loss that led to sunscald. The third was the thrips, where the honest failure was the threshold rather than the spraying: I set the spray level at 20 insects a trap and the count doubled before the first spray went on. The fourth was fruit size: the crop mean of 129.6 g against a 140.0 g target came from carrying too many fruits on too few leaves after the spot, and I did not thin the early fruit. The fifth was the labour estimate: harvesting took a full day for seven pickings instead of the half day allowed, because grading slowed down as the cull proportion rose, and that single change used most of the slack in the plan's other labour lines.",
+        "table": {
+          "caption": "The problems met, their causes, the cost and the lesson",
+          "columns": [
+            "Problem",
+            "Cause",
+            "What was done at the time",
+            "What it cost",
+            "What should have been done instead"
+          ],
+          "rows": [
+            [
+              "Blossom-end rot on the lower trusses, first seen 12 July",
+              "The bed was allowed to dry out between waterings for about ten days in late June, so calcium stopped reaching the fruit",
+              "Affected fruit picked off and binned; watering changed from every second day to a little every day",
+              "4.10 kg of fruit, J$1,968.00 at the marketable price",
+              "Water on a measured amount every day from transplanting, using the record in section 14 to prove it, rather than judging by the look of the surface"
+            ],
+            [
+              "Bacterial spot on leaves and fruit after the September rain",
+              "Wet foliage in close rows; the organism carried on leaves, hands, tools and rain splash",
+              "Two copper sprays, spot-affected leaves removed, tools wiped between rows",
+              "2.90 kg of fruit plus 3.20 kg of sunscald from the leaf loss, J$2,928.00 in all",
+              "Plant at 25,000 plants a hectare rather than 27,800, and spray copper at the first spot instead of after the wet spell"
+            ],
+            [
+              "Thrips and whitefly building to 47 insects a trap by week 12",
+              "The spray threshold was set at 20 insects a trap, which was too high once fruit was set; dry weather favoured the pest",
+              "Three neem sprays from the count of 19; mined leaves removed; boundary weeds cut",
+              "Some fruit carried feeding scars and was graded down inside the marketable grade rather than rejected, and one full spray was wasted",
+              "Treat on a threshold of 10 insects a trap once fruit is set, and keep a border of weeds cut from the start rather than in September"
+            ],
+            [
+              "Mean fruit weight 129.6 g against the 140.0 g target",
+              "Too many fruits carried on too few leaves after the spot stripped the canopy; the early fruit was not thinned",
+              "Nothing could be done once the fruits were filling; the buyer accepted them as large grade",
+              "No direct deduction, but the grade was one step lower than planned",
+              "Thin the first flush to three or four fruits a truss on the weakest plants, and keep the canopy healthy so leaf area and fruit load match"
+            ],
+            [
+              "Harvesting labour a full day against the half day allowed",
+              "Grading slowed as the cull proportion rose to 15.6 per cent, and the last pickings needed every fruit checked individually",
+              "Graded at the bed to save a second handling, and the buyer took the fruit already sorted",
+              "Half a person-day, J$1,000.00, over the plan",
+              "Allow a full day for seven pickings in any plan, and grade straight into two crates so nothing is handled twice"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Limitations and improvements",
+        "body": "The limitations below are written as they are, because a report that claims a perfect season teaches nobody anything, and because each of them leads to a change that would make the second crop better than the first.",
+        "bullets": [
+          "Watering was judged by eye instead of by measurement, and the bed dried out for about ten days in late June; that error alone accounts for 4.10 kg of the loss. Improvement: a written watering schedule of a set number of cans a day, ticked off in the diary, and a cheap drip line if one can be bought.",
+          "The planting density of 27,800 plants a hectare was at the top of the extension officer's range and left too little airflow between the rows for the wet September. Improvement: plant the same bed at 25,000 plants a hectare, which reduces the population to about 54 plants on this bed and gives the rows room to dry.",
+          "The spray threshold of 20 thrips a trap was set from a textbook figure rather than from the crop's own stage, and the count doubled before the first spray. Improvement: once fruit is set, treat at 10 insects a trap and keep a written threshold at the top of the diary page.",
+          "The calcium nitrate was applied in three doses but nothing checked whether the soil was still holding calcium, because there was no soil test after the initial one. Improvement: a second kit test at first fruit set, and a little gypsum in the bed at preparation if the pH is above 6.5.",
+          "The bed was planted as one block with no control, so no treatment could be compared with an untreated strip. Improvement: split the bed and run a comparison, for example mulch against no mulch or two spacings, which would turn a report into a real investigation.",
+          "The mulch, the crates and the seed packet were all bought for one bed. The seed packet holds far more seed than 60 plants and the mulch and crates are reusable, so their cost was carried by one crop when it should be shared. Improvement: plant a second bed of the same size next season, which almost doubles the yield while barely raising the input cost, and write the shared cost into the budget that way from the start.",
+          "Weights were taken on a kitchen scale reading to 10 g, which is fine for crates of fruit but too coarse for single fruits. Improvement: borrow the school's 1 g balance for one picking and record individual fruit weights, which would let the grade distribution be graphed properly."
+        ]
+      },
+      {
+        "heading": "Conclusion",
+        "body": "The bed of 60 sweet pepper plants on 21.6 square metres at Sample Village, Clarendon (invented) produced 67.40 kg of marketable fruit and 12.50 kg of rejects between 30 July and 20 October, which is 1.12 kg a plant and 31.2 tonnes a hectare on paper. The crop made a profit of J$1,101.00 on revenue of J$34,227.00, a margin of 3.2 per cent, and it cleared break-even by 2.29 kg, or 3.4 per cent. Measured as a return on the work, though, the season was not a success: J$1,101.00 for 5.00 person-days is J$220.20 a day against the J$2,000.00 a day casual labour is paid, so the season's whole profit is what 0.55 of a day's hired work would have paid. The cause of that is not the market and not the plan; it is 12.50 kg of rejected fruit, 15.6 per cent of everything picked, and 81.6 per cent of that loss traces back to two things I controlled - watering that was judged by eye instead of measured, and a planting density that left the rows too close for a wet September. If I grew the bed again I would water to a written schedule, plant at 25,000 plants a hectare, treat thrips at 10 insects a trap once fruit is set, and plant a second bed so that the seed, the mulch and the crates are paid for by twice the fruit. On the plan's own terms the season came in at 89.9 per cent of the target yield, and I would expect a second cycle to clear the target without any change except those four.",
+        "bullets": [
+          "67.40 kg of marketable fruit from 60 plants, 1.12 kg a plant, inside the benchmark range",
+          "Profit of J$1,101.00 on revenue of J$34,227.00, a margin of 3.2 per cent, after costing my own labour at J$2,000.00 a day",
+          "Break-even cleared by 2.29 kg, or 3.4 per cent, which is too thin a margin to be comfortable",
+          "Return on labour of J$220.20 a day against the J$2,000.00 a day casual rate, so the season did not pay for the work it took",
+          "Culls of 12.50 kg, 15.6 per cent of the pick: uneven watering, spotting and the leaf loss that followed",
+          "Four changes for the next cycle: water to a measured schedule, plant at 25,000 plants a hectare, treat thrips at 10 a trap once fruit is set, and plant a second bed",
+          "The plan's structure held: the calendar, the costing and the record keeping all worked, and the losses were management and weather rather than planning"
+        ]
+      },
+      {
+        "heading": "Sources and acknowledgements",
+        "body": "The sources used in this project are listed below. The plot, the parish details, the extension officer, the buyer, the prices and every weight and reading in this report are invented for this worked example, so nothing here describes a real farm, a real buyer or a real season.",
+        "bullets": [
+          "CSEC Agriculture syllabus, the sections on crop production, soils, crop protection and farm records",
+          "CSEC Agriculture SBA guide: the six tasks and the marks for each, and the requirement that production data be tabulated and graphed",
+          "The parish extension officer's leaflet on sweet pepper spacing, fertiliser rates and the expected yield range of 25.0 to 35.0 tonnes a hectare on 25,000 plants",
+          "Seed packet and fertiliser label directions, used for the sowing depth and the banding of the basal fertiliser",
+          "Soil test kit instructions and the jar test method for estimating soil texture",
+          "Textbook chapters on calcium movement in plants, on the water relations of fruiting crops and on bacterial spot of pepper",
+          "A Caribbean crop protection handbook for the pest thresholds used as the starting point before they were adjusted for this crop",
+          "Thanks to the small farmer who lent me a rain gauge and to my father, who helped on the day the bed was built"
+        ]
+      }
+    ],
+    "examinerNotes": [
+      "This subject is marked out of 42 under six tasks, and the report answers each one with real work: a justified enterprise choice, a dated calendar, a costed budget, a dated record with measurements, production data worked out and explained scientifically, and an evaluation that names a loss and says why.",
+      "The strongest feature is that the report measures rather than estimates. The bed's 21.6 square metres and the spacing give 60 plants; the pickings give 67.40 kg marketable and 12.50 kg of culls; the rain gauge and the can count give 529.0 mm and 16.8 cubic metres of water; and every yield figure, the cost a kilogram, the break-even yield and the break-even price all come from those same weighed and counted numbers, so the tables and the prose agree.",
+      "The analysis goes beyond arithmetic into cause and effect: blossom-end rot is explained as a calcium transport problem caused by uneven watering rather than as a disease, and the sunscald is traced two steps back to the bacterial spot that removed the shading leaves. A marker can see the candidate understands the crop, not just the calculations.",
+      "The evaluation is candid about money as well as about the crop. It states that the profit of J$1,101.00 is a return of J$220.20 for each of 5.00 days of work against a casual rate of J$2,000.00, that break-even was cleared by only 2.29 kg, and that 2 kg of extra rejects would have wiped out the profit. Plot, parish, prices and all readings are invented placeholders; run your own enterprise on your own plot with your own records."
+    ]
+  }
 }

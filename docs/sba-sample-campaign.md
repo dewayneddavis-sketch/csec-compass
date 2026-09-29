@@ -37,7 +37,7 @@ two samples show a completed oral-examination dossier instead of an SBA report.
 | 7 | edpm | CSEC SBA | 56 | 3 - portfolio SBA | DONE |
 | 8 | clothing-textile-and-fashion | CSEC SBA | 60 | 3 - portfolio SBA | DONE |
 | 9 | food-and-nutrition | CSEC SBA | 50 | 3 - portfolio SBA | TODO |
-| 10 | agriculture-double-option | CSEC SBA | 42 | 3 - portfolio SBA | TODO |
+| 10 | agriculture-double-option | CSEC SBA | 42 | 3 - portfolio SBA | DONE |
 | 11 | social-studies | CSEC SBA | 20 | 4 - research / investigation SBA | TODO |
 | 12 | caribbean-history | CSEC SBA | 25 | 4 - research / investigation SBA | TODO |
 | 13 | principles-of-business | CSEC SBA | 50 | 4 - research / investigation SBA | TODO |
