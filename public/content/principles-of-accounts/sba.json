@@ -54,5 +54,3816 @@
     "Double entry maintained",
     "Trial Balance balances",
     "Accurate Income Statement"
-  ]
+  ],
+  "completedSample": {
+    "title": "A complete, full-mark Principles of Accounts SBA project: the accounting records and financial statements of Green Grocer Mini-Mart for September 2023 (all details invented)",
+    "viewOnlyNote": "For viewing and learning only. This is an original worked example written for CSEC Compass, not a real business's books and not a CXC exemplar. The business, its owner, its customers, its suppliers, its documents and every figure are invented for this worked example. The accounting is real: every transaction was posted by double entry and the figures in every book, ledger, the trial balance, the income statement and the statement of financial position are worked out from those postings, so the books balance and the statements agree. Study how the source documents feed the books of original entry, how the entries are posted to the ledgers and how the statements are built from the accounts, then keep your own records for a business you can visit. This sample cannot be copied.",
+    "profile": [
+      {
+        "label": "Candidate",
+        "value": "Sample Candidate (invented)"
+      },
+      {
+        "label": "Centre",
+        "value": "Sample Secondary School (invented)"
+      },
+      {
+        "label": "Subject",
+        "value": "Principles of Accounts - School-Based Assessment project (20 marks, five tasks)"
+      },
+      {
+        "label": "Business",
+        "value": "Green Grocer Mini-Mart - a sole proprietorship owned by Marcia Grant (invented), 1 Market Street, May Pen, Clarendon (invented)"
+      },
+      {
+        "label": "Period",
+        "value": "One month: 1 to 30 September 2023, with opening balances at 1 September 2023"
+      },
+      {
+        "label": "Transactions",
+        "value": "49 transactions in 24 different types, each written up from a numbered source document"
+      },
+      {
+        "label": "Records kept",
+        "value": "Sales, purchases, sales returns and purchases returns journals, a two-column cash book, a general journal, the ledgers and a trial balance"
+      },
+      {
+        "label": "Outcome",
+        "value": "Trial balance agrees at J$2,622,000.00; net profit J$51,350.00 for September; net assets J$736,350.00 equal to capital of J$736,350.00"
+      },
+      {
+        "label": "Submission",
+        "value": "One bound project of 26 sections, with the source documents filed in date order, the books of original entry, the ledger accounts, the trial balance and the financial statements"
+      }
+    ],
+    "categories": [
+      {
+        "section": "Project Aim",
+        "marks": "2",
+        "awarded": "2",
+        "comment": "The business is described in full - owner, address, what it sells, its customers, its suppliers, its staff, its assets and the J$300,000.00 loan it starts with - and the purpose of the project is stated as the owner's own question: she kept only a cash tin and an exercise book, so she could say how much money was in the tin but not whether she was making money. The period, the basis of accounting, the treatment of tax and the closing stock valuation are all fixed before the books are opened."
+      },
+      {
+        "section": "Business Transactions",
+        "marks": "4",
+        "awarded": "4",
+        "comment": "All 49 transactions of the month are listed with their source document, the book they were entered in and the double entry they produced, and they fall into 24 different types - more than double the ten the task asks for - covering cash and credit trading, both kinds of returns, both discounts, the two contras, capital and drawings, ten running expenses and the three month-end adjustments. Each source document is described with how it was checked before the entry was made."
+      },
+      {
+        "section": "Books of Original Entry",
+        "marks": "4",
+        "awarded": "4",
+        "comment": "Six books are written up in full: the sales journal (J$516,500.00), the purchases journal (J$833,000.00), the sales returns journal (J$25,500.00), the purchases returns journal (J$22,000.00), the two-column cash book with memorandum discount columns (J$11,000.00 allowed and J$15,500.00 received, closing cash J$28,200.00 and bank J$566,250.00) and the general journal (J$72,500.00), each with its totals posted to the correct accounts."
+      },
+      {
+        "section": "Ledgers",
+        "marks": "4",
+        "awarded": "4",
+        "comment": "The posting method and the folio system are explained, then every ledger account is shown with its entries, its balance carried down and the totals of its two sides: capital, drawings, cash and bank; the four debtors' and two creditors' personal accounts; the trading accounts; the ten expense and discount accounts; and the asset, liability and accumulated depreciation accounts. The debtors' list agrees with the trade debtors account at J$18,400.00, the creditors' list with the trade creditors account at J$290,500.00, and the trial balance extracted from the ledger balances agrees at J$2,622,000.00 on each side."
+      },
+      {
+        "section": "Financial Statements",
+        "marks": "6",
+        "awarded": "6",
+        "comment": "The income statement runs from net sales of J$1,235,000.00 through cost of sales of J$1,025,000.00 to a gross profit of J$210,000.00 and a net profit of J$51,350.00 after all expenses, with discount received brought in as income. The statement of financial position shows non-current assets of J$591,500.00, current assets of J$735,350.00 including a prepayment of J$44,000.00, current liabilities of J$290,500.00, the J$300,000.00 loan and net assets of J$736,350.00 equal to the owner's capital of J$736,350.00. The four month-end adjustments are shown with their effect on both statements."
+      }
+    ],
+    "pages": [
+      {
+        "heading": "Project aim: the business and the purpose of the project",
+        "body": "Green Grocer Mini-Mart is a small sole proprietorship owned by Marcia Grant (invented) and trading at 1 Market Street, May Pen, Clarendon (invented). It sells fresh vegetables, fruit, ground provisions and a small range of grocery items to households in the town and to three regular customers who buy on credit: a cafe, a guest house and a basic school. The owner works in the shop herself with one helper, and the business keeps a delivery van for the school and hotel orders. The purpose of this project is to keep a complete set of accounting records for the business for one month, September 2023, and to prepare the financial statements from those records so that the owner can see whether the shop made a profit and what its position was at the end of the month. Before this project the owner kept only a cash tin and an exercise book of amounts owing, so she could say how much money was in the tin and could not say whether she was making money. That is the problem the project answers: the records are written up from source documents in the proper books, posted to the ledgers, proved by a trial balance, and turned into an income statement and a statement of financial position at 30 September 2023.",
+        "table": {
+          "caption": "The business, as described in the project aim",
+          "columns": [
+            "Item",
+            "Details"
+          ],
+          "rows": [
+            [
+              "Name of business",
+              "Green Grocer Mini-Mart"
+            ],
+            [
+              "Owner",
+              "Marcia Grant (invented) - sole proprietor"
+            ],
+            [
+              "Address",
+              "1 Market Street, May Pen, Clarendon (invented)"
+            ],
+            [
+              "What it sells",
+              "Fresh vegetables, fruit, ground provisions and a small range of grocery items"
+            ],
+            [
+              "Customers",
+              "Households paying by cash, and three credit customers: Sunny Side Cafe, Friar's Hill Guest House and Village Basic School"
+            ],
+            [
+              "Main suppliers",
+              "FreshCo Wholesale and Agro Supplies Ltd (credit), and the parish market (cash)"
+            ],
+            [
+              "Employees",
+              "The owner and one shop helper; wages paid weekly on Fridays"
+            ],
+            [
+              "Assets at the start",
+              "Fixtures and fittings J$180,000.00, motor vehicle J$420,000.00, stock J$95,000.00, bank J$260,000.00, cash float J$25,000.00"
+            ],
+            [
+              "Money owed at the start",
+              "Bank loan from NCB, J$300,000.00"
+            ],
+            [
+              "Capital at 1 September 2023",
+              "J$680,000.00 (assets less the loan)"
+            ],
+            [
+              "Records kept before the project",
+              "A cash tin and an exercise book; no journals, no ledgers and no financial statements"
+            ],
+            [
+              "Purpose of the project",
+              "To keep a full set of books for September 2023 from source documents and to prepare the income statement and statement of financial position from them"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Project aim: the period, the basis of accounting and the system used",
+        "body": "The records cover one month only, September 2023, which is the period the owner chose because her rent, her insurance and her loan are all reckoned monthly or yearly and she wanted to know her position after her second month of trading. The books are kept on the double-entry system: every transaction is entered twice, once as a debit and once as a credit, so that the books prove themselves and any error shows up as a difference in the trial balance. The project follows the accrual basis for the two adjustments that fall at the end of the month - the yearly insurance premium paid on 3 September is split so that only one month's cover is charged to September, and depreciation is charged for the month although no money was paid for it - and on the money basis for everything else, because only September's cash and credit transactions are being recorded. Two further decisions are worth stating, because they affect every figure that follows. First, the business is not registered for GCT and no tax is charged or claimed on any transaction in this project. Second, the stock at 30 September is a physical count taken by the owner and the helper on the evening of 30 September and valued at cost, J$78,500.00, and that single figure is what turns purchases into cost of sales and appears as a current asset in the statement of financial position.",
+        "table": {
+          "caption": "The basis on which the records were kept",
+          "columns": [
+            "Decision",
+            "What was done",
+            "Why it matters to the figures"
+          ],
+          "rows": [
+            [
+              "Period",
+              "One month, 1 to 30 September 2023",
+              "Every account is a monthly account: rent, wages and telephone are September's charges only"
+            ],
+            [
+              "System",
+              "Double entry, with journals and a two-column cash book",
+              "Each transaction is entered twice, so the trial balance can prove the books"
+            ],
+            [
+              "Accrual adjustments",
+              "Insurance split monthly; depreciation charged for the month",
+              "Insurance charged in the income statement is J$4,000.00 and J$44,000.00 is carried forward as a prepayment"
+            ],
+            [
+              "Cash versus credit",
+              "Cash sales are banked or held in the float; three customers and two suppliers buy and sell on credit",
+              "Produces both trade debtors and trade creditors, and the discounts allowed and received"
+            ],
+            [
+              "Tax",
+              "No GCT is charged or claimed in this project",
+              "Amounts in the books are the amounts on the invoices, with no tax columns"
+            ],
+            [
+              "Closing stock",
+              "Physical count on 30 September, valued at cost, J$78,500.00",
+              "Fixes cost of sales at J$1,025,000.00 and the current asset in the balance sheet"
+            ],
+            [
+              "Currency",
+              "Jamaican dollars (J$)",
+              "All figures in the project are in J$"
+            ],
+            [
+              "Books used",
+              "Sales, purchases, sales returns and purchases returns journals, a two-column cash book and a general journal",
+              "Every one of the 49 transactions is entered in exactly one of those books, so nothing is double counted or missed"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Business transactions: the 49 transactions for the month, with their source documents",
+        "body": "Every transaction in September 2023 was written up from a source document, and the column on the right shows the double entry it produced. The 49 transactions cover cash and credit trading, returns, discounts, contras between the cash tin and the bank, the owner's capital and drawings, ten separate running expenses of the business, and the three month-end adjustments. Each of them is entered in exactly one book of original entry, which is what the last column shows: CB for the cash book, SJ and PJ for the sales and purchases journals, SRJ and PRJ for the returns journals, and GJ for the general journal. Reading the list straight through tells the story of the month. The shop took J$1,260,500.00 in sales, of which J$744,000.00 came in over the counter in cash; it bought J$1,023,700.00 of goods, a fifth of it for cash at the market; it banked J$540,000.00 of takings and kept a working float in the tin; and the month ended with two customers owing money, two suppliers to be paid, and the annual insurance premium paid with eleven months of it still to be used.",
+        "table": {
+          "caption": "The 49 transactions of September 2023, with source document, book and double entry",
+          "columns": [
+            "No.",
+            "Date",
+            "Transaction",
+            "Source document",
+            "Book",
+            "Double entry (J$)"
+          ],
+          "rows": [
+            [
+              "1",
+              "1 Sep",
+              "The balances the business began the month with, brought down from the previous period",
+              "Opening position at 1 September 2023",
+              "OB",
+              "Dr Fixtures and fittings 180,000.00; Motor vehicle 420,000.00; Inventory (opening) 95,000.00; Bank 260,000.00; Cash 25,000.00 | Cr Loan - NCB 300,000.00; Capital 680,000.00"
+            ],
+            [
+              "2",
+              "1 Sep",
+              "The owner paid additional capital of J$45,000 into the business bank account",
+              "Receipt book counterfoil 1",
+              "CB",
+              "Dr Bank 45,000.00 | Cr Capital 45,000.00"
+            ],
+            [
+              "3",
+              "1 Sep",
+              "The owner took J$40,000 out of the business by cheque for personal use",
+              "Cheque counterfoil 14",
+              "CB",
+              "Dr Drawings 40,000.00 | Cr Bank 40,000.00"
+            ],
+            [
+              "4",
+              "2 Sep",
+              "Cash sales for the week to 2 September",
+              "Cash register reading, 2 September",
+              "CB",
+              "Dr Cash 150,800.00 | Cr Sales 150,800.00"
+            ],
+            [
+              "5",
+              "8 Sep",
+              "Cash sales for the week to 8 September",
+              "Cash register reading, 8 September",
+              "CB",
+              "Dr Cash 134,500.00 | Cr Sales 134,500.00"
+            ],
+            [
+              "6",
+              "15 Sep",
+              "Cash sales for the week to 15 September",
+              "Cash register reading, 15 September",
+              "CB",
+              "Dr Cash 172,600.00 | Cr Sales 172,600.00"
+            ],
+            [
+              "7",
+              "22 Sep",
+              "Cash sales for the week to 22 September",
+              "Cash register reading, 22 September",
+              "CB",
+              "Dr Cash 121,300.00 | Cr Sales 121,300.00"
+            ],
+            [
+              "8",
+              "29 Sep",
+              "Cash sales for the week to 29 September",
+              "Cash register reading, 29 September",
+              "CB",
+              "Dr Cash 164,800.00 | Cr Sales 164,800.00"
+            ],
+            [
+              "9",
+              "3 Sep",
+              "Sold goods on credit to Sunny Side Cafe",
+              "Invoice 101 to Sunny Side Cafe",
+              "SJ",
+              "Dr Trade debtors 92,500.00 | Cr Sales 92,500.00"
+            ],
+            [
+              "10",
+              "5 Sep",
+              "Sold goods on credit to Village Basic School",
+              "Invoice 102 to Village Basic School",
+              "SJ",
+              "Dr Trade debtors 68,400.00 | Cr Sales 68,400.00"
+            ],
+            [
+              "11",
+              "12 Sep",
+              "Sold goods on credit to Sunny Side Cafe",
+              "Invoice 103 to Sunny Side Cafe",
+              "SJ",
+              "Dr Trade debtors 104,600.00 | Cr Sales 104,600.00"
+            ],
+            [
+              "12",
+              "19 Sep",
+              "Sold goods on credit to Friar's Hill Guest House",
+              "Invoice 104 to Friar's Hill Guest House",
+              "SJ",
+              "Dr Trade debtors 138,900.00 | Cr Sales 138,900.00"
+            ],
+            [
+              "13",
+              "24 Sep",
+              "Sold goods on credit to a market vendor, A. Brown",
+              "Invoice 105 to A. Brown, market vendor",
+              "SJ",
+              "Dr Trade debtors 32,700.00 | Cr Sales 32,700.00"
+            ],
+            [
+              "14",
+              "26 Sep",
+              "Sold goods on credit to Village Basic School",
+              "Invoice 106 to Village Basic School",
+              "SJ",
+              "Dr Trade debtors 79,400.00 | Cr Sales 79,400.00"
+            ],
+            [
+              "15",
+              "4 Sep",
+              "Bought goods on credit from FreshCo Wholesale",
+              "Invoice FC-2201 from FreshCo Wholesale",
+              "PJ",
+              "Dr Purchases 245,000.00 | Cr Trade creditors 245,000.00"
+            ],
+            [
+              "16",
+              "11 Sep",
+              "Bought goods on credit from Agro Supplies Ltd",
+              "Invoice AS-1180 from Agro Supplies Ltd",
+              "PJ",
+              "Dr Purchases 148,600.00 | Cr Trade creditors 148,600.00"
+            ],
+            [
+              "17",
+              "18 Sep",
+              "Bought goods on credit from FreshCo Wholesale",
+              "Invoice FC-2274 from FreshCo Wholesale",
+              "PJ",
+              "Dr Purchases 289,400.00 | Cr Trade creditors 289,400.00"
+            ],
+            [
+              "18",
+              "25 Sep",
+              "Bought goods on credit from Agro Supplies Ltd",
+              "Invoice AS-1231 from Agro Supplies Ltd",
+              "PJ",
+              "Dr Purchases 150,000.00 | Cr Trade creditors 150,000.00"
+            ],
+            [
+              "19",
+              "6 Sep",
+              "Bought vegetables for cash from the market",
+              "Supplier's cash invoice 3391",
+              "CB",
+              "Dr Purchases 105,400.00 | Cr Cash 105,400.00"
+            ],
+            [
+              "20",
+              "20 Sep",
+              "Bought vegetables for cash from the market",
+              "Supplier's cash invoice 3407",
+              "CB",
+              "Dr Purchases 85,300.00 | Cr Cash 85,300.00"
+            ],
+            [
+              "21",
+              "13 Sep",
+              "Sunny Side Cafe returned goods that were not fresh",
+              "Credit note CN-31 to Sunny Side Cafe",
+              "SRJ",
+              "Dr Sales returns 15,800.00 | Cr Trade debtors 15,800.00"
+            ],
+            [
+              "22",
+              "27 Sep",
+              "Village Basic School returned over-ripe fruit",
+              "Credit note CN-32 to Village Basic School",
+              "SRJ",
+              "Dr Sales returns 9,700.00 | Cr Trade debtors 9,700.00"
+            ],
+            [
+              "23",
+              "14 Sep",
+              "Returned goods damaged in transit to FreshCo Wholesale",
+              "Debit note DN-14 to FreshCo Wholesale",
+              "PRJ",
+              "Dr Trade creditors 13,000.00 | Cr Purchases returns 13,000.00"
+            ],
+            [
+              "24",
+              "28 Sep",
+              "Returned short-dated goods to Agro Supplies Ltd",
+              "Debit note DN-15 to Agro Supplies Ltd",
+              "PRJ",
+              "Dr Trade creditors 9,000.00 | Cr Purchases returns 9,000.00"
+            ],
+            [
+              "25",
+              "9 Sep",
+              "Banked J$270,000 of the cash takings",
+              "Bank paying-in slip 2201",
+              "CB",
+              "Dr Bank 270,000.00 | Cr Cash 270,000.00"
+            ],
+            [
+              "26",
+              "23 Sep",
+              "Banked a further J$270,000 of the cash takings",
+              "Bank paying-in slip 2202",
+              "CB",
+              "Dr Bank 270,000.00 | Cr Cash 270,000.00"
+            ],
+            [
+              "27",
+              "22 Sep",
+              "Drew J$20,000 from the bank for the shop float",
+              "Cheque counterfoil 15",
+              "CB",
+              "Dr Cash 20,000.00 | Cr Bank 20,000.00"
+            ],
+            [
+              "28",
+              "20 Sep",
+              "Received J$160,000 from Sunny Side Cafe and allowed J$6,000 discount",
+              "Paying-in slip and receipt 88",
+              "CB",
+              "Dr Bank 160,000.00; Discount allowed 6,000.00 | Cr Trade debtors 166,000.00"
+            ],
+            [
+              "29",
+              "28 Sep",
+              "Received J$138,900 from Friar's Hill Guest House in full settlement",
+              "Paying-in slip and receipt 89",
+              "CB",
+              "Dr Bank 138,900.00 | Cr Trade debtors 138,900.00"
+            ],
+            [
+              "30",
+              "29 Sep",
+              "Received J$130,000 from Village Basic School and allowed J$5,000 discount",
+              "Paying-in slip and receipt 90",
+              "CB",
+              "Dr Bank 130,000.00; Discount allowed 5,000.00 | Cr Trade debtors 135,000.00"
+            ],
+            [
+              "31",
+              "30 Sep",
+              "Received J$12,700 in cash from A. Brown, the market vendor",
+              "Receipt 91",
+              "CB",
+              "Dr Cash 12,700.00 | Cr Trade debtors 12,700.00"
+            ],
+            [
+              "32",
+              "17 Sep",
+              "Paid FreshCo Wholesale J$225,000 by cheque and received J$7,000 discount",
+              "Cheque counterfoil 11",
+              "CB",
+              "Dr Trade creditors 232,000.00 | Cr Bank 225,000.00; Discount received 7,000.00"
+            ],
+            [
+              "33",
+              "30 Sep",
+              "Paid Agro Supplies Ltd J$280,000 by cheque and received J$8,500 discount",
+              "Cheque counterfoil 18",
+              "CB",
+              "Dr Trade creditors 288,500.00 | Cr Bank 280,000.00; Discount received 8,500.00"
+            ],
+            [
+              "34",
+              "6 Sep",
+              "Paid weekly wages of J$9,000 in cash",
+              "Petty cash voucher and wages sheet",
+              "CB",
+              "Dr Wages 9,000.00 | Cr Cash 9,000.00"
+            ],
+            [
+              "35",
+              "13 Sep",
+              "Paid weekly wages of J$9,000 in cash",
+              "Petty cash voucher and wages sheet",
+              "CB",
+              "Dr Wages 9,000.00 | Cr Cash 9,000.00"
+            ],
+            [
+              "36",
+              "20 Sep",
+              "Paid weekly wages of J$9,000 in cash",
+              "Petty cash voucher and wages sheet",
+              "CB",
+              "Dr Wages 9,000.00 | Cr Cash 9,000.00"
+            ],
+            [
+              "37",
+              "27 Sep",
+              "Paid weekly wages of J$9,000 in cash",
+              "Petty cash voucher and wages sheet",
+              "CB",
+              "Dr Wages 9,000.00 | Cr Cash 9,000.00"
+            ],
+            [
+              "38",
+              "1 Sep",
+              "Paid September rent of J$25,000 by cheque",
+              "Landlord's receipt and cheque counterfoil 10",
+              "CB",
+              "Dr Rent 25,000.00 | Cr Bank 25,000.00"
+            ],
+            [
+              "39",
+              "7 Sep",
+              "Paid motor expenses for the delivery van, J$24,600 by cheque",
+              "Fuel receipts and cheque counterfoil 12",
+              "CB",
+              "Dr Motor expenses 24,600.00 | Cr Bank 24,600.00"
+            ],
+            [
+              "40",
+              "21 Sep",
+              "Paid motor expenses for the delivery van, J$19,800 by cheque",
+              "Fuel receipts and cheque counterfoil 16",
+              "CB",
+              "Dr Motor expenses 19,800.00 | Cr Bank 19,800.00"
+            ],
+            [
+              "41",
+              "5 Sep",
+              "Paid telephone and internet, J$8,400 by cheque",
+              "Telephone bill 44-118 and cheque counterfoil 10A",
+              "CB",
+              "Dr Telephone and internet 8,400.00 | Cr Bank 8,400.00"
+            ],
+            [
+              "42",
+              "25 Sep",
+              "Paid telephone and internet, J$7,900 by cheque",
+              "Telephone bill 44-201 and cheque counterfoil 17",
+              "CB",
+              "Dr Telephone and internet 7,900.00 | Cr Bank 7,900.00"
+            ],
+            [
+              "43",
+              "3 Sep",
+              "Paid the yearly shop insurance premium of J$48,000 by cheque for the year to 31 August 2024",
+              "Insurance policy 77120 and cheque counterfoil 9",
+              "CB",
+              "Dr Insurance 48,000.00 | Cr Bank 48,000.00"
+            ],
+            [
+              "44",
+              "30 Sep",
+              "Bank charges and standing orders of J$1,450 charged by the bank",
+              "Bank statement, September",
+              "CB",
+              "Dr Bank charges 1,450.00 | Cr Bank 1,450.00"
+            ],
+            [
+              "45",
+              "23 Sep",
+              "Paid carriage outwards on a delivery to Friar's Hill, J$7,500 by cheque",
+              "Haulier's receipt 552 and cheque counterfoil 16A",
+              "CB",
+              "Dr Carriage outwards 7,500.00 | Cr Bank 7,500.00"
+            ],
+            [
+              "46",
+              "18 Sep",
+              "Paid carriage inwards on goods bought, J$6,800 in cash",
+              "Haulier's cash receipt 731",
+              "CB",
+              "Dr Carriage inwards 6,800.00 | Cr Cash 6,800.00"
+            ],
+            [
+              "47",
+              "30 Sep",
+              "A. Brown has left the district; the J$20,000 balance owing on invoice 105 is written off as a bad debt",
+              "Journal voucher JV-1",
+              "GJ",
+              "Dr Bad debts 20,000.00 | Cr Trade debtors 20,000.00"
+            ],
+            [
+              "48",
+              "30 Sep",
+              "Depreciation for September on fixtures and fittings, at 10 per cent a year",
+              "Journal voucher JV-2",
+              "GJ",
+              "Dr Depreciation 1,500.00 | Cr Accumulated depreciation - fixtures and fittings 1,500.00"
+            ],
+            [
+              "49",
+              "30 Sep",
+              "Depreciation for September on the motor vehicle, at 20 per cent a year",
+              "Journal voucher JV-2",
+              "GJ",
+              "Dr Depreciation 7,000.00 | Cr Accumulated depreciation - motor vehicle 7,000.00"
+            ],
+            [
+              "50",
+              "30 Sep",
+              "Eleven months of the insurance premium paid on 3 September belongs to the next period and is carried forward as a prepayment",
+              "Journal voucher JV-3",
+              "GJ",
+              "Dr Prepaid insurance 44,000.00 | Cr Insurance 44,000.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Business transactions: the 24 different types of transaction",
+        "body": "The project asks for at least ten different types of transaction and this month contains 24, listed below with the account debited, the account credited and the number of times each type occurred. The list is the proof that the books are being used properly and not just for cash sales: it contains credit trading with both customers and suppliers, both kinds of return, both kinds of discount, the two contras between the cash tin and the bank, the owner's capital and drawings, and the adjustments that have to be made at the end of a period even though no money moves, namely depreciation and the prepayment of the insurance premium. Six types account for most of the money - cash sales, credit sales, cash and credit purchases, and the two contras - and the remaining 18 types matter for a different reason: they are the ones that a shop which keeps only a cash tin never records at all, and they are where the profit is quietly lost. Discounts allowed, discounts received, carriage inwards and outwards, the bad debt and depreciation between them move J$69,300.00 through the income statement in one month.",
+        "table": {
+          "caption": "The 24 types of transaction, with the double entry and how often each occurred",
+          "columns": [
+            "Type of transaction",
+            "Account debited",
+            "Account credited",
+            "Times in the month"
+          ],
+          "rows": [
+            [
+              "Capital introduced by the owner",
+              "Bank",
+              "Capital",
+              "1"
+            ],
+            [
+              "Drawings taken by the owner",
+              "Drawings",
+              "Bank",
+              "1"
+            ],
+            [
+              "Cash sales",
+              "Cash",
+              "Sales",
+              "5"
+            ],
+            [
+              "Credit sales",
+              "Trade debtors",
+              "Sales",
+              "6"
+            ],
+            [
+              "Cash purchases",
+              "Purchases",
+              "Cash",
+              "2"
+            ],
+            [
+              "Credit purchases",
+              "Purchases",
+              "Trade creditors",
+              "4"
+            ],
+            [
+              "Sales returns",
+              "Sales returns",
+              "Trade debtors",
+              "2"
+            ],
+            [
+              "Purchases returns",
+              "Trade creditors",
+              "Purchases returns",
+              "2"
+            ],
+            [
+              "Receipt from a debtor with discount allowed",
+              "Bank / Discount allowed",
+              "Trade debtors",
+              "3"
+            ],
+            [
+              "Receipt from a debtor in full settlement, no discount",
+              "Bank",
+              "Trade debtors",
+              "1"
+            ],
+            [
+              "Payment to a creditor with discount received",
+              "Trade creditors",
+              "Bank / Discount received",
+              "2"
+            ],
+            [
+              "Contra: cash banked",
+              "Bank",
+              "Cash",
+              "2"
+            ],
+            [
+              "Contra: cash drawn for the float",
+              "Cash",
+              "Bank",
+              "1"
+            ],
+            [
+              "Wages paid",
+              "Wages",
+              "Cash",
+              "4"
+            ],
+            [
+              "Rent paid",
+              "Rent",
+              "Bank",
+              "1"
+            ],
+            [
+              "Motor expenses paid",
+              "Motor expenses",
+              "Bank",
+              "2"
+            ],
+            [
+              "Telephone and internet paid",
+              "Telephone and internet",
+              "Bank",
+              "2"
+            ],
+            [
+              "Insurance premium paid",
+              "Insurance",
+              "Bank",
+              "1"
+            ],
+            [
+              "Bank charges",
+              "Bank charges",
+              "Bank",
+              "1"
+            ],
+            [
+              "Carriage inwards paid",
+              "Carriage inwards",
+              "Cash",
+              "1"
+            ],
+            [
+              "Carriage outwards paid",
+              "Carriage outwards",
+              "Bank",
+              "1"
+            ],
+            [
+              "Bad debt written off",
+              "Bad debts",
+              "Trade debtors",
+              "1"
+            ],
+            [
+              "Depreciation charged for the month",
+              "Depreciation",
+              "Accumulated depreciation",
+              "2"
+            ],
+            [
+              "Prepayment carried forward",
+              "Prepaid insurance",
+              "Insurance",
+              "1"
+            ],
+            [
+              "Total transactions",
+              "-",
+              "-",
+              "49"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Business transactions: the source documents and how each was checked",
+        "body": "A book of original entry is only as good as the document behind it, so the documents were kept and filed in date order as the month went on, and the following checks were made before anything was written up. Cash takings were taken from the cash register reading at the close of business and the money in the tin was counted against it the same evening. Credit sales were entered from the office copy of each invoice, and the customer's order and the delivery note were clipped to it. Credit purchases were entered only when the supplier's invoice agreed with the delivery note and the goods had actually been counted in, which caught one short delivery that later became debit note DN-15. Returns were entered from the credit notes issued to customers and the debit notes sent to suppliers, so that the paper went both ways and the supplier could not later deny it. Bank receipts and payments were entered from paying-in slips and cheque counterfoils as they happened, and the bank column of the cash book was then agreed with the bank statement at the end of the month, which is how the bank charges of J$1,450.00 were picked up. The three month-end entries have no bank or cash document at all, and that is exactly why they are made in the general journal with a voucher: a bad debt, a month of depreciation and the unused part of an insurance premium are real charges of the period that no receipt or cheque can show.",
+        "table": {
+          "caption": "The source documents, what each proves and how it was checked",
+          "columns": [
+            "Source document",
+            "What it proves",
+            "How it was checked",
+            "Transactions"
+          ],
+          "rows": [
+            [
+              "Receipt book counterfoil",
+              "That money was received by the business",
+              "Counterfoil agreed with the paying-in slip and the bank statement",
+              "Capital introduced, receipts from debtors"
+            ],
+            [
+              "Cash register reading (till roll)",
+              "The cash taken over the counter",
+              "Money in the tin counted against the reading each evening",
+              "Cash sales (5 readings)"
+            ],
+            [
+              "Invoice (office copy)",
+              "That goods were sold on credit and to whom",
+              "Office copy agreed with the customer's order and the delivery note",
+              "Credit sales (6 invoices)"
+            ],
+            [
+              "Supplier's invoice",
+              "That goods were bought and the amount owed",
+              "Invoice agreed with the delivery note and the goods counted in",
+              "Credit purchases (4 invoices)"
+            ],
+            [
+              "Credit note issued",
+              "That a customer returned goods and was credited",
+              "Credit note agreed with the goods returned to stock",
+              "Sales returns (2 credit notes)"
+            ],
+            [
+              "Debit note sent",
+              "That goods were returned to a supplier and the account debited",
+              "Debit note agreed with the haulier's receipt and the supplier's acknowledgement",
+              "Purchases returns (2 debit notes)"
+            ],
+            [
+              "Cheque counterfoil",
+              "The amount and payee of every payment from the bank",
+              "Counterfoils listed against the bank statement at 30 September",
+              "12 cheque payments, including rent, wages by cash, insurance and drawings"
+            ],
+            [
+              "Paying-in slip",
+              "Money paid into the bank",
+              "Slips agreed with the bank statement and with the cash book",
+              "Bankings and receipts from debtors"
+            ],
+            [
+              "Bank statement",
+              "What the bank actually did with the account",
+              "Bank column of the cash book agreed with the statement, item by item",
+              "Receipts, payments and the bank charges of J$1,450.00"
+            ],
+            [
+              "Petty cash voucher and wages sheet",
+              "Small cash payments and the weekly wage",
+              "Voucher signed by the person paid and wages sheet signed by the helper",
+              "Wages (4 weeks) and carriage inwards"
+            ],
+            [
+              "Journal voucher",
+              "The reason for an entry that has no cash document",
+              "Voucher signed by the owner and the reason written on it",
+              "Bad debt, depreciation and the prepaid insurance"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Books of original entry: the sales journal",
+        "body": "The sales journal records credit sales only; cash sales never appear in it because they go straight into the cash book. The six invoices in September total J$516,500.00 and each one is posted on the same day to the customer's account in the sales ledger and, in total, to the credit of the sales account in the general ledger. Two features of the month are worth noting here because they affect later figures. The first is that more than half the credit sales went to two repeat customers, Sunny Side Cafe and Village Basic School, which is good for turnover and is also why the business was willing to allow them discount when they paid: J$11,000.00 of discount was allowed on those two accounts alone. The second is invoice 105, the J$32,700.00 sold to a market vendor who paid only part of it and then left the district, so J$20,000.00 of it had to be written off as a bad debt at the end of the month. That single invoice is the reason the business now checks a new credit customer's record before selling on credit.",
+        "table": {
+          "caption": "Sales journal for September 2023",
+          "columns": [
+            "Date",
+            "Customer",
+            "Invoice no.",
+            "Folio",
+            "Amount (J$)"
+          ],
+          "rows": [
+            [
+              "3 Sep",
+              "Sunny Side Cafe",
+              "101",
+              "SL1",
+              "92,500.00"
+            ],
+            [
+              "5 Sep",
+              "Village Basic School",
+              "102",
+              "SL2",
+              "68,400.00"
+            ],
+            [
+              "12 Sep",
+              "Sunny Side Cafe",
+              "103",
+              "SL3",
+              "104,600.00"
+            ],
+            [
+              "19 Sep",
+              "Friar's Hill Guest House",
+              "104",
+              "SL4",
+              "138,900.00"
+            ],
+            [
+              "24 Sep",
+              "A. Brown, market vendor",
+              "105",
+              "SL5",
+              "32,700.00"
+            ],
+            [
+              "26 Sep",
+              "Village Basic School",
+              "106",
+              "SL6",
+              "79,400.00"
+            ],
+            [
+              "30 Sep",
+              "Total credit sales for the month, posted to the credit of the sales account",
+              "-",
+              "GL",
+              "516,500.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Books of original entry: the purchases journal",
+        "body": "The purchases journal records credit purchases of goods for resale only, and it contains the four supplier invoices of the month, totalling J$833,000.00. Goods bought for cash at the market are in the cash book instead, and the delivery van's fuel, the telephone and the rent are not purchases at all but expenses: putting an expense in the purchases journal is one of the commonest errors in a shop's books, because it makes cost of sales too high and hides the expense where the owner never looks at it. Two suppliers carry the whole of the month's credit buying, FreshCo Wholesale with J$534,400.00 and Agro Supplies Ltd with J$298,600.00, and both invoices from each supplier are listed in date order. The total is posted to the debit of the purchases account, and each invoice is posted to the credit of that supplier's account in the purchases ledger. The month's credit buying is large because stock is turned over quickly, and it is worth noting for the analysis later that it is larger than the payments made to the two suppliers in the same month, which is why trade creditors stand at J$290,500.00 at 30 September.",
+        "table": {
+          "caption": "Purchases journal for September 2023",
+          "columns": [
+            "Date",
+            "Supplier",
+            "Invoice no.",
+            "Folio",
+            "Amount (J$)"
+          ],
+          "rows": [
+            [
+              "4 Sep",
+              "FreshCo Wholesale",
+              "FC-2201",
+              "PL1",
+              "245,000.00"
+            ],
+            [
+              "11 Sep",
+              "Agro Supplies Ltd",
+              "AS-1180",
+              "PL2",
+              "148,600.00"
+            ],
+            [
+              "18 Sep",
+              "FreshCo Wholesale",
+              "FC-2274",
+              "PL3",
+              "289,400.00"
+            ],
+            [
+              "25 Sep",
+              "Agro Supplies Ltd",
+              "AS-1231",
+              "PL4",
+              "150,000.00"
+            ],
+            [
+              "30 Sep",
+              "Total credit purchases for the month, posted to the debit of the purchases account",
+              "-",
+              "GL",
+              "833,000.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Books of original entry: the sales returns and purchases returns journals",
+        "body": "Returns are kept in their own journals rather than being netted off the sales and purchases journals, so that the owner can see how much is coming back and why. Sales returns of J$25,500.00 went back to the two cafe and school customers, both times because the goods were not fresh, which is a real cost to a grocer: the goods were credited at selling price, they cannot be sold again, and the loss has already been carried in cost of sales. Purchases returns of J$22,000.00 went back to the two suppliers, once because of damage in transit and once because the goods were short-dated. The difference between the two kinds of return matters: a sales return reduces what the business earns, while a purchases return reduces what it owes and the cost of the goods it is accounting for. Each credit note is posted to the debit of the customer's personal account, and each debit note is posted to the debit of the supplier's personal account, with the totals posted to the sales returns account and the purchases returns account in the general ledger.",
+        "table": {
+          "caption": "Sales returns journal for September 2023",
+          "columns": [
+            "Date",
+            "Customer",
+            "Credit note no.",
+            "Folio",
+            "Amount (J$)"
+          ],
+          "rows": [
+            [
+              "13 Sep",
+              "Sunny Side Cafe",
+              "CN-31",
+              "SL1",
+              "15,800.00"
+            ],
+            [
+              "27 Sep",
+              "Village Basic School",
+              "CN-32",
+              "SL2",
+              "9,700.00"
+            ],
+            [
+              "30 Sep",
+              "Total sales returns, posted to the debit of the sales returns account",
+              "-",
+              "GL",
+              "25,500.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Books of original entry: the purchases returns journal",
+        "body": "The debit notes sent to the two suppliers are recorded in the purchases returns journal, which follows the same form as the other books: date, supplier, document number, folio and amount.",
+        "table": {
+          "caption": "Purchases returns journal for September 2023",
+          "columns": [
+            "Date",
+            "Supplier",
+            "Debit note no.",
+            "Folio",
+            "Amount (J$)"
+          ],
+          "rows": [
+            [
+              "14 Sep",
+              "FreshCo Wholesale",
+              "DN-14",
+              "PL1",
+              "13,000.00"
+            ],
+            [
+              "28 Sep",
+              "Agro Supplies Ltd",
+              "DN-15",
+              "PL2",
+              "9,000.00"
+            ],
+            [
+              "30 Sep",
+              "Total purchases returns, posted to the credit of the purchases returns account",
+              "-",
+              "GL",
+              "22,000.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Books of original entry: the two-column cash book (receipts side)",
+        "body": "The cash book is kept as one book with two money columns, one for the cash tin and one for the bank account, and the month's trading runs through it from the first day. The receipts side shows how the business took money in: J$25,000.00 of float and J$260,000.00 in the bank at the start, J$45,000.00 of new capital, J$744,000.00 of cash over the counter, J$428,900.00 of cheques from the three credit customers, J$12,700.00 in cash from the market vendor, and the two bankings of takings that move money from the tin to the bank. The discount allowed column is memorandum: it is not part of the cash or bank balances, and the amounts in it are posted to the debit of the discount allowed account, J$11,000.00 for the month. The column structure is what makes the book useful at a glance - cash on the left of each pair of columns and bank on the right - and the closing figures are worked out on the payments side, where the balance is inserted on whichever side of each column is the smaller so that the two sides of a column agree.",
+        "table": {
+          "caption": "Cash book, receipts side, September 2023 (J$)",
+          "columns": [
+            "Date",
+            "Particulars",
+            "Folio",
+            "Discount allowed",
+            "Cash",
+            "Bank"
+          ],
+          "rows": [
+            [
+              "1 Sep",
+              "To Balance b/d",
+              "-",
+              "-",
+              "25,000.00",
+              "260,000.00"
+            ],
+            [
+              "1 Sep",
+              "To Capital",
+              "CB1",
+              "-",
+              "-",
+              "45,000.00"
+            ],
+            [
+              "2 Sep",
+              "To Sales",
+              "CB3",
+              "-",
+              "150,800.00",
+              "-"
+            ],
+            [
+              "8 Sep",
+              "To Sales",
+              "CB4",
+              "-",
+              "134,500.00",
+              "-"
+            ],
+            [
+              "15 Sep",
+              "To Sales",
+              "CB5",
+              "-",
+              "172,600.00",
+              "-"
+            ],
+            [
+              "22 Sep",
+              "To Sales",
+              "CB6",
+              "-",
+              "121,300.00",
+              "-"
+            ],
+            [
+              "29 Sep",
+              "To Sales",
+              "CB7",
+              "-",
+              "164,800.00",
+              "-"
+            ],
+            [
+              "9 Sep",
+              "To Cash",
+              "CB10",
+              "-",
+              "-",
+              "270,000.00"
+            ],
+            [
+              "23 Sep",
+              "To Cash",
+              "CB11",
+              "-",
+              "-",
+              "270,000.00"
+            ],
+            [
+              "22 Sep",
+              "To Bank",
+              "CB12",
+              "-",
+              "20,000.00",
+              "-"
+            ],
+            [
+              "20 Sep",
+              "To Discount allowed / Trade debtors",
+              "CB13",
+              "6,000.00",
+              "-",
+              "160,000.00"
+            ],
+            [
+              "28 Sep",
+              "To Trade debtors",
+              "CB14",
+              "-",
+              "-",
+              "138,900.00"
+            ],
+            [
+              "29 Sep",
+              "To Discount allowed / Trade debtors",
+              "CB15",
+              "5,000.00",
+              "-",
+              "130,000.00"
+            ],
+            [
+              "30 Sep",
+              "To Trade debtors",
+              "CB16",
+              "-",
+              "12,700.00",
+              "-"
+            ],
+            [
+              "30 Sep",
+              "The balances carried down (J$28,200.00 cash and J$566,250.00 bank) are worked out on the payments side",
+              "-",
+              "-",
+              "-",
+              "-"
+            ],
+            [
+              "30 Sep",
+              "TOTALS of the receipts side",
+              "-",
+              "11,000.00",
+              "801,700.00",
+              "1,273,900.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Books of original entry: the two-column cash book (payments side) and the balances",
+        "body": "The payments side shows where the money went: J$190,700.00 of goods bought for cash at the market, J$36,000.00 of wages in four weekly payments, J$6,800.00 of carriage inwards, J$540,000.00 banked in two contras, J$20,000.00 drawn back out of the bank for the float, J$505,000.00 paid to the two suppliers, and the running expenses of the shop: rent, motor expenses, telephone and internet, the year's insurance premium, carriage outwards, the bank charges and the owner's drawings. The two contras are entered on both sides of the book on the same date - cash banked appears as a receipt in the bank column and a payment in the cash column - because they move money between the tin and the bank rather than bringing money in or taking it out of the business. When the columns are cast, the payments side needs a balance carried down of J$28,200.00 in the cash column and J$566,250.00 in the bank column so that each column agrees with the receipts side, and those two figures are the balances carried forward to the next month and shown in the statement of financial position. The discount received column is memorandum in the same way as the discount allowed column: J$15,500.00 was earned by paying the two suppliers early, and it is posted to the credit of the discount received account.",
+        "table": {
+          "caption": "Cash book, payments side, September 2023 (J$)",
+          "columns": [
+            "Date",
+            "Particulars",
+            "Folio",
+            "Discount received",
+            "Cash",
+            "Bank"
+          ],
+          "rows": [
+            [
+              "1 Sep",
+              "By Drawings",
+              "CB2",
+              "-",
+              "-",
+              "40,000.00"
+            ],
+            [
+              "6 Sep",
+              "By Purchases",
+              "CB8",
+              "-",
+              "105,400.00",
+              "-"
+            ],
+            [
+              "20 Sep",
+              "By Purchases",
+              "CB9",
+              "-",
+              "85,300.00",
+              "-"
+            ],
+            [
+              "9 Sep",
+              "By Bank",
+              "CB10",
+              "-",
+              "270,000.00",
+              "-"
+            ],
+            [
+              "23 Sep",
+              "By Bank",
+              "CB11",
+              "-",
+              "270,000.00",
+              "-"
+            ],
+            [
+              "22 Sep",
+              "By Cash",
+              "CB12",
+              "-",
+              "-",
+              "20,000.00"
+            ],
+            [
+              "17 Sep",
+              "By Trade creditors / Discount received",
+              "CB17",
+              "7,000.00",
+              "-",
+              "225,000.00"
+            ],
+            [
+              "30 Sep",
+              "By Trade creditors / Discount received",
+              "CB18",
+              "8,500.00",
+              "-",
+              "280,000.00"
+            ],
+            [
+              "6 Sep",
+              "By Wages",
+              "CB19",
+              "-",
+              "9,000.00",
+              "-"
+            ],
+            [
+              "13 Sep",
+              "By Wages",
+              "CB20",
+              "-",
+              "9,000.00",
+              "-"
+            ],
+            [
+              "20 Sep",
+              "By Wages",
+              "CB21",
+              "-",
+              "9,000.00",
+              "-"
+            ],
+            [
+              "27 Sep",
+              "By Wages",
+              "CB22",
+              "-",
+              "9,000.00",
+              "-"
+            ],
+            [
+              "1 Sep",
+              "By Rent",
+              "CB23",
+              "-",
+              "-",
+              "25,000.00"
+            ],
+            [
+              "7 Sep",
+              "By Motor expenses",
+              "CB24",
+              "-",
+              "-",
+              "24,600.00"
+            ],
+            [
+              "21 Sep",
+              "By Motor expenses",
+              "CB25",
+              "-",
+              "-",
+              "19,800.00"
+            ],
+            [
+              "5 Sep",
+              "By Telephone and internet",
+              "CB26",
+              "-",
+              "-",
+              "8,400.00"
+            ],
+            [
+              "25 Sep",
+              "By Telephone and internet",
+              "CB27",
+              "-",
+              "-",
+              "7,900.00"
+            ],
+            [
+              "3 Sep",
+              "By Insurance",
+              "CB28",
+              "-",
+              "-",
+              "48,000.00"
+            ],
+            [
+              "30 Sep",
+              "By Bank charges",
+              "CB29",
+              "-",
+              "-",
+              "1,450.00"
+            ],
+            [
+              "23 Sep",
+              "By Carriage outwards",
+              "CB30",
+              "-",
+              "-",
+              "7,500.00"
+            ],
+            [
+              "18 Sep",
+              "By Carriage inwards",
+              "CB31",
+              "-",
+              "6,800.00",
+              "-"
+            ],
+            [
+              "30 Sep",
+              "By Balance c/d - cash in the tin",
+              "-",
+              "-",
+              "28,200.00",
+              "-"
+            ],
+            [
+              "30 Sep",
+              "By Balance c/d - bank account",
+              "-",
+              "-",
+              "-",
+              "566,250.00"
+            ],
+            [
+              "30 Sep",
+              "TOTALS of the payments side",
+              "-",
+              "15,500.00",
+              "801,700.00",
+              "1,273,900.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Books of original entry: the general journal",
+        "body": "The general journal is the book of last resort: it records the four entries of the month that are not a sale, a purchase, a return or a movement of money. Two of them are the depreciation charges, J$1,500.00 on the fixtures and fittings at 10 per cent a year and J$7,000.00 on the motor vehicle at 20 per cent a year, both for one month. One is the bad debt: A. Brown, the market vendor, owed J$20,000.00 after paying J$12,700.00 in cash, and the balance is written out of the trade debtors account and charged as a loss of the month, which is both honest and necessary - an amount that will never be collected is not an asset. The fourth is the adjustment for the insurance premium: J$48,000.00 was paid on 3 September for the whole year to 31 August 2024, so eleven months of it, J$44,000.00, is not a cost of September and is transferred to a prepaid insurance account to be carried forward. Each entry carries a narration, so that anyone reading the books months later can see why the entry was made, which is the whole purpose of the journal. The totals of the debit and credit columns are equal at J$72,500.00, as they must be.",
+        "table": {
+          "caption": "General journal for September 2023 (J$)",
+          "columns": [
+            "Date",
+            "Voucher",
+            "Narration and reason",
+            "Debit",
+            "Credit"
+          ],
+          "rows": [
+            [
+              "30 Sep",
+              "Journal voucher JV-1",
+              "A. Brown has left the district; the J$20,000 balance owing on invoice 105 is written off as a bad debt",
+              "Dr Bad debts 20,000.00",
+              "Cr Trade debtors 20,000.00"
+            ],
+            [
+              "30 Sep",
+              "Journal voucher JV-2",
+              "Depreciation for September on fixtures and fittings, at 10 per cent a year",
+              "Dr Depreciation 1,500.00",
+              "Cr Accumulated depreciation - fixtures and fittings 1,500.00"
+            ],
+            [
+              "30 Sep",
+              "Journal voucher JV-2",
+              "Depreciation for September on the motor vehicle, at 20 per cent a year",
+              "Dr Depreciation 7,000.00",
+              "Cr Accumulated depreciation - motor vehicle 7,000.00"
+            ],
+            [
+              "30 Sep",
+              "Journal voucher JV-3",
+              "Eleven months of the insurance premium paid on 3 September belongs to the next period and is carried forward as a prepayment",
+              "Dr Prepaid insurance 44,000.00",
+              "Cr Insurance 44,000.00"
+            ],
+            [
+              "30 Sep",
+              "-",
+              "TOTALS of the general journal",
+              "72,500.00",
+              "72,500.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Ledgers: the posting method used, and the folio system",
+        "body": "Every entry in the books of original entry was posted to the ledger, some of it daily and some of it in totals, and the folio column in the tables that follow shows where each entry came from so that any figure can be traced back to its document. Postings were made in the way the double-entry system requires. Each credit sale was posted daily to the debit of the customer's account and the sales journal total of J$516,500.00 was posted to the credit of the sales account. Each credit purchase was posted daily to the credit of the supplier's account and the total of J$833,000.00 to the debit of the purchases account. Credit notes were posted daily to the debit of the customers' accounts and the sales returns total of J$25,500.00 to the debit of the sales returns account; debit notes were posted daily to the debit of the suppliers' accounts and the total of J$22,000.00 to the credit of the purchases returns account. The cash book was posted as it was written up: the cash and bank columns go to the accounts of the same names, and the two memorandum discount columns go to the discount allowed and discount received accounts. The general journal's four entries were posted to the accounts named in each narration. Two control points were used to keep the personal ledgers honest: the list of balances owed by the four credit customers agrees with the trade debtors account (J$18,400.00 after the bad debt), and the list of balances owed to the two suppliers agrees with the trade creditors account (J$290,500.00). Every account in the ledger is shown with its entries, its balance carried down and the totals of its two sides, which agree for every account.",
+        "table": {
+          "caption": "Where each book was posted, and the folio references used",
+          "columns": [
+            "Book of original entry",
+            "Posted daily to",
+            "Posted in total to",
+            "Folio used in the ledger"
+          ],
+          "rows": [
+            [
+              "Sales journal",
+              "Debit of each customer's account in the sales ledger",
+              "Credit of the sales account, J$516,500.00",
+              "SJ1"
+            ],
+            [
+              "Purchases journal",
+              "Credit of each supplier's account in the purchases ledger",
+              "Debit of the purchases account, J$833,000.00",
+              "PJ1"
+            ],
+            [
+              "Sales returns journal",
+              "Debit of each customer's account",
+              "Debit of the sales returns account, J$25,500.00",
+              "SRJ1"
+            ],
+            [
+              "Purchases returns journal",
+              "Debit of each supplier's account",
+              "Credit of the purchases returns account, J$22,000.00",
+              "PRJ1"
+            ],
+            [
+              "Cash book - cash and bank columns",
+              "The cash account and the bank account, on the side the money moved",
+              "The same accounts; the book itself holds the balances",
+              "CB1 to CB31"
+            ],
+            [
+              "Cash book - discount columns (memorandum)",
+              "Discount allowed account (debit) and discount received account (credit)",
+              "The same accounts",
+              "CB entries"
+            ],
+            [
+              "General journal",
+              "The accounts named in each narration",
+              "The same accounts",
+              "GJ1"
+            ],
+            [
+              "Closing stock (physical count)",
+              "Not a book entry: stated in the income statement and in the statement of financial position",
+              "J$78,500.00",
+              "-"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Ledgers: capital, drawings, cash and bank accounts",
+        "body": "These four accounts show the owner's stake in the business and the money it holds. The capital account begins with J$680,000.00 and is increased by the J$45,000.00 the owner paid in on 1 September, giving J$725,000.00 before the month's profit and the drawings are taken into account. The drawings account stands at J$40,000.00 for the month: the owner took that amount by cheque, which is not an expense of the business but a reduction of her capital, and that is why it appears in the statement of financial position as a deduction and not in the income statement. The cash account is the shop tin. It takes in the capital introduced, the counter takings and the vendor's cash payment, and pays out the market purchases, the weekly wages and the carriage inwards, with the two bankings moving money out of the tin and one withdrawal moving money back in. It closes at J$28,200.00, which is the float the owner keeps for change. The bank account is the busier of the two: it receives the cheques from the credit customers and the two bankings, and it pays twelve cheques in the month. It closes at J$566,250.00.",
+        "table": {
+          "caption": "General ledger: capital, drawings, cash and bank accounts (J$)",
+          "columns": [
+            "Account",
+            "Date",
+            "Particulars",
+            "Folio",
+            "Debit",
+            "Credit"
+          ],
+          "rows": [
+            [
+              "Capital",
+              "1 Sep",
+              "By Balance b/d",
+              "Bal",
+              "-",
+              "680,000.00"
+            ],
+            [
+              "Capital",
+              "1 Sep",
+              "By Bank",
+              "CB1",
+              "-",
+              "45,000.00"
+            ],
+            [
+              "Capital",
+              "30 Sep",
+              "To Balance c/d",
+              "-",
+              "725,000.00",
+              "-"
+            ],
+            [
+              "Capital",
+              "30 Sep",
+              "TOTALS Capital",
+              "-",
+              "725,000.00",
+              "725,000.00"
+            ],
+            [
+              "Drawings",
+              "1 Sep",
+              "To Bank",
+              "CB2",
+              "40,000.00",
+              "-"
+            ],
+            [
+              "Drawings",
+              "30 Sep",
+              "By Balance c/d",
+              "-",
+              "-",
+              "40,000.00"
+            ],
+            [
+              "Drawings",
+              "30 Sep",
+              "TOTALS Drawings",
+              "-",
+              "40,000.00",
+              "40,000.00"
+            ],
+            [
+              "Cash",
+              "1 Sep",
+              "To Balance b/d",
+              "Bal",
+              "25,000.00",
+              "-"
+            ],
+            [
+              "Cash",
+              "2 Sep",
+              "To Sales",
+              "CB3",
+              "150,800.00",
+              "-"
+            ],
+            [
+              "Cash",
+              "8 Sep",
+              "To Sales",
+              "CB4",
+              "134,500.00",
+              "-"
+            ],
+            [
+              "Cash",
+              "15 Sep",
+              "To Sales",
+              "CB5",
+              "172,600.00",
+              "-"
+            ],
+            [
+              "Cash",
+              "22 Sep",
+              "To Sales",
+              "CB6",
+              "121,300.00",
+              "-"
+            ],
+            [
+              "Cash",
+              "29 Sep",
+              "To Sales",
+              "CB7",
+              "164,800.00",
+              "-"
+            ],
+            [
+              "Cash",
+              "6 Sep",
+              "By Purchases",
+              "CB8",
+              "-",
+              "105,400.00"
+            ],
+            [
+              "Cash",
+              "20 Sep",
+              "By Purchases",
+              "CB9",
+              "-",
+              "85,300.00"
+            ],
+            [
+              "Cash",
+              "9 Sep",
+              "By Bank",
+              "CB10",
+              "-",
+              "270,000.00"
+            ],
+            [
+              "Cash",
+              "23 Sep",
+              "By Bank",
+              "CB11",
+              "-",
+              "270,000.00"
+            ],
+            [
+              "Cash",
+              "22 Sep",
+              "To Bank",
+              "CB12",
+              "20,000.00",
+              "-"
+            ],
+            [
+              "Cash",
+              "30 Sep",
+              "To Trade debtors",
+              "CB16",
+              "12,700.00",
+              "-"
+            ],
+            [
+              "Cash",
+              "6 Sep",
+              "By Wages",
+              "CB19",
+              "-",
+              "9,000.00"
+            ],
+            [
+              "Cash",
+              "13 Sep",
+              "By Wages",
+              "CB20",
+              "-",
+              "9,000.00"
+            ],
+            [
+              "Cash",
+              "20 Sep",
+              "By Wages",
+              "CB21",
+              "-",
+              "9,000.00"
+            ],
+            [
+              "Cash",
+              "27 Sep",
+              "By Wages",
+              "CB22",
+              "-",
+              "9,000.00"
+            ],
+            [
+              "Cash",
+              "18 Sep",
+              "By Carriage inwards",
+              "CB31",
+              "-",
+              "6,800.00"
+            ],
+            [
+              "Cash",
+              "30 Sep",
+              "By Balance c/d",
+              "-",
+              "-",
+              "28,200.00"
+            ],
+            [
+              "Cash",
+              "30 Sep",
+              "TOTALS Cash",
+              "-",
+              "801,700.00",
+              "801,700.00"
+            ],
+            [
+              "Bank",
+              "1 Sep",
+              "To Balance b/d",
+              "Bal",
+              "260,000.00",
+              "-"
+            ],
+            [
+              "Bank",
+              "1 Sep",
+              "To Capital",
+              "CB1",
+              "45,000.00",
+              "-"
+            ],
+            [
+              "Bank",
+              "1 Sep",
+              "By Drawings",
+              "CB2",
+              "-",
+              "40,000.00"
+            ],
+            [
+              "Bank",
+              "9 Sep",
+              "To Cash",
+              "CB10",
+              "270,000.00",
+              "-"
+            ],
+            [
+              "Bank",
+              "23 Sep",
+              "To Cash",
+              "CB11",
+              "270,000.00",
+              "-"
+            ],
+            [
+              "Bank",
+              "22 Sep",
+              "By Cash",
+              "CB12",
+              "-",
+              "20,000.00"
+            ],
+            [
+              "Bank",
+              "20 Sep",
+              "To Discount allowed and Trade debtors",
+              "CB13",
+              "160,000.00",
+              "-"
+            ],
+            [
+              "Bank",
+              "28 Sep",
+              "To Trade debtors",
+              "CB14",
+              "138,900.00",
+              "-"
+            ],
+            [
+              "Bank",
+              "29 Sep",
+              "To Discount allowed and Trade debtors",
+              "CB15",
+              "130,000.00",
+              "-"
+            ],
+            [
+              "Bank",
+              "17 Sep",
+              "By Trade creditors and Discount received",
+              "CB17",
+              "-",
+              "225,000.00"
+            ],
+            [
+              "Bank",
+              "30 Sep",
+              "By Trade creditors and Discount received",
+              "CB18",
+              "-",
+              "280,000.00"
+            ],
+            [
+              "Bank",
+              "1 Sep",
+              "By Rent",
+              "CB23",
+              "-",
+              "25,000.00"
+            ],
+            [
+              "Bank",
+              "7 Sep",
+              "By Motor expenses",
+              "CB24",
+              "-",
+              "24,600.00"
+            ],
+            [
+              "Bank",
+              "21 Sep",
+              "By Motor expenses",
+              "CB25",
+              "-",
+              "19,800.00"
+            ],
+            [
+              "Bank",
+              "5 Sep",
+              "By Telephone and internet",
+              "CB26",
+              "-",
+              "8,400.00"
+            ],
+            [
+              "Bank",
+              "25 Sep",
+              "By Telephone and internet",
+              "CB27",
+              "-",
+              "7,900.00"
+            ],
+            [
+              "Bank",
+              "3 Sep",
+              "By Insurance",
+              "CB28",
+              "-",
+              "48,000.00"
+            ],
+            [
+              "Bank",
+              "30 Sep",
+              "By Bank charges",
+              "CB29",
+              "-",
+              "1,450.00"
+            ],
+            [
+              "Bank",
+              "23 Sep",
+              "By Carriage outwards",
+              "CB30",
+              "-",
+              "7,500.00"
+            ],
+            [
+              "Bank",
+              "30 Sep",
+              "By Balance c/d",
+              "-",
+              "-",
+              "566,250.00"
+            ],
+            [
+              "Bank",
+              "30 Sep",
+              "TOTALS Bank",
+              "-",
+              "1,273,900.00",
+              "1,273,900.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Ledgers: the personal accounts - trade debtors",
+        "body": "The personal accounts are what the owner actually needs from the books, and they are the part she can already understand, having kept a list of amounts owing in her exercise book. Four customers bought on credit in September. Sunny Side Cafe took J$197,100.00 of goods, returned J$15,800.00, paid J$160,000.00 and was allowed J$6,000.00 of discount, leaving J$15,300.00 owing; Village Basic School took J$147,800.00, returned J$9,700.00, paid J$130,000.00 and was allowed J$5,000.00, leaving J$3,100.00; and Friar's Hill Guest House paid its J$138,900.00 invoice in full, so its account is clear. The fourth account is the one that matters for the analysis: A. Brown took J$32,700.00 of goods, paid J$12,700.00 and the remaining J$20,000.00 was written off, and his account now balances at nil. The four balances that remain owing come to J$18,400.00, which agrees exactly with the trade debtors account in the general ledger - the check that proves the personal ledger has been posted correctly.",
+        "table": {
+          "caption": "Sales ledger: the four credit customers of September 2023 (J$)",
+          "columns": [
+            "Customer",
+            "Date",
+            "Particulars",
+            "Folio",
+            "Debit",
+            "Credit"
+          ],
+          "rows": [
+            [
+              "Sunny Side Cafe",
+              "3 Sep",
+              "To Sales (invoice)",
+              "SJ1",
+              "92,500.00",
+              "-"
+            ],
+            [
+              "Sunny Side Cafe",
+              "12 Sep",
+              "To Sales (invoice)",
+              "SJ1",
+              "104,600.00",
+              "-"
+            ],
+            [
+              "Sunny Side Cafe",
+              "13 Sep",
+              "By Sales returns",
+              "SRJ1",
+              "-",
+              "15,800.00"
+            ],
+            [
+              "Sunny Side Cafe",
+              "20 Sep",
+              "By Bank and Discount allowed",
+              "CB13",
+              "-",
+              "166,000.00"
+            ],
+            [
+              "Sunny Side Cafe",
+              "30 Sep",
+              "Balance c/d",
+              "-",
+              "-",
+              "15,300.00"
+            ],
+            [
+              "Village Basic School",
+              "5 Sep",
+              "To Sales (invoice)",
+              "SJ1",
+              "68,400.00",
+              "-"
+            ],
+            [
+              "Village Basic School",
+              "26 Sep",
+              "To Sales (invoice)",
+              "SJ1",
+              "79,400.00",
+              "-"
+            ],
+            [
+              "Village Basic School",
+              "27 Sep",
+              "By Sales returns",
+              "SRJ1",
+              "-",
+              "9,700.00"
+            ],
+            [
+              "Village Basic School",
+              "29 Sep",
+              "By Bank and Discount allowed",
+              "CB15",
+              "-",
+              "135,000.00"
+            ],
+            [
+              "Village Basic School",
+              "30 Sep",
+              "Balance c/d",
+              "-",
+              "-",
+              "3,100.00"
+            ],
+            [
+              "Friar's Hill Guest House",
+              "19 Sep",
+              "To Sales (invoice)",
+              "SJ1",
+              "138,900.00",
+              "-"
+            ],
+            [
+              "Friar's Hill Guest House",
+              "28 Sep",
+              "By Bank",
+              "CB14",
+              "-",
+              "138,900.00"
+            ],
+            [
+              "Friar's Hill Guest House",
+              "30 Sep",
+              "Balance c/d",
+              "-",
+              "-",
+              "-"
+            ],
+            [
+              "A. Brown, market vendor",
+              "24 Sep",
+              "To Sales (invoice)",
+              "SJ1",
+              "32,700.00",
+              "-"
+            ],
+            [
+              "A. Brown, market vendor",
+              "30 Sep",
+              "By Cash",
+              "CB16",
+              "-",
+              "12,700.00"
+            ],
+            [
+              "A. Brown, market vendor",
+              "30 Sep",
+              "By Bad debts",
+              "GJ1",
+              "-",
+              "20,000.00"
+            ],
+            [
+              "A. Brown, market vendor",
+              "30 Sep",
+              "Balance c/d",
+              "-",
+              "-",
+              "-"
+            ],
+            [
+              "Total of the balances owing at 30 September, agreeing with the trade debtors account",
+              "-",
+              "-",
+              "-",
+              "-",
+              "18,400.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Ledgers: the personal accounts - trade creditors",
+        "body": "Two suppliers sold to the business on credit and the two accounts are set out below. FreshCo Wholesale supplied J$534,400.00 of goods, took back J$13,000.00 and was paid J$225,000.00 with J$7,000.00 of discount, so it is owed J$289,400.00 at the end of the month. Agro Supplies Ltd supplied J$298,600.00, took back J$9,000.00 and was paid J$280,000.00 with J$8,500.00 of discount, and J$1,100.00 is still owing on the last invoice. The two balances total J$290,500.00 and agree with the trade creditors account in the general ledger. This is the figure to watch: it is nearly twice the money the business holds in the bank, and it is the reason the analysis recommends that the owner pay suppliers within the discount period rather than leaving the money idle in the bank.",
+        "table": {
+          "caption": "Purchases ledger: the two credit suppliers of September 2023 (J$)",
+          "columns": [
+            "Supplier",
+            "Date",
+            "Particulars",
+            "Folio",
+            "Debit",
+            "Credit"
+          ],
+          "rows": [
+            [
+              "FreshCo Wholesale",
+              "4 Sep",
+              "By Purchases (invoice)",
+              "PJ1",
+              "-",
+              "245,000.00"
+            ],
+            [
+              "FreshCo Wholesale",
+              "18 Sep",
+              "By Purchases (invoice)",
+              "PJ1",
+              "-",
+              "289,400.00"
+            ],
+            [
+              "FreshCo Wholesale",
+              "14 Sep",
+              "To Purchases returns",
+              "PRJ1",
+              "13,000.00",
+              "-"
+            ],
+            [
+              "FreshCo Wholesale",
+              "17 Sep",
+              "To Bank and Discount received",
+              "CB17",
+              "232,000.00",
+              "-"
+            ],
+            [
+              "FreshCo Wholesale",
+              "30 Sep",
+              "Balance c/d",
+              "-",
+              "289,400.00",
+              "-"
+            ],
+            [
+              "Agro Supplies Ltd",
+              "11 Sep",
+              "By Purchases (invoice)",
+              "PJ1",
+              "-",
+              "148,600.00"
+            ],
+            [
+              "Agro Supplies Ltd",
+              "25 Sep",
+              "By Purchases (invoice)",
+              "PJ1",
+              "-",
+              "150,000.00"
+            ],
+            [
+              "Agro Supplies Ltd",
+              "28 Sep",
+              "To Purchases returns",
+              "PRJ1",
+              "9,000.00",
+              "-"
+            ],
+            [
+              "Agro Supplies Ltd",
+              "30 Sep",
+              "To Bank and Discount received",
+              "CB18",
+              "288,500.00",
+              "-"
+            ],
+            [
+              "Agro Supplies Ltd",
+              "30 Sep",
+              "Balance c/d",
+              "-",
+              "1,100.00",
+              "-"
+            ],
+            [
+              "Total owed to suppliers at 30 September, agreeing with the trade creditors account",
+              "-",
+              "-",
+              "-",
+              "-",
+              "290,500.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Ledgers: sales, purchases, returns and carriage accounts",
+        "body": "The trading accounts collect the month's buying and selling. Sales stands at J$1,260,500.00 before returns, made up of J$744,000.00 over the counter and J$516,500.00 on credit, and sales returns of J$25,500.00 reduces it to J$1,235,000.00. Purchases stands at J$1,023,700.00 before returns, of which J$833,000.00 was bought on credit and J$190,700.00 for cash at the market, and purchases returns of J$22,000.00 brings it down to J$1,001,700.00. Carriage inwards of J$6,800.00 is part of the cost of the goods bought, because it was paid to bring them into the shop, so it is added in working out cost of sales; carriage outwards of J$7,500.00 is a selling expense, because it was paid to take goods out to a customer, so it belongs with the other expenses in the income statement. With the opening stock of J$95,000.00 and the closing stock of J$78,500.00, the cost of sales comes to J$1,025,000.00 and the gross profit to J$210,000.00.",
+        "table": {
+          "caption": "General ledger: trading accounts, September 2023 (J$)",
+          "columns": [
+            "Account",
+            "Date",
+            "Particulars",
+            "Folio",
+            "Debit",
+            "Credit"
+          ],
+          "rows": [
+            [
+              "Sales",
+              "2 Sep",
+              "By Cash",
+              "CB3",
+              "-",
+              "150,800.00"
+            ],
+            [
+              "Sales",
+              "8 Sep",
+              "By Cash",
+              "CB4",
+              "-",
+              "134,500.00"
+            ],
+            [
+              "Sales",
+              "15 Sep",
+              "By Cash",
+              "CB5",
+              "-",
+              "172,600.00"
+            ],
+            [
+              "Sales",
+              "22 Sep",
+              "By Cash",
+              "CB6",
+              "-",
+              "121,300.00"
+            ],
+            [
+              "Sales",
+              "29 Sep",
+              "By Cash",
+              "CB7",
+              "-",
+              "164,800.00"
+            ],
+            [
+              "Sales",
+              "3 Sep",
+              "By Trade debtors",
+              "SJ1",
+              "-",
+              "92,500.00"
+            ],
+            [
+              "Sales",
+              "5 Sep",
+              "By Trade debtors",
+              "SJ1",
+              "-",
+              "68,400.00"
+            ],
+            [
+              "Sales",
+              "12 Sep",
+              "By Trade debtors",
+              "SJ1",
+              "-",
+              "104,600.00"
+            ],
+            [
+              "Sales",
+              "19 Sep",
+              "By Trade debtors",
+              "SJ1",
+              "-",
+              "138,900.00"
+            ],
+            [
+              "Sales",
+              "24 Sep",
+              "By Trade debtors",
+              "SJ1",
+              "-",
+              "32,700.00"
+            ],
+            [
+              "Sales",
+              "26 Sep",
+              "By Trade debtors",
+              "SJ1",
+              "-",
+              "79,400.00"
+            ],
+            [
+              "Sales",
+              "30 Sep",
+              "To Balance c/d",
+              "-",
+              "1,260,500.00",
+              "-"
+            ],
+            [
+              "Sales",
+              "30 Sep",
+              "TOTALS Sales",
+              "-",
+              "1,260,500.00",
+              "1,260,500.00"
+            ],
+            [
+              "Sales returns",
+              "13 Sep",
+              "To Trade debtors",
+              "SRJ1",
+              "15,800.00",
+              "-"
+            ],
+            [
+              "Sales returns",
+              "27 Sep",
+              "To Trade debtors",
+              "SRJ1",
+              "9,700.00",
+              "-"
+            ],
+            [
+              "Sales returns",
+              "30 Sep",
+              "By Balance c/d",
+              "-",
+              "-",
+              "25,500.00"
+            ],
+            [
+              "Sales returns",
+              "30 Sep",
+              "TOTALS Sales returns",
+              "-",
+              "25,500.00",
+              "25,500.00"
+            ],
+            [
+              "Purchases",
+              "4 Sep",
+              "To Trade creditors",
+              "PJ1",
+              "245,000.00",
+              "-"
+            ],
+            [
+              "Purchases",
+              "11 Sep",
+              "To Trade creditors",
+              "PJ1",
+              "148,600.00",
+              "-"
+            ],
+            [
+              "Purchases",
+              "18 Sep",
+              "To Trade creditors",
+              "PJ1",
+              "289,400.00",
+              "-"
+            ],
+            [
+              "Purchases",
+              "25 Sep",
+              "To Trade creditors",
+              "PJ1",
+              "150,000.00",
+              "-"
+            ],
+            [
+              "Purchases",
+              "6 Sep",
+              "To Cash",
+              "CB8",
+              "105,400.00",
+              "-"
+            ],
+            [
+              "Purchases",
+              "20 Sep",
+              "To Cash",
+              "CB9",
+              "85,300.00",
+              "-"
+            ],
+            [
+              "Purchases",
+              "30 Sep",
+              "By Balance c/d",
+              "-",
+              "-",
+              "1,023,700.00"
+            ],
+            [
+              "Purchases",
+              "30 Sep",
+              "TOTALS Purchases",
+              "-",
+              "1,023,700.00",
+              "1,023,700.00"
+            ],
+            [
+              "Purchases returns",
+              "14 Sep",
+              "By Trade creditors",
+              "PRJ1",
+              "-",
+              "13,000.00"
+            ],
+            [
+              "Purchases returns",
+              "28 Sep",
+              "By Trade creditors",
+              "PRJ1",
+              "-",
+              "9,000.00"
+            ],
+            [
+              "Purchases returns",
+              "30 Sep",
+              "To Balance c/d",
+              "-",
+              "22,000.00",
+              "-"
+            ],
+            [
+              "Purchases returns",
+              "30 Sep",
+              "TOTALS Purchases returns",
+              "-",
+              "22,000.00",
+              "22,000.00"
+            ],
+            [
+              "Carriage inwards",
+              "18 Sep",
+              "To Cash",
+              "CB31",
+              "6,800.00",
+              "-"
+            ],
+            [
+              "Carriage inwards",
+              "30 Sep",
+              "By Balance c/d",
+              "-",
+              "-",
+              "6,800.00"
+            ],
+            [
+              "Carriage inwards",
+              "30 Sep",
+              "TOTALS Carriage inwards",
+              "-",
+              "6,800.00",
+              "6,800.00"
+            ],
+            [
+              "Carriage outwards",
+              "23 Sep",
+              "To Bank",
+              "CB30",
+              "7,500.00",
+              "-"
+            ],
+            [
+              "Carriage outwards",
+              "30 Sep",
+              "By Balance c/d",
+              "-",
+              "-",
+              "7,500.00"
+            ],
+            [
+              "Carriage outwards",
+              "30 Sep",
+              "TOTALS Carriage outwards",
+              "-",
+              "7,500.00",
+              "7,500.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Ledgers: the expense accounts",
+        "body": "Ten expense accounts were written up in September and together they come to J$174,150.00, which is 14.1 per cent of net sales. Two of them need a word of explanation because they are not just payments. The insurance account received the whole J$48,000.00 premium when the cheque was written, and then the general journal took out the J$44,000.00 belonging to the next eleven months, so what remains as a charge for September is J$4,000.00. The depreciation account was never paid to anybody: it is the way the books spread the cost of the fixtures and the van over the periods that use them, J$1,500.00 for the fixtures at 10 per cent a year and J$7,000.00 for the van at 20 per cent a year. The discount accounts are kept in the expense and income group as well: discount allowed of J$11,000.00 is a cost of collecting debts early and discount received of J$15,500.00 is income earned by paying creditors early. The one to keep an eye on is the bad debts account at J$20,000.00, which is a single customer's unpaid invoice and is the largest avoidable loss in the month's figures.",
+        "table": {
+          "caption": "General ledger: expense and discount accounts, September 2023 (J$)",
+          "columns": [
+            "Account",
+            "Date",
+            "Particulars",
+            "Folio",
+            "Debit",
+            "Credit"
+          ],
+          "rows": [
+            [
+              "Wages",
+              "6 Sep",
+              "To Cash",
+              "CB19",
+              "9,000.00",
+              "-"
+            ],
+            [
+              "Wages",
+              "13 Sep",
+              "To Cash",
+              "CB20",
+              "9,000.00",
+              "-"
+            ],
+            [
+              "Wages",
+              "20 Sep",
+              "To Cash",
+              "CB21",
+              "9,000.00",
+              "-"
+            ],
+            [
+              "Wages",
+              "27 Sep",
+              "To Cash",
+              "CB22",
+              "9,000.00",
+              "-"
+            ],
+            [
+              "Wages",
+              "30 Sep",
+              "By Balance c/d",
+              "-",
+              "-",
+              "36,000.00"
+            ],
+            [
+              "Wages",
+              "30 Sep",
+              "TOTALS Wages",
+              "-",
+              "36,000.00",
+              "36,000.00"
+            ],
+            [
+              "Rent",
+              "1 Sep",
+              "To Bank",
+              "CB23",
+              "25,000.00",
+              "-"
+            ],
+            [
+              "Rent",
+              "30 Sep",
+              "By Balance c/d",
+              "-",
+              "-",
+              "25,000.00"
+            ],
+            [
+              "Rent",
+              "30 Sep",
+              "TOTALS Rent",
+              "-",
+              "25,000.00",
+              "25,000.00"
+            ],
+            [
+              "Motor expenses",
+              "7 Sep",
+              "To Bank",
+              "CB24",
+              "24,600.00",
+              "-"
+            ],
+            [
+              "Motor expenses",
+              "21 Sep",
+              "To Bank",
+              "CB25",
+              "19,800.00",
+              "-"
+            ],
+            [
+              "Motor expenses",
+              "30 Sep",
+              "By Balance c/d",
+              "-",
+              "-",
+              "44,400.00"
+            ],
+            [
+              "Motor expenses",
+              "30 Sep",
+              "TOTALS Motor expenses",
+              "-",
+              "44,400.00",
+              "44,400.00"
+            ],
+            [
+              "Telephone and internet",
+              "5 Sep",
+              "To Bank",
+              "CB26",
+              "8,400.00",
+              "-"
+            ],
+            [
+              "Telephone and internet",
+              "25 Sep",
+              "To Bank",
+              "CB27",
+              "7,900.00",
+              "-"
+            ],
+            [
+              "Telephone and internet",
+              "30 Sep",
+              "By Balance c/d",
+              "-",
+              "-",
+              "16,300.00"
+            ],
+            [
+              "Telephone and internet",
+              "30 Sep",
+              "TOTALS Telephone and internet",
+              "-",
+              "16,300.00",
+              "16,300.00"
+            ],
+            [
+              "Insurance",
+              "3 Sep",
+              "To Bank",
+              "CB28",
+              "48,000.00",
+              "-"
+            ],
+            [
+              "Insurance",
+              "30 Sep",
+              "By Prepaid insurance",
+              "GJ1",
+              "-",
+              "44,000.00"
+            ],
+            [
+              "Insurance",
+              "30 Sep",
+              "By Balance c/d",
+              "-",
+              "-",
+              "4,000.00"
+            ],
+            [
+              "Insurance",
+              "30 Sep",
+              "TOTALS Insurance",
+              "-",
+              "48,000.00",
+              "48,000.00"
+            ],
+            [
+              "Carriage outwards",
+              "23 Sep",
+              "To Bank",
+              "CB30",
+              "7,500.00",
+              "-"
+            ],
+            [
+              "Carriage outwards",
+              "30 Sep",
+              "By Balance c/d",
+              "-",
+              "-",
+              "7,500.00"
+            ],
+            [
+              "Carriage outwards",
+              "30 Sep",
+              "TOTALS Carriage outwards",
+              "-",
+              "7,500.00",
+              "7,500.00"
+            ],
+            [
+              "Bank charges",
+              "30 Sep",
+              "To Bank",
+              "CB29",
+              "1,450.00",
+              "-"
+            ],
+            [
+              "Bank charges",
+              "30 Sep",
+              "By Balance c/d",
+              "-",
+              "-",
+              "1,450.00"
+            ],
+            [
+              "Bank charges",
+              "30 Sep",
+              "TOTALS Bank charges",
+              "-",
+              "1,450.00",
+              "1,450.00"
+            ],
+            [
+              "Discount allowed",
+              "20 Sep",
+              "To Bank and Trade debtors",
+              "CB13",
+              "6,000.00",
+              "-"
+            ],
+            [
+              "Discount allowed",
+              "29 Sep",
+              "To Bank and Trade debtors",
+              "CB15",
+              "5,000.00",
+              "-"
+            ],
+            [
+              "Discount allowed",
+              "30 Sep",
+              "By Balance c/d",
+              "-",
+              "-",
+              "11,000.00"
+            ],
+            [
+              "Discount allowed",
+              "30 Sep",
+              "TOTALS Discount allowed",
+              "-",
+              "11,000.00",
+              "11,000.00"
+            ],
+            [
+              "Bad debts",
+              "30 Sep",
+              "To Trade debtors",
+              "GJ1",
+              "20,000.00",
+              "-"
+            ],
+            [
+              "Bad debts",
+              "30 Sep",
+              "By Balance c/d",
+              "-",
+              "-",
+              "20,000.00"
+            ],
+            [
+              "Bad debts",
+              "30 Sep",
+              "TOTALS Bad debts",
+              "-",
+              "20,000.00",
+              "20,000.00"
+            ],
+            [
+              "Depreciation",
+              "30 Sep",
+              "To Accumulated depreciation - fixtures and fittings",
+              "GJ1",
+              "1,500.00",
+              "-"
+            ],
+            [
+              "Depreciation",
+              "30 Sep",
+              "To Accumulated depreciation - motor vehicle",
+              "GJ1",
+              "7,000.00",
+              "-"
+            ],
+            [
+              "Depreciation",
+              "30 Sep",
+              "By Balance c/d",
+              "-",
+              "-",
+              "8,500.00"
+            ],
+            [
+              "Depreciation",
+              "30 Sep",
+              "TOTALS Depreciation",
+              "-",
+              "8,500.00",
+              "8,500.00"
+            ],
+            [
+              "Discount received",
+              "17 Sep",
+              "By Trade creditors and Bank",
+              "CB17",
+              "-",
+              "7,000.00"
+            ],
+            [
+              "Discount received",
+              "30 Sep",
+              "By Trade creditors and Bank",
+              "CB18",
+              "-",
+              "8,500.00"
+            ],
+            [
+              "Discount received",
+              "30 Sep",
+              "To Balance c/d",
+              "-",
+              "15,500.00",
+              "-"
+            ],
+            [
+              "Discount received",
+              "30 Sep",
+              "TOTALS Discount received",
+              "-",
+              "15,500.00",
+              "15,500.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Ledgers: the asset, liability and depreciation accounts",
+        "body": "The remaining accounts hold the business's possessions and what it owes. The fixtures and fittings stand at their cost of J$180,000.00 and the motor vehicle at J$420,000.00, both carried down at cost, with the two accumulated depreciation accounts holding the amounts written off so far: J$1,500.00 on the fixtures and J$7,000.00 on the van. Showing the cost of an asset in one account and the depreciation in another is what allows the books to show both what the van cost and how much of it has been used up, which is the figure that belongs in the statement of financial position. The opening inventory account carries the J$95,000.00 of stock the business began with, which will be used up in working out cost of sales, while the closing stock of J$78,500.00 counted on 30 September is a balance carried forward rather than a book entry. The prepaid insurance account holds J$44,000.00 that belongs to the next period, and the loan account stands at J$300,000.00 from the opening position, unchanged this month because neither interest nor repayments fall due in September.",
+        "table": {
+          "caption": "General ledger: asset, liability and depreciation accounts, September 2023 (J$)",
+          "columns": [
+            "Account",
+            "Date",
+            "Particulars",
+            "Folio",
+            "Debit",
+            "Credit"
+          ],
+          "rows": [
+            [
+              "Fixtures and fittings",
+              "1 Sep",
+              "To Balance b/d",
+              "Bal",
+              "180,000.00",
+              "-"
+            ],
+            [
+              "Fixtures and fittings",
+              "30 Sep",
+              "By Balance c/d",
+              "-",
+              "-",
+              "180,000.00"
+            ],
+            [
+              "Fixtures and fittings",
+              "30 Sep",
+              "TOTALS Fixtures and fittings",
+              "-",
+              "180,000.00",
+              "180,000.00"
+            ],
+            [
+              "Motor vehicle",
+              "1 Sep",
+              "To Balance b/d",
+              "Bal",
+              "420,000.00",
+              "-"
+            ],
+            [
+              "Motor vehicle",
+              "30 Sep",
+              "By Balance c/d",
+              "-",
+              "-",
+              "420,000.00"
+            ],
+            [
+              "Motor vehicle",
+              "30 Sep",
+              "TOTALS Motor vehicle",
+              "-",
+              "420,000.00",
+              "420,000.00"
+            ],
+            [
+              "Accumulated depreciation - fixtures and fittings",
+              "30 Sep",
+              "By Depreciation",
+              "GJ1",
+              "-",
+              "1,500.00"
+            ],
+            [
+              "Accumulated depreciation - fixtures and fittings",
+              "30 Sep",
+              "To Balance c/d",
+              "-",
+              "1,500.00",
+              "-"
+            ],
+            [
+              "Accumulated depreciation - fixtures and fittings",
+              "30 Sep",
+              "TOTALS Accumulated depreciation - fixtures and fittings",
+              "-",
+              "1,500.00",
+              "1,500.00"
+            ],
+            [
+              "Accumulated depreciation - motor vehicle",
+              "30 Sep",
+              "By Depreciation",
+              "GJ1",
+              "-",
+              "7,000.00"
+            ],
+            [
+              "Accumulated depreciation - motor vehicle",
+              "30 Sep",
+              "To Balance c/d",
+              "-",
+              "7,000.00",
+              "-"
+            ],
+            [
+              "Accumulated depreciation - motor vehicle",
+              "30 Sep",
+              "TOTALS Accumulated depreciation - motor vehicle",
+              "-",
+              "7,000.00",
+              "7,000.00"
+            ],
+            [
+              "Inventory (opening)",
+              "1 Sep",
+              "To Balance b/d",
+              "Bal",
+              "95,000.00",
+              "-"
+            ],
+            [
+              "Inventory (opening)",
+              "30 Sep",
+              "By Balance c/d",
+              "-",
+              "-",
+              "95,000.00"
+            ],
+            [
+              "Inventory (opening)",
+              "30 Sep",
+              "TOTALS Inventory (opening)",
+              "-",
+              "95,000.00",
+              "95,000.00"
+            ],
+            [
+              "Prepaid insurance",
+              "30 Sep",
+              "To Insurance",
+              "GJ1",
+              "44,000.00",
+              "-"
+            ],
+            [
+              "Prepaid insurance",
+              "30 Sep",
+              "By Balance c/d",
+              "-",
+              "-",
+              "44,000.00"
+            ],
+            [
+              "Prepaid insurance",
+              "30 Sep",
+              "TOTALS Prepaid insurance",
+              "-",
+              "44,000.00",
+              "44,000.00"
+            ],
+            [
+              "Trade debtors",
+              "3 Sep",
+              "To Sales",
+              "SJ1",
+              "92,500.00",
+              "-"
+            ],
+            [
+              "Trade debtors",
+              "5 Sep",
+              "To Sales",
+              "SJ1",
+              "68,400.00",
+              "-"
+            ],
+            [
+              "Trade debtors",
+              "12 Sep",
+              "To Sales",
+              "SJ1",
+              "104,600.00",
+              "-"
+            ],
+            [
+              "Trade debtors",
+              "19 Sep",
+              "To Sales",
+              "SJ1",
+              "138,900.00",
+              "-"
+            ],
+            [
+              "Trade debtors",
+              "24 Sep",
+              "To Sales",
+              "SJ1",
+              "32,700.00",
+              "-"
+            ],
+            [
+              "Trade debtors",
+              "26 Sep",
+              "To Sales",
+              "SJ1",
+              "79,400.00",
+              "-"
+            ],
+            [
+              "Trade debtors",
+              "13 Sep",
+              "By Sales returns",
+              "SRJ1",
+              "-",
+              "15,800.00"
+            ],
+            [
+              "Trade debtors",
+              "27 Sep",
+              "By Sales returns",
+              "SRJ1",
+              "-",
+              "9,700.00"
+            ],
+            [
+              "Trade debtors",
+              "20 Sep",
+              "By Bank and Discount allowed",
+              "CB13",
+              "-",
+              "166,000.00"
+            ],
+            [
+              "Trade debtors",
+              "28 Sep",
+              "By Bank",
+              "CB14",
+              "-",
+              "138,900.00"
+            ],
+            [
+              "Trade debtors",
+              "29 Sep",
+              "By Bank and Discount allowed",
+              "CB15",
+              "-",
+              "135,000.00"
+            ],
+            [
+              "Trade debtors",
+              "30 Sep",
+              "By Cash",
+              "CB16",
+              "-",
+              "12,700.00"
+            ],
+            [
+              "Trade debtors",
+              "30 Sep",
+              "By Bad debts",
+              "GJ1",
+              "-",
+              "20,000.00"
+            ],
+            [
+              "Trade debtors",
+              "30 Sep",
+              "By Balance c/d",
+              "-",
+              "-",
+              "18,400.00"
+            ],
+            [
+              "Trade debtors",
+              "30 Sep",
+              "TOTALS Trade debtors",
+              "-",
+              "516,500.00",
+              "516,500.00"
+            ],
+            [
+              "Trade creditors",
+              "4 Sep",
+              "By Purchases",
+              "PJ1",
+              "-",
+              "245,000.00"
+            ],
+            [
+              "Trade creditors",
+              "11 Sep",
+              "By Purchases",
+              "PJ1",
+              "-",
+              "148,600.00"
+            ],
+            [
+              "Trade creditors",
+              "18 Sep",
+              "By Purchases",
+              "PJ1",
+              "-",
+              "289,400.00"
+            ],
+            [
+              "Trade creditors",
+              "25 Sep",
+              "By Purchases",
+              "PJ1",
+              "-",
+              "150,000.00"
+            ],
+            [
+              "Trade creditors",
+              "14 Sep",
+              "To Purchases returns",
+              "PRJ1",
+              "13,000.00",
+              "-"
+            ],
+            [
+              "Trade creditors",
+              "28 Sep",
+              "To Purchases returns",
+              "PRJ1",
+              "9,000.00",
+              "-"
+            ],
+            [
+              "Trade creditors",
+              "17 Sep",
+              "To Bank and Discount received",
+              "CB17",
+              "232,000.00",
+              "-"
+            ],
+            [
+              "Trade creditors",
+              "30 Sep",
+              "To Bank and Discount received",
+              "CB18",
+              "288,500.00",
+              "-"
+            ],
+            [
+              "Trade creditors",
+              "30 Sep",
+              "To Balance c/d",
+              "-",
+              "290,500.00",
+              "-"
+            ],
+            [
+              "Trade creditors",
+              "30 Sep",
+              "TOTALS Trade creditors",
+              "-",
+              "833,000.00",
+              "833,000.00"
+            ],
+            [
+              "Loan - NCB",
+              "1 Sep",
+              "By Balance b/d",
+              "Bal",
+              "-",
+              "300,000.00"
+            ],
+            [
+              "Loan - NCB",
+              "30 Sep",
+              "To Balance c/d",
+              "-",
+              "300,000.00",
+              "-"
+            ],
+            [
+              "Loan - NCB",
+              "30 Sep",
+              "TOTALS Loan - NCB",
+              "-",
+              "300,000.00",
+              "300,000.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Ledgers: the trial balance as at 30 September 2023",
+        "body": "The trial balance is the proof that the double entry has been kept correctly. It is extracted from the ledger accounts after the three month-end adjustments have been posted, and it lists the 29 accounts that have a balance, with the debit balances in one column and the credit balances in the other. The two columns agree at J$2,622,000.00, which shows that every debit has been matched by a credit and that no account has been posted on the wrong side. Agreement of the trial balance is not proof that every figure was entered correctly - a compensating error, or a figure entered on the right side in both accounts but for the wrong amount, would still balance - and the checks that catch those are the ones described earlier: invoices and delivery notes counted in, credit notes compared with goods returned, the discount columns agreed with the discount accounts, the debtors' and creditors' lists agreed with their control accounts, and the bank column agreed with the bank statement. With those checks done, the trial balance is the starting point for the income statement and the statement of financial position that follow.",
+        "table": {
+          "caption": "Trial balance as at 30 September 2023 (J$)",
+          "columns": [
+            "Account",
+            "Debit",
+            "Credit"
+          ],
+          "rows": [
+            [
+              "Fixtures and fittings",
+              "180,000.00",
+              "-"
+            ],
+            [
+              "Motor vehicle",
+              "420,000.00",
+              "-"
+            ],
+            [
+              "Accumulated depreciation - fixtures and fittings",
+              "-",
+              "1,500.00"
+            ],
+            [
+              "Accumulated depreciation - motor vehicle",
+              "-",
+              "7,000.00"
+            ],
+            [
+              "Inventory (opening)",
+              "95,000.00",
+              "-"
+            ],
+            [
+              "Trade debtors",
+              "18,400.00",
+              "-"
+            ],
+            [
+              "Prepaid insurance",
+              "44,000.00",
+              "-"
+            ],
+            [
+              "Bank",
+              "566,250.00",
+              "-"
+            ],
+            [
+              "Cash",
+              "28,200.00",
+              "-"
+            ],
+            [
+              "Trade creditors",
+              "-",
+              "290,500.00"
+            ],
+            [
+              "Loan - NCB",
+              "-",
+              "300,000.00"
+            ],
+            [
+              "Capital",
+              "-",
+              "725,000.00"
+            ],
+            [
+              "Drawings",
+              "40,000.00",
+              "-"
+            ],
+            [
+              "Sales",
+              "-",
+              "1,260,500.00"
+            ],
+            [
+              "Sales returns",
+              "25,500.00",
+              "-"
+            ],
+            [
+              "Purchases",
+              "1,023,700.00",
+              "-"
+            ],
+            [
+              "Purchases returns",
+              "-",
+              "22,000.00"
+            ],
+            [
+              "Carriage inwards",
+              "6,800.00",
+              "-"
+            ],
+            [
+              "Carriage outwards",
+              "7,500.00",
+              "-"
+            ],
+            [
+              "Wages",
+              "36,000.00",
+              "-"
+            ],
+            [
+              "Rent",
+              "25,000.00",
+              "-"
+            ],
+            [
+              "Motor expenses",
+              "44,400.00",
+              "-"
+            ],
+            [
+              "Telephone and internet",
+              "16,300.00",
+              "-"
+            ],
+            [
+              "Insurance",
+              "4,000.00",
+              "-"
+            ],
+            [
+              "Bank charges",
+              "1,450.00",
+              "-"
+            ],
+            [
+              "Discount allowed",
+              "11,000.00",
+              "-"
+            ],
+            [
+              "Discount received",
+              "-",
+              "15,500.00"
+            ],
+            [
+              "Bad debts",
+              "20,000.00",
+              "-"
+            ],
+            [
+              "Depreciation",
+              "8,500.00",
+              "-"
+            ],
+            [
+              "TOTALS - the two columns agree",
+              "2,622,000.00",
+              "2,622,000.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Financial statements: the trading results for September 2023 - the income statement",
+        "body": "The income statement brings the month's trading down to a single figure. Sales of J$1,260,500.00 less the J$25,500.00 credited to customers leave net sales of J$1,235,000.00. Stock turned over quickly in the month: the opening inventory of J$95,000.00 plus purchases of J$1,023,700.00 less returns of J$22,000.00 plus carriage inwards of J$6,800.00 gives goods available of J$1,103,500.00, and when the closing stock of J$78,500.00 counted on 30 September is taken out, the cost of the goods actually sold is J$1,025,000.00. That leaves a gross profit of J$210,000.00, which is 17.00 per cent of net sales or a mark-up of 20.49 per cent on cost - a normal margin for a small grocery. The business then earned J$15,500.00 of discount by paying two suppliers early, and it spent J$174,150.00 on running the shop. The largest single expense is motor expenses at J$44,400.00 for the delivery van, followed by wages of J$36,000.00 and rent of J$25,000.00. After all of that the month produced a net profit of J$51,350.00, which is 4.16 per cent of net sales. The figure is worth putting next to the bad debt of J$20,000.00 and the discounts of J$11,000.00: the shop made a small profit on a large turnover, and one unpaid invoice and the cost of collecting debts cheaply came to more than half of it.",
+        "table": {
+          "caption": "Green Grocer Mini-Mart: income statement for the month ended 30 September 2023 (J$)",
+          "columns": [
+            "Income statement",
+            "Debit",
+            "Credit"
+          ],
+          "rows": [
+            [
+              "Sales",
+              "1,260,500.00",
+              "-"
+            ],
+            [
+              "Less sales returns",
+              "25,500.00",
+              "-"
+            ],
+            [
+              "Net sales",
+              "-",
+              "1,235,000.00"
+            ],
+            [
+              "Opening inventory, 1 September 2023",
+              "95,000.00",
+              "-"
+            ],
+            [
+              "Add purchases",
+              "1,023,700.00",
+              "-"
+            ],
+            [
+              "Less purchases returns",
+              "22,000.00",
+              "-"
+            ],
+            [
+              "Add carriage inwards",
+              "6,800.00",
+              "-"
+            ],
+            [
+              "Less closing inventory, 30 September 2023",
+              "78,500.00",
+              "-"
+            ],
+            [
+              "Cost of sales",
+              "-",
+              "1,025,000.00"
+            ],
+            [
+              "GROSS PROFIT",
+              "-",
+              "210,000.00"
+            ],
+            [
+              "Add discount received (income earned by paying suppliers early)",
+              "-",
+              "15,500.00"
+            ],
+            [
+              "Total income",
+              "-",
+              "225,500.00"
+            ],
+            [
+              "Less wages",
+              "36,000.00",
+              "-"
+            ],
+            [
+              "Less rent",
+              "25,000.00",
+              "-"
+            ],
+            [
+              "Less motor expenses",
+              "44,400.00",
+              "-"
+            ],
+            [
+              "Less telephone and internet",
+              "16,300.00",
+              "-"
+            ],
+            [
+              "Less insurance",
+              "4,000.00",
+              "-"
+            ],
+            [
+              "Less carriage outwards",
+              "7,500.00",
+              "-"
+            ],
+            [
+              "Less bank charges",
+              "1,450.00",
+              "-"
+            ],
+            [
+              "Less discount allowed",
+              "11,000.00",
+              "-"
+            ],
+            [
+              "Less bad debts",
+              "20,000.00",
+              "-"
+            ],
+            [
+              "Less depreciation (fixtures and fittings J$1,500.00 and motor vehicle J$7,000.00)",
+              "8,500.00",
+              "-"
+            ],
+            [
+              "Total expenses",
+              "174,150.00",
+              "-"
+            ],
+            [
+              "NET PROFIT FOR SEPTEMBER 2023",
+              "-",
+              "51,350.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Financial statements: the statement of financial position at 30 September 2023",
+        "body": "The statement of financial position sets out what the business owns, what it owes and what the owner's stake in it is, all at one moment: the close of business on 30 September 2023. The non-current assets are the shop's fittings and the van at cost, J$600,000.00, less the depreciation written off so far, J$8,500.00, giving J$591,500.00. The current assets come to J$735,350.00 and are unusually liquid: J$566,250.00 in the bank and J$28,200.00 in the tin between them are 80.8 per cent of the current assets, with the rest made up of the closing stock of J$78,500.00, what the three remaining credit customers owe (J$18,400.00) and the J$44,000.00 of insurance cover paid for in advance. The current liabilities are the two suppliers, J$290,500.00, which leaves working capital of J$444,850.00. Below that comes the J$300,000.00 owed to NCB on which no repayment fell due in September, and the net assets of J$736,350.00. The bottom half of the statement shows that those net assets belong to the owner: she began the month with J$680,000.00 of capital, put in a further J$45,000.00, made J$51,350.00 of profit and took out J$40,000.00, leaving J$736,350.00. The two halves of the statement agree exactly, which is the last proof that the double entry behind them is correct.",
+        "table": {
+          "caption": "Green Grocer Mini-Mart: statement of financial position at 30 September 2023 (J$)",
+          "columns": [
+            "Statement of financial position",
+            "Debit",
+            "Credit"
+          ],
+          "rows": [
+            [
+              "NON-CURRENT ASSETS",
+              "-",
+              "-"
+            ],
+            [
+              "Fixtures and fittings at cost",
+              "180,000.00",
+              "-"
+            ],
+            [
+              "Less accumulated depreciation",
+              "1,500.00",
+              "-"
+            ],
+            [
+              "Fixtures and fittings at book value",
+              "178,500.00",
+              "-"
+            ],
+            [
+              "Motor vehicle at cost",
+              "420,000.00",
+              "-"
+            ],
+            [
+              "Less accumulated depreciation",
+              "7,000.00",
+              "-"
+            ],
+            [
+              "Motor vehicle at book value",
+              "413,000.00",
+              "-"
+            ],
+            [
+              "Total non-current assets",
+              "-",
+              "591,500.00"
+            ],
+            [
+              "CURRENT ASSETS",
+              "-",
+              "-"
+            ],
+            [
+              "Inventory, 30 September 2023",
+              "78,500.00",
+              "-"
+            ],
+            [
+              "Trade debtors",
+              "18,400.00",
+              "-"
+            ],
+            [
+              "Prepaid insurance",
+              "44,000.00",
+              "-"
+            ],
+            [
+              "Bank",
+              "566,250.00",
+              "-"
+            ],
+            [
+              "Cash",
+              "28,200.00",
+              "-"
+            ],
+            [
+              "Total current assets",
+              "-",
+              "735,350.00"
+            ],
+            [
+              "Less CURRENT LIABILITIES: trade creditors",
+              "290,500.00",
+              "-"
+            ],
+            [
+              "Working capital",
+              "-",
+              "444,850.00"
+            ],
+            [
+              "Total assets less current liabilities",
+              "-",
+              "1,036,350.00"
+            ],
+            [
+              "Less NON-CURRENT LIABILITY: bank loan from NCB",
+              "300,000.00",
+              "-"
+            ],
+            [
+              "NET ASSETS",
+              "-",
+              "736,350.00"
+            ],
+            [
+              "FINANCED BY",
+              "-",
+              "-"
+            ],
+            [
+              "Capital at 1 September 2023",
+              "-",
+              "680,000.00"
+            ],
+            [
+              "Add capital introduced during September",
+              "-",
+              "45,000.00"
+            ],
+            [
+              "Add net profit for September 2023",
+              "-",
+              "51,350.00"
+            ],
+            [
+              "Less drawings",
+              "40,000.00",
+              "-"
+            ],
+            [
+              "CAPITAL AT 30 SEPTEMBER 2023",
+              "-",
+              "736,350.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Financial statements: the month-end adjustments and how the statements were prepared",
+        "body": "Four things had to be done before the statements could be prepared, and each is worth stating because a set of books that skips them is wrong in a way the trial balance will never reveal. First, the stock was counted and valued. The opening stock of J$95,000.00 was used up in the month's trading and the closing stock of J$78,500.00 counted on the evening of 30 September is what remained, so cost of sales is goods available of J$1,103,500.00 less the closing stock, J$1,025,000.00, and the closing stock appears as a current asset. Second, the insurance premium of J$48,000.00 paid on 3 September covers twelve months, so J$4,000.00 is charged to September and J$44,000.00 is carried forward; without this adjustment September would have been charged a whole year's insurance and the profit would have been understated by J$40,000.00. Third, depreciation was charged for the month: J$1,500.00 on the fixtures at 10 per cent a year and J$7,000.00 on the van at 20 per cent a year, which is a real cost of using those assets and not a payment. Fourth, the bad debt of J$20,000.00 was written off, so that trade debtors show J$18,400.00 of amounts that can reasonably be expected to be collected. Only after those four entries were posted was the trial balance extracted, which is why its two columns of J$2,622,000.00 already contain the adjusted figures for insurance, depreciation, bad debts and debtors. The income statement was then built from the trading and expense accounts, and the statement of financial position from the asset, liability and capital accounts, with the closing stock and the prepayment brought in as balances.",
+        "table": {
+          "caption": "The month-end adjustments and their effect on the figures (J$)",
+          "columns": [
+            "Adjustment",
+            "Entry made",
+            "Effect on profit",
+            "Effect on the statement of financial position"
+          ],
+          "rows": [
+            [
+              "Closing stock counted and valued at cost",
+              "Opening stock J$95,000.00 and purchases brought into cost of sales; closing stock J$78,500.00 deducted",
+              "Increases profit by J$78,500.00 compared with charging all goods bought to the month",
+              "Closing stock of J$78,500.00 shown as a current asset"
+            ],
+            [
+              "Insurance premium for a year paid on 3 September",
+              "Dr Prepaid insurance J$44,000.00 / Cr Insurance J$44,000.00 (journal voucher JV-3)",
+              "Increases profit by J$40,000.00 by charging only one month, J$4,000.00",
+              "Prepaid insurance of J$44,000.00 shown as a current asset"
+            ],
+            [
+              "Depreciation for September",
+              "Dr Depreciation J$8,500.00 / Cr Accumulated depreciation J$8,500.00 (voucher JV-2)",
+              "Reduces profit by J$8,500.00",
+              "Accumulated depreciation of J$8,500.00 deducted from the two assets"
+            ],
+            [
+              "Bad debt written off",
+              "Dr Bad debts J$20,000.00 / Cr Trade debtors J$20,000.00 (voucher JV-1)",
+              "Reduces profit by J$20,000.00",
+              "Trade debtors reduced to a collectable J$18,400.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Analysis and discussion: what the records show about the business",
+        "body": "The records answer the question the owner started with. The shop made a profit: net sales of J$1,235,000.00 produced a gross profit of J$210,000.00 (17.00 per cent) and a net profit of J$51,350.00 (4.16 per cent) after all the running expenses. A grocery with a 17.00 per cent gross margin that keeps only 4.16 per cent of its sales is working on a thin net margin, and the figures show where it goes: expenses take 14.1 per cent of net sales, with motor expenses, wages and rent alone taking J$105,400.00. The second finding is about cash. The business is very liquid, with a current ratio of 2.53 and a quick ratio of 2.11, and 80.8 per cent of its current assets sitting in the bank and the tin. At the same time it owes its two suppliers J$290,500.00, which is about 8.70 days of credit purchases, and it paid only J$505,000.00 of the J$833,000.00 it bought on credit. Money in the bank earning nothing while suppliers wait to be paid is the clearest weakness the records reveal. The third finding is about the credit customers: they owe only J$18,400.00, a fraction of a day's sales, because most of the shop's trade is cash over the counter, and the single bad debt of J$20,000.00 came from the one customer who was not an established business. The fourth is about stock: at J$78,500.00 the shop is holding about 2.30 days of cost of sales, which is what a greengrocer must hold to keep the shelves full of fresh produce.",
+        "table": {
+          "caption": "Ratios and figures worked out from the records, with what they mean",
+          "columns": [
+            "Measure",
+            "How it is worked out",
+            "Result",
+            "What it means for the owner"
+          ],
+          "rows": [
+            [
+              "Gross profit margin",
+              "J$210,000.00 / net sales J$1,235,000.00",
+              "17.00 per cent",
+              "A normal grocery margin; a mark-up of 20.49 per cent on cost"
+            ],
+            [
+              "Net profit margin",
+              "J$51,350.00 / net sales J$1,235,000.00",
+              "4.16 per cent",
+              "Only J$51,350.00 of profit from J$1,235,000.00 of sales: the margin is thin and one bad month could wipe it out"
+            ],
+            [
+              "Expenses as a share of sales",
+              "J$174,150.00 / net sales J$1,235,000.00",
+              "14.10 per cent",
+              "Expenses come to more than three times the net profit; motor expenses, wages and rent are the three biggest"
+            ],
+            [
+              "Rate of stock turnover",
+              "J$1,025,000.00 cost of sales / closing stock J$78,500.00",
+              "13.06 times in the month",
+              "About 2.30 days of stock on hand, which is necessary for fresh produce"
+            ],
+            [
+              "Current ratio",
+              "Current assets J$735,350.00 / current liabilities J$290,500.00",
+              "2.53:1",
+              "Very comfortable: the business can pay its short-term debts many times over"
+            ],
+            [
+              "Quick ratio",
+              "(Current assets less stock and prepayments) / current liabilities",
+              "2.11:1",
+              "Liquid even without selling another item of stock"
+            ],
+            [
+              "Cash and bank as a share of current assets",
+              "(J$566,250.00 + J$28,200.00) / J$735,350.00",
+              "80.84 per cent",
+              "Most of the wealth is idle cash rather than working stock or equipment"
+            ],
+            [
+              "Credit given to customers",
+              "Trade debtors J$18,400.00 / net sales J$1,235,000.00 x 30",
+              "0.45 days",
+              "Almost all trade is cash; the credit accounts are small and mostly settled"
+            ],
+            [
+              "Credit taken from suppliers",
+              "Trade creditors J$290,500.00 / net credit purchases x 30",
+              "8.70 days",
+              "Suppliers are financing the stock, and discounts are being missed by paying late in the month"
+            ],
+            [
+              "Return on the owner's capital",
+              "J$51,350.00 / capital J$736,350.00",
+              "6.97 per cent for the month",
+              "About 6.97 per cent a month on the money in the business, before the owner's own wages are counted"
+            ],
+            [
+              "Bad debts as a share of credit sales",
+              "J$20,000.00 / credit sales J$516,500.00",
+              "3.87 per cent",
+              "One customer cost the business most of a month's net profit; new credit customers need checking"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Analysis: limitations, and what the owner should do next",
+        "body": "The records are complete for what they set out to do, and they have limits that should be stated. They cover one month, which is too short to show a trend: September's rent, insurance and telephone bills fall in the month, but the yearly insurance premium was paid in September and eleven months of it have been carried forward, so a second month will look different for that reason alone. The stock figure is a single physical count valued at cost, with no record kept of stock lost to spoilage, which for a greengrocer is a real cost that is hiding inside cost of sales. The van and the fittings are depreciated by the straight-line method on cost, which spreads the cost evenly and does not pretend to know what the van is worth on the second-hand market. No bank reconciliation statement was prepared, although the bank column was agreed with the statement, and no provision has been made for doubtful debts, because the two accounts still owing belong to established customers and were settled in the first days of October. Four recommendations follow from the figures. The owner should pay suppliers within the discount period and take the discount rather than leaving money idle in the bank, since the bank balance of J$566,250.00 is more than enough to clear the J$290,500.00 owed. She should move part of the idle bank balance into stock that sells, or into a short-term deposit, rather than leaving it in a current account. She should keep the same records every month so that next month's figures can be compared with these, and stop relying on the exercise book of amounts owing. And she should check a new credit customer before selling on credit, because the one bad debt of J$20,000.00 cost her more than a third of the month's net profit.",
+        "bullets": [
+          "One month of records: enough to prepare proper statements, too short to show a trend, and September is distorted by the yearly insurance premium being paid in it",
+          "No record of spoilage: losses of fresh produce are inside cost of sales and cannot be seen separately",
+          "Straight-line depreciation on cost: simple and consistent, but it does not claim to show market value",
+          "No bank reconciliation statement prepared, though the bank column was agreed with the bank statement",
+          "No provision for doubtful debts, because the two accounts owing belong to established customers who paid in early October",
+          "Recommendation: pay suppliers inside the discount period and stop leaving money idle in the bank",
+          "Recommendation: keep the full set of books every month so that month-to-month comparison becomes possible",
+          "Recommendation: check a new credit customer's record before selling on credit, after the J$20,000.00 bad debt"
+        ]
+      },
+      {
+        "heading": "Conclusion",
+        "body": "The project set out to keep a complete set of accounting records for Green Grocer Mini-Mart for September 2023 and to prepare the financial statements from them, so that the owner could know whether the shop was making money. The records were written up from 49 source documents in the journals and the two-column cash book, posted to the ledgers, checked against the customers' and suppliers' lists and the bank statement, and proved by a trial balance whose two sides agree at J$2,622,000.00. The income statement shows net sales of J$1,235,000.00, a gross profit of J$210,000.00 and a net profit of J$51,350.00 for the month. The statement of financial position shows net assets of J$736,350.00 financed by capital of J$736,350.00, made up of the owner's opening capital, the extra J$45,000.00 she put in, the month's profit and her drawings of J$40,000.00. The answer to the owner's question is therefore that the shop is profitable and solvent, with cash and bank balances of J$594,450.00 and a loan of J$300,000.00, but that its net margin of 4.16 per cent is thin and its cash is not working: its bank balance is nearly twice what it owes its suppliers and it is still taking credit from them. Reading the figures also shows what the exercise book could never have shown - that one unpaid invoice of J$20,000.00 and J$11,000.00 of discount allowed to collect debts cost more than a third of the month's profit. The records were worth keeping for that reason alone.",
+        "bullets": [
+          "49 transactions written up from source documents in the six books of original entry",
+          "24 different types of transaction recorded, including returns, discounts, contras, bad debts, depreciation and a prepayment",
+          "29 accounts in the trial balance, agreeing at J$2,622,000.00 on each side",
+          "Net profit of J$51,350.00 on net sales of J$1,235,000.00 - a net margin of 4.16 per cent",
+          "Net assets of J$736,350.00 equal to capital of J$736,350.00, so the two halves of the statement of financial position agree",
+          "The business is profitable and liquid, but its idle bank balance and its unpaid suppliers show that the cash is not being used well"
+        ]
+      },
+      {
+        "heading": "Note on the business and the sources",
+        "body": "Green Grocer Mini-Mart, its owner, its customers, its suppliers, its documents and every figure in this project are invented for this worked example, written to show what a full-mark Principles of Accounts SBA looks like. Nothing here is a real business's records and nothing is reproduced from CXC material. The mark breakdown the project works to is the one published in this subject's own SBA guide on this platform - Project Aim 2 marks, Business Transactions 4, Books of Original Entry 4, Ledgers 4 and Financial Statements 6 - and the accounting method follows the double-entry system, the format of the books of original entry and the layout of the income statement and statement of financial position taught in the subject. Two points of method are worth copying by anyone using this as a model. The first is that every figure in the statements can be traced back through the ledgers to a book of original entry and from there to a numbered source document; if a figure cannot be traced, it does not belong in the accounts. The second is that the records were proved three times over: the trial balance agreed, the customers' and suppliers' lists agreed with their control accounts, and the cash book's bank column agreed with the bank statement. Set up your own set of books for a small business you can visit, and keep your source documents in date order from the first day.",
+        "bullets": [
+          "The business, owner, customers, suppliers, documents and figures are all invented for this worked example",
+          "The mark breakdown used is the one in this subject's own SBA guide: 2 + 4 + 4 + 4 + 6 = 20 marks",
+          "Every figure in the statements traces back to a ledger, and every ledger entry to a numbered source document",
+          "The books were proved three ways: the trial balance, the debtors' and creditors' lists against their control accounts, and the bank column against the bank statement",
+          "Copy nothing from the internet into your own project without checking that the figures balance - a set of books that does not balance is not a set of books"
+        ]
+      }
+    ],
+    "examinerNotes": [
+      "This subject is marked out of 20, with six of those marks on the financial statements, so the sample carries a complete set of statements and shows the workings behind every line. The trial balance agrees at J$2,622,000.00, and the statement of financial position balances: net assets of J$736,350.00 equal capital of J$736,350.00 after the month's profit of J$51,350.00 and drawings of J$40,000.00.",
+      "The books are not decoration. The sales and purchases journals, the returns journals, the two-column cash book with its contra entries and memorandum discount columns, and the general journal are all written up, each with its totals posted to the named accounts, so a marker can follow a figure from a source document to the statements. The 24 types of transaction are more than double the ten required, and they deliberately include the entries a cash-only bookkeeper never makes: returns, both discounts, depreciation, a bad debt and a prepayment.",
+      "The month-end work is the strongest part of the project. The insurance premium of J$48,000.00 paid for a year is split so that only J$4,000.00 is charged to September and J$44,000.00 is carried forward; depreciation of J$8,500.00 is charged for the month with no money moving; and the bad debt of J$20,000.00 is written off so that debtors show a collectable J$18,400.00. A project that stops at the trial balance would have overstated profit and overstated debtors.",
+      "The analysis reads the records rather than repeating them. Gross margin of 17.00 per cent against a net margin of 4.16 per cent, a current ratio of 2.53 and a quick ratio of 2.11, creditor days of 8.70 against debtor days of 0.45, and a bad debt that cost more than a third of the month's profit, lead to four recommendations the owner can act on. The business, owner, customers, suppliers and every figure are invented placeholders; the accounting method is the real thing. Keep your own books, in your own order, from the first day."
+    ]
+  }
 }
