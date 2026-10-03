@@ -40,7 +40,7 @@ two samples show a completed oral-examination dossier instead of an SBA report.
 | 10 | agriculture-double-option | CSEC SBA | 42 | 3 - portfolio SBA | DONE |
 | 11 | social-studies | CSEC SBA | 20 | 4 - research / investigation SBA | DONE |
 | 12 | caribbean-history | CSEC SBA | 25 | 4 - research / investigation SBA | DONE |
-| 13 | principles-of-business | CSEC SBA | 50 | 4 - research / investigation SBA | TODO |
+| 13 | principles-of-business | CSEC SBA | 50 | 4 - research / investigation SBA | DONE |
 | 14 | principles-of-accounts | CSEC SBA | 20 | 4 - research / investigation SBA | DONE |
 | 15 | english-a | CSEC SBA | 30 | 5 - language SBA | TODO |
 | 16 | english-b | CSEC SBA | 40 | 5 - language SBA | DONE |
