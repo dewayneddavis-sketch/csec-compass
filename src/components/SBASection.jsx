@@ -150,11 +150,11 @@ export default function SBASection({ subjectId }) {
             )}
             {Array.isArray(completed.categories) && completed.categories.length > 0 && (
               <div className="sba-cat-wrap">
-                <h5 className="sba-subhead">How this sample earns each SBA category</h5>
+                <h5 className="sba-subhead">{isOral ? "How this dossier was marked, part by part" : "How this sample earns each SBA category"}</h5>
                 <div className="sba-table-wrap">
                   <table className="sba-cat-table">
                     <thead>
-                      <tr><th>Category</th><th>Marks</th><th>Awarded</th><th>What the examiner sees</th></tr>
+                      <tr><th>Category</th><th>Marks</th><th>Awarded</th><th>{isOral ? "What the examiner hears" : "What the examiner sees"}</th></tr>
                     </thead>
                     <tbody>
                       {completed.categories.map((c, i) => (

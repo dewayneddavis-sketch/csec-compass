@@ -132,6 +132,10 @@ ok(/onContextMenu=\{blockCopy\}/.test(jsx), "the context menu is blocked on the 
 ok(/onDragStart=\{blockCopy\}/.test(jsx), "dragging the sample out is blocked");
 ok(/const blockCopy = \(e\) => e.preventDefault\(\);/.test(jsx), "blockCopy cancels the event");
 ok(jsx.includes("sba-viewonly") && jsx.includes("completed.viewOnlyNote"), "the view-only note is rendered from the subject's own text");
+ok(jsx.includes("How this sample earns each SBA category") && jsx.includes("How this dossier was marked, part by part"),
+    "the completed-sample subhead is subject-aware: an oral subject has no SBA categories to earn");
+ok(jsx.includes("What the examiner hears") && jsx.includes("What the examiner sees"),
+    "the category table's last column is subject-aware: a dossier is heard, an SBA report is read");
 ok(/\.sba-protected\{[^}]*user-select:none/.test(css), "CSS also sets user-select:none on the protected block");
 ok(/\.sba-protected\{[^}]*webkit-user-select:none/.test(css), "CSS sets the webkit user-select prefix");
 ok(jsx.includes("completedSample") && jsx.includes("categories") && jsx.includes("examinerNotes"),
