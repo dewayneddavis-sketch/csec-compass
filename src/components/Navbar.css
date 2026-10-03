@@ -8,3 +8,20 @@
 .navbar-link:hover { color: #111827; background: #f3f4f6; }
 .navbar-link.active { color: #2563eb; background: #eff6ff; }
 .navbar-breadcrumb { color: #9ca3af; font-size: 0.9rem; text-transform: capitalize; }
+
+/* Mobile: the top navigation becomes a swipeable strip (owner request 2026-09-29 —
+   the links previously overflowed the viewport with no way to reach the tabs).
+   The navbar-inner row is laid out in one line (nowrap, no shrinking), so it is
+   wider than the phone; overflow-x: auto makes it scroll left/right with a touch
+   swipe. The scrollbar is hidden so the strip looks clean. Brand stays first and
+   scrolls with the strip (familiar app-tab behaviour on small screens). */
+@media (max-width: 768px) {
+  .navbar { padding: 0 0.5rem; }
+  .navbar-inner { height: 56px; gap: 0.5rem; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .navbar-inner::-webkit-scrollbar { display: none; }
+  .navbar-brand { flex-shrink: 0; font-size: 1.05rem; }
+  .navbar-logo { font-size: 1.25rem; }
+  .navbar-links { flex-shrink: 0; margin-left: auto; gap: 0.25rem; }
+  .navbar-link { flex-shrink: 0; white-space: nowrap; font-size: 0.9rem; padding: 0.4rem 0.6rem; }
+  .navbar-auth { flex-shrink: 0; }
+}
