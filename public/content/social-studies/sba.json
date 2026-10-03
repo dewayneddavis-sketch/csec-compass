@@ -59,5 +59,801 @@
     "Clear presentation of data",
     "Analysis linked to the problem",
     "Practical recommendations provided"
-  ]
+  ],
+  "completedSample": {
+    "title": "A complete, full-mark Social Studies SBA research project: a survey of 60 households on the causes of illegal dumping in the Harmony Gardens gully, with every figure computed from the returns (community, households and survey invented)",
+    "viewOnlyNote": "For viewing and learning only. This is an original worked example written for CSEC Compass, not a real candidate's submission and not a CXC exemplar. The community of Harmony Gardens, its four zones, the Citizens' Association and the survey of 60 households are INVENTED for teaching: there was no such survey and no real respondent's answers are shown. What is real is the method - the sampling steps, the 20-item questionnaire, the code sheet, the tables, the percentages, the margin of error and the way the analysis admits what 60 self-reported returns cannot prove, all of which are of the kind a CSEC Social Studies candidate is expected to produce. Every figure below is computed from the 60 invented returns described in the appendix, so the arithmetic can be checked. Read how the question was narrowed, how the sample was chosen, how each table was built from the raw returns and how the comparisons were tested, then design your own survey on your own community. This sample cannot be copied.",
+    "profile": [
+      {
+        "label": "Candidate",
+        "value": "Sample Candidate (invented)"
+      },
+      {
+        "label": "Centre",
+        "value": "Sample Secondary School (invented)"
+      },
+      {
+        "label": "Subject",
+        "value": "Social Studies - School-Based Assessment research project (20 marks, six sections)"
+      },
+      {
+        "label": "Research question",
+        "value": "What are the main causes of illegal dumping in the Harmony Gardens gully, and what do residents believe would reduce it?"
+      },
+      {
+        "label": "Population",
+        "value": "340 households in four zones of Harmony Gardens (invented community)"
+      },
+      {
+        "label": "Sample",
+        "value": "80 questionnaires issued by hand, 60 returned (75.0%); stratified across the four zones"
+      },
+      {
+        "label": "Instrument",
+        "value": "A 20-item questionnaire, printed in full in the appendix; one adult per household"
+      },
+      {
+        "label": "Submission",
+        "value": "One bound report of 22 sections with the questionnaire, the code sheet, the six tables, the two charts and the bibliography attached"
+      }
+    ],
+    "categories": [
+      {
+        "section": "Statement of Problem",
+        "marks": "2",
+        "awarded": "2",
+        "comment": "One question, in one sentence, about one problem in one community: what are the main causes of illegal dumping in the Harmony Gardens gully, and what do residents believe would reduce it? It names the place, the behaviour and the two things being measured, and the terms a marker needs - illegal dumping, the gully, the community, the household - are defined before the survey is designed, which is what these two marks are for."
+      },
+      {
+        "section": "Reason for Selection",
+        "marks": "2",
+        "awarded": "2",
+        "comment": "Three concrete reasons, each tied to something the candidate can point to rather than to a general remark about the environment: the sightings made on the class's own observation walk, the missed collections recorded in the Citizens' Association minutes, and the gully running behind the school field that students cross daily. It also says why the problem matters beyond the school gate - standing water, mosquitoes and the state of the junction where food is sold."
+      },
+      {
+        "section": "Method of Investigation",
+        "marks": "2",
+        "awarded": "2",
+        "comment": "A five-week plan with dates: the population of 340 households, a sample stratified across the four zones in proportion to their size, 80 questionnaires issued by hand, 60 returned, a 20-item instrument printed in full, a code sheet, and a verification step in which ten returns were re-checked against the code-sheet lines. Both the limitations and the ethics are stated: no names recorded, one adult per household, and the plain admission that every answer is self-reported."
+      },
+      {
+        "section": "Data Presentation",
+        "marks": "4",
+        "awarded": "4",
+        "comment": "Six tables and two charts, each built from the raw returns and not from memory: the zone table with its response rates, collection frequency by zone, the main-cause table with counts, percentages and ranks, the multiple-response table of opportunities with its tick total and mean, a summary of the remaining items, and the cross-tabulation table used in the analysis. The charts are a labelled bar chart of the main-cause question and a pie chart of collection frequency with the sector angles worked out. Row and column totals agree with the 60 returned forms throughout."
+      },
+      {
+        "section": "Analysis and Interpretation",
+        "marks": "8",
+        "awarded": "8",
+        "comment": "Analysis rather than description. The counts are read against the question asked: the strongest explanation is confined to the households with the weakest service (all 22 respondents who named irregular collection are collected once a week or less often, and none of the 9 twice-a-week households agreed); visibility and reported illness are concentrated on the lane beside the gully; and every comparison is tested against its own margin for a sample of this size, so the zone difference on the main cause (6.7 points) is openly discarded as too small to read while the reported-illness difference (44.5 points) is kept - and even that is called an association, not proof."
+      },
+      {
+        "section": "Findings/Recommendations",
+        "marks": "2",
+        "awarded": "2",
+        "comment": "Five findings, each with its evidence and a confidence rating that admits the weakest, and five recommendations the community and the school can actually carry out, each naming who would do the work, a rough cost and the figure that would show it working by next term. The recommendations answer the problem the data revealed - a third skip beside the gully mouth and two extra collections a week - rather than a general call to be cleaner."
+      }
+    ],
+    "pages": [
+      {
+        "heading": "Cover page, contents and note on sources",
+        "body": "This is a completed Social Studies School-Based Assessment research project, submitted as a bound report with the questionnaire, the code sheet, the tables and the bibliography attached. The study asks what the main causes of illegal dumping are in the Harmony Gardens gully and what residents believe would reduce it, and it answers with a survey of 60 households drawn from the four zones of the community.\n\nThe report follows the six sections of the CSEC Compass guide in order, so each section can be marked against its own row of the Task Breakdown: the statement of the problem, the reason for selection, the method of investigation, the presentation of the data, the analysis and interpretation, and the findings with recommendations. Nothing here is borrowed from another candidate's project: the community, the households and the survey are invented for teaching, and every invented document is labelled wherever it is used.",
+        "bullets": [
+          "Section 1 - Statement of the problem: the question and its terms (pages 2-3).",
+          "Section 2 - Reason for selection: why this problem, in this community (page 4).",
+          "Section 3 - Method of investigation: the plan, the sample, the questionnaire, the checks and the limits (pages 5-8).",
+          "Section 4 - Data presentation and results: six tables and two charts (pages 9-14).",
+          "Section 5 - Analysis and interpretation, and the discussion (pages 15-17).",
+          "Section 6 - Findings, recommendations and conclusion (pages 18-20).",
+          "Bibliography and the note on the invented sources (page 21), and the questionnaire as it was issued (page 22)."
+        ]
+      },
+      {
+        "heading": "Statement of the problem: the question and why it matters",
+        "body": "Illegal dumping is the disposal of household or market waste anywhere other than at the place the parish council collects it. In Harmony Gardens the place it happens is the gully that runs behind the playing field, and the dumping has been visible from the school gate for more than a year: bags on the bank, a mattress against the wall of the old bus shelter, and more after any public holiday when collections are missed.\n\nThe question the project set out to answer is this: what are the main causes of illegal dumping in the Harmony Gardens gully, and what do residents believe would reduce it? The question is written that way because a study that only asked whether people dislike dumping would collect opinions rather than causes, and a study that asked what to do about it would offer solutions with nothing to support them. Asking for the cause and the remedy in one question forces the survey to test the cause first and derive the remedy from it.",
+        "table": {
+          "caption": "The problem, the people and the question",
+          "columns": [
+            "Element",
+            "What it is in this study"
+          ],
+          "rows": [
+            [
+              "The behaviour",
+              "The dumping of household and market waste in the gully behind the playing field"
+            ],
+            [
+              "The place",
+              "The Harmony Gardens gully and the three spots beside it: the lane, the empty lots and the old bus shelter"
+            ],
+            [
+              "The people",
+              "340 households in four zones (Running Gut Lane, Top Road, Seaview Close and the Junction)"
+            ],
+            [
+              "The question",
+              "What are the main causes of illegal dumping in the gully, and what do residents believe would reduce it?"
+            ],
+            [
+              "What is measured",
+              "The respondent's own answer on the main cause, on how often waste is collected, on what makes dumping easy, on what is seen and on what would work"
+            ],
+            [
+              "What is not measured",
+              "The weight or volume of waste actually dumped; whether the illnesses reported are caused by the dump; the answers of households that refused"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Statement of the problem: the terms, the scope and what is left out",
+        "body": "A reader cannot check an answer to a question whose terms are loose, so the four terms the survey turns on were fixed before the first questionnaire was written. The definitions were also read out to every respondent, so that two people answering the same item meant the same thing by it.\n\nThe scope is deliberately narrow. The study covers one gully and the roads beside it, in one community, during the dry season, and it records what residents say. It does not measure the waste itself, it does not follow the council's collection records back over years, and it does not include the views of people who work in the community but live elsewhere - the market porters at the junction, for instance, who leave with the evening traffic. Those exclusions are stated here so that the conclusion at the end of the report is not read as a claim about anything larger than one gully and 60 households.",
+        "bullets": [
+          "Illegal dumping: putting waste anywhere other than the collection point set by the parish council, including the gully bank, the empty lots and the lane.",
+          "The gully: the open storm channel behind the playing field, from the school gate to the bridge at Top Road - the stretch that carries water away from the lower part of the community.",
+          "Community / Harmony Gardens: the four zones together, taken as one community for this study because the gully serves all four.",
+          "Household: the people who live at one address and share one kitchen; one adult answered for each household.",
+          "Main cause: the single box a respondent ticked when asked for the main reason, not an invitation to list several.",
+          "Out of scope: waste actually dumped, the medical cause of any illness, households in other communities, and the views of people who work here but live elsewhere."
+        ]
+      },
+      {
+        "heading": "Reason for selection: why this problem, in this community",
+        "body": "The topic was chosen for three reasons, each one something the class could point to rather than an assumption about what matters. The first is that the problem is in plain view: the observation walk along the lane on four separate mornings found more than six full bags at the gully mouth on three of the four visits, and the walk is part of the route students take to school. The second is that the community has already tried to have it dealt with: the Citizens' Association's minutes record three reports of missed collections in one term, which suggested a service problem rather than indifference. The third is that the effects fall on people who cannot move away from them - the food stalls at the junction stand within sight of the gully, and the standing water in the channel is a breeding place for mosquitoes in a community where no household has piped water every day.\n\nA fourth reason is practical: the problem can be studied properly with the resources a Form 5 student has. It is answerable with one printed questionnaire, one community, and arithmetic that can be checked by hand, and it does not depend on records the student cannot reach.",
+        "bullets": [
+          "It is visible and daily: the observation walk found bags at the gully mouth on three of four visits.",
+          "The community has already tried the official route: three reports of missed collections appear in the Association's minutes (INVENTED).",
+          "The effects fall on the people least able to avoid them: the junction food stalls and the households with no piped water.",
+          "It matters beyond one lane: the gully carries the water away from the lower part of the community, so what is dumped above travels down.",
+          "It is answerable by a student: one questionnaire, one community, arithmetic that can be checked by hand."
+        ]
+      },
+      {
+        "heading": "Method of investigation: the plan, the population and the sample",
+        "body": "The survey was planned over five weeks. Week 1 was spent walking the community with the Association's household list and checking it against the houses on the ground, because a list that does not match the houses produces a sample that cannot be described honestly. Week 2 was the design of the questionnaire and its trial on five households outside the sample. Weeks 3 and 4 were the issuing and collection of the questionnaires, and week 5 the coding, the tables and the writing up.\n\nThe sample is stratified by zone and taken in proportion to the number of households in each. Zone A was deliberately included at its full share rather than treated as a curiosity, because the lane borders the gully and the study had to be able to compare the people closest to the problem with the rest of the community. The consequence is that this is not a simple random sample of the community, and every zone figure in this report is therefore always shown beside the figure for the other zones.",
+        "table": {
+          "caption": "The population, the sample and how it was drawn",
+          "columns": [
+            "Stage",
+            "What was done",
+            "Why it was done that way"
+          ],
+          "rows": [
+            [
+              "Population",
+              "340 households in the four zones of Harmony Gardens",
+              "The community the question is about"
+            ],
+            [
+              "Sample frame",
+              "The Association's household list, checked house by house in week 1",
+              "A list that matches the houses on the ground"
+            ],
+            [
+              "Stratification",
+              "The community divided into zones A 120, B 95, C 75 and D 50 households",
+              "Zone A borders the gully, so the zones had to be compared, not mixed"
+            ],
+            [
+              "Size",
+              "80 households, about 24% of the population, well above the fifth the guide suggests",
+              "Big enough to compare groups, small enough for one student to carry out"
+            ],
+            [
+              "Selection",
+              "Every fourth house on the list inside each zone, starting from a random point",
+              "A rule the interviewer cannot steer towards people known to agree"
+            ],
+            [
+              "Issuing",
+              "Delivered by hand, one adult per household, collected two days later",
+              "Face-to-face delivery lifts the return rate and lets any item be explained"
+            ],
+            [
+              "Returns",
+              "60 of the 80 issued were returned, a response rate of 75.0%",
+              "The difference between issued and returned is reported, not hidden"
+            ],
+            [
+              "Verification",
+              "10 returns re-checked line by line against their entries on the code sheet",
+              "Coding slips are found and corrected before the tables are built"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Method of investigation: the questionnaire and its twenty items",
+        "body": "The instrument is a 20-item questionnaire answered in about six minutes, with closed items for everything that had to be counted and one open item at the end. It was trialled on five households outside the sample; two items were reworded afterwards, because the trial showed that 'how often is the garbage collected' was being answered for the district and not for the household. The final wording is printed in full in the appendix.\n\nTwo design decisions carry most of the marks. First, the central question about the main cause asks for one box only, so that the counts add to 60 and percentages mean something; the question about what makes dumping easy is a separate multiple-response item, and its answers are reported as ticks rather than as percentages of respondents. Second, the questionnaire asks in two different places about the same service - how often the household's waste is collected (item 6) and whether the main cause is irregular collection (item 7) - so that the two answers can be set against each other. That cross-check is what the analysis rests on.",
+        "table": {
+          "caption": "The twenty items of the questionnaire: what each asked and what it was for",
+          "columns": [
+            "Item",
+            "What it asked",
+            "Kind of answer",
+            "What the item is for"
+          ],
+          "rows": [
+            [
+              "1",
+              "Which zone of Harmony Gardens do you live in?",
+              "Tick one of four zones",
+              "To place the return in a zone without recording any address"
+            ],
+            [
+              "2",
+              "How many people live in this household?",
+              "Tick a band",
+              "To describe the households behind the answers"
+            ],
+            [
+              "3",
+              "How long have you lived in Harmony Gardens?",
+              "Tick a band",
+              "To separate long-standing residents from newcomers"
+            ],
+            [
+              "4",
+              "What is the main work of the person who earns most in this household?",
+              "Tick a list, or write it",
+              "To compare the views of the different working groups"
+            ],
+            [
+              "5",
+              "Who is answering this questionnaire?",
+              "Householder, vendor, student, other",
+              "To know whose opinion is being recorded"
+            ],
+            [
+              "6",
+              "How often is this household's garbage collected?",
+              "Tick one of four frequencies",
+              "The service measure that the central explanation is tested against"
+            ],
+            [
+              "7",
+              "In your opinion, what is the MAIN reason people dump waste in the gully?",
+              "Tick ONE of five reasons",
+              "The central question of the survey"
+            ],
+            [
+              "8",
+              "Which of these make it easy to dump waste here? Tick all that apply.",
+              "Tick any of four",
+              "To map the physical opportunities rather than the opinions"
+            ],
+            [
+              "9",
+              "How often do you see waste that has been dumped in the gully?",
+              "Tick one of five frequencies",
+              "To measure how visible the problem is where the respondent lives"
+            ],
+            [
+              "10",
+              "Do you know anyone who dumps waste there?",
+              "Seen them, suspect, or no",
+              "To test whether dumping is known and tolerated"
+            ],
+            [
+              "11",
+              "Has anyone in this household been ill in the last year in a way you link to the dump?",
+              "Yes or no",
+              "To record perceived effects, clearly labelled as the respondent's opinion"
+            ],
+            [
+              "12",
+              "What kind of illness?",
+              "Tick a list, or none",
+              "To describe what is reported, without claiming a medical cause"
+            ],
+            [
+              "13",
+              "Have you ever reported the dumping?",
+              "Yes or no",
+              "To test whether the community has already used the official route"
+            ],
+            [
+              "14",
+              "If yes, to whom did you report it?",
+              "Tick a list",
+              "To find where community reports actually go"
+            ],
+            [
+              "15",
+              "What was the reply?",
+              "None, a promise, a visit, or cleared",
+              "To test whether reporting the problem changes anything"
+            ],
+            [
+              "16",
+              "Would you help in a community clean-up?",
+              "Yes, no, or only with others",
+              "To test whether the community would act"
+            ],
+            [
+              "17",
+              "What would make dumping less likely here?",
+              "Tick one of four",
+              "To test the remedies against the causes found"
+            ],
+            [
+              "18",
+              "Would you pay a small monthly fee for a private collection?",
+              "Yes, no, or if reliable",
+              "To test whether a paid remedy is realistic"
+            ],
+            [
+              "19",
+              "How old are you?",
+              "Tick a band",
+              "To compare the views of the age groups"
+            ],
+            [
+              "20",
+              "Is there anything else you want to say about the gully?",
+              "Written answer",
+              "To catch anything the closed items left out"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Method of investigation: collecting, coding and checking the data",
+        "body": "Each questionnaire was numbered before issue, so a return could be traced to its zone without any name or address being written on it. The replies were coded onto a code sheet on the evening of the day they were collected, while the hand that wrote them was still fresh in mind, and the code sheet - not the original forms - is the only source from which the tables were built. Every table was then counted twice, on two separate days, and the two counts had to agree before the table was used.\n\nThree checks were run on the coded data itself, which is the part candidates most often skip. The four collection frequencies had to add to 60; the five reasons for dumping had to add to 60; and the ticks recorded in the multiple-response item had to equal the sum of its four rows. A fourth check compared ten returned forms with their code-sheet lines, and one slip was found - a 'once a fortnight' that had been entered as 'once a week' - and corrected before any table was built from it.",
+        "bullets": [
+          "Every form numbered before issue, so a return can be traced to its zone with no name or address recorded.",
+          "Replies coded the same evening, and only the code sheet used to build the tables.",
+          "Each table counted twice on two separate days; the two counts had to agree.",
+          "Check 1: the four collection frequencies add to the 60 returns.",
+          "Check 2: the five reasons for dumping add to the 60 returns.",
+          "Check 3: the ticks in the multiple-response item equal the sum of its four rows.",
+          "Check 4: ten forms re-checked against their code-sheet lines; one slip found and corrected.",
+          "Percentages worked to one decimal place and rounded at the end, so tables still add to 100%."
+        ]
+      },
+      {
+        "heading": "Method of investigation: limitations and the ethics of asking neighbours",
+        "body": "The limits were written down before the data was collected, so that the report would not later pretend to more than the survey can carry. The largest limit is that nothing was measured: every number in this study is what a resident said, and a resident who is tired, or who suspects the questionnaire is really about the council, may answer differently from a resident who is not. The second is the deliberate over-sampling of the lane beside the gully, which makes the community figures a comparison rather than an estimate. The third is size: 60 returns split four ways leaves some groups too small to read, and those groups are reported but never compared.\n\nThe ethics of a survey carried out among people who know the interviewer were dealt with in four ways. No names, house numbers or addresses were written on any form. The purpose of the study was explained before the first question, and any household could stop. No one was asked whether they personally dump waste, because an honest answer to that question could not be protected in a community this size, and the item was left out of the questionnaire for that reason. Lastly the question about illness asks only what the respondent links to the dump, which is a fair question, rather than asking a survey to diagnose what only a doctor can diagnose.",
+        "bullets": [
+          "Self-report: every figure is what a resident said; nothing was measured directly.",
+          "Deliberate over-sampling of the lane beside the gully, so zone figures are always shown beside the other zones.",
+          "Small cells: 60 returns split four ways leaves groups such as the 3 retired residents too small to compare.",
+          "One dry season only: the study cannot say what the gully is like when the rains come.",
+          "No names, house numbers or addresses on any form; the purpose was explained before the first question.",
+          "Nobody was asked whether they personally dump waste, because an honest answer could not be protected.",
+          "Illness is recorded as the respondent's own opinion and was not checked against any clinic or doctor."
+        ]
+      },
+      {
+        "heading": "Data presentation: the sixty returns and how the sample breaks down",
+        "body": "Sixty of the 80 questionnaires issued were returned, a response rate of 75.0%. The table below shows how the returns were spread across the four zones, which is the first thing any reader needs in order to read the rest of the tables: a figure of 22 means 22 households on the lane that borders the gully, and it cannot be read as though it were 22 households drawn from the community at large.\n\nThe response rates themselves are worth a line, because they are uneven. The Junction returned 9 of 10 issued, while Seaview Close returned 12 of 17. The lower rate in Seaview Close is reported rather than explained away: the houses there are behind gates and several visits were needed.",
+        "table": {
+          "caption": "Questionnaires issued and returned, by zone",
+          "columns": [
+            "Zone",
+            "Households in the zone",
+            "Questionnaires issued",
+            "Returned",
+            "Response rate"
+          ],
+          "rows": [
+            [
+              "Zone A - Running Gut Lane",
+              "120",
+              "30",
+              "22",
+              "73.3%"
+            ],
+            [
+              "Zone B - Top Road",
+              "95",
+              "23",
+              "17",
+              "73.9%"
+            ],
+            [
+              "Zone C - Seaview Close",
+              "75",
+              "17",
+              "12",
+              "70.6%"
+            ],
+            [
+              "Zone D - The Junction",
+              "50",
+              "10",
+              "9",
+              "90.0%"
+            ],
+            [
+              "All four zones",
+              "340",
+              "80",
+              "60",
+              "75.0%"
+            ]
+          ]
+        },
+        "bullets": [
+          "Every return is anonymous: the zone is the smallest unit that can be identified from a form.",
+          "The sample is about 24% of the 340 households in the community, above the fifth the guide suggests.",
+          "Who answered: H 38 (63.3%); V 10 (16.7%); Y 9 (15.0%); S 3 (5.0%).",
+          "Household size: 1-2 8 (13.3%); 3-4 31 (51.7%); 5-6 17 (28.3%); 7 or more 4 (6.7%).",
+          "Years lived in the community: Under 5 years 14 (23.3%); 5-14 years 22 (36.7%); 15-29 years 17 (28.3%); 30 years or more 7 (11.7%).",
+          "Age of the respondent: Under 25 11 (18.3%); 25-44 27 (45.0%); 45-64 16 (26.7%); 65 or over 6 (10.0%)."
+        ]
+      },
+      {
+        "heading": "Data presentation and results: how often waste is collected, by zone",
+        "body": "This is the service measure, and it is the table the central explanation is tested against. It reports what each household said about its own collection, not about the district in general, which is the rewording the trial of the questionnaire produced.\n\nRead across the total column and the service looks poor but not absent: 9 households (15.0%) are collected twice a week, 26 (43.3%) once a week, 19 (31.7%) once a fortnight and 6 (10.0%) less often than that. Read down the Zone A column and the pattern changes: on the lane beside the gully only 1 of the 22 households (4.5%) is collected as often as twice a week, and 14 of the 22 (63.6%) wait a fortnight or longer.",
+        "table": {
+          "caption": "Question 6: how often the household's garbage is collected, by zone",
+          "columns": [
+            "Frequency of collection",
+            "Zone A",
+            "Zone B",
+            "Zone C",
+            "Zone D",
+            "All returns",
+            "Share of the sample"
+          ],
+          "rows": [
+            [
+              "Twice a week",
+              "1",
+              "4",
+              "3",
+              "1",
+              "9",
+              "15.0%"
+            ],
+            [
+              "Once a week",
+              "7",
+              "8",
+              "7",
+              "4",
+              "26",
+              "43.3%"
+            ],
+            [
+              "Once a fortnight",
+              "10",
+              "4",
+              "2",
+              "3",
+              "19",
+              "31.7%"
+            ],
+            [
+              "Less often than that",
+              "4",
+              "1",
+              "0",
+              "1",
+              "6",
+              "10.0%"
+            ],
+            [
+              "All returns",
+              "22",
+              "17",
+              "12",
+              "9",
+              "60",
+              "100.0%"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Data presentation and results: the main reason people dump (Question 7)",
+        "body": "Question 7 asked each respondent for the single main reason, so these five counts add to the 60 returns and the percentages mean what they say. Irregular collection leads with 22 respondents (36.7%), and it leads by a distance: the next reason, the absence of a bin or skip close enough, was named by 13 (21.7%), and the two together account for 35 of the 60 answers, or 58.3%.\n\nThe bottom of the table is as informative as the top. Only 6 respondents (10.0%) put the cost of carrying waste to the dump first, and the Junction is where half of those answers come from, which is what a reader would expect of the households furthest from the gully and nearest the market. The two answers that blame other people - that the authorities do not act and that no one is fined - together account for 19 answers (31.7%), and they are examined separately in the analysis.",
+        "table": {
+          "caption": "Question 7: the main reason people dump waste in the gully",
+          "columns": [
+            "Reason named as the main one",
+            "Respondents",
+            "% of the 60 returns",
+            "Rank"
+          ],
+          "rows": [
+            [
+              "Garbage is not collected often enough",
+              "22",
+              "36.7%",
+              "1"
+            ],
+            [
+              "There is no bin or skip close enough",
+              "13",
+              "21.7%",
+              "2"
+            ],
+            [
+              "The authorities do not act, so people lose hope",
+              "11",
+              "18.3%",
+              "3"
+            ],
+            [
+              "The Council does not fine anyone",
+              "8",
+              "13.3%",
+              "4"
+            ],
+            [
+              "It costs too much to carry waste to the dump",
+              "6",
+              "10.0%",
+              "5"
+            ],
+            [
+              "All reasons",
+              "60",
+              "100.0%",
+              "-"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Data presentation and results: the two charts and how they were drawn",
+        "body": "Two charts carry the report. The first is a bar chart of the main-cause question: the five reasons along the horizontal axis in the order of the table, the number of respondents up the vertical axis from 0 to 25 in steps of 5, and the five bars standing at 22, 13, 11, 8 and 6. The tallest bar is 1.7 times the height of the next one, and the whole chart reaches only about four fifths of the way up the axis. The scale was deliberately left at 0-25 rather than cut off at 10: a cut axis would have made the same five bars look far more dramatic than the counts justify, and a chart that exaggerates is worse than no chart.\n\nThe second is a pie chart of collection frequency, built from the same returns as the frequency table. Each sector was calculated rather than guessed: 9 of 60 households is 54.0 degrees of the circle, 26 is 156.0 degrees, 19 is 114.0 degrees and 6 is 36.0 degrees, and the four sectors were then checked to add to 360.0 degrees before the chart was drawn. Every sector carries its label, its count and its percentage, so the chart can be read without a legend.",
+        "bullets": [
+          "Bar chart - axes: the five reasons along the horizontal axis; respondents from 0 to 25 up the vertical axis, in steps of 5, labelled.",
+          "Bar chart - heights: 22, 13, 11, 8 and 6, in the order of the main-cause table.",
+          "Bar chart - why the scale was not cut: a 0-25 axis keeps the gap of 9 between the first and second bars honest.",
+          "Pie chart - angles: 54.0 degrees for twice a week, 156.0 degrees for once a week, 114.0 degrees for once a fortnight and 36.0 degrees for less often, which add to 360.0 degrees.",
+          "Pie chart - labelling: each sector carries the frequency, the count and the percentage; the number of households is shown in the title.",
+          "Both charts show the count in the data table beside them, so a reader who cannot see the colours can still read every figure."
+        ]
+      },
+      {
+        "heading": "Data presentation and results: what makes dumping easy, and who is seen doing it",
+        "body": "The multiple-response item was answered by ticking any of four statements, so the counts below are ticks and not percentages of respondents; the 115 ticks recorded across the 60 returns average 1.92 per household. The most-ticked statement is the hidden gully, which 41 households named (68.3%), and it is the physical fact that matches the place the question is about. The unlit lane follows with 33 (55.0%) and the unfenced empty lots with 27 (45.0%).\n\nThe remaining two tables on this page face the community's own behaviour, which is harder to ask about than service or landscape and had to be done carefully. 26 respondents (43.3%) say they have seen a person dumping, and a further 19 (31.7%) suspect they know who it is but will not say; only 15 (25.0%) claim not to know of anyone. Nobody was asked whether they dump waste themselves, so these figures measure how visible dumping is, not how many people do it.",
+        "table": {
+          "caption": "Question 8: which things make it easy to dump waste here (ticks, not respondents)",
+          "columns": [
+            "Statement ticked",
+            "Ticks",
+            "% of the 60 returns"
+          ],
+          "rows": [
+            [
+              "The gully behind the playing field is out of sight",
+              "41",
+              "68.3%"
+            ],
+            [
+              "The lane has no lights at night",
+              "33",
+              "55.0%"
+            ],
+            [
+              "Empty lots are unfenced",
+              "27",
+              "45.0%"
+            ],
+            [
+              "The old bus shelter hides the road",
+              "14",
+              "23.3%"
+            ],
+            [
+              "All ticks recorded (mean per household: 1.92)",
+              "115",
+              "47.9%"
+            ]
+          ]
+        },
+        "bullets": [
+          "How often dumped waste is seen: R 4 (6.7%); MW 25 (41.7%); D 18 (30.0%); NT 11 (18.3%); N 2 (3.3%).",
+          "Knows who dumps: NO 15 (25.0%); SUSP 19 (31.7%); SEEN 26 (43.3%).",
+          "One adult in a household that had been collecting bags for a week said the bag is left at the gully mouth on the way to work, not carried there (written answer to item 20, INVENTED)."
+        ]
+      },
+      {
+        "heading": "Data presentation and results: the answers to the other items in brief",
+        "body": "The main tables carry the questions the study turns on. The remaining items are reported here in one place so that a marker can see that the whole questionnaire was counted and not only the questions that suited the argument. Counts are out of the 60 returns unless the note says otherwise, and the illness item is counted out of the 24 households that answered yes to it.\n\nTwo of these summaries matter to the recommendations later. Only 14 of the 60 households had ever reported the dumping, and of those 14 the largest group - 9 households - got no reply at all, which is a finding about the official route and not about the neighbours. Against that, 41 households (68.3%) say they would join a clean-up and 22 (36.7%) would pay a small monthly fee for a reliable private collection, so the willingness to act is not the missing piece.",
+        "bullets": [
+          "Item 4 - main work in the household: Trades and construction 14 (23.3%); Market and shop work 10 (16.7%); Domestic work 12 (20.0%); Transport 8 (13.3%); Retired or none 6 (10.0%); Other 10 (16.7%).",
+          "Item 11 - a household illness the respondent links to the dump: yes 24 (40.0%), no 36 (60.0%).",
+          "Item 12 - what was reported, among the 24 households that answered yes: Colds and flu 9 (37.5%); Stomach complaints 6 (25.0%); Skin rashes 5 (20.8%); Breathing trouble 4 (16.7%).",
+          "Item 13 - ever reported the dumping: Yes 14 (23.3%); No 46 (76.7%).",
+          "Item 14 - where the report was made, among the 14 who reported: Parish council 8 (57.1%); Health department 4 (28.6%); The school 2 (14.3%).",
+          "Item 15 - what came back, among the 14 who reported: No reply at all 9 (64.3%); A promise, nothing since 3 (21.4%); An officer came to look 1 (7.1%); The pile was cleared 1 (7.1%).",
+          "Item 16 - would join a community clean-up: Yes 41 (68.3%); No 7 (11.7%); Only if others help 12 (20.0%).",
+          "Item 17 - what would make dumping less likely: A bin or skip closer to the lane 23 (38.3%); More collections each week 19 (31.7%); Fines for dumping 11 (18.3%); Anything else 7 (11.7%).",
+          "Item 18 - would pay a small monthly fee for a reliable collection: Yes 22 (36.7%); No 24 (40.0%); Only if the service is reliable 14 (23.3%).",
+          "Item 20 - an answer was written on 31 of the 60 forms; the three repeated themes were the smell, the mosquitoes and the fear that a child will fall into the gully."
+        ]
+      },
+      {
+        "heading": "Analysis and interpretation: what the counts show about the causes",
+        "body": "The counts point to one explanation more strongly than to the others. Irregular collection was named as the main reason by 22 of the 60 respondents (36.7%), and the service table lets that answer be tested rather than merely repeated: all 22 of those respondents live in households whose garbage is collected once a week or less often, and not one of the 9 households collected twice a week named it. Put the other way round, 43.1% of the respondents who named irregular collection are in the group with the weakest service, against 76.3% of the respondents who named something else. Two questions that were asked separately produce a pattern that fits together, and that is the strongest evidence in the study.\n\nThe second answer is not a weaker version of the first but a different complaint. The absence of a bin or skip close enough was named by 13 respondents (21.7%) who did not name collection frequency, and it is about distance and equipment rather than about how often the truck comes. The physical item supports it: the hidden gully was ticked by 41 households (68.3%) and the unlit lane by 33 (55.0%), so a resident with a full bag has both an opportunity - a place where it cannot be seen - and a reason. It is worth noticing what this does to the usual explanation of laziness: the two answers the data actually support are both about what the community is provided with, not about how much residents care.\n\nThe two answers that blame others behave differently under the same test. The belief that the authorities do not act was named by 11 respondents (18.3%) and the absence of fines by 8 (13.3%), but unlike collection frequency, neither is backed by a second question in the survey. A respondent who believes the council has given up may be right, and the minutes of the Association - three reports of missed collections in one term - point the same way, but the survey asked for a belief and got one, and it cannot do more than say so. 9 of the 14 respondents who had ever reported the dumping (64.3%) received no answer at all, which is at least evidence that reporting has not worked, even if it cannot show why."
+      },
+      {
+        "heading": "Analysis and interpretation: comparing the groups and testing the links",
+        "body": "A survey of 60 households cannot support every difference that looks interesting, so each comparison that is used in this report was tested against the margin for numbers of this size first. For a single proportion on 60 returns the margin is about 12.7 points, and for a comparison between the 22 returns from the lane and the 38 from everywhere else it is smaller or larger depending on the figures being compared. A difference smaller than its own margin is not evidence of anything, however striking it looks in the table, and one difference in this study is discarded for exactly that reason.\n\nThe strongest association is the one between where a respondent lives and whether the household reported an illness it links to the dump: 15 of the 22 on the lane (68.2%) against 9 of the 38 elsewhere (23.7%), a gap of 44.5 points where the margin is 23.7 points. The visibility figures point the same way: 13 of 22 on the lane (59.1%) see dumped waste every day against 5 of 38 elsewhere (13.2%), a gap of 45.9 points against a margin of 23.2 points. The answer on the main cause, by contrast, does not differ between the zones by anything that can be read: 9 of 22 on the lane (40.9%) against 13 of 38 elsewhere (34.2%), a gap of 6.7 points where the margin is 25.5 points. That is worth stating plainly, because it is the kind of difference a candidate is tempted to write up as a finding; on this evidence the two groups name the same cause, and the study does not get to claim otherwise.",
+        "table": {
+          "caption": "Cross-tabulations used in the analysis, each with its own margin",
+          "columns": [
+            "Comparison",
+            "The figures",
+            "Gap",
+            "Margin for numbers this size",
+            "How it is read"
+          ],
+          "rows": [
+            [
+              "Main cause is irregular collection, by collection frequency",
+              "22 of the 51 respondents who named it are collected once a week or less often (43.1%); 0 of the 9 twice-a-week households named it (0.0%)",
+              "confined to one group",
+              "not needed - a whole group agrees",
+              "Kept: the explanation is confined to the households with the weakest service."
+            ],
+            [
+              "Reported household illness, by zone",
+              "Lane 15 of 22 (68.2%); other zones 9 of 38 (23.7%)",
+              "44.5 points",
+              "23.7 points",
+              "Kept as an association, not as proof: the illness is self-reported and unverified."
+            ],
+            [
+              "Seeing dumped waste every day, by zone",
+              "Lane 13 of 22 (59.1%); other zones 5 of 38 (13.2%)",
+              "45.9 points",
+              "23.2 points",
+              "Kept: visibility really is concentrated on the lane beside the gully."
+            ],
+            [
+              "Naming irregular collection as the main cause, by zone",
+              "Lane 9 of 22 (40.9%); other zones 13 of 38 (34.2%)",
+              "6.7 points",
+              "25.5 points",
+              "Discarded: the gap is inside the margin, so the zones do not differ here."
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Discussion: how far the evidence supports each explanation",
+        "body": "Taking the three explanations in turn, the case for irregular collection is the one the data carries. It is not merely the most frequent answer; it is an answer given by 43.1% of the households with the weakest service and by none of the households collected twice a week, and it is echoed by the physical evidence that the gully is hidden and the lane is unlit. A household that waits a fortnight for a truck and lives beside a hidden gully does not have to be careless to end up leaving a bag on the bank; it only has to be ordinary.\n\nThe case for distance and equipment is also carried, though by fewer answers, and it is the reason the first recommendation is a skip rather than a lecture. It is worth noting that these two explanations can be addressed together: a skip at the gully mouth is useful chiefly if it is emptied, and an extra collection is useful chiefly if there is somewhere to put the waste between visits.\n\nThe case against the community's own habits, by contrast, is not one the survey can make. The figures show that dumping is known (43.3% have seen it and a further 31.7% suspect who does it), but knowing about a practice is not the same as practising it, and the questionnaire deliberately did not ask the one question that would have settled it. What the survey can say is that the explanation of pure indifference fits the evidence less well than the explanation of an ordinary household managing a service that does not reach it often enough.",
+        "bullets": [
+          "Supported: irregular collection, by the cross-check between items 6 and 7 (22 households, all of them with a collection once a week or less often).",
+          "Supported: no bin or skip close enough, by item 7 (21.7%) together with the hidden gully in item 8 (68.3%).",
+          "Partly supported: the belief that reporting is useless - 9 of the 14 who reported got no reply, but the survey cannot show why.",
+          "Not supported as an explanation: indifference alone, since the answers that the data does support are about provision rather than attitude.",
+          "Not established: that the illnesses reported are caused by the dump. The association by zone is strong and is kept; the cause is not something a questionnaire can show."
+        ]
+      },
+      {
+        "heading": "Discussion: what this survey cannot show, and what would settle it",
+        "body": "Four things limit what can be concluded, and each one is stated with the effect it has on the answer rather than as a formality. First, the survey asked people what they think, so the figures describe reported causes, not measured ones; a household may misread its own reasons, and the one group that could say most about dumping - the people doing it - was deliberately not asked. Second, the sample was stratified so that the lane beside the gully is compared with the rest of the community, which is what the question needed, but it is not a random sample of Harmony Gardens and it cannot be projected onto the community without that qualification. Third, the illness figures are associations: nobody was examined, and the illness item records what a respondent links to the dump. Fourth, the survey ran in one dry month, so it says nothing about what the channel is like when the rains push the water up.\n\nWhat would settle the open questions is not a bigger questionnaire but different evidence: the council's own collection records for the lane over two years, to test the claim that collections have been missed; a count of what is actually dumped, taken by the class on the same mornings each week, to give the visibility figures a measured companion; and the health centre's figures for the zones, which could be compared with the reported illness carefully and without naming anybody. Those are the studies this one would hand on to.",
+        "bullets": [
+          "Reported causes, not measured causes - and the households doing the dumping were not asked.",
+          "A stratified comparison, not a random sample of the community: the zone figures are never projected onto the whole community.",
+          "Illness by association only: no examination, no clinic record, no medical judgement.",
+          "One dry season, one gully, four roads; nothing here says what happens when the rains come.",
+          "To settle it: two years of council collection records, a counted weekly survey of what is dumped, and the health centre's zone figures."
+        ]
+      },
+      {
+        "heading": "Findings and recommendations: the five findings",
+        "body": "Each finding is stated with the evidence behind it and a confidence that says how much weight it will carry. The confidence is not decoration: it is the difference between the first finding, which rests on two questions agreeing, and the fourth, which rests on answers nobody verified.",
+        "bullets": [
+          "Finding 1 - Irregular collection is the strongest single explanation (high confidence). 22 of 60 respondents (36.7%) named it as the main cause, and all 22 of them - and none of the 9 twice-a-week households - are households whose own collection comes once a week or less often.",
+          "Finding 2 - Distance to a bin is a second and separate barrier (moderate confidence). 13 of 60 (21.7%) named the absence of a nearby bin or skip, and 41 of 60 (68.3%) ticked the hidden gully as a place waste can be left unseen.",
+          "Finding 3 - Dumping is visible and known on the lane (high confidence). 13 of the 22 residents there (59.1%) see dumped waste every day against 5 of 38 elsewhere (13.2%), and 26 of 60 (43.3%) say they have seen a person dump.",
+          "Finding 4 - Reported illness tracks the lane, but the illness is unverified (low confidence; association only). 15 of 22 on the lane (68.2%) report a household illness they link to the dump against 9 of 38 elsewhere (23.7%).",
+          "Finding 5 - The willingness to act is already there (moderate confidence). 41 of 60 (68.3%) would join a clean-up and 22 of 60 (36.7%) would pay a small monthly fee for a reliable service, yet only 14 of 60 had ever reported the dumping and 9 of the 14 who did got no reply."
+        ]
+      },
+      {
+        "heading": "Findings and recommendations: what the community should do next",
+        "body": "The recommendations follow the findings rather than a general wish to be cleaner. The first two answer the explanations the data supports - collection and distance - and the rest make the community's own efforts visible and keep a record of what is asked for. Each one names who would do the work, what it would cost roughly, and the figure that would show it working by the end of next term, so that the community can tell in three months whether it helped. Costs are the community's own estimate in Jamaican dollars and not a quotation.",
+        "table": {
+          "caption": "Five recommendations, with the person responsible, the cost and the test of success",
+          "columns": [
+            "Recommendation",
+            "Who would do it",
+            "Rough cost",
+            "How success is measured"
+          ],
+          "rows": [
+            [
+              "Ask the parish council for a third skip beside the gully mouth on the lane, emptied with the same rounds",
+              "Citizens' Association, with the class writing the letter",
+              "No charge to the community; a request to the council",
+              "Missed collections recorded at the notice board fall below one a month"
+            ],
+            [
+              "Ask for two extra collections a week on the lane while the skip is in use",
+              "Association, in the same letter",
+              "The council's own collection route",
+              "No household on the lane waits longer than a week in the Association's monthly check"
+            ],
+            [
+              "Clear the sight-lines at the gully mouth and repair the two lane lights that are out",
+              "Parish council works department, requested in writing",
+              "Materials only; labour from the works department",
+              "The two lights work on four spot checks and the gully mouth can be seen from the road"
+            ],
+            [
+              "Post the collection timetable at the junction and on the school notice board",
+              "The class, using the council's own timetable",
+              "Printing, about J$1,000",
+              "20 of the next 40 people asked can say the two collection days"
+            ],
+            [
+              "Run one clean-up a term with the school environmental club and count the bags removed",
+              "School club with Association members",
+              "Gloves and bags donated by two junction businesses",
+              "Bags removed are counted each term and fall from one term to the next"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Conclusion: the research question answered",
+        "body": "The question asked what the main causes of illegal dumping in the Harmony Gardens gully are and what residents believe would reduce it, and the survey of 60 households answers it as follows. The leading cause is that the household waste service does not reach the lane often enough: 36.7% of the sample named irregular collection as the main reason, and every one of those respondents is in a household collected once a week or less often, while none of the nine households collected twice a week agreed. The second cause is the absence of somewhere close and suitable to put waste - a bin or skip nearby - and it is the same story seen from the other end: the gully is hidden, the lane is unlit, and 68.3% of the sample ticked the hidden gully as what makes dumping easy. The belief that the authorities do not act is widespread (18.3% named it first), and the fact that 9 of the 14 respondents who had ever reported the dumping received no reply at all gives that belief something to stand on, even though a survey cannot show that it is correct in every case.\n\nOn what would reduce it, the residents' own answers point the same way as the causes: a bin or skip closer to the lane was ticked by 23 of 60 (38.3%) and more collections each week by 19 (31.7%), while 24 households (40.0%) put a nearby illness to the dump and 41 (68.3%) would join a clean-up. Nothing in the data supports the conclusion that the community does not care; what it supports is that the community is being asked to manage a service that fails at the point where it matters most.\n\nTwo things must travel with that conclusion. The first is that the sample was deliberately built so that the lane beside the gully could be compared with the rest of the community, so the percentages describe 60 households and are not an estimate for Harmony Gardens as a whole. The second is that the illness figures are what residents report, not what a doctor found. Within those limits the answer is clear, and it is an answer about provision - the frequency of collection and the distance to a bin - rather than about attitude. The recommendations on the previous page follow from that answer and can be tested within a term.",
+        "bullets": [
+          "Main cause: collection frequency (36.7% of the sample), confirmed by the cross-check between the two questions.",
+          "Second cause: the distance to a bin or skip (21.7%), with the hidden gully named by 68.3%.",
+          "Widespread belief, partly supported: the authorities do not act (18.3% first), with 9 of the 14 who reported getting no reply.",
+          "The remedy residents named most: a bin or skip closer to the lane (38.3%), then more collections each week (31.7%).",
+          "The limits that travel with the answer: a stratified 60, self-reported causes, one dry season, and illnesses that were never medically checked."
+        ]
+      },
+      {
+        "heading": "Bibliography and the note on the invented sources",
+        "body": "In a real submission this page would carry the council's collection timetable, the Association's minutes, the interview notes and the observation record, each with the date it was gathered. Because this sample is written for teaching, the community does not exist and none of those documents does either. Every one of them is invented, and every one is tagged INVENTED below so that no reader mistakes it for a record of a real community. The method they illustrate - gather your own primary evidence, label what is yours, cite what is not - is the part that transfers to a candidate's own project.",
+        "bullets": [
+          "The 60 completed questionnaires and the code sheet built from them: the primary data for this study. INVENTED.",
+          "Observation walks along the lane on four mornings (18 and 25 March, 1 and 8 April): counts of bags at the gully mouth and the state of the two skips. INVENTED.",
+          "Harmony Gardens Citizens' Association, minutes of the meetings of 14 February and 9 May: three reports of missed collections and the Association's letter to the parish council. INVENTED.",
+          "Interview with the driver of the private skip truck that serves the district, 20 minutes, 3 March: how often the lorry is turned back for want of space. INVENTED.",
+          "The parish council's posted collection timetable for the district, checked at the community notice board on 12 March. INVENTED.",
+          "The class's Form 5 exercise book, where the trial of the questionnaire on five households outside the sample is recorded. INVENTED.",
+          "Method guidance followed: the six SBA sections and their marks as set out in the CSEC Compass Social Studies guide used in class; sampling and the margin of error as taught in the class notes on survey method."
+        ]
+      },
+      {
+        "heading": "Appendix: the questionnaire as it was issued",
+        "body": "Harmony Gardens community survey, Social Studies SBA. Your answers are anonymous: no name, house number or address is written on this form, and the form is only ever counted with the others from your zone. The study is a school project about the gully behind the playing field. Please answer for your own household and hand the form back to the student who gave it to you. Thank you.\n\nInstructions to the respondent: tick one box unless the item says otherwise; item 8 allows you to tick as many as apply; item 20 is for anything you want to add in your own words.",
+        "bullets": [
+          "1. Which zone of Harmony Gardens do you live in? (Running Gut Lane / Top Road / Seaview Close / The Junction)",
+          "2. How many people live in this household? (1-2 / 3-4 / 5-6 / 7 or more)",
+          "3. How long have you lived in Harmony Gardens? (under 5 years / 5-14 / 15-29 / 30 or more)",
+          "4. What is the main work of the person who earns most in this household?",
+          "5. Who is answering this questionnaire? (householder / vendor / student / other)",
+          "6. How often is this household's garbage collected? (twice a week / once a week / once a fortnight / less often)",
+          "7. In your opinion, what is the MAIN reason people dump waste in the gully? (tick ONE of the five reasons listed)",
+          "8. Which of these make it easy to dump waste here? (tick ALL that apply: the gully is out of sight / the lane has no lights / empty lots are unfenced / the bus shelter hides the road)",
+          "9. How often do you see waste that has been dumped in the gully? (every day / most weeks / now and then / rarely / never)",
+          "10. Do you know anyone who dumps waste there? (I have seen them / I suspect but cannot say / no)",
+          "11. Has anyone in this household been ill in the last year in a way you link to the dump? (yes / no)",
+          "12. If yes, what kind of illness? (colds and flu / stomach complaints / skin rashes / breathing trouble)",
+          "13. Have you ever reported the dumping? (yes / no)",
+          "14. If yes, to whom? (parish council / health department / the school / other)",
+          "15. What was the reply? (no reply at all / a promise, nothing since / an officer came to look / the pile was cleared)",
+          "16. Would you help in a community clean-up? (yes / no / only if others help)",
+          "17. What would make dumping less likely here? (a bin or skip closer to the lane / more collections each week / fines for dumping / anything else)",
+          "18. Would you pay a small monthly fee for a private collection? (yes / no / only if the service is reliable)",
+          "19. How old are you? (under 25 / 25-44 / 45-64 / 65 or over)",
+          "20. Is there anything else you want to say about the gully?"
+        ]
+      }
+    ],
+    "examinerNotes": [
+      "The question is narrow enough for one student to answer with one questionnaire, and every figure in the report is computed from the 60 returned forms, so a marker can follow any number back to the appendix instead of having to take it on trust.",
+      "The instrument is designed so that the central explanation can be tested against a second item: all 22 respondents who named irregular collection are households collected once a week or less often, and none of the 9 twice-a-week households agreed. The candidate built that cross-tabulation; it was not asserted in prose.",
+      "The report shows the arithmetic a CSEC candidate is expected to show: response rates by zone, percentages, the mean number of opportunities ticked (1.92), the projection onto 340 households, the pie-chart sector angles, and a margin of error for a sample of 60.",
+      "It then uses that margin honestly. The difference between the zones on the main cause is inside the margin and is openly discarded, while the much larger difference on reported illness is kept - and even that is called an association, with the illness admitted as unverified.",
+      "The limitations section is specific rather than decorative - self-reported answers, one deliberately over-sampled lane, no measurement of the waste actually dumped, no medical check on the illnesses - and each one is followed by its effect on the conclusion.",
+      "The recommendations come out of the data (a third skip and two extra collections on the lane), they name who would do the work, a rough cost and the figure that would show it working, so the project ends with something the community could act on and later judge."
+    ]
+  }
 }
