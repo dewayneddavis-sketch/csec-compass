@@ -80,11 +80,26 @@ for (const id of shipped) {
             `${at}: one category row per Task Breakdown entry (${cats.length} vs ${tasks.length})`);
         for (const t of tasks) ok(cats.some((x) => x.section === t), `${at}: category row for "${t}"`);
     }
+    const declaredMarks = new Map((guide.tasks || []).map((t) => [t.section, String(t.marks).trim()]));
     for (const cat of cats) {
+        const want = declaredMarks.get(cat.section);
+        ok(want === undefined || String(cat.marks).trim() === want,
+            `${at}: "${cat.section}" carries the marks its Task Breakdown declares (${want}), not ${cat.marks}`);
         const max = parseInt(cat.marks, 10);
         const got = parseInt(cat.awarded, 10);
-        ok(Number.isFinite(max) && Number.isFinite(got) && got <= max && got > 0,
-            `${at}: "${cat.section}" awards ${cat.awarded} of ${cat.marks}`);
+        // A category the Task Breakdown itself leaves unmarked (english-a's Artifacts,
+        // assessed through the reflections and the group report) must say N/A on BOTH
+        // sides - no invented out-of-nothing marks. Everything else must still be a
+        // real award of at least one mark out of its declared maximum.
+        const isNA = /^N\/?A$/i.test(String(cat.marks).trim());
+        if (isNA) {
+            ok(/^N\/?A$/i.test(String(cat.awarded).trim()),
+                `${at}: "${cat.section}" is unmarked in the Task Breakdown, so it awards N/A (got ${cat.awarded})`);
+            ok(want !== undefined, `${at}: "${cat.section}" N/A row matches an unmarked Task Breakdown entry`);
+        } else {
+            ok(Number.isFinite(max) && Number.isFinite(got) && got <= max && got > 0,
+                `${at}: "${cat.section}" awards ${cat.awarded} of ${cat.marks}`);
+        }
         ok(typeof cat.comment === "string" && cat.comment.length > 60,
             `${at}: "${cat.section}" explains what earned the marks`);
     }
