@@ -67,5 +67,1009 @@
     "Title block, scales and north point present",
     "Lettering neat and legible",
     "Evaluation names problems and improvements"
-  ]
+  ],
+  "completedSample": {
+    "title": "A complete, full-mark Technical Drawing SBA: a two-bedroom dwelling of about 70 square metres on a sloping plot, with the wall take-off, the block order, the roof set out and three construction details (54 marks)",
+    "viewOnlyNote": "For viewing and learning only. This is an original worked example written for CSEC Compass, not a real candidate's drawing folder and not a CXC exemplar. The candidate, the centre, the plot, its levels and every quantity, price and time in it are invented for this sample, and every figure in the tables is worked out from the drawings described here. Read it for the method: a site measured before a line is drawn, a design chosen on measured wall and circulation areas, a take-off in which the blockwork reproduces the guide's own 186 square metres from the wall line less the openings plus the plinth, the two corrections a full-mark set still contains, and an evaluation that shows the drawings were used to cost the work. This sample cannot be copied.",
+    "profile": [
+      {
+        "label": "Candidate",
+        "value": "Sample Candidate (invented)"
+      },
+      {
+        "label": "Centre",
+        "value": "Sample Secondary School (invented)"
+      },
+      {
+        "label": "Subject",
+        "value": "Technical Drawing - School-Based Assessment (54 marks in our guide, six parts)"
+      },
+      {
+        "label": "Project",
+        "value": "A two-bedroom dwelling of about 70 square metres on a sloping plot"
+      },
+      {
+        "label": "Plot",
+        "value": "12.000 x 20.000 m, falling 1.150 m to the rear (invented)"
+      },
+      {
+        "label": "Drawings issued",
+        "value": "12 sheets: 7 at A2, 5 at A3, three revisions"
+      },
+      {
+        "label": "Headline take-off",
+        "value": "186.00 sq m of blockwork and 2,269 blocks, from a 70.40 m wall line"
+      },
+      {
+        "label": "Drawing time",
+        "value": "30 h 00 min planned, 35 h 15 min actual, 3 h 45 min of it the three revisions"
+      },
+      {
+        "label": "All figures",
+        "value": "Candidate, centre, plot, levels and every quantity are invented for CSEC Compass"
+      }
+    ],
+    "categories": [
+      {
+        "section": "Research and Investigation",
+        "marks": "6",
+        "awarded": "6",
+        "comment": "The site was measured before it was designed: six levels including both boundary pegs, the fall worked out from them (0.780 m across the footprint, 9.3 per cent) and used to fix the floor level and the 21.96 sq m plinth wall, the plot of 240 sq m with its 33.6 per cent coverage, the 6.0 m planning setback, and research into the block catalogue and a dwelling of the same size. Each piece of research is shown changing a decision rather than listed for its own sake."
+      },
+      {
+        "section": "Design Proposal",
+        "marks": "8",
+        "awarded": "8",
+        "comment": "Three distinct layouts are compared on figures rather than on taste: circulation of 12.60 sq m for A, 7.48 for B and 5.60 for C, and blockwork of 215.70, 186.00 and 233.52 sq m, with the two estimated lines labelled as estimates and computed on the same basis as the measured one. Layout B is justified on space, materials, climate and function: the lightest in blockwork, both bedrooms on an external wall, short plumbing runs, and the smallest circulation of the layouts that could take the brief."
+      },
+      {
+        "section": "Working Drawings",
+        "marks": "16",
+        "awarded": "16",
+        "comment": "Twelve sheets at stated scales: a 1:50 plan, foundation plan, roof plan, two elevations and two sections, with the 70.40 m wall line agreeing between the plan, the foundation plan and the take-off, and the 2700 mm floor-to-ceiling height, the 22 degree pitch and the 500 mm overhang agreeing between the sections and the elevations. Correct projection, line types, hatching, hidden detail and a drawn diagonal check (0.34 mm out on the sheet, 17 mm on site) are all evidenced."
+      },
+      {
+        "section": "Construction Details",
+        "marks": "10",
+        "awarded": "10",
+        "comment": "Three details at 1:10 - the foundation with its plinth and the surveyed ground line, the wall and ring beam with the window head and lintel, and the wall plate with the hip junction - each with every material labelled, plus the 1:20 schedule listing 8 doors and 6 windows with their reference, size, sill and head levels and material. The schedule records the revision that moved the bedroom window down 300 mm."
+      },
+      {
+        "section": "Dimensioning and Annotation",
+        "marks": "8",
+        "awarded": "8",
+        "comment": "68 dimensions in 9 strings, complete and given once only after 3 repeated dimensions were removed, dimensioned from the grid lines on the plan and the finished floor level on the section, with level symbols, section arrows, a north point, a title block on every one of the 12 sheets, and 3.5 mm lettering with the scale conversions tabulated to show it survives reduction."
+      },
+      {
+        "section": "Evaluation",
+        "marks": "6",
+        "awarded": "6",
+        "comment": "The set evaluates itself honestly: the three corrections are named in a revision register with what each cost in time (71.4 per cent of the 5 h 15 min overrun), the revision that changed nothing in the block order is said so plainly, the two things to do differently next time are specific (dimension the foundation plan first, settle the roof geometry first), and the drawings are shown being used - the take-off, the 2,269 blocks, the concrete volumes and the costed block bill all come from them."
+      }
+    ],
+    "pages": [
+      {
+        "heading": "Cover page and contents of this Technical Drawing SBA",
+        "body": "This folder is a complete worked example of the Technical Drawing School-Based Assessment: a surveyed plot, three design layouts compared, the chosen layout drawn to a stated scale, a wall take-off and a block order, the roof set out with its true lengths, three construction details at 1:10 with every material labelled, a door and window schedule, and an evaluation that shows what the drawings were used for. The candidate, the centre, the plot, its levels and every quantity in it are invented for CSEC Compass. Every figure is worked out from the drawings described in it: the 70.40 m wall line comes from the plan, the 186.00 sq m of blockwork from that wall line less the 26.04 sq m of openings plus the 21.96 sq m plinth, the floor area of 70.08 sq m from the room schedule, the 107.47 sq m of roof surface from the roof plan at the stated 22 degree pitch, and the 35 h 15 min of drawing time from the sheet register. Nothing in this folder is a real candidate's work, and no CXC exemplar is reproduced anywhere in it.",
+        "bullets": [
+          "The site was surveyed before any line was drawn, and the survey is what fixed the plinth and the floor level (0.780 m of fall across the footprint, 9.3 per cent).",
+          "The layout was chosen on measured wall and circulation areas, not on preference: 186.00 sq m of blockwork against an estimated 215.70 and 233.52 for the other two layouts.",
+          "Every view is reconciled: the plan, the elevations and the section agree on 2700 mm floor to ceiling and 22 degrees of pitch, and the wall line appears on the plan, the foundation plan and the take-off.",
+          "Two corrections are in the folder rather than tidied away, both named in the discussion with what each one cost in time (together 3 h 45 min of the 5 h 15 min overrun).",
+          "The take-off was used for its purpose: the block order (2,269 blocks), the footing and slab concretes and a quotation for the blockwork all come from it."
+        ],
+        "table": {
+          "caption": "Folder contents in submission order (marks as given in our guide)",
+          "columns": [
+            "Part",
+            "What it contains",
+            "Marks"
+          ],
+          "rows": [
+            [
+              "Research and Investigation",
+              "The brief, the surveyed levels, the plot fall and the research that changed the design",
+              "6"
+            ],
+            [
+              "Design Proposal",
+              "Three layouts compared and the chosen one justified on measured wall and circulation areas",
+              "8"
+            ],
+            [
+              "Working Drawings",
+              "Plans, elevations and sections at 1:50, the wall take-off and the roof set out",
+              "16"
+            ],
+            [
+              "Construction Details",
+              "Foundation, wall and hip details at 1:10, and the door and window schedule",
+              "10"
+            ],
+            [
+              "Dimensioning and Annotation",
+              "Complete dimensions given once only, notes, title block, scales and lettering",
+              "8"
+            ],
+            [
+              "Evaluation",
+              "The corrections, the times, and how the drawings would be used on site",
+              "6"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Research and Investigation: the brief, the site and the survey",
+        "body": "The client asked for a two-bedroom dwelling of about 70 square metres on a sloping plot, with the bedrooms facing the street and the living accommodation opening to the garden at the back, down the slope. The plot measures 12.000 x 20.000 m, a little over 240 sq m, and the survey was taken before anything was designed. Six levels were recorded against a datum taken as the finished floor level, and they are in the table below. The ground at the front wall is 220 mm below the floor and at the rear wall 1,000 mm below it: 0.780 m of fall across the 8.4 m depth of the footprint, a gradient of 9.3 per cent, and 1.150 m of fall from the front boundary peg to the rear one over 20.0 m, which is what makes the plot a sloping one. Two consequences follow directly from the survey. The floor was set level at the street side, so the walls at the back stand 1,000 mm above the ground and are built on a plinth wall of 21.96 sq m rather than being cut into the hill and losing the light; and the fall is why Layout C, the courtyard plan, was considered seriously before being rejected on wall area alone. The planning setback of 6.0 m from the front boundary fixed the front line of the building, and the block supplier's catalogue fixed the two wall thicknesses used everywhere in the set, 200 mm external and 100 mm for the internal partitions. A dwelling of the same size in the next road was visited and measured for its floor-to-ceiling height, 2700 mm, and for the 500 mm overhang that keeps the rain off the walls.",
+        "bullets": [
+          "Survey: six levels taken around the footprint and at both boundary pegs, and the gradient worked out from them (0.780 m over 8.4 m).",
+          "Planning: the front setback of 6.0 m that fixes the building line.",
+          "Climate: the long walls face north and south, so the bedrooms take the north light and the living and dining rooms open to the south, with an opening to outside in every habitable room.",
+          "Materials: the block catalogue gave the 200 mm and 100 mm blockwork, and the 400 x 200 mm block whose 410 x 210 mm module is used in the block order.",
+          "Precedent: a dwelling of the same size visited and measured for its 2700 mm ceiling height and 500 mm eaves overhang.",
+          "Cost: research into the local price of blockwork, which is what the final take-off was costed against."
+        ],
+        "table": {
+          "caption": "Site survey: ground level at each station, below the finished floor level",
+          "columns": [
+            "Station",
+            "Below finished floor level (mm)",
+            "Why it matters"
+          ],
+          "rows": [
+            [
+              "Front boundary peg, on the centreline",
+              "350",
+              "Where the plot falls away"
+            ],
+            [
+              "North-east corner of the footprint",
+              "220",
+              "Front (road) wall of the dwelling"
+            ],
+            [
+              "North-west corner of the footprint",
+              "220",
+              "Front wall, as above"
+            ],
+            [
+              "South-east corner of the footprint",
+              "1,000",
+              "Rear wall of the dwelling"
+            ],
+            [
+              "South-west corner of the footprint",
+              "1,000",
+              "Rear wall, as above"
+            ],
+            [
+              "Rear boundary peg, on the centreline",
+              "1,500",
+              "Lowest point surveyed"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Method: how the drawings were set out, checked and recorded",
+        "body": "Every sheet was set out from the same grid: the external wall centreline rectangle of 9400 x 8200 mm was drawn first, and the plan was built up from it, so a wall that moved on one sheet could not quietly disagree with the same wall on another. Plans, elevations and sections are drawn at 1:50, the construction details at 1:10, the schedule at 1:20 and the site plan at 1:200. Twelve sheets were issued, 7 at A2 and 5 at A3, all landscape. The work was recorded as it was done rather than afterwards: the register below carries the scale, the sheet size, the revision number and the planned and actual time for each sheet, and the times are what the evaluation is based on. The checking routine was fixed before the first sheet was drawn, so that every check was made on every drawing rather than on the ones that looked difficult: the internal rectangle was checked by its diagonal (12.192 m, which is 243.8 mm on a 1:50 sheet), the levels were checked from the plan to the section, the window schedule was checked against the plan and the elevation, and each wall was checked for being dimensioned once rather than twice. The sheet register is the record that the checks were actually made: a sheet that had to be corrected appears with a revision number and the reason for it is in the discussion, with what the correction cost in time.",
+        "bullets": [
+          "Set out from one grid: the 9400 x 8200 mm wall centreline rectangle, used on every sheet.",
+          "Check 1, the skeleton: the 12.192 m diagonal of the internal rectangle, measured on the drawn sheet as 243.5 mm and found to be 0.34 mm short, which is 17 mm on site and inside the 25 mm tolerance set for the exercise.",
+          "Check 2, projection: the front and side elevations projected from the plan rather than drawn separately, and the two sections cut on the grid lines shown on the plan.",
+          "Check 3, levels: the 2700 mm floor-to-ceiling height, the 500 mm eaves overhang and the 22 degree pitch checked from the section to the elevations.",
+          "Check 4, openings: the 8 doors and 6 windows on the schedule counted back against the plan and the elevations, one opening at a time.",
+          "Check 5, dimensions: 68 dimensions in 9 strings counted, and any dimension found twice removed (3 were removed at revision R1)."
+        ],
+        "table": {
+          "caption": "Sheet register: what was drawn, at what scale, and how long it took",
+          "columns": [
+            "Sheet",
+            "Title",
+            "Scale",
+            "Size",
+            "Rev",
+            "Planned / actual"
+          ],
+          "rows": [
+            [
+              "1",
+              "Site and location plan",
+              "1:200",
+              "A3",
+              "0",
+              "1 h 30 min / 1 h 30 min"
+            ],
+            [
+              "2",
+              "Foundation plan",
+              "1:50",
+              "A2",
+              "0",
+              "3 h 00 min / 3 h 15 min"
+            ],
+            [
+              "3",
+              "Floor plan",
+              "1:50",
+              "A2",
+              "1",
+              "4 h 00 min / 4 h 30 min"
+            ],
+            [
+              "4",
+              "Roof plan",
+              "1:50",
+              "A2",
+              "1",
+              "3 h 00 min / 5 h 10 min"
+            ],
+            [
+              "5",
+              "Front elevation",
+              "1:50",
+              "A2",
+              "0",
+              "2 h 30 min / 2 h 30 min"
+            ],
+            [
+              "6",
+              "Side elevation",
+              "1:50",
+              "A2",
+              "0",
+              "2 h 30 min / 2 h 45 min"
+            ],
+            [
+              "7",
+              "Section A-A",
+              "1:50",
+              "A2",
+              "1",
+              "3 h 00 min / 4 h 05 min"
+            ],
+            [
+              "8",
+              "Section B-B",
+              "1:50",
+              "A2",
+              "0",
+              "2 h 30 min / 2 h 30 min"
+            ],
+            [
+              "9",
+              "Foundation detail",
+              "1:10",
+              "A3",
+              "0",
+              "2 h 00 min / 2 h 00 min"
+            ],
+            [
+              "10",
+              "Wall and ring beam detail",
+              "1:10",
+              "A3",
+              "0",
+              "2 h 00 min / 2 h 15 min"
+            ],
+            [
+              "11",
+              "Wall plate and hip detail",
+              "1:10",
+              "A3",
+              "0",
+              "2 h 30 min / 2 h 45 min"
+            ],
+            [
+              "12",
+              "Door and window schedule",
+              "1:20",
+              "A3",
+              "0",
+              "1 h 30 min / 2 h 00 min"
+            ],
+            [
+              "12",
+              "Twelve sheets in all",
+              "1:10 to 1:200",
+              "A2 and A3",
+              "3 revisions",
+              "30 h 00 min / 35 h 15 min"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Design Proposal: the three layouts compared",
+        "body": "Three layouts were sketched on the same plot and against the same brief. Layout A put the bedrooms on the road side on both sides of a long corridor through the middle of the plan. Layout B grouped the bedrooms, the bathroom and the closet at the street end of the plan and the living, dining and kitchen at the rear, with a single 1.1 m circulation route between them and openings for cross ventilation on both long sides. Layout C was a courtyard plan: it gave the best ventilation of the three, because every room then has two external walls, but it needed the most wall for the same floor area. Only Layout B was worked up to scale and measured, so its figures in the table are measured from the drawing; the wall lines for A and C are estimated from the sketches and are labelled as estimates, and their blockwork is computed from those estimated wall lines on exactly the same basis as B (wall line at 2700 mm high, less the same 26.04 sq m of openings, plus the same 21.96 sq m plinth). Layout B was selected because it is the lightest of the three in blockwork, costs less in roof and wall, gives both bedrooms an external wall for cross ventilation, and keeps the bathroom, the closet and the kitchen together so that the plumbing runs are short. Layout A was rejected on its circulation: 12.60 sq m of corridor against 7.48 sq m for B, 18.0 per cent of the floor area instead of 10.7. Layout C was rejected on wall area: it outperforms B on ventilation and has the shortest circulation of the three, but it needs an estimated 233.52 sq m of blockwork against 186.00, which is more wall to buy, plaster and maintain for no gain in the rooms the client asked for.",
+        "table": {
+          "caption": "The three layouts: measured for B, estimated from the sketch for A and C",
+          "columns": [
+            "Layout",
+            "Arrangement",
+            "Circulation (sq m)",
+            "Wall line (m)",
+            "Blockwork (sq m)",
+            "Decision"
+          ],
+          "rows": [
+            [
+              "A",
+              "Bedrooms on the road side, long corridor through the middle",
+              "12.60 (estimated)",
+              "81.40 (estimated)",
+              "215.70 (estimated)",
+              "Rejected: corridor too large"
+            ],
+            [
+              "B",
+              "Bedrooms, bathroom and closet at the street end; living, dining and kitchen at the rear",
+              "7.48",
+              "70.40",
+              "186.00",
+              "Selected"
+            ],
+            [
+              "C",
+              "Courtyard plan, every room with two external walls",
+              "5.60 (estimated)",
+              "88.00 (estimated)",
+              "233.52 (estimated)",
+              "Rejected: most wall for the same floor area"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Design Proposal: the chosen layout, its rooms and its areas",
+        "body": "The chosen layout gives 70.08 sq m of floor inside the walls, which is the client's about 70 square metres, in 9 rooms. The two bedrooms take the north, street-facing wall, 11.47 and 9.30 sq m, with the bathroom (4.60 sq m) and a walk-in closet (2.30 sq m) at the east end of the same band; the living room, the dining room and the kitchen run along the south wall and open to the garden. The hall is the whole circulation of the house, 7.48 sq m or 10.7 per cent of the floor area, and it is the only circulation: nothing is reached through another room except the closet, which belongs to bedroom 2 and is entered from it. The hall is entered on its west side, from a path that runs down the boundary from the road, so the front door opens into the circulation and not into a bedroom or the living area. The rooms tile the 9200 x 8000 mm internal rectangle exactly, and the check that they do is in the wall take-off: the room areas of 70.08 sq m plus the 3.52 sq m the eight partitions take up in plan come to the 73.60 sq m of the internal rectangle, to the square centimetre, which is how a missed room or a double-counted wall shows up. The section fixes the floor-to-ceiling height at 2700 mm and the roof at 22 degrees; both are carried unchanged into every other sheet. Thicknesses are 200 mm for the external walls and 100 mm for the partitions, and the room sizes in the table are given between wall faces, which is what the areas are computed from.",
+        "table": {
+          "caption": "Room schedule: internal sizes between wall faces, and the area each room contributes",
+          "columns": [
+            "Room",
+            "Internal size (mm)",
+            "Area (sq m)",
+            "External wall",
+            "Note"
+          ],
+          "rows": [
+            [
+              "Bedroom 1",
+              "3700 x 3100",
+              "11.47",
+              "North",
+              "Bedroom on the north wall"
+            ],
+            [
+              "Bedroom 2",
+              "3000 x 3100",
+              "9.30",
+              "North",
+              "Bedroom on the north wall"
+            ],
+            [
+              "Bathroom",
+              "2300 x 2000",
+              "4.60",
+              "East",
+              "Served by the hall"
+            ],
+            [
+              "Walk-in closet",
+              "2300 x 1000",
+              "2.30",
+              "East",
+              "Entered from bedroom 2"
+            ],
+            [
+              "Hall",
+              "6800 x 1100",
+              "7.48",
+              "West",
+              "The whole circulation of the house"
+            ],
+            [
+              "Store",
+              "2300 x 1100",
+              "2.53",
+              "East",
+              "Served by the hall"
+            ],
+            [
+              "Living room",
+              "2700 x 3600",
+              "9.72",
+              "South",
+              "Living, dining and kitchen along the south wall"
+            ],
+            [
+              "Dining room",
+              "2900 x 3600",
+              "10.44",
+              "South",
+              "Living, dining and kitchen along the south wall"
+            ],
+            [
+              "Kitchen",
+              "3400 x 3600",
+              "12.24",
+              "South and East",
+              "Living, dining and kitchen along the south wall"
+            ],
+            [
+              "Total floor area",
+              "9 rooms",
+              "70.08",
+              "All four aspects",
+              "10.7 per cent of it is circulation"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Results: the wall take-off from the floor plan",
+        "body": "The take-off was made from the floor plan and the foundation plan together. External walls are measured on the wall centreline, 9400 x 8200 mm, giving a perimeter of 35.20 m; internal partitions are measured between the faces of the walls they run into, with each junction counted once, which is why the two long partitions are 9.2 m each - the 9.2 m measured between the faces of the external walls rather than the 9.6 m measured outside them. Every wall is 2700 mm high, measured from the floor to the underside of the wall plate as the section shows it, and the plinth below floor level is taken separately in the next step because it is a different piece of work at a different level. The result is 70.40 m of wall line and 190.08 sq m of gross wall area. The check that nothing has been missed or counted twice is the same one used on the room schedule: the rooms (70.08 sq m) plus the plan area of the eight partitions (3.52 sq m) come to the 73.60 sq m of the internal rectangle, so the walls in this schedule are the walls that enclose the rooms in the schedule above, and there are no others. The external wall line is also the foundation line, which is how the foundation plan was set out and how the concrete in the footing is later measured.",
+        "table": {
+          "caption": "Wall take-off: wall line by wall, all walls 2700 mm high",
+          "columns": [
+            "Wall",
+            "Between",
+            "Length (m)",
+            "Height (m)",
+            "Gross area (sq m)"
+          ],
+          "rows": [
+            [
+              "External",
+              "All round the house, on the 9400 x 8200 mm centreline",
+              "35.20",
+              "2.70",
+              "95.04"
+            ],
+            [
+              "P1",
+              "Bedroom 1, bedroom 2, bathroom and closet from the hall",
+              "9.20",
+              "2.70",
+              "24.84"
+            ],
+            [
+              "P2",
+              "Living room, dining room and kitchen from the hall",
+              "9.20",
+              "2.70",
+              "24.84"
+            ],
+            [
+              "P3",
+              "Bathroom from the walk-in closet",
+              "2.30",
+              "2.70",
+              "6.21"
+            ],
+            [
+              "P4",
+              "Bedroom 1 from bedroom 2",
+              "3.10",
+              "2.70",
+              "8.37"
+            ],
+            [
+              "P5",
+              "Bedroom 2 from the bathroom and the walk-in closet",
+              "3.10",
+              "2.70",
+              "8.37"
+            ],
+            [
+              "P6",
+              "Hall from the store",
+              "1.10",
+              "2.70",
+              "2.97"
+            ],
+            [
+              "P7",
+              "Living room from the dining room",
+              "3.60",
+              "2.70",
+              "9.72"
+            ],
+            [
+              "P8",
+              "Dining room from the kitchen",
+              "3.60",
+              "2.70",
+              "9.72"
+            ],
+            [
+              "Total",
+              "Nine wall lines",
+              "70.40",
+              "2.70",
+              "190.08"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Results: the openings deducted and the block order",
+        "body": "The 190.08 sq m of gross wall carries 15 openings: 8 doors, one cased opening between the living room and the dining room, and 6 windows. Each opening is deducted from the wall it is cut through and nowhere else, which matters because the two wall types are different blocks: the openings in the 200 mm external walls come to 10.92 sq m and the openings in the 100 mm partitions to 15.12 sq m, 26.04 sq m together. That leaves 84.12 sq m of blockwork in the external walls and 79.92 sq m in the partitions, and the deduction is what turns the drawing into an order. Below floor level there is a second piece of wall that the survey bought: the ground stands 220 mm below the floor at the front wall and 1,000 mm at the rear, so the dwelling sits on a plinth wall. It is measured the same way as everything else, from the levels in the research: 9.60 m along the front wall at 0.220 m, 9.60 m along the rear at 1.000 m, and each of the two side walls, 8.40 m long, averaging 0.610 m because the ground falls steadily under it. The plinth is 21.96 sq m. The blockwork to be bought is therefore 84.12 + 79.92 + 21.96 = 186.00 sq m, which is the 186 square metres the guide publishes for this dwelling; the arithmetic below is the same arithmetic, printed in full.",
+        "table": {
+          "caption": "Openings deducted from the wall take-off, each one once",
+          "columns": [
+            "Ref",
+            "Element",
+            "Wall",
+            "Opening size (mm)",
+            "Area (sq m)",
+            "Deducted from"
+          ],
+          "rows": [
+            [
+              "D1",
+              "Front door, hardwood",
+              "West external wall",
+              "1000 x 2100",
+              "2.10",
+              "200 mm wall"
+            ],
+            [
+              "W1",
+              "Living room window",
+              "South external wall",
+              "1800 x 1200",
+              "2.16",
+              "200 mm wall"
+            ],
+            [
+              "W2",
+              "Dining room window",
+              "South external wall",
+              "1200 x 1200",
+              "1.44",
+              "200 mm wall"
+            ],
+            [
+              "W3",
+              "Bedroom 1 window",
+              "North external wall",
+              "1500 x 1200",
+              "1.80",
+              "200 mm wall"
+            ],
+            [
+              "W4",
+              "Bedroom 2 window",
+              "North external wall",
+              "1200 x 1200",
+              "1.44",
+              "200 mm wall"
+            ],
+            [
+              "W5",
+              "Kitchen window",
+              "East external wall",
+              "1200 x 1200",
+              "1.44",
+              "200 mm wall"
+            ],
+            [
+              "W6",
+              "Bathroom window",
+              "East external wall",
+              "900 x 600",
+              "0.54",
+              "200 mm wall"
+            ],
+            [
+              "D2",
+              "Bedroom 1 door",
+              "P1",
+              "800 x 2100",
+              "1.68",
+              "100 mm partition"
+            ],
+            [
+              "D3",
+              "Bedroom 2 door",
+              "P1",
+              "800 x 2100",
+              "1.68",
+              "100 mm partition"
+            ],
+            [
+              "D4",
+              "Bathroom door",
+              "P1",
+              "700 x 2100",
+              "1.47",
+              "100 mm partition"
+            ],
+            [
+              "D5",
+              "Store door",
+              "P6",
+              "600 x 2100",
+              "1.26",
+              "100 mm partition"
+            ],
+            [
+              "D6",
+              "Walk-in closet door",
+              "P5",
+              "600 x 2100",
+              "1.26",
+              "100 mm partition"
+            ],
+            [
+              "D7",
+              "Living room door",
+              "P2",
+              "800 x 2100",
+              "1.68",
+              "100 mm partition"
+            ],
+            [
+              "D8",
+              "Kitchen door",
+              "P2",
+              "800 x 2100",
+              "1.68",
+              "100 mm partition"
+            ],
+            [
+              "O1",
+              "Cased opening, living room to dining room",
+              "P7",
+              "2100 x 2100",
+              "4.41",
+              "100 mm partition"
+            ],
+            [
+              "D1, W1 to W6",
+              "Openings in the 200 mm external walls",
+              "Four walls",
+              "7 in all",
+              "10.92",
+              "200 mm blockwork"
+            ],
+            [
+              "D2 to D8, O1",
+              "Openings in the 100 mm partitions",
+              "Five partitions",
+              "8 in all",
+              "15.12",
+              "100 mm blockwork"
+            ],
+            [
+              "All",
+              "Total deducted from the wall take-off",
+              "Both wall types",
+              "15 openings",
+              "26.04",
+              "All blockwork"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Results: the block order and the quantity summary",
+        "body": "The order is taken off the block module rather than guessed: a 400 x 200 block plus a 10 mm joint covers 0.0861 sq m of wall face, so the 106.08 sq m of 200 mm blockwork needs 1,233 blocks and the 79.92 sq m of partitions needs 929, 2,162 blocks before waste. Five per cent is added for cutting and breakage, which is the allowance the supplier quoted, giving an order of 1,294 200 mm blocks and 975 100 mm blocks, 2,269 blocks in all. The same drawings give the rest of the quantities in the summary: the footing follows all nine wall lines, so the concrete is 70.40 m of footing at 600 mm wide by 200 mm deep, and the floor slab is the internal rectangle of 73.60 sq m at 100 mm thick, both of which the foundation plan and the section carry as dimensions. The roof surface comes from the roof plan in the next step. One correction is recorded here because it did not change any of these numbers: revision R3 moved the bedroom window down 300 mm, which changed the window's position on the section, the elevation and the schedule, but not its size, so the 26.04 sq m of openings and the block order were unaffected. A revision that costs nothing in materials is worth saying plainly, because it is exactly the sort of change that is quietly charged for on site.",
+        "table": {
+          "caption": "Quantities taken from the drawings, with the drawing each one comes from",
+          "columns": [
+            "Item",
+            "Quantity",
+            "How it was obtained"
+          ],
+          "rows": [
+            [
+              "Blockwork, 200 mm external walls and plinth",
+              "106.08 sq m",
+              "84.12 sq m of wall + 21.96 sq m of plinth"
+            ],
+            [
+              "Blockwork, 100 mm partitions",
+              "79.92 sq m",
+              "95.04 sq m of wall less the partition openings"
+            ],
+            [
+              "Blockwork to be bought",
+              "186.00 sq m",
+              "The guide's own figure for this dwelling, arrived at above"
+            ],
+            [
+              "200 mm blocks to order",
+              "1,294",
+              "1,233 blocks needed plus 5 per cent waste"
+            ],
+            [
+              "100 mm blocks to order",
+              "975",
+              "929 blocks needed plus 5 per cent waste"
+            ],
+            [
+              "Blocks in all",
+              "2,269",
+              "The two orders added"
+            ],
+            [
+              "Concrete, strip footing",
+              "8.45 cu m",
+              "70.40 m of footing at 600 x 200 mm"
+            ],
+            [
+              "Concrete, floor slab",
+              "7.36 cu m",
+              "73.60 sq m of floor at 100 mm thick"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Results: the roof plan, the ridge and the true lengths",
+        "body": "The roof is hipped at the 22 degrees the section and the elevations both carry, over an eaves rectangle of 10.600 x 9.400 m, the 9.6 x 8.4 m of the walls plus the 500 mm overhang on every side. With a hip roof at one pitch, the hips run at 45 degrees in plan and the ridge is simply the long dimension less the short one: 10.600 less 9.400 is 1.200 m, not the 3.000 m the first roof plan drew, which was the correction recorded in the discussion. The ridge sits on the long centreline, 4.700 m from each of the long eaves. From the eaves to the ridge the plan run is 4.700 m, so the common rafter is 5.069 m long on the slope and lifts 1.899 m, and the hip rafter, which runs in plan from the corner of the eaves to the end of the ridge, has a plan length of 6.647 m because it travels both ways at once, 4.700 m across and 4.700 m towards the ridge: its true length on the slope is 7.169 m. Those three true lengths are the numbers the carpenter needs and they cannot be scaled off the plan, because the plan shows them foreshortened. The roof surface itself is 107.47 sq m: the eaves rectangle divided by the cosine of the pitch, which is the standard way of converting a foreshortened area to a sloping one. The pitch expressed the other two ways it will be asked for on site are a rise of 0.404 m per metre of run, one metre of rise for every 2.475 m of run, or a 40.4 per cent grade.",
+        "table": {
+          "caption": "Roof set out from the roof plan: plan lengths, true lengths and the surface area",
+          "columns": [
+            "Element",
+            "Plan length (m)",
+            "Slope 22 degrees",
+            "True length or area"
+          ],
+          "rows": [
+            [
+              "Ridge",
+              "1.200",
+              "Runs along the centreline",
+              "1.200 m long"
+            ],
+            [
+              "Common rafter",
+              "4.700",
+              "Rises 1.899 m to the ridge",
+              "5.069 m on the slope"
+            ],
+            [
+              "Hip rafter",
+              "6.647",
+              "Travelling two ways at once",
+              "7.169 m on the slope"
+            ],
+            [
+              "Roof surface",
+              "99.640 sq m of eaves rectangle",
+              "Divided by cos 22 degrees",
+              "107.47 sq m of roof"
+            ],
+            [
+              "Eaves overhang",
+              "0.500",
+              "Same pitch as the roof",
+              "500 mm beyond the wall face"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Construction Details: the details and the schedule",
+        "body": "Three details are drawn at 1:10, because that is the scale at which a 200 mm wall, a 600 mm footing and a 400 x 200 block all read properly, and at which every component can be labelled. The foundation detail shows the trench, the strip footing, the block plinth above it and the oversite concrete, with the ground level taken from the survey as a datum line on the drawing. The wall and ring beam detail shows the blockwork, the ring beam, the reinforcement in it and the position of the window head and lintel, which is the detail that carried the revision in the last step. The wall plate and hip detail shows the plate, the rafter, the birdsmouth and the junction where a hip meets the wall plate at a corner, and it is the detail that was drawn after the roof plan was corrected. Materials are labelled on every detail, using the hatch conventions the syllabus sets out rather than a legend invented for the folder: concrete, blockwork, timber, hardcore, and the membrane under the floor slab. The door and window schedule is drawn at 1:20, gives every opening a reference, its size and its material, and lists 8 doors and 6 windows with the reason for each size: the bedroom and kitchen windows are 1200 mm high because the wall plate is at 2700 mm and the head has to finish below it, and the bathroom window is smaller and higher because the room it lights needs privacy rather than a view.",
+        "table": {
+          "caption": "Detail and schedule register: what each drawing shows, and at what scale",
+          "columns": [
+            "Detail",
+            "Scale",
+            "What it shows",
+            "Materials labelled"
+          ],
+          "rows": [
+            [
+              "9 Foundation detail",
+              "1:10",
+              "Trench, strip footing, block plinth, oversite concrete and the surveyed ground line",
+              "Concrete, blockwork, hardcore, membrane"
+            ],
+            [
+              "10 Wall and ring beam detail",
+              "1:10",
+              "Blockwork, ring beam and reinforcement, window head and lintel position",
+              "Blockwork, concrete, steel, timber"
+            ],
+            [
+              "11 Wall plate and hip detail",
+              "1:10",
+              "Wall plate, rafter birdsmouth and the hip junction at the corner",
+              "Timber, steel, blockwork"
+            ],
+            [
+              "12 Door and window schedule",
+              "1:20",
+              "8 doors and 6 windows with reference, size, sill and head levels and material",
+              "Hardwood, glass, louvres"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Dimensioning and Annotation: the standards used and the checks made",
+        "body": "Dimensions were made complete and given once only, and the annotation follows the same conventions on every sheet. The plan carries 68 dimensions in 9 strings, the elevations carry the levels and the overall heights, and the section carries the 2700 mm floor-to-ceiling height and the pitch. Everything that matters is dimensioned from a datum rather than from another wall: the floor plan is dimensioned from the two grid lines on the external centreline, and the section is dimensioned from the finished floor level. The first draft repeated 3 dimensions in two strings, which is the commonest way a drawing makes the reader choose between two numbers, and they were removed at revision R1. Symbols are used for what they are for, not as decoration: level symbols for the floor and the ground line, section arrows on the plan for the two sections, and the radius and diameter symbols only where a curve is involved. The title block carries the project, the drawing title, the scale, the sheet number, the date and the revision number, and the north point is on the site plan and the floor plan. Lettering is 3.5 mm capitals, which is the size that stays legible when a 1:50 sheet is reduced to A3 for a site copy, and the check that it does is in the scale table below: the 200 mm wall of the drawing is 4.0 mm on paper at 1:50 and 2.0 mm at 1:100, so a number that is too small at one scale is visible at the other. The dimension strings were re-set after the foundation plan was drawn, and the times in the register show how much that cost.",
+        "bullets": [
+          "Dimension once: 68 dimensions in 9 strings, with the 3 repeats found on the first draft removed.",
+          "Dimension from a datum: the grid lines on the plan, the finished floor level on the section, and the surveyed ground line on the details.",
+          "Levels on every sheet that shows a vertical face, so the section and the elevations can be checked against the plan without scaling anything.",
+          "The title block on all 12 sheets: project, drawing title, scale, sheet number, date, revision.",
+          "North point on the site plan and the floor plan, and section arrows on the floor plan for sections A-A and B-B.",
+          "Lettering 3.5 mm capitals, which is the size that survives a 1:50 sheet being reduced to A3."
+        ],
+        "table": {
+          "caption": "Scale conversions used on the set: the same element at each drawing scale",
+          "columns": [
+            "Element",
+            "Real size (mm)",
+            "1:200",
+            "1:50",
+            "1:20",
+            "1:10"
+          ],
+          "rows": [
+            [
+              "Overall length of the long wall",
+              "9600",
+              "48.0",
+              "192.0",
+              "480.0",
+              "960.0"
+            ],
+            [
+              "External wall thickness",
+              "200",
+              "1.0",
+              "4.0",
+              "10.0",
+              "20.0"
+            ],
+            [
+              "Block module, block length plus joint",
+              "410",
+              "2.0",
+              "8.2",
+              "20.5",
+              "41.0"
+            ],
+            [
+              "Block module, block height plus joint",
+              "210",
+              "1.1",
+              "4.2",
+              "10.5",
+              "21.0"
+            ],
+            [
+              "Footing width",
+              "600",
+              "3.0",
+              "12.0",
+              "30.0",
+              "60.0"
+            ],
+            [
+              "Bedroom 1 window width",
+              "1500",
+              "7.5",
+              "30.0",
+              "75.0",
+              "150.0"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Discussion: what agrees across the set, what was redrawn, and why",
+        "body": "The set agrees with itself in the places a marker will look. The internal rectangle of 9200 x 8000 mm appears on the floor plan and the foundation plan; the 2700 mm floor-to-ceiling height is the same on both sections; the 22 degree pitch and the 500 mm overhang are the same on the elevations, the sections and the roof plan; the 70.40 m wall line is the same line on the floor plan, the foundation plan and the take-off; and the floor area of 70.08 sq m is the sum of the room schedule and of the 73.60 sq m internal rectangle less the 3.52 sq m of partitions. Three corrections are in the folder rather than hidden by a clean redraw, and they cost 3 h 45 min between them, which is 71.4 per cent of the 5 h 15 min overrun. R2 is the one that mattered: the first roof plan drew a 3.000 m ridge, which is not a hip at 45 degrees at all, and setting the hips out properly from the corners gave the correct ridge of 1.200 m, that is the long dimension less the short one. The roof plan and everything drawn from it had to be redrawn, and the sheet took 5 h 10 min against 3 h 00 min planned, 2 h 10 min of it redrawing. R3 is the one that looks worse than it was: the bedroom window first drawn with its sill at 1650 mm put its head at 2850 mm, above the wall plate at 2700 mm, so the sill was lowered by 300 mm to 1350 mm and the head finished at 2550 mm, 150 mm below the plate. Raising the head instead would have meant raising the plate and the roof with it. Because the window kept its size, the opening area, the block order and every quantity in the last step were unaffected, and the schedule, the elevation and the section were the only sheets that changed. R1 is ordinary drawing discipline: the dimension strings were re-set after the foundation plan, and 3 repeated dimensions were removed, which is a correction that improves the drawing rather than repairing it.",
+        "table": {
+          "caption": "Revision register: what each correction was, and what it cost",
+          "columns": [
+            "Rev",
+            "Sheet",
+            "What changed",
+            "Cost in time"
+          ],
+          "rows": [
+            [
+              "R1",
+              "3 Floor plan",
+              "Dimension strings re-set after the foundation plan; 3 repeated dimensions removed",
+              "+30 min"
+            ],
+            [
+              "R2",
+              "4 Roof plan",
+              "Hip set out from the corners; ridge corrected from 3000 to 1200 mm",
+              "+2 h 10 min"
+            ],
+            [
+              "R3",
+              "7 Section A-A",
+              "Bedroom window head clashed with the wall plate; sill lowered 300 mm",
+              "+1 h 05 min"
+            ],
+            [
+              "R1 to R3",
+              "Three revisions",
+              "Two changed a drawing, one improved one",
+              "+3 h 45 min of the 5 h 15 min overrun"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Conclusion: evaluation of the set and its use on site",
+        "body": "The set is accurate where it matters and the checks say so: the internal rectangle is 0.34 mm out on the long diagonal when the drawn sheet is measured, which is 17 mm on site and inside the tolerance set for the exercise, the levels agree across the plan, the sections and the elevations, and the 70.40 m wall line reconciles with the room schedule to the square centimetre. What the set is for is the next stage, and it can do that job because a take-off was made from it: 186.00 sq m of blockwork gives an order of 2,269 blocks, the footing and slab give 8.45 and 7.36 cu m of concrete, and the blockwork costed against the quotation comes to a block bill of J$445,645: 1,294 200 mm blocks at J$205 and 975 100 mm blocks at J$185, at rates invented for this sample. Two things would be done differently. The foundation plan should be dimensioned before the roof plan, because the later change to the foundation set means the floor plan's dimension strings had to be re-set, which cost 30 min for nothing but order of work. And the roof geometry should be settled before the elevations are drawn, because the hips fix the ridge, the ridge fixes the ends of the hip rafters: a hip rafter is 7.169 m long on the slope, not the 6.647 m its plan length suggests, and only the geometry gives that. Against 30 h 00 min of drawing time planned, the set took 35 h 15 min, an overrun of 5 h 15 min or 17.5 per cent, and 3 h 45 min of that overrun was the revisions rather than the drawing. That is the honest figure, and it is the one thing a full-mark folder should not hide: the corrections are what the marks were earned on.",
+        "bullets": [
+          "Recommended next stage: issue the floor plan, the foundation plan and the section to the builder together, since the take-off comes from all three and the levels have to be set out on site.",
+          "Order the blocks from the take-off (186.00 sq m, 2,269 blocks with waste) rather than by eye, and re-measure the plinth on site before the second delivery.",
+          "Draw the roof geometry first next time: the ridge is 1.200 m and the hip rafters are 7.169 m on the slope, and both come from the plan dimensions, not from a scaled measurement.",
+          "Dimension the foundation plan before the roof plan, so the floor plan is not re-set afterwards (this was worth 30 min of drawing time in this folder).",
+          "Keep the revision register on the folder: a marker, and later a builder, reads the corrections as evidence of checking rather than as mistakes."
+        ],
+        "table": {
+          "caption": "Drawing time by group of sheets: planned, actual, and the overrun",
+          "columns": [
+            "Sheets",
+            "Planned",
+            "Actual",
+            "Overrun"
+          ],
+          "rows": [
+            [
+              "Site plan, plans, elevations and sections (8 sheets)",
+              "22 h 00 min",
+              "26 h 15 min",
+              "+4 h 15 min"
+            ],
+            [
+              "Details and schedule (4 sheets)",
+              "8 h 00 min",
+              "9 h 00 min",
+              "+1 h 00 min"
+            ],
+            [
+              "All 12 sheets",
+              "30 h 00 min",
+              "35 h 15 min",
+              "+5 h 15 min (17.5 per cent)"
+            ],
+            [
+              "Of which the three revisions",
+              "Part of the sheets above",
+              "3 h 45 min",
+              "71.4 per cent of the overrun"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Sources and honesty note for this worked example",
+        "body": "This is an original worked example written for CSEC Compass. The candidate, the centre, the client, the plot, its levels and every quantity, price and time in it are invented for the sample, and nothing in it is copied from a real drawing folder, a real SBA, a textbook, a supplier's drawing or a CXC exemplar. The design brief and the figures the guide's own illustrative sample publishes are kept exactly: a two-bedroom dwelling of about 70 square metres on a sloping plot, 2700 mm floor to ceiling, a 22 degree pitch, 186 square metres of block wall, layouts A, B and C with Layout B chosen, a bedroom window sill lowered by 300 mm after the head clashed with the wall plate, and a roof plan redrawn after the hip was set out correctly. Everything else is worked out here from the drawings described in the folder, and the arithmetic is printed in the step that uses it: the 186.00 sq m of blockwork is 190.08 sq m of wall less 26.04 sq m of openings plus 21.96 sq m of plinth, the 70.08 sq m of floor is the sum of the room schedule and also of the 73.60 sq m internal rectangle less the 3.52 sq m of partitions, and the 107.47 sq m of roof is the eaves rectangle divided by the cosine of the pitch. The three checks a marker can make without drawing anything are the three that were made before the sheets were issued: the room areas tile the internal rectangle, the wall line reconciles with the rooms, and every derived length or area appears in the table that uses it. Prices are invented and marked as invented wherever money appears, so nothing in this folder should be read as a quotation for a real dwelling.",
+        "bullets": [
+          "Original content only: no real site, drawing, price list or candidate appears anywhere in it.",
+          "Every figure is derived from the drawings described, and the derivation is printed beside it rather than left to the reader.",
+          "The two published figures the folder has to keep - 186 sq m of block wall and the 22 degree pitch - are both reproduced by the arithmetic above rather than asserted.",
+          "The three revisions are published with their cost in time, including the one that changed nothing in the block order.",
+          "Money is marked as invented: the block bill is at sample rates only and is not a real quotation.",
+          "The sample is view-only in this platform: it is here to be studied and learned from, not copied into a submission."
+        ]
+      }
+    ],
+    "examinerNotes": [
+      "The survey is used, not displayed: the six levels fix the floor level, give the 21.96 sq m plinth wall and the 0.780 m fall across the footprint, and the same levels appear as a datum line on the foundation detail, which is what full marks in research look like - one set of facts carried through the whole folder.",
+      "The design decision is measured. Layout B is chosen on a 186.00 sq m blockwork take-off against estimated 215.70 and 233.52 sq m for the other two layouts, with the two estimates labelled and computed on the same basis, so the choice can be argued with rather than merely agreed with.",
+      "Every number in the folder is derived and printed with its derivation: the wall line from the plan, the openings from the schedule, the blockwork from the wall line less the openings plus the plinth (186.00 sq m, which reproduces the 186 square metres the guide publishes), the blocks from the block module, and the roof's ridge, rafters and surface area from the pitch.",
+      "The revisions are the strongest part of the folder. R3 moved a window down 300 mm instead of raising the head, which is the cheaper repair on site, and the candidate says plainly that it changed the section, the elevation and the schedule but not the opening area or the block order - the sort of consequence a marker rarely sees stated.",
+      "The drawings are shown being used: the 70.40 m wall line becomes a footing, the footing becomes 8.45 cu m of concrete, the blockwork becomes 2,269 blocks and a costed bill, and the roof becomes 107.47 sq m of surface. That is the difference between a set of drawings and a drawing project.",
+      "Nothing here is reproduced: the candidate, the centre, the plot and every quantity are invented, no real drawing folder or CXC exemplar is copied, and the prices are marked as invented wherever money appears."
+    ]
+  }
 }
