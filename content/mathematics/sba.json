@@ -77,5 +77,1002 @@
     "At least two different types of data presentation (e.g., table and bar chart)",
     "Detailed Analysis with calculations",
     "Logical Conclusion based on data"
-  ]
+  ],
+  "completedSample": {
+    "title": "A complete, full-mark CSEC Mathematics project: the weekly spending habits of 30 Grade 10 students",
+    "viewOnlyNote": "For viewing and learning only. This is an original worked example written for CSEC Compass: an invented candidate, an invented school and 30 invented record sheets. It is not a real candidate's work and it is not a CXC exemplar. Read it, study how each part is built, then collect and write up your own data in your own words.",
+    "profile": [
+      {
+        "label": "Candidate",
+        "value": "J. Morgan (invented)"
+      },
+      {
+        "label": "Centre",
+        "value": "Excellence Secondary School (invented)"
+      },
+      {
+        "label": "Subject",
+        "value": "CSEC Mathematics - project SBA"
+      },
+      {
+        "label": "Sample",
+        "value": "30 Grade 10 students, one school week"
+      },
+      {
+        "label": "Marks used",
+        "value": "the 18 marks of this subject's own guide"
+      }
+    ],
+    "categories": [
+      {
+        "section": "Project Title",
+        "marks": "1",
+        "awarded": "1",
+        "comment": "The title names the group studied (Grade 10), the school and the quantity measured (money for one week), and the whole report answers it."
+      },
+      {
+        "section": "Introduction",
+        "marks": "2",
+        "awarded": "2",
+        "comment": "The background explains why a share of the money is a mathematical answer, the aim and three objectives are stated, the hypothesis is written in a form the data can test, and Table 2 defines every term the report then uses."
+      },
+      {
+        "section": "Method of Data Collection",
+        "marks": "2",
+        "awarded": "2",
+        "comment": "The population, the sample, the random sampling, the week studied, the anonymous record numbers, the instruments five items (Table 3) and the check on every paper are all described, and the fault in item 5 is admitted rather than hidden."
+      },
+      {
+        "section": "Presentation of Data",
+        "marks": "5",
+        "awarded": "5",
+        "comment": "The same 30 records are presented eight ways - the full record sheet, a grouped frequency table with tally and cumulative frequency, a bar chart, a pie chart for uses, a pie chart for sources, an ordered list, a box plot and a scatter diagram - with every table labelled, captioned and in units."
+      },
+      {
+        "section": "Analysis of Data",
+        "marks": "2",
+        "awarded": "2",
+        "comment": "The mean, median, mode, quartiles, interquartile range, range, grouped mean, the four shares, the four angles, the savings rate, the two group means and the gradient of the line of best fit are all calculated on page 11, and the estimates are labelled as estimates."
+      },
+      {
+        "section": "Discussion of Findings",
+        "marks": "2",
+        "awarded": "2",
+        "comment": "The findings are interpreted category by category, the mean is compared with the median to explain the shape of the distribution, the hypothesis is reported as refuted, and seven real limitations of the instrument are named."
+      },
+      {
+        "section": "Conclusion",
+        "marks": "2",
+        "awarded": "2",
+        "comment": "The three objectives are answered with the figures, the hypothesis is answered directly, and the scope of the conclusion - 30 students in one school in one week - is stated so the result is not over-generalised."
+      },
+      {
+        "section": "Overall Presentation",
+        "marks": "2",
+        "awarded": "2",
+        "comment": "The report follows the order of the task breakdown, uses money, angles and classes consistently, and ends with the guide's checklist and the cross-checks that were made on the arithmetic."
+      }
+    ],
+    "pages": [
+      {
+        "heading": "Cover page, aim and plan of the project",
+        "body": "Project title: A study of the spending habits of Grade 10 students at Excellence Secondary School.\n\nAim: to find out how the Grade 10 students of Excellence Secondary School use the money they have in one school week, and to find whether earning part of that money changes the share of it that they save.\n\nObjectives: (1) to find the mean, the median and the modal amount of money a Grade 10 student has for one week; (2) to find the share of that money that goes to food and drink, to transport, to entertainment and to savings, and to present those shares on a bar chart and on a pie chart; (3) to compare the money and the saving of the students who earn part of their own money with those of the students who do not.\n\nHypothesis: the students who earn part of their own money save a larger share of their weekly money than the students who do not.\n\nData: one five-item questionnaire (Table 3) completed by 30 Grade 10 students, one record sheet per student, covering one school week. The candidate, the school, the 30 students and every figure in this report are invented for this worked example.",
+        "table": {
+          "caption": "Table 1: the parts of this project and the marks each part carries, 18 marks in all.",
+          "columns": [
+            "Part of the project",
+            "What it must do",
+            "Marks"
+          ],
+          "rows": [
+            [
+              "Project Title",
+              "The title should be clear and concise, reflecting the focus of the study.",
+              "1"
+            ],
+            [
+              "Introduction",
+              "Provide a background of the study and state the purpose clearly.",
+              "2"
+            ],
+            [
+              "Method of Data Collection",
+              "Describe how you collected your data (e.g., questionnaire, observation).",
+              "2"
+            ],
+            [
+              "Presentation of Data",
+              "Use tables, charts, and graphs to represent the collected data.",
+              "5"
+            ],
+            [
+              "Analysis of Data",
+              "Perform calculations and explain the mathematical relationships found.",
+              "2"
+            ],
+            [
+              "Discussion of Findings",
+              "Interpret the results in the context of your original objective.",
+              "2"
+            ],
+            [
+              "Conclusion",
+              "Summarize the findings and state if the objective was met.",
+              "2"
+            ],
+            [
+              "Overall Presentation",
+              "Organization, grammar, and proper use of mathematical language.",
+              "2"
+            ],
+            [
+              "Total",
+              "The eight parts of the project",
+              "18"
+            ]
+          ]
+        },
+        "bullets": [
+          "Objective 1 is answered by the record sheet (Table 4), the frequency table (Table 5) and the ordered list (Table 8): mean J$320.00, median J$307.50, mode J$305.",
+          "Objective 2 is answered by Table 6: food 46.875 per cent, transport 31.25 per cent, entertainment 15.625 per cent, savings 6.25 per cent.",
+          "Objective 3 is answered by Table 9: the earners saved 4.9 per cent of their money and the other students saved 7.5 per cent."
+        ]
+      },
+      {
+        "heading": "Introduction: why a week of spending is worth measuring",
+        "body": "Every Grade 10 student at this school handles money each week: money given by a parent or a guardian, sometimes money earned from small jobs or chores, and then the canteen, the bus or taxi fare, the shop and the phone. By the end of the week most students can say roughly where the money went, but very few can say what share of it went where. A share is a mathematical answer to that question, and a share is what this project measures.\n\nThe survey puts every dollar into one of four uses, so the four parts must add to the whole: whatever a student spends on food and drink, on transport and on entertainment, plus whatever that student saves, is the money the student had. Nothing is left outside the four categories, and that is why the shares in this report add to 100 per cent and the pie-chart angles add to 360 degrees.\n\nThe project also tests one idea. It is often said that students who earn their own money learn to save. If that were true in this school, the students who earn part of their money should be saving a larger share of it than the students whose money all comes from home. The evidence either supports that or it does not, and this report states plainly which of the two happened.",
+        "table": {
+          "caption": "Table 2: the terms used in this project and what each one means here.",
+          "columns": [
+            "Term",
+            "What it means in this project"
+          ],
+          "rows": [
+            [
+              "Money for the week",
+              "Everything a student had to use in the week studied: money from a parent or guardian plus money the student earned, in Jamaican dollars (J$)."
+            ],
+            [
+              "Food and drink",
+              "Everything bought to eat or drink during the school week, at the canteen, at a shop or on the way to school."
+            ],
+            [
+              "Transport",
+              "Every fare paid to travel to and from school in the week: bus, taxi and route-taxi."
+            ],
+            [
+              "Entertainment",
+              "Money spent on the things a student does for fun in the week: the phone, music, games and outings."
+            ],
+            [
+              "Savings",
+              "Money that was put aside during the week and not spent."
+            ],
+            [
+              "Share (per cent)",
+              "The part divided by the whole, multiplied by 100. Food has a share of 46.875 per cent because J$4,500 is 46.875 per cent of J$9,600."
+            ],
+            [
+              "Savings rate",
+              "The saving of a group divided by the money that group had, written as a percentage. The 30 students saved J$600 out of J$9,600, so their savings rate is 6.25 per cent."
+            ],
+            [
+              "Class total",
+              "The answer when one column of the record sheet is added down for all 30 students."
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Method: how the data was collected",
+        "body": "The population was the 96 students on the Grade 10 roll of Excellence Secondary School. The sample was 30 of them, chosen by random sampling so that no class or group in the form was favoured. Each student on the roll was given a number from 1 to 96, a random-number generator produced numbers in that range, and the student holding the number that came up joined the sample; a number that came up a second time was skipped, so the 30 students in the sample are all different and each student on the roll had the same chance of being chosen.\n\nA questionnaire was designed with the five short items in Table 3 and handed out on the Friday of the week studied; it was collected the same afternoon. No name was written on a paper, because a student is more likely to answer honestly about money if the paper cannot be traced back to them. Each paper was given a record-sheet number from 1 to 30 instead, and the numbers used in Table 4 are those record sheets.\n\nThe answers were then entered on a record sheet. Each student's four amounts were added and compared with the total that student had written down for the week. Four papers did not agree at first, and those students were asked about the difference the following Monday; the amounts used in this report are the corrected ones. Every column of the record sheet was added twice, once straight down and once as a running total, before any of the statistics on the later pages were calculated.\n\nOne fault in the instrument has to be admitted here, because it affects one of the figures: item 5 asked about entertainment and about savings in one line, so a student who wanted to leave one of the two blank had to write something for the other. The effect of that fault is treated again in the discussion. No question asked for a name, and no student was asked about the income of their household, only about the money that student handled during the week.",
+        "bullets": [
+          "1. Number the Grade 10 roll from 1 to 96 and draw 30 different numbers at random.",
+          "2. Give a questionnaire with the five items of Table 3 to each student drawn, on the Friday of the week studied.",
+          "3. Collect the papers the same afternoon and give each one a record-sheet number, so that no name is kept.",
+          "4. Enter the four amounts for every student (food and drink, transport, entertainment, savings) on the record sheet.",
+          "5. Add each student's four amounts and compare the answer with the total the student wrote; correct any paper that does not agree.",
+          "6. Add each column down for the class total, then divide by 30 for the mean.",
+          "7. Group the 30 weekly amounts into classes of J$50 for the frequency table.",
+          "8. Turn the four class totals into bar heights at a scale of 1 cm to J$1,000, and into pie-chart angles out of 360 degrees.",
+          "9. Put the 30 weekly amounts in order and read the median and the quartiles off the ordered list.",
+          "10. Split the 30 students into those who earn part of their own money and those who do not, and compare the two groups on money and on saving."
+        ],
+        "table": {
+          "caption": "Table 3: the five questionnaire items, the kind of answer each one asked for, and why it was asked.",
+          "columns": [
+            "Item",
+            "What it asked",
+            "Kind of answer",
+            "Why it was asked"
+          ],
+          "rows": [
+            [
+              "1",
+              "How much money do you get from a parent or a guardian for the week?",
+              "an amount in J$",
+              "this is the largest part of most students' money"
+            ],
+            [
+              "2",
+              "Do you earn any money yourself in the week (a job, chores, selling something)? If yes, how much?",
+              "yes or no, then an amount in J$",
+              "it splits the form into the two groups the third objective compares"
+            ],
+            [
+              "3",
+              "How much of the week's money do you spend on food and drink?",
+              "an amount in J$",
+              "food and drink are the first spending category"
+            ],
+            [
+              "4",
+              "How much do you spend on transport to and from school in the week?",
+              "an amount in J$",
+              "transport is the second spending category"
+            ],
+            [
+              "5",
+              "How much do you spend on entertainment in the week, and how much of the money do you put aside as savings?",
+              "two amounts in J$",
+              "entertainment and savings are the last two categories; this item should have been split into two"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Results: the record sheet for all 30 students",
+        "body": "The record sheet below is the whole data set of this project. Each row is one student, in record-sheet order, with the total money that student had for the week and the four amounts the money was used for. The four category columns add across to the total column in every row, the four category columns add down to the class total of J$9,600, and the last row is the mean for one student, found by dividing each column by 30.\n\nThat mean row is the headline of the project: a Grade 10 student in this sample had J$320 for the week, of which J$150 went to food and drink, J$100 to transport, J$50 to entertainment and J$20 to savings.\n\nThe smallest weekly amount on the sheet is J$130 and the largest is J$545, so the amounts are spread widely across the form. The shape of that spread, and which amounts are typical, is what the next tables describe.",
+        "table": {
+          "caption": "Table 4: the weekly record of each of the 30 students (J$), with the class total and the class mean. All 30 records are invented for this worked example.",
+          "columns": [
+            "Student (record sheet)",
+            "Money for the week",
+            "Food and drink",
+            "Transport",
+            "Entertainment",
+            "Savings"
+          ],
+          "rows": [
+            [
+              "1",
+              "130",
+              "85",
+              "25",
+              "10",
+              "10"
+            ],
+            [
+              "2",
+              "170",
+              "70",
+              "70",
+              "25",
+              "5"
+            ],
+            [
+              "3",
+              "180",
+              "85",
+              "65",
+              "10",
+              "20"
+            ],
+            [
+              "4",
+              "205",
+              "70",
+              "60",
+              "50",
+              "25"
+            ],
+            [
+              "5",
+              "220",
+              "115",
+              "55",
+              "40",
+              "10"
+            ],
+            [
+              "6",
+              "240",
+              "100",
+              "95",
+              "15",
+              "30"
+            ],
+            [
+              "7",
+              "250",
+              "130",
+              "50",
+              "55",
+              "15"
+            ],
+            [
+              "8",
+              "255",
+              "120",
+              "85",
+              "35",
+              "15"
+            ],
+            [
+              "9",
+              "265",
+              "120",
+              "95",
+              "40",
+              "10"
+            ],
+            [
+              "10",
+              "285",
+              "155",
+              "65",
+              "60",
+              "5"
+            ],
+            [
+              "11",
+              "295",
+              "110",
+              "110",
+              "35",
+              "40"
+            ],
+            [
+              "12",
+              "305",
+              "150",
+              "85",
+              "60",
+              "10"
+            ],
+            [
+              "13",
+              "305",
+              "140",
+              "95",
+              "25",
+              "45"
+            ],
+            [
+              "14",
+              "310",
+              "155",
+              "105",
+              "45",
+              "5"
+            ],
+            [
+              "15",
+              "305",
+              "125",
+              "70",
+              "65",
+              "45"
+            ],
+            [
+              "16",
+              "305",
+              "150",
+              "85",
+              "30",
+              "40"
+            ],
+            [
+              "17",
+              "310",
+              "120",
+              "120",
+              "60",
+              "10"
+            ],
+            [
+              "18",
+              "325",
+              "155",
+              "100",
+              "35",
+              "35"
+            ],
+            [
+              "19",
+              "330",
+              "180",
+              "85",
+              "65",
+              "0"
+            ],
+            [
+              "20",
+              "340",
+              "155",
+              "120",
+              "45",
+              "20"
+            ],
+            [
+              "21",
+              "350",
+              "150",
+              "120",
+              "70",
+              "10"
+            ],
+            [
+              "22",
+              "360",
+              "185",
+              "90",
+              "65",
+              "20"
+            ],
+            [
+              "23",
+              "375",
+              "185",
+              "135",
+              "45",
+              "10"
+            ],
+            [
+              "24",
+              "390",
+              "160",
+              "130",
+              "75",
+              "25"
+            ],
+            [
+              "25",
+              "405",
+              "190",
+              "125",
+              "65",
+              "25"
+            ],
+            [
+              "26",
+              "425",
+              "225",
+              "125",
+              "50",
+              "25"
+            ],
+            [
+              "27",
+              "450",
+              "200",
+              "160",
+              "80",
+              "10"
+            ],
+            [
+              "28",
+              "470",
+              "235",
+              "120",
+              "90",
+              "25"
+            ],
+            [
+              "29",
+              "500",
+              "220",
+              "165",
+              "60",
+              "55"
+            ],
+            [
+              "30",
+              "545",
+              "260",
+              "190",
+              "95",
+              "0"
+            ],
+            [
+              "Class total",
+              "9,600",
+              "4,500",
+              "3,000",
+              "1,500",
+              "600"
+            ],
+            [
+              "Mean per student",
+              "320.00",
+              "150.00",
+              "100.00",
+              "50.00",
+              "20.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Results: the frequency distribution of weekly money",
+        "body": "Thirty amounts cannot be read at a glance, so the weekly amounts are grouped into classes of J$50, from J$100 - 149 up to J$500 - 549. A class written 300 - 349 means from J$300 to J$349 inclusive. The tally column shows how the marks would look made by hand, the cumulative frequency column counts how many students had that much money or less, and the last two columns prepare the grouped mean.\n\nNine students had between J$300 and J$349, more than in any other class, so 300 - 349 is the modal class. The cumulative frequency first reaches 15, which is half of 30, in the same class, so the median also lies in 300 - 349; that agrees with the median of J$307.50 found from the ordered list in Table 8.\n\nThe grouped mean comes from the midpoints: J$9,785 divided by 30 gives J$326.17. Every student is counted at the middle of their class instead of at their own amount, so the grouped mean is an estimate and it is J$6.17 above the raw mean of J$320.",
+        "table": {
+          "caption": "Table 5: how the 30 weekly amounts are spread, in classes of J$50.",
+          "columns": [
+            "Class interval (J$)",
+            "Tally",
+            "Frequency",
+            "Cumulative frequency",
+            "Midpoint (J$)",
+            "Frequency x midpoint (J$)"
+          ],
+          "rows": [
+            [
+              "100 - 149",
+              "|",
+              "1",
+              "1",
+              "124.50",
+              "124.50"
+            ],
+            [
+              "150 - 199",
+              "||",
+              "2",
+              "3",
+              "174.50",
+              "349.00"
+            ],
+            [
+              "200 - 249",
+              "|||",
+              "3",
+              "6",
+              "224.50",
+              "673.50"
+            ],
+            [
+              "250 - 299",
+              "||||/",
+              "5",
+              "11",
+              "274.50",
+              "1,372.50"
+            ],
+            [
+              "300 - 349",
+              "||||/ ||||",
+              "9",
+              "20",
+              "324.50",
+              "2,920.50"
+            ],
+            [
+              "350 - 399",
+              "||||",
+              "4",
+              "24",
+              "374.50",
+              "1,498.00"
+            ],
+            [
+              "400 - 449",
+              "||",
+              "2",
+              "26",
+              "424.50",
+              "849.00"
+            ],
+            [
+              "450 - 499",
+              "||",
+              "2",
+              "28",
+              "474.50",
+              "949.00"
+            ],
+            [
+              "500 - 549",
+              "||",
+              "2",
+              "30",
+              "524.50",
+              "1,049.00"
+            ],
+            [
+              "Total",
+              "all 30 records",
+              "30",
+              "30",
+              "-",
+              "9,785.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Results: two charts for where the money goes",
+        "body": "Two different charts are used for the same four class totals, because each chart answers a slightly different question. The bar chart answers how much, and can be read against a money scale; the pie chart answers what share of the whole, and cannot, which is why the pie-chart angles have to be calculated rather than judged by eye.\n\nThe bar chart carries the four categories along the horizontal axis and money up the vertical axis, with a scale of 1 cm to J$1,000. Food is drawn 4.5 cm high, transport 3.0 cm, entertainment 1.5 cm and savings 0.6 cm, so the four bars together are 9.6 cm of bar for the class's J$9,600.\n\nEach pie-chart sector is the category's share of 360 degrees. For food the calculation is 4,500 divided by 9,600, multiplied by 360, which gives 168.75 degrees. Transport gives 112.50 degrees, entertainment 56.25 degrees and savings 22.50 degrees. The four angles add to 360.00 degrees, which is the check that no sector has been left out or counted twice.\n\nTable 6 shows each category three ways, so a reader can follow one row across and see that the money, the bar height and the angle all describe the same part of the whole.",
+        "table": {
+          "caption": "Table 6: the four uses of the money as class totals, as shares of the J$9,600, as bar heights at 1 cm to J$1,000, and as pie-chart angles.",
+          "columns": [
+            "Use of the money",
+            "Class total (J$)",
+            "Share of the money (per cent)",
+            "Height of the bar (cm)",
+            "Angle of the sector (degrees)"
+          ],
+          "rows": [
+            [
+              "Food and drink",
+              "4,500",
+              "46.875",
+              "4.5",
+              "168.75"
+            ],
+            [
+              "Transport",
+              "3,000",
+              "31.25",
+              "3.0",
+              "112.50"
+            ],
+            [
+              "Entertainment",
+              "1,500",
+              "15.625",
+              "1.5",
+              "56.25"
+            ],
+            [
+              "Savings",
+              "600",
+              "6.25",
+              "0.6",
+              "22.50"
+            ],
+            [
+              "Total",
+              "9,600",
+              "100.000",
+              "9.6",
+              "360.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Results: the same J$9,600 counted by where it comes from",
+        "body": "When the money is counted by where it comes from instead of by where it goes, the same J$9,600 has to appear. Eleven of the 30 students earned part of their own money during the week and the other nineteen had none. Between them those eleven earned J$1,380, which is 14.375 per cent of the class's money and 51.75 degrees of the pie chart; the remaining J$8,220 came from a parent or a guardian and takes the other 308.25 degrees.\n\nThe two views of the same money agree exactly, and that is a useful check on the record sheet: if the two sources did not add to J$9,600, the record sheet would have to contain a mistake, either in an amount that was recorded or in the addition of a column.\n\nThe earned amounts are small and uneven. Only two students earned J$150 or more in the week and the largest single amount earned was J$165, so the earners are mostly students who earn a little rather than students with regular paid work.",
+        "bullets": [
+          "The eleven students who earned part of their money, and what each earned: record 20 (J$100), record 21 (J$105), record 22 (J$110), record 23 (J$110), record 24 (J$115), record 25 (J$120), record 26 (J$130), record 27 (J$135), record 28 (J$140), record 29 (J$150), record 30 (J$165).",
+          "Nineteen of the 30 students had no earnings of their own in the week: every dollar they had came from a parent or a guardian.",
+          "The earnings are 14.375 per cent of the class's money even though eleven of the 30 students earned something, because the amounts earned are small next to the money that came from home."
+        ],
+        "table": {
+          "caption": "Table 7: where the class's J$9,600 came from, as class totals, as shares of the money, and as pie-chart angles.",
+          "columns": [
+            "Source of the money",
+            "Class total (J$)",
+            "Share of the money (per cent)",
+            "Angle of the sector (degrees)"
+          ],
+          "rows": [
+            [
+              "Parents or guardians",
+              "8,220",
+              "85.625",
+              "308.25"
+            ],
+            [
+              "Earned by the students themselves",
+              "1,380",
+              "14.375",
+              "51.75"
+            ],
+            [
+              "Total",
+              "9,600",
+              "100.000",
+              "360.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Results: the ordered list, the median, the quartiles and the box plot",
+        "body": "With 30 values the median is the mean of the 15th and the 16th value once the amounts are in order, so the 30 weekly amounts are listed below from the smallest to the largest. Reading down the middle of the list, the 15th amount is J$305 and the 16th is J$310, so the median is (305 + 310) divided by 2, which is J$307.50.\n\nJ$305 is also the most common single amount, since four students had exactly that much for the week, so the mode is J$305 and it sits close to the median. The mode is a useful figure here because it is a real amount that students actually had, not an average of anything.\n\nThe lower quartile is the median of the lowest fifteen amounts, which is the 8th value, J$255. The upper quartile is the median of the highest fifteen, which is the 23rd value, J$375. The interquartile range is J$375 minus J$255, which is J$120, and it describes the middle half of the form. The range of the whole set is J$545 minus J$130, which is J$415.\n\nA box plot of the five figures - minimum J$130, lower quartile J$255, median J$307.50, upper quartile J$375 and maximum J$545 - is drawn on a scale from J$0 to J$600 with the axis marked every J$100. The fences that would mark an amount as unusual are placed 1.5 interquartile ranges away from each quartile, at J$255 - J$180 = J$75 and at J$375 + J$180 = J$555. The smallest amount, J$130, is inside the lower fence and the largest, J$545, is inside the upper fence, so no amount in this class is unusual enough to be treated as an outlier, even though the right-hand side of the box plot stretches further than the left.",
+        "table": {
+          "caption": "Table 8: the 30 weekly amounts in order from the smallest - rank 1 to rank 10 in the first two columns, rank 11 to rank 20 in the next two and rank 21 to rank 30 in the last two (J$).",
+          "columns": [
+            "Rank",
+            "Weekly money",
+            "Rank",
+            "Weekly money",
+            "Rank",
+            "Weekly money"
+          ],
+          "rows": [
+            [
+              "1",
+              "130",
+              "11",
+              "295",
+              "21",
+              "350"
+            ],
+            [
+              "2",
+              "170",
+              "12",
+              "305",
+              "22",
+              "360"
+            ],
+            [
+              "3",
+              "180",
+              "13",
+              "305",
+              "23",
+              "375"
+            ],
+            [
+              "4",
+              "205",
+              "14",
+              "305",
+              "24",
+              "390"
+            ],
+            [
+              "5",
+              "220",
+              "15",
+              "305",
+              "25",
+              "405"
+            ],
+            [
+              "6",
+              "240",
+              "16",
+              "310",
+              "26",
+              "425"
+            ],
+            [
+              "7",
+              "250",
+              "17",
+              "310",
+              "27",
+              "450"
+            ],
+            [
+              "8",
+              "255",
+              "18",
+              "325",
+              "28",
+              "470"
+            ],
+            [
+              "9",
+              "265",
+              "19",
+              "330",
+              "29",
+              "500"
+            ],
+            [
+              "10",
+              "285",
+              "20",
+              "340",
+              "30",
+              "545"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Results: students who earn their own money compared with those who do not",
+        "body": "For the third objective the 30 students are split into the eleven who earned part of their own money in the week and the nineteen who did not. Table 9 compares the two groups on the money they had and on how much of it they saved.\n\nThe earners had far more money: J$419.09 each on average against J$262.63 for the other group, a difference of about J$156.46 a week. Their weekly amounts ran from J$340 to J$545, while the other group ran from J$130 to J$330. In cash the earners saved a little more, J$20.45 against J$19.74, but that difference of J$0.72 is the price of one canteen item, so it should not be read as a real difference between the two groups.\n\nThe share of their money that each group saved points the other way. The earners saved 4.9 per cent of the money they had, while the students whose money all came from home saved 7.5 per cent of theirs. The hypothesis for this project said the earners would save the larger share; on this evidence the opposite is true, and the discussion on a later page considers why.\n\nOne student in each group put aside nothing at all during the week, so the small average saving is not the result of one group failing to save while the other saves well.",
+        "table": {
+          "caption": "Table 9: the students who earn part of their own money compared with those who do not, on money and on saving (J$).",
+          "columns": [
+            "Group",
+            "Number of students",
+            "Money for the week",
+            "Mean money per student",
+            "Saved",
+            "Mean saved per student",
+            "Saved as a share of money (per cent)"
+          ],
+          "rows": [
+            [
+              "Students who earn part of their own money",
+              "11",
+              "4,610",
+              "419.09",
+              "225",
+              "20.45",
+              "4.9"
+            ],
+            [
+              "Students who earn nothing of their own",
+              "19",
+              "4,990",
+              "262.63",
+              "375",
+              "19.74",
+              "7.5"
+            ],
+            [
+              "All 30 students",
+              "30",
+              "9,600",
+              "320.00",
+              "600",
+              "20.00",
+              "6.25"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Results: the scatter diagram of weekly money against saving",
+        "body": "The scatter diagram plots each student as one point: the money the student had for the week across the horizontal axis, from J$130 to J$545 with the axis marked every J$100, and the amount saved up the vertical axis, from J$0 to J$60 marked every J$10. If having more money led students to save more of it, the points would climb steadily from left to right.\n\nThey do climb, but very loosely. The straight line fitted through the 30 points rises by about J$2.17 for every extra J$100 of weekly money, a gradient of 0.0217, while the class as a whole saves J$6.25 out of every J$100. The points are spread widely on both sides of that line, so the diagram shows only a weak positive association between having more money and saving more in cash; it cannot support a claim that a larger weekly amount causes a student to save more.\n\nTable 10 puts the same 30 points back into the classes used for the frequency table and shows the mean saved by the students in each class. The means move up and down without following the class midpoints in order, which is the same weak pattern that the scatter diagram shows, and the last row returns the overall saving of J$20 a student.",
+        "table": {
+          "caption": "Table 10: the mean saved by the students in each weekly-money class - the scatter diagram's points collected into groups.",
+          "columns": [
+            "Weekly money (J$)",
+            "Number of students",
+            "Mean saved by those students (J$)"
+          ],
+          "rows": [
+            [
+              "100 - 149",
+              "1",
+              "10.00"
+            ],
+            [
+              "150 - 199",
+              "2",
+              "12.50"
+            ],
+            [
+              "200 - 249",
+              "3",
+              "21.67"
+            ],
+            [
+              "250 - 299",
+              "5",
+              "17.00"
+            ],
+            [
+              "300 - 349",
+              "9",
+              "23.33"
+            ],
+            [
+              "350 - 399",
+              "4",
+              "16.25"
+            ],
+            [
+              "400 - 449",
+              "2",
+              "25.00"
+            ],
+            [
+              "450 - 499",
+              "2",
+              "17.50"
+            ],
+            [
+              "500 - 549",
+              "2",
+              "27.50"
+            ],
+            [
+              "All 30 students",
+              "30",
+              "20.00"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Analysis: how every figure in this report was calculated",
+        "body": "This page sets out the arithmetic behind the figures so that any of them can be checked against the record sheet in Table 4. All amounts are in Jamaican dollars, angles are in degrees, and means are given with two decimal places where the answer is not a whole number. The raw mean and the grouped mean are both shown, because they are different quantities rather than two attempts at the same one.",
+        "bullets": [
+          "Mean weekly money = J$9,600 divided by 30 = J$320.00. Mean food = J$4,500 divided by 30 = J$150.00, and the same division gives J$100.00 for transport, J$50.00 for entertainment and J$20.00 for savings.",
+          "Median: with 30 values the median is the mean of the 15th and the 16th value once the amounts are in order, so (305 + 310) divided by 2 = J$307.50.",
+          "Mode: J$305, the amount that four students had for the week, which is the most often repeated amount in the set.",
+          "Lower quartile = the 8th of the 30 ordered amounts = J$255; upper quartile = the 23rd = J$375; interquartile range = J$375 - J$255 = J$120.",
+          "Range = largest amount - smallest amount = J$545 - J$130 = J$415.",
+          "Grouped mean = the frequency times the midpoint, added down, divided by 30 = J$9,785 divided by 30 = J$326.17. It is J$6.17 above the raw mean of J$320, because each student is counted at the middle of their class instead of at their own amount.",
+          "Food as a share of the money = J$4,500 divided by J$9,600, multiplied by 100 = 46.875 per cent; transport 31.25 per cent; entertainment 15.625 per cent; savings 6.25 per cent. The four shares add to 100 per cent.",
+          "Pie-chart angles: food = 4,500 divided by 9,600, multiplied by 360 = 168.75 degrees; transport 112.50 degrees; entertainment 56.25 degrees; savings 22.50 degrees. The four angles add to 360.00 degrees.",
+          "Bar-chart heights: at a scale of 1 cm to J$1,000, food is 4.5 cm, transport 3.0 cm, entertainment 1.5 cm and savings 0.6 cm, and the four bars together are 9.6 cm for the class's J$9,600.",
+          "Savings rate for the class = J$600 divided by J$9,600 = 0.0625 = 6.25 per cent, which is one sixteenth of the money. Food spending is 7.5 times the saving, because J$4,500 divided by J$600 = 7.5.",
+          "Two group means: earners = J$4,610 divided by 11 = J$419.09; other students = J$4,990 divided by 19 = J$262.63.",
+          "Two group savings rates: earners = J$225 divided by J$4,610, multiplied by 100 = 4.9 per cent; other students = J$375 divided by J$4,990, multiplied by 100 = 7.5 per cent.",
+          "Line of best fit through the 30 points of the scatter diagram: gradient 0.0217, which means about J$2.17 of extra saving for each extra J$100 of weekly money - well below the J$6.25 out of every J$100 that the class saves on average.",
+          "Reconciliation: the four use columns add to J$9,600 and the two source columns add to J$9,600, so the table of uses and the table of sources describe exactly the same money."
+        ]
+      },
+      {
+        "heading": "Discussion of the findings",
+        "body": "Food and drink is by far the largest use of the money. It takes 46.875 per cent of the class's J$9,600, a mean of J$150 a week for each student, which is about J$30 for every one of the five school days. Transport is the second largest use at 31.25 per cent, about J$20 a school day. Together food and transport take J$7,500 of the J$9,600, which is 78.125 per cent, or a little more than three-quarters of everything the 30 students had for the week.\n\nEntertainment takes 15.625 per cent and savings only 6.25 per cent, which is one sixteenth of the money. Two students put aside nothing at all, and seven of the 30 spent more than half of their own money on food and drink alone. This is the clearest finding of the project: the money is almost entirely committed to getting through the school week, and saving is what is left over rather than something planned.\n\nThe hypothesis is not supported. The students who earned part of their own money had much more money than the others - J$419.09 against J$262.63 a week - but they saved only J$20.45 each against J$19.74, a difference of about 72 cents, and a smaller share of what they had (4.9 per cent against 7.5 per cent). Earning did not make these students save a larger share of their money; on this evidence it went with a smaller share, because the extra money went into the school week rather than into saving: the earners spent 79.1 per cent of their money on food and transport, against 77.3 per cent for the students who receive everything from home. That difference is only 1.8 percentage points and is small, so it is offered as the likely reason rather than as a proven one.\n\nThe mean and the median tell different things about the same 30 students, and the difference matters. The mean is J$320 but the median is only J$307.50, so the mean is pulled up by the students at the top of the range; the mode, J$305, sits below both. Because the distribution is stretched to the right, the median and the mode describe a typical student better than the mean does, and the mean should be read as the class's money divided fairly among 30 students rather than as the amount a particular student is likely to have.\n\nThe grouped mean of J$326.17 is an estimate and not a second reading of the same figure: it is J$6.17 higher than the raw mean because the students at the top of each class are counted at the midpoint instead of at their own amounts. The scatter diagram repeats the caution in another way: the association between having more money and saving more in cash is weak, so no claim about cause can be made from it.\n\nSeveral limitations have to be kept in view. The data is what 30 students said about themselves, so a student who forgot a purchase or who did not want to admit to one is recorded at the wrong figure. The week studied is a single week in one school: a week with a school trip, a birthday or an illness would change the amounts. The sample of 30 came from a roll of 96, and although it was drawn at random it is still small, so the 72-cent difference between the earners and the others is far too small to be treated as a real difference between the groups. Item 5 of the questionnaire asked about entertainment and savings in one line, so a student could not leave one blank, and the border between the two categories therefore depends on how each student understood the question. The word entertainment itself means different things to different students, and no receipts were kept, so every amount is a memory rather than a record.\n\nA second attempt at the same question would change four things: item 5 would be split into a separate entertainment item and a separate savings item; the questionnaire would ask for two or three weeks instead of one, so that a single unusual week could be seen as unusual; one item would ask whether anything out of the ordinary happened in the week; and the sample would be larger, or drawn from every form in the school rather than from Grade 10 alone."
+      },
+      {
+        "heading": "Conclusion",
+        "body": "The three objectives were met. The mean amount of money a Grade 10 student in this sample had for the week was J$320, the median was J$307.50 and the modal amount was J$305.\n\nThe money was shared out as follows: food and drink 46.875 per cent, transport 31.25 per cent, entertainment 15.625 per cent and savings 6.25 per cent, so the tables and charts in this report agree with each other and the four parts make up the whole.\n\nThe hypothesis was not supported. The students who earned part of their own money saved 4.9 per cent of the money they had, and the students whose money all came from home saved 7.5 per cent, so the earners saved the smaller share and not the larger one.\n\nWhat the figures suggest is that saving is small because the school week is expensive before anything else is considered: food and transport together are 78.125 per cent of the money, which leaves very little to put aside. The saving of J$20 a student in this week would come to J$1,040 if it were repeated every week for a year of 52 weeks, so the habit is worth keeping even at this size, but the evidence here does not show that earning money by itself builds it.\n\nThese conclusions describe the 30 students who were sampled at Excellence Secondary School in the one week studied. They are not a statement about Grade 10 students in general, and a larger sample in more than one school would be needed before any wider claim could be made.",
+        "bullets": [
+          "Objective 1 answered: mean J$320, median J$307.50, mode J$305.",
+          "Objective 2 answered: food 46.875 per cent, transport 31.25 per cent, entertainment 15.625 per cent, savings 6.25 per cent.",
+          "Objective 3 answered: earners saved 4.9 per cent of their money, other students saved 7.5 per cent.",
+          "Hypothesis: not supported - the students who earned their own money saved the smaller share of the two groups."
+        ]
+      },
+      {
+        "heading": "Overall presentation: the checklist, my cross-checks and the sources used",
+        "body": "This report is written in the order of the task breakdown in Table 1, so each part of the project can be found where the marks for it are listed. Money is written in Jamaican dollars with a comma every three figures, angles are written in degrees to two decimal places, and a class written 300 - 349 means from J$300 to J$349 inclusive. Means are given to two decimal places where the answer is not a whole number, and whole amounts are left as whole amounts rather than padded with zeros.\n\nTwo kinds of average appear in the report and they are labelled everywhere they are used: the raw mean of J$320, which comes from the 30 individual amounts, and the grouped mean of J$326.17, which is an estimate from the midpoints of the classes. Neither is presented as if it were the other.\n\nThe tables were checked against each other before this report was written, because a project about shares is only as good as its additions.\n\nNo outside text was used. The statistics in this project - the mean, the median, the mode, the range, the quartiles, the bar chart, the pie chart and the scatter diagram - are the ones in the CSEC Mathematics course itself, and the questionnaire in Table 3 is the candidate's own.",
+        "bullets": [
+          "The four use columns of Table 4 add across to each student's total and down to J$9,600; the two source columns of Table 7 also add to J$9,600, so the two views of the same money agree.",
+          "The total was added down each column twice, once straight down and once as a running total, and the median was found twice: once from the ordered list of Table 8 and once from the cumulative frequency column of Table 5, which put it in the same class of the distribution both times.",
+          "The four shares in Table 6 add to 100 per cent (46.875 + 31.25 + 15.625 + 6.25) and the four angles add to 360.00 degrees, so no category is missing or counted twice.",
+          "The grouped mean was worked from the frequency times the midpoint column and checked against the class total of J$9,785.",
+          "Every value in the record sheet was entered from a numbered questionnaire and no column was left for the mean row to work out later; the mean row and the total row were calculated from the 30 recorded rows and not the other way round.",
+          "The box plot's fences were computed, not guessed: J$75 and J$555, and every one of the 30 amounts lies inside them."
+        ],
+        "table": {
+          "caption": "Table 11: the checklist from the subject guide, and where this report answers each item.",
+          "columns": [
+            "What the checklist asks for",
+            "Where it is in this report"
+          ],
+          "rows": [
+            [
+              "Clear project title",
+              "Page 1 - the title names the group, the school and the quantity measured."
+            ],
+            [
+              "Well-defined objective",
+              "Page 1 - one aim, three numbered objectives and one testable hypothesis."
+            ],
+            [
+              "Description of data collection",
+              "Page 3 - population, random sampling, the week studied, the five items of Table 3 and the check on the papers."
+            ],
+            [
+              "At least two different types of data presentation",
+              "Tables 4 to 10 - a record sheet, a grouped frequency table, a bar chart, two pie charts, an ordered list, a box plot and a scatter diagram."
+            ],
+            [
+              "Detailed analysis with calculations",
+              "Page 11 - every mean, median, mode, quartile, share, angle, rate and gradient is shown with its arithmetic."
+            ],
+            [
+              "Logical conclusion based on data",
+              "Page 13 - the objectives are answered with the figures and the scope of the conclusion is stated."
+            ]
+          ]
+        }
+      }
+    ],
+    "examinerNotes": [
+      "Each of the eight sections of the guide's own Task Breakdown has a page behind it, and Table 1 repeats the eight parts and their 18 marks, so the sample and the guide read as the same document rather than two different ones.",
+      "The arithmetic cannot drift: the four use columns and the two source columns both add to J$9,600, the four shares add to 100 per cent, the four angles add to 360.00 degrees and every amount lies inside the box plot's fences.",
+      "The mean row of the record sheet gives food J$150.00, transport J$100.00, entertainment J$50.00, savings J$20.00 and a total of J$320.00 - the same four categories and the same illustrated amounts that the guide's own sample block uses, so a student reading both sees one consistent set of numbers.",
+      "The hypothesis is reported as refuted instead of quietly dropped: the earners saved 4.9 per cent of their money against 7.5 per cent for the other students, and the discussion says plainly that the 72-cent difference in the amounts saved is too small to claim anything from.",
+      "Both averages are labelled all the way through: the grouped mean of J$326.17 is shown to differ from the raw mean of J$320.00 because midpoints are used, and the scatter diagram's gradient is described as a weak association that cannot show cause.",
+      "The limitations name the real weaknesses of the instrument - one week, one school, 30 of 96 students, item 5 asking two things at once, self-reported amounts with no receipts - which is what the Discussion marks are actually awarded for.",
+      "The candidate, the school, the 30 students and every amount are invented for this worked example, and no CXC exemplar or CXC material is reproduced anywhere in it."
+    ]
+  }
 }
