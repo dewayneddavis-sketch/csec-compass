@@ -44,7 +44,7 @@ two samples show a completed oral-examination dossier instead of an SBA report.
 | 14 | principles-of-accounts | CSEC SBA | 20 | 4 - research / investigation SBA | DONE |
 | 15 | english-a | CSEC SBA | 30 | 5 - language SBA | DONE |
 | 16 | english-b | CSEC SBA | 40 | 5 - language SBA | DONE |
-| 17 | mathematics | CSEC SBA | 18 | 5 - project SBA | TODO |
+| 17 | mathematics | CSEC SBA | 18 | 5 - project SBA | DONE |
 | 18 | physical-education | CSEC SBA | 54 | 6 - practical SBA | DONE |
 | 19 | technical-drawing | CSEC SBA | 54 | 6 - practical SBA | TODO |
 | 20 | theater-arts | CSEC SBA | 70 | 6 - practical portfolio (no written paper) | DONE |
