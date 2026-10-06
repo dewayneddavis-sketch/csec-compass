@@ -1,0 +1,711 @@
+[
+  {
+    "id": "ctf-p2-01",
+    "type": "write",
+    "paper": 2,
+    "section": "Section 1 - Fibres, Yarns and Fabrics",
+    "title": "Structured: choosing fabric for a school uniform order - fibres, blends and construction",
+    "topic": "ctf-l1-2",
+    "commandWords": [
+      "Distinguish",
+      "Name",
+      "State",
+      "Advise",
+      "Explain"
+    ],
+    "marks": 16,
+    "suggestedMinutes": 25,
+    "source": "Amoy is a sample machinist who has recently started a small uniform business in May Pen, Jamaica. A secondary school has asked her to quote for 120 school shirts for its Form 4 students and for 120 physical education (PE) jerseys.\n\nThe teachers have told her that the shirts are worn five days a week in hot, humid weather and are washed at home every week, and that the PE jerseys must stretch with the body when the students run and reach, and must dry quickly.\n\nAmoy's supplier offers three shirting fabrics at the same price per metre:\n  Fabric A: 100 per cent cotton poplin\n  Fabric B: 65 per cent polyester / 35 per cent cotton (polycotton)\n  Fabric C: 100 per cent polyester\n\nFor the jerseys the supplier has a 100 per cent polyester weft-knitted fabric and a woven cotton fabric. The supplier also sells a fusible non-woven interfacing for the shirt collars and the buttonhole areas.\n\nAmoy stitched her first sample shirt last week. The collar came out limp, and the buttonhole area stretched out of shape.",
+    "prompt": "Answer ALL parts of this question. This is one of SIX compulsory questions on Paper 02 (2 hours 30 minutes); each question is worth 16 marks.",
+    "planningHints": [
+      "Read the two orders separately. The shirts are worn in heat and washed every week; the jerseys must stretch and dry quickly. Each order needs its own fabric decision.",
+      "Parts (a), (b) and (c) are recall - keep them short and spend your time on the advice in parts (d) to (f).",
+      "When you advise a fabric, name it first and then give the reason that links its properties to the way the garment is worn and washed. A reason with no named fabric earns nothing.",
+      "There are six questions and 2 hours 30 minutes, so budget about 25 minutes for this question."
+    ],
+    "examinerTips": "This question carries 6 Knowledge and 10 Use of Knowledge marks (16 marks in all), the split the syllabus gives to every Paper 02 question. Parts (a) to (c) are the Knowledge marks: the fibre groups, the properties of polyester and the names of weaves and constructions, so no explanation is needed there. Parts (d) to (f) are the applied marks and they are the heart of the question: every mark needs the property AND the consequence for this order. A candidate who writes 'polycotton is strong' earns nothing; 'the polyester in the blend gives crease resistance, so 120 shirts need far less ironing every week' earns the mark. Remember that the three shirtings cost the same, so the answer turns on performance and not on price.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Distinguish between a regenerated man-made fibre and a synthetic fibre, and name ONE example of each.",
+        "marks": 2,
+        "commandWords": [
+          "Distinguish",
+          "Name"
+        ],
+        "modelAnswer": "A regenerated fibre is made by dissolving a natural polymer and re-forming it into filaments, so its raw material comes from a plant: viscose rayon, acetate, modal and lyocell are all made from wood pulp. A synthetic fibre is built from petrochemicals and is not based on a natural polymer at all: polyester, nylon, acrylic and elastane (spandex) are synthetic fibres.",
+        "markScheme": [
+          "1 mark for the distinction: a regenerated fibre is made by dissolving and re-forming a natural polymer (wood pulp), while a synthetic fibre is made from petrochemicals.",
+          "1 mark for ONE correct example of each: regenerated - viscose rayon, acetate, modal or lyocell; synthetic - polyester, nylon, acrylic or elastane (spandex).",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "State TWO properties of 100 per cent polyester that would make a shirt uncomfortable to wear next to the skin in the school's climate.",
+        "marks": 2,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "Polyester is not absorbent, so it does not take up perspiration and it feels hot and clammy against the skin in humid heat. It also holds static, it holds oily stains, and it melts rather than burns.",
+        "markScheme": [
+          "1 mark for EACH correct property (maximum 2 marks). Accept any two of: low absorbency, so it does not take up perspiration and feels hot and clammy; it holds static; it holds oily stains; it melts rather than burns.",
+          "Do not accept 'it is strong' or 'it is cheap' - neither makes the shirt uncomfortable to wear.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Name the two sets of yarns that are interlaced in a woven fabric, and state which weave is the simplest and strongest.",
+        "marks": 2,
+        "commandWords": [
+          "Name",
+          "State"
+        ],
+        "modelAnswer": "A woven fabric interlaces the warp yarns, which run lengthwise parallel to the selvedge, with the weft yarns, which run crosswise from selvedge to selvedge. The plain weave is the simplest and strongest of the weaves; twill, as in denim, and satin are the other two.",
+        "markScheme": [
+          "1 mark for the warp (the lengthwise yarns) and the weft (the crosswise yarns).",
+          "1 mark for the plain weave as the simplest and the strongest (twill and satin need not be named).",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Advise Amoy which of Fabric A, Fabric B or Fabric C she should choose for the 120 school shirts, and explain your advice with reference to the fibre content and to the way the shirts are worn and washed.",
+        "marks": 4,
+        "commandWords": [
+          "Advise",
+          "Explain"
+        ],
+        "modelAnswer": "Amoy should choose Fabric B, the 65 per cent polyester / 35 per cent cotton polycotton. The cotton in the blend absorbs perspiration, so the shirts stay comfortable against the skin in the heat - which Fabric C cannot manage, because polyester does not absorb and feels hot and clammy. The polyester in the blend gives strength and crease resistance and makes the shirts dry quickly, so five shirts a week need far less ironing at home; Fabric A, the 100 per cent cotton, is cooler and more absorbent still, but it creases badly, shrinks unless it is pre-shrunk and dries slowly, which is a real cost to a family washing five shirts every week. All three fabrics cost the same, so the blend gives the best balance of comfort, easy care and durability for a uniform worn five days a week. A candidate who defends Fabric A earns the marks only when the reasoning that goes with it is sound.",
+        "markScheme": [
+          "1 mark for naming Fabric B (65 per cent polyester / 35 per cent cotton, polycotton) as the recommendation. Accept Fabric A only when it is argued from coolness and absorbency and the loss of easy care is acknowledged.",
+          "1 mark for the comfort reason: the cotton in the blend absorbs perspiration and is cool to wear, which 100 per cent polyester is not.",
+          "1 mark for the easy-care reason: the polyester gives crease resistance, strength and quick drying, so the shirts need less ironing and last longer than 100 per cent cotton.",
+          "1 mark for the overall judgement: the three fabrics cost the same, so the blend wins on the balance of comfort, easy care and durability for a garment worn five days a week and washed weekly.",
+          "Total 4 marks. Use of Knowledge (UK)."
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "The PE jerseys must stretch with the body and dry quickly. State which of the supplier's two jersey fabrics Amoy should choose, describe how that fabric is made, and explain why the other one is unsuitable.",
+        "marks": 4,
+        "commandWords": [
+          "State",
+          "Describe",
+          "Explain"
+        ],
+        "modelAnswer": "She should choose the 100 per cent polyester weft-knitted fabric. Knitted fabrics are made by looping yarns together instead of interlacing them; in weft knitting the loops run across the fabric, as in a T-shirt, which lets the fabric stretch and recover and gives drape and warmth. Stretch is exactly what a jersey needs, because the students run, reach and bend in it, and the polyester yarn is light and dries quickly after washing and after perspiring. The woven cotton fabric is unsuitable because a woven fabric interlaces warp and weft yarns on a loom, which gives stability and very little stretch, so a woven jersey would pull and restrict movement; cotton also dries slowly, so a wet jersey would stay damp. The one disadvantage to manage is that polyester does not absorb perspiration, so the jerseys should be cut with a loose fit and washed after every use.",
+        "markScheme": [
+          "1 mark for choosing the 100 per cent polyester weft-knitted fabric.",
+          "1 mark for describing the construction: loops of yarn are linked together, and in weft knitting the loops run across the fabric, which allows the fabric to stretch and recover.",
+          "1 mark for explaining why the woven cotton fabric is unsuitable: interlaced warp and weft give stability and very little stretch, so it would restrict movement when the students run and reach.",
+          "1 mark for weighing the fibre: polyester is light and quick-drying, which suits a jersey washed after every use, although it is not absorbent, so the fit and the care routine must allow for that.",
+          "Total 4 marks. Use of Knowledge (UK)."
+        ]
+      },
+      {
+        "label": "(f)",
+        "prompt": "The collar of Amoy's sample shirt is limp and the buttonhole area stretched out of shape. Explain how she should use the fusible non-woven interfacing to correct both faults.",
+        "marks": 2,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "Fusible interfacing is ironed on to the wrong side of the collar and of the buttonhole area before those parts are constructed. On the collar it stiffens and stabilises the shirting, so the collar holds its shape instead of collapsing, and around the buttonholes it supports the fabric so that the area cannot stretch out of shape as the buttons are used. It must be cut to the right size, chosen to match the weight of the shirting, and fused at the temperature the interfacing instructions give.",
+        "markScheme": [
+          "1 mark for explaining that fusible non-woven interfacing is ironed on to the wrong side of the collar and the buttonhole area to stiffen and stabilise the fabric (a sew-in interfacing stitched in place gives the same effect).",
+          "1 mark for linking the interfacing to BOTH faults: the collar keeps its shape, and the buttonhole area is supported so that it does not stretch out of shape.",
+          "Total 2 marks. Use of Knowledge (UK)."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ctf-p2-02",
+    "type": "write",
+    "paper": 2,
+    "section": "Sections 2 and 3 - Textiles Colouring and Finishing; Care and Maintenance of Textile Products",
+    "title": "Structured: dyeing and finishing, and the care of a madras dress, a white blouse and a wool-blend cardigan",
+    "topic": "ctf-l1-3",
+    "commandWords": [
+      "Name",
+      "State",
+      "Explain"
+    ],
+    "marks": 16,
+    "suggestedMinutes": 25,
+    "source": "Keisha bought two garments on a visit to the craft market in Castries, St Lucia.\n\nGarment 1 is a dress in hand-dyed batik cloth in bright madras colours. The stallholder explained that the wax was painted on to the cloth before it was dyed, and that the wax was removed after dyeing. The care label inside the dress reads: a washtub with two dots, a triangle with a cross through it, and an iron with one dot.\n\nGarment 2 is a white cotton blouse for school. On the first wearing Keisha spilt curry on the front of it, and she later found a ballpoint-ink mark on the cuff. Her sister wiped the curry with a hot, wet cloth and the mark spread and set. Keisha also has a wool-blend cardigan whose label reads 'hand wash, cool iron'.\n\nIn the house there are liquid detergent, a grease-removing solvent, methylated spirit, chlorine bleach, a steam iron, a clothes line and a shaded drying area.",
+    "prompt": "Answer ALL parts of this question. This question draws on TWO sections of the syllabus - colouring and finishing, and the care and maintenance of textile products - and it is one of SIX compulsory questions on Paper 02 (2 hours 30 minutes); each question is worth 16 marks.",
+    "planningHints": [
+      "Parts (a) to (c) are recall: the resist methods, the two care-label symbols and the names of two finishes. Keep them short.",
+      "For the stain in part (d), say what the mark is made of first (grease or ink), because the treatment follows from the nature of the stain.",
+      "Part (e) carries the most marks. Read what the cardigan's label says and answer from the fibre, not from habit.",
+      "There are six questions and 2 hours 30 minutes, so budget about 25 minutes for this question."
+    ],
+    "examinerTips": "This question carries 6 Knowledge and 10 Use of Knowledge marks (16 marks in all), the split the syllabus gives to every Paper 02 question, and it is the one question on the paper that draws on two sections: colouring and finishing on the dyed dress, and care and maintenance on all three garments. The Knowledge marks in (a) to (c) need the correct terms, so learn them precisely: batik and tie-dye are the resist methods, a crossed-out symbol always means do NOT do that, and mercerising and flame-retardant finishes must not be confused with sanforising. The applied marks turn on the fibre: grease lifts with powder and a solvent while ink needs methylated spirit, heat sets a stain, and wool is felted by heat, agitation and alkalis while cotton takes hot water and strong detergent. Answer part (f) from the rule that colour runs, and that a newly dyed garment gives out most of its loose dye on the first wash.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Name the TWO resist methods used to dye cloth by hand in the Caribbean, and explain how the resist used on Garment 1 produces its pattern.",
+        "marks": 2,
+        "commandWords": [
+          "Name",
+          "Explain"
+        ],
+        "modelAnswer": "The two resist methods are batik, which resists with wax, and tie-dye, in which the cloth is tied, knotted or bound so that the dye cannot reach the bound areas. In batik the wax is painted or stamped on to the cloth and the dye cannot reach the waxed areas; the wax is melted or boiled off afterwards, leaving the undyed pattern where the wax had been.",
+        "markScheme": [
+          "1 mark for naming BOTH resist methods: batik, which resists with wax, and tie-dye, in which the cloth is tied, knotted or bound.",
+          "1 mark for explaining the wax resist: the wax is painted or stamped on to the cloth and keeps the dye out of those areas, and it is removed afterwards so that the pattern appears.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "State what each of these two care-label symbols on the dress means: the washtub with two dots, and the triangle with a cross through it.",
+        "marks": 2,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "The washtub with two dots means that the dress may be machine washed at a warm temperature, about 40 degrees Celsius. The triangle with a cross through it means do not bleach.",
+        "markScheme": [
+          "1 mark for the washtub with two dots: a warm machine wash, about 40 degrees Celsius (accept 'wash at 40 degrees' or 'warm wash').",
+          "1 mark for the crossed-out triangle: do not bleach.",
+          "Remember the general rule: a symbol that is crossed through always means do NOT do that.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Name the finish that improves the lustre and the strength of cotton, and name the finish that would make a garment safer near a flame.",
+        "marks": 2,
+        "commandWords": [
+          "Name"
+        ],
+        "modelAnswer": "Mercerising improves the lustre and the strength of cotton. A flame-retardant finish makes a garment safer near a flame. Sanforising, which prevents shrinkage, and water repellents, which make a fabric shed water, are other common finishes.",
+        "markScheme": [
+          "1 mark for mercerising as the finish that improves the lustre and the strength of cotton.",
+          "1 mark for the flame-retardant finish.",
+          "Do not award either mark for sanforising, which prevents shrinkage.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Explain how Keisha should remove the curry mark and the ballpoint-ink mark from the white cotton blouse, and explain why her sister's treatment set the curry mark instead of removing it.",
+        "marks": 4,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "Both marks should be treated while they are fresh, and the same rules apply: blot, do not rub; work from the outside of the mark inwards so that it does not spread; and test the treatment on a hidden seam allowance first. Curry is a greasy stain, so Keisha should first press an absorbent powder or a paper towel on to it to lift as much grease as possible, then work in a grease-removing detergent or a solvent, and wash the blouse at the hottest temperature its label allows, which for white cotton is hot. The ballpoint-ink mark needs methylated spirit on a pad, worked from the outside inwards and with the pad changed as the ink lifts, and then a normal wash. The sister set the curry mark because she used a hot, wet cloth: heat coagulates and fixes the colour and the fat of the stain into the fibre, and the rubbing spread it over a wider area. Hot water and a hot iron must never be used on a stain that has not been identified, for exactly this reason.",
+        "markScheme": [
+          "1 mark for the grease-stain method: lift the grease with an absorbent powder or paper first, then treat it with a grease-removing detergent or a solvent, and then wash.",
+          "1 mark for the ink method: methylated spirit (or a proprietary spot remover) worked on to the mark with a pad, changing the pad as the ink lifts, and then washed.",
+          "1 mark for the rules that stop a mark spreading: treat it while it is fresh, blot instead of rubbing, work from the outside inwards and test on a hidden seam allowance.",
+          "1 mark for explaining that heat sets a stain: the hot wet cloth coagulated and fixed the curry into the fibre and the rubbing spread it, which is why hot water and a hot iron are never used on an unidentified stain.",
+          "Total 4 marks. Use of Knowledge (UK)."
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "The cardigan must be washed and dried as its label says. Explain how Keisha should wash and dry it, and what would happen to the cardigan if she boiled it with a strong detergent instead.",
+        "marks": 4,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "Wool is a protein animal fibre, so the cardigan must be hand-washed in cool water with a mild detergent, squeezed gently instead of being wrung or twisted, rinsed in water of the same temperature, and dried flat in the shade so that it keeps its shape; it is pressed with a cool iron on the wrong side under a damp cloth. The 'cool iron' on the label matters because wool scorches and glazes easily. If the cardigan were boiled with a strong detergent, the heat, the agitation and the alkali would make the wool fibres mat together and felt: the cardigan would shrink, thicken and lose its shape and its softness, and it could not be returned to its original size. Hot water also lets dye run, and a strong detergent strips the natural oils from the wool, leaving it harsh.",
+        "markScheme": [
+          "1 mark for the washing treatment: cool water, mild detergent, hand washing, and squeezing rather than wringing or twisting.",
+          "1 mark for the drying and pressing treatment: dry flat in the shade so that the shape is kept, and press with a cool iron on the wrong side under a damp cloth.",
+          "1 mark for the felting explanation: heat, agitation and an alkaline detergent make the wool fibres mat together, so the cardigan shrinks, thickens and loses its shape permanently.",
+          "1 mark for the fibre reason that ties it together: wool is a protein animal fibre, which is why heat, agitation and alkalis felt it, while cotton is a cellulosic fibre that takes hot water, strong detergent and a hot iron.",
+          "Total 4 marks. Use of Knowledge (UK)."
+        ]
+      },
+      {
+        "label": "(f)",
+        "prompt": "The white cotton blouse and the new madras dress are both in the wash basket. Explain why they must not be washed together, and what Keisha should do the first time she washes the dress.",
+        "marks": 2,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "Whites and light colours must be sorted and washed separately from dark and bright colours, because dye from the madras dress would run into the wash water and transfer on to the white blouse, dulling or staining it so that it never washes white again. A new, heavily dyed garment also gives out more loose dye than an old one, so the dress should be washed on its own the first time, at the warm temperature its label allows, and checked for running colour before it is washed with the other brights.",
+        "markScheme": [
+          "1 mark for explaining colour transfer: the dye runs from the dress into the wash water and is taken up by the white blouse, so the blouse is dulled or stained (whites and lights are washed separately from darks and brights).",
+          "1 mark for the first-wash rule: a new, heavily dyed garment is washed on its own the first time, because that is when it gives out the most loose dye.",
+          "Total 2 marks. Use of Knowledge (UK)."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ctf-p2-03",
+    "type": "write",
+    "paper": 2,
+    "section": "Section 4 - Clothing and Culture",
+    "title": "Structured: a heritage-week display on Caribbean cloth, craft and cultural identity",
+    "topic": "ctf-l5-3",
+    "commandWords": [
+      "Name",
+      "State",
+      "Explain",
+      "Describe"
+    ],
+    "marks": 16,
+    "suggestedMinutes": 25,
+    "source": "The Form 5 clothing and textiles class at a school in Grenada is mounting a heritage-week display called 'Cloth and Caribbean Identity'. The class has been given this brief:\n\n  Panel 1 - the cloth that reached the region during and after the plantation period, including osnaburg, check cloth, madras and bandana.\n  Panel 2 - the textile crafts of the region and the way they are sold.\n  Panel 3 - carnival costume: the frame, the covering and the decoration of a mas costume.\n  Statement - what a local designer needs in order to compete with imported clothing in the region's shops.\n\nThe carnival committee has told the class that 40 bands produced about 1,800 costumes in the town last season, and that most of the costume makers learned their skills in the yard rather than in a classroom.",
+    "prompt": "Answer ALL parts of this question. This is one of SIX compulsory questions on Paper 02 (2 hours 30 minutes); each question is worth 16 marks.",
+    "planningHints": [
+      "Parts (a) to (c) are recall and they carry 6 marks between them, so name the items, the cloths and the crafts precisely instead of describing them.",
+      "Part (d) asks you to explain a history, so use the cloths the brief names: osnaburg and check cloth for the plantation period, madras and bandana for the trade that followed it.",
+      "Part (e) has two halves - how a costume is built, and why the work matters to the region - and each half has marks of its own. The figure in the source is there to be used.",
+      "There are six questions and 2 hours 30 minutes, so budget about 25 minutes for this question."
+    ],
+    "examinerTips": "This question carries 6 Knowledge and 10 Use of Knowledge marks (16 marks in all), the split the syllabus gives to every Paper 02 question. The Knowledge marks in (a) to (c) are the names - dress items, the cloth traded from India, straw materials and crafts - and they are the easiest marks on the paper, so they should be taken first. The applied marks want the history to be explained, not merely dated: the plantation economy decided what cloth was bought and therefore what people wore, and the trade in madras and bandana put those cloths into ordinary hands. Part (e) is where the best candidates separate themselves: a costume is a built object (frame, covering, decoration) and an industry (about 1,800 costumes from 40 bands, employment, tourism and skills passed on informally), and both halves must be answered. Part (f) is worth two marks for two named challenges, so do not spend time on a general essay about how hard business is.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Name TWO items of traditional Caribbean dress that the class could show on Panel 1.",
+        "marks": 2,
+        "commandWords": [
+          "Name"
+        ],
+        "modelAnswer": "The head tie, which is the madras or bandana head cloth; the full skirt worn with it; the madras plaid dress; the bandana working dress with its apron; and the calico or osnaburg garments made up during the plantation period.",
+        "markScheme": [
+          "1 mark for EACH correct item of traditional dress named (maximum 2 marks). Accept: the head tie, in madras or bandana, as worn head cloth; the full skirt; the madras plaid dress or national dress; the bandana dress and apron; the cotton lace-like needlework, patchwork and the pleating of the Leeward and Windward Islands.",
+          "Do not award marks for a modern imported garment.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Name the cloth that was brought to the Caribbean through trade with India and is used for head ties and working dress, and state ONE plant material that Caribbean straw craft works with.",
+        "marks": 2,
+        "commandWords": [
+          "Name",
+          "State"
+        ],
+        "modelAnswer": "Madras, and the bandana cloth that was traded with it, came through trade with India and were used for head ties and for working dress. Straw craft works with straw and dried palm leaves, and also with coir from the coconut husk and with sisal.",
+        "markScheme": [
+          "1 mark for madras (accept bandana).",
+          "1 mark for any ONE plant material of straw craft: straw, dried palm leaf, coir (coconut husk) or sisal.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "State TWO Caribbean textile crafts, other than straw craft, and name ONE product of each.",
+        "marks": 2,
+        "commandWords": [
+          "State",
+          "Name"
+        ],
+        "modelAnswer": "Batik and tie-dye, which produce dyed cloth for garments, wall hangings and scarves; silk-screened and hand-painted T-shirts; embroidery and appliqué, which decorate garments and household items; crochet and knitting; leather work for sandals and belts; and coir and sisal work for mats, bags and rope.",
+        "markScheme": [
+          "1 mark for EACH correct craft together with a product of it (maximum 2 marks). Accept: batik or tie-dye - dyed cloth, garments, wall hangings, scarves; silk-screen printing or hand painting - T-shirts; embroidery or appliqué - decorated garments and household items; crochet or knitting - garments and craft items; leather work - sandals and belts; coir or sisal work - mats, bags and rope.",
+          "A craft named with no product earns nothing for that mark.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Explain how the plantation economy and the trade that followed it shaped the clothing of Caribbean people, referring to at least two of the cloths named on Panel 1.",
+        "marks": 4,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "Before European contact the indigenous peoples of the region used their own cotton, palm, bark, sisal and beads. The plantation economy then tied the region to cloth that was made elsewhere: coarse osnaburg and cheap check cloth were imported to clothe enslaved people, so what they wore was decided by what the estate could buy cheaply rather than by their own traditions, and cloth became an instrument of the plantation system. Cloth was also trade: madras and bandana were brought in through trade with India, and the market and haberdashery trade that grew up around Caribbean towns put those cloths into ordinary hands, which is how madras became the head tie and bandana the working dress. Emancipation and migration added further strands, including the tucking, embroidery and pleating of cotton in the Leeward and Windward Islands and the lace-like needlework and patchwork that travelled with indentured workers and their descendants. The result is that Caribbean dress carries its history, and the head tie, the full skirt and the madras plaid survive today in folk performance, national dress and festivals.",
+        "markScheme": [
+          "1 mark for the plantation link: coarse osnaburg and check cloth were imported to clothe enslaved people, so the cloth that was worn was decided by the estate's economy.",
+          "1 mark for the trade link: madras and bandana came in through trade with India and were sold through the market and haberdashery trade, and were used for head ties and working dress.",
+          "1 mark for at least one later influence: emancipation and migration brought the tucking, embroidery and pleating of cotton in the Leeward and Windward Islands, and the lace-like needlework and patchwork of indentured workers and their descendants.",
+          "1 mark for the link to identity today: traditional dress - the head tie, the full skirt, the madras plaid - survives in folk performance, national dress and festivals, so the cloth still signals Caribbean identity.",
+          "Maximum 4 marks, and at least TWO of the cloths named in the brief must be used.",
+          "Total 4 marks. Use of Knowledge (UK)."
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "Describe how a mas costume is built for carnival, and explain why carnival costume production matters to the region's economy.",
+        "marks": 4,
+        "commandWords": [
+          "Describe",
+          "Explain"
+        ],
+        "modelAnswer": "A costume begins with a frame built from wire, cane or foam, bent into the shape the designer has drawn and usually carried on the shoulders or on a harness. The frame is then covered with fabric, and the covering is decorated with sequins, jewels, feathers and beads glued or stitched on, with paint or spray used for some finishes. The skills needed are pattern cutting, wire bending, beading, spraying and construction. Carnival matters to the economy because a single band orders hundreds of costumes - the town's 40 bands produced about 1,800 costumes last season - so costume production is the region's largest textile enterprise: it employs makers, beaders, wire benders, designers and the suppliers of fabric, feathers and beads, it draws visitors and supports tourism, and it keeps a large share of the skill and the earnings inside the region. Much of that skill is passed on in the yard rather than in a classroom, which is itself evidence of how strong the tradition is.",
+        "markScheme": [
+          "1 mark for the frame: wire, cane or foam bent into the drawn shape and carried on a harness or on the shoulders.",
+          "1 mark for the covering and the decoration: fabric over the frame, decorated with sequins, jewels, feathers and beads, using the skills of pattern cutting, wire bending, beading, spraying and construction.",
+          "1 mark for the scale and the employment: hundreds of costumes in one band and about 1,800 costumes from the town's 40 bands, employing makers, beaders, designers and suppliers.",
+          "1 mark for the wider value: it supports tourism and the festival economy, and keeps skills and earnings in the region (the skills are passed on informally, in the yard).",
+          "Total 4 marks. Use of Knowledge (UK)."
+        ]
+      },
+      {
+        "label": "(f)",
+        "prompt": "State TWO challenges that face a local designer who is trying to sell clothing in the Caribbean today.",
+        "marks": 2,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "A local designer faces competition from cheap imported clothing, the high cost of raw materials because fabric, trims and thread are usually imported, difficulty in getting finance for machinery and materials, limited training and machinery, and small domestic markets that stop production in quantity.",
+        "markScheme": [
+          "1 mark for EACH correct challenge (maximum 2 marks). Accept any two of: competition from cheap imports; the cost of raw materials; access to finance; machinery and training; the small size of domestic markets; unreliable or costly transport; the cost of meeting export requirements.",
+          "Do not award a mark for a general answer such as 'business is hard' with no named challenge.",
+          "Total 2 marks. Use of Knowledge (UK)."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ctf-p2-04",
+    "type": "write",
+    "paper": 2,
+    "section": "Section 5 - Fashion for the Individual and the Home",
+    "title": "Structured: designing an outfit for Danielle on the principles of design, and using the leftover cloth at her window",
+    "topic": "ctf-l3-1",
+    "commandWords": [
+      "Name",
+      "State",
+      "Advise",
+      "Explain"
+    ],
+    "marks": 16,
+    "suggestedMinutes": 25,
+    "source": "Danielle is 1.55 m tall, has a full figure and is short-waisted. She has been asked to design an outfit for her church's harvest festival and, later in the year, for a family wedding. She wants to use a length of madras cloth that her grandmother brought back from Trinidad, because the cloth has family meaning.\n\nDanielle has told the textiles class that she does not want the outfit to make her look shorter or wider than she is. She is willing to change the colour of the trim, the direction of the dominant line in the design, and the size of the print she buys to go with the cloth, but the madras itself must appear in the outfit.\n\nHer living room window is 1.4 m wide and measures 1.2 m from the track to the sill, and she would like to use the leftover cloth there. She is keeping the outfit for the wedding, so it must not look out of date in six months.",
+    "prompt": "Answer ALL parts of this question. This is one of SIX compulsory questions on Paper 02 (2 hours 30 minutes); each question is worth 16 marks.",
+    "planningHints": [
+      "Parts (a) to (c) are the vocabulary of design and they carry 6 marks between them. Name the elements and the principles exactly as they are taught.",
+      "Part (d) is about line and the effect of line on the wearer. Answer it from Danielle's own figure - she is short and full - and not from the outfit alone.",
+      "Part (e) carries the colour, value and print marks. Each choice needs its reason attached to it, because the marks are for the effect on the wearer.",
+      "There are six questions and 2 hours 30 minutes, so budget about 25 minutes for this question."
+    ],
+    "examinerTips": "This question carries 6 Knowledge and 10 Use of Knowledge marks (16 marks in all), the split the syllabus gives to every Paper 02 question. Parts (a) to (c) are the Knowledge marks and they are pure vocabulary: the elements (line, shape, form, colour, texture, space and pattern) and the principles (balance, rhythm, proportion, emphasis, harmony, unity and contrast). Parts (d) and (e) are the applied marks and they are answered about a real person, not about a garment in a magazine: vertical lines lengthen and slim, horizontal lines widen, warm colours advance and cool colours recede, dark values reduce size, and a print must be kept in proportion to the wearer. Every one of those statements earns its mark only when it is tied to Danielle's height, her full figure and her family's cloth. Part (f) is the only part about the home, so use the curtain rule from the Home section of the syllabus: one and a half to two and a half times the window width for a gathered or pleated heading.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Name the element of design that describes the visual and the tactile quality of a fabric, and name the principle of design that a trim repeated three times down a garment creates.",
+        "marks": 2,
+        "commandWords": [
+          "Name"
+        ],
+        "modelAnswer": "Texture is the element that describes the visual and tactile quality of a fabric, from crisp cotton to soft jersey or nubby linen. A trim repeated three times creates rhythm, the principle that uses repetition and gradation to lead the eye.",
+        "markScheme": [
+          "1 mark for texture, described as the visual and tactile quality of the fabric.",
+          "1 mark for rhythm, created by repetition and gradation.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "State ONE pair of complementary colours on the colour wheel, and state the effect a dark value has on the apparent size of the wearer.",
+        "marks": 2,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "Complementary colours lie opposite each other on the colour wheel - red with green, blue with orange, yellow with violet - and they intensify each other when they are used together. A dark value, which is a shade, appears to reduce size or make an area recede, while a light value, a tint, appears to increase it.",
+        "markScheme": [
+          "1 mark for ANY correct complementary pair: red with green, blue with orange, or yellow with violet (accept the statement that complementary colours lie opposite each other on the wheel).",
+          "1 mark for the value effect: a dark value appears to reduce size, while a light value appears to increase it.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Name the principle of design that gives a garment a focal point, and name the element of design that a madras check is.",
+        "marks": 2,
+        "commandWords": [
+          "Name"
+        ],
+        "modelAnswer": "Emphasis gives a design its focal point, such as a collar, a belt or an appliqué. The madras check is pattern, which is one of the elements of design, along with line, shape, form, colour, texture and space.",
+        "markScheme": [
+          "1 mark for emphasis.",
+          "1 mark for pattern.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Advise Danielle on the dominant line she should use in the outfit, and explain the effect of the line you choose on her height and on her width. Refer to at least two different types of line.",
+        "marks": 4,
+        "commandWords": [
+          "Advise",
+          "Explain"
+        ],
+        "modelAnswer": "Danielle should make the vertical line dominant, because vertical lines lengthen and slim: a vertical princess seam, a long centre-front opening, a column of one colour from shoulder to hem, or a long narrow scarf all draw the eye up and down and make her look taller and narrower. She should keep a dominant horizontal line away from her hips and her waist, because horizontal lines widen and emphasise the area they cross, which is the last thing she wants on a full figure; where a horizontal is needed, it should sit at the shoulder or the hem rather than across the widest part of her body. Diagonal and curved lines add movement and softness, so a gently curved neckline, an asymmetric wrap or a softly curved hem can carry the madras without adding width. Because she is short-waisted, the strongest vertical line should run from the shoulder or the neckline down through the bodice, which lengthens the torso and makes the hip line sit lower in the eye of the onlooker; an empire line, which is a raised waistline just under the bust, also lengthens the look of a short waist when it is handled well.",
+        "markScheme": [
+          "1 mark for advising a dominant vertical line and explaining that vertical lines lengthen and slim.",
+          "1 mark for explaining why a dominant horizontal line is kept away from the hips and the waist: horizontal lines widen and emphasise the area they cross.",
+          "1 mark for using diagonal or curved lines deliberately: they add movement and softness and can carry the print without widening the wearer.",
+          "1 mark for applying the line to Danielle's own proportions: the vertical line runs from the shoulder or the neckline down through the bodice because she is short-waisted and full, so the torso is lengthened and the eye is drawn upward.",
+          "Total 4 marks. Use of Knowledge (UK)."
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "Explain how Danielle should use colour, value and the size of the print so that the madras cloth does not overwhelm her, and give a reason for each choice.",
+        "marks": 4,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "Warm colours advance and cool colours recede, so the warm reds and yellows of the madras should be placed where she wants the eye to go - at her face, her neckline or her hem - and a cooler colour should be used on the areas she wants to leave in the background. Dark values appear to reduce size, so a darker madras, or a dark plain fabric used with it for the main body of the outfit, will make her look slimmer, and the light values should be kept away from her widest points. The print must be kept in proportion to the wearer: a madras check that is too large overwhelms a small frame and draws the eye to the width of the pattern instead of to Danielle, so a smaller check, or the cloth used in measured panels rather than all over, suits her better. Colour harmony unifies the outfit, so a monochromatic or analogous scheme built around the reds, oranges and browns of the madras holds the design together, and a trim repeated a few times builds rhythm that carries the eye upward. Finally the principles work together: choose one point of emphasis, such as the neckline, and keep the trims and the pattern balanced on both sides where the design is symmetrical.",
+        "markScheme": [
+          "1 mark for the warm-and-cool rule: warm colours advance, so they are placed where the eye should go, and cool colours recede on the areas to be played down.",
+          "1 mark for the value rule: dark values reduce the apparent size, so a dark value or a dark plain companion fabric slims the figure and light values are kept away from the widest points.",
+          "1 mark for keeping the print in proportion to the wearer: an oversized madras check overwhelms a small frame, so a smaller check or measured panels of the cloth are chosen.",
+          "1 mark for using harmony, emphasis and rhythm deliberately: a monochromatic or analogous colour scheme unifies the outfit, one focal point is chosen, and a repeated trim creates rhythm and balance.",
+          "Total 4 marks. Use of Knowledge (UK)."
+        ]
+      },
+      {
+        "label": "(f)",
+        "prompt": "Danielle wants to use the leftover cloth at the window, which is 1.4 m wide and measures 1.2 m from the track to the sill. State the demands a curtain fabric must meet, and explain how wide the finished curtain should be and why.",
+        "marks": 2,
+        "commandWords": [
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "A curtain fabric must have drape, so that it hangs well, resistance to fading in the sun, and enough body to hold a fold. The finished width of the curtain should be one and a half to two and a half times the width of the window for the heading chosen, which for this 1.4 m window is about 2.1 m to 3.5 m of fabric, because the extra width is what forms the pleats or the gathers; a curtain cut to the exact width of the window would hang flat and stiff, like a sheet. The finished length is measured from the top of the heading to the hem, with the heading allowance and a deep hem added so that the curtain hangs straight and can be let down later.",
+        "markScheme": [
+          "1 mark for the demands a curtain fabric must meet: drape, resistance to fading in sunlight, and the ability to hold a fold (accept durability and easy care as well).",
+          "1 mark for the fullness rule and its reason: one and a half to two and a half times the window width, about 2.1 m to 3.5 m here, because the extra width forms the pleats or gathers and a curtain cut to the exact window width would hang flat; the length is measured from the top of the heading to the hem with the heading allowance and a deep hem added.",
+          "Total 2 marks. Use of Knowledge (UK)."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ctf-p2-05",
+    "type": "write",
+    "paper": 2,
+    "section": "Section 6 - Fashion Sketching, Drawing and Pattern Development",
+    "title": "Structured: drafting, laying out and fitting a straight skirt for a client",
+    "topic": "ctf-l2-3",
+    "commandWords": [
+      "Name",
+      "State",
+      "Describe",
+      "Explain"
+    ],
+    "marks": 16,
+    "suggestedMinutes": 25,
+    "source": "Ravi is making a straight skirt for his aunt, Mrs Belfon, for the practical part of his SBA. He took these measurements over her light dress, with the tape snug but not tight: waist 78 cm, hip 102 cm, skirt length 62 cm, crotch depth 30 cm, nape to waist 41 cm.\n\nHe bought a commercial pattern marked Size 14. Mrs Belfon usually buys ready-to-wear dresses marked Size 12. The pattern envelope has a table of body measurements and a separate table of finished garment measurements, and it states the fabric required for a 115 cm width and for a 150 cm width.\n\nMrs Belfon has tried on the toile. The skirt rides up at the back, the waistband gaps at the back, and the front waistline sits too high.",
+    "prompt": "Answer ALL parts of this question. This is one of SIX compulsory questions on Paper 02 (2 hours 30 minutes); each question is worth 16 marks.",
+    "planningHints": [
+      "Parts (a) to (c) are the language of the pattern - the measurements and the symbols. Name them precisely; a description that never names the symbol will not earn the mark.",
+      "Part (d) asks for an order, so write it as a numbered list with the reason beside each step, and put the marking and transferring of the pattern lines before the cutting.",
+      "Part (e) has three faults and each needs a cause and a correction. Look at the client's figure before you decide the cause, and remember that the correction goes on to the pattern as well as the toile.",
+      "There are six questions and 2 hours 30 minutes, so budget about 25 minutes for this question."
+    ],
+    "examinerTips": "This question carries 6 Knowledge and 10 Use of Knowledge marks (16 marks in all), the split the syllabus gives to every Paper 02 question. The Knowledge marks in (a) to (c) are the terms of pattern work - the measurements and the symbols - and they must be given by name. The applied marks are where the paper is won: part (d) tests whether the candidate knows that fabric is straightened, folded and pinned on the straight grain and that every pattern line is marked before anything is cut; part (e) tests fitting, which is diagnosis and correction rather than sewing, and each fault needs a cause drawn from the client's own figure and a correction made on the pattern and the toile; and part (f) tests whether the candidate knows that a pattern size is not a ready-to-wear size and that the fabric requirement, the suggested fabrics and the notions list must all be checked before the cloth is bought.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Name the measurement in the list that is needed for trousers, and name the measurement in the list that is needed for a garment with a bodice.",
+        "marks": 2,
+        "commandWords": [
+          "Name"
+        ],
+        "modelAnswer": "The crotch depth, 30 cm, is the measurement needed for trousers, and the nape to waist, 41 cm, is the measurement needed for a garment with a bodice. Neither of them is used to draft a straight skirt, which needs the waist, the hip and the skirt length.",
+        "markScheme": [
+          "1 mark for the crotch depth as the trousers measurement.",
+          "1 mark for the nape to waist as the bodice measurement.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "State what the grain-line arrow on a pattern piece tells the cutter, and state what the notches on the pattern pieces are for.",
+        "marks": 2,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "The grain-line arrow must be laid parallel to the selvedge of the fabric, so that the piece is cut on the straight grain and the garment does not twist. The notches are the small marks that must match on two pattern pieces, so they show where the pieces are joined together.",
+        "markScheme": [
+          "1 mark for the grain line: it must run parallel to the selvedge, so that the piece is cut on the straight grain.",
+          "1 mark for the notches: they match two pieces together when the garment is constructed.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "State what the 'place on fold' symbol on a pattern piece tells the cutter, and state what the selvedge of a fabric is.",
+        "marks": 2,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "The 'place on fold' symbol means that this edge of the pattern piece is laid along the fold of the fabric, so that the piece is cut whole and symmetrical when the fabric is opened out. The selvedge is the firm, finished edge of the fabric down both sides, where the weft yarn turns back; the warp yarns run parallel to it.",
+        "markScheme": [
+          "1 mark for 'place on fold': the edge of the piece is laid on the fold of the fabric, so that the opened piece is whole and symmetrical.",
+          "1 mark for the selvedge: the firm finished edge of the fabric along which the warp yarns run.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Describe the order in which Ravi should lay out and cut the pattern pieces on the fabric, and give the reason for each step.",
+        "marks": 4,
+        "commandWords": [
+          "Describe"
+        ],
+        "modelAnswer": "First the fabric is straightened by pulling a weft thread and cutting along the line the thread makes, because a piece cut on a skewed fabric will never hang straight, and then it is pressed. The fabric is folded right sides together with the selvedges matching, so that the two halves of the skirt are cut as mirror images. The pattern pieces are pinned on with the grain-line arrow true to the selvedge, keeping any nap or one-way design running the same way on every piece, and the layout diagram on the instruction sheet is followed so that the minimum fabric is used. The 'place on fold' edges are put on the fold, and the pieces are pinned flat without lifting the fabric. Ravi must then mark and transfer all the pattern lines - the darts, the notches, the seam allowances, the fold line and the grain line - with tailor's chalk or tacking thread while the pieces are still pinned. Last he cuts the outer edges with dressmaking shears, holding the shears flat on the table and cutting away from his body, and notches the edges where the pattern shows.",
+        "markScheme": [
+          "1 mark for straightening the fabric by pulling a weft thread and cutting along it, and then pressing it, because a piece cut on a skewed grain cannot hang straight.",
+          "1 mark for folding right sides together with the selvedges matching, and pinning with the grain-line arrow true to the selvedge and any nap or one-way design all running the same way.",
+          "1 mark for following the layout diagram so that the minimum fabric is used, with the 'place on fold' edges placed on the fold.",
+          "1 mark for marking and transferring every pattern line and notch before cutting, and cutting with sharp dressmaking shears held flat and away from the body.",
+          "Total 4 marks. Use of Knowledge (UK)."
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "Mrs Belfon's toile rides up at the back, the waistband gaps at the back, and the front waistline sits too high. Identify the cause of each fault and state the correction that Ravi should make to the pattern and to the toile.",
+        "marks": 4,
+        "commandWords": [
+          "Identify",
+          "State"
+        ],
+        "modelAnswer": "All three faults mean that the pattern does not match Mrs Belfon's own figure, and each is corrected on the toile and then transferred to the pattern. The skirt rides up at the back because the back length of the pattern is too short for her posture and her seat, so Ravi must add length at the back of the skirt above the hip line until the waistline sits level and the hem hangs even. The waistband gaps at the back because the back waist of the pattern is too big for her, so he must take it in at the back seams or by deepening the back darts until the band lies flat against her back. The front waistline sits too high because her front waist length is shorter than the pattern's, so he must lower the front waistline, taking a fold across the front pattern piece at the waist, until the waistline settles at her natural waist. If the whole waistline is out, the fault is usually in the measurements, so he should measure again with the tape snug but not tight, with her standing naturally and with the same landmarks each time, and check the corrected pattern on a fresh toile before the skirt fabric is cut.",
+        "markScheme": [
+          "1 mark for the waistline that sits too high: the pattern's front waist length is longer than the client's, so the front waistline is lowered by taking a fold across the front pattern piece at the waist, and the natural waistline is found again on the body.",
+          "1 mark for the skirt that rides up at the back: the back length is too short for her posture or her seat, so length is added at the back above the hip line until the waistline is level and the hem hangs even.",
+          "1 mark for the gapping waistband: the back waist is too big, so it is taken in at the back seams or by deepening the darts until the band lies flat.",
+          "1 mark for the method that holds the corrections together: the measurements are checked again with the tape snug but not tight on a natural stance, the fit is corrected on a toile, and the corrections are transferred to the pattern before the garment is cut.",
+          "Total 4 marks. Use of Knowledge (UK)."
+        ]
+      },
+      {
+        "label": "(f)",
+        "prompt": "Mrs Belfon's ready-to-wear size of 12 is not the same as the pattern size of 14. Explain what Ravi must check before he chooses the pattern size, and what he must check on the envelope before he buys the skirt fabric.",
+        "marks": 2,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "He must not use the ready-to-wear size at all: the pattern size is chosen from the pattern's own body measurement chart, by matching the waist and hip measurements he has taken to that chart, and the finished garment measurements are then checked to see how much ease the pattern allows. Before he buys the fabric he must check the envelope's fabric requirement for the width he is going to buy, 115 cm or 150 cm, the suggested fabrics and any one-way design or nap warning, and the notions list - thread, zip, interfacing, fastening and any lining - so that everything he needs is bought at once.",
+        "markScheme": [
+          "1 mark for choosing the pattern size from the pattern's body measurement chart against the client's own measurements, and not from the ready-to-wear size.",
+          "1 mark for checking the envelope before the cloth is bought: the fabric required for the width being bought, the suggested fabrics and any one-way design warning, and the notions list of thread, zip, interfacing, fastenings and lining.",
+          "Total 2 marks. Use of Knowledge (UK)."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ctf-p2-06",
+    "type": "write",
+    "paper": 2,
+    "section": "Section 7 - Construction Processes",
+    "title": "Structured: the order of work and the construction of a school skirt with a zip and a waistband",
+    "topic": "ctf-l3-2",
+    "commandWords": [
+      "Name",
+      "State",
+      "Describe",
+      "Explain"
+    ],
+    "marks": 16,
+    "suggestedMinutes": 25,
+    "source": "Anika is making a straight skirt for her cousin's school uniform. The skirt has a waistband, a centred zip in the left side seam and a hem, and her cousin wants her initials appliquéd on the front panel as decoration. The fabric is a medium-weight cotton blend.\n\nThe workroom has a sewing machine, an overlocker, a steam iron, a sleeve board, a tailor's ham, a seam roll and a pressing cloth, together with fusible interfacing, matching thread, a zip foot and a scrap box of fabric left over from other projects.\n\nAnika's first attempts did not go well: the fabric puckered along the seam when she put the zip in, and the waistband rolled outwards when it was finished. She also pressed her first seam with the iron set to 'cotton' while the pins were still in the fabric.",
+    "prompt": "Answer ALL parts of this question. This is one of SIX compulsory questions on Paper 02 (2 hours 30 minutes); each question is worth 16 marks.",
+    "planningHints": [
+      "Parts (a) to (c) are the names of seams, pressing equipment and construction terms, so answer them in one line each and save your time for the rest.",
+      "Part (d) asks for an order of work, so write it as a numbered list. The order matters: the shaping comes before the seams, the neatening is done before the zip and the waistband cover the edges, and the pressing is done as you sew and not only at the end.",
+      "Parts (e) and (f) describe work, so use the language of construction - tack, grade, clip, under-stitch, ease, press - and say why each step is done, not only that it is done.",
+      "There are six questions and 2 hours 30 minutes, so budget about 25 minutes for this question."
+    ],
+    "examinerTips": "This question carries 6 Knowledge and 10 Use of Knowledge marks (16 marks in all), the split the syllabus gives to every Paper 02 question. Parts (a) to (c) are the Knowledge marks: the named seams, the pressing equipment and two construction terms, and they should be answered briefly and correctly. Parts (d) to (f) are the applied marks and they reward sequence and reason. In part (d) a list that puts the hem before the waistband, or that leaves all the pressing to the end, loses the last mark. In part (e) the marks are for the steps that prevent the two faults named in the source: tacking the opening before the zip is fitted, stitching with a zip foot from the right side, and under-stitching the waistband so that it cannot roll. In part (f) the decoration must be stitched all round so that it survives washing, and the general rule is worth remembering: nothing sharp or unsecured is ever left where it can mark the fabric, mark the iron or come loose in the wash.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Name the seam that is used to enclose the raw edges on fine fabric such as sheer curtains, and the seam that is used where strength and a neat inside finish are both needed, as on jeans.",
+        "marks": 2,
+        "commandWords": [
+          "Name"
+        ],
+        "modelAnswer": "The French seam encloses the raw edges inside a fold and is used on fine fabrics and sheer curtains. The flat fell seam encases both raw edges, gives a strong seam and a neat inside finish, and is used on jeans.",
+        "markScheme": [
+          "1 mark for the French seam.",
+          "1 mark for the flat fell seam.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Name the pressing equipment Anika should use to press a dart and to press a curved seam, and state why a pressing cloth is used.",
+        "marks": 2,
+        "commandWords": [
+          "Name",
+          "State"
+        ],
+        "modelAnswer": "A dart is pressed over a tailor's ham, which gives the curved shape that the dart needs, and a curved seam is pressed over a seam roll, which stops the seam edges marking the right side of the fabric. A pressing cloth is laid between the iron and the fabric to protect the fabric from scorching, glazing and shine, and it is used damp on cotton and linen.",
+        "markScheme": [
+          "1 mark for both items: the tailor's ham for the dart and the seam roll for the curved seam (accept the sleeve board for a sleeve seam).",
+          "1 mark for the pressing cloth: it protects the fabric from scorching, glazing and shine, and it is used damp on cotton and linen.",
+          "Do not award a mark for pressing with the pins still in the garment: the pins mark the fabric and damage the iron, and they should be removed as the stitching is done.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "State the purpose of stay-stitching, and state why a waistband is interfaced.",
+        "marks": 2,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "Stay-stitching is a row of stitching worked just inside the seam line on an edge that could stretch, such as a neckline or a curved waist, and its purpose is to hold the shape of that edge so that it does not stretch out of shape while the garment is handled and constructed. A waistband is interfaced so that it is stiffened and stabilised and does not roll or fold over; the interfacing is chosen to match the weight of the fabric and is fused or sewn in before the band is attached.",
+        "markScheme": [
+          "1 mark for stay-stitching: it stops the edge, such as a neckline or a curved waist, stretching out of shape during construction and handling.",
+          "1 mark for the waistband interfacing: it stiffens and stabilises the band so that it does not roll or fold over.",
+          "Total 2 marks. Knowledge (K)."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Write the order of work Anika should follow to make the skirt, from reading the pattern to the final press, and state where the neatening and the pressing fit into that sequence.",
+        "marks": 4,
+        "commandWords": [
+          "Write",
+          "State"
+        ],
+        "modelAnswer": "The order of work is: read the pattern instructions and plan the tasks, allowing a time for each; adjust and cut the pattern; straighten, press and lay out the fabric; cut, mark and transfer all the pattern lines; stay-stitch the waist edge and fuse the interfacing to the waistband; make the darts; join the side seams, leaving the opening for the zip; neaten the raw edges with the overlocker or a zigzag stitch; insert the centred zip in the left side seam; attach the interfaced waistband, trimming, grading and under-stitching it; level and stitch the hem; work the fastening and the decoration; and give the final press. Neatening belongs immediately after the seams are stitched and before the zip and the waistband cover the raw edges. Pressing is not one step at the end: each seam is pressed as it is sewn, before another seam crosses it, and the final press is the last step of all. A written production plan with a time estimate for each step is also the record of work that practical assessment requires.",
+        "markScheme": [
+          "1 mark for the opening steps in order: read the pattern instructions and plan the work, adjust and cut the pattern, straighten, press and lay out the fabric, then cut, mark and transfer all the lines.",
+          "1 mark for the shaping before the seams: stay-stitch the waist edge, fuse the interfacing to the waistband and make the darts, because shaping a garment before it is joined is what keeps the fit.",
+          "1 mark for the body construction in order: join the side seams leaving the zip opening, neaten the raw edges, then insert the zip and attach the waistband.",
+          "1 mark for the finishing order and for pressing as you sew: level and stitch the hem, work the fastening and the decoration, then give the final press, with each seam pressed before the next seam crosses it.",
+          "A list that puts the hem before the waistband, or that leaves all the pressing to the end, does not earn the last mark.",
+          "Total 4 marks. Use of Knowledge (UK)."
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "Explain how Anika should insert the centred zip so that the fabric does not pucker, and how she should attach the waistband so that it does not roll.",
+        "marks": 4,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "For the zip she should first tack the two seam allowances of the opening together, so that the opening is held at the correct width and cannot shift or stretch. The closed zip is then pinned or tacked on to the tacked seam line, with the two sides of the opening level and the seam lines meeting over the zip, and it is stitched from the right side with a zip foot, working from the bottom of the zip to the top on both sides and keeping the stitching just outside the teeth. Because the seam was tacked first, the fabric cannot be pushed along by the foot, which is what puckers an untacked zip. The tacking is then removed, the seam and the zip are pressed on the wrong side away from the teeth, and the zip is worked once to check that the fronts meet. For the waistband she fuses the interfacing to the band before it is attached, joins the band to the waistline, trims and grades the seam allowances so that the band is not bulky, presses the seam up into the band, and then under-stitches the seam allowance to the band from the inside; it is the under-stitching that stops the band rolling over at the top edge. The band is pinned and eased to the waistline so that the two layers stay level.",
+        "markScheme": [
+          "1 mark for tacking the seam allowances of the opening before the zip is fitted, so that the opening cannot stretch or shift.",
+          "1 mark for pinning or tacking the zip on the seam line and stitching from the right side with a zip foot, keeping the stitching just outside the teeth and working both sides so that the fronts meet level, then removing the tacking and pressing.",
+          "1 mark for preparing the waistband: fusing the interfacing to the band before it is attached, and trimming and grading the seam allowances so that the band is not bulky.",
+          "1 mark for under-stitching the seam allowance to the band from the inside, which is what stops the band rolling over at the top edge (with the seam pressed up into the band and the band eased to the waistline).",
+          "Total 4 marks. Use of Knowledge (UK)."
+        ]
+      },
+      {
+        "label": "(f)",
+        "prompt": "The initials are to be appliquéd on the front panel as decoration. Describe how Anika should apply them so that the decoration survives washing.",
+        "marks": 2,
+        "commandWords": [
+          "Describe"
+        ],
+        "modelAnswer": "The decoration is appliqué, which is one piece of fabric stitched on to another. Anika should draw or trace the letter shapes on to the appliqué fabric, cut them out, and stabilise small pieces with a fusible backing so that they stay crisp and do not fray while she works. She then pins the letters in position, checks that they enhance the design and are placed where they do not interfere with the pressing, the fastenings or the fit, and stitches around the whole outline - machine satin stitch, zigzag or a hand blanket stitch - so that every edge is enclosed and cannot lift. The threads are then secured and trimmed at the back, and nothing loose is left that could come away in the wash.",
+        "markScheme": [
+          "1 mark for the method: cutting the letter shapes from the appliqué fabric, stabilising small pieces with a fusible backing, positioning and pinning them on the panel, and stitching around the outline with satin stitch, zigzag or a hand blanket stitch.",
+          "1 mark for making it last: every edge is enclosed by the stitching and the threads are secured so that the decoration cannot lift or unravel in the wash, and it must not interfere with the pressing, the fastenings or the fit.",
+          "Total 2 marks. Use of Knowledge (UK)."
+        ]
+      }
+    ]
+  }
+]
