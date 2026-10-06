@@ -1,0 +1,480 @@
+[
+  {
+    "id": "pob-p2-01",
+    "type": "write",
+    "paper": 2,
+    "section": "Question 1",
+    "title": "Choosing a form of business organisation",
+    "topic": "pob-l1-2",
+    "commandWords": [
+      "Define",
+      "State",
+      "Calculate",
+      "Describe",
+      "Explain"
+    ],
+    "marks": 20,
+    "suggestedMinutes": 24,
+    "source": "Marcia Bartley has run Bartley's Best Bakes, a bakery and catering business in Mandeville, as a sole trader for nine years. Two years ago her two sisters, Annette and Paula, joined her and the business became a partnership. The partnership agreement states that Annette, Paula and Marcia share profits and losses in the ratio 2 : 3 : 5 respectively. In the year just ended the partnership made a profit of J$1,400,000.\n\nThe sisters are now thinking of forming a private limited company, Bartley's Best Bakes Ltd, and inviting a fourth investor to buy shares. Annette is worried about giving up control of a business she has helped to build; Paula argues that a company would allow them to raise far more capital and would protect their personal assets. The bakery employs eight workers.",
+    "prompt": "Answer ALL parts. Where a calculation is required, show your working. Use the details given in the case study in your answers.",
+    "planningHints": [
+      "'Limited liability' is about how far an owner's responsibility for the debts of the business extends. It does not mean that the owner risks nothing at all - the money already invested in the business can still be lost.",
+      "Profits in a partnership are shared in the agreed ratio. Add the figures in the ratio to find the number of parts, then work out what one part is worth before you calculate each partner's share.",
+      "'State FOUR' means four separate, correct points - write them as a numbered list rather than as a paragraph, so the examiner can see all four.",
+      "Weigh both sides of the decision: a company offers capital, limited liability and continuity, but it also brings incorporation costs, published accounts, shared profits and slower decisions.",
+      "Economic development is about the whole country - jobs, incomes, taxes, foreign exchange and skills - so do not simply describe what the sisters gain."
+    ],
+    "parts": [
+      {
+        "label": "(a) (i)",
+        "prompt": "Define the term 'limited liability'.",
+        "marks": 2,
+        "commandWords": [
+          "Define"
+        ],
+        "modelAnswer": "Limited liability means that the owners of a business - in a company, the shareholders - can lose only the amount of capital they have invested in that business. Their private assets, such as their house, land or savings, cannot be taken to pay the debts of the business if it fails.",
+        "markScheme": [
+          "1 mark for the idea that an owner's liability is limited to the amount of capital he or she has invested in the business.",
+          "1 mark for the idea that the owner's personal or private assets are protected from the debts of the business."
+        ]
+      },
+      {
+        "label": "(a) (ii)",
+        "prompt": "State FOUR reasons why the sisters may decide to convert the partnership into a private limited company.",
+        "marks": 4,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "1. A private limited company is a separate legal entity: it can own property, sign contracts and sue or be sued in its own name, and it continues to exist even if a shareholder dies or sells out.\n2. The shareholders have limited liability, so their personal assets are protected if the company fails - the very worry Annette and Paula raised.\n3. A company can raise far more capital: it can sell shares to the fourth investor and to others, and it can borrow using the company's assets as security.\n4. The capital contributed by shareholders stays in the business and is not withdrawn by the owners, so the company has more permanent finance than a partnership.\n5. The business has continuity: a change of shareholders or the death of an owner does not bring the business to an end, whereas a partnership is dissolved when a partner leaves.\n6. Banks, landlords and supermarkets usually have more confidence in an incorporated business because it must file accounts, so it may obtain larger loans and better credit terms.",
+        "markScheme": [
+          "1 mark for each correct, different reason stated, up to a maximum of 4 marks.",
+          "Accept: the company is a separate legal entity or has a legal personality of its own; the shareholders have limited liability; more capital can be raised by issuing shares; the capital of shareholders is permanent; the company has continuity or perpetual succession; shares can be transferred more easily than a partnership interest; easier access to bank credit and to trade credit; the title 'Ltd' gives the business greater standing with customers and suppliers.",
+          "Do not accept a bare statement such as 'it is better' or 'they will make more money' without a reason attached to it."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the share of the J$1,400,000 profit that EACH of the three partners would receive. Show your working.",
+        "marks": 4,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Total number of parts = 2 + 3 + 5 = 10\nValue of one part = J$1,400,000 / 10 = J$140,000\n\nAnnette (2 parts): 2 x J$140,000 = J$280,000\nPaula (3 parts): 3 x J$140,000 = J$420,000\nMarcia (5 parts): 5 x J$140,000 = J$700,000\n\nCheck: J$280,000 + J$420,000 + J$700,000 = J$1,400,000, so the whole profit has been shared.",
+        "markScheme": [
+          "1 mark for adding the figures in the ratio to obtain 10 parts and dividing the profit to find that one part is worth J$140,000.",
+          "1 mark for J$280,000 for Annette, the partner with 2 parts.",
+          "1 mark for J$420,000 for Paula, the partner with 3 parts.",
+          "1 mark for J$700,000 for Marcia, the partner with 5 parts.",
+          "A candidate who works with the names in a different order still earns the marks provided each share is matched to the correct number of parts."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Describe TWO disadvantages that the sisters should consider before forming a private limited company.",
+        "marks": 4,
+        "commandWords": [
+          "Describe"
+        ],
+        "modelAnswer": "1. Loss of privacy and of control. A company must be registered and must file accounts, returns and other documents, and these are open to inspection, so competitors, customers and workers can find out about its profits and finances. The sisters will also have to share the profits and the decision-making with the fourth investor, and important decisions may need the agreement of the shareholders, so Annette would no longer be able to decide matters on her own.\n2. The cost and formality of incorporation, and the possibility of being taxed twice. Forming a company involves legal and registration fees, a constitution, meetings, an annual return and audited or filed accounts, and closing or restructuring it later is more complicated than dissolving a partnership. Profits are taxed in the hands of the company and the shareholders may then pay tax again on the dividends they receive, so the family may keep less of the profit than they do in the partnership.",
+        "markScheme": [
+          "1 mark for identifying a valid disadvantage and 1 further mark for an accurate description of it (2 marks for each disadvantage, maximum 4 marks).",
+          "Accept: the accounts and returns are filed and may be inspected by any member of the public, so the business loses privacy; incorporation is costly and brings continuing legal formalities and fees; profits and control must be shared with the new shareholder, so decisions take longer and the family loses sole control; the company may be taxed on its profits and the shareholders taxed again on dividends; the business is more closely regulated and its affairs must be conducted by the rules of its constitution; personal service and the flexibility of a family partnership may be lost.",
+          "Do not accept a disadvantage that belongs only to a public limited company, such as having its shares traded on a stock exchange, unless the candidate explains why it also applies here."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Explain TWO ways in which the proposed company could contribute to the economic development of Jamaica.",
+        "marks": 6,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "1. It would create employment and raise incomes. As the company expands it would employ more bakers, packers, drivers and sales staff, and the eight workers already employed would have more secure jobs. These workers earn wages which they spend in Mandeville and elsewhere, so demand for other goods and services rises. More people earning a living means a higher standard of living for families and less reliance on the government for support.\n2. It would increase government revenue and strengthen local production. A registered company pays company tax, payroll taxes and licence fees, and the government uses that revenue to build roads and schools and to provide health care and security for everybody. If the bakery buys its flour, fruit, packaging and equipment from Jamaican suppliers and farmers, it also creates linkage industries and keeps more money circulating in the local economy instead of sending it abroad.",
+        "markScheme": [
+          "1 mark for naming each valid contribution and up to 2 further marks for the explanation, which must show the benefit to the country and not only to the sisters (3 marks for each contribution, maximum 6 marks).",
+          "Accept: employment is created and incomes rise, so the standard of living improves; taxes and fees are paid and the government can spend more on roads, schools, health and security; exports earn foreign exchange or local production replaces imported goods; buying inputs from local farmers and suppliers creates linkage industries; training and experience build the country's supply of skilled workers and managers; new businesses encourage entrepreneurship, enterprise and further investment; the company's growth adds to national output and national income.",
+          "Do not award the explanation marks for benefits that are described only from the point of view of the owners of the business."
+        ]
+      }
+    ],
+    "examinerTips": "Each part is marked independently, so a slip in part (b) does not cost you marks in parts (a), (c) or (d). In part (b) do not write only the three final figures: one of the four marks is for showing that the profit is divided into 10 parts of J$140,000. In parts (c) and (d) 'TWO ... describe' and 'TWO ... explain' mean two points, each developed in two or three sentences; a long list of undeveloped points will not earn the full marks. Watch the names: the ratio belongs to Annette, Paula and Marcia, and a company is a separate legal person from all three of them."
+  },
+  {
+    "id": "pob-p2-02",
+    "type": "write",
+    "paper": 2,
+    "section": "Question 2",
+    "title": "Leadership, management and teamwork at a distribution depot",
+    "topic": "pob-l5-2",
+    "commandWords": [
+      "List",
+      "State",
+      "Identify",
+      "Differentiate",
+      "Explain"
+    ],
+    "marks": 20,
+    "suggestedMinutes": 24,
+    "source": "Clarke's Wholesale and Distribution Ltd supplies supermarkets across southern Jamaica from a depot in Kingston. The company employs 32 persons in all: the depot has 27 warehouse, delivery and clerical workers, supervised by 4 departmental managers, and all of the managers report directly to the Managing Director, Mr Devon Clarke, who is the only person above them.\n\nMANAGEMENT STRUCTURE OF THE DEPOT\n- Managing Director: Mr Devon Clarke\n- Operations Manager, responsible for 14 workers\n- Sales Manager, responsible for 8 workers\n- Accounts Manager, responsible for 3 workers\n- Human Resources Manager, responsible for 2 workers\n\nMr Clarke makes every important decision himself. Managers must obtain his approval before ordering stock, hiring casual workers or changing a delivery route, and he seldom visits the loading bay. In the past year 12 of the depot workers resigned. Most of them said in their exit interviews that no one had ever asked for their opinion and that they were not sure what was expected of them.",
+    "prompt": "Answer ALL parts. Use the details given in the case study in your answers.",
+    "planningHints": [
+      "Span of control means the number of workers who report directly to one supervisor. Count only the workers who report to that manager - not the workers of the other departments and not the manager himself.",
+      "The functions of management are the broad jobs every manager performs (planning, organising, directing, controlling, coordinating, delegating and motivating) - they are not the tasks of one department.",
+      "'List FOUR' and 'Identify THREE' earn one mark for each correct point, so give the required number of separate points.",
+      "'Differentiate' asks for both sides of the comparison and the difference between them, so describe the autocratic style, describe the democratic style and then say how they differ.",
+      "In part (c) each benefit must be explained in terms of this depot - the deliveries, the warehouse, the supermarkets, the staff who resigned."
+    ],
+    "parts": [
+      {
+        "label": "(a) (i)",
+        "prompt": "List FOUR functions of management.",
+        "marks": 4,
+        "commandWords": [
+          "List"
+        ],
+        "modelAnswer": "1. Planning - setting the goals of the business and deciding, in advance, how and with what resources they will be achieved.\n2. Organising - arranging the work, the people and the materials so that each part of the job is assigned and can be carried out.\n3. Directing (or leading) - guiding, instructing and supervising the workers so that they carry out the plans.\n4. Controlling - comparing what is actually done with the plan, checking quality and cost, and taking corrective action where the two differ.\n5. Coordinating - keeping the departments and the workers working together as one unit instead of separately.\n6. Delegating - giving a manager or worker the authority to make decisions and to carry out part of the work.\n7. Motivating - encouraging the workers to work willingly and well, through pay, conditions, praise, training and recognition.",
+        "markScheme": [
+          "1 mark for each correct function listed, up to a maximum of 4 marks.",
+          "Accept any FOUR of: planning; organising; directing or leading; controlling; coordinating; delegating; motivating.",
+          "A description is not required, but a task that is not a function of management (for example 'selling', 'budgeting', 'bookkeeping' or 'supervising the loading bay') earns no mark."
+        ]
+      },
+      {
+        "label": "(a) (ii)",
+        "prompt": "State the span of control of EACH of the four departmental managers at the depot.",
+        "marks": 4,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "Operations Manager: 14 workers\nSales Manager: 8 workers\nAccounts Manager: 3 workers\nHuman Resources Manager: 2 workers\n\nThe 27 depot workers are therefore shared among the four managers, whose own span of control as a group is 4, since all four of them report directly to Mr Clarke.",
+        "markScheme": [
+          "1 mark for the Operations Manager: 14 workers.",
+          "1 mark for the Sales Manager: 8 workers.",
+          "1 mark for the Accounts Manager: 3 workers.",
+          "1 mark for the Human Resources Manager: 2 workers.",
+          "Do not accept 32 (the whole staff) or 27 for any one manager: the span of control refers to the workers under one supervisor."
+        ]
+      },
+      {
+        "label": "(b) (i)",
+        "prompt": "Identify THREE characteristics of a good leader.",
+        "marks": 3,
+        "commandWords": [
+          "Identify"
+        ],
+        "modelAnswer": "1. Honesty and trustworthiness: workers trust a leader whose word can be relied on and who does not take credit for the work of others.\n2. Flexibility: a good leader is willing to change the plan when the circumstances change instead of insisting on his own first idea.\n3. Ability to make sound decisions: the leader gathers the facts and decides in good time, and is prepared to accept responsibility for the decision.\n4. Good communication and the ability to listen: the leader explains what is expected, and hears the views of the workers.\n5. Focus and vision: the leader keeps the goal of the business clearly in view and directs the effort of the team towards it.\n6. Fairness and consistency: the leader applies the same rules to everybody and treats workers with respect.",
+        "markScheme": [
+          "1 mark for each correct characteristic identified, up to a maximum of 3 marks.",
+          "Accept: honesty, integrity or trustworthiness; flexibility or adaptability; focus, vision or clear direction; the ability to make intelligent or timely decisions; confidence; good communication skills; a willingness to listen; fairness, consistency and respect for others; self-discipline and a willingness to lead by example; the ability to motivate and inspire others.",
+          "A characteristic that applies to the business rather than to the leader (for example 'the depot is profitable') earns no mark."
+        ]
+      },
+      {
+        "label": "(b) (ii)",
+        "prompt": "Differentiate between the 'autocratic' leadership style and the 'democratic' leadership style.",
+        "marks": 3,
+        "commandWords": [
+          "Differentiate"
+        ],
+        "modelAnswer": "An autocratic (or authoritarian) leader makes the decisions alone and expects the workers to carry them out without discussion: the workers are told what to do, they are not consulted, and the leader keeps the authority and the responsibility for everything. Mr Clarke behaves in this way when he insists on approving every delivery route and stock order himself.\nA democratic leader discusses the work with the workers, invites their ideas and takes them into account before deciding; the workers take part in the decision-making, although the manager remains responsible for the final decision.\nThe difference between the two is therefore where the decision-making power lies: in the autocratic style it belongs to the manager alone, while in the democratic style it is shared with the workers.",
+        "markScheme": [
+          "1 mark for a correct description of the autocratic leadership style.",
+          "1 mark for a correct description of the democratic leadership style.",
+          "1 mark for an explicit contrast between the two styles, for example that the autocratic leader decides alone and imposes the decision while the democratic leader consults the workers and shares the decision-making.",
+          "A candidate who describes only one style, or who describes two styles without stating the difference, cannot earn the third mark."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Explain TWO ways in which the depot could benefit from better teamwork among its workers and managers.",
+        "marks": 6,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "1. The work would be done faster and with fewer mistakes. If the warehouse workers, the drivers and the sales staff planned the day's deliveries together, loads could be packed by delivery route, each worker would know what the others were doing and vehicles would not stand idle at the bay. Because everyone would know what is expected of them - the very complaint made in the exit interviews - orders would be picked and delivered correctly and on time, and the supermarkets would not be left short of stock.\n2. The workers would be better motivated and more likely to stay. In a team where ideas are welcome and the work of each person matters, workers feel that they belong and take more care with the job; they also suggest ways of improving it. Workers who feel valued are less likely to resign, so the company saves the cost of advertising, recruiting and training replacements and keeps experienced staff who know the customers and the routes.",
+        "markScheme": [
+          "1 mark for naming each valid benefit and up to 2 further marks for the explanation, which must be linked to this depot (3 marks for each benefit, maximum 6 marks).",
+          "Accept: work is completed faster and with fewer errors because the tasks are coordinated; workers learn from one another and share skills; morale, motivation and job satisfaction improve, so fewer workers resign and the cost of recruitment and training falls; absenteeism and internal conflict are reduced; problems and instructions are passed on quickly because communication improves; the load on the manager is shared and he is free to plan and to deal with customers; quality of service to the supermarkets improves, which protects sales.",
+          "Do not accept a response that only defines teamwork, or that repeats the case study, without explaining a benefit to the depot."
+        ]
+      }
+    ],
+    "examinerTips": "Part (a)(ii) is a reading question: the spans of control are given in the structure, and the span of control of a manager is the number of workers who report directly to that manager alone. Mr Clarke's span of control is 4 (the four managers), not 32 (the whole staff). 'Differentiate' always needs both sides of the comparison plus the difference between them. In part (c), each benefit needs an explanation that mentions the depot, its deliveries or its workers, and it is worth using the facts in the case study - the exit interviews, the approvals and the resignations - as your evidence."
+  },
+  {
+    "id": "pob-p2-03",
+    "type": "write",
+    "paper": 2,
+    "section": "Question 3",
+    "title": "Reviving a product that has stopped selling",
+    "topic": "pob-l3-2",
+    "commandWords": [
+      "Define",
+      "State",
+      "Calculate",
+      "Describe",
+      "Explain",
+      "Suggest"
+    ],
+    "marks": 20,
+    "suggestedMinutes": 24,
+    "source": "Cascade Juices Ltd is a small manufacturer in St Catherine. Three years ago it launched 'Island Punch', a ready-to-drink fruit punch sold in 500 ml bottles. Sales fell from about 96,000 bottles in the first year to about 72,000 bottles last year. The managers believe that the label now looks old-fashioned, that the drink is displayed at the back of the shelf in most supermarkets, and that few customers under the age of 25 know that the drink exists.\n\nFIGURES FOR ISLAND PUNCH\nSelling price per bottle: J$250\nDirect cost of materials and labour per bottle: J$150\nProposed relaunch campaign (television, social media and in-store sampling): J$180,000\nThe company makes no other product and employs 11 workers.",
+    "prompt": "Answer ALL parts. Show all working where a calculation is required. Use the figures given in the case study in your answers.",
+    "planningHints": [
+      "In part (b) the money that helps to pay for the campaign is what is left of the selling price after the direct cost of making the bottle has been paid - not the whole J$250.",
+      "Set your working out in steps (profit per bottle, then the number of bottles) so that the examiner can give you the method marks even if the final figure goes wrong.",
+      "Always write the units with an answer of this kind: bottles, not just a number.",
+      "The case study gives the company's own opinion of the problem - the label, the shelf position and the younger customers - so use those three details in part (d) instead of writing about marketing in general.",
+      "'Describe TWO' needs the method and what it involves; 'Explain TWO' needs the reason and the consequence."
+    ],
+    "parts": [
+      {
+        "label": "(a) (i)",
+        "prompt": "Define the term 'market research'.",
+        "marks": 2,
+        "commandWords": [
+          "Define"
+        ],
+        "modelAnswer": "Market research is the process of collecting, recording and analysing information about customers, their needs, tastes and buying habits, and about competitors, prices and the market generally, so that the business can make sound decisions about the product it sells and how it is marketed.",
+        "markScheme": [
+          "1 mark for the idea that information is collected about customers, competitors or the market.",
+          "1 mark for the idea that the information is used to help the business make a marketing decision, for example about the product, its price, its package or the way it is promoted."
+        ]
+      },
+      {
+        "label": "(a) (ii)",
+        "prompt": "State FOUR factors that the company should consider when deciding on the packaging and presentation of Island Punch.",
+        "marks": 4,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "1. Cost: the bottle, cap, label and carton must be affordable, because every cent spent on packaging raises the cost of the bottle or reduces the margin on it.\n2. Protection of the drink: the package must keep the punch clean, prevent leaks and keep out light and heat during storage and delivery, so that the drink reaches the customer in good condition.\n3. The image the package gives: the shape, the colour and the design of the label should look modern and attractive and should appeal to the under-25 customers the company wants to win, since these customers often judge a drink they have not tasted by its package.\n4. Convenience for the customer: a 500 ml bottle should be comfortable to hold, easy to open and reseal, and the label should make the flavour and the size easy to read.\n5. Legal requirements: the label must show the ingredients, the volume, the name and address of the manufacturer, the date markings and any other information required by law, and any claim made on it must be truthful.\n6. Display and transport: the package must stack and travel without damage and be bright enough to stand out on a supermarket shelf where rivals are beside it.",
+        "markScheme": [
+          "1 mark for each correct factor stated, up to a maximum of 4 marks.",
+          "Accept: the cost of the package; protection of the product in storage, transport and display; the image, colour, shape and design of the label and whether it appeals to the target market; convenience of use for the customer; the legal information that must appear on the label; the display value of the package on the shelf; the durability and stacking quality of the carton and bottle; the environmental impact or recyclability of the package; the size and flavour labelling.",
+          "Do not accept points about price, advertising or where the drink is sold unless the candidate explains how they affect the packaging or the presentation of the product."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Using the figures in the case study, calculate (i) the money the company makes on each bottle of Island Punch and (ii) the number of bottles that must be sold to recover the J$180,000 cost of the relaunch campaign. Show your working.",
+        "marks": 4,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "(i) Money made on each bottle = selling price - direct cost\n= J$250 - J$150 = J$100 per bottle\n\n(ii) Bottles needed to recover the campaign cost = campaign cost / money per bottle\n= J$180,000 / J$100 = 1,800 bottles\n\nSo the relaunch must lead to an extra 1,800 bottles being sold before the campaign pays for itself; at that point the campaign has broken even.",
+        "markScheme": [
+          "1 mark for the correct method and answer in (i): J$250 - J$150 = J$100 per bottle.",
+          "1 mark for the correct method in (ii): J$180,000 divided by the money made on each bottle.",
+          "1 mark for the correct answer of 1,800 bottles (accept 1,800 or 1 800).",
+          "1 mark for a correct statement that this is the extra number of bottles that must be sold before the campaign is covered, or that the company breaks even at 1,800 extra bottles.",
+          "A candidate who divides by the selling price of J$250 instead of by the money made on each bottle earns only the method mark in (ii). Follow-through marks may be given in (ii) and in the final mark for an arithmetic slip in (i)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Describe TWO methods of promoting sales that the company could use in the relaunch of Island Punch.",
+        "marks": 4,
+        "commandWords": [
+          "Describe"
+        ],
+        "modelAnswer": "1. Advertising on social media and on television. The company could place short videos and sponsored posts on platforms such as Instagram, TikTok and YouTube, and buy airtime for a commercial on local television. Social media is relatively cheap, the audience can be narrowed to the under-25 customers the company is trying to reach, and customers can comment on, share or repost the advertisement, so the message spreads at no extra cost.\n2. Sales promotion through in-store sampling and introductory offers. The company could set up tasting booths in supermarkets on Saturdays and give a small cup of Island Punch to shoppers, and it could offer a deal such as three bottles for the price of two, or a free branded cooler bag with every six bottles bought. Sampling lets customers taste the drink before they spend on it, and the introductory offer gives an immediate reason to choose Island Punch rather than the competing drink beside it.",
+        "markScheme": [
+          "1 mark for naming each valid method of promoting sales and 1 further mark for the description of it (2 marks for each method, maximum 4 marks).",
+          "Accept: advertising (television, radio, newspapers, billboards, cinema, social media, the company's own website); sales promotion (free samples and tasting, coupons, two-for-one offers, competitions, point-of-sale displays, free gifts, a launch price); personal selling by a salesforce calling on supermarkets, shops, bars and restaurants; publicity and public relations (sponsoring a school sports day or a road race, press releases, working with an influencer); direct marketing by text message or email to customers who have agreed to receive it.",
+          "Do not accept 'lower the price' on its own as a method of promotion; the candidate must describe a stated offer, such as a limited-period reduction or a multi-buy deal."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Explain TWO reasons why sales of Island Punch may have declined and, for EACH reason, suggest ONE action the company could take to correct it.",
+        "marks": 6,
+        "commandWords": [
+          "Explain",
+          "Suggest"
+        ],
+        "modelAnswer": "1. The package and label look old-fashioned. Customers who have not tasted the drink judge it by the bottle on the shelf, and the company itself believes the label is dated, so shoppers who do not know the brand choose a more attractive or better-known drink instead. Sales fell from about 96,000 bottles to about 72,000 bottles, a fall of 25.0 per cent, which shows how many customers have turned to other drinks.\n- Action: the company should redesign the bottle and label - brighter colours, a modern typeface, the flavour and the size clearly visible - and give the drink a fresher name or design so that it attracts attention on the shelf and appeals to customers under 25.\n\n2. The drink is poorly displayed and hardly promoted to young customers. If the bottles sit at the back of the shelf and almost no one under 25 knows the drink exists, the product is never considered, even by shoppers who might enjoy it; the retailer has no reason to give it good shelf space because it is not selling, and the product is caught in a downward spiral.\n- Action: the company should negotiate a better shelf position - for example by offering the supermarket shelf-ready display cartons and a small launch discount - and run a promotional campaign aimed at young customers, using in-store sampling, an eye-level display and social media, so that the drink is seen, tasted and bought.",
+        "markScheme": [
+          "1 mark for each valid reason, 1 mark for a relevant action and 1 mark for the explanation that links the action to the reason given (3 marks for each reason-and-action pair, maximum 6 marks).",
+          "Accept reasons such as: the label and bottle look old-fashioned or the product is unattractive; the drink is displayed at the back of the shelf or is out of stock; there is little or no advertising, so customers do not know the product; the price is higher than that of rival drinks; a competitor has launched a similar or better-known drink; tastes have moved towards low-sugar or healthier drinks; the drink is not sold where young customers shop, such as schools, sports clubs or online delivery services; the product is sold in only one size or one flavour.",
+          "Accept actions such as: redesign the bottle and the label; improve the shelf position and the display, including shelf-ready packaging; advertise the drink and run sampling or money-off promotions; reduce the price or offer a larger bottle for the same money; add new flavours, a sugar-free version or a new size; sell through more outlets, including schools, bars, restaurants and delivery apps; carry out market research among young customers before relaunching; build a relationship with the supermarket buyers so that the product is listed and promoted.",
+          "Do not award the action or explanation marks for an action that does not follow from the reason the candidate has given."
+        ]
+      }
+    ],
+    "examinerTips": "In part (b) the mark is for what is left of the selling price after the direct cost has been paid: J$250 is what the customer pays, but J$150 of it goes on materials and labour, so J$100 per bottle is all that is available to cover the campaign. Show the two steps and write the units. In part (d) the case study tells you the company's own three concerns - the label, the shelf position and the younger customers - and the best answers use those facts as evidence rather than writing about marketing in general."
+  },
+  {
+    "id": "pob-p2-04",
+    "type": "write",
+    "paper": 2,
+    "section": "Question 4",
+    "title": "Shipping a first export order to a regional market",
+    "topic": "pob-l6-2",
+    "commandWords": [
+      "State",
+      "Calculate",
+      "Explain",
+      "Outline"
+    ],
+    "marks": 20,
+    "suggestedMinutes": 24,
+    "source": "Hillview Agro-Processors Ltd of St Elizabeth makes bottled pepper sauce with peppers bought from 46 small farmers in the parish. The company has won its first export order: a distributor in Trinidad and Tobago has ordered 3,500 kg of pepper sauce. The sauce is bottled in glass jars and must be kept reasonably cool and free from rough handling.\n\nQUOTATIONS OBTAINED FOR THE CONSIGNMENT\nSea freight, Kingston to Port of Spain: J$180,000, about 9 days, collected from the factory and delivered to the distributor's warehouse\nAir freight, Kingston to Port of Spain: J$95 per kg, about 2 days\n\nThe production manager has warned that the order is due in Trinidad in the same month as the busiest period for the company's local sales, and that the company has never completed export documents before.",
+    "prompt": "Answer ALL parts. Show all working where a calculation is required. Use the figures given in the case study in your answers.",
+    "planningHints": [
+      "Air freight is quoted for every kilogram, so the first step is to multiply the rate by the weight of the consignment; sea freight is quoted as one total for the shipment.",
+      "'How much more expensive' means you must subtract the cheaper figure from the dearer one - the question is not asking only which mode is cheaper.",
+      "Think about what the goods actually are: a food product in glass jars, going to a buyer in another country for the first time. That decides which problems in part (c) are realistic.",
+      "A problem earns one mark and the measure that reduces it earns the other two, so make the link between your measure and the problem clear.",
+      "'Competitiveness' in part (d) means the ability to win and to keep customers against rival suppliers, so explain how logistics affects cost, speed or reliability."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "State TWO documents, other than the invoice for the sale, that must be prepared or received for this consignment, and state the purpose of EACH.",
+        "marks": 4,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "1. The bill of lading or the airway bill, depending on the mode of transport chosen. The carrier - the shipping line or the airline - issues this document when the goods are accepted for carriage. It is a receipt for the consignment, it sets out the contract of carriage between the exporter and the carrier, and it describes the goods, their quantity, their marks and their destination, so that the consignment can be identified and claimed at the port of arrival.\n2. The certificate of origin (or the export licence or the import licence required by the importing country). The certificate of origin states in which country the pepper sauce was produced; the customs authorities in Trinidad and Tobago need it to decide the duty to be charged and to confirm that the goods qualify for the preferential treatment given to goods traded within CARICOM. An import licence, where the importing country requires one, is that government's permission to bring the goods in.",
+        "markScheme": [
+          "1 mark for each valid document named (maximum 2 marks) and 1 mark for a correct statement of what each document is for (maximum 2 further marks).",
+          "Accept as documents: the bill of lading; the airway bill; the certificate of origin; the import or export licence; the packing list; the insurance certificate; the customs declaration; the phytosanitary or health certificate required for food products.",
+          "A candidate who names a document but gives no purpose, or who gives a purpose that belongs to a different document, earns only the naming mark. Do not accept 'the invoice', which is excluded by the question."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Using the quotations in the case study, calculate the cost of sending the consignment by air freight and determine how much more expensive air freight would be than sea freight. Show all working.",
+        "marks": 4,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "Cost by air = J$95 per kg x 3,500 kg\n= J$95 x 3,500 = J$332,500\n\nCost by sea = J$180,000 for the shipment\n\nAir freight is more expensive by J$332,500 - J$180,000 = J$152,500.\n\nAir freight also saves about 7 days (9 days by sea against 2 days by air).",
+        "markScheme": [
+          "1 mark for the correct method of costing the air consignment: J$95 x 3,500 kg.",
+          "1 mark for the correct air freight cost of J$332,500.",
+          "1 mark for subtracting the sea freight cost from the air freight cost.",
+          "1 mark for the correct answer of J$152,500 (accept a follow-through answer from one arithmetic slip in an earlier step).",
+          "A candidate who states only that air freight is the dearer option, without the figure of J$152,500, cannot earn the final mark."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Explain TWO problems that the company is likely to meet in distributing the consignment to Trinidad and Tobago and, for EACH problem, outline ONE measure that would reduce its effect.",
+        "marks": 6,
+        "commandWords": [
+          "Explain",
+          "Outline"
+        ],
+        "modelAnswer": "1. Delay in shipment, misdirection or spoilage of the goods. This is the company's first export, and a shipment may be held up by a missed sailing, congested port facilities, a customs check or industrial unrest at the wharf; the cartons may be mishandled or stored in the sun, so the glass jars break or the sauce spoils. The order then arrives late or unfit to sell, the distributor may refuse it, and the company loses both the sale and its reputation.\n- Measure: the company should insure the consignment against loss and damage, use a reputable freight forwarder with secure, covered warehousing, and mark every carton clearly with the consignee, the destination and handling instructions such as 'this way up' and 'keep cool'. Booking space early would also reduce the risk of being left without a sailing in a busy month.\n\n2. Incorrect or incomplete documentation, and ineffective communication with the buyer. Because the company has not exported before, a document that is wrong, missing or inconsistent with the goods - a wrongly described bill of lading, no certificate of origin or a missing import licence - can leave the consignment held at the port of arrival and attract storage charges or a fine. If the buyer and the carrier cannot be reached quickly, the problem grows before anyone can deal with it.\n- Measure: the company should check every document against the order and obtain advice from an experienced freight forwarder or from the trade facilitation officers at Jampro or the Jamaica Customs Agency before the goods leave, and then stay in close contact with the distributor, the forwarder and the shipping line by email and telephone so that any problem is reported and settled immediately.",
+        "markScheme": [
+          "1 mark for each valid problem and up to 2 marks for the measure and the explanation of how it reduces the effect of that problem (3 marks for each problem-and-measure pair, maximum 6 marks).",
+          "Accept problems such as: delayed shipment or late arrival; spoilage or damage to a food product in transit; broken jars and leaking cartons; misdirection of the goods or part of the consignment; inadequate or insecure warehousing; pilferage or theft; inefficient handling; industrial unrest at the port; congested docking or airport facilities; incorrect, incomplete or delayed documents; a shortage of shipping space in the peak season; bad weather or a hurricane; high freight rates or duties.",
+          "Accept measures such as: insuring the goods against loss, damage and delay; using a reputable freight forwarder or handling service; clear labelling and careful documentation checked before dispatch; choosing the most suitable mode of transport for the product; booking space well in advance; avoiding large stocks or unnecessary storage; protecting the cartons and packing the jars in reinforced boxes; keeping a reliable communication network with the buyer, the agent and the carrier; seeking government or agency help such as the trade facilitation units of Jampro; arranging for the distributor to clear the goods promptly and to pay as agreed.",
+          "Do not award the measure marks for a measure that does not reduce the effect of the problem the candidate has given, and do not accept a problem that does not arise from an export consignment, such as shoplifting from a supermarket shelf."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Explain TWO ways in which effective logistics and supply chain management can improve the competitiveness of Hillview Agro-Processors Ltd.",
+        "marks": 6,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "1. Competitiveness through lower costs. Good logistics helps the company collect peppers from the 46 farmers promptly and in the right quantities, produce and store only what is needed, and send each consignment by the cheapest suitable route. Every cent saved on transport, storage, handling and spoilage lowers the cost of landing a bottle of sauce in Trinidad, so the company can either charge less than rival suppliers and still make a profit, or keep a wider margin on the same price and use it to advertise or to reward the farmers.\n2. Competitiveness through reliable service. Buyers in a regional market choose suppliers who deliver the right goods, in good condition, on the date promised. If the company can guarantee delivery to Port of Spain within a stated time, keep the distributor informed about the shipment and replace any damaged jars quickly, it becomes known as a dependable supplier whose orders can be planned. That reputation wins repeat orders and larger quantities, and the distributor is more likely to recommend the company to other buyers in the region.",
+        "markScheme": [
+          "1 mark for naming each valid way and up to 2 further marks for the explanation, which must be linked to the company or to its export order (3 marks for each way, maximum 6 marks).",
+          "Accept: lower transport, storage, handling and spoilage costs allow a more competitive price or a wider margin; faster delivery gives better customer service; reliable delivery to the promised date builds a reputation and repeat orders; a secure supply of peppers from the farmers keeps production steady and avoids costly rush buying; less damage and spoilage means more of the product is fit for sale; the company can respond quickly when demand changes because stock and capacity are planned; outsourcing transport and warehousing to a specialist third-party provider is cheaper than owning vehicles and warehouses and lets the company concentrate on making the sauce; better market information through the supply chain helps the company to plan production and to negotiate prices.",
+          "Do not accept a general statement such as 'it will sell more' or 'it will make more profit' unless the candidate explains how the logistics or supply chain improvement causes that result."
+        ]
+      }
+    ],
+    "examinerTips": "Read the case study twice before you begin: the goods are a food product in glass jars, they are wanted in the busiest month of the local season, and the company has never exported before. Those three facts decide which mode of transport and which measures in part (c) are sensible. In part (b) air freight is quoted per kilogram and sea freight as a total for the shipment, so the two figures are not yet comparable: multiply first, then subtract. Air freight costs J$152,500 more than sea freight but saves about 7 days, so a strong answer says which mode it would recommend and why. In parts (c) and (d) use the words of the question - problem, measure, competitiveness - so that the examiner can see that you have answered each part that was asked."
+  },
+  {
+    "id": "pob-p2-05",
+    "type": "write",
+    "paper": 2,
+    "section": "Question 5",
+    "title": "Financing and digitising a growing furniture workshop",
+    "topic": "pob-l2-1",
+    "commandWords": [
+      "Identify",
+      "Calculate",
+      "Explain"
+    ],
+    "marks": 20,
+    "suggestedMinutes": 24,
+    "source": "Kirk's Furniture Works is a private company in Montego Bay that makes beds, tables and chairs for hotels and households. It is owned by two brothers and employs 18 persons. The brothers want to buy two new machines and to open an online shop so that customers anywhere in the Caribbean can order furniture from them.\n\nTHE EXPANSION PLAN\nTotal cost of the machines, the workshop extension and the online shop: J$1,600,000\nThe company's own funds available to put into the project: J$400,000\nLoan offered by its bank, at 12 per cent per annum simple interest for 3 years: J$360,000\nThe rest of the money must be raised from other sources.\n\nThe brothers have also been told that the Bureau of Standards has introduced new labelling and safety requirements for furniture sold to the public, and that the government offers concessions to small manufacturers that invest in new equipment.",
+    "prompt": "Answer ALL parts. Show all working where a calculation is required. Use the figures given in the case study in your answers.",
+    "planningHints": [
+      "Long-term finance is money that does not have to be repaid within a year: an overdraft or a supplier's credit is short-term, so it will not earn a mark here.",
+      "Simple interest is charged on the amount borrowed for each year of the loan: interest = principal x rate x time. Do not use the 12 per cent figure 36 times.",
+      "The monthly instalment is the whole amount to be repaid - loan plus interest - divided by 36, not the loan divided by 36.",
+      "In part (b) 'explain' means give the form of assistance and then say what it does for this company, for example how a concession reduces the amount the brothers have to find.",
+      "Efficiency in part (c) means doing the work at a lower cost, faster or with fewer mistakes - so explain the saving or the improvement, not simply that customers can go online."
+    ],
+    "parts": [
+      {
+        "label": "(a) (i)",
+        "prompt": "Identify TWO sources of long-term finance, other than the bank loan already offered, that the brothers could use, and state ONE advantage of EACH.",
+        "marks": 4,
+        "commandWords": [
+          "Identify"
+        ],
+        "modelAnswer": "1. Additional share capital, either from the two brothers themselves or from a new investor who buys shares in the company. Advantage: the money does not have to be repaid and no interest is charged on it, so the company's cash flow is not burdened with fixed monthly payments during the months when the online shop is not yet earning; an experienced investor may also bring business contacts and management skills.\n2. Hire purchase or leasing of the two new machines. Advantage: the company can obtain and use the machines and begin production without paying the full cash price at once, since the cost is paid in instalments over the life of the machines, which keeps more working capital in the business.\n(Other acceptable answers: retained profits ploughed back into the business; a mortgage or long-term loan from another bank or a credit union, secured on the workshop or the land; a grant or concessionary loan from a government or development agency such as the Development Bank of Jamaica or the Jamaica Business Development Corporation; the sale of an asset that is no longer needed.)",
+        "markScheme": [
+          "1 mark for each valid source of long-term finance identified (maximum 2 marks) and 1 mark for a correct advantage of each source (maximum 2 further marks).",
+          "Accept: additional share capital or investment by the owners or a new shareholder; retained profits; a mortgage or a long-term loan from a bank, credit union or finance house, secured on property; hire purchase or leasing of the machines; a grant or concessionary loan from a government, development or small business agency; the sale of a surplus asset; venture capital or equity investment; a long-term loan from a family member or business partner with a written agreement.",
+          "Do not accept short-term sources such as a bank overdraft, trade credit from a supplier, a hire purchase arrangement over a few months or factoring, all of which are repaid or settled within a year and are not long-term finance."
+        ]
+      },
+      {
+        "label": "(a) (ii)",
+        "prompt": "Calculate (i) the simple interest payable on the bank loan over the 3 years, (ii) the total amount the company must repay and (iii) the monthly instalment if the total is repaid in 36 equal monthly payments. Show all working.",
+        "marks": 4,
+        "commandWords": [
+          "Calculate"
+        ],
+        "modelAnswer": "(i) Simple interest = principal x rate x time\n= J$360,000 x 12/100 x 3 = J$129,600\n\n(ii) Total to be repaid = loan + interest\n= J$360,000 + J$129,600 = J$489,600\n\n(iii) Monthly instalment = J$489,600 / 36 = J$13,600 per month",
+        "markScheme": [
+          "1 mark for the correct method and substitution of the simple interest formula, J$360,000 x 12/100 x 3.",
+          "1 mark for the correct interest of J$129,600.",
+          "1 mark for the correct total repayment of J$489,600.",
+          "1 mark for the correct monthly instalment of J$13,600 (accept a follow-through answer from an arithmetic slip in an earlier step).",
+          "A candidate who calculates the interest on 36 periods, or who divides the loan of J$360,000 by 36 to find the instalment, cannot earn the last mark."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain TWO ways in which the government of Jamaica can assist a small manufacturer such as Kirk's Furniture Works.",
+        "marks": 6,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "1. The government can help with finance and with taxes. Through agencies such as the Development Bank of Jamaica and the Jamaica Business Development Corporation it lends money to small businesses at rates below the commercial rate, and it grants duty-free concessions on imported machinery and raw materials, tax incentives to approved manufacturers and, in some cases, partial relief from GCT. For Kirk's Furniture Works this means that the two new machines cost less to bring into the country and that the bank loan of J$360,000 need not carry the whole burden of the project, so the expansion is more likely to pay for itself quickly.\n2. The government can provide training, advice, information and market support. Institutions such as the HEART/NSTA Trust train workers and owners in new skills, the Bureau of Standards advises on the labelling and safety requirements that the company must now meet, Jampro gives information about export documentation, standards and possible buyers abroad, and the government also builds and maintains the roads, ports, electricity and telecommunications that the workshop and the online shop depend on. This help allows the brothers to produce furniture that satisfies the new requirements and to find customers outside Jamaica.\n(Other acceptable answers: protective tariffs or standards on imported furniture; factory space on an industrial estate at a concessionary rent; the award of government contracts to local manufacturers; grants for training young workers; help with exhibiting at local and regional trade fairs.)",
+        "markScheme": [
+          "1 mark for each valid form of assistance explained and up to 2 further marks for the explanation of how it helps this company (3 marks for each form, maximum 6 marks).",
+          "Accept: concessionary loans, grants or credit guarantees through government agencies; duty-free concessions, tax incentives or tax holidays; technical assistance, advice and training; help with standards, labelling, quality and export documentation; market information and help with finding buyers; the provision of roads, ports, utilities and telecommunications; protective tariffs, standards or quotas on competing imports; the provision of factory space or industrial estates at low rents; government contracts for local furniture; support at trade fairs and expositions.",
+          "Do not accept an answer that states only the general responsibility of government, for example 'the government provides services', without explaining how the assistance benefits this company. A candidate who names a form of assistance but offers no explanation earns 1 mark for each form, up to a maximum of 2 marks."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Explain TWO ways in which the online shop could improve the efficiency of the business.",
+        "marks": 6,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "1. It reduces the cost of selling and makes the ordering process faster and more accurate. Customers can look at photographs, measurements, prices and delivery times on the website and place their own orders, so the company does not need as many sales staff or as much printed advertising, and the same questions do not have to be answered over and over by telephone. The orders arrive already written down and paid for, so fewer mistakes are made and the workshop can make the right item the first time instead of correcting and remaking it, and customers in other islands can buy without the company having to open showrooms there.\n2. It gives the company better information and more customers for little extra cost. The website keeps a record of what customers look at and what they buy, so the brothers know which items are in demand and can plan production and buy materials accordingly, instead of making furniture that stands unsold in the showroom. Because the online shop is open all day, every day, and can be reached from Trinidad, Barbados or Guyana at no extra selling cost, the company earns more sales without its rent, wages and electricity rising in the same proportion. The records must be kept securely, and customers' personal information and card details must be protected.",
+        "markScheme": [
+          "1 mark for each valid way and up to 2 further marks for the explanation of how efficiency is improved (3 marks for each way, maximum 6 marks).",
+          "Accept: selling and administration costs fall because fewer sales staff and less printed advertising are needed; orders are taken faster and more accurately; custom is won outside Montego Bay without opening new branches; communication with customers, hotels and suppliers is cheaper and faster; records of online orders give better market information and improve stock and production planning; customers find it more convenient to shop, which increases sales without a proportional rise in costs; invoices, receipts and accounting records can be produced automatically; the company can be open outside normal working hours.",
+          "A candidate who describes e-commerce in general without linking it to the efficiency of Kirk's Furniture Works earns no more than 1 mark for each way. No marks are deducted elsewhere for a sensible additional comment about protecting customer data or keeping delivery promises."
+        ]
+      }
+    ],
+    "examinerTips": "In part (a)(ii) two figures decide the mark: the interest is simple interest on the amount borrowed for each of the 3 years, giving J$129,600, and the monthly instalment is the whole of J$489,600 divided by 36, giving J$13,600 (a simplified treatment of the instalments for the purpose of this question). In parts (b) and (c) 'explain' means give the point and then its consequence for the business, using the details of the case study: the two new machines, the J$1,600,000 project, the new labelling and safety requirements and the online shop."
+  }
+]
