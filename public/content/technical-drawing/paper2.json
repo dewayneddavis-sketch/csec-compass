@@ -1,0 +1,718 @@
+[
+  {
+    "id": "td-p2-01",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A - Building Drawing option",
+    "title": "Question 1: setting out a house, foundation take-off, floor build-up, projection, staircase",
+    "topic": "td-l5-1",
+    "commandWords": [
+      "State",
+      "List",
+      "Calculate",
+      "Describe",
+      "Explain",
+      "Name",
+      "Evaluate"
+    ],
+    "marks": 90,
+    "suggestedMinutes": 90,
+    "source": "Option A: Building Drawing.\n\nA family in rural Jamaica is building a single-storey blockwork house on a level plot measuring 20.00 m x 15.00 m. The drawings are prepared on A2 sheets.\n\nAgreed specification:\n- External walls: 150 mm concrete blocks, nominal face 400 mm x 200 mm with 10 mm mortar joints, 2.70 m high from floor level to wall plate.\n- Openings: one external door 900 mm x 2 100 mm; five windows, each 1 200 mm x 1 000 mm.\n- Foundations: strip footing 600 mm wide x 200 mm deep in 1:3:6 mass concrete on firm subsoil; the total length of the footing trench is 44.00 m.\n- Ground floor build-up from the subsoil upwards: 100 mm hardcore, 50 mm sand blinding, damp-proof membrane, 100 mm reinforced concrete slab, 25 mm screed, ceramic tile finish.\n- Staircase to the upper floor: straight flight, floor to floor 2 720 mm, maximum riser 180 mm, going between 250 mm and 280 mm.",
+    "prompt": "This is Question 1 of the Building Drawing version of the paper: 90 marks, about 90 minutes (the remaining 30 minutes of the 2-hour paper would go on Question 2 in the same section). Answer ALL parts in writing - no drawing is required. For every drawing task describe exactly what you would set out, construct, dimension and check, in the order you would do it, and work the calculations. Then compare your answer with the model answer and the mark scheme and give yourself the marks you can justify.",
+    "planningHints": [
+      "Read the specification as a series of numbers, not as prose: 20.00 m x 15.00 m plot, 9.00 m x 7.00 m building, 150 mm blocks at 400 mm x 200 mm nominal, trench 600 mm x 200 mm and 44.00 m long, wall height 2.70 m, floor to floor 2 720 mm.",
+      "Scale conversions all follow one rule: drawing length = real length / scale factor. Convert everything to millimetres first, divide by the scale number, and convert the answer back only if the question asks for metres.",
+      "The take-off in part (d) has two traps: the openings must come OUT of the wall area before blocks are counted, and blocks are counted on the NOMINAL face (400 mm x 200 mm = 0.08 square metres with the joint included), not on the block itself.",
+      "Ordered steps earn the Practical Ability marks: write the setting-out and drawing operations as a numbered list and keep the checks (diagonals, line weights, a second reading of every dimension) visible.",
+      "Budget the time by the marks: about one minute per mark, so allocate roughly 14 minutes to the setting-out description and 14 to the staircase calculation."
+    ],
+    "examinerTips": "Every part of this question asks you to turn a building decision into something measurable, so show the substitution and the unit as well as the answer: '44.00 x 0.60 x 0.20 = 5.28 cubic metres' scores, while 'about 5 cubic metres' does not. In the setting-out answer the marks are for the operations in the CORRECT ORDER - clear and level, datum, locate from the boundaries, right angle by 3-4-5, run the lines, peg the corners, check both diagonals, transfer to profiles, mark the trench. Diagrams of standard details are drawn on the real paper, so here you must say which line shows what: continuous thick lines for outlines, thin continuous for dimension and projection lines, dashed for hidden work, thin hatched lines at 45 degrees for cut material, and dash-dot for centre lines.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "State the sheet size and the scale you would use for (i) the site plan and (ii) the floor plan of this house, and list FOUR items of information that must appear in the title block of each sheet.",
+        "marks": 6,
+        "commandWords": [
+          "State",
+          "List"
+        ],
+        "modelAnswer": "I would use an A2 sheet, 594 mm x 420 mm, for both drawings.\n\nSite plan: scale 1:200. The plot measures 20.00 m x 15.00 m, so at 1:200 it draws 100 mm x 75 mm - small enough to leave most of the A2 sheet free, which is what the site plan needs for the boundary, the setbacks, the driveway, the drainage, the north point and the scale bar.\n\nFloor plan: scale 1:50. The house measures 9.00 m x 7.00 m, so at 1:50 it draws 180 mm x 140 mm. At that size the 150 mm walls draw at 3 mm, so the wall thickness, the openings, the fittings and the dimension lines can all be read clearly.\n\nTitle block, four items: (1) the title of the drawing, (2) the scale, (3) the date, and (4) the name of the draughtsman. A complete title block also carries the drawing number, the revision or issue status, the projection symbol and the sheet size.",
+        "markScheme": [
+          "1 mark for naming an A2 sheet with its size (594 mm x 420 mm).",
+          "1 mark for 1:200 for the site plan.",
+          "1 mark for 1:50 for the floor plan.",
+          "1 mark for each of any FOUR correct title-block items, awarded as 1 mark for two items and 1 mark for each further item (maximum 3 marks). Accept title, scale, date, draughtsman, drawing number, revision, projection symbol, sheet size.",
+          "Do not accept a sheet size with no stated dimensions, and do not reward a scale with no drawing named against it.",
+          "Total 6 marks."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "The external walls of the house measure 9.00 m x 7.00 m and the plot measures 20.00 m x 15.00 m. Calculate (i) the length of the 9.00 m wall as it would appear on the 1:50 floor plan, in millimetres; (ii) the length of the 20.00 m plot boundary as it would appear on the 1:200 site plan, in millimetres; (iii) the real length in metres of a wall that measures 62.0 mm on the 1:50 floor plan.",
+        "marks": 6,
+        "commandWords": [
+          "Calculate",
+          "State"
+        ],
+        "modelAnswer": "(i) Convert to millimetres, then divide by the scale number:\n9.00 m = 9 000 mm; 9 000 / 50 = 180 mm on the drawing.\n\n(ii) 20.00 m = 20 000 mm; 20 000 / 200 = 100 mm on the drawing.\n\n(iii) Multiply the drawing length by the scale number:\n62.0 x 50 = 3 100 mm = 3.10 m.\n\nThe same rule is used in both directions: a detail is enlarged (scale 2:1 or 5:1) by multiplying, and a building is reduced (1:50, 1:100, 1:200) by dividing.",
+        "markScheme": [
+          "(i) 1 mark for converting 9.00 m to 9 000 mm, and 1 mark for the answer 180 mm.",
+          "(ii) 1 mark for converting 20.00 m to 20 000 mm (or dividing correctly), and 1 mark for the answer 100 mm.",
+          "(iii) 1 mark for the correct method (62.0 x 50), and 1 mark for the answer 3 100 mm or 3.10 m.",
+          "Award the answer mark only when the unit is given; a bare number is not a drawing dimension.",
+          "Total 6 marks."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Describe, in the correct order, how you would set out this house on the site before any excavation begins. Your answer must explain how the right angle at a corner is established and how you check that the outline is truly rectangular.",
+        "marks": 14,
+        "commandWords": [
+          "Describe",
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "1. Clear and level the building footprint and strip the topsoil from the area to be built on, so that the lines and pegs will not be disturbed.\n2. Establish a datum level on a firm reference point that will survive the works (a concrete peg, a kerb or an existing wall), and take all setting-out levels from it.\n3. Locate the building against the boundaries: measure the required setbacks from the two nearest boundary lines and drive a stout peg at the first corner.\n4. Establish a right angle at that corner by the 3-4-5 method. From the corner peg measure 3.00 m along the front line and 4.00 m along the side line, then swing the lines until the distance measured between those two marks is exactly 5.00 m; the two lines are then at 90 degrees to each other.\n5. Run a string line along each of the two directions and measure off the full length and width of the building - 9.00 m and 7.00 m - to fix the remaining two corners.\n6. Peg those two corners, then check the rectangle by measuring both diagonals: for a true rectangle they must be equal, and here each should measure the square root of (9.00 squared plus 7.00 squared) = 11.40 m.\n7. Adjust opposite corners until the two diagonals agree to within a few millimetres, then re-check the second corner with the 3-4-5 method or by confirming that both pairs of opposite sides are equal.\n8. Erect profiles (sight rails) at each corner, clear of the excavation, set at a known height above the datum.\n9. Transfer the lines on to the profiles with nails or saw cuts, so that the wall positions can be recovered after the trenches are dug and the pegs are lost.\n10. Mark the width of the footing trench - 0.60 m - on the ground with a lime line or a sand line, working from the profile lines.\n11. Record the setting-out: the two lengths, the two diagonals, the set-backs from the boundaries and the datum reading, and compare them with the drawing before any excavation starts.",
+        "markScheme": [
+          "1 mark for clearing and levelling the footprint and removing the topsoil.",
+          "1 mark for establishing a datum level on a firm reference point and relating all levels to it.",
+          "1 mark for locating the building from the boundaries by measuring the required set-backs and pegging the first corner.",
+          "1 mark for using the 3-4-5 method at that corner: 3.00 m one way and 4.00 m the other, adjusted until the diagonal between the marks is exactly 5.00 m.",
+          "1 mark for stating that the two lines are then at right angles to each other.",
+          "1 mark for running string lines along both directions and measuring off the 9.00 m length and the 7.00 m width.",
+          "1 mark for pegging the remaining corners from those lines.",
+          "1 mark for checking the diagonals and stating that they must be equal.",
+          "1 mark for the correct diagonal length, about 11.40 m.",
+          "1 mark for adjusting the corners until the diagonals agree, or for checking the opposite sides are equal.",
+          "1 mark for erecting profiles or sight rails at the corners, clear of the excavation, at a known height above the datum.",
+          "1 mark for transferring the lines to the profiles so the walls can be recovered after excavation.",
+          "1 mark for marking the 0.60 m footing trench on the ground with lime or a sand line.",
+          "1 mark for recording the setting-out dimensions and comparing them with the drawing before excavation begins.",
+          "Maximum 14 marks, awarded only where the steps are given in the correct order; steps listed out of order do not earn the order marks.",
+          "Total 14 marks."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Using the specification, calculate (i) the volume of mass concrete, in cubic metres, needed for the strip footing, allowing 10 per cent for waste and uneven subsoil; and (ii) the number of 150 mm blocks required for the external walls, allowing 5 per cent for cutting and breakage. The external perimeter of the walls is 32.00 m and the total length of the footing trench is 44.00 m.",
+        "marks": 8,
+        "commandWords": [
+          "Calculate",
+          "State"
+        ],
+        "modelAnswer": "(i) Volume of the footing = length x width x depth\n= 44.00 m x 0.60 m x 0.20 m = 5.28 cubic metres.\nAllow 10 per cent: 5.28 x 0.10 = 0.53 cubic metres, so order 5.28 + 0.53 = 5.81 cubic metres, say 5.8 cubic metres.\n\n(ii) Blockwork area of the external walls:\nperimeter x height = 32.00 m x 2.70 m = 86.40 square metres.\nDeduct the openings: door 0.90 m x 2.10 m = 1.89 square metres, and five windows at 1.20 m x 1.00 m = 6.00 square metres, giving 7.89 square metres to deduct.\nNet area = 86.40 - 7.89 = 78.51 square metres.\nBlocks per square metre on the nominal face: 1000 x 1000 / (400 x 200) = 12.5 blocks, so 78.51 x 12.5 = 981.4, say 982 blocks.\nAllow 5 per cent: 982 x 0.05 = 49 blocks, so order 982 + 49 = 1 031 blocks, say about 1 030 blocks.",
+        "markScheme": [
+          "(i) 1 mark for the substitution 44.00 x 0.60 x 0.20, and 1 mark for 5.28 cubic metres.",
+          "1 mark for adding the 10 per cent allowance, giving 5.81 cubic metres (accept 5.8 cubic metres).",
+          "(ii) 1 mark for the wall area 32.00 x 2.70 = 86.40 square metres.",
+          "1 mark for the total opening deduction, 7.89 square metres, and 1 mark for the net area 78.51 square metres.",
+          "1 mark for 12.5 blocks per square metre on the 400 mm x 200 mm nominal face.",
+          "1 mark for 982 blocks after the openings are deducted.",
+          "1 mark for the 5 per cent allowance and the final order of about 1 031 blocks.",
+          "Award the method marks even where arithmetic slips, provided the working is shown; a final answer alone earns at most half the part.",
+          "Total 8 marks."
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "Name the layers of the ground floor build-up in order from the subsoil upwards, and explain the purpose of the damp-proof membrane and how it differs from the damp-proof course in the walls.",
+        "marks": 8,
+        "commandWords": [
+          "Name",
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "From the subsoil upwards: 100 mm hardcore, 50 mm sand blinding, damp-proof membrane, 100 mm reinforced concrete slab, 25 mm screed, ceramic tile finish.\n\nThe damp-proof membrane is a continuous sheet - commonly 1 000 gauge - laid over the sand blinding and under the slab. Its purpose is to stop moisture rising from the ground into the concrete slab and the rooms above it. Water in the ground moves upwards by capillary action, and without a membrane the floor stays damp, the floor finish lifts or becomes stained, mould and damp smells develop, and anything stored on the floor is spoiled. Because it is buried under the slab, a damaged membrane cannot be replaced, so the sheets are overlapped and taped and turned up at the edges to meet the wall damp-proof course, and it is never punctured after laying.\n\nThe damp-proof course does the same job for the walls: it is a horizontal barrier built into the blockwork, just above ground level and below the floor slab, that stops moisture rising up the wall itself. The membrane protects the floor, the course protects the wall, and the two must join so that the barrier is continuous round the whole building.",
+        "markScheme": [
+          "1 mark for hardcore and sand blinding, named in that order.",
+          "1 mark for the damp-proof membrane placed above the blinding and below the slab.",
+          "1 mark for the reinforced concrete slab.",
+          "1 mark for the screed and the floor finish, named in that order (maximum 4 marks for the six layers).",
+          "1 mark for stating that the membrane stops moisture rising from the ground into the slab and the rooms.",
+          "1 mark for a consequence it prevents: damp floors, lifting or staining of the finish, mould and damp smells, or damage to stored goods.",
+          "1 mark for a practical detail: it is continuous, overlapped and taped, turned up at the edges, and protected because it cannot be replaced once the slab is cast.",
+          "1 mark for the difference from the damp-proof course: the course is built into the walls just above ground level to stop moisture rising up the wall, and the two barriers must join to make a continuous line.",
+          "Total 8 marks."
+        ]
+      },
+      {
+        "label": "(f)",
+        "prompt": "Explain how the views of this house would be arranged in first-angle orthographic projection, and state TWO differences you would see if the same drawing were produced in third-angle projection.",
+        "marks": 8,
+        "commandWords": [
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "In first-angle projection the object is imagined between the observer and the planes of projection, so each view is drawn on the far side of the object from the observer. The plan, which is the view looking down, is drawn BELOW the front elevation, and the view taken from the left-hand end of the house is drawn on the RIGHT of the front elevation. The views are projected from one another, so they stay in line and the same feature is the same distance from the ground line in every view; dimensions are given once, never repeated from view to view. A truncated cone symbol in the title block tells the reader which system has been used.\n\nTwo differences in third-angle projection: the plan is drawn ABOVE the front elevation, and the view from the left-hand end is drawn on the LEFT. Third-angle viewing places the observer between the object and the plane, which is why the view appears on the same side as the observer is looking from.\n\nIn both systems the outline of the building is drawn with a continuous thick line, hidden detail with dashed lines, and centre lines with a thin dash-dot line.",
+        "markScheme": [
+          "1 mark for stating that in first-angle projection the plan is drawn below the front elevation.",
+          "1 mark for stating that in first angle the view from the left is drawn on the right of the front elevation.",
+          "1 mark for the reason: in first angle the object lies between the observer and the plane of projection.",
+          "1 mark for stating that in third angle the plan is drawn above the front elevation.",
+          "1 mark for stating that in third angle the view from the left is drawn on the left.",
+          "1 mark for the projection symbol in the title block identifying the system used.",
+          "1 mark for stating that the views are projected from one another and must remain aligned.",
+          "1 mark for the line conventions: continuous thick outlines, dashed hidden detail, thin dash-dot centre lines.",
+          "Accept any TWO differences for the third-angle marks; both must be stated correctly to earn full marks.",
+          "Total 8 marks."
+        ]
+      },
+      {
+        "label": "(g)",
+        "prompt": "The straight flight staircase rises 2 720 mm from floor to floor. The maximum permitted riser is 180 mm and the going must be between 250 mm and 280 mm. Calculate the number of risers, the height of each riser, the number of goings and the total going, and check the result against the rule 2R + G. State what you would write on the sectional drawing to record these results.",
+        "marks": 14,
+        "commandWords": [
+          "Calculate",
+          "State",
+          "Evaluate"
+        ],
+        "modelAnswer": "Number of risers: 2 720 / 180 = 15.1, so a whole number of risers cannot be 15 (15 x 180 = 2 700 mm, too short); round up to 16 risers.\n\nHeight of each riser: 2 720 / 16 = 170 mm, which satisfies the 180 mm maximum.\n\nNumber of goings: one fewer than the risers, because the top riser lands on the floor above, so 16 - 1 = 15 goings.\n\nChoose a going of 260 mm, in the middle of the permitted range of 250 mm to 280 mm. Total going (the length of the flight) = 15 x 260 mm = 3 900 mm, that is 3.90 m.\n\nCheck with the rule 2R + G = 2 x 170 + 260 = 340 + 260 = 600 mm. A value of about 600 mm is the accepted comfortable figure, so the stair is acceptable: the tread is wide enough for the foot and the riser is low enough to climb easily.\n\nOn the sectional drawing I would write a note beside the flight giving the total rise 2 720 mm, 16 risers at 170 mm, 15 goings at 260 mm and the total going 3 900 mm, and I would label the parts of a step - the riser, the tread and the nosing - with the floor line and the landing line shown at both ends of the flight.",
+        "markScheme": [
+          "1 mark for dividing 2 720 by 180, and 1 mark for rounding up to 16 risers (not down to 15).",
+          "1 mark for the riser height 2 720 / 16 = 170 mm, and 1 mark for checking it against the 180 mm maximum.",
+          "1 mark for stating that the number of goings is one fewer than the risers, and 1 mark for 15 goings.",
+          "1 mark for choosing a going within the 250 mm to 280 mm range, and 1 mark for the total going 15 x 260 = 3 900 mm (accept the student's chosen going).",
+          "1 mark for using the rule 2R + G, and 1 mark for the result 600 mm with the chosen values.",
+          "1 mark for evaluating the result as comfortable or acceptable, in the region of 550 mm to 650 mm.",
+          "1 mark for the drawing note: total rise, number of risers, riser height, going and total going written beside the flight.",
+          "1 mark for labelling the parts of the step (riser, tread, nosing) and showing the floor lines at both ends of the flight.",
+          "Accept 15 risers at 181.3 mm only if the student shows the riser exceeds the maximum and rejects it; the correct answer here is 16 risers.",
+          "Total 14 marks."
+        ]
+      },
+      {
+        "label": "(h)",
+        "prompt": "Describe, in the correct order, the operations you would carry out to produce the full sectional elevation of this house at 1:50, from an empty sheet to a finished drawing ready for issue.",
+        "marks": 12,
+        "commandWords": [
+          "Describe",
+          "State"
+        ],
+        "modelAnswer": "1. Fix the paper on the board and check its alignment against the T-square edge before drawing anything.\n2. Draw the border and the title block, and fill in the title, scale, date, drawing number and the projection symbol.\n3. Establish the ground line and the floor levels by measuring from the chosen datum, and draw them as long, light horizontal lines across the sheet.\n4. Set out the overall width of the building, the thicknesses of the walls and the depth of the ground floor build-up, projecting them down from the floor plan so that the two drawings agree.\n5. Draw the foundation: the footing, the blockwork up to the damp-proof course and the course itself.\n6. Draw the walls to their full height, then cut the openings - the door and the window - at their correct heights and widths, and draw the lintels over them.\n7. Draw the roof structure and the roof covering over the wall plate, with the eaves detail, so the section reads as a complete building.\n8. Add the floor build-up: hardcore, blinding, membrane, slab, screed and finish.\n9. Hatch the material cut by the section plane - thin 45-degree lines for the concrete, a different pattern for the blockwork.\n10. Add the hidden detail with dashed lines where the far footings or walls show beyond the cut.\n11. Add the dimensions: a chain of dimensions for the openings and the wall thicknesses, and overall dimensions for the length and the height, with levels written against the datum.\n12. Add the annotations and leaders - labels for the damp-proof course, the lintels, the slab and the roof - then erase the construction lines, check every dimension and line weight against the plan, sign the title block and issue.",
+        "markScheme": [
+          "1 mark for fixing the paper and checking its alignment.",
+          "1 mark for the border and title block, with title, scale, date, drawing number and projection symbol.",
+          "1 mark for establishing the ground line and floor levels from a datum.",
+          "1 mark for setting out the overall width, wall thicknesses and floor depth, projected from the floor plan.",
+          "1 mark for the foundation, drawn before the walls.",
+          "1 mark for the walls at full height, with the openings cut at the correct heights and the lintels over them.",
+          "1 mark for the roof structure and covering.",
+          "1 mark for the floor build-up layer by layer.",
+          "1 mark for hatching the cut concrete and blockwork with different patterns.",
+          "1 mark for hidden detail shown dashed.",
+          "1 mark for dimensions (chain and overall) and levels against the datum.",
+          "1 mark for annotations and leaders, then erasing construction lines, checking line weights and dimensions, and completing the title block before issue.",
+          "Maximum 12 marks for operations given in the correct drawing order; a list of operations in random order earns no more than half.",
+          "Total 12 marks."
+        ]
+      },
+      {
+        "label": "(i)",
+        "prompt": "Explain how you would set up and plot the same sheet on CAD so that the printed drawing measures exactly 1:50. Include layers, line weights, dimension settings and the plot procedure.",
+        "marks": 10,
+        "commandWords": [
+          "Describe",
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "1. Start from a template containing the A2 sheet drawn full size, 594 mm x 420 mm, with the border and title block already in place, and save it as a layout.\n2. Set up the layers before drawing: walls, openings, dimensions, hatching, hidden detail, annotation, and title block, each with its own colour and line weight.\n3. Set the line weights by layer - heavy for outlines and walls, medium for secondary detail, thin for dimensions, hatching and hidden lines - and switch on line-weight display so the drawing is checked as it will print.\n4. Draw at full size in model space, one drawing unit = one millimetre, so the 9.00 m wall is drawn 9 000 units long and no calculation is done in the computer.\n5. Create a viewport on the A2 layout and set its scale to 1:50, or plot the model with a plot scale of 1:50.\n6. Create a dimension style sized for the plot scale, with a 2.5 mm printed text height and 3 mm arrowheads, and make the dimensions annotative or apply the 1:50 scale factor so they print at the right size.\n7. Insert the title block as a block with attributes, and fill in the title, scale, date, draughtsman, drawing number and revision through the attributes.\n8. Plot from the layout at 1:1 because the layout is already full size - never use 'fit to paper' - selecting the A2 paper size, the correct printer or plotter, a monochrome plot style and the portrait or landscape orientation of the sheet.\n9. Check the plot with a scale rule before issuing it: the 9.00 m wall at 1:50 must measure 180 mm on the paper, and a printed grid or scale bar should be added to the sheet as a further check.\n10. Save the drawing file as DWG with a DXF copy for other software, and export a PDF for issue, keeping the file name and the drawing number the same.",
+        "markScheme": [
+          "1 mark for an A2 template drawn full size with border and title block.",
+          "1 mark for setting up named layers before drawing.",
+          "1 mark for line weights set by layer and displayed on screen.",
+          "1 mark for drawing at full size, one drawing unit = one millimetre.",
+          "1 mark for a viewport at 1:50, or a plot scale of 1:50.",
+          "1 mark for a dimension style sized for the plot scale, with a stated printed text height (about 2.5 mm).",
+          "1 mark for the title block inserted as a block with attributes that are filled in.",
+          "1 mark for plotting from the layout at 1:1 with the A2 paper size and no 'fit to paper'.",
+          "1 mark for checking the printed sheet with a scale rule, for example the 9.00 m wall measuring 180 mm.",
+          "1 mark for saving as DWG with a DXF copy and exporting a PDF for issue.",
+          "Accept a student who plots the model space directly at 1:50 provided the paper size and the scale are both stated.",
+          "Total 10 marks."
+        ]
+      },
+      {
+        "label": "(j)",
+        "prompt": "State TWO safety measures to be observed while the setting out and excavation of this house are carried out, and explain why a second, independent check of every dimension is worth the time it takes.",
+        "marks": 4,
+        "commandWords": [
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "Two safety measures among the many that apply: keep everyone out of unsupported trenches and shore or batter the sides of the footing trench, and mark and protect the excavation with barriers and warning signs, especially where the public can reach it. (Also acceptable: wear safety boots, gloves and a hard hat; check for buried water and electrical services before digging; keep the site tidy and store blocks so they cannot topple.)\n\nWhy the second check matters: a setting-out error is repeated in every part of the building. If the outline is 100 mm out, the trench, the footing, the blockwork, the openings, the roof and the floor finish are all built 100 mm out, and the blockwork may not meet the roof; if the staircase rise is misread, the flight may not give enough headroom. Once the footing is cast, correcting the setting out means breaking out concrete, so the cost in materials, labour and time is many times the cost of the check. A second person, reading the drawing and the tape measure again, catches the ordinary human errors - a scale misread, a tape pulled from the wrong end, a peg moved - before any concrete is poured.",
+        "markScheme": [
+          "1 mark for each valid safety measure clearly described (2 marks for two measures).",
+          "1 mark for stating that a setting-out error is repeated throughout the building, wasting materials and labour.",
+          "1 mark for a consequence or for the value of an independent check: it cannot be corrected cheaply once the footing is cast, and a second person catches the human errors of the first.",
+          "Do not accept a bare list such as 'be careful' or 'wear PPE' with no measure named.",
+          "Total 4 marks."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "td-p2-02",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A - Building Drawing option",
+    "title": "Question 2: a 1:10 section through a sliding window in a blockwork wall",
+    "topic": "td-l5-2",
+    "commandWords": [
+      "Name",
+      "State",
+      "Calculate",
+      "Describe",
+      "Explain"
+    ],
+    "marks": 30,
+    "suggestedMinutes": 30,
+    "source": "Option A: Building Drawing, Question 2.\n\nThe window schedule for the house calls up horizontal sliding aluminium windows, each with a finished opening 1 200 mm wide x 1 000 mm high, set into the 150 mm blockwork walls (10 mm mortar joints) and plastered inside. The window frame is 50 mm wide all round. The detail drawing required is a vertical section through the head and the sill of one window at 1:10.",
+    "prompt": "This is Question 2 of the Building Drawing version of the paper: 30 marks, about 30 minutes (it follows Question 1, 90 marks, in the same 2-hour paper). Answer ALL parts in writing - no drawing is required, so describe the drawing operations in order and work the calculations. Then compare your answer with the model answer and the mark scheme and give yourself the marks you can justify.",
+    "planningHints": [
+      "A window section is a drawing of layers from outside to inside. In the model answer the layers run: blockwork, plaster, frame, glazing bead, glass, sealant, and the outside sill with its drip.",
+      "Keep the take-off and the drawing in the same order: glass size first, then area, then the allowance, then the materials - blocks displaced, beading, fixings.",
+      "The glass is smaller than the opening by the frame all round, so deduct the frame TWICE in each direction: 1 200 - (2 x 50) = 1 100 mm wide, and 1 000 - (2 x 50) = 900 mm high.",
+      "When you describe the drawing sequence, say what you draw first (centre lines), what you add next (the wall faces), and what you leave until the end (hatching, dimensions, annotation) - the order earns the marks."
+    ],
+    "examinerTips": "Two habits earn marks on this question. First, always separate what you can SEE from what you must SHOW: the frame, the sash, the glazing bead and the sealant are visible in section, while the fixings to the reveal are hidden and are therefore drawn dashed with a leader note. Second, use the correct line for each job: continuous thick lines for the outlines of the wall, the frame and the glass, thin continuous lines for dimension and hatching lines, thin dashed lines for hidden fixings, and a thin continuous line with an arrow for a leader. A section through a wall is drawn with a hatching pattern for the cut blockwork - never leave the cut material plain.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Name FOUR parts of this window assembly as they would appear in a vertical section through the head and the sill, and state the function of the sill and of the lintel over the opening.",
+        "marks": 6,
+        "commandWords": [
+          "Name",
+          "State"
+        ],
+        "modelAnswer": "Four parts visible in the section: the window frame (the head section and the sill section), the sliding sash or panel, the glazing bead that holds the glass, and the glass itself. Also correct: the reveal of the blockwork, the plaster line, the mastic sealant, and the outside sill or apron with its drip.\n\nFunction of the sill: it forms the bottom of the opening and closes the gap between the frame and the wall. It is sloped and weathered so that rainwater runs off to the outside instead of standing on it or running back into the room, it throws the water clear of the wall below through its drip or throating, and it carries the weight of the frame and the moving sashes.\n\nFunction of the lintel: it spans across the top of the opening and carries the blockwork and roof load above it, so that the wall is not left unsupported over the window. It must sit on a bearing of at least 150 mm at each end, and it is protected from damp by the damp-proof course above the opening.",
+        "markScheme": [
+          "1 mark for each of any FOUR correct parts named (1 mark for two parts, 1 mark for each further part, maximum 3 marks). Accept the frame, sash or panel, glazing bead, glass, reveal, plaster, sealant, sill or apron, lintel, damp-proof course.",
+          "1 mark for the sill function: it closes the bottom of the opening and is sloped and weathered so water runs off to the outside.",
+          "1 mark for stating that the sill carries the frame and the sashes (or that its drip throws water clear of the wall below).",
+          "1 mark for the lintel function: it spans the opening and carries the wall and roof load above it, so the wall is supported over the window.",
+          "Do not accept 'to close the hole' or 'to hold the window' alone; a function must name either the water or the load.",
+          "Total 6 marks."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Taking the finished opening as 1 200 mm wide x 1 000 mm high and the frame as 50 mm wide all round, calculate (i) the size of the glass for one window and its area in square metres; (ii) the total glass area for the five windows of the house, allowing 10 per cent for cutting; (iii) the number of 150 mm blocks displaced by each opening, taking a block as 400 mm x 200 mm nominal; and (iv) the length of glazing bead needed for one window.",
+        "marks": 11,
+        "commandWords": [
+          "Calculate",
+          "State"
+        ],
+        "modelAnswer": "(i) Glass size: width 1 200 - (2 x 50) = 1 100 mm; height 1 000 - (2 x 50) = 900 mm. Area = 1.100 m x 0.900 m = 0.99 square metres per window.\n\n(ii) Five windows: 5 x 0.99 = 4.95 square metres. Allow 10 per cent for cutting: 4.95 x 0.10 = 0.495, so order 4.95 + 0.50 = 5.45 square metres, say 5.5 square metres.\n\n(iii) Area of one opening = 1.200 m x 1.000 m = 1.20 square metres. A 400 mm x 200 mm nominal block covers 0.08 square metres, so 1.20 / 0.08 = 15 blocks are not laid at each opening.\n\n(iv) The glazing bead runs all round the glass, so its length is the perimeter: 2 x (1 100 + 900) = 4 000 mm = 4.00 m for one window (20.00 m for the five).",
+        "markScheme": [
+          "(i) 1 mark for deducting the frame twice in each direction, and 1 mark for the glass size 1 100 mm x 900 mm.",
+          "1 mark for the area 0.99 square metres.",
+          "(ii) 1 mark for 4.95 square metres for five windows, and 1 mark for the 10 per cent allowance giving 5.45 square metres (accept 5.5).",
+          "(iii) 1 mark for the opening area 1.20 square metres, and 1 mark for the block area 0.08 square metres.",
+          "1 mark for the answer 15 blocks per opening.",
+          "(iv) 1 mark for using the perimeter of the glass, and 1 mark for 4 000 mm or 4.00 m.",
+          "1 mark for the correct unit on each answer; a bare number is not a material quantity.",
+          "Total 11 marks."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Describe, in the correct order, the steps you would take to draw the vertical section through the head and the sill of this window at 1:10, from the first line to the finished detail.",
+        "marks": 8,
+        "commandWords": [
+          "Describe",
+          "State"
+        ],
+        "modelAnswer": "1. Decide the layout on the sheet and draw the centre line of the opening as a thin dash-dot line, vertical, with the width of the opening set out equally about it.\n2. Draw the two faces of the 150 mm blockwork wall, then the plaster lines 15 mm inside the inner face, so that the wall thickness is fixed first.\n3. Draw the reveal faces and the opening: 1 200 mm at 1:10 is 120 mm on the paper, and the head and the sill are set 1 000 mm (100 mm) apart.\n4. Draw the lintel over the opening and the damp-proof course above it, with its bearing of 150 mm at each end.\n5. Draw the frame: the head section at the top of the opening and the sill section at the bottom, both 50 mm wide, with the gap between the sliding sashes.\n6. Draw the sliding sashes in position, overlapping in the middle, and then the glazing beads and the glass, 1 100 mm x 900 mm, set in the beads.\n7. Show the sealant joint between the frame and the reveal, and the outside apron or sill with its slope and drip, then hatch the cut blockwork with thin 45-degree lines (and a different pattern or spacing for any cut concrete).\n8. Add the dimensions as a chain on one side only, add the leaders and notes (frame fixings, sealant, glazing bead, lintel bearing), check the line weights, erase the construction lines and complete the title block with the title, scale 1:10, date and drawing number.",
+        "markScheme": [
+          "1 mark for the centre line of the opening drawn first, as a thin dash-dot line.",
+          "1 mark for the wall faces and plaster lines, fixing the 150 mm wall thickness.",
+          "1 mark for setting out the opening 1 200 mm x 1 000 mm at 1:10.",
+          "1 mark for the lintel and the damp-proof course above the opening.",
+          "1 mark for the frame in two parts (head and sill), 50 mm wide.",
+          "1 mark for the sliding sashes and the glazing beads with the glass.",
+          "1 mark for the sealant, the outside wall sill and the drip, plus hatching the cut blockwork.",
+          "1 mark for the chain dimensions, leaders, notes, line weights and completed title block.",
+          "The marks are for the ORDER: material cut by the section is hatched after the outlines, and dimensions come last except for the main setting-out lines.",
+          "Total 8 marks."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "State how this window is fixed and sealed in the reveal, and explain how you would show the fixings and the opening on the detail drawing.",
+        "marks": 5,
+        "commandWords": [
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "Fixing: the frame is set into the reveal on plastic packers, which hold it square and out of twist and keep it clear of the damp blockwork, and it is fixed through the frame into the reveal with galvanised frame fixings or plugs and screws - two at each jamb, about 150 mm from each corner and then at no more than 600 mm centres. Packers stay in place behind the fixings and are sealed over.\n\nSealing: the gap between the frame and the reveal is filled with a compressible backer rod and sealed on the outside face with a low-modulus mastic or silicone sealant that will move with the frame; the inside joint is finished with plaster and a thin sealant line. The outside sill or apron is bedded under the frame and sealed where it meets the frame and the wall.\n\nShowing it on the drawing: the fixings are inside the wall, so they are drawn as thin dashed lines through the frame into the reveal, with a leader and a note such as 'galvanised frame fixing at 600 mm centres'; the sealant is drawn as a narrow solid shape between the frame and the reveal and labelled 'sealant on backer rod'; the reveal is dimensioned once, with the chain of dimensions on the inner side only; and a general note refers the builder to the window schedule for the type, the size and the glazing.",
+        "markScheme": [
+          "1 mark for the fixing method: galvanised fixings or plugs and screws into the reveal, with centres stated (about 600 mm).",
+          "1 mark for packers under the frame to keep it square and clear of the blockwork.",
+          "1 mark for the sealing: backer rod and a mastic or silicone sealant to the outside face, with the inside joint plastered.",
+          "1 mark for showing the fixings as dashed (hidden) lines with a leader note.",
+          "1 mark for dimensioning the reveal once and adding the note that refers to the window schedule.",
+          "Total 5 marks."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "td-p2-03",
+    "type": "write",
+    "paper": 2,
+    "section": "Section B - Mechanical Engineering Drawing option",
+    "title": "Question 1: working drawing of a shaft and pulley assembly, limits and fits, sections",
+    "topic": "td-l6-2",
+    "commandWords": [
+      "State",
+      "List",
+      "Calculate",
+      "Explain",
+      "Describe",
+      "Name"
+    ],
+    "marks": 90,
+    "suggestedMinutes": 90,
+    "source": "Option B: Mechanical Engineering Drawing.\n\nA workshop in Jamaica is manufacturing a shaft and pulley assembly for a small water pump. A working drawing of the assembly is required on an A2 sheet at 1:2.\n\nAgreed specification for the assembly (DIA means diameter):\n- Shaft: 260 mm long; journals DIA 30 mm for the bearings; stepped end DIA 25 mm x 40 mm long for the coupling; a shoulder locates the components at the left-hand end.\n- Two ball bearings, each 16 mm wide, fitted on the DIA 30 mm journals.\n- Pulley: DIA 180 mm rim, hub 60 mm long, bore DIA 30 mm, driven by a parallel key.\n- Parallel key: 8 mm wide x 7 mm high x 40 mm long, sunk half into the shaft and half into the hub.\n- Collar: DIA 40 mm x 12 mm wide, retained by an M6 grub screw.\n- A retaining plate at the right-hand end, and a spacer that fills the gap so that the bearings, the hub and the collar are clamped axially between the shoulder and the plate. The distance between the shoulder and the retaining plate is 160 mm, and the shoulder is 20 mm from the left-hand end of the shaft.\n- A grease nipple screwed into an M10 x 1.5 tapped hole in the bearing housing.\n- The pulley bore is reamed DIA 30 H7 and the shaft journals are machined DIA 30 h6.",
+    "prompt": "This is Question 1 of the Mechanical Engineering Drawing version of the paper: 90 marks, about 90 minutes (the remaining 30 minutes of the 2-hour paper would go on Question 2 in the same section). Answer ALL parts in writing - no drawing is required. For every drawing task describe exactly what you would set out, dimension, hatch and check, in the order you would do it, and work the calculations. Then compare your answer with the model answer and the mark scheme and give yourself the marks you can justify.",
+    "planningHints": [
+      "An assembly question is really a question about order: centrelines first, then the shaft, then the components on the shaft, then the section, then the hatching, then the dimensions, then the balloons and the parts list, then the title block and the check.",
+      "Limits and fits answers need the LIMITS written for both parts before any clearance is calculated. H7 is plus only, h6 is minus only, and the clearance is the difference between the largest hole and the smallest shaft.",
+      "In a section, three parts are never hatched when they are cut lengthwise: solid shafts, keys and fasteners such as bolts and pins. That one rule carries several marks in part (d).",
+      "Write the dimensional stack in part (g) as a column of figures that adds up to the distance between the shoulder and the plate, so the spacer is the only unknown.",
+      "Budget about one minute per mark: roughly 14 minutes each on the drawing order and on the CAD workflow, 12 on the sections, 10 on the limits and 10 on the checks."
+    ],
+    "examinerTips": "This paper rewards people who can describe a drawing operation in the order it is actually done on the board. Learn the standard sequence for an assembly drawing - centrelines, main outlines, component by component, convert the front view to a full section, hatch the cut faces in opposite directions for adjacent parts, leave the shaft, the key and the bolt clear, add hidden detail for the fixings, then dimension, balloon, list the parts and complete the title block. Learn the ISO limits for a 30 mm size (H7 is +0.021 to 0, h6 is 0 to -0.013) and the one-line rule for a tapped hole: tap drill size = nominal diameter minus the pitch. Keep the drawing's arithmetic honest: every dimension you add must agree with the overall length, and the parts list must agree with the balloons.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "State FOUR items of information that must appear in the title block of this assembly drawing, and name the columns of the parts list that goes with it.",
+        "marks": 6,
+        "commandWords": [
+          "State",
+          "List"
+        ],
+        "modelAnswer": "Four title-block items: (1) the title of the drawing, for example 'Shaft and Pulley Assembly'; (2) the scale, 1:2; (3) the drawing number; and (4) the date. A complete title block also carries the draughtsman's name, the revision or issue status, the projection symbol and the sheet size.\n\nParts list columns, in the usual order: item or part number, part name or description, quantity required, material, and remarks. The item numbers in the parts list are the numbers used to balloon-reference the parts on the drawing.\n\nTwo further rules for the list: it is read from the bottom upwards on many drawing forms, and where a standard part is used (a ball bearing, for example) the remarks column carries the manufacturer's or the standard designation.",
+        "markScheme": [
+          "1 mark for each of any FOUR correct title-block items (1 mark for two items, 1 mark for each further item, maximum 4 marks). Accept title, scale, drawing number, date, draughtsman, revision, projection symbol and sheet size.",
+          "1 mark for naming three parts-list columns, and 2 marks for all five (item or part number, part name, quantity, material, remarks).",
+          "Do not accept 'the name of the school' or similar as a title-block item; the block must identify the drawing and its issue.",
+          "Total 6 marks."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "The pulley bore is DIA 30 H7 and the shaft journal is DIA 30 h6. (i) State the upper and lower limits of each. (ii) Calculate the maximum and the minimum clearance of the fit. (iii) Name the class of fit and explain how the pulley is held and driven on the shaft. (iv) State the tap drill size for the M10 x 1.5 grease nipple hole.",
+        "marks": 10,
+        "commandWords": [
+          "State",
+          "Calculate",
+          "Explain"
+        ],
+        "modelAnswer": "(i) For a 30 mm diameter (the ISO 286 size band above 18 mm up to 30 mm):\nHole DIA 30 H7: upper limit 30.021 mm, lower limit 30.000 mm (tolerance 0.021 mm).\nShaft DIA 30 h6: upper limit 30.000 mm, lower limit 29.987 mm (tolerance 0.013 mm).\n\n(ii) Maximum clearance = largest hole - smallest shaft = 30.021 - 29.987 = 0.034 mm.\nMinimum clearance = smallest hole - largest shaft = 30.000 - 30.000 = 0.000 mm, so the parts may be line-to-line at the extreme.\n\n(iii) Because the shaft is never larger than the hole, the fit is always slack: it is a clearance fit (H7/h6 is a close running or sliding fit). The pulley therefore slides on to the journal, needing only hand pressure or a light tap, and it is located axially by the collar and the shoulder. The pulley is DRIVEN by the parallel key in the keyway, not by the fit: the key transmits the torque, while the H7/h6 clearance lets the pulley be assembled and removed without a press.\n\n(iv) The single-line rule for a metric thread is tap drill diameter = nominal diameter - pitch, so 10 - 1.5 = 8.5 mm. The M10 x 1.5 hole is tapped 8.5 mm, or 8.6 mm if the nearest drill in the set is used.",
+        "markScheme": [
+          "(i) 2 marks for the H7 limits: 30.000 mm and 30.021 mm (1 mark if only one limit or the tolerance is given).",
+          "2 marks for the h6 limits: 30.000 mm and 29.987 mm.",
+          "(ii) 2 marks for the maximum clearance 0.034 mm with the working shown.",
+          "2 marks for the minimum clearance 0.000 mm (line-to-line), explained as the smallest hole against the largest shaft.",
+          "(iii) 1 mark for naming a clearance fit (accept close running or sliding fit) and 1 mark for stating that the key transmits the torque while the fit only locates the pulley.",
+          "(iv) 1 mark for 8.5 mm.",
+          "Award no marks for a clearance figure with no limits stated; the limits are the evidence.",
+          "Total 10 marks."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Describe, in the correct order, how you would prepare the assembled front elevation of this shaft and pulley assembly in third-angle projection at 1:2, from planning the sheet to the drawing being ready to issue.",
+        "marks": 14,
+        "commandWords": [
+          "Describe",
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "1. Plan the sheet: choose A2 at 1:2, decide where the assembly, the additional views, the parts list and the title block will sit, and draw the border and the title block first.\n2. Draw the centre lines: the horizontal centre line of the shaft and the vertical centre line of the pulley, as thin dash-dot lines, and mark the overall length of 260 mm (130 mm at 1:2).\n3. Draw the shaft outline: the DIA 30 mm journals and the DIA 25 mm stepped end, with the shoulder and the chamfers at the ends, to the calculated lengths.\n4. Draw the components in position on the shaft, working from the dimensional stack - first bearing 16 mm, spacer, pulley hub 60 mm, second bearing 16 mm, collar 12 mm - so that all the faces line up with the shoulder and the plate.\n5. Draw the pulley: the hub, the rim at DIA 180 mm and the web between them, on the pulley centre line.\n6. Convert the front elevation to a full section along the shaft axis: cut away the near half of the pulley hub, the collar and the housing to show the bores and the fits.\n7. Show the key in its keyway with the key drawn in the assembled position, sitting half in the shaft and half in the hub.\n8. Hatch the cut faces: thin 45-degree lines evenly spaced, with adjacent parts hatched in opposite directions (or at different pitches) so the boundaries between the hub, the collar and the housing read clearly.\n9. Follow the section conventions: do not hatch the shaft, the key or the bolt when they are cut lengthwise, and label the cutting plane A-A with arrows on the view where it is taken.\n10. Add the hidden detail with dashed lines - the fixing holes, the tapped hole for the grease nipple (M10 x 1.5) and the keyway in the hub.\n11. Dimension the drawing: the shaft diameters and lengths, the fit callouts DIA 30 H7 and DIA 30 h6, the key 8 x 7 x 40, the pulley diameter, and the overall length, with each dimension given once.\n12. Add the notes: the thread callout, the material of each part, the surface finish where it matters on the journals.\n13. Number each part and balloon-reference the numbers to the parts list, then draw the parts list above the title block with the item number, name, quantity, material and remarks.\n14. Complete the title block (title, scale 1:2, date, drawing number, revision and the third-angle projection symbol), erase the construction lines, check the line weights and the arithmetic, and have the drawing checked before it is issued to the workshop.",
+        "markScheme": [
+          "1 mark for planning the sheet, drawing the border and the title block first.",
+          "1 mark for the centre lines drawn before any outline, as thin dash-dot lines.",
+          "1 mark for the shaft outline with its steps, shoulder and chamfers at the right lengths.",
+          "1 mark for placing the components on the shaft in their assembled order.",
+          "1 mark for the pulley hub, rim and web drawn on the pulley centre line.",
+          "1 mark for converting the front elevation into a full section along the shaft axis, with the cutting plane labelled.",
+          "1 mark for the key shown in its keyway, half in the shaft and half in the hub.",
+          "1 mark for hatching the cut faces with thin 45-degree lines, adjacent parts in opposite directions.",
+          "1 mark for leaving the shaft, the key and the fasteners unhatched when cut lengthwise.",
+          "1 mark for the hidden detail shown dashed, including the tapped M10 x 1.5 hole.",
+          "1 mark for the dimensions and the fit callouts, each dimension given once.",
+          "1 mark for the notes: thread callout, materials and surface finish.",
+          "1 mark for balloon references and the parts list with its five columns.",
+          "1 mark for completing the title block, erasing construction lines, checking line weights and arithmetic, and having the drawing checked before issue.",
+          "Maximum 14 marks for operations given in the correct drawing order.",
+          "Total 14 marks."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Explain which sections you would use to show this assembly clearly, and state THREE conventions you must follow when sectioning it.",
+        "marks": 10,
+        "commandWords": [
+          "Explain",
+          "State"
+        ],
+        "modelAnswer": "Choice of sections. A full section along the shaft axis through the front elevation is the main view: it shows the bores of the pulley hub and the collar, the way the bearings and the key sit on the shaft, and the fit between the DIA 30 H7 bore and the DIA 30 h6 journal. A half section on the same view is useful when the outside shape matters as much as the inside: one half is drawn cut away and the other half in outside view, which halves the drawing work and still shows both. A revolved section taken on the shaft shows the shape of the keyway. An offset section would be used if the tapped hole for the grease nipple did not lie on the centre line, and a removed section drawn away from the view is the usual way to show the cross-section of the key.\n\nConventions. First, the cutting plane is marked with a thick dash-dot line, lettered A-A, with arrows showing the direction of sight; the resulting view is titled SECTION A-A. Second, every cut face is hatched with thin continuous lines, evenly spaced, at 45 degrees, and adjacent parts are hatched in opposite directions or with a different pitch so no boundary is lost. Third, the shaft, the key and any bolt, rivet or pin is NOT hatched when it is cut lengthwise - only its outline is drawn - and hidden detail is normally omitted from a section, because the section is there to show the internal shape. Hatching lines must not run into or along the outline of the part.",
+        "markScheme": [
+          "1 mark for choosing a full section along the shaft axis and saying what it shows.",
+          "1 mark for a half section and its advantage (half outside, half cut).",
+          "1 mark for a revolved section on the shaft to show the keyway, or a removed section on the key.",
+          "1 mark for an offset section, used when the hole does not lie on the centre line.",
+          "1 mark for the cutting plane marked and lettered A-A with arrows showing the direction of sight.",
+          "1 mark for hatching the cut faces with thin, evenly spaced 45-degree lines.",
+          "1 mark for hatching adjacent parts in opposite directions or at a different pitch.",
+          "1 mark for stating that the shaft, key, bolt, rivet or pin is not hatched when cut lengthwise.",
+          "1 mark for stating that hidden detail is normally omitted from a section.",
+          "1 mark for stating that hatching lines must not run along the outline, or that the section view must be titled SECTION A-A.",
+          "Total 10 marks."
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "Explain how you would show the metric screw thread of the grease nipple and the compression spring of the pump on an engineering drawing, and state the meaning of the callout M10 x 1.5.",
+        "marks": 8,
+        "commandWords": [
+          "Explain",
+          "State",
+          "Name"
+        ],
+        "modelAnswer": "Screw thread. In a view on to the side of the threaded part, the major (crest) diameter is drawn as a thick continuous line and the minor (root) diameter as a thin continuous line parallel to it, with the run-out of the thread shown where the thread ends and a chamfer at the entry. In the end view the crest is a thick continuous circle and the root a thin circle broken for about one quarter of its circumference, so the drawing shows which way the thread runs. A thread is never hatched in section: a tapped hole in section is shown by the thick lines of the hole with the thread run-out, not by a hatched surface. The thread is identified by a leader and a callout, for example M10 x 1.5.\n\nCompression spring. A helical spring is drawn as a series of straight lines representing the coils, in two views: the outside diameter is drawn as solid outlines with the coils shown as inclined lines, and, where the spring is drawn in section, the wire itself is cut and hatched while the coils behind are drawn as thin lines. The free length, the outside diameter, the wire diameter, the number of active coils and the direction of the helix (right-hand or left-hand) are stated, and the ends are drawn closed and ground where the spring is to bear on a flat face.\n\nThe callout M10 x 1.5 means a metric thread - 60-degree thread form - of nominal major diameter 10 mm and pitch 1.5 mm. The pitch is written explicitly; 1.5 mm is the standard coarse pitch for an M10 thread, while the finer pitches (1.25 mm or 1.0 mm) are written in exactly the same way, so the engineer always knows which is required.",
+        "markScheme": [
+          "1 mark for the thread shown with a thick continuous line for the major diameter.",
+          "1 mark for a thin continuous line for the minor diameter.",
+          "1 mark for the end view convention - a thin circle broken for about one quarter.",
+          "1 mark for stating that a thread is not hatched in section.",
+          "1 mark for the spring drawn as a series of straight lines representing the coils.",
+          "1 mark for the spring data stated: free length, outside diameter, wire diameter, number of coils and the hand of the helix.",
+          "1 mark for the meaning of M10 x 1.5: nominal diameter 10 mm, pitch 1.5 mm.",
+          "1 mark for noting that the pitch is stated explicitly and that fine pitches are written the same way.",
+          "Total 8 marks."
+        ]
+      },
+      {
+        "label": "(f)",
+        "prompt": "State the parts of a welding symbol, and describe how you would show a 6 mm fillet weld running the full length of both sides of a bracket.",
+        "marks": 4,
+        "commandWords": [
+          "State",
+          "Describe"
+        ],
+        "modelAnswer": "The parts of a welding symbol are: the arrow, which points to the joint; the reference line, drawn from the arrow; the symbol itself, which for a fillet weld is a right-angled triangle; the size, written to the left of the symbol (the leg length); the length and pitch, written to the right of the symbol; the tail, used for the process or a note; and, where needed, a circle at the junction of the arrow and the reference line, meaning a weld all round, and a flag, meaning the weld is made on site.\n\nFor a 6 mm fillet weld along the full length of both sides of the bracket, I would draw the arrow pointing to the joint, then a reference line. Above the reference line I would draw the triangle and write 6 to its left for the weld on the near side; below the reference line I would draw a second triangle with 6 to its left for the weld on the far side. Because the weld runs the full length of the joint, the length box is left blank - a length is only written when the weld stops short or is intermittent, in which case the length and the pitch are written as, for example, 6 100-300.",
+        "markScheme": [
+          "1 mark for naming the arrow and the reference line.",
+          "1 mark for the fillet weld symbol - the triangle - and the size written to its left.",
+          "1 mark for the second triangle below the reference line meaning the weld on the far side.",
+          "1 mark for stating that a blank length means the weld runs the full length of the joint (and that the tail carries any process note).",
+          "Total 4 marks."
+        ]
+      },
+      {
+        "label": "(g)",
+        "prompt": "Using the specification, (i) calculate the total length occupied along the shaft by the two bearings, the pulley hub and the collar, and the length of the spacer needed to fill the distance of 160 mm between the shoulder and the retaining plate; (ii) check that the 40 mm key sits fully inside the 60 mm hub and state how much of the hub remains at each end of the key; and (iii) calculate the length of shaft that projects beyond the retaining plate if the shoulder is 20 mm from the left-hand end of the shaft. Explain why the spacer is needed.",
+        "marks": 12,
+        "commandWords": [
+          "Calculate",
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "(i) Length occupied by the components:\nbearing 16 mm + pulley hub 60 mm + bearing 16 mm + collar 12 mm = 104 mm.\nSpacer = 160 - 104 = 56 mm.\n\n(ii) The 40 mm key is shorter than the 60 mm hub, so it sits fully inside the hub: 60 - 40 = 20 mm remains, that is 10 mm of hub at each end of the key. This is the correct arrangement, because the key must not run past the end of the hub where it could be damaged or interfere with the collar, and the keyway in the shaft must match the keyway in the hub.\n\n(iii) The assembly occupies 160 mm and starts 20 mm from the left-hand end:\n20 mm + 160 mm = 180 mm, so the projection = 260 - 180 = 80 mm of shaft beyond the retaining plate. That 80 mm includes the DIA 25 mm x 40 mm stepped end, so there is a further 40 mm of the DIA 30 mm shaft between the plate and the step for the coupling to sit on.\n\nWhy the spacer is needed: without it the components would not fill the distance between the shoulder and the plate, so the bearings, the hub and the collar would slide along the shaft and the inner races of the bearings would not be clamped against the shoulder. The spacer closes that gap, so the assembly is located axially, the pulley stays in line with the driven machine, and the bearings cannot creep on their journals.",
+        "markScheme": [
+          "1 mark for listing the component widths 16 mm, 60 mm, 16 mm and 12 mm.",
+          "1 mark for the total 104 mm.",
+          "1 mark for the distance between the shoulder and the plate, 160 mm.",
+          "1 mark for the spacer 160 - 104 = 56 mm.",
+          "1 mark for stating the purpose of the spacer: it clamps and locates the assembly axially so the bearings and hub cannot slide.",
+          "1 mark for the key 40 mm within the 60 mm hub, and 1 mark for 20 mm remaining, that is 10 mm at each end.",
+          "1 mark for the check that the key runs fully inside the hub and does not reach the collar.",
+          "1 mark for the assembled length 20 + 160 = 180 mm from the left-hand end.",
+          "1 mark for the projection 260 - 180 = 80 mm.",
+          "1 mark for accounting for the DIA 25 mm stepped end within the projection.",
+          "1 mark for checking that the component lengths, the spacer and the projection add up to the overall shaft length of 260 mm.",
+          "Total 12 marks."
+        ]
+      },
+      {
+        "label": "(h)",
+        "prompt": "Describe how you would produce this assembly drawing and its parts list on CAD, including layers, blocks, the balloons, the table and the plot.",
+        "marks": 12,
+        "commandWords": [
+          "Describe",
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "1. Set up the drawing on an A2 template with the border and title block already drawn full size, and create the layers before drawing: outlines, centre lines, hidden detail, hatching, dimensions, notes and text, balloons and the parts list.\n2. Give each layer a colour and a line weight - heavy for outlines, thin for centrelines, hatching and dimensions, medium for hidden detail - and turn on line-weight display.\n3. Draw at full size (one drawing unit = one millimetre) on the geometry: the shaft, the bearing rectangles, the pulley, the key and the collar, using the centre lines as the first objects and mirroring or copying parts that repeat, such as the two identical bearings.\n4. Create blocks for the standard items that repeat - the ball bearing and the grease nipple - and insert them wherever they occur, so one edit changes every copy.\n5. Draw hatches using the hatch command with the correct pattern, scale and angle for each material, hatching adjacent parts in opposite directions.\n6. Dimension with a dimension style sized for the plot scale, using diameter dimensions for the journals and bores, leader callouts for the thread and the fit, and the fit callouts DIA 30 H7 and DIA 30 h6 typed as dimension overrides or notes.\n7. Create the parts list as a table in the drawing, with columns for item, description, quantity, material and remarks, and fill in one row per part.\n8. Draw the balloons as leaders with circles, one for each part, and number them to match the table rows exactly - the block attributes or a field can be linked so a change in the table updates the balloon.\n9. Add the notes and the title block text through the attributes, including the scale 1:2, the material of the shaft and the pulley, and the third-angle projection symbol.\n10. Set up a layout with a viewport at 1:2 and plot from the layout at 1:1, on A2 paper, with a monochrome plot style, never using 'fit to paper'.\n11. Check the plot with a scale rule: the 260 mm shaft must measure 130 mm on the paper and the DIA 180 mm pulley 90 mm.\n12. Save the drawing as DWG with a DXF copy for the workshop's software, export a PDF for issue, and keep the file name the same as the drawing number and the revision.",
+        "markScheme": [
+          "1 mark for the A2 template with border and title block before drawing.",
+          "1 mark for creating named layers for outlines, centre lines, hidden detail, hatching, dimensions, notes and the parts list.",
+          "1 mark for line weights and colours set by layer, with line-weight display on.",
+          "1 mark for drawing at full size, one unit = one millimetre.",
+          "1 mark for using blocks for the standard repeated items such as the bearing.",
+          "1 mark for hatching through the hatch command with the correct pattern, scale and angle.",
+          "1 mark for a dimension style sized for the plot scale, with diameter and leader callouts.",
+          "1 mark for the parts list drawn as a table with the five columns.",
+          "1 mark for balloon leaders numbered to match the table rows.",
+          "1 mark for the notes and title-block attributes, including the scale and the projection symbol.",
+          "1 mark for a layout with a 1:2 viewport, plotted at 1:1 on A2 without 'fit to paper'.",
+          "1 mark for saving DWG and DXF copies, exporting a PDF and checking the plot with a scale rule.",
+          "Total 12 marks."
+        ]
+      },
+      {
+        "label": "(i)",
+        "prompt": "Describe how you would check this assembly drawing before it is issued to the workshop, and explain why the check is a separate operation from the drawing.",
+        "marks": 10,
+        "commandWords": [
+          "Describe",
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "1. Check the overall size first: add the component widths, the spacer and the projections and confirm that they total the 260 mm overall length shown on the shaft.\n2. Scale off the drawing with a scale rule and compare each measured dimension with the figure written against it, so that a wrong figure on a correct drawing is caught.\n3. Check the fit callouts against the requirement: the journal must carry h6 and the pulley bore H7, and the limits written in the notes must agree with the limits calculated for a 30 mm diameter.\n4. Check the key and keyway: the key is 8 x 7 x 40, the keyway in the shaft and the hub must match it, and the key must run fully within the hub.\n5. Check the thread callouts: the grease nipple hole is M10 x 1.5 with a stated tap drill size, and the grub screw thread in the collar matches the screw supplied.\n6. Check the section: the cutting plane is lettered, the cut faces are hatched in the right directions, and the shaft, the key and the fasteners are not hatched.\n7. Check line types and weights: outlines thick and continuous, hidden detail dashed, centre lines dash-dot, dimension and hatching lines thin.\n8. Check the parts list against the balloons: every balloon has a row and every row has a balloon, with the correct quantity and material for each part.\n9. Check the title block: title, scale, date, drawing number, revision and the third-angle projection symbol, and make sure the revision note says what changed.\n10. Have a second person check the drawing without being told what to look for, because the draughtsman reads what he meant to draw rather than what is on the sheet; only then sign the drawing and issue it.\n\nWhy the check is a separate operation: drawing and checking are two different tasks, and the person who has drawn the assembly knows what each line is meant to be and therefore reads the sheet from memory. A separate check, against the specification and with a scale rule in hand, catches the errors the draughtsman cannot see - a transposed figure, a missing dimension, an unhatched face. It costs minutes and saves scrapped parts, because a wrong drawing is paid for twice: once in the drawing office and again in the machine shop.",
+        "markScheme": [
+          "1 mark for adding the component widths, the spacer and the projections to check the overall length.",
+          "1 mark for scaling dimensions off the drawing and comparing them with the figures.",
+          "1 mark for checking the fits against the requirement (H7 bore, h6 journal) and against the calculated limits.",
+          "1 mark for checking the key and the keyways in the shaft and the hub.",
+          "1 mark for checking the thread callouts and the tap drill size.",
+          "1 mark for checking the section: cutting plane lettered, hatching correct and the shaft, key and fasteners left unhatched.",
+          "1 mark for checking line types and line weights.",
+          "1 mark for checking the parts list against the balloon references.",
+          "1 mark for checking the title block, the revision and the projection symbol.",
+          "1 mark for explaining that a separate check is needed because the draughtsman reads the drawing from memory, and that a wrong drawing costs the part again in the workshop.",
+          "Total 10 marks."
+        ]
+      },
+      {
+        "label": "(j)",
+        "prompt": "State TWO safety or workshop rules to be observed while this assembly is being machined and measured, and explain why the limits on the drawing matter when the parts are fitted together.",
+        "marks": 4,
+        "commandWords": [
+          "State",
+          "Explain"
+        ],
+        "modelAnswer": "Two rules among the many that apply: never measure a part with a micrometer or a vernier while it is still turning in the lathe - stop the machine and let it come to rest first; and handle the measuring instruments carefully, wiping them and never laying them on the machine bed or using them as a spanner, because a damaged gauge gives false readings. Also acceptable: keep hands clear of the chuck and remove the chuck key immediately; wear eye protection and keep loose clothing away from rotating parts; and deburr and clean each part before measuring it.\n\nWhy the limits matter: the limits decide whether the assembly goes together and how it runs. Too much clearance and the pulley is loose on the journal - it rocks, the key takes all the load and the pulley whips and wears the bearing; too tight a fit and the parts will not assemble without force, which damages the bearing and distorts the hub. The DIA 30 H7/h6 pair gives a controlled clearance of 0.000 to 0.034 mm, which is small enough to keep the pulley true and large enough to assemble by hand. On the drawing the limits are the only instruction the machinist has, so a wrong limit either scraps the part or puts a part in service that will fail.",
+        "markScheme": [
+          "1 mark for each valid safety or workshop rule clearly described (2 marks for two).",
+          "1 mark for explaining that the fit decides whether the parts assemble: too much clearance makes the pulley loose and the bearing wear, too little stops assembly or damages the bearing.",
+          "1 mark for linking this to the drawing: the limits are the machinist's instruction, so a wrong limit scraps the part or leaves a failure in service.",
+          "Do not accept a bare 'be careful' or 'wear PPE' with no rule or reason named.",
+          "Total 4 marks."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "td-p2-04",
+    "type": "write",
+    "paper": 2,
+    "section": "Section B - Mechanical Engineering Drawing option",
+    "title": "Question 2: a welded steel bracket - detail drawing, take-off and welding symbols",
+    "topic": "td-l6-1",
+    "commandWords": [
+      "State",
+      "Name",
+      "Explain",
+      "Calculate",
+      "Describe"
+    ],
+    "marks": 30,
+    "suggestedMinutes": 30,
+    "source": "Option B: Mechanical Engineering Drawing, Question 2.\n\nA garage needs 24 storage-rack brackets. Each bracket is made from a mild-steel base plate 120 mm x 80 mm x 10 mm with two holes DIA 12 mm on the centre line, and a vertical gusset plate 100 mm x 80 mm x 10 mm welded to it. The gusset is welded along both of its sides with a 6 mm fillet weld running the full length of the joint. Mild steel has a density of 7 850 kg per cubic metre (7.85 g per cubic centimetre).\n\nA detail drawing of one bracket and its weld symbols is required.",
+    "prompt": "This is Question 2 of the Mechanical Engineering Drawing version of the paper: 30 marks, about 30 minutes (it follows Question 1, 90 marks, in the same 2-hour paper). Answer ALL parts in writing - no drawing is required, so describe the drawing operations in order and work the calculations. Then compare your answer with the model answer and the mark scheme and give yourself the marks you can justify.",
+    "planningHints": [
+      "Convert to a single unit before calculating: 120 mm x 80 mm x 10 mm is 96 000 cubic millimetres, which is 96 cubic centimetres, which is 0.000 096 cubic metres.",
+      "The mass follows from the volume: cubic centimetres x 7.85 g, or cubic metres x 7 850 kg. Do the small parts in grams and the whole order in kilograms so the figures stay readable.",
+      "The two holes remove material, so their volume is SUBTRACTED from the plate before the mass is worked out - or say clearly that the holes are ignored, and lose the mark.",
+      "Every feature you name in part (a) must be shown as a convention: chamfer, radius, tapped hole, spot face, and the '2 x DIA 12' note that saves writing the dimension twice."
+    ],
+    "examinerTips": "This question is the workshop side of the paper: it asks you to write the instructions a machinist and a welder would work from. Use the conventions rather than descriptions - '2 x DIA 12' not 'two holes twelve millimetres across' - and keep the units with every number, because a mass written as 0.75 instead of 0.754 kg is a wrong answer on a materials order. In the welding answer remember the layout of the symbol: arrow to the joint, symbol on the reference line, size to the left of the symbol, length to the right, and a blank length meaning the weld runs the full length of the joint.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "State how each of the following is shown on the detail drawing: a 45-degree chamfer, a fillet radius, a tapped hole, and a spot-faced hole. Then state what the note 2 x DIA 12 means and why notes of that kind are used.",
+        "marks": 6,
+        "commandWords": [
+          "State",
+          "Name",
+          "Explain"
+        ],
+        "modelAnswer": "Chamfer: drawn as a short line across the corner at 45 degrees, with the size given as a note or a dimension, for example 10 x 45 degrees, read as 10 mm long at 45 degrees.\n\nFillet radius: drawn as an arc blending the two surfaces, with a leader and the radius callout R6 - the R means radius, so the arc has a 6 mm radius. A sharp internal corner is never left on a drawing of a cast or machined part, because it concentrates stress and cannot be cut by a round-nosed tool.\n\nTapped hole: in the end view a tapped hole is shown by a thick continuous circle for the major (crest) diameter and a thin circle broken for about three quarters of its circumference for the minor (root) diameter, with a leader and the thread callout, for example M12. In a section the hole is not hatched and the thread lines are drawn in the same convention.\n\nSpot-faced hole: the spot face is shown by a thin circle or a pair of short lines round the hole where the surface is machined flat to give the bolt head or washer a true seating, with a note giving its diameter and depth, for example SF DIA 24 x 1 mm deep.\n\nThe note 2 x DIA 12 means two holes, each 12 mm in diameter: the x is read as 'off' or 'number of'. Notes of this kind are used because the same dimension applies to more than one feature, and stating it once keeps the drawing clean and prevents the same figure being written twice and possibly written differently.",
+        "markScheme": [
+          "1 mark for the chamfer shown as a short 45-degree line with its size, such as 10 x 45 degrees.",
+          "1 mark for the fillet radius shown as an arc with an R callout (for example R6).",
+          "1 mark for the tapped hole convention: thick circle for the major diameter and a thin broken circle for the minor diameter, with a thread callout.",
+          "1 mark for the spot face shown by a thin circle or short lines with an SF note giving its diameter and depth.",
+          "1 mark for the meaning of 2 x DIA 12: two holes of 12 mm diameter.",
+          "1 mark for the reason: the same dimension applies to more than one feature, so it is given once to keep the drawing clean and consistent.",
+          "Total 6 marks."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "For one bracket: (i) calculate the volume of the base plate and the mass of material it removes when the two DIA 12 mm holes are drilled; (ii) calculate the net mass of the base plate; (iii) calculate the mass of the gusset plate; (iv) calculate the mass of steel needed for 24 brackets, ignoring the weld metal; and (v) calculate the total length of 6 mm fillet weld required for the 24 brackets, given that the gusset sides and base measure 100 mm, 80 mm and 100 mm.",
+        "marks": 11,
+        "commandWords": [
+          "Calculate",
+          "State"
+        ],
+        "modelAnswer": "(i) Base plate volume = 120 x 80 x 10 = 96 000 cubic millimetres = 96 cubic centimetres = 0.000 096 cubic metres.\nTwo holes DIA 12 mm through 10 mm: volume of one hole = pi/4 x 12 squared x 10 = 1 131 cubic millimetres, so two holes remove 2 262 cubic millimetres, that is 2.262 cubic centimetres.\nMass removed = 2.262 x 7.85 = 17.8 g.\n\n(ii) Mass of the plate before drilling = 96 x 7.85 = 753.6 g. Net mass = 753.6 - 17.8 = 735.8 g, say 0.736 kg.\n\n(iii) Gusset volume = 100 x 80 x 10 = 80 000 cubic millimetres = 80 cubic centimetres. Mass = 80 x 7.85 = 628 g = 0.628 kg.\n\n(iv) Mass of one bracket = 0.736 + 0.628 = 1.364 kg. For 24 brackets: 24 x 1.364 = 32.7 kg of steel (about 33 kg, before any allowance for cutting waste).\n\n(v) Weld length for one side of the gusset = 100 + 80 + 100 = 280 mm. Welded on both sides, one bracket needs 2 x 280 = 560 mm of fillet weld. For 24 brackets: 24 x 560 = 13 440 mm = 13.44 m of 6 mm fillet weld, and the welding consumable order would be based on that figure.",
+        "markScheme": [
+          "(i) 1 mark for the base plate volume 96 000 cubic millimetres (or 96 cubic centimetres), and 1 mark for the correct mass of the two holes, 17.8 g.",
+          "1 mark for the plate mass 753.6 g (0.754 kg) using 7.85 g per cubic centimetre.",
+          "(ii) 1 mark for subtracting the holes to give 735.8 g (0.736 kg).",
+          "(iii) 1 mark for the gusset volume 80 000 cubic millimetres, and 1 mark for its mass 628 g (0.628 kg).",
+          "(iv) 1 mark for the mass of one bracket, 1.364 kg, and 1 mark for 32.7 kg for 24 brackets.",
+          "(v) 1 mark for the weld length of one side, 280 mm, and 1 mark for doubling it to 560 mm for both sides.",
+          "1 mark for the total 13.44 m of weld for 24 brackets.",
+          "Award the method marks where the working is shown even if the arithmetic slips; accept answers rounded to two decimal places of a kilogram or a metre.",
+          "Total 11 marks."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Describe, in the correct order, the steps you would take to produce the detail drawing of one bracket at 1:2, ready to be issued to the fabricator.",
+        "marks": 8,
+        "commandWords": [
+          "Describe",
+          "State"
+        ],
+        "modelAnswer": "1. Set out the sheet: draw the border and the title block, and decide on a 1:2 scale so that the 120 mm plate draws 60 mm and the drawing sits comfortably beside a second view and the weld symbols.\n2. Draw the centre lines: the vertical centre line of the gusset and the horizontal centre line of the base plate, as thin dash-dot lines.\n3. Draw the base plate outline at 120 mm x 80 mm (60 mm x 40 mm on the paper), then add the 10 mm thickness in the second view so the plate is shown in two views.\n4. Draw the gusset plate 100 mm x 80 mm x 10 mm standing on the base plate, and show the corner where it is welded.\n5. Draw the two DIA 12 mm holes on the centre line, each as a circle with a thin centre line through it, and note them as 2 x DIA 12.\n6. Add the welding symbols: an arrow to each welded joint, the reference line, the 6 mm fillet triangle on each side of the line with its size to the left, and the tail carrying the process note.\n7. Dimension the drawing: chain dimensions for the hole centres and the edge distances, overall dimensions for the plate and the gusset, and the material note ('mild steel, 10 mm plate').\n8. Hatch the cut section if a section is used, add the finish or paint note, check the line weights and the arithmetic, erase the construction lines and complete the title block before issuing the drawing to the fabricator.",
+        "markScheme": [
+          "1 mark for the sheet setup: border, title block and the 1:2 scale.",
+          "1 mark for the centre lines drawn before the outlines.",
+          "1 mark for the base plate outline and its thickness in the second view.",
+          "1 mark for the gusset plate in position on the base plate.",
+          "1 mark for the two DIA 12 mm holes, correctly noted as 2 x DIA 12.",
+          "1 mark for the welding symbols: arrow, reference line, the 6 mm fillet triangle on each side with its size.",
+          "1 mark for the dimensions: hole centres and edge distances as a chain, with overall sizes.",
+          "1 mark for the material note, hatching, line-weight check and completed title block before issue.",
+          "Maximum 8 marks for the operations given in the correct drawing order.",
+          "Total 8 marks."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Describe how the fabricator would verify one finished bracket against this drawing, and state the two features that must be checked on every bracket of the order.",
+        "marks": 5,
+        "commandWords": [
+          "Describe",
+          "State"
+        ],
+        "modelAnswer": "Verification, in the order the checks would be made: measure the plate thickness and the two overall sizes with a steel rule, then check the hole positions from the edge of the plate rather than from each other, so that one wrong hole cannot hide behind another. Check the hole diameter with a vernier or a plug gauge and check the edge distance of each hole. Check the gusset for squareness with a try square, so that the bracket stands vertically once it is loaded, and check its position on the base plate against the drawing. Measure the 6 mm fillet weld leg with a weld gauge (a 6 mm leg gives a throat thickness of about 4.2 mm) and look along each weld to confirm it runs the full length of the joint without undercut or porosity. Finally compare the finished bracket with the drawing and the note before it is painted, and record the check.\n\nThe two features that must be checked on every bracket are the gusset's squareness to the base plate and the size of the fillet weld: the plate sizes and hole positions can be checked on the first bracket and by sample, but a bracket welded out of square or under-welded will fail in service, and the fault cannot be seen once the rack is loaded.",
+        "markScheme": [
+          "1 mark for measuring the plate thickness and overall sizes.",
+          "1 mark for checking the hole positions from the plate edge, and the diameter.",
+          "1 mark for checking the gusset for squareness with a try square.",
+          "1 mark for checking the fillet weld size with a weld gauge, and its length along the joint.",
+          "1 mark for naming the two per-bracket features: gusset squareness and weld size (accept weld length instead of weld size if clearly justified).",
+          "Total 5 marks."
+        ]
+      }
+    ]
+  }
+]
