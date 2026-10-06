@@ -1,0 +1,388 @@
+[
+  {
+    "id": "edpm-p2-01",
+    "type": "write",
+    "paper": 2,
+    "section": "Question 1",
+    "title": "Letterhead, blocked letter, mail merge and envelopes",
+    "topic": "edpm-l3-1",
+    "commandWords": [
+      "State",
+      "Describe",
+      "Identify",
+      "Arrange",
+      "Explain"
+    ],
+    "marks": 30,
+    "suggestedMinutes": 33,
+    "source": "The Caribbean Artisans' Cooperative Council (CACC) is holding its annual general meeting in Kingston. The administrative officer has to send the same letter to the president of each of the six member chapters.\n\nMANUSCRIPT OF THE LETTER\nThe Council is pleased to invite you to the annual general meeting to be held at the Jamaica Conference Centre on Friday 14 November. Registration begins at 8:30 a.m. and the meeting starts at 9:00 a.m.\n\nThe draft programme, the minutes of the last meeting and the treasurer's report are attached. Please confirm your attendance by 7 November to the Secretariat at 14 Hope Rd, Kingston 10, or by email to secretariat@cacc.example.\n\nBy copy of this letter the other five chapter presidents are being informed of the arrangements. We look forward to welcoming you to Kingston.\n\nThe letter ends with the complimentary close and the signature block of Ms Merilyn Kwanza, Administrative Officer.\n\nDATA FILE OF CHAPTER PRESIDENTS (as received, not in order)\nJamaica - Mr Delroy Whyte, 14 Hope Road, Kingston 10\nTrinidad and Tobago - Ms Rhonda Baptiste, 82 Abercromby Street, Port of Spain\nBarbados - Mrs Yvette Alleyne, 3 Fontabelle Road, Bridgetown BB11000\nBelize - Mr Kevin Usher, 27 Freetown Road, Belize City\nGrenada - Ms Ann-Marie Charles, 11 Melville Street, St George's\nGuyana - Mr Ramesh Seepersaud, 64 Brickdam, Georgetown\n\nINSTRUCTIONS GIVEN TO THE OFFICER\n1. Design a letterhead for the Council with a suitable logo, then type the letter in blocked style on A4 paper.\n2. Use Times New Roman 12 pt, single line spacing and 1 inch (2.54 cm) margins on all four sides.\n3. Merge the letter with the data file so that each president receives a personalised letter, and print one copy for each chapter.\n4. Produce an envelope for every chapter and arrange the envelopes in alphabetical order of the country names.\n5. Expand every abbreviated word except 'Ms' and 'Rd' where the abbreviation is part of a proper address.\n6. Save the main document as 'CACC Letter', the data file as 'Chapter Heads' and the merged letters as 'AGM Letters'.",
+    "prompt": "Answer ALL parts in writing. EDPM Paper 02 is a practical production test taken at the computer; this question asks you to describe the production step by step so that you can plan it, rehearse it, and check your plan against the model answer and mark scheme. Say what you would do and in what order.",
+    "planningHints": [
+      "A mail merge always needs two files: the main document (the letter, with the merge fields in place) and the data source (the names and addresses). The merged letters are the output.",
+      "Instructions that name a file are marking points in their own right: give the exact file names you were told to use, and say which document each name belongs to.",
+      "When you are asked to arrange a list, write the list out in the order asked for, not in the order it was given to you.",
+      "Margins, font, size, spacing and paper size are all production instructions, so each one is worth a mark - mention every one of them.",
+      "An envelope carries the recipient's address in the same form as the letter, with the return address in the top left corner and no punctuation errors."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "State the TWO files that a mail merge requires, and state the purpose of EACH.",
+        "marks": 5,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "1. The main document. This is the letter itself, typed once with the special merge fields (such as <<Title>>, <<Surname>>, <<Address>>, <<Country>>) left in place where the personal details are to appear. It supplies the fixed wording, the letterhead and the layout that every letter will share.\n2. The data source, also called the data file or the list of recipients. This holds the information to be merged - one record for each chapter president, with a field for the title, the first name or initial, the surname and the address lines, including the country. It supplies the variable information that makes each copy of the letter different.\n(The output, the merged letters, is produced from these two files and is not one of the files that the merge itself requires.)",
+        "markScheme": [
+          "1 mark for naming the main document and 1 mark for stating its purpose (it is the letter with the merge fields, holding the fixed text, letterhead and layout).",
+          "1 mark for naming the data source (data file / list of recipients) and 1 mark for stating its purpose (it holds one record of field values for each recipient, the information that changes from letter to letter).",
+          "1 mark for making clear that the merged letters are the OUTPUT of the merge, or for naming a correct example of a merge field, or for stating that each record produces one personalised letter.",
+          "Accept 'main document' / 'form letter' and 'data source' / 'data file' / 'list' / 'recipient list'. Do not accept 'the envelope' or 'the letterhead' as one of the two files."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Describe, step by step, how you would create the letterhead and produce the personalised letters for the six chapters, using the manuscript and the data file given. Include the production instructions in your answer.",
+        "marks": 14,
+        "commandWords": [
+          "Describe"
+        ],
+        "modelAnswer": "Step 1. Open the word processor and set up the page: A4 paper, portrait orientation, margins of 1 inch (2.54 cm) at the top, bottom, left and right, Times New Roman 12 pt and single line spacing.\nStep 2. Create the letterhead at the top of the page: type the name of the Council in a larger, bold font and centre it, add the address and the email address beneath it, and insert a suitable logo (the Council's crest or a craft symbol) - for example by inserting a picture and wrapping the text around it, or by placing the logo in a table cell beside the name.\nStep 3. Type the letter in blocked style, which means every line of the inside address, the date and the closing begins at the left margin with no indentation: the date, then the inside address, then the salutation, the body, the complimentary close and the signature block.\nStep 4. Type the body of the letter from the manuscript, leaving the personal details out because they will come from the data file: write <<Title>> <<Surname>> in the salutation and put the country placeholders in the inside address. Check the spelling and the punctuation as you go, because uncorrected errors are heavily penalised.\nStep 5. Expand the abbreviated words as instructed: 'Assn' becomes 'Association' and 'No' becomes 'Number'. Leave 'Ms' and the 'Rd' in the address as they are, because the instruction excepts them.\nStep 6. Create the data file: open a table or a spreadsheet, type the field names in the first row (Title, First Name, Surname, Street, Town or City, Country) and then one record for each of the six chapters, using the details in the case study. Save the data file as 'Chapter Heads'.\nStep 7. Save the letter as 'CACC Letter', then start the mail merge from the main document: choose the mailings or merge command, select 'use an existing list' and open 'Chapter Heads' as the data source.\nStep 8. Insert the merge fields into the letter where the personal details belong - for example the inside address block and the salutation - and preview the merge with the first record to check that every field lands in the right place and that there are no empty or doubled lines. Use the suppress blank lines option if a chapter has no second address line.\nStep 9. Complete the merge and produce the letters: the six records in the data file will produce six letters, one greeted to each chapter's president. Save the merged letters as 'AGM Letters', and print one copy for each chapter plus the copies for the Council's file.\nStep 10. Proofread the merged output on screen before printing: check that the names are spelled correctly, that the country in each inside address matches the chapter, and that the date, the venue and the reply date in the fixed text are correct.",
+        "markScheme": [
+          "1 mark for each correct production instruction carried into the answer: A4 paper, portrait orientation, 1 inch (2.54 cm) margins on all four sides, Times New Roman 12 pt, single line spacing (maximum 5 marks).",
+          "1 mark for creating the letterhead: the Council's name and address typed at the top with an appropriate logo inserted (and, for a further mark, the way the logo is placed or the name formatted in a larger, bold or centred font) (maximum 2 marks).",
+          "1 mark for typing the letter in blocked style, plus 1 mark for correctly stating what blocked style means - every line begins at the left margin, with no indentation of paragraphs or address lines (maximum 2 marks).",
+          "1 mark for creating the data file with the field names and one record per chapter, and 1 mark for saving it with the exact name 'Chapter Heads' (maximum 2 marks).",
+          "1 mark for saving the letter as 'CACC Letter' and 1 mark for saving the merged output as 'AGM Letters' (maximum 2 marks).",
+          "1 mark for starting the merge from the main document and selecting the saved data source, 1 mark for inserting the merge fields in the inside address and the salutation, and 1 mark for previewing the merge with the first record before completing it (maximum 3 marks).",
+          "1 mark for expanding 'Assn' to 'Association' and 'No' to 'Number', and 1 mark for correctly leaving 'Ms' and the 'Rd' in the address unexpanded, as the instruction excepts them (maximum 2 marks).",
+          "1 mark for proofreading the merged letters before printing (or for using the spell check on the finished letter), and 1 mark for producing one letter for each of the six chapters (maximum 2 marks).",
+          "Maximum 14 marks. A candidate who describes a mail merge in general without creating the letterhead, naming the two files or mentioning the production instructions cannot reach the top band: the instructions in the case study are themselves mark-earning."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "The instructions require an envelope for each chapter, arranged in alphabetical order of the country names. Write out the order in which the six envelopes must be arranged, and state how many letters and how many envelopes the mail merge will produce.",
+        "marks": 6,
+        "commandWords": [
+          "Arrange",
+          "State"
+        ],
+        "modelAnswer": "Order of the envelopes (alphabetical order of the country names):\n1. Barbados - Mrs Yvette Alleyne, 3 Fontabelle Road, Bridgetown BB11000\n2. Belize - Mr Kevin Usher, 27 Freetown Road, Belize City\n3. Grenada - Ms Ann-Marie Charles, 11 Melville Street, St George's\n4. Guyana - Mr Ramesh Seepersaud, 64 Brickdam, Georgetown\n5. Jamaica - Mr Delroy Whyte, 14 Hope Road, Kingston 10\n6. Trinidad and Tobago - Ms Rhonda Baptiste, 82 Abercromby Street, Port of Spain\n\nNumber produced: the data file holds six records, so the merge produces six personalised letters and six envelopes - one letter and one envelope for each member chapter. The case study lists the chapters out of order, so the sort has to be done as part of the job; the envelopes are then printed in the same order as the sorted list above, and the copies for the other five presidents are indicated in the letter as being sent by copy.",
+        "markScheme": [
+          "1 mark for each country placed in the correct position in the alphabetical order, awarded as a whole only if all six are in the correct order: Barbados, Belize, Grenada, Guyana, Jamaica, Trinidad and Tobago (3 marks).",
+          "3 marks for stating that the merge produces six letters and six envelopes (award 2 marks if only one of the two counts is given, 1 mark if the candidate states only that it produces one letter and envelope per record without giving the number six).",
+          "Do not award the arranging marks if the candidate writes the countries in the order given in the case study, or sorts them by the presidents' surnames instead of by country."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Explain ONE reason why a mail merge is better than typing the six letters separately, and ONE risk that the Council must guard against when using the merged letters.",
+        "marks": 5,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "1. Speed and accuracy. The letter is typed, checked and laid out only once, and the personal details are inserted from the data file, so six letters take a fraction of the time that typing them separately would take. Because the fixed text is typed once, it cannot be worded or punctuated differently in one letter, and the same letterhead, margins and font are used for every chapter, which gives the Council a consistent, professional image.\n2. The risk of a data error being repeated. If the data file is wrong or incomplete - a misspelled surname, a missing second address line or a wrong country - the mistake appears in every merged letter (or in a letter with a missing line), and the Council looks careless to all six chapters at once. The data file must therefore be checked and proofread before the merge, and the merge must be previewed to make sure that no letter is addressed to the wrong person. There is also a confidentiality risk: the letters carry the names and addresses of every chapter, so they must not be printed with the data file or the merge fields visible, and the copies must not be sent to the wrong address.",
+        "markScheme": [
+          "1 mark for naming a valid advantage and up to 2 further marks for the explanation of it (3 marks maximum): the fixed text is typed once so there is less typing and less chance of inconsistency between letters; the personal details come from a checked data file so they are accurate; the letters are produced quickly; every letter shares the same letterhead, font and layout, which looks professional; the data file can be reused for later mailings, for example the minutes or the next invitation.",
+          "1 mark for naming a valid risk and 1 mark for explaining it (2 marks maximum): an error in the data file is repeated in every letter; a missing field leaves a blank line or an incorrectly addressed letter; the merge may send a letter to the wrong recipient; the merged output can expose the whole list of addresses if it is printed with the merge fields or the data file showing; names or addresses can be sorted or merged in the wrong order.",
+          "Do not accept a general statement such as 'the computer is faster' unless it is tied to the merge - the marks are for the advantage and the risk of mail merging in this office task."
+        ]
+      }
+    ],
+    "examinerTips": "The instructions in the case study are the mark scheme in disguise: paper size, orientation, margins, font, size, spacing, blocked style, the three file names, the expanded abbreviations and the alphabetical order of the envelopes are each worth marks, and a candidate who ignores them cannot reach the top band. Write the two files of a merge as main document and data source - the merged letters are the output. When a question asks you to arrange a list, produce the list; when it asks for a count, give the number (six records produce six letters and six envelopes)."
+  },
+  {
+    "id": "edpm-p2-02",
+    "type": "write",
+    "paper": 2,
+    "section": "Question 2",
+    "title": "Spreadsheet for the outlet performance table",
+    "topic": "edpm-l4-2",
+    "commandWords": [
+      "State",
+      "Write",
+      "Describe",
+      "Sort",
+      "Calculate",
+      "Comment"
+    ],
+    "marks": 30,
+    "suggestedMinutes": 32,
+    "source": "Island Breeze Ice Cream Parlours owns six outlets. The accounts clerk has typed the sales and the expenditure of each outlet for the two half-years of the year (in Jamaican dollars) and must now complete the table and chart it. The data occupy rows 4 to 9 of the sheet, with the headings in rows 1 to 3; the outlet names are in column A and the average profit is to be placed in column K.\n\nOUTLET PERFORMANCE FOR THE YEAR\nOutlet | Sales Jan-Jun | Sales Jul-Dec | Total Sales | Expenditure Jan-Jun | Expenditure Jul-Dec | Total Expenditure | Profit Jan-Jun | Profit Jul-Dec | Total Profit | Average Profit\nOcho Rios | 412,500.00 | 386,200.00 | 798,700.00 | 268,300.00 | 251,900.00 | 520,200.00 | 144,200.00 | 134,300.00 | 278,500.00 | 139,250.00\nMontego Bay | 528,400.00 | 501,750.00 | 1,030,150.00 | 341,600.00 | 318,240.00 | 659,840.00 | 186,800.00 | 183,510.00 | 370,310.00 | 185,155.00\nNegril | 356,900.00 | 401,300.00 | 758,200.00 | 240,150.00 | 262,780.00 | 502,930.00 | 116,750.00 | 138,520.00 | 255,270.00 | 127,635.00\nPortmore | 298,600.00 | 311,450.00 | 610,050.00 | 205,300.00 | 214,890.00 | 420,190.00 | 93,300.00 | 96,560.00 | 189,860.00 | 94,930.00\nSpanish Town | 274,150.00 | 289,900.00 | 564,050.00 | 198,700.00 | 205,600.00 | 404,300.00 | 75,450.00 | 84,300.00 | 159,750.00 | 79,875.00\nMay Pen | 331,200.00 | 305,800.00 | 637,000.00 | 226,400.00 | 212,650.00 | 439,050.00 | 104,800.00 | 93,150.00 | 197,950.00 | 98,975.00\n\nINSTRUCTIONS GIVEN TO THE CLERK\n1. Type the table in landscape orientation, using Times New Roman 12 pt, and save the document as 'Outlet Performance'.\n2. Calculate the total sales, the total expenditure and the total profit for each outlet, and the average profit of each outlet over the two half-years.\n3. Format every figure to two decimal places.\n4. Change the column width to 20 for all the cells in the range B4:K9, and the row height to 25 for the cells in the range A4:A9.\n5. Arrange the table from lowest to highest on the average profit.\n6. Create a chart of the average profits, give the chart a title, show the data labels, and move the chart to a new worksheet named 'Chart1'.\n7. Copy the formulas for the whole table into a word-processed document and save that document as 'Outlet Performance1'.",
+    "prompt": "Answer ALL parts in writing. EDPM Paper 02 is a practical production test taken at the computer; this question asks you to write out the formulas and describe the production steps in order, so that you can rehearse the job and check your work against the model answer and mark scheme. Give the formulas exactly as they would be typed into the cells.",
+    "planningHints": [
+      "Name the cells before you write a formula: the first outlet's sales are in row 4, so the total sales for that outlet is the sum of the two sales cells in its row, and the range of a column runs from row 4 to row 9.",
+      "Total profit is total sales less total expenditure for that outlet - do not add the two half-year profit figures together without checking that they are already sales less expenditure.",
+      "An average of two half-years is the total profit divided by two, so the average formula can refer to the total profit cell.",
+      "Every formula is written once and then filled or copied down the column; the cell references must adjust as you copy, so use relative references unless you were told otherwise.",
+      "Writing out the order of the outlets after the sort is part of the answer: the instruction says from lowest to highest."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "State what is meant by a cell reference and give ONE example from the table, state the name of the function used to add up a range of figures and the name of the function used to find an average, and state what is meant by landscape orientation.",
+        "marks": 5,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "1. A cell reference (or cell address) is the name that identifies one particular cell on a worksheet by its column letter and its row number, for example C4 - column C, row 4. Using the reference in a formula tells the software which cell to read the figure from. In this table, F4 would be the total sales of the outlet in row 4.\n2. The function used to add up a range of figures is SUM, written for example as =SUM(B4:C4). The function used to find an average is AVERAGE, written for example as =AVERAGE(B4:C4); it adds the figures in the range and divides by the number of them.\n3. Landscape orientation means that the page is set up so that it is wider than it is tall - the paper is turned on its side, and the text runs across the long edge. It is used here because the table has many columns, so more of the table fits across the width of one page.",
+        "markScheme": [
+          "1 mark for stating that a cell reference identifies a cell by its column letter and row number, and 1 mark for a correct example from the table (for example C4, B4:K9, K4) or for identifying a cell's contents correctly (maximum 2 marks).",
+          "1 mark for SUM and 1 mark for AVERAGE; a correct example formula counts as naming the function (maximum 2 marks).",
+          "1 mark for stating that landscape orientation turns the page so that it is wider than it is tall (or that the text is printed across the long edge of the paper).",
+          "Do not accept 'COUNT' or 'MAX' as the function for adding a range, and do not accept a cell reference written without its column letter."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Write out the formulas or functions you would type into the first outlet's row (row 4) to calculate the total sales, the total expenditure, the total profit and the average profit, and describe how you would complete the table, format it and arrange it as instructed.",
+        "marks": 14,
+        "commandWords": [
+          "Write",
+          "Describe",
+          "Sort"
+        ],
+        "modelAnswer": "The columns of the first outlet's row, row 4, hold: B = sales January to June, C = sales July to December, D = total sales, E = expenditure January to June, F = expenditure July to December, G = total expenditure, H = profit January to June, I = profit July to December, J = total profit and K = average profit.\n\nTotal sales, cell D4: =SUM(B4:C4) or =B4+C4\nTotal expenditure, cell G4: =SUM(E4:F4)\nProfit for January to June, cell H4: =B4-E4\nProfit for July to December, cell I4: =C4-F4\nTotal profit, cell J4: =H4+I4 (or =D4-G4, which must give the same answer)\nAverage profit, cell K4: =J4/2 (or =AVERAGE(H4:I4))\n\nCompleting the table: with the first row's formulas in place, select the cells H4:K4 and use the fill handle (drag the small square at the bottom right corner of the selection) down to row 9, or copy the range and paste it into the rows below; the relative references adjust row by row, so each outlet is calculated from its own figures. Check one row by hand - for example that the profit in a row equals its sales less its expenditure.\n\nFormatting: select the whole range of figures and apply the number format with two decimal places (Format Cells, Number, 2 decimal places, or the 'increase decimal' button until two places show).\n\nColumn widths and row heights: select B4:K9 and set the column width to 20; select A4:A9 and set the row height to 25. Setting the width and the height makes the figures readable and keeps the rows even so that the printed table can be read across.\n\nSorting: select the whole table (all its columns, with the headings) and use the sort command on the average profit column, ascending, so that the outlet with the lowest average profit comes first and the one with the highest average profit last. The order becomes:\n1. Spanish Town - average profit 79,875.00\n2. Portmore - average profit 94,930.00\n3. May Pen - average profit 98,975.00\n4. Negril - average profit 127,635.00\n5. Ocho Rios - average profit 139,250.00\n6. Montego Bay - average profit 185,155.00\n\nSave the document as 'Outlet Performance'.",
+        "markScheme": [
+          "1 mark for =SUM(B4:C4) or the equivalent addition for the total sales, and 1 mark for the matching function for the total expenditure in G (maximum 2 marks).",
+          "1 mark for the profit formula =B4-E4 (sales less expenditure) and 1 mark for the second half-year profit =C4-F4 (maximum 2 marks).",
+          "1 mark for the total profit formula =H4+I4 or =D4-G4, and 1 mark for the average profit =J4/2 or =AVERAGE(H4:I4) (maximum 2 marks).",
+          "1 mark for filling or copying the formulas down to row 9 (the fill handle or copy and paste), and 1 mark for saying that the cell references adjust as the formulas are copied (maximum 2 marks).",
+          "1 mark for formatting all the figures to two decimal places and 1 mark for setting the column width to 20 on B4:K9 (accept a description of selecting the range and using Format, Column, Width) (maximum 2 marks).",
+          "1 mark for setting the row height to 25 on A4:A9.",
+          "1 mark for sorting the whole table on the average profit column in ascending order (lowest first) with the headings included, and 1 mark for writing out the sorted order correctly: Spanish Town, Portmore, May Pen, Negril, Ocho Rios, Montego Bay (maximum 2 marks).",
+          "1 mark for saving the document with the exact name 'Outlet Performance'.",
+          "Maximum 14 marks. Award no formula marks for a formula that uses a fixed figure instead of a cell reference (for example =412500+386200); the marks are for using the cells so that the formulas can be copied."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Describe how you would create and place the chart of the average profits, and how you would transfer the formulas to the word-processed document required by the instructions.",
+        "marks": 6,
+        "commandWords": [
+          "Describe"
+        ],
+        "modelAnswer": "1. Select the outlet names in column A and the average profits in column K (select A4:A9, then hold the control key and select K4:K9), then insert a chart - a column or bar chart is the clearest way to compare the average profit of the six outlets. Add a chart title that says what the chart shows, for example 'Average Profit by Outlet', and switch on the data labels so that each bar is labelled with its figure. Name the horizontal axis 'Outlet' and the vertical axis 'Average Profit (J$)', and show the legend if the chart has more than one series.\n2. Move the chart so that it sits on its own worksheet: right-click the chart (or use Chart Tools, Design) and choose 'Move Chart', then select 'New sheet' and type the name 'Chart1' - the chart then occupies a complete worksheet of its own. Save the workbook again as 'Outlet Performance'.\n3. Transfer the formulas to the word-processed document: select the range holding the table with its formulas (or the sheet showing the formulas - use the option to show the formulas instead of the results if the instructions ask for the formulas), copy it, open the word processor, and use Paste Special with the 'Formatted Text (RTF)' or 'Picture' option so that the table keeps its rows and columns. Type a heading such as 'Island Breeze Ice Cream Parlours - Formulas used in the Outlet Performance table', check that every formula has copied in full, and save the document as 'Outlet Performance1'.",
+        "markScheme": [
+          "1 mark for selecting the outlet names with the average profit figures (the correct ranges or the equivalent selection).",
+          "1 mark for choosing a suitable chart type for comparing outlets (column, bar or line), 1 mark for giving the chart a title and 1 mark for switching on the data labels (maximum 3 marks).",
+          "1 mark for moving the chart to a NEW worksheet named exactly 'Chart1'.",
+          "1 mark for copying the table or the formulas into the word-processed document with a paste option that keeps the table's rows and columns, and 1 mark for saving the document with the exact name 'Outlet Performance1' (maximum 2 marks).",
+          "Maximum 6 marks. Do not award the chart marks for a chart that is left on the same sheet as the table when the instruction asks for a new worksheet, and do not accept a pie chart, which does not show six outlets' averages clearly."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "State the outlet with the highest average profit and its average profit figure, state the mean of the six average profits, and state how much more the highest average profit is than that mean. Comment in ONE sentence on what the figures tell management.",
+        "marks": 5,
+        "commandWords": [
+          "State",
+          "Comment"
+        ],
+        "modelAnswer": "Highest average profit: Montego Bay, with an average profit of $185,155.00 over the two half-years.\nMean of the six average profits: $120,970.00 (the six averages add up to $725,820.00, divided by six).\nDifference: $185,155.00 - $120,970.00 = $64,185.00, so Montego Bay's average profit is $64,185.00 above the average of all six outlets.\nComment: Montego Bay is the strongest outlet by a wide margin while Spanish Town is the weakest, so management should find out what Montego Bay is doing differently - its sales are the highest and its expenditure is well controlled - and apply those practices to the outlets at the bottom of the list before deciding on any down-sizing. The total profit of the six outlets for the year is $1,451,640.00.",
+        "markScheme": [
+          "1 mark for stating Montego Bay, and 1 mark for its average profit of $185,155.00 (accept the figure to two decimal places as in the table).",
+          "1 mark for the mean of the six averages, $120,970.00 (accept a description of the method: the six averages added and divided by six).",
+          "1 mark for the difference of $64,185.00.",
+          "1 mark for a valid comment drawn from the figures, for example that Montego Bay is the strongest outlet and Spanish Town the weakest, that the spread between the best and the worst average is large enough to need investigation, or that management should look at the causes of the difference before acting.",
+          "Award the comment mark only where the candidate uses a figure from the table; a comment that could have been written without the figures earns no mark."
+        ]
+      }
+    ],
+    "examinerTips": "This question is marked on the formulas and the instructions, not on the arithmetic alone: a correct answer written as =412500+386200 loses the formula marks because it cannot be copied down the column. Write the cell reference of every figure you use, say which cells the formula goes into, and copy the instructions one by one - landscape, Times New Roman 12 pt, two decimal places, width 20, height 25, the sort order, the chart title, the data labels, the new worksheet named 'Chart1' and the two file names. In part (d) the marks are for the figures: give the outlet, its average, the mean of the six and the difference."
+  },
+  {
+    "id": "edpm-p2-03",
+    "type": "write",
+    "paper": 2,
+    "section": "Question 3",
+    "title": "Presentation on using the internet responsibly",
+    "topic": "edpm-l5-2",
+    "commandWords": [
+      "State",
+      "Describe",
+      "Write",
+      "Explain"
+    ],
+    "marks": 30,
+    "suggestedMinutes": 33,
+    "source": "Hillview High School has asked the office assistant to prepare a presentation called 'Using the Internet Responsibly' for the school assembly. The presentation must have 6 slides: a title slide, a slide on the good uses of the internet, a slide listing the Do's and the Don'ts (4 Do's and 5 Don'ts), a slide with pictures, a slide explaining copyright and trade marks, and a final slide that invites questions.\n\nCONTENT TO BE PLACED ON SLIDE 3 - DO'S AND DON'TS\n\nDo's\n- Respect the privacy of other users, just as you expect your own privacy to be respected.\n- Check where a file, a picture or a piece of information came from before you download or copy it.\n- Credit the owner when you use someone else's work in your own project.\n- Use the internet to help with your schoolwork and to learn new skills.\n\nDon'ts\n- Do not share personal information such as your home address, your telephone number or your password.\n- Do not download apps or files from web sites you do not trust.\n- Do not take part in cyberbullying, and do not forward hurtful messages about anyone.\n- Do not agree to meet anyone you have only ever met online, and do not talk to strangers online.\n- Do not visit web sites with inappropriate content or use the internet to break the law.\n\nCONTENT TO BE PLACED ON SLIDE 5 - COPYRIGHT AND TRADE MARKS\n- Copyright (the (c) symbol) protects original works of authorship, such as photographs, music, books and computer programs, from being copied without the owner's permission.\n- A trade mark (the (tm) symbol) is a word, phrase, symbol or design, or a combination of them, that identifies and distinguishes the goods or services of one business from those of another.\n\nINSTRUCTIONS GIVEN TO THE OFFICE ASSISTANT\n1. Use ONE suitable design (theme) for all 6 slides and keep it consistent.\n2. Bold and centre ALL the headings, and write them in initial capitals.\n3. Use the font Cambria: 44 pt for the heading on the title slide and 38 pt for the text on all the other slides.\n4. Insert a background on at least 2 slides.\n5. Include a SmartArt design on 1 slide.\n6. Use suitable images on at least 3 slides.\n7. Display the information creatively on each slide - a slide made up of long paragraphs will not earn the display marks.\n8. Finish with a slide that invites questions from the audience.\n9. Save the presentation as 'Internet Ethics' and export a copy as a PDF for the principal.",
+    "prompt": "Answer ALL parts in writing. EDPM Paper 02 is a practical production test taken at the computer; this question asks you to plan and describe the production step by step, so that you can rehearse the job and check your plan against the model answer and mark scheme.",
+    "planningHints": [
+      "A presentation is marked on consistency and on the instructions: the same theme for every slide, the font, the sizes, the bold and centred headings and the initial capitals all carry marks.",
+      "The content you are given is meant to be organised, not copied as a paragraph: slide 3 holds 9 short points under two headings, and slide 5 holds two short definitions.",
+      "Say where each required element goes - background, SmartArt, images, the questions slide - and how many slides carry them, because the instructions give minimum numbers.",
+      "Name the file exactly as instructed, and remember that exporting a PDF is a second action from the same presentation, not a different file.",
+      "In the last part you are asked to interpret the two definitions given, so use the wording of the notes but apply it to the school's own materials."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "State what a theme (design template) is and give ONE reason why the same theme must be used on every slide, state ONE advantage of using pictures and graphics on a slide instead of lines of text, and name the view in which all of the slides can be seen at once and re-ordered.",
+        "marks": 5,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "1. A theme (also called a design template) is a ready-made set of design settings - the background, the colour scheme, the fonts and the layout of the placeholders - that is applied to the slides. Using the same theme on every slide is required because it makes the presentation look consistent and professional: the audience is not distracted by a different background or a different style of heading on each slide, and the same colours and positions are used throughout, so the material looks like one presentation rather than a set of unrelated slides.\n2. An advantage of using pictures and graphics is that a picture or a diagram is understood at a glance and is remembered longer than a block of text; the slides stay short and readable, and the audience listens to the speaker instead of reading long paragraphs. Graphics also help to explain and to emphasise a point - for example a photograph of a stolen password screen makes the Do's and Don'ts more convincing than the words alone.\n3. The slide sorter view shows all the slides as thumbnails at once, so the whole presentation can be checked and the slides can be dragged into a different order (the outline view can also be used to check the order of the headings).",
+        "markScheme": [
+          "1 mark for stating that a theme is a ready-made set of design settings (background, colours, fonts, layouts) that can be applied to the slides, and 1 mark for a valid reason for using the same theme throughout - consistency, a professional appearance, no distraction for the audience, or one style of heading and colour throughout (maximum 2 marks).",
+          "1 mark for a valid advantage of graphics over text: understood at a glance, remembered longer, keeps the slide short, holds the audience's attention, illustrates or emphasises the point (accept any one).",
+          "1 mark for naming the slide sorter view (accept 'outline view' only if the candidate also states that the order of the slides or headings can be checked there).",
+          "1 mark for stating that the slides can be seen together and re-ordered in that view.",
+          "Do not accept 'because it looks nice' on its own - the reason must be about consistency, readability or the audience."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Describe, step by step, how you would produce the presentation from the content and the instructions given. Cover the design, the text, the graphics and the saving of the file.",
+        "marks": 14,
+        "commandWords": [
+          "Describe"
+        ],
+        "modelAnswer": "Step 1. Open the presentation software and start a new presentation, then apply ONE suitable theme (design) to it so that all 6 slides will share the same background, colours and layout. Set the slide size to the standard on-screen size for the assembly projector.\nStep 2. Insert the 6 slides and choose the right layout for each one: a title layout for slide 1, a title-and-content layout for slides 2, 3 and 5, a picture layout for slide 4 and a title-only or title-and-content layout for slide 6.\nStep 3. Type the headings in initial capitals - each important word begins with a capital letter - and then format every heading bold and centred (select the heading, press control and B for bold, and use the centre alignment button).\nStep 4. Apply the font: Cambria. Select the title on slide 1 and set it to 44 pt; select the text on slides 2 to 6 and set it to 38 pt. Check that no slide has a different font or size after the content is filled in.\nStep 5. Type the good uses of the internet on slide 2 as short points, and build slide 3 from the content given: a heading, then the 4 Do's under their own sub-heading and the 5 Don'ts under theirs, giving 9 short points on the slide. Use two columns (or two text boxes) so that the Do's and the Don'ts sit side by side, and shorten each point to a few words so that the slide can be read at a glance.\nStep 6. Add the graphics. Insert a suitable background (a picture, a gradient or a texture) on at least 2 slides from the design or background format options, and insert images that relate to the topic on at least 3 slides - for example a photograph of learners using tablets, a locked padlock, and a warning sign. On one slide, include a SmartArt design (for example a two-column list, a cycle or a hierarchy) to present information creatively. Size and position each image so that it does not cover the text.\nStep 7. Build slide 5 from the notes given: write the definition of copyright with the (c) symbol and the definition of a trade mark with the (tm) symbol, each in your own words as far as possible, and add one example of each - for example a photograph for copyright and the school's app name or logo for a trade mark.\nStep 8. Insert the final slide as a questions slide (for example 'Thank You - Any Questions?') with a line inviting the audience to ask questions about using the internet responsibly.\nStep 9. Check the whole presentation in slide sorter view: the theme is the same on every slide, every heading is bold, centred and in initial capitals, the font is Cambria at 44/38 pt, no text runs off the slide, and the spell check has been run so that there are no typing errors.\nStep 10. Save the presentation with the exact name 'Internet Ethics', then export or save a copy as a PDF file for the principal, and (if the presentation is to be shown on another computer) check that the fonts and the images appear correctly.",
+        "markScheme": [
+          "1 mark for applying one theme or design to the whole presentation so that it is consistent, and 1 mark for naming the layout used on each slide (or for matching a suitable layout to the content) (maximum 2 marks).",
+          "1 mark for stating that the headings are bold and centred and 1 mark for stating that they are written in initial capitals (maximum 2 marks).",
+          "1 mark for Cambria, 1 mark for 44 pt on the title slide and 1 mark for 38 pt on the other slides (maximum 3 marks).",
+          "1 mark for building slide 3 from the content given with the Do's and the Don'ts separated, 1 mark for displaying the information in a short, readable form (points, two columns, text boxes) rather than as long paragraphs, and 1 mark for including all 9 points (maximum 3 marks).",
+          "1 mark for inserting a background on at least 2 slides, 1 mark for a SmartArt design on one slide, and 1 mark for images on at least 3 slides that relate to the topic (maximum 3 marks).",
+          "1 mark for slide 5 covering both copyright and trade marks (with the symbols or an example) and 1 mark for the final slide inviting questions (maximum 2 marks).",
+          "1 mark for checking the presentation (slide sorter view, spell check, no text off the slide), 1 mark for saving it with the exact name 'Internet Ethics', and 1 mark for exporting a PDF copy (maximum 3 marks).",
+          "Maximum 14 marks. Deduct from the display marks, not from the rest of the question, where a slide is filled with long paragraphs: creative display is an instruction and is marked as one."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Write the heading you would use for EACH of the 6 slides, in initial capitals, and say on which slides you would place the background, the SmartArt design and the images.",
+        "marks": 6,
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "Slide 1: Using The Internet Responsibly\nSlide 2: Good Uses Of The Internet\nSlide 3: Do's And Don'ts For Safe Internet Use\nSlide 4: Pictures Tell The Story\nSlide 5: Copyright And Trade Marks\nSlide 6: Any Questions?\n\nBackground: on slides 2 and 5 (at least two slides, as instructed), and optionally on all six for consistency - a light background that does not reduce the readability of the text.\nSmartArt: on slide 3, a two-column list or a cycle that separates the Do's from the Don'ts (one slide only, as instructed).\nImages: on slides 2, 3, 4 and 6 - at least three slides - for example a photograph of learners using tablets on slide 2, a padlock or a shield on slide 3, and pictures of copyrighted work on slide 4.",
+        "markScheme": [
+          "1 mark for each slide heading that is suitable for the content of that slide, in initial capitals, up to a maximum of 3 marks.",
+          "1 mark for naming the slides that carry a background (at least two as instructed), 1 mark for placing the SmartArt design on the Do's and Don'ts slide, and 1 mark for naming at least three slides that carry images that relate to the topic (maximum 3 marks).",
+          "Accept any heading that describes the slide's content; do not accept a heading written entirely in block capitals or entirely in lower case, since the instruction is to use initial capitals."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Using the notes on slide 5, explain the difference between copyright and a trade mark, state which of the two protects the photographs used in the presentation and which protects the name of the school's app, and state ONE rule the learners must follow when they use a photograph they found online.",
+        "marks": 5,
+        "commandWords": [
+          "Explain",
+          "State"
+        ],
+        "modelAnswer": "Difference: copyright protects an original work of authorship - the actual material that someone created, such as a photograph, a piece of music, a book or a computer program - and it stops other people from copying, publishing or selling that work without the owner's permission. A trade mark protects a sign of identity in the market place: a word, phrase, symbol, design or a combination of them (often shown with the (tm) symbol) that identifies the goods or services of one business and distinguishes them from those of another. In short, copyright protects the work itself, while a trade mark protects the name or symbol that identifies who the work or the goods come from.\nWhich protects what: the photographs used in the presentation are protected by copyright as original works of authorship; the name (and the logo) of the school's app is protected by a trade mark, because it identifies the app and its owner in the market.\nThe rule for using a photograph found online: do not copy or publish it without the owner's permission - check whether the site states that the picture may be used (and under what conditions), and credit the owner if the picture is used. If no permission can be obtained, take your own photograph or use one that is offered for free use.",
+        "markScheme": [
+          "1 mark for stating that copyright protects an original work of authorship (the material itself) and 1 mark for stating that a trade mark identifies the goods or services of one business and distinguishes them from another's (maximum 2 marks).",
+          "1 mark for stating that the photographs are protected by copyright.",
+          "1 mark for stating that the name of the app is protected by a trade mark (accept trade mark or (tm) symbol).",
+          "1 mark for a correct rule for using an online photograph: do not use it without the owner's permission, check the conditions of use, credit the owner, or take your own photograph instead.",
+          "Do not award the last mark for 'do not steal it' or 'it is against the law' unless the candidate states what the learner must actually do or check before using the picture."
+        ]
+      }
+    ],
+    "examinerTips": "Two things decide the marks here. First, the instructions: consistency of design, bold and centred headings in initial capitals, Cambria at 44/38 pt, a background on at least 2 slides, SmartArt on one slide, images on at least 3 slides, the questions slide and the exact file name. Second, the display: slide 3 must present 9 Do's and Don'ts as short points, not as paragraphs, because creative display is itself one of the marks. Write out the headings when the question asks for them, and in the last part apply the two definitions to the school's own photographs and app name rather than repeating the notes."
+  },
+  {
+    "id": "edpm-p2-04",
+    "type": "write",
+    "paper": 2,
+    "section": "Question 4",
+    "title": "Database of club members, a query, a sort and a report",
+    "topic": "edpm-l5-1",
+    "commandWords": [
+      "State",
+      "Describe",
+      "Name",
+      "Explain"
+    ],
+    "marks": 30,
+    "suggestedMinutes": 32,
+    "source": "The secretary of the Portmore Youth Sports Club keeps the membership register by hand. The register of the eight current members is shown below, with one row for each member. The club wants the register kept in a database so that lists can be produced quickly.\n\nMEMBERSHIP REGISTER\nID Number | First Name | Surname | Date of Birth | Next of Kin | Relationship | Community\n-----------------------------------------------------------------------------------------\n2041 | Alton | Pryce | 14.03.09 | Marcia Pryce | Mother | Portmore\n2042 | Denese | Clarke | 22.07.08 | Vernon Clarke | Father | Portmore\n2043 | Kyle | Bennett | 05.11.09 | Sonia Bennett | Mother | Greater Portmore\n2044 | Rochelle | Grant | 30.01.08 | Owen Grant | Father | Portmore\n2045 | Andre | Simpson | 17.06.09 | Marlene Simpson | Mother | Hellshire\n2046 | Taneisha | White | 09.09.08 | Claudette White | Aunt | Hellshire\n2047 | Devon | Ricketts | 26.04.09 | Paulette Ricketts | Mother | Greater Portmore\n2048 | Shauna | Lee | 13.12.08 | Hubert Lee | Father | Portmore\n\nINSTRUCTIONS GIVEN TO THE SECRETARY\n1. Create a database for the club and save it as 'Club Database'. Left align all the data that you insert.\n2. Set the ID Number field as the primary key.\n3. Save the table as 'Members Table' and insert the details of every member shown in the register.\n4. Create a query that produces a list of the members whose next of kin is their mother. Name the query 'Parents'.\n5. Sort that query in alphabetical order on the Surname field and save it as 'Parents1'.\n6. The club needs a list of the members who live in Portmore. Name this query 'Residents'.\n7. Produce a report of the members and their next of kin, with a title and the date of printing. Save the report as 'Member Data'.",
+    "prompt": "Answer ALL parts in writing. EDPM Paper 02 is a practical production test taken at the computer; this question asks you to design and describe the database work step by step, so that you can rehearse the job and check your plan against the model answer and mark scheme.",
+    "planningHints": [
+      "A database is built in layers, so keep your answer in that order: the database file, the table structure, the records, then the queries, the sort and the report.",
+      "The primary key is the field whose value is unique for every record, so that no two members can be confused - look at which field in the register could never repeat.",
+      "A query asks a question of the data, so your answer must include the criteria you would type, not just the name of the query; the sort and the name of the saved query are separate instructions.",
+      "Name every file and object exactly as you were told: database, table, both queries and the report.",
+      "In the last part a count is required: read the register carefully and give the number, the surnames and the order."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "State what is meant by a field and by a record in a database, state which field in the register should be the primary key and give ONE reason for your choice.",
+        "marks": 5,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "1. A field is one column of the table - one item of information that is kept about every member, with its own name and its own data type. In this register the fields are ID Number, First Name, Surname, Date of Birth, Next of Kin, Relationship and Community.\n2. A record is one complete row of the table - all the information about one member, made up of one value for each field. For example, record 2041 is: 2041, Alton, Pryce, 14.03.09, Marcia Pryce, Mother, Portmore.\n3. The primary key should be the ID Number field, because every member has his or her own number and no two members can share the same one, so a record can be found and identified without confusion even when two members have the same surname or the same next of kin. (The Surname field would not do, because surnames repeat, and the Date of Birth could be shared by two members born on the same day.)",
+        "markScheme": [
+          "1 mark for stating that a field is one column or one item of information about every record, and 1 mark for naming a field from the register as an example (maximum 2 marks).",
+          "1 mark for stating that a record is one complete row of the table or all the information about one member, and 1 mark for an example from the register (maximum 2 marks).",
+          "1 mark for choosing the ID Number field as the primary key and giving a valid reason - its values are unique to each member, or it allows each member to be identified without confusion even when names repeat (award the mark only where the reason is given).",
+          "Do not accept Surname, First Name, Date of Birth or Next of Kin as the primary key: each of them can repeat."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Describe, step by step, how you would create the database and the table, insert the records, and produce and save the two queries as instructed. Include the criteria you would use and the sort you would apply.",
+        "marks": 14,
+        "commandWords": [
+          "Describe"
+        ],
+        "modelAnswer": "Step 1. Open the database software, choose to create a new database in design view, and save the file with the exact name 'Club Database'.\nStep 2. Create a new table and type the field names in the order they appear in the register: ID Number, First Name, Surname, Date of Birth, Next of Kin, Relationship, Community. Give each field a suitable data type - Number for the ID Number, Text (short text) for the names, the next of kin, the relationship and the community, and Date/Time for the Date of Birth so that the dates can be sorted and read correctly.\nStep 3. Set the ID Number field as the primary key: click in the ID Number row and use the Primary Key button (the key symbol appears beside the field name). A primary key cannot be left blank or hold the same value twice, so the software will not accept a duplicate member number.\nStep 4. Save the table with the exact name 'Members Table'. When the software warns that the primary key has been set, confirm it.\nStep 5. Switch to datasheet view and insert the eight records, one row at a time, using the details from the register, then save the table again. Select all the data and left align it as instructed (select the columns or the whole datasheet and choose the left alignment button), and check that no field has been left blank.\nStep 6. Create the first query: choose Create, Query Design, and add the 'Members Table'. Drag down the fields to be shown (ID Number, First Name, Surname, Next of Kin and Relationship), and type the criterion for the Relationship field: \"Mother\" (in quotes in the Criteria row, because the value is text). Run the query to see the list of members whose next of kin is their mother, then save the query with the exact name 'Parents'.\nStep 7. Sort that query in alphabetical order on Surname: add the Surname field to the query and set its Sort row to Ascending (or use the Sort A to Z button on the query result), then run it again and check the order. Save the sorted query with the exact name 'Parents1' (using Save As so that the original query 'Parents' is kept).\nStep 8. Create the second query for the members who live in Portmore: add the 'Members Table', drag down the fields to be shown (ID Number, First Name, Surname and Community) and type the criterion \"Portmore\" in the Criteria row of the Community field. Run the query, check that every record shown lives in Portmore, and save it with the exact name 'Residents'.\nStep 9. Produce the report: with the query or table open, choose Create, Report (or Report Wizard), add a title such as 'Portmore Youth Sports Club - Members and Next of Kin' and include the date of printing, for example by inserting the date field or the function that prints today's date. Arrange the fields in a readable order, check it in print preview, then save the report with the exact name 'Member Data'.",
+        "markScheme": [
+          "1 mark for naming the database with the exact name 'Club Database' and 1 mark for creating the table with the seven field names from the register (maximum 2 marks).",
+          "1 mark for giving the fields suitable data types - Number for ID Number, Text for the names and other text fields, Date/Time for Date of Birth.",
+          "1 mark for setting the ID Number field as the primary key.",
+          "1 mark for saving the table with the exact name 'Members Table' and 1 mark for inserting all eight records (maximum 2 marks).",
+          "1 mark for left aligning the inserted data.",
+          "1 mark for creating the query with the criterion \"Mother\" in the Relationship field and 1 mark for saving it with the exact name 'Parents' (maximum 2 marks).",
+          "1 mark for the ascending sort on the Surname field and 1 mark for saving the sorted query with the exact name 'Parents1' (maximum 2 marks).",
+          "1 mark for the second query using the criterion \"Portmore\" in the Community field and 1 mark for saving it with the exact name 'Residents' (maximum 2 marks).",
+          "1 mark for the report and 1 mark for saving it with the exact name 'Member Data' (maximum 2 marks).",
+          "Maximum 14 marks. A candidate who describes a database in general without the criteria, the sort, or the exact object names cannot reach the top band: the names and the criteria in the instructions are themselves mark-earning."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Describe how you would make the report show how many members are in the club and how you would prepare the report for printing.",
+        "marks": 6,
+        "commandWords": [
+          "Describe"
+        ],
+        "modelAnswer": "1. Counting the members: in the report (or in the report's footer) insert a calculated control that uses the Count function on the ID Number field - for example =Count([ID Number]) - so that the report prints the number of members automatically rather than a figure that has to be typed. The same function can be added to the group footer so that the count is shown for each community if the report is grouped. A total row can also be added in datasheet view using the Totals button.\n2. Preparing the report for printing: open the report in print preview and check that every field is wide enough to show its contents, that no column runs off the page and that the title, the date of printing and the page number appear. Set the page to portrait or landscape depending on the number of fields, set the margins, and use the print options to print all pages (or the pages needed) with the correct number of copies. Save the report again as 'Member Data' so that the layout is kept, and if the principal or the coach needs an electronic copy, export or save it as a PDF.",
+        "markScheme": [
+          "1 mark for using the Count function or a totals control on a field (for example the ID Number) so that the report counts the records automatically.",
+          "1 mark for stating where the count should appear (report footer or group footer) or that the count can be grouped by community.",
+          "1 mark for checking the report in print preview or layout view before printing (fields wide enough, nothing running off the page).",
+          "1 mark for including a title and the date of printing (or page numbers) on the report.",
+          "1 mark for choosing the page orientation and the margins or the number of copies before printing.",
+          "1 mark for saving the report again with its name (or exporting a PDF copy for the coach), so that the finished layout is kept.",
+          "Maximum 6 marks. Do not award the counting mark for typing the number 8 into the report by hand: the report must count the records itself."
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Using the register, state how many members the query 'Parents' will list, name them in the order in which they will appear after the sort, and state how many members live in Portmore.",
+        "marks": 5,
+        "commandWords": [
+          "State"
+        ],
+        "modelAnswer": "The query 'Parents' will list 4 members, because 4 of the 8 members have their mother as next of kin. After the sort in alphabetical order on Surname, they appear in this order:\n1. Kyle Bennett\n2. Alton Pryce\n3. Devon Ricketts\n4. Andre Simpson\n\nMembers who live in Portmore: 4 members - Denese Clarke, Rochelle Grant, Shauna Lee, Alton Pryce.\n\n(The other communities in the register are Greater Portmore, with 2 members, and Hellshire, with 2 members.)",
+        "markScheme": [
+          "1 mark for stating that the query 'Parents' lists 4 members.",
+          "1 mark for the surnames of the 4 members in the correct alphabetical order: Bennett, Pryce, Ricketts, Simpson. (Award the mark only if the order is right; names in the order they appear in the register earn no mark.)",
+          "1 mark for giving the first names or full names of the 4 members correctly.",
+          "1 mark for stating that 4 members live in Portmore.",
+          "1 mark for naming those 4 members (Clarke, Grant, Lee, Pryce).",
+          "A candidate who counts 8 members, or who lists members whose next of kin is a father or an aunt, cannot earn the query marks: the criterion is the Relationship field equal to Mother."
+        ]
+      }
+    ],
+    "examinerTips": "Answer the question in the order the database is built - file, table structure and primary key, records, query with its criterion, sort, report - and name every object exactly as instructed: 'Club Database', 'Members Table', 'Parents', 'Parents1', 'Residents' and 'Member Data'. Two marks are commonly lost here: the criteria are left out of the query description, and the count is typed into the report by hand instead of using the Count function. In the last part give the numbers and the order: 4 mothers' records (Bennett, Pryce, Ricketts, Simpson after the sort) and 4 members living in Portmore."
+  }
+]
