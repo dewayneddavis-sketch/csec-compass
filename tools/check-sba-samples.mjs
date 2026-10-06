@@ -8,7 +8,7 @@
 //   * the completedSample block is structurally complete -- and its category list mirrors
 //     the subject's own Task Breakdown, which is the whole point of the visual guide
 //     (the marks column is tied to the guide only when the guide declares marks as a
-//     NUMBER -- french's guide declares prose for its oral parts, so its sample uses a
+//     NUMBER -- french's and spanish's guides declare prose there, so their samples use a
 //     disclosed practice scale instead; see the note above the tie check),
 //   * every data table is rectangular and every page has real prose,
 //   * the renderer really does protect the sample (user-select none + copy/cut/context
@@ -83,16 +83,17 @@ for (const id of shipped) {
             `${at}: one category row per Task Breakdown entry (${cats.length} vs ${tasks.length})`);
         for (const t of tasks) ok(cats.some((x) => x.section === t), `${at}: category row for "${t}"`);
     }
-    // The Task Breakdown's marks column is not always a NUMBER. French's guide declares
-    // prose there for all three oral parts, e.g. "Marked as part of Paper 03.", because
-    // the oral paper publishes no per-part mark allocation. So the sample's marks may only
-    // be tied to the guide when the guide declares a number; when the guide declares prose,
-    // the sample's marks column is its own disclosed practice scale and the sample copy
-    // says so (french: "On this dossier's own ten-point practice scale (the guide publishes
-    // no per-part mark allocation for the oral)"). Asserting string equality against prose
-    // would demand the sample echo the guide's sentence, which is not a mark at all. The
-    // numeric row checks below (awarded > 0 and <= max) still apply to every row either
-    // way, so no row goes unguarded.
+    // The Task Breakdown's marks column is not always a NUMBER. For the oral paper the
+    // guides declare prose there, with the figures inside the sentence, e.g. french's
+    // "Marked as part of Paper 03: Section II is worth 10 of the paper's 80" (the renderer
+    // appends the unit, so the declaration is never written as a bare number). So the
+    // sample's marks may only be tied to the guide when the guide declares a number; when
+    // the guide declares prose, the sample's marks column is its own disclosed practice
+    // scale and the sample copy says so (french: "On this dossier's own ten-point practice
+    // scale (the guide publishes the paper's own allocation ...)"). Asserting string
+    // equality against prose would demand the sample echo the guide's sentence, which is not
+    // a mark at all. The numeric row checks below (awarded > 0 and <= max) still apply to
+    // every row either way, so no row goes unguarded.
     const declaredMarks = new Map((guide.tasks || []).map((t) => {
         const text = String(t.marks).trim();
         return [t.section, { text, numeric: Number.isFinite(parseInt(text, 10)) }];
