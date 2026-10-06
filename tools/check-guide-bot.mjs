@@ -220,12 +220,22 @@ check(
   `got ${JSON.stringify(subjectMentionedIn("do you have english?"))}`
 );
 if (GUIDE_CITY_GUILDS_COUNT > 0) {
+  // The two City & Guilds subjects are built and merged in separate PRs, so this asserts the
+  // guard for whichever of them the catalog currently lists instead of demanding the pair -
+  // one present, one not, is the normal state between the two merges. The C2 rule itself is
+  // unchanged: a FULL City & Guilds name resolves to that City & Guilds subject, and no C&G
+  // entry may answer for the CSEC subject that shares its distinctive last word.
+  const cgNames = GUIDE_SUBJECT_NAMES.filter((n) => /^city & guilds/i.test(n));
+  const cgQuestion = {
+    "City & Guilds Mathematics": "do you have city & guilds mathematics?",
+    "City & Guilds English": "city and guilds english please",
+  };
   check(
     "the full City & Guilds names resolve to the City & Guilds subjects",
-    subjectMentionedIn("do you have city & guilds mathematics?") === "City & Guilds Mathematics" &&
-      subjectMentionedIn("city and guilds english please") === "City & Guilds English" &&
-      !GUIDE_SUBJECT_NAMES.filter((n) => /^city & guilds/i.test(n)).some((n) => subjectMentionedIn("do you have mathematics?") === n),
-    "the C&G entries must not answer for the CSEC subjects"
+    cgNames.length > 0 &&
+      cgNames.every((n) => cgQuestion[n] && subjectMentionedIn(cgQuestion[n]) === n) &&
+      !cgNames.some((n) => subjectMentionedIn("do you have mathematics?") === n || subjectMentionedIn("do you have english a?") === n),
+    `the C&G entries must not answer for the CSEC subjects (listed: ${cgNames.join(", ") || "none"})`
   );
 }
 check(

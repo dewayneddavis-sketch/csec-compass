@@ -1,0 +1,362 @@
+[
+  {
+    "id": "reading",
+    "title": "Reading",
+    "lessons": [
+      {
+        "id": "main-point-and-detail",
+        "title": "Finding the Main Point & Key Detail",
+        "objectives": [
+          "Find the single main point a passage is built around",
+          "Separate key detail from supporting decoration",
+          "Answer in the words the question actually asks for"
+        ],
+        "concepts": [
+          "Main point: what the writer most wants you to take away, expressible in one sentence.",
+          "Key detail: the fact, figure or example that carries the point, not every fact in the text.",
+          "Distractor detail: true information that is not being asked for."
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Match each short passage to its one-sentence main point, then to the detail that proves it."
+        },
+        "content": "Every reading task starts with the same question: what is this piece mostly about? A notice about a water lock-off, a letter from a landlord, a paragraph about a school's exam results — each one has a centre of gravity. Read it once for the shape, then ask what would be lost if the passage disappeared. That answer is the main point, and it is usually stated near the beginning or the end, not in the middle.\n\nKey detail is where students lose easy marks. A question that asks how much the deposit is wants the figure, not the sentence about the landlord's good character. Train the habit of underlining the question's own key word first — how much, how many, why, when, which person — and then hunting only for that class of information in the text. Everything else in the passage is decoration for this question.\n\nIn this lesson's lab you match four short passages to their main points, then to the detail that proves each point. When you can do that with passages you have never seen, you are ready for the long texts on the reading tasks you will meet in study, work and the assessment itself."
+      },
+      {
+        "id": "skimming-scanning-close-reading",
+        "title": "Skimming, Scanning & Close Reading",
+        "objectives": [
+          "Choose the right reading speed for the task",
+          "Skim for the gist, scan for a known target, read closely for a judgement",
+          "Save close reading for the questions that need evidence"
+        ],
+        "concepts": [
+          "Skimming: a fast pass for the general subject and shape of a text.",
+          "Scanning: hunting for one specific target such as a date, a price or a name.",
+          "Close reading: slow reading of a short section to understand an argument or tone."
+        ],
+        "experiment": {
+          "type": "drag-drop",
+          "description": "Sort a set of questions into skim for this, scan for this, or read closely for this."
+        },
+        "content": "Three speeds, three purposes. Skim when you need to know what a text is about before deciding whether to read it properly — the first two minutes of a hospital appointment card, a school bulletin of six notices. Scan when you already know what you want and only need to find it: the date on the card, the venue in the bulletin. Read closely only when a question asks you to judge, compare or explain, because close reading is expensive and there is rarely time to do it to a whole text.\n\nA practical order that works in Jamaica's schools and workplaces alike: skim the whole text once, read the questions, scan for the answers you can find directly, then close-read only the sections the remaining questions point at. Students who read every text word by word run out of time; students who skim everything miss the questions that require judgement.\n\nThis lesson's lab hands you a mixed set of questions and asks you to sort each one into skim, scan or read closely. The habit you are building is choosing before reading, not reading and then hoping."
+      },
+      {
+        "id": "instructions-notices-and-workplace-texts",
+        "title": "Instructions, Notices & Workplace Texts",
+        "objectives": [
+          "Read procedural text as a sequence of actions",
+          "Find conditions, warnings and exceptions that change the action",
+          "Rewrite unclear instructions so a new colleague can follow them"
+        ],
+        "concepts": [
+          "Procedure: text that tells you what to do and in what order.",
+          "Condition: the words that decide whether a step applies (if, unless, only when).",
+          "Warning: information that prevents damage, injury or a failed job."
+        ],
+        "experiment": {
+          "type": "interactive-pathway",
+          "description": "Order the steps of a written instruction so that it can actually be carried out, then spot the notices that change the answer."
+        },
+        "content": "Instructions, labels, notices and short workplace texts are the reading most adults meet most often, and they are read for action rather than for pleasure. The skill is to convert a paragraph into an ordered list of actions: what is done first, what must be true before a step is attempted, and what happens if it is done out of order. A label that says shake well before opening is not advice, it is a step placed in a sequence.\n\nWatch for the small words that change everything. If the form is signed by a guardian reads differently from sign the form. Unless the meter is flashing means do not touch it, not do it carefully. In workplace texts these conditions carry the safety and the money, and examiners of functional English test exactly this: can you follow written instructions correctly and spot where someone else did not.\n\nThe lab makes you put scrambled steps back into a workable order, which is the same judgement you make when you tell a new colleague how a job is done at your own workplace or in your own kitchen."
+      },
+      {
+        "id": "vocabulary-and-meaning-in-context",
+        "title": "Vocabulary & Meaning in Context",
+        "objectives": [
+          "Use surrounding words to pin down meaning",
+          "Recognise that one word can carry several meanings",
+          "Choose the replacement word that keeps the sentence's sense"
+        ],
+        "concepts": [
+          "Context clue: the words around an unknown word that narrow its meaning.",
+          "Register: the level of formality a word carries in a situation.",
+          "Substitution test: replacing a word to check the meaning you chose works."
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Match each word to the meaning it carries in a given sentence — the same word is used in several contexts."
+        },
+        "content": "Words do not travel alone. In a sentence such as the branch was closed after the storm, close means shut, while in close the door is an instruction and in a close friend it means intimate. A good reader uses the words on either side as the definition: the subject of the sentence, the verb it hangs from, and the purpose of the whole text tell you which sense is in play.\n\nThe substitution test is the fastest way to check yourself. Put your chosen meaning back into the sentence in plain words and see whether the sentence still makes sense: if it does, you have the right sense; if the sentence turns strange, you have borrowed the meaning from a different context. Functional reading tasks and comprehension questions both reward this, because they ask what the writer meant here, not what a dictionary says in general.\n\nIn the lab the same word appears in several sentences and you match each appearance to its meaning, which is the habit that turns a wide vocabulary into accurate reading."
+      },
+      {
+        "id": "fact-opinion-and-persuasion",
+        "title": "Fact, Opinion & Persuasive Language",
+        "objectives": [
+          "Separate checkable statements from judgements",
+          "Name the common persuasive devices used in advertising",
+          "Judge how far a text is trying to move you rather than inform you"
+        ],
+        "concepts": [
+          "Fact: a statement that could be checked and proved or disproved.",
+          "Opinion: a judgement, preference or prediction, however confidently it is written.",
+          "Persuasive device: a technique such as loaded words, a testimonial, urgency or a special offer."
+        ],
+        "experiment": {
+          "type": "drag-drop",
+          "description": "Sort statements from an advertisement and a news paragraph into fact, opinion and persuasive device."
+        },
+        "content": "Distinguishing fact from opinion is not about truth. The statement the bus leaves at six is a fact because it can be checked; the statement the bus service is a disgrace is an opinion, even when everyone agrees with it. Headlines and advertisements deliberately blur the two, dressing a judgement in the grammar of a fact: the best value in Kingston, the only school that cares.\n\nPersuasive devices are the toolkit behind that blur. Loaded words make the reader feel before thinking. Testimonials borrow trust from a person. Urgency — while stocks last, today only — removes the time to think. The special offer makes an expensive thing feel like a saving. Naming the device is the defence, because once you can point at the technique you can decide for yourself how much of the claim to keep.\n\nThe lab sorts real-shaped advertisement and news lines into fact, opinion and device, which is the reading skill behind every consumer decision you make and every evaluation question you will meet."
+      },
+      {
+        "id": "comparing-texts-and-using-evidence",
+        "title": "Comparing Two Texts & Using Evidence",
+        "objectives": [
+          "Read two texts on one subject and state how they differ",
+          "Support every claim with a short quotation",
+          "Explain what a quotation shows rather than dropping it in"
+        ],
+        "concepts": [
+          "Comparison frame: agreement, difference in emphasis, difference in purpose or audience.",
+          "Evidence: the shortest quotation that proves the point.",
+          "Explanation: the sentence that says what the evidence shows."
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Match each claim about two texts to the quotation that evidences it."
+        },
+        "content": "Comparing two texts is a structure, not a feeling. Work through the same few questions for each: what is each one for, who is it written for, what does it say about the subject, and what does it leave out? Two pieces on the same water shortage can agree on the facts and still pull in opposite directions — one written by a utility, one by a residents' association — and the interesting comparison is in the emphasis and the purpose, not in the spelling.\n\nEvidence keeps the comparison honest. A claim such as the second text is angrier is worth nothing until you quote the words that make it so, and explain in your own sentence what those words do. The strongest answers use a short quotation, embedded in the candidate's own sentence, followed by the explanation. Quotations that arrive without explanation are decoration.\n\nThe lab gives you a claim about two texts and asks you to find the quotation that proves it, which is the same point, evidence, explain movement your written answers need."
+      }
+    ]
+  },
+  {
+    "id": "writing",
+    "title": "Writing",
+    "lessons": [
+      {
+        "id": "planning-and-organising-writing",
+        "title": "Planning & Organising Your Writing",
+        "objectives": [
+          "Turn a task into a purpose, an audience and a length",
+          "Choose an order for your points before you write a sentence",
+          "Use a one-minute plan to keep a timed piece on track"
+        ],
+        "concepts": [
+          "Purpose: what the finished piece must do (inform, request, persuade, record).",
+          "Audience: who reads it and what they already know.",
+          "Plan: the headings and the order, decided before drafting."
+        ],
+        "experiment": {
+          "type": "interactive-pathway",
+          "description": "Order the planning stages and the points within one plan, from task to checked draft."
+        },
+        "content": "Most weak writing is weak before a word is written. The plan is where purpose and audience are settled: am I asking for something, explaining something, or arguing for something, and who reads it? A request to a landlord and a complaint to a shop read differently even when the facts match, and knowing that before drafting prevents the rewrite that eats the time allowance.\n\nA one-minute plan is a list of headings in the order you will use them, with one word for the point under each. Order is a decision: chronological for instructions and reports, most important first for letters that ask for action, general to specific for explanations. Once the order exists, the writing is filling in, which is far faster than deciding what to say next while writing it down.\n\nThe lab asks you to put the planning stages back in order and then to order the points inside one plan — the same two decisions that shape a letter to a landlord, a report on a fault at work or a short piece on a school notice."
+      },
+      {
+        "id": "sentences-paragraphs-and-punctuation",
+        "title": "Sentences, Paragraphs & Punctuation",
+        "objectives": [
+          "Keep one main idea in each sentence and in each paragraph",
+          "Use full stops, commas, semicolons and colons to show structure",
+          "Break up the run-on without turning every sentence into a fragment"
+        ],
+        "concepts": [
+          "Sentence boundary: the full stop that separates two complete thoughts.",
+          "Run-on: two sentences joined with only a comma or nothing at all.",
+          "Topic sentence: the first sentence that announces what the paragraph does."
+        ],
+        "experiment": {
+          "type": "drag-drop",
+          "description": "Sort sentences into the punctuation or paragraph problem each one shows, then fix it."
+        },
+        "content": "Punctuation is the reader's map. A run-on sends two ideas across one track, so the reader has to guess where one ended; a comma splice does the same with a polite mark that pretends to be a full stop. Fixing them is not a matter of adding marks wherever you pause for breath, but of deciding how many complete thoughts you have and giving each one its own sentence, or joining them deliberately with a semicolon when the two thoughts belong together.\n\nParagraphs do the same job at a larger scale: one topic, announced by its first sentence, with the sentences after it doing the work the first sentence promised. When a paragraph changes subject halfway, the reader loses the thread and blames the topic. Splitting such a paragraph is usually the whole fix, and the strongest short pieces are often simply the well-split ones.\n\nThe lab sorts sentences by the problem they show — run-on, missing comma, paragraph that changes subject — and then you repair each one. Same judgement as checking your own draft before you hand it in."
+      },
+      {
+        "id": "spelling-grammar-and-word-choice",
+        "title": "Spelling, Grammar & Word Choice",
+        "objectives": [
+          "Recognise the errors that cost most in everyday writing",
+          "Apply a rule rather than memorising one correction",
+          "Choose the word that fits the audience and the register"
+        ],
+        "concepts": [
+          "Agreement: matching a verb with its subject and a pronoun with its noun.",
+          "Homophone: words that sound alike and mean differently (there, their, they're).",
+          "Proofreading: a last pass read for errors only, not for ideas."
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Match each common error to its correction and to the rule that explains it."
+        },
+        "content": "A small set of errors does most of the damage in everyday writing: subjects and verbs that do not agree, homophones chosen by sound, apostrophes used for plurals, and tenses that shift in the middle of a story. Each has a rule you can apply in a second — decide what the subject is, then match the verb; decide what you mean, then choose the homophone; decide whether the thing belongs to someone, then decide on the apostrophe.\n\nWord choice matters as much as correctness. The same message changes register with one word: request, ask, demand. Choose for your reader: a teacher, a landlord, an employer and a friend are four different audiences even when the facts never change. Plain wording and short sentences read as confidence; padded wording reads as uncertainty, and in a job letter or a report that difference costs credibility.\n\nThe lab matches errors to corrections and to the rules behind them, so that when you meet the same mistake in your own draft you fix the cause rather than the symptom."
+      },
+      {
+        "id": "writing-to-inform-and-instruct",
+        "title": "Writing to Inform & Instruct",
+        "objectives": [
+          "Write instructions in the order the actions happen",
+          "State the conditions and warnings the reader needs first",
+          "Remove anything the reader does not need to do the job"
+        ],
+        "concepts": [
+          "Sequence: the order in which actions must happen.",
+          "Condition and warning: what must be true before a step, and what to look out for.",
+          "Signposting: numbering, layout and headings that make a set of steps scannable."
+        ],
+        "experiment": {
+          "type": "interactive-pathway",
+          "description": "Order a mixed set of sentences into a set of instructions that someone else can follow."
+        },
+        "content": "Writing to instruct is writing for a stranger. The test is not whether you understand it but whether someone who has never done the job can do it from your words alone: put the equipment out, heat the oil, add the dough when the oil shimmers, turn each piece once, drain on paper. Every step is an action, in the order it happens, and the conditions sit next to the step they govern rather than in a paragraph at the end.\n\nWarnings earn their place at the top. If something can burn, break or be done wrong, the reader needs that before starting, not after step six. Everything else that is merely interesting comes out: instructions that explain the history of the recipe or the reason for the rule lose the reader who is following along with both hands busy.\n\nThe lab scrambles a set of instructions and asks you to put them back in an order that works, which is how you learn to test your own writing for sequence rather than for length."
+      },
+      {
+        "id": "writing-to-persuade-and-argue",
+        "title": "Writing to Persuade & Argue",
+        "objectives": [
+          "Build an argument from claim, evidence and reasoning",
+          "Anticipate one objection and answer it",
+          "Keep persuasive language honest and proportionate"
+        ],
+        "concepts": [
+          "Claim: the position you are asking the reader to accept.",
+          "Evidence and reasoning: the support that makes the claim more than an assertion.",
+          "Concession: naming the strongest objection and answering it."
+        ],
+        "experiment": {
+          "type": "drag-drop",
+          "description": "Sort argument moves into point, evidence, explanation and link — then rebuild the argument in order."
+        },
+        "content": "An argument is a chain, and each move has a job. The claim says where you stand. The evidence gives the reader something to hold: a figure, an example, an experience. The reasoning explains why that evidence supports that claim, which is the step most students skip. The link carries the reader into the next point. Drop the reasoning and the piece reads as opinion in a loud voice.\n\nConceding a point makes an argument stronger, not weaker. Naming the best objection — the cost, the inconvenience, the counter-example — and answering it tells the reader you have thought past your own first feeling. What to avoid is the false claim that can be checked and disproved: exaggerating a number or inventing a source loses the whole case the moment one reader checks it.\n\nThe lab takes real argument moves apart and asks you to sort and then reassemble them, so the shape of a case becomes something you can build on purpose rather than luck."
+      },
+      {
+        "id": "letters-emails-and-short-reports",
+        "title": "Letters, Emails & Short Reports",
+        "objectives": [
+          "Choose the right format for the situation",
+          "Open and close with the right register for the reader",
+          "Write a short report that separates what happened from what should happen next"
+        ],
+        "concepts": [
+          "Format: the layout the reader expects (letter, email, incident report, notice).",
+          "Register: how formal the language is, decided by the reader and the purpose.",
+          "Report structure: what happened, what it means, what should happen next."
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Match each situation to the format and register that will actually work."
+        },
+        "content": "The situation chooses the format, and the format does half the work. A complaint about a faulty appliance needs the specific details — what was bought, when, what went wrong, what you are asking for — in a shape the shop can act on. An email to a landlord about a leaking roof needs a subject line that names the problem, the facts in order, and a clear request. An incident report needs the sequence first and the opinion last, if at all.\n\nRegister follows the reader's relationship to you. Requests to someone who can act for you are formal and explicit; updates to colleagues can be brief and direct. In every case the same three things earn a reply: be specific, be clear about what you want, and make the next step easy for the reader. Tones that accuse or apologise too much both weaken the request.\n\nThe lab matches situations to the format and register that fit them, which is the decision that comes before any sentence is written."
+      }
+    ]
+  },
+  {
+    "id": "speaking-listening-communicating",
+    "title": "Speaking, Listening & Communicating",
+    "lessons": [
+      {
+        "id": "listening-for-information",
+        "title": "Listening for Information & Instructions",
+        "objectives": [
+          "Catch the sequence and the specifics in speech",
+          "Recognise the words that signal a condition or a correction",
+          "Use a transcript honestly to check what you heard"
+        ],
+        "concepts": [
+          "Listening for gist: understanding the purpose before the detail.",
+          "Listening for detail: catching names, numbers, times and order.",
+          "Repair: asking for a repeat or a rephrase instead of guessing."
+        ],
+        "experiment": {
+          "type": "interactive-pathway",
+          "description": "Order spoken-instruction steps as they would be carried out, then check them against the transcript."
+        },
+        "content": "Listening in real life is one pass, at the speaker's speed, and it is usually carrying instructions: two tablets after food, bring the form and the receipt, the bus leaves from the other terminal today. The strategy is to listen for the shape first — what is this person asking me to do — and then for the specifics, because a sequence of instructions is easier to hold once you know what job it belongs to.\n\nSmall words do the heavy lifting. Before, after, unless, only and except change the instructions entirely: take it before food and take it after food are different instructions with the same words in a different order. When a speaker corrects themselves — sorry, make that Tuesday, not Thursday — the correction is the instruction, and the first version is the trap.\n\nNo audio is needed for this lesson: you work on transcripts of spoken instructions, ordering the steps as they would be carried out and marking the point where the speaker changed their mind. That is the same listening skill, practised where you can see the evidence."
+      },
+      {
+        "id": "speaking-clearly-and-confidently",
+        "title": "Speaking Clearly & Confidently",
+        "objectives": [
+          "Speak at a pace and volume the room can follow",
+          "Use pauses to organise what you say",
+          "Manage nerves with preparation rather than speed"
+        ],
+        "concepts": [
+          "Pace and projection: the speed and volume that carry to the back of the room.",
+          "Pause: silence used as punctuation, not as a breakdown.",
+          "Filler: repeated sounds or words that fill the space where a pause belongs."
+        ],
+        "experiment": {
+          "type": "drag-drop",
+          "description": "Sort delivery habits into helps the listener and gets in the way, then rehearse the fixes."
+        },
+        "content": "Clarity is mechanical before it is confident. Face the listener, open your mouth enough for the words to leave it, and aim your voice at the back of the room rather than the paper in front of you. Speed is the commonest enemy: candidates who speak quickly to get the ordeal over lose the listener in the first sentence, and speed also flattens the pausing that tells a listener where one idea ends.\n\nPauses are punctuation. A short silence before a key point signals that something important is coming; a silence in the middle of a sentence reads as a stall. Replacing the pause with a filler — um, you know, basically — fills the space without organising anything, and the habit grows exactly when nerves do. The practical fix is to say less, in shorter spoken sentences, so the pause falls at the end of an idea.\n\nThe lab sorts delivery habits into those that help a listener and those that get in the way, and asks you to match each bad habit with its fix. Rehearsal is what turns the fix into a habit you keep under pressure."
+      },
+      {
+        "id": "asking-and-answering-questions",
+        "title": "Asking & Answering Questions in Context",
+        "objectives": [
+          "Ask a question that gets a usable answer",
+          "Answer the question that was actually asked, in full",
+          "Adapt your register to the person you are speaking to"
+        ],
+        "concepts": [
+          "Open and closed questions: the ones that invite detail and the ones that settle a fact.",
+          "Complete answer: a sentence that does the job rather than one word.",
+          "Register: tu/usted-style choices in English — how formal you are with whom."
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Match each question type to a strong and a weak answer, then rehearse your own."
+        },
+        "content": "Questions do different work. A closed question settles a fact quickly: is the office open on Saturday? An open question invites detail: what should I bring with me? Knowing which you need saves time in a service call and gives you somewhere to go in an interview or a classroom. Asking the right kind of question is a skill that reads as competence, especially in a first conversation with someone who can help you.\n\nAnswering well means answering the question asked, completely. I don't know is a complete answer if you add what you will do about it. One-word answers — yes, no, fine — leave the other person carrying the conversation and show the least of what you can do. In any assessment or interview situation the answers that earn credit are short spoken sentences with one detail or reason added.\n\nThe lab pairs question types with a strong and a weak answer and asks you to match them, which is how you learn to hear the difference between a complete spoken answer and a bare word before it costs you anything."
+      },
+      {
+        "id": "taking-part-in-discussions",
+        "title": "Taking Part in Discussions & Group Talk",
+        "objectives": [
+          "Contribute a point that moves the discussion forward",
+          "Disagree with the idea without attacking the person",
+          "Bring a quiet group member in and keep to time"
+        ],
+        "concepts": [
+          "Turn-taking: making a space to speak without talking over others.",
+          "Building: picking up someone else's point and adding to it.",
+          "Closing down: moves that end the exchange rather than the question."
+        ],
+        "experiment": {
+          "type": "drag-drop",
+          "description": "Sort discussion moves into builds the conversation and shuts it down."
+        },
+        "content": "A discussion is not a series of speeches. The moves that build it are small and civilised: picking up the previous point and adding to it, asking someone to say more, disagreeing with the idea rather than the speaker — I see it differently because… — and offering a reason with every opinion. Those moves give the group more to work with than any single brilliant comment delivered over everyone else.\n\nThe moves that shut it down are equally recognisable: interrupting, dismissing a point without a reason, repeating your own position louder, or leaving the work to two people. In a group task the person who brings a quiet member in with what do you think? is doing assessed work just as much as the person with the most to say, and groups that never hear from a member usually lose marks the group cannot see.\n\nThe lab sorts real discussion moves into the two columns and then you pick the move that repairs a stalled exchange, which is the judgement you need in a seminar, a community meeting or a team briefing at work."
+      },
+      {
+        "id": "giving-a-short-talk",
+        "title": "Giving a Short Talk or Presentation",
+        "objectives": [
+          "Structure a short talk as opening, points with support, close",
+          "Support each point with one example the audience can picture",
+          "Prepare a cue card, not a script"
+        ],
+        "concepts": [
+          "Signposting: the spoken headings that tell the audience where you are.",
+          "One point per example: the discipline that keeps a short talk short.",
+          "Close: the sentence that lands the talk instead of trailing off."
+        ],
+        "experiment": {
+          "type": "interactive-pathway",
+          "description": "Order a talk's structure and place each point in the slot that carries it."
+        },
+        "content": "A short talk has three jobs: say what you are going to talk about, talk about it in two or three moves, and say what you want the audience to take away. The opening earns the next minute — a question, a number, a short scene from real life — and the close is the only part the audience may remember, so it is written rather than improvised. In between, each point needs one example the audience can picture; three points with examples beat eight without.\n\nPreparation is the cure for nerves. A full script read aloud sounds like reading, because it is reading; a cue card with a heading and three words under it sounds like someone thinking. Rehearse aloud with a timer so the length becomes a feel rather than a guess, and rehearse the first twenty seconds more than anything else, because that is the part nerves own.\n\nThe lab orders the parts of a talk and asks you to place each point in the slot that carries it — opening, body, close — and then you rehearse the outline aloud."
+      },
+      {
+        "id": "communicating-at-work-and-in-the-community",
+        "title": "Communicating at Work & in the Community",
+        "objectives": [
+          "Choose your register for the audience and the stakes",
+          "Handle a difficult conversation with a clear opening and a clear ask",
+          "Follow up a spoken exchange so there is a record"
+        ],
+        "concepts": [
+          "Register: formal, neutral or informal, chosen for the listener.",
+          "Clear ask: the single sentence that says what you want to happen.",
+          "Follow-up: the written record that confirms what was agreed."
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Match each real situation to the register and format that will work in it."
+        },
+        "content": "Work and community situations reward the same habits: a clear opening that states why you are there, the facts in a short sequence, and one clear ask. A complaint at a counter, an interview, a community meeting about a blocked drain and a request to a supervisor for a shift change are the same conversation wearing different clothes, and the person who arrives with the facts in order and one specific request is treated as someone who can be helped.\n\nRegister is chosen, not felt. The same request sounds different to a supervisor, a customer and a neighbour, and choosing deliberately is what stops a reasonable request sounding like a demand or an apology. Where the stakes are high — a job, a complaint, money — follow the spoken exchange with two written lines that confirm what was agreed and by when, because spoken agreements dissolve and written ones do not.\n\nThe lab matches situations to the register and format that fit them, drawing on the spoken and written skills from all three modules of this subject."
+      }
+    ]
+  }
+]

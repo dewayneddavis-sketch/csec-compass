@@ -415,8 +415,13 @@ section("5. fail-closed: nothing unlocks without a verified server answer");
 section("6. the bundle copy states a real saving");
 {
   const count = catalogIds.length;
-  check(`the bundle saving is computed from ${count} subjects`, pricing.bundleSavingsPct(count) === 78, String(pricing.bundleSavingsPct(count)));
-  check("the label says so", /Save 78% vs buying every subject separately/.test(pricing.bundleSavingsLabel(count)), pricing.bundleSavingsLabel(count));
+  // Derived, not pinned: the catalog grows (the City & Guilds pair are the newest two), so
+  // the expected percentage is recomputed from the two prices the page actually charges
+  // rather than hard-coded at the count of the day. The rounding-down rule is asserted
+  // separately below, where it belongs.
+  const expectedPct = Math.floor(((count * pricing.SUBJECT_PRICE - pricing.BUNDLE_PRICE) / (count * pricing.SUBJECT_PRICE)) * 100);
+  check(`the bundle saving is computed from ${count} subjects`, pricing.bundleSavingsPct(count) === expectedPct, `${pricing.bundleSavingsPct(count)} (expected ${expectedPct})`);
+  check("the label says so", new RegExp(`Save ${expectedPct}% vs buying every subject separately`).test(pricing.bundleSavingsLabel(count)), pricing.bundleSavingsLabel(count));
   check(
     "and it never overstates: the percentage rounds down",
     pricing.BUNDLE_PRICE / (count * pricing.SUBJECT_PRICE) <= 1 - pricing.bundleSavingsPct(count) / 100

@@ -62,6 +62,10 @@ const EXPECTED = {
   // 2 h 15 min — Directed Situations 30 + Letter 30 + Dialogue 20 + Reading 20.
   french: { items: 4, marks: 100 },
   spanish: { items: 4, marks: 100 },
+  // City & Guilds English: 6 functional reading/writing items, 130 marks on CSEC
+  // Compass's own self-assessed practice scale (the tab says "self-assessed"; no
+  // City & Guilds paper structure is asserted).
+  "city-guilds-english": { items: 6, marks: 130 },
 };
 
 // Section weights of the shared Modern Languages Paper 02 (CXC 27/O/SYLL 15), in
