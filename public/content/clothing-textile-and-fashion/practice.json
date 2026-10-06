@@ -153,7 +153,7 @@
     ],
     "answer": "Prevents shrinkage",
     "explanation": "The fabric is mechanically compressed so it will not shrink later.",
-    "topic": "ctf-l1-2"
+    "topic": "ctf-l1-4"
   },
   {
     "id": "p13",
@@ -624,19 +624,6 @@
     "topic": "ctf-l3-2"
   },
   {
-    "id": "p49",
-    "question": "A dart should be pressed:",
-    "options": [
-      "Flat with a hot iron on the point",
-      "Over a tailor's ham following its shape",
-      "With a rolling action on the seam line only",
-      "Without any heat"
-    ],
-    "answer": "Over a tailor's ham following its shape",
-    "explanation": "The ham supports the curve so the dart keeps its shape.",
-    "topic": "ctf-l3-2"
-  },
-  {
     "id": "p50",
     "question": "Appliqué is:",
     "options": [
@@ -686,19 +673,6 @@
     ],
     "answer": "Machine-appliqué with securely stitched edges",
     "explanation": "Decoration must survive repeated washing and wear.",
-    "topic": "ctf-l3-3"
-  },
-  {
-    "id": "p54",
-    "question": "Heavy beading on fine fabric is a poor choice because it:",
-    "options": [
-      "Washes too easily",
-      "Distorts and damages the fabric",
-      "Is invisible",
-      "Costs nothing"
-    ],
-    "answer": "Distorts and damages the fabric",
-    "explanation": "The weight pulls the fine fabric out of shape.",
     "topic": "ctf-l3-3"
   },
   {
@@ -1118,19 +1092,6 @@
     "topic": "ctf-l5-3"
   },
   {
-    "id": "p87",
-    "question": "A care label showing a triangle crossed through means:",
-    "options": [
-      "Bleach as needed",
-      "Do not bleach",
-      "Bleach in cold water",
-      "Use oxygen bleach only"
-    ],
-    "answer": "Do not bleach",
-    "explanation": "The cross cancels the bleaching instruction.",
-    "topic": "ctf-l1-3"
-  },
-  {
     "id": "p88",
     "question": "A binding is used to:",
     "options": [
@@ -1222,19 +1183,6 @@
     "topic": "ctf-l4-2"
   },
   {
-    "id": "p95",
-    "question": "Curtain heading refers to:",
-    "options": [
-      "The lining",
-      "The top section of the curtain where it is gathered or pleated",
-      "The hem",
-      "The side turnings"
-    ],
-    "answer": "The top section of the curtain where it is gathered or pleated",
-    "explanation": "The heading determines the fullness and the hanging method.",
-    "topic": "ctf-l4-2"
-  },
-  {
     "id": "p96",
     "question": "A price below unit cost means the maker will:",
     "options": [
@@ -1261,32 +1209,6 @@
     "topic": "ctf-l4-3"
   },
   {
-    "id": "p98",
-    "question": "Hair should be tied back in the workroom mainly to:",
-    "options": [
-      "Look tidy",
-      "Prevent it being caught in the machine",
-      "Keep it clean",
-      "Improve posture"
-    ],
-    "answer": "Prevent it being caught in the machine",
-    "explanation": "Loose hair and clothing can be dragged into moving parts.",
-    "topic": "ctf-l5-1"
-  },
-  {
-    "id": "p99",
-    "question": "Wire bending is a skill used mainly in:",
-    "options": [
-      "School uniform production",
-      "Carnival costume construction",
-      "Curtain making",
-      "Table linen"
-    ],
-    "answer": "Carnival costume construction",
-    "explanation": "Costume frames are built from wire, cane and foam.",
-    "topic": "ctf-l5-3"
-  },
-  {
     "id": "p100",
     "question": "A craft market helps local textile producers because it:",
     "options": [
@@ -1298,5 +1220,83 @@
     "answer": "Provides direct access to buyers and feedback",
     "explanation": "Direct selling keeps more of the price with the maker.",
     "topic": "ctf-l5-3"
+  },
+  {
+    "id": "p101",
+    "question": "Reactive dyes give cotton and linen their best wash fastness because they:",
+    "options": [
+      "Sit on the surface of the fibre and wash out easily",
+      "Bond chemically with the fibre itself",
+      "Need an acid bath before they will develop",
+      "Only work on polyester and other synthetics"
+    ],
+    "answer": "Bond chemically with the fibre itself",
+    "explanation": "Reactive dyes form a chemical bond with the cellulose in cotton and linen, so the colour is held inside the fibre instead of lying on it. Direct dyes are easier to apply but give only moderate wash fastness, acid dyes are used on wool, silk and nylon, and disperse dyes are used on synthetics.",
+    "topic": "ctf-l1-4"
+  },
+  {
+    "id": "p102",
+    "question": "Polyester is dyed with:",
+    "options": [
+      "Disperse dyes at high temperature under pressure",
+      "Reactive dyes at room temperature",
+      "Direct dyes with salt added",
+      "Indigo straight from the vat"
+    ],
+    "answer": "Disperse dyes at high temperature under pressure",
+    "explanation": "Polyester is tightly packed and does not absorb water, so the dye is carried into the fibre as a fine dispersion at high temperature, often under pressure. Vat dyes such as indigo suit cellulosics and denim, reactive dyes bond with cotton and linen, and acid dyes suit wool, silk and nylon.",
+    "topic": "ctf-l1-4"
+  },
+  {
+    "id": "p103",
+    "question": "In natural dyeing, a mordant is used to:",
+    "options": [
+      "Bleach the cloth before it is dyed",
+      "Fix the dye to the fibre and change the shade",
+      "Make the finished cloth waterproof",
+      "Remove the cloth's natural colour first"
+    ],
+    "answer": "Fix the dye to the fibre and change the shade",
+    "explanation": "A mordant such as alum or iron links a natural dye to the fibre - without it the colour washes out quickly - and the same dye taken with a different mordant comes out a different shade. That is why natural dyers record both the plant and the mordant.",
+    "topic": "ctf-l1-4"
+  },
+  {
+    "id": "p104",
+    "question": "Batik and tie-dye produce their patterns because:",
+    "options": [
+      "The dye is printed on with an engraved roller",
+      "A resist keeps the dye out of the waxed or bound areas",
+      "The cloth is bleached after the dye has been applied",
+      "The dye bonds only where the pattern is drawn"
+    ],
+    "answer": "A resist keeps the dye out of the waxed or bound areas",
+    "explanation": "Both are resist methods. In batik the wax blocks the dye and is melted or boiled off afterwards; in tie-dye the tied, knotted or bound cloth cannot take up the dye, so those parts stay pale. Where the dye did reach the fibre, the colour stays.",
+    "topic": "ctf-l1-4"
+  },
+  {
+    "id": "p105",
+    "question": "Denim dyed with indigo loses its colour slowly and evenly because:",
+    "options": [
+      "The dye sits on top of the yarn and rubs off",
+      "The vat dye is oxidised to an insoluble pigment inside the fibre",
+      "Indigo is a reactive dye that bonds with the cotton",
+      "The yarn is dyed after the cloth has been woven"
+    ],
+    "answer": "The vat dye is oxidised to an insoluble pigment inside the fibre",
+    "explanation": "Indigo is a vat dye: it is made soluble to enter the cotton, then oxidised back to an insoluble pigment trapped inside the fibre. The colour therefore leaves the surface gradually, which is what gives denim its characteristic fade rather than a patchy wash-out.",
+    "topic": "ctf-l1-4"
+  },
+  {
+    "id": "p106",
+    "question": "A crease-resist finish makes a cotton shirt easier to iron, but it can also:",
+    "options": [
+      "Make the cloth shrink in the first wash",
+      "Cost the cloth some strength and absorbency",
+      "Stop the cloth taking up any dye",
+      "Make the cloth waterproof"
+    ],
+    "answer": "Cost the cloth some strength and absorbency",
+    "explanation": "Crease-resist and durable-press resins are chemical finishes that stop the fibres creasing, but the resin also makes the cotton a little weaker and less able to absorb moisture. That trade-off is why towels and summer wear are often left untreated.",
+    "topic": "ctf-l1-4"
   }
 ]
