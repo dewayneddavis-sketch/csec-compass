@@ -27,6 +27,11 @@ let pass = 0, fail = 0;
 const ok = (cond, msg) => { if (cond) pass++; else { fail++; console.log("FAIL: " + msg); } };
 const section = (t) => console.log(`\n== ${t}`);
 
+// Read a subject's sample straight off disk: used by the tracker guards below and by
+// the per-subject section further down.
+const hasSample = (id) => {
+    try { return !!readJson(`content/${id}/sba.json`).completedSample; } catch { return false; }
+};
 const raw = readJson("content/subjects.json");
 const catalog = (Array.isArray(raw) ? raw : raw.subjects || []).map((s) => s.id).filter(Boolean);
 
@@ -38,20 +43,33 @@ const tracker = read(trackerPath);
 const rows = tracker.split("\n")
     .filter((l) => l.trim().startsWith("|") && !/^\|\s*-+/.test(l.trim()) && !/subject/i.test(l.split("|")[1] || ""))
     .map((l) => l.split("|").map((c) => c.trim()).filter((c) => c.length > 0));
+// A subject whose qualification has no school-based assessment at all cannot
+// produce an SBA sample. It must still be LISTED, with an explicit N/A, so the
+// table stays a complete picture of the catalog — and the exemption is only valid
+// for the subjects this list names (owner decision 2026-09-29: City & Guilds
+// Mathematics has no SBA portfolio; City & Guilds English's sample is its
+// prepared-talk dossier, so it is a normal TODO -> DONE row).
+const NO_SAMPLE_SUBJECTS = ["city-guilds-mathematics"];
 const tracked = new Map();
+const exempt = new Map();
 for (const r of rows) {
     if (r.length < 5) continue;
-    if (!/^(DONE|TODO)/i.test(r[r.length - 1])) continue;   // skip the header row
-    tracked.set(r[1], r[r.length - 1].toUpperCase());
+    const status = (r[r.length - 1] || "").toUpperCase();
+    if (/^(DONE|TODO)/.test(status)) tracked.set(r[1], status);        // skip the header row
+    else if (/^N\/A/.test(status)) exempt.set(r[1], status);
 }
-for (const id of catalog) ok(tracked.has(id), `tracker lists ${id}`);
-const dataRows = rows.filter((r) => r.length >= 5 && /^(DONE|TODO)/i.test(r[r.length - 1]));
-ok(tracked.size === dataRows.length, "tracker has no duplicate subject rows");
+for (const id of catalog) {
+    ok(tracked.has(id) || exempt.has(id), `tracker lists ${id} (DONE, TODO or N/A)`);
+}
+ok([...exempt.keys()].every((id) => catalog.includes(id)), "no N/A row names a subject outside the catalog");
+ok([...exempt.keys()].every((id) => NO_SAMPLE_SUBJECTS.includes(id)),
+    `only a subject with no SBA at all may be N/A -- got ${[...exempt.keys()].join(", ")}`);
+for (const id of exempt.keys()) ok(!hasSample(id), `${id} is marked N/A, so it ships no completedSample`);
+const dataRows = rows.filter((r) => r.length >= 5 && /^(DONE|TODO|N\/A)/i.test(r[r.length - 1]));
+ok(tracked.size + exempt.size === dataRows.length, "tracker has no duplicate subject rows");
 ok(new Set([...catalog]).size >= 23, `catalog still lists 23 subjects (got ${new Set(catalog).size})`);
 
-const hasSample = (id) => {
-    try { return !!readJson(`content/${id}/sba.json`).completedSample; } catch { return false; }
-};
+
 for (const [id, status] of tracked) {
     const done = status.startsWith("DONE");
     ok(done === hasSample(id),
@@ -165,9 +183,12 @@ ok(/onContextMenu=\{blockCopy\}/.test(jsx), "the context menu is blocked on the 
 ok(/onDragStart=\{blockCopy\}/.test(jsx), "dragging the sample out is blocked");
 ok(/const blockCopy = \(e\) => e.preventDefault\(\);/.test(jsx), "blockCopy cancels the event");
 ok(jsx.includes("sba-viewonly") && jsx.includes("completed.viewOnlyNote"), "the view-only note is rendered from the subject's own text");
-ok(jsx.includes("How this sample earns each SBA category") && jsx.includes("How this dossier was marked, part by part"),
+// Both wordings now live in src/data/sbaTabs.js (one place per subject family);
+// the component must READ them, so neither can be hardcoded back into the JSX.
+const tabsSrc = read("src/data/sbaTabs.js");
+ok(tabsSrc.includes("How this sample earns each SBA category") && tabsSrc.includes("How this dossier was marked, part by part") && jsx.includes("sbaSampleHeading(subjectId)"),
     "the completed-sample subhead is subject-aware: an oral subject has no SBA categories to earn");
-ok(jsx.includes("What the examiner hears") && jsx.includes("What the examiner sees"),
+ok(tabsSrc.includes("What the examiner hears") && tabsSrc.includes("What the examiner sees") && jsx.includes("sbaSampleColumnLabel(subjectId)"),
     "the category table's last column is subject-aware: a dossier is heard, an SBA report is read");
 ok(/\.sba-protected\{[^}]*user-select:none/.test(css), "CSS also sets user-select:none on the protected block");
 ok(/\.sba-protected\{[^}]*webkit-user-select:none/.test(css), "CSS sets the webkit user-select prefix");

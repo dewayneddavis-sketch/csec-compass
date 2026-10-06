@@ -64,6 +64,30 @@ check(
   "the wording is not repeated inline anywhere (no chance of drift)",
   !/is not affiliated with/i.test(termsPage.replace(/\{TRADEMARK_DISCLAIMER\}/g, "")) && !/is not affiliated with/i.test(app),
 );
+// ---- the City & Guilds counterpart (owner decision 2026-09-29) --------------
+// Two of the subjects the site now sells are City & Guilds subjects, so the same
+// sentence has to exist for that qualification, on the same surfaces, from the same
+// one place. Written here word for word: a reworded constant must fail this harness.
+const REQUIRED_CG_DISCLAIMER =
+  "CSEC Compass is an independent study platform and is not affiliated with, authorized or endorsed by City & Guilds. City & Guilds® is a registered trade mark of the City and Guilds of London Institute.";
+check("the City & Guilds sentence exists, word for word", flatLegal.includes(REQUIRED_CG_DISCLAIMER), flatLegal.slice(0, 400));
+check("it names the City and Guilds of London Institute in full", REQUIRED_CG_DISCLAIMER.includes("City and Guilds of London Institute"));
+check("it denies affiliation, authorization AND endorsement by City & Guilds", /not affiliated with, authorized or endorsed by City & Guilds/.test(flatLegal));
+check("it marks City & Guilds as a registered trade mark", /City & Guilds® is a registered trade mark/.test(flatLegal));
+check("the terms page renders the City & Guilds constant", /\{CG_TRADEMARK_DISCLAIMER\}/.test(termsPage));
+check("the footer renders the City & Guilds constant on every page", /\{CG_TRADEMARK_DISCLAIMER\}/.test(app));
+check(
+  "the City & Guilds wording is not repeated inline either",
+  !/endorsed by City & Guilds/i.test(termsPage.replace(/\{CG_TRADEMARK_DISCLAIMER\}/g, "")) &&
+    !/endorsed by City & Guilds/i.test(app),
+);
+// One place, no drift: the sentence itself must be typed ONLY in legal.js — every
+// other surface has to render one of the two shared constants.
+check(
+  "no other source file repeats the City & Guilds sentence (single source of truth)",
+  !["src/App.jsx", "src/pages/TermsPage.jsx", "src/pages/PrivacyPage.jsx", "src/pages/PricingPage.jsx", "src/data/guideFacts.js"]
+    .some((p) => /not affiliated with[^"]*City & Guilds/.test(read(p))),
+);
 check("the version shown on the page has no line break inside the sentence", /"[^"\n]*CSEC® is a registered trademark of the Caribbean Examinations Council\.",?$/m.test(legal) || /CSEC® is a registered trademark of the Caribbean Examinations Council\.";/.test(flat(legal)));
 
 // ===========================================================================
@@ -140,6 +164,7 @@ for (const p of pages) {
 }
 check("no page claims a guaranteed pass or grade", guaranteeClaim === null, guaranteeClaim || "");
 check("no page claims endorsement by CXC", !pages.some((p) => /endorsed by (the )?(CXC|Caribbean)/i.test(read(p).replace(/\{TRADEMARK_DISCLAIMER\}/g, ""))));
+check("no page claims endorsement by City & Guilds", !pages.some((p) => /endorsed by City & Guilds/i.test(read(p).replace(/\{CG_TRADEMARK_DISCLAIMER\}/g, ""))));
 check("no page claims to be official", !pages.some((p) => /\bofficial CXC\b/i.test(read(p).replace(/not official CXC past papers|official CXC past papers and are not/i, ""))));
 check(
   "the terms page pulls in no new library (react + the router only)",

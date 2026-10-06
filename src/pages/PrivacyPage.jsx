@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { PRIVACY_CONTACT_EMAIL, PRIVACY_LAST_UPDATED } from "../data/legal";
+import { PRIVACY_CONTACT_EMAIL, PRIVACY_LAST_UPDATED, CG_TRADEMARK_DISCLAIMER } from "../data/legal";
 import "./PrivacyPage.css";
 
 // Privacy Policy.
@@ -298,6 +298,9 @@ export default function PrivacyPage() {
           <Link to="/terms" className="privacy-inline-link">Terms of Service</Link>, which cover
           purchases, access and how the platform may be used.
         </p>
+        {/* Trademark + independence, the same shared sentence the footer and the
+            Terms page show (owner decision 2026-09-29). */}
+        <p className="privacy-disclaimer">{CG_TRADEMARK_DISCLAIMER}</p>
       </section>
 
       <div className="privacy-foot">

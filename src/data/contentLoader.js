@@ -9,6 +9,8 @@ const colorMap = {
   "social-studies": "#16a34a", history: "#b91c1c", geography: "#65a30d",
   "human-social-biology": "#e11d48", spanish: "#c2410c", french: "#4338ca",
   "agricultural-science": "#4d7c0f",
+  "city-guilds-mathematics": "#1e40af",
+  "city-guilds-english": "#6d28d9",
 };
 
 const fallbackSubjects = [

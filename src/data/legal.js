@@ -5,11 +5,19 @@
 export const TRADEMARK_DISCLAIMER =
   "CSEC Compass is an independent study platform and is not affiliated with, authorized, or endorsed by the Caribbean Examinations Council (CXC). CSEC® is a registered trademark of the Caribbean Examinations Council.";
 
+// The City & Guilds counterpart (owner decision 2026-09-29). This is the exact
+// sentence the owner accepted as shippable — do not reword it without them.
+// Kept beside the CXC sentence so the footer, the Terms page, the Privacy page
+// and the Compass Guide cannot drift into slightly different claims. It appears
+// wherever the two City & Guilds subjects are named.
+export const CG_TRADEMARK_DISCLAIMER =
+  "CSEC Compass is an independent study platform and is not affiliated with, authorized or endorsed by City & Guilds. City & Guilds® is a registered trade mark of the City and Guilds of London Institute.";
+
 // Shown at the top of the Terms page and kept short enough for the footer.
-export const TERMS_LAST_UPDATED = "22 September 2026";
+export const TERMS_LAST_UPDATED = "6 October 2026";
 // The Privacy Policy (Jamaica Data Protection Act 2020). Dated the same day as
 // the Terms: both come from the same legal review.
-export const PRIVACY_LAST_UPDATED = "22 September 2026";
+export const PRIVACY_LAST_UPDATED = "6 October 2026";
 // The ONE address a person can use to ask about their data (see, fix, delete).
 // It is the business inbox, never a personal address — the owner's rule for
 // every piece of material. Kept here so the page and any future surface cannot

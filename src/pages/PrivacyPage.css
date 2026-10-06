@@ -72,6 +72,11 @@
   word-break: break-all;
 }
 .privacy-inline-link { color: #0e7490; font-weight: 600; }
+.privacy-disclaimer {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #0c4a6e;
+}
 .privacy-foot {
   display: flex;
   gap: 0.6rem;

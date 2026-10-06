@@ -152,7 +152,7 @@ function seedDb() {
 }
 
 // ===========================================================================
-section("1. the per-subject dropdown covers the catalog (all 23, both directions)");
+section("1. the per-subject dropdown covers the catalog (all subjects, both directions)");
 {
   const fallback = pricing.FALLBACK_SUBJECT_OPTIONS;
   check(

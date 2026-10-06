@@ -78,7 +78,12 @@ const paperSrc = read("src/data/mockPaper.js");
 // ===========================================================================
 section("1. the paper is drawn from the whole bank (every real subject)");
 
-check(`all ${SUBJECTS.length} subjects have a practice bank`, SUBJECTS.length === 23, `${SUBJECTS.length}`);
+// "at least" on purpose: the catalog grows (City & Guilds Mathematics and English
+// are the next two), and every subject still has to bring a bank. An exact 23 would
+// have to be edited by hand at each new subject — and a silently stale 23 is how a
+// subject could ship with no bank at all.
+check(`all ${SUBJECTS.length} subjects have a practice bank (at least the 23 CSEC subjects)`,
+  SUBJECTS.length >= 23, `${SUBJECTS.length}`);
 check(
   "no bank is smaller than a paper (so sampling is always the live path)",
   SUBJECTS.every((s) => BANKS.get(s).length > MAX_QUESTIONS),

@@ -30,17 +30,17 @@ function plansFor(subjectCount) {
       id: "subject",
       name: "Per Subject",
       price: "$9.99",
-      description: "Full access to one CSEC subject",
+      description: "Full access to one subject",
       features: ["All lessons and modules", "Interactive experiments", "Knowledge check quizzes", "Progress tracking"],
     },
     {
       id: "bundle",
       name: "All Subjects Bundle",
       price: "$49.99",
-      description: "Full access to every CSEC subject on the platform",
+      description: "Full access to every subject on the platform",
       features: [
         "Everything in Per Subject",
-        "Every CSEC subject we publish",
+        "Every subject we publish — CSEC and City & Guilds",
         `Bundle pricing — ${bundleSavingsLabel(subjectCount)}`,
       ],
       popular: true,
@@ -197,7 +197,7 @@ export default function PricingPage() {
     <div className="pricing-page">
       <div className="pricing-header">
         <h1>Choose Your Plan</h1>
-        <p>Unlock full access to CSEC exam prep materials.</p>
+        <p>Unlock full access to exam prep materials.</p>
       </div>
         {/* Optional, and only for the two plans above: a parent who buys a
             single subject or the bundle can name their child so the purchase
@@ -352,7 +352,7 @@ export default function PricingPage() {
               </p>
               <p className="pricing-desc">${tier.perStudent} per student, per year</p>
               <ul className="pricing-features">
-                <li>Every CSEC subject on the platform</li>
+                <li>Every subject on the platform</li>
                 <li>Up to {tier.seats} student accounts</li>
                 <li>One year of access</li>
                 <li>One payment — no recurring subscription</li>
