@@ -172,14 +172,15 @@ function resolveInteractive(subjectId, experimentType, lessonId) {
   // ---- every other subject that has per-lesson lab sets (the newer subjects:
   //      Caribbean History, Integrated Science, Agriculture, Food & Nutrition,
   //      Technical Drawing, Physical Education, Clothing Textile & Fashion,
-  //      Principles of Business, EDPM, Visual Arts, Theater Arts). Each lesson
-  //      resolves to its OWN topic-matched set via lessonSets[subject][lessonId].
+  //      Principles of Business, EDPM, Visual Arts, Theater Arts, and French
+  //      (all 18 lessons). Each lesson resolves to its OWN topic-matched set
+  //      via lessonSets[subject][lessonId].
   //      A subject-level lab (no lessonId) keeps that subject's own deck, so no
   //      foreign-subject component is ever rendered.
   if (lessonId && lessonSets[subjectId]) {
     return <DragDropLabel subjectId={subjectId} experimentType={t} lessonId={lessonId} />;
   }
-  // ---- any other subject (french, history, geography, ag-science):
+  // ---- any other subject (history, geography, ag-science):
   // NEVER a foreign-subject component — that subject's own deck.
   return flash(subjectId);
 }

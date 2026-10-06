@@ -9,6 +9,14 @@ const sampleDecks = {
     { front: "Water", back: "Agua" }, { front: "Food", back: "Comida" },
     { front: "Friend", back: "Amigo" }, { front: "One / Two / Three", back: "Uno / Dos / Tres" },
   ]},
+  french: { title: "French Vocabulary", cards: [
+    { front: "Father", back: "le père" }, { front: "Mother", back: "la mère" },
+    { front: "Brother", back: "le frère" }, { front: "Sister", back: "la sœur" },
+    { front: "Grandparents", back: "les grands-parents" }, { front: "Aunt", back: "la tante" },
+    { front: "Hello", back: "Bonjour" }, { front: "Goodbye", back: "au revoir" },
+    { front: "Thank you", back: "Merci" }, { front: "Please", back: "s'il vous plaît" },
+    { front: "I would like", back: "Je voudrais" }, { front: "How much does it cost?", back: "Combien coûte ?" },
+  ]},
   chemistry: { title: "Chemistry Terms", cards: [
     { front: "Atomic number", back: "Number of protons in the nucleus" },
     { front: "Isotope", back: "Atoms with same protons, different neutrons" },
@@ -148,7 +156,7 @@ const sampleDecks = {
 // general deck so no lesson ever shows another subject's content.
 const SUBJECT_DECK = {
   spanish: "spanish",
-  french: "spanish",
+  french: "french",
   chemistry: "chemistry",
   biology: "biology",
   "human-social-biology": "biology",
