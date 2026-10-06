@@ -65,19 +65,6 @@
     "topic": "ctf-l2-2"
   },
   {
-    "id": "kc6",
-    "question": "Pattern pieces are placed on the fabric with the grain line:",
-    "options": [
-      "Diagonal to the selvedge",
-      "Parallel to the selvedge",
-      "Across the width",
-      "On the bias"
-    ],
-    "answer": "Parallel to the selvedge",
-    "explanation": "Grain affects the hang and stretch of the garment.",
-    "topic": "ctf-l2-3"
-  },
-  {
     "id": "kc7",
     "question": "Harmony and unity in design mean:",
     "options": [
@@ -208,19 +195,6 @@
     "topic": "ctf-l1-3"
   },
   {
-    "id": "kc17",
-    "question": "A French seam is chosen for fine fabric because it:",
-    "options": [
-      "Encloses the raw edges inside the seam",
-      "Is the quickest seam",
-      "Adds stretch",
-      "Needs no pressing"
-    ],
-    "answer": "Encloses the raw edges inside the seam",
-    "explanation": "No raw edge is visible, inside or out.",
-    "topic": "ctf-l2-2"
-  },
-  {
     "id": "kc18",
     "question": "A pattern piece marked 'place on fold' means the piece is:",
     "options": [
@@ -323,5 +297,31 @@
     "answer": "Provide distinctive materials, techniques and identity that imports cannot copy",
     "explanation": "Cultural distinctiveness is a market strength.",
     "topic": "ctf-l5-3"
+  },
+  {
+    "id": "kc26",
+    "question": "A finish that makes rain run off the cloth while the cloth still lets air through is called:",
+    "options": [
+      "Waterproofing",
+      "A water-repellent finish",
+      "A flame-retardant finish",
+      "Mercerising"
+    ],
+    "answer": "A water-repellent finish",
+    "explanation": "A water-repellent finish makes the surface shed water, but the cloth still breathes, so it is not waterproof - a waterproof fabric is coated or laminated so that no water passes at all. Mercerising gives cotton lustre and strength, and a flame retardant slows ignition.",
+    "topic": "ctf-l1-4"
+  },
+  {
+    "id": "kc27",
+    "question": "Colourfastness describes:",
+    "options": [
+      "How quickly a dye powder dissolves",
+      "How well a dyed cloth resists fading and running",
+      "How dark the dyed shade is",
+      "How much the dye costs per metre"
+    ],
+    "answer": "How well a dyed cloth resists fading and running",
+    "explanation": "Colourfastness is the dye's resistance to the things that attack it - washing, sunlight, rubbing against other cloth and perspiration. Deep, bright shades usually show loss first, and a new heavily dyed garment gives out the most loose dye in its first wash.",
+    "topic": "ctf-l1-4"
   }
 ]

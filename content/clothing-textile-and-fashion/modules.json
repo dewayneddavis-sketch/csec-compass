@@ -74,6 +74,30 @@
           "type": "care-label",
           "description": "Care Station: Read the fabric and the symbol, then choose the water temperature, detergent, drying and ironing."
         }
+      },
+      {
+        "id": "ctf-l1-4",
+        "title": "Textiles Colouring and Finishing",
+        "content": "Colour reaches cloth in two broad ways. In dyeing, the whole body of fibre, yarn or cloth takes up the colour; in printing, colour is applied in a pattern, usually to one face of the cloth. Dyeing can be done at three stages - in the fibre before it is spun into yarn, in the yarn before it is woven or knitted, or in the piece after the cloth is made - and the stage chosen decides how even the colour is and what it costs. Fibre-dyed and yarn-dyed cloths, such as checked and striped madras, carry their colour right through the cloth and wear and fade more slowly; piece-dyed cloth is cheaper, but its colour sits mainly near the surface.\n\nThe dye chosen must match the fibre. Direct dyes are cheap and simple on cotton and linen but give only moderate wash fastness. Reactive dyes form a chemical bond with cellulose, so they give cotton and linen the best wash fastness of all. Vat dyes such as indigo are made soluble to enter the fibre and are then oxidised back to an insoluble pigment inside it, which is why denim loses colour slowly and evenly. Acid dyes need an acid bath and are used on wool, silk and nylon; disperse dyes are forced into polyester and other tightly packed synthetics at high temperature and pressure. Natural dyes come from plants and insects - indigo, annatto, turmeric, logwood and cochineal among them - and although they suit the Caribbean craft tradition their shade varies with the plant, the water and the season, so dyers use a mordant such as alum or iron both to fix the dye and to shift its shade. Colour itself is planned on the colour wheel: the primaries mix into the secondaries, colours opposite each other are complementary and give the strongest contrast, and value - how light or dark a colour is - decides whether a scheme reads well on the body.\n\nPattern is built by keeping the dye out of some areas or applying it in a repeat. In batik, wax painted or stamped on to the cloth resists the dye; in tie-dye the cloth is tied, knotted or bound, so the bound parts stay pale; and in printing the colour is applied through a screen, a block or an engraved roller. Discharge printing works the other way round: a paste removes colour that is already in the cloth. Colourfastness is the resistance of a dyed cloth to losing its colour in washing, in sunlight, in rubbing against other cloth (crocking) and in perspiration, and no dye is perfectly fast. A new, deeply dyed garment gives out the most loose dye in its first wash, which is why it is washed on its own, and the care label is followed so that heat and chlorine bleach do not strip the colour out.\n\nA finish is a treatment that changes how cloth looks, feels or behaves, and it may be mechanical or chemical. Mechanical finishes work with heat, pressure and rollers: calendering presses the surface smooth or glossy, embossing stamps a raised pattern, brushing raises a soft pile for warmth, and sanforising is a controlled shrinkage that stops a cotton garment from shrinking further in the wash. Chemical finishes add a substance to the cloth. Mercerising makes cotton lustrous, stronger and more receptive to dye; crease-resist and durable-press resins cut wrinkling but can cost the cloth strength and absorbency; flame retardants slow ignition but do not make cloth fireproof, and some wash out with repeated laundering; water repellents make rain run off while the cloth still lets air through, so they are not the same as waterproofing; and soil-release and stain-resist finishes make stains easier to wash out. No finish lasts for ever, so the care label protects the finish as much as the fibre: chlorine bleach strips colour and many finishes, and a hot iron can glaze or melt a resin.",
+        "objectives": [
+          "Describe how colour is applied to textiles by dyeing and by printing, and how dye classes suit different fibres",
+          "Explain colourfastness, resist methods such as batik and tie-dye, and how care keeps colour in the cloth",
+          "Describe mechanical and chemical finishes and what each one does to the cloth"
+        ],
+        "concepts": [
+          "Dye",
+          "Reactive dye",
+          "Vat dye",
+          "Mordant",
+          "Resist dyeing",
+          "Colourfastness",
+          "Mercerising",
+          "Sanforising"
+        ],
+        "experiment": {
+          "type": "dye-and-finish-lab",
+          "description": "Dye and Finish Lab: match each dye, resist method or finish to what it does to the cloth."
+        }
       }
     ]
   },

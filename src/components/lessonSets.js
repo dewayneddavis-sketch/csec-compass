@@ -1714,6 +1714,20 @@ export const lessonSets = {
         { id: "c5", target: "A circle with a cross through it", label: "Do not dry clean" },
       ],
     },
+    // Colouring and finishing: match each dye, resist method or finish to what it does.
+    "ctf-l1-4": {
+      title: "Dyeing, Printing and Finishing",
+      subtitle: "Drag each dye, resist method or finish to what it does to the cloth.",
+      kind: "match",
+      pairs: [
+        { id: "y1", target: "Bonds chemically with cotton and linen, so the colour holds best", label: "Reactive dye" },
+        { id: "y2", target: "Oxidised to an insoluble pigment inside the fibre, so denim fades slowly", label: "Vat dye (indigo)" },
+        { id: "y3", target: "Fixes a natural dye to the fibre and shifts its shade", label: "Mordant (alum or iron)" },
+        { id: "y4", target: "Wax or ties keep the dye out so the covered parts stay pale", label: "Resist dyeing" },
+        { id: "y5", target: "Makes cotton lustrous, stronger and more receptive to dye", label: "Mercerising" },
+        { id: "y6", target: "A controlled shrinkage that stops cotton shrinking further in the wash", label: "Sanforising" },
+      ],
+    },
     // Tools and the sewing machine — match each tool or part to its job.
     "ctf-l2-1": {
       title: "Tools, Equipment and the Sewing Machine",
