@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { TERMS_LAST_UPDATED, TRADEMARK_DISCLAIMER } from "../data/legal";
+import { TERMS_LAST_UPDATED, TRADEMARK_DISCLAIMER, CG_TRADEMARK_DISCLAIMER } from "../data/legal";
 import "./TermsPage.css";
 
 // Terms of Service.
@@ -22,9 +22,11 @@ export default function TermsPage() {
       </div>
 
       <section className="terms-card terms-callout">
-        <h2>We are not CXC</h2>
+        <h2>We are not CXC or City &amp; Guilds</h2>
         {/* The exact sentence the owner's review asked for — never reworded. */}
         <p className="terms-disclaimer">{TRADEMARK_DISCLAIMER}</p>
+        {/* City & Guilds wording, same card and same weight (owner decision 2026-09-29). */}
+        <p className="terms-disclaimer">{CG_TRADEMARK_DISCLAIMER}</p>
         <p>
           “CSEC” on this site always means the exam we help you prepare for. It never means that
           anything here comes from, or has been checked by, the Caribbean Examinations Council.

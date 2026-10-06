@@ -107,8 +107,11 @@ export function bundleSavingsPct(subjectCount) {
 export function bundleSavingsLabel(subjectCount) {
   const pct = bundleSavingsPct(subjectCount);
   // No saving to claim -> claim nothing.
+  // "Every CSEC subject" stopped being true of the bundle the moment it
+  // carried a subject that is not CSEC, so the no-saving fallback names what
+  // the bundle actually holds - every subject we publish.
   return pct === null
-    ? "Every CSEC subject in one payment"
+    ? "Every subject we publish in one payment"
     : `Save ${pct}% vs buying every subject separately`;
 }
 

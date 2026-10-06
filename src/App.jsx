@@ -18,7 +18,7 @@ import PlannerPage from "./pages/PlannerPage";
 import TermsPage from "./pages/TermsPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import ContactPage from "./pages/ContactPage";
-import { TRADEMARK_DISCLAIMER } from "./data/legal";
+import { TRADEMARK_DISCLAIMER, CG_TRADEMARK_DISCLAIMER } from "./data/legal";
 import InstagramLink from "./components/InstagramLink";
 import { INSTAGRAM_SHORT_CTA } from "./data/social";
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -72,6 +72,10 @@ export default function App() {
                 review 2026-09-22). One shared string so the footer and the Terms
                 page can never disagree. */}
             <p className="app-footer-legal">{TRADEMARK_DISCLAIMER}</p>
+            {/* The City & Guilds counterpart (owner decision 2026-09-29), from the
+                same module, so the two subjects' pages cannot make a different
+                claim from the legal pages. */}
+            <p className="app-footer-legal">{CG_TRADEMARK_DISCLAIMER}</p>
             <p className="app-footer-links">
               <Link to="/terms">Terms of Service</Link>
               <span className="app-footer-sep" aria-hidden="true">·</span>

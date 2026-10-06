@@ -127,7 +127,16 @@ section("2. the page is the privacy half of the review");
 
 check("the /privacy page is a real page with a heading", /<h1>Privacy Policy<\/h1>/.test(privacyPage));
 check("it is dated", /Last updated \{PRIVACY_LAST_UPDATED\}/.test(privacyPage));
-check("the date constant exists and matches the terms date", /PRIVACY_LAST_UPDATED = "22 September 2026"/.test(flatLegal));
+{
+  // Not pinned to a literal: a legal page that changes must say when, and the two
+  // pages must agree. Bumping the date is a normal edit; bumping only ONE of them is
+  // the bug this catches.
+  const termsDate = (flatLegal.match(/TERMS_LAST_UPDATED = "([^"]+)"/) || [])[1];
+  const privacyDate = (flatLegal.match(/PRIVACY_LAST_UPDATED = "([^"]+)"/) || [])[1];
+  check("the date constant exists, is a whole date, and matches the terms date",
+    Boolean(privacyDate) && privacyDate === termsDate && /^\d{1,2} [A-Z][a-z]+ \d{4}$/.test(privacyDate),
+    `terms ${termsDate} / privacy ${privacyDate}`);
+}
 check("it names the Act in full", /Jamaica’s Data Protection Act 2020|Jamaica's Data Protection Act 2020/.test(flatPrivacy) || /Data Protection Act 2020/.test(flatPrivacy));
 check("it says which country's law this is", /Jamaica/.test(flatPrivacy));
 
@@ -204,6 +213,10 @@ check("the footer links to the privacy policy", /<Link to="\/privacy">Privacy Po
 check("the footer still links to the terms", /<Link to="\/terms">Terms of Service<\/Link>/.test(app));
 check("the two footer links are separated by a styled element", /app-footer-sep/.test(app) && /\.app-footer-sep\s*\{/.test(appCss));
 check("the footer keeps the trademark disclaimer", /\{TRADEMARK_DISCLAIMER\}/.test(app));
+check("the footer carries the City & Guilds counterpart too", /\{CG_TRADEMARK_DISCLAIMER\}/.test(app));
+check("the privacy page renders the City & Guilds sentence from the shared constant",
+  /\{CG_TRADEMARK_DISCLAIMER\}/.test(privacyPage));
+check("and it is styled, not left bare", /\.privacy-disclaimer\s*\{/.test(privacyCss));
 const footerAt = app.indexOf('<footer className="app-footer">');
 check("the footer still sits outside <Routes>, so it shows on every route", app.indexOf("</Routes>") < footerAt, `routesClose@${app.indexOf("</Routes>")} footer@${footerAt}`);
 check(

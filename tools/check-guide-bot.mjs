@@ -66,8 +66,9 @@ const {
   GUIDE_TOPICS, GUIDE_FALLBACK, GUIDE_INTRO, GUIDE_CURATED_QUESTIONS,
   GUIDE_SUGGESTED_QUESTIONS, GUIDE_SUBJECT_COUNT, GUIDE_SUBJECT_NAMES,
   GUIDE_BUNDLE_SAVING_PCT, GUIDE_BUNDLE_SAVING_USD, GUIDE_SINGLES_TOTAL,
+  GUIDE_CSEC_COUNT, GUIDE_CITY_GUILDS_COUNT, GUIDE_SUBJECT_LIST_LEAD,
   GUIDE_PRACTICE_QUESTIONS, GUIDE_KNOWLEDGE_CHECK_QUESTIONS, GUIDE_SHOW_WORK_SUBJECTS,
-  matchGuideTopic, guideReply, usd, normalizeGuideText,
+  matchGuideTopic, guideReply, usd, normalizeGuideText, subjectMentionedIn,
 } = guide;
 
 const guideSrc = read("src/data/guideFacts.js");
@@ -159,19 +160,74 @@ check(
   "the bundle price is pricingSubjects' BUNDLE_PRICE",
   pricing.BUNDLE_PRICE === 49.99 && answerFor("pricing-bundle").includes(usd(pricing.BUNDLE_PRICE))
 );
+// Derived, NOT pinned: the totals move with the catalog (23 -> 24 -> 25 as the City
+// & Guilds subjects ship), and pinning the literals is exactly how a stale "80%"
+// could survive a copy review. Rounding is Math.floor, mirroring bundleSavingsPct, so
+// the guide can never overstate the saving.
 check(
-  "the bundle saving is computed, not written down (229.77 − 49.99 = 179.78, 78%)",
-  GUIDE_SINGLES_TOTAL.toFixed(2) === "229.77" &&
-    GUIDE_BUNDLE_SAVING_USD.toFixed(2) === "179.78" &&
-    GUIDE_BUNDLE_SAVING_PCT === 78 &&
-    answerFor("pricing-bundle").includes("229.77") &&
-    answerFor("pricing-bundle").includes("179.78") &&
-    answerFor("pricing-bundle").includes("78%")
+  `the bundle saving is computed, not written down (${GUIDE_SUBJECT_COUNT} x ${pricing.SUBJECT_PRICE} = ${GUIDE_SINGLES_TOTAL.toFixed(2)}, save ${GUIDE_BUNDLE_SAVING_USD.toFixed(2)} = ${GUIDE_BUNDLE_SAVING_PCT}%)`,
+  GUIDE_SINGLES_TOTAL === GUIDE_SUBJECT_COUNT * pricing.SUBJECT_PRICE &&
+    GUIDE_BUNDLE_SAVING_USD === GUIDE_SINGLES_TOTAL - pricing.BUNDLE_PRICE &&
+    GUIDE_BUNDLE_SAVING_PCT === Math.floor((1 - pricing.BUNDLE_PRICE / GUIDE_SINGLES_TOTAL) * 100) &&
+    answerFor("pricing-bundle").includes(GUIDE_SINGLES_TOTAL.toFixed(2)) &&
+    answerFor("pricing-bundle").includes(GUIDE_BUNDLE_SAVING_USD.toFixed(2)) &&
+    answerFor("pricing-bundle").includes(`${GUIDE_BUNDLE_SAVING_PCT}%`)
 );
 check(
   "it also matches the label the Pricing page shows",
-  pricing.bundleSavingsLabel(GUIDE_SUBJECT_COUNT) === "Save 78% vs buying every subject separately"
+  pricing.bundleSavingsLabel(GUIDE_SUBJECT_COUNT) === `Save ${GUIDE_BUNDLE_SAVING_PCT}% vs buying every subject separately`
 );
+// The honesty guards that ride on the same numbers.
+check(
+  "the subject-list answer only calls the total a CSEC count while every subject IS CSEC",
+  GUIDE_CITY_GUILDS_COUNT === 0
+    // no City & Guilds subject yet: the plain sentence is the true one
+    ? /covers \d+ CSEC subjects/.test(answerFor("subjects"))
+    // from the first City & Guilds subject: the total must be described as a split
+    : (!/covers \d+ CSEC subjects/.test(answerFor("subjects")) &&
+       answerFor("subjects").includes(`${GUIDE_CSEC_COUNT} CSEC subjects`) &&
+       answerFor("subjects").includes(`${GUIDE_CITY_GUILDS_COUNT} City & Guilds`)),
+  `CSEC ${GUIDE_CSEC_COUNT} / C&G ${GUIDE_CITY_GUILDS_COUNT}`
+);
+check(
+  "the derived split adds up to the subject count",
+  GUIDE_CSEC_COUNT + GUIDE_CITY_GUILDS_COUNT === GUIDE_SUBJECT_COUNT &&
+    GUIDE_CITY_GUILDS_COUNT === pricing.FALLBACK_SUBJECT_OPTIONS.filter((s) => /^city-guilds-/.test(s.id)).length
+);
+check(
+  "the independence answer carries both shared disclaimers, quoted whole",
+  answerFor("independence").includes(legal.TRADEMARK_DISCLAIMER) &&
+    answerFor("independence").includes(legal.CG_TRADEMARK_DISCLAIMER)
+);
+// The City & Guilds names end in "mathematics" and "english" — the distinctive last
+// words of two CSEC subjects. Matched on the last word they would swallow a plain CSEC
+// question, so these probes are the regression test for that hijack. The first two are
+// true today AND after the subjects ship; the third only becomes meaningful once the
+// two entries are in the subject list, so it is asserted exactly when they are.
+check(
+  "a plain CSEC maths question still resolves to Mathematics",
+  subjectMentionedIn("do you have mathematics?") === "Mathematics",
+  `got ${JSON.stringify(subjectMentionedIn("do you have mathematics?"))}`
+);
+check(
+  "a plain CSEC English A question still resolves to English A",
+  subjectMentionedIn("do you have english a?") === "English A",
+  `got ${JSON.stringify(subjectMentionedIn("do you have english a?"))}`
+);
+check(
+  "bare 'english' still names no subject at all",
+  subjectMentionedIn("do you have english?") === null,
+  `got ${JSON.stringify(subjectMentionedIn("do you have english?"))}`
+);
+if (GUIDE_CITY_GUILDS_COUNT > 0) {
+  check(
+    "the full City & Guilds names resolve to the City & Guilds subjects",
+    subjectMentionedIn("do you have city & guilds mathematics?") === "City & Guilds Mathematics" &&
+      subjectMentionedIn("city and guilds english please") === "City & Guilds English" &&
+      !GUIDE_SUBJECT_NAMES.filter((n) => /^city & guilds/i.test(n)).some((n) => subjectMentionedIn("do you have mathematics?") === n),
+    "the C&G entries must not answer for the CSEC subjects"
+  );
+}
 check(
   "the free preview is access.js's FREE_PREVIEW_LESSONS",
   access.FREE_PREVIEW_LESSONS === 2 &&

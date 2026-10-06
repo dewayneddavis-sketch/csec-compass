@@ -16,6 +16,7 @@ import SimilarQuestionPractice from "./SimilarQuestionPractice";
 import { canPractice, questionKey } from "../data/similarQuestion";
 import { SECONDS_PER_QUESTION, PASS_PERCENTAGE } from "../data/mockExamRules";
 import { buildMockPaper, newMockSeed } from "../data/mockPaper";
+import { isCityGuildsSubject } from "../data/sbaTabs";
 import "./ExtraPractice.css";
 import "./MockExam.css";
 
@@ -36,6 +37,15 @@ function formatTime(totalSeconds) {
   return `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
 }
 
+// "Simulate the real CSEC Paper 1 …" is only true of a CSEC subject. For City &
+// Guilds we describe OUR practice paper and claim nothing about how that
+// qualification is assessed (the owner resolved that assessment mechanics are
+// never asserted anywhere in copy).
+function mockIntroLead(subjectId) {
+  return isCityGuildsSubject(subjectId)
+    ? "Practise exam conditions with"
+    : "Simulate the real CSEC Paper 1 with";
+}
 export default function MockExam({ subjectId }) {
   const [questions, setQuestions] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -209,7 +219,7 @@ export default function MockExam({ subjectId }) {
         <div className="ep-start-card">
           <div className="ep-icon-large">🎓</div>
           <h3>Mock Exam: {subjectId.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}</h3>
-          <p>Simulate the real CSEC Paper 1 with <strong>{total} multiple-choice questions</strong> in{" "}
+          <p>{mockIntroLead(subjectId)} <strong>{total} multiple-choice questions</strong> in{" "}
             <strong>{formatTime(examSeconds)}</strong> ({SECONDS_PER_QUESTION} seconds each).</p>
           <p>Exam conditions: questions appear one at a time, there is <strong>no feedback until you submit</strong>, and the exam{" "}
             <strong>auto-submits when time runs out</strong>.</p>

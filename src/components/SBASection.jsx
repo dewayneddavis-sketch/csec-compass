@@ -1,16 +1,18 @@
 import { useState, useEffect } from "react";
 import "./SBASection.css";
-import { isOralExamSubject, sbaGuideLabel, sbaTabNoun } from "../data/sbaTabs";
+import { sbaComingSoonCopy, sbaGuideLabel, sbaSampleColumnLabel, sbaSampleHeading, sbaSectionHeading, sbaTabNoun } from "../data/sbaTabs";
 
 // CSEC SBA (School-Based Assessment) guide, with a subject-aware name:
 // French and Spanish have no SBA portfolio -- their Paper 03 IS the oral
-// examination -- so those two subjects see "Oral Exam / Paper 03".
+// examination -- so those two subjects see "Oral Exam / Paper 03"; the City &
+// Guilds subjects have no SBA at all and see their own labels. Every word that
+// changes per family comes from src/data/sbaTabs.js, so nothing here can
+// re-introduce a CSEC-only sentence.
 // Loads public/content/<subject>/sba.json and renders the subject's sample
 // SBA: introduction, the task breakdown (with marks), an example sample
 // (title + sections with body/tips), a marking note, and a checklist.
 // Shows a friendly "coming soon" state when the file isn't present yet.
 export default function SBASection({ subjectId }) {
-  const isOral = isOralExamSubject(subjectId);
   const guide = sbaGuideLabel(subjectId);
   const noun = sbaTabNoun(subjectId);
   const [data, setData] = useState(null);
@@ -48,7 +50,7 @@ export default function SBASection({ subjectId }) {
         <div className="sba-empty">
           <div className="sba-empty-icon">📋</div>
           <h3>{guide} Coming Soon</h3>
-          <p>{isOral ? "A step-by-step guide to the Paper 03 oral examination for this subject is being prepared." : "A step-by-step School-Based Assessment guide for this subject is being prepared."}</p>
+          <p>{sbaComingSoonCopy(subjectId)}</p>
           <p className="sba-note">Check back soon to see the task breakdown, a worked sample, marking notes, and a checklist.</p>
         </div>
       </div>
@@ -67,7 +69,7 @@ export default function SBASection({ subjectId }) {
       <div className="sba-intro">
         <div className="sba-intro-icon">📋</div>
         <div>
-          <h3>{isOral ? "CSEC Paper 03 — Oral Examination" : "CSEC School-Based Assessment"}</h3>
+          <h3>{sbaSectionHeading(subjectId)}</h3>
           <p>{data.introduction}</p>
         </div>
       </div>
@@ -150,11 +152,11 @@ export default function SBASection({ subjectId }) {
             )}
             {Array.isArray(completed.categories) && completed.categories.length > 0 && (
               <div className="sba-cat-wrap">
-                <h5 className="sba-subhead">{isOral ? "How this dossier was marked, part by part" : "How this sample earns each SBA category"}</h5>
+                <h5 className="sba-subhead">{sbaSampleHeading(subjectId)}</h5>
                 <div className="sba-table-wrap">
                   <table className="sba-cat-table">
                     <thead>
-                      <tr><th>Category</th><th>Marks</th><th>Awarded</th><th>{isOral ? "What the examiner hears" : "What the examiner sees"}</th></tr>
+                      <tr><th>Category</th><th>Marks</th><th>Awarded</th><th>{sbaSampleColumnLabel(subjectId)}</th></tr>
                     </thead>
                     <tbody>
                       {completed.categories.map((c, i) => (

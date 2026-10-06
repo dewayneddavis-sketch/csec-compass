@@ -26,7 +26,7 @@ import {
   SCHOOL_LICENSES,
   bundleSavingsPct,
 } from "./pricingSubjects.js";
-import { SUPPORT_EMAIL, PRIVACY_CONTACT_EMAIL, TRADEMARK_DISCLAIMER } from "./legal.js";
+import { SUPPORT_EMAIL, PRIVACY_CONTACT_EMAIL, TRADEMARK_DISCLAIMER, CG_TRADEMARK_DISCLAIMER } from "./legal.js";
 import { CONTACT_RESPONSE_WINDOW } from "./contact.js";
 import { FREE_PREVIEW_LESSONS } from "./access.js";
 import { SECONDS_PER_QUESTION, MAX_QUESTIONS, PASS_PERCENTAGE } from "./mockExamRules.js";
@@ -38,6 +38,19 @@ export const GUIDE_SUBJECT_NAMES = FALLBACK_SUBJECT_OPTIONS.map((s) => s.name);
 export const GUIDE_SINGLES_TOTAL = GUIDE_SUBJECT_COUNT * SUBJECT_PRICE; // 229.77
 export const GUIDE_BUNDLE_SAVING_USD = GUIDE_SINGLES_TOTAL - BUNDLE_PRICE; // 179.78
 export const GUIDE_BUNDLE_SAVING_PCT = bundleSavingsPct(GUIDE_SUBJECT_COUNT); // 78
+// Two of the subjects we sell are City & Guilds, not CSEC, so the guide must never
+// call the total a CSEC count. Both numbers are derived from the subject list, never
+// typed, so they cannot drift when the next subject ships.
+export const GUIDE_CSEC_COUNT = FALLBACK_SUBJECT_OPTIONS.filter((s) => !/^city-guilds-/.test(s.id)).length;
+export const GUIDE_CITY_GUILDS_COUNT = GUIDE_SUBJECT_COUNT - GUIDE_CSEC_COUNT;
+// The sentence that introduces the subject list. While every subject we publish IS
+// CSEC it reads exactly as it always has; from the first City & Guilds subject it
+// names the split, so the guide never calls a CSEC-only list "all our subjects".
+export const GUIDE_SUBJECT_LIST_LEAD =
+  GUIDE_CITY_GUILDS_COUNT > 0
+    ? `CSEC Compass covers ${GUIDE_SUBJECT_COUNT} subjects — ${GUIDE_CSEC_COUNT} CSEC subjects and ` +
+      `${GUIDE_CITY_GUILDS_COUNT} City & Guilds ${GUIDE_CITY_GUILDS_COUNT === 1 ? "subject" : "subjects"}:`
+    : `CSEC Compass covers ${GUIDE_SUBJECT_COUNT} CSEC subjects:`;
 
 // Content facts (asserted against every content/<subject>/*.json by the harness).
 export const GUIDE_PRACTICE_QUESTIONS = 100;
@@ -89,7 +102,7 @@ export const GUIDE_TOPICS = [
       "subjects",
     ],
     answer:
-      `CSEC Compass covers ${GUIDE_SUBJECT_COUNT} CSEC subjects:\n\n` +
+      `${GUIDE_SUBJECT_LIST_LEAD}\n\n` +
       GUIDE_SUBJECT_NAMES.map((n) => `• ${n}`).join("\n") +
       "\n\nEvery subject is complete: lessons in modules, a Play lab for each lesson, " +
       `an Extra Practice bank of ${GUIDE_PRACTICE_QUESTIONS} questions, a ` +
@@ -488,11 +501,12 @@ export const GUIDE_TOPICS = [
   },
   {
     id: "independence",
-    title: "CSEC and CXC",
+    title: "CSEC, CXC and City & Guilds",
     sources: ["src/data/legal.js"],
     questions: [
       "Are you affiliated with CXC?",
       "Is this an official CSEC site?",
+      "Are you endorsed by City & Guilds?",
     ],
     keywords: [
       "cxc",
@@ -502,9 +516,12 @@ export const GUIDE_TOPICS = [
       "trademark",
       "caribbean examinations council",
       "is this official",
+      "city & guilds",
+      "guilds",
     ],
     answer:
       `${TRADEMARK_DISCLAIMER}\n\n` +
+      `${CG_TRADEMARK_DISCLAIMER}\n\n` +
       `The lessons, practice questions and marked solutions here are written by us for ` +
       `practice — they are not past papers and not official exam material.`,
   },
@@ -657,12 +674,18 @@ export function scoreGuideTopic(topic, input) {
   return { score, phrases };
 }
 
-// The one thing a keyword list cannot carry: the 23 subject names. Rather than
+// The one thing a keyword list cannot carry: the subject names. Rather than
 // repeat them as keywords, a mention of a subject name (or of its distinctive
 // last word — "biology", "accounts", "chemistry") boosts the subjects topic, so
 // "do you have biology?" lands. The boost is deliberately small: any specific
 // phrase from another topic still outranks it.
 const SUBJECT_TOKEN_STOPLIST = new Set(["option", "and", "of"]);
+// "City & Guilds Mathematics" ends in "mathematics", which is ALSO a CSEC subject's
+// distinctive token (and "City & Guilds English" ends in "english"). Matching those
+// two on their last word alone would answer a plain "do you have mathematics?" with
+// the City & Guilds subject, so they match on their FULL name — or the same name with
+// "&" spelled out as "and" — and never on the last word.
+const FULL_NAME_ONLY_SUBJECTS = new Set(["city-guilds-mathematics", "city-guilds-english"]);
 
 export function subjectMentionedIn(input) {
   const text = normalizeGuideText(input);
@@ -673,7 +696,9 @@ export function subjectMentionedIn(input) {
     const tokens = name.split(" ");
     const last = tokens[tokens.length - 1];
     const needles = [name];
-    if (last.length >= 4 && !SUBJECT_TOKEN_STOPLIST.has(last)) needles.push(last);
+    if (FULL_NAME_ONLY_SUBJECTS.has(subject.id)) {
+      needles.push(name.replace(/^city guilds/, "city and guilds"));
+    } else if (last.length >= 4 && !SUBJECT_TOKEN_STOPLIST.has(last)) needles.push(last);
     if (needles.some((n) => new RegExp(`(^| )${escapeRe(n)}( |$)`).test(text))) {
       return subject.name;
     }
