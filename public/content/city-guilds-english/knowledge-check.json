@@ -1,0 +1,327 @@
+[
+  {
+    "id": "cge-k1",
+    "question": "A passage says: 'The clinic now opens on Saturdays. Staff say the extra day has cut the queue on Mondays, though the waiting room is still full by nine.' What is the main point?",
+    "options": [
+      "The waiting room is full by nine",
+      "A Saturday opening has eased Monday queues",
+      "Staff work on Saturdays",
+      "The clinic has a waiting room"
+    ],
+    "answer": "A Saturday opening has eased Monday queues",
+    "explanation": "The point needs the change and its effect; the full waiting room qualifies the effect but does not carry the point.",
+    "topic": "main-point-and-detail"
+  },
+  {
+    "id": "cge-k2",
+    "question": "Which question does the detail 'deliveries arrive before 8 a.m.' answer in a shop notice about a new loading bay?",
+    "options": [
+      "Why was the bay built?",
+      "When do deliveries arrive?",
+      "Who drives the van?",
+      "How much did the bay cost?"
+    ],
+    "answer": "When do deliveries arrive?",
+    "explanation": "Identify the question the detail answers before deciding whether it is key or a distractor.",
+    "topic": "main-point-and-detail"
+  },
+  {
+    "id": "cge-k3",
+    "question": "You need the closing date from a ten-page handbook. Which approach fits?",
+    "options": [
+      "Close reading of every page",
+      "Scanning for the date",
+      "Skimming for the subject",
+      "Reading the index only"
+    ],
+    "answer": "Scanning for the date",
+    "explanation": "A single known target is a scanning job, whatever the length of the text.",
+    "topic": "skimming-scanning-close-reading"
+  },
+  {
+    "id": "cge-k4",
+    "question": "Which task requires close reading?",
+    "options": [
+      "Finding a phone number",
+      "Deciding whether a writer supports a plan",
+      "Checking a spelling",
+      "Locating a name"
+    ],
+    "answer": "Deciding whether a writer supports a plan",
+    "explanation": "Judgement needs the sentences that carry the argument, read slowly.",
+    "topic": "skimming-scanning-close-reading"
+  },
+  {
+    "id": "cge-k5",
+    "question": "'Do not open the valve unless the pressure gauge reads zero.' When may you open the valve?",
+    "options": [
+      "Whenever you like",
+      "Only when the gauge reads zero",
+      "After opening it slightly",
+      "When the pump is running"
+    ],
+    "answer": "Only when the gauge reads zero",
+    "explanation": "Unless sets the condition that must be met first.",
+    "topic": "instructions-notices-and-workplace-texts"
+  },
+  {
+    "id": "cge-k6",
+    "question": "Which sentence is a condition rather than a step?",
+    "options": [
+      "Rinse the container.",
+      "If the seal is cracked, do not use the container.",
+      "Fill the container halfway.",
+      "Wipe the rim."
+    ],
+    "answer": "If the seal is cracked, do not use the container.",
+    "explanation": "A condition decides whether a step applies; a step is an action to carry out.",
+    "topic": "instructions-notices-and-workplace-texts"
+  },
+  {
+    "id": "cge-k7",
+    "question": "In 'the team put up a strong defence', what does strong mean?",
+    "options": [
+      "Physically powerful",
+      "Convincing and well-argued",
+      "Smelling of sweat",
+      "Expensive"
+    ],
+    "answer": "Convincing and well-argued",
+    "explanation": "With defence, strong means convincing; the physical sense belongs to a different context.",
+    "topic": "vocabulary-and-meaning-in-context"
+  },
+  {
+    "id": "cge-k8",
+    "question": "Which word signals a contrast in 'The plan is cheap, but it is slow'?",
+    "options": [
+      "plan",
+      "cheap",
+      "but",
+      "slow"
+    ],
+    "answer": "but",
+    "explanation": "Contrast is signalled by the joining word, not by the adjectives it separates.",
+    "topic": "vocabulary-and-meaning-in-context"
+  },
+  {
+    "id": "cge-k9",
+    "question": "'The fare rose from $120 to $150 in June.' This is:",
+    "options": [
+      "An opinion",
+      "A checkable fact",
+      "A persuasive device",
+      "A prediction"
+    ],
+    "answer": "A checkable fact",
+    "explanation": "Figures with a date can be verified, which is what makes a statement factual.",
+    "topic": "fact-opinion-and-persuasion"
+  },
+  {
+    "id": "cge-k10",
+    "question": "Which phrase is a persuasive device rather than a fact?",
+    "options": [
+      "The offer ends on Friday",
+      "The best value in town",
+      "The shop opens at eight",
+      "The price is $450"
+    ],
+    "answer": "The best value in town",
+    "explanation": "'Best value' is a judgement presented as information.",
+    "topic": "fact-opinion-and-persuasion"
+  },
+  {
+    "id": "cge-k11",
+    "question": "Two texts on the same flood differ mainly in who they blame. What should your comparison focus on?",
+    "options": [
+      "Their length",
+      "Their purpose and the language each uses",
+      "Their spelling",
+      "Their publication dates only"
+    ],
+    "answer": "Their purpose and the language each uses",
+    "explanation": "Purpose and word choice explain the difference in emphasis, which is the comparison worth making.",
+    "topic": "comparing-texts-and-using-evidence"
+  },
+  {
+    "id": "cge-k12",
+    "question": "What is the first decision in planning a piece of writing?",
+    "options": [
+      "The title",
+      "Purpose and audience",
+      "The number of words",
+      "The handwriting"
+    ],
+    "answer": "Purpose and audience",
+    "explanation": "Purpose and audience decide the content, the register and the order.",
+    "topic": "planning-and-organising-writing"
+  },
+  {
+    "id": "cge-k13",
+    "question": "Which sentence is punctuated correctly?",
+    "options": [
+      "We waited, the bus never came.",
+      "We waited; the bus never came.",
+      "We waited the bus never came.",
+      "We waited: the bus never came"
+    ],
+    "answer": "We waited; the bus never came.",
+    "explanation": "A semicolon joins the two complete thoughts; a comma on its own would be a splice.",
+    "topic": "sentences-paragraphs-and-punctuation"
+  },
+  {
+    "id": "cge-k14",
+    "question": "What does a new paragraph signal to a reader?",
+    "options": [
+      "A new idea or a new stage",
+      "A pause for breath",
+      "A change of font",
+      "A quotation"
+    ],
+    "answer": "A new idea or a new stage",
+    "explanation": "Paragraphing maps the structure of the writing for the reader.",
+    "topic": "sentences-paragraphs-and-punctuation"
+  },
+  {
+    "id": "cge-k15",
+    "question": "Which sentence is correct?",
+    "options": [
+      "The box of paints were on the shelf.",
+      "The box of paints was on the shelf.",
+      "The box of paints were being on the shelf.",
+      "The box of paints be on the shelf."
+    ],
+    "answer": "The box of paints was on the shelf.",
+    "explanation": "The subject is box, so the verb is singular.",
+    "topic": "spelling-grammar-and-word-choice"
+  },
+  {
+    "id": "cge-k16",
+    "question": "Which instruction can be followed by someone who has never done the job?",
+    "options": [
+      "Fix the wiring properly.",
+      "Isolate the circuit at the breaker before touching the wires.",
+      "Be careful with electricity.",
+      "Do the job the usual way."
+    ],
+    "answer": "Isolate the circuit at the breaker before touching the wires.",
+    "explanation": "A followable instruction names the action, the object and the condition.",
+    "topic": "writing-to-inform-and-instruct"
+  },
+  {
+    "id": "cge-k17",
+    "question": "Which sentence connects evidence to a claim?",
+    "options": [
+      "The survey covered 300 homes.",
+      "The survey covered 300 homes, which shows the complaint is widespread.",
+      "The survey was done in May.",
+      "Surveys take time."
+    ],
+    "answer": "The survey covered 300 homes, which shows the complaint is widespread.",
+    "explanation": "The reasoning clause is what turns a fact into support for a claim.",
+    "topic": "writing-to-persuade-and-argue"
+  },
+  {
+    "id": "cge-k18",
+    "question": "What makes an email to a business easy to act on?",
+    "options": [
+      "A friendly greeting only",
+      "A subject line naming the issue, the facts in order, and a clear request",
+      "A long apology",
+      "A single word"
+    ],
+    "answer": "A subject line naming the issue, the facts in order, and a clear request",
+    "explanation": "Readers act on specifics they can find quickly.",
+    "topic": "letters-emails-and-short-reports"
+  },
+  {
+    "id": "cge-k19",
+    "question": "A speaker says: 'Meet me at the office — no, at the depot — at four.' Where should you go?",
+    "options": [
+      "The office",
+      "The depot",
+      "Both",
+      "Nowhere"
+    ],
+    "answer": "The depot",
+    "explanation": "The correction replaces the first instruction.",
+    "topic": "listening-for-information"
+  },
+  {
+    "id": "cge-k20",
+    "question": "Which habit gets in the way of a listener?",
+    "options": [
+      "Pausing between ideas",
+      "Speaking at a steady pace",
+      "Filling every pause with a sound",
+      "Facing the audience"
+    ],
+    "answer": "Filling every pause with a sound",
+    "explanation": "A pause that marks the end of an idea helps; a filler that fills the space does not.",
+    "topic": "speaking-clearly-and-confidently"
+  },
+  {
+    "id": "cge-k21",
+    "question": "Which is an open question?",
+    "options": [
+      "Is the room free?",
+      "What time should I arrive?",
+      "Do you have a form?",
+      "Are you open?"
+    ],
+    "answer": "What time should I arrive?",
+    "explanation": "Open questions ask for information rather than a yes or a no.",
+    "topic": "asking-and-answering-questions"
+  },
+  {
+    "id": "cge-k22",
+    "question": "Which move keeps a discussion productive?",
+    "options": [
+      "Repeating your point more loudly",
+      "Asking a quiet member what they think",
+      "Interrupting the last speaker",
+      "Refusing to decide"
+    ],
+    "answer": "Asking a quiet member what they think",
+    "explanation": "Bringing in an unused view adds to the group's material.",
+    "topic": "taking-part-in-discussions"
+  },
+  {
+    "id": "cge-k23",
+    "question": "What should the close of a short talk do?",
+    "options": [
+      "Introduce a new topic",
+      "Land the main message",
+      "List the sources",
+      "Apologise for the length"
+    ],
+    "answer": "Land the main message",
+    "explanation": "The close is what an audience carries away, so it states the message.",
+    "topic": "giving-a-short-talk"
+  },
+  {
+    "id": "cge-k24",
+    "question": "What makes a request at work easy to grant?",
+    "options": [
+      "A long explanation",
+      "One clear ask, with the reason and a time",
+      "A demand",
+      "Silence"
+    ],
+    "answer": "One clear ask, with the reason and a time",
+    "explanation": "The person who can act needs to know what, why and by when.",
+    "topic": "communicating-at-work-and-in-the-community"
+  },
+  {
+    "id": "cge-k25",
+    "question": "Why write two lines after a spoken agreement?",
+    "options": [
+      "To be polite",
+      "To create a record of what was agreed and when",
+      "To replace the agreement",
+      "To show off"
+    ],
+    "answer": "To create a record of what was agreed and when",
+    "explanation": "Written confirmation is what survives after the conversation is forgotten.",
+    "topic": "communicating-at-work-and-in-the-community"
+  }
+]

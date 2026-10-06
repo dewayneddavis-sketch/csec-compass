@@ -136,5 +136,13 @@
     "name": "French",
     "description": "Learn CSEC French: build vocabulary and grammar, practise the Paper 02 sections and prepare for the oral examination through interactive lessons.",
     "icon": "Language"
+  },
+  {
+    "id": "city-guilds-english",
+    "name": "City & Guilds English",
+    "description": "Prepare for City & Guilds English: reading, writing, and speaking, listening and communicating, with a hands-on lab for every lesson.",
+    "icon": "Description"
   }
+
 ]
+

@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "cge-p1",
+    "question": "Read: 'The health centre will close its doors at noon on Friday so the floor can be resealed. Appointments booked for Friday afternoon have been moved to Monday at the same times, and the pharmacy will stay open.' What is the main point?",
+    "options": [
+      "The pharmacy will stay open",
+      "Friday afternoon appointments have moved to Monday",
+      "The health centre closes at noon on Friday and afternoon appointments move to Monday",
+      "The floor is being resealed on Friday"
+    ],
+    "answer": "The health centre closes at noon on Friday and afternoon appointments move to Monday",
+    "explanation": "The passage has two facts of equal weight and both are needed to state the point. 'The floor is being resealed' explains why, and the pharmacy detail is secondary.",
+    "topic": "main-point-and-detail"
+  },
+  {
+    "id": "cge-p2",
+    "question": "'The bus fare rose again in March, the third increase in eighteen months. Commuters in Linstead say they now pay more for the trip to work than they spend on lunch.' Which sentence states the main point?",
+    "options": [
+      "Commuters spend less on lunch than on fares",
+      "Bus fares have risen three times in eighteen months and commuters feel it",
+      "The fare rose in March",
+      "Linstead has a bus service"
+    ],
+    "answer": "Bus fares have risen three times in eighteen months and commuters feel it",
+    "explanation": "The main point needs both the repeated increases and their effect on passengers. The fare rise alone is a detail; the lunch comparison supports the point.",
+    "topic": "main-point-and-detail"
+  },
+  {
+    "id": "cge-p3",
+    "question": "A notice reads: 'Sports Day shifts to Wednesday 14 May. The track is still being resurfaced after the storm damage in April. Students should bring water and wear house colours.' Which question would need the last sentence, and not the first two?",
+    "options": [
+      "When is Sports Day?",
+      "Why did Sports Day move?",
+      "What should students bring?",
+      "Was there storm damage?"
+    ],
+    "answer": "What should students bring?",
+    "explanation": "Each sentence answers a different question. Only the bring-water instruction is answered by the third sentence.",
+    "topic": "main-point-and-detail"
+  },
+  {
+    "id": "cge-p4",
+    "question": "Which of these details would be a distractor for the question 'How much is the deposit?' in a tenancy letter?",
+    "options": [
+      "The deposit is two months' rent",
+      "The landlord has owned the building since 2019",
+      "The deposit is payable before the keys are handed over",
+      "The deposit is refundable if no damage is found"
+    ],
+    "answer": "The landlord has owned the building since 2019",
+    "explanation": "A distractor is true information that answers a different question. Only the ownership detail says nothing about the amount.",
+    "topic": "main-point-and-detail"
+  },
+  {
+    "id": "cge-p5",
+    "question": "Read: 'Three of the six stalls were empty by nine o'clock. Vendors say the earlier market closing time leaves them no room to sell, and several are considering moving to the roadside.' What is the writer's main point?",
+    "options": [
+      "Three stalls were empty by nine",
+      "Vendors may move to the roadside because the new closing time cuts their selling time",
+      "There are six stalls in the market",
+      "The market closes early"
+    ],
+    "answer": "Vendors may move to the roadside because the new closing time cuts their selling time",
+    "explanation": "The empty stalls and the closing time are the evidence; the point is the vendors' response to it.",
+    "topic": "main-point-and-detail"
+  },
+  {
+    "id": "cge-p6",
+    "question": "Which opening sentence best announces a paragraph whose point is that the school's new reading programme worked?",
+    "options": [
+      "The programme cost $180,000.",
+      "Reading scores rose for the second year running after the programme began.",
+      "Many schools run reading programmes.",
+      "The library opens at eight."
+    ],
+    "answer": "Reading scores rose for the second year running after the programme began.",
+    "explanation": "A topic sentence announces what the paragraph proves. The cost is a detail; the other two options are unrelated facts.",
+    "topic": "main-point-and-detail"
+  },
+  {
+    "id": "cge-p7",
+    "question": "You have a three-page leaflet about a training course and need only the closing date for applications. What should you do?",
+    "options": [
+      "Read all three pages closely",
+      "Scan for the date",
+      "Skim for the general subject",
+      "Read the last paragraph closely"
+    ],
+    "answer": "Scan for the date",
+    "explanation": "You already know exactly what you want, which is the definition of scanning: hunting for one target.",
+    "topic": "skimming-scanning-close-reading"
+  },
+  {
+    "id": "cge-p8",
+    "question": "You must decide whether a two-page article supports or opposes a new tax. Which reading approach fits?",
+    "options": [
+      "Scan for the word tax",
+      "Skim the headings only",
+      "Read closely enough to judge the argument",
+      "Count the paragraphs"
+    ],
+    "answer": "Read closely enough to judge the argument",
+    "explanation": "Judging a position needs slow reading of the sentences that carry the argument, not just the headings.",
+    "topic": "skimming-scanning-close-reading"
+  },
+  {
+    "id": "cge-p9",
+    "question": "Which task is skimming for?",
+    "options": [
+      "Finding the price of one item in a long catalogue",
+      "Deciding whether a document is worth reading properly",
+      "Checking whether a name is spelt correctly",
+      "Learning a definition by heart"
+    ],
+    "answer": "Deciding whether a document is worth reading properly",
+    "explanation": "Skimming gives you the gist and the shape of a text; deciding whether to read it properly is exactly what that gist is for.",
+    "topic": "skimming-scanning-close-reading"
+  },
+  {
+    "id": "cge-p10",
+    "question": "In a timed reading task, which order saves the most time?",
+    "options": [
+      "Read every word, then read the questions",
+      "Read the questions first, then read the whole text closely",
+      "Skim the text, read the questions, find the direct answers, then close-read only what remains",
+      "Answer from the heading alone"
+    ],
+    "answer": "Skim the text, read the questions, find the direct answers, then close-read only what remains",
+    "explanation": "This order spends close reading only where the questions demand it, which is the point of having three speeds.",
+    "topic": "skimming-scanning-close-reading"
+  },
+  {
+    "id": "cge-p11",
+    "question": "A student reads every text at the same speed and runs out of time. What is the honest diagnosis?",
+    "options": [
+      "The texts are too long",
+      "The student never chooses a reading speed",
+      "The questions are unfair",
+      "The student needs a bigger vocabulary"
+    ],
+    "answer": "The student never chooses a reading speed",
+    "explanation": "Reading everything at close-reading speed is the commonest time problem in functional reading tasks.",
+    "topic": "skimming-scanning-close-reading"
+  },
+  {
+    "id": "cge-p12",
+    "question": "Put in workable order: (a) Add the mixture to the boiling water (b) Bring two litres of water to the boil (c) Stir once and lower the heat (d) Measure the flour and water for the mixture",
+    "options": [
+      "d, b, a, c",
+      "b, d, a, c",
+      "a, b, c, d",
+      "d, a, b, c"
+    ],
+    "answer": "d, b, a, c",
+    "explanation": "Two actions can be prepared in parallel, but nothing can be added before the water boils — the sequence rule decides the order.",
+    "topic": "instructions-notices-and-workplace-texts"
+  },
+  {
+    "id": "cge-p13",
+    "question": "'Do not switch on the pump unless the intake valve is fully open.' What does this mean?",
+    "options": [
+      "Switch on the pump, then open the valve",
+      "Open the valve fully first, then switch on the pump",
+      "Never switch on the pump",
+      "Open the valve while the pump runs"
+    ],
+    "answer": "Open the valve fully first, then switch on the pump",
+    "explanation": "Unless states a condition that must be true before the action is taken, exactly like if the valve is not open, do not switch on.",
+    "topic": "instructions-notices-and-workplace-texts"
+  },
+  {
+    "id": "cge-p14",
+    "question": "A form says: 'If the applicant is under eighteen, a guardian must also sign.' Which applicant needs the extra signature?",
+    "options": [
+      "All applicants",
+      "Applicants who are seventeen",
+      "Applicants who are eighteen",
+      "No applicant"
+    ],
+    "answer": "Applicants who are seventeen",
+    "explanation": "Under eighteen means younger than eighteen, so seventeen qualifies and eighteen does not.",
+    "topic": "instructions-notices-and-workplace-texts"
+  },
+  {
+    "id": "cge-p15",
+    "question": "Which detail would you move to the top of a set of instructions about using a pressure cooker?",
+    "options": [
+      "The safest way to release the steam",
+      "The history of pressure cooking",
+      "Where cookers are sold",
+      "The recipe's origin"
+    ],
+    "answer": "The safest way to release the steam",
+    "explanation": "Information that prevents injury belongs before the reader starts, not in a paragraph at the end.",
+    "topic": "instructions-notices-and-workplace-texts"
+  },
+  {
+    "id": "cge-p16",
+    "question": "A colleague's instruction reads: 'Take the readings and then check the meter.' Why is this unclear?",
+    "options": [
+      "It has no numbers",
+      "It does not say when the readings should be taken or what to check for",
+      "It is too long",
+      "Meters cannot be read"
+    ],
+    "answer": "It does not say when the readings should be taken or what to check for",
+    "explanation": "An instruction that a stranger cannot follow is missing the action detail, not the length.",
+    "topic": "instructions-notices-and-workplace-texts"
+  },
+  {
+    "id": "cge-p17",
+    "question": "'Shake well before opening' on a tin of paint is best described as:",
+    "options": [
+      "A step in a sequence",
+      "An optional suggestion",
+      "A condition that changes the result if ignored",
+      "An advertisement"
+    ],
+    "answer": "A step in a sequence",
+    "explanation": "It is an action to take before the next action, which makes it a step, even though it is printed in small type.",
+    "topic": "instructions-notices-and-workplace-texts"
+  },
+  {
+    "id": "cge-p18",
+    "question": "In 'the branch was closed after the storm', what does closed mean?",
+    "options": [
+      "Shut for business",
+      "Nearby",
+      "Careful",
+      "Finished speaking"
+    ],
+    "answer": "Shut for business",
+    "explanation": "The subject — a branch of a business — and the storm context choose the shut sense.",
+    "topic": "vocabulary-and-meaning-in-context"
+  },
+  {
+    "id": "cge-p19",
+    "question": "In 'she kept a close watch on the pot', what does close mean?",
+    "options": [
+      "Shut",
+      "Intimate",
+      "Careful and attentive",
+      "Near in distance only"
+    ],
+    "answer": "Careful and attentive",
+    "explanation": "A watch that is close is an attentive watch; the word shut makes no sense with watch.",
+    "topic": "vocabulary-and-meaning-in-context"
+  },
+  {
+    "id": "cge-p20",
+    "question": "'The bus was late, so the whole group missed the ferry.' Which word in the sentence tells you the result?",
+    "options": [
+      "late",
+      "so",
+      "whole",
+      "missed the ferry"
+    ],
+    "answer": "so",
+    "explanation": "So signals consequence; missed the ferry is the consequence itself rather than the signal.",
+    "topic": "vocabulary-and-meaning-in-context"
+  },
+  {
+    "id": "cge-p21",
+    "question": "What does it mean to describe a price as 'steep'?",
+    "options": [
+      "Difficult to reach",
+      "High",
+      "Unfair",
+      "Sudden"
+    ],
+    "answer": "High",
+    "explanation": "Steep applied to a price means high; the story of a steep hill is only the picture behind it.",
+    "topic": "vocabulary-and-meaning-in-context"
+  },
+  {
+    "id": "cge-p22",
+    "question": "Which replacement keeps the same sense: 'The shop was busy, so the assistant was rushed off her feet.'",
+    "options": [
+      "The assistant was in a hurry all day.",
+      "The assistant was tired.",
+      "The assistant was angry.",
+      "The assistant was off duty."
+    ],
+    "answer": "The assistant was in a hurry all day.",
+    "explanation": "Rushed off her feet describes being kept constantly busy, not a feeling about it.",
+    "topic": "vocabulary-and-meaning-in-context"
+  },
+  {
+    "id": "cge-p23",
+    "question": "In a bank notice, 'cleared funds' means:",
+    "options": [
+      "Money that has been paid into the account and can be used",
+      "Money withdrawn that morning",
+      "A clean note",
+      "An empty account"
+    ],
+    "answer": "Money that has been paid into the account and can be used",
+    "explanation": "Cleared means the payment has finished processing, so the context is the banking sense of the word.",
+    "topic": "vocabulary-and-meaning-in-context"
+  },
+  {
+    "id": "cge-p24",
+    "question": "'The supermarket opens at seven on weekdays.' This statement is:",
+    "options": [
+      "An opinion",
+      "A fact, because it can be checked",
+      "A persuasive device",
+      "A prediction"
+    ],
+    "answer": "A fact, because it can be checked",
+    "explanation": "A statement is a fact when it could be proved or disproved, not when it is guaranteed to be true.",
+    "topic": "fact-opinion-and-persuasion"
+  },
+  {
+    "id": "cge-p25",
+    "question": "'This is the friendliest shop in Portmore.' This statement is:",
+    "options": [
+      "A fact",
+      "An opinion, because it is a judgement",
+      "A definition",
+      "A warning"
+    ],
+    "answer": "An opinion, because it is a judgement",
+    "explanation": "No measurement settles friendliness, which makes it a judgement however confidently it is written.",
+    "topic": "fact-opinion-and-persuasion"
+  },
+  {
+    "id": "cge-p26",
+    "question": "'While stocks last!' in an advertisement is which device?",
+    "options": [
+      "Testimonial",
+      "Urgency",
+      "Loaded words",
+      "A special offer"
+    ],
+    "answer": "Urgency",
+    "explanation": "It pressures the reader to act before thinking, which is what urgency does.",
+    "topic": "fact-opinion-and-persuasion"
+  },
+  {
+    "id": "cge-p27",
+    "question": "A respected athlete appears in an advertisement saying a drink helps her train. Which device is being used?",
+    "options": [
+      "Urgency",
+      "Testimonial",
+      "Loaded words",
+      "A price comparison"
+    ],
+    "answer": "Testimonial",
+    "explanation": "The advertisement borrows trust from a famous person; whether the claim is true is a separate question.",
+    "topic": "fact-opinion-and-persuasion"
+  },
+  {
+    "id": "cge-p28",
+    "question": "Which word is doing persuasive work in 'Only a handful of tickets remain for this unforgettable night'?",
+    "options": [
+      "remain",
+      "tickets",
+      "unforgettable",
+      "night"
+    ],
+    "answer": "unforgettable",
+    "explanation": "Unforgettable tells you how to feel about the event; it is a loaded word rather than a fact.",
+    "topic": "fact-opinion-and-persuasion"
+  },
+  {
+    "id": "cge-p29",
+    "question": "A news paragraph says residents 'are furious' about a blocked drain. What should a careful reader notice?",
+    "options": [
+      "The anger is shown by interviews, so it is reported evidence",
+      "The word furious is a fact",
+      "Residents cannot be furious about drains",
+      "The paragraph is an advertisement"
+    ],
+    "answer": "The anger is shown by interviews, so it is reported evidence",
+    "explanation": "Reports can carry emotion honestly when they show where it came from; what matters is whether the source is named.",
+    "topic": "fact-opinion-and-persuasion"
+  },
+  {
+    "id": "cge-p30",
+    "question": "Two texts describe the same new housing development. One is an estate agent's flyer, the other a residents' association statement. What is the most useful first comparison?",
+    "options": [
+      "Which one is longer",
+      "The purpose and audience of each",
+      "Which one has more photographs",
+      "Which one uses bigger words"
+    ],
+    "answer": "The purpose and audience of each",
+    "explanation": "Purpose and audience explain the differences in emphasis that follow, before any detail is compared.",
+    "topic": "comparing-texts-and-using-evidence"
+  },
+  {
+    "id": "cge-p31",
+    "question": "A claim says 'Text B is more cautious than Text A.' Which evidence supports it best?",
+    "options": [
+      "Text B is shorter.",
+      "Text B says the plan 'may need' a further review.",
+      "Text B was written later.",
+      "Text B mentions the same road as Text A."
+    ],
+    "answer": "Text B says the plan 'may need' a further review.",
+    "explanation": "The hedging word may is the language that makes the text cautious, so it is the evidence rather than the length or date.",
+    "topic": "comparing-texts-and-using-evidence"
+  },
+  {
+    "id": "cge-p32",
+    "question": "Which sentence explains a quotation rather than merely dropping it in?",
+    "options": [
+      "Text A says 'unacceptable'.",
+      "Text A calls it 'unacceptable', and the word leaves the residents no room to negotiate.",
+      "Text A is 'unacceptable'.",
+      "Unacceptable, says Text A."
+    ],
+    "answer": "Text A calls it 'unacceptable', and the word leaves the residents no room to negotiate.",
+    "explanation": "The second half of the sentence says what the quotation does, which is the explanation.",
+    "topic": "comparing-texts-and-using-evidence"
+  },
+  {
+    "id": "cge-p33",
+    "question": "Two texts agree on the facts about a water shortage but one blames the utility and the other blames the weather. The texts therefore:",
+    "options": [
+      "Disagree about the facts",
+      "Agree on facts and differ in emphasis and blame",
+      "Are copies of each other",
+      "Are both unreliable"
+    ],
+    "answer": "Agree on facts and differ in emphasis and blame",
+    "explanation": "The comparison worth making is what each writer does with the shared facts.",
+    "topic": "comparing-texts-and-using-evidence"
+  },
+  {
+    "id": "cge-p34",
+    "question": "Which quotation is the best length for a short comparison answer?",
+    "options": [
+      "A whole paragraph",
+      "About four to ten words that carry the point",
+      "A single word with no context",
+      "Three separate paragraphs"
+    ],
+    "answer": "About four to ten words that carry the point",
+    "explanation": "A short embedded quotation leaves room for your own explanation, which is where the marks are.",
+    "topic": "comparing-texts-and-using-evidence"
+  },
+  {
+    "id": "cge-p35",
+    "question": "You must write a letter asking a landlord to repair a leaking roof in fifteen minutes. What is the best first action?",
+    "options": [
+      "Start writing the greeting",
+      "Decide the purpose, the reader and the order of the facts",
+      "Copy a letter you have seen before",
+      "Write the ending first"
+    ],
+    "answer": "Decide the purpose, the reader and the order of the facts",
+    "explanation": "The one-minute plan settles purpose, audience and order, which is what keeps a timed piece on track.",
+    "topic": "planning-and-organising-writing"
+  },
+  {
+    "id": "cge-p36",
+    "question": "Which order suits a report on an incident at work?",
+    "options": [
+      "Most important first",
+      "Chronological order",
+      "Alphabetical order",
+      "Shortest point first"
+    ],
+    "answer": "Chronological order",
+    "explanation": "A report of what happened is followed most easily as a sequence of events.",
+    "topic": "planning-and-organising-writing"
+  },
+  {
+    "id": "cge-p37",
+    "question": "Which order suits a letter requesting action from a slow supplier?",
+    "options": [
+      "Chronological",
+      "The request, the reason, the next step",
+      "Random",
+      "The longest explanation first"
+    ],
+    "answer": "The request, the reason, the next step",
+    "explanation": "When you want action, the reader should meet the request early rather than hunt for it.",
+    "topic": "planning-and-organising-writing"
+  },
+  {
+    "id": "cge-p38",
+    "question": "What is the main benefit of a one-minute plan before a timed piece?",
+    "options": [
+      "It uses up the time allowance",
+      "It replaces the need to proofread",
+      "It turns writing into filling in a decided order",
+      "It makes the piece longer"
+    ],
+    "answer": "It turns writing into filling in a decided order",
+    "explanation": "Deciding what to say is the slow part; once the order exists, the drafting is much faster.",
+    "topic": "planning-and-organising-writing"
+  },
+  {
+    "id": "cge-p39",
+    "question": "For a piece explaining a new bus route to parents, which detail must the plan settle first?",
+    "options": [
+      "The font",
+      "Who the readers are and what they already know",
+      "The number of paragraphs",
+      "The title's length"
+    ],
+    "answer": "Who the readers are and what they already know",
+    "explanation": "What the reader already knows decides what must be explained and what can be assumed.",
+    "topic": "planning-and-organising-writing"
+  },
+  {
+    "id": "cge-p40",
+    "question": "Which sentence is correctly punctuated?",
+    "options": [
+      "The rain stopped, we went outside.",
+      "The rain stopped; we went outside.",
+      "The rain stopped we went outside.",
+      "The rain stopped, so we went, outside."
+    ],
+    "answer": "The rain stopped; we went outside.",
+    "explanation": "Two complete thoughts joined by a semicolon are punctuated correctly; a comma alone would be a splice.",
+    "topic": "sentences-paragraphs-and-punctuation"
+  },
+  {
+    "id": "cge-p41",
+    "question": "What is wrong with 'I finished the report it was due on Friday'?",
+    "options": [
+      "Nothing",
+      "Two complete thoughts run together with no punctuation",
+      "It uses the wrong tense",
+      "It has a spelling mistake"
+    ],
+    "answer": "Two complete thoughts run together with no punctuation",
+    "explanation": "This is a run-on: a full stop or semicolon is needed between the two complete thoughts.",
+    "topic": "sentences-paragraphs-and-punctuation"
+  },
+  {
+    "id": "cge-p42",
+    "question": "A paragraph begins about school fees and switches midway to the new canteen menu. What is the best fix?",
+    "options": [
+      "Add more commas",
+      "Split the paragraph where the subject changes",
+      "Make the sentences longer",
+      "Add a title"
+    ],
+    "answer": "Split the paragraph where the subject changes",
+    "explanation": "One topic per paragraph; splitting is usually the whole repair.",
+    "topic": "sentences-paragraphs-and-punctuation"
+  },
+  {
+    "id": "cge-p43",
+    "question": "Which sentence is a fragment rather than a complete sentence?",
+    "options": [
+      "The market closed early.",
+      "Because the rain flooded the stalls.",
+      "We left at noon.",
+      "Vendors packed up quickly."
+    ],
+    "answer": "Because the rain flooded the stalls.",
+    "explanation": "Because introduces a reason and leaves the sentence waiting for a main clause.",
+    "topic": "sentences-paragraphs-and-punctuation"
+  },
+  {
+    "id": "cge-p44",
+    "question": "What does a colon usually do in a sentence like 'Bring three things: your ID, the form and a pen'?",
+    "options": [
+      "Ends the sentence",
+      "Introduces the list that explains the first part",
+      "Joins two unrelated ideas",
+      "Shows possession"
+    ],
+    "answer": "Introduces the list that explains the first part",
+    "explanation": "The colon signals that what follows completes or explains what came before.",
+    "topic": "sentences-paragraphs-and-punctuation"
+  },
+  {
+    "id": "cge-p45",
+    "question": "Which sentence uses the apostrophe correctly?",
+    "options": [
+      "The student's are waiting.",
+      "The students' forms are ready.",
+      "The student's forms are ready for all of them.",
+      "The students forms are ready."
+    ],
+    "answer": "The students' forms are ready.",
+    "explanation": "The apostrophe after the s shows that the forms belong to more than one student.",
+    "topic": "sentences-paragraphs-and-punctuation"
+  },
+  {
+    "id": "cge-p46",
+    "question": "Which sentence has correct subject-verb agreement?",
+    "options": [
+      "The list of items are on the desk.",
+      "The list of items is on the desk.",
+      "The list of items were on the desk.",
+      "The list of items be on the desk."
+    ],
+    "answer": "The list of items is on the desk.",
+    "explanation": "The subject is list, not items, so the verb is singular.",
+    "topic": "spelling-grammar-and-word-choice"
+  },
+  {
+    "id": "cge-p47",
+    "question": "Choose the correct word: 'The students put ____ bags in the corner.'",
+    "options": [
+      "there",
+      "their",
+      "they're",
+      "theyre"
+    ],
+    "answer": "their",
+    "explanation": "Their shows possession; there shows place and they're means they are.",
+    "topic": "spelling-grammar-and-word-choice"
+  },
+  {
+    "id": "cge-p48",
+    "question": "Which sentence keeps its tense consistent?",
+    "options": [
+      "She walks into the office and asked for the manager.",
+      "She walked into the office and asked for the manager.",
+      "She walks into the office and had asked for the manager.",
+      "She was walking into the office and asks for the manager."
+    ],
+    "answer": "She walked into the office and asked for the manager.",
+    "explanation": "Both verbs in the past keep the narrative in one tense.",
+    "topic": "spelling-grammar-and-word-choice"
+  },
+  {
+    "id": "cge-p49",
+    "question": "In a job letter, which word best fits the register?",
+    "options": [
+      "I wanna start work soon.",
+      "I want to start as soon as you can take me.",
+      "I am available to begin work from 1 July.",
+      "Gimme a call."
+    ],
+    "answer": "I am available to begin work from 1 July.",
+    "explanation": "Formal writing to an employer is plain, specific and polite.",
+    "topic": "spelling-grammar-and-word-choice"
+  },
+  {
+    "id": "cge-p50",
+    "question": "Which change makes this sentence clearer? 'The meeting was held in the room that is next to the one where the photocopier is kept.'",
+    "options": [
+      "Add more detail about the photocopier",
+      "Put the meeting in the room next to the photocopier room",
+      "Add a comma after meeting",
+      "Change was held to happened"
+    ],
+    "answer": "Put the meeting in the room next to the photocopier room",
+    "explanation": "Shorter and plainer wording carries the same information with less work for the reader.",
+    "topic": "spelling-grammar-and-word-choice"
+  },
+  {
+    "id": "cge-p51",
+    "question": "Which set of instructions is written in a workable order?",
+    "options": [
+      "Add the rice when the water boils. Wash the rice. Measure two cups of water.",
+      "Wash the rice. Measure two cups of water. Add the rice when the water boils.",
+      "Measure two cups of water. Add the rice when the water boils. Wash the rice.",
+      "Add the rice when the water boils. Measure two cups of water. Wash the rice."
+    ],
+    "answer": "Wash the rice. Measure two cups of water. Add the rice when the water boils.",
+    "explanation": "Each step must be possible at the moment the reader reaches it.",
+    "topic": "writing-to-inform-and-instruct"
+  },
+  {
+    "id": "cge-p52",
+    "question": "What belongs at the top of a fire-drill notice for a new member of staff?",
+    "options": [
+      "The history of the building",
+      "What to do and where to assemble",
+      "The names of past wardens",
+      "The cost of the alarm system"
+    ],
+    "answer": "What to do and where to assemble",
+    "explanation": "Safety-critical information goes first so it is read before anything else.",
+    "topic": "writing-to-inform-and-instruct"
+  },
+  {
+    "id": "cge-p53",
+    "question": "Which sentence is an instruction rather than an explanation?",
+    "options": [
+      "The filter removes particles from the water.",
+      "Remove the filter and rinse it under the tap.",
+      "Filters are useful in dry areas.",
+      "This model was introduced last year."
+    ],
+    "answer": "Remove the filter and rinse it under the tap.",
+    "explanation": "An instruction begins with a verb telling the reader what to do.",
+    "topic": "writing-to-inform-and-instruct"
+  },
+  {
+    "id": "cge-p54",
+    "question": "A notice says 'Buses may be delayed'. How would you make it useful to a parent choosing a pick-up time?",
+    "options": [
+      "Add the roadworks causing it and the likely delay in minutes",
+      "Add the name of the bus company",
+      "Add a photograph",
+      "Remove the word delayed"
+    ],
+    "answer": "Add the roadworks causing it and the likely delay in minutes",
+    "explanation": "Readers act on specifics: how long, where, and from when.",
+    "topic": "writing-to-inform-and-instruct"
+  },
+  {
+    "id": "cge-p55",
+    "question": "Which detail should be cut from a two-step instruction for using a fire extinguisher?",
+    "options": [
+      "Pull the pin",
+      "Where the extinguisher was manufactured",
+      "Aim at the base of the fire",
+      "Squeeze the handle"
+    ],
+    "answer": "Where the extinguisher was manufactured",
+    "explanation": "Anything the reader does not need in order to act is clutter.",
+    "topic": "writing-to-inform-and-instruct"
+  },
+  {
+    "id": "cge-p56",
+    "question": "Why is numbering useful in a set of instructions?",
+    "options": [
+      "It makes the page look busy",
+      "It shows the reader how many steps there are and where they are",
+      "It replaces the need for verbs",
+      "It makes the steps optional"
+    ],
+    "answer": "It shows the reader how many steps there are and where they are",
+    "explanation": "Layout is part of instructing clearly, not decoration.",
+    "topic": "writing-to-inform-and-instruct"
+  },
+  {
+    "id": "cge-p57",
+    "question": "Which sentence is a claim rather than evidence?",
+    "options": [
+      "Last year the centre served 400 students.",
+      "The centre needs a second classroom.",
+      "The register shows 42 students in one room.",
+      "The waiting list has grown by 60 names."
+    ],
+    "answer": "The centre needs a second classroom.",
+    "explanation": "The claim states a position; the other three supply support for it.",
+    "topic": "writing-to-persuade-and-argue"
+  },
+  {
+    "id": "cge-p58",
+    "question": "Which sentence explains why a piece of evidence supports a claim?",
+    "options": [
+      "Attendance rose by 12%.",
+      "Attendance rose by 12%, which shows the earlier start time is working.",
+      "Attendance rose by 12%. Next year we should keep it.",
+      "Attendance data exists."
+    ],
+    "answer": "Attendance rose by 12%, which shows the earlier start time is working.",
+    "explanation": "The reasoning clause is what connects the figure to the point being argued.",
+    "topic": "writing-to-persuade-and-argue"
+  },
+  {
+    "id": "cge-p59",
+    "question": "What does conceding a point do for an argument?",
+    "options": [
+      "Weakens it",
+      "Shows the writer has considered the strongest objection",
+      "Ends it",
+      "Replaces the evidence"
+    ],
+    "answer": "Shows the writer has considered the strongest objection",
+    "explanation": "Naming and answering the obvious objection makes the rest of the case more convincing.",
+    "topic": "writing-to-persuade-and-argue"
+  },
+  {
+    "id": "cge-p60",
+    "question": "Which support is the weakest for the claim that the village needs a footbridge?",
+    "options": [
+      "Two pupils were injured crossing in flood water",
+      "Everyone knows the river is dangerous",
+      "The bus now stops on the far side of the river",
+      "The nearest crossing is four kilometres away"
+    ],
+    "answer": "Everyone knows the river is dangerous",
+    "explanation": "An appeal to what everyone knows cannot be checked; the other three are specific and verifiable.",
+    "topic": "writing-to-persuade-and-argue"
+  },
+  {
+    "id": "cge-p61",
+    "question": "In a short argument, what is the best order for one body paragraph?",
+    "options": [
+      "Evidence, claim, link",
+      "Point, evidence, explanation, link",
+      "Explanation, link, claim",
+      "Link, point, evidence"
+    ],
+    "answer": "Point, evidence, explanation, link",
+    "explanation": "The paragraph announces its claim, supports it, explains the support and carries the reader forward.",
+    "topic": "writing-to-persuade-and-argue"
+  },
+  {
+    "id": "cge-p62",
+    "question": "You are emailing a landlord about a broken pipe. Which subject line works best?",
+    "options": [
+      "Hello",
+      "Broken pipe - 14 Hope Road, flat 3 - request for repair",
+      "Important",
+      "URGENT!!!"
+    ],
+    "answer": "Broken pipe - 14 Hope Road, flat 3 - request for repair",
+    "explanation": "Naming the problem and the address lets the reader act without opening the message.",
+    "topic": "letters-emails-and-short-reports"
+  },
+  {
+    "id": "cge-p63",
+    "question": "Which opening fits a letter of complaint to a shop?",
+    "options": [
+      "You people are useless.",
+      "I am writing about a fan I bought at your store on 4 June.",
+      "Dear whoever reads this",
+      "I don't usually complain but"
+    ],
+    "answer": "I am writing about a fan I bought at your store on 4 June.",
+    "explanation": "A complaint earns a reply when it begins with the facts the shop can check.",
+    "topic": "letters-emails-and-short-reports"
+  },
+  {
+    "id": "cge-p64",
+    "question": "What must a short incident report keep separate?",
+    "options": [
+      "The date and the time",
+      "What happened and what should happen next",
+      "Names and addresses",
+      "The title and the signature"
+    ],
+    "answer": "What happened and what should happen next",
+    "explanation": "The sequence is evidence; the recommendation is judgement, and mixing them weakens both.",
+    "topic": "letters-emails-and-short-reports"
+  },
+  {
+    "id": "cge-p65",
+    "question": "Which closing best fits an email requesting a shift change from a supervisor?",
+    "options": [
+      "Whatever.",
+      "Please let me know by Friday whether this is possible.",
+      "I'm begging you.",
+      "Thanks a lot, hope that's ok, sorry to bother you."
+    ],
+    "answer": "Please let me know by Friday whether this is possible.",
+    "explanation": "A request ends well when it names the next step and a time.",
+    "topic": "letters-emails-and-short-reports"
+  },
+  {
+    "id": "cge-p66",
+    "question": "For a notice about a community clean-up, which format works best?",
+    "options": [
+      "A four-page letter",
+      "A short notice with date, time, meeting point and what to bring",
+      "A poem",
+      "A formal report with an appendix"
+    ],
+    "answer": "A short notice with date, time, meeting point and what to bring",
+    "explanation": "The format should fit the reader's need: the four facts that decide whether they come.",
+    "topic": "letters-emails-and-short-reports"
+  },
+  {
+    "id": "cge-p67",
+    "question": "Which sentence is too vague for a report about a faulty machine?",
+    "options": [
+      "The machine stopped at 10.20 and would not restart.",
+      "The machine is always acting up.",
+      "An engineer was called at 10.30.",
+      "The line was stopped for forty minutes."
+    ],
+    "answer": "The machine is always acting up.",
+    "explanation": "Reports need times, figures and observable facts rather than impressions.",
+    "topic": "letters-emails-and-short-reports"
+  },
+  {
+    "id": "cge-p68",
+    "question": "Which register fits an email to a colleague you know well?",
+    "options": [
+      "Dear Sir or Madam, I write to inform you...",
+      "Hi Marcia, can you send me Tuesday's figures?",
+      "TO WHOM IT MAY CONCERN",
+      "Respected Madam"
+    ],
+    "answer": "Hi Marcia, can you send me Tuesday's figures?",
+    "explanation": "Register follows the reader's relationship to you; brevity is respectful between colleagues.",
+    "topic": "letters-emails-and-short-reports"
+  },
+  {
+    "id": "cge-p69",
+    "question": "A caller says: 'Bring the form and the receipt — sorry, the form and your ID.' What should you take?",
+    "options": [
+      "The form and the receipt",
+      "The form and your ID",
+      "Only the form",
+      "The receipt and your ID"
+    ],
+    "answer": "The form and your ID",
+    "explanation": "The speaker corrected themselves, and the correction is the instruction.",
+    "topic": "listening-for-information"
+  },
+  {
+    "id": "cge-p70",
+    "question": "Which word most changes the instruction 'take it before food'?",
+    "options": [
+      "take",
+      "it",
+      "before",
+      "food"
+    ],
+    "answer": "before",
+    "explanation": "Small function words carry conditions; before and after are different instructions.",
+    "topic": "listening-for-information"
+  },
+  {
+    "id": "cge-p71",
+    "question": "Instructions are given quickly. What is the best strategy?",
+    "options": [
+      "Write down every word",
+      "Listen for the job first, then the specifics",
+      "Interrupt after each sentence",
+      "Wait for a transcript"
+    ],
+    "answer": "Listen for the job first, then the specifics",
+    "explanation": "Knowing what the instructions are for makes the details easier to hold.",
+    "topic": "listening-for-information"
+  },
+  {
+    "id": "cge-p72",
+    "question": "You did not catch a number in a spoken address. What is the honest and useful response?",
+    "options": [
+      "Guess it",
+      "Ask the speaker to repeat that number",
+      "Ignore it",
+      "Ask someone else later"
+    ],
+    "answer": "Ask the speaker to repeat that number",
+    "explanation": "Repair — asking for a repeat — is part of listening well, not a failure of it.",
+    "topic": "listening-for-information"
+  },
+  {
+    "id": "cge-p73",
+    "question": "In a spoken announcement, which detail usually comes first for a reason?",
+    "options": [
+      "The date",
+      "The purpose of the announcement",
+      "The names of speakers",
+      "The apology"
+    ],
+    "answer": "The purpose of the announcement",
+    "explanation": "Listeners orient faster when they know what the announcement is about before the detail arrives.",
+    "topic": "listening-for-information"
+  },
+  {
+    "id": "cge-p74",
+    "question": "Which habit helps the listener most?",
+    "options": [
+      "Speaking quickly to finish sooner",
+      "Aiming your voice at the back of the room",
+      "Reading from a full script without looking up",
+      "Filling every pause with a sound"
+    ],
+    "answer": "Aiming your voice at the back of the room",
+    "explanation": "Projection and eye contact carry the words; speed takes them away.",
+    "topic": "speaking-clearly-and-confidently"
+  },
+  {
+    "id": "cge-p75",
+    "question": "What should a pause do in a spoken answer?",
+    "options": [
+      "Fill an awkward moment",
+      "Mark the end of one idea",
+      "Show that you are stuck",
+      "Replace a sentence"
+    ],
+    "answer": "Mark the end of one idea",
+    "explanation": "Pauses are punctuation for speech; they organise, they do not decorate.",
+    "topic": "speaking-clearly-and-confidently"
+  },
+  {
+    "id": "cge-p76",
+    "question": "Which fix best reduces a filler-word habit?",
+    "options": [
+      "Speak faster",
+      "Use shorter spoken sentences so the pause falls at an idea's end",
+      "Add more words",
+      "Read from notes"
+    ],
+    "answer": "Use shorter spoken sentences so the pause falls at an idea's end",
+    "explanation": "Fillers grow where a pause feels unsafe; giving the pause a job removes the need.",
+    "topic": "speaking-clearly-and-confidently"
+  },
+  {
+    "id": "cge-p77",
+    "question": "A candidate speaks very fast in a first interview answer. What is the likely effect?",
+    "options": [
+      "It sounds confident",
+      "The listener loses the first sentence and the detail",
+      "It saves time for later answers",
+      "It improves pronunciation"
+    ],
+    "answer": "The listener loses the first sentence and the detail",
+    "explanation": "Pace is the listener's first casualty, and the opening is where nerves push it highest.",
+    "topic": "speaking-clearly-and-confidently"
+  },
+  {
+    "id": "cge-p78",
+    "question": "What is the best preparation for the first twenty seconds of a short talk?",
+    "options": [
+      "Rehearse them more than the rest",
+      "Improvise them",
+      "Write them out and read them",
+      "Skip them"
+    ],
+    "answer": "Rehearse them more than the rest",
+    "explanation": "Nerves live in the opening, so the opening is what rehearsal buys.",
+    "topic": "speaking-clearly-and-confidently"
+  },
+  {
+    "id": "cge-p79",
+    "question": "Which question is most likely to get a useful answer?",
+    "options": [
+      "Is the form ready?",
+      "What should I bring when I collect the form?",
+      "Do you have forms?",
+      "Is it busy?"
+    ],
+    "answer": "What should I bring when I collect the form?",
+    "explanation": "Open questions invite the detail a closed yes or no answer cannot give.",
+    "topic": "asking-and-answering-questions"
+  },
+  {
+    "id": "cge-p80",
+    "question": "Which spoken answer is complete enough to earn credit?",
+    "options": [
+      "Yes.",
+      "Yes, I have the receipt here and the reference number is on it.",
+      "Maybe.",
+      "I don't know."
+    ],
+    "answer": "Yes, I have the receipt here and the reference number is on it.",
+    "explanation": "A complete answer adds the detail the question implies.",
+    "topic": "asking-and-answering-questions"
+  },
+  {
+    "id": "cge-p81",
+    "question": "You are asked a question you cannot answer at a service desk. What is the strongest response?",
+    "options": [
+      "Say nothing",
+      "Say you do not know and ask who can help",
+      "Change the subject",
+      "Say yes to everything"
+    ],
+    "answer": "Say you do not know and ask who can help",
+    "explanation": "The honest answer plus a next step keeps the conversation useful.",
+    "topic": "asking-and-answering-questions"
+  },
+  {
+    "id": "cge-p82",
+    "question": "Which question suits an interview about your experience?",
+    "options": [
+      "Closed questions only",
+      "Open questions that invite examples",
+      "Trick questions",
+      "Questions about the interviewer"
+    ],
+    "answer": "Open questions that invite examples",
+    "explanation": "Examples are what an interviewer needs and what open questions invite.",
+    "topic": "asking-and-answering-questions"
+  },
+  {
+    "id": "cge-p83",
+    "question": "Why does register matter when asking a question?",
+    "options": [
+      "It changes the answer's accuracy",
+      "It changes how the question is received",
+      "It is required by law",
+      "It has no effect"
+    ],
+    "answer": "It changes how the question is received",
+    "explanation": "The same question phrased to a supervisor, a customer and a friend lands differently.",
+    "topic": "asking-and-answering-questions"
+  },
+  {
+    "id": "cge-p84",
+    "question": "Which answer best handles a question about a weakness in an interview?",
+    "options": [
+      "I have no weaknesses.",
+      "I used to rush my work, so now I check a job against the sheet before I hand it in.",
+      "That is a personal question.",
+      "I am bad at everything."
+    ],
+    "answer": "I used to rush my work, so now I check a job against the sheet before I hand it in.",
+    "explanation": "Naming the weakness with the habit that answers it reads as honest and competent.",
+    "topic": "asking-and-answering-questions"
+  },
+  {
+    "id": "cge-p85",
+    "question": "Which move builds a discussion?",
+    "options": [
+      "Interrupting to repeat your point louder",
+      "Picking up the last point and adding a reason",
+      "Refusing to speak",
+      "Talking until the time ends"
+    ],
+    "answer": "Picking up the last point and adding a reason",
+    "explanation": "Building on another speaker's point gives the group more to work with.",
+    "topic": "taking-part-in-discussions"
+  },
+  {
+    "id": "cge-p86",
+    "question": "Which sentence disagrees without attacking the person?",
+    "options": [
+      "That is a silly idea.",
+      "I see it differently, because the figures show the opposite.",
+      "You never listen.",
+      "Everyone knows that is wrong."
+    ],
+    "answer": "I see it differently, because the figures show the opposite.",
+    "explanation": "Disagreeing with the idea and giving a reason keeps the exchange open.",
+    "topic": "taking-part-in-discussions"
+  },
+  {
+    "id": "cge-p87",
+    "question": "A group member has not spoken in a while. What is the most useful move?",
+    "options": [
+      "Ignore them",
+      "Ask what they think",
+      "Answer for them",
+      "Move to the next item"
+    ],
+    "answer": "Ask what they think",
+    "explanation": "Bringing a quiet member in is a contribution, and the group hears an unused point of view.",
+    "topic": "taking-part-in-discussions"
+  },
+  {
+    "id": "cge-p88",
+    "question": "Which habit shuts a discussion down?",
+    "options": [
+      "Asking someone to say more",
+      "Offering a reason with every opinion",
+      "Dismissing a point without a reason",
+      "Summarising what has been agreed"
+    ],
+    "answer": "Dismissing a point without a reason",
+    "explanation": "A dismissal with no reasoning ends the exchange instead of the question.",
+    "topic": "taking-part-in-discussions"
+  },
+  {
+    "id": "cge-p89",
+    "question": "What is the group usually asked to produce by the end?",
+    "options": [
+      "A winner",
+      "A decision or recommendation with reasons",
+      "A recording",
+      "A list of names"
+    ],
+    "answer": "A decision or recommendation with reasons",
+    "explanation": "Discussion tasks are judged on the outcome and the reasoning that produced it.",
+    "topic": "taking-part-in-discussions"
+  },
+  {
+    "id": "cge-p90",
+    "question": "Which opening best earns the next minute of a talk about road safety?",
+    "options": [
+      "Today I will talk about road safety.",
+      "Last year four students from this school were hit on the crossing outside.",
+      "Road safety is important.",
+      "My topic is roads."
+    ],
+    "answer": "Last year four students from this school were hit on the crossing outside.",
+    "explanation": "A concrete scene or figure earns attention; an announcement of the topic does not.",
+    "topic": "giving-a-short-talk"
+  },
+  {
+    "id": "cge-p91",
+    "question": "What is the best preparation for a three-minute talk?",
+    "options": [
+      "A word-for-word script",
+      "A cue card with headings and a few words",
+      "No preparation",
+      "A full essay"
+    ],
+    "answer": "A cue card with headings and a few words",
+    "explanation": "A script read aloud sounds like reading; cues let the speaker think and speak.",
+    "topic": "giving-a-short-talk"
+  },
+  {
+    "id": "cge-p92",
+    "question": "Which structure fits a short talk best?",
+    "options": [
+      "Opening, three points with an example each, close",
+      "Ten points listed quickly",
+      "Opening, then a long story, then nothing",
+      "Close, then opening"
+    ],
+    "answer": "Opening, three points with an example each, close",
+    "explanation": "A short talk can carry a few supported points; more points means less support.",
+    "topic": "giving-a-short-talk"
+  },
+  {
+    "id": "cge-p93",
+    "question": "Where should the most carefully written sentence of a talk be?",
+    "options": [
+      "In the middle",
+      "At the close",
+      "In the title",
+      "In the second paragraph"
+    ],
+    "answer": "At the close",
+    "explanation": "The close is what an audience carries away, so it is written rather than improvised.",
+    "topic": "giving-a-short-talk"
+  },
+  {
+    "id": "cge-p94",
+    "question": "Why rehearse with a timer?",
+    "options": [
+      "To make the talk longer",
+      "To make the length a feel rather than a guess",
+      "To memorise every word",
+      "To practise speaking faster"
+    ],
+    "answer": "To make the length a feel rather than a guess",
+    "explanation": "Speakers who have never timed themselves are the ones cut off mid-point.",
+    "topic": "giving-a-short-talk"
+  },
+  {
+    "id": "cge-p95",
+    "question": "A customer complains about a delay. What is the strongest opening?",
+    "options": [
+      "It is not my fault.",
+      "I understand you have been waiting. Let me check what is holding it up.",
+      "Calm down.",
+      "There is nothing I can do."
+    ],
+    "answer": "I understand you have been waiting. Let me check what is holding it up.",
+    "explanation": "Acknowledging the experience and offering an action lowers the temperature and produces information.",
+    "topic": "communicating-at-work-and-in-the-community"
+  },
+  {
+    "id": "cge-p96",
+    "question": "Which sentence contains a clear ask?",
+    "options": [
+      "It would be nice if something could be done.",
+      "Please move the stall so the drain can be cleared by Friday.",
+      "Someone should look at this.",
+      "We have been waiting a long time."
+    ],
+    "answer": "Please move the stall so the drain can be cleared by Friday.",
+    "explanation": "A clear ask names the action, the person who can take it and a time.",
+    "topic": "communicating-at-work-and-in-the-community"
+  },
+  {
+    "id": "cge-p97",
+    "question": "You have agreed a shift swap with a supervisor by phone. What should you do next?",
+    "options": [
+      "Nothing, it is agreed",
+      "Send two written lines confirming what was agreed and when",
+      "Tell everyone else first",
+      "Wait for the rota to prove it"
+    ],
+    "answer": "Send two written lines confirming what was agreed and when",
+    "explanation": "Spoken agreements dissolve; a short written record is the thing you can point to later.",
+    "topic": "communicating-at-work-and-in-the-community"
+  },
+  {
+    "id": "cge-p98",
+    "question": "Which register suits a request to a supervisor?",
+    "options": [
+      "Informal, like a message to a friend",
+      "Formal and explicit, with the reason",
+      "A joke and a nickname",
+      "A demand"
+    ],
+    "answer": "Formal and explicit, with the reason",
+    "explanation": "The reader can act for you, which is what makes the register formal and the ask explicit.",
+    "topic": "communicating-at-work-and-in-the-community"
+  },
+  {
+    "id": "cge-p99",
+    "question": "In a community meeting about a blocked drain, what will the committee most value?",
+    "options": [
+      "The loudest complaint",
+      "Specific facts in order and one proposed action",
+      "A long account of past meetings",
+      "Silence"
+    ],
+    "answer": "Specific facts in order and one proposed action",
+    "explanation": "Groups act on specifics and a proposal they can adopt, not on volume.",
+    "topic": "communicating-at-work-and-in-the-community"
+  },
+  {
+    "id": "cge-p100",
+    "question": "Which pair of skills does a job interview mainly test?",
+    "options": [
+      "Handwriting and spelling",
+      "Listening to the question and answering it completely",
+      "Speaking quickly and loudly",
+      "Memorising a script"
+    ],
+    "answer": "Listening to the question and answering it completely",
+    "explanation": "The interview tests the conversation: hear the question, then answer it with a detail or example.",
+    "topic": "communicating-at-work-and-in-the-community"
+  }
+]

@@ -51,6 +51,7 @@ two samples show a completed oral-examination dossier instead of an SBA report.
 | 21 | visual-arts | CSEC SBA | 70 | 6 - practical portfolio (no written paper) | DONE |
 | 22 | french | Oral Exam / Paper 03 | n/a (oral) | 7 - oral examination dossier | DONE |
 | 23 | spanish | Oral Exam / Paper 03 | n/a (oral) | 7 - oral examination dossier | DONE |
+| 24 | city-guilds-english | Speaking & Listening Guide | n/a (spoken) | 8 - prepared-talk dossier | DONE |
 
 Ordering note: the campaign runs by the SBA marks carried in **our own guide** for each subject
 (the `tasks` list in `content/<subject>/sba.json`), so the subjects whose SBA is the largest slice

@@ -1,0 +1,321 @@
+[
+  {
+    "id": "cge-p2-01",
+    "type": "write",
+    "paper": 2,
+    "section": "Reading",
+    "title": "A clinic notice: main point, details and conditions",
+    "topic": "main-point-and-detail",
+    "commandWords": [
+      "Identify",
+      "Explain",
+      "Find"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 20,
+    "source": "NOTICE - SPANISH TOWN HEALTH CENTRE\n\nFrom Monday 6 October the centre will open at 7.30 a.m. instead of 8.00 a.m. because of the number of patients who arrive before the doors open. The pharmacy counter will continue to open at 9.00 a.m., so prescriptions written before 9.00 a.m. can only be collected from the hospital pharmacy on Burke Road.\n\nPatients with an appointment before 9.00 a.m. should use the side gate on Young Street. The main gate will remain closed until 8.30 a.m. while the new ramp is being built. If the ramp is finished earlier, this notice will be replaced and the main gate will open normally - please check the board at the entrance rather than relying on this printed copy.",
+    "prompt": "Read the notice and answer parts (a) to (c) in your own words where possible. Quote from the notice only where a part asks you to.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify TWO changes to the centre's opening arrangements and say what has caused each one.",
+        "marks": 6,
+        "commandWords": [
+          "Identify",
+          "Explain"
+        ],
+        "modelAnswer": "The centre now opens at 7.30 a.m. instead of 8.00 a.m., caused by the number of patients arriving before the doors open. The main gate stays closed until 8.30 a.m. because a new ramp is being built, so patients with early appointments must use the side gate on Young Street.",
+        "markScheme": [
+          "1 mark for each change correctly identified (opening time moved to 7.30 a.m.; main gate closed until 8.30 a.m. / side gate in use). Maximum 2 marks.",
+          "1 mark for each cause correctly matched to its change (patients arriving early; the ramp being built). Maximum 2 marks.",
+          "1 mark for naming the side gate on Young Street as the entrance for early appointments (maximum 1 mark).",
+          "1 mark for both causes being attached to the right change rather than listed separately (maximum 1 mark)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "A patient needs a prescription before 8 a.m. Explain what the notice tells them to do, and why the notice's last sentence matters to them.",
+        "marks": 5,
+        "commandWords": [
+          "Explain",
+          "Suggest"
+        ],
+        "modelAnswer": "They cannot collect it from the centre's pharmacy counter, which still opens at 9 a.m.; a prescription written before 9 a.m. can only be collected from the hospital pharmacy on Burke Road. They should enter by the side gate on Young Street. The last sentence matters because the printed notice may be out of date: if the ramp is finished early the main gate will open normally and the printed copy will no longer be accurate, so the board at the entrance is the version to trust.",
+        "markScheme": [
+          "1 mark for the hospital pharmacy on Burke Road as the place to collect (maximum 1 mark).",
+          "1 mark for the reason: the centre's own counter does not open until 9 a.m. (maximum 1 mark).",
+          "1 mark for using the side gate on Young Street (maximum 1 mark).",
+          "1 mark for explaining that the notice may be replaced - the main gate could open normally sooner (maximum 1 mark).",
+          "1 mark for stating where the current version will be found: the board at the entrance (maximum 1 mark)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Which single sentence of the notice is the most important for someone who has never been to the centre? Explain your choice in two or three sentences using the notice's own words.",
+        "marks": 4,
+        "commandWords": [
+          "Choose",
+          "Explain"
+        ],
+        "modelAnswer": "The most useful sentence is: 'Patients with an appointment before 9.00 a.m. should use the side gate on Young Street.' A first-time visitor needs to know where to arrive, not why the times changed, and without this sentence they would walk to a main gate that is closed until 8.30 a.m. The other sentences explain or qualify the change, but this one changes what the visitor physically does.",
+        "markScheme": [
+          "1 mark for choosing a sentence that directs a first-time visitor to the right entrance (maximum 1 mark).",
+          "1 mark for quoting or naming the sentence accurately (maximum 1 mark).",
+          "1 mark for a reason tied to action: the visitor must know where to go, not why the times changed (maximum 1 mark).",
+          "1 mark for explaining why the other sentences are less useful - they explain or qualify rather than direct (maximum 1 mark)."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cge-p2-02",
+    "type": "write",
+    "paper": 2,
+    "section": "Reading",
+    "title": "An advertisement: fact, opinion and the devices that blur them",
+    "topic": "fact-opinion-and-persuasion",
+    "commandWords": [
+      "Identify",
+      "Explain",
+      "Judge"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 20,
+    "source": "LEARN-WELL INSTITUTE - ADVERTISEMENT\n\nKingston's friendliest evening classes. Over 4,000 students have taken our evening courses since 2019. Our tutors are the best in the island, and our students' results speak for themselves.\n\nEnrol this week and save 25% - while places last. Classes run on Mondays and Wednesdays from 6 p.m. to 8 p.m. at 12 Church Street, Kingston. The enrolment fee is $2,000 per course, including materials and a printed workbook. Ask for Ayanna at the front desk for a free tour of the classrooms.",
+    "prompt": "Read the advertisement. Answer parts (a) to (c), using short quotations from the advertisement where a part asks for them.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Identify ONE checkable fact, ONE opinion and ONE persuasive device from the advertisement, quoting the words for each.",
+        "marks": 6,
+        "commandWords": [
+          "Identify"
+        ],
+        "modelAnswer": "Fact: 'Over 4,000 students have taken our evening courses since 2019' - a figure with a date, which could be checked against enrolment records. Opinion: 'Our tutors are the best in the island' - a judgement about quality that no records settle. Persuasive device: 'Enrol this week and save 25% - while places last', which uses urgency to hurry the reader past the decision.",
+        "markScheme": [
+          "1 mark for a genuinely checkable fact (a figure, date, place or price) and 1 mark for a brief reason it could be checked. Maximum 2 marks.",
+          "1 mark for a genuine opinion and 1 mark for a brief reason it is a judgement. Maximum 2 marks.",
+          "1 mark for naming a device (urgency, loaded words, testimonial, special offer, appeal to popularity) and 1 mark for identifying the words that carry it. Maximum 2 marks."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "The advertisement says the tutors are 'the best in the island'. Explain why this claim cannot be checked, and suggest one piece of information the advertisement could provide instead.",
+        "marks": 5,
+        "commandWords": [
+          "Explain",
+          "Suggest"
+        ],
+        "modelAnswer": "'Best' is a judgement about quality, and no figure settles which tutor is best because people value different things - patience, results, explanation. The claim cannot be checked, so the reader has nothing to weigh. A checkable replacement would be the pass rate of students who completed the course, the number of years each tutor has taught the subject, or the proportion of enrolled students who finished the course.",
+        "markScheme": [
+          "1 mark for identifying that 'best' is a judgement about quality rather than a measurement (maximum 1 mark).",
+          "1 mark for explaining that no single measure settles it because different students value different things (maximum 1 mark).",
+          "1 mark for a checkable replacement - pass rate, completion rate, years of experience or class size (maximum 1 mark).",
+          "1 mark for a second, different checkable replacement (maximum 1 mark).",
+          "1 mark for the suggestion being something the reader could verify rather than another claim (maximum 1 mark)."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "You are advising a friend who is about to enrol. Using the advertisement only, write which details they can rely on and which they should ask about at the front desk. Give a reason for each.",
+        "marks": 4,
+        "commandWords": [
+          "Judge",
+          "Explain"
+        ],
+        "modelAnswer": "They can rely on the practical details, which can be verified: the classes run on Mondays and Wednesdays from 6 p.m. to 8 p.m., the address is 12 Church Street, the fee is $2,000 per course and the price includes materials and a printed workbook. They should ask at the front desk about the 25% saving, because 'while places last' gives no date, and about the claim that tutors are 'the best in the island', because that is a judgement with nothing behind it in the advertisement.",
+        "markScheme": [
+          "1 mark for naming at least two practical, checkable details (times, address, fee, materials). Maximum 1 mark.",
+          "1 mark for explaining that practical details can be verified because they are specific (maximum 1 mark).",
+          "1 mark for identifying something to ask about - the deadline behind 'while places last', or the 'best tutors' claim (maximum 1 mark).",
+          "1 mark for a reason: the saving has no end date, or the claim is a judgement with no evidence in the advertisement (maximum 1 mark)."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cge-p2-03",
+    "type": "write",
+    "paper": 2,
+    "section": "Writing",
+    "title": "Instructions for a new colleague: closing up the shop",
+    "topic": "writing-to-inform-and-instruct",
+    "commandWords": [
+      "Plan",
+      "Write",
+      "Order"
+    ],
+    "marks": 20,
+    "suggestedMinutes": 25,
+    "source": "Your workplace is a small grocery on a busy road. At the end of the day the shop must be closed in the same order every night: the outdoor fruit stand is brought in, the till is cashed up, the fridge doors are checked, the shutters are locked and the alarm is set. The new weekend assistant has never closed the shop alone, and last Saturday the outdoor stand was left out overnight.",
+    "prompt": "Write the set of instructions you would leave for the new weekend assistant. It will be used while you are not there, so it must be possible to follow it without asking you a question.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Plan your instructions: list every action in the order it must happen, and mark the two actions where a mistake would cost money or safety.",
+        "marks": 8,
+        "commandWords": [
+          "Plan",
+          "Order"
+        ],
+        "modelAnswer": "Order of actions: (1) count the money in the till and lock the cash bag in the office safe; (2) bring in the outdoor fruit stand and put the trays on the back shelf; (3) check both fridge doors are fully closed; (4) pull down and lock the front shutters; (5) switch off the counter lights and leave the back light on; (6) set the alarm at the keypad on the wall; (7) leave by the back door and pull it until it clicks. Cost or safety-critical: bringing in the outdoor stand (stock would be lost overnight, which is what happened last Saturday) and setting the alarm (the shop would be unsecured).",
+        "markScheme": [
+          "1 mark for each correctly ordered action, to a maximum of 5 marks, where the order is one that actually works (cash before shutters; stand before the doors are locked; alarm last before leaving).",
+          "1 mark for marking the outdoor stand as a money-critical step (maximum 1 mark).",
+          "1 mark for marking the alarm as the safety-critical step (maximum 1 mark).",
+          "1 mark for the plan being usable by someone who has never closed the shop - every action names what is done (maximum 1 mark)."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Now write the instructions for the assistant. Number the steps, keep each one to one action, and put anything that could cost money or go wrong where it must be read - before it is needed.",
+        "marks": 12,
+        "commandWords": [
+          "Write"
+        ],
+        "modelAnswer": "HOW TO CLOSE THE SHOP - read this before you start.\n\nBefore you touch anything: do not let anyone wait inside the shop while you cash up, and never leave the till open and unattended; if a customer asks to come in after 8 p.m., serve them at the door.\n\n1. Take the till tray to the office and count the money. Put the cash bag in the safe and lock the safe. 2. Bring the outdoor fruit stand inside and put the trays on the back shelf. Do not leave the stand outside, even for the time it takes to cash up. 3. Check both fridge doors are fully closed - push each one until it clicks. 4. Pull down the front shutters and padlock them. 5. Switch off the counter lights and leave the back light on. 6. Set the alarm at the keypad by the office door, using your own code, then wait for the beep. 7. Leave by the back door and pull it until it clicks. If the alarm beeps twice, press your code again and wait; if it beeps three times, call the owner before you leave the building.",
+        "markScheme": [
+          "1 mark for each action written as one instruction, in a workable order, to a maximum of 6 marks.",
+          "2 marks for putting the money-critical warning where it is read before starting rather than at the end (maximum 2 marks).",
+          "2 marks for putting the alarm steps, including what to do if it beeps twice or three times, in the sequence where they are needed (maximum 2 marks).",
+          "1 mark for numbering or another form of signposting that lets a reader find a step quickly (maximum 1 mark).",
+          "1 mark for keeping every step to one action rather than joining two actions in one sentence (maximum 1 mark)."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cge-p2-04",
+    "type": "write",
+    "paper": 2,
+    "section": "Writing",
+    "title": "Letter of complaint: the appliance that failed twice",
+    "topic": "letters-emails-and-short-reports",
+    "commandWords": [
+      "Write",
+      "Explain",
+      "Request"
+    ],
+    "marks": 25,
+    "suggestedMinutes": 30,
+    "source": "Three months ago you bought a two-burner gas stove from a shop on King Street in Kingston. The left burner stopped lighting after six weeks. The shop's technician repaired it and told you it was 'a small adjustment'. Four days later the same burner stopped lighting again, and this time the technician did not come. You have the receipt and both service dockets. You want a replacement stove, not another repair, and you want the shop to collect the faulty one.",
+    "prompt": "Write the letter of complaint to the manager of the shop. Use a format and register that will make it easy for the manager to act, and be clear about what you are asking for and by when.",
+    "planningHints": [
+      "Put the request early: a manager reading a full page should know within three sentences what you want.",
+      "Keep the facts in the order they happened, with the dates, and refer to the receipt and the two service dockets.",
+      "Say what you are asking for - a replacement and collection - and give a date by which you need an answer.",
+      "Stay factual where you are angry: an accusation can be answered with a denial, a date cannot."
+    ],
+    "modelAnswer": "14 Hope Road\nKingston 6\n\n[Date]\n\nThe Manager\nHome Appliance Centre\nKing Street\nKingston\n\nDear Sir or Madam\n\nI am writing about a two-burner gas stove I bought from your shop on King Street, and I am asking you to replace it and to collect the faulty unit from my home.\n\nI bought the stove on 4 June and paid the full price; the receipt is attached. Six weeks later, on 16 July, the left burner stopped lighting. Your technician repaired it and told me it was a small adjustment, and he wrote on the service docket that the burner was working when he left. Four days later, on 20 July, the same burner failed again. I telephoned your shop that morning and was told a technician would call me back to arrange a visit. No one called, and no one has called since.\n\nA stove whose burner fails twice in seven weeks is not a small adjustment, and I am not willing to accept a third repair. I am asking for a replacement stove of the same model, delivered and installed, and for your driver to collect the faulty one at the same time. Please contact me on 876-555-0142 by 8 August so that we can arrange a date.\n\nI have kept both service dockets and I am happy to send copies. I would rather settle this with you than take it further, and I am confident that a shop with your reputation will want to do the same.\n\nYours faithfully\n[Name]\n\nAttachments: receipt (4 June), service docket (16 July), service docket (20 July)",
+    "markScheme": [
+      "Format (5 marks): letter layout with addresses and date (1); appropriate salutation and closing - 'Dear Sir or Madam' with 'Yours faithfully' (2); clear opening that names the product and the request (2).",
+      "Facts in order (8 marks): date of purchase and full price paid with reference to the receipt (2); first failure dated with what the technician did and said (3); second failure dated four days later with the failed telephone request for a visit (3).",
+      "The request (6 marks): a replacement rather than a third repair, stated plainly (2); collection of the faulty unit at the same time as delivery and installation (2); a date by which an answer is needed and a contact telephone number (2).",
+      "Tone and register (4 marks): formal and factual throughout (2); firm without accusation - states dates rather than motives, and leaves the shop room to act (2).",
+      "Clarity and accuracy (2 marks): punctuation, sentence boundaries, spelling and paragraphing accurate enough to read once and act on (2)."
+    ],
+    "examinerTips": "The commonest mistake here is burying the request under a page of grievance. 'I am asking you to replace it' in the first paragraph costs nothing and earns the reader's attention; the same sentence on page three is read by someone already tired. Notice also that the model letter names the technician's own written words - a quotation from a docket is evidence, and evidence is what turns a complaint into a case."
+  },
+  {
+    "id": "cge-p2-05",
+    "type": "write",
+    "paper": 2,
+    "section": "Writing",
+    "title": "Short report: the freezer that was left open",
+    "topic": "writing-to-inform-and-instruct",
+    "commandWords": [
+      "Write",
+      "Record",
+      "Recommend"
+    ],
+    "marks": 25,
+    "suggestedMinutes": 30,
+    "source": "You work at a small restaurant. On Friday 12 September the walk-in freezer door was found open at the start of the lunch shift, and about $40,000 of stock had to be thrown away. The closing checklist for Thursday night was signed by two people, but the freezer is not printed on that checklist at all. The manager has asked you for a short written report: what happened, what it cost, why it happened, and what should change.",
+    "prompt": "Write the short report for the manager. Keep what happened separate from what should happen next, and make sure every claim you make can be traced to something you can point at.",
+    "planningHints": [
+      "Use headings: what happened, what it cost, why it happened, what should change.",
+      "Keep the sequence in the first section - times, places and what you saw - and leave opinions out of it.",
+      "Cost is worth a figure, even an estimated one, as long as you say it is an estimate and where the figure comes from.",
+      "The recommendation section is where judgement belongs: say what should change and who should do it."
+    ],
+    "modelAnswer": "REPORT: WALK-IN FREEZER LEFT OPEN, FRIDAY 12 SEPTEMBER\n\nTo: The Manager. From: [Name], kitchen team. Date: 13 September.\n\n1. What happened\nAt 10.40 a.m. on Friday 12 September I opened the kitchen to start the lunch shift and found the walk-in freezer door standing about thirty centimetres open. The internal temperature display read 14°C. The closing checklist for Thursday night, which is kept on a clip by the back door, was signed by A. Grant and D. Lewis. The freezer does not appear on that checklist.\n\n2. What it cost\nThe head chef and I checked the stock against the delivery docket and set aside the items that had been above 0°C overnight: four trays of chicken, two boxes of fish and three containers of prepared sauce. The delivery docket prices these at $39,600 in total; I have attached a copy of the docket and a list of the items. The kitchen also lost about forty minutes at the start of the shift while the freezer was cleaned down and restocked from the morning delivery.\n\n3. Why it happened\nTwo facts point the same way. The freezer is not named on the closing checklist, so it was not part of what the two staff signed for. Secondly, the freezer door has no alarm and no automatic closer, so an open door produces no signal. I have not been able to establish which of the two staff was last in the freezer, and I am not recording a conclusion on that point: the door is used by every member of the team during the evening.\n\n4. What should change\n1. Add the walk-in freezer to the closing checklist, listed next to the shutter and the gas taps, with a tick box for the door being closed. Owner: the manager, before the next rota. 2. Fit a door alarm with a delay of two minutes, so that a door left open sounds in the kitchen. Owner: the manager, to price this week. 3. Make the temperature reading part of the opening routine, recorded on the same sheet as the delivery check. Owner: the opening chef. 4. Move the checklist clip inside the office door rather than the back door, where it cannot be covered by coats.\n\nI am happy to explain any part of this report, and I have kept the delivery docket in the office.",
+    "markScheme": [
+      "Structure and headings (4 marks): the four required sections, clearly separated (3); the report identified with date, author and reader (1).",
+      "What happened (6 marks): the discovery dated and timed with a description of what was seen, including the door position and the temperature reading (4); the closing checklist named with both signatures and the missing freezer item (2).",
+      "What it cost (5 marks): the specific stock listed (2); a total figure with the source of the figure named and marked as an estimate where it is one (2); the extra time cost mentioned (1).",
+      "Why it happened (5 marks): at least two evidence-based reasons, such as the freezer missing from the checklist and no door alarm (4); the honest statement that the responsible person could not be established, rather than an accusation (1).",
+      "What should change (5 marks): at least three specific recommendations, each with an owner and a time (4); recommendations that follow from the reasons given, not general advice (1)."
+    ],
+    "examinerTips": "Reports are read by people who must act, so the value of this answer is in the fourth section. Notice what the model does with the question of blame: it records that both signatures are on the checklist and that the freezer is not on it, and then says plainly that it has not established who was last in the freezer. 'I do not know' plus the reason is a strong answer; a guess dressed as a conclusion will be the sentence the manager remembers."
+  },
+  {
+    "id": "cge-p2-06",
+    "type": "write",
+    "paper": 2,
+    "section": "Reading and Writing",
+    "title": "Two texts, one decision: a shelter for the bus stop",
+    "topic": "comparing-texts-and-using-evidence",
+    "commandWords": [
+      "Compare",
+      "Explain",
+      "Recommend"
+    ],
+    "marks": 30,
+    "suggestedMinutes": 35,
+    "source": "TEXT A - letter to the parish council, from the Parent-Teacher Association\n\nEvery rainy morning, twenty-two students wait for the bus at the corner of Young Street with no cover. The queue blocks the gate used by the school bus at 8.05 a.m. A shelter would cost about $180,000 in materials and could be built by parents over two weekends. We are asking for one shelter, not a new road, and we are willing to raise half the cost ourselves before the end of term.\n\nTEXT B - note from the parish works office to the council\n\nWe have measured the corner of Young Street. A shelter of the standard size would leave a footway of 1.1 metres at the narrowest point, which is below what our own guidelines allow. The drain cover sits where the shelter's western post would go. Moving the drain would add about $95,000. Alternatively, a smaller shelter of the kind used at the market entrance would leave 1.6 metres and miss the drain. We have no objection to the smaller shelter and we can survey it in October. Until a survey is done, we cannot say what it will cost.",
+    "prompt": "Read both texts and answer parts (a) to (c). Every claim you make about a text must be supported by a short quotation from it.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Compare what the two texts say about the cost and the difficulty of building the shelter at the corner of Young Street.",
+        "marks": 10,
+        "commandWords": [
+          "Compare",
+          "Explain"
+        ],
+        "modelAnswer": "Both texts accept that a shelter is possible, and they agree on the corner as the place, but they treat the cost very differently. Text A names one figure - 'about $180,000 in materials' - and adds a contribution, saying the association is 'willing to raise half the cost ourselves before the end of term'. Text B cares less about the price of the shelter than about the ground it stands on: a standard shelter would leave a footway of '1.1 metres at the narrowest point, which is below what our own guidelines allow', and moving the drain cover 'would add about $95,000'. So Text A presents a single known cost and a plan to meet it, while Text B presents a constraint that changes the design and defers the cost - 'until a survey is done, we cannot say what it will cost'.",
+        "markScheme": [
+          "1 mark for identifying that the two texts agree the corner is the site and that a shelter is possible (maximum 1 mark).",
+          "1 mark for Text A's figure and 1 mark for its quotation ('about $180,000 in materials'). Maximum 2 marks.",
+          "1 mark for Text A's proposed contribution and 1 mark for its quotation ('raise half the cost ourselves'). Maximum 2 marks.",
+          "1 mark for Text B's guideline problem with the quotation about the footway width. Maximum 2 marks.",
+          "1 mark for Text B's extra cost for the drain with its quotation, or for the deferral ('we cannot say what it will cost'), and 1 mark for drawing a comparison sentence that states how the two treatments differ - one fixed known cost against a constraint that changes the design and the cost. Maximum 3 marks."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Text A asks for one shelter and Text B answers with a smaller shelter. Explain, using the texts, why the smaller shelter may still meet the association's purpose.",
+        "marks": 10,
+        "commandWords": [
+          "Explain"
+        ],
+        "modelAnswer": "The association's purpose is written into its own request: students are exposed - 'twenty-two students wait for the bus at the corner of Young Street with no cover' - and the queue blocks the school bus gate at 8.05 a.m. A smaller shelter of the kind used at the market entrance still gives the same students cover and still moves the queue out of the gate's way, and Text B's own wording supports this: it 'would leave 1.6 metres and miss the drain', which is better than the 1.1 metres the standard shelter leaves. The association also says it wants 'one shelter, not a new road', which is about the practical need rather than the size. So the smaller shelter meets the purpose, and only the claim of a particular size is lost.",
+        "markScheme": [
+          "1 mark for quoting the association's purpose - the students waiting with no cover, or the blocked gate at 8.05 a.m. Maximum 1 mark.",
+          "1 mark for pointing out that cover and clearing the gate do not depend on the shelter's size (maximum 1 mark).",
+          "1 mark for quoting Text B's outcome for the smaller shelter (1.6 metres, misses the drain). Maximum 2 marks.",
+          "1 mark for comparing the footway widths - 1.6 metres against 1.1 metres - to show the smaller shelter is the version that meets the guidelines. Maximum 2 marks.",
+          "1 mark for quoting 'one shelter, not a new road' or an equivalent phrase and 1 mark for explaining that the association asked for a practical outcome rather than a particular design. Maximum 3 marks."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "You are advising the council. In no more than 120 words, recommend what should happen next, giving a reason for your recommendation from each text.",
+        "marks": 10,
+        "commandWords": [
+          "Recommend",
+          "Explain",
+          "Justify"
+        ],
+        "modelAnswer": "Recommendation: accept the smaller shelter, survey it in October as offered, and ask the association to hold its fundraising until the survey gives a figure.\n\nThe reason from Text B is that the smaller shelter is the only version that fits: it 'would leave 1.6 metres and miss the drain', so it avoids both the footway problem and the $95,000 drain cost, and the works office has said it has 'no objection'. The reason from Text A is that the association's purpose is cover and a clear gate, not a particular size, and it has already committed to raising half the cost. Delaying the fundraising until the survey is done avoids the association raising money against a figure that the survey may change.",
+        "markScheme": [
+          "1 mark for a clear recommendation that names what should happen next (maximum 1 mark).",
+          "1 mark for a reason drawn from Text B's measurements (1.6 metres, missing the drain) and 1 mark for its quotation. Maximum 2 marks.",
+          "1 mark for a reason drawn from Text A (students without cover, blocked gate, or the offer to fund half) and 1 mark for its quotation. Maximum 2 marks.",
+          "1 mark for each of any TWO sensible practical steps among: accept the smaller design, accept the October survey offer, ask for the survey before fixing a cost, hold fundraising until the figure is known, or ask the works office what the smaller shelter costs. Maximum 2 marks.",
+          "1 mark for keeping inside the 120-word limit and 1 mark for writing to advise (a recommendation register) rather than complaining. Maximum 2 marks."
+        ]
+      }
+    ]
+  }
+]

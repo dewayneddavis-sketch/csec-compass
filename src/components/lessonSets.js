@@ -4833,5 +4833,235 @@ export const lessonSets = {
       ],
     },
   },
+  // City & Guilds English - one topic-matched lab per lesson (18 sets), keyed by lesson
+  // id. Every displayed string is a verbatim phrase from that lesson's own text (asserted
+  // by tools/check-city-guilds-english-labs.mjs).
+  "city-guilds-english": {
+    "main-point-and-detail": {
+      title: "Finding the Main Point & Key Detail",
+      subtitle: "Drag each idea onto the reading term it describes.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "Main point", label: "what the writer most wants you to take away, expressible in one sentence" },
+        { id: "p2", target: "Key detail", label: "the fact, figure or example that carries the point" },
+        { id: "p3", target: "Distractor detail", label: "true information that is not being asked for" },
+        { id: "p4", target: "the question's own key word", label: "how much, how many, why, when, which person" },
+      ],
+    },
+    "skimming-scanning-close-reading": {
+      title: "Skimming, Scanning & Close Reading",
+      subtitle: "Sort each job into the reading speed it needs.",
+      kind: "sort",
+      categories: [
+        { id: "skim", label: "Skim" },
+        { id: "scan", label: "Scan" },
+        { id: "close", label: "Read closely" },
+      ],
+      items: [
+        { id: "i1", label: "the first two minutes of a hospital appointment card", category: "skim" },
+        { id: "i2", label: "the date on the card, the venue in the bulletin", category: "scan" },
+        { id: "i3", label: "a school bulletin of six notices", category: "skim" },
+        { id: "i4", label: "judge, compare or explain", category: "close" },
+      ],
+    },
+    "instructions-notices-and-workplace-texts": {
+      title: "Instructions, Notices & Workplace Texts",
+      subtitle: "Put the three questions of an ordered action list back in order.",
+      kind: "order",
+      items: [
+        { id: "o1", label: "what is done first", order: 1 },
+        { id: "o2", label: "what must be true before a step is attempted", order: 2 },
+        { id: "o3", label: "what happens if it is done out of order", order: 3 },
+      ],
+    },
+    "vocabulary-and-meaning-in-context": {
+      title: "Vocabulary & Meaning in Context",
+      subtitle: "Drag each idea onto the reading tool it describes.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "Context clue", label: "the words around an unknown word that narrow its meaning" },
+        { id: "p2", target: "Register", label: "the level of formality a word carries in a situation" },
+        { id: "p3", target: "Substitution test", label: "replacing a word to check the meaning you chose works" },
+        { id: "p4", target: "the subject of the sentence, the verb it hangs from", label: "the words on either side" },
+      ],
+    },
+    "fact-opinion-and-persuasion": {
+      title: "Fact, Opinion & Persuasive Language",
+      subtitle: "Sort each line into fact, opinion or persuasive device.",
+      kind: "sort",
+      categories: [
+        { id: "fact", label: "Fact" },
+        { id: "opinion", label: "Opinion" },
+        { id: "device", label: "Persuasive device" },
+      ],
+      items: [
+        { id: "i1", label: "the bus leaves at six", category: "fact" },
+        { id: "i2", label: "the bus service is a disgrace", category: "opinion" },
+        { id: "i3", label: "the only school that cares", category: "opinion" },
+        { id: "i4", label: "while stocks last, today only", category: "device" },
+      ],
+    },
+    "comparing-texts-and-using-evidence": {
+      title: "Comparing Two Texts & Using Evidence",
+      subtitle: "Drag each idea onto the comparison tool it describes.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "Evidence", label: "the shortest quotation that proves the point" },
+        { id: "p2", target: "Explanation", label: "the sentence that says what the evidence shows" },
+        { id: "p3", target: "Comparison frame", label: "agreement, difference in emphasis, difference in purpose or audience" },
+        { id: "p4", target: "what does it leave out", label: "the same few questions for each" },
+      ],
+    },
+    "planning-and-organising-writing": {
+      title: "Planning & Organising Your Writing",
+      subtitle: "Put the three stages of planning back in the order this lesson teaches them.",
+      kind: "order",
+      items: [
+        { id: "o1", label: "Turn a task into a purpose, an audience and a length", order: 1 },
+        { id: "o2", label: "Choose an order for your points before you write a sentence", order: 2 },
+        { id: "o3", label: "Use a one-minute plan to keep a timed piece on track", order: 3 },
+      ],
+    },
+    "sentences-paragraphs-and-punctuation": {
+      title: "Sentences, Paragraphs & Punctuation",
+      subtitle: "Sort each description into the sentence or paragraph problem it names.",
+      kind: "sort",
+      categories: [
+        { id: "boundary", label: "Sentence boundary" },
+        { id: "runon", label: "Run-on" },
+        { id: "topic", label: "Topic sentence" },
+      ],
+      items: [
+        { id: "i1", label: "the full stop that separates two complete thoughts", category: "boundary" },
+        { id: "i2", label: "two sentences joined with only a comma or nothing at all", category: "runon" },
+        { id: "i3", label: "the first sentence that announces what the paragraph does", category: "topic" },
+        { id: "i4", label: "a comma splice does the same with a polite mark that pretends to be a full stop", category: "runon" },
+      ],
+    },
+    "spelling-grammar-and-word-choice": {
+      title: "Spelling, Grammar & Word Choice",
+      subtitle: "Drag each description onto the error or check it belongs to.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "Agreement", label: "matching a verb with its subject and a pronoun with its noun" },
+        { id: "p2", target: "Homophone", label: "words that sound alike and mean differently" },
+        { id: "p3", target: "Proofreading", label: "a last pass read for errors only, not for ideas" },
+      ],
+    },
+    "writing-to-inform-and-instruct": {
+      title: "Writing to Inform & Instruct",
+      subtitle: "Put a set of instructions back into an order that works.",
+      kind: "order",
+      items: [
+        { id: "o1", label: "put the equipment out", order: 1 },
+        { id: "o2", label: "heat the oil", order: 2 },
+        { id: "o3", label: "add the dough when the oil shimmers", order: 3 },
+        { id: "o4", label: "turn each piece once", order: 4 },
+        { id: "o5", label: "drain on paper", order: 5 },
+      ],
+    },
+    "writing-to-persuade-and-argue": {
+      title: "Writing to Persuade & Argue",
+      subtitle: "Sort each move into the job it does in an argument.",
+      kind: "sort",
+      categories: [
+        { id: "claim", label: "Claim" },
+        { id: "evidence", label: "Evidence" },
+        { id: "reasoning", label: "Reasoning" },
+        { id: "link", label: "Link" },
+        { id: "concession", label: "Concession" },
+      ],
+      items: [
+        { id: "i1", label: "where you stand", category: "claim" },
+        { id: "i2", label: "a figure, an example, an experience", category: "evidence" },
+        { id: "i3", label: "why that evidence supports that claim", category: "reasoning" },
+        { id: "i4", label: "carries the reader into the next point", category: "link" },
+        { id: "i5", label: "the cost, the inconvenience, the counter-example", category: "concession" },
+      ],
+    },
+    "letters-emails-and-short-reports": {
+      title: "Letters, Emails & Short Reports",
+      subtitle: "Drag each description onto the part of the letter or report it belongs to.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "Format", label: "the layout the reader expects" },
+        { id: "p2", target: "Register", label: "how formal the language is, decided by the reader and the purpose" },
+        { id: "p3", target: "Report structure", label: "what happened, what it means, what should happen next" },
+      ],
+    },
+    "listening-for-information": {
+      title: "Listening for Information & Instructions",
+      subtitle: "Put the three listening strategies back in the order this lesson teaches them.",
+      kind: "order",
+      items: [
+        { id: "o1", label: "understanding the purpose before the detail", order: 1 },
+        { id: "o2", label: "catching names, numbers, times and order", order: 2 },
+        { id: "o3", label: "asking for a repeat or a rephrase instead of guessing", order: 3 },
+      ],
+    },
+    "speaking-clearly-and-confidently": {
+      title: "Speaking Clearly & Confidently",
+      subtitle: "Sort each habit of delivery into the part of delivery it describes.",
+      kind: "sort",
+      categories: [
+        { id: "pace", label: "Pace and projection" },
+        { id: "pause", label: "Pause" },
+        { id: "filler", label: "Filler" },
+      ],
+      items: [
+        { id: "i1", label: "the speed and volume that carry to the back of the room", category: "pace" },
+        { id: "i2", label: "silence used as punctuation, not as a breakdown", category: "pause" },
+        { id: "i3", label: "repeated sounds or words that fill the space where a pause belongs", category: "filler" },
+        { id: "i4", label: "aim your voice at the back of the room rather than the paper in front of you", category: "pace" },
+      ],
+    },
+    "asking-and-answering-questions": {
+      title: "Asking & Answering Questions in Context",
+      subtitle: "Drag each description onto the kind of question or answer it names.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "Open and closed questions", label: "the ones that invite detail and the ones that settle a fact" },
+        { id: "p2", target: "Complete answer", label: "a sentence that does the job rather than one word" },
+        { id: "p3", target: "Register", label: "how formal you are with whom" },
+      ],
+    },
+    "taking-part-in-discussions": {
+      title: "Taking Part in Discussions & Group Talk",
+      subtitle: "Sort each move into builds the conversation or shuts it down.",
+      kind: "sort",
+      categories: [
+        { id: "turn", label: "Turn-taking" },
+        { id: "build", label: "Building" },
+        { id: "close", label: "Closing down" },
+      ],
+      items: [
+        { id: "i1", label: "making a space to speak without talking over others", category: "turn" },
+        { id: "i2", label: "picking up someone else's point and adding to it", category: "build" },
+        { id: "i3", label: "moves that end the exchange rather than the question", category: "close" },
+        { id: "i4", label: "interrupting, dismissing a point without a reason, repeating your own position louder", category: "close" },
+        { id: "i5", label: "I see it differently because", category: "build" },
+      ],
+    },
+    "giving-a-short-talk": {
+      title: "Giving a Short Talk or Presentation",
+      subtitle: "Put the three jobs of a short talk back into the order they happen.",
+      kind: "order",
+      items: [
+        { id: "o1", label: "say what you are going to talk about", order: 1 },
+        { id: "o2", label: "talk about it in two or three moves", order: 2 },
+        { id: "o3", label: "say what you want the audience to take away", order: 3 },
+      ],
+    },
+    "communicating-at-work-and-in-the-community": {
+      title: "Communicating at Work & in the Community",
+      subtitle: "Drag each description onto the speaking tool it names.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "Register", label: "formal, neutral or informal, chosen for the listener" },
+        { id: "p2", target: "Clear ask", label: "the single sentence that says what you want to happen" },
+        { id: "p3", target: "Follow-up", label: "the written record that confirms what was agreed" },
+      ],
+    },
+  },
 };
 
