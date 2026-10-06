@@ -1,28 +1,36 @@
 {
   "subjectId": "french",
-  "introduction": "French has NO School-Based Assessment (SBA). Instead, the CSEC French examination carries a THIRD paper assessed orally: Paper 03, the Oral Examination, worth about 25-30% of the final grade. This guide prepares you for it. Paper 03 has three parts: (1) reading aloud a short passage in French; (2) five spoken responses to written situations, similar to the directed situations of Paper 02 but spoken; and (3) a guided conversation of about sixteen questions on your own life, your family, school, leisure, holidays and plans. Everything except the reading passage is spoken in French, and your examiner is trained to put you at ease. Practise aloud, every day, for short periods: pronunciation, fluency and the confidence to keep speaking when you make a mistake are what earn marks.",
+  "introduction": "French has NO School-Based Assessment (SBA). Instead, the CSEC French examination carries a THIRD paper assessed orally: Paper 03, the Oral Examination. It lasts ten to fifteen minutes per candidate and carries 80 marks, which the syllabus weights at 33 per cent of the whole examination - a third of your French grade. Paper 03 has three sections: (1) spoken responses to situations given in English; (2) reading a passage aloud in French; and (3) a guided conversation of about sixteen questions on your own life, your family, school, leisure, holidays and plans. The written situations belong to Paper 02, which the Paper 2 tab of this subject practises; this guide prepares you for the oral paper, section by section. Everything except the reading passage is spoken in French, and your examiner is trained to put you at ease. Practise aloud, every day, for short periods: pronunciation, fluency and the confidence to keep speaking when you make a mistake are what earn marks.",
   "tasks": [
     {
-      "section": "Part 1 - Reading Aloud",
+      "section": "Section I - Situations",
+      "title": "Five spoken responses to situations given in English",
+      "explanation": "You are given five short situations in English (for example: 'You meet your teacher and greet her', 'You want to know the price of a kilo of rice') and you respond aloud in French, usually one sentence each. Each situation tests a function - greeting, asking, thanking, apologising, explaining what you did - so recognise the function first. This is the spoken version of the directed situations of Paper 02, so the same preparation works for both. Decide 'tu' or 'vous' before you speak, and always complete the sentence; a fragment scores nothing.",
+      "marks": "Marked as part of Paper 03: Section I is worth 25 of the paper's 80"
+    },
+    {
+      "section": "Section II - Reading Aloud",
       "title": "Reading a passage aloud in French",
       "explanation": "You are given a short passage (about 100-130 words) and a few minutes to read it silently. You then read it aloud. Marks are given for pronunciation (especially nasal vowels such as 'on', 'an', 'in'; the French 'r'; and final consonants, which are usually silent), for rhythm and phrasing at punctuation, and for audibility and pace. Practise by recording yourself, then reading along with a native recording of the same passage and imitating it. Read at a steady pace rather than speeding up; a slow, clear reading scores better than a rushed, unclear one.",
-      "marks": "Marked as part of Paper 03."
+      "marks": "Marked as part of Paper 03: Section II is worth 10 of the paper's 80"
     },
     {
-      "section": "Part 2 - Situations",
-      "title": "Five spoken responses to given situations",
-      "explanation": "You are given five short written situations (for example: 'You meet your teacher and greet her', 'You want to know the price of a kilo of rice') and you respond aloud in French, usually one sentence each. This is the spoken version of Section 1 of Paper 02, so the same preparation works for both. Decide 'tu' or 'vous' before you speak, and always complete the sentence; a fragment scores nothing.",
-      "marks": "Five responses, each marked for the task achieved and the language used."
-    },
-    {
-      "section": "Part 3 - Guided Conversation",
+      "section": "Section III - Guided Conversation",
       "title": "A conversation of about sixteen questions",
       "explanation": "The examiner asks you about yourself: your name, age, family, home, school, subjects, free time, sports, food, holidays, last weekend and your future plans. You are not expected to speak for a long time on each question, but you ARE expected to answer, and to add one detail or opinion rather than saying only 'oui' or 'non'. Prepare short, true answers about your own life and adapt them: the same sentences about your family, your school and your weekend answer most of the questions. If you do not understand, say 'Pardon, pouvez-vous répéter, s'il vous plaît ?' - that does not lose marks, but silence does.",
-      "marks": "Marked for comprehension, range and accuracy across the conversation."
+      "marks": "Marked as part of Paper 03: Section III is worth 45 of the paper's 80"
     }
   ],
-  "sampleTitle": "Sample Paper 03 preparation - a prepared conversation",
+  "sampleTitle": "Sample Paper 03 preparation - the situations, the reading passage and the conversation",
   "sample": [
+    {
+      "section": "Situations - model spoken responses",
+      "body": "1. Greet your French teacher in the morning. -> \"Bonjour, Madame. Comment allez-vous ?\"\n2. Ask a friend his age. -> \"Quel âge as-tu ?\"\n3. Ask the price of a loaf of bread. -> \"C'est combien le pain, s'il vous plaît ?\"\n4. Say what you did last weekend. -> \"Le week-end dernier, je suis allé(e) à la plage avec ma famille.\"\n5. Say what you want to do after your exams. -> \"Après mes examens, je voudrais étudier l'informatique à l'université.\"",
+      "tips": [
+        "Say the sentence out loud the moment you have thought of it; hesitation is not penalised, silence is.",
+        "Keep 'tu' for friends and 'vous' for adults - examiners notice."
+      ]
+    },
     {
       "section": "Reading aloud practice",
       "body": "Passage: \"Bonjour, je m'appelle Marc et j'habite à Castries, en Sainte-Lucie. Chaque matin, je me lève à six heures et je prends mon petit déjeuner avec ma famille. Je vais au lycée en bus ; le trajet dure vingt minutes. J'aime la biologie et le français, mais je n'aime pas les mathématiques. Le samedi, je joue au cricket avec mes amis et le dimanche je me repose.\"\n\nRead it aloud three times: first for accuracy, then for rhythm, then in front of someone who will tell you whether you can be heard.",
@@ -30,14 +38,6 @@
         "Say the nasal vowels in 'bonjour' (on), 'matin' (in) and 'français' (an) in the throat, not with the English n.",
         "Do not pronounce the final consonants of 'petit', 'déjeuner' and 'dix heures'.",
         "Pause at every comma and full stop - phrasing is marked."
-      ]
-    },
-    {
-      "section": "Situations - model spoken responses",
-      "body": "1. Greet your French teacher in the morning. -> \"Bonjour, Madame. Comment allez-vous ?\"\n2. Ask a friend his age. -> \"Quel âge as-tu ?\"\n3. Ask the price of a loaf of bread. -> \"C'est combien le pain, s'il vous plaît ?\"\n4. Say what you did last weekend. -> \"Le week-end dernier, je suis allé(e) à la plage avec ma famille.\"\n5. Say what you want to do after your exams. -> \"Après mes examens, je voudrais étudier l'informatique à l'université.\"",
-      "tips": [
-        "Say the sentence out loud the moment you have thought of it; hesitation is not penalised, silence is.",
-        "Keep 'tu' for friends and 'vous' for adults - examiners notice."
       ]
     },
     {
@@ -50,19 +50,19 @@
       ]
     }
   ],
-  "marking": "Paper 03 is marked by your examiner against the CXC oral criteria: comprehension of the questions asked, fluency (the ability to keep speaking without long pauses), pronunciation and intonation, range of vocabulary and structures, and grammatical accuracy. Across the whole paper the Oral Examination is worth about 25-30% of the final CSEC French grade - more than any single written section except the composition - so it is worth preparing as seriously as Paper 02.",
+  "marking": "Paper 03 is marked by your examiner against the CXC oral criteria: comprehension of the questions asked, fluency (the ability to keep speaking without long pauses), pronunciation and intonation, range of vocabulary and structures, and grammatical accuracy. The syllabus weights the paper at 33 per cent of the whole examination - 80 marks of the 240 across the three papers - and within it Section I is worth 25 marks, Section II 10 and Section III 45. That is a third of your French grade carried by ten to fifteen minutes of speaking, and it is the one paper you can rehearse on your own, so prepare it as seriously as the written work.",
   "checklist": [
     "Record yourself reading a French passage aloud once a week and listen for the nasal vowels (on, an, in) and the silent final consonants.",
     "Prepare and rehearse four flexible answers: my family, my school life, my weekend, my future plans.",
     "Prepare one opinion sentence with a reason: \"J'aime ... parce que ...\".",
     "Prepare one past sentence and one future sentence, so that every question can be answered in the tense it asks for.",
-    "Practise the situation responses of Paper 02 Section 1 aloud - they are the same task.",
+    "Practise the situation responses of Paper 02 Section I aloud - they are the same task.",
     "Learn the rescue phrases: \"Pardon, pouvez-vous répéter ?\", \"Je ne comprends pas, s'il vous plaît.\", \"Un moment, s'il vous plaît.\"",
     "Speak French for five minutes every day, out loud, even alone: fluency comes from practice, not from reading.",
     "Remember: silence loses marks, a mistake does not. Keep talking, in French."
   ],
   "completedSample": {
-    "title": "A complete French Paper 03 dossier: the reading passage, the five situations and a sixteen-question conversation",
+    "title": "A complete French Paper 03 dossier: the five situations, the reading passage and a sixteen-question conversation",
     "viewOnlyNote": "For viewing and study only. This is an original dossier written for CSEC Compass by an invented candidate: the passage, the question list, the teachers and every count in it are invented, it is not a real candidate's work, not a record of a real examination, and not a CXC exemplar. Read it, study how each part is prepared, counted and repaired, then prepare and speak your own answers in your own words.",
     "profile": [
       {
@@ -79,7 +79,7 @@
       },
       {
         "label": "Parts sat",
-        "value": "Reading aloud, five situations, a guided conversation of 16 questions"
+        "value": "Five situations, the reading aloud, and a guided conversation of 16 questions"
       },
       {
         "label": "Preparation",
@@ -96,19 +96,19 @@
     ],
     "categories": [
       {
-        "section": "Part 1 - Reading Aloud",
-        "marks": "10",
-        "awarded": "10",
-        "comment": "On this dossier's own ten-point practice scale (the guide publishes no per-part mark allocation for the oral): the 122-word passage was read at a steady 118 words a minute with every pause at the punctuation, and the faults counted by both listeners fell 7 - 3 - 1 across three timed readings of unseen passages. The one fault left standing, the nasal vowel in 'un jour', is written into the log with the daily drill that retired it."
-      },
-      {
-        "section": "Part 2 - Situations",
+        "section": "Section I - Situations",
         "marks": "10",
         "awarded": "10",
         "comment": "All five situations were answered aloud in French as complete sentences, against the guide's own model responses and with 'tu' or 'vous' decided before speaking. 3 of the five answers were rebuilt after the first mock oral - a one-word greeting, a past-weekend answer spoken in the present tense, and a price asked as a book sentence - which is the 'task achieved' half of what a situation is marked for."
       },
       {
-        "section": "Part 3 - Guided Conversation",
+        "section": "Section II - Reading Aloud",
+        "marks": "10",
+        "awarded": "10",
+        "comment": "On this dossier's own ten-point practice scale (the guide publishes the paper's own allocation - 25, 10 and 45 marks across the three sections - and these columns are a practice scale, not those marks): the 122-word passage was read at a steady 118 words a minute with every pause at the punctuation, and the faults counted by both listeners fell 7 - 3 - 1 across three timed readings of unseen passages. The one fault left standing, the nasal vowel in 'un jour', is written into the log with the daily drill that retired it."
+      },
+      {
+        "section": "Section III - Guided Conversation",
         "marks": "10",
         "awarded": "10",
         "comment": "16 questions, 16 spoken answers: four of them the prepared answers word for word and 12 adapted from them with a reason, a time or an extra detail. The first mock oral counted 4 answers of only 'oui' or 'non' and 2 silences longer than five seconds; the second counted none of either, and the one question I did not catch was answered with the rescue phrase the guide teaches instead of with silence."
@@ -117,7 +117,7 @@
     "pages": [
       {
         "heading": "Method - how this dossier was prepared, recorded and reviewed",
-        "body": "Ten weeks, 60 five-minute speaking sessions and two recorded mock orals stand behind this dossier. The routine was the same every day: read a passage aloud once, answer the five situations, answer six questions drawn from the sixteen, then write down what went wrong while it was still fresh. One recording was kept every week from week 4 - 7 recordings in all - and the two mock orals in weeks 9 and 10 were recorded and counted with the same tally sheet as the weekly sessions, which is the only reason the two columns in the results pages can be compared at all.\n\nEverything in the method comes from the guide on this tab. Its first point is that the reading passage belongs to the examiner, so weeks 1 to 3 were spent rehearsing the guide's own practice passage (the student in Castries - a text to be read aloud, not a description of me) and every week after that on a passage nobody had seen: the three timed readings in Part 1 are readings of an unseen passage. Its second point is that the five situations are the same task as Paper 02 Section 1, spoken instead of written, so they were rehearsed from week 1 against the guide's own five model responses. Its third point is that four flexible answers - family, school, weekend, plans - will carry the sixteen questions of the guided conversation, so those four were written in week 2 and every session after that was spent adapting them rather than learning new sentences.\n\nNothing here was written up at the end. The fault counts, the practice-run counts and the spoken answers that follow are the notes taken while the sessions were happening, which is why the pages below can show a first run that was weak next to a second run that was not.",
+        "body": "Ten weeks, 60 five-minute speaking sessions and two recorded mock orals stand behind this dossier. The routine was the same every day: read a passage aloud once, answer the five situations, answer six questions drawn from the sixteen, then write down what went wrong while it was still fresh. One recording was kept every week from week 4 - 7 recordings in all - and the two mock orals in weeks 9 and 10 were recorded and counted with the same tally sheet as the weekly sessions, which is the only reason the two columns in the results pages can be compared at all.\n\nEverything in the method comes from the guide on this tab. Its first point is that the five situations are the same task as Paper 02's directed situations, spoken instead of written, so they were rehearsed from week 1 against the guide's own five model responses. Its second point is that the reading passage belongs to the examiner, so weeks 1 to 3 were spent rehearsing the guide's own practice passage (the student in Castries - a text to be read aloud, not a description of me) and every week after that on a passage nobody had seen: the three timed readings in Section II are readings of an unseen passage. Its third point is that four flexible answers - family, school, weekend, plans - will carry the sixteen questions of the guided conversation, so those four were written in week 2 and every session after that was spent adapting them rather than learning new sentences.\n\nNothing here was written up at the end. The fault counts, the practice-run counts and the spoken answers that follow are the notes taken while the sessions were happening, which is why the pages below can show a first run that was weak next to a second run that was not.",
         "bullets": [
           "60 five-minute sessions over 10 weeks = 300 minutes, or 5 hours, of French spoken aloud",
           "7 recordings kept, one every week from week 4 to week 10",
@@ -126,7 +126,91 @@
         ]
       },
       {
-        "heading": "Part 1 - the passage I was given, and my three timed readings of it",
+        "heading": "Section I - the five situations, and what I said out loud for each one",
+        "body": "The five situations are the spoken version of Paper 02 Section 1 - the guide on this tab says so - so they were rehearsed from the first week against the guide's own five model responses, and the answers below are those model responses, word for word, as they were spoken in the week 10 run. What the first mock oral exposed is that a situation is marked for the task achieved as well as for the language: a sentence can be perfectly correct and still not do the job it was asked to do. The last column is the two-second check I now make before speaking - who I am speaking to, and which tense the situation asks for.",
+        "table": {
+          "caption": "The five situations of the week 10 mock oral, with the spoken answer and the check made before speaking. Three of the five answers were rebuilt after the first run; the other two were already right.",
+          "columns": [
+            "Situation given (read in English, answered aloud in French)",
+            "My spoken answer (week 10 run)",
+            "What I checked before speaking"
+          ],
+          "rows": [
+            [
+              "Greet your French teacher in the morning.",
+              "Bonjour, Madame. Comment allez-vous ?",
+              "Vous, not tu - and the greeting is not finished at 'Bonjour', so the question has to go to the end."
+            ],
+            [
+              "Ask a friend his age.",
+              "Quel âge as-tu ?",
+              "Tu, because he is a friend, and the question form rather than a statement with a rising voice."
+            ],
+            [
+              "Ask the price of a loaf of bread.",
+              "C'est combien le pain, s'il vous plaît ?",
+              "Vous to the shopkeeper, with 's'il vous plaît' at the end: a request without it sounds like an order."
+            ],
+            [
+              "Say what you did last weekend.",
+              "Le week-end dernier, je suis allé à la plage avec ma famille.",
+              "Passé composé with être, so the past participle agrees - 'allé', not 'allé(e)', and not the present 'vais'."
+            ],
+            [
+              "Say what you want to do after your exams.",
+              "Après mes examens, je voudrais étudier l'informatique à l'université.",
+              "The conditional 'je voudrais' for a plan that is not fixed yet, plus the time marker 'après mes examens'."
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Results - Section I: the answers I had to rebuild, and why",
+        "body": "The first mock oral, in week 9, exposed three answers whose vocabulary was fine and whose task was not. The greeting stopped at 'Bonjour' - a complete word and an incomplete task. The answer about last weekend was spoken in the present tense ('le week-end dernier, je vais à la plage'), which answers a different question from the one asked. And the price of the bread was asked as 'Combien coûte le pain ?': correct French that a shopkeeper never hears put that way, where the guide's 'C'est combien le pain, s'il vous plaît ?' is the phrasing to keep. The other two - the friend's age and the plan after exams - came out the same way in both runs. Rebuilding three answers took one session; hearing them took a recorded mock oral.",
+        "table": {
+          "caption": "The same five situations, side by side across the two runs, with the reason each changed or did not.",
+          "columns": [
+            "The situation",
+            "Week 9 (first mock oral)",
+            "Week 10 (second mock oral)",
+            "Why it changed"
+          ],
+          "rows": [
+            [
+              "Greet your French teacher in the morning.",
+              "Bonjour, Madame.",
+              "Bonjour, Madame. Comment allez-vous ?",
+              "The greeting is a task, not a word: 'Bonjour' on its own leaves the examiner one word to mark and the situation unfinished."
+            ],
+            [
+              "Ask a friend his age.",
+              "Quel âge as-tu ?",
+              "Quel âge as-tu ?",
+              "Unchanged: the question form was right in both runs, so there was nothing to rebuild."
+            ],
+            [
+              "Ask the price of a loaf of bread.",
+              "Combien coûte le pain ?",
+              "C'est combien le pain, s'il vous plaît ?",
+              "Correct French, wrong register for the moment: 'Combien coûte le pain ?' is a book sentence, and the guide's phrasing is what a customer says."
+            ],
+            [
+              "Say what you did last weekend.",
+              "Le week-end dernier, je vais à la plage avec ma famille.",
+              "Le week-end dernier, je suis allé à la plage avec ma famille.",
+              "The situation asks what I did: 'le week-end dernier' followed by the present tense answers what I do every weekend instead."
+            ],
+            [
+              "Say what you want to do after your exams.",
+              "Après mes examens, je voudrais étudier l'informatique à l'université.",
+              "Après mes examens, je voudrais étudier l'informatique à l'université.",
+              "Unchanged: the conditional 'je voudrais' and the time marker 'après mes examens' were already in place."
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Section II - the passage I was given, and my three timed readings of it",
         "body": "The passage below is written for this sample, in the length and style the guide describes: about 100 to 130 words, with the nasal vowels, the silent final consonants and the punctuation that a reading is marked on. In the real paper the examiner supplies the passage and you have only a few minutes with it, so this one is not something to memorise - it is here so you can see what an examiner's passage looks like and how the readings of it were counted.\n\nBonjour. Je m'appelle Lucie et j'habite à Fort-de-France, en Martinique. Le samedi matin, je vais au marché avec ma grand-mère. Nous achetons des bananes, des tomates et du poisson frais. Le marché est toujours plein de monde, de musique et de couleurs. Après le marché, nous prenons un jus de goyave sous un grand arbre. J'aime beaucoup ce moment parce que ma grand-mère raconte des histoires de sa jeunesse. L'après-midi, je fais mes devoirs, puis je joue au volley-ball avec mes cousines. Ma cousine Nadine joue beaucoup mieux que moi. Le soir, toute la famille mange ensemble et nous parlons de la journée. Nous parlons souvent de nos projets. Je voudrais devenir médecin un jour, pour aider les gens de mon quartier.\n\nA fault, in the table below, means one place where both listeners agreed that something had been mispronounced or that the reading had stopped inside a phrase. The same two listeners counted all three readings, every reading was recorded, and each reading was of the same unseen passage.",
         "bullets": [
           "Nasal vowels in this passage: the 'on' of 'Bonjour', the 'in' of 'matin', the 'an' of 'bananes' and 'grand-mère', and the 'un' of 'un jour'.",
@@ -169,7 +253,7 @@
         }
       },
       {
-        "heading": "Results - Part 1: the faults, grouped by what a reading is actually marked on",
+        "heading": "Results - Section II: the faults, grouped by what a reading is actually marked on",
         "body": "11 faults were counted across the three readings. Grouped by what the guide says a reading is marked on - pronunciation, rhythm and phrasing, audibility and pace - one fault did most of the damage and was also the last one standing: the nasal vowels went 3, then 1, then 1, and the single fault left in the final reading was the 'un' of 'un jour'. The silent final consonants went 2, 1, 0. The audibility fault never came back after the first reading, and the phrasing fault was clean by the final one, which is what happens when a rule replaces a hope: a silent letter is crossed out on the page before the word is read aloud, and a breath is pencilled in wherever the punctuation asks for one.",
         "bullets": [
           "11 faults over three readings, in four groups: nasal vowels 5, silent final consonants 3, phrasing 2, audibility 1",
@@ -226,91 +310,7 @@
         }
       },
       {
-        "heading": "Part 2 - the five situations, and what I said out loud for each one",
-        "body": "The five situations are the spoken version of Paper 02 Section 1 - the guide on this tab says so - so they were rehearsed from the first week against the guide's own five model responses, and the answers below are those model responses, word for word, as they were spoken in the week 10 run. What the first mock oral exposed is that a situation is marked for the task achieved as well as for the language: a sentence can be perfectly correct and still not do the job it was asked to do. The last column is the two-second check I now make before speaking - who I am speaking to, and which tense the situation asks for.",
-        "table": {
-          "caption": "The five situations of the week 10 mock oral, with the spoken answer and the check made before speaking. Three of the five answers were rebuilt after the first run; the other two were already right.",
-          "columns": [
-            "Situation given (read in English, answered aloud in French)",
-            "My spoken answer (week 10 run)",
-            "What I checked before speaking"
-          ],
-          "rows": [
-            [
-              "Greet your French teacher in the morning.",
-              "Bonjour, Madame. Comment allez-vous ?",
-              "Vous, not tu - and the greeting is not finished at 'Bonjour', so the question has to go to the end."
-            ],
-            [
-              "Ask a friend his age.",
-              "Quel âge as-tu ?",
-              "Tu, because he is a friend, and the question form rather than a statement with a rising voice."
-            ],
-            [
-              "Ask the price of a loaf of bread.",
-              "C'est combien le pain, s'il vous plaît ?",
-              "Vous to the shopkeeper, with 's'il vous plaît' at the end: a request without it sounds like an order."
-            ],
-            [
-              "Say what you did last weekend.",
-              "Le week-end dernier, je suis allé à la plage avec ma famille.",
-              "Passé composé with être, so the past participle agrees - 'allé', not 'allé(e)', and not the present 'vais'."
-            ],
-            [
-              "Say what you want to do after your exams.",
-              "Après mes examens, je voudrais étudier l'informatique à l'université.",
-              "The conditional 'je voudrais' for a plan that is not fixed yet, plus the time marker 'après mes examens'."
-            ]
-          ]
-        }
-      },
-      {
-        "heading": "Results - Part 2: the answers I had to rebuild, and why",
-        "body": "The first mock oral, in week 9, exposed three answers whose vocabulary was fine and whose task was not. The greeting stopped at 'Bonjour' - a complete word and an incomplete task. The answer about last weekend was spoken in the present tense ('le week-end dernier, je vais à la plage'), which answers a different question from the one asked. And the price of the bread was asked as 'Combien coûte le pain ?': correct French that a shopkeeper never hears put that way, where the guide's 'C'est combien le pain, s'il vous plaît ?' is the phrasing to keep. The other two - the friend's age and the plan after exams - came out the same way in both runs. Rebuilding three answers took one session; hearing them took a recorded mock oral.",
-        "table": {
-          "caption": "The same five situations, side by side across the two runs, with the reason each changed or did not.",
-          "columns": [
-            "The situation",
-            "Week 9 (first mock oral)",
-            "Week 10 (second mock oral)",
-            "Why it changed"
-          ],
-          "rows": [
-            [
-              "Greet your French teacher in the morning.",
-              "Bonjour, Madame.",
-              "Bonjour, Madame. Comment allez-vous ?",
-              "The greeting is a task, not a word: 'Bonjour' on its own leaves the examiner one word to mark and the situation unfinished."
-            ],
-            [
-              "Ask a friend his age.",
-              "Quel âge as-tu ?",
-              "Quel âge as-tu ?",
-              "Unchanged: the question form was right in both runs, so there was nothing to rebuild."
-            ],
-            [
-              "Ask the price of a loaf of bread.",
-              "Combien coûte le pain ?",
-              "C'est combien le pain, s'il vous plaît ?",
-              "Correct French, wrong register for the moment: 'Combien coûte le pain ?' is a book sentence, and the guide's phrasing is what a customer says."
-            ],
-            [
-              "Say what you did last weekend.",
-              "Le week-end dernier, je vais à la plage avec ma famille.",
-              "Le week-end dernier, je suis allé à la plage avec ma famille.",
-              "The situation asks what I did: 'le week-end dernier' followed by the present tense answers what I do every weekend instead."
-            ],
-            [
-              "Say what you want to do after your exams.",
-              "Après mes examens, je voudrais étudier l'informatique à l'université.",
-              "Après mes examens, je voudrais étudier l'informatique à l'université.",
-              "Unchanged: the conditional 'je voudrais' and the time marker 'après mes examens' were already in place."
-            ]
-          ]
-        }
-      },
-      {
-        "heading": "Part 3 - the guided conversation: sixteen questions and my answers",
+        "heading": "Section III - the guided conversation: sixteen questions and my answers",
         "body": "The guide's plan for the conversation is the plan used here: prepare four flexible answers - family, school, weekend, plans - and one opinion sentence with a reason, then adapt them. Four of the sixteen answers below are those prepared answers word for word, and the other twelve are built from them with a reason, a time or an extra detail: that is the arithmetic the guide promises when it says four prepared answers will answer sixteen questions. The questions are the kind the guide lists (your life, your family, school, leisure, holidays and plans). A real examiner follows your own answers, so nothing here is a script to memorise: it is the record of four sentences being stretched.",
         "table": {
           "caption": "The sixteen questions of the week 10 mock oral in order, with what I said and which prepared answer the reply was built from: four answers word for word from the four prepared answers, twelve adapted from them, and the two questions that produced the first run's silences marked as such.",
@@ -379,7 +379,7 @@
               "10",
               "Qu'est-ce que tu as fait le week-end dernier ?",
               "Le week-end dernier, je suis allé à la plage avec ma famille.",
-              "situation 4 from Part 2, reused - the same past sentence answers both"
+              "situation 4 from Section I, reused - the same past sentence answers both"
             ],
             [
               "11",
@@ -485,11 +485,11 @@
       },
       {
         "heading": "Conclusion - what this dossier shows, and what not to copy from it",
-        "body": "Paper 03 is marked on how you speak, and nothing in this dossier would have been worth anything if the French in it had only ever been read. Ten weeks produced 60 five-minute sessions, 5 hours of speaking aloud, 7 recorded weeks and two counted mock orals. The numbers moved in the order that matters: faults down from 7 to 1 in the passage reading, answers carrying a reason up from 9 to 16, silences over five seconds down from 2 to 0, and the four prepared answers ending up covering all 16 questions between them.\n\nThe failures in the middle are the useful part. The first mock oral exposed habits - a one-word greeting, a present tense where a past one was asked for, a prepared answer left unused because it did not fit exactly - and none of those would have been repaired by learning more words. The second run is what changing a habit is worth.\n\nWhat to copy: the four prepared answers, the recording, the fault counts, the rescue phrase ('Pardon, pouvez-vous répéter, s'il vous plaît ?' rather than silence) and five minutes of speaking every day, even alone in a room. What not to copy: this passage, which belongs to a sample and not to the paper (the examiner's passage is unseen), these answers, which follow my life and not yours, and the marks columns above, which are a ten-point practice scale rather than an official mark - the marks that matter are the ones your examiner awards, against the criteria in the marking notes on this tab."
+        "body": "Paper 03 is marked on how you speak, and nothing in this dossier would have been worth anything if the French in it had only ever been read. Ten weeks produced 60 five-minute sessions, 5 hours of speaking aloud, 7 recorded weeks and two counted mock orals. The numbers all moved the right way: answers carrying a reason up from 9 to 16, faults down from 7 to 1 in the passage reading, silences over five seconds down from 2 to 0, and the four prepared answers ending up covering all 16 questions between them.\n\nThe failures in the middle are the useful part. The first mock oral exposed habits - a one-word greeting, a present tense where a past one was asked for, a prepared answer left unused because it did not fit exactly - and none of those would have been repaired by learning more words. The second run is what changing a habit is worth.\n\nWhat to copy: the four prepared answers, the recording, the fault counts, the rescue phrase ('Pardon, pouvez-vous répéter, s'il vous plaît ?' rather than silence) and five minutes of speaking every day, even alone in a room. What not to copy: this passage, which belongs to a sample and not to the paper (the examiner's passage is unseen), these answers, which follow my life and not yours, and the marks columns above, which are a ten-point practice scale rather than an official mark - the marks that matter are the ones your examiner awards, against the criteria in the marking notes on this tab."
       },
       {
         "heading": "What this dossier is, and what it is not",
-        "body": "This is an invented dossier, written for CSEC Compass so that a student can see a finished Paper 03 preparation record end to end: the method, the counted faults, the questions, the answers and the two mock orals that exposed the weak points. The candidate, the centre, the two teachers, the passage, the question list, the recordings and every count in it are invented. It is not a real candidate's work, not a record of a real examination, and not a CXC exemplar, and nothing in it has been reproduced from any published source.\n\nOne thing worth stating plainly, because these pages contain numbers: the marks columns on the card above are this dossier's own ten-point practice scale, used to show which parts of the preparation were solid and which were not. The guide on this tab publishes no per-part mark allocation for the oral, and no sample can tell you how Paper 03 is marked - your examiner marks it against the CXC oral criteria described in the marking notes here. Read this dossier for its method and its honesty, then prepare and speak your own answers in your own words.",
+        "body": "This is an invented dossier, written for CSEC Compass so that a student can see a finished Paper 03 preparation record end to end: the method, the counted faults, the questions, the answers and the two mock orals that exposed the weak points. The candidate, the centre, the two teachers, the passage, the question list, the recordings and every count in it are invented. It is not a real candidate's work, not a record of a real examination, and not a CXC exemplar, and nothing in it has been reproduced from any published source.\n\nOne thing worth stating plainly, because these pages contain numbers: the marks columns on the card above are this dossier's own ten-point practice scale, used to show which parts of the preparation were solid and which were not. They are not the paper's marks - the guide on this tab publishes the paper's own allocation (Section I 25 of the paper's 80, Section II 10 and Section III 45), and the marks that decide your grade are the ones your examiner awards against the CXC oral criteria described in the marking notes here. Read this dossier for its method and its honesty, then prepare and speak your own answers in your own words.",
         "bullets": [
           "Invented for this sample: candidate, centre, teachers, passage, questions, recordings, counts and mock-oral results",
           "Reused because the guide already publishes them: the five model situation responses and the four prepared conversation answers (four of the 16 answers word for word; the past-weekend response drops the guide's optional 'allé(e)' agreement for a male candidate)",
@@ -499,11 +499,11 @@
       }
     ],
     "examinerNotes": [
-      "Part 1 is evidenced by counted readings rather than by a claim: three timed readings of a 122-word unseen passage with the faults going 7 - 3 - 1 and the pace settling at 118 words a minute, the faults grouped by what a reading is marked on, and the one fault that survived the final reading written into the log with the drill that retired it.",
-      "Part 2 answers every situation as a complete sentence, with the register chosen before speaking ('vous' to the teacher and the shopkeeper, 'tu' to the friend) and the tense matched to the task: the past-weekend answer is in the passé composé with the agreement checked, and the plan after exams keeps the conditional. The three answers that were rebuilt are shown beside the two that did not need rebuilding.",
-      "Part 3 answers all 16 questions and demonstrates the guide's own method: four prepared answers word for word and twelve built from them with a reason, a time or an extra detail - four sentences doing the work of sixteen.",
+      "Section I answers every situation as a complete sentence, with the register chosen before speaking ('vous' to the teacher and the shopkeeper, 'tu' to the friend) and the tense matched to the task: the past-weekend answer is in the passé composé with the agreement checked, and the plan after exams keeps the conditional. The three answers that were rebuilt are shown beside the two that did not need rebuilding.",
+      "Section II is evidenced by counted readings rather than by a claim: three timed readings of a 122-word unseen passage with the faults going 7 - 3 - 1 and the pace settling at 118 words a minute, the faults grouped by what a reading is marked on, and the one fault that survived the final reading written into the log with the drill that retired it.",
+      "Section III answers all 16 questions and demonstrates the guide's own method: four prepared answers word for word and twelve built from them with a reason, a time or an extra detail - four sentences doing the work of sixteen.",
       "The reflection is candid and quantified: it keeps the first-run counts that embarrass it (four bare 'oui' or 'non' answers, two silences, a longest pause of 11 seconds) next to the second-run counts that repaired them, and it draws the right lesson from them - that the failures were habits (an unfinished answer, an unadapted prepared answer) rather than missing vocabulary.",
-      "Honesty: this is a sample, not a real submission. The candidate, centre, teachers, passage and every record are invented for CSEC Compass, no published material is reproduced, and the marks columns are this dossier's own ten-point practice scale rather than an official mark, because the guide publishes no per-part mark allocation for the oral examination."
+      "Honesty: this is a sample, not a real submission. The candidate, centre, teachers, passage and every record are invented for CSEC Compass, no published material is reproduced, and the marks columns are this dossier's own ten-point practice scale rather than an official mark: the guide publishes the paper's own allocation (25, 10 and 45 of the paper's 80 marks), and these columns are not it."
     ]
   }
 }
