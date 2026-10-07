@@ -9,6 +9,9 @@ export const state = {
   users: [], // auth.admin.listUsers() results
   listUsersError: null,
   getUserByIdError: null, // auth.admin.getUserById() failure (the webhook's buyer lookup)
+  getUserByIdThrows: false, // ...throwing outright rather than returning an error
+  getUserByIdHangs: false, // ...never resolving, so the caller's own budget must save the sale
+  getUserByIdCalls: [], // ids the handler looked up, in order
   tables: {}, // table name -> rows[]
   selectErrors: {}, // table name -> error thrown on select
   writeErrors: {}, // table name -> error thrown on insert/upsert
@@ -24,6 +27,9 @@ export function reset() {
   state.users = [];
   state.listUsersError = null;
   state.getUserByIdError = null;
+  state.getUserByIdThrows = false;
+  state.getUserByIdHangs = false;
+  state.getUserByIdCalls = [];
   state.tables = {};
   state.selectErrors = {};
   state.writeErrors = {};
@@ -73,6 +79,9 @@ export function createClient() {
         // the double has to answer that lookup: state.users is the account list
         // (id + email), exactly like listUsers().
         getUserById: async (id) => {
+          state.getUserByIdCalls.push(id);
+          if (state.getUserByIdHangs) return new Promise(() => {});
+          if (state.getUserByIdThrows) throw new Error("supabase unreachable");
           if (state.getUserByIdError) return { data: { user: null }, error: state.getUserByIdError };
           const found = (state.users || []).find((u) => u.id === id) || null;
           return { data: { user: found }, error: null };

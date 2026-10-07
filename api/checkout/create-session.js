@@ -5,6 +5,7 @@
 // on Vercel with FUNCTION_INVOCATION_FAILED, so every function keeps its
 // own client init. See api/auth/user.js (same pattern, works live).
 import Stripe from "stripe";
+import { createClient } from "@supabase/supabase-js";
 
 function getStripe() {
   const secretKey = process.env.STRIPE_SECRET_KEY;
@@ -77,6 +78,68 @@ function cleanSchoolName(value) {
 
 function cleanEmail(value) {
   return String(value ?? "").trim().toLowerCase();
+}
+
+// The receipt address (owner decision 2026-10-07): Stripe emails its automatic
+// receipt to the address on the Checkout Session, so the session pins the
+// address of the ACCOUNT THAT IS PAYING. It is read server-side from the
+// authenticated user record — never from the request body, which anyone can
+// type into. That record IS the verified address: Supabase hands out a session
+// for an email signup only once that address is confirmed (when confirmation is
+// enabled) and an OAuth address is verified by the provider, so re-checking a
+// confirmation flag here would only risk silently dropping a receipt for an
+// account whose flag is unset — the exact symptom being fixed.
+// Every failure below degrades to the previous behaviour: a session with no
+// pinned address still sells, because a receipt must never cost a sale.
+const RECEIPT_LOOKUP_TIMEOUT_MS = 3000;
+
+let cachedSupabase = null;
+function getSupabaseServer() {
+  const url = process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL;
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!url || !key) return null;
+  if (!cachedSupabase) {
+    cachedSupabase = createClient(url, key, {
+      auth: { persistSession: false, autoRefreshToken: false },
+    });
+  }
+  return cachedSupabase;
+}
+
+// "" means "pin nothing" — no credentials, no user, no email on the account, a
+// malformed address, a Supabase error, or a lookup that outlives the budget.
+// It never throws, and it never delays the sale by more than the budget.
+async function receiptEmailFor(userId) {
+  let timer = null;
+  try {
+    const supabase = getSupabaseServer();
+    if (!supabase) return "";
+    const lookup = supabase.auth.admin.getUserById(userId);
+    // The sale must not wait on Supabase. If the budget wins this race the
+    // rejection below is already unobserved, so it is swallowed here rather
+    // than surfacing later as an unhandled rejection.
+    lookup.catch(() => {});
+    const budget = new Promise((resolve) => {
+      timer = setTimeout(
+        () => resolve({ data: null, error: { message: "receipt lookup timed out" } }),
+        RECEIPT_LOOKUP_TIMEOUT_MS
+      );
+    });
+    const { data, error } = await Promise.race([lookup, budget]);
+    if (error) {
+      console.warn("Receipt email lookup failed — selling without a pinned address:", error.message);
+      return "";
+    }
+    const email = cleanEmail(data?.user?.email);
+    if (!email || email.length > 254 || !EMAIL_RE.test(email)) return "";
+    return email;
+  } catch (err) {
+    console.warn("Receipt email lookup threw — selling without a pinned address:", err?.message || err);
+    return "";
+  } finally {
+    // The lookup usually wins; this keeps an abandoned budget from lingering.
+    if (timer) clearTimeout(timer);
+  }
 }
 
 export default async function handler(req, res) {
@@ -163,6 +226,11 @@ export default async function handler(req, res) {
   const stripe = getStripe();
   if (!stripe) return res.status(500).json({ error: "Stripe not configured" });
 
+  // Who the receipt is addressed to. Looked up here — after every validation
+  // above, so a rejected request never costs a Supabase round-trip, and before
+  // the session exists, so the address is on the session from the start.
+  const receiptEmail = await receiptEmailFor(userId);
+
   try {
     const priceId = PRICE_IDS[priceType];
     const session = await stripe.checkout.sessions.create({
@@ -170,6 +238,11 @@ export default async function handler(req, res) {
       line_items: [{ price: priceId, quantity: 1 }],
       mode: "payment",
       client_reference_id: userId,
+      // Stripe emails the automatic receipt to this address. The key is omitted
+      // entirely when the lookup gave us nothing, which is exactly the previous
+      // behaviour (the buyer types their address into Checkout and that one is
+      // used), so nothing here can block or alter a sale.
+      ...(receiptEmail ? { customer_email: receiptEmail } : {}),
       success_url: successUrl || "https://csec-compass.vercel.app/account",
       cancel_url: cancelUrl || "https://csec-compass.vercel.app/pricing",
       metadata: {
