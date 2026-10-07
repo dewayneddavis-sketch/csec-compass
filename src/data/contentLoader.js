@@ -1,4 +1,5 @@
 // Content Loader — fetches from public/content/ JSON with hardcoded fallback
+import { asFigures } from "./lessonFigures";
 
 const iconMap = { Calculate: "📐", Description: "📝", Science: "🧬", Sports: "🏅", Checkroom: "👗", Storefront: "🏢", Palette: "🎨", Theaters: "🎭", Computer: "💻", default: "📚" };
 
@@ -210,6 +211,9 @@ export function normalizeModules(modules) {
       concepts: l.concepts || [],
       content: l.content || "",
       experiment: l.experiment || null,
+      // Lesson figures (optional, additive). asFigures() drops anything malformed,
+      // so a broken content entry renders nothing rather than an image with no alt.
+      figures: asFigures(l.figures),
     })) : [],
   }));
 }

@@ -94,6 +94,26 @@ export default function LessonView() {
           </div>
         )}
 
+        {/* Lesson figures — the optional `figures` array on a lesson (see
+            content/LESSON-FIGURES-FORMAT.md). Rendered in order, after the written
+            lesson body, as a real <figure> so the image, its alt text and its caption
+            travel together. Nothing renders when a lesson has no figures, which is
+            every lesson today: this is the capability, not the content. */}
+        {lesson.figures?.length > 0 && (
+          <div className="lv-figures">
+            {lesson.figures.map((fig, i) => (
+              <figure className="lv-figure" key={fig.src + "#" + i}>
+                <img className="lv-figure-img" src={fig.src} alt={fig.alt} loading="lazy" decoding="async" />
+                <figcaption className="lv-figure-caption">
+                  {fig.caption
+                    ? <><span className="lv-figure-label">Figure {i + 1}.</span> {fig.caption}</>
+                    : <span className="lv-figure-label">Figure {i + 1}.</span>}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        )}
+
         {lesson.objectives?.length > 0 && (
           <div className="lv-objectives">
             <h3>Learning Objectives</h3>
