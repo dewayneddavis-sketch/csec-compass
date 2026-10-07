@@ -156,8 +156,8 @@ section("1. the per-subject dropdown covers the catalog (all subjects, both dire
 {
   const fallback = pricing.FALLBACK_SUBJECT_OPTIONS;
   check(
-    `the catalog has all 23 subjects (${catalogIds.length})`,
-    catalogIds.length >= 23,
+    `the catalog still holds every published subject (${catalogIds.length})`,
+    catalogIds.length >= 25,
     String(catalogIds.length)
   );
   check(
@@ -439,6 +439,58 @@ section("6. the bundle copy states a real saving");
     "the page renders the computed label",
     /bundleSavingsLabel\(subjectCount\)/.test(page) && /Bundle pricing — \$\{bundleSavingsLabel/.test(page)
   );
+  // ---- the same saving in dollars (added with the 25-subject flyer) --------
+  // The flyer and the bundle card both spell the arithmetic out ("25 x $9.99 =
+  // $249.75 — you save $199.76"), so those two amounts must be DERIVED here just
+  // like the percentage: an amount typed into the copy is the bug this file
+  // exists to catch (the flyer's back page claimed "worth $229.77" — the
+  // 23-subject total — with 25 subjects on the platform).
+  const pricingSrc = readFileSync(join(root, "src/data/pricingSubjects.js"), "utf8");
+  const singlesTotal = count * pricing.SUBJECT_PRICE;
+  const savingDollars = singlesTotal - pricing.BUNDLE_PRICE;
+  check(
+    `the singles total is the count times the subject price (${count} x ${pricing.SUBJECT_PRICE} = ${singlesTotal.toFixed(2)})`,
+    pricing.bundleSinglesTotal(count) === singlesTotal,
+    String(pricing.bundleSinglesTotal(count))
+  );
+  check(
+    `the saving in dollars is that total less the bundle (${savingDollars.toFixed(2)})`,
+    pricing.bundleSavingAmount(count) === savingDollars,
+    String(pricing.bundleSavingAmount(count))
+  );
+  check(
+    "the dollar line spells the arithmetic out",
+    pricing.bundleSavingsDetail(count) ===
+      `${count} × $${pricing.SUBJECT_PRICE.toFixed(2)} = $${singlesTotal.toFixed(2)} — you save $${savingDollars.toFixed(2)}`,
+    pricing.bundleSavingsDetail(count)
+  );
+  check(
+    "no saving to state -> no dollar line either",
+    pricing.bundleSavingsDetail(3) === null && pricing.bundleSinglesTotal(0) === null,
+    String(pricing.bundleSavingsDetail(3))
+  );
+  check(
+    "the page renders the derived dollar line",
+    /bundleSavingsDetail\(subjectCount\)/.test(page)
+  );
+  // Comments are stripped first, as check-guide-bot does for the guide's totals:
+  // a comment that documents what a derived amount works out to is documentation,
+  // not a figure the copy can show. Code is what must not carry the number.
+  const stripComments = (src) =>
+    src
+      .replace(/\/\*[\s\S]*?\*\//g, "")
+      .split("\n")
+      .map((line) => line.replace(/\/\/.*$/, ""))
+      .join("\n");
+  const pageCode = stripComments(page);
+  const moduleCode = stripComments(pricingSrc);
+  for (const typed of [singlesTotal.toFixed(2), savingDollars.toFixed(2)]) {
+    check(
+      `the amount ${typed} is derived, not typed into the page or the module`,
+      !pageCode.includes(typed) && !moduleCode.includes(typed),
+      typed
+    );
+  }
 }
 
 // ===========================================================================

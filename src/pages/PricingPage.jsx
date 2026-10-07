@@ -5,6 +5,7 @@ import {
   FALLBACK_SUBJECT_OPTIONS,
   SCHOOL_LICENSES,
   buildSubjectOptions,
+  bundleSavingsDetail,
   bundleSavingsLabel,
   resolvePreselectedSubject,
 } from "../data/pricingSubjects";
@@ -42,7 +43,9 @@ function plansFor(subjectCount) {
         "Everything in Per Subject",
         "Every subject we publish — CSEC and City & Guilds",
         `Bundle pricing — ${bundleSavingsLabel(subjectCount)}`,
-      ],
+        // the same saving in dollars, so the comparison can be checked by hand
+        bundleSavingsDetail(subjectCount),
+      ].filter(Boolean),
       popular: true,
     },
   ];
