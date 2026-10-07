@@ -35,6 +35,7 @@ export const FALLBACK_SUBJECT_OPTIONS = [
   { id: "caribbean-history", name: "Caribbean History" },
   { id: "chemistry", name: "Chemistry" },
   { id: "city-guilds-english", name: "City & Guilds English" },
+  { id: "city-guilds-mathematics", name: "City & Guilds Mathematics" },
   { id: "clothing-textile-and-fashion", name: "Clothing, Textile and Fashion" },
   { id: "edpm", name: "EDPM" },
   { id: "english-a", name: "English A" },

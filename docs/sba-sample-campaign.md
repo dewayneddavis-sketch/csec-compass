@@ -52,6 +52,7 @@ two samples show a completed oral-examination dossier instead of an SBA report.
 | 22 | french | Oral Exam / Paper 03 | n/a (oral) | 7 - oral examination dossier | DONE |
 | 23 | spanish | Oral Exam / Paper 03 | n/a (oral) | 7 - oral examination dossier | DONE |
 | 24 | city-guilds-english | Speaking & Listening Guide | n/a (spoken) | 8 - prepared-talk dossier | DONE |
+| 25 | city-guilds-mathematics | Assessment Guide (no SBA) | n/a (no SBA) | 9 - City & Guilds written assessment | N/A |
 
 Ordering note: the campaign runs by the SBA marks carried in **our own guide** for each subject
 (the `tasks` list in `content/<subject>/sba.json`), so the subjects whose SBA is the largest slice

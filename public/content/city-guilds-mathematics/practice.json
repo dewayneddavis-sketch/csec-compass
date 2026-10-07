@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "p1",
+    "question": "What is the value of the digit 8 in the number 5,184,300?",
+    "options": [
+      "800",
+      "8,000",
+      "80,000",
+      "800,000"
+    ],
+    "answer": "80,000",
+    "explanation": "Step 1 — Read the positions from the right: ones, tens, hundreds, thousands, ten-thousands.\nStep 2 — In 5,184,300 the 8 sits in the ten-thousands position.\nStep 3 — Its value is 8 × 10,000.\n8 × 10,000 = 80,000",
+    "topic": "whole-numbers-and-place-value"
+  },
+  {
+    "id": "p2",
+    "question": "Write forty thousand and sixty in figures.",
+    "options": [
+      "4,060",
+      "40,060",
+      "40,600",
+      "400,060"
+    ],
+    "answer": "40,060",
+    "explanation": "Step 1 — Forty thousand fills the ten-thousands position with 4, so write 40,000.\nStep 2 — There are no hundreds and no tens, so those places get a zero each.\nStep 3 — Sixty puts a 6 in the ones place.\n40,060",
+    "topic": "whole-numbers-and-place-value"
+  },
+  {
+    "id": "p3",
+    "question": "Which of these numbers is the smallest?",
+    "options": [
+      "1,099",
+      "1,900",
+      "1,909",
+      "1,990"
+    ],
+    "answer": "1,099",
+    "explanation": "Step 1 — All four start with 1, so compare the hundreds.\nStep 2 — 1,099 has 0 hundreds and the other three have 9, so 1,099 is already the smallest.\nStep 3 — Check the rest are ordered above it: 1,900 then 1,909 then 1,990.\nThe smallest is 1,099",
+    "topic": "whole-numbers-and-place-value"
+  },
+  {
+    "id": "p4",
+    "question": "Round 47,382 to the nearest thousand.",
+    "options": [
+      "47,000",
+      "47,400",
+      "48,000",
+      "50,000"
+    ],
+    "answer": "47,000",
+    "explanation": "Step 1 — The thousands digit is 7. The digit that decides is the one just after it, the hundreds.\nStep 2 — The hundreds digit is 3, which is less than 5, so the thousands digit stays as it is.\nStep 3 — Everything after the thousands becomes zero.\n47,382 rounds to 47,000",
+    "topic": "whole-numbers-and-place-value"
+  },
+  {
+    "id": "p5",
+    "question": "A piece of tape is 2,499 mm long. Round it to the nearest hundred millimetres.",
+    "options": [
+      "2,000 mm",
+      "2,400 mm",
+      "2,500 mm",
+      "3,000 mm"
+    ],
+    "answer": "2,500 mm",
+    "explanation": "Step 1 — The hundreds digit is 4. The deciding digit is the tens digit, which is 9.\nStep 2 — 9 is 5 or more, so the hundreds digit rounds up from 4 to 5.\nStep 3 — Everything after the hundreds becomes zero.\n2,499 rounds to 2,500 mm",
+    "topic": "whole-numbers-and-place-value"
+  },
+  {
+    "id": "p6",
+    "question": "A district's population is written as 128,540. Rounded to the nearest ten thousand, what is it?",
+    "options": [
+      "120,000",
+      "128,000",
+      "130,000",
+      "140,000"
+    ],
+    "answer": "130,000",
+    "explanation": "Step 1 — The ten-thousands digit is 2. The deciding digit is the thousands digit, which is 8.\nStep 2 — 8 is 5 or more, so the ten-thousands digit rounds up from 2 to 3.\nStep 3 — Every place below the ten-thousands becomes zero.\n128,540 rounds to 130,000",
+    "topic": "whole-numbers-and-place-value"
+  },
+  {
+    "id": "p7",
+    "question": "Write 0.45 as a percentage.",
+    "options": [
+      "0.45%",
+      "4.5%",
+      "45%",
+      "450%"
+    ],
+    "answer": "45%",
+    "explanation": "Step 1 — A decimal becomes a percentage by multiplying by 100.\nStep 2 — Multiply.\n0.45 × 100 = 45\nStep 3 — Attach the percentage sign.\n0.45 = 45%",
+    "topic": "fractions-decimals-percentages"
+  },
+  {
+    "id": "p8",
+    "question": "Write 7/20 as a decimal.",
+    "options": [
+      "0.27",
+      "0.35",
+      "0.7",
+      "3.5"
+    ],
+    "answer": "0.35",
+    "explanation": "Step 1 — A fraction is a division, so work out 7 ÷ 20.\nStep 2 — Make the denominator 100 to divide easily: 7/20 = 35/100.\nStep 3 — Thirty-five hundredths writes as a decimal with two places.\n7/20 = 0.35",
+    "topic": "fractions-decimals-percentages"
+  },
+  {
+    "id": "p9",
+    "question": "Which amount is larger: 3/5 or 62%?",
+    "options": [
+      "3/5",
+      "62%",
+      "They are equal",
+      "There is not enough information to tell"
+    ],
+    "answer": "62%",
+    "explanation": "Step 1 — Write both as percentages so they can be compared.\nStep 2 — 3/5 = 3 ÷ 5 = 0.6 = 60%.\nStep 3 — Compare: 62% is larger than 60%.\n62% is the larger amount.",
+    "topic": "fractions-decimals-percentages"
+  },
+  {
+    "id": "p10",
+    "question": "Find 25% of 880.",
+    "options": [
+      "22",
+      "220",
+      "225",
+      "250"
+    ],
+    "answer": "220",
+    "explanation": "Step 1 — 25% is one quarter, so divide by 4 rather than multiplying by a decimal.\nStep 2 — Halve 880 to get 440, then halve again to get 220.\nStep 3 — Check the size: a quarter of 880 should be a couple of hundred.\n25% of 880 = 220",
+    "topic": "fractions-decimals-percentages"
+  },
+  {
+    "id": "p11",
+    "question": "A student scores 18 out of 24 in a test. What percentage is that?",
+    "options": [
+      "24%",
+      "60%",
+      "72%",
+      "75%"
+    ],
+    "answer": "75%",
+    "explanation": "Step 1 — A score out of a total is a fraction: 18/24.\nStep 2 — Simplify it by dividing both numbers by 6: 3/4.\nStep 3 — Three quarters as a percentage is 75%.\n18 out of 24 is 75%",
+    "topic": "fractions-decimals-percentages"
+  },
+  {
+    "id": "p12",
+    "question": "Which fraction is equivalent to 0.6?",
+    "options": [
+      "1/6",
+      "2/3",
+      "3/5",
+      "6/100"
+    ],
+    "answer": "3/5",
+    "explanation": "Step 1 — Read the decimal by its place value: 0.6 is six tenths.\nStep 2 — Write that as a fraction.\n6/10\nStep 3 — Cancel by dividing both numbers by 2.\n6/10 = 3/5",
+    "topic": "fractions-decimals-percentages"
+  },
+  {
+    "id": "p13",
+    "question": "Which of these is the lowest temperature?",
+    "options": [
+      "−12 °C",
+      "−6 °C",
+      "0 °C",
+      "3 °C"
+    ],
+    "answer": "−12 °C",
+    "explanation": "Step 1 — Picture the number line: further left is lower.\nStep 2 — Both negative values are below zero, and −12 sits further left than −6.\nStep 3 — So −12 is lower than every other value listed.\n−12 °C",
+    "topic": "negative-numbers-in-context"
+  },
+  {
+    "id": "p14",
+    "question": "A bank balance goes from $5,000 to −$1,200. By how much did it fall?",
+    "options": [
+      "$3,800",
+      "$5,000",
+      "$6,200",
+      "$12,000"
+    ],
+    "answer": "$6,200",
+    "explanation": "Step 1 — The account falls from $5,000 to zero.\n$5,000\nStep 2 — Then it keeps falling from zero to −$1,200.\n$1,200 more\nStep 3 — The fall crossed zero, so add both stages.\n$5,000 + $1,200 = $6,200",
+    "topic": "negative-numbers-in-context"
+  },
+  {
+    "id": "p15",
+    "question": "A lift travels from floor −3 to floor 7. How many floors does the journey cover?",
+    "options": [
+      "4 floors",
+      "7 floors",
+      "10 floors",
+      "11 floors"
+    ],
+    "answer": "10 floors",
+    "explanation": "Step 1 — Count from floor −3 up to floor 0.\n3 floors\nStep 2 — Then count from floor 0 up to floor 7.\n7 floors\nStep 3 — Add the two parts of the journey.\n3 + 7 = 10 floors",
+    "topic": "negative-numbers-in-context"
+  },
+  {
+    "id": "p16",
+    "question": "Which list is in order from smallest to largest?",
+    "options": [
+      "−4, −9, 0, 3, 5",
+      "−9, −4, 0, 3, 5",
+      "0, −4, −9, 3, 5",
+      "−9, 0, −4, 3, 5"
+    ],
+    "answer": "−9, −4, 0, 3, 5",
+    "explanation": "Step 1 — Split the values into the ones below zero and the ones above.\nBelow: −9, −4. Above: 3, 5. Zero sits between them.\nStep 2 — Order the negatives the opposite way to positives: −9 is further left than −4.\nStep 3 — Join them: negatives, then zero, then positives.\n−9, −4, 0, 3, 5",
+    "topic": "negative-numbers-in-context"
+  },
+  {
+    "id": "p17",
+    "question": "A freezer runs at −18 °C and the kitchen is at 27 °C. What is the difference in temperature?",
+    "options": [
+      "9 °C",
+      "18 °C",
+      "35 °C",
+      "45 °C"
+    ],
+    "answer": "45 °C",
+    "explanation": "Step 1 — Count from the freezer temperature up to 0 °C.\n18 degrees\nStep 2 — Count from 0 °C up to the kitchen temperature.\n27 degrees\nStep 3 — The journey crossed zero, so add the two parts.\n18 + 27 = 45\nThe difference is 45 °C.",
+    "topic": "negative-numbers-in-context"
+  },
+  {
+    "id": "p18",
+    "question": "Which estimate is closest to the value of 39 × 21?",
+    "options": [
+      "600",
+      "800",
+      "1,000",
+      "1,200"
+    ],
+    "answer": "800",
+    "explanation": "Step 1 — Round each number to something easy.\n39 rounds to 40 and 21 rounds to 20\nStep 2 — Multiply the rounded values.\n40 × 20 = 800\nStep 3 — Check the size: 39 × 21 is a shade over 800 (819 exactly), so 800 is the closest estimate listed.",
+    "topic": "calculator-and-estimating"
+  },
+  {
+    "id": "p19",
+    "question": "Which estimate is closest to 598 ÷ 6?",
+    "options": [
+      "10",
+      "60",
+      "100",
+      "150"
+    ],
+    "answer": "100",
+    "explanation": "Step 1 — Round the number being divided to something that divides neatly by 6.\n598 rounds to 600\nStep 2 — Divide the rounded value.\n600 ÷ 6 = 100\nStep 3 — Check the size: 598 ÷ 6 is just under 100, so 100 is the closest estimate.",
+    "topic": "calculator-and-estimating"
+  },
+  {
+    "id": "p20",
+    "question": "A student keys 4 + 6 × 3 into a calculator and the display reads 30. What has happened?",
+    "options": [
+      "Nothing is wrong — 30 is the correct value",
+      "The addition has been worked out before the multiplication",
+      "The calculator has multiplied by 3 twice",
+      "The calculator is faulty"
+    ],
+    "answer": "The addition has been worked out before the multiplication",
+    "explanation": "Step 1 — The correct order works on the multiplication first.\n6 × 3 = 18\nStep 2 — Then the addition.\n4 + 18 = 22\nStep 3 — The display shows 30, which is what you get from (4 + 6) × 3, so the addition was done first.\nThe addition was worked out before the multiplication.",
+    "topic": "calculator-and-estimating"
+  },
+  {
+    "id": "p21",
+    "question": "Estimate the total cost of 7 items priced at $1,980 each.",
+    "options": [
+      "$1,400",
+      "$7,000",
+      "$14,000",
+      "$140,000"
+    ],
+    "answer": "$14,000",
+    "explanation": "Step 1 — Round the price to something easy: $1,980 is about $2,000.\nStep 2 — Multiply by the number of items.\n7 × $2,000 = $14,000\nStep 3 — Check the size: the true total is $13,860, which is close to and just under the estimate.\nAbout $14,000",
+    "topic": "calculator-and-estimating"
+  },
+  {
+    "id": "p22",
+    "question": "A length should come out at about 12 metres, but the calculator display reads 1,200,000. What is the most likely explanation?",
+    "options": [
+      "The answer is correct and the length really is 1,200,000 m",
+      "A decimal point or a unit has been entered incorrectly",
+      "The numbers were rounded too early",
+      "The calculator cannot handle metres"
+    ],
+    "answer": "A decimal point or a unit has been entered incorrectly",
+    "explanation": "Step 1 — Compare the display with the estimate.\nExpected: about 12. Displayed: 1,200,000\nStep 2 — The display is 100,000 times too big, which is the signature of a misplaced decimal point or a unit entered in millimetres or centimetres.\nStep 3 — An error that large is structural, not arithmetical.\nA decimal point or a unit has been entered incorrectly.",
+    "topic": "calculator-and-estimating"
+  },
+  {
+    "id": "p23",
+    "question": "A shirt marked $1,800 has 20% taken off in a sale. What is the sale price?",
+    "options": [
+      "$1,440",
+      "$1,600",
+      "$1,760",
+      "$2,160"
+    ],
+    "answer": "$1,440",
+    "explanation": "Step 1 — Find 20% by taking 10% and doubling it.\n10% of $1,800 = $180, so 20% = $360\nStep 2 — A discount takes the part away.\n$1,800 − $360 = $1,440\nStep 3 — Check the direction: a discount must leave a smaller price than the marked one.\n$1,440",
+    "topic": "money-and-everyday-calculations"
+  },
+  {
+    "id": "p24",
+    "question": "How much change should you get from a $5,000 note for a bill of $3,275?",
+    "options": [
+      "$1,625",
+      "$1,725",
+      "$1,825",
+      "$2,725"
+    ],
+    "answer": "$1,725",
+    "explanation": "Step 1 — Change is what is handed over minus the total.\n$5,000 − $3,275\nStep 2 — Count up from the bill to the note instead, which is easier mentally: $3,275 to $4,000 is $725.\nStep 3 — Then $4,000 to $5,000 is $1,000.\n$725 + $1,000 = $1,725",
+    "topic": "money-and-everyday-calculations"
+  },
+  {
+    "id": "p25",
+    "question": "Find 15% of $800.",
+    "options": [
+      "$80",
+      "$120",
+      "$150",
+      "$160"
+    ],
+    "answer": "$120",
+    "explanation": "Step 1 — Find 10% by moving the decimal point one place.\n10% of $800 = $80\nStep 2 — 5% is half of that.\n$80 ÷ 2 = $40\nStep 3 — Add the two parts to get 15%.\n$80 + $40 = $120",
+    "topic": "money-and-everyday-calculations"
+  },
+  {
+    "id": "p26",
+    "question": "A phone plan costs $2,300 each month. What does it cost for a year?",
+    "options": [
+      "$2,760",
+      "$13,800",
+      "$23,000",
+      "$27,600"
+    ],
+    "answer": "$27,600",
+    "explanation": "Step 1 — A year has 12 months.\nStep 2 — Multiply the monthly cost by 12.\n$2,300 × 12\nStep 3 — Break it up: $2,300 × 10 = $23,000 and $2,300 × 2 = $4,600.\n$23,000 + $4,600 = $27,600",
+    "topic": "money-and-everyday-calculations"
+  },
+  {
+    "id": "p27",
+    "question": "A 3 kg bag of rice costs $1,050 and a 5 kg bag costs $1,650. Which is the better buy, and at what price per kilogram?",
+    "options": [
+      "The 3 kg bag, at $350 per kg",
+      "The 5 kg bag, at $330 per kg",
+      "The 3 kg bag, at $175 per kg",
+      "They work out the same per kilogram"
+    ],
+    "answer": "The 5 kg bag, at $330 per kg",
+    "explanation": "Step 1 — Work out the price of one kilogram for each bag.\n3 kg: $1,050 ÷ 3 = $350 per kg\n5 kg: $1,650 ÷ 5 = $330 per kg\nStep 2 — Compare the unit prices.\n$330 is less than $350\nStep 3 — The lower price per kilogram is the better buy.\nThe 5 kg bag, at $330 per kg",
+    "topic": "money-and-everyday-calculations"
+  },
+  {
+    "id": "p28",
+    "question": "A taxi charges $320 plus $80 for each passenger after the first. What is the fare for 4 passengers?",
+    "options": [
+      "$400",
+      "$480",
+      "$560",
+      "$640"
+    ],
+    "answer": "$560",
+    "explanation": "Step 1 — The first passenger is covered by the $320, so count the extra passengers.\n4 − 1 = 3 extra passengers\nStep 2 — Multiply the extras by the charge.\n3 × $80 = $240\nStep 3 — Add the base fare.\n$320 + $240 = $560",
+    "topic": "money-and-everyday-calculations"
+  },
+  {
+    "id": "p29",
+    "question": "Simplify the ratio 18 : 24.",
+    "options": [
+      "2 : 3",
+      "3 : 4",
+      "4 : 5",
+      "6 : 8"
+    ],
+    "answer": "3 : 4",
+    "explanation": "Step 1 — Find a number that divides both parts exactly. Both divide by 6.\nStep 2 — Divide both sides by 6.\n18 ÷ 6 = 3 and 24 ÷ 6 = 4\nStep 3 — 3 and 4 share no further common factor, so this is the simplest form.\n3 : 4",
+    "topic": "ratio-proportion-and-scale"
+  },
+  {
+    "id": "p30",
+    "question": "$1,200 is shared in the ratio 1 : 2. What is the larger share?",
+    "options": [
+      "$400",
+      "$600",
+      "$800",
+      "$900"
+    ],
+    "answer": "$800",
+    "explanation": "Step 1 — Add the parts of the ratio to find how many shares there are.\n1 + 2 = 3 shares\nStep 2 — Divide the total by the number of shares to get the value of one share.\n$1,200 ÷ 3 = $400\nStep 3 — The larger share is 2 shares.\n$400 × 2 = $800",
+    "topic": "ratio-proportion-and-scale"
+  },
+  {
+    "id": "p31",
+    "question": "A concrete mix uses cement and sand in the ratio 1 : 4. How many buckets of sand are needed with 12 buckets of cement?",
+    "options": [
+      "3",
+      "16",
+      "36",
+      "48"
+    ],
+    "answer": "48",
+    "explanation": "Step 1 — The ratio says 1 bucket of cement goes with 4 buckets of sand.\nStep 2 — Find the multiplier from the cement you have.\n12 ÷ 1 = 12\nStep 3 — Apply the same multiplier to the sand.\n4 × 12 = 48 buckets",
+    "topic": "ratio-proportion-and-scale"
+  },
+  {
+    "id": "p32",
+    "question": "A map has a scale of 1 : 50,000. Two towns are 6 cm apart on the map. How far apart are they in real life, in kilometres?",
+    "options": [
+      "3 km",
+      "30 km",
+      "300 km",
+      "3,000 km"
+    ],
+    "answer": "3 km",
+    "explanation": "Step 1 — Multiply the map distance by the scale.\n6 cm × 50,000 = 300,000 cm\nStep 2 — Convert centimetres to metres by dividing by 100.\n300,000 ÷ 100 = 3,000 m\nStep 3 — Convert metres to kilometres by dividing by 1,000.\n3,000 ÷ 1,000 = 3 km",
+    "topic": "ratio-proportion-and-scale"
+  },
+  {
+    "id": "p33",
+    "question": "A recipe for 4 people uses 300 g of rice. How much rice is needed for 10 people?",
+    "options": [
+      "600 g",
+      "700 g",
+      "750 g",
+      "1,200 g"
+    ],
+    "answer": "750 g",
+    "explanation": "Step 1 — Find the amount for one person.\n300 g ÷ 4 = 75 g\nStep 2 — Multiply by the number of people now being served.\n75 g × 10 = 750 g\nStep 3 — Check the size: 10 people is more than twice 4 people, so the answer must be more than double 300 g.\n750 g",
+    "topic": "ratio-proportion-and-scale"
+  },
+  {
+    "id": "p34",
+    "question": "Two quantities are in the ratio 5 : 8. If the smaller quantity is 45, what is the larger?",
+    "options": [
+      "28",
+      "64",
+      "72",
+      "90"
+    ],
+    "answer": "72",
+    "explanation": "Step 1 — The smaller quantity is 5 parts, and those 5 parts are worth 45. Find the value of one part.\n45 ÷ 5 = 9\nStep 2 — The larger quantity is 8 parts.\nStep 3 — Multiply the value of one part by 8.\n9 × 8 = 72",
+    "topic": "ratio-proportion-and-scale"
+  },
+  {
+    "id": "p35",
+    "question": "What is the value of 2 to the power of 4?",
+    "options": [
+      "8",
+      "16",
+      "24",
+      "32"
+    ],
+    "answer": "16",
+    "explanation": "Step 1 — A power means repeated multiplication. The index 4 says how many 2s are multiplied.\nStep 2 — Write them out.\n2 × 2 × 2 × 2\nStep 3 — Work left to right.\n2 × 2 = 4, then 4 × 2 = 8, then 8 × 2 = 16\n2 to the power of 4 is 16.",
+    "topic": "powers-roots-and-formulas"
+  },
+  {
+    "id": "p36",
+    "question": "Work out 7 squared plus the square root of 49.",
+    "options": [
+      "14",
+      "49",
+      "56",
+      "98"
+    ],
+    "answer": "56",
+    "explanation": "Step 1 — Square means multiply the number by itself.\n7 × 7 = 49\nStep 2 — The square root asks what number multiplied by itself gives 49, and that is 7.\nStep 3 — Add the two values.\n49 + 7 = 56",
+    "topic": "powers-roots-and-formulas"
+  },
+  {
+    "id": "p37",
+    "question": "What is the square root of 144?",
+    "options": [
+      "12",
+      "14",
+      "24",
+      "72"
+    ],
+    "answer": "12",
+    "explanation": "Step 1 — The square root asks: what number multiplied by itself gives 144?\nStep 2 — Try a number in range: 10 × 10 = 100 is too small; 12 × 12 = 144.\nStep 3 — Check: 12 × 12 = 144, so the square root is 12.\n12",
+    "topic": "powers-roots-and-formulas"
+  },
+  {
+    "id": "p38",
+    "question": "Use the formula V = l × w × h to find V when l = 5, w = 3 and h = 2.",
+    "options": [
+      "10",
+      "16",
+      "30",
+      "60"
+    ],
+    "answer": "30",
+    "explanation": "Step 1 — Write the formula with the values in place.\nV = 5 × 3 × 2\nStep 2 — Multiply the first two values.\n5 × 3 = 15\nStep 3 — Multiply by the third.\n15 × 2 = 30\nV = 30",
+    "topic": "powers-roots-and-formulas"
+  },
+  {
+    "id": "p39",
+    "question": "Use the formula P = 2(l + w) to find P when l = 9 and w = 4.",
+    "options": [
+      "13",
+      "22",
+      "26",
+      "36"
+    ],
+    "answer": "26",
+    "explanation": "Step 1 — The brackets come first. Add the values inside them.\n9 + 4 = 13\nStep 2 — Multiply the bracket by 2.\n2 × 13 = 26\nStep 3 — Dropping the brackets and working out 2 × 9 + 4 gives 22 — which is why the brackets matter.\nP = 26",
+    "topic": "powers-roots-and-formulas"
+  },
+  {
+    "id": "p40",
+    "question": "Convert 3 km to metres.",
+    "options": [
+      "30 m",
+      "300 m",
+      "3,000 m",
+      "30,000 m"
+    ],
+    "answer": "3,000 m",
+    "explanation": "Step 1 — A metre is smaller than a kilometre, so there will be more of them.\nStep 2 — Going to a smaller unit multiplies. There are 1,000 m in a kilometre.\n3 × 1,000 = 3,000\n3 km = 3,000 m",
+    "topic": "units-and-conversions"
+  },
+  {
+    "id": "p41",
+    "question": "Convert 4,500 g to kilograms.",
+    "options": [
+      "0.45 kg",
+      "4.5 kg",
+      "45 kg",
+      "450 kg"
+    ],
+    "answer": "4.5 kg",
+    "explanation": "Step 1 — A kilogram is bigger than a gram, so there will be fewer of them.\nStep 2 — Going to a bigger unit divides. There are 1,000 g in a kilogram.\n4,500 ÷ 1,000 = 4.5\n4,500 g = 4.5 kg",
+    "topic": "units-and-conversions"
+  },
+  {
+    "id": "p42",
+    "question": "How many centimetres are there in 2.75 m?",
+    "options": [
+      "27.5 cm",
+      "275 cm",
+      "2,750 cm",
+      "27,500 cm"
+    ],
+    "answer": "275 cm",
+    "explanation": "Step 1 — A centimetre is smaller than a metre, so multiply.\nStep 2 — There are 100 cm in a metre.\n2.75 × 100 = 275\nStep 3 — Check the size: two and three-quarter metres should be a few hundred centimetres.\n2.75 m = 275 cm",
+    "topic": "units-and-conversions"
+  },
+  {
+    "id": "p43",
+    "question": "How many minutes are there in 1 hour 45 minutes?",
+    "options": [
+      "95 minutes",
+      "105 minutes",
+      "145 minutes",
+      "165 minutes"
+    ],
+    "answer": "105 minutes",
+    "explanation": "Step 1 — Change the hours into minutes. One hour is 60 minutes.\nStep 2 — Add the minutes that were already there.\n60 + 45 = 105\nStep 3 — Check against the awkward base: time runs on 60s, not on 100s, so 1.45 hours would be wrong here.\n105 minutes",
+    "topic": "units-and-conversions"
+  },
+  {
+    "id": "p44",
+    "question": "A bottle holds 750 ml. How many litres is that?",
+    "options": [
+      "0.075 L",
+      "0.75 L",
+      "7.5 L",
+      "75 L"
+    ],
+    "answer": "0.75 L",
+    "explanation": "Step 1 — A litre is bigger than a millilitre, so there will be fewer litres.\nStep 2 — Divide by 1,000.\n750 ÷ 1,000 = 0.75\nStep 3 — Check the size: a 750 ml bottle is most of a litre, so three quarters of one makes sense.\n750 ml = 0.75 L",
+    "topic": "units-and-conversions"
+  },
+  {
+    "id": "p45",
+    "question": "Which is longer: 1.2 m or 115 cm?",
+    "options": [
+      "1.2 m",
+      "115 cm",
+      "They are the same length",
+      "There is not enough information to tell"
+    ],
+    "answer": "1.2 m",
+    "explanation": "Step 1 — Convert one of the measurements so both are in the same unit. Change the metres to centimetres.\n1.2 × 100 = 120 cm\nStep 2 — Compare.\n120 cm against 115 cm\nStep 3 — 120 cm is longer, so 1.2 m is the longer measurement.\n1.2 m",
+    "topic": "units-and-conversions"
+  },
+  {
+    "id": "p46",
+    "question": "What is the perimeter of a rectangular room measuring 15 m by 6 m?",
+    "options": [
+      "21 m",
+      "42 m",
+      "45 m",
+      "90 m"
+    ],
+    "answer": "42 m",
+    "explanation": "Step 1 — Perimeter goes round the outside, so it needs all four sides.\nStep 2 — Add the length and the width.\n15 + 6 = 21\nStep 3 — Double it, because each length appears twice.\n21 × 2 = 42 m",
+    "topic": "perimeter-and-area"
+  },
+  {
+    "id": "p47",
+    "question": "What is the area of the same rectangular room, 15 m by 6 m?",
+    "options": [
+      "21 m²",
+      "42 m²",
+      "90 m²",
+      "180 m²"
+    ],
+    "answer": "90 m²",
+    "explanation": "Step 1 — Area is the space inside, so multiply the two measurements rather than adding them.\nStep 2 — Area of a rectangle = length × width.\n15 × 6 = 90\nStep 3 — The answer is in square metres, because two lengths are multiplied.\n90 m²",
+    "topic": "perimeter-and-area"
+  },
+  {
+    "id": "p48",
+    "question": "What is the area of a triangle with a base of 20 cm and a height of 9 cm?",
+    "options": [
+      "29 cm²",
+      "90 cm²",
+      "180 cm²",
+      "360 cm²"
+    ],
+    "answer": "90 cm²",
+    "explanation": "Step 1 — Area of a triangle = ½ × base × height.\nStep 2 — Multiply the base by the height.\n20 × 9 = 180\nStep 3 — Halve it. A triangle is half of the rectangle that would fit around it.\n180 ÷ 2 = 90 cm²",
+    "topic": "perimeter-and-area"
+  },
+  {
+    "id": "p49",
+    "question": "An L-shaped room is made of two rectangles: 6 m by 4 m and 3 m by 2 m. What is the total floor area?",
+    "options": [
+      "24 m²",
+      "28 m²",
+      "30 m²",
+      "36 m²"
+    ],
+    "answer": "30 m²",
+    "explanation": "Step 1 — Work out the area of each rectangle separately.\n6 × 4 = 24 m²\n3 × 2 = 6 m²\nStep 2 — The room is the two rectangles together, so add them.\n24 + 6 = 30\nStep 3 — Check against a rough size: the big rectangle alone is 24 m², so 30 m² is sensible.\n30 m²",
+    "topic": "perimeter-and-area"
+  },
+  {
+    "id": "p50",
+    "question": "A rectangular plot 30 m by 20 m is to be fenced all the way round, with a 3 m gate left unfenced. How much fencing is needed?",
+    "options": [
+      "94 m",
+      "97 m",
+      "100 m",
+      "103 m"
+    ],
+    "answer": "97 m",
+    "explanation": "Step 1 — Find the distance all the way round.\n30 + 20 = 50, and 50 × 2 = 100 m\nStep 2 — The gate is a gap, so it does not need fencing.\nStep 3 — Subtract the gate from the perimeter.\n100 − 3 = 97 m",
+    "topic": "perimeter-and-area"
+  },
+  {
+    "id": "p51",
+    "question": "One litre of paint covers 8 m². How many litres are needed to paint a wall 12 m long and 3 m high?",
+    "options": [
+      "1.5 litres",
+      "4.5 litres",
+      "15 litres",
+      "36 litres"
+    ],
+    "answer": "4.5 litres",
+    "explanation": "Step 1 — Paint covers area, so work out the area of the wall first.\n12 × 3 = 36 m²\nStep 2 — One litre covers 8 m², so divide the area by 8.\n36 ÷ 8 = 4.5\nStep 3 — Check the size: 36 m² is between four and five times 8 m².\n4.5 litres",
+    "topic": "perimeter-and-area"
+  },
+  {
+    "id": "p52",
+    "question": "Two angles sit on a straight line. One of them is 128°. What is the other?",
+    "options": [
+      "42°",
+      "52°",
+      "62°",
+      "128°"
+    ],
+    "answer": "52°",
+    "explanation": "Step 1 — The angles on a straight line add to half a turn, which is 180°.\nStep 2 — Subtract the angle you know from 180°.\n180 − 128 = 52\nStep 3 — Check it looks right: one angle is obtuse and the other should be acute.\nThe other angle is 52°.",
+    "topic": "angles-and-2d-shapes"
+  },
+  {
+    "id": "p53",
+    "question": "Three angles at a point measure 105°, 90° and 85°. What is the fourth angle?",
+    "options": [
+      "70°",
+      "80°",
+      "85°",
+      "90°"
+    ],
+    "answer": "80°",
+    "explanation": "Step 1 — The angles at a point add to a full turn, which is 360°.\nStep 2 — Add the three angles you know.\n105 + 90 + 85 = 280\nStep 3 — Subtract from 360°.\n360 − 280 = 80\nThe fourth angle is 80°.",
+    "topic": "angles-and-2d-shapes"
+  },
+  {
+    "id": "p54",
+    "question": "In a triangle, two of the angles measure 90° and 35°. What is the third angle?",
+    "options": [
+      "45°",
+      "55°",
+      "65°",
+      "145°"
+    ],
+    "answer": "55°",
+    "explanation": "Step 1 — The three interior angles of any triangle add to 180°.\nStep 2 — Add the two you know.\n90 + 35 = 125\nStep 3 — Subtract from 180°.\n180 − 125 = 55\nCheck: 90 + 35 + 55 = 180 ✓",
+    "topic": "angles-and-2d-shapes"
+  },
+  {
+    "id": "p55",
+    "question": "The four angles of a quadrilateral are all equal. What is the size of each one?",
+    "options": [
+      "45°",
+      "60°",
+      "90°",
+      "180°"
+    ],
+    "answer": "90°",
+    "explanation": "Step 1 — A quadrilateral is two triangles, so its four angles add to twice 180°.\n2 × 180 = 360\nStep 2 — All four angles are equal, so divide by 4.\n360 ÷ 4 = 90\nStep 3 — A quadrilateral with four equal angles is a rectangle, and every corner of a rectangle is 90°.\n90°",
+    "topic": "angles-and-2d-shapes"
+  },
+  {
+    "id": "p56",
+    "question": "A triangle has two equal sides and the angle between them is 40°. What is the size of each of the other two angles?",
+    "options": [
+      "40°",
+      "60°",
+      "70°",
+      "100°"
+    ],
+    "answer": "70°",
+    "explanation": "Step 1 — Because two sides are equal, the two base angles are equal too.\nStep 2 — Take the known angle off the 180° that all triangles hold.\n180 − 40 = 140\nStep 3 — Share that between the two equal angles.\n140 ÷ 2 = 70\nEach base angle is 70°.",
+    "topic": "angles-and-2d-shapes"
+  },
+  {
+    "id": "p57",
+    "question": "What is the circumference of a circle with a radius of 5 cm, using π ≈ 3.14?",
+    "options": [
+      "15.7 cm",
+      "31.4 cm",
+      "78.5 cm",
+      "157 cm"
+    ],
+    "answer": "31.4 cm",
+    "explanation": "Step 1 — Circumference of a circle = 2 × π × radius.\nStep 2 — Substitute the values.\n2 × 3.14 × 5\nStep 3 — Work left to right.\n2 × 3.14 = 6.28, and 6.28 × 5 = 31.4\n31.4 cm",
+    "topic": "circles-circumference-and-area"
+  },
+  {
+    "id": "p58",
+    "question": "A circle has a diameter of 20 cm. What is its radius?",
+    "options": [
+      "5 cm",
+      "10 cm",
+      "20 cm",
+      "40 cm"
+    ],
+    "answer": "10 cm",
+    "explanation": "Step 1 — The diameter is the whole distance across, through the centre.\nStep 2 — The radius is half of that, from the centre to the edge.\nStep 3 — Divide the diameter by 2.\n20 ÷ 2 = 10 cm\nThe radius is 10 cm.",
+    "topic": "circles-circumference-and-area"
+  },
+  {
+    "id": "p59",
+    "question": "What is the area of a circle with a radius of 10 cm, using π ≈ 3.14?",
+    "options": [
+      "31.4 cm²",
+      "62.8 cm²",
+      "314 cm²",
+      "3,140 cm²"
+    ],
+    "answer": "314 cm²",
+    "explanation": "Step 1 — Area of a circle = π × radius × radius.\nStep 2 — Square the radius.\n10 × 10 = 100\nStep 3 — Multiply by π.\n100 × 3.14 = 314 cm²\n(62.8 cm is the circumference — the edge, not the surface.)",
+    "topic": "circles-circumference-and-area"
+  },
+  {
+    "id": "p60",
+    "question": "A circular pond has a diameter of 12 m. Using π ≈ 3.14, what is its circumference?",
+    "options": [
+      "18.84 m",
+      "37.68 m",
+      "75.36 m",
+      "113.04 m"
+    ],
+    "answer": "37.68 m",
+    "explanation": "Step 1 — Circumference = π × diameter, and this question gives the diameter directly.\nStep 2 — Substitute the values.\n3.14 × 12\nStep 3 — Multiply.\n3.14 × 12 = 37.68\n37.68 m (113.04 m² would be the area — that is the space inside, not the distance round the edge.)",
+    "topic": "circles-circumference-and-area"
+  },
+  {
+    "id": "p61",
+    "question": "A semicircular mat has a radius of 4 m. Using π ≈ 3.14, what is its area?",
+    "options": [
+      "12.56 m²",
+      "25.12 m²",
+      "50.24 m²",
+      "100.48 m²"
+    ],
+    "answer": "25.12 m²",
+    "explanation": "Step 1 — Work out the area of the whole circle first.\nArea = π × r × r = 3.14 × 4 × 4 = 3.14 × 16 = 50.24 m²\nStep 2 — A semicircle is half of that.\nStep 3 — Halve the whole area.\n50.24 ÷ 2 = 25.12 m²",
+    "topic": "circles-circumference-and-area"
+  },
+  {
+    "id": "p62",
+    "question": "What is the volume of a box measuring 10 cm by 5 cm by 4 cm?",
+    "options": [
+      "19 cm³",
+      "40 cm³",
+      "200 cm³",
+      "500 cm³"
+    ],
+    "answer": "200 cm³",
+    "explanation": "Step 1 — Volume of a cuboid = length × width × height, with all three in the same unit. They are all in centimetres.\nStep 2 — Multiply the first two.\n10 × 5 = 50\nStep 3 — Multiply by the third.\n50 × 4 = 200 cm³",
+    "topic": "volume-and-capacity"
+  },
+  {
+    "id": "p63",
+    "question": "A water tank measures 80 cm by 50 cm by 30 cm. How many litres does it hold?",
+    "options": [
+      "12 litres",
+      "120 litres",
+      "1,200 litres",
+      "12,000 litres"
+    ],
+    "answer": "120 litres",
+    "explanation": "Step 1 — Volume = length × width × height.\n80 × 50 × 30 = 120,000 cm³\nStep 2 — One cubic centimetre holds one millilitre.\n120,000 cm³ = 120,000 ml\nStep 3 — One litre is 1,000 ml, so divide by 1,000.\n120,000 ÷ 1,000 = 120 litres",
+    "topic": "volume-and-capacity"
+  },
+  {
+    "id": "p64",
+    "question": "A 2-litre bottle of juice is poured into cups that each hold 250 ml. How many cups can be filled?",
+    "options": [
+      "4 cups",
+      "8 cups",
+      "10 cups",
+      "20 cups"
+    ],
+    "answer": "8 cups",
+    "explanation": "Step 1 — Make both amounts the same unit. Change the litres to millilitres.\n2 × 1,000 = 2,000 ml\nStep 2 — Divide the juice by the size of one cup.\n2,000 ÷ 250 = 8\nStep 3 — Check the size: a 2-litre bottle is eight times a 250 ml cup, not four.\n8 cups",
+    "topic": "volume-and-capacity"
+  },
+  {
+    "id": "p65",
+    "question": "A cylindrical drum has a base area of 150 cm² and a height of 40 cm. What is its volume in litres?",
+    "options": [
+      "6 litres",
+      "60 litres",
+      "600 litres",
+      "6,000 litres"
+    ],
+    "answer": "6 litres",
+    "explanation": "Step 1 — Volume of a cylinder = base area × height.\n150 × 40 = 6,000 cm³\nStep 2 — One cubic centimetre holds one millilitre, so that is 6,000 ml.\nStep 3 — Convert to litres by dividing by 1,000.\n6,000 ÷ 1,000 = 6 litres",
+    "topic": "volume-and-capacity"
+  },
+  {
+    "id": "p66",
+    "question": "A tank holds 500 litres and fills at 25 litres per minute. How long does it take to fill?",
+    "options": [
+      "10 minutes",
+      "20 minutes",
+      "25 minutes",
+      "50 minutes"
+    ],
+    "answer": "20 minutes",
+    "explanation": "Step 1 — Time = capacity ÷ rate.\n500 ÷ 25\nStep 2 — Divide.\n500 ÷ 25 = 20\nStep 3 — Keep the unit attached: 500 litres divided by 25 litres per minute gives minutes.\n20 minutes",
+    "topic": "volume-and-capacity"
+  },
+  {
+    "id": "p67",
+    "question": "A car covers 240 km in 3 hours. What is its average speed?",
+    "options": [
+      "60 km/h",
+      "72 km/h",
+      "80 km/h",
+      "120 km/h"
+    ],
+    "answer": "80 km/h",
+    "explanation": "Step 1 — Speed = distance ÷ time.\nStep 2 — Put the distance over the time.\n240 ÷ 3\nStep 3 — Divide.\n240 ÷ 3 = 80\n80 km/h",
+    "topic": "time-speed-and-distance"
+  },
+  {
+    "id": "p68",
+    "question": "A cyclist rides at an average speed of 15 km/h for 2 hours. How far does the cyclist travel?",
+    "options": [
+      "7.5 km",
+      "17 km",
+      "30 km",
+      "45 km"
+    ],
+    "answer": "30 km",
+    "explanation": "Step 1 — Distance = speed × time.\nStep 2 — Substitute the values.\n15 × 2\nStep 3 — Multiply.\n15 × 2 = 30\n30 km",
+    "topic": "time-speed-and-distance"
+  },
+  {
+    "id": "p69",
+    "question": "A journey of 150 km is made at an average speed of 60 km/h. How long does it take?",
+    "options": [
+      "1.5 hours",
+      "2 hours",
+      "2.5 hours",
+      "3 hours"
+    ],
+    "answer": "2.5 hours",
+    "explanation": "Step 1 — Time = distance ÷ speed.\nStep 2 — Substitute the values.\n150 ÷ 60\nStep 3 — Divide: 60 goes into 150 twice, with 30 left over, and 30 is half of 60.\n150 ÷ 60 = 2.5 hours (2 hours 30 minutes)",
+    "topic": "time-speed-and-distance"
+  },
+  {
+    "id": "p70",
+    "question": "A train leaves at 08:35 and arrives at 11:05. How long is the journey?",
+    "options": [
+      "2 hours 30 minutes",
+      "2 hours 45 minutes",
+      "3 hours 30 minutes",
+      "3 hours 45 minutes"
+    ],
+    "answer": "2 hours 30 minutes",
+    "explanation": "Step 1 — Count the whole hours first: 08:35 to 10:35 is 2 hours.\nStep 2 — Count the minutes left: 10:35 to 11:05 is 30 minutes.\nStep 3 — Add the parts.\n2 hours + 30 minutes = 2 hours 30 minutes",
+    "topic": "time-speed-and-distance"
+  },
+  {
+    "id": "p71",
+    "question": "A walk of 4 km takes 50 minutes. What is the average speed in km/h?",
+    "options": [
+      "0.08 km/h",
+      "4.8 km/h",
+      "5 km/h",
+      "8 km/h"
+    ],
+    "answer": "4.8 km/h",
+    "explanation": "Step 1 — The speed is asked for in kilometres per hour, so the time must be in hours. Change 50 minutes to hours.\n50 ÷ 60 = 5/6 of an hour\nStep 2 — Speed = distance ÷ time.\n4 ÷ 5/6 = 4 × 6/5\nStep 3 — Multiply.\n4 × 6 = 24, and 24 ÷ 5 = 4.8\n4.8 km/h",
+    "topic": "time-speed-and-distance"
+  },
+  {
+    "id": "p72",
+    "question": "A bus covers 90 km at 45 km/h and then 60 km at 60 km/h. What is its average speed for the whole journey?",
+    "options": [
+      "50 km/h",
+      "52.5 km/h",
+      "55 km/h",
+      "60 km/h"
+    ],
+    "answer": "50 km/h",
+    "explanation": "Step 1 — Find the time for each part.\n90 ÷ 45 = 2 hours, and 60 ÷ 60 = 1 hour\nStep 2 — Total the distance and the time.\nDistance = 90 + 60 = 150 km. Time = 2 + 1 = 3 hours\nStep 3 — Average speed = total distance ÷ total time.\n150 ÷ 3 = 50 km/h\n(52.5 km/h is the average of the two speeds, not the average speed of the journey.)",
+    "topic": "time-speed-and-distance"
+  },
+  {
+    "id": "p73",
+    "question": "Which of these survey questions is double-barrelled — asking two things at once?",
+    "options": [
+      "How many minutes do you spend travelling to school?",
+      "Was the new timetable clear, and did you find it useful?",
+      "Which bus route do you use most often?",
+      "How much does one trip cost you?"
+    ],
+    "answer": "Was the new timetable clear, and did you find it useful?",
+    "explanation": "Step 1 — A double-barrelled question asks two things but allows one answer.\nStep 2 — 'Was the new timetable clear, and did you find it useful?' could be answered yes to one half and no to the other, and a single yes or no loses that.\nStep 3 — The other three each ask for one piece of information.\nThe double-barrelled one is the timetable question.",
+    "topic": "collecting-and-recording-data"
+  },
+  {
+    "id": "p74",
+    "question": "Which of these survey questions is leading?",
+    "options": [
+      "How many bus journeys did you make last week?",
+      "Wouldn't you agree that the fare rise is unfair?",
+      "How do you usually travel to work?",
+      "How long does your journey take?"
+    ],
+    "answer": "Wouldn't you agree that the fare rise is unfair?",
+    "explanation": "Step 1 — A leading question suggests the answer it wants, so people who disagree are pushed to agree anyway.\nStep 2 — 'Wouldn't you agree that the fare rise is unfair?' invites a yes and makes a no feel awkward.\nStep 3 — A fair version asks the opinion without planting it: 'What do you think of the fare rise?'\nThe leading question is the fare one.",
+    "topic": "collecting-and-recording-data"
+  },
+  {
+    "id": "p75",
+    "question": "A tally sheet shows four groups of five marks, followed by two single marks. How many responses does that record?",
+    "options": [
+      "11",
+      "20",
+      "22",
+      "24"
+    ],
+    "answer": "22",
+    "explanation": "Step 1 — Work out the grouped marks.\n4 groups of 5 = 20\nStep 2 — Add the single marks that follow.\n20 + 2 = 22\nStep 3 — Check by reading it back: four full fives and two more is twenty-two.\n22 responses",
+    "topic": "collecting-and-recording-data"
+  },
+  {
+    "id": "p76",
+    "question": "You ask the first 20 people leaving one bus park how they travelled that morning. Whose travel do these answers describe?",
+    "options": [
+      "Everyone in the parish",
+      "Everyone who uses buses",
+      "The people leaving that bus park at that time",
+      "The whole school"
+    ],
+    "answer": "The people leaving that bus park at that time",
+    "explanation": "Step 1 — A sample can only speak for the group it was drawn from.\nStep 2 — These 20 were all in the same place at the same time, and all were leaving a bus park, so bus users are already over-represented.\nStep 3 — The honest statement of the limit is that it describes people leaving that bus park at that time.\nThat is the group the answers describe.",
+    "topic": "collecting-and-recording-data"
+  },
+  {
+    "id": "p77",
+    "question": "Which heading would let you compare journey times across all your responses?",
+    "options": [
+      "How was your journey?",
+      "Journey notes",
+      "Minutes spent travelling to school each day",
+      "Transport"
+    ],
+    "answer": "Minutes spent travelling to school each day",
+    "explanation": "Step 1 — To compare responses they must be recorded in the same unit and about the same thing.\nStep 2 — 'How was your journey?' invites opinion, 'Journey notes' invites prose, and 'Transport' invites a type of vehicle.\nStep 3 — Only a heading that names a number and a unit, like minutes per day, produces figures that can be grouped and averaged.\n'Minutes spent travelling to school each day'",
+    "topic": "collecting-and-recording-data"
+  },
+  {
+    "id": "p78",
+    "question": "A family wants to show how its weekly budget divides between food, rent and transport. Which chart suits best?",
+    "options": [
+      "A pie chart",
+      "A line graph",
+      "A scatter graph",
+      "A single bar"
+    ],
+    "answer": "A pie chart",
+    "explanation": "Step 1 — The budget is one whole split into parts.\nStep 2 — A line graph shows change over time and a single bar shows one value with nothing to compare it to.\nStep 3 — A pie chart is built for showing parts of a single whole.\nA pie chart",
+    "topic": "tables-charts-and-graphs"
+  },
+  {
+    "id": "p79",
+    "question": "A chart is needed to compare the takings of four separate shops. Which chart suits best?",
+    "options": [
+      "A pie chart",
+      "A bar chart",
+      "A line graph",
+      "A pictogram"
+    ],
+    "answer": "A bar chart",
+    "explanation": "Step 1 — The four shops are separate categories rather than parts of one whole, and there is no time sequence.\nStep 2 — A pie chart would wrongly suggest the four together make up a single total, and a line graph would wrongly suggest a progression.\nStep 3 — A bar chart compares separate categories side by side.\nA bar chart",
+    "topic": "tables-charts-and-graphs"
+  },
+  {
+    "id": "p80",
+    "question": "A bar chart's vertical axis starts at 90 instead of 0. What is the effect?",
+    "options": [
+      "Nothing at all — the bars mean the same",
+      "Small differences look much bigger than they really are",
+      "The bars are drawn in the wrong order",
+      "The chart automatically becomes a line graph"
+    ],
+    "answer": "Small differences look much bigger than they really are",
+    "explanation": "Step 1 — A bar's length is meant to stand for its value, and that only works from zero.\nStep 2 — Starting the axis at 90 leaves only the part above 90 to be drawn, so a value of 100 and a value of 110 look far apart.\nStep 3 — The numbers are unchanged, but the visual claim the chart makes is exaggerated.\nSmall differences look much bigger than they really are.",
+    "topic": "tables-charts-and-graphs"
+  },
+  {
+    "id": "p81",
+    "question": "A chart has numbers on both axes but no units anywhere. What has the reader lost?",
+    "options": [
+      "The meaning of the figures — dollars, kilograms or minutes?",
+      "The colours of the bars",
+      "The order of the categories",
+      "Nothing — units are never useful on a chart"
+    ],
+    "answer": "The meaning of the figures — dollars, kilograms or minutes?",
+    "explanation": "Step 1 — A number on its own has no meaning until it is attached to a unit.\nStep 2 — Without units, 40 could be 40 kilograms, 40 dollars or 40 minutes, and those lead to different decisions.\nStep 3 — The reader has lost the thing that makes the chart usable.\nThe meaning of the figures.",
+    "topic": "tables-charts-and-graphs"
+  },
+  {
+    "id": "p82",
+    "question": "Which set of data is a line graph the right choice for?",
+    "options": [
+      "The number of students in each of five clubs",
+      "The temperature recorded every hour through one day",
+      "How a household's spending splits between four bills",
+      "The colours of the cars in a car park"
+    ],
+    "answer": "The temperature recorded every hour through one day",
+    "explanation": "Step 1 — A line graph shows change over time, so the data must be a sequence of readings in time order.\nStep 2 — Five clubs, four bills and car colours are all categories, not readings over time.\nStep 3 — Hourly temperatures are exactly a sequence over time.\nThe temperature recorded every hour through one day.",
+    "topic": "tables-charts-and-graphs"
+  },
+  {
+    "id": "p83",
+    "question": "Find the mean of the values 6, 9, 12 and 13.",
+    "options": [
+      "9",
+      "10",
+      "10.5",
+      "13"
+    ],
+    "answer": "10",
+    "explanation": "Step 1 — Add all the values.\n6 + 9 + 12 + 13 = 40\nStep 2 — Count how many values there are.\n4\nStep 3 — Divide the total by how many.\n40 ÷ 4 = 10\nThe mean is 10.",
+    "topic": "averages-and-range"
+  },
+  {
+    "id": "p84",
+    "question": "Find the range of the values 4, 19, 7 and 11.",
+    "options": [
+      "11",
+      "15",
+      "19",
+      "23"
+    ],
+    "answer": "15",
+    "explanation": "Step 1 — Range is the largest value minus the smallest.\nStep 2 — Find them.\nLargest 19, smallest 4\nStep 3 — Subtract.\n19 − 4 = 15\nThe range is 15.",
+    "topic": "averages-and-range"
+  },
+  {
+    "id": "p85",
+    "question": "Find the mode of the values 3, 5, 5, 5, 8 and 9.",
+    "options": [
+      "3",
+      "5",
+      "6",
+      "9"
+    ],
+    "answer": "5",
+    "explanation": "Step 1 — The mode is the value that appears most often.\nStep 2 — Count how many times each value occurs: 3 once, 5 three times, 8 once, 9 once.\nStep 3 — The value with the highest count is 5.\nThe mode is 5. (The mean would be 35 ÷ 6, which is not a value in the list at all — the mode has to be one of the actual values.)",
+    "topic": "averages-and-range"
+  },
+  {
+    "id": "p86",
+    "question": "Find the median of the values 8, 3, 12, 5 and 15.",
+    "options": [
+      "5",
+      "8",
+      "8.6",
+      "12"
+    ],
+    "answer": "8",
+    "explanation": "Step 1 — Put the values in order first. This is the step that is most often skipped.\n3, 5, 8, 12, 15\nStep 2 — There are five values, so the median is the third one.\nStep 3 — Read it off.\nThe median is 8.",
+    "topic": "averages-and-range"
+  },
+  {
+    "id": "p87",
+    "question": "Five students score 60, 62, 65, 70 and 98. Which average is pulled upward by the score of 98?",
+    "options": [
+      "The mode",
+      "The median",
+      "The mean",
+      "None of them"
+    ],
+    "answer": "The mean",
+    "explanation": "Step 1 — The mean uses the size of every value, so a large value adds to the total and lifts the result.\nTotal = 60 + 62 + 65 + 70 + 98 = 355, and 355 ÷ 5 = 71\nStep 2 — The median is the middle value, which is 65 here.\nStep 3 — The 98 is one value out of five, so it moves 65 (median) barely at all but moves 71 (mean) well above four of the five scores.\nThe mean.",
+    "topic": "averages-and-range"
+  },
+  {
+    "id": "p88",
+    "question": "Two classes both have a mean mark of 65. Class A's range is 4 marks and Class B's range is 40 marks. What does that tell you?",
+    "options": [
+      "Class B is better at the subject",
+      "Class A's marks are much more spread out",
+      "Class B's marks are much more spread out",
+      "The two classes are identical in every way"
+    ],
+    "answer": "Class B's marks are much more spread out",
+    "explanation": "Step 1 — The range measures spread, not level. It says nothing about which class did better.\nStep 2 — A range of 40 marks means Class B contains both low and high scores.\nStep 3 — A range of 4 marks means Class A's scores are all bunched together.\nThe two classes can share a mean and be completely different places to teach — Class B's marks are much more spread out.",
+    "topic": "averages-and-range"
+  },
+  {
+    "id": "p89",
+    "question": "A fair coin is tossed once. What is the probability of getting a head?",
+    "options": [
+      "0",
+      "1/4",
+      "1/2",
+      "1"
+    ],
+    "answer": "1/2",
+    "explanation": "Step 1 — Count the equally likely outcomes: a head or a tail.\n2 outcomes\nStep 2 — Count the ones that count as success: the head.\n1 outcome\nStep 3 — Probability = favourable ÷ total.\n1/2 = 0.5, an even chance.",
+    "topic": "probability-and-chance"
+  },
+  {
+    "id": "p90",
+    "question": "A fair six-sided die is rolled once. What is the probability of scoring a 3?",
+    "options": [
+      "1/6",
+      "1/3",
+      "1/2",
+      "3/6"
+    ],
+    "answer": "1/6",
+    "explanation": "Step 1 — The die has six equally likely outcomes: 1, 2, 3, 4, 5, 6.\nStep 2 — Only one of them is a 3.\nStep 3 — Probability = favourable ÷ total.\n1/6\n(3/6 would be the probability of an even number.)",
+    "topic": "probability-and-chance"
+  },
+  {
+    "id": "p91",
+    "question": "A bag holds 3 blue, 5 white and 2 black counters. One counter is taken without looking. What is the probability that it is white?",
+    "options": [
+      "1/5",
+      "1/2",
+      "5/8",
+      "3/10"
+    ],
+    "answer": "1/2",
+    "explanation": "Step 1 — Count all the counters.\n3 + 5 + 2 = 10\nStep 2 — Count the white ones.\n5\nStep 3 — Probability = 5/10, which cancels to 1/2.\n1/2 (0.5, or 50%)",
+    "topic": "probability-and-chance"
+  },
+  {
+    "id": "p92",
+    "question": "The probability of rain tomorrow is 0.2. What is the probability that it does not rain?",
+    "options": [
+      "0.2",
+      "0.5",
+      "0.8",
+      "1.2"
+    ],
+    "answer": "0.8",
+    "explanation": "Step 1 — Either it rains or it does not, so those two probabilities must add to 1.\nStep 2 — Subtract the chance of rain from 1.\n1 − 0.2 = 0.8\nStep 3 — Check: 0.2 + 0.8 = 1 ✓\nThe probability it does not rain is 0.8.",
+    "topic": "probability-and-chance"
+  },
+  {
+    "id": "p93",
+    "question": "Which of these events has a probability of 0?",
+    "options": [
+      "Rolling an odd number with a standard six-sided die",
+      "Rolling a 7 with a standard six-sided die",
+      "Drawing a heart from a standard pack of cards",
+      "Getting a head when a fair coin is tossed"
+    ],
+    "answer": "Rolling a 7 with a standard six-sided die",
+    "explanation": "Step 1 — A probability of 0 means impossible — there are no outcomes that make it happen.\nStep 2 — A standard die shows 1 to 6, so a 7 is not among its outcomes.\nStep 3 — The other three events all have some outcomes that make them happen, so none of them is impossible.\nRolling a 7 has a probability of 0.",
+    "topic": "probability-and-chance"
+  },
+  {
+    "id": "p94",
+    "question": "Ten raffle tickets are sold and you hold 3 of them. What is the probability that you win?",
+    "options": [
+      "3/7",
+      "3/10",
+      "7/10",
+      "1/3"
+    ],
+    "answer": "3/10",
+    "explanation": "Step 1 — Every ticket is equally likely to be drawn, so there are 10 equally likely outcomes.\nStep 2 — You hold 3 of those 10 tickets.\nStep 3 — Probability = favourable ÷ total.\n3/10 = 0.3\n3/10 (0.3, or 30%)",
+    "topic": "probability-and-chance"
+  },
+  {
+    "id": "p95",
+    "question": "A chart shows a shop's takings of $200 in June and $250 in July. Which claim does the data support?",
+    "options": [
+      "Takings rose by 25% between those two months.",
+      "Takings doubled between the two months.",
+      "Takings will keep rising every month this year.",
+      "The shop is the busiest in the parish."
+    ],
+    "answer": "Takings rose by 25% between those two months.",
+    "explanation": "Step 1 — Work out the actual increase.\n$250 − $200 = $50\nStep 2 — Compare it with the starting figure.\n$50 ÷ $200 = 0.25, which is 25%\nStep 3 — Two monthly figures can describe those two months, but they cannot predict the rest of the year or say anything about other shops.\nTakings rose by 25% between those two months.",
+    "topic": "interpreting-data-and-solve-problems"
+  },
+  {
+    "id": "p96",
+    "question": "A survey of 12 people on one street finds that 8 of them want a new bus shelter. Which claim is supported by that survey?",
+    "options": [
+      "8 of the 12 people asked want a bus shelter.",
+      "Most of the town wants a bus shelter.",
+      "Everyone who uses buses wants a shelter.",
+      "The shelter is needed at that stop more than anywhere else."
+    ],
+    "answer": "8 of the 12 people asked want a bus shelter.",
+    "explanation": "Step 1 — The data is 8 out of 12, on one street.\nStep 2 — A conclusion wider than the group asked is not supported: one street cannot speak for a town, and the people asked were not filtered to bus users.\nStep 3 — The only claim the figures carry is the count itself.\n8 of the 12 people asked want a bus shelter.",
+    "topic": "interpreting-data-and-solve-problems"
+  },
+  {
+    "id": "p97",
+    "question": "A chart shows one month's takings up by 10% on the month before. Which claim does the chart NOT support?",
+    "options": [
+      "Takings were higher in that month than in the month before.",
+      "Takings will rise by 10% every month for the rest of the year.",
+      "The two monthly figures can be compared.",
+      "There was an increase between those two months."
+    ],
+    "answer": "Takings will rise by 10% every month for the rest of the year.",
+    "explanation": "Step 1 — Two monthly figures describe two months.\nStep 2 — They can show an increase and allow the two months to be compared, which makes three of the four claims fair.\nStep 3 — Turning a single month's rise into a year-long prediction needs ten more months of data that nobody collected.\nThe year-long prediction is not supported.",
+    "topic": "interpreting-data-and-solve-problems"
+  },
+  {
+    "id": "p98",
+    "question": "The slices of a pie chart add up to 96%. What does that tell you about the chart?",
+    "options": [
+      "It is fine — a pie chart never has to add to 100%",
+      "The chart does not account for the whole, so a part has been left out",
+      "Every slice is 4% too small",
+      "The data must be about time rather than amounts"
+    ],
+    "answer": "The chart does not account for the whole, so a part has been left out",
+    "explanation": "Step 1 — A pie chart shows parts of ONE whole, so the slices must account for all of it.\nStep 2 — Rounding each slice to a whole number can move the total by a percent, but 4% short is far too much for that.\nStep 3 — Something belonging to the whole has been left out of the chart, so the reader cannot treat it as complete.\nThe chart does not account for the whole.",
+    "topic": "interpreting-data-and-solve-problems"
+  },
+  {
+    "id": "p99",
+    "question": "A shop reports that sales are up 50%, from 4 items to 6 items. Which reporting is most useful to a reader?",
+    "options": [
+      "Sales are booming.",
+      "Sales rose 50%.",
+      "Sales rose 50%, which is 2 more items.",
+      "Sales doubled."
+    ],
+    "answer": "Sales rose 50%, which is 2 more items.",
+    "explanation": "Step 1 — The percentage is correct: an increase of 2 on a starting figure of 4 is 2 ÷ 4 = 50%.\nStep 2 — The same figures as counts are also true and give the size of the change.\nStep 3 — A percentage without its base can make two extra items sound like a boom, so the honest report gives both.\nSales rose 50%, which is 2 more items.",
+    "topic": "interpreting-data-and-solve-problems"
+  },
+  {
+    "id": "p100",
+    "question": "Which of these is evidence that a town's water use fell between two months?",
+    "options": [
+      "A neighbour saying the town is using less water",
+      "The water company's meter readings for the town for the two months",
+      "A photograph of a dry standpipe",
+      "An opinion piece in a newspaper"
+    ],
+    "answer": "The water company's meter readings for the town for the two months",
+    "explanation": "Step 1 — Evidence for a numerical claim has to be numbers that measure the same thing in both periods.\nStep 2 — An opinion, a photograph and a claim from a neighbour are not measurements, and none of them gives a figure for the two months.\nStep 3 — Meter readings for the same town in both months are the figures the claim can be checked against.\nThe meter readings.",
+    "topic": "interpreting-data-and-solve-problems"
+  }
+]

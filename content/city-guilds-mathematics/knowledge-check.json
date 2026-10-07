@@ -1,0 +1,222 @@
+[
+  {
+    "id": "q1",
+    "question": "What is the value of the digit 7 in the number 3,472,015?",
+    "options": ["70", "7,000", "70,000", "700,000"],
+    "answer": "70,000",
+    "explanation": "Step 1 — Read the positions from the right: ones, tens, hundreds, thousands, ten-thousands.\nStep 2 — The 7 sits in the ten-thousands position.\nStep 3 — Its value is 7 × 10,000.\n7 × 10,000 = 70,000",
+    "topic": "whole-numbers-and-place-value"
+  },
+  {
+    "id": "q2",
+    "question": "Which of these numbers is the largest?",
+    "options": ["8,099", "8,900", "8,909", "8,990"],
+    "answer": "8,990",
+    "explanation": "Step 1 — Every number starts with 8, so compare the next place down: the hundreds.\nStep 2 — 8,099 has 0 hundreds, so it is out. 8,900 and 8,909 have 9 hundreds, and 8,990 has 9 hundreds too.\nStep 3 — Compare the tens of the numbers that are still in: 8,990 has 9 tens, the others have 0.\nThe largest is 8,990",
+    "topic": "whole-numbers-and-place-value"
+  },
+  {
+    "id": "q3",
+    "question": "Write 3/8 as a percentage.",
+    "options": ["0.375%", "3.75%", "37.5%", "375%"],
+    "answer": "37.5%",
+    "explanation": "Step 1 — A fraction becomes a decimal by dividing the top by the bottom.\n3 ÷ 8 = 0.375\nStep 2 — A decimal becomes a percentage by multiplying by 100.\n0.375 × 100 = 37.5\n3/8 = 37.5%",
+    "topic": "fractions-decimals-percentages"
+  },
+  {
+    "id": "q4",
+    "question": "Which of these amounts is the smallest?",
+    "options": ["0.39", "0.4", "2/5", "42%"],
+    "answer": "0.39",
+    "explanation": "Step 1 — Write all four in the same form. As decimals: 0.39, 0.4, 2 ÷ 5 = 0.4, and 42% = 0.42.\nStep 2 — Compare place by place:\n0.39  0.40  0.40  0.42\nStep 3 — 0.39 is the only one below 0.4.\nThe smallest is 0.39",
+    "topic": "fractions-decimals-percentages"
+  },
+  {
+    "id": "q5",
+    "question": "The temperature in a town falls from 6 °C to −4 °C overnight. By how many degrees did it fall?",
+    "options": ["2 degrees", "6 degrees", "10 degrees", "24 degrees"],
+    "answer": "10 degrees",
+    "explanation": "Step 1 — Count down from 6 °C to 0 °C:\n6 degrees\nStep 2 — Keep counting from 0 °C down to −4 °C:\n4 more degrees\nStep 3 — Add the two stages, because the fall crossed zero.\n6 + 4 = 10\nIt fell by 10 degrees.",
+    "topic": "negative-numbers-in-context"
+  },
+  {
+    "id": "q6",
+    "question": "Which estimate is closest to the value of 19.7 × 5.1?",
+    "options": ["95", "100", "105", "150"],
+    "answer": "100",
+    "explanation": "Step 1 — Round each number to something easy.\n19.7 rounds to 20 and 5.1 rounds to 5\nStep 2 — Multiply the rounded values.\n20 × 5 = 100\nStep 3 — Check against the exact answer (100.47): the estimate is one away, so 100 is the sensible estimate.",
+    "topic": "calculator-and-estimating"
+  },
+  {
+    "id": "q7",
+    "question": "A bag is priced at $2,400. GCT at 15% is added at the till. What is the total paid?",
+    "options": ["$2,520", "$2,640", "$2,760", "$3,000"],
+    "answer": "$2,760",
+    "explanation": "Step 1 — Find 10% by moving the decimal point one place.\n10% of $2,400 = $240\nStep 2 — 15% is 10% plus half of it again.\nHalf of $240 = $120, so 15% = $240 + $120 = $360\nStep 3 — Add the tax to the price.\n$2,400 + $360 = $2,760",
+    "topic": "money-and-everyday-calculations"
+  },
+  {
+    "id": "q8",
+    "question": "Two sizes of the same soap powder are on the shelf: 3 kg for $1,860, and 5 kg for $2,950. Which is the better buy, and at what price per kilogram?",
+    "options": [
+      "The 3 kg pack, at $620 per kg",
+      "The 5 kg pack, at $590 per kg",
+      "The 5 kg pack, at $640 per kg",
+      "They work out the same per kilogram"
+    ],
+    "answer": "The 5 kg pack, at $590 per kg",
+    "explanation": "Step 1 — Divide each price by the number of kilograms.\n3 kg pack: $1,860 ÷ 3 = $620 per kg\n5 kg pack: $2,950 ÷ 5 = $590 per kg\nStep 2 — Compare the unit prices.\n$590 is less than $620\nStep 3 — The lower price per kilogram is the better buy.\nThe 5 kg pack, at $590 per kg",
+    "topic": "money-and-everyday-calculations"
+  },
+  {
+    "id": "q9",
+    "question": "A recipe mixes flour and sugar in the ratio 5 : 2. If 750 g of flour is used, how much sugar is needed?",
+    "options": ["250 g", "300 g", "350 g", "375 g"],
+    "answer": "300 g",
+    "explanation": "Step 1 — The ratio compares 5 parts of flour with 2 parts of sugar. Find the value of one part.\n750 g ÷ 5 = 150 g per part\nStep 2 — Sugar is 2 parts.\n150 g × 2 = 300 g\n300 g of sugar is needed.",
+    "topic": "ratio-proportion-and-scale"
+  },
+  {
+    "id": "q10",
+    "question": "Use the formula A = ½bh to work out A when b = 12 and h = 7.",
+    "options": ["19", "42", "84", "168"],
+    "answer": "42",
+    "explanation": "Step 1 — Write the formula with the values in place.\nA = ½ × 12 × 7\nStep 2 — Multiplication, left to right.\n½ × 12 = 6\nStep 3 — Finish the calculation.\n6 × 7 = 42\nA = 42",
+    "topic": "powers-roots-and-formulas"
+  },
+  {
+    "id": "q11",
+    "question": "How many millilitres are there in 2.5 litres?",
+    "options": ["25 ml", "250 ml", "2,500 ml", "25,000 ml"],
+    "answer": "2,500 ml",
+    "explanation": "Step 1 — Decide the direction: a millilitre is smaller than a litre, so the answer is a bigger number.\nStep 2 — Going to a smaller unit multiplies. There are 1,000 ml in a litre.\n2.5 × 1,000 = 2,500\n2.5 litres = 2,500 ml",
+    "topic": "units-and-conversions"
+  },
+  {
+    "id": "q12",
+    "question": "A plank is 1.4 m long. How many centimetres is that?",
+    "options": ["14 cm", "140 cm", "1,400 cm", "14,000 cm"],
+    "answer": "140 cm",
+    "explanation": "Step 1 — A centimetre is smaller than a metre, so there will be more of them.\nStep 2 — Going to a smaller unit multiplies. There are 100 cm in a metre.\n1.4 × 100 = 140\nStep 3 — Check the size: 1.4 m of plank should be a few hundred centimetres, not fourteen.\n1.4 m = 140 cm",
+    "topic": "units-and-conversions"
+  },
+  {
+    "id": "q13",
+    "question": "A rectangular garden measures 12 m by 8 m. What length of fencing is needed to go all the way round it?",
+    "options": ["20 m", "40 m", "48 m", "96 m"],
+    "answer": "40 m",
+    "explanation": "Step 1 — Fencing goes round the outside, so this is a perimeter question.\nStep 2 — Add the length and the width, then double it.\n12 + 8 = 20\nStep 3 — Double for the two long and two short sides.\n20 × 2 = 40\n40 m of fencing",
+    "topic": "perimeter-and-area"
+  },
+  {
+    "id": "q14",
+    "question": "The same 12 m by 8 m garden is to be covered with turf at $35 per square metre. What does the turf cost?",
+    "options": ["$1,400", "$2,760", "$3,360", "$4,200"],
+    "answer": "$3,360",
+    "explanation": "Step 1 — Turf covers the space inside, so this is an area question.\nStep 2 — Area of a rectangle = length × width.\n12 × 8 = 96 square metres\nStep 3 — Multiply the area by the price per square metre.\n96 × 35 = 3,360\n$3,360. (Multiplying the 40 m perimeter by $35 is the trap: turf is not sold by the metre around the edge.)",
+    "topic": "perimeter-and-area"
+  },
+  {
+    "id": "q15",
+    "question": "Two angles of a triangle measure 68° and 47°. What is the third angle?",
+    "options": ["55°", "65°", "75°", "115°"],
+    "answer": "65°",
+    "explanation": "Step 1 — The three interior angles of every triangle add to 180°.\nStep 2 — Add the two angles you know.\n68 + 47 = 115\nStep 3 — Subtract that from 180°.\n180 − 115 = 65\nThe third angle is 65°.",
+    "topic": "angles-and-2d-shapes"
+  },
+  {
+    "id": "q16",
+    "question": "A circular table top has a radius of 7 cm. Using π ≈ 3.14, what is its area, to the nearest whole square centimetre?",
+    "options": ["22 cm²", "44 cm²", "154 cm²", "308 cm²"],
+    "answer": "154 cm²",
+    "explanation": "Step 1 — Area of a circle = π × radius × radius. The question gives the radius, not the diameter, so no halving is needed.\nStep 2 — Square the radius.\n7 × 7 = 49\nStep 3 — Multiply by π.\n49 × 3.14 = 153.86\n153.86 rounds to 154 cm². (44 cm is the circumference — that measures the edge, not the surface.)",
+    "topic": "circles-circumference-and-area"
+  },
+  {
+    "id": "q17",
+    "question": "A water tank measures 60 cm by 50 cm by 40 cm. How many litres does it hold when full?",
+    "options": ["12 litres", "120 litres", "1,200 litres", "12,000 litres"],
+    "answer": "120 litres",
+    "explanation": "Step 1 — Volume of a cuboid = length × width × height, with every length in the same unit.\n60 × 50 × 40 = 120,000 cm³\nStep 2 — One cubic centimetre holds one millilitre.\n120,000 cm³ = 120,000 ml\nStep 3 — One litre is 1,000 ml.\n120,000 ÷ 1,000 = 120\nThe tank holds 120 litres.",
+    "topic": "volume-and-capacity"
+  },
+  {
+    "id": "q18",
+    "question": "A bus covers 150 km in 2.5 hours. What is its average speed?",
+    "options": ["50 km/h", "60 km/h", "75 km/h", "375 km/h"],
+    "answer": "60 km/h",
+    "explanation": "Step 1 — Speed = distance ÷ time.\nStep 2 — Put the distance over the time.\n150 ÷ 2.5\nStep 3 — Divide, and keep the unit attached.\n150 ÷ 2.5 = 60\n60 km/h",
+    "topic": "time-speed-and-distance"
+  },
+  {
+    "id": "q19",
+    "question": "A journey starts at 09:45 and ends at 12:20. How long did the journey take?",
+    "options": ["2 hours 25 minutes", "2 hours 35 minutes", "3 hours 25 minutes", "3 hours 35 minutes"],
+    "answer": "2 hours 35 minutes",
+    "explanation": "Step 1 — Count the whole hours first: 09:45 to 11:45 is 2 hours.\nStep 2 — Count the minutes left: 11:45 to 12:20 is 35 minutes.\nStep 3 — This step crossed no hour boundary unnoticed, so add the parts.\n2 hours 35 minutes",
+    "topic": "time-speed-and-distance"
+  },
+  {
+    "id": "q20",
+    "question": "Which of these survey questions will produce usable data?",
+    "options": [
+      "How much do you spend on transport each week, and which route do you take?",
+      "Do you agree that the new bus fare is far too expensive?",
+      "How many bus journeys did you make last week?",
+      "How do you get around?"
+    ],
+    "answer": "How many bus journeys did you make last week?",
+    "explanation": "Step 1 — Test each question for one meaning and one answer.\nStep 2 — The first question asks two things at once, so the answers cannot be compared. The second suggests the answer wanted. The fourth could be answered with a route, a vehicle or a shrug.\nStep 3 — The third has one meaning and one number for an answer.\n'How many bus journeys did you make last week?' produces usable data.",
+    "topic": "collecting-and-recording-data"
+  },
+  {
+    "id": "q21",
+    "question": "A shop wants to show how its monthly takings changed over one year. Which chart suits best?",
+    "options": ["A pie chart", "A line graph", "A pictogram", "A single bar"],
+    "answer": "A line graph",
+    "explanation": "Step 1 — The data is a sequence of values over time.\nStep 2 — A pie chart shows parts of one whole, a pictogram trades accuracy for immediacy, and a single bar shows one value with nothing to compare it to.\nStep 3 — Only a line graph is built for change over time.\nA line graph",
+    "topic": "tables-charts-and-graphs"
+  },
+  {
+    "id": "q22",
+    "question": "Find the median of the marks 12, 7, 9, 15, 20.",
+    "options": ["9", "12", "12.6", "15"],
+    "answer": "12",
+    "explanation": "Step 1 — Put the values in order, smallest first.\n7, 9, 12, 15, 20\nStep 2 — There are five values, so the median is the third one.\nStep 3 — Read it off.\nThe median is 12. (12.6 is the mean of the same values — adding them to 63 and dividing by 5.)",
+    "topic": "averages-and-range"
+  },
+  {
+    "id": "q23",
+    "question": "A small business pays its manager $60,000 a week and four staff $18,000 each. Which average best describes what a typical worker there earns?",
+    "options": [
+      "The mean, $26,400",
+      "The median, $18,000",
+      "The range, $42,000",
+      "The mean, $18,000"
+    ],
+    "answer": "The median, $18,000",
+    "explanation": "Step 1 — Write the five weekly wages in order.\n18,000  18,000  18,000  18,000  60,000\nStep 2 — The middle value is 18,000, so the median is $18,000.\nStep 3 — Why not the mean? The total is $132,000 across five people, so the mean is $26,400 — a figure four of the five workers never earn, lifted by the one very large wage.\nThe median, $18,000",
+    "topic": "averages-and-range"
+  },
+  {
+    "id": "q24",
+    "question": "A bag holds 6 green and 4 red sweets. One sweet is taken out without looking. What is the probability that it is red?",
+    "options": ["1/4", "2/5", "4/6", "3/5"],
+    "answer": "2/5",
+    "explanation": "Step 1 — Count the total number of equally likely outcomes.\n6 + 4 = 10 sweets\nStep 2 — Count the favourable ones — the red sweets.\n4\nStep 3 — Probability = favourable ÷ total.\n4/10 = 2/5\n2/5 (0.4, or 40%)",
+    "topic": "probability-and-chance"
+  },
+  {
+    "id": "q25",
+    "question": "A chart shows a shop's takings rising from $8,000 in one month to $9,600 in the next. Which statement does the data actually support?",
+    "options": [
+      "The shop's takings will keep growing all year.",
+      "Takings rose by 20% between those two months.",
+      "The shop is the busiest in the parish.",
+      "Customers prefer the shop's new layout."
+    ],
+    "answer": "Takings rose by 20% between those two months.",
+    "explanation": "Step 1 — Two monthly figures can describe those two months. They cannot predict the rest of the year, describe other shops, or explain why anything happened.\nStep 2 — Check the percentage claim.\nIncrease = 9,600 − 8,000 = 1,600\nStep 3 — Compare it with the starting figure.\n1,600 ÷ 8,000 = 0.2, which is 20%\nOnly 'takings rose by 20% between those two months' is supported by the data.",
+    "topic": "interpreting-data-and-solve-problems"
+  }
+]

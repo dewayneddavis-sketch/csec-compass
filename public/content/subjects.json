@@ -138,6 +138,12 @@
     "icon": "Language"
   },
   {
+    "id": "city-guilds-mathematics",
+    "name": "City & Guilds Mathematics",
+    "description": "Prepare for City & Guilds Mathematics: numbers and the number system, common measures, shape and space, and handling data, with a hands-on lab for every lesson.",
+    "icon": "Calculate"
+  },
+  {
     "id": "city-guilds-english",
     "name": "City & Guilds English",
     "description": "Prepare for City & Guilds English: reading, writing, and speaking, listening and communicating, with a hands-on lab for every lesson.",

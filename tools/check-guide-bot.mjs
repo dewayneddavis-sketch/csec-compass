@@ -288,10 +288,21 @@ check(
     !/const\s+(SECONDS_PER_QUESTION|MAX_QUESTIONS|PASS_PERCENTAGE)\s*=/.test(read("src/components/MockExam.jsx"))
 );
 check(
-  "the show-your-work answer names the subjects showYourWork.js switches on",
-  showYourWork.SHOW_YOUR_WORK.subjects.length === 1 &&
-    GUIDE_SHOW_WORK_SUBJECTS.join(" and ") === "Mathematics" &&
-    answerFor("show-your-work").includes("Mathematics")
+  "the show-your-work answer names every subject showYourWork.js switches on (derived, never pinned)",
+  GUIDE_SHOW_WORK_SUBJECTS.length === showYourWork.SHOW_YOUR_WORK.subjects.length &&
+    GUIDE_SHOW_WORK_SUBJECTS.length >= 1 &&
+    GUIDE_SHOW_WORK_SUBJECTS.every((n) => n && answerFor("show-your-work").includes(n)) &&
+    answerFor("show-your-work").includes("Mathematics") &&
+    answerFor("show-your-work").includes("City & Guilds Mathematics"),
+  JSON.stringify(GUIDE_SHOW_WORK_SUBJECTS)
+);
+// The differentiator is a Mathematics one: City & Guilds English has no working box, so
+// the guide must never claim it for a subject that does not have it.
+check(
+  "the show-your-work answer claims no subject that does not have the box",
+  !GUIDE_SHOW_WORK_SUBJECTS.includes("City & Guilds English") &&
+    !/City & Guilds English/.test(answerFor("show-your-work")),
+  JSON.stringify(GUIDE_SHOW_WORK_SUBJECTS)
 );
 
 // --- content facts: counted out of the real files --------------------------

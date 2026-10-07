@@ -18,7 +18,7 @@
 
 export const SHOW_YOUR_WORK = {
   // Subject ids the working box is switched on for. Config-driven on purpose.
-  subjects: ["mathematics"],
+  subjects: ["mathematics", "city-guilds-mathematics"],
   // Where the box appears. 'mock' is the timed exam, 'practice' Extra Practice.
   quizzes: ["knowledge-check", "practice", "mock"],
   // Minimum characters of real working (after trimming) before the student may

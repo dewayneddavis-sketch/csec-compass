@@ -1,0 +1,97 @@
+{
+  "subjectId": "city-guilds-mathematics",
+  "introduction": "City & Guilds Mathematics is built on three areas of number work: using numbers and the number system, using common measures, shape and space, and handling data and information. This tab is CSEC Compass's own guide to the written side of that work — reading what a question is really asking, choosing a method before you calculate, showing the working so the method can be followed, and checking the result before you commit to it. Every lesson in the three modules feeds it. CSEC Compass is an independent study platform and is not affiliated with, authorized or endorsed by City & Guilds. City & Guilds® is a registered trade mark of the City and Guilds of London Institute. This is a study guide written by us, not an official document: how your course is run and assessed is decided by your centre and by City & Guilds, so check your teacher's current instructions as well as this guide.",
+  "tasks": [
+    {
+      "section": "read-the-question",
+      "title": "Step 1 — Read what the question is asking you to do",
+      "explanation": "Most lost credit in written number work is lost at the reading, not the calculating. Work out what the question wants you to produce — a value, a comparison, a decision, an explanation — and underline the words that name it. Words like calculate, estimate, compare, explain and justify all want different things, and the answer has to match the verb."
+    },
+    {
+      "section": "list-what-you-have",
+      "title": "Step 2 — List the figures you have, with their units",
+      "explanation": "Write the information down in a line before you do anything with it: each figure, and the unit it carries. This is where mixed units are caught — centimetres hiding among metres, minutes among hours — and it is much cheaper to catch them here than after a page of working."
+    },
+    {
+      "section": "choose-the-method",
+      "title": "Step 3 — Choose the method, then write it down",
+      "explanation": "Decide which operation the situation calls for before touching a calculator: adding a part on, taking a part off, dividing to find a unit price, multiplying to scale up. Naming the method in a short line gives your working a spine, and it gives the person reading it a way to follow your reasoning."
+    },
+    {
+      "section": "estimate-first",
+      "title": "Step 4 — Estimate before you calculate",
+      "explanation": "Round the numbers to something easy and work out roughly what the answer should be. The estimate costs seconds and it turns a wrong answer into a wrong answer you notice. It also gives you something to write at the end when the question asks whether your result is sensible."
+    },
+    {
+      "section": "show-the-working",
+      "title": "Step 5 — Show every step of the working",
+      "explanation": "Write each stage on its own line, keeping the units attached, so that somebody else can follow the route from the question to the answer without guessing. Method that is only in your head cannot be credited and cannot be checked — and on this platform every Mathematics answer on a quiz, a practice set or a mock asks for the working in a box for exactly that reason."
+    },
+    {
+      "section": "check-the-result",
+      "title": "Step 6 — Check the result before you write it down",
+      "explanation": "Compare the answer with your estimate, look at the units, and ask whether the size is plausible: a discount that made a price bigger, a tank that holds a hundred thousand litres, a journey time shorter than the distance suggests. Catching one of those is worth more than any speed you gain by not checking."
+    },
+    {
+      "section": "answer-the-question",
+      "title": "Step 7 — Answer in the form the question asked for",
+      "explanation": "Finish with a short sentence or a clearly labelled value, in the unit requested and at the accuracy requested. A correct figure left as an unlabelled number in the corner of a page is a correct figure nobody can find."
+    }
+  ],
+  "sampleTitle": "A worked walkthrough: costing a flooring job",
+  "sample": [
+    {
+      "section": "The situation",
+      "body": "A church hall is to be re-floored. The hall is rectangular, 12.4 m long and 7.5 m wide. One doorway 0.9 m wide has a metal strip fitted across it instead of flooring. The flooring chosen costs $2,850 per square metre and is only sold in whole square metres. How much will the flooring cost?",
+      "tips": "This walkthrough is written by CSEC Compass to show a method. It is not a real quotation, and it is not taken from any published assessment material — the numbers and the situation are made up so the steps can be followed."
+    },
+    {
+      "section": "Step 1 — Read what is being asked",
+      "body": "The question wants one thing: a cost, in dollars. Underline the words that tell you that — 'how much will the flooring cost?' Everything else in the paragraph is there to be used or discarded. Two details matter beyond the cost: the hall is rectangular, and the doorway does not take flooring. The word 'only sold in whole square metres' is a warning that the final quantity may need rounding up.",
+      "tips": "Write the target down before you start. 'Cost of whole square metres of flooring' is a line you can check your answer against at the end."
+    },
+    {
+      "section": "Step 2 — List the figures with their units",
+      "body": "Length 12.4 m. Width 7.5 m. Doorway width 0.9 m. Price $2,850 per square metre. Sold in whole square metres only. Nothing here needs converting — every length is already in metres — and saying so out loud is the check that stops a stray centimetre from arriving later.",
+      "tips": "If one length had been given in centimetres, convert it now, while the list is short. Mixed units are the most common way a correct method still produces a wrong answer."
+    },
+    {
+      "section": "Step 3 — Choose the method",
+      "body": "Flooring covers an area, so this is an area question, not a perimeter question. Area of a rectangle is length × width. The doorway is a strip of floor that is not being floored, so its area comes off the total. The price per square metre then converts the area into money: area × price.",
+      "tips": "Naming the method in one line — 'area, take off the strip, multiply by the price' — makes the rest of the working self-checking."
+    },
+    {
+      "section": "Step 4 — Estimate before calculating",
+      "body": "12.4 is about 12 and 7.5 is about 8, so the hall is about 12 × 8 = 96 square metres. The doorway strip is under a metre wide and only as long as the wall is thick, so it takes off well under a square metre. Call the floor area about 95 square metres. At roughly $3,000 per square metre, the cost should come out near 95 × 3,000 = $285,000.",
+      "tips": "An estimate of about $285,000 means any answer in the millions, or in the hundreds, has gone wrong — and you will know before you write it down."
+    },
+    {
+      "section": "Step 5 — Do the calculation, keeping the units",
+      "body": "Area of the hall: 12.4 × 7.5 = 93 square metres.\nArea of the doorway strip: the strip runs across a wall thickness of about 0.2 m, so 0.9 × 0.2 = 0.18 square metres.\nFlooring area: 93 − 0.18 = 92.82 square metres.\nThe flooring is sold in whole square metres only, so round up to 93 square metres — rounding down would leave a gap.\nCost: 93 × $2,850.\n93 × 2,850 = 265,050.\nThe cost is $265,050.",
+      "tips": "Rounding up at the end is a decision, not arithmetic, and it belongs in the working: write 'sold in whole square metres, so 93' rather than leaving it to be guessed."
+    },
+    {
+      "section": "Step 6 — Check the result",
+      "body": "The estimate was about $285,000 and the answer is $265,050 — the same size, and lower for two reasons that both make sense: the true area is a little under 96 square metres, and the price is $2,850 rather than $3,000. The units work out too: square metres × dollars per square metre gives dollars. If a length had been left in centimetres, the area would have come out ten thousand times too small and the cost would have been in the hundreds.",
+      "tips": "Two checks, both cheap: is it the right size, and are the units right? A wrong unit is the commonest way a correct calculation still loses credit."
+    },
+    {
+      "section": "Step 7 — Write the answer as asked",
+      "body": "The flooring for the hall costs $265,050, based on 93 square metres at $2,850 per square metre. One sentence, the figure first, the quantity and the unit price behind it so the working can be followed back.",
+      "tips": "Answer the verb. 'How much will it cost' wants a money figure — not '93', and not a paragraph about doorways."
+    }
+  ],
+  "marking": "These notes describe what this study guide looks for in a written answer; they are CSEC Compass's own study criteria and not a statement of how any qualification is marked, so always follow the instructions your teacher gives you. A strong answer shows the method line by line, keeps the units attached throughout, rounds only where the question or the situation demands it and says so when it does, and finishes with the answer in the form the question asked for. A weak answer is not always a wrong one: an unlabelled number, a missing unit, or a correct figure arrived at by working nobody can follow all lose the credit that the arithmetic had already earned.",
+  "checklist": [
+    "I have written down what the question is asking me to produce, and the verb that tells me.",
+    "I have listed every figure with its unit, and converted anything that did not match.",
+    "I have named the method in a line before calculating anything.",
+    "I have rounded the numbers and estimated roughly what the answer should be.",
+    "I have written every step of the working on its own line, not just the answer.",
+    "I have kept the units attached to each figure all the way down the working.",
+    "I have decided whether the answer needs rounding, and said why.",
+    "I have compared my answer with the estimate and checked it is the right size.",
+    "I have checked the units of the final answer against what the question asked for.",
+    "I have finished with the answer in the form asked for — a value, a comparison or a short explanation."
+  ]
+}
