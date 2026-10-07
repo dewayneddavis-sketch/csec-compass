@@ -1,0 +1,362 @@
+[
+  {
+    "id": "using-numbers-and-the-number-system",
+    "title": "Using Numbers & the Number System",
+    "lessons": [
+      {
+        "id": "whole-numbers-and-place-value",
+        "title": "Reading, Writing & Ordering Whole Numbers",
+        "objectives": [
+          "Read and write whole numbers of any size using place value",
+          "Compare and order numbers place by place, not by counting digits",
+          "Round a number to the accuracy a question asks for"
+        ],
+        "concepts": [
+          "Place value: the value a digit carries because of the position it sits in.",
+          "Ordering: line the digits up from the right, then compare from the highest place down.",
+          "Rounding: find the digit that decides, then replace everything after it with zeros."
+        ],
+        "experiment": {
+          "type": "number-line-plotter",
+          "description": "Place a mixed set of real-world figures — market prices, distances, population counts — in the right order, then read off how far apart the closest two are."
+        },
+        "content": "Every digit in a number carries two things: its own value and its position. In 4,082 the 4 is not worth four — it is worth four thousand, because of where it sits. Reading a number out loud by place value is the quickest way to check one you have copied from a bill, a receipt or a sign: four thousand and eighty-two. Move a digit one place and the number changes by ten times without any digit changing at all.\n\nComparing numbers is the same idea done quickly. Line the digits up from the right, read from the highest place value down, and stop at the first position where they differ. 9,480 is smaller than 9,512 even though the first two digits match, because at the hundreds position 4 loses to 5. A number with more digits is not automatically the bigger one once a decimal point or a minus sign appears, which is why the rule is compare place by place, never count the digits.\n\nRounding is the third skill and the one that saves time. To round to the nearest hundred, look at the tens digit: five or more rounds the hundreds digit up, and everything after the deciding digit becomes zero. To the nearest thousand, look at the hundreds digit. Rounding is how you spot a figure typed with a finger slip before it travels any further into a page of working, and it is also how you give an answer at the accuracy a question actually needs.\n\nIn this lesson's lab you order a mixed set of real-world figures — two market prices, a distance in metres and three population counts — and then work out the gap between the two that sit closest together."
+      },
+      {
+        "id": "fractions-decimals-percentages",
+        "title": "Fractions, Decimals & Percentages",
+        "objectives": [
+          "Write the same amount as a fraction, a decimal and a percentage",
+          "Convert between the three forms using division and multiplication by 100",
+          "Choose the form that makes a given calculation easiest"
+        ],
+        "concepts": [
+          "Fraction: a division written down, so three quarters means three divided by four.",
+          "Decimal: the result of carrying that division out.",
+          "Percentage: the decimal multiplied by a hundred — a standard way of comparing parts of different wholes."
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Match each fraction to its decimal, its percentage and one real use of it, so the three forms sit together."
+        },
+        "content": "Fractions, decimals and percentages are three ways of writing the same amount, and the skill is switching between them without hesitating. A fraction is a division written down: three quarters means three divided by four. A decimal is that division carried out — 0.75. A percentage is the decimal multiplied by a hundred, so the same amount reads 75%. Once you can say a quantity all three ways, a question stops being about a half-remembered rule and becomes about picking the form that is easiest to work with.\n\nThe common ones are worth knowing by heart — halves, quarters, fifths, tenths and eighths — because they turn up constantly in money, quantities and measurements. For everything else the bridge is multiplying and dividing by 100: a percentage becomes a decimal by dividing by a hundred, and a decimal becomes a percentage by multiplying by a hundred. A fraction becomes a decimal by dividing the top by the bottom, and a decimal becomes a fraction by writing it over the place value where it stops — 0.6 is six tenths, 0.36 is thirty-six hundredths — then cancelling down.\n\nComparing parts of different wholes is where percentages earn their keep. Two classes with different numbers of students cannot be compared honestly by counting how many passed; comparing the proportion who passed can. Discounts, deposits already paid, tips, tax and interest are all the same idea in different clothes, and doing the sum in the form that suits the numbers — a fraction when they divide exactly, a percentage when they do not — is faster and safer than forcing every amount into one form.\n\nIn the lab you match each fraction to its decimal, its percentage and one real use, so the three ways of saying the same thing stay tied together in your memory."
+      },
+      {
+        "id": "negative-numbers-in-context",
+        "title": "Negative Numbers in Real Context",
+        "objectives": [
+          "Place positive and negative numbers correctly on a number line",
+          "Order a mixed list of temperatures, balances and levels",
+          "Find the distance between two values that lie on opposite sides of zero"
+        ],
+        "concepts": [
+          "Negative number: a position below the zero you chose as the starting line.",
+          "Ordering: further left on the line is smaller, so −10 is less than −2.",
+          "Difference: how far you travel between two values — and crossing zero is still part of the journey."
+        ],
+        "experiment": {
+          "type": "number-line-plotter",
+          "description": "Order temperatures, bank balances and lift floors on the line, then work out the gap between the two that are furthest apart, crossing zero where the journey does."
+        },
+        "content": "A negative number is not a mistake and it is not nothing — it is a position below the zero you chose as a starting line. Temperature, bank balances, lift floors and goal differences all work the same way: pick the zero, then count up and down from it. Minus eight means eight below that line. Two figures can be enormous on one side and tiny on the other, which is exactly the confusion this lesson removes.\n\nOrdering negatives runs the opposite way to ordering positives, and the line is what keeps it straight. Further left is smaller, so minus ten is less than minus two even though ten is greater than two. When a list mixes both signs, split it into the figures below zero and the figures above, put each group in order, then join them — negatives first, then positives, then zero in the middle if it is there at all.\n\nThe distance between two values is the number of steps between them on the line, and the step people forget is the one that crosses zero. From minus three to plus five is eight steps, not two, because the travels passes through zero on the way. That single mistake is behind most wrong answers about temperature change, profit and loss, and how far an overdrawn account is from being healthy. In the lab you order a set of temperatures, balances and lift floors, then work out the widest gap in the set."
+      },
+      {
+        "id": "calculator-and-estimating",
+        "title": "Using a Calculator & Estimating Answers",
+        "objectives": [
+          "Estimate an answer before calculating, so a wrong result is caught",
+          "Enter a multi-step calculation in the order the operations demand",
+          "Recognise the common keying errors from the shape of the display"
+        ],
+        "concepts": [
+          "Estimate: a rough answer made with rounded numbers, used as a guard rail.",
+          "Order of operations: brackets, then powers and roots, then multiplication and division, then addition and subtraction.",
+          "Sanity check: does the size of the display match the size you expected?"
+        ],
+        "experiment": {
+          "type": "calculator-tool",
+          "description": "Match each rough estimate to the exact calculation it validates, then pick out the one calculation that has been mis-keyed."
+        },
+        "content": "A calculator is faster than you are and it is also completely obedient: press the wrong key and it will hand you a confident wrong answer with a full display of digits. Estimating is what defends you. Before touching the keypad, round the numbers to something easy and work out roughly what the answer should be. If the display then disagrees by a factor of ten or a hundred, you know which of you has made a mistake, and you know where to look.\n\nMost calculator errors are structural rather than arithmetical. A bracket left out where the calculator's own order of operations does not match the one in your head. A decimal point placed by a thumb. A division done the wrong way round — cheaper per item means the smaller number on top. Rounding first catches all three of those, and so does a final look at the display: a figure like 0.0048 when you expected a few hundred is a decimal-point slip, and a long decimal tail on a division of exact quantities is worth a second look.\n\nEstimation is also a skill in its own right, because it is what makes a number usable in a decision. About fourteen metres of fencing is the sentence a customer wants before you buy; the exact 13.8 metres comes second. Knowing when the rough figure is enough and when the exact one matters is part of the judgement, and it is always cheaper than being confidently wrong. In this lesson's lab you match each rough estimate to the exact calculation it validates, and pick out the one that does not agree."
+      },
+      {
+        "id": "money-and-everyday-calculations",
+        "title": "Money & Everyday Calculations",
+        "objectives": [
+          "Match a money situation to the operation it needs",
+          "Work out a percentage of an amount using easy building blocks",
+          "Compare two products by price per unit to find the better buy"
+        ],
+        "concepts": [
+          "Percentage of an amount: build it from ten per cent, which is a decimal point moved one place.",
+          "Unit price: the cost of one kilogram, litre or item, so unlike sizes can be compared.",
+          "Units inside the answer: dollars per kilogram, dollars per month — the unit shows whether the arithmetic was set up sensibly."
+        ],
+        "experiment": {
+          "type": "calculator-tool",
+          "description": "Match each everyday money situation — a discounted price, a bill with tax, change from a note, two sizes of the same product — to the operation that answers it."
+        },
+        "content": "Money questions are rarely arithmetic questions; they are decisions about which operation the situation calls for, taken before any calculating starts. A discount asks you to take a part away. Tax asks you to add a part on. Change asks you to subtract the total from what was handed over. A best-buy comparison asks you to divide to get a price per unit — per kilogram, per litre, per wash. Name the operation, then do the sum once.\n\nPercentages of money deserve their own habit: find ten per cent by moving the decimal point one place, then build anything else from there. Fifteen per cent is ten per cent plus half of it again. Twenty-five per cent is a quarter, so divide by four. Ten per cent of $2,400 is $240, so fifteen per cent is $240 plus $120 — $360. Working this way keeps the arithmetic inside your head, which means a wrong answer looks wrong before you have written it down.\n\nTwo habits save real money at the counter. First, keep the units attached as you go — dollars, per kilogram, per month — because a figure that ends up in the wrong unit is the commonest way a correct calculation still goes wrong. Second, check every percentage answer against common sense: a discount makes the price smaller, a tax makes the bill bigger, and neither should ever do the opposite. In the lab you match each situation to the operation that answers it, including the two products that only look like a bargain until you work out the price per unit."
+      },
+      {
+        "id": "ratio-proportion-and-scale",
+        "title": "Ratio, Proportion & Scale",
+        "objectives": [
+          "Write a ratio for a mix, a recipe or a share",
+          "Find the value of one part, then scale up to any amount asked for",
+          "Read a scale drawing or map and convert it to a real distance"
+        ],
+        "concepts": [
+          "Ratio: a comparison of parts of the same whole, written in the order the question names them.",
+          "Proportion: two ratios describing the same relationship, so every part rises by the same multiplier.",
+          "Scale: a fixed ratio between a drawing and the real thing."
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Match each recipe, mix and map statement to the amount it works out to, including the two that are tempting because the numbers are simply doubled."
+        },
+        "content": "A ratio compares parts of the same thing; a proportion says that two ratios describe the same relationship. If a paint mix is three parts white to one part colour, that is a ratio, and doubling every part keeps the colour — that is a proportion working. The skill is spotting when two quantities must rise and fall together, then finding the multiplier that carries you from the pair you know to the pair you want.\n\nThe reliable method is to work out the value of one part first. If five litres of paint cover forty square metres, one litre covers eight, and from there any amount of paint or any wall is a single multiplication away. Doing that one-part step even when the answer looks obvious is worth the seconds, because it leaves you something to check the final figure against. Sharing in a ratio uses the same step in reverse: add the parts to find the number of shares, divide the total by that to get one share, then hand out the shares.\n\nScale drawings and maps are the same idea with units attached. A scale of one to two hundred means every centimetre on the paper is two hundred centimetres — two metres — on the ground, so a wall drawn 4.5 cm long is nine metres of real wall. Read the units off the scale before multiplying, convert at the end if the question asks for metres or kilometres, and be suspicious of any answer that would make a room bigger than the building. In the lab you match each recipe, mix and map statement to its amount."
+      },
+      {
+        "id": "powers-roots-and-formulas",
+        "title": "Powers, Roots & Simple Formulas",
+        "objectives": [
+          "Work out squares, cubes and the simple powers of a number",
+          "Find a square root as the answer to a side-length question",
+          "Substitute values into a formula and evaluate it in the correct order"
+        ],
+        "concepts": [
+          "Power: repeated multiplication, written as a base with a small index number.",
+          "Root: the number that was multiplied by itself to give the value you have.",
+          "Substitution: replacing the letters in a formula with the values you know, then evaluating powers and roots before multiplication, and multiplication before addition."
+        ],
+        "experiment": {
+          "type": "interactive-equation",
+          "description": "Match each written formula to the value it produces when its values are substituted — including the two that break if the brackets are dropped or the order is ignored."
+        },
+        "content": "A power is shorthand for repeated multiplication: three to the fourth is three multiplied by itself four times, which is eighty-one. A root asks the opposite question — what number, multiplied by itself, gives this value? The square root is the one you meet most often, because it answers the side-length question: what length of side gives this area? Squares belong with area, cubes belong with volume, and powers of ten belong with place value, which is why these ideas sit at the end of the number module rather than the start.\n\nA formula is a rule written once so it can be used many times. Substituting means putting the values you have into the places the letters hold, then evaluating in the order the operations demand: powers and roots first, then multiplication and division, then addition and subtraction. Brackets override that order, so anything inside them is finished before the rest of the line is touched. Keeping the order is what stops a formula from producing a plausible wrong answer — one that looks like a number and is not the right one.\n\nTwo habits keep formulas honest. Write the formula down again with the values in place before you evaluate it, rather than working in the margins, and keep the units with the values, because a volume formula fed three lengths in different units will still hand you a number. In this lesson's lab you match each formula to the value it produces when the values are substituted."
+      }
+    ]
+  },
+  {
+    "id": "common-measures-shape-and-space",
+    "title": "Using Common Measures, Shape & Space",
+    "lessons": [
+      {
+        "id": "units-and-conversions",
+        "title": "Units of Measure & Conversions",
+        "objectives": [
+          "Name the unit a measurement needs and read the one given",
+          "Convert between metric units by moving the decimal point",
+          "Convert times in the sexagesimal system — minutes and hours — deliberately"
+        ],
+        "concepts": [
+          "Metric steps: the units run in powers of ten, so conversion moves a decimal point rather than doing long division.",
+          "Direction: going to a smaller unit gives more of them, so multiply; going to a bigger unit gives fewer, so divide.",
+          "Time: not a base-ten system, so it is converted inside its own rules."
+        ],
+        "experiment": {
+          "type": "visual-converter",
+          "description": "Match each measurement to its equivalent in another unit, including the pairs where the decimal point has to move more than one step."
+        },
+        "content": "A measurement only means something with a unit attached, and most practical errors are unit errors rather than arithmetic errors: a fence ordered in centimetres, an ingredient weighed in grams when the label said milligrams. The metric system runs on powers of ten, so conversion is a matter of moving the decimal point rather than doing long division — kilometres to metres, metres to centimetres, kilograms to grams, litres to millilitres, each step a multiple of a thousand, a hundred or ten.\n\nConversions run in both directions, and the direction is settled by one question: is the new unit bigger or smaller than the old one? Going to a smaller unit gives more of them, so multiply. Going to a bigger unit gives fewer, so divide. A mental check before writing anything down — three metres should be a large number of centimetres, not a small one — catches the reversal that would otherwise cost you the answer, and it takes a second.\n\nTime is the awkward system, because it does not run on tens: sixty seconds in a minute, sixty minutes in an hour. Treat time as its own system and convert inside it on purpose, turning one hour and twenty minutes into eighty minutes, or one and a third hours, before it goes into any other calculation. In this lesson's lab you match each measurement to its equivalent in another unit, and to the situation that decides which unit is the sensible one to quote."
+      },
+      {
+        "id": "perimeter-and-area",
+        "title": "Perimeter & Area",
+        "objectives": [
+          "Decide whether a situation asks for distance around or space inside",
+          "Work out the perimeter and area of rectangles, triangles and composite shapes",
+          "Use area to work out what a job will cost"
+        ],
+        "concepts": [
+          "Perimeter: the distance around the outside, measured in metres or centimetres.",
+          "Area: the space inside, measured in square metres or square centimetres.",
+          "Composite shape: an awkward outline that can be split into rectangles, worked out separately and added."
+        ],
+        "experiment": {
+          "type": "area-builder",
+          "description": "Match each shape and job to the method it needs — fencing or paving — and to the quantity that decides the bill."
+        },
+        "content": "Perimeter is the distance around the outside and area is the space inside. They are measured in different units for that reason — metres and square metres — and a question usually tells you which one it wants through the units it gives or asks for. Confusing the two is the most common measurement mistake there is, and it survives all the correct arithmetic that follows, so name the quantity before calculating anything.\n\nThe rectangle carries most of the practical work: perimeter is twice the length plus twice the width, area is length times width. Triangles and parallelograms are built from the same idea, with the half or the perpendicular height doing the work. Composite shapes — an L-shaped room, a plot with a corner missing — are split into rectangles, worked out one at a time and added back together, and that splitting is worth practising because real buildings are rarely tidy.\n\nArea is what you buy. Paint covers area, tiles cover area, turf covers area, and all of them are priced per square metre, so area is what decides the cost. Perimeter is what you buy when you edge, fence or run skirting around a space. Getting the two the right way round is the difference between ordering enough tiles and ordering enough fencing for a job that needed the other one. In the lab you match each shape and situation to its method and its quantity."
+      },
+      {
+        "id": "angles-and-2d-shapes",
+        "title": "Angles & 2-D Shapes",
+        "objectives": [
+          "Use the angle facts for a straight line, a point and a triangle",
+          "Apply the parallel-line angle facts to find a missing angle",
+          "Use the properties of triangles and quadrilaterals to reason about a shape"
+        ],
+        "concepts": [
+          "Straight line and point: the angles on a straight line add to half a turn, and the angles at a point add to a whole turn.",
+          "Triangle and quadrilateral: the interior angles of every triangle add to the same fixed total, and a quadrilateral's add to twice that.",
+          "Parallel lines: corresponding angles are equal, alternate angles are equal, and co-interior angles add to half a turn."
+        ],
+        "experiment": {
+          "type": "drag-drop",
+          "description": "Sort angle facts and shape properties into the shape or situation each one belongs to, then use them to fill in the missing angles."
+        },
+        "content": "Angle facts are a small set of rules that let you find one angle from the others without ever measuring. On a straight line the angles add to half a turn; at a point they add to a full turn; in a triangle the three interior angles always add to the same fixed total. Add the parallel-line facts — corresponding angles equal, alternate angles equal, co-interior angles adding to half a turn — and nearly any angle in a diagram becomes one subtraction away.\n\nThe shapes carry facts of their own. A triangle with two equal sides has two equal base angles, an equilateral triangle has three equal angles, and a quadrilateral's four interior angles add to twice what a triangle's do. Recognising the shape tells you which fact to reach for, which is why this lesson keeps the angles and the shapes together: two equal tick marks on a diagram are as much information as a number is.\n\nDrawing is the honest check on your reasoning. If two angles that must be equal are visibly different, then either the diagram is not to scale — which is normal and not a problem — or the reasoning has gone wrong. Sorting the facts by the situation they apply to is the skill, and in this lesson's lab that is exactly what you do before using them."
+      },
+      {
+        "id": "circles-circumference-and-area",
+        "title": "Circles: Circumference & Area",
+        "objectives": [
+          "Use the radius and the diameter of a circle correctly",
+          "Work out a circumference and an area, choosing the right one for the situation",
+          "Handle half-circles and quarter-circles by taking a fraction of the whole"
+        ],
+        "concepts": [
+          "Radius and diameter: the diameter is twice the radius, and every circle measurement starts from one of them.",
+          "Circumference: the distance around the edge, in ordinary length units.",
+          "Area: the space inside, in square units — and it grows with the square of the radius, so it climbs quickly."
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Match each circle problem — a tyre, a table top, a running track, a round cover — to the method it needs and the result it produces."
+        },
+        "content": "A circle is described by a single length, the radius, and everything else is built from it. The diameter is twice the radius, which matters because plenty of questions give you the diameter while every circle formula wants the radius — the commonest single trap in the topic. Circumference, the distance around the edge, and area, the space inside, both come from that same starting length, joined by the same fixed number for every circle in the world.\n\nUnits are what keep the two apart in practice. A tyre, a wheel or a running track has a circumference in metres; a table top, a manhole cover or a round flower bed has an area in square metres. Area grows as the square of the radius, so a pan twice as wide holds four times as much — which is why a small change in diameter is worth measuring carefully and why a small-looking difference in size can be a large difference in what a container holds.\n\nHalf-circles and quarter-circles are everywhere in real shapes: a semicircular arch, a quarter-round patio, the ends of a running track. They are handled by working out the whole circle and then taking the fraction the shape covers, remembering that a half-circle's perimeter also includes the straight diameter. In this lesson's lab you match each problem to its method and its result."
+      },
+      {
+        "id": "volume-and-capacity",
+        "title": "Volume & Capacity",
+        "objectives": [
+          "Work out the volume of a cuboid and a cylinder in the same units throughout",
+          "Convert between cubic measurement and litres or millilitres",
+          "Answer the second half of a capacity question — time to fill, bottles filled, cost"
+        ],
+        "concepts": [
+          "Volume: the space a solid occupies, in cubic units.",
+          "Capacity: how much a container holds, usually in litres or millilitres, where one cubic centimetre holds one millilitre.",
+          "Consistent units: length, width and height must agree before they are multiplied."
+        ],
+        "experiment": {
+          "type": "volume-filler",
+          "description": "Match each container — a water tank, a shipping box, a cup, a drum — to its volume or capacity calculation, converting to litres where the container demands it."
+        },
+        "content": "Volume is the space a solid takes up, in cubic units; capacity is how much a container holds, usually in litres or millilitres. The two are tied together by one fact worth committing to memory: a cubic centimetre holds a millilitre, and a thousand of those make a litre. That single relationship turns a tank measured in centimetres into a litre figure, and a litre figure back into the measurements of the tank that would hold it.\n\nBoxes and tanks are cuboids, and their volume is length times width times height — with all three in the same unit, a step that gets skipped and is the reason an answer can be out by a factor of a thousand. Cylinders are the other shape that earns its place: the area of the circular end multiplied by the height. Water tanks, drums and pipes are cylinders, so this is arithmetic that gets used rather than merely asked for.\n\nCapacity questions almost always have a second half. How long will the tank take to fill at this rate? How many bottles will it fill? What will the water cost at this price per litre? That second half is where the conversion earns its place, and where a sensible answer in the right unit matters more than a long decimal. In the lab you match each container to its volume or capacity and to what the container is for."
+      },
+      {
+        "id": "time-speed-and-distance",
+        "title": "Time, Speed & Distance",
+        "objectives": [
+          "Use the relationship between speed, distance and time in any direction",
+          "Convert clock times and durations before calculating",
+          "Find the average speed for a whole journey and explain why it is not the average of the speeds"
+        ],
+        "concepts": [
+          "Speed: distance divided by time, so it always reads as a distance per a time.",
+          "Clock time: departure and arrival are times of day; the journey is the difference between them.",
+          "Average speed: total distance divided by total time for the whole journey."
+        ],
+        "experiment": {
+          "type": "interactive-pathway",
+          "description": "Order a journey's steps and work out the time, distance or speed figure at each stage, then decide whether the average speed claim holds."
+        },
+        "content": "Time, speed and distance are three views of one journey, and the relationship between them is worth holding as a triangle so that any one of the three can be worked out from the other two. Speed is distance divided by time, so it always reads as a distance per a time — kilometres per hour, metres per second — and keeping it in that form is what stops a journey question going wrong in its last step.\n\nUnits are the whole difficulty here, not the formulas. A time given as one hour and twenty minutes has to become one and a third hours, or eighty minutes, before it goes into any calculation. A speed in metres per second and a distance in kilometres have to be brought into agreement before they can meet. A timetable adds a second layer, because departure and arrival are clock times and the journey is the difference between them — and that subtraction may cross an hour boundary, which is where the arithmetic usually slips.\n\nAverage speed for a whole journey is the total distance divided by the total time. It is not the average of the two speeds, and the difference is not a technicality: a bus that crawls through traffic and then runs empty and fast does not average the two figures. In this lesson's lab you order a journey's stages, working out the figure each stage produces before deciding what the whole journey's average speed really was."
+      }
+    ]
+  },
+  {
+    "id": "handling-data-and-information",
+    "title": "Handling Data & Information",
+    "lessons": [
+      {
+        "id": "collecting-and-recording-data",
+        "title": "Collecting & Recording Data",
+        "objectives": [
+          "Tell a survey question that will produce usable data from one that will not",
+          "Record responses so they can be grouped and counted later",
+          "Say plainly who a set of answers can and cannot speak for"
+        ],
+        "concepts": [
+          "Clear question: one meaning, answers that can be recorded the same way for everyone.",
+          "Leading or double-barrelled question: a question that suggests its answer or asks two things at once.",
+          "Sample: the group you asked — and the limits of what their answers can tell you."
+        ],
+        "experiment": {
+          "type": "drag-drop",
+          "description": "Sort survey questions into the ones that will produce usable data and the ones that will not, naming why each poor question fails."
+        },
+        "content": "Data work starts before any arithmetic, with the question you decide to ask. A good survey question has one meaning, offers answers that can be written down the same way by everyone, and can actually be answered by the person you ask. How much do you spend on transport? is three questions in one — how you usually travel, how often, and how much each trip costs — and the answers that come back cannot be compared with each other.\n\nRecording is the second half of the job. A tally sheet, a table with clear headings and a agreed unit are what make the numbers usable later; a pile of notes is not data, however carefully it was gathered. Sampling matters just as much: asking the first twenty people outside one bus park tells you about that bus park, not about the parish, and saying so out loud is part of doing the work honestly rather than a weakness in it.\n\nOnce the answers are recorded, they are grouped so that a pattern can appear — by range, by response, by category — and it is the grouping that turns a list into something a chart can show. In this lesson's lab you sort survey questions into the ones that will produce usable data and the ones that will not, and name the fault in each of the poor ones."
+      },
+      {
+        "id": "tables-charts-and-graphs",
+        "title": "Tables, Charts & Graphs",
+        "objectives": [
+          "Choose the chart type that answers the question being asked",
+          "Read a chart's scale, keys and axes before reading its numbers",
+          "Spot a chart that misleads through its axis or its scale"
+        ],
+        "concepts": [
+          "Bar chart: compares separate categories.",
+          "Line graph: shows change over time, and only over time.",
+          "Pie chart: shows parts of one whole — and a cut axis where a chart should start at zero."
+        ],
+        "experiment": {
+          "type": "data-explorer",
+          "description": "Match each data story to the chart that shows it honestly, and to the misleading chart that does the opposite."
+        },
+        "content": "A table is data at rest and a chart is data telling a story. Choosing between a bar chart, a pie chart, a line graph and a pictogram is not a matter of taste, because each one answers a different question. A bar chart compares separate categories, such as the takings of four shops. A pie chart shows parts of one whole, such as how a week's spending divides between food, transport and rent. A line graph shows change over time — and only over time. A pictogram trades accuracy for immediacy, which is sometimes exactly what a notice needs.\n\nReading a chart properly means reading its parts first: the scale on each axis, the units, the key, and whether the vertical axis starts at zero. A bar chart with a cut axis can make a small difference look enormous — which may be carelessness or may be deliberate — and the reader who checks the axis is the one who is not misled. The same discipline applies to a pie chart whose slices do not add to a whole, or a line drawn through points that were never measured that way.\n\nDrawing is the other half of the skill: equal intervals, labelled axes with units, a title that says what is being shown, and a chart large enough for the smallest difference to be visible. In this lesson's lab you match each data story to the chart that shows it honestly and to the chart that does not."
+      },
+      {
+        "id": "averages-and-range",
+        "title": "Averages & Range",
+        "objectives": [
+          "Work out the mean, the median and the mode of a set of data",
+          "Choose the average that suits the data and the claim being made",
+          "Use the range to describe how spread out the data is"
+        ],
+        "concepts": [
+          "Mean: the total divided by how many values there are, so every value counts.",
+          "Median: the middle value once the data is in order — untouched by how extreme the ends are.",
+          "Mode and range: the most frequent value, and the largest value minus the smallest."
+        ],
+        "experiment": {
+          "type": "data-visualizer",
+          "description": "Match each dataset to the average and range that describe it, and to the claim that average actually supports."
+        },
+        "content": "Three different numbers all get called the average, and choosing the right one is the real skill. The mean adds every value and divides by how many there are, so every value has a say. The median is the middle value once the data is in order, so it does not care how extreme the ends are. The mode is the value that occurs most often, and it is the only one of the three that makes sense for a category rather than a measurement — the most common type of transport used, for example.\n\nThe range, the largest value minus the smallest, says how spread out the data is, and it is often more useful than any average on its own. Two classes can have the same mean mark and be completely different places to learn. In a workplace, a mean wage can sit well above what most staff actually earn because one senior salary pulls it up, and it is the median that tells you what the typical worker takes home.\n\nOutliers are the reason all of this matters. One very large or very small value moves the mean a long way and leaves the median almost alone, so quoting an average without checking for outliers is how a true number ends up supporting a false claim. In this lesson's lab you match each dataset to the average and range that describe it, and to the statement the data can honestly be used to make."
+      },
+      {
+        "id": "probability-and-chance",
+        "title": "Probability & Chance",
+        "objectives": [
+          "Place an event on the scale from impossible to certain",
+          "Work out the probability of an outcome from equally likely possibilities",
+          "Use the fact that the probabilities of all outcomes add to one"
+        ],
+        "concepts": [
+          "Probability scale: zero for impossible, one for certain, one half for an even chance.",
+          "Equally likely outcomes: favourable outcomes divided by total outcomes.",
+          "Complement: the chance an event does not happen is one minus the chance it does."
+        ],
+        "experiment": {
+          "type": "probability-sim",
+          "description": "Order everyday events from impossible to certain, then match them to the numeric probability each one carries."
+        },
+        "content": "Probability puts a number on uncertainty, on a scale that runs from zero for impossible to one for certain, with a half sitting at the even chance. Putting a number on it is what makes a chance usable in a decision: a small probability on a wet-season forecast is worth carrying an umbrella for, while a half is worth planning around. Writing the same chance as a fraction, a decimal or a percentage should all feel like saying the same thing.\n\nFor equally likely outcomes the calculation is counting: favourable outcomes over total outcomes. A bag with six green sweets and four red ones holds ten equally likely sweets, four of which are red, so the chance of drawing a red one is four in ten. The chance of not drawing red is whatever is left over — one minus that figure — which is the fastest check there is that your arithmetic has not drifted, because the probabilities of all the possible outcomes must add to exactly one.\n\nEveryday reasoning is the real point: the weather, a raffle, a bus that is usually late, a spinner, a form with two boxes where one must be ticked. In this lesson's lab you order events from impossible to certain and then match each one to its numeric probability, including the pairs that sound the same and are not."
+      },
+      {
+        "id": "interpreting-data-and-solve-problems",
+        "title": "Interpreting Data to Solve Problems",
+        "objectives": [
+          "Separate what a chart shows from what someone wants it to show",
+          "Judge whether a claim goes further than the data can reach",
+          "Answer a data question with the evidence attached to it"
+        ],
+        "concepts": [
+          "Supported claim: a statement the figures in front of you actually justify.",
+          "Unsupported claim: a statement that needs data nobody collected — a trend from one month, a whole town from one street.",
+          "Evidence: the specific figure that settles whether a claim stands."
+        ],
+        "experiment": {
+          "type": "data-explorer",
+          "description": "Sort statements taken from a chart into those the data supports and those it does not, naming the figure that settles each one."
+        },
+        "content": "The last step in data work is the one that gets skipped: saying what the figures actually support. A chart can be read perfectly and still produce a wrong conclusion, because the claim being made has travelled further than the data allows. Separating what a chart shows from what somebody wants it to show is the skill this lesson teaches, and it is the same skill a customer, a voter or a manager needs.\n\nTwo habits carry most of the weight. First, look for the claim the data cannot reach: a single month's figures cannot prove a long-term trend, and a survey on one street cannot speak for a town. Second, keep the size of the group in view, because a rise from two cases to four is a doubling and it is also two extra people — both statements are true, and only one of them is useful. A percentage without its base is not evidence; it is decoration.\n\nAnswering the question that was asked, with the evidence attached, is the finished form of the skill. Not sales went up, but sales in March were about a sixth higher than in February, and here is the pair of figures that shows it. In this lesson's lab you sort statements taken from a chart into the ones the data supports and the ones it does not, and name the figure that settles each."
+      }
+    ]
+  }
+]

@@ -58,6 +58,32 @@ check("mathematics practice is enabled", syw.showYourWorkEnabled("mathematics", 
 check("mathematics mock is enabled", syw.showYourWorkEnabled("mathematics", "mock") === true);
 check("english-a is untouched", syw.showYourWorkEnabled("english-a", "knowledge-check") === false);
 check("biology is untouched", syw.showYourWorkEnabled("biology", "mock") === false);
+// City & Guilds Mathematics is a mathematics subject too, so the working box is part
+// of what it sells. A positive guard here means the box cannot silently disappear
+// from one of its three assessment surfaces; the negative guard keeps the
+// differentiator Math-only (City & Guilds English must NOT get it).
+check(
+  "city-guilds-mathematics has the working box on every assessment surface",
+  ["knowledge-check", "practice", "mock"].every((q) => syw.showYourWorkEnabled("city-guilds-mathematics", q) === true)
+);
+check(
+  "city-guilds-mathematics does not get it on lessons or the lab",
+  syw.showYourWorkEnabled("city-guilds-mathematics", "lesson") === false
+);
+check(
+  "city-guilds-english does NOT get the working box (Math-only differentiator)",
+  syw.showYourWorkEnabled("city-guilds-english", "knowledge-check") === false
+);
+check(
+  "a City & Guilds working draft is kept per subject, not shared with Mathematics",
+  (() => {
+    syw.saveWorkingDrafts("city-guilds-mathematics", "knowledge-check", { 0: "15% of 2400 = 360" });
+    const own = syw.loadWorkingDrafts("city-guilds-mathematics", "knowledge-check");
+    const other = syw.loadWorkingDrafts("mathematics", "knowledge-check");
+    syw.clearWorkingDrafts("city-guilds-mathematics", "knowledge-check");
+    return own[0] === "15% of 2400 = 360" && Object.keys(other).length === 0;
+  })()
+);
 check("missing subject is safe", syw.showYourWorkEnabled(undefined, "mock") === false);
 check("unknown quiz surface is refused", syw.showYourWorkEnabled("mathematics", "lesson") === false);
 

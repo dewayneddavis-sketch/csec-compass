@@ -5063,5 +5063,223 @@ export const lessonSets = {
       ],
     },
   },
+  // City & Guilds Mathematics - one topic-matched lab per lesson (18 sets), keyed by
+  // lesson id. Every displayed string is a verbatim phrase from that lesson's own text
+  // (asserted by tools/check-city-guilds-mathematics-labs.mjs).
+  "city-guilds-mathematics": {
+    "whole-numbers-and-place-value": {
+      title: "Reading, Writing & Ordering Whole Numbers",
+      subtitle: "Put the four moves of a place-value question back into the order this lesson teaches them.",
+      kind: "order",
+      items: [
+        { id: "o1", label: "line the digits up from the right", order: 1 },
+        { id: "o2", label: "compare from the highest place down", order: 2 },
+        { id: "o3", label: "find the digit that decides", order: 3 },
+        { id: "o4", label: "replace everything after it with zeros", order: 4 },
+      ],
+    },
+    "fractions-decimals-percentages": {
+      title: "Fractions, Decimals & Percentages",
+      subtitle: "Drag each description onto the form of the same amount it names.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "Fraction", label: "a division written down" },
+        { id: "p2", target: "Decimal", label: "the result of carrying that division out" },
+        { id: "p3", target: "Percentage", label: "the decimal multiplied by a hundred" },
+      ],
+    },
+    "negative-numbers-in-context": {
+      title: "Negative Numbers in Real Context",
+      subtitle: "Put the three moves of a below-zero question back into the order this lesson teaches them.",
+      kind: "order",
+      items: [
+        { id: "o1", label: "pick the zero, then count up and down from it", order: 1 },
+        { id: "o2", label: "further left is smaller", order: 2 },
+        { id: "o3", label: "crossing zero is still part of the journey", order: 3 },
+      ],
+    },
+    "calculator-and-estimating": {
+      title: "Using a Calculator & Estimating Answers",
+      subtitle: "Drag each description onto the estimating habit or calculator error it belongs to.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "Estimate", label: "a rough answer made with rounded numbers" },
+        { id: "p2", target: "Order of operations", label: "brackets, then powers and roots, then multiplication and division, then addition and subtraction" },
+        { id: "p3", target: "Sanity check", label: "does the size of the display match the size you expected" },
+        { id: "p4", target: "Decimal-point slip", label: "a figure like 0.0048 when you expected a few hundred" },
+      ],
+    },
+    "money-and-everyday-calculations": {
+      title: "Money & Everyday Calculations",
+      subtitle: "Drag each description onto the money skill it names.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "Percentage of an amount", label: "build it from ten per cent" },
+        { id: "p2", target: "Unit price", label: "the cost of one kilogram, litre or item" },
+        { id: "p3", target: "Units inside the answer", label: "the unit shows whether the arithmetic was set up sensibly" },
+        { id: "p4", target: "Fifteen per cent", label: "ten per cent plus half of it again" },
+      ],
+    },
+    "ratio-proportion-and-scale": {
+      title: "Ratio, Proportion & Scale",
+      subtitle: "Drag each description onto the ratio idea it belongs to.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "Ratio", label: "a comparison of parts of the same whole" },
+        { id: "p2", target: "Proportion", label: "two ratios describing the same relationship" },
+        { id: "p3", target: "Scale", label: "a fixed ratio between a drawing and the real thing" },
+        { id: "p4", target: "One part", label: "work out the value of one part first" },
+      ],
+    },
+    "powers-roots-and-formulas": {
+      title: "Powers, Roots & Simple Formulas",
+      subtitle: "Drag each description onto the term or habit it names.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "Power", label: "repeated multiplication" },
+        { id: "p2", target: "Root", label: "the number that was multiplied by itself to give the value you have" },
+        { id: "p3", target: "Substitution", label: "replacing the letters in a formula with the values you know" },
+        { id: "p4", target: "Square root", label: "answers the side-length question" },
+      ],
+    },
+    "units-and-conversions": {
+      title: "Units of Measure & Conversions",
+      subtitle: "Drag each description onto the direction or system it belongs to.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "A smaller unit", label: "gives more of them, so multiply" },
+        { id: "p2", target: "A bigger unit", label: "gives fewer, so divide" },
+        { id: "p3", target: "Time", label: "it is converted inside its own rules" },
+        { id: "p4", target: "Conversion", label: "moves a decimal point rather than doing long division" },
+      ],
+    },
+    "perimeter-and-area": {
+      title: "Perimeter & Area",
+      subtitle: "Drag each description onto the quantity or shape it names.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "Perimeter", label: "the distance around the outside" },
+        { id: "p2", target: "Area", label: "the space inside" },
+        { id: "p3", target: "Composite shape", label: "an awkward outline that can be split into rectangles" },
+        { id: "p4", target: "Paint", label: "covers area" },
+      ],
+    },
+    "angles-and-2d-shapes": {
+      title: "Angles & 2-D Shapes",
+      subtitle: "Sort each angle fact into the shape or situation it belongs to.",
+      kind: "sort",
+      categories: [
+        { id: "line", label: "Straight line" },
+        { id: "point", label: "Angles at a point" },
+        { id: "triangle", label: "Triangle" },
+        { id: "parallel", label: "Parallel lines" },
+      ],
+      items: [
+        { id: "i1", label: "the angles on a straight line add to half a turn", category: "line" },
+        { id: "i2", label: "the angles at a point add to a whole turn", category: "point" },
+        { id: "i3", label: "the interior angles of every triangle add to the same fixed total", category: "triangle" },
+        { id: "i4", label: "corresponding angles are equal", category: "parallel" },
+        { id: "i5", label: "alternate angles are equal", category: "parallel" },
+        { id: "i6", label: "co-interior angles add to half a turn", category: "parallel" },
+      ],
+    },
+    "circles-circumference-and-area": {
+      title: "Circles: Circumference & Area",
+      subtitle: "Drag each description onto the circle quantity or measurement it names.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "Radius and diameter", label: "the diameter is twice the radius" },
+        { id: "p2", target: "Circumference", label: "the distance around the edge" },
+        { id: "p3", target: "Area", label: "the space inside, in square units" },
+        { id: "p4", target: "Half-circles", label: "handled by working out the whole circle and then taking the fraction" },
+      ],
+    },
+    "volume-and-capacity": {
+      title: "Volume & Capacity",
+      subtitle: "Drag each description onto the measurement idea it names.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "Volume", label: "the space a solid occupies" },
+        { id: "p2", target: "Capacity", label: "how much a container holds" },
+        { id: "p3", target: "Consistent units", label: "length, width and height must agree before they are multiplied" },
+        { id: "p4", target: "One cubic centimetre", label: "holds one millilitre" },
+      ],
+    },
+    "time-speed-and-distance": {
+      title: "Time, Speed & Distance",
+      subtitle: "Put the three stages of a journey calculation back into the order this lesson teaches them.",
+      kind: "order",
+      items: [
+        { id: "o1", label: "brought into agreement before they can meet", order: 1 },
+        { id: "o2", label: "the journey is the difference between them", order: 2 },
+        { id: "o3", label: "the total distance divided by the total time", order: 3 },
+      ],
+    },
+    "collecting-and-recording-data": {
+      title: "Collecting & Recording Data",
+      subtitle: "Sort each description into what it says about a survey question.",
+      kind: "sort",
+      categories: [
+        { id: "clear", label: "Clear question" },
+        { id: "leading", label: "Leading or double-barrelled question" },
+        { id: "sample", label: "Sample" },
+      ],
+      items: [
+        { id: "i1", label: "one meaning, answers that can be recorded the same way for everyone", category: "clear" },
+        { id: "i2", label: "suggests its answer", category: "leading" },
+        { id: "i3", label: "asks two things at once", category: "leading" },
+        { id: "i4", label: "the group you asked", category: "sample" },
+        { id: "i5", label: "the limits of what their answers can tell you", category: "sample" },
+      ],
+    },
+    "tables-charts-and-graphs": {
+      title: "Tables, Charts & Graphs",
+      subtitle: "Drag each description onto the chart or chart fault it names.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "Bar chart", label: "compares separate categories" },
+        { id: "p2", target: "Line graph", label: "shows change over time" },
+        { id: "p3", target: "Pie chart", label: "shows parts of one whole" },
+        { id: "p4", target: "A cut axis", label: "can make a small difference look enormous" },
+      ],
+    },
+    "averages-and-range": {
+      title: "Averages & Range",
+      subtitle: "Drag each description onto the average or spread it names.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "Mean", label: "the total divided by how many values there are" },
+        { id: "p2", target: "Median", label: "the middle value once the data is in order" },
+        { id: "p3", target: "Mode", label: "the most frequent value" },
+        { id: "p4", target: "Range", label: "the largest value minus the smallest" },
+      ],
+    },
+    "probability-and-chance": {
+      title: "Probability & Chance",
+      subtitle: "Put three points on the probability scale back into order, from impossible upward.",
+      kind: "order",
+      items: [
+        { id: "o1", label: "zero for impossible", order: 1 },
+        { id: "o2", label: "one half for an even chance", order: 2 },
+        { id: "o3", label: "one for certain", order: 3 },
+      ],
+    },
+    "interpreting-data-and-solve-problems": {
+      title: "Interpreting Data to Solve Problems",
+      subtitle: "Sort each description into what it is: a supported claim, an unsupported claim, or the evidence.",
+      kind: "sort",
+      categories: [
+        { id: "supported", label: "Supported claim" },
+        { id: "unsupported", label: "Unsupported claim" },
+        { id: "evidence", label: "Evidence" },
+      ],
+      items: [
+        { id: "i1", label: "a statement the figures in front of you actually justify", category: "supported" },
+        { id: "i2", label: "a statement that needs data nobody collected", category: "unsupported" },
+        { id: "i3", label: "a trend from one month", category: "unsupported" },
+        { id: "i4", label: "a whole town from one street", category: "unsupported" },
+        { id: "i5", label: "the specific figure that settles whether a claim stands", category: "evidence" },
+      ],
+    },
+  },
 };
-
