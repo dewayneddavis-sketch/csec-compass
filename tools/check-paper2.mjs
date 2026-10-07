@@ -66,6 +66,11 @@ const EXPECTED = {
   // Compass's own self-assessed practice scale (the tab says "self-assessed"; no
   // City & Guilds paper structure is asserted).
   "city-guilds-english": { items: 6, marks: 130 },
+  // City & Guilds Mathematics: 6 written items, 90 marks on CSEC Compass's own
+  // self-assessed practice scale, one sitting per module (numbers, measures/shape/
+  // space, data). Every part asks the candidate to show the working; no City &
+  // Guilds paper structure is asserted.
+  "city-guilds-mathematics": { items: 6, marks: 90 },
 };
 
 // Section weights of the shared Modern Languages Paper 02 (CXC 27/O/SYLL 15), in

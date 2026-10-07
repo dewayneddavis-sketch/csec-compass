@@ -119,6 +119,17 @@ for (const id of setIds) {
 }
 ok(untraced.length === 0, `every displayed string traces to its lesson (${untraced.length ? untraced.join(" | ") : checkedStrings + " strings traced"})`);
 console.log(`  • ${checkedStrings} displayed strings checked against their lesson's title, content, objectives and concepts`);
+section("3b. the per-lesson level bands the owner approved (Math 11 / 15 / 3)");
+const bandOf = (l) => String(l.level || "");
+const servesL1 = lessons.filter((l) => bandOf(l).includes("L1")).length;
+const servesL2 = lessons.filter((l) => bandOf(l).includes("L2")).length;
+const servesL3 = lessons.filter((l) => bandOf(l).includes("L3")).length;
+ok(lessons.every((l) => /^L[123](\u2013L[123])?$/.test(bandOf(l))), `every lesson carries an L1/L2/L3 band (${lessons.filter((l) => !/^L[123]/.test(bandOf(l))).map((l) => l.id).join(", ") || "all banded"})`);
+ok(servesL1 === 11, `11 lessons serve level 1 (${servesL1})`);
+ok(servesL2 === 15, `15 lessons serve level 2 (${servesL2})`);
+ok(servesL3 === 3, `3 lessons serve level 3 by design — thin here, and the coverage map records why (${servesL3})`);
+ok(lessons.every((l) => bandOf(l).startsWith("L1") || bandOf(l).startsWith("L2")), "every lesson opens at level 1 or 2, so no candidate starts above their band");
+
 section("4. the routing branch: per-lesson lookup, guarded, before the flashcard fallback");
 const sandbox = read("src/components/ExperimentSandbox.jsx");
 const perLessonAt = sandbox.indexOf("if (lessonId && lessonSets[subjectId])");

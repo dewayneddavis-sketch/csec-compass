@@ -1,0 +1,342 @@
+[
+  {
+    "id": "cgm-p2-01",
+    "type": "write",
+    "paper": 2,
+    "section": "Numbers & the number system",
+    "title": "A garage bill: subtotal, tax and balance",
+    "topic": "money-and-everyday-calculations",
+    "commandWords": ["Calculate", "Work out", "Show your working"],
+    "marks": 15,
+    "suggestedMinutes": 20,
+    "source": "HILLSIDE TYRE & AUTO — 14 Old Harbour Road\n\nINVOICE 4471\n\n2 tyres, fitted ............... $18,500 each\nWheel alignment ............... $4,200\nLabour ........................ $3,000\n\nGCT is added to the subtotal at 15%.\n\nA deposit of $10,000 has been paid on the card before the work started. The balance is due on collection.",
+    "prompt": "Work through the invoice. Write every step of your method down — the figures alone will not show how you got them.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Work out the subtotal of the bill, before GCT is added. Show the working line by line.",
+        "marks": 6,
+        "commandWords": ["Calculate", "Show your working"],
+        "modelAnswer": "Tyres: 2 × $18,500 = $37,000\nAdd the alignment and the labour: $37,000 + $4,200 + $3,000\nSubtotal = $44,200",
+        "markScheme": [
+          "1 mark for the tyres worked out as 2 × $18,500, with the working shown (not the answer alone).",
+          "1 mark for the correct tyres figure, $37,000.",
+          "1 mark for adding the alignment $4,200 and the labour $3,000 to the tyres total.",
+          "1 mark for the correct subtotal, $44,200, correctly labelled in dollars.",
+          "Up to 2 marks for a clear line-by-line method: a correct figure with no visible method cannot earn these."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "GCT is charged at 15% of the subtotal. Work out the GCT and the full amount of the bill.",
+        "marks": 5,
+        "commandWords": ["Calculate", "Show your working"],
+        "modelAnswer": "10% of $44,200 = $4,420 (move the decimal point one place)\n5% is half of that: $2,210\n15% = $4,420 + $2,210 = $6,630\nFull bill = $44,200 + $6,630 = $50,830",
+        "markScheme": [
+          "1 mark for finding 10% of the correct subtotal ($4,420) by a stated method.",
+          "1 mark for building 15% from 10% + 5% (accept any correct method, including 0.15 × subtotal).",
+          "1 mark for the correct GCT, $6,630.",
+          "1 mark for adding the GCT to the subtotal rather than subtracting it.",
+          "1 mark for the correct full bill, $50,830, in dollars."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "The customer has already paid a deposit of $10,000. Work out the balance still due, and check that your answer is sensible.",
+        "marks": 4,
+        "commandWords": ["Calculate", "Check"],
+        "modelAnswer": "Balance = $50,830 − $10,000 = $40,830\nThe deposit is a small part of a bill of about $50,000, so the balance should still be close to $50,000. $40,830 agrees, and it is smaller than the bill, as a balance must be.",
+        "markScheme": [
+          "1 mark for subtracting the deposit from the full bill.",
+          "1 mark for the correct balance, $40,830.",
+          "1 mark for keeping the unit ($) with the answer.",
+          "1 mark for a written check that the balance is smaller than the bill and close to the estimate."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cgm-p2-02",
+    "type": "write",
+    "paper": 2,
+    "section": "Common measures, shape & space",
+    "title": "A garden job: fencing, turfed area and cost",
+    "topic": "perimeter-and-area",
+    "commandWords": ["Work out", "Explain", "Show your working"],
+    "marks": 15,
+    "suggestedMinutes": 22,
+    "source": "JOB NOTE — plot at Lot 8, Innswood\n\nThe plot is rectangular, 24 m long and 15 m wide.\n\nA straight path runs along one of the SHORT sides. The path is 15 m long and 1.2 m wide and will be paved.\n\nEverything else on the plot is to be turfed.\n\nA fence is to run all the way round the plot, except for a gate opening 2 m wide.\n\nPrices: turf $1,250 per square metre; paving $2,400 per square metre; fencing $1,850 per metre.",
+    "prompt": "Answer all three parts. Name the quantity you are working out before you calculate it, and keep the units with every figure.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Work out the length of fencing needed. State clearly which quantity you are using and why.",
+        "marks": 6,
+        "commandWords": ["Work out", "Explain", "Show your working"],
+        "modelAnswer": "Fencing runs round the outside, so this is a perimeter question, not an area one.\nPerimeter of the rectangle = 2 × (24 + 15) = 2 × 39 = 78 m\nThe gate opening is not fenced, so take it off: 78 − 2 = 76 m of fencing.",
+        "markScheme": [
+          "1 mark for naming the quantity as perimeter (distance round the outside) rather than area.",
+          "1 mark for adding the length and the width (24 + 15 = 39).",
+          "1 mark for doubling, because each length appears twice.",
+          "1 mark for the correct perimeter, 78 m, in metres.",
+          "1 mark for subtracting the 2 m gate opening.",
+          "1 mark for the correct fencing length, 76 m."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Work out the area that will be turfed. Show each area you calculate.",
+        "marks": 5,
+        "commandWords": ["Work out", "Show your working"],
+        "modelAnswer": "Whole plot: 24 × 15 = 360 m²\nPath: 15 × 1.2 = 18 m²\nThe turfed area is everything except the path: 360 − 18 = 342 m²",
+        "markScheme": [
+          "1 mark for the area of the whole plot, 360 m², with the multiplication shown.",
+          "1 mark for the area of the path, 18 m².",
+          "1 mark for subtracting the path from the plot rather than adding it.",
+          "1 mark for the correct turfed area, 342 m².",
+          "1 mark for the answer in square metres, not metres."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Work out the cost of the turf. Check that your answer is the right size for the job.",
+        "marks": 4,
+        "commandWords": ["Work out", "Check"],
+        "modelAnswer": "Cost = 342 × $1,250 = $427,500\n342 m² is a bit more than a third of a thousand square metres, and each square metre costs about $1,250, so the cost should be a few hundred thousand dollars, not a few thousand. $427,500 agrees.",
+        "markScheme": [
+          "1 mark for multiplying the turfed area by the price per square metre.",
+          "1 mark for the correct cost, $427,500.",
+          "1 mark for keeping the units sensible (square metres × dollars per square metre = dollars).",
+          "1 mark for a written check on the size of the answer."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cgm-p2-03",
+    "type": "write",
+    "paper": 2,
+    "section": "Handling data & information",
+    "title": "Six days of takings: mean, median and what to report",
+    "topic": "averages-and-range",
+    "commandWords": ["Calculate", "Compare", "Explain"],
+    "marks": 15,
+    "suggestedMinutes": 20,
+    "source": "TAKINGS FOR THE WEEK — SNACK STOP, MAY PEN\n\nMon ...... $12,000\nTue ...... $9,000\nWed ...... $15,000\nThu ...... $12,000\nFri ...... $18,000\nSat ...... $12,000\n\nSunday: the shop is closed.",
+    "prompt": "Use the six days of takings. In part (c), write your answer as a short paragraph that names the figures you are relying on.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Work out the mean of the six days' takings. Show the total before you divide.",
+        "marks": 6,
+        "commandWords": ["Calculate", "Show your working"],
+        "modelAnswer": "Total = 12,000 + 9,000 + 15,000 + 12,000 + 18,000 + 12,000 = $78,000\nMean = $78,000 ÷ 6 = $13,000",
+        "markScheme": [
+          "1 mark for adding all six values, with the addition shown.",
+          "1 mark for the correct total, $78,000.",
+          "1 mark for dividing by 6 — the number of values, not the number of different values.",
+          "1 mark for the correct mean, $13,000.",
+          "1 mark for the unit ($) with the answer.",
+          "1 mark for showing the division as a step rather than only the final figure."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Find the median and the mode of the six days. Put the values in order first and show that order.",
+        "marks": 5,
+        "commandWords": ["Calculate", "Show your working"],
+        "modelAnswer": "In order: 9,000  12,000  12,000  12,000  15,000  18,000\nThere are six values, so the median is the mean of the third and fourth:\n(12,000 + 12,000) ÷ 2 = $12,000\nThe mode is the value that occurs most often: $12,000 (it appears three times).",
+        "markScheme": [
+          "1 mark for writing the values in order before reading anything off.",
+          "1 mark for recognising that six values give an even middle, so the median is the mean of the two middle values.",
+          "1 mark for the correct median, $12,000.",
+          "1 mark for the correct mode, $12,000, with the reason (it occurs three times).",
+          "1 mark for noticing that two different averages give the same figure here and saying so."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "The owner wants one sentence telling a new supplier how a typical day goes. Which average would you use, and why? Refer to the figures.",
+        "marks": 4,
+        "commandWords": ["Compare", "Explain"],
+        "modelAnswer": "A typical day is about $12,000, so I would report the median or the mode rather than the mean. The mean is $13,000, which is pulled upward by Friday's $18,000 — a figure only one day reached. Five of the six days were at or below $12,000, so $12,000 is the figure that honestly describes a normal day.",
+        "markScheme": [
+          "1 mark for choosing the median or the mode, not the mean.",
+          "1 mark for explaining that the mean is lifted by the one high day ($18,000).",
+          "1 mark for referring to the actual figures (five of six days at or below $12,000).",
+          "1 mark for writing it as one clear sentence, in the form the question asked for."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cgm-p2-04",
+    "type": "write",
+    "paper": 2,
+    "section": "Numbers & the number system",
+    "title": "A paint mix and a plan: ratio, scale and value",
+    "topic": "ratio-proportion-and-scale",
+    "commandWords": ["Work out", "Compare", "Show your working"],
+    "marks": 15,
+    "suggestedMinutes": 20,
+    "source": "DECORATING NOTE\n\nMix the colour with white in the ratio 1 : 4 (one part colour to four parts white).\n\nA plan of the room is drawn at a scale of 1 : 50.\n\nPaint is sold in two tins: 5 litres for $3,600, and 2 litres for $1,500.",
+    "prompt": "Answer all three parts. Say which operation the situation calls for before you calculate, and keep the units with each figure.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "The decorator uses 15 litres of white paint. Work out how much colour is needed to keep the mix correct.",
+        "marks": 6,
+        "commandWords": ["Work out", "Show your working"],
+        "modelAnswer": "The ratio says 4 parts white go with 1 part colour, so the white is the larger quantity and the colour is one quarter of it.\nColour = 15 ÷ 4 = 3.75 litres\nCheck: 3.75 × 4 = 15, so the ratio 3.75 : 15 simplifies to 1 : 4 ✓",
+        "markScheme": [
+          "1 mark for identifying 4 parts white against 1 part colour and stating which is larger.",
+          "1 mark for dividing the white by 4 rather than multiplying.",
+          "1 mark for the correct amount, 3.75 litres.",
+          "1 mark for keeping the unit (litres).",
+          "Up to 2 marks for the check: showing that 3.75 × 4 returns to 15, or that the ratio simplifies correctly."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "On the plan, a wall measures 9.6 cm. Work out the real length of the wall in metres.",
+        "marks": 5,
+        "commandWords": ["Work out", "Show your working"],
+        "modelAnswer": "Scale 1 : 50 means each 1 cm on the plan is 50 cm in real life.\n9.6 × 50 = 480 cm\n480 ÷ 100 = 4.8 m",
+        "markScheme": [
+          "1 mark for multiplying the plan length by the scale factor 50 (not dividing).",
+          "1 mark for the correct length in centimetres, 480 cm.",
+          "1 mark for converting to metres by dividing by 100.",
+          "1 mark for the correct answer, 4.8 m, in metres as asked.",
+          "1 mark for a sensible check: a room wall should come out a few metres, not a few centimetres."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Which tin is the better value? Work out the price per litre for each and compare them.",
+        "marks": 4,
+        "commandWords": ["Compare", "Show your working"],
+        "modelAnswer": "5-litre tin: $3,600 ÷ 5 = $720 per litre\n2-litre tin: $1,500 ÷ 2 = $750 per litre\n$720 is less than $750, so the 5-litre tin is the better value.",
+        "markScheme": [
+          "1 mark for dividing each price by its number of litres, both tins.",
+          "1 mark for the correct unit prices, $720 and $750 per litre.",
+          "1 mark for comparing them and naming the cheaper per litre.",
+          "1 mark for answering the question asked (which is better value), not just giving two figures."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cgm-p2-05",
+    "type": "write",
+    "paper": 2,
+    "section": "Common measures, shape & space",
+    "title": "A water tank: volume, capacity and the cost to fill",
+    "topic": "volume-and-capacity",
+    "commandWords": ["Work out", "Convert", "Show your working"],
+    "marks": 15,
+    "suggestedMinutes": 20,
+    "source": "TANK FITTING NOTE\n\nTank measurements: 120 cm long, 80 cm wide, 75 cm high.\n\nThe tank is filled with a bucket that holds 15 litres.\n\nWater is charged at $95 for every 1,000 litres.",
+    "prompt": "Answer all three parts. Convert between cubic centimetres and litres deliberately, and show where you do it.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Work out the volume of the tank in cubic centimetres, then state its capacity in litres.",
+        "marks": 6,
+        "commandWords": ["Work out", "Convert", "Show your working"],
+        "modelAnswer": "Volume of a cuboid = length × width × height, all in the same unit (centimetres here).\n120 × 80 = 9,600\n9,600 × 75 = 720,000 cm³\nOne cubic centimetre holds one millilitre, so 720,000 cm³ = 720,000 ml.\nOne litre is 1,000 ml: 720,000 ÷ 1,000 = 720 litres.",
+        "markScheme": [
+          "1 mark for multiplying length × width × height rather than adding them.",
+          "1 mark for the correct volume, 720,000 cm³, with the unit.",
+          "1 mark for showing the intermediate step (9,600 cm² × 75).",
+          "1 mark for using 1 cm³ = 1 ml.",
+          "1 mark for converting to litres by dividing by 1,000.",
+          "1 mark for the correct capacity, 720 litres."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "How many full buckets of 15 litres are needed to fill the tank? Show the division.",
+        "marks": 5,
+        "commandWords": ["Work out", "Show your working"],
+        "modelAnswer": "The tank holds 720 litres and one bucket holds 15 litres.\n720 ÷ 15 = 48 buckets\nCheck: 48 × 15 = 720 ✓",
+        "markScheme": [
+          "1 mark for dividing the capacity by the bucket size, not multiplying.",
+          "1 mark for the correct answer, 48 buckets.",
+          "1 mark for showing the division as a step.",
+          "1 mark for multiplying back to check (48 × 15 = 720).",
+          "1 mark for a whole-number answer that is labelled in buckets."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Work out the cost of the water needed to fill the tank once. Round to the nearest cent if you need to.",
+        "marks": 4,
+        "commandWords": ["Work out", "Show your working"],
+        "modelAnswer": "Water costs $95 per 1,000 litres.\n720 litres = 720 ÷ 1,000 = 0.72 thousand litres\nCost = 0.72 × $95 = $68.40",
+        "markScheme": [
+          "1 mark for working out how many thousands of litres are involved (0.72).",
+          "1 mark for multiplying by the price per 1,000 litres.",
+          "1 mark for the correct cost, $68.40, in dollars and cents.",
+          "1 mark for a sensible check: 720 litres is less than a thousand, so the cost must be less than $95."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cgm-p2-06",
+    "type": "write",
+    "paper": 2,
+    "section": "Handling data & information",
+    "title": "Egg production: a percentage change and a claim",
+    "topic": "interpreting-data-and-solve-problems",
+    "commandWords": ["Calculate", "Explain", "Justify"],
+    "marks": 15,
+    "suggestedMinutes": 20,
+    "source": "EGGS COLLECTED, WEEK BY WEEK — HILLVIEW SMALL FARM\n\nWeek 1 ...... 240\nWeek 2 ...... 264\nWeek 3 ...... 288\nWeek 4 ...... 336",
+    "prompt": "Use the four weekly figures. In parts (b) and (c), write your answer as a short explanation that names the figures you are relying on.",
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Work out the percentage increase from week 1 to week 2. Show the increase before you compare it.",
+        "marks": 6,
+        "commandWords": ["Calculate", "Show your working"],
+        "modelAnswer": "Increase = 264 − 240 = 24 eggs\nThe percentage is the increase compared with the STARTING figure:\n24 ÷ 240 = 0.1\n0.1 × 100 = 10%",
+        "markScheme": [
+          "1 mark for finding the increase, 24, before any percentage is written.",
+          "1 mark for comparing the increase with the starting figure (240), not with the later figure.",
+          "1 mark for the correct division, 24 ÷ 240 = 0.1.",
+          "1 mark for converting to a percentage by multiplying by 100.",
+          "1 mark for the correct answer, 10%.",
+          "1 mark for keeping the working visible rather than only the percentage."
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "A customer says: 'Production is rising, so it will double by week 8.' Using the four weeks of figures, say what the data does and does not support.",
+        "marks": 5,
+        "commandWords": ["Explain", "Justify"],
+        "modelAnswer": "The data supports the first half: production rose every week — 240, 264, 288, 336 — so it is rising across these four weeks. It does not support the prediction. Four weeks cannot show what happens by week 8, and the size of each rise is not steady: the rises were 24, 24 and then 48, so there is no fixed rule to carry forward. A doubling by week 8 would need figures nobody has collected.",
+        "markScheme": [
+          "1 mark for saying the data supports a rise across the four weeks, quoting some of the figures.",
+          "1 mark for identifying the size of the weekly rises (24, 24, 48) and noting they are not constant.",
+          "1 mark for explaining that a prediction for week 8 needs data that does not exist yet.",
+          "1 mark for separating what is supported from what is not, rather than dismissing the whole statement.",
+          "1 mark for writing the answer as an explanation that names the figures."
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Name one further piece of information that would make a forecast for week 8 more trustworthy, and say why it would help.",
+        "marks": 4,
+        "commandWords": ["Explain", "Justify"],
+        "modelAnswer": "The same figures for the same weeks in a previous year. If production peaks and then falls at this time of year, a rise carried forward to week 8 would be misleading; if last year's weeks 5 to 8 continued rising by a similar amount, the forecast would have some backing. Any of the following is accepted on the same reasoning: figures for weeks 5 onwards as they happen, the number of hens laying, or the feed and weather records for those weeks.",
+        "markScheme": [
+          "1 mark for naming a specific, collectable piece of information (last year's figures for the same weeks, later weeks as they arrive, flock size, feed or weather records).",
+          "1 mark for saying how it would be used — comparing like with like, or turning an assumption into evidence.",
+          "1 mark for keeping the answer tied to this farm's figures rather than a general statement about data.",
+          "1 mark for writing it in the form asked for: one item of information, with the reason."
+        ]
+      }
+    ]
+  }
+]
