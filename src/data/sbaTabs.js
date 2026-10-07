@@ -21,6 +21,9 @@ const OVERRIDES = {
     guide: "Assessment Guide",
     noun: "assessment guide",
     heading: "City & Guilds Mathematics — Assessment Guide",
+    // The typed-answer tab heading: a hardcoded C&G name would print the wrong
+    // subject on the other one's tab (Math shows its working; English self-assesses).
+    paper2: "City & Guilds Mathematics — typed answers, show your working",
     comingSoon: "A step-by-step assessment guide for this subject is being prepared.",
     sampleHeading: "How this sample earns its marks, part by part",
     sampleColumn: "What the marker looks for",
@@ -30,6 +33,7 @@ const OVERRIDES = {
     guide: "Speaking & Listening Guide",
     noun: "Speaking & Listening guide",
     heading: "City & Guilds English — Speaking, Listening & Communicating",
+    paper2: "City & Guilds English — typed answers, self-assessed",
     comingSoon: "A step-by-step Speaking & Listening guide for this subject is being prepared.",
     sampleHeading: "How this sample earns its marks, part by part",
     sampleColumn: "What the marker looks for",
@@ -121,4 +125,11 @@ export function sbaSampleColumnLabel(subjectId) {
   const o = overrideFor(subjectId);
   if (o) return o.sampleColumn;
   return isOralExamSubject(subjectId) ? ORAL_SAMPLE_COLUMN : SBA_SAMPLE_COLUMN;
+}
+
+/** The typed-answer (Paper 2) heading for a subject — one place, like every other label. */
+export function paper2Heading(subjectId) {
+  const o = overrideFor(subjectId);
+  if (o && o.paper2) return o.paper2;
+  return "CSEC Paper 2 — typed answers, self-assessed";
 }

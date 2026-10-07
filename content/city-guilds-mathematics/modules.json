@@ -6,6 +6,7 @@
       {
         "id": "whole-numbers-and-place-value",
         "title": "Reading, Writing & Ordering Whole Numbers",
+        "level": "L1",
         "objectives": [
           "Read and write whole numbers of any size using place value",
           "Compare and order numbers place by place, not by counting digits",
@@ -25,6 +26,7 @@
       {
         "id": "fractions-decimals-percentages",
         "title": "Fractions, Decimals & Percentages",
+        "level": "L1–L2",
         "objectives": [
           "Write the same amount as a fraction, a decimal and a percentage",
           "Convert between the three forms using division and multiplication by 100",
@@ -44,6 +46,7 @@
       {
         "id": "negative-numbers-in-context",
         "title": "Negative Numbers in Real Context",
+        "level": "L1–L2",
         "objectives": [
           "Place positive and negative numbers correctly on a number line",
           "Order a mixed list of temperatures, balances and levels",
@@ -63,6 +66,7 @@
       {
         "id": "calculator-and-estimating",
         "title": "Using a Calculator & Estimating Answers",
+        "level": "L1–L2",
         "objectives": [
           "Estimate an answer before calculating, so a wrong result is caught",
           "Enter a multi-step calculation in the order the operations demand",
@@ -82,6 +86,7 @@
       {
         "id": "money-and-everyday-calculations",
         "title": "Money & Everyday Calculations",
+        "level": "L1–L2",
         "objectives": [
           "Match a money situation to the operation it needs",
           "Work out a percentage of an amount using easy building blocks",
@@ -101,6 +106,7 @@
       {
         "id": "ratio-proportion-and-scale",
         "title": "Ratio, Proportion & Scale",
+        "level": "L2",
         "objectives": [
           "Write a ratio for a mix, a recipe or a share",
           "Find the value of one part, then scale up to any amount asked for",
@@ -120,6 +126,7 @@
       {
         "id": "powers-roots-and-formulas",
         "title": "Powers, Roots & Simple Formulas",
+        "level": "L2–L3",
         "objectives": [
           "Work out squares, cubes and the simple powers of a number",
           "Find a square root as the answer to a side-length question",
@@ -145,6 +152,7 @@
       {
         "id": "units-and-conversions",
         "title": "Units of Measure & Conversions",
+        "level": "L1",
         "objectives": [
           "Name the unit a measurement needs and read the one given",
           "Convert between metric units by moving the decimal point",
@@ -164,6 +172,7 @@
       {
         "id": "perimeter-and-area",
         "title": "Perimeter & Area",
+        "level": "L1–L2",
         "objectives": [
           "Decide whether a situation asks for distance around or space inside",
           "Work out the perimeter and area of rectangles, triangles and composite shapes",
@@ -183,6 +192,7 @@
       {
         "id": "angles-and-2d-shapes",
         "title": "Angles & 2-D Shapes",
+        "level": "L1–L2",
         "objectives": [
           "Use the angle facts for a straight line, a point and a triangle",
           "Apply the parallel-line angle facts to find a missing angle",
@@ -202,6 +212,7 @@
       {
         "id": "circles-circumference-and-area",
         "title": "Circles: Circumference & Area",
+        "level": "L2",
         "objectives": [
           "Use the radius and the diameter of a circle correctly",
           "Work out a circumference and an area, choosing the right one for the situation",
@@ -221,6 +232,7 @@
       {
         "id": "volume-and-capacity",
         "title": "Volume & Capacity",
+        "level": "L2",
         "objectives": [
           "Work out the volume of a cuboid and a cylinder in the same units throughout",
           "Convert between cubic measurement and litres or millilitres",
@@ -240,6 +252,7 @@
       {
         "id": "time-speed-and-distance",
         "title": "Time, Speed & Distance",
+        "level": "L2–L3",
         "objectives": [
           "Use the relationship between speed, distance and time in any direction",
           "Convert clock times and durations before calculating",
@@ -265,6 +278,7 @@
       {
         "id": "collecting-and-recording-data",
         "title": "Collecting & Recording Data",
+        "level": "L1",
         "objectives": [
           "Tell a survey question that will produce usable data from one that will not",
           "Record responses so they can be grouped and counted later",
@@ -284,6 +298,7 @@
       {
         "id": "tables-charts-and-graphs",
         "title": "Tables, Charts & Graphs",
+        "level": "L1–L2",
         "objectives": [
           "Choose the chart type that answers the question being asked",
           "Read a chart's scale, keys and axes before reading its numbers",
@@ -303,6 +318,7 @@
       {
         "id": "averages-and-range",
         "title": "Averages & Range",
+        "level": "L2",
         "objectives": [
           "Work out the mean, the median and the mode of a set of data",
           "Choose the average that suits the data and the claim being made",
@@ -322,6 +338,7 @@
       {
         "id": "probability-and-chance",
         "title": "Probability & Chance",
+        "level": "L1–L2",
         "objectives": [
           "Place an event on the scale from impossible to certain",
           "Work out the probability of an outcome from equally likely possibilities",
@@ -341,6 +358,7 @@
       {
         "id": "interpreting-data-and-solve-problems",
         "title": "Interpreting Data to Solve Problems",
+        "level": "L2–L3",
         "objectives": [
           "Separate what a chart shows from what someone wants it to show",
           "Judge whether a claim goes further than the data can reach",

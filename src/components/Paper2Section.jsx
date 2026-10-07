@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import WriteQuestion from "./WriteQuestion";
-import { isCityGuildsSubject } from "../data/sbaTabs";
+import { paper2Heading } from "../data/sbaTabs";
 import "./Paper2Section.css";
 
 // CSEC Paper 2 — typed-answer questions (self-assessed).
@@ -185,7 +185,7 @@ export default function Paper2Section({ subjectId }) {
   return (
     <div className="p2-container">
       <div className="p2-intro">
-        <h3>{isCityGuildsSubject(subjectId) ? "City & Guilds English — typed answers, self-assessed" : "CSEC Paper 2 — typed answers, self-assessed"}</h3>
+        <h3>{paper2Heading(subjectId)}</h3>
         <p>
           Paper 2 questions cannot be multiple-choice: you have to write. Type your answer to each
           part, then reveal the model answer and mark scheme and tick the points you made.

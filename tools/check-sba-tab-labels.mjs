@@ -16,6 +16,7 @@ import {
   isOralExamSubject, isCityGuildsSubject,
   sbaTabLabel, sbaGuideLabel, sbaTabNoun,
   sbaSectionHeading, sbaComingSoonCopy, sbaSampleHeading, sbaSampleColumnLabel,
+  paper2Heading,
 } from "../src/data/sbaTabs.js";
 
 // The City & Guilds labels, written here as the literal expectation: a rename in
@@ -67,10 +68,13 @@ for (const id of ids.filter((x) => !CITY_GUILDS_SUBJECTS.includes(x))) {
 // The typed-answer (Paper 2) heading is subject-aware too: City & Guilds English is
 // the only City & Guilds subject with such a tab, so it gets its own heading.
 const paper2 = read("src/components/Paper2Section.jsx");
-ok(paper2.includes('CSEC Paper 2 — typed answers, self-assessed'), "the CSEC typed-answer heading is unchanged");
-ok(paper2.includes('"City & Guilds English — typed answers, self-assessed"') &&
-  paper2.includes("isCityGuildsSubject(subjectId)"),
-  "the typed-answer heading switches to the City & Guilds wording");
+ok(read("src/data/sbaTabs.js").includes('CSEC Paper 2 — typed answers, self-assessed'), "the CSEC typed-answer heading is unchanged (in the shared module)");
+ok(paper2.includes("paper2Heading(subjectId)"), "Paper2Section renders the heading from the shared module");
+eq(paper2Heading("city-guilds-mathematics"), "City & Guilds Mathematics — typed answers, show your working", "C&G Mathematics typed-answer heading names its own subject");
+eq(paper2Heading("city-guilds-english"), "City & Guilds English — typed answers, self-assessed", "C&G English typed-answer heading");
+eq(paper2Heading("biology"), "CSEC Paper 2 — typed answers, self-assessed", "every other subject keeps the CSEC heading");
+eq(paper2Heading(undefined), "CSEC Paper 2 — typed answers, self-assessed", "an absent subject falls back to the default heading");
+ok(!paper2.includes("City & Guilds"), "no City & Guilds name is hardcoded in the component");
 
 // --- the label itself, for every catalog subject ------------------------
 for (const id of ids) {
