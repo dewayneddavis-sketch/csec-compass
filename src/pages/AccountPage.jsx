@@ -49,7 +49,7 @@ export default function AccountPage() {
       : "All subjects, one year of access, for your school's student accounts.";
   } else if (hasBundle) {
     planName = "All Subjects Bundle";
-    planDesc = "Every CSEC subject on the platform, one year of access.";
+    planDesc = "Every subject we publish — CSEC and City & Guilds, one year of access.";
   } else if (purchasedSubjects.length > 0) {
     planName = purchasedSubjects.length === 1 ? "Single Subject" : `${purchasedSubjects.length} Subjects`;
     planDesc = "One year of access to the subjects you bought.";

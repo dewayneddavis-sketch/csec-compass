@@ -19,7 +19,7 @@
 // every subject, and api/stripe/webhook.js grants whatever subject id arrives in
 // the session metadata.
 //
-// FALLBACK_SUBJECT_OPTIONS still lists all 23 on purpose: if the catalog fetch
+// FALLBACK_SUBJECT_OPTIONS still lists every subject on purpose: if the catalog fetch
 // fails the dropdown must not come up empty, and the harness asserts this list is
 // exactly the catalog (same ids, same names, same order) so it cannot drift either.
 
@@ -115,6 +115,35 @@ export function bundleSavingsLabel(subjectCount) {
   return pct === null
     ? "Every subject we publish in one payment"
     : `Save ${pct}% vs buying every subject separately`;
+}
+
+// The same saving as the two amounts a buyer can check for themselves
+// ("25 x $9.99 = $249.75 - you save $199.76"), for the copy that spells the
+// arithmetic out instead of asking anyone to trust a percentage. Derived from the
+// subject count for the same reason the percentage is: an amount typed into the
+// copy goes stale the moment a subject ships (the flyer's old back page still
+// claimed the bundle was "worth $229.77" long after the 24th subject landed).
+function usd(amount) {
+  return "$" + Number(amount).toFixed(2);
+}
+
+export function bundleSinglesTotal(subjectCount) {
+  const n = Number(subjectCount);
+  if (!Number.isFinite(n) || n <= 0) return null;
+  const total = n * SUBJECT_PRICE;
+  return total > BUNDLE_PRICE ? total : null;
+}
+
+export function bundleSavingAmount(subjectCount) {
+  const total = bundleSinglesTotal(subjectCount);
+  return total === null ? null : total - BUNDLE_PRICE;
+}
+
+export function bundleSavingsDetail(subjectCount) {
+  const total = bundleSinglesTotal(subjectCount);
+  const saving = bundleSavingAmount(subjectCount);
+  if (total === null || saving === null) return null;
+  return `${subjectCount} \u00d7 ${usd(SUBJECT_PRICE)} = ${usd(total)} \u2014 you save ${usd(saving)}`;
 }
 
 // School licence ladder (owner decision 2026-09-13): one-year licences,
