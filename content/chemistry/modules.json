@@ -35,7 +35,19 @@
                 "experiment": {
                     "type": "atom-builder",
                     "description": "Atom Architect: Drag protons, neutrons, and electrons into the atom to build different elements and see their position on the Periodic Table."
-                }
+                },
+                "figures": [
+                    {
+                        "src": "/content/chemistry/figures/atomic-structure.svg",
+                        "alt": "A labelled sodium atom: 11 protons and 12 neutrons in the nucleus, with 2, 8 and 1 electrons in its three shells, beside carbon-12, carbon-13 and carbon-14, which differ only in their number of neutrons.",
+                        "caption": "Sodium's electron configuration is 2, 8, 1 — and isotopes of one element differ only in their neutrons."
+                    },
+                    {
+                        "src": "/content/chemistry/figures/electron-shells.svg",
+                        "alt": "Shell diagrams for hydrogen, helium, lithium, carbon, oxygen, sodium, chlorine and calcium, drawn from each element's atomic number, with how sodium and chlorine form their ions.",
+                        "caption": "The shells fill 2, then 8, then 8, then 2 across the first 20 elements."
+                    }
+                ]
             }
         ]
     },
@@ -58,7 +70,14 @@
                 "experiment": {
                     "type": "interactive-table",
                     "description": "Trend Tracker: Click on different groups/periods to highlight trends like electronegativity or atomic radius across the Periodic Table."
-                }
+                },
+                "figures": [
+                    {
+                        "src": "/content/chemistry/figures/periodic-table-trends.svg",
+                        "alt": "All 118 elements in their real groups and periods, coloured by block (s, p, d and f), with arrows showing atomic radius decreasing across a period and increasing down a group.",
+                        "caption": "Radius falls across a period while electronegativity and ionisation energy rise."
+                    }
+                ]
             },
             {
                 "id": "ionic-covalent-bonding",
