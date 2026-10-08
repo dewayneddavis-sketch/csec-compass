@@ -6,7 +6,7 @@
             {
                 "id": "cell-structure",
                 "title": "Cell Structure and Function",
-                "content": "Cells are the basic structural and functional units of all living organisms. There are two main types: prokaryotic cells (found in bacteria) which lack a nucleus and membrane-bound organelles, and eukaryotic cells (found in plants, animals, fungi, and protists) which have a distinct nucleus containing genetic material. On the CSEC Biology exam, you must know the differences between plant and animal cells.\n\nKey organelles to know: Nucleus (contains DNA, controls cell activities), Mitochondria (site of aerobic respiration \u2014 'powerhouse' of the cell), Ribosomes (protein synthesis), Endoplasmic Reticulum (transports materials), Golgi Body (packages and distributes proteins), and Lysosomes (digestive enzymes). Plant cells have three extra structures: Cell Wall (made of cellulose, provides support), Chloroplasts (site of photosynthesis, contain chlorophyll), and a large Central Vacuole (stores water and dissolved substances).\n\nWhen comparing cells under a microscope, plant cells appear more rectangular with distinct walls, while animal cells are more rounded. Remember: both have a nucleus, cytoplasm, cell membrane, mitochondria, and ribosomes. The differences reflect their different functions \u2014 plants make their own food and need structural support; animals move and consume food.",
+                "content": "Cells are the basic structural and functional units of all living organisms. There are two main types: prokaryotic cells (found in bacteria) which lack a nucleus and membrane-bound organelles, and eukaryotic cells (found in plants, animals, fungi, and protists) which have a distinct nucleus containing genetic material. On the CSEC Biology exam, you must know the differences between plant and animal cells.\n\nKey organelles to know: Nucleus (contains DNA, controls cell activities), Mitochondria (site of aerobic respiration \u2014 'powerhouse' of the cell), Ribosomes (protein synthesis), Endoplasmic Reticulum (transports materials), Golgi Body (packages and distributes proteins), and Lysosomes (digestive enzymes). Plant cells have three extra structures: Cell Wall (made of cellulose, provides support), Chloroplasts (site of photosynthesis, contain chlorophyll), and a large Central Vacuole (stores water and dissolved substances).\n\nWhen comparing cells under a microscope, plant cells appear more rectangular with distinct walls, while animal cells are more rounded. Remember: both have a nucleus, cytoplasm, cell membrane, mitochondria, and ribosomes. The differences reflect their different functions \u2014 plants make their own food and need structural support; animals move and consume food.\n\nThe cell membrane is selectively permeable: it controls which substances enter and leave the cell, so oxygen and glucose can pass in while carbon dioxide and other waste products pass out. Cells are studied with a microscope, and the total magnification is found by multiplying the magnification of the eyepiece by the magnification of the objective lens \u2014 a 10\u00d7 eyepiece with a 40\u00d7 objective magnifies the specimen 400 times.",
                 "figures": [
                     {
                         "src": "/content/biology/figures/plant-and-animal-cell.svg",
@@ -30,7 +30,7 @@
             {
                 "id": "osmosis-diffusion",
                 "title": "Diffusion and Osmosis",
-                "content": "Diffusion is the net movement of particles from an area of high concentration to an area of low concentration, down the concentration gradient. It is a passive process \u2014 it does NOT require energy. Examples include oxygen diffusing from the lungs into the blood, and carbon dioxide diffusing out of cells. Diffusion happens faster when there is a steeper concentration gradient, a higher temperature, or a larger surface area.\n\nOsmosis is a special type of diffusion: it's the movement of WATER molecules through a selectively permeable membrane from a region of higher water potential (dilute solution) to a region of lower water potential (concentrated solution). In plant cells, this explains why cells become turgid (firm) in pure water \u2014 water enters by osmosis, pushing the cytoplasm against the cell wall \u2014 and plasmolysed (flaccid) in concentrated salt solution \u2014 water leaves the cell and the membrane pulls away from the wall.\n\nCSEC experiment questions often involve potato strips or dialysis tubing placed in different concentrations of sugar/salt solutions. In a hypotonic solution (less concentrated than the cell), water enters and the sample swells. In a hypertonic solution (more concentrated than the cell), water leaves and the sample shrinks. In an isotonic solution (same concentration), there is no net movement.",
+                "content": "Diffusion is the net movement of particles from an area of high concentration to an area of low concentration, down the concentration gradient. It is a passive process \u2014 it does NOT require energy. Examples include oxygen diffusing from the lungs into the blood, and carbon dioxide diffusing out of cells. Diffusion happens faster when there is a steeper concentration gradient, a higher temperature, or a larger surface area.\n\nOsmosis is a special type of diffusion: it's the movement of WATER molecules through a selectively permeable membrane from a region of higher water potential (dilute solution) to a region of lower water potential (concentrated solution). In plant cells, this explains why cells become turgid (firm) in pure water \u2014 water enters by osmosis, pushing the cytoplasm against the cell wall \u2014 and plasmolysed (flaccid) in concentrated salt solution \u2014 water leaves the cell and the membrane pulls away from the wall.\n\nCSEC experiment questions often involve potato strips or dialysis tubing placed in different concentrations of sugar/salt solutions. In a hypotonic solution (less concentrated than the cell), water enters and the sample swells. In a hypertonic solution (more concentrated than the cell), water leaves and the sample shrinks. In an isotonic solution (same concentration), there is no net movement.\n\nThe pressure of the water inside the vacuole pushing outwards on the cell wall is called turgor pressure. It is turgor pressure that keeps the cells of a well-watered plant firm and holds the plant upright; when a plant wilts, its cells have lost water and are no longer turgid.",
                 "objectives": [
                     "Define diffusion and osmosis",
                     "Predict the movement of molecules in various concentrations"
@@ -70,7 +70,7 @@
             {
                 "id": "circulatory-system",
                 "title": "The Circulatory System",
-                "content": "The human circulatory system consists of the heart, blood vessels, and blood. Its functions are to transport oxygen, nutrients, hormones, and waste products; to regulate body temperature; and to defend against disease. The heart is a muscular pump with four chambers: right atrium, right ventricle, left atrium, and left ventricle. The septum separates the left and right sides, preventing oxygenated and deoxygenated blood from mixing.\n\nThe pathway of blood: Deoxygenated blood from the body \u2192 vena cava \u2192 right atrium \u2192 right ventricle \u2192 pulmonary artery \u2192 lungs (picks up oxygen) \u2192 pulmonary vein \u2192 left atrium \u2192 left ventricle \u2192 aorta \u2192 body. Key points: the right side handles deoxygenated blood, the left side handles oxygenated blood. Arteries carry blood AWAY from the heart (usually oxygenated, except the pulmonary artery); veins carry blood TOWARD the heart (usually deoxygenated, except the pulmonary vein).\n\nBlood vessels: Arteries have thick, muscular, elastic walls to withstand high pressure; veins have thinner walls with valves to prevent backflow; capillaries are one-cell thick for efficient exchange of materials. Blood components: Red blood cells (carry oxygen via hemoglobin), White blood cells (fight infection), Platelets (clotting), and Plasma (transports dissolved substances).\n\nInside the heart, valves keep blood moving in one direction only: the tricuspid valve sits between the right atrium and the right ventricle, the bicuspid (mitral) valve between the left atrium and the left ventricle, and the semi-lunar valves guard the exits into the pulmonary artery and the aorta. This is why blood cannot flow backwards from the ventricles into the atria.",
+                "content": "The human circulatory system consists of the heart, blood vessels, and blood. Its functions are to transport oxygen, nutrients, hormones, and waste products; to regulate body temperature; and to defend against disease. The heart is a muscular pump with four chambers: right atrium, right ventricle, left atrium, and left ventricle. The septum separates the left and right sides, preventing oxygenated and deoxygenated blood from mixing.\n\nThe pathway of blood: Deoxygenated blood from the body \u2192 vena cava \u2192 right atrium \u2192 right ventricle \u2192 pulmonary artery \u2192 lungs (picks up oxygen) \u2192 pulmonary vein \u2192 left atrium \u2192 left ventricle \u2192 aorta \u2192 body. Key points: the right side handles deoxygenated blood, the left side handles oxygenated blood. Arteries carry blood AWAY from the heart (usually oxygenated, except the pulmonary artery); veins carry blood TOWARD the heart (usually deoxygenated, except the pulmonary vein).\n\nBlood vessels: Arteries have thick, muscular, elastic walls to withstand high pressure; veins have thinner walls with valves to prevent backflow; capillaries are one-cell thick for efficient exchange of materials. Blood components: Red blood cells (carry oxygen via hemoglobin), White blood cells (fight infection), Platelets (clotting), and Plasma (transports dissolved substances).\n\nInside the heart, valves keep blood moving in one direction only: the tricuspid valve sits between the right atrium and the right ventricle, the bicuspid (mitral) valve between the left atrium and the left ventricle, and the semi-lunar valves guard the exits into the pulmonary artery and the aorta. This is why blood cannot flow backwards from the ventricles into the atria.\n\nPlasma is the liquid part of blood, and about 90% of it is water; it carries glucose, salts, hormones and carbon dioxide. The heartbeat is started by a small group of cells in the right atrium called the pacemaker, which sends out a regular electrical impulse to make the heart contract; its rate can be speeded up by adrenaline. Lifestyle affects the health of the circulatory system: regular exercise and a balanced diet, and not smoking, lower the risk of heart disease by keeping blood pressure and cholesterol down, while smoking, a high-fat diet and a sedentary lifestyle all increase it.",
                 "figures": [
                     {
                         "src": "/content/biology/figures/heart-and-double-circulation.svg",
@@ -89,6 +89,46 @@
                 "experiment": {
                     "type": "interactive-pathway",
                     "description": "Blood Flow Tracker: Click on parts of the heart in the correct order to successfully pump blood from the right atrium to the aorta."
+                }
+            },
+            {
+                "id": "nutrition-and-digestion",
+                "title": "Nutrition and Digestion",
+                "objectives": [
+                    "List the main nutrients and explain why the body needs each one",
+                    "Describe the passage of food through the digestive system",
+                    "Explain the role of enzymes, bile and villi in digestion"
+                ],
+                "concepts": [
+                    "A balanced diet contains all the nutrients in the correct proportions",
+                    "Fats provide the most energy per gram of any nutrient",
+                    "Enzymes digest one type of food each: amylase (starch), protease (protein), lipase (fat)",
+                    "Digested food is absorbed through the villi of the small intestine"
+                ],
+                "content": "A balanced diet provides all the nutrients the body needs in the correct proportions. Carbohydrates (starch and sugars) and fats are the energy foods, and fats provide the most energy per gram \u2014 about twice as much as carbohydrates or proteins, which is why the body stores spare energy as fat. Proteins are needed for growth and repair. Vitamins and minerals are needed only in small amounts: vitamin C prevents scurvy, vitamin D is made by the skin in sunlight and helps the body to absorb calcium, calcium is needed for strong bones and teeth, and iron is needed to make haemoglobin, so a shortage of iron causes anaemia. Dietary fibre (roughage) is not digested; it adds bulk to the food, helping the muscles of the gut to move it along and so preventing constipation.\n\nDigestion is the breakdown of large, insoluble food molecules into small, soluble ones that can be absorbed into the blood. It begins in the mouth, where the teeth grind the food and salivary amylase starts the chemical digestion of starch. The food is swallowed and moved down the oesophagus to the stomach by peristalsis, the wave-like contractions of the muscular gut wall. In the stomach, gastric glands release hydrochloric acid, which kills bacteria and provides the acid conditions needed by pepsin, a protease that digests protein.\n\nMost digestion and all absorption of the products happens in the small intestine. The pancreas releases amylase, protease and lipase into the small intestine and also makes the hormone insulin, which controls the glucose level of the blood. The liver produces bile, which is stored in the gall bladder and released into the small intestine, where it emulsifies fats into small droplets so that there is a larger surface area for lipase to act on. Each enzyme digests one type of food: amylase breaks starch down to maltose, protease breaks proteins down to amino acids, and lipase breaks fats down to fatty acids and glycerol. The digested nutrients are absorbed through the villi, finger-like projections of the wall of the small intestine that give a very large surface area and contain a rich blood supply. The large intestine then absorbs water and salts from what is left, forming the faeces that are stored in the rectum before being egested.",
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Nutrition and Digestion Lab: Drag each enzyme or nutrient to what it does."
+                }
+            },
+            {
+                "id": "transport-and-growth-in-plants",
+                "title": "Transport and Growth in Plants",
+                "objectives": [
+                    "Explain how water and minerals are transported in plants",
+                    "Describe transpiration and explain why it is important",
+                    "State that plant growth is controlled by hormones called auxins"
+                ],
+                "concepts": [
+                    "Root hair cells give the root a large surface area for absorbing water and minerals",
+                    "Xylem carries water and minerals upwards; phloem carries dissolved food (translocation)",
+                    "Transpiration pulls the water column up the plant and cools the leaves",
+                    "Auxins are plant hormones that control growth and tropisms"
+                ],
+                "content": "Plants take in water and dissolved minerals through their root hair cells. A root hair cell is a long, narrow extension of an epidermal cell of the root, so the root has a very large surface area for absorbing water and mineral ions from the soil.\n\nWater and minerals travel up the plant in the xylem. Xylem cells are dead, hollow tubes whose walls are strengthened with lignin, and they carry water in one direction only: from the roots, up the stem and into the leaves. Water evaporates from the leaves, and this pulls the continuous column of water up the xylem \u2014 the transpiration stream. Transpiration is the loss of water vapour from the leaves through the stomata, the small pores in the lower epidermis, each surrounded by two guard cells that open and close. It is important because it transports water and minerals up the plant, it cools the leaves as the water evaporates, and it keeps the cells turgid so the plant stays firm. Transpiration is faster in hot, dry, windy and bright conditions.\n\nFood made in photosynthesis is carried from the leaves to the rest of the plant in the phloem. This movement of dissolved food such as sucrose and amino acids is called translocation, and unlike the xylem the phloem cells are living.\n\nPlant growth is controlled by hormones called auxins. Auxins are made in the growing tips of shoots and roots and they control the direction of growth: in phototropism auxins collect on the shaded side of a shoot and make it grow towards the light, and in geotropism they make the roots grow downwards towards gravity.",
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Transport in Plants Lab: Drag each plant tissue or process to its description."
                 }
             }
         ]
@@ -117,7 +157,7 @@
             {
                 "id": "excretion-homeostasis",
                 "title": "Excretion and Homeostasis",
-                "content": "Excretion is the process by which an organism eliminates metabolic waste products from its body. In humans, the main excretory organs are the lungs (excrete CO\u2082), the skin (excretes water and salts via sweat), and the kidneys (excrete urea, excess water, and salts via urine). The liver also plays a role by breaking down old red blood cells and excess amino acids (deamination) to produce urea.\n\nHomeostasis is the maintenance of a constant internal environment despite changes in external conditions. This is essential for the proper functioning of enzymes and cells. Examples include the regulation of body temperature (thermoregulation), blood glucose levels, and water balance (osmoregulation). The kidneys are vital for osmoregulation, adjusting the concentration of urine based on how hydrated the body is, controlled by the hormone ADH.\n\nCSEC Biology often focuses on the structure and function of the kidney and the nephron. You will learn how filtration, reabsorption, and secretion occur to form urine. Understanding these processes helps you appreciate how the body maintains balance and the importance of healthy organ function.\n\nLooking inside a kidney, the outer region is the cortex and the inner region is the medulla; both drain into a funnel-shaped renal pelvis. Blood arrives through the renal artery and leaves through the renal vein. Urine leaves the kidney down the ureter, is stored in the bladder, and passes out of the body through the urethra. The working unit of the kidney is the nephron. Blood is filtered at the glomerulus, a knot of capillaries inside a cup-shaped Bowman's capsule. The filtered fluid then flows along the proximal tubule, down into the loop of Henle and into the collecting duct. Along the way useful substances such as water, glucose and salts are reabsorbed back into the blood, while extra waste is added by secretion. What is left is urine, which drains from the collecting ducts into the renal pelvis.",
+                "content": "Excretion is the process by which an organism eliminates metabolic waste products from its body. In humans, the main excretory organs are the lungs (excrete CO\u2082), the skin (excretes water and salts via sweat), and the kidneys (excrete urea, excess water, and salts via urine). The liver also plays a role by breaking down old red blood cells and excess amino acids (deamination) to produce urea.\n\nHomeostasis is the maintenance of a constant internal environment despite changes in external conditions. This is essential for the proper functioning of enzymes and cells. Examples include the regulation of body temperature (thermoregulation), blood glucose levels, and water balance (osmoregulation). The kidneys are vital for osmoregulation, adjusting the concentration of urine based on how hydrated the body is, controlled by the hormone ADH.\n\nCSEC Biology often focuses on the structure and function of the kidney and the nephron. You will learn how filtration, reabsorption, and secretion occur to form urine. Understanding these processes helps you appreciate how the body maintains balance and the importance of healthy organ function.\n\nLooking inside a kidney, the outer region is the cortex and the inner region is the medulla; both drain into a funnel-shaped renal pelvis. Blood arrives through the renal artery and leaves through the renal vein. Urine leaves the kidney down the ureter, is stored in the bladder, and passes out of the body through the urethra. The working unit of the kidney is the nephron, and each kidney contains about a million of them. Blood is filtered at the glomerulus, a knot of capillaries inside a cup-shaped Bowman's capsule. The filtered fluid then flows along the proximal tubule, down into the loop of Henle and into the collecting duct. Along the way useful substances are reabsorbed back into the blood \u2014 all of the glucose, most of the water and some of the ions \u2014 while extra waste is added by secretion. What is left is urine, which drains from the collecting ducts into the renal pelvis.\n\nHormones keep the internal environment steady: insulin lowers blood glucose when it rises after a meal and glucagon raises it again, so a person who cannot produce enough insulin has diabetes mellitus and glucose builds up in the blood. ADH (antidiuretic hormone) makes the kidney reabsorb more water, producing a smaller volume of more concentrated urine.",
                 "figures": [
                     {
                         "src": "/content/biology/figures/kidney-and-nephron.svg",
@@ -138,6 +178,25 @@
                     "type": "simulation",
                     "description": "Homeostasis Sim: Use a control panel to adjust external temperature or blood sugar levels and watch how the body's systems (sweating, insulin release) respond to maintain balance."
                 }
+            },
+            {
+                "id": "breathing-and-gas-exchange",
+                "title": "Breathing and Gas Exchange",
+                "objectives": [
+                    "Describe the structures of the breathing system",
+                    "Explain how gas exchange takes place in the alveoli",
+                    "Explain why the breathing rate changes during exercise"
+                ],
+                "concepts": [
+                    "Breathing (ventilation) moves air in and out of the lungs; it is not respiration",
+                    "Gas exchange happens in the alveoli",
+                    "Alveoli have thin walls, a large surface area, a moist lining and a rich blood supply"
+                ],
+                "content": "Breathing, or ventilation, is the movement of air into and out of the lungs. It is not the same as respiration, which is the chemical process inside cells that releases energy from glucose. Air enters through the nose, where it is warmed, moistened and filtered, passes the epiglottis \u2014 the flap of tissue that closes over the trachea when you swallow so that food does not enter the airway \u2014 and travels down the trachea (windpipe) to the two bronchi, one leading to each lung. The bronchi branch into smaller bronchioles, which end in millions of tiny air sacs called alveoli.\n\nGas exchange takes place in the alveoli. Each alveolus has a wall only one cell thick, a moist lining, a very large total surface area and a dense network of capillaries around it. Oxygen diffuses from the air in the alveolus into the blood, and carbon dioxide diffuses from the blood into the alveolus to be breathed out. The blood then carries the oxygen away to the body's cells.\n\nBreathing is brought about by the diaphragm and the intercostal muscles between the ribs. When you inhale, the diaphragm flattens and the ribs move up and out, making the chest cavity larger so that air is drawn in; when you exhale, these muscles relax and air is pushed out. The breathing rate increases during exercise because the muscles respire faster, so more oxygen is needed for respiration and more carbon dioxide must be removed.",
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Breathing Lab: Drag each part of the breathing system to its function."
+                }
             }
         ]
     },
@@ -148,7 +207,7 @@
             {
                 "id": "food-chains",
                 "title": "Food Chains and Webs",
-                "content": "A food chain shows the transfer of energy from one organism to another, starting with a producer (a green plant that makes its own food via photosynthesis). Primary consumers (herbivores) eat producers; secondary consumers (carnivores) eat primary consumers; tertiary consumers eat secondary consumers. Arrows in a food chain point in the direction of energy flow \u2014 from the organism being eaten TO the organism eating it.\n\nFood webs are interconnecting food chains in an ecosystem, showing that most organisms eat more than one type of food. Energy is lost at each trophic level (approximately 90% lost as heat, movement, and waste), which is why food chains rarely have more than 4-5 levels and why there are fewer organisms at higher trophic levels \u2014 this is represented by a pyramid of numbers or pyramid of biomass.\n\nKey ecological terms: Habitat (where an organism lives), Population (all members of one species in an area), Community (all populations in an area), Ecosystem (the community plus the non-living environment), Niche (an organism's role in the ecosystem). Decomposers (bacteria and fungi) break down dead matter, returning nutrients to the soil. CSEC questions often ask you to construct or interpret food chains/webs and predict what happens when a species is removed.",
+                "content": "A food chain shows the transfer of energy from one organism to another, starting with a producer (a green plant that makes its own food via photosynthesis). Primary consumers (herbivores) eat producers; secondary consumers (carnivores) eat primary consumers; tertiary consumers eat secondary consumers. Arrows in a food chain point in the direction of energy flow \u2014 from the organism being eaten TO the organism eating it.\n\nFood webs are interconnecting food chains in an ecosystem, showing that most organisms eat more than one type of food. Energy is lost at each trophic level (approximately 90% lost as heat, movement, and waste), which is why food chains rarely have more than 4-5 levels and why there are fewer organisms at higher trophic levels \u2014 this is represented by a pyramid of numbers or pyramid of biomass.\n\nKey ecological terms: Habitat (where an organism lives), Population (all members of one species in an area), Community (all populations in an area), Ecosystem (the community plus the non-living environment), Niche (an organism's role in the ecosystem). Decomposers (bacteria and fungi) break down dead matter, returning nutrients to the soil. CSEC questions often ask you to construct or interpret food chains/webs and predict what happens when a species is removed.\n\nEcologists divide the factors in an ecosystem into biotic factors, the living parts such as bacteria, plants, animals and the competition between them, and abiotic factors, the non-living physical parts such as temperature, light, water and soil. Materials are recycled as well as energy transferred: decomposers return minerals to the soil when they break down dead matter, and nitrogen-fixing bacteria living in the root nodules of legumes such as peas and beans change nitrogen gas from the air into nitrogen compounds that plants can use.",
                 "objectives": [
                     "Construct food chains and food webs",
                     "Identify producers, consumers, and decomposers"
@@ -219,6 +278,128 @@
                 "experiment": {
                     "type": "simulation",
                     "description": "Natural Selection Sim: Control a population of 'moths' in different environments (light vs dark trees) and see how their color distribution changes over generations due to predation."
+                }
+            }
+        ]
+    },
+    {
+        "id": "coordination-response",
+        "title": "Coordination & Response",
+        "lessons": [
+            {
+                "id": "nervous-system-and-sense-organs",
+                "title": "Nervous System and Sense Organs",
+                "objectives": [
+                    "Describe the structure and function of the nervous system",
+                    "Explain what happens in a reflex action",
+                    "Describe how the eye responds to light and how hormones help to coordinate the body"
+                ],
+                "concepts": [
+                    "The neuron is the basic unit of the nervous system",
+                    "The cerebellum controls balance and the medulla controls heart rate and breathing",
+                    "Reflex actions are rapid, automatic and protective",
+                    "The iris controls the amount of light entering the eye; cones detect colour",
+                    "Adrenaline produces the 'fight or flight' response"
+                ],
+                "content": "The nervous system lets the body detect changes (stimuli) and respond to them quickly. It consists of the central nervous system, the brain and the spinal cord, together with the nerves that run to every part of the body. Its basic unit is the neuron, a cell specialised to carry electrical impulses. Sensory neurons carry impulses from receptors to the central nervous system, and motor neurons carry impulses from the central nervous system to effectors such as muscles and glands.\n\nDifferent parts of the brain have different jobs. The cerebrum is responsible for conscious thought, memory and voluntary movement; the cerebellum controls balance and coordination; and the medulla controls automatic processes such as heart rate and breathing. A reflex action is a rapid, automatic response that protects the body, such as pulling your hand away from a hot object. In a reflex, the impulse passes from the receptor along a sensory neuron to the spinal cord and straight back out along a motor neuron to the muscle, without waiting for the brain to decide, which is why the response is so fast.\n\nThe eye is a sense organ. Light enters through the cornea and the pupil; the iris, the coloured ring of muscle, changes the size of the pupil to control how much light enters, and the lens focuses the light onto the retina at the back of the eye. The retina contains two kinds of receptor: rods, which detect light intensity, and cones, which detect colour. Hormones also help to coordinate the body. Adrenaline, released by the adrenal glands, produces the 'fight or flight' response to danger by increasing the heart rate and breathing rate and releasing glucose into the blood.",
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Nervous System Lab: Drag each part to its correct role."
+                }
+            }
+        ]
+    },
+    {
+        "id": "health-and-disease",
+        "title": "Health & Disease",
+        "lessons": [
+            {
+                "id": "disease-and-pathogens",
+                "title": "Disease and Pathogens",
+                "objectives": [
+                    "State what a pathogen is and give examples of each kind",
+                    "Distinguish communicable from non-communicable diseases",
+                    "Describe how named diseases are caused and spread"
+                ],
+                "concepts": [
+                    "Pathogens are microorganisms that cause disease: bacteria, viruses, fungi and protozoa",
+                    "Communicable diseases pass from person to person, directly or through vectors",
+                    "Non-communicable diseases are not spread between people",
+                    "Malaria is caused by the Plasmodium protozoan, spread by the Anopheles mosquito"
+                ],
+                "content": "A disease is a condition that stops the body working normally. A pathogen is a microorganism that causes disease; the main groups are bacteria, viruses, fungi and protozoa (protists). Diseases caused by pathogens are communicable (infectious), because they can be passed from one person to another, either directly or through a vector such as an insect.\n\nNon-communicable diseases are not spread between people. Heart disease, diabetes, asthma and most cancers develop instead from a combination of lifestyle, diet, genes and environment, so they cannot be caught from someone who has them.\n\nExamples you need to know. Influenza (flu) is caused by a virus, while cholera is caused by a bacterium and spreads in water or food contaminated by sewage \u2014 it produces severe watery diarrhoea that quickly leads to dehydration. Tuberculosis and typhoid are also bacterial. Malaria is caused by the Plasmodium protozoan, which is transmitted by the bite of an infected female Anopheles mosquito, and dengue fever is caused by a virus transmitted by the Aedes aegypti mosquito, which bites during the day and breeds in standing water near homes.\n\nHIV (human immunodeficiency virus) is transmitted through blood, semen and other body fluids when they pass from one person to another. The safest way to prevent its spread is to avoid unprotected sex and never to share needles, and donated blood is screened before use. Because bacteria and viruses are different kinds of organism, antibiotics work only against bacteria and have no effect on viral diseases such as influenza, dengue or HIV.",
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Disease Lab: Sort each disease into Communicable or Non-communicable."
+                }
+            },
+            {
+                "id": "body-defences-and-immunity",
+                "title": "Body Defences and Immunity",
+                "objectives": [
+                    "Describe the body's first line of defence against pathogens",
+                    "Explain the roles of phagocytes and lymphocytes",
+                    "Explain how vaccination produces immunity"
+                ],
+                "concepts": [
+                    "Skin, mucus, cilia and stomach acid stop pathogens entering the body",
+                    "Phagocytes engulf pathogens; lymphocytes produce antibodies",
+                    "Vaccination makes the body produce antibodies and memory cells without causing the disease"
+                ],
+                "content": "The body has several lines of defence against pathogens. The first line stops them getting in at all: the skin is a tough physical barrier, the airways are lined with sticky mucus and tiny hairs (cilia) that trap and sweep out microorganisms, and the hydrochloric acid in the stomach kills many microbes that are swallowed.\n\nIf a pathogen does get inside, white blood cells deal with it. Phagocytes engulf and digest pathogens, while lymphocytes produce antibodies. An antibody is a protein that locks onto the antigens on one particular pathogen and helps to destroy it, so each antibody is specific to one kind of pathogen. After an infection the body keeps some memory cells, so a second attack by the same pathogen is dealt with so quickly that no illness develops \u2014 this is natural immunity.\n\nVaccination gives immunity without the illness. A vaccine contains weakened, killed or harmless parts of a pathogen, and their antigens stimulate the lymphocytes to produce antibodies and memory cells. If the real pathogen enters the body later, antibodies are made fast enough to stop the disease developing. Antibiotics are different from vaccines: they kill bacteria, but they have no effect on viruses.",
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Immunity Lab: Drag each body defence to what it does."
+                }
+            }
+        ]
+    },
+    {
+        "id": "reproduction-development",
+        "title": "Reproduction & Development",
+        "lessons": [
+            {
+                "id": "reproduction-and-development",
+                "title": "Reproduction and Development",
+                "objectives": [
+                    "Distinguish asexual from sexual reproduction",
+                    "Describe reproduction in flowering plants and in humans",
+                    "Explain the function of the placenta"
+                ],
+                "concepts": [
+                    "Asexual reproduction uses one parent and gives identical offspring (budding, binary fission)",
+                    "Sexual reproduction uses two gametes and gives variation",
+                    "The father's sperm (X or Y) determines the sex of a child"
+                ],
+                "content": "Reproduction is the process by which organisms produce new individuals. In asexual reproduction only one parent is involved, so the offspring are genetically identical to it; examples are budding in yeast, binary fission in bacteria and amoeba, and the cuttings that gardeners take from plants. In sexual reproduction a male gamete and a female gamete fuse at fertilisation, so the offspring receive a mixture of genes from both parents and therefore vary.\n\nIn a flowering plant the male gamete is carried inside a pollen grain, which is produced by the anther. After pollination, the pollen grain grows a pollen tube down the style to the ovule, and fertilisation happens when the male gamete from the pollen tube fuses with the egg cell in the ovule. The ovule develops into the seed and the ovary around it becomes the fruit.\n\nIn humans, sperm are produced in the testes and eggs are released from the ovaries. A sperm fuses with an egg in the oviduct (the fallopian tube) to form a zygote, which travels to the uterus and implants in its lining; the fetus then develops in the uterus for about nine months. The fetus is supported by the placenta, an organ that lets oxygen and nutrients diffuse from the mother's blood into the fetus's blood and lets carbon dioxide and other waste products diffuse back the other way, while keeping the two blood supplies separate. The sex of the child is determined by the father's sperm: every egg carries an X chromosome, so a sperm carrying an X makes a girl and a sperm carrying a Y makes a boy.",
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Reproduction Lab: Drag each reproductive part or process to its description."
+                }
+            }
+        ]
+    },
+    {
+        "id": "diversity-classification",
+        "title": "Diversity & Classification",
+        "lessons": [
+            {
+                "id": "classification-of-living-things",
+                "title": "Living Things and Classification",
+                "objectives": [
+                    "List the characteristics shared by all living things",
+                    "Explain why living things are classified",
+                    "Use the classification groups and binomial naming system"
+                ],
+                "concepts": [
+                    "Living things move, respire, respond to stimuli, grow, reproduce, excrete and feed",
+                    "Classification groups run from Kingdom down to Species",
+                    "A binomial name is the genus followed by the species (Homo sapiens)"
+                ],
+                "content": "All living things share seven life processes. They move, respire to release energy from food, respond to stimuli (sensitivity), grow, reproduce, excrete the waste products of metabolism, and take in nutrition. A non-living object may show one or two of these features, but never all seven, so the whole list is what separates living from non-living things.\n\nThere are millions of different organisms, so biologists classify (group) them. Classification makes it easier to study living things and shows how they are related: the more groups two organisms share, the more closely related they are. The main groups, from the largest and most general to the smallest and most specific, are Kingdom, Phylum, Class, Order, Family, Genus and Species, and every species is placed in all seven.\n\nEach species has a two-part scientific (binomial) name, written in italics, in which the genus comes first with a capital letter and the species second with a small letter. Humans are Homo sapiens: Homo is the genus and sapiens is the species. Biologists all over the world use these names because a common name such as 'snapper' or 'papaw' can mean different organisms in different islands.",
+                "experiment": {
+                    "type": "drag-drop-label",
+                    "description": "Classification Lab: Arrange the classification groups from largest to smallest."
                 }
             }
         ]

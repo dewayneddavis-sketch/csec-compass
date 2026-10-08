@@ -62,7 +62,7 @@
   ],
   "answer": "Amylase",
   "explanation": "Salivary amylase begins the chemical digestion of starch in the mouth.",
-  "topic": "circulatory-system"
+  "topic": "nutrition-and-digestion"
  },
  {
   "id": "p6",
@@ -88,7 +88,7 @@
   ],
   "answer": "Left Ventricle",
   "explanation": "The left ventricle has thick muscular walls to pump oxygenated blood through the aorta to the entire body.",
-  "topic": "food-chains"
+  "topic": "circulatory-system"
  },
  {
   "id": "p8",
@@ -101,7 +101,7 @@
   ],
   "answer": "The flow of energy",
   "explanation": "Arrows point from the organism being eaten to the consumer, showing the direction energy is transferred.",
-  "topic": "dna-inheritance"
+  "topic": "food-chains"
  },
  {
   "id": "p9",
@@ -335,7 +335,7 @@
   ],
   "answer": "alveoli",
   "explanation": "Alveoli are thin-walled air sacs where gas exchange happens.",
-  "topic": "respiration"
+  "topic": "breathing-and-gas-exchange"
  },
  {
   "id": "p27",
@@ -348,20 +348,7 @@
   ],
   "answer": "Absorption of digested food",
   "explanation": "Villi in the small intestine absorb digested nutrients.",
-  "topic": "circulatory-system"
- },
- {
-  "id": "p28",
-  "question": "Which enzyme breaks down starch?",
-  "options": [
-   "Amylase",
-   "Protease",
-   "Lipase",
-   "Pepsin"
-  ],
-  "answer": "Amylase",
-  "explanation": "Amylase catalyses starch → maltose.",
-  "topic": "circulatory-system"
+  "topic": "nutrition-and-digestion"
  },
  {
   "id": "p29",
@@ -374,7 +361,7 @@
   ],
   "answer": "liver",
   "explanation": "The liver produces bile; the gall bladder stores it.",
-  "topic": "circulatory-system"
+  "topic": "nutrition-and-digestion"
  },
  {
   "id": "p30",
@@ -387,7 +374,7 @@
   ],
   "answer": "Vitamin C",
   "explanation": "Vitamin C is a vitamin; calcium and iron are minerals; protein is a nutrient.",
-  "topic": "circulatory-system"
+  "topic": "nutrition-and-digestion"
  },
  {
   "id": "p31",
@@ -400,7 +387,7 @@
   ],
   "answer": "anaemia",
   "explanation": "Iron is needed for haemoglobin; deficiency causes anaemia.",
-  "topic": "circulatory-system"
+  "topic": "nutrition-and-digestion"
  },
  {
   "id": "p32",
@@ -413,7 +400,7 @@
   ],
   "answer": "Fats",
   "explanation": "Fats provide about 37 kJ/g, more than carbohydrates or proteins.",
-  "topic": "circulatory-system"
+  "topic": "nutrition-and-digestion"
  },
  {
   "id": "p33",
@@ -426,7 +413,7 @@
   ],
   "answer": "Helps prevent constipation",
   "explanation": "Fibre adds bulk, aiding bowel movement and preventing constipation.",
-  "topic": "circulatory-system"
+  "topic": "nutrition-and-digestion"
  },
  {
   "id": "p34",
@@ -455,19 +442,6 @@
   "topic": "excretion-homeostasis"
  },
  {
-  "id": "p36",
-  "question": "Which hormone regulates blood sugar level?",
-  "options": [
-   "Insulin",
-   "Adrenaline",
-   "Thyroxine",
-   "Oestrogen"
-  ],
-  "answer": "Insulin",
-  "explanation": "Insulin lowers blood glucose; glucagon raises it.",
-  "topic": "excretion-homeostasis"
- },
- {
   "id": "p37",
   "question": "Diabetes mellitus results from insufficient:",
   "options": [
@@ -491,7 +465,7 @@
   ],
   "answer": "Cerebellum",
   "explanation": "The cerebellum coordinates movement and balance.",
-  "topic": "excretion-homeostasis"
+  "topic": "nervous-system-and-sense-organs"
  },
  {
   "id": "p39",
@@ -504,7 +478,7 @@
   ],
   "answer": "neuron",
   "explanation": "Neurons transmit nerve impulses.",
-  "topic": "excretion-homeostasis"
+  "topic": "nervous-system-and-sense-organs"
  },
  {
   "id": "p40",
@@ -517,7 +491,7 @@
   ],
   "answer": "Influenza",
   "explanation": "Influenza (flu) is viral; the others are bacterial.",
-  "topic": "human-impact"
+  "topic": "disease-and-pathogens"
  },
  {
   "id": "p41",
@@ -530,7 +504,7 @@
   ],
   "answer": "Dengue fever",
   "explanation": "Aedes aegypti transmits dengue; malaria is spread by Anopheles.",
-  "topic": "human-impact"
+  "topic": "disease-and-pathogens"
  },
  {
   "id": "p42",
@@ -543,7 +517,7 @@
   ],
   "answer": "the skin",
   "explanation": "Skin acts as a physical barrier.",
-  "topic": "excretion-homeostasis"
+  "topic": "body-defences-and-immunity"
  },
  {
   "id": "p43",
@@ -556,7 +530,7 @@
   ],
   "answer": "stimulating antibody production",
   "explanation": "Vaccines introduce antigens that trigger antibody production.",
-  "topic": "excretion-homeostasis"
+  "topic": "body-defences-and-immunity"
  },
  {
   "id": "p44",
@@ -569,7 +543,7 @@
   ],
   "answer": "Phagocyte",
   "explanation": "Phagocytes engulf and destroy pathogens by phagocytosis.",
-  "topic": "excretion-homeostasis"
+  "topic": "body-defences-and-immunity"
  },
  {
   "id": "p45",
@@ -582,7 +556,7 @@
   ],
   "answer": "lymphocytes",
   "explanation": "Lymphocytes produce antibodies against specific antigens.",
-  "topic": "excretion-homeostasis"
+  "topic": "body-defences-and-immunity"
  },
  {
   "id": "p46",
@@ -595,7 +569,7 @@
   ],
   "answer": "Heart disease",
   "explanation": "Heart disease is not transmitted from person to person.",
-  "topic": "human-impact"
+  "topic": "disease-and-pathogens"
  },
  {
   "id": "p47",
@@ -608,7 +582,7 @@
   ],
   "answer": "Plasmodium protozoan",
   "explanation": "Malaria is caused by the Plasmodium protozoan, spread by mosquitoes.",
-  "topic": "human-impact"
+  "topic": "disease-and-pathogens"
  },
  {
   "id": "p48",
@@ -621,7 +595,7 @@
   ],
   "answer": "Severe diarrhoea",
   "explanation": "Cholera causes severe watery diarrhoea leading to dehydration.",
-  "topic": "human-impact"
+  "topic": "disease-and-pathogens"
  },
  {
   "id": "p49",
@@ -634,7 +608,7 @@
   ],
   "answer": "abstinence or protected sex",
   "explanation": "HIV spreads via body fluids; abstinence or protection prevents transmission.",
-  "topic": "human-impact"
+  "topic": "disease-and-pathogens"
  },
  {
   "id": "p50",
@@ -647,7 +621,7 @@
   ],
   "answer": "A diet containing all nutrients in correct proportions",
   "explanation": "A balanced diet provides all nutrients in the right amounts.",
-  "topic": "circulatory-system"
+  "topic": "nutrition-and-digestion"
  },
  {
   "id": "p51",
@@ -660,7 +634,7 @@
   ],
   "answer": "Vitamin D",
   "explanation": "Sunlight converts a cholesterol derivative to vitamin D.",
-  "topic": "circulatory-system"
+  "topic": "nutrition-and-digestion"
  },
  {
   "id": "p52",
@@ -673,7 +647,7 @@
   ],
   "answer": "Vitamin C",
   "explanation": "Vitamin C deficiency causes scurvy (bleeding gums, weakness).",
-  "topic": "circulatory-system"
+  "topic": "nutrition-and-digestion"
  },
  {
   "id": "p53",
@@ -686,7 +660,7 @@
   ],
   "answer": "Calcium",
   "explanation": "Calcium and phosphorus strengthen bones and teeth.",
-  "topic": "circulatory-system"
+  "topic": "nutrition-and-digestion"
  },
  {
   "id": "p54",
@@ -699,7 +673,7 @@
   ],
   "answer": "Absorption of water",
   "explanation": "The colon absorbs water and salts from undigested food.",
-  "topic": "circulatory-system"
+  "topic": "nutrition-and-digestion"
  },
  {
   "id": "p55",
@@ -712,7 +686,7 @@
   ],
   "answer": "wave-like muscle contractions moving food",
   "explanation": "Peristalsis propels food along the alimentary canal.",
-  "topic": "circulatory-system"
+  "topic": "nutrition-and-digestion"
  },
  {
   "id": "p56",
@@ -725,7 +699,7 @@
   ],
   "answer": "Stomach",
   "explanation": "Gastric glands in the stomach secrete pepsin.",
-  "topic": "circulatory-system"
+  "topic": "nutrition-and-digestion"
  },
  {
   "id": "p57",
@@ -738,7 +712,7 @@
   ],
   "answer": "producing digestive enzymes and insulin",
   "explanation": "The pancreas secretes enzymes into the duodenum and insulin into blood.",
-  "topic": "circulatory-system"
+  "topic": "nutrition-and-digestion"
  },
  {
   "id": "p58",
@@ -751,7 +725,7 @@
   ],
   "answer": "Pulling your hand away from a hot object",
   "explanation": "Reflexes are automatic, rapid responses to stimuli.",
-  "topic": "excretion-homeostasis"
+  "topic": "nervous-system-and-sense-organs"
  },
  {
   "id": "p59",
@@ -764,7 +738,7 @@
   ],
   "answer": "cones",
   "explanation": "Cone cells detect colour; rods detect light intensity.",
-  "topic": "excretion-homeostasis"
+  "topic": "nervous-system-and-sense-organs"
  },
  {
   "id": "p60",
@@ -777,7 +751,7 @@
   ],
   "answer": "Controls the amount of light entering the eye",
   "explanation": "The iris adjusts pupil size to control light entry.",
-  "topic": "excretion-homeostasis"
+  "topic": "nervous-system-and-sense-organs"
  },
  {
   "id": "p61",
@@ -790,7 +764,7 @@
   ],
   "answer": "Adrenaline",
   "explanation": "Adrenaline prepares the body for emergency action.",
-  "topic": "excretion-homeostasis"
+  "topic": "nervous-system-and-sense-organs"
  },
  {
   "id": "p62",
@@ -803,7 +777,7 @@
   ],
   "answer": "auxins",
   "explanation": "Auxins regulate plant growth, e.g. phototropism.",
-  "topic": "photosynthesis"
+  "topic": "transport-and-growth-in-plants"
  },
  {
   "id": "p63",
@@ -816,7 +790,7 @@
   ],
   "answer": "pollen grains",
   "explanation": "Pollen grains carry the male gametes.",
-  "topic": "dna-inheritance"
+  "topic": "reproduction-and-development"
  },
  {
   "id": "p64",
@@ -829,7 +803,7 @@
   ],
   "answer": "the pollen tube fuses with the ovule",
   "explanation": "The male gamete travels via the pollen tube to fuse with the ovule.",
-  "topic": "dna-inheritance"
+  "topic": "reproduction-and-development"
  },
  {
   "id": "p65",
@@ -842,7 +816,7 @@
   ],
   "answer": "Budding in yeast",
   "explanation": "Budding produces offspring from one parent without gametes.",
-  "topic": "selection-evolution"
+  "topic": "reproduction-and-development"
  },
  {
   "id": "p66",
@@ -855,7 +829,7 @@
   ],
   "answer": "uterus",
   "explanation": "The fetus develops in the uterus.",
-  "topic": "dna-inheritance"
+  "topic": "reproduction-and-development"
  },
  {
   "id": "p67",
@@ -868,7 +842,7 @@
   ],
   "answer": "Testes",
   "explanation": "Sperm are produced in the seminiferous tubules of the testes.",
-  "topic": "dna-inheritance"
+  "topic": "reproduction-and-development"
  },
  {
   "id": "p68",
@@ -881,7 +855,7 @@
   ],
   "answer": "exchange nutrients and waste between mother and fetus",
   "explanation": "The placenta allows diffusion of oxygen and nutrients to the fetus.",
-  "topic": "excretion-homeostasis"
+  "topic": "reproduction-and-development"
  },
  {
   "id": "p69",
@@ -894,7 +868,7 @@
   ],
   "answer": "the father's sperm chromosome",
   "explanation": "Sperm carrying X or Y determines sex; egg always carries X.",
-  "topic": "dna-inheritance"
+  "topic": "reproduction-and-development"
  },
  {
   "id": "p70",
@@ -1076,7 +1050,7 @@
   ],
   "answer": "water and mineral transport in plants",
   "explanation": "Transpiration pulls water up the xylem.",
-  "topic": "photosynthesis"
+  "topic": "transport-and-growth-in-plants"
  },
  {
   "id": "p84",
@@ -1089,7 +1063,7 @@
   ],
   "answer": "Xylem",
   "explanation": "Xylem transports water and minerals upward.",
-  "topic": "photosynthesis"
+  "topic": "transport-and-growth-in-plants"
  },
  {
   "id": "p85",
@@ -1102,7 +1076,7 @@
   ],
   "answer": "sucrose and amino acids",
   "explanation": "Phloem transports organic solutes (translocation).",
-  "topic": "photosynthesis"
+  "topic": "transport-and-growth-in-plants"
  },
  {
   "id": "p86",
@@ -1115,7 +1089,7 @@
   ],
   "answer": "Increase surface area for water absorption",
   "explanation": "Root hairs greatly increase absorption surface area.",
-  "topic": "cell-structure"
+  "topic": "transport-and-growth-in-plants"
  },
  {
   "id": "p87",
@@ -1128,7 +1102,7 @@
   ],
   "answer": "Respiration",
   "explanation": "Respiration releases energy and is a life process.",
-  "topic": "cell-structure"
+  "topic": "classification-of-living-things"
  },
  {
   "id": "p88",
@@ -1141,7 +1115,7 @@
   ],
   "answer": "genus",
   "explanation": "Binomial nomenclature: genus + species.",
-  "topic": "selection-evolution"
+  "topic": "classification-of-living-things"
  },
  {
   "id": "p89",
@@ -1167,7 +1141,7 @@
   ],
   "answer": "Kingdom, Phylum, Class, Order, Family, Genus, Species",
   "explanation": "Memory aid: King Philip Came Over For Good Soup.",
-  "topic": "selection-evolution"
+  "topic": "classification-of-living-things"
  },
  {
   "id": "p91",
@@ -1232,7 +1206,7 @@
   ],
   "answer": "pacemaker",
   "explanation": "The sinoatrial node (pacemaker) initiates each heartbeat.",
-  "topic": "excretion-homeostasis"
+  "topic": "circulatory-system"
  },
  {
   "id": "p96",
@@ -1258,7 +1232,7 @@
   ],
   "answer": "Prevents food from entering the trachea",
   "explanation": "The epiglottis closes over the trachea during swallowing.",
-  "topic": "respiration"
+  "topic": "breathing-and-gas-exchange"
  },
  {
   "id": "p98",
@@ -1298,5 +1272,31 @@
   "answer": "A mangrove swamp",
   "explanation": "A habitat is the natural home of an organism.",
   "topic": "food-chains"
+ },
+ {
+  "id": "p101",
+  "question": "Which of these is an example of continuous variation?",
+  "options": [
+   "Blood group",
+   "Height",
+   "Tongue rolling",
+   "Eye colour"
+  ],
+  "answer": "Height",
+  "explanation": "Continuous variation shows a range of values with no distinct groups, so height can be any value in between. Blood group, tongue rolling and eye colour fall into separate categories, which is discontinuous variation.",
+  "topic": "selection-evolution"
+ },
+ {
+  "id": "p102",
+  "question": "In the peppered moth, dark-coloured moths became much more common in industrial areas. Why?",
+  "options": [
+   "They were better camouflaged on soot-darkened trees and survived to reproduce",
+   "Individual moths changed colour during their lifetime",
+   "They grew larger than the pale moths",
+   "They chose to move onto darker trees"
+  ],
+  "answer": "They were better camouflaged on soot-darkened trees and survived to reproduce",
+  "explanation": "Natural selection acts on variation that already exists: on soot-darkened trunks the dark moths were less easily seen by birds, so more of them survived and passed on the alleles for dark colour to the next generation. Their colour did not change in one lifetime - the proportion of dark moths in the population changed over generations.",
+  "topic": "selection-evolution"
  }
 ]

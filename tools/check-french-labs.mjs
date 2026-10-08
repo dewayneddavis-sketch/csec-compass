@@ -118,7 +118,19 @@ console.log(`traceability: ${traced}/${stringChecks} displayed strings matched t
 
 section("3. the other subjects' blocks are untouched");
 check(Object.keys(lessonSets.spanish || {}).length === 12, "spanish block still has its 12 sets");
-check(Object.keys(lessonSets.biology || {}).length === 9, "biology block still has its 9 sets");
+// The biology block grows when the subject's own coverage-gap lessons land
+// (task 33b20aee added 8), so assert its original sets survive rather than a
+// raw count: this harness only cares that French did not disturb them.
+const BIOLOGY_ORIGINAL_SETS = [
+    "osmosis-diffusion", "photosynthesis", "circulatory-system", "respiration",
+    "excretion-homeostasis", "food-chains", "human-impact", "dna-inheritance",
+    "selection-evolution",
+];
+for (const key of BIOLOGY_ORIGINAL_SETS) {
+    check(!!(lessonSets.biology || {})[key], `biology block still has its "${key}" set`);
+}
+check(!!lessonSets.biology && !lessonSets.biology["cell-structure"],
+    "biology still leaves cell-structure to the subject-level cell diagram");
 check(Object.keys(lessonSets.mathematics || {}).length === 24, "mathematics block still has its 24 sets");
 check((lessonSets.spanish && !lessonSets.spanish["fre-l1-1"]) === true, "no french key leaked into the spanish block");
 
