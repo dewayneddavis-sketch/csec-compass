@@ -12,6 +12,7 @@ tile is impossible without a data error, and the data is asserted before writing
 Outputs (staged in ~/gen/figs): periodic-table-trends.svg, atomic-structure.svg, electron-shells.svg
 """
 import os
+import re
 
 # Writes straight into the repo's two content trees, so re-running this tool from a clean
 # checkout reproduces the committed figures byte for byte (see the PR body for the hashes).
@@ -89,19 +90,24 @@ EL = [
     (118, "Og", "Oganesson", 18, 7, "predicted"),
 ]
 
-CAT = {
-    "alkali":     ("#f6b0b0", "Group 1 — alkali metals"),
-    "alkaline":   ("#f9d3a6", "Group 2 — alkaline earths"),
-    "transition": ("#c3cdf7", "Transition metals (3–12)"),
-    "post":       ("#bcd8f5", "Post-transition metals"),
-    "metalloid":  ("#a9e5c6", "Metalloids"),
-    "nonmetal":   ("#f8e08e", "Non-metals"),
-    "halogen":    ("#dcc4f5", "Group 17 — halogens"),
-    "noble":      ("#9fe3e6", "Group 18 — noble gases"),
-    "lanthanide": ("#f5c2db", "Lanthanides (Z 57–71)"),
-    "actinide":   ("#eab8f2", "Actinides (Z 89–103)"),
-    "predicted":  ("#e3e8ef", "Z above 103 — predicted"),
+# Colour by block (s / p / d / f) so the regions the trends run across are visible.
+# Helium is s-block (1s²) though it sits in group 18 — a real detail, labelled in the legend.
+BLOCK = {
+    "s": ("#f6b0b0", "s-block — groups 1 and 2, plus helium"),
+    "p": ("#f8e08e", "p-block — groups 13 to 18"),
+    "d": ("#c3cdf7", "d-block — groups 3 to 12 (the transition metals)"),
+    "f": ("#f5c2db", "f-block — lanthanides and actinides"),
 }
+
+
+def block_of(z, g):
+    """The block this element's outer electrons fill — arithmetic, not a hand-kept list."""
+    if 57 <= z <= 71 or 89 <= z <= 103:
+        return "f"
+    if z == 2 or g in (1, 2):
+        return "s"
+    return "p" if g >= 13 else "d"
+
 
 # ---------------------------------------------------------------- shell maths
 def shells(z, cap=(2, 8, 8, 2)):
@@ -137,9 +143,9 @@ def periodic_table():
     row = lambda p: y0 + (p - 1) * (tile_h + 8)
     f_row1, f_row2 = row(7) + tile_h + 30, row(7) + tile_h + 30 + tile_h + 8
     ty = f_row2 + tile_h + 52          # trends panel
-    ly = ty + 146                      # legend strip
-    legend_rows = (len(CAT) + 3) // 4
-    h = ly + (legend_rows - 1) * 34 + 44
+    ly = ty + 180
+    legend_rows = (len(BLOCK) + 1) // 2
+    h = ly + (legend_rows - 1) * 34 + 44 + 96
 
     s = [svg_open("The Periodic Table, arranged by increasing atomic number",
                   "All 118 elements in their real groups and periods, coloured by the family each "
@@ -171,8 +177,8 @@ def periodic_table():
         if g is None:
             continue
         x, y = col(g), row(p)
-        fill = CAT[cat][0]
-        dash = ' stroke-dasharray="4 4"' if cat == "predicted" else ""
+        fill = BLOCK[block_of(z, g)][0]
+        dash = ' stroke-dasharray="4 4"' if z > 103 else ""
         s.append(f'<g><title>{esc(name)} — Z {z} — group {g}, period {p}</title>'
                  f'<rect x="{x}" y="{y}" width="{tile_w}" height="{tile_h}" rx="9" fill="{fill}" '
                  f'stroke="#0f172a" stroke-opacity="0.18"{dash}/>'
@@ -197,15 +203,24 @@ def periodic_table():
             x = col(4) + i * (tile_w + gap)
             s.append(f'<g><title>{esc(e[2])} — Z {z}</title>'
                      f'<rect x="{x}" y="{yy}" width="{tile_w}" height="{tile_h}" rx="9" '
-                     f'fill="{CAT[cat][0]}" stroke="#0f172a" stroke-opacity="0.18"/>'
+                     f'fill="{BLOCK["f"][0]}" stroke="#0f172a" stroke-opacity="0.18"/>'
                      f'<text x="{x+8}" y="{yy+18}" font-family="{FONT}" font-size="15" '
                      f'fill="#334155">{z}</text>'
                      f'<text x="{x+tile_w/2}" y="{yy+45}" font-family="{FONT}" font-size="27" '
                      f'font-weight="800" fill="{INK}" text-anchor="middle">{e[1]}</text></g>')
 
     # trends panel
-    s.append(f'<rect x="{x0-22}" y="{ty}" width="{W-2*x0+44}" height="112" rx="14" fill="#f1f5f9" '
+    s.append(f'<rect x="{x0-22}" y="{ty}" width="{W-2*x0+44}" height="146" rx="14" fill="#f1f5f9" '
              f'stroke="{LINE}"/>')
+
+    def trend_row(y, lead, note, ax1, ax2):
+        s.append(f'<text x="{x0}" y="{y}" font-family="{FONT}" font-size="21" font-weight="700" '
+                 f'fill="{INK}">{lead}</text>')
+        s.append(f'<line x1="{x0+ax1}" y1="{y-8}" x2="{x0+ax2}" y2="{y-8}" stroke="#0e7490" '
+                 f'stroke-width="3"/>')
+        s.append(f'<polygon points="{x0+ax2},{y-15} {x0+ax2+14},{y-8} {x0+ax2},{y-1}" fill="#0e7490"/>')
+        s.append(f'<text x="{x0+ax2+34}" y="{y}" font-family="{FONT}" font-size="21" fill="{SLATE}">'
+                 f'{note}</text>')
     s.append(f'<text x="{x0}" y="{ty+30}" font-family="{FONT}" font-size="20" font-weight="800" '
              f'fill="{INK}">Trends across the table</text>')
     arrow = lambda x1, x2, y, label, up=True: (
@@ -213,22 +228,24 @@ def periodic_table():
         f'<polygon points="{x2},{y-7} {x2+13},{y} {x2},{y+7}" fill="#0e7490"/>'
         f'<text x="{(x1+x2)/2}" y="{y-14}" font-family="{FONT}" font-size="19" fill="{INK}" '
         f'text-anchor="middle">{label}</text>')
-    s.append(arrow(x0 + 190, x0 + 620, ty + 58, "across a period: atomic radius decreases"))
-    s.append(f'<text x="{x0+672}" y="{ty+66}" font-family="{FONT}" font-size="19" fill="{SLATE}">'
-             f'down a group: it increases ↓</text>')
-    s.append(arrow(x0 + 190, x0 + 760, ty + 98,
-                   "across a period: electronegativity and ionisation energy rise"))
-    s.append(f'<text x="{x0+886}" y="{ty+106}" font-family="{FONT}" font-size="19" fill="{SLATE}">'
-             f'down a group: both decrease ↓</text>')
+    trend_row(ty + 74, "atomic radius: falls across a period", "rises down a group ↓", 390, 560)
+    trend_row(ty + 120, "electronegativity and ionisation energy: rise across a period",
+              "fall down a group ↓", 690, 860)
 
     # legend
-    per_row, x, y = 4, x0, ly
-    for i, (cat, (fill, label)) in enumerate(CAT.items()):
-        cx, cy = x + (i % per_row) * 366, y + (i // per_row) * 34
+    per_row, x, y = 2, x0, ly
+    for i, (cat, (fill, label)) in enumerate(BLOCK.items()):
+        cx, cy = x + (i % per_row) * 740, y + (i // per_row) * 34
         s.append(f'<rect x="{cx}" y="{cy-14}" width="22" height="22" rx="5" fill="{fill}" '
                  f'stroke="#0f172a" stroke-opacity="0.18"/>'
                  f'<text x="{cx+31}" y="{cy+4}" font-family="{FONT}" font-size="18" '
                  f'fill="{SLATE}">{esc(label)}</text>')
+    s.append(f'<text x="{x0}" y="{ly+legend_rows*34+8}" font-family="{FONT}" font-size="19" '
+             f'fill="{SLATE}">Tinted columns: Group 1 alkali metals, Group 17 halogens, '
+             f'Group 18 noble gases.</text>')
+    s.append(f'<text x="{x0}" y="{ly+legend_rows*34+36}" font-family="{FONT}" font-size="19" '
+             f'fill="{SLATE}">A dashed edge marks elements above Z 103, whose properties are '
+             f'largely predicted rather than measured.</text>')
     s.append('</svg>')
     return "".join(s)
 
@@ -336,7 +353,7 @@ def electron_shells():
              f'configuration follows the atomic number.</text>')
     for i, (z, name) in enumerate(picks):
         cx = 200 + (i % 4) * 320
-        cy = 320 + (i // 4) * 300
+        cy = 310 + (i // 4) * 286
         conf = shells(z)
         s.append(f'<rect x="{cx-140}" y="{cy-150}" width="280" height="272" rx="14" fill="#f8fafc" '
                  f'stroke="{LINE}"/>')
@@ -347,11 +364,24 @@ def electron_shells():
                  f'fill="#0e7490" text-anchor="middle">{z} '
                  f'{"electron" if z == 1 else "electrons"} — {", ".join(str(n) for n in conf)}</text>')
 
-    y = 880
-    s.append(f'<rect x="60" y="{y}" width="1480" height="118" rx="14" fill="#f1f5f9" stroke="{LINE}"/>')
-    s.append(f'<text x="88" y="{y+34}" font-family="{FONT}" font-size="21" font-weight="800" '
+    sy = 744
+    s.append(f'<rect x="60" y="{sy}" width="1480" height="132" rx="14" fill="#ffffff" stroke="{LINE}"/>')
+    s.append(f'<text x="88" y="{sy+30}" font-family="{FONT}" font-size="20" font-weight="800" '
+             f'fill="{INK}">The same rule for all of the first 20 elements</text>')
+    for i, z in enumerate(range(1, 21)):
+        cx = 92 + (i % 10) * 146
+        cy = sy + 62 + (i // 10) * 42
+        conf = ", ".join(str(n) for n in shells(z))
+        s.append(f'<text x="{cx}" y="{cy}" font-family="{FONT}" font-size="19" font-weight="700" '
+                 f'fill="{INK}">{z} {sym[z]}</text>')
+        s.append(f'<text x="{cx}" y="{cy+22}" font-family="{FONT}" font-size="19" fill="{SLATE}">'
+                 f'{conf}</text>')
+
+    y = 890
+    s.append(f'<rect x="60" y="{y}" width="1480" height="104" rx="14" fill="#f1f5f9" stroke="{LINE}"/>')
+    s.append(f'<text x="88" y="{y+30}" font-family="{FONT}" font-size="21" font-weight="800" '
              f'fill="{INK}">Losing or gaining electrons makes an ion</text>')
-    s.append(f'<text x="88" y="{y+64}" font-family="{FONT}" font-size="20" fill="{SLATE}">'
+    s.append(f'<text x="88" y="{y+62}" font-family="{FONT}" font-size="20" fill="{SLATE}">'
              f'Sodium (2, 8, 1) loses its single outer electron and becomes Na⁺ (2, 8).</text>')
     s.append(f'<text x="88" y="{y+92}" font-family="{FONT}" font-size="20" fill="{SLATE}">'
              f'Chlorine (2, 8, 7) gains one and becomes Cl⁻ (2, 8, 8) — both then have a full '
@@ -361,6 +391,16 @@ def electron_shells():
 
 
 # ---------------------------------------------------------------- checks + write
+XML_SAFE = re.compile(r"&(?!(amp|lt|gt|quot|apos|#\d+);)")
+
+
+def assert_xml_safe(svg, name):
+    """SVG parses as XML: an HTML-only entity (&middot;, &mdash;, &nbsp;) makes the whole figure
+    unrenderable — the browser shows an error page instead of the picture. Fail loudly here."""
+    bad = XML_SAFE.search(svg)
+    assert not bad, f"{name}: non-XML entity {svg[bad.start():bad.start()+12]!r} would break the figure"
+
+
 def verify():
     zs = [e[0] for e in EL]
     assert zs == list(range(1, 119)), "every atomic number 1-118 exactly once, in order"
@@ -409,6 +449,7 @@ if __name__ == "__main__":
                      ("atomic-structure", atomic_structure),
                      ("electron-shells", electron_shells)):
         svg = scaled(fn())
+        assert_xml_safe(svg, name)
         p = os.path.join(OUT, name + ".svg")
         open(p, "w", encoding="utf-8").write(svg)
         # the served mirror must hold the identical bytes (harness-enforced)
