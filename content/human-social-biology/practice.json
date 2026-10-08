@@ -156,19 +156,6 @@
   "topic": "hsb-l6-2"
  },
  {
-  "id": "p13",
-  "question": "Which of the following is a function of the skeleton?",
-  "options": [
-   "Support and protection of organs",
-   "Producing urine",
-   "Digesting food",
-   "Carrying oxygen"
-  ],
-  "answer": "Support and protection of organs",
-  "explanation": "The skeleton supports the body and protects organs like the brain and heart.",
-  "topic": "hsb-l1-1"
- },
- {
   "id": "p14",
   "question": "The point where two bones meet is called a:",
   "options": [
@@ -325,19 +312,6 @@
   "topic": "hsb-l1-2"
  },
  {
-  "id": "p26",
-  "question": "Which is the correct path of blood through the heart?",
-  "options": [
-   "Right atrium → right ventricle → lungs → left atrium → left ventricle → body",
-   "Left atrium → right atrium → lungs → body",
-   "Right ventricle → left ventricle → lungs",
-   "Lungs → right ventricle → body"
-  ],
-  "answer": "Right atrium → right ventricle → lungs → left atrium → left ventricle → body",
-  "explanation": "Deoxygenated blood goes to lungs, then oxygenated blood circulates.",
-  "topic": "hsb-l1-2"
- },
- {
   "id": "p27",
   "question": "What is the function of haemoglobin?",
   "options": [
@@ -400,7 +374,7 @@
   ],
   "answer": "Exercise",
   "explanation": "Exercise raises oxygen demand and CO₂ production.",
-  "topic": "hsb-l1-2"
+  "topic": "hsb-l1-6"
  },
  {
   "id": "p32",
@@ -413,7 +387,7 @@
   ],
   "answer": "diffusion",
   "explanation": "Oxygen and CO₂ diffuse across alveolar walls.",
-  "topic": "hsb-l1-2"
+  "topic": "hsb-l1-6"
  },
  {
   "id": "p33",
@@ -426,7 +400,7 @@
   ],
   "answer": "Lactic acid",
   "explanation": "Muscles produce lactic acid during anaerobic respiration.",
-  "topic": "hsb-l1-2"
+  "topic": "hsb-l1-6"
  },
  {
   "id": "p34",
@@ -439,7 +413,7 @@
   ],
   "answer": "oxygen",
   "explanation": "Aerobic respiration requires oxygen.",
-  "topic": "hsb-l1-2"
+  "topic": "hsb-l1-6"
  },
  {
   "id": "p35",
@@ -452,7 +426,7 @@
   ],
   "answer": "Glucose + Oxygen → Carbon dioxide + Water + Energy",
   "explanation": "Glucose and oxygen yield CO₂, water and energy.",
-  "topic": "hsb-l1-2"
+  "topic": "hsb-l1-6"
  },
  {
   "id": "p36",
@@ -465,7 +439,7 @@
   ],
   "answer": "Kidney",
   "explanation": "The kidneys filter urea and excrete it in urine.",
-  "topic": "hsb-l4-1"
+  "topic": "hsb-l1-3"
  },
  {
   "id": "p37",
@@ -478,7 +452,7 @@
   ],
   "answer": "liver",
   "explanation": "The liver deaminates amino acids, producing urea.",
-  "topic": "hsb-l4-1"
+  "topic": "hsb-l1-3"
  },
  {
   "id": "p38",
@@ -491,7 +465,7 @@
   ],
   "answer": "Glucose",
   "explanation": "Glucose is normally reabsorbed, not excreted.",
-  "topic": "hsb-l4-1"
+  "topic": "hsb-l1-3"
  },
  {
   "id": "p39",
@@ -504,7 +478,7 @@
   ],
   "answer": "ureter",
   "explanation": "Ureters carry urine from kidneys to bladder.",
-  "topic": "hsb-l4-1"
+  "topic": "hsb-l1-3"
  },
  {
   "id": "p40",
@@ -517,7 +491,7 @@
   ],
   "answer": "urethra",
   "explanation": "The urethra carries urine out of the body.",
-  "topic": "hsb-l4-1"
+  "topic": "hsb-l1-3"
  },
  {
   "id": "p41",
@@ -530,7 +504,7 @@
   ],
   "answer": "evaporation cooling the skin",
   "explanation": "Evaporating sweat removes heat energy.",
-  "topic": "hsb-l4-1"
+  "topic": "hsb-l1-3"
  },
  {
   "id": "p42",
@@ -543,7 +517,7 @@
   ],
   "answer": "Pancreas",
   "explanation": "The pancreas secretes insulin.",
-  "topic": "hsb-l4-2"
+  "topic": "hsb-l1-5"
  },
  {
   "id": "p43",
@@ -556,7 +530,7 @@
   ],
   "answer": "converting glucose to glycogen",
   "explanation": "Insulin promotes glycogen storage, lowering blood sugar.",
-  "topic": "hsb-l4-2"
+  "topic": "hsb-l1-5"
  },
  {
   "id": "p44",
@@ -569,7 +543,7 @@
   ],
   "answer": "slow metabolism",
   "explanation": "Thyroxine controls metabolic rate.",
-  "topic": "hsb-l4-2"
+  "topic": "hsb-l1-5"
  },
  {
   "id": "p45",
@@ -582,7 +556,7 @@
   ],
   "answer": "pituitary gland",
   "explanation": "The pituitary gland secretes growth hormone.",
-  "topic": "hsb-l6-1"
+  "topic": "hsb-l1-5"
  },
  {
   "id": "p46",
@@ -595,7 +569,7 @@
   ],
   "answer": "Ear",
   "explanation": "The ear detects sound (sensory organ).",
-  "topic": "hsb-l4-2"
+  "topic": "hsb-l1-4"
  },
  {
   "id": "p47",
@@ -608,7 +582,7 @@
   ],
   "answer": "light-sensitive cells",
   "explanation": "Rods and cones in the retina detect light.",
-  "topic": "hsb-l4-2"
+  "topic": "hsb-l1-4"
  },
  {
   "id": "p48",
@@ -621,7 +595,7 @@
   ],
   "answer": "retina",
   "explanation": "The lens refracts light to focus on the retina.",
-  "topic": "hsb-l4-1"
+  "topic": "hsb-l1-4"
  },
  {
   "id": "p49",
@@ -634,7 +608,7 @@
   ],
   "answer": "Cochlea",
   "explanation": "The cochlea contains hair cells that generate impulses.",
-  "topic": "hsb-l4-2"
+  "topic": "hsb-l1-4"
  },
  {
   "id": "p50",
@@ -647,20 +621,7 @@
   ],
   "answer": "taste buds on the tongue",
   "explanation": "Taste buds on the tongue detect chemicals in food.",
-  "topic": "hsb-l4-2"
- },
- {
-  "id": "p51",
-  "question": "Which of the following is a stimulant?",
-  "options": [
-   "Caffeine",
-   "Alcohol",
-   "Marijuana",
-   "Paracetamol"
-  ],
-  "answer": "Caffeine",
-  "explanation": "Caffeine speeds up the nervous system.",
-  "topic": "hsb-l6-1"
+  "topic": "hsb-l1-4"
  },
  {
   "id": "p52",
@@ -806,19 +767,6 @@
   "topic": "hsb-l6-2"
  },
  {
-  "id": "p63",
-  "question": "Which contraceptive also protects against STIs?",
-  "options": [
-   "Condom",
-   "Pill",
-   "IUD",
-   "Vasectomy"
-  ],
-  "answer": "Condom",
-  "explanation": "Condoms prevent STI transmission.",
-  "topic": "hsb-l6-2"
- },
- {
   "id": "p64",
   "question": "HIV attacks which type of cells?",
   "options": [
@@ -856,19 +804,6 @@
   "answer": "a severely weakened immune system",
   "explanation": "AIDS is the advanced stage of HIV infection.",
   "topic": "hsb-l4-2"
- },
- {
-  "id": "p67",
-  "question": "Which of the following is classified as a non-communicable (lifestyle) disease?",
-  "options": [
-   "Diabetes",
-   "Measles",
-   "Chickenpox",
-   "Malaria"
-  ],
-  "answer": "Diabetes",
-  "explanation": "Diabetes is not transmitted between people.",
-  "topic": "hsb-l4-1"
  },
  {
   "id": "p68",
@@ -959,7 +894,7 @@
   ],
   "answer": "Vitamin A",
   "explanation": "Vitamin A is needed for vision in dim light.",
-  "topic": "hsb-l3-1"
+  "topic": "hsb-l3-4"
  },
  {
   "id": "p75",
@@ -972,7 +907,7 @@
   ],
   "answer": "rickets",
   "explanation": "Vitamin D deficiency causes rickets (soft bones).",
-  "topic": "hsb-l3-1"
+  "topic": "hsb-l3-4"
  },
  {
   "id": "p76",
@@ -985,7 +920,7 @@
   ],
   "answer": "Iodine",
   "explanation": "Iodine is needed for thyroxine production.",
-  "topic": "hsb-l3-1"
+  "topic": "hsb-l3-4"
  },
  {
   "id": "p77",
@@ -1011,7 +946,7 @@
   ],
   "answer": "protein",
   "explanation": "Kwashiorkor is severe protein deficiency.",
-  "topic": "hsb-l3-1"
+  "topic": "hsb-l3-4"
  },
  {
   "id": "p79",
@@ -1024,7 +959,7 @@
   ],
   "answer": "Severe wasting from energy deficiency",
   "explanation": "Marasmus results from severe calorie deficiency.",
-  "topic": "hsb-l3-1"
+  "topic": "hsb-l3-4"
  },
  {
   "id": "p80",
@@ -1037,7 +972,7 @@
   ],
   "answer": "digestion",
   "explanation": "Digestion breaks food into absorbable molecules.",
-  "topic": "hsb-l3-1"
+  "topic": "hsb-l3-2"
  },
  {
   "id": "p81",
@@ -1050,7 +985,7 @@
   ],
   "answer": "Amylase",
   "explanation": "Salivary amylase digests starch.",
-  "topic": "hsb-l3-1"
+  "topic": "hsb-l3-2"
  },
  {
   "id": "p82",
@@ -1079,19 +1014,6 @@
   "topic": "hsb-l3-2"
  },
  {
-  "id": "p84",
-  "question": "The small intestine is adapted for absorption by:",
-  "options": [
-   "villi",
-   "acid",
-   "teeth",
-   "peristalsis only"
-  ],
-  "answer": "villi",
-  "explanation": "Villi increase surface area for absorption.",
-  "topic": "hsb-l3-2"
- },
- {
   "id": "p85",
   "question": "Which of the following is absorbed directly into the bloodstream?",
   "options": [
@@ -1102,7 +1024,7 @@
   ],
   "answer": "Glucose",
   "explanation": "Glucose is absorbed into capillaries of villi.",
-  "topic": "hsb-l3-1"
+  "topic": "hsb-l3-2"
  },
  {
   "id": "p86",
@@ -1141,7 +1063,7 @@
   ],
   "answer": "bacteria acting on sugars",
   "explanation": "Bacteria ferment sugars, producing acids that erode enamel.",
-  "topic": "hsb-l3-2"
+  "topic": "hsb-l3-3"
  },
  {
   "id": "p89",
@@ -1154,7 +1076,7 @@
   ],
   "answer": "Fluoride in toothpaste",
   "explanation": "Fluoride strengthens enamel against acid.",
-  "topic": "hsb-l3-2"
+  "topic": "hsb-l3-3"
  },
  {
   "id": "p90",
@@ -1167,7 +1089,7 @@
   ],
   "answer": "fallopian tube",
   "explanation": "The egg is fertilised in the fallopian tube.",
-  "topic": "hsb-l6-2"
+  "topic": "hsb-l6-3"
  },
  {
   "id": "p91",
@@ -1180,7 +1102,7 @@
   ],
   "answer": "exchange of nutrients and wastes",
   "explanation": "The placenta exchanges oxygen, nutrients and wastes.",
-  "topic": "hsb-l6-2"
+  "topic": "hsb-l6-3"
  },
  {
   "id": "p92",
@@ -1193,7 +1115,7 @@
   ],
   "answer": "menstruation",
   "explanation": "Menarche (first menstruation) marks puberty onset.",
-  "topic": "hsb-l6-2"
+  "topic": "hsb-l6-3"
  },
  {
   "id": "p93",
@@ -1206,7 +1128,7 @@
   ],
   "answer": "hormones",
   "explanation": "Oestrogen and progesterone regulate the cycle.",
-  "topic": "hsb-l6-2"
+  "topic": "hsb-l6-3"
  },
  {
   "id": "p94",
@@ -1219,7 +1141,7 @@
   ],
   "answer": "28 days",
   "explanation": "The typical cycle is about 28 days.",
-  "topic": "hsb-l6-2"
+  "topic": "hsb-l6-3"
  },
  {
   "id": "p95",
@@ -1258,19 +1180,6 @@
   ],
   "answer": "Vaccination programmes",
   "explanation": "Vaccination protects whole communities.",
-  "topic": "hsb-l5-1"
- },
- {
-  "id": "p98",
-  "question": "Vaccination provides immunity by:",
-  "options": [
-   "stimulating antibody production",
-   "killing all germs instantly",
-   "lowering body temperature",
-   "increasing white cell count only"
-  ],
-  "answer": "stimulating antibody production",
-  "explanation": "Vaccines trigger the immune system to produce antibodies.",
   "topic": "hsb-l4-2"
  },
  {
@@ -1297,6 +1206,97 @@
   ],
   "answer": "Mosquito",
   "explanation": "Mosquitoes transmit malaria and dengue.",
+  "topic": "hsb-l4-1"
+ },
+ {
+  "id": "p101",
+  "question": "Which part of the cell controls what enters and leaves it?",
+  "options": [
+   "Cell membrane",
+   "Nucleus",
+   "Ribosome",
+   "Mitochondria"
+  ],
+  "answer": "Cell membrane",
+  "explanation": "The cell membrane is the partially permeable boundary around the cell; it controls which substances pass in and out.",
+  "topic": "hsb-l2-1"
+ },
+ {
+  "id": "p102",
+  "question": "A red blood cell is specialised for carrying oxygen because it:",
+  "options": [
+   "is disc-shaped and has no nucleus",
+   "contains chloroplasts",
+   "has a long tail for swimming",
+   "is covered in cilia"
+  ],
+  "answer": "is disc-shaped and has no nucleus",
+  "explanation": "Its disc shape gives a large surface area for absorbing oxygen, and having no nucleus leaves more room for the oxygen-carrying pigment.",
+  "topic": "hsb-l2-1"
+ },
+ {
+  "id": "p103",
+  "question": "In a multicellular organism, mitosis is used for:",
+  "options": [
+   "Growth and repair of tissues",
+   "Producing sperm and egg cells",
+   "Halving the chromosome number",
+   "Producing genetic variation"
+  ],
+  "answer": "Growth and repair of tissues",
+  "explanation": "Mitosis produces two genetically identical cells, which is how the body grows and replaces damaged tissue.",
+  "topic": "hsb-l2-2"
+ },
+ {
+  "id": "p104",
+  "question": "Which type of cell division produces gametes with half the normal number of chromosomes?",
+  "options": [
+   "Meiosis",
+   "Mitosis",
+   "Binary fission",
+   "Fertilisation"
+  ],
+  "answer": "Meiosis",
+  "explanation": "Meiosis halves the chromosome number from 46 to 23 and shuffles the genes, so the gametes it produces are all genetically different.",
+  "topic": "hsb-l2-2"
+ },
+ {
+  "id": "p105",
+  "question": "Chlorine is added to water during purification in order to:",
+  "options": [
+   "kill bacteria and other pathogens",
+   "remove large floating objects",
+   "make the water look clear",
+   "add minerals to improve the taste"
+  ],
+  "answer": "kill bacteria and other pathogens",
+  "explanation": "Chlorination is the disinfection step: the chlorine kills the bacteria that cause water-borne diseases such as cholera.",
   "topic": "hsb-l5-1"
+ },
+ {
+  "id": "p106",
+  "question": "Which of the following is a source of water pollution?",
+  "options": [
+   "Untreated sewage discharged into a river",
+   "Planting trees along a river bank",
+   "Collecting rainwater in a tank",
+   "Boiling drinking water"
+  ],
+  "answer": "Untreated sewage discharged into a river",
+  "explanation": "Sewage, industrial waste and agricultural run-off are the main sources of water pollution; they carry pathogens and nutrients that damage the water supply.",
+  "topic": "hsb-l5-1"
+ },
+ {
+  "id": "p107",
+  "question": "Which of the following waste items is biodegradable?",
+  "options": [
+   "Fruit peelings",
+   "Plastic bottles",
+   "Glass jars",
+   "Aluminium cans"
+  ],
+  "answer": "Fruit peelings",
+  "explanation": "Biodegradable waste such as food scraps can be broken down by decomposers; glass, plastic and metal are non-biodegradable.",
+  "topic": "hsb-l5-2"
  }
 ]

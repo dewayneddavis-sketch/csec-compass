@@ -156,19 +156,6 @@
   "topic": "hsb-l6-1"
  },
  {
-  "id": "q13",
-  "question": "Smoking is a major risk factor for which of the following?",
-  "options": [
-   "Lung Cancer",
-   "Type 1 Diabetes",
-   "Color Blindness",
-   "Hearing Loss"
-  ],
-  "answer": "Lung Cancer",
-  "explanation": "Smoking introduces carcinogens into the lungs, significantly increasing the risk of developing lung cancer.",
-  "topic": "hsb-l6-1"
- },
- {
   "id": "q14",
   "question": "Which of these is a permanent method of contraception for females?",
   "options": [
@@ -195,19 +182,6 @@
   "topic": "hsb-l6-2"
  },
  {
-  "id": "q16",
-  "question": "Which disease is caused by a lack of Vitamin C?",
-  "options": [
-   "Rickets",
-   "Scurvy",
-   "Beriberi",
-   "Night blindness"
-  ],
-  "answer": "Scurvy",
-  "explanation": "Scurvy causes weakness, gum disease, and skin hemorrhages.",
-  "topic": "hsb-l3-1"
- },
- {
   "id": "q17",
   "question": "What is the main function of the kidneys?",
   "options": [
@@ -218,20 +192,7 @@
   ],
   "answer": "Excretion of waste from the blood",
   "explanation": "Kidneys filter blood to produce urine.",
-  "topic": "hsb-l4-1"
- },
- {
-  "id": "q18",
-  "question": "Which of these is a communicable disease?",
-  "options": [
-   "Diabetes",
-   "Hypertension",
-   "Influenza (Flu)",
-   "Cancer"
-  ],
-  "answer": "Influenza (Flu)",
-  "explanation": "Communicable diseases can be spread from one person to another.",
-  "topic": "hsb-l4-1"
+  "topic": "hsb-l1-3"
  },
  {
   "id": "q19",
@@ -244,7 +205,7 @@
   ],
   "answer": "Prenatal (Conception)",
   "explanation": "The cycle begins with fertilization and development in the womb.",
-  "topic": "hsb-l2-2"
+  "topic": "hsb-l6-3"
  },
  {
   "id": "q20",
@@ -257,7 +218,7 @@
   ],
   "answer": "Carbon Dioxide",
   "explanation": "Respiration uses oxygen and produces carbon dioxide.",
-  "topic": "hsb-l1-2"
+  "topic": "hsb-l1-6"
  },
  {
   "id": "q21",
@@ -283,7 +244,7 @@
   ],
   "answer": "Iris",
   "explanation": "The iris adjusts the size of the pupil.",
-  "topic": "hsb-l2-1"
+  "topic": "hsb-l1-4"
  },
  {
   "id": "q23",
@@ -296,7 +257,7 @@
   ],
   "answer": "An organism that transmits a pathogen from one host to another",
   "explanation": "Examples include mosquitoes (malaria) and flies (cholera).",
-  "topic": "hsb-l4-2"
+  "topic": "hsb-l4-1"
  },
  {
   "id": "q24",
@@ -323,5 +284,44 @@
   "answer": "The trapping of the sun's warmth in the planet's lower atmosphere",
   "explanation": "It is caused by gases like CO2 trapping heat.",
   "topic": "hsb-l5-1"
+ },
+ {
+  "id": "q26",
+  "question": "Which gland is called the master gland because it controls the other endocrine glands?",
+  "options": [
+   "Pituitary",
+   "Thyroid",
+   "Pancreas",
+   "Adrenal"
+  ],
+  "answer": "Pituitary",
+  "explanation": "The pituitary gland produces growth hormone and releases hormones that control the activity of the other endocrine glands.",
+  "topic": "hsb-l1-5"
+ },
+ {
+  "id": "q27",
+  "question": "Which part of a tooth is the hard outer layer that acid produced by bacteria attacks?",
+  "options": [
+   "Enamel",
+   "Dentine",
+   "Pulp",
+   "Gum"
+  ],
+  "answer": "Enamel",
+  "explanation": "Enamel is the hardest substance in the body; the acid that plaque bacteria make from sugar dissolves it, and that is the start of tooth decay.",
+  "topic": "hsb-l3-3"
+ },
+ {
+  "id": "q28",
+  "question": "What is a diet that is missing one or more essential nutrients called?",
+  "options": [
+   "Malnutrition",
+   "A balanced diet",
+   "Fortification",
+   "Over-nutrition"
+  ],
+  "answer": "Malnutrition",
+  "explanation": "Malnutrition covers any unbalanced diet, including deficiency diseases such as scurvy, anaemia, kwashiorkor and marasmus.",
+  "topic": "hsb-l3-4"
  }
 ]
