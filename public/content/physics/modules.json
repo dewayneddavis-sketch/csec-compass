@@ -17,7 +17,7 @@
                 ],
                 "experiment": {
                     "type": "vector-addition",
-                    "description": "Vector Tug-of-War: Drag and rotate arrows representing forces to see how their resultant force changes in real-time."
+                    "description": "Scalar or Vector?: Sort eight quantities — speed, distance, temperature, mass, velocity, displacement, acceleration and force — into Scalar (magnitude only) or Vector (magnitude and direction)."
                 }
             },
             {
@@ -35,7 +35,7 @@
                 ],
                 "experiment": {
                     "type": "graph-sim",
-                    "description": "Motion Tracker: Move a virtual car on a track and watch its distance-time and velocity-time graphs plot live."
+                    "description": "Read the Motion Graph: Match five graph features — flat and sloped lines on distance–time and velocity–time graphs — to the motion each one shows: at rest, constant speed, constant velocity, constant acceleration or zero velocity."
                 }
             }
         ]
@@ -58,7 +58,7 @@
                 ],
                 "experiment": {
                     "type": "heat-sim",
-                    "description": "Thermal Lab: Place an ice cube on different materials (wood, metal, plastic) and use a slider to adjust room temperature, observing the melting rate."
+                    "description": "How Does Heat Move?: Sort six everyday examples — a metal spoon in hot soup, a hot frying-pan handle, hot air rising above a heater, water boiling and circulating, the sun on your skin, heat from a fire across a room — into Conduction, Convection or Radiation."
                 }
             },
             {
@@ -74,7 +74,7 @@
                 ],
                 "experiment": {
                     "type": "piston-sim",
-                    "description": "Gas Chamber: Use a piston to change the volume of a gas and watch how the pressure and temperature gauges react."
+                    "description": "The Gas Laws: Drag each named law — Boyle's Law, Charles's Law and the Pressure Law, including the P ∝ 1/V and V ∝ T forms — onto the relationship it describes."
                 }
             }
         ]
@@ -97,7 +97,7 @@
                 ],
                 "experiment": {
                     "type": "ripple-tank",
-                    "description": "Ripple Tank Sim: Drop a stone in water and adjust frequency/amplitude to see how wave patterns change and interact with barriers."
+                    "description": "Wave Terms: Drag wavelength, frequency, amplitude and wave speed onto their definitions — crest to crest, waves per second, height from the rest position, and frequency × wavelength."
                 }
             },
             {
@@ -114,7 +114,7 @@
                 ],
                 "experiment": {
                     "type": "optics-bench",
-                    "description": "Ray Box: Shine a light ray through a glass block or lens and drag a protractor to measure the angles of incidence and refraction."
+                    "description": "Lenses & Refraction: Drag convex and concave lenses, refraction and the normal onto what each one describes — rays brought together, rays spread apart, light bending between materials, and the line perpendicular to the surface."
                 }
             }
         ]
@@ -160,7 +160,7 @@
                 ],
                 "experiment": {
                     "type": "decay-sim",
-                    "description": "Half-Life Clock: Start with 100 radioactive atoms and watch them 'pop' randomly over time, plotting the remaining atoms on a graph."
+                    "description": "Types of Radiation: Drag alpha, beta and gamma radiation, and half-life, onto the statement each one describes — a helium nucleus stopped by paper, a fast electron stopped by aluminium, radiation needing thick lead, and the time for half of the atoms to decay."
                 }
             }
         ]
