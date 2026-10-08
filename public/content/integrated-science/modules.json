@@ -47,7 +47,7 @@
         ],
         "experiment": {
           "type": "balance-scale",
-          "description": "Measurement Lab: Compare mass and volume readings and choose the instrument that gives the most precise result."
+          "description": "Units and Accuracy Match: Match each SI unit and measurement term to the meaning it stands for."
         }
       },
       {
@@ -70,7 +70,7 @@
         ],
         "experiment": {
           "type": "data-explorer",
-          "description": "Data Investigator: Read the readings and graphs for an experiment, spot the anomalous point and judge whether the hypothesis holds."
+          "description": "Scientific Method Order: Arrange the steps of a fair investigation in order, from observation to conclusion."
         }
       }
     ]
@@ -99,7 +99,7 @@
         ],
         "experiment": {
           "type": "drag-drop",
-          "description": "Cell Builder: Drag each structure to the plant or animal cell it belongs to and match it to its function."
+          "description": "Cell Parts Match: Match each part of a cell to the job it does in the cell."
         }
       },
       {
@@ -123,7 +123,7 @@
         ],
         "experiment": {
           "type": "matching-game",
-          "description": "Energy and Nutrients: Match each nutrient, gas or tissue to the job it does in an organism."
+          "description": "Life Processes Match: Match each life process to the meaning that matches it."
         }
       },
       {
@@ -147,7 +147,7 @@
         ],
         "experiment": {
           "type": "waste-sorter",
-          "description": "Ecosystem Sorter: Sort organisms into producers, consumers and decomposers, then sort human activities into harmful and sustainable."
+          "description": "Biotic or Abiotic: Sort the factors in a habitat into biotic and abiotic groups."
         }
       }
     ]
@@ -175,7 +175,7 @@
         ],
         "experiment": {
           "type": "heat-sim",
-          "description": "States Lab: Heat and cool a substance and observe what happens to particle movement, temperature and state."
+          "description": "Changes of State Match: Match each change of state to the process that causes it."
         }
       },
       {
@@ -223,7 +223,7 @@
         ],
         "experiment": {
           "type": "interactive-summary",
-          "description": "Acid or Alkali? Sort household substances by their pH and predict the product when each meets an acid or a base."
+          "description": "Acids and Bases Match: Match each acid, alkali and neutralisation term to its description."
         }
       }
     ]
@@ -252,7 +252,7 @@
         ],
         "experiment": {
           "type": "energy-meter",
-          "description": "Energy Audit: Track a chain of energy transfers in a device and calculate how much of the input is useful output."
+          "description": "Energy Forms Match: Match each form of energy, and the law of conservation of energy, to its meaning."
         }
       },
       {
@@ -276,7 +276,7 @@
         ],
         "experiment": {
           "type": "balance-scale",
-          "description": "Force Balance: Load a beam with masses and find the position where the forces balance."
+          "description": "Force Terms Match: Match each force, motion and pressure term to the meaning that matches it."
         }
       },
       {
@@ -300,7 +300,7 @@
         ],
         "experiment": {
           "type": "simulation",
-          "description": "Simple Machines: Change the pivot or the rope arrangement and see how much effort a load requires."
+          "description": "Work and Machines Match: Match each work and machines term to the meaning that matches it."
         }
       }
     ]
@@ -330,7 +330,7 @@
         ],
         "experiment": {
           "type": "circuit-builder",
-          "description": "Circuit Bench: Build series and parallel circuits, switch components and compare what happens to the brightness and the current."
+          "description": "Circuits Match: Match each circuit, current and unit term to the meaning that matches it."
         }
       },
       {
@@ -353,7 +353,7 @@
         ],
         "experiment": {
           "type": "matching-game",
-          "description": "Magnet Links: Match each device to the magnetic effect it uses - motor, generator or electromagnetic switch."
+          "description": "Magnetism Match: Match each magnetism term to the meaning that matches it."
         }
       },
       {
@@ -376,7 +376,7 @@
         ],
         "experiment": {
           "type": "heat-sim",
-          "description": "Heat Flow: Compare how quickly different materials and colours heat up and cool down, and test an insulator."
+          "description": "Heat Transfer Match: Match each heat transfer term to the meaning that matches it."
         }
       }
     ]
@@ -406,7 +406,7 @@
         ],
         "experiment": {
           "type": "classifier-sim",
-          "description": "Rock Classifier: Sort rock samples by how they formed and match each to a step in the rock cycle."
+          "description": "Earth and Rocks Match: Match each layer of the Earth, rock type and soil term to the meaning that matches it."
         }
       },
       {
@@ -430,7 +430,7 @@
         ],
         "experiment": {
           "type": "data-explorer",
-          "description": "Climate Records: Read rainfall and temperature records, identify seasonal patterns and compare years."
+          "description": "Water Cycle Order: Arrange the stages of the water cycle in order."
         }
       },
       {
@@ -454,7 +454,7 @@
         ],
         "experiment": {
           "type": "waste-sorter",
-          "description": "Waste Hierarchy: Sort items into avoid, reuse, recycle, compost or dispose, and identify the hazardous ones."
+          "description": "Sustainable or Not: Sort each habit into sustainable practice or not sustainable."
         }
       }
     ]
