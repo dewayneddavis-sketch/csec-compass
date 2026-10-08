@@ -6,7 +6,7 @@
             {
                 "id": "hsb-l1-1",
                 "title": "Skeletal and Muscular Systems",
-                "content": "The skeletal and muscular systems work together to provide support, protection, and movement for the human body. The adult skeleton consists of 206 bones, divided into the 'axial' skeleton (skull, vertebral column, and rib cage) and the 'appendicular' skeleton (limbs and girdles). Bones perform several vital functions: they provide a framework for the body, protect delicate organs (like the brain and heart), store minerals (calcium and phosphorus), and produce blood cells in the bone marrow.\n\nMuscles are tissues that contract to produce movement. Skeletal muscles are usually attached to bones by 'tendons.' Because muscles can only pull and not push, they often work in 'antagonistic pairs' \u2014 when one muscle (the agonist) contracts, the other (the antagonist) relaxes. A classic example is the biceps and triceps in the upper arm: the biceps contract to flex the arm, while the triceps contract to extend it.\n\nJoints are where two or more bones meet. They are classified by the amount of movement they allow, such as 'ball-and-socket' joints (shoulder and hip) and 'hinge' joints (elbow and knee). CSEC HSB students must be able to identify major bones and muscles and explain how they interact to facilitate movement. Understanding these systems is essential for discussing physical health and common injuries.",
+                "content": "The skeletal and muscular systems work together to provide support, protection, and movement for the human body. The adult skeleton consists of 206 bones, divided into the 'axial' skeleton (skull, vertebral column, and rib cage) and the 'appendicular' skeleton (limbs and girdles). Bones perform several vital functions: they provide a framework for the body, protect delicate organs (like the brain and heart), store minerals (calcium and phosphorus), and produce blood cells in the bone marrow.\n\nMuscles are tissues that contract to produce movement. Skeletal muscles are usually attached to bones by 'tendons.' Because muscles can only pull and not push, they often work in 'antagonistic pairs' \u2014 when one muscle (the agonist) contracts, the other (the antagonist) relaxes. A classic example is the biceps and triceps in the upper arm: the biceps contract to flex the arm, while the triceps contract to extend it. There are three types of muscle: 'skeletal' muscle, which moves the skeleton and is under voluntary control; 'cardiac' muscle, found only in the heart, which contracts rhythmically and never tires; and 'smooth' muscle, found in the walls of organs such as the stomach and intestine, which works involuntarily.\n\nJoints are where two or more bones meet. They are classified by the amount of movement they allow, such as 'ball-and-socket' joints (shoulder and hip) and 'hinge' joints (elbow and knee). Bones are held together at a joint by 'ligaments', strong bands of tissue that keep the bones in place and stop them moving too far apart. CSEC HSB students must be able to identify major bones and muscles and explain how they interact to facilitate movement. Understanding these systems is essential for discussing physical health and common injuries.",
                 "objectives": [
                     "Identify major bones in the human skeleton",
                     "Explain the function of muscles and joints"
@@ -18,14 +18,14 @@
                     "Antagonistic muscle pairs"
                 ],
                 "experiment": {
-                    "type": "lab-sim",
+                    "type": "matching-game",
                     "description": "The Skeletal and Muscular Systems: Match each structure to its function."
                 }
             },
             {
                 "id": "hsb-l1-2",
                 "title": "Circulatory and Respiratory Systems",
-                "content": "The human circulatory system consists of the heart, blood vessels, and blood. Its functions are to transport oxygen, nutrients, hormones, and waste products; to regulate body temperature; and to defend against disease. The heart is a muscular pump with four chambers: right atrium, right ventricle, left atrium, and left ventricle. The septum separates the left and right sides, preventing oxygenated and deoxygenated blood from mixing.\n\nThe pathway of blood: Deoxygenated blood from the body \u2192 vena cava \u2192 right atrium \u2192 right ventricle \u2192 pulmonary artery \u2192 lungs (picks up oxygen) \u2192 pulmonary vein \u2192 left atrium \u2192 left ventricle \u2192 aorta \u2192 body. Key points: the right side handles deoxygenated blood, the left side handles oxygenated blood. Arteries carry blood AWAY from the heart (usually oxygenated, except the pulmonary artery); veins carry blood TOWARD the heart (usually deoxygenated, except the pulmonary vein).\n\nBlood vessels: Arteries have thick, muscular, elastic walls to withstand high pressure; veins have thinner walls with valves to prevent backflow; capillaries are one-cell thick for efficient exchange of materials. Blood components: Red blood cells (carry oxygen via hemoglobin), White blood cells (fight infection), Platelets (clotting), and Plasma (transports dissolved substances).",
+                "content": "The human circulatory system consists of the heart, blood vessels, and blood. Its functions are to transport oxygen, nutrients, hormones, and waste products; to regulate body temperature; and to defend against disease. The heart is a muscular pump with four chambers: right atrium, right ventricle, left atrium, and left ventricle. The septum separates the left and right sides, preventing oxygenated and deoxygenated blood from mixing.\n\nThe pathway of blood: Deoxygenated blood from the body \u2192 vena cava \u2192 right atrium \u2192 right ventricle \u2192 pulmonary artery \u2192 lungs (picks up oxygen) \u2192 pulmonary vein \u2192 left atrium \u2192 left ventricle \u2192 aorta \u2192 body. Key points: the right side handles deoxygenated blood, the left side handles oxygenated blood. Arteries carry blood AWAY from the heart (usually oxygenated, except the pulmonary artery); veins carry blood TOWARD the heart (usually deoxygenated, except the pulmonary vein).\n\nBlood vessels: Arteries have thick, muscular, elastic walls to withstand high pressure; veins have thinner walls with valves to prevent backflow; each heartbeat sends a pressure wave along the arteries, which is felt as the 'pulse' and can be counted at the wrist or the neck to measure the heart rate; capillaries are one-cell thick for efficient exchange of materials. Blood components: Red blood cells (carry oxygen via hemoglobin), White blood cells (fight infection), Platelets (clotting), and Plasma (transports dissolved substances).",
                 "objectives": [
                     "Identify parts of the human heart",
                     "Trace the path of blood through the body"
@@ -37,8 +37,90 @@
                     "Mechanism of breathing"
                 ],
                 "experiment": {
-                    "type": "lab-sim",
+                    "type": "interactive-pathway",
                     "description": "Heart and Lungs: Arrange the route of blood through the heart and lungs in order."
+                }
+            },
+            {
+                "id": "hsb-l1-3",
+                "title": "Excretion and the Kidney",
+                "content": "'Excretion' is the removal from the body of the waste products made by the cells. The main excretory organs are the lungs (which remove carbon dioxide and water vapour), the kidneys (which remove urea, excess salts and excess water as urine) and the skin (which removes water and salts in sweat). Egestion, the passing out of undigested food as faeces, is NOT excretion, because that material was never absorbed into the body.\n\nUrea is made in the 'liver' when excess amino acids are broken down (deamination). The blood then carries the urea to the 'kidneys'. Each kidney contains about a million tiny filtering units called 'nephrons'. In a nephron the blood is filtered under pressure, and useful substances such as glucose, some salts and most of the water are reabsorbed into the blood. What is left is 'urine', which passes down a 'ureter' to the 'bladder', where it is stored until it leaves the body through the 'urethra'.\n\nAs well as removing waste, the kidneys keep the water and salt content of the body steady: if you drink a lot, dilute urine is produced; if you sweat a lot, less urine is produced. Sweating also helps to control body temperature, because heat is taken from the skin when the sweat evaporates. CSEC HSB students must be able to name the organs of excretion and their waste products, and describe how the kidney filters blood and forms urine.",
+                "objectives": [
+                    "Identify the organs of excretion and the waste products each removes",
+                    "Describe how the kidney filters blood and forms urine"
+                ],
+                "concepts": [
+                    "Excretion",
+                    "Urea and the liver",
+                    "Kidney and nephron",
+                    "Ureter, bladder and urethra",
+                    "Skin and sweating"
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Excretion: Match each organ to the waste product it removes."
+                }
+            },
+            {
+                "id": "hsb-l1-4",
+                "title": "The Eye and the Ear",
+                "content": "A 'sense organ' is a group of receptors that detects a particular stimulus and sends nerve impulses to the brain. The eye detects light, the ear detects sound and also helps with balance, the tongue detects chemicals in food through 'taste buds', the nose detects smell, and receptors in the skin detect touch, pressure and temperature.\n\nIn the eye, light first passes through the 'cornea', which refracts (bends) it as it enters. The 'iris' is the coloured ring of muscle that controls the size of the 'pupil' and so the amount of light entering. The 'lens' focuses the light onto the 'retina' at the back of the eye. The retina contains 'rods', which work in dim light, and 'cones', which detect colour. Impulses then travel along the 'optic nerve' to the brain.\n\nIn the ear, the 'pinna' collects sound waves and the ear canal carries them to the 'eardrum', which vibrates. Three small bones pass the vibrations to the 'cochlea', a fluid-filled structure that converts them into nerve impulses for the brain. The three 'semicircular canals' lie above the cochlea and detect changes in the position of the head, which is how the ear helps us keep our balance. CSEC HSB students must be able to label the parts of the eye and ear and state the function of each.",
+                "objectives": [
+                    "Identify the parts of the eye and the ear",
+                    "Explain how each part of the eye and ear helps us detect a stimulus"
+                ],
+                "concepts": [
+                    "Sense organs",
+                    "Cornea, iris, lens and retina",
+                    "Rods and cones",
+                    "Eardrum and cochlea",
+                    "Taste buds and skin receptors"
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Sense Organs: Match each part of the eye or ear to its function."
+                }
+            },
+            {
+                "id": "hsb-l1-5",
+                "title": "The Endocrine System",
+                "content": "The 'endocrine system' is a set of glands that release chemical messengers called 'hormones' straight into the blood. Each hormone travels in the blood until it reaches its target organ, where a very small amount can produce a large effect. Hormone action is slower than a nerve impulse but lasts much longer, so the two systems work together to control the body.\n\nThe 'pancreas' produces 'insulin', which lowers blood glucose by converting glucose to glycogen for storage in the liver; a person who cannot produce enough insulin develops diabetes. The 'thyroid' gland produces 'thyroxine', which controls the metabolic rate - too little thyroxine causes a slow metabolism and, when the cause is a lack of iodine, a swelling of the neck called goitre. The 'pituitary' gland is often called the master gland: it produces 'growth hormone' and also controls the other glands. The 'adrenal' glands produce 'adrenaline', which prepares the body for action by speeding up the heart and breathing and releasing glucose into the blood.\n\nMany hormones are controlled by 'negative feedback'. After a meal, blood glucose rises, so the pancreas releases insulin; glucose is stored as glycogen, and blood glucose falls back to normal. In the same way, thyroxine and adrenaline are only released when the body needs them. CSEC HSB students must be able to name the main endocrine glands, the hormone each produces and its effect on the body.",
+                "objectives": [
+                    "Identify the main endocrine glands and the hormones they produce",
+                    "Explain how hormones such as insulin and thyroxine control body processes"
+                ],
+                "concepts": [
+                    "Hormones and endocrine glands",
+                    "Pancreas and insulin",
+                    "Thyroid and thyroxine",
+                    "Pituitary and growth hormone",
+                    "Adrenal glands and adrenaline",
+                    "Negative feedback"
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Endocrine System: Match each gland to the hormone it produces and its effect."
+                }
+            },
+            {
+                "id": "hsb-l1-6",
+                "title": "Respiration and Energy Release",
+                "content": "'Respiration' is the release of energy from glucose inside living cells. It is not the same as breathing (ventilation), which is only the movement of air in and out of the lungs. The energy released by respiration is used for muscle contraction, growth, repair, and keeping the body warm.\n\n'Aerobic respiration' uses oxygen and releases the most energy. Its word equation is: glucose + oxygen -> carbon dioxide + water + energy. The oxygen comes from the air in the alveoli, where oxygen 'diffuses' into the blood and carbon dioxide diffuses out. During exercise the muscles need more oxygen and make more carbon dioxide, so the rate and depth of breathing increase until the extra demand is met.\n\nWhen the oxygen supply cannot keep up with very hard exercise, the muscles respire 'anaerobically': glucose is broken down without oxygen, producing 'lactic acid' and only a small amount of energy. Lactic acid builds up in the muscle and causes cramp and tiredness, and it must later be broken down using the extra oxygen we breathe in after exercise (the oxygen debt). CSEC HSB students must be able to distinguish aerobic from anaerobic respiration and state the word equation for each.",
+                "objectives": [
+                    "Distinguish between aerobic and anaerobic respiration",
+                    "State the word equation for aerobic respiration and explain why breathing rate changes during exercise"
+                ],
+                "concepts": [
+                    "Respiration and breathing",
+                    "Aerobic respiration",
+                    "Anaerobic respiration",
+                    "Lactic acid and the oxygen debt",
+                    "Diffusion of gases at the alveoli",
+                    "Breathing rate and exercise"
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Aerobic or Anaerobic? Sort each statement into the correct type of respiration."
                 }
             }
         ]
@@ -64,7 +146,7 @@
                     "Specialized cells"
                 ],
                 "experiment": {
-                    "type": "lab-sim",
+                    "type": "matching-game",
                     "description": "Cell Structure: Match each cell part to its function."
                 }
             },
@@ -83,7 +165,7 @@
                     "Genetic variation"
                 ],
                 "experiment": {
-                    "type": "drag-drop",
+                    "type": "interactive-pathway",
                     "description": "Cell Division: Arrange the stages of mitosis in order."
                 }
             }
@@ -110,14 +192,14 @@
                     "Malnutrition"
                 ],
                 "experiment": {
-                    "type": "lab-sim",
+                    "type": "matching-game",
                     "description": "Nutrients: Match each nutrient to its function in the body."
                 }
             },
             {
                 "id": "hsb-l3-2",
                 "title": "Digestion and Absorption",
-                "content": "Digestion is the process of breaking down large, insoluble food molecules into small, soluble ones that can be absorbed into the bloodstream. It begins in the 'Mouth' with mechanical digestion (chewing) and chemical digestion (salivary amylase breaking down starch). The food then travels down the esophagus to the 'Stomach,' where proteins are partially digested by gastric juices.\n\nMost digestion and nearly all absorption occur in the 'Small Intestine.' Here, enzymes from the pancreas and bile from the liver complete the breakdown of food. The inner surface of the small intestine is covered in tiny, finger-like projections called 'villi,' which greatly increase the surface area for efficient absorption. The remaining undigested waste then moves into the 'Large Intestine,' where water is reabsorbed before the waste is eliminated from the body.\n\nCSEC students must be able to describe the path of food through the digestive system and identify the specific enzymes involved (like amylase, protease, and lipase). You will also explore how factors like pH and temperature affect enzyme activity. Understanding digestion is key to understanding how our bodies obtain the energy and materials needed to survive.",
+                "content": "Digestion is the process of breaking down large, insoluble food molecules into small, soluble ones that can be absorbed into the bloodstream. It begins in the 'Mouth' with mechanical digestion (chewing) and chemical digestion (salivary amylase breaking down starch). The food then travels down the esophagus to the 'Stomach,' where proteins are partially digested by gastric juices; the enzyme 'pepsin' begins the breakdown of proteins into shorter peptides.\n\nMost digestion and nearly all absorption occur in the 'Small Intestine.' Here, enzymes from the pancreas and bile from the liver complete the breakdown of food. The inner surface of the small intestine is covered in tiny, finger-like projections called 'villi,' which greatly increase the surface area for efficient absorption. The remaining undigested waste then moves into the 'Large Intestine,' where water is reabsorbed before the waste is eliminated from the body. The 'appendix' is a small, finger-like tube attached to the caecum at the start of the large intestine; in humans it has no major role in digestion.\n\nCSEC students must be able to describe the path of food through the digestive system and identify the specific enzymes involved (like amylase, protease, and lipase). You will also explore how factors like pH and temperature affect enzyme activity. Understanding digestion is key to understanding how our bodies obtain the energy and materials needed to survive.",
                 "objectives": [
                     "Describe the stages of digestion",
                     "Identify the role of enzymes"
@@ -131,8 +213,48 @@
                     "Absorption of nutrients"
                 ],
                 "experiment": {
-                    "type": "lab-sim",
+                    "type": "matching-game",
                     "description": "Digestion and Absorption: Match each part of the digestive system to its role."
+                }
+            },
+            {
+                "id": "hsb-l3-3",
+                "title": "Teeth and Dental Health",
+                "content": "Digestion begins in the mouth, and the 'teeth' carry out the mechanical digestion that starts it. Each type of tooth has a job: 'incisors' cut, 'canines' tear, and 'premolars' and 'molars' crush and grind the food into smaller pieces. Humans have two sets of teeth - 20 milk (baby) teeth and, from about six years old, 32 permanent teeth.\n\nA tooth is covered by 'enamel', the hardest substance in the body, which is made mainly of calcium salts. Beneath the enamel is the softer 'dentine', and in the centre is the 'pulp', which contains nerves and blood vessels. Enamel cannot grow back once it is worn away, so it must be protected.\n\n'Tooth decay' starts when bacteria in the mouth feed on sugar from the diet and form a sticky film called 'plaque'. The bacteria turn the sugar into acid, and the acid slowly dissolves the enamel, opening a cavity that can reach the pulp and cause toothache. Tooth decay is prevented by brushing twice a day with 'fluoride' toothpaste, eating less sugar, and visiting a dentist regularly; fluoride hardens the enamel and helps it resist acid. CSEC HSB students must be able to describe the structure and functions of the teeth and explain how diet and dental care affect dental health.",
+                "objectives": [
+                    "Describe the structure and function of the teeth",
+                    "Explain the causes of tooth decay and how it can be prevented"
+                ],
+                "concepts": [
+                    "Types of teeth",
+                    "Enamel, dentine and pulp",
+                    "Plaque and acid",
+                    "Tooth decay",
+                    "Fluoride and dental care"
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Teeth and Dental Health: Match each term to its description."
+                }
+            },
+            {
+                "id": "hsb-l3-4",
+                "title": "Vitamins, Minerals and Malnutrition",
+                "content": "'Vitamins' and 'minerals' are 'micronutrients': the body needs them in very small amounts, but they do not supply energy. They help enzymes work and keep the body healthy, and a shortage of one of them causes a deficiency disease.\n\n'Vitamin A' (carrots, liver, green leafy vegetables) is needed for vision in dim light; a lack causes 'night blindness'. 'Vitamin C' (citrus fruits, guava, green vegetables) keeps gums, skin and blood vessels healthy; a lack causes 'scurvy', with bleeding gums and slow healing. 'Vitamin D' (sunlight on the skin, oily fish, eggs) helps the body absorb calcium for strong bones and teeth; a lack in children causes 'rickets', in which the bones stay soft and bend. Important minerals include 'calcium' (milk, cheese) for bones and teeth, 'iron' (liver, dark green vegetables) for making haemoglobin in red blood cells - a lack causes 'anaemia' - and 'iodine' (seafood, iodised salt) for making thyroxine, where a lack causes 'goitre'.\n\n'Malnutrition' means a diet that is not balanced. Too little food, or too little protein, causes 'kwashiorkor' (severe protein deficiency, with a swollen abdomen, oedema and stunted growth) or 'marasmus' (a severe shortage of both energy and protein, causing extreme wasting and thinness). Too much food causes obesity, which increases the risk of diabetes and heart disease. CSEC HSB students must be able to link each vitamin and mineral to its function and to the deficiency disease it prevents.",
+                "objectives": [
+                    "Identify the sources and functions of the main vitamins and minerals",
+                    "Explain the causes and symptoms of malnutrition, including kwashiorkor and marasmus"
+                ],
+                "concepts": [
+                    "Vitamins A, C and D",
+                    "Minerals: calcium, iron and iodine",
+                    "Deficiency diseases",
+                    "Kwashiorkor",
+                    "Marasmus"
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Micronutrients: Match each nutrient to the deficiency disease it prevents."
                 }
             }
         ]
@@ -144,7 +266,7 @@
             {
                 "id": "hsb-l4-1",
                 "title": "Communicable and Non-communicable Diseases",
-                "content": "Diseases are broadly classified into two categories. 'Communicable' (infectious) diseases are caused by 'pathogens' like bacteria, viruses, fungi, and parasites. These can be spread from person to person through air, water, food, or direct contact. Examples include malaria (spread by mosquitoes), HIV/AIDS, and tuberculosis.\n\n'Non-communicable' diseases are not spread by pathogens and are often related to 'lifestyle factors' and genetics. These include chronic conditions like diabetes, hypertension (high blood pressure), and many types of cancer. These diseases are now a leading cause of illness and death in the Caribbean, often linked to diets high in sugar and salt, lack of exercise, and smoking.\n\nIn the CSEC syllabus, you will learn about the causes, symptoms, and prevention of various diseases. You will also discuss the role of 'vectors' \u2014 organisms like mosquitoes, flies, and rats that carry pathogens from one host to another. Understanding these diseases is essential for promoting public health and making informed decisions about your own wellbeing.",
+                "content": "Diseases are broadly classified into two categories. 'Communicable' (infectious) diseases are caused by 'pathogens' like bacteria, viruses, fungi, and parasites. These can be spread from person to person through air, water, food, or direct contact. Examples include malaria (spread by the Anopheles mosquito), dengue fever (spread by the Aedes aegypti mosquito), cholera (spread by contaminated water and food), influenza, HIV/AIDS, and tuberculosis.\n\n'Non-communicable' diseases are not spread by pathogens and are often related to 'lifestyle factors' and genetics. These include chronic conditions like diabetes, hypertension (high blood pressure), and many types of cancer. These diseases are now a leading cause of illness and death in the Caribbean, often linked to diets high in sugar and salt, lack of exercise, and smoking.\n\nIn the CSEC syllabus, you will learn about the causes, symptoms, and prevention of various diseases. You will also discuss the role of 'vectors' \u2014 organisms like mosquitoes, flies, and rats that carry pathogens from one host to another. Understanding these diseases is essential for promoting public health and making informed decisions about your own wellbeing.",
                 "objectives": [
                     "Distinguish between types of diseases",
                     "Understand common disease vectors"
@@ -158,7 +280,7 @@
                     "Lifestyle factors"
                 ],
                 "experiment": {
-                    "type": "simulation",
+                    "type": "classifier-sim",
                     "description": "Communicable or Non-communicable?: Sort each disease into the correct group."
                 }
             },
@@ -178,7 +300,7 @@
                     "Vaccine types"
                 ],
                 "experiment": {
-                    "type": "lab-sim",
+                    "type": "matching-game",
                     "description": "Immunity and Vaccination: Match each immune component to its function."
                 }
             }
@@ -203,7 +325,7 @@
                     "Eutrophication"
                 ],
                 "experiment": {
-                    "type": "lab-sim",
+                    "type": "interactive-pathway",
                     "description": "Water Purification: Arrange the steps of water treatment in order."
                 }
             },
@@ -222,7 +344,7 @@
                     "Population control measures"
                 ],
                 "experiment": {
-                    "type": "lab-sim",
+                    "type": "classifier-sim",
                     "description": "Waste Disposal: Sort each waste item into the correct disposal group."
                 }
             }
@@ -248,14 +370,14 @@
                     "Addiction"
                 ],
                 "experiment": {
-                    "type": "lab-sim",
+                    "type": "matching-game",
                     "description": "Effects of Substances: Match each substance to its effect on the body."
                 }
             },
             {
                 "id": "hsb-l6-2",
                 "title": "Family Planning and STIs",
-                "content": "Family planning is the practice of controlling the number of children in a family and the intervals between their births. It is essential for the health of the mother and children and for the economic stability of the household. Various 'Contraceptive methods' are used to prevent pregnancy, including barrier methods (like condoms), hormonal methods (like the pill), and surgical methods (like vasectomy).\n\nSexually Transmitted Infections (STIs) are infections spread through sexual contact. Common STIs include Syphilis, Gonorrhea, Herpes, and HIV/AIDS. While some STIs can be cured with antibiotics if caught early, others have no cure but can be managed with medication. Using condoms is an effective way to reduce the risk of contracting most STIs.\n\nCSEC students must be able to describe different birth control methods and the symptoms and prevention of common STIs. You will also discuss the social and economic importance of family planning and the role of education and healthcare services in promoting reproductive health. This topic is a sensitive but essential part of the HSB syllabus.",
+                "content": "Family planning is the practice of controlling the number of children in a family and the intervals between their births. It is essential for the health of the mother and children and for the economic stability of the household. Various 'Contraceptive methods' are used to prevent pregnancy, including barrier methods (like condoms), hormonal methods (like the pill), and surgical methods (like vasectomy for men and tubal ligation for women).\n\nSexually Transmitted Infections (STIs) are infections spread through sexual contact. Common STIs include Syphilis, Gonorrhea, Herpes, and HIV/AIDS. While some STIs can be cured with antibiotics if caught early, others have no cure but can be managed with medication. Using condoms is an effective way to reduce the risk of contracting most STIs.\n\nCSEC students must be able to describe different birth control methods and the symptoms and prevention of common STIs. You will also discuss the social and economic importance of family planning and the role of education and healthcare services in promoting reproductive health. This topic is a sensitive but essential part of the HSB syllabus.",
                 "objectives": [
                     "Explain various birth control methods",
                     "Identify common sexually transmitted infections"
@@ -270,6 +392,26 @@
                 "experiment": {
                     "type": "matching-game",
                     "description": "Contraceptive Match: Match different birth control methods (e.g., barrier, hormonal, surgical) to their descriptions and effectiveness levels."
+                }
+            },
+            {
+                "id": "hsb-l6-3",
+                "title": "Human Reproduction and Development",
+                "content": "Reproduction is the process by which a new individual is formed. The male reproductive system produces the male gamete, the 'sperm', and the female reproductive system produces the female gamete, the 'egg' (ovum). 'Fertilisation' happens when a sperm fuses with an egg in the 'fallopian tube'. The fertilised cell is a 'zygote', which divides again and again as it travels to the uterus, forming a ball of cells called an 'embryo'. About a week later the embryo embeds itself in the lining of the uterus; this is 'implantation'.\n\nThe 'placenta' develops from the embryo and the lining of the uterus, and the 'umbilical cord' joins the developing baby to it. The placenta is the organ of exchange: oxygen and nutrients pass from the mother's blood to the baby, and carbon dioxide and other wastes such as urea pass from the baby to the mother to be excreted. The two blood supplies do not mix. The placenta also produces hormones that keep the pregnancy going, and it acts as a barrier against many, though not all, pathogens.\n\nIn the female, the 'menstrual cycle' lasts about 28 days and is controlled by the hormones 'oestrogen' and 'progesterone' from the ovaries. The lining of the uterus thickens, an egg is released at about day 14 ('ovulation'), and if the egg is not fertilised the lining is shed as 'menstruation'. The human life cycle is prenatal (conception to birth), infancy, childhood, adolescence, adulthood and old age; 'puberty' is the stage of adolescence at which the body becomes able to reproduce. CSEC HSB students must be able to describe fertilisation and development and the role of the placenta.",
+                "objectives": [
+                    "Describe fertilisation and the development of the baby in the uterus",
+                    "Explain the function of the placenta and the stages of the human life cycle"
+                ],
+                "concepts": [
+                    "Gametes and fertilisation",
+                    "Implantation",
+                    "Placenta and umbilical cord",
+                    "Menstrual cycle",
+                    "Puberty and the human life cycle"
+                ],
+                "experiment": {
+                    "type": "interactive-pathway",
+                    "description": "Human Development: Arrange the stages from fertilisation to birth in order."
                 }
             }
         ]
