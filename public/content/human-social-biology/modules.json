@@ -19,7 +19,7 @@
                 ],
                 "experiment": {
                     "type": "lab-sim",
-                    "description": "Body Explorer: Click on the skeletal and muscular systems in a 3D model to learn about individual bones, muscles, and how they interact to facilitate movement."
+                    "description": "The Skeletal and Muscular Systems: Match each structure to its function."
                 }
             },
             {
@@ -38,7 +38,7 @@
                 ],
                 "experiment": {
                     "type": "lab-sim",
-                    "description": "Body Explorer: Navigate through the heart and lungs to see blood flow and gas exchange in real-time, clicking on organs for detailed anatomical info."
+                    "description": "Heart and Lungs: Arrange the route of blood through the heart and lungs in order."
                 }
             }
         ]
@@ -65,7 +65,7 @@
                 ],
                 "experiment": {
                     "type": "lab-sim",
-                    "description": "Virtual Microscope: Drag a cell slide under a virtual microscope, adjust the focus, and label the organelles you see."
+                    "description": "Cell Structure: Match each cell part to its function."
                 }
             },
             {
@@ -84,7 +84,7 @@
                 ],
                 "experiment": {
                     "type": "drag-drop",
-                    "description": "Division Timeline: Drag and drop the stages of mitosis and meiosis into the correct order and watch a short animation of the process."
+                    "description": "Cell Division: Arrange the stages of mitosis in order."
                 }
             }
         ]
@@ -111,7 +111,7 @@
                 ],
                 "experiment": {
                     "type": "lab-sim",
-                    "description": "Nutrition Calculator: Enter various food items (e.g., '1 Apple', '1 Slice of Pizza') and see a real-time breakdown of calories, proteins, carbs, and fats relative to daily needs."
+                    "description": "Nutrients: Match each nutrient to its function in the body."
                 }
             },
             {
@@ -132,7 +132,7 @@
                 ],
                 "experiment": {
                     "type": "lab-sim",
-                    "description": "Enzyme Reaction Lab: Change temperature and pH levels to see how they affect the rate of starch breakdown by salivary amylase."
+                    "description": "Digestion and Absorption: Match each part of the digestive system to its role."
                 }
             }
         ]
@@ -159,7 +159,7 @@
                 ],
                 "experiment": {
                     "type": "simulation",
-                    "description": "Disease Transmission Sim: Watch how a virus spreads through a population in a visual simulation. Adjust variables like 'infection rate' and 'vaccination coverage' to see the outcome."
+                    "description": "Communicable or Non-communicable?: Sort each disease into the correct group."
                 }
             },
             {
@@ -179,7 +179,7 @@
                 ],
                 "experiment": {
                     "type": "lab-sim",
-                    "description": "Immune Response Game: Deploy white blood cells and antibodies to defend the body against incoming waves of different pathogens."
+                    "description": "Immunity and Vaccination: Match each immune component to its function."
                 }
             }
         ]
@@ -204,7 +204,7 @@
                 ],
                 "experiment": {
                     "type": "lab-sim",
-                    "description": "Water Purifier Lab: Arrange layers (sand, gravel, charcoal) to filter a sample of muddy water and test the clarity of the result."
+                    "description": "Water Purification: Arrange the steps of water treatment in order."
                 }
             },
             {
@@ -223,7 +223,7 @@
                 ],
                 "experiment": {
                     "type": "lab-sim",
-                    "description": "Waste Sorter Challenge: Categorize various waste items into 'Recycle', 'Compost', or 'Landfill' bins as fast as possible."
+                    "description": "Waste Disposal: Sort each waste item into the correct disposal group."
                 }
             }
         ]
@@ -249,7 +249,7 @@
                 ],
                 "experiment": {
                     "type": "lab-sim",
-                    "description": "Effect Visualizer: Select different substances (e.g., Nicotine, Alcohol) and see a visual representation of their long-term effects on various body organs."
+                    "description": "Effects of Substances: Match each substance to its effect on the body."
                 }
             },
             {
