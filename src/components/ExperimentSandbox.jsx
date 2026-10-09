@@ -90,6 +90,12 @@ function resolveInteractive(subjectId, experimentType, lessonId) {
   // ---- physics: circuit-builder keeps its dedicated tool; other lessons
   //      resolve to distinct per-lesson DragDropLabel sets.
   if (subjectId === "physics") {
+    // Syllabus-gap lessons carry their own topic-matched set, so resolve them by
+    // lessonId BEFORE the experiment-type library below (they are not keys there,
+    // and the older Physics lessons stay type-keyed exactly as before).
+    if (lessonId && lessonSets["physics"] && lessonSets["physics"][lessonId]) {
+      return <DragDropLabel subjectId="physics" experimentType={t} lessonId={lessonId} />;
+    }
     if (t === "circuit-builder") return <CircuitBuilder />;
     if (PHYS_DRAG_TYPES.has(t)) return <DragDropLabel subjectId="physics" experimentType={t} />;
     return flash("physics");

@@ -12,7 +12,7 @@
 //      content, objectives or concepts — so a lab can never drift onto another topic,
 //   4. the routing branch that renders it sits BEFORE the flashcard fallback, so a
 //      City & Guilds Mathematics lesson can never silently downgrade to a flashcard deck,
-//   5. the 22 pre-existing subjects still have their sets and none was renamed.
+//   5. the 23 pre-existing subjects still have their sets and none was renamed.
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -143,7 +143,7 @@ const mathBranchAt = sandbox.indexOf('if (subjectId === "mathematics")');
 ok(mathBranchAt !== -1 && mathBranchAt < perLessonAt, "the mathematics branch is the CSEC subject's own, not this one");
 ok(sandbox.indexOf('if (subjectId === "city-guilds-mathematics")') === -1, "City & Guilds Mathematics is not special-cased into the mathematics branch");
 section("5. the other subjects' sets are untouched");
-const OTHERS = ["biology", "information-technology", "principles-of-accounts", "social-studies", "human-social-biology", "spanish", "french", "english-b", "clothing-textile-and-fashion", "principles-of-business", "edpm", "visual-arts", "theater-arts", "caribbean-history", "integrated-science", "agriculture-double-option", "food-and-nutrition", "technical-drawing", "physical-education", "mathematics", "english-a", "city-guilds-english"];
+const OTHERS = ["biology", "information-technology", "principles-of-accounts", "social-studies", "human-social-biology", "spanish", "french", "english-b", "clothing-textile-and-fashion", "principles-of-business", "edpm", "visual-arts", "theater-arts", "caribbean-history", "integrated-science", "agriculture-double-option", "food-and-nutrition", "technical-drawing", "physical-education", "mathematics", "english-a", "city-guilds-english", "physics"];
 ok(OTHERS.every((s) => lessonSets[s]), `all ${OTHERS.length} pre-existing subjects still have their sets`);
 ok(Object.keys(lessonSets).length === OTHERS.length + 1, `the block count is ${OTHERS.length + 1} (${Object.keys(lessonSets).length})`);
 console.log(`\ncheck-city-guilds-mathematics-labs: ${pass} passed, ${fail} failed`);

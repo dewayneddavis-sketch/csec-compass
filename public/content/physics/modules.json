@@ -37,6 +37,62 @@
                     "type": "graph-sim",
                     "description": "Read the Motion Graph: Match five graph features — flat and sloped lines on distance–time and velocity–time graphs — to the motion each one shows: at rest, constant speed, constant velocity, constant acceleration or zero velocity."
                 }
+            },
+            {
+                "id": "forces-and-newtons-laws",
+                "title": "Forces and Newton's Laws",
+                "content": "A force is a push or a pull measured in newtons (N). Forces can change an object's speed, direction or shape, and the overall force on an object is the resultant force: forces acting in the same direction add, forces acting in opposite directions subtract. Balanced (zero resultant) forces mean no change in motion; unbalanced forces mean acceleration.\n\nNewton's three laws explain this. First law: an object stays at rest or moves at constant velocity unless an unbalanced force acts on it (often called the law of inertia). Second law: the resultant force equals mass times acceleration, F = ma. Third law: every action has an equal and opposite reaction, acting on a different object.\n\nMomentum is mass times velocity (p = mv) and is a vector. In a collision or explosion the total momentum before equals the total momentum after (conservation of momentum), provided no external resultant force acts. Friction is the force that opposes motion between surfaces, and it transfers kinetic energy to thermal energy.",
+                "objectives": [
+                    "State Newton's three laws of motion",
+                    "Calculate resultant force and use F = ma",
+                    "Apply conservation of momentum to collisions and explosions"
+                ],
+                "concepts": [
+                    "Resultant force: the single force that has the same effect as all the forces acting on an object together.",
+                    "Newton's second law: the resultant force on an object equals its mass times its acceleration, F = ma.",
+                    "Momentum: mass times velocity, p = mv; total momentum is conserved in a collision with no external resultant force."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Match each idea - First law, Second law, Third law, Momentum and Friction - to the statement it belongs with."
+                }
+            },
+            {
+                "id": "work-energy-and-power",
+                "title": "Work, Energy and Power",
+                "content": "Work is done when a force moves an object through a distance in the direction of the force: work done = force x distance moved (in the direction of the force), measured in joules (J). One joule is one newton-metre.\n\nEnergy is the ability to do work, measured in joules, and it is conserved: energy is transferred from one store to another but never created or destroyed. Kinetic energy is the energy of motion, KE = 1/2 mv squared. Gravitational potential energy is the energy stored by height, GPE = mgh. Falling objects transfer GPE to KE, and in a closed system the totals match.\n\nPower is the rate of doing work or transferring energy, P = work done / time taken, measured in watts (W), where 1 W = 1 J/s. Efficiency compares useful output with total input: efficiency = useful energy or power output / total input x 100 per cent. Wasted energy is usually transferred to the surroundings as thermal energy. Simple machines such as levers and pulleys do not reduce the work needed; they reduce the force needed by increasing the distance over which it acts.",
+                "objectives": [
+                    "Calculate work done, kinetic energy and gravitational potential energy",
+                    "Use the conservation of energy to solve transfer problems",
+                    "Calculate power and efficiency"
+                ],
+                "concepts": [
+                    "Work: force times the distance moved in the direction of the force, measured in joules.",
+                    "Kinetic energy: the energy of motion, KE = 1/2 mv squared.",
+                    "Power: the rate of transferring energy, P = work done / time taken, measured in watts."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Match each idea - Work, Kinetic energy, Power, Gravitational potential energy and Efficiency - to the statement that describes it."
+                }
+            },
+            {
+                "id": "fluid-pressure-and-upthrust",
+                "title": "Pressure in Fluids and Upthrust",
+                "content": "Pressure is force per unit area, P = F/A, measured in pascals (Pa), where 1 Pa = 1 N/m squared. A force spread over a larger area gives a smaller pressure, which is why wide tyres and foundations spread weight, while sharp edges concentrate force.\n\nPressure in a fluid increases with depth and with the density of the fluid: pressure = density x gravitational field strength x depth. This is why a dam wall is thicker at the bottom and why the pressure on a diver's ears increases as they descend. Atmospheric pressure decreases with height above sea level.\n\nA body in a fluid experiences upthrust, an upward force caused by the pressure difference between the fluid pushing harder on the deeper bottom surface than on the top. Upthrust is equal to the weight of fluid displaced (Archimedes' principle). An object floats when its weight equals the upthrust on it, and sinks when its weight is greater. A hydraulic press uses pressure transmitted through a liquid so that a small force on a small piston produces a large force on a larger piston, since the pressure is the same throughout.",
+                "objectives": [
+                    "Calculate pressure from force and area",
+                    "Explain how pressure in a fluid varies with depth and density",
+                    "State Archimedes' principle and explain floating and sinking"
+                ],
+                "concepts": [
+                    "Pressure: force per unit area, P = F/A, measured in pascals.",
+                    "Upthrust: the upward force a fluid exerts on a body in it, equal to the weight of fluid displaced."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Match each term - Pressure, Upthrust, Archimedes' principle, Atmospheric pressure and Hydraulic press - to the statement that describes it."
+                }
             }
         ]
     },
@@ -75,6 +131,25 @@
                 "experiment": {
                     "type": "piston-sim",
                     "description": "The Gas Laws: Drag each named law — Boyle's Law, Charles's Law and the Pressure Law, including the P ∝ 1/V and V ∝ T forms — onto the relationship it describes."
+                }
+            },
+            {
+                "id": "specific-and-latent-heat",
+                "title": "Specific Heat Capacity and Latent Heat",
+                "content": "Specific heat capacity is the energy needed to raise the temperature of 1 kg of a substance by 1 degree Celsius, measured in J/kg degrees Celsius. Water has a high value (about 4200), which is why it heats and cools slowly and is used in car cooling systems. The energy transferred in heating is E = mc delta theta, where c is the specific heat capacity and delta theta is the temperature rise.\n\nWhen a substance changes state, its temperature stays constant while energy is being supplied: the energy is used to break the forces between particles rather than to increase their average kinetic energy. The specific latent heat of fusion is the energy to melt 1 kg of a solid at its melting point; the specific latent heat of vaporisation is the energy to boil 1 kg of a liquid at its boiling point. The energy transferred is E = mL, where L is the specific latent heat.\n\nThermal expansion: nearly all solids, liquids and gases expand when heated and contract when cooled, because the particles vibrate more and move further apart. This is why railway lines and bridges have expansion gaps and why a bimetallic strip of two metals with different expansion rates bends when heated \u2014 a property used in thermostats and fire alarms.",
+                "objectives": [
+                    "Define specific heat capacity and use E = mc delta theta",
+                    "Define specific latent heat and use E = mL",
+                    "Explain thermal expansion and the bimetallic strip"
+                ],
+                "concepts": [
+                    "Specific heat capacity: the energy needed to raise 1 kg of a substance by 1 degree Celsius.",
+                    "Specific latent heat: the energy needed to change the state of 1 kg of a substance at constant temperature.",
+                    "Thermal expansion: the increase in size of a substance when its temperature rises."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Sort each statement under Specific heat capacity, Latent heat or Thermal expansion."
                 }
             }
         ]
@@ -116,6 +191,44 @@
                     "type": "optics-bench",
                     "description": "Lenses & Refraction: Drag convex and concave lenses, refraction and the normal onto what each one describes — rays brought together, rays spread apart, light bending between materials, and the line perpendicular to the surface."
                 }
+            },
+            {
+                "id": "reflection-and-total-internal-reflection",
+                "title": "Reflection and Total Internal Reflection",
+                "content": "When light reflects off a plane surface, the angle of incidence equals the angle of reflection, both measured from the normal (the line perpendicular to the surface). The image in a plane mirror is virtual, upright, laterally inverted and the same size as the object, and it appears the same distance behind the mirror as the object is in front of it.\n\nConcave and convex mirrors are curved reflectors. A concave (converging) mirror brings parallel rays to a focus and can form a real image; a convex (diverging) mirror spreads rays and always forms a virtual, diminished image, which is why it gives a wide field of view in drivers' mirrors and shop security mirrors.\n\nWhen light travels from a denser medium such as glass or water into a less dense medium such as air, it speeds up and bends away from the normal. As the angle of incidence increases there comes an angle \u2014 the critical angle \u2014 beyond which no light refracts out; it all reflects back inside the medium. This is total internal reflection, and it is used in optical fibres to carry light and signals along a curved path, and in prisms in binoculars. A prism also disperses white light into a spectrum, because each colour refracts by a different amount.",
+                "objectives": [
+                    "Draw ray diagrams for reflection and state the laws of reflection",
+                    "Describe the images formed by plane, concave and convex mirrors",
+                    "Define the critical angle and explain total internal reflection and optical fibres"
+                ],
+                "concepts": [
+                    "Angle of incidence: the angle between an incoming ray and the normal, equal to the angle of reflection.",
+                    "Critical angle: the angle of incidence in a denser medium beyond which light is totally internally reflected.",
+                    "Total internal reflection: the complete reflection of light back inside a denser medium when the critical angle is exceeded."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Sort each statement under Plane mirror, Curved mirrors or Total internal reflection."
+                }
+            },
+            {
+                "id": "sound-and-the-em-spectrum",
+                "title": "Sound and the Electromagnetic Spectrum",
+                "content": "Sound is a longitudinal wave that needs a medium: it travels by compressing and rarefying the particles of a solid, liquid or gas, and cannot travel through a vacuum. In air at room temperature sound travels at about 330-340 m/s, much slower than light. Speed = distance / time, so an echo \u2014 sound reflected from a distant surface such as a cliff or the sea bed \u2014 can be used to measure distance.\n\nThe pitch of a note is set by its frequency (higher frequency, higher pitch) and the loudness by its amplitude (greater amplitude, louder sound). The human ear hears roughly 20 Hz to 20 000 Hz, and frequencies above this range are called ultrasound. Ultrasound echoes are used in medical scanning and in depth sounding.\n\nThe electromagnetic spectrum runs from radio waves and microwaves through infrared, visible light, ultraviolet, X-rays and gamma rays \u2014 all transverse waves that travel through a vacuum at the speed of light (about 3 x 10 to the 8 m/s). They differ in wavelength and frequency, and the visible region is the narrow band between infrared and ultraviolet.",
+                "objectives": [
+                    "Describe sound as a longitudinal wave and compare its speed with light",
+                    "Relate pitch and loudness to frequency and amplitude and use echoes",
+                    "List the regions of the electromagnetic spectrum in order"
+                ],
+                "concepts": [
+                    "Longitudinal wave: a wave in which the particles vibrate along the direction the wave travels, as in sound.",
+                    "Echo: a sound heard again after reflecting from a distant surface; used to measure distance.",
+                    "The electromagnetic spectrum: the family of transverse waves from radio to gamma rays that travel through a vacuum at the speed of light."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Sort each statement under Sound or The electromagnetic spectrum."
+                }
             }
         ]
     },
@@ -138,6 +251,44 @@
                 "experiment": {
                     "type": "circuit-builder",
                     "description": "Circuit Lab: Drag batteries, resistors, and bulbs onto a board to build circuits. Measure current and voltage using a virtual multimeter."
+                }
+            },
+            {
+                "id": "magnetism-and-electromagnetism",
+                "title": "Magnetism and Electromagnetism",
+                "content": "A magnet has a north and a south pole, and like poles repel while unlike poles attract. Magnetic materials such as iron, steel, cobalt and nickel are attracted to a magnet. The pattern of a magnetic field can be shown with iron filings or plotting compasses, and the field lines run from north to south outside the magnet.\n\nWhen current flows through a wire a magnetic field is produced around it, and the field is stronger if the current is larger or the wire is wound into a coil. Winding the wire around a soft iron core produces an electromagnet, which is magnetised while the current flows and demagnetised when it stops \u2014 the basis of relays, electric bells and lifting magnets. Reversing the current reverses the poles, and the direction is given by the right-hand grip rule.\n\nElectromagnetic induction works the other way round: moving a magnet into or out of a coil, or moving a coil in a magnetic field, generates a voltage across the coil. A faster movement or a stronger field gives a bigger voltage. This is how generators and dynamos produce electricity. A transformer uses two coils wound on the same iron core to change an alternating voltage: the ratio of the voltages equals the ratio of the numbers of turns, and a step-up transformer has more turns on the output coil.",
+                "objectives": [
+                    "Describe the magnetic field of a magnet and the behaviour of poles",
+                    "Explain how an electromagnet is made and how its strength can be changed",
+                    "Describe electromagnetic induction and how a transformer changes voltage"
+                ],
+                "concepts": [
+                    "Electromagnet: a coil wound on a soft iron core that is magnetic only while current flows.",
+                    "Electromagnetic induction: generating a voltage by moving a magnet and a coil relative to each other.",
+                    "Transformer: two coils on one iron core that change an alternating voltage; the voltage ratio equals the turns ratio."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Match each term - Magnetic materials, Electromagnet, Electromagnetic induction, Transformer and Step-up transformer - to the statement that describes it."
+                }
+            },
+            {
+                "id": "electrical-power-and-safety",
+                "title": "Electrical Power and Safety",
+                "content": "Electrical power is the rate at which electrical energy is transferred: power = voltage x current, P = VI, measured in watts. Combining this with resistance gives P = I squared R. The energy transferred by an appliance is found from energy = power x time, and domestic electrical energy is sold in kilowatt-hours (kWh), where 1 kWh is the energy a 1 kW appliance transfers in 1 hour.\n\nDomestic circuits are wired in parallel so each appliance gets the full mains voltage and can be switched independently. The three-pin plug has a live wire (brown), a neutral wire (blue) and an earth wire (green and yellow). Appliances with metal cases are earthed so that if the live wire touches the case the current flows safely to earth instead of through the user.\n\nA fuse is a thin wire that melts and breaks the circuit if the current exceeds its rating, and a circuit breaker does the same job with a switch that can be reset. Choosing the correct fuse rating matters: too small and it blows in normal use, too large and it fails to protect. The live wire is connected through the fuse or breaker so that the appliance is isolated from the live supply when it operates.",
+                "objectives": [
+                    "Calculate electrical power and energy transferred, including kWh",
+                    "Describe the live, neutral and earth wires and why appliances are earthed",
+                    "Explain the action of fuses and circuit breakers"
+                ],
+                "concepts": [
+                    "Electrical power: the rate of transferring electrical energy, P = VI, measured in watts.",
+                    "Kilowatt-hour: the energy a 1 kW appliance transfers in one hour; the unit domestic electricity is sold in.",
+                    "Earthing: connecting a metal case to earth so a fault current flows to earth instead of through a person."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Sort each statement under Fuse, Earthing or Circuit breaker."
                 }
             }
         ]
