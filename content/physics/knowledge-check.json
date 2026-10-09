@@ -140,7 +140,7 @@
         ],
         "answer": "100N",
         "explanation": "Weight = mass * gravity = 10kg * 10 N/kg = 100N.",
-        "topic": "motion-graphs"
+        "topic": "forces-and-newtons-laws"
     },
     {
         "id": "q12",
@@ -153,7 +153,7 @@
         ],
         "answer": "Kinetic energy",
         "explanation": "Kinetic energy is the energy an object possesses due to its motion.",
-        "topic": "motion-graphs"
+        "topic": "work-energy-and-power"
     },
     {
         "id": "q13",
@@ -205,7 +205,7 @@
         ],
         "answer": "Watt",
         "explanation": "Power is measured in Watts (W), which is Joules per second.",
-        "topic": "electric-circuits"
+        "topic": "electrical-power-and-safety"
     },
     {
         "id": "q17",
@@ -231,7 +231,7 @@
         ],
         "answer": "Elastic potential energy",
         "explanation": "Energy stored as a result of deformation is elastic potential energy.",
-        "topic": "motion-graphs"
+        "topic": "work-energy-and-power"
     },
     {
         "id": "q19",
@@ -270,7 +270,7 @@
         ],
         "answer": "Convection",
         "explanation": "Convection is the transfer of heat through the movement of the fluid itself.",
-        "topic": "fluid-pressure-and-upthrust"
+        "topic": "temperature-heat"
     },
     {
         "id": "q22",
@@ -309,7 +309,7 @@
         ],
         "answer": "Pascal",
         "explanation": "Pressure is measured in Pascals (Pa).",
-        "topic": "gas-laws"
+        "topic": "fluid-pressure-and-upthrust"
     },
     {
         "id": "q25",

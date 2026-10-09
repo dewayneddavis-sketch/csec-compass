@@ -48,22 +48,13 @@
                     "Apply conservation of momentum to collisions and explosions"
                 ],
                 "concepts": [
-                    {
-                        "term": "Resultant force",
-                        "definition": "The single force that has the same effect as all the forces acting on an object together."
-                    },
-                    {
-                        "term": "Newton's second law",
-                        "definition": "The resultant force on an object equals its mass times its acceleration, F = ma."
-                    },
-                    {
-                        "term": "Momentum",
-                        "definition": "Mass times velocity, p = mv; total momentum is conserved in a collision with no external resultant force."
-                    }
+                    "Resultant force: the single force that has the same effect as all the forces acting on an object together.",
+                    "Newton's second law: the resultant force on an object equals its mass times its acceleration, F = ma.",
+                    "Momentum: mass times velocity, p = mv; total momentum is conserved in a collision with no external resultant force."
                 ],
                 "experiment": {
-                    "type": "text-sort",
-                    "description": "Text sort: label each statement as balanced forces, unbalanced forces or Newton's third law, then check against the explanation."
+                    "type": "matching-game",
+                    "description": "Match each idea - First law, Second law, Third law, Momentum and Friction - to the statement it belongs with."
                 }
             },
             {
@@ -76,22 +67,13 @@
                     "Calculate power and efficiency"
                 ],
                 "concepts": [
-                    {
-                        "term": "Work",
-                        "definition": "Force times the distance moved in the direction of the force, measured in joules."
-                    },
-                    {
-                        "term": "Kinetic energy",
-                        "definition": "The energy of motion, KE = 1/2 mv squared."
-                    },
-                    {
-                        "term": "Power",
-                        "definition": "The rate of transferring energy, P = work done / time taken, measured in watts."
-                    }
+                    "Work: force times the distance moved in the direction of the force, measured in joules.",
+                    "Kinetic energy: the energy of motion, KE = 1/2 mv squared.",
+                    "Power: the rate of transferring energy, P = work done / time taken, measured in watts."
                 ],
                 "experiment": {
-                    "type": "worked-walkthrough",
-                    "description": "Worked walkthrough: a 2 kg ball falls 5 m \u2014 follow the energy from gravitational store to kinetic store and calculate the speed at the bottom."
+                    "type": "matching-game",
+                    "description": "Match each idea - Work, Kinetic energy, Power, Gravitational potential energy and Efficiency - to the statement that describes it."
                 }
             },
             {
@@ -104,18 +86,12 @@
                     "State Archimedes' principle and explain floating and sinking"
                 ],
                 "concepts": [
-                    {
-                        "term": "Pressure",
-                        "definition": "Force per unit area, P = F/A, measured in pascals."
-                    },
-                    {
-                        "term": "Upthrust",
-                        "definition": "The upward force a fluid exerts on a body in it, equal to the weight of fluid displaced."
-                    }
+                    "Pressure: force per unit area, P = F/A, measured in pascals.",
+                    "Upthrust: the upward force a fluid exerts on a body in it, equal to the weight of fluid displaced."
                 ],
                 "experiment": {
-                    "type": "worked-walkthrough",
-                    "description": "Worked walkthrough: calculate the pressure at 3 m depth in water, then decide whether a 2 kg, 0.003 m cubed block floats or sinks."
+                    "type": "matching-game",
+                    "description": "Match each term - Pressure, Upthrust, Archimedes' principle, Atmospheric pressure and Hydraulic press - to the statement that describes it."
                 }
             }
         ]
@@ -167,22 +143,13 @@
                     "Explain thermal expansion and the bimetallic strip"
                 ],
                 "concepts": [
-                    {
-                        "term": "Specific heat capacity",
-                        "definition": "The energy needed to raise 1 kg of a substance by 1 degree Celsius."
-                    },
-                    {
-                        "term": "Specific latent heat",
-                        "definition": "The energy needed to change the state of 1 kg of a substance at constant temperature."
-                    },
-                    {
-                        "term": "Thermal expansion",
-                        "definition": "The increase in size of a substance when its temperature rises."
-                    }
+                    "Specific heat capacity: the energy needed to raise 1 kg of a substance by 1 degree Celsius.",
+                    "Specific latent heat: the energy needed to change the state of 1 kg of a substance at constant temperature.",
+                    "Thermal expansion: the increase in size of a substance when its temperature rises."
                 ],
                 "experiment": {
-                    "type": "text-sort",
-                    "description": "Text sort: sort each statement under specific heat capacity, latent heat or thermal expansion."
+                    "type": "classifier-sim",
+                    "description": "Sort each statement under Specific heat capacity, Latent heat or Thermal expansion."
                 }
             }
         ]
@@ -235,22 +202,13 @@
                     "Define the critical angle and explain total internal reflection and optical fibres"
                 ],
                 "concepts": [
-                    {
-                        "term": "Angle of incidence",
-                        "definition": "The angle between an incoming ray and the normal, equal to the angle of reflection."
-                    },
-                    {
-                        "term": "Critical angle",
-                        "definition": "The angle of incidence in a denser medium beyond which light is totally internally reflected."
-                    },
-                    {
-                        "term": "Total internal reflection",
-                        "definition": "The complete reflection of light back inside a denser medium when the critical angle is exceeded."
-                    }
+                    "Angle of incidence: the angle between an incoming ray and the normal, equal to the angle of reflection.",
+                    "Critical angle: the angle of incidence in a denser medium beyond which light is totally internally reflected.",
+                    "Total internal reflection: the complete reflection of light back inside a denser medium when the critical angle is exceeded."
                 ],
                 "experiment": {
-                    "type": "worked-walkthrough",
-                    "description": "Worked walkthrough: trace a ray from water into air, increase the angle of incidence, and find the critical angle where the ray reflects instead of refracting."
+                    "type": "classifier-sim",
+                    "description": "Sort each statement under Plane mirror, Curved mirrors or Total internal reflection."
                 }
             },
             {
@@ -263,22 +221,13 @@
                     "List the regions of the electromagnetic spectrum in order"
                 ],
                 "concepts": [
-                    {
-                        "term": "Longitudinal wave",
-                        "definition": "A wave in which the particles vibrate along the direction the wave travels, as in sound."
-                    },
-                    {
-                        "term": "Echo",
-                        "definition": "A sound heard again after reflecting from a distant surface; used to measure distance."
-                    },
-                    {
-                        "term": "The electromagnetic spectrum",
-                        "definition": "The family of transverse waves from radio to gamma rays that travel through a vacuum at the speed of light."
-                    }
+                    "Longitudinal wave: a wave in which the particles vibrate along the direction the wave travels, as in sound.",
+                    "Echo: a sound heard again after reflecting from a distant surface; used to measure distance.",
+                    "The electromagnetic spectrum: the family of transverse waves from radio to gamma rays that travel through a vacuum at the speed of light."
                 ],
                 "experiment": {
-                    "type": "text-sort",
-                    "description": "Text sort: sort the statements under sound or the electromagnetic spectrum."
+                    "type": "classifier-sim",
+                    "description": "Sort each statement under Sound or The electromagnetic spectrum."
                 }
             }
         ]
@@ -314,22 +263,13 @@
                     "Describe electromagnetic induction and how a transformer changes voltage"
                 ],
                 "concepts": [
-                    {
-                        "term": "Electromagnet",
-                        "definition": "A coil wound on a soft iron core that is magnetic only while current flows."
-                    },
-                    {
-                        "term": "Electromagnetic induction",
-                        "definition": "Generating a voltage by moving a magnet and a coil relative to each other."
-                    },
-                    {
-                        "term": "Transformer",
-                        "definition": "Two coils on one iron core that change an alternating voltage; the voltage ratio equals the turns ratio."
-                    }
+                    "Electromagnet: a coil wound on a soft iron core that is magnetic only while current flows.",
+                    "Electromagnetic induction: generating a voltage by moving a magnet and a coil relative to each other.",
+                    "Transformer: two coils on one iron core that change an alternating voltage; the voltage ratio equals the turns ratio."
                 ],
                 "experiment": {
-                    "type": "worked-walkthrough",
-                    "description": "Worked walkthrough: take a coil of 200 turns and an output of 400 turns, then work out the output voltage from a 12 V input."
+                    "type": "matching-game",
+                    "description": "Match each term - Magnetic materials, Electromagnet, Electromagnetic induction, Transformer and Step-up transformer - to the statement that describes it."
                 }
             },
             {
@@ -342,22 +282,13 @@
                     "Explain the action of fuses and circuit breakers"
                 ],
                 "concepts": [
-                    {
-                        "term": "Electrical power",
-                        "definition": "The rate of transferring electrical energy, P = VI, measured in watts."
-                    },
-                    {
-                        "term": "Kilowatt-hour",
-                        "definition": "The energy a 1 kW appliance transfers in one hour; the unit domestic electricity is sold in."
-                    },
-                    {
-                        "term": "Earthing",
-                        "definition": "Connecting a metal case to earth so a fault current flows to earth instead of through a person."
-                    }
+                    "Electrical power: the rate of transferring electrical energy, P = VI, measured in watts.",
+                    "Kilowatt-hour: the energy a 1 kW appliance transfers in one hour; the unit domestic electricity is sold in.",
+                    "Earthing: connecting a metal case to earth so a fault current flows to earth instead of through a person."
                 ],
                 "experiment": {
-                    "type": "text-sort",
-                    "description": "Text sort: sort each appliance fault under fuse, earthing or circuit breaker."
+                    "type": "classifier-sim",
+                    "description": "Sort each statement under Fuse, Earthing or Circuit breaker."
                 }
             }
         ]

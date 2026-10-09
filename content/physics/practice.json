@@ -36,7 +36,7 @@
         ],
         "answer": "Convection",
         "explanation": "Convection occurs in fluids as warmer, less dense areas rise and cooler, denser areas sink.",
-        "topic": "fluid-pressure-and-upthrust"
+        "topic": "temperature-heat"
     },
     {
         "id": "p4",
@@ -192,7 +192,7 @@
         ],
         "answer": "newton",
         "explanation": "Force is measured in newtons (N).",
-        "topic": "motion-graphs"
+        "topic": "forces-and-newtons-laws"
     },
     {
         "id": "p16",
@@ -205,7 +205,7 @@
         ],
         "answer": "5 m/s²",
         "explanation": "F = ma → a = 10/2 = 5 m/s².",
-        "topic": "motion-graphs"
+        "topic": "forces-and-newtons-laws"
     },
     {
         "id": "p17",
@@ -283,7 +283,7 @@
         ],
         "answer": "work done per unit time",
         "explanation": "Power = work/time, measured in watts.",
-        "topic": "motion-graphs"
+        "topic": "work-energy-and-power"
     },
     {
         "id": "p23",
@@ -335,7 +335,7 @@
         ],
         "answer": "force per unit area",
         "explanation": "Pressure = F/A, unit pascal.",
-        "topic": "gas-laws"
+        "topic": "fluid-pressure-and-upthrust"
     },
     {
         "id": "p27",
@@ -348,7 +348,7 @@
         ],
         "answer": "25 Pa",
         "explanation": "P = 50/2 = 25 Pa.",
-        "topic": "gas-laws"
+        "topic": "fluid-pressure-and-upthrust"
     },
     {
         "id": "p28",
@@ -361,7 +361,7 @@
         ],
         "answer": "increases with depth",
         "explanation": "Liquid pressure = hρg, increasing with depth.",
-        "topic": "gas-laws"
+        "topic": "fluid-pressure-and-upthrust"
     },
     {
         "id": "p29",
@@ -426,7 +426,7 @@
         ],
         "answer": "convection",
         "explanation": "Convection involves bulk movement of heated fluid.",
-        "topic": "fluid-pressure-and-upthrust"
+        "topic": "temperature-heat"
     },
     {
         "id": "p34",
@@ -478,7 +478,7 @@
         ],
         "answer": "42000 J",
         "explanation": "Q = mcΔT = 2 × 4200 × 5 = 42000 J.",
-        "topic": "temperature-heat"
+        "topic": "specific-and-latent-heat"
     },
     {
         "id": "p38",
@@ -517,7 +517,7 @@
         ],
         "answer": "how much it expands when heated",
         "explanation": "Linear expansivity = fractional length change per degree.",
-        "topic": "temperature-heat"
+        "topic": "specific-and-latent-heat"
     },
     {
         "id": "p41",
@@ -530,7 +530,7 @@
         ],
         "answer": "To allow for expansion in heat",
         "explanation": "Gaps prevent buckling when rails expand on hot days.",
-        "topic": "temperature-heat"
+        "topic": "specific-and-latent-heat"
     },
     {
         "id": "p42",
@@ -1024,7 +1024,7 @@
         ],
         "answer": "P = IV",
         "explanation": "P = IV (also I²R or V²/R).",
-        "topic": "electric-circuits"
+        "topic": "electrical-power-and-safety"
     },
     {
         "id": "p80",
@@ -1037,7 +1037,7 @@
         ],
         "answer": "1200 W",
         "explanation": "P = 240 × 5 = 1200 W.",
-        "topic": "electric-circuits"
+        "topic": "electrical-power-and-safety"
     },
     {
         "id": "p81",
@@ -1063,7 +1063,7 @@
         ],
         "answer": "3 kWh",
         "explanation": "Energy = power × time = 1 × 3 = 3 kWh.",
-        "topic": "electric-circuits"
+        "topic": "electrical-power-and-safety"
     },
     {
         "id": "p83",
@@ -1167,7 +1167,7 @@
         ],
         "answer": "Faster movement of magnet",
         "explanation": "Faster flux change induces greater e.m.f.",
-        "topic": "electric-circuits"
+        "topic": "magnetism-and-electromagnetism"
     },
     {
         "id": "p91",

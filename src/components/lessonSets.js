@@ -5365,4 +5365,134 @@ export const lessonSets = {
       ],
     },
   },
+  // ------------------------------------------------------------------ PHYSICS
+  // The 8 syllabus-gap lessons each carry their own topic-matched set, so a
+  // lesson's Play tab shows the activity that lesson teaches. The 8 older
+  // Physics lessons are NOT keys here: they keep resolving through
+  // subjectTypeSets.physics (ExperimentSandbox resolves lessonId first).
+  physics: {
+    "forces-and-newtons-laws": {
+      title: "Forces and Newton's Laws",
+      subtitle: "Drag each idea onto the statement it belongs with.",
+      kind: "match",
+      pairs: [
+        { id: "ph1", target: "An object stays at rest or moves at constant velocity unless an unbalanced force acts on it", label: "First law" },
+        { id: "ph2", target: "The resultant force equals mass times acceleration", label: "Second law" },
+        { id: "ph3", target: "Every action has an equal and opposite reaction", label: "Third law" },
+        { id: "ph4", target: "Mass times velocity", label: "Momentum" },
+        { id: "ph5", target: "The force that opposes motion between surfaces", label: "Friction" },
+      ],
+    },
+    "work-energy-and-power": {
+      title: "Work, Energy and Power",
+      subtitle: "Drag each idea onto the statement that describes it.",
+      kind: "match",
+      pairs: [
+        { id: "ph1", target: "Force times the distance moved in the direction of the force", label: "Work" },
+        { id: "ph2", target: "The energy of motion, KE = 1/2 mv squared", label: "Kinetic energy" },
+        { id: "ph3", target: "The rate of transferring energy", label: "Power" },
+        { id: "ph4", target: "The energy stored by height, GPE = mgh", label: "Gravitational potential energy" },
+        { id: "ph5", target: "Compares useful output with total input", label: "Efficiency" },
+      ],
+    },
+    "fluid-pressure-and-upthrust": {
+      title: "Pressure in Fluids and Upthrust",
+      subtitle: "Drag each term onto the statement that describes it.",
+      kind: "match",
+      pairs: [
+        { id: "ph1", target: "Force per unit area, P = F/A, measured in pascals", label: "Pressure" },
+        { id: "ph2", target: "The upward force a fluid exerts on a body in it", label: "Upthrust" },
+        { id: "ph3", target: "The weight of fluid displaced", label: "Archimedes' principle" },
+        { id: "ph4", target: "Decreases with height above sea level", label: "Atmospheric pressure" },
+        { id: "ph5", target: "A small force on a small piston produces a large force on a larger piston", label: "Hydraulic press" },
+      ],
+    },
+    "specific-and-latent-heat": {
+      title: "Specific Heat Capacity and Latent Heat",
+      subtitle: "Sort each statement under Specific heat capacity, Latent heat or Thermal expansion.",
+      kind: "sort",
+      categories: [
+        { id: "shc", label: "Specific heat capacity" },
+        { id: "latent", label: "Latent heat" },
+        { id: "expansion", label: "Thermal expansion" },
+      ],
+      items: [
+        { id: "pi1", label: "Energy needed to raise 1 kg of a substance by 1 degree Celsius", category: "shc" },
+        { id: "pi2", label: "Heats and cools slowly and is used in car cooling systems", category: "shc" },
+        { id: "pi3", label: "The energy is used to break the forces between particles", category: "latent" },
+        { id: "pi4", label: "The energy to melt 1 kg of a solid at its melting point", category: "latent" },
+        { id: "pi5", label: "The energy to boil 1 kg of a liquid at its boiling point", category: "latent" },
+        { id: "pi6", label: "Railway lines and bridges have expansion gaps", category: "expansion" },
+        { id: "pi7", label: "A bimetallic strip of two metals with different expansion rates bends when heated", category: "expansion" },
+      ],
+    },
+    "reflection-and-total-internal-reflection": {
+      title: "Reflection and Total Internal Reflection",
+      subtitle: "Sort each statement under Plane mirror, Curved mirrors or Total internal reflection.",
+      kind: "sort",
+      categories: [
+        { id: "plane", label: "Plane mirror" },
+        { id: "curved", label: "Concave and convex mirrors" },
+        { id: "tir", label: "Total internal reflection" },
+      ],
+      items: [
+        { id: "pi1", label: "The angle of incidence equals the angle of reflection", category: "plane" },
+        { id: "pi2", label: "The image in a plane mirror is virtual, upright, laterally inverted and the same size as the object", category: "plane" },
+        { id: "pi3", label: "It appears the same distance behind the mirror as the object is in front of it", category: "plane" },
+        { id: "pi4", label: "Brings parallel rays to a focus and can form a real image", category: "curved" },
+        { id: "pi5", label: "Spreads rays and always forms a virtual, diminished image", category: "curved" },
+        { id: "pi6", label: "It speeds up and bends away from the normal", category: "tir" },
+        { id: "pi7", label: "Used in optical fibres to carry light and signals along a curved path", category: "tir" },
+      ],
+    },
+    "sound-and-the-em-spectrum": {
+      title: "Sound and the Electromagnetic Spectrum",
+      subtitle: "Sort each statement under Sound or The electromagnetic spectrum.",
+      kind: "sort",
+      categories: [
+        { id: "sound", label: "Sound" },
+        { id: "em", label: "The electromagnetic spectrum" },
+      ],
+      items: [
+        { id: "pi1", label: "A longitudinal wave that needs a medium", category: "sound" },
+        { id: "pi2", label: "Sound travels at about 330-340 m/s", category: "sound" },
+        { id: "pi3", label: "Cannot travel through a vacuum", category: "sound" },
+        { id: "pi4", label: "The pitch of a note is set by its frequency", category: "sound" },
+        { id: "pi5", label: "Frequencies above this range are called ultrasound", category: "sound" },
+        { id: "pi6", label: "Travel through a vacuum at the speed of light", category: "em" },
+        { id: "pi7", label: "Radio waves and microwaves through infrared, visible light, ultraviolet, X-rays and gamma rays", category: "em" },
+      ],
+    },
+    "magnetism-and-electromagnetism": {
+      title: "Magnetism and Electromagnetism",
+      subtitle: "Drag each term onto the statement that describes it.",
+      kind: "match",
+      pairs: [
+        { id: "ph1", target: "Iron, steel, cobalt and nickel", label: "Magnetic materials" },
+        { id: "ph2", target: "A coil wound on a soft iron core that is magnetic only while current flows", label: "Electromagnet" },
+        { id: "ph3", target: "Moving a magnet and a coil relative to each other", label: "Electromagnetic induction" },
+        { id: "ph4", target: "The ratio of the voltages equals the ratio of the numbers of turns", label: "Transformer" },
+        { id: "ph5", target: "Has more turns on the output coil", label: "Step-up transformer" },
+        { id: "ph6", target: "Run from north to south outside the magnet", label: "Field lines" },
+      ],
+    },
+    "electrical-power-and-safety": {
+      title: "Electrical Power and Safety",
+      subtitle: "Sort each statement under Fuse, Earthing or Circuit breaker.",
+      kind: "sort",
+      categories: [
+        { id: "fuse", label: "Fuse" },
+        { id: "earth", label: "Earthing" },
+        { id: "breaker", label: "Circuit breaker" },
+      ],
+      items: [
+        { id: "pi1", label: "A thin wire that melts and breaks the circuit if the current exceeds its rating", category: "fuse" },
+        { id: "pi2", label: "Too small and it blows in normal use", category: "fuse" },
+        { id: "pi3", label: "Too large and it fails to protect", category: "fuse" },
+        { id: "pi4", label: "Connecting a metal case to earth", category: "earth" },
+        { id: "pi5", label: "The current flows safely to earth instead of through the user", category: "earth" },
+        { id: "pi6", label: "A switch that can be reset", category: "breaker" },
+      ],
+    },
+  },
 };
