@@ -237,6 +237,30 @@ export default function ExperimentSandbox({ subjectId, config, lessonExperiment,
   }
   if (!experimentType) experimentType = "flashcard";
 
+  // The tool this tab will actually render, resolved once, before any copy is
+  // chosen — the words must describe the tool that appears.
+  const tool = resolveInteractive(subjectId, experimentType, lessonId);
+
+  // ---- Honest copy. ---------------------------------------------------------
+  // `experimentConfig` came from the generic type library in exactly two cases:
+  // a subject-level lab, and a lesson whose experiment is stored as a bare type
+  // key. That library describes the TOOL ITS TYPE NAMES, which is not always the
+  // tool the student gets: /subject/chemistry announced "Lab Simulation —
+  // Explore chemical reactions and lab procedures interactively" above the
+  // Chemistry Terms flashcard deck, and /subject/information-technology offered
+  // a "Code Playground" over an IT sorting activity.
+  //
+  // DragDropLabel prints its set's own title and subtitle, and FlashcardSystem
+  // prints its deck's own title, so for those tools the type-level copy is a
+  // second, contradicting claim about the same activity. Drop it — the tool
+  // names itself — instead of inventing a replacement description.
+  // A tool that prints no heading of its own (Circuit Builder, Graphing
+  // Calculator, Balance Scale) keeps the type-level copy, which for those is
+  // true of what renders.
+  const toolNamesItself = tool?.type === DragDropLabel || tool?.type === FlashcardSystem;
+  const copyFromTypeLibrary = !lessonExperiment || typeof lessonExperiment === "string";
+  if (toolNamesItself && copyFromTypeLibrary) experimentConfig = null;
+
   function renderInteractive() {
     // Show the experiment context (title/description) above the tool so
     // students know what the activity is about.
@@ -248,8 +272,6 @@ export default function ExperimentSandbox({ subjectId, config, lessonExperiment,
         </div>
       )
       : null;
-
-    const tool = resolveInteractive(subjectId, experimentType, lessonId);
 
     return (
       <div className="exp-play">
