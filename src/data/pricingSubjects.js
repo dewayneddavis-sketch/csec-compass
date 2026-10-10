@@ -53,7 +53,7 @@ export const FALLBACK_SUBJECT_OPTIONS = [
   { id: "social-studies", name: "Social Studies" },
   { id: "spanish", name: "Spanish" },
   { id: "technical-drawing", name: "Technical Drawing" },
-  { id: "theater-arts", name: "Theater Arts" },
+  { id: "theater-arts", name: "Theatre Arts" },
   { id: "visual-arts", name: "Visual Arts" },
 ];
 
