@@ -71,6 +71,14 @@ const EXPECTED = {
   // space, data). Every part asks the candidate to show the working; no City &
   // Guilds paper structure is asserted.
   "city-guilds-mathematics": { items: 6, marks: 90 },
+  // Integrated Science: Paper 02 is 2 hours, PART A = FOUR compulsory structured
+  // questions (Question 1 is always the practical/investigative question) and
+  // PART B = TWO compulsory essays, with no choice anywhere (CXC 23/G/SYLL 09).
+  // Question 1 = 25 marks and question 2 = 15 marks are pinned by the CXC June 2011
+  // Paper 02 exemplars; questions 3 and 4 mirror question 2 and the two essays take
+  // the balance, so the paper totals 100 marks (50 per cent of a 200-mark
+  // examination: Paper 01 = 60 MCQs, SBA = the rest).
+  "integrated-science": { items: 6, marks: 100 },
 };
 
 // Section weights of the shared Modern Languages Paper 02 (CXC 27/O/SYLL 15), in
@@ -79,6 +87,23 @@ const EXPECTED = {
 const MODERN_LANGUAGES = {
   french: [30, 30, 20, 20],
   spanish: [30, 30, 20, 20],
+};
+
+// Per-question marks and the section split of a paper whose shape the total alone
+// cannot catch, in paper order. Integrated Science is asserted because the syllabus
+// splits its paper differently from the other sciences: PART A holds FOUR structured
+// questions (question 1 being the practical/investigative one, 25 marks, pinned by
+// the June 2011 exemplar) and PART B holds TWO essays, so the split is 4 A + 2 B and
+// not the 3 + 3 of Physics, Chemistry and Biology. A bank that quietly became 3 + 3
+// would still total 100 marks and would still pass every structural check.
+const PAPER02_STRUCTURE = {
+  "integrated-science": {
+    weights: [25, 15, 15, 15, 15, 15],
+    sections: [
+      "Section A", "Section A", "Section A", "Section A",
+      "Section B", "Section B",
+    ],
+  },
 };
 
 const shapes = { withParts: 0, flat: 0 };
@@ -181,6 +206,20 @@ for (const subject of SUBJECTS) {
     check(
       weights === modernLanguageWeights.join("/"),
       `sections are ${modernLanguageWeights.join("/")} in paper order (found ${weights})`
+    );
+  }
+
+  const structure = PAPER02_STRUCTURE[subject];
+  if (structure) {
+    const weights = items.map((item) => item.marks || 0).join("/");
+    check(
+      weights === structure.weights.join("/"),
+      `question marks are ${structure.weights.join("/")} in paper order (found ${weights})`
+    );
+    const sections = items.map((item) => item.section).join("/");
+    check(
+      sections === structure.sections.join("/"),
+      `paper split is ${structure.sections.join("/")} (found ${sections})`
     );
   }
 

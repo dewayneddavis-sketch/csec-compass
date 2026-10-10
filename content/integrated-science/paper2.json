@@ -1,0 +1,723 @@
+[
+  {
+    "id": "is-p2-01",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "Practical investigation: which surface is heated best by the Sun?",
+    "topic": "is-l5-3",
+    "commandWords": [
+      "Plot",
+      "State",
+      "Explain",
+      "Suggest"
+    ],
+    "marks": 25,
+    "suggestedMinutes": 30,
+    "source": "A student in Montego Bay investigates how the colour of a surface affects the rate at which water is heated by the Sun.\n\nTwo identical metal cans are used. One can is painted matt black and the other is painted gloss white. Each can is filled with 500 cm3 of water at the same starting temperature. Both cans are placed side by side on the same bench in full sunlight at 10:00 a.m. A thermometer is placed in the water in each can and the temperature of the water in each can is read every 5 minutes for 40 minutes. The water in each can is stirred gently just before each reading is taken.\n\nTABLE 1\nTime (minutes) | 0 | 5 | 10 | 15 | 20 | 25 | 30 | 35 | 40\nWater in the matt black can (degrees Celsius) | 28 | 34 | 40 | 45 | 49 | 52 | 54 | 56 | 57\nWater in the gloss white can (degrees Celsius) | 28 | 31 | 33 | 35 | 37 | 38 | 39 | 40 | 40\n\nThe temperature of the air in the shade is 30 degrees Celsius and does not change during the investigation.",
+    "prompt": "Answer ALL parts. Use the data in Table 1 and the graph you draw. Give the unit with every answer, and read values from your graph, not from the table, where the question asks you to.",
+    "planningHints": [
+      "Put time on the x-axis and temperature on the y-axis, so that the steepness of each line shows how fast that can of water is warming.",
+      "Plot both sets of points on the same grid, use a different line style or symbol for each can, and add a key.",
+      "Choose scales that use at least half of the grid in both directions, and label each axis with the quantity and its unit.",
+      "To read a temperature at a time that is not in Table 1, go up from that time on the x-axis to the curve and then across to the y-axis.",
+      "For the temperature rise in part (i), subtract the starting temperature from the final temperature for each can."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Plot a graph, on the same grid, of the temperature of the water in each can (y-axis) against time (x-axis). Label both axes with the quantity and its unit, give the graph a title, choose scales that use at least half of the grid, plot both sets of points accurately, join each set of points with a single smooth curve or straight line, and add a key to show which line is which.",
+        "marks": 7,
+        "modelAnswer": "Axes: time in minutes on the x-axis (0 to 40) and temperature of the water in degrees Celsius on the y-axis (about 25 to 60). Scales: for example 5 minutes per large square on the x-axis and 5 degrees Celsius per large square on the y-axis, so that the points fill more than half of the grid. Title: 'Temperature of the water in a matt black can and a gloss white can against time'. All 18 points (9 for each can) are plotted accurately, each set of points is joined with one smooth curve or one straight line of best fit, and a key or two labelled lines show which curve is the black can and which is the white can.",
+        "markScheme": [
+          "L - labels: 1 mark for both axes labelled with the quantity and the unit (time in minutes on the x-axis, temperature in degrees Celsius on the y-axis).",
+          "S - scales: 1 mark for scales that are linear, clearly marked and that use at least half of the grid in both directions.",
+          "T - title: 1 mark for a title that names what was measured and what was changed, for example 'Temperature of the water in a black can and a white can against time'.",
+          "P - plotting: 3 marks for accurately plotted points - 18 or 17 points correct, 3 marks; 16 to 14 correct, 2 marks; 13 to 11 correct, 1 mark; 10 or fewer correct, 0 marks.",
+          "C - curves and key: 1 mark for joining each set of points with a single smooth curve or straight line and for a key or labels that identify the two lines."
+        ],
+        "commandWords": [
+          "Plot",
+          "Draw"
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Use your graph to state the temperature of the water in the matt black can after 12 minutes.",
+        "marks": 1,
+        "modelAnswer": "About 42 degrees Celsius. The curve for the black can passes between the 10-minute reading of 40 degrees Celsius and the 15-minute reading of 45 degrees Celsius, so at 12 minutes it reads about 42 degrees Celsius.",
+        "markScheme": [
+          "1 mark for a value read from the graph between 42 and 44 degrees Celsius, given with the unit.",
+          "Do not accept 40 or 45 degrees Celsius taken straight from Table 1: this part asks for a reading from the graph between the plotted points."
+        ],
+        "commandWords": [
+          "Read",
+          "State"
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Name the process by which the water in the cans gains energy from the Sun, and name the type of energy that the water gains.",
+        "marks": 2,
+        "modelAnswer": "The energy reaches the cans from the Sun by radiation: the Sun gives out infra-red radiation, which travels through space and through air and does not need a material to pass through. The water gains thermal (heat) energy, which is shown by the rise in its temperature.",
+        "markScheme": [
+          "1 mark for 'radiation' (accept 'infra-red radiation').",
+          "1 mark for 'thermal energy' or 'heat energy'."
+        ],
+        "commandWords": [
+          "Name",
+          "State"
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Explain why the water in the matt black can becomes hotter than the water in the gloss white can.",
+        "marks": 2,
+        "modelAnswer": "A matt black surface absorbs infra-red radiation much better than a white surface does, so more of the Sun's energy is taken in by the black can and passed on to the water. A gloss white surface reflects most of the radiation that falls on it, so much less energy is absorbed and the water in the white can warms more slowly. After 40 minutes the black can is therefore 17 degrees Celsius hotter than the white can.",
+        "markScheme": [
+          "1 mark for stating that a matt black surface absorbs radiation well (or that a gloss white surface reflects most of the radiation that falls on it).",
+          "1 mark for linking the larger amount of energy absorbed to the higher or faster rise in the temperature of the water."
+        ],
+        "commandWords": [
+          "Explain"
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "State the independent variable and ONE variable that the student kept constant in this investigation.",
+        "marks": 2,
+        "modelAnswer": "Independent variable: the colour of the surface of the can, which is matt black for one can and gloss white for the other. A variable that was kept constant: the volume of water in each can, which was 500 cm3.",
+        "markScheme": [
+          "1 mark for the independent variable - the colour of the surface of the can.",
+          "1 mark for ONE controlled variable, for example the volume of water, the starting temperature of the water, the type and size of the can, or the place and time at which the cans stood in the sunlight."
+        ],
+        "commandWords": [
+          "State"
+        ]
+      },
+      {
+        "label": "(f)",
+        "prompt": "The student wants the results to be more reliable. Suggest ONE change the student should make and say how it would improve the results.",
+        "marks": 1,
+        "modelAnswer": "The student should repeat the whole investigation (or repeat each reading) and work out an average temperature for each can at each time. Averaging several sets of readings reduces the effect of any one odd or inaccurate reading, so the pattern in the results can be trusted more.",
+        "markScheme": [
+          "1 mark for repeating the investigation or the readings and averaging the results, together with the reason that this reduces the effect of chance or of an inaccurate reading.",
+          "Do not accept 'repeat the experiment' on its own, with no mention of averaging or of checking the readings."
+        ],
+        "commandWords": [
+          "Suggest"
+        ]
+      },
+      {
+        "label": "(g)",
+        "prompt": "The student keeps both cans in the Sun for a further 40 minutes. Suggest why the temperature of the water in the black can stops rising, and state what would be seen if both cans were then moved into a shaded room for 40 minutes.",
+        "marks": 2,
+        "modelAnswer": "The temperature stops rising when the water is losing thermal energy to its surroundings as fast as it gains energy from the Sun: the can loses energy by radiation, by conduction to the bench and by convection to the air, and once the loss equals the gain the temperature no longer changes. In a shaded room the water in both cans loses energy to the cooler air around it, so the temperature of the water in both cans falls; the black can cools fastest, because a matt black surface is also a good emitter of radiation.",
+        "markScheme": [
+          "1 mark for stating that the temperature stops rising when the energy lost to the surroundings equals the energy gained from the Sun (thermal balance).",
+          "1 mark for stating that both temperatures fall in the shade and that the matt black can cools faster because a matt black surface also emits radiation well."
+        ],
+        "commandWords": [
+          "Suggest",
+          "State"
+        ]
+      },
+      {
+        "label": "(h)",
+        "prompt": "A solar water heater on a Caribbean roof is painted matt black and has a sheet of glass over it. Suggest TWO reasons why the glass sheet helps the water in the heater to become hot.",
+        "marks": 2,
+        "modelAnswer": "The glass lets the Sun's radiation through to the black surface but traps the warm air inside, so much less energy is carried away by convection and by conduction to the moving air outside. The glass also keeps a layer of warm air next to the black surface, and this warm air passes its energy to the water in the pipe, so the water is heated faster and reaches a higher temperature.",
+        "markScheme": [
+          "1 mark for each sensible reason, maximum 2 marks.",
+          "Accept: the glass traps a layer of warm air and stops it blowing away, so less energy is lost by convection; the glass lets the Sun's radiation in but reduces the infra-red radiation lost from the warm surface; the air inside the heater becomes hotter than the outside air, so the water is heated more quickly.",
+          "Do not accept a reason that says the glass itself heats the water, and do not award a second mark for repeating the same idea."
+        ],
+        "commandWords": [
+          "Suggest"
+        ]
+      },
+      {
+        "label": "(i)",
+        "prompt": "Using Table 1, state the temperature rise of the water in the matt black can and the temperature rise of the water in the gloss white can over the 40 minutes.",
+        "marks": 2,
+        "modelAnswer": "Matt black can: the water rises from 28 degrees Celsius to 57 degrees Celsius, a rise of 29 degrees Celsius. Gloss white can: the water rises from 28 degrees Celsius to 40 degrees Celsius, a rise of 12 degrees Celsius.",
+        "markScheme": [
+          "1 mark for the rise of the black can - 29 degrees Celsius (57 minus 28), with the unit.",
+          "1 mark for the rise of the white can - 12 degrees Celsius (40 minus 28), with the unit."
+        ],
+        "commandWords": [
+          "State",
+          "Calculate"
+        ]
+      },
+      {
+        "label": "(j)",
+        "prompt": "The student's house has a flat roof that becomes very hot in the afternoon. Using the results of this investigation, suggest TWO changes to the roof or to the house that would help to keep the inside of the house cooler, and give a reason for each change.",
+        "marks": 2,
+        "modelAnswer": "Paint the roof gloss white or cover it with a light, shiny reflecting surface: a light surface reflects most of the Sun's radiation instead of absorbing it, so less energy reaches the rooms below. Fit vents or fans in the roof space: warm air can then escape by convection instead of passing its energy down through the ceiling, which keeps the rooms cooler.",
+        "markScheme": [
+          "1 mark for each change given with a reason, maximum 2 marks.",
+          "Accept: paint the roof white or a light colour, because a light surface reflects the Sun's radiation; use a shiny or reflective roofing material for the same reason; keep air flowing through the roof space so that warm air leaves by convection; fit light-coloured blinds or curtains so that less radiation enters through the windows.",
+          "Do not accept a change with no reason, or a reason that contradicts Table 1 (for example painting the roof matt black)."
+        ],
+        "commandWords": [
+          "Suggest",
+          "Explain"
+        ]
+      },
+      {
+        "label": "(k)",
+        "prompt": "The student repeats the investigation on a cloudy day. State TWO differences that the student would expect in the results, and explain why they would occur.",
+        "marks": 2,
+        "modelAnswer": "On a cloudy day much less radiation reaches the cans, so both cans warm more slowly and the highest temperature reached by the water in both cans is lower than on a sunny day. Because less radiation is falling on the cans, the extra energy that the black surface can absorb is also smaller, so the difference in temperature between the two cans after the same time is smaller.",
+        "markScheme": [
+          "1 mark for stating that both cans warm more slowly or reach a lower final temperature, because less radiation reaches them.",
+          "1 mark for stating that the difference between the two cans is smaller, because there is less radiation for the black surface to absorb more of than the white surface."
+        ],
+        "commandWords": [
+          "State",
+          "Explain"
+        ]
+      }
+    ],
+    "examinerTips": "Question 1 is always the practical/investigative question on this paper. When you are asked to read a value from a graph, draw the vertical line up from the time and the horizontal line across to the axis, and give the unit with your answer. In parts asking for a variable, use the words independent (the one you change) and controlled (the ones you keep the same)."
+  },
+  {
+    "id": "is-p2-02",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "Cells: two slides under the microscope",
+    "topic": "is-l2-1",
+    "commandWords": [
+      "Name",
+      "State",
+      "Explain",
+      "Suggest"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 18,
+    "source": "A student prepares two slides for the microscope.\n\nSlide A is made from a thin piece of a water plant that has been kept in bright sunlight. Slide B is made from cells scraped gently from the inside of the student's own cheek. A drop of iodine solution is added to Slide A before the cover slip is put on, and a different stain is added to Slide B.\n\nUnder the microscope the student sees that:\n- the cells on Slide A are regular in shape and arranged in rows, with a clear outer line, green oval structures and one large space filled with fluid;\n- the cells on Slide B have irregular shapes, no outer line and no green structures, and each has a small structure near its centre.\n\nThe cells on Slide A look firm and closely packed. A second slide made from the same cheek sample is left open on the bench for 20 minutes, and when it is looked at again the cells have lost their shape.",
+    "prompt": "Answer ALL parts. Write in clear sentences and use the correct scientific terms.",
+    "planningHints": [
+      "Compare the two slides part by part: outer covering, shape, green structures and the large space.",
+      "Photosynthesis happens in the green structures, so only the cells that have them can make food.",
+      "When a cell gains water it becomes firm (turgid); when it loses water it becomes limp (flaccid).",
+      "For the reasons in part (g), think about surface area and about replacing damaged cells."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Name the structure that forms the clear outer line of the cells on Slide A, and state the main material it is made of.",
+        "marks": 2,
+        "modelAnswer": "The structure is the cell wall, which is made mainly of cellulose. It is strong and gives the plant cell its regular shape.",
+        "markScheme": [
+          "1 mark for 'cell wall'.",
+          "1 mark for 'cellulose'."
+        ],
+        "commandWords": [
+          "Name",
+          "State"
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "State TWO structures that are present in the cells on Slide A but not in the cells on Slide B.",
+        "marks": 2,
+        "modelAnswer": "The cells on Slide A have a cell wall and green oval structures called chloroplasts. They also have one large permanent vacuole filled with cell sap, which the cheek cells do not have.",
+        "markScheme": [
+          "1 mark for each correct structure, maximum 2 marks.",
+          "Accept: cell wall; chloroplast (the green structure that traps light energy for photosynthesis); a large permanent vacuole (accept 'a large space filled with fluid' or 'a large sap-filled space').",
+          "Do not accept nucleus, cytoplasm or cell membrane, because these are present in both kinds of cell."
+        ],
+        "commandWords": [
+          "State"
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Explain why no green structures were seen in the cells on Slide B.",
+        "marks": 2,
+        "modelAnswer": "The cells on Slide B are animal cells, and animal cells do not contain chloroplasts. Chloroplasts are needed to trap light energy for photosynthesis, and animal cells cannot make their own food: the student obtains food ready-made by eating it, so the cheek cells have no need of chloroplasts.",
+        "markScheme": [
+          "1 mark for stating that the cells on Slide B are animal cells and that animal cells do not contain chloroplasts.",
+          "1 mark for explaining that these cells cannot make food by photosynthesis, so they obtain food ready-made and do not need chloroplasts."
+        ],
+        "commandWords": [
+          "Explain"
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Name the process by which the green structures in the cells on Slide A make food.",
+        "marks": 1,
+        "modelAnswer": "Photosynthesis. Light energy trapped by the green structures is used to combine carbon dioxide and water to make a sugar, and oxygen is released.",
+        "markScheme": [
+          "1 mark for 'photosynthesis'."
+        ],
+        "commandWords": [
+          "Name"
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "A few cells from Slide A are placed in distilled water. After 10 minutes the cells look firmer and more swollen than before. Explain what has happened to these cells.",
+        "marks": 2,
+        "modelAnswer": "Water moved into the cells through the partially permeable cell membrane by osmosis, from the distilled water outside the cell, where the water is more concentrated, into the cell sap inside, where it is less concentrated. The extra water presses the cytoplasm outwards against the cell wall, and because the cell wall is strong it stops the cell bursting, so the cell becomes firm (turgid).",
+        "markScheme": [
+          "1 mark for stating that water moved into the cell through the partially permeable membrane (by osmosis), because the water outside was more concentrated than the cell sap inside.",
+          "1 mark for explaining that the extra water presses the cytoplasm against the strong cell wall, which stops the cell bursting and keeps it firm (turgid)."
+        ],
+        "commandWords": [
+          "Explain"
+        ]
+      },
+      {
+        "label": "(f)",
+        "prompt": "The student used a stain on Slide A before looking at it. Suggest why a stain was used, and state ONE safety precaution the student should take when using stains.",
+        "marks": 2,
+        "modelAnswer": "The stain makes the structures in the cells, such as the cell wall, the nucleus and the starch grains, much easier to see: without a stain most of the parts of a cell are almost colourless and have very little contrast against their background. A sensible precaution is to handle the stain carefully and wear gloves, because many microscope stains can irritate or mark the skin, and to wash off any spill at once.",
+        "markScheme": [
+          "1 mark for stating that the stain makes the cell structures easier to see (it adds contrast or colour to the parts of the cell).",
+          "1 mark for ONE sensible safety precaution, for example wearing gloves, keeping the stain away from the eyes, washing any spill off the skin at once, or handling the stain carefully because it can irritate or stain the skin."
+        ],
+        "commandWords": [
+          "Suggest",
+          "State"
+        ]
+      },
+      {
+        "label": "(g)",
+        "prompt": "The lining of the mouth is made of many small cells rather than one large cell. Suggest TWO reasons why many small cells are more useful here.",
+        "marks": 2,
+        "modelAnswer": "Many small cells give the lining a large total surface area compared with its volume, so substances can move into and out of the lining quickly. Each small cell is also short from one side to the other, so materials reach every part of the cell quickly; and if some cells are damaged, they can be replaced without the whole lining being lost.",
+        "markScheme": [
+          "1 mark for each sensible reason, maximum 2 marks.",
+          "Accept: many small cells give a larger surface area for the exchange, absorption or secretion of substances; the distance a substance has to travel into or out of the cell is short; damaged cells can be replaced without losing the whole lining.",
+          "Do not accept a reason that is not linked to surface area, transport or the replacement of cells."
+        ],
+        "commandWords": [
+          "Suggest"
+        ]
+      },
+      {
+        "label": "(h)",
+        "prompt": "The second slide from Slide B was left open on the bench and its cells lost their shape. Explain why this happened, and state what would have happened to the cells on Slide A if they had been left in the same way.",
+        "marks": 2,
+        "modelAnswer": "The cheek cells were left in the air, so water was lost from them to the air by evaporation. Without enough water the thin cell membrane cannot keep the cell firm, so the cells collapse and lose their shape. Cells from Slide A would also lose water and become limp (flaccid), but because they have a strong cell wall they would keep their shape much longer and would not collapse.",
+        "markScheme": [
+          "1 mark for stating that the cheek cells lost water to the air, and that without water the thin membrane cannot keep the cell firm, so the cells collapse.",
+          "1 mark for stating that plant cells would also lose water and become flaccid, but the cell wall keeps their shape so they do not collapse."
+        ],
+        "commandWords": [
+          "Explain",
+          "State"
+        ]
+      }
+    ],
+    "examinerTips": "Answer the command word you are given: name and state need one short answer, explain needs a reason, and suggest needs an idea you can justify. In this paper the cells being compared are plant cells on one slide and animal cells on the other, so the cell wall, the chloroplasts and the large vacuole belong to one slide only."
+  },
+  {
+    "id": "is-p2-03",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "Obtaining three substances from a mixture",
+    "topic": "is-l3-2",
+    "commandWords": [
+      "Name",
+      "Explain",
+      "Suggest"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 18,
+    "source": "A student is given a beaker containing a dry mixture of sand, table salt and small iron filings, and is asked to obtain a dry sample of each of the three substances.\n\nThe apparatus available is: a bar magnet, a sheet of paper, water, a beaker, a glass rod, a funnel, filter paper, a conical flask, an evaporating dish, a tripod, a gauze, a Bunsen burner and a heat-proof mat.",
+    "prompt": "Answer ALL parts. Name the method you would use at each step and explain your answers in full sentences.",
+    "planningHints": [
+      "Deal with the iron first: it is the only substance in the mixture that a magnet will attract.",
+      "Salt dissolves in water and sand does not, so water separates those two.",
+      "Every insoluble solid separated from a liquid leaves the solid on the filter paper and the liquid in the flask.",
+      "Evaporate the water gently and let the dish cool, so that the salt crystals are not lost."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Name the method the student should use to remove the iron filings from the mixture.",
+        "marks": 1,
+        "modelAnswer": "Magnetic separation: the iron filings are picked up by the bar magnet, which should be wrapped in paper or in a thin plastic bag so that the filings can be shaken off easily afterwards.",
+        "markScheme": [
+          "1 mark for 'magnetic separation' (accept 'using a magnet' or 'using magnetism')."
+        ],
+        "commandWords": [
+          "Name"
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain why this method removes the iron filings but leaves the sand and the salt behind.",
+        "marks": 2,
+        "modelAnswer": "Iron is a magnetic material, so the filings are attracted to the magnet and can be lifted out of the mixture. Sand and salt are not magnetic, so the magnet has no effect on them and they stay in the beaker.",
+        "markScheme": [
+          "1 mark for stating that iron is magnetic, so the filings are attracted to the magnet and can be removed.",
+          "1 mark for stating that sand and salt are not magnetic, so they are not attracted and are left behind."
+        ],
+        "commandWords": [
+          "Explain"
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "The student now adds water to the remaining mixture and stirs it well. Name the method used to separate the sand from the salt solution, and name the piece of apparatus that holds the filter paper.",
+        "marks": 2,
+        "modelAnswer": "The sand and the salt solution are separated by filtration. The filter paper is folded and placed in a funnel, which is held over a conical flask so that the liquid that passes through the paper is collected.",
+        "markScheme": [
+          "1 mark for 'filtration'.",
+          "1 mark for 'funnel'."
+        ],
+        "commandWords": [
+          "Name"
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Explain why the sand stays on the filter paper while the salt solution passes through it.",
+        "marks": 2,
+        "modelAnswer": "The filter paper has very small holes in it. The grains of sand are much bigger than these holes, so the grains are trapped on the paper. When the salt dissolves, it breaks up into particles that are far too small to be trapped, so the salt solution passes through the paper with the water and is collected below.",
+        "markScheme": [
+          "1 mark for stating that the grains of sand are too large to pass through the tiny holes in the filter paper, so they are trapped on it.",
+          "1 mark for stating that the dissolved salt is in the form of very small particles that pass through the holes with the water."
+        ],
+        "commandWords": [
+          "Explain"
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "Name the liquid collected in the flask below the funnel.",
+        "marks": 1,
+        "modelAnswer": "The filtrate: a solution of salt in water.",
+        "markScheme": [
+          "1 mark for 'filtrate' (accept 'the salt solution')."
+        ],
+        "commandWords": [
+          "Name"
+        ]
+      },
+      {
+        "label": "(f)",
+        "prompt": "Name the method the student should use to obtain dry salt from this salt solution.",
+        "marks": 1,
+        "modelAnswer": "Evaporation: the solution is poured into an evaporating dish and heated gently until the water has evaporated, leaving crystals of salt behind.",
+        "markScheme": [
+          "1 mark for 'evaporation' (accept 'crystallisation' or 'evaporating the water off')."
+        ],
+        "commandWords": [
+          "Name"
+        ]
+      },
+      {
+        "label": "(g)",
+        "prompt": "The student heats the salt solution in an evaporating dish and then leaves the dish to cool. Explain why the dish should not be heated until it is completely dry.",
+        "marks": 2,
+        "modelAnswer": "If the dish is heated until every drop of water has gone, the salt can spit out of the dish as the crystals form, so some of the sample is lost and the student would not obtain the dry salt that was asked for. Heating strongly can also crack the evaporating dish. The solution should be heated gently, and the dish left to cool so that the dry crystals of salt are left in the dish.",
+        "markScheme": [
+          "1 mark for stating that salt can spit out of the dish (or be lost) if the solution is heated until it is completely dry.",
+          "1 mark for stating that strong heating can crack the dish, or that the solution should be heated gently and the dish left to cool so that the crystals stay in the dish."
+        ],
+        "commandWords": [
+          "Explain"
+        ]
+      },
+      {
+        "label": "(h)",
+        "prompt": "The salt solution is a mixture and not a compound. Give ONE piece of evidence for this from the investigation.",
+        "marks": 1,
+        "modelAnswer": "The salt and the water can be separated by a physical method: when the water is evaporated the salt is left behind, unchanged. The salt and the water were therefore not chemically joined together, which is what makes the solution a mixture.",
+        "markScheme": [
+          "1 mark for stating that the salt and the water can be separated by a physical method (evaporation, or boiling off the water) and that the salt is recovered unchanged, which shows that the parts are not chemically combined."
+        ],
+        "commandWords": [
+          "Give"
+        ]
+      },
+      {
+        "label": "(i)",
+        "prompt": "The student adds salt to 50 cm3 of water at room temperature, a little at a time, until no more will dissolve. Explain what the student sees, and state what the solution is now called.",
+        "marks": 2,
+        "modelAnswer": "At first the salt dissolves and the solution is clear. Once no more salt will dissolve, the extra salt settles at the bottom of the beaker and stays there however long the mixture is stirred. The solution is now saturated: it holds as much dissolved salt as it can at that temperature.",
+        "markScheme": [
+          "1 mark for describing what is seen - undissolved salt remains at the bottom of the beaker even after stirring.",
+          "1 mark for naming the solution 'saturated' (a saturated solution)."
+        ],
+        "commandWords": [
+          "Explain",
+          "State"
+        ]
+      },
+      {
+        "label": "(j)",
+        "prompt": "The student started with 20 g of the dry mixture and obtained 6 g of dry salt. Suggest ONE reason why the mass of salt obtained may be less than the mass of salt that was in the mixture.",
+        "marks": 1,
+        "modelAnswer": "Some of the salt was lost during the investigation: solution was left behind on the glass rod, in the beaker or in the flask, or a little was spilt when the solution was poured from one container to another.",
+        "markScheme": [
+          "1 mark for stating that some salt was lost during the investigation, for example solution left on the glass rod or in the flask, solution spilt, or some solution still not evaporated when the dish was left to cool."
+        ],
+        "commandWords": [
+          "Suggest"
+        ]
+      }
+    ],
+    "examinerTips": "Every part of this question expects the method to be named AND the reason to be given, so say what you would do first and then why it works. Remember that dissolving is not melting: the salt dissolves in the water at room temperature, and the water can be evaporated off to recover it."
+  },
+  {
+    "id": "is-p2-04",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "Pressure, area and the grip of a tyre",
+    "topic": "is-l4-2",
+    "commandWords": [
+      "State",
+      "Calculate",
+      "Explain",
+      "Suggest"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 18,
+    "source": "A farmer loads sacks of fertiliser onto a small trailer that is pulled by a tractor. The total weight of the loaded trailer is 6 000 N, and the trailer rests on two wheels. Before any planks are used, the area of the tyre of each wheel that is in contact with the soft, wet soil is 150 cm2.\n\nTo stop the trailer sinking into the soil, the farmer places two strong planks on the ground and drives the trailer onto them. The wheels of the loaded trailer now rest on a total area of 1.2 m2 of plank.\n\nThe farmer also looks at the tractor's tyres before setting off. The tread of each tyre has deep grooves cut into it.",
+    "prompt": "Answer ALL parts. Show all working in the calculations, and give the unit with every answer.",
+    "planningHints": [
+      "Pressure = force / area, and the force is the weight pressing down on the ground.",
+      "Both wheels touch the ground, so add the two contact areas together, and change square centimetres to square metres (1 m2 = 10 000 cm2).",
+      "Use the same equation for the planks, with the larger area from the question.",
+      "In the explanation, compare the two pressures you calculated and say which one the wet soil can support."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "State the equation that links pressure, force and area, and state the unit of pressure.",
+        "marks": 2,
+        "modelAnswer": "Pressure = force / area, written P = F / A, where the force acts at right angles to the surface. The unit of pressure is the pascal (Pa), which is one newton per square metre (1 N/m2).",
+        "markScheme": [
+          "1 mark for 'pressure = force / area'.",
+          "1 mark for 'pascal (Pa)' or 'newton per square metre (N/m2)'."
+        ],
+        "commandWords": [
+          "State"
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Calculate the pressure that the loaded trailer exerts on the soft soil before the planks are used. Give your answer in pascals.",
+        "marks": 2,
+        "modelAnswer": "Area of contact of both wheels = 2 x 150 cm2 = 300 cm2. Since 1 m2 = 10 000 cm2, 300 cm2 = 300 / 10 000 = 0.03 m2. Pressure = force / area = 6 000 N / 0.03 m2 = 200 000 Pa.",
+        "markScheme": [
+          "1 mark for the correct total area in square metres - 0.03 m2 (accept 300 cm2 correctly converted, or both contact areas added).",
+          "1 mark for the correct pressure with the unit - 200 000 Pa (accept 200 kPa)."
+        ],
+        "commandWords": [
+          "Calculate"
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Calculate the pressure on the soil once the loaded trailer is resting on the planks.",
+        "marks": 2,
+        "modelAnswer": "The weight of the loaded trailer is still 6 000 N, and the wheels now rest on 1.2 m2 of plank. Pressure = force / area = 6 000 N / 1.2 m2 = 5 000 Pa.",
+        "markScheme": [
+          "1 mark for using the total area of 1.2 m2 in the calculation.",
+          "1 mark for the correct pressure with the unit - 5 000 Pa (accept 5 kPa)."
+        ],
+        "commandWords": [
+          "Calculate"
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Explain, using your two answers, why the planks stop the wheels from sinking into the wet soil.",
+        "marks": 2,
+        "modelAnswer": "The weight pressing on the soil is 6 000 N whether or not the planks are used, but with the planks that force is spread over the much larger area of 1.2 m2 instead of 0.03 m2, so the pressure falls from 200 000 Pa to 5 000 Pa. Wet soil can support a pressure of 5 000 Pa without being pushed aside, but not 200 000 Pa, so with the planks the wheels no longer sink.",
+        "markScheme": [
+          "1 mark for stating that the force (weight) is the same but the area is much larger, so the pressure is much smaller.",
+          "1 mark for comparing the two values, or stating that the smaller pressure is one that the wet soil can support, so the wheels do not sink."
+        ],
+        "commandWords": [
+          "Explain"
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "Name the force that the ground exerts upwards on the wheels of the stationary trailer.",
+        "marks": 1,
+        "modelAnswer": "The reaction force of the ground on the wheels (also called the normal contact force). It is equal to the weight of the loaded trailer while the trailer is at rest.",
+        "markScheme": [
+          "1 mark for 'reaction force', 'the upward force of the ground on the wheels', or 'normal contact force'."
+        ],
+        "commandWords": [
+          "Name"
+        ]
+      },
+      {
+        "label": "(f)",
+        "prompt": "State ONE useful effect and ONE unwanted effect of friction between the tyres and the road.",
+        "marks": 2,
+        "modelAnswer": "Useful: friction between the tyres and the road gives the tyres grip, so the tractor can start moving, steer and stop, and can pull the trailer without the wheels sliding. Unwanted: friction between the tyres and the road wears the tread away and heats the tyres, and friction in the moving parts of the tractor wastes energy, so more fuel is used.",
+        "markScheme": [
+          "1 mark for a useful effect, for example grip for starting, steering or braking, or stopping the wheels from sliding.",
+          "1 mark for an unwanted effect, for example the tyres wearing out or heating up, energy being wasted as heat, or more fuel being needed."
+        ],
+        "commandWords": [
+          "State"
+        ]
+      },
+      {
+        "label": "(g)",
+        "prompt": "The tread of the tractor's tyres has deep grooves in it. Explain how the grooves help the tractor on a wet road.",
+        "marks": 2,
+        "modelAnswer": "The grooves give the water on the road somewhere to go, so the water is pushed out from between the tyre and the road as the wheel rolls. The rubber tread then stays in contact with the road instead of riding on a film of water, so there is more friction between the tyre and the road and the tractor is much less likely to slide when it starts or stops.",
+        "markScheme": [
+          "1 mark for stating that the grooves allow water to escape from between the tyre and the road, so the tyre does not ride on a film of water.",
+          "1 mark for linking the contact between the rubber and the road to greater friction (more grip), so the tractor is less likely to skid."
+        ],
+        "commandWords": [
+          "Explain"
+        ]
+      },
+      {
+        "label": "(h)",
+        "prompt": "The sacks of fertiliser are taken off the trailer, which is then left standing on the planks. State what happens to the pressure on the soil and explain your answer.",
+        "marks": 2,
+        "modelAnswer": "The pressure becomes smaller. The force pressing on the soil is now only the weight of the empty trailer, while the area of the planks in contact with the soil is unchanged. Since pressure = force / area, a smaller force acting over the same area gives a smaller pressure.",
+        "markScheme": [
+          "1 mark for stating that the pressure decreases.",
+          "1 mark for explaining that the force (weight) has decreased while the area stays the same, so pressure = force / area gives a smaller value."
+        ],
+        "commandWords": [
+          "State",
+          "Explain"
+        ]
+      }
+    ],
+    "examinerTips": "Calculations here earn marks for the working as well as the answer, so write the equation, substitute the values with their units, and only then give the result. Watch the units: the contact area of a tyre is given in cm2, and 10 000 cm2 is 1 m2."
+  },
+  {
+    "id": "is-p2-05",
+    "type": "write",
+    "paper": 2,
+    "section": "Section B",
+    "title": "Essay: keeping waste out of a community's river and coast",
+    "topic": "is-l6-3",
+    "commandWords": [
+      "Describe",
+      "Discuss",
+      "Explain"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 18,
+    "source": "A coastal community in Jamaica has about 4 000 people, one river that flows into the sea, and one open dump where household waste is left.\n\nHeavy rain washes waste from the dump and from the streets into the river, and some households empty their waste water straight into the river. Fishing in the river and off the shore is an important source of food and income for families, and many people also use the river for washing and for bathing.\n\nIn recent years more waste has been reaching the coast, and people in the community say that the fish catch has become smaller.",
+    "prompt": "Answer this question in continuous prose. Write in sentences and paragraphs and use the scientific terms you have learnt. Do not simply write a list of points.",
+    "planningHints": [
+      "Plan before you write: part (a) asks for what you know, and part (b) asks you to apply it to this community.",
+      "In part (a), for each way the river becomes polluted say where the pollution comes from, what gets into the water, and how it affects people's health.",
+      "In part (b), each measure needs three things: what the community would do, how it works, and the benefit to the community.",
+      "Use paragraphs. Marks are given for scientific content and for the reasons you give, not for the length of your answer."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Describe TWO different ways in which the water of the river in this community can become polluted, and state the main effect of each pollutant on the health of the people who use the river.",
+        "marks": 6,
+        "modelAnswer": "One way the river becomes polluted is from the waste water that some households empty straight into it. This waste water contains sewage, that is the faeces and urine of the household, and with it bacteria that cause disease. People who drink the river water, or who wash and bathe in it, can take in those bacteria and become ill with diseases such as diarrhoea, typhoid and cholera.\n\nThe second way is from the open dump. When heavy rain falls, run-off carries household rubbish - plastic bottles and bags, tins, and food waste - out of the dump and into the river. The bacteria that grow in the rotting food waste cause the same water-borne diseases, while the plastic and tins injure people who walk barefoot on the shore, trap water where mosquitoes breed, and the mosquitoes then spread dengue fever in the community.",
+        "markScheme": [
+          "1 mark for naming a source of pollution - for example household waste water emptied into the river, rubbish washed out of the open dump by rain, or farm chemicals washed off the land.",
+          "1 mark for naming what enters the river from that source - for example sewage (faeces and urine) and the bacteria it carries, plastic and household rubbish, or pesticides and fertiliser.",
+          "1 mark for the effect of that pollutant on health - for example sewage in the water spreads diseases such as diarrhoea, typhoid and cholera when people drink it or wash in it.",
+          "1 mark for naming a second source of pollution (which must be different from the first).",
+          "1 mark for naming what enters the river from the second source.",
+          "1 mark for the effect of the second pollutant on health - for example rubbish that injures people and gives mosquitoes breeding places, so dengue fever spreads; or pesticides that build up in the fish people eat and make them ill (up to a maximum of 6 marks)."
+        ],
+        "commandWords": [
+          "Describe",
+          "State"
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Discuss THREE practical measures that this community could take to reduce the amount of waste reaching the river and the coast. For each measure, explain how it works and state the benefit to the community.",
+        "marks": 9,
+        "modelAnswer": "One practical measure is a weekly collection of household waste, with the rubbish carried to a properly managed landfill or recycling centre instead of being left at the open dump. This works because the waste is removed from the community altogether, so there is nothing beside the river for the rain to wash in. The benefit is a cleaner river and shore, which protects the fish catch that families depend on for food and income.\n\nA second measure is to put a roof over the dump and to store waste in covered bins inside a fenced compound. This works because rain can no longer fall on the waste and carry it away as run-off, and the fence keeps wind-blown plastic out of the water. The benefit is less waste reaching the coast, so the beach stays clean and safer for the children who play there.\n\nA third measure is to plant trees, grass and other plants in a strip along the river bank, and to educate households and schools about waste through community meetings and school projects. The plants slow the rainwater down and trap the rubbish and soil it is carrying, so less of it reaches the river, while teaching people to bag and store their waste properly stops the dumping at its source. The benefit is a river that is safer to wash and bathe in, so there is less sickness in the community.",
+        "markScheme": [
+          "1 mark for each clearly described practical measure, maximum 3 marks: for example a weekly household waste collection with the rubbish taken to a managed landfill or recycling centre; covered bins and a roof over the dump so that rain cannot wash waste into the river; a community recycling or bottle-return scheme; a community agreement (or by-law) against emptying waste water into the river; planting trees and grass along the river bank to trap rubbish; and education through community meetings and school projects.",
+          "1 mark for each explanation of how the measure works, maximum 3 marks: for example the waste is removed from the community, so there is nothing for the rain to wash in; the rain cannot reach the waste and wind-blown plastic is kept out; the plants slow the run-off and trap the rubbish and soil it carries; people change what they do when they understand where the waste ends up.",
+          "1 mark for each benefit to the community, maximum 3 marks: for example a cleaner river and coast; a better fish catch for food and income; a safer place for people to wash and bathe, so less water-borne disease; a clean beach for children and for visitors.",
+          "Do not award a mark for a measure that could not be carried out in this community as described, and do not award a second mark for repeating the same measure, explanation or benefit (up to a maximum of 9 marks)."
+        ],
+        "commandWords": [
+          "Discuss",
+          "Explain",
+          "State"
+        ]
+      }
+    ],
+    "examinerTips": "In a Part B essay the examiner is looking for science that is used, not just named. Write the measure, then how it works, then the benefit - three sentences per measure, or one well-built paragraph. Link your points back to the river and the coast of this community rather than writing about pollution in general."
+  },
+  {
+    "id": "is-p2-06",
+    "type": "write",
+    "paper": 2,
+    "section": "Section B",
+    "title": "Essay: food, energy and the school day",
+    "topic": "is-l2-2",
+    "commandWords": [
+      "Describe",
+      "Explain",
+      "Suggest"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 18,
+    "source": "A 15-year-old student leaves home at 6:30 a.m. for school without eating breakfast. At break the student buys a sweet fizzy drink and a bag of crisps. Lunch is rice with fried chicken, and on the way home the student buys a patty and another sweet drink.\n\nThe student often feels tired during the afternoon lessons and finds it hard to concentrate. In the evening the family eats a large meal of rice, peas and fried fish, and the student goes to sleep at about 11:00 p.m. after about an hour of homework.",
+    "prompt": "Answer this question in continuous prose. Write in sentences and paragraphs and use the correct scientific terms. Do not simply write a list of points.",
+    "planningHints": [
+      "In part (a), take the food through the body in order: the mouth, the stomach, the small intestine, the blood, the cells.",
+      "Name the processes as you go: chewing, digestion by enzymes, absorption, transport in the blood, and respiration in the cells.",
+      "In part (b), make each point link three things: what the student does, why it affects the body, and what to change.",
+      "Use the word energy correctly: the student feels tired when too little glucose reaches the cells, not because food is 'energy in the stomach'."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Describe how the food this student eats is broken down, how the nutrients reach the cells of the body, and how the cells use the nutrients to release energy.",
+        "marks": 6,
+        "modelAnswer": "Food is first broken into smaller pieces by the teeth and mixed with saliva, which begins the digestion of starch. It passes down the oesophagus into the stomach, where it is churned and mixed with acid, and then into the small intestine. There enzymes from the pancreas and from the wall of the small intestine break the food down chemically into substances that can be absorbed: starch into glucose, protein into amino acids, and fat into fatty acids and glycerol.\n\nThese digested substances are absorbed through the wall of the small intestine, which has many finger-like villi that give it a large surface area. They pass into the blood and are carried around the body in the circulatory system to every cell; oxygen is carried to the cells at the same time by the red blood cells.\n\nInside the cells, glucose reacts with oxygen in respiration. Energy is released for the cell's activities, such as muscle contraction and growth, and carbon dioxide and water are produced as waste products, which are carried away by the blood and removed by the lungs and kidneys.",
+        "markScheme": [
+          "1 mark for stating that food is broken down by chewing and by enzymes (chemical digestion) into substances the body can absorb: starch into glucose, protein into amino acids, and fat into fatty acids and glycerol.",
+          "1 mark for naming where this happens - the mouth, the stomach and the small intestine, with enzymes from the pancreas and from the wall of the small intestine.",
+          "1 mark for stating that the digested food is absorbed through the wall of the small intestine (through the villi) into the blood.",
+          "1 mark for stating that the blood carries glucose and the other nutrients to the cells of the body, and that oxygen is carried by the red blood cells.",
+          "1 mark for stating that the cells use glucose and oxygen together in respiration to release energy.",
+          "1 mark for stating that carbon dioxide and water are produced as waste products and are carried away by the blood (up to a maximum of 6 marks)."
+        ],
+        "commandWords": [
+          "Describe"
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Explain THREE ways in which this student's daily diet and routine are likely to affect the student's health or performance at school, and suggest ONE change for each.",
+        "marks": 9,
+        "modelAnswer": "Missing breakfast means that no new glucose reaches the blood during the morning. The glucose already in the blood is used up by the muscles and the brain, and if too little is left the student feels tired and cannot concentrate in the afternoon. The change is to eat breakfast, for example fruit with bread and an egg or cheese, so that the body has a steady supply of glucose through the morning.\n\nMuch of what the student buys during the day is sweet fizzy drink, crisps and fried food. These foods contain a lot of sugar, salt and fat but few of the vitamins and minerals the body needs, so the diet is not balanced. Sugar is absorbed quickly, which gives a short burst of energy followed by a sudden drop, and the extra energy in the fat is stored, so the student may become overweight. The change is to replace the sweet drinks with water or milk and to eat more fruit and vegetables, so the body gets the nutrients it needs with less sugar and fat.\n\nThe student also eats a large meal late in the evening and sleeps only about seven hours, going to bed at 11:00 p.m. A large meal just before sleep is hard to digest and the short night's sleep leaves the student tired the next day, which makes the poor concentration worse. The change is to eat the main meal earlier in the evening and to go to bed earlier, so that the student is rested and ready for school.",
+        "markScheme": [
+          "1 mark for each effect described, maximum 3 marks: for example missing breakfast means little glucose reaches the cells, so the student feels tired and cannot concentrate; sweet drinks and crisps give a lot of sugar, salt and fat but few nutrients, so the diet is not balanced; the extra energy in fried food and large meals can make the student overweight; a large meal late in the evening and only about seven hours of sleep make the tiredness worse.",
+          "1 mark for each explanation of why the effect happens, maximum 3 marks: for example the cells need glucose and oxygen for respiration to release energy, and without enough glucose the brain and muscles cannot work well; sugar is absorbed quickly, so the energy comes in a short burst and then falls; energy that is not used is stored as fat; sleep is needed for the body to rest and recover.",
+          "1 mark for each sensible change suggested, maximum 3 marks: for example eat breakfast (fruit and bread with an egg or cheese); replace sweet drinks with water or milk; eat more fruit, vegetables and peas and less fried food; eat the main meal earlier in the evening; go to bed earlier so that the student gets enough sleep.",
+          "Do not award a change that is not linked to one of the effects, and do not award more than 3 marks in any one of the three groups (up to a maximum of 9 marks)."
+        ],
+        "commandWords": [
+          "Explain",
+          "Suggest"
+        ]
+      }
+    ],
+    "examinerTips": "Describe and explain are different jobs: describe says what happens, explain says why it happens, using the science. Follow the food through the body in order in part (a), and keep part (b) tied to the student in the passage rather than to diet in general."
+  }
+]

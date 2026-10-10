@@ -88,6 +88,14 @@ Rules the content guarantees (validated at authoring time):
 - Caribbean History `paper2.json`: 9 items, 270 marks total — 3 questions in each of
   Sections A, B and C at 30 marks each, matching the real Paper 02 (2 h 10 min), in which
   the candidate answers one question from each section.
+- Integrated Science `paper2.json`: 6 items, 100 marks total — the real Paper 02 shape
+  (CXC 23/G/SYLL 09): 2 hours, **Part A = FOUR compulsory structured questions, Question 1
+  always the practical/investigative one, and Part B = TWO compulsory essays**, no choice.
+  Question marks 25 + 15 + 15 + 15 + 15 + 15; Question 1 = 25 and Question 2 = 15 are
+  pinned by CXC's June 2011 Paper 02 exemplars, Questions 3-4 mirror Question 2 and the two
+  essays take the balance, so the paper is 100 marks (50 per cent of the examination, whose
+  published profile weighting for Paper 02 is Knowledge and Comprehension 17 / Use of
+  Knowledge 29 / Practical Skills 4, i.e. 34 / 58 / 8 marks — asserted by the generator).
 - Neither file replaces `practice.json` (the 100-question multiple-choice bank, which the
   Mock Exam also reads) or `knowledge-check.json` (the 25-question end-of-course check).
 
