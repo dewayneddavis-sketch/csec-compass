@@ -136,6 +136,124 @@ export const lessonSets = {
         { id: "s5", target: "The formation of a new species over time", label: "Speciation" },
       ],
     },
+    // ---- coverage-gap lessons (task 33b20aee, owner ruling 2026-10-08) ----
+    // Nutrition & Digestion - match each enzyme or nutrient to its job.
+    "nutrition-and-digestion": {
+      title: "Enzymes and Nutrients",
+      subtitle: "Drag each enzyme or nutrient to what it does.",
+      kind: "match",
+      pairs: [
+        { id: "nd1", target: "Digests starch, starting in the mouth", label: "Amylase" },
+        { id: "nd2", target: "Digests proteins into amino acids", label: "Protease" },
+        { id: "nd3", target: "Digests fats into fatty acids and glycerol", label: "Lipase" },
+        { id: "nd4", target: "Emulsifies fats; made by the liver and stored in the gall bladder", label: "Bile" },
+        { id: "nd5", target: "Prevents scurvy", label: "Vitamin C" },
+        { id: "nd6", target: "Needed to make haemoglobin, so a shortage causes anaemia", label: "Iron" },
+        { id: "nd7", target: "Adds bulk to the food, so it prevents constipation", label: "Dietary fibre" },
+      ],
+    },
+    // Transport and Growth in Plants - match each tissue or process to its description.
+    "transport-and-growth-in-plants": {
+      title: "Transport in Plants",
+      subtitle: "Drag each plant tissue or process to its description.",
+      kind: "match",
+      pairs: [
+        { id: "tp1", target: "Carries water and minerals up from the roots", label: "Xylem" },
+        { id: "tp2", target: "Carries dissolved food such as sucrose and amino acids", label: "Phloem" },
+        { id: "tp3", target: "Long and narrow, giving a large surface area for absorbing water", label: "Root hair cell" },
+        { id: "tp4", target: "Loss of water vapour from the leaves through the stomata", label: "Transpiration" },
+        { id: "tp5", target: "Plant hormone that controls the direction of growth", label: "Auxin" },
+      ],
+    },
+    // Breathing and Gas Exchange - match each part to its function.
+    "breathing-and-gas-exchange": {
+      title: "Parts of the Breathing System",
+      subtitle: "Drag each part of the breathing system to its function.",
+      kind: "match",
+      pairs: [
+        { id: "bg1", target: "Thin-walled air sacs where gas exchange happens", label: "Alveoli" },
+        { id: "bg2", target: "Closes over the trachea when you swallow", label: "Epiglottis" },
+        { id: "bg3", target: "Muscle that flattens when you inhale", label: "Diaphragm" },
+        { id: "bg4", target: "The windpipe, carrying air to the two bronchi", label: "Trachea" },
+        { id: "bg5", target: "Fine airways branching from the bronchi", label: "Bronchioles" },
+      ],
+    },
+    // Nervous System and Sense Organs - match each part to its role.
+    "nervous-system-and-sense-organs": {
+      title: "Nervous System and the Eye",
+      subtitle: "Drag each part to its correct role.",
+      kind: "match",
+      pairs: [
+        { id: "ns1", target: "The basic unit of the nervous system; carries impulses", label: "Neuron" },
+        { id: "ns2", target: "Controls balance and coordination", label: "Cerebellum" },
+        { id: "ns3", target: "Controls automatic processes such as heart rate and breathing", label: "Medulla" },
+        { id: "ns4", target: "A rapid, automatic protective response to a stimulus", label: "Reflex action" },
+        { id: "ns5", target: "Controls how much light enters the eye", label: "Iris" },
+        { id: "ns6", target: "Receptors in the retina that detect colour", label: "Cones" },
+        { id: "ns7", target: "Hormone that produces the 'fight or flight' response", label: "Adrenaline" },
+      ],
+    },
+    // Disease and Pathogens - sort each disease into the correct group.
+    "disease-and-pathogens": {
+      title: "Communicable or Non-communicable?",
+      subtitle: "Sort each disease into the correct group.",
+      kind: "sort",
+      categories: [
+        { id: "comm", label: "Communicable" },
+        { id: "non", label: "Non-communicable" },
+      ],
+      items: [
+        { id: "dp1", label: "Influenza (flu) - a virus", category: "comm" },
+        { id: "dp2", label: "Cholera - a bacterium spread by contaminated water", category: "comm" },
+        { id: "dp3", label: "Malaria - Plasmodium, spread by the Anopheles mosquito", category: "comm" },
+        { id: "dp4", label: "Dengue fever - a virus spread by Aedes aegypti", category: "comm" },
+        { id: "dp5", label: "Heart disease", category: "non" },
+        { id: "dp6", label: "Diabetes", category: "non" },
+        { id: "dp7", label: "Asthma", category: "non" },
+      ],
+    },
+    // Body Defences and Immunity - match each defence to what it does.
+    "body-defences-and-immunity": {
+      title: "Body Defences",
+      subtitle: "Drag each defence to what it does.",
+      kind: "match",
+      pairs: [
+        { id: "bi1", target: "A tough physical barrier that keeps pathogens out", label: "Skin" },
+        { id: "bi2", target: "Engulfs and digests pathogens", label: "Phagocyte" },
+        { id: "bi3", target: "Produces antibodies against a specific antigen", label: "Lymphocyte" },
+        { id: "bi4", target: "Gives immunity without causing the disease", label: "Vaccination" },
+        { id: "bi5", target: "Works on bacteria but not on viruses", label: "Antibiotic" },
+      ],
+    },
+    // Reproduction and Development - match each part or process to its description.
+    "reproduction-and-development": {
+      title: "Reproduction and Development",
+      subtitle: "Drag each part or process to its description.",
+      kind: "match",
+      pairs: [
+        { id: "rd1", target: "Produce sperm", label: "Testes" },
+        { id: "rd2", target: "Release eggs", label: "Ovaries" },
+        { id: "rd3", target: "Where the fetus develops", label: "Uterus" },
+        { id: "rd4", target: "Exchanges oxygen, nutrients and waste between mother and fetus", label: "Placenta" },
+        { id: "rd5", target: "Carries the male gamete in a flowering plant", label: "Pollen grain" },
+        { id: "rd6", target: "Asexual reproduction: one parent, identical offspring", label: "Budding in yeast" },
+      ],
+    },
+    // Living Things and Classification - order the classification groups.
+    "classification-of-living-things": {
+      title: "Order the Classification Groups",
+      subtitle: "Arrange the groups from largest (Kingdom) to smallest (Species).",
+      kind: "order",
+      items: [
+        { id: "cl1", label: "Kingdom", order: 1 },
+        { id: "cl2", label: "Phylum", order: 2 },
+        { id: "cl3", label: "Class", order: 3 },
+        { id: "cl4", label: "Order", order: 4 },
+        { id: "cl5", label: "Family", order: 5 },
+        { id: "cl6", label: "Genus", order: 6 },
+        { id: "cl7", label: "Species", order: 7 },
+      ],
+    },
   },
 
   // --------------------------------------------------- INFORMATION TECHNOLOGY
