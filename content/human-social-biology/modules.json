@@ -20,12 +20,24 @@
                 "experiment": {
                     "type": "matching-game",
                     "description": "The Skeletal and Muscular Systems: Match each structure to its function."
-                }
+                },
+                "figures": [
+                    {
+                        "src": "/content/human-social-biology/figures/hsb-skeleton.svg",
+                        "alt": "A labelled human skeleton: the axial skeleton (skull, vertebral column and rib cage) and the appendicular skeleton (the limbs and their girdles) are marked with numbers 1 to 5, beside a key naming each part and a section through a long bone showing the bone marrow inside it.",
+                        "caption": "The adult skeleton has 206 bones: the axial parts support and protect, the appendicular parts move the body."
+                    },
+                    {
+                        "src": "/content/human-social-biology/figures/hsb-joints-and-muscles.svg",
+                        "alt": "Three panels: a ball-and-socket joint at the shoulder or hip that moves in many directions beside a hinge joint at the elbow or knee that moves in one direction, then the biceps and triceps as an antagonistic pair with the arm bent and with the arm straight, then the striped skeletal muscle, the branching cardiac muscle and the smooth muscle.",
+                        "caption": "A muscle can only pull, so the biceps and triceps take turns: one contracts as the other relaxes."
+                    }
+                ]
             },
             {
                 "id": "hsb-l1-2",
                 "title": "Circulatory and Respiratory Systems",
-                "content": "The human circulatory system consists of the heart, blood vessels, and blood. Its functions are to transport oxygen, nutrients, hormones, and waste products; to regulate body temperature; and to defend against disease. The heart is a muscular pump with four chambers: right atrium, right ventricle, left atrium, and left ventricle. The septum separates the left and right sides, preventing oxygenated and deoxygenated blood from mixing.\n\nThe pathway of blood: Deoxygenated blood from the body \u2192 vena cava \u2192 right atrium \u2192 right ventricle \u2192 pulmonary artery \u2192 lungs (picks up oxygen) \u2192 pulmonary vein \u2192 left atrium \u2192 left ventricle \u2192 aorta \u2192 body. Key points: the right side handles deoxygenated blood, the left side handles oxygenated blood. Arteries carry blood AWAY from the heart (usually oxygenated, except the pulmonary artery); veins carry blood TOWARD the heart (usually deoxygenated, except the pulmonary vein).\n\nBlood vessels: Arteries have thick, muscular, elastic walls to withstand high pressure; veins have thinner walls with valves to prevent backflow; each heartbeat sends a pressure wave along the arteries, which is felt as the 'pulse' and can be counted at the wrist or the neck to measure the heart rate; capillaries are one-cell thick for efficient exchange of materials. Blood components: Red blood cells (carry oxygen via haemoglobin), White blood cells (fight infection), Platelets (clotting), and Plasma (transports dissolved substances).",
+                "content": "The human circulatory system consists of the heart, blood vessels, and blood. Its functions are to transport oxygen, nutrients, hormones, and waste products; to regulate body temperature; and to defend against disease. The heart is a muscular pump with four chambers: right atrium, right ventricle, left atrium, and left ventricle. The septum separates the left and right sides, preventing oxygenated and deoxygenated blood from mixing.\n\nThe pathway of blood: Deoxygenated blood from the body \u2192 vena cava \u2192 right atrium \u2192 right ventricle \u2192 pulmonary artery \u2192 lungs (picks up oxygen) \u2192 pulmonary vein \u2192 left atrium \u2192 left ventricle \u2192 aorta \u2192 body. Key points: the right side handles deoxygenated blood, the left side handles oxygenated blood. Arteries carry blood AWAY from the heart (usually oxygenated, except the pulmonary artery); veins carry blood TOWARD the heart (usually deoxygenated, except the pulmonary vein).\n\nBlood vessels: Arteries have thick, muscular, elastic walls to withstand high pressure; veins have thinner walls with valves to prevent backflow; each heartbeat sends a pressure wave along the arteries, which is felt as the 'pulse' and can be counted at the wrist or the neck to measure the heart rate; capillaries are one-cell thick for efficient exchange of materials. Blood components: Red blood cells (carry oxygen via haemoglobin), White blood cells (fight infection), Platelets (clotting), and Plasma (transports dissolved substances). In the lungs the airways end in tiny air sacs called alveoli, and each alveolus is wrapped in capillaries: this is where gaseous exchange takes place, with oxygen moving from the air in the alveolus into the blood and carbon dioxide, which is carried in the plasma, moving from the blood into the alveolus to be breathed out. Breathing in is called inhalation, and it is the diaphragm \u2014 the dome-shaped muscle below the lungs \u2014 that contracts and moves down so that air is drawn in.",
                 "objectives": [
                     "Identify parts of the human heart",
                     "Trace the path of blood through the body"
@@ -39,7 +51,19 @@
                 "experiment": {
                     "type": "interactive-pathway",
                     "description": "Heart and Lungs: Arrange the route of blood through the heart and lungs in order."
-                }
+                },
+                "figures": [
+                    {
+                        "src": "/content/human-social-biology/figures/hsb-heart-and-double-circulation.svg",
+                        "alt": "A labelled section through the heart showing the four chambers divided by the septum, with arrows tracing deoxygenated blood from the vena cava through the right side to the lungs and oxygenated blood from the lungs through the left side to the aorta, beside a comparison of artery, vein and capillary walls.",
+                        "caption": "Do not mix the sides: the right side of the heart carries deoxygenated blood, the left side oxygenated."
+                    },
+                    {
+                        "src": "/content/human-social-biology/figures/hsb-blood-and-gas-exchange.svg",
+                        "alt": "Four panels: sections through an artery with a thick muscular wall, a vein with a thinner wall and a capillary whose wall is one cell thick; a length of vein showing valve cusps that stop blood flowing backwards; the components of blood as plasma, red blood cells, white blood cells and platelets; and the lungs above the dome-shaped diaphragm beside one alveolus with its capillary, showing oxygen moving into the blood and carbon dioxide moving out.",
+                        "caption": "Arteries carry blood away from the heart under high pressure, veins carry it back with valves, and capillaries exchange materials."
+                    }
+                ]
             },
             {
                 "id": "hsb-l1-3",
@@ -132,7 +156,7 @@
             {
                 "id": "hsb-l2-1",
                 "title": "Cell Structure and Function",
-                "content": "The cell is the basic unit of life. All living organisms are made of one or more cells. Eukaryotic cells, such as those in humans, contain specialised structures called 'organelles' that perform specific tasks. Key organelles include the 'Nucleus' (which contains genetic material), 'Mitochondria' (the site of energy production), 'Ribosomes' (where proteins are made), and the 'Cell Membrane' (which controls what enters and leaves the cell).\n\nThe human body contains many 'specialised cells' that are adapted for specific functions. For example, red blood cells are disc-shaped and lack a nucleus to maximise oxygen transport; sperm cells have a tail for swimming; and nerve cells are long and thin to transmit electrical signals over distances. Groups of similar cells working together form 'tissues,' and different tissues work together to form 'organs.'\n\nIn the CSEC HSB exam, you must be able to identify organelles in plant and animal cells and relate their structure to their function. You will also learn about the different levels of organisation in the body, from cells to tissues, organs, and systems. Understanding cell biology is the foundation for all other topics in human and social biology.",
+                "content": "The cell is the basic unit of life. All living organisms are made of one or more cells. Eukaryotic cells, such as those in humans, contain specialised structures called 'organelles' that perform specific tasks. Key organelles include the 'Nucleus' (which contains genetic material), 'Mitochondria' (the site of energy production), 'Ribosomes' (where proteins are made), and the 'Cell Membrane' (which controls what enters and leaves the cell).\n\nThe human body contains many 'specialised cells' that are adapted for specific functions. For example, red blood cells are disc-shaped and lack a nucleus to maximise oxygen transport; sperm cells have a tail for swimming; and nerve cells are long and thin to transmit electrical signals over distances. Groups of similar cells working together form 'tissues,' and different tissues work together to form 'organs.'\n\nIn the CSEC HSB exam, you must be able to identify organelles in plant and animal cells and relate their structure to their function. You will also learn about the different levels of organisation in the body, from cells to tissues, organs, and systems. Understanding cell biology is the foundation for all other topics in human and social biology. Plant cells carry the same basic parts, but they also have a cell wall of cellulose outside the cell membrane, green chloroplasts, and a large central vacuole that animal cells do not have.",
                 "objectives": [
                     "Identify organelles in plant and animal cells",
                     "Relate cell structure to function"
@@ -148,7 +172,19 @@
                 "experiment": {
                     "type": "matching-game",
                     "description": "Cell Structure: Match each cell part to its function."
-                }
+                },
+                "figures": [
+                    {
+                        "src": "/content/human-social-biology/figures/hsb-plant-and-animal-cell.svg",
+                        "alt": "A labelled plant cell beside a labelled animal cell: both have a nucleus, cytoplasm, a cell membrane, mitochondria and ribosomes, while only the plant cell has a cell wall, chloroplasts and a large central vacuole.",
+                        "caption": "Animal cells have no cell wall, no chloroplasts and no large central vacuole."
+                    },
+                    {
+                        "src": "/content/human-social-biology/figures/hsb-specialised-cells.svg",
+                        "alt": "Diagrams of three specialised cells \u2014 a disc-shaped red blood cell with no nucleus, a sperm cell with a tail for swimming, and a long thin nerve cell \u2014 above the levels of organisation, cells to tissues to organs to systems.",
+                        "caption": "Similar cells working together form a tissue; different tissues form an organ."
+                    }
+                ]
             },
             {
                 "id": "hsb-l2-2",
