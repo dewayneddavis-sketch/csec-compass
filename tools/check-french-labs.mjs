@@ -145,7 +145,7 @@ check(perLesson !== -1 && deckFallback !== -1 && perLesson < deckFallback,
   "the per-lesson lookup runs BEFORE the subject-deck fallback");
 check(!/if \(subjectId === "french"\)/.test(sandbox),
   "no earlier french branch shadows the per-lesson lookup");
-check(sandbox.includes("Theater Arts, and French"),
+check(sandbox.includes("Theatre Arts, and French"),
   "the routing comment lists French among the per-lesson subjects");
 check(!sandbox.includes("any other subject (french,"),
   "french is no longer described as falling through to the subject deck");

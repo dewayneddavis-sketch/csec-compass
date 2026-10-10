@@ -178,7 +178,7 @@ function resolveInteractive(subjectId, experimentType, lessonId) {
   // ---- every other subject that has per-lesson lab sets (the newer subjects:
   //      Caribbean History, Integrated Science, Agriculture, Food & Nutrition,
   //      Technical Drawing, Physical Education, Clothing Textile & Fashion,
-  //      Principles of Business, EDPM, Visual Arts, Theater Arts, and French
+  //      Principles of Business, EDPM, Visual Arts, Theatre Arts, and French
   //      (all 18 lessons). Each lesson resolves to its OWN topic-matched set
   //      via lessonSets[subject][lessonId].
   //      A subject-level lab (no lessonId) keeps that subject's own deck, so no
