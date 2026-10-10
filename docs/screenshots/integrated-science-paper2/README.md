@@ -16,14 +16,24 @@ only difference between them is the presence of the bank file — that is the pr
 tab is data-driven rather than hard-coded. The third frame is captured logged out, so
 it also proves this PR did **not** widen access to anything.
 
-## Honest note on the fourth frame (the open bank)
+## `after-paper2-bank-open.png` — captured with the gate bypassed for the shot only
 
-A frame showing the bank *rendered* (6 questions / 100 marks, Part A and Part B groups,
-the item picker) needs the purchase gate bypassed, because the Paper 2 panel only
-renders for an account with access (`SubjectPage.jsx`: `activeTab === "paper2" && (paid ? …)`),
-and `paid` comes from a verified server answer, not from anything a browser can set.
-Two attempts at that frame stalled in the browser driver on this box (a `timeout`-guarded
-third attempt is included in the run, and any frame it produced is listed above).
+Showing the bank *rendered* (its 6-question header, its per-question mark budget, the
+Part A / Part B groups, the item picker) requires the purchase gate bypassed, because the
+Paper 2 panel only renders for an account with access
+(`SubjectPage.jsx`: `activeTab === "paper2" && (paid ? …)`) and `paid` comes from a
+verified server answer, not from anything a browser can set. For that one frame the pure
+predicate in `src/data/access.js` was given a temporary `return true; // SCREENSHOT-ONLY`,
+the tree was rebuilt, and the frame was taken; the patch was then **reverted**
+(`grep -c SCREENSHOT-ONLY src/data/access.js` → `0`, `git diff -- src api` → empty) and the
+honest tree rebuilt. Two earlier attempts at this frame stalled in the browser driver on
+this box; the `timeout`-guarded attempt completed.
+
+The frame shows the Paper 2 tab selected and, under the heading
+**“CSEC Paper 2 — typed answers, self-assessed”**, the honest copy
+(“Paper 2 questions cannot be multiple-choice: you have to write… **Nothing here is
+auto-marked** — your tick count is a study aid, not a grade.”) and the bank's own
+header line **“6 questions · 100 marks in total · each question shows its own time budget.”**
 
 The bank's own content is nevertheless proven without a bypass, and more strongly:
 
