@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { lessonSets } from "./lessonSets";
 import { getLabWorking } from "../data/mathWorking";
+import { FALLBACK_SUBJECT_OPTIONS } from "../data/pricingSubjects";
 import MathWorkingReveal from "./MathWorkingReveal";
 import { useAuth } from "../context/AuthContext";
 import { recordLabComplete } from "../data/labActivity";
@@ -688,6 +689,27 @@ function ord(n) {
   return s[n - 1] || `${n}th`;
 }
 
+// A subject that has no lab set of its own gets this honest panel. It never
+// substitutes another subject's activity: borrowing English A's "Match Literary
+// Devices" for a Human & Social Biology student taught the wrong subject.
+function SubjectLabUnavailable({ subjectId }) {
+  const subject = FALLBACK_SUBJECT_OPTIONS.find((s) => s.id === subjectId);
+  const name = subject?.name || subjectId;
+  const hasLessonLabs = !!(lessonSets[subjectId] && Object.keys(lessonSets[subjectId]).length);
+  return (
+    <div className="dd-unavailable">
+      <div className="dd-header">
+        <h4>{name} lab</h4>
+        <p>
+          {hasLessonLabs
+            ? `This subject's interactive labs live inside its lessons — open a lesson and use its Play tab for that topic's activity.`
+            : `An interactive lab for ${name} isn't available yet.`}
+        </p>
+      </div>
+    </div>
+  );
+}
+
 export default function DragDropLabel({ subjectId, experimentType, lessonId }) {
   const { session } = useAuth();
   // Resolve per lesson: subjects with per-lesson sets match on lessonId first,
@@ -701,14 +723,19 @@ export default function DragDropLabel({ subjectId, experimentType, lessonId }) {
   } else if (subjectTypeSets[subjectId] && subjectTypeSets[subjectId][experimentType]) {
     set = subjectTypeSets[subjectId][experimentType];
   } else {
-    set = subjectSets[subjectId] || subjectSets["english-a"];
+    // The subject-level set, and ONLY that subject's set. A subject with no set
+    // of its own must never be shown another subject's activity — this used to
+    // fall back to subjectSets["english-a"], which put English A's "Match
+    // Literary Devices" on the Human & Social Biology subject page. `null` sends
+    // it to the honest SubjectLabUnavailable panel below instead.
+    set = subjectSets[subjectId] || null;
   }
 
   const [placed, setPlaced] = useState({});
   const [dragging, setDragging] = useState(null);
-  const shuffled = useState(() => shuffle(
+  const shuffled = useState(() => (set ? shuffle(
     set.kind === "diagram" ? set.labels : (set.kind === "match" ? set.pairs : set.items)
-  ))[0];
+  ) : []))[0];
   const [feedback, setFeedback] = useState("");
   // Wrong-answer reveal: the correct answer + step-by-step maths (Mathematics).
   const [reveal, setReveal] = useState(null);
@@ -797,15 +824,17 @@ export default function DragDropLabel({ subjectId, experimentType, lessonId }) {
     setReveal(null);
   }
 
-  const totalItems = set.kind === "sort"
+  const totalItems = !set ? 0
+    : set.kind === "sort"
     ? set.items.length
     : set.kind === "diagram"
       ? set.labels.length
       : set.kind === "order" ? set.items.length : set.pairs.length;
-  const placedCount = set.kind === "sort"
+  const placedCount = !set ? 0
+    : set.kind === "sort"
     ? Object.values(placed).reduce((s, arr) => s + arr.length, 0)
     : Object.keys(placed).length;
-  const allPlaced = placedCount === totalItems;
+  const allPlaced = !!set && placedCount === totalItems;
 
   // Lab completion for the teacher dashboard. This lab HAS a right answer, so
   // finishing the set is a real completion signal — report it once per solve
@@ -821,6 +850,11 @@ export default function DragDropLabel({ subjectId, experimentType, lessonId }) {
     reportedRef.current = true;
     if (subjectId && lessonId) recordLabComplete(subjectId, lessonId, experimentType, session);
   }, [allPlaced, subjectId, lessonId, experimentType, session]);
+
+  // No set of this subject's own: show the honest panel rather than another
+  // subject's activity. Every hook above has already run, so the hook order is
+  // identical whether or not a set resolved.
+  if (!set) return <SubjectLabUnavailable subjectId={subjectId} />;
 
   // ---- Render ------------------------------------------------------------
   const header = (

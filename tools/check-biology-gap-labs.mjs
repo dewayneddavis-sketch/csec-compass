@@ -161,11 +161,14 @@ check(/lessonId=\{lessonId\}/.test(bioBranch), "the biology branch passes lesson
 const drag = read("src/components/DragDropLabel.jsx");
 const perLesson = drag.indexOf("lessonSets[subjectId] && lessonSets[subjectId][lessonId]");
 const byType = drag.indexOf("subjectTypeSets[subjectId]");
-const subjectWide = drag.indexOf('subjectSets[subjectId] || subjectSets["english-a"]');
+const subjectWide = drag.indexOf("subjectSets[subjectId] || null");
+const borrowed = drag.indexOf('subjectSets[subjectId] || subjectSets["english-a"]');
 check(perLesson !== -1, "DragDropLabel consults lessonSets[subjectId][lessonId]");
-check(byType !== -1 && subjectWide !== -1, "DragDropLabel still has its type and subject-wide fallbacks");
+check(byType !== -1 && subjectWide !== -1, "DragDropLabel still has its type and subject-wide layers");
+check(borrowed === -1,
+    "the subject-wide layer yields NOTHING for a subject with no set of its own — it never borrows English A's set");
 check(perLesson !== -1 && perLesson < byType && perLesson < subjectWide,
-    "the per-lesson set resolves BEFORE the type and subject-wide fallbacks");
+    "the per-lesson set resolves BEFORE the type and subject-wide layers");
 
 console.log(`\ncheck-biology-gap-labs: ${pass} passed, ${fail} failed`);
 process.exit(fail === 0 ? 0 : 1);
