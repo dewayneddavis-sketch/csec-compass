@@ -152,9 +152,12 @@ check(!sandbox.includes("any other subject (french,"),
 // DragDropLabel order: lessonId → (english-a type) → subject type → subject deck
 const dLesson = dragdrop.indexOf("if (lessonSets[subjectId] && lessonSets[subjectId][lessonId])");
 const dType = dragdrop.indexOf("subjectTypeSets[subjectId] && subjectTypeSets[subjectId][experimentType]");
-const dSubject = dragdrop.indexOf("subjectSets[subjectId] || subjectSets[\"english-a\"]");
+const dSubject = dragdrop.indexOf("subjectSets[subjectId] || null");
+const dBorrow = dragdrop.indexOf("subjectSets[subjectId] || subjectSets[\"english-a\"]");
 check(dLesson !== -1 && dType !== -1 && dSubject !== -1, "DragDropLabel keeps all three resolution layers");
 check(dLesson < dType && dType < dSubject, "DragDropLabel resolves lessonId first, subject deck last");
+check(dBorrow === -1,
+  "the subject deck yields nothing for a subject with no set of its own — it never borrows another subject's activity");
 check(!/\bfrench\b/.test(dragdrop.slice(dSubject)),
   "no french entry in the subject-level fallback (a french lesson can never land there)");
 

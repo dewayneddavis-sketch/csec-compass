@@ -29,6 +29,9 @@
 .drag-drop { display: flex; flex-direction: column; gap: 1rem; }
 .dd-header h4 { font-size: 1rem; color: #111827; margin-bottom: 0.25rem; }
 .dd-header p { font-size: 0.85rem; color: #6b7280; }
+/* A subject with no lab set of its own: an honest panel, never another
+   subject's activity. */
+.dd-unavailable { padding: 1rem 1.25rem; background: #f9fafb; border: 1px dashed #d1d5db; border-radius: 12px; }
 .dd-main { display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap; }
 .dd-diagram { flex: 1; min-width: 260px; }
 .dd-svg { width: 100%; max-width: 320px; height: auto; border: 1px solid #e5e7eb; border-radius: 12px; background: #fafafa; }
