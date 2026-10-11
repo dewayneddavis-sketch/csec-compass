@@ -7,8 +7,9 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
   labLessonName, labLessonPath, loadLessonNameIndex, resolveLabLesson,
-  subjectName, experimentLabel,
+  subjectName, experimentLabel, labActivityLabel,
 } from "../src/data/lessonNames.js";
+import { lessonSets } from "../src/components/lessonSets.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 let pass = 0, fail = 0;
@@ -118,13 +119,26 @@ try {
 // ---- experiment type naming ---------------------------------------------
 let typeMap = null;
 try { typeMap = (await import("../src/data/contentLoader.js")).experimentTypes; } catch (e) { console.log("  note: contentLoader not importable in node:", e.message); }
+// contentLoader.js imports ./lessonFigures without an extension, which plain Node ESM refuses, so
+// fall back to reading the SHIPPED map out of the source. Without this the red control below would
+// compare against an empty map and could never fail — a guard that cannot fail proves nothing.
+let typeMapSource = null;
+{
+  const src = read("src/data/contentLoader.js");
+  const re = /"([a-z0-9-]+)"\s*:\s*\{\s*title:\s*"([^"]+)"/g;
+  const found = {};
+  let m;
+  while ((m = re.exec(src))) found[m[1]] = { title: m[2] };
+  if (Object.keys(found).length > 50) typeMapSource = found;
+}
+if (!typeMap && typeMapSource) typeMap = typeMapSource;
 if (typeMap) {
   check(Object.keys(typeMap).length > 50, `the experiment map covers the shipped labs (${Object.keys(typeMap).length} types)`);
   eq(experimentLabel("vocab-flashcards", typeMap), "Flashcard Trainer", "a lab shows the friendly experiment name");
   eq(experimentLabel("circuit-builder", typeMap), "Circuit Builder", "another shipped experiment resolves");
 }
 eq(experimentLabel(null, typeMap), null, "no experiment type renders nothing");
-eq(experimentLabel("mystery-lab", typeMap || {}), "mystery-lab", "an unknown experiment type shows its slug, never a blank");
+eq(experimentLabel("mystery-lab", typeMap || {}), null, "an unknown experiment type shows no label, never the raw slug");
 
 // ---- wiring guards ------------------------------------------------------
 // The Subject -> Module -> Lesson rendering moved into the component the teacher
@@ -137,13 +151,51 @@ check(read("src/pages/ParentPage.jsx").includes("StudentProgressDashboard"), "th
 const api = read("api/analytics/summary.js");
 check(sharedView.includes("labLessonPath(subject.subjectId, l.lessonId, nameIndex)"), "lab rows render the resolved Subject - Module - Lesson path");
 check(!sharedView.includes("</span> {l.lessonId}"), "lab rows no longer print the bare lesson id");
-check(sharedView.includes("experimentLabel(l.experimentType, experimentTypes)"), "lab rows show the experiment name");
+check(sharedView.includes("labActivityLabel("), "lab rows resolve the lab name from the lesson's own set");
+check(!sharedView.includes("experimentLabel(l.experimentType"), "lab rows no longer name the lab from the type map alone");
 check(sharedView.includes("loadLessonNameIndex("), "the dashboard builds the name index from the content tree");
 check(sharedView.includes("subjectName(subject.subjectId, nameIndex)"), "the subject card heading shows the subject name, not the id");
 check(sharedView.includes("no completion recorded"), "the opens-vs-completed explanation is kept");
 check(api.includes("lessonId: row.lesson_id"), "the API still returns the recorded lesson id to resolve");
 check(api.includes("experiment_type") && api.includes("last_activity_at"), "the API still returns the experiment type and timestamp");
 check(api.includes("subject_id") && api.includes("lab_activity"), "the API still returns lab rows keyed by subject");
+
+// ---- the lab name is the one the STUDENT sees ---------------------------
+// The reported symptom: a lesson whose declared experiment.type maps to "Vector Lab" while the
+// Play tab renders a sorting activity. The label must come from the set the student gets.
+const typeFirst = (t, map) => { const e = map && map[t]; return e && e.title ? e.title : null; };
+const typeOfLesson = (subjectId, lessonId) => {
+  const file = `content/${subjectId}/modules.json`;
+  if (!exists(file)) return null;
+  for (const m of readJson(file)) for (const l of m.lessons || []) {
+    if (l.id !== lessonId) continue;
+    const e = l.experiment;
+    if (typeof e === "string") return e;
+    if (e && typeof e.type === "string") return e.type;
+    return null;
+  }
+  return null;
+};
+let pairs = 0, wrongLabel = 0, slugShown = 0, relabelled = 0;
+const shownExamples = [];
+for (const [subj, byLesson] of Object.entries(lessonSets)) {
+  for (const [lessonId, set] of Object.entries(byLesson)) {
+    pairs++;
+    const declared = typeOfLesson(subj, lessonId);
+    const label = labActivityLabel(subj, lessonId, declared, typeMap || {});
+    if (label !== set.title) { wrongLabel++; if (shownExamples.length < 4) shownExamples.push([subj, lessonId, label, set.title]); }
+    if (typeof label === "string" && /^[a-z0-9]+(-[a-z0-9]+)+$/.test(label)) slugShown++;
+    const before = typeFirst(declared, typeMap || {});
+    if (before && before !== label) relabelled++;
+  }
+}
+for (const ex of shownExamples) console.log("  wrong label:", JSON.stringify(ex));
+check(pairs > 30, `every per-lesson lab set is covered (${pairs} lessons)`);
+check(wrongLabel === 0, `the dashboard names the lab the student gets (${wrongLabel} of ${pairs} wrong)`);
+check(slugShown === 0, `no raw type slug reaches the screen (${slugShown} leaked)`);
+check(relabelled > 0, `the guard can fail: ${relabelled} lab rows were previously named from the type map, not the lesson`);
+eq(labActivityLabel("mathematics", "no-such-lesson", "mystery-lab", typeMap || {}), null, "an unresolvable lesson shows no lab name rather than a slug");
+eq(labActivityLabel(null, null, "mystery-lab", typeMap || {}), null, "a row with no subject shows no lab name");
 
 console.log(`\ncheck-teacher-lab-names: ${pass}/${pass + fail} green${fail ? ` (${fail} FAILED)` : ""}`);
 process.exit(fail ? 1 : 0);

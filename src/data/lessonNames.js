@@ -1,4 +1,6 @@
 // Lesson-name resolution for the teacher dashboard.
+import { lessonSets } from "../components/lessonSets.js";
+
 //
 // The platform records lab activity keyed by ids only — (subject_id, lesson_id,
 // experiment_type) — because that is what the lesson page knows. A teacher
@@ -81,12 +83,34 @@ export function labLessonName(subjectId, lessonId, index) {
   return r.lessonTitle || r.lessonId || "unknown lesson";
 }
 
-/** Friendly experiment name ("Flashcard Trainer") instead of the raw slug. */
+/**
+ * Friendly name for a lesson's declared experiment ("Flashcard Trainer") instead of the raw
+ * type slug. An unmapped type yields null: the dashboard would rather say nothing about the
+ * activity than show a teacher a slug like "mystery-lab".
+ */
 export function experimentLabel(experimentType, typeMap) {
   if (!experimentType) return null;
   const entry = typeMap && typeMap[experimentType];
   if (entry && entry.title) return entry.title;
-  return String(experimentType);
+  return null;
+}
+
+/**
+ * The lab activity a student actually gets for one lesson, in the words the student sees.
+ *
+ * A lesson's `experiment.type` says what the lesson asked for, but the Play tab renders the
+ * set resolved by DragDropLabel — lessonSets[subjectId][lessonId] first, then the subject/
+ * type shelves. Reading the type map alone therefore told teachers about an activity their
+ * students might never see (a "Vector Lab" for a lesson that opens as a sorting activity).
+ * The per-lesson set title is the student's own wording, so it wins; the declared experiment
+ * title is the fallback; null means the row shows no lab name at all.
+ */
+export function labActivityLabel(subjectId, lessonId, experimentType, typeMap) {
+  const key = subjectId == null ? null : String(subjectId);
+  const lessonKey = lessonId == null ? null : String(lessonId);
+  const perLesson = key && lessonKey && lessonSets[key] ? lessonSets[key][lessonKey] : null;
+  if (perLesson && perLesson.title) return perLesson.title;
+  return experimentLabel(experimentType, typeMap);
 }
 
 /**

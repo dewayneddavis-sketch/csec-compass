@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { experimentTypes } from "../data/contentLoader";
-import { experimentLabel, labLessonPath, loadLessonNameIndex, subjectName } from "../data/lessonNames";
+import { labActivityLabel, labLessonPath, loadLessonNameIndex, subjectName } from "../data/lessonNames";
 import "../pages/TeacherPage.css";
 
 // The shared progress dashboard body.
@@ -68,6 +68,17 @@ function QuizCells({ subject }) {
   );
 }
 
+/**
+ * The lab activity as the teacher's students experience it: the title of the set the Play tab
+ * renders for this lesson. No per-lesson set and no declared experiment means no label — never
+ * the raw type key.
+ */
+function LabActivityName({ subjectId, lesson }) {
+  const label = labActivityLabel(subjectId, lesson.lessonId, lesson.experimentType, experimentTypes);
+  if (!label) return null;
+  return <span className="tp-lab-type"> · {label}</span>;
+}
+
 function SubjectCard({ subject, nameIndex }) {
   const labs = subject.labs || { opened: 0, completed: 0, lessons: [] };
   const completedLabs = (labs.lessons || []).filter((l) => l.completed);
@@ -94,14 +105,14 @@ function SubjectCard({ subject, nameIndex }) {
             {completedLabs.map((l) => (
               <li key={l.lessonId}>
                 <span className="tp-lab-done">✅</span> {labLessonPath(subject.subjectId, l.lessonId, nameIndex)}
-                {l.experimentType && <span className="tp-lab-type"> · {experimentLabel(l.experimentType, experimentTypes)}</span>}
+                <LabActivityName subjectId={subject.subjectId} lesson={l} />
                 <span className="tp-muted"> · {l.opens}× · completed {formatWhen(l.lastActivityAt)}</span>
               </li>
             ))}
             {openedOnly.map((l) => (
               <li key={l.lessonId}>
                 <span className="tp-lab-open">◻︎</span> {labLessonPath(subject.subjectId, l.lessonId, nameIndex)}
-                {l.experimentType && <span className="tp-lab-type"> · {experimentLabel(l.experimentType, experimentTypes)}</span>}
+                <LabActivityName subjectId={subject.subjectId} lesson={l} />
                 <span className="tp-muted"> · opened {l.opens}× · last {formatWhen(l.lastActivityAt)} (no completion recorded)</span>
               </li>
             ))}
