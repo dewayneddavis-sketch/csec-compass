@@ -79,6 +79,11 @@ const EXPECTED = {
   // the balance, so the paper totals 100 marks (50 per cent of a 200-mark
   // examination: Paper 01 = 60 MCQs, SBA = the rest).
   "integrated-science": { items: 6, marks: 100 },
+  // Human & Social Biology: Paper 02 is 2 hours and SIX compulsory questions of
+  // 15 marks each (six marks in each question are Knowledge and Comprehension,
+  // the other nine Use of Knowledge), so the paper totals 90 marks — the mark
+  // table on page 4 of CXC 35/G/SYLL 09 gives Paper 02 as raw 90 = 36 KC + 54 UK.
+  "human-social-biology": { items: 6, marks: 90 },
 };
 
 // Section weights of the shared Modern Languages Paper 02 (CXC 27/O/SYLL 15), in
@@ -99,6 +104,19 @@ const MODERN_LANGUAGES = {
 const PAPER02_STRUCTURE = {
   "integrated-science": {
     weights: [25, 15, 15, 15, 15, 15],
+    sections: [
+      "Section A", "Section A", "Section A", "Section A",
+      "Section B", "Section B",
+    ],
+  },
+  // Human & Social Biology: Paper 02 is 2 hours, SECTION A = FOUR compulsory
+  // structured questions (one of them investigative/practically oriented) and
+  // SECTION B = TWO compulsory essays, no choice anywhere; EVERY question is
+  // 15 marks, split 6 Knowledge and Comprehension + 9 Use of Knowledge
+  // (CXC 35/G/SYLL 09, "Format of the Examination" and the mark and weighting
+  // table on syllabus page 4: Paper 02 raw score 90 = 36 KC + 54 UK).
+  "human-social-biology": {
+    weights: [15, 15, 15, 15, 15, 15],
     sections: [
       "Section A", "Section A", "Section A", "Section A",
       "Section B", "Section B",

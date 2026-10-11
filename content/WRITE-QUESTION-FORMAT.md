@@ -96,6 +96,14 @@ Rules the content guarantees (validated at authoring time):
   essays take the balance, so the paper is 100 marks (50 per cent of the examination, whose
   published profile weighting for Paper 02 is Knowledge and Comprehension 17 / Use of
   Knowledge 29 / Practical Skills 4, i.e. 34 / 58 / 8 marks — asserted by the generator).
+- Human & Social Biology `paper2.json`: 6 items, 90 marks total — the real Paper 02
+  shape (CXC 35/G/SYLL 09): 2 hours, **Section A = FOUR compulsory structured questions,
+  one of them investigative/practically oriented, and Section B = TWO compulsory
+  essays**, no choice anywhere. Every question is 15 marks, split 6 Knowledge and
+  Comprehension + 9 Use of Knowledge, so the paper is 90 marks = 36 KC + 54 UK: exactly
+  the mark and weighting table on syllabus page 4, where Paper 02 is raw 90 = 36 KC +
+  54 UK (Paper 01 = sixty multiple-choice items, 60 marks; examination 150 = 96 + 54).
+  Asserted by the generator, per question as well as for the whole paper.
 - Neither file replaces `practice.json` (the 100-question multiple-choice bank, which the
   Mock Exam also reads) or `knowledge-check.json` (the 25-question end-of-course check).
 

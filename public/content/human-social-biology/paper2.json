@@ -1,0 +1,684 @@
+[
+  {
+    "id": "hsb-p2-01",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "Practical investigation: water movement in potato tissue",
+    "topic": "hsb-l2-1",
+    "commandWords": [
+      "Name",
+      "State",
+      "Calculate",
+      "Plot",
+      "Explain",
+      "Suggest"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 20,
+    "source": "A student investigates the movement of water into and out of potato tissue.\n\nSix cylinders are cut from the same potato with a cork borer. Each cylinder is 4.00 cm long. Every cylinder is blotted dry on paper towel and weighed; each one has a mass of 4.00 g.\n\nOne cylinder is then placed in each of six beakers. Each beaker contains 50 cm3 of a sugar solution, and the concentration of the sugar solution is different in each beaker. The beakers are left at room temperature for 30 minutes. The solution of concentration 0.0 mol/dm3 is distilled water.\n\nAfter 30 minutes the student takes each cylinder out of its beaker, blots it dry on paper towel and weighs it again. The results are shown in Table 1.\n\nTABLE 1\nConcentration of the sugar solution (mol/dm3) | 0.0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5\nMass of the cylinder before the investigation (g) | 4.00 | 4.00 | 4.00 | 4.00 | 4.00 | 4.00\nMass of the cylinder after 30 minutes (g) | 4.60 | 4.32 | 4.12 | 3.92 | 3.72 | 3.52",
+    "prompt": "Answer ALL parts. Give the unit with every answer, and show your working in any calculation. Read values from your graph, not from the table, where the question asks you to.",
+    "planningHints": [
+      "The cylinder gains mass when water moves into its cells and loses mass when water moves out, so a negative change means water has left the tissue.",
+      "Percentage change in mass = (change in mass / mass at the start) x 100, and the mass at the start is 4.00 g for every cylinder.",
+      "Put the concentration of the sugar solution on the x-axis and the percentage change in mass on the y-axis, so that the slope of the line shows the effect of changing the concentration.",
+      "The y-axis must show both positive and negative values, because some cylinders gained mass and some lost mass.",
+      "The line of best fit crosses the zero line of the y-axis at the concentration at which water leaves the cells as fast as it enters them, so the mass does not change."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Name the process by which water moves into and out of the potato cells, and name the part of the cell that controls which substances enter and leave the cell.",
+        "marks": 2,
+        "modelAnswer": "The process is osmosis. Water moves through a partially permeable membrane from the place where the water is more concentrated to the place where it is less concentrated. The part of the cell that controls this is the cell membrane, which is partially permeable: it allows water and small dissolved particles through, but not large ones.",
+        "markScheme": [
+          "1 mark for 'osmosis'.",
+          "1 mark for 'cell membrane' (accept 'partially permeable membrane' or 'partially permeable cell membrane').",
+          "Do not accept 'cell wall' for the second mark: the wall is fully permeable and does not control what enters and leaves the cell."
+        ],
+        "commandWords": [
+          "Name"
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Name the strong structure that surrounds a plant cell and stops the cell bursting when it is full of water.",
+        "marks": 1,
+        "modelAnswer": "The cell wall, which is made of cellulose. It is strong and slightly elastic, so it presses back on the swollen cell and stops it bursting.",
+        "markScheme": [
+          "1 mark for 'cell wall' (accept 'cell wall made of cellulose')."
+        ],
+        "commandWords": [
+          "Name"
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "State the variable that the student changed in this investigation.",
+        "marks": 1,
+        "modelAnswer": "The student changed the concentration of the sugar solution in which each cylinder was left, from 0.0 mol/dm3 (distilled water) to 0.5 mol/dm3.",
+        "markScheme": [
+          "1 mark for the concentration of the sugar solution (accept 'the strength of the sugar solution' or 'the concentration of the solution the potato was put into')."
+        ],
+        "commandWords": [
+          "State"
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Using Table 1, state the mass of the cylinder that was left in distilled water after 30 minutes, and state the concentration of the sugar solution in which the cylinder lost the most mass.",
+        "marks": 2,
+        "modelAnswer": "The cylinder in distilled water (0.0 mol/dm3) had a mass of 4.60 g after 30 minutes. The cylinder that lost the most mass was the one in the 0.5 mol/dm3 solution, which fell from 4.00 g to 3.52 g.",
+        "markScheme": [
+          "1 mark for '4.60 g'.",
+          "1 mark for '0.5 mol/dm3' (accept 'the strongest sugar solution').",
+          "The unit must be given where the answer is a mass or a concentration."
+        ],
+        "commandWords": [
+          "State"
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "Calculate the percentage change in mass of the cylinder that was left in the 0.3 mol/dm3 solution and of the cylinder that was left in the 0.5 mol/dm3 solution. Show your working.",
+        "marks": 2,
+        "modelAnswer": "For the 0.3 mol/dm3 solution: the change in mass is 3.92 g - 4.00 g = -0.08 g, so the percentage change is (-0.08 / 4.00) x 100 = -2.0 per cent. For the 0.5 mol/dm3 solution: the change in mass is 3.52 g - 4.00 g = -0.48 g, so the percentage change is (-0.48 / 4.00) x 100 = -12.0 per cent. The negative signs show that both cylinders lost mass, because more water left the cells than entered them.",
+        "markScheme": [
+          "1 mark for -2.0 per cent for the 0.3 mol/dm3 cylinder (accept -2 per cent).",
+          "1 mark for -12.0 per cent for the 0.5 mol/dm3 cylinder (accept -12 per cent).",
+          "No mark is given for a value with no working shown: the change in mass must be divided by the mass at the start (4.00 g) and multiplied by 100.",
+          "Accept the answers without the negative sign only if the answer also states that the mass decreased."
+        ],
+        "commandWords": [
+          "Calculate"
+        ]
+      },
+      {
+        "label": "(f)",
+        "prompt": "Plot a graph of the percentage change in mass of the cylinder (y-axis) against the concentration of the sugar solution (x-axis). Label both axes with the quantity and its unit, give the graph a title, choose scales that use at least half of the grid, plot all six points, draw a single straight line of best fit, and then use your line to state the concentration of sugar solution at which the mass of a potato cylinder would not change.",
+        "marks": 4,
+        "modelAnswer": "x-axis: concentration of the sugar solution in mol/dm3, from 0.0 to 0.5. y-axis: percentage change in mass, from about -15 to +15 (or from -12 to +15). Scales: for example 0.1 mol/dm3 per 2 cm on the x-axis and 5 per cent per 2 cm on the y-axis, so that the points fill more than half of the grid. Title: 'Percentage change in mass of potato cylinders against the concentration of the sugar solution'. All six points plotted accurately and one straight line of best fit drawn through them. The line crosses the zero line of the y-axis between 0.2 and 0.3 mol/dm3, at about 0.26 mol/dm3. At that concentration the water entering the cells and the water leaving them are equal, so the mass of the cylinder does not change.",
+        "markScheme": [
+          "L - labels and title: 1 mark for both axes labelled with the quantity and the unit (concentration in mol/dm3 on the x-axis, percentage change in mass on the y-axis) and for a title that names what was measured and what was changed.",
+          "S - scales: 1 mark for linear, clearly marked scales that use at least half of the grid in both directions, with the y-axis including both positive and negative values.",
+          "P - plotting and line: 1 mark for plotting all six points accurately and drawing a single straight line of best fit through them.",
+          "R - reading: 1 mark for a value between 0.24 and 0.28 mol/dm3, read from the point where the line of best fit crosses the zero line of the y-axis.",
+          "Do not accept a reading taken straight from Table 1 (0.3 mol/dm3), because that is not where the line crosses zero."
+        ],
+        "commandWords": [
+          "Plot",
+          "Draw",
+          "State"
+        ]
+      },
+      {
+        "label": "(g)",
+        "prompt": "Explain why the mass of the cylinder that was left in distilled water increased.",
+        "marks": 2,
+        "modelAnswer": "Distilled water contains no sugar, so the water outside the potato cells is more concentrated than the cell sap inside these cells. Water therefore moves into the cells through the partially permeable cell membrane by osmosis. The cells fill with water and become firm, or turgid, so the cylinder gains mass and its mass rises from 4.00 g to 4.60 g.",
+        "markScheme": [
+          "1 mark for stating that the water outside the cells is more concentrated than the cell sap inside, so water moves into the cells by osmosis through the partially permeable membrane.",
+          "1 mark for linking the water that has entered the cells to the increase in mass (the cells become turgid, so the cylinder gets heavier).",
+          "Do not accept 'the potato absorbed the water' with no mention of osmosis or of the direction of movement."
+        ],
+        "commandWords": [
+          "Explain"
+        ]
+      },
+      {
+        "label": "(h)",
+        "prompt": "The student blots each cylinder dry on paper towel before weighing it. Suggest why this is important.",
+        "marks": 1,
+        "modelAnswer": "Any water left on the outside of a cylinder would be weighed with the cylinder, so the mass recorded would be too high. Blotting the cylinder dry removes this surface water, so the mass measured is the mass of the potato tissue itself and the change in mass is the change caused by osmosis.",
+        "markScheme": [
+          "1 mark for stating that water on the outside would add to the mass and make the reading too high, so blotting it off means the mass recorded is the mass of the potato tissue itself.",
+          "Do not accept 'to keep the potato clean' or 'to dry the potato out', which do not explain the effect on the mass."
+        ],
+        "commandWords": [
+          "Suggest"
+        ]
+      }
+    ],
+    "examinerTips": "Question 1 is the investigative, practically oriented question, so it expects the language of an experiment: name the process, state the variables, plot the points, draw the line of best fit, and read the answer from the line. When a percentage change is asked for, always divide by the mass at the start and say whether the mass rose or fell."
+  },
+  {
+    "id": "hsb-p2-02",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "Three sources of water in a community",
+    "topic": "hsb-l5-1",
+    "commandWords": [
+      "Name",
+      "State",
+      "Explain",
+      "Suggest"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 20,
+    "source": "A community uses three different sources of water. On the same morning a health worker takes one sample of water from each source.\n\n- Source A is a spring that is protected by a concrete wall and a concrete cover. The spring is 60 m from the nearest pit latrine.\n- Source B is a river at the place where people bathe, wash clothes and wash dishes. A pit latrine stands only 8 m from the river bank, on sandy soil, and the waste water from some houses runs straight into the river.\n- Source C is a rainwater tank at a school. The tank has no lid, so dust and the droppings of birds wash off the roof into the stored water. The water in the tank is not treated.\n\nA student adds 1 cm3 of water from each source to a separate dish of nutrient agar, spreads it over the surface of the agar and keeps the dish at 25 degrees Celsius for 48 hours. The number of colonies of bacteria that have grown on each dish is then counted. The student also boils a sample of the water from Source B, lets it cool and plates 1 cm3 of it in the same way.\n\nTABLE 1\nWater sample | Number of colonies of bacteria after 48 hours\nSource A: protected spring | 3\nSource B: river at the bathing place | too many to count\nSource C: school rainwater tank | 41\nSource B: the same river water after boiling and cooling | 0",
+    "prompt": "Answer ALL parts. Use Table 1 and the information about the community, and give reasons for your answers.",
+    "planningHints": [
+      "For part (a), the dishes of nutrient agar are the method used to test water for bacteria: each living bacterium in the sample grows into one colony.",
+      "In part (f), look at where each source is and what happens around it - how far the latrine is from the water, what the soil is like, and who uses the water.",
+      "A measure in part (g) earns its mark only when you also say how it stops bacteria from reaching the water.",
+      "Read the numbers in Table 1 carefully: the word 'too many to count' is itself a result."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Name the technique the student used to test the water for bacteria, and state what is meant by a pollutant.",
+        "marks": 2,
+        "modelAnswer": "The student plated the water on nutrient agar: the technique is an agar plate test, in which each living bacterium in the sample grows into one colony that can be seen and counted. A pollutant is a substance that is in the environment where it should not be, or in a harmful amount, so that it damages the health of living things or the environment.",
+        "markScheme": [
+          "1 mark for 'agar plate' (accept 'culture plate', 'plating the water on nutrient agar' or 'culturing the bacteria').",
+          "1 mark for a pollutant described as a harmful substance that gets into the environment (accept 'something that contaminates water, air or soil and harms living things or the environment')."
+        ],
+        "commandWords": [
+          "Name",
+          "State"
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Name ONE disease that people could get by drinking water that has been contaminated with sewage.",
+        "marks": 1,
+        "modelAnswer": "Typhoid. Diseases that spread in the same way include cholera, diarrhoea and gastroenteritis.",
+        "markScheme": [
+          "1 mark for any ONE of: typhoid, cholera, diarrhoea, gastroenteritis (accept 'dysentery').",
+          "Do not accept a disease that is not spread by contaminated water, for example dengue fever or malaria, which are spread by mosquitoes."
+        ],
+        "commandWords": [
+          "Name"
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Using Table 1, state which source of water was the most contaminated and state the number of colonies that grew from the water in the school rainwater tank.",
+        "marks": 2,
+        "modelAnswer": "The most contaminated source was the river at the bathing place (Source B), where the colonies were too many to count. The water from the school rainwater tank (Source C) produced 41 colonies.",
+        "markScheme": [
+          "1 mark for Source B, the river at the bathing place.",
+          "1 mark for '41 colonies'."
+        ],
+        "commandWords": [
+          "State"
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "State ONE way in which a family could make water from the river safe to drink at home.",
+        "marks": 1,
+        "modelAnswer": "Boil the water and let it cool before drinking it. Adding the correct amount of chlorine or household bleach to the water is another method.",
+        "markScheme": [
+          "1 mark for boiling the water, or for adding chlorine or bleach (accept 'adding the correct amount of bleach and leaving it to stand').",
+          "Do not accept 'straining it through a cloth', which removes solid particles but leaves the bacteria in the water."
+        ],
+        "commandWords": [
+          "State"
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "Explain why the plate made from the river water that had been boiled showed no colonies, while the plate made from the same river water that had not been boiled showed too many colonies to count.",
+        "marks": 2,
+        "modelAnswer": "The untreated river water contains bacteria. They come from the sewage and waste water that reach the river and from the people and animals that wash in it, and each living bacterium in the sample grows into one colony on the agar, so the untreated sample gave far too many colonies to count. Boiling the water kills the bacteria, so when the boiled water had cooled and was plated there were no living bacteria left in it to grow, and no colonies appeared.",
+        "markScheme": [
+          "1 mark for stating that the untreated river water contained bacteria (from the sewage, the waste water and the people washing in the river) and that each living bacterium grows into one colony on the agar.",
+          "1 mark for stating that boiling kills the bacteria, so no living bacteria were left in the boiled sample to grow into colonies.",
+          "Do not award a mark for 'the water was clean' or 'the dirt was removed' with no mention of the bacteria being killed or removed."
+        ],
+        "commandWords": [
+          "Explain"
+        ]
+      },
+      {
+        "label": "(f)",
+        "prompt": "Explain, using the information given about this community, TWO reasons why the river water was much more contaminated than the water from the spring.",
+        "marks": 3,
+        "modelAnswer": "The pit latrine stands only 8 m from the river bank and on sandy soil, and water drains through sandy soil quickly, so the waste from the latrine seeps through the ground and into the river, carrying the bacteria from faeces with it. The spring, in contrast, is protected by a concrete wall and cover and is 60 m from the nearest latrine, so waste from a latrine cannot drain into it. Waste water from some houses also runs straight into the river, and people bathe, wash clothes and wash dishes in it, which adds more bacteria to the water and stirs up those already in the mud. Nobody bathes or washes in the protected spring, so its water stays much cleaner.",
+        "markScheme": [
+          "1 mark for each reason given, maximum 2 marks: for example the pit latrine is only 8 m from the river bank and stands on sandy soil; waste water from houses runs straight into the river; people bathe, wash clothes and wash dishes in the river; the spring is protected by a concrete wall and cover and is 60 m from the nearest latrine.",
+          "1 mark for an explanation of why those reasons put bacteria into the river, for example sandy soil lets water drain through quickly, so waste from the latrine seeps into the river; sewage and waste water carry the bacteria from faeces into the water where people bathe and drink; bathing and washing add bacteria to the water and stir up those in the mud.",
+          "Do not award a mark for a reason that is not supported by the information given about this community (up to a maximum of 3 marks)."
+        ],
+        "commandWords": [
+          "Explain"
+        ]
+      },
+      {
+        "label": "(g)",
+        "prompt": "Suggest TWO measures that this community could take to reduce the contamination of the river water, and state how each measure would help.",
+        "marks": 2,
+        "modelAnswer": "Move the pit latrines well away from the river bank and off the sandy ground, and rebuild them with concrete floors and walls: waste from the latrines can then no longer seep through the soil into the water where people bathe and drink. Build a piped supply from the protected spring, with a storage tank and a chlorinator, and connect the houses to it: people would then drink treated spring water instead of taking untreated water from the river, and the chlorine would kill any bacteria that remained in it.",
+        "markScheme": [
+          "1 mark for each sensible measure given together with how it helps, maximum 2 marks. Accept: moving the pit latrines well away from the river bank and off sandy soil, so waste can no longer seep into the water; providing proper sewage disposal for the houses instead of letting waste water run into the river, so the sewage cannot reach the water; piping water from the protected spring to the houses and chlorinating it, so people drink treated water; fencing the bathing place to keep animals out; storing household water in covered containers.",
+          "Do not accept a measure with no explanation of how it helps, and do not award a second mark for the same measure."
+        ],
+        "commandWords": [
+          "Suggest",
+          "State"
+        ]
+      },
+      {
+        "label": "(h)",
+        "prompt": "The water in the school rainwater tank is not treated. Explain how the students could become ill from drinking this water, and state ONE change that would make the tank water safer.",
+        "marks": 2,
+        "modelAnswer": "Because the tank has no lid, dust and the droppings of birds and other animals are washed off the roof by rain and into the stored water, and the bacteria in the droppings multiply in the warm water. Students who drink this water take the bacteria into their bodies, and the bacteria can cause diarrhoea, gastroenteritis or typhoid. Fitting a lid to the tank and cleaning the roof and gutters regularly would stop more droppings from getting in, and treating the water with the correct amount of chlorine would kill the bacteria already in it.",
+        "markScheme": [
+          "1 mark for explaining that the open tank collects dust and animal droppings, that the bacteria in them multiply in the water, and that the students take these bacteria in when they drink the water.",
+          "1 mark for ONE sensible change: fitting a lid to the tank; cleaning the roof and gutters regularly; chlorinating the water; boiling the water before it is drunk.",
+          "Do not accept a change that does not reduce the number of bacteria in the water, for example 'tell the students to drink less water'."
+        ],
+        "commandWords": [
+          "Explain",
+          "State"
+        ]
+      }
+    ],
+    "examinerTips": "Water questions turn on three things: where the water comes from, what is around it, and how it is treated. Say what has entered the water and how it got there, then say what that does to the people who use it. Values read out of a table must be quoted with their unit."
+  },
+  {
+    "id": "hsb-p2-03",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "Urine, water balance and the kidney",
+    "topic": "hsb-l1-3",
+    "commandWords": [
+      "Define",
+      "Name",
+      "State",
+      "Explain",
+      "Calculate"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 20,
+    "source": "Two students of the same age recorded what they drank and how they spent one day. The volume of urine each student passed in the 24 hours was measured, and a sample of the urine was tested to find the concentration of urea in it.\n\nTABLE 1\nStudent | Water drunk in 24 hours (dm3) | Volume of urine in 24 hours (dm3) | Concentration of urea in the urine (g/dm3) | Activity during the day\nA | 2.5 | 2.1 | 8 | sat studying indoors\nB | 0.6 | 0.7 | 22 | played football for 90 minutes in the hot sun\n\nStudent B drank very little water and sweated heavily during the match. Student A drank water regularly through the day and took part in no sport.",
+    "prompt": "Answer ALL parts. Use Table 1 and the information given. Show your working in any calculation and give the unit with every answer.",
+    "planningHints": [
+      "Excretion is about the waste made by the chemical reactions inside the cells, not about undigested food.",
+      "For part (e), follow the water: it leaves the body in sweat, the blood becomes more concentrated, and the kidney responds by reabsorbing more water from the filtrate.",
+      "For part (f), mass of urea = concentration of urea x volume of urine. Work the answer out for each student separately.",
+      "Part (h) is about negative feedback: the body detects the change and corrects it, so the internal conditions stay almost constant."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Define the term excretion.",
+        "marks": 1,
+        "modelAnswer": "Excretion is the removal from the body of the waste products of metabolism, that is the waste substances that are made by the chemical reactions taking place inside the cells of the body, such as carbon dioxide and urea.",
+        "markScheme": [
+          "1 mark for 'the removal from the body of the waste products of metabolism (the waste made by the chemical reactions in the cells)'.",
+          "Do not accept 'the removal of faeces' or 'getting rid of waste food': the removal of undigested food is egestion, which is not excretion."
+        ],
+        "commandWords": [
+          "Define"
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Name the TWO organs, other than the kidney, that excrete waste products from the human body, and name the main waste product that each one removes.",
+        "marks": 2,
+        "modelAnswer": "The lungs excrete carbon dioxide, and some water vapour, that are made by respiration. The skin excretes water and salts, and a small amount of urea, in sweat.",
+        "markScheme": [
+          "1 mark for each organ named with the waste product it removes, maximum 2 marks: lungs - carbon dioxide (accept 'carbon dioxide and water vapour'); skin - water and salts in sweat (accept 'salts and a little urea').",
+          "Do not accept the liver or the large intestine, which do not excrete metabolic waste from the body."
+        ],
+        "commandWords": [
+          "Name"
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "As the filtrate passes along the tubule of the kidney, glucose and other useful substances are returned to the blood. Name this process.",
+        "marks": 1,
+        "modelAnswer": "Selective reabsorption. The useful substances are taken back into the blood, while the urea and the excess water and salts are left behind to form urine.",
+        "markScheme": [
+          "1 mark for 'selective reabsorption' (accept 'reabsorption' or 'selective absorption')."
+        ],
+        "commandWords": [
+          "Name"
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Using Table 1, state the volume of urine produced by Student B and the concentration of urea in the urine of Student A.",
+        "marks": 2,
+        "modelAnswer": "Student B produced 0.7 dm3 of urine in the 24 hours. The concentration of urea in Student A's urine was 8 g/dm3.",
+        "markScheme": [
+          "1 mark for '0.7 dm3'.",
+          "1 mark for '8 g/dm3'.",
+          "The unit must be given in each answer."
+        ],
+        "commandWords": [
+          "State"
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "Explain, using Table 1 and the information given, why Student B produced a smaller volume of more concentrated urine than Student A.",
+        "marks": 3,
+        "modelAnswer": "Student B sweated heavily while playing football in the hot sun, so a large volume of water was lost from the body through the skin and the volume of water in the blood fell. The blood then became more concentrated than normal, and the body responded by releasing more ADH into the blood. More ADH makes the tubules of the kidney reabsorb more water from the filtrate, so less water is left behind to be passed out. Student B therefore produced only 0.7 dm3 of urine, and because the same mass of urea was dissolved in a much smaller volume of water, the concentration of urea in it was much higher, at 22 g/dm3.",
+        "markScheme": [
+          "1 mark for stating that Student B lost a large volume of water in sweat while playing football in the sun, so the blood became more concentrated.",
+          "1 mark for stating that more ADH was released, which made the kidney reabsorb more water from the filtrate, so less water was passed out as urine.",
+          "1 mark for linking the smaller volume of water to the higher concentration of urea (the same mass of urea dissolved in a smaller volume of water makes a more concentrated solution).",
+          "Do not accept 'the body had to keep the water' on its own, with no mention of reabsorption or of the change in the concentration of the blood."
+        ],
+        "commandWords": [
+          "Explain"
+        ]
+      },
+      {
+        "label": "(f)",
+        "prompt": "Calculate the mass of urea that Student B removed from the body in the 24 hours and the mass of urea that Student A removed. Use Table 1.",
+        "marks": 2,
+        "modelAnswer": "Mass of urea = concentration of urea x volume of urine. Student B: 22 g/dm3 x 0.7 dm3 = 15.4 g. Student A: 8 g/dm3 x 2.1 dm3 = 16.8 g. The two students removed about the same mass of urea (15.4 g and 16.8 g); Student B simply removed it in a much smaller volume of water.",
+        "markScheme": [
+          "1 mark for using the correct method, mass of urea = concentration x volume, and showing it for at least one student.",
+          "1 mark for both correct masses: Student B 15.4 g and Student A 16.8 g.",
+          "Accept 15 g and 17 g only where the working is shown and the values have been rounded."
+        ],
+        "commandWords": [
+          "Calculate"
+        ]
+      },
+      {
+        "label": "(g)",
+        "prompt": "Explain how the kidney is able to make urine that has a higher concentration of urea than the blood plasma has.",
+        "marks": 2,
+        "modelAnswer": "As blood flows through the kidney, water, glucose, salts and urea are filtered out of it into the tubule of the nephron. As the filtrate passes along the tubule, all of the glucose and most of the water and salts are reabsorbed into the blood, but very little of the urea is reabsorbed and most of it stays in the tubule. Water is therefore taken out of the filtrate while the urea is left behind, so the fluid that leaves the kidney as urine is a smaller volume containing a higher concentration of urea than the plasma it came from.",
+        "markScheme": [
+          "1 mark for stating that water is reabsorbed from the filtrate into the blood as the filtrate passes along the tubule, while little or no urea is reabsorbed.",
+          "1 mark for stating that taking water out of the filtrate while leaving the urea behind makes the urine a more concentrated solution of urea than the plasma."
+        ],
+        "commandWords": [
+          "Explain"
+        ]
+      },
+      {
+        "label": "(h)",
+        "prompt": "Later the same day Student A drinks another 1.5 dm3 of water. Explain what will happen to the volume of urine produced and to its concentration, and explain why this is an example of homeostasis.",
+        "marks": 2,
+        "modelAnswer": "The extra water is absorbed into the blood, so the blood becomes more dilute than is normal. Less ADH is released, so the tubules of the kidney reabsorb less water and a larger volume of more dilute urine is produced. This is an example of homeostasis because the body is using negative feedback to keep the concentration of the blood, and the amount of water in the body, within a narrow and almost constant range: the water taken in and the water lost in urine, in sweat and in breathing are kept in balance.",
+        "markScheme": [
+          "1 mark for stating that a larger volume of more dilute urine will be produced, because more water is absorbed into the blood and less ADH is released, so less water is reabsorbed by the kidney.",
+          "1 mark for explaining that homeostasis means keeping the internal conditions of the body almost constant, and that this is negative feedback, because the body corrects the change by removing the extra water."
+        ],
+        "commandWords": [
+          "Explain"
+        ]
+      }
+    ],
+    "examinerTips": "Data questions on the kidney are really about water balance: less water in the body means more water reabsorbed from the filtrate, which means less urine and a more concentrated urine. Write the direction of the change, then the messenger (ADH), then the effect on the tubule, and finish with the result shown in the table."
+  },
+  {
+    "id": "hsb-p2-04",
+    "type": "write",
+    "paper": 2,
+    "section": "Section A",
+    "title": "Tongue rolling in a class of forty",
+    "topic": "hsb-l2-2",
+    "commandWords": [
+      "State",
+      "Name",
+      "Draw",
+      "Explain",
+      "Suggest"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 20,
+    "source": "The 40 students in a class carried out a survey on tongue rolling. Each student found out whether he or she could roll his or her tongue into a tube. The results are shown in Table 1.\n\nTABLE 1\nStudents who can roll their tongues into a tube | 32\nStudents who cannot roll their tongues into a tube | 8\n\nOne student, Marcia, cannot roll her tongue, but both of her parents can. Marcia has two brothers and one sister, and all three of them can roll their tongues.\n\nThe students were also measured for height. The heights in the class ranged from 1.42 m to 1.85 m, and most of the students were between 1.60 m and 1.70 m tall.",
+    "prompt": "Answer ALL parts. Use Table 1 and the information given about the class and about Marcia's family.",
+    "planningHints": [
+      "Rolling the tongue into a tube is the common condition in this class, so it is the dominant one and the allele for it can be written R.",
+      "If Marcia cannot roll her tongue she must have two recessive alleles, and she must have inherited one of them from each parent.",
+      "A genetic diagram shows the parents, the gametes, and every combination of gametes in the children; a Punnett square is one way of setting it out.",
+      "For part (g), look at the heights: the students are all about the same age but they are not all the same height."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "State what is meant by the terms allele and recessive.",
+        "marks": 2,
+        "modelAnswer": "An allele is one of the different forms of a gene that controls a characteristic. For tongue rolling there are two alleles, the allele for being able to roll the tongue and the allele for not being able to. A recessive allele is an allele that is only expressed, that is only seen in the phenotype, when two copies of it are present, with no dominant allele to mask it.",
+        "markScheme": [
+          "1 mark for an allele described as a different form (or version) of a gene.",
+          "1 mark for a recessive allele described as one that is only expressed when two copies are present (accept 'it is masked by the dominant allele')."
+        ],
+        "commandWords": [
+          "State"
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "State what is meant by the term gene.",
+        "marks": 1,
+        "modelAnswer": "A gene is a length of DNA that carries the instructions for making one protein, and so controls one characteristic, or part of one characteristic.",
+        "markScheme": [
+          "1 mark for 'a length (or section) of DNA that controls one characteristic by coding for a protein'.",
+          "Do not accept 'a part of a chromosome' on its own."
+        ],
+        "commandWords": [
+          "State"
+        ]
+      },
+      {
+        "label": "(c)",
+        "prompt": "Name the type of cell division that produces gametes, and state the number of chromosomes in a human gamete.",
+        "marks": 2,
+        "modelAnswer": "Gametes are produced by meiosis. A human body cell has 46 chromosomes, that is 23 pairs, and meiosis halves this number, so a human gamete has 23 chromosomes.",
+        "markScheme": [
+          "1 mark for 'meiosis'.",
+          "1 mark for '23 chromosomes'.",
+          "Do not accept 'mitosis' or '46 chromosomes'."
+        ],
+        "commandWords": [
+          "Name",
+          "State"
+        ]
+      },
+      {
+        "label": "(d)",
+        "prompt": "Using the information in the passage, state ONE characteristic that shows discontinuous variation.",
+        "marks": 1,
+        "modelAnswer": "Tongue rolling shows discontinuous variation: a student either can roll the tongue into a tube or cannot, and there are no values in between. The class falls into two clear groups, 32 who can and 8 who cannot.",
+        "markScheme": [
+          "1 mark for tongue rolling (accept 'the ability to roll the tongue into a tube').",
+          "Do not accept height, which shows continuous variation: the heights in the class were spread over a range from 1.42 m to 1.85 m, with most students between 1.60 m and 1.70 m."
+        ],
+        "commandWords": [
+          "State"
+        ]
+      },
+      {
+        "label": "(e)",
+        "prompt": "Marcia cannot roll her tongue but both of her parents can. Draw a genetic diagram, using the symbols R and r, to show how this is possible. Your diagram must show the genotypes of the parents, the gametes they produce, the possible genotypes of the children, and the ratio of the phenotypes.",
+        "marks": 3,
+        "modelAnswer": "Marcia cannot roll her tongue, so she must have two recessive alleles and her genotype is rr. She inherited one r allele from each parent, so each parent must carry an r allele. Both parents can roll their tongues, so each of them must also carry a dominant R allele, and the genotype of each parent is therefore Rr. Each parent produces R gametes and r gametes in equal numbers. Crossing Rr with Rr gives the children RR, Rr, Rr and rr, that is a ratio of 1 RR : 2 Rr : 1 rr. This is a ratio of 3 children who can roll their tongues (RR or Rr) to 1 child who cannot (rr), so two parents who can both roll their tongues can have a child who cannot.",
+        "markScheme": [
+          "1 mark for the genotype of both parents given as Rr, with a reason: each parent must carry the recessive allele r, because Marcia is rr and inherits one allele from each parent.",
+          "1 mark for a correct genetic diagram showing the R and r gametes from each parent and the four possible genotypes of the children, RR, Rr, Rr and rr (a Punnett square or equivalent working counts).",
+          "1 mark for the correct phenotype ratio, 3 tongue rollers to 1 non-roller, identified from the diagram.",
+          "Do not accept a diagram in which both parents are RR, because that cross could not produce a child with the genotype rr."
+        ],
+        "commandWords": [
+          "Draw",
+          "Explain"
+        ]
+      },
+      {
+        "label": "(f)",
+        "prompt": "Explain why some students in the class cannot roll their tongues and why most of them can.",
+        "marks": 2,
+        "modelAnswer": "Being able to roll the tongue is the dominant condition, so a student who has at least one R allele, that is a student with the genotype RR or Rr, can roll the tongue. Only a student with two recessive alleles, genotype rr, one inherited from each parent, cannot roll the tongue. Because the R allele is dominant, the RR and Rr genotypes both look the same, so the ability to roll the tongue is common in the class while the inability is much rarer: 32 students compared with 8.",
+        "markScheme": [
+          "1 mark for stating that a student cannot roll the tongue only with the genotype rr, that is with two recessive alleles, one from each parent.",
+          "1 mark for stating that the ability to roll the tongue is dominant, so a student with at least one R allele can roll the tongue, which is why the ability is far more common (RR and Rr look the same)."
+        ],
+        "commandWords": [
+          "Explain"
+        ]
+      },
+      {
+        "label": "(g)",
+        "prompt": "Explain the difference between genetic variation and environmental variation, using ONE example of each from this class.",
+        "marks": 2,
+        "modelAnswer": "Genetic variation is caused by the different alleles that a person inherits from his or her parents: the students who can roll their tongues and those who cannot differ because of the alleles they carry. Environmental variation is caused by differences in the conditions in which a person lives, such as diet, exercise and illness: although the students in the class are about the same age, their heights are spread over a range, partly because of the food they eat and how much they exercise. Height is a characteristic that is affected by both the genes and the environment.",
+        "markScheme": [
+          "1 mark for genetic variation explained as differences caused by the alleles (genes) inherited from the parents, with the example of tongue rolling.",
+          "1 mark for environmental variation explained as differences caused by the conditions a person lives in, such as diet, exercise or disease, with a sensible example such as height being affected by diet.",
+          "Do not award a mark for an example with no explanation, and do not award the second mark for the same example used twice."
+        ],
+        "commandWords": [
+          "Explain"
+        ]
+      },
+      {
+        "label": "(h)",
+        "prompt": "Suggest why the results from this one class cannot be used to say exactly how many students in the whole school cannot roll their tongues, and state ONE way in which the survey could be made more reliable.",
+        "marks": 2,
+        "modelAnswer": "The class is a small sample of only 40 students, and it may not be a fair sample of the whole school: the students are all about the same age, they may be related to one another, and they may come from the same area. The result would probably be different if another class, or another school, were tested. The survey should be repeated with a much larger number of students chosen at random from every year group in the school, using exactly the same question and the same method with every group, so that the sample represents the whole school.",
+        "markScheme": [
+          "1 mark for stating that the class is only a small sample of 40 students that may not represent the school, or that the students were not chosen at random.",
+          "1 mark for ONE sensible improvement: survey a much larger number of students, choose the students at random, and include students from every year group so that the sample is representative."
+        ],
+        "commandWords": [
+          "Suggest",
+          "State"
+        ]
+      }
+    ],
+    "examinerTips": "Genetics marks come from the working, not from the answer alone: show the genotypes of the parents, the gametes, and every combination of gametes before you write the ratio. Remember that a recessive characteristic only appears when two recessive alleles are present, which is how two parents who can both roll their tongues can have a child who cannot."
+  },
+  {
+    "id": "hsb-p2-05",
+    "type": "write",
+    "paper": 2,
+    "section": "Section B",
+    "title": "Essay: immunising a village school",
+    "topic": "hsb-l4-2",
+    "commandWords": [
+      "Describe",
+      "Explain",
+      "Discuss"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 20,
+    "source": "A parish health team runs an immunisation programme at a village school. Each child is given a vaccine against measles, mumps and rubella, and a second dose is given three months later. A mother asks the nurse three questions: why her daughter has to be given the injection twice, why the children who have had the injection do not become ill when one child in the class catches measles, and why the doctor will not give her son penicillin for the bad cold and cough that he has had for three days.\n\nThe same health team runs a clinic that offers free counselling, testing for HIV and free condoms. Some of the people in the village say that they are afraid to go to the clinic to be tested.",
+    "prompt": "Answer this question in continuous prose. Write in sentences and paragraphs and use the correct scientific terms. Do not simply write a list of points.",
+    "planningHints": [
+      "Plan before you write: part (a) asks for what you know about immunity, and part (b) asks you to apply it to this school and this village.",
+      "In part (a), follow the vaccine into the body: antigen, white blood cells, antibodies, memory cells. Then name the types of immunity a person can have.",
+      "In part (b), answer the mother's three questions one at a time, and give a reason with each answer.",
+      "Marks come from the science and from your reasons, not from the length of your answer."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Describe how the body responds to a vaccine, and describe the types of immunity that a person can have.",
+        "marks": 6,
+        "modelAnswer": "A vaccine contains antigens - weakened or killed microbes, or parts of them - that carry the same antigens as the disease-causing microbe, but that cannot cause the disease. When the vaccine is injected, the antigens stimulate the white blood cells called lymphocytes to produce antibodies that are specific to that antigen. The lymphocytes also produce memory cells, which stay in the blood and can recognise the same antigen if the real microbe enters the body later; the memory cells then make antibodies far faster and in much larger amounts, so the microbe is destroyed before it can cause the disease. The second dose, called a booster, increases the number of these memory cells, so the protection is stronger and lasts much longer.\n\nA person can have natural immunity, which is immunity that is not produced by a vaccine, or artificial immunity, which is immunity produced by a vaccine or by an injection of antibodies. Immunity is active when the person's own body has made the antibodies and the memory cells, as happens after an infection or after a vaccination; it is passive when the antibodies come from somewhere else and the person's own body has not made them, as in a baby who receives antibodies from the mother through the placenta and in breast milk, or a patient who is given antibodies ready-made after a snake bite. Passive immunity protects immediately but only for a short time, because the borrowed antibodies are used up and no memory cells have been made.",
+        "markScheme": [
+          "1 mark for stating that a vaccine contains antigens (weakened or killed microbes or parts of them) that cannot cause the disease.",
+          "1 mark for stating that the antigens stimulate white blood cells (lymphocytes) to produce antibodies that are specific to that antigen.",
+          "1 mark for stating that the lymphocytes also produce memory cells, which stay in the body and recognise the same antigen if it enters again.",
+          "1 mark for stating that the memory cells make antibodies faster and in larger amounts when the real microbe enters, so the microbe is destroyed before the disease can develop.",
+          "1 mark for stating that the second dose (the booster) increases the number of memory cells, so the protection is stronger and lasts longer.",
+          "1 mark for naming and distinguishing the types of immunity: natural and artificial, and active (the body makes its own antibodies, after an infection or a vaccination) and passive (the antibodies come from outside the body, as from the mother through the placenta and in breast milk, or are injected ready-made). Up to a maximum of 6 marks."
+        ],
+        "commandWords": [
+          "Describe"
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Discuss why immunising most of the children in the school helps to protect the whole community from measles. Explain why penicillin will not cure the boy's cold and cough. Discuss TWO ways in which the spread of HIV in this village could be limited.",
+        "marks": 9,
+        "modelAnswer": "Measles spreads easily from one person to another, through the droplets that are coughed and sneezed into the air. When most of the children have been immunised, each of those children has memory cells and can destroy the virus quickly, so that child is very unlikely to catch measles and equally unlikely to pass it on. A child who has measles will therefore meet mostly protected children and the virus cannot spread far, so the whole group is protected; even the few children who cannot be immunised, such as a child who is too ill or too young, are protected by those around them. This protection of the group is lost if too few children are immunised, which is why the second dose and the health team's programme matter.\n\nPenicillin is an antibiotic, and antibiotics work against bacteria by destroying them or by stopping them from growing and multiplying. The common cold and the cough the boy has are caused by viruses, and viruses are not affected by antibiotics: penicillin has nothing in a virus to act on, so it cannot cure the illness. Penicillin is also of no use to the boy because the illness will get better on its own in a few days, and taking antibiotics when they are not needed is harmful, because the bacteria in his body can become resistant to them. The right treatment is rest, plenty of fluids and something to reduce the fever and the cough, with a return to the clinic if he does not improve.\n\nThe first way to limit the spread of HIV in the village is to make testing, counselling and free condoms easy to get, and to encourage people to use them. Testing shows a person whether he or she is infected, so an infected person can be treated and can avoid passing the virus on, and condoms stop the virus being passed from one person to another during sex. The fear that stops people going to the clinic is itself part of the problem, so the team must explain that the test result is confidential and that people who are tested are not blamed, and use people from the village to give that message. The second way is to treat infected people with antiretroviral drugs and to keep the blood supply safe. The drugs lower the amount of virus in the blood, so an infected person is much less likely to pass HIV on to a partner or to a baby during pregnancy and birth, and a mother can be given treatment so that her child is born free of the virus. Injections and blood must be given with sterile, single-use needles and screened blood, because the virus also spreads through shared needles and infected blood.",
+        "markScheme": [
+          "1 mark for explaining that measles spreads through the droplets that are coughed and sneezed into the air, so an unprotected child easily catches it and passes it on.",
+          "1 mark for explaining that an immunised child has memory cells and antibodies that destroy the virus quickly, so that child is unlikely to catch measles or to pass it on.",
+          "1 mark for explaining that when most children are immunised the virus has few unprotected children to spread to, so the whole group is protected, including the few children who cannot be immunised.",
+          "1 mark for stating that antibiotics such as penicillin kill bacteria or stop them from growing.",
+          "1 mark for explaining that the cold and the cough are caused by viruses, not bacteria, so penicillin has nothing to act on and cannot cure them, and that unnecessary use of antibiotics makes bacteria resistant to them.",
+          "Credited for the HIV discussion, up to 4 marks, for example: testing and counselling, so that infected people know their status and can be treated and can avoid passing the virus on; free condoms, which stop the virus being passed during sex; education and the removal of fear and blame, so that people are willing to be tested; treatment with antiretroviral drugs, which lowers the amount of virus in the blood and so makes it much less likely to be passed on, including from mother to child; sterile single-use needles and screened blood, because HIV also spreads through shared needles and infected blood. Up to a maximum of 9 marks in total.",
+          "Do not accept 'keeping away from people with HIV' or 'telling people not to mix with those who are infected', because HIV is not spread by ordinary contact."
+        ],
+        "commandWords": [
+          "Discuss",
+          "Explain"
+        ]
+      }
+    ],
+    "examinerTips": "In a Section B essay the examiner is looking for science that is used, not just named. Answer each of the mother's questions in its own paragraph, and give the reason as well as the answer: a vaccine leaves memory cells, antibiotics work on bacteria and not on viruses, and HIV is limited by stopping its transmission, not by avoiding the people who have it."
+  },
+  {
+    "id": "hsb-p2-06",
+    "type": "write",
+    "paper": 2,
+    "section": "Section B",
+    "title": "Essay: feeding a family of four",
+    "topic": "hsb-l3-4",
+    "commandWords": [
+      "Describe",
+      "State",
+      "Calculate",
+      "Explain",
+      "Suggest"
+    ],
+    "marks": 15,
+    "suggestedMinutes": 20,
+    "source": "A family of four lives in a town in Jamaica. The mother works long hours in an office and buys food on her way home. The family often eats fried chicken, fried fish and rice and peas, and they drink a lot of sweetened fizzy drinks. There is little fruit or vegetables in the home. The grandmother is 68 years old and has hypertension, for which she takes tablets every day. The mother was told at the clinic that she has type II diabetes. The youngest child, who is 5 years old, is often ill and has lost weight.\n\nTABLE 1\nFamily member | Mass (kg) | Height (m) | Other information\nGrandmother | 68 | 1.60 | has hypertension, takes tablets every day\nMother | 74 | 1.55 | has type II diabetes\nDaughter, 12 years old | 62 | 1.50 | in Year 8 at school\nSon, 5 years old | 11 | 0.95 | often ill and has lost weight",
+    "prompt": "Answer this question in continuous prose. Write in sentences and paragraphs and use the correct scientific terms. Do not simply write a list of points.",
+    "planningHints": [
+      "Body mass index is worked out as mass in kilograms divided by height in metres multiplied by height in metres: BMI = mass / (height x height). Show your working for each person.",
+      "In part (a), group the nutrients: carbohydrates, proteins, lipids, vitamins, minerals, water and fibre. For each vitamin or mineral named, give both its function and a food that supplies it.",
+      "In part (b), remember that over-nutrition and under-nutrition are both forms of malnutrition, and the 5-year-old child shows the second kind.",
+      "Each change you suggest needs a reason: say what the family should do and then explain how it helps the diabetes or the blood pressure."
+    ],
+    "parts": [
+      {
+        "label": "(a)",
+        "prompt": "Describe the major nutrients in food and state ONE source of each. State the function and ONE main source of vitamin A, vitamin C, vitamin D, calcium and iron, and state the cause, the symptoms and the treatment of ONE named deficiency disease.",
+        "marks": 6,
+        "modelAnswer": "Food contains carbohydrates, proteins, lipids (fats and oils), vitamins, minerals, water and fibre. Carbohydrates, which are found in rice, bread, yam and sweet drinks, are the body's main source of energy. Proteins, found in fish, chicken, peas and milk, are needed for growth and for the repair of body tissues. Lipids, found in cooking oil, butter and fried food, provide energy and carry the fat-soluble vitamins, and they also store energy and insulate the body. Water is a solvent and a transport medium, and fibre, found in vegetables and whole-grain foods, adds bulk to the food and helps to prevent constipation.\n\nVitamin A is needed to make the pigment in the retina that lets the eye see in dim light, and it also keeps the skin and the linings of the body healthy; it is found in carrots, pumpkin and dark green leafy vegetables. Vitamin C is needed for healthy skin and gums, for healing wounds and for the body to absorb iron; it is found in citrus fruits, such as oranges and limes, and in guava. Vitamin D helps the body to absorb calcium and to lay it down in the bones and teeth; it is made in the skin in sunlight, and it is found in oily fish and in milk. Calcium is needed for strong bones and teeth and for blood clotting, and it is found in milk, cheese and small fish eaten with the bones. Iron is needed to make haemoglobin, the substance in the red blood cells that carries oxygen, and it is found in liver, lean meat, peas and dark green leafy vegetables.\n\nA deficiency disease caused by too little vitamin A is night blindness. The cause is a diet that contains too little vitamin A, or fat, over a long period. The symptoms are difficulty in seeing in dim light, and the eyes become dry; in severe cases the eye can be permanently damaged. The treatment is to eat foods rich in vitamin A, such as carrots, pumpkin and green leafy vegetables, and in severe cases to take vitamin A supplements as the doctor directs.",
+        "markScheme": [
+          "1 mark for the major nutrients named with a source for each: carbohydrates (rice, bread, yam, sweet drinks), proteins (fish, chicken, peas, milk), lipids or fats (cooking oil, butter, fried food), and fibre (vegetables and whole-grain foods). Water must also be named as a nutrient.",
+          "1 mark for stating that carbohydrates are the main source of energy for the body, or that proteins are needed for growth and for the repair of tissues.",
+          "1 mark for vitamin A: function (needed for vision in dim light and for healthy skin and linings) and a source (carrots, pumpkin or dark green leafy vegetables).",
+          "1 mark for vitamin C: function (healthy gums and skin, healing wounds, absorption of iron) and a source (citrus fruits, guava).",
+          "1 mark for vitamin D and calcium together: vitamin D helps the body absorb calcium, which is needed for strong bones and teeth (source: sunlight and oily fish or milk; milk and cheese), and for iron: needed to make haemoglobin in the red blood cells (source: liver, lean meat, peas or dark green leafy vegetables).",
+          "1 mark for ONE named deficiency disease with its cause, its symptoms and its treatment: night blindness (too little vitamin A; poor vision in dim light and dry eyes; eat foods rich in vitamin A or take supplements); anaemia (too little iron; pale skin, tiredness and breathlessness; eat iron-rich foods or take iron tablets); rickets (too little vitamin D or calcium; soft, bent bones; eat foods rich in vitamin D and calcium and get sunlight). Up to a maximum of 6 marks."
+        ],
+        "commandWords": [
+          "Describe",
+          "State"
+        ]
+      },
+      {
+        "label": "(b)",
+        "prompt": "Use Table 1 to calculate the body mass index of the mother and of the 12-year-old daughter. State, with a reason, which member of the family is obese. Explain TWO effects of over-nutrition and TWO effects of under-nutrition on the body. Suggest TWO changes to the family's diet and routine that would lower the risk of the mother's type II diabetes and the grandmother's hypertension becoming worse, and explain how each change helps.",
+        "marks": 9,
+        "modelAnswer": "Body mass index = mass / (height x height). For the mother: 74 / (1.55 x 1.55) = 74 / 2.4025 = 30.8. For the daughter: 62 / (1.50 x 1.50) = 62 / 2.25 = 27.6. The mother is obese, because her body mass index of 30.8 is 30 or more, which is the level at which a person is described as obese. (For comparison, the grandmother's index is 26.6 and the son's is 12.2.)\n\nOver-nutrition, that is eating more energy than the body uses, makes the body store the extra energy as fat, so the person gains weight and becomes obese. The extra fat and weight put a strain on the heart, because the heart has to pump blood through a larger body, and this raises the blood pressure; obesity is also a major cause of type II diabetes, because the cells of the body become less able to respond to insulin, so the blood sugar stays too high. Fat stored around the abdomen also presses on the organs and makes breathing and moving more difficult, and the extra weight damages the joints of the knees and hips.\n\nUnder-nutrition, that is a diet that does not supply enough energy or the right nutrients, has the opposite effects. The body uses its own stores of fat and then its muscle, so the person loses weight and the muscles waste away, and a young child who does not get enough protein and energy develops kwashiorkor or marasmus. The person is also short of the vitamins and minerals needed to fight infection, so he or she falls ill more often and takes longer to recover, and a shortage of iron causes anaemia, while a shortage of calcium and vitamin D makes the bones weak. This is why the 5-year-old son, who is often ill and has lost weight, needs a better diet.\n\nThe first change is to cut down on fried food and sweetened fizzy drinks and to eat more fruit, vegetables and peas: this lowers the amount of energy, fat and sugar the family takes in, so the mother's weight and blood sugar fall and her type II diabetes is easier to control, and less salt in bought food helps to lower the grandmother's blood pressure. The second change is to build regular exercise into the day, for example walking or playing outside for at least 30 minutes every day: exercise uses up energy, so it helps to reduce weight, and it makes the muscles respond better to insulin, which lowers the blood sugar, while being more active also helps to bring the blood pressure down. Both changes must go with taking the tablets the doctor prescribes and going back to the clinic for checks.",
+        "markScheme": [
+          "1 mark for the mother's BMI worked out correctly as 30.8 (accept 30.8, or 30.7 to 31 with the working shown).",
+          "1 mark for the daughter's BMI worked out correctly as 27.6 (accept 27.6, or 27.5 to 27.7 with the working shown).",
+          "1 mark for identifying the mother as the obese member of the family, with the reason that her BMI is 30 or more.",
+          "1 mark for each effect of over-nutrition described, maximum 2 marks: for example the body stores the extra energy as fat, so the person gains weight and becomes obese; the heart has to work harder to pump blood through the larger body, so the blood pressure rises; the cells respond less well to insulin, so type II diabetes develops; the extra weight damages the joints and makes movement and breathing more difficult.",
+          "1 mark for each effect of under-nutrition described, maximum 2 marks: for example the body uses up its fat and then its muscle, so the person loses weight and the muscles waste; a young child short of protein and energy develops kwashiorkor or marasmus; too little iron causes anaemia; too little calcium and vitamin D weakens the bones; the body cannot fight infection well, so the person is ill more often.",
+          "1 mark for each change suggested together with how it helps, maximum 2 marks: for example eat less fried food and fewer sweet drinks and more fruit, vegetables and peas, which lowers the energy, fat, sugar and salt taken in, so weight and blood sugar fall and blood pressure is lowered; take regular exercise for at least 30 minutes a day, which uses up energy and helps the muscles respond to insulin, so weight, blood sugar and blood pressure fall; reduce salt in cooking and avoid salty snacks, which lowers blood pressure; take the tablets prescribed and return to the clinic for regular checks.",
+          "Do not award a change with no explanation of how it helps, and do not award a second mark for repeating the same change (up to a maximum of 9 marks)."
+        ],
+        "commandWords": [
+          "Calculate",
+          "State",
+          "Explain",
+          "Suggest"
+        ]
+      }
+    ],
+    "examinerTips": "Calculations earn marks for the working as well as the answer, so write the formula, substitute the values, and then give the answer to one decimal place. When you are asked for effects of over-nutrition and under-nutrition, keep the two groups separate: the family in this passage shows both, in the mother and the grandmother on the one hand and the 5-year-old son on the other."
+  }
+]
