@@ -118,7 +118,7 @@
  },
  {
   "id": "q10",
-  "question": "What is the correct CSS syntax to change the text color of all <p> elements to red?",
+  "question": "What is the correct CSS syntax to change the text colour of all <p> elements to red?",
   "options": [
    "p {color: red;}",
    "<p style='color:red;'>",
