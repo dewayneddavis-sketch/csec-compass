@@ -100,7 +100,14 @@
         "experiment": {
           "type": "drag-drop",
           "description": "Cell Parts Match: Match each part of a cell to the job it does in the cell."
-        }
+        },
+        "figures": [
+          {
+            "src": "/content/integrated-science/figures/is-cells-plant-animal.svg",
+            "alt": "A plant cell and an animal cell side by side with only the parts this lesson names labelled - both have a cell membrane, cytoplasm and genetic material, while only the plant cell has a cellulose cell wall, a large vacuole and green chloroplasts - and below them three small panels show diffusion, osmosis and active transport.",
+            "caption": "A plant cell and an animal cell are built from the same basic parts; only plant cells also have a cell wall, a large vacuole and chloroplasts."
+          }
+        ]
       },
       {
         "id": "is-l2-2",
@@ -331,7 +338,14 @@
         "experiment": {
           "type": "circuit-builder",
           "description": "Circuits Match: Match each circuit, current and unit term to the meaning that matches it."
-        }
+        },
+        "figures": [
+          {
+            "src": "/content/integrated-science/figures/is-circuits-series-parallel.svg",
+            "alt": "A series circuit with the components in one loop and a parallel circuit with them on separate branches, drawn with conventional symbols, above a key of those symbols (source, connecting wire, switch, component) and the safety devices the lesson names: a fuse, an earth wire, and a plug and socket.",
+            "caption": "In a series circuit one failure breaks the whole loop; in a parallel circuit each branch gets the full voltage and can fail alone, which is why household wiring is parallel."
+          }
+        ]
       },
       {
         "id": "is-l5-2",
@@ -377,7 +391,14 @@
         "experiment": {
           "type": "heat-sim",
           "description": "Heat Transfer Match: Match each heat transfer term to the meaning that matches it."
-        }
+        },
+        "figures": [
+          {
+            "src": "/content/integrated-science/figures/is-heat-transfer-control.svg",
+            "alt": "Four labelled panels: particles vibrating along a metal bar from its hot end to its cold end, a warmed fluid rising and a cooled fluid sinking in a vessel, electromagnetic waves crossing empty space from the Sun, and a cutaway thermos flask showing the vacuum, the silvered surfaces and the stopper.",
+            "caption": "A thermos flask combines a vacuum, silvered surfaces and a stopper to block all three mechanisms at once."
+          }
+        ]
       }
     ]
   },
