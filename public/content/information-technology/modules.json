@@ -155,7 +155,7 @@
             {
                 "id": "it-l4-2",
                 "title": "Internet Security & Ethics",
-                "content": "As we become more connected, internet security and ethics become increasingly important. Security threats include malware (viruses, worms, trojans), phishing (deceptive emails to steal information), and hacking (unauthorized access to a system). Protection methods include using strong passwords, firewalls (which monitor network traffic), encryption (scrambling data), and antivirus software.\n\nIT ethics refers to the responsible and legal use of technology. This includes respecting intellectual property rights (avoiding software piracy and plagiarism) and following acceptable use policies. Data privacy is also a major ethical concern \u2014 organizations must protect the personal information they collect from users and comply with data protection laws.\n\nCSEC IT students must understand these threats and the measures taken to mitigate them. You will also discuss the social and ethical implications of IT, such as the 'digital divide' and the impact of technology on employment and privacy. Being a responsible digital citizen means using technology in a way that is safe, legal, and ethical.",
+                "content": "As we become more connected, internet security and ethics become increasingly important. Security threats include malware (viruses, worms, trojans), phishing (deceptive emails to steal information), and hacking (unauthorised access to a system). Protection methods include using strong passwords, firewalls (which monitor network traffic), encryption (scrambling data), and antivirus software.\n\nIT ethics refers to the responsible and legal use of technology. This includes respecting intellectual property rights (avoiding software piracy and plagiarism) and following acceptable use policies. Data privacy is also a major ethical concern \u2014 organisations must protect the personal information they collect from users and comply with data protection laws.\n\nCSEC IT students must understand these threats and the measures taken to mitigate them. You will also discuss the social and ethical implications of IT, such as the 'digital divide' and the impact of technology on employment and privacy. Being a responsible digital citizen means using technology in a way that is safe, legal, and ethical.",
                 "objectives": [
                     "Identify security threats and protection methods",
                     "Understand ethical IT use"
@@ -220,7 +220,7 @@
             {
                 "id": "it-l6-1",
                 "title": "Advanced Word Processing",
-                "content": "Word processing is more than just typing text; it involves professional formatting and automation to create high-quality documents. Advanced features tested on CSEC include 'Mail Merge,' which allows you to create personalized letters or labels for a large group of people by linking a document to a data source (like a database or spreadsheet).\n\nOther important tools include the automatic generation of Tables of Contents, the use of columns for newsletter-style layouts, and the application of 'Styles' to ensure consistent formatting throughout a long document. You will also learn to insert and format tables, images, and other objects to enhance the visual appeal and clarity of your work.\n\nEffective word processing also involves using tools like spell check, thesaurus, and track changes for collaboration. Practise creating complex documents like reports and brochures, paying attention to layout, font choices, and the use of white space. These skills are essential for success in school, university, and the professional world.",
+                "content": "Word processing is more than just typing text; it involves professional formatting and automation to create high-quality documents. Advanced features tested on CSEC include 'Mail Merge,' which allows you to create personalised letters or labels for a large group of people by linking a document to a data source (like a database or spreadsheet).\n\nOther important tools include the automatic generation of Tables of Contents, the use of columns for newsletter-style layouts, and the application of 'Styles' to ensure consistent formatting throughout a long document. You will also learn to insert and format tables, images, and other objects to enhance the visual appeal and clarity of your work.\n\nEffective word processing also involves using tools like spell check, thesaurus, and track changes for collaboration. Practise creating complex documents like reports and brochures, paying attention to layout, font choices, and the use of white space. These skills are essential for success in school, university, and the professional world.",
                 "objectives": [
                     "Use mail merge and advanced formatting"
                 ],
@@ -232,15 +232,15 @@
                 ],
                 "experiment": {
                     "type": "code-playground",
-                    "description": "Mail Merge Simulator: Link a data source to a template letter and generate personalized invites for a group."
+                    "description": "Mail Merge Simulator: Link a data source to a template letter and generate personalised invites for a group."
                 }
             },
             {
                 "id": "it-l6-2",
                 "title": "Spreadsheet Formulas & Charts",
-                "content": "Spreadsheets are powerful tools for organising, analysing, and visualizing numerical data. They are made up of 'cells' arranged in rows and columns. A key feature of spreadsheets is the use of formulas and functions to perform calculations automatically. Formulas always start with an equals sign (=) and can include cell references, numbers, and operators (like +, -, *, /).\n\nFunctions are built-in formulas for complex tasks, such as SUM, AVERAGE, IF (for logical decisions), and VLOOKUP (to find data in a table). Understanding 'relative' vs. 'absolute' cell referencing ($A$1) is crucial when copying formulas. Once your data is organised, you can create 'Charts' (like bar, line, or pie charts) to visually represent trends and comparisons.\n\nCSEC IT students will learn to design efficient spreadsheets that use appropriate formulas and charts for a given scenario. You will also practise 'what-if' analysis \u2014 changing a value in one cell to see how it affects the final results. Spreadsheets are used in almost every field, from personal budgeting to complex financial modeling and scientific research.",
+                "content": "Spreadsheets are powerful tools for organising, analysing, and visualising numerical data. They are made up of 'cells' arranged in rows and columns. A key feature of spreadsheets is the use of formulas and functions to perform calculations automatically. Formulas always start with an equals sign (=) and can include cell references, numbers, and operators (like +, -, *, /).\n\nFunctions are built-in formulas for complex tasks, such as SUM, AVERAGE, IF (for logical decisions), and VLOOKUP (to find data in a table). Understanding 'relative' vs. 'absolute' cell referencing ($A$1) is crucial when copying formulas. Once your data is organised, you can create 'Charts' (like bar, line, or pie charts) to visually represent trends and comparisons.\n\nCSEC IT students will learn to design efficient spreadsheets that use appropriate formulas and charts for a given scenario. You will also practise 'what-if' analysis \u2014 changing a value in one cell to see how it affects the final results. Spreadsheets are used in almost every field, from personal budgeting to complex financial modelling and scientific research.",
                 "objectives": [
-                    "Use complex formulas and create data visualizations"
+                    "Use complex formulas and create data visualisations"
                 ],
                 "concepts": [
                     "Absolute/Relative Referencing",
@@ -250,7 +250,7 @@
                 ],
                 "experiment": {
                     "type": "code-playground",
-                    "description": "Budget Visualizer: Input financial data using formulas and select the best chart type to represent the trends."
+                    "description": "Budget Visualiser: Input financial data using formulas and select the best chart type to represent the trends."
                 }
             }
         ]
