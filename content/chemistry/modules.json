@@ -58,7 +58,7 @@
             {
                 "id": "periodic-table-trends",
                 "title": "Periodic Table Trends",
-                "content": "The Periodic Table is an organised arrangement of all known chemical elements, ordered by increasing atomic number. Elements are arranged in vertical columns called 'Groups' and horizontal rows called 'Periods.' Elements in the same group have the same number of valence (outer shell) electrons, which gives them similar chemical properties.\n\nSeveral important trends appear across the table. Atomic radius generally decreases from left to right across a period because the increasing nuclear charge pulls the electrons closer. Conversely, it increases down a group as more energy levels are added. Electronegativity (the ability to attract electrons) and ionization energy (the energy needed to remove an electron) both tend to increase across a period and decrease down a group.\n\nCSEC Chemistry often focuses on Group 1 (Alkali Metals), Group 7 (Halogens), and Group 0 (Noble Gases). Group 1 metals become more reactive as you go down the group because the outer electron is further from the nucleus and easier to lose. Group 7 non-metals become less reactive down the group as it becomes harder to attract an electron.",
+                "content": "The Periodic Table is an organised arrangement of all known chemical elements, ordered by increasing atomic number. Elements are arranged in vertical columns called 'Groups' and horizontal rows called 'Periods.' Elements in the same group have the same number of valence (outer shell) electrons, which gives them similar chemical properties.\n\nSeveral important trends appear across the table. Atomic radius generally decreases from left to right across a period because the increasing nuclear charge pulls the electrons closer. Conversely, it increases down a group as more energy levels are added. Electronegativity (the ability to attract electrons) and ionisation energy (the energy needed to remove an electron) both tend to increase across a period and decrease down a group.\n\nCSEC Chemistry often focuses on Group 1 (Alkali Metals), Group 7 (Halogens), and Group 0 (Noble Gases). Group 1 metals become more reactive as you go down the group because the outer electron is further from the nucleus and easier to lose. Group 7 non-metals become less reactive down the group as it becomes harder to attract an electron.",
                 "objectives": [
                     "Describe the arrangement of elements in the Periodic Table",
                     "Identify trends in groups and periods"
@@ -144,10 +144,10 @@
             },
             {
                 "id": "neutralization",
-                "title": "Neutralization and Salt Formation",
-                "content": "Neutralization is a chemical reaction between an acid and a base (or alkali) to produce a salt and water. The general equation is: Acid + Base \u2192 Salt + Water. For example, Hydrochloric acid reacts with Sodium hydroxide to form Sodium chloride (table salt) and water: HCl + NaOH \u2192 NaCl + H\u2082O.\n\nThe 'salt' produced depends on the specific acid and base used. Hydrochloric acid produces chlorides, sulfuric acid produces sulfates, and nitric acid produces nitrates. If the base is a carbonate, the reaction also produces carbon dioxide gas: Acid + Metal Carbonate \u2192 Salt + Water + Carbon Dioxide.\n\nTitration is the common laboratory technique used to find the exact volume of acid needed to neutralize a set volume of base. A burette is used to add one reactant to the other until an indicator shows the reaction is complete. This topic is a favorite for CSEC practical and paper 2 questions, often requiring you to calculate concentrations from titration data.",
+                "title": "Neutralisation and Salt Formation",
+                "content": "Neutralisation is a chemical reaction between an acid and a base (or alkali) to produce a salt and water. The general equation is: Acid + Base \u2192 Salt + Water. For example, Hydrochloric acid reacts with Sodium hydroxide to form Sodium chloride (table salt) and water: HCl + NaOH \u2192 NaCl + H\u2082O.\n\nThe 'salt' produced depends on the specific acid and base used. Hydrochloric acid produces chlorides, sulphuric acid produces sulphates, and nitric acid produces nitrates. If the base is a carbonate, the reaction also produces carbon dioxide gas: Acid + Metal Carbonate \u2192 Salt + Water + Carbon Dioxide.\n\nTitration is the common laboratory technique used to find the exact volume of acid needed to neutralise a set volume of base. A burette is used to add one reactant to the other until an indicator shows the reaction is complete. This topic is a favourite for CSEC practical and paper 2 questions, often requiring you to calculate concentrations from titration data.",
                 "objectives": [
-                    "Explain the process of neutralization",
+                    "Explain the process of neutralisation",
                     "Identify the products of acid-base reactions"
                 ],
                 "concepts": [
@@ -155,7 +155,7 @@
                 ],
                 "experiment": {
                     "type": "titration-sim",
-                    "description": "Titration Challenge: Carefully add a base to an acid using a burette until the indicator changes colour to find the exact neutralization point."
+                    "description": "Titration Challenge: Carefully add a base to an acid using a burette until the indicator changes colour to find the exact neutralisation point."
                 }
             }
         ]
@@ -167,17 +167,17 @@
             {
                 "id": "defining-redox",
                 "title": "Defining Redox",
-                "content": "Redox (reduction-oxidation) reactions involve the transfer of electrons between chemical species. Oxidation is defined as the loss of electrons, while reduction is the gain of electrons. A helpful mnemonic is OIL RIG: Oxidation Is Loss, Reduction Is Gain.\n\nIn any redox reaction, one substance is oxidized while another is reduced. The substance that accepts electrons and causes another to be oxidized is called the 'oxidizing agent' (it gets reduced itself). The substance that don'tates electrons and causes another to be reduced is the 'reducing agent' (it gets oxidized itself). Oxidation numbers are often used to track these changes; an increase in oxidation number indicates oxidation, while a decrease indicates reduction.\n\nCommon redox examples include the rusting of iron, the combustion of fuels, and the reactions in batteries. You will be asked to identify which species are being oxidized or reduced in a given equation and to write half-equations to show the movement of electrons.",
+                "content": "Redox (reduction-oxidation) reactions involve the transfer of electrons between chemical species. Oxidation is defined as the loss of electrons, while reduction is the gain of electrons. A helpful mnemonic is OIL RIG: Oxidation Is Loss, Reduction Is Gain.\n\nIn any redox reaction, one substance is oxidised while another is reduced. The substance that accepts electrons and causes another to be oxidised is called the 'oxidising agent' (it gets reduced itself). The substance that don'tates electrons and causes another to be reduced is the 'reducing agent' (it gets oxidised itself). Oxidation numbers are often used to track these changes; an increase in oxidation number indicates oxidation, while a decrease indicates reduction.\n\nCommon redox examples include the rusting of iron, the combustion of fuels, and the reactions in batteries. You will be asked to identify which species are being oxidised or reduced in a given equation and to write half-equations to show the movement of electrons.",
                 "objectives": [
                     "Define oxidation and reduction in terms of electron transfer",
-                    "Identify oxidizing and reducing agents"
+                    "Identify oxidising and reducing agents"
                 ],
                 "concepts": [
                     "OIL RIG: Oxidation Is Loss, Reduction Is Gain (of electrons)."
                 ],
                 "experiment": {
                     "type": "interactive-equation",
-                    "description": "Electron Flow: Click on atoms in a chemical equation to 'see' the transfer of electrons and label which species is oxidized or reduced."
+                    "description": "Electron Flow: Click on atoms in a chemical equation to 'see' the transfer of electrons and label which species is oxidised or reduced."
                 }
             }
         ]

@@ -46,7 +46,7 @@
      "notes": "Each pH unit = 10× change in H⁺ concentration. pH 2 is strongly acidic."
     },
     {
-     "name": "Neutralization (general)",
+     "name": "Neutralisation (general)",
      "formula": "acid + base → salt + water",
      "notes": "Example: HCl + NaOH → NaCl + H₂O."
     },
@@ -61,7 +61,7 @@
      "notes": "Test for CO₂: turns limewater milky."
     },
     {
-     "name": "Ionic equation (neutralization)",
+     "name": "Ionic equation (neutralisation)",
      "formula": "H⁺(aq) + OH⁻(aq) → H₂O(l)",
      "notes": "Spectator ions cancel out."
     },
@@ -78,12 +78,12 @@
     {
      "name": "OILRIG",
      "formula": "Oxidation Is Loss (of electrons); Reduction Is Gain",
-     "notes": "Oxidation number rises = oxidized; falls = reduced."
+     "notes": "Oxidation number rises = oxidised; falls = reduced."
     },
     {
      "name": "Displacement example",
      "formula": "Zn + CuSO₄ → ZnSO₄ + Cu",
-     "notes": "Zinc is oxidized (0 → +2); copper ions reduced (+2 → 0)."
+     "notes": "Zinc is oxidised (0 → +2); copper ions reduced (+2 → 0)."
     },
     {
      "name": "Reactivity series (key order)",
@@ -98,7 +98,7 @@
     {
      "name": "Rust prevention",
      "formula": "rusting needs oxygen AND water",
-     "notes": "Prevent by painting, oiling, galvanizing (zinc coating) or sacrificial protection."
+     "notes": "Prevent by painting, oiling, galvanising (zinc coating) or sacrificial protection."
     }
    ]
   },
@@ -112,7 +112,7 @@
     },
     {
      "name": "Trend across a period",
-     "formula": "atomic radius decreases; electronegativity and ionization energy increase",
+     "formula": "atomic radius decreases; electronegativity and ionisation energy increase",
      "notes": "Stronger nuclear pull on the same shell."
     },
     {
@@ -161,7 +161,7 @@
      "notes": "Compromise conditions: good rate without killing the yield."
     },
     {
-     "name": "Contact process (sulfuric acid)",
+     "name": "Contact process (sulphuric acid)",
      "formula": "2SO₂ + O₂ ⇌ 2SO₃ (V₂O₅ catalyst)",
      "notes": "SO₃ absorbed in concentrated H₂SO₄ to make oleum, then diluted."
     },
