@@ -222,7 +222,7 @@
  },
  {
   "id": "q18",
-  "question": "Which account is credited when a business pays rent by check?",
+  "question": "Which account is credited when a business pays rent by cheque?",
   "options": [
    "Rent Account",
    "Cash Account",
@@ -230,7 +230,7 @@
    "Capital Account"
   ],
   "answer": "Bank Account",
-  "explanation": "Paying by check reduces the bank balance, so the Bank account is credited.",
+  "explanation": "Paying by cheque reduces the bank balance, so the Bank account is credited.",
   "topic": "double-entry-system"
  },
  {
