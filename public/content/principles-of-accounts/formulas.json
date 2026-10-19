@@ -63,7 +63,7 @@
     {
      "name": "Cost of sales",
      "formula": "opening stock + purchases (+ carriage inwards) − closing stock",
-     "notes": "Closing stock valued at lower of cost and net realizable value."
+     "notes": "Closing stock valued at lower of cost and net realisable value."
     },
     {
      "name": "Gross profit",
