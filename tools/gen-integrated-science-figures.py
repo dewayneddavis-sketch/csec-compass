@@ -73,6 +73,14 @@ BIO_WALL_RECT = ('<rect x="250" y="120" width="450" height="390" rx="16" fill="#
                  'stroke="{WALL}" stroke-width="14"/>')
 BIO_BLOB = ("M 478,690 C 596,684 682,746 696,850 C 708,946 664,1036 582,1076 "
             "C 504,1114 396,1098 326,1034 C 266,978 246,882 260,800 C 276,710 364,696 478,690 Z")
+# The rest of the animal cell is shared artwork too, so it is held to the same rule: the
+# lower mitochondrion, the Golgi body's three folds and the "cell membrane" leader's landing
+# point are the SAME numbers Biology ships.  (Before this they had silently drifted apart —
+# the Golgi and the leader were drawn past the membrane in every copy.  See
+# docs/screenshots/shared-cell-artwork/README.md.)
+BIO_MITO_LOWER = (352, 1008, 100, 48)          # x, y, w, h
+BIO_GOLGI_FOLDS = ((568, 962, 88), (572, 984, 80), (576, 1006, 72))   # x, y, w
+BIO_CELL_MEMBRANE_LEADER_ENDPOINT = (310, 734)  # the leader's dot, just inside the membrane
 # Physics (gen-physics-figures.mjs, circuits()): the series loop corners and the parallel rails.
 PHY_SERIES = (92, 318, 176, 262)      # SL, SR, ST, SB
 PHY_SERIES_Y = 219                    # SY — the battery's y
@@ -191,7 +199,22 @@ def assert_borrowed_geometry(root="."):
     sibling subject's shipped SVG. This is what makes the reuse a checked copy, not a fork."""
     bio = io.open(os.path.join(root, BIOLOGY_CELLS), encoding="utf-8").read()
     wall = BIO_WALL_RECT.format(WALL=WALL)
-    for label, needle in (("plant cell wall rect", wall), ("animal cell outline", BIO_BLOB)):
+    mx, my, mw, mh = BIO_MITO_LOWER
+    mito_rect = (f'<rect x="{mx}" y="{my}" width="{mw}" height="{mh}" rx="{mh/2}" '
+                 f'fill="{MIT}" stroke="{MIT_L}" stroke-width="3"/>')
+    mito_fold = (f'<path d="M {mx+14},{my+mh/2} q 12,-11 24,0 q 12,11 24,0 q 12,-11 24,0" '
+                 f'fill="none" stroke="{MIT_L}" stroke-width="2.5"/>')
+    lx, ly = BIO_CELL_MEMBRANE_LEADER_ENDPOINT
+    leader = (f'<line x1="{lx-76}" y1="700" x2="{lx}" y2="{ly}" stroke="{LINE}" '
+              f'stroke-width="2"/><circle cx="{lx}" cy="{ly}" r="4.5" fill="{LINE}"/>')
+    needles = [("plant cell wall rect", wall), ("animal cell outline", BIO_BLOB),
+               ("lower mitochondrion", mito_rect), ("lower mitochondrion fold", mito_fold),
+               ("cell-membrane leader", leader)]
+    for gx, gy, gw in BIO_GOLGI_FOLDS:
+        needles.append((f"Golgi fold at {gx},{gy}",
+                        f'<path d="M {gx},{gy} q {gw/2},-16 {gw},0" fill="none" '
+                        f'stroke="{GOLGI_L}" stroke-width="9" stroke-linecap="round"/>'))
+    for label, needle in needles:
         if needle not in bio:
             raise SystemExit(f"borrowed geometry has DRIFTED: {label} is not in {BIOLOGY_CELLS}")
     phy = io.open(os.path.join(root, PHYSICS_CIRCUITS), encoding="utf-8").read()
@@ -252,8 +275,8 @@ def figure_cells():
     b.append(f'<circle cx="560" cy="800" r="46" fill="{NUC}" stroke="{NUC_L}" stroke-width="4"/>')
     b.append(f'<circle cx="560" cy="800" r="16" fill="{NUC_L}"/>')
     b.append(mitochondrion(336, 772, 100, 48))
-    b.append(mitochondrion(352, 1022, 100, 48))
-    for x, y, w in [(600, 962, 88), (604, 984, 80), (608, 1006, 72)]:
+    b.append(mitochondrion(*BIO_MITO_LOWER))
+    for x, y, w in BIO_GOLGI_FOLDS:
         b.append(f'<path d="M {x},{y} q {w/2},-16 {w},0" fill="none" stroke="{GOLGI_L}" '
                  f'stroke-width="9" stroke-linecap="round"/>')
         b.append(f'<path d="M {x},{y} q {w/2},-16 {w},0" fill="none" stroke="{GOLGI}" '
@@ -261,7 +284,7 @@ def figure_cells():
     for cx, cy in [(330, 890), (655, 862)]:
         b.append(f'<circle cx="{cx}" cy="{cy}" r="18" fill="{LYSO}" stroke="{LYSO_L}" stroke-width="3"/>')
     b.append(dots([(400, 968), (490, 752), (622, 930), (300, 800), (500, 1052)]))
-    b.append(margin_label(240, 700, 300, 704, "cell membrane", "end"))
+    b.append(margin_label(240, 700, *BIO_CELL_MEMBRANE_LEADER_ENDPOINT, "cell membrane", "end"))
     b.append(margin_label(240, 890, 288, 890, "cytoplasm", "end"))
     b.append(margin_label(726, 800, 608, 800, "genetic material", "start"))
 
