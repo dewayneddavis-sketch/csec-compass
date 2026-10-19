@@ -113,7 +113,7 @@
             "X-ray"
         ],
         "answer": "Gamma",
-        "explanation": "Gamma rays are high-energy electromagnetic waves and can pass through several centimeters of lead.",
+        "explanation": "Gamma rays are high-energy electromagnetic waves and can pass through several centimetres of lead.",
         "topic": "radioactivity"
     },
     {
@@ -235,7 +235,7 @@
     },
     {
         "id": "q19",
-        "question": "Which color of visible light has the longest wavelength?",
+        "question": "Which colour of visible light has the longest wavelength?",
         "options": [
             "Blue",
             "Green",
