@@ -41,6 +41,37 @@ const PRE_EXISTING = [
   "hsb-l4-1", "hsb-l4-2", "hsb-l5-1", "hsb-l5-2", "hsb-l6-1", "hsb-l6-2", "hsb-l6-3",
 ];
 const NEW_LESSONS = ["hsb-l7-1", "hsb-l7-2", "hsb-l7-3", "hsb-l7-4"];
+// The swap: the bank may not grow past its published floor, so each new Section C
+// question retires one item. WHAT each retirement actually is, stated plainly
+// (measured against the surviving bank, not assumed):
+//   exact repeats  — the fact is asked again by a surviving item, often word for word
+//                    across the two banks:
+//     p96 "Sexually transmitted infections can be prevented by: using condoms"
+//         repeats p12 "Which contraceptive method also provides significant protection
+//         against Sexually Transmitted Infections?" (Condoms) and p61 (barrier method);
+//     q6  "Which food group is the primary source of energy for the human body?"
+//         repeats practice p72 "Which nutrient is the body's main source of energy?";
+//     q9  "How do vaccines typically work?" repeats practice p8 "Vaccinations provide
+//         'active immunity' because they:";
+//     q24 "Which method of contraception also helps prevent STIs?" repeats p12/p61.
+//   subsumed — the surviving item already contains the fact:
+//     p22 "Blood flows from the right ventricle to the: lungs" is inside p3's full
+//         deoxygenated pathway (right atrium → right ventricle → pulmonary artery);
+//     p18 "When the biceps contracts, the arm: bends (flexes)" is inside p2
+//         ("when you bend your arm at the elbow, the biceps contracts and the triceps
+//         relaxes"); p19 (triceps straightens the arm) is the same muscle pair, one step on.
+//   lowest-yield, NOT a repeat — declared here rather than dressed up as a duplicate:
+//     p14 "The point where two bones meet is called a: joint" (the joint/muscle cluster
+//         keeps p15 ligament, p16 tendon, p1 skeleton functions, p2 antagonistic pair);
+//     p68 "Obesity increases the risk of: heart disease" (hsb-l4-1 keeps p69 prevention,
+//         p70 hypertension, p7 non-communicable disease);
+//     p87 "The appendix is attached to the" (hsb-l3-2 keeps 7 items incl. p86 water
+//         absorption in the large intestine);
+//     q10 "Which Gas is the main contributor to the Greenhouse Effect and Global Warming?"
+//         — the weaker of the two hsb-l5-1 greenhouse questions (q25 keeps the effect
+//         itself) and the one carrying a capitalisation defect on 'Gas'.
+// No pre-existing lesson is left with zero questions (asserted below), and no retire
+// touched a Section C lesson, so the four new lessons are additions, not replacements.
 const RETIRED_PRACTICE = ["p14", "p18", "p19", "p22", "p68", "p87", "p95", "p96"];
 const ADDED_PRACTICE = ["p108", "p109", "p110", "p111", "p112", "p113", "p114", "p115"];
 const RETIRED_KC = ["q6", "q9", "q10", "q24"];
@@ -176,8 +207,8 @@ const kc = readJson(`content/${SUB}/knowledge-check.json`);
 section("5. the re-tag / retire / add arithmetic ties exactly");
 {
   const bank = new Map([...practice, ...kc].map((q) => [q.id, q]));
-  for (const id of RETIRED_PRACTICE) check(!bank.has(id), `practice: retired duplicate ${id} is gone`);
-  for (const id of RETIRED_KC) check(!bank.has(id), `knowledge check: retired duplicate ${id} is gone`);
+  for (const id of RETIRED_PRACTICE) check(!bank.has(id), `practice: retired item ${id} is gone`);
+  for (const id of RETIRED_KC) check(!bank.has(id), `knowledge check: retired item ${id} is gone`);
   for (const id of [...ADDED_PRACTICE, ...ADDED_KC]) {
     check(bank.has(id), `${id}: new question shipped`);
     check(bank.get(id)?.topic && NEW_LESSONS.includes(bank.get(id).topic), `${id}: is tagged to a Section C lesson (${bank.get(id)?.topic})`);
