@@ -31,6 +31,9 @@ export default function Home() {
         <div className="home-cta-row">
           <a href="#subjects" className="home-cta">Browse All Subjects →</a>
           <Link to="/subject/english-a" className="home-cta home-cta-secondary">Try a Free Sample Lesson →</Link>
+          {/* A parent landing here needs one obvious way in (owner direction
+              2026-10-19, the "For parents" page). */}
+          <Link to="/for-parents" className="home-cta home-cta-secondary">For parents →</Link>
         </div>
         <p className="home-cta-note">No signup needed — see how it works first</p>
       </section>
