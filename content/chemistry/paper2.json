@@ -408,7 +408,7 @@
     "type": "write",
     "paper": 2,
     "section": "Section B",
-    "title": "Acids, bases and the heat of neutralization",
+    "title": "Acids, bases and the heat of neutralisation",
     "topic": "neutralization",
     "commandWords": [
       "Define",
@@ -426,17 +426,17 @@
       "The temperature change is the rise in temperature, T(final) - T(initial).",
       "The energy released is E = mc(Delta T); use the mass of the whole mixture and c = 4.2 J/g°C.",
       "The number of moles of water formed comes from the moles of the limiting reactant, calculated with n = c × V (V in dm3).",
-      "Report an enthalpy change of neutralization in kJ per mole and remember the negative sign for an exothermic reaction."
+      "Report an enthalpy change of neutralisation in kJ per mole and remember the negative sign for an exothermic reaction."
     ],
     "parts": [
       {
         "label": "(a)(i)",
-        "prompt": "Define the term 'neutralization'.",
+        "prompt": "Define the term 'neutralisation'.",
         "marks": 2,
         "commandWords": [
           "Define"
         ],
-        "modelAnswer": "Neutralization is the reaction between an acid and a base (an alkali) in which hydrogen ions, H+, from the acid react with hydroxide ions, OH−, from the base to form water, giving a salt and water.",
+        "modelAnswer": "Neutralisation is the reaction between an acid and a base (an alkali) in which hydrogen ions, H+, from the acid react with hydroxide ions, OH−, from the base to form water, giving a salt and water.",
         "markScheme": [
           "1 mark for a reaction between an acid and a base (an alkali) that produces a salt and water.",
           "1 mark for the reaction of H+ ions with OH− ions to form water (H+ + OH− → H2O)."
@@ -457,7 +457,7 @@
       },
       {
         "label": "(a)(iii)",
-        "prompt": "Write the ionic equation for this neutralization reaction.",
+        "prompt": "Write the ionic equation for this neutralisation reaction.",
         "marks": 2,
         "commandWords": [
           "State"
@@ -484,7 +484,7 @@
       },
       {
         "label": "(a)(v)",
-        "prompt": "Calculate the number of moles of water formed, and hence calculate the enthalpy change of neutralization, in kJ per mole, for this reaction.",
+        "prompt": "Calculate the number of moles of water formed, and hence calculate the enthalpy change of neutralisation, in kJ per mole, for this reaction.",
         "marks": 3,
         "commandWords": [
           "Calculate"
@@ -522,7 +522,7 @@
         ]
       }
     ],
-    "examinerTips": "In an energy calculation the mass used in E = mc(Delta T) is the mass of the whole mixture, and the temperature change is the rise, not the final temperature. Never forget the negative sign when you report an enthalpy change of neutralization - the reaction releases heat."
+    "examinerTips": "In an energy calculation the mass used in E = mc(Delta T) is the mass of the whole mixture, and the temperature change is the rise, not the final temperature. Never forget the negative sign when you report an enthalpy change of neutralisation - the reaction releases heat."
   },
   {
     "id": "ch-p2-05",

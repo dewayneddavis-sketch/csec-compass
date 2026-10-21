@@ -31,11 +31,11 @@
   "options": [
    "Atomic radius increases",
    "Electronegativity decreases",
-   "Ionization energy increases",
+   "Ionisation energy increases",
    "Metallic character increases"
   ],
-  "answer": "Ionization energy increases",
-  "explanation": "Across a period, nuclear charge increases, making it harder to remove an electron, thus increasing ionization energy.",
+  "answer": "Ionisation energy increases",
+  "explanation": "Across a period, nuclear charge increases, making it harder to remove an electron, thus increasing ionisation energy.",
   "topic": "periodic-table-trends"
  },
  {
@@ -44,7 +44,7 @@
   "options": [
    "Sharing of electrons",
    "Transfer of electrons",
-   "Delocalization of electrons",
+   "Delocalisation of electrons",
    "Attraction of dipoles"
   ],
   "answer": "Transfer of electrons",
@@ -79,7 +79,7 @@
  },
  {
   "id": "p7",
-  "question": "What are the products of a neutralization reaction between an acid and a base?",
+  "question": "What are the products of a neutralisation reaction between an acid and a base?",
   "options": [
    "Salt and Hydrogen",
    "Salt and Water",
@@ -87,7 +87,7 @@
    "Water and Oxygen"
   ],
   "answer": "Salt and Water",
-  "explanation": "Neutralization: Acid + Base -> Salt + Water.",
+  "explanation": "Neutralisation: Acid + Base -> Salt + Water.",
   "topic": "neutralization"
  },
  {

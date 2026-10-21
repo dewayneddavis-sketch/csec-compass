@@ -118,7 +118,7 @@
  },
  {
   "id": "q10",
-  "question": "What is the product of a neutralization reaction between an acid and a base?",
+  "question": "What is the product of a neutralisation reaction between an acid and a base?",
   "options": [
    "Salt and Oxygen",
    "Salt and Hydrogen",
@@ -126,7 +126,7 @@
    "Acid and Water"
   ],
   "answer": "Salt and Water",
-  "explanation": "Acid + Base -> Salt + Water is a standard neutralization reaction.",
+  "explanation": "Acid + Base -> Salt + Water is a standard neutralisation reaction.",
   "topic": "neutralization"
  },
  {
@@ -186,7 +186,7 @@
   "question": "Which process is used to separate a mixture of liquids with different boiling points?",
   "options": [
    "Filtration",
-   "Crystallization",
+   "Crystallisation",
    "Fractional distillation",
    "Chromatography"
   ],
@@ -278,11 +278,11 @@
   "options": [
    "Oxidation",
    "Reduction",
-   "Neutralization",
+   "Neutralisation",
    "Combustion"
   ],
-  "answer": "Neutralization",
-  "explanation": "Neutralization produces a salt and water.",
+  "answer": "Neutralisation",
+  "explanation": "Neutralisation produces a salt and water.",
   "topic": "neutralization"
  },
  {
@@ -292,7 +292,7 @@
    "Iron",
    "Mercury",
    "Copper",
-   "Aluminum"
+   "aluminium"
   ],
   "answer": "Mercury",
   "explanation": "Mercury is the only metal that is liquid at standard room temperature and pressure.",
