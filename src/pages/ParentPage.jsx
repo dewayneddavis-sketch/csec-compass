@@ -6,7 +6,7 @@ import StudentProgressDashboard from "../components/StudentProgressDashboard";
 // Parent progress dashboard.
 //
 // Shows the SAME per-student progress a teacher sees — lessons marked complete,
-// interactive labs opened and completed, Extra Practice / Mock Exam / Knowledge
+// interactive labs opened and completed, Practice Paper / Mock Exam / Knowledge
 // Check attempts with best and latest scores, and when the child was last active
 // — scoped to the children linked to this parent. The rendering is the shared
 // src/components/StudentProgressDashboard.jsx and the stylesheet is the

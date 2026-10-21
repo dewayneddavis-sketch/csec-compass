@@ -6,18 +6,21 @@ import {
   isWorkingComplete,
   loadWorkingDrafts,
   saveWorkingDrafts,
-  clearWorkingDrafts,
 } from "../data/showYourWork";
 import ShowYourWork from "./ShowYourWork";
 import WeakTopicsPanel from "./WeakTopicsPanel";
 import ReviewSolution from "./ReviewSolution";
 import SimilarQuestionPractice from "./SimilarQuestionPractice";
 import { canPractice, questionKey } from "../data/similarQuestion";
+import { splitPracticePapers } from "../data/practicePapers";
 import "./ExtraPractice.css";
 
 const QUIZ_TYPE = "practice";
 
-export default function ExtraPractice({ subjectId }) {
+// `paper` is which Practice Paper tab is open (1-based). Every paper is a slice
+// of the SAME practice bank, in bank order, 20 questions each — the split, the
+// labels and the bank ranges all come from src/data/practicePapers.js.
+export default function ExtraPractice({ subjectId, paper = 1 }) {
   const [exercises, setExercises] = useState(null);
   const [loading, setLoading] = useState(true);
   const [current, setCurrent] = useState(0);
@@ -57,7 +60,7 @@ export default function ExtraPractice({ subjectId }) {
       })
       .catch(() => setExercises(null))
       .finally(() => setLoading(false));
-  }, [subjectId]);
+  }, [subjectId, paper]);
 
   if (loading) {
     return (
@@ -84,8 +87,20 @@ export default function ExtraPractice({ subjectId }) {
     );
   }
 
-  const total = exercises.length;
-  const q = exercises[current];
+  const papers = splitPracticePapers(exercises);
+  // Clamped, so a link to a paper a short bank cannot fill still opens the last
+  // real one instead of an empty screen.
+  const currentPaper = papers[Math.min(Math.max(paper, 1), papers.length) - 1];
+  // This paper's 20 questions, in bank order. `offset` is where the paper begins
+  // in the bank: the Show-Your-Work drafts are keyed by bank position (exactly
+  // as they were before the split), so type-in on paper 1 cannot appear on the
+  // same-numbered question of paper 2.
+  const questions = currentPaper.questions;
+  const offset = currentPaper.start;
+  const bankTotal = exercises.length;
+  const subjectTitle = subjectId.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+  const total = questions.length;
+  const q = questions[current];
   const chosen = selected !== null ? selected : answers[current];
   const isAnswered = chosen !== undefined;
   const correctAnswer = q.answer;
@@ -94,21 +109,21 @@ export default function ExtraPractice({ subjectId }) {
   const allAnswered = answeredCount === total;
 
   // Show-Your-Work: working must be typed before the answer is banked/moved on.
-  // Extra Practice moves forwards only, so the gate is per question rather than
-  // over the whole attempt (a whole-attempt gate could strand a student on the
-  // last question with no way back to an earlier one).
-  const currentWorking = working[current] || "";
+  // A practice paper moves forwards only, so the gate is per question rather
+  // than over the whole attempt (a whole-attempt gate could strand a student on
+  // the last question with no way back to an earlier one).
+  const currentWorking = working[offset + current] || "";
   const workingOk = !showWork || isWorkingComplete(currentWorking);
 
   const correctCount = showResult
-    ? exercises.reduce((acc, ex, i) => acc + (answers[i] === ex.answer ? 1 : 0), 0)
+    ? questions.reduce((acc, ex, i) => acc + (answers[i] === ex.answer ? 1 : 0), 0)
     : 0;
   const scorePct = Math.round((correctCount / total) * 100);
   const passed = scorePct >= 60;
 
   function handleWorking(value) {
     setWorking((prev) => {
-      const next = { ...prev, [current]: value };
+      const next = { ...prev, [offset + current]: value };
       saveWorkingDrafts(subjectId, QUIZ_TYPE, next);
       return next;
     });
@@ -139,12 +154,20 @@ export default function ExtraPractice({ subjectId }) {
     if (finalChosen !== undefined && finalAnswers[current] === undefined) {
       finalAnswers[current] = finalChosen;
     }
+    // The attempt carries THIS paper's questions, and the working is re-keyed
+    // from bank position to the paper's own question order so each answer keeps
+    // the working that was typed beside it.
+    const paperWorking = {};
+    questions.forEach((_, i) => {
+      const text = working[offset + i];
+      if (text !== undefined) paperWorking[i] = text;
+    });
     const attempt = await recordQuizResult({
       subjectId,
       quizType: QUIZ_TYPE,
-      questions: exercises,
+      questions,
       answers: finalAnswers,
-      working,
+      working: paperWorking,
       session,
     });
     setLatestAttemptId(attempt?.attemptId || null);
@@ -162,12 +185,18 @@ export default function ExtraPractice({ subjectId }) {
     setCurrent(0);
     setSelected(null);
     setAnswers({});
-    setWorking({});
     setStarted(false);
     setShowResult(false);
     setLatestAttemptId(null);
     setPracticeKey(null);
-    clearWorkingDrafts(subjectId, QUIZ_TYPE);
+    // Only this paper's drafts are cleared: unfinished working on the other
+    // papers is still the student's own work.
+    setWorking((prev) => {
+      const next = { ...prev };
+      for (let i = offset; i < offset + total; i += 1) delete next[i];
+      saveWorkingDrafts(subjectId, QUIZ_TYPE, next);
+      return next;
+    });
   }
 
   // Start screen
@@ -176,16 +205,21 @@ export default function ExtraPractice({ subjectId }) {
       <div className="ep-container">
         <div className="ep-start-card">
           <div className="ep-icon-large">📝</div>
-          <h3>Practice: {subjectId.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}</h3>
-          <p>Test your skills with {total} practice questions. Get{" "}<strong>immediate feedback</strong>{" "}on each answer.</p>
+          <h3>Practice Paper {currentPaper.paper} of {papers.length}: {subjectTitle}</h3>
+          <p>
+            Questions <strong>{offset + 1}–{offset + total}</strong> of the{" "}
+            <strong>{bankTotal}</strong> questions in this subject's practice bank —
+            the same bank, in order, split into {papers.length} papers. Get{" "}
+            <strong>immediate feedback</strong>{" "}on each answer.
+          </p>
           {showWork && (
             <p className="ep-syw-notice">
               ✍️ <strong>Show your work:</strong> every question has a working box below the answer
               choices. Type the steps you used, then move on — your working is saved with the attempt.
             </p>
           )}
-          <p className="ep-note">You need 60% to pass. Retry as many times as you like!</p>
-          <button className="ep-btn ep-btn-primary" onClick={() => setStarted(true)}>Start Practice</button>
+          <p className="ep-note">You need 60% to pass this paper. Retry as many times as you like — each paper keeps its own working.</p>
+          <button className="ep-btn ep-btn-primary" onClick={() => setStarted(true)}>Start Practice Paper {currentPaper.paper}</button>
         </div>
         <div className="ep-footer-link">
           <a href="https://www.cxc.org/students-and-parents/past-papers/" target="_blank" rel="noopener noreferrer">📄 CXC Official Past Papers</a>
@@ -201,17 +235,17 @@ export default function ExtraPractice({ subjectId }) {
         <div className="ep-result-card">
           <div className="ep-icon-large">{passed ? "🎉" : "💪"}</div>
           <h3>{passed ? "Great Job!" : "Keep Practicing!"}</h3>
-          <p className="ep-score">You scored <strong>{correctCount}</strong> out of <strong>{total}</strong> ({scorePct}%)</p>
+          <p className="ep-score">Practice Paper {currentPaper.paper}: you scored <strong>{correctCount}</strong> out of <strong>{total}</strong> ({scorePct}%)</p>
           <p className="ep-msg">
             {passed ? "You've passed! Ready for the knowledge check." : "Review the material and give it another try."}
           </p>
           <div className="ep-review">
             <h4>Question Summary</h4>
             <div className="ep-review-grid">
-              {exercises.map((_, i) => (
+              {questions.map((_, i) => (
                 <button
                   key={i}
-                  className={`ep-jump-btn ${answers[i] === exercises[i].answer ? "correct" : "incorrect"}`}
+                  className={`ep-jump-btn ${answers[i] === questions[i].answer ? "correct" : "incorrect"}`}
                   onClick={() => {
                     // Jump back to re-attempt this question — clear its
                     // previous answer so it can be answered again.
@@ -227,7 +261,7 @@ export default function ExtraPractice({ subjectId }) {
                     // than carried over from the previous attempt.
                     setWorking((prev) => {
                       const next = { ...prev };
-                      delete next[i];
+                      delete next[offset + i];
                       saveWorkingDrafts(subjectId, QUIZ_TYPE, next);
                       return next;
                     });
@@ -240,7 +274,7 @@ export default function ExtraPractice({ subjectId }) {
               ))}
             </div>
             <div className="ep-review-list">
-              {exercises.map((ex, i) => {
+              {questions.map((ex, i) => {
                 const isRight = answers[i] === ex.answer;
                 return (
                   <div key={ex.id || i} className={`ep-review-item ${isRight ? "correct" : "incorrect"}`}>
@@ -252,10 +286,10 @@ export default function ExtraPractice({ subjectId }) {
                       Your answer: <strong>{answers[i] || "—"}</strong>
                       {!isRight && <> — Correct: <strong>{ex.answer}</strong></>}
                     </p>
-                    {showWork && working[i] && String(working[i]).trim() !== "" && (
+                    {showWork && working[offset + i] && String(working[offset + i]).trim() !== "" && (
                       <div className="ep-review-working">
                         <span className="ep-review-working-label">Your working</span>
-                        {working[i]}
+                        {working[offset + i]}
                       </div>
                     )}
                     <ReviewSolution
@@ -278,7 +312,7 @@ export default function ExtraPractice({ subjectId }) {
               })}
             </div>
           </div>
-          <button className="ep-btn ep-btn-secondary" onClick={handleRetry}>Retry Practice</button>
+          <button className="ep-btn ep-btn-secondary" onClick={handleRetry}>Retry Practice Paper {currentPaper.paper}</button>
           <WeakTopicsPanel subjectId={subjectId} latestAttemptId={latestAttemptId} />
         </div>
         <div className="ep-footer-link">
@@ -293,7 +327,7 @@ export default function ExtraPractice({ subjectId }) {
     <div className="ep-container">
       <div className="ep-card">
         <div className="ep-header-bar">
-          <h3>Practice: {subjectId.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}</h3>
+          <h3>Practice Paper {currentPaper.paper}: {subjectTitle}</h3>
           <span className="ep-progress">Question {current + 1} of {total}</span>
         </div>
 

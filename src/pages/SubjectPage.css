@@ -122,6 +122,26 @@
 .s-tab.active .s-tab-done {
   color: #ffffff;
 }
+/* The practice tabs (owner directive 2026-10-21). At five labels beginning
+   "Practice Paper", the full wording plus the eight other tabs is what wraps
+   awkwardly on a 390 px phone, so on a narrow screen the practice tabs show
+   their short label — PP1…PP5 — and the full "Practice Paper n" stays the
+   in-tab heading and the tab's accessible name (set in SubjectPage.jsx). The
+   two spans are always in the DOM; only one is ever displayed. */
+.s-tab-label-short {
+  display: none;
+}
+.s-tab-label-full {
+  display: inline;
+}
+@media (max-width: 560px) {
+  .s-tab-label-full {
+    display: none;
+  }
+  .s-tab-label-short {
+    display: inline;
+  }
+}
 
 /* Lessons layout */
 .s-lessons {

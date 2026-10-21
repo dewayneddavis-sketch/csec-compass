@@ -1,6 +1,6 @@
 // Analytics data layer — weak-topic tracking for quiz results.
 //
-// Every quiz attempt (knowledge check, extra practice, mock exam) is
+// Every quiz attempt (knowledge check, practice paper, mock exam) is
 // recorded per-question with its `topic` (lesson id) and correctness.
 // Storage strategy:
 //   - Always written to localStorage (works logged-out, gives the results
