@@ -140,8 +140,8 @@ export default function Paper2Section({ subjectId }) {
           <h3>Paper 2 is coming soon for this subject</h3>
           <p>Typed-answer Paper 2 questions are not available for this subject yet.</p>
           <p className="p2-note">
-            In the meantime, the Extra Practice tab has 100 multiple-choice questions and the
-            Knowledge Check tests the whole course.
+            In the meantime, the Practice Paper tabs hold 100 multiple-choice questions
+            (20 in each of the five papers) and the Knowledge Check tests the whole course.
           </p>
         </div>
       </div>

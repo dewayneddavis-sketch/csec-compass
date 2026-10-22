@@ -4,7 +4,7 @@
 // on every multiple-choice question the student must TYPE their working in a
 // large text box, so the answer proves they solved it rather than guessed or
 // copied. The box appears on the three ASSESSMENT surfaces only — Knowledge
-// Check, Extra Practice and Timed Mock Exam. It is deliberately NOT on the
+// Check, the Practice Papers and the Timed Mock Exam. It is deliberately NOT on the
 // lesson or lab tabs: during study the solving is the student's own business.
 //
 // Config-driven: add a subject id to `subjects` to switch the feature on for
@@ -19,7 +19,7 @@
 export const SHOW_YOUR_WORK = {
   // Subject ids the working box is switched on for. Config-driven on purpose.
   subjects: ["mathematics", "city-guilds-mathematics"],
-  // Where the box appears. 'mock' is the timed exam, 'practice' Extra Practice.
+  // Where the box appears. 'mock' is the timed exam, 'practice' the Practice Papers.
   quizzes: ["knowledge-check", "practice", "mock"],
   // Minimum characters of real working (after trimming) before the student may
   // move on. Deliberately small: this asks for a genuine attempt at showing

@@ -28,7 +28,7 @@ export default function WeakTopicsPanel({ subjectId, latestAttemptId, compact })
       <div className="wtp">
         <div className="wtp-empty">
           <span className="wtp-icon">🧭</span>
-          <p>Complete a knowledge check, extra practice, or mock exam and your weak topics will appear here with a revision plan.</p>
+          <p>Complete a knowledge check, a practice paper, or the mock exam and your weak topics will appear here with a revision plan.</p>
         </div>
       </div>
     );

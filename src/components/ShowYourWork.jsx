@@ -2,7 +2,7 @@ import { SHOW_YOUR_WORK, showYourWorkEnabled, isWorkingComplete } from "../data/
 import "./ShowYourWork.css";
 
 // The prove-your-answer working box. Rendered on the assessment tabs
-// (Knowledge Check / Extra Practice / Mock Exam) only, and only for the
+// (Knowledge Check / Practice Papers / Mock Exam) only, and only for the
 // subjects switched on in src/data/showYourWork.js — otherwise it renders
 // nothing at all, so other subjects are untouched.
 export default function ShowYourWork({

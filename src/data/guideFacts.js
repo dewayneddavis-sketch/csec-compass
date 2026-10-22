@@ -105,7 +105,7 @@ export const GUIDE_TOPICS = [
       `${GUIDE_SUBJECT_LIST_LEAD}\n\n` +
       GUIDE_SUBJECT_NAMES.map((n) => `• ${n}`).join("\n") +
       "\n\nEvery subject is complete: lessons in modules, a Play lab for each lesson, " +
-      `an Extra Practice bank of ${GUIDE_PRACTICE_QUESTIONS} questions, a ` +
+      `a ${GUIDE_PRACTICE_QUESTIONS}-question practice bank in five Practice Papers, a ` +
       `${GUIDE_KNOWLEDGE_CHECK_QUESTIONS}-question knowledge check and a timed mock exam. ` +
       `Any single subject is ${usd(SUBJECT_PRICE)} for a year, and all ${GUIDE_SUBJECT_COUNT} ` +
       `together are ${usd(BUNDLE_PRICE)}.`,
@@ -300,7 +300,7 @@ export const GUIDE_TOPICS = [
     answer:
       `Each subject is a full self-paced course:\n\n` +
       `• Lessons grouped into modules, with a Play lab for each lesson\n` +
-      `• Extra Practice — ${GUIDE_PRACTICE_QUESTIONS} questions you can work through as often as you like\n` +
+      `• Practice Papers 1–5 — ${GUIDE_PRACTICE_QUESTIONS} questions in five papers of 20, to work through as often as you like\n` +
       `• A ${GUIDE_KNOWLEDGE_CHECK_QUESTIONS}-question knowledge check to see if you are ready\n` +
       `• A timed mock exam: ${MAX_QUESTIONS} questions, ${SECONDS_PER_QUESTION} seconds each, ` +
       `${PASS_PERCENTAGE}% to pass, with a full review and retakes\n` +
