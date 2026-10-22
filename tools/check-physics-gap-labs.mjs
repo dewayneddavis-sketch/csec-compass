@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-// Harness: the 8 Physics syllabus-gap lessons, the 11 atom lessons of the
-// Section E coverage build AND the 9 mechanics lessons of the Section A
-// coverage build each get their OWN Play-tab lab.
+// Harness: every Physics lesson that carries its own Play-tab lab set (the
+// syllabus-gap lessons and, since the coverage build, one per new topic) renders
+// a topic-matched activity, and the older lessons keep their type-keyed labs.
 //
 // The engineer gate failed PR #143 partly because the new lessons' `experiment`
 // promised lab types the platform does not have ("text-sort" /
@@ -24,39 +24,13 @@ const section = (t) => console.log(`\n== ${t}`);
 
 const modules = JSON.parse(read("content/physics/modules.json"));
 const allLessons = modules.flatMap((m) => (m.lessons || []).map((l) => ({ ...l, module: m.id })));
-const GAP_LESSONS = [
-  "forces-and-newtons-laws", "work-energy-and-power", "fluid-pressure-and-upthrust",
-  "specific-and-latent-heat", "reflection-and-total-internal-reflection",
-  "sound-and-the-em-spectrum", "magnetism-and-electromagnetism", "electrical-power-and-safety",
-];
-// Physics Section E coverage build (2026-10-21): the atom lessons added by the
-// owner's 110-topic coverage target. Each carries its own per-lesson lab set for
-// the same reason as the eight gap lessons above - physics is a type-keyed
-// subject, so without a set a lesson would show another lesson's deck.
-// "Nature of Radioactive Emissions" and "Ranges and Tracks of Emissions" are
-// held back until dev-3's coverage audit rules on them, so they are not listed.
-const SECTION_E_LESSONS = [
-  "nuclear-modern-atom", "nuclear-geiger-marsden", "nuclear-atomic-composition",
-  "nuclear-nuclide-notation", "nuclear-shell-model", "nuclear-marie-curie",
-  "nuclear-fields-on-emissions", "nuclear-reaction-equations",
-  "nuclear-radioisotope-applications", "nuclear-energy-from-reactions",
-  "nuclear-energy-utilisation",
-];
-// Physics Section A coverage build (2026-10-22): the mechanics lessons added
-// against the owner's 110-topic coverage target. Same reason as above - physics
-// is a type-keyed subject, so a lesson without its own set would show another
-// lesson's deck. The ten target chapters the coverage audit already rules REUSE
-// are taught by scalars-vectors, motion-graphs, forces-and-newtons-laws,
-// work-energy-and-power and fluid-pressure-and-upthrust, so they are NOT here,
-// and "Forces and Weight" is an EXTEND of forces-and-newtons-laws.
-const SECTION_A_LESSONS = [
-  "mech-scientific-method", "mech-simple-pendulum", "mech-measurement-and-instruments",
-  "mech-density", "mech-derived-quantities-and-units", "mech-turning-effects-and-moments",
-  "mech-levers", "mech-centre-of-gravity-and-stability", "mech-deformation-and-elasticity",
-];
-// Every lesson that must have a per-lesson set of its own. Each coverage slice
-// adds its own array to this one line, so no lane edits another lane's numbers.
-const PER_LESSON_SET = [...GAP_LESSONS, ...SECTION_E_LESSONS, ...SECTION_A_LESSONS];
+// The per-lesson lab sets are NOT a hardcoded list any more. The Physics
+// coverage build adds one lab per new topic, in three parallel slices (Sections
+// C, D, E), so a hardcoded array went stale on every merge. What this pins
+// instead is the PARTITION of physics lessons: every lesson is either
+// per-lesson-keyed (carries its own set) or type-keyed (resolves through
+// subjectTypeSets.physics) — exactly one of the two. A lesson that arrives with
+// no lab at all, or a set keyed to a lesson that does not exist, fails here.
 const OLDER_LESSONS = [
   "scalars-vectors", "motion-graphs", "temperature-heat", "gas-laws",
   "wave-properties", "light-refraction", "electric-circuits", "radioactivity",
@@ -71,17 +45,15 @@ const corpusOf = (l) => fold([l.title, l.content, ...(l.objectives || []), ...(l
 
 section("1. every new lesson has its own lab set");
 const sets = lessonSets.physics || {};
-for (const id of PER_LESSON_SET) check(!!sets[id], `${id}: has a lessonSets.physics entry`);
-check(Object.keys(sets).length === PER_LESSON_SET.length,
-  `no stray physics sets (${Object.keys(sets).length} keys for ${PER_LESSON_SET.length} per-lesson-set lessons)`);
-const lessonIds = new Set(allLessons.map((l) => l.id));
-for (const id of PER_LESSON_SET) check(lessonIds.has(id), `${id}: is a real lesson id in modules.json`);
-check(allLessons.length === PER_LESSON_SET.length + OLDER_LESSONS.length,
-  `physics has ${PER_LESSON_SET.length + OLDER_LESSONS.length} lessons (${allLessons.length})`);
-// the Section A lessons belong to the mechanics section, around the five that are already there
-for (const id of SECTION_A_LESSONS) check(byId[id].module === "mechanics", `${id}: sits in the mechanics section`);
-check(allLessons.filter((l) => l.module === "mechanics").length === 5 + SECTION_A_LESSONS.length,
-  `mechanics holds its five existing lessons plus the ${SECTION_A_LESSONS.length} new ones`);
+const setKeys = Object.keys(sets);
+const allIds = allLessons.map((l) => l.id);
+const lessonIds = new Set(allIds);
+check(setKeys.length >= 8, `the physics per-lesson lab sets are present (${setKeys.length} keys)`);
+for (const id of setKeys) check(lessonIds.has(id), `${id}: is a real lesson id in modules.json`);
+check(setKeys.every((id) => !OLDER_LESSONS.includes(id)),
+  "no type-keyed older lesson has a per-lesson set (it would shadow its type library)");
+check(JSON.stringify(allIds.slice().sort()) === JSON.stringify(setKeys.concat(OLDER_LESSONS).sort()),
+  `every physics lesson is covered exactly once (${setKeys.length} per-lesson + ${OLDER_LESSONS.length} type-keyed = ${allLessons.length})`);
 
 section("2. every set is well formed and headed by its own lesson title");
 for (const [id, set] of Object.entries(sets)) {
