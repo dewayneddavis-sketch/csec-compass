@@ -1,6 +1,7 @@
 #!/usr/bin/env node
-// Harness: the 8 Physics syllabus-gap lessons AND the 9 mechanics lessons of the
-// Section A coverage build each get their OWN Play-tab lab.
+// Harness: the 8 Physics syllabus-gap lessons, the 11 atom lessons of the
+// Section E coverage build AND the 9 mechanics lessons of the Section A
+// coverage build each get their OWN Play-tab lab.
 //
 // The engineer gate failed PR #143 partly because the new lessons' `experiment`
 // promised lab types the platform does not have ("text-sort" /
@@ -28,6 +29,19 @@ const GAP_LESSONS = [
   "specific-and-latent-heat", "reflection-and-total-internal-reflection",
   "sound-and-the-em-spectrum", "magnetism-and-electromagnetism", "electrical-power-and-safety",
 ];
+// Physics Section E coverage build (2026-10-21): the atom lessons added by the
+// owner's 110-topic coverage target. Each carries its own per-lesson lab set for
+// the same reason as the eight gap lessons above - physics is a type-keyed
+// subject, so without a set a lesson would show another lesson's deck.
+// "Nature of Radioactive Emissions" and "Ranges and Tracks of Emissions" are
+// held back until dev-3's coverage audit rules on them, so they are not listed.
+const SECTION_E_LESSONS = [
+  "nuclear-modern-atom", "nuclear-geiger-marsden", "nuclear-atomic-composition",
+  "nuclear-nuclide-notation", "nuclear-shell-model", "nuclear-marie-curie",
+  "nuclear-fields-on-emissions", "nuclear-reaction-equations",
+  "nuclear-radioisotope-applications", "nuclear-energy-from-reactions",
+  "nuclear-energy-utilisation",
+];
 // Physics Section A coverage build (2026-10-22): the mechanics lessons added
 // against the owner's 110-topic coverage target. Same reason as above - physics
 // is a type-keyed subject, so a lesson without its own set would show another
@@ -42,7 +56,7 @@ const SECTION_A_LESSONS = [
 ];
 // Every lesson that must have a per-lesson set of its own. Each coverage slice
 // adds its own array to this one line, so no lane edits another lane's numbers.
-const PER_LESSON_SET = [...GAP_LESSONS, ...SECTION_A_LESSONS];
+const PER_LESSON_SET = [...GAP_LESSONS, ...SECTION_E_LESSONS, ...SECTION_A_LESSONS];
 const OLDER_LESSONS = [
   "scalars-vectors", "motion-graphs", "temperature-heat", "gas-laws",
   "wave-properties", "light-refraction", "electric-circuits", "radioactivity",
