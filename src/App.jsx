@@ -18,6 +18,7 @@ import PlannerPage from "./pages/PlannerPage";
 import TermsPage from "./pages/TermsPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import ContactPage from "./pages/ContactPage";
+import ForParentsPage from "./pages/ForParentsPage";
 import { TRADEMARK_DISCLAIMER, CG_TRADEMARK_DISCLAIMER } from "./data/legal";
 import InstagramLink from "./components/InstagramLink";
 import { INSTAGRAM_SHORT_CTA } from "./data/social";
@@ -47,6 +48,10 @@ export default function App() {
                   support; if the email service is not configured the page says
                   so and points at the address instead of claiming success. */}
               <Route path="/contact" element={<ContactPage />} />
+              {/* The plain-language page for parents (owner direction 2026-10-19:
+                  a real page on the site, not a document). Public on purpose —
+                  a parent has to be able to read it before buying anything. */}
+              <Route path="/for-parents" element={<ForParentsPage />} />
               <Route path="/planner" element={<PlannerPage />} />
               <Route path="/auth" element={<AuthPage mode="signin" />} />
               <Route path="/auth/signup" element={<AuthPage mode="signup" />} />
@@ -77,6 +82,8 @@ export default function App() {
                 claim from the legal pages. */}
             <p className="app-footer-legal">{CG_TRADEMARK_DISCLAIMER}</p>
             <p className="app-footer-links">
+              <Link to="/for-parents">For parents</Link>
+              <span className="app-footer-sep" aria-hidden="true">·</span>
               <Link to="/terms">Terms of Service</Link>
               <span className="app-footer-sep" aria-hidden="true">·</span>
               <Link to="/privacy">Privacy Policy</Link>
