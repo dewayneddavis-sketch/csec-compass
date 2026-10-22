@@ -156,19 +156,6 @@
   "topic": "hsb-l6-2"
  },
  {
-  "id": "p14",
-  "question": "The point where two bones meet is called a:",
-  "options": [
-   "joint",
-   "ligament",
-   "muscle",
-   "tendon"
-  ],
-  "answer": "joint",
-  "explanation": "Joints connect bones, allowing movement.",
-  "topic": "hsb-l1-1"
- },
- {
   "id": "p15",
   "question": "Which structure connects bone to bone?",
   "options": [
@@ -208,32 +195,6 @@
   "topic": "hsb-l1-1"
  },
  {
-  "id": "p18",
-  "question": "When the biceps contracts, the arm:",
-  "options": [
-   "bends (flexes)",
-   "straightens",
-   "lifts sideways",
-   "remains still"
-  ],
-  "answer": "bends (flexes)",
-  "explanation": "The biceps is a flexor, bending the elbow.",
-  "topic": "hsb-l1-1"
- },
- {
-  "id": "p19",
-  "question": "The triceps is responsible for:",
-  "options": [
-   "straightening the arm",
-   "bending the arm",
-   "rotating the wrist",
-   "moving the fingers"
-  ],
-  "answer": "straightening the arm",
-  "explanation": "The triceps is an extensor, straightening the elbow.",
-  "topic": "hsb-l1-1"
- },
- {
   "id": "p20",
   "question": "Red blood cells are produced in the:",
   "options": [
@@ -257,19 +218,6 @@
   ],
   "answer": "Vein",
   "explanation": "Veins have valves preventing backflow of blood.",
-  "topic": "hsb-l1-2"
- },
- {
-  "id": "p22",
-  "question": "Blood flows from the right ventricle to the:",
-  "options": [
-   "lungs",
-   "aorta",
-   "left atrium",
-   "brain"
-  ],
-  "answer": "lungs",
-  "explanation": "The right ventricle pumps deoxygenated blood to the lungs.",
   "topic": "hsb-l1-2"
  },
  {
@@ -806,19 +754,6 @@
   "topic": "hsb-l4-2"
  },
  {
-  "id": "p68",
-  "question": "Obesity increases the risk of:",
-  "options": [
-   "heart disease",
-   "cholera",
-   "malaria",
-   "flu"
-  ],
-  "answer": "heart disease",
-  "explanation": "Obesity is linked to hypertension and heart disease.",
-  "topic": "hsb-l4-1"
- },
- {
   "id": "p69",
   "question": "Which of the following helps prevent heart disease?",
   "options": [
@@ -1040,19 +975,6 @@
   "topic": "hsb-l3-2"
  },
  {
-  "id": "p87",
-  "question": "The appendix is attached to the:",
-  "options": [
-   "large intestine",
-   "stomach",
-   "liver",
-   "pancreas"
-  ],
-  "answer": "large intestine",
-  "explanation": "The appendix projects from the caecum of the large intestine.",
-  "topic": "hsb-l3-2"
- },
- {
   "id": "p88",
   "question": "Tooth decay is caused by:",
   "options": [
@@ -1142,32 +1064,6 @@
   "answer": "28 days",
   "explanation": "The typical cycle is about 28 days.",
   "topic": "hsb-l6-3"
- },
- {
-  "id": "p95",
-  "question": "Which of the following is a method of preventing pregnancy?",
-  "options": [
-   "Contraception",
-   "Exercise",
-   "Dieting",
-   "Vaccination"
-  ],
-  "answer": "Contraception",
-  "explanation": "Contraception prevents conception.",
-  "topic": "hsb-l6-2"
- },
- {
-  "id": "p96",
-  "question": "Sexually transmitted infections can be prevented by:",
-  "options": [
-   "using condoms",
-   "sharing needles",
-   "multiple partners",
-   "avoiding testing"
-  ],
-  "answer": "using condoms",
-  "explanation": "Condoms reduce STI transmission.",
-  "topic": "hsb-l6-2"
  },
  {
   "id": "p97",
@@ -1298,5 +1194,109 @@
   "answer": "Fruit peelings",
   "explanation": "Biodegradable waste such as food scraps can be broken down by decomposers; glass, plastic and metal are non-biodegradable.",
   "topic": "hsb-l5-2"
+ },
+ {
+  "id": "p108",
+  "question": "Which of the following best describes a gene?",
+  "options": [
+   "A length of DNA that carries the instructions for making one protein",
+   "A protein that coils up to form a chromosome",
+   "A cell that carries genetic information from both parents",
+   "A pair of chromosomes, one from each parent"
+  ],
+  "answer": "A length of DNA that carries the instructions for making one protein",
+  "explanation": "A gene is a length of DNA that codes for one protein, and so controls one characteristic or part of one; many genes are carried along each chromosome. Chromosomes are made of DNA coiled around protein, and a person inherits one chromosome of each pair from each parent.",
+  "topic": "hsb-l7-1"
+ },
+ {
+  "id": "p109",
+  "question": "A human body cell contains 46 chromosomes. How many chromosomes are there in a sperm cell?",
+  "options": [
+   "23",
+   "46",
+   "92",
+   "22"
+  ],
+  "answer": "23",
+  "explanation": "Sperm and egg cells are gametes and are haploid: each one carries a single chromosome from each of the 23 pairs, so a sperm contains 23 chromosomes. When a sperm fuses with an egg at fertilisation the new cell has 46 chromosomes again, 23 from each parent.",
+  "topic": "hsb-l7-1"
+ },
+ {
+  "id": "p110",
+  "question": "Two parents can both roll their tongues and both have the genotype Rr. What is the chance that their next child will not be able to roll its tongue?",
+  "options": [
+   "25%",
+   "0%",
+   "50%",
+   "75%"
+  ],
+  "answer": "25%",
+  "explanation": "Each Rr parent makes gametes carrying R or r, so the Punnett square gives the genotypes RR, Rr, Rr and rr in the ratio 1 : 2 : 1. Only the rr genotype cannot roll the tongue, which is one chance in four, or 25%; the other 75% of children are expected to be able to roll it.",
+  "topic": "hsb-l7-2"
+ },
+ {
+  "id": "p111",
+  "question": "In a monohybrid cross a homozygous dominant parent (RR) is crossed with a homozygous recessive parent (rr). What are the genotypes of the offspring?",
+  "options": [
+   "All Rr",
+   "All RR",
+   "1 RR : 1 rr",
+   "1 RR : 2 Rr : 1 rr"
+  ],
+  "answer": "All Rr",
+  "explanation": "The RR parent can pass on only R and the rr parent can pass on only r, so every offspring receives one R and one r and the whole of this first generation is heterozygous (Rr). Because R is dominant, all of these offspring show the dominant form of the characteristic.",
+  "topic": "hsb-l7-2"
+ },
+ {
+  "id": "p112",
+  "question": "Which of the following determines whether a child is a girl or a boy?",
+  "options": [
+   "Whether the fertilising sperm carries an X or a Y chromosome",
+   "Whether the egg carries an X or a Y chromosome",
+   "The number of chromosomes in the egg",
+   "The order in which the gametes fuse"
+  ],
+  "answer": "Whether the fertilising sperm carries an X or a Y chromosome",
+  "explanation": "An egg always carries an X chromosome because a woman is XX. A man is XY, so his sperm carry either an X or a Y chromosome and the two kinds are produced in roughly equal numbers: an X-carrying sperm gives a girl (XX) and a Y-carrying sperm gives a boy (XY), so each pregnancy has about a 50 : 50 chance of either.",
+  "topic": "hsb-l7-3"
+ },
+ {
+  "id": "p113",
+  "question": "Why are far more males than females affected by a sex-linked condition such as haemophilia?",
+  "options": [
+   "A male has only one X chromosome, so a recessive allele on it is not masked by a second X",
+   "Males inherit the condition directly from their fathers",
+   "Females do not have X chromosomes",
+   "Females cannot carry the recessive allele"
+  ],
+  "answer": "A male has only one X chromosome, so a recessive allele on it is not masked by a second X",
+  "explanation": "A female has two X chromosomes, so a harmful recessive allele on one X is usually masked by the normal allele on the other X: she is a carrier but does not show the condition. A male has a single X chromosome, so if it carries the recessive allele there is no second X to mask it and he shows the condition.",
+  "topic": "hsb-l7-3"
+ },
+ {
+  "id": "p114",
+  "question": "Which of the following is an example of discontinuous variation?",
+  "options": [
+   "The blood group of the students in a class",
+   "The body mass of the students in a class",
+   "The height of the students in a class",
+   "The hand span of the students in a class"
+  ],
+  "answer": "The blood group of the students in a class",
+  "explanation": "Blood group falls into distinct categories (A, B, AB and O) with no values in between, so it shows discontinuous variation. Body mass, height and hand span are measured and change gradually from one student to the next, so they show continuous variation.",
+  "topic": "hsb-l7-4"
+ },
+ {
+  "id": "p115",
+  "question": "Bacteria have been given the human insulin gene so that they make insulin for people with diabetes. This is an example of:",
+  "options": [
+   "genetic engineering",
+   "selective breeding",
+   "a mutation",
+   "cloning"
+  ],
+  "answer": "genetic engineering",
+  "explanation": "Genetic engineering means taking a gene out of one organism and inserting it into another so that the second organism makes the protein the gene codes for. Selective breeding would instead choose existing organisms that already have useful characteristics and breed from them, without moving genes between species.",
+  "topic": "hsb-l7-4"
  }
 ]

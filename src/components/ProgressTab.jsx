@@ -6,7 +6,7 @@ import "./ProgressTab.css";
 
 const QUIZ_LABELS = {
   "knowledge-check": "Knowledge Check",
-  practice: "Extra Practice",
+  practice: "Practice Paper",
   mock: "Mock Exam",
 };
 
@@ -26,7 +26,7 @@ export default function ProgressTab({ subjectId }) {
       <div className="pt-empty">
         <div className="pt-empty-icon">📈</div>
         <h3>No progress yet</h3>
-        <p>Your quiz attempts will appear here once you complete a Knowledge Check, Extra Practice round, or Mock Exam.</p>
+        <p>Your quiz attempts will appear here once you complete a Knowledge Check, a Practice Paper, or the Mock Exam.</p>
         {topics.length === 0 && (
           <p className="pt-note">This tab tracks your weak topics and pass-rate trend so you know exactly what to revise.</p>
         )}

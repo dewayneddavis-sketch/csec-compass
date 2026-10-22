@@ -451,5 +451,92 @@
                 }
             }
         ]
+    },
+    {
+        "id": "hsb-mod-7",
+        "title": "Heredity & Variation",
+        "lessons": [
+            {
+                "id": "hsb-l7-1",
+                "title": "DNA, Genes and Chromosomes",
+                "content": "Nearly every cell in your body contains a complete set of instructions for building and running a human being. Those instructions are carried by 'DNA' (deoxyribonucleic acid), a long molecule shaped like a twisted ladder that is found mainly in the nucleus of the cell.\n\nInside the nucleus the DNA is coiled tightly around proteins to form 'chromosomes'. A human body cell contains 46 chromosomes arranged in 23 pairs. One chromosome of each pair came from your mother's egg and the other from your father's sperm, so the two chromosomes of a pair are said to be homologous. Each chromosome carries many 'genes', and a gene is a length of DNA that carries the instructions for making one protein. Proteins control characteristics such as eye colour, blood group and the way your cells are built, so genes are passed on from parents to their children.\n\nThe different forms of the same gene are called 'alleles'. For the gene that controls tongue rolling, for example, there are two alleles: one that allows a person to roll the tongue into a tube and one that does not. Gametes (sperm and egg cells) contain only 23 chromosomes, one from each pair, so they are 'haploid', while body cells are 'diploid' because they contain 46 chromosomes. When an egg and a sperm fuse at fertilisation the new cell has 46 chromosomes again, so the child carries alleles from both parents.\n\nThe combination of alleles that a person carries is called the 'genotype', and the characteristic that you can actually observe is called the 'phenotype'. An allele that shows its effect even when only one copy is present is 'dominant'; an allele that shows its effect only when both copies of the gene are the same is 'recessive'.",
+                "objectives": [
+                    "Describe the relationship between DNA, chromosomes, genes and alleles",
+                    "Distinguish between haploid and diploid cells, and between genotype and phenotype"
+                ],
+                "concepts": [
+                    "DNA",
+                    "Chromosomes and homologous pairs",
+                    "Genes and alleles",
+                    "Haploid and diploid cells",
+                    "Dominant and recessive alleles"
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Heredity terms: Match each term about DNA, genes and chromosomes to its meaning."
+                }
+            },
+            {
+                "id": "hsb-l7-2",
+                "title": "Monohybrid Inheritance and Genetic Diagrams",
+                "content": "A 'monohybrid cross' follows the inheritance of a single characteristic that is controlled by one gene with two alleles. Geneticists use a capital letter for the dominant allele and a small letter for the recessive allele, and each parent passes on ONE allele to each child.\n\nTongue rolling is a good example. The allele for being able to roll the tongue (R) is dominant over the allele for not being able to roll it (r). A person who cannot roll the tongue must have the genotype rr, because a recessive allele shows its effect only when both alleles are the same. A person who can roll the tongue has the genotype RR or Rr. Someone with the genotype Rr is heterozygous and is called a 'carrier' of the recessive allele: they show the dominant characteristic but they can pass the recessive allele on to their children.\n\nTo work out the children that two parents can have, draw a genetic diagram. First write the parents' phenotypes, then their genotypes. Work out the gametes: a parent with the genotype Rr can pass on either R or r, so it makes two kinds of gamete. Put the gametes along the top and down the side of a Punnett square and combine them. Two parents who can both roll their tongues and who are both Rr therefore give the genotypes RR, Rr, Rr and rr in the ratio 1 RR : 2 Rr : 1 rr. Because RR and Rr both roll the tongue, three out of every four children (75%) are expected to roll the tongue and one out of four (25%) is expected not to, giving a phenotypic ratio of 3 : 1.\n\nNot every allele is simply dominant or recessive. In 'codominance' both alleles are expressed in the heterozygote: a person who inherits the allele for blood group A and the allele for blood group B has blood group AB, because both antigens are present on the red blood cells.",
+                "objectives": [
+                    "Draw and interpret a genetic diagram (Punnett square) for a monohybrid cross",
+                    "Use dominant and recessive alleles to explain a 3 : 1 phenotypic ratio"
+                ],
+                "concepts": [
+                    "Monohybrid cross",
+                    "Dominant and recessive alleles",
+                    "Punnett square",
+                    "Genotype and phenotype ratios",
+                    "Codominance"
+                ],
+                "experiment": {
+                    "type": "interactive-pathway",
+                    "description": "Genetic diagram: Arrange the steps of a monohybrid cross in order."
+                }
+            },
+            {
+                "id": "hsb-l7-3",
+                "title": "Sex Determination and Sex-Linked Inheritance",
+                "content": "Of the 46 chromosomes in a human body cell, 44 are 'autosomes': they carry genes for body characteristics and are the same in both sexes. The remaining pair are the 'sex chromosomes', and they determine whether a person is female or male. A female has two X chromosomes (XX) and a male has one X chromosome and one Y chromosome (XY).\n\nAn egg cell always carries an X chromosome, because a woman is XX. A man is XY, so his sperm carry either an X or a Y chromosome, and the two kinds are produced in roughly equal numbers. If an X-carrying sperm fertilises the egg the child is a girl (XX); if a Y-carrying sperm fertilises the egg the child is a boy (XY). The sex of a child is therefore decided by the father's sperm, and each pregnancy has about a 50 : 50 chance of producing a boy or a girl.\n\nA few genes are carried on the X chromosome and have no matching allele on the much shorter Y chromosome. They are called 'sex-linked' (X-linked) genes, and the characteristics they control are inherited differently in males and females. Red-green colour blindness and haemophilia, a condition in which the blood clots very slowly, are both sex-linked.\n\nA female has two X chromosomes, so a harmful recessive allele on one X is usually masked by the normal allele on the other X. Such a woman is heterozygous and does not show the condition, but she is a 'carrier' and can pass the allele to her children. A male has only one X chromosome, so if it carries the recessive allele there is no second X to mask it and he will show the condition. This is why far more males than females are colour blind or have haemophilia. If a carrier woman has children with a man who is unaffected, half of her sons are expected to be affected and the other half unaffected, while her daughters are expected to be unaffected but half of them will be carriers.",
+                "objectives": [
+                    "Explain how the sex chromosomes determine whether a child is a girl or a boy",
+                    "Explain why sex-linked conditions such as haemophilia and red-green colour blindness are far more common in males"
+                ],
+                "concepts": [
+                    "Autosomes",
+                    "Sex chromosomes and sex determination",
+                    "Sex linkage",
+                    "Carriers",
+                    "Haemophilia and red-green colour blindness"
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Sex-linked inheritance: Match each term to its meaning."
+                }
+            },
+            {
+                "id": "hsb-l7-4",
+                "title": "Variation, Mutation and Genetic Engineering",
+                "content": "No two people are exactly alike. The differences between individuals of the same species are called 'variation', and variation can be continuous or discontinuous.\n\n'Continuous variation' is measured rather than counted: height, body mass and hand span change gradually from one person to the next and form a smooth range of values. Characteristics that vary continuously are usually controlled by many genes and are also affected by the environment. 'Discontinuous variation' falls into distinct categories with nothing in between: blood group, natural eye colour and the ability to roll the tongue into a tube. These characteristics are usually controlled by one or two genes and are little affected by the environment.\n\nVariation has two main causes. 'Genetic variation' comes from the alleles a person inherits. Meiosis shuffles the alleles when gametes are formed (crossing over and independent assortment), and fertilisation joins a random sperm to a random egg, so every child gets a different combination of alleles. Mutation is a further source of new alleles. 'Environmental variation' comes from differences in diet, exercise, sunlight, disease and lifestyle: a person's body mass or the darkness of their skin can change with their surroundings even though their genes have not changed.\n\nA 'mutation' is a change in the base sequence of DNA. Mutations happen spontaneously when DNA is copied before a cell divides, and the rate at which they occur increases with exposure to 'mutagens' such as ionising radiation (X-rays and ultraviolet light), some chemicals including the tar in cigarette smoke, and some viruses. Most mutations have no effect at all or are harmful, and only a few are useful. Sickle-cell anaemia is caused by a mutation in the gene for haemoglobin: a person with two copies of the allele makes misshapen red blood cells and becomes anaemic, but a person with one copy is resistant to malaria, which is why the allele is common in regions where malaria is widespread.\n\n'Genetic engineering' means deliberately changing the genes of an organism. A gene is cut out of the DNA of one organism and inserted into another, which then makes the protein that the gene codes for. Bacteria have been given the human insulin gene so that they make insulin for people with diabetes, and crops have been given genes that make them resistant to pests or to drought. Selective breeding is different: it chooses existing animals or plants with useful characteristics and breeds from them, without moving genes between species. Genetic engineering has great potential in medicine and agriculture, but it is carefully controlled because people are concerned about possible risks to health, to the environment and to small farmers.",
+                "objectives": [
+                    "Distinguish between continuous and discontinuous variation and give an example of each",
+                    "Explain the causes of variation, including mutation, and describe one use of genetic engineering"
+                ],
+                "concepts": [
+                    "Continuous variation",
+                    "Discontinuous variation",
+                    "Genetic and environmental causes of variation",
+                    "Mutation and mutagens",
+                    "Sickle-cell anaemia",
+                    "Genetic engineering and selective breeding"
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Types of variation: Sort each example as continuous or discontinuous."
+                }
+            }
+        ]
     }
 ]

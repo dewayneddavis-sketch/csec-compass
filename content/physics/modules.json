@@ -364,14 +364,17 @@
             {
                 "id": "wave-properties",
                 "title": "Properties of Waves",
-                "content": "A wave is a disturbance that transfers energy from one place to another without transferring matter. Waves are classified into two main types: transverse and longitudinal. In a transverse wave (like light or water waves), the particles of the medium vibrate perpendicular to the direction of energy travel. In a longitudinal wave (like sound), the particles vibrate parallel to the direction of energy travel, creating areas of compression and rarefaction.\n\nKey wave properties include amplitude (maximum displacement from rest), wavelength (distance between two consecutive peaks or troughs), and frequency (the number of waves passing a point per second). The relationship between these is given by the wave equation: Speed (v) = Frequency (f) \u00d7 Wavelength (\u03bb).\n\nWaves also undergo four important behaviours: reflection (bouncing off a surface), refraction (changing direction when entering a new medium), diffraction (spreading out when passing through a gap), and interference (two waves overlapping). The CSEC exam often uses ripple tanks to demonstrate these properties and asks you to apply the wave equation to solve problems.",
+                "content": "A wave is a disturbance that transfers energy from one place to another without transferring matter. Waves are classified into two main types: transverse and longitudinal. In a transverse wave (like light or water waves), the particles of the medium vibrate perpendicular to the direction of energy travel. In a longitudinal wave (like sound), the particles vibrate parallel to the direction of energy travel, creating areas of compression and rarefaction.\n\nKey wave properties include amplitude (maximum displacement from rest), wavelength (distance between two consecutive peaks or troughs), and frequency (the number of waves passing a point per second). The relationship between these is given by the wave equation: Speed (v) = Frequency (f) \u00d7 Wavelength (\u03bb).\n\nWaves also undergo four important behaviours: reflection (bouncing off a surface), refraction (changing direction when entering a new medium), diffraction (spreading out when passing through a gap), and interference (two waves overlapping). The CSEC exam often uses ripple tanks to demonstrate these properties and asks you to apply the wave equation to solve problems.\n\nWave Representation and Graphs. A wave can be drawn in two ways, and the two graphs look alike but mean different things. A displacement-distance graph is a snapshot of the wave at one instant: the horizontal axis is distance along the wave, the amplitude is read off as the height of a crest above the rest position, and the wavelength is read off as the distance from one crest to the next. A displacement-time graph follows one particle as time passes: the horizontal axis is time, the amplitude is still the height of a crest, and the period T is read off as the time from one crest to the next, so the frequency is f = 1 / T. Both graphs have the same shape for a simple wave, so always read the label on the horizontal axis before taking a value off one.\n\nDiffraction of Light. Diffraction is the spreading of a wave when it passes through a gap or around an obstacle, and light diffracts just as water waves and sound do. The spreading is only easy to see when the width of the gap is about the same as the wavelength of the light, so a beam of light passed through a single narrow slit forms a wide pattern of bright and dark bands instead of a sharp edge. A diffraction grating carries many very fine parallel slits, and the waves from all of them interfere, so the grating spreads white light into a spectrum far more widely than a prism can. Diffraction is also why the shadow of a straight edge has faint dark and light bands at its boundary instead of a perfectly sharp edge, and why a laser beam seen through a fine mesh breaks up into a pattern of spots.",
                 "objectives": [
                     "Define frequency, wavelength, and amplitude",
                     "Apply the wave equation v = f\u03bb"
                 ],
                 "concepts": [
                     "Transverse vs. Longitudinal waves.",
-                    "Reflection, Refraction, and Diffraction."
+                    "Reflection, Refraction, and Diffraction.",
+                    "Displacement-distance graph: a snapshot of the wave at one instant, with distance along the horizontal axis, from which the amplitude and the wavelength are read off.",
+                    "Displacement-time graph: the motion of one particle through time, with time along the horizontal axis, from which the amplitude and the period T are read off and the frequency follows from f = 1 / T.",
+                    "Diffraction of light: light spreads out when it passes through a narrow slit or a fine grating, and the spreading is greatest when the gap is about the wavelength of the light."
                 ],
                 "experiment": {
                     "type": "ripple-tank",
@@ -381,7 +384,7 @@
             {
                 "id": "light-refraction",
                 "title": "Refraction and Lenses",
-                "content": "Refraction is the bending of light as it passes from one transparent medium to another of different optical density. This happens because light changes speed. When light enters a denser medium (like from air into glass), it slows down and bends toward the normal line. The degree of bending is described by Snell's Law: n = sin(i) / sin(r), where n is the refractive index of the medium.\n\nLenses use refraction to focus or spread light. A converging (convex) lens is thicker in the middle and bends light rays together to a focal point. It can form both real and virtual images. A diverging (concave) lens is thinner in the middle and spreads light rays apart, always forming a virtual, upright, and diminished image.\n\nYou will learn to draw ray diagrams to locate images formed by lenses and understand how they are used in devices like cameras, magnifying glasses, and the human eye. CSEC questions frequently involve calculating the refractive index or using the lens formula to find image distance and magnification.\n\nIn a ray diagram, the light travelling towards the boundary is the incident ray and the ray leaving on the other side is the refracted ray. The angle of incidence i is measured between the incident ray and the normal, and the angle of refraction r between the refracted ray and the normal: in the diagram below i = 48.6 degrees and r = 30 degrees, so n = sin 48.6 / sin 30 = 1.5.",
+                "content": "Refraction is the bending of light as it passes from one transparent medium to another of different optical density. This happens because light changes speed. When light enters a denser medium (like from air into glass), it slows down and bends toward the normal line. The degree of bending is described by Snell's Law: n = sin(i) / sin(r), where n is the refractive index of the medium.\n\nLenses use refraction to focus or spread light. A converging (convex) lens is thicker in the middle and bends light rays together to a focal point. It can form both real and virtual images. A diverging (concave) lens is thinner in the middle and spreads light rays apart, always forming a virtual, upright, and diminished image.\n\nYou will learn to draw ray diagrams to locate images formed by lenses and understand how they are used in devices like cameras, magnifying glasses, and the human eye. CSEC questions frequently involve calculating the refractive index or using the lens formula to find image distance and magnification.\n\nIn a ray diagram, the light travelling towards the boundary is the incident ray and the ray leaving on the other side is the refracted ray. The angle of incidence i is measured between the incident ray and the normal, and the angle of refraction r between the refracted ray and the normal: in the diagram below i = 48.6 degrees and r = 30 degrees, so n = sin 48.6 / sin 30 = 1.5.\n\nRefraction Through Prisms and Blocks. A ray of light that enters a rectangular glass block at an angle is refracted towards the normal, crosses the glass, and is refracted away from the normal as it leaves, so the emergent ray is parallel to the incident ray but shifted sideways; the perpendicular distance between the two lines is called the lateral displacement. A thicker block, or a larger angle of incidence, gives a larger lateral displacement. In a triangular glass prism the two refracting surfaces are not parallel, so the ray is turned through a large angle: it bends towards the normal at the first surface and away from the normal at the second, and the total change of direction is the angle of deviation. The same law n = sin i / sin r applies at each surface, and because a prism deviates a ray so strongly it is used in binoculars and in a spectrometer instead of a flat block.\n\nLens Terminology. The principal axis is the straight line through the centre of the lens at right angles to it. The optical centre is the point where the principal axis meets the centre of the lens, and a ray that passes through the optical centre goes straight on without changing direction. The principal focus is the point on the principal axis where rays parallel to the axis meet after passing through a converging lens, and it is the point from which they appear to spread after passing through a diverging lens; the focal length is the distance from the optical centre to the principal focus. The focal plane is the plane through the principal focus at right angles to the principal axis. A converging (convex) lens has a real principal focus and is thicker in the middle, while a diverging (concave) lens has a virtual principal focus and is thinner in the middle.\n\nMagnification Equations. Two equations link the object, the image and the lens. The magnification m is the ratio of the image height to the object height, and it is also the ratio of the image distance to the object distance: m = image height / object height = v / u. The lens formula 1 / f = 1 / u + 1 / v uses the same measured distances, where u is the object distance, v is the image distance and f is the focal length, all in the same unit. For a real image u, v and f are taken as positive. For example, an object 30 cm from a converging lens of focal length 10 cm gives 1 / v = 1 / 10 - 1 / 30 = 2 / 30, so v = 15 cm, and m = v / u = 15 / 30 = 0.5, so the image is half the height of the object and inverted. A magnification greater than 1 means a larger image, and a value less than 1 a smaller one.",
                 "figures": [
                     {
                         "src": "/content/physics/figures/light-refraction.svg",
@@ -395,7 +398,15 @@
                 ],
                 "concepts": [
                     "Refractive index n = sin i / sin r.",
-                    "Converging (convex) vs. Diverging (concave) lenses."
+                    "Converging (convex) vs. Diverging (concave) lenses.",
+                    "Lateral displacement: the sideways shift of a ray after it passes through a parallel-sided transparent block.",
+                    "Angle of deviation: the total angle through which a prism turns a ray of light, greater than a parallel-sided block turns it.",
+                    "Principal axis: the straight line through the centre of a lens at right angles to it.",
+                    "Optical centre: the centre of the lens on the principal axis, which a ray passes through without bending.",
+                    "Principal focus: the point where rays parallel to the principal axis meet after passing through a converging lens, and its distance from the optical centre is the focal length.",
+                    "Focal plane: the plane through the principal focus at right angles to the principal axis.",
+                    "Magnification: m = image height / object height = v / u, where v is the image distance and u the object distance.",
+                    "Lens formula: 1 / f = 1 / u + 1 / v, with u the object distance, v the image distance and f the focal length."
                 ],
                 "experiment": {
                     "type": "optics-bench",
@@ -405,7 +416,7 @@
             {
                 "id": "reflection-and-total-internal-reflection",
                 "title": "Reflection and Total Internal Reflection",
-                "content": "When light reflects off a plane surface, the angle of incidence equals the angle of reflection, both measured from the normal (the line perpendicular to the surface). The image in a plane mirror is virtual, upright, laterally inverted and the same size as the object, and it appears the same distance behind the mirror as the object is in front of it.\n\nConcave and convex mirrors are curved reflectors. A concave (converging) mirror brings parallel rays to a focus and can form a real image; a convex (diverging) mirror spreads rays and always forms a virtual, diminished image, which is why it gives a wide field of view in drivers' mirrors and shop security mirrors.\n\nWhen light travels from a denser medium such as glass or water into a less dense medium such as air, it speeds up and bends away from the normal. As the angle of incidence increases there comes an angle \u2014 the critical angle \u2014 beyond which no light refracts out; it all reflects back inside the medium. This is total internal reflection, and it is used in optical fibres to carry light and signals along a curved path, and in prisms in binoculars. A prism also disperses white light into a spectrum, because each colour refracts by a different amount.",
+                "content": "When light reflects off a plane surface, the angle of incidence equals the angle of reflection, both measured from the normal (the line perpendicular to the surface). The image in a plane mirror is virtual, upright, laterally inverted and the same size as the object, and it appears the same distance behind the mirror as the object is in front of it.\n\nConcave and convex mirrors are curved reflectors. A concave (converging) mirror brings parallel rays to a focus and can form a real image; a convex (diverging) mirror spreads rays and always forms a virtual, diminished image, which is why it gives a wide field of view in drivers' mirrors and shop security mirrors.\n\nWhen light travels from a denser medium such as glass or water into a less dense medium such as air, it speeds up and bends away from the normal. As the angle of incidence increases there comes an angle \u2014 the critical angle \u2014 beyond which no light refracts out; it all reflects back inside the medium. This is total internal reflection, and it is used in optical fibres to carry light and signals along a curved path, and in prisms in binoculars. A prism also disperses white light into a spectrum, because each colour refracts by a different amount.\n\nDispersion and the Spectrum. White light is a mixture of colours, and a prism separates them because the refractive index of glass is slightly different for each colour: violet light is refracted the most and red light the least. When a narrow beam of white light enters a triangular prism, the colours leave the second surface at slightly different angles, so a band of colours called a spectrum is spread out on a screen in the order red, orange, yellow, green, blue, indigo and violet. A second prism placed the other way round recombines the colours into white light, which shows that nothing was added to the light by the first prism. A rainbow is made in the same way inside raindrops: sunlight is refracted as it enters a drop, totally internally reflected at the far side of the drop, and refracted again as it leaves, and because the colours come out at different angles you see the spectrum as an arc with red on the outside and violet on the inside.",
                 "objectives": [
                     "Draw ray diagrams for reflection and state the laws of reflection",
                     "Describe the images formed by plane, concave and convex mirrors",
@@ -414,7 +425,10 @@
                 "concepts": [
                     "Angle of incidence: the angle between an incoming ray and the normal, equal to the angle of reflection.",
                     "Critical angle: the angle of incidence in a denser medium beyond which light is totally internally reflected.",
-                    "Total internal reflection: the complete reflection of light back inside a denser medium when the critical angle is exceeded."
+                    "Total internal reflection: the complete reflection of light back inside a denser medium when the critical angle is exceeded.",
+                    "Dispersion: the separation of white light into its colours, because each colour has its own refractive index in the glass.",
+                    "Spectrum: the band of colours from red (least deviated) to violet (most deviated) formed when white light is dispersed.",
+                    "Rainbow: sunlight dispersed inside raindrops, with total internal reflection at the back of each drop."
                 ],
                 "experiment": {
                     "type": "classifier-sim",
@@ -424,7 +438,7 @@
             {
                 "id": "sound-and-the-em-spectrum",
                 "title": "Sound and the Electromagnetic Spectrum",
-                "content": "Sound is a longitudinal wave that needs a medium: it travels by compressing and rarefying the particles of a solid, liquid or gas, and cannot travel through a vacuum. In air at room temperature sound travels at about 330-340 m/s, much slower than light. Speed = distance / time, so an echo \u2014 sound reflected from a distant surface such as a cliff or the sea bed \u2014 can be used to measure distance.\n\nThe pitch of a note is set by its frequency (higher frequency, higher pitch) and the loudness by its amplitude (greater amplitude, louder sound). The human ear hears roughly 20 Hz to 20 000 Hz, and frequencies above this range are called ultrasound. Ultrasound echoes are used in medical scanning and in depth sounding.\n\nThe electromagnetic spectrum runs from radio waves and microwaves through infrared, visible light, ultraviolet, X-rays and gamma rays \u2014 all transverse waves that travel through a vacuum at the speed of light (about 3 x 10 to the 8 m/s). They differ in wavelength and frequency, and the visible region is the narrow band between infrared and ultraviolet.",
+                "content": "Sound is a longitudinal wave that needs a medium: it travels by compressing and rarefying the particles of a solid, liquid or gas, and cannot travel through a vacuum. In air at room temperature sound travels at about 330-340 m/s, much slower than light. Speed = distance / time, so an echo \u2014 sound reflected from a distant surface such as a cliff or the sea bed \u2014 can be used to measure distance.\n\nThe pitch of a note is set by its frequency (higher frequency, higher pitch) and the loudness by its amplitude (greater amplitude, louder sound). The human ear hears roughly 20 Hz to 20 000 Hz, and frequencies above this range are called ultrasound. Ultrasound echoes are used in medical scanning and in depth sounding.\n\nThe electromagnetic spectrum runs from radio waves and microwaves through infrared, visible light, ultraviolet, X-rays and gamma rays \u2014 all transverse waves that travel through a vacuum at the speed of light (about 3 x 10 to the 8 m/s). They differ in wavelength and frequency, and the visible region is the narrow band between infrared and ultraviolet.\n\nSound Wave Phenomena. Like every wave, sound is reflected, refracted and diffracted. Reflection of sound is what produces an echo: the sound bounces off a distant surface such as a cliff, the sea bed or a large building and returns to the listener, and the time the echo takes can be used to find the distance to that surface. Refraction of sound is a change of direction as the sound passes into air of a different temperature: sound travels a little faster in warm air than in cold air, so on a still night it bends down towards a listener across a lake and carries much further than in the heat of the day. Diffraction of sound is heard when sound spreads through a doorway into a room, or bends around the corner of a building, which is why you can hear a band before you see it. Noise is unwanted sound, measured in decibels, and long exposure to loud noise damages hearing, so noisy machines are enclosed and workers wear ear protectors.\n\nUses of Ultrasound. Ultrasound is a sound wave whose frequency is above the top of the human hearing range, so the ear cannot hear it, yet it obeys the same laws as audible sound and it is reflected at a boundary between two different materials. A ship's depth sounder, or sonar, sends a short pulse of ultrasound down into the water and times the echo from the sea bed, so the depth follows from depth = (speed of sound in water x time) / 2. Pre-natal scanning uses the same idea to build up an image of an unborn baby from the echoes returned by its different tissues, and the pulses used are short and gentle enough not to harm mother or baby. An ultrasound cleaner lowers an object such as a surgical instrument or a piece of jewellery into a bath of water shaken by ultrasound, and the microscopic bubbles that form and collapse scrub the dirt off every surface, including the parts a brush cannot reach. Physiotherapy uses ultrasound to warm deep tissue and so relieve pain and stiffness in a joint, and engineers pass ultrasound through a metal casting to find flaws hidden inside it. Bats and dolphins use the same reflection of ultrasound to find their way and to hunt.",
                 "objectives": [
                     "Describe sound as a longitudinal wave and compare its speed with light",
                     "Relate pitch and loudness to frequency and amplitude and use echoes",
@@ -433,11 +447,115 @@
                 "concepts": [
                     "Longitudinal wave: a wave in which the particles vibrate along the direction the wave travels, as in sound.",
                     "Echo: a sound heard again after reflecting from a distant surface; used to measure distance.",
-                    "The electromagnetic spectrum: the family of transverse waves from radio to gamma rays that travel through a vacuum at the speed of light."
+                    "The electromagnetic spectrum: the family of transverse waves from radio to gamma rays that travel through a vacuum at the speed of light.",
+                    "Reflection of sound: sound bounces off a hard surface and returns to the listener as an echo, and the delay gives the distance to the surface.",
+                    "Refraction of sound: sound changes direction when it passes into air of a different temperature, bending towards the cooler, denser air.",
+                    "Diffraction of sound: sound spreads through a doorway or bends around an obstacle, so it can be heard from a place where the source is not in sight.",
+                    "Noise: unwanted sound, measured in decibels, which damages hearing after long exposure.",
+                    "Sonar: an echo sounder that times a pulse of ultrasound to find the depth of water or the position of a shoal of fish.",
+                    "Pre-natal scanning: ultrasound echoes from the tissues of an unborn baby are built up into an image of it.",
+                    "Ultrasound cleaning: bubbles formed and collapsed by ultrasound in a water bath scrub the dirt from the surface of an object.",
+                    "Physiotherapy: ultrasound warms deep tissue to relieve pain and stiffness."
                 ],
                 "experiment": {
                     "type": "classifier-sim",
                     "description": "Sort each statement under Sound or The electromagnetic spectrum."
+                }
+            },
+            {
+                "id": "waves-sources-and-uses-of-electromagnetic-waves",
+                "title": "Sources and Uses of Electromagnetic Waves",
+                "content": "Every region of the electromagnetic spectrum has its own source and its own uses. Radio waves come from oscillating charges in an aerial; broadcasting and mobile phones use them because they pass through walls and travel long distances. Microwaves come from a magnetron or a dish aerial; radar, satellite links and cooking use them because they are strongly absorbed by water molecules in food. Infrared comes from warm objects such as the human body; remote controls, thermal imaging and heaters use it because it is felt as heat. Visible light comes from hot filaments, gas discharge lamps and light-emitting diodes; vision, photography and vision through optical fibres all use it. Ultraviolet comes from mercury-vapour lamps and the Sun; sterilising and security marking use it because it kills micro-organisms and makes some inks glow.\n\nThe shorter-wavelength regions need more energetic sources. X-rays are produced when fast electrons are stopped by a metal target in an evacuated tube; photographing bones and luggage uses them because they pass through flesh but not through dense material. Gamma rays come from changes inside unstable nuclei; sterilising equipment and treating cancer use them because they penetrate deeply and kill living cells.\n\nUltraviolet, X-rays and gamma rays are the ionising regions, and each is a hazard as well as a tool: they damage living cells, cause sunburn and skin cancer, and can change genes. Time of exposure is therefore kept short, lead or concrete screens are used where X-rays and gamma rays are present, sunblock and clothing protect against ultraviolet, and a radiographer stands behind a screen while an image is taken.",
+                "objectives": [
+                    "State a source and a use for each region of the electromagnetic spectrum",
+                    "Explain why radio waves, microwaves, infrared and visible light are used as they are",
+                    "Describe the hazards of the ionising regions and the precautions taken"
+                ],
+                "concepts": [
+                    "Radio waves and microwaves: produced by oscillating charges in aerials and in magnetrons, and used for broadcasting, mobile phones, radar, satellite links and cooking.",
+                    "Infrared and visible light: emitted by warm objects, filaments and lamps, and used for remote controls, thermal imaging, heaters, vision and photography.",
+                    "Ionising regions: ultraviolet, X-rays and gamma rays come from hot bodies, high voltage tubes and nuclear changes, and they damage living cells."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Sources and Uses of Electromagnetic Waves: Sort 6 statements into A source of that region, A use of that region."
+                }
+            },
+            {
+                "id": "waves-theories-of-light",
+                "title": "Theories of Light",
+                "content": "For centuries two rival models tried to explain how light behaves. Isaac Newton's corpuscular theory said that light is a stream of tiny particles that travel in straight lines and are reflected when they bounce off a surface. Christiaan Huygens put forward the wave theory instead: light is a disturbance that spreads out from its source, in the way a ripple spreads across water.\n\nSeveral observations are explained by either model. Light travels in straight lines, casts sharp shadows and reflects so that the angle of incidence equals the angle of reflection, and a stream of particles would do all three just as a wave would. Refraction looked at first like a point in favour of particles, because it was argued that the light would speed up on entering a denser medium, and the measurements available at the time were not accurate enough to settle the question.\n\nTwo observations decided the argument in favour of the wave model. Diffraction and interference are wave behaviours that particles cannot produce: light bends into the shadow of an obstacle, and two beams of light can cancel each other out, which Thomas Young demonstrated in 1801 with the double slit experiment. Then a careful measurement of the speed of light by Jean Foucault in 1850 showed that light travels more slowly in water than in air, which is the opposite of what the corpuscular theory predicted.\n\nLater work showed that light is an electromagnetic wave, but the photoelectric effect showed that light also delivers its energy in small packets, so modern physics describes light as having both a wave nature and a particle nature: it travels and interferes as a wave, and it is absorbed and emitted as a packet of energy.",
+                "objectives": [
+                    "Compare the corpuscular theory and the wave theory of light",
+                    "Explain which observations support each theory",
+                    "Explain why light is now described as having both a wave nature and a particle nature"
+                ],
+                "concepts": [
+                    "Corpuscular theory: Newton's model in which light is a stream of tiny particles that travel in straight lines.",
+                    "Wave theory: Huygens' model in which light is a disturbance that spreads out from its source.",
+                    "Diffraction and interference: the wave behaviours that particles cannot produce, and the evidence that settled the argument for the wave model.",
+                    "Photon: a packet of light energy; the photoelectric effect shows that light also behaves as a particle."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Theories of Light: Match each of 5 items - Corpuscular theory, Wave theory, Diffraction and interference, Jean Foucault, The photoelectric effect - to the statement that describes it."
+                }
+            },
+            {
+                "id": "waves-youngs-double-slit-experiment",
+                "title": "Young's Double Slit Experiment",
+                "content": "In 1801 Thomas Young passed light from a single narrow slit through two very close parallel slits and onto a screen. The two slits act as two coherent sources: they send out light of the same frequency that stays in step, because both are lit by the same source. Where the light from the two slits arrives in step, the waves reinforce each other and a bright fringe appears; where it arrives out of step, the waves cancel each other and a dark fringe appears. The result is a pattern of equally spaced bright and dark bands called interference fringes.\n\nThe experiment is direct evidence that light is a wave, and the pattern can be used to measure the wavelength of the light. The fringe spacing x = wavelength x D / a, where D is the distance from the slits to the screen and a is the separation of the two slits. Increasing the distance to the screen widens the fringes, moving the slits closer together widens them, and using red light instead of blue light widens them as well, because red light has the longer wavelength.\n\nIn the laboratory a laser or a lamp behind a single slit provides the coherent light, and the fringes are viewed on a screen or through a travelling microscope so that the distance across several fringes can be measured and divided to give the spacing of one. A stream of particles passing through two slits would simply give two bright bands, so the alternating bright and dark fringes cannot be explained by the corpuscular theory.",
+                "objectives": [
+                    "Describe Young's double slit experiment and the conditions it needs",
+                    "Explain the bright and dark fringes in terms of interference",
+                    "Use the fringe spacing relation to find the fringe spacing or the wavelength"
+                ],
+                "concepts": [
+                    "Coherent sources: two sources are coherent when they send out waves of the same frequency that stay in step.",
+                    "Interference fringes: the equally spaced bright and dark bands produced where light from the two slits overlaps.",
+                    "Fringe spacing: x = wavelength x D / a, where D is the distance from the slits to the screen and a is the slit separation."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Young's Double Slit Experiment: Match each of 5 items - Coherent sources, A bright fringe, A dark fringe, Increasing the distance to the screen, Using red light instead of blue light - to the statement that describes it."
+                }
+            },
+            {
+                "id": "waves-rectilinear-propagation-of-light",
+                "title": "Rectilinear Propagation of Light",
+                "content": "Light travels in straight lines through a uniform medium. This is called rectilinear propagation, and it is the reason we draw rays, which are straight lines with arrowheads showing the direction of travel, and beams, which are bundles of rays. The straight-line model is an approximation, because light spreads a little when it passes a narrow gap, but it explains almost every everyday observation of light.\n\nA shadow forms because light travels in straight lines and cannot bend around an object: the shadow is the region behind the object that the light cannot reach. A point source gives a sharp shadow with one fully dark region, called the umbra. An extended source such as a fluorescent tube gives a dark umbra with a partly lit region around it, called the penumbra, because light from different parts of the source is blocked by different amounts. A solar eclipse happens when the Moon's shadow falls on the Earth, and a lunar eclipse when the Earth's shadow falls on the Moon; in each case the sharp edge of the shadow is itself evidence that light travels in straight lines.\n\nA pin-hole camera uses rectilinear propagation to form a real, inverted image. Light from the top of the object passes through the hole and lands near the bottom of the screen, and light from the bottom lands near the top, so the image is upside down and laterally inverted. The image is sharpest when the hole is small, and its magnification is the image distance divided by the object distance. Making the hole larger lets in more light but blurs the image, because every point of the object then sends a cone of light through the hole instead of a single ray.",
+                "objectives": [
+                    "Explain rectilinear propagation and represent light with rays and beams",
+                    "Describe shadows, the umbra and the penumbra, and explain eclipses",
+                    "Explain how a pin-hole camera forms a real, inverted image"
+                ],
+                "concepts": [
+                    "Rectilinear propagation: light travels in straight lines through a uniform medium.",
+                    "Umbra and penumbra: the fully dark part of a shadow and the partly lit region around it cast by an extended source.",
+                    "Pin-hole camera: a small hole forms a real, inverted image because light travels in straight lines."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Rectilinear Propagation of Light: Match each of 5 items - Rectilinear propagation, Umbra, Penumbra, A pin-hole camera, Making the hole larger - to the statement that describes it."
+                }
+            },
+            {
+                "id": "waves-focal-length-determination",
+                "title": "Focal Length Determination",
+                "content": "The focal length of a converging lens is the distance from the optical centre to the principal focus, the point where rays parallel to the principal axis meet after passing through the lens. In the distant object method an object as far away as possible, such as a window or a distant tree, is used so that the rays arriving at the lens are nearly parallel; the image then forms at the principal focus, and the distance from the lens to a screen showing the sharpest image is the focal length. The method is quick, but it works only if the object really is far enough away.\n\nThe u-v method is more accurate. A converging lens is set up on an optical bench with an object such as an illuminated cross-wire at one end and a screen at the other. For each position of the object the screen is moved until a sharp image is formed, and the object distance u and the image distance v are measured from the optical centre and put into the lens formula 1 / f = 1 / u + 1 / v. Several pairs of readings are taken and the average focal length is found, or the results are plotted as a graph of 1 / v against 1 / u, which is a straight line; the intercepts of that line give 1 / f, so the reciprocal of the intercept is the focal length. Averaging several readings reduces the effect of an error in any one of them.\n\nInaccurate results come from measuring u and v from the wrong point instead of from the optical centre, from judging the sharpest image by eye, and from the screen not being square to the principal axis. In the plane mirror method the lens rests on a plane mirror with a pin held above it; the pin is moved until it coincides exactly with its own image, and at that position the pin is at the principal focus, so the distance from the pin to the lens is the focal length. Whichever method is used, the answer is checked against the value marked on the lens.",
+                "objectives": [
+                    "Describe the distant object method for finding the focal length of a converging lens",
+                    "Use the u-v method with the lens formula and a graph of 1 / v against 1 / u",
+                    "State the sources of error in the measurement and how the plane mirror method avoids some of them"
+                ],
+                "concepts": [
+                    "Distant object method: parallel rays from a distant object form an image at the principal focus, so the image distance is the focal length.",
+                    "u-v method: the object and image distances are measured and put into the lens formula 1 / f = 1 / u + 1 / v.",
+                    "Graph method: a graph of 1 / v against 1 / u is a straight line whose intercepts give 1 / f."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Focal Length Determination: Match each of 5 items - The distant object method, The u-v method, A graph of 1 / v against 1 / u, The plane mirror method, Judging the sharpest image by eye - to the statement that describes it."
                 }
             }
         ]
@@ -449,7 +567,7 @@
             {
                 "id": "electric-circuits",
                 "title": "Current, Voltage, and Resistance",
-                "content": "Electricity is the flow of electric charge, usually carried by electrons through a conductor. Current (I) is the rate of flow of charge, measured in Amperes (A). Voltage (V), or potential difference, is the energy per unit charge that 'pushes' the current through the circuit, measured in Volts (V). Resistance (R) is the opposition to the flow of current, measured in Ohms (\u03a9).\n\nThe relationship between these three quantities is known as Ohm's Law: V = IR. This law states that for many materials, the current is directly proportional to the voltage applied, provided the temperature remains constant. Components like resistors follow this law, while others like light bulbs change their resistance as they get hotter.\n\nIn CSEC Physics, you will build and analyse series and parallel circuits. In a series circuit, there is only one path for the current, so it remains the same everywhere. In a parallel circuit, there are multiple paths, and the total current is the sum of the currents in each branch. You will also learn to calculate total resistance for both types of arrangements and use multimeters to take measurements.\n\nThe key that comes with the diagrams names the circuit symbols used: the battery (the long plate is the positive terminal), the resistor and the bulb. In the parallel arrangement each branch is connected across the same potential difference, so the same 6 V battery drives 3 A through a 2 \u03a9 branch and 2 A through a 3 \u03a9 branch, a total of 5 A; in series it drives one current of 1 A through a 2 \u03a9 and a 4 \u03a9 resistor, leaving 2 V across the 2 \u03a9 resistor and 4 V across the 4 \u03a9 resistor.",
+                "content": "Electricity is the flow of electric charge, usually carried by electrons through a conductor. Current (I) is the rate of flow of charge, measured in Amperes (A). Voltage (V), or potential difference, is the energy per unit charge that 'pushes' the current through the circuit, measured in Volts (V). Resistance (R) is the opposition to the flow of current, measured in Ohms (\u03a9).\n\nThe relationship between these three quantities is known as Ohm's Law: V = IR. This law states that for many materials, the current is directly proportional to the voltage applied, provided the temperature remains constant. Components like resistors follow this law, while others like light bulbs change their resistance as they get hotter.\n\nIn CSEC Physics, you will build and analyse series and parallel circuits. In a series circuit, there is only one path for the current, so it remains the same everywhere. In a parallel circuit, there are multiple paths, and the total current is the sum of the currents in each branch. You will also learn to calculate total resistance for both types of arrangements and use multimeters to take measurements.\n\nThe key that comes with the diagrams names the circuit symbols used: the battery (the long plate is the positive terminal), the resistor and the bulb. In the parallel arrangement each branch is connected across the same potential difference, so the same 6 V battery drives 3 A through a 2 \u03a9 branch and 2 A through a 3 \u03a9 branch, a total of 5 A; in series it drives one current of 1 A through a 2 \u03a9 and a 4 \u03a9 resistor, leaving 2 V across the 2 \u03a9 resistor and 4 V across the 4 \u03a9 resistor.\n\nMaterials differ in how easily charge moves through them. A conductor lets charge flow easily: in a metal such as copper or aluminium each atom gives up one or more electrons that are free to move through the metal, so the current is a flow of free electrons. An electrolyte such as dilute sulphuric acid or salt solution also conducts, but there the current is carried by ions, the charged particles into which the substance splits, and the positive and negative ions move in opposite directions through the solution.\n\nAn insulator holds its electrons tightly, so charge cannot flow through it: plastic, rubber, glass, dry wood and dry air are insulators, which is why a wire is covered with plastic and the body of a switch is made of plastic or ceramic. In a metal the current is a flow of electrons from the negative terminal towards the positive terminal and in an electrolyte it is a flow of ions, but in both cases the conventional current in the circuit is taken to flow from the positive terminal to the negative terminal.",
                 "figures": [
                     {
                         "src": "/content/physics/figures/circuits-series-parallel.svg",
@@ -459,11 +577,16 @@
                 ],
                 "objectives": [
                     "Apply Ohm's Law V = IR",
-                    "Differentiate between series and parallel circuits"
+                    "Differentiate between series and parallel circuits",
+                    "Distinguish a conductor from an insulator",
+                    "Describe how a metal and an electrolyte conduct electricity"
                 ],
                 "concepts": [
                     "Current (I) is the flow of charge.",
-                    "Resistance (R) opposes the flow of current."
+                    "Resistance (R) opposes the flow of current.",
+                    "Conductor: a material in which charge flows easily, such as a metal or an electrolyte.",
+                    "Insulator: a material that does not let charge flow, such as plastic, rubber or dry air.",
+                    "Metals conduct by the movement of free electrons, while electrolytes conduct by the movement of ions."
                 ],
                 "experiment": {
                     "type": "circuit-builder",
@@ -473,18 +596,28 @@
             {
                 "id": "magnetism-and-electromagnetism",
                 "title": "Magnetism and Electromagnetism",
-                "content": "A magnet has a north and a south pole, and like poles repel while unlike poles attract. Magnetic materials such as iron, steel, cobalt and nickel are attracted to a magnet. The pattern of a magnetic field can be shown with iron filings or plotting compasses, and the field lines run from north to south outside the magnet.\n\nWhen current flows through a wire a magnetic field is produced around it, and the field is stronger if the current is larger or the wire is wound into a coil. Winding the wire around a soft iron core produces an electromagnet, which is magnetised while the current flows and demagnetised when it stops \u2014 the basis of relays, electric bells and lifting magnets. Reversing the current reverses the poles, and the direction is given by the right-hand grip rule.\n\nElectromagnetic induction works the other way round: moving a magnet into or out of a coil, or moving a coil in a magnetic field, generates a voltage across the coil. A faster movement or a stronger field gives a bigger voltage. This is how generators and dynamos produce electricity. A transformer uses two coils wound on the same iron core to change an alternating voltage: the ratio of the voltages equals the ratio of the numbers of turns, and a step-up transformer has more turns on the output coil.\n\nMagnetic flux density is the quantity that describes how strong a magnetic field is: it is the magnetic flux passing through unit area at right angles to the field, B = flux / area, and its direction is the direction of the field line at that point. Magnetic flux is measured in webers (Wb), and the SI unit of magnetic flux density is the tesla (T), where 1 T = 1 Wb/m2. The Earth's magnetic field at the surface is only about 0.05 mT, while the field of a strong electromagnet or an MRI scanner reaches 1 T or more. Read the unit in the question before you answer: the tesla measures magnetic flux density B, the weber measures magnetic flux, and the henry measures inductance.",
+                "content": "A magnet has a north and a south pole, and like poles repel while unlike poles attract. Magnetic materials such as iron, steel, cobalt and nickel are attracted to a magnet. The pattern of a magnetic field can be shown with iron filings or plotting compasses, and the field lines run from north to south outside the magnet.\n\nWhen current flows through a wire a magnetic field is produced around it, and the field is stronger if the current is larger or the wire is wound into a coil. Winding the wire around a soft iron core produces an electromagnet, which is magnetised while the current flows and demagnetised when it stops \u2014 the basis of relays, electric bells and lifting magnets. Reversing the current reverses the poles, and the direction is given by the right-hand grip rule.\n\nElectromagnetic induction works the other way round: moving a magnet into or out of a coil, or moving a coil in a magnetic field, generates a voltage across the coil. A faster movement or a stronger field gives a bigger voltage. This is how generators and dynamos produce electricity. A transformer uses two coils wound on the same iron core to change an alternating voltage: the ratio of the voltages equals the ratio of the numbers of turns, and a step-up transformer has more turns on the output coil.\n\nMagnetic flux density is the quantity that describes how strong a magnetic field is: it is the magnetic flux passing through unit area at right angles to the field, B = flux / area, and its direction is the direction of the field line at that point. Magnetic flux is measured in webers (Wb), and the SI unit of magnetic flux density is the tesla (T), where 1 T = 1 Wb/m2. The Earth's magnetic field at the surface is only about 0.05 mT, while the field of a strong electromagnet or an MRI scanner reaches 1 T or more. Read the unit in the question before you answer: the tesla measures magnetic flux density B, the weber measures magnetic flux, and the henry measures inductance.\n\nA changing magnetic field through a conductor induces a voltage, and the voltage produced in this way is called an induced electromotive force. The size of the induced electromotive force depends on how fast the field through the coil changes and on the number of turns on the coil: pulling a magnet slowly out of a coil gives a small reading, plunging it in quickly gives a large one, and a coil of many turns gives a bigger voltage than a coil of few turns because each turn adds to the total. This is Faraday's law: the induced electromotive force is proportional to the rate of change of the magnetic field through the coil.\n\nThe direction of the induced current is given by Lenz's law: the induced current always flows in the direction that opposes the change producing it. Pushing a magnet into a coil induces a current that tries to push it back out, and pulling the magnet out induces a current that tries to hold it in. The rule is the conservation of energy at work in induction, because the induced current has to be paid for by the work done against that opposing force, and it is the reason a generator becomes harder to turn as the current it supplies increases.\n\nAn a.c. generator, or alternator, is a coil turning in a magnetic field. The ends of the coil are joined to two slip rings, and carbon brushes press on the slip rings so that the current reaches the external circuit while the coil rotates freely. Because each side of the coil moves across the field first one way and then the other, the current reverses direction every half turn, and the output is an alternating voltage that follows a sine curve. The frequency of the supply equals the number of revolutions per second of the coil, which is 50 hertz for the mains in the Caribbean, and the peak value is the largest voltage or current the output reaches, which grows if the magnetic field is stronger or the coil has more turns. A d.c. dynamo is built with a split-ring commutator instead of slip rings, so the current in the external circuit is always in the same direction even though the current inside the rotating coil still reverses each half turn.\n\nA transformer changes the size of an alternating voltage: the ratio of the primary voltage to the secondary voltage equals the ratio of the number of turns on the two coils, so a step-up transformer has more turns on the secondary coil and gives a larger output voltage, while a step-down transformer has fewer and gives a smaller one. A transformer works only with an alternating supply, because a direct voltage sets up a field in the core that does not change and so induces nothing in the secondary coil. In an ideal transformer the power input equals the power output, so when the voltage is stepped up the current is stepped down by the same factor, and the efficiency of a transformer is the useful power output divided by the power input, written as a percentage. A real transformer loses a little energy, and a laminated core reduces the losses from eddy currents while thick copper coils keep the resistance low, so a large transformer can be over 95 per cent efficient. Electricity is transmitted at a high voltage so that the current in the cables is small, because the energy wasted as heat in a cable depends on the square of the current; a step-down transformer near the user then brings the voltage down to a safe level.",
                 "objectives": [
                     "Describe the magnetic field of a magnet and the behaviour of poles",
                     "Explain how an electromagnet is made and how its strength can be changed",
-                    "Describe electromagnetic induction and how a transformer changes voltage"
+                    "Describe electromagnetic induction and how a transformer changes voltage",
+                    "Explain what an induced electromotive force is and the factors that set its size",
+                    "State the direction rule for an induced current and link it to the conservation of energy",
+                    "Describe how an a.c. generator produces an alternating voltage, including the part played by the slip rings and the peak value of the output",
+                    "Use the turns ratio and the power relationship to work with a transformer, and state what its efficiency means"
                 ],
                 "concepts": [
                     "Electromagnet: a coil wound on a soft iron core that is magnetic only while current flows.",
                     "Electromagnetic induction: generating a voltage by moving a magnet and a coil relative to each other.",
                     "Transformer: two coils on one iron core that change an alternating voltage; the voltage ratio equals the turns ratio."
                 ,
-                    "Magnetic flux density: the magnetic flux passing through unit area at right angles to the field, measured in tesla (T)."],
+                    "Magnetic flux density: the magnetic flux passing through unit area at right angles to the field, measured in tesla (T).",
+                    "Induced electromotive force: the voltage induced across a conductor when the magnetic field through it changes; it grows with the rate of change of the field and with the number of turns on the coil (Faraday's law).",
+                    "Lenz's law: the induced current flows in the direction that opposes the change producing it.",
+                    "A.c. generator: a coil turning in a magnetic field, with slip rings carrying an alternating output whose frequency equals the number of revolutions per second of the coil.",
+                    "Peak value: the largest voltage or current an alternating supply reaches in each cycle, which grows with a stronger field or more turns on the coil.",
+                    "Transformer efficiency: in an ideal transformer the power input equals the power output, and efficiency = useful power output / power input x 100%."
+                ],
                 "experiment": {
                     "type": "matching-game",
                     "description": "Match each term - Magnetic materials, Electromagnet, Electromagnetic induction, Transformer and Step-up transformer - to the statement that describes it."
@@ -509,6 +642,215 @@
                     "type": "classifier-sim",
                     "description": "Sort each statement under Fuse, Earthing or Circuit breaker."
                 }
+            },
+            {
+                "id": "em-charging-by-friction-and-induction",
+                "title": "Charging by Friction and Induction",
+                "content": "All matter is made of atoms containing protons, neutrons and electrons. Protons carry positive charge, electrons carry an equal negative charge and neutrons carry none. A body is normally neutral because it contains equal numbers of protons and electrons, and the only charged particle that moves from one body to another in everyday charging is the electron. A body that gains electrons becomes negatively charged, and a body that loses electrons is left positively charged.\n\nCharging by friction happens when two different insulators are rubbed together. Rubbing a polythene rod with a dry cloth transfers electrons from the cloth to the rod, so the polythene rod becomes negatively charged while the cloth is left with an equal positive charge. Rubbing a perspex rod transfers electrons in the opposite direction, so the perspex rod becomes positively charged. The two bodies end with equal and opposite charges, because charge is conserved and no charge is created or destroyed.\n\nCharging by induction charges a conductor without touching it with the charged body. When a charged rod is brought near a neutral conductor, the charges inside the conductor separate: charges of the same sign as the rod are repelled towards the far end and charges of the opposite sign are attracted towards the near end. The conductor is earthed while the charged rod is near it, so the repelled charge escapes to earth; the earth connection is then removed and the rod taken away, leaving the conductor charged with the opposite sign to the rod. Nothing is transferred from the rod itself: the conductor is charged by separation and earthing.",
+                "objectives": [
+                    "Describe charging by friction and explain why the charges produced are equal and opposite",
+                    "Explain charging by induction and the part played by earthing",
+                    "Apply the conservation of charge to everyday charging processes"
+                ],
+                "concepts": [
+                    "Charging by friction: rubbing two different insulators together transfers electrons from one to the other.",
+                    "Charging by induction: bringing a charged body near a conductor, earthing it, and removing the earth to leave it charged.",
+                    "Conservation of charge: charge is never created or destroyed, only transferred from one body to another."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Charging by Friction and Induction: Sort 6 statements into Charging by friction, Charging by induction."
+                }
+            },
+            {
+                "id": "em-forces-between-charges",
+                "title": "Forces Between Charges",
+                "content": "An electric charge exerts a force on any other charge near it. Two like charges repel each other, so the force pushes them apart. Two unlike charges attract each other, so the force pulls them together. The force acts along the line joining the two charges, and it is strongest when the charges are close together.\n\nThe size of the force depends on the size of the charges and on the distance between them. Doubling the size of one charge doubles the force between the charges. Doubling the distance between the charges reduces the force to one quarter of its former value, because the force obeys an inverse square law: the force is proportional to the product of the two charges divided by the square of their separation, so force is proportional to (Q1 x Q2) / r squared.\n\nForces between charges always come in pairs. The force on each charge is equal in size and opposite in direction to the force on the other, so the two charges are pushed apart or pulled together along the same line. This is Newton's third law acting on electric charges.",
+                "objectives": [
+                    "State the rule for the force between two charges",
+                    "Describe how the force depends on the size of the charges and on their separation",
+                    "Explain why the two forces between a pair of charges are equal and opposite"
+                ],
+                "concepts": [
+                    "Like charges repel and unlike charges attract, along the line joining the charges.",
+                    "The force is proportional to the product of the charges and inversely proportional to the square of the distance between them.",
+                    "The force on each charge is equal in size and opposite in direction to the force on the other."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Forces Between Charges: Match each of 5 items - Two like charges, Two unlike charges, Doubling the size of one charge, Doubling the distance between the charges, The force on each charge - to the statement that describes it."
+                }
+            },
+            {
+                "id": "em-electric-fields",
+                "title": "Electric Fields",
+                "content": "An electric field is a region in which a charge experiences a force. The direction of the field at a point is the direction of the force on a small positive test charge placed there, so the field points away from a positive charge and towards a negative charge.\n\nField lines are drawn with arrows to show the direction of the field. Around a single point charge the field is a radial field, and the lines spread out as they get further from the charge. Further apart field lines mean a weaker field. Field lines never cross, because a charge placed at one point cannot be pushed in two directions at once.\n\nBetween two parallel plates connected to a supply the field is a uniform field. The field lines are parallel and equally spaced, and a small charge feels the same force everywhere between the plates. Electric field strength is the force per unit charge, E = F / Q, measured in newtons per coulomb.",
+                "objectives": [
+                    "Describe the direction of an electric field and how field lines are drawn",
+                    "Compare the radial field around a point charge with the uniform field between parallel plates",
+                    "Use E = F / Q to calculate electric field strength"
+                ],
+                "concepts": [
+                    "Electric field: a region where a charge experiences a force; the field direction is the force direction on a positive test charge.",
+                    "Radial field: the field around a point charge, with field lines spreading out and weakening with distance.",
+                    "Uniform field: the parallel, equally spaced field between two parallel plates, where the force on a charge does not change."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Electric Fields: Sort 6 statements into Radial field, Uniform field."
+                }
+            },
+            {
+                "id": "em-static-charge-applications-and-hazards",
+                "title": "Static Charge Applications and Hazards",
+                "content": "Useful applications of static charge are found in industry and in the home. In an electrostatic paint sprayer the paint droplets are given a charge and are attracted to the earthed metal object being painted, so less paint is wasted and the coat is even. A photocopier attracts toner powder to a charged drum, and an electrostatic precipitator in a power station chimney charges the dust particles and collects them on charged plates, which removes dust from the gas leaving the chimney.\n\nHazards from static charge appear wherever a spark could ignite a fuel or damage a component. Friction between a road tanker and the air, or between fuel and a pipe, builds up charge, and a spark from that charge could ignite petrol vapour, so tankers are earthed and the pipe is bonded to the tanker before fuel is transferred. The same danger exists when refuelling an aircraft, when using flammable solvents, and in a flour mill, where charged dust particles can cause a dust explosion.\n\nStatic charge also damages electronic components, especially the metal-oxide parts inside a computer, so engineers wear an earthed wrist strap and work on an earthed mat. Lightning is the largest natural example of static charge: charge builds up in a cloud until the air breaks down and a huge spark carries the charge to earth.",
+                "objectives": [
+                    "Describe useful applications of static charge",
+                    "Explain the hazards caused by static charge and the precautions taken",
+                    "Explain why earthing and bonding prevent spark hazards"
+                ],
+                "concepts": [
+                    "Earthing and bonding let charge flow away safely before a spark can form.",
+                    "Charged droplets, toner and dust can be steered by an electric field, which is the basis of spray painting, photocopying and dust extraction.",
+                    "A spark from built-up static charge can ignite flammable vapour or dust, and a sudden discharge can destroy sensitive electronic components."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Static Charge Applications and Hazards: Sort 6 statements into Useful applications of static charge, Hazards from static charge."
+                }
+            },
+            {
+                "id": "em-direct-and-alternating-current",
+                "title": "Direct and Alternating Current",
+                "content": "A direct current, or d.c., flows in one direction only. A cell, a battery or a solar cell supplies direct current, and the output of a d.c. generator is direct current too, so the current keeps the same steady direction as long as the circuit is complete. A d.c. supply has fixed positive and negative terminals, so the current always leaves the same terminal.\n\nAn alternating current, or a.c., reverses direction at a regular frequency, so the current flows one way and then the other. An alternating current is supplied by an a.c. generator, and the frequency of the supply is the number of complete cycles each second. The mains supply in the Caribbean is an alternating supply at a frequency of 50 hertz, so the current completes 50 cycles every second and changes direction 100 times.\n\nThe two kinds of supply look different on a graph of current against time. A steady direct current is a straight horizontal line on the graph, while an alternating current reaches a peak one way and then a peak the other way, passing through zero in between. The mains is alternating rather than direct for a practical reason: a transformer can change only an alternating voltage. The two wires of an a.c. supply swap their polarity every half cycle, while the terminals of a battery never do.",
+                "objectives": [
+                    "Compare a direct current with an alternating current",
+                    "State the frequency of the mains supply in the Caribbean and say what it means",
+                    "Describe the graph of each kind of supply and name a source of each"
+                ],
+                "concepts": [
+                    "Direct current: a current that flows in one direction only, supplied by cells, batteries, solar cells and d.c. generators, with fixed positive and negative terminals.",
+                    "Alternating current: a current that reverses direction at a regular frequency, supplied by an a.c. generator and used for the mains.",
+                    "Frequency of the mains: the number of complete cycles each second, which is 50 hertz in the Caribbean."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Direct and Alternating Current: Sort 8 statements into Direct current, Alternating current."
+                }
+            },
+            {
+                "id": "em-primary-and-secondary-cells",
+                "title": "Primary and Secondary Cells",
+                "content": "A cell changes chemical energy into electrical energy. The electromotive force of a cell, usually shortened to e.m.f., is the energy the cell gives to each unit of charge that passes through it, measured in volts. Every cell has its own resistance, called internal resistance, so while a current flows the voltage measured across the terminals of the cell is a little less than its electromotive force: the difference is the voltage lost inside the cell, and it grows as the current grows.\n\nCells come in two kinds. A primary cell cannot be recharged, because its chemical reaction cannot be reversed: in a dry cell its chemicals are used up as it delivers charge, so a flat dry cell is thrown away and replaced. A secondary cell, also called an accumulator, can be recharged, because passing a current through it in the opposite direction reverses the chemical reaction and restores the chemicals. The lead-acid accumulator in a car is a secondary cell: each cell gives about 2 volts, and six of them joined in series give the 12 volts of a car battery. The lithium-ion cell in a phone or a laptop is a secondary cell too, and it stores more energy for its mass than a lead-acid cell.\n\nThe choice between the two depends on the job. A primary cell is cheap and ready to use with no charging, which suits a torch, a clock or a smoke alarm, but a flat one must be replaced and its chemicals disposed of carefully rather than put in the household rubbish. A secondary cell costs more at the start and has to be charged, but it can be used again hundreds of times, which suits a car, a phone, a power tool or a laptop. The capacity of a cell is the charge it can deliver, measured in ampere-hours: a cell rated at 2 ampere-hours can deliver 2 amperes for one hour, or 1 ampere for two hours.",
+                "objectives": [
+                    "Describe the difference between a primary cell and a secondary cell",
+                    "Explain the electromotive force and the internal resistance of a cell",
+                    "Give an example of each kind of cell and say what each is used for"
+                ],
+                "concepts": [
+                    "Electromotive force (e.m.f.): the energy a cell gives to each unit of charge, measured in volts.",
+                    "Internal resistance: the resistance inside a cell, which makes the terminal voltage less than the electromotive force while a current flows.",
+                    "Primary cell: a cell whose reaction cannot be reversed, such as a dry cell; secondary cell: a cell that can be recharged, such as the lead-acid accumulator or a lithium-ion cell."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Primary and Secondary Cells: Sort 8 statements into Primary cell, Secondary cell."
+                }
+            },
+            {
+                "id": "em-semiconductor-diodes-and-rectification",
+                "title": "Semiconductor Diodes and Rectification",
+                "content": "A semiconductor such as silicon conducts only weakly when it is pure, but its conductivity can be increased by adding a small amount of another element. Joining a p-type region to an n-type region makes a p-n junction, which is the heart of a diode. A diode is a semiconductor component that lets current flow in one direction only, so it acts as a one-way valve in a circuit.\n\nIn forward bias the anode is made positive with respect to the cathode, and the diode conducts, so current flows easily. In reverse bias the anode is made negative with respect to the cathode, and the diode blocks the current. A light-emitting diode, or LED, is a diode that gives out light when it conducts in the forward direction, which is why LEDs are used for indicator lamps, torches and television screens.\n\nBecause it conducts in one direction only, a diode can change alternating current into direct current, and this process is called rectification. In half-wave rectification one diode lets only half of the cycle reach the output, because the other half reverse biases it. In full-wave rectification four diodes in a bridge turn both halves of the cycle into direct current, and a smoothing capacitor stores charge and keeps the output voltage steady between the pulses. Rectification is used in the power supply of every phone charger and radio.",
+                "objectives": [
+                    "Describe the structure of a diode and how it behaves in forward and reverse bias",
+                    "Explain half-wave and full-wave rectification",
+                    "Explain the part played by a smoothing capacitor in a power supply"
+                ],
+                "concepts": [
+                    "Semiconductor: a material whose conductivity can be controlled by adding small amounts of other elements.",
+                    "Diode: a p-n junction that conducts when it is forward biased and blocks current when it is reverse biased.",
+                    "Rectification: turning alternating current into direct current with one diode (half-wave) or four diodes in a bridge (full-wave)."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Semiconductor Diodes and Rectification: Match each of 6 items - Diode, Forward bias, Reverse bias, Half-wave rectification, Full-wave rectification, Smoothing capacitor - to the statement that describes it."
+                }
+            },
+            {
+                "id": "em-logic-gates-and-truth-tables",
+                "title": "Logic Gates and Truth Tables",
+                "content": "Digital electronic circuits work with two states only. A low voltage is called logic 0, and a high voltage, such as 5 volts, is called logic 1. A logic gate is a circuit that combines these two states according to a rule, and the behaviour of a gate is written down in a truth table, a table that lists the output for every possible combination of inputs.\n\nThe three basic gates are the AND gate, the OR gate and the NOT gate. An AND gate gives 1 only when both inputs are 1, which is why it is used to test whether two conditions are met at the same time. An OR gate gives 1 when at least one input is 1. A NOT gate, also called an inverter, has a single input, and its output is the opposite of its single input, so a 1 becomes a 0 and a 0 becomes a 1.\n\nGates are combined to build the circuits that make decisions. A NAND gate is an AND gate followed by a NOT gate, and a NOR gate is an OR gate followed by a NOT gate; a truth table for the combination is built by working out the output of each gate in turn. Because the same few gates can be repeated millions of times on one silicon chip, they decide when a washing machine starts, when a traffic light changes, and how a calculator adds two numbers.",
+                "objectives": [
+                    "State the two logic levels and describe what a logic gate does",
+                    "Write and interpret truth tables for AND, OR and NOT gates",
+                    "Describe how gates are combined to make a decision circuit"
+                ],
+                "concepts": [
+                    "Logic gate: a circuit with one or more inputs and a single output, where the output depends on the combination of inputs.",
+                    "Truth table: a table showing the output of a gate for every possible combination of its inputs.",
+                    "AND gives 1 only when both inputs are 1, OR gives 1 when at least one input is 1, and NOT inverts its single input."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Logic Gates and Truth Tables: Match each of 6 items - AND gate, OR gate, NOT gate, NAND gate, Truth table, Logic 1 - to the statement that describes it."
+                }
+            },
+            {
+                "id": "em-impact-of-electronics-on-society",
+                "title": "Impact of Electronics on Society",
+                "content": "Electronics reached the home in the 1950s through the thermionic valve, a glass device that was hot, bulky and short-lived. The transistor replaced the valve, and the integrated circuit then placed thousands, and later millions, of transistors on a single silicon chip. That one change put small and cheap computing power in phones, laptops and household appliances, so the electronics industry now brings a clear benefit to society that reaches almost every Caribbean household.\n\nOn the medical side, electronic instruments monitor a patient's heart and breathing, and imaging equipment shows doctors what is happening inside the body. In industry, automatic control keeps a factory machine working safely, checks the size of every product on a line and stops the line if something is out of place. Communication changed too: a message that once took days now travels in seconds, and distance learning reaches students far from a campus.\n\nEach benefit carries a problem to manage. Toxic metals in discarded circuit boards must be collected and recycled, because dumping them contaminates soil and water. The energy used by data centres and by charging devices has become a large part of electricity demand, so efficient designs matter. Jobs changed or lost when a task is automated, and personal data collected by the same devices must be protected, so electronics must be used with care as well as enthusiasm.",
+                "objectives": [
+                    "Describe how the transistor and the integrated circuit changed electronics",
+                    "Give examples of the benefits of electronics in medicine, industry and communication",
+                    "Discuss the problems to manage, including e-waste, energy use and jobs"
+                ],
+                "concepts": [
+                    "Transistor and integrated circuit: the inventions that made electronic devices small, cheap and reliable.",
+                    "Electronics widened access to medical monitoring, automatic control and instant communication.",
+                    "Electronic waste and the energy used by devices and data centres are problems to manage through recycling and efficient design."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Impact of Electronics on Society: Sort 6 statements into Benefit to society, Problem to manage."
+                }
+            },
+            {
+                "id": "em-force-on-current-carrying-conductors",
+                "title": "Force on Current-Carrying Conductors",
+                "content": "A current-carrying conductor placed in a magnetic field experiences a force, and this is called the motor effect. The force is largest when the conductor is at right angles to the field, and no force is produced when the conductor lies along the field. Increasing the current, the field strength or the length of conductor in the field increases the force on the conductor, which is written as F = B I L for a conductor at right angles to the field.\n\nThe direction of the force is found with Fleming's left-hand rule: point the first finger along the field, the second finger along the current and the thumb in the direction of the force, holding the three fingers of the left hand at right angles to one another. Reversing the current or reversing the magnetic field reverses the direction of the force, and reversing both leaves the force in its original direction.\n\nThe two sides of a coil carry the current in opposite directions, so the forces on them turn the coil about its axis. That turning effect is the working principle of every electric motor and of moving-coil instruments such as the ammeter and the voltmeter.",
+                "objectives": [
+                    "Describe the motor effect and the conditions that produce the largest force",
+                    "Use Fleming's left-hand rule to predict the direction of the force",
+                    "Explain how two opposite forces on a coil produce a turning effect"
+                ],
+                "concepts": [
+                    "Motor effect: a current-carrying conductor in a magnetic field experiences a force at right angles to both the current and the field.",
+                    "Fleming's left-hand rule gives the direction of the force from the field and the current.",
+                    "The force increases with the current, the field strength and the length of conductor in the field."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Force on Current-Carrying Conductors: Match each of 5 items - Motor effect, Fleming's left-hand rule, Increasing the current, the field strength or the length of conductor in the field, Reversing the current or reversing the magnetic field, The two sides of a coil - to the statement that describes it."
+                }
+            },
+            {
+                "id": "em-dc-motor-action",
+                "title": "DC Motor Action",
+                "content": "A simple direct current motor is a rectangular coil of insulated wire mounted between the poles of a magnet, with the ends of the coil joined to a split-ring commutator. Carbon brushes press on the commutator and connect the coil to the supply, so current flows through the coil while it rotates.\n\nEach side of the coil carries the current in the opposite direction to the other side, so the force on one side points one way and the force on the other side points the opposite way. The two equal and opposite forces form a couple that turns the coil. Without any other part the coil would stop after half a turn, because the forces would then push it back the way it came.\n\nThe split-ring commutator solves that problem: it reverses the current in the coil every half turn, so the force on each side keeps pointing in the turning direction and the coil continues to rotate. Increasing the current, using a stronger magnet or winding more turns on the coil increases the turning effect, which is why a motor can be made to suit the job it drives.",
+                "objectives": [
+                    "Describe the parts of a simple direct current motor",
+                    "Explain the forces on a coil in a magnetic field and the couple they produce",
+                    "Explain the action of the split-ring commutator"
+                ],
+                "concepts": [
+                    "A direct current motor turns because the two sides of its coil carry current in opposite directions and so feel opposite forces.",
+                    "Split-ring commutator: it reverses the current in the coil every half turn so the coil keeps turning.",
+                    "The turning effect increases with the current, the strength of the magnetic field and the number of turns on the coil."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "DC Motor Action: Match each of 5 items - Split-ring commutator, Carbon brushes, Each side of the coil, The two equal and opposite forces, Using a stronger magnet or winding more turns on the coil - to the statement that describes it."
+                }
             }
         ]
     },
@@ -519,15 +861,18 @@
             {
                 "id": "radioactivity",
                 "title": "Radioactivity and Half-Life",
-                "content": "Radioactivity is the spontaneous and random emission of radiation from the unstable nucleus of an atom. There are three primary types of radiation: Alpha (\u03b1) particles, which are helium nuclei; Beta (\u03b2) particles, which are high-speed electrons; and Gamma (\u03b3) rays, which are high-energy electromagnetic waves. Each type has different penetrating power and ionising ability.\n\nBecause radioactive decay is random, we cannot predict when a specific nucleus will decay. However, for a large group of atoms, the rate of decay is predictable. The half-life is the time it takes for half of the radioactive nuclei in a sample to decay. For example, if a substance has a half-life of 10 years, a 100g sample will be reduced to 50g after 10 years, and then to 25g after another 10 years. A decay graph plots the count rate, the activity or the mass remaining against time, and its curve never reaches zero: the half-life is the time for the value to halve, and it is the same at every halving.\n\nCSEC questions often involve identifying types of radiation from their properties, completing nuclear equations, and using decay curves to determine half-life. Understanding radioactivity is essential for medicine (cancer treatment), archaeology (carbon dating), and energy production (nuclear power).",
+                "content": "Radioactivity is the spontaneous and random emission of radiation from the unstable nucleus of an atom. There are three primary types of radiation: Alpha (\u03b1) particles, which are helium nuclei; Beta (\u03b2) particles, which are high-speed electrons; and Gamma (\u03b3) rays, which are high-energy electromagnetic waves. Each type has different penetrating power and ionising ability.\n\nBecause radioactive decay is random, we cannot predict when a specific nucleus will decay. However, for a large group of atoms, the rate of decay is predictable. The half-life is the time it takes for half of the radioactive nuclei in a sample to decay. For example, if a substance has a half-life of 10 years, a 100g sample will be reduced to 50g after 10 years, and then to 25g after another 10 years. A decay graph plots the count rate, the activity or the mass remaining against time, and its curve never reaches zero: the half-life is the time for the value to halve, and it is the same at every halving.\n\nCSEC questions often involve identifying types of radiation from their properties, completing nuclear equations, and using decay curves to determine half-life. Understanding radioactivity is essential for medicine (cancer treatment), archaeology (carbon dating), and energy production (nuclear power).\n\nRanges and Tracks of Emissions. The range of a radiation is the distance it travels through air before it is absorbed. An alpha particle has the shortest range of the three - only a few centimetres of air - because its strong ionising power makes it lose energy very quickly. A beta particle travels much further, typically a few metres of air, because it ionises the air less densely along its path. Gamma radiation has no definite range at all: it is electromagnetic radiation, so it is not stopped at one particular distance, but is only gradually attenuated, its intensity falling as it passes through material.\n\nA cloud chamber makes these differences visible. As a particle ionises the air it passes through, it leaves a trail of condensation droplets, and that trail shows both the range of the particle and the shape of its path:\n\n- An alpha particle leaves a short, thick, straight track that stops abruptly, which matches its short range in air.\n- A beta particle leaves a long, thin, wiggly track, because a light, fast electron is easily deflected by the air it passes through.\n- A gamma ray leaves a faint, long, straight track, and it often knocks out electrons that then leave tracks of their own.\n\nThe length of a track shows how far the radiation travelled, and the thickness and straightness of the track show how densely it ionised the air - which is why cloud-chamber photographs are read as evidence about the three types of emission.",
                 "objectives": [
                     "Describe alpha, beta, and gamma radiation",
-                    "Calculate half-life from decay curves"
+                    "Calculate half-life from decay curves",
+                    "Describe the range of alpha, beta and gamma radiation in air, and the tracks each one leaves in a cloud chamber"
                 ],
                 "concepts": [
                     "Random Nature of Radioactive Decay: the decay of a nucleus is random, so we cannot predict which nucleus will decay next, only the rate for a large group.",
                     "Half-life is the time taken for half the nuclei to decay, and it is the same at every halving.",
-                    "Half-Life and Decay Graphs: a decay graph plots the count rate, the activity or the mass remaining against time, and the half-life is read off as the time for the value to halve."
+                    "Half-Life and Decay Graphs: a decay graph plots the count rate, the activity or the mass remaining against time, and the half-life is read off as the time for the value to halve.",
+                    "Ranges and Tracks of Emissions: an alpha particle travels only a few centimetres of air, a beta particle a few metres, and gamma radiation has no definite range because it is gradually attenuated rather than stopped at a set distance.",
+                    "Cloud chamber tracks: alpha particles leave short, thick, straight tracks, beta particles leave long, thin, wiggly tracks, and gamma rays leave faint, long tracks, often with secondary electron tracks."
                 ],
                 "experiment": {
                     "type": "decay-sim",

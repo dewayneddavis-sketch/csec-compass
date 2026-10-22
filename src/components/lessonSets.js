@@ -1093,6 +1093,55 @@ export const lessonSets = {
         { id: "hd5", label: "The baby is born", order: 5 },
       ],
     },
+    "hsb-l7-1": {
+      title: "Heredity Terms",
+      subtitle: "Match each term about DNA, genes and chromosomes to its meaning.",
+      kind: "match",
+      pairs: [
+        { id: "dn1", target: "The molecule that carries the genetic code, shaped like a twisted ladder", label: "DNA" },
+        { id: "dn2", target: "A length of DNA that codes for one protein", label: "Gene" },
+        { id: "dn3", target: "One of the different forms of the same gene", label: "Allele" },
+        { id: "dn4", target: "A thread of DNA and protein that carries many genes", label: "Chromosome" },
+        { id: "dn5", target: "A cell with two sets of chromosomes (46 in a human)", label: "Diploid cell" },
+      ],
+    },
+    "hsb-l7-2": {
+      title: "Genetic Diagram",
+      subtitle: "Arrange the steps of a monohybrid cross in order.",
+      kind: "order",
+      items: [
+        { id: "gd1", label: "Write the phenotype of each parent", order: 1 },
+        { id: "gd2", label: "Write the genotype of each parent", order: 2 },
+        { id: "gd3", label: "Work out the gametes each parent can produce", order: 3 },
+        { id: "gd4", label: "Combine the gametes in a Punnett square", order: 4 },
+        { id: "gd5", label: "Write the offspring genotypes and their ratio", order: 5 },
+      ],
+    },
+    "hsb-l7-3": {
+      title: "Sex-Linked Inheritance",
+      subtitle: "Match each term to its meaning.",
+      kind: "match",
+      pairs: [
+        { id: "sx1", target: "The 44 chromosomes that are the same in both sexes", label: "Autosomes" },
+        { id: "sx2", target: "The pair of chromosomes that decides whether a person is female or male", label: "Sex chromosomes" },
+        { id: "sx3", target: "A person who carries a recessive allele but does not show the condition", label: "Carrier" },
+        { id: "sx4", target: "A condition in which the blood clots very slowly", label: "Haemophilia" },
+      ],
+    },
+    "hsb-l7-4": {
+      title: "Types of Variation",
+      subtitle: "Sort each example as continuous or discontinuous variation.",
+      kind: "sort",
+      categories: [ { id: "con", label: "Continuous variation" }, { id: "dis", label: "Discontinuous variation" } ],
+      items: [
+        { id: "vr1", label: "Height of the students in a class", category: "con" },
+        { id: "vr2", label: "Body mass of the students in a class", category: "con" },
+        { id: "vr3", label: "Hand span of the students in a class", category: "con" },
+        { id: "vr4", label: "Blood group of the students in a class", category: "dis" },
+        { id: "vr5", label: "Natural eye colour of the students in a class", category: "dis" },
+        { id: "vr6", label: "Ability to roll the tongue into a tube", category: "dis" },
+      ],
+    },
   },
 
   // ---------------------------------------------------------------- SPANISH
@@ -5618,6 +5667,179 @@ export const lessonSets = {
         { id: "ph5", target: "The point where the straight line ends", label: "The limit of proportionality" },
       ],
     },
+    // ---- Physics Section D (Electricity and Magnetism) coverage build,
+    //      batch 1+2 reconciled: 11 net-new lessons, each with its own
+    //      topic-matched set.  Section E (nuclear-) and Section C (waves-)
+    //      sets are added by their own authors; every id here is a real
+    //      lesson id in modules.json.
+    "em-charging-by-friction-and-induction": {
+      title: "Charging by Friction and Induction",
+      subtitle: "Sort each statement under Charging by friction or Charging by induction.",
+      kind: "sort",
+      categories: [
+        { id: "friction", label: "Charging by friction" },
+        { id: "induction", label: "Charging by induction" },
+      ],
+      items: [
+        { id: "e1", label: "Rubbing a polythene rod with a dry cloth", category: "friction" },
+        { id: "e2", label: "The two bodies end with equal and opposite charges", category: "friction" },
+        { id: "e3", label: "A body that gains electrons becomes negatively charged", category: "friction" },
+        { id: "e4", label: "The charges inside the conductor separate", category: "induction" },
+        { id: "e5", label: "The conductor is earthed while the charged rod is near it", category: "induction" },
+        { id: "e6", label: "Charged by separation and earthing", category: "induction" },
+      ],
+    },
+    "em-forces-between-charges": {
+      title: "Forces Between Charges",
+      subtitle: "Drag each idea onto the statement that describes it.",
+      kind: "match",
+      pairs: [
+        { id: "e1", target: "Repel each other, so the force pushes them apart", label: "Two like charges" },
+        { id: "e2", target: "Attract each other, so the force pulls them together", label: "Two unlike charges" },
+        { id: "e3", target: "Doubles the force between the charges", label: "Doubling the size of one charge" },
+        { id: "e4", target: "Reduces the force to one quarter of its former value", label: "Doubling the distance between the charges" },
+        { id: "e5", target: "Is equal in size and opposite in direction to the force on the other", label: "The force on each charge" },
+      ],
+    },
+    "em-electric-fields": {
+      title: "Electric Fields",
+      subtitle: "Sort each statement under Radial field or Uniform field.",
+      kind: "sort",
+      categories: [
+        { id: "radial", label: "Radial field" },
+        { id: "uniform", label: "Uniform field" },
+      ],
+      items: [
+        { id: "e1", label: "The direction of the force on a small positive test charge", category: "radial" },
+        { id: "e2", label: "Further apart field lines mean a weaker field", category: "radial" },
+        { id: "e3", label: "Field lines never cross", category: "radial" },
+        { id: "e4", label: "The field lines are parallel and equally spaced", category: "uniform" },
+        { id: "e5", label: "A small charge feels the same force everywhere between the plates", category: "uniform" },
+        { id: "e6", label: "Electric field strength is the force per unit charge, E = F / Q", category: "uniform" },
+      ],
+    },
+    "em-static-charge-applications-and-hazards": {
+      title: "Static Charge Applications and Hazards",
+      subtitle: "Sort each statement under Useful applications of static charge or Hazards from static charge.",
+      kind: "sort",
+      categories: [
+        { id: "use", label: "Useful applications of static charge" },
+        { id: "hazard", label: "Hazards from static charge" },
+      ],
+      items: [
+        { id: "e1", label: "The paint droplets are given a charge and are attracted to the earthed metal object", category: "use" },
+        { id: "e2", label: "Attracts toner powder to a charged drum", category: "use" },
+        { id: "e3", label: "An electrostatic precipitator in a power station chimney charges the dust particles and collects them on charged plates", category: "use" },
+        { id: "e4", label: "A spark from that charge could ignite petrol vapour", category: "hazard" },
+        { id: "e5", label: "Charged dust particles can cause a dust explosion", category: "hazard" },
+        { id: "e6", label: "Damages electronic components, especially the metal-oxide parts inside a computer", category: "hazard" },
+      ],
+    },
+    "em-direct-and-alternating-current": {
+      title: "Direct and Alternating Current",
+      subtitle: "Sort each statement under Direct current or Alternating current.",
+      kind: "sort",
+      categories: [
+        { id: "dc", label: "Direct current" },
+        { id: "ac", label: "Alternating current" },
+      ],
+      items: [
+        { id: "i1", label: "Flows in one direction only", category: "dc" },
+        { id: "i2", label: "Has fixed positive and negative terminals", category: "dc" },
+        { id: "i3", label: "A straight horizontal line on the graph", category: "dc" },
+        { id: "i4", label: "A cell, a battery or a solar cell", category: "dc" },
+        { id: "i5", label: "Reverses direction at a regular frequency", category: "ac" },
+        { id: "i6", label: "Supplied by an a.c. generator", category: "ac" },
+        { id: "i7", label: "Reaches a peak one way and then a peak the other way", category: "ac" },
+        { id: "i8", label: "An alternating supply at a frequency of 50 hertz", category: "ac" },
+      ],
+    },
+    "em-primary-and-secondary-cells": {
+      title: "Primary and Secondary Cells",
+      subtitle: "Sort each statement under Primary cell or Secondary cell.",
+      kind: "sort",
+      categories: [
+        { id: "primary", label: "Primary cell" },
+        { id: "secondary", label: "Secondary cell" },
+      ],
+      items: [
+        { id: "i1", label: "Cannot be recharged", category: "primary" },
+        { id: "i2", label: "Its chemicals are used up as it delivers charge", category: "primary" },
+        { id: "i3", label: "A flat dry cell is thrown away and replaced", category: "primary" },
+        { id: "i4", label: "A torch, a clock or a smoke alarm", category: "primary" },
+        { id: "i5", label: "Can be recharged", category: "secondary" },
+        { id: "i6", label: "The lead-acid accumulator in a car", category: "secondary" },
+        { id: "i7", label: "The lithium-ion cell in a phone or a laptop", category: "secondary" },
+        { id: "i8", label: "Used again hundreds of times", category: "secondary" },
+      ],
+    },
+    "em-semiconductor-diodes-and-rectification": {
+      title: "Semiconductor Diodes and Rectification",
+      subtitle: "Drag each term onto the statement that describes it.",
+      kind: "match",
+      pairs: [
+        { id: "e1", target: "A semiconductor component that lets current flow in one direction only", label: "Diode" },
+        { id: "e2", target: "The anode is made positive with respect to the cathode, and the diode conducts", label: "Forward bias" },
+        { id: "e3", target: "The anode is made negative with respect to the cathode, and the diode blocks the current", label: "Reverse bias" },
+        { id: "e4", target: "One diode lets only half of the cycle reach the output", label: "Half-wave rectification" },
+        { id: "e5", target: "Four diodes in a bridge turn both halves of the cycle into direct current", label: "Full-wave rectification" },
+        { id: "e6", target: "Stores charge and keeps the output voltage steady between the pulses", label: "Smoothing capacitor" },
+      ],
+    },
+    "em-logic-gates-and-truth-tables": {
+      title: "Logic Gates and Truth Tables",
+      subtitle: "Drag each gate or term onto the rule it follows.",
+      kind: "match",
+      pairs: [
+        { id: "e1", target: "An AND gate gives 1 only when both inputs are 1", label: "AND gate" },
+        { id: "e2", target: "An OR gate gives 1 when at least one input is 1", label: "OR gate" },
+        { id: "e3", target: "Its output is the opposite of its single input", label: "NOT gate" },
+        { id: "e4", target: "An AND gate followed by a NOT gate", label: "NAND gate" },
+        { id: "e5", target: "A table that lists the output for every possible combination of inputs", label: "Truth table" },
+        { id: "e6", target: "A high voltage, such as 5 volts", label: "Logic 1" },
+      ],
+    },
+    "em-impact-of-electronics-on-society": {
+      title: "Impact of Electronics on Society",
+      subtitle: "Sort each statement under Benefit to society or Problem to manage.",
+      kind: "sort",
+      categories: [
+        { id: "benefit", label: "Benefit to society" },
+        { id: "problem", label: "Problem to manage" },
+      ],
+      items: [
+        { id: "e1", label: "Small and cheap computing power in phones, laptops and household appliances", category: "benefit" },
+        { id: "e2", label: "Electronic instruments monitor a patient's heart and breathing", category: "benefit" },
+        { id: "e3", label: "Automatic control keeps a factory machine working safely", category: "benefit" },
+        { id: "e4", label: "Toxic metals in discarded circuit boards", category: "problem" },
+        { id: "e5", label: "The energy used by data centres and by charging devices", category: "problem" },
+        { id: "e6", label: "Jobs changed or lost when a task is automated", category: "problem" },
+      ],
+    },
+    "em-force-on-current-carrying-conductors": {
+      title: "Force on Current-Carrying Conductors",
+      subtitle: "Drag each idea onto the statement that describes it.",
+      kind: "match",
+      pairs: [
+        { id: "e1", target: "A current-carrying conductor in a magnetic field experiences a force", label: "Motor effect" },
+        { id: "e2", target: "Point the first finger along the field, the second finger along the current and the thumb in the direction of the force", label: "Fleming's left-hand rule" },
+        { id: "e3", target: "Increases the force on the conductor", label: "Increasing the current, the field strength or the length of conductor in the field" },
+        { id: "e4", target: "Reverses the direction of the force", label: "Reversing the current or reversing the magnetic field" },
+        { id: "e5", target: "Carry the current in opposite directions, so the forces on them turn the coil", label: "The two sides of a coil" },
+      ],
+    },
+    "em-dc-motor-action": {
+      title: "DC Motor Action",
+      subtitle: "Drag each part or idea onto what it does in the motor.",
+      kind: "match",
+      pairs: [
+        { id: "e1", target: "It reverses the current in the coil every half turn", label: "Split-ring commutator" },
+        { id: "e2", target: "Press on the commutator and connect the coil to the supply", label: "Carbon brushes" },
+        { id: "e3", target: "Carries the current in the opposite direction to the other side", label: "Each side of the coil" },
+        { id: "e4", target: "Form a couple that turns the coil", label: "The two equal and opposite forces" },
+        { id: "e5", target: "Increases the turning effect", label: "Using a stronger magnet or winding more turns on the coil" },
+      ],
+    },
     "forces-and-newtons-laws": {
       title: "Forces and Newton's Laws",
       subtitle: "Drag each idea onto the statement it belongs with.",
@@ -5896,6 +6118,76 @@ export const lessonSets = {
         { id: "pi6", label: "A moderator such as graphite or water slows the fast neutrons down", category: "part" },
         { id: "pi7", label: "Control rods of boron or cadmium absorb neutrons", category: "part" },
         { id: "pi8", label: "Thick concrete and steel shielding", category: "part" },
+      ],
+    },
+    // ---- Physics Section C (Waves and Optics) coverage build: five
+    //      net-new lessons, each with its own topic-matched set. Physics is
+    //      type-keyed, so a lesson without its own set would silently show
+    //      another lesson's deck. Section D (em-) and Section E (nuclear-)
+    //      sets are added by their own authors above.
+    "waves-sources-and-uses-of-electromagnetic-waves": {
+      title: "Sources and Uses of Electromagnetic Waves",
+      subtitle: "Sort each statement under Sources or Uses.",
+      kind: "sort",
+      categories: [
+        { id: "source", label: "Sources" },
+        { id: "use", label: "Uses" },
+      ],
+      items: [
+        { id: "e1", label: "Oscillating charges in an aerial", category: "source" },
+        { id: "e2", label: "A magnetron or a dish aerial", category: "source" },
+        { id: "e3", label: "Fast electrons are stopped by a metal target", category: "source" },
+        { id: "e4", label: "Broadcasting and mobile phones", category: "use" },
+        { id: "e5", label: "Radar, satellite links and cooking", category: "use" },
+        { id: "e6", label: "Photographing bones and luggage", category: "use" },
+      ],
+    },
+    "waves-theories-of-light": {
+      title: "Theories of Light",
+      subtitle: "Drag each idea onto the statement that describes it.",
+      kind: "match",
+      pairs: [
+        { id: "e1", target: "Light is a stream of tiny particles that travel in straight lines", label: "Corpuscular theory" },
+        { id: "e2", target: "Light is a disturbance that spreads out from its source", label: "Wave theory" },
+        { id: "e3", target: "Wave behaviours that particles cannot produce", label: "Diffraction and interference" },
+        { id: "e4", target: "Showed that light travels more slowly in water than in air", label: "Jean Foucault" },
+        { id: "e5", target: "Light also delivers its energy in small packets", label: "The photoelectric effect" },
+      ],
+    },
+    "waves-youngs-double-slit-experiment": {
+      title: "Young's Double Slit Experiment",
+      subtitle: "Drag each idea onto the statement that describes it.",
+      kind: "match",
+      pairs: [
+        { id: "e1", target: "Send out light of the same frequency that stays in step", label: "Coherent sources" },
+        { id: "e2", target: "The waves reinforce each other and a bright fringe appears", label: "A bright fringe" },
+        { id: "e3", target: "The waves cancel each other and a dark fringe appears", label: "A dark fringe" },
+        { id: "e4", target: "Widens the fringes", label: "Increasing the distance to the screen" },
+        { id: "e5", target: "Widens them as well, because red light has the longer wavelength", label: "Using red light instead of blue light" },
+      ],
+    },
+    "waves-rectilinear-propagation-of-light": {
+      title: "Rectilinear Propagation of Light",
+      subtitle: "Drag each idea onto the statement that describes it.",
+      kind: "match",
+      pairs: [
+        { id: "e1", target: "Light travels in straight lines through a uniform medium", label: "Rectilinear propagation" },
+        { id: "e2", target: "One fully dark region, called the umbra", label: "Umbra" },
+        { id: "e3", target: "A dark umbra with a partly lit region around it, called the penumbra", label: "Penumbra" },
+        { id: "e4", target: "Forms a real, inverted image because light travels in straight lines", label: "A pin-hole camera" },
+        { id: "e5", target: "Lets in more light but blurs the image", label: "Making the hole larger" },
+      ],
+    },
+    "waves-focal-length-determination": {
+      title: "Focal Length Determination",
+      subtitle: "Drag each method or idea onto the statement that describes it.",
+      kind: "match",
+      pairs: [
+        { id: "e1", target: "The image then forms at the principal focus", label: "The distant object method" },
+        { id: "e2", target: "Put into the lens formula 1 / f = 1 / u + 1 / v", label: "The u-v method" },
+        { id: "e3", target: "A straight line whose intercepts give 1 / f", label: "A graph of 1 / v against 1 / u" },
+        { id: "e4", target: "The pin is moved until it coincides exactly with its own image", label: "The plane mirror method" },
+        { id: "e5", target: "Averaging several readings reduces the effect of an error in any one of them", label: "Judging the sharpest image by eye" },
       ],
     },
   },

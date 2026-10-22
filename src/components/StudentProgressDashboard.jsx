@@ -7,7 +7,7 @@ import "../pages/TeacherPage.css";
 //
 // A teacher (`/teacher`, ?scope=class) and a parent (`/parent`, ?scope=parent)
 // look at exactly the same thing: per-student, per-subject progress — lessons
-// marked complete, interactive labs opened and completed, Extra Practice / Mock
+// marked complete, interactive labs opened and completed, Practice Paper / Mock
 // Exam / Knowledge Check attempts with best and latest scores, and when they
 // were last active. The owner asked for the parent dashboard to show "the same
 // info as teacher dashboard", so the renderer lives HERE once and both pages
@@ -23,7 +23,7 @@ import "../pages/TeacherPage.css";
 
 const QUIZ_LABELS = {
   "knowledge-check": "Knowledge Check",
-  practice: "Extra Practice",
+  practice: "Practice Paper",
   mock: "Mock Exam",
 };
 

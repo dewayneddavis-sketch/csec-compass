@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useSearchParams } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { usePurchases } from "../data/usePurchases";
 import { FREE_PREVIEW_LESSONS } from "../data/access";
@@ -13,6 +13,12 @@ import SBASection from "../components/SBASection";
 import { SBA_TAB_LABEL, sbaGuideLabel, sbaTabLabel, sbaTabNoun } from "../data/sbaTabs";
 import Paper2Section from "../components/Paper2Section";
 import ProgressTab from "../components/ProgressTab";
+import {
+  practicePaperTabs,
+  practicePaperNumber,
+  isPracticeTabId,
+  resolveTabParam,
+} from "../data/practicePapers";
 import { sameLessonIds, loadLessonProgress, saveLessonProgress, setLessonComplete, subscribeLessonProgress } from "../data/lessonProgress";
 import "./SubjectPage.css";
 
@@ -25,7 +31,14 @@ const TABS = [
   { id: "lessons", label: "Lessons", color: "#1d4ed8", tint: "#eff6ff" },              // blue
   { id: "experiment", label: "Interactive Lab", color: "#047857", tint: "#ecfdf5" },  // green
   { id: "quiz", label: "Knowledge Check", color: "#b45309", tint: "#fffbeb" },         // amber
-  { id: "practice", label: "Extra Practice", color: "#6d28d9", tint: "#f5f3ff" },      // purple
+  // The old single "Extra Practice" tab is gone: the subject's one 100-question
+  // bank is presented as five Practice Paper tabs of 20 questions each, in bank
+  // order (owner directive 2026-10-21). The five entries — ids, labels, short
+  // labels and colours — come from src/data/practicePapers.js, so there are not
+  // five hardcoded strings to drift apart, and the split itself is that module's
+  // job too. A link to the old practice view opens Practice Paper 1 (see
+  // resolveTabParam below).
+  ...practicePaperTabs(),
   { id: "mock", label: "Mock Exam", color: "#b91c1c", tint: "#fef2f2" },               // red
   // Paper 2 only appears for subjects that actually ship paper2.json (Social
   // Studies and English B today) — see the availability probe in load().
@@ -33,6 +46,9 @@ const TABS = [
   { id: "progress", label: "Progress", color: "#0e7490", tint: "#ecfeff" },            // cyan
   { id: "sba", label: SBA_TAB_LABEL, color: "#0f766e", tint: "#f0fdfa" },                 // teal
 ];
+// The tabs that are NOT practice papers — what a `?tab=` value may name besides
+// Practice Paper 1–5.
+const BASE_TAB_IDS = TABS.filter((tab) => !tab.shortLabel).map((tab) => tab.id);
 
 export default function SubjectPage() {
   const { subjectId } = useParams();
@@ -43,7 +59,14 @@ export default function SubjectPage() {
   const [quizQuestions, setQuizQuestions] = useState([]);
   const [activeModule, setActiveModule] = useState(0);
   const [completedLessons, setCompletedLessons] = useState([]);
-  const [activeTab, setActiveTab] = useState("lessons");
+  // A `?tab=` link opens that tab directly. It is how a link written against the
+  // old single practice view (/subject/<id>?tab=practice) still lands on
+  // Practice Paper 1 instead of nowhere, and it makes any tab shareable.
+  const [searchParams] = useSearchParams();
+  // Resolved from the URL once per subject: the tab a link asked for, when it is
+  // one of the page's own tabs (the five practice papers included).
+  const initialTab = resolveTabParam(searchParams.get("tab"), BASE_TAB_IDS);
+  const [activeTab, setActiveTab] = useState(initialTab || "lessons");
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [hasPaper2, setHasPaper2] = useState(false);
   // The exam-support tab is "CSEC SBA" for most subjects, but French and
@@ -74,10 +97,14 @@ export default function SubjectPage() {
         paper2 = false;
       }
       setHasPaper2(paper2);
+      // A `?tab=paper2` link for a subject that ships no paper2.json would open
+      // a tab that is not drawn: send it to the lesson list instead of an
+      // orphaned panel. It can only ever apply to the tab the link asked for.
+      if (!paper2 && initialTab === "paper2") setActiveTab("lessons");
       setLoading(false);
     }
     load();
-  }, [subjectId]);
+  }, [subjectId, initialTab]);
 
   useEffect(() => {
     // Read the shared progress store, then follow it. A lab finished on the
@@ -161,9 +188,18 @@ export default function SubjectPage() {
             className={"s-tab " + (activeTab === tab.id ? "active" : "")}
             style={{ "--tab-color": tab.color, "--tab-tint": tab.tint }}
             aria-pressed={activeTab === tab.id}
+            // The practice tabs carry the full name as the accessible name even
+            // when CSS shows the short PP1…PP5 label on a narrow phone.
+            aria-label={tab.shortLabel ? tab.label : undefined}
             onClick={() => setActiveTab(tab.id)}
           >
-            {tab.label}{tab.id === "quiz" && quizCompleted && <span className="s-tab-done">&check;</span>}
+            {tab.shortLabel ? (
+              <>
+                <span className="s-tab-label-full">{tab.label}</span>
+                <span className="s-tab-label-short" aria-hidden="true">{tab.shortLabel}</span>
+              </>
+            ) : tab.label}
+            {tab.id === "quiz" && quizCompleted && <span className="s-tab-done">&check;</span>}
           </button>
         ))}
       </div>
@@ -219,8 +255,14 @@ export default function SubjectPage() {
         {activeTab === "quiz" && (paid ? <Quiz questions={quizQuestions} subjectTitle={subject.name} subjectId={subjectId} onComplete={() => setQuizCompleted(true)} /> : (
           <div className="s-upgrade-banner"><p><strong>🔒 Knowledge Check is locked.</strong> <Link to={"/pricing?subject=" + subjectId}>Unlock full access</Link> to test yourself on all lessons.</p></div>
         ))}
-        {activeTab === "practice" && (paid ? <ExtraPractice subjectId={subjectId} /> : (
-          <div className="s-upgrade-banner"><p><strong>🔒 Extra Practice is locked.</strong> <Link to={"/pricing?subject=" + subjectId}>Unlock full access</Link> to practise all lessons.</p></div>
+        {isPracticeTabId(activeTab) && (paid ? (
+          <ExtraPractice
+            key={activeTab}
+            subjectId={subjectId}
+            paper={practicePaperNumber(activeTab)}
+          />
+        ) : (
+          <div className="s-upgrade-banner"><p><strong>🔒 Practice Papers are locked.</strong> <Link to={"/pricing?subject=" + subjectId}>Unlock full access</Link> to work through all five practice papers.</p></div>
         ))}
         {activeTab === "mock" && (paid ? <MockExam subjectId={subjectId} /> : (
           <div className="s-upgrade-banner"><p><strong>🔒 Mock Exam is locked.</strong> <Link to={"/pricing?subject=" + subjectId}>Unlock full access</Link> to sit the timed mock.</p></div>

@@ -122,6 +122,30 @@
 .s-tab.active .s-tab-done {
   color: #ffffff;
 }
+/* The practice tabs (owner directive 2026-10-21). The owner's wording is the
+   full "Practice Paper 1" … "Practice Paper 5"; the PP1…PP5 short label is the
+   contingency for a phone narrow enough to wrap it. Measured on a production
+   build (2026-10-22, dev-3): the full wording sits on ONE line at 430, 390,
+   375 and 360 px — the same 41 px tab height and the same 314 px tab strip the
+   short label produces — and wraps to two lines from 344 px down (56 px tabs).
+   So the short label is shown only below 359 px, where the wrap actually
+   starts. At every width the full "Practice Paper n" stays the in-tab heading
+   and the tab's accessible name (set in SubjectPage.jsx); both spans are always
+   in the DOM and only one is ever displayed. */
+.s-tab-label-short {
+  display: none;
+}
+.s-tab-label-full {
+  display: inline;
+}
+@media (max-width: 359px) {
+  .s-tab-label-full {
+    display: none;
+  }
+  .s-tab-label-short {
+    display: inline;
+  }
+}
 
 /* Lessons layout */
 .s-lessons {

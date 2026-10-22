@@ -116,8 +116,28 @@ export function gateParts(sandboxSrc) {
     classifiesSelfNaming: /tool\?\.type\s*===\s*DragDropLabel[\s\S]{0,120}?tool\?\.type\s*===\s*FlashcardSystem/.test(sandboxSrc),
     configCameFromTypeLibrary: /copyFromTypeLibrary\s*=/.test(sandboxSrc),
     dropsCopyForSelfNaming: /if\s*\(\s*toolNamesItself\s*&&\s*copyFromTypeLibrary\s*\)\s*experimentConfig\s*=\s*null/.test(sandboxSrc),
-    toolNamesItselfUsedInHeader: /experimentConfig\?\.title\s*\|\|\s*"Interactive Lab"/.test(sandboxSrc),
+    // The Play tab heading is the lesson's ACTIVITY TITLE (the same string the
+    // teacher dashboard shows), resolved through the shared labActivityLabel
+    // module — not the type-map title that used to sit there. The tool type is
+    // demoted to a quiet secondary hint. All four parts are checked separately.
+    headingResolvesTheActivityTitle: /const\s+activityTitle\s*=\s*labActivityLabel\(\s*subjectId\s*,\s*lessonId\s*,\s*experimentType\s*,\s*experimentTypes\s*\)/.test(sandboxSrc),
+    headingUsesTheSharedModule: /import\s*\{\s*labActivityLabel\s*\}\s*from\s*"\.\.\/data\/lessonNames"/.test(sandboxSrc),
+    headingRendersTheActivityTitle: /className="exp-title">\{activityTitle\s*\|\|\s*"Interactive Lab"\}/.test(sandboxSrc),
+    toolTypeIsASecondaryHint: /className="exp-tool-hint">\{toolHint\}/.test(sandboxSrc),
   };
+}
+
+/**
+ * The mirrored Play-tab heading rule, exactly as ExperimentSandbox.jsx implements
+ * it: the lesson's activity title wins, the lesson's own declared title stands in
+ * only when the set resolved nothing, and a slug-shaped string is never allowed
+ * to reach the screen.
+ */
+export function playHeading({ activityTitle, declaredTitle }) {
+  const slugLike = (s) => typeof s === "string" && /^[a-z0-9]+(?:-[a-z0-9]+)+$/.test(s.trim());
+  if (typeof activityTitle === "string" && activityTitle.trim() && !slugLike(activityTitle)) return activityTitle;
+  if (typeof declaredTitle === "string" && declaredTitle.trim() && !slugLike(declaredTitle)) return declaredTitle;
+  return null;
 }
 
 /** The mirrored copy decision: exactly the rule those source parts implement. */
@@ -156,6 +176,26 @@ if (selfTestOnly) {
   for (const [name, mutated] of Object.entries(stripped)) {
     const parts = gateParts(mutated);
     ok(!Object.values(parts).every(Boolean), `self-test: RED control — removing "${name}" makes the gate guard fail`);
+  }
+
+  // (c) the Play-tab heading rule, and its own red control
+  eq(playHeading({ activityTitle: "Levers" }), "Levers", "self-test: the heading is the lesson's activity title");
+  eq(playHeading({ activityTitle: null, declaredTitle: "Interactive Activity" }), "Interactive Activity",
+    "self-test: the friendly declared title stands in when no set resolves");
+  eq(playHeading({ activityTitle: "mystery-lab", declaredTitle: "mystery-lab" }), null,
+    "self-test: a slug-shaped string never reaches the screen, from either side");
+  eq(playHeading({ activityTitle: "Matching Game" }), "Matching Game",
+    "self-test: a friendly type title is still a legal heading");
+  const headingStripped = {
+    "the heading no longer resolves the activity title": src.replace(/const\s+activityTitle\s*=\s*labActivityLabel\([^;]*;/, ""),
+    "the heading renders the old type-map title": src.replace(
+      /className="exp-title">\{activityTitle\s*\|\|\s*"Interactive Lab"\}/,
+      'className="exp-title">{experimentConfig?.title || "Interactive Lab"}'),
+    "the tool type is no longer a secondary hint": src.replace(/className="exp-tool-hint">\{toolHint\}/, ""),
+  };
+  for (const [name, mutated] of Object.entries(headingStripped)) {
+    const parts = gateParts(mutated);
+    ok(!Object.values(parts).every(Boolean), `self-test: RED control — ${name} makes the heading guard fail`);
   }
 } else {
   // --- load the app's knowledge + real content -------------------------------------------------
@@ -237,6 +277,38 @@ if (selfTestOnly) {
     .filter((d) => d.isDirectory() && fs.existsSync(path.join(contentDir, d.name, "modules.json")))
     .map((d) => d.name).sort();
   ok(subjects.length >= 25, `modules.json found for ${subjects.length} subjects`);
+
+  // --- 0. the Play tab heading IS the lesson's activity title (owner direction 2026-10-11) ----
+  // The teacher dashboard reads labActivityLabel; the Play tab must show the SAME string, so a
+  // teacher and a student never see two names for one activity. This resolves every lesson that
+  // ships a per-lesson lab set through the app's OWN module (not a mirror) and holds the
+  // agreement, and refuses a slug-shaped heading from either side.
+  let labActivityLabel = null;
+  try {
+    labActivityLabel = (await import(pathToFileURL(path.join(root, "src/data/lessonNames.js")).href)).labActivityLabel;
+  } catch (e) {
+    failLines.push(`could not load src/data/lessonNames.js (${e.message})`);
+  }
+  let perLessonSets = 0, headingsMatchSet = 0;
+  if (typeof labActivityLabel === "function") {
+    for (const subject of subjects) {
+      for (const [lessonId, set] of Object.entries(lessonSets[subject] || {})) {
+        if (!set || typeof set.title !== "string" || !set.title.trim()) continue;
+        perLessonSets++;
+        const resolved = labActivityLabel(subject, lessonId, null, null);
+        const shown = playHeading({ activityTitle: resolved, declaredTitle: null });
+        if (resolved === set.title && shown === set.title) headingsMatchSet++;
+        else failLines.push(`${subject}/${lessonId}: Play tab heading "${shown}" is not the lesson's lab-set title "${set.title}"`);
+        if (shown !== null && /^[a-z0-9]+(?:-[a-z0-9]+)+$/.test(shown)) {
+          failLines.push(`${subject}/${lessonId}: a slug-shaped string reached the heading ("${shown}")`);
+        }
+      }
+    }
+    ok(perLessonSets >= 400, `the lessons shipping a per-lesson lab set are walked (${perLessonSets})`);
+    eq(headingsMatchSet, perLessonSets, "every one of those lessons' Play tab heading is its own lab-set title");
+    ok(playHeading({ activityTitle: null, declaredTitle: "mystery-lab" }) === null,
+      "a lesson with no set and only a slug-shaped declared title shows no heading, never the slug");
+  }
 
   // --- 1/2. lesson level: the Play copy is the lesson's own, whenever its tool self-names ------
   let lessonCount = 0, withExperiment = 0, selfNamingLessons = 0, typedFromLibrary = 0;
