@@ -1,0 +1,52 @@
+=== ANIMAL CELL, BEFORE (origin/main efbe143) ===
+===== content/biology/figures/plant-and-animal-cell.svg
+  OUT   5.58px  sw=3.0  rect   x=352.0 y=1022.0 w=100.0 h=48.0 rx=24.0   worst at (364.0,1066.8)
+  OUT  24.12px  sw=7.0  path   M 312,700 q 26,20 52,0 q 26,-20 52,0 q 26,20 52,0   worst at (312.0,700.0)
+  OUT   2.73px  sw=3.0  path   M 312,722 q 26,20 52,0 q 26,-20 52,0 q 26,20 52,0   worst at (312.0,722.0)
+  OUT   8.48px  sw=9.0  path   M 600,962 q 44.0,-16 88,0   worst at (688.0,962.0)
+  OUT   5.98px  sw=4.0  path   M 600,962 q 44.0,-16 88,0   worst at (688.0,962.0)
+  OUT  13.26px  sw=9.0  path   M 604,984 q 40.0,-16 80,0   worst at (684.0,984.0)
+  OUT  10.76px  sw=4.0  path   M 604,984 q 40.0,-16 80,0   worst at (684.0,984.0)
+  OUT  20.12px  sw=9.0  path   M 608,1006 q 36.0,-16 72,0   worst at (680.0,1006.0)
+  OUT  17.62px  sw=4.0  path   M 608,1006 q 36.0,-16 72,0   worst at (680.0,1006.0)
+  OUT  27.32px  sw=0.0  circle cx=300.0 cy=704.0 r=4.5   worst at (297.8,700.1)
+  OUT   1.87px  sw=0.0  circle cx=342.0 cy=1044.0 r=4.5   worst at (339.2,1047.5)
+  OUT  22.20px  sw=0.0  circle cx=692.0 cy=988.0 r=4.5   worst at (696.1,989.8)
+  -> 12 element(s) outside the animal cell membrane by more than 1px
+
+===== content/human-social-biology/figures/hsb-plant-and-animal-cell.svg
+  OUT   5.58px  sw=3.0  rect   x=352.0 y=1022.0 w=100.0 h=48.0 rx=24.0   worst at (364.0,1066.8)
+  OUT  27.32px  sw=0.0  circle cx=300.0 cy=704.0 r=4.5   worst at (297.8,700.1)
+  OUT   1.87px  sw=0.0  circle cx=342.0 cy=1044.0 r=4.5   worst at (339.2,1047.5)
+  -> 3 element(s) outside the animal cell membrane by more than 1px
+
+===== content/integrated-science/figures/is-cells-plant-animal.svg
+  OUT   5.58px  sw=3.0  rect   x=352.0 y=1022.0 w=100.0 h=48.0 rx=24.0   worst at (364.0,1066.8)
+  OUT   8.48px  sw=9.0  path   M 600,962 q 44.0,-16 88,0   worst at (688.0,962.0)
+  OUT   5.98px  sw=4.0  path   M 600,962 q 44.0,-16 88,0   worst at (688.0,962.0)
+  OUT  13.26px  sw=9.0  path   M 604,984 q 40.0,-16 80,0   worst at (684.0,984.0)
+  OUT  10.76px  sw=4.0  path   M 604,984 q 40.0,-16 80,0   worst at (684.0,984.0)
+  OUT  20.12px  sw=9.0  path   M 608,1006 q 36.0,-16 72,0   worst at (680.0,1006.0)
+  OUT  17.62px  sw=4.0  path   M 608,1006 q 36.0,-16 72,0   worst at (680.0,1006.0)
+  OUT  27.32px  sw=0.0  circle cx=300.0 cy=704.0 r=4.5   worst at (297.8,700.1)
+  -> 8 element(s) outside the animal cell membrane by more than 1px
+
+
+=== ANIMAL CELL, AFTER ===
+===== content/biology/figures/plant-and-animal-cell.svg
+  -> 0 element(s) outside the animal cell membrane by more than 1px
+
+===== content/human-social-biology/figures/hsb-plant-and-animal-cell.svg
+  -> 0 element(s) outside the animal cell membrane by more than 1px
+
+===== content/integrated-science/figures/is-cells-plant-animal.svg
+  -> 0 element(s) outside the animal cell membrane by more than 1px
+
+
+=== PLANT CELL, AFTER (0 out) ===
+===== /tmp/after/biology-plant-and-animal-cell.svg
+  -> 0 element(s) outside the plant cell wall by more than 1px
+===== /tmp/after/hsb-plant-and-animal-cell.svg
+  -> 0 element(s) outside the plant cell wall by more than 1px
+===== /tmp/after/is-cells-plant-animal.svg
+  -> 0 element(s) outside the plant cell wall by more than 1px
