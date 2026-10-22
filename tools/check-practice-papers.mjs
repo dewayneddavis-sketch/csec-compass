@@ -188,7 +188,12 @@ ok(page.includes("paper={practicePaperNumber(activeTab)}"), "the open tab's pape
 ok(page.includes("resolveTabParam(searchParams.get(\"tab\")"), "the page opens the tab a ?tab= link names");
 ok(/s-tab-label-full/.test(page) && /s-tab-label-short/.test(page), "the tab renders both the full and the short label from one source");
 ok(/aria-label=\{tab\.shortLabel \? tab\.label : undefined\}/.test(page), "the full name stays the accessible name on a narrow screen");
-ok(/\.s-tab-label-short \{\s*display: none;/s.test(css) && /@media \(max-width: 560px\)/.test(css), "CSS shows the short label only on a narrow screen");
+ok(/\.s-tab-label-short \{\s*display: none;/s.test(css) && /\.s-tab-label-full \{\s*display: inline;/s.test(css), "CSS shows the full 'Practice Paper n' wording by default, at every width");
+// Owner directive 2026-10-21 + the measured wrap point: the full wording sits on
+// ONE line at 390 px (same 41 px tab height, same 314 px strip as the short
+// label) and only wraps from 344 px down, so the fallback may fire below 359 px.
+ok(/@media \(max-width: 359px\) \{\s*\.s-tab-label-full \{\s*display: none;\s*\}\s*\.s-tab-label-short \{\s*display: inline;\s*\}\s*\}/s.test(css), "the short label replaces the full wording only below 359 px, where the full wording wraps");
+ok(!/@media \(max-width: 560px\)/.test(css), "the old 560 px breakpoint is gone, so the owner's wording shows on a 390 px phone");
 ok(/import Paper2Section/.test(page) && /activeTab === "paper2" && \(paid \?/.test(page), "the Paper 2 tab and its paid gate are untouched");
 ok(/label: SBA_TAB_LABEL/.test(page) && page.includes("sbaTabLabel(subjectId)"), "the SBA tab label is still derived per subject");
 ok(comp.includes("splitPracticePapers(exercises)"), "ExtraPractice slices the bank it loaded (banks are not edited)");
