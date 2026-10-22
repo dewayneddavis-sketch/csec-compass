@@ -16,8 +16,9 @@ The style constants and the small drawing primitives are the same values the sha
 Biology generator uses (see /home/team/shared/biology-figures/gen_bio_figs.py), so a
 Biology figure and an H&SB figure read as one set of artwork.
 
-Writes the SVGs into --out (default /tmp/hsb-figs).  With --repo it also writes both
-trees (content/human-social-biology/figures + public/content/human-social-biology/figures).
+Writes the SVGs into --out (default /tmp/hsb-figs).  --repo only READS Biology's heart from
+that root; the trees are written only when --trees is passed, which replaces --out.  So a
+run with an explicit --out and no --trees never touches the working tree.
 """
 import argparse
 import hashlib
