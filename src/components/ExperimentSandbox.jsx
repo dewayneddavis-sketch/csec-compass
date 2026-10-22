@@ -5,6 +5,7 @@ import { recordLabOpen } from "../data/labActivity";
 import GraphingCalculator from "./GraphingCalculator";
 import DragDropLabel from "./DragDropLabel";
 import { lessonSets } from "./lessonSets";
+import { labActivityLabel } from "../data/lessonNames";
 import CircuitBuilder from "./CircuitBuilder";
 import BalanceScale from "./BalanceScale";
 import FlashcardSystem from "./FlashcardSystem";
@@ -267,13 +268,41 @@ export default function ExperimentSandbox({ subjectId, config, lessonExperiment,
   const copyFromTypeLibrary = !lessonExperiment || typeof lessonExperiment === "string";
   if (toolNamesItself && copyFromTypeLibrary) experimentConfig = null;
 
+  // ---- The Play tab's own heading. -----------------------------------------
+  // Owner-approved direction (2026-10-11): the heading is the lesson's ACTIVITY
+  // TITLE — the same string the teacher dashboard shows — resolved through the
+  // one shared module the dashboard uses (labActivityLabel, backed by the
+  // lesson's own lab set) so the two views cannot drift. The tool/interaction
+  // type survives only as a small, quiet secondary hint: generic tool names
+  // ("Matching Game") repeat across dozens of lessons and are exactly what
+  // produced the wrong headings in the first place.
+  //
+  // A slug-shaped string must never reach the screen. labActivityLabel already
+  // refuses one (it returns the set's title or the friendly type title, else
+  // null), and the declared experiment title is screened here before it is
+  // allowed to stand in as the heading.
+  const looksLikeSlug = (s) =>
+    typeof s === "string" && /^[a-z0-9]+(?:-[a-z0-9]+)+$/.test(s.trim());
+  const declaredTitle = experimentConfig?.title && !looksLikeSlug(experimentConfig.title)
+    ? experimentConfig.title
+    : null;
+  const activityTitle = labActivityLabel(subjectId, lessonId, experimentType, experimentTypes)
+    || declaredTitle
+    || null;
+  const toolHint = (() => {
+    const friendly = experimentTypes[experimentType]?.title;
+    if (!friendly || looksLikeSlug(friendly)) return null;
+    // Never repeat the heading as its own hint.
+    return friendly === activityTitle ? null : friendly;
+  })();
+
   function renderInteractive() {
     // Show the experiment context (title/description) above the tool so
     // students know what the activity is about.
     const context = experimentConfig?.title || experimentConfig?.description
       ? (
         <div className="exp-context">
-          {experimentConfig?.title && <h4>{experimentConfig.title}</h4>}
+          {experimentConfig?.title && experimentConfig.title !== activityTitle && <h4>{experimentConfig.title}</h4>}
           {experimentConfig?.description && <p>{experimentConfig.description}</p>}
         </div>
       )
@@ -290,7 +319,11 @@ export default function ExperimentSandbox({ subjectId, config, lessonExperiment,
   return (
     <div className="exp-sandbox">
       <div className="exp-header">
-        <h3><span className="exp-icon">🧪</span> {experimentConfig?.title || "Interactive Lab"}</h3>
+        <h3>
+          <span className="exp-icon">🧪</span>{" "}
+          <span className="exp-title">{activityTitle || "Interactive Lab"}</span>
+          {toolHint && <span className="exp-tool-hint">{toolHint}</span>}
+        </h3>
         <div className="exp-tabs">
           <button className={`exp-tab ${activeTab === "play" ? "active" : ""}`} onClick={() => setActiveTab("play")}>Play</button>
           <button className={`exp-tab ${activeTab === "info" ? "active" : ""}`} onClick={() => setActiveTab("info")}>About</button>
