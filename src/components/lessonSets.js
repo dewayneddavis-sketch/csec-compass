@@ -5769,5 +5769,75 @@ export const lessonSets = {
         { id: "pi8", label: "Thick concrete and steel shielding", category: "part" },
       ],
     },
+    // ---- Physics Section C (Waves and Optics) coverage build: five
+    //      net-new lessons, each with its own topic-matched set. Physics is
+    //      type-keyed, so a lesson without its own set would silently show
+    //      another lesson's deck. Section D (em-) and Section E (nuclear-)
+    //      sets are added by their own authors above.
+    "waves-sources-and-uses-of-electromagnetic-waves": {
+      title: "Sources and Uses of Electromagnetic Waves",
+      subtitle: "Sort each statement under Sources or Uses.",
+      kind: "sort",
+      categories: [
+        { id: "source", label: "Sources" },
+        { id: "use", label: "Uses" },
+      ],
+      items: [
+        { id: "e1", label: "Oscillating charges in an aerial", category: "source" },
+        { id: "e2", label: "A magnetron or a dish aerial", category: "source" },
+        { id: "e3", label: "Fast electrons are stopped by a metal target", category: "source" },
+        { id: "e4", label: "Broadcasting and mobile phones", category: "use" },
+        { id: "e5", label: "Radar, satellite links and cooking", category: "use" },
+        { id: "e6", label: "Photographing bones and luggage", category: "use" },
+      ],
+    },
+    "waves-theories-of-light": {
+      title: "Theories of Light",
+      subtitle: "Drag each idea onto the statement that describes it.",
+      kind: "match",
+      pairs: [
+        { id: "e1", target: "Light is a stream of tiny particles that travel in straight lines", label: "Corpuscular theory" },
+        { id: "e2", target: "Light is a disturbance that spreads out from its source", label: "Wave theory" },
+        { id: "e3", target: "Wave behaviours that particles cannot produce", label: "Diffraction and interference" },
+        { id: "e4", target: "Showed that light travels more slowly in water than in air", label: "Jean Foucault" },
+        { id: "e5", target: "Light also delivers its energy in small packets", label: "The photoelectric effect" },
+      ],
+    },
+    "waves-youngs-double-slit-experiment": {
+      title: "Young's Double Slit Experiment",
+      subtitle: "Drag each idea onto the statement that describes it.",
+      kind: "match",
+      pairs: [
+        { id: "e1", target: "Send out light of the same frequency that stays in step", label: "Coherent sources" },
+        { id: "e2", target: "The waves reinforce each other and a bright fringe appears", label: "A bright fringe" },
+        { id: "e3", target: "The waves cancel each other and a dark fringe appears", label: "A dark fringe" },
+        { id: "e4", target: "Widens the fringes", label: "Increasing the distance to the screen" },
+        { id: "e5", target: "Widens them as well, because red light has the longer wavelength", label: "Using red light instead of blue light" },
+      ],
+    },
+    "waves-rectilinear-propagation-of-light": {
+      title: "Rectilinear Propagation of Light",
+      subtitle: "Drag each idea onto the statement that describes it.",
+      kind: "match",
+      pairs: [
+        { id: "e1", target: "Light travels in straight lines through a uniform medium", label: "Rectilinear propagation" },
+        { id: "e2", target: "One fully dark region, called the umbra", label: "Umbra" },
+        { id: "e3", target: "A dark umbra with a partly lit region around it, called the penumbra", label: "Penumbra" },
+        { id: "e4", target: "Forms a real, inverted image because light travels in straight lines", label: "A pin-hole camera" },
+        { id: "e5", target: "Lets in more light but blurs the image", label: "Making the hole larger" },
+      ],
+    },
+    "waves-focal-length-determination": {
+      title: "Focal Length Determination",
+      subtitle: "Drag each method or idea onto the statement that describes it.",
+      kind: "match",
+      pairs: [
+        { id: "e1", target: "The image then forms at the principal focus", label: "The distant object method" },
+        { id: "e2", target: "Put into the lens formula 1 / f = 1 / u + 1 / v", label: "The u-v method" },
+        { id: "e3", target: "A straight line whose intercepts give 1 / f", label: "A graph of 1 / v against 1 / u" },
+        { id: "e4", target: "The pin is moved until it coincides exactly with its own image", label: "The plane mirror method" },
+        { id: "e5", target: "Averaging several readings reduces the effect of an error in any one of them", label: "Judging the sharpest image by eye" },
+      ],
+    },
   },
 };
