@@ -92,7 +92,15 @@ export default async function handler(req, res) {
     if (!subjectId || !quizType || !attemptId || !Array.isArray(results) || results.length === 0) {
       return res.status(400).json({ error: "subjectId, quizType, attemptId and results[] are required" });
     }
-    const validQuizTypes = ["knowledge-check", "practice", "mock"];
+    // Accepted quiz types. The three aggregate values are unchanged; the five
+    // per-paper practice values are new (owner request 2026-10-22): each Practice
+    // Paper tab records under its own quiz_type so the teacher dashboard can read
+    // Papers 1–5 as five papers. The column is free text, so no migration is
+    // needed — see supabase/schema.sql. src/data/practicePapers.js is the single
+    // source for those values; tools/check-practice-paper-telemetry.mjs asserts
+    // this list agrees with it, so the two cannot drift.
+    const PRACTICE_PAPER_QUIZ_TYPES = [1, 2, 3, 4, 5].map((n) => `practice-pp${n}`);
+    const validQuizTypes = ["knowledge-check", "practice", "mock", ...PRACTICE_PAPER_QUIZ_TYPES];
     if (!validQuizTypes.includes(quizType)) {
       return res.status(400).json({ error: "quizType must be one of: " + validQuizTypes.join(", ") });
     }

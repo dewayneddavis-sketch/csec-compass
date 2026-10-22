@@ -124,3 +124,47 @@ export function resolveTabParam(tabParam, otherTabIds = []) {
   const value = typeof tabParam === "string" ? tabParam.trim() : "";
   return otherTabIds.includes(value) ? value : null;
 }
+
+// ---------------------------------------------------------------------------
+// Per-paper telemetry identity (owner request 2026-10-22).
+//
+// The teacher dashboard must read Practice Papers 1–5 as FIVE separate papers.
+// The database column `quiz_results.quiz_type` is free text, so each paper
+// records under its own value — `practice-pp1` … `practice-pp5` — with no
+// migration and no new column. The aggregate bucket the dashboard has always
+// shown stays the string `practice`, and api/analytics/summary.js folds the five
+// papers back into it, so nothing that reads `practice` today changes.
+//
+// This block is the single source for those values, exactly as this module is
+// the single source for the tabs: the recorder (src/components/ExtraPractice),
+// the API validator (api/analytics/record.js) and the dashboard labels are
+// checked against it by tools/check-practice-paper-telemetry.mjs.
+export const PRACTICE_QUIZ_TYPE = "practice";
+export const PRACTICE_QUIZ_TYPE_PREFIX = "practice-pp";
+export function practiceQuizType(paper) {
+  const n = Number(paper);
+  if (!Number.isInteger(n) || n < 1 || n > PRACTICE_PAPER_COUNT) return null;
+  return `${PRACTICE_QUIZ_TYPE_PREFIX}${n}`;
+}
+// The five per-paper values, in paper order — what the API accepts and what the
+// summary aggregates, derived from PRACTICE_PAPER_COUNT rather than retyped.
+export const PRACTICE_QUIZ_TYPES = practicePaperTabs().map((tab) => practiceQuizType(tab.paper));
+// Which paper a recorded quiz_type belongs to, or null when it is not a
+// per-paper practice value. The aggregate `practice` value is NOT a paper (old
+// rows carry it), which is exactly why the summary folds papers into it.
+export function practicePaperFromQuizType(quizType) {
+  if (typeof quizType !== "string") return null;
+  const m = /^practice-pp(\d+)$/.exec(quizType.trim());
+  if (!m) return null;
+  const n = Number(m[1]);
+  return n >= 1 && n <= PRACTICE_PAPER_COUNT ? n : null;
+}
+export function isPracticeQuizType(quizType) {
+  return quizType === PRACTICE_QUIZ_TYPE || practicePaperFromQuizType(quizType) !== null;
+}
+// "Practice Paper 3" — the name a teacher reads in the dashboard's per-paper
+// row. Deliberately the same string as the tab's full label.
+export function practicePaperQuizLabel(quizType) {
+  const paper = practicePaperFromQuizType(quizType);
+  return paper === null ? null : practicePaperFullLabel(paper);
+}

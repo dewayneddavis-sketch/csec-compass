@@ -12,7 +12,7 @@ import WeakTopicsPanel from "./WeakTopicsPanel";
 import ReviewSolution from "./ReviewSolution";
 import SimilarQuestionPractice from "./SimilarQuestionPractice";
 import { canPractice, questionKey } from "../data/similarQuestion";
-import { splitPracticePapers } from "../data/practicePapers";
+import { splitPracticePapers, practiceQuizType } from "../data/practicePapers";
 import "./ExtraPractice.css";
 
 const QUIZ_TYPE = "practice";
@@ -21,6 +21,12 @@ const QUIZ_TYPE = "practice";
 // of the SAME practice bank, in bank order, 20 questions each — the split, the
 // labels and the bank ranges all come from src/data/practicePapers.js.
 export default function ExtraPractice({ subjectId, paper = 1 }) {
+  // What this attempt is RECORDED as (owner request 2026-10-22): each paper gets
+  // its own value — practice-pp1 … practice-pp5 — so the teacher dashboard reads
+  // five papers instead of one. The aggregate bucket `practice` is untouched and
+  // the summary folds the five back into it. Show-Your-Work and its saved drafts
+  // keep keying off the aggregate QUIZ_TYPE, so nothing a student sees changes.
+  const RECORD_QUIZ_TYPE = practiceQuizType(paper) || QUIZ_TYPE;
   const [exercises, setExercises] = useState(null);
   const [loading, setLoading] = useState(true);
   const [current, setCurrent] = useState(0);
@@ -164,7 +170,7 @@ export default function ExtraPractice({ subjectId, paper = 1 }) {
     });
     const attempt = await recordQuizResult({
       subjectId,
-      quizType: QUIZ_TYPE,
+      quizType: RECORD_QUIZ_TYPE,
       questions,
       answers: finalAnswers,
       working: paperWorking,
