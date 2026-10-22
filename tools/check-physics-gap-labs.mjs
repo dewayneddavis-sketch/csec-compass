@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-// Harness: the 8 Physics syllabus-gap lessons each get their OWN Play-tab lab.
+// Harness: the 8 Physics syllabus-gap lessons AND the 9 mechanics lessons of the
+// Section A coverage build each get their OWN Play-tab lab.
 //
 // The engineer gate failed PR #143 partly because the new lessons' `experiment`
 // promised lab types the platform does not have ("text-sort" /
@@ -27,6 +28,21 @@ const GAP_LESSONS = [
   "specific-and-latent-heat", "reflection-and-total-internal-reflection",
   "sound-and-the-em-spectrum", "magnetism-and-electromagnetism", "electrical-power-and-safety",
 ];
+// Physics Section A coverage build (2026-10-22): the mechanics lessons added
+// against the owner's 110-topic coverage target. Same reason as above - physics
+// is a type-keyed subject, so a lesson without its own set would show another
+// lesson's deck. The ten target chapters the coverage audit already rules REUSE
+// are taught by scalars-vectors, motion-graphs, forces-and-newtons-laws,
+// work-energy-and-power and fluid-pressure-and-upthrust, so they are NOT here,
+// and "Forces and Weight" is an EXTEND of forces-and-newtons-laws.
+const SECTION_A_LESSONS = [
+  "mech-scientific-method", "mech-simple-pendulum", "mech-measurement-and-instruments",
+  "mech-density", "mech-derived-quantities-and-units", "mech-turning-effects-and-moments",
+  "mech-levers", "mech-centre-of-gravity-and-stability", "mech-deformation-and-elasticity",
+];
+// Every lesson that must have a per-lesson set of its own. Each coverage slice
+// adds its own array to this one line, so no lane edits another lane's numbers.
+const PER_LESSON_SET = [...GAP_LESSONS, ...SECTION_A_LESSONS];
 const OLDER_LESSONS = [
   "scalars-vectors", "motion-graphs", "temperature-heat", "gas-laws",
   "wave-properties", "light-refraction", "electric-circuits", "radioactivity",
@@ -41,13 +57,17 @@ const corpusOf = (l) => fold([l.title, l.content, ...(l.objectives || []), ...(l
 
 section("1. every new lesson has its own lab set");
 const sets = lessonSets.physics || {};
-for (const id of GAP_LESSONS) check(!!sets[id], `${id}: has a lessonSets.physics entry`);
-check(Object.keys(sets).length === GAP_LESSONS.length,
-  `no stray physics sets (${Object.keys(sets).length} keys for ${GAP_LESSONS.length} new lessons)`);
+for (const id of PER_LESSON_SET) check(!!sets[id], `${id}: has a lessonSets.physics entry`);
+check(Object.keys(sets).length === PER_LESSON_SET.length,
+  `no stray physics sets (${Object.keys(sets).length} keys for ${PER_LESSON_SET.length} per-lesson-set lessons)`);
 const lessonIds = new Set(allLessons.map((l) => l.id));
-for (const id of GAP_LESSONS) check(lessonIds.has(id), `${id}: is a real lesson id in modules.json`);
-check(allLessons.length === GAP_LESSONS.length + OLDER_LESSONS.length,
-  `physics has ${GAP_LESSONS.length + OLDER_LESSONS.length} lessons (${allLessons.length})`);
+for (const id of PER_LESSON_SET) check(lessonIds.has(id), `${id}: is a real lesson id in modules.json`);
+check(allLessons.length === PER_LESSON_SET.length + OLDER_LESSONS.length,
+  `physics has ${PER_LESSON_SET.length + OLDER_LESSONS.length} lessons (${allLessons.length})`);
+// the Section A lessons belong to the mechanics section, around the five that are already there
+for (const id of SECTION_A_LESSONS) check(byId[id].module === "mechanics", `${id}: sits in the mechanics section`);
+check(allLessons.filter((l) => l.module === "mechanics").length === 5 + SECTION_A_LESSONS.length,
+  `mechanics holds its five existing lessons plus the ${SECTION_A_LESSONS.length} new ones`);
 
 section("2. every set is well formed and headed by its own lesson title");
 for (const [id, set] of Object.entries(sets)) {
