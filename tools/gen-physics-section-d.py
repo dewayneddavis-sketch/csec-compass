@@ -767,17 +767,26 @@ def apply_modules(dry):
         o = by_old[l["id"]]
         if l["id"] in touched:
             rows = [r for r in EXTEND_ROWS if r["lesson"] == l["id"]]
-            want = o["content"] + "".join("\n\n" + "\n\n".join(r["paragraphs"]) for r in rows)
+            # `o` may already carry this generator's own earlier insertion (a
+            # rerun) - strip it before comparing, exactly as step 2 did.
+            o_content = o["content"]
+            o_objectives = list(o["objectives"])
+            o_concepts = list(o["concepts"])
+            for r in rows:
+                add = "\n\n" + "\n\n".join(r["paragraphs"])
+                if add in o_content:
+                    o_content = o_content.replace(add, "", 1)
+                o_objectives = [x for x in o_objectives if x not in r["objectives"]]
+                o_concepts = [x for x in o_concepts if x not in r["concepts"]]
+            want = o_content + "".join("\n\n" + "\n\n".join(r["paragraphs"]) for r in rows)
             if l["content"] != want:
                 raise SystemExit("%s: content is not the frozen copy + the extend rows" % l["id"])
-            if l["objectives"][:len(o["objectives"])] != o["objectives"]:
-                raise SystemExit("%s: existing objectives changed" % l["id"])
-            if l["concepts"][:len(o["concepts"])] != o["concepts"]:
-                raise SystemExit("%s: existing concepts changed" % l["id"])
-            if len(l["objectives"]) != len(o["objectives"]) + sum(len(r["objectives"]) for r in rows):
-                raise SystemExit("%s: objectives not added as expected" % l["id"])
-            if len(l["concepts"]) != len(o["concepts"]) + sum(len(r["concepts"]) for r in rows):
-                raise SystemExit("%s: concepts not added as expected" % l["id"])
+            want_obj = o_objectives + [x for r in rows for x in r["objectives"]]
+            want_con = o_concepts + [x for r in rows for x in r["concepts"]]
+            if l["objectives"] != want_obj:
+                raise SystemExit("%s: objectives are not the frozen copy + the extend rows" % l["id"])
+            if l["concepts"] != want_con:
+                raise SystemExit("%s: concepts are not the frozen copy + the extend rows" % l["id"])
         else:
             if json.dumps(l, sort_keys=True) != json.dumps(o, sort_keys=True):
                 raise SystemExit("frozen lesson %s changed" % l["id"])
