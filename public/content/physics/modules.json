@@ -48,7 +48,7 @@
             {
                 "id": "forces-and-newtons-laws",
                 "title": "Forces and Newton's Laws",
-                "content": "A force is a push or a pull measured in newtons (N). Forces can change an object's speed, direction or shape, and the overall force on an object is the resultant force: forces acting in the same direction add, forces acting in opposite directions subtract. Balanced (zero resultant) forces mean no change in motion; unbalanced forces mean acceleration.\n\nNewton's three laws explain this. First law: an object stays at rest or moves at constant velocity unless an unbalanced force acts on it (often called the law of inertia). Second law: the resultant force equals mass times acceleration, F = ma. Third law: every action has an equal and opposite reaction, acting on a different object.\n\nMomentum is mass times velocity (p = mv) and is a vector. In a collision or explosion the total momentum before equals the total momentum after (conservation of momentum), provided no external resultant force acts. Friction is the force that opposes motion between surfaces, and it transfers kinetic energy to thermal energy.",
+                "content": "A force is a push or a pull measured in newtons (N). Forces can change an object's speed, direction or shape, and the overall force on an object is the resultant force: forces acting in the same direction add, forces acting in opposite directions subtract. Balanced (zero resultant) forces mean no change in motion; unbalanced forces mean acceleration.\n\nNewton's three laws explain this. First law: an object stays at rest or moves at constant velocity unless an unbalanced force acts on it (often called the law of inertia). Second law: the resultant force equals mass times acceleration, F = ma. Third law: every action has an equal and opposite reaction, acting on a different object.\n\nMomentum is mass times velocity (p = mv) and is a vector. In a collision or explosion the total momentum before equals the total momentum after (conservation of momentum), provided no external resultant force acts. Friction is the force that opposes motion between surfaces, and it transfers kinetic energy to thermal energy. Weight and mass are not the same quantity. Mass is the amount of matter in a body, measured in kilograms, and it does not change when the body is moved from place to place. Weight is the force of gravity on a body, measured in newtons, and it does change with position: weight = mass x gravitational field strength, W = mg, where g is the gravitational field strength in newtons per kilogram. On the Earth g is about 10 N/kg, so a student of mass 60 kg has a weight of 60 x 10 = 600 N, while on the Moon, where g is about 1.6 N/kg, the same student has a weight of 60 x 1.6 = 96 N. A balance compares masses and gives the same reading anywhere, while a spring balance reads a weight and would need re-scaling on the Moon.",
                 "objectives": [
                     "State Newton's three laws of motion",
                     "Calculate resultant force and use F = ma",
@@ -57,7 +57,9 @@
                 "concepts": [
                     "Resultant force: the single force that has the same effect as all the forces acting on an object together.",
                     "Newton's second law: the resultant force on an object equals its mass times its acceleration, F = ma.",
-                    "Momentum: mass times velocity, p = mv; total momentum is conserved in a collision with no external resultant force."
+                    "Momentum: mass times velocity, p = mv; total momentum is conserved in a collision with no external resultant force.",
+                    "Mass: the amount of matter in a body, measured in kilograms, which does not change when the body is moved from place to place.",
+                    "Weight: the force of gravity on a body, measured in newtons, given by weight = mass x gravitational field strength, W = mg."
                 ],
                 "experiment": {
                     "type": "matching-game",
@@ -102,6 +104,196 @@
                 "experiment": {
                     "type": "matching-game",
                     "description": "Match each term - Pressure, Upthrust, Archimedes' principle, Atmospheric pressure and Hydraulic press - to the statement that describes it."
+                }
+            },
+            {
+                "id": "mech-scientific-method",
+                "title": "Scientific Method and Galileo",
+                "content": "Physics is a way of finding out how the world works by testing ideas against measurements. The method has a settled shape: make an observation, propose a hypothesis that explains it, use the hypothesis to predict what a measurement should give, then carry out a fair test to check the prediction. A hypothesis must be testable and falsifiable - it must be possible to write down a measurement that would show it to be wrong - because an idea that no experiment can contradict teaches us nothing.\n\nOne fair test changes only one thing at a time. The independent variable is the quantity you deliberately change, the dependent variable is the quantity you measure as a result, and the control variables are the conditions you keep constant so that they cannot produce the effect you are studying. Recording the readings in a table and plotting a graph makes the pattern visible, and a reading that plainly does not fit the pattern is checked rather than quietly dropped.\n\nGalileo Galilei (1564-1642) is often called the first experimental physicist. Aristotle had taught that a heavy body falls faster than a light one, and for nearly two thousand years nobody tested the claim. Galileo could not time a free fall accurately with the clocks of his day, so he rolled a ball down a gently sloping inclined plane, where the shallow slope slowed the motion enough to time with a water clock. His measurements showed that the distance travelled was proportional to the square of the time, so the ball's speed increased steadily: the ball accelerated.\n\nThe conclusion Galileo drew was that all bodies fall with the same acceleration when air resistance is negligible, and that the mass of a falling body does not change its acceleration. A feather and a hammer fall together in a vacuum and at very different rates in air, which is the same idea tested with better apparatus today. Galileo's telescope work in the same years followed the same pattern: an instrument, a measurement, and a model changed to fit it.\n\nIn an examination you are usually asked to write the plan rather than carry it out, so you should practise the vocabulary: state the hypothesis, name the independent variable and the dependent variable, give one control variable, describe how the reading is taken, and say how many repeats are averaged. Saying that readings are repeated and averaged describes a control of random error, and saying that the same apparatus is used again describes a check that the test is fair.",
+                "objectives": [
+                    "Describe the steps of the scientific method",
+                    "Identify the independent variable, the dependent variable and the control variables in an investigation",
+                    "Explain how Galileo's inclined-plane experiments changed the accepted view of falling bodies"
+                ],
+                "concepts": [
+                    "A hypothesis must be testable and falsifiable, and a fair test changes only one thing at a time.",
+                    "The independent variable is the quantity you deliberately change, the dependent variable is the quantity you measure as a result, and the control variables are the conditions you keep constant.",
+                    "Galileo's inclined plane slowed the fall enough to time, and Galileo's inclined-plane measurements showed that the distance travelled was proportional to the square of the time, so a falling body accelerates.",
+                    "All bodies fall with the same acceleration when air resistance is negligible."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Match each term - A hypothesis, The independent variable, The dependent variable, The control variables, Galileo's inclined plane and All bodies - to the statement that describes it."
+                }
+            },
+            {
+                "id": "mech-simple-pendulum",
+                "title": "Simple Pendulum Experiments",
+                "content": "A simple pendulum is a small bob hanging on a light, inextensible string from a fixed clamp, free to swing to and fro in a vertical plane. The period of a simple pendulum is the time for one complete oscillation, which is a swing out to one side and back, then out to the other side and back to the starting point. The amplitude is the small angle through which the pendulum swings from the vertical.\n\nTiming one swing with a stopwatch is hopeless, because a person's reaction time of about 0.2 s is far too large a fraction of a one-second period. Instead, time twenty oscillations and divide the total time by 20 to cut the reaction-time error to a twentieth of a single reading, then repeat the whole timing and average the periods.\n\nThe length of the pendulum is measured from the underside of the clamp to the centre of the bob with a metre rule. The period depends on that length, while the mass of the bob does not change the period; at small amplitudes the amplitude does not change the period either, and releasing the bob from a wider angle gives almost exactly the same period until the angle becomes large.\n\nThe period T of a simple pendulum is given by T = 2 x pi x square root of (l / g), where l is the length in metres and g is the gravitational field strength in newtons per kilogram. Squaring it gives T squared = 4 pi squared x l / g, so a graph of T squared against l is a straight line through the origin whose gradient is 4 pi squared / g. Measuring the gradient therefore measures g, which is the point of the experiment. As a check, with g = 10 N/kg and l = 1.0 m, T = 2 x 3.14 x square root of 0.1 = 2.0 s, which is the seconds pendulum of a grandfather clock.\n\nSources of error have to be controlled. Read the length to the centre of the bob, not to the top of it. Keep the swing in one plane by pulling the bob straight back rather than sideways, or the string traces an ellipse. Do not let the pendulum swing into the retort stand. Start the stopwatch as the bob passes the centre of the swing, where it moves fastest and the moment is easiest to judge. Air resistance damps the swing, which is why the amplitude slowly falls, so time the oscillations straight after releasing the bob.",
+                "objectives": [
+                    "Describe how to time the oscillations of a simple pendulum accurately",
+                    "Explain how the period depends on the length, and what does not change the period",
+                    "Use T = 2 x pi x square root of (l / g) and a graph of T squared against l to find g"
+                ],
+                "concepts": [
+                    "The period of a simple pendulum is the time for one complete oscillation.",
+                    "Time twenty oscillations and divide the total time by 20 to cut the reaction-time error to a twentieth of a single reading.",
+                    "The period depends on the length of the pendulum; the mass of the bob does not change the period, and at small amplitudes the amplitude does not change the period either.",
+                    "T = 2 x pi x square root of (l / g), so a graph of T squared against l is a straight line through the origin whose gradient is 4 pi squared / g."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Match each term - The period, The length, Twenty oscillations, The mass of the bob and A graph of T squared against l - to the statement that describes it."
+                }
+            },
+            {
+                "id": "mech-measurement-and-instruments",
+                "title": "Measurement, Error, and Instruments",
+                "content": "Every measurement is a comparison with a standard unit, and the instrument you choose decides how finely you can read it. A metre rule reads to 1 mm, vernier callipers read to 0.1 mm and a micrometer screw gauge reads to 0.01 mm, so an instrument is chosen to match the size of the object and the precision the answer needs. Length, volume and time are the quantities CSEC practical work measures most often.\n\nA liquid volume is read with the eye level with the meniscus, and the reading is taken at the bottom of the curve that water forms in a measuring cylinder - reading a water meniscus at the top of the curve gives a volume that is too large. Time is read from a stopwatch: a digital stopwatch displays to 0.01 s, but a person's reaction time of about 0.2 s is the real limit, so the scatter of human timing is reduced by timing many oscillations or repeat runs and averaging.\n\nAn analogue instrument can carry a zero error: a micrometer that reads 0.02 mm with its jaws closed, or an ammeter whose pointer sits above zero with no current, shifts every reading in the same direction. A zero error is a systematic error, and it is removed by subtracting the zero reading rather than by averaging. Random errors scatter readings about the true value in both directions, and averaging repeated readings is what reduces them.\n\nA parallax error appears when the eye is not level with the scale being read, so the reading depends on where the eye is. The cure is to sight the scale squarely along the line of the scale, and an ammeter with a mirror behind the pointer is read correctly when the pointer and its reflection coincide. Reading a measuring cylinder, a burette or a thermometer all carry the same trap.\n\nPrecision and accuracy are different ideas. Precision describes how finely the instrument reads and how closely repeated readings agree, while accuracy describes how close a reading is to the true value. The size of an error is judged as a fraction of the reading: percentage error = uncertainty / reading x 100 per cent, so a metre rule uncertainty of 0.1 cm is only 0.5 per cent of a 20.0 cm reading but 5 per cent of a 2.0 cm reading. A larger reading therefore carries the smaller percentage error, and an answer is quoted to the same number of significant figures as the measurements behind it.",
+                "objectives": [
+                    "Choose a measuring instrument that suits the size of the object and the precision required",
+                    "Read a length, a liquid volume and a time correctly",
+                    "Distinguish precision from accuracy, and a systematic zero error from a random error",
+                    "Calculate the percentage error of a reading"
+                ],
+                "concepts": [
+                    "A metre rule reads to 1 mm, vernier callipers read to 0.1 mm and a micrometer screw gauge reads to 0.01 mm.",
+                    "A liquid volume is read with the eye level with the meniscus, at the bottom of the curve that water forms.",
+                    "A zero error is a systematic error: it shifts every reading in the same direction and is removed by subtracting the zero reading.",
+                    "A parallax error appears when the eye is not level with the scale being read.",
+                    "Percentage error = uncertainty / reading x 100 per cent, so a larger reading carries the smaller percentage error."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Match each term - A metre rule, Vernier callipers, A micrometer screw gauge, A zero error, A parallax error and Percentage error - to the statement that describes it."
+                }
+            },
+            {
+                "id": "mech-density",
+                "title": "Density",
+                "content": "Density tells you how much mass is packed into each unit of volume. It is defined as density = mass / volume, written with the Greek letter rho, and measured in kilograms per cubic metre or in grams per cubic centimetre. The two units are related by 1 g/cm cubed = 1000 kg/m cubed, so water has a density of 1000 kg/m cubed, which is the same as 1 g/cm cubed, while air is far less dense at about 1.2 kg/m cubed.\n\nThe density of a regular solid is found by weighing it on a balance and calculating its volume from its dimensions, because for a rectangular block volume = length x width x height. A block measuring 5 cm by 4 cm by 2 cm has a volume of 40 cm cubed; if its mass is 108 g, then density = 108 / 40 = 2.7 g/cm cubed, which is the density of aluminium.\n\nAn irregular solid cannot be measured with a rule, so its volume is found by displacement in a measuring cylinder: the volume of the solid is the rise in the water level when it is lowered in, that is, the reading with the solid in the water minus the reading before. A stone takes the level from 50 cm cubed to 68 cm cubed, so the volume of the solid is 18 cm cubed; a mass of 48 g then gives a density of 48 / 18 = 2.7 g/cm cubed. A solid that floats is pushed under with a sinker, and the volume of the sinker alone is subtracted.\n\nThe density of a liquid is found by weighing a clean, dry measuring cylinder empty, pouring in the liquid, reading the volume at the meniscus with the eye level, weighing again and then subtracting to get the mass of the liquid, and dividing that mass by the volume. The same balance is used for both weighings, so that any zero error cancels.\n\nDensity is a property that identifies a material, and it explains floating and sinking. A steel block sinks because its density is about 7800 kg/m cubed, but a steel ship floats because its shape encloses air: the average density of the hull and the air inside it is less than the density of water. Ice floats because ice is a little less dense than water, at about 920 kg/m cubed, and warm air rises because it expands and becomes less dense than the air around it.",
+                "objectives": [
+                    "Define density and use density = mass / volume",
+                    "Measure the density of a regular solid, of an irregular solid and of a liquid",
+                    "Use the density of water to explain why some objects float and others sink"
+                ],
+                "concepts": [
+                    "Density = mass / volume, measured in kilograms per cubic metre or in grams per cubic centimetre.",
+                    "1 g/cm cubed = 1000 kg/m cubed, so water has a density of 1000 kg/m cubed, which is the same as 1 g/cm cubed.",
+                    "For a rectangular block volume = length x width x height, and the mass is read from a balance.",
+                    "The volume of an irregular solid is found by displacement in a measuring cylinder, from the rise in the water level when it is lowered in.",
+                    "A steel ship floats because the average density of the hull and the air inside it is less than the density of water."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Match each term - Density, 1 g/cm cubed, A regular solid, An irregular solid and A liquid - to the statement that describes it."
+                }
+            },
+            {
+                "id": "mech-derived-quantities-and-units",
+                "title": "Derived Quantities and Units",
+                "content": "A base quantity cannot be defined in terms of any other quantity, and it is measured in a base unit. The base quantities used in mechanics are length, measured in metres, mass, measured in kilograms, and time, measured in seconds, with electric current, measured in amperes, and temperature, measured in kelvin, completing the set used elsewhere in physics. Every other quantity is built from these.\n\nA derived quantity is made by combining base quantities, and its unit is the combination of their units. Speed, measured in metres per second, is distance divided by time. Volume, measured in cubic metres, is length cubed. Density, measured in kilograms per cubic metre, is mass divided by volume. Force, measured in kilograms metres per second squared, is mass times acceleration, and that combined unit is given the name newton. Pressure, measured in newtons per square metre, is force divided by area, and that combined unit is given the name pascal.\n\nSome derived units are named after the scientists who found the relationships: the newton for force, the joule for energy and work, the watt for power and the pascal for pressure. One joule is one newton metre, and one watt is one joule per second. Using the named unit is convenient, but its base-unit form is what shows how the quantity was built.\n\nPrefixes scale a unit by a power of ten: kilo multiplies by a thousand, mega by a million and giga by a thousand million, while centi divides by a hundred, milli by a thousand and micro by a million. So 2.5 km is 2500 m, 250 mA is 0.25 A, 5 MW is 5 million W and 30 microseconds is 0.00003 s. Convert every quantity to base units before substituting values into a formula, and write the answer in standard form when it is very large or very small.\n\nBoth sides of an equation must have the same units, and checking them catches a wrong formula or a missed conversion. Checking F = ma gives newtons on the left and kilograms times metres per second squared on the right, which is the same thing. Checking the pendulum T = 2 x pi x square root of (l / g) gives the square root of metres divided by newtons per kilogram, and a newton per kilogram is a metre per second squared, so the square root is the square root of seconds squared, which is seconds - the unit of a period.",
+                "objectives": [
+                    "Distinguish a base quantity from a derived quantity and give their units",
+                    "Convert between units using the SI prefixes",
+                    "Check that both sides of an equation have the same units"
+                ],
+                "concepts": [
+                    "A base quantity is measured in a base unit that is not built from any other unit: length in metres, mass in kilograms and time in seconds.",
+                    "A derived quantity is made by combining base quantities, so speed is measured in metres per second and force is measured in kilograms metres per second squared, called the newton.",
+                    "The prefixes kilo, mega, giga, centi, milli and micro scale a unit by 1000, a million, a thousand million, a hundredth, a thousandth and a millionth.",
+                    "Both sides of an equation must have the same units, and checking them catches a wrong formula or a missed conversion."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Sort each statement under Base quantity or Derived quantity."
+                }
+            },
+            {
+                "id": "mech-turning-effects-and-moments",
+                "title": "Turning Effects and Moments",
+                "content": "A force whose line of action does not pass through a pivot turns the object about that pivot. The turning effect is called the moment of a force, and the moment of a force is the force multiplied by the perpendicular distance from the pivot to the line of action, so moment = force x perpendicular distance, measured in newton metres (N m). Both the size of the force and its distance matter: doubling either one doubles the moment, and a force directed through the pivot, at zero distance, has no turning effect at all.\n\nA body that is not turning is in equilibrium. The principle of moments states the rule: the sum of the clockwise moments equals the sum of the anticlockwise moments about any point, when the body is in equilibrium. Choosing the pivot as the point about which the moments are taken is the standard trick, because taking moments about the pivot removes the pivot force from the equation - its distance from the point is zero, so its moment is zero.\n\nWorked example: a uniform metre rule is balanced on a pivot at the 50 cm mark. A weight of 4 N hangs at the 20 cm mark, which is 0.30 m from the pivot, so the anticlockwise moment is 4 N x 0.30 m = 1.2 N m. A second weight of 3 N is hung on the other side, and for balance its clockwise moment must also be 1.2 N m, so its distance is 1.2 N m / 3 N = 0.40 m, placing it at the 90 cm mark.\n\nThe weight of the rule itself matters when the pivot is not at the centre. A uniform rule's weight acts at its midpoint, the 50 cm mark, so with the pivot at the 30 cm mark the rule's own weight acts 0.20 m from the pivot and turns the rule clockwise. A uniform rule weighing 2 N pivoted at the 30 cm mark therefore has a clockwise moment of 2 N x 0.20 m = 0.40 N m from its own weight, and a weight W hanging at the 0 cm end, 0.30 m from the pivot, balances it when W x 0.30 m = 0.40 N m, that is W = 1.3 N to two significant figures.\n\nTwo equal, opposite and parallel forces whose lines of action do not coincide form a couple, and a couple has a turning effect with no resultant force: its turning effect is one of the forces multiplied by the perpendicular distance between the two lines of action. A steering wheel, a spanner on a nut, a tap handle and the pair of forces on a screwdriver are all turned by a couple.",
+                "objectives": [
+                    "Calculate the moment of a force about a pivot",
+                    "Apply the principle of moments to a balanced beam",
+                    "Describe a couple and calculate its turning effect"
+                ],
+                "concepts": [
+                    "The moment of a force = force x perpendicular distance from the pivot to the line of action, measured in newton metres.",
+                    "The principle of moments: the sum of the clockwise moments equals the sum of the anticlockwise moments about any point, when the body is in equilibrium.",
+                    "Taking moments about the pivot removes the pivot force from the equation, because its distance from the point is zero.",
+                    "A uniform rule's weight acts at its midpoint, the 50 cm mark.",
+                    "A couple is two equal, opposite and parallel forces whose lines of action do not coincide, and its turning effect is one of the forces multiplied by the perpendicular distance between the two lines of action."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Match each term - The moment of a force, The principle of moments, Taking moments about the pivot, A uniform rule's weight and A couple - to the statement that describes it."
+                }
+            },
+            {
+                "id": "mech-levers",
+                "title": "Levers",
+                "content": "A lever is a rigid bar that turns about a pivot, called the fulcrum, and it changes a small effort into a large load. The three points to name in any lever are the pivot the bar turns about, the effort you apply, and the load you move. A lever never reduces the work needed: it trades a smaller force over a longer distance for a larger force over a shorter one.\n\nThere are three classes. Class 1 lever: the pivot is between the effort and the load, as in a crowbar, a pair of scissors, pliers and a see-saw. Class 2 lever: the load is between the pivot and the effort, as in a wheelbarrow, a nutcracker and a bottle opener. Class 3 lever: the effort is between the pivot and the load, as in tweezers, a fishing rod and the forearm bending at the elbow.\n\nThe idea behind every lever is the principle of moments. If the effort acts at a distance called the effort arm from the pivot and the load acts at the load arm from the pivot, then balance gives effort x effort arm = load x load arm, so the mechanical advantage = load / effort = effort arm / load arm. A long effort arm and a short load arm give a mechanical advantage greater than one, which makes the lever a force multiplier.\n\nWorked example: a crowbar 1.5 m long is pivoted 0.15 m from the end under the load, so the effort arm is 1.35 m and the load arm is 0.15 m. Its mechanical advantage = 1.35 / 0.15 = 9, so an effort of 100 N lifts a load of 900 N, ignoring the weight of the bar itself. The price is distance: the end of the bar moves nine times as far as the load, so the work done by the effort and the work done on the load are the same when friction is small.\n\nIn a class 3 lever the effort arm is shorter than the load arm, so the mechanical advantage is less than one and the effort needed is greater than the load, but the load moves further and faster than the effort does. Tweezers and the forearm work that way because speed and reach matter more than force. When a question asks for the class of a lever, name the order of pivot, effort and load first: the point in the middle gives the class.",
+                "objectives": [
+                    "Identify the pivot, the effort and the load in a lever",
+                    "Give an example of a class 1 lever, a class 2 lever and a class 3 lever",
+                    "Calculate the mechanical advantage of a lever and use it to find the effort or the load",
+                    "Explain why a lever changes the force needed but not the work done"
+                ],
+                "concepts": [
+                    "A lever is a rigid bar that turns about a pivot, called the fulcrum, and it changes a small effort into a large load.",
+                    "Class 1 lever: the pivot is between the effort and the load, as in a crowbar, a pair of scissors, pliers and a see-saw.",
+                    "Class 2 lever: the load is between the pivot and the effort, as in a wheelbarrow, a nutcracker and a bottle opener.",
+                    "Class 3 lever: the effort is between the pivot and the load, as in tweezers, a fishing rod and the forearm bending at the elbow.",
+                    "The mechanical advantage = load / effort = effort arm / load arm, and a lever changes the force needed but not the work done."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Sort each statement under Class 1 lever, Class 2 lever or Class 3 lever."
+                }
+            },
+            {
+                "id": "mech-centre-of-gravity-and-stability",
+                "title": "Centre of Gravity and Stability",
+                "content": "The centre of gravity of a body is the point through which the whole weight of a body appears to act, so a body supported at that point balances. For a uniform metre rule the centre of gravity is at the 50 cm mark, the midpoint, and for a symmetrical object of uniform material it lies on the axis or the plane of symmetry. A can that is partly emptied has its centre of gravity lowered, because the liquid that is left sits at the bottom.\n\nThe centre of gravity of a flat, irregular lamina is found by suspending the lamina freely from a pin through a hole near its edge and hanging a plumb line from the same pin. The plumb line marks the vertical through the centre of gravity, so drawing that line on the lamina and repeating the process from a second hole gives two lines whose crossing point is the centre of gravity.\n\nEquilibrium is judged by what happens after a small displacement. In stable equilibrium the object returns to its original position and its centre of gravity rises when it is tilted, as with a cone standing on its base. In unstable equilibrium the object topples further from its original position and its centre of gravity falls, as with a cone balanced on its point. In neutral equilibrium the centre of gravity stays at the same height and the object remains comfortably in its new position, as with a ball resting on a level table.\n\nAn object topples when the vertical line through its centre of gravity falls outside its base. Tilting an object raises its centre of gravity until that vertical line reaches the edge of the base, and beyond that point the weight keeps turning the object instead of restoring it. The width of the base and the height of the centre of gravity above it therefore decide how hard a push is needed to tip a body over.\n\nTwo changes make an object more stable: lowering its centre of gravity, and widening its base. A racing car carries its heavy engine low down, a table lamp has a heavy base, and a bus is loaded with heavy luggage in the hold rather than on the roof, because heavy luggage on the roof raises the centre of gravity and makes the bus easier to overturn on a bend.",
+                "objectives": [
+                    "Define the centre of gravity and find it for a flat lamina",
+                    "Describe stable equilibrium, unstable equilibrium and neutral equilibrium",
+                    "Explain toppling, and how the centre of gravity and the base affect stability"
+                ],
+                "concepts": [
+                    "The centre of gravity of a body is the point through which the whole weight of a body appears to act.",
+                    "For a uniform metre rule the centre of gravity is at the 50 cm mark, the midpoint.",
+                    "In stable equilibrium the object returns to its original position and its centre of gravity rises when it is tilted.",
+                    "In unstable equilibrium the object topples further from its original position and its centre of gravity falls.",
+                    "In neutral equilibrium the centre of gravity stays at the same height and the object remains comfortably in its new position.",
+                    "An object topples when the vertical line through its centre of gravity falls outside its base.",
+                    "Lowering the centre of gravity and widening the base make an object more stable."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Sort each statement under Stable equilibrium, Unstable equilibrium or Neutral equilibrium."
+                }
+            },
+            {
+                "id": "mech-deformation-and-elasticity",
+                "title": "Deformation and Elasticity",
+                "content": "A force can change the shape or the size of a body as well as its motion, and the change is called deformation. In elastic deformation the object returns to its original shape when the force is removed, as a spring does when it is stretched gently. In plastic deformation the object is permanently changed, as a spring is when it is overstretched and cannot spring back, or as a paper clip is when it is bent open.\n\nRobert Hooke found that for a spring or a wire the extension is directly proportional to the force applied, provided the limit of proportionality is not exceeded. This is Hooke's law, written F = k x, where F is the force in newtons, x is the extension in metres and k is the spring constant in newtons per metre. The extension is the increase in length: extension = stretched length - original length.\n\nThe spring constant is the force needed per metre of extension, so a stiff spring has a large k and a soft spring has a small k. Worked example: a spring of original length 12 cm stretches to 18 cm under a load of 3 N, so its extension is 6 cm, which is 0.06 m, and k = F / x = 3 N / 0.06 m = 50 N/m. A load of 4.5 N on the same spring gives x = F / k = 4.5 / 50 = 0.09 m, which is 9 cm, so the spring stretches to 21 cm.\n\nA graph of force against extension is a straight line through the origin while Hooke's law holds. The point where the straight line ends is the limit of proportionality, and beyond it the extension grows faster than the force, the line curves upwards and the spring reaches its elastic limit, after which it is permanently stretched. The area under the force-extension graph is the work done in stretching the spring, and for the straight-line part the stored elastic potential energy = 1/2 x force x extension.\n\nMaterials are chosen for the deformation they give. A spring in a pen, a car suspension spring, a trampoline and a bungee rope deform elastically and give the energy back, while the crumple zone of a car and the padding of a crash barrier deform plastically and absorb energy so that the passengers do not. In an experiment a spring hangs from a clamp, a ruler fixed beside it reads the extension, and masses of 100 g add a force of about 1 N each; the plot of force against extension then gives the spring constant as its gradient.",
+                "objectives": [
+                    "Distinguish elastic deformation from plastic deformation",
+                    "State Hooke's law and use F = k x to find the force, the extension or the spring constant",
+                    "Interpret a force-extension graph, including the limit of proportionality"
+                ],
+                "concepts": [
+                    "In elastic deformation the object returns to its original shape when the force is removed; in plastic deformation the object is permanently changed.",
+                    "Hooke's law: the extension is directly proportional to the force applied, provided the limit of proportionality is not exceeded.",
+                    "F = k x, where k is the spring constant in newtons per metre, the force needed per metre of extension, so a stiff spring has a large k.",
+                    "The point where the straight line ends is the limit of proportionality, and beyond it the extension grows faster than the force.",
+                    "The area under the force-extension graph is the work done in stretching the spring."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Match each term - Elastic deformation, Plastic deformation, Hooke's law, The spring constant and The limit of proportionality - to the statement that describes it."
                 }
             }
         ]
