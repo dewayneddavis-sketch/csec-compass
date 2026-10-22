@@ -24,3 +24,16 @@ so its lab frame no longer describes anything shipped.
 
 Every frame here has a distinct md5; the counts above are quoted from the live DOM, and
 the PNG only illustrates them.
+## Which base these frames were shot on
+
+They were rendered on the branch's **pre-rebase** base (before it was rebuilt on
+`main` at Section E's merge), when Physics had **27 lessons** in total. Two frames carry
+that number and one of them quotes it:
+
+- `subject-physics-electricity-14-lessons.png` — "Module 4: Electricity and Magnetism,
+  14 lessons". **Still exactly right**: this slice's own module count did not change.
+- `gate-em-direct-and-alternating-current.png` — the gate sentence reads "unlock all
+  **27** lessons". On the rebased head the total is **38** (main's 27 + this slice's 11).
+  The *shape* of the proof still holds — the new lesson is behind the purchase gate for a
+  signed-out visitor — but the quoted count is from the old base, and it is not re-shot.
+- The lesson/lab frames are per-lesson and unaffected by the other sections.
