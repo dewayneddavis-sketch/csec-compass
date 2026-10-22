@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-// Harness: the 8 Physics syllabus-gap lessons each get their OWN Play-tab lab.
+// Harness: the 8 Physics syllabus-gap lessons AND the 13 atom lessons of the
+// Section E coverage build each get their OWN Play-tab lab.
 //
 // The engineer gate failed PR #143 partly because the new lessons' `experiment`
 // promised lab types the platform does not have ("text-sort" /
@@ -27,6 +28,21 @@ const GAP_LESSONS = [
   "specific-and-latent-heat", "reflection-and-total-internal-reflection",
   "sound-and-the-em-spectrum", "magnetism-and-electromagnetism", "electrical-power-and-safety",
 ];
+// Physics Section E coverage build (2026-10-21): the atom lessons added by the
+// owner's 110-topic coverage target. Each carries its own per-lesson lab set for
+// the same reason as the eight gap lessons above - physics is a type-keyed
+// subject, so without a set a lesson would show another lesson's deck.
+// "Nature of Radioactive Emissions" and "Ranges and Tracks of Emissions" are
+// held back until dev-3's coverage audit rules on them, so they are not listed.
+const SECTION_E_LESSONS = [
+  "nuclear-modern-atom", "nuclear-geiger-marsden", "nuclear-atomic-composition",
+  "nuclear-nuclide-notation", "nuclear-shell-model", "nuclear-marie-curie",
+  "nuclear-fields-on-emissions", "nuclear-reaction-equations",
+  "nuclear-radioisotope-applications", "nuclear-energy-from-reactions",
+  "nuclear-energy-utilisation",
+];
+// Every lesson that must have a per-lesson set of its own.
+const PER_LESSON_SET = [...GAP_LESSONS, ...SECTION_E_LESSONS];
 const OLDER_LESSONS = [
   "scalars-vectors", "motion-graphs", "temperature-heat", "gas-laws",
   "wave-properties", "light-refraction", "electric-circuits", "radioactivity",
@@ -41,13 +57,13 @@ const corpusOf = (l) => fold([l.title, l.content, ...(l.objectives || []), ...(l
 
 section("1. every new lesson has its own lab set");
 const sets = lessonSets.physics || {};
-for (const id of GAP_LESSONS) check(!!sets[id], `${id}: has a lessonSets.physics entry`);
-check(Object.keys(sets).length === GAP_LESSONS.length,
-  `no stray physics sets (${Object.keys(sets).length} keys for ${GAP_LESSONS.length} new lessons)`);
+for (const id of PER_LESSON_SET) check(!!sets[id], `${id}: has a lessonSets.physics entry`);
+check(Object.keys(sets).length === PER_LESSON_SET.length,
+  `no stray physics sets (${Object.keys(sets).length} keys for ${PER_LESSON_SET.length} per-lesson-set lessons)`);
 const lessonIds = new Set(allLessons.map((l) => l.id));
-for (const id of GAP_LESSONS) check(lessonIds.has(id), `${id}: is a real lesson id in modules.json`);
-check(allLessons.length === GAP_LESSONS.length + OLDER_LESSONS.length,
-  `physics has ${GAP_LESSONS.length + OLDER_LESSONS.length} lessons (${allLessons.length})`);
+for (const id of PER_LESSON_SET) check(lessonIds.has(id), `${id}: is a real lesson id in modules.json`);
+check(allLessons.length === PER_LESSON_SET.length + OLDER_LESSONS.length,
+  `physics has ${PER_LESSON_SET.length + OLDER_LESSONS.length} lessons (${allLessons.length})`);
 
 section("2. every set is well formed and headed by its own lesson title");
 for (const [id, set] of Object.entries(sets)) {
