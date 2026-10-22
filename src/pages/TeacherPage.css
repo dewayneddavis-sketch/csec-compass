@@ -257,6 +257,46 @@
 .tp-quiz-pass.warn {
   color: #b45309;
 }
+/* Practice Papers 1–5 read as five separate papers under the quiz cells
+   (owner request 2026-10-22). The row wraps so it stays readable at phone
+   width, and every chip carries the paper's full name — no abbreviation-only
+   chip, which is the thing that made the five tabs hard to tell apart. */
+.tp-papers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+.tp-paper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  flex: 1 1 11rem;
+  min-width: 9rem;
+  padding: 0.4rem 0.55rem;
+  background: #faf5ff;
+  border: 1px solid #e9d5ff;
+  border-radius: 8px;
+}
+.tp-paper.has-data {
+  background: #f5f3ff;
+  border-color: #c4b5fd;
+}
+.tp-paper-empty {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+}
+.tp-paper-name {
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #5b21b6;
+}
+.tp-paper-score {
+  font-size: 0.84rem;
+  color: #0f172a;
+}
 
 .tp-labs {
   margin-top: 0.6rem;

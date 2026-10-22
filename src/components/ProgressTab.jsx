@@ -2,12 +2,18 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useQuizAnalytics, useLessonLookup } from "../data/useQuizAnalytics";
 import WeakTopicsPanel from "./WeakTopicsPanel";
+import { PRACTICE_QUIZ_TYPES, practicePaperQuizLabel } from "../data/practicePapers";
 import "./ProgressTab.css";
 
 const QUIZ_LABELS = {
   "knowledge-check": "Knowledge Check",
   practice: "Practice Paper",
   mock: "Mock Exam",
+  // Each Practice Paper is recorded under its own quiz type (owner request
+  // 2026-10-22), so the attempt history names the paper a student actually sat —
+  // "Practice Paper 3", not "Practice Paper". Labels come from the same module
+  // the tabs and the dashboard use.
+  ...Object.fromEntries(PRACTICE_QUIZ_TYPES.map((t) => [t, practicePaperQuizLabel(t)])),
 };
 
 // Per-subject Progress tab: attempt history, pass-rate trend, and the weak

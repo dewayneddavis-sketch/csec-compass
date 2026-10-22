@@ -175,6 +175,39 @@ async function buildStudentSummaries(supabase, links, { rosterKey, ownerField })
     touch(student, subj, attempt.createdAt);
   }
 
+  // Per-paper practice, folded back into the aggregate (owner request
+  // 2026-10-22). Each Practice Paper records under its own quiz_type —
+  // practice-pp1 … practice-pp5, the five values src/data/practicePapers.js owns
+  // (tools/check-practice-paper-telemetry.mjs asserts this file agrees with it)
+  // — so a teacher can read Papers 1–5 separately. The aggregate `practice`
+  // bucket stays exactly what it always was: every practice attempt, including
+  // rows written as plain `practice` before this change. Each attempt is counted
+  // once, so folding cannot double-count: a practice-ppN row is not in the
+  // `practice` bucket until this loop puts it there, and its own per-paper bucket
+  // is built by the generic loop above.
+  const perPaperPractice = /^practice-pp(\d+)$/;
+  const practiceLatest = new Map(); // "userId|subjectId" -> latest practice attempt of ANY kind
+  for (const attempt of attempts.values()) {
+    const isPerPaper = perPaperPractice.test(String(attempt.quizType || ""));
+    if (!isPerPaper && attempt.quizType !== "practice") continue;
+    const student = studentEntry(attempt.userId);
+    const subj = subjectEntry(student, attempt.subjectId);
+    const pct = roundPct(attempt.correct, attempt.total);
+    if (isPerPaper) {
+      subj.attempts.practice += 1;
+      if (pct >= 60) subj.passed.practice += 1;
+      subj.bestPct.practice = subj.bestPct.practice === null ? pct : Math.max(subj.bestPct.practice, pct);
+    }
+    const key = `${attempt.userId}|${attempt.subjectId}`;
+    const prev = practiceLatest.get(key);
+    if (!prev || String(attempt.createdAt) > String(prev.at)) practiceLatest.set(key, { pct, at: attempt.createdAt });
+  }
+  for (const [key, latest] of practiceLatest) {
+    const [userId, subjectId] = key.split("|");
+    const subj = byStudent.get(userId)?.subjects.get(subjectId);
+    if (subj) subj.lastPct.practice = latest.pct;
+  }
+
   for (const row of progressRes.data || []) {
     const student = studentEntry(row.user_id);
     const subj = subjectEntry(student, row.subject_id);

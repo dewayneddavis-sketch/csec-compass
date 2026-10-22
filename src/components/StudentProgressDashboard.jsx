@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { experimentTypes } from "../data/contentLoader";
 import { labActivityLabel, labLessonPath, loadLessonNameIndex, subjectName } from "../data/lessonNames";
+import { PRACTICE_QUIZ_TYPES, practicePaperQuizLabel } from "../data/practicePapers";
 import "../pages/TeacherPage.css";
 
 // The shared progress dashboard body.
@@ -79,6 +80,46 @@ function LabActivityName({ subjectId, lesson }) {
   return <span className="tp-lab-type"> · {label}</span>;
 }
 
+/**
+ * Practice Papers 1–5 as five separate papers (owner request 2026-10-22).
+ *
+ * The aggregate "Practice Paper" cell above stays exactly as it was — it is the
+ * total over every paper — and this row breaks that total down, so a teacher can
+ * read "PP1 done, PP2 not attempted, PP3 60%". The five values come from
+ * src/data/practicePapers.js and the per-paper figures from the server summary
+ * (api/analytics/summary.js), which folds the papers back into the aggregate.
+ * Rendered only when the subject has practice activity at all, so a subject the
+ * student never practised does not grow five empty chips.
+ */
+function PracticePapersRow({ subject }) {
+  const attempts = subject.attempts || {};
+  const papers = PRACTICE_QUIZ_TYPES.map((quizType, i) => ({
+    quizType,
+    label: practicePaperQuizLabel(quizType) || `Practice Paper ${i + 1}`,
+    attempts: attempts[quizType] || 0,
+    best: subject.bestPct?.[quizType],
+    last: subject.lastPct?.[quizType],
+    passed: subject.passed?.[quizType] || 0,
+  }));
+  const anyActivity = papers.some((p) => p.attempts > 0) || (attempts.practice || 0) > 0;
+  if (!anyActivity) return null;
+  return (
+    <div className="tp-papers" aria-label="Practice Papers 1 to 5">
+      {papers.map((p) => (
+        <div key={p.quizType} className={"tp-paper " + (p.attempts > 0 ? "has-data" : "tp-paper-empty")}>
+          <span className="tp-paper-name">{p.label}</span>
+          {p.attempts > 0 ? (
+            <span className="tp-paper-score">
+              best <strong>{p.best}%</strong> · last {p.last}% · {p.passed > 0 ? `${p.passed} pass${p.passed === 1 ? "" : "es"}` : "not passed yet"}
+            </span>
+          ) : (
+            <span className="tp-paper-score tp-muted">not attempted</span>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+}
 function SubjectCard({ subject, nameIndex }) {
   const labs = subject.labs || { opened: 0, completed: 0, lessons: [] };
   const completedLabs = (labs.lessons || []).filter((l) => l.completed);
@@ -98,6 +139,7 @@ function SubjectCard({ subject, nameIndex }) {
         </span>
       </div>
       <QuizCells subject={subject} />
+      <PracticePapersRow subject={subject} />
       {(completedLabs.length > 0 || openedOnly.length > 0) && (
         <details className="tp-labs">
           <summary>Lab detail ({labs.lessons.length} lesson{labs.lessons.length === 1 ? "" : "s"} with lab activity)</summary>

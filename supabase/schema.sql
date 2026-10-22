@@ -69,7 +69,13 @@ create policy "purchases: no direct client access"
 -- Used by the weak-topic analytics + targeted revision path feature.
 -- Written by api/analytics/record.js (service role), read by
 -- api/analytics/summary.js (service role). One row per question answered.
---   quiz_type   : 'knowledge-check' | 'practice' | 'mock'
+--   quiz_type   : 'knowledge-check' | 'practice' | 'mock' | 'practice-pp1' … 'practice-pp5'
+--                 The three aggregates are unchanged. The five per-paper values
+--                 are what the Practice Paper tabs record (owner request
+--                 2026-10-22) so the teacher dashboard can read Papers 1–5 as
+--                 five papers; api/analytics/summary.js folds them back into the
+--                 aggregate 'practice' figure. The column is free text, so this
+--                 is a comment change only — no migration and no new column.
 --   topic       : lesson id from the question's `topic` field
 --   attempt_id  : uuid grouping one quiz sitting, so per-attempt scores and
 --                 pass-rate trends can be reconstructed from individual rows
