@@ -445,18 +445,217 @@
             {
                 "id": "radioactivity",
                 "title": "Radioactivity and Half-Life",
-                "content": "Radioactivity is the spontaneous and random emission of radiation from the unstable nucleus of an atom. There are three primary types of radiation: Alpha (\u03b1) particles, which are helium nuclei; Beta (\u03b2) particles, which are high-speed electrons; and Gamma (\u03b3) rays, which are high-energy electromagnetic waves. Each type has different penetrating power and ionising ability.\n\nBecause radioactive decay is random, we cannot predict when a specific nucleus will decay. However, for a large group of atoms, the rate of decay is predictable. The half-life is the time it takes for half of the radioactive nuclei in a sample to decay. For example, if a substance has a half-life of 10 years, a 100g sample will be reduced to 50g after 10 years, and then to 25g after another 10 years.\n\nCSEC questions often involve identifying types of radiation from their properties, completing nuclear equations, and using decay curves to determine half-life. Understanding radioactivity is essential for medicine (cancer treatment), archaeology (carbon dating), and energy production (nuclear power).",
+                "content": "Radioactivity is the spontaneous and random emission of radiation from the unstable nucleus of an atom. There are three primary types of radiation: Alpha (\u03b1) particles, which are helium nuclei; Beta (\u03b2) particles, which are high-speed electrons; and Gamma (\u03b3) rays, which are high-energy electromagnetic waves. Each type has different penetrating power and ionising ability.\n\nBecause radioactive decay is random, we cannot predict when a specific nucleus will decay. However, for a large group of atoms, the rate of decay is predictable. The half-life is the time it takes for half of the radioactive nuclei in a sample to decay. For example, if a substance has a half-life of 10 years, a 100g sample will be reduced to 50g after 10 years, and then to 25g after another 10 years. A decay graph plots the count rate, the activity or the mass remaining against time, and its curve never reaches zero: the half-life is the time for the value to halve, and it is the same at every halving.\n\nCSEC questions often involve identifying types of radiation from their properties, completing nuclear equations, and using decay curves to determine half-life. Understanding radioactivity is essential for medicine (cancer treatment), archaeology (carbon dating), and energy production (nuclear power).",
                 "objectives": [
                     "Describe alpha, beta, and gamma radiation",
                     "Calculate half-life from decay curves"
                 ],
                 "concepts": [
-                    "Radioactive decay is random.",
-                    "Half-life is the time taken for half the nuclei to decay."
+                    "Random Nature of Radioactive Decay: the decay of a nucleus is random, so we cannot predict which nucleus will decay next, only the rate for a large group.",
+                    "Half-life is the time taken for half the nuclei to decay, and it is the same at every halving.",
+                    "Half-Life and Decay Graphs: a decay graph plots the count rate, the activity or the mass remaining against time, and the half-life is read off as the time for the value to halve."
                 ],
                 "experiment": {
                     "type": "decay-sim",
                     "description": "Types of Radiation: Drag alpha, beta and gamma radiation, and half-life, onto the statement each one describes — a helium nucleus stopped by paper, a fast electron stopped by aluminium, radiation needing thick lead, and the time for half of the atoms to decay."
+                }
+            },
+            {
+                "id": "nuclear-modern-atom",
+                "title": "Work in Establishing the Modern Atom",
+                "content": "For more than two thousand years people have asked what matter is made of, and the answer changed whenever an experiment contradicted the model of the day. The Greek philosopher Democritus proposed tiny indivisible particles he called atoms, but the idea remained a philosophy, because no measurement could test it.\n\nJohn Dalton's atomic theory, published in 1808, put atoms on a scientific footing: each element is made of identical, indestructible atoms, compounds are combinations of atoms in fixed whole-number ratios, and a chemical reaction only rearranges the atoms. Dalton's model explained the laws of chemical combination, but it treated every atom as a solid sphere with no internal structure.\n\nAt the end of the nineteenth century J. J. Thomson's experiments with cathode rays found a much lighter, negatively charged particle inside the atom, the electron. Because an atom as a whole is neutral, Thomson proposed the plum-pudding model: electrons embedded in a ball of positive charge, like fruit in a pudding.\n\nErnest Rutherford's alpha-particle scattering experiment in 1911 overturned that model. A small number of alpha particles were deflected through large angles and some came straight back, which is possible only if the positive charge is concentrated in a tiny, dense centre: the nucleus. Niels Bohr's model extended the picture in 1913 by placing electrons in fixed shells, which explained the sharp spectral lines that the plum-pudding model could not explain.\n\nThe pattern of the whole story is that a model survives only while it explains the evidence. Each new experiment kept the parts that still worked and replaced the one part that did not.",
+                "objectives": [
+                    "Describe how the model of the atom changed from Dalton to Bohr",
+                    "Explain the evidence that replaced each model"
+                ],
+                "concepts": [
+                    "Dalton's model: each element is made of identical, indestructible atoms, and the atom is a solid sphere with no internal structure.",
+                    "Thomson's plum-pudding model: electrons embedded in a ball of positive charge.",
+                    "Rutherford's nucleus: the positive charge is concentrated in a tiny, dense centre, as alpha-particle scattering showed."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Match each term - Democritus, Dalton's atomic theory, The electron, Plum-pudding model, The nucleus and Bohr's model - to the statement that describes it."
+                }
+            },
+            {
+                "id": "nuclear-geiger-marsden",
+                "title": "Geiger-Marsden Experiment and Nuclear Structure",
+                "content": "In 1909 Ernest Rutherford, working with Hans Geiger and Ernest Marsden, fired alpha particles at a very thin gold foil in a vacuum and counted where they went with a zinc sulphide screen that flashed when a particle struck it. Most alpha particles passed straight through the gold foil, and the flashes confirmed that they had crossed it with almost no change of direction.\n\nA small number of alpha particles were deflected through large angles, and a few alpha particles came straight back towards the source, about one in every 8000. A deflected alpha particle behaves in that way only if it has met a concentrated positive charge: an alpha particle is positive, so a positive nucleus repels it.\n\nFrom these observations Rutherford concluded that most of the atom is empty space, that all the positive charge and nearly all the mass sit in a tiny nucleus, and that the electrons occupy the rest of the atom. The nucleus is about 10 to the power minus 15 metres across, roughly a hundred thousand times smaller than the atom itself, which is about 10 to the power minus 10 metres.\n\nThe experiment also gave the charge on the nucleus a meaning. The number of units of positive charge equals the atomic number, which is the position of the element in the periodic table, and the electrons that balance that charge must therefore equal it in number.",
+                "objectives": [
+                    "Describe the Geiger-Marsden alpha-particle scattering experiment and its observations",
+                    "Explain how the observations show that the atom has a tiny, dense, positive nucleus"
+                ],
+                "concepts": [
+                    "Most alpha particles passed straight through the gold foil, so most of the atom is empty space.",
+                    "A few alpha particles came straight back, because the positive charge is concentrated in a tiny nucleus that repels them.",
+                    "The nucleus is about 10 to the power minus 15 metres across, a hundred thousand times smaller than the atom."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Match each term - Most alpha particles, A few alpha particles, A deflected alpha particle, Most of the atom and The nucleus - to the statement that describes it."
+                }
+            },
+            {
+                "id": "nuclear-atomic-composition",
+                "title": "Atomic Composition and Neutrality",
+                "content": "Every atom is built from three subatomic particles. A proton carries a positive charge and sits in the nucleus. A neutron has no charge and about the same mass as a proton, and it also sits in the nucleus. An electron carries a negative charge, has almost no mass compared with a proton, and occupies the shells around the nucleus.\n\nThe number of protons decides which element an atom is: this is the atomic number, Z. The mass number, A, is the number of protons plus the number of neutrons, so counted with the protons, the neutrons give the mass number. A nucleus of carbon-12 therefore holds six protons and six neutrons.\n\nAn atom as a whole is neutral, because the number of protons equals the number of electrons. Charge is not created or destroyed when an ion forms: an atom gains or loses electrons and the proton count does not change. Losing an electron leaves one more proton than electron, so the particle becomes a positive ion, and gaining an electron gives a negative ion.\n\nInside the nucleus the protons and neutrons are held together by the strong nuclear force, which acts over the tiny distances between them and is far stronger than the electric repulsion of the protons. The electrons are held to the atom by the electric attraction between their negative charge and the positive nucleus.",
+                "objectives": [
+                    "State the charge, relative mass and position of the proton, neutron and electron",
+                    "Explain why an atom is neutral and how ions form"
+                ],
+                "concepts": [
+                    "A proton carries a positive charge and sits in the nucleus, and a neutron has no charge with about the same mass.",
+                    "An atom is neutral because the number of protons equals the number of electrons.",
+                    "An ion forms when an atom gains or loses one or more electrons, and the proton count does not change."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Sort each statement under Proton, Neutron or Electron."
+                }
+            },
+            {
+                "id": "nuclear-nuclide-notation",
+                "title": "Nuclide Notation and Isotopes",
+                "content": "A nuclide is a particular nucleus, and it is written with the mass number as a superscript before the symbol and the atomic number as a subscript. Carbon-12 has 6 protons and 6 neutrons, and it is written with 12 above and 6 below the symbol C, while carbon-14 has 6 protons and 8 neutrons.\n\nIsotopes are atoms of the same element with the same number of protons but different numbers of neutrons. Isotopes of an element behave identically in chemical reactions, because the chemistry is decided by the electrons and isotopes have the same number of electrons. They differ in mass number, in density, and in the rate at which they take part in physical processes such as diffusion.\n\nHydrogen has three isotopes: protium with one proton and no neutrons, deuterium with one proton and one neutron, and tritium with one proton and two neutrons. The relative atomic mass of an element is the weighted average of the masses of its isotopes, which is why the relative atomic mass of chlorine is about 35.5 although no single chlorine atom has that mass.\n\nSome isotopes are radioactive and others are stable. Carbon-14 is radioactive and is used for dating, while carbon-12 is stable and makes up almost all the carbon on Earth. How many electrons an ion has is found from the atomic number, not from the mass number.",
+                "objectives": [
+                    "Write and interpret nuclide notation with the mass number and the atomic number",
+                    "Define isotopes and explain why isotopes of an element have the same chemical properties"
+                ],
+                "concepts": [
+                    "The mass number is the number of protons plus neutrons and is written as a superscript before the symbol.",
+                    "The atomic number is the number of protons and is written as a subscript.",
+                    "Isotopes are atoms of the same element with the same number of protons but different numbers of neutrons."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Match each term - Carbon-12, Carbon-14, Isotopes, Deuterium and The mass number - to the statement that describes it."
+                }
+            },
+            {
+                "id": "nuclear-shell-model",
+                "title": "Shell Model and the Periodic Table",
+                "content": "In the shell model the electrons of an atom are arranged in shells around the nucleus. The first shell holds up to 2 electrons and the second and third hold up to 8, and the shells fill from the inside outwards. Sodium has eleven electrons and the configuration 2, 8, 1.\n\nAn element's place in the periodic table follows from its shells. The group number equals the number of electrons in the outer shell, so every element of group 1 has one outer electron and every element of group 7 has seven. The period number equals the number of occupied shells, so the elements of period 3 have electrons in three shells.\n\nThe outer electrons decide how an element behaves chemically. Sodium with one outer electron loses it to form a positive ion, and chlorine with seven outer electrons gains one to form a negative ion, so both end up with a full outer shell. Electrons in a full outer shell are held firmly and are not easily removed.\n\nThe noble gases of group 8 have a full outer shell, so they are unreactive: helium has 2 outer electrons and the rest of the group have 8. The shell model therefore explains the shape of the periodic table rather than merely describing it. It also shows its own limit, because it says nothing about the nucleus and cannot explain radioactivity.",
+                "objectives": [
+                    "Write the electron configuration of the first twenty elements",
+                    "Relate the group and period numbers to the shell model"
+                ],
+                "concepts": [
+                    "The first shell holds up to 2 electrons and the second and third hold up to 8.",
+                    "The group number equals the number of electrons in the outer shell.",
+                    "The period number equals the number of occupied shells."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Match each term - The group number, The period number, Sodium, Chlorine, The noble gases and The shell model - to the statement that describes it."
+                }
+            },
+            {
+                "id": "nuclear-marie-curie",
+                "title": "Marie Curie's Work and Radioactivity",
+                "content": "In 1896 Henri Becquerel found that uranium salts fogged a photographic plate even when they had not been exposed to sunlight. Marie Curie took up the puzzle, and with her husband Pierre Curie showed that the rays came from the uranium atoms themselves rather than from a chemical reaction, and she gave the process the name radioactivity.\n\nThe Curies processed tonnes of pitchblende, a uranium ore, and in 1898 they separated two new elements that were far more radioactive than uranium: polonium and radium. Radium was about a million times more radioactive than uranium, and isolating it took years of chemical work, with tonnes of ore yielding a fraction of a gram.\n\nBecquerel and the Curies shared the Nobel Prize in Physics in 1903, and Marie Curie was awarded the Nobel Prize in Chemistry in 1911 for the discovery of radium and polonium and for her study of the nature of these new elements. She was the first person to win a Nobel Prize twice.\n\nThe discovery changed both physics and medicine. Radium was used in early cancer treatment, and radioactive isotopes later became medical tracers. The work also showed the hazards: the Curies and their assistants handled radioactive material without shielding and their health suffered, which is why the safety precautions used today exist.",
+                "objectives": [
+                    "Describe how Marie Curie established that radioactivity comes from the atom",
+                    "State the discoveries her work produced and the recognition it received"
+                ],
+                "concepts": [
+                    "Henri Becquerel found that uranium salts fogged a photographic plate without sunlight.",
+                    "Marie and Pierre Curie separated polonium and radium from pitchblende in 1898.",
+                    "Radioactivity comes from the atoms themselves, not from a chemical reaction."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Match each term - Becquerel, Polonium and radium, Marie Curie, Radium and Radioactivity - to the statement that describes it."
+                }
+            },
+            {
+                "id": "nuclear-fields-on-emissions",
+                "title": "Effects of Electric and Magnetic Fields on Emissions",
+                "content": "An electric field exerts a force on any charged particle and none on a neutral one, so the three emissions behave differently between two charged plates. A beam of alpha particles bends towards the negative plate, because an alpha particle is positive. A beam of beta particles bends towards the positive plate, and so in the opposite direction to the alpha beam.\n\nThe amount of bending depends on the charge and the mass of the particle. A beta particle is deflected far more than an alpha particle: it is negative and it is much lighter, and a light particle is deflected more by the same force. Gamma rays pass through undeflected, because they carry no charge.\n\nA magnetic field bends charged particles too, and the force acts at right angles to both the field and the direction of travel. Alpha particles bend one way and beta particles bend the opposite way, because their charges are opposite, and the beta deflection is again much the greater. Gamma rays are not deflected by a magnetic field at all.\n\nDeflections like these are how the three emissions were told apart in the laboratory, and the same principle is used today to focus a beam of charged particles or to separate ions of different mass.",
+                "objectives": [
+                    "Predict the direction in which alpha, beta and gamma emissions are deflected by electric and magnetic fields",
+                    "Explain the size of a deflection in terms of charge and mass"
+                ],
+                "concepts": [
+                    "An alpha particle bends towards the negative plate because it is positive.",
+                    "A beta particle bends towards the positive plate, and much more strongly, because it is negative and light.",
+                    "A gamma ray is undeflected because it carries no charge."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Match each term - Alpha particles, Beta particles, Gamma rays, The amount of bending and A magnetic field - to the statement that describes it."
+                }
+            },
+            {
+                "id": "nuclear-reaction-equations",
+                "title": "Interpreting Nuclear Reactions",
+                "content": "A nuclear reaction is written as an equation with the mass number and the atomic number of each nuclide, and the equation must balance on both counts. In the alpha decay of uranium-238 the equation is uranium-238 giving thorium-234 plus an alpha particle: the mass numbers balance because 238 equals 234 plus 4, and the atomic numbers balance because 92 equals 90 plus 2.\n\nIn beta decay the mass number is unchanged and the atomic number rises by one. Carbon-14 decays to nitrogen-14 plus a beta particle: 14 balances with 14 plus 0, and 6 balances with 7 plus minus 1. The beta particle is written with a mass number of 0 and an atomic number of minus 1, because it is an electron.\n\nGamma emission is written with no change to either number, which is why a gamma ray is often left out of a decay equation. In every case the particle missing from a partly written equation is found by making the mass numbers and the atomic numbers add up on each side.\n\nThe same rule covers artificial transmutation. In 1919 Rutherford passed alpha particles through nitrogen gas and found that nitrogen-14 had changed into oxygen-17 plus a proton, and an equation of that kind identifies the product of any bombardment.",
+                "objectives": [
+                    "Write balanced nuclear equations for alpha and beta decay",
+                    "Use conservation of mass number and charge to find a missing particle"
+                ],
+                "concepts": [
+                    "In a balanced nuclear equation the mass numbers and the atomic numbers must both add up on each side.",
+                    "In alpha decay the mass number falls by 4 and the atomic number falls by 2.",
+                    "In beta decay the mass number is unchanged and the atomic number rises by 1."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Match each term - Alpha decay, Beta decay, Carbon-14, Gamma emission, A balanced nuclear equation and Nitrogen-14 - to the statement that describes it."
+                }
+            },
+            {
+                "id": "nuclear-radioisotope-applications",
+                "title": "Applications of Radio-Isotopes",
+                "content": "A radio-isotope is chosen for a job by its half-life and by the radiation it emits. For use inside the body the half-life should be short, so that the dose does not last, and the emission should be gamma rays, which leave the body instead of being absorbed by it. Technetium-99m is used as a tracer in medical imaging, where a gamma camera follows it through an organ, and this is the commonest use in medicine.\n\nCobalt-60 emits gamma rays and is used in radiotherapy to destroy cancer cells, and it is also used to sterilise medical equipment and food. A strongly ionising alpha emitter is used where its short range is an advantage: americium-241 is the alpha source in a smoke detector, where its alpha particles ionise the air and allow a small current to flow.\n\nIn industry a beta or gamma source measures the thickness of paper, plastic or metal as the material passes between the source and a detector, and a tracer added to a pipeline shows up a leak. In agriculture phosphorus-32 follows the uptake of fertiliser by a plant, and radiation is used to breed new varieties of crop.\n\nIn archaeology carbon-14 is used for dating once-living material, because a living thing takes in carbon until it dies and its carbon-14 then decays with a half-life of about 5700 years, so the activity left shows how long ago it died. Uranium-238, with a half-life of about 4500 million years, dates rocks.",
+                "objectives": [
+                    "Describe medical, industrial, agricultural and archaeological uses of radio-isotopes",
+                    "Explain how the half-life and the type of emission decide which isotope is chosen"
+                ],
+                "concepts": [
+                    "Technetium-99m is used as a tracer in medical imaging because it has a short half-life and emits gamma rays.",
+                    "Cobalt-60 is used in radiotherapy and to sterilise medical equipment and food.",
+                    "Carbon-14 is used for dating once-living material and has a half-life of about 5700 years."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Sort each statement under Medicine, Industry or Archaeology."
+                }
+            },
+            {
+                "id": "nuclear-energy-from-reactions",
+                "title": "Energy from Nuclear Reactions",
+                "content": "A nuclear reaction releases energy because the total mass of the products is slightly less than the total mass of the reactants. The difference is called the mass defect, and the small loss of mass appears as energy according to the equation E = mc squared, where c is the speed of light. Because the speed of light is large, a tiny mass corresponds to a very large amount of energy.\n\nNuclear fission is the splitting of a heavy nucleus. A uranium-235 nucleus that absorbs a neutron becomes unstable and splits into two lighter nuclei, releasing two or three neutrons and a large amount of energy. The neutrons released by fission can cause further fissions, so the process can become a chain reaction: in a reactor the chain reaction is controlled, and in a weapon it is not.\n\nNuclear fusion is the joining of light nuclei. In the Sun hydrogen nuclei join to form helium, releasing energy and needing extremely high temperatures and pressures to bring the nuclei close enough to fuse. Fusion releases more energy per kilogram of fuel than fission and produces less long-lived radioactive waste, but it has not yet been made to work as a power source on Earth.\n\nFor the same mass of fuel a nuclear reaction releases far more energy than burning coal, oil or gas, which is why a nuclear power station needs only a small mass of uranium each year.",
+                "objectives": [
+                    "Explain that a small loss of mass in a nuclear reaction appears as a large amount of energy",
+                    "Describe nuclear fission and fusion and compare the energy they release"
+                ],
+                "concepts": [
+                    "The mass defect is the small loss of mass that appears as energy in a nuclear reaction.",
+                    "Nuclear fission splits a heavy nucleus into two lighter nuclei when it absorbs a neutron.",
+                    "Nuclear fusion joins hydrogen nuclei to form helium, releasing energy and needing extremely high temperatures."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Match each term - The mass defect, Fission, A chain reaction, Fusion, E = mc squared and A nuclear power station - to the statement that describes it."
+                }
+            },
+            {
+                "id": "nuclear-energy-utilisation",
+                "title": "Utilisation of Nuclear Energy",
+                "content": "A nuclear power station uses the heat from a controlled fission chain reaction to make steam, which drives turbines that turn generators. The fuel is uranium, usually enriched in uranium-235 and sealed inside fuel rods. A moderator such as graphite or water slows the fast neutrons down so that they can cause further fission, control rods of boron or cadmium absorb neutrons, and a coolant carries the heat away to the boiler.\n\nEach part of the reactor has one job, and the design is meant to keep the reaction from running away. The control rods are pushed in to absorb more neutrons and reduce the power and pulled out to raise it; thick concrete and steel shielding stops neutrons and gamma rays reaching the people outside; and the used fuel is stored under water, which removes its heat and shields the radiation.\n\nThe advantages of nuclear power are large: a small mass of fuel gives a very large amount of energy, and generating electricity this way does not produce carbon dioxide or the other gases that cause acid rain. The disadvantages are large too. The used fuel is radioactive waste that stays hazardous for thousands of years, so it must be stored and shielded; a reactor is expensive to build and to decommission; uranium is a non-renewable fuel; and an accident releases radioactive material into the surroundings.\n\nThe decision is a judgement about which risks a country will accept. Jamaica generates its electricity mainly from oil and gas and has no nuclear power station, so nuclear power is an option for countries with the grid, the money and the regulatory system to run it safely. Radiation safety itself rests on three ideas: shielding, distance and time.",
+                "objectives": [
+                    "Describe how a reactor controls a fission chain reaction",
+                    "Evaluate the advantages and the disadvantages of nuclear power"
+                ],
+                "concepts": [
+                    "Control rods of boron or cadmium absorb neutrons and slow the chain reaction.",
+                    "A moderator such as graphite or water slows the fast neutrons down so that they can cause further fission.",
+                    "Radioactive waste stays hazardous for thousands of years, so it must be stored and shielded."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Sort each statement under Advantage, Disadvantage or Part of the reactor."
                 }
             }
         ]
