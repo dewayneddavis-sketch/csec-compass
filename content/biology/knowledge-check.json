@@ -135,7 +135,7 @@
   "options": [
    "Mitosis",
    "Meiosis",
-   "Fertilization",
+   "Fertilisation",
    "Binary Fission"
   ],
   "answer": "Meiosis",
@@ -152,7 +152,7 @@
    "Translocation"
   ],
   "answer": "Transpiration",
-  "explanation": "Transpiration is the process where plants lose water vapor through their leaves.",
+  "explanation": "Transpiration is the process where plants lose water vapour through their leaves.",
   "topic": "transport-and-growth-in-plants"
  },
  {
@@ -222,7 +222,7 @@
  },
  {
   "id": "q18",
-  "question": "What is the process by which plants lose water vapor through their leaves?",
+  "question": "What is the process by which plants lose water vapour through their leaves?",
   "options": [
    "Respiration",
    "Transpiration",
@@ -264,7 +264,7 @@
   "question": "Which of these is a function of the cell membrane?",
   "options": [
    "Producing energy",
-   "Synthesizing proteins",
+   "Synthesising proteins",
    "Regulating what enters and leaves the cell",
    "Storing genetic information"
   ],
