@@ -1093,6 +1093,55 @@ export const lessonSets = {
         { id: "hd5", label: "The baby is born", order: 5 },
       ],
     },
+    "hsb-l7-1": {
+      title: "Heredity Terms",
+      subtitle: "Match each term about DNA, genes and chromosomes to its meaning.",
+      kind: "match",
+      pairs: [
+        { id: "dn1", target: "The molecule that carries the genetic code, shaped like a twisted ladder", label: "DNA" },
+        { id: "dn2", target: "A length of DNA that codes for one protein", label: "Gene" },
+        { id: "dn3", target: "One of the different forms of the same gene", label: "Allele" },
+        { id: "dn4", target: "A thread of DNA and protein that carries many genes", label: "Chromosome" },
+        { id: "dn5", target: "A cell with two sets of chromosomes (46 in a human)", label: "Diploid cell" },
+      ],
+    },
+    "hsb-l7-2": {
+      title: "Genetic Diagram",
+      subtitle: "Arrange the steps of a monohybrid cross in order.",
+      kind: "order",
+      items: [
+        { id: "gd1", label: "Write the phenotype of each parent", order: 1 },
+        { id: "gd2", label: "Write the genotype of each parent", order: 2 },
+        { id: "gd3", label: "Work out the gametes each parent can produce", order: 3 },
+        { id: "gd4", label: "Combine the gametes in a Punnett square", order: 4 },
+        { id: "gd5", label: "Write the offspring genotypes and their ratio", order: 5 },
+      ],
+    },
+    "hsb-l7-3": {
+      title: "Sex-Linked Inheritance",
+      subtitle: "Match each term to its meaning.",
+      kind: "match",
+      pairs: [
+        { id: "sx1", target: "The 44 chromosomes that are the same in both sexes", label: "Autosomes" },
+        { id: "sx2", target: "The pair of chromosomes that decides whether a person is female or male", label: "Sex chromosomes" },
+        { id: "sx3", target: "A person who carries a recessive allele but does not show the condition", label: "Carrier" },
+        { id: "sx4", target: "A condition in which the blood clots very slowly", label: "Haemophilia" },
+      ],
+    },
+    "hsb-l7-4": {
+      title: "Types of Variation",
+      subtitle: "Sort each example as continuous or discontinuous variation.",
+      kind: "sort",
+      categories: [ { id: "con", label: "Continuous variation" }, { id: "dis", label: "Discontinuous variation" } ],
+      items: [
+        { id: "vr1", label: "Height of the students in a class", category: "con" },
+        { id: "vr2", label: "Body mass of the students in a class", category: "con" },
+        { id: "vr3", label: "Hand span of the students in a class", category: "con" },
+        { id: "vr4", label: "Blood group of the students in a class", category: "dis" },
+        { id: "vr5", label: "Natural eye colour of the students in a class", category: "dis" },
+        { id: "vr6", label: "Ability to roll the tongue into a tube", category: "dis" },
+      ],
+    },
   },
 
   // ---------------------------------------------------------------- SPANISH
