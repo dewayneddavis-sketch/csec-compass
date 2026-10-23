@@ -121,6 +121,11 @@ function resolveInteractive(subjectId, experimentType, lessonId) {
 
   // ---- chemistry: molecule/bond/atom builders → chemistry drag set
   if (subjectId === "chemistry") {
+    // Section C (inorganic) lessons carry their own topic-matched set, so resolve
+    // them by lessonId BEFORE the experiment-type library below.
+    if (lessonId && lessonSets["chemistry"] && lessonSets["chemistry"][lessonId]) {
+      return <DragDropLabel subjectId="chemistry" experimentType={t} lessonId={lessonId} />;
+    }
     if (CHEM_DRAG_TYPES.has(t)) return <DragDropLabel subjectId="chemistry" experimentType={t} />;
     return flash("chemistry");
   }
