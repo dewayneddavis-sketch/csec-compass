@@ -1,18 +1,5 @@
 [
     {
-        "id": "q1",
-        "question": "Which of the following is a vector quantity?",
-        "options": [
-            "Mass",
-            "Distance",
-            "Velocity",
-            "Temperature"
-        ],
-        "answer": "Velocity",
-        "explanation": "Velocity has both magnitude and direction, making it a vector. The others are scalars.",
-        "topic": "scalars-vectors"
-    },
-    {
         "id": "q2",
         "question": "The gradient of a distance-time graph represents:",
         "options": [
@@ -26,16 +13,42 @@
         "topic": "motion-graphs"
     },
     {
-        "id": "q3",
-        "question": "In which state of matter is heat transfer by conduction most effective?",
+        "id": "q17",
+        "question": "According to Newton's Second Law, Force is equal to mass times?",
         "options": [
-            "Solid",
-            "Liquid",
-            "Gas",
-            "Vacuum"
+            "Velocity",
+            "Distance",
+            "Acceleration",
+            "Time"
         ],
-        "answer": "Solid",
-        "explanation": "Conduction relies on direct contact and vibration of particles, which are closest together in solids.",
+        "answer": "Acceleration",
+        "explanation": "F = m * a.",
+        "topic": "forces-and-newtons-laws"
+    },
+    {
+        "id": "q12",
+        "question": "The energy of a moving object is called:",
+        "options": [
+            "Potential energy",
+            "Kinetic energy",
+            "Thermal energy",
+            "Chemical energy"
+        ],
+        "answer": "Kinetic energy",
+        "explanation": "Kinetic energy is the energy an object possesses due to its motion.",
+        "topic": "work-energy-and-power"
+    },
+    {
+        "id": "q21",
+        "question": "The heat transfer that occurs in fluids (liquids and gases) is called?",
+        "options": [
+            "Conduction",
+            "Convection",
+            "Radiation",
+            "Insulation"
+        ],
+        "answer": "Convection",
+        "explanation": "Convection is the transfer of heat through the movement of the fluid itself.",
         "topic": "temperature-heat"
     },
     {
@@ -50,6 +63,19 @@
         "answer": "Increase",
         "explanation": "Boyle's Law states that pressure and volume are inversely proportional (PV = constant).",
         "topic": "gas-laws"
+    },
+    {
+        "id": "q15",
+        "question": "The process of a gas turning into a liquid is called:",
+        "options": [
+            "Evaporation",
+            "Sublimation",
+            "Condensation",
+            "Freezing"
+        ],
+        "answer": "Condensation",
+        "explanation": "Condensation is the phase change from gas to liquid.",
+        "topic": "specific-and-latent-heat"
     },
     {
         "id": "q5",
@@ -78,199 +104,17 @@
         "topic": "light-refraction"
     },
     {
-        "id": "q7",
-        "question": "In a series circuit, if one bulb blows, the other bulbs will:",
+        "id": "q23",
+        "question": "Which mirror always forms a virtual, upright, and diminished image?",
         "options": [
-            "Stay lit",
-            "Get brighter",
-            "Go out",
-            "Get dimmer"
+            "Plane mirror",
+            "Concave mirror",
+            "Convex mirror",
+            "Parabolic mirror"
         ],
-        "answer": "Go out",
-        "explanation": "In a series circuit, there is only one path for current. If that path is broken, current stops flowing everywhere.",
-        "topic": "electric-circuits"
-    },
-    {
-        "id": "q8",
-        "question": "What is the unit of electrical resistance?",
-        "options": [
-            "Volt",
-            "Ampere",
-            "Ohm",
-            "Watt"
-        ],
-        "answer": "Ohm",
-        "explanation": "Resistance is measured in Ohms (Ω), according to Ohm's Law (V = IR).",
-        "topic": "electric-circuits"
-    },
-    {
-        "id": "q9",
-        "question": "Which type of radiation has the highest penetrating power?",
-        "options": [
-            "Alpha",
-            "Beta",
-            "Gamma",
-            "X-ray"
-        ],
-        "answer": "Gamma",
-        "explanation": "Gamma rays are high-energy electromagnetic waves and can pass through several centimetres of lead.",
-        "topic": "radioactivity"
-    },
-    {
-        "id": "q10",
-        "question": "If a radioactive source has a half-life of 2 hours, what fraction of the original sample remains after 6 hours?",
-        "options": [
-            "1/2",
-            "1/4",
-            "1/8",
-            "1/16"
-        ],
-        "answer": "1/8",
-        "explanation": "After 3 half-lives (6/2=3), the remaining fraction is (1/2)^3 = 1/8.",
-        "topic": "radioactivity"
-    },
-    {
-        "id": "q11",
-        "question": "What is the weight of a 10kg mass on Earth? (g = 10 N/kg)",
-        "options": [
-            "1N",
-            "10N",
-            "100N",
-            "1000N"
-        ],
-        "answer": "100N",
-        "explanation": "Weight = mass * gravity = 10kg * 10 N/kg = 100N.",
-        "topic": "forces-and-newtons-laws"
-    },
-    {
-        "id": "q12",
-        "question": "The energy of a moving object is called:",
-        "options": [
-            "Potential energy",
-            "Kinetic energy",
-            "Thermal energy",
-            "Chemical energy"
-        ],
-        "answer": "Kinetic energy",
-        "explanation": "Kinetic energy is the energy an object possesses due to its motion.",
-        "topic": "work-energy-and-power"
-    },
-    {
-        "id": "q13",
-        "question": "Which of these is a non-renewable energy source?",
-        "options": [
-            "Solar",
-            "Wind",
-            "Coal",
-            "Hydroelectric"
-        ],
-        "answer": "Coal",
-        "explanation": "Coal is a fossil fuel and cannot be replenished on a human timescale.",
-        "topic": "work-energy-and-power"
-    },
-    {
-        "id": "q14",
-        "question": "Sound waves are an example of:",
-        "options": [
-            "Transverse waves",
-            "Longitudinal waves",
-            "Electromagnetic waves",
-            "Surface waves"
-        ],
-        "answer": "Longitudinal waves",
-        "explanation": "Sound waves involve particles vibrating back and forth in the same direction as the wave travels.",
-        "topic": "wave-properties"
-    },
-    {
-        "id": "q15",
-        "question": "The process of a gas turning into a liquid is called:",
-        "options": [
-            "Evaporation",
-            "Sublimation",
-            "Condensation",
-            "Freezing"
-        ],
-        "answer": "Condensation",
-        "explanation": "Condensation is the phase change from gas to liquid.",
-        "topic": "specific-and-latent-heat"
-    },
-    {
-        "id": "q16",
-        "question": "What is the unit of power?",
-        "options": [
-            "Joule",
-            "Watt",
-            "Newton",
-            "Volt"
-        ],
-        "answer": "Watt",
-        "explanation": "Power is measured in Watts (W), which is Joules per second.",
-        "topic": "electrical-power-and-safety"
-    },
-    {
-        "id": "q17",
-        "question": "According to Newton's Second Law, Force is equal to mass times?",
-        "options": [
-            "Velocity",
-            "Distance",
-            "Acceleration",
-            "Time"
-        ],
-        "answer": "Acceleration",
-        "explanation": "F = m * a.",
-        "topic": "forces-and-newtons-laws"
-    },
-    {
-        "id": "q18",
-        "question": "What type of energy is stored in a stretched rubber band?",
-        "options": [
-            "Kinetic energy",
-            "Elastic potential energy",
-            "Chemical energy",
-            "Thermal energy"
-        ],
-        "answer": "Elastic potential energy",
-        "explanation": "Energy stored as a result of deformation is elastic potential energy.",
-        "topic": "work-energy-and-power"
-    },
-    {
-        "id": "q19",
-        "question": "Which colour of visible light has the longest wavelength?",
-        "options": [
-            "Blue",
-            "Green",
-            "Yellow",
-            "Red"
-        ],
-        "answer": "Red",
-        "explanation": "Red light is at the long-wavelength end of the visible spectrum.",
-        "topic": "light-refraction"
-    },
-    {
-        "id": "q20",
-        "question": "What is the frequency of a wave with a period of 0.02 seconds?",
-        "options": [
-            "20 Hz",
-            "50 Hz",
-            "100 Hz",
-            "5 Hz"
-        ],
-        "answer": "50 Hz",
-        "explanation": "Frequency f = 1 / T = 1 / 0.02 = 50 Hz.",
-        "topic": "wave-properties"
-    },
-    {
-        "id": "q21",
-        "question": "The heat transfer that occurs in fluids (liquids and gases) is called?",
-        "options": [
-            "Conduction",
-            "Convection",
-            "Radiation",
-            "Insulation"
-        ],
-        "answer": "Convection",
-        "explanation": "Convection is the transfer of heat through the movement of the fluid itself.",
-        "topic": "temperature-heat"
+        "answer": "Convex mirror",
+        "explanation": "Convex mirrors diverge light rays and always produce virtual, smaller images.",
+        "topic": "reflection-and-total-internal-reflection"
     },
     {
         "id": "q22",
@@ -286,42 +130,198 @@
         "topic": "electric-circuits"
     },
     {
-        "id": "q23",
-        "question": "Which mirror always forms a virtual, upright, and diminished image?",
+        "id": "q16",
+        "question": "What is the unit of power?",
         "options": [
-            "Plane mirror",
-            "Concave mirror",
-            "Convex mirror",
-            "Parabolic mirror"
-        ],
-        "answer": "Convex mirror",
-        "explanation": "Convex mirrors diverge light rays and always produce virtual, smaller images.",
-        "topic": "reflection-and-total-internal-reflection"
-    },
-    {
-        "id": "q24",
-        "question": "What is the SI unit of pressure?",
-        "options": [
-            "Newton",
             "Joule",
-            "Pascal",
-            "Watt"
+            "Watt",
+            "Newton",
+            "Volt"
         ],
-        "answer": "Pascal",
-        "explanation": "Pressure is measured in Pascals (Pa).",
-        "topic": "fluid-pressure-and-upthrust"
+        "answer": "Watt",
+        "explanation": "Power is measured in Watts (W), which is Joules per second.",
+        "topic": "electrical-power-and-safety"
     },
     {
-        "id": "q25",
-        "question": "Which component in a circuit is used to measure electric current?",
+        "id": "q10",
+        "question": "If a radioactive source has a half-life of 2 hours, what fraction of the original sample remains after 6 hours?",
         "options": [
-            "Voltmeter",
-            "Ammeter",
-            "Resistor",
-            "Capacitor"
+            "1/2",
+            "1/4",
+            "1/8",
+            "1/16"
         ],
-        "answer": "Ammeter",
-        "explanation": "An ammeter is connected in series to measure current.",
-        "topic": "electric-circuits"
+        "answer": "1/8",
+        "explanation": "After 3 half-lives (6/2=3), the remaining fraction is (1/2)^3 = 1/8.",
+        "topic": "radioactivity"
+    },
+    {
+        "id": "q26",
+        "question": "A force of 4 N acts at right angles to a lever, 0.20 m from the pivot. What is the moment of the force about the pivot?",
+        "options": [
+            "0.80 N m",
+            "20 N m",
+            "4.2 N m",
+            "0.05 N m"
+        ],
+        "answer": "0.80 N m",
+        "explanation": "Moment = force × perpendicular distance from the pivot = 4 × 0.20 = 0.80 N m.",
+        "topic": "mech-turning-effects-and-moments"
+    },
+    {
+        "id": "q27",
+        "question": "A parallax error in a measurement happens when:",
+        "options": [
+            "the eye is not level with the mark being read",
+            "the instrument has a zero error",
+            "the temperature of the room changes",
+            "the instrument is held in the wrong hand"
+        ],
+        "answer": "the eye is not level with the mark being read",
+        "explanation": "If the eye is not level with the scale, the mark is read at an apparent position. Reading with the eye level with the mark, and at the bottom of the meniscus for a liquid, avoids it. A zero error is a different fault — a systematic one, removed by subtracting the zero reading.",
+        "topic": "mech-measurement-and-instruments"
+    },
+    {
+        "id": "q28",
+        "question": "Which description is correct for the particles of a gas?",
+        "options": [
+            "They are far apart and move rapidly and randomly",
+            "They are packed closely in a regular pattern",
+            "They can only vibrate about fixed positions",
+            "They are held in place by strong forces"
+        ],
+        "answer": "They are far apart and move rapidly and randomly",
+        "explanation": "In a gas the particles are far apart with weak forces between them, so they move rapidly and at random and the gas fills its container. Packed, regularly arranged particles that only vibrate belong to a solid.",
+        "topic": "thermal-states-of-matter"
+    },
+    {
+        "id": "q29",
+        "question": "In the electrical method for measuring specific heat capacity, why is the metal block lagged with insulating material?",
+        "options": [
+            "So that little energy escapes to the air and the energy supplied goes into heating the block",
+            "So that the block stays at room temperature",
+            "So that the heater does not overheat",
+            "So that the temperature of the block rises faster"
+        ],
+        "answer": "So that little energy escapes to the air and the energy supplied goes into heating the block",
+        "explanation": "The calculation c = E ÷ (mΔθ) assumes all the energy VIt supplied went into the block. Lagging reduces the energy lost to the air, so the measured value comes out close to the true one.",
+        "topic": "thermal-determining-specific-heat-capacity"
+    },
+    {
+        "id": "q30",
+        "question": "Two light sources are coherent when they:",
+        "options": [
+            "send out waves of the same frequency that stay in step",
+            "have the same brightness",
+            "are the same distance from the screen",
+            "are both made of white light"
+        ],
+        "answer": "send out waves of the same frequency that stay in step",
+        "explanation": "Interference fringes need a constant phase difference, which only coherent sources of one frequency give. In Young's experiment the single slit makes the light from the two slits coherent, and the bright fringes are where the waves arrive in step.",
+        "topic": "waves-youngs-double-slit-experiment"
+    },
+    {
+        "id": "q31",
+        "question": "A shadow cast by an extended source of light has a fully dark middle called the umbra and a partly lit region round it called the:",
+        "options": [
+            "penumbra",
+            "antumbra",
+            "fringe",
+            "principal focus"
+        ],
+        "answer": "penumbra",
+        "explanation": "Because light travels in straight lines, part of the extended source can still be seen from the outer region, so it is only partly shadowed — the penumbra. The middle, where no part of the source is visible, is the umbra.",
+        "topic": "waves-rectilinear-propagation-of-light"
+    },
+    {
+        "id": "q32",
+        "question": "For a two-input OR gate, the output is 0 only when:",
+        "options": [
+            "both inputs are 0",
+            "both inputs are 1",
+            "one input is 1 and the other is 0",
+            "never"
+        ],
+        "answer": "both inputs are 0",
+        "explanation": "An OR gate gives an output of 1 when at least one input is 1. Its truth table has just one row with an output of 0: both inputs 0.",
+        "topic": "em-logic-gates-and-truth-tables"
+    },
+    {
+        "id": "q33",
+        "question": "A negatively charged rod is held near an uncharged metal sphere on an insulating stand, and the sphere is momentarily earthed and then the earth is removed while the rod is still in place. The sphere is left:",
+        "options": [
+            "positively charged",
+            "negatively charged",
+            "uncharged",
+            "charged with the same charge as the rod"
+        ],
+        "answer": "positively charged",
+        "explanation": "The rod repels electrons to the far side of the sphere; earthing lets those electrons flow away to earth. Removing the earth first and then the rod leaves the sphere with a shortage of electrons, so it is positively charged — the opposite charge to the rod that induced it.",
+        "topic": "em-charging-by-friction-and-induction"
+    },
+    {
+        "id": "q34",
+        "question": "The force on a current-carrying conductor in a magnetic field acts at right angles to:",
+        "options": [
+            "both the current and the magnetic field",
+            "the current only",
+            "the magnetic field only",
+            "neither the current nor the field"
+        ],
+        "answer": "both the current and the magnetic field",
+        "explanation": "This is the motor effect, and Fleming's left-hand rule gives the direction: first finger the field, second finger the current, thumb the force, all at right angles to one another.",
+        "topic": "em-force-on-current-carrying-conductors"
+    },
+    {
+        "id": "q35",
+        "question": "In the Geiger–Marsden experiment, why did most of the alpha particles pass straight through the gold foil?",
+        "options": [
+            "Most of the atom is empty space",
+            "The nucleus is very dense",
+            "Alpha particles carry no charge",
+            "Gold is transparent to radiation"
+        ],
+        "answer": "Most of the atom is empty space",
+        "explanation": "An alpha particle is only deflected if it passes close to a concentrated charge. Most went straight through with little or no deflection, so most of the atom must be empty space with the mass concentrated in a very small nucleus.",
+        "topic": "nuclear-geiger-marsden"
+    },
+    {
+        "id": "q36",
+        "question": "A carbon atom has 6 protons and 8 neutrons. What is its mass number?",
+        "options": [
+            "14",
+            "6",
+            "8",
+            "2"
+        ],
+        "answer": "14",
+        "explanation": "The mass number is the number of protons plus neutrons = 6 + 8 = 14. The atomic number is the number of protons, 6, since the chemical identity of the element is fixed by its protons.",
+        "topic": "nuclear-nuclide-notation"
+    },
+    {
+        "id": "q37",
+        "question": "A nucleus of uranium-238 (mass number 238, atomic number 92) decays to thorium-234 (mass number 234, atomic number 90). What particle is emitted?",
+        "options": [
+            "An alpha particle",
+            "A beta particle",
+            "A gamma ray only",
+            "A neutron"
+        ],
+        "answer": "An alpha particle",
+        "explanation": "The mass number falls by 4 and the atomic number by 2 between the two sides, and that is exactly an alpha particle, ₂⁴He. In beta decay the mass number would be unchanged instead.",
+        "topic": "nuclear-reaction-equations"
+    },
+    {
+        "id": "q38",
+        "question": "A nuclear reactor uses a moderator such as graphite or water. What is the moderator for?",
+        "options": [
+            "To slow the fast neutrons down so that they can cause further fission",
+            "To absorb neutrons and so stop the chain reaction",
+            "To cool the core by carrying heat away",
+            "To shield the operators from the radiation"
+        ],
+        "answer": "To slow the fast neutrons down so that they can cause further fission",
+        "explanation": "Fission is most likely when a slow neutron is absorbed by a heavy nucleus, so the moderator slows the fast neutrons released by fission. The control rods of boron or cadmium absorb neutrons instead and hold the chain reaction at a steady rate.",
+        "topic": "nuclear-energy-utilisation"
     }
 ]
