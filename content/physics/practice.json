@@ -13,19 +13,6 @@
         "topic": "scalars-vectors"
     },
     {
-        "id": "p2",
-        "question": "What does the area under a velocity-time graph represent?",
-        "options": [
-            "Speed",
-            "Acceleration",
-            "Displacement",
-            "Time"
-        ],
-        "answer": "Displacement",
-        "explanation": "The area under a velocity-time graph is equal to the total displacement of the object.",
-        "topic": "motion-graphs"
-    },
-    {
         "id": "p3",
         "question": "Which method of heat transfer involves the movement of fluid due to density differences?",
         "options": [
@@ -37,19 +24,6 @@
         "answer": "Convection",
         "explanation": "Convection occurs in fluids as warmer, less dense areas rise and cooler, denser areas sink.",
         "topic": "temperature-heat"
-    },
-    {
-        "id": "p4",
-        "question": "According to Boyle's Law, if the volume of a gas is halved (at constant temperature), the pressure will:",
-        "options": [
-            "Be halved",
-            "Stay the same",
-            "Double",
-            "Quadruple"
-        ],
-        "answer": "Double",
-        "explanation": "P and V are inversely proportional (P1V1 = P2V2). If V is halved, P must double.",
-        "topic": "gas-laws"
     },
     {
         "id": "p5",
@@ -65,19 +39,6 @@
         "topic": "wave-properties"
     },
     {
-        "id": "p6",
-        "question": "A converging lens can form which type of image?",
-        "options": [
-            "Only real images",
-            "Only virtual images",
-            "Both real and virtual images",
-            "Neither real nor virtual"
-        ],
-        "answer": "Both real and virtual images",
-        "explanation": "A convex (converging) lens forms a real image unless the object is within the focal length, then it forms a virtual image.",
-        "topic": "light-refraction"
-    },
-    {
         "id": "p7",
         "question": "An electrical component has a resistance of 10 Ω and a current of 2 A flowing through it. What is the voltage across it?",
         "options": [
@@ -91,30 +52,82 @@
         "topic": "electric-circuits"
     },
     {
-        "id": "p8",
-        "question": "In a series circuit, what remains the same at all points?",
+        "id": "p95",
+        "question": "Radioactivity is the:",
         "options": [
-            "Voltage",
-            "Resistance",
-            "Current",
-            "Power"
+            "spontaneous emission of radiation from unstable nuclei",
+            "emission of light by hot objects",
+            "bending of light",
+            "transfer of heat"
         ],
-        "answer": "Current",
-        "explanation": "In a series circuit, there is only one path, so the current is identical throughout the circuit.",
-        "topic": "electric-circuits"
+        "answer": "spontaneous emission of radiation from unstable nuclei",
+        "explanation": "Unstable nuclei decay spontaneously emitting radiation.",
+        "topic": "radioactivity"
     },
     {
-        "id": "p9",
-        "question": "A radioactive substance has a half-life of 20 minutes. If the initial activity is 800 Bq, what will it be after 1 hour?",
+        "id": "p2",
+        "question": "What does the area under a velocity-time graph represent?",
         "options": [
-            "400 Bq",
-            "200 Bq",
-            "100 Bq",
-            "50 Bq"
+            "Speed",
+            "Acceleration",
+            "Displacement",
+            "Time"
         ],
-        "answer": "100 Bq",
-        "explanation": "1 hour = 3 half-lives. 800 -> 400 -> 200 -> 100 Bq.",
-        "topic": "radioactivity"
+        "answer": "Displacement",
+        "explanation": "The area under a velocity-time graph is equal to the total displacement of the object.",
+        "topic": "motion-graphs"
+    },
+    {
+        "id": "p4",
+        "question": "According to Boyle's Law, if the volume of a gas is halved (at constant temperature), the pressure will:",
+        "options": [
+            "Be halved",
+            "Stay the same",
+            "Double",
+            "Quadruple"
+        ],
+        "answer": "Double",
+        "explanation": "P and V are inversely proportional (P1V1 = P2V2). If V is halved, P must double.",
+        "topic": "gas-laws"
+    },
+    {
+        "id": "p12",
+        "question": "Refractive index (n) is defined as:",
+        "options": [
+            "sin r / sin i",
+            "sin i / sin r",
+            "i / r",
+            "r / i"
+        ],
+        "answer": "sin i / sin r",
+        "explanation": "Snell's Law: n = sin(angle of incidence) / sin(angle of refraction).",
+        "topic": "light-refraction"
+    },
+    {
+        "id": "p87",
+        "question": "The magnetic field around a current-carrying conductor is:",
+        "options": [
+            "circular",
+            "linear",
+            "spiral",
+            "zero"
+        ],
+        "answer": "circular",
+        "explanation": "Right-hand grip rule gives circular field lines.",
+        "topic": "magnetism-and-electromagnetism"
+    },
+    {
+        "id": "p138",
+        "question": "In Thomson's model of the atom, the atom was pictured as:",
+        "options": [
+            "electrons embedded in a ball of positive charge",
+            "a tiny dense nucleus with electrons orbiting it",
+            "a solid, indestructible sphere with no internal structure",
+            "mostly empty space with a nucleus at the centre"
+        ],
+        "answer": "electrons embedded in a ball of positive charge",
+        "explanation": "Dalton pictured a solid sphere, Thomson the plum-pudding model with electrons set in positive charge, and Rutherford's alpha-particle scattering showed instead that the positive charge is concentrated in a tiny nucleus.",
+        "topic": "nuclear-modern-atom"
     },
     {
         "id": "p10",
@@ -143,604 +156,6 @@
         "topic": "specific-and-latent-heat"
     },
     {
-        "id": "p12",
-        "question": "Refractive index (n) is defined as:",
-        "options": [
-            "sin r / sin i",
-            "sin i / sin r",
-            "i / r",
-            "r / i"
-        ],
-        "answer": "sin i / sin r",
-        "explanation": "Snell's Law: n = sin(angle of incidence) / sin(angle of refraction).",
-        "topic": "light-refraction"
-    },
-    {
-        "id": "p13",
-        "question": "Which of the following is a vector quantity?",
-        "options": [
-            "Velocity",
-            "Speed",
-            "Distance",
-            "Mass"
-        ],
-        "answer": "Velocity",
-        "explanation": "Velocity has both magnitude and direction.",
-        "topic": "scalars-vectors"
-    },
-    {
-        "id": "p14",
-        "question": "A car accelerates from rest to 20 m/s in 5 s. What is its acceleration?",
-        "options": [
-            "4 m/s²",
-            "5 m/s²",
-            "100 m/s²",
-            "0.25 m/s²"
-        ],
-        "answer": "4 m/s²",
-        "explanation": "a = (v-u)/t = (20-0)/5 = 4 m/s².",
-        "topic": "motion-graphs"
-    },
-    {
-        "id": "p15",
-        "question": "The SI unit of force is the:",
-        "options": [
-            "newton",
-            "joule",
-            "watt",
-            "pascal"
-        ],
-        "answer": "newton",
-        "explanation": "Force is measured in newtons (N).",
-        "topic": "forces-and-newtons-laws"
-    },
-    {
-        "id": "p16",
-        "question": "A force of 10 N acts on a mass of 2 kg. What is the acceleration?",
-        "options": [
-            "5 m/s²",
-            "20 m/s²",
-            "0.2 m/s²",
-            "8 m/s²"
-        ],
-        "answer": "5 m/s²",
-        "explanation": "F = ma → a = 10/2 = 5 m/s².",
-        "topic": "forces-and-newtons-laws"
-    },
-    {
-        "id": "p17",
-        "question": "Momentum is calculated as:",
-        "options": [
-            "mass × velocity",
-            "mass × acceleration",
-            "force × distance",
-            "mass × speed ÷ time"
-        ],
-        "answer": "mass × velocity",
-        "explanation": "Momentum p = mv.",
-        "topic": "forces-and-newtons-laws"
-    },
-    {
-        "id": "p18",
-        "question": "The kinetic energy of a 2 kg object moving at 3 m/s is:",
-        "options": [
-            "9 J",
-            "6 J",
-            "18 J",
-            "12 J"
-        ],
-        "answer": "9 J",
-        "explanation": "KE = ½mv² = ½ × 2 × 9 = 9 J.",
-        "topic": "work-energy-and-power"
-    },
-    {
-        "id": "p19",
-        "question": "The gravitational potential energy gained by a 5 kg mass raised 4 m (g = 10 m/s²) is:",
-        "options": [
-            "200 J",
-            "20 J",
-            "50 J",
-            "100 J"
-        ],
-        "answer": "200 J",
-        "explanation": "GPE = mgh = 5 × 10 × 4 = 200 J.",
-        "topic": "work-energy-and-power"
-    },
-    {
-        "id": "p20",
-        "question": "The law of conservation of energy states that energy:",
-        "options": [
-            "cannot be created or destroyed",
-            "is always created",
-            "can be destroyed",
-            "exists only as heat"
-        ],
-        "answer": "cannot be created or destroyed",
-        "explanation": "Energy is conserved — only converted between forms.",
-        "topic": "work-energy-and-power"
-    },
-    {
-        "id": "p21",
-        "question": "Which of the following is NOT a renewable energy source?",
-        "options": [
-            "Coal",
-            "Solar",
-            "Wind",
-            "Hydroelectric"
-        ],
-        "answer": "Coal",
-        "explanation": "Coal is a fossil fuel, which is non-renewable.",
-        "topic": "work-energy-and-power"
-    },
-    {
-        "id": "p22",
-        "question": "Power is defined as:",
-        "options": [
-            "work done per unit time",
-            "force per unit area",
-            "energy stored",
-            "mass per unit volume"
-        ],
-        "answer": "work done per unit time",
-        "explanation": "Power = work/time, measured in watts.",
-        "topic": "work-energy-and-power"
-    },
-    {
-        "id": "p23",
-        "question": "A machine does 600 J of work in 10 s. Its power output is:",
-        "options": [
-            "60 W",
-            "600 W",
-            "6 W",
-            "6000 W"
-        ],
-        "answer": "60 W",
-        "explanation": "P = 600/10 = 60 W.",
-        "topic": "work-energy-and-power"
-    },
-    {
-        "id": "p24",
-        "question": "The efficiency of a machine is:",
-        "options": [
-            "useful output ÷ input × 100%",
-            "input ÷ output",
-            "output × input",
-            "input - output"
-        ],
-        "answer": "useful output ÷ input × 100%",
-        "explanation": "Efficiency = (useful energy out / energy in) × 100%.",
-        "topic": "work-energy-and-power"
-    },
-    {
-        "id": "p25",
-        "question": "Which simple machine is a ramp?",
-        "options": [
-            "Inclined plane",
-            "Lever",
-            "Pulley",
-            "Wheel and axle"
-        ],
-        "answer": "Inclined plane",
-        "explanation": "A ramp is an inclined plane that reduces the force needed.",
-        "topic": "work-energy-and-power"
-    },
-    {
-        "id": "p26",
-        "question": "Pressure is defined as:",
-        "options": [
-            "force per unit area",
-            "force × area",
-            "area per unit force",
-            "mass per unit area"
-        ],
-        "answer": "force per unit area",
-        "explanation": "Pressure = F/A, unit pascal.",
-        "topic": "fluid-pressure-and-upthrust"
-    },
-    {
-        "id": "p27",
-        "question": "A force of 50 N acts on an area of 2 m². The pressure is:",
-        "options": [
-            "25 Pa",
-            "100 Pa",
-            "52 Pa",
-            "48 Pa"
-        ],
-        "answer": "25 Pa",
-        "explanation": "P = 50/2 = 25 Pa.",
-        "topic": "fluid-pressure-and-upthrust"
-    },
-    {
-        "id": "p28",
-        "question": "In liquids, pressure:",
-        "options": [
-            "increases with depth",
-            "decreases with depth",
-            "is constant",
-            "is zero at all depths"
-        ],
-        "answer": "increases with depth",
-        "explanation": "Liquid pressure = hρg, increasing with depth.",
-        "topic": "fluid-pressure-and-upthrust"
-    },
-    {
-        "id": "p29",
-        "question": "The upthrust on an object in a fluid is described by:",
-        "options": [
-            "Archimedes' principle",
-            "Newton's first law",
-            "Boyle's law",
-            "Pascal's law"
-        ],
-        "answer": "Archimedes' principle",
-        "explanation": "Archimedes' principle: upthrust equals weight of displaced fluid.",
-        "topic": "fluid-pressure-and-upthrust"
-    },
-    {
-        "id": "p30",
-        "question": "An object floats when:",
-        "options": [
-            "its density is less than the fluid's",
-            "its density is greater",
-            "it is fully submerged always",
-            "its weight is zero"
-        ],
-        "answer": "its density is less than the fluid's",
-        "explanation": "Floating requires the object's density < fluid density.",
-        "topic": "fluid-pressure-and-upthrust"
-    },
-    {
-        "id": "p31",
-        "question": "A hydraulic press works on:",
-        "options": [
-            "Pascal's principle",
-            "Archimedes' principle",
-            "Bernoulli's principle",
-            "Newton's second law"
-        ],
-        "answer": "Pascal's principle",
-        "explanation": "Pascal's principle: pressure transmitted equally in a fluid.",
-        "topic": "fluid-pressure-and-upthrust"
-    },
-    {
-        "id": "p32",
-        "question": "The temperature of boiling water at standard pressure is:",
-        "options": [
-            "100°C",
-            "0°C",
-            "212°C",
-            "50°C"
-        ],
-        "answer": "100°C",
-        "explanation": "Water boils at 100°C at standard atmospheric pressure.",
-        "topic": "temperature-heat"
-    },
-    {
-        "id": "p33",
-        "question": "Heat transfer by the movement of fluids is called:",
-        "options": [
-            "convection",
-            "conduction",
-            "radiation",
-            "insulation"
-        ],
-        "answer": "convection",
-        "explanation": "Convection involves bulk movement of heated fluid.",
-        "topic": "temperature-heat"
-    },
-    {
-        "id": "p34",
-        "question": "Which method of heat transfer does NOT require a medium?",
-        "options": [
-            "Radiation",
-            "Conduction",
-            "Convection",
-            "All require a medium"
-        ],
-        "answer": "Radiation",
-        "explanation": "Radiation transfers heat by electromagnetic waves.",
-        "topic": "temperature-heat"
-    },
-    {
-        "id": "p35",
-        "question": "Which colour surface is the best absorber of radiation?",
-        "options": [
-            "Black",
-            "White",
-            "Silver",
-            "Red"
-        ],
-        "answer": "Black",
-        "explanation": "Black surfaces absorb and emit radiation best.",
-        "topic": "temperature-heat"
-    },
-    {
-        "id": "p36",
-        "question": "Specific heat capacity is the energy needed to:",
-        "options": [
-            "raise 1 kg of a substance by 1°C",
-            "melt 1 kg",
-            "boil 1 kg",
-            "freeze 1 kg"
-        ],
-        "answer": "raise 1 kg of a substance by 1°C",
-        "explanation": "c = Q/(mΔT), unit J/kg°C.",
-        "topic": "specific-and-latent-heat"
-    },
-    {
-        "id": "p37",
-        "question": "How much heat is needed to raise 2 kg of water by 5°C? (c = 4200 J/kg°C)",
-        "options": [
-            "42000 J",
-            "4200 J",
-            "8400 J",
-            "21000 J"
-        ],
-        "answer": "42000 J",
-        "explanation": "Q = mcΔT = 2 × 4200 × 5 = 42000 J.",
-        "topic": "specific-and-latent-heat"
-    },
-    {
-        "id": "p38",
-        "question": "Latent heat is the energy absorbed during:",
-        "options": [
-            "a change of state at constant temperature",
-            "a temperature rise",
-            "chemical reaction only",
-            "melting always"
-        ],
-        "answer": "a change of state at constant temperature",
-        "explanation": "Latent heat changes state without changing temperature.",
-        "topic": "specific-and-latent-heat"
-    },
-    {
-        "id": "p39",
-        "question": "The specific latent heat of fusion relates to:",
-        "options": [
-            "melting/freezing",
-            "boiling/condensing",
-            "sublimation",
-            "expansion"
-        ],
-        "answer": "melting/freezing",
-        "explanation": "Fusion = solid ↔ liquid change.",
-        "topic": "specific-and-latent-heat"
-    },
-    {
-        "id": "p40",
-        "question": "The linear expansivity of a material measures:",
-        "options": [
-            "how much it expands when heated",
-            "how dense it is",
-            "how it conducts heat",
-            "its melting point"
-        ],
-        "answer": "how much it expands when heated",
-        "explanation": "Linear expansivity = fractional length change per degree.",
-        "topic": "specific-and-latent-heat"
-    },
-    {
-        "id": "p41",
-        "question": "Why do railway tracks have expansion gaps?",
-        "options": [
-            "To allow for expansion in heat",
-            "To save metal",
-            "For decoration",
-            "To prevent theft"
-        ],
-        "answer": "To allow for expansion in heat",
-        "explanation": "Gaps prevent buckling when rails expand on hot days.",
-        "topic": "specific-and-latent-heat"
-    },
-    {
-        "id": "p42",
-        "question": "A bimetallic strip bends when heated because:",
-        "options": [
-            "the two metals expand at different rates",
-            "it is magnetic",
-            "it is painted black",
-            "metals contract when heated"
-        ],
-        "answer": "the two metals expand at different rates",
-        "explanation": "Different expansivities cause differential bending.",
-        "topic": "specific-and-latent-heat"
-    },
-    {
-        "id": "p43",
-        "question": "A wave transfers:",
-        "options": [
-            "energy",
-            "matter",
-            "mass",
-            "charge always"
-        ],
-        "answer": "energy",
-        "explanation": "Waves transfer energy without transferring matter.",
-        "topic": "wave-properties"
-    },
-    {
-        "id": "p44",
-        "question": "The distance between two successive crests is the:",
-        "options": [
-            "wavelength",
-            "frequency",
-            "amplitude",
-            "period"
-        ],
-        "answer": "wavelength",
-        "explanation": "Wavelength λ is the distance between successive crests.",
-        "topic": "wave-properties"
-    },
-    {
-        "id": "p45",
-        "question": "The number of waves passing a point per second is the:",
-        "options": [
-            "frequency",
-            "amplitude",
-            "wavelength",
-            "speed"
-        ],
-        "answer": "frequency",
-        "explanation": "Frequency f is measured in hertz.",
-        "topic": "wave-properties"
-    },
-    {
-        "id": "p46",
-        "question": "A wave has frequency 20 Hz and wavelength 5 m. Its speed is:",
-        "options": [
-            "100 m/s",
-            "4 m/s",
-            "25 m/s",
-            "15 m/s"
-        ],
-        "answer": "100 m/s",
-        "explanation": "v = fλ = 20 × 5 = 100 m/s.",
-        "topic": "wave-properties"
-    },
-    {
-        "id": "p47",
-        "question": "Which is a longitudinal wave?",
-        "options": [
-            "Sound",
-            "Light",
-            "Water",
-            "Radio"
-        ],
-        "answer": "Sound",
-        "explanation": "Sound waves compress and rarefy along the direction of travel.",
-        "topic": "wave-properties"
-    },
-    {
-        "id": "p48",
-        "question": "The amplitude of a wave is:",
-        "options": [
-            "maximum displacement from rest",
-            "distance between crests",
-            "number of waves per second",
-            "time for one wave"
-        ],
-        "answer": "maximum displacement from rest",
-        "explanation": "Amplitude is the maximum displacement.",
-        "topic": "wave-properties"
-    },
-    {
-        "id": "p49",
-        "question": "The frequency of a wave with period 0.5 s is:",
-        "options": [
-            "2 Hz",
-            "0.5 Hz",
-            "5 Hz",
-            "50 Hz"
-        ],
-        "answer": "2 Hz",
-        "explanation": "f = 1/T = 1/0.5 = 2 Hz.",
-        "topic": "wave-properties"
-    },
-    {
-        "id": "p50",
-        "question": "Sound cannot travel through:",
-        "options": [
-            "a vacuum",
-            "air",
-            "water",
-            "steel"
-        ],
-        "answer": "a vacuum",
-        "explanation": "Sound needs a medium; a vacuum has no particles.",
-        "topic": "wave-properties"
-    },
-    {
-        "id": "p51",
-        "question": "The speed of sound in air is approximately:",
-        "options": [
-            "340 m/s",
-            "1500 m/s",
-            "3 × 10⁸ m/s",
-            "34 m/s"
-        ],
-        "answer": "340 m/s",
-        "explanation": "Sound travels at about 340 m/s in air.",
-        "topic": "sound-and-the-em-spectrum"
-    },
-    {
-        "id": "p52",
-        "question": "The phenomenon where sound bounces off a surface is:",
-        "options": [
-            "echo",
-            "refraction",
-            "diffraction",
-            "resonance"
-        ],
-        "answer": "echo",
-        "explanation": "An echo is reflected sound.",
-        "topic": "wave-properties"
-    },
-    {
-        "id": "p53",
-        "question": "Pitch is related to the ___ of a sound wave.",
-        "options": [
-            "frequency",
-            "amplitude",
-            "speed",
-            "wavelength only"
-        ],
-        "answer": "frequency",
-        "explanation": "Higher frequency → higher pitch.",
-        "topic": "sound-and-the-em-spectrum"
-    },
-    {
-        "id": "p54",
-        "question": "Loudness depends on the ___ of a sound wave.",
-        "options": [
-            "amplitude",
-            "frequency",
-            "speed",
-            "phase"
-        ],
-        "answer": "amplitude",
-        "explanation": "Greater amplitude → louder sound.",
-        "topic": "sound-and-the-em-spectrum"
-    },
-    {
-        "id": "p55",
-        "question": "Which region of the electromagnetic spectrum has the highest frequency?",
-        "options": [
-            "Gamma rays",
-            "Radio waves",
-            "Visible light",
-            "Microwaves"
-        ],
-        "answer": "Gamma rays",
-        "explanation": "Gamma rays have the shortest wavelength and highest frequency.",
-        "topic": "sound-and-the-em-spectrum"
-    },
-    {
-        "id": "p56",
-        "question": "Visible light is a form of:",
-        "options": [
-            "electromagnetic radiation",
-            "sound",
-            "mechanical wave",
-            "particle only"
-        ],
-        "answer": "electromagnetic radiation",
-        "explanation": "Light is an electromagnetic wave.",
-        "topic": "wave-properties"
-    },
-    {
-        "id": "p57",
-        "question": "The speed of light in a vacuum is:",
-        "options": [
-            "3 × 10⁸ m/s",
-            "340 m/s",
-            "3 × 10⁶ m/s",
-            "1.5 × 10⁸ m/s"
-        ],
-        "answer": "3 × 10⁸ m/s",
-        "explanation": "c ≈ 3 × 10⁸ m/s.",
-        "topic": "sound-and-the-em-spectrum"
-    },
-    {
         "id": "p58",
         "question": "The law of reflection states that the angle of incidence:",
         "options": [
@@ -752,266 +167,6 @@
         "answer": "equals the angle of reflection",
         "explanation": "Angle of incidence = angle of reflection.",
         "topic": "reflection-and-total-internal-reflection"
-    },
-    {
-        "id": "p59",
-        "question": "An image formed by a plane mirror is:",
-        "options": [
-            "virtual, upright, same size",
-            "real, inverted, magnified",
-            "virtual, inverted",
-            "real, upright"
-        ],
-        "answer": "virtual, upright, same size",
-        "explanation": "Plane mirror images are virtual and laterally inverted.",
-        "topic": "reflection-and-total-internal-reflection"
-    },
-    {
-        "id": "p60",
-        "question": "The bending of light when it passes into a different medium is:",
-        "options": [
-            "refraction",
-            "reflection",
-            "diffraction",
-            "absorption"
-        ],
-        "answer": "refraction",
-        "explanation": "Refraction occurs due to speed change at the boundary.",
-        "topic": "light-refraction"
-    },
-    {
-        "id": "p61",
-        "question": "Which of these can form a real image?",
-        "options": [
-            "Converging lens",
-            "Plane mirror",
-            "Convex mirror",
-            "Concave mirror only when object is close"
-        ],
-        "answer": "Converging lens",
-        "explanation": "Convex (converging) lenses can form real, inverted images.",
-        "topic": "light-refraction"
-    },
-    {
-        "id": "p62",
-        "question": "The focal length of a converging lens is the distance from the lens to:",
-        "options": [
-            "the principal focus",
-            "the object",
-            "the screen",
-            "the centre of curvature"
-        ],
-        "answer": "the principal focus",
-        "explanation": "Focal length f is from lens to focus.",
-        "topic": "light-refraction"
-    },
-    {
-        "id": "p63",
-        "question": "A diverging lens is also called a:",
-        "options": [
-            "concave lens",
-            "convex lens",
-            "converging lens",
-            "magnifying lens"
-        ],
-        "answer": "concave lens",
-        "explanation": "Diverging lenses are concave.",
-        "topic": "light-refraction"
-    },
-    {
-        "id": "p64",
-        "question": "Refractive index is the ratio of:",
-        "options": [
-            "speed of light in vacuum to speed in medium",
-            "frequency to wavelength",
-            "angle to distance",
-            "mass to volume"
-        ],
-        "answer": "speed of light in vacuum to speed in medium",
-        "explanation": "n = c/v.",
-        "topic": "light-refraction"
-    },
-    {
-        "id": "p65",
-        "question": "The critical angle is the angle of incidence that produces:",
-        "options": [
-            "an angle of refraction of 90°",
-            "zero refraction",
-            "total internal reflection always",
-            "a virtual image"
-        ],
-        "answer": "an angle of refraction of 90°",
-        "explanation": "Beyond the critical angle, total internal reflection occurs.",
-        "topic": "reflection-and-total-internal-reflection"
-    },
-    {
-        "id": "p66",
-        "question": "Optical fibres use ___ to transmit light.",
-        "options": [
-            "total internal reflection",
-            "refraction only",
-            "diffraction",
-            "dispersion"
-        ],
-        "answer": "total internal reflection",
-        "explanation": "Total internal reflection keeps light inside the fibre.",
-        "topic": "reflection-and-total-internal-reflection"
-    },
-    {
-        "id": "p67",
-        "question": "Which colour of light has the longest wavelength in the visible spectrum?",
-        "options": [
-            "Red",
-            "Violet",
-            "Blue",
-            "Green"
-        ],
-        "answer": "Red",
-        "explanation": "Red has the longest wavelength; violet the shortest.",
-        "topic": "light-refraction"
-    },
-    {
-        "id": "p68",
-        "question": "A prism splits white light into colours because:",
-        "options": [
-            "different colours refract by different amounts",
-            "it reflects colours",
-            "it absorbs white light",
-            "colours move at different speeds in air"
-        ],
-        "answer": "different colours refract by different amounts",
-        "explanation": "Dispersion occurs due to different refractive indices per colour.",
-        "topic": "reflection-and-total-internal-reflection"
-    },
-    {
-        "id": "p69",
-        "question": "The unit of electric current is the:",
-        "options": [
-            "ampere",
-            "volt",
-            "ohm",
-            "watt"
-        ],
-        "answer": "ampere",
-        "explanation": "Current is measured in amperes (A).",
-        "topic": "electric-circuits"
-    },
-    {
-        "id": "p70",
-        "question": "Current is the rate of flow of:",
-        "options": [
-            "charge",
-            "energy",
-            "voltage",
-            "resistance"
-        ],
-        "answer": "charge",
-        "explanation": "I = Q/t; charge flows in coulombs per second.",
-        "topic": "electric-circuits"
-    },
-    {
-        "id": "p71",
-        "question": "A current of 2 A flows for 10 s. The charge passed is:",
-        "options": [
-            "20 C",
-            "5 C",
-            "0.2 C",
-            "12 C"
-        ],
-        "answer": "20 C",
-        "explanation": "Q = It = 2 × 10 = 20 C.",
-        "topic": "electric-circuits"
-    },
-    {
-        "id": "p72",
-        "question": "Potential difference is measured in:",
-        "options": [
-            "volts",
-            "amperes",
-            "ohms",
-            "coulombs"
-        ],
-        "answer": "volts",
-        "explanation": "Voltage (p.d.) is measured in volts.",
-        "topic": "electric-circuits"
-    },
-    {
-        "id": "p73",
-        "question": "Ohm's Law states that:",
-        "options": [
-            "V = IR",
-            "V = I/R",
-            "V = R/I",
-            "V = I²R"
-        ],
-        "answer": "V = IR",
-        "explanation": "Voltage = current × resistance.",
-        "topic": "electric-circuits"
-    },
-    {
-        "id": "p74",
-        "question": "A resistor of 4 Ω carries a current of 3 A. The p.d. across it is:",
-        "options": [
-            "12 V",
-            "7 V",
-            "1.33 V",
-            "81 V"
-        ],
-        "answer": "12 V",
-        "explanation": "V = IR = 3 × 4 = 12 V.",
-        "topic": "electric-circuits"
-    },
-    {
-        "id": "p75",
-        "question": "Resistance is measured in:",
-        "options": [
-            "ohms",
-            "volts",
-            "watts",
-            "amperes"
-        ],
-        "answer": "ohms",
-        "explanation": "Resistance unit is the ohm (Ω).",
-        "topic": "electric-circuits"
-    },
-    {
-        "id": "p76",
-        "question": "In a series circuit, the total resistance is:",
-        "options": [
-            "the sum of individual resistances",
-            "the smallest resistance",
-            "the largest resistance",
-            "zero"
-        ],
-        "answer": "the sum of individual resistances",
-        "explanation": "R_total = R₁ + R₂ + ... in series.",
-        "topic": "electric-circuits"
-    },
-    {
-        "id": "p77",
-        "question": "In a parallel circuit, the potential difference across each branch is:",
-        "options": [
-            "the same",
-            "different",
-            "zero",
-            "half the total"
-        ],
-        "answer": "the same",
-        "explanation": "Parallel branches share the same p.d.",
-        "topic": "electric-circuits"
-    },
-    {
-        "id": "p78",
-        "question": "The heating effect of current is used in:",
-        "options": [
-            "electric kettle",
-            "electric fan",
-            "battery charger",
-            "transformer"
-        ],
-        "answer": "electric kettle",
-        "explanation": "Kettles use resistive heating elements.",
-        "topic": "electrical-power-and-safety"
     },
     {
         "id": "p79",
@@ -1027,186 +182,69 @@
         "topic": "electrical-power-and-safety"
     },
     {
-        "id": "p80",
-        "question": "An appliance draws 5 A at 240 V. Its power is:",
+        "id": "p139",
+        "question": "In the Geiger–Marsden experiment, a few alpha particles were deflected back towards the source. This showed that:",
         "options": [
-            "1200 W",
-            "48 W",
-            "235 W",
-            "120 W"
+            "the positive charge is concentrated in a tiny, dense nucleus",
+            "the atom is a solid sphere of positive charge",
+            "electrons are much lighter than alpha particles",
+            "gold foil reflects alpha particles like a mirror"
         ],
-        "answer": "1200 W",
-        "explanation": "P = 240 × 5 = 1200 W.",
-        "topic": "electrical-power-and-safety"
+        "answer": "the positive charge is concentrated in a tiny, dense nucleus",
+        "explanation": "A close approach to a concentrated positive charge is needed to turn an alpha particle right round. Most particles passed straight through, so the atom is mostly empty space, but the few that came back show the nucleus is tiny and positively charged.",
+        "topic": "nuclear-geiger-marsden"
     },
     {
-        "id": "p81",
-        "question": "Electrical energy is measured in:",
+        "id": "p18",
+        "question": "The kinetic energy of a 2 kg object moving at 3 m/s is:",
         "options": [
-            "kilowatt-hours",
-            "watts",
-            "volts",
-            "amperes"
+            "9 J",
+            "6 J",
+            "18 J",
+            "12 J"
         ],
-        "answer": "kilowatt-hours",
-        "explanation": "Bills are based on kWh of energy.",
-        "topic": "electrical-power-and-safety"
+        "answer": "9 J",
+        "explanation": "KE = ½mv² = ½ × 2 × 9 = 9 J.",
+        "topic": "work-energy-and-power"
     },
     {
-        "id": "p82",
-        "question": "A 1 kW appliance runs for 3 hours. The energy used is:",
+        "id": "p111",
+        "question": "What makes a clinical thermometer different from a laboratory thermometer?",
         "options": [
-            "3 kWh",
-            "1 kWh",
-            "4 kWh",
-            "0.33 kWh"
+            "It has a constriction that holds the highest reading",
+            "It has no scale",
+            "It uses alcohol, which boils at 78 °C",
+            "It measures temperature only in kelvin"
         ],
-        "answer": "3 kWh",
-        "explanation": "Energy = power × time = 1 × 3 = 3 kWh.",
-        "topic": "electrical-power-and-safety"
+        "answer": "It has a constriction that holds the highest reading",
+        "explanation": "A clinical thermometer covers about 35 °C to 42 °C and has a constriction above the bulb, so the thread of liquid stays at the highest reading until it is shaken down.",
+        "topic": "thermal-thermometers-and-thermometric-properties"
     },
     {
-        "id": "p83",
-        "question": "Fuses protect circuits by:",
+        "id": "p51",
+        "question": "The speed of sound in air is approximately:",
         "options": [
-            "melting when current is too high",
-            "storing charge",
-            "reducing voltage",
-            "increasing resistance"
+            "340 m/s",
+            "1500 m/s",
+            "3 × 10⁸ m/s",
+            "34 m/s"
         ],
-        "answer": "melting when current is too high",
-        "explanation": "The fuse wire melts, breaking the circuit at excess current.",
-        "topic": "electrical-power-and-safety"
+        "answer": "340 m/s",
+        "explanation": "Sound travels at about 340 m/s in air.",
+        "topic": "sound-and-the-em-spectrum"
     },
     {
-        "id": "p84",
-        "question": "Earthing a metal appliance:",
+        "id": "p124",
+        "question": "A polythene rod becomes negatively charged when it is rubbed with a dry cloth because the rod:",
         "options": [
-            "prevents electric shock by directing current to ground",
-            "increases current",
-            "reduces voltage",
-            "is for decoration"
+            "gains electrons from the cloth",
+            "loses electrons to the cloth",
+            "gains protons from the cloth",
+            "loses protons to the cloth"
         ],
-        "answer": "prevents electric shock by directing current to ground",
-        "explanation": "Earth wire provides a low-resistance path for fault current.",
-        "topic": "electrical-power-and-safety"
-    },
-    {
-        "id": "p85",
-        "question": "The SI unit of magnetic flux density is the:",
-        "options": [
-            "tesla",
-            "weber",
-            "henry",
-            "gauss only"
-        ],
-        "answer": "tesla",
-        "explanation": "Magnetic flux density B is measured in tesla (T).",
-        "topic": "magnetism-and-electromagnetism"
-    },
-    {
-        "id": "p86",
-        "question": "Which material is easily magnetised?",
-        "options": [
-            "Iron",
-            "Copper",
-            "Aluminium",
-            "Plastic"
-        ],
-        "answer": "Iron",
-        "explanation": "Iron is ferromagnetic and easily magnetised.",
-        "topic": "magnetism-and-electromagnetism"
-    },
-    {
-        "id": "p87",
-        "question": "The magnetic field around a current-carrying conductor is:",
-        "options": [
-            "circular",
-            "linear",
-            "spiral",
-            "zero"
-        ],
-        "answer": "circular",
-        "explanation": "Right-hand grip rule gives circular field lines.",
-        "topic": "magnetism-and-electromagnetism"
-    },
-    {
-        "id": "p88",
-        "question": "An electromagnet is made by:",
-        "options": [
-            "coiling wire around an iron core",
-            "wrapping copper wire only",
-            "using a permanent magnet",
-            "connecting two batteries"
-        ],
-        "answer": "coiling wire around an iron core",
-        "explanation": "Current in a coil around soft iron creates a strong magnet.",
-        "topic": "magnetism-and-electromagnetism"
-    },
-    {
-        "id": "p89",
-        "question": "Electromagnetic induction produces:",
-        "options": [
-            "an e.m.f. in a conductor",
-            "permanent magnets",
-            "chemical energy",
-            "sound"
-        ],
-        "answer": "an e.m.f. in a conductor",
-        "explanation": "A changing magnetic field induces an e.m.f.",
-        "topic": "magnetism-and-electromagnetism"
-    },
-    {
-        "id": "p90",
-        "question": "Which of the following increases induced e.m.f.?",
-        "options": [
-            "Faster movement of magnet",
-            "Slower movement",
-            "Weaker magnet",
-            "Removing the coil"
-        ],
-        "answer": "Faster movement of magnet",
-        "explanation": "Faster flux change induces greater e.m.f.",
-        "topic": "magnetism-and-electromagnetism"
-    },
-    {
-        "id": "p91",
-        "question": "Transformers work on:",
-        "options": [
-            "alternating current",
-            "direct current",
-            "static charge",
-            "magnetic monopoles"
-        ],
-        "answer": "alternating current",
-        "explanation": "Transformers require changing (AC) current.",
-        "topic": "magnetism-and-electromagnetism"
-    },
-    {
-        "id": "p92",
-        "question": "A step-up transformer:",
-        "options": [
-            "increases voltage, decreases current",
-            "increases current",
-            "decreases voltage only",
-            "stores energy"
-        ],
-        "answer": "increases voltage, decreases current",
-        "explanation": "More secondary turns → higher voltage, lower current.",
-        "topic": "magnetism-and-electromagnetism"
-    },
-    {
-        "id": "p93",
-        "question": "The turns ratio of a transformer is 10:1 (primary:secondary). If primary is 240 V, secondary is:",
-        "options": [
-            "24 V",
-            "2400 V",
-            "2.4 V",
-            "240 V"
-        ],
-        "answer": "24 V",
-        "explanation": "Vs = Vp × Ns/Np = 240 × 1/10 = 24 V.",
-        "topic": "magnetism-and-electromagnetism"
+        "answer": "gains electrons from the cloth",
+        "explanation": "Rubbing two different insulators together transfers electrons from one to the other. The rod gains electrons, and by conservation of charge the cloth is left with an equal positive charge.",
+        "topic": "em-charging-by-friction-and-induction"
     },
     {
         "id": "p94",
@@ -1219,20 +257,579 @@
         ],
         "answer": "electrons",
         "explanation": "Atoms contain electrons orbiting the nucleus.",
-        "topic": "radioactivity"
+        "topic": "nuclear-atomic-composition"
     },
     {
-        "id": "p95",
-        "question": "Radioactivity is the:",
+        "id": "p26",
+        "question": "Pressure is defined as:",
         "options": [
-            "spontaneous emission of radiation from unstable nuclei",
-            "emission of light by hot objects",
-            "bending of light",
-            "transfer of heat"
+            "force per unit area",
+            "force × area",
+            "area per unit force",
+            "mass per unit area"
         ],
-        "answer": "spontaneous emission of radiation from unstable nuclei",
-        "explanation": "Unstable nuclei decay spontaneously emitting radiation.",
-        "topic": "radioactivity"
+        "answer": "force per unit area",
+        "explanation": "Pressure = F/A, unit pascal.",
+        "topic": "fluid-pressure-and-upthrust"
+    },
+    {
+        "id": "p32",
+        "question": "The temperature of boiling water at standard pressure is:",
+        "options": [
+            "100°C",
+            "0°C",
+            "212°C",
+            "50°C"
+        ],
+        "answer": "100°C",
+        "explanation": "Water boils at 100°C at standard atmospheric pressure.",
+        "topic": "thermal-temperature-scales-and-fixed-points"
+    },
+    {
+        "id": "p55",
+        "question": "Which region of the electromagnetic spectrum has the highest frequency?",
+        "options": [
+            "Gamma rays",
+            "Radio waves",
+            "Visible light",
+            "Microwaves"
+        ],
+        "answer": "Gamma rays",
+        "explanation": "Gamma rays have the shortest wavelength and highest frequency.",
+        "topic": "waves-sources-and-uses-of-electromagnetic-waves"
+    },
+    {
+        "id": "p125",
+        "question": "Two small charged spheres are a distance d apart. If the distance between them is doubled, the force between them becomes:",
+        "options": [
+            "one quarter as big",
+            "one half as big",
+            "twice as big",
+            "four times as big"
+        ],
+        "answer": "one quarter as big",
+        "explanation": "The force is proportional to the product of the charges and inversely proportional to the square of the distance, F ∝ 1/d². Doubling d divides the force by 2² = 4.",
+        "topic": "em-forces-between-charges"
+    },
+    {
+        "id": "p142",
+        "question": "A nuclide has a mass number of 235 and an atomic number of 92. How many neutrons are in its nucleus?",
+        "options": [
+            "143",
+            "235",
+            "92",
+            "327"
+        ],
+        "answer": "143",
+        "explanation": "Mass number = protons + neutrons and atomic number = protons, so neutrons = 235 − 92 = 143.",
+        "topic": "nuclear-nuclide-notation"
+    },
+    {
+        "id": "p102",
+        "question": "Galileo rolled balls down an inclined plane. His measurements showed that the distance travelled from rest is proportional to:",
+        "options": [
+            "the square of the time",
+            "the time",
+            "the square root of the time",
+            "the mass of the ball"
+        ],
+        "answer": "the square of the time",
+        "explanation": "Galileo found distance ∝ t², so a falling body accelerates. Slowing the fall on a gentle slope made it possible to time, which was the point of the experiment; the mass of the ball made no difference.",
+        "topic": "mech-scientific-method"
+    },
+    {
+        "id": "p112",
+        "question": "The jerky, random movement of smoke particles seen through a microscope in air is evidence that:",
+        "options": [
+            "the particles of a fluid are in constant random motion",
+            "smoke is heavier than air",
+            "air is a compound",
+            "smoke particles are electrically charged"
+        ],
+        "answer": "the particles of a fluid are in constant random motion",
+        "explanation": "This is Brownian motion: the visible smoke particles are knocked about by unequal collisions with the invisible, fast-moving air particles, so the air itself must be moving randomly.",
+        "topic": "thermal-states-of-matter"
+    },
+    {
+        "id": "p121",
+        "question": "Which behaviour of light was the evidence that settled the argument in favour of the wave theory?",
+        "options": [
+            "diffraction and interference",
+            "travel in straight lines",
+            "casting sharp shadows",
+            "having a finite speed"
+        ],
+        "answer": "diffraction and interference",
+        "explanation": "Particles travelling in straight lines can explain shadows, but only waves spread out from a narrow gap and overlap to form interference fringes. Newton's corpuscular theory could not explain them.",
+        "topic": "waves-theories-of-light"
+    },
+    {
+        "id": "p126",
+        "question": "The electric field between two parallel metal plates connected to a battery is:",
+        "options": [
+            "uniform, with parallel, equally spaced field lines",
+            "radial, with lines spreading out from the centre",
+            "zero everywhere between the plates",
+            "circular, closing round each plate"
+        ],
+        "answer": "uniform, with parallel, equally spaced field lines",
+        "explanation": "Between parallel plates the field lines are parallel and equally spaced, so the field is uniform and the force on a charge does not change as it moves. The field around a single point charge is radial instead.",
+        "topic": "em-electric-fields"
+    },
+    {
+        "id": "p144",
+        "question": "An element has 7 electrons in its outer shell. In which group of the Periodic Table does it belong?",
+        "options": [
+            "Group 7",
+            "Group 1",
+            "Group 2",
+            "Group 0"
+        ],
+        "answer": "Group 7",
+        "explanation": "The group number equals the number of electrons in the outer shell, and the period number equals the number of occupied shells.",
+        "topic": "nuclear-shell-model"
+    },
+    {
+        "id": "p103",
+        "question": "A student times 20 complete oscillations of a pendulum as 36.0 s. What is the period of the pendulum?",
+        "options": [
+            "1.8 s",
+            "0.56 s",
+            "3.6 s",
+            "720 s"
+        ],
+        "answer": "1.8 s",
+        "explanation": "Period = total time ÷ number of oscillations = 36.0 ÷ 20 = 1.8 s. Timing 20 oscillations and dividing cuts the reaction-time error to a twentieth of one reading.",
+        "topic": "mech-simple-pendulum"
+    },
+    {
+        "id": "p113",
+        "question": "In the electrical method for finding the specific heat capacity of a metal, the energy supplied by the heater is given by:",
+        "options": [
+            "VIt",
+            "VI",
+            "VIt²",
+            "V/t"
+        ],
+        "answer": "VIt",
+        "explanation": "Electrical energy = power × time = VI × t, so the energy supplied is VIt with the time in seconds. The block is lagged so that little of that energy escapes to the air.",
+        "topic": "thermal-determining-specific-heat-capacity"
+    },
+    {
+        "id": "p122",
+        "question": "In Young's double-slit experiment, a bright fringe appears on the screen where:",
+        "options": [
+            "waves from the two slits arrive in step and reinforce each other",
+            "the light from one slit is blocked",
+            "waves from the two slits arrive out of step and cancel",
+            "the screen is closest to the slits"
+        ],
+        "answer": "waves from the two slits arrive in step and reinforce each other",
+        "explanation": "The two slits behave as coherent sources: same frequency, staying in step. Where the path difference is a whole number of wavelengths the waves reinforce (constructive interference) and a bright fringe is formed.",
+        "topic": "waves-youngs-double-slit-experiment"
+    },
+    {
+        "id": "p127",
+        "question": "Aircraft are earthed to the fuel tanker while being refuelled in order to:",
+        "options": [
+            "let built-up static charge flow away before it can spark and ignite fuel vapour",
+            "keep the fuel cool during refuelling",
+            "charge the aircraft so dust cannot settle",
+            "stop the aircraft developing lightning"
+        ],
+        "answer": "let built-up static charge flow away before it can spark and ignite fuel vapour",
+        "explanation": "Earthing and bonding give the charge a safe path away, so no large charge builds up and no spark can jump across the vapour. A spark from static charge can ignite flammable vapour or dust.",
+        "topic": "em-static-charge-applications-and-hazards"
+    },
+    {
+        "id": "p145",
+        "question": "Which observation led Becquerel to the discovery of radioactivity?",
+        "options": [
+            "Uranium salts fogged a photographic plate even when kept in the dark",
+            "Radium glowed in the dark",
+            "X-rays came from a discharge tube",
+            "Atoms could be split by neutrons"
+        ],
+        "answer": "Uranium salts fogged a photographic plate even when kept in the dark",
+        "explanation": "Becquerel found that uranium salts fogged a wrapped photographic plate with no sunlight involved, so the radiation came from the uranium itself. Marie and Pierre Curie then separated polonium and radium from pitchblende in 1898.",
+        "topic": "nuclear-marie-curie"
+    },
+    {
+        "id": "p104",
+        "question": "Which instrument should be used to measure the diameter of a thin wire to the nearest 0.01 mm?",
+        "options": [
+            "A micrometer screw gauge",
+            "A vernier calliper",
+            "A metre rule",
+            "A measuring cylinder"
+        ],
+        "answer": "A micrometer screw gauge",
+        "explanation": "A metre rule reads to 1 mm, vernier callipers to 0.1 mm and a micrometer screw gauge to 0.01 mm, so only the micrometer has fine enough divisions for the wire.",
+        "topic": "mech-measurement-and-instruments"
+    },
+    {
+        "id": "p115",
+        "question": "A heater supplies 33 400 J to melt 0.10 kg of ice at 0 °C. What is the specific latent heat of fusion of ice?",
+        "options": [
+            "334 000 J/kg",
+            "3340 J/kg",
+            "33 400 J/kg",
+            "3 340 000 J/kg"
+        ],
+        "answer": "334 000 J/kg",
+        "explanation": "L = E ÷ m = 33 400 ÷ 0.10 = 334 000 J/kg. This is the energy needed to melt 1 kg of ice at 0 °C without any change in temperature.",
+        "topic": "thermal-determining-specific-latent-heat"
+    },
+    {
+        "id": "p123",
+        "question": "The image formed by a pinhole camera is:",
+        "options": [
+            "real and inverted",
+            "virtual and upright",
+            "real and upright",
+            "virtual and inverted"
+        ],
+        "answer": "real and inverted",
+        "explanation": "Light travels in straight lines, so the ray from the top of the object passes through the hole and lands at the bottom of the screen. The rays actually cross at the hole, so the image is real and inverted.",
+        "topic": "waves-rectilinear-propagation-of-light"
+    },
+    {
+        "id": "p91",
+        "question": "Transformers work on:",
+        "options": [
+            "alternating current",
+            "direct current",
+            "static charge",
+            "magnetic monopoles"
+        ],
+        "answer": "alternating current",
+        "explanation": "Transformers require changing (AC) current.",
+        "topic": "em-direct-and-alternating-current"
+    },
+    {
+        "id": "p146",
+        "question": "A narrow beam containing alpha and beta particles is passed between two oppositely charged plates. The beta particles:",
+        "options": [
+            "bend towards the positive plate, and more strongly than the alpha particles",
+            "bend towards the negative plate, and less strongly than the alpha particles",
+            "bend towards the positive plate, and less strongly than the alpha particles",
+            "pass between the plates without bending"
+        ],
+        "answer": "bend towards the positive plate, and more strongly than the alpha particles",
+        "explanation": "Beta particles are negative, so they are attracted to the positive plate. They are also much lighter than alpha particles, so for the same charge they are deflected far more.",
+        "topic": "nuclear-fields-on-emissions"
+    },
+    {
+        "id": "p30",
+        "question": "An object floats when:",
+        "options": [
+            "its density is less than the fluid's",
+            "its density is greater",
+            "it is fully submerged always",
+            "its weight is zero"
+        ],
+        "answer": "its density is less than the fluid's",
+        "explanation": "Floating requires the object's density < fluid density.",
+        "topic": "mech-density"
+    },
+    {
+        "id": "p117",
+        "question": "Evaporation cools the liquid that is left behind because:",
+        "options": [
+            "the fastest particles escape, so the average kinetic energy of those left falls",
+            "the liquid loses heat to the air by conduction only",
+            "the boiling point of the liquid falls",
+            "the remaining particles slow down when they collide"
+        ],
+        "answer": "the fastest particles escape, so the average kinetic energy of those left falls",
+        "explanation": "Only the most energetic particles have enough energy to escape from the surface, so the average kinetic energy of the particles remaining falls, and temperature measures that average.",
+        "topic": "thermal-evaporation-and-boiling"
+    },
+    {
+        "id": "p62",
+        "question": "The focal length of a converging lens is the distance from the lens to:",
+        "options": [
+            "the principal focus",
+            "the object",
+            "the screen",
+            "the centre of curvature"
+        ],
+        "answer": "the principal focus",
+        "explanation": "Focal length f is from lens to focus.",
+        "topic": "waves-focal-length-determination"
+    },
+    {
+        "id": "p129",
+        "question": "The terminal voltage of a cell falls below its electromotive force when a current flows because the cell has:",
+        "options": [
+            "internal resistance",
+            "no more charge left",
+            "too large an electromotive force",
+            "no potential difference"
+        ],
+        "answer": "internal resistance",
+        "explanation": "The cell's own resistance opposes the current inside it, so V = E − Ir. The bigger the current, the bigger the Ir lost inside the cell and the lower the terminal voltage.",
+        "topic": "em-primary-and-secondary-cells"
+    },
+    {
+        "id": "p148",
+        "question": "In alpha decay, how do the mass number and the atomic number of the nucleus change?",
+        "options": [
+            "The mass number falls by 4 and the atomic number falls by 2",
+            "The mass number falls by 2 and the atomic number falls by 4",
+            "Both are unchanged",
+            "The mass number falls by 4 and the atomic number is unchanged"
+        ],
+        "answer": "The mass number falls by 4 and the atomic number falls by 2",
+        "explanation": "An alpha particle is a helium nucleus, ₂⁴He, so it carries away 2 protons and 2 neutrons: A falls by 4 and Z falls by 2, and both sides of the nuclear equation still balance.",
+        "topic": "nuclear-reaction-equations"
+    },
+    {
+        "id": "p15",
+        "question": "The SI unit of force is the:",
+        "options": [
+            "newton",
+            "joule",
+            "watt",
+            "pascal"
+        ],
+        "answer": "newton",
+        "explanation": "Force is measured in newtons (N).",
+        "topic": "mech-derived-quantities-and-units"
+    },
+    {
+        "id": "p35",
+        "question": "Which colour surface is the best absorber of radiation?",
+        "options": [
+            "Black",
+            "White",
+            "Silver",
+            "Red"
+        ],
+        "answer": "Black",
+        "explanation": "Black surfaces absorb and emit radiation best.",
+        "topic": "thermal-absorption-and-emission-of-radiation"
+    },
+    {
+        "id": "p130",
+        "question": "A diode conducts a current when it is:",
+        "options": [
+            "forward biased",
+            "reverse biased",
+            "connected either way round",
+            "kept below room temperature"
+        ],
+        "answer": "forward biased",
+        "explanation": "A diode is a p–n junction: it conducts when it is forward biased and blocks current when it is reverse biased, which is what makes it useful as a rectifier.",
+        "topic": "em-semiconductor-diodes-and-rectification"
+    },
+    {
+        "id": "p150",
+        "question": "Which radio-isotope is used as a tracer in medical imaging because it emits gamma rays and has a short half-life?",
+        "options": [
+            "Technetium-99m",
+            "Carbon-14",
+            "Cobalt-60",
+            "Uranium-235"
+        ],
+        "answer": "Technetium-99m",
+        "explanation": "A tracer must emit radiation that escapes the body, and its short half-life means it decays away quickly afterwards. Cobalt-60 is used for radiotherapy and sterilising, carbon-14 for dating once-living material, and uranium-235 as a nuclear fuel.",
+        "topic": "nuclear-radioisotope-applications"
+    },
+    {
+        "id": "p105",
+        "question": "A force of 20 N acts at right angles on a spanner, 0.30 m from the nut. What is the moment of the force about the nut?",
+        "options": [
+            "6.0 N m",
+            "60 N m",
+            "0.015 N m",
+            "66.7 N m"
+        ],
+        "answer": "6.0 N m",
+        "explanation": "Moment = force × perpendicular distance from the pivot = 20 × 0.30 = 6.0 N m. The distance must be the perpendicular distance from the line of action to the pivot.",
+        "topic": "mech-turning-effects-and-moments"
+    },
+    {
+        "id": "p119",
+        "question": "The inside walls of a vacuum flask are silvered so that they:",
+        "options": [
+            "are poor emitters and poor absorbers of radiation",
+            "conduct heat away quickly",
+            "are strong enough to hold the vacuum",
+            "reflect light into the flask"
+        ],
+        "answer": "are poor emitters and poor absorbers of radiation",
+        "explanation": "A shiny silvered surface is a poor emitter and a poor absorber of radiation, and the air is pumped out of the space between the walls so there is nothing there to conduct or convect.",
+        "topic": "thermal-good-absorbers-and-emitters"
+    },
+    {
+        "id": "p132",
+        "question": "The inputs of an AND gate are 1 and 0. What is the output?",
+        "options": [
+            "0",
+            "1",
+            "10",
+            "It cannot be decided from the inputs"
+        ],
+        "answer": "0",
+        "explanation": "An AND gate gives an output of 1 only when both of its inputs are 1. With one input at 0 the output is 0, whatever the other input is.",
+        "topic": "em-logic-gates-and-truth-tables"
+    },
+    {
+        "id": "p151",
+        "question": "Which of these describes nuclear fission?",
+        "options": [
+            "A heavy nucleus absorbs a neutron and splits into two lighter nuclei, releasing energy",
+            "Two light nuclei join to form a heavier nucleus",
+            "A nucleus emits an alpha particle and becomes a different element",
+            "An atom loses electrons and becomes an ion"
+        ],
+        "answer": "A heavy nucleus absorbs a neutron and splits into two lighter nuclei, releasing energy",
+        "explanation": "Fission splits a heavy nucleus, and the small loss of mass (the mass defect) appears as energy. Fusion is the opposite process: hydrogen nuclei join to form helium and need extremely high temperatures.",
+        "topic": "nuclear-energy-from-reactions"
+    },
+    {
+        "id": "p107",
+        "question": "In which class of lever is the load between the pivot and the effort?",
+        "options": [
+            "Class 2",
+            "Class 1",
+            "Class 3",
+            "No class of lever has this arrangement"
+        ],
+        "answer": "Class 2",
+        "explanation": "A class 2 lever has the load between the pivot and the effort, as in a wheelbarrow or a bottle opener. A class 1 lever has the pivot in the middle and a class 3 lever has the effort in the middle.",
+        "topic": "mech-levers"
+    },
+    {
+        "id": "p120",
+        "question": "Loft insulation made of fibreglass or rock wool keeps a house warm mainly because it:",
+        "options": [
+            "traps air, and trapped air is a poor conductor",
+            "is a good conductor of heat",
+            "reflects radiation back into the room",
+            "absorbs water from the roof"
+        ],
+        "answer": "traps air, and trapped air is a poor conductor",
+        "explanation": "The fibres hold a lot of air in small pockets. Air is a poor conductor, so the loft insulation cuts down conduction through the roof. A metal base conducts into the food in a pan, which is why a wooden or plastic handle is fitted instead.",
+        "topic": "thermal-energy-transfer-device-design"
+    },
+    {
+        "id": "p134",
+        "question": "Which development made it possible to build thousands of components on one small chip?",
+        "options": [
+            "the integrated circuit",
+            "the thermionic valve",
+            "the electromagnet",
+            "the relay"
+        ],
+        "answer": "the integrated circuit",
+        "explanation": "The transistor replaced the bulky thermionic valve, and the integrated circuit put many transistors and their connections on a single chip, which made electronic devices small, cheap and reliable.",
+        "topic": "em-impact-of-electronics-on-society"
+    },
+    {
+        "id": "p152",
+        "question": "In a nuclear reactor, what is the job of the control rods of boron or cadmium?",
+        "options": [
+            "They absorb neutrons and so slow the chain reaction",
+            "They slow the fast neutrons down so that fission can continue",
+            "They cool the core by circulating water",
+            "They shield the operators from the radiation"
+        ],
+        "answer": "They absorb neutrons and so slow the chain reaction",
+        "explanation": "The moderator, such as graphite or water, slows fast neutrons so that they can cause further fission; the control rods absorb neutrons, and pushing them in further reduces the rate of the chain reaction.",
+        "topic": "nuclear-energy-utilisation"
+    },
+    {
+        "id": "p108",
+        "question": "A loaded bus is less stable than a low sports car because the bus:",
+        "options": [
+            "has a higher centre of gravity, so the vertical line through it leaves the base at a smaller tilt",
+            "has a smaller mass",
+            "has a wider wheelbase",
+            "is painted a dark colour"
+        ],
+        "answer": "has a higher centre of gravity, so the vertical line through it leaves the base at a smaller tilt",
+        "explanation": "An object topples when the vertical line through its centre of gravity falls outside its base. Raising the centre of gravity (or narrowing the base) brings that line to the edge on a smaller tilt, so the bus is less stable than the low car.",
+        "topic": "mech-centre-of-gravity-and-stability"
+    },
+    {
+        "id": "p135",
+        "question": "A current-carrying conductor in a magnetic field experiences a force. The force increases if:",
+        "options": [
+            "the current is increased",
+            "the current is reversed",
+            "the magnet is removed",
+            "the conductor is turned to lie parallel to the field"
+        ],
+        "answer": "the current is increased",
+        "explanation": "The force grows with the current, with the strength of the field and with the length of conductor in the field. Reversing the current reverses the direction of the force but does not make it bigger, and a conductor lying parallel to the field feels no force at all.",
+        "topic": "em-force-on-current-carrying-conductors"
+    },
+    {
+        "id": "p109",
+        "question": "A spring extends by 4.0 cm when a force of 8.0 N is applied to it. What is the spring constant?",
+        "options": [
+            "200 N/m",
+            "0.50 N/m",
+            "32 N/m",
+            "2.0 N/m"
+        ],
+        "answer": "200 N/m",
+        "explanation": "Hooke's law F = kx, so k = F ÷ x = 8.0 ÷ 0.040 = 200 N/m. The extension must be used in metres for the answer to come out in newtons per metre.",
+        "topic": "mech-deformation-and-elasticity"
+    },
+    {
+        "id": "p137",
+        "question": "Why does a direct current motor need a split-ring commutator?",
+        "options": [
+            "It reverses the current in the coil every half turn so the coil keeps turning",
+            "It increases the current in the coil",
+            "It measures the speed of the motor",
+            "It reverses the direction of the magnetic field"
+        ],
+        "answer": "It reverses the current in the coil every half turn so the coil keeps turning",
+        "explanation": "The two sides of the coil carry current in opposite directions, so they feel opposite forces and the coil turns. After half a turn those forces would pull it back, and the commutator swaps the connections so the current reverses and the coil keeps turning the same way.",
+        "topic": "em-dc-motor-action"
+    },
+    {
+        "id": "p34",
+        "question": "Which method of heat transfer does NOT require a medium?",
+        "options": [
+            "Radiation",
+            "Conduction",
+            "Convection",
+            "All require a medium"
+        ],
+        "answer": "Radiation",
+        "explanation": "Radiation transfers heat by electromagnetic waves.",
+        "topic": "temperature-heat"
+    },
+    {
+        "id": "p44",
+        "question": "The distance between two successive crests is the:",
+        "options": [
+            "wavelength",
+            "frequency",
+            "amplitude",
+            "period"
+        ],
+        "answer": "wavelength",
+        "explanation": "Wavelength λ is the distance between successive crests.",
+        "topic": "wave-properties"
+    },
+    {
+        "id": "p8",
+        "question": "In a series circuit, what remains the same at all points?",
+        "options": [
+            "Voltage",
+            "Resistance",
+            "Current",
+            "Power"
+        ],
+        "answer": "Current",
+        "explanation": "In a series circuit, there is only one path, so the current is identical throughout the circuit.",
+        "topic": "electric-circuits"
     },
     {
         "id": "p96",
@@ -1248,6 +845,344 @@
         "topic": "radioactivity"
     },
     {
+        "id": "p14",
+        "question": "A car accelerates from rest to 20 m/s in 5 s. What is its acceleration?",
+        "options": [
+            "4 m/s²",
+            "5 m/s²",
+            "100 m/s²",
+            "0.25 m/s²"
+        ],
+        "answer": "4 m/s²",
+        "explanation": "a = (v-u)/t = (20-0)/5 = 4 m/s².",
+        "topic": "motion-graphs"
+    },
+    {
+        "id": "p110",
+        "question": "A fixed mass of gas has a volume of 200 cm³ at 300 K. At constant pressure it is heated to 600 K. What is its new volume?",
+        "options": [
+            "400 cm³",
+            "100 cm³",
+            "300 cm³",
+            "1200 cm³"
+        ],
+        "answer": "400 cm³",
+        "explanation": "Charles' law: V/T is constant, so V₂ = V₁ × T₂/T₁ = 200 × 600/300 = 400 cm³. The temperature must be in kelvin, because the proportion only holds on a scale that starts at absolute zero.",
+        "topic": "gas-laws"
+    },
+    {
+        "id": "p60",
+        "question": "The bending of light when it passes into a different medium is:",
+        "options": [
+            "refraction",
+            "reflection",
+            "diffraction",
+            "absorption"
+        ],
+        "answer": "refraction",
+        "explanation": "Refraction occurs due to speed change at the boundary.",
+        "topic": "light-refraction"
+    },
+    {
+        "id": "p89",
+        "question": "Electromagnetic induction produces:",
+        "options": [
+            "an e.m.f. in a conductor",
+            "permanent magnets",
+            "chemical energy",
+            "sound"
+        ],
+        "answer": "an e.m.f. in a conductor",
+        "explanation": "A changing magnetic field induces an e.m.f.",
+        "topic": "magnetism-and-electromagnetism"
+    },
+    {
+        "id": "p16",
+        "question": "A force of 10 N acts on a mass of 2 kg. What is the acceleration?",
+        "options": [
+            "5 m/s²",
+            "20 m/s²",
+            "0.2 m/s²",
+            "8 m/s²"
+        ],
+        "answer": "5 m/s²",
+        "explanation": "F = ma → a = 10/2 = 5 m/s².",
+        "topic": "forces-and-newtons-laws"
+    },
+    {
+        "id": "p36",
+        "question": "Specific heat capacity is the energy needed to:",
+        "options": [
+            "raise 1 kg of a substance by 1°C",
+            "melt 1 kg",
+            "boil 1 kg",
+            "freeze 1 kg"
+        ],
+        "answer": "raise 1 kg of a substance by 1°C",
+        "explanation": "c = Q/(mΔT), unit J/kg°C.",
+        "topic": "specific-and-latent-heat"
+    },
+    {
+        "id": "p83",
+        "question": "Fuses protect circuits by:",
+        "options": [
+            "melting when current is too high",
+            "storing charge",
+            "reducing voltage",
+            "increasing resistance"
+        ],
+        "answer": "melting when current is too high",
+        "explanation": "The fuse wire melts, breaking the circuit at excess current.",
+        "topic": "electrical-power-and-safety"
+    },
+    {
+        "id": "p140",
+        "question": "The nucleus of an atom is about 10⁻¹⁵ m across. Roughly how does this compare with the size of the whole atom?",
+        "options": [
+            "about a hundred thousand times smaller",
+            "about ten times smaller",
+            "about the same size",
+            "about a hundred thousand times larger"
+        ],
+        "answer": "about a hundred thousand times smaller",
+        "explanation": "An atom is about 10⁻¹⁰ m across and the nucleus about 10⁻¹⁵ m, so the nucleus is 10⁵ — a hundred thousand — times smaller. Almost all of the atom is empty space.",
+        "topic": "nuclear-geiger-marsden"
+    },
+    {
+        "id": "p20",
+        "question": "The law of conservation of energy states that energy:",
+        "options": [
+            "cannot be created or destroyed",
+            "is always created",
+            "can be destroyed",
+            "exists only as heat"
+        ],
+        "answer": "cannot be created or destroyed",
+        "explanation": "Energy is conserved — only converted between forms.",
+        "topic": "work-energy-and-power"
+    },
+    {
+        "id": "p53",
+        "question": "Pitch is related to the ___ of a sound wave.",
+        "options": [
+            "frequency",
+            "amplitude",
+            "speed",
+            "wavelength only"
+        ],
+        "answer": "frequency",
+        "explanation": "Higher frequency → higher pitch.",
+        "topic": "sound-and-the-em-spectrum"
+    },
+    {
+        "id": "p141",
+        "question": "An atom becomes a positive ion when it:",
+        "options": [
+            "loses one or more electrons",
+            "gains one or more electrons",
+            "loses a proton from its nucleus",
+            "gains a neutron in its nucleus"
+        ],
+        "answer": "loses one or more electrons",
+        "explanation": "A neutral atom has equal numbers of protons and electrons. Removing electrons leaves more protons than electrons, so the atom has a net positive charge; the proton count does not change when an ion forms.",
+        "topic": "nuclear-atomic-composition"
+    },
+    {
+        "id": "p29",
+        "question": "The upthrust on an object in a fluid is described by:",
+        "options": [
+            "Archimedes' principle",
+            "Newton's first law",
+            "Boyle's law",
+            "Pascal's law"
+        ],
+        "answer": "Archimedes' principle",
+        "explanation": "Archimedes' principle: upthrust equals weight of displaced fluid.",
+        "topic": "fluid-pressure-and-upthrust"
+    },
+    {
+        "id": "p57",
+        "question": "The speed of light in a vacuum is:",
+        "options": [
+            "3 × 10⁸ m/s",
+            "340 m/s",
+            "3 × 10⁶ m/s",
+            "1.5 × 10⁸ m/s"
+        ],
+        "answer": "3 × 10⁸ m/s",
+        "explanation": "c ≈ 3 × 10⁸ m/s.",
+        "topic": "waves-sources-and-uses-of-electromagnetic-waves"
+    },
+    {
+        "id": "p143",
+        "question": "Which statement about isotopes of an element is correct?",
+        "options": [
+            "They have the same number of protons but different numbers of neutrons",
+            "They have the same number of neutrons but different numbers of protons",
+            "They are atoms of two different elements",
+            "They have different numbers of electrons when they are neutral"
+        ],
+        "answer": "They have the same number of protons but different numbers of neutrons",
+        "explanation": "Isotopes of an element have the same atomic number but different mass numbers, as carbon-12 and carbon-14 do. A neutral atom of either isotope has the same number of electrons as protons.",
+        "topic": "nuclear-nuclide-notation"
+    },
+    {
+        "id": "p114",
+        "question": "A 2.0 kg metal block is heated by a 12 V heater carrying 2.0 A for 300 s, and its temperature rises by 10 °C. What is the specific heat capacity of the metal?",
+        "options": [
+            "360 J/kg °C",
+            "720 J/kg °C",
+            "36 J/kg °C",
+            "1800 J/kg °C"
+        ],
+        "answer": "360 J/kg °C",
+        "explanation": "Energy supplied E = VIt = 12 × 2.0 × 300 = 7200 J. Then c = E ÷ (mΔθ) = 7200 ÷ (2.0 × 10) = 360 J/kg °C.",
+        "topic": "thermal-determining-specific-heat-capacity"
+    },
+    {
+        "id": "p116",
+        "question": "In the experiment to measure the specific latent heat of fusion of ice, the funnel and gauze are used so that:",
+        "options": [
+            "the melted ice can be collected and weighed in the beaker below",
+            "the ice stays at exactly 0 °C",
+            "the heater does not touch the water",
+            "the steam produced can escape"
+        ],
+        "answer": "the melted ice can be collected and weighed in the beaker below",
+        "explanation": "The mass of ice melted is found by weighing the water that collects in the beaker while the heater runs, and then L = E ÷ m.",
+        "topic": "thermal-determining-specific-latent-heat"
+    },
+    {
+        "id": "p128",
+        "question": "What is the frequency of the alternating mains supply in the Caribbean?",
+        "options": [
+            "50 Hz",
+            "60 Hz",
+            "240 Hz",
+            "0 Hz, because it is direct current"
+        ],
+        "answer": "50 Hz",
+        "explanation": "An alternating current reverses direction at a regular frequency. The mains reverses 50 times each second, so its frequency is 50 hertz, and the current completes 50 cycles per second.",
+        "topic": "em-direct-and-alternating-current"
+    },
+    {
+        "id": "p147",
+        "question": "A beam of gamma radiation passes between charged plates without bending because gamma radiation:",
+        "options": [
+            "carries no charge",
+            "has too much mass",
+            "travels too fast to be deflected",
+            "is absorbed by the plates"
+        ],
+        "answer": "carries no charge",
+        "explanation": "An electric field only exerts a force on a charged particle. Alpha is positive and beta is negative, so they bend in opposite directions, but gamma rays are uncharged electromagnetic waves and pass straight through.",
+        "topic": "nuclear-fields-on-emissions"
+    },
+    {
+        "id": "p101",
+        "question": "A block of metal has a mass of 540 g and a volume of 200 cm³. What is its density?",
+        "options": [
+            "2.7 g/cm³",
+            "0.37 g/cm³",
+            "3.7 g/cm³",
+            "270 g/cm³"
+        ],
+        "answer": "2.7 g/cm³",
+        "explanation": "Density = mass ÷ volume = 540 ÷ 200 = 2.7 g/cm³. The unit comes from the units used: grams divided by cubic centimetres.",
+        "topic": "mech-density"
+    },
+    {
+        "id": "p149",
+        "question": "In beta decay, the mass number of the nucleus stays the same and the atomic number:",
+        "options": [
+            "rises by 1",
+            "falls by 1",
+            "falls by 2",
+            "rises by 2"
+        ],
+        "answer": "rises by 1",
+        "explanation": "A neutron in the nucleus changes into a proton and an electron is emitted. The number of nucleons is unchanged, so A stays the same, but there is now one more proton, so Z rises by 1.",
+        "topic": "nuclear-reaction-equations"
+    },
+    {
+        "id": "p118",
+        "question": "An object that is hotter than its surroundings:",
+        "options": [
+            "emits more radiation each second than it absorbs",
+            "absorbs more radiation each second than it emits",
+            "emits and absorbs exactly equal amounts",
+            "emits no radiation until it cools"
+        ],
+        "answer": "emits more radiation each second than it absorbs",
+        "explanation": "Every object absorbs and emits infra-red radiation at the same time, and the hotter it is the more it emits each second. A body hotter than its surroundings therefore emits more than it absorbs and cools down.",
+        "topic": "thermal-absorption-and-emission-of-radiation"
+    },
+    {
+        "id": "p131",
+        "question": "The process of turning alternating current into direct current is called:",
+        "options": [
+            "rectification",
+            "amplification",
+            "induction",
+            "dispersion"
+        ],
+        "answer": "rectification",
+        "explanation": "A single diode gives half-wave rectification because it passes only one half of the cycle; four diodes connected as a bridge give full-wave rectification.",
+        "topic": "em-semiconductor-diodes-and-rectification"
+    },
+    {
+        "id": "p106",
+        "question": "A uniform metre rule is pivoted at its centre, the 50 cm mark. A 2 N weight hangs at the 20 cm mark. At which mark must a 3 N weight hang to balance the rule?",
+        "options": [
+            "the 70 cm mark",
+            "the 30 cm mark",
+            "the 80 cm mark",
+            "the 90 cm mark"
+        ],
+        "answer": "the 70 cm mark",
+        "explanation": "Take moments about the pivot: 2 N × 30 cm = 60 N cm anticlockwise, so 3 N × d = 60 N cm, giving d = 20 cm. The weight goes 20 cm on the other side of the pivot, at the 70 cm mark.",
+        "topic": "mech-turning-effects-and-moments"
+    },
+    {
+        "id": "p133",
+        "question": "Which logic gate gives an output of 1 when at least one of its inputs is 1?",
+        "options": [
+            "OR",
+            "AND",
+            "NOT",
+            "None of these"
+        ],
+        "answer": "OR",
+        "explanation": "An OR gate gives 1 when at least one input is 1, and gives 0 only when both inputs are 0. AND needs both inputs at 1, and NOT has a single input which it inverts.",
+        "topic": "em-logic-gates-and-truth-tables"
+    },
+    {
+        "id": "p136",
+        "question": "Fleming's left-hand rule gives the direction of:",
+        "options": [
+            "the force on a current-carrying conductor in a magnetic field",
+            "the induced current in a generator",
+            "the magnetic field around a straight wire",
+            "the current that a cell will supply"
+        ],
+        "answer": "the force on a current-carrying conductor in a magnetic field",
+        "explanation": "First finger = field, second finger = current, thumb = force. That is the motor effect: the force is at right angles to both the current and the field.",
+        "topic": "em-force-on-current-carrying-conductors"
+    },
+    {
+        "id": "p73",
+        "question": "Ohm's Law states that:",
+        "options": [
+            "V = IR",
+            "V = I/R",
+            "V = R/I",
+            "V = I²R"
+        ],
+        "answer": "V = IR",
+        "explanation": "Voltage = current × resistance.",
+        "topic": "electric-circuits"
+    },
+    {
         "id": "p97",
         "question": "Beta particles are:",
         "options": [
@@ -1261,42 +1196,107 @@
         "topic": "radioactivity"
     },
     {
-        "id": "p98",
-        "question": "Which radiation has the greatest penetrating power?",
+        "id": "p92",
+        "question": "A step-up transformer:",
         "options": [
-            "Gamma",
-            "Alpha",
-            "Beta",
-            "All equal"
+            "increases voltage, decreases current",
+            "increases current",
+            "decreases voltage only",
+            "stores energy"
         ],
-        "answer": "Gamma",
-        "explanation": "Gamma rays penetrate most materials deeply.",
-        "topic": "radioactivity"
+        "answer": "increases voltage, decreases current",
+        "explanation": "More secondary turns → higher voltage, lower current.",
+        "topic": "magnetism-and-electromagnetism"
     },
     {
-        "id": "p99",
-        "question": "The half-life of a substance is the time for:",
+        "id": "p17",
+        "question": "Momentum is calculated as:",
         "options": [
-            "half the nuclei to decay",
-            "all nuclei to decay",
-            "radiation to stop",
-            "the mass to double"
+            "mass × velocity",
+            "mass × acceleration",
+            "force × distance",
+            "mass × speed ÷ time"
         ],
-        "answer": "half the nuclei to decay",
-        "explanation": "Half-life is the time for activity to halve.",
-        "topic": "radioactivity"
+        "answer": "mass × velocity",
+        "explanation": "Momentum p = mv.",
+        "topic": "forces-and-newtons-laws"
     },
     {
-        "id": "p100",
-        "question": "If a sample has an activity of 800 Bq and half-life of 10 min, after 30 min the activity is:",
+        "id": "p37",
+        "question": "How much heat is needed to raise 2 kg of water by 5°C? (c = 4200 J/kg°C)",
         "options": [
-            "100 Bq",
+            "42000 J",
+            "4200 J",
+            "8400 J",
+            "21000 J"
+        ],
+        "answer": "42000 J",
+        "explanation": "Q = mcΔT = 2 × 4200 × 5 = 42000 J.",
+        "topic": "specific-and-latent-heat"
+    },
+    {
+        "id": "p22",
+        "question": "Power is defined as:",
+        "options": [
+            "work done per unit time",
+            "force per unit area",
+            "energy stored",
+            "mass per unit volume"
+        ],
+        "answer": "work done per unit time",
+        "explanation": "Power = work/time, measured in watts.",
+        "topic": "work-energy-and-power"
+    },
+    {
+        "id": "p50",
+        "question": "Sound cannot travel through:",
+        "options": [
+            "a vacuum",
+            "air",
+            "water",
+            "steel"
+        ],
+        "answer": "a vacuum",
+        "explanation": "Sound needs a medium; a vacuum has no particles.",
+        "topic": "sound-and-the-em-spectrum"
+    },
+    {
+        "id": "p31",
+        "question": "A hydraulic press works on:",
+        "options": [
+            "Pascal's principle",
+            "Archimedes' principle",
+            "Bernoulli's principle",
+            "Newton's second law"
+        ],
+        "answer": "Pascal's principle",
+        "explanation": "Pascal's principle: pressure transmitted equally in a fluid.",
+        "topic": "fluid-pressure-and-upthrust"
+    },
+    {
+        "id": "p9",
+        "question": "A radioactive substance has a half-life of 20 minutes. If the initial activity is 800 Bq, what will it be after 1 hour?",
+        "options": [
             "400 Bq",
             "200 Bq",
+            "100 Bq",
             "50 Bq"
         ],
         "answer": "100 Bq",
-        "explanation": "30 min = 3 half-lives: 800 → 400 → 200 → 100 Bq.",
+        "explanation": "1 hour = 3 half-lives. 800 -> 400 -> 200 -> 100 Bq.",
         "topic": "radioactivity"
+    },
+    {
+        "id": "p39",
+        "question": "The specific latent heat of fusion relates to:",
+        "options": [
+            "melting/freezing",
+            "boiling/condensing",
+            "sublimation",
+            "expansion"
+        ],
+        "answer": "melting/freezing",
+        "explanation": "Fusion = solid ↔ liquid change.",
+        "topic": "specific-and-latent-heat"
     }
 ]
