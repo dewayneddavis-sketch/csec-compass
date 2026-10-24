@@ -204,5 +204,339 @@
                 }
             }
         ]
+    },
+    {
+        "id": "inorganic-chemistry",
+        "title": "Inorganic Chemistry",
+        "lessons": [
+            {
+                "id": "inorg-metal-properties",
+                "title": "Physical and Chemical Properties of Metals",
+                "content": "Metals share a set of physical properties that make them easy to recognise. Metals have a shiny lustre when freshly cut or polished. Metals are good conductors of heat and electricity. Metals are malleable, so they can be hammered into sheets, and metals are ductile, so they can be drawn into wires. A physical property is one that can be observed without changing the metal into a new substance.\n\nThe chemical properties of metals show up in the way they react. Metals react with oxygen to form basic oxides, and a metal oxide that dissolves in water gives an alkaline solution. Metals react with dilute acids to release hydrogen gas, and the more reactive the metal, the faster and more vigorous the reaction is. A chemical property is seen only when the metal takes part in a reaction, and metals always lose electrons to form positive ions.\n\nThe most reactive metals tarnish quickly in air and react with cold water, while the least reactive metals, such as gold, stay shiny for centuries because they do not react with oxygen at all. This spread of reactivity is the basis of the reactivity series, and it also explains why different metals are extracted from their ores in different ways.",
+                "objectives": [
+                    "Describe the physical properties of metals",
+                    "Describe the chemical properties of metals",
+                    "Relate a metal's reactivity to how it reacts with oxygen and acids"
+                ],
+                "concepts": [
+                    "Metals have a shiny lustre, and they are malleable, ductile and good conductors of heat and electricity.",
+                    "Metals react with oxygen to form basic oxides, and they react with dilute acids to release hydrogen gas."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Physical and Chemical Properties of Metals: Sort 6 statements into Physical property, Chemical property."
+                }
+            },
+            {
+                "id": "inorg-reactions-of-metallic-compounds",
+                "title": "Reactions of Metallic Compounds",
+                "content": "Metallic compounds are the oxides, hydroxides and carbonates formed when a metal combines with a non-metal or a polyatomic ion. A metal oxide and metal hydroxide are basic, and they react with acids to form a salt and water: copper(II) oxide is a basic oxide, and sodium hydroxide is an alkali when it dissolves in water.\n\nA metal carbonate reacts with dilute acids to form a salt, water and carbon dioxide gas. The gas can be identified by bubbling it through limewater, which turns milky. Carbonates of the less reactive metals also break down when they are heated: copper(II) carbonate decomposes on heating to form copper(II) oxide and carbon dioxide, and this is called thermal decomposition.\n\nThe action of heat on a metallic compound is a useful way to tell how reactive its metal is. The carbonates and hydroxides of the very reactive metals, such as sodium and potassium, do not decompose on heating in the laboratory, while those of the less reactive metals, such as copper, decompose easily. This trend is another face of the reactivity series.",
+                "objectives": [
+                    "Describe the reactions of metal oxides and metal hydroxides with acids",
+                    "Describe the reaction of metal carbonates with acids and their thermal decomposition",
+                    "Relate the decomposition of a metallic compound to the reactivity of its metal"
+                ],
+                "concepts": [
+                    "Metal oxides and metal hydroxides are basic and react with acids to form a salt and water.",
+                    "Metal carbonates react with dilute acids to form a salt, water and carbon dioxide gas.",
+                    "The carbonates of the less reactive metals decompose on heating, which is called thermal decomposition."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Reactions of Metallic Compounds: Sort 6 statements into Metal carbonate, Metal oxide and metal hydroxide."
+                }
+            },
+            {
+                "id": "inorg-reactivity-series",
+                "title": "Reactivity Series of Metals",
+                "content": "The reactivity series is a list of metals arranged in order of how readily they lose electrons and react. At the top of the series, potassium and sodium react violently with cold water, while calcium and magnesium react more slowly. The metals aluminium, zinc, iron and lead sit in the middle of the series, and they react with dilute acids but not with cold water, though zinc and iron react with steam.\n\nBelow hydrogen in the series are copper, silver and gold, and they do not react with dilute acids at all. Hydrogen is placed in the series as a reference point: a metal above hydrogen is more reactive than hydrogen and displaces hydrogen from a dilute acid, while a metal below hydrogen is less reactive than hydrogen and will not. Copper, silver and gold are found free in the earth because they are so unreactive.\n\nThe series is used to predict displacement reactions. A more reactive metal will displace a less reactive metal from a solution of its salt: iron displaces copper from copper(II) sulphate solution, and the blue solution fades as the copper is deposited. The reverse does not happen, because a less reactive metal cannot displace a more reactive one from its compound.",
+                "objectives": [
+                    "Place the common metals in order of reactivity",
+                    "Explain why hydrogen is used as a reference point in the series",
+                    "Predict displacement reactions between a metal and a salt solution"
+                ],
+                "concepts": [
+                    "The reactivity series lists metals in order of how readily they lose electrons and react.",
+                    "Any metal above hydrogen displaces hydrogen from a dilute acid, while a metal below hydrogen does not.",
+                    "A more reactive metal displaces a less reactive metal from a solution of its salt."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Reactivity Series of Metals: Sort 6 statements into More reactive than hydrogen, Less reactive than hydrogen."
+                }
+            },
+            {
+                "id": "inorg-extraction-of-aluminium-and-iron",
+                "title": "Extraction of Aluminium and Iron",
+                "content": "Aluminium is extracted from its ore bauxite, which is mainly aluminium oxide, by electrolysis. The aluminium oxide is dissolved in molten cryolite to lower its very high melting point, and the mixture is electrolysed in a cell lined with carbon. Aluminium forms at the negative electrode and is tapped off, while oxygen forms at the positive electrode and reacts with the carbon anodes, which have to be replaced. This is called the Hall-Heroult process.\n\nIron is extracted from its ores haematite and magnetite, which are oxides of iron, in a blast furnace. The furnace is charged with iron ore, coke and limestone, and a blast of hot air is blown in. The coke burns to form carbon monoxide, which reduces the iron oxide to molten iron, while the limestone removes the sandy impurities as slag. The molten iron is tapped from the bottom of the furnace.\n\nThe two extractions differ because of the reactivity of the metal. Aluminium is too reactive to be reduced by carbon, so it needs electrolysis, which is expensive. Iron is less reactive and can be reduced by carbon monoxide, so the blast furnace is cheaper. Both processes show that the method of extraction depends on the metal's position in the reactivity series.",
+                "objectives": [
+                    "Describe the extraction of aluminium by electrolysis of molten aluminium oxide",
+                    "Describe the extraction of iron in the blast furnace",
+                    "Explain why aluminium and iron are extracted by different methods"
+                ],
+                "concepts": [
+                    "Aluminium is extracted from bauxite by electrolysis, with the aluminium oxide dissolved in molten cryolite.",
+                    "Iron is extracted in a blast furnace, where carbon monoxide reduces the iron oxide to molten iron.",
+                    "The method of extraction depends on the metal's position in the reactivity series."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Extraction of Aluminium and Iron: Sort 6 statements into Extraction of aluminium, Extraction of iron."
+                }
+            },
+            {
+                "id": "inorg-alloys-and-uses",
+                "title": "Metal Alloys and Uses",
+                "content": "An alloy is a mixture of a metal with one or more other elements, usually other metals or carbon. Alloys are made because they are often stronger and more useful than the pure metals they come from. The atoms of the added element have a different size, so they break up the regular layers of metal atoms and stop the layers from sliding over each other, which is why an alloy is harder than the pure metal.\n\nBrass is an alloy of copper and zinc, used for door fittings and musical instruments. Bronze is an alloy of copper and tin, used for statues and coins. Steel is an alloy of iron with a little carbon, used for construction. Stainless steel contains chromium and nickel, which resist rusting, so it is used for cutlery and sinks. Duralumin is an aluminium alloy used in aircraft because it is light and strong.\n\nThe choice of alloy depends on the job it has to do. Steel is used for the framework of buildings because it is strong and cheap, brass is used for taps because it resists corrosion and polishes well, and stainless steel is used in hospitals and kitchens because it resists rusting and is easy to clean.",
+                "objectives": [
+                    "Explain why an alloy is harder than the pure metal it comes from",
+                    "Name common alloys and the metals they contain",
+                    "Relate the use of an alloy to its properties"
+                ],
+                "concepts": [
+                    "An alloy is a mixture of a metal with one or more other elements, and it is harder than the pure metal.",
+                    "Brass is copper and zinc, bronze is copper and tin, and steel is iron with a little carbon."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Metal Alloys and Uses: Match each of 5 items - Brass, Bronze, Steel, Stainless steel, Duralumin - to the statement that describes it."
+                }
+            },
+            {
+                "id": "inorg-corrosion-of-metals",
+                "title": "Corrosion of Metals",
+                "content": "Corrosion is the slow destruction of a metal by reaction with its surroundings, and rusting is the corrosion of iron. Iron rusts only when both oxygen and water are present, because the rusting of iron is an oxidation reaction that needs air and moisture. Salt water speeds up rusting, which is why cars rust faster near the sea, and acidic conditions speed it up too.\n\nRust is a flaky, reddish-brown solid that falls away and exposes fresh iron to attack, so once rusting starts it keeps going until the iron is eaten away. Rusting is expensive because it weakens bridges, ships and pipes, and it can be prevented by keeping air and water away from the iron.\n\nThe main methods of preventing rust are painting, oiling or greasing, which coat the iron to keep out air and water, and galvanising, which coats the iron with zinc. Painting coats the iron with a layer of paint to keep out air and water, while oiling or greasing coats moving parts to keep out air and water. Zinc protects the iron even when the coating is scratched, because zinc is more reactive than iron and corrodes instead, which is called sacrificial protection.",
+                "objectives": [
+                    "State the conditions needed for iron to rust",
+                    "Explain why rusting is a problem",
+                    "Describe the main methods of preventing rust"
+                ],
+                "concepts": [
+                    "Iron rusts only when both oxygen and water are present, because rusting is an oxidation reaction.",
+                    "Rusting can be prevented by painting, oiling or greasing and by galvanising, which coats the iron with zinc.",
+                    "Zinc protects iron by sacrificial protection, because zinc is more reactive than iron and corrodes instead."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Corrosion of Metals: Match each of 4 items - Painting, Oiling or greasing, Galvanising, Sacrificial protection - to the statement that describes it."
+                }
+            },
+            {
+                "id": "inorg-metals-and-living-systems",
+                "title": "Impact of Metals on Living Systems",
+                "content": "Some metals are essential to living things, because the body needs them in small amounts to work properly. Iron is needed to make haemoglobin, which carries oxygen in the blood, calcium builds bones and teeth, and zinc is needed for growth and for healing wounds. These are called essential metals, and a shortage of any of them causes illness.\n\nOther metals are toxic, because they poison the body even in tiny amounts. Lead damages the brain and the nervous system, and mercury poisons the kidneys and the brain. Lead and mercury build up in the body instead of being removed, which is why they are so dangerous.\n\nThe harm a metal does depends on the dose and on how it gets into the body. Toxic metals can enter through contaminated food or water, or through the skin, and once inside they build up in the tissues. Essential metals are safe only in the right amounts, so too much iron or zinc is harmful too: the dose matters for every metal.",
+                "objectives": [
+                    "Distinguish between essential metals and toxic metals",
+                    "Explain how toxic metals damage the body",
+                    "Relate the harm caused by a metal to its dose"
+                ],
+                "concepts": [
+                    "Essential metals such as iron, calcium and zinc are needed in small amounts for the body to work.",
+                    "Toxic metals such as lead and mercury poison the body and build up in the tissues."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Impact of Metals on Living Systems: Sort 6 statements into Essential metal, Toxic metal."
+                }
+            },
+            {
+                "id": "inorg-nonmetal-properties",
+                "title": "Physical and Chemical Properties of Non-Metals",
+                "content": "Non-metals share a set of physical properties that contrast with those of metals. Non-metals are usually dull and do not have a shiny lustre, and non-metals are poor conductors of heat and electricity. Most non-metals are brittle when solid and have low melting and boiling points, and they exist as gases, liquids or dull solids at room temperature. A physical property is one that can be observed without changing the substance into something new.\n\nThe chemical properties of non-metals show up in the way they react. Non-metals react with metals to form ionic compounds, and they gain electrons to form negative ions. Non-metals react with oxygen to form acidic oxides, and an acidic oxide dissolves in water to give an acidic solution. A chemical property is seen only when the non-metal takes part in a reaction.\n\nNon-metals vary a great deal in reactivity. The halogens, such as fluorine and chlorine, are very reactive, while the noble gases, such as helium and neon, hardly react at all. This spread of reactivity explains why non-metals are found both free and combined in nature.",
+                "objectives": [
+                    "Describe the physical properties of non-metals",
+                    "Describe the chemical properties of non-metals",
+                    "Compare the reactivity of the halogens with that of the noble gases"
+                ],
+                "concepts": [
+                    "Non-metals are usually dull, brittle and poor conductors of heat and electricity.",
+                    "Non-metals react with oxygen to form acidic oxides and gain electrons to form negative ions."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Physical and Chemical Properties of Non-Metals: Sort 6 statements into Physical property, Chemical property."
+                }
+            },
+            {
+                "id": "inorg-preparation-of-gases",
+                "title": "Laboratory Preparation and Uses of Gases",
+                "content": "Gases are prepared in the laboratory from reactions chosen to release them cleanly. Oxygen is prepared by decomposing hydrogen peroxide with manganese(IV) oxide, which acts as a catalyst and speeds the reaction up. Hydrogen is prepared by adding zinc to dilute hydrochloric acid, and carbon dioxide is prepared by adding dilute hydrochloric acid to calcium carbonate.\n\nChlorine is prepared by oxidising concentrated hydrochloric acid with manganese(IV) oxide. Each gas is collected by a method that suits it: oxygen and hydrogen, which are only slightly soluble in water, are collected over water, while chlorine is collected by upward delivery because it is denser than air.\n\nThese gases have important uses. Oxygen is used in hospitals and in oxy-acetylene welding, hydrogen is used to make margarine and ammonia, and carbon dioxide is used in fizzy drinks and in fire extinguishers. Chlorine is used to kill bacteria in water treatment and to make bleach.",
+                "objectives": [
+                    "Describe the laboratory preparation of oxygen, hydrogen, carbon dioxide and chlorine",
+                    "Describe how each gas is collected",
+                    "Give a use for each of the gases"
+                ],
+                "concepts": [
+                    "Oxygen is prepared by decomposing hydrogen peroxide with manganese(IV) oxide, and hydrogen by adding zinc to dilute hydrochloric acid.",
+                    "Carbon dioxide is prepared by adding dilute hydrochloric acid to calcium carbonate, and chlorine by oxidising concentrated hydrochloric acid with manganese(IV) oxide."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Laboratory Preparation and Uses of Gases: Match each of 4 items - Oxygen, Hydrogen, Carbon dioxide, Chlorine - to the statement that describes it."
+                }
+            },
+            {
+                "id": "inorg-uses-of-nonmetals",
+                "title": "Uses of Non-Metals and Compounds",
+                "content": "Non-metals and their compounds are used all around us. Nitrogen fills food packaging to keep food fresh, because it is unreactive and pushes out the oxygen that would let the food spoil. Chlorine kills bacteria in drinking water and in swimming pools, which makes the water safe to drink and to swim in.\n\nCarbon is used in many forms. Graphite, a form of carbon, is used in pencils and as electrodes, while diamond is used in cutting tools because it is the hardest natural substance. Sulphur is used to make sulphuric acid and to vulcanise rubber, which makes the rubber tougher and more elastic.\n\nCompounds of non-metals are just as useful as the elements themselves. Ammonia is used to make fertilisers, which help crops grow, and sulphuric acid is used in car batteries and in the manufacture of many other chemicals.",
+                "objectives": [
+                    "Describe the uses of nitrogen, chlorine, carbon and sulphur",
+                    "Describe the uses of ammonia and sulphuric acid",
+                    "Relate the use of a non-metal to its properties"
+                ],
+                "concepts": [
+                    "Nitrogen fills food packaging, and chlorine kills bacteria in drinking water and in swimming pools.",
+                    "Sulphur is used to make sulphuric acid, and ammonia is used to make fertilisers."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Uses of Non-Metals and Compounds: Match each of 5 items - Nitrogen, Chlorine, Sulphur, Ammonia, Graphite - to the statement that describes it."
+                }
+            },
+            {
+                "id": "inorg-environmental-impact-of-nonmetals",
+                "title": "Environmental Impact of Non-Metals",
+                "content": "When fuels burn, the non-metal oxides they release damage the environment. Carbon dioxide is a greenhouse gas that traps heat in the atmosphere, which contributes to global warming. Carbon monoxide is a poisonous gas that reduces the amount of oxygen the blood can carry, and it forms when fuels burn without enough air.\n\nSulphur dioxide and the oxides of nitrogen are acidic gases. Sulphur dioxide dissolves in rain water to form acid rain, and the oxides of nitrogen from car exhausts also form acid rain and smog. Acid rain damages buildings, kills fish in lakes and harms trees and crops.\n\nThese problems are reduced by burning fuels more cleanly. Removing sulphur from fuels before they are burned, fitting catalytic converters to cars and burning less fuel all reduce the oxides that reach the air. The same gases show that burning fossil fuels has a real cost to the environment.",
+                "objectives": [
+                    "Describe how the oxides of non-metals cause global warming and acid rain",
+                    "Explain how carbon monoxide harms the body",
+                    "Describe ways of reducing the oxides released by burning fuels"
+                ],
+                "concepts": [
+                    "Carbon dioxide is a greenhouse gas that traps heat in the atmosphere, and carbon monoxide is a poisonous gas.",
+                    "Sulphur dioxide dissolves in rain water to form acid rain, and the oxides of nitrogen form acid rain and smog."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Environmental Impact of Non-Metals: Match each of 4 items - Carbon dioxide, Carbon monoxide, Sulphur dioxide, The oxides of nitrogen - to the statement that describes it."
+                }
+            },
+            {
+                "id": "inorg-properties-of-water",
+                "title": "Unique Properties of Water",
+                "content": "Water has a set of properties that make it essential for life. Water has a high specific heat capacity, so it heats up and cools down slowly, which keeps the temperature of the oceans and of our bodies steady. Water is an excellent solvent, so it dissolves many substances, which is why it carries dissolved nutrients around the body.\n\nWater is unusual because ice is less dense than liquid water, so ice floats on water. This happens because water expands when it freezes, and it is why ponds freeze from the top down while fish survive underneath. Water also has a high surface tension, so small insects can walk on water without sinking.\n\nThese properties depend on the shape of the water molecule and on the hydrogen bonds between water molecules. The hydrogen bonds hold the molecules together, which explains the high boiling point, the high specific heat capacity and the fact that ice floats.",
+                "objectives": [
+                    "Describe the thermal and solvent properties of water",
+                    "Explain why ice floats on water",
+                    "Explain how the properties of water support life"
+                ],
+                "concepts": [
+                    "Water has a high specific heat capacity, so it heats up and cools down slowly.",
+                    "Ice is less dense than liquid water, so ice floats on water, and water has a high surface tension."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Unique Properties of Water: Match each of 4 items - High specific heat capacity, Excellent solvent, Ice is less dense than liquid water, High surface tension - to the statement that describes it."
+                }
+            },
+            {
+                "id": "inorg-water-hardness",
+                "title": "Solvent Properties and Water Hardness",
+                "content": "Water is an excellent solvent, so it dissolves many substances and is called the universal solvent. As water runs through the ground it dissolves minerals. Hard water contains dissolved calcium and magnesium salts. Soft water contains few dissolved minerals, and soft water lathers easily with soap.\n\nHardness has two kinds. Temporary hardness is caused by dissolved calcium hydrogencarbonate, and it is removed by boiling, because boiling decomposes the hydrogencarbonate and the calcium carbonate settles out. Permanent hardness is caused by dissolved calcium sulphate, and it is not removed by boiling.\n\nHard water is a nuisance because it does not lather easily with soap, so more soap is wasted, and because it leaves scale in kettles and pipes when it is heated. Hard water is softened by boiling, for temporary hardness, or by adding washing soda or by ion exchange, which removes the calcium and magnesium ions.",
+                "objectives": [
+                    "Distinguish between hard water and soft water",
+                    "Explain the difference between temporary and permanent hardness",
+                    "Describe how hard water is softened"
+                ],
+                "concepts": [
+                    "Hard water contains dissolved calcium and magnesium salts, while soft water contains few dissolved minerals.",
+                    "Temporary hardness is removed by boiling, but permanent hardness is not."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Solvent Properties and Water Hardness: Sort 5 statements into Hard water, Soft water."
+                }
+            },
+            {
+                "id": "inorg-water-treatment",
+                "title": "Water Treatment for Domestic Use",
+                "content": "Water from rivers and reservoirs is treated before it reaches the home. The first stage is screening, which removes large debris such as leaves and sticks, and then the water passes into a settling tank, where sedimentation lets the heavier particles settle to the bottom.\n\nAfter sedimentation the water is filtered. Filtration removes solid particles by passing the water through beds of sand and gravel. The final stage is chlorination, where a little chlorine is added, which kills bacteria and germs and makes the water safe to drink.\n\nFluoride is sometimes added to help protect teeth, and the treated water is stored in covered reservoirs and pumped through pipes to homes. Each stage removes something different, and together they make the water clear and safe to drink.",
+                "objectives": [
+                    "Describe the stages of water treatment",
+                    "Explain what each stage removes",
+                    "Explain why chlorination makes water safe to drink"
+                ],
+                "concepts": [
+                    "Screening removes large debris, sedimentation lets the heavier particles settle, and filtration removes solid particles.",
+                    "Chlorination adds a little chlorine, which kills bacteria and germs."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Water Treatment for Domestic Use: Match each of 4 items - Screening, Sedimentation, Filtration, Chlorination - to the statement that describes it."
+                }
+            },
+            {
+                "id": "inorg-green-chemistry",
+                "title": "Green Chemistry Principles",
+                "content": "Green chemistry is a way of designing chemical processes that produce less waste and use safer substances. The first principle is prevention: it is better to prevent waste than to clean it up afterwards. Atom economy means designing reactions so that as many of the reactant atoms as possible end up in the product, leaving little behind.\n\nA less hazardous chemical synthesis designs processes that use and make safer chemicals, so that accidents and exposure are less harmful. Renewable feedstocks use raw materials that can be replaced, such as plant material, instead of those that will run out, such as crude oil.\n\nEnergy efficiency runs reactions at room temperature and pressure wherever possible, so less energy is used, and catalysis uses catalysts to speed reactions up without the need for extra chemicals. Together these principles cut waste, save energy and reduce the hazards of the chemical industry.",
+                "objectives": [
+                    "State the main principles of green chemistry",
+                    "Explain what atom economy means",
+                    "Describe how green chemistry reduces waste and hazards"
+                ],
+                "concepts": [
+                    "Prevention is better than cleaning up waste, and atom economy keeps the reactant atoms in the product.",
+                    "Renewable feedstocks use materials that can be replaced, and energy efficiency runs reactions at room temperature and pressure."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Green Chemistry Principles: Match each of 5 items - Prevention, Atom economy, Less hazardous chemical synthesis, Renewable feedstocks, Energy efficiency - to the statement that describes it."
+                }
+            },
+            {
+                "id": "inorg-identification-of-cations",
+                "title": "Identification of Cations",
+                "content": "Cations are positive ions, and they are identified by the colour they give to a flame or by the precipitates they form with sodium hydroxide. In a flame test, a clean wire is dipped in the salt and held in a blue flame. Sodium gives a yellow flame, potassium gives a lilac flame, and calcium gives a brick-red flame.\n\nCopper(II) gives a blue-green flame. When sodium hydroxide solution is added to a solution of a salt, the precipitate identifies the cation: copper(II) gives a blue precipitate with sodium hydroxide, iron(II) gives a green precipitate, and iron(III) gives a brown precipitate.\n\nAmmonium is identified by warming the salt with sodium hydroxide, which releases ammonia gas that turns damp red litmus paper blue. The flame test and the sodium hydroxide test are the two standard ways of identifying a cation in the laboratory.",
+                "objectives": [
+                    "Describe the flame test for cations",
+                    "Describe the sodium hydroxide test for cations",
+                    "Identify the colour each cation gives to a flame or precipitate"
+                ],
+                "concepts": [
+                    "Sodium gives a yellow flame, potassium gives a lilac flame, and calcium gives a brick-red flame.",
+                    "Copper(II) gives a blue precipitate with sodium hydroxide, iron(II) gives a green precipitate, and iron(III) gives a brown precipitate."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Identification of Cations: Sort 6 statements into Flame test, Sodium hydroxide test."
+                }
+            },
+            {
+                "id": "inorg-identification-of-anions",
+                "title": "Identification of Anions",
+                "content": "Anions are negative ions, and each has a test that identifies it. A carbonate fizzes with dilute acid, and the gas released turns limewater milky. This is the test for a carbonate.\n\nA chloride gives a white precipitate with silver nitrate solution, and the precipitate dissolves in dilute ammonia. A sulphate gives a white precipitate with barium chloride solution, and this precipitate does not dissolve in acid. The two white precipitates are told apart by what dissolves them.\n\nA nitrate is identified by the brown ring test: iron(II) sulphate solution is added, then concentrated sulphuric acid is poured carefully down the side, and a brown ring forms where the two liquids meet.",
+                "objectives": [
+                    "Describe the test for a carbonate",
+                    "Describe the tests for chloride and sulphate, and how they are told apart",
+                    "Describe the brown ring test for a nitrate"
+                ],
+                "concepts": [
+                    "A carbonate fizzes with dilute acid, and the gas released turns limewater milky.",
+                    "A chloride gives a white precipitate with silver nitrate solution, and a sulphate gives a white precipitate with barium chloride solution."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Identification of Anions: Match each of 4 items - Carbonate, Chloride, Sulphate, Nitrate - to the statement that describes it."
+                }
+            },
+            {
+                "id": "inorg-identification-of-gases",
+                "title": "Identification of Gases",
+                "content": "Gases are identified by simple tests that give a clear result. Oxygen relights a glowing splint, and hydrogen burns with a squeaky pop when a lighted splint is held to it. These two tests tell oxygen and hydrogen apart from the other gases.\n\nCarbon dioxide turns limewater milky when it is bubbled through it. Chlorine bleaches damp blue litmus paper, and it has a sharp, choking smell. These tests use a glowing splint, limewater and litmus paper, which are the standard ways of identifying a gas.\n\nAmmonia turns damp red litmus paper blue, and it has a sharp smell. Each gas has a test that no other common gas gives, so the tests are used one after another until the gas is identified.",
+                "objectives": [
+                    "Describe the test for oxygen and for hydrogen",
+                    "Describe the test for carbon dioxide, chlorine and ammonia",
+                    "Explain how the gas tests tell the gases apart"
+                ],
+                "concepts": [
+                    "Oxygen relights a glowing splint, and hydrogen burns with a squeaky pop.",
+                    "Carbon dioxide turns limewater milky, chlorine bleaches damp blue litmus paper, and ammonia turns damp red litmus paper blue."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Identification of Gases: Match each of 5 items - Oxygen, Hydrogen, Carbon dioxide, Chlorine, Ammonia - to the statement that describes it."
+                }
+            }
+        ]
     }
 ]
