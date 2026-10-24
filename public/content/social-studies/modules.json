@@ -232,17 +232,27 @@
             {
                 "id": "ss-l3-1",
                 "title": "Systems of Government",
-                "content": "Government is the system by which a society is organised and controlled. In the Caribbean, we have several different systems. Many English-speaking countries are 'Constitutional Monarchies,' where the British Monarch is the ceremonial head of state, represented by a Governor-General. Others, like Trinidad and Tobago or Guyana, are 'Republics' with their own President as head of state.\n\nA 'Democracy' is a system where power is held by the people, usually through elected representatives. Elections are held periodically, where citizens in different 'constituencies' vote for candidates. The party with the most seats in parliament typically forms the government. This contrasts with a 'Dictatorship,' where power is held by a single person or a small group with little or no input from the public.\n\nUnderstanding these systems is vital for active citizenship. CSEC students learn about the electoral process, the role of political parties, and the importance of transparency and accountability in government. Knowing how your country is governed empowers you to participate in the democratic process and advocate for change.",
+                "content": "Government is the system by which a society is organised and controlled. In the Caribbean, we have several different systems. Many English-speaking countries are 'Constitutional Monarchies,' where the British Monarch is the ceremonial head of state, represented by a Governor-General. Others, like Trinidad and Tobago or Guyana, are 'Republics' with their own President as head of state.\n\nA 'Democracy' is a system where power is held by the people, usually through elected representatives. Elections are held periodically, where citizens in different 'constituencies' vote for candidates. The party with the most seats in parliament typically forms the government. This contrasts with a 'Dictatorship,' where power is held by a single person or a small group with little or no input from the public.\n\nUnderstanding these systems is vital for active citizenship. CSEC students learn about the electoral process, the role of political parties, and the importance of transparency and accountability in government. Knowing how your country is governed empowers you to participate in the democratic process and advocate for change.\n\nThe electoral process is the set of steps by which those representatives are chosen. The country is divided into constituencies, each returning one member to the House of Representatives. Before polling day the electoral commission prepares and updates the voters' list, so that everyone entitled to vote in a constituency is registered there.\n\nA general election then runs in stages. Nomination day comes first: a candidate is formally put forward in each constituency, with the support required by law, and is then the party's standard-bearer for that seat. Campaigning follows, as parties and candidates present their manifestos and meet the voters. On polling day the electors vote in secret at their polling division, the ballots are counted, and the candidate with the most votes wins that constituency by the first-past-the-post rule. The party that wins the most seats forms the government, and its leader becomes Prime Minister.\n\nElections are held periodically - in Jamaica the House of Representatives is elected for a term of five years - so that a government must return to the people for a fresh mandate. If a seat falls vacant between general elections, because a member dies, resigns or is disqualified, a by-election is held in that constituency alone. Local government elections, in which voters elect their parish councillors, follow the same principle at the level of the parish.\n\nCountries also choose between two broad ways of turning votes into seats. In a first-past-the-post system, used in Jamaica, the constituency is everything: the candidate with the most votes takes the seat and every other vote in that constituency elects nobody. In a system of proportional representation, seats are shared out according to each party's share of the total vote, which is fairer to smaller parties but usually produces no single winner. Which system a country chooses therefore decides how easy it is for a party to win power, and how directly a voter's choice is reflected in the result.",
                 "objectives": [
                     "Compare different systems of government in the Caribbean",
-                    "Understand the democratic process"
+                    "Understand the democratic process",
+                    "Describe the stages of the electoral process, from registration to polling day",
+                    "Explain what a by-election is and when one is held",
+                    "Compare the first-past-the-post and proportional representation systems"
                 ],
                 "concepts": [
                     "Constitutional Monarchy",
                     "Republic",
                     "Dictatorship",
                     "Constituency",
-                    "Elections"
+                    "Elections",
+                    "Electoral Process",
+                    "Nomination Day",
+                    "Polling Day",
+                    "By-election",
+                    "First-Past-the-Post",
+                    "Proportional Representation",
+                    "Voter Registration"
                 ],
                 "experiment": {
                     "type": "simulation",
@@ -252,16 +262,34 @@
             {
                 "id": "ss-l3-2",
                 "title": "The Branches of Government",
-                "content": "Most democratic governments are divided into three branches to ensure a 'separation of powers' and a system of 'checks and balances.' This prevents any one person or group from having too much control. The three branches are the Legislative, the Executive, and the Judiciary.\n\nThe 'Legislative' branch (the Parliament or National Assembly) is responsible for making and passing laws. The 'Executive' branch (the Prime Minister or President and their Cabinet) is responsible for implementing and enforcing those laws and managing the daily affairs of the country. The 'Judiciary' (the courts and judges) is responsible for interpreting the laws and ensuring they are applied fairly.\n\nCSEC students must be able to identify the functions of each branch and explain how they work together. For example, the legislature may pass a law, but the judiciary can rule it unconstitutional if it violates the rights of citizens. Understanding this structure is essential for understanding how the justice system and the political system interact.",
+                "content": "Most democratic governments are divided into three branches to ensure a 'separation of powers' and a system of 'checks and balances.' This prevents any one person or group from having too much control. The three branches are the Legislative, the Executive, and the Judiciary.\n\nThe 'Legislative' branch (the Parliament or National Assembly) is responsible for making and passing laws. The 'Executive' branch (the Prime Minister or President and their Cabinet) is responsible for implementing and enforcing those laws and managing the daily affairs of the country. The 'Judiciary' (the courts and judges) is responsible for interpreting the laws and ensuring they are applied fairly.\n\nCSEC students must be able to identify the functions of each branch and explain how they work together. For example, the legislature may pass a law, but the judiciary can rule it unconstitutional if it violates the rights of citizens. Understanding this structure is essential for understanding how the justice system and the political system interact.\n\nIt helps to separate the structure of government into its offices. The Head of State is the person who represents the nation: in Jamaica, the Monarch, represented in the country by the Governor-General. The Head of Government is the person who actually runs the administration - the Prime Minister, who is the leader of the party able to command a majority in the House of Representatives. The two roles are separate: the Governor-General opens Parliament and assents to laws on the Monarch's behalf, while the Prime Minister chooses ministers and directs policy.\n\nThe Prime Minister appoints the Cabinet, the committee of ministers that decides the main lines of policy and carries the government's business through Parliament. Each minister is responsible for a ministry or department - education, health, finance, national security, foreign affairs - and answers to Parliament for how that ministry performs. The body of ministers, with the public service beneath them, is the Executive.\n\nParliament has two chambers. The House of Representatives is elected: its members are chosen by the voters of the constituencies. The Senate is appointed, not elected: its members are named by the Prime Minister and by the Leader of the Opposition, and it reviews, amends and can delay legislation, but it does not decide who governs. The Leader of the Opposition leads the largest party outside the government, and has both a formal role - naming senators, chairing the Public Accounts Committee that scrutinises public spending - and a general duty to hold the government to account.\n\nBelow the national government sits local government: the municipal corporations covering the parishes, whose councillors are elected by local voters. Local government manages what is closest to people's daily lives - markets and abattoirs, street lighting, minor roads, drains, parochial roads, parks and cemeteries, public health inspection, and local planning. It is a school of democracy: many national politicians began as councillors.\n\nWhat does the state do for its citizens? Its functions are usually grouped as follows. It keeps law and order and protects citizens from crime, through the police, the courts and the prison service. It defends the country, through the Jamaica Defence Force and through foreign policy. It raises taxes and manages public money, through the Ministry of Finance and the tax authority, and borrows to fund what it cannot pay for in the year. It provides social services - education, health, water, housing, roads, drainage and social welfare - because a market alone will not supply them to everyone. It manages the economy, working to keep prices stable, encourage investment, create employment and regulate banks and utilities. It also provides the legal framework in which people and companies deal with each other, and works with other countries on trade, migration and regional affairs.\n\nEvery one of those functions has to be paid for. Taxation is therefore not an optional activity of government but the base of all the others: the services a government promises are limited, in the end, by what it is able and willing to collect and to borrow.",
                 "objectives": [
                     "Identify the three branches of government",
-                    "Explain the principle of separation of powers"
+                    "Explain the principle of separation of powers",
+                    "Distinguish between the Head of State and the Head of Government",
+                    "Explain the role of the Cabinet and of individual ministers",
+                    "Describe the two chambers of Parliament and the role of the Opposition",
+                    "Explain what local government does",
+                    "List the functions of government and explain how they are paid for"
                 ],
                 "concepts": [
                     "Legislative",
                     "Executive",
                     "Judiciary",
-                    "Checks and Balances"
+                    "Checks and Balances",
+                    "Head of State",
+                    "Head of Government",
+                    "Governor-General",
+                    "Prime Minister",
+                    "Cabinet",
+                    "House of Representatives",
+                    "Senate",
+                    "Leader of the Opposition",
+                    "Local Government",
+                    "Municipal Corporation",
+                    "Public Services",
+                    "Taxation",
+                    "Functions of Government"
                 ],
                 "experiment": {
                     "type": "map-explorer",
@@ -426,6 +454,171 @@
                 "experiment": {
                     "type": "matching-game",
                     "description": "Where Did It Come From? Match each Caribbean tradition to its root."
+                }
+            }
+        ]
+    },
+    {
+        "id": "ss-mod-8",
+        "title": "Elections and Political Parties",
+        "lessons": [
+            {
+                "id": "elec-political-party-election-preparation",
+                "title": "How a Party Prepares for an Election",
+                "content": "A political party is an organised group of people who share an idea of how the country should be governed. Between elections a party keeps its organisation alive; as an election approaches it turns that organisation towards winning seats. Preparing for an election is a long, planned process, not a single campaign week.\n\nIt begins with the manifesto. The manifesto is the party's written programme: what it promises to do about jobs, education, health, crime, taxes and roads if it forms the government. The manifesto matters because it is the main way a party explains its policies to voters, and because a government is later judged against the promises it made.\n\nNext comes the selection of candidates. Each constituency needs one candidate to carry the party's colours. Parties hold selection meetings or primaries in which party members choose or approve the person who will stand, and the national party usually has to ratify that choice. A candidate may be chosen for experience, for popularity in the area, for the support they can bring, or to balance the party's reach. Choosing a weak candidate can cost a party a seat it expected to win.\n\nThen the campaign is organised. This means dividing the country into constituencies with a campaign team in each, appointing a campaign manager, preparing a house-to-house canvass to find out who intends to vote and for whom, booking meetings, printing posters and pamphlets, arranging transport to the polling station for the elderly and the disabled, buying time on radio and television, and now running a constant social-media campaign. Every step costs money, which is why finance is part of the plan.\n\nFinally, parties must account for how the campaign was paid for. Campaigns are financed by members' subscriptions, fund-raising events, donations and the candidates themselves. Because large donations can be used to buy influence after an election, the money side of a campaign is watched closely: parties and candidates are expected to record what they receive and to disclose it. A democracy in which money decides the result is a democracy in name only, so honest accounting is part of preparing properly.\n\nPreparation ends at the nomination day set by the electoral commission, when the party's candidate is formally put forward. After that, the contest belongs to the voters.",
+                "objectives": [
+                    "Describe the steps a political party takes to prepare for an election",
+                    "Explain what a manifesto is and why it matters to voters",
+                    "Explain how candidates are selected and why the choice matters",
+                    "Explain why the financing of a campaign has to be accounted for"
+                ],
+                "concepts": [
+                    "Political Party",
+                    "Manifesto",
+                    "Candidate Selection",
+                    "Campaign Organisation",
+                    "Canvassing",
+                    "Campaign Finance",
+                    "Nomination Day"
+                ],
+                "experiment": {
+                    "type": "timeline",
+                    "description": "Election Countdown: put the steps of a party's election preparation in order, from writing the manifesto to nomination day."
+                }
+            },
+            {
+                "id": "elec-factors-influencing-election-outcomes",
+                "title": "Factors Influencing Election Outcomes",
+                "content": "Two parties can fight a perfectly organised campaign and still have very different results. Several factors decide who wins.\n\nThe issues matter. When one issue dominates public concern - unemployment, the cost of living, crime, a hurricane's damage - the party whose policy on that issue is trusted usually gains. Where no single issue dominates, elections turn more on general trust in the party's ability to manage the country.\n\nThe personality and reputation of the candidate and the party leader matter as much as the policy. Voters listen to how a leader speaks, carries themselves and handles pressure. A candidate who is known and respected in the constituency - who has lived there, worked there or served it - often holds a personal following that survives a bad year for the party.\n\nParty loyalty is another factor. Many voters support the same party their parents and community have always supported; this is sometimes called a safe seat or a traditional vote. Loyalty makes some constituencies predictable, and it means the handful of constituencies that do change hands decide the government - the marginal seats.\n\nThe media shape what voters think is important, and how they judge it. Newspapers, radio, television and social media set the questions that are asked, report scandals, and repeat a party's message or its failures. Media coverage can be fair or one-sided, which is why access to the media, and honest reporting, matter in a democracy.\n\nTurnout decides how much of the country is speaking. If a party's supporters stay at home while its rival's supporters vote in large numbers, the party loses even where it is more popular. A low turnout therefore favours the side whose supporters are more committed.\n\nFinally, the boundaries matter. Constituency boundaries are drawn so that seats hold roughly similar numbers of voters. Where a party wins many seats with a small share of the total vote - and another wins few seats with a larger share - the interaction of party strength with the way boundaries are drawn is part of the explanation. That is why the system of representation, and who draws the boundaries, is itself a political question.",
+                "objectives": [
+                    "Identify the main factors that decide who wins an election",
+                    "Explain how issues, personality and party loyalty influence voters",
+                    "Explain the influence of the media and of turnout on a result",
+                    "Explain why constituency boundaries can affect the outcome"
+                ],
+                "concepts": [
+                    "Voter Turnout",
+                    "Marginal Seat",
+                    "Safe Seat",
+                    "Party Loyalty",
+                    "Media Influence",
+                    "Constituency Boundaries",
+                    "Voter Apathy"
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "What Decides the Result? Match each factor in an election result to how it works on the voters."
+                }
+            },
+            {
+                "id": "elec-voter-participation",
+                "title": "Voter Participation in Elections",
+                "content": "Voting is the most direct way an ordinary citizen takes part in government. In Jamaica you may vote once you are at least 18 years old and your name is on the voters' list. The electoral commission keeps that list: it registers citizens, issues voters' identification, keeps the register up to date and makes the arrangements on polling day. A citizen who is not registered cannot vote, however strongly they feel about the result - which is why registration drives are part of every election.\n\nOn polling day the voter goes to the polling station for their polling division, proves who they are, has their finger marked with indelible ink, receives a ballot, marks it in secret and places it in the ballot box. Secrecy is protected because a vote that can be seen is a vote that can be bought or punished.\n\nTurnout is the share of registered voters who actually vote. It varies from constituency to constituency and from election to election, and it is watched closely, because a government elected on a low turnout speaks for fewer of the people it governs.\n\nSeveral things raise or lower turnout. Convenience helps - polling stations that are close, and time off from work. So does a sense that the election is close and will make a difference. Turnout falls when voters are apathetic: when they believe nothing will change whoever wins, when they think all politicians are the same, when registering or voting seems difficult, or when they feel they have no stake in the outcome. Bad weather and long queues lower turnout on the day; a comfortable, trusted process raises it.\n\nSome countries respond to low turnout with compulsory voting, where a citizen who fails to vote without a valid reason is fined. Jamaica does not have compulsory voting: voting here is a right and a responsibility, but it is voluntary. Compulsory voting raises turnout, but it is debated, because a vote cast only to avoid a fine is not an informed vote.\n\nBeyond the ballot box, citizens can take part between elections by joining a political party, attending public meetings, writing to or meeting their representative, signing a petition, joining a community organisation, or taking part in a peaceful demonstration. Each of them is a way of holding a government to account once the voting is over.",
+                "objectives": [
+                    "State who may vote and explain how a citizen becomes registered",
+                    "Describe what happens at a polling station on polling day",
+                    "Explain what turnout means and why a low turnout matters",
+                    "Give reasons for voter apathy and explain the arguments about compulsory voting",
+                    "Describe ways citizens can participate between elections"
+                ],
+                "concepts": [
+                    "Voter Registration",
+                    "Voters' List",
+                    "Turnout",
+                    "Voter Apathy",
+                    "Secret Ballot",
+                    "Compulsory Voting",
+                    "Polling Division",
+                    "Active Citizenship"
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Who Can Vote? Sort each person into eligible to vote or not eligible, using the age and registration rules."
+                }
+            },
+            {
+                "id": "elec-interpreting-election-data",
+                "title": "Interpreting Election Data",
+                "content": "Election results arrive as numbers, and a citizen who can read those numbers understands what actually happened. Three skills cover most of it: reading a table, reading a graph, and working out a percentage change.\n\nThe number of registered voters is the total who may vote. The number who voted, or the valid votes cast, is smaller. Turnout is the percentage of registered voters who voted:\n\n    turnout % = (votes cast / registered voters) x 100\n\nA constituency of 40,000 registered voters in which 24,000 voted therefore has a turnout of 60 per cent. Working in percentages lets you compare a small rural constituency with a large city one, which raw numbers do not.\n\nSeats are not votes. In a first-past-the-post system, the candidate with the most votes in a constituency takes that seat, and the other votes in the constituency elect nobody. A party can therefore win a large share of the votes cast across the country and a much smaller share of the seats, or the other way round. When you read a national result, always put the share of votes next to the share of seats.\n\nA swing is the change in support between two elections. If a party took 45 per cent of the vote in a constituency at one election and 51 per cent at the next, its support swung by 6 percentage points towards it. Swings are the clearest single measure of a change in public mood, and a large swing in many constituencies at once is what turns an election into a landslide.\n\nConstituencies that change hands are called marginals, and the size of the majority shows how safe a seat is: a candidate who wins by 200 votes holds a marginal seat and can expect a hard fight next time, while a majority of several thousand suggests a safe seat.\n\nWhen you are given an election table, graph or map, read it in this order:\n\n    1. What is being counted - votes, seats, or percentages?\n    2. What are the units and the totals, so you know what a row or a bar means?\n    3. What is the pattern - who is ahead, and by how much?\n    4. What has changed since the last set of figures (the swing)?\n    5. What does the pattern not tell you - how many people did not vote at all?\n\nThat last question is the one amateurs forget. A result describes the people who voted; it says nothing directly about the views of those who stayed at home.",
+                "objectives": [
+                    "Calculate turnout as a percentage of registered voters",
+                    "Distinguish between the share of votes and the share of seats",
+                    "Calculate and interpret a swing between two elections",
+                    "Read an election table, graph or map in a systematic order"
+                ],
+                "concepts": [
+                    "Turnout Percentage",
+                    "Share of Votes",
+                    "Share of Seats",
+                    "Swing",
+                    "Majority",
+                    "Marginal Seat",
+                    "First-Past-the-Post",
+                    "Registered Voters"
+                ],
+                "experiment": {
+                    "type": "data-explorer",
+                    "description": "Read the Results: explore a constituency results table, work out turnout, the swing and who took the seat."
+                }
+            }
+        ]
+    },
+    {
+        "id": "ss-mod-9",
+        "title": "Government Structure and Governance",
+        "lessons": [
+            {
+                "id": "gov-citizens-government-and-the-constitution",
+                "title": "Citizens, Government and the Constitution",
+                "content": "A constitution is the set of rules that says how a country is governed: who holds power, how they are chosen, what they may and may not do, and what the people may claim from them. It is the highest law in the land, which means every other law, and every act of government, has to agree with it. Jamaica's constitution came into force at independence on 6 August 1962 - it is the Jamaica (Constitution) Order in Council, 1962 - and it has been amended since. One of the most important amendments replaced the original statement of rights with a fuller Charter of Fundamental Rights and Freedoms.\n\nBecause the constitution is the supreme law, no minister, no majority in Parliament and no police officer can lawfully do something it forbids. It is also why a citizen who believes their constitutional rights have been infringed can go to the Supreme Court and ask it to rule on the matter: the courts interpret the constitution and can declare an act unconstitutional.\n\nThe Charter of Fundamental Rights and Freedoms sets out the rights every person in Jamaica is entitled to. They include the right to life, liberty and security of the person; freedom of thought, conscience, belief and opinion; freedom of expression and of the press; freedom of peaceful assembly and association; protection from inhuman treatment and from forced labour; freedom of movement; protection of property and from arbitrary search; and the right to a fair trial, including the presumption of innocence. These are not gifts that a government may withdraw when it finds them inconvenient - they are the terms on which it holds office. Most are not absolute: the constitution itself sets out when a right may be limited, and a limit has to be justified by law and be reasonable in a democratic society.\n\nRights come with responsibilities. A citizen is expected to obey the law, to pay taxes so that public services can be provided, to respect the rights of others, to serve on a jury or as a witness when called, to care for the environment, and to vote and take an informed interest in public affairs. A democracy in which citizens claim rights but accept no duties cannot function for long.\n\nBetween elections, citizens influence government in many ways: by voting, by joining or supporting a political party, by writing to or meeting their Member of Parliament or councillor, by voting in local government elections, by signing or presenting petitions, by belonging to a trade union, a church, a youth group or a community association, by attending public consultations on new laws and developments, by using their right to ask for information held by public bodies, by writing to the newspapers or calling in to radio and television programmes, and by taking part in peaceful marches and demonstrations. Pressure from organised citizens - including through the media - is often what turns a grievance into a change in policy.\n\nA statute, and the constitution itself, is amended over time. When you study this section, quote the law by name, describe what it protects, and check the current version with the Ministry of Justice or a lawyer before relying on a particular section.",
+                "objectives": [
+                    "Explain what a constitution is and why it is the supreme law",
+                    "Explain where Jamaica's constitution came from and how it can be changed",
+                    "Identify the fundamental rights and freedoms it protects",
+                    "State the responsibilities that go with those rights",
+                    "Describe how citizens can influence government between elections"
+                ],
+                "concepts": [
+                    "Constitution",
+                    "Supreme Law",
+                    "Charter of Fundamental Rights and Freedoms",
+                    "Fundamental Rights",
+                    "Citizen's Responsibilities",
+                    "Unconstitutional",
+                    "Right of Access to Information",
+                    "Public Consultation"
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Right or Responsibility? Match each statement to the fundamental right or the citizen's duty it belongs to."
+                }
+            },
+            {
+                "id": "gov-essentials-of-good-governance",
+                "title": "Essentials of Good Governance",
+                "content": "Governance is the way a country is run - the way decisions are made, who makes them, and how those who make them are held to account. A government can hold power legally and still govern badly. Good governance names the qualities that separate the two.\n\nParticipation means that people are able to take part in the decisions that affect them, directly or through representatives, and that the views of women, young people, minorities and the poor are heard too, not only those of the loudest or the richest.\n\nThe rule of law means that every person and every institution, including the government itself, is subject to the law, and that laws are applied equally, fairly and predictably. No minister is above the law, and no one is punished without a fair hearing.\n\nTransparency means that decisions and the reasons for them are open to the public, and that information the public has a legitimate interest in is available - so a citizen can ask what a contract cost or why a policy was chosen. Secret government invites abuse.\n\nAccountability means that public officials must answer for what they do with public power and public money. They report, they are questioned in Parliament, they are audited, and they can be removed. Bodies such as the Auditor General, the Integrity Commission and the parliamentary committees exist to do exactly that work.\n\nResponsiveness means that institutions serve the public within a reasonable time and answer to the public's needs - a ministry that ignores letters, or a hospital with no answer for a waiting patient, fails this test however lawful it is.\n\nEquity and inclusiveness mean that all citizens, whatever their parish, income, gender, religion or disability, have access to public services and a fair chance. A road that is paved in one district and impassable in another is a governance question, not just an engineering one.\n\nEffectiveness and efficiency mean that public institutions use the country's resources to produce results that meet real needs, without waste. A programme that spends the budget and changes nothing is not good governance, however well it follows the rules.\n\nCorruption - bribery, theft of public funds, favouritism in awarding contracts, and the use of office for private gain - is the direct opposite of good governance, because it breaks every one of these principles at once. Its cost is paid by ordinary people: the school that is not built, the medicine that is not bought, the road that is not repaired.\n\nThese principles are the yardstick you use to judge a government. Ask of any decision: who took part, was it lawful, can I see why, who is answerable for it, did they respond, was everyone treated fairly, and did it produce a result worth what it cost?",
+                "objectives": [
+                    "Define good governance and distinguish it from merely holding power lawfully",
+                    "Explain each of the principles of good governance",
+                    "Explain how corruption undermines good governance and who pays for it",
+                    "Use the principles to judge a real decision taken by a government"
+                ],
+                "concepts": [
+                    "Governance",
+                    "Participation",
+                    "Rule of Law",
+                    "Transparency",
+                    "Accountability",
+                    "Responsiveness",
+                    "Equity and Inclusiveness",
+                    "Effectiveness and Efficiency",
+                    "Corruption",
+                    "Auditor General",
+                    "Integrity Commission"
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Which Principle? Sort each example of government behaviour into the principle of good governance it shows - or breaks."
                 }
             }
         ]
