@@ -72,6 +72,30 @@ const SUBJECTS = readdirSync(join(root, "content"))
 const BANKS = new Map(SUBJECTS.map((subject) => [subject, readBank(subject)]));
 const topicsOf = (questions) => new Set(questions.map((question) => questionGroup(question)));
 const idsOf = (questions) => questions.map((question) => String(question.id));
+// The paper's shape contract, in the one place both the real run and the red
+// controls below call it. It has to hold for BOTH regimes a bank can be in:
+//   * a bank with no more topic groups than a paper holds -> the paper shows one
+//     question from EVERY topic (so a mock always samples the whole syllabus);
+//   * a bank with more groups than the paper holds (Physics: 61 lessons, 40
+//     questions) -> one-from-everywhere is arithmetically impossible, so the
+//     paper must instead hold the MOST distinct topics a paper can hold, which
+//     is still "no topic repeated until the paper is full".
+const paperShapeProblems = (bank, exam) => {
+  const out = [];
+  const bankIds = new Set(idsOf(bank));
+  const ids = idsOf(exam);
+  if (exam.length !== MAX_QUESTIONS) out.push(`${exam.length} questions`);
+  if (new Set(ids).size !== ids.length) out.push("duplicate question");
+  if (!ids.every((id) => bankIds.has(id))) out.push("question not in the bank");
+  const want = Math.min(countGroups(bank), MAX_QUESTIONS);
+  const got = topicsOf(exam).size;
+  if (got !== want) out.push(`${got} distinct topics, want ${want}`);
+  if (countGroups(bank) <= MAX_QUESTIONS) {
+    const missing = [...topicsOf(bank)].filter((topic) => !topicsOf(exam).has(topic));
+    if (missing.length) out.push(`topics missing ${missing.join(",")}`);
+  }
+  return out;
+};
 const mockSrc = read("src/components/MockExam.jsx");
 const paperSrc = read("src/data/mockPaper.js");
 
@@ -89,34 +113,52 @@ check(
   SUBJECTS.every((s) => BANKS.get(s).length > MAX_QUESTIONS),
   SUBJECTS.filter((s) => BANKS.get(s).length <= MAX_QUESTIONS).join(", ")
 );
-check(
-  `every bank covers fewer topics than a paper holds (≤ ${MAX_QUESTIONS})`,
-  SUBJECTS.every((s) => countGroups(BANKS.get(s)) <= MAX_QUESTIONS),
-  SUBJECTS.filter((s) => countGroups(BANKS.get(s)) > MAX_QUESTIONS)
-    .map((s) => `${s}: ${countGroups(BANKS.get(s))}`)
-    .join(", ")
-);
+// The old precondition here was "every bank covers fewer topics than a paper holds",
+// which made "one question per topic" achievable. Physics now has 61 lessons for a
+// 40-question paper, so that precondition is arithmetically impossible and the
+// coverage guarantee is re-derived below (see paperShapeProblems). Reporting the
+// split instead of asserting it keeps the number visible for the next subject that
+// crosses the line.
+const oversize = SUBJECTS.filter((s) => countGroups(BANKS.get(s)) > MAX_QUESTIONS);
+console.log(`  banks with more topic groups than a paper holds: ${oversize.length}` +
+  (oversize.length ? ` (${oversize.map((s) => `${s}: ${countGroups(BANKS.get(s))}`).join(", ")})` : ""));
 
 const shapeProblems = [];
 for (const subject of SUBJECTS) {
   const bank = BANKS.get(subject);
-  const bankIds = new Set(idsOf(bank));
   for (const seed of [1, 7, 424242]) {
-    const exam = buildMockPaper(bank, { seed });
-    const ids = idsOf(exam);
-    if (exam.length !== MAX_QUESTIONS) shapeProblems.push(`${subject}/${seed}: ${exam.length} questions`);
-    if (new Set(ids).size !== ids.length) shapeProblems.push(`${subject}/${seed}: duplicate question`);
-    if (!ids.every((id) => bankIds.has(id))) shapeProblems.push(`${subject}/${seed}: question not in the bank`);
-    // Coverage: one question per topic, so a mock always samples the whole syllabus.
-    const missing = [...topicsOf(bank)].filter((topic) => !topicsOf(exam).has(topic));
-    if (missing.length) shapeProblems.push(`${subject}/${seed}: topics missing ${missing.join(",")}`);
+    for (const problem of paperShapeProblems(bank, buildMockPaper(bank, { seed }))) {
+      shapeProblems.push(`${subject}/${seed}: ${problem}`);
+    }
   }
 }
 check(
-  "every paper is 40 bank questions, no duplicates, one from every topic in the bank",
+  `every paper is ${MAX_QUESTIONS} bank questions, no duplicates, nothing outside the bank, and as many ` +
+  `distinct topics as the paper can hold (every topic, wherever the bank has no more topics than the paper)`,
   shapeProblems.length === 0,
   shapeProblems.slice(0, 4).join(" | ")
 );
+// --- red controls: the re-derived coverage assertion has to be able to fail -------
+// A synthetic 12-group bank (a paper can show every topic) and a synthetic 45-group
+// bank (it cannot), each sampled for real, then doctored two ways.
+{
+  const synthetic = (groups) => Array.from({ length: groups }, (_, g) =>
+    Array.from({ length: 4 }, (_, i) => ({ id: `s${g}-${i}`, question: `q${g}-${i}`, topic: `topic-${g}`, options: ["a", "b", "c", "d"], answer: "a" }))
+  ).flat();
+  const small = synthetic(12), big = synthetic(45);
+  const smallPaper = buildMockPaper(small, { seed: 3 });
+  const bigPaper = buildMockPaper(big, { seed: 3 });
+  const fires = [];
+  const control = (label, bank, exam) => { if (paperShapeProblems(bank, exam).length) fires.push(label); };
+  check("red control green-path: a real 12-group paper satisfies the contract", paperShapeProblems(small, smallPaper).length === 0, JSON.stringify(paperShapeProblems(small, smallPaper)));
+  check("red control green-path: a real 45-group paper satisfies the contract", paperShapeProblems(big, bigPaper).length === 0, JSON.stringify(paperShapeProblems(big, bigPaper)));
+  control("small bank missing a topic", small, smallPaper.filter((q) => q.topic !== "topic-0"));
+  control("oversize bank with a repeated topic", big, bigPaper.map((q, i) => (i === 0 ? { ...q, topic: bigPaper[1].topic } : q)));
+  control("oversize bank one question short", big, bigPaper.slice(1));
+  control("oversize bank with an outside question", big, [...bigPaper.slice(1), { ...bigPaper[0], id: "not-in-bank" }]);
+  check("red controls: every way the contract can be broken is caught",
+    fires.length === 4, `caught ${fires.length}/4 [${fires.join(" | ")}]`);
+}
 
 const determinismProblems = [];
 for (const subject of SUBJECTS) {
