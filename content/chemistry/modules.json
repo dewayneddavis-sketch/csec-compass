@@ -23,14 +23,18 @@
             {
                 "id": "atomic-structure",
                 "title": "Atomic Structure",
-                "content": "The atom is the smallest unit of an element that retains its chemical properties. It consists of three main subatomic particles: protons, neutrons, and electrons. Protons (positively charged) and neutrons (neutral) are found in the dense centre called the nucleus. Electrons (negatively charged) orbit the nucleus in specific energy levels or shells.\n\nAn element is defined by its Atomic Number (Z), which is the number of protons in its nucleus. In a neutral atom, the number of electrons equals the number of protons. The Mass Number (A) is the total number of protons and neutrons. Isotopes are atoms of the same element with the same atomic number but different mass numbers due to a different number of neutrons.\n\nWhen writing the electronic configuration, electrons fill the shells starting from the one closest to the nucleus. For the first 20 elements, the shells can hold a maximum of 2, 8, 8, and 2 electrons respectively. Understanding atomic structure is vital for predicting how elements will react and bond with others.",
+                "content": "The atom is the smallest unit of an element that retains its chemical properties. It consists of three main subatomic particles: protons, neutrons, and electrons. Protons (positively charged) and neutrons (neutral) are found in the dense centre called the nucleus. Electrons (negatively charged) orbit the nucleus in specific energy levels or shells.\n\nAn element is defined by its Atomic Number (Z), which is the number of protons in its nucleus. In a neutral atom, the number of electrons equals the number of protons. The Mass Number (A) is the total number of protons and neutrons. Isotopes are atoms of the same element with the same atomic number but different mass numbers due to a different number of neutrons.\n\nWhen writing the electronic configuration, electrons fill the shells starting from the one closest to the nucleus. For the first 20 elements, the shells can hold a maximum of 2, 8, 8, and 2 electrons respectively. Understanding atomic structure is vital for predicting how elements will react and bond with others.\n\nBecause isotopes of an element have the same number of electrons, they have identical chemical properties, but their different numbers of neutrons give them different masses, which is what makes them useful. Radioactive isotopes, called radioisotopes, are used as tracers: a small amount of a radioisotope is introduced into a system and its radiation is followed to track where the substance goes, for example through a plant or through a person's body.\n\nRadioisotopes have further uses. Carbon-14 is used to date ancient remains, because it decays at a known rate after a living thing dies, and iodine-131 and cobalt-60 are used in medicine to treat disease and sterilise equipment. The same isotope that is useful can also be dangerous, because its radiation must be handled with shielding and kept away from living tissue.",
                 "objectives": [
                     "Describe the structure of the atom",
-                    "Define atomic number and mass number"
+                    "Define atomic number and mass number",
+                    "Explain why isotopes have identical chemical properties but different masses",
+                    "Describe the uses of radioisotopes as tracers, in dating and in medicine"
                 ],
                 "concepts": [
                     "Atoms consist of protons, neutrons, and electrons.",
-                    "Protons and neutrons are in the nucleus."
+                    "Protons and neutrons are in the nucleus.",
+                    "Radioisotopes: radioactive isotopes used as tracers, for carbon dating and in medicine.",
+                    "Carbon-14 is used to date ancient remains because it decays at a known rate after death."
                 ],
                 "experiment": {
                     "type": "atom-builder",
@@ -48,6 +52,82 @@
                         "caption": "The shells fill 2, then 8, then 8, then 2 across the first 20 elements."
                     }
                 ]
+            },
+            {
+                "id": "chem-pure-substances-and-mixtures",
+                "title": "Pure Substances and Mixtures",
+                "content": "Matter is either a pure substance or a mixture. A pure substance is made of only one kind of particle and has a fixed composition and a sharp melting and boiling point. An element is a pure substance that cannot be broken down into anything simpler by chemical means, and a compound is a pure substance made of two or more elements chemically joined in fixed proportions, such as water, H\u2082O.\n\nA mixture contains two or more substances that are not chemically joined, so they keep their own properties and can be present in any proportion. The parts of a mixture can be separated by physical means such as filtration, evaporation or distillation, because no chemical reaction is needed. Air, sea water and crude oil are all mixtures.\n\nTo tell a pure substance from a mixture, test a sample's behaviour as it changes state. A pure substance melts and boils at one fixed temperature, while a mixture melts over a range of temperatures and often boils over a range too. Paper chromatography can also show that a single 'pure' spot separates into more than one coloured substance, proving it was a mixture.",
+                "objectives": [
+                    "Distinguish a pure substance from a mixture",
+                    "Classify a sample as an element, a compound or a mixture",
+                    "Explain how melting point and chromatography reveal whether a sample is pure"
+                ],
+                "concepts": [
+                    "Pure substance: made of only one kind of particle, with a fixed composition and a sharp melting and boiling point.",
+                    "Element: a pure substance that cannot be broken down into anything simpler; compound: two or more elements chemically joined in fixed proportions.",
+                    "Mixture: two or more substances not chemically joined, separable by physical means."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Pure Substances and Mixtures: Sort 8 statements into Pure substance, Mixture."
+                }
+            },
+            {
+                "id": "chem-solutions-suspensions-and-colloids",
+                "title": "Solutions, Suspensions, and Colloids",
+                "content": "A mixture of substances can take three common forms: a solution, a suspension or a colloid. They are told apart by the size of the particles mixed into the liquid and by what the mixture looks like. A solution is a homogeneous mixture in which the dissolved particles are single ions or molecules, far too small to see or to be trapped by filter paper, so the mixture is clear and does not settle on standing.\n\nA suspension is a heterogeneous mixture in which the solid particles are large enough to be seen and to settle out when the mixture is left to stand, such as muddy water or chalk powder shaken in water. The particles are also large enough to be trapped by filter paper, so a suspension can be separated by filtration. A colloid sits between the two: its particles are larger than those of a solution but too small to settle, so the mixture looks cloudy but stable, as in milk or fog.\n\nThese differences come from particle size. A solution has the smallest particles and stays clear, a suspension has the largest particles and separates on standing, and a colloid has particles in between that scatter a beam of light, which is why a colloid can look cloudy while a true solution lets light pass straight through.",
+                "objectives": [
+                    "Describe a solution, a suspension and a colloid",
+                    "Compare the three by particle size and by what each looks like",
+                    "Explain why a suspension separates on standing while a solution does not"
+                ],
+                "concepts": [
+                    "Solution: a homogeneous mixture whose dissolved particles are single ions or molecules, too small to see, clear and stable.",
+                    "Suspension: a heterogeneous mixture whose particles settle out on standing and can be trapped by filter paper.",
+                    "Colloid: particles larger than a solution but too small to settle, giving a cloudy but stable mixture such as milk or fog."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Solutions, Suspensions, and Colloids: Sort 8 statements into Solution, Suspension, Colloid."
+                }
+            },
+            {
+                "id": "chem-solubility-and-separation-techniques",
+                "title": "Solubility and Separation Techniques",
+                "content": "Solubility is the maximum mass of a solute that dissolves in a given mass of solvent at a given temperature, and it usually rises as the temperature rises. A saturated solution holds the maximum amount of solute at that temperature, so any extra solute will not dissolve, and a solubility curve is a graph of solubility against temperature used to predict how much will dissolve.\n\nDifferent separation techniques suit different mixtures. Filtration separates an insoluble solid from a liquid, using filter paper that holds back the solid. Evaporation and crystallisation recover a dissolved solid by removing the solvent, while simple distillation separates a solvent from a solution by boiling and condensing the vapour, and fractional distillation separates two miscible liquids with different boiling points. Paper chromatography separates the different coloured solutes in a mixture because each solute travels up the paper at its own rate.\n\nThe right method depends on what is being separated. Filtration and evaporation work for a salt mixed with an insoluble solid or dissolved in water, crystallisation gives pure crystals from a saturated solution, distillation recovers the liquid, and chromatography separates and identifies the colours in a mixture such as an ink or a food dye.",
+                "objectives": [
+                    "Define solubility and a saturated solution",
+                    "Describe filtration, evaporation, crystallisation, distillation and chromatography",
+                    "Choose the right separation technique for a given mixture"
+                ],
+                "concepts": [
+                    "Solubility: the maximum mass of solute that dissolves in a given mass of solvent at a given temperature; a saturated solution holds the maximum solute.",
+                    "Filtration separates an insoluble solid from a liquid; evaporation and crystallisation recover a dissolved solid.",
+                    "Distillation separates a solvent from a solution, fractional distillation separates two miscible liquids, and chromatography separates coloured solutes."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Solubility and Separation Techniques: Match each of 5 items - Filtration, Evaporation and crystallisation, Simple distillation, Fractional distillation, Paper chromatography - to the statement that describes it."
+                }
+            },
+            {
+                "id": "chem-sucrose-extraction",
+                "title": "Sucrose Extraction",
+                "content": "Sucrose is the sugar extracted from sugar cane, and its production is the Caribbean's most familiar industrial chemical process. The first step is to crush the harvested cane between rollers and press out the juice, leaving a fibrous residue called bagasse. The juice is then clarified by adding lime, which neutralises its acidity and causes impurities to settle out.\n\nThe clarified juice is heated to evaporate much of the water, concentrating it into a thick syrup, and this syrup is boiled until crystals of raw sugar form. The mixture of crystals and syrup is spun in a centrifuge to separate the brown crystals from the syrup, which is drained off as molasses. The raw sugar crystals are then refined by re-dissolving them, filtering, and re-crystallising to give white sugar.\n\nCSEC uses sucrose extraction as the example of a large-scale separation process, because it joins several techniques together in order: crushing, clarification, evaporation, crystallisation and separation. At each stage a physical separation removes one part of the mixture, so no chemical reaction is needed to obtain the sugar from the cane.",
+                "objectives": [
+                    "Describe the stages of sugar production from cane to crystals",
+                    "Identify the separation technique used at each stage",
+                    "Explain why sucrose extraction is a physical rather than a chemical process"
+                ],
+                "concepts": [
+                    "Sucrose is extracted by crushing the cane, clarifying the juice with lime, evaporating the water, and crystallising the sugar.",
+                    "The syrup left after the crystals are removed is molasses.",
+                    "Sucrose extraction is a physical separation: each stage removes one part of the mixture, so no chemical reaction is needed."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Sucrose Extraction: Match each of 5 items - Crushing, Clarification, Evaporation, Crystallisation, Centrifuge - to the statement that describes it."
+                }
             }
         ]
     },
@@ -58,14 +138,18 @@
             {
                 "id": "periodic-table-trends",
                 "title": "Periodic Table Trends",
-                "content": "The Periodic Table is an organised arrangement of all known chemical elements, ordered by increasing atomic number. Elements are arranged in vertical columns called 'Groups' and horizontal rows called 'Periods.' Elements in the same group have the same number of valence (outer shell) electrons, which gives them similar chemical properties.\n\nSeveral important trends appear across the table. Atomic radius generally decreases from left to right across a period because the increasing nuclear charge pulls the electrons closer. Conversely, it increases down a group as more energy levels are added. Electronegativity (the ability to attract electrons) and ionisation energy (the energy needed to remove an electron) both tend to increase across a period and decrease down a group.\n\nCSEC Chemistry often focuses on Group 1 (Alkali Metals), Group 7 (Halogens), and Group 0 (Noble Gases). Group 1 metals become more reactive as you go down the group because the outer electron is further from the nucleus and easier to lose. Group 7 non-metals become less reactive down the group as it becomes harder to attract an electron.",
+                "content": "The Periodic Table is an organised arrangement of all known chemical elements, ordered by increasing atomic number. Elements are arranged in vertical columns called 'Groups' and horizontal rows called 'Periods.' Elements in the same group have the same number of valence (outer shell) electrons, which gives them similar chemical properties.\n\nSeveral important trends appear across the table. Atomic radius generally decreases from left to right across a period because the increasing nuclear charge pulls the electrons closer. Conversely, it increases down a group as more energy levels are added. Electronegativity (the ability to attract electrons) and ionisation energy (the energy needed to remove an electron) both tend to increase across a period and decrease down a group.\n\nCSEC Chemistry often focuses on Group 1 (Alkali Metals), Group 7 (Halogens), and Group 0 (Noble Gases). Group 1 metals become more reactive as you go down the group because the outer electron is further from the nucleus and easier to lose. Group 7 non-metals become less reactive down the group as it becomes harder to attract an electron.\n\nThe position of an element in the table lets you predict its properties before you ever see it. An element in the same group as a known element has the same number of valence electrons and so behaves in a similar way, and an element in the same period has its outer electrons in the same shell, so its properties change in a regular way across the period.\n\nTo predict a property, find the element's group and period and apply the trend. From its group you can predict how many electrons it will gain, lose or share and its likely formula, and from its position you can predict whether it is a metal or a non-metal and how reactive it is likely to be. This is why the table is used to work out the properties of an element such as an alkali metal or a halogen, even one the student has never handled.",
                 "objectives": [
                     "Describe the arrangement of elements in the Periodic Table",
-                    "Identify trends in groups and periods"
+                    "Identify trends in groups and periods",
+                    "Predict the properties of an element from its group and period",
+                    "Use the trends to forecast the reactivity and bonding of an element"
                 ],
                 "concepts": [
                     "Elements are arranged by increasing atomic number.",
-                    "Groups have similar chemical properties."
+                    "Groups have similar chemical properties.",
+                    "Elements in the same group behave in a similar way, and properties change in a regular way across a period.",
+                    "Predicting a property uses the element's group and period to forecast its reactivity, bonding and likely formula."
                 ],
                 "experiment": {
                     "type": "interactive-table",
@@ -82,18 +166,45 @@
             {
                 "id": "ionic-covalent-bonding",
                 "title": "Ionic and Covalent Bonding",
-                "content": "Chemical bonding is the process by which atoms combine to achieve a stable electron configuration, usually a full outer shell. Ionic bonding occurs between metals and non-metals through the transfer of electrons. The metal atom loses electrons to become a positive ion (cation), while the non-metal gains them to become a negative ion (anion). The resulting electrostatic attraction between these oppositely charged ions forms an ionic lattice.\n\nCovalent bonding occurs between non-metal atoms through the sharing of pairs of electrons. A single covalent bond consists of one shared pair. Simple covalent molecules, like water (H\u2082O) or methane (CH\u2084), have strong internal bonds but weak intermolecular forces, leading to low melting points. Giant covalent structures, like diamond or graphite, have extensive networks of strong bonds, making them very hard or high-melting.\n\nYou will be expected to draw 'dot-and-cross' diagrams to illustrate both types of bonding. Remember that for ionic bonds, you show the ions in brackets with their charges, while for covalent bonds, you show the overlap of the outer shells where the electrons are shared.",
+                "content": "Chemical bonding is the process by which atoms combine to achieve a stable electron configuration, usually a full outer shell. Ionic bonding occurs between metals and non-metals through the transfer of electrons. The metal atom loses electrons to become a positive ion (cation), while the non-metal gains them to become a negative ion (anion). The resulting electrostatic attraction between these oppositely charged ions forms an ionic lattice.\n\nCovalent bonding occurs between non-metal atoms through the sharing of pairs of electrons. A single covalent bond consists of one shared pair. Simple covalent molecules, like water (H\u2082O) or methane (CH\u2084), have strong internal bonds but weak intermolecular forces, leading to low melting points. Giant covalent structures, like diamond or graphite, have extensive networks of strong bonds, making them very hard or high-melting.\n\nYou will be expected to draw 'dot-and-cross' diagrams to illustrate both types of bonding. Remember that for ionic bonds, you show the ions in brackets with their charges, while for covalent bonds, you show the overlap of the outer shells where the electrons are shared.\n\nThe properties of a substance follow from the structure of its crystals. An ionic lattice is a regular repeating arrangement of oppositely charged ions held by strong electrostatic forces, so ionic compounds are hard and have high melting and boiling points, and they conduct electricity only when molten or dissolved, because only then are the ions free to move.\n\nGiant covalent structures have their atoms joined by covalent bonds throughout, which gives them high melting points, while simple covalent molecules have strong bonds inside each molecule but only weak forces between molecules, which is why they have low melting points. Comparing structure to property in this way lets you explain why one substance is hard, another conducts, and a third is a gas at room temperature.\n\nAllotropy is the existence of the same element in more than one form in the same physical state, and carbon is the classic example. Diamond and graphite are both pure carbon, yet diamond is hard, transparent and an electrical insulator, while graphite is soft, grey and a conductor of electricity, because their carbon atoms are arranged differently.\n\nIn diamond each carbon atom is bonded to four others in a rigid three-dimensional network, which makes diamond the hardest natural substance and gives it a very high melting point. In graphite each carbon atom is bonded to only three others in flat layers, and the fourth electron of each atom is delocalised, which lets graphite conduct electricity and lets the layers slide over one another, which is why graphite is used as a lubricant and in pencil lead.",
                 "objectives": [
                     "Explain the formation of ionic and covalent bonds",
-                    "Draw dot-and-cross diagrams"
+                    "Draw dot-and-cross diagrams",
+                    "Relate the structure of a crystal to its melting point, hardness and conductivity",
+                    "Compare ionic lattices, giant covalent structures and simple molecules",
+                    "Define allotropy and give carbon as the example",
+                    "Explain why diamond and graphite differ in hardness and conductivity"
                 ],
                 "concepts": [
                     "Ionic bonding: Transfer of electrons.",
-                    "Covalent bonding: Sharing of electrons."
+                    "Covalent bonding: Sharing of electrons.",
+                    "Ionic compounds are hard with high melting points and conduct only when molten or dissolved.",
+                    "Simple covalent molecules have low melting points because of the weak forces between molecules.",
+                    "Allotropy: the existence of the same element in more than one form in the same state, such as diamond and graphite for carbon.",
+                    "Diamond is hard and an insulator, while graphite is soft and conducts, because their carbon atoms are arranged differently."
                 ],
                 "experiment": {
                     "type": "bond-creator",
                     "description": "Bonding Lab: Select two atoms and choose to 'transfer' or 'share' electrons to form a stable molecule or lattice."
+                }
+            },
+            {
+                "id": "chem-metallic-bonding",
+                "title": "Metallic Bonding",
+                "content": "Metallic bonding holds the atoms of a metal together. Each metal atom gives up its outer electrons, so the metal becomes a lattice of positive ions arranged in regular layers, surrounded by a 'sea' of delocalised electrons that are free to move throughout the structure. The metal is held together by the strong electrostatic attraction between these positive ions and the sea of delocalised electrons.\n\nThe sea of delocalised electrons explains the properties of metals. Metals conduct electricity because the electrons can move and carry charge through the metal, and they conduct heat for the same reason, since the moving electrons pass energy along. Metals are malleable and ductile because the layers of positive ions can slide over one another without the bonding breaking, so the metal can be hammered into shape or drawn into a wire.\n\nThe strength of metallic bonding grows with the number of delocalised electrons each atom contributes and with the charge on the ions, which is why metals differ in their melting points and hardness. An alloy, in which atoms of another element are mixed into the layers, is usually harder than the pure metal because the different-sized atoms stop the layers from sliding as easily.",
+                "objectives": [
+                    "Describe metallic bonding in terms of positive ions and a sea of delocalised electrons",
+                    "Explain why metals conduct electricity and heat and are malleable and ductile",
+                    "Explain why an alloy is usually harder than the pure metal"
+                ],
+                "concepts": [
+                    "Metallic bonding: positive ions in regular layers held together by a sea of delocalised electrons.",
+                    "Metals conduct electricity and heat because the delocalised electrons are free to move.",
+                    "Metals are malleable and ductile because the layers of positive ions can slide over one another."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Metallic Bonding: Match each of 4 items - A sea of delocalised electrons, Layers of positive ions, Malleable and ductile, An alloy - to the statement that describes it."
                 }
             }
         ]
@@ -105,18 +216,60 @@
             {
                 "id": "molar-mass-calculations",
                 "title": "Molar Mass and Calculations",
-                "content": "The mole is the standard unit in chemistry for measuring the amount of a substance. One mole contains exactly 6.022 \u00d7 10\u00b2\u00b3 particles (Avogadro's constant). The molar mass (M) of a substance is the mass of one mole of that substance, expressed in grams per mole (g/mol). It is numerically equal to the relative atomic mass or relative molecular mass of the substance.\n\nThe fundamental formula for mole calculations is: Number of moles (n) = Mass (m) / Molar Mass (M). For example, the molar mass of water (H\u2082O) is approximately 18 g/mol (1\u00d72 for H + 16 for O). Therefore, 36 grams of water is exactly 2 moles.\n\nIn the CSEC exam, you will use moles to solve stoichiometry problems, such as determining the mass of product formed from a given mass of reactant. This requires a balanced chemical equation to find the molar ratio between substances. Practise these calculations until you can move confidently between mass, moles, and the number of particles.",
+                "content": "The mole is the standard unit in chemistry for measuring the amount of a substance. One mole contains exactly 6.022 \u00d7 10\u00b2\u00b3 particles (Avogadro's constant). The molar mass (M) of a substance is the mass of one mole of that substance, expressed in grams per mole (g/mol). It is numerically equal to the relative atomic mass or relative molecular mass of the substance.\n\nThe fundamental formula for mole calculations is: Number of moles (n) = Mass (m) / Molar Mass (M). For example, the molar mass of water (H\u2082O) is approximately 18 g/mol (1\u00d72 for H + 16 for O). Therefore, 36 grams of water is exactly 2 moles.\n\nIn the CSEC exam, you will use moles to solve stoichiometry problems, such as determining the mass of product formed from a given mass of reactant. This requires a balanced chemical equation to find the molar ratio between substances. Practise these calculations until you can move confidently between mass, moles, and the number of particles.\n\nStoichiometry uses the balanced equation to work out the masses of substances that react together. The coefficients in the balanced equation give the molar ratio, so the ratio of the moles of the reactants and products is fixed, and from the moles of one substance the moles of every other substance can be found.\n\nA reacting-mass calculation has three steps. First, convert the given mass to moles with n = m / M. Then use the molar ratio from the equation to find the moles of the substance asked for. Finally, convert those moles back to a mass with m = n x M. This sequence is used to predict the mass of product formed from a given mass of reactant and the mass of reactant needed to make a given mass of product.",
                 "objectives": [
                     "Calculate relative molecular mass",
-                    "Convert between moles and mass"
+                    "Convert between moles and mass",
+                    "Use the molar ratio from a balanced equation to relate reactants and products",
+                    "Calculate reacting masses with the n = m / M sequence"
                 ],
                 "concepts": [
                     "The mole is a unit of measurement for amount of substance.",
-                    "Molar mass is the mass of one mole of a substance."
+                    "Molar mass is the mass of one mole of a substance.",
+                    "The coefficients in a balanced equation give the molar ratio between reactants and products.",
+                    "A reacting-mass calculation converts mass to moles, applies the molar ratio, and converts back to mass."
                 ],
                 "experiment": {
                     "type": "calculator-tool",
                     "description": "Mole Machine: Input the formula of a compound and its mass to calculate the number of moles automatically, showing each step of the calculation."
+                }
+            },
+            {
+                "id": "chem-avogadros-law",
+                "title": "Avogadro's Law",
+                "content": "Avogadro's law states that equal volumes of all gases, at the same temperature and pressure, contain the same number of molecules. It follows from the law that one mole of any gas occupies the same volume under the same conditions, and this volume is called the molar volume. At room temperature and pressure, the molar volume of a gas is about 24 cubic decimetres, written 24 dm\u00b3.\n\nThe molar volume links the volume of a gas to the amount in moles. The relationship is: amount in moles (n) equals volume divided by the molar volume, so 48 dm\u00b3 of any gas at room temperature and pressure contains 2 moles, and 24 dm\u00b3 contains 1 mole. This works for every gas because the distance between the molecules is so much larger than the molecules themselves that their own size makes no difference.\n\nAvogadro's law is used in calculations with reacting gases. When a balanced equation shows the reacting volumes, the ratio of the volumes of the gases equals the ratio of the moles in the equation, so one volume of hydrogen reacts with half a volume of oxygen to form water vapour in a fixed whole-number ratio.",
+                "objectives": [
+                    "State Avogadro's law",
+                    "Define molar volume and its value at room temperature and pressure",
+                    "Use n = volume / molar volume to find the amount of gas"
+                ],
+                "concepts": [
+                    "Avogadro's law: equal volumes of all gases at the same temperature and pressure contain the same number of molecules.",
+                    "Molar volume: the volume of one mole of a gas, about 24 dm\u00b3 at room temperature and pressure.",
+                    "Amount in moles = volume divided by the molar volume."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Avogadro's Law: Match each of 4 items - Avogadro's law, Molar volume, Room temperature and pressure, Amount in moles - to the statement that describes it."
+                }
+            },
+            {
+                "id": "chem-chemical-equations-and-conservation",
+                "title": "Chemical Equations and Conservation of Matter",
+                "content": "A chemical equation describes a reaction using formulae, with the reactants on the left and the products on the right of an arrow. The equation must be balanced so that the number of atoms of each element is the same on both sides, because in a chemical reaction atoms are neither created nor destroyed, only rearranged. This is the law of conservation of mass.\n\nTo balance an equation, place numbers, called coefficients, in front of the formulae, never change the formulae themselves. For example, hydrogen reacts with oxygen to form water, and the unbalanced equation H\u2082 + O\u2082 \u2192 H\u2082O becomes 2H\u2082 + O\u2082 \u2192 2H\u2082O, so there are four hydrogen atoms and two oxygen atoms on each side.\n\nThe conservation of mass has a practical meaning: the total mass of the reactants equals the total mass of the products. In a reaction that seems to lose mass, such as one that gives off a gas, the missing mass has escaped into the air, and if the gas is collected the mass is found to be unchanged.",
+                "objectives": [
+                    "State the law of conservation of mass",
+                    "Balance a chemical equation using coefficients",
+                    "Explain why the total mass is unchanged in a reaction"
+                ],
+                "concepts": [
+                    "Law of conservation of mass: atoms are neither created nor destroyed, only rearranged, so the total mass of reactants equals the total mass of products.",
+                    "An equation is balanced by placing coefficients in front of the formulae, never by changing the formulae themselves.",
+                    "In a reaction that gives off a gas, the missing mass has escaped into the air."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Chemical Equations and Conservation of Matter: Match each of 4 items - Coefficients, Law of conservation of mass, Chemical equation, Total mass of the reactants - to the statement that describes it."
                 }
             }
         ]
@@ -128,14 +281,18 @@
             {
                 "id": "ph-scale-indicators",
                 "title": "pH Scale and Indicators",
-                "content": "The pH scale is a logarithmic scale ranging from 0 to 14, used to measure the acidity or alkalinity of a solution. A pH of 7 is neutral (like pure water). Solutions with a pH less than 7 are acidic, while those with a pH greater than 7 are basic (alkaline). The further a value is from 7, the stronger the acid or base.\n\nIndicators are substances that change colour depending on the pH of the solution they are in. Litmus paper is a simple indicator: it turns red in acids and blue in bases. Universal indicator is more precise, providing a full spectrum of colours (Red-Orange-Yellow-Green-Blue-Indigo-Violet) that correspond to specific pH values from 1 to 14.\n\nUnderstanding pH is essential for many biological and industrial processes. In the laboratory, you might use a pH meter for high precision or various indicators like phenolphthalein or methyl orange during titrations. CSEC questions often ask you to identify the pH range of common household substances or predict colour changes in specific indicators.",
+                "content": "The pH scale is a logarithmic scale ranging from 0 to 14, used to measure the acidity or alkalinity of a solution. A pH of 7 is neutral (like pure water). Solutions with a pH less than 7 are acidic, while those with a pH greater than 7 are basic (alkaline). The further a value is from 7, the stronger the acid or base.\n\nIndicators are substances that change colour depending on the pH of the solution they are in. Litmus paper is a simple indicator: it turns red in acids and blue in bases. Universal indicator is more precise, providing a full spectrum of colours (Red-Orange-Yellow-Green-Blue-Indigo-Violet) that correspond to specific pH values from 1 to 14.\n\nUnderstanding pH is essential for many biological and industrial processes. In the laboratory, you might use a pH meter for high precision or various indicators like phenolphthalein or methyl orange during titrations. CSEC questions often ask you to identify the pH range of common household substances or predict colour changes in specific indicators.\n\nAn acid and a base are defined by the ions they form in water. An acid is a substance that produces hydrogen ions, H\u207a, when dissolved in water, and a base is a substance that produces hydroxide ions, OH\u207b, when dissolved in water. An alkali is a soluble base, so every alkali is a base but not every base is an alkali.\n\nThis definition ties directly to the pH scale. The more hydrogen ions a solution contains, the lower its pH and the stronger the acid, while a base lowers the concentration of hydrogen ions and raises the pH. Neutralisation is then the reaction in which hydrogen ions and hydroxide ions join to form water, which is why the pH of a solution moves towards 7 as an acid and a base neutralise each other.",
                 "objectives": [
                     "Describe the pH scale",
-                    "Use indicators to identify acids and bases"
+                    "Use indicators to identify acids and bases",
+                    "Define an acid and a base in terms of hydrogen and hydroxide ions",
+                    "Relate the concentration of hydrogen ions to the pH of a solution"
                 ],
                 "concepts": [
                     "Acids have pH < 7, Bases have pH > 7.",
-                    "Universal indicator shows a range of colours."
+                    "Universal indicator shows a range of colours.",
+                    "Acid: a substance that produces hydrogen ions, H\u207a, in water; base: a substance that produces hydroxide ions, OH\u207b, in water.",
+                    "The more hydrogen ions a solution contains, the lower its pH."
                 ],
                 "experiment": {
                     "type": "virtual-lab",
@@ -145,17 +302,63 @@
             {
                 "id": "neutralization",
                 "title": "Neutralisation and Salt Formation",
-                "content": "Neutralisation is a chemical reaction between an acid and a base (or alkali) to produce a salt and water. The general equation is: Acid + Base \u2192 Salt + Water. For example, Hydrochloric acid reacts with Sodium hydroxide to form Sodium chloride (table salt) and water: HCl + NaOH \u2192 NaCl + H\u2082O.\n\nThe 'salt' produced depends on the specific acid and base used. Hydrochloric acid produces chlorides, sulphuric acid produces sulphates, and nitric acid produces nitrates. If the base is a carbonate, the reaction also produces carbon dioxide gas: Acid + Metal Carbonate \u2192 Salt + Water + Carbon Dioxide.\n\nTitration is the common laboratory technique used to find the exact volume of acid needed to neutralise a set volume of base. A burette is used to add one reactant to the other until an indicator shows the reaction is complete. This topic is a favourite for CSEC practical and paper 2 questions, often requiring you to calculate concentrations from titration data.",
+                "content": "Neutralisation is a chemical reaction between an acid and a base (or alkali) to produce a salt and water. The general equation is: Acid + Base \u2192 Salt + Water. For example, Hydrochloric acid reacts with Sodium hydroxide to form Sodium chloride (table salt) and water: HCl + NaOH \u2192 NaCl + H\u2082O.\n\nThe 'salt' produced depends on the specific acid and base used. Hydrochloric acid produces chlorides, sulphuric acid produces sulphates, and nitric acid produces nitrates. If the base is a carbonate, the reaction also produces carbon dioxide gas: Acid + Metal Carbonate \u2192 Salt + Water + Carbon Dioxide.\n\nTitration is the common laboratory technique used to find the exact volume of acid needed to neutralise a set volume of base. A burette is used to add one reactant to the other until an indicator shows the reaction is complete. This topic is a favourite for CSEC practical and paper 2 questions, often requiring you to calculate concentrations from titration data.\n\nAcids react with several classes of substance in addition to bases and carbonates. An acid reacts with a reactive metal to give a salt and hydrogen gas, for example hydrochloric acid with zinc to give zinc chloride and hydrogen, and the test for the hydrogen is a lighted splint that gives a squeaky pop.\n\nAn acid also reacts with a metal oxide or a metal hydroxide to give a salt and water only, for example sulphuric acid with copper(II) oxide to give copper(II) sulphate and water. Each reaction follows the same pattern of producing a salt, so the salt formed can be predicted by knowing which acid supplies its negative ion and which metal supplies its positive ion.\n\nVolumetric analysis uses titration to find the concentration of an unknown solution. A known volume of one solution is measured into a flask, an indicator is added, and the other solution is run in from a burette until the indicator changes colour at the end point, when the two solutions have reacted exactly.\n\nThe titration calculation uses the volumes and one known concentration. From the concentration and volume of one solution its amount in moles is found with n = c x V, the mole ratio from the equation gives the moles of the other solution, and dividing by its volume gives its concentration. The titre is the volume read from the burette, and repeating the titration until concordant results agree makes the answer reliable.",
                 "objectives": [
                     "Explain the process of neutralisation",
-                    "Identify the products of acid-base reactions"
+                    "Identify the products of acid-base reactions",
+                    "Describe the reaction of an acid with a metal and with a metal oxide or hydroxide",
+                    "Predict the salt formed from a given acid and metal",
+                    "Describe the steps of a titration and how the end point is detected",
+                    "Calculate a concentration from titre data using n = c x V"
                 ],
                 "concepts": [
-                    "Acid + Base -> Salt + Water."
+                    "Acid + Base -> Salt + Water.",
+                    "An acid reacts with a reactive metal to give a salt and hydrogen gas.",
+                    "An acid reacts with a metal oxide or hydroxide to give a salt and water only.",
+                    "Titration runs one solution from a burette into a flask until the indicator changes colour at the end point.",
+                    "A concentration is found from the moles of one solution, the mole ratio and the volume of the other."
                 ],
                 "experiment": {
                     "type": "titration-sim",
                     "description": "Titration Challenge: Carefully add a base to an acid using a burette until the indicator changes colour to find the exact neutralisation point."
+                }
+            },
+            {
+                "id": "chem-salt-preparation",
+                "title": "Salt Preparation",
+                "content": "A salt is an ionic compound formed when the hydrogen of an acid is replaced by a metal or by an ammonium ion. The method used to prepare a salt depends on whether it is soluble in water and on the starting materials. A soluble salt of an unreactive metal is made by reacting an acid with a metal, a metal oxide, a metal hydroxide or a metal carbonate, then crystallising the salt from the resulting solution.\n\nSeveral routes lead to a salt. An acid reacts with a metal to give a salt and hydrogen gas, with a metal oxide or hydroxide to give a salt and water, and with a carbonate to give a salt, water and carbon dioxide. A salt whose two reactants are both soluble, and where neither gives a sign that the reaction is complete, is made by titration, in which the two solutions are mixed until neutral.\n\nAn insoluble salt is prepared by precipitation, which mixes two soluble salt solutions so that the insoluble salt forms as a solid and is then collected by filtration and dried. The choice of route is decided by solubility: soluble salts use an acid reaction or titration, and insoluble salts use precipitation.",
+                "objectives": [
+                    "Define a salt and describe how it is formed",
+                    "Compare the acid-plus-metal, acid-plus-oxide, acid-plus-carbonate and titration routes",
+                    "Explain how an insoluble salt is prepared by precipitation"
+                ],
+                "concepts": [
+                    "Salt: an ionic compound formed when the hydrogen of an acid is replaced by a metal or by an ammonium ion.",
+                    "An acid reacts with a metal to give a salt and hydrogen, with an oxide or hydroxide to give a salt and water, and with a carbonate to give a salt, water and carbon dioxide.",
+                    "Insoluble salts are prepared by precipitation, which mixes two soluble salt solutions and collects the solid by filtration."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Salt Preparation: Match each of 5 items - Reacting an acid with a metal, A metal oxide or hydroxide, A carbonate, Titration, Precipitation - to the statement that describes it."
+                }
+            },
+            {
+                "id": "chem-uses-and-dangers-of-salts",
+                "title": "Uses and Dangers of Salts",
+                "content": "Salts are valuable in food, farming and industry. Common salt, sodium chloride, flavours and preserves food, and ammonium salts supply the nitrogen in fertilisers. Sodium hydrogencarbonate is a raising agent in baking, and calcium sulphate is used in plaster and plaster of Paris, while many other salts are used in industry to make products such as glass, soap and dyes.\n\nSalts also carry dangers that must be managed. Some salts are toxic if swallowed, and heavy-metal salts such as those of lead and mercury are poisonous and must be kept out of food and water. Soluble fertiliser salts washed off farmland can build up in rivers and lakes, and excessive salt in the diet raises blood pressure, so salt is used in the smallest amount that does the job.\n\nThe same salt can be a benefit in one place and a hazard in another, so its use depends on the amount and the setting. Sodium chloride preserves food and de-ices roads yet corrodes metal and damages plants at high concentration, which is why safe handling and correct dosage matter as much as the salt's usefulness.",
+                "objectives": [
+                    "Give examples of the uses of salts in food, farming and industry",
+                    "Describe the dangers posed by toxic and heavy-metal salts",
+                    "Explain how one salt can be both useful and hazardous"
+                ],
+                "concepts": [
+                    "Sodium chloride flavours and preserves food, and ammonium salts supply the nitrogen in fertilisers.",
+                    "Heavy-metal salts such as those of lead and mercury are poisonous and must be kept out of food and water.",
+                    "Sodium chloride preserves food and de-ices roads yet corrodes metal and damages plants at high concentration."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Uses and Dangers of Salts: Sort 7 statements into Uses, Dangers."
                 }
             }
         ]
@@ -167,17 +370,229 @@
             {
                 "id": "defining-redox",
                 "title": "Defining Redox",
-                "content": "Redox (reduction-oxidation) reactions involve the transfer of electrons between chemical species. Oxidation is defined as the loss of electrons, while reduction is the gain of electrons. A helpful mnemonic is OIL RIG: Oxidation Is Loss, Reduction Is Gain.\n\nIn any redox reaction, one substance is oxidised while another is reduced. The substance that accepts electrons and causes another to be oxidised is called the 'oxidising agent' (it gets reduced itself). The substance that don'tates electrons and causes another to be reduced is the 'reducing agent' (it gets oxidised itself). Oxidation numbers are often used to track these changes; an increase in oxidation number indicates oxidation, while a decrease indicates reduction.\n\nCommon redox examples include the rusting of iron, the combustion of fuels, and the reactions in batteries. You will be asked to identify which species are being oxidised or reduced in a given equation and to write half-equations to show the movement of electrons.",
+                "content": "Redox (reduction-oxidation) reactions involve the transfer of electrons between chemical species. Oxidation is defined as the loss of electrons, while reduction is the gain of electrons. A helpful mnemonic is OIL RIG: Oxidation Is Loss, Reduction Is Gain.\n\nIn any redox reaction, one substance is oxidised while another is reduced. The substance that accepts electrons and causes another to be oxidised is called the 'oxidising agent' (it gets reduced itself). The substance that don'tates electrons and causes another to be reduced is the 'reducing agent' (it gets oxidised itself). Oxidation numbers are often used to track these changes; an increase in oxidation number indicates oxidation, while a decrease indicates reduction.\n\nCommon redox examples include the rusting of iron, the combustion of fuels, and the reactions in batteries. You will be asked to identify which species are being oxidised or reduced in a given equation and to write half-equations to show the movement of electrons.\n\nCommon oxidising agents accept electrons and are themselves reduced, while common reducing agents donate electrons and are themselves oxidised. Familiar oxidising agents include oxygen, the halogens such as chlorine, and acidified potassium manganate(VII), which changes colour from purple to colourless as it is reduced.\n\nFamiliar reducing agents include hydrogen, carbon, carbon monoxide and reactive metals such as sodium. Hydrogen removes oxygen from metal oxides to give the metal, and carbon does the same in the extraction of metals, while a reactive metal gives up its electrons to a less reactive metal ion in a displacement reaction. Identifying the oxidising and reducing substances in a given reaction is a standard CSEC skill.",
                 "objectives": [
                     "Define oxidation and reduction in terms of electron transfer",
-                    "Identify oxidising and reducing agents"
+                    "Identify oxidising and reducing agents",
+                    "Name common oxidising agents and common reducing agents",
+                    "Identify which substance is oxidised and which is reduced in a reaction"
                 ],
                 "concepts": [
-                    "OIL RIG: Oxidation Is Loss, Reduction Is Gain (of electrons)."
+                    "OIL RIG: Oxidation Is Loss, Reduction Is Gain (of electrons).",
+                    "Oxidising agents accept electrons and are themselves reduced, such as oxygen, chlorine and acidified potassium manganate(VII).",
+                    "Reducing agents donate electrons and are themselves oxidised, such as hydrogen, carbon, carbon monoxide and reactive metals."
                 ],
                 "experiment": {
                     "type": "interactive-equation",
                     "description": "Electron Flow: Click on atoms in a chemical equation to 'see' the transfer of electrons and label which species is oxidised or reduced."
+                }
+            }
+        ]
+    },
+    {
+        "id": "electrolysis",
+        "title": "Electrolysis",
+        "lessons": [
+            {
+                "id": "chem-conduction-and-electrolytes",
+                "title": "Conduction and Electrolytes",
+                "content": "Substances conduct electricity in two different ways. Metals conduct by the movement of electrons, while ionic compounds conduct only when their ions are free to move, which happens when the compound is molten or dissolved in water. A compound that conducts electricity when molten or in aqueous solution, and is decomposed by it, is called an electrolyte, and the conduction is called electrolytic conduction.\n\nAn electrolyte is made of ions, and in the liquid state these ions are free to move towards the electrodes. Sodium chloride does not conduct when solid, because its ions are held in a fixed lattice and cannot move, but molten sodium chloride and sodium chloride solution both conduct. A covalent substance such as sugar dissolves without forming ions, so its solution does not conduct, and it is a non-electrolyte.\n\nElectrolytic conduction is always accompanied by chemical change, because the current decomposes the electrolyte. This is the key difference from metallic conduction, in which the same electrons simply pass through the metal without changing it. Electrolytes include molten salts, salt solutions, acids and alkalis, while non-electrolytes include sugar solution, pure water and covalent liquids such as ethanol.",
+                "objectives": [
+                    "Describe how metals and electrolytes conduct electricity",
+                    "Distinguish an electrolyte from a non-electrolyte",
+                    "Explain why an ionic compound conducts only when molten or dissolved"
+                ],
+                "concepts": [
+                    "Electrolyte: a compound that conducts electricity when molten or in aqueous solution, and is decomposed by it.",
+                    "Ionic compounds conduct only when their ions are free to move, which happens when molten or dissolved in water.",
+                    "Non-electrolyte: a substance such as sugar that dissolves without forming ions, so its solution does not conduct."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Conduction and Electrolytes: Sort 8 statements into Electrolyte, Non-electrolyte."
+                }
+            },
+            {
+                "id": "chem-electrolysis-principles",
+                "title": "Electrolysis Principles",
+                "content": "Electrolysis is the decomposition of a molten or dissolved ionic compound by passing an electric current through it. The current enters and leaves through two electrodes, which are usually made of graphite or platinum because these are inert, and the electrode joined to the negative terminal of the supply is the cathode while the one joined to the positive terminal is the anode.\n\nDuring electrolysis the ions move towards the oppositely charged electrodes. Positive ions, called cations, move to the cathode and gain electrons there, which is reduction, while negative ions, called anions, move to the anode and lose electrons there, which is oxidation. An ion becomes a neutral atom or molecule when it is discharged at an electrode, and this discharge happens at the electrode with the opposite charge.\n\nElectrolysis of a molten binary compound gives its two elements. Molten lead(II) bromide forms lead at the cathode and bromine at the anode, because the lead ions are reduced to lead metal and the bromide ions are oxidised to bromine. The process therefore drives a redox reaction using electrical energy.",
+                "objectives": [
+                    "Define electrolysis and identify the cathode and the anode",
+                    "Describe the movement and discharge of cations and anions",
+                    "Explain the products of the electrolysis of a molten binary compound"
+                ],
+                "concepts": [
+                    "Electrolysis: the decomposition of a molten or dissolved ionic compound by passing an electric current through it.",
+                    "Cathode: the electrode joined to the negative terminal, where cations are reduced; anode: the electrode joined to the positive terminal, where anions are oxidised.",
+                    "Cations move to the cathode and gain electrons, anions move to the anode and lose electrons."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Electrolysis Principles: Match each of 5 items - Electrolysis, Cathode, Anode, Cations, Anions - to the statement that describes it."
+                }
+            },
+            {
+                "id": "chem-factors-affecting-electrolysis",
+                "title": "Factors Affecting Electrolysis",
+                "content": "When an electrolyte in solution contains more than one kind of positive or negative ion, the ion that is discharged at an electrode is decided by several factors. The position of the ion in the reactivity series matters most: the less reactive a metal, the more easily its ion is discharged at the cathode, so in an aqueous solution the hydrogen from water is discharged before a reactive metal such as sodium, while copper is discharged before hydrogen.\n\nConcentration also matters, because a more concentrated ion is more likely to be discharged. In dilute sodium chloride solution, the hydroxide ions from water are oxidised at the anode to give oxygen, but in concentrated sodium chloride solution the chloride ions are discharged to give chlorine. The nature of the electrode can matter too, because some electrodes are inert while others take part in the reaction.\n\nAt the cathode in an aqueous solution, hydrogen is produced if the metal is above hydrogen in the reactivity series, and the metal is produced if it is below hydrogen. At the anode, oxygen is usually produced from dilute solutions unless the anion is a halide, in which case the halogen is produced instead. Position in the series, concentration and the electrode material together decide the products.",
+                "objectives": [
+                    "Explain how position in the reactivity series decides which ion is discharged",
+                    "Describe the effect of concentration on the products of electrolysis",
+                    "Predict the products at the cathode and the anode in an aqueous solution"
+                ],
+                "concepts": [
+                    "The less reactive a metal, the more easily its ion is discharged at the cathode, and hydrogen is discharged before a reactive metal such as sodium.",
+                    "A more concentrated ion is more likely to be discharged, so concentrated sodium chloride solution gives chlorine at the anode.",
+                    "At the cathode, hydrogen is produced if the metal is above hydrogen in the reactivity series, and the metal is produced if it is below hydrogen."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Factors Affecting Electrolysis: Match each of 5 items - Position in the reactivity series, Concentration, The nature of the electrode, Hydrogen, Chlorine - to the statement that describes it."
+                }
+            },
+            {
+                "id": "chem-faraday-constant-and-calculations",
+                "title": "Faraday Constant and Calculations",
+                "content": "The amount of a substance produced at an electrode depends on the quantity of electricity that passes through the electrolyte. The quantity of electricity, or charge, is measured in coulombs and is the product of the current in amperes and the time in seconds, so charge Q equals current I times time t, written Q = I t.\n\nThe Faraday constant links charge to moles of electrons. One mole of electrons carries a charge of 96 500 coulombs, and this value is the Faraday constant, F. It follows that the number of moles of electrons transferred equals the charge divided by 96 500, and because one mole of silver ions needs one mole of electrons to form one mole of silver, a charge of 96 500 coulombs deposits exactly one mole of silver.\n\nFaraday calculations use the ionic charge to connect electrons to products. Forming one mole of a metal of charge n+ needs n moles of electrons, so the mass of metal deposited is found by working out the moles of electrons from Q = I t, dividing by n, and multiplying by the molar mass. This is how the mass of metal deposited or gas released is calculated from the current and the time.",
+                "objectives": [
+                    "Use Q = I t to calculate the quantity of electricity",
+                    "State the value of the Faraday constant and what it means",
+                    "Calculate the mass of metal deposited using the Faraday constant"
+                ],
+                "concepts": [
+                    "Charge Q equals current I times time t, written Q = I t, and is measured in coulombs.",
+                    "The Faraday constant is the charge on one mole of electrons, 96 500 coulombs.",
+                    "The number of moles of electrons transferred equals the charge divided by 96 500."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Faraday Constant and Calculations: Match each of 4 items - Quantity of electricity, Faraday constant, Moles of electrons transferred, Forming one mole of a metal of charge n+ - to the statement that describes it."
+                }
+            },
+            {
+                "id": "chem-industrial-electrolysis",
+                "title": "Industrial Electrolysis",
+                "content": "Electrolysis is used on an industrial scale to make important products. The electrolysis of concentrated brine, a solution of sodium chloride, is called the chlor-alkali process and produces chlorine gas at the anode, hydrogen gas at the cathode, and sodium hydroxide left in the solution, three substances the chemical industry depends on.\n\nAluminium is extracted by the electrolysis of molten aluminium oxide, because aluminium is too reactive to extract by heating with carbon. The oxide is dissolved in molten cryolite to lower its melting point and save energy, and the cell uses carbon anodes that burn away as the oxide ions are oxidised to oxygen. Copper is purified by electrolysis, with the impure copper as the anode dissolving into solution and pure copper deposited on a thin cathode.\n\nEach industrial cell shows the same principles as a school experiment, scaled up. In the chlor-alkali cell the ions in brine are discharged at the electrodes, in the aluminium cell the oxide is decomposed into aluminium and oxygen, and in copper refining the impure anode loses copper while the pure cathode gains it, leaving the impurities to fall as anode slime.",
+                "objectives": [
+                    "Describe the chlor-alkali process and its three products",
+                    "Explain why aluminium is extracted by electrolysis and the part played by cryolite",
+                    "Describe how copper is purified by electrolysis"
+                ],
+                "concepts": [
+                    "The chlor-alkali process electrolyses concentrated brine to produce chlorine at the anode, hydrogen at the cathode and sodium hydroxide in the solution.",
+                    "Aluminium is extracted by electrolysing molten aluminium oxide dissolved in molten cryolite, which lowers its melting point.",
+                    "In copper purification the impure copper is the anode and pure copper is deposited on the cathode."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Industrial Electrolysis: Match each of 4 items - Chlor-alkali process, Aluminium is extracted, Copper purification, Cryolite - to the statement that describes it."
+                }
+            }
+        ]
+    },
+    {
+        "id": "reaction-kinetics",
+        "title": "Reaction Kinetics",
+        "lessons": [
+            {
+                "id": "chem-reaction-rate-definition-and-factors",
+                "title": "Reaction Rate Definition and Factors",
+                "content": "The rate of a reaction is the speed at which the reactants are used up or the products are formed, and it is measured as the change in amount per unit time. A fast reaction, such as the fizzing of magnesium in acid, finishes in seconds, while a slow reaction, such as the rusting of iron, takes weeks or months.\n\nFour factors change the rate of a reaction. Raising the temperature makes the particles move faster and collide more often and more energetically, so the rate rises. Increasing the concentration of a solution, or the pressure of a gas, puts more particles in the same space and so increases the frequency of collisions, and increasing the surface area of a solid exposes more particles to the reaction. A catalyst speeds a reaction up by providing an alternative pathway of lower activation energy, and it is not used up.\n\nAll four factors work through collision theory, which says that a reaction happens only when particles collide with enough energy and with the correct orientation. Anything that increases the frequency of successful collisions increases the rate, and this is why temperature, concentration, surface area and catalysts all change how quickly a reaction proceeds.",
+                "objectives": [
+                    "Define the rate of a reaction",
+                    "State the four factors that change the rate and how each does so",
+                    "Explain how each factor increases the frequency of successful collisions"
+                ],
+                "concepts": [
+                    "Rate of reaction: the speed at which reactants are used up or products are formed, measured as the change in amount per unit time.",
+                    "Raising the temperature, increasing concentration or pressure, increasing surface area, and adding a catalyst all increase the rate.",
+                    "Collision theory: a reaction happens only when particles collide with enough energy and the correct orientation."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Reaction Rate Definition and Factors: Match each of 4 items - Raising the temperature, Increasing the concentration, Increasing the surface area, A catalyst - to the statement that describes it."
+                }
+            },
+            {
+                "id": "chem-rate-data-and-graphs",
+                "title": "Interpreting Rate Data and Graphs",
+                "content": "The progress of a reaction is followed by measuring the amount of product formed, or reactant left, at intervals, and plotting the results against time. The amount of product formed rises steeply at first, because the reactants are at their highest concentration, and then the rise flattens as the reaction slows, until the curve levels off when the reaction is complete.\n\nThe rate of the reaction at any moment is the gradient of the amount-time graph at that point. A steeper gradient means a faster reaction, so the reaction is fastest at the start, when the gradient is steepest, and it has stopped when the graph becomes horizontal. Comparing two curves on the same axes shows the effect of a factor, such as a higher temperature giving a steeper initial gradient and reaching the same final amount sooner.\n\nGraphs can also show the final amount of product. A reaction that uses more of a reactant produces more product, so its curve levels off at a higher value, and the graph of the amount of reactant left falls from the starting amount to zero as the reaction goes to completion.",
+                "objectives": [
+                    "Describe the shape of an amount-against-time graph",
+                    "Relate the gradient of the graph to the rate of reaction",
+                    "Interpret two curves on the same axes to compare the effects of a factor"
+                ],
+                "concepts": [
+                    "The amount of product formed rises steeply at first and then flattens as the reaction slows, levelling off when the reaction is complete.",
+                    "The rate of reaction at any moment is the gradient of the amount-time graph, and a steeper gradient means a faster reaction.",
+                    "A higher temperature gives a steeper initial gradient and reaches the same final amount sooner."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Interpreting Rate Data and Graphs: Match each of 4 items - A steeper gradient, The gradient of the amount-time graph, The graph becomes horizontal, A higher temperature - to the statement that describes it."
+                }
+            }
+        ]
+    },
+    {
+        "id": "energy-changes",
+        "title": "Energy Changes in Reactions",
+        "lessons": [
+            {
+                "id": "chem-exothermic-and-endothermic-reactions",
+                "title": "Exothermic and Endothermic Reactions",
+                "content": "A chemical reaction is exothermic if it releases heat energy to its surroundings, so the temperature of the surroundings rises, and endothermic if it absorbs heat energy from its surroundings, so the temperature of the surroundings falls. Combustion, the neutralisation of an acid and the reaction of a metal with an acid are all exothermic, and dissolving some salts also gives out heat.\n\nEndothermic reactions take in heat. Thermal decomposition, such as heating a metal carbonate to break it down, and photosynthesis are endothermic, and dissolving some salts in water cools the solution. Whether a reaction is exothermic or endothermic depends on the balance between the energy needed to break bonds in the reactants and the energy released when new bonds form in the products.\n\nEnergy is always conserved in a chemical reaction. In an exothermic reaction more energy is released when the products' bonds form than was needed to break the reactants' bonds, so the extra is given out, while in an endothermic reaction more energy is absorbed to break bonds than is released, so the reaction takes heat from its surroundings.",
+                "objectives": [
+                    "Distinguish an exothermic reaction from an endothermic reaction",
+                    "Give examples of each kind of reaction",
+                    "Explain exothermic and endothermic changes in terms of bond breaking and bond making"
+                ],
+                "concepts": [
+                    "Exothermic reaction: releases heat energy to its surroundings, so the temperature of the surroundings rises.",
+                    "Endothermic reaction: absorbs heat energy from its surroundings, so the temperature of the surroundings falls.",
+                    "In an exothermic reaction more energy is released when bonds form than was needed to break the reactants' bonds."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Exothermic and Endothermic Reactions: Sort 7 statements into Exothermic, Endothermic."
+                }
+            },
+            {
+                "id": "chem-energy-profile-diagrams",
+                "title": "Energy Profile Diagrams",
+                "content": "An energy profile diagram shows how the energy of a reaction changes as the reactants change into products. Energy is plotted on the vertical axis and the progress of the reaction on the horizontal axis. In an exothermic reaction the products are at a lower energy than the reactants, so the line ends lower than it starts, while in an endothermic reaction the products are at a higher energy and the line ends higher.\n\nThe hump in the middle of the profile is the activation energy, the minimum energy that colliding particles must have for a reaction to happen. Even an exothermic reaction needs this initial energy before it can begin, which is why a fuel does not catch fire until it is lit. A catalyst lowers the activation energy, so the hump is smaller and a greater proportion of the particles have enough energy to react, which makes the reaction faster.\n\nThe overall energy change of the reaction is the difference between the energy of the products and the energy of the reactants. For an exothermic reaction this difference is given out as heat, and for an endothermic reaction it is taken in, and the difference is written as the enthalpy change of the reaction.",
+                "objectives": [
+                    "Sketch an energy profile diagram for an exothermic and an endothermic reaction",
+                    "Define activation energy and show it on the diagram",
+                    "Explain how a catalyst changes the profile diagram"
+                ],
+                "concepts": [
+                    "Energy profile diagram: a graph of energy against the progress of the reaction, with the products lower than the reactants for an exothermic reaction.",
+                    "Activation energy: the minimum energy that colliding particles must have for a reaction to happen, shown as the hump in the profile.",
+                    "A catalyst lowers the activation energy, so the hump is smaller and the reaction is faster."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Energy Profile Diagrams: Match each of 4 items - The hump in the middle of the profile, Products lower than the reactants, Products are at a higher energy, A catalyst - to the statement that describes it."
+                }
+            },
+            {
+                "id": "chem-calculating-energy-changes",
+                "title": "Calculating Energy Changes",
+                "content": "The energy change of a reaction can be calculated from bond energies or measured by experiment. Bond energy is the energy needed to break one mole of a bond, and in a reaction the total energy change is the energy taken in to break the bonds in the reactants minus the energy given out when the new bonds form in the products.\n\nThe calculation uses the equation: energy change equals the total energy of bond breaking minus the total energy of bond making. If bond making gives out more than bond breaking takes in, the value is negative and the reaction is exothermic; if bond breaking takes in more, the value is positive and the reaction is endothermic.\n\nThe energy change can also be measured by calorimetry, in which a reaction is carried out in a container and the temperature rise or fall of a known mass of water is recorded. The heat transferred is calculated with the equation heat equals mass times specific heat capacity times temperature change, and this value, adjusted for the number of moles, gives the enthalpy change of the reaction.",
+                "objectives": [
+                    "Define bond energy",
+                    "Calculate an energy change from bond energies",
+                    "Describe how calorimetry measures an energy change"
+                ],
+                "concepts": [
+                    "Bond energy: the energy needed to break one mole of a bond.",
+                    "Energy change equals the total energy of bond breaking minus the total energy of bond making.",
+                    "Calorimetry records the temperature rise or fall of a known mass of water, and heat equals mass times specific heat capacity times temperature change."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Calculating Energy Changes: Match each of 4 items - Bond energy, Energy change, Calorimetry, Heat transferred - to the statement that describes it."
                 }
             }
         ]
