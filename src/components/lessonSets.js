@@ -731,6 +731,83 @@ export const lessonSets = {
   },
   // ------------------------------------------------------------- SOCIAL STUDIES
   "social-studies": {
+    "elec-political-party-election-preparation": {
+      title: "Election Countdown",
+      subtitle: "Put the steps of a party's election preparation in order.",
+      kind: "order",
+      items: [
+        { id: "pp1", label: "Write the manifesto - the party's programme of promises", order: 1 },
+        { id: "pp2", label: "Select and ratify the candidate for each constituency", order: 2 },
+        { id: "pp3", label: "Organise the campaign: campaign manager, canvassing, meetings, advertising", order: 3 },
+        { id: "pp4", label: "Record and disclose how the campaign was financed", order: 4 },
+        { id: "pp5", label: "Nomination day - the candidate is formally put forward", order: 5 },
+      ],
+    },
+    "elec-factors-influencing-election-outcomes": {
+      title: "What Decides the Result?",
+      subtitle: "Match each factor to how it works on the voters.",
+      kind: "match",
+      pairs: [
+        { id: "fo1", target: "The policy voters trust most on the issue they care about now", label: "The issues" },
+        { id: "fo2", target: "How the leader and candidate are seen - competence, honesty, manner", label: "Personality and reputation" },
+        { id: "fo3", target: "Support handed down in a family or community, election after election", label: "Party loyalty" },
+        { id: "fo4", target: "Deciding which questions are asked and how scandals are reported", label: "The media" },
+        { id: "fo5", target: "How many of a party's own supporters actually go out and vote", label: "Turnout" },
+        { id: "fo6", target: "How constituency lines are drawn, turning vote shares into seats", label: "Boundaries" },
+      ],
+    },
+    "elec-voter-participation": {
+      title: "Who Can Vote?",
+      subtitle: "Sort each person into eligible to vote in Jamaica or not eligible.",
+      kind: "sort",
+      categories: [ { id: "yes", label: "Eligible to vote" }, { id: "no", label: "Not eligible to vote" } ],
+      items: [
+        { id: "vp1", label: "A registered citizen who is 18 years old today", category: "yes" },
+        { id: "vp2", label: "A citizen of 34 whose name is on the voters' list", category: "yes" },
+        { id: "vp3", label: "A citizen of 25 who has never registered", category: "no" },
+        { id: "vp4", label: "A young person of 17, below the voting age of 18", category: "no" },
+        { id: "vp5", label: "A registered citizen who decided not to vote", category: "yes" },
+      ],
+    },
+    "elec-interpreting-election-data": {
+      title: "Read the Results",
+      subtitle: "Match each election figure to what it tells you.",
+      kind: "match",
+      pairs: [
+        { id: "ed1", target: "The percentage of registered voters who actually voted", label: "Turnout" },
+        { id: "ed2", target: "The change in a party's support, in percentage points, since the last election", label: "Swing" },
+        { id: "ed3", target: "The number of votes by which the winner beat the runner-up", label: "Majority" },
+        { id: "ed4", target: "A seat that changes hands easily, where a small swing can decide it", label: "Marginal seat" },
+        { id: "ed5", target: "Winning the most seats without winning most of the votes cast", label: "Seats are not votes" },
+      ],
+    },
+    "gov-citizens-government-and-the-constitution": {
+      title: "Right or Responsibility?",
+      subtitle: "Match each statement to the fundamental right or the citizen's duty it belongs to.",
+      kind: "match",
+      pairs: [
+        { id: "cc1", target: "Fundamental right - the right to life, liberty and security of the person", label: "Protection from inhuman treatment and forced labour" },
+        { id: "cc2", target: "Fundamental right - freedom of expression and of the press", label: "To say and publish what you think" },
+        { id: "cc3", target: "Fundamental right - freedom of peaceful assembly and association", label: "To meet and march peacefully, and to join a union or party" },
+        { id: "cc4", target: "Fundamental right - the right to a fair trial", label: "To be presumed innocent and heard by a court" },
+        { id: "cc5", target: "Citizen's responsibility - obey the law and pay taxes", label: "To obey the law and pay your taxes" },
+        { id: "cc6", target: "Citizen's responsibility - take part in public affairs", label: "To vote and take an informed interest in government" },
+      ],
+    },
+    "gov-essentials-of-good-governance": {
+      title: "Which Principle?",
+      subtitle: "Sort each example of government behaviour into the principle of good governance it shows.",
+      kind: "sort",
+      categories: [ { id: "part", label: "Participation" }, { id: "law", label: "Rule of law" }, { id: "trans", label: "Transparency" }, { id: "acct", label: "Accountability" }, { id: "equity", label: "Equity and inclusiveness" } ],
+      items: [
+        { id: "gg1", label: "People take part in the decisions that affect them", category: "part" },
+        { id: "gg2", label: "A minister is questioned in Parliament about money spent by the ministry", category: "acct" },
+        { id: "gg3", label: "The cost of a government contract is published for anyone to read", category: "trans" },
+        { id: "gg4", label: "Every person is subject to the law, and laws are applied equally and fairly", category: "law" },
+        { id: "gg5", label: "All citizens have access to public services, whatever their parish or income", category: "equity" },
+        { id: "gg6", label: "A citizen asks for a public document and receives it within the time the law allows", category: "trans" },
+      ],
+    },
     "ss-l1-1": {
       title: "Family Types",
       subtitle: "Match each family type to its structure.",
