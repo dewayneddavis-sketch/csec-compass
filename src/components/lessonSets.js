@@ -869,7 +869,81 @@ export const lessonSets = {
         { id: "con4", target: "To be heard and make complaints", label: "Right to be heard" },
       ],
     },
-  },
+  
+    "fam-preparation-for-parenthood": {
+      title: "Preparation for Parenthood",
+      subtitle: "Match each part of preparation to what it secures for the child.",
+      kind: "match",
+      pairs: [
+        { id: "pp1", target: "emotional, financial, social and health", label: "Readiness for Parenthood" },
+        { id: "pp2", target: "advice from a health centre or doctor about whether and when to have a child", label: "Family Planning" },
+        { id: "pp3", target: "early booking at a clinic", label: "Ante-natal Care" },
+        { id: "pp4", target: "checks for mother and baby, breastfeeding support, immunisations", label: "Post-natal Care" },
+        { id: "pp5", target: "the public health system's antenatal and postnatal clinics", label: "Support Services" },
+      ],
+    },
+    "fam-effective-parenting": {
+      title: "Effective Parenting",
+      subtitle: "Match each style or practice to the way it shapes a child.",
+      kind: "match",
+      pairs: [
+        { id: "ep1", target: "sets firm, explained limits and listens to the child", label: "Authoritative Parenting" },
+        { id: "ep2", target: "demands obedience without explanation", label: "Authoritarian Parenting" },
+        { id: "ep3", target: "sets few limits and few demands", label: "Permissive Parenting" },
+        { id: "ep4", target: "the same rule is applied on Monday and on Saturday", label: "Consistency" },
+        { id: "ep5", target: "explain the rule, warn before punishing, use natural consequences", label: "Positive Discipline" },
+      ],
+    },
+    "fam-social-issues-affecting-families": {
+      title: "Social Issues Affecting Families",
+      subtitle: "Match each issue to the effect it has on the household.",
+      kind: "match",
+      pairs: [
+        { id: "si1", target: "abuse between people who live together or are related", label: "Domestic Violence" },
+        { id: "si2", target: "alcohol and drug misuse by a parent", label: "Substance Abuse" },
+        { id: "si3", target: "interrupts a girl's education", label: "Teenage Pregnancy" },
+        { id: "si4", target: "money arrives, but so do new responsibilities for the eldest child", label: "Migration and Absent Parents" },
+        { id: "si5", target: "crowded housing, poor nutrition, early school leaving", label: "Poverty" },
+      ],
+    },
+    "fam-laws-protecting-the-family": {
+      title: "Laws Protecting the Family",
+      subtitle: "Match each law to the protection it gives a family member.",
+      kind: "match",
+      pairs: [
+        { id: "lp1", target: "apply to the court for a protection order", label: "Domestic Violence Act" },
+        { id: "lp2", target: "an offence to ill-treat, neglect or abandon a child", label: "Child Care and Protection Act" },
+        { id: "lp3", target: "money for a child's food, clothing, school and medical care", label: "Maintenance Act" },
+        { id: "lp4", target: "the same rights as a child born inside it", label: "Status of Children Act" },
+        { id: "lp5", target: "maintenance, custody, access and protection orders", label: "Family Court" },
+      ],
+    },
+    "cult-caribbean-cultural-diversity": {
+      title: "Caribbean Cultural Diversity",
+      subtitle: "Match each idea about culture to what it means in the Caribbean.",
+      kind: "match",
+      pairs: [
+        { id: "cd1", target: "the whole way of life of a people", label: "Culture" },
+        { id: "cd2", target: "the group a person belongs to by ancestry and shared tradition", label: "Ethnicity" },
+        { id: "cd3", target: "these traditions mixed to make something new that belongs to the region", label: "Creolisation" },
+        { id: "cd4", target: "traditions that survived almost intact", label: "Cultural Retention" },
+        { id: "cd5", target: "what a society chooses to keep and pass on", label: "Cultural Heritage" },
+      ],
+    },
+    "soc-social-group-interaction": {
+      title: "Social Group Interaction",
+      subtitle: "Sort each example under the form of interaction it shows.",
+      kind: "sort",
+      categories: [ { id: "coop", label: "Cooperation" }, { id: "comp", label: "Competition" }, { id: "conf", label: "Conflict" }, { id: "accom", label: "Accommodation" }, ],
+      items: [
+        { id: "gi1", label: "working together for a goal neither could reach alone", category: "coop" },
+        { id: "gi2", label: "two schools for the same trophy", category: "comp" },
+        { id: "gi3", label: "competition that has broken its rules and turned to harming the other side", category: "conf" },
+        { id: "gi4", label: "a truce, a compromise, mediation, or an agreement to differ", category: "accom" },
+        { id: "gi5", label: "the settlement that follows", category: "accom" },
+      ],
+    },
+},
 
   // ------------------------------------------------- HUMAN & SOCIAL BIOLOGY
   "human-social-biology": {

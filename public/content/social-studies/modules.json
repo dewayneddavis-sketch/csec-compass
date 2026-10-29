@@ -6,17 +6,25 @@
             {
                 "id": "ss-l1-1",
                 "title": "Family Types and Structures",
-                "content": "The family is the basic unit of society. In the Caribbean, family structures are diverse and influenced by our rich history and cultural heritage. The 'Nuclear Family' consists of a mother, father, and their children living together. The 'Extended Family' includes other relatives like grandparents, aunts, or cousins living in the same household or nearby.\n\nOther common structures include the 'Single-parent Family' (one parent raising children), the 'Reconstituted' or 'Blended Family' (formed when parents with children from previous relationships marry), and 'Common-law Relationships' (where a couple lives together without being legally married). Sib-link households, where brothers and sisters live together without parents, are also found in some communities.\n\nCSEC Social Studies students must be able to identify these types and discuss their characteristics. Understanding family diversity is essential for appreciating the different ways Caribbean people live and support one another. The family's role in providing emotional and economic stability is a key topic of discussion.",
+                "content": "The family is the basic unit of society. In the Caribbean, family structures are diverse and influenced by our rich history and cultural heritage. The 'Nuclear Family' consists of a mother, father, and their children living together. The 'Extended Family' includes other relatives like grandparents, aunts, or cousins living in the same household or nearby.\n\nOther common structures include the 'Single-parent Family' (one parent raising children), the 'Reconstituted' or 'Blended Family' (formed when parents with children from previous relationships marry), and 'Common-law Relationships' (where a couple lives together without being legally married). Sib-link households, where brothers and sisters live together without parents, are also found in some communities.\n\nCSEC Social Studies students must be able to identify these types and discuss their characteristics. Understanding family diversity is essential for appreciating the different ways Caribbean people live and support one another. The family's role in providing emotional and economic stability is a key topic of discussion.\n\nThe terms that go with these types matter as much as the types themselves. A Household is the group of people who share one dwelling and one cooking pot; a family is a group related by blood, marriage or adoption, so a household may hold more than one family and a family may live in more than one household. A Conjugal Family is built on the union of two adults and their children; a Consanguineous Family is built on blood ties, so a grandmother raising her daughter's children heads a consanguineous household. A Matrifocal Household is one in which the mother, or the grandmother, is the centre of authority and the household's stability, a pattern found across the Caribbean and explained by migration, wage work and the history of the plantation.\n\nFamilies are formed through unions, and the Caribbean recognises three. Marriage is the legal union registered with the state and often blessed by a church. A common-law union is a stable partnership without a marriage certificate, and it is common in the region. A Visiting Union is a relationship in which partners live at different addresses and one visits the other, often because of work, school or housing, and the children of the union usually live with the mother. Naming the union correctly matters in an exam answer, because each carries different legal rights to maintenance, inheritance and custody.",
                 "objectives": [
                     "Identify different types of families in the Caribbean",
-                    "Describe the characteristics of each family type"
+                    "Describe the characteristics of each family type",
+                    "Define the family and the household, and the terms used to describe them",
+                    "Describe the unions through which Caribbean families are formed"
                 ],
                 "concepts": [
                     "Nuclear Family",
                     "Extended Family",
                     "Single-parent Family",
                     "Reconstituted Family",
-                    "Common-law Relationship"
+                    "Common-law Relationship",
+                    "Household",
+                    "Conjugal Family",
+                    "Consanguineous Family",
+                    "Matrifocal Household",
+                    "Visiting Union",
+                    "Marriage"
                 ],
                 "experiment": {
                     "type": "drag-drop",
@@ -26,20 +34,112 @@
             {
                 "id": "ss-l1-2",
                 "title": "Roles and Responsibilities",
-                "content": "Within every family, members have specific roles and responsibilities that contribute to the household's functioning. Traditionally, roles were often divided by gender (division of labour), but in modern Caribbean society, these roles are increasingly shared. Parents have the primary responsibility for the 'socialisation' of their children \u2014 teaching them the values, norms, and skills needed to participate in society.\n\nResponsible parenthood involve providing not just economic support (food, shelter, education) but also emotional support (love, guidance, protection). Children also have responsibilities, such as performing household chores and showing respect to their elders. As family members age, the roles may shift, with adult children taking on the care of their elderly parents.\n\nUnderstanding these dynamics is crucial for discussing issues like family conflict, child abuse, and the impact of migration on family life. CSEC questions often ask you to analyse how changing social and economic conditions affect family roles and the importance of strong, supportive family units for a healthy society.",
+                "content": "Within every family, members have specific roles and responsibilities that contribute to the household's functioning. Traditionally, roles were often divided by gender (division of labour), but in modern Caribbean society, these roles are increasingly shared. Parents have the primary responsibility for the 'socialisation' of their children \u2014 teaching them the values, norms, and skills needed to participate in society.\n\nResponsible parenthood involve providing not just economic support (food, shelter, education) but also emotional support (love, guidance, protection). Children also have responsibilities, such as performing household chores and showing respect to their elders. As family members age, the roles may shift, with adult children taking on the care of their elderly parents.\n\nUnderstanding these dynamics is crucial for discussing issues like family conflict, child abuse, and the impact of migration on family life. CSEC questions often ask you to analyse how changing social and economic conditions affect family roles and the importance of strong, supportive family units for a healthy society.\n\nThe family is not only a set of roles; it performs functions that no other institution performs in the same way. Reproduction is the function that replaces the population. Protection covers the young, the sick and the old, and it is the function the state most often has to support. Socialisation teaches the child the language, values and habits of the society, and it is the family's first and strongest contribution to social order. The economic function provides food, shelter and income, and it includes the unpaid work of cooking, cleaning and caring. Regulation of Sexual Behaviour sets the society's rules about who may pair with whom and in what form. Social Placement gives a child a religion, a class position and a place in the community.\n\nThose roles are changing. Women's employment outside the home has made shared housework and shared childcare more common, and a Female-headed Household - one where the mother is the main earner and decision-maker - is now a large share of Caribbean households. Migration and Family Roles are linked: when a parent works abroad, the remaining parent takes on both roles, and the eldest child often becomes a young carer. Longer lives mean adult children may become the carers of their parents, reversing the role they were raised in. The change is not evenly spread: a household with one low income and no help carries the same roles with fewer resources, which is why the strain shows first in the poorest homes.",
                 "objectives": [
                     "Examine the roles of family members",
-                    "Understand the importance of responsible parenthood"
+                    "Understand the importance of responsible parenthood",
+                    "State the functions the family performs for its members and for society",
+                    "Explain how family roles are changing in the Caribbean"
                 ],
                 "concepts": [
                     "Division of Labour",
                     "Socialisation",
                     "Economic Support",
-                    "Emotional Support"
+                    "Emotional Support",
+                    "Reproduction",
+                    "Protection",
+                    "Regulation of Sexual Behaviour",
+                    "Social Placement",
+                    "Female-headed Household",
+                    "Migration and Family Roles"
                 ],
                 "experiment": {
                     "type": "matching-game",
                     "description": "Role Assigner: Match various family tasks and responsibilities to different family members in a virtual household scenario."
+                }
+            },
+            {
+                "id": "fam-preparation-for-parenthood",
+                "title": "Preparation for Parenthood",
+                "content": "Preparation for Parenthood is the work a couple or a household does before a child arrives, so that the child is wanted, provided for and safe. Readiness for Parenthood has four sides - emotional, financial, social and health - and a family that prepares on one side only is still unprepared on the others.\n\nEmotionally, both partners should want the child and understand that a baby changes sleep, money and free time, so the decision belongs to the couple and not to one of them alone. Financially, the household needs a budget that covers food, clothing, housing, school and medical care, and a plan for who earns while a parent stays at home. Socially, the household needs a support network of grandparents, godparents, church and community groups that can help in an emergency, and a home that is safe for a crawling child.\n\nHealth preparation begins with Family Planning: advice from a health centre or doctor about whether and when to have a child, and about spacing children. Once a pregnancy is confirmed, Ante-natal Care means early booking at a clinic, regular checks with a midwife or doctor, a balanced diet with iron and folic acid, treatment for conditions such as high blood pressure or anaemia, and knowing the danger signs that mean going to hospital at once. Post-natal Care continues after the birth: checks for mother and baby, breastfeeding support, immunisations, and watching for depression in the mother.\n\nTeenage pregnancy shows why preparation matters. A young mother who leaves school early often loses the qualifications the household will need, so counselling, continuing education and family support are part of the picture. Support Services in Jamaica include the public health system's antenatal and postnatal clinics, health centres, and church and community programmes that give parents advice and practical help.\n\nThe exam point: preparation is a process with stages - deciding, planning, ante-natal care, post-natal care - and every stage carries a named responsibility for the parents.",
+                "objectives": [
+                    "Explain what Preparation for Parenthood involves",
+                    "Describe Ante-natal Care and Post-natal Care",
+                    "Identify the emotional, financial and social support a household needs before a child arrives"
+                ],
+                "concepts": [
+                    "Readiness for Parenthood",
+                    "Family Planning",
+                    "Ante-natal Care",
+                    "Post-natal Care",
+                    "Support Services"
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Preparing for a Baby: match each preparation step to what it secures."
+                }
+            },
+            {
+                "id": "fam-effective-parenting",
+                "title": "Effective Parenting",
+                "content": "Effective Parenting is the set of practices that help a child grow up healthy, confident and able to learn. It starts from the parenting styles sociologists describe. Authoritative Parenting sets firm, explained limits and listens to the child; young people raised this way tend to be confident and to do well at school. Authoritarian Parenting demands obedience without explanation and can leave a child obedient but anxious. Permissive Parenting sets few limits and few demands, which can leave a child without self-control.\n\nThe practices matter as much as the style. Consistency means the same rule is applied on Monday and on Saturday, and by both parents, so the child knows what to expect. Praise for effort teaches a child that trying is worthwhile, while praise only for results teaches fear of failing. Time spent talking and listening - about school, friends and worries - is what keeps a parent the person a child comes to first.\n\nPositive Discipline is the approach the school curriculum recommends: explain the rule, warn before punishing, use natural consequences, and separate the child from the behaviour so the child is corrected without being humiliated. Jamaican law protects children from abuse, and school rules forbid beating in school, so a parent or teacher who can correct a child without hitting is doing what the law and the curriculum both expect.\n\nEffective parenting also means knowing when to ask for help: from the school's guidance counsellor, the health centre, the Child Protection and Family Services Agency if a child is in danger, or a parenting programme. Both parents and guardians share the work, and a father's steady involvement is one of the strongest supports a child can have.",
+                "objectives": [
+                    "Distinguish the main parenting styles",
+                    "Explain the practices that support a child's development",
+                    "Describe Positive Discipline and why it works"
+                ],
+                "concepts": [
+                    "Authoritative Parenting",
+                    "Authoritarian Parenting",
+                    "Permissive Parenting",
+                    "Positive Discipline",
+                    "Consistency"
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Parenting Styles: match each style to the way it sets limits."
+                }
+            },
+            {
+                "id": "fam-social-issues-affecting-families",
+                "title": "Social Issues Affecting Families",
+                "content": "Social Issues Affecting Families are the problems that damage a household from inside or outside it. CSEC asks you to name each issue, explain how it affects the family's members, and say what the family and the state can do about it.\n\nDomestic Violence is abuse between people who live together or are related - physical, sexual, emotional or financial. Its effects reach the children who witness it, who may become anxious, withdrawn or violent themselves, and it often drives a parent and children out of the home. Substance Abuse - alcohol and drug misuse by a parent - takes money from food and school, and leaves children caring for younger siblings and for the parent.\n\nTeenage Pregnancy interrupts a girl's education, ties her to an older partner, and often keeps a whole generation in poverty; the family absorbs the cost through the grandparents who end up raising the child. Migration and Absent Parents describe the household left behind when one or both parents work abroad: money arrives, but so do new responsibilities for the eldest child and long separations that weaken the parents' authority. Poverty underlies several of the others - crowded housing, poor nutrition, early school leaving - and it is the issue the state attacks most directly.\n\nResponses come from three directions. The family responds with kinship care, where a grandmother, aunt or godparent takes in a child. The community responds through church, school and youth programmes, and through neighbours who report a child in danger. The state responds through the police, the courts and the Child Protection and Family Services Agency, through school feeding and the PATH programme, and through counselling and health services. Naming the response matters in an exam answer: a problem stated without a remedy earns half the marks.",
+                "objectives": [
+                    "Identify the social issues that affect Caribbean families",
+                    "Explain how each issue affects the family's members",
+                    "Describe the responses of the family, the community and the state"
+                ],
+                "concepts": [
+                    "Domestic Violence",
+                    "Substance Abuse",
+                    "Teenage Pregnancy",
+                    "Migration and Absent Parents",
+                    "Poverty"
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Name That Issue: match each situation to the social issue and its effect."
+                }
+            },
+            {
+                "id": "fam-laws-protecting-the-family",
+                "title": "Laws Protecting the Family",
+                "content": "Laws Protecting the Family are the statutes and courts that stand behind a family member who is harmed, abandoned or denied support. In Jamaica the frameworks you should be able to name are these.\n\nThe Domestic Violence Act lets a person who is being abused apply to the court for a protection order against someone they live with or are related to, and the police may act on it. The Child Care and Protection Act makes it an offence to ill-treat, neglect or abandon a child, sets out who may care for a child, and gives the state the power to remove a child who is in danger. The Maintenance Act lets a parent or guardian apply to the court for maintenance - money for a child's food, clothing, school and medical care - from a parent who will not provide it. The Status of Children Act gives a child born outside marriage the same rights as a child born inside it, including the right to inherit and to be maintained by the father.\n\nThe Family Court is where most of this work is heard: maintenance, custody, access and protection orders. Where a family member can go for help matters as much as the law's name: the police for immediate danger, the Family Court for orders and maintenance, the Child Protection and Family Services Agency where a child is being harmed, a health centre or hospital for medical care and evidence, and the legal aid service for a lawyer when the applicant cannot pay for one.\n\nTwo exam habits pay here. First, state the protection the law gives, not just the Act's name - an answer that names the Domestic Violence Act and says a protection order can be applied for earns both marks. Second, remember that a statute is amended over time: quote the Act by name, describe what it protects, and check the current version with the Ministry of Justice or a lawyer before relying on a particular section or penalty.",
+                "objectives": [
+                    "Name the laws that protect family members in Jamaica",
+                    "Explain what each law protects",
+                    "Describe where a family member can go for help"
+                ],
+                "concepts": [
+                    "Domestic Violence Act",
+                    "Child Care and Protection Act",
+                    "Maintenance Act",
+                    "Status of Children Act",
+                    "Family Court"
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Which Law Protects? Match each situation to the law and the help it gives."
                 }
             }
         ]
@@ -51,17 +151,25 @@
             {
                 "id": "ss-l2-1",
                 "title": "Primary and Secondary Groups",
-                "content": "Humans are social beings who belong to many different groups. A 'Primary Group' is a small social group whose members share close, personal, and enduring relationships (like a family or a close circle of friends). These groups are characterised by face-to-face interaction and strong emotional ties. They play a vital role in our personal development and sense of identity.\n\nA 'Secondary Group' is typically larger and more impersonal. These groups are often goal-oriented and formed for a specific purpose (like a professional organisation, a school club, or a large business). Interaction in secondary groups is more formal and less frequent than in primary groups. You may belong to a secondary group for years without forming deep personal connections with all its members.\n\nCSEC students must be able to distinguish between these two types of groups and understand the characteristics that define them, such as group size, cohesion, and leadership styles. Recognising the different groups we belong to helps us understand how our behaviour and values are shaped by our social environment.",
+                "content": "Humans are social beings who belong to many different groups. A 'Primary Group' is a small social group whose members share close, personal, and enduring relationships (like a family or a close circle of friends). These groups are characterised by face-to-face interaction and strong emotional ties. They play a vital role in our personal development and sense of identity.\n\nA 'Secondary Group' is typically larger and more impersonal. These groups are often goal-oriented and formed for a specific purpose (like a professional organisation, a school club, or a large business). Interaction in secondary groups is more formal and less frequent than in primary groups. You may belong to a secondary group for years without forming deep personal connections with all its members.\n\nCSEC students must be able to distinguish between these two types of groups and understand the characteristics that define them, such as group size, cohesion, and leadership styles. Recognising the different groups we belong to helps us understand how our behaviour and values are shaped by our social environment.\n\nThe concepts sociologists use to describe groups go beyond primary and secondary. An In-group is the group a person belongs to and feels loyalty toward; an Out-group is a group the person does not belong to, and the pair explains cliques, school rivalries and prejudice against newcomers. A Formal Group is organised with written rules, officers and stated purposes - a trade union, a school's students' council, a credit union. An Informal Group is a friendship or liming group with no officers and no written rules, held together by liking and habit. Group Norms are the unwritten rules a group enforces: what members wear, how they speak, what they must not say, and what happens to a member who breaks the rule, which is Conformity under pressure.\n\nGroup Cohesion is the strength of the bonds that hold members together, and it rises with shared goals, frequent face-to-face interaction, a size small enough for everyone to know everyone, and leadership that members trust. Cohesion is what makes a group able to act, and it is also what makes exclusion from it painful. Cohesion breaks when members stop meeting, when a dispute about leadership splits the group, when the shared goal is achieved or lost, or when the cost of belonging - subscriptions, time, loyalty tests - comes to outweigh what the member gets back. A group that has lost cohesion still exists on paper but no longer acts, which is why a youth club with empty meetings is an example of low cohesion rather than the end of the group.",
                 "objectives": [
                     "Distinguish between primary and secondary groups",
-                    "Understand the characteristics of groups"
+                    "Understand the characteristics of groups",
+                    "Explain the concepts used to describe social groups",
+                    "Describe what holds a group together and what breaks it"
                 ],
                 "concepts": [
                     "Peer Groups",
                     "Clubs",
                     "Professional Organisations",
                     "Group Cohesion",
-                    "Leadership Styles"
+                    "Leadership Styles",
+                    "In-group",
+                    "Out-group",
+                    "Formal Group",
+                    "Informal Group",
+                    "Group Norms",
+                    "Conformity"
                 ],
                 "experiment": {
                     "type": "map-explorer",
@@ -71,20 +179,48 @@
             {
                 "id": "ss-l2-2",
                 "title": "Social Institutions",
-                "content": "Social institutions are organised systems of social relationships that perform essential functions for society. The major institutions found in almost every culture include the Family, Religion, Education, the Economy, and the Justice System. Each institution has its own set of norms, values, and roles.\n\nFor example, the institution of Education is responsible for transmitting knowledge and skills, while Religion provides spiritual guidance and a sense of meaning. The Economy manages the production and distribution of goods and services, and the Justice System maintains order and protects the rights of citizens. These institutions are interconnected \u2014 changes in one often lead to changes in others.\n\nIn CSEC Social Studies, you will explore how these institutions function in the Caribbean and how they contribute to social stability or change. You will also discuss challenges facing these institutions, such as the impact of technology on education or the role of religion in modern secular societies.",
+                "content": "Social institutions are organised systems of social relationships that perform essential functions for society. The major institutions found in almost every culture include the Family, Religion, Education, the Economy, and the Justice System. Each institution has its own set of norms, values, and roles.\n\nFor example, the institution of Education is responsible for transmitting knowledge and skills, while Religion provides spiritual guidance and a sense of meaning. The Economy manages the production and distribution of goods and services, and the Justice System maintains order and protects the rights of citizens. These institutions are interconnected \u2014 changes in one often lead to changes in others.\n\nIn CSEC Social Studies, you will explore how these institutions function in the Caribbean and how they contribute to social stability or change. You will also discuss challenges facing these institutions, such as the impact of technology on education or the role of religion in modern secular societies.\n\nBesides having functions, institutions share characteristics that let you recognise one. An Institutional Structure is the arrangement of positions and roles - the ministry, the school board, the head teacher, the class teacher - so that the work continues whoever holds the post. Persistence is the institution's survival beyond the people in it: a school outlives its head teachers and a church outlives its ministers. Group Norms become written rules in an institution, and Sanctions are the rewards and penalties that enforce them - a certificate, a promotion, a fine, exclusion. Legitimacy is the acceptance by the society that the institution has the right to do what it does, which is why a court's ruling is obeyed and a mob's is not. Interdependence is the fact that no institution stands alone: the school depends on the family to send the child, on the economy for tax revenue and on the justice system to enforce attendance, so a failure in one is felt in the others.",
                 "objectives": [
                     "Identify major social institutions",
-                    "Understand their functions in society"
+                    "Understand their functions in society",
+                    "Describe the characteristics that social institutions share"
                 ],
                 "concepts": [
                     "Religion",
                     "Education",
                     "The Economy",
-                    "The Justice System"
+                    "The Justice System",
+                    "Persistence",
+                    "Legitimacy",
+                    "Sanctions",
+                    "Institutional Structure",
+                    "Interdependence"
                 ],
                 "experiment": {
                     "type": "matching-game",
                     "description": "Institution Matcher: Link social needs (e.g., 'spiritual guidance', 'learning skills') to the corresponding social institution."
+                }
+            },
+            {
+                "id": "soc-social-group-interaction",
+                "title": "Social Group Interaction",
+                "content": "Social Group Interaction is what happens when groups meet, work together or compete for the same things. Sociologists describe four forms. Cooperation is working together for a goal neither could reach alone, as a village does to build a road or a class does to stage a concert. Competition is striving for a scarce goal by rules - two schools for the same trophy, two firms for the same customers. Conflict is competition that has broken its rules and turned to harming the other side, whether between gangs, political parties or neighbours. Accommodation is the settlement that follows: a truce, a compromise, mediation, or an agreement to differ, and it is what makes cooperation possible again.\n\nGroups sort people into In-group and Out-group. The in-group is the group a person belongs to and feels loyalty toward; the out-group is everyone else, and the danger is that loyalty to the in-group becomes hostility to the out-group - the mechanism behind cliques in school, rivalry between communities and discrimination against newcomers.\n\nPeer Pressure is the influence a group has on its members to conform, and it works both ways: a group can press a young person toward study, sport and discipline, or toward truancy, violence and drug use. The group that rewards conformity most strongly is the one that matters most to the member, which is why the family and the school work to be that group.\n\nConflict between groups is not always bad - it can expose injustice and force change - but it is expensive, so societies build ways to accommodate it: bargaining through trade unions, mediation, elections that settle disputes without violence, and the courts. The exam point is to name the form of interaction first, then say what produced it and what settled it.",
+                "objectives": [
+                    "Describe the forms of interaction between social groups",
+                    "Explain in-groups, out-groups and peer pressure",
+                    "Discuss how conflict between groups can be resolved"
+                ],
+                "concepts": [
+                    "Cooperation",
+                    "Competition",
+                    "Conflict",
+                    "Accommodation",
+                    "In-group and Out-group",
+                    "Peer Pressure"
+                ],
+                "experiment": {
+                    "type": "drag-drop",
+                    "description": "Sort the Interaction: put each example under Cooperation, Competition, Conflict or Accommodation."
                 }
             }
         ]
@@ -262,6 +398,34 @@
                 "experiment": {
                     "type": "map-explorer",
                     "description": "Smart Shopper Challenge: Evaluate different product labels and contracts to identify misleading information and exercise consumer rights."
+                }
+            }
+        ]
+    },
+    {
+        "id": "ss-mod-7",
+        "title": "Caribbean Cultural Diversity",
+        "lessons": [
+            {
+                "id": "cult-caribbean-cultural-diversity",
+                "title": "Caribbean Cultural Diversity",
+                "content": "Caribbean Cultural Diversity describes a region settled by people from several continents, whose culture is learned, shared and passed on rather than carried in the blood. Culture is the whole way of life of a people - its language, religion, food, music, dress, festivals, values and family patterns. Ethnicity is the group a person belongs to by ancestry and shared tradition, and the Caribbean's ethnicity includes the indigenous Taino and Kalinago peoples, Africans brought by the slave trade, Europeans, Indians brought as indentured labourers after emancipation, Chinese, Portuguese and people of Middle Eastern descent.\n\nCreolisation is the process by which these traditions mixed to make something new that belongs to the region: the creole languages usually called patois, pan music from steel, calypso and soca out of carnival, and a kitchen that put curry, saltfish, rice and peas and ackee on the same table. Cultural Retention is the other half of the story: traditions that survived almost intact, such as Kumina and Jonkonnu in Jamaica, Hosay in Trinidad, the nine-night ceremony, and the church and school festivals that mark Christmas and Easter.\n\nCultural Heritage is what a society chooses to keep and pass on, and it is held in two places: in monuments, museums, archives, songs and recipes, which is tangible and intangible heritage, and in people, through language, craft and ceremony. Caribana and Carnival, the Jamaica Folk Singers, the National Dance Theatre Company and the national libraries all exist to keep it alive.\n\nDiversity is not a list to memorise but a reason for tolerance: the region's religions include Christianity, Hinduism, Islam, Judaism and Rastafari, and its languages include English, French, Dutch, Spanish and the creoles built from them. Culture also changes: globalisation, foreign media and migration push young people toward one world culture, while festivals, food and language pull them back, and a healthy society makes room for both.",
+                "objectives": [
+                    "Define culture and its elements",
+                    "Explain the ethnic roots of Caribbean society",
+                    "Describe Creolisation and Cultural Retention",
+                    "Discuss how culture changes and why diversity needs tolerance"
+                ],
+                "concepts": [
+                    "Culture",
+                    "Ethnicity",
+                    "Creolisation",
+                    "Cultural Retention",
+                    "Cultural Heritage"
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Where Did It Come From? Match each Caribbean tradition to its root."
                 }
             }
         ]
