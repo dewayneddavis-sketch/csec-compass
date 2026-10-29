@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 // Proof of the Social Studies M1–M3 wiring, run against the SHIPPED modules.json and the SHIPPED
 // lessonSets.js (not a description of them):
-//   1. every one of the 18 lessons resolves to a set of its OWN subject (never another subject's);
+//   1. every one of the union's 24 lessons (12 frozen + 6 M1–M3 + 6 M4–M5) resolves to a set of its
+//      OWN subject (never another subject's);
 //   2. the 6 new lessons resolve by lessonId to the set this PR added;
 //   3. each new set's title IS the lesson's own title (the physics-gap standard), and its subtitle is real;
 //   4. every string the set displays appears in that lesson's own copy (the trace rule);
@@ -26,10 +27,31 @@ const NEW_IDS = ["fam-preparation-for-parenthood", "fam-effective-parenting",
   "cult-caribbean-cultural-diversity", "soc-social-group-interaction"];
 const FROZEN = ["ss-l1-1", "ss-l1-2", "ss-l2-1", "ss-l2-2", "ss-l3-1", "ss-l3-2",
   "ss-l4-1", "ss-l4-2", "ss-l5-1", "ss-l5-2", "ss-l6-1", "ss-l6-2"];
+// The M4-M5 sibling slice (PR #204) shipped ten lessons in ss-mod-8/9. Declared here so the union
+// total is DERIVED from id lists rather than pinned to this slice's own head: a further slice must add
+// its ids to a list like this one, and this check then fails loudly instead of quietly measuring a
+// tree it no longer describes.
+const SIBLING_NEW_IDS = ["elec-political-party-election-preparation",
+  "elec-factors-influencing-election-outcomes", "elec-voter-participation",
+  "elec-interpreting-election-data", "gov-citizens-government-and-the-constitution",
+  "gov-essentials-of-good-governance"];
+const EXPECTED_IDS = [...FROZEN, ...NEW_IDS, ...SIBLING_NEW_IDS];
+// 6 original modules + ss-mod-7 (this slice) + ss-mod-8/9 (the M4-M5 slice)
+const EXPECTED_MODULES = ["ss-mod-1", "ss-mod-2", "ss-mod-3", "ss-mod-4", "ss-mod-5", "ss-mod-6",
+  "ss-mod-7", "ss-mod-8", "ss-mod-9"];
 
 section("1. the content tree");
-check(lessons.length === 18, `18 lessons in the shipped tree (got ${lessons.length})`);
-check(mods.length === 7, `7 modules (got ${mods.length})`);
+check(lessons.length === EXPECTED_IDS.length,
+  `the union tree holds ${EXPECTED_IDS.length} lessons = ${FROZEN.length} frozen + ${NEW_IDS.length} M1-M3 + ${SIBLING_NEW_IDS.length} M4-M5 (got ${lessons.length})`);
+check(EXPECTED_IDS.every((id) => lessons.some((l) => l.id === id)),
+  "every declared id from both slices is still present (none dropped by the union)");
+check(lessons.every((l) => EXPECTED_IDS.includes(l.id)),
+  "no lesson in the tree sits outside the two slices' declared ids (no id re-keyed)");
+check(mods.length === EXPECTED_MODULES.length,
+  `${EXPECTED_MODULES.length} modules = 6 original + ss-mod-7 + ss-mod-8/9 (got ${mods.length})`);
+check(EXPECTED_MODULES.every((id) => mods.some((m) => m.id === id)) &&
+  mods.every((m) => EXPECTED_MODULES.includes(m.id)),
+  "the module list is exactly the union of the original modules and both slices' new ones");
 check(JSON.stringify(mods) === JSON.stringify(mirrorMods), "content/ and public/content/ modules.json are identical");
 const ids = lessons.map((l) => l.id);
 check(new Set(ids).size === ids.length, "no duplicate lesson id");
@@ -47,7 +69,8 @@ for (const l of lessons) {
 
 section("2. every lesson resolves to a set of its own subject");
 for (const l of lessons) check(!!ss[l.id], `${l.id}: has a per-lesson set in lessonSets["social-studies"]`);
-check(Object.keys(ss).length === 18, `the subject block holds exactly the 18 lessons (got ${Object.keys(ss).length})`);
+check(Object.keys(ss).length === EXPECTED_IDS.length,
+  `the subject block holds one set per lesson of the union (${Object.keys(ss).length} of ${EXPECTED_IDS.length})`);
 check(!Object.keys(lessonSets).some((s) => s !== "social-studies" && NEW_IDS.some((n) => lessonSets[s][n])),
   "no new id leaked into another subject's block");
 

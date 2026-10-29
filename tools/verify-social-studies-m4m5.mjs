@@ -4,7 +4,8 @@
 // Coverage build: /home/team/shared/social-studies-coverage-audit.md sections 4, 5, 6, 10 —
 // chapters 17-26 = 1 REUSE + 3 EXTEND (ss-l3-1, ss-l3-2 grown in place) + 6 NEW lessons
 // (elec- x4, gov- x2) in two new modules. What this pins:
-//   1. the 12 frozen lesson ids are all still there, exactly once (never renamed/re-keyed);
+//   1. the 12 frozen lesson ids are all still there, exactly once (never renamed/re-keyed), and the
+//      tree is the UNION of this slice and the M1-M3 sibling: 12 frozen + 6 M1-M3 + 6 M4-M5 = 24;
 //   2. the EXTEND lessons still carry their ORIGINAL opening teaching (pure insertion) and now
 //      teach the chapters they were grown for, by name;
 //   3. each of the 6 new lessons is a real lesson (content, objectives, string-array concepts,
@@ -58,6 +59,14 @@ const NEW_MODULE = {
 };
 const FROZEN = ["ss-l1-1", "ss-l1-2", "ss-l2-1", "ss-l2-2", "ss-l3-1", "ss-l3-2",
                 "ss-l4-1", "ss-l4-2", "ss-l5-1", "ss-l5-2", "ss-l6-1", "ss-l6-2"];
+// The M1-M3 sibling slice (PR #203) shipped six lessons of its own. They are declared here so the
+// union total is DERIVED from id lists rather than pinned to this branch's head: a further slice must
+// add its ids to a list like this one, and this check then fails loudly instead of quietly measuring
+// a tree it no longer describes.
+const SIBLING_NEW_IDS = ["fam-preparation-for-parenthood", "fam-effective-parenting",
+  "fam-social-issues-affecting-families", "fam-laws-protecting-the-family",
+  "cult-caribbean-cultural-diversity", "soc-social-group-interaction"];
+const EXPECTED_IDS = [...FROZEN, ...SIBLING_NEW_IDS, ...NEW_IDS];
 // The opening sentence of each extended lesson as it stood BEFORE this slice: if a lane ever
 // rewrites rather than inserts, this is what catches it.
 const ORIGINAL_OPENINGS = {
@@ -111,8 +120,12 @@ const fold = (s) => String(s).toLowerCase()
   .replace(/[\u2018\u2019\u201c\u201d]/g, "'").replace(/[\u2013\u2014]/g, "-").replace(/\s+/g, " ");
 
 // ---------------------------------------------------------------- 1. frozen ids
-section("1. the 12 frozen lesson ids survive untouched");
-check(allLessons.length === 12 + NEW_IDS.length, `lesson count is 12 + ${NEW_IDS.length} = ${allLessons.length}`);
+section("1. the 12 frozen lesson ids survive untouched, and the tree is the union of both slices");
+check(allLessons.length === EXPECTED_IDS.length,
+  `lesson count is the union: ${FROZEN.length} frozen + ${SIBLING_NEW_IDS.length} M1-M3 + ${NEW_IDS.length} M4-M5 = ${EXPECTED_IDS.length} (got ${allLessons.length})`);
+check(EXPECTED_IDS.every((id) => !!byId[id]), "every declared id from both slices is still present (none dropped)");
+check(allLessons.every((l) => EXPECTED_IDS.includes(l.id)),
+  "no lesson in the tree sits outside the two slices' declared ids (no id re-keyed)");
 for (const id of FROZEN) check(!!byId[id], `frozen id ${id} is still present`);
 check(new Set(allLessons.map((l) => l.id)).size === allLessons.length, "no duplicate lesson id");
 for (const id of FROZEN) {
@@ -187,6 +200,10 @@ check(setKeys.filter((k) => k.startsWith("elec-") || k.startsWith("gov-")).every
   "no lessonSets key for a lesson that does not exist");
 check(NEW_IDS.every((id) => setKeys.includes(id)), "every new lesson is keyed (none falls back to another subject's panel)");
 check(FROZEN.every((id) => setKeys.includes(id)), "the 12 older sets are still present");
+check(SIBLING_NEW_IDS.every((id) => setKeys.includes(id)),
+  "the M1-M3 sibling's six sets are still present (the union kept both slices' labs)");
+check(setKeys.length === EXPECTED_IDS.length,
+  `one set per lesson of the union (${setKeys.length} of ${EXPECTED_IDS.length})`);
 
 // vocabulary trace: a lab may not invent terms the lesson never teaches
 section("5. every lab string is vocabulary the lesson itself teaches");
