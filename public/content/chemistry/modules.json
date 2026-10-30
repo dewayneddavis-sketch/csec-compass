@@ -604,18 +604,156 @@
             {
                 "id": "hydrocarbons-alkanes",
                 "title": "Introduction to Hydrocarbons (Alkanes)",
-                "content": "Organic chemistry is the study of carbon-containing compounds. Hydrocarbons are the simplest organic compounds, consisting only of carbon and hydrogen atoms. Alkanes are a family of 'saturated' hydrocarbons, meaning they contain only single covalent bonds between carbon atoms.\n\nThe general formula for alkanes is C\u2099H\u2082\u2099\u208a\u2082. The first four members of the series are Methane (CH\u2084), Ethane (C\u2082H\u2086), Propane (C\u2083H\u2088), and Butane (C\u2084H\u2081\u2080). As the carbon chain gets longer, the boiling point and viscosity of the alkane increase. Alkanes are primarily used as fuels because they burn in oxygen to release large amounts of energy, producing carbon dioxide and water.\n\nIn the CSEC syllabus, you must be able to name, draw the structural formulas, and describe the properties of these first four alkanes. You should also understand that alkanes are generally unreactive except for combustion and substitution reactions (where a hydrogen atom is replaced by a halogen like chlorine in the presence of UV light).",
+                "content": "Organic chemistry is the study of carbon-containing compounds. Hydrocarbons are the simplest organic compounds, consisting only of carbon and hydrogen atoms. Alkanes are a family of 'saturated' hydrocarbons, meaning they contain only single covalent bonds between carbon atoms.\n\nThe general formula for alkanes is C\u2099H\u2082\u2099\u208a\u2082. The first four members of the series are Methane (CH\u2084), Ethane (C\u2082H\u2086), Propane (C\u2083H\u2088), and Butane (C\u2084H\u2081\u2080). As the carbon chain gets longer, the boiling point and viscosity of the alkane increase. Alkanes are primarily used as fuels because they burn in oxygen to release large amounts of energy, producing carbon dioxide and water.\n\nIn the CSEC syllabus, you must be able to name, draw the structural formulas, and describe the properties of these first four alkanes. You should also understand that alkanes are generally unreactive except for combustion and substitution reactions (where a hydrogen atom is replaced by a halogen like chlorine in the presence of UV light).\n\nCarbon atoms form four covalent bonds, which lets them link into long chains. A compound can be written as a molecular formula, an empirical formula, or a structural (displayed) formula that shows every bond. Alkanes form a homologous series: a family with the same general formula whose members differ by a CH\u2082 unit, share similar chemical reactions, and show a gradual change in boiling point. Their names follow the same IUPAC pattern, with the first four named methane, ethane, propane and butane.\n\nMost hydrocarbons are obtained from petroleum, which is crude oil. Crude oil is separated into useful fractions by fractional distillation: it is vaporised and passed up a fractionating column that is cooler at the top, so light fractions such as refinery gas and petrol condense near the top, while heavy fractions such as bitumen condense near the bottom. Each fraction is still a mixture of compounds with a similar range of boiling points.\n\nAlkenes are a family of 'unsaturated' hydrocarbons that contain a carbon-carbon double bond. Their general formula is C\u2099H\u2082\u2099, and the first member is ethene (C\u2082H\u2084). Because of the double bond, alkenes are more reactive than alkanes and take part in addition reactions, in which the double bond opens and a small molecule adds across it. For example, ethene reacts with hydrogen to form ethane and with steam to form ethanol.\n\nThe bromine-water test distinguishes the two families: bromine water is orange-brown, and an alkene turns it colourless as bromine adds across the double bond, while an alkane leaves it orange-brown.",
                 "objectives": [
                     "Define hydrocarbons",
                     "Name and draw the first four alkanes"
                 ],
                 "concepts": [
                     "Hydrocarbons contain only carbon and hydrogen.",
-                    "Alkanes are saturated hydrocarbons (single bonds)."
+                    "Alkanes are saturated hydrocarbons (single bonds).",
+                    "Alkenes are unsaturated hydrocarbons containing a C=C double bond.",
+                    "Crude oil is separated into fractions by fractional distillation."
                 ],
                 "experiment": {
                     "type": "molecule-builder",
                     "description": "Carbon Chain: Drag carbon and hydrogen atoms together to build methane, ethane, propane, and butane, seeing their 3D structures."
+                }
+            },
+            {
+                "id": "org-structural-isomerism",
+                "title": "Structural Isomerism",
+                "content": "Structural isomerism is a form of isomerism in which compounds have the same molecular formula but different structural arrangements, meaning their atoms are bonded in a different order. Compounds that share a formula but differ in structure are called structural isomers.\n\nButane has the molecular formula C\u2084H\u2081\u2080 and two structural isomers. One isomer is a straight chain of four carbon atoms; the other is a branched chain of three carbons with a methyl group attached, named 2-Methylpropane. The two isomers differ in shape, so the straight-chain isomer boils at a higher temperature and the branched isomer boils at a lower temperature.\n\nIn the CSEC syllabus you must be able to recognise and draw the structural isomers of the first few alkanes. Isomerism explains why a single molecular formula can name more than one compound.",
+                "objectives": [
+                    "Define structural isomerism",
+                    "Draw and name the structural isomers of butane"
+                ],
+                "concepts": [
+                    "Structural isomers share a molecular formula but differ in structure.",
+                    "Butane has a straight-chain and a branched isomer."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Isomer Sorter: Drag each description into the correct isomer, the straight chain or the branched isomer."
+                }
+            },
+            {
+                "id": "org-distinguishing-alkanes-and-alkenes",
+                "title": "Distinguishing Alkanes and Alkenes",
+                "content": "Alkanes and alkenes are both hydrocarbons, but they can be told apart because an alkane has only single bonds while an alkene contains a carbon-carbon double bond. Alkanes are saturated and alkenes are unsaturated.\n\nThe bromine-water test is the standard test for unsaturation. Bromine water is orange-brown. When shaken with an alkane, it leaves bromine water orange-brown because the alkane cannot react with it. When shaken with an alkene, the alkene turns bromine water colourless as bromine adds across the double bond.\n\nSo in the CSEC exam, a colour change from orange-brown to colourless means the sample is an alkene, and no colour change means the sample is an alkane.",
+                "objectives": [
+                    "Distinguish alkanes from alkenes",
+                    "Describe the bromine-water test for unsaturation"
+                ],
+                "concepts": [
+                    "Alkanes are saturated; alkenes have a C=C double bond.",
+                    "Bromine water is decolourised by alkenes."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Saturation Sorter: Drag each observation into Alkane or Alkene."
+                }
+            },
+            {
+                "id": "org-functional-groups",
+                "title": "Functional Groups and Their Properties",
+                "content": "A functional group is an atom or group of atoms that gives an organic compound its characteristic chemical reactions. Molecules with the same functional group belong to the same family and react in similar ways.\n\nThree functional groups matter at CSEC level. Ethanol contains the -OH hydroxyl group, which makes it an alcohol. Ethanoic acid contains the -COOH carboxyl group, which makes it a carboxylic acid. Ethyl ethanoate contains the -COO- ester link, which makes it an ester. Ethene contains a carbon-carbon double bond, which makes it an alkene.\n\nLearning to spot a functional group lets you predict how a molecule will behave: the functional group is the part of the molecule that takes part in reactions, while the hydrocarbon part stays mostly unchanged.",
+                "objectives": [
+                    "Define a functional group",
+                    "Identify the -OH, -COOH and -COO- functional groups"
+                ],
+                "concepts": [
+                    "A functional group gives a family its characteristic reactions.",
+                    "Alcohols contain -OH, acids contain -COOH, esters contain -COO-."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Functional Group Match: Drag each compound to the functional group it contains."
+                }
+            },
+            {
+                "id": "org-ethanol-and-fermentation",
+                "title": "Ethanol and Fermentation",
+                "content": "Ethanol is an alcohol with the formula C\u2082H\u2085OH. It is made in two ways. Fermentation uses yeast to turn sugars into ethanol, working without air. Hydration of ethene reacts ethene with steam over a catalyst, an industrial route that is continuous and fast.\n\nEthanol is a fuel and a solvent. When it burns, combustion gives carbon dioxide and water, which is why ethanol is blended into motor fuels. Oxidation turns ethanol into ethanoic acid, the acid found in vinegar.\n\nIn the CSEC syllabus you must be able to describe fermentation and the hydration of ethene, and to name the products when ethanol burns.",
+                "objectives": [
+                    "Describe the manufacture of ethanol",
+                    "State the reactions of ethanol"
+                ],
+                "concepts": [
+                    "Fermentation uses yeast to make ethanol from sugars.",
+                    "Ethanol burns to give carbon dioxide and water."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Ethanol Match: Drag each process to what it does to ethanol."
+                }
+            },
+            {
+                "id": "org-ethanoic-acid",
+                "title": "Ethanoic Acid",
+                "content": "Ethanoic acid is a carboxylic acid with the formula CH\u2083COOH. It is the acid in vinegar and gives vinegar its sour taste. Ethanoic acid is a weak acid, so it only partly ionises in water.\n\nLike other acids, ethanoic acid reacts with bases to form salts called ethanoates. With sodium hydroxide, it forms sodium ethanoate and water. With a carbonate, it gives a salt, water and carbon dioxide.\n\nIn the CSEC syllabus you must be able to describe ethanoic acid as a weak acid, and to write the word equations for its reactions with bases and carbonates.",
+                "objectives": [
+                    "Describe ethanoic acid as a weak acid",
+                    "State the reactions of ethanoic acid"
+                ],
+                "concepts": [
+                    "Ethanoic acid is a weak acid found in vinegar.",
+                    "Ethanoic acid reacts with bases to form salts."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Acid Match: Drag each property or reaction to its description of ethanoic acid."
+                }
+            },
+            {
+                "id": "org-esters-hydrolysis-and-detergents",
+                "title": "Esters, Hydrolysis, and Detergents",
+                "content": "An ester forms when an alcohol reacts with a carboxylic acid, in a reaction called esterification, which is making an ester from an alcohol and an acid. Esterification is catalysed by an acid and produces an ester and water. Esters often have sweet, fruity smells, so they are used to make perfumes and flavourings.\n\nHydrolysis is the reverse reaction, breaking an ester back into its alcohol and acid, and it is called hydrolysis. Water breaks an ester into an alcohol and an acid. Soaps and detergents are salts of long-chain acids, made by treating fats or oils with an alkali, and they remove grease because one end of the molecule dissolves in water while the other dissolves in oil.\n\nIn the CSEC syllabus you must be able to write the word equation for esterification, and to describe hydrolysis and the cleaning action of soaps and detergents.",
+                "objectives": [
+                    "Describe esterification and hydrolysis",
+                    "Relate esters to perfumes and detergents"
+                ],
+                "concepts": [
+                    "An ester forms when an alcohol reacts with a carboxylic acid.",
+                    "Hydrolysis breaks an ester back into an alcohol and an acid."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Ester Sorter: Drag each statement into Making an ester or Breaking an ester."
+                }
+            },
+            {
+                "id": "org-polymers",
+                "title": "Polymers: Definition and Formation",
+                "content": "A polymer is a long chain built from many small molecules. The small molecules that join up are called monomers, and a monomer is a small molecule that joins up. Polythene, for example, is a polymer made from the monomer ethene.\n\nThere are two kinds of polymerisation. Addition polymerisation joins monomers without losing any atoms, so the polymer is the only product. Condensation polymerisation joins monomers while water is also produced, because a small molecule such as water is given off as well.\n\nIn the CSEC syllabus you must be able to define a polymer and a monomer, and to describe addition polymerisation and condensation polymerisation.",
+                "objectives": [
+                    "Define a polymer and a monomer",
+                    "Distinguish addition and condensation polymerisation"
+                ],
+                "concepts": [
+                    "A polymer is a long chain built from many small monomers.",
+                    "Addition polymerisation joins monomers without a by-product."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Polymer Match: Drag each term to its description."
+                }
+            },
+            {
+                "id": "org-polymer-uses",
+                "title": "Polymer Uses",
+                "content": "Different polymers have different properties, and the properties decide the uses. Polythene is flexible, light and a good insulator, so it is used to make plastic bags and cling film. PVC (polyvinyl chloride) is tougher, so it is used to make pipes and cable insulation.\n\nNylon is strong and hard-wearing, so it is used to make ropes and fishing line. The reason one polymer suits a job better than another comes down to how its chains pack together and how strongly they attract.\n\nIn the CSEC syllabus you must be able to relate a polymer's properties to its uses, and to name the uses of polythene, PVC and nylon.",
+                "objectives": [
+                    "Relate a polymer's properties to its uses",
+                    "Name uses of polythene, PVC and nylon"
+                ],
+                "concepts": [
+                    "Polythene and PVC are addition polymers.",
+                    "A polymer's properties decide what it is used for."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Polymer Sorter: Drag each use to the polymer it describes."
                 }
             }
         ]

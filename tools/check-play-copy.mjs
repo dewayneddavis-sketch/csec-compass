@@ -249,7 +249,10 @@ if (selfTestOnly) {
       if (SETS.MATH_BALANCE_TYPES.has(t)) return "balance";
       return "cards";
     }
-    if (subjectId === "chemistry") return SETS.CHEM_DRAG_TYPES.has(t) ? "drag-drop" : "cards";
+    if (subjectId === "chemistry") {
+      if (lessonId && lessonSets?.["chemistry"]?.[lessonId]) return "drag-drop";
+      return SETS.CHEM_DRAG_TYPES.has(t) ? "drag-drop" : "cards";
+    }
     if (subjectId === "biology" || subjectId === "human-social-biology") return "drag-drop";
     if (subjectId === "english-a") {
       if (lessonId && lessonSets?.["english-a"]?.[lessonId]) return "drag-drop";

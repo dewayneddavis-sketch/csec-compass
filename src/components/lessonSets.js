@@ -7000,5 +7000,111 @@ export const lessonSets = {
         { id: "e4", target: "Mass times specific heat capacity times temperature change", label: "Heat transferred" },
       ],
     },
+    "org-structural-isomerism": {
+      title: "Structural Isomerism",
+      subtitle: "Drag each description into the correct isomer.",
+      kind: "sort",
+      categories: [
+        { id: "straight", label: "Butane" },
+        { id: "branched", label: "2-Methylpropane" },
+      ],
+      items: [
+        { id: "i1", label: "A straight chain of four carbon atoms", category: "straight" },
+        { id: "i2", label: "Boils at a higher temperature", category: "straight" },
+        { id: "i3", label: "A branched chain of three carbons with a methyl group attached", category: "branched" },
+        { id: "i4", label: "Boils at a lower temperature", category: "branched" },
+      ],
+    },
+    "org-distinguishing-alkanes-and-alkenes": {
+      title: "Distinguishing Alkanes and Alkenes",
+      subtitle: "Drag each observation into Alkane or Alkene.",
+      kind: "sort",
+      categories: [
+        { id: "alkane", label: "Alkane" },
+        { id: "alkene", label: "Alkene" },
+      ],
+      items: [
+        { id: "i1", label: "Has only single bonds", category: "alkane" },
+        { id: "i2", label: "Leaves bromine water orange-brown", category: "alkane" },
+        { id: "i3", label: "Contains a carbon-carbon double bond", category: "alkene" },
+        { id: "i4", label: "Turns bromine water colourless", category: "alkene" },
+      ],
+    },
+    "org-functional-groups": {
+      title: "Functional Groups and Their Properties",
+      subtitle: "Drag each compound to the functional group it contains.",
+      kind: "match",
+      pairs: [
+        { id: "f1", label: "Ethanol", target: "Contains the -OH hydroxyl group" },
+        { id: "f2", label: "Ethanoic acid", target: "Contains the -COOH carboxyl group" },
+        { id: "f3", label: "Ethyl ethanoate", target: "Contains the -COO- ester link" },
+        { id: "f4", label: "Ethene", target: "Contains a carbon-carbon double bond" },
+      ],
+    },
+    "org-ethanol-and-fermentation": {
+      title: "Ethanol and Fermentation",
+      subtitle: "Drag each process to what it does to ethanol.",
+      kind: "match",
+      pairs: [
+        { id: "e1", label: "Fermentation", target: "Uses yeast to turn sugars into ethanol" },
+        { id: "e2", label: "Hydration of ethene", target: "Reacts ethene with steam over a catalyst" },
+        { id: "e3", label: "Combustion", target: "Gives carbon dioxide and water" },
+        { id: "e4", label: "Oxidation", target: "Turns ethanol into ethanoic acid" },
+      ],
+    },
+    "org-ethanoic-acid": {
+      title: "Ethanoic Acid",
+      subtitle: "Drag each property or reaction to its description of ethanoic acid.",
+      kind: "match",
+      pairs: [
+        { id: "a1", label: "A weak acid", target: "Only partly ionises in water" },
+        { id: "a2", label: "Vinegar", target: "The acid in vinegar" },
+        { id: "a3", label: "With sodium hydroxide", target: "Forms sodium ethanoate and water" },
+        { id: "a4", label: "With a carbonate", target: "Gives a salt, water and carbon dioxide" },
+      ],
+    },
+    "org-esters-hydrolysis-and-detergents": {
+      title: "Esters, Hydrolysis, and Detergents",
+      subtitle: "Drag each statement into Making an ester or Breaking an ester.",
+      kind: "sort",
+      categories: [
+        { id: "make", label: "Making an ester" },
+        { id: "break", label: "Breaking an ester" },
+      ],
+      items: [
+        { id: "i1", label: "An alcohol reacts with a carboxylic acid", category: "make" },
+        { id: "i2", label: "Produces an ester and water", category: "make" },
+        { id: "i3", label: "Water breaks an ester into an alcohol and an acid", category: "break" },
+        { id: "i4", label: "Called hydrolysis", category: "break" },
+      ],
+    },
+    "org-polymers": {
+      title: "Polymers: Definition and Formation",
+      subtitle: "Drag each term to its description.",
+      kind: "match",
+      pairs: [
+        { id: "p1", label: "Polymer", target: "A long chain built from many small molecules" },
+        { id: "p2", label: "Monomer", target: "A small molecule that joins up" },
+        { id: "p3", label: "Addition polymerisation", target: "Joins monomers without losing any atoms" },
+        { id: "p4", label: "Condensation polymerisation", target: "Joins monomers while water is also produced" },
+      ],
+    },
+    "org-polymer-uses": {
+      title: "Polymer Uses",
+      subtitle: "Drag each use to the polymer it describes.",
+      kind: "sort",
+      categories: [
+        { id: "polythene", label: "Polythene" },
+        { id: "pvc", label: "PVC" },
+        { id: "nylon", label: "Nylon" },
+      ],
+      items: [
+        { id: "i1", label: "Used to make plastic bags and cling film", category: "polythene" },
+        { id: "i2", label: "Used to make pipes and cable insulation", category: "pvc" },
+        { id: "i3", label: "Used to make ropes and fishing line", category: "nylon" },
+        { id: "i4", label: "Flexible, light and a good insulator", category: "polythene" },
+        { id: "i5", label: "Strong and hard-wearing", category: "nylon" },
+      ],
+    },
   },
 };
