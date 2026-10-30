@@ -13,45 +13,6 @@
   "topic": "states-of-matter"
  },
  {
-  "id": "p2",
-  "question": "An atom has 11 protons and 12 neutrons. What is its mass number?",
-  "options": [
-   "11",
-   "12",
-   "23",
-   "1"
-  ],
-  "answer": "23",
-  "explanation": "Mass Number (A) = Protons + Neutrons = 11 + 12 = 23.",
-  "topic": "atomic-structure"
- },
- {
-  "id": "p3",
-  "question": "Which trend is generally observed as you move from left to right across a period in the Periodic Table?",
-  "options": [
-   "Atomic radius increases",
-   "Electronegativity decreases",
-   "Ionisation energy increases",
-   "Metallic character increases"
-  ],
-  "answer": "Ionisation energy increases",
-  "explanation": "Across a period, nuclear charge increases, making it harder to remove an electron, thus increasing ionisation energy.",
-  "topic": "periodic-table-trends"
- },
- {
-  "id": "p4",
-  "question": "Ionic bonding occurs between a metal and a non-metal through the:",
-  "options": [
-   "Sharing of electrons",
-   "Transfer of electrons",
-   "Delocalisation of electrons",
-   "Attraction of dipoles"
-  ],
-  "answer": "Transfer of electrons",
-  "explanation": "Ionic bonds are formed when a metal atom transfers electrons to a non-metal atom.",
-  "topic": "ionic-covalent-bonding"
- },
- {
   "id": "p5",
   "question": "How many moles are in 40 grams of Sodium hydroxide (NaOH)? (Molar mass: Na=23, O=16, H=1)",
   "options": [
@@ -78,30 +39,43 @@
   "topic": "ph-scale-indicators"
  },
  {
-  "id": "p7",
-  "question": "What are the products of a neutralisation reaction between an acid and a base?",
+  "id": "p33",
+  "question": "Reduction is defined as:",
   "options": [
-   "Salt and Hydrogen",
-   "Salt and Water",
-   "Acid and Salt",
-   "Water and Oxygen"
+   "gain of electrons",
+   "loss of electrons",
+   "gain of oxygen",
+   "gain of protons"
   ],
-  "answer": "Salt and Water",
-  "explanation": "Neutralisation: Acid + Base -> Salt + Water.",
-  "topic": "neutralization"
+  "answer": "gain of electrons",
+  "explanation": "Reduction is gain of electrons (OIL RIG).",
+  "topic": "defining-redox"
  },
  {
-  "id": "p8",
-  "question": "Oxidation is defined as the:",
+  "id": "p101",
+  "question": "Which of the following does NOT conduct electricity?",
   "options": [
-   "Gain of electrons",
-   "Loss of electrons",
-   "Gain of hydrogen",
-   "Loss of oxygen"
+   "Solid sodium chloride",
+   "Molten sodium chloride",
+   "Copper metal",
+   "Dilute sulphuric acid"
   ],
-  "answer": "Loss of electrons",
-  "explanation": "OIL RIG: Oxidation Is Loss (of electrons).",
-  "topic": "defining-redox"
+  "answer": "Solid sodium chloride",
+  "explanation": "In the solid state the sodium and chloride ions are locked in the lattice and cannot move, so solid sodium chloride is an insulator; melting frees the ions.",
+  "topic": "chem-conduction-and-electrolytes"
+ },
+ {
+  "id": "p102",
+  "question": "As a reaction proceeds, the curve of product against time becomes less steep because:",
+  "options": [
+   "the reactants are used up, so collisions become less frequent",
+   "the temperature of the mixture falls to absolute zero",
+   "the catalyst is gradually used up",
+   "the activation energy of the reaction increases"
+  ],
+  "answer": "the reactants are used up, so collisions become less frequent",
+  "explanation": "As the concentration of the reactants falls, fewer successful collisions happen per second, so the rate decreases and the curve flattens out.",
+  "topic": "chem-rate-data-and-graphs"
  },
  {
   "id": "p9",
@@ -117,6 +91,175 @@
   "topic": "hydrocarbons-alkanes"
  },
  {
+  "id": "p103",
+  "question": "Which property is typical of most metals?",
+  "options": [
+   "They are good conductors of heat and electricity",
+   "They are brittle when solid",
+   "They are poor conductors of heat",
+   "They are gases at room temperature"
+  ],
+  "answer": "They are good conductors of heat and electricity",
+  "explanation": "The delocalised electrons in a metal carry both heat and charge, so metals are good conductors.",
+  "topic": "inorg-metal-properties"
+ },
+ {
+  "id": "p49",
+  "question": "Simple distillation is used to separate:",
+  "options": [
+   "a solvent from a solution",
+   "two insoluble solids",
+   "two dyes",
+   "two miscible liquids"
+  ],
+  "answer": "a solvent from a solution",
+  "explanation": "Distillation separates a liquid from a solution by boiling.",
+  "topic": "chem-solubility-and-separation-techniques"
+ },
+ {
+  "id": "p83",
+  "question": "Electrolysis of brine produces:",
+  "options": [
+   "chlorine, hydrogen and sodium hydroxide",
+   "oxygen and hydrogen",
+   "sodium and chlorine",
+   "water only"
+  ],
+  "answer": "chlorine, hydrogen and sodium hydroxide",
+  "explanation": "Brine electrolysis yields Cl₂, H₂ and NaOH.",
+  "topic": "chem-industrial-electrolysis"
+ },
+ {
+  "id": "p104",
+  "question": "In the fermentation of glucose by yeast, the products are:",
+  "options": [
+   "ethanol and carbon dioxide",
+   "ethene and water",
+   "ethanoic acid and hydrogen",
+   "ethanol and oxygen"
+  ],
+  "answer": "ethanol and carbon dioxide",
+  "explanation": "Enzymes in yeast convert glucose into ethanol and carbon dioxide: C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂.",
+  "topic": "org-ethanol-and-fermentation"
+ },
+ {
+  "id": "p99",
+  "question": "Which metal is extracted by reduction with carbon?",
+  "options": [
+   "Iron",
+   "Sodium",
+   "Calcium",
+   "Potassium"
+  ],
+  "answer": "Iron",
+  "explanation": "Iron oxide is reduced by coke (carbon) in the blast furnace.",
+  "topic": "inorg-extraction-of-aluminium-and-iron"
+ },
+ {
+  "id": "p105",
+  "question": "In the extraction of sucrose from sugar cane, lime is added to the cane juice and the mixture is then filtered. Why?",
+  "options": [
+   "To neutralise the acidic juice and precipitate impurities so clean sucrose can crystallise",
+   "To convert the sucrose into glucose",
+   "To ferment the sugar into ethanol",
+   "To dissolve the sucrose crystals that have already formed"
+  ],
+  "answer": "To neutralise the acidic juice and precipitate impurities so clean sucrose can crystallise",
+  "explanation": "Lime (calcium hydroxide) neutralises the juice and precipitates the coloured impurities, which are filtered off; the clarified juice is then concentrated so that sucrose crystallises.",
+  "topic": "chem-sucrose-extraction"
+ },
+ {
+  "id": "p106",
+  "question": "Ethanoic acid reacts with ethanol when a little concentrated sulphuric acid is added. The products are:",
+  "options": [
+   "ethyl ethanoate and water",
+   "ethanal and water",
+   "ethene and water",
+   "sodium ethanoate and hydrogen"
+  ],
+  "answer": "ethyl ethanoate and water",
+  "explanation": "A carboxylic acid and an alcohol esterify in the presence of a strong acid catalyst to give an ester and water.",
+  "topic": "org-ethanoic-acid"
+ },
+ {
+  "id": "p62",
+  "question": "Aluminium is protected from corrosion by:",
+  "options": [
+   "a layer of aluminium oxide",
+   "painting only",
+   "electroplating",
+   "alloying with iron"
+  ],
+  "answer": "a layer of aluminium oxide",
+  "explanation": "Al₂O₃ forms a protective oxide layer.",
+  "topic": "inorg-corrosion-of-metals"
+ },
+ {
+  "id": "p107",
+  "question": "Which of the following is a problem caused by discarded addition polymers such as poly(ethene)?",
+  "options": [
+   "They are not biodegradable, so they persist in landfill and in the sea",
+   "They dissolve in rain water and pollute streams",
+   "They break down quickly and release carbon dioxide",
+   "They burn in sunlight to give harmless gases"
+  ],
+  "answer": "They are not biodegradable, so they persist in landfill and in the sea",
+  "explanation": "Their strong, inert carbon chains are not attacked by micro-organisms, so discarded plastics survive for decades and harm wildlife.",
+  "topic": "org-polymer-uses"
+ },
+ {
+  "id": "p80",
+  "question": "The raw materials for the Haber process are:",
+  "options": [
+   "nitrogen and hydrogen",
+   "oxygen and hydrogen",
+   "nitrogen and oxygen",
+   "ammonia and water"
+  ],
+  "answer": "nitrogen and hydrogen",
+  "explanation": "Nitrogen from air and hydrogen from natural gas.",
+  "topic": "inorg-uses-of-nonmetals"
+ },
+ {
+  "id": "p76",
+  "question": "Which of the following is a greenhouse gas?",
+  "options": [
+   "Methane",
+   "Oxygen",
+   "Nitrogen",
+   "Helium"
+  ],
+  "answer": "Methane",
+  "explanation": "Methane traps heat like CO₂.",
+  "topic": "inorg-environmental-impact-of-nonmetals"
+ },
+ {
+  "id": "p108",
+  "question": "A solution gives a white precipitate with dilute sodium hydroxide that dissolves in excess to give a colourless solution. The cation present is:",
+  "options": [
+   "zinc, Zn²⁺",
+   "copper(II), Cu²⁺",
+   "iron(II), Fe²⁺",
+   "calcium, Ca²⁺"
+  ],
+  "answer": "zinc, Zn²⁺",
+  "explanation": "Zinc ions give a white zinc hydroxide precipitate that redissolves in excess sodium hydroxide; the precipitates of calcium and iron(II) do not.",
+  "topic": "inorg-identification-of-cations"
+ },
+ {
+  "id": "p74",
+  "question": "Oxygen gas relights:",
+  "options": [
+   "a glowing splint",
+   "a damp blue litmus",
+   "a burning splint with a pop",
+   "limewater"
+  ],
+  "answer": "a glowing splint",
+  "explanation": "Oxygen supports combustion, relighting a glowing splint.",
+  "topic": "inorg-identification-of-gases"
+ },
+ {
   "id": "p10",
   "question": "The process by which a solid turns directly into a gas without becoming a liquid is called:",
   "options": [
@@ -128,409 +271,6 @@
   "answer": "Sublimation",
   "explanation": "Sublimation is the direct change of state from solid to gas.",
   "topic": "states-of-matter"
- },
- {
-  "id": "p11",
-  "question": "Isotopes of the same element have the same number of protons but different numbers of:",
-  "options": [
-   "Electrons",
-   "Neutrons",
-   "Shells",
-   "Valence electrons"
-  ],
-  "answer": "Neutrons",
-  "explanation": "Isotopes have the same atomic number but different mass numbers due to varying neutron counts.",
-  "topic": "atomic-structure"
- },
- {
-  "id": "p12",
-  "question": "Which of the following is a characteristic of simple covalent molecules?",
-  "options": [
-   "High melting point",
-   "Conduct electricity when molten",
-   "Low melting point",
-   "Solid at room temperature"
-  ],
-  "answer": "Low melting point",
-  "explanation": "Simple covalent molecules have weak intermolecular forces, resulting in low melting and boiling points.",
-  "topic": "ionic-covalent-bonding"
- },
- {
-  "id": "p13",
-  "question": "Which particle determines the identity of an element?",
-  "options": [
-   "Proton",
-   "Neutron",
-   "Electron",
-   "Photon"
-  ],
-  "answer": "Proton",
-  "explanation": "The number of protons (atomic number) defines the element.",
-  "topic": "atomic-structure"
- },
- {
-  "id": "p14",
-  "question": "An atom with 11 protons, 12 neutrons and 11 electrons has a mass number of:",
-  "options": [
-   "23",
-   "11",
-   "12",
-   "22"
-  ],
-  "answer": "23",
-  "explanation": "Mass number = protons + neutrons = 11 + 12 = 23.",
-  "topic": "atomic-structure"
- },
- {
-  "id": "p15",
-  "question": "Isotopes are atoms of the same element with different numbers of:",
-  "options": [
-   "neutrons",
-   "protons",
-   "electrons",
-   "orbitals"
-  ],
-  "answer": "neutrons",
-  "explanation": "Isotopes differ in neutron number, hence mass number.",
-  "topic": "atomic-structure"
- },
- {
-  "id": "p16",
-  "question": "Which subatomic particle has a negative charge?",
-  "options": [
-   "Electron",
-   "Proton",
-   "Neutron",
-   "Positron"
-  ],
-  "answer": "Electron",
-  "explanation": "Electrons carry a -1 charge.",
-  "topic": "atomic-structure"
- },
- {
-  "id": "p17",
-  "question": "The electron configuration 2,8,1 corresponds to which element?",
-  "options": [
-   "Sodium",
-   "Magnesium",
-   "Aluminium",
-   "Potassium"
-  ],
-  "answer": "Sodium",
-  "explanation": "11 electrons total → atomic number 11 = sodium.",
-  "topic": "atomic-structure"
- },
- {
-  "id": "p18",
-  "question": "Which group of the periodic table contains the noble gases?",
-  "options": [
-   "Group 0",
-   "Group 1",
-   "Group 2",
-   "Group 7"
-  ],
-  "answer": "Group 0",
-  "explanation": "Group 0 (18) elements are unreactive noble gases.",
-  "topic": "periodic-table-trends"
- },
- {
-  "id": "p19",
-  "question": "Elements in the same group have the same number of:",
-  "options": [
-   "outer-shell electrons",
-   "shells",
-   "protons",
-   "neutrons"
-  ],
-  "answer": "outer-shell electrons",
-  "explanation": "Group number equals outer electrons for main groups.",
-  "topic": "periodic-table-trends"
- },
- {
-  "id": "p20",
-  "question": "Which element is a halogen?",
-  "options": [
-   "Chlorine",
-   "Sodium",
-   "Magnesium",
-   "Calcium"
-  ],
-  "answer": "Chlorine",
-  "explanation": "Chlorine is in Group 7, the halogens.",
-  "topic": "periodic-table-trends"
- },
- {
-  "id": "p21",
-  "question": "Which type of bonding involves the transfer of electrons?",
-  "options": [
-   "Ionic",
-   "Covalent",
-   "Metallic",
-   "Hydrogen"
-  ],
-  "answer": "Ionic",
-  "explanation": "Ionic bonding transfers electrons from metal to non-metal.",
-  "topic": "ionic-covalent-bonding"
- },
- {
-  "id": "p22",
-  "question": "In a covalent bond, electrons are:",
-  "options": [
-   "shared",
-   "transferred",
-   "removed",
-   "created"
-  ],
-  "answer": "shared",
-  "explanation": "Covalent bonds share electron pairs between atoms.",
-  "topic": "ionic-covalent-bonding"
- },
- {
-  "id": "p23",
-  "question": "The formula of magnesium chloride is:",
-  "options": [
-   "MgCl₂",
-   "MgCl",
-   "Mg₂Cl",
-   "Mg₂Cl₃"
-  ],
-  "answer": "MgCl₂",
-  "explanation": "Mg²⁺ and Cl⁻ combine in a 1:2 ratio.",
-  "topic": "ionic-covalent-bonding"
- },
- {
-  "id": "p24",
-  "question": "Which of the following conducts electricity in the solid state?",
-  "options": [
-   "Copper",
-   "Sodium chloride",
-   "Sugar",
-   "Sulphur"
-  ],
-  "answer": "Copper",
-  "explanation": "Metals conduct electricity because of delocalised electrons.",
-  "topic": "ionic-covalent-bonding"
- },
- {
-  "id": "p25",
-  "question": "Ionic compounds conduct electricity when:",
-  "options": [
-   "molten or dissolved",
-   "solid",
-   "gaseous",
-   "never"
-  ],
-  "answer": "molten or dissolved",
-  "explanation": "Free-moving ions carry charge in molten/aqueous state.",
-  "topic": "ionic-covalent-bonding"
- },
- {
-  "id": "p26",
-  "question": "What is the pH of a neutral solution?",
-  "options": [
-   "7",
-   "0",
-   "14",
-   "1"
-  ],
-  "answer": "7",
-  "explanation": "pH 7 is neutral at 25°C.",
-  "topic": "ph-scale-indicators"
- },
- {
-  "id": "p27",
-  "question": "Which of the following is a strong acid?",
-  "options": [
-   "Hydrochloric acid",
-   "Ethanoic acid",
-   "Citric acid",
-   "Carbonic acid"
-  ],
-  "answer": "Hydrochloric acid",
-  "explanation": "HCl ionises completely; the others are weak acids.",
-  "topic": "ph-scale-indicators"
- },
- {
-  "id": "p28",
-  "question": "When an acid reacts with a base, the products are:",
-  "options": [
-   "salt and water",
-   "salt and hydrogen",
-   "salt and carbon dioxide",
-   "water and oxygen"
-  ],
-  "answer": "salt and water",
-  "explanation": "Neutralisation produces a salt and water.",
-  "topic": "neutralization"
- },
- {
-  "id": "p29",
-  "question": "Which gas is produced when an acid reacts with a metal?",
-  "options": [
-   "Hydrogen",
-   "Oxygen",
-   "Carbon dioxide",
-   "Chlorine"
-  ],
-  "answer": "Hydrogen",
-  "explanation": "Acid + metal → salt + hydrogen.",
-  "topic": "neutralization"
- },
- {
-  "id": "p30",
-  "question": "The reaction of an acid with a carbonate produces:",
-  "options": [
-   "carbon dioxide",
-   "hydrogen",
-   "oxygen",
-   "ammonia"
-  ],
-  "answer": "carbon dioxide",
-  "explanation": "Carbonates release CO₂ with acids.",
-  "topic": "neutralization"
- },
- {
-  "id": "p31",
-  "question": "What is the oxidation number of oxygen in most compounds?",
-  "options": [
-   "-2",
-   "+2",
-   "0",
-   "-1"
-  ],
-  "answer": "-2",
-  "explanation": "Oxygen usually has an oxidation state of -2.",
-  "topic": "defining-redox"
- },
- {
-  "id": "p32",
-  "question": "In the reaction Zn + CuSO₄ → ZnSO₄ + Cu, zinc is:",
-  "options": [
-   "oxidised",
-   "reduced",
-   "unchanged",
-   "neutralised"
-  ],
-  "answer": "oxidised",
-  "explanation": "Zn loses electrons (0 → +2), so it is oxidised.",
-  "topic": "defining-redox"
- },
- {
-  "id": "p33",
-  "question": "Reduction is defined as:",
-  "options": [
-   "gain of electrons",
-   "loss of electrons",
-   "gain of oxygen",
-   "gain of protons"
-  ],
-  "answer": "gain of electrons",
-  "explanation": "Reduction is gain of electrons (OIL RIG).",
-  "topic": "defining-redox"
- },
- {
-  "id": "p34",
-  "question": "Which is an example of a displacement reaction?",
-  "options": [
-   "Zn + CuSO₄ → ZnSO₄ + Cu",
-   "H₂O → H₂ + O₂",
-   "NaCl → Na + Cl₂",
-   "C + O₂ → CO₂"
-  ],
-  "answer": "Zn + CuSO₄ → ZnSO₄ + Cu",
-  "explanation": "Zinc displaces copper from its salt solution.",
-  "topic": "defining-redox"
- },
- {
-  "id": "p35",
-  "question": "The rate of a reaction can be increased by:",
-  "options": [
-   "raising temperature",
-   "lowering temperature",
-   "diluting reactants",
-   "adding a solid block"
-  ],
-  "answer": "raising temperature",
-  "explanation": "Higher temperature increases particle kinetic energy and collisions.",
-  "topic": "defining-redox"
- },
- {
-  "id": "p36",
-  "question": "A catalyst works by:",
-  "options": [
-   "lowering activation energy",
-   "raising activation energy",
-   "being consumed in the reaction",
-   "cooling the reactants"
-  ],
-  "answer": "lowering activation energy",
-  "explanation": "Catalysts provide an alternative pathway with lower activation energy.",
-  "topic": "defining-redox"
- },
- {
-  "id": "p37",
-  "question": "Increasing the surface area of a solid reactant:",
-  "options": [
-   "increases rate of reaction",
-   "decreases rate",
-   "has no effect",
-   "stops the reaction"
-  ],
-  "answer": "increases rate of reaction",
-  "explanation": "More surface area → more frequent collisions.",
-  "topic": "defining-redox"
- },
- {
-  "id": "p38",
-  "question": "Which factor does NOT affect the rate of reaction?",
-  "options": [
-   "Colour of the product",
-   "Temperature",
-   "Concentration",
-   "Surface area"
-  ],
-  "answer": "Colour of the product",
-  "explanation": "Product colour does not influence reaction rate.",
-  "topic": "defining-redox"
- },
- {
-  "id": "p39",
-  "question": "In an endothermic reaction, heat energy is:",
-  "options": [
-   "absorbed",
-   "released",
-   "unchanged",
-   "converted to light"
-  ],
-  "answer": "absorbed",
-  "explanation": "Endothermic reactions absorb heat from surroundings.",
-  "topic": "defining-redox"
- },
- {
-  "id": "p40",
-  "question": "Which reaction is exothermic?",
-  "options": [
-   "Burning of methane",
-   "Melting of ice",
-   "Photosynthesis",
-   "Dissolving ammonium nitrate"
-  ],
-  "answer": "Burning of methane",
-  "explanation": "Combustion releases heat energy.",
-  "topic": "defining-redox"
- },
- {
-  "id": "p41",
-  "question": "The mole is defined as:",
-  "options": [
-   "6.02 × 10²³ particles",
-   "1000 particles",
-   "1 gram of substance",
-   "22.4 particles"
-  ],
-  "answer": "6.02 × 10²³ particles",
-  "explanation": "One mole contains Avogadro's number of particles.",
-  "topic": "molar-mass-calculations"
  },
  {
   "id": "p42",
@@ -546,303 +286,43 @@
   "topic": "molar-mass-calculations"
  },
  {
-  "id": "p43",
-  "question": "What mass of sodium hydroxide (Mr = 40) is in 2 moles?",
+  "id": "p27",
+  "question": "Which of the following is a strong acid?",
   "options": [
-   "80 g",
-   "40 g",
-   "20 g",
-   "120 g"
+   "Hydrochloric acid",
+   "Ethanoic acid",
+   "Citric acid",
+   "Carbonic acid"
   ],
-  "answer": "80 g",
-  "explanation": "Mass = moles × Mr = 2 × 40 = 80 g.",
-  "topic": "molar-mass-calculations"
+  "answer": "Hydrochloric acid",
+  "explanation": "HCl ionises completely; the others are weak acids.",
+  "topic": "ph-scale-indicators"
  },
  {
-  "id": "p44",
-  "question": "The concentration of a solution containing 2 moles of solute in 500 cm³ is:",
+  "id": "p109",
+  "question": "An electrolyte is a substance that:",
   "options": [
-   "4 mol/dm³",
-   "2 mol/dm³",
-   "1 mol/dm³",
-   "0.5 mol/dm³"
+   "conducts electricity when molten or dissolved because it contains mobile ions",
+   "conducts electricity as a solid because it has free electrons",
+   "never conducts electricity under any conditions",
+   "conducts by giving electrons to the cathode"
   ],
-  "answer": "4 mol/dm³",
-  "explanation": "500 cm³ = 0.5 dm³ → 2/0.5 = 4 mol/dm³.",
-  "topic": "molar-mass-calculations"
+  "answer": "conducts electricity when molten or dissolved because it contains mobile ions",
+  "explanation": "Electrolytes are ionic compounds or acids: melting or dissolving frees their ions, and it is these mobile ions that carry the current through the liquid.",
+  "topic": "chem-conduction-and-electrolytes"
  },
  {
-  "id": "p45",
-  "question": "At r.t.p., one mole of gas occupies:",
+  "id": "p39",
+  "question": "In an endothermic reaction, heat energy is:",
   "options": [
-   "24 dm³",
-   "22.4 dm³",
-   "6 dm³",
-   "100 dm³"
+   "absorbed",
+   "released",
+   "unchanged",
+   "converted to light"
   ],
-  "answer": "24 dm³",
-  "explanation": "Molar volume at room temperature and pressure is 24 dm³.",
-  "topic": "molar-mass-calculations"
- },
- {
-  "id": "p46",
-  "question": "What volume of CO₂ (in dm³) is produced from 0.5 mol at r.t.p.?",
-  "options": [
-   "12 dm³",
-   "24 dm³",
-   "6 dm³",
-   "48 dm³"
-  ],
-  "answer": "12 dm³",
-  "explanation": "0.5 × 24 = 12 dm³.",
-  "topic": "molar-mass-calculations"
- },
- {
-  "id": "p47",
-  "question": "Which of these is a mixture?",
-  "options": [
-   "Sea water",
-   "Water",
-   "Salt",
-   "Carbon dioxide"
-  ],
-  "answer": "Sea water",
-  "explanation": "Sea water contains dissolved salts — a mixture.",
-  "topic": "states-of-matter"
- },
- {
-  "id": "p48",
-  "question": "The technique used to separate an insoluble solid from a liquid is:",
-  "options": [
-   "filtration",
-   "distillation",
-   "chromatography",
-   "crystallisation"
-  ],
-  "answer": "filtration",
-  "explanation": "Filtration separates insoluble solids from liquids.",
-  "topic": "states-of-matter"
- },
- {
-  "id": "p49",
-  "question": "Simple distillation is used to separate:",
-  "options": [
-   "a solvent from a solution",
-   "two insoluble solids",
-   "two dyes",
-   "two miscible liquids"
-  ],
-  "answer": "a solvent from a solution",
-  "explanation": "Distillation separates a liquid from a solution by boiling.",
-  "topic": "states-of-matter"
- },
- {
-  "id": "p50",
-  "question": "Which technique separates coloured dyes in a mixture?",
-  "options": [
-   "Chromatography",
-   "Filtration",
-   "Evaporation",
-   "Decanting"
-  ],
-  "answer": "Chromatography",
-  "explanation": "Chromatography separates substances by their movement through a medium.",
-  "topic": "states-of-matter"
- },
- {
-  "id": "p51",
-  "question": "A substance with a fixed composition and definite properties is:",
-  "options": [
-   "a compound",
-   "a mixture",
-   "an alloy",
-   "a solution"
-  ],
-  "answer": "a compound",
-  "explanation": "Compounds have fixed composition and unique properties.",
-  "topic": "states-of-matter"
- },
- {
-  "id": "p52",
-  "question": "Which state of matter has a definite shape and volume?",
-  "options": [
-   "Solid",
-   "Liquid",
-   "Gas",
-   "Plasma"
-  ],
-  "answer": "Solid",
-  "explanation": "Solids have fixed shape and volume.",
-  "topic": "states-of-matter"
- },
- {
-  "id": "p53",
-  "question": "The change of state from solid directly to gas is called:",
-  "options": [
-   "sublimation",
-   "evaporation",
-   "condensation",
-   "freezing"
-  ],
-  "answer": "sublimation",
-  "explanation": "Sublimation, e.g. dry ice → CO₂ gas.",
-  "topic": "states-of-matter"
- },
- {
-  "id": "p54",
-  "question": "Which process releases heat energy?",
-  "options": [
-   "Condensation",
-   "Melting",
-   "Evaporation",
-   "Sublimation"
-  ],
-  "answer": "Condensation",
-  "explanation": "Condensation is exothermic (gas → liquid).",
-  "topic": "states-of-matter"
- },
- {
-  "id": "p55",
-  "question": "The melting point of a pure substance is:",
-  "options": [
-   "sharp and definite",
-   "a range",
-   "always 0°C",
-   "below its boiling point always"
-  ],
-  "answer": "sharp and definite",
-  "explanation": "Pure substances melt at a single sharp temperature.",
-  "topic": "states-of-matter"
- },
- {
-  "id": "p56",
-  "question": "Which of the following is an element?",
-  "options": [
-   "Oxygen",
-   "Water",
-   "Salt",
-   "Sugar"
-  ],
-  "answer": "Oxygen",
-  "explanation": "Oxygen is an element (O₂); the others are compounds.",
-  "topic": "states-of-matter"
- },
- {
-  "id": "p57",
-  "question": "The symbol for iron is:",
-  "options": [
-   "Fe",
-   "Ir",
-   "I",
-   "F"
-  ],
-  "answer": "Fe",
-  "explanation": "Fe comes from the Latin 'ferrum'.",
-  "topic": "atomic-structure"
- },
- {
-  "id": "p58",
-  "question": "Which non-metal is a liquid at room temperature?",
-  "options": [
-   "Bromine",
-   "Iodine",
-   "Chlorine",
-   "Fluorine"
-  ],
-  "answer": "Bromine",
-  "explanation": "Bromine is the only liquid non-metal at r.t.p.",
-  "topic": "states-of-matter"
- },
- {
-  "id": "p59",
-  "question": "Which of these metals reacts most vigorously with cold water?",
-  "options": [
-   "Potassium",
-   "Iron",
-   "Copper",
-   "Zinc"
-  ],
-  "answer": "Potassium",
-  "explanation": "Group 1 metals react vigorously; K is the most reactive listed.",
-  "topic": "periodic-table-trends"
- },
- {
-  "id": "p60",
-  "question": "The reactivity series lists metals in order of:",
-  "options": [
-   "reactivity with oxygen/water/acid",
-   "atomic mass",
-   "density",
-   "melting point"
-  ],
-  "answer": "reactivity with oxygen/water/acid",
-  "explanation": "Reactivity series ranks metals by how readily they react.",
-  "topic": "periodic-table-trends"
- },
- {
-  "id": "p61",
-  "question": "Which metal would NOT react with dilute hydrochloric acid?",
-  "options": [
-   "Copper",
-   "Magnesium",
-   "Zinc",
-   "Iron"
-  ],
-  "answer": "Copper",
-  "explanation": "Copper is below hydrogen in the reactivity series.",
-  "topic": "periodic-table-trends"
- },
- {
-  "id": "p62",
-  "question": "Aluminium is protected from corrosion by:",
-  "options": [
-   "a layer of aluminium oxide",
-   "painting only",
-   "electroplating",
-   "alloying with iron"
-  ],
-  "answer": "a layer of aluminium oxide",
-  "explanation": "Al₂O₃ forms a protective oxide layer.",
-  "topic": "periodic-table-trends"
- },
- {
-  "id": "p63",
-  "question": "Rusting of iron requires:",
-  "options": [
-   "oxygen and water",
-   "oxygen only",
-   "water only",
-   "carbon dioxide"
-  ],
-  "answer": "oxygen and water",
-  "explanation": "Both oxygen and water are needed for rusting.",
-  "topic": "periodic-table-trends"
- },
- {
-  "id": "p64",
-  "question": "Which method protects iron by sacrificial protection?",
-  "options": [
-   "Zinc galvanising",
-   "Painting",
-   "Oiling",
-   "Plastic coating"
-  ],
-  "answer": "Zinc galvanising",
-  "explanation": "Zinc is more reactive and corrodes instead of iron.",
-  "topic": "periodic-table-trends"
- },
- {
-  "id": "p65",
-  "question": "Which alloy is made of copper and zinc?",
-  "options": [
-   "Brass",
-   "Bronze",
-   "Steel",
-   "Solder"
-  ],
-  "answer": "Brass",
-  "explanation": "Brass = copper + zinc; bronze = copper + tin.",
-  "topic": "ionic-covalent-bonding"
+  "answer": "absorbed",
+  "explanation": "Endothermic reactions absorb heat from surroundings.",
+  "topic": "chem-exothermic-and-endothermic-reactions"
  },
  {
   "id": "p66",
@@ -858,6 +338,266 @@
   "topic": "hydrocarbons-alkanes"
  },
  {
+  "id": "p110",
+  "question": "Metals are malleable and ductile because:",
+  "options": [
+   "layers of positive ions slide over each other without breaking the metallic bond",
+   "their ions are held by strong directional covalent bonds",
+   "they contain separate molecules that slide over each other",
+   "they have weak forces between layers of ions"
+  ],
+  "answer": "layers of positive ions slide over each other without breaking the metallic bond",
+  "explanation": "The delocalised sea of electrons keeps holding the layers of positive ions together even when the layers slide, so a metal bends or is drawn into wire rather than shattering.",
+  "topic": "inorg-metal-properties"
+ },
+ {
+  "id": "p2",
+  "question": "An atom has 11 protons and 12 neutrons. What is its mass number?",
+  "options": [
+   "11",
+   "12",
+   "23",
+   "1"
+  ],
+  "answer": "23",
+  "explanation": "Mass Number (A) = Protons + Neutrons = 11 + 12 = 23.",
+  "topic": "atomic-structure"
+ },
+ {
+  "id": "p41",
+  "question": "The mole is defined as:",
+  "options": [
+   "6.02 × 10²³ particles",
+   "1000 particles",
+   "1 gram of substance",
+   "22.4 particles"
+  ],
+  "answer": "6.02 × 10²³ particles",
+  "explanation": "One mole contains Avogadro's number of particles.",
+  "topic": "chem-avogadros-law"
+ },
+ {
+  "id": "p7",
+  "question": "What are the products of a neutralisation reaction between an acid and a base?",
+  "options": [
+   "Salt and Hydrogen",
+   "Salt and Water",
+   "Acid and Salt",
+   "Water and Oxygen"
+  ],
+  "answer": "Salt and Water",
+  "explanation": "Neutralisation: Acid + Base -> Salt + Water.",
+  "topic": "neutralization"
+ },
+ {
+  "id": "p84",
+  "question": "Which electrode is the positive electrode in electrolysis?",
+  "options": [
+   "Anode",
+   "Cathode",
+   "Both",
+   "Neither"
+  ],
+  "answer": "Anode",
+  "explanation": "The anode is positive; cations move to the cathode.",
+  "topic": "chem-electrolysis-principles"
+ },
+ {
+  "id": "p111",
+  "question": "Butane and 2-methylpropane both have the molecular formula C₄H₁₀ but different carbon skeletons. They are:",
+  "options": [
+   "structural isomers of each other",
+   "different homologous series",
+   "the same compound with two names",
+   "an alkane and an alkene"
+  ],
+  "answer": "structural isomers of each other",
+  "explanation": "Isomers have the same molecular formula but a different arrangement of atoms; here the difference is the branching of the carbon chain.",
+  "topic": "org-structural-isomerism"
+ },
+ {
+  "id": "p112",
+  "question": "Dilute hydrochloric acid is added to copper(II) oxide. The products are:",
+  "options": [
+   "copper(II) chloride and water",
+   "copper metal and hydrogen",
+   "copper(II) hydroxide and hydrogen",
+   "copper(II) carbonate and water"
+  ],
+  "answer": "copper(II) chloride and water",
+  "explanation": "A metal oxide is basic, so it neutralises the acid to give the metal salt and water: CuO + 2HCl → CuCl₂ + H₂O.",
+  "topic": "inorg-reactions-of-metallic-compounds"
+ },
+ {
+  "id": "p50",
+  "question": "Which technique separates coloured dyes in a mixture?",
+  "options": [
+   "Chromatography",
+   "Filtration",
+   "Evaporation",
+   "Decanting"
+  ],
+  "answer": "Chromatography",
+  "explanation": "Chromatography separates substances by their movement through a medium.",
+  "topic": "chem-solubility-and-separation-techniques"
+ },
+ {
+  "id": "p113",
+  "question": "Which statement about dilute ethanoic acid is TRUE?",
+  "options": [
+   "It is a weak acid, so only a small fraction of its molecules ionise in water",
+   "It is a strong acid, fully ionised in water",
+   "It has no effect on litmus paper",
+   "It cannot react with a base"
+  ],
+  "answer": "It is a weak acid, so only a small fraction of its molecules ionise in water",
+  "explanation": "As a weak acid ethanoic acid is only partly ionised, so it has a higher pH and a slower reaction with metals than a strong acid of the same concentration.",
+  "topic": "org-ethanoic-acid"
+ },
+ {
+  "id": "p63",
+  "question": "Rusting of iron requires:",
+  "options": [
+   "oxygen and water",
+   "oxygen only",
+   "water only",
+   "carbon dioxide"
+  ],
+  "answer": "oxygen and water",
+  "explanation": "Both oxygen and water are needed for rusting.",
+  "topic": "inorg-corrosion-of-metals"
+ },
+ {
+  "id": "p114",
+  "question": "Why is lead a health hazard even in small amounts?",
+  "options": [
+   "It is a cumulative poison that damages the nervous system",
+   "It is strongly radioactive",
+   "It reacts with water to form a strong acid",
+   "It is essential for making haemoglobin"
+  ],
+  "answer": "It is a cumulative poison that damages the nervous system",
+  "explanation": "Lead is not easily excreted, so it builds up in the body and damages the nervous system and kidneys, especially in young children.",
+  "topic": "inorg-metals-and-living-systems"
+ },
+ {
+  "id": "p81",
+  "question": "Which of these is used as a fertiliser?",
+  "options": [
+   "Ammonium nitrate",
+   "Sodium chloride",
+   "Calcium carbonate",
+   "Silicon dioxide"
+  ],
+  "answer": "Ammonium nitrate",
+  "explanation": "Nitrogen compounds like ammonium nitrate enrich soil.",
+  "topic": "inorg-uses-of-nonmetals"
+ },
+ {
+  "id": "p77",
+  "question": "Acid rain is mainly caused by:",
+  "options": [
+   "oxides of sulphur and nitrogen",
+   "carbon monoxide",
+   "ozone",
+   "hydrogen gas"
+  ],
+  "answer": "oxides of sulphur and nitrogen",
+  "explanation": "SO₂ and NOₓ dissolve in rainwater to form acids.",
+  "topic": "inorg-environmental-impact-of-nonmetals"
+ },
+ {
+  "id": "p115",
+  "question": "Water is called a 'universal solvent' because:",
+  "options": [
+   "its polar molecules dissolve a very wide range of ionic and polar substances",
+   "it dissolves every substance known",
+   "it is a non-polar liquid",
+   "it reacts with everything it touches"
+  ],
+  "answer": "its polar molecules dissolve a very wide range of ionic and polar substances",
+  "explanation": "The polar O-H molecules pull ions and polar molecules into solution, so water dissolves far more substances than any other common liquid.",
+  "topic": "inorg-properties-of-water"
+ },
+ {
+  "id": "p11",
+  "question": "Isotopes of the same element have the same number of protons but different numbers of:",
+  "options": [
+   "Electrons",
+   "Neutrons",
+   "Shells",
+   "Valence electrons"
+  ],
+  "answer": "Neutrons",
+  "explanation": "Isotopes have the same atomic number but different mass numbers due to varying neutron counts.",
+  "topic": "atomic-structure"
+ },
+ {
+  "id": "p3",
+  "question": "Which trend is generally observed as you move from left to right across a period in the Periodic Table?",
+  "options": [
+   "Atomic radius increases",
+   "Electronegativity decreases",
+   "Ionisation energy increases",
+   "Metallic character increases"
+  ],
+  "answer": "Ionisation energy increases",
+  "explanation": "Across a period, nuclear charge increases, making it harder to remove an electron, thus increasing ionisation energy.",
+  "topic": "periodic-table-trends"
+ },
+ {
+  "id": "p45",
+  "question": "At r.t.p., one mole of gas occupies:",
+  "options": [
+   "24 dm³",
+   "22.4 dm³",
+   "6 dm³",
+   "100 dm³"
+  ],
+  "answer": "24 dm³",
+  "explanation": "Molar volume at room temperature and pressure is 24 dm³.",
+  "topic": "chem-avogadros-law"
+ },
+ {
+  "id": "p29",
+  "question": "Which gas is produced when an acid reacts with a metal?",
+  "options": [
+   "Hydrogen",
+   "Oxygen",
+   "Carbon dioxide",
+   "Chlorine"
+  ],
+  "answer": "Hydrogen",
+  "explanation": "Acid + metal → salt + hydrogen.",
+  "topic": "chem-salt-preparation"
+ },
+ {
+  "id": "p85",
+  "question": "During electrolysis of molten lead(II) bromide, lead is formed at the:",
+  "options": [
+   "cathode",
+   "anode",
+   "both electrodes",
+   "solution"
+  ],
+  "answer": "cathode",
+  "explanation": "Pb²⁺ cations gain electrons at the cathode (reduction).",
+  "topic": "chem-electrolysis-principles"
+ },
+ {
+  "id": "p40",
+  "question": "Which reaction is exothermic?",
+  "options": [
+   "Burning of methane",
+   "Melting of ice",
+   "Photosynthesis",
+   "Dissolving ammonium nitrate"
+  ],
+  "answer": "Burning of methane",
+  "explanation": "Combustion releases heat energy.",
+  "topic": "chem-exothermic-and-endothermic-reactions"
+ },
+ {
   "id": "p67",
   "question": "The general formula for alkanes is:",
   "options": [
@@ -871,30 +611,95 @@
   "topic": "hydrocarbons-alkanes"
  },
  {
-  "id": "p68",
-  "question": "Which is the first member of the alkene series?",
+  "id": "p116",
+  "question": "Strongly heating a metal carbonate such as calcium carbonate gives:",
   "options": [
-   "Ethene",
-   "Methane",
-   "Ethane",
-   "Propyne"
+   "the metal oxide and carbon dioxide",
+   "the metal and carbon dioxide",
+   "the metal hydroxide and water",
+   "the metal oxide and oxygen"
   ],
-  "answer": "Ethene",
-  "explanation": "Ethene (C₂H₄) is the simplest alkene.",
-  "topic": "hydrocarbons-alkanes"
+  "answer": "the metal oxide and carbon dioxide",
+  "explanation": "Thermal decomposition splits the carbonate: CaCO₃ → CaO + CO₂, giving quicklime and carbon dioxide.",
+  "topic": "inorg-reactions-of-metallic-compounds"
  },
  {
-  "id": "p69",
-  "question": "The functional group of alcohols is:",
+  "id": "p47",
+  "question": "Which of these is a mixture?",
   "options": [
-   "-OH",
-   "-COOH",
-   "-CHO",
-   "-NH₂"
+   "Sea water",
+   "Water",
+   "Salt",
+   "Carbon dioxide"
   ],
-  "answer": "-OH",
-  "explanation": "Alcohols contain the hydroxyl (-OH) group.",
-  "topic": "hydrocarbons-alkanes"
+  "answer": "Sea water",
+  "explanation": "Sea water contains dissolved salts — a mixture.",
+  "topic": "chem-pure-substances-and-mixtures"
+ },
+ {
+  "id": "p117",
+  "question": "In the equation 2H₂ + O₂ → 2H₂O, the number of oxygen atoms on each side of the arrow is:",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "answer": "2",
+  "explanation": "There are two oxygen atoms in O₂ on the left and two in 2H₂O on the right, so no atoms are lost or gained.",
+  "topic": "chem-chemical-equations-and-conservation"
+ },
+ {
+  "id": "p118",
+  "question": "During electrolysis, doubling the current while keeping the time the same:",
+  "options": [
+   "doubles the quantity of charge passed and so doubles the amount deposited",
+   "halves the quantity of charge passed",
+   "has no effect on the amount deposited",
+   "changes which products are formed"
+  ],
+  "answer": "doubles the quantity of charge passed and so doubles the amount deposited",
+  "explanation": "The charge passed is Q = It, so a steady current twice as large delivers twice the charge and, by Faraday's laws, twice the amount of substance.",
+  "topic": "chem-factors-affecting-electrolysis"
+ },
+ {
+  "id": "p119",
+  "question": "On an energy profile diagram for an exothermic reaction:",
+  "options": [
+   "the products are at a lower energy level than the reactants",
+   "the products are at a higher energy level than the reactants",
+   "the reactants and products are at the same energy level",
+   "no activation energy is needed for the reaction"
+  ],
+  "answer": "the products are at a lower energy level than the reactants",
+  "explanation": "In an exothermic change energy is released to the surroundings, so the products end up at a lower energy level than the reactants started at.",
+  "topic": "chem-energy-profile-diagrams"
+ },
+ {
+  "id": "p120",
+  "question": "Which pair of formulae are isomers of each other?",
+  "options": [
+   "C₃H₈ and C₃H₈ with different branching",
+   "C₃H₈ and C₄H₁₀",
+   "C₂H₆ and C₂H₄",
+   "C₂H₆ and C₂H₅OH"
+  ],
+  "answer": "C₃H₈ and C₃H₈ with different branching",
+  "explanation": "Isomers must share the same molecular formula; only the first pair does, the rest differ in formula and so are different compounds or members of other series.",
+  "topic": "org-structural-isomerism"
+ },
+ {
+  "id": "p59",
+  "question": "Which of these metals reacts most vigorously with cold water?",
+  "options": [
+   "Potassium",
+   "Iron",
+   "Copper",
+   "Zinc"
+  ],
+  "answer": "Potassium",
+  "explanation": "Group 1 metals react vigorously; K is the most reactive listed.",
+  "topic": "inorg-reactivity-series"
  },
  {
   "id": "p70",
@@ -907,98 +712,33 @@
   ],
   "answer": "Bromine water",
   "explanation": "Bromine water decolourises in the presence of C=C bonds.",
-  "topic": "hydrocarbons-alkanes"
+  "topic": "org-distinguishing-alkanes-and-alkenes"
  },
  {
-  "id": "p71",
-  "question": "Ethanol is produced industrially by:",
+  "id": "p64",
+  "question": "Which method protects iron by sacrificial protection?",
   "options": [
-   "fermentation of sugars",
-   "distillation of oil",
-   "fractional crystallisation",
-   "electrolysis of water"
+   "Zinc galvanising",
+   "Painting",
+   "Oiling",
+   "Plastic coating"
   ],
-  "answer": "fermentation of sugars",
-  "explanation": "Fermentation uses yeast to convert sugars to ethanol.",
-  "topic": "hydrocarbons-alkanes"
+  "answer": "Zinc galvanising",
+  "explanation": "Zinc is more reactive and corrodes instead of iron.",
+  "topic": "inorg-corrosion-of-metals"
  },
  {
-  "id": "p72",
-  "question": "Which gas turns limewater milky?",
+  "id": "p121",
+  "question": "Which of the following is a chemical property of non-metals?",
   "options": [
-   "Carbon dioxide",
-   "Oxygen",
-   "Hydrogen",
-   "Ammonia"
+   "They gain electrons to form negative ions and their oxides are acidic",
+   "They lose electrons to form positive ions and their oxides are basic",
+   "They conduct electricity well as solids",
+   "They are malleable with high melting points"
   ],
-  "answer": "Carbon dioxide",
-  "explanation": "CO₂ forms insoluble calcium carbonate with limewater.",
-  "topic": "states-of-matter"
- },
- {
-  "id": "p73",
-  "question": "Hydrogen gas is tested by:",
-  "options": [
-   "a lighted splint producing a 'pop'",
-   "a glowing splint relighting",
-   "turning limewater milky",
-   "bleaching damp litmus"
-  ],
-  "answer": "a lighted splint producing a 'pop'",
-  "explanation": "Hydrogen burns with a squeaky pop.",
-  "topic": "states-of-matter"
- },
- {
-  "id": "p74",
-  "question": "Oxygen gas relights:",
-  "options": [
-   "a glowing splint",
-   "a damp blue litmus",
-   "a burning splint with a pop",
-   "limewater"
-  ],
-  "answer": "a glowing splint",
-  "explanation": "Oxygen supports combustion, relighting a glowing splint.",
-  "topic": "states-of-matter"
- },
- {
-  "id": "p75",
-  "question": "Ammonia gas turns damp red litmus:",
-  "options": [
-   "blue",
-   "colourless",
-   "red",
-   "purple"
-  ],
-  "answer": "blue",
-  "explanation": "Ammonia is alkaline and turns red litmus blue.",
-  "topic": "ph-scale-indicators"
- },
- {
-  "id": "p76",
-  "question": "Which of the following is a greenhouse gas?",
-  "options": [
-   "Methane",
-   "Oxygen",
-   "Nitrogen",
-   "Helium"
-  ],
-  "answer": "Methane",
-  "explanation": "Methane traps heat like CO₂.",
-  "topic": "hydrocarbons-alkanes"
- },
- {
-  "id": "p77",
-  "question": "Acid rain is mainly caused by:",
-  "options": [
-   "oxides of sulphur and nitrogen",
-   "carbon monoxide",
-   "ozone",
-   "hydrogen gas"
-  ],
-  "answer": "oxides of sulphur and nitrogen",
-  "explanation": "SO₂ and NOₓ dissolve in rainwater to form acids.",
-  "topic": "states-of-matter"
+  "answer": "They gain electrons to form negative ions and their oxides are acidic",
+  "explanation": "Non-metals are electron acceptors: they form negative ions or share electrons covalently, and elements such as sulphur and carbon give acidic oxides.",
+  "topic": "inorg-nonmetal-properties"
  },
  {
   "id": "p78",
@@ -1011,241 +751,202 @@
   ],
   "answer": "Catalytic converter",
   "explanation": "Catalytic converters convert harmful gases to less harmful ones.",
-  "topic": "states-of-matter"
+  "topic": "inorg-environmental-impact-of-nonmetals"
  },
  {
-  "id": "p79",
-  "question": "The Haber process produces:",
+  "id": "p122",
+  "question": "Water is described as hard because it contains:",
   "options": [
-   "ammonia",
-   "sulphuric acid",
-   "nitric acid",
-   "sodium hydroxide"
+   "dissolved calcium and magnesium ions",
+   "dissolved sodium ions only",
+   "dissolved chlorine",
+   "suspended grains of sand"
   ],
-  "answer": "ammonia",
-  "explanation": "N₂ + 3H₂ ⇌ 2NH₃ over iron catalyst.",
-  "topic": "molar-mass-calculations"
+  "answer": "dissolved calcium and magnesium ions",
+  "explanation": "Calcium and magnesium ions react with soap to form an insoluble scum, which is why hard water needs more soap to lather.",
+  "topic": "inorg-water-hardness"
  },
  {
-  "id": "p80",
-  "question": "The raw materials for the Haber process are:",
+  "id": "p123",
+  "question": "Dilute nitric acid and silver nitrate solution are added to an unknown solution and a cream precipitate forms. The anion present is:",
   "options": [
-   "nitrogen and hydrogen",
-   "oxygen and hydrogen",
-   "nitrogen and oxygen",
-   "ammonia and water"
+   "bromide, Br⁻",
+   "chloride, Cl⁻",
+   "iodide, I⁻",
+   "sulphate, SO₄²⁻"
   ],
-  "answer": "nitrogen and hydrogen",
-  "explanation": "Nitrogen from air and hydrogen from natural gas.",
-  "topic": "molar-mass-calculations"
+  "answer": "bromide, Br⁻",
+  "explanation": "Silver chloride is white, silver bromide is cream and silver iodide is pale yellow, so a cream precipitate identifies the bromide ion.",
+  "topic": "inorg-identification-of-anions"
  },
  {
-  "id": "p81",
-  "question": "Which of these is used as a fertiliser?",
+  "id": "p51",
+  "question": "A substance with a fixed composition and definite properties is:",
   "options": [
-   "Ammonium nitrate",
-   "Sodium chloride",
-   "Calcium carbonate",
-   "Silicon dioxide"
+   "a compound",
+   "a mixture",
+   "an alloy",
+   "a solution"
   ],
-  "answer": "Ammonium nitrate",
-  "explanation": "Nitrogen compounds like ammonium nitrate enrich soil.",
-  "topic": "molar-mass-calculations"
+  "answer": "a compound",
+  "explanation": "Compounds have fixed composition and unique properties.",
+  "topic": "chem-pure-substances-and-mixtures"
  },
  {
-  "id": "p82",
-  "question": "The Contact process produces:",
+  "id": "p18",
+  "question": "Which group of the periodic table contains the noble gases?",
   "options": [
-   "sulphuric acid",
-   "ammonia",
-   "chlorine",
-   "nitric acid"
+   "Group 0",
+   "Group 1",
+   "Group 2",
+   "Group 7"
   ],
-  "answer": "sulphuric acid",
-  "explanation": "SO₃ is dissolved in H₂SO₄ to make oleum → H₂SO₄.",
-  "topic": "molar-mass-calculations"
+  "answer": "Group 0",
+  "explanation": "Group 0 (18) elements are unreactive noble gases.",
+  "topic": "periodic-table-trends"
  },
  {
-  "id": "p83",
-  "question": "Electrolysis of brine produces:",
+  "id": "p124",
+  "question": "Which set of coefficients balances the equation __Fe + __O₂ → __Fe₂O₃?",
   "options": [
-   "chlorine, hydrogen and sodium hydroxide",
-   "oxygen and hydrogen",
-   "sodium and chlorine",
-   "water only"
+   "4, 3, 2",
+   "2, 3, 2",
+   "3, 2, 4",
+   "4, 2, 3"
   ],
-  "answer": "chlorine, hydrogen and sodium hydroxide",
-  "explanation": "Brine electrolysis yields Cl₂, H₂ and NaOH.",
-  "topic": "defining-redox"
+  "answer": "4, 3, 2",
+  "explanation": "4Fe + 3O₂ → 2Fe₂O₃ gives 4 iron atoms and 6 oxygen atoms on each side of the arrow.",
+  "topic": "chem-chemical-equations-and-conservation"
  },
  {
-  "id": "p84",
-  "question": "Which electrode is the positive electrode in electrolysis?",
+  "id": "p30",
+  "question": "The reaction of an acid with a carbonate produces:",
   "options": [
-   "Anode",
-   "Cathode",
-   "Both",
-   "Neither"
+   "carbon dioxide",
+   "hydrogen",
+   "oxygen",
+   "ammonia"
   ],
-  "answer": "Anode",
-  "explanation": "The anode is positive; cations move to the cathode.",
-  "topic": "defining-redox"
+  "answer": "carbon dioxide",
+  "explanation": "Carbonates release CO₂ with acids.",
+  "topic": "chem-salt-preparation"
  },
  {
-  "id": "p85",
-  "question": "During electrolysis of molten lead(II) bromide, lead is formed at the:",
+  "id": "p125",
+  "question": "Which change would increase the mass of copper deposited in the electrolysis of copper(II) sulphate solution?",
   "options": [
-   "cathode",
-   "anode",
-   "both electrodes",
-   "solution"
+   "Increasing the current and running it for the same time",
+   "Using a larger cathode of the same material",
+   "Using a more dilute solution of copper(II) sulphate",
+   "Reversing the connections to the electrodes"
   ],
-  "answer": "cathode",
-  "explanation": "Pb²⁺ cations gain electrons at the cathode (reduction).",
-  "topic": "defining-redox"
+  "answer": "Increasing the current and running it for the same time",
+  "explanation": "A bigger current for the same time passes more charge (Q = It), so more Cu²⁺ ions are discharged at the cathode and more copper is deposited.",
+  "topic": "chem-factors-affecting-electrolysis"
  },
  {
-  "id": "p86",
-  "question": "Water is a compound because it:",
+  "id": "p35",
+  "question": "The rate of a reaction can be increased by:",
   "options": [
-   "contains two elements chemically combined",
-   "can be filtered",
-   "is a liquid",
-   "contains dissolved gases"
+   "raising temperature",
+   "lowering temperature",
+   "diluting reactants",
+   "adding a solid block"
   ],
-  "answer": "contains two elements chemically combined",
-  "explanation": "H₂O has H and O chemically bonded in fixed ratio.",
-  "topic": "ionic-covalent-bonding"
+  "answer": "raising temperature",
+  "explanation": "Higher temperature increases particle kinetic energy and collisions.",
+  "topic": "chem-reaction-rate-definition-and-factors"
  },
  {
-  "id": "p87",
-  "question": "Which of the following has the highest boiling point?",
+  "id": "p126",
+  "question": "The activation energy of a reaction is:",
   "options": [
-   "Salt solution",
-   "Pure water",
-   "Alcohol",
-   "Petrol"
+   "the minimum energy that colliding particles need before they can react",
+   "the energy difference between the reactants and the products",
+   "the energy released when new bonds form",
+   "the total energy stored in the products"
   ],
-  "answer": "Salt solution",
-  "explanation": "Dissolved solutes raise the boiling point above 100°C.",
-  "topic": "states-of-matter"
+  "answer": "the minimum energy that colliding particles need before they can react",
+  "explanation": "Activation energy is the height of the energy barrier between reactants and products, shown as the peak of the profile; only collisions with at least this energy react.",
+  "topic": "chem-energy-profile-diagrams"
  },
  {
-  "id": "p88",
-  "question": "Solubility is usually expressed as:",
+  "id": "p127",
+  "question": "Bromine water is added to hexane and to hexene. The one that decolourises it is:",
   "options": [
-   "grams of solute per 100 g of water",
-   "litres per gram",
-   "moles per cm³ only",
-   "percentage of water"
+   "hexene, because the bromine adds across its C=C double bond",
+   "hexane, because it is saturated",
+   "both of them, equally",
+   "neither of them"
   ],
-  "answer": "grams of solute per 100 g of water",
-  "explanation": "Standard solubility: g solute/100 g solvent.",
-  "topic": "states-of-matter"
+  "answer": "hexene, because the bromine adds across its C=C double bond",
+  "explanation": "The orange colour is lost only when bromine adds across a double bond, so hexene decolourises the water and saturated hexane leaves it orange.",
+  "topic": "org-distinguishing-alkanes-and-alkenes"
  },
  {
-  "id": "p89",
-  "question": "A saturated solution:",
+  "id": "p60",
+  "question": "The reactivity series lists metals in order of:",
   "options": [
-   "contains the maximum dissolved solute at that temperature",
-   "has no water",
-   "is always dilute",
-   "cannot be heated"
+   "reactivity with oxygen/water/acid",
+   "atomic mass",
+   "density",
+   "melting point"
   ],
-  "answer": "contains the maximum dissolved solute at that temperature",
-  "explanation": "No more solute can dissolve at that temperature.",
-  "topic": "states-of-matter"
+  "answer": "reactivity with oxygen/water/acid",
+  "explanation": "Reactivity series ranks metals by how readily they react.",
+  "topic": "inorg-reactivity-series"
  },
  {
-  "id": "p90",
-  "question": "Crystallisation is used to obtain:",
+  "id": "p128",
+  "question": "Which of the following best describes a colloid?",
   "options": [
-   "a soluble salt from its solution",
-   "an insoluble solid",
-   "a gas",
-   "two liquids"
+   "A mixture of large particles that settle on standing",
+   "A mixture whose dispersed particles do not settle and scatter a beam of light",
+   "A clear solution of ions in water",
+   "A single compound that cannot be separated"
   ],
-  "answer": "a soluble salt from its solution",
-  "explanation": "Evaporation and cooling produce crystals of the solute.",
-  "topic": "states-of-matter"
+  "answer": "A mixture whose dispersed particles do not settle and scatter a beam of light",
+  "explanation": "Colloid particles are intermediate in size: they stay dispersed, pass through filter paper (but not a fine membrane) and scatter light, which is the Tyndall effect.",
+  "topic": "chem-solutions-suspensions-and-colloids"
  },
  {
-  "id": "p91",
-  "question": "Which indicator is red in acid?",
+  "id": "p129",
+  "question": "Which of the following is the formula of a hydrated salt?",
   "options": [
-   "Litmus",
-   "Universal indicator in alkali",
-   "Phenolphthalein in acid",
-   "Methyl orange in alkali"
+   "CuSO₄·5H₂O",
+   "CuSO₄",
+   "NaCl",
+   "CaCO₃"
   ],
-  "answer": "Litmus",
-  "explanation": "Litmus is red in acid, blue in alkali.",
-  "topic": "ph-scale-indicators"
+  "answer": "CuSO₄·5H₂O",
+  "explanation": "Hydrated copper(II) sulphate carries five molecules of water of crystallisation per formula unit; the water can be driven off by heating to leave the white anhydrous salt.",
+  "topic": "chem-uses-and-dangers-of-salts"
  },
  {
-  "id": "p92",
-  "question": "A solution with pH 2 is:",
+  "id": "p130",
+  "question": "Burning 2 mol of a fuel releases 60 kJ of heat. What is the enthalpy change per mole of fuel?",
   "options": [
-   "strongly acidic",
-   "weakly acidic",
-   "neutral",
-   "alkaline"
+   "−30 kJ/mol",
+   "+30 kJ/mol",
+   "−120 kJ/mol",
+   "+120 kJ/mol"
   ],
-  "answer": "strongly acidic",
-  "explanation": "pH below 7 is acidic; pH 2 is strongly acidic.",
-  "topic": "ph-scale-indicators"
+  "answer": "−30 kJ/mol",
+  "explanation": "Heat given out means the sign is negative, and 60 kJ ÷ 2 mol = 30 kJ per mole, so ΔH = −30 kJ/mol.",
+  "topic": "chem-calculating-energy-changes"
  },
  {
-  "id": "p93",
-  "question": "Which salt is produced when hydrochloric acid reacts with sodium hydroxide?",
+  "id": "p68",
+  "question": "Which is the first member of the alkene series?",
   "options": [
-   "Sodium chloride",
-   "Sodium sulphate",
-   "Sodium nitrate",
-   "Sodium carbonate"
+   "Ethene",
+   "Methane",
+   "Ethane",
+   "Propyne"
   ],
-  "answer": "Sodium chloride",
-  "explanation": "HCl + NaOH → NaCl + H₂O.",
-  "topic": "neutralization"
- },
- {
-  "id": "p94",
-  "question": "Bases are substances that:",
-  "options": [
-   "neutralise acids",
-   "turn litmus red",
-   "have pH below 7",
-   "release hydrogen with metals"
-  ],
-  "answer": "neutralise acids",
-  "explanation": "Bases accept protons and neutralise acids.",
-  "topic": "neutralization"
- },
- {
-  "id": "p95",
-  "question": "Zinc oxide is an example of a:",
-  "options": [
-   "amphoteric oxide",
-   "acidic oxide",
-   "neutral oxide",
-   "noble gas"
-  ],
-  "answer": "amphoteric oxide",
-  "explanation": "Amphoteric oxides react with both acids and bases.",
-  "topic": "neutralization"
- },
- {
-  "id": "p96",
-  "question": "Which oxide is acidic?",
-  "options": [
-   "Carbon dioxide",
-   "Magnesium oxide",
-   "Sodium oxide",
-   "Calcium oxide"
-  ],
-  "answer": "Carbon dioxide",
-  "explanation": "Non-metal oxides like CO₂ are acidic.",
-  "topic": "neutralization"
+  "answer": "Ethene",
+  "explanation": "Ethene (C₂H₄) is the simplest alkene.",
+  "topic": "org-functional-groups"
  },
  {
   "id": "p97",
@@ -1258,7 +959,241 @@
   ],
   "answer": "electrolysis of molten alumina",
   "explanation": "Aluminium is extracted by electrolysis of molten Al₂O₃ in cryolite.",
+  "topic": "inorg-extraction-of-aluminium-and-iron"
+ },
+ {
+  "id": "p131",
+  "question": "Esters are used in perfumes and flavourings because they:",
+  "options": [
+   "are volatile and have pleasant fruity smells",
+   "react violently with water",
+   "are strong acids",
+   "are coloured crystalline solids"
+  ],
+  "answer": "are volatile and have pleasant fruity smells",
+  "explanation": "Esters evaporate readily at room temperature and many smell of fruit, which is why they are used as flavourings and in perfumes.",
+  "topic": "org-esters-hydrolysis-and-detergents"
+ },
+ {
+  "id": "p132",
+  "question": "Chlorine bleaches damp litmus paper because it:",
+  "options": [
+   "reacts with the water to form an oxidising bleaching agent",
+   "acts as an acid that dissolves the dye",
+   "reduces the dye to a colourless compound",
+   "neutralises the indicator in the paper"
+  ],
+  "answer": "reacts with the water to form an oxidising bleaching agent",
+  "explanation": "Chlorine reacts with water to give hypochlorous acid, which oxidises the dye and bleaches it - the same reaction used to disinfect water.",
+  "topic": "inorg-nonmetal-properties"
+ },
+ {
+  "id": "p133",
+  "question": "In the laboratory, carbon dioxide is usually prepared by:",
+  "options": [
+   "adding dilute hydrochloric acid to marble chips",
+   "heating potassium chlorate strongly",
+   "adding water to calcium oxide",
+   "burning carbon in a stream of air"
+  ],
+  "answer": "adding dilute hydrochloric acid to marble chips",
+  "explanation": "Dilute acid on calcium carbonate gives a steady stream of carbon dioxide: CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂.",
+  "topic": "inorg-preparation-of-gases"
+ },
+ {
+  "id": "p134",
+  "question": "Chlorine is added to a public water supply in order to:",
+  "options": [
+   "kill the micro-organisms that cause disease",
+   "remove the dissolved calcium ions and soften the water",
+   "make the water taste fresh",
+   "increase the hardness of the water"
+  ],
+  "answer": "kill the micro-organisms that cause disease",
+  "explanation": "Chlorine is a disinfectant: it kills bacteria and other micro-organisms so that the treated water is safe to drink.",
+  "topic": "inorg-water-treatment"
+ },
+ {
+  "id": "p72",
+  "question": "Which gas turns limewater milky?",
+  "options": [
+   "Carbon dioxide",
+   "Oxygen",
+   "Hydrogen",
+   "Ammonia"
+  ],
+  "answer": "Carbon dioxide",
+  "explanation": "CO₂ forms insoluble calcium carbonate with limewater.",
+  "topic": "inorg-identification-of-gases"
+ },
+ {
+  "id": "p73",
+  "question": "Hydrogen gas is tested by:",
+  "options": [
+   "a lighted splint producing a 'pop'",
+   "a glowing splint relighting",
+   "turning limewater milky",
+   "bleaching damp litmus"
+  ],
+  "answer": "a lighted splint producing a 'pop'",
+  "explanation": "Hydrogen burns with a squeaky pop.",
+  "topic": "inorg-identification-of-gases"
+ },
+ {
+  "id": "p48",
+  "question": "The technique used to separate an insoluble solid from a liquid is:",
+  "options": [
+   "filtration",
+   "distillation",
+   "chromatography",
+   "crystallisation"
+  ],
+  "answer": "filtration",
+  "explanation": "Filtration separates insoluble solids from liquids.",
+  "topic": "chem-solubility-and-separation-techniques"
+ },
+ {
+  "id": "p4",
+  "question": "Ionic bonding occurs between a metal and a non-metal through the:",
+  "options": [
+   "Sharing of electrons",
+   "Transfer of electrons",
+   "Delocalisation of electrons",
+   "Attraction of dipoles"
+  ],
+  "answer": "Transfer of electrons",
+  "explanation": "Ionic bonds are formed when a metal atom transfers electrons to a non-metal atom.",
+  "topic": "ionic-covalent-bonding"
+ },
+ {
+  "id": "p135",
+  "question": "Silver salts such as silver bromide are used in photographic film because they:",
+  "options": [
+   "decompose on exposure to light, darkening where light falls",
+   "dissolve in water to give a clear solution",
+   "are strong acids",
+   "are fertilisers that supply nitrogen"
+  ],
+  "answer": "decompose on exposure to light, darkening where light falls",
+  "explanation": "Light decomposes the silver halide to tiny grains of silver metal, so the film darkens where light has reached it; the unexposed halide is then washed away.",
+  "topic": "chem-uses-and-dangers-of-salts"
+ },
+ {
+  "id": "p32",
+  "question": "In the reaction Zn + CuSO₄ → ZnSO₄ + Cu, zinc is:",
+  "options": [
+   "oxidised",
+   "reduced",
+   "unchanged",
+   "neutralised"
+  ],
+  "answer": "oxidised",
+  "explanation": "Zn loses electrons (0 → +2), so it is oxidised.",
   "topic": "defining-redox"
+ },
+ {
+  "id": "p136",
+  "question": "The Faraday constant, 96 500 C/mol, is the:",
+  "options": [
+   "charge carried by one mole of electrons",
+   "number of electrons in one mole of a substance",
+   "mass of one mole of copper",
+   "voltage needed to deposit one mole of a metal"
+  ],
+  "answer": "charge carried by one mole of electrons",
+  "explanation": "One mole of electrons carries 96 500 coulombs, which is the Faraday constant; it converts the charge passed into moles of electrons.",
+  "topic": "chem-faraday-constant-and-calculations"
+ },
+ {
+  "id": "p36",
+  "question": "A catalyst works by:",
+  "options": [
+   "lowering activation energy",
+   "raising activation energy",
+   "being consumed in the reaction",
+   "cooling the reactants"
+  ],
+  "answer": "lowering activation energy",
+  "explanation": "Catalysts provide an alternative pathway with lower activation energy.",
+  "topic": "chem-reaction-rate-definition-and-factors"
+ },
+ {
+  "id": "p69",
+  "question": "The functional group of alcohols is:",
+  "options": [
+   "-OH",
+   "-COOH",
+   "-CHO",
+   "-NH₂"
+  ],
+  "answer": "-OH",
+  "explanation": "Alcohols contain the hydroxyl (-OH) group.",
+  "topic": "org-functional-groups"
+ },
+ {
+  "id": "p61",
+  "question": "Which metal would NOT react with dilute hydrochloric acid?",
+  "options": [
+   "Copper",
+   "Magnesium",
+   "Zinc",
+   "Iron"
+  ],
+  "answer": "Copper",
+  "explanation": "Copper is below hydrogen in the reactivity series.",
+  "topic": "inorg-reactivity-series"
+ },
+ {
+  "id": "p12",
+  "question": "Which of the following is a characteristic of simple covalent molecules?",
+  "options": [
+   "High melting point",
+   "Conduct electricity when molten",
+   "Low melting point",
+   "Solid at room temperature"
+  ],
+  "answer": "Low melting point",
+  "explanation": "Simple covalent molecules have weak intermolecular forces, resulting in low melting and boiling points.",
+  "topic": "ionic-covalent-bonding"
+ },
+ {
+  "id": "p137",
+  "question": "How much charge is passed when a current of 2 A flows for 30 s?",
+  "options": [
+   "15 C",
+   "32 C",
+   "60 C",
+   "0.07 C"
+  ],
+  "answer": "60 C",
+  "explanation": "Q = It = 2 A × 30 s = 60 coulombs.",
+  "topic": "chem-faraday-constant-and-calculations"
+ },
+ {
+  "id": "p138",
+  "question": "On a graph of volume of gas produced against time, the rate of reaction at any instant is shown by:",
+  "options": [
+   "the gradient of the curve at that time",
+   "the height of the curve at that time",
+   "the area under the curve",
+   "the total time taken for the reaction to finish"
+  ],
+  "answer": "the gradient of the curve at that time",
+  "explanation": "The rate is the change in volume per unit time, that is the gradient; a steep gradient means a fast reaction.",
+  "topic": "chem-rate-data-and-graphs"
+ },
+ {
+  "id": "p71",
+  "question": "Ethanol is produced industrially by:",
+  "options": [
+   "fermentation of sugars",
+   "distillation of oil",
+   "fractional crystallisation",
+   "electrolysis of water"
+  ],
+  "answer": "fermentation of sugars",
+  "explanation": "Fermentation uses yeast to convert sugars to ethanol.",
+  "topic": "org-ethanol-and-fermentation"
  },
  {
   "id": "p98",
@@ -1271,32 +1206,97 @@
   ],
   "answer": "To lower the melting point",
   "explanation": "Cryolite lowers the melting point, saving energy.",
-  "topic": "defining-redox"
+  "topic": "inorg-extraction-of-aluminium-and-iron"
  },
  {
-  "id": "p99",
-  "question": "Which metal is extracted by reduction with carbon?",
+  "id": "p139",
+  "question": "Metals conduct electricity because:",
   "options": [
-   "Iron",
-   "Sodium",
-   "Calcium",
-   "Potassium"
+   "their delocalised electrons are free to move through the lattice",
+   "whole ions move from one electrode to the other",
+   "their outer electrons have been transferred to non-metal atoms",
+   "their molecules vibrate about fixed positions"
   ],
-  "answer": "Iron",
-  "explanation": "Iron oxide is reduced by coke (carbon) in the blast furnace.",
-  "topic": "defining-redox"
+  "answer": "their delocalised electrons are free to move through the lattice",
+  "explanation": "In metallic bonding the outer electrons are delocalised over the whole lattice of positive ions, and these mobile electrons carry the current.",
+  "topic": "chem-metallic-bonding"
  },
  {
-  "id": "p100",
-  "question": "In the blast furnace, the reducing agent is:",
+  "id": "p140",
+  "question": "When an ester is hydrolysed by boiling it with sodium hydroxide solution, the products are:",
   "options": [
-   "carbon monoxide",
-   "limestone",
-   "oxygen",
-   "iron ore"
+   "an alcohol and the sodium salt of the carboxylic acid",
+   "a carboxylic acid and hydrogen",
+   "an alkene and water",
+   "an alcohol and carbon dioxide"
   ],
-  "answer": "carbon monoxide",
-  "explanation": "CO reduces iron(III) oxide to iron.",
-  "topic": "defining-redox"
+  "answer": "an alcohol and the sodium salt of the carboxylic acid",
+  "explanation": "Alkaline hydrolysis (saponification) breaks the ester link to give an alcohol and a carboxylate salt; this is the reaction used to make soap.",
+  "topic": "org-esters-hydrolysis-and-detergents"
+ },
+ {
+  "id": "p65",
+  "question": "Which alloy is made of copper and zinc?",
+  "options": [
+   "Brass",
+   "Bronze",
+   "Steel",
+   "Solder"
+  ],
+  "answer": "Brass",
+  "explanation": "Brass = copper + zinc; bronze = copper + tin.",
+  "topic": "inorg-alloys-and-uses"
+ },
+ {
+  "id": "p141",
+  "question": "The addition polymer formed from ethene is:",
+  "options": [
+   "poly(ethene)",
+   "nylon",
+   "a protein",
+   "a polyester"
+  ],
+  "answer": "poly(ethene)",
+  "explanation": "In addition polymerisation the double bonds open and ethene units join into one long saturated chain, so no small molecule is eliminated.",
+  "topic": "org-polymers"
+ },
+ {
+  "id": "p142",
+  "question": "Which gas is collected by downward delivery (upward displacement of air)?",
+  "options": [
+   "Chlorine, because it is denser than air",
+   "Hydrogen, because it is denser than air",
+   "Oxygen, because it dissolves readily in water",
+   "Carbon dioxide, because it is lighter than air"
+  ],
+  "answer": "Chlorine, because it is denser than air",
+  "explanation": "Chlorine is much denser than air and only moderately soluble in water, so it is collected in an upright gas jar by downward delivery.",
+  "topic": "inorg-preparation-of-gases"
+ },
+ {
+  "id": "p79",
+  "question": "The Haber process produces:",
+  "options": [
+   "ammonia",
+   "sulphuric acid",
+   "nitric acid",
+   "sodium hydroxide"
+  ],
+  "answer": "ammonia",
+  "explanation": "N₂ + 3H₂ ⇌ 2NH₃ over iron catalyst.",
+  "topic": "inorg-uses-of-nonmetals"
+ },
+ {
+  "id": "p143",
+  "question": "Which practice best follows the green chemistry principle of preventing waste?",
+  "options": [
+   "Designing a reaction with a high atom economy so little unwanted product forms",
+   "Diluting the by-products and discharging them into a river",
+   "Burning the by-products so that they are no longer seen",
+   "Using a large excess of one reactant just in case"
+  ],
+  "answer": "Designing a reaction with a high atom economy so little unwanted product forms",
+  "explanation": "Prevention is better than cure: a synthesis designed so that most of the atoms end up in the wanted product has far less waste to treat or dispose of.",
+  "topic": "inorg-green-chemistry"
  }
 ]
