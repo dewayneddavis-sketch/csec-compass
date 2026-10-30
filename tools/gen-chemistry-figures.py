@@ -34,7 +34,7 @@ EL = [
     (9, "F", "Fluorine", 17, 2, "halogen"), (10, "Ne", "Neon", 18, 2, "noble"),
     (11, "Na", "Sodium", 1, 3, "alkali"), (12, "Mg", "Magnesium", 2, 3, "alkaline"),
     (13, "Al", "Aluminium", 13, 3, "post"), (14, "Si", "Silicon", 14, 3, "metalloid"),
-    (15, "P", "Phosphorus", 15, 3, "nonmetal"), (16, "S", "Sulfur", 16, 3, "nonmetal"),
+    (15, "P", "Phosphorus", 15, 3, "nonmetal"), (16, "S", "Sulphur", 16, 3, "nonmetal"),
     (17, "Cl", "Chlorine", 17, 3, "halogen"), (18, "Ar", "Argon", 18, 3, "noble"),
     (19, "K", "Potassium", 1, 4, "alkali"), (20, "Ca", "Calcium", 2, 4, "alkaline"),
     (21, "Sc", "Scandium", 3, 4, "transition"), (22, "Ti", "Titanium", 4, 4, "transition"),
