@@ -126,7 +126,7 @@ section("5. the other subjects' sets are untouched");
 // syllabus-gap lessons (guarded by tools/check-physics-gap-labs.mjs). Both are listed
 // here so this count stays an exact one: every other subject still has its block, and
 // no key was renamed.
-const OTHERS = ["biology", "information-technology", "principles-of-accounts", "social-studies", "human-social-biology", "spanish", "french", "english-b", "clothing-textile-and-fashion", "principles-of-business", "edpm", "visual-arts", "theater-arts", "caribbean-history", "integrated-science", "agriculture-double-option", "food-and-nutrition", "technical-drawing", "physical-education", "mathematics", "english-a", "city-guilds-mathematics", "physics"];
+const OTHERS = ["biology", "information-technology", "principles-of-accounts", "social-studies", "human-social-biology", "spanish", "french", "english-b", "clothing-textile-and-fashion", "principles-of-business", "edpm", "visual-arts", "theater-arts", "caribbean-history", "chemistry", "integrated-science", "agriculture-double-option", "food-and-nutrition", "technical-drawing", "physical-education", "mathematics", "english-a", "city-guilds-mathematics", "physics"];
 ok(OTHERS.every((s) => lessonSets[s]), `all ${OTHERS.length} pre-existing subjects still have their sets`);
 ok(Object.keys(lessonSets).length === OTHERS.length + 1, `the block count is ${OTHERS.length + 1} (${Object.keys(lessonSets).length})`);
 
