@@ -26,6 +26,19 @@
   "topic": "atomic-structure"
  },
  {
+  "id": "q7",
+  "question": "Which group of elements in the Periodic Table is known as the Halogens?",
+  "options": [
+   "Group 1",
+   "Group 2",
+   "Group 7",
+   "Group 0"
+  ],
+  "answer": "Group 7",
+  "explanation": "Group 7 elements (F, Cl, Br, I) are called the Halogens.",
+  "topic": "periodic-table-trends"
+ },
+ {
   "id": "q3",
   "question": "Which type of bonding involves the sharing of electron pairs between atoms?",
   "options": [
@@ -39,56 +52,17 @@
   "topic": "ionic-covalent-bonding"
  },
  {
-  "id": "q4",
-  "question": "An atom has 11 protons and 12 neutrons. What is its mass number?",
+  "id": "q26",
+  "question": "In chemistry, a pure substance is one that:",
   "options": [
-   "11",
-   "12",
-   "23",
-   "1"
+   "has a fixed composition and a sharp melting point",
+   "contains only one element",
+   "has been bought from a laboratory supplier",
+   "is a colourless liquid at room temperature"
   ],
-  "answer": "23",
-  "explanation": "Mass number = Number of protons + Number of neutrons (11 + 12 = 23).",
-  "topic": "atomic-structure"
- },
- {
-  "id": "q5",
-  "question": "What is the pH of a neutral solution at 25°C?",
-  "options": [
-   "0",
-   "1",
-   "7",
-   "14"
-  ],
-  "answer": "7",
-  "explanation": "A pH of 7 is considered neutral; values below 7 are acidic and above 7 are basic.",
-  "topic": "ph-scale-indicators"
- },
- {
-  "id": "q6",
-  "question": "In a redox reaction, oxidation is defined as:",
-  "options": [
-   "The gain of electrons",
-   "The loss of electrons",
-   "The gain of hydrogen",
-   "The loss of oxygen"
-  ],
-  "answer": "The loss of electrons",
-  "explanation": "OIL RIG: Oxidation Is Loss (of electrons), Reduction Is Gain.",
-  "topic": "defining-redox"
- },
- {
-  "id": "q7",
-  "question": "Which group of elements in the Periodic Table is known as the Halogens?",
-  "options": [
-   "Group 1",
-   "Group 2",
-   "Group 7",
-   "Group 0"
-  ],
-  "answer": "Group 7",
-  "explanation": "Group 7 elements (F, Cl, Br, I) are called the Halogens.",
-  "topic": "periodic-table-trends"
+  "answer": "has a fixed composition and a sharp melting point",
+  "explanation": "A pure substance has a fixed composition and definite properties, melting sharply at one temperature; a mixture melts over a range.",
+  "topic": "chem-pure-substances-and-mixtures"
  },
  {
   "id": "q8",
@@ -104,17 +78,69 @@
   "topic": "molar-mass-calculations"
  },
  {
-  "id": "q9",
-  "question": "Which of the following is a saturated hydrocarbon?",
+  "id": "q27",
+  "question": "Equal volumes of different gases at the same temperature and pressure contain:",
   "options": [
-   "Ethene",
-   "Ethyne",
-   "Ethane",
-   "Benzene"
+   "the same number of molecules",
+   "the same mass of gas",
+   "the same number of atoms",
+   "the same density"
   ],
-  "answer": "Ethane",
-  "explanation": "Alkanes like ethane are saturated because they contain only single carbon-carbon bonds.",
-  "topic": "hydrocarbons-alkanes"
+  "answer": "the same number of molecules",
+  "explanation": "Avogadro's law: under the same conditions of temperature and pressure, equal volumes of gases contain equal numbers of molecules.",
+  "topic": "chem-avogadros-law"
+ },
+ {
+  "id": "q28",
+  "question": "The statement that the total mass of the reactants equals the total mass of the products in a chemical change is:",
+  "options": [
+   "the law of conservation of matter",
+   "Avogadro's law",
+   "the law of multiple proportions",
+   "the law of constant composition"
+  ],
+  "answer": "the law of conservation of matter",
+  "explanation": "Atoms are only rearranged in a chemical reaction, never created or destroyed, so mass is conserved and equations must balance.",
+  "topic": "chem-chemical-equations-and-conservation"
+ },
+ {
+  "id": "q29",
+  "question": "When ammonium nitrate dissolves in water the temperature of the solution falls. The process is:",
+  "options": [
+   "endothermic, because heat is taken in from the surroundings",
+   "exothermic, because heat is released to the surroundings",
+   "neither, because dissolving is not a chemical change",
+   "exothermic, because the solid breaks up into ions"
+  ],
+  "answer": "endothermic, because heat is taken in from the surroundings",
+  "explanation": "The temperature falls because the dissolving process absorbs heat energy from the water and its surroundings, which is the sign of an endothermic change.",
+  "topic": "chem-exothermic-and-endothermic-reactions"
+ },
+ {
+  "id": "q30",
+  "question": "A catalyst increases the rate of a reaction because it:",
+  "options": [
+   "provides an alternative route of lower activation energy",
+   "raises the temperature of the reaction mixture",
+   "increases the concentration of the reactants",
+   "is used up to form the products"
+  ],
+  "answer": "provides an alternative route of lower activation energy",
+  "explanation": "A catalyst offers a path with a lower energy barrier, so a larger fraction of collisions succeed; it is not consumed by the reaction.",
+  "topic": "chem-reaction-rate-definition-and-factors"
+ },
+ {
+  "id": "q5",
+  "question": "What is the pH of a neutral solution at 25°C?",
+  "options": [
+   "0",
+   "1",
+   "7",
+   "14"
+  ],
+  "answer": "7",
+  "explanation": "A pH of 7 is considered neutral; values below 7 are acidic and above 7 are basic.",
+  "topic": "ph-scale-indicators"
  },
  {
   "id": "q10",
@@ -130,198 +156,172 @@
   "topic": "neutralization"
  },
  {
-  "id": "q11",
-  "question": "Which particle has a negative charge?",
+  "id": "q6",
+  "question": "In a redox reaction, oxidation is defined as:",
   "options": [
-   "Proton",
-   "Neutron",
-   "Electron",
-   "Nucleus"
+   "The gain of electrons",
+   "The loss of electrons",
+   "The gain of hydrogen",
+   "The loss of oxygen"
   ],
-  "answer": "Electron",
-  "explanation": "Electrons carry a negative charge, while protons are positive and neutrons are neutral.",
-  "topic": "atomic-structure"
+  "answer": "The loss of electrons",
+  "explanation": "OIL RIG: Oxidation Is Loss (of electrons), Reduction Is Gain.",
+  "topic": "defining-redox"
  },
  {
-  "id": "q12",
-  "question": "Which indicator turns red in an acidic solution?",
+  "id": "q31",
+  "question": "In electrolysis, oxidation takes place at the:",
   "options": [
-   "Phenolphthalein",
-   "Blue litmus paper",
-   "Red litmus paper",
-   "Methyl orange"
+   "anode, where ions lose electrons",
+   "cathode, where ions lose electrons",
+   "anode, where ions gain electrons",
+   "cathode, where ions gain electrons"
   ],
-  "answer": "Blue litmus paper",
-  "explanation": "Blue litmus paper turns red in the presence of an acid.",
-  "topic": "ph-scale-indicators"
+  "answer": "anode, where ions lose electrons",
+  "explanation": "Negative ions give up electrons at the positive anode, so loss of electrons - oxidation - happens there, while reduction happens at the cathode.",
+  "topic": "chem-electrolysis-principles"
  },
  {
-  "id": "q13",
-  "question": "What is the general formula for alkanes?",
+  "id": "q32",
+  "question": "In the industrial electrolysis of concentrated brine, the product formed at the anode is:",
   "options": [
-   "CnH2n",
-   "CnH2n+2",
-   "CnH2n-2",
-   "CnHn"
+   "chlorine",
+   "hydrogen",
+   "sodium metal",
+   "oxygen"
   ],
-  "answer": "CnH2n+2",
-  "explanation": "Alkanes follow the general formula CnH2n+2.",
+  "answer": "chlorine",
+  "explanation": "Chloride ions are discharged at the anode to give chlorine gas; hydrogen forms at the cathode and sodium hydroxide is left in the electrolyte.",
+  "topic": "chem-industrial-electrolysis"
+ },
+ {
+  "id": "q9",
+  "question": "Which of the following is a saturated hydrocarbon?",
+  "options": [
+   "Ethene",
+   "Ethyne",
+   "Ethane",
+   "Benzene"
+  ],
+  "answer": "Ethane",
+  "explanation": "Alkanes like ethane are saturated because they contain only single carbon-carbon bonds.",
   "topic": "hydrocarbons-alkanes"
  },
  {
-  "id": "q14",
-  "question": "How many electrons can the first shell of an atom hold?",
+  "id": "q33",
+  "question": "Which observation shows that a hydrocarbon is unsaturated?",
   "options": [
-   "2",
-   "8",
-   "18",
-   "32"
+   "Bromine water shaken with it loses its orange colour",
+   "It burns with a smoky flame",
+   "It is a gas at room temperature",
+   "It boils at a low temperature"
   ],
-  "answer": "2",
-  "explanation": "The innermost electron shell (K shell) can hold a maximum of 2 electrons.",
-  "topic": "atomic-structure"
+  "answer": "Bromine water shaken with it loses its orange colour",
+  "explanation": "Only a compound with a C=C double bond decolourises bromine water by addition, so this is the standard test for unsaturation.",
+  "topic": "org-distinguishing-alkanes-and-alkenes"
  },
  {
-  "id": "q15",
-  "question": "Which process is used to separate a mixture of liquids with different boiling points?",
+  "id": "q34",
+  "question": "The functional group -COOH belongs to which homologous series?",
   "options": [
-   "Filtration",
-   "Crystallisation",
-   "Fractional distillation",
-   "Chromatography"
+   "carboxylic acids",
+   "alcohols",
+   "esters",
+   "alkenes"
   ],
-  "answer": "Fractional distillation",
-  "explanation": "Fractional distillation separates liquids based on their different boiling points.",
-  "topic": "states-of-matter"
+  "answer": "carboxylic acids",
+  "explanation": "The carboxyl group -COOH gives the carboxylic acids their acidic character; alcohols carry the -OH group and esters the -COO- link.",
+  "topic": "org-functional-groups"
  },
  {
-  "id": "q16",
-  "question": "What is the atomic number of Carbon?",
+  "id": "q35",
+  "question": "Soap is made industrially by boiling a fat or oil with:",
   "options": [
-   "6",
-   "12",
-   "14",
-   "8"
+   "hot aqueous sodium hydroxide",
+   "dilute hydrochloric acid",
+   "ethanol alone",
+   "cold distilled water"
   ],
-  "answer": "6",
-  "explanation": "The atomic number represents the number of protons; Carbon has 6.",
-  "topic": "atomic-structure"
+  "answer": "hot aqueous sodium hydroxide",
+  "explanation": "Boiling a fat or oil with sodium hydroxide hydrolyses it into glycerol and the sodium salts of the fatty acids, which are soaps.",
+  "topic": "org-esters-hydrolysis-and-detergents"
  },
  {
-  "id": "q17",
-  "question": "Which of these is a covalent compound?",
+  "id": "q36",
+  "question": "Which pair of monomers would form a condensation polymer?",
   "options": [
-   "NaCl",
-   "MgO",
-   "H2O",
-   "KCl"
+   "a dicarboxylic acid and a diol",
+   "two molecules of ethene",
+   "ethene and water",
+   "a single alkane"
   ],
-  "answer": "H2O",
-  "explanation": "Water is formed by the sharing of electrons between hydrogen and oxygen atoms.",
-  "topic": "ionic-covalent-bonding"
+  "answer": "a dicarboxylic acid and a diol",
+  "explanation": "Condensation polymerisation joins monomers that each carry two reactive groups, with the loss of a small molecule such as water; a diacid and a diol give a polyester.",
+  "topic": "org-polymers"
  },
  {
-  "id": "q18",
-  "question": "What is the pH value of a neutral solution?",
+  "id": "q37",
+  "question": "Which metal will displace copper from copper(II) sulphate solution?",
   "options": [
-   "1",
-   "7",
-   "14",
-   "0"
+   "zinc",
+   "silver",
+   "gold",
+   "copper"
   ],
-  "answer": "7",
-  "explanation": "On the pH scale, 7 is neutral, below 7 is acidic, and above 7 is alkaline.",
-  "topic": "ph-scale-indicators"
+  "answer": "zinc",
+  "explanation": "Zinc is above copper in the reactivity series, so it reduces Cu²⁺ ions to copper metal; silver and gold lie below copper and cannot displace it.",
+  "topic": "inorg-reactivity-series"
  },
  {
-  "id": "q19",
-  "question": "Which process involves a solid changing directly into a gas?",
+  "id": "q38",
+  "question": "Iron is protected from rusting by coating it with zinc. This works because:",
   "options": [
-   "Melting",
-   "Evaporation",
-   "Sublimation",
-   "Condensation"
+   "zinc is more reactive than iron, so it corrodes in place of the iron",
+   "zinc is less reactive than iron, so it cannot corrode",
+   "zinc reacts with the rust to dissolve it",
+   "zinc makes the iron harder than rust"
   ],
-  "answer": "Sublimation",
-  "explanation": "Sublimation is the transition from solid to gas without passing through the liquid phase.",
-  "topic": "states-of-matter"
+  "answer": "zinc is more reactive than iron, so it corrodes in place of the iron",
+  "explanation": "Zinc is higher than iron in the reactivity series, so it is oxidised preferentially - sacrificial protection - and this still works where the coating is scratched.",
+  "topic": "inorg-corrosion-of-metals"
  },
  {
-  "id": "q20",
-  "question": "What is the most abundant gas in the Earth's atmosphere?",
+  "id": "q39",
+  "question": "Aluminium is extracted by the electrolysis of:",
   "options": [
-   "Oxygen",
-   "Carbon Dioxide",
-   "Nitrogen",
-   "Argon"
+   "molten aluminium oxide dissolved in molten cryolite",
+   "aqueous aluminium sulphate",
+   "aluminium oxide dissolved in water",
+   "bauxite in a blast furnace"
   ],
-  "answer": "Nitrogen",
-  "explanation": "Nitrogen makes up approximately 78% of the Earth's atmosphere.",
-  "topic": "states-of-matter"
+  "answer": "molten aluminium oxide dissolved in molten cryolite",
+  "explanation": "The purified ore is dissolved in molten cryolite to lower the working temperature, and the melt is electrolysed so that aluminium forms at the cathode.",
+  "topic": "inorg-extraction-of-aluminium-and-iron"
  },
  {
-  "id": "q21",
-  "question": "An atom that has gained or lost electrons is called an:",
+  "id": "q40",
+  "question": "A solution gives a pale blue precipitate with dilute sodium hydroxide. The cation present is:",
   "options": [
-   "Isotope",
-   "Molecule",
-   "Ion",
-   "Proton"
+   "copper(II), Cu²⁺",
+   "iron(II), Fe²⁺",
+   "zinc, Zn²⁺",
+   "ammonium, NH₄⁺"
   ],
-  "answer": "Ion",
-  "explanation": "Ions are charged particles formed when atoms gain or lose electrons.",
-  "topic": "atomic-structure"
+  "answer": "copper(II), Cu²⁺",
+  "explanation": "Copper(II) ions give the only common pale blue hydroxide precipitate with dilute sodium hydroxide; iron(II) is dirty green and zinc is white.",
+  "topic": "inorg-identification-of-cations"
  },
  {
-  "id": "q22",
-  "question": "What is the name of the reaction between an acid and a base?",
+  "id": "q41",
+  "question": "Temporary hardness of water is removed by boiling because boiling:",
   "options": [
-   "Oxidation",
-   "Reduction",
-   "Neutralisation",
-   "Combustion"
+   "decomposes the calcium hydrogencarbonate to insoluble calcium carbonate",
+   "evaporates the calcium ions out of the water",
+   "adds sodium ions that soften the water",
+   "dissolves the magnesium ions"
   ],
-  "answer": "Neutralisation",
-  "explanation": "Neutralisation produces a salt and water.",
-  "topic": "neutralization"
- },
- {
-  "id": "q23",
-  "question": "Which metal is liquid at room temperature?",
-  "options": [
-   "Iron",
-   "Mercury",
-   "Copper",
-   "aluminium"
-  ],
-  "answer": "Mercury",
-  "explanation": "Mercury is the only metal that is liquid at standard room temperature and pressure.",
-  "topic": "states-of-matter"
- },
- {
-  "id": "q24",
-  "question": "What is the empirical formula of Benzene (C6H6)?",
-  "options": [
-   "CH",
-   "C2H2",
-   "C3H3",
-   "C6H6"
-  ],
-  "answer": "CH",
-  "explanation": "The empirical formula is the simplest whole-number ratio of atoms; for C6H6 it is 1:1.",
-  "topic": "molar-mass-calculations"
- },
- {
-  "id": "q25",
-  "question": "Which subatomic particle has a negative charge?",
-  "options": [
-   "Proton",
-   "Neutron",
-   "Electron",
-   "Nucleus"
-  ],
-  "answer": "Electron",
-  "explanation": "Electrons carry a negative charge, while protons are positive and neutrons are neutral.",
-  "topic": "atomic-structure"
+  "answer": "decomposes the calcium hydrogencarbonate to insoluble calcium carbonate",
+  "explanation": "Calcium hydrogencarbonate decomposes on boiling to calcium carbonate, which is insoluble and precipitates out as scale, leaving the water soft.",
+  "topic": "inorg-water-hardness"
  }
 ]
