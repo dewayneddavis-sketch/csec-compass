@@ -13,19 +13,6 @@
   "topic": "ss-l1-1"
  },
  {
-  "id": "p2",
-  "question": "The process of teaching children the values, norms, and skills of their society is called:",
-  "options": [
-   "Urbanisation",
-   "Socialisation",
-   "Migration",
-   "Integration"
-  ],
-  "answer": "Socialisation",
-  "explanation": "Socialisation is a primary function of the family and school, preparing individuals for life in society.",
-  "topic": "ss-l1-2"
- },
- {
   "id": "p3",
   "question": "Which of the following is an example of a secondary group?",
   "options": [
@@ -39,43 +26,17 @@
   "topic": "ss-l2-1"
  },
  {
-  "id": "p4",
-  "question": "Which social institution is primarily responsible for the production and distribution of goods and services?",
+  "id": "p47",
+  "question": "The public service is responsible for:",
   "options": [
-   "Religion",
-   "Education",
-   "The Economy",
-   "The Justice System"
+   "implementing government policies",
+   "making laws",
+   "judging cases",
+   "campaigning for parties"
   ],
-  "answer": "The Economy",
-  "explanation": "The economic institution manages how a society organises its resources and meets material needs.",
-  "topic": "ss-l2-2"
- },
- {
-  "id": "p5",
-  "question": "In a democratic election, a 'constituency' refers to:",
-  "options": [
-   "The total number of voters in a country",
-   "A specific geographic area that elects a representative",
-   "The building where parliament meets",
-   "The list of all political parties"
-  ],
-  "answer": "A specific geographic area that elects a representative",
-  "explanation": "Countries are divided into constituencies to ensure local representation in the national legislature.",
+  "answer": "implementing government policies",
+  "explanation": "Civil servants administer policies and services.",
   "topic": "ss-l3-1"
- },
- {
-  "id": "p6",
-  "question": "Which branch of government is responsible for interpreting and applying the laws?",
-  "options": [
-   "Legislative",
-   "Executive",
-   "Judiciary",
-   "Administrative"
-  ],
-  "answer": "Judiciary",
-  "explanation": "The judiciary (the courts) ensures that laws are followed and interpreted correctly and fairly.",
-  "topic": "ss-l3-2"
  },
  {
   "id": "p7",
@@ -91,43 +52,17 @@
   "topic": "ss-l4-1"
  },
  {
-  "id": "p8",
-  "question": "Which of the following is a significant challenge to regional integration in the Caribbean?",
+  "id": "p58",
+  "question": "Urbanisation refers to:",
   "options": [
-   "Shared language in many states",
-   "Geographic proximity",
-   "Differences in economic development levels",
-   "Similar cultural heritage"
+   "the growth of towns and cities",
+   "a decline in farming",
+   "the spread of forests",
+   "lower birth rates"
   ],
-  "answer": "Differences in economic development levels",
-  "explanation": "Varying levels of wealth and industrialisation can lead to unequal benefits from integration.",
-  "topic": "ss-l4-2"
- },
- {
-  "id": "p9",
-  "question": "How is the 'Natural Increase' of a population calculated?",
-  "options": [
-   "Birth Rate + Death Rate",
-   "Birth Rate - Death Rate",
-   "Immigration - Emigration",
-   "Total Population / Area"
-  ],
-  "answer": "Birth Rate - Death Rate",
-  "explanation": "Natural increase is the growth from within the population, excluding the effects of migration.",
+  "answer": "the growth of towns and cities",
+  "explanation": "Urbanisation is increasing urban population.",
   "topic": "ss-l5-1"
- },
- {
-  "id": "p10",
-  "question": "Which of the following is considered a 'push factor' for migration?",
-  "options": [
-   "Better job opportunities abroad",
-   "High crime rates in the home country",
-   "Quality healthcare in a new city",
-   "Political stability in a neighbouring state"
-  ],
-  "answer": "High crime rates in the home country",
-  "explanation": "Push factors are negative conditions that drive people away from their current location.",
-  "topic": "ss-l5-2"
  },
  {
   "id": "p11",
@@ -143,17 +78,186 @@
   "topic": "ss-l6-1"
  },
  {
-  "id": "p12",
-  "question": "A consumer has the 'Right to Redress.' This means they are entitled to:",
+  "id": "p101",
+  "question": "Creolisation in the Caribbean refers to:",
   "options": [
-   "Buy any product they want",
-   "Return a faulty product for a refund or repair",
-   "Pay the lowest possible price",
-   "Ignore the instructions on a label"
+   "The blending of different cultures to form something new",
+   "The separation of ethnic groups",
+   "The return of migrants to their home country",
+   "The decline of cultural traditions"
   ],
-  "answer": "Return a faulty product for a refund or repair",
-  "explanation": "Redress ensures that consumers are compensated when a product or service fails to meet standards.",
-  "topic": "ss-l6-2"
+  "answer": "The blending of different cultures to form something new",
+  "explanation": "Creolisation is the mixing of African, European, Asian and indigenous elements into new, distinctly Caribbean forms.",
+  "topic": "cult-caribbean-cultural-diversity"
+ },
+ {
+  "id": "p102",
+  "question": "A manifesto is:",
+  "options": [
+   "A party's written statement of its policies and promises",
+   "A list of registered voters",
+   "A ballot paper",
+   "A court order"
+  ],
+  "answer": "A party's written statement of its policies and promises",
+  "explanation": "A manifesto sets out what a party promises to do if elected, so voters can judge the party on its plans.",
+  "topic": "elec-political-party-election-preparation"
+ },
+ {
+  "id": "p103",
+  "question": "Post-natal care is care given to:",
+  "options": [
+   "The mother and baby after the birth",
+   "The mother only before the birth",
+   "The father before the birth",
+   "The baby only while still in the womb"
+  ],
+  "answer": "The mother and baby after the birth",
+  "explanation": "Post-natal (after birth) care checks the recovery of the mother and the health and development of the newborn.",
+  "topic": "fam-preparation-for-parenthood"
+ },
+ {
+  "id": "p104",
+  "question": "Which social institution is responsible for maintaining order and settling disputes through the law?",
+  "options": [
+   "The family",
+   "The economy",
+   "The justice system",
+   "The media"
+  ],
+  "answer": "The justice system",
+  "explanation": "The legal institution enforces rules, settles disputes and punishes wrongdoing so that social order is maintained.",
+  "topic": "ss-l2-2"
+ },
+ {
+  "id": "p35",
+  "question": "Which branch of government makes laws?",
+  "options": [
+   "The legislature",
+   "The executive",
+   "The judiciary",
+   "The civil service"
+  ],
+  "answer": "The legislature",
+  "explanation": "Parliament (legislature) enacts laws.",
+  "topic": "ss-l3-2"
+ },
+ {
+  "id": "p25",
+  "question": "A 'pull factor' in migration is:",
+  "options": [
+   "an attraction to a new destination",
+   "a reason to leave",
+   "a tax increase",
+   "family separation"
+  ],
+  "answer": "an attraction to a new destination",
+  "explanation": "Pull factors (e.g. jobs, freedom) attract migrants.",
+  "topic": "ss-l5-2"
+ },
+ {
+  "id": "p105",
+  "question": "Which of the following is an element of culture?",
+  "options": [
+   "Language",
+   "Rainfall",
+   "Altitude",
+   "Soil type"
+  ],
+  "answer": "Language",
+  "explanation": "Language is a core element of culture, along with customs, beliefs, food, music and dress.",
+  "topic": "cult-caribbean-cultural-diversity"
+ },
+ {
+  "id": "p106",
+  "question": "Voter turnout is calculated as:",
+  "options": [
+   "The percentage of registered voters who actually voted",
+   "The total number of candidates",
+   "The number of polling stations",
+   "The number of parties contesting"
+  ],
+  "answer": "The percentage of registered voters who actually voted",
+  "explanation": "Turnout compares the votes cast with the number of registered electors, usually expressed as a percentage.",
+  "topic": "elec-voter-participation"
+ },
+ {
+  "id": "p107",
+  "question": "Positive discipline is based on:",
+  "options": [
+   "Teaching and guiding rather than punishing",
+   "Strict punishment for every mistake",
+   "Ignoring misbehaviour",
+   "Letting children set all their own rules"
+  ],
+  "answer": "Teaching and guiding rather than punishing",
+  "explanation": "Positive discipline corrects behaviour by explaining consequences and teaching self-control, rather than relying on fear.",
+  "topic": "fam-effective-parenting"
+ },
+ {
+  "id": "p108",
+  "question": "Peer pressure refers to:",
+  "options": [
+   "The influence of people of similar age or status to conform",
+   "The force used by police to control crowds",
+   "Pressure from parents to obey rules",
+   "Pressure from teachers to pass exams"
+  ],
+  "answer": "The influence of people of similar age or status to conform",
+  "explanation": "Peer pressure is the push a person feels from friends or equals to behave in a particular way.",
+  "topic": "soc-social-group-interaction"
+ },
+ {
+  "id": "p26",
+  "question": "Brain drain refers to:",
+  "options": [
+   "the emigration of skilled workers",
+   "the loss of forests",
+   "a type of disease",
+   "poor education"
+  ],
+  "answer": "the emigration of skilled workers",
+  "explanation": "Brain drain is the loss of trained professionals to other countries.",
+  "topic": "ss-l5-2"
+ },
+ {
+  "id": "p109",
+  "question": "The 'swing' between two elections measures:",
+  "options": [
+   "The change in a party's share of the vote",
+   "The number of seats in parliament",
+   "The size of the electorate",
+   "The length of the campaign"
+  ],
+  "answer": "The change in a party's share of the vote",
+  "explanation": "Swing is the movement of votes from one party to another between elections, expressed in percentage points.",
+  "topic": "elec-interpreting-election-data"
+ },
+ {
+  "id": "p110",
+  "question": "Teenage pregnancy often affects a young mother by:",
+  "options": [
+   "Interrupting her education",
+   "Increasing her leisure time",
+   "Ending her responsibilities",
+   "Improving her finances"
+  ],
+  "answer": "Interrupting her education",
+  "explanation": "A teenage pregnancy frequently forces a girl to leave or delay school, which limits her later opportunities.",
+  "topic": "fam-social-issues-affecting-families"
+ },
+ {
+  "id": "p111",
+  "question": "The Domestic Violence Act in Jamaica provides for:",
+  "options": [
+   "Protection orders for victims of abuse",
+   "Tax relief for homeowners",
+   "Grants for new businesses",
+   "Licences for drivers"
+  ],
+  "answer": "Protection orders for victims of abuse",
+  "explanation": "The Act lets a court issue a protection order to keep an abuser away from the victim and the home.",
+  "topic": "fam-laws-protecting-the-family"
  },
  {
   "id": "p13",
@@ -182,17 +286,342 @@
   "topic": "ss-l2-1"
  },
  {
-  "id": "p15",
-  "question": "Socialisation is the process of:",
+  "id": "p85",
+  "question": "A 'budget' of a government is:",
   "options": [
-   "learning the norms and values of society",
-   "forming a government",
-   "earning money",
-   "moving house"
+   "a plan of revenue and expenditure",
+   "a law",
+   "a tax",
+   "a census"
   ],
-  "answer": "learning the norms and values of society",
-  "explanation": "Socialisation teaches individuals society's expected behaviours.",
+  "answer": "a plan of revenue and expenditure",
+  "explanation": "Budgets allocate government income and spending.",
+  "topic": "ss-l3-1"
+ },
+ {
+  "id": "p28",
+  "question": "Which of the following is a Caribbean regional organisation?",
+  "options": [
+   "CARICOM",
+   "UNESCO",
+   "NATO",
+   "OPEC"
+  ],
+  "answer": "CARICOM",
+  "explanation": "CARICOM is the Caribbean Community.",
+  "topic": "ss-l4-1"
+ },
+ {
+  "id": "p27",
+  "question": "Remittances are:",
+  "options": [
+   "money sent home by migrants",
+   "government grants",
+   "tax refunds",
+   "school fees"
+  ],
+  "answer": "money sent home by migrants",
+  "explanation": "Migrants send remittances to support families at home.",
+  "topic": "ss-l5-2"
+ },
+ {
+  "id": "p70",
+  "question": "Which of the following is a communication technology?",
+  "options": [
+   "The internet",
+   "Farming",
+   "Fishing",
+   "Mining"
+  ],
+  "answer": "The internet",
+  "explanation": "The internet enables global communication.",
+  "topic": "ss-l6-1"
+ },
+ {
+  "id": "p112",
+  "question": "Tolerance of cultural diversity means:",
+  "options": [
+   "Respecting the customs of groups different from one's own",
+   "Insisting everyone adopt the same customs",
+   "Ignoring all other cultures",
+   "Preferring only one ethnic group"
+  ],
+  "answer": "Respecting the customs of groups different from one's own",
+  "explanation": "In a diverse society, tolerance means accepting and respecting the different cultures that share the same space.",
+  "topic": "cult-caribbean-cultural-diversity"
+ },
+ {
+  "id": "p113",
+  "question": "Canvassing during an election campaign means:",
+  "options": [
+   "Going door to door to talk to voters and win support",
+   "Counting the votes after the poll",
+   "Registering new voters",
+   "Printing the ballot papers"
+  ],
+  "answer": "Going door to door to talk to voters and win support",
+  "explanation": "Canvassing is the direct, door-to-door effort to persuade voters to support a candidate or party.",
+  "topic": "elec-political-party-election-preparation"
+ },
+ {
+  "id": "p43",
+  "question": "Citizenship rights include the right to:",
+  "options": [
+   "vote and protection under the law",
+   "ignore taxes",
+   "break laws",
+   "refuse education"
+  ],
+  "answer": "vote and protection under the law",
+  "explanation": "Citizens enjoy political and legal rights.",
+  "topic": "gov-citizens-government-and-the-constitution"
+ },
+ {
+  "id": "p2",
+  "question": "The process of teaching children the values, norms, and skills of their society is called:",
+  "options": [
+   "Urbanisation",
+   "Socialisation",
+   "Migration",
+   "Integration"
+  ],
+  "answer": "Socialisation",
+  "explanation": "Socialisation is a primary function of the family and school, preparing individuals for life in society.",
   "topic": "ss-l1-2"
+ },
+ {
+  "id": "p4",
+  "question": "Which social institution is primarily responsible for the production and distribution of goods and services?",
+  "options": [
+   "Religion",
+   "Education",
+   "The Economy",
+   "The Justice System"
+  ],
+  "answer": "The Economy",
+  "explanation": "The economic institution manages how a society organises its resources and meets material needs.",
+  "topic": "ss-l2-2"
+ },
+ {
+  "id": "p36",
+  "question": "The executive branch of government:",
+  "options": [
+   "implements and administers laws",
+   "interprets laws",
+   "passes laws",
+   "holds elections"
+  ],
+  "answer": "implements and administers laws",
+  "explanation": "The executive (PM and Cabinet) carries out laws.",
+  "topic": "ss-l3-2"
+ },
+ {
+  "id": "p8",
+  "question": "Which of the following is a significant challenge to regional integration in the Caribbean?",
+  "options": [
+   "Shared language in many states",
+   "Geographic proximity",
+   "Differences in economic development levels",
+   "Similar cultural heritage"
+  ],
+  "answer": "Differences in economic development levels",
+  "explanation": "Varying levels of wealth and industrialisation can lead to unequal benefits from integration.",
+  "topic": "ss-l4-2"
+ },
+ {
+  "id": "p12",
+  "question": "A consumer has the 'Right to Redress.' This means they are entitled to:",
+  "options": [
+   "Buy any product they want",
+   "Return a faulty product for a refund or repair",
+   "Pay the lowest possible price",
+   "Ignore the instructions on a label"
+  ],
+  "answer": "Return a faulty product for a refund or repair",
+  "explanation": "Redress ensures that consumers are compensated when a product or service fails to meet standards.",
+  "topic": "ss-l6-2"
+ },
+ {
+  "id": "p114",
+  "question": "A 'marginal seat' is a constituency:",
+  "options": [
+   "Where the winning margin at the last election was small",
+   "Where the same party always wins by a huge margin",
+   "That has no voters",
+   "That elects two representatives"
+  ],
+  "answer": "Where the winning margin at the last election was small",
+  "explanation": "A marginal seat can change hands with a small swing, so parties campaign hard for it.",
+  "topic": "elec-factors-influencing-election-outcomes"
+ },
+ {
+  "id": "p115",
+  "question": "Consistency in parenting means:",
+  "options": [
+   "Applying rules in the same way each time",
+   "Changing rules daily",
+   "Punishing only on some days",
+   "Letting each parent make different rules"
+  ],
+  "answer": "Applying rules in the same way each time",
+  "explanation": "When rules and consequences are consistent, a child learns what is expected and can rely on the parent's guidance.",
+  "topic": "fam-effective-parenting"
+ },
+ {
+  "id": "p116",
+  "question": "Which of the following is a common reason for voter apathy?",
+  "options": [
+   "A belief that one's vote will not make a difference",
+   "A belief that voting is compulsory",
+   "A shortage of candidates",
+   "An excess of polling stations"
+  ],
+  "answer": "A belief that one's vote will not make a difference",
+  "explanation": "When people feel their single vote cannot change anything, they may stay home on polling day.",
+  "topic": "elec-voter-participation"
+ },
+ {
+  "id": "p117",
+  "question": "Substance abuse in a household most directly threatens:",
+  "options": [
+   "The stability and finances of the family",
+   "The school calendar",
+   "The national currency",
+   "The road network"
+  ],
+  "answer": "The stability and finances of the family",
+  "explanation": "Money spent on drugs or alcohol, and the conflict that follows, undermine the family's security and relationships.",
+  "topic": "fam-social-issues-affecting-families"
+ },
+ {
+  "id": "p118",
+  "question": "If 30,000 of 40,000 registered voters cast ballots, the turnout is:",
+  "options": [
+   "75%",
+   "40%",
+   "30%",
+   "133%"
+  ],
+  "answer": "75%",
+  "explanation": "Turnout = (votes cast / registered voters) x 100 = (30,000 / 40,000) x 100 = 75%.",
+  "topic": "elec-interpreting-election-data"
+ },
+ {
+  "id": "p119",
+  "question": "The Child Care and Protection Act protects children by:",
+  "options": [
+   "Making the child's welfare the first consideration in decisions about them",
+   "Allowing children to work at any age",
+   "Removing children from school",
+   "Limiting children's access to health care"
+  ],
+  "answer": "Making the child's welfare the first consideration in decisions about them",
+  "explanation": "The Act requires that every decision affecting a child put the child's best interests first.",
+  "topic": "fam-laws-protecting-the-family"
+ },
+ {
+  "id": "p20",
+  "question": "Which of the following is a Caribbean family type?",
+  "options": [
+   "Extended family",
+   "Single-class family",
+   "Nuclear party",
+   "Government family"
+  ],
+  "answer": "Extended family",
+  "explanation": "Extended families (including grandparents, aunts etc.) are common in the Caribbean.",
+  "topic": "ss-l1-1"
+ },
+ {
+  "id": "p120",
+  "question": "A class of students working together on a school project is best described as:",
+  "options": [
+   "A primary group",
+   "A secondary group",
+   "A kinship group",
+   "An informal group"
+  ],
+  "answer": "A secondary group",
+  "explanation": "Secondary groups are larger and goal-oriented; the students come together to complete a task rather than through close personal ties.",
+  "topic": "ss-l2-1"
+ },
+ {
+  "id": "p37",
+  "question": "The judiciary's role is to:",
+  "options": [
+   "interpret and apply the law",
+   "make laws",
+   "collect taxes",
+   "print money"
+  ],
+  "answer": "interpret and apply the law",
+  "explanation": "Courts interpret laws and settle disputes.",
+  "topic": "ss-l3-2"
+ },
+ {
+  "id": "p30",
+  "question": "Which CARICOM organ is the highest decision-making body?",
+  "options": [
+   "The Conference of Heads of Government",
+   "The Secretariat",
+   "The Court of Justice",
+   "The Assembly"
+  ],
+  "answer": "The Conference of Heads of Government",
+  "explanation": "Heads of Government set CARICOM policy.",
+  "topic": "ss-l4-1"
+ },
+ {
+  "id": "p9",
+  "question": "How is the 'Natural Increase' of a population calculated?",
+  "options": [
+   "Birth Rate + Death Rate",
+   "Birth Rate - Death Rate",
+   "Immigration - Emigration",
+   "Total Population / Area"
+  ],
+  "answer": "Birth Rate - Death Rate",
+  "explanation": "Natural increase is the growth from within the population, excluding the effects of migration.",
+  "topic": "ss-l5-1"
+ },
+ {
+  "id": "p72",
+  "question": "Which of the following is an advantage of ICT in education?",
+  "options": [
+   "Access to online resources",
+   "More homework",
+   "Expensive devices",
+   "Less learning"
+  ],
+  "answer": "Access to online resources",
+  "explanation": "ICT expands learning materials and methods.",
+  "topic": "ss-l6-1"
+ },
+ {
+  "id": "p121",
+  "question": "Nomination Day is the day when:",
+  "options": [
+   "Candidates are formally registered for the election",
+   "Voters cast their ballots",
+   "The results are announced",
+   "The new government is sworn in"
+  ],
+  "answer": "Candidates are formally registered for the election",
+  "explanation": "On Nomination Day, each candidate's papers are lodged and accepted, placing their names on the ballot.",
+  "topic": "elec-political-party-election-preparation"
+ },
+ {
+  "id": "p44",
+  "question": "A responsibility of citizens is to:",
+  "options": [
+   "pay taxes",
+   "avoid work",
+   "only claim rights",
+   "ignore elections"
+  ],
+  "answer": "pay taxes",
+  "explanation": "Citizens contribute by paying taxes and obeying laws.",
+  "topic": "gov-citizens-government-and-the-constitution"
  },
  {
   "id": "p16",
@@ -221,628 +650,17 @@
   "topic": "ss-l2-2"
  },
  {
-  "id": "p18",
-  "question": "Values in a society are:",
+  "id": "p73",
+  "question": "Globalisation refers to:",
   "options": [
-   "shared beliefs about what is important",
-   "taxes paid",
-   "types of housing",
-   "political parties"
+   "increasing global interconnectedness",
+   "national isolation",
+   "fewer imports",
+   "local trade only"
   ],
-  "answer": "shared beliefs about what is important",
-  "explanation": "Values are collective ideas about what is good and desirable.",
-  "topic": "ss-l2-2"
- },
- {
-  "id": "p19",
-  "question": "Social stratification refers to:",
-  "options": [
-   "the division of society into layers or classes",
-   "migration patterns",
-   "the education system",
-   "family structures"
-  ],
-  "answer": "the division of society into layers or classes",
-  "explanation": "Stratification ranks individuals into social classes.",
-  "topic": "ss-l1-1"
- },
- {
-  "id": "p20",
-  "question": "Which of the following is a Caribbean family type?",
-  "options": [
-   "Extended family",
-   "Single-class family",
-   "Nuclear party",
-   "Government family"
-  ],
-  "answer": "Extended family",
-  "explanation": "Extended families (including grandparents, aunts etc.) are common in the Caribbean.",
-  "topic": "ss-l1-1"
- },
- {
-  "id": "p21",
-  "question": "A 'common-law union' refers to:",
-  "options": [
-   "a couple living together without formal marriage",
-   "a legal partnership",
-   "a type of adoption",
-   "a church wedding"
-  ],
-  "answer": "a couple living together without formal marriage",
-  "explanation": "Common-law unions are informal but recognised living arrangements.",
-  "topic": "ss-l1-1"
- },
- {
-  "id": "p22",
-  "question": "Which institution is responsible for formal education?",
-  "options": [
-   "School",
-   "The media",
-   "Peer groups",
-   "Workplace"
-  ],
-  "answer": "School",
-  "explanation": "Schools provide formal education.",
-  "topic": "ss-l2-2"
- },
- {
-  "id": "p23",
-  "question": "The family's main economic function is to:",
-  "options": [
-   "provide for members' basic needs",
-   "create laws",
-   "educate the nation",
-   "collect taxes"
-  ],
-  "answer": "provide for members' basic needs",
-  "explanation": "The family provides food, shelter and other needs.",
-  "topic": "ss-l1-2"
- },
- {
-  "id": "p24",
-  "question": "A 'push factor' in migration is:",
-  "options": [
-   "a condition that drives people away from a place",
-   "a reason to stay",
-   "a job offer abroad",
-   "better schools"
-  ],
-  "answer": "a condition that drives people away from a place",
-  "explanation": "Push factors (e.g. unemployment, war) drive emigration.",
-  "topic": "ss-l5-2"
- },
- {
-  "id": "p25",
-  "question": "A 'pull factor' in migration is:",
-  "options": [
-   "an attraction to a new destination",
-   "a reason to leave",
-   "a tax increase",
-   "family separation"
-  ],
-  "answer": "an attraction to a new destination",
-  "explanation": "Pull factors (e.g. jobs, freedom) attract migrants.",
-  "topic": "ss-l5-2"
- },
- {
-  "id": "p26",
-  "question": "Brain drain refers to:",
-  "options": [
-   "the emigration of skilled workers",
-   "the loss of forests",
-   "a type of disease",
-   "poor education"
-  ],
-  "answer": "the emigration of skilled workers",
-  "explanation": "Brain drain is the loss of trained professionals to other countries.",
-  "topic": "ss-l5-2"
- },
- {
-  "id": "p27",
-  "question": "Remittances are:",
-  "options": [
-   "money sent home by migrants",
-   "government grants",
-   "tax refunds",
-   "school fees"
-  ],
-  "answer": "money sent home by migrants",
-  "explanation": "Migrants send remittances to support families at home.",
-  "topic": "ss-l5-2"
- },
- {
-  "id": "p28",
-  "question": "Which of the following is a Caribbean regional organisation?",
-  "options": [
-   "CARICOM",
-   "UNESCO",
-   "NATO",
-   "OPEC"
-  ],
-  "answer": "CARICOM",
-  "explanation": "CARICOM is the Caribbean Community.",
-  "topic": "ss-l4-1"
- },
- {
-  "id": "p29",
-  "question": "The main purpose of CARICOM is to:",
-  "options": [
-   "promote economic integration and cooperation",
-   "build roads",
-   "organise sports",
-   "collect taxes"
-  ],
-  "answer": "promote economic integration and cooperation",
-  "explanation": "CARICOM fosters trade, cooperation and integration.",
-  "topic": "ss-l4-1"
- },
- {
-  "id": "p30",
-  "question": "Which CARICOM organ is the highest decision-making body?",
-  "options": [
-   "The Conference of Heads of Government",
-   "The Secretariat",
-   "The Court of Justice",
-   "The Assembly"
-  ],
-  "answer": "The Conference of Heads of Government",
-  "explanation": "Heads of Government set CARICOM policy.",
-  "topic": "ss-l4-1"
- },
- {
-  "id": "p31",
-  "question": "The CARICOM Single Market and Economy (CSME) allows:",
-  "options": [
-   "free movement of goods, services, capital and labour",
-   "only free movement of goods",
-   "military alliances",
-   "currency unification only"
-  ],
-  "answer": "free movement of goods, services, capital and labour",
-  "explanation": "CSME deepens the single market for factors of production.",
-  "topic": "ss-l4-1"
- },
- {
-  "id": "p32",
-  "question": "The Caribbean Court of Justice (CCJ) functions as:",
-  "options": [
-   "the final court of appeal and an international tribunal",
-   "a trade union",
-   "a development bank",
-   "a university"
-  ],
-  "answer": "the final court of appeal and an international tribunal",
-  "explanation": "The CCJ is the region's final appellate court and interprets the treaty.",
-  "topic": "ss-l4-1"
- },
- {
-  "id": "p33",
-  "question": "Which of the following is an example of a regional institution?",
-  "options": [
-   "University of the West Indies",
-   "United Nations",
-   "World Bank",
-   "IMF"
-  ],
-  "answer": "University of the West Indies",
-  "explanation": "The UWI serves Caribbean tertiary education regionally.",
-  "topic": "ss-l4-1"
- },
- {
-  "id": "p34",
-  "question": "A constitution is:",
-  "options": [
-   "the supreme law that sets out how a country is governed",
-   "a political party",
-   "a trade agreement",
-   "a census"
-  ],
-  "answer": "the supreme law that sets out how a country is governed",
-  "explanation": "The constitution establishes the framework of government.",
-  "topic": "ss-l3-1"
- },
- {
-  "id": "p35",
-  "question": "Which branch of government makes laws?",
-  "options": [
-   "The legislature",
-   "The executive",
-   "The judiciary",
-   "The civil service"
-  ],
-  "answer": "The legislature",
-  "explanation": "Parliament (legislature) enacts laws.",
-  "topic": "ss-l3-1"
- },
- {
-  "id": "p36",
-  "question": "The executive branch of government:",
-  "options": [
-   "implements and administers laws",
-   "interprets laws",
-   "passes laws",
-   "holds elections"
-  ],
-  "answer": "implements and administers laws",
-  "explanation": "The executive (PM and Cabinet) carries out laws.",
-  "topic": "ss-l3-2"
- },
- {
-  "id": "p37",
-  "question": "The judiciary's role is to:",
-  "options": [
-   "interpret and apply the law",
-   "make laws",
-   "collect taxes",
-   "print money"
-  ],
-  "answer": "interpret and apply the law",
-  "explanation": "Courts interpret laws and settle disputes.",
-  "topic": "ss-l3-2"
- },
- {
-  "id": "p38",
-  "question": "In a parliamentary democracy, the Head of Government is usually the:",
-  "options": [
-   "Prime Minister",
-   "President only",
-   "Chief Justice",
-   "Speaker"
-  ],
-  "answer": "Prime Minister",
-  "explanation": "The PM leads the government in parliamentary systems.",
-  "topic": "ss-l3-1"
- },
- {
-  "id": "p39",
-  "question": "The electoral system in most Caribbean countries is:",
-  "options": [
-   "first-past-the-post",
-   "proportional representation only",
-   "dictatorship",
-   "hereditary succession"
-  ],
-  "answer": "first-past-the-post",
-  "explanation": "Candidates with the most votes in each constituency win.",
-  "topic": "ss-l3-1"
- },
- {
-  "id": "p40",
-  "question": "A 'constituency' is:",
-  "options": [
-   "an electoral area that elects a representative",
-   "a political party",
-   "a government department",
-   "a court"
-  ],
-  "answer": "an electoral area that elects a representative",
-  "explanation": "Constituencies elect members of parliament.",
-  "topic": "ss-l3-1"
- },
- {
-  "id": "p41",
-  "question": "The opposition in Parliament:",
-  "options": [
-   "monitors and challenges the government",
-   "passes all laws",
-   "appoints judges",
-   "controls the civil service"
-  ],
-  "answer": "monitors and challenges the government",
-  "explanation": "The opposition scrutinises government actions.",
-  "topic": "ss-l3-1"
- },
- {
-  "id": "p42",
-  "question": "Universal adult suffrage means:",
-  "options": [
-   "all adult citizens can vote",
-   "only property owners vote",
-   "men only vote",
-   "the government chooses voters"
-  ],
-  "answer": "all adult citizens can vote",
-  "explanation": "Every adult citizen has the right to vote.",
-  "topic": "ss-l3-1"
- },
- {
-  "id": "p43",
-  "question": "Citizenship rights include the right to:",
-  "options": [
-   "vote and protection under the law",
-   "ignore taxes",
-   "break laws",
-   "refuse education"
-  ],
-  "answer": "vote and protection under the law",
-  "explanation": "Citizens enjoy political and legal rights.",
-  "topic": "ss-l3-1"
- },
- {
-  "id": "p44",
-  "question": "A responsibility of citizens is to:",
-  "options": [
-   "pay taxes",
-   "avoid work",
-   "only claim rights",
-   "ignore elections"
-  ],
-  "answer": "pay taxes",
-  "explanation": "Citizens contribute by paying taxes and obeying laws.",
-  "topic": "ss-l3-1"
- },
- {
-  "id": "p45",
-  "question": "Which of the following is a civic responsibility?",
-  "options": [
-   "Voting in elections",
-   "Buying imported goods",
-   "Going on vacation",
-   "Watching television"
-  ],
-  "answer": "Voting in elections",
-  "explanation": "Voting is a key civic duty in a democracy.",
-  "topic": "ss-l3-1"
- },
- {
-  "id": "p46",
-  "question": "'Rule of law' means:",
-  "options": [
-   "everyone is subject to the law",
-   "only citizens obey the law",
-   "police make laws",
-   "judges elect governments"
-  ],
-  "answer": "everyone is subject to the law",
-  "explanation": "The law applies equally to all, including leaders.",
-  "topic": "ss-l3-1"
- },
- {
-  "id": "p47",
-  "question": "The public service is responsible for:",
-  "options": [
-   "implementing government policies",
-   "making laws",
-   "judging cases",
-   "campaigning for parties"
-  ],
-  "answer": "implementing government policies",
-  "explanation": "Civil servants administer policies and services.",
-  "topic": "ss-l3-1"
- },
- {
-  "id": "p48",
-  "question": "Sustainable development means:",
-  "options": [
-   "meeting present needs without harming future generations",
-   "using resources as fast as possible",
-   "reducing population",
-   "building more factories"
-  ],
-  "answer": "meeting present needs without harming future generations",
-  "explanation": "Sustainability balances development with resource conservation.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p49",
-  "question": "Which of the following is a sustainable practice?",
-  "options": [
-   "Solar energy use",
-   "Deforestation",
-   "Overfishing",
-   "Burning fossil fuels"
-  ],
-  "answer": "Solar energy use",
-  "explanation": "Renewable energy conserves resources.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p50",
-  "question": "The 'greenhouse effect' is caused by:",
-  "options": [
-   "greenhouse gases trapping heat",
-   "recycling",
-   "wind power",
-   "planting trees"
-  ],
-  "answer": "greenhouse gases trapping heat",
-  "explanation": "CO₂ and other gases trap heat in the atmosphere.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p51",
-  "question": "Global warming is mainly caused by:",
-  "options": [
-   "increased greenhouse gas emissions",
-   "more rainfall",
-   "longer school days",
-   "cheaper food"
-  ],
-  "answer": "increased greenhouse gas emissions",
-  "explanation": "Human emissions of CO₂ drive global warming.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p52",
-  "question": "Which organisation promotes sustainable development globally?",
-  "options": [
-   "United Nations",
-   "CARICOM only",
-   "The IMF",
-   "OPEC"
-  ],
-  "answer": "United Nations",
-  "explanation": "The UN coordinates global sustainability goals.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p53",
-  "question": "The population of a country is studied through the:",
-  "options": [
-   "census",
-   "budget",
-   "constitution",
-   "referendum"
-  ],
-  "answer": "census",
-  "explanation": "A census counts and profiles the population.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p54",
-  "question": "The birth rate is:",
-  "options": [
-   "the number of live births per 1,000 people per year",
-   "the number of babies in hospitals",
-   "the population growth",
-   "the death rate"
-  ],
-  "answer": "the number of live births per 1,000 people per year",
-  "explanation": "Crude birth rate measures births per 1,000 population.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p55",
-  "question": "If the birth rate exceeds the death rate, the population:",
-  "options": [
-   "increases naturally",
-   "decreases",
-   "stays constant",
-   "doubles always"
-  ],
-  "answer": "increases naturally",
-  "explanation": "Natural increase = births - deaths.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p56",
-  "question": "The 'dependency ratio' compares:",
-  "options": [
-   "dependents to the working-age population",
-   "births to deaths",
-   "men to women",
-   "urban to rural population"
-  ],
-  "answer": "dependents to the working-age population",
-  "explanation": "It measures the burden on the productive population.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p57",
-  "question": "Which of the following is a 'push' factor for rural-urban migration?",
-  "options": [
-   "Lack of jobs in rural areas",
-   "Better housing in rural areas",
-   "Lower food prices",
-   "More land"
-  ],
-  "answer": "Lack of jobs in rural areas",
-  "explanation": "Unemployment pushes rural residents to cities.",
-  "topic": "ss-l5-2"
- },
- {
-  "id": "p58",
-  "question": "Urbanisation refers to:",
-  "options": [
-   "the growth of towns and cities",
-   "a decline in farming",
-   "the spread of forests",
-   "lower birth rates"
-  ],
-  "answer": "the growth of towns and cities",
-  "explanation": "Urbanisation is increasing urban population.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p59",
-  "question": "Which of the following is a consequence of urbanisation?",
-  "options": [
-   "Housing shortages",
-   "More farmland",
-   "Fewer cars",
-   "Lower crime"
-  ],
-  "answer": "Housing shortages",
-  "explanation": "Rapid urban growth strains housing and services.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p60",
-  "question": "A 'primary industry' is one that:",
-  "options": [
-   "extracts raw materials",
-   "manufactures goods",
-   "provides services",
-   "sells products"
-  ],
-  "answer": "extracts raw materials",
-  "explanation": "Farming, fishing and mining are primary industries.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p61",
-  "question": "Which of the following is a secondary industry?",
-  "options": [
-   "Manufacturing",
-   "Farming",
-   "Banking",
-   "Tourism"
-  ],
-  "answer": "Manufacturing",
-  "explanation": "Secondary industries process raw materials into goods.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p62",
-  "question": "Tourism is an example of a:",
-  "options": [
-   "tertiary industry",
-   "primary industry",
-   "secondary industry",
-   "extractive industry"
-  ],
-  "answer": "tertiary industry",
-  "explanation": "Tourism is a service (tertiary) industry.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p63",
-  "question": "Which of the following benefits does tourism bring to the Caribbean?",
-  "options": [
-   "Foreign exchange earnings",
-   "Fewer visitors",
-   "Loss of jobs",
-   "Higher unemployment"
-  ],
-  "answer": "Foreign exchange earnings",
-  "explanation": "Tourism earns foreign exchange and creates employment.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p64",
-  "question": "A disadvantage of tourism is:",
-  "options": [
-   "environmental degradation",
-   "more income",
-   "job creation",
-   "cultural exchange"
-  ],
-  "answer": "environmental degradation",
-  "explanation": "Tourism can damage beaches, reefs and ecosystems.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p65",
-  "question": "Consumer protection laws aim to:",
-  "options": [
-   "protect buyers from unfair practices",
-   "increase prices",
-   "limit shopping",
-   "tax imports"
-  ],
-  "answer": "protect buyers from unfair practices",
-  "explanation": "They safeguard consumers' rights and safety.",
-  "topic": "ss-l6-2"
+  "answer": "increasing global interconnectedness",
+  "explanation": "Globalisation links economies, cultures and people worldwide.",
+  "topic": "ss-l4-2"
  },
  {
   "id": "p66",
@@ -858,407 +676,43 @@
   "topic": "ss-l6-2"
  },
  {
-  "id": "p67",
-  "question": "A 'cooperative' is a business:",
+  "id": "p122",
+  "question": "Which factor most directly reflects a voter's long-term attachment to a party?",
   "options": [
-   "owned and run by its members",
-   "owned by the state",
-   "owned by shareholders only",
-   "run by the government"
+   "Party loyalty",
+   "The weather on polling day",
+   "The colour of the ballot box",
+   "The length of the queue"
   ],
-  "answer": "owned and run by its members",
-  "explanation": "Cooperatives are member-owned and democratically run.",
-  "topic": "ss-l6-2"
+  "answer": "Party loyalty",
+  "explanation": "Many voters support the same party election after election out of habit, family tradition or identity.",
+  "topic": "elec-factors-influencing-election-outcomes"
  },
  {
-  "id": "p68",
-  "question": "Which of the following is a Caribbean cooperative example?",
+  "id": "p45",
+  "question": "Which of the following is a civic responsibility?",
   "options": [
-   "Credit unions",
-   "National banks",
-   "Political parties",
-   "Airports"
+   "Voting in elections",
+   "Buying imported goods",
+   "Going on vacation",
+   "Watching television"
   ],
-  "answer": "Credit unions",
-  "explanation": "Credit unions are financial cooperatives.",
-  "topic": "ss-l6-2"
+  "answer": "Voting in elections",
+  "explanation": "Voting is a key civic duty in a democracy.",
+  "topic": "gov-citizens-government-and-the-constitution"
  },
  {
-  "id": "p69",
-  "question": "The Caribbean Examination Council (CXC) is an example of:",
+  "id": "p123",
+  "question": "Ante-natal care refers to the care a mother receives:",
   "options": [
-   "regional cooperation in education",
-   "a trade union",
-   "a political party",
-   "a central bank"
+   "Before the birth of the baby",
+   "After the birth of the baby",
+   "Only during labour",
+   "Only when the baby is ill"
   ],
-  "answer": "regional cooperation in education",
-  "explanation": "CXC coordinates regional examinations.",
-  "topic": "ss-l4-1"
- },
- {
-  "id": "p70",
-  "question": "Which of the following is a communication technology?",
-  "options": [
-   "The internet",
-   "Farming",
-   "Fishing",
-   "Mining"
-  ],
-  "answer": "The internet",
-  "explanation": "The internet enables global communication.",
-  "topic": "ss-l6-1"
- },
- {
-  "id": "p71",
-  "question": "The 'digital divide' describes:",
-  "options": [
-   "unequal access to technology",
-   "computer repairs",
-   "internet speed",
-   "online shopping"
-  ],
-  "answer": "unequal access to technology",
-  "explanation": "It separates those with and without ICT access.",
-  "topic": "ss-l6-1"
- },
- {
-  "id": "p72",
-  "question": "Which of the following is an advantage of ICT in education?",
-  "options": [
-   "Access to online resources",
-   "More homework",
-   "Expensive devices",
-   "Less learning"
-  ],
-  "answer": "Access to online resources",
-  "explanation": "ICT expands learning materials and methods.",
-  "topic": "ss-l6-1"
- },
- {
-  "id": "p73",
-  "question": "Globalisation refers to:",
-  "options": [
-   "increasing global interconnectedness",
-   "national isolation",
-   "fewer imports",
-   "local trade only"
-  ],
-  "answer": "increasing global interconnectedness",
-  "explanation": "Globalisation links economies, cultures and people worldwide.",
-  "topic": "ss-l4-2"
- },
- {
-  "id": "p74",
-  "question": "Which of the following is an effect of globalisation?",
-  "options": [
-   "Cultural exchange",
-   "No trade",
-   "Closed borders",
-   "Fewer goods"
-  ],
-  "answer": "Cultural exchange",
-  "explanation": "Globalisation spreads culture, goods and ideas.",
-  "topic": "ss-l4-2"
- },
- {
-  "id": "p75",
-  "question": "A 'multinational corporation' is a company that:",
-  "options": [
-   "operates in several countries",
-   "operates in one town",
-   "is state-owned",
-   "employs only locals"
-  ],
-  "answer": "operates in several countries",
-  "explanation": "Multinationals have operations across borders.",
-  "topic": "ss-l4-2"
- },
- {
-  "id": "p76",
-  "question": "Which of the following is an advantage of multinationals in the Caribbean?",
-  "options": [
-   "Job creation",
-   "Loss of culture always",
-   "Higher pollution",
-   "Profit outflow"
-  ],
-  "answer": "Job creation",
-  "explanation": "Multinationals create employment and transfer skills.",
-  "topic": "ss-l4-2"
- },
- {
-  "id": "p77",
-  "question": "Environmental conservation means:",
-  "options": [
-   "protecting natural resources",
-   "using resources wastefully",
-   "clearing forests",
-   "overfishing"
-  ],
-  "answer": "protecting natural resources",
-  "explanation": "Conservation manages resources sustainably.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p78",
-  "question": "Which of the following pollutes the environment?",
-  "options": [
-   "Burning of waste",
-   "Recycling",
-   "Composting",
-   "Solar power"
-  ],
-  "answer": "Burning of waste",
-  "explanation": "Burning waste releases harmful pollutants.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p79",
-  "question": "Reforestation is the:",
-  "options": [
-   "planting of trees in deforested areas",
-   "cutting of trees",
-   "building of dams",
-   "mining of land"
-  ],
-  "answer": "planting of trees in deforested areas",
-  "explanation": "Reforestation restores forest cover.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p80",
-  "question": "Which of the following is a renewable resource?",
-  "options": [
-   "Wind",
-   "Oil",
-   "Coal",
-   "Natural gas"
-  ],
-  "answer": "Wind",
-  "explanation": "Wind energy is naturally replenished.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p81",
-  "question": "Water pollution is mainly caused by:",
-  "options": [
-   "industrial waste and sewage",
-   "rainfall",
-   "wind",
-   "sunlight"
-  ],
-  "answer": "industrial waste and sewage",
-  "explanation": "Effluents and sewage contaminate water bodies.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p82",
-  "question": "Which of the following is a consequence of water pollution?",
-  "options": [
-   "Disease outbreaks",
-   "More fish",
-   "Clean beaches",
-   "Better health"
-  ],
-  "answer": "Disease outbreaks",
-  "explanation": "Polluted water spreads waterborne diseases.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p83",
-  "question": "The term 'infrastructure' refers to:",
-  "options": [
-   "basic facilities like roads, water and electricity",
-   "school uniforms",
-   "political parties",
-   "bank accounts"
-  ],
-  "answer": "basic facilities like roads, water and electricity",
-  "explanation": "Infrastructure underpins economic activity.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p84",
-  "question": "Which of the following is a type of infrastructure?",
-  "options": [
-   "Roads",
-   "Textbooks",
-   "Mobile phones",
-   "Fertiliser"
-  ],
-  "answer": "Roads",
-  "explanation": "Transport networks are physical infrastructure.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p85",
-  "question": "A 'budget' of a government is:",
-  "options": [
-   "a plan of revenue and expenditure",
-   "a law",
-   "a tax",
-   "a census"
-  ],
-  "answer": "a plan of revenue and expenditure",
-  "explanation": "Budgets allocate government income and spending.",
-  "topic": "ss-l3-1"
- },
- {
-  "id": "p86",
-  "question": "Which of the following is a source of government revenue?",
-  "options": [
-   "Taxes",
-   "Loans only",
-   "Exports only",
-   "Imports"
-  ],
-  "answer": "Taxes",
-  "explanation": "Taxes fund most government services.",
-  "topic": "ss-l3-1"
- },
- {
-  "id": "p87",
-  "question": "Direct taxes are those paid:",
-  "options": [
-   "directly on income and wealth",
-   "on goods at purchase",
-   "by importers only",
-   "by tourists only"
-  ],
-  "answer": "directly on income and wealth",
-  "explanation": "Income tax is a direct tax.",
-  "topic": "ss-l3-1"
- },
- {
-  "id": "p88",
-  "question": "Indirect taxes include:",
-  "options": [
-   "Value Added Tax (VAT)",
-   "Income tax",
-   "Property tax",
-   "Corporate tax"
-  ],
-  "answer": "Value Added Tax (VAT)",
-  "explanation": "VAT is charged on goods and services.",
-  "topic": "ss-l3-1"
- },
- {
-  "id": "p89",
-  "question": "The 'informal sector' refers to:",
-  "options": [
-   "economic activity not formally registered",
-   "government jobs",
-   "large factories",
-   "export industries"
-  ],
-  "answer": "economic activity not formally registered",
-  "explanation": "Informal work (e.g. street vending) is unregistered.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p90",
-  "question": "Which of the following is an example of the informal sector?",
-  "options": [
-   "Street vendor",
-   "Bank teller",
-   "Teacher",
-   "Civil servant"
-  ],
-  "answer": "Street vendor",
-  "explanation": "Street vending is typically informal.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p91",
-  "question": "Unemployment means:",
-  "options": [
-   "people able and willing to work but without jobs",
-   "people not in school",
-   "retired workers",
-   "tourists"
-  ],
-  "answer": "people able and willing to work but without jobs",
-  "explanation": "Unemployment excludes those not seeking work.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p92",
-  "question": "Which of the following reduces unemployment?",
-  "options": [
-   "Job training programmes",
-   "Closing businesses",
-   "Fewer schools",
-   "Higher taxes"
-  ],
-  "answer": "Job training programmes",
-  "explanation": "Training improves employability.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p93",
-  "question": "Poverty is best defined as:",
-  "options": [
-   "lack of basic needs like food and shelter",
-   "low income only",
-   "being unemployed",
-   "living in rural areas"
-  ],
-  "answer": "lack of basic needs like food and shelter",
-  "explanation": "Poverty is the inability to meet basic needs.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p94",
-  "question": "Which of the following is a cause of poverty?",
-  "options": [
-   "Low education levels",
-   "High wages",
-   "Good healthcare",
-   "Cheap food"
-  ],
-  "answer": "Low education levels",
-  "explanation": "Limited education limits earning opportunities.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p95",
-  "question": "A 'welfare state' provides:",
-  "options": [
-   "social services to citizens",
-   "only defence",
-   "only roads",
-   "no services"
-  ],
-  "answer": "social services to citizens",
-  "explanation": "Welfare states offer health, education and social security.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p96",
-  "question": "Which of the following is a social service?",
-  "options": [
-   "Healthcare",
-   "Roads",
-   "Ports",
-   "Airports"
-  ],
-  "answer": "Healthcare",
-  "explanation": "Health and education are social services.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "p97",
-  "question": "The role of the teacher in socialisation is to:",
-  "options": [
-   "transmit knowledge and values",
-   "make laws",
-   "collect taxes",
-   "judge criminals"
-  ],
-  "answer": "transmit knowledge and values",
-  "explanation": "Schools socialise children through curricula and values.",
-  "topic": "ss-l1-2"
+  "answer": "Before the birth of the baby",
+  "explanation": "Ante-natal (before birth) care monitors the health of the mother and the developing baby during pregnancy.",
+  "topic": "fam-preparation-for-parenthood"
  },
  {
   "id": "p98",
@@ -1271,7 +725,124 @@
   ],
   "answer": "shared values and pressure",
   "explanation": "Peers shape attitudes, styles and behaviours.",
+  "topic": "soc-social-group-interaction"
+ },
+ {
+  "id": "p5",
+  "question": "In a democratic election, a 'constituency' refers to:",
+  "options": [
+   "The total number of voters in a country",
+   "A specific geographic area that elects a representative",
+   "The building where parliament meets",
+   "The list of all political parties"
+  ],
+  "answer": "A specific geographic area that elects a representative",
+  "explanation": "Countries are divided into constituencies to ensure local representation in the national legislature.",
+  "topic": "elec-voter-participation"
+ },
+ {
+  "id": "p46",
+  "question": "'Rule of law' means:",
+  "options": [
+   "everyone is subject to the law",
+   "only citizens obey the law",
+   "police make laws",
+   "judges elect governments"
+  ],
+  "answer": "everyone is subject to the law",
+  "explanation": "The law applies equally to all, including leaders.",
+  "topic": "gov-essentials-of-good-governance"
+ },
+ {
+  "id": "p124",
+  "question": "When a parent migrates for work, a common effect on the children left behind is:",
+  "options": [
+   "Emotional stress from the separation",
+   "Immediate financial independence",
+   "Loss of citizenship",
+   "Automatic emigration"
+  ],
+  "answer": "Emotional stress from the separation",
+  "explanation": "Children separated from a migrating parent often experience loneliness and anxiety, even when remittances improve the household's income.",
+  "topic": "fam-social-issues-affecting-families"
+ },
+ {
+  "id": "p125",
+  "question": "The Maintenance Act requires parents to:",
+  "options": [
+   "Provide financial support for their children",
+   "Register their children for elections",
+   "Choose their children's careers",
+   "Pay for their children's passports"
+  ],
+  "answer": "Provide financial support for their children",
+  "explanation": "The Maintenance Act obliges parents to maintain (financially support) their children, even after separation.",
+  "topic": "fam-laws-protecting-the-family"
+ },
+ {
+  "id": "p21",
+  "question": "A 'common-law union' refers to:",
+  "options": [
+   "a couple living together without formal marriage",
+   "a legal partnership",
+   "a type of adoption",
+   "a church wedding"
+  ],
+  "answer": "a couple living together without formal marriage",
+  "explanation": "Common-law unions are informal but recognised living arrangements.",
+  "topic": "ss-l1-1"
+ },
+ {
+  "id": "p126",
+  "question": "Which feature most clearly distinguishes a primary group from a secondary group?",
+  "options": [
+   "The size of the group",
+   "The closeness of personal ties between members",
+   "How long the group has existed",
+   "Whether the group is formal or informal"
+  ],
+  "answer": "The closeness of personal ties between members",
+  "explanation": "Primary groups (like family and close friends) are defined by intimate, enduring relationships, while secondary groups are built around a purpose.",
   "topic": "ss-l2-1"
+ },
+ {
+  "id": "p38",
+  "question": "In a parliamentary democracy, the Head of Government is usually the:",
+  "options": [
+   "Prime Minister",
+   "President only",
+   "Chief Justice",
+   "Speaker"
+  ],
+  "answer": "Prime Minister",
+  "explanation": "The PM leads the government in parliamentary systems.",
+  "topic": "ss-l3-1"
+ },
+ {
+  "id": "p33",
+  "question": "Which of the following is an example of a regional institution?",
+  "options": [
+   "University of the West Indies",
+   "United Nations",
+   "World Bank",
+   "IMF"
+  ],
+  "answer": "University of the West Indies",
+  "explanation": "The UWI serves Caribbean tertiary education regionally.",
+  "topic": "ss-l4-1"
+ },
+ {
+  "id": "p54",
+  "question": "The birth rate is:",
+  "options": [
+   "the number of live births per 1,000 people per year",
+   "the number of babies in hospitals",
+   "the population growth",
+   "the death rate"
+  ],
+  "answer": "the number of live births per 1,000 people per year",
+  "explanation": "Crude birth rate measures births per 1,000 population.",
+  "topic": "ss-l5-1"
  },
  {
   "id": "p99",
@@ -1287,16 +858,445 @@
   "topic": "ss-l6-1"
  },
  {
-  "id": "p100",
-  "question": "Which of the following is an example of mass media?",
+  "id": "p127",
+  "question": "Why must campaign finance be accounted for?",
   "options": [
-   "Television",
-   "A diary",
-   "A letter",
-   "A phone call"
+   "To prevent corruption and keep the contest fair",
+   "To increase the number of candidates",
+   "To reduce voter turnout",
+   "To delay the election"
   ],
-  "answer": "Television",
-  "explanation": "Television reaches large audiences.",
-  "topic": "ss-l6-1"
+  "answer": "To prevent corruption and keep the contest fair",
+  "explanation": "Accounting for campaign money shows where funds came from and how they were spent, which limits bribery and unfair advantage.",
+  "topic": "elec-political-party-election-preparation"
+ },
+ {
+  "id": "p128",
+  "question": "The Charter of Fundamental Rights and Freedoms in Jamaica protects:",
+  "options": [
+   "The basic rights and freedoms of every person",
+   "Only the rights of ministers",
+   "The profits of businesses",
+   "The powers of the police"
+  ],
+  "answer": "The basic rights and freedoms of every person",
+  "explanation": "The Charter sets out the fundamental rights - life, liberty, expression, fair trial and others - that the state must respect.",
+  "topic": "gov-citizens-government-and-the-constitution"
+ },
+ {
+  "id": "p23",
+  "question": "The family's main economic function is to:",
+  "options": [
+   "provide for members' basic needs",
+   "create laws",
+   "educate the nation",
+   "collect taxes"
+  ],
+  "answer": "provide for members' basic needs",
+  "explanation": "The family provides food, shelter and other needs.",
+  "topic": "ss-l1-2"
+ },
+ {
+  "id": "p18",
+  "question": "Values in a society are:",
+  "options": [
+   "shared beliefs about what is important",
+   "taxes paid",
+   "types of housing",
+   "political parties"
+  ],
+  "answer": "shared beliefs about what is important",
+  "explanation": "Values are collective ideas about what is good and desirable.",
+  "topic": "ss-l2-2"
+ },
+ {
+  "id": "p75",
+  "question": "A 'multinational corporation' is a company that:",
+  "options": [
+   "operates in several countries",
+   "operates in one town",
+   "is state-owned",
+   "employs only locals"
+  ],
+  "answer": "operates in several countries",
+  "explanation": "Multinationals have operations across borders.",
+  "topic": "ss-l4-2"
+ },
+ {
+  "id": "p67",
+  "question": "A 'cooperative' is a business:",
+  "options": [
+   "owned and run by its members",
+   "owned by the state",
+   "owned by shareholders only",
+   "run by the government"
+  ],
+  "answer": "owned and run by its members",
+  "explanation": "Cooperatives are member-owned and democratically run.",
+  "topic": "ss-l6-2"
+ },
+ {
+  "id": "p129",
+  "question": "The media can influence an election outcome by:",
+  "options": [
+   "Shaping how voters see the candidates and issues",
+   "Counting the ballots",
+   "Registering the voters",
+   "Setting the polling stations"
+  ],
+  "answer": "Shaping how voters see the candidates and issues",
+  "explanation": "By choosing which stories to cover and how, the media helps form voters' impressions of the contest.",
+  "topic": "elec-factors-influencing-election-outcomes"
+ },
+ {
+  "id": "p130",
+  "question": "Transparency in government means:",
+  "options": [
+   "Decisions and the reasons for them are open to public scrutiny",
+   "Decisions are kept secret from the public",
+   "Only ministers may see the accounts",
+   "Information is released only after an election"
+  ],
+  "answer": "Decisions and the reasons for them are open to public scrutiny",
+  "explanation": "Transparency lets citizens see why a decision was made and what it cost, which deters abuse.",
+  "topic": "gov-essentials-of-good-governance"
+ },
+ {
+  "id": "p131",
+  "question": "Which of the following is an example of family planning?",
+  "options": [
+   "Choosing when and how many children to have",
+   "Deciding where to build a house",
+   "Planning a family vacation",
+   "Choosing a school for a child"
+  ],
+  "answer": "Choosing when and how many children to have",
+  "explanation": "Family planning lets a couple decide the timing and size of their family, using contraception and spacing.",
+  "topic": "fam-preparation-for-parenthood"
+ },
+ {
+  "id": "p132",
+  "question": "Cooperation between social groups is best shown when groups:",
+  "options": [
+   "Work together toward a shared goal",
+   "Refuse to speak to one another",
+   "Compete for the same scarce resource",
+   "Ignore each other's needs"
+  ],
+  "answer": "Work together toward a shared goal",
+  "explanation": "Cooperation is interaction in which groups combine their efforts to achieve something none could achieve alone.",
+  "topic": "soc-social-group-interaction"
+ },
+ {
+  "id": "p40",
+  "question": "A 'constituency' is:",
+  "options": [
+   "an electoral area that elects a representative",
+   "a political party",
+   "a government department",
+   "a court"
+  ],
+  "answer": "an electoral area that elects a representative",
+  "explanation": "Constituencies elect members of parliament.",
+  "topic": "elec-voter-participation"
+ },
+ {
+  "id": "p133",
+  "question": "An authoritative parenting style is best described as:",
+  "options": [
+   "Warm and responsive but firm, with clear rules and reasons",
+   "Harsh and demanding with little warmth",
+   "Loving but with no rules or limits",
+   "Uninvolved and indifferent"
+  ],
+  "answer": "Warm and responsive but firm, with clear rules and reasons",
+  "explanation": "Authoritative parents set clear expectations but explain them and respond to the child's needs, which supports healthy development.",
+  "topic": "fam-effective-parenting"
+ },
+ {
+  "id": "p39",
+  "question": "The electoral system in most Caribbean countries is:",
+  "options": [
+   "first-past-the-post",
+   "proportional representation only",
+   "dictatorship",
+   "hereditary succession"
+  ],
+  "answer": "first-past-the-post",
+  "explanation": "Candidates with the most votes in each constituency win.",
+  "topic": "elec-interpreting-election-data"
+ },
+ {
+  "id": "p134",
+  "question": "A family member seeking help with a domestic violence matter can turn to:",
+  "options": [
+   "The Family Court",
+   "The central bank",
+   "The customs department",
+   "The electoral office"
+  ],
+  "answer": "The Family Court",
+  "explanation": "The Family Court hears family matters, including applications for protection and maintenance orders.",
+  "topic": "fam-laws-protecting-the-family"
+ },
+ {
+  "id": "p97",
+  "question": "The role of the teacher in socialisation is to:",
+  "options": [
+   "transmit knowledge and values",
+   "make laws",
+   "collect taxes",
+   "judge criminals"
+  ],
+  "answer": "transmit knowledge and values",
+  "explanation": "Schools socialise children through curricula and values.",
+  "topic": "ss-l1-2"
+ },
+ {
+  "id": "p22",
+  "question": "Which institution is responsible for formal education?",
+  "options": [
+   "School",
+   "The media",
+   "Peer groups",
+   "Workplace"
+  ],
+  "answer": "School",
+  "explanation": "Schools provide formal education.",
+  "topic": "ss-l2-2"
+ },
+ {
+  "id": "p41",
+  "question": "The opposition in Parliament:",
+  "options": [
+   "monitors and challenges the government",
+   "passes all laws",
+   "appoints judges",
+   "controls the civil service"
+  ],
+  "answer": "monitors and challenges the government",
+  "explanation": "The opposition scrutinises government actions.",
+  "topic": "ss-l3-1"
+ },
+ {
+  "id": "p76",
+  "question": "Which of the following is an advantage of multinationals in the Caribbean?",
+  "options": [
+   "Job creation",
+   "Loss of culture always",
+   "Higher pollution",
+   "Profit outflow"
+  ],
+  "answer": "Job creation",
+  "explanation": "Multinationals create employment and transfer skills.",
+  "topic": "ss-l4-2"
+ },
+ {
+  "id": "p56",
+  "question": "The 'dependency ratio' compares:",
+  "options": [
+   "dependents to the working-age population",
+   "births to deaths",
+   "men to women",
+   "urban to rural population"
+  ],
+  "answer": "dependents to the working-age population",
+  "explanation": "It measures the burden on the productive population.",
+  "topic": "ss-l5-1"
+ },
+ {
+  "id": "p68",
+  "question": "Which of the following is a Caribbean cooperative example?",
+  "options": [
+   "Credit unions",
+   "National banks",
+   "Political parties",
+   "Airports"
+  ],
+  "answer": "Credit unions",
+  "explanation": "Credit unions are financial cooperatives.",
+  "topic": "ss-l6-2"
+ },
+ {
+  "id": "p135",
+  "question": "Culture is best defined as:",
+  "options": [
+   "The shared way of life of a group of people",
+   "A person's income and savings",
+   "The physical geography of a country",
+   "A set of laws passed by parliament"
+  ],
+  "answer": "The shared way of life of a group of people",
+  "explanation": "Culture is the whole way of life of a group - its language, beliefs, customs, food, music and values.",
+  "topic": "cult-caribbean-cultural-diversity"
+ },
+ {
+  "id": "p136",
+  "question": "Voter apathy refers to:",
+  "options": [
+   "A lack of interest in voting or politics",
+   "A strong desire to vote",
+   "Compulsory voting laws",
+   "A high turnout at the polls"
+  ],
+  "answer": "A lack of interest in voting or politics",
+  "explanation": "Apathy is the indifference that keeps people away from the polls and lowers turnout.",
+  "topic": "elec-factors-influencing-election-outcomes"
+ },
+ {
+  "id": "p34",
+  "question": "A constitution is:",
+  "options": [
+   "the supreme law that sets out how a country is governed",
+   "a political party",
+   "a trade agreement",
+   "a census"
+  ],
+  "answer": "the supreme law that sets out how a country is governed",
+  "explanation": "The constitution establishes the framework of government.",
+  "topic": "gov-citizens-government-and-the-constitution"
+ },
+ {
+  "id": "p137",
+  "question": "Financial readiness for parenthood means a household:",
+  "options": [
+   "Can meet the child's needs for food, clothing, shelter and care",
+   "Owns a large house",
+   "Has at least two incomes",
+   "Can afford private education only"
+  ],
+  "answer": "Can meet the child's needs for food, clothing, shelter and care",
+  "explanation": "Being financially ready means the household can provide the basic material needs a child brings with it.",
+  "topic": "fam-preparation-for-parenthood"
+ },
+ {
+  "id": "p138",
+  "question": "The term 'in-group' refers to a group:",
+  "options": [
+   "To which a person feels they belong",
+   "That a person rejects",
+   "That has no members",
+   "That only exists on paper"
+  ],
+  "answer": "To which a person feels they belong",
+  "explanation": "An in-group is the group a person identifies with ('us'), as opposed to the out-group ('them').",
+  "topic": "soc-social-group-interaction"
+ },
+ {
+  "id": "p6",
+  "question": "Which branch of government is responsible for interpreting and applying the laws?",
+  "options": [
+   "Legislative",
+   "Executive",
+   "Judiciary",
+   "Administrative"
+  ],
+  "answer": "Judiciary",
+  "explanation": "The judiciary (the courts) ensures that laws are followed and interpreted correctly and fairly.",
+  "topic": "ss-l3-2"
+ },
+ {
+  "id": "p10",
+  "question": "Which of the following is considered a 'push factor' for migration?",
+  "options": [
+   "Better job opportunities abroad",
+   "High crime rates in the home country",
+   "Quality healthcare in a new city",
+   "Political stability in a neighbouring state"
+  ],
+  "answer": "High crime rates in the home country",
+  "explanation": "Push factors are negative conditions that drive people away from their current location.",
+  "topic": "ss-l5-2"
+ },
+ {
+  "id": "p42",
+  "question": "Universal adult suffrage means:",
+  "options": [
+   "all adult citizens can vote",
+   "only property owners vote",
+   "men only vote",
+   "the government chooses voters"
+  ],
+  "answer": "all adult citizens can vote",
+  "explanation": "Every adult citizen has the right to vote.",
+  "topic": "elec-voter-participation"
+ },
+ {
+  "id": "p139",
+  "question": "Accountability means public officials must:",
+  "options": [
+   "Answer for how they use public power and money",
+   "Keep their work secret",
+   "Avoid being questioned",
+   "Hold office for life"
+  ],
+  "answer": "Answer for how they use public power and money",
+  "explanation": "Accountable officials report, face audit and can be removed - bodies like the Auditor General exist to do this.",
+  "topic": "gov-essentials-of-good-governance"
+ },
+ {
+  "id": "p140",
+  "question": "Which parenting style combines high expectations with warmth and responsiveness?",
+  "options": [
+   "Authoritarian",
+   "Authoritative",
+   "Permissive",
+   "Neglectful"
+  ],
+  "answer": "Authoritative",
+  "explanation": "The authoritative style balances firm limits with warmth and open communication.",
+  "topic": "fam-effective-parenting"
+ },
+ {
+  "id": "p141",
+  "question": "A party wins 40% of the votes but 55% of the seats. This shows that:",
+  "options": [
+   "Under first-past-the-post, a party's share of seats can differ from its share of votes",
+   "The votes were counted twice",
+   "The party cheated",
+   "Seats always equal votes"
+  ],
+  "answer": "Under first-past-the-post, a party's share of seats can differ from its share of votes",
+  "explanation": "First-past-the-post awards each seat to the constituency winner, so a party's national seat share need not match its vote share.",
+  "topic": "elec-interpreting-election-data"
+ },
+ {
+  "id": "p142",
+  "question": "Corruption is the opposite of good governance because it:",
+  "options": [
+   "Breaks every principle of good governance at once",
+   "Increases public revenue",
+   "Speeds up government decisions",
+   "Protects the public interest"
+  ],
+  "answer": "Breaks every principle of good governance at once",
+  "explanation": "Bribery and theft of public funds violate participation, rule of law, transparency and accountability together.",
+  "topic": "gov-essentials-of-good-governance"
+ },
+ {
+  "id": "p143",
+  "question": "Which of the following is a social issue that affects Caribbean families?",
+  "options": [
+   "Domestic violence",
+   "Excessive rainfall",
+   "Road construction",
+   "Currency exchange"
+  ],
+  "answer": "Domestic violence",
+  "explanation": "Domestic violence is a social problem that harms family members and threatens the stability of the home.",
+  "topic": "fam-social-issues-affecting-families"
+ },
+ {
+  "id": "p144",
+  "question": "The Status of Children Act deals with:",
+  "options": [
+   "Removing the legal difference between children born in and out of marriage",
+   "Setting the school leaving age",
+   "Regulating child employment",
+   "Issuing birth certificates"
+  ],
+  "answer": "Removing the legal difference between children born in and out of marriage",
+  "explanation": "The Act removed the old distinction between 'legitimate' and 'illegitimate' children so all children enjoy equal status.",
+  "topic": "fam-laws-protecting-the-family"
  }
 ]

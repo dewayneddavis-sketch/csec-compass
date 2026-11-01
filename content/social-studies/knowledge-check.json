@@ -26,6 +26,45 @@
   "topic": "ss-l1-2"
  },
  {
+  "id": "q26",
+  "question": "Which of the following best describes ante-natal care?",
+  "options": [
+   "Care given to a mother during pregnancy",
+   "Care given to a child starting school",
+   "Care given after retirement",
+   "Care given only to newborns"
+  ],
+  "answer": "Care given to a mother during pregnancy",
+  "explanation": "Ante-natal care is the medical and advisory care a mother receives during pregnancy, before the birth.",
+  "topic": "fam-preparation-for-parenthood"
+ },
+ {
+  "id": "q27",
+  "question": "Which parenting style combines warmth with firm, clear limits?",
+  "options": [
+   "Authoritative",
+   "Authoritarian",
+   "Permissive",
+   "Neglectful"
+  ],
+  "answer": "Authoritative",
+  "explanation": "Authoritative parents are warm and responsive while still setting and enforcing clear, explained rules.",
+  "topic": "fam-effective-parenting"
+ },
+ {
+  "id": "q28",
+  "question": "Which Jamaican law makes a child's welfare the first consideration in decisions about them?",
+  "options": [
+   "The Child Care and Protection Act",
+   "The Road Traffic Act",
+   "The Income Tax Act",
+   "The Companies Act"
+  ],
+  "answer": "The Child Care and Protection Act",
+  "explanation": "The Child Care and Protection Act requires that the best interests of the child come first in any decision affecting them.",
+  "topic": "fam-laws-protecting-the-family"
+ },
+ {
   "id": "q3",
   "question": "A group of friends who meet regularly for social activities is an example of a:",
   "options": [
@@ -50,6 +89,19 @@
   "answer": "Religion",
   "explanation": "Religion provides spiritual guidance, moral frameworks, and a sense of community for many people.",
   "topic": "ss-l2-2"
+ },
+ {
+  "id": "q29",
+  "question": "Cooperation, competition and conflict are all forms of:",
+  "options": [
+   "Social group interaction",
+   "Population growth",
+   "Regional trade",
+   "Constitutional law"
+  ],
+  "answer": "Social group interaction",
+  "explanation": "These are the main ways social groups relate to one another - working together, competing, or clashing.",
+  "topic": "soc-social-group-interaction"
  },
  {
   "id": "q5",
@@ -104,6 +156,19 @@
   "topic": "ss-l4-1"
  },
  {
+  "id": "q30",
+  "question": "Which of the following is a benefit of regional integration for Caribbean states?",
+  "options": [
+   "A larger market for their goods and services",
+   "Fewer trading partners",
+   "Higher tariffs between members",
+   "Reduced cooperation on health"
+  ],
+  "answer": "A larger market for their goods and services",
+  "explanation": "Integration gives firms access to a bigger regional market, which can lower costs and attract investment.",
+  "topic": "ss-l4-2"
+ },
+ {
   "id": "q9",
   "question": "The number of live births per 1,000 people in a population per year is called the:",
   "options": [
@@ -130,19 +195,6 @@
   "topic": "ss-l5-2"
  },
  {
-  "id": "q11",
-  "question": "When a person moves from a rural area to a city within the same country, it is called:",
-  "options": [
-   "External Migration",
-   "Internal Migration",
-   "Emigration",
-   "Immigration"
-  ],
-  "answer": "Internal Migration",
-  "explanation": "Internal migration is the movement of people from one place to another within the same country.",
-  "topic": "ss-l5-2"
- },
- {
   "id": "q12",
   "question": "The gap between those who have access to modern information technology and those who do not is known as the:",
   "options": [
@@ -153,6 +205,19 @@
   ],
   "answer": "Digital Divide",
   "explanation": "The digital divide refers to the economic and social inequality regarding access to, use of, or impact of ICT.",
+  "topic": "ss-l6-1"
+ },
+ {
+  "id": "q15",
+  "question": "Which of these is a form of non-verbal communication?",
+  "options": [
+   "A radio broadcast",
+   "A text message",
+   "Body language",
+   "A phone call"
+  ],
+  "answer": "Body language",
+  "explanation": "Non-verbal communication includes gestures, facial expressions, and body language.",
   "topic": "ss-l6-1"
  },
  {
@@ -169,121 +234,30 @@
   "topic": "ss-l6-2"
  },
  {
-  "id": "q14",
-  "question": "What is the primary purpose of a budget?",
+  "id": "q31",
+  "question": "Which consumer right requires that goods be safe and fit for the purpose they are sold for?",
   "options": [
-   "To spend as much money as possible",
-   "To track income and plan expenses",
-   "To borrow money from the bank",
-   "To avoid paying taxes"
+   "The Right to Safety",
+   "The Right to Redress",
+   "The Right to Choose",
+   "The Right to Information"
   ],
-  "answer": "To track income and plan expenses",
-  "explanation": "A budget is a financial plan that helps individuals or organisations manage their money effectively.",
-  "topic": "ss-l3-1"
+  "answer": "The Right to Safety",
+  "explanation": "The right to safety protects consumers from goods that are dangerous or unfit for their intended use.",
+  "topic": "ss-l6-2"
  },
  {
-  "id": "q15",
-  "question": "Which of these is a form of non-verbal communication?",
+  "id": "q32",
+  "question": "Creolisation is best described as:",
   "options": [
-   "A radio broadcast",
-   "A text message",
-   "Body language",
-   "A phone call"
+   "The blending of different cultures to form something new",
+   "The separation of ethnic groups",
+   "The loss of all cultural traditions",
+   "The return of migrants to their homeland"
   ],
-  "answer": "Body language",
-  "explanation": "Non-verbal communication includes gestures, facial expressions, and body language.",
-  "topic": "ss-l6-1"
- },
- {
-  "id": "q16",
-  "question": "Which of these is a function of the government in a country?",
-  "options": [
-   "Choosing what people wear",
-   "Providing public services like education and healthcare",
-   "Telling people who to marry",
-   "Making sure everyone has the same car"
-  ],
-  "answer": "Providing public services like education and healthcare",
-  "explanation": "Governments are responsible for infrastructure and social services.",
-  "topic": "ss-l3-1"
- },
- {
-  "id": "q17",
-  "question": "What is 'Urbanisation'?",
-  "options": [
-   "The growth of forests",
-   "The movement of people from rural areas to cities",
-   "The decrease in population",
-   "The building of more farms"
-  ],
-  "answer": "The movement of people from rural areas to cities",
-  "explanation": "It leads to the expansion of urban centres.",
-  "topic": "ss-l5-1"
- },
- {
-  "id": "q18",
-  "question": "Which regional organisation was formed to promote economic integration among Caribbean nations?",
-  "options": [
-   "UN",
-   "CARICOM",
-   "OAS",
-   "WHO"
-  ],
-  "answer": "CARICOM",
-  "explanation": "The Caribbean Community (CARICOM) promotes cooperation and trade in the region.",
-  "topic": "ss-l4-1"
- },
- {
-  "id": "q19",
-  "question": "What is the main cause of 'Brain Drain' in the Caribbean?",
-  "options": [
-   "Too much education",
-   "Migration of skilled professionals to other countries",
-   "Not enough schools",
-   "People forgetting what they learned"
-  ],
-  "answer": "Migration of skilled professionals to other countries",
-  "explanation": "Skilled workers leave for better opportunities abroad.",
-  "topic": "ss-l5-2"
- },
- {
-  "id": "q20",
-  "question": "Which of these is a primary source of information for a historian?",
-  "options": [
-   "A history textbook",
-   "An original diary from the time period",
-   "A movie about the event",
-   "A Wikipedia article"
-  ],
-  "answer": "An original diary from the time period",
-  "explanation": "Primary sources are first-hand accounts of events.",
-  "topic": "ss-l6-1"
- },
- {
-  "id": "q21",
-  "question": "What is a 'Constitutional Monarchy'?",
-  "options": [
-   "A system where the King has absolute power",
-   "A system where a Monarch is the head of state but follows a constitution",
-   "A system without a leader",
-   "A system where religious leaders rule"
-  ],
-  "answer": "A system where a Monarch is the head of state but follows a constitution",
-  "explanation": "Many Caribbean countries have this system with the British Monarch as the symbolic head.",
-  "topic": "ss-l3-1"
- },
- {
-  "id": "q22",
-  "question": "The 'push factor' in migration refers to?",
-  "options": [
-   "Something that attracts you to a new country",
-   "Something that makes you want to leave your current country",
-   "A law that prevents moving",
-   "The cost of travel"
-  ],
-  "answer": "Something that makes you want to leave your current country",
-  "explanation": "Factors like lack of jobs or war push people away.",
-  "topic": "ss-l5-2"
+  "answer": "The blending of different cultures to form something new",
+  "explanation": "Creolisation mixes African, European, Asian and indigenous influences into new Caribbean cultural forms.",
+  "topic": "cult-caribbean-cultural-diversity"
  },
  {
   "id": "q23",
@@ -296,32 +270,58 @@
   ],
   "answer": "A direct vote by the people on a specific proposal or issue",
   "explanation": "It allows citizens to express their opinion on important matters.",
-  "topic": "ss-l3-1"
+  "topic": "elec-voter-participation"
  },
  {
-  "id": "q24",
-  "question": "Which of these is a non-renewable resource?",
+  "id": "q21",
+  "question": "What is a 'Constitutional Monarchy'?",
   "options": [
-   "Solar energy",
-   "Wind",
-   "Petroleum (Oil)",
-   "Timber"
+   "A system where the King has absolute power",
+   "A system where a Monarch is the head of state but follows a constitution",
+   "A system without a leader",
+   "A system where religious leaders rule"
   ],
-  "answer": "Petroleum (Oil)",
-  "explanation": "Fossil fuels take millions of years to form and cannot be replaced once used.",
-  "topic": "ss-l5-1"
+  "answer": "A system where a Monarch is the head of state but follows a constitution",
+  "explanation": "Many Caribbean countries have this system with the British Monarch as the symbolic head.",
+  "topic": "gov-citizens-government-and-the-constitution"
  },
  {
-  "id": "q25",
-  "question": "'Socialisation' is the process of?",
+  "id": "q16",
+  "question": "Which of these is a function of the government in a country?",
   "options": [
-   "Learning the rules and values of one's society",
-   "Moving to a new neighbourhood",
-   "Voting in an election",
-   "Starting a business"
+   "Choosing what people wear",
+   "Providing public services like education and healthcare",
+   "Telling people who to marry",
+   "Making sure everyone has the same car"
   ],
-  "answer": "Learning the rules and values of one's society",
-  "explanation": "It begins in childhood through family and school.",
-  "topic": "ss-l1-2"
+  "answer": "Providing public services like education and healthcare",
+  "explanation": "Governments are responsible for infrastructure and social services.",
+  "topic": "gov-essentials-of-good-governance"
+ },
+ {
+  "id": "q33",
+  "question": "Turnout is measured as the percentage of:",
+  "options": [
+   "Registered voters who actually cast a ballot",
+   "Candidates who won a seat",
+   "Parties that contested the election",
+   "Polling stations that opened"
+  ],
+  "answer": "Registered voters who actually cast a ballot",
+  "explanation": "Turnout = (votes cast / registered voters) x 100; it shows how many electors took part.",
+  "topic": "elec-interpreting-election-data"
+ },
+ {
+  "id": "q34",
+  "question": "Which of the following is most likely to make a seat 'marginal'?",
+  "options": [
+   "A small winning margin at the previous election",
+   "A very large winning margin",
+   "No candidates contesting",
+   "No registered voters"
+  ],
+  "answer": "A small winning margin at the previous election",
+  "explanation": "A marginal seat was won narrowly, so a small swing could hand it to another party at the next election.",
+  "topic": "elec-factors-influencing-election-outcomes"
  }
 ]
