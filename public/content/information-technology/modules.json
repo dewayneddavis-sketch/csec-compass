@@ -369,15 +369,25 @@
             {
                 "id": "it-l4-1",
                 "title": "Network Types & Topologies",
-                "content": "A computer network is a group of two or more computers connected together to share resources like files, printers, and internet access. Networks are classified by their geographic size: Local Area Network (LAN) covers a small area like a home or school; Metropolitan Area Network (MAN) covers a city; and Wide Area Network (WAN) covers a country or the entire world (like the Internet).\n\nNetwork topology refers to the physical or logical arrangement of devices on a network. Common topologies include Star (all devices connected to a central hub or switch), Bus (all devices connected to a single main cable), and Ring (devices connected in a circular loop). Networks can also be classified as Client-Server (where central servers provide services to client computers) or Peer-to-Peer (where all computers have equal status).\n\nYou will learn about the hardware needed for networking, such as routers, switches, network interface cards (NICs), and various types of cables (like fibre-optic or twisted-pair). Wireless networking (Wi-Fi) and the importance of network protocols are also key topics in the CSEC IT exam.",
+                "content": "A computer network is a group of two or more computers connected together to share resources like files, printers, and internet access. Networks are classified by their geographic size: Local Area Network (LAN) covers a small area like a home or school; Metropolitan Area Network (MAN) covers a city; and Wide Area Network (WAN) covers a country or the entire world (like the Internet).\n\nNetwork topology refers to the physical or logical arrangement of devices on a network. Common topologies include Star (all devices connected to a central hub or switch), Bus (all devices connected to a single main cable), and Ring (devices connected in a circular loop). Networks can also be classified as Client-Server (where central servers provide services to client computers) or Peer-to-Peer (where all computers have equal status).\n\nYou will learn about the hardware needed for networking, such as routers, switches, network interface cards (NICs), and various types of cables (like fibre-optic or twisted-pair). Wireless networking (Wi-Fi) and the importance of network protocols are also key topics in the CSEC IT exam.\n\nNetwork Types and Wireless Technologies is the second half of the classification, because a network is also named by the medium it uses and by who may join it. A wired network uses cable: twisted-pair copper for short runs inside a building, coaxial cable where one line carries many channels, and fibre-optic cable where light travels down glass for long distances and high speeds. A wireless network carries the signal through the air: Wi-Fi covers a room or a campus and connects a device to a local access point, Bluetooth links two devices a few metres apart such as a phone and a headset, mobile data uses the cellular network, and satellite reaches places no cable can. A network is also classified by ownership and reach: an intranet is private to one organisation, an extranet is opened to named outside partners, and the internet is the public network of networks. The rules that let these different media talk to each other are the network protocols, and TCP/IP is the family the internet runs on.\n\nNetwork Components and Functions are the parts you can point at, and each one has a single job. A network interface card gives a device its connection to the medium and its own hardware address. The cable or the wireless access point is the medium itself. A switch connects devices inside one network and forwards a frame only to the port the destination address sits on, while a hub does the same job without that intelligence, so it repeats every frame to every port and is now obsolete. A router joins two different networks and chooses the path between them, which is how a school network reaches the internet. A modem converts between the signal the local line carries and the signal the network uses. A firewall sits at the boundary and decides which traffic may pass. On the software side a protocol is the agreed set of rules, an IP address is the logical address of a device on a network, and a domain name is the readable name that is translated into one. The function of the whole set is unchanged: move data from one device to another, reliably and by the shortest sensible path.",
                 "objectives": [
                     "Differentiate between LAN, WAN, and MAN",
-                    "Identify network topologies"
+                    "Identify network topologies",
+                    "Classify a network by its medium, its ownership and its reach",
+                    "Name the function of each network component"
                 ],
                 "concepts": [
                     "Star, Bus, Ring Topologies",
                     "Client-Server vs Peer-to-Peer",
-                    "Wireless Networking"
+                    "Wireless Networking",
+                    "Fibre-Optic Cable",
+                    "Wireless Access Point",
+                    "Intranet and Extranet",
+                    "TCP/IP",
+                    "Switch and Hub",
+                    "Router",
+                    "Network Interface Card",
+                    "Firewall"
                 ],
                 "experiment": {
                     "type": "network-topology",
@@ -387,20 +397,83 @@
             {
                 "id": "it-l4-2",
                 "title": "Internet Security & Ethics",
-                "content": "As we become more connected, internet security and ethics become increasingly important. Security threats include malware (viruses, worms, trojans), phishing (deceptive emails to steal information), and hacking (unauthorised access to a system). Protection methods include using strong passwords, firewalls (which monitor network traffic), encryption (scrambling data), and antivirus software.\n\nIT ethics refers to the responsible and legal use of technology. This includes respecting intellectual property rights (avoiding software piracy and plagiarism) and following acceptable use policies. Data privacy is also a major ethical concern \u2014 organisations must protect the personal information they collect from users and comply with data protection laws.\n\nCSEC IT students must understand these threats and the measures taken to mitigate them. You will also discuss the social and ethical implications of IT, such as the 'digital divide' and the impact of technology on employment and privacy. Being a responsible digital citizen means using technology in a way that is safe, legal, and ethical.",
+                "content": "As we become more connected, internet security and ethics become increasingly important. Security threats include malware (viruses, worms, trojans), phishing (deceptive emails to steal information), and hacking (unauthorised access to a system). Protection methods include using strong passwords, firewalls (which monitor network traffic), encryption (scrambling data), and antivirus software.\n\nIT ethics refers to the responsible and legal use of technology. This includes respecting intellectual property rights (avoiding software piracy and plagiarism) and following acceptable use policies. Data privacy is also a major ethical concern \u2014 organisations must protect the personal information they collect from users and comply with data protection laws.\n\nCSEC IT students must understand these threats and the measures taken to mitigate them. You will also discuss the social and ethical implications of IT, such as the 'digital divide' and the impact of technology on employment and privacy. Being a responsible digital citizen means using technology in a way that is safe, legal, and ethical.\n\nComputer Security and Misuse Concepts are the vocabulary the rest of this section depends on, so learn each term by the thing it attacks or the thing it protects. A threat is anything that could cause harm. A vulnerability is the weakness a threat exploits: an unpatched program, a weak password, a misconfigured server, a careless user. A risk is the chance that a threat meets a vulnerability, together with what that meeting would cost. Malware is the general name for hostile software, and its families are distinct: a virus attaches itself to a file and spreads when the file runs, a worm spreads by itself across a network, a trojan arrives disguised as something useful, spyware watches and reports, ransomware encrypts files and demands payment, and a keylogger records what is typed. A denial-of-service attack floods a service until real users cannot reach it. Social engineering attacks the person rather than the machine, and phishing, pharming and pretexting are its forms. Misuse also covers the insider: an employee who reads records they have no business reading, or who copies a customer list on the way out.\n\nThe Impact of Computer Systems Misuse is measured in three currencies: money, time and trust. Money leaves through fraud, through ransomware payments, through the cost of repair and through the sales lost while a system is down. Time is lost to recovery, to rebuilding data that was never backed up, and to staff who cannot work. Trust is the slowest to return: a bank whose customer records leak loses accounts, a school whose results are altered loses the confidence of parents, and a business that cannot protect a customer list finds that customers stop supplying one. The impact reaches past the organisation. A hospital whose records are encrypted can postpone treatment. A utility whose control system is attacked can cut power to a district. Personal data lost in a breach can be used for identity theft years later, which is why a breach is never only a technical event.\n\nCountermeasures and Security Practices are the controls you put in place before anything goes wrong, and they work in layers so that one failure does not become a breach. Physical controls lock the room and the machine. Authentication controls prove who is asking: a strong password, two-factor authentication, and the rule that every user has their own account and no shared administrator login. Authorisation controls decide what a proven user may reach, and the principle of least privilege gives each person the smallest access the job needs. Technical controls include a firewall at the boundary, antivirus and anti-malware that are kept updated, encryption of stored and transmitted data, and patching on a schedule. Procedural controls are the habits and the paperwork: regular tested backups kept off the main network, an acceptable use policy that staff sign, training that includes how to recognise a phishing message, and a written plan for what to do when a breach happens. Monitoring is the last layer, because a control that nobody checks has a way of quietly stopping.",
                 "objectives": [
                     "Identify security threats and protection methods",
-                    "Understand ethical IT use"
+                    "Understand ethical IT use",
+                    "Tell a threat, a vulnerability and a risk apart",
+                    "Explain how misuse costs money, time and trust",
+                    "Choose a countermeasure for a given weakness"
                 ],
                 "concepts": [
                     "Firewalls",
                     "Encryption",
                     "Phishing",
-                    "Copyright/Piracy"
+                    "Copyright/Piracy",
+                    "Malware Families",
+                    "Vulnerability",
+                    "Risk",
+                    "Denial of Service",
+                    "Social Engineering",
+                    "Least Privilege",
+                    "Two-Factor Authentication",
+                    "Tested Backup"
                 ],
                 "experiment": {
                     "type": "simulation",
                     "description": "Security Auditor: Review a series of simulated network configurations and emails to identify and fix security vulnerabilities."
+                }
+            },
+            {
+                "id": "net-mobile-communication-importance",
+                "title": "Mobile Communication Importance",
+                "content": "Mobile Communication Importance is best understood by looking at what a phone replaced. Before mobile networks, reaching a person meant reaching a place: a fixed telephone rang on a desk or in a hallway, and if nobody was there the call was wasted. A mobile network breaks that link between the person and the place, because the handset registers with whichever cell is nearest and the network forwards the call there. The result is that a person stays reachable while moving, which is the whole point of the technology.\n\nA mobile network divides an area into cells, and each cell is served by a base station. As a user travels, the network hands the call from one cell to the next without dropping it. Early networks carried voice only; later generations added text, then data, and one modern handset now uses the same network for calls, messages, maps, payments and schoolwork.\n\nThe importance for Caribbean life is practical rather than abstract. In a country where many households never had a fixed line installed, the mobile phone is the first and sometimes the only telephone. A farmer checks market prices before deciding when to sell, a taxi driver takes bookings, a small shop confirms stock, and a student downloads notes. Mobile money lets a person with no bank branch nearby send and receive a payment. An emergency call reaches the services from a road with no building in sight.\n\nMobile communication also has costs, and an answer that names only the benefits is half an answer. Coverage is uneven between town and country, and a signal is weaker in a valley or inside thick walls. Data plans can be expensive relative to income, so a family may share one device. A network that carries everything is a single point of failure when it goes down, and every call leaves a record that raises a privacy question. None of this removes the benefit; it means the importance is highest exactly where a fixed network was never built.\n\nFor the exam, be able to name the benefits, the costs, and the way a cellular network is organised into cells with a handover between base stations.",
+                "objectives": [
+                    "Explain why mobile communication changed who can be reached and where",
+                    "Describe how a cellular network is organised into cells and base stations",
+                    "State the benefits and the costs of mobile communication in the Caribbean",
+                    "Give examples of mobile communication used for work, money and study"
+                ],
+                "concepts": [
+                    "Cell",
+                    "Base Station",
+                    "Handover",
+                    "Coverage",
+                    "Data Plan",
+                    "Mobile Money",
+                    "Emergency Call",
+                    "Privacy"
+                ],
+                "experiment": {
+                    "type": "map-explorer",
+                    "description": "Coverage Planner: place four base stations across a map of a town and the hills behind it, then trace a call as it hands over from one cell to the next."
+                }
+            },
+            {
+                "id": "net-web-technologies",
+                "title": "Web Technologies",
+                "content": "Web Technologies is the umbrella name for the standards and languages that make a page work inside a browser. Four of them do most of the work, and each has one job. HTML gives the page its structure and its text. CSS decides how that structure looks. JavaScript makes the page respond to what the user does. HTTP is the set of rules the browser and the server use to ask for and send a page in the first place.\n\nThe pieces fit together in a request. A user types a web address, which is called a URL. The URL names the protocol, the domain and the path to the file. The domain has to be translated into the numeric address of a server, and the domain name system does that translation. The browser then sends an HTTP request to the web server named by that address. The server answers with a status code and a page, usually written in HTML, and the browser reads the page and asks for the stylesheet, the script and the images the page references.\n\nTwo distinctions are examined every year. The first is static against dynamic: a static page is a file the server sends unchanged, while a dynamic page is built by the server or by the script each time it is requested. The second is HTTP against HTTPS: HTTPS is the same protocol carried inside an encrypted connection, so the address, the request and the reply cannot be read by anyone watching the network, and the padlock in the address bar is how the browser reports it.\n\nA web technology is therefore not one program. It is a set of agreed standards, written so that any browser on any operating system can read a page built by anyone, which is the reason a site written in Kingston opens on a phone in Port of Spain. When a page misbehaves, the fault is almost always in one of the four layers, so name the layer before guessing at the fix.",
+                "objectives": [
+                    "Name the four core web technologies and the job each one does",
+                    "Trace a request from a typed URL through the domain name system to a web server and back",
+                    "Distinguish a static page from a dynamic page",
+                    "Explain what HTTPS adds to HTTP"
+                ],
+                "concepts": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "HTTP",
+                    "HTTPS",
+                    "URL",
+                    "Domain Name System",
+                    "Web Server",
+                    "Static Page",
+                    "Dynamic Page"
+                ],
+                "experiment": {
+                    "type": "simulation",
+                    "description": "Follow the Request: type an address and step the request from the browser to the domain name system, on to the web server and back, naming the technology used at each step."
                 }
             }
         ]
@@ -624,6 +697,86 @@
                 "experiment": {
                     "type": "simulation",
                     "description": "Build Jan, Feb and Mar: rename a sheet tab, copy it, group the tabs, write a cross-sheet reference into a Quarter sheet and set the print area with print titles."
+                }
+            }
+        ]
+    },
+    {
+        "id": "it-mod-7",
+        "title": "Social/Economic Impact of ICT",
+        "lessons": [
+            {
+                "id": "imp-ict-and-employment",
+                "title": "ICT and Employment",
+                "content": "ICT and Employment is about the way computer systems have changed which jobs exist and what those jobs ask of the people who do them. The change runs in three directions at once, and an answer that names only one of them is half an answer.\n\nThe first direction is creation. Whole job families did not exist before computers: data entry clerk, network technician, web developer, systems analyst, help-desk officer, database administrator, cybersecurity officer. Each of these jobs exists because a machine somewhere has to be installed, programmed, connected or defended.\n\nThe second direction is displacement. Work that is a sequence of predictable steps can now be done by a machine: a typist replaced by word processing, a bank teller's routine transactions replaced by an automated teller machine, a filing clerk replaced by a database, a switchboard operator replaced by an automatic exchange. Displacement is not the same as the work disappearing, because the volume of transactions usually rises and the staff who remain do a different job.\n\nThe third direction is transformation. Most jobs are neither created nor removed; they change. A cashier now also works a card terminal and a stock system. A farmer uses a soil sensor and a market-price app. A teacher sets work on a learning platform. The skill that matters shifts from moving paper to reading a screen and judging what it shows.\n\nTwo consequences follow. The people whose jobs change need retraining, and the cost of that retraining falls on someone: the employer, the state or the worker. And the jobs created are not spread evenly, because they need a reliable connection, a device and a level of education that not every community has. That unevenness is why the digital divide is an employment question and not only a technology question.",
+                "objectives": [
+                    "Classify a change in work as job creation, displacement or transformation",
+                    "Give Caribbean examples of jobs created by ICT",
+                    "Explain why retraining follows from the transformation of work",
+                    "Link the digital divide to who can take the new jobs"
+                ],
+                "concepts": [
+                    "Job Creation",
+                    "Displacement",
+                    "Transformation",
+                    "Retraining",
+                    "Digital Divide",
+                    "Automation",
+                    "Teleworking"
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Job Change Classifier: sort a list of real jobs into created by ICT, removed by ICT and changed by ICT, then say who pays for the retraining."
+                }
+            },
+            {
+                "id": "imp-computer-related-professions",
+                "title": "Computer-Related Professions",
+                "content": "Computer-Related Professions is the name for the jobs whose whole day is spent building, running or supporting computer systems. The CSEC question is usually to match a profession to the task it owns, so learn each one by the decision it is responsible for rather than by the software it happens to use.\n\nA systems analyst studies how a business works today and writes down what a new system must do. The output is a requirements document and a design, not code. A programmer turns that design into working software and tests it. A web developer builds and maintains sites and the services behind them. A database administrator designs the tables, controls who may read or change which records, and takes the backups. A network administrator plans and runs the cabling, switches, routers and wireless access points, and watches the traffic.\n\nSupport and protection have their own professions. A help-desk officer is the first person a user contacts, and the job is to diagnose, fix or escalate. A technician installs, repairs and upgrades hardware. A cybersecurity officer watches for intrusion, sets the access rules and responds when something has gone wrong. An IT manager sets the budget and the policy and decides which projects are worth doing. A trainer teaches the staff to use the system, and the trainer is the profession most often left out of exam answers.\n\nThe distinctions that earn marks are these. The analyst decides what the system should do; the programmer makes it do it. The database administrator owns the data; the network administrator owns the connection. The help-desk officer handles one user at a time; the IT manager decides for the whole organisation. Many small organisations have one person doing four of these jobs, but the responsibilities are still separate, and an answer that separates them is the answer being looked for.",
+                "objectives": [
+                    "Match each computer-related profession to the task it owns",
+                    "Distinguish the systems analyst's job from the programmer's",
+                    "Explain what a database administrator and a network administrator each control",
+                    "Describe the support and management roles inside an IT department"
+                ],
+                "concepts": [
+                    "Systems Analyst",
+                    "Programmer",
+                    "Web Developer",
+                    "Database Administrator",
+                    "Network Administrator",
+                    "Help-Desk Officer",
+                    "Cybersecurity Officer",
+                    "IT Manager",
+                    "Trainer"
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Who Does What: match each computer-related profession to the decision it owns, from the requirements document to the backup schedule."
+                }
+            },
+            {
+                "id": "imp-societal-and-economic-impact",
+                "title": "Societal and Economic Impact of ICT",
+                "content": "Societal and Economic Impact of ICT is the account of what changes when a country's businesses, schools and government services all move onto computers. Split the answer in two, because the two halves are marked separately: social impact is about how people live and relate, and economic impact is about money, work and growth.\n\nOn the social side, ICT widens access to information, so a student in a rural school can read the same notes as one in the capital and a patient can look up a condition before a clinic visit. It changes how people keep in touch, through messaging and video calls that hold families together across islands, and it changes leisure and the classroom. The costs are real too: less face-to-face contact, false information spreading at speed, cyberbullying, and a loss of privacy as more of daily life leaves a record.\n\nOn the economic side, ICT lowers the cost of reaching a customer, so a small business can sell beyond its parish. It allows teleworking, so a programmer in Jamaica can work for a company in another country without moving. It makes government services cheaper to deliver, and it creates the data a government can use to plan. Against that, it demands infrastructure: electricity that stays on, a connection that holds and devices that are maintained. It also concentrates advantage, because the businesses that can afford the systems grow faster than those that cannot.\n\nThe phrase that holds the topic together is the digital divide: the gap between those with reliable access to ICT and the skills to use it, and those without. The divide runs between town and country, between income levels, between age groups and between the trained and the untrained. Every benefit above is a benefit only for the people on the right side of that line, which is why access, cost and training are the three levers a government actually has.",
+                "objectives": [
+                    "Distinguish the social impact of ICT from its economic impact",
+                    "Give examples of social benefits and social costs of ICT",
+                    "Explain how ICT lowers the cost of doing business and what it demands in return",
+                    "Define the digital divide and name the groups it separates"
+                ],
+                "concepts": [
+                    "Digital Divide",
+                    "Teleworking",
+                    "E-Government",
+                    "Privacy",
+                    "Access to Information",
+                    "Infrastructure",
+                    "Cyberbullying"
+                ],
+                "experiment": {
+                    "type": "interactive-table",
+                    "description": "Impact Ledger: fill the social and the economic column for remote work, online banking, e-government and the digital divide, then name who gains and who is left out."
                 }
             }
         ]

@@ -48,7 +48,13 @@ Target module shape (7 modules, 35 lessons): `it-mod-1` Computer Fundamentals 2 
 Social/Economic Impact of ICT (new) 0 → 3. New lessons are APPENDED inside their module, never before an
 existing lesson. `metadata.json estimatedModules` 6 → 7 happens in slice C.
 
-## State of this branch: Slice 0 + Slice A + Slice B landed
+**Slice C creates exactly ONE new module.** The five new lessons are drawn from two syllabus sections, but
+they do not share a home: the two `net-` lessons are Section 2 chapters and belong to the existing
+`it-mod-4` Networking & Internet (2 → 4), which is what `ALLOWED_MODULES[2]` in the harness asserts; only
+the three `imp-` lessons are Section 3 and open the new `it-mod-7` (0 → 3). So `estimatedModules` goes
+6 → 7, not 6 → 8 — one module is created, and `it-mod-4` merely grows.
+
+## State of this branch: Slice 0 + Slice A + Slice B + Slice C landed
 
 - **Slice 0** — the 12 existing lessons now declare the lab type their own description describes. Nine of
   them claimed `code-playground`; only `it-l2-2` (write and run code) and `it-l5-1` (edit HTML code) actually
@@ -62,11 +68,19 @@ existing lesson. `metadata.json estimatedModules` 6 → 7 happens in slice C.
   are now taught by name in #39 (they existed only in the lab deck), **Pivot Tables** are taught in #42 (they
   were a host concept with no teaching), and **Headers and Footers** and **Find and Replace** are named in
   #26 (they existed only as lab-deck pairs).
-- **Not yet landed:** the 8 NEW ids of slices C and D — `net-mobile-communication-importance`,
-  `net-web-technologies`, `imp-ict-and-employment`, `imp-computer-related-professions`,
-  `imp-societal-and-economic-impact`, `impl-programming-language-overview`,
+- **Not yet landed:** the 3 NEW ids of slice D — `impl-programming-language-overview`,
   `impl-variables-constants-and-data-types`, `impl-program-documentation`. The harness lists them as
   `PENDING_IDS` and fails the moment one is landed without the list shrinking.
+- **Slice C** — 5 NEW lessons and 10 chapters closed. Two `net-` lessons are APPENDED to the existing
+  `it-mod-4` Networking & Internet (2 → 4): `net-mobile-communication-importance` (#16) and
+  `net-web-technologies` (#17). One new module `it-mod-7` Social/Economic Impact of ICT opens with the three
+  `imp-` lessons: `imp-ict-and-employment` (#21), `imp-computer-related-professions` (#22),
+  `imp-societal-and-economic-impact` (#23). Five EXTEND chapters grow in place on the two frozen hosts
+  `it-l4-1` (#14 Network Types and Wireless Technologies, #15 Network Components and Functions) and
+  `it-l4-2` (#18 Computer Security and Misuse Concepts, #19 Impact of Computer Systems Misuse,
+  #20 Countermeasures and Security Practices). Both hosts are pure insertions: the original `content` is an
+  exact prefix of the new, and every original concept survives in its original position at the front of the
+  array. `metadata.json estimatedModules` moves 6 → 7 and now equals the real module count (7).
 - **Frozen in this PR:** `practice.json` (100) and `knowledge-check.json` (25). The bank re-balance is a
   separate single-owner pass after the slices, to a 5-group mapping keyed by lesson id.
 
@@ -121,16 +135,16 @@ and `it-l6-2` name them — **Mail Merge Feature** in the #29 extension and **Ba
 | 1 | 11 | Online Information Reliability | NEW | taught | fund-online-information-reliability | online information reliability is the skill of deciding whether a page |
 | 1 | 12 | Data Validation and Verification | EXTEND | pending | it-l3-1 | - |
 | 1 | 13 | File Organization | NEW | taught | fund-file-organisation | file organisation is how you arrange stored work |
-| 2 | 14 | Network Types and Wireless Technologies | EXTEND | pending | it-l4-1 | - |
-| 2 | 15 | Network Components and Functions | EXTEND | pending | it-l4-1 | - |
-| 2 | 16 | Mobile Communication Importance | NEW | pending | net-mobile-communication-importance | - |
-| 2 | 17 | Web Technologies | NEW | pending | net-web-technologies | - |
-| 3 | 18 | Computer Security and Misuse Concepts | EXTEND | pending | it-l4-2 | - |
-| 3 | 19 | Impact of Computer Systems Misuse | EXTEND | pending | it-l4-2 | - |
-| 3 | 20 | Countermeasures and Security Practices | EXTEND | pending | it-l4-2 | - |
-| 3 | 21 | ICT and Employment | NEW | pending | imp-ict-and-employment | - |
-| 3 | 22 | Computer-Related Professions | NEW | pending | imp-computer-related-professions | - |
-| 3 | 23 | Societal and Economic Impact of ICT | NEW | pending | imp-societal-and-economic-impact | - |
+| 2 | 14 | Network Types and Wireless Technologies | EXTEND | taught | it-l4-1 | network types and wireless technologies is the second half of the classification |
+| 2 | 15 | Network Components and Functions | EXTEND | taught | it-l4-1 | network components and functions are the parts you can point at |
+| 2 | 16 | Mobile Communication Importance | NEW | taught | net-mobile-communication-importance | mobile communication importance is best understood by looking at what a phone replaced |
+| 2 | 17 | Web Technologies | NEW | taught | net-web-technologies | web technologies is the umbrella name for the standards and languages that make a page work inside a browser |
+| 3 | 18 | Computer Security and Misuse Concepts | EXTEND | taught | it-l4-2 | computer security and misuse concepts are the vocabulary the rest of this section depends on |
+| 3 | 19 | Impact of Computer Systems Misuse | EXTEND | taught | it-l4-2 | the impact of computer systems misuse is measured in three currencies |
+| 3 | 20 | Countermeasures and Security Practices | EXTEND | taught | it-l4-2 | countermeasures and security practices are the controls you put in place |
+| 3 | 21 | ICT and Employment | NEW | taught | imp-ict-and-employment | ict and employment is about the way computer systems have changed which jobs exist |
+| 3 | 22 | Computer-Related Professions | NEW | taught | imp-computer-related-professions | computer-related professions is the name for the jobs whose whole day is spent building, running or supporting computer systems |
+| 3 | 23 | Societal and Economic Impact of ICT | NEW | taught | imp-societal-and-economic-impact | societal and economic impact of ict is the account of what changes when a country's businesses, schools and government services all move onto computers |
 | 4 | 24 | Document Creation and Content Integration | EXTEND | taught | it-l6-1 | document creation and content integration decides how a document begins and how the material inside it stays connected |
 | 4 | 25 | Document Formatting Features | EXTEND | taught | it-l6-1 | document formatting features divide into three layers |
 | 4 | 26 | Document Editing and Structural Organization | EXTEND | taught | it-l6-1 | document editing and structural organisation is where a long document is broken into parts that behave differently |

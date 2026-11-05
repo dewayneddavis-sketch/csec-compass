@@ -648,6 +648,92 @@ export const lessonSets = {
         { id: "wm5", target: "Rows repeated at the top of every printed page", label: "Print titles" },
       ],
     },
+    // Mobile Communication Importance — match each mobile network term to what it means.
+    "net-mobile-communication-importance": {
+      title: "Cells, Handovers and Coverage",
+      subtitle: "Match each mobile network term to what it means.",
+      kind: "match",
+      pairs: [
+        { id: "mc1", target: "The area served by one base station", label: "Cell" },
+        { id: "mc2", target: "The mast and equipment that serve one cell", label: "Base station" },
+        { id: "mc3", target: "Passing a call from one cell to the next as the user moves", label: "Handover" },
+        { id: "mc4", target: "The area where the signal is strong enough to use", label: "Coverage" },
+        { id: "mc5", target: "Sending and receiving a payment from a phone", label: "Mobile money" },
+        { id: "mc6", target: "The monthly allowance of data a subscriber buys", label: "Data plan" },
+      ],
+    },
+    // Web Technologies — match each web technology to the job it does.
+    "net-web-technologies": {
+      title: "Four Layers, One Request",
+      subtitle: "Match each web technology to the job it does.",
+      kind: "match",
+      pairs: [
+        { id: "wt1", target: "Gives the page its structure and its text", label: "HTML" },
+        { id: "wt2", target: "Decides how that structure looks", label: "CSS" },
+        { id: "wt3", target: "Makes the page respond to what the user does", label: "JavaScript" },
+        { id: "wt4", target: "The rules for asking for a page and sending it back", label: "HTTP" },
+        { id: "wt5", target: "The same protocol carried inside an encrypted connection", label: "HTTPS" },
+        { id: "wt6", target: "Names the protocol, the domain and the path to the file", label: "URL" },
+        { id: "wt7", target: "Answers a request with a status code and a page", label: "Web server" },
+      ],
+    },
+    // ICT and Employment — sort each job by what ICT did to it.
+    "imp-ict-and-employment": {
+      title: "Created, Displaced or Changed",
+      subtitle: "Sort each job by what ICT did to it.",
+      kind: "sort",
+      categories: [
+        { id: "created", label: "Created by ICT" },
+        { id: "displaced", label: "Displaced by ICT" },
+        { id: "transformed", label: "Changed by ICT" },
+      ],
+      items: [
+        { id: "je1", label: "Web developer", category: "created" },
+        { id: "je2", label: "Help-desk officer", category: "created" },
+        { id: "je3", label: "Database administrator", category: "created" },
+        { id: "je4", label: "Typist", category: "displaced" },
+        { id: "je5", label: "Switchboard operator", category: "displaced" },
+        { id: "je6", label: "Filing clerk", category: "displaced" },
+        { id: "je7", label: "Cashier", category: "transformed" },
+        { id: "je8", label: "Teacher", category: "transformed" },
+        { id: "je9", label: "Farmer", category: "transformed" },
+      ],
+    },
+    // Computer-Related Professions — match each profession to the task it owns.
+    "imp-computer-related-professions": {
+      title: "Who Owns Which Decision",
+      subtitle: "Match each computer-related profession to the task it owns.",
+      kind: "match",
+      pairs: [
+        { id: "cp1", target: "Studies how the business works and writes the requirements", label: "Systems analyst" },
+        { id: "cp2", target: "Turns the design into working software and tests it", label: "Programmer" },
+        { id: "cp3", target: "Designs the tables and controls who may read which records", label: "Database administrator" },
+        { id: "cp4", target: "Runs the cabling, switches and access points and watches the traffic", label: "Network administrator" },
+        { id: "cp5", target: "First person a user contacts, who diagnoses, fixes or escalates", label: "Help-desk officer" },
+        { id: "cp6", target: "Watches for intrusion and responds when something has gone wrong", label: "Cybersecurity officer" },
+        { id: "cp7", target: "Sets the budget and the policy and chooses the projects", label: "IT manager" },
+      ],
+    },
+    // Societal and Economic Impact of ICT — sort each impact into its column.
+    "imp-societal-and-economic-impact": {
+      title: "Social or Economic?",
+      subtitle: "Sort each impact of ICT into the social column or the economic column.",
+      kind: "sort",
+      categories: [
+        { id: "social", label: "Social impact" },
+        { id: "economic", label: "Economic impact" },
+      ],
+      items: [
+        { id: "se1", label: "Video calls that hold families together", category: "social" },
+        { id: "se2", label: "False information spreading at speed", category: "social" },
+        { id: "se3", label: "Cyberbullying", category: "social" },
+        { id: "se4", label: "A loss of privacy", category: "social" },
+        { id: "se5", label: "Teleworking for a company abroad", category: "economic" },
+        { id: "se6", label: "Lower cost of reaching a customer", category: "economic" },
+        { id: "se7", label: "Cheaper government services", category: "economic" },
+        { id: "se8", label: "Electricity and a connection that holds", category: "economic" },
+      ],
+    },
   },
 
   // ------------------------------------------------- PRINCIPLES OF ACCOUNTS

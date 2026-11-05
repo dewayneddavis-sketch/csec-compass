@@ -112,12 +112,10 @@ export const NEW_IDS = [
   "sheet-column-and-row-manipulation", "sheet-worksheet-management",
   "impl-programming-language-overview", "impl-variables-constants-and-data-types", "impl-program-documentation",
 ];
-// Not landed yet: slices C and D. SHRINK this list as each slice merges — the harness fails if an
+// Not landed yet: slice D. SHRINK this list as each slice merges — the harness fails if an
 // id in here is found in modules.json (landed but still listed) or if a listed id is also expected
 // somewhere else. It is derived from the doc's pending NEW rows, so the doc and this list must agree.
 export const PENDING_IDS = [
-  "net-mobile-communication-importance", "net-web-technologies",
-  "imp-ict-and-employment", "imp-computer-related-professions", "imp-societal-and-economic-impact",
   "impl-programming-language-overview", "impl-variables-constants-and-data-types", "impl-program-documentation",
 ];
 export const EXPECTED_IDS = [...FROZEN, ...NEW_IDS];
@@ -156,6 +154,36 @@ export const HOST_CONCEPTS = {
   "it-l6-1": "Mail Merge|Table of Contents|Columns|Styles",
   "it-l6-2": "Absolute/Relative Referencing|IF/VLOOKUP Functions|Pivot Tables|Charts",
 };
+// Slice C: the 5 NEW network/impact lessons and the two frozen hosts it grew in place.
+export const SLICE_C_LESSONS = NEW_IDS.filter((id) => /^(net|imp)-/.test(id));
+export const SLICE_C_HOSTS = ["it-l4-1", "it-l4-2"];
+// The two hosts' original copy and their original concept arrays, so a rewrite or a re-order cannot
+// pass as an insertion. The JOIN strings pin the exact seam: the original tail is immediately
+// followed by the extension, so the old copy is still one unbroken prefix.
+export const SLICE_C_HOST_PREFIX = {
+  "it-l4-1": "A computer network is a group of two or more computers connected together to share resources",
+  "it-l4-2": "As we become more connected, internet security and ethics become increasingly important.",
+};
+export const SLICE_C_HOST_JOIN = {
+  "it-l4-1": "key topics in the CSEC IT exam.\n\nNetwork Types and Wireless Technologies is the second half",
+  "it-l4-2": "safe, legal, and ethical.\n\nComputer Security and Misuse Concepts are the vocabulary",
+};
+export const SLICE_C_HOST_CONCEPTS = {
+  "it-l4-1": "Star, Bus, Ring Topologies|Client-Server vs Peer-to-Peer|Wireless Networking",
+  "it-l4-2": "Firewalls|Encryption|Phishing|Copyright/Piracy",
+};
+export const SLICE_C_HOST_OBJECTIVES = {
+  "it-l4-1": "Differentiate between LAN, WAN, and MAN|Identify network topologies",
+  "it-l4-2": "Identify security threats and protection methods|Understand ethical IT use",
+};
+// Slice C creates exactly ONE module. The two `net-` lessons are Section 2 chapters and grow the
+// EXISTING it-mod-4 (2 -> 4); only the three `imp-` lessons are Section 3 and open it-mod-7 (0 -> 3).
+export const IT_MOD_7 = {
+  id: "it-mod-7",
+  title: "Social/Economic Impact of ICT",
+  lessons: ["imp-ict-and-employment", "imp-computer-related-professions", "imp-societal-and-economic-impact"],
+};
+export const NET_LESSONS = SLICE_C_LESSONS.filter((id) => id.startsWith("net-"));
 
 // ---------------------------------------------------------------------------------------------
 // helpers (exported so the self-test can drive them directly)
@@ -362,8 +390,20 @@ export function runChecks(st) {
   for (const [n, reason] of Object.entries(reasons))
     check(typeof reason === "string" && reason.trim().length >= 20,
       `the exception for #${n} carries a written reason of at least 20 characters`);
-  check(!st.modules.some((m) => m.id === "it-mod-7"),
-    "it-mod-7 is NOT created here — it belongs to slice C");
+  // Slice C creates it-mod-7 — exactly one, with the three imp- lessons in doc order. The two net-
+  // lessons do NOT live here: they are Section 2 chapters and grow the existing it-mod-4.
+  const mod7 = st.modules.filter((m) => m.id === IT_MOD_7.id);
+  check(mod7.length === 1, `exactly one ${IT_MOD_7.id} module exists (found ${mod7.length})`);
+  check(mod7[0]?.title === IT_MOD_7.title,
+    `${IT_MOD_7.id} is titled "${IT_MOD_7.title}" (found "${mod7[0]?.title}")`);
+  check(JSON.stringify((mod7[0]?.lessons || []).map((l) => l.id)) === JSON.stringify(IT_MOD_7.lessons),
+    `${IT_MOD_7.id} holds exactly the three imp- lessons, in doc order`);
+  for (const id of NET_LESSONS) {
+    const host = st.modules.find((m) => (m.lessons || []).some((l) => l.id === id));
+    check(host?.id === "it-mod-4",
+      `${id} is appended to the EXISTING it-mod-4 Networking & Internet, not to the new module (found ${host?.id})`);
+  }
+  check(st.modules.length === 7, `the tree has 7 modules (found ${st.modules.length})`);
   check(st.meta.estimatedModules === st.modules.length,
     `metadata.estimatedModules tracks the module count (${st.meta.estimatedModules} vs ${st.modules.length})`);
 
@@ -396,6 +436,29 @@ export function runChecks(st) {
     check((l?.concepts || []).slice(0, 4).join("|") === HOST_CONCEPTS[id],
       `${id} keeps its original four concepts, in order, at the front`);
     check((l?.concepts || []).length > 4, `${id} did gain the concepts its extension teaches`);
+  }
+
+  // ---------------------------------------------------------------- 7c. Slice C pure insertions
+  section("7c. Slice C grew its two hosts by insertion only, and landed its 5 new lessons");
+  for (const id of SLICE_C_LESSONS) check(!!byId[id], `Slice C lesson ${id} is present`);
+  for (const id of SLICE_C_HOSTS) {
+    const l = byId[id];
+    check(!!l, `${id} (a Slice C host) is present`);
+    // the original opening is still the prefix
+    check(!!l && l.content.startsWith(SLICE_C_HOST_PREFIX[id]),
+      `${id} still opens with its original teaching (the Slice C EXTEND was an insertion, not a rewrite)`);
+    // the original tail is immediately followed by the extension: one unbroken old prefix
+    check(!!l && l.content.includes(SLICE_C_HOST_JOIN[id]),
+      `${id} keeps its original closing sentence, with the extension appended directly after it`);
+    // every original concept, in its original position, at the front
+    check((l?.concepts || []).slice(0, SLICE_C_HOST_CONCEPTS[id].split("|").length).join("|") === SLICE_C_HOST_CONCEPTS[id],
+      `${id} keeps its original concepts, in order, at the front`);
+    check((l?.concepts || []).length > SLICE_C_HOST_CONCEPTS[id].split("|").length,
+      `${id} did gain the concepts its extension teaches`);
+    // the original objectives are still the prefix of the objective list
+    check((l?.objectives || []).slice(0, SLICE_C_HOST_OBJECTIVES[id].split("|").length).join("|") === SLICE_C_HOST_OBJECTIVES[id],
+      `${id} keeps its original objectives, in order, at the front`);
+    check(l?.experiment?.type === HONEST_TYPES[id], `${id} keeps the honest lab type Slice 0 gave it`);
   }
 
   // ---------------------------------------------------------------- 7b. the three honesty gaps
@@ -509,7 +572,7 @@ export const RED_CONTROLS = {
   "weak-phrase": (st) => { st.doc = st.doc.replace("| fund-cloud-and-local-storage | cloud and local storage are the two places |", "| fund-cloud-and-local-storage | two places your files can live |"); },
   "phrase-not-in-copy": (st) => { st.doc = st.doc.replace("| fund-user-interface-types | user interface types differ in how much the user has to remember and how much the machine shows |", "| fund-user-interface-types | user interface types differ in how much the user has to remember and how much the machine shows, honestly |"); },
   "pending-but-taught": (st) => { st.doc = st.doc.replace("| 1 | 1 | Information Technology Concept | NEW | taught |", "| 1 | 1 | Information Technology Concept | NEW | pending |"); },
-  "pending-extend-taught": (st) => { st.doc = st.doc.replace("| 2 | 14 | Network Types and Wireless Technologies | EXTEND | pending |", "| 2 | 14 | Network Types and Wireless Technologies | EXTEND | taught |"); },
+  "pending-extend-taught": (st) => { st.doc = st.doc.replace("| 1 | 12 | Data Validation and Verification | EXTEND | pending |", "| 1 | 12 | Data Validation and Verification | EXTEND | taught |"); },
   "land-a-pending-id": (st) => { st.modules[0].lessons.push({ ...st.modules[0].lessons[2], id: "impl-program-documentation" }); },
   "unpend-without-landing": (st) => { st.pendingIds.pop(); },
   "drop-lesson-set": (st) => { delete st.sets["fund-computer-system-types"]; },
@@ -524,8 +587,37 @@ export const RED_CONTROLS = {
   "mirror-drift": (st) => { st.mirrorText = st.mirrorText + " "; },
   "second-it-key": (st) => { st.setsSource = st.setsSource.replace('  "information-technology": {', '  "information-technology": {\n  },\n  "information-technology": {'); },
   "rename-frozen-id": (st) => { st.modules[0].lessons[0].id = "it-l1-1-renamed"; },
-  "estimated-modules": (st) => { st.meta.estimatedModules = 7; },
-  "create-it-mod-7": (st) => { st.modules.push({ id: "it-mod-7", title: "Impact", lessons: [] }); },
+  "estimated-modules": (st) => { st.meta.estimatedModules = 6; },
+  "drop-it-mod-7": (st) => { st.modules = st.modules.filter((m) => m.id !== "it-mod-7"); },
+  "it-mod-7-retitled": (st) => { st.modules.find((m) => m.id === "it-mod-7").title = "Impact"; },
+  "it-mod-7-short": (st) => { st.modules.find((m) => m.id === "it-mod-7").lessons.pop(); },
+  "net-lesson-in-new-module": (st) => {
+    const src = st.modules.find((m) => m.id === "it-mod-4");
+    const moved = src.lessons.pop();
+    st.modules.find((m) => m.id === "it-mod-7").lessons.push(moved);
+  },
+  "slice-c-host-rewritten": (st) => {
+    const l = st.modules.find((m) => m.id === "it-mod-4").lessons.find((x) => x.id === "it-l4-1");
+    l.content = "A network connects computers. " + l.content.slice(400);
+  },
+  "slice-c-host-join-broken": (st) => {
+    const l = st.modules.find((m) => m.id === "it-mod-4").lessons.find((x) => x.id === "it-l4-2");
+    l.content = l.content.replace("Countermeasures and Security Practices are the controls",
+      "Countermeasures and Security Practices really are the controls");
+  },
+  "slice-c-host-concepts-reordered": (st) => {
+    const l = st.modules.find((m) => m.id === "it-mod-4").lessons.find((x) => x.id === "it-l4-2");
+    l.concepts = [l.concepts[1], l.concepts[0], ...l.concepts.slice(2)];
+  },
+  "slice-c-host-objectives-reordered": (st) => {
+    const l = st.modules.find((m) => m.id === "it-mod-4").lessons.find((x) => x.id === "it-l4-1");
+    l.objectives = [l.objectives[1], l.objectives[0], ...l.objectives.slice(2)];
+  },
+  "drop-slice-c-set": (st) => { delete st.sets["net-web-technologies"]; },
+  "slice-c-invented-vocab": (st) => { st.sets["imp-computer-related-professions"].pairs[0].label = "Quantum sommelier"; },
+  "slice-c-set-on-wrong-lesson": (st) => {
+    st.sets["imp-ict-and-employment"] = JSON.parse(JSON.stringify(st.sets["net-web-technologies"]));
+  },
   "bank-growth": (st) => { st.practice.push({ ...st.practice[0], id: "extra-q" }); },
   "drop-protected": (st) => { st.modules[4].lessons = st.modules[4].lessons.filter((l) => l.id !== "it-l5-2"); },
   "weak-exception-reason": (st) => { st.doc = st.doc.replace("| #12 | `it-l3-1` (`it-mod-3`) | `it-l3-1` already teaches field validation, so chapter 12 grows there instead of in a fundamentals lesson. |", "| #12 | `it-l3-1` (`it-mod-3`) | host. |"); },
@@ -573,8 +665,18 @@ function selfTest() {
   ok(Object.keys(parseExceptionReasons("**Four chapters are hosted outside\n| #12 | m | a reason of twenty chars |\n")).length === 1,
     "parseExceptionReasons reads an exception row");
   ok(EXPECTED_IDS.length === 35, "EXPECTED_IDS is 12 frozen + 23 new = 35");
-  ok(NEW_IDS.length === 23 && PENDING_IDS.length === 8, "23 new ids, 8 of them still pending (slices C and D)");
+  ok(NEW_IDS.length === 23 && PENDING_IDS.length === 3, "23 new ids, 3 of them still pending (slice D)");
   ok(SLICE_A_LESSONS.length === 9 && SLICE_B_LESSONS.length === 6, "Slice A authored 9 lessons, Slice B 6");
+  ok(SLICE_C_LESSONS.length === 5 && NET_LESSONS.length === 2,
+    "Slice C authored 5 lessons: 2 net- + 3 imp-");
+  ok(IT_MOD_7.lessons.length === 3 && IT_MOD_7.lessons.every((id) => SLICE_C_LESSONS.includes(id)),
+    "the new module holds the three imp- lessons, all of them Slice C lessons");
+  ok(!NET_LESSONS.some((id) => IT_MOD_7.lessons.includes(id)),
+    "the two net- lessons are NOT in the new module (Section 2 lives in it-mod-4)");
+  ok(SLICE_C_LESSONS.every((id) => !SLICE_A_LESSONS.includes(id) && !SLICE_B_LESSONS.includes(id)),
+    "the three slice lists are disjoint");
+  ok(PENDING_IDS.every((id) => !SLICE_C_LESSONS.includes(id)),
+    "no Slice C lesson is still listed as pending");
   ok(SLICE_B_LESSONS.every((id) => !SLICE_A_LESSONS.includes(id)), "the slice lists are disjoint");
   ok(DISP_TOTALS.NEW + DISP_TOTALS.EXTEND + DISP_TOTALS.REUSE === CHAPTERS.length,
     "the disposition totals add up to the 61 chapters");
