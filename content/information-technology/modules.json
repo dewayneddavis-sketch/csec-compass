@@ -38,7 +38,7 @@
                     "Units of Storage (KB, MB, GB, TB)"
                 ],
                 "experiment": {
-                    "type": "code-playground",
+                    "type": "visual-converter",
                     "description": "Binary Converter: Interactive tool to toggle bits on/off and see the resulting decimal and character representations."
                 }
             }
@@ -63,7 +63,7 @@
                     "Flowchart Symbols"
                 ],
                 "experiment": {
-                    "type": "drag-drop",
+                    "type": "flowchart-builder",
                     "description": "Flowchart Builder: Assemble a flowchart for a logical process (e.g., 'Grade Calculator') using drag-and-drop symbols."
                 }
             },
@@ -106,7 +106,7 @@
                     "One-to-Many Relationships"
                 ],
                 "experiment": {
-                    "type": "code-playground",
+                    "type": "schema-designer",
                     "description": "Schema Designer: Create a database schema for a school system, defining tables and linking them with primary keys."
                 }
             },
@@ -124,7 +124,7 @@
                     "Report Generation"
                 ],
                 "experiment": {
-                    "type": "code-playground",
+                    "type": "drag-drop",
                     "description": "Database Query Builder: Drag fields and criteria to build SQL queries visually and see the resulting data set."
                 }
             }
@@ -148,7 +148,7 @@
                     "Wireless Networking"
                 ],
                 "experiment": {
-                    "type": "code-playground",
+                    "type": "network-topology",
                     "description": "Network Topology Drag: Connect devices into star, bus, or ring topologies and test the network connectivity."
                 }
             },
@@ -207,7 +207,7 @@
                     "JS Variables & Functions"
                 ],
                 "experiment": {
-                    "type": "code-playground",
+                    "type": "web-builder",
                     "description": "Style-a-Page: Use a CSS panel to change colours, fonts, and layouts of a template webpage instantly."
                 }
             }
@@ -231,7 +231,7 @@
                     "Styles"
                 ],
                 "experiment": {
-                    "type": "code-playground",
+                    "type": "simulation",
                     "description": "Mail Merge Simulator: Link a data source to a template letter and generate personalised invites for a group."
                 }
             },
@@ -249,7 +249,7 @@
                     "Charts"
                 ],
                 "experiment": {
-                    "type": "code-playground",
+                    "type": "visual-converter",
                     "description": "Budget Visualiser: Input financial data using formulas and select the best chart type to represent the trends."
                 }
             }
