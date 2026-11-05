@@ -14,8 +14,8 @@
 //   3. the knowledge check is exactly 25, exactly 5 per section, 5 DISTINCT topics
 //      per section, same well-formedness;
 //   4. content/ and public/content/ are byte-identical, for both banks;
-//   5. docs/physics-bank-rebalance.md names every retirement and its per-lesson table
-//      matches the bank that actually ships.
+//   5. docs/physics-bank-rebalance.md names every retirement, each with a NON-EMPTY
+//      reason, and its per-lesson table matches the bank that actually ships.
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -93,16 +93,21 @@ function paperProblems(bank, expectedSections, tabs) {
   return out;
 }
 
-/** The ledger doc has to name every retirement and agree with the bank that ships. */
+/** The ledger doc has to name every retirement — each with a NON-EMPTY reason — and agree with the bank that ships. */
 function ledgerProblems(doc, bank, kc, mapLesson) {
   const out = [];
-  const retired = [...doc.matchAll(/^\| `([pq]\d+)` \|/gm)].map((m) => m[1]);
-  const practiceRetired = retired.filter((id) => id.startsWith("p"));
-  const checkRetired = retired.filter((id) => id.startsWith("q"));
+  // The retirement rows are the only place in the ledger a question id leads a table row,
+  // so the three-cell shape (id | topic | reason) is exact here: the re-tag list is inline
+  // prose, and the per-lesson / section-total tables lead with a section id.
+  const retireRows = [...doc.matchAll(/^\| `([pq]\d+)` \| `([a-z0-9-]+)` \| (.+?) \|$/gm)]
+    .map((m) => ({ id: m[1], topic: m[2], reason: m[3] }));
+  const practiceRetired = retireRows.filter((r) => r.id.startsWith("p"));
+  const checkRetired = retireRows.filter((r) => r.id.startsWith("q"));
   if (practiceRetired.length !== 52) out.push(`the ledger names ${practiceRetired.length} practice retirements, want 52`);
   if (checkRetired.length !== 13) out.push(`the ledger names ${checkRetired.length} knowledge-check retirements, want 13`);
-  for (const id of retired) {
-    if (bank.some((q) => q.id === id) || kc.some((q) => q.id === id)) out.push(`${id}: retired in the ledger but still shipped`);
+  for (const r of retireRows) {
+    if (!r.reason.trim()) out.push(`${r.id}: a retirement with an EMPTY reason`);
+    if (bank.some((q) => q.id === r.id) || kc.some((q) => q.id === r.id)) out.push(`${r.id}: retired in the ledger but still shipped`);
   }
   for (const m of doc.matchAll(/^\| ([a-z-]+) \| `([a-z0-9-]+)` \| (\d+) \| (\d+) \|$/gm)) {
     const [, sid, lesson, before, after] = m;
@@ -187,11 +192,19 @@ section("6. red controls — each assertion above must be able to fail");
     ["a paper that is a block of one section", paperProblems(practice.filter((q) => sectionOf.get(q.topic) === "mechanics").concat(practice.slice(22)), SECTION_IDS, 5)],
     ["a ledger that forgets a retirement", ledgerProblems(doc.replace(/^\| `p100` \|.*$/m, ""), practice, kc, sectionOf)],
     ["a ledger whose count disagrees with the bank", ledgerProblems(doc.replace(/mech-levers` \| 0 \| 1 \|/, "mech-levers` | 0 | 7 |"), practice, kc, sectionOf)],
+    // the row still enumerates (so the 52/13 counts hold) but its reason is only whitespace,
+    // which is the exact input the empty-reason assertion exists to catch
+    ["a retirement whose reason is blanked", ledgerProblems(doc.replace(/^\| `p100` \| `radioactivity` \| .+ \|$/m, "| `p100` | `radioactivity` |   |"), practice, kc, sectionOf)],
   ];
   const silent = doctored.filter(([, problems]) => problems.length === 0).map(([label]) => label);
   check(silent.length === 0, `every doctored input was caught (silent: ${silent.join(", ") || "none"})`);
   check(doctored[0][1].length > 0 && doctored[1][1].length > 0 && doctored[2][1].length > 0,
     "the first three red controls actually produce problems");
+  // the blank-reason control has to bite on the empty reason and on nothing else, or it would
+  // "pass" by tripping some other assertion (the count, the per-lesson table) instead
+  const blankReason = doctored.find(([label]) => label === "a retirement whose reason is blanked")[1];
+  check(blankReason.length === 1 && blankReason[0] === "p100: a retirement with an EMPTY reason",
+    `the blank-reason control fails on the empty reason alone (${blankReason.join(" | ") || "silent"})`);
 }
 
 section("7. wiring self-test (a false condition must fail and a true one must pass)");
