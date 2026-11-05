@@ -92,7 +92,9 @@ export const CHAPTERS = [
   "Variables, Constants, and Data Types", "Algorithmic Statements Syntax", "Program Documentation",
 ];
 export const SECTION_COUNTS = [13, 4, 6, 12, 9, 4, 7, 6];
-export const DISP_TOTALS = { NEW: 23, EXTEND: 30, REUSE: 8 };
+// EXTEND 31 / REUSE 7: chapter #40 Formula Replication was upgraded REUSE -> EXTEND on the lead's
+// decision (F1) — a clause about relative vs absolute referencing with no worked copy is not coverage.
+export const DISP_TOTALS = { NEW: 23, EXTEND: 31, REUSE: 7 };
 
 // The 12 frozen lessons: ids are identity, never renamed, re-keyed or split.
 export const FROZEN = ["it-l1-1", "it-l1-2", "it-l2-1", "it-l2-2", "it-l3-1", "it-l3-2",
@@ -110,15 +112,12 @@ export const NEW_IDS = [
   "sheet-column-and-row-manipulation", "sheet-worksheet-management",
   "impl-programming-language-overview", "impl-variables-constants-and-data-types", "impl-program-documentation",
 ];
-// Not landed yet: slices B, C and D. SHRINK this list as each slice merges — the harness fails if an
+// Not landed yet: slices C and D. SHRINK this list as each slice merges — the harness fails if an
 // id in here is found in modules.json (landed but still listed) or if a listed id is also expected
 // somewhere else. It is derived from the doc's pending NEW rows, so the doc and this list must agree.
 export const PENDING_IDS = [
   "net-mobile-communication-importance", "net-web-technologies",
   "imp-ict-and-employment", "imp-computer-related-professions", "imp-societal-and-economic-impact",
-  "wp-document-protection-features", "wp-fillable-electronic-forms",
-  "web-website-structure-and-organisation", "web-website-evaluation-and-publishing",
-  "sheet-column-and-row-manipulation", "sheet-worksheet-management",
   "impl-programming-language-overview", "impl-variables-constants-and-data-types", "impl-program-documentation",
 ];
 export const EXPECTED_IDS = [...FROZEN, ...NEW_IDS];
@@ -145,6 +144,18 @@ export const HONEST_TYPES = {
 };
 // Slice A: the lessons this branch authored (9 NEW + the 3 EXTEND chapters' host).
 export const SLICE_A_LESSONS = NEW_IDS.filter((id) => id.startsWith("fund-"));
+// Slice B: the 6 NEW office-tool lessons and the two frozen hosts it grew in place.
+export const SLICE_B_LESSONS = NEW_IDS.filter((id) => /^(wp|web|sheet)-/.test(id));
+export const SLICE_B_HOSTS = ["it-l6-1", "it-l6-2"];
+// The two hosts' original copy, so a rewrite cannot pass as an extension.
+export const HOST_PREFIX = {
+  "it-l6-1": "Word processing is more than just typing text",
+  "it-l6-2": "Spreadsheets are powerful tools for organising",
+};
+export const HOST_CONCEPTS = {
+  "it-l6-1": "Mail Merge|Table of Contents|Columns|Styles",
+  "it-l6-2": "Absolute/Relative Referencing|IF/VLOOKUP Functions|Pivot Tables|Charts",
+};
 
 // ---------------------------------------------------------------------------------------------
 // helpers (exported so the self-test can drive them directly)
@@ -374,6 +385,31 @@ export function runChecks(st) {
     "it-l1-1 still opens with its original teaching (the EXTEND was an insertion, not a rewrite)");
   check((byId["it-l1-1"]?.concepts || []).slice(0, 6).join("|") === "CPU|RAM|ROM|Input/Output Devices|Operating Systems|Utility Programs",
     "it-l1-1 keeps its original six concepts in order");
+  for (const id of SLICE_B_LESSONS) check(!!byId[id], `Slice B lesson ${id} is present`);
+  // Slice B: the two EXTEND hosts are pure insertions too — the old copy is still the prefix, and
+  // every original concept is still in its original position at the front of the array.
+  for (const id of SLICE_B_HOSTS) {
+    const l = byId[id];
+    check(!!l, `${id} (a Slice B host) is present`);
+    check(!!l && l.content.startsWith(HOST_PREFIX[id]),
+      `${id} still opens with its original teaching (the Slice B EXTEND was an insertion, not a rewrite)`);
+    check((l?.concepts || []).slice(0, 4).join("|") === HOST_CONCEPTS[id],
+      `${id} keeps its original four concepts, in order, at the front`);
+    check((l?.concepts || []).length > 4, `${id} did gain the concepts its extension teaches`);
+  }
+
+  // ---------------------------------------------------------------- 7b. the three honesty gaps
+  section("7b. Slice B closes the three pre-existing honesty gaps (F4/F5/F6)");
+  const host61 = corpusOf(byId["it-l6-1"] || {}), host62 = corpusOf(byId["it-l6-2"] || {});
+  for (const fn of ["min", "max", "count"])
+    check(new RegExp(`(^|[^a-z])${fn}([^a-z]|$)`).test(host62),
+      `it-l6-2 names ${fn.toUpperCase()} in its own copy, not only in the lab deck`);
+  check(host62.includes("pivot table"),
+    "it-l6-2 teaches pivot tables (it was already a host concept with no teaching)");
+  check(host61.includes("headers and footers"),
+    "it-l6-1 names headers and footers (they existed only as lab-deck pairs)");
+  check(host61.includes("find and replace"),
+    "it-l6-1 names find and replace (it existed only as a lab-deck pair)");
 
   // ---------------------------------------------------------------- 8. the Play-tab labs
   section("8. one well-formed Play-tab set per new lesson, in the single IT key");
@@ -494,6 +530,18 @@ export const RED_CONTROLS = {
   "drop-protected": (st) => { st.modules[4].lessons = st.modules[4].lessons.filter((l) => l.id !== "it-l5-2"); },
   "weak-exception-reason": (st) => { st.doc = st.doc.replace("| #12 | `it-l3-1` (`it-mod-3`) | `it-l3-1` already teaches field validation, so chapter 12 grows there instead of in a fundamentals lesson. |", "| #12 | `it-l3-1` (`it-mod-3`) | host. |"); },
   "invented-vocab": (st) => { st.sets["fund-file-organisation"].pairs[0].label = "Zettabyte"; },
+  "slice-b-host-rewritten": (st) => {
+    st.modules.find((m) => m.id === "it-mod-6").lessons[0].content = "Word processing is more than typing text.";
+  },
+  "slice-b-host-concepts-reordered": (st) => {
+    const l = st.modules.find((m) => m.id === "it-mod-6").lessons[1];
+    l.concepts = [l.concepts[1], l.concepts[0], ...l.concepts.slice(2)];
+  },
+  "drop-slice-b-set": (st) => { delete st.sets["sheet-worksheet-management"]; },
+  "slice-b-gap-reopened": (st) => {
+    const l = st.modules.find((m) => m.id === "it-mod-6").lessons[1];
+    l.content = l.content.replace("MIN, MAX and COUNT", "a few functions");
+  },
 };
 
 // ---------------------------------------------------------------------------------------------
@@ -525,7 +573,11 @@ function selfTest() {
   ok(Object.keys(parseExceptionReasons("**Four chapters are hosted outside\n| #12 | m | a reason of twenty chars |\n")).length === 1,
     "parseExceptionReasons reads an exception row");
   ok(EXPECTED_IDS.length === 35, "EXPECTED_IDS is 12 frozen + 23 new = 35");
-  ok(NEW_IDS.length === 23 && PENDING_IDS.length === 14, "23 new ids, 14 of them still pending");
+  ok(NEW_IDS.length === 23 && PENDING_IDS.length === 8, "23 new ids, 8 of them still pending (slices C and D)");
+  ok(SLICE_A_LESSONS.length === 9 && SLICE_B_LESSONS.length === 6, "Slice A authored 9 lessons, Slice B 6");
+  ok(SLICE_B_LESSONS.every((id) => !SLICE_A_LESSONS.includes(id)), "the slice lists are disjoint");
+  ok(DISP_TOTALS.NEW + DISP_TOTALS.EXTEND + DISP_TOTALS.REUSE === CHAPTERS.length,
+    "the disposition totals add up to the 61 chapters");
   ok(PENDING_IDS.every((id) => NEW_IDS.includes(id)), "PENDING_IDS is a subset of NEW_IDS");
   ok(Object.keys(RED_CONTROLS).length >= 20, `at least 20 red controls are wired (${Object.keys(RED_CONTROLS).length})`);
   ok(corpusOf({ title: "T", content: "C", objectives: ["O"], concepts: ["K"] }) === "t c o k",
