@@ -427,6 +427,145 @@ export const lessonSets = {
         { id: "ss5", target: "Counts the numeric cells in a range", label: "=COUNT(A1:A10)" },
       ],
     },
+    // Information Technology Concept — Match each element of an IT system to what it does.
+    "fund-information-technology-concept": {
+      title: "Elements of an IT System",
+      subtitle: "Match each element of an IT system to what it does.",
+      kind: "match",
+      pairs: [
+        { id: "ic1", target: "The physical equipment you can touch", label: "Hardware" },
+        { id: "ic2", target: "The programs that tell the hardware what to do", label: "Software" },
+        { id: "ic3", target: "Raw facts that have not yet been processed", label: "Data" },
+        { id: "ic4", target: "Data processed into something meaningful", label: "Information" },
+        { id: "ic5", target: "The users who operate and manage the system", label: "People" },
+        { id: "ic6", target: "The written rules and steps for using the system", label: "Procedures" },
+      ],
+    },
+    // Computer System Types — Sort each example into the computer system type it belongs to.
+    "fund-computer-system-types": {
+      title: "Sort the Computer System Types",
+      subtitle: "Sort each example into the computer system type it belongs to.",
+      kind: "sort",
+      categories: [
+        { id: "super", label: "Supercomputer" },
+        { id: "main", label: "Mainframe" },
+        { id: "micro", label: "Microcomputer" },
+      ],
+      items: [
+        { id: "cs1", label: "Weather forecasting model", category: "super" },
+        { id: "cs2", label: "Climate simulation for research", category: "super" },
+        { id: "cs3", label: "National census processing", category: "main" },
+        { id: "cs4", label: "Bank transaction processing", category: "main" },
+        { id: "cs5", label: "Laptop for school work", category: "micro" },
+        { id: "cs6", label: "Smartphone in your pocket", category: "micro" },
+      ],
+    },
+    // Cloud and Local Storage — Match each storage idea to what it means.
+    "fund-cloud-and-local-storage": {
+      title: "Cloud or Local?",
+      subtitle: "Match each storage idea to what it means.",
+      kind: "match",
+      pairs: [
+        { id: "cl1", target: "Files kept on the drive inside your own computer", label: "Local storage" },
+        { id: "cl2", target: "Files kept on a provider's servers and reached over the internet", label: "Cloud storage" },
+        { id: "cl3", target: "Keeping the same file the same on every device", label: "Synchronisation" },
+        { id: "cl4", target: "A second copy you can restore if the first is lost", label: "Backup" },
+        { id: "cl5", target: "The internet speed that cloud files depend on", label: "Bandwidth" },
+        { id: "cl6", target: "Scrambling files so only the right person can read them", label: "Encryption" },
+      ],
+    },
+    // User Interface Types — Sort each action into the interface type it belongs to.
+    "fund-user-interface-types": {
+      title: "Sort the Interface Types",
+      subtitle: "Sort each action into the interface type it belongs to.",
+      kind: "sort",
+      categories: [
+        { id: "gui", label: "Graphical (GUI)" },
+        { id: "cli", label: "Command line (CLI)" },
+        { id: "menu", label: "Menu-driven" },
+      ],
+      items: [
+        { id: "ui1", label: "Clicking icons on a desktop", category: "gui" },
+        { id: "ui2", label: "Dragging a window to a new place", category: "gui" },
+        { id: "ui3", label: "Typing dir to list the files", category: "cli" },
+        { id: "ui4", label: "Typing a command that contains a path", category: "cli" },
+        { id: "ui5", label: "Choosing an option at an ATM", category: "menu" },
+        { id: "ui6", label: "Pressing 1 for a balance", category: "menu" },
+      ],
+    },
+    // System Suitability and Specification — Match each part of a specification to what it does.
+    "fund-system-suitability-and-specification": {
+      title: "Specification or Suitability?",
+      subtitle: "Match each part of a specification to what it does.",
+      kind: "match",
+      pairs: [
+        { id: "sp1", target: "The chip that carries out the instructions, speed in GHz", label: "Processor" },
+        { id: "sp2", target: "Working space for open programs, measured in GB", label: "Memory (RAM)" },
+        { id: "sp3", target: "Where files stay when the power is off, SSD or HDD", label: "Storage" },
+        { id: "sp4", target: "The part that draws images for video editing", label: "Graphics card" },
+        { id: "sp5", target: "A socket for connecting a device, such as USB", label: "Ports" },
+        { id: "sp6", target: "The list of parts and their sizes", label: "Specification" },
+      ],
+    },
+    // Basic Hardware Troubleshooting — Arrange the troubleshooting steps in the correct order.
+    "fund-basic-hardware-troubleshooting": {
+      title: "The Order of Checks",
+      subtitle: "Arrange the troubleshooting steps in the correct order.",
+      kind: "order",
+      items: [
+        { id: "tb1", label: "Check the power supply and the switch", order: 1 },
+        { id: "tb2", label: "Check that the cables are firmly connected", order: 2 },
+        { id: "tb3", label: "Listen for the start-up beep and watch the screen", order: 3 },
+        { id: "tb4", label: "Test with a known working part", order: 4 },
+        { id: "tb5", label: "Record what you found and what fixed it", order: 5 },
+      ],
+    },
+    // Data and Information Distinction — Match each term to what it means.
+    "fund-data-and-information-distinction": {
+      title: "Data or Information?",
+      subtitle: "Match each term to what it means.",
+      kind: "match",
+      pairs: [
+        { id: "di1", target: "Raw facts, such as a list of marks", label: "Data" },
+        { id: "di2", target: "The class average worked out from those marks", label: "Information" },
+        { id: "di3", target: "Correct and free from errors", label: "Accurate" },
+        { id: "di4", target: "Available when it is needed", label: "Timely" },
+        { id: "di5", target: "Directly related to the decision being made", label: "Relevant" },
+        { id: "di6", target: "Carries everything the decision needs", label: "Complete" },
+      ],
+    },
+    // Online Information Reliability — Sort each source into more reliable or less reliable, and say why.
+    "fund-online-information-reliability": {
+      title: "Sort the Sources",
+      subtitle: "Sort each source into more reliable or less reliable, and say why.",
+      kind: "sort",
+      categories: [
+        { id: "yes", label: "More reliable" },
+        { id: "no", label: "Less reliable" },
+      ],
+      items: [
+        { id: "or1", label: "A government statistics page", category: "yes" },
+        { id: "or2", label: "A school site that lists its references", category: "yes" },
+        { id: "or3", label: "A news report that names its sources", category: "yes" },
+        { id: "or4", label: "An unsigned blog post with no author", category: "no" },
+        { id: "or5", label: "A social media rumour", category: "no" },
+        { id: "or6", label: "A page with no date and no sources", category: "no" },
+      ],
+    },
+    // File Organisation — Match each term to what it means.
+    "fund-file-organisation": {
+      title: "File Organisation Terms",
+      subtitle: "Match each term to what it means.",
+      kind: "match",
+      pairs: [
+        { id: "fo1", target: "A single document, image or program saved with a name", label: "File" },
+        { id: "fo2", target: "A container that groups related files", label: "Folder" },
+        { id: "fo3", target: "The part of the name after the dot that shows the file type", label: "Extension" },
+        { id: "fo4", target: "The full address of a file, from the drive to the file", label: "Path" },
+        { id: "fo5", target: "The top level of a drive, where the tree starts", label: "Root directory" },
+        { id: "fo6", target: "A second copy kept in case the first is lost", label: "Backup" },
+      ],
+    },
   },
 
   // ------------------------------------------------- PRINCIPLES OF ACCOUNTS
