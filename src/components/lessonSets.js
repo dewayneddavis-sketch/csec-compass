@@ -566,6 +566,88 @@ export const lessonSets = {
         { id: "fo6", target: "A second copy kept in case the first is lost", label: "Backup" },
       ],
     },
+
+    // ---- Slice B: S4 office tools (word processing, web design, spreadsheets) ----------
+    // Document Protection Features — match each protection setting to what it does.
+    "wp-document-protection-features": {
+      title: "Which Protection Does What",
+      subtitle: "Match each protection setting to what it actually does.",
+      kind: "match",
+      pairs: [
+        { id: "dp1", target: "The document cannot be opened without the correct password", label: "Password to open" },
+        { id: "dp2", target: "The file opens read-only and edits are only discouraged", label: "Mark as Final" },
+        { id: "dp3", target: "Only comments or only tracked changes may be added", label: "Restrict editing" },
+        { id: "dp4", target: "The reader is asked, not forced, to open a copy", label: "Read-only recommended" },
+        { id: "dp5", target: "The file opens, but saving an edit needs the password", label: "Password to modify" },
+      ],
+    },
+    // Fillable Electronic Forms — match each form control to what it holds.
+    "wp-fillable-electronic-forms": {
+      title: "Controls on a Membership Form",
+      subtitle: "Match each content control to what it holds.",
+      kind: "match",
+      pairs: [
+        { id: "fe1", target: "A single line of typed text, such as a name", label: "Text content control" },
+        { id: "fe2", target: "A tick for yes or no, such as Returning member", label: "Check box" },
+        { id: "fe3", target: "One choice from a fixed list, such as a parish", label: "Drop-down list" },
+        { id: "fe4", target: "A calendar date, such as a date of birth", label: "Date picker" },
+        { id: "fe5", target: "Grey guidance that disappears when the field is typed in", label: "Placeholder text" },
+      ],
+    },
+    // Website Structure and Organisation — match each part of a site to what it is.
+    "web-website-structure-and-organisation": {
+      title: "Site Structure and Navigation",
+      subtitle: "Match each part of a website to what it does.",
+      kind: "match",
+      pairs: [
+        { id: "ws1", target: "The home page the web server sends first", label: "index.html" },
+        { id: "ws2", target: "A diagram of every page and how they link", label: "Site map" },
+        { id: "ws3", target: "The same set of links on every page", label: "Navigation menu" },
+        { id: "ws4", target: "Site name and main navigation at the top of every page", label: "Header" },
+        { id: "ws5", target: "Contact details, copyright and secondary links at the bottom", label: "Footer" },
+        { id: "ws6", target: "A trail showing where the current page sits", label: "Breadcrumb" },
+      ],
+    },
+    // Website Evaluation and Publishing — match each publishing term to what it means.
+    "web-website-evaluation-and-publishing": {
+      title: "Score It, Then Publish It",
+      subtitle: "Match each evaluation or publishing term to what it means.",
+      kind: "match",
+      pairs: [
+        { id: "wp1", target: "The server that stores the site and sends its pages", label: "Web host" },
+        { id: "wp2", target: "The address a visitor types", label: "Domain name" },
+        { id: "wp3", target: "Copying the site's files from your computer to the host", label: "FTP upload" },
+        { id: "wp4", target: "The file the server sends when a visitor asks for the folder", label: "index.html" },
+        { id: "wp5", target: "A hyperlink pointing at a page or file that is not there", label: "Broken link" },
+        { id: "wp6", target: "How recently the page was updated", label: "Currency" },
+      ],
+    },
+    // Column and Row Manipulation — match each edit to its consequence.
+    "sheet-column-and-row-manipulation": {
+      title: "What an Edit Does to a Formula",
+      subtitle: "Match each edit to what happens to the data and the formulas.",
+      kind: "match",
+      pairs: [
+        { id: "cr1", target: "The rows below move down and a SUM range spanning them grows", label: "Insert a row above row 5" },
+        { id: "cr2", target: "The data is removed and a formula that pointed at it shows #REF!", label: "Delete column C" },
+        { id: "cr3", target: "The whole label shows and no data changes", label: "Widen column B" },
+        { id: "cr4", target: "A long label shows on several lines inside one cell", label: "Wrap text" },
+        { id: "cr5", target: "The row is still there and still calculated, only not shown", label: "Hide rows 8 to 20" },
+      ],
+    },
+    // Worksheet Management — match each workbook term to what it means.
+    "sheet-worksheet-management": {
+      title: "Tabs, References and Printing",
+      subtitle: "Match each workbook term to what it means.",
+      kind: "match",
+      pairs: [
+        { id: "wm1", target: "The whole file holding one or more worksheets", label: "Workbook" },
+        { id: "wm2", target: "The label at the bottom naming one sheet", label: "Worksheet tab" },
+        { id: "wm3", target: "A formula reading cell B4 on the sheet named Jan", label: "=Jan!B4" },
+        { id: "wm4", target: "Two or more tabs selected so one typing appears on all", label: "Grouped sheets" },
+        { id: "wm5", target: "Rows repeated at the top of every printed page", label: "Print titles" },
+      ],
+    },
   },
 
   // ------------------------------------------------- PRINCIPLES OF ACCOUNTS

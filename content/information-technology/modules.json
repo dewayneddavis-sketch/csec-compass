@@ -442,6 +442,51 @@
                     "type": "web-builder",
                     "description": "Style-a-Page: Use a CSS panel to change colours, fonts, and layouts of a template webpage instantly."
                 }
+            },
+            {
+                "id": "web-website-structure-and-organisation",
+                "title": "Website Structure and Organisation",
+                "content": "Website Structure and Organisation is the planning that happens before a single page is written. A site is a set of pages with a shape, and the shape is drawn first as a site map: the home page at the top, second-level pages under it such as About, Subjects, News and Contact, and third-level pages under those, such as Mathematics, Information Technology and Physics under Subjects. Drawing the map first is what stops a site growing into a pile of pages that only their author can find.\n\nThe home page is a file named index.html, and the name matters because a web server sends index.html automatically when a visitor asks for a folder. A visitor who types the site's address with no page name still lands on the home page, and every page's link back to the top can point at the folder instead of at a file name that may be renamed later.\n\nEvery page carries the same skeleton: a header with the site name and the main navigation, the main content, and a footer with contact details, copyright and secondary links. Keeping the navigation menu identical on every page is what makes a site feel like one place and stops a visitor reaching a dead end. The rule of thumb is that any page should be reachable from the home page in three clicks or fewer, so the menu shows the second-level pages and each of those shows its own children. A breadcrumb trail - Home > Subjects > Physics - tells the visitor where the current page sits in the structure.\n\nThe worked example is a school site in four levels. index.html links to About, Subjects, News and Contact; Subjects links to Mathematics, Information Technology and Physics; and the same header, navigation menu and footer are used on two of those pages, so the visitor can see that nothing jumps when a page changes. Plan the map, name the home page, repeat the skeleton, and the three-click rule takes care of itself.",
+                "objectives": [
+                    "Draw a site map with a home page, second-level and third-level pages",
+                    "Explain why the home page is named index.html and why every link home can use it",
+                    "Give every page the same skeleton: header, navigation menu, main content and footer",
+                    "Plan navigation so that any page is reachable in three clicks or fewer"
+                ],
+                "concepts": [
+                    "Site map",
+                    "Home page (index.html)",
+                    "Navigation menu",
+                    "Page skeleton: header, main, footer",
+                    "Three-click rule"
+                ],
+                "experiment": {
+                    "type": "web-builder",
+                    "description": "Site Map Builder: place the home page, the second-level pages and their children into a site map, then check that every page is three clicks from home."
+                }
+            },
+            {
+                "id": "web-website-evaluation-and-publishing",
+                "title": "Website Evaluation and Publishing",
+                "content": "Website Evaluation and Publishing are the last two jobs on a site: judging whether it does its work, and putting it where people can reach it. Evaluation scores the site against named criteria. Accuracy means the information is correct and checked. Currency means the page shows when it was last updated. Authority means the reader can see who wrote it and why they should be believed. Audience means the language and the level suit the people the site is for. Navigation means every page can be reached and left again. Accessibility means text alternatives for images and readable contrast. Loading speed means the pages and images arrive quickly on a school connection.\n\nTesting happens before publishing. Click every link, including every menu item and every footer link, and repair the broken links - a broken link is a hyperlink pointing at a page or file that is not there, and it is the commonest fault on a school site. Open the pages in more than one browser, check that every image loads, and read the site on a phone-sized screen.\n\nPublishing is a separate step with its own vocabulary. Choose a web host, the server that stores the site's files and sends its pages to visitors. Register a domain name, the address a visitor types. Upload the folder to the host by FTP, which simply copies the files from your computer to the host. Set index.html as the start page so that the domain on its own opens the home page. Then load the live address and check the home page and every menu link once more, because a file left out of the upload shows up here and nowhere else.\n\nThe worked example is a four-page site: score it against five criteria, fix the one broken link the click-through found, upload the folder by FTP, set index.html, and confirm from another computer that the home page and the menu all work. Testing proves the site works on your machine; publishing is what lets a stranger reach it.",
+                "objectives": [
+                    "Evaluate a website against named criteria: accuracy, currency, authority, audience, navigation, accessibility and loading speed",
+                    "Test a site before publishing, including clicking every link to find broken links",
+                    "Describe publishing: choose a web host, register a domain name, upload by FTP and set index.html as the start page",
+                    "List the checks made after publishing"
+                ],
+                "concepts": [
+                    "Evaluation criteria",
+                    "Broken links",
+                    "Domain name",
+                    "Web host",
+                    "FTP upload",
+                    "index.html as the start page"
+                ],
+                "experiment": {
+                    "type": "simulation",
+                    "description": "Score and Publish: score a four-page site against five evaluation criteria, fix its broken link, then upload it and set index.html as the start page."
+                }
             }
         ]
     },
@@ -452,7 +497,7 @@
             {
                 "id": "it-l6-1",
                 "title": "Advanced Word Processing",
-                "content": "Word processing is more than just typing text; it involves professional formatting and automation to create high-quality documents. Advanced features tested on CSEC include 'Mail Merge,' which allows you to create personalised letters or labels for a large group of people by linking a document to a data source (like a database or spreadsheet).\n\nOther important tools include the automatic generation of Tables of Contents, the use of columns for newsletter-style layouts, and the application of 'Styles' to ensure consistent formatting throughout a long document. You will also learn to insert and format tables, images, and other objects to enhance the visual appeal and clarity of your work.\n\nEffective word processing also involves using tools like spell check, thesaurus, and track changes for collaboration. Practise creating complex documents like reports and brochures, paying attention to layout, font choices, and the use of white space. These skills are essential for success in school, university, and the professional world.",
+                "content": "Word processing is more than just typing text; it involves professional formatting and automation to create high-quality documents. Advanced features tested on CSEC include 'Mail Merge,' which allows you to create personalised letters or labels for a large group of people by linking a document to a data source (like a database or spreadsheet).\n\nOther important tools include the automatic generation of Tables of Contents, the use of columns for newsletter-style layouts, and the application of 'Styles' to ensure consistent formatting throughout a long document. You will also learn to insert and format tables, images, and other objects to enhance the visual appeal and clarity of your work.\n\nEffective word processing also involves using tools like spell check, thesaurus, and track changes for collaboration. Practise creating complex documents like reports and brochures, paying attention to layout, font choices, and the use of white space. These skills are essential for success in school, university, and the professional world.\n\nDocument Creation and Content Integration decides how a document begins and how the material inside it stays connected. A new document starts either blank or from a template, and a template already carries the margins, styles, headers and placeholder text for a letter, a report or a memo, so a set of reports looks the same and nothing has to be rebuilt. When material comes from elsewhere, Paste Special offers the choice that the ordinary paste hides: paste the text only, keep the source formatting, or paste a link. Linking and embedding are the two ways to bring a spreadsheet table or a chart into a report - a linked object updates when the source file changes, while an embedded object is a self-contained copy that keeps the last values it was given and makes the report's file bigger.\n\nDocument Formatting Features divide into three layers, and an answer should name the layer it is talking about. Character formatting changes the letters themselves: font, size, bold, italic, underline, colour, and superscript or subscript for a footnote marker or a chemical formula. Paragraph formatting changes the block: alignment, line spacing, indents, bullets and numbering, borders and shading. Page setup changes the page: margins, orientation and paper size. The Format Painter is the shortcut that copies the whole look of one piece of text and applies it to another, so consistent formatting does not depend on repeating each step by hand.\n\nDocument Editing and Structural Organisation is where a long document is broken into parts that behave differently. A page break pushes text onto the next page and does nothing more; a section break splits the document so that each part can have its own page setup and its own headers and footers. That is why one landscape page of wide tables can sit among portrait pages - it lives in its own section. Headers and footers repeat at the top and bottom of every page: the report title, the page number, the date. Page numbering is set there, with a different first page option so that a title page carries no number. Find and Replace searches for a word or a format and changes every occurrence at once, which is how a misspelt name is corrected throughout a twenty-page report without reading every page.\n\nDocument Review Features are the tools that let one document pass between several people without losing the thread. A comment attaches to a selected word or paragraph, can be answered by the next reader and then resolved, and unlike a tracked change it never alters the text. Track Changes must be switched on before the editing starts, because only edits made while it is on are recorded; each change then waits for a reviewer to accept or reject it. When two people send back separate copies, comparing the two versions produces the same kind of marked-up list. Spell check finds words that are not in its dictionary while grammar check looks at sentence structure, so neither one replaces a careful read.\n\nTable of Contents Generation is automatic, not typed. Each chapter heading is formatted with a heading style - Heading 1 for a chapter, Heading 2 for a section inside it - and the table is then inserted from References, which reads those styles and builds the levels and page numbers itself. When the pages move, the field is updated: page numbers only when nothing but pagination changed, the entire table when a heading was added or renamed. A hand-typed contents page is wrong the moment the document is edited. The Mail Merge Feature is the other automation this lesson already teaches: it links a document to a data source and produces one personalised copy per record.",
                 "objectives": [
                     "Use mail merge and advanced formatting"
                 ],
@@ -460,7 +505,11 @@
                     "Mail Merge",
                     "Table of Contents",
                     "Columns",
-                    "Styles"
+                    "Styles",
+                    "Templates",
+                    "Section Break",
+                    "Track Changes"
+
                 ],
                 "experiment": {
                     "type": "simulation",
@@ -470,7 +519,7 @@
             {
                 "id": "it-l6-2",
                 "title": "Spreadsheet Formulas & Charts",
-                "content": "Spreadsheets are powerful tools for organising, analysing, and visualising numerical data. They are made up of 'cells' arranged in rows and columns. A key feature of spreadsheets is the use of formulas and functions to perform calculations automatically. Formulas always start with an equals sign (=) and can include cell references, numbers, and operators (like +, -, *, /).\n\nFunctions are built-in formulas for complex tasks, such as SUM, AVERAGE, IF (for logical decisions), and VLOOKUP (to find data in a table). Understanding 'relative' vs. 'absolute' cell referencing ($A$1) is crucial when copying formulas. Once your data is organised, you can create 'Charts' (like bar, line, or pie charts) to visually represent trends and comparisons.\n\nCSEC IT students will learn to design efficient spreadsheets that use appropriate formulas and charts for a given scenario. You will also practise 'what-if' analysis \u2014 changing a value in one cell to see how it affects the final results. Spreadsheets are used in almost every field, from personal budgeting to complex financial modelling and scientific research.",
+                "content": "Spreadsheets are powerful tools for organising, analysing, and visualising numerical data. They are made up of 'cells' arranged in rows and columns. A key feature of spreadsheets is the use of formulas and functions to perform calculations automatically. Formulas always start with an equals sign (=) and can include cell references, numbers, and operators (like +, -, *, /).\n\nFunctions are built-in formulas for complex tasks, such as SUM, AVERAGE, IF (for logical decisions), and VLOOKUP (to find data in a table). Understanding 'relative' vs. 'absolute' cell referencing ($A$1) is crucial when copying formulas. Once your data is organised, you can create 'Charts' (like bar, line, or pie charts) to visually represent trends and comparisons.\n\nCSEC IT students will learn to design efficient spreadsheets that use appropriate formulas and charts for a given scenario. You will also practise 'what-if' analysis — changing a value in one cell to see how it affects the final results. Spreadsheets are used in almost every field, from personal budgeting to complex financial modelling and scientific research.\n\nSpreadsheet Terminology starts with the grid. A workbook is the whole file and a worksheet is one sheet inside it. A column is named by a letter and a row by a number, so the column letter and the row number together give the cell address, such as B4. A range is written from the first cell to the last with a colon between them, such as B4:B10, and it is the range that a formula or a chart is told to use. The active cell is the one selected, with its address shown in the name box and its contents in the formula bar. A cell holds one of three kinds of content: a label, which is text such as a name or a heading; a value, which is a number; or a formula, which calculates.\n\nAdvanced Arithmetic Formulae are built from the same operators in a fixed order, and the order decides the answer. Operator precedence runs brackets first, then powers (^), then multiplication and division (* and /), then addition and subtraction (+ and -), working from left to right, so =2+3*4 gives 14 while =(2+3)*4 gives 20; a percentage is entered with % and a power with ^. A nested IF puts a second IF where the first one's else-answer would go, so =IF(A1>=80,\"Grade 1\",IF(A1>=65,\"Grade 2\",\"Grade 3\")) tests a mark twice and returns the first grade whose test is true. SUMIF and COUNTIF add or count only the rows that meet a condition, and MIN, MAX and COUNT give the smallest value, the largest value and how many numbers there are. The error values each name a fault: #DIV/0! divides by zero, #REF! points at a cell that was deleted, #VALUE! has text where a number belongs, and #NAME? is a function name the spreadsheet does not recognise. The Basic System Functions of SUM and AVERAGE are where all of this starts.\n\nFormula Replication is what happens when a formula is copied, and the difference between the four reference forms is the whole chapter. A relative reference such as B2 changes as the formula is filled, so =B2*$C$1 in D2 becomes =B3*$C$1 in D3 and =B10*$C$1 in D10: the row follows the copy while the absolute reference $C$1 stays fixed on the tax rate in that one cell. $A$1 is absolute in both directions, $A1 keeps the column and lets the row move, and A$1 keeps the row and lets the column move, so filling across changes only what is relative. The fill handle, the small square at the bottom-right of the selection, copies the formula down or across; a copy adjusts the references while a cut moves the formula and leaves its references pointing at the same cells.\n\nData Manipulation is the set of operations that turns a long list into an answer without retyping it. Sort orders the range by one column and then by a second key, so a class list is ordered by surname and then by first name. AutoFilter puts a drop-down on each heading and shows only the rows that match, and conditional formatting colours a cell by its own value - every mark below 50 turns red without anyone reading the numbers. Data validation restricts what can be typed, most usefully as a drop-down list, and freeze panes keeps the headings on screen while the rows scroll. Subtotals group sorted rows and total each group, and a pivot table goes further: rows, columns and values are dragged into place and thousands of records are cross-tabulated in seconds, which is the real answer to the question of what the data says.\n\nCharting Operations are a sequence of choices, not a single button. Select the range including the header labels, because those labels become the series names and the legend, then choose Insert and the chart type. Every chart then has parts to check: a chart title that says what is shown, a category axis along the bottom, a value axis with a sensible scale, a legend naming each series, the data series themselves, and data labels where the exact figure matters. The selection rule follows from the question: a line chart shows a trend over time, a column or bar chart compares categories, and a pie chart shows the parts of one whole and needs exactly one data series. A chart can be moved on its own sheet or placed on a sheet of its own.",
                 "objectives": [
                     "Use complex formulas and create data visualisations"
                 ],
@@ -478,11 +527,103 @@
                     "Absolute/Relative Referencing",
                     "IF/VLOOKUP Functions",
                     "Pivot Tables",
-                    "Charts"
+                    "Charts",
+                    "Cell Address and Range",
+                    "Conditional Formatting"
+
                 ],
                 "experiment": {
                     "type": "visual-converter",
                     "description": "Budget Visualiser: Input financial data using formulas and select the best chart type to represent the trends."
+                }
+            },
+            {
+                "id": "wp-document-protection-features",
+                "title": "Document Protection Features",
+                "content": "Document Protection Features are the settings that decide who may open a file and what may be changed once it is open. They live in the file itself - in the Save As options and on the Review tab - so they travel with the document when it is emailed and are still in force on the reader's computer. Protection is set by the person who creates the document, and it is the first thing to check when a file will not let you type.\n\nA password to open encrypts the file so that nothing is readable until the correct password is typed; lose it and the document cannot be recovered, which is why a password is never written in the same folder as the file. Mark as Final is much weaker: the file opens read-only and the program shows a bar saying it has been marked final, but a reader who knows where to look can turn that off, so it discourages edits rather than blocking them. Restrict editing is the middle setting - choose comments only and every other keystroke is refused, or choose tracked changes only and every edit is recorded as a change - and the restriction is lifted by unprotecting with the password. A read-only recommended option only asks the reader, and a password to modify lets the file be opened and read while saving an edit needs the password.\n\nThe worked example is a marked script. On Report.docx set a password to open of CSEC2024, close the file and re-open it: the password is demanded before a single word appears. Mark as Final, then try to type in the body and find it read-only. Restrict editing to comments only and type into the body again: it is refused, and only a comment is accepted. Unprotect with the password and the text edits normally.\n\nBe honest about the limits, because an exam question asks for them. Protection is not a backup - a damaged or deleted file is still lost - it is not encryption against a reader who has the password, and it cannot stop someone taking a copy or a screenshot of what they can see.",
+                "objectives": [
+                    "Set a password to open a document and re-open it to show the password is required",
+                    "Explain the difference between Mark as Final, restrict editing and a password to modify",
+                    "Restrict editing to comments only or to tracked changes only, then unprotect the document",
+                    "State what document protection does not do"
+                ],
+                "concepts": [
+                    "Password to open",
+                    "Mark as Final",
+                    "Restrict editing",
+                    "Read-only",
+                    "Protection is not a backup"
+                ],
+                "experiment": {
+                    "type": "simulation",
+                    "description": "Protect the Script: set a password to open, mark the file as final, restrict editing to comments only, then unprotect it and edit."
+                }
+            },
+            {
+                "id": "wp-fillable-electronic-forms",
+                "title": "Fillable Electronic Forms",
+                "content": "Fillable Electronic Forms are documents built so that a person can type into the blanks and nowhere else. Instead of a printed form with lines to write on, the writer places content controls - a text field for a name, a check box for a yes or no, a drop-down list for a fixed choice, a date picker for a date - and then protects the form so that only those controls accept typing.\n\nEach control carries placeholder text: the grey guidance such as \"Type your full name\" that disappears the moment the field is typed into, telling the person filling the form what belongs there without them having to ask. A text content control holds one line of typed text, or several if the control is set to allow it. A check box records a tick for yes or no. A drop-down list offers one choice from a fixed list, so a parish is picked from Kingston, St Andrew or St James and cannot be misspelt. A date picker opens a calendar and stores a real date rather than a line of text.\n\nThe worked example is a club membership form. Insert a text control for Full name, a date picker for Date of birth, a drop-down for Parish with three entries and a check box for Returning member. Type the guidance into each placeholder, protect the form, then fill it in: the parish can only be chosen from the list, and typing over it is refused.\n\nA fillable form beats a printed one for a reason worth stating: the answer is captured once as data, so nobody re-types it into a spreadsheet, every reply uses the same choices in the same order, and the collected answers can be counted and sorted immediately. Save the finished document as a template so the blank form can be reopened without overwriting a completed copy.",
+                "objectives": [
+                    "Insert text, check box, drop-down and date picker content controls into a form",
+                    "Write placeholder text that tells the reader what to enter",
+                    "Protect a form so that only the fields accept typing",
+                    "Explain why a fillable electronic form is better than a printed one",
+                    "Save a completed form as a template"
+                ],
+                "concepts": [
+                    "Content controls",
+                    "Text field and check box",
+                    "Drop-down list",
+                    "Placeholder text",
+                    "Form protection"
+                ],
+                "experiment": {
+                    "type": "simulation",
+                    "description": "Build a Membership Form: insert a text control, a date picker, a drop-down list and a check box, protect the form, then fill it in."
+                }
+            },
+            {
+                "id": "sheet-column-and-row-manipulation",
+                "title": "Column and Row Manipulation",
+                "content": "Column and Row Manipulation is how a sheet is edited after the data is in it, and every one of the operations has a consequence for the formulas that point at that data. Inserting a row above row 5 pushes the rows below it down, and inserting a column between B and C pushes the columns right. A SUM that spanned B2:C2 is adjusted by the spreadsheet to B2:D2, because the range still covers the same cells plus the new one.\n\nDeleting is the operation that breaks things. Delete a row or a column and the data in it is gone, and any formula that pointed at those cells shows #REF!, the error that means a reference no longer exists. That is why a deleted column is restored with Undo rather than retyped, and why a formula is read before a column is removed.\n\nThe look of a sheet is part of the manipulation too. Column width and row height are dragged or set as numbers, and autofit fits a column to its widest entry. Wrap text lets a long label show on several lines inside one cell instead of spilling across its neighbours or being cut off. Hide and unhide put a row or a column out of sight without deleting it: the data is still there and still calculated, which is exactly what you want when a printout should show the totals but not the workings.\n\nThe worked example is a class list with names in column A, Test 1 in column B and a Total in column D holding =SUM(B2:C2). Insert a column for Test 2 between B and C and watch the range become B2:D2. Delete column B and the Total shows #REF!. Set column A to width 25 with wrap text, then hide rows 8 to 20 for printing.",
+                "objectives": [
+                    "Insert and delete rows and columns and say what happens to the data and to a formula that spans them",
+                    "Explain the #REF! error a dependent formula shows after a delete",
+                    "Resize a column, autofit it and wrap a long label inside one cell",
+                    "Hide and unhide rows and columns and explain that hiding is not deleting"
+                ],
+                "concepts": [
+                    "Insert and delete rows and columns",
+                    "#REF! error",
+                    "Column width and row height",
+                    "Wrap text",
+                    "Hide and unhide"
+                ],
+                "experiment": {
+                    "type": "simulation",
+                    "description": "Edit the Class List: insert a column between B and C, watch the SUM range grow, delete a column to see #REF!, then wrap text and hide rows for printing."
+                }
+            },
+            {
+                "id": "sheet-worksheet-management",
+                "title": "Worksheet Management",
+                "content": "Worksheet Management is about the tabs along the bottom of the window, and it is where a spreadsheet stops being one table and becomes a small system. A workbook is the whole file; a worksheet is one sheet inside it. From a sheet tab you rename a sheet, add one, delete one, move it to another position and copy it - and copying Jan to make Feb is the standard way to build a set of months with identical headings.\n\nSheet tabs can also be grouped: select two or more tabs and anything typed appears on all of them, which is how the same title and column headings are set up on twelve sheets at once. Grouping is powerful and dangerous, so ungroup before entering data that differs from sheet to sheet.\n\nA cross-sheet reference makes one sheet read another. The syntax is Sheet!Cell, so =Jan!B4 reads cell B4 on the sheet named Jan, and =Jan!B4+Feb!B4 adds January's figure to February's; read it aloud as \"Jan, B4\". A sheet name that contains a space needs quotes - 'Test Scores'!B4 - which is one good reason to keep sheet names short. A formula built this way is how a Quarter sheet totals twelve monthly sheets without anyone retyping a figure.\n\nPrinting belongs to the same chapter. A print area limits printing to a chosen range, and print titles repeat chosen rows at the top of every printed page so that the headings appear on page 2 as well as page 1. You also choose whether to print the active sheet or the whole workbook.\n\nThe worked example is three months: rename Sheet1 to Jan, copy it to make Feb and Mar, add a Quarter sheet and type =Jan!B4+Feb!B4+Mar!B4 in it, then set a print area of A1:D20 with rows 1 and 2 as print titles.",
+                "objectives": [
+                    "Tell a workbook from a worksheet and rename, add, delete, move and copy a sheet from its tab",
+                    "Group sheets so that one typing appears on all of them",
+                    "Write a cross-sheet reference such as =Jan!B4 and read Sheet!Cell aloud",
+                    "Set a print area and repeat header rows as print titles"
+                ],
+                "concepts": [
+                    "Workbook vs worksheet",
+                    "Sheet tabs",
+                    "Cross-sheet reference",
+                    "Sheet!Cell syntax",
+                    "Print area and print titles"
+                ],
+                "experiment": {
+                    "type": "simulation",
+                    "description": "Build Jan, Feb and Mar: rename a sheet tab, copy it, group the tabs, write a cross-sheet reference into a Quarter sheet and set the print area with print titles."
                 }
             }
         ]

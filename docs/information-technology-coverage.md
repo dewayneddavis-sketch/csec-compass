@@ -5,7 +5,7 @@ Owner's target list: `/home/team/shared/information-technology-coverage-target-c
 Machine-checked by `tools/check-information-technology-coverage.mjs` — this table is parsed by that harness, so
 the columns below are a contract, not decoration.
 
-**Headline: 61 chapters = REUSE 8 + EXTEND 30 + NEW 23** against the 12 frozen lessons `it-l1-1`…`it-l6-2`
+**Headline: 61 chapters = REUSE 7 + EXTEND 31 + NEW 23** against the 12 frozen lessons `it-l1-1`…`it-l6-2`
 in 6 modules. End state: **35 lessons** (12 frozen + 23 NEW). Chapter identity is always the pair
 `(section, number)` — never the chapter name, because "Variables, Constants, and Data Types" is two
 different chapters (#52 conceptual, #59 syntactic) and "Data Types" appears a third time inside #46.
@@ -33,11 +33,14 @@ this harness keeps an `EXPECTED_IDS` union plus a `PENDING_IDS` list so a lost b
 |---|---|---|---|---|---|
 | **0** lab-type honesty | – | – | – | – | modules.json |
 | **A** S1 fundamentals | 1–11, 13 (12; #12→D) | 9 `fund-` | `it-l1-1` (#3, #5, #6) | 0 | modules.json, lessonSets.js, this doc, the coverage harness |
-| **B** S4+S5 office | 24–44 (21) | 6 (`wp-`×2, `web-`×2, `sheet-`×2) | `it-l6-1` (#24, #25, #26, #27, #29), `it-l6-2` (#37, #39, #42, #43) | 6 | modules.json, lessonSets.js |
+| **B** S4+S5 office | 24–44 (21) | 6 (`wp-`×2, `web-`×2, `sheet-`×2) | `it-l6-1` (#24, #25, #26, #27, #29), `it-l6-2` (#37, #39, #40, #42, #43) | 5 | modules.json, lessonSets.js, this doc, the coverage harness |
 | **C** S2+S3 networks/impact | 14–23 (10) | 5 (`net-`×2, `imp-`×3) | `it-l4-1` (#14, #15), `it-l4-2` (#18, #19, #20) | 0 | modules.json, NEW `it-mod-7`, metadata.json, lessonSets.js |
 | **D** S6+S7+S8 (+ orphan) | 12, 45–61 (14) | 3 `impl-` | `it-l3-1` (#12, #45, #46, #47), `it-l2-1` (#49, #50, #51, #53, #55), `it-l2-2` (#52, #57, #58, #60) | 2 | modules.json, lessonSets.js |
 
-Totals: 12 + 21 + 10 + 18 = 61 · NEW 9 + 6 + 5 + 3 = 23 · EXTEND 3 + 8 + 5 + 14 = 30 · REUSE 0 + 6 + 0 + 2 = 8.
+Totals: 12 + 21 + 10 + 18 = 61 · NEW 9 + 6 + 5 + 3 = 23 · EXTEND 3 + 10 + 5 + 13 = 31 · REUSE 0 + 5 + 0 + 2 = 7.
+
+#40 Formula Replication was upgraded from REUSE to EXTEND on the lead's decision (F1, 2026-11-05): one
+clause about relative vs absolute referencing, with no worked copy, is not coverage.
 
 Target module shape (7 modules, 35 lessons): `it-mod-1` Computer Fundamentals 2 → **11** (the 9 `fund-`);
 `it-mod-2` Programming 2 → 5; `it-mod-3` Databases 2 (unchanged); `it-mod-4` Networking & Internet 2 → 4;
@@ -45,22 +48,44 @@ Target module shape (7 modules, 35 lessons): `it-mod-1` Computer Fundamentals 2 
 Social/Economic Impact of ICT (new) 0 → 3. New lessons are APPENDED inside their module, never before an
 existing lesson. `metadata.json estimatedModules` 6 → 7 happens in slice C.
 
-## State of this branch: Slice 0 + Slice A landed
+## State of this branch: Slice 0 + Slice A + Slice B landed
 
 - **Slice 0** — the 12 existing lessons now declare the lab type their own description describes. Nine of
   them claimed `code-playground`; only `it-l2-2` (write and run code) and `it-l5-1` (edit HTML code) actually
   describe writing code. `it-l1-1` keeps `drag-drop`, `it-l4-2` keeps `simulation`.
 - **Slice A** — 9 NEW `fund-` lessons in `it-mod-1` (2 → 11 lessons) and 3 EXTEND chapters grown in place on
   the frozen `it-l1-1` (pure insertion: the original opening and every original objective/concept remain).
-- **Not yet landed:** the 14 NEW ids of slices B/C/D — `net-mobile-communication-importance`,
+- **Slice B** — 6 NEW office-tool lessons (`it-mod-5` 2 → 4, `it-mod-6` 2 → 6) and 10 EXTEND chapters grown
+  in place on the two frozen hosts `it-l6-1` (#24, #25, #26, #27, #29) and `it-l6-2` (#37, #39, #40, #42,
+  #43). Both are pure insertions: the old `content` is the prefix of the new, and every original concept
+  survives in its original position. The slice closes three pre-existing honesty gaps — **MIN / MAX / COUNT**
+  are now taught by name in #39 (they existed only in the lab deck), **Pivot Tables** are taught in #42 (they
+  were a host concept with no teaching), and **Headers and Footers** and **Find and Replace** are named in
+  #26 (they existed only as lab-deck pairs).
+- **Not yet landed:** the 8 NEW ids of slices C and D — `net-mobile-communication-importance`,
   `net-web-technologies`, `imp-ict-and-employment`, `imp-computer-related-professions`,
-  `imp-societal-and-economic-impact`, `wp-document-protection-features`, `wp-fillable-electronic-forms`,
-  `web-website-structure-and-organisation`, `web-website-evaluation-and-publishing`,
-  `sheet-column-and-row-manipulation`, `sheet-worksheet-management`, `impl-programming-language-overview`,
+  `imp-societal-and-economic-impact`, `impl-programming-language-overview`,
   `impl-variables-constants-and-data-types`, `impl-program-documentation`. The harness lists them as
   `PENDING_IDS` and fails the moment one is landed without the list shrinking.
 - **Frozen in this PR:** `practice.json` (100) and `knowledge-check.json` (25). The bank re-balance is a
   separate single-owner pass after the slices, to a 5-group mapping keyed by lesson id.
+
+### The REUSE rows — what the host lesson actually says
+
+A `REUSE` row claims the legacy lesson already teaches the chapter. These are the words it uses. Two rows
+stay `paraphrase` because the chapter name never appears in the host: #33 lives in the frozen `it-l5-1`,
+which this slice does not touch, and #36 is taught under different words ("purpose" is never written).
+#30 and #38 were `paraphrase` before this slice and become `taught` because the extensions on `it-l6-1`
+and `it-l6-2` name them — **Mail Merge Feature** in the #29 extension and **Basic System Functions** in the
+#39 extension — while the original teaching sentence is left exactly as it was.
+
+| # | chapter | host | label | the words the lesson uses |
+|---|---|---|---|---|
+| 30 | Mail Merge Feature | `it-l6-1` | by-name | "Mail Merge," which allows you to create personalised letters or labels for a large group of people by linking a document to a data source — named again in the #29 extension as the Mail Merge Feature |
+| 33 | Simple Web Page Design | `it-l5-1` | by-name (paraphrase row) | "write clean, valid HTML code to build simple webpages" |
+| 34 | Hyperlinks | `it-l5-1` | by-name | **two phrases**, both in `it-l5-1`: "<a> for hyperlinks (which link to other pages)" and "the 'href' attribute for links" |
+| 36 | Spreadsheet Purpose | `it-l6-2` | paraphrase | "Spreadsheets are powerful tools for organising, analysing, and visualising numerical data." — the word "purpose" never appears |
+| 38 | Basic System Functions | `it-l6-2` | by-name | "Functions are built-in formulas… such as SUM, AVERAGE, IF…, and VLOOKUP"; MIN / MAX / COUNT were in the lab deck only and are now taught in the #39 extension |
 
 ### Slice 0 — honest lab types
 
@@ -106,27 +131,27 @@ existing lesson. `metadata.json estimatedModules` 6 → 7 happens in slice C.
 | 3 | 21 | ICT and Employment | NEW | pending | imp-ict-and-employment | - |
 | 3 | 22 | Computer-Related Professions | NEW | pending | imp-computer-related-professions | - |
 | 3 | 23 | Societal and Economic Impact of ICT | NEW | pending | imp-societal-and-economic-impact | - |
-| 4 | 24 | Document Creation and Content Integration | EXTEND | pending | it-l6-1 | - |
-| 4 | 25 | Document Formatting Features | EXTEND | pending | it-l6-1 | - |
-| 4 | 26 | Document Editing and Structural Organization | EXTEND | pending | it-l6-1 | - |
-| 4 | 27 | Document Review Features | EXTEND | pending | it-l6-1 | - |
-| 4 | 28 | Document Protection Features | NEW | pending | wp-document-protection-features | - |
-| 4 | 29 | Table of Contents Generation | EXTEND | pending | it-l6-1 | - |
-| 4 | 30 | Mail Merge Feature | REUSE | paraphrase | it-l6-1 | mail merge |
-| 4 | 31 | Fillable Electronic Forms | NEW | pending | wp-fillable-electronic-forms | - |
-| 4 | 32 | Website Structure and Organization | NEW | pending | web-website-structure-and-organisation | - |
-| 4 | 33 | Simple Web Page Design | REUSE | paraphrase | it-l5-1 | build simple webpages |
-| 4 | 34 | Hyperlinks | REUSE | taught | it-l5-1 | hyperlinks |
-| 4 | 35 | Website Evaluation and Publishing | NEW | pending | web-website-evaluation-and-publishing | - |
+| 4 | 24 | Document Creation and Content Integration | EXTEND | taught | it-l6-1 | document creation and content integration decides how a document begins and how the material inside it stays connected |
+| 4 | 25 | Document Formatting Features | EXTEND | taught | it-l6-1 | document formatting features divide into three layers |
+| 4 | 26 | Document Editing and Structural Organization | EXTEND | taught | it-l6-1 | document editing and structural organisation is where a long document is broken into parts that behave differently |
+| 4 | 27 | Document Review Features | EXTEND | taught | it-l6-1 | document review features are the tools that let one document pass between several people without losing the thread |
+| 4 | 28 | Document Protection Features | NEW | taught | wp-document-protection-features | document protection features are the settings that decide who may open a file and what may be changed once it is open |
+| 4 | 29 | Table of Contents Generation | EXTEND | taught | it-l6-1 | table of contents generation is automatic, not typed |
+| 4 | 30 | Mail Merge Feature | REUSE | taught | it-l6-1 | the mail merge feature is the other automation this lesson already teaches |
+| 4 | 31 | Fillable Electronic Forms | NEW | taught | wp-fillable-electronic-forms | fillable electronic forms are documents built so that a person can type into the blanks and nowhere else |
+| 4 | 32 | Website Structure and Organization | NEW | taught | web-website-structure-and-organisation | website structure and organisation is the planning that happens before a single page is written |
+| 4 | 33 | Simple Web Page Design | REUSE | paraphrase | it-l5-1 | write clean, valid html code to build simple webpages |
+| 4 | 34 | Hyperlinks | REUSE | taught | it-l5-1 | for hyperlinks (which link to other pages) |
+| 4 | 35 | Website Evaluation and Publishing | NEW | taught | web-website-evaluation-and-publishing | website evaluation and publishing are the last two jobs on a site |
 | 5 | 36 | Spreadsheet Purpose | REUSE | paraphrase | it-l6-2 | organising, analysing, and visualising numerical data |
-| 5 | 37 | Spreadsheet Terminology | EXTEND | pending | it-l6-2 | - |
-| 5 | 38 | Basic System Functions | REUSE | paraphrase | it-l6-2 | functions are built-in formulas |
-| 5 | 39 | Advanced Arithmetic Formulae | EXTEND | pending | it-l6-2 | - |
-| 5 | 40 | Formula Replication | REUSE | paraphrase | it-l6-2 | copying formulas |
-| 5 | 41 | Column and Row Manipulation | NEW | pending | sheet-column-and-row-manipulation | - |
-| 5 | 42 | Data Manipulation | EXTEND | pending | it-l6-2 | - |
-| 5 | 43 | Charting Operations | EXTEND | pending | it-l6-2 | - |
-| 5 | 44 | Worksheet Management | NEW | pending | sheet-worksheet-management | - |
+| 5 | 37 | Spreadsheet Terminology | EXTEND | taught | it-l6-2 | spreadsheet terminology starts with the grid |
+| 5 | 38 | Basic System Functions | REUSE | taught | it-l6-2 | the basic system functions of sum and average are where all of this starts |
+| 5 | 39 | Advanced Arithmetic Formulae | EXTEND | taught | it-l6-2 | advanced arithmetic formulae are built from the same operators in a fixed order |
+| 5 | 40 | Formula Replication | EXTEND | taught | it-l6-2 | formula replication is what happens when a formula is copied |
+| 5 | 41 | Column and Row Manipulation | NEW | taught | sheet-column-and-row-manipulation | column and row manipulation is how a sheet is edited after the data is in it |
+| 5 | 42 | Data Manipulation | EXTEND | taught | it-l6-2 | data manipulation is the set of operations that turns a long list into an answer without retyping it |
+| 5 | 43 | Charting Operations | EXTEND | taught | it-l6-2 | charting operations are a sequence of choices, not a single button |
+| 5 | 44 | Worksheet Management | NEW | taught | sheet-worksheet-management | worksheet management is about the tabs along the bottom of the window |
 | 6 | 45 | Database Concepts | EXTEND | pending | it-l3-1 | - |
 | 6 | 46 | Database Terminology and Data Types | EXTEND | pending | it-l3-1 | - |
 | 6 | 47 | Database Creation and Structure | EXTEND | pending | it-l3-1 | - |
