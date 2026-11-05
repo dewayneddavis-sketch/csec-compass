@@ -6,10 +6,14 @@
             {
                 "id": "it-l1-1",
                 "title": "Hardware and Software",
-                "content": "A computer system consists of two main components: hardware and software. Hardware refers to the physical parts of the computer that you can touch. Internal hardware include the Central Processing Unit (CPU) \u2014 the 'brain' of the computer, Random Access Memory (RAM) for temporary storage, and Read-Only Memory (ROM) which contains permanent startup instructions. External hardware, or peripherals, include input devices (like keyboards and scanners), output devices (like monitors and printers), and storage devices (like hard drives and USB flash drives).\n\nSoftware is a set of instructions that tells the hardware what to do. It is divided into two types: System Software and Application Software. System software includes the Operating System (like Windows, macOS, or Linux) that manages the computer's resources and Utility Programs (like antivirus or file managers) that maintain the system. Application software includes programs that perform specific tasks for the user, such as word processors, web browsers, and games.\n\nIn the CSEC IT syllabus, you must be able to identify these components and explain their functions. You will also learn about the fetch-decode-execute cycle of the CPU and the differences between volatile (RAM) and non-volatile (ROM/Storage) memory. Understanding how hardware and software interact is fundamental to all areas of Information Technology.",
+                "content": "A computer system consists of two main components: hardware and software. Hardware refers to the physical parts of the computer that you can touch. Internal hardware include the Central Processing Unit (CPU) \u2014 the 'brain' of the computer, Random Access Memory (RAM) for temporary storage, and Read-Only Memory (ROM) which contains permanent startup instructions. External hardware, or peripherals, include input devices (like keyboards and scanners), output devices (like monitors and printers), and storage devices (like hard drives and USB flash drives).\n\nSoftware is a set of instructions that tells the hardware what to do. It is divided into two types: System Software and Application Software. System software includes the Operating System (like Windows, macOS, or Linux) that manages the computer's resources and Utility Programs (like antivirus or file managers) that maintain the system. Application software includes programs that perform specific tasks for the user, such as word processors, web browsers, and games.\n\nIn the CSEC IT syllabus, you must be able to identify these components and explain their functions. You will also learn about the fetch-decode-execute cycle of the CPU and the differences between volatile (RAM) and non-volatile (ROM/Storage) memory. Understanding how hardware and software interact is fundamental to all areas of Information Technology.\n\nHardware Components and IPOS Cycle\n\nEvery computer, from a phone to a mainframe, carries out the same four steps, and they are remembered as the IPOS cycle: Input, Processing, Output and Storage. Input is data going in through a keyboard, a mouse, a scanner, a microphone or a touchscreen. Processing is the CPU working on that data. Output is the result coming out through a monitor, a printer, speakers or a projector. Storage is where the data and the results are kept for later, on an SSD, a hard disk, a USB flash drive or in the cloud.\n\nThe hardware components behind those steps are the system unit and its parts. The motherboard carries and connects everything; the CPU sits on it and does the processing, fetching each instruction, decoding it and executing it. Memory (RAM) holds the programs and data in use while the power is on, which is why it is called volatile. Read-only memory and the firmware hold the start-up instructions, and the storage drive keeps the files when the power is off. The power supply unit feeds them all, and the buses carry signals between them.\n\nInput/Output Devices\n\nInput devices bring data into the system and output devices take results out of it. Common input devices are the keyboard for text, the mouse or trackpad for pointing, the scanner for turning a printed page into an image, the microphone for sound, the webcam for video, the touchscreen for direct touch and the barcode reader at a shop till.\n\nCommon output devices are the monitor or projector for soft copy, the printer for hard copy, the speakers and headphones for sound, and the plotter for large drawings. Some devices do both jobs and are called input/output devices: a touchscreen both shows and accepts, a multifunction printer scans and prints, and a modem sends and receives. When an exam question asks you to choose a device for a situation, name the device, say whether it is input or output, and give the reason: a scanner to keep a copy of a birth certificate, a barcode reader to price goods quickly, a projector to show a presentation to a class.\n\nSoftware Types and Roles\n\nSoftware is the set of instructions that makes the hardware do something, and it is split into system software and application software, with a third group of utility programs that keep the machine healthy. The role of system software is to run the machine itself: the operating system manages the processor, memory, storage, input and output, provides the user interface, and keeps the files in order, while device drivers let the operating system talk to a particular printer or graphics card.\n\nThe role of application software is to do the user's work: a word processor writes documents, a spreadsheet calculates, a database stores records, a browser reads web pages, and presentation software prepares slides. Utility programs sit between the two - antivirus software, a file manager, a backup tool, a disk cleaner and a compression tool. General-purpose application software can be made to do many tasks, while special-purpose software does one job, such as payroll or a point-of-sale system. Software can be bought with a licence, rented as a subscription, or be open source, and each choice carries different cost and support.",
                 "objectives": [
                     "Identify internal and external hardware components",
-                    "Differentiate between system and application software"
+                    "Differentiate between system and application software",
+                    "Describe the IPOS cycle: input, processing, output and storage",
+                    "Identify input devices, output devices and input/output devices",
+                    "Distinguish system software, application software and utility programs",
+                    "Explain the role of the operating system and of device drivers"
                 ],
                 "concepts": [
                     "CPU",
@@ -17,7 +21,15 @@
                     "ROM",
                     "Input/Output Devices",
                     "Operating Systems",
-                    "Utility Programs"
+                    "Utility Programs",
+                    "IPOS Cycle",
+                    "Motherboard",
+                    "Power Supply Unit",
+                    "Input Devices",
+                    "Output Devices",
+                    "System Software",
+                    "Application Software",
+                    "Device Drivers"
                 ],
                 "experiment": {
                     "type": "drag-drop",
@@ -38,8 +50,228 @@
                     "Units of Storage (KB, MB, GB, TB)"
                 ],
                 "experiment": {
-                    "type": "code-playground",
+                    "type": "visual-converter",
                     "description": "Binary Converter: Interactive tool to toggle bits on/off and see the resulting decimal and character representations."
+                }
+            },
+            {
+                "id": "fund-information-technology-concept",
+                "title": "Information Technology Concept",
+                "content": "The Information Technology Concept is simple to state and easy to underestimate: Information Technology (IT) is the use of computer systems, networks and storage to create, process, store, exchange and use data and information. A school office, a bank, a hospital and a taxi company all practise IT when they use machines and programs to handle information instead of paper.\n\nEvery IT system is built from the same six elements. Hardware is the physical equipment you can touch, such as the computer, the printer and the router. Software is the set of programs that tells the hardware what to do. Data is the raw facts that have not yet been processed, while information is data that has been processed into something meaningful, such as a report or a total. People are the users, technicians and managers who operate the system, and procedures are the written rules and steps for using it. Networks link the parts together so that they can share data.\n\nIT is not the same subject as Computer Science. Computer Science studies how computing works - algorithms, programming languages, how a processor is designed. IT studies how those machines are used to solve an organisation's problems: which system to buy, how to keep data safe, how to train staff, and how to keep the service running when a part fails.\n\nFor CSEC you should be able to name the elements of an IT system, give a Caribbean example of each, and explain why an organisation that loses its data or its network loses business. A shop that cannot reach its point-of-sale system cannot take money; a school that loses its records cannot issue reports. That dependence on information is why IT is studied as a subject in its own right.",
+                "objectives": [
+                    "Define Information Technology and state its purpose",
+                    "Identify the six elements of an IT system: hardware, software, data, people, procedures and networks",
+                    "Explain why organisations depend on IT, using Caribbean examples",
+                    "Distinguish Information Technology from Computer Science"
+                ],
+                "concepts": [
+                    "Information Technology",
+                    "Hardware",
+                    "Software",
+                    "Data",
+                    "Information",
+                    "People",
+                    "Procedures",
+                    "Networks"
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "IT System Match: match each element of an IT system (hardware, software, data, information, people, procedures) to the part it plays."
+                }
+            },
+            {
+                "id": "fund-computer-system-types",
+                "title": "Computer System Types",
+                "content": "Computer System Types are classified by size, speed, cost and the number of users they serve. The four families you must know are the supercomputer, the mainframe, the minicomputer (also called a midrange computer) and the microcomputer, plus the embedded system that hides inside another machine.\n\nA supercomputer is the fastest and most expensive class. It is built from thousands of processors working together and is used for problems that need enormous calculation - weather forecasting and climate modelling, oil exploration, drug design and physics research. A mainframe is designed for very large numbers of transactions at once: it is what sits behind a bank's accounts, a national census and an airline reservation system, where thousands of terminals must be served without a failure.\n\nA minicomputer or midrange computer serves a department rather than a whole country - a hospital records system or a small company's stock control. The microcomputer is the class you use every day: the desktop, the laptop, the tablet and the smartphone are all microcomputers, each with a processor, memory, storage and an operating system. An embedded system is a computer built into a device to control it - the chip in a washing machine, a car engine management unit, a microwave or a point-of-sale terminal.\n\nChoose by the job, not by the price. A single student needs a microcomputer; a bank needs a mainframe; a weather service needs a supercomputer; a washing machine needs an embedded system. For CSEC, be ready to name each type, state two characteristics (speed, cost, size, number of users) and match it to a real use.",
+                "objectives": [
+                    "Name the main Computer System Types: supercomputer, mainframe, minicomputer and microcomputer",
+                    "State the characteristics of each type of computer system",
+                    "Match a computer system type to a suitable use, such as weather forecasting or a bank's transactions",
+                    "Explain what an embedded system is and give two examples"
+                ],
+                "concepts": [
+                    "Supercomputer",
+                    "Mainframe",
+                    "Minicomputer",
+                    "Microcomputer",
+                    "Embedded System",
+                    "Number of Users",
+                    "Processing Speed"
+                ],
+                "experiment": {
+                    "type": "drag-drop",
+                    "description": "Sort the Machines: drag each example (weather forecasting model, census, laptop, smartphone, washing machine) into its computer system type."
+                }
+            },
+            {
+                "id": "fund-cloud-and-local-storage",
+                "title": "Cloud and Local Storage",
+                "content": "Cloud and Local Storage are the two places your files can live. Local storage keeps files on a device you own: the hard disk drive (HDD) or solid-state drive (SSD) inside the computer, a USB flash drive, a memory card or an optical disc. Cloud storage keeps files on a provider's servers and reaches them over the internet - Google Drive, OneDrive, Dropbox and iCloud are the common examples.\n\nLocal storage is fast and works without an internet connection, and you control the device. Its weakness is that the device can be lost, stolen, damaged or infected, and then the files go with it. Cloud storage is reachable from any device with the right login, and it usually keeps versions and a backup, so a broken laptop does not mean broken files. Its weakness is dependence on bandwidth and on the provider: a weak internet link makes the file slow to open, and a subscription that lapses can lock you out.\n\nSynchronisation is the feature that makes cloud storage useful: the same file is kept the same on every device that is signed in. Encryption scrambles files so that only the right person can read them, and it matters most in the cloud, where your file is stored on someone else's machine. A backup is a second copy you can restore if the first is lost - and the safest habit is to keep one copy locally and one in the cloud, so neither a stolen laptop nor a failed internet link can destroy your work.\n\nFor CSEC, compare the two on cost, capacity, access, speed, security and backup, and then choose for a stated situation: a video editor with huge files, a student who works on two computers, or a school that must keep records for years.",
+                "objectives": [
+                    "Describe local storage and name three local storage devices",
+                    "Describe cloud storage and name two cloud storage services",
+                    "Compare Cloud and Local Storage on cost, access, speed, security and backup",
+                    "Recommend a storage method for a stated situation and justify the choice"
+                ],
+                "concepts": [
+                    "Local Storage",
+                    "Cloud Storage",
+                    "Synchronisation",
+                    "Backup",
+                    "Bandwidth",
+                    "Encryption",
+                    "Storage Capacity"
+                ],
+                "experiment": {
+                    "type": "interactive-table",
+                    "description": "Storage Comparison Table: fill in the cloud and local columns for cost, access, speed, security and backup, then pick a winner for a scenario."
+                }
+            },
+            {
+                "id": "fund-user-interface-types",
+                "title": "User Interface Types",
+                "content": "The user interface is the part of a system a person actually meets: the screen, the commands and the controls that let a human tell the computer what to do. User Interface Types differ in how much the user has to remember and how much the machine shows.\n\nA graphical user interface (GUI) uses windows, icons, menus and a pointer - the WIMP model. You click icons on a desktop, drag a window to a new place, and pick from a menu, so the system is easy to learn and hard to get badly wrong; it is what most home and school computers use. A command line interface (CLI) takes typed commands instead: you type dir to list files, or type a command with a path to copy a file. It is fast and precise for an expert and can be scripted, but you must remember the commands and the syntax, so it is harder for a beginner.\n\nA menu-driven interface presents a list of numbered choices and asks you to choose one - pressing 1 for a balance at an ATM, or choosing an option with a television remote. It suits a fixed set of tasks and a user who should not have to learn anything. A touch or gesture interface drops the mouse entirely: you tap, swipe and pinch on a phone or tablet. A natural language interface accepts speech or typed sentences, like a voice assistant, and a form-based interface asks you to fill in fields, as a web checkout does.\n\nThe exam question is always suitability: match the interface to the user. A cashier at a busy till needs a GUI with big buttons; a network technician may prefer a CLI; an ATM customer needs a menu-driven interface; a driver needs voice. Be ready to give one advantage and one disadvantage of each type.",
+                "objectives": [
+                    "Identify the main User Interface Types: GUI, CLI, menu-driven, touch, voice and form-based",
+                    "State one advantage and one disadvantage of a GUI and of a CLI",
+                    "Choose a suitable interface for a stated user and justify the choice"
+                ],
+                "concepts": [
+                    "User Interface",
+                    "Graphical User Interface",
+                    "Command Line Interface",
+                    "Menu-driven Interface",
+                    "Touch Interface",
+                    "Natural Language Interface",
+                    "WIMP"
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Interface Classifier: classify each described screen (desktop icons, typed dir command, ATM menu, phone swipe, voice request) as the interface type it shows."
+                }
+            },
+            {
+                "id": "fund-system-suitability-and-specification",
+                "title": "System Suitability and Specification",
+                "content": "System Suitability and Specification is the part of IT that stops people wasting money. The specification is the list of parts and their sizes - processor, memory, storage, graphics, screen and ports. Suitability is the judgement that those parts are enough for the work the user actually does.\n\nRead a specification from the parts outwards. The processor is the chip that carries out the instructions, and its speed is quoted in GHz with a number of cores; more cores and a higher speed mean more work done at once. Memory (RAM) is the working space for open programs, measured in GB - too little and the machine slows to a crawl with several windows open. Storage is where files stay when the power is off, and it is either a fast SSD or a cheaper HDD, measured in GB or TB. A graphics card draws the images, which matters for video editing, design and gaming but hardly at all for typing. Ports are the sockets for connecting a device, such as USB, HDMI and a network socket.\n\nSuitability follows from the job. A student writing assignments needs a modest processor, 8 GB of memory and a reliable SSD; a video editor needs a strong processor, 16 GB or more, a large SSD and a dedicated graphics card; a small office that only runs accounts software needs a basic desktop and a backup drive. Also weigh what the specification does not say: the operating system, the warranty, the ability to upgrade, the weight if it must be carried, and the total cost of ownership.\n\nFor CSEC, be ready to read a quoted specification, say whether it suits a named user, name the part you would upgrade first, and justify the choice in terms of the task.",
+                "objectives": [
+                    "Read a computer specification and explain what each part does",
+                    "Judge whether a specification suits a stated user or task",
+                    "Recommend which component to upgrade and justify the recommendation"
+                ],
+                "concepts": [
+                    "Specification",
+                    "Processor",
+                    "Memory (RAM)",
+                    "Storage",
+                    "Graphics Card",
+                    "Ports",
+                    "Upgrade",
+                    "Cost of Ownership"
+                ],
+                "experiment": {
+                    "type": "simulation",
+                    "description": "Spec a Machine: choose a processor, memory, storage and graphics card for a scenario, then see whether the finished specification is suitable."
+                }
+            },
+            {
+                "id": "fund-basic-hardware-troubleshooting",
+                "title": "Basic Hardware Troubleshooting",
+                "content": "Basic Hardware Troubleshooting is a method, not a guess. When a machine will not work, work through the simplest causes first and change one thing at a time, so that you always know what fixed it.\n\nStart with the power supply and the switch: is it plugged in, is the socket live, is the switch on the back of the machine on? Then check that the cables are firmly connected at both ends - the power cable, the monitor cable, the keyboard and the mouse. Listen for the start-up beep and watch the screen: a single beep and a display usually mean the machine has passed its power-on self-test, while a pattern of beeps or a blank screen points to memory, a loose card or a failed display.\n\nFrom there, test with a known working part: another monitor cable, another keyboard, another power lead. If the machine starts but a device is dead, check that the device is recognised by the system and that its driver is installed; if a printer will not print, check that it is switched on, has paper, and is not holding a stuck job in the queue. Heat and dust cause sudden shutdowns, so check that the fan turns and the vents are clear. Before any repair, back up the data and unplug the machine, and handle the parts by the edges so that static does not damage them.\n\nFinish by recording what you found and what fixed it. A written record turns one repair into knowledge the next person can use, and it is exactly what an exam question asks for when it says to describe a systematic approach.",
+                "objectives": [
+                    "Describe a systematic approach to Basic Hardware Troubleshooting",
+                    "Identify common causes of a computer that will not start or a device that will not work",
+                    "State the safety precautions to take before repairing hardware",
+                    "Explain why the repair should be recorded"
+                ],
+                "concepts": [
+                    "Troubleshooting",
+                    "Power Supply",
+                    "Cables",
+                    "POST Beep",
+                    "Device Driver",
+                    "Print Queue",
+                    "Electrostatic Discharge"
+                ],
+                "experiment": {
+                    "type": "virtual-lab",
+                    "description": "Diagnose the Dead PC: work through the power, cable and start-up beep checks in order and find the faulty part."
+                }
+            },
+            {
+                "id": "fund-data-and-information-distinction",
+                "title": "Data and Information Distinction",
+                "content": "The Data and Information Distinction is one of the most examined ideas in the subject, and it is easy to state: data is raw, unprocessed facts; information is data that has been processed so that it has meaning for the person who receives it.\n\nA list of marks - 45, 78, 62, 91 - is data. Work out the class average, the highest mark and the number of passes, and you have information: a statement a teacher can act on. The same data can produce different information depending on the processing: sorted by name it becomes a register, averaged it becomes a performance summary, totalled it becomes a bill. Data on its own answers no question; information answers a question someone actually asked.\n\nGood information has characteristics you can name and test. It is accurate, meaning correct and free from errors, because decisions built on wrong information are worse than no decision. It is timely, meaning available when it is needed, since yesterday's stock figure cannot price today's order. It is relevant, meaning directly related to the decision being made, and complete, meaning it carries everything the decision needs. It should also be concise, verifiable and worth its cost.\n\nThe old rule still holds: garbage in, garbage out. If the data captured at the keyboard is wrong, every report built on it is wrong, however fast the computer. That is why data capture, validation and verification matter so much in the next chapters of the syllabus.",
+                "objectives": [
+                    "Distinguish between data and information with examples",
+                    "Explain how processing turns data into information",
+                    "State the characteristics of good information: accurate, timely, relevant, complete and concise",
+                    "Explain the garbage in, garbage out rule"
+                ],
+                "concepts": [
+                    "Data",
+                    "Information",
+                    "Processing",
+                    "Accurate",
+                    "Timely",
+                    "Relevant",
+                    "Complete",
+                    "Garbage In Garbage Out"
+                ],
+                "experiment": {
+                    "type": "data-explorer",
+                    "description": "Data to Information: take a list of raw marks and process it into a class report, seeing the information the data produces."
+                }
+            },
+            {
+                "id": "fund-online-information-reliability",
+                "title": "Online Information Reliability",
+                "content": "Online Information Reliability is the skill of deciding whether a page on the internet deserves to be believed. Anyone can publish, so a page being first in a search result proves nothing about whether it is true.\n\nJudge a source on five questions. Authority: who wrote it, and what makes them qualified? A government statistics page, a university site or a named expert carries more weight than an unsigned blog post with no author. Accuracy: are there references, figures you can check and no obvious errors? Currency: is there a date, and is it recent enough for the question - a five-year-old page may still be right about history and wrong about prices. Objectivity: is the page selling something or pushing one side, or does it present evidence? Coverage: does it treat the whole question or only the part that suits it?\n\nRead the address as evidence. The domain ending tells you who published: a government site, an educational institution, an organisation or a commercial site, and each has a different reason to publish. A secure connection (HTTPS) means the page was delivered privately; it says nothing at all about whether the content is true, which is a distinction candidates lose marks on every year.\n\nFinally, cross-check. Find a second independent source that says the same thing, and prefer sources that name their evidence. Be alert to misinformation, which is false content shared by people who believe it, and to disinformation, which is false content shared on purpose. Artificial intelligence now writes fluent pages, so fluency is no longer proof of accuracy: check the author, the date and the evidence, and cite what you use. A rumour forwarded on social media without a source is the everyday case.",
+                "objectives": [
+                    "Evaluate an online source on authority, accuracy, currency, objectivity and coverage",
+                    "Interpret a web address and its domain ending as evidence about the publisher",
+                    "Explain why HTTPS does not prove that content is true",
+                    "Describe how to cross-check information and cite a source"
+                ],
+                "concepts": [
+                    "Reliability",
+                    "Authority",
+                    "Accuracy",
+                    "Currency",
+                    "Objectivity",
+                    "Domain",
+                    "Cross-check",
+                    "Misinformation",
+                    "Disinformation"
+                ],
+                "experiment": {
+                    "type": "interactive-quiz",
+                    "description": "Judge the Source: read five web sources and decide whether each is reliable, then see the evidence behind the answer."
+                }
+            },
+            {
+                "id": "fund-file-organisation",
+                "title": "File Organisation",
+                "content": "File Organisation is how you arrange stored work so that you - and anyone else - can find a file again. A computer stores files in a hierarchy: a drive holds folders, a folder holds files and more folders, and so on down the tree.\n\nA file is a single document, image, sound or program saved with a name and an extension. The extension is the part of the name after the dot and it shows the file type: a word-processed document, a spreadsheet, an image, a compressed archive or an executable program. A folder (or directory) is a container that groups related files. The path is the full address of a file, from the drive down through each folder to the file itself, and the root directory is the top level of a drive where the tree starts.\n\nGood organisation follows a few habits. Give files names that say what they are and use a date pattern that sorts correctly, such as 2026-03-14-assignment, instead of final-final2. Group by project, subject or year rather than by file type alone, keep a folder for work in progress and one for finished work, and delete duplicates instead of keeping three copies. Search and sort tools only help if the names mean something.\n\nKeep the tree safe and portable: take a backup, keep a copy in the cloud as well as locally, check the properties of a file when you need its size or its date, and set permissions so that other users cannot change work that is not theirs. A clean folder structure is the difference between finding a file in seconds and rewriting it.",
+                "objectives": [
+                    "Explain what a file, a folder, a path and an extension are",
+                    "Describe a sensible folder structure for school or office work",
+                    "Apply naming conventions that make files easy to find",
+                    "Explain why File Organisation matters for backup and sharing"
+                ],
+                "concepts": [
+                    "File",
+                    "Folder",
+                    "File Extension",
+                    "Path",
+                    "Root Directory",
+                    "Naming Convention",
+                    "Backup",
+                    "Permissions"
+                ],
+                "experiment": {
+                    "type": "outliner",
+                    "description": "Build the Folder Tree: arrange folders for a school project and file each document in the right place."
                 }
             }
         ]
@@ -63,7 +295,7 @@
                     "Flowchart Symbols"
                 ],
                 "experiment": {
-                    "type": "drag-drop",
+                    "type": "flowchart-builder",
                     "description": "Flowchart Builder: Assemble a flowchart for a logical process (e.g., 'Grade Calculator') using drag-and-drop symbols."
                 }
             },
@@ -106,7 +338,7 @@
                     "One-to-Many Relationships"
                 ],
                 "experiment": {
-                    "type": "code-playground",
+                    "type": "schema-designer",
                     "description": "Schema Designer: Create a database schema for a school system, defining tables and linking them with primary keys."
                 }
             },
@@ -124,7 +356,7 @@
                     "Report Generation"
                 ],
                 "experiment": {
-                    "type": "code-playground",
+                    "type": "drag-drop",
                     "description": "Database Query Builder: Drag fields and criteria to build SQL queries visually and see the resulting data set."
                 }
             }
@@ -148,7 +380,7 @@
                     "Wireless Networking"
                 ],
                 "experiment": {
-                    "type": "code-playground",
+                    "type": "network-topology",
                     "description": "Network Topology Drag: Connect devices into star, bus, or ring topologies and test the network connectivity."
                 }
             },
@@ -207,7 +439,7 @@
                     "JS Variables & Functions"
                 ],
                 "experiment": {
-                    "type": "code-playground",
+                    "type": "web-builder",
                     "description": "Style-a-Page: Use a CSS panel to change colours, fonts, and layouts of a template webpage instantly."
                 }
             }
@@ -231,7 +463,7 @@
                     "Styles"
                 ],
                 "experiment": {
-                    "type": "code-playground",
+                    "type": "simulation",
                     "description": "Mail Merge Simulator: Link a data source to a template letter and generate personalised invites for a group."
                 }
             },
@@ -249,7 +481,7 @@
                     "Charts"
                 ],
                 "experiment": {
-                    "type": "code-playground",
+                    "type": "visual-converter",
                     "description": "Budget Visualiser: Input financial data using formulas and select the best chart type to represent the trends."
                 }
             }
