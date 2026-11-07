@@ -1,5 +1,5 @@
 [
- {
+{
   "id": "p1",
   "question": "Which of the following is an example of system software?",
   "options": [
@@ -12,7 +12,7 @@
   "explanation": "Operating systems like Windows 11 are system software that manage computer resources.",
   "topic": "it-l1-1"
  },
- {
+{
   "id": "p2",
   "question": "What is the decimal equivalent of the binary number 1011?",
   "options": [
@@ -25,20 +25,72 @@
   "explanation": "(1 × 8) + (0 × 4) + (1 × 2) + (1 × 1) = 8 + 0 + 2 + 1 = 11.",
   "topic": "it-l1-2"
  },
- {
-  "id": "p3",
-  "question": "In a flowchart, what does the diamond symbol represent?",
+{
+  "id": "p101",
+  "question": "Which of these lists three of the six elements every IT system is built from?",
   "options": [
-   "Start/End",
-   "Process",
-   "Decision",
-   "Input/Output"
+   "hardware, software and data",
+   "keyboard, monitor and printer",
+   "HTML, CSS and JavaScript",
+   "Windows, Excel and Chrome"
   ],
-  "answer": "Decision",
-  "explanation": "The diamond symbol is used for decision-making steps, usually resulting in a Yes/No or True/False branch.",
-  "topic": "it-l2-1"
+  "answer": "hardware, software and data",
+  "explanation": "Hardware, software, data, information, people and procedures are the six elements; the other lists name products or parts, not elements.",
+  "topic": "fund-information-technology-concept"
  },
- {
+{
+  "id": "p79",
+  "question": "Cloud computing means:",
+  "options": [
+   "storing and accessing data over the internet",
+   "using a local hard drive",
+   "printing documents",
+   "installing software manually"
+  ],
+  "answer": "storing and accessing data over the internet",
+  "explanation": "Cloud services host data and apps remotely.",
+  "topic": "fund-cloud-and-local-storage"
+ },
+{
+  "id": "p106",
+  "question": "An ATM asks the customer to press 1 for a balance and 2 for a withdrawal. Which type of user interface is that?",
+  "options": [
+   "A menu-driven interface",
+   "A command line interface",
+   "A graphical user interface",
+   "A natural language interface"
+  ],
+  "answer": "A menu-driven interface",
+  "explanation": "A menu-driven interface presents a numbered list of choices, which suits a fixed set of tasks and a user who should not have to learn anything.",
+  "topic": "fund-user-interface-types"
+ },
+{
+  "id": "p111",
+  "question": "A desktop computer does not switch on at all. Which check should come first?",
+  "options": [
+   "Check the power lead, the wall socket and the switch on the back",
+   "Reinstall the operating system",
+   "Replace the motherboard",
+   "Run an antivirus scan"
+  ],
+  "answer": "Check the power lead, the wall socket and the switch on the back",
+  "explanation": "Troubleshooting starts with the simplest causes: power supply and switch, then the cables, then the start-up beep.",
+  "topic": "fund-basic-hardware-troubleshooting"
+ },
+{
+  "id": "p82",
+  "question": "Which file format is used for images?",
+  "options": [
+   ".png",
+   ".mp3",
+   ".docx",
+   ".exe"
+  ],
+  "answer": ".png",
+  "explanation": "PNG is an image format; mp3 is audio.",
+  "topic": "fund-file-organisation"
+ },
+{
   "id": "p4",
   "question": "Which data type is most appropriate for storing a person's name?",
   "options": [
@@ -51,20 +103,33 @@
   "explanation": "A string is a sequence of characters used to represent text like names or addresses.",
   "topic": "it-l2-2"
  },
- {
-  "id": "p5",
-  "question": "What is the primary purpose of a primary key in a database table?",
+{
+  "id": "p49",
+  "question": "Which of the following is a programming language?",
   "options": [
-   "To sort the data",
-   "To uniquely identify each record",
-   "To link to other tables",
-   "To perform calculations"
+   "Python",
+   "HTML",
+   "CSS",
+   "HTTP"
   ],
-  "answer": "To uniquely identify each record",
-  "explanation": "A primary key ensures that every row in a table is unique and can be easily retrieved.",
-  "topic": "it-l3-1"
+  "answer": "Python",
+  "explanation": "Python is a programming language; HTML/CSS are markup/styling.",
+  "topic": "impl-programming-language-overview"
  },
- {
+{
+  "id": "p120",
+  "question": "A header block at the top of a program records the author, the date and the purpose. That block is:",
+  "options": [
+   "internal documentation",
+   "external documentation",
+   "a user manual",
+   "a technical manual"
+  ],
+  "answer": "internal documentation",
+  "explanation": "Internal documentation lives inside the source code - header blocks, comments, meaningful names, indentation - and travels with the listing.",
+  "topic": "impl-program-documentation"
+ },
+{
   "id": "p6",
   "question": "Which SQL keyword is used to retrieve data from a database?",
   "options": [
@@ -77,59 +142,7 @@
   "explanation": "The SELECT statement is used to query and extract data from one or more tables.",
   "topic": "it-l3-2"
  },
- {
-  "id": "p7",
-  "question": "Which type of network is typically confined to a single building or campus?",
-  "options": [
-   "LAN",
-   "MAN",
-   "WAN",
-   "PAN"
-  ],
-  "answer": "LAN",
-  "explanation": "A Local Area Network (LAN) covers a small geographical area like a home, office, or school.",
-  "topic": "it-l4-1"
- },
- {
-  "id": "p8",
-  "question": "In which network topology are all devices connected to a single central cable?",
-  "options": [
-   "Star",
-   "Bus",
-   "Ring",
-   "Mesh"
-  ],
-  "answer": "Bus",
-  "explanation": "A bus topology uses a single backbone cable to which all nodes are attached.",
-  "topic": "it-l4-1"
- },
- {
-  "id": "p9",
-  "question": "Which HTML tag is used to create a hyperlink?",
-  "options": [
-   "<link>",
-   "<a>",
-   "<href>",
-   "<url>"
-  ],
-  "answer": "<a>",
-  "explanation": "The <a> (anchor) tag, along with the 'href' attribute, is used to link to other pages or resources.",
-  "topic": "it-l5-1"
- },
- {
-  "id": "p10",
-  "question": "In a spreadsheet, which formula would correctly add the values in cells A1 and A2?",
-  "options": [
-   "A1 + A2",
-   "=SUM(A1, A2)",
-   "add(A1, A2)",
-   "=A1 + A2"
-  ],
-  "answer": "=A1 + A2",
-  "explanation": "All spreadsheet formulas must begin with an equals sign (=).",
-  "topic": "it-l6-2"
- },
- {
+{
   "id": "p11",
   "question": "What is 'phishing'?",
   "options": [
@@ -142,475 +155,20 @@
   "explanation": "Phishing involves tricking users into revealing passwords or credit card numbers via fake emails or sites.",
   "topic": "it-l4-2"
  },
- {
-  "id": "p12",
-  "question": "Copying someone else's work and presenting it as your own is known as:",
+{
+  "id": "p122",
+  "question": "What is the area covered by one base station in a mobile network called?",
   "options": [
-   "Piracy",
-   "Plagiarism",
-   "Hacking",
-   "Encryption"
+   "A cell",
+   "A packet",
+   "A channel",
+   "A handover"
   ],
-  "answer": "Plagiarism",
-  "explanation": "Plagiarism is the unethical practice of using another's ideas or words without proper attribution.",
-  "topic": "it-l4-2"
+  "answer": "A cell",
+  "explanation": "A mobile network divides an area into cells, and each cell is served by a base station.",
+  "topic": "net-mobile-communication-importance"
  },
- {
-  "id": "p13",
-  "question": "Which of the following is an input device?",
-  "options": [
-   "Scanner",
-   "Monitor",
-   "Printer",
-   "Speaker"
-  ],
-  "answer": "Scanner",
-  "explanation": "A scanner captures data into the computer.",
-  "topic": "it-l1-1"
- },
- {
-  "id": "p14",
-  "question": "Which device is both an input and output device?",
-  "options": [
-   "Touch screen",
-   "Keyboard",
-   "Mouse",
-   "Printer"
-  ],
-  "answer": "Touch screen",
-  "explanation": "A touch screen displays output and accepts touch input.",
-  "topic": "it-l1-1"
- },
- {
-  "id": "p15",
-  "question": "RAM is best described as:",
-  "options": [
-   "temporary memory for running programs",
-   "permanent storage",
-   "a type of processor",
-   "an input device"
-  ],
-  "answer": "temporary memory for running programs",
-  "explanation": "RAM (random access memory) is volatile, holding data temporarily.",
-  "topic": "it-l1-1"
- },
- {
-  "id": "p16",
-  "question": "Which storage device uses laser light to read data?",
-  "options": [
-   "DVD",
-   "USB flash drive",
-   "Hard disk",
-   "SSD"
-  ],
-  "answer": "DVD",
-  "explanation": "Optical discs like DVDs use lasers.",
-  "topic": "it-l1-1"
- },
- {
-  "id": "p17",
-  "question": "Which is the correct order of data sizes from smallest to largest?",
-  "options": [
-   "bit, byte, kilobyte, megabyte",
-   "byte, bit, kilobyte, megabyte",
-   "kilobyte, byte, bit, megabyte",
-   "megabyte, kilobyte, byte, bit"
-  ],
-  "answer": "bit, byte, kilobyte, megabyte",
-  "explanation": "8 bits = 1 byte; 1024 bytes = 1 KB.",
-  "topic": "it-l1-2"
- },
- {
-  "id": "p18",
-  "question": "The CPU is also known as the:",
-  "options": [
-   "processor",
-   "monitor",
-   "hard drive",
-   "motherboard"
-  ],
-  "answer": "processor",
-  "explanation": "The central processing unit processes instructions.",
-  "topic": "it-l1-1"
- },
- {
-  "id": "p19",
-  "question": "Which component stores data permanently even when the computer is off?",
-  "options": [
-   "Hard disk drive",
-   "RAM",
-   "Cache",
-   "Registers"
-  ],
-  "answer": "Hard disk drive",
-  "explanation": "HDDs/SSDs are non-volatile storage.",
-  "topic": "it-l1-1"
- },
- {
-  "id": "p20",
-  "question": "The binary number 1011 in decimal is:",
-  "options": [
-   "11",
-   "9",
-   "13",
-   "10"
-  ],
-  "answer": "11",
-  "explanation": "8 + 0 + 2 + 1 = 11.",
-  "topic": "it-l1-2"
- },
- {
-  "id": "p21",
-  "question": "The decimal number 14 in binary is:",
-  "options": [
-   "1110",
-   "1101",
-   "1011",
-   "1001"
-  ],
-  "answer": "1110",
-  "explanation": "8+4+2 = 14 → 1110.",
-  "topic": "it-l1-2"
- },
- {
-  "id": "p22",
-  "question": "The hexadecimal number 1F in decimal is:",
-  "options": [
-   "31",
-   "15",
-   "19",
-   "16"
-  ],
-  "answer": "31",
-  "explanation": "1×16 + 15 = 31.",
-  "topic": "it-l1-2"
- },
- {
-  "id": "p23",
-  "question": "Which of the following is system software?",
-  "options": [
-   "Operating system",
-   "Word processor",
-   "Spreadsheet",
-   "Web browser"
-  ],
-  "answer": "Operating system",
-  "explanation": "The OS manages hardware and software resources.",
-  "topic": "it-l1-1"
- },
- {
-  "id": "p24",
-  "question": "Which is an example of application software?",
-  "options": [
-   "Microsoft Excel",
-   "Linux",
-   "Windows 11",
-   "Device drivers"
-  ],
-  "answer": "Microsoft Excel",
-  "explanation": "Excel is an application; the others are system software.",
-  "topic": "it-l1-1"
- },
- {
-  "id": "p25",
-  "question": "The operating system's main function is to:",
-  "options": [
-   "manage hardware and software resources",
-   "create documents",
-   "connect to the internet only",
-   "print files"
-  ],
-  "answer": "manage hardware and software resources",
-  "explanation": "The OS controls and coordinates all computer resources.",
-  "topic": "it-l1-1"
- },
- {
-  "id": "p26",
-  "question": "Which of these is a function of the operating system?",
-  "options": [
-   "Memory management",
-   "Typing documents",
-   "Designing graphics",
-   "Sending emails"
-  ],
-  "answer": "Memory management",
-  "explanation": "The OS manages memory, processes, files and devices.",
-  "topic": "it-l1-1"
- },
- {
-  "id": "p27",
-  "question": "'WYSIWYG' means:",
-  "options": [
-   "What You See Is What You Get",
-   "Write Your Simple Inputs With Your Graphics",
-   "Web Yield System Internet Web Group",
-   "What You Send Is What You Get"
-  ],
-  "answer": "What You See Is What You Get",
-  "explanation": "It describes editors that show the final output as you type.",
-  "topic": "it-l6-1"
- },
- {
-  "id": "p28",
-  "question": "Which file extension indicates a word processing document in Microsoft Word?",
-  "options": [
-   ".docx",
-   ".xlsx",
-   ".pptx",
-   ".jpeg"
-  ],
-  "answer": ".docx",
-  "explanation": ".docx is the Word document format.",
-  "topic": "it-l6-1"
- },
- {
-  "id": "p29",
-  "question": "Which spreadsheet function finds the average of a range?",
-  "options": [
-   "=AVERAGE(A1:A10)",
-   "=SUM(A1:A10)",
-   "=COUNT(A1:A10)",
-   "=MAX(A1:A10)"
-  ],
-  "answer": "=AVERAGE(A1:A10)",
-  "explanation": "AVERAGE calculates the arithmetic mean.",
-  "topic": "it-l6-2"
- },
- {
-  "id": "p30",
-  "question": "In a spreadsheet, the cell reference $A$1 is:",
-  "options": [
-   "absolute",
-   "relative",
-   "mixed only",
-   "circular"
-  ],
-  "answer": "absolute",
-  "explanation": "$A$1 locks both the column and row.",
-  "topic": "it-l6-2"
- },
- {
-  "id": "p31",
-  "question": "Which spreadsheet feature sorts data automatically?",
-  "options": [
-   "Sort",
-   "Filter only",
-   "Format",
-   "Merge"
-  ],
-  "answer": "Sort",
-  "explanation": "Sort arranges data in ascending or descending order.",
-  "topic": "it-l6-2"
- },
- {
-  "id": "p32",
-  "question": "In a database, a row of data is called a:",
-  "options": [
-   "record",
-   "field",
-   "table",
-   "query"
-  ],
-  "answer": "record",
-  "explanation": "Records are rows; fields are columns.",
-  "topic": "it-l3-1"
- },
- {
-  "id": "p33",
-  "question": "A primary key in a database:",
-  "options": [
-   "uniquely identifies each record",
-   "is always a number",
-   "can be empty",
-   "duplicates values"
-  ],
-  "answer": "uniquely identifies each record",
-  "explanation": "Primary keys are unique identifiers for records.",
-  "topic": "it-l3-1"
- },
- {
-  "id": "p34",
-  "question": "Which SQL statement retrieves data?",
-  "options": [
-   "SELECT",
-   "INSERT",
-   "UPDATE",
-   "DELETE"
-  ],
-  "answer": "SELECT",
-  "explanation": "SELECT queries data from a table.",
-  "topic": "it-l3-2"
- },
- {
-  "id": "p35",
-  "question": "Which SQL clause is used to sort results?",
-  "options": [
-   "ORDER BY",
-   "WHERE",
-   "GROUP BY",
-   "JOIN"
-  ],
-  "answer": "ORDER BY",
-  "explanation": "ORDER BY sorts query results.",
-  "topic": "it-l3-2"
- },
- {
-  "id": "p36",
-  "question": "A database 'query' is used to:",
-  "options": [
-   "extract specific data",
-   "print data",
-   "store paper files",
-   "design reports only"
-  ],
-  "answer": "extract specific data",
-  "explanation": "Queries retrieve and manipulate selected data.",
-  "topic": "it-l3-2"
- },
- {
-  "id": "p37",
-  "question": "Which of the following is a valid primary key value?",
-  "options": [
-   "Student ID",
-   "First name",
-   "Date of birth",
-   "Gender"
-  ],
-  "answer": "Student ID",
-  "explanation": "Student IDs are unique; names/dates can repeat.",
-  "topic": "it-l3-1"
- },
- {
-  "id": "p38",
-  "question": "A LAN is a network that:",
-  "options": [
-   "covers a small area like an office",
-   "covers countries",
-   "spans the globe",
-   "uses satellites only"
-  ],
-  "answer": "covers a small area like an office",
-  "explanation": "Local Area Networks cover limited geographic areas.",
-  "topic": "it-l4-1"
- },
- {
-  "id": "p39",
-  "question": "The internet is an example of a:",
-  "options": [
-   "WAN",
-   "LAN",
-   "PAN",
-   "MAN"
-  ],
-  "answer": "WAN",
-  "explanation": "A Wide Area Network spans large distances.",
-  "topic": "it-l4-1"
- },
- {
-  "id": "p40",
-  "question": "Which device connects a LAN to the internet?",
-  "options": [
-   "Router",
-   "Hub",
-   "Switch",
-   "Repeater"
-  ],
-  "answer": "Router",
-  "explanation": "A router routes traffic between networks.",
-  "topic": "it-l4-1"
- },
- {
-  "id": "p41",
-  "question": "The unique address of a device on a network is its:",
-  "options": [
-   "IP address",
-   "password",
-   "username",
-   "file name"
-  ],
-  "answer": "IP address",
-  "explanation": "IP addresses identify devices on networks.",
-  "topic": "it-l4-1"
- },
- {
-  "id": "p42",
-  "question": "In a star topology, if the central hub fails:",
-  "options": [
-   "the whole network stops",
-   "only one computer fails",
-   "nothing changes",
-   "the internet fails"
-  ],
-  "answer": "the whole network stops",
-  "explanation": "All nodes depend on the central hub.",
-  "topic": "it-l4-1"
- },
- {
-  "id": "p43",
-  "question": "Which topology connects all devices to one main cable?",
-  "options": [
-   "Bus topology",
-   "Star topology",
-   "Ring topology",
-   "Mesh topology"
-  ],
-  "answer": "Bus topology",
-  "explanation": "In a bus, devices share a single backbone cable.",
-  "topic": "it-l4-1"
- },
- {
-  "id": "p44",
-  "question": "The protocol used for web pages is:",
-  "options": [
-   "HTTP",
-   "FTP",
-   "SMTP",
-   "POP3"
-  ],
-  "answer": "HTTP",
-  "explanation": "HyperText Transfer Protocol serves web pages.",
-  "topic": "it-l4-1"
- },
- {
-  "id": "p45",
-  "question": "Which protocol is used to send email?",
-  "options": [
-   "SMTP",
-   "HTTP",
-   "FTP",
-   "DNS"
-  ],
-  "answer": "SMTP",
-  "explanation": "Simple Mail Transfer Protocol sends email.",
-  "topic": "it-l4-1"
- },
- {
-  "id": "p46",
-  "question": "Which HTML tag creates a hyperlink?",
-  "options": [
-   "<a>",
-   "<link>",
-   "<href>",
-   "<url>"
-  ],
-  "answer": "<a>",
-  "explanation": "The anchor tag <a href=\"...\"> creates links.",
-  "topic": "it-l5-1"
- },
- {
-  "id": "p47",
-  "question": "Which HTML tag is used for the largest heading?",
-  "options": [
-   "<h1>",
-   "<h6>",
-   "<head>",
-   "<heading>"
-  ],
-  "answer": "<h1>",
-  "explanation": "<h1> is the largest heading level.",
-  "topic": "it-l5-1"
- },
- {
+{
   "id": "p48",
   "question": "Which CSS property changes text colour?",
   "options": [
@@ -623,72 +181,176 @@
   "explanation": "The color property sets text colour.",
   "topic": "it-l5-2"
  },
- {
-  "id": "p49",
-  "question": "Which of the following is a programming language?",
+{
+  "id": "p125",
+  "question": "Which file name makes a web server send the home page automatically when a visitor asks for a folder?",
   "options": [
-   "Python",
-   "HTML",
-   "CSS",
-   "HTTP"
+   "index.html",
+   "home.html",
+   "start.html",
+   "main.html"
   ],
-  "answer": "Python",
-  "explanation": "Python is a programming language; HTML/CSS are markup/styling.",
-  "topic": "it-l2-2"
+  "answer": "index.html",
+  "explanation": "A web server sends index.html automatically when a visitor asks for a folder, so the home page must carry that name.",
+  "topic": "web-website-structure-and-organisation"
  },
- {
-  "id": "p50",
-  "question": "A variable in programming is:",
+{
+  "id": "p27",
+  "question": "'WYSIWYG' means:",
   "options": [
-   "a named storage location for data",
-   "a constant number",
-   "a type of loop",
+   "What You See Is What You Get",
+   "Write Your Simple Inputs With Your Graphics",
+   "Web Yield System Internet Web Group",
+   "What You Send Is What You Get"
+  ],
+  "answer": "What You See Is What You Get",
+  "explanation": "It describes editors that show the final output as you type.",
+  "topic": "it-l6-1"
+ },
+{
+  "id": "p132",
+  "question": "Which protection setting encrypts a document so that nothing is readable until the correct password is typed?",
+  "options": [
+   "Password to open",
+   "Mark as Final",
+   "Restrict editing to comments",
+   "Track changes"
+  ],
+  "answer": "Password to open",
+  "explanation": "A password to open encrypts the file itself, so nothing is readable until the password is entered - and a lost password cannot be recovered.",
+  "topic": "wp-document-protection-features"
+ },
+{
+  "id": "p135",
+  "question": "Which content control should be used so that a parish can only be chosen from Kingston, St Andrew or St James?",
+  "options": [
+   "A drop-down list",
+   "A text content control",
+   "A check box",
+   "A date picker"
+  ],
+  "answer": "A drop-down list",
+  "explanation": "A drop-down list offers one choice from a fixed list, so the answer cannot be misspelt or invented.",
+  "topic": "wp-fillable-electronic-forms"
+ },
+{
+  "id": "p140",
+  "question": "In the formula =Jan!B4, what does Jan refer to?",
+  "options": [
+   "The name of the worksheet being read",
+   "The name of the workbook",
+   "A named cell",
+   "The January column"
+  ],
+  "answer": "The name of the worksheet being read",
+  "explanation": "A cross-sheet reference has the form Sheet!Cell, so =Jan!B4 reads cell B4 on the worksheet named Jan.",
+  "topic": "sheet-worksheet-management"
+ },
+{
+  "id": "p143",
+  "question": "Which profession studies how a business works and writes the requirements document for a new system?",
+  "options": [
+   "A systems analyst",
+   "A programmer",
+   "A network administrator",
+   "A help-desk officer"
+  ],
+  "answer": "A systems analyst",
+  "explanation": "The systems analyst studies the current system and writes down what the new one must do; the programmer then turns that design into working software.",
+  "topic": "imp-computer-related-professions"
+ },
+{
+  "id": "p15",
+  "question": "RAM is best described as:",
+  "options": [
+   "temporary memory for running programs",
+   "permanent storage",
+   "a type of processor",
    "an input device"
   ],
-  "answer": "a named storage location for data",
-  "explanation": "Variables store values that can change.",
-  "topic": "it-l2-2"
+  "answer": "temporary memory for running programs",
+  "explanation": "RAM (random access memory) is volatile, holding data temporarily.",
+  "topic": "it-l1-1"
  },
- {
-  "id": "p51",
-  "question": "Which data type stores whole numbers?",
+{
+  "id": "p17",
+  "question": "Which is the correct order of data sizes from smallest to largest?",
   "options": [
-   "Integer",
-   "String",
-   "Boolean",
-   "Float"
+   "bit, byte, kilobyte, megabyte",
+   "byte, bit, kilobyte, megabyte",
+   "kilobyte, byte, bit, megabyte",
+   "megabyte, kilobyte, byte, bit"
   ],
-  "answer": "Integer",
-  "explanation": "Integers are whole numbers without decimals.",
-  "topic": "it-l2-2"
+  "answer": "bit, byte, kilobyte, megabyte",
+  "explanation": "8 bits = 1 byte; 1024 bytes = 1 KB.",
+  "topic": "it-l1-2"
  },
- {
-  "id": "p52",
-  "question": "Which of the following is a boolean value?",
+{
+  "id": "p103",
+  "question": "A bank runs one computer that must serve thousands of terminals and transactions at the same time without failing. Which class of computer is that?",
   "options": [
-   "True",
-   "5",
-   "\"hello\"",
-   "3.14"
+   "A mainframe",
+   "A supercomputer",
+   "A microcomputer",
+   "An embedded system"
   ],
-  "answer": "True",
-  "explanation": "Booleans are True/False.",
-  "topic": "it-l2-2"
+  "answer": "A mainframe",
+  "explanation": "A mainframe is built for very large numbers of simultaneous transactions - bank accounts, a census, airline reservations.",
+  "topic": "fund-computer-system-types"
  },
- {
-  "id": "p53",
-  "question": "An 'if' statement is used for:",
+{
+  "id": "p80",
+  "question": "Which of the following is a cloud storage service?",
   "options": [
-   "decision making",
-   "looping",
-   "storing data",
-   "printing"
+   "Google Drive",
+   "Microsoft Word",
+   "VLC Player",
+   "Chrome"
   ],
-  "answer": "decision making",
-  "explanation": "Conditionals execute code based on conditions.",
-  "topic": "it-l2-2"
+  "answer": "Google Drive",
+  "explanation": "Google Drive stores files online.",
+  "topic": "fund-cloud-and-local-storage"
  },
- {
+{
+  "id": "p109",
+  "question": "A student needs a machine for typing assignments and browsing the web. Which specification is the most suitable?",
+  "options": [
+   "8 GB RAM, 256 GB SSD, integrated graphics",
+   "64 GB RAM, 4 TB SSD, high-end graphics card",
+   "2 GB RAM, 32 GB storage, no network port",
+   "A fast processor with 1 GB RAM and no cooling"
+  ],
+  "answer": "8 GB RAM, 256 GB SSD, integrated graphics",
+  "explanation": "Suitability follows the job: a word-processing and browsing machine needs modest memory, a reliable SSD and no expensive graphics card.",
+  "topic": "fund-system-suitability-and-specification"
+ },
+{
+  "id": "p114",
+  "question": "A list of raw marks - 45, 78, 62, 91 - is processed into a class average. The average is:",
+  "options": [
+   "information, because it has been processed into something meaningful",
+   "data, because it came from marks",
+   "hardware output",
+   "a procedure"
+  ],
+  "answer": "information, because it has been processed into something meaningful",
+  "explanation": "Data is raw and unprocessed; information is data processed so that it means something to the person who receives it.",
+  "topic": "fund-data-and-information-distinction"
+ },
+{
+  "id": "p83",
+  "question": "Which file format is used for video?",
+  "options": [
+   ".mp4",
+   ".jpg",
+   ".txt",
+   ".pdf"
+  ],
+  "answer": ".mp4",
+  "explanation": "MP4 is a video container format.",
+  "topic": "fund-file-organisation"
+ },
+{
   "id": "p54",
   "question": "Which loop repeats a block a fixed number of times?",
   "options": [
@@ -701,163 +363,46 @@
   "explanation": "FOR loops iterate a known number of times.",
   "topic": "it-l2-2"
  },
- {
-  "id": "p55",
-  "question": "A 'WHILE' loop continues while:",
+{
+  "id": "p50",
+  "question": "A variable in programming is:",
   "options": [
-   "the condition is true",
-   "the condition is false",
-   "the user presses a key",
-   "the program ends"
+   "a named storage location for data",
+   "a constant number",
+   "a type of loop",
+   "an input device"
   ],
-  "answer": "the condition is true",
-  "explanation": "WHILE repeats as long as its condition holds.",
-  "topic": "it-l2-2"
+  "answer": "a named storage location for data",
+  "explanation": "Variables store values that can change.",
+  "topic": "impl-variables-constants-and-data-types"
  },
- {
-  "id": "p56",
-  "question": "The process of finding and fixing errors in code is called:",
+{
+  "id": "p5",
+  "question": "What is the primary purpose of a primary key in a database table?",
   "options": [
-   "debugging",
-   "compiling",
-   "running",
-   "linking"
+   "To sort the data",
+   "To uniquely identify each record",
+   "To link to other tables",
+   "To perform calculations"
   ],
-  "answer": "debugging",
-  "explanation": "Debugging removes bugs from programs.",
-  "topic": "it-l2-2"
+  "answer": "To uniquely identify each record",
+  "explanation": "A primary key ensures that every row in a table is unique and can be easily retrieved.",
+  "topic": "it-l3-1"
  },
- {
-  "id": "p57",
-  "question": "Which of the following is an arithmetic operator?",
+{
+  "id": "p35",
+  "question": "Which SQL clause is used to sort results?",
   "options": [
-   "+",
-   "=",
-   "==",
-   "<"
+   "ORDER BY",
+   "WHERE",
+   "GROUP BY",
+   "JOIN"
   ],
-  "answer": "+",
-  "explanation": "+ performs addition; the others compare or assign.",
-  "topic": "it-l2-2"
+  "answer": "ORDER BY",
+  "explanation": "ORDER BY sorts query results.",
+  "topic": "it-l3-2"
  },
- {
-  "id": "p58",
-  "question": "Which symbol is used for assignment in most languages?",
-  "options": [
-   "=",
-   "==",
-   "===",
-   "!="
-  ],
-  "answer": "=",
-  "explanation": "Single '=' assigns a value.",
-  "topic": "it-l2-2"
- },
- {
-  "id": "p59",
-  "question": "A function is best described as:",
-  "options": [
-   "a reusable block of code",
-   "a type of variable",
-   "an error",
-   "a hardware part"
-  ],
-  "answer": "a reusable block of code",
-  "explanation": "Functions group code for reuse.",
-  "topic": "it-l2-2"
- },
- {
-  "id": "p60",
-  "question": "Pseudocode is:",
-  "options": [
-   "a plain-language description of an algorithm",
-   "executable code",
-   "a programming language",
-   "a flowchart"
-  ],
-  "answer": "a plain-language description of an algorithm",
-  "explanation": "Pseudocode describes logic without strict syntax.",
-  "topic": "it-l2-1"
- },
- {
-  "id": "p61",
-  "question": "Which symbol in a flowchart represents a decision?",
-  "options": [
-   "Diamond",
-   "Rectangle",
-   "Oval",
-   "Arrow"
-  ],
-  "answer": "Diamond",
-  "explanation": "Diamonds represent decisions/branches.",
-  "topic": "it-l2-1"
- },
- {
-  "id": "p62",
-  "question": "The oval symbol in a flowchart represents:",
-  "options": [
-   "start or end",
-   "process",
-   "input/output",
-   "decision"
-  ],
-  "answer": "start or end",
-  "explanation": "Ovals mark the beginning or end of a flowchart.",
-  "topic": "it-l2-1"
- },
- {
-  "id": "p63",
-  "question": "Which of these is a search engine?",
-  "options": [
-   "Google",
-   "Chrome",
-   "Windows",
-   "Excel"
-  ],
-  "answer": "Google",
-  "explanation": "Google is a search engine; Chrome is a browser.",
-  "topic": "it-l4-2"
- },
- {
-  "id": "p64",
-  "question": "'Phishing' is a technique used to:",
-  "options": [
-   "steal personal information via fake messages",
-   "increase internet speed",
-   "repair computers",
-   "backup files"
-  ],
-  "answer": "steal personal information via fake messages",
-  "explanation": "Phishing tricks users into revealing credentials.",
-  "topic": "it-l4-2"
- },
- {
-  "id": "p65",
-  "question": "A computer virus is:",
-  "options": [
-   "a malicious program",
-   "a hardware fault",
-   "a type of browser",
-   "an antivirus tool"
-  ],
-  "answer": "a malicious program",
-  "explanation": "Viruses are malicious software that spread and damage.",
-  "topic": "it-l4-2"
- },
- {
-  "id": "p66",
-  "question": "Which of the following helps protect against viruses?",
-  "options": [
-   "Antivirus software",
-   "Deleting system files",
-   "Opening unknown attachments",
-   "Turning off the firewall"
-  ],
-  "answer": "Antivirus software",
-  "explanation": "Antivirus detects and removes malware.",
-  "topic": "it-l4-2"
- },
- {
+{
   "id": "p67",
   "question": "A firewall is used to:",
   "options": [
@@ -870,7 +415,254 @@
   "explanation": "Firewalls filter network traffic for security.",
   "topic": "it-l4-2"
  },
- {
+{
+  "id": "p44",
+  "question": "The protocol used for web pages is:",
+  "options": [
+   "HTTP",
+   "FTP",
+   "SMTP",
+   "POP3"
+  ],
+  "answer": "HTTP",
+  "explanation": "HyperText Transfer Protocol serves web pages.",
+  "topic": "net-web-technologies"
+ },
+{
+  "id": "p148",
+  "question": "In a web page, which language makes the page respond to what the user does, such as a button click?",
+  "options": [
+   "JavaScript",
+   "HTML",
+   "CSS",
+   "HTTP"
+  ],
+  "answer": "JavaScript",
+  "explanation": "HTML gives the page its structure, CSS decides how it looks, and JavaScript makes it respond to the user.",
+  "topic": "it-l5-2"
+ },
+{
+  "id": "p129",
+  "question": "Which evaluation criterion checks that a page shows when it was last updated?",
+  "options": [
+   "Currency",
+   "Accuracy",
+   "Audience",
+   "Accessibility"
+  ],
+  "answer": "Currency",
+  "explanation": "Currency is about how recent the content is, which is why a page should show its last-updated date.",
+  "topic": "web-website-evaluation-and-publishing"
+ },
+{
+  "id": "p28",
+  "question": "Which file extension indicates a word processing document in Microsoft Word?",
+  "options": [
+   ".docx",
+   ".xlsx",
+   ".pptx",
+   ".jpeg"
+  ],
+  "answer": ".docx",
+  "explanation": ".docx is the Word document format.",
+  "topic": "it-l6-1"
+ },
+{
+  "id": "p133",
+  "question": "Why is Mark as Final weaker protection than a password?",
+  "options": [
+   "It only opens the file read-only, and a reader who knows where to look can turn it off",
+   "It deletes the document when it is closed",
+   "It hides the text completely",
+   "It stops the file being emailed"
+  ],
+  "answer": "It only opens the file read-only, and a reader who knows where to look can turn it off",
+  "explanation": "Mark as Final discourages editing rather than blocking it: the file opens read-only with a warning bar, and the setting can be removed.",
+  "topic": "wp-document-protection-features"
+ },
+{
+  "id": "p138",
+  "question": "A formula pointed at column C, and column C is then deleted. What does the cell that held the formula show?",
+  "options": [
+   "#REF!",
+   "#VALUE!",
+   "#####",
+   "0"
+  ],
+  "answer": "#REF!",
+  "explanation": "#REF! is the error that means a reference no longer exists, which is why a deleted column is restored with Undo rather than retyped.",
+  "topic": "sheet-column-and-row-manipulation"
+ },
+{
+  "id": "p88",
+  "question": "Artificial intelligence refers to:",
+  "options": [
+   "machines performing tasks that require human intelligence",
+   "larger hard drives",
+   "faster internet",
+   "better printers"
+  ],
+  "answer": "machines performing tasks that require human intelligence",
+  "explanation": "AI simulates human-like reasoning and learning.",
+  "topic": "imp-ict-and-employment"
+ },
+{
+  "id": "p144",
+  "question": "Who designs a database's tables, controls who may read or change which records, and takes the backups?",
+  "options": [
+   "A database administrator",
+   "A web developer",
+   "A systems analyst",
+   "An IT trainer"
+  ],
+  "answer": "A database administrator",
+  "explanation": "The database administrator owns the tables, the access rights and the backups - the decision the profession is known by.",
+  "topic": "imp-computer-related-professions"
+ },
+{
+  "id": "p19",
+  "question": "Which component stores data permanently even when the computer is off?",
+  "options": [
+   "Hard disk drive",
+   "RAM",
+   "Cache",
+   "Registers"
+  ],
+  "answer": "Hard disk drive",
+  "explanation": "HDDs/SSDs are non-volatile storage.",
+  "topic": "it-l1-1"
+ },
+{
+  "id": "p21",
+  "question": "The decimal number 14 in binary is:",
+  "options": [
+   "1110",
+   "1101",
+   "1011",
+   "1001"
+  ],
+  "answer": "1110",
+  "explanation": "8+4+2 = 14 → 1110.",
+  "topic": "it-l1-2"
+ },
+{
+  "id": "p104",
+  "question": "Which class of computer is used for weather forecasting and climate modelling?",
+  "options": [
+   "A supercomputer",
+   "A minicomputer",
+   "A microcomputer",
+   "An embedded system"
+  ],
+  "answer": "A supercomputer",
+  "explanation": "A supercomputer is the fastest and most expensive class, built from thousands of processors for enormous calculation such as climate modelling.",
+  "topic": "fund-computer-system-types"
+ },
+{
+  "id": "p94",
+  "question": "A backup is important because it:",
+  "options": [
+   "protects against data loss",
+   "speeds up the computer",
+   "increases memory",
+   "reduces cost"
+  ],
+  "answer": "protects against data loss",
+  "explanation": "Backups restore data after failures.",
+  "topic": "fund-cloud-and-local-storage"
+ },
+{
+  "id": "p110",
+  "question": "Which part of a specification decides how many programs can stay open at once before the machine slows down?",
+  "options": [
+   "Memory (RAM)",
+   "Storage (the SSD or HDD)",
+   "The graphics card",
+   "The number of USB ports"
+  ],
+  "answer": "Memory (RAM)",
+  "explanation": "RAM is the working space for open programs; too little and the machine slows to a crawl with several windows open. Storage keeps files when the power is off.",
+  "topic": "fund-system-suitability-and-specification"
+ },
+{
+  "id": "p115",
+  "question": "Which characteristic of good information means that it is available when it is needed?",
+  "options": [
+   "Timely",
+   "Accurate",
+   "Relevant",
+   "Complete"
+  ],
+  "answer": "Timely",
+  "explanation": "Timely information arrives when the decision is made; yesterday's stock figure cannot price today's order.",
+  "topic": "fund-data-and-information-distinction"
+ },
+{
+  "id": "p3",
+  "question": "In a flowchart, what does the diamond symbol represent?",
+  "options": [
+   "Start/End",
+   "Process",
+   "Decision",
+   "Input/Output"
+  ],
+  "answer": "Decision",
+  "explanation": "The diamond symbol is used for decision-making steps, usually resulting in a Yes/No or True/False branch.",
+  "topic": "it-l2-1"
+ },
+{
+  "id": "p56",
+  "question": "The process of finding and fixing errors in code is called:",
+  "options": [
+   "debugging",
+   "compiling",
+   "running",
+   "linking"
+  ],
+  "answer": "debugging",
+  "explanation": "Debugging removes bugs from programs.",
+  "topic": "it-l2-2"
+ },
+{
+  "id": "p51",
+  "question": "Which data type stores whole numbers?",
+  "options": [
+   "Integer",
+   "String",
+   "Boolean",
+   "Float"
+  ],
+  "answer": "Integer",
+  "explanation": "Integers are whole numbers without decimals.",
+  "topic": "impl-variables-constants-and-data-types"
+ },
+{
+  "id": "p32",
+  "question": "In a database, a row of data is called a:",
+  "options": [
+   "record",
+   "field",
+   "table",
+   "query"
+  ],
+  "answer": "record",
+  "explanation": "Records are rows; fields are columns.",
+  "topic": "it-l3-1"
+ },
+{
+  "id": "p7",
+  "question": "Which type of network is typically confined to a single building or campus?",
+  "options": [
+   "LAN",
+   "MAN",
+   "WAN",
+   "PAN"
+  ],
+  "answer": "LAN",
+  "explanation": "A Local Area Network (LAN) covers a small geographical area like a home, office, or school.",
+  "topic": "it-l4-1"
+ },
+{
   "id": "p68",
   "question": "Strong passwords should:",
   "options": [
@@ -883,267 +675,85 @@
   "explanation": "Complex passwords resist guessing attacks.",
   "topic": "it-l4-2"
  },
- {
-  "id": "p69",
-  "question": "Copyright law protects:",
+{
+  "id": "p63",
+  "question": "Which of these is a search engine?",
   "options": [
-   "original creative works",
-   "hardware only",
-   "internet speed",
-   "computer brands"
+   "Google",
+   "Chrome",
+   "Windows",
+   "Excel"
   ],
-  "answer": "original creative works",
-  "explanation": "Copyright covers creative and intellectual works.",
-  "topic": "it-l4-2"
+  "answer": "Google",
+  "explanation": "Google is a search engine; Chrome is a browser.",
+  "topic": "net-web-technologies"
  },
- {
-  "id": "p70",
-  "question": "Plagiarism is:",
+{
+  "id": "p126",
+  "question": "What is a site map?",
   "options": [
-   "using others' work without credit",
-   "creating original work",
-   "citing sources",
-   "proofreading"
+   "A diagram of the site's pages and how they link together, drawn before the pages are written",
+   "A list of every file on the web server",
+   "A copy of the site kept for backup",
+   "The search box on the home page"
   ],
-  "answer": "using others' work without credit",
-  "explanation": "Plagiarism presents others' work as your own.",
-  "topic": "it-l4-2"
+  "answer": "A diagram of the site's pages and how they link together, drawn before the pages are written",
+  "explanation": "The site map is the plan: the home page at the top, second-level pages under it and third-level pages under those.",
+  "topic": "web-website-structure-and-organisation"
  },
- {
-  "id": "p71",
-  "question": "Which of the following is an example of a peripheral device?",
+{
+  "id": "p130",
+  "question": "A hyperlink that points at a page or file that is not there is called a:",
   "options": [
-   "Printer",
-   "CPU",
-   "RAM",
-   "Motherboard"
+   "broken link",
+   "deep link",
+   "anchor",
+   "redirect"
   ],
-  "answer": "Printer",
-  "explanation": "Peripherals connect to the computer externally.",
-  "topic": "it-l1-1"
+  "answer": "broken link",
+  "explanation": "A broken link points at a page or file that is missing. Clicking every link and repairing them is part of testing before publishing.",
+  "topic": "web-website-evaluation-and-publishing"
  },
- {
-  "id": "p72",
-  "question": "The motherboard is:",
+{
+  "id": "p10",
+  "question": "In a spreadsheet, which formula would correctly add the values in cells A1 and A2?",
   "options": [
-   "the main circuit board",
-   "a storage device",
-   "an input device",
-   "an output device"
+   "A1 + A2",
+   "=SUM(A1, A2)",
+   "add(A1, A2)",
+   "=A1 + A2"
   ],
-  "answer": "the main circuit board",
-  "explanation": "The motherboard connects all major components.",
-  "topic": "it-l1-1"
+  "answer": "=A1 + A2",
+  "explanation": "All spreadsheet formulas must begin with an equals sign (=).",
+  "topic": "it-l6-2"
  },
- {
-  "id": "p73",
-  "question": "Which unit measures processor speed?",
+{
+  "id": "p134",
+  "question": "A document must let a reviewer add comments but change nothing else. Which setting does that?",
   "options": [
-   "GHz",
-   "GB",
-   "DPI",
-   "PPM"
+   "Restrict editing, comments only",
+   "Mark as Final",
+   "Password to open",
+   "Save as PDF"
   ],
-  "answer": "GHz",
-  "explanation": "Gigahertz measures clock speed.",
-  "topic": "it-l1-1"
+  "answer": "Restrict editing, comments only",
+  "explanation": "Restrict editing is the middle setting: comments only refuses every other keystroke, and it is lifted by unprotecting with the password.",
+  "topic": "wp-document-protection-features"
  },
- {
-  "id": "p74",
-  "question": "Which of the following is a type of non-volatile storage?",
+{
+  "id": "p139",
+  "question": "Which spreadsheet feature lets a long label show on several lines inside one cell instead of spilling into the next column?",
   "options": [
-   "SSD",
-   "RAM",
-   "Cache",
-   "Register"
+   "Wrap text",
+   "Merge and centre",
+   "Autofit",
+   "Freeze panes"
   ],
-  "answer": "SSD",
-  "explanation": "SSDs retain data without power.",
-  "topic": "it-l1-1"
+  "answer": "Wrap text",
+  "explanation": "Wrap text makes a long entry sit on several lines inside its own cell rather than being cut off or spilling across its neighbours.",
+  "topic": "sheet-column-and-row-manipulation"
  },
- {
-  "id": "p75",
-  "question": "A solid-state drive (SSD) uses:",
-  "options": [
-   "flash memory",
-   "magnetic disks",
-   "lasers",
-   "magnetic tape"
-  ],
-  "answer": "flash memory",
-  "explanation": "SSDs use NAND flash memory with no moving parts.",
-  "topic": "it-l1-1"
- },
- {
-  "id": "p76",
-  "question": "Which printer uses toner powder?",
-  "options": [
-   "Laser printer",
-   "Inkjet printer",
-   "Dot matrix",
-   "Thermal printer"
-  ],
-  "answer": "Laser printer",
-  "explanation": "Laser printers fuse toner onto paper.",
-  "topic": "it-l1-1"
- },
- {
-  "id": "p77",
-  "question": "Inkjet printers work by:",
-  "options": [
-   "spraying liquid ink",
-   "melting toner",
-   "striking ribbons",
-   "burning dots"
-  ],
-  "answer": "spraying liquid ink",
-  "explanation": "Inkjets spray tiny ink droplets.",
-  "topic": "it-l1-1"
- },
- {
-  "id": "p78",
-  "question": "Which of the following is an example of e-commerce?",
-  "options": [
-   "Buying goods online",
-   "Emailing a friend",
-   "Downloading software legally",
-   "Streaming music"
-  ],
-  "answer": "Buying goods online",
-  "explanation": "E-commerce is buying/selling over the internet.",
-  "topic": "it-l4-2"
- },
- {
-  "id": "p79",
-  "question": "Cloud computing means:",
-  "options": [
-   "storing and accessing data over the internet",
-   "using a local hard drive",
-   "printing documents",
-   "installing software manually"
-  ],
-  "answer": "storing and accessing data over the internet",
-  "explanation": "Cloud services host data and apps remotely.",
-  "topic": "it-l4-2"
- },
- {
-  "id": "p80",
-  "question": "Which of the following is a cloud storage service?",
-  "options": [
-   "Google Drive",
-   "Microsoft Word",
-   "VLC Player",
-   "Chrome"
-  ],
-  "answer": "Google Drive",
-  "explanation": "Google Drive stores files online.",
-  "topic": "it-l4-2"
- },
- {
-  "id": "p81",
-  "question": "Multimedia combines:",
-  "options": [
-   "text, graphics, audio and video",
-   "only text",
-   "only images",
-   "only sound"
-  ],
-  "answer": "text, graphics, audio and video",
-  "explanation": "Multimedia integrates multiple media types.",
-  "topic": "it-l5-2"
- },
- {
-  "id": "p82",
-  "question": "Which file format is used for images?",
-  "options": [
-   ".png",
-   ".mp3",
-   ".docx",
-   ".exe"
-  ],
-  "answer": ".png",
-  "explanation": "PNG is an image format; mp3 is audio.",
-  "topic": "it-l1-1"
- },
- {
-  "id": "p83",
-  "question": "Which file format is used for video?",
-  "options": [
-   ".mp4",
-   ".jpg",
-   ".txt",
-   ".pdf"
-  ],
-  "answer": ".mp4",
-  "explanation": "MP4 is a video container format.",
-  "topic": "it-l1-1"
- },
- {
-  "id": "p84",
-  "question": "The resolution of a monitor is measured in:",
-  "options": [
-   "pixels",
-   "inches",
-   "hertz",
-   "watts"
-  ],
-  "answer": "pixels",
-  "explanation": "Resolution = number of pixels (e.g. 1920×1080).",
-  "topic": "it-l1-1"
- },
- {
-  "id": "p85",
-  "question": "Which of these is a presentation software?",
-  "options": [
-   "PowerPoint",
-   "Excel",
-   "Access",
-   "Notepad"
-  ],
-  "answer": "PowerPoint",
-  "explanation": "PowerPoint creates presentations.",
-  "topic": "it-l6-1"
- },
- {
-  "id": "p86",
-  "question": "A 'mail merge' is used to:",
-  "options": [
-   "send personalised letters to many people",
-   "merge two documents",
-   "combine audio files",
-   "merge cells"
-  ],
-  "answer": "send personalised letters to many people",
-  "explanation": "Mail merge combines a template with a data source.",
-  "topic": "it-l6-1"
- },
- {
-  "id": "p87",
-  "question": "Which of the following best describes 'big data'?",
-  "options": [
-   "Very large datasets analysed computationally",
-   "Small data files",
-   "Data on paper",
-   "Backup files"
-  ],
-  "answer": "Very large datasets analysed computationally",
-  "explanation": "Big data requires special tools to process at scale.",
-  "topic": "it-l4-2"
- },
- {
-  "id": "p88",
-  "question": "Artificial intelligence refers to:",
-  "options": [
-   "machines performing tasks that require human intelligence",
-   "larger hard drives",
-   "faster internet",
-   "better printers"
-  ],
-  "answer": "machines performing tasks that require human intelligence",
-  "explanation": "AI simulates human-like reasoning and learning.",
-  "topic": "it-l4-2"
- },
- {
+{
   "id": "p89",
   "question": "Robotics is the field of:",
   "options": [
@@ -1154,126 +764,139 @@
   ],
   "answer": "building and programming robots",
   "explanation": "Robotics combines engineering and programming.",
-  "topic": "it-l4-2"
+  "topic": "imp-ict-and-employment"
  },
- {
-  "id": "p90",
-  "question": "Which of the following is a wearable technology?",
+{
+  "id": "p78",
+  "question": "Which of the following is an example of e-commerce?",
   "options": [
-   "Smartwatch",
-   "Desktop computer",
-   "Printer",
-   "Router"
+   "Buying goods online",
+   "Emailing a friend",
+   "Downloading software legally",
+   "Streaming music"
   ],
-  "answer": "Smartwatch",
-  "explanation": "Smartwatches are worn on the body.",
+  "answer": "Buying goods online",
+  "explanation": "E-commerce is buying/selling over the internet.",
+  "topic": "imp-societal-and-economic-impact"
+ },
+{
+  "id": "p25",
+  "question": "The operating system's main function is to:",
+  "options": [
+   "manage hardware and software resources",
+   "create documents",
+   "connect to the internet only",
+   "print files"
+  ],
+  "answer": "manage hardware and software resources",
+  "explanation": "The OS controls and coordinates all computer resources.",
   "topic": "it-l1-1"
  },
- {
-  "id": "p91",
-  "question": "A 'cookie' on a website is used to:",
+{
+  "id": "p22",
+  "question": "The hexadecimal number 1F in decimal is:",
   "options": [
-   "store user preferences",
-   "increase speed",
-   "delete files",
-   "print pages"
+   "31",
+   "15",
+   "19",
+   "16"
   ],
-  "answer": "store user preferences",
-  "explanation": "Cookies remember user settings and sessions.",
-  "topic": "it-l4-2"
+  "answer": "31",
+  "explanation": "1×16 + 15 = 31.",
+  "topic": "it-l1-2"
  },
- {
-  "id": "p92",
-  "question": "Two-factor authentication adds:",
+{
+  "id": "p105",
+  "question": "A washing machine contains a computer hidden inside it that controls one task. That computer is a(n):",
   "options": [
-   "a second verification step",
-   "faster login",
-   "more storage",
-   "better graphics"
+   "embedded system",
+   "mainframe",
+   "supercomputer",
+   "minicomputer"
   ],
-  "answer": "a second verification step",
-  "explanation": "2FA requires an extra check like a code.",
-  "topic": "it-l4-2"
+  "answer": "embedded system",
+  "explanation": "An embedded system is a computer built into another machine to control it, such as the controller inside a washing machine.",
+  "topic": "fund-computer-system-types"
  },
- {
-  "id": "p93",
-  "question": "Which of the following is ethical use of technology?",
+{
+  "id": "p107",
+  "question": "Which type of interface requires the user to type commands such as dir or copy?",
   "options": [
-   "Respecting others' privacy",
-   "Hacking accounts",
-   "Spreading false news",
-   "Pirating software"
+   "A command line interface",
+   "A graphical user interface",
+   "A menu-driven interface",
+   "A touch interface"
   ],
-  "answer": "Respecting others' privacy",
-  "explanation": "Ethics means responsible, honest use.",
-  "topic": "it-l4-2"
+  "answer": "A command line interface",
+  "explanation": "A CLI takes typed commands. It is fast and scriptable for an expert but the user must remember the commands and their syntax.",
+  "topic": "fund-user-interface-types"
  },
- {
-  "id": "p94",
-  "question": "A backup is important because it:",
+{
+  "id": "p112",
+  "question": "A printer is switched on and has paper, but the document does not print. What should you check next?",
   "options": [
-   "protects against data loss",
-   "speeds up the computer",
-   "increases memory",
-   "reduces cost"
+   "The print queue for a stuck job",
+   "The monitor resolution",
+   "The graphics card driver",
+   "The keyboard connection"
   ],
-  "answer": "protects against data loss",
-  "explanation": "Backups restore data after failures.",
-  "topic": "it-l6-2"
+  "answer": "The print queue for a stuck job",
+  "explanation": "A stuck job in the queue blocks everything behind it, so the queue is checked before the printer is taken apart.",
+  "topic": "fund-basic-hardware-troubleshooting"
  },
- {
-  "id": "p95",
-  "question": "The most effective backup strategy is:",
+{
+  "id": "p116",
+  "question": "Which question tests the AUTHORITY of a web page?",
   "options": [
-   "regular automated backups",
-   "one manual copy",
-   "no backups",
-   "backup only after a crash"
+   "Who wrote it, and what makes them qualified?",
+   "Is the page recent enough?",
+   "Does the page load quickly?",
+   "Is it the first result in the search list?"
   ],
-  "answer": "regular automated backups",
-  "explanation": "Regular backups minimise data loss.",
-  "topic": "it-l6-2"
+  "answer": "Who wrote it, and what makes them qualified?",
+  "explanation": "Authority is about the author and their qualifications. Currency is about the date, and search rank proves nothing about truth.",
+  "topic": "fund-online-information-reliability"
  },
- {
-  "id": "p96",
-  "question": "Which of these can prevent data loss during a power outage?",
+{
+  "id": "p60",
+  "question": "Pseudocode is:",
   "options": [
-   "UPS (Uninterruptible Power Supply)",
-   "Larger monitor",
-   "Faster processor",
-   "Better keyboard"
+   "a plain-language description of an algorithm",
+   "executable code",
+   "a programming language",
+   "a flowchart"
   ],
-  "answer": "UPS (Uninterruptible Power Supply)",
-  "explanation": "A UPS provides temporary power to save work.",
-  "topic": "it-l1-1"
+  "answer": "a plain-language description of an algorithm",
+  "explanation": "Pseudocode describes logic without strict syntax.",
+  "topic": "it-l2-1"
  },
- {
-  "id": "p97",
-  "question": "Which of the following describes 'telecommuting'?",
+{
+  "id": "p118",
+  "question": "Which translator converts assembly language into machine code?",
   "options": [
-   "Working from home using technology",
-   "Travelling to work",
-   "Making phone calls",
-   "Attending meetings only"
+   "An assembler",
+   "A compiler",
+   "An interpreter",
+   "A linker"
   ],
-  "answer": "Working from home using technology",
-  "explanation": "Telecommuting uses ICT to work remotely.",
-  "topic": "it-l4-2"
+  "answer": "An assembler",
+  "explanation": "An assembler turns the mnemonics of assembly language into the machine code the processor executes. Compilers and interpreters translate high-level languages.",
+  "topic": "impl-programming-language-overview"
  },
- {
-  "id": "p98",
-  "question": "Which of the following is a spreadsheet application?",
+{
+  "id": "p52",
+  "question": "Which of the following is a boolean value?",
   "options": [
-   "Microsoft Excel",
-   "Adobe Photoshop",
-   "VLC Player",
-   "Windows Explorer"
+   "True",
+   "5",
+   "\"hello\"",
+   "3.14"
   ],
-  "answer": "Microsoft Excel",
-  "explanation": "Excel is spreadsheet software; the others are graphics, media and file tools.",
-  "topic": "it-l6-2"
+  "answer": "True",
+  "explanation": "Booleans are True/False.",
+  "topic": "impl-variables-constants-and-data-types"
  },
- {
+{
   "id": "p99",
   "question": "In a database, which object presents data in a formatted layout for printing?",
   "options": [
@@ -1286,17 +909,394 @@
   "explanation": "Reports format and print database data.",
   "topic": "it-l3-1"
  },
- {
-  "id": "p100",
-  "question": "Which of the following is used to enter data into a database interactively?",
+{
+  "id": "p40",
+  "question": "Which device connects a LAN to the internet?",
   "options": [
-   "Form",
-   "Report",
-   "Query",
-   "Sort"
+   "Router",
+   "Hub",
+   "Switch",
+   "Repeater"
   ],
-  "answer": "Form",
-  "explanation": "Forms provide a user-friendly data entry interface.",
-  "topic": "it-l3-1"
+  "answer": "Router",
+  "explanation": "A router routes traffic between networks.",
+  "topic": "it-l4-1"
+ },
+{
+  "id": "p123",
+  "question": "A caller travels from one cell to the next and the call is passed on without being dropped. What is that called?",
+  "options": [
+   "Handover",
+   "Roaming charge",
+   "Synchronisation",
+   "Broadband"
+  ],
+  "answer": "Handover",
+  "explanation": "Handover is the network passing the call from one cell's base station to the next as the user moves.",
+  "topic": "net-mobile-communication-importance"
+ },
+{
+  "id": "p9",
+  "question": "Which HTML tag is used to create a hyperlink?",
+  "options": [
+   "<link>",
+   "<a>",
+   "<href>",
+   "<url>"
+  ],
+  "answer": "<a>",
+  "explanation": "The <a> (anchor) tag, along with the 'href' attribute, is used to link to other pages or resources.",
+  "topic": "it-l5-1"
+ },
+{
+  "id": "p127",
+  "question": "Every page of a site carries the same header, main content area and footer. That shared layout is called the page:",
+  "options": [
+   "skeleton",
+   "template map",
+   "site map",
+   "domain"
+  ],
+  "answer": "skeleton",
+  "explanation": "The page skeleton is the header with the site name and navigation, the main content, and the footer with contact details and secondary links.",
+  "topic": "web-website-structure-and-organisation"
+ },
+{
+  "id": "p131",
+  "question": "Which service stores a website's files so that visitors can reach them over the internet?",
+  "options": [
+   "A web host",
+   "A web browser",
+   "A domain name registry only",
+   "An email client"
+  ],
+  "answer": "A web host",
+  "explanation": "The web host stores the files and serves them; the domain name is the address that points visitors at that host.",
+  "topic": "web-website-evaluation-and-publishing"
+ },
+{
+  "id": "p29",
+  "question": "Which spreadsheet function finds the average of a range?",
+  "options": [
+   "=AVERAGE(A1:A10)",
+   "=SUM(A1:A10)",
+   "=COUNT(A1:A10)",
+   "=MAX(A1:A10)"
+  ],
+  "answer": "=AVERAGE(A1:A10)",
+  "explanation": "AVERAGE calculates the arithmetic mean.",
+  "topic": "it-l6-2"
+ },
+{
+  "id": "p136",
+  "question": "The grey guidance text such as 'Type your full name', which disappears when the field is typed into, is called:",
+  "options": [
+   "placeholder text",
+   "a caption",
+   "a bookmark",
+   "a footer"
+  ],
+  "answer": "placeholder text",
+  "explanation": "Placeholder text tells the person filling the form what belongs in the control, and it disappears at the first keystroke.",
+  "topic": "wp-fillable-electronic-forms"
+ },
+{
+  "id": "p141",
+  "question": "How does a workbook differ from a worksheet?",
+  "options": [
+   "The workbook is the whole file and a worksheet is one sheet inside it",
+   "The workbook is one sheet and the worksheet is the file",
+   "They are two names for the same thing",
+   "The workbook holds only charts"
+  ],
+  "answer": "The workbook is the whole file and a worksheet is one sheet inside it",
+  "explanation": "A workbook is the file; each worksheet is one tab inside it, and one workbook can hold many worksheets.",
+  "topic": "sheet-worksheet-management"
+ },
+{
+  "id": "p97",
+  "question": "Which of the following describes 'telecommuting'?",
+  "options": [
+   "Working from home using technology",
+   "Travelling to work",
+   "Making phone calls",
+   "Attending meetings only"
+  ],
+  "answer": "Working from home using technology",
+  "explanation": "Telecommuting uses ICT to work remotely.",
+  "topic": "imp-ict-and-employment"
+ },
+{
+  "id": "p146",
+  "question": "Which of these is an ECONOMIC impact of ICT rather than a social one?",
+  "options": [
+   "A small business can now sell to customers beyond its own parish",
+   "Families keep in touch by video call",
+   "Students read the same notes online",
+   "People spend less time face to face"
+  ],
+  "answer": "A small business can now sell to customers beyond its own parish",
+  "explanation": "Economic impact is about money, work and growth; the other three are social impacts on how people live and relate.",
+  "topic": "imp-societal-and-economic-impact"
+ },
+{
+  "id": "p72",
+  "question": "The motherboard is:",
+  "options": [
+   "the main circuit board",
+   "a storage device",
+   "an input device",
+   "an output device"
+  ],
+  "answer": "the main circuit board",
+  "explanation": "The motherboard connects all major components.",
+  "topic": "it-l1-1"
+ },
+{
+  "id": "p102",
+  "question": "Which element of an IT system is the set of written rules and steps for using it?",
+  "options": [
+   "Hardware",
+   "Software",
+   "Procedures",
+   "People"
+  ],
+  "answer": "Procedures",
+  "explanation": "Procedures are the written rules and steps. Hardware is the equipment, software the programs and people the users who operate the system.",
+  "topic": "fund-information-technology-concept"
+ },
+{
+  "id": "p95",
+  "question": "The most effective backup strategy is:",
+  "options": [
+   "regular automated backups",
+   "one manual copy",
+   "no backups",
+   "backup only after a crash"
+  ],
+  "answer": "regular automated backups",
+  "explanation": "Regular backups minimise data loss.",
+  "topic": "fund-cloud-and-local-storage"
+ },
+{
+  "id": "p108",
+  "question": "A graphical user interface is described by the WIMP model. What does the W in WIMP stand for?",
+  "options": [
+   "Windows",
+   "Wireless",
+   "Web",
+   "Wizard"
+  ],
+  "answer": "Windows",
+  "explanation": "WIMP stands for Windows, Icons, Menus and Pointer - the four things a GUI gives the user to work with.",
+  "topic": "fund-user-interface-types"
+ },
+{
+  "id": "p113",
+  "question": "What does a single beep at start-up usually mean?",
+  "options": [
+   "The power-on self-test passed",
+   "The hard disk has failed",
+   "The printer is out of paper",
+   "The operating system needs updating"
+  ],
+  "answer": "The power-on self-test passed",
+  "explanation": "One beep with a display means the machine passed its power-on self-test; a pattern of beeps or a blank screen points to memory or a failed part.",
+  "topic": "fund-basic-hardware-troubleshooting"
+ },
+{
+  "id": "p117",
+  "question": "A web address ends in .gov. What does that tell you about who published the page?",
+  "options": [
+   "It is a government site",
+   "It is a commercial site",
+   "It is a personal blog",
+   "It is an educational institution"
+  ],
+  "answer": "It is a government site",
+  "explanation": "The domain ending names the publisher: .gov a government, .edu an educational institution, .org an organisation, .com a commercial site.",
+  "topic": "fund-online-information-reliability"
+ },
+{
+  "id": "p62",
+  "question": "The oval symbol in a flowchart represents:",
+  "options": [
+   "start or end",
+   "process",
+   "input/output",
+   "decision"
+  ],
+  "answer": "start or end",
+  "explanation": "Ovals mark the beginning or end of a flowchart.",
+  "topic": "it-l2-1"
+ },
+{
+  "id": "p119",
+  "question": "Why will machine code written for one processor family not run on a different processor family?",
+  "options": [
+   "Because machine code is tied to the instruction set of one processor family",
+   "Because it has to be printed first",
+   "Because it is stored as text",
+   "Because it needs a web browser"
+  ],
+  "answer": "Because machine code is tied to the instruction set of one processor family",
+  "explanation": "Machine code is the binary instruction set of a particular processor, so code for one chip family will not execute on another.",
+  "topic": "impl-programming-language-overview"
+ },
+{
+  "id": "p121",
+  "question": "Which of these belongs in EXTERNAL documentation rather than inside the source code?",
+  "options": [
+   "The user manual",
+   "A comment explaining a loop",
+   "An indented IF statement",
+   "A meaningful variable name"
+  ],
+  "answer": "The user manual",
+  "explanation": "External documentation sits beside the program - the user manual and the technical manual - for readers who never see the source.",
+  "topic": "impl-program-documentation"
+ },
+{
+  "id": "p36",
+  "question": "A database 'query' is used to:",
+  "options": [
+   "extract specific data",
+   "print data",
+   "store paper files",
+   "design reports only"
+  ],
+  "answer": "extract specific data",
+  "explanation": "Queries retrieve and manipulate selected data.",
+  "topic": "it-l3-2"
+ },
+{
+  "id": "p42",
+  "question": "In a star topology, if the central hub fails:",
+  "options": [
+   "the whole network stops",
+   "only one computer fails",
+   "nothing changes",
+   "the internet fails"
+  ],
+  "answer": "the whole network stops",
+  "explanation": "All nodes depend on the central hub.",
+  "topic": "it-l4-1"
+ },
+{
+  "id": "p124",
+  "question": "Why does the mobile phone matter more than the fixed telephone did in many Caribbean countries?",
+  "options": [
+   "Many households never had a fixed line installed, so the mobile phone is the first and sometimes the only telephone",
+   "Fixed lines were illegal",
+   "Mobile calls cost nothing",
+   "Fixed telephones could not reach other countries"
+  ],
+  "answer": "Many households never had a fixed line installed, so the mobile phone is the first and sometimes the only telephone",
+  "explanation": "Before mobile networks, reaching a person meant reaching a place. In countries where many homes never had a fixed line, the handset was the first telephone.",
+  "topic": "net-mobile-communication-importance"
+ },
+{
+  "id": "p47",
+  "question": "Which HTML tag is used for the largest heading?",
+  "options": [
+   "<h1>",
+   "<h6>",
+   "<head>",
+   "<heading>"
+  ],
+  "answer": "<h1>",
+  "explanation": "<h1> is the largest heading level.",
+  "topic": "it-l5-1"
+ },
+{
+  "id": "p128",
+  "question": "The three-click rule says that:",
+  "options": [
+   "a visitor should be able to reach any page within three clicks of the home page",
+   "a page should load in three seconds",
+   "a site should hold no more than three pages",
+   "every page should carry three links"
+  ],
+  "answer": "a visitor should be able to reach any page within three clicks of the home page",
+  "explanation": "The three-click rule is about how deep the site is: if a page needs more than three clicks from the home page it is hard to find.",
+  "topic": "web-website-structure-and-organisation"
+ },
+{
+  "id": "p86",
+  "question": "A 'mail merge' is used to:",
+  "options": [
+   "send personalised letters to many people",
+   "merge two documents",
+   "combine audio files",
+   "merge cells"
+  ],
+  "answer": "send personalised letters to many people",
+  "explanation": "Mail merge combines a template with a data source.",
+  "topic": "it-l6-1"
+ },
+{
+  "id": "p30",
+  "question": "In a spreadsheet, the cell reference $A$1 is:",
+  "options": [
+   "absolute",
+   "relative",
+   "mixed only",
+   "circular"
+  ],
+  "answer": "absolute",
+  "explanation": "$A$1 locks both the column and row.",
+  "topic": "it-l6-2"
+ },
+{
+  "id": "p137",
+  "question": "Why is a form protected after its content controls are inserted?",
+  "options": [
+   "So that only the controls accept typing and the rest of the document cannot be changed",
+   "So that the form prints faster",
+   "So that the file becomes a PDF",
+   "So that the form can be emailed"
+  ],
+  "answer": "So that only the controls accept typing and the rest of the document cannot be changed",
+  "explanation": "Protecting the form locks the body of the document and leaves the content controls as the only places that accept typing.",
+  "topic": "wp-fillable-electronic-forms"
+ },
+{
+  "id": "p142",
+  "question": "Why would you group sheet tabs before typing?",
+  "options": [
+   "So that what is typed on one tab appears on all the grouped tabs at once",
+   "So that the tabs cannot be renamed",
+   "So that the sheets print together",
+   "So that the formulas stop working"
+  ],
+  "answer": "So that what is typed on one tab appears on all the grouped tabs at once",
+  "explanation": "Grouping applies every keystroke to all the selected tabs, which is how the same headings are set up on twelve sheets at once - so you ungroup before entering data that differs.",
+  "topic": "sheet-worksheet-management"
+ },
+{
+  "id": "p145",
+  "question": "Which role is the first person a user contacts when something stops working?",
+  "options": [
+   "A help-desk officer",
+   "A cybersecurity officer",
+   "A database administrator",
+   "A systems analyst"
+  ],
+  "answer": "A help-desk officer",
+  "explanation": "The help-desk officer is the first point of contact, and the job is to diagnose, fix or escalate the problem.",
+  "topic": "imp-computer-related-professions"
+ },
+{
+  "id": "p147",
+  "question": "Which of these is a SOCIAL cost of ICT named in the lesson?",
+  "options": [
+   "Cyberbullying and a loss of privacy",
+   "Cheaper government services",
+   "Lower cost of reaching customers",
+   "Growth in online sales"
+  ],
+  "answer": "Cyberbullying and a loss of privacy",
+  "explanation": "The social costs are less face-to-face contact, false information spreading quickly, cyberbullying and a loss of privacy. The others are economic gains.",
+  "topic": "imp-societal-and-economic-impact"
  }
 ]

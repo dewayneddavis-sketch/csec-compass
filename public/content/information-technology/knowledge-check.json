@@ -1,5 +1,5 @@
 [
- {
+{
   "id": "q1",
   "question": "Which of the following is considered system software?",
   "options": [
@@ -12,7 +12,7 @@
   "explanation": "Windows 11 is an operating system, which is the primary type of system software.",
   "topic": "it-l1-1"
  },
- {
+{
   "id": "q2",
   "question": "What is the decimal equivalent of the binary number 1011?",
   "options": [
@@ -25,59 +25,46 @@
   "explanation": "(1*8) + (0*4) + (1*2) + (1*1) = 8 + 0 + 2 + 1 = 11.",
   "topic": "it-l1-2"
  },
- {
-  "id": "q3",
-  "question": "In a flowchart, what does a diamond shape represent?",
+{
+  "id": "q16",
+  "question": "What does GUI stand for?",
   "options": [
-   "Start/Stop",
-   "Input/Output",
-   "Process",
-   "Decision"
+   "General User Interval",
+   "Graphical User Interface",
+   "Global User Index",
+   "Graphics Universal Integration"
   ],
-  "answer": "Decision",
-  "explanation": "A diamond shape represents a decision point in an algorithm.",
-  "topic": "it-l2-1"
+  "answer": "Graphical User Interface",
+  "explanation": "GUI is a type of user interface that allows users to interact with devices through graphical icons.",
+  "topic": "fund-user-interface-types"
  },
- {
-  "id": "q4",
-  "question": "Which programming construct is used to repeat a block of code a specific number of times?",
+{
+  "id": "q26",
+  "question": "Which of these lists three of the six elements every IT system is built from?",
   "options": [
-   "Sequence",
-   "Selection",
-   "FOR Loop",
-   "IF-THEN"
+   "hardware, software and data",
+   "keyboard, monitor and printer",
+   "HTML, CSS and JavaScript",
+   "Windows, Excel and Chrome"
   ],
-  "answer": "FOR Loop",
-  "explanation": "A FOR loop is a type of iteration used when the number of repetitions is known.",
-  "topic": "it-l2-2"
+  "answer": "hardware, software and data",
+  "explanation": "Hardware, software, data, information, people and procedures are the six elements; the other lists name products or parts.",
+  "topic": "fund-information-technology-concept"
  },
- {
-  "id": "q5",
-  "question": "What is the primary function of a 'Primary Key' in a database table?",
+{
+  "id": "q27",
+  "question": "Which of these is a WEAKNESS of local storage that cloud storage does not have?",
   "options": [
-   "To sort the data alphabetically",
-   "To uniquely identify each record",
-   "To encrypt sensitive information",
-   "To link the database to the internet"
+   "The device can be lost, stolen or damaged and the files go with it",
+   "It needs an internet connection",
+   "It usually keeps versions of every file",
+   "It can be reached from any device with the right login"
   ],
-  "answer": "To uniquely identify each record",
-  "explanation": "A Primary Key must be unique for every record in a table.",
-  "topic": "it-l3-1"
+  "answer": "The device can be lost, stolen or damaged and the files go with it",
+  "explanation": "Local storage is fast and works offline, but the device is a single point of loss. Cloud storage is reached from any device and keeps versions and a backup.",
+  "topic": "fund-cloud-and-local-storage"
  },
- {
-  "id": "q6",
-  "question": "Which SQL keyword is used to extract data from a database?",
-  "options": [
-   "GET",
-   "FETCH",
-   "SELECT",
-   "EXTRACT"
-  ],
-  "answer": "SELECT",
-  "explanation": "The SELECT statement is used to select data from a database.",
-  "topic": "it-l3-2"
- },
- {
+{
   "id": "q7",
   "question": "Which network topology connects all devices to a central hub or switch?",
   "options": [
@@ -90,98 +77,7 @@
   "explanation": "In a Star topology, all nodes are connected to a central connection point.",
   "topic": "it-l4-1"
  },
- {
-  "id": "q8",
-  "question": "What does 'HTTPS' provide that 'HTTP' does not?",
-  "options": [
-   "Faster loading speeds",
-   "Better images",
-   "Encrypted communication",
-   "Automatic translations"
-  ],
-  "answer": "Encrypted communication",
-  "explanation": "HTTPS uses encryption to secure the communication between the browser and the server.",
-  "topic": "it-l4-2"
- },
- {
-  "id": "q9",
-  "question": "Which HTML tag is used to create a hyperlink?",
-  "options": [
-   "<link>",
-   "<a>",
-   "<href>",
-   "<url>"
-  ],
-  "answer": "<a>",
-  "explanation": "The <a> (anchor) tag is used to define hyperlinks.",
-  "topic": "it-l5-1"
- },
- {
-  "id": "q10",
-  "question": "What is the correct CSS syntax to change the text colour of all <p> elements to red?",
-  "options": [
-   "p {color: red;}",
-   "<p style='color:red;'>",
-   "p: red;",
-   "all.p {color: red;}"
-  ],
-  "answer": "p {color: red;}",
-  "explanation": "The selector is 'p' and the property is 'color' set to 'red'.",
-  "topic": "it-l5-2"
- },
- {
-  "id": "q11",
-  "question": "In a spreadsheet, what does the formula =SUM(A1:A5) do?",
-  "options": [
-   "Multiplies values in cells A1 and A5",
-   "Counts the number of cells from A1 to A5",
-   "Adds the values in the range A1 through A5",
-   "Finds the largest value in the range A1 through A5"
-  ],
-  "answer": "Adds the values in the range A1 through A5",
-  "explanation": "The SUM function adds up all the numbers in the specified range.",
-  "topic": "it-l6-2"
- },
- {
-  "id": "q12",
-  "question": "Which feature in word processing is used to create personalised letters for a large number of recipients?",
-  "options": [
-   "AutoCorrect",
-   "Mail Merge",
-   "Spell Check",
-   "Find and Replace"
-  ],
-  "answer": "Mail Merge",
-  "explanation": "Mail Merge allows you to link a data source to a document template.",
-  "topic": "it-l6-1"
- },
- {
-  "id": "q13",
-  "question": "How many bits are in one byte?",
-  "options": [
-   "4",
-   "8",
-   "16",
-   "1024"
-  ],
-  "answer": "8",
-  "explanation": "There are exactly 8 bits in one byte.",
-  "topic": "it-l1-2"
- },
- {
-  "id": "q14",
-  "question": "Which of the following is an example of an input device?",
-  "options": [
-   "Monitor",
-   "Printer",
-   "Scanner",
-   "Speaker"
-  ],
-  "answer": "Scanner",
-  "explanation": "A scanner is an input device used to convert physical documents into digital data.",
-  "topic": "it-l1-1"
- },
- {
+{
   "id": "q15",
   "question": "What is the purpose of a firewall?",
   "options": [
@@ -194,59 +90,202 @@
   "explanation": "A firewall monitors and controls incoming and outgoing network traffic based on security rules.",
   "topic": "it-l4-2"
  },
- {
-  "id": "q16",
-  "question": "What does GUI stand for?",
+{
+  "id": "q8",
+  "question": "What does 'HTTPS' provide that 'HTTP' does not?",
   "options": [
-   "General User Interval",
-   "Graphical User Interface",
-   "Global User Index",
-   "Graphics Universal Integration"
+   "Faster loading speeds",
+   "Better images",
+   "Encrypted communication",
+   "Automatic translations"
   ],
-  "answer": "Graphical User Interface",
-  "explanation": "GUI is a type of user interface that allows users to interact with devices through graphical icons.",
-  "topic": "it-l1-1"
+  "answer": "Encrypted communication",
+  "explanation": "HTTPS uses encryption to secure the communication between the browser and the server.",
+  "topic": "net-web-technologies"
  },
- {
-  "id": "q17",
-  "question": "Which of these is an example of an input device?",
+{
+  "id": "q28",
+  "question": "What is a base station in a mobile network?",
   "options": [
-   "Monitor",
-   "Printer",
-   "Scanner",
-   "Speaker"
+   "The transmitter and receiver that serves one cell",
+   "The handset carried by the user",
+   "The billing system of the network",
+   "The satellite that links two countries"
   ],
-  "answer": "Scanner",
-  "explanation": "A scanner takes physical data and converts it into digital format for the computer.",
-  "topic": "it-l1-1"
+  "answer": "The transmitter and receiver that serves one cell",
+  "explanation": "A mobile network divides an area into cells, and each cell is served by its own base station.",
+  "topic": "net-mobile-communication-importance"
  },
- {
-  "id": "q18",
-  "question": "In a spreadsheet, what is the intersection of a row and a column called?",
+{
+  "id": "q29",
+  "question": "Which profession owns the requirements document and the design of a new system?",
   "options": [
-   "Grid",
-   "Box",
-   "Cell",
-   "Block"
+   "A systems analyst",
+   "A programmer",
+   "A web developer",
+   "A help-desk officer"
   ],
-  "answer": "Cell",
-  "explanation": "A cell is the basic unit for entering data in a spreadsheet.",
+  "answer": "A systems analyst",
+  "explanation": "The systems analyst studies how the business works and writes what the new system must do; the programmer writes the code from that design.",
+  "topic": "imp-computer-related-professions"
+ },
+{
+  "id": "q9",
+  "question": "Which HTML tag is used to create a hyperlink?",
+  "options": [
+   "<link>",
+   "<a>",
+   "<href>",
+   "<url>"
+  ],
+  "answer": "<a>",
+  "explanation": "The <a> (anchor) tag is used to define hyperlinks.",
+  "topic": "it-l5-1"
+ },
+{
+  "id": "q10",
+  "question": "What is the correct CSS syntax to change the text colour of all <p> elements to red?",
+  "options": [
+   "p {color: red;}",
+   "<p style='color:red;'>",
+   "p: red;",
+   "all.p {color: red;}"
+  ],
+  "answer": "p {color: red;}",
+  "explanation": "The selector is 'p' and the property is 'color' set to 'red'.",
+  "topic": "it-l5-2"
+ },
+{
+  "id": "q12",
+  "question": "Which feature in word processing is used to create personalised letters for a large number of recipients?",
+  "options": [
+   "AutoCorrect",
+   "Mail Merge",
+   "Spell Check",
+   "Find and Replace"
+  ],
+  "answer": "Mail Merge",
+  "explanation": "Mail Merge allows you to link a data source to a document template.",
+  "topic": "it-l6-1"
+ },
+{
+  "id": "q30",
+  "question": "A file opens read-only with a bar saying it has been marked final, and a determined reader can turn that off. Which protection is that?",
+  "options": [
+   "Mark as Final",
+   "A password to open",
+   "Restrict editing to comments",
+   "Read-only file permission"
+  ],
+  "answer": "Mark as Final",
+  "explanation": "Mark as Final is the weakest setting: it discourages edits but the reader can remove it. A password to open encrypts the file instead.",
+  "topic": "wp-document-protection-features"
+ },
+{
+  "id": "q31",
+  "question": "Why must a site's home page be named index.html?",
+  "options": [
+   "Because a web server sends index.html automatically when a visitor asks for the folder",
+   "Because browsers refuse other names",
+   "Because it is the only name a web host accepts",
+   "Because HTML requires it"
+  ],
+  "answer": "Because a web server sends index.html automatically when a visitor asks for the folder",
+  "explanation": "A visitor who types the site's address with no page name still lands on the home page, because the server looks for index.html in that folder.",
+  "topic": "web-website-structure-and-organisation"
+ },
+{
+  "id": "q5",
+  "question": "What is the primary function of a 'Primary Key' in a database table?",
+  "options": [
+   "To sort the data alphabetically",
+   "To uniquely identify each record",
+   "To encrypt sensitive information",
+   "To link the database to the internet"
+  ],
+  "answer": "To uniquely identify each record",
+  "explanation": "A Primary Key must be unique for every record in a table.",
+  "topic": "it-l3-1"
+ },
+{
+  "id": "q6",
+  "question": "Which SQL keyword is used to extract data from a database?",
+  "options": [
+   "GET",
+   "FETCH",
+   "SELECT",
+   "EXTRACT"
+  ],
+  "answer": "SELECT",
+  "explanation": "The SELECT statement is used to select data from a database.",
+  "topic": "it-l3-2"
+ },
+{
+  "id": "q11",
+  "question": "In a spreadsheet, what does the formula =SUM(A1:A5) do?",
+  "options": [
+   "Multiplies values in cells A1 and A5",
+   "Counts the number of cells from A1 to A5",
+   "Adds the values in the range A1 through A5",
+   "Finds the largest value in the range A1 through A5"
+  ],
+  "answer": "Adds the values in the range A1 through A5",
+  "explanation": "The SUM function adds up all the numbers in the specified range.",
   "topic": "it-l6-2"
  },
- {
-  "id": "q19",
-  "question": "What does the 'S' in HTTPS stand for?",
+{
+  "id": "q32",
+  "question": "A spreadsheet cell shows #REF!. What does that mean?",
   "options": [
-   "Simple",
-   "Secure",
-   "System",
-   "Standard"
+   "The reference no longer exists because the cell it pointed at was deleted",
+   "The formula is too long",
+   "The number is too large for the cell",
+   "The sheet is protected"
   ],
-  "answer": "Secure",
-  "explanation": "HTTPS is the secure version of HTTP, using encryption for data transfer.",
-  "topic": "it-l4-2"
+  "answer": "The reference no longer exists because the cell it pointed at was deleted",
+  "explanation": "#REF! means a reference is broken - usually a row or column the formula pointed at was deleted, so it is restored with Undo rather than retyped.",
+  "topic": "sheet-column-and-row-manipulation"
  },
- {
+{
+  "id": "q33",
+  "question": "Which formula reads cell B4 on the worksheet named Jan?",
+  "options": [
+   "=Jan!B4",
+   "=Jan.B4",
+   "=B4!Jan",
+   "=Jan(B4)"
+  ],
+  "answer": "=Jan!B4",
+  "explanation": "A cross-sheet reference has the form Sheet!Cell, read aloud as 'Jan, B4'.",
+  "topic": "sheet-worksheet-management"
+ },
+{
+  "id": "q3",
+  "question": "In a flowchart, what does a diamond shape represent?",
+  "options": [
+   "Start/Stop",
+   "Input/Output",
+   "Process",
+   "Decision"
+  ],
+  "answer": "Decision",
+  "explanation": "A diamond shape represents a decision point in an algorithm.",
+  "topic": "it-l2-1"
+ },
+{
+  "id": "q4",
+  "question": "Which programming construct is used to repeat a block of code a specific number of times?",
+  "options": [
+   "Sequence",
+   "Selection",
+   "FOR Loop",
+   "IF-THEN"
+  ],
+  "answer": "FOR Loop",
+  "explanation": "A FOR loop is a type of iteration used when the number of repetitions is known.",
+  "topic": "it-l2-2"
+ },
+{
   "id": "q20",
   "question": "Which of the following is a high-level programming language?",
   "options": [
@@ -257,71 +296,32 @@
   ],
   "answer": "Python",
   "explanation": "High-level languages like Python are closer to human language and easier to read.",
-  "topic": "it-l2-2"
+  "topic": "impl-programming-language-overview"
  },
- {
-  "id": "q21",
-  "question": "What is the main function of the ALU in the CPU?",
+{
+  "id": "q34",
+  "question": "Which of these is NOT allowed as a variable name in most programming languages?",
   "options": [
-   "Store data",
-   "Perform calculations",
-   "Control flow",
-   "Manage peripherals"
+   "2ndMark",
+   "studentName",
+   "total_mark",
+   "mark2"
   ],
-  "answer": "Perform calculations",
-  "explanation": "The Arithmetic Logic Unit performs all arithmetic and logical operations.",
-  "topic": "it-l1-1"
+  "answer": "2ndMark",
+  "explanation": "An identifier must begin with a letter, so 2ndMark is illegal; after the first letter it may hold letters, digits and underscores.",
+  "topic": "impl-variables-constants-and-data-types"
  },
- {
-  "id": "q22",
-  "question": "Which type of network covers a large geographical area, such as a country or the world?",
+{
+  "id": "q35",
+  "question": "Which of these is INTERNAL documentation?",
   "options": [
-   "LAN",
-   "PAN",
-   "MAN",
-   "WAN"
+   "A comment explaining a loop, written inside the source code",
+   "A user manual supplied with the program",
+   "A technical manual for the installer",
+   "A quick-reference card in the box"
   ],
-  "answer": "WAN",
-  "explanation": "A Wide Area Network (WAN) connects smaller networks over long distances.",
-  "topic": "it-l4-1"
- },
- {
-  "id": "q23",
-  "question": "What is 'phishing'?",
-  "options": [
-   "A way to speed up the internet",
-   "A fraudulent attempt to obtain sensitive information",
-   "A type of database software",
-   "A programming technique"
-  ],
-  "answer": "A fraudulent attempt to obtain sensitive information",
-  "explanation": "Phishing usually involves deceptive emails or websites.",
-  "topic": "it-l4-2"
- },
- {
-  "id": "q24",
-  "question": "In database terminology, a collection of related fields is called a?",
-  "options": [
-   "Table",
-   "Record",
-   "File",
-   "Attribute"
-  ],
-  "answer": "Record",
-  "explanation": "A record (or row) contains all the data for one specific entry.",
-  "topic": "it-l3-1"
- },
- {
-  "id": "q25",
-  "question": "What is the binary equivalent of the decimal number 10?",
-  "options": [
-   "1000",
-   "1010",
-   "1100",
-   "1111"
-  ],
-  "answer": "1010",
-  "explanation": "8 + 2 = 10, which is 1010 in binary.",
-  "topic": "it-l1-2"
+  "answer": "A comment explaining a loop, written inside the source code",
+  "explanation": "Internal documentation lives in the source and travels with it - comments, header blocks, meaningful names and indentation. Manuals are external.",
+  "topic": "impl-program-documentation"
  }
 ]

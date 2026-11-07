@@ -92,8 +92,12 @@ the three `imp-` lessons are Section 3 and open the new `it-mod-7` (0 → 3). So
   and **function/subprogram** in `it-l2-2`; the **parallelogram** and **arrow** flowchart symbols in
   `it-l2-1`; and **form** and **report** as database objects in `it-l3-1`. They are closed by teaching,
   never by editing the deck or the bank.
-- **Frozen in this PR:** `practice.json` (100) and `knowledge-check.json` (25). The bank re-balance is a
-  separate single-owner pass after the slices, to a 5-group mapping keyed by lesson id.
+- **Banks re-balanced after the slices (this pass).** `practice.json` is **100** questions with **every one
+  of the 35 lessons drilled** and still splits 20/20/20/20/20; `knowledge-check.json` is **25**, **5 per
+  group over 5 distinct lesson topics**. The retirement ledger is
+  `docs/information-technology-bank-rebalance.md` and the guard is
+  `tools/check-information-technology-bank-balance.mjs` (36 checks, 26 red controls). Nothing about the
+  coverage build moved: 35 lessons, 7 modules, `PENDING_IDS` empty.
 
 ### The REUSE rows — what the host lesson actually says
 
@@ -223,7 +227,7 @@ and `it-l6-2` name them — **Mail Merge Feature** in the #29 extension and **Ba
 CSS, JavaScript, styling) are protected: no chapter in the 61-row table maps to them, and they must keep
 teaching their own topic. They exist in the syllabus and in the bank, and an id is identity.
 
-## Bank grouping (later single-owner re-balance, keyed by lesson id — never module id)
+## Bank grouping (the re-balance is keyed by lesson id — never module id)
 
 `it-mod-6` splits across two groups, so groups are built from lesson ids:
 
@@ -233,6 +237,10 @@ teaching their own topic. They exist in the syllabus and in the bank, and an id 
 - **G4 Spreadsheets & databases** = `it-mod-6` spreadsheet half (3) + `it-mod-3` (2) (5)
 - **G5 Design & program implementation** = `it-mod-2` (5)
 
-Every group has at least 5 lessons, so "5 questions per group, 5 distinct topics" holds exactly. Measured
-baseline before the re-balance: 43 of the 100 practice questions sit on `it-l1-1` (23) + `it-l4-2` (20), and
-44% of the knowledge check sits on the same two lessons.
+Every group has at least 5 lessons, so "5 questions per group, 5 distinct topics" holds exactly — no
+`min(5, lessons-in-section)` relaxation is needed. **Measured baseline before the re-balance** (re-derived
+from the branch-point banks, not carried over): 43 of the 100 practice questions sat on `it-l1-1` (23) +
+`it-l4-2` (20), and **36%** of the knowledge check sat on the same two lessons (`it-l1-1` 5 + `it-l4-2` 4 =
+9 of 25). The earlier "44%" in this file was wrong; it is corrected here. Per module, practice ran
+28 / 16 / 10 / 30 / 5 / 11 / 0 and the knowledge check 8 / 3 / 3 / 6 / 2 / 3 / 0 across the seven modules —
+one module held 30% of the practice bank and another held none.
