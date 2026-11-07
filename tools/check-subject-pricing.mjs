@@ -40,7 +40,7 @@ import { dirname, join } from "node:path";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 register("./grants-loader.mjs", import.meta.url);
 
-const OWNER = "dewayneddavis@gmail.com";
+const OWNER = "owner@csec-compass.test";
 const STUDENT = { id: "u-2", email: "ana@school.edu" };
 const STUDENT_TOKEN = "student-token";
 process.env.SUPABASE_URL = "https://example.supabase.co";

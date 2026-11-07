@@ -77,9 +77,6 @@ function mockRes() {
   return res;
 }
 
-const recordHandler = (await import("../api/analytics/record.js")).default;
-const summaryHandler = (await import("../api/analytics/summary.js")).default;
-const adminHandler = (await import("../api/admin/grant-access.js")).default;
 
 async function call(handler, req) {
   const res = mockRes();
@@ -88,10 +85,16 @@ async function call(handler, req) {
 }
 
 const TEACHER = "ms.brown@school.edu";
-const OWNER = "dewayneddavis@gmail.com";
+const OWNER = "owner@csec-compass.test";
 const STUDENT_A = "student1@school.edu";
 const STUDENT_B = "student2@school.edu";
 
+// THE ENVIRONMENT MUST BE SET BEFORE THE HANDLERS ARE IMPORTED.
+// api/admin/grant-access.js resolves its owner allowlist once, at module load
+// (a top-level `const`), and that allowlist is ENV-ONLY since the owner-address
+// strip - there is no hardcoded fallback left to cover a late assignment.
+// Setting these after the dynamic imports below would make the owner read as
+// nobody and the owner-links section would (correctly) fail on a 403.
 process.env.SUPABASE_URL = "https://example.supabase.co";
 process.env.SUPABASE_SERVICE_ROLE_KEY = "service-role-test";
 process.env.OWNER_EMAILS = OWNER;
@@ -100,6 +103,10 @@ process.env.OWNER_EMAILS = OWNER;
 // The singular-only and plural-only cases are asserted in their own section.
 process.env.TEACHER_EMAIL = TEACHER;
 process.env.TEACHER_EMAILS = TEACHER;
+
+const recordHandler = (await import("../api/analytics/record.js")).default;
+const summaryHandler = (await import("../api/analytics/summary.js")).default;
+const adminHandler = (await import("../api/admin/grant-access.js")).default;
 
 const authHeader = { authorization: "Bearer test-token" };
 
@@ -1459,7 +1466,19 @@ check("schema remains idempotent", !/create table if not exists public\.lab_acti
 
 // --- school-admin self-service: UI wiring + schema -------------------------
 check("the /school route is registered", /import SchoolConsolePage/.test(app) && /path="\/school"/.test(app));
-check("the home educator card links to both educator screens", /to="\/teacher"/.test(homePage) && /to="\/school"/.test(homePage));
+// PIN RE-POINTED (owner instruction 2026-11-05). The two educator links are no
+// longer written as <Link to="/teacher"> in Home.jsx: both dashboards now render
+// through ONE DashboardCard, which takes `to` as a prop value. The pin therefore
+// has to accept the object form AND prove the card actually turns it into a
+// router <Link> - otherwise the homepage could carry the string with no anchor
+// behind it.
+check(
+  "the home educator card links to both educator screens",
+  /to: "\/teacher"/.test(homePage) &&
+    /to: "\/school"/.test(homePage) &&
+    /<Link to=\{cta\.to\}/.test(homePage) &&
+    /<Link to=\{secondary\.to\}/.test(homePage)
+);
 check("the admin screen renders the owner-only schools card", /SchoolAdminCard/.test(adminPage));
 check("the school console reads the scoped roster action", /school-roster/.test(schoolConsole));
 check("the console can link and unlink students", /school-link/.test(schoolConsole) && /school-unlink/.test(schoolConsole));

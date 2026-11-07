@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import AccountRolePicker from "../components/AccountRolePicker";
+import { ACCOUNT_ROLE_REQUIRED_MESSAGE, cleanAccountRole } from "../data/accountRoles";
 import "./SignupPage.css";
 
 export default function SignupPage() {
@@ -17,6 +19,11 @@ export default function SignupPage() {
   // that one of the two forms skips would not be consent (owner legal review
   // 2026-09-22).
   const [agreed, setAgreed] = useState(false);
+  // The identity declaration (owner instruction 2026-11-05). Required, like the
+  // consent box beside it: the owner's ask is that a person creating an account
+  // "must identify I am a student, I am a Teacher, I am a Parent". It decides
+  // which dashboard we OFFER them — it grants no access on its own.
+  const [role, setRole] = useState("");
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -26,6 +33,10 @@ export default function SignupPage() {
     // browsers, so the rule is enforced here as well as on the button.
     if (!agreed) {
       setError("Please agree to the Terms of Service and the Privacy Policy to create an account.");
+      return;
+    }
+    if (!cleanAccountRole(role)) {
+      setError(ACCOUNT_ROLE_REQUIRED_MESSAGE);
       return;
     }
     if (password !== confirm) {
@@ -38,7 +49,7 @@ export default function SignupPage() {
     }
     setBusy(true);
     try {
-      const { error } = await signUp(email, password);
+      const { error } = await signUp(email, password, role);
       if (error) setError(error.message);
       else setMessage("Account created! Check your email for a confirmation link.");
     } catch (err) {
@@ -56,6 +67,7 @@ export default function SignupPage() {
         {message && <div className="sp-message success">{message}</div>}
         {error && <div className="sp-message error">{error}</div>}
         <form onSubmit={handleSubmit}>
+          <AccountRolePicker value={role} onChange={setRole} name="signup-account-role" disabled={busy} />
           <div className="sp-field">
             <label>Email</label>
             <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required placeholder="you@example.com" />
@@ -83,7 +95,7 @@ export default function SignupPage() {
               </span>
             </label>
           </div>
-          <button className="sp-btn sp-btn-primary" disabled={busy || !agreed}>{busy ? "Creating account..." : "Create Account"}</button>
+          <button className="sp-btn sp-btn-primary" disabled={busy || !agreed || !cleanAccountRole(role)}>{busy ? "Creating account..." : "Create Account"}</button>
         </form>
         <div className="sp-links">
           <Link to="/login">Already have an account? Sign in</Link>

@@ -22,7 +22,7 @@ import { dirname, join } from "node:path";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 register("./grants-loader.mjs", import.meta.url);
 
-const OWNER = "dewayneddavis@gmail.com";
+const OWNER = "owner@csec-compass.test";
 process.env.SUPABASE_URL = "https://example.supabase.co";
 process.env.SUPABASE_SERVICE_ROLE_KEY = "service-role-test";
 process.env.STRIPE_SECRET_KEY = "sk_test_offline";

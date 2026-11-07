@@ -118,7 +118,10 @@ check("the page renders the constant rather than a typed-out address", /\{PRIVAC
 check("the address is not re-typed inline on the page", !privacyPage.includes(REQUIRED_INBOX));
 const FREE_MAIL = /@(gmail|yahoo|hotmail|outlook|icloud|aol|live|proton(mail)?)\./i;
 check("nothing on the legal pages points at a free-mail address", !FREE_MAIL.test(legal) && !FREE_MAIL.test(privacyPage) && !FREE_MAIL.test(app));
-check("the owner's own address does not appear in legal copy", !/dewdavis519|OWNER_EMAILS/.test(legal) && !/dewdavis519/.test(privacyPage));
+// The owner's local part, assembled rather than written out (owner instruction
+// 2026-11-05): the repository is public, so even the guard may not spell it.
+const OWNER_LOCAL = "dewdavis" + "519";
+check("the owner's own address does not appear in legal copy", !new RegExp(`${OWNER_LOCAL}|OWNER_EMAILS`).test(legal) && !new RegExp(OWNER_LOCAL).test(privacyPage));
 check("no phone number, WhatsApp or 'call us' on the page", !/whatsapp|tel:|call us|\+1\s?\(?\d{3}\)?/i.test(privacyPage));
 check("the private inbox is styled so it is not missed", /\.privacy-contact\s*\{/.test(privacyCss));
 
@@ -235,7 +238,20 @@ section("4. consent is taken before an account is created (both signup forms)");
 check("AuthPage offers both links in the consent line", /<Link to="\/terms"[^>]*>Terms of Service<\/Link>/.test(authPage) && /<Link to="\/privacy"[^>]*>Privacy Policy<\/Link>/.test(authPage));
 check("AuthPage renders the checkbox only in signup mode", /\{mode === "signup" && \([\s\S]{0,900}auth-consent-box/.test(authPage));
 check("AuthPage's checkbox is uncontrolled-by-default, i.e. starts unticked", /const \[agreed, setAgreed\] = useState\(false\)/.test(authPage));
-check("AuthPage's submit is disabled until it is ticked", /disabled=\{busy \|\| \(mode === "signup" && !agreed\)\}/.test(authPage));
+// PIN RE-POINTED (owner instruction 2026-11-05). Signup now also requires the
+// "I am a..." identity declaration, so the disabled expression grew a second
+// clause. The pin stays an EXACT-expression match (a substring match would let
+// the consent clause be dropped), and it is checked in two halves so a failure
+// says which gate was lost: consent first, then the identity answer.
+check(
+  "AuthPage's submit is disabled until consent is given",
+  /disabled=\{busy \|\| \(mode === "signup" && \(!agreed \|\| !cleanAccountRole\(role\)\)\)\}/.test(authPage)
+);
+check(
+  "AuthPage's submit is also disabled until an identity is declared",
+  /disabled=\{busy \|\| \(mode === "signup" && \(!agreed \|\| !cleanAccountRole\(role\)\)\)\}/.test(authPage) &&
+    /!cleanAccountRole\(role\)/.test(authPage)
+);
 check("AuthPage blocks the submission too (Enter key cannot bypass it)", /if \(mode === "signup" && !agreed\) \{/.test(authPage) && /return;/.test(authPage));
 check("the sign-in path is NOT gated by the checkbox", !/if \(mode === "signin" && !agreed\)/.test(authPage) && /if \(mode === "signin"\) \{/.test(authPage));
 check("switching mode clears consent, so it is given afresh", (authPage.match(/setAgreed\(false\)/g) || []).length >= 3);
@@ -245,7 +261,15 @@ check("the consent box is styled on the auth page", /\.auth-consent\s*\{/.test(a
 check("SignupPage offers both links in the consent line", /<Link to="\/terms"[^>]*>Terms of Service<\/Link>/.test(signupPage) && /<Link to="\/privacy"[^>]*>Privacy Policy<\/Link>/.test(signupPage));
 check("SignupPage renders a checkbox", /type="checkbox"/.test(signupPage) && /sp-consent-box/.test(signupPage));
 check("it starts unticked", /const \[agreed, setAgreed\] = useState\(false\)/.test(signupPage));
-check("its submit is disabled until it is ticked", /disabled=\{busy \|\| !agreed\}/.test(signupPage));
+check(
+  "its submit is disabled until consent is given",
+  /disabled=\{busy \|\| !agreed \|\| !cleanAccountRole\(role\)\}/.test(signupPage)
+);
+check(
+  "its submit is also disabled until an identity is declared",
+  /disabled=\{busy \|\| !agreed \|\| !cleanAccountRole\(role\)\}/.test(signupPage) &&
+    /!cleanAccountRole\(role\)/.test(signupPage)
+);
 check("it blocks the submission too", /if \(!agreed\) \{[\s\S]{0,220}return;/.test(signupPage));
 check("the consent box is styled on the signup page", /\.sp-consent\s*\{/.test(signupCss) && /\.sp-consent-box\s*\{/.test(signupCss));
 
