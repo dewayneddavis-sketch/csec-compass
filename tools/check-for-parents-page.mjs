@@ -149,6 +149,18 @@ check("and it is true: show-your-work is wired for mathematics", read("src/data/
 check("it claims the step-by-step method for a wrong answer", /step-by-step method/.test(flatPage));
 check("and it is true: the method component exists", /export default function/.test(read("src/components/HowToSolveIt.jsx")));
 check("it describes the parent link honestly (progress only, no sign-in as the child)", /does not give you their password or let you sign in as them/.test(flatPage));
+// ADDITIVE, and it must stay additive. The product also tells a parent they can
+// reach the Parent Dashboard by signing in with the student's own account, so a
+// page that only said "we never let you sign in as them" would contradict the
+// rest of the site. The sentence above is the pin for the LINK and is not
+// touched; this one covers the student choosing to share their own sign-in.
+check(
+  "it also says a student can choose to share their own sign-in (additive to the pin above)",
+  /choose to share their own sign-in/.test(flatPage) &&
+    /same progress view a teacher sees/.test(flatPage) &&
+    /never another family/.test(flatPage),
+  "the shared-sign-in sentence is missing"
+);
 check("it tells the parent they can name their child at purchase", /enter your child&rsquo;s email/.test(flatPage));
 check("and it is true: the checkout form has that field", /childEmail/.test(pricingPage) || /Your child&rsquo;s email \(optional\)/.test(pricingPage));
 

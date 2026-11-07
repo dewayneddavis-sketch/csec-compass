@@ -132,6 +132,15 @@ check(
   JSON.stringify(roles.ACCOUNT_ROLE_LABELS)
 );
 check("the question is asked in the owner's words", /I am/i.test(roles.ACCOUNT_ROLE_QUESTION), roles.ACCOUNT_ROLE_QUESTION);
+// Signup and checkout ask the SAME question. It is imported, not retyped: two
+// literals that happen to match today drift the first time one is edited, and
+// the string equality alone would not catch a reintroduced copy.
+check(
+  "the question is the checkout question, imported rather than retyped",
+  roles.ACCOUNT_ROLE_QUESTION === buyerRoles.BUYER_ROLE_QUESTION &&
+    /export const ACCOUNT_ROLE_QUESTION = BUYER_ROLE_QUESTION;/.test(read("src/data/accountRoles.js")),
+  `account="${roles.ACCOUNT_ROLE_QUESTION}" checkout="${buyerRoles.BUYER_ROLE_QUESTION}"`
+);
 check(
   "an unanswered form has something to say, naming all three",
   /student/i.test(roles.ACCOUNT_ROLE_REQUIRED_MESSAGE) &&

@@ -60,6 +60,7 @@ const contact = await import("../src/data/contact.js");
 const access = await import("../src/data/access.js");
 const examRules = await import("../src/data/mockExamRules.js");
 const showYourWork = await import("../src/data/showYourWork.js");
+const accountRoles = await import("../src/data/accountRoles.js");
 const guide = await import("../src/data/guideFacts.js");
 
 const {
@@ -399,6 +400,26 @@ check(
 check(
   "topic ids are unique",
   new Set(GUIDE_TOPICS.map((t) => t.id)).size === GUIDE_TOPICS.length
+);
+
+// The signup form now asks who you are (owner instruction 2026-11-05). The
+// account answer has to say so — and it must not let a reader believe that
+// ticking "Teacher" opens the Teacher Dashboard: src/data/accountRoles.js is
+// built on "a declaration is not an authorisation".
+const accountAnswer = answerFor("account");
+check(
+  "the account answer names the signup role question, read from accountRoles.js",
+  accountAnswer.includes(accountRoles.ACCOUNT_ROLE_QUESTION) &&
+    /Student, Teacher or Parent/.test(accountAnswer),
+  accountAnswer.slice(0, 160)
+);
+check(
+  "…and it says a declared role is offered a dashboard, never admitted to one",
+  /OFFER you/.test(accountAnswer) &&
+    /on its own it opens nothing/.test(accountAnswer) &&
+    /school's admin/.test(accountAnswer) &&
+    /student's own account/.test(accountAnswer),
+  accountAnswer.slice(0, 200)
 );
 
 // ===========================================================================

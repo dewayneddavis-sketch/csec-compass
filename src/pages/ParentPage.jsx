@@ -20,10 +20,14 @@ import StudentProgressDashboard from "../components/StudentProgressDashboard";
 // no admin step — which is also why there is deliberately NO link box on this
 // page: this page only ever displays what a purchase created.
 //
-// Access is decided entirely by the server (GET /api/analytics/summary?scope=parent):
-// the caller must be named as a parent in `parent_students`, or be the owner —
-// and only that parent's own children are returned. Anyone else gets 403 and
-// zero data. Nothing on this page changes a student's access.
+// Access is decided entirely by the server (GET /api/analytics/summary?scope=parent).
+// The server never refuses a signed-in caller here: a parent named in
+// `parent_students` gets their own children (`view: "family"`), and ANY other
+// signed-in account — a student, or an adult with no family link yet — gets the
+// same dashboard scoped to ITSELF (`view: "self"`, rendered above). So there is
+// no 403 branch on this page: the only failure states left are 500 (the lookup
+// itself failed, which fails closed) and 0 (the server could not be reached).
+// Nothing on this page changes a student's access.
 export default function ParentPage() {
   const { session, user } = useAuth();
   const [state, setState] = useState({ key: null, data: null });
@@ -128,30 +132,6 @@ export default function ParentPage() {
           }
           footnote="These are your own records only — no other student's work appears on this page. 60% is the pass mark on the knowledge check."
         />
-      </div>
-    );
-  }
-
-  if (status === 403) {
-    // The server no longer refuses a signed-in account here (a student's own
-    // session gets the self view above). This stays as an honest fallback in
-    // case an older deployment is answering.
-    return (
-      <div className="tp-page">
-        <h1>Parent dashboard</h1>
-        <div className="tp-notice tp-notice-warn">
-          <h2>No child is linked to this account yet</h2>
-          <p>{error}</p>
-          <p className="tp-muted">
-            Signed in as {user.email}. A child is linked when you buy a subject or the all-subjects
-            bundle and type their email at checkout — the link is made by that purchase, so nothing
-            can be entered here on its own.
-          </p>
-          <p className="tp-muted">
-            Buy with your child’s email and their lessons, labs and quiz scores appear on this page.
-          </p>
-        </div>
-        <Link to="/pricing" className="tp-btn">See the plans</Link>
       </div>
     );
   }
