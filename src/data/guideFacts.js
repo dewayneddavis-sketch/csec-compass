@@ -17,9 +17,9 @@
 //   the signup role question -> src/data/accountRoles.js
 // tools/check-guide-bot.mjs drives the real matcher and fails the build if any of
 // those values drift, so the guide can never quote a price the Pricing page has
-// stopped charging. The two remaining numbers (practice bank and knowledge-check
-// sizes) are counted out of content/<subject>/*.json by the same harness, because
-// they are content facts rather than code constants.
+// stopped charging. The practice-bank and knowledge-check SIZES are promises, so
+// they come from src/data/bankSizes.js; the harness still counts
+// content/<subject>/*.json and fails if a bank is not the size it promises.
 import {
   SUBJECT_PRICE,
   BUNDLE_PRICE,
@@ -33,6 +33,8 @@ import { FREE_PREVIEW_LESSONS } from "./access.js";
 import { SECONDS_PER_QUESTION, MAX_QUESTIONS, PASS_PERCENTAGE } from "./mockExamRules.js";
 import { SHOW_YOUR_WORK } from "./showYourWork.js";
 import { ACCOUNT_ROLE_QUESTION } from "./accountRoles.js";
+import { PRACTICE_PAPER_COUNT } from "./practicePapers.js";
+import { practiceBankSize, knowledgeCheckSize, practiceSizeGroups } from "./bankSizes.js";
 
 // --- values the guide quotes, derived from the modules above ---------------
 export const GUIDE_SUBJECT_COUNT = FALLBACK_SUBJECT_OPTIONS.length;
@@ -55,8 +57,26 @@ export const GUIDE_SUBJECT_LIST_LEAD =
     : `CSEC Compass covers ${GUIDE_SUBJECT_COUNT} CSEC subjects:`;
 
 // Content facts (asserted against every content/<subject>/*.json by the harness).
-export const GUIDE_PRACTICE_QUESTIONS = 100;
-export const GUIDE_KNOWLEDGE_CHECK_QUESTIONS = 25;
+// The numbers themselves are DERIVED: the per-subject bank size comes from
+// src/data/bankSizes.js, so a subject that carries a bigger bank (the owner's
+// Mathematics exception) changes one line there and this sentence follows with
+// no edit here. GUIDE_DEFAULT_SUBJECT is the subject the single "N questions"
+// phrasing describes when every subject ships the same size.
+export const GUIDE_DEFAULT_SUBJECT = "english-a";
+export const GUIDE_PRACTICE_QUESTIONS = practiceBankSize(GUIDE_DEFAULT_SUBJECT); // keep the export: other readers
+export const GUIDE_KNOWLEDGE_CHECK_QUESTIONS = knowledgeCheckSize();
+export const GUIDE_PRACTICE_SIZES = practiceSizeGroups(FALLBACK_SUBJECT_OPTIONS.map((s) => s.id));
+const PAPER_WORD = ["", "one", "two", "three", "four", "five"][PRACTICE_PAPER_COUNT];
+// Always says "<N> questions in <W> papers of <P>", so the harness's
+// /(\d+) questions/g scan can police every number the guide prints.
+export const GUIDE_PRACTICE_QUESTION_SENTENCE = (() => {
+  const g = GUIDE_PRACTICE_SIZES;
+  if (g.length === 1) return `${g[0].questions} questions in ${PAPER_WORD} papers of ${g[0].perPaper}`;
+  const [first, ...rest] = g;
+  return `${first.questions} questions in ${PAPER_WORD} papers of ${first.perPaper} — and ` +
+    rest.map((x) => `${x.questions} questions on ${x.subjects.map(subjectName).join(" and ")}, ` +
+                   `in ${PAPER_WORD} papers of ${x.perPaper}`).join("; and ");
+})();
 
 // Display helper: "$9.99". Every amount the guide shows goes through this, so a
 // price can never be printed with the wrong number of decimals or a stray float.
@@ -107,7 +127,7 @@ export const GUIDE_TOPICS = [
       `${GUIDE_SUBJECT_LIST_LEAD}\n\n` +
       GUIDE_SUBJECT_NAMES.map((n) => `• ${n}`).join("\n") +
       "\n\nEvery subject is complete: lessons in modules, a Play lab for each lesson, " +
-      `a ${GUIDE_PRACTICE_QUESTIONS}-question practice bank in five Practice Papers, a ` +
+      `a practice bank of ${GUIDE_PRACTICE_QUESTION_SENTENCE}, a ` +
       `${GUIDE_KNOWLEDGE_CHECK_QUESTIONS}-question knowledge check and a timed mock exam. ` +
       `Any single subject is ${usd(SUBJECT_PRICE)} for a year, and all ${GUIDE_SUBJECT_COUNT} ` +
       `together are ${usd(BUNDLE_PRICE)}.`,
@@ -302,7 +322,7 @@ export const GUIDE_TOPICS = [
     answer:
       `Each subject is a full self-paced course:\n\n` +
       `• Lessons grouped into modules, with a Play lab for each lesson\n` +
-      `• Practice Papers 1–5 — ${GUIDE_PRACTICE_QUESTIONS} questions in five papers of 20, to work through as often as you like\n` +
+      `• Practice Papers 1–${PRACTICE_PAPER_COUNT} — ${GUIDE_PRACTICE_QUESTION_SENTENCE}, to work through as often as you like\n` +
       `• A ${GUIDE_KNOWLEDGE_CHECK_QUESTIONS}-question knowledge check to see if you are ready\n` +
       `• A timed mock exam: ${MAX_QUESTIONS} questions, ${SECONDS_PER_QUESTION} seconds each, ` +
       `${PASS_PERCENTAGE}% to pass, with a full review and retakes\n` +

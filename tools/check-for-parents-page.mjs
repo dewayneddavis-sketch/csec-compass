@@ -16,6 +16,7 @@
 import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import { practiceBankSize } from "../src/data/bankSizes.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const read = (p) => readFileSync(join(root, p), "utf8");
@@ -126,11 +127,23 @@ check("it carries a heading", /<h1>For parents<\/h1>/.test(page));
 
 // The per-subject shape, each asserted against the code that ships it.
 check("it claims lessons with an interactive activity each", /<strong>Lessons with an interactive activity for each one\.<\/strong>/.test(page));
-check("it claims the 100-question extra practice bank", /<strong>100 extra practice questions<\/strong>/.test(page));
+check("it states the extra practice bank from the config", /practiceBankSize\("english-a"\)/.test(page));
+check("it derives the Mathematics size and shows it only when it differs",
+  /practiceBankSize\("mathematics"\)/.test(page) && /MATHS_PRACTICE !== BASE_PRACTICE/.test(page));
+// The number in the SENTENCE must be the derived one. Reading the config and
+// then printing a typed number is the failure this pair exists for: it would let
+// the re-balance ship "150 extra practice questions" typed into the JSX with
+// every other check still green (measured 2026-11-07: a typed 150 passed both
+// this harness and check-guide-bot before these two assertions were added).
+check("the sentence interpolates the derived default, so a typed number cannot pass",
+  /<strong>\{BASE_PRACTICE\} extra practice questions<\/strong>/.test(page));
+check("the Mathematics clause prints the derived size, not a typed one",
+  /\$\{MATHS_PRACTICE\} on Mathematics/.test(page));
 {
   const practice = read("content/english-a/practice.json");
   const bank = JSON.parse(practice);
-  check("the 100-question claim matches a real bank (english-a)", Array.isArray(bank) && bank.length === 100, `length ${Array.isArray(bank) ? bank.length : "n/a"}`);
+  check("the stated default matches a real bank", Array.isArray(bank) && bank.length === practiceBankSize("english-a"),
+    `length ${Array.isArray(bank) ? bank.length : "n/a"}`);
 }
 check("it describes the timed mock exam, the pass mark and the retake", /about 1½ minutes per question, 60% to pass, and both\s+review and retake/.test(flatPage));
 {
@@ -223,7 +236,11 @@ check(
   page
     .split("\n")
     .filter((l) => /^\s*import /.test(l))
-    .every((l) => /^\s*import "\.\/[A-Za-z]+\.css";\s*$/.test(l) || /from "(react-router-dom|\.\.\/data\/legal)"/.test(l)),
+    // The allow-list is deliberate and stays narrow: the router, the shared legal
+    // constants, and (since Mathematics Slice 0) the bank-size promise module this
+    // page derives "100 extra practice questions" from. Widening this to `.*` would
+    // retire the guard entirely.
+    .every((l) => /^\s*import "\.\/[A-Za-z]+\.css";\s*$/.test(l) || /from "(react-router-dom|\.\.\/data\/legal|\.\.\/data\/bankSizes)"/.test(l)),
   page.split("\n").filter((l) => /^\s*import /.test(l)).join(" | "),
 );
 check("no new dependency was added for any of this", !/"(marked|remark|react-markdown|dompurify|date-fns|dayjs|framer-motion)"/.test(read("package.json")));

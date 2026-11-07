@@ -1,6 +1,17 @@
 import { Link } from "react-router-dom";
 import { TRADEMARK_DISCLAIMER, CG_TRADEMARK_DISCLAIMER } from "../data/legal";
+// The bank sizes are a product promise owned by src/data/bankSizes.js, so this
+// page derives them instead of typing "100". While every subject ships the same
+// bank the sentence reads exactly as it always has; the moment one subject
+// carries a bigger bank (the owner's Mathematics exception) the page states it,
+// with no edit here.
+import { practiceBankSize } from "../data/bankSizes";
 import "./ForParentsPage.css";
+
+// Declared at module scope, not inside the component: they are pure reads of a
+// pure module and do not depend on props or state.
+const BASE_PRACTICE = practiceBankSize("english-a");
+const MATHS_PRACTICE = practiceBankSize("mathematics");
 
 // A plain-language page for parents (owner direction 2026-10-19: a real page on
 // the site, not a document).
@@ -55,8 +66,9 @@ export default function ForParentsPage() {
             short activity your child works through rather than just reading.
           </li>
           <li>
-            <strong>100 extra practice questions</strong> per subject for drilling the topics they
-            are weakest on.
+            <strong>{BASE_PRACTICE} extra practice questions</strong> per subject
+            {MATHS_PRACTICE !== BASE_PRACTICE ? ` — and ${MATHS_PRACTICE} on Mathematics` : ""} for
+            drilling the topics they are weakest on.
           </li>
           <li>
             <strong>A timed mock exam</strong> — about 1½ minutes per question, 60% to pass, and both

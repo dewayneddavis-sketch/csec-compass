@@ -61,6 +61,7 @@ const access = await import("../src/data/access.js");
 const examRules = await import("../src/data/mockExamRules.js");
 const showYourWork = await import("../src/data/showYourWork.js");
 const accountRoles = await import("../src/data/accountRoles.js");
+const bankSizes = await import("../src/data/bankSizes.js");
 const guide = await import("../src/data/guideFacts.js");
 
 const {
@@ -112,6 +113,7 @@ const FORBIDDEN_LITERALS = [
   "1,250", "2,000", "2,250",
   legal.SUPPORT_EMAIL,                    // support@csec-compass.com
   legal.PRIVACY_CONTACT_EMAIL,            // the data inbox
+  "150",                                 // the Mathematics bank size — derived from bankSizes.js, never typed
 ];
 const typedIn = FORBIDDEN_LITERALS.filter((literal) => guideCode.includes(literal));
 check(
@@ -318,15 +320,42 @@ const countQuestions = (subject, file) => {
 };
 const practiceCounts = subjectDirs.map((s) => countQuestions(s, "practice.json"));
 const checkCounts = subjectDirs.map((s) => countQuestions(s, "knowledge-check.json"));
+const practiceProblems = subjectDirs.filter((s) => countQuestions(s, "practice.json") !== bankSizes.practiceBankSize(s));
 check(
-  `every subject's practice bank is the advertised ${GUIDE_PRACTICE_QUESTIONS} questions`,
-  subjectDirs.length >= 20 && practiceCounts.every((n) => n === GUIDE_PRACTICE_QUESTIONS),
-  `${subjectDirs.length} subjects, counts ${JSON.stringify([...new Set(practiceCounts)])}`
+  "every subject's practice bank is its configured size",
+  subjectDirs.length >= 20 && practiceProblems.length === 0,
+  `${subjectDirs.length} subjects; mismatched: ${practiceProblems.map((s) => `${s}=${countQuestions(s, "practice.json")}/${bankSizes.practiceBankSize(s)}`).join(", ") || "none"}`
 );
 check(
   `every knowledge check is the advertised ${GUIDE_KNOWLEDGE_CHECK_QUESTIONS} questions`,
   checkCounts.every((n) => n === GUIDE_KNOWLEDGE_CHECK_QUESTIONS),
   `counts ${JSON.stringify([...new Set(checkCounts)])}`
+);
+
+// The guide must state every bank size that SHIPS and no size that does not.
+// This is what stops the Mathematics re-balance being done by editing prose:
+// the sentence is derived from bankSizes.js, so a typed "150" would be a second
+// source of truth — and FORBIDDEN_LITERALS above rejects it outright.
+const GUIDE_ALL_TEXT = [...GUIDE_TOPICS.map((t) => t.answer), GUIDE_FALLBACK].join("\n");
+const statedSizes = (text) => new Set([...text.matchAll(/(\d+)\s+questions/g)].map((m) => Number(m[1])));
+const shippedSizes = new Set(bankSizes.practiceSizeGroups(subjectDirs).map((g) => g.questions));
+const allowedSizes = new Set([...shippedSizes, GUIDE_KNOWLEDGE_CHECK_QUESTIONS, examRules.MAX_QUESTIONS]);
+const stated = statedSizes(GUIDE_ALL_TEXT);
+check(
+  "the guide states every practice-bank size that ships",
+  [...shippedSizes].every((n) => stated.has(n)),
+  `stated ${[...stated]}, shipped ${[...shippedSizes]}`
+);
+check(
+  "the guide states no question count that does not ship",
+  [...stated].every((n) => allowedSizes.has(n)),
+  `stated ${[...stated]}, allowed ${[...allowedSizes]}`
+);
+// RED CONTROL, in-file: a typed "200 questions" claim must fail the same scan.
+check(
+  "RED CONTROL: a typed 200-question claim fails the advertised-size scan",
+  ![...statedSizes("a 200 questions bank")].every((n) => allowedSizes.has(n)),
+  `allowed ${[...allowedSizes]}`
 );
 
 // --- the school ladder agrees with the Stripe ladder and the page ----------

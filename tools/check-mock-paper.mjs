@@ -212,66 +212,32 @@ check(
 );
 
 // ===========================================================================
-section("2. the questions this fix exists for (PR #87: Consumer Arithmetic + Sets)");
+section("2. every Mathematics topic is reachable in a paper (the PR #87 head-slice bug, generalised)");
 
-// The 12 topics the content developer's gap lessons added to mathematics. They
-// are the reason the head-slice had to go: every one of them is at the END of
-// the bank.
-const NEW_LESSON_TOPICS = [
-  "profit-loss-and-discounts",
-  "simple-and-compound-interest",
-  "hire-purchase-and-instalments",
-  "taxes-and-utility-bills",
-  "exchange-rates-and-currency",
-  "insurance-and-budgeting",
-  "set-notation",
-  "subsets-and-cardinality",
-  "venn-diagrams",
-  "union-intersection-complement",
-  "shading-venn-regions",
-  "set-word-problems",
-];
+// PR #87's bug was that the mock exam head-sliced the bank, so every question
+// past the slice could never appear. The fix was a seeded sampler; this is the
+// property that makes the fix durable, and it names no topic list and no bank
+// size, so it survives the coverage build (63 lessons) and the 150-question
+// re-balance without an edit.
 const mathBank = BANKS.get("mathematics");
-const newLessonQuestions = mathBank.filter((q) => NEW_LESSON_TOPICS.includes(q.topic));
-const newLessonIds = idsOf(newLessonQuestions);
+const mathTopics = [...topicsOf(mathBank)];
+const reachable = new Set();
+for (let seed = 1; seed <= 200; seed += 1) for (const q of buildMockPaper(mathBank, { seed })) reachable.add(questionGroup(q));
+const unreachableTopics = mathTopics.filter((t) => !reachable.has(t));
+check(
+  `every Mathematics topic can appear in a paper (${mathTopics.length} topics, 200 seeds)`,
+  unreachableTopics.length === 0,
+  unreachableTopics.join(", ")
+);
+// REPORT in Slice 0, ASSERTION from the re-balance PR: the audit records bank
+// topics that no lesson teaches, so a hard assertion here would red main today.
+const mathLessonIds = new Set(JSON.parse(read("content/mathematics/modules.json"))
+  .flatMap((m) => (m.lessons || []).map((l) => l.id)));
+const orphanTopics = mathTopics.filter((t) => !mathLessonIds.has(t));
+console.log(`  Mathematics bank topics with no lesson: ${orphanTopics.length}${orphanTopics.length ? ` (${orphanTopics.join(", ")})` : ""}`);
 
-check(
-  "the 12 new lessons' questions are in the shipped mathematics bank",
-  newLessonQuestions.length === 12 &&
-    NEW_LESSON_TOPICS.every((topic) => mathBank.some((q) => q.topic === topic)),
-  `${newLessonQuestions.length} questions: ${newLessonIds.join(",")}`
-);
-check(
-  "the OLD head-slice could never show one of them (this is the bug)",
-  mathBank.slice(0, MAX_QUESTIONS).every((q) => !NEW_LESSON_TOPICS.includes(q.topic)),
-  `head-slice contained ${mathBank.slice(0, MAX_QUESTIONS).filter((q) => NEW_LESSON_TOPICS.includes(q.topic)).length}`
-);
-check(
-  "the new sampler puts all 12 in EVERY paper",
-  [1, 2, 3, 5, 8, 13, 21, 34, 55, 89].every((seed) => {
-    const topics = topicsOf(buildMockPaper(mathBank, { seed }));
-    return NEW_LESSON_TOPICS.every((topic) => topics.has(topic));
-  })
-);
-check(
-  "each of those questions is reachable in practice, seed by seed",
-  (() => {
-    const seen = new Set();
-    for (let seed = 1; seed <= 200; seed += 1) {
-      for (const id of idsOf(buildMockPaper(mathBank, { seed }))) seen.add(id);
-    }
-    return newLessonIds.every((id) => seen.has(id));
-  })(),
-  newLessonIds.join(",")
-);
-check(
-  "a maths paper shows 12 new-lesson questions and 28 others",
-  (() => {
-    const exam = buildMockPaper(mathBank, { seed: 3 });
-    const fresh = exam.filter((q) => NEW_LESSON_TOPICS.includes(q.topic)).length;
-    return fresh >= 12 && fresh <= 14 && exam.length === MAX_QUESTIONS;
-  })()
-);
+// ===========================================================================
+
 
 // ===========================================================================
 section("3. the exam itself is unchanged");
