@@ -112,12 +112,12 @@ export const NEW_IDS = [
   "sheet-column-and-row-manipulation", "sheet-worksheet-management",
   "impl-programming-language-overview", "impl-variables-constants-and-data-types", "impl-program-documentation",
 ];
-// Not landed yet: slice D. SHRINK this list as each slice merges — the harness fails if an
-// id in here is found in modules.json (landed but still listed) or if a listed id is also expected
-// somewhere else. It is derived from the doc's pending NEW rows, so the doc and this list must agree.
-export const PENDING_IDS = [
-  "impl-programming-language-overview", "impl-variables-constants-and-data-types", "impl-program-documentation",
-];
+// Not landed yet. EMPTY after Slice D — the last coverage slice. The harness fails if an id in here
+// is found in modules.json (landed but still listed) or if a listed id is also expected somewhere
+// else. It is derived from the doc's pending NEW rows, so the doc and this list must agree; with the
+// list empty, a row left `pending` in the doc and a lesson that has landed go red in opposite
+// directions, which is what keeps the two halves honest once nothing is outstanding.
+export const PENDING_IDS = [];
 export const EXPECTED_IDS = [...FROZEN, ...NEW_IDS];
 // No chapter in the list may claim these: they teach syllabus topics the owner's list does not name.
 export const PROTECTED = {
@@ -184,6 +184,44 @@ export const IT_MOD_7 = {
   lessons: ["imp-ict-and-employment", "imp-computer-related-professions", "imp-societal-and-economic-impact"],
 };
 export const NET_LESSONS = SLICE_C_LESSONS.filter((id) => id.startsWith("net-"));
+
+// Slice D: the 3 NEW program-implementation lessons and the three frozen hosts it grew in place.
+// THE HYPHEN MATTERS: `/^impl-/` must not be written `/^imp-/` — Slice C's `imp-` lessons would be
+// swallowed whole and the slice would look 6 lessons long. It is the mirror of the C-brief trap.
+export const SLICE_D_LESSONS = NEW_IDS.filter((id) => /^impl-/.test(id));
+export const SLICE_D_HOSTS = ["it-l3-1", "it-l2-1", "it-l2-2"];
+// The three hosts' original copy, so a rewrite cannot pass as an extension, and the exact seam the
+// extension was appended at: the original tail is immediately followed by the extension, so the old
+// copy is still one unbroken prefix.
+export const SLICE_D_HOST_PREFIX = {
+  "it-l3-1": "A database is a structured collection of related data.",
+  "it-l2-1": "Problem-solving in IT involves analysing a task and developing a logical sequence of steps to solve it.",
+  "it-l2-2": "Once an algorithm has been developed, it can be translated into a programming language that the computer can execute.",
+};
+export const SLICE_D_HOST_JOIN = {
+  "it-l3-1": "design a simple schema for a given scenario.\n\nDatabase Concepts begin",
+  "it-l2-1": "the foundation of computer programming.\n\nProblem-Solving Steps are the six stages",
+  "it-l2-2": "is also an essential skill you will develop.\n\nVariables, Constants, and Data Types are the conceptual question",
+};
+// The hosts' original concept arrays. The lengths DIFFER (4, 5, 4) and are derived from the string,
+// never hardcoded to one slice(0, 4) — that was Slice B's exact mistake and it reds on a correct build.
+export const SLICE_D_HOST_CONCEPTS = {
+  "it-l3-1": "Relational Database|Primary/Foreign Keys|Data Types|One-to-Many Relationships",
+  "it-l2-1": "Logic Gates|Sequence|Selection|Iteration|Flowchart Symbols",
+  "it-l2-2": "Data Types|Variables|Loops (For, While, Repeat)|Conditional Statements",
+};
+export const SLICE_D_HOST_OBJECTIVES = {
+  "it-l3-1": "Define tables, fields, records, and primary keys|Understand relationships between tables",
+  "it-l2-1": "Develop algorithms using pseudocode and flowcharts",
+  "it-l2-2": "Implement code using variables, constants, and loops",
+};
+// Slice D creates NO module. Section 8's only allowed home is the EXISTING it-mod-2, so the three
+// impl- lessons APPEND after it-l2-2 in chapter order (#56, #59, #61). estimatedModules stays 7.
+export const IT_MOD_2 = {
+  id: "it-mod-2",
+  lessons: ["it-l2-1", "it-l2-2", "impl-programming-language-overview",
+    "impl-variables-constants-and-data-types", "impl-program-documentation"],
+};
 
 // ---------------------------------------------------------------------------------------------
 // helpers (exported so the self-test can drive them directly)
@@ -461,7 +499,60 @@ export function runChecks(st) {
     check(l?.experiment?.type === HONEST_TYPES[id], `${id} keeps the honest lab type Slice 0 gave it`);
   }
 
-  // ---------------------------------------------------------------- 7b. the three honesty gaps
+  // ---------------------------------------------------------------- 7d. Slice D pure insertions
+  section("7d. Slice D grew its three hosts by insertion only, and created no module");
+  for (const id of SLICE_D_LESSONS) check(!!byId[id], `Slice D lesson ${id} is present`);
+  check(SLICE_D_LESSONS.length === 3, `Slice D authored exactly 3 lessons (found ${SLICE_D_LESSONS.length})`);
+  for (const id of SLICE_D_HOSTS) {
+    const l = byId[id];
+    check(!!l, `${id} (a Slice D host) is present`);
+    // the original opening is still the prefix
+    check(!!l && l.content.startsWith(SLICE_D_HOST_PREFIX[id]),
+      `${id} still opens with its original teaching (the Slice D EXTEND was an insertion, not a rewrite)`);
+    // the original tail is immediately followed by the extension: one unbroken old prefix
+    check(!!l && l.content.includes(SLICE_D_HOST_JOIN[id]),
+      `${id} keeps its original closing sentence, with the extension appended directly after it`);
+    // every original concept, in its original position, at the front — the LENGTH IS PER HOST (4, 5, 4)
+    const n = SLICE_D_HOST_CONCEPTS[id].split("|").length;
+    check((l?.concepts || []).slice(0, n).join("|") === SLICE_D_HOST_CONCEPTS[id],
+      `${id} keeps its original ${n} concepts, in order, at the front`);
+    check((l?.concepts || []).length > n, `${id} did gain the concepts its extension teaches`);
+    check((l?.objectives || []).slice(0, SLICE_D_HOST_OBJECTIVES[id].split("|").length).join("|") === SLICE_D_HOST_OBJECTIVES[id],
+      `${id} keeps its original objectives, in order, at the front`);
+    check(l?.experiment?.type === HONEST_TYPES[id], `${id} keeps the honest lab type Slice 0 gave it`);
+  }
+  // no new module: Slice D appends to the EXISTING it-mod-2, in chapter order
+  check(!st.modules.some((m) => m.id === "it-mod-8"),
+    "Slice D creates no module — there is no it-mod-8 (section 8's only home is it-mod-2)");
+  const mod2s = st.modules.filter((m) => m.id === IT_MOD_2.id);
+  check(mod2s.length === 1, `exactly one ${IT_MOD_2.id} module exists (found ${mod2s.length})`);
+  check(JSON.stringify((mod2s[0]?.lessons || []).map((l) => l.id)) === JSON.stringify(IT_MOD_2.lessons),
+    `${IT_MOD_2.id} holds it-l2-1, it-l2-2 then the 3 impl- lessons in chapter order #56/#59/#61 (found ${(mod2s[0]?.lessons || []).map((l) => l.id).join(",")})`);
+
+  // ---------------------------------------------------------------- 7e. Slice D closes five lab-deck gaps
+  // Every one of these facts was taught by a frozen lab deck or a bank question while the lesson's own
+  // copy never said it. Slice D closes them by TEACHING, never by editing the deck or the bank.
+  // proseOf, NOT corpusOf: several of these words are also concept NAMES ("Modulus", "Subprogram",
+  // "Assignment Statement"), and a concept label is a keyword, not teaching. The pin must read prose.
+  section("7e. Slice D closes the five lab-deck gaps by teaching them");
+  const d211 = proseOf(byId["it-l2-1"] || {});
+  const d212 = proseOf(byId["it-l2-2"] || {});
+  const d311 = proseOf(byId["it-l3-1"] || {});
+  check(/(^|[^a-z])modulus([^a-z]|$)/.test(d212),
+    "it-l2-2 teaches MODULUS in its prose (the deck's pair pc5 tested it with no teaching)");
+  check(d211.includes("parallelogram"),
+    "it-l2-1 names the PARALLELOGRAM flowchart symbol (the deck's pair al4 tested it with no teaching)");
+  check(d211.includes("arrow"),
+    "it-l2-1 names the ARROW, the direction of flow (the deck's pair al5 tested it with no teaching)");
+  check(d311.includes("a form is") && d311.includes("a report presents"),
+    "it-l3-1 teaches FORM and REPORT as database objects (bank p100/p99 tested them with no teaching)");
+  check(d212.includes("subprogram") && /(^|[^a-z])function([^a-z]|$)/.test(d212),
+    "it-l2-2 teaches a function and a subprogram (bank p59 tested it with no teaching)");
+  check(d212.includes("assignment"),
+    "it-l2-2 teaches the assignment statement (bank p58 tested it with no teaching)");
+  check(d212.includes("plus, minus, multiply, divide and modulus"),
+    "it-l2-2 names the arithmetic operators (bank p57 tested them with no teaching)");
+
   section("7b. Slice B closes the three pre-existing honesty gaps (F4/F5/F6)");
   const host61 = corpusOf(byId["it-l6-1"] || {}), host62 = corpusOf(byId["it-l6-2"] || {});
   for (const fn of ["min", "max", "count"])
@@ -572,9 +663,9 @@ export const RED_CONTROLS = {
   "weak-phrase": (st) => { st.doc = st.doc.replace("| fund-cloud-and-local-storage | cloud and local storage are the two places |", "| fund-cloud-and-local-storage | two places your files can live |"); },
   "phrase-not-in-copy": (st) => { st.doc = st.doc.replace("| fund-user-interface-types | user interface types differ in how much the user has to remember and how much the machine shows |", "| fund-user-interface-types | user interface types differ in how much the user has to remember and how much the machine shows, honestly |"); },
   "pending-but-taught": (st) => { st.doc = st.doc.replace("| 1 | 1 | Information Technology Concept | NEW | taught |", "| 1 | 1 | Information Technology Concept | NEW | pending |"); },
-  "pending-extend-taught": (st) => { st.doc = st.doc.replace("| 1 | 12 | Data Validation and Verification | EXTEND | pending |", "| 1 | 12 | Data Validation and Verification | EXTEND | taught |"); },
-  "land-a-pending-id": (st) => { st.modules[0].lessons.push({ ...st.modules[0].lessons[2], id: "impl-program-documentation" }); },
-  "unpend-without-landing": (st) => { st.pendingIds.pop(); },
+  "pending-extend-taught": (st) => { st.doc = st.doc.replace("| 6 | 45 | Database Concepts | EXTEND | taught |", "| 6 | 45 | Database Concepts | EXTEND | pending |"); },
+  "land-a-ghost-id": (st) => { st.modules[0].lessons.push({ ...st.modules[0].lessons[2], id: "impl-ghost-lesson" }); },
+  "pend-a-landed-id": (st) => { st.pendingIds.push("impl-program-documentation"); },
   "drop-lesson-set": (st) => { delete st.sets["fund-computer-system-types"]; },
   "set-for-ghost": (st) => { st.sets["fund-ghost-lesson"] = JSON.parse(JSON.stringify(st.sets["fund-file-organisation"])); },
   "dup-target": (st) => { const s = st.sets["fund-information-technology-concept"]; s.pairs[1].target = s.pairs[0].target; },
@@ -634,6 +725,43 @@ export const RED_CONTROLS = {
     const l = st.modules.find((m) => m.id === "it-mod-6").lessons[1];
     l.content = l.content.replace("MIN, MAX and COUNT", "a few functions");
   },
+  // ---- Slice D -------------------------------------------------------------------------------
+  // FIX 1's own control: the #51 sentence must keep the chapter name CONTIGUOUS. "and the IPO
+  // chart" folds to `problem components and the ipo chart`, which does not contain the required
+  // `problem components and ipo chart` — the defect the checkpoint shipped and this slice fixed.
+  "chapter-51-wording-drift": (st) => {
+    const l = st.modules.flatMap((m) => m.lessons).find((x) => x.id === "it-l2-1");
+    l.content = l.content.replace("Problem Components and IPO Chart name the inputs",
+      "Problem Components and the IPO chart name the inputs");
+  },
+  "slice-d-host-rewritten": (st) => {
+    const l = st.modules.flatMap((m) => m.lessons).find((x) => x.id === "it-l2-1");
+    l.content = "Problem solving is a useful skill. " + l.content.slice(120);
+  },
+  "slice-d-host-join-broken": (st) => {
+    const l = st.modules.flatMap((m) => m.lessons).find((x) => x.id === "it-l3-1");
+    l.content = l.content.replace("scenario.\n\nDatabase Concepts begin", "scenario.\n\nThe database concepts begin");
+  },
+  "slice-d-host-concepts-reordered": (st) => {
+    const l = st.modules.flatMap((m) => m.lessons).find((x) => x.id === "it-l2-2");
+    l.concepts = [l.concepts[1], l.concepts[0], ...l.concepts.slice(2)];
+  },
+  "slice-d-gap-reopened": (st) => {
+    const l = st.modules.flatMap((m) => m.lessons).find((x) => x.id === "it-l2-2");
+    // remove EVERY mention from the prose: a single surviving "modulus" would keep the pin green
+    l.content = l.content.replace(
+      "multiply, divide and modulus, and modulus gives the remainder after a division, so 17 modulus 5 is 2.",
+      "multiply and divide, and the remainder is taken after a division.");
+  },
+  "it-mod-2-reordered": (st) => {
+    const m = st.modules.find((x) => x.id === "it-mod-2");
+    m.lessons = [m.lessons[0], m.lessons[1], m.lessons[4], m.lessons[2], m.lessons[3]];
+  },
+  "it-mod-8-created": (st) => {
+    const m = st.modules.find((x) => x.id === "it-mod-2");
+    const moved = m.lessons.splice(2);
+    st.modules.push({ id: "it-mod-8", title: "Program Implementation", lessons: moved });
+  },
 };
 
 // ---------------------------------------------------------------------------------------------
@@ -665,10 +793,24 @@ function selfTest() {
   ok(Object.keys(parseExceptionReasons("**Four chapters are hosted outside\n| #12 | m | a reason of twenty chars |\n")).length === 1,
     "parseExceptionReasons reads an exception row");
   ok(EXPECTED_IDS.length === 35, "EXPECTED_IDS is 12 frozen + 23 new = 35");
-  ok(NEW_IDS.length === 23 && PENDING_IDS.length === 3, "23 new ids, 3 of them still pending (slice D)");
+  ok(NEW_IDS.length === 23 && PENDING_IDS.length === 0, "23 new ids, none still pending");
   ok(SLICE_A_LESSONS.length === 9 && SLICE_B_LESSONS.length === 6, "Slice A authored 9 lessons, Slice B 6");
   ok(SLICE_C_LESSONS.length === 5 && NET_LESSONS.length === 2,
     "Slice C authored 5 lessons: 2 net- + 3 imp-");
+  ok(SLICE_D_LESSONS.length === 3 && SLICE_D_LESSONS.every((id) => id.startsWith("impl-")),
+    `Slice D authored 3 impl- lessons (got ${SLICE_D_LESSONS.join(", ")})`);
+  ok(SLICE_D_LESSONS.every((id) => !SLICE_A_LESSONS.includes(id) && !SLICE_B_LESSONS.includes(id) &&
+    !SLICE_C_LESSONS.includes(id)),
+    "the four slice lists are disjoint — /^impl-/ did not swallow Slice C's imp- lessons");
+  ok(SLICE_C_LESSONS.every((id) => !/^impl-/.test(id)),
+    "no Slice C imp- lesson is reported as a Slice D impl- lesson");
+  ok(SLICE_D_HOSTS.length === 3 && SLICE_D_HOSTS.every((id) => FROZEN.includes(id)),
+    "Slice D's three hosts are all frozen ids");
+  ok(Object.values(SLICE_D_HOST_CONCEPTS).map((s) => s.split("|").length).join(",") === "4,5,4",
+    "the three Slice D host concept prefixes are 4, 5 and 4 long — never one hardcoded slice(0, 4)");
+  ok(IT_MOD_2.lessons.length === 5 && IT_MOD_2.lessons.slice(0, 2).join(",") === "it-l2-1,it-l2-2" &&
+    IT_MOD_2.lessons.slice(2).every((id) => SLICE_D_LESSONS.includes(id)),
+    "it-mod-2 keeps its 2 frozen lessons first, then the 3 impl- lessons in chapter order");
   ok(IT_MOD_7.lessons.length === 3 && IT_MOD_7.lessons.every((id) => SLICE_C_LESSONS.includes(id)),
     "the new module holds the three imp- lessons, all of them Slice C lessons");
   ok(!NET_LESSONS.some((id) => IT_MOD_7.lessons.includes(id)),
