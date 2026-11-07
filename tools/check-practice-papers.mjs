@@ -22,7 +22,6 @@ import { createHash } from "node:crypto";
 import { fileURLToPath } from "node:url";
 import {
   PRACTICE_PAPER_COUNT,
-  QUESTIONS_PER_PAPER,
   LEGACY_PRACTICE_TAB,
   practicePaperTabs,
   practicePaperFullLabel,
@@ -35,6 +34,9 @@ import {
   resolvePracticeTab,
   resolveTabParam,
 } from "../src/data/practicePapers.js";
+// The per-subject bank size is a promise owned by src/data/bankSizes.js. The
+// per-paper size is DERIVED from it (150 / 5 = 30), never retyped here.
+import { PRACTICE_BANK_DEFAULT, practiceBankSize, questionsPerPaper } from "../src/data/bankSizes.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 let pass = 0, fail = 0;
@@ -50,7 +52,7 @@ const md5File = (p) => createHash("md5").update(fs.readFileSync(p)).digest("hex"
 // ---------------------------------------------------------------------------
 console.log("=== the five Practice Paper tabs ===");
 eq(PRACTICE_PAPER_COUNT, 5, "there are five practice papers");
-eq(QUESTIONS_PER_PAPER, 20, "each paper holds 20 questions");
+eq(PRACTICE_BANK_DEFAULT, 100, "the default practice bank is 100 questions");
 const tabs = practicePaperTabs();
 eq(tabs.length, 5, "practicePaperTabs() returns five entries");
 const EXPECTED_LABELS = ["Practice Paper 1", "Practice Paper 2", "Practice Paper 3", "Practice Paper 4", "Practice Paper 5"];
@@ -97,12 +99,13 @@ ok(contrast("#ffffff", "#f5f3ff") < 4.5, "contrast control: white on the pale ti
 //    `splitFailures` is the assertion; the red control at the end runs it
 //    against doctored banks.
 // ---------------------------------------------------------------------------
-function splitFailures(bank) {
+function splitFailures(bank, perPaper) {
   const problems = [];
-  const papers = splitPracticePapers(bank);
+  const want = Array(PRACTICE_PAPER_COUNT).fill(perPaper).join("/");
+  const papers = splitPracticePapers(bank, perPaper);
   if (papers.length !== PRACTICE_PAPER_COUNT) problems.push(`papers=${papers.length}, want ${PRACTICE_PAPER_COUNT}`);
   const sizes = papers.map((p) => p.questions.length);
-  if (sizes.join("/") !== "20/20/20/20/20") problems.push(`sizes=${sizes.join("/")}, want 20/20/20/20/20`);
+  if (sizes.join("/") !== want) problems.push(`sizes=${sizes.join("/")}, want ${want}`);
   let at = 0;
   papers.forEach((paper, i) => {
     if (paper.start !== at) problems.push(`paper ${i + 1} starts at ${paper.start}, want ${at}`);
@@ -132,11 +135,16 @@ for (const id of banked) {
   const list = Array.isArray(bank) ? bank : bank.exercises || [];
   banksTotal += list.length;
   const before = JSON.stringify(list);
-  const problems = splitFailures(list);
-  ok(problems.length === 0, `${id}: 20/20/20/20/20 in bank order (${problems.join("; ") || "ok"})`);
-  eq(JSON.stringify(splitPracticePapers(list).flatMap((p) => p.questions)), before, `${id}: the five papers together are the bank, byte-for-byte`);
+  const want = practiceBankSize(id);
+  const perPaper = questionsPerPaper(want);
+  const wantSizes = Array(PRACTICE_PAPER_COUNT).fill(perPaper).join("/");
+  ok(want % PRACTICE_PAPER_COUNT === 0, `${id}: the configured bank size divides into whole papers (${want} % ${PRACTICE_PAPER_COUNT} = ${want % PRACTICE_PAPER_COUNT})`);
+  eq(list.length, want, `${id}: the bank is its configured size`);
+  const problems = splitFailures(list, perPaper);
+  ok(problems.length === 0, `${id}: ${wantSizes} in bank order (${problems.join("; ") || "ok"})`);
+  eq(JSON.stringify(splitPracticePapers(list, perPaper).flatMap((p) => p.questions)), before, `${id}: the five papers together are the bank, byte-for-byte`);
   eq(JSON.stringify(list), before, `${id}: splitting did not touch the bank`);
-  eq(practicePaperSizes(list).join("/"), "20/20/20/20/20", `${id}: practicePaperSizes reports 20/20/20/20/20`);
+  eq(practicePaperSizes(list, perPaper).join("/"), wantSizes, `${id}: practicePaperSizes agrees`);
   // The bank itself is untouched by this PR: content/ and public/content/ mirrors
   // stay byte-identical, as the site serves the public/ copy.
   const a = path.join(root, `content/${id}/practice.json`);
@@ -145,8 +153,8 @@ for (const id of banked) {
     ok(md5File(a) === md5File(b), `${id}: practice.json mirror is byte-identical`);
   }
 }
-console.log(`    ${banked.length} banks, ${banksTotal} questions, every paper 20`);
-eq(banksTotal, banked.length * 100, "every bank is 100 questions (so the 100-question promise still holds)");
+console.log(`    ${banked.length} banks, ${banksTotal} questions, every paper its configured size`);
+eq(banksTotal, banked.reduce((n, sid) => n + practiceBankSize(sid), 0), "the total equals the sum of the configured sizes");
 
 // ---------------------------------------------------------------------------
 // 3. The legacy link: ?tab=practice lands on Practice Paper 1, not nowhere.
@@ -196,7 +204,8 @@ ok(/@media \(max-width: 359px\) \{\s*\.s-tab-label-full \{\s*display: none;\s*\}
 ok(!/@media \(max-width: 560px\)/.test(css), "the old 560 px breakpoint is gone, so the owner's wording shows on a 390 px phone");
 ok(/import Paper2Section/.test(page) && /activeTab === "paper2" && \(paid \?/.test(page), "the Paper 2 tab and its paid gate are untouched");
 ok(/label: SBA_TAB_LABEL/.test(page) && page.includes("sbaTabLabel(subjectId)"), "the SBA tab label is still derived per subject");
-ok(comp.includes("splitPracticePapers(exercises)"), "ExtraPractice slices the bank it loaded (banks are not edited)");
+ok(comp.includes("splitPracticePapers(exercises, questionsPerPaper(practiceBankSize(subjectId)))"),
+  "ExtraPractice slices the bank it loaded at the subject's configured per-paper size");
 ok(comp.includes("export default function ExtraPractice({ subjectId, paper = 1 })"), "ExtraPractice takes the paper it is showing");
 ok(comp.includes("const questions = currentPaper.questions;") && comp.includes("const offset = currentPaper.start;"), "the panel reads the paper's slice and its bank offset");
 ok(comp.includes("const total = questions.length;") && !comp.includes("const total = exercises.length;"), "the score denominator is the paper, not the whole bank");
@@ -211,12 +220,13 @@ ok(/key=\{activeTab\}/.test(page), "each practice tab mounts its own panel");
 console.log("\n=== red control: the count assertion bites ===");
 const controlBank = readJson(`content/${banked[0]}/practice.json`);
 const controlList = Array.isArray(controlBank) ? controlBank : controlBank.exercises || [];
+const controlPerPaper = questionsPerPaper(practiceBankSize(banked[0]));
 const short = controlList.slice(0, 99);
 const fourPapers = controlList.slice(0, 80);
 const long = controlList.concat(controlList.slice(0, 5));
-const shortProblems = splitFailures(short);
-const fourProblems = splitFailures(fourPapers);
-const longProblems = splitFailures(long);
+const shortProblems = splitFailures(short, controlPerPaper);
+const fourProblems = splitFailures(fourPapers, controlPerPaper);
+const longProblems = splitFailures(long, controlPerPaper);
 console.log(`     99-question bank -> ${shortProblems.length} problem(s): ${shortProblems[0] || "-"}`);
 console.log(`     80-question bank -> ${fourProblems.length} problem(s): ${fourProblems[0] || "-"}`);
 console.log(`    105-question bank -> ${longProblems.length} problem(s): ${longProblems[0] || "-"}`);
@@ -225,9 +235,21 @@ ok(shortProblems.some((p) => /sizes=20\/20\/20\/20\/19/.test(p)), "the short-ban
 ok(fourProblems.some((p) => /papers=4/.test(p)), "an 80-question bank FAILS the five-paper assertion");
 ok(longProblems.length > 0, "a 105-question bank FAILS the nothing-dropped assertion");
 ok(longProblems.some((p) => /never reached a paper/.test(p)), "the long-bank failure names the dropped questions");
-ok(splitFailures(controlList).length === 0, "the same caller is green on the real bank (so the red run is not a broken caller)");
+ok(splitFailures(controlList, controlPerPaper).length === 0, "the same caller is green on the real bank (so the red run is not a broken caller)");
 // The splitter must never invent a sixth paper for a 120-question bank.
-eq(splitPracticePapers(controlList.concat(controlList.slice(0, 20))).length, 5, "a 120-question bank still yields five papers");
+eq(splitPracticePapers(controlList.concat(controlList.slice(0, 20)), controlPerPaper).length, 5, "a 120-question bank still yields five papers");
+
+// ---------------------------------------------------------------------------
+// THE PER-SUBJECT MECHANISM, proved TODAY — before any override exists. A
+// 150-question bank at the Mathematics per-paper size must split 30/30/30/30/30,
+// and the SAME bank at the old hardcoded 20 must fail with 50 questions never
+// reaching a paper. Without this pair the per-subject path is untested code.
+// ---------------------------------------------------------------------------
+const synthetic150 = Array.from({ length: 150 }, (_, i) => ({ id: `s${i}` }));
+ok(splitFailures(synthetic150, 30).length === 0, "a 150-question bank splits 30/30/30/30/30");
+ok(splitFailures(synthetic150, 20).length > 0, "RED CONTROL: a 150-question bank split at the OLD hardcoded 20 fails (50 questions never reach a paper)");
+ok(splitFailures(synthetic150, 20).some((p) => /never reached a paper/.test(p)), "the failure names the dropped questions");
+ok(questionsPerPaper(150) === 30 && questionsPerPaper(100) === 20, "questionsPerPaper derives 30 from 150 and 20 from 100");
 
 console.log(`\ncheck-practice-papers: ${pass} passed, ${fail} failed`);
 process.exit(fail === 0 ? 0 : 1);

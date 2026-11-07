@@ -12,6 +12,7 @@
 // the rule the owner asked for stops being true in the components themselves —
 // not merely if a string moved. Source guards are used only for what cannot be
 // rendered (the three screen files' wiring, the stylesheets).
+import { practiceBankSize, knowledgeCheckSize } from "../src/data/bankSizes.js";
 import { readFileSync, existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { dirname, join } from "node:path";
@@ -164,8 +165,8 @@ const practiceBank = (() => {
   return Array.isArray(pr) ? pr : pr.exercises;
 })();
 
-check("the knowledge check bank is the 25-question bank", kcBank.length === 25, String(kcBank.length));
-check("the practice bank is the 100-question bank", practiceBank.length === 100, String(practiceBank.length));
+check("the knowledge check bank is the configured bank", kcBank.length === knowledgeCheckSize(), String(kcBank.length));
+check("the practice bank is the configured bank", practiceBank.length === practiceBankSize("mathematics"), String(practiceBank.length));
 check("every question carries an id", [...kcBank, ...practiceBank].every((q) => q.id !== undefined));
 check("every question carries a topic", [...kcBank, ...practiceBank].every((q) => !!q.topic));
 check(

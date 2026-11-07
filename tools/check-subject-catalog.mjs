@@ -29,6 +29,7 @@ import { readFileSync, existsSync, readdirSync, statSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { fileURLToPath } from "node:url";
 import { dirname, join, relative } from "node:path";
+import { practiceBankSize, knowledgeCheckSize, PRACTICE_BANK_OVERRIDES } from "../src/data/bankSizes.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -126,19 +127,22 @@ for (const subject of catalog) {
     `${id}: lesson ids are unique (${lessons.length} lessons in ${modules.length} modules)`
   );
 
-  // The product promise: a 100-question Extra Practice bank and a 25-question
-  // knowledge check per subject. A missing/short bank is a broken subject, not
-  // a style choice.
-  const practice = existsSync(join(dir, "practice.json")) ? readJson(join(dir, "practice.json")) : null;
-  const kc = existsSync(join(dir, "knowledge-check.json")) ? readJson(join(dir, "knowledge-check.json")) : null;
-  check(
-    Array.isArray(practice) && practice.length === 100,
-    `${id}: 100-question Extra Practice bank (${Array.isArray(practice) ? practice.length : "missing"})`
-  );
-  check(
-    Array.isArray(kc) && kc.length === 25,
-    `${id}: 25-question knowledge check (${Array.isArray(kc) ? kc.length : "missing"})`
-  );
+    // The product promise: the Extra Practice bank and the knowledge check the
+    // subject's own configuration advertises (src/data/bankSizes.js — 100 and 25
+    // for every subject today, 150 practice for Mathematics after the re-balance).
+    // A missing/short bank is a broken subject, not a style choice.
+    const practice = existsSync(join(dir, "practice.json")) ? readJson(join(dir, "practice.json")) : null;
+    const kc = existsSync(join(dir, "knowledge-check.json")) ? readJson(join(dir, "knowledge-check.json")) : null;
+    const wantPractice = practiceBankSize(id);
+    const wantCheck = knowledgeCheckSize();
+    check(
+      Array.isArray(practice) && practice.length === wantPractice,
+      `${id}: ${wantPractice}-question Extra Practice bank (${Array.isArray(practice) ? practice.length : "missing"})`
+    );
+    check(
+      Array.isArray(kc) && kc.length === wantCheck,
+      `${id}: ${wantCheck}-question knowledge check (${Array.isArray(kc) ? kc.length : "missing"})`
+    );
 
   // metadata.json and the catalog entry are shown in different places — a drift
   // between them reads as two different subjects. The id and name are identity
@@ -154,6 +158,18 @@ for (const subject of catalog) {
     if (meta.icon !== subject.icon) drift.icon.push(`${id} (metadata "${meta.icon}" vs catalog "${subject.icon}")`);
   }
 }
+
+// The override map is the one place a subject's bank size can differ, so a key
+// naming no shipped subject would silently do nothing. This is the only
+// assertion that catches a typo'd key falling back to the default.
+{
+  const strayOverrides = Object.keys(PRACTICE_BANK_OVERRIDES).filter((sid) => !ids.includes(sid));
+  check(
+    strayOverrides.length === 0,
+    `no PRACTICE_BANK_OVERRIDES key names a subject that does not ship (${strayOverrides.join(", ")})`
+  );
+}
+
 
 // --- 4. the mirror the browser actually fetches ----------------------------
 console.log("\n== content/ <-> public/content/ mirror");

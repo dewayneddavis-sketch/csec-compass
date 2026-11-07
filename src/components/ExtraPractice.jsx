@@ -13,13 +13,15 @@ import ReviewSolution from "./ReviewSolution";
 import SimilarQuestionPractice from "./SimilarQuestionPractice";
 import { canPractice, questionKey } from "../data/similarQuestion";
 import { splitPracticePapers, practiceQuizType } from "../data/practicePapers";
+import { practiceBankSize, questionsPerPaper } from "../data/bankSizes";
 import "./ExtraPractice.css";
 
 const QUIZ_TYPE = "practice";
 
 // `paper` is which Practice Paper tab is open (1-based). Every paper is a slice
-// of the SAME practice bank, in bank order, 20 questions each — the split, the
-// labels and the bank ranges all come from src/data/practicePapers.js.
+// of the SAME practice bank, in bank order, questionsPerPaper(bank size) each —
+// the split, the labels and the bank ranges come from src/data/practicePapers.js,
+// and the per-paper size comes from the bank-size promise in src/data/bankSizes.js.
 export default function ExtraPractice({ subjectId, paper = 1 }) {
   // What this attempt is RECORDED as (owner request 2026-10-22): each paper gets
   // its own value — practice-pp1 … practice-pp5 — so the teacher dashboard reads
@@ -93,7 +95,7 @@ export default function ExtraPractice({ subjectId, paper = 1 }) {
     );
   }
 
-  const papers = splitPracticePapers(exercises);
+  const papers = splitPracticePapers(exercises, questionsPerPaper(practiceBankSize(subjectId)));
   // Clamped, so a link to a paper a short bank cannot fill still opens the last
   // real one instead of an empty screen.
   const currentPaper = papers[Math.min(Math.max(paper, 1), papers.length) - 1];

@@ -2,11 +2,21 @@
 //
 // Owner directive 2026-10-21: the single "Extra Practice" tab is replaced by
 // five tabs — "Practice Paper 1" … "Practice Paper 5" — holding the subject's
-// SAME practice bank, unchanged and in order, 20 questions per tab (1–20,
-// 21–40, …). No bank file is touched by this: practice.json still ships its 100
-// questions with their ids, options, answers and explanations exactly as they
+// SAME practice bank, unchanged and in order, one paper per slice (1–20,
+// 21–40, …). No bank file is touched by this: practice.json still ships its
+// whole bank with its ids, options, answers and explanations exactly as they
 // were, and the paper's start card names the range of the bank it covers, so
-// "100-question practice bank" stays true.
+// the advertised bank size stays true.
+//
+// The number of PAPERS is here (it is the UI structure — five tabs). The number
+// of questions IN a paper is NOT: it belongs to the bank-size promise in
+// src/data/bankSizes.js, which owns the per-subject bank size and derives
+// questionsPerPaper() from it, and it is passed in to splitPracticePapers().
+// It is passed in rather than derived from bank.length on purpose — deriving
+// the divisor from the bank makes the split incapable of losing a question,
+// which would turn the "never reached a paper" assertion in
+// tools/check-practice-papers.mjs into dead code. A wrong size must be able to
+// fail visibly.
 //
 // This module is the single source for the split, the labels, the tab ids and
 // the legacy-link mapping, so SubjectPage, ExtraPractice and the harness cannot
@@ -17,7 +27,6 @@
 // Pure and import-free on purpose: tools/check-practice-papers.mjs drives it
 // straight from Node.
 export const PRACTICE_PAPER_COUNT = 5;
-export const QUESTIONS_PER_PAPER = 20;
 // The tab id the single Extra Practice tab used to carry. A link written against
 // the old view — /subject/<id>?tab=practice — still opens Practice Paper 1, so
 // nothing that pointed at it lands nowhere.
@@ -76,26 +85,34 @@ export function isPracticeTabId(tabId) {
   return practicePaperNumber(tabId) !== null;
 }
 
-// The papers, sliced out of the bank the page actually loaded. A paper is 20
-// questions in bank order; the numbers the UI prints come from here, so no
-// header can claim a range its slice does not have.
-export function splitPracticePapers(questions) {
+// The papers, sliced out of the bank the page actually loaded. A paper is
+// `perPaper` questions in bank order; the numbers the UI prints come from here,
+// so no header can claim a range its slice does not have.
+//
+// `perPaper` is REQUIRED and comes from questionsPerPaper(practiceBankSize(id))
+// in src/data/bankSizes.js. Throwing on a missing or nonsense size is the point:
+// a caller that forgets it must fail loudly here, not silently split at 20.
+export function splitPracticePapers(questions, perPaper) {
+  const size = Number(perPaper);
+  if (!Number.isInteger(size) || size < 1) {
+    throw new Error(`splitPracticePapers: perPaper must be a positive integer (got ${JSON.stringify(perPaper)})`);
+  }
   const bank = Array.isArray(questions) ? questions : [];
   const tabs = practicePaperTabs();
   const papers = [];
   for (let i = 0; i < tabs.length; i += 1) {
-    const start = i * QUESTIONS_PER_PAPER;
+    const start = i * size;
     if (start >= bank.length) break;
-    const items = bank.slice(start, start + QUESTIONS_PER_PAPER);
+    const items = bank.slice(start, start + size);
     papers.push({ ...tabs[i], start, end: start + items.length, questions: items });
   }
   return papers;
 }
 
 // How many questions each paper actually holds — the number the harness asserts
-// against 20/20/20/20/20.
-export function practicePaperSizes(questions) {
-  return splitPracticePapers(questions).map((paper) => paper.questions.length);
+// against the configured per-paper size (20/20/20/20/20 today).
+export function practicePaperSizes(questions, perPaper) {
+  return splitPracticePapers(questions, perPaper).map((paper) => paper.questions.length);
 }
 
 // Which practice tab a `?tab=` value asks for: the new ids (practice-3), the
