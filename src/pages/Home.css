@@ -16,6 +16,21 @@
 
 /* Teacher's Dashboard card */
 .home-teacher { padding: 2.5rem 1.5rem 0; }
+/* The two dashboard entry points sit side by side at the top of the homepage
+   (owner instruction 2026-11-05: the Parent Dashboard is displayed at the top
+   "just as Teacher's Dashboard"). Each card keeps the teacher card's own classes
+   so the two cannot drift into different prominence; this wrapper only decides
+   that on a wide screen they share the row, and on a narrow one they stack with
+   the Parent Dashboard first. */
+.home-dashboards { display: grid; gap: 1.25rem; padding: 2.5rem 1.5rem 0; max-width: 1200px; margin: 0 auto; }
+.home-dash { padding: 0; }
+.home-dash .home-teacher-card { max-width: none; margin: 0; height: 100%; }
+@media (min-width: 1000px) {
+  .home-dashboards { grid-template-columns: 1fr 1fr; }
+}
+.home-dash-parent .home-teacher-card { background: linear-gradient(135deg, #f0fdf4, #eff6ff); border-color: #d1fae5; }
+.home-dash-note { margin-top: .5rem; font-size: .88rem; color: #4b5563; }
+
 .home-teacher-card { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; background: linear-gradient(135deg, #eff6ff, #fdf4ff); border: 1px solid #e0e7ff; border-radius: 16px; padding: 1.5rem 2rem; }
 .home-teacher-title { margin: 0 0 .35rem; font-size: 1.35rem; color: #111827; }
 .home-teacher-text { margin: 0; color: #4b5563; font-size: .95rem; max-width: 46rem; }

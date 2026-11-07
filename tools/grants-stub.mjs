@@ -11,7 +11,7 @@
 // double stays permissive (no column checking) for older harnesses.
 
 export const state = {
-  user: { id: "owner-1", email: "dewayneddavis@gmail.com" },
+  user: { id: "owner-1", email: "owner@csec-compass.test" },
   authError: null,
   users: [],
   listUsersError: null,
@@ -24,7 +24,7 @@ export const state = {
 };
 
 export function reset() {
-  state.user = { id: "owner-1", email: "dewayneddavis@gmail.com" };
+  state.user = { id: "owner-1", email: "owner@csec-compass.test" };
   state.authError = null;
   state.users = [];
   state.listUsersError = null;

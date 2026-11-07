@@ -1,6 +1,7 @@
 import { createContext, useContext, useState, useEffect, useCallback } from "react";
 import { getSupabaseClient } from "../lib/supabase";
 import { setSyncSession, syncStoredProgress } from "../data/lessonProgress";
+import { ACCOUNT_ROLE_METADATA_KEY, accountRoleFromUser, cleanAccountRole } from "../data/accountRoles";
 
 const AuthContext = createContext(null);
 
@@ -31,13 +32,28 @@ export function AuthProvider({ children }) {
     if (session) syncStoredProgress();
   }, [session]);
 
-  const signUp = useCallback(async (email, password) => {
+  // Creating an account now carries the owner's identity declaration (owner
+  // instruction 2026-11-05): "the person must identify I am a student, I am a
+  // Teacher, I am a Parent". It is stored in the account's own Supabase
+  // user_metadata — a field Supabase already keeps, so NO migration is needed —
+  // and it only decides which dashboard we OFFER. It grants nothing: see the
+  // long note at the top of src/data/accountRoles.js.
+  //
+  // The role stays OPTIONAL here on purpose. Both signup forms require it, but
+  // an older caller (or a retry) that passes nothing must still be able to
+  // create an account rather than be broken by this change; such an account
+  // simply has no declaration and reads as "".
+  const signUp = useCallback(async (email, password, role) => {
     const supabase = getSupabaseClient();
     if (!supabase) return { error: new Error("Supabase not configured") };
     const appUrl = import.meta.env.VITE_APP_URL || "https://csec-compass.vercel.app";
+    const declared = cleanAccountRole(role);
     const { data, error } = await supabase.auth.signUp({
       email, password,
-      options: { emailRedirectTo: appUrl + "/auth" }
+      options: {
+        emailRedirectTo: appUrl + "/auth",
+        ...(declared ? { data: { [ACCOUNT_ROLE_METADATA_KEY]: declared } } : {}),
+      },
     });
     return { data, error };
   }, []);
@@ -66,7 +82,22 @@ export function AuthProvider({ children }) {
     return { data, error };
   }, []);
 
-  const value = { user, session, loading, signUp, signIn, signOut, resetPassword, isAuthenticated: !!user };
+  // The identity this account declared when it was created ("" when it never
+  // declared one — an older account). Used ONLY to decide which dashboard entry
+  // point to offer; it is never sent to the server as proof of anything.
+  const accountRole = accountRoleFromUser(user);
+
+  const value = {
+    user,
+    session,
+    loading,
+    signUp,
+    signIn,
+    signOut,
+    resetPassword,
+    accountRole,
+    isAuthenticated: !!user,
+  };
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }
 

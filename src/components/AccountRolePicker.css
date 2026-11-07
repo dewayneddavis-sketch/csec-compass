@@ -1,0 +1,59 @@
+/* The "I am a…" account-identity picker, shared by /signup and /auth/signup.
+   Kept neutral (it inherits the page's font and colours) so the same component
+   sits inside two differently-styled cards without looking foreign in either. */
+.role-picker {
+  border: 0;
+  margin: 0 0 1rem;
+  padding: 0;
+  min-width: 0;
+}
+
+.role-picker-question {
+  padding: 0;
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: inherit;
+}
+
+.role-picker-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.role-picker-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.85rem;
+  border: 1px solid rgba(120, 120, 140, 0.45);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  user-select: none;
+}
+
+.role-picker-option-selected {
+  border-color: #1d4ed8;
+  box-shadow: inset 0 0 0 1px #1d4ed8;
+  font-weight: 600;
+}
+
+.role-picker-option input[type="radio"] {
+  margin: 0;
+  accent-color: #1d4ed8;
+}
+
+.role-picker-option:focus-within {
+  outline: 2px solid #1d4ed8;
+  outline-offset: 2px;
+}
+
+.role-picker-hint {
+  margin: 0.5rem 0 0;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  opacity: 0.78;
+}

@@ -44,9 +44,17 @@ export default async function handler(req, res) {
     const userEmail = userJson.email;
     if (!userId) return res.status(401).json({ error: "Invalid token" });
 
-    // OWNER ALLOWLIST: only the owner email gets automatic full access.
-    const ownerEmails = (process.env.OWNER_EMAILS || "dewayneddavis@gmail.com")
-      .split(",").map((e) => e.trim().toLowerCase());
+    // OWNER ALLOWLIST: only an address in OWNER_EMAILS gets automatic full
+    // access. ENV-ONLY (owner instruction 2026-11-05): the repository is public,
+    // so no owner address is written into it, and unset means nobody is the
+    // owner — a buyer still gets exactly what they paid for below.
+    const ownerEmails = (process.env.OWNER_EMAILS || "")
+      .split(",").map((e) => e.trim().toLowerCase()).filter(Boolean);
+    if (ownerEmails.length === 0) {
+      console.warn(
+        "API /api/purchases/list: OWNER_EMAILS is not set — no account is treated as the platform owner. Set OWNER_EMAILS to a comma-separated list of owner addresses."
+      );
+    }
     if (userEmail && ownerEmails.includes(userEmail.toLowerCase())) {
       return res.status(200).json({
         hasBundle: true,

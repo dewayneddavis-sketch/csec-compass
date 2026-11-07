@@ -42,13 +42,24 @@ function getSupabaseAdmin() {
   });
 }
 
-// Owner allowlist — env-driven so the owner can authorize their actual
-// signed-in account (e.g. dddavis519@gmail.com) via Vercel's OWNER_EMAILS
-// without a code deploy. Defaults to the known owner email.
-const OWNER_EMAILS = (process.env.OWNER_EMAILS || "dewayneddavis@gmail.com")
+// Owner allowlist — ENV-ONLY (owner instruction 2026-11-05).
+//
+// The repository is PUBLIC, so no owner address is written into it: not as a
+// fallback, not in a comment. Set OWNER_EMAILS in the environment (comma
+// separated) to authorize the owner's signed-in account. Unset means NOBODY is
+// the owner — that fails CLOSED and leaves every other rule (school admin rows,
+// teacher links, a verified purchase) working, so the platform still runs; only
+// the owner's own oversight actions switch off, and the warning below says which
+// variable to set.
+const OWNER_EMAILS = (process.env.OWNER_EMAILS || "")
   .split(",")
   .map((e) => e.trim().toLowerCase())
   .filter(Boolean);
+if (OWNER_EMAILS.length === 0) {
+  console.warn(
+    "API /api/admin/grant-access: OWNER_EMAILS is not set — no account is treated as the platform owner. Set OWNER_EMAILS to a comma-separated list of owner addresses."
+  );
+}
 
 // Same access window as api/purchases/list.js — one place, one rule: a grant
 // is live for 365 days from the row's created_at.

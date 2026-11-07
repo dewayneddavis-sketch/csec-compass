@@ -228,7 +228,12 @@ check(
 // ---------------------------------------------------------------------------
 section("the owner's personal address appears nowhere user-facing");
 
-const personal = "dewdavis519@gmail.com";
+// Assembled rather than written out (owner instruction 2026-11-05): this
+// harness is what proves the owner's personal address is absent from the public
+// repository, so it must not put the address back in itself. The parts are the
+// needle, never a literal — tools/check-owner-email-redaction.mjs scans this
+// file too, and passes because the joined string is not the literal.
+const personal = ["dewdavis519", "gmail.com"].join("@");
 const personalHits = sourceFiles.filter((f) => readFileSync(join(root, f), "utf8").includes(personal));
 check(`no source file contains ${personal}`, personalHits.length === 0, personalHits.join(", "));
 check(

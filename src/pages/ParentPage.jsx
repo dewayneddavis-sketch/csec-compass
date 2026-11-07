@@ -71,6 +71,10 @@ export default function ParentPage() {
           Sign in with the account you bought your child’s course with. The link to your child is
           made when you buy — you add their email at checkout.
         </p>
+        <p className="tp-lead">
+          A student can sign in here too: with the student’s own account this page shows that
+          student’s progress — the same view their parent sees — and nothing else.
+        </p>
         <Link to="/login" className="tp-btn">Sign in</Link>
       </div>
     );
@@ -83,12 +87,55 @@ export default function ParentPage() {
     return (
       <div className="tp-page">
         <h1>Parent dashboard</h1>
-        <p>Loading your child’s progress…</p>
+        <p>Loading progress…</p>
+      </div>
+    );
+  }
+
+  // THE STUDENT'S OWN VIEW (owner instruction 2026-11-05): "if you are a
+  // student, the parent can sign-in as the student and view the Parent's
+  // Dashboard". The server resolves this view from the caller's own session, so
+  // it can only ever hold the caller's own record. The copy says whose progress
+  // it is rather than calling it a child.
+  if (data?.view === "self") {
+    return (
+      <div className="tp-page">
+        <div className="tp-head">
+          <div>
+            <h1>Parent dashboard</h1>
+            <p className="tp-lead">
+              Your own progress, shown exactly as a parent or teacher sees it. Signed in as{" "}
+              <strong>{user.email}</strong>.
+            </p>
+            <p className="tp-muted">
+              {data.linkedAsChild
+                ? "A parent is linked to this account, so they see this same page for you."
+                : "No parent is linked to this account yet. A parent is linked when a course is bought and the student's email is given at checkout — until then this page is just yours."}
+            </p>
+          </div>
+          <Link to="/" className="tp-btn tp-btn-ghost">← All subjects</Link>
+        </div>
+
+        <StudentProgressDashboard
+          data={data}
+          personNoun="student"
+          emptyTitle="Nothing recorded yet"
+          emptyCopy={
+            <>
+              Your lessons, labs and quiz attempts appear here as you work. Finish a lesson, open a
+              Play-tab lab or sit a knowledge check and this page fills in.
+            </>
+          }
+          footnote="These are your own records only — no other student's work appears on this page. 60% is the pass mark on the knowledge check."
+        />
       </div>
     );
   }
 
   if (status === 403) {
+    // The server no longer refuses a signed-in account here (a student's own
+    // session gets the self view above). This stays as an honest fallback in
+    // case an older deployment is answering.
     return (
       <div className="tp-page">
         <h1>Parent dashboard</h1>

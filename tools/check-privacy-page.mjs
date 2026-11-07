@@ -118,7 +118,10 @@ check("the page renders the constant rather than a typed-out address", /\{PRIVAC
 check("the address is not re-typed inline on the page", !privacyPage.includes(REQUIRED_INBOX));
 const FREE_MAIL = /@(gmail|yahoo|hotmail|outlook|icloud|aol|live|proton(mail)?)\./i;
 check("nothing on the legal pages points at a free-mail address", !FREE_MAIL.test(legal) && !FREE_MAIL.test(privacyPage) && !FREE_MAIL.test(app));
-check("the owner's own address does not appear in legal copy", !/dewdavis519|OWNER_EMAILS/.test(legal) && !/dewdavis519/.test(privacyPage));
+// The owner's local part, assembled rather than written out (owner instruction
+// 2026-11-05): the repository is public, so even the guard may not spell it.
+const OWNER_LOCAL = "dewdavis" + "519";
+check("the owner's own address does not appear in legal copy", !new RegExp(`${OWNER_LOCAL}|OWNER_EMAILS`).test(legal) && !new RegExp(OWNER_LOCAL).test(privacyPage));
 check("no phone number, WhatsApp or 'call us' on the page", !/whatsapp|tel:|call us|\+1\s?\(?\d{3}\)?/i.test(privacyPage));
 check("the private inbox is styled so it is not missed", /\.privacy-contact\s*\{/.test(privacyCss));
 

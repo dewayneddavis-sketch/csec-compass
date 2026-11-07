@@ -423,14 +423,65 @@ section("6. scope=parent: the caller's own children, and nobody else's");
 
   state.user = { id: "u-teacher", email: TEACHER };
   res = await call(summaryHandler, summaryReq({ scope: "parent" }));
-  check("a TEACHER account cannot open the parent dashboard (403)", res.statusCode === 403, `${res.statusCode}`);
-  check("and gets no student data with it", res.body.students === undefined, JSON.stringify(res.body).slice(0, 120));
+  // PIN MOVED (owner instruction 2026-11-05). This was a flat 403. A signed-in
+  // account now opens the Parent Dashboard scoped to ITSELF, so a teacher gets
+  // their OWN record — and what the assertion has to prove is no longer "it
+  // refuses" but the stronger "the class is still not in it".
+  check("a TEACHER account opens the parent dashboard as its own view only (200)", res.statusCode === 200, `${res.statusCode}`);
+  check("…and it is the self view, not a family", res.body.view === "self" && res.body.self === true, JSON.stringify({ view: res.body.view, self: res.body.self }));
+  check("…and carries exactly one record: the teacher's own", JSON.stringify(res.body.roster.map((r) => r.email)) === JSON.stringify([TEACHER]), JSON.stringify(res.body.roster));
+  check(
+    "…and none of the class's students appear in it",
+    !JSON.stringify(res.body).includes(CHILD_A) && !JSON.stringify(res.body).includes(CHILD_B),
+    JSON.stringify(res.body).slice(0, 200)
+  );
 
   state.user = { id: "u-stranger", email: "nobody@example.com" };
   res = await call(summaryHandler, summaryReq({ scope: "parent" }));
-  check("an account with no linked child is refused (403)", res.statusCode === 403, `${res.statusCode}`);
-  check("and the 403 names no family data", res.body.students === undefined && res.body.roster === undefined, JSON.stringify(res.body).slice(0, 160));
-  check("and says how the link is made", /checkout/i.test(res.body.error || ""), res.body.error);
+  // PIN MOVED (owner instruction 2026-11-05): "the parent can sign-in as the
+  // student and view the Parent's Dashboard". An account with no link is not
+  // refused — it gets an honest view of ITSELF, which is empty rather than an
+  // error and never somebody else's marks.
+  check("an account with no linked child gets its own honest view (200)", res.statusCode === 200, `${res.statusCode}`);
+  check(
+    "…scoped to itself and nothing else",
+    res.body.view === "self" && res.body.roster.length === 1 && res.body.roster[0].email === "nobody@example.com",
+    JSON.stringify(res.body.roster)
+  );
+  check(
+    "…and names no other family's data",
+    !JSON.stringify(res.body).includes(CHILD_A) && !JSON.stringify(res.body).includes(PARENT_A),
+    JSON.stringify(res.body).slice(0, 200)
+  );
+  check("…and says honestly that no parent is linked yet", res.body.linkedAsChild === false, String(res.body.linkedAsChild));
+
+  // The owner's own case, verbatim: a STUDENT signs in and opens this page.
+  state.user = { id: "u-child-a", email: CHILD_A };
+  res = await call(summaryHandler, summaryReq({ scope: "parent" }));
+  check("a student's own session opens the parent view of their OWN progress (200)", res.statusCode === 200, `${res.statusCode}`);
+  check(
+    "…as the self view, marked as linked to a parent",
+    res.body.view === "self" && res.body.linkedAsChild === true,
+    JSON.stringify({ view: res.body.view, linkedAsChild: res.body.linkedAsChild })
+  );
+  check(
+    "…containing the student's own record and no sibling's",
+    JSON.stringify(res.body.roster.map((r) => r.email)) === JSON.stringify([CHILD_A]) && !JSON.stringify(res.body).includes(CHILD_B),
+    JSON.stringify(res.body.roster)
+  );
+  check("…tagged relationship=self", res.body.roster.every((r) => r.relationship === "self"), JSON.stringify(res.body.roster[0]));
+  check(
+    "…and the per-student payload is the SAME shape the teacher dashboard gets",
+    Array.isArray(res.body.students) && (res.body.students.length === 0 || "totals" in res.body.students[0]),
+    JSON.stringify(res.body.students[0] || null).slice(0, 120)
+  );
+  // …and it still cannot be widened to a sibling by its own query string.
+  res = await call(summaryHandler, summaryReq({ scope: "parent", parent: PARENT_A }));
+  check(
+    "a student cannot name a parent to widen their own view",
+    !JSON.stringify(res.body).includes(CHILD_B) && res.body.roster.every((r) => r.email === CHILD_A),
+    JSON.stringify(res.body.roster)
+  );
 
   state.user = { id: "u-parent-a", email: PARENT_A };
   res = await call(summaryHandler, summaryReq({ scope: "parent" }));
@@ -588,7 +639,18 @@ section("10. wiring: routes, pages, pricing field");
   check("the summary API has a parent scope", /req\.query\.scope === "parent"/.test(summaryApi));
   check("both scopes share one aggregation", /buildStudentSummaries/.test(summaryApi));
   check("each scope keeps its own vocabulary over the same shape", /rosterKey: "parentEmail"/.test(summaryApi) && /rosterKey: "teacherEmail"/.test(summaryApi));
-  check("the parent scope has its own explicit 403", /Forbidden: this dashboard is for a parent/.test(summaryApi));
+  // PIN MOVED (owner instruction 2026-11-05): the parent scope no longer has an
+  // unconditional 403 — a signed-in account gets its own view. What must hold is
+  // that the view is resolved from the caller's OWN email and cannot be widened.
+  check(
+    "the parent scope serves a student's own view instead of refusing it",
+    /const selfView = !access/.test(summaryApi) && /view: selfView \? "self"/.test(summaryApi)
+  );
+  check(
+    "…resolved from the caller's own email, so it can never be another student",
+    /links = \[\{ parent_email: callerEmail, student_email: callerEmail \}\]/.test(summaryApi)
+  );
+  check("…and the family path is unchanged for a linked parent", /linkQuery\.eq\("parent_email", parentFilter\)/.test(summaryApi));
 }
 
 console.log(`\n${passed} passed, ${failed} failed`);

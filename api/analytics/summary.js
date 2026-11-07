@@ -29,6 +29,24 @@ const csv = (value, fallback = "") =>
     .map((e) => e.trim().toLowerCase())
     .filter(Boolean);
 
+// The platform owner's allowlist is ENV-ONLY (owner instruction 2026-11-05).
+//
+// The repository is PUBLIC, so no owner address may be written into it — not as
+// a fallback, not in a comment, not in a test fixture. Unset means NOBODY is the
+// owner, which fails CLOSED and keeps every other access rule (school roster,
+// teacher allowlist, existing links, a verified purchase) working: only the
+// owner's global-oversight path switches off, and the warning says exactly which
+// variable to set.
+function ownerAllowlist() {
+  const list = csv(process.env.OWNER_EMAILS);
+  if (!list.length) {
+    console.warn(
+      "API /api/analytics/summary: OWNER_EMAILS is not set — no account is treated as the platform owner. Set OWNER_EMAILS to a comma-separated list of owner addresses."
+    );
+  }
+  return list;
+}
+
 function roundPct(part, whole) {
   return whole > 0 ? Math.round((part / whole) * 100) : 0;
 }
@@ -324,7 +342,7 @@ export default async function handler(req, res) {
     if (req.query.scope === "class") {
       const callerEmail = (user.email || "").toLowerCase();
       const teacherEmails = csv(process.env.TEACHER_EMAIL || process.env.TEACHER_EMAILS);
-      const ownerEmails = csv(process.env.OWNER_EMAILS, "dewayneddavis@gmail.com");
+      const ownerEmails = ownerAllowlist();
       const isOwner = ownerEmails.includes(callerEmail);
 
       let access = isOwner ? "owner" : teacherEmails.includes(callerEmail) ? "allowlist" : null;
@@ -451,9 +469,17 @@ export default async function handler(req, res) {
     // no approval step and no owner action — so the only question here is: is the
     // caller named as a parent in `parent_students`?
     //
-    // Anyone else gets 403 and ZERO student data (fails closed, like every other
-    // access check in the platform). Scope: a parent sees exactly the children
-    // linked to them — never another family. The owner may pass ?parent=<email>
+    // A SIGNED-IN ACCOUNT WITH NO FAMILY OF ITS OWN IS NOT REFUSED (owner
+    // instruction 2026-11-05): "Parent need to be able to access the Parent's
+    // Dashboard by using the Student's account ... the parent can sign-in as the
+    // student and view the Parent's Dashboard." Such a caller gets this same
+    // dashboard scoped to ITSELF — see `selfView` below.
+    //
+    // Scope is what protects the data, and it is unchanged: a caller only ever
+    // receives rows resolved from their OWN email. A parent sees exactly the
+    // children linked to them; a student sees exactly their own record, never
+    // another student's, and cannot ask for one (parentFilter is the caller's
+    // email unless the caller is the owner). The owner may pass ?parent=<email>
     // to open one family, and sees every family when no parent is named,
     // mirroring ?scope=class.
     //
@@ -462,7 +488,7 @@ export default async function handler(req, res) {
     // shows a parent exactly what a teacher sees, under its own vocabulary.
     if (req.query.scope === "parent") {
       const callerEmail = (user.email || "").toLowerCase();
-      const ownerEmails = csv(process.env.OWNER_EMAILS, "dewayneddavis@gmail.com");
+      const ownerEmails = ownerAllowlist();
       const isOwner = ownerEmails.includes(callerEmail);
 
       let access = isOwner ? "owner" : null;
@@ -484,11 +510,30 @@ export default async function handler(req, res) {
         if ((linkRows || []).length > 0) access = "parent";
       }
 
-      if (!access) {
-        return res.status(403).json({
-          error:
-            "Forbidden: this dashboard is for a parent who linked a child when they bought a course. Buy a subject or the all-subjects bundle and add your child's email at checkout.",
-        });
+      // Owner instruction 2026-11-05: a student's own session opens this page
+      // and shows that student's OWN progress, which is exactly what their
+      // parent would see for them. Nobody else's record can enter this view —
+      // the only email involved is the caller's own.
+      const selfView = !access;
+      if (selfView) access = "self";
+
+      // Is this account somebody's child? Only used to choose honest wording on
+      // an empty view, so a failure here is a warning, never a refusal.
+      let linkedAsChild = false;
+      if (selfView) {
+        const { data: childRows, error: childError } = await supabase
+          .from("parent_students")
+          .select("student_email")
+          .eq("student_email", callerEmail)
+          .limit(1);
+        if (childError) {
+          console.warn(
+            "API /api/analytics/summary: parent_students (child side) lookup failed — the self view is still served:",
+            childError.message
+          );
+        } else {
+          linkedAsChild = (childRows || []).length > 0;
+        }
       }
 
       const parentFilter = isOwner
@@ -497,18 +542,27 @@ export default async function handler(req, res) {
           : null
         : callerEmail;
 
-      let linkQuery = supabase.from("parent_students").select("parent_email,student_email");
-      if (parentFilter) linkQuery = linkQuery.eq("parent_email", parentFilter);
-      const { data: links, error: linkError } = await linkQuery;
-      if (linkError) {
-        console.error("API /api/analytics/summary: parent_students lookup failed:", linkError.message);
-        return res.status(500).json({
-          error:
-            "Family lookup failed (failing closed). Ensure the `parent_students` table exists — see supabase/schema.sql.",
-        });
+      let links;
+      if (selfView) {
+        // The caller as their own "child", in the same row shape a real
+        // parent_students row has, so the ONE aggregation builds it and the two
+        // views cannot drift apart.
+        links = [{ parent_email: callerEmail, student_email: callerEmail }];
+      } else {
+        let linkQuery = supabase.from("parent_students").select("parent_email,student_email");
+        if (parentFilter) linkQuery = linkQuery.eq("parent_email", parentFilter);
+        const { data, error: linkError } = await linkQuery;
+        if (linkError) {
+          console.error("API /api/analytics/summary: parent_students lookup failed:", linkError.message);
+          return res.status(500).json({
+            error:
+              "Family lookup failed (failing closed). Ensure the `parent_students` table exists — see supabase/schema.sql.",
+          });
+        }
+        links = data || [];
       }
 
-      const built = await buildStudentSummaries(supabase, links || [], {
+      const built = await buildStudentSummaries(supabase, links, {
         rosterKey: "parentEmail",
         ownerField: "parent_email",
       });
@@ -517,8 +571,20 @@ export default async function handler(req, res) {
         return res.status(500).json({ error: built.error });
       }
 
+      // Tag the caller's own record so the page can say whose progress it is.
+      if (selfView) {
+        for (const r of built.roster) r.relationship = "self";
+        for (const s of built.students) s.relationship = "self";
+      }
+
       return res.status(200).json({
         scope: "parent",
+        // "self" = the caller's own record (a student, or anyone with no family
+        // link); "family" = a parent's linked children; "all" = the owner's
+        // unfiltered oversight view.
+        view: selfView ? "self" : parentFilter ? "family" : "all",
+        self: selfView,
+        linkedAsChild,
         parent: parentFilter || "all",
         students: built.students,
         roster: built.roster,

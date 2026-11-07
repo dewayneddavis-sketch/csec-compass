@@ -88,7 +88,7 @@ async function call(handler, req) {
 }
 
 const TEACHER = "ms.brown@school.edu";
-const OWNER = "dewayneddavis@gmail.com";
+const OWNER = "owner@csec-compass.test";
 const STUDENT_A = "student1@school.edu";
 const STUDENT_B = "student2@school.edu";
 
