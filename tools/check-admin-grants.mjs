@@ -269,7 +269,14 @@ section("5. the owner-only gate is untouched");
   setPurchases(LEGACY_ROWS, { columns: PURCHASES_LEGACY_COLUMNS });
   res = await call(adminHandler, adminReq({ action: "list" }));
   check("a signed-in non-owner is a 403", res.statusCode === 403, `${res.statusCode}`);
-  check("the 403 names the authorized owner", String(res.body.error).includes(OWNER), res.body.error);
+  // Owner instruction 2026-11-05: the 403 must NOT name the owner or the caller.
+  // The response is rendered in the browser, so an echoed allowlist publishes
+  // the owner's real address to anyone who pokes the endpoint.
+  check(
+    "the 403 refuses without naming the authorized owner",
+    /restricted/i.test(res.body.error || "") && !String(res.body.error).includes(OWNER) && !/@/.test(res.body.error || ""),
+    res.body.error
+  );
   check("a refused list leaks no grants", res.body.grants === undefined);
 
   reset();
