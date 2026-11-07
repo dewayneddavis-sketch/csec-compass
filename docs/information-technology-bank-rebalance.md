@@ -8,8 +8,8 @@ branch, and `tools/check-information-technology-bank-balance.mjs` reads this fil
 ## The rule
 
 **Practice - build the floor, then the extras by weight.**
-1. Exactly **100** questions at the end, and **every one of the 35 Information Technology lessons has at
-   least one question** tagged to it - that floor is 35.
+1. Exactly **100** questions at the end, and **every one of the 35 Information Technology lessons has at least one question**
+   tagged to it - that floor is 35.
 2. The remaining **65** extras follow module size by largest remainder: it-mod-1 21, it-mod-2 9,
    it-mod-3 4, it-mod-4 7, it-mod-5 7, it-mod-6 11, it-mod-7 6 (65).
 3. Inside a module the extras go to the lessons that carry its examined core, including the lessons the
