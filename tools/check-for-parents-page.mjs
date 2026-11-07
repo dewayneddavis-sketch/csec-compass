@@ -130,6 +130,15 @@ check("it claims lessons with an interactive activity each", /<strong>Lessons wi
 check("it states the extra practice bank from the config", /practiceBankSize\("english-a"\)/.test(page));
 check("it derives the Mathematics size and shows it only when it differs",
   /practiceBankSize\("mathematics"\)/.test(page) && /MATHS_PRACTICE !== BASE_PRACTICE/.test(page));
+// The number in the SENTENCE must be the derived one. Reading the config and
+// then printing a typed number is the failure this pair exists for: it would let
+// the re-balance ship "150 extra practice questions" typed into the JSX with
+// every other check still green (measured 2026-11-07: a typed 150 passed both
+// this harness and check-guide-bot before these two assertions were added).
+check("the sentence interpolates the derived default, so a typed number cannot pass",
+  /<strong>\{BASE_PRACTICE\} extra practice questions<\/strong>/.test(page));
+check("the Mathematics clause prints the derived size, not a typed one",
+  /\$\{MATHS_PRACTICE\} on Mathematics/.test(page));
 {
   const practice = read("content/english-a/practice.json");
   const bank = JSON.parse(practice);
