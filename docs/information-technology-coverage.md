@@ -35,7 +35,7 @@ this harness keeps an `EXPECTED_IDS` union plus a `PENDING_IDS` list so a lost b
 | **A** S1 fundamentals | 1–11, 13 (12; #12→D) | 9 `fund-` | `it-l1-1` (#3, #5, #6) | 0 | modules.json, lessonSets.js, this doc, the coverage harness |
 | **B** S4+S5 office | 24–44 (21) | 6 (`wp-`×2, `web-`×2, `sheet-`×2) | `it-l6-1` (#24, #25, #26, #27, #29), `it-l6-2` (#37, #39, #40, #42, #43) | 5 | modules.json, lessonSets.js, this doc, the coverage harness |
 | **C** S2+S3 networks/impact | 14–23 (10) | 5 (`net-`×2, `imp-`×3) | `it-l4-1` (#14, #15), `it-l4-2` (#18, #19, #20) | 0 | modules.json, NEW `it-mod-7`, metadata.json, lessonSets.js |
-| **D** S6+S7+S8 (+ orphan) | 12, 45–61 (14) | 3 `impl-` | `it-l3-1` (#12, #45, #46, #47), `it-l2-1` (#49, #50, #51, #53, #55), `it-l2-2` (#52, #57, #58, #60) | 2 | modules.json, lessonSets.js |
+| **D** S6+S7+S8 (+ orphan) | 12, 45–61 (18) | 3 `impl-` | `it-l3-1` (#12, #45, #46, #47), `it-l2-1` (#49, #50, #51, #53, #55), `it-l2-2` (#52, #57, #58, #60) | 2 | modules.json, lessonSets.js, this doc, the coverage harness |
 
 Totals: 12 + 21 + 10 + 18 = 61 · NEW 9 + 6 + 5 + 3 = 23 · EXTEND 3 + 10 + 5 + 13 = 31 · REUSE 0 + 5 + 0 + 2 = 7.
 
@@ -54,7 +54,7 @@ they do not share a home: the two `net-` lessons are Section 2 chapters and belo
 the three `imp-` lessons are Section 3 and open the new `it-mod-7` (0 → 3). So `estimatedModules` goes
 6 → 7, not 6 → 8 — one module is created, and `it-mod-4` merely grows.
 
-## State of this branch: Slice 0 + Slice A + Slice B + Slice C landed
+## State of this branch: Slice 0 + Slice A + Slice B + Slice C + Slice D landed
 
 - **Slice 0** — the 12 existing lessons now declare the lab type their own description describes. Nine of
   them claimed `code-playground`; only `it-l2-2` (write and run code) and `it-l5-1` (edit HTML code) actually
@@ -68,9 +68,7 @@ the three `imp-` lessons are Section 3 and open the new `it-mod-7` (0 → 3). So
   are now taught by name in #39 (they existed only in the lab deck), **Pivot Tables** are taught in #42 (they
   were a host concept with no teaching), and **Headers and Footers** and **Find and Replace** are named in
   #26 (they existed only as lab-deck pairs).
-- **Not yet landed:** the 3 NEW ids of slice D — `impl-programming-language-overview`,
-  `impl-variables-constants-and-data-types`, `impl-program-documentation`. The harness lists them as
-  `PENDING_IDS` and fails the moment one is landed without the list shrinking.
+- **Not yet landed:** nothing. All 23 NEW ids are in the tree and the harness's `PENDING_IDS` is empty.
 - **Slice C** — 5 NEW lessons and 10 chapters closed. Two `net-` lessons are APPENDED to the existing
   `it-mod-4` Networking & Internet (2 → 4): `net-mobile-communication-importance` (#16) and
   `net-web-technologies` (#17). One new module `it-mod-7` Social/Economic Impact of ICT opens with the three
@@ -81,6 +79,19 @@ the three `imp-` lessons are Section 3 and open the new `it-mod-7` (0 → 3). So
   #20 Countermeasures and Security Practices). Both hosts are pure insertions: the original `content` is an
   exact prefix of the new, and every original concept survives in its original position at the front of the
   array. `metadata.json estimatedModules` moves 6 → 7 and now equals the real module count (7).
+- **Slice D** — the last coverage slice: 35 lessons / 7 modules, `PENDING_IDS` empty. 3 NEW `impl-`
+  lessons (`impl-programming-language-overview` #56, `impl-variables-constants-and-data-types` #59,
+  `impl-program-documentation` #61) are APPENDED to the **existing** `it-mod-2` Programming (2 → 5, in
+  chapter order after `it-l2-2`); **no `it-mod-8` is created** and `metadata.json estimatedModules` stays
+  **7**. 13 EXTEND chapters grow in place on three frozen hosts — `it-l3-1` (#45, #46, #47 and the orphan
+  #12), `it-l2-1` (#49, #50, #51, #53, #55) and `it-l2-2` (#52, #57, #58, #60) — each a pure insertion: the
+  original `content` is an exact prefix of the new and every original concept keeps its position at the
+  front of the array (the prefixes are 4, 5 and 4 long, and the harness derives each length rather than
+  assuming one). The slice also closes the five places where a frozen lab deck or a bank question tested a
+  fact the lesson never taught: **Modulus** and the five arithmetic operators, the **assignment statement**
+  and **function/subprogram** in `it-l2-2`; the **parallelogram** and **arrow** flowchart symbols in
+  `it-l2-1`; and **form** and **report** as database objects in `it-l3-1`. They are closed by teaching,
+  never by editing the deck or the bank.
 - **Frozen in this PR:** `practice.json` (100) and `knowledge-check.json` (25). The bank re-balance is a
   separate single-owner pass after the slices, to a 5-group mapping keyed by lesson id.
 
@@ -133,7 +144,7 @@ and `it-l6-2` name them — **Mail Merge Feature** in the #29 extension and **Ba
 | 1 | 9 | Basic Hardware Troubleshooting | NEW | taught | fund-basic-hardware-troubleshooting | basic hardware troubleshooting is a method, not a guess |
 | 1 | 10 | Data and Information Distinction | NEW | taught | fund-data-and-information-distinction | the data and information distinction is one of the most examined ideas |
 | 1 | 11 | Online Information Reliability | NEW | taught | fund-online-information-reliability | online information reliability is the skill of deciding whether a page |
-| 1 | 12 | Data Validation and Verification | EXTEND | pending | it-l3-1 | - |
+| 1 | 12 | Data Validation and Verification | EXTEND | taught | it-l3-1 | data validation and verification are two different checks |
 | 1 | 13 | File Organization | NEW | taught | fund-file-organisation | file organisation is how you arrange stored work |
 | 2 | 14 | Network Types and Wireless Technologies | EXTEND | taught | it-l4-1 | network types and wireless technologies is the second half of the classification |
 | 2 | 15 | Network Components and Functions | EXTEND | taught | it-l4-1 | network components and functions are the parts you can point at |
@@ -166,23 +177,23 @@ and `it-l6-2` name them — **Mail Merge Feature** in the #29 extension and **Ba
 | 5 | 42 | Data Manipulation | EXTEND | taught | it-l6-2 | data manipulation is the set of operations that turns a long list into an answer without retyping it |
 | 5 | 43 | Charting Operations | EXTEND | taught | it-l6-2 | charting operations are a sequence of choices, not a single button |
 | 5 | 44 | Worksheet Management | NEW | taught | sheet-worksheet-management | worksheet management is about the tabs along the bottom of the window |
-| 6 | 45 | Database Concepts | EXTEND | pending | it-l3-1 | - |
-| 6 | 46 | Database Terminology and Data Types | EXTEND | pending | it-l3-1 | - |
-| 6 | 47 | Database Creation and Structure | EXTEND | pending | it-l3-1 | - |
+| 6 | 45 | Database Concepts | EXTEND | taught | it-l3-1 | database concepts begin with what a database is |
+| 6 | 46 | Database Terminology and Data Types | EXTEND | taught | it-l3-1 | database terminology and data types are the vocabulary |
+| 6 | 47 | Database Creation and Structure | EXTEND | taught | it-l3-1 | database creation and structure is the order of steps |
 | 6 | 48 | Data Manipulation and Reporting | REUSE | paraphrase | it-l3-2 | reports are used to present the results of a query |
-| 7 | 49 | Problem-Solving Steps | EXTEND | pending | it-l2-1 | - |
-| 7 | 50 | Divide-and-Conquer Approach | EXTEND | pending | it-l2-1 | - |
-| 7 | 51 | Problem Components and IPO Chart | EXTEND | pending | it-l2-1 | - |
-| 7 | 52 | Variables, Constants, and Data Types | EXTEND | pending | it-l2-2 | - |
-| 7 | 53 | Algorithm Concepts and Characteristics | EXTEND | pending | it-l2-1 | - |
+| 7 | 49 | Problem-Solving Steps | EXTEND | taught | it-l2-1 | problem-solving steps are the six stages |
+| 7 | 50 | Divide-and-Conquer Approach | EXTEND | taught | it-l2-1 | the divide-and-conquer approach breaks a large problem into smaller parts |
+| 7 | 51 | Problem Components and IPO Chart | EXTEND | taught | it-l2-1 | problem components and ipo chart name the inputs, the processes and the outputs |
+| 7 | 52 | Variables, Constants, and Data Types | EXTEND | taught | it-l2-2 | variables, constants, and data types are the conceptual question |
+| 7 | 53 | Algorithm Concepts and Characteristics | EXTEND | taught | it-l2-1 | algorithm concepts and characteristics are the definition plus the five tests |
 | 7 | 54 | Algorithm Representation: Flowcharts and Pseudocode | REUSE | paraphrase | it-l2-1 | represent algorithms using two main tools |
-| 7 | 55 | Algorithm Testing and Trace Tables | EXTEND | pending | it-l2-1 | - |
-| 8 | 56 | Programming Language Overview | NEW | pending | impl-programming-language-overview | - |
-| 8 | 57 | Program Implementation Steps | EXTEND | pending | it-l2-2 | - |
-| 8 | 58 | Program Testing and Debugging | EXTEND | pending | it-l2-2 | - |
-| 8 | 59 | Variables, Constants, and Data Types | NEW | pending | impl-variables-constants-and-data-types | - |
-| 8 | 60 | Algorithmic Statements Syntax | EXTEND | pending | it-l2-2 | - |
-| 8 | 61 | Program Documentation | NEW | pending | impl-program-documentation | - |
+| 7 | 55 | Algorithm Testing and Trace Tables | EXTEND | taught | it-l2-1 | algorithm testing and trace tables prove an algorithm works |
+| 8 | 56 | Programming Language Overview | NEW | taught | impl-programming-language-overview | programming language overview is the map of the languages a programmer can choose from |
+| 8 | 57 | Program Implementation Steps | EXTEND | taught | it-l2-2 | program implementation steps run from the finished design |
+| 8 | 58 | Program Testing and Debugging | EXTEND | taught | it-l2-2 | program testing and debugging are two different jobs |
+| 8 | 59 | Variables, Constants, and Data Types | NEW | taught | impl-variables-constants-and-data-types | variables, constants, and data types are the three declarations every program is built from |
+| 8 | 60 | Algorithmic Statements Syntax | EXTEND | taught | it-l2-2 | algorithmic statements syntax is the small set of statement forms |
+| 8 | 61 | Program Documentation | NEW | taught | impl-program-documentation | program documentation is the written record that lets the next person read, run and repair the program |
 
 ## Section counts and the module each section lives in
 
