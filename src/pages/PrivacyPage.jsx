@@ -212,6 +212,12 @@ export default function PrivacyPage() {
           student.
         </p>
         <p>
+          A student can also choose to share their own sign-in with a parent or guardian. A link never
+          hands over a password, but if a student gives their own sign-in details to an adult, that
+          adult sees the same progress view a teacher sees for that student — never another family’s
+          data, and never the student’s password.
+        </p>
+        <p>
           If you are a parent or guardian and you want a link removed, or you want to know what a
           linked account can see, email us at the address below and we will deal with it.
         </p>

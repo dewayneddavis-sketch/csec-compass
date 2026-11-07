@@ -38,7 +38,7 @@
 // as "" below. See accountRoleFromUser().
 // The explicit ".js" is required: tools/check-account-identity.mjs drives this
 // module from Node, which will not resolve an extensionless specifier.
-import { BUYER_ROLE_IDS, BUYER_ROLE_LABELS, cleanBuyerRole } from "./buyerRoles.js";
+import { BUYER_ROLE_IDS, BUYER_ROLE_LABELS, BUYER_ROLE_QUESTION, cleanBuyerRole } from "./buyerRoles.js";
 
 // The order the owner asked for at signup: student, Teacher, Parent.
 const SIGNUP_ORDER = ["student", "teacher", "parent"];
@@ -58,7 +58,9 @@ export const ACCOUNT_ROLE_LABELS = ACCOUNT_ROLE_IDS.reduce((acc, id) => {
 export const ACCOUNT_ROLE_METADATA_KEY = "account_role";
 
 // The question, the honest hint under it, and what an unanswered form is told.
-export const ACCOUNT_ROLE_QUESTION = "I am a…";
+// The question is the checkout one, IMPORTED rather than retyped: signup asks the
+// same "I am a…" that checkout asks, and two copies of a shared string drift.
+export const ACCOUNT_ROLE_QUESTION = BUYER_ROLE_QUESTION;
 export const ACCOUNT_ROLE_HINT =
   "This decides which dashboard we open for you. It does not give you access on its own: a Teacher is added to the school's roster by the school's admin, and a Parent is linked to their child by the purchase that names them.";
 export const ACCOUNT_ROLE_REQUIRED_MESSAGE =

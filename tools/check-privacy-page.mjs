@@ -183,6 +183,17 @@ check("it never claims to sell or trade data", !/\bwe (sell|trade|rent out)\b(?!
 check("it addresses students under 18", /under 18/.test(flatPrivacy));
 check("it says the adult makes the link, never the child", /made by an adult who\s+is responsible for the student/.test(flatPrivacy) && /does not create them/.test(flatPrivacy));
 check("it says a link cannot sign in as the student", /does not give the linked adult the student’s password|ability to sign in as them/.test(flatPrivacy));
+// ADDITIVE, and it must stay additive: the product also tells a parent they can
+// reach the Parent Dashboard by signing in with the student's own account, so
+// the page must say a student can CHOOSE to share their own sign-in. The pin
+// above (the LINK never hands over a password) is untouched.
+check(
+  "it also says a student can choose to share their own sign-in (additive to the pin above)",
+  /can also choose to share their own sign-in/.test(flatPrivacy) &&
+    /same progress view a teacher sees/.test(flatPrivacy) &&
+    /never another family/.test(flatPrivacy),
+  "the shared-sign-in paragraph is missing"
+);
 check("it tells a parent how to remove a link", /want a link removed/.test(flatPrivacy));
 check("it puts the school's duty to inform on the school", /responsible for telling its students/.test(flatPrivacy));
 

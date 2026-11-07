@@ -14,6 +14,7 @@
 //   free-preview size -> src/data/access.js
 //   mock-exam rules -> src/data/mockExamRules.js
 //   which subjects have the working box -> src/data/showYourWork.js
+//   the signup role question -> src/data/accountRoles.js
 // tools/check-guide-bot.mjs drives the real matcher and fails the build if any of
 // those values drift, so the guide can never quote a price the Pricing page has
 // stopped charging. The two remaining numbers (practice bank and knowledge-check
@@ -31,6 +32,7 @@ import { CONTACT_RESPONSE_WINDOW } from "./contact.js";
 import { FREE_PREVIEW_LESSONS } from "./access.js";
 import { SECONDS_PER_QUESTION, MAX_QUESTIONS, PASS_PERCENTAGE } from "./mockExamRules.js";
 import { SHOW_YOUR_WORK } from "./showYourWork.js";
+import { ACCOUNT_ROLE_QUESTION } from "./accountRoles.js";
 
 // --- values the guide quotes, derived from the modules above ---------------
 export const GUIDE_SUBJECT_COUNT = FALLBACK_SUBJECT_OPTIONS.length;
@@ -457,9 +459,13 @@ export const GUIDE_TOPICS = [
       "register",
     ],
     answer:
-      `Creating an account is free: sign up with an email address and a password, and use ` +
-      `Sign In to come back to it. You need an account to open even the free preview lessons ` +
-      `and to keep your progress.\n\n` +
+      `Creating an account is free: sign up with an email address, a password, and one more answer — ` +
+      `"${ACCOUNT_ROLE_QUESTION}" with Student, Teacher or Parent — then use Sign In to come back to ` +
+      `it. You need an account to open even the free preview lessons and to keep your progress.\n\n` +
+      `That answer tells us which dashboard to OFFER you; on its own it opens nothing. A Teacher ` +
+      `reaches the Teacher Dashboard because their school's admin puts them on the school roster (or ` +
+      `the owner has allowlisted their address), and a Parent sees a student's progress by signing in ` +
+      `with that student's own account. Nobody is admitted by what they ticked at signup.\n\n` +
       `Forgotten password? Use the "Forgot password" link on the sign-in page and we email ` +
       `you a reset link. If that does not arrive, check your spam folder and then write to ` +
       `${SUPPORT_EMAIL} — do not create a second account, because purchases and progress ` +

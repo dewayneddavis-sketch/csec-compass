@@ -126,6 +126,12 @@ export default function ForParentsPage() {
             progress only; it does not give you their password or let you sign in as them.
           </li>
           <li>
+            <strong>Your child can also choose to share their own sign-in with you.</strong> The link
+            above never hands you a password — but if your child gives you their own sign-in details,
+            signing in with their account shows that same progress view a teacher sees for them, and
+            never another family&rsquo;s data.
+          </li>
+          <li>
             <strong>Your child still works at their own pace.</strong> Nothing on the platform sets
             deadlines or rushes them.
           </li>
