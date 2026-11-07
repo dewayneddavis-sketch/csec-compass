@@ -734,6 +734,57 @@ export const lessonSets = {
         { id: "se8", label: "Electricity and a connection that holds", category: "economic" },
       ],
     },
+    // ---- Slice D: S8 program implementation (3 impl- lessons, appended to it-mod-2) -----
+    // Programming Language Overview — sort each language and translator into its level.
+    "impl-programming-language-overview": {
+      title: "Machine, Assembly or High-Level?",
+      subtitle: "Sort each language and translator into its level.",
+      kind: "sort",
+      categories: [
+        { id: "machine", label: "Machine code" },
+        { id: "assembly", label: "Assembly language" },
+        { id: "high", label: "High-level language" },
+      ],
+      items: [
+        { id: "pl1", label: "Binary instructions the processor runs directly", category: "machine" },
+        { id: "pl2", label: "An assembler turns it into machine code", category: "assembly" },
+        { id: "pl3", label: "MOV and ADD, one step per machine instruction", category: "assembly" },
+        { id: "pl4", label: "Python, Pascal and Java", category: "high" },
+        { id: "pl5", label: "A compiler translates the whole program before it runs", category: "high" },
+        { id: "pl6", label: "Readable words that a person can maintain", category: "high" },
+      ],
+    },
+    // Variables, Constants, and Data Types — match each value to the type that holds it.
+    "impl-variables-constants-and-data-types": {
+      title: "Declare It",
+      subtitle: "Match each value a program must store to the data type that holds it.",
+      kind: "match",
+      pairs: [
+        { id: "vt1", target: "Integer", label: "The number of students in a class" },
+        { id: "vt2", target: "Real", label: "The price of a textbook, with cents" },
+        { id: "vt3", target: "String", label: "A student's full name" },
+        { id: "vt4", target: "Boolean", label: "Whether the fee has been paid" },
+        { id: "vt5", target: "Constant", label: "The rate of VAT, fixed for the whole program" },
+      ],
+    },
+    // Program Documentation — sort each piece of documentation into its manual.
+    "impl-program-documentation": {
+      title: "Internal or External?",
+      subtitle: "Sort each piece of documentation into the manual it belongs to.",
+      kind: "sort",
+      categories: [
+        { id: "internal", label: "Internal documentation" },
+        { id: "external", label: "External documentation" },
+      ],
+      items: [
+        { id: "dc1", label: "A comment above the loop saying what it counts", category: "internal" },
+        { id: "dc2", label: "A name like totalMark that says what it holds", category: "internal" },
+        { id: "dc3", label: "A header block naming the author and the date", category: "internal" },
+        { id: "dc4", label: "A flowchart kept with the design notes", category: "external" },
+        { id: "dc5", label: "A user manual showing how to add a student", category: "external" },
+        { id: "dc6", label: "A technical manual listing every field and its type", category: "external" },
+      ],
+    },
   },
 
   // ------------------------------------------------- PRINCIPLES OF ACCOUNTS
