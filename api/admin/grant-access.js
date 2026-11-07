@@ -813,8 +813,13 @@ export default async function handler(req, res) {
     }
 
     if (!callerSchoolId && !isOwnerCaller) {
+      // DELIBERATELY does not echo the caller's address or the owner allowlist.
+      // The response is shown in the browser, so naming either one would publish
+      // the owner's real identity and hand an attacker the exact address to
+      // target. The caller already knows who they are signed in as; the owner
+      // does not need to be named to a stranger. Owner instruction 2026-11-05.
       return res.status(403).json({
-        error: `Forbidden: this action is restricted to the owner. You are signed in as ${caller.email || "unknown"}; the authorized owner email${OWNER_EMAILS.length > 1 ? "s are" : " is"} ${OWNER_EMAILS.join(", ")}.`,
+        error: "Forbidden: this action is restricted.",
       });
     }
 

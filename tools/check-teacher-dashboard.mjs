@@ -449,7 +449,12 @@ section("api/admin/grant-access.js — bulk CSV teacher links");
   state.user = { id: "student-1", email: STUDENT_A };
   let res = await call(adminHandler, { method: "POST", headers: authHeader, body: { action: "teacher-link-bulk", csv: `${TEACHER},${STUDENT_B}` } });
   check("a non-owner cannot bulk-link (403)", res.statusCode === 403, `${res.statusCode}`);
-  check("the 403 names the owner requirement", /owner/i.test(res.body.error || ""), res.body.error);
+  // Owner instruction 2026-11-05: refuse, but never name the owner or the caller.
+  check(
+    "the 403 refuses without naming the owner",
+    /restricted/i.test(res.body.error || "") && !/owner/i.test(res.body.error || "") && !/@/.test(res.body.error || ""),
+    res.body.error
+  );
   check("no rows are written for a rejected caller", rows("teacher_students").length === 1, `${rows("teacher_students").length}`);
 
   res = await call(adminHandler, { method: "POST", headers: {}, body: { action: "teacher-link-bulk", csv: `${TEACHER},${STUDENT_B}` } });
@@ -1474,8 +1479,21 @@ check(
 const ownerActionsList = (adminApi.split("const OWNER_ACTIONS = [")[1] || "").split("]")[0];
 check("the teacher self-service actions are not owner-only", !/teacher-self/.test(ownerActionsList));
 const teacherGateAt = adminApi.indexOf("if (TEACHER_SELF_ACTIONS.includes(action))");
-const ownerFallbackAt = adminApi.indexOf("Forbidden: this action is restricted to the owner");
+const ownerFallbackAt = adminApi.indexOf("Forbidden: this action is restricted.");
 check("the teacher gate runs before the owner-only fallback", teacherGateAt > 0 && teacherGateAt < ownerFallbackAt);
+// Owner instruction 2026-11-05: the 403 must not name the owner. The response is
+// rendered in the browser, so echoing the allowlist publishes the owner's real
+// address to anyone who pokes the endpoint. Anchor on the sentence, then assert
+// the message body carries no address at all.
+const forbiddenBlock = (adminApi.split("Forbidden: this action is restricted.")[1] || "").split("});")[0];
+check(
+  "the owner-only 403 does not name the owner's address",
+  ownerFallbackAt > 0 && !/@/.test(forbiddenBlock) && !/OWNER_EMAILS/.test(forbiddenBlock)
+);
+check(
+  "the owner-only 403 does not echo the caller's address either",
+  ownerFallbackAt > 0 && !/caller\.email/.test(forbiddenBlock)
+);
 check("a teacher's link rows are always stamped with the CALLER", /const teacherEmail = callerEmail/.test(adminApi));
 check("the teacher gate accepts a school-designated teacher", /from\("school_members"\)[\s\S]{0,600}?role/.test(adminApi));
 check("the dashboard gate accepts a school-designated teacher too", /from\("school_members"\)[\s\S]{0,600}?role/.test(summaryApi));
