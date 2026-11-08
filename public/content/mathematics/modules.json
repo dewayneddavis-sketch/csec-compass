@@ -38,7 +38,7 @@
                 ],
                 "experiment": {
                     "type": "visual-converter",
-                    "description": "Fraction, Decimal and Percentage Match: drag each fraction to its equivalent decimal and percentage."
+                    "description": "Fraction to Percentage Match: drag each fraction to its equivalent percentage."
                 }
             },
             {
@@ -129,7 +129,7 @@
                 ],
                 "experiment": {
                     "type": "interactive-quiz",
-                    "description": "Place Value in Any Base: drag each statement about bases, place value and the conversion methods onto the term it describes."
+                    "description": "Place Value in Any Base: drag each base or conversion method onto the statement it describes."
                 }
             },
             {
@@ -151,7 +151,7 @@
                 ],
                 "experiment": {
                     "type": "interactive-quiz",
-                    "description": "Count, Then Round: drag each rule or rounded value onto the idea it belongs to."
+                    "description": "Count, Then Round: drag each idea or value to be rounded onto the rule or rounded result it belongs to."
                 }
             },
             {
@@ -172,7 +172,7 @@
                 ],
                 "experiment": {
                     "type": "interactive-quiz",
-                    "description": "Name the Property: drag each worked statement onto the property it demonstrates."
+                    "description": "Name the Property: drag each property onto the worked statement it demonstrates."
                 }
             },
             {
