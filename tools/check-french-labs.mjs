@@ -131,7 +131,31 @@ for (const key of BIOLOGY_ORIGINAL_SETS) {
 }
 check(!!lessonSets.biology && !lessonSets.biology["cell-structure"],
     "biology still leaves cell-structure to the subject-level cell diagram");
-check(Object.keys(lessonSets.mathematics || {}).length === 24, "mathematics block still has its 24 sets");
+// Mathematics Slice 1 (2026-11-07) took this block from 24 sets to 29, and the
+// five coverage slices still to come will take it further. A raw count here
+// makes a FRENCH harness fail on MATHEMATICS work it has nothing to do with, so
+// the count is replaced by what this assertion actually cares about — the same
+// thing the biology check above says: French must not disturb the mathematics
+// block. Every one of the 24 original keys must still be there (strictly the
+// same refusal as "still has its 24 sets": a deletion of any original set still
+// fails), and no French key may leak in.
+const MATHEMATICS_ORIGINAL_SETS = [
+    "profit-loss-and-discounts", "simple-and-compound-interest",
+    "hire-purchase-and-instalments", "taxes-and-utility-bills",
+    "exchange-rates-and-currency", "insurance-and-budgeting",
+    "set-notation", "subsets-and-cardinality", "venn-diagrams",
+    "union-intersection-complement", "shading-venn-regions", "set-word-problems",
+    "types-of-numbers", "indices-and-surds", "standard-form", "factorization",
+    "algebraic-fractions", "transposition-and-substitution",
+    "linear-and-quadratic-graphs", "angles-and-polygons", "circle-theorems",
+    "transformations", "frequency-tables-and-cumulative-frequency",
+    "si-units-and-conversion",
+];
+for (const key of MATHEMATICS_ORIGINAL_SETS) {
+    check(!!(lessonSets.mathematics || {})[key], `mathematics block still has its "${key}" set`);
+}
+check(Object.keys(lessonSets.mathematics || {}).every((k) => !k.startsWith("fre-")),
+    "no french key leaked into the mathematics block");
 check((lessonSets.spanish && !lessonSets.spanish["fre-l1-1"]) === true, "no french key leaked into the spanish block");
 
 section("4. routing: a French lesson reaches its own set, never another subject's deck");

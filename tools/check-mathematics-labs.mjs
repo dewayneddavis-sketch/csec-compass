@@ -48,7 +48,7 @@
 // Usage:
 //   node tools/check-mathematics-labs.mjs                     # the real tree
 //   node tools/check-mathematics-labs.mjs --selftest           # synthetic fixture only
-//   node tools/check-mathematics-labs.mjs --red-control       # + the 12 red controls
+//   node tools/check-mathematics-labs.mjs --red-control       # + the 13 red controls
 //   node tools/check-mathematics-labs.mjs --red-controls-all  # alias of --red-control
 //
 // Run it with the rest before any PR that touches Mathematics labs, routing or
@@ -499,7 +499,7 @@ section("1. the Mathematics lab partition");
 }
 
 // ---------------------------------------------------------------------------
-// --red-control / --red-controls-all: 12 controls, all on doctored INPUTS.
+// --red-control / --red-controls-all: 13 controls, all on doctored INPUTS.
 // Each must produce a problem whose message matches a named regex; then the
 // caller is proved green on the untouched real tree.
 // ---------------------------------------------------------------------------
@@ -519,8 +519,17 @@ if (RED_CONTROL) {
     if (!caught) for (const re of missed) console.log(`           expected a problem matching ${re} and got none`);
   };
 
+  // The A3 arithmetic is DERIVED, not pinned: the control expects the numbers
+  // A3 must print for THIS tree with one set deleted (Mathematics Slice 1 took
+  // it from 23/24 to 28/29). A hardcoded pair here goes stale the moment a
+  // coverage slice adds a set, and a stale control reads as "the assertion
+  // stopped biting". Deleting venn-diagrams removes one SET, never a type-keyed
+  // lesson, so the coverage count (allLessons − TYPE_KEYED) is unchanged.
+  const liveSetCount = Object.keys(REAL.sets).length;
+  const coverageCount = REAL.allLessons.length - REAL.typeKeyed.length;
   red("R1", "a set deleted -> the count and the union both fire",
-    [/^A3: 23 sets for 24 coverage lessons/, /^A8: LEGACY_SETS is not an exact partition/],
+    [new RegExp(`^A3: ${liveSetCount - 1} sets for ${coverageCount} coverage lessons`),
+     /^A8: LEGACY_SETS is not an exact partition/],
     (i) => { delete i.sets["venn-diagrams"]; });
   red("R2", "a set keyed to a lesson that does not exist -> A1",
     [/^A1: lessonSets\.mathematics\.mat-geo-bearings: "mat-geo-bearings" is not a lesson id/],
@@ -567,6 +576,13 @@ if (RED_CONTROL) {
   red("R12", "an experiment stored as a bare string -> A9",
     [/^A9: real-numbers: experiment must be an object with a type and a description/],
     (i) => { i.allLessons.find((l) => l.id === "real-numbers").experiment = "interactive-quiz"; });
+  // R13 is the live form of the corpus rule: R8/R9 force a LEGACY set through it,
+  // which proves the rule can bite but not that a shipped NEW set is subject to
+  // it. This one doctors a Slice 1 set, which is on the wrong side of
+  // LEGACY_SETS by construction, so it is checked with no grandfathering at all.
+  red("R13", "a NEW (non-grandfathered) set forced to display a string its lesson does not teach -> A7",
+    [/^A7: lessonSets\.mathematics\.mat-num-properties-of-operations: "Zebra" is not in that lesson's own copy/],
+    (i) => { i.sets["mat-num-properties-of-operations"].pairs[0].label = "Zebra"; });
 
   const caught = results.filter((r) => r.caught).length;
   // The caller is green on the untouched real tree, so the controls above were
