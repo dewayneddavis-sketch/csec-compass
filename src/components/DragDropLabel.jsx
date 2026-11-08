@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { lessonSets } from "./lessonSets";
-import { getLabWorking } from "../data/mathWorking";
+import { labReveal } from "../data/mathWorking";
 import { FALLBACK_SUBJECT_OPTIONS } from "../data/pricingSubjects";
 import MathWorkingReveal from "./MathWorkingReveal";
 import { useAuth } from "../context/AuthContext";
@@ -801,15 +801,21 @@ export default function DragDropLabel({ subjectId, experimentType, lessonId }) {
       setReveal(null);
     } else {
       setFeedback(`❌ Not quite. "${displayLabel(itemId)}" doesn't go there. Try again!`);
-      // Mathematics labs teach on a wrong answer: reveal the correct answer and
-      // the step-by-step maths. Other subjects get the feedback line only.
-      const steps = getLabWorking(subjectId, experimentType, itemId);
-      const answer = correctAnswerFor(itemId);
-      setReveal(
-        steps && answer
-          ? { label: displayLabel(itemId), answer, steps }
-          : null
-      );
+      // Mathematics labs teach on a wrong answer: reveal the correct answer, and
+      // the step-by-step maths when that lesson has one authored. `labReveal` is
+      // the single place the answer-always rule lives (src/data/mathWorking.js),
+      // so it is testable by driving it rather than by reading this JSX. Other
+      // subjects get the feedback line only — labReveal returns null for them.
+      // `lessonId` is passed so a lesson that owns its own set is answered from
+      // its own working, never from another lesson's type-level method.
+      const revealed = labReveal({
+        subjectId,
+        experimentType,
+        itemId,
+        lessonId,
+        answer: correctAnswerFor(itemId),
+      });
+      setReveal(revealed ? { label: displayLabel(itemId), ...revealed } : null);
     }
   }
 
@@ -868,9 +874,16 @@ export default function DragDropLabel({ subjectId, experimentType, lessonId }) {
     <div className={`dd-feedback ${feedback.startsWith("✅") ? "correct" : "incorrect"}`}>{feedback}</div>
   );
 
+  // Two honest titles, because the two cases are different promises: with the
+  // working written the student gets the method, without it they still get the
+  // answer and the title must not claim a method that is not on screen.
   const revealEl = reveal && (
     <MathWorkingReveal
-      title={`Not quite — here's the working for "${reveal.label}"`}
+      title={
+        reveal.steps && reveal.steps.length > 0
+          ? `Not quite — here's the working for "${reveal.label}"`
+          : `Not quite — the answer for "${reveal.label}"`
+      }
       answer={reveal.answer}
       steps={reveal.steps}
     />
