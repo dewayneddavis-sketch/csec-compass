@@ -17,41 +17,48 @@
                 ],
                 "experiment": {
                     "type": "interactive-quiz",
-                    "description": "Order of Operations Challenge: Solve a series of expressions where you must click the operations in the correct order to simplify the expression."
+                    "description": "Order of Operations Match: drag each expression to the value that BODMAS gives it."
                 }
             },
             {
                 "id": "fractions-decimals-percentages",
                 "title": "Fractions, Decimals, and Percentages",
-                "content": "Fractions, decimals, and percentages are three different ways of expressing parts of a whole. A fraction like 3/4 means 3 parts out of 4. The same value can be written as the decimal 0.75 \u2014 simply divide the numerator by the denominator. As a percentage, it's 75%, which means 75 out of 100.\n\nConverting between these forms is a core CSEC skill. To change a fraction to a percentage, multiply by 100. To go from decimal to fraction, write the decimal over its place value (e.g., 0.6 = 6/10 = 3/5). Percentage problems often appear in profit and loss, discounts, and interest calculations, so it's worth practising until you can convert fluently in both directions.\n\nA useful tip: remember that 'percent' literally means 'per hundred'. So 25% = 25/100 = 1/4 = 0.25. Memorising common fraction-decimal-percent equivalents like 1/2=0.5=50%, 1/4=0.25=25%, and 1/3\u22480.333\u224833.3% will save you time in exams.",
+                "content": "Fractions, decimals, and percentages are three different ways of expressing parts of a whole. A fraction like 3/4 means 3 parts out of 4. The same value can be written as the decimal 0.75 \u2014 simply divide the numerator by the denominator. As a percentage, it's 75%, which means 75 out of 100.\n\nConverting between these forms is a core CSEC skill. To change a fraction to a percentage, multiply by 100. To go from decimal to fraction, write the decimal over its place value (e.g., 0.6 = 6/10 = 3/5). Percentage problems often appear in profit and loss, discounts, and interest calculations, so it's worth practising until you can convert fluently in both directions.\n\nA useful tip: remember that 'percent' literally means 'per hundred'. So 25% = 25/100 = 1/4 = 0.25. Memorising common fraction-decimal-percent equivalents like 1/2=0.5=50%, 1/4=0.25=25%, and 1/3\u22480.333\u224833.3% will save you time in exams.\n\nFractions and Percentages of Quantities is where the conversions earn their keep, because \"of\" in a maths question means multiply. A fraction of a quantity is the quantity divided by the denominator and then multiplied by the numerator, so 2/3 of 90 = (90 \u00f7 3) \u00d7 2 = 30 \u00d7 2 = 60. A percentage of a quantity is the same move with 100 underneath, and it is often quicker to build the percentage in parts: 12.5% of $200 is 10% = $20 plus 2.5% = $5, which is $25, so 12.5% of $200 = $25.\n\nTo express one quantity as a percentage of another, write the first as a fraction of the second and multiply by 100: 18 girls out of 30 students is (18/30) \u00d7 100 = 60%. A percentage increase or decrease is a single multiplier: an increase of 25% multiplies by 1.25, so $80 becomes 80 \u00d7 1.25 = $100, and a decrease of 20% multiplies by 0.8. Work backwards by dividing: if a number decreased by 20% is 64, then 0.8x = 64 and x = 64 \u00f7 0.8 = 80, because the original amount is always the 100%.\n\nThe fractions themselves have to be handled too. To add or subtract fractions, write them over a common denominator: 1/4 + 2/3 = 3/12 + 8/12 = 11/12. To multiply, multiply the numerators and multiply the denominators. To divide, multiply by the reciprocal: 3/4 \u00f7 1/2 = 3/4 \u00d7 2/1 = 6/4 = 3/2. To divide by a decimal, multiply both numbers by 10 until the divisor is a whole number: 5.6 \u00f7 0.7 = 56 \u00f7 7 = 8.\n\nWorked method \u2014 find 15% of $240. Change the percentage to a fraction: 15% = 15/100. Multiply by the quantity: (15/100) \u00d7 240. Cancel a factor of 5: (3/20) \u00d7 240 = 3 \u00d7 12. Multiply: 3 \u00d7 12 = 36, so 15% of $240 is $36. Check with the parts method: 10% of $240 is $24 and 5% is $12, and $24 + $12 = $36.",
                 "objectives": [
                     "Convert between fractions, decimals, and percentages",
-                    "Solve problems involving percentages"
+                    "Solve problems involving percentages",
+                    "Find a fraction or a percentage of a quantity, express one quantity as a percentage of another, and work backwards from a percentage change (Fractions and Percentages of Quantities)"
                 ],
                 "concepts": [
                     "Fractions represent parts of a whole.",
-                    "Percentages are parts per hundred."
+                    "Percentages are parts per hundred.",
+                    "Of means multiply: a fraction of a quantity is the quantity divided by the denominator, then multiplied by the numerator.",
+                    "Express one quantity as a percentage of another by writing it as a fraction of the whole and multiplying by 100.",
+                    "A percentage change is a single multiplier, and working backwards means dividing by that multiplier."
                 ],
                 "experiment": {
                     "type": "visual-converter",
-                    "description": "Visual Fraction/Percentage Slider: A bar that you can slide to see how a fraction (e.g., 3/4) converts to a decimal (0.75) and a percentage (75%) visually."
+                    "description": "Fraction, Decimal and Percentage Match: drag each fraction to its equivalent decimal and percentage."
                 }
             },
             {
                 "id": "types-of-numbers",
                 "title": "Types of Numbers, Factors and Multiples",
-                "content": "Numbers are grouped into families. Natural numbers are the counting numbers 1, 2, 3, ...; whole numbers add zero; integers include negatives as well as positives; rational numbers can be written as a fraction of two integers (1/2, 0.75, \u20143, 0.3 recurring); and irrational numbers such as \u03c0 and \u221a2 cannot be written as exact fractions. Together, the rational and irrational numbers make up the real numbers that you plot on a number line.\n\nA prime number has exactly two factors, 1 and itself, so 2, 3, 5, 7, 11 and 13 are prime while 1 is not (it has only one factor) and 9 is not (it is 3 \u00d7 3). Every whole number greater than 1 can be written as a product of primes, and that prime factorisation is the key to finding the highest common factor (HCF) and the lowest common multiple (LCM). For 24 = 2\u00b3 \u00d7 3 and 36 = 2\u00b2 \u00d7 3\u00b2, the HCF is the product of the common primes with the smaller indices, 2\u00b2 \u00d7 3 = 12, and the LCM uses the larger indices, 2\u00b3 \u00d7 3\u00b2 = 72.\n\nSquares, cubes and their roots belong to this topic too: 7\u00b2 = 49 and \u221a49 = 7; 4\u00b3 = 64 and the cube root of 64 is 4. Knowing the square numbers to at least 15\u00b2 = 225 and the cubes to 5\u00b3 = 125 saves time in the exam. When a question asks you to classify a number, give the most specific family that applies, and when it asks for factors of an expression, remember that factors multiply together to give it while multiples come from multiplying it by whole numbers.",
+                "content": "Numbers are grouped into families. Natural numbers are the counting numbers 1, 2, 3, ...; whole numbers add zero; integers include negatives as well as positives; rational numbers can be written as a fraction of two integers (1/2, 0.75, \u20143, 0.3 recurring); and irrational numbers such as \u03c0 and \u221a2 cannot be written as exact fractions. Together, the rational and irrational numbers make up the real numbers that you plot on a number line.\n\nA prime number has exactly two factors, 1 and itself, so 2, 3, 5, 7, 11 and 13 are prime while 1 is not (it has only one factor) and 9 is not (it is 3 \u00d7 3). Every whole number greater than 1 can be written as a product of primes, and that prime factorisation is the key to finding the highest common factor (HCF) and the lowest common multiple (LCM). For 24 = 2\u00b3 \u00d7 3 and 36 = 2\u00b2 \u00d7 3\u00b2, the HCF is the product of the common primes with the smaller indices, 2\u00b2 \u00d7 3 = 12, and the LCM uses the larger indices, 2\u00b3 \u00d7 3\u00b2 = 72.\n\nSquares, cubes and their roots belong to this topic too: 7\u00b2 = 49 and \u221a49 = 7; 4\u00b3 = 64 and the cube root of 64 is 4. Knowing the square numbers to at least 15\u00b2 = 225 and the cubes to 5\u00b3 = 125 saves time in the exam. When a question asks you to classify a number, give the most specific family that applies, and when it asks for factors of an expression, remember that factors multiply together to give it while multiples come from multiplying it by whole numbers.\n\nWorked problem \u2014 Problem Solving in Number Theory. A school buys 84 bottles of juice and 60 bottles of water and wants to pack them into identical crates, with nothing mixed between crates and no bottle left over. The greatest number of crates is the HCF of 84 and 60. Prime factors: 84 = 2\u00b2 \u00d7 3 \u00d7 7 and 60 = 2\u00b2 \u00d7 3 \u00d7 5. Take the common primes with the smaller indices: 2\u00b2 \u00d7 3 = 12, so 12 crates, each holding 84 \u00f7 12 = 7 bottles of juice and 60 \u00f7 12 = 5 bottles of water, which is 7 + 5 = 12 bottles in every crate. Check it by dividing: 12 goes into both 84 and 60 exactly, and no larger number does.\n\nA second kind of question asks when two events next happen together, and that is the LCM. Two bells ring every 18 minutes and every 24 minutes and both ring at 9:00. 18 = 2 \u00d7 3\u00b2 and 24 = 2\u00b3 \u00d7 3, so the LCM is 2\u00b3 \u00d7 3\u00b2 = 72 minutes, which is 1 hour 12 minutes, so they next ring together at 10:12. The decision is the whole skill of Problem Solving in Number Theory: sharing into the largest equal groups is the HCF, and meeting again is the LCM.\n\nOne number needs a rule of its own. 1 is the one number that is neither prime nor composite, because it has a single factor.",
                 "objectives": [
                     "Classify numbers as natural, whole, integer, rational, irrational or real",
                     "Identify prime numbers and write a number as a product of its prime factors",
                     "Find the HCF and LCM of two or three numbers using prime factorisation",
-                    "Use squares, cubes and their roots accurately"
+                    "Use squares, cubes and their roots accurately",
+                    "Decide whether a contextual number problem needs the HCF or the LCM and work it through (Problem Solving in Number Theory)"
                 ],
                 "concepts": [
                     "Natural \u2282 whole \u2282 integers \u2282 rational; rational plus irrational gives the real numbers.",
                     "A prime has exactly two factors; 1 is not prime and 2 is the only even prime.",
                     "Prime factorisation gives the HCF (smaller indices) and the LCM (larger indices).",
-                    "Squares have even-index exponents in prime factorisation; cubes have multiples of three."
+                    "Squares have even-index exponents in prime factorisation; cubes have multiples of three.",
+                    "In Problem Solving in Number Theory the question decides the tool: sharing into the largest equal groups is the HCF, and two events meeting again is the LCM.",
+                    "An HCF answer can be checked by dividing: the HCF must divide both numbers exactly."
                 ],
                 "experiment": {
                     "type": "classifier-sim",
@@ -82,22 +89,134 @@
             {
                 "id": "standard-form",
                 "title": "Standard Form",
-                "content": "Standard form (scientific notation) writes a number as A \u00d7 10^n where A is at least 1 but less than 10 and n is an integer. Large numbers have positive powers of ten: 45,000 = 4.5 \u00d7 10^4 and 6,700,000 = 6.7 \u00d7 10^6. Small numbers have negative powers: 0.00072 = 7.2 \u00d7 10^-4, because the decimal point has moved four places to the right. Count the places you move the point \u2014 that count is the index.\n\nMultiplying and dividing in standard form uses the laws of indices. (3 \u00d7 10^5) \u00d7 (2 \u00d7 10^3) = 6 \u00d7 10^8; and (8 \u00d7 10^6) \u00f7 (2 \u00d7 10^2) = 4 \u00d7 10^4. If the number part of your answer is not between 1 and 10, adjust it: (5 \u00d7 10^3) \u00d7 (4 \u00d7 10^2) = 20 \u00d7 10^5 = 2 \u00d7 10^6. Always finish by checking that 1 \u2264 A < 10.\n\nStandard form is used for measurements that are very large or very small \u2014 the distance from the Earth to the Sun is about 1.5 \u00d7 10^8 km and the mass of a dust particle about 3 \u00d7 10^-7 kg. To compare two such numbers, compare the powers of ten first, because the larger index means the larger number. Adding and subtracting in standard form is easier if you first write both numbers as ordinary numbers, or rewrite them with the same power of ten.",
+                "content": "Standard form (scientific notation) writes a number as A \u00d7 10^n where A is at least 1 but less than 10 and n is an integer. Large numbers have positive powers of ten: 45,000 = 4.5 \u00d7 10^4 and 6,700,000 = 6.7 \u00d7 10^6. Small numbers have negative powers: 0.00072 = 7.2 \u00d7 10^-4, because the decimal point has moved four places to the right. Count the places you move the point \u2014 that count is the index.\n\nMultiplying and dividing in standard form uses the laws of indices. (3 \u00d7 10^5) \u00d7 (2 \u00d7 10^3) = 6 \u00d7 10^8; and (8 \u00d7 10^6) \u00f7 (2 \u00d7 10^2) = 4 \u00d7 10^4. If the number part of your answer is not between 1 and 10, adjust it: (5 \u00d7 10^3) \u00d7 (4 \u00d7 10^2) = 20 \u00d7 10^5 = 2 \u00d7 10^6. Always finish by checking that 1 \u2264 A < 10.\n\nStandard form is used for measurements that are very large or very small \u2014 the distance from the Earth to the Sun is about 1.5 \u00d7 10^8 km and the mass of a dust particle about 3 \u00d7 10^-7 kg. To compare two such numbers, compare the powers of ten first, because the larger index means the larger number. Adding and subtracting in standard form is easier if you first write both numbers as ordinary numbers, or rewrite them with the same power of ten.\n\nOrdering Real Numbers is the same skill applied to a mixed list, and the rule is always to put everything into the same form first. Negative numbers are smaller the further left they sit, so -7 < -2 even though 7 > 2. To compare fractions, write them with a common denominator or as decimals. To compare two numbers in standard form, compare the powers of ten first, because the larger index means the larger number, and only compare the number parts when the indices are equal.\n\nWorked method \u2014 write 3/4, 0.7, 2/3, -0.5 and 6.8 \u00d7 10^-1 in ascending order. Change every number to a decimal: 3/4 = 0.75, 0.7 = 0.7, 2/3 = 0.6667 to 4 decimal places, -0.5 = -0.5, and 6.8 \u00d7 10^-1 = 0.68. Order those decimals from the smallest: -0.5, then 0.6667, then 0.68, then 0.7, then 0.75. Written back in their original forms the order is -0.5 < 2/3 < 6.8 \u00d7 10^-1 < 0.7 < 3/4. The check is that every number was changed into the same form before any comparison was made.",
                 "objectives": [
                     "Write large and small numbers in standard form",
                     "Convert numbers from standard form back to ordinary form",
                     "Multiply and divide numbers given in standard form",
-                    "Compare two numbers written in standard form and order them by size"
+                    "Compare two numbers written in standard form and order them by size",
+                    "Order a mixed list of real numbers \u2014 negatives, fractions, decimals and numbers in standard form (Ordering Real Numbers)"
                 ],
                 "concepts": [
                     "Standard form is A \u00d7 10^n with 1 \u2264 A < 10 and n an integer.",
                     "Moving the decimal point left gives a positive index, right gives a negative index.",
                     "Multiply or divide the number parts, then add or subtract the indices.",
-                    "If A ends up outside 1 to 10, adjust A and the index until it is inside."
+                    "If A ends up outside 1 to 10, adjust A and the index until it is inside.",
+                    "Negative numbers are smaller the further left they sit, so -7 < -2.",
+                    "To order a mixed list, write every number in the same form before comparing."
                 ],
                 "experiment": {
                     "type": "matching-game",
                     "description": "Powers of Ten Match: match each ordinary number, from a country's population to the width of a virus, to its correct standard form."
+                }
+            },
+            {
+                "id": "mat-num-number-bases-and-place-value",
+                "title": "Number Bases and Place Value",
+                "content": "Place value means that the column a digit stands in decides what it is worth. In base ten the columns are worth 1, 10, 100 and 1,000, each one ten times the column on its right, so in 4,703 the 4 is worth 4,000, the 7 is worth 700 and the 3 is worth 3. Number Bases and Place Value applies exactly that idea to every other base: the base tells you how many digits you may use and what each column is worth.\n\nA base of n uses only the digits 0 to n - 1, and each column is n times the column on its right. Base 2 (binary) uses only 0 and 1, and its columns are worth 1, 2, 4, 8, 16 and 32. Base 8 (octal) uses 0 to 7, with columns worth 1, 8, 64 and 512. Base 5 uses 0 to 4, with columns worth 1, 5, 25 and 125. The base is written as a small subscript after the number, so 1011 in base two is written 1011\u2082, and the digit 3 is never legal in base two.\n\nExpanding by place value converts any base into base ten. 1011\u2082 = 1 \u00d7 8 + 0 \u00d7 4 + 1 \u00d7 2 + 1 \u00d7 1 = 8 + 0 + 2 + 1 = 11 in base ten. In the same way 231 in base five is 2 \u00d7 25 + 3 \u00d7 5 + 1 \u00d7 1 = 50 + 15 + 1 = 66, and 47 in base eight is 4 \u00d7 8 + 7 \u00d7 1 = 32 + 7 = 39.\n\nRepeated division is the method that goes the other way, from base ten into another base: divide by the base again and again, then read the remainders from the bottom up. For 45 in base two, 45 \u00f7 2 = 22 remainder 1, 22 \u00f7 2 = 11 remainder 0, 11 \u00f7 2 = 5 remainder 1, 5 \u00f7 2 = 2 remainder 1, 2 \u00f7 2 = 1 remainder 0 and 1 \u00f7 2 = 0 remainder 1, so 45 = 101101\u2082. Converting back to base ten is the check that always works: 32 + 0 + 8 + 4 + 0 + 1 = 45.\n\nWorked method \u2014 Adding in base two. Line the numbers up and work from the right, but carry a 1 as soon as a column reaches 2 instead of 10. For 1011\u2082 + 1101\u2082: the units column gives 1 + 1 = 2, which is 10 in base two, so write 0 and carry 1; the twos column gives 1 + 0 + 1 = 2, so write 0 and carry 1; the fours column gives 0 + 1 + 1 = 2, so write 0 and carry 1; the eights column gives 1 + 1 + 1 = 3, which is 11 in base two, so write 1 and carry 1 into a new column. The answer is 11000\u2082. Check it in base ten: 1011\u2082 = 11 and 1101\u2082 = 13, and 11 + 13 = 24 = 16 + 8 = 11000\u2082.\n\nSubtraction borrows the base instead of ten: 1101\u2082 - 1011\u2082 = 0010\u2082 = 2, which agrees with 13 - 11 = 2. Every question in Number Bases and Place Value can be checked by converting back to base ten, so always convert back when you have time.",
+                "objectives": [
+                    "Give each column of a number its own power of the base (Number Bases and Place Value)",
+                    "Convert a number from another base into base ten by expanding by place value (Number Bases and Place Value)",
+                    "Convert a number from base ten into another base by repeated division (Number Bases and Place Value)",
+                    "Add and subtract in base two, carrying or borrowing the base itself (Number Bases and Place Value)"
+                ],
+                "concepts": [
+                    "A base of n uses only the digits 0 to n - 1 and makes each column n times the column on its right.",
+                    "Base 2 (binary) uses only 0 and 1; base 8 (octal) uses 0 to 7.",
+                    "Expanding by place value converts any base into base ten.",
+                    "Repeated division converts base ten into another base; the remainders are read from the bottom up.",
+                    "In base two a column carries at 2 and borrows 2, never 10."
+                ],
+                "experiment": {
+                    "type": "interactive-quiz",
+                    "description": "Place Value in Any Base: drag each statement about bases, place value and the conversion methods onto the term it describes."
+                }
+            },
+            {
+                "id": "mat-num-significant-figures-and-decimal-places",
+                "title": "Significant Figures and Decimal Places",
+                "content": "Significant figures and decimal places are two different ways of saying how much of a number you keep, and a CSEC question always tells you which one to use. Significant Figures and Decimal Places is about counting the digits that carry information, then cutting the number at the right place without changing what it is worth.\n\nThe first significant figure is the first non-zero digit. In 0.0047256 the first significant figure is the 4, and the zeros in front of it do not count, because they only fix the size of the number. Leading zeros, the zeros at the start of a decimal, are never significant. Significant zeros are the zeros between two non-zero digits, such as the two zeros in 2.007, and the zeros at the end of a decimal such as 0.350, which has three significant figures.\n\nThe rounding rule: look at the next digit and round up if it is 5 or more, otherwise leave the digit alone. To round 3.8462 to 3 significant figures, keep the 3, the 8 and the 4 and look at the next digit, 6, which is 5 or more, so the 4 rounds up: 3.8462 to 3 significant figures is 3.85. To round 0.0047256 to 3 significant figures, keep 4, 7 and 2 and look at the 5, which rounds the 2 up, so the answer is 0.00473 \u2014 the leading zeros stay, because they only fix the size.\n\nDecimal places count from the decimal point instead. Rounding to the nearest whole number is rounding to 0 decimal places, so 47.65 to the nearest whole number is 48, because the 6 in the tenths place is 5 or more. Rounding to 2 decimal places keeps two digits after the point: 5.2371 to 2 decimal places is 5.24, because the third decimal digit is 7.\n\nWorked method \u2014 round 0.006048 to 3 significant figures. The first significant figure is the 6, because the zeros in front are leading zeros. The three significant figures are 6, 0 and 4, and the next digit is 8, which is 5 or more, so the 4 rounds up to 5. 0.006048 to 3 significant figures is 0.00605. Check the count: 6, 0 and 5 are the three significant figures, and the leading zeros are still there to keep the number the right size.\n\nA wrong number of significant figures loses marks even when the arithmetic is right, so finish every answer by naming the accuracy you used.",
+                "objectives": [
+                    "Count the significant figures in a number (Significant Figures and Decimal Places)",
+                    "Round a number to a given number of significant figures (Significant Figures and Decimal Places)",
+                    "Round a number to a given number of decimal places (Significant Figures and Decimal Places)",
+                    "Name the accuracy you used in the answer (Significant Figures and Decimal Places)"
+                ],
+                "concepts": [
+                    "The first significant figure is the first non-zero digit.",
+                    "Leading zeros, the zeros at the start of a decimal, are never significant.",
+                    "Significant zeros are the zeros between two non-zero digits and the zeros at the end of a decimal.",
+                    "The rounding rule: look at the next digit and round up if it is 5 or more.",
+                    "Rounding to the nearest whole number is rounding to 0 decimal places."
+                ],
+                "experiment": {
+                    "type": "interactive-quiz",
+                    "description": "Count, Then Round: drag each rule or rounded value onto the idea it belongs to."
+                }
+            },
+            {
+                "id": "mat-num-properties-of-operations",
+                "title": "Properties of Operations",
+                "content": "The properties of operations are the rules that let you rearrange a calculation without changing its answer. Properties of Operations names six of them \u2014 commutative, associative, distributive, additive identity, multiplicative identity and inverse \u2014 and each one is a licence to do something that would otherwise look like cheating.\n\nThe commutative property says order does not matter for addition and multiplication: 3 + 5 = 5 + 3, and 4 \u00d7 7 = 7 \u00d7 4. It does not hold for subtraction or division, because 8 - 3 is not 3 - 8. The associative property says grouping does not matter when you add or multiply three or more numbers: (2 + 3) + 4 = 2 + (3 + 4), and the answer is 9 either way.\n\nThe distributive property joins multiplication to addition or subtraction: a(b + c) = ab + ac, and a(b - c) = ab - ac. It is what makes mental arithmetic quick, because 7 \u00d7 98 = 7 \u00d7 (100 - 2) = 700 - 14 = 686. Read the other way, the same rule is how brackets are expanded later in algebra.\n\nThe identity property names the number that changes nothing: the additive identity is 0, because 12 + 0 = 12, and the multiplicative identity is 1, because 9 \u00d7 1 = 9. The inverse property names the partner that cancels a number out: 8 + (-8) = 0 for addition, and 5 \u00d7 (1/5) = 1 for multiplication. Inverses are what solving an equation actually uses \u2014 subtracting 4 from both sides is adding the additive inverse of 4.\n\nWorked method \u2014 use the distributive property to work out 7 \u00d7 98 without a calculator. Write 98 as 100 - 2, so 7 \u00d7 98 = 7 \u00d7 (100 - 2). Distribute the 7: 7 \u00d7 100 - 7 \u00d7 2 = 700 - 14. Subtract: 700 - 14 = 686, so 7 \u00d7 98 = 686. Check it with the commutative property: 98 \u00d7 7 gives the same 686.\n\nThese properties also explain why the order of operations is not as rigid as it looks: BODMAS is not broken when you add a list in a different order, because addition is commutative and associative.",
+                "objectives": [
+                    "Name the commutative, associative, distributive, identity and inverse properties (Properties of Operations)",
+                    "Use the distributive property to work a calculation without a calculator (Properties of Operations)",
+                    "Say which properties do not hold for subtraction and division (Properties of Operations)"
+                ],
+                "concepts": [
+                    "The commutative property holds for addition and multiplication, not for subtraction or division.",
+                    "The associative property holds for addition and multiplication when three or more numbers are combined.",
+                    "The distributive property: a(b + c) = ab + ac and a(b - c) = ab - ac.",
+                    "The additive identity is 0 and the multiplicative identity is 1.",
+                    "The inverse property pairs a number with the number that cancels it out."
+                ],
+                "experiment": {
+                    "type": "interactive-quiz",
+                    "description": "Name the Property: drag each worked statement onto the property it demonstrates."
+                }
+            },
+            {
+                "id": "mat-num-number-sequences",
+                "title": "Number Sequences",
+                "content": "A sequence is a list of numbers written in order, and each number in it is a term. Number Sequences is about finding the rule that produces the list, then using the rule to jump straight to any term instead of counting up to it.\n\nThe term-to-term rule says how to get from one term to the next. In 5, 8, 11, 14 the term-to-term rule is add 3 each time, and 3 is called the common difference, because the same number is added every time. A sequence with a common difference is a linear sequence, and its nth term is written an + b, where the number in front of n is the common difference.\n\nTo find the nth term of 5, 8, 11, 14: the common difference is 3, so the rule looks like 3n + b. Put n = 1, because the first term must be 5: 3(1) + b = 5, which gives b = 2. The nth term of 5, 8, 11, 14 is 3n + 2, and checking n = 4 gives 3(4) + 2 = 14, which is right. Once you have the rule you can jump: the 20th term is 3(20) + 2 = 62.\n\nA geometric sequence multiplies by the same number each time instead of adding. 2, 6, 18, 54 multiplies by 3, so the common ratio is 3 and the nth term is 2 \u00d7 3^(n - 1): the 5th term is 2 \u00d7 3^4 = 162. Some sequences are worth recognising on sight. Square numbers are 1, 4, 9, 16, 25 and so on; triangular numbers are 1, 3, 6, 10, 15 and so on; and in the Fibonacci sequence each term is the sum of the two before it, 1, 1, 2, 3, 5, 8 and so on.\n\nWorked method \u2014 find the 10th term of 3n - 1. Substitute n = 10 into the rule: 3(10) - 1. Multiply first: 3 \u00d7 10 = 30. Then subtract: 30 - 1 = 29, so the 10th term of 3n - 1 is 29.\n\nA useful check on any sequence question: if the differences between consecutive terms are constant, look for a linear rule; if the ratios between consecutive terms are constant, look for a geometric rule.",
+                "objectives": [
+                    "Find the term-to-term rule of a sequence (Number Sequences)",
+                    "Find the nth term of a linear sequence and use it to jump to any term (Number Sequences)",
+                    "Recognise a geometric sequence and its common ratio (Number Sequences)",
+                    "Recognise the square, triangular and Fibonacci sequences (Number Sequences)"
+                ],
+                "concepts": [
+                    "The term-to-term rule says how to get from one term to the next.",
+                    "In a linear sequence the number in front of n is the common difference.",
+                    "The nth term of a linear sequence is an + b; find b by putting n = 1.",
+                    "A geometric sequence multiplies by the same number each time and its nth term is a \u00d7 r^(n - 1).",
+                    "Square numbers, triangular numbers and the Fibonacci sequence are worth recognising on sight."
+                ],
+                "experiment": {
+                    "type": "interactive-quiz",
+                    "description": "Find the Rule: drag each rule, term or named sequence onto the statement it belongs to."
+                }
+            },
+            {
+                "id": "mat-num-ratio-and-proportion",
+                "title": "Dividing Quantities by Ratio",
+                "content": "A ratio compares parts of the same whole, written with a colon: 3:2 means three parts to two parts. Dividing Quantities by Ratio is the method for sharing an amount so that the parts are in the ratio you were given, and it works the same way for two parts or ten.\n\nSimplifying a ratio means divide every part by the highest common factor. 12:18 divides by 6 and becomes 2:3, and 2:3 is the simplest form because 2 and 3 share no factor except 1. Two ratios that simplify to the same thing are equivalent, and that is what proportion means: 2:3 and 4:6 describe the same relationship. Direct and inverse proportion \u2014 y = kx and y = k/x \u2014 belong with rates and are worked in the units lesson, not here.\n\nThe first step is to add the parts of the ratio, because the total tells you how many equal parts the whole is cut into. To share 60 mangoes in the ratio 3:2, add 3 + 2 = 5 parts. The value of one part is 60 \u00f7 5 = 12. The first share is 3 \u00d7 12 = 36 and the second is 2 \u00d7 12 = 24. The check is that the shares add back to the whole: 36 + 24 = 60.\n\nThe same method handles three or more parts. To share $180 in the ratio 2:3:4, add 2 + 3 + 4 = 9 parts, so one part is $180 \u00f7 9 = $20; the shares are 2 \u00d7 20 = $40, 3 \u00d7 20 = $60 and 4 \u00d7 20 = $80, and the check is 40 + 60 + 80 = 180.\n\nThe unitary method is the same idea when the parts are items rather than a ratio. If 4 pens cost $12 then one pen costs $12 \u00f7 4 = $3, so 7 pens cost 7 \u00d7 $3 = $21. Find the value of one first, then multiply \u2014 that is the whole of the method, and it is what makes a ratio question and a best-buy question the same question.\n\nWorked method \u2014 share 25 students in the ratio 3:2. Add the parts: 3 + 2 = 5. Divide the whole by the parts to get the value of one part: 25 \u00f7 5 = 5. Multiply each share by the value of one part: the boys' share is 3 \u00d7 5 = 15 and the girls' share is 2 \u00d7 5 = 10. Check: 15 + 10 = 25, so the boys' share is 15 students and the girls' share is 10 students.",
+                "objectives": [
+                    "Write a ratio and simplify it by the highest common factor (Dividing Quantities by Ratio)",
+                    "Divide a quantity in a given ratio by finding the value of one part (Dividing Quantities by Ratio)",
+                    "Divide a quantity in a ratio with three or more parts (Dividing Quantities by Ratio)",
+                    "Use the unitary method to find the value of one item and then of many (Dividing Quantities by Ratio)"
+                ],
+                "concepts": [
+                    "A ratio compares parts of the same whole, and it is simplified by dividing every part by the highest common factor.",
+                    "The first step is to add the parts of the ratio.",
+                    "The value of one part is the quantity divided by the total number of parts.",
+                    "Each share is that number of parts multiplied by the value of one part.",
+                    "The unitary method finds the value of one first, then multiplies."
+                ],
+                "experiment": {
+                    "type": "interactive-quiz",
+                    "description": "Share It in a Ratio: drag each step or share onto the part of the method it belongs to."
                 }
             }
         ]
