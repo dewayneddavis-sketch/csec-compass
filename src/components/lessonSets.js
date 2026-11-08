@@ -5458,7 +5458,7 @@ export const lessonSets = {
     },
     "si-units-and-conversion": {
       title: "Unit Conversion Match",
-      subtitle: "Drag each quantity to its equivalent.",
+      subtitle: "Drag each quantity, ratio or proportion onto its equivalent or formula.",
       kind: "match",
       pairs: [
         { id: "p1", target: "1000 m", label: "1 km" },
