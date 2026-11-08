@@ -5471,7 +5471,7 @@ export const lessonSets = {
     },
     "mat-num-number-bases-and-place-value": {
       title: "Place Value in Any Base",
-      subtitle: "Drag each statement onto the base or the conversion method it describes.",
+      subtitle: "Drag each base or conversion method onto the statement it describes.",
       kind: "match",
       pairs: [
         { id: "p1", target: "uses only 0 and 1", label: "Base 2 (binary)" },
@@ -5484,7 +5484,7 @@ export const lessonSets = {
     },
     "mat-num-significant-figures-and-decimal-places": {
       title: "Count, Then Round",
-      subtitle: "Drag each rule or rounded value onto the idea it belongs to.",
+      subtitle: "Drag each idea or value to be rounded onto the rule or rounded result it belongs to.",
       kind: "match",
       pairs: [
         { id: "p1", target: "the first non-zero digit", label: "First significant figure" },
@@ -5497,7 +5497,7 @@ export const lessonSets = {
     },
     "mat-num-properties-of-operations": {
       title: "Name the Property",
-      subtitle: "Drag each worked statement onto the property it demonstrates.",
+      subtitle: "Drag each property onto the worked statement it demonstrates.",
       kind: "match",
       pairs: [
         { id: "p1", target: "3 + 5 = 5 + 3", label: "Commutative" },

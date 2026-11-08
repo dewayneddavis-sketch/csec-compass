@@ -91,7 +91,7 @@ slice's module ownership.
 
 | lesson | was | now |
 |---|---|---|
-| `fractions-decimals-percentages` | "Visual Fraction/Percentage Slider: A bar that you can slide…" — **no slider exists** (`visual-converter` resolves to a drag set) | "Fraction, Decimal and Percentage Match: drag each fraction to its equivalent decimal and percentage." |
+| `fractions-decimals-percentages` | "Visual Fraction/Percentage Slider: A bar that you can slide…" — **no slider exists** (`visual-converter` resolves to a drag set) | "Fraction to Percentage Match: drag each fraction to its equivalent percentage." (tightened once more in the follow-up honest-copy fix: the lab has percentage drop zones only — there is no decimal zone) |
 | `real-numbers` | "…click the operations in the correct order…" — `interactive-quiz` routes to a drag match | "Order of Operations Match: drag each expression to the value that BODMAS gives it." |
 
 ## 5. The one mathematically false lab pair, corrected
