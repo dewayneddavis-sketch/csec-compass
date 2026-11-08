@@ -235,6 +235,26 @@ function treeEnv({ workingSrc, workingsSrc } = {}) {
   })();
 }
 
+// The item count A8 walks, DERIVED from the live sets (changed 2026-11-08, in
+// the Slice 3 PR, from the literal 181).
+//
+// Why derived and not bumped: a literal has to be re-typed by every slice that
+// adds a set, so it degenerates into a number the author of the PR copies out of
+// the failure message — a pin that is updated rather than a rule that bites. It
+// is NOT loosened: the count is enumerated here INDEPENDENTLY of itemsOf(), so a
+// set whose items itemsOf() cannot enumerate still makes A8's walk short of this
+// number. What a set DISAPPEARING used to prove here is proved by A2 (every live
+// set must be in PENDING ∪ authored, and a PENDING key that is not live fails),
+// so nothing this assertion used to catch has been given up.
+function liveItemCount(sets) {
+  let n = 0;
+  for (const set of Object.values(sets || {})) {
+    if (set.kind === "match") n += (set.pairs || []).length;
+    else if (set.kind === "sort") n += (set.items || []).length;
+  }
+  return n;
+}
+
 function baseEnv() {
   return {
     sets: lessonSets.mathematics,
@@ -243,7 +263,7 @@ function baseEnv() {
     sywSource: read("tools/check-show-your-work.mjs"),
     playCopySource: read("tools/check-play-copy.mjs"),
     pending: PENDING.slice(),
-    expectedItems: 181,
+    expectedItems: liveItemCount(lessonSets.mathematics),
     workingSrc: read("src/data/mathWorking.js"),
   };
 }
