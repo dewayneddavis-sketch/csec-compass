@@ -5575,6 +5575,58 @@ export const lessonSets = {
         { id: "p6", target: "350 cm = 3.5 m", label: "A wall drawn 7 cm at 1:50" },
       ],
     },
+    "mat-stat-data-types-and-sampling": {
+      title: "Data and Sampling Match",
+      subtitle: "Drag each data term onto the description that defines it.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "every member of the group", label: "Population" },
+        { id: "p2", target: "a part chosen to represent the whole", label: "Sample" },
+        { id: "p3", target: "asks every member of the population", label: "Census" },
+        { id: "p4", target: "questions asked of a sample", label: "Survey" },
+        { id: "p5", target: "only whole-number values", label: "Discrete data" },
+        { id: "p6", target: "any value in a range", label: "Continuous data" },
+      ],
+    },
+    "mat-stat-statistical-diagrams": {
+      title: "Statistical Diagrams Match",
+      subtitle: "Drag each diagram or angle term onto the description that defines it.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "bars with gaps between them", label: "Bar chart" },
+        { id: "p2", target: "one circle cut into sectors", label: "Pie chart" },
+        { id: "p3", target: "bars with no gaps, for grouped data", label: "Histogram" },
+        { id: "p4", target: "the class midpoints joined by straight lines", label: "Frequency polygon" },
+        { id: "p5", target: "cumulative frequency plotted against the upper class boundary", label: "Ogive" },
+        { id: "p6", target: "(frequency ÷ total) × 360°", label: "Pie-chart angle" },
+      ],
+    },
+    "mat-stat-standard-deviation": {
+      title: "Standard Deviation Steps Match",
+      subtitle: "Drag each step name onto what that step does.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "add the values and divide by how many there are", label: "Mean" },
+        { id: "p2", target: "value minus the mean", label: "Deviation" },
+        { id: "p3", target: "the deviation multiplied by itself", label: "Squared deviation" },
+        { id: "p4", target: "the mean of the squared deviations", label: "Variance" },
+        { id: "p5", target: "the square root of the variance", label: "Standard deviation" },
+        { id: "p6", target: "highest value minus lowest value", label: "Range" },
+      ],
+    },
+    "mat-stat-statistical-inference": {
+      title: "Reading a Sample Match",
+      subtitle: "Drag each inference term onto the description that defines it.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "a conclusion about a population drawn from a sample", label: "Inference" },
+        { id: "p2", target: "a statement about a value not yet measured", label: "Prediction" },
+        { id: "p3", target: "two samples placed side by side", label: "Comparison" },
+        { id: "p4", target: "chosen so the sample mirrors the population", label: "Representative sample" },
+        { id: "p5", target: "a more reliable estimate", label: "Larger sample" },
+        { id: "p6", target: "how much a repeated sample would agree", label: "Reliability" },
+      ],
+    },
   },
   "english-a": {
     // Per-lesson labs for the English A syllabus-gap lessons. The 10 older
