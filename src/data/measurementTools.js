@@ -15,8 +15,12 @@
 //     by perimeter-area and every string in VOLUME_COPY by volume-capacity; every
 //     generated worked step is composed only of those taught strings plus
 //     numbers, so nothing untaught can reach the screen.
-//   * tools/check-show-your-work.mjs    re-derives every worked step, so the
-//     arithmetic the student reads is the arithmetic the tool performs.
+//     A14 (same file) re-derives every worked step independently — rectangle,
+//     circle, prism and cylinder — so the arithmetic the student reads is the
+//     arithmetic the tool performs. (This citation used to name
+//     tools/check-show-your-work.mjs, which does not contain that check; it is
+//     A14 here. Corrected 2026-11-08 — a comment naming a check that does not
+//     exist is the same defect class as the one that hid the lab reveal bug.)
 //
 // This file is deliberately plain JavaScript: no React, no CSS, no imports. The
 // components render it; the harnesses import it directly.

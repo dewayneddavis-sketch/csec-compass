@@ -5,16 +5,30 @@
 // the mistake becomes the lesson. The assessment tabs (Knowledge Check, Extra
 // Practice, Mock Exam) deliberately do the opposite — they grade silently.
 //
-// This file is the content half: `mathLabWorkings` holds the numbered steps for
-// every answer in the Mathematics lab sets (keyed by the lab experiment type and
-// the item id used in src/components/DragDropLabel.jsx). The correct ANSWER
-// itself is read from the lab set, so there is only one source of truth for it;
-// `tools/check-math-working.mjs` verifies every item has steps and that the last
-// step actually states that item's answer.
+// This file is the content half, and there are TWO tables because Mathematics
+// has two kinds of lab:
+//
+//   * `mathLabWorkings` (below) — the nine ACTIVITY-TYPE lab sets, keyed by
+//     experiment type then item id. These lessons do not own a set of their own.
+//   * `mathLessonWorkings` (src/data/mathLessonWorkings.js) — the 32 lessons
+//     that DO own a set in `lessonSets.mathematics`, keyed by LESSON id then
+//     item id. A type key cannot express them: their item ids (p1…p6) are only
+//     unique inside their own set.
+//
+// `getLabWorking()` picks the table by ownership — a lesson with its own set
+// reads that table and NEVER falls through to the type table, so one lesson can
+// never show another lesson's method. `labReveal()` is the rule the component
+// calls: reveal the correct ANSWER always, with the working when there is one.
+// The correct answer itself is read from the lab set, so there is one source of
+// truth for it. `tools/check-math-working.mjs` drives both functions and proves
+// the structure and the answer — never that the mathematics is correct.
 //
 // `solveBalanceMethod` is the other half: the balance-scale lab builds an
 // equation from whatever the student drops on the pans, so its working is
 // computed from their own setup rather than stored.
+
+import { lessonSets } from "../components/lessonSets.js";
+import { mathLessonWorkings } from "./mathLessonWorkings.js";
 
 export const mathLabWorkings = {
   // ---- Operations on Real Numbers (BODMAS) --------------------------------
@@ -94,11 +108,58 @@ export const mathLabWorkings = {
   },
 };
 
-// Worked steps for one lab item, or null when the lab set has none.
-export function getLabWorking(subjectId, experimentType, itemId) {
-  if (subjectId !== "mathematics" || !experimentType || !itemId) return null;
-  const steps = mathLabWorkings[experimentType]?.[itemId];
+// Does this lesson own its own lab set? Read from the shipped table, never from
+// a copy: `lessonSets.mathematics` is the same object the Play tab resolves, and
+// it imports nothing, so there is no cycle back to this module.
+function ownsLabSet(lessonId) {
+  return !!(lessonId && lessonSets.mathematics && lessonSets.mathematics[lessonId]);
+}
+
+function stepsAt(table, key, itemId) {
+  const steps = table?.[key]?.[itemId];
   return Array.isArray(steps) && steps.length > 0 ? steps : null;
+}
+
+// Worked steps for one lab item, or null.
+//
+// `lessonId` is an APPENDED 4th argument (optional) so the three-argument call
+// that tools/check-show-your-work.mjs makes — the independent witness that the
+// type table still works — keeps its exact meaning: with no lessonId this is the
+// type-level lookup, unchanged.
+//
+// With a lessonId that owns a set, the per-lesson table is the ONLY table
+// consulted. If it has no working for that item the answer is null — it must
+// never fall through to `mathLabWorkings`, which would show a different
+// lesson's method for an item id that merely happens to collide (p1 exists in
+// many sets; the eight `interactive-quiz` lessons sit on a type that IS keyed).
+export function getLabWorking(subjectId, experimentType, itemId, lessonId) {
+  if (subjectId !== "mathematics" || !experimentType || !itemId) return null;
+  if (ownsLabSet(lessonId)) return stepsAt(mathLessonWorkings, lessonId, itemId);
+  return stepsAt(mathLabWorkings, experimentType, itemId);
+}
+
+// The reveal is Mathematics-only (lead ruling 2026-11-08). Widening it changes
+// the Play tab of every other subject; a one-line widening later is a separate
+// owner decision, and this Set is named and harness-pinned so it cannot happen
+// by accident.
+export const REVEAL_SUBJECTS = new Set(["mathematics"]);
+
+// The one place the "always show the correct answer" rule exists.
+//
+// Returns { answer, steps } — or null when there is nothing to reveal:
+//   * a subject outside REVEAL_SUBJECTS,
+//   * a blank / null answer (nothing was resolvable for the dropped item).
+//
+// An item with no authored working still returns the answer, with `steps: []`.
+// That is the point: a wrong drop must teach the answer even before the backfill
+// has written that lesson's method. `steps` is never invented — when there is no
+// authored working it is exactly an empty array, never a placeholder.
+export function labReveal({ subjectId, experimentType, itemId, lessonId, answer } = {}) {
+  if (!REVEAL_SUBJECTS.has(subjectId)) return null;
+  if (answer === null || answer === undefined) return null;
+  if (String(answer).trim() === "") return null;
+  const steps = getLabWorking(subjectId, experimentType, itemId, lessonId);
+  return { answer, steps: steps || [] };
 }
 
 // ---------------------------------------------------------------------------

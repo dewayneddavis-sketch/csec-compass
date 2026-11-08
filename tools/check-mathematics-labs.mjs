@@ -50,7 +50,7 @@
 // Usage:
 //   node tools/check-mathematics-labs.mjs                     # the real tree
 //   node tools/check-mathematics-labs.mjs --selftest           # synthetic fixture only
-//   node tools/check-mathematics-labs.mjs --red-control       # + the 17 red controls
+//   node tools/check-mathematics-labs.mjs --red-control       # + the 20 red controls
 //   node tools/check-mathematics-labs.mjs --red-controls-all  # alias of --red-control
 //
 // Run it with the rest before any PR that touches Mathematics labs, routing or
@@ -707,12 +707,90 @@ section("1. the Mathematics lab partition");
 }
 
 // ---------------------------------------------------------------------------
-// --red-control / --red-controls-all: 17 controls, all on doctored INPUTS.
-// Each must produce a problem whose message matches a named regex; then the
-// caller is proved green on the untouched real tree.
+// A18. THE ROUTING SPLIT IS PINNED (gate of #222).
+//
+// PR #222 stopped area-builder and volume-filler rendering the Equation Balance
+// Scale by giving them their own tools, and split the one MATH_BALANCE_TYPES set
+// into three. The gate then proved that putting `area-builder` BACK into
+// MATH_BALANCE_TYPES — so perimeter-area renders the balance scale again — left
+// both existing harnesses GREEN. A fix that can be reverted without a single
+// failure is not guarded, so this pins:
+//   * the exact contents of the three sets,
+//   * their pairwise disjointness (a type routed to two tools is ambiguous, and
+//     the router's branch order would silently decide which one wins),
+//   * the router's own wiring: each set must reach ITS component, or a set can
+//     exist, be correct, and still never be consulted.
+//
+// Honest note: with the contents pinned exactly, the disjointness check can
+// never fire on its own today — two sets cannot both equal their expected
+// single-member contents and overlap. It is kept because it is the readable
+// statement of the rule, and it is what still holds if the exact-contents pin is
+// ever relaxed to "these types, in some order".
+// ---------------------------------------------------------------------------
+const ROUTING_EXPECTED = {
+  MATH_BALANCE_TYPES: ["balance-scale"],
+  MATH_AREA_TYPES: ["area-builder"],
+  MATH_VOLUME_TYPES: ["volume-filler"],
+};
+const ROUTING_COMPONENT = {
+  MATH_BALANCE_TYPES: "<BalanceScale",
+  MATH_AREA_TYPES: "<AreaBuilder",
+  MATH_VOLUME_TYPES: "<VolumeFiller",
+};
+
+function setLiteralIn(src, name) {
+  const at = src.indexOf(`const ${name} = new Set([`);
+  if (at === -1) return null;
+  const end = src.indexOf("]);", at);
+  if (end === -1) return null;
+  return [...src.slice(at, end).matchAll(/"([a-z0-9-]+)"/g)].map((m) => m[1]);
+}
+
+function routingSplitProblems(src) {
+  const problems = [];
+  const found = {};
+  for (const [name, expected] of Object.entries(ROUTING_EXPECTED)) {
+    const got = setLiteralIn(src, name);
+    if (!got) {
+      problems.push(`A18: ${name} is not declared in src/components/ExperimentSandbox.jsx`);
+      continue;
+    }
+    found[name] = got;
+    if (got.join(",") !== expected.join(",")) {
+      problems.push(`A18: ${name} is [${got.join(", ")}] — expected exactly [${expected.join(", ")}]`);
+    }
+    if (!src.includes(`if (${name}.has(t)) return ${ROUTING_COMPONENT[name]}`)) {
+      problems.push(`A18: ${name} is not routed to ${ROUTING_COMPONENT[name]} — the set exists but never reaches its tool`);
+    }
+  }
+  const names = Object.keys(found);
+  for (let i = 0; i < names.length; i += 1) {
+    for (let j = i + 1; j < names.length; j += 1) {
+      const shared = found[names[i]].filter((t) => found[names[j]].includes(t));
+      if (shared.length > 0) {
+        problems.push(`A18: ${names[i]} and ${names[j]} both claim [${shared.join(", ")}] — one type, two tools`);
+      }
+    }
+  }
+  return problems;
+}
+
+section("2. routing split: balance / area / volume are three separate tools");
+{
+  const splitProblems = routingSplitProblems(sandboxSrc);
+  if (splitProblems.length === 0) pass += 1;
+  else { fail += splitProblems.length; for (const p of splitProblems) console.log(`FAIL: ${p}`); }
+  console.log(`    balance [${(setLiteralIn(sandboxSrc, "MATH_BALANCE_TYPES") || []).join(", ")}] · area [${(setLiteralIn(sandboxSrc, "MATH_AREA_TYPES") || []).join(", ")}] · volume [${(setLiteralIn(sandboxSrc, "MATH_VOLUME_TYPES") || []).join(", ")}]`);
+}
+
+// ---------------------------------------------------------------------------
+// --red-control / --red-controls-all: 20 controls. R1–R17 doctor the INPUT to
+// labProblems(); R18–R20 doctor the routing SOURCE text for A18. Each must
+// produce a problem whose message matches a named regex; then the caller is
+// proved green on the untouched real tree.
 // ---------------------------------------------------------------------------
 if (RED_CONTROL) {
-  section("2. red controls — every assertion is proved to bite");
+  section("3. red controls — every assertion is proved to bite");
   const results = [];
   const red = (name, why, expect, mutate) => {
     const input = cloneReal();
@@ -824,10 +902,37 @@ if (RED_CONTROL) {
       };
     });
 
+  // --- A18: the routing split (source-text controls, not input clones) ------
+  // R18 is the exact reversion the #222 gate performed: area-builder back in
+  // MATH_BALANCE_TYPES, so perimeter-area renders the balance scale again. On
+  // the pre-A18 tree this left every harness green.
+  const redSrc = (name, why, expect, mutate) => {
+    const problems = routingSplitProblems(mutate(sandboxSrc));
+    const missed = expect.filter((re) => !problems.some((p) => re.test(p)));
+    const caught = missed.length === 0;
+    results.push({ name, why, caught, missed, problems });
+    const shown = problems.find((p) => expect.some((re) => re.test(p))) || problems[0] || "(no problem at all)";
+    console.log(`  ${caught ? "caught  " : "MISSED  "} ${name} — ${why}`);
+    console.log(`           ${shown}`);
+    if (!caught) for (const re of missed) console.log(`           expected a problem matching ${re} and got none`);
+  };
+  redSrc("R18", "area-builder put back into MATH_BALANCE_TYPES -> A18 (the #222 reversion)",
+    [/^A18: MATH_BALANCE_TYPES is \[balance-scale, area-builder\]/,
+     /^A18: MATH_BALANCE_TYPES and MATH_AREA_TYPES both claim \[area-builder\]/],
+    (src) => src.replace('const MATH_BALANCE_TYPES = new Set(["balance-scale"]);',
+      'const MATH_BALANCE_TYPES = new Set(["balance-scale", "area-builder"]);'));
+  redSrc("R19", "the area set kept but routed to the balance scale -> A18 wiring",
+    [/^A18: MATH_AREA_TYPES is not routed to <AreaBuilder/],
+    (src) => src.replace("if (MATH_AREA_TYPES.has(t)) return <AreaBuilder />;",
+      "if (MATH_AREA_TYPES.has(t)) return <BalanceScale subjectId=\"mathematics\" experimentType={t} />;"));
+  redSrc("R20", "a whole set deleted -> A18 names the missing declaration",
+    [/^A18: MATH_VOLUME_TYPES is not declared in src\/components\/ExperimentSandbox\.jsx/],
+    (src) => src.replace('const MATH_VOLUME_TYPES = new Set(["volume-filler"]);', ""));
+
   const caught = results.filter((r) => r.caught).length;
   // The caller is green on the untouched real tree, so the controls above were
   // exercised by a working caller and not by an already-broken one.
-  const stillGreen = labProblems(REAL).length === 0;
+  const stillGreen = labProblems(REAL).length === 0 && routingSplitProblems(sandboxSrc).length === 0;
   console.log(`\n  caller green on the untouched real tree: ${stillGreen ? "yes" : "NO"}`);
   console.log(`RED CONTROLS: ${caught}/${results.length} caught`);
   if (!stillGreen) { fail += 1; console.log("FAIL: the caller is not green on the real tree"); }
