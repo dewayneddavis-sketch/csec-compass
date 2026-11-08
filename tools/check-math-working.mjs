@@ -77,13 +77,12 @@ const section = (t) => console.log(`\n== ${t}`);
 // Grouped by the lesson's OWN module in content/mathematics/modules.json —
 // measured, not assumed (the six backfill slices of the lead's ruling, 181 items).
 const PENDING = [
-  // slice A — consumer-arithmetic: 6 sets, 35 items
-  "profit-loss-and-discounts",
-  "simple-and-compound-interest",
-  "hire-purchase-and-instalments",
-  "taxes-and-utility-bills",
-  "exchange-rates-and-currency",
-  "insurance-and-budgeting",
+  // slice A — consumer-arithmetic: 6 sets, 35 items — DONE 2026-11-08, authored
+  // in src/data/mathLessonWorkings.js (profit-loss-and-discounts ·
+  // simple-and-compound-interest · hire-purchase-and-instalments ·
+  // taxes-and-utility-bills · exchange-rates-and-currency ·
+  // insurance-and-budgeting). Emptying a slice out of this list is part of the
+  // same PR that authors it (A3), which is why these six are gone from here.
   // slice B — sets: 6 sets, 31 items
   "set-notation",
   "subsets-and-cardinality",
@@ -240,17 +239,26 @@ function treeEnv({ workingSrc, workingsSrc } = {}) {
 //
 // Why derived and not bumped: a literal has to be re-typed by every slice that
 // adds a set, so it degenerates into a number the author of the PR copies out of
-// the failure message — a pin that is updated rather than a rule that bites. It
-// is NOT loosened: the count is enumerated here INDEPENDENTLY of itemsOf(), so a
-// set whose items itemsOf() cannot enumerate still makes A8's walk short of this
-// number. What a set DISAPPEARING used to prove here is proved by A2 (every live
-// set must be in PENDING ∪ authored, and a PENDING key that is not live fails),
-// so nothing this assertion used to catch has been given up.
+// the failure message — a pin that is updated rather than a rule that bites.
+//
+// GENUINELY INDEPENDENT OF itemsOf() (fixed 2026-11-08, backfill slice A). The
+// first version of this function walked the same `kind` → `pairs`/`items` shape
+// that itemsOf() walks, so it was NOT independent of it and its comment was
+// false: a set with an unenumerable shape (kind "matching" instead of "match",
+// or a sort-shaped set carrying `pairs`) contributed 0 to BOTH counts, the walk
+// and the expectation agreed at a smaller number, and A8 stayed green. That is
+// exactly the defect class this file exists to catch, so it is now counted from
+// the RAW arrays whatever `kind` says, and each live set is floored at one item
+// so a set that contributes nothing cannot hide inside the other sets' total.
+// Red controls R22 (unenumerable shape) and R23 (a set with no items at all)
+// prove both halves bite.
 function liveItemCount(sets) {
   let n = 0;
   for (const set of Object.values(sets || {})) {
-    if (set.kind === "match") n += (set.pairs || []).length;
-    else if (set.kind === "sort") n += (set.items || []).length;
+    if (!set) continue;
+    const pairs = Array.isArray(set.pairs) ? set.pairs.length : 0;
+    const items = Array.isArray(set.items) ? set.items.length : 0;
+    n += Math.max(1, pairs + items);
   }
   return n;
 }
@@ -325,6 +333,23 @@ function revealProblems(env) {
   const both = authoredIds.filter((k) => pending.includes(k));
   if (both.length > 0) {
     problems.push(`A3: ${both.length} lesson(s) are both authored and PENDING: [${both.join(", ")}] — empty the lesson out of PENDING in the same PR that authors it`);
+  }
+
+  // ---- A2b: a set is authored WHOLE, never half -----------------------------
+  // A2 is SET-granular: it only asks whether a lesson appears in one of the two
+  // lists, so a set with one authored item and five blank ones passed it. Every
+  // backfill slice authors whole sets, so a half-finished set must not pass —
+  // the moment a lesson has ANY authored entry, every item of its own set must
+  // have one. Added 2026-11-08 (backfill slice A), red control R24.
+  for (const [lessonId, items] of Object.entries(workings || {})) {
+    const set = (sets || {})[lessonId];
+    if (!set || !items || typeof items !== "object" || Array.isArray(items)) continue; // A1 owns those
+    const ids = itemsOf(set).map((i) => i.id);
+    if (ids.length === 0) continue; // A8's count is what catches an unenumerable set
+    const missing = ids.filter((id) => !Object.prototype.hasOwnProperty.call(items, id));
+    if (missing.length > 0) {
+      problems.push(`A2b: mathLessonWorkings.${lessonId}: ${missing.length} of ${ids.length} item(s) have no working — [${missing.join(", ")}] — a set is authored whole, never half`);
+    }
   }
 
   // ---- A4: the last step states THAT item's answer --------------------------
@@ -420,7 +445,7 @@ function revealProblems(env) {
     problems.push("A7: tools/check-show-your-work.mjs no longer makes the 3-argument call — the independent witness that the type table works is gone");
   }
 
-  // ---- A8: ANSWER-ALWAYS — all 181 per-lesson items reveal their answer -----
+  // ---- A8: ANSWER-ALWAYS — all 205 per-lesson items reveal their answer -----
   let revealed = 0;
   for (const lessonId of liveIds) {
     const type = env.lessonTypes.get(lessonId);
@@ -614,6 +639,19 @@ if (SELFTEST) {
   const uncovered = { ...fixture, sets: { ...fixture.sets, "set-notation": lessonSets.mathematics["set-notation"] } };
   ok(revealProblems(uncovered).some((p) => /^A2: 1 live per-lesson set\(s\) are neither authored nor in PENDING: \[set-notation\]/.test(p)),
     "selftest: an unaccounted live set fails A2");
+  // (5) a HALF-authored set is caught (A2b, added 2026-11-08)
+  const half = { ...fixture, workings: { [FX_LESSON]: { [fxItems[0].id]: fxWorkings[FX_LESSON][fxItems[0].id] } } };
+  const halfProblems = revealProblems(half);
+  ok(halfProblems.some((p) => new RegExp(`^A2b: mathLessonWorkings\\.${FX_LESSON}: ${fxItems.length - 1} of ${fxItems.length} item\\(s\\) have no working`).test(p)),
+    `selftest: a set with one item authored and the rest blank fails A2b (${halfProblems[0] || "no problem"})`);
+  // (6) the item count does not share itemsOf()'s kind→pairs/items shape
+  ok(liveItemCount({ a: { kind: "matching", pairs: [{}, {}] } }) === 2,
+    "selftest: liveItemCount counts a set's pairs whatever `kind` says");
+  ok(liveItemCount({ a: { kind: "match", pairs: [] } }) === 1,
+    "selftest: liveItemCount floors a set at one item, so an empty set cannot hide");
+  const unenumerable = { ...fixture, sets: { [FX_LESSON]: { ...fxSet, kind: "matching" } } };
+  ok(revealProblems(unenumerable).some((p) => /^A8: walked 0 per-lesson items/.test(p)),
+    "selftest: a set whose shape itemsOf() cannot enumerate fails A8");
 
   console.log(`\ncheck-math-working (selftest): ${pass} passed, ${fail} failed`);
   for (const dir of tmpDirs) fs.rmSync(dir, { recursive: true, force: true });
@@ -676,10 +714,21 @@ if (RED_CONTROL) {
     [/^A2: PENDING ∪ authored names 1 key\(s\) that are not live per-lesson sets: \[mat-geo-bearings\]/],
     async () => ({ ...(await realEnv()), pending: [...PENDING, "mat-geo-bearings"] }));
   await red("R5", "a lesson authored but left in PENDING -> A3",
-    [/^A3: 1 lesson\(s\) are both authored and PENDING: \[profit-loss-and-discounts\]/],
+    [/^A3: 1 lesson\(s\) are both authored and PENDING: \[venn-diagrams\]/],
     async () => {
-      const env = await treeEnv({ workingsSrc: 'export const mathLessonWorkings = { "profit-loss-and-discounts": { p1: ["a", "b"] } };\n' });
-      return env; // profit-loss-and-discounts is still in PENDING
+      // A lesson STILL in PENDING (venn-diagrams), authored in the doctored tree.
+      const first = itemsOf(lessonSets.mathematics["venn-diagrams"])[0].id;
+      return treeEnv({ workingsSrc: `export const mathLessonWorkings = { "venn-diagrams": { ${first}: ["a", "b"] } };\n` });
+    });
+
+  // A2b — item granularity (added 2026-11-08, backfill slice A). A2 is set-level,
+  // so this is the only control that proves a HALF-authored set cannot pass.
+  await red("R24", "a set with one item authored and the rest blank -> A2b",
+    [/^A2b: mathLessonWorkings\.profit-loss-and-discounts: 4 of 5 item\(s\) have no working — \[p2, p3, p4, p5\]/],
+    async () => {
+      const env = await realEnv();
+      const full = env.workings["profit-loss-and-discounts"];
+      return { ...env, workings: { ...env.workings, "profit-loss-and-discounts": { p1: full.p1 } } };
     });
 
   // A4 (including ruling 3's numeric token boundary)
@@ -690,11 +739,15 @@ if (RED_CONTROL) {
       return env;
     });
   await red("R7", "a numeric answer that only appears inside a longer number -> A4 (token boundary)",
-    [/^A4: mathLessonWorkings\.profit-loss-and-discounts\.p1:/],
+    [/^A4: mathLessonWorkings\.set-notation\.p1:/],
     async () => {
-      // p1's real answer, glued into a longer number: "= 1<answer>".
-      const answer = itemsOf(lessonSets.mathematics["profit-loss-and-discounts"]).find((i) => ITEM_ANSWER_NUMERIC.test(String(i.answer)))?.answer;
-      const src = `export const mathLessonWorkings = { "profit-loss-and-discounts": { p1: ["Read it", "= 1${answer}"] } };\n`;
+      // set-notation p1's real answer is the purely numeric "4"; glued into a
+      // longer number ("= 14") it must NOT count as stating the answer. This
+      // control used to pick its answer from profit-loss-and-discounts, whose
+      // answers are all phrases ("20% profit"), so it silently fell through to
+      // "1undefined" and proved nothing about the boundary (fixed 2026-11-08).
+      const answer = itemsOf(lessonSets.mathematics["set-notation"]).find((i) => ITEM_ANSWER_NUMERIC.test(String(i.answer)))?.answer;
+      const src = `export const mathLessonWorkings = { "set-notation": { p1: ["Read it", "= 1${answer}"] } };\n`;
       return treeEnv({ workingsSrc: src });
     });
 
@@ -746,12 +799,14 @@ if (RED_CONTROL) {
     [/^A7: trig-circle\/t1: the 3-argument lookup returned null/],
     () => treeEnv({ workingSrc: workSrc.replace('  "trig-circle": {', '  "trig-circle-retired": {') }));
 
-  // A8 / A9 — the two rules this PR exists for.
-  await red("R11", "the old gate: no working means no reveal -> A8 (all 181)",
-    [/^A8: profit-loss-and-discounts\/p1: labReveal returned null/],
+  // A8 / A9 — the two rules this PR exists for. Both use set-notation, which is
+  // still PENDING (unauthored): profit-loss-and-discounts was the example until
+  // backfill slice A authored it, so the control moved rather than the rule.
+  await red("R11", "the old gate: no working means no reveal -> A8 (all 205)",
+    [/^A8: set-notation\/p1: labReveal returned null/],
     () => treeEnv({ workingSrc: workSrc.replace("  return { answer, steps: steps || [] };", "  return steps ? { answer, steps } : null;") }));
   await red("R12", "a placeholder step invented when none is authored -> A9",
-    [/^A9: profit-loss-and-discounts\/p1: no working is authored, so steps must be exactly \[\]/],
+    [/^A9: set-notation\/p1: no working is authored, so steps must be exactly \[\]/],
     () => treeEnv({ workingSrc: workSrc.replace("  return { answer, steps: steps || [] };", '  return { answer, steps: steps || ["work it out"] };') }));
 
   // A10 / A11
@@ -792,6 +847,35 @@ if (RED_CONTROL) {
   await red("R21", "a type-level block edited -> A16 (byte pin)",
     [/^A16: the subjectTypeSets mathematics block changed \(md5 /],
     async () => ({ ...(await realEnv()), ddSource: ddSource.replace('      title: "Find the Hypotenuse",', '      title: "Find the Hypotenuse!",') }));
+
+  // A8's independent count — the two halves of the 2026-11-08 fix. Before it,
+  // liveItemCount() walked the same kind→pairs/items shape as itemsOf(), so a
+  // set it could not enumerate made BOTH numbers smaller by the same amount and
+  // A8 stayed green (this is the gate's RC8, which the old literal 181 caught).
+  const VENN_ITEMS = (lessonSets.mathematics["venn-diagrams"].pairs || []).length
+    + (lessonSets.mathematics["venn-diagrams"].items || []).length;
+  const ALL_ITEMS = liveItemCount(lessonSets.mathematics);
+  await red("R22", "a PENDING-only set whose shape itemsOf() cannot enumerate -> A8 (count no longer shares its shape)",
+    [new RegExp(`^A8: walked ${ALL_ITEMS - VENN_ITEMS} per-lesson items — expected ${ALL_ITEMS}`)],
+    async () => {
+      const env = await realEnv();
+      const real = env.sets["venn-diagrams"];
+      // kind "matching" is not a shape itemsOf() knows, but the pairs are still
+      // there — the independent count must still see them.
+      return { ...env, sets: { ...env.sets, "venn-diagrams": { ...real, kind: "matching" } } };
+    });
+  await red("R23", "a live set with no items at all -> A8 (each set floors at one item)",
+    [new RegExp(`^A8: walked ${ALL_ITEMS - VENN_ITEMS} per-lesson items — expected ${ALL_ITEMS - VENN_ITEMS + 1}`)],
+    async () => {
+      const env = await realEnv();
+      const real = env.sets["venn-diagrams"];
+      const doctored = { ...env.sets, "venn-diagrams": { ...real, kind: "match", pairs: [] } };
+      // expectedItems is recomputed from the doctored sets on purpose: this
+      // control is the tree where a set lost every item, so the expectation is
+      // the one that tree would derive — and the floor makes it 1, not 0, so
+      // the walk comes up short by exactly one and A8 fires.
+      return { ...env, sets: doctored, expectedItems: liveItemCount(doctored) };
+    });
 
   const caught = results.filter((r) => r.caught).length;
   const stillGreen = revealProblems(REAL).length === 0;
