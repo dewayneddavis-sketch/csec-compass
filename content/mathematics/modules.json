@@ -876,14 +876,24 @@
             {
                 "id": "perimeter-area",
                 "title": "Perimeter and Area",
-                "content": "Perimeter is the total distance around the outside of a 2D shape. For a rectangle, it is 2(length + width); for a circle, the perimeter is called the circumference and is calculated using the formula C = 2\u03c0r or C = \u03c0d. Finding the perimeter is essentially like measuring the length of a fence needed to enclose a yard.\n\nArea is the amount of space inside the boundaries of a flat 2D object, measured in square units (like cm\u00b2 or m\u00b2). The area of a rectangle is length \u00d7 width, while the area of a triangle is 1/2 \u00d7 base \u00d7 height. For a circle, the area is \u03c0r\u00b2. More complex shapes can often be broken down into these basic forms to find the total area.\n\nCSEC problems frequently involve compound shapes, such as a rectangle with a semi-circle on top. To solve these, calculate the area of each part separately and then add them together. Accuracy with units and formulas is key. Remember: perimeter is a length (1D), while area is a surface (2D).",
+                "content": "Perimeter is the total distance around the outside of a 2D shape. For a rectangle, it is 2(length + width); for a circle, the perimeter is called the circumference and is calculated using the formula C = 2\u03c0r or C = \u03c0d. Finding the perimeter is essentially like measuring the length of a fence needed to enclose a yard.\n\nArea is the amount of space inside the boundaries of a flat 2D object, measured in square units (like cm\u00b2 or m\u00b2). The area of a rectangle is length \u00d7 width, while the area of a triangle is 1/2 \u00d7 base \u00d7 height. For a circle, the area is \u03c0r\u00b2. More complex shapes can often be broken down into these basic forms to find the total area.\n\nCSEC problems frequently involve compound shapes, such as a rectangle with a semi-circle on top. To solve these, calculate the area of each part separately and then add them together. Accuracy with units and formulas is key. Remember: perimeter is a length (1D), while area is a surface (2D).\n\nAn arc is a part of a circle\u2019s circumference, and a sector is the region enclosed by two radii and an arc. The arc is the same fraction of the whole circle as the angle at the centre is of 360\u00b0, so arc length = \u03b8/360 \u00d7 2\u03c0r. The perimeter of a sector is that arc plus the two radii: sector perimeter = \u03b8/360 \u00d7 2\u03c0r + 2r.\n\nWorked method \u2014 arc length and sector perimeter for a sector with radius r = 9 cm and angle \u03b8 = 80\u00b0, using \u03c0 \u2248 3.142. Step 1, the fraction of the circle: \u03b8/360 = 80/360 = 2/9. Step 2, the whole circumference: 2\u03c0r = 2 \u00d7 3.142 \u00d7 9 = 56.56 cm. Step 3, the arc: 2/9 \u00d7 56.56 = 12.57 cm. Step 4, the perimeter: add the two radii, 12.57 + 9 + 9 = 30.57 cm, so the sector perimeter is about 30.6 cm.\n\nParallelograms and trapeziums are handled by cutting them into rectangles and triangles. The area of a parallelogram = base \u00d7 perpendicular height, where the height is measured perpendicular to the base and not along the slant side. The area of a trapezium = 1/2 \u00d7 (a + b) \u00d7 h, where a and b are the two parallel sides and h is the perpendicular distance between them.\n\nWorked method \u2014 area of a trapezium with parallel sides a = 6 cm and b = 10 cm and height h = 4 cm. Add the parallel sides: a + b = 6 + 10 = 16 cm. Halve that sum: 1/2 \u00d7 16 = 8 cm. Multiply by the height: 8 \u00d7 4 = 32 cm\u00b2, so the area of the trapezium is 32 cm\u00b2.\n\nTo estimate the area of an irregular shape, split it into rectangles and triangles, or draw it on squared paper and count the squares it covers. For a circle, estimate with area = \u03c0r\u00b2 and \u03c0 \u2248 3.142 before rounding. An estimate is worth writing down even when an exact formula exists, because it shows whether the exact answer is the right size.\n\nThe area of a sector is the same fraction of the whole circle as the arc: sector area = \u03b8/360 \u00d7 \u03c0r\u00b2. A segment is the region between a chord and its arc, and its area is the sector minus the triangle formed by the two radii and the chord: segment area = \u03b8/360 \u00d7 \u03c0r\u00b2 \u2212 1/2 \u00d7 r\u00b2 \u00d7 sin \u03b8. A triangle\u2019s area is 1/2 \u00d7 base \u00d7 perpendicular height, or 1/2 \u00d7 a \u00d7 b \u00d7 sin C when two sides and the angle between them are known.\n\nWorked method \u2014 area of a segment with radius r = 6 cm and angle \u03b8 = 60\u00b0. Step 1, the sector: \u03b8/360 \u00d7 \u03c0r\u00b2 = 60/360 \u00d7 3.142 \u00d7 36 = 18.85 cm\u00b2. Step 2, the triangle: 1/2 \u00d7 r\u00b2 \u00d7 sin \u03b8 = 1/2 \u00d7 36 \u00d7 0.8660 = 15.59 cm\u00b2. Step 3, subtract: 18.85 \u2212 15.59 = 3.26 cm\u00b2, so the segment area is about 3.26 cm\u00b2.\n\nKeep the units straight to the end: an arc, a perimeter and a radius are lengths in cm, while a sector, a segment, a trapezium and a parallelogram are areas in cm\u00b2.",
                 "objectives": [
                     "Calculate perimeter and area of basic shapes",
-                    "Solve problems involving compound shapes"
+                    "Solve problems involving compound shapes",
+                    "Calculate the arc length and the perimeter of a sector (Arc Length and Sector Perimeter)",
+                    "Calculate the area of a parallelogram and of a trapezium (Estimating and Calculating Area of Polygons and Circles)",
+                    "Estimate the area of an irregular shape or of a circle (Estimating and Calculating Area of Polygons and Circles)",
+                    "Calculate the area of a sector, a triangle and a segment (Area of Sectors, Triangles, and Segments)"
                 ],
                 "concepts": [
                     "Area of rectangle = length x width.",
-                    "Area of circle = \u03c0r^2."
+                    "Area of circle = \u03c0r^2.",
+                    "Arc length = \u03b8/360 \u00d7 2\u03c0r, and sector perimeter = arc length + 2r.",
+                    "Parallelogram area = base \u00d7 perpendicular height.",
+                    "Trapezium area = 1/2 \u00d7 (a + b) \u00d7 h.",
+                    "Sector area = \u03b8/360 \u00d7 \u03c0r\u00b2.",
+                    "Segment area = sector area \u2212 triangle area.",
+                    "Triangle area = 1/2 \u00d7 base \u00d7 height, or 1/2 \u00d7 a \u00d7 b \u00d7 sin C."
                 ],
                 "experiment": {
                     "type": "area-builder",
@@ -908,22 +918,100 @@
             {
                 "id": "si-units-and-conversion",
                 "title": "SI Units, Conversion and Rates",
-                "content": "The International System (SI) uses base units: the metre (m) for length, the kilogram (kg) for mass, the second (s) for time and the ampere (A) for current. Prefixes scale these units \u2014 kilo means 1000, centi means 1/100, milli means 1/1000 and micro means 1/1,000,000 \u2014 so 1 km = 1000 m, 1 cm = 0.01 m and 1 mg = 0.001 g. Because area is measured in square units, 1 m\u00b2 = 100 cm \u00d7 100 cm = 10,000 cm\u00b2; because volume is measured in cubic units, 1 m\u00b3 = 1,000,000 cm\u00b3. Capacity and volume are linked: 1 cm\u00b3 = 1 mL and 1 m\u00b3 = 1000 L.\n\nA rate compares two quantities with different units. Speed is the commonest: speed = distance \u00f7 time, distance = speed \u00d7 time and time = distance \u00f7 speed. To change km/h into m/s, multiply by 1000/3600 = 5/18; to change m/s into km/h, multiply by 18/5. A car travelling at 72 km/h covers 72 \u00d7 5/18 = 20 m each second. Density (mass \u00f7 volume), flow rate (litres per minute) and fuel consumption (km per litre) are handled the same way, and the unit of the answer comes from the units you divided.\n\nConversion questions ask you to change one unit to another by multiplying or dividing by a power of ten, and it is worth checking that the answer is sensible: a distance in metres should be much larger than in kilometres. Time needs care because it is not decimal \u2014 1.5 hours is 1 hour 30 minutes, and 2 hours 45 minutes is 2.75 hours, not 2.45 hours. In measurement problems, copy the given values with their units, convert to a single system, then calculate, and state the unit with the final answer.",
+                "content": "The International System (SI) uses base units: the metre (m) for length, the kilogram (kg) for mass, the second (s) for time and the ampere (A) for current. Prefixes scale these units \u2014 kilo means 1000, centi means 1/100, milli means 1/1000 and micro means 1/1,000,000 \u2014 so 1 km = 1000 m, 1 cm = 0.01 m and 1 mg = 0.001 g. Because area is measured in square units, 1 m\u00b2 = 100 cm \u00d7 100 cm = 10,000 cm\u00b2; because volume is measured in cubic units, 1 m\u00b3 = 1,000,000 cm\u00b3. Capacity and volume are linked: 1 cm\u00b3 = 1 mL and 1 m\u00b3 = 1000 L.\n\nA rate compares two quantities with different units. Speed is the commonest: speed = distance \u00f7 time, distance = speed \u00d7 time and time = distance \u00f7 speed. To change km/h into m/s, multiply by 1000/3600 = 5/18; to change m/s into km/h, multiply by 18/5. A car travelling at 72 km/h covers 72 \u00d7 5/18 = 20 m each second. Density (mass \u00f7 volume), flow rate (litres per minute) and fuel consumption (km per litre) are handled the same way, and the unit of the answer comes from the units you divided.\n\nConversion questions ask you to change one unit to another by multiplying or dividing by a power of ten, and it is worth checking that the answer is sensible: a distance in metres should be much larger than in kilometres. Time needs care because it is not decimal \u2014 1.5 hours is 1 hour 30 minutes, and 2 hours 45 minutes is 2.75 hours, not 2.45 hours. In measurement problems, copy the given values with their units, convert to a single system, then calculate, and state the unit with the final answer.\n\nA ratio compares two quantities of the same kind, written with a colon as 45:60 or as the fraction 45/60. Simplifying a ratio means dividing every part by the highest common factor: 45 and 60 share 15, so 45:60 = 3:4. A ratio has no units, because the two quantities cancel, which is why 45 minutes to 60 minutes and 45 km to 60 km simplify the same way.\n\nA rate is a ratio whose two quantities have different units, so a rate keeps its units: 240 km in 3 hours is the rate 80 km/h, and $12 for 4 pens is the rate $3 per pen. A rate is read with the word per, and its unit is the unit of the first quantity divided by the unit of the second.\n\nTwo quantities are in direct proportion when one is a constant multiple of the other, written y = kx: doubling x doubles y. Find k from the pair you are given, then use it. If 5 m of cloth costs $120 then k = 120 \u00f7 5 = 24 dollars per metre, so 8 m costs 8 \u00d7 24 = $192, and k is the unit rate.\n\nTwo quantities are in inverse proportion when their product stays the same, written y = k/x: doubling x halves y. If 4 workers take 12 days, the work is 4 \u00d7 12 = 48 worker-days, so k = 48 and 6 workers take 48 \u00f7 6 = 8 days. The direction of the change is the test: if both quantities rise together the proportion is direct, and if one rises while the other falls it is inverse.\n\nWorked method \u2014 an applied measurement problem. A tank is 1.2 m long, 0.8 m wide and 0.5 m deep and is filled at 15 litres per minute. Step 1, the volume: 1.2 \u00d7 0.8 \u00d7 0.5 = 0.48 m\u00b3. Step 2, convert to the unit the rate uses: 1 m\u00b3 = 1000 L, so 0.48 m\u00b3 = 480 L. Step 3, the time: 480 \u00f7 15 = 32 minutes. Check: 32 \u00d7 15 = 480 L, so the tank takes 32 minutes to fill.\n\nEvery applied measurement question has that same three-step shape: find the measurement, convert it to the unit the rate uses, then divide or multiply by the rate \u2014 and state the unit with the answer.",
                 "objectives": [
                     "Convert between metric units of length, mass, capacity, area and volume",
                     "Use base units and prefixes correctly, including milli, centi and kilo",
                     "Calculate speed, distance and time and convert between km/h and m/s",
-                    "Convert between decimal hours and hours and minutes in a real problem"
+                    "Convert between decimal hours and hours and minutes in a real problem",
+                    "Write a ratio in its simplest form and explain why a ratio has no units (Ratio, Proportion, and Rates)",
+                    "Read a rate with its units and find the unit rate (Ratio, Proportion, and Rates)",
+                    "Solve a direct proportion problem with y = kx (Ratio, Proportion, and Rates)",
+                    "Solve an inverse proportion problem with y = k/x (Ratio, Proportion, and Rates)",
+                    "Work a multi-step applied measurement problem, converting units before calculating (Applied Measurement Problems)"
                 ],
                 "concepts": [
                     "SI base units: metre, kilogram, second, ampere; prefixes scale by powers of ten.",
                     "Area conversions square the length factor; volume conversions cube it.",
                     "1 cm\u00b3 = 1 mL; 1 m\u00b3 = 1000 L.",
-                    "km/h to m/s: multiply by 5/18; m/s to km/h: multiply by 18/5."
+                    "km/h to m/s: multiply by 5/18; m/s to km/h: multiply by 18/5.",
+                    "A ratio compares two quantities of the same kind and has no units; a rate compares different kinds and keeps its units.",
+                    "Direct proportion: y = kx, so doubling x doubles y.",
+                    "Inverse proportion: y = k/x, so doubling x halves y.",
+                    "The unit rate is the constant k in a direct proportion.",
+                    "Convert to the unit the rate uses before dividing, and state the unit with the answer."
                 ],
                 "experiment": {
                     "type": "matching-game",
                     "description": "Unit Conversion Match: match each quantity in one metric unit to its equivalent in another, including an hours-and-minutes conversion."
+                }
+            },
+            {
+                "id": "mat-meas-surface-area-of-solids",
+                "title": "Surface Area of Solids",
+                "content": "Surface area is the total area of every face of a solid, measured in square units such as cm\u00b2 or m\u00b2. Volume says how much space is inside a solid; surface area says how much material it takes to cover the outside. Surface Area of Solids is the method for finding that total from the dimensions you are given, one face at a time.\n\nA net is the solid opened out and laid flat, so a net turns one 3D problem into a set of 2D ones. The net of a cube is six equal squares. The net of a cuboid is six rectangles in three matching pairs: top and bottom, front and back, and the two ends. The net of a triangular prism is two triangles and three rectangles. No picture is needed to use a net \u2014 name each face in words, write down its dimensions, and the sum of the faces is the surface area.\n\nFor a cube with side s, all six faces are squares of area s\u00b2, so surface area = 6 \u00d7 side\u00b2: a cube of side 4 cm has surface area 6 \u00d7 16 = 96 cm\u00b2. For a cuboid with length l, width w and height h, the three different faces are lw, lh and wh and each appears twice, so surface area = 2(lw + lh + wh).\n\nA prism is handled by its two ends and its sides: surface area = 2 \u00d7 area of the base + perimeter of the base \u00d7 length of the prism. A cylinder is the case where the base is a circle, so its two ends are circles of area \u03c0r\u00b2 and its curved side opens out into a rectangle of width 2\u03c0r and height h. That gives the cylinder formula: surface area = 2\u03c0r\u00b2 + 2\u03c0rh.\n\nRead the question for the face that is missing. An open-top tank has no lid, so subtract the top face from the total. A pipe open at both ends has only its curved surface, 2\u03c0rh. Every length must be in the same unit before you square or multiply it, and the answer is always in square units, never in cubic units.\n\nWorked method \u2014 surface area of a cuboid 8 cm by 5 cm by 3 cm. Label the faces: two faces of 8 \u00d7 5 = 40 cm\u00b2, two faces of 8 \u00d7 3 = 24 cm\u00b2 and two faces of 5 \u00d7 3 = 15 cm\u00b2. Add them: 2 \u00d7 40 + 2 \u00d7 24 + 2 \u00d7 15 = 80 + 48 + 30 = 158 cm\u00b2. Check with the formula: 2(lw + lh + wh) = 2(40 + 24 + 15) = 2 \u00d7 79 = 158 cm\u00b2, so the surface area is 158 cm\u00b2.\n\nWorked method \u2014 surface area of a cylinder with radius r = 7 cm and height h = 10 cm, using \u03c0 \u2248 3.142. The two ends: 2\u03c0r\u00b2 = 2 \u00d7 3.142 \u00d7 49 = 307.9 cm\u00b2. The curved surface: 2\u03c0rh = 2 \u00d7 3.142 \u00d7 7 \u00d7 10 = 439.9 cm\u00b2. Add them: 307.9 + 439.9 = 747.8 cm\u00b2, so the surface area is about 748 cm\u00b2.",
+                "objectives": [
+                    "Name each face of a solid and add the face areas to find its surface area (Surface Area of Solids)",
+                    "Unfold a cube, cuboid or prism into a net described face by face (Surface Area of Solids)",
+                    "Use 6 \u00d7 side\u00b2 for a cube and 2(lw + lh + wh) for a cuboid (Surface Area of Solids)",
+                    "Use 2\u03c0r\u00b2 + 2\u03c0rh for the ends and curved surface of a cylinder (Surface Area of Solids)",
+                    "Adjust the total for an open top or an open pipe (Surface Area of Solids)"
+                ],
+                "concepts": [
+                    "Surface area is the total area of every face, measured in square units.",
+                    "A net is the solid opened out flat, so the area of the net is the surface area.",
+                    "Cube: surface area = 6 \u00d7 side\u00b2.",
+                    "Cuboid: surface area = 2(lw + lh + wh).",
+                    "Cylinder: surface area = 2\u03c0r\u00b2 + 2\u03c0rh.",
+                    "An open top or an open pipe leaves one or both faces out of the total."
+                ],
+                "experiment": {
+                    "type": "interactive-quiz",
+                    "description": "Surface Area Match: drag each solid, term or task onto the formula or instruction it belongs to."
+                }
+            },
+            {
+                "id": "mat-meas-measurement-error",
+                "title": "Measurement Error",
+                "content": "No measurement is exact: a ruler reads to the nearest millimetre, a kitchen scale to the nearest 0.1 kg, and the true value stays hidden between the marks. Measurement Error is how a measurement is described once you say how far it could be from the truth \u2014 as an absolute error, a relative error or a percentage error.\n\nAbsolute error is the size of the difference between the measured value and the true value, in the units of the measurement: absolute error = measured value \u2212 true value. The sign is ignored, because a measurement can be too high or too low. If a rod\u2019s true length is 24.8 cm and it is measured as 25 cm, the absolute error is 25 \u2212 24.8 = 0.2 cm.\n\nRelative error compares that difference with the true value, so it has no units: relative error = absolute error \u00f7 true value. For the rod, 0.2 \u00f7 24.8 = 0.0081 to 3 significant figures. Percentage error puts the same comparison in hundredths: percentage error = relative error \u00d7 100, so 0.0081 \u00d7 100 = 0.81% to 2 decimal places.\n\nBounds come from the rounding. A value written to d decimal places could be anything from x \u2212 0.5 \u00d7 10\u207b\u1d48 up to x + 0.5 \u00d7 10\u207b\u1d48, because the true value was rounded to the nearest 10\u207b\u1d48, so the greatest possible error is 0.5 \u00d7 10\u207b\u1d48. A mass recorded as 4.6 kg to 1 d.p. has bounds 4.55 kg to 4.65 kg, because its greatest possible error is 0.5 \u00d7 10\u207b\u00b9 = 0.05 kg. A length recorded as 25 cm to the nearest cm has bounds 24.5 cm to 25.5 cm, because 0.5 \u00d7 10\u2070 = 0.5 cm.\n\nWorked method \u2014 a rod measures 25 cm to the nearest cm and its true length is 24.8 cm. Step 1, the bounds: the greatest possible error is 0.5 \u00d7 10\u2070 = 0.5 cm, so the true length lies between 24.5 cm and 25.5 cm. Step 2, the absolute error: 25 \u2212 24.8 = 0.2 cm. Step 3, the relative error: 0.2 \u00f7 24.8 = 0.0081 to 3 significant figures. Step 4, the percentage error: 0.0081 \u00d7 100 = 0.81%, so the measurement is about 0.81% too high.\n\nTwo traps. The denominator of a relative error is the true value, never the measured value, and a percentage error carries no units. When two measured quantities are combined, their absolute errors add for a sum or a difference, and their percentage errors add for a product or a quotient.",
+                "objectives": [
+                    "Calculate the absolute error of a measurement (Measurement Error)",
+                    "Calculate the relative error and the percentage error (Measurement Error)",
+                    "Find the lower and upper bounds of a value written to d decimal places (Measurement Error)",
+                    "State the greatest possible error of a rounded measurement (Measurement Error)"
+                ],
+                "concepts": [
+                    "Absolute error = measured value \u2212 true value, in the units of the measurement.",
+                    "Relative error = absolute error \u00f7 true value, and it has no units.",
+                    "Percentage error = relative error \u00d7 100.",
+                    "A value rounded to d decimal places lies between x \u2212 0.5 \u00d7 10\u207b\u1d48 and x + 0.5 \u00d7 10\u207b\u1d48.",
+                    "The greatest possible error of a rounded value is 0.5 \u00d7 10\u207b\u1d48."
+                ],
+                "experiment": {
+                    "type": "interactive-quiz",
+                    "description": "Measurement Error Match: drag each error term or measured value onto the calculation or the bounds it gives."
+                }
+            },
+            {
+                "id": "mat-meas-scale-and-scale-drawings",
+                "title": "Scale and Scale Drawings",
+                "content": "A scale drawing is a copy of a real object with every length shrunk by the same factor, so the drawing keeps the shape and changes only the size. Scale and Scale Drawings is about the ratio between the drawing and the real thing, and about moving a length from one to the other without losing the units.\n\nA scale is written as a ratio, drawing : real, and 1:50 is read aloud as one to fifty. A scale of 1:50 means 1 cm on the drawing is 50 cm real, which is 0.5 m. Real length = drawing length \u00d7 scale factor, and drawing length = real length \u00f7 scale factor, so at 1:50 the scale factor is 50 and the units must match before you multiply.\n\nWorked method \u2014 a wall drawn 7 cm at 1:50. Step 1, write the scale as a ratio: drawing : real = 1 : 50. Step 2, multiply the drawing length by the scale factor: 7 \u00d7 50 = 350 cm. Step 3, convert to a sensible unit: 350 cm = 3.5 m, so the real wall is 3.5 m long. Going the other way, a 4 m wall is 400 cm real, and 400 \u00f7 50 = 8 cm on the drawing.\n\nMaps use the same idea with larger numbers. A map scale of 1:25,000 means 1 cm on the map is 250 m, because 25,000 cm = 250 m = 0.25 km. A distance of 6 cm on that map is 6 \u00d7 25,000 = 150,000 cm = 1,500 m = 1.5 km.\n\nAreas need the square of the scale factor, because a length factor is applied twice. At 1:50 the length factor is 50 and the area scale factor is 50\u00b2 = 2500. A room 4 m by 3 m drawn at 1:50 measures 8 cm by 6 cm, an area of 48 cm\u00b2 on the drawing, so the real area is 48 \u00d7 2500 = 120,000 cm\u00b2 = 12 m\u00b2, which agrees with 4 m \u00d7 3 m = 12 m\u00b2.\n\nTwo traps. A scale of 1:50 does not mean the drawing is one fiftieth of a metre; it means every length is one fiftieth of the real length, in whatever unit you use. And a scale never changes an angle: the angles on a scale drawing are the real angles, which is why a drawing to scale can be used to measure an angle that cannot be measured on the object itself.",
+                "objectives": [
+                    "Read a scale written as a ratio such as 1:50 (Scale and Scale Drawings)",
+                    "Convert a drawing length to a real length and back again (Scale and Scale Drawings)",
+                    "Use a map scale such as 1:25,000 to find a real distance (Scale and Scale Drawings)",
+                    "Use the area scale factor to find a real area from a scale drawing (Scale and Scale Drawings)"
+                ],
+                "concepts": [
+                    "A scale is a ratio, drawing : real, written 1:50 and read as one to fifty.",
+                    "1:50 means 1 cm on the drawing is 50 cm real.",
+                    "Real length = drawing length \u00d7 scale factor.",
+                    "Drawing length = real length \u00f7 scale factor.",
+                    "Areas scale by the square of the length factor: 50\u00b2 = 2500 at 1:50."
+                ],
+                "experiment": {
+                    "type": "interactive-quiz",
+                    "description": "Scale Drawing Match: drag each scale, length or area onto the conversion it gives."
                 }
             }
         ]
