@@ -8,13 +8,15 @@ import { lessonSets } from "./lessonSets";
 import { labActivityLabel } from "../data/lessonNames";
 import CircuitBuilder from "./CircuitBuilder";
 import BalanceScale from "./BalanceScale";
+import AreaBuilder from "./AreaBuilder";
+import VolumeFiller from "./VolumeFiller";
 import FlashcardSystem from "./FlashcardSystem";
 import "./ExperimentSandbox.css";
 
 // ---------------------------------------------------------------------------
 // Subject-aware experiment routing.
 //
-// Every experiment resolves to ONE of the 5 interactive components based on
+// Every experiment resolves to ONE of the interactive components based on
 // (subjectId + experimentType) — never by type alone. The UNIVERSAL RULE is:
 // the fallback is ALWAYS FlashcardSystem with that subject's OWN deck. No
 // component whose hardcoded content belongs to a different subject is ever
@@ -29,10 +31,19 @@ const MATH_PARABOLA_TYPES = new Set([
   "graph-plotter",
 ]);
 const MATH_NUMBERLINE_TYPES = new Set(["number-line-plotter"]);
-// Balance/area/volume builders keep their dedicated tool.
-const MATH_BALANCE_TYPES = new Set([
-  "balance-scale", "area-builder", "volume-filler",
-]);
+// The three Mathematics measurement tools, ONE TYPE EACH — the name of the set
+// is the tool the type renders:
+//   balance-scale → <BalanceScale />   (algebraic-expressions: solve for x)
+//   area-builder  → <AreaBuilder />    (perimeter-area: resize, read area/perimeter)
+//   volume-filler → <VolumeFiller />   (volume-capacity: fill, read volume/capacity)
+// Before this change all three types sat in one set and every one of them
+// rendered the Equation Balance Scale, so perimeter-area promised a shape
+// resizer and got weights 1, 2, 3, 5 and x. Splitting the set is what makes the
+// code say what it does; tools/check-play-copy.mjs and
+// tools/check-mathematics-labs.mjs read all three sets by name.
+const MATH_BALANCE_TYPES = new Set(["balance-scale"]);
+const MATH_AREA_TYPES = new Set(["area-builder"]);
+const MATH_VOLUME_TYPES = new Set(["volume-filler"]);
 // Concept lessons → per-lesson DragDropLabel sets (subjectTypeSets.mathematics).
 const MATH_DRAG_TYPES = new Set([
   "interactive-quiz", "visual-converter", "function-machine", "interactive-triangle",
@@ -102,7 +113,7 @@ function resolveInteractive(subjectId, experimentType, lessonId) {
     return flash("physics");
   }
 
-  // ---- mathematics: graphs / balance / per-lesson drag sets
+  // ---- mathematics: graphs / area / volume / balance / per-lesson drag sets
   if (subjectId === "mathematics") {
     // Syllabus-gap lessons (Consumer Arithmetic, Sets and the additions to the
     // existing modules) carry their own topic-matched set, so they resolve by
@@ -115,6 +126,8 @@ function resolveInteractive(subjectId, experimentType, lessonId) {
     if (MATH_LINEAR_TYPES.has(t)) return <GraphingCalculator mode="linear" />;
     if (MATH_PARABOLA_TYPES.has(t)) return <GraphingCalculator mode="parabola" />;
     if (MATH_NUMBERLINE_TYPES.has(t)) return <GraphingCalculator mode="number-line" />;
+    if (MATH_AREA_TYPES.has(t)) return <AreaBuilder />;
+    if (MATH_VOLUME_TYPES.has(t)) return <VolumeFiller />;
     if (MATH_BALANCE_TYPES.has(t)) return <BalanceScale subjectId="mathematics" experimentType={t} />;
     return flash("mathematics");
   }

@@ -37,7 +37,9 @@
 // exempt. Assertion 8 holds LEGACY_SETS ∪ new sets === every live set exactly,
 // so no set can quietly escape the rule and no legacy key can quietly vanish.
 // DO NOT add a key to LEGACY_SETS to silence a failure: a key added there is a
-// set the corpus rule will never check again.
+// set the corpus rule will never check again. Assertion 8d makes that advice
+// enforceable (2026-11-10): the grandfathered set must be exactly the original
+// 24, derived from the live keys, so a new set id added here FAILS the harness.
 //
 // Because Slice 0 adds no sets, the rule is VACUOUS on the real tree, so
 // labProblems() takes `legacySets` as a PARAMETER defaulting to LEGACY_SETS and
@@ -48,7 +50,7 @@
 // Usage:
 //   node tools/check-mathematics-labs.mjs                     # the real tree
 //   node tools/check-mathematics-labs.mjs --selftest           # synthetic fixture only
-//   node tools/check-mathematics-labs.mjs --red-control       # + the 13 red controls
+//   node tools/check-mathematics-labs.mjs --red-control       # + the 17 red controls
 //   node tools/check-mathematics-labs.mjs --red-controls-all  # alias of --red-control
 //
 // Run it with the rest before any PR that touches Mathematics labs, routing or
@@ -58,6 +60,16 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { lessonSets } from "../src/components/lessonSets.js";
+import {
+  AREA_COPY,
+  VOLUME_COPY,
+  MEASUREMENT_TOOL_COPY,
+  MEASUREMENT_TOOL_LESSONS,
+  rectangleWorking,
+  circleWorking,
+  prismWorking,
+  cylinderWorking,
+} from "../src/data/measurementTools.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const read = (p) => fs.readFileSync(path.join(root, p), "utf8");
@@ -94,7 +106,7 @@ const RED_CONTROL = process.argv.includes("--red-control") || process.argv.inclu
 // assertion 8 holds LEGACY_SETS ∪ newSetKeys === Object.keys(sets) exactly, so
 // no set can quietly escape the rule and no legacy key can quietly disappear.
 // DO NOT add a key here to silence a failure. A key added here is a set the
-// corpus rule will never check again.
+// corpus rule will never check again — assertion 8d fails the harness if you do.
 //
 // This list is its own literal on purpose: deriving it from lessonSets.js would
 // make it change silently the moment a Slice-1 set is added.
@@ -134,9 +146,11 @@ const LEGACY_SETS = [
 //   1 lesson  → MATH_LINEAR_TYPES     → <GraphingCalculator mode="linear" />
 //   1 lesson  → MATH_PARABOLA_TYPES   → <GraphingCalculator mode="parabola" />
 //   1 lesson  → MATH_NUMBERLINE_TYPES → <GraphingCalculator mode="number-line" />
-//   3 lessons → MATH_BALANCE_TYPES    → <BalanceScale subjectId="mathematics" … />
-// i.e. 9 drag + 3 graphing + 3 balance = 15. Verified lesson-by-lesson against
-// content/mathematics/modules.json and src/components/ExperimentSandbox.jsx.
+//   1 lesson  → MATH_BALANCE_TYPES    → <BalanceScale subjectId="mathematics" … />
+//   1 lesson  → MATH_AREA_TYPES       → <AreaBuilder />
+//   1 lesson  → MATH_VOLUME_TYPES     → <VolumeFiller />
+// i.e. 9 drag + 3 graphing + 3 measurement = 15. Verified lesson-by-lesson
+// against content/mathematics/modules.json and src/components/ExperimentSandbox.jsx.
 // 39 − 15 = 24.
 // ---------------------------------------------------------------------------
 const TYPE_KEYED = [
@@ -154,10 +168,10 @@ const TYPE_KEYED = [
   "coordinate-geometry",             // graph-linear          → mode="linear"
   "quadratic-equations",             // graph-plotter         → mode="parabola"
   "inequalities",                    // number-line-plotter   → mode="number-line"
-  // --- balance (3) — a set would shadow the BalanceScale
+  // --- the three measurement tools (3) — a set would shadow the tool itself
   "algebraic-expressions",           // balance-scale         → <BalanceScale />
-  "perimeter-area",                  // area-builder
-  "volume-capacity",                 // volume-filler
+  "perimeter-area",                  // area-builder          → <AreaBuilder />
+  "volume-capacity",                 // volume-filler         → <VolumeFiller />
 ];
 
 // The type sets, read out of the routing component rather than retyped. Reading
@@ -177,11 +191,42 @@ const REAL_TYPE_GROUPS = {
     ...typesOf("MATH_PARABOLA_TYPES"),                                        // 1
     ...typesOf("MATH_NUMBERLINE_TYPES"),                                      // 1
   ]),
-  balance: new Set(typesOf("MATH_BALANCE_TYPES")),                            // 3
+  balance: new Set(typesOf("MATH_BALANCE_TYPES")),                            // 1
+  area: new Set(typesOf("MATH_AREA_TYPES")),                                  // 1
+  volume: new Set(typesOf("MATH_VOLUME_TYPES")),                              // 1
 };
 const recognisedOf = (groups) => new Set([
-  ...groups.drag, ...groups.graphing, ...groups.balance,
+  ...groups.drag, ...groups.graphing, ...groups.balance, ...groups.area, ...groups.volume,
 ]);                                                                            // 19 types
+
+// ---------------------------------------------------------------------------
+// ASSERTION 8d's ANCHOR — the original 24 grandfathered sets, DERIVED.
+//
+// The window is not a second hand-typed list (that would be two lists to keep in
+// step, and the copy nobody updates is the one that lets a new set through). It
+// is derived from the id convention the coverage build itself uses: a NEW
+// Mathematics lesson is `mat-<module>-<topic>` (all 8 sets added by Slices 1 and
+// 2 carry that prefix), while the 24 sets that predate the corpus rule carry no
+// such prefix. So the original 24 = every live set key that is not a
+// `mat-`-prefixed coverage id, and `count` pins how many there were.
+//
+// Both anchors must hold: if a slice adds a new set and grandfathers it, the
+// derived window is unchanged and 8d names the intruder; if a slice adds a set
+// under a legacy-style id, the derived window grows past `count` and 8d says so.
+// Either way the harness fails loudly instead of silently skipping the corpus
+// rule for one more set — which is exactly what happened before this assertion
+// (measured 2026-11-07: adding "mat-meas-scale-and-scale-drawings" to
+// LEGACY_SETS still exited 0, with 12 corpus assertions quietly dropped).
+// ---------------------------------------------------------------------------
+const LEGACY_BASE = { count: 24, newLessonId: /^mat-/ };
+
+// The two measurement tools' copy, arithmetic and component sources, for
+// assertions 13 and 14. Read once; a red control substitutes its own.
+const MEASUREMENT_WORKING = { rectangleWorking, circleWorking, prismWorking, cylinderWorking };
+const TOOL_SOURCES = {
+  "area-builder": read("src/components/AreaBuilder.jsx"),
+  "volume-filler": read("src/components/VolumeFiller.jsx"),
+};
 
 // Folding: case, curly quotes/dashes, whitespace. Deliberately generous so a
 // legitimately worded label is not failed on punctuation alone — and
@@ -191,11 +236,49 @@ const fold = (s) => String(s).toLowerCase()
   .replace(/\s+/g, " ").trim();
 const corpusOf = (l) => fold([l.title, l.content, ...(l.objectives || []), ...(l.concepts || [])].join(" \n "));
 
+// ---------------------------------------------------------------------------
+// The two dedicated measurement tools (AreaBuilder, VolumeFiller). Their
+// displayed strings live in src/data/measurementTools.js so that this harness
+// can hold them to the SAME corpus rule as the lab sets: every string a tool
+// shows must be taught by the lesson whose Play tab renders it. A13 checks the
+// copy, A14 re-derives the arithmetic, and `leftover()` proves a generated
+// worked step is built only from that taught copy plus numbers — so a formula
+// or a unit that the lesson never mentions cannot reach the screen.
+// ---------------------------------------------------------------------------
+const TOOL_CASES = {
+  "area-builder": { rectangle: [[3, 4], [7, 2], [1, 1]], circle: [[3], [5]] },
+  "volume-filler": { prism: [[4, 3, 5], [2, 6, 9], [1, 1, 1]], cylinder: [[3, 10], [5, 4]] },
+};
+// Numbers, spacing and the arithmetic symbols a worked step is allowed to add
+// to the taught words. Nothing else may survive.
+const STEP_SYMBOLS = /[0-9\s.,=×+÷()\-−]/g;
+function toolSteps(type, working) {
+  const cases = TOOL_CASES[type] || {};
+  const steps = [];
+  if (type === "area-builder") {
+    for (const [l, w] of cases.rectangle || []) steps.push(...working.rectangleWorking(l, w).steps);
+    for (const [r] of cases.circle || []) steps.push(...working.circleWorking(r).steps);
+  } else if (type === "volume-filler") {
+    for (const [l, w, h] of cases.prism || []) steps.push(...working.prismWorking(l, w, h).steps);
+    for (const [r, h] of cases.cylinder || []) steps.push(...working.cylinderWorking(r, h).steps);
+  }
+  return steps;
+}
+/** What is left of a worked step after the taught copy and the numbers are removed. */
+function leftover(step, taught) {
+  let s = fold(step);
+  // Longest first: "cm²" must go before "cm", or the ² would be left behind.
+  for (const t of [...taught].map(fold).sort((a, b) => b.length - a.length)) s = s.split(t).join(" ");
+  return s.replace(STEP_SYMBOLS, "").trim();
+}
+
 // The tool a type resolves to — used only for the assertion-2 message.
 function toolOf(type, groups) {
   if (groups.drag.has(type)) return "DragDropLabel";
   if (groups.graphing.has(type)) return "GraphingCalculator";
-  if (groups.balance.has(type)) return "BalanceScale";
+  if (groups.balance && groups.balance.has(type)) return "BalanceScale";
+  if (groups.area && groups.area.has(type)) return "AreaBuilder";
+  if (groups.volume && groups.volume.has(type)) return "VolumeFiller";
   return "no dedicated tool";
 }
 
@@ -214,6 +297,12 @@ function collectProblems(input) {
     typeGroups = REAL_TYPE_GROUPS,
     types = recognisedOf(typeGroups),
     legacySets = LEGACY_SETS,
+    // The original-grandfather window (assertion 8d) and the measurement tools'
+    // copy/arithmetic (assertions 13/14). Both are parameters so a red control
+    // can doctor them instead of editing the real tree.
+    legacyBase = LEGACY_BASE,
+    toolSources = TOOL_SOURCES,
+    working = MEASUREMENT_WORKING,
   } = input;
   // The caller may pass the flattened lesson list or just the modules; the
   // selftest fixture passes modules only, exactly as a caller would.
@@ -335,6 +424,28 @@ function collectProblems(input) {
       `A8: LEGACY_SETS is not an exact partition of the live sets: union names ${onlyLegacy.length ? `[${onlyLegacy.join(", ")}]` : "nothing"} that no set provides, and the live sets have ${onlyLive.length ? `[${onlyLive.join(", ")}]` : "nothing"} the union does not`);
   }
 
+  // 8d. NO NEW SET MAY EVER BE GRANDFATHERED. A8 above tolerates a key that is
+  //     in both LEGACY_SETS and the new-set list, so before this assertion
+  //     adding a shipped set id to LEGACY_SETS passed and silently exempted it
+  //     from the corpus rule (the gate's RC2, 2026-11-07). The grandfathered set
+  //     must be EXACTLY the original 24 — derived from the live keys and the
+  //     coverage build's `mat-` id convention, never a second hand-typed list:
+  //
+  //        LEGACY_SETS ∩ (allSetKeys − BASE_24) === ∅   and   BASE_24 ⊆ LEGACY_SETS
+  //
+  //     The header's "DO NOT add a key here" is now enforced, not advice.
+  {
+    const BASE_24 = setKeys.filter((k) => !legacyBase.newLessonId.test(k));
+    ok(BASE_24.length === legacyBase.count,
+      `A8d: the original grandfathered sets are the ${legacyBase.count} sets that predate the coverage build (a new lesson id is mat-<module>-<topic>); the live sets now contain ${BASE_24.length} such keys — if a coverage slice added one, it must satisfy the corpus rule, not extend the window`);
+    const intruders = legacySets.filter((k) => !BASE_24.includes(k));
+    ok(intruders.length === 0,
+      `A8d: LEGACY_SETS grandfathered a set that is not one of the original ${legacyBase.count}: [${intruders.join(", ")}] — a new set must pass the corpus rule, never be grandfathered (remove it from LEGACY_SETS)`);
+    const dropped = BASE_24.filter((k) => !legacySets.includes(k));
+    ok(dropped.length === 0,
+      `A8d: LEGACY_SETS no longer grandfathers [${dropped.join(", ")}], which is one of the original ${legacyBase.count} — removing it from the list is a real change to what the corpus rule enforces, so it must come with the copy that makes the set pass`);
+  }
+
   // 9. every lesson's experiment is an OBJECT with a type and a description
   for (const l of allLessons) {
     const e = l.experiment;
@@ -374,6 +485,85 @@ function collectProblems(input) {
       "A12f: the fallback is still the Mathematics flashcard deck, never another subject's");
   }
 
+  // 13. THE MEASUREMENT TOOLS' CORPUS RULE. AreaBuilder and VolumeFiller are the
+  //     dedicated Play-tab tools for perimeter-area and volume-capacity. Their
+  //     words live in src/data/measurementTools.js, and every one of them must be
+  //     taught by the lesson that renders it — the same standard assertion 7
+  //     holds the lab sets to. A worked step may add numbers and arithmetic
+  //     symbols to those words and nothing else, so a formula or a unit the
+  //     lesson never mentions cannot reach the screen.
+  for (const [type, copy] of Object.entries(MEASUREMENT_TOOL_COPY)) {
+    const lessonId = MEASUREMENT_TOOL_LESSONS[type];
+    const lesson = byId[lessonId];
+    if (!lesson) continue; // A4 already reports a lesson that vanished
+    ok(lesson.experiment && lesson.experiment.type === type,
+      `A13: ${lessonId}: experiment.type is "${lesson.experiment && lesson.experiment.type}", but ${type} is the tool routed to it`);
+    const corpus = corpusOf(lesson);
+    for (const [key, text] of Object.entries(copy)) {
+      ok(corpus.includes(fold(text)),
+        `A13: ${lessonId} renders ${type}, which displays "${text}" (${key}) — that lesson does not teach it`);
+    }
+    const taught = Object.values(copy);
+    for (const step of toolSteps(type, working)) {
+      const rest = leftover(step, taught);
+      ok(rest === "",
+        `A13: ${lessonId} renders ${type}, whose worked step "${step}" contains "${rest}" — not taught by that lesson`);
+    }
+    // The component must render only from that copy: every text node in the
+    // returned JSX is an expression, so a bare string cannot be added later
+    // without this failing.
+    const src = toolSources[type];
+    if (typeof src === "string") {
+      ok(/from\s+"\.\.\/data\/measurementTools"/.test(src),
+        `A13: ${type}: the component imports its copy from src/data/measurementTools.js`);
+      const jsx = src.slice(src.indexOf("return ("));
+      const bare = [...jsx.matchAll(/>([^<>{}]*)</g)].map((m) => m[1].trim()).filter((t) => /[a-z]/i.test(t));
+      ok(bare.length === 0,
+        `A13: ${type}: bare JSX text would bypass the corpus check — found ${bare.slice(0, 3).map((t) => `"${t}"`).join(", ")}`);
+    }
+  }
+
+  // 14. THE MEASUREMENT TOOLS' ARITHMETIC. The worked step the student reads has
+  //     to be the sum the tool actually performs, so every number is re-derived
+  //     here from the inputs with plain arithmetic, and the last step must state
+  //     the answer the readout shows.
+  {
+    const near = (a, b) => Math.abs(a - b) < 0.005;
+    for (const [l, w] of TOOL_CASES["area-builder"].rectangle) {
+      const got = working.rectangleWorking(l, w);
+      ok(near(got.area, l * w) && near(got.perimeter, 2 * (l + w)),
+        `A14: rectangleWorking(${l}, ${w}) → area ${got.area}, perimeter ${got.perimeter}; expected ${l * w} and ${2 * (l + w)}`);
+      ok(got.steps.length >= 2 && got.steps[got.steps.length - 1].includes(String(got.perimeter)),
+        `A14: rectangleWorking(${l}, ${w}): the last worked step must state the perimeter (${got.perimeter})`);
+    }
+    for (const [r] of TOOL_CASES["area-builder"].circle) {
+      const got = working.circleWorking(r);
+      ok(near(got.area, Math.round(3.142 * r * r * 100) / 100) &&
+        near(got.circumference, Math.round(2 * 3.142 * r * 100) / 100),
+        `A14: circleWorking(${r}) → area ${got.area}, circumference ${got.circumference}; expected ${3.142 * r * r} and ${2 * 3.142 * r}`);
+      ok(got.steps.length >= 2 && got.steps[got.steps.length - 1].includes(String(got.circumference)),
+        `A14: circleWorking(${r}): the last worked step must state the circumference (${got.circumference})`);
+    }
+    for (const [l, w, h] of TOOL_CASES["volume-filler"].prism) {
+      const got = working.prismWorking(l, w, h);
+      ok(near(got.baseArea, l * w) && near(got.volume, l * w * h) && near(got.litres, (l * w * h) / 1000),
+        `A14: prismWorking(${l}, ${w}, ${h}) → base ${got.baseArea}, volume ${got.volume}, litres ${got.litres}`);
+      ok(got.steps.some((s) => s.includes(String(got.volume))) && got.steps.some((s) => s.includes(String(got.litres))),
+        `A14: prismWorking(${l}, ${w}, ${h}): the steps must state the volume (${got.volume}) and the capacity (${got.litres})`);
+    }
+    for (const [r, h] of TOOL_CASES["volume-filler"].cylinder) {
+      const got = working.cylinderWorking(r, h);
+      const base = Math.round(3.142 * r * r * 100) / 100;
+      const exact = 3.142 * r * r * h;
+      const litres = Math.round((exact / 1000) * 1000) / 1000;
+      ok(near(got.baseArea, base) && near(got.volume, Math.round(exact * 100) / 100) &&
+        near(got.litres, litres),
+        `A14: cylinderWorking(${r}, ${h}) → base ${got.baseArea}, volume ${got.volume}, litres ${got.litres}; expected ${base}, ${Math.round(exact * 100) / 100} and ${litres} (from πr²h itself, not the rounded base)`);
+      ok(got.steps.some((s) => s.includes(String(got.volume))) && got.steps.some((s) => s.includes(String(got.litres))),
+        `A14: cylinderWorking(${r}, ${h}): the steps must state the volume (${got.volume}) and the capacity (${got.litres})`);
+    }
+  }
+
   return { problems, checks };
 }
 
@@ -398,6 +588,9 @@ const REAL = {
   typeGroups: REAL_TYPE_GROUPS,
   types: recognisedOf(REAL_TYPE_GROUPS),
   legacySets: LEGACY_SETS,
+  legacyBase: LEGACY_BASE,
+  toolSources: TOOL_SOURCES,
+  working: MEASUREMENT_WORKING,
 };
 // A fresh deep copy for every red control, so one control can never leak into
 // the next (or into the real run).
@@ -411,6 +604,9 @@ const cloneReal = () => ({
   typeGroups: REAL.typeGroups,
   types: REAL.types,
   legacySets: REAL.legacySets.slice(),
+  legacyBase: REAL.legacyBase,
+  toolSources: REAL.toolSources,
+  working: REAL.working,
 });
 
 // ---------------------------------------------------------------------------
@@ -436,22 +632,27 @@ if (SELFTEST) {
     },
     metadata: { estimatedModules: 1 },
     legacySets: [],
+    // The fixture's one set is not a `mat-` coverage id, so the derived
+    // original-grandfather window is that one key and nothing is grandfathered.
+    legacyBase: { count: 0, newLessonId: /^a$/ },
     typeKeyed: ["b"],
     typeGroups: REAL_TYPE_GROUPS,
     types: recognisedOf(REAL_TYPE_GROUPS),
   };
-  // JSON round-trip for the doctored copies, then re-attach the type Sets —
-  // a Set does not survive JSON and a clone without them is not the same input.
+  // JSON round-trip for the doctored copies, then re-attach the type Sets and
+  // the base pattern — a Set and a RegExp do not survive JSON, and a clone
+  // without them is not the same input.
   const cloneFixture = () => {
     const c = JSON.parse(JSON.stringify(FIXTURE));
     c.typeGroups = REAL_TYPE_GROUPS;
     c.types = recognisedOf(REAL_TYPE_GROUPS);
+    c.legacyBase = { count: 0, newLessonId: /^a$/ };
     return c;
   };
   const clean = labProblems(FIXTURE);
   ok(clean.length === 0, `selftest: a well-formed input yields zero problems (got ${clean.length}: ${clean.join(" | ")})`);
 
-  section("selftest: the same function must FAIL on three doctored inputs");
+  section("selftest: the same function must FAIL on four doctored inputs");
   // (1) one displayed label is not taught by the lesson
   const badLabel = cloneFixture();
   badLabel.sets.a.pairs[0].label = "delta";
@@ -473,6 +674,13 @@ if (SELFTEST) {
   const shadowProblems = labProblems(shadowed);
   ok(shadowProblems.some((p) => /^A2: b: carries a per-lesson set, which would shadow its dedicated tool \(interactive-quiz — DragDropLabel\)/.test(p)),
     `selftest: a set on a type-keyed lesson fails the shadow assertion (${shadowProblems[0] || "no problem"})`);
+  // (4) a set grandfathered that is not one of the original ones — the hole that
+  //     let a coverage slice hide a corpus failure (A8d, the gate's RC2).
+  const grandfathered = cloneFixture();
+  grandfathered.legacySets = ["a"];
+  const gfProblems = labProblems(grandfathered);
+  ok(gfProblems.some((p) => /^A8d: LEGACY_SETS grandfathered a set that is not one of the original 0: \[a\]/.test(p)),
+    `selftest: grandfathering a new set fails A8d (${gfProblems[0] || "no problem"})`);
 
   console.log(`\ncheck-mathematics-labs (selftest): ${pass} passed, ${fail} failed`);
   process.exit(fail === 0 ? 0 : 1);
@@ -489,7 +697,7 @@ section("1. the Mathematics lab partition");
   for (const p of run.problems) console.log(`FAIL: ${p}`);
   console.log(`    partition: ${Object.keys(sets).length} sets + ${TYPE_KEYED.length} type-keyed = ${allLessons.length} lessons`);
   console.log(`    estimatedModules ${metadata.estimatedModules} = modules.length ${modules.length}`);
-  console.log(`    types: ${REAL_TYPE_GROUPS.drag.size} drag + ${REAL_TYPE_GROUPS.graphing.size} graphing + ${REAL_TYPE_GROUPS.balance.size} balance = ${recognisedOf(REAL_TYPE_GROUPS).size} recognised`);
+  console.log(`    types: ${REAL_TYPE_GROUPS.drag.size} drag + ${REAL_TYPE_GROUPS.graphing.size} graphing + ${REAL_TYPE_GROUPS.balance.size} balance + ${REAL_TYPE_GROUPS.area.size} area + ${REAL_TYPE_GROUPS.volume.size} volume = ${recognisedOf(REAL_TYPE_GROUPS).size} recognised`);
   console.log(`    grandfathered sets: ${LEGACY_SETS.length} (corpus rule applies to ${Object.keys(sets).filter((k) => !LEGACY_SETS.includes(k)).length} new set(s))`);
   // The positive control the spec calls for: the caller must be green on the
   // real tree, or the red runs below are a broken caller rather than a bite.
@@ -499,7 +707,7 @@ section("1. the Mathematics lab partition");
 }
 
 // ---------------------------------------------------------------------------
-// --red-control / --red-controls-all: 13 controls, all on doctored INPUTS.
+// --red-control / --red-controls-all: 17 controls, all on doctored INPUTS.
 // Each must produce a problem whose message matches a named regex; then the
 // caller is proved green on the untouched real tree.
 // ---------------------------------------------------------------------------
@@ -583,6 +791,38 @@ if (RED_CONTROL) {
   red("R13", "a NEW (non-grandfathered) set forced to display a string its lesson does not teach -> A7",
     [/^A7: lessonSets\.mathematics\.mat-num-properties-of-operations: "Zebra" is not in that lesson's own copy/],
     (i) => { i.sets["mat-num-properties-of-operations"].pairs[0].label = "Zebra"; });
+  // R14 is the hole this PR closes. The gate's RC2 did exactly this on the real
+  // tree on 2026-11-07 and the harness still exited 0, because A8's union test
+  // tolerates a key that is in LEGACY_SETS and in the live sets. A8d does not.
+  red("R14", "a NEW set id added to LEGACY_SETS -> A8d (it may never be grandfathered)",
+    [/^A8d: LEGACY_SETS grandfathered a set that is not one of the original 24: \[mat-meas-scale-and-scale-drawings\]/],
+    (i) => { i.legacySets = [...i.legacySets, "mat-meas-scale-and-scale-drawings"]; });
+  red("R15", "AreaBuilder arithmetic broken -> A14 names the wrong area",
+    [/^A14: rectangleWorking\(3, 4\) → area 13, perimeter 14; expected 12 and 14/],
+    (i) => {
+      i.working = {
+        ...i.working,
+        rectangleWorking: (l, w) => {
+          const real = MEASUREMENT_WORKING.rectangleWorking(l, w);
+          return { ...real, area: real.area + 1 };
+        },
+      };
+    });
+  red("R16", "the lesson stops teaching a formula its tool displays -> A13",
+    [/^A13: perimeter-area renders area-builder, which displays "A = l × w" \(formulaRectArea\)/],
+    (i) => {
+      const lesson = i.allLessons.find((l) => l.id === "perimeter-area");
+      lesson.content = lesson.content.split("A = l × w").join("the rule below");
+    });
+  red("R17", "bare JSX text in a tool -> A13 (it would bypass the corpus check entirely)",
+    [/^A13: area-builder: bare JSX text would bypass the corpus check — found "Untaught"/],
+    (i) => {
+      i.toolSources = {
+        ...i.toolSources,
+        "area-builder": i.toolSources["area-builder"]
+          .replace('<div className="area-builder">', '<div className="area-builder">Untaught'),
+      };
+    });
 
   const caught = results.filter((r) => r.caught).length;
   // The caller is green on the untouched real tree, so the controls above were

@@ -30,6 +30,12 @@
 //   4. `--self-test` red controls: stripping any part of the gate from the source
 //      must make this harness fail (proves the guard is not vacuous).
 //
+// Tool families: "circuit", "graph", "balance", "area" and "volume" are the
+// DEDICATED tools — they print no heading of their own, so the type-level copy
+// stands and must be true of them. "area" and "volume" are AreaBuilder and
+// VolumeFiller, the Mathematics measurement tools (types area-builder and
+// volume-filler); they were routed to the BalanceScale until they existed.
+//
 // What this harness does NOT do: it verifies the data and the source, not the pixels.
 // The behavioural proof for this change is the rendered before/after capture of all
 // 25 subject tabs taken with a browser (see the PR evidence, --report prints the
@@ -149,7 +155,7 @@ export function copyShownFor({ copyFromTypeLibrary, toolNamesItself, typeEntry }
 // ---------------------------------------------------------------------------------------------
 
 export const SELF_NAMING = new Set(["drag-drop", "cards"]);
-export const DEDICATED = new Set(["circuit", "graph", "balance"]);
+export const DEDICATED = new Set(["circuit", "graph", "balance", "area", "volume"]);
 
 if (selfTestOnly) {
   // (a) the type-library parser and the copy rule
@@ -212,6 +218,7 @@ if (selfTestOnly) {
 
   const SETS = {};
   for (const n of ["MATH_LINEAR_TYPES", "MATH_PARABOLA_TYPES", "MATH_NUMBERLINE_TYPES", "MATH_BALANCE_TYPES",
+    "MATH_AREA_TYPES", "MATH_VOLUME_TYPES",
     "MATH_DRAG_TYPES", "PHYS_DRAG_TYPES", "CHEM_DRAG_TYPES", "ENG_DRAG_TYPES", "ENG_DICTION_TYPES"]) {
     SETS[n] = setLiteralFromSource(sandboxSrc, n);
   }
@@ -246,7 +253,12 @@ if (selfTestOnly) {
       if (lessonId && lessonSets?.["mathematics"]?.[lessonId]) return "drag-drop";
       if (SETS.MATH_DRAG_TYPES.has(t)) return "drag-drop";
       if (SETS.MATH_LINEAR_TYPES.has(t) || SETS.MATH_PARABOLA_TYPES.has(t) || SETS.MATH_NUMBERLINE_TYPES.has(t)) return "graph";
+      // The three measurement tools are three types and three tools, one each.
+      // They were one set until perimeter-area and volume-capacity were found
+      // rendering the Equation Balance Scale.
       if (SETS.MATH_BALANCE_TYPES.has(t)) return "balance";
+      if (SETS.MATH_AREA_TYPES.has(t)) return "area";
+      if (SETS.MATH_VOLUME_TYPES.has(t)) return "volume";
       return "cards";
     }
     if (subjectId === "chemistry") {
@@ -345,6 +357,15 @@ if (selfTestOnly) {
     }
   }
   ok(lessonCount > 100, `every lesson in the platform was walked (${lessonCount} lessons, ${withExperiment} with an experiment)`);
+  // Every lesson's Play tool must land in a CLASSIFIED family: one that prints
+  // its own heading (so the type-level copy is dropped for it) or a dedicated
+  // tool (so the type-level copy is kept and must be true of it). A family the
+  // mirror knows but DEDICATED/SELF_NAMING do not is a hole in the copy rule —
+  // this is what makes the new "area"/"volume" families load-bearing.
+  const unclassified = [...new Set(lessonRows.map((r) => r.family))]
+    .filter((f) => !DEDICATED.has(f) && !SELF_NAMING.has(f));
+  ok(unclassified.length === 0,
+    `every lesson's Play tool resolves to a classified family (unclassified: ${unclassified.join(", ")})`);
   eq(typedFromLibrary, 0, `no lesson relies on the type library for its Play copy (${selfNamingLessons} lessons render a self-naming tool and carry their own description)`);
 
   // --- 3. subject level: the copy rule + the pinned truth table --------------------------------
