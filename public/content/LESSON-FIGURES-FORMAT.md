@@ -4,9 +4,9 @@ Spec for the optional `figures` array on a **lesson object** in
 `content/<subject>/modules.json` (mirrored at `public/content/<subject>/modules.json`).
 
 Status: **live, and moving.** The renderer, the contract and its harnesses are live and
-figures ship in Chemistry, Biology, Physics, Human & Social Biology and Integrated
-Science. Three Physics figures are ANIMATED — see "Animated figures" below for the extra
-rules that apply to those. Content authors add figures subject by subject.
+figures ship in Chemistry, Biology, Physics, Mathematics, Human & Social Biology and
+Integrated Science. Three Physics figures are ANIMATED — see "Animated figures" below for
+the extra rules that apply to those. Content authors add figures subject by subject.
 
 ## Lesson shape
 
@@ -117,6 +117,14 @@ carries a red/green control that proves it fails on a broken figure.
 byte-compares its output with the committed SVGs, so a generated figure can never drift
 from the code that draws it (never hand-edit an SVG to match a generator, or the other
 way round).
+
+`tools/gen-mathematics-figures.mjs` carries two assertions the other generators do not,
+because Mathematics' drawings are made of arcs and circles rather than straight rules:
+every displayed string must appear in its own lesson's copy (the taught-labels guard, so a
+figure cannot label something the lesson never names), and no stroked segment — a circle
+sampled 96 times, an arc every 2° — may cross a label box or leave the canvas. Both throw,
+so a figure whose words are untaught, crossed by a line, or cropped at the edge never
+reaches the tree.
 
 `node tools/check-physics-animations.mjs` — the animated half of the contract: a shipped
 simulation must carry the animation elements its row in that harness's table names, at the
