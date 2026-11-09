@@ -545,7 +545,13 @@
                 "experiment": {
                     "type": "matching-game",
                     "description": "Venn Region Match: match each region of a two-set survey diagram (only cricket, both, neither) to the number of students it contains."
-                }
+                },
+                "figures": [
+                    {
+                        "src": "/content/mathematics/figures/venn-two-sets.svg",
+                        "alt": "Two overlapping circles labelled C and F inside a rectangle for the universal set, with 15 in the cricket-only region, 10 in the overlap, 8 in the football-only region and 7 outside both circles."
+                    }
+                ]
             },
             {
                 "id": "union-intersection-complement",
@@ -708,7 +714,13 @@
                 "experiment": {
                     "type": "trig-circle",
                     "description": "Unit Circle Explorer: Move a point around a circle to see how the sine and cosine values relate to the coordinates of the point."
-                }
+                },
+                "figures": [
+                    {
+                        "src": "/content/mathematics/figures/trig-ratios-soh-cah-toa.svg",
+                        "alt": "A right-angled triangle with the angle theta marked at one corner, the three sides labelled Opposite, Adjacent and Hypotenuse, and the SOH CAH TOA ratios written underneath."
+                    }
+                ]
             },
             {
                 "id": "angles-and-polygons",
@@ -1013,7 +1025,13 @@
                 "experiment": {
                     "type": "area-builder",
                     "description": "Area Builder: resize a rectangle or a circle and watch the area and the perimeter update as you drag the Length, Width or Radius slider; a circle's perimeter is its Circumference."
-                }
+                },
+                "figures": [
+                    {
+                        "src": "/content/mathematics/figures/sector-and-segment.svg",
+                        "alt": "Two circles side by side: a sector of radius 9 cm and angle 80 degrees with its arc and perimeter, and a segment of radius 6 cm and angle 60 degrees showing the chord, the triangle and the segment area."
+                    }
+                ]
             },
             {
                 "id": "volume-capacity",

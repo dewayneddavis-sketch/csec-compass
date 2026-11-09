@@ -117,6 +117,19 @@ const GENERATORS = [
     outDir: (sb) => sandboxOut(sb, "physics"),
     prepare: () => {},
   },
+  {
+    subject: "mathematics",
+    generator: "tools/gen-mathematics-figures.mjs",
+    // Same convention as Physics: argv[2] is an outdir, and without it the generator writes both
+    // trees when run from a repo root. It also READS content/mathematics/modules.json (the
+    // taught-labels guard: a figure may only display a string its lesson prints), which it finds
+    // from its own file location — so the sandbox's cwd is irrelevant and nothing in the tree is
+    // written.
+    cmd: (sb) => ["node", [path.join(ROOT, "tools/gen-mathematics-figures.mjs"),
+                           sandboxOut(sb, "mathematics")]],
+    outDir: (sb) => sandboxOut(sb, "mathematics"),
+    prepare: () => {},
+  },
 ];
 
 // Subjects with NO generator in the repo. Pinned deliberately: if a NEW figure appears in one of
