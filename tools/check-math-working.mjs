@@ -649,9 +649,13 @@ if (SELFTEST) {
     "selftest: liveItemCount counts a set's pairs whatever `kind` says");
   ok(liveItemCount({ a: { kind: "match", pairs: [] } }) === 1,
     "selftest: liveItemCount floors a set at one item, so an empty set cannot hide");
-  const unenumerable = { ...fixture, sets: { [FX_LESSON]: { ...fxSet, kind: "matching" } } };
+  // Same fix as R22, same reason: the expectation is taken from the SAME doctored tree.
+  // Borrowing the clean fixture's count (as this did first) made the assertion fire
+  // under either implementation, so it could not tell them apart.
+  const unenumerableSets = { [FX_LESSON]: { ...fxSet, kind: "matching" } };
+  const unenumerable = { ...fixture, sets: unenumerableSets, expectedItems: liveItemCount(unenumerableSets) };
   ok(revealProblems(unenumerable).some((p) => /^A8: walked 0 per-lesson items/.test(p)),
-    "selftest: a set whose shape itemsOf() cannot enumerate fails A8");
+    "selftest: a set whose shape itemsOf() cannot enumerate fails A8, with the count derived from the same doctored tree");
 
   console.log(`\ncheck-math-working (selftest): ${pass} passed, ${fail} failed`);
   for (const dir of tmpDirs) fs.rmSync(dir, { recursive: true, force: true });
@@ -852,17 +856,28 @@ if (RED_CONTROL) {
   // liveItemCount() walked the same kind→pairs/items shape as itemsOf(), so a
   // set it could not enumerate made BOTH numbers smaller by the same amount and
   // A8 stayed green (this is the gate's RC8, which the old literal 181 caught).
+  //
+  // R22 was RELABELLED 2026-11-09 (the property it guards is real; the label lied).
+  // As first written it doctored `env.sets` but borrowed `expectedItems` from the
+  // REAL tree, so the expectation was ALL_ITEMS whether the count walked itemsOf()'s
+  // shape or the raw arrays — the control fired under BOTH, for a reason that had
+  // nothing to do with the fix (the gate's MUT2: put the old shape walk back and R22
+  // still passed). It now derives the expectation from the SAME doctored tree, which
+  // is the only version that separates the two implementations.
   const VENN_ITEMS = (lessonSets.mathematics["venn-diagrams"].pairs || []).length
     + (lessonSets.mathematics["venn-diagrams"].items || []).length;
   const ALL_ITEMS = liveItemCount(lessonSets.mathematics);
-  await red("R22", "a PENDING-only set whose shape itemsOf() cannot enumerate -> A8 (count no longer shares its shape)",
+  await red("R22", "a set whose shape itemsOf() cannot enumerate -> A8, with the expectation derived from the SAME doctored tree (a count that shared itemsOf()'s shape would agree with the walk and stay silent)",
     [new RegExp(`^A8: walked ${ALL_ITEMS - VENN_ITEMS} per-lesson items — expected ${ALL_ITEMS}`)],
     async () => {
       const env = await realEnv();
       const real = env.sets["venn-diagrams"];
       // kind "matching" is not a shape itemsOf() knows, but the pairs are still
-      // there — the independent count must still see them.
-      return { ...env, sets: { ...env.sets, "venn-diagrams": { ...real, kind: "matching" } } };
+      // there — the independent count must still see them. The expectation is
+      // recomputed from THIS tree on purpose: a count that shares itemsOf()'s shape
+      // would say 0 for this set, agree with A8's walk of 0, and stay silent.
+      const doctored = { ...env.sets, "venn-diagrams": { ...real, kind: "matching" } };
+      return { ...env, sets: doctored, expectedItems: liveItemCount(doctored) };
     });
   await red("R23", "a live set with no items at all -> A8 (each set floors at one item)",
     [new RegExp(`^A8: walked ${ALL_ITEMS - VENN_ITEMS} per-lesson items — expected ${ALL_ITEMS - VENN_ITEMS + 1}`)],

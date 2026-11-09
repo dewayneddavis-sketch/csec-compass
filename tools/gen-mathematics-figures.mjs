@@ -20,7 +20,12 @@
 //   - It proves the arithmetic in the DATA TABLE, and that no stroked line crosses a label box.
 //     It does not prove the picture reads well, is not visually crowded, or that a pupil learns
 //     from it. Only opening the rendered figure in a browser answers that.
-//   - The taught-labels guard proves every displayed string appears in the lesson's own copy.
+//   - The taught-labels guard proves every WORD and every NUMBER the figure emits is taught by
+//     its lesson — the word check reads lab.texts, the strings that actually went into the SVG,
+//     and the number check is token-bounded. It cannot catch a MISLABELLED figure: swap 15.59
+//     and 18.85 in sector-and-segment and every word and every number is still taught, so the
+//     guard passes. Only a human reading the drawing against the working catches that, which is
+//     why the geometric read-back in the PR is evidence and this is not.
 //     It does NOT prove the figure shows everything the lesson teaches: trig-ratios ships
 //     LABELS ONLY in this cycle (no worked side, no worked angle, no numeric panel), so the
 //     flagship chapter's diagram is started, not finished.
@@ -68,38 +73,90 @@ const round1 = (x) => Math.round(x * 10) / 10;
 const rad = (deg) => (deg * Math.PI) / 180;
 
 // ---------------------------------------------------------------------------
-// The taught-labels guard.
+// The taught-labels guard — two halves, and BOTH read what the figure EMITS.
 //
-// A figure may label — and therefore show — only what its lesson names. The lesson's own copy
+// A figure may label — and therefore show — only what its lesson names. The lesson's own text
 // is the authority, so this reads it out of the repo and refuses to write a figure carrying a
-// string the lesson never prints. Matching is case-insensitive with whitespace collapsed: it
-// proves the VOCABULARY is taught, not the capitalisation of a heading.
+// word or a number the lesson never prints.
+//
+// The first version of this guard was handed a HAND-WRITTEN ARRAY beside each call, so it only
+// failed if the author remembered to declare the offending string: a figure labelling the
+// hypotenuse "Diagonal" passed it, because the array still said "Hypotenuse". It is now called
+// with `lab.texts` — the strings that actually went into the SVG — which is the only input that
+// cannot lie about what the picture says.
 // ---------------------------------------------------------------------------
-function lessonCopy(lessonId) {
+function lessonRecord(lessonId) {
   const file = path.join(ROOT, "content/mathematics/modules.json");
   must(fs.existsSync(file), `cannot read ${file}: the taught-labels guard needs the lesson copy`);
   const mods = JSON.parse(fs.readFileSync(file, "utf8"));
-  for (const m of mods) for (const l of (m.lessons || [])) if (l.id === lessonId) return l.content || "";
+  for (const m of mods) for (const l of (m.lessons || [])) if (l.id === lessonId) return l;
   throw new Error(`gen-mathematics-figures: lesson "${lessonId}" not found in content/mathematics/modules.json`);
 }
+const lessonCopy = (lessonId) => lessonRecord(lessonId).content || "";
+const lessonText = (lessonId) => {
+  const l = lessonRecord(lessonId);
+  return `${l.title || ""} ${l.content || ""}`;
+};
 const norm = (s) => s.replace(/\s+/g, " ").trim().toLowerCase();
-function assertTaught(lessonId, strings) {
-  const copy = norm(lessonCopy(lessonId));
-  const missing = strings.filter((s) => !copy.includes(norm(s)));
+
+// Ordinary English words a figure's own captions use and a lesson body does not have to repeat.
+// Deliberately tiny, and NOT a place to park a mathematical term — a term belongs in the lesson
+// copy, which is what makes the guard worth having. Every run prints the words it excused, and
+// an entry no figure needed is an ERROR (checked after the figures are built), so the list
+// cannot quietly grow into a blanket that lets any label through.
+const ORDINARY = new Set(["named", "rest"]);
+const excused = new Set();
+
+// A word is letters: ASCII, plus the Greek letters these lessons use (θ, π, ξ). Digits are the
+// number guard's business below. Punctuation and mathematical symbols (×, −, °, ²) carry no
+// vocabulary claim and are not checked — the venn lesson, for one, writes its minus as "-" while
+// the figure prints "−", and neither form is a word.
+const WORD = /[A-Za-z\u0370-\u03ff]+/g;
+
+// Matching is case-insensitive with whitespace collapsed: it proves the VOCABULARY is taught,
+// not the capitalisation of a heading. The lesson's TITLE counts as its text — a figure may use
+// "Trigonometric" because the lesson is called "Trigonometric Ratios (SOH CAH TOA)".
+function assertTaught(lessonId, texts) {
+  const copy = norm(lessonText(lessonId));
+  const words = new Set();
+  for (const t of texts) for (const m of String(t).matchAll(WORD)) words.add(m[0].toLowerCase());
+  must(words.size > 0,
+    `${lessonId}: the taught-labels guard was handed no words at all — a guard that checks nothing proves nothing`);
+  const missing = [];
+  for (const w of words) {
+    if (copy.includes(w)) continue;
+    if (ORDINARY.has(w)) { excused.add(w); continue; }
+    missing.push(w);
+  }
   must(missing.length === 0,
-    `${lessonId}: the figure displays ${missing.map((m) => `"${m}"`).join(", ")}, which the lesson copy never teaches`);
-  return strings.length;
+    `${lessonId}: the figure displays ${missing.map((m) => `"${m}"`).join(", ")}, which the lesson's own text never teaches`);
+  return words.size;
 }
 
-// Every NUMBER the figure displays must be a number the lesson prints. The vocabulary list above
-// is hand-written and cannot catch a digit that drifts; this can. A figure whose label says
-// 13.57 cm where the lesson works 12.57 cm is exactly the failure the taught-numbers rule exists
-// to stop, and it is the one a reviewer reading a diff of coordinates will not see.
+// The guard proves it can still fail, on every run, on a word no lesson contains. "Hypotenuse"
+// is taught by trig-ratios and "Diagonal" is not, so a guard that accepts both has stopped
+// reading the copy — which is exactly what the array-literal version did for a whole cycle.
+function proveTaughtGuardBites() {
+  let threw = false;
+  try { assertTaught("trig-ratios", ["Hypotenuse", "Diagonal"]); } catch { threw = true; }
+  must(threw,
+    'the taught-labels guard accepted the word "Diagonal", which the trig-ratios lesson never teaches — ' +
+    "the guard is decorative, not enforcing");
+}
+
+// Every NUMBER the figure displays must be a number the lesson prints — on TOKEN BOUNDARIES, the
+// way tools/check-math-working.mjs's statesAnswer checks a worked step (lead ruling 2026-11-08,
+// ruling 3, after R7 was found asserting "= 1undefined" and passing for months). A plain
+// substring test lets a figure print "12.5" against a lesson that only ever prints "12.57".
+function numberIsTaught(n, copy) {
+  const escaped = n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return new RegExp(`(^|[^0-9.])${escaped}(?![0-9])(?!\\.[0-9])`).test(copy);
+}
 function assertNumbersTaught(lessonId, texts) {
   const copy = norm(lessonCopy(lessonId));
   const shown = new Set();
   for (const t of texts) for (const m of String(t).matchAll(/\d+(?:\.\d+)?/g)) shown.add(m[0]);
-  const untaught = [...shown].filter((n) => !copy.includes(n));
+  const untaught = [...shown].filter((n) => !numberIsTaught(n, copy));
   must(untaught.length === 0,
     `${lessonId}: the figure displays the number(s) ${untaught.join(", ")}, which the lesson copy never prints`);
   return shown.size;
@@ -232,11 +289,6 @@ function vennTwoSets() {
   must(cOnly + N_CF + fOnly + neither === N_XI, `the regions must add to n(ξ) = ${N_XI}`);
   must(N_C + N_F - N_CF === cOnly + N_CF + fOnly, "n(C) + n(F) - n(C∩F) must equal the counted union");
 
-  assertTaught("venn-diagrams", [
-    "universal set", "ξ", "cricket", "football", "neither",
-    "15 + 10 + 8 + 7 = 40",
-  ]);
-
   const W = 660, H = 480;
   const RX = 40, RY = 64, RW = 560, RH = 320;       // the universal-set rectangle
   const CX = 250, FX = 390, CY = 240, R = 118;      // the two circles
@@ -269,6 +321,7 @@ function vennTwoSets() {
   s += lab(40, 34, "Two sets inside the universal set ξ", { size: 15, w: "600" });
   s += lab(40, 52, "write the overlap first, then the two \u2018only\u2019 regions, then the \u2018neither\u2019 region", { fill: MUTED, size: 12 });
 
+  assertTaught("venn-diagrams", lab.texts);
   assertNumbersTaught("venn-diagrams", lab.texts);
   pen.clear(lab, "venn-two-sets", W, H);
 
@@ -313,13 +366,6 @@ function sectorAndSegment() {
   must(round2(seg2) === 3.26, `the segment area must round to 3.26, got ${seg2}`);
   must(Math.abs(0.5 * r2 * r2 * Math.sin(rad(60)) - tri2) < 0.005,
     "0.8660 must be sin 60° to the precision the lesson uses");
-
-  assertTaught("perimeter-area", [
-    "r = 9 cm", "θ = 80°", "2/9 × 56.56 = 12.57 cm", "12.57 + 9 + 9 = 30.57 cm",
-    "about 30.6 cm", "r = 6 cm", "θ = 60°", "60/360 × 3.142 × 36 = 18.85 cm²",
-    "1/2 × 36 × 0.8660 = 15.59 cm²", "18.85 \u2212 15.59 = 3.26 cm²",
-    "arc", "sector", "segment", "triangle", "chord",
-  ]);
 
   const W = 880, H = 576;
   const pen = makePen();
@@ -382,6 +428,7 @@ function sectorAndSegment() {
   s += lab(470, 522, "triangle = 1/2 × 36 × 0.8660 = 15.59 cm²", { size: 12.5 });
   s += lab(470, 546, "segment = 18.85 \u2212 15.59 = 3.26 cm²", { size: 12.5, w: "600" });
 
+  assertTaught("perimeter-area", lab.texts);
   assertNumbersTaught("perimeter-area", lab.texts);
   pen.clear(lab, "sector-and-segment", W, H);
 
@@ -402,12 +449,6 @@ ${s}
 //   flagship chapter finished, and the PR says so.
 // ===========================================================================
 function trigRatios() {
-  assertTaught("trig-ratios", [
-    "SOH CAH TOA", "Sin θ = Opposite / Hypotenuse", "Cos θ = Adjacent / Hypotenuse",
-    "Tan θ = Opposite / Adjacent", "Hypotenuse", "Opposite", "Adjacent", "θ",
-    "right-angled", "90-degree angle",
-  ]);
-
   const W = 620, H = 480;
   const AX = 110, AY = 300;         // θ at the bottom-left
   const BX = 430, BY = 300;         // the right angle at the bottom-right
@@ -440,6 +481,7 @@ function trigRatios() {
   s += lab(40, 34, "Trigonometric ratios: SOH CAH TOA", { size: 15, w: "600" });
   s += lab(40, 52, "the three sides of a right-angled triangle, named from the angle θ", { fill: MUTED, size: 12 });
 
+  assertTaught("trig-ratios", lab.texts);
   assertNumbersTaught("trig-ratios", lab.texts);
   pen.clear(lab, "trig-ratios-soh-cah-toa", W, H);
 
@@ -450,11 +492,21 @@ ${s}
 `;
 }
 
+proveTaughtGuardBites();
+
 const figs = {
   "venn-two-sets.svg": vennTwoSets(),
   "sector-and-segment.svg": sectorAndSegment(),
   "trig-ratios-soh-cah-toa.svg": trigRatios(),
 };
+
+// The ordinary-word allowance is a hole by design, so it has to stay a small and visible one:
+// an entry no figure needed is dead weight, and dead weight is what a future label hides behind.
+for (const w of ORDINARY) {
+  must(excused.has(w),
+    `the ordinary-word allowance lists "${w}" but no figure needed it — delete the entry rather than let the list grow`);
+}
+console.log(`taught-labels: words excused as ordinary (not in their lesson's text): ${[...excused].sort().join(", ") || "(none)"}`);
 
 // No figure here carries SMIL in this cycle, so there is nothing to assert about animation
 // parents. The one rule that still applies to every file: a raw "&" would not parse as XML.
