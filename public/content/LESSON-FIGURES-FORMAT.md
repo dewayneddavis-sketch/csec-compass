@@ -119,12 +119,24 @@ from the code that draws it (never hand-edit an SVG to match a generator, or the
 way round).
 
 `tools/gen-mathematics-figures.mjs` carries two assertions the other generators do not,
-because Mathematics' drawings are made of arcs and circles rather than straight rules:
-every displayed string must appear in its own lesson's copy (the taught-labels guard, so a
-figure cannot label something the lesson never names), and no stroked segment — a circle
-sampled 96 times, an arc every 2° — may cross a label box or leave the canvas. Both throw,
-so a figure whose words are untaught, crossed by a line, or cropped at the edge never
-reaches the tree.
+because Mathematics' drawings are made of arcs and circles rather than straight rules.
+
+**The taught-labels guard** reads the text the figure actually emits — `lab.texts`, the
+strings that went into the SVG — not a list written beside the call, and requires every
+**word** in it to appear in that lesson's own text (title and body, case-insensitive).
+**Numbers** are held to the same rule on token boundaries, the way
+`tools/check-math-working.mjs` checks a worked step: a figure printing `12.5` is not taught
+by a lesson that only prints `12.57`. Ordinary connective words — the guard prints the ones
+it excuses on every run, and an excuse no figure needs is an error — and the non-visible
+`<title>` are not body copy and are not held to it; nor are mathematical symbols or
+punctuation. **What it cannot do: it catches an UNTAUGHT label, never a MISLABELLED one.**
+Swap the 15.59 and the 18.85 in `sector-and-segment.svg` and every word and every number is
+still taught, so the guard passes; only a human reading the drawing against the working
+catches that, which is why that read-back is evidence and this guard is not.
+
+**The second assertion:** no stroked segment — a circle sampled 96 times, an arc every 2° —
+may cross a label box or leave the canvas. Both throw, so a figure whose words are untaught,
+crossed by a line, or cropped at the edge never reaches the tree.
 
 `node tools/check-physics-animations.mjs` — the animated half of the contract: a shipped
 simulation must carry the animation elements its row in that harness's table names, at the
