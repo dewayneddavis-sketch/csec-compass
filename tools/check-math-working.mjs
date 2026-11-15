@@ -87,15 +87,13 @@ const PENDING = [
   // src/data/mathLessonWorkings.js (set-notation · subsets-and-cardinality ·
   // venn-diagrams · union-intersection-complement · shading-venn-regions ·
   // set-word-problems). Gone from here for the same A3 reason as slice A.
-  // slice C — number-theory-computation: 8 sets, 46 items
-  "types-of-numbers",
-  "indices-and-surds",
-  "standard-form",
-  "mat-num-number-bases-and-place-value",
-  "mat-num-significant-figures-and-decimal-places",
-  "mat-num-properties-of-operations",
-  "mat-num-number-sequences",
-  "mat-num-ratio-and-proportion",
+  // slice C — number-theory-computation: 8 sets, 46 items — DONE 2026-11-10,
+  // authored in src/data/mathLessonWorkings.js (types-of-numbers ·
+  // indices-and-surds · standard-form ·
+  // mat-num-number-bases-and-place-value ·
+  // mat-num-significant-figures-and-decimal-places ·
+  // mat-num-properties-of-operations · mat-num-number-sequences ·
+  // mat-num-ratio-and-proportion). Gone from here for the same A3 reason.
   // slice D — measurement: 4 sets, 26 items
   "si-units-and-conversion",
   "mat-meas-surface-area-of-solids",
@@ -277,6 +275,75 @@ async function realEnv() {
   const working = await import(pathToFileURL(path.join(root, "src", "data", "mathWorking.js")).href);
   const workings = (await import(pathToFileURL(path.join(root, "src", "data", "mathLessonWorkings.js")).href)).mathLessonWorkings;
   return { ...baseEnv(), working, workings };
+}
+
+// ---------------------------------------------------------------------------
+// THE EXAMPLE LESSON for the four red controls that need a lesson which is
+// STILL UNAUTHORED (R3, R5, R11, R12).
+//
+// These four used to name a real lesson by hand, and every backfill slice
+// authored that lesson, so each slice had to move the pointer: slice A moved it
+// off `profit-loss-and-discounts`, slice B off `set-notation` / `venn-diagrams`,
+// slice C off `types-of-numbers`. Moving a pointer is not a fix — the control
+// passes on the slice that moves it and rots on the next one, and it rots
+// SILENTLY: red controls only run under `--red-control`, so the everyday
+// 55-harness run (`node "$f"`, no flag) stays green while they decay.
+//
+// So the example is DERIVED AT RUNTIME from `PENDING[0]` instead, and needs no
+// edit per slice. Two guards keep that from decaying into a different silence:
+//
+//   1. `unauthoredExample()` THROWS if the lesson it derived is already
+//      authored. A control pointed at an authored lesson does not fail — it
+//      passes without proving anything, which is the exact defect class this
+//      file exists to catch, so it must be loud rather than quiet.
+//   2. When `PENDING` is EMPTY — the state after the last backfill slice — there
+//      is no real unauthored lesson left to point at, so it falls back to a
+//      SYNTHETIC fixture lesson id that no slice can ever author, injected into
+//      the env's `sets` + `pending`. The fallback is exercised by an assertion
+//      on every run, so it is proven now rather than discovered broken later.
+//
+// Each control's RULE is untouched; only where its example comes from changed.
+// ---------------------------------------------------------------------------
+const SYNTHETIC_PENDING_LESSON = "red-control-fixture-lesson";
+const SYNTHETIC_PENDING_SET = {
+  kind: "match",
+  title: "Red-control fixture",
+  subtitle: "A fixture set that no backfill slice can ever author.",
+  // The item id is deliberately NOT "p1": a synthetic lesson does not own a set
+  // as far as the shipped resolver is concerned (`ownsLabSet` reads the real
+  // lessonSets), so it falls through to the type table. A unique id that exists
+  // in no type-level block makes that fall-through return null, which is the
+  // state R11 and R12 need.
+  pairs: [{ id: "fixture-p1", label: "fixture label", target: "fixture answer" }],
+};
+
+function unauthoredExample(base) {
+  const pending = base.pending || [];
+  if (pending.length > 0) {
+    const lessonId = pending[0];
+    if (Object.prototype.hasOwnProperty.call(base.workings || {}, lessonId)) {
+      throw new Error(
+        `red controls: the derived example lesson "${lessonId}" (PENDING[0]) is ALREADY AUTHORED — ` +
+        `a control pointed at an authored lesson passes without proving anything. ` +
+        `Either empty it out of PENDING (A3) or the tree is lying about the backfill ledger.`
+      );
+    }
+    return { lessonId, synthetic: false };
+  }
+  return { lessonId: SYNTHETIC_PENDING_LESSON, synthetic: true };
+}
+
+// An env in which the example lesson is a LIVE, UNAUTHORED set that is listed in
+// PENDING — the state R3/R5/R11/R12 each doctor one field of. `expectedItems` is
+// recomputed from the resulting sets on purpose (same rule as R22/R23): a count
+// borrowed from a different tree cannot tell two implementations apart.
+function exampleEnv(base, ex) {
+  const sets = ex.synthetic ? { ...base.sets, [ex.lessonId]: SYNTHETIC_PENDING_SET } : { ...base.sets };
+  const pending = ex.synthetic ? [ex.lessonId] : (base.pending || []).slice();
+  const lessonTypes = ex.synthetic
+    ? new Map([...base.lessonTypes, [ex.lessonId, "matching-game"]])
+    : base.lessonTypes;
+  return { ...base, sets, pending, lessonTypes, expectedItems: liveItemCount(sets) };
 }
 
 // ---------------------------------------------------------------------------
@@ -685,7 +752,18 @@ section("1. the shipped resolver, on the shipped tree");
 if (RED_CONTROL) {
   section("2. red controls — every assertion is proved to bite");
   const results = [];
-  const red = async (name, why, expect, mutate) => {
+  // `precondition` is R7's guard (added 2026-11-10, backfill slice C): a control
+  // whose own example no longer exists must be reported as MISSED with the
+  // reason, never as "caught". Every other control passes no precondition, so
+  // this parameter changes nothing about them.
+  const red = async (name, why, expect, mutate, precondition) => {
+    const pre = precondition ? precondition() : null;
+    if (pre) {
+      results.push({ name, why, caught: false, missed: [pre] });
+      console.log(`  MISSED  ${name} — ${why} (precondition)`);
+      console.log(`           ${pre}`);
+      return;
+    }
     const env = await mutate();
     const problems = revealProblems(env);
     const missed = expect.filter((re) => !problems.some((p) => re.test(p)));
@@ -699,6 +777,41 @@ if (RED_CONTROL) {
   const workSrc = read("src/data/mathWorking.js");
   const workingsSrc = read("src/data/mathLessonWorkings.js");
 
+  // -------------------------------------------------------------------------
+  // The DERIVED example lesson, and the guards that keep it from decaying
+  // (see unauthoredExample above). R3, R5, R11 and R12 all need a lesson that
+  // owns a set and is STILL UNAUTHORED; that is PENDING[0] at runtime, so no
+  // backfill slice has to move a pointer again.
+  // -------------------------------------------------------------------------
+  const EX = unauthoredExample(REAL);
+  const EX_RE = EX.lessonId.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const EX_SET = EX.synthetic ? SYNTHETIC_PENDING_SET : REAL.sets[EX.lessonId];
+  const EX_FIRST_ITEM = itemsOf(EX_SET)[0].id;
+
+  // Guard 1 — the example is unauthored. A control pointed at an authored
+  // lesson passes without proving anything, so this is asserted, not assumed.
+  ok(
+    EX.synthetic || !Object.prototype.hasOwnProperty.call(REAL.workings, EX.lessonId),
+    `red controls: the derived example lesson "${EX.lessonId}" is still UNAUTHORED (it is PENDING[0], not a hand-typed id)`
+  );
+  // Guard 2 — unauthoredExample THROWS rather than returning an authored id.
+  {
+    let threw = null;
+    try { unauthoredExample({ pending: [EX.lessonId], workings: { [EX.lessonId]: {} } }); } catch (e) { threw = e; }
+    ok(threw !== null, "red controls: unauthoredExample() THROWS when PENDING[0] is already authored, instead of handing back a control that cannot fail");
+  }
+  // Guard 3 — the empty-PENDING fallback works, and the fixture it falls back to
+  // is sound: no slice can author that lesson id, and its item id exists in no
+  // type table, so a synthetic lesson can never borrow type-level working (which
+  // would make R11/R12 unreachable).
+  ok(unauthoredExample({ pending: [], workings: REAL.workings }).lessonId === SYNTHETIC_PENDING_LESSON,
+    `red controls: with PENDING empty the example falls back to the synthetic fixture "${SYNTHETIC_PENDING_LESSON}"`);
+  ok(lessonSets.mathematics[SYNTHETIC_PENDING_LESSON] === undefined,
+    `red controls: the synthetic fixture lesson "${SYNTHETIC_PENDING_LESSON}" is not a live set, so no backfill slice can ever author it`);
+  ok(REAL.working.getLabWorking("mathematics", "matching-game", itemsOf(SYNTHETIC_PENDING_SET)[0].id) === null,
+    "red controls: the synthetic fixture's item id exists in no type-level table, so it cannot resolve through the fall-through path");
+  console.log(`  example lesson for R3/R5/R11/R12: ${EX.lessonId} (item ${EX_FIRST_ITEM})${EX.synthetic ? " — SYNTHETIC: PENDING is empty" : " — derived from PENDING[0]"}`);
+
   // A1
   await red("R1", "a working keyed to a lesson that owns no set -> A1",
     [/^A1: mathLessonWorkings\.mat-geo-bearings/],
@@ -708,23 +821,34 @@ if (RED_CONTROL) {
     () => treeEnv({ workingsSrc: 'export const mathLessonWorkings = { "profit-loss-and-discounts": { p99: ["a", "b"] } };\n' }));
 
   // A2 / A3 (data-only, so an in-memory override is enough)
-  // The example lesson in R3/R5/R11/R12 MOVED on 2026-11-09: it was
-  // `venn-diagrams` / `set-notation`, and backfill slice B authored both, so
-  // each control would have been a no-op on the shipped tree (the rule is
-  // unchanged; the example had to move, exactly as it did when slice A
-  // authored profit-loss-and-discounts). `types-of-numbers` is still PENDING.
-  await red("R3", "a live set dropped from PENDING and not authored -> A2",
-    [/^A2: 1 live per-lesson set\(s\) are neither authored nor in PENDING: \[types-of-numbers\]/],
-    async () => ({ ...(await realEnv()), pending: PENDING.filter((k) => k !== "types-of-numbers") }));
+  //
+  // The example lesson is DERIVED FROM PENDING[0] AT RUNTIME (2026-11-10,
+  // backfill slice C) — it used to be a hand-typed id, and slice A, slice B and
+  // slice C each had to move it because they authored it. The RULE of each
+  // control is unchanged; only the source of its example moved. `unauthoredExample`
+  // throws if the derived lesson turns out to be authored, so this can never
+  // quietly become a control that cannot fail.
+  await red("R3", `a live set dropped from PENDING and not authored -> A2 (example ${EX.lessonId})`,
+    [new RegExp(`^A2: 1 live per-lesson set\\(s\\) are neither authored nor in PENDING: \\[${EX_RE}\\]`)],
+    async () => {
+      const env = exampleEnv(await realEnv(), EX);
+      return { ...env, pending: env.pending.filter((k) => k !== EX.lessonId) };
+    });
   await red("R4", "PENDING naming a key that is not a live set -> A2",
     [/^A2: PENDING ∪ authored names 1 key\(s\) that are not live per-lesson sets: \[mat-geo-bearings\]/],
     async () => ({ ...(await realEnv()), pending: [...PENDING, "mat-geo-bearings"] }));
-  await red("R5", "a lesson authored but left in PENDING -> A3",
-    [/^A3: 1 lesson\(s\) are both authored and PENDING: \[types-of-numbers\]/],
+  await red("R5", `a lesson authored but left in PENDING -> A3 (example ${EX.lessonId})`,
+    [new RegExp(`^A3: 1 lesson\\(s\\) are both authored and PENDING: \\[${EX_RE}\\]`)],
     async () => {
-      // A lesson STILL in PENDING (types-of-numbers), authored in the doctored tree.
-      const first = itemsOf(lessonSets.mathematics["types-of-numbers"])[0].id;
-      return treeEnv({ workingsSrc: `export const mathLessonWorkings = { "types-of-numbers": { ${first}: ["a", "b"] } };\n` });
+      // The example is authored in a DOCTORED tree while it is still listed in
+      // PENDING. The doctored module is the real one plus that one entry, so A3
+      // is the only rule this fixture breaks (a module containing nothing but
+      // the example would also red A2 for every other pending lesson, which is
+      // noise, not evidence).
+      const base = exampleEnv(await realEnv(), EX);
+      const merged = { ...REAL.workings, [EX.lessonId]: { [EX_FIRST_ITEM]: ["a", "b"] } };
+      const env = await treeEnv({ workingsSrc: `export const mathLessonWorkings = ${JSON.stringify(merged, null, 2)};\n` });
+      return { ...env, sets: base.sets, pending: base.pending, lessonTypes: base.lessonTypes, expectedItems: base.expectedItems };
     });
 
   // A2b — item granularity (added 2026-11-08, backfill slice A). A2 is set-level,
@@ -744,18 +868,48 @@ if (RED_CONTROL) {
       const env = await treeEnv({ workingsSrc: 'export const mathLessonWorkings = { "profit-loss-and-discounts": { p1: ["Read it", "the answer is 999"] } };\n' });
       return env;
     });
+  // R7's RESIDUAL — closed 2026-11-10 (backfill slice C).
+  //
+  // The control used to pick its answer with `?.answer` and NO guard. If
+  // `set-notation` ever lost its purely numeric answer, the selector returned
+  // undefined, the doctored step became "= 1undefined", A4 fired for an
+  // unrelated reason, and the control still reported "caught" while proving
+  // nothing about the token boundary — the exact defect it was fixed for on
+  // 2026-11-08. Four guards, all checked BEFORE the control runs; if any stops
+  // holding, the control is reported MISSED with the reason instead of passing:
+  //   * the item is selected BY ID and must still exist;
+  //   * its answer must still be a purely numeric token;
+  //   * the glued step must still CONTAIN the answer as a plain substring, so
+  //     that plain containment would accept it (otherwise A4 would fire for the
+  //     wrong reason and the boundary would never be exercised);
+  //   * the token-bounded rule must still REJECT the glued step — that is the
+  //     property being proved.
+  const R7_LESSON = "set-notation";
+  const R7_ITEM = itemsOf(lessonSets.mathematics[R7_LESSON]).find((i) => i.id === "p1");
+  const r7Precondition = () => {
+    if (!R7_ITEM) return `R7 precondition: ${R7_LESSON} has no item p1 — the control has nothing to doctor`;
+    const answer = String(R7_ITEM.answer);
+    if (!ITEM_ANSWER_NUMERIC.test(answer)) {
+      return `R7 precondition: ${R7_LESSON} p1's answer ${JSON.stringify(R7_ITEM.answer)} is not a purely numeric token, so the token boundary is not what this control would test`;
+    }
+    const glued = `= 1${answer}`;
+    if (!glued.includes(answer)) {
+      return `R7 precondition: the doctored step ${JSON.stringify(glued)} does not even contain ${JSON.stringify(answer)}, so A4 would fire for the wrong reason`;
+    }
+    if (statesAnswer(glued, answer)) {
+      return `R7 precondition: the token-bounded rule ACCEPTS ${JSON.stringify(glued)} for ${JSON.stringify(answer)}, so the control can no longer prove the boundary`;
+    }
+    return null;
+  };
   await red("R7", "a numeric answer that only appears inside a longer number -> A4 (token boundary)",
-    [/^A4: mathLessonWorkings\.set-notation\.p1:/],
+    [new RegExp(`^A4: mathLessonWorkings\\.${R7_LESSON}\\.p1:`)],
     async () => {
-      // set-notation p1's real answer is the purely numeric "4"; glued into a
-      // longer number ("= 14") it must NOT count as stating the answer. This
-      // control used to pick its answer from profit-loss-and-discounts, whose
-      // answers are all phrases ("20% profit"), so it silently fell through to
-      // "1undefined" and proved nothing about the boundary (fixed 2026-11-08).
-      const answer = itemsOf(lessonSets.mathematics["set-notation"]).find((i) => ITEM_ANSWER_NUMERIC.test(String(i.answer)))?.answer;
-      const src = `export const mathLessonWorkings = { "set-notation": { p1: ["Read it", "= 1${answer}"] } };\n`;
+      // set-notation p1's real answer is a purely numeric token; glued into a
+      // longer number ("= 14") it must NOT count as stating the answer.
+      const src = `export const mathLessonWorkings = { "${R7_LESSON}": { p1: ["Read it", "= 1${R7_ITEM.answer}"] } };\n`;
       return treeEnv({ workingsSrc: src });
-    });
+    },
+    r7Precondition);
 
   // A5 / A6 — the collision fixture. `p1` is given a TYPE-LEVEL entry so the two
   // tables disagree, which is what the no-fall-through rule is for.
@@ -805,16 +959,24 @@ if (RED_CONTROL) {
     [/^A7: trig-circle\/t1: the 3-argument lookup returned null/],
     () => treeEnv({ workingSrc: workSrc.replace('  "trig-circle": {', '  "trig-circle-retired": {') }));
 
-  // A8 / A9 — the two rules this PR exists for. Both use types-of-numbers, which
-  // is still PENDING (unauthored): profit-loss-and-discounts was the example
-  // until backfill slice A authored it, and set-notation until slice B did, so
-  // the control moved each time rather than the rule being weakened.
-  await red("R11", "the old gate: no working means no reveal -> A8 (all 205)",
-    [/^A8: types-of-numbers\/p1: labReveal returned null/],
-    () => treeEnv({ workingSrc: workSrc.replace("  return { answer, steps: steps || [] };", "  return steps ? { answer, steps } : null;") }));
-  await red("R12", "a placeholder step invented when none is authored -> A9",
-    [/^A9: types-of-numbers\/p1: no working is authored, so steps must be exactly \[\]/],
-    () => treeEnv({ workingSrc: workSrc.replace("  return { answer, steps: steps || [] };", '  return { answer, steps: steps || ["work it out"] };') }));
+  // A8 / A9 — the two rules this PR exists for. Both need a lesson that owns a
+  // set and is STILL UNAUTHORED, which is the derived example (PENDING[0] at
+  // runtime) rather than a hand-typed id: profit-loss-and-discounts was the
+  // example until slice A authored it, set-notation/venn-diagrams until slice B
+  // did, and types-of-numbers until slice C did. The RULE is unchanged — the
+  // source of the example is now derived so no slice has to move it again.
+  await red("R11", `the old gate: no working means no reveal -> A8 (example ${EX.lessonId}/${EX_FIRST_ITEM})`,
+    [new RegExp(`^A8: ${EX_RE}/${EX_FIRST_ITEM.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}: labReveal returned null`)],
+    async () => exampleEnv(
+      await treeEnv({ workingSrc: workSrc.replace("  return { answer, steps: steps || [] };", "  return steps ? { answer, steps } : null;") }),
+      EX
+    ));
+  await red("R12", `a placeholder step invented when none is authored -> A9 (example ${EX.lessonId}/${EX_FIRST_ITEM})`,
+    [new RegExp(`^A9: ${EX_RE}/${EX_FIRST_ITEM.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}: no working is authored, so steps must be exactly \\[\\]`)],
+    async () => exampleEnv(
+      await treeEnv({ workingSrc: workSrc.replace("  return { answer, steps: steps || [] };", '  return { answer, steps: steps || ["work it out"] };') }),
+      EX
+    ));
 
   // A10 / A11
   await red("R13", "the reveal widened to another subject -> A10",

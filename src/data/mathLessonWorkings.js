@@ -582,4 +582,273 @@ export const mathLessonWorkings = {
         "So Reliability: how much a repeated sample would agree",
     ],
   },
+  // ---------------------------------------------------------------------
+  // BACKFILL SLICE C — number-theory-computation (8 sets / 46 items)
+  // The rule-heavy module, so each step NAMES the rule it applies (index law,
+  // place-value expansion, significant-figure rule, ratio-sharing method)
+  // rather than only showing arithmetic. Grounded in each lesson's own copy in
+  // content/mathematics/modules.json:
+  //   types-of-numbers uses its own definitions (a prime has exactly two
+  //   factors, 1 has a single factor, 9 = 3 × 3, √2 cannot be written as an
+  //   exact fraction); indices-and-surds uses its index laws, its a^0 = 1 and
+  //   a^-n = 1/a^n, and its own surd examples √50 = 5√2 and 1/√3 = √3/3;
+  //   standard-form uses its own conversions and its "adjust A and the index
+  //   until it is inside 1 to 10"; the bases lesson uses its
+  //   1011₂ = 1 × 8 + 0 × 4 + 1 × 2 + 1 × 1 expansion, its 45 = 101101₂
+  //   repeated division and its "carry at 2, never 10"; significant figures
+  //   uses its 3.8462 → 3.85 worked rounding and its 0.0047256 / 2.007
+  //   examples; properties-of-operations uses the worked instances printed in
+  //   its copy; number-sequences uses its 5, 8, 11, 14 → 3n + 2 derivation and
+  //   its 3n - 1 substitution; ratio-and-proportion uses its share-25-in-3:2
+  //   worked method and its 4-pens-for-$12 unitary example.
+  // All eight sets are `match`, so every last step states that item's
+  // pairs[].target string exactly as the set stores it (A4 is literal, and
+  // token-bounded for the purely numeric answers 32 / 25 / 1 / 3.85).
+  // ---------------------------------------------------------------------
+  "types-of-numbers": {
+    p1: [
+        "A number is classified by the MOST SPECIFIC family that applies, so ask what 9 is made of before choosing one",
+        "9 = 3 × 3, a whole number multiplied by itself, so 9 is a square number",
+        "No other family is more specific here, so 9 belongs under: Perfect square",
+    ],
+    p2: [
+        "A prime number has exactly two factors, 1 and itself, so count the factors of 7",
+        "The factors of 7 are 1 and 7 and nothing else, because 2, 3, 4, 5 and 6 do not divide it exactly",
+        "Exactly two factors makes 7 a: Prime number",
+    ],
+    p3: [
+        "A cube number is a whole number multiplied by itself twice, so ask whether 27 splits into three equal factors",
+        "27 = 3 × 3 × 3, which is 3³, and 27 is not a square because no whole number squares to 27",
+        "So the most specific family for 27 is: A cube number",
+    ],
+    p4: [
+        "A rational number can be written as a fraction of two integers, and an irrational number cannot be written that way",
+        "√2 is about 1.41421…, and its decimal never ends and never repeats, so no fraction of two integers equals it exactly",
+        "Because √2 cannot be written as an exact fraction, it is: Irrational",
+    ],
+    p5: [
+        "A prime has exactly two factors and a composite number has more than two, so count the factors of 1",
+        "The only factor of 1 is 1 itself, because 1 × 1 = 1, so 1 has a single factor",
+        "One factor is neither two nor more than two, so 1 is: Neither prime nor composite",
+    ],
+  },
+  "indices-and-surds": {
+    p1: [
+        "The index law for multiplying powers of the same base is a^m × a^n = a^(m+n), so add the indices and keep the base 2",
+        "3 + 2 = 5, so 2³ × 2² = 2⁵",
+        "2⁵ = 2 × 2 × 2 × 2 × 2 = 32",
+    ],
+    p2: [
+        "The index law for dividing powers of the same base is a^m ÷ a^n = a^(m-n), so subtract the indices and keep the base 5",
+        "6 - 4 = 2, so 5⁶ ÷ 5⁴ = 5²",
+        "5² = 5 × 5 = 25",
+    ],
+    p3: [
+        "The zero index follows from the division law: 2³ ÷ 2³ = 2^(3-3) = 2⁰",
+        "Dividing any non-zero number by itself gives 1, so 2⁰ must be 1 for the law to keep working",
+        "So a^0 = 1 for every a ≠ 0, and 2⁰ = 1",
+    ],
+    p4: [
+        "A negative index means a reciprocal, because a^-n = 1/a^n, so 2⁻³ = 1/2³",
+        "2³ = 2 × 2 × 2 = 8",
+        "So 2⁻³ = 1/2³ = 1/8",
+    ],
+    p5: [
+        "A surd is simplified by removing square factors, so look for a square number that divides 50",
+        "50 = 25 × 2 and 25 is a square, so √50 = √25 × √2",
+        "√25 = 5, so √50 = 5√2",
+    ],
+    p6: [
+        "A surd is not left in a denominator, so rationalise by multiplying the top and the bottom by √3",
+        "1/√3 × √3/√3 = √3 ÷ (√3 × √3), and √3 × √3 = 3",
+        "So 1/√3 = √3/3",
+    ],
+  },
+  "standard-form": {
+    p1: [
+        "Standard form is A × 10^n with A at least 1 and less than 10, so place the decimal point after the first non-zero digit",
+        "45,000 becomes 4.5, and the point has moved 4 places to the left, so the index is +4",
+        "So 45,000 = 4.5 × 10⁴, and A = 4.5 is inside 1 to 10",
+    ],
+    p2: [
+        "Place the decimal point after the first non-zero digit: 6,700,000 becomes 6.7",
+        "The point moves 6 places to the left, and moving left gives a positive index, so n = 6",
+        "So 6,700,000 = 6.7 × 10⁶",
+    ],
+    p3: [
+        "Place the decimal point after the first non-zero digit, which is the 7, so the number part is 7.2",
+        "The point moves 4 places to the right to get from 0.00072 to 7.2, and moving right gives a negative index",
+        "So 0.00072 = 7.2 × 10⁻⁴",
+    ],
+    p4: [
+        "Multiplying in standard form multiplies the number parts and adds the indices: (3 × 10⁵) × (2 × 10³) = (3 × 2) × 10^(5+3)",
+        "3 × 2 = 6 and 5 + 3 = 8, so the result is 6 × 10⁸",
+        "A = 6 is already inside 1 to 10, so no adjustment is needed: 6 × 10⁸",
+    ],
+    p5: [
+        "Multiplying in standard form multiplies the number parts and adds the indices: 5 × 4 = 20 and 3 + 2 = 5, giving 20 × 10⁵",
+        "20 is not between 1 and 10, so adjust A and the index until it is: 20 × 10⁵ = 2 × 10 × 10⁵ = 2 × 10⁶",
+        "So (5 × 10³) × (4 × 10²) = 2 × 10⁶",
+    ],
+  },
+  "mat-num-number-bases-and-place-value": {
+    p1: [
+        "A base of n uses only the digits 0 to n - 1, so base 2 allows the digits 0 and 1 and nothing higher",
+        "The digit 3 is never legal in base two, because the column has not reached 2 yet and 3 is not one of the available digits",
+        "So Base 2 (binary) uses only 0 and 1",
+    ],
+    p2: [
+        "A base of n uses only the digits 0 to n - 1, so base 8 allows 0, 1, 2, 3, 4, 5, 6 and 7",
+        "Base 8 (octal) has columns worth 1, 8, 64 and 512, but the digits still stop at 7",
+        "So Base 8 (octal) uses 0 to 7",
+    ],
+    p3: [
+        "Each column of a base two number is worth twice the column on its right, so 1011₂ has columns worth 8, 4, 2 and 1",
+        "Expanding by place value multiplies each digit by the value of its own column and adds the results",
+        "So 1011₂ expands to 1 × 8 + 0 × 4 + 1 × 2 + 1 × 1",
+    ],
+    p4: [
+        "Repeated division converts base ten into another base: divide by the base again and again, recording each remainder",
+        "For 45 in base two the remainders come out 1, 0, 1, 1, 0, 1 from the top down, which is the digits of the answer backwards",
+        "So read the remainders from the bottom up, which gives 45 = 101101₂",
+    ],
+    p5: [
+        "In base ten a column carries at 10, because that is the base; in base two the same column reaches the base at 2",
+        "Adding 1 + 1 in a binary column gives 2, which is 10 in base two, so write 0 and carry 1",
+        "So adding in base two means carry a 1 as soon as a column reaches 2",
+    ],
+    p6: [
+        "Every answer in any base can be converted back to base ten by expanding by place value",
+        "45 = 101101₂ converts back as 32 + 0 + 8 + 4 + 0 + 1 = 45, so the two methods agree",
+        "That makes converting back to base ten the check that always works",
+    ],
+  },
+  "mat-num-significant-figures-and-decimal-places": {
+    p1: [
+        "Significant figures are the digits that carry information, and the count starts at the first digit that is not zero",
+        "In 0.0047256 the digits 4, 7, 2, 5 and 6 carry information, while the zeros in front only fix the size of the number",
+        "So the first significant figure is the first non-zero digit, which here is the 4",
+    ],
+    p2: [
+        "In 0.0047256 the two zeros between the point and the 4 sit at the start of the decimal",
+        "They only fix how small the number is, so they are never counted as significant figures",
+        "Leading zeros are therefore the zeros at the start of a decimal",
+    ],
+    p3: [
+        "A zero that sits between two non-zero digits cannot be dropped, because it holds the place of a column",
+        "In 2.007 the two zeros sit between the 2 and the 7 and both count, so 2.007 has four significant figures",
+        "So significant zeros are the zeros between two non-zero digits",
+    ],
+    p4: [
+        "To round, keep the digits you were asked for and look at the very next digit",
+        "If that next digit is 5 or more the last kept digit goes up by one, otherwise it is left alone",
+        "That is the rounding rule: round up if it is 5 or more",
+    ],
+    p5: [
+        "Decimal places count from the decimal point, so one decimal place keeps one digit after the point",
+        "The nearest whole number has no digits after the point at all, which is zero of them",
+        "So rounding to the nearest whole number is rounding to 0 decimal places",
+    ],
+    p6: [
+        "The first significant figure is the first non-zero digit, so keep the 3, the 8 and the 4 and look at the next digit, which is 6",
+        "The rounding rule says round up if it is 5 or more, and 6 is 5 or more, so the 4 rounds up to 5",
+        "So 3.8462 to 3 significant figures is 3.85",
+    ],
+  },
+  "mat-num-properties-of-operations": {
+    p1: [
+        "The commutative property says order does not matter for addition and multiplication",
+        "Here the two numbers 3 and 5 have swapped sides of the plus sign and nothing else has changed",
+        "That is the commutative property: 3 + 5 = 5 + 3",
+    ],
+    p2: [
+        "The associative property says grouping does not matter when three or more numbers are added or multiplied",
+        "The numbers 2, 3 and 4 stay in the same order and only the brackets move",
+        "That is the associative property: (2 + 3) + 4 = 2 + (3 + 4)",
+    ],
+    p3: [
+        "The distributive property is a(b - c) = ab - ac, which splits one multiplication into two simpler ones",
+        "98 is written as 100 - 2 so the 7 can be distributed: 7 × 100 - 7 × 2 = 700 - 14 = 686",
+        "That is the distributive property at work: 7 × 98 = 7 × (100 - 2)",
+    ],
+    p4: [
+        "The identity property names the number that changes nothing when it is combined with another",
+        "Adding 0 leaves 12 exactly as it was, so 0 is the additive identity",
+        "So the additive identity is shown by 12 + 0 = 12",
+    ],
+    p5: [
+        "The identity property names the number that changes nothing when it is combined with another",
+        "Multiplying by 1 leaves 9 exactly as it was, so 1 is the multiplicative identity",
+        "So the multiplicative identity is shown by 9 × 1 = 9",
+    ],
+    p6: [
+        "The inverse property pairs a number with the partner that cancels it out",
+        "For addition the partner of 8 is -8, because the two of them together give the additive identity 0",
+        "So the inverse property is shown by 8 + (-8) = 0",
+    ],
+  },
+  "mat-num-number-sequences": {
+    p1: [
+        "The term-to-term rule says how to get from one term to the next, so compare consecutive terms",
+        "8 - 5 = 3, 11 - 8 = 3 and 14 - 11 = 3, so the same number is added every time",
+        "So the term-to-term rule is add 3 each time",
+    ],
+    p2: [
+        "In a linear sequence the nth term is written an + b, where a is the number in front of n",
+        "The rule has that shape because the same amount is added each time, and that amount is the common difference",
+        "So the number in front of n is the common difference",
+    ],
+    p3: [
+        "The common difference is 3, because 8 - 5 = 3 and 11 - 8 = 3, so the rule looks like 3n + b",
+        "Put n = 1, because the first term must be 5: 3(1) + b = 5, so b = 2",
+        "Check with n = 4: 3(4) + 2 = 14, which is right, so the nth term of 5, 8, 11, 14 is 3n + 2",
+    ],
+    p4: [
+        "Compare consecutive terms by dividing instead of subtracting: 6 ÷ 2 = 3, 18 ÷ 6 = 3 and 54 ÷ 18 = 3",
+        "The same number multiplies every term, and that number is the common ratio, here 3",
+        "So a geometric sequence multiplies by the same number each time",
+    ],
+    p5: [
+        "A square number is a whole number multiplied by itself, so take 1 × 1, 2 × 2, 3 × 3 and so on",
+        "1 × 1 = 1, 2 × 2 = 4, 3 × 3 = 9, 4 × 4 = 16 and 5 × 5 = 25",
+        "So the square numbers are 1, 4, 9, 16, 25",
+    ],
+    p6: [
+        "To jump straight to a term, substitute its position into the rule: n = 10 for the 10th term",
+        "Replacing n with 10 in 3n - 1 gives 3(10) - 1",
+        "So the 10th term of 3n - 1 is written 3(10) - 1, which works out as 30 - 1 = 29",
+    ],
+  },
+  "mat-num-ratio-and-proportion": {
+    p1: [
+        "The total tells you how many equal parts the whole is cut into, so the parts must be added before anything is shared",
+        "For a ratio of 3:2 the parts are 3 + 2 = 5, and for 2:3:4 they are 2 + 3 + 4 = 9",
+        "So the first step is add the parts of the ratio",
+    ],
+    p2: [
+        "The value of one part is the quantity divided by the total number of parts",
+        "Sharing 25 students in the ratio 3:2 gives 3 + 2 = 5 parts, so divide the 25 by the 5",
+        "So the value of one part is 25 ÷ 5 = 5",
+    ],
+    p3: [
+        "Each share is that number of parts multiplied by the value of one part",
+        "The boys have 3 parts and one part is worth 5, so multiply 3 by 5",
+        "So the boys' share is 3 × 5 = 15",
+    ],
+    p4: [
+        "Two ratios are equivalent when they simplify to the same thing, so divide every part rather than subtract",
+        "12:18 divides by the highest common factor 6 to give 2:3, and 2 and 3 share no factor except 1",
+        "So simplifying a ratio means divide every part by the highest common factor",
+    ],
+    p5: [
+        "The unitary method finds the value of one first and then multiplies",
+        "If 4 pens cost $12, divide by 4 to find the cost of a single pen",
+        "So one pen costs $12 ÷ 4 = $3, and 7 pens would cost 7 × $3 = $21",
+    ],
+    p6: [
+        "A sharing question is finished only when the shares have been tested against the whole",
+        "For 25 students shared in 3:2 the shares are 15 and 10, and 15 + 10 = 25, which is the whole",
+        "So the check is that the shares add back to the whole",
+    ],
+  },
 };
