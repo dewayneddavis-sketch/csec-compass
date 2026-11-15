@@ -940,7 +940,7 @@ export const mathLessonWorkings = {
     p5: [
         "Name the faces in words: a cylinder has two circular ends of area πr² each, and a curved side",
         "The curved side opens out into a rectangle as wide as the circumference 2πr and as tall as the height h, so its area is 2πrh",
-        "So a cylinder has surface area 2πr² + 2πrh, and r = 7 cm with h = 10 cm gives 307.9 + 439.9 = 747.8 cm²",
+        "So a cylinder has surface area 2πr² + 2πrh, and r = 7 cm with h = 10 cm gives 307.9 + 439.8 = 747.7 cm²",
     ],
     p6: [
         "Read the question for the face that is missing: an open-top tank has no lid",
@@ -956,12 +956,12 @@ export const mathLessonWorkings = {
     ],
     p2: [
         "Relative error compares the error with the true value instead of with the units, so it has no units at all",
-        "Divide the absolute error by the true value: 0.2 ÷ 24.8 = 0.0081 to 3 significant figures",
+        "Divide the absolute error by the true value: 0.2 ÷ 24.8 = 0.00806 to 3 significant figures",
         "So relative error = absolute error ÷ true value, and the denominator is the true value, never the measured value",
     ],
     p3: [
         "Percentage error puts the same comparison into hundredths, so it is still a ratio and still has no units",
-        "Multiply the relative error by 100: 0.0081 × 100 = 0.81% to 2 decimal places",
+        "Multiply the relative error by 100: 0.00806 × 100 = 0.806 = 0.81% to 2 decimal places",
         "So percentage error = relative error × 100, which for this rod is about 0.81% too high",
     ],
     p4: [
@@ -1010,6 +1010,147 @@ export const mathLessonWorkings = {
         "Write the scale as its own step first: drawing : real = 1 : 50, so the scale factor is 50",
         "Multiply the drawing length by the scale factor: 7 × 50 = 350 cm",
         "Convert to a sensible unit with 100 cm = 1 m: 350 ÷ 100 = 3.5, so 350 cm = 3.5 m",
+    ],
+  },
+
+  // ---------------------------------------------------------------------
+  // BACKFILL SLICE E — algebra (3 sets / 15 items) +
+  // relations-functions-graphs (1 set / 5 items) = 4 sets / 20 items
+  // Every step is grounded in that lesson's own copy in
+  // content/mathematics/modules.json, and each item's working names the RULE
+  // before it is applied, because that is the whole product here:
+  //   factorization uses its highest-common-factor-first order, its
+  //   a² − b² = (a + b)(a − b) pattern, its "two numbers multiplying to c and
+  //   adding to b" rule, its split-the-middle-term rule for 6x² + 11x + 4
+  //   (product 6 × 4 = 24, sum 11, so 8 and 3), its "if a product is zero then a
+  //   factor is zero", and its own worked factorisations 6x² + 9x, 25x² − 16,
+  //   x² + 7x + 12, 6x² + 11x + 4 and x² − 5x + 6 — each checked by expanding
+  //   the factors back.
+  //   algebraic-fractions uses its "factorise before you cancel, cancel only
+  //   factors never terms", its common denominator xy for 1/x + 1/y, its
+  //   (x² − 9)/(x + 3) = x − 3, its (a/b) ÷ (c/d) = (a/b) × (d/c), its
+  //   1/x + 1/3 = 1/2 → 6 + 2x = 3x → x = 6, and its "3 and 5 are not factors"
+  //   reason for (x + 3)/(x + 5).
+  //   transposition-and-substitution uses its inverse-operations-in-reverse-
+  //   order rule, its t = (v − u)/a, r = √(A/π) and b = P/2 − l, its
+  //   s = ut + ½at² with u = 4, a = 3, t = 5 → 20 + 37.5 = 57.5, and its
+  //   "square a negative inside brackets" warning for a = −2 → a² = 4.
+  //   linear-and-quadratic-graphs uses its y = mx + c reading (m the gradient,
+  //   c the y-intercept), its "a negative gradient slopes downwards", its
+  //   "opens upwards when a is positive and downwards when a is negative", its
+  //   "roots are where y = 0" and its worked x² − 2x − 3 = 0 → x = −1 and x = 3.
+  // All four sets are `match`, so every last step states that item's
+  // pairs[].target string exactly as the set stores it. Two of the twenty
+  // answers are purely numeric (57.5 and 4), so A4's token boundary applies to
+  // those two — each stands alone in the final step, never as part of a longer
+  // number.
+  // ---------------------------------------------------------------------
+  "factorization": {
+    p1: [
+        "Factorising is expanding in reverse, so start with the highest common factor: 6x² = 2 × 3 × x × x and 9x = 3 × 3 × x",
+        "The highest common factor is 3 × x = 3x, so divide each term by it: 6x² ÷ 3x = 2x and 9x ÷ 3x = 3",
+        "So 6x² + 9x = 3x(2x + 3), and expanding back gives 3x × 2x = 6x² and 3x × 3 = 9x, which matches: 3x(2x + 3)",
+    ],
+    p2: [
+        "There is no common factor and only two terms with a minus between them, so test the difference of two squares, a² − b² = (a + b)(a − b)",
+        "Both terms are perfect squares: 25x² = (5x)² so a = 5x, and 16 = 4² so b = 4",
+        "Apply the pattern and expand back to check: (5x + 4)(5x − 4) = 25x² − 20x + 20x − 16 = 25x² − 16, so the factorised form is (5x + 4)(5x − 4)",
+    ],
+    p3: [
+        "The coefficient of x² is 1, so the factors have the form (x + ?)(x + ?) and the two numbers must multiply to the constant 12 and add to the middle coefficient 7",
+        "The pair that does both is 3 and 4, because 3 × 4 = 12 and 3 + 4 = 7",
+        "So x² + 7x + 12 = (x + 3)(x + 4), and expanding back gives x² + 4x + 3x + 12 = x² + 7x + 12",
+    ],
+    p4: [
+        "The coefficient of x² is 6, not 1, so split the middle term: multiply 6 × 4 = 24 and look for two numbers that multiply to 24 and add to 11",
+        "The pair is 8 and 3, so rewrite the expression as 6x² + 8x + 3x + 4 and factorise in pairs: 2x(3x + 4) + 1(3x + 4)",
+        "The repeated bracket is a common factor, so 6x² + 11x + 4 = (3x + 4)(2x + 1), and expanding back gives 6x² + 3x + 8x + 4 = 6x² + 11x + 4",
+    ],
+    p5: [
+        "A product is zero only when one of its factors is zero, so rearrange the equation to equal zero first (it already does) and factorise x² − 5x + 6",
+        "Two numbers that multiply to +6 and add to −5 are −2 and −3, so x² − 5x + 6 = (x − 2)(x − 3) = 0",
+        "Set each factor to zero: x − 2 = 0 gives x = 2, and x − 3 = 0 gives x = 3, so the roots are x = 2 or x = 3",
+    ],
+  },
+  "algebraic-fractions": {
+    p1: [
+        "Fractions can only be added when the denominators match, so find the lowest common multiple of x and y, which is xy",
+        "Multiply each fraction top and bottom by what its own denominator is missing: 1/x becomes y/xy, and 1/y becomes x/xy",
+        "Now the denominators are the same, so add the numerators over the single denominator: (y + x)/xy, which is written 1/x + 1/y = (x + y)/xy",
+    ],
+    p2: [
+        "Factorise before you cancel: the numerator is a difference of two squares, so x² − 9 = (x + 3)(x − 3)",
+        "A factor may be cancelled only when it multiplies the WHOLE numerator and the WHOLE denominator, and (x + 3) does both, so it cancels",
+        "What is left is (x − 3)/1 = x − 3, so the fraction simplifies to x − 3 (with x ≠ −3, where the original denominator would be zero)",
+    ],
+    p3: [
+        "Dividing by a fraction is the same as multiplying by its reciprocal, so turn the second fraction upside down: (a/b) ÷ (c/d) = (a/b) × (d/c)",
+        "Multiplying fractions means multiplying the numerators together and the denominators together: (a × d) over (b × c)",
+        "So (a/b) ÷ (c/d) = (a × d)/(b × c), provided b, c and d are all non-zero",
+    ],
+    p4: [
+        "Clear the fractions first by multiplying every term by the common denominator of x, 3 and 2, which is 6x",
+        "That gives 6x/x + 6x/3 = 6x/2, so 6 + 2x = 3x",
+        "Subtract 2x from both sides to collect the x terms: 6 = x, so x = 6",
+    ],
+    p5: [
+        "Factorise the top and the bottom first: x + 3 and x + 5 are each already fully factorised, and they have no common factor",
+        "The 3 and the 5 are terms added to x, not factors multiplying the whole expression, so cancelling them across the fraction bar is not allowed",
+        "With nothing common to cancel, this fraction matches: Cannot be simplified",
+    ],
+  },
+  "transposition-and-substitution": {
+    p1: [
+        "The subject must stand alone, so undo the operations in the reverse order to the one that built the right-hand side, starting with the last one: + at",
+        "The inverse of adding at is subtracting at, so subtract u from both sides: v − u = at",
+        "The inverse of multiplying by a is dividing by a, so divide both sides by a: t = (v − u)/a",
+    ],
+    p2: [
+        "The right-hand side was built as r, then squared, then multiplied by π, so undo in the opposite order and divide by π first: A/π = r²",
+        "The inverse of squaring is the square root, and it is taken of the whole side, not of A alone",
+        "So r = √(A/π), taking the positive root because a radius cannot be negative",
+    ],
+    p3: [
+        "The bracket l + b was multiplied by 2, so undo that first by dividing both sides by 2: P/2 = l + b",
+        "Then undo the addition of l by subtracting l from both sides: P/2 − l = b",
+        "Written with the new subject on the left, b = P/2 − l",
+    ],
+    p4: [
+        "Write the formula, then substitute each letter for its number: s = ut + ½at² becomes s = (4 × 5) + ½ × 3 × 5²",
+        "Powers come before multiplication, and the negative-and-square rule means squaring inside the bracket: 5² = 25, so 4 × 5 = 20 and ½ × 3 × 25 = 37.5",
+        "Add the two parts: 20 + 37.5 = 57.5, so s = 57.5",
+    ],
+    p5: [
+        "Substitute the number for the letter and keep it inside a bracket before squaring, because a² means a × a",
+        "So a² = (−2) × (−2), and a negative times a negative is positive: (−2) × (−2) = 4",
+        "So with a = −2, a² = 4 and not −4",
+    ],
+  },
+  "linear-and-quadratic-graphs": {
+    p1: [
+        "Compare the equation with y = mx + c: the number multiplying x is m, the gradient, and the constant on its own is c, the y-intercept, which is the value of y when x = 0",
+        "Here m = 3 and c = 2, so the line rises 3 for every 1 step across and passes through (0, 2)",
+        "So this graph has Gradient 3, intercept 2",
+    ],
+    p2: [
+        "The gradient is the number multiplying x, and here m = −2",
+        "A negative gradient means y decreases as x increases, so the line goes downhill when it is read from left to right",
+        "So this line matches: Falls from left to right",
+    ],
+    p3: [
+        "The highest power of x is 2, so y = ax² + bx + c is a parabola rather than a straight line",
+        "Here a = 1, the coefficient of x², and the sign of a decides which way the curve opens",
+        "a = 1 is positive, so this curve matches: Parabola opening upwards",
+    ],
+    p4: [
+        "The x² term makes this a parabola, and writing it in full as y = −1 × x² + 0 × x + 4 gives a = −1",
+        "A negative a turns the curve over, so it opens downwards instead of upwards",
+        "With a = −1, this curve matches: Parabola opening downwards",
+    ],
+    p5: [
+        "Roots are the x-values where y = 0, so solve x² − 2x − 3 = 0 by finding two numbers that multiply to −3 and add to −2, namely −3 and 1",
+        "So (x − 3)(x + 1) = 0, giving x = 3 from x − 3 = 0 and x = −1 from x + 1 = 0",
+        "Check both in y = x² − 2x − 3: x = 3 gives 9 − 6 − 3 = 0 and x = −1 gives 1 + 2 − 3 = 0, so the roots are x = −1 and x = 3",
     ],
   },
 };
