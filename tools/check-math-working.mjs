@@ -83,13 +83,10 @@ const PENDING = [
   // taxes-and-utility-bills · exchange-rates-and-currency ·
   // insurance-and-budgeting). Emptying a slice out of this list is part of the
   // same PR that authors it (A3), which is why these six are gone from here.
-  // slice B — sets: 6 sets, 31 items
-  "set-notation",
-  "subsets-and-cardinality",
-  "venn-diagrams",
-  "union-intersection-complement",
-  "shading-venn-regions",
-  "set-word-problems",
+  // slice B — sets: 6 sets, 31 items — DONE 2026-11-09, authored in
+  // src/data/mathLessonWorkings.js (set-notation · subsets-and-cardinality ·
+  // venn-diagrams · union-intersection-complement · shading-venn-regions ·
+  // set-word-problems). Gone from here for the same A3 reason as slice A.
   // slice C — number-theory-computation: 8 sets, 46 items
   "types-of-numbers",
   "indices-and-surds",
@@ -711,18 +708,23 @@ if (RED_CONTROL) {
     () => treeEnv({ workingsSrc: 'export const mathLessonWorkings = { "profit-loss-and-discounts": { p99: ["a", "b"] } };\n' }));
 
   // A2 / A3 (data-only, so an in-memory override is enough)
+  // The example lesson in R3/R5/R11/R12 MOVED on 2026-11-09: it was
+  // `venn-diagrams` / `set-notation`, and backfill slice B authored both, so
+  // each control would have been a no-op on the shipped tree (the rule is
+  // unchanged; the example had to move, exactly as it did when slice A
+  // authored profit-loss-and-discounts). `types-of-numbers` is still PENDING.
   await red("R3", "a live set dropped from PENDING and not authored -> A2",
-    [/^A2: 1 live per-lesson set\(s\) are neither authored nor in PENDING: \[venn-diagrams\]/],
-    async () => ({ ...(await realEnv()), pending: PENDING.filter((k) => k !== "venn-diagrams") }));
+    [/^A2: 1 live per-lesson set\(s\) are neither authored nor in PENDING: \[types-of-numbers\]/],
+    async () => ({ ...(await realEnv()), pending: PENDING.filter((k) => k !== "types-of-numbers") }));
   await red("R4", "PENDING naming a key that is not a live set -> A2",
     [/^A2: PENDING ∪ authored names 1 key\(s\) that are not live per-lesson sets: \[mat-geo-bearings\]/],
     async () => ({ ...(await realEnv()), pending: [...PENDING, "mat-geo-bearings"] }));
   await red("R5", "a lesson authored but left in PENDING -> A3",
-    [/^A3: 1 lesson\(s\) are both authored and PENDING: \[venn-diagrams\]/],
+    [/^A3: 1 lesson\(s\) are both authored and PENDING: \[types-of-numbers\]/],
     async () => {
-      // A lesson STILL in PENDING (venn-diagrams), authored in the doctored tree.
-      const first = itemsOf(lessonSets.mathematics["venn-diagrams"])[0].id;
-      return treeEnv({ workingsSrc: `export const mathLessonWorkings = { "venn-diagrams": { ${first}: ["a", "b"] } };\n` });
+      // A lesson STILL in PENDING (types-of-numbers), authored in the doctored tree.
+      const first = itemsOf(lessonSets.mathematics["types-of-numbers"])[0].id;
+      return treeEnv({ workingsSrc: `export const mathLessonWorkings = { "types-of-numbers": { ${first}: ["a", "b"] } };\n` });
     });
 
   // A2b — item granularity (added 2026-11-08, backfill slice A). A2 is set-level,
@@ -803,14 +805,15 @@ if (RED_CONTROL) {
     [/^A7: trig-circle\/t1: the 3-argument lookup returned null/],
     () => treeEnv({ workingSrc: workSrc.replace('  "trig-circle": {', '  "trig-circle-retired": {') }));
 
-  // A8 / A9 — the two rules this PR exists for. Both use set-notation, which is
-  // still PENDING (unauthored): profit-loss-and-discounts was the example until
-  // backfill slice A authored it, so the control moved rather than the rule.
+  // A8 / A9 — the two rules this PR exists for. Both use types-of-numbers, which
+  // is still PENDING (unauthored): profit-loss-and-discounts was the example
+  // until backfill slice A authored it, and set-notation until slice B did, so
+  // the control moved each time rather than the rule being weakened.
   await red("R11", "the old gate: no working means no reveal -> A8 (all 205)",
-    [/^A8: set-notation\/p1: labReveal returned null/],
+    [/^A8: types-of-numbers\/p1: labReveal returned null/],
     () => treeEnv({ workingSrc: workSrc.replace("  return { answer, steps: steps || [] };", "  return steps ? { answer, steps } : null;") }));
   await red("R12", "a placeholder step invented when none is authored -> A9",
-    [/^A9: set-notation\/p1: no working is authored, so steps must be exactly \[\]/],
+    [/^A9: types-of-numbers\/p1: no working is authored, so steps must be exactly \[\]/],
     () => treeEnv({ workingSrc: workSrc.replace("  return { answer, steps: steps || [] };", '  return { answer, steps: steps || ["work it out"] };') }));
 
   // A10 / A11
