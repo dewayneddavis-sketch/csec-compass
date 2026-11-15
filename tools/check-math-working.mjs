@@ -99,10 +99,9 @@ const PENDING = [
   // mat-meas-surface-area-of-solids · mat-meas-measurement-error ·
   // mat-meas-scale-and-scale-drawings). Gone from here for the same A3 reason.
   // slice E — algebra (3 sets, 15 items) + relations-functions-graphs (1, 5): 20
-  "factorization",
-  "algebraic-fractions",
-  "transposition-and-substitution",
-  "linear-and-quadratic-graphs",
+  // items — DONE 2026-11-10, authored in src/data/mathLessonWorkings.js
+  // (factorization · algebraic-fractions · transposition-and-substitution ·
+  // linear-and-quadratic-graphs). Gone from here for the same A3 reason.
   // slice F — geometry-trigonometry (2, 12) + vectors-matrices (1, 5) +
   // statistics-probability (1, 6): 23 items
   "angles-and-polygons",
