@@ -744,14 +744,20 @@
             {
                 "id": "functions",
                 "title": "Introduction to Functions",
-                "content": "A function is a mathematical relationship where each input (x) corresponds to exactly one output (y). We use the notation f(x) to represent the value of the function at x. Think of it as a machine: you drop a number in, the machine performs a specific rule, and one result comes out. If an input could lead to two different outputs, it is a relation but not a function.\n\nEvaluating functions involve substituting a specific value for x into the rule. For example, if f(x) = 2x + 3, then f(5) = 2(5) + 3 = 13. Composite functions like f(g(x)) mean you first apply the function g, and then use that result as the input for f. Inverse functions, denoted f\u207b\u00b9(x), effectively 'undo' the original function, mapping the output back to the input.\n\nTo find the inverse of a linear function, replace f(x) with y, swap x and y, and then solve for the new y. Functions are fundamental to higher mathematics and are frequently tested in CSEC Paper 2, often requiring you to evaluate composites or determine inverse rules.",
+                "content": "A function is a mathematical relationship where each input (x) corresponds to exactly one output (y). We use the notation f(x) to represent the value of the function at x. Think of it as a machine: you drop a number in, the machine performs a specific rule, and one result comes out. If an input could lead to two different outputs, it is a relation but not a function.\n\nEvaluating functions involve substituting a specific value for x into the rule. For example, if f(x) = 2x + 3, then f(5) = 2(5) + 3 = 13. Composite functions like f(g(x)) mean you first apply the function g, and then use that result as the input for f. Inverse functions, denoted f\u207b\u00b9(x), effectively 'undo' the original function, mapping the output back to the input.\n\nTo find the inverse of a linear function, replace f(x) with y, swap x and y, and then solve for the new y. Functions are fundamental to higher mathematics and are frequently tested in CSEC Paper 2, often requiring you to evaluate composites or determine inverse rules.\n\nDomain and range. Every function has a domain and a range, and CSEC asks for both. The domain is the set of inputs the function is allowed to take; the range is the set of outputs it actually produces. For f(x) = 2x + 3 with no restriction stated, the domain is all real numbers and the range is also all real numbers, because 2x + 3 can be made any value you like. Write them as sets or as inequalities: domain {x : x \u2208 \u211d} and range {y : y \u2208 \u211d}, or simply all real numbers.\n\nRestrictions come from the rule and from the question. A fraction cannot have a zero denominator, so for f(x) = 1/(x \u2212 2) the domain is every real number except 2, written x \u2260 2, and the range is every real number except 0, because 1 divided by anything is never zero. A square root cannot take a negative, so for f(x) = \u221ax the domain is x \u2265 0 and the range is y \u2265 0. When the question states a domain, for example f(x) = 2x + 3 for 0 \u2264 x \u2264 5, the range is the set of outputs over that interval: the smallest is f(0) = 3 and the largest is f(5) = 13, so the range is 3 \u2264 y \u2264 13.\n\nTwo habits make domain-and-range questions quick. Find the forbidden inputs first, the value that makes a denominator zero or the values that make a square root negative, and the domain is everything else. Then test the ends of the domain to get the ends of the range, and check whether the rule turns back on itself: a quadratic such as f(x) = x\u00b2 has range y \u2265 0 whatever the domain is, because a square is never negative.",
                 "objectives": [
                     "Understand function notation f(x)",
-                    "Evaluate composite and inverse functions"
+                    "Evaluate composite and inverse functions",
+                    "State the domain and the range of a function",
+                    "Find the values a function cannot take and write the domain as a set or an inequality",
+                    "Find the range from the ends of a stated domain"
                 ],
                 "concepts": [
                     "A function maps an input to a unique output.",
-                    "Inverse function f^-1(x) reverses the mapping."
+                    "Inverse function f^-1(x) reverses the mapping.",
+                    "The domain is the set of allowed inputs and the range is the set of outputs the function produces.",
+                    "A zero denominator or a negative under a square root removes values from the domain.",
+                    "When a domain is stated, the range is the outputs over that interval, found from its ends."
                 ],
                 "experiment": {
                     "type": "function-machine",
@@ -778,6 +784,49 @@
                     "type": "matching-game",
                     "description": "Graph Match: match each linear or quadratic equation to its graph and to its gradient, intercepts or turning point."
                 }
+            },
+            {
+                "id": "mat-rel-linear-programming",
+                "title": "Linear Programming",
+                "content": "Linear Programming is the branch of algebra that finds the best value of a quantity when several straight-line conditions have to be satisfied at once. The conditions are called constraints and each one is a linear inequality in two variables, such as x + y \u2264 4. The quantity you want to make as large as possible, a profit say, or as small as possible, a cost, is written as an objective function, usually P = ax + by. Linear Programming is a method rather than a formula: you build the region, list its corners, and test them.\n\nThe constraints together describe the feasible region: the set of points that satisfy every constraint at the same time. It is the intersection of the half-planes, one from each constraint, and it is a polygon, or empty, or unbounded. The rule for shading one half-plane, drawing the boundary and testing a point, is taught in the Inequalities lesson and is not repeated here. What is new is that every constraint must hold, so the feasible region is what survives all the shading at once.\n\nThe corners of the feasible region are where two boundary lines cross, so you find them by solving the two boundary equations simultaneously. Solving pairs of linear equations is taught in Simultaneous Equations; here the pairs are chosen from the edges of the region, and only the crossings that satisfy every other constraint are kept.\n\nThe corner principle is what makes the method work: a linear objective function takes its greatest and its least value at a corner of the feasible region, never in the middle. So there are four steps. Write the constraints from the words. Find the corners. Work out P at each corner by substituting. State the best corner and say what it means in the question.\n\nWorked example. A workshop makes x of one item and y of another, subject to x + y \u2264 4, x + 2y \u2264 6, x \u2265 0 and y \u2265 0, and we want to maximise P = 3x + 2y. The corners come from pairs of boundary lines. x = 0 and y = 0 cross at (0, 0). x + y = 4 and y = 0 cross at (4, 0), and x + 2y \u2264 6 holds there because 4 \u2264 6. x = 0 and x + 2y = 6 cross at (0, 3), and x + y \u2264 4 holds there because 3 \u2264 4. x + y = 4 and x + 2y = 6 are solved simultaneously: subtracting gives y = 2 and then x = 2, so the corner is (2, 2). Testing each corner in P = 3x + 2y: (0, 0) gives P = 0; (4, 0) gives P = 3 \u00d7 4 + 2 \u00d7 0 = 12, so P = 12; (0, 3) gives P = 3 \u00d7 0 + 2 \u00d7 3 = 6, so P = 6; (2, 2) gives P = 3 \u00d7 2 + 2 \u00d7 2 = 10, so P = 10. The greatest value is 12 at (4, 0), so the workshop should make 4 of the first item and none of the second.\n\nTwo things go wrong most often. A crossing that satisfies the two lines you solved but breaks a third constraint is not on the feasible region and must be thrown away, so always check the other constraints. And the number is not the answer on its own: a maximum P = 12 is half an answer until you say what x and y are and what they stand for.",
+                "objectives": [
+                    "Write the constraints of a linear programming problem from a word description",
+                    "Find the feasible region as the intersection of the half-planes",
+                    "Find each corner point by solving two boundary equations simultaneously",
+                    "Test the objective function P = ax + by at every corner",
+                    "State the optimum value and what it means in the context of the problem"
+                ],
+                "concepts": [
+                    "Linear Programming: the constraints are linear inequalities and the feasible region is their intersection.",
+                    "A corner is found by solving two boundary equations simultaneously, then checked against the other constraints.",
+                    "A linear objective function P = ax + by is greatest or least at a corner of the feasible region.",
+                    "The half-plane test-point rule is in Inequalities; this lesson does not repeat it."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Linear Programming Corner Match: drag each corner of the feasible region to the value of P = 3x + 2y it gives."
+                }
+            },
+            {
+                "id": "mat-rel-non-linear-functions",
+                "title": "Non-Linear Functions and Applications",
+                "content": "Non-Linear Functions and Applications covers the graph families that are neither straight lines nor parabolas, and the way a graph of a journey answers a question. Three families matter at CSEC, the reciprocal graph, the exponential graph and the cubic graph, and the fourth subject is the travel graph that reads a journey. Each has a shape you should recognise from its equation alone, because the shape is what the exam asks about.\n\nThe reciprocal graph is y = 1/x. Its graph is two separate branches, one in the first quadrant and one in the third, and it never touches either axis: as x grows the value shrinks towards zero, and as x approaches zero the value grows without limit. The two axes it never reaches are asymptotes. Inverse variation y = k/x is the same family scaled by k, and the Variation lesson already establishes that the k/x curve never touches either axis; what this lesson adds is the family as a whole, the shape of y = 1/x, its two branches and its asymptotes.\n\nAn exponential graph has the variable in the index: y = a\u02e3, with a positive and not equal to 1. Build a table and the pattern is a constant multiplier. For y = 2\u02e3 the values at x = 0, 1, 2, 3 and 4 are 1, 2, 4, 8 and 16, so each step doubles and the graph climbs faster and faster with the x-axis as an asymptote on the left. When 0 < a < 1 the same table shows decay: y = (1/2)\u02e3 gives 1, 1/2, 1/4 and 1/8, so the curve falls towards the x-axis. Growth or decay by a constant factor is the signature of an exponential.\n\nA cubic graph has x\u00b3 as its highest power: y = x\u00b3, or more generally y = ax\u00b3 + bx\u00b2 + cx + d. The graph of y = x\u00b3 passes through the origin, is negative for negative x and positive for positive x, and flattens for a moment at the origin before climbing again. A cubic can cross the x-axis up to three times, so it can have as many as three roots, and it has at least one, because the curve comes up from far below and goes far above. The parabola, which has at most two roots, is in Linear and Quadratic Graphs.\n\nA travel graph is a distance-time graph or a speed-time graph read for its gradient and its area. On a distance-time graph the gradient is the speed: a steeper line is faster, a horizontal line is stopped, and a line sloping down means the journey is coming back. On a speed-time graph the area under the line is the distance travelled and the gradient is the acceleration. Speed as distance divided by time is in SI Units, Conversion and Rates; the travel graph adds the reading of the shape.\n\nIn one line each: the reciprocal is y = 1/x, two branches that never touch either axis; the exponential is y = 2\u02e3, multiplied by the same factor at every step; the cubic is y = x\u00b3, with up to three roots; and the travel graph is read for the gradient, because on a distance-time graph the gradient is the speed, and for the area, because on a speed-time graph the area under it is the distance travelled.\n\nReading a graph is a skill of its own, so state what each part means: the axes and their units, the gradient, and the area if it is a speed-time graph. A non-linear graph is not just a curve, so say which family it is and why the equation says so.",
+                "objectives": [
+                    "Recognise the reciprocal graph y = 1/x, its two branches and its asymptotes",
+                    "Plot an exponential y = a\u02e3 from a table and tell growth from decay",
+                    "Describe the shape of a cubic and the number of roots it can have",
+                    "Read a travel graph: the gradient of a distance-time graph is speed, the area under a speed-time graph is distance"
+                ],
+                "concepts": [
+                    "The reciprocal y = 1/x has two branches and never touches either axis; those axes are its asymptotes.",
+                    "An exponential y = a\u02e3 multiplies by the same factor at every step: growth when a > 1, decay when 0 < a < 1.",
+                    "A cubic has x\u00b3 as its highest power and can have up to three roots.",
+                    "On a distance-time graph the gradient is the speed; on a speed-time graph the area is the distance."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Non-Linear Graph Sorter: sort each equation, description or graph reading into the family it belongs to."
+                }
             }
         ]
     },
@@ -788,12 +837,18 @@
             {
                 "id": "pythagoras-theorem",
                 "title": "Pythagoras' Theorem",
-                "content": "Pythagoras' Theorem is a fundamental principle in geometry that relates the lengths of the sides of a right-angled triangle. It states that the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides. This is expressed as the famous formula: a\u00b2 + b\u00b2 = c\u00b2, where c is the hypotenuse.\n\nThe hypotenuse is always the longest side of a right-angled triangle. If you know the lengths of any two sides, you can use the theorem to find the third. For example, if the two shorter sides are 3cm and 4cm, then 3\u00b2 + 4\u00b2 = 9 + 16 = 25. Since c\u00b2 = 25, the hypotenuse c = \u221a25 = 5cm.\n\nIn CSEC exams, Pythagoras' Theorem is often applied to real-world scenarios, such as finding the height of a ladder leaning against a wall or the distance across a rectangular field. It is also a building block for trigonometry and coordinate geometry. Remember: this theorem *only* applies to right-angled triangles!",
+                "content": "Pythagoras' Theorem is a fundamental principle in geometry that relates the lengths of the sides of a right-angled triangle. It states that the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides. This is expressed as the famous formula: a\u00b2 + b\u00b2 = c\u00b2, where c is the hypotenuse.\n\nThe hypotenuse is always the longest side of a right-angled triangle. If you know the lengths of any two sides, you can use the theorem to find the third. For example, if the two shorter sides are 3cm and 4cm, then 3\u00b2 + 4\u00b2 = 9 + 16 = 25. Since c\u00b2 = 25, the hypotenuse c = \u221a25 = 5cm.\n\nIn CSEC exams, Pythagoras' Theorem is often applied to real-world scenarios, such as finding the height of a ladder leaning against a wall or the distance across a rectangular field. It is also a building block for trigonometry and coordinate geometry. Remember: this theorem *only* applies to right-angled triangles!\n\nWorked problems on real objects. A ladder 5 m long leans against a wall with its foot 3 m from the wall. The ladder is the hypotenuse, because it is opposite the right angle where the wall meets the ground, so the height up the wall is a shorter side: 3\u00b2 + h\u00b2 = 5\u00b2, so 9 + h\u00b2 = 25, h\u00b2 = 16 and h = 4, which means the ladder reaches 4 m up the wall. The missing side here is not the hypotenuse, so the squares are subtracted rather than added.\n\nA television is sold by the length of its diagonal. A screen 80 cm wide and 45 cm high has a diagonal d with d\u00b2 = 80\u00b2 + 45\u00b2 = 6400 + 2025 = 8425, so d = \u221a8425 = 91.8 cm to one decimal place. The diagonal is the hypotenuse because it runs corner to corner across the right angle between the width and the height.\n\nA rectangular field measures 24 m by 7 m, and the path from one corner to the opposite corner is the diagonal: d\u00b2 = 24\u00b2 + 7\u00b2 = 576 + 49 = 625, so d = 25 m. A field 30 m by 16 m has d\u00b2 = 900 + 256 = 1156 and d = 34 m.\n\nTwo habits keep these right. Decide which side is the hypotenuse before substituting, and it is always the side opposite the right angle, which is the longest side. Then check that the hypotenuse you found is longer than each of the two shorter sides, because it must be.",
                 "objectives": [
-                    "Apply Pythagoras' theorem to find missing sides of right-angled triangles"
+                    "Apply Pythagoras' theorem to find missing sides of right-angled triangles",
+                    "Decide which side is the hypotenuse in a real-world right-angled triangle",
+                    "Rearrange a\u00b2 + b\u00b2 = c\u00b2 to find a shorter side",
+                    "Work a ladder, a television diagonal and a field diagonal as the same calculation"
                 ],
                 "concepts": [
-                    "In a right-angled triangle: a^2 + b^2 = c^2, where c is the hypotenuse."
+                    "In a right-angled triangle: a^2 + b^2 = c^2, where c is the hypotenuse.",
+                    "Identify the hypotenuse first: it is opposite the right angle and is the longest side.",
+                    "To find a shorter side, subtract: b\u00b2 = c\u00b2 \u2212 a\u00b2.",
+                    "A ladder, a television diagonal and a field diagonal are all the same right-triangle calculation."
                 ],
                 "experiment": {
                     "type": "interactive-triangle",
@@ -803,15 +858,21 @@
             {
                 "id": "trig-ratios",
                 "title": "Trigonometric Ratios (SOH CAH TOA)",
-                "content": "Trigonometry is the study of the relationships between the angles and sides of triangles. For right-angled triangles, we use three primary ratios: Sine (sin), Cosine (cos), and Tangent (tan). These are easily remembered using the acronym SOH CAH TOA.\n\nSOH stands for Sin \u03b8 = Opposite / Hypotenuse. CAH stands for Cos \u03b8 = Adjacent / Hypotenuse. TOA stands for Tan \u03b8 = Opposite / Adjacent. The 'Opposite' side is the one across from the angle \u03b8 you are using, the 'Adjacent' side is the one next to it (that isn't the hypotenuse), and the 'Hypotenuse' is always the longest side across from the 90-degree angle.\n\nYou can use these ratios to find missing side lengths or missing angles. When finding an angle, you'll need the 'inverse' functions on your calculator (sin\u207b\u00b9, cos\u207b\u00b9, or tan\u207b\u00b9). Trigonometry is essential for fields like navigation, construction, and engineering. In CSEC, you'll often encounter problems involving angles of elevation and depression, which require careful labelling of the triangle before applying the correct ratio.",
+                "content": "Trigonometry is the study of the relationships between the angles and sides of triangles. For right-angled triangles, we use three primary ratios: Sine (sin), Cosine (cos), and Tangent (tan). These are easily remembered using the acronym SOH CAH TOA.\n\nSOH stands for Sin \u03b8 = Opposite / Hypotenuse. CAH stands for Cos \u03b8 = Adjacent / Hypotenuse. TOA stands for Tan \u03b8 = Opposite / Adjacent. The 'Opposite' side is the one across from the angle \u03b8 you are using, the 'Adjacent' side is the one next to it (that isn't the hypotenuse), and the 'Hypotenuse' is always the longest side across from the 90-degree angle.\n\nYou can use these ratios to find missing side lengths or missing angles. When finding an angle, you'll need the 'inverse' functions on your calculator (sin\u207b\u00b9, cos\u207b\u00b9, or tan\u207b\u00b9). Trigonometry is essential for fields like navigation, construction, and engineering. In CSEC, you'll often encounter problems involving angles of elevation and depression, which require careful labelling of the triangle before applying the correct ratio.\n\nWorked side. A right-angled triangle has an angle \u03b8 = 35\u00b0 and a hypotenuse of 12 cm, and we want the side opposite \u03b8. The side we want is the opposite and the side we know is the hypotenuse, so the ratio that connects them is SOH: sin \u03b8 = opposite \u00f7 hypotenuse. Substituting, sin 35\u00b0 = opposite \u00f7 12, and sin 35\u00b0 = 0.5736, so opposite = 12 \u00d7 0.5736 = 6.88 cm. The answer is smaller than the hypotenuse, which it must be, because the hypotenuse is the longest side.\n\nWorked angle. A right-angled triangle has an opposite side of 5 cm and an adjacent side of 8 cm, and we want the angle \u03b8. The two sides we know are the opposite and the adjacent, so the ratio is TOA: tan \u03b8 = opposite \u00f7 adjacent = 5 \u00f7 8 = 0.625. To turn a ratio back into an angle we use the inverse function: \u03b8 = tan\u207b\u00b9 0.625 = 32.0\u00b0. The inverse keys sin\u207b\u00b9, cos\u207b\u00b9 and tan\u207b\u00b9 are what turn a ratio into an angle, and they sit on the same calculator key as the ratio itself.\n\nExact values. Some angles have exact values that CSEC expects you to know without a calculator. cos 60\u00b0 = 1/2 = 0.5. sin 30\u00b0 = 1/2 = 0.5. cos 30\u00b0 = 0.866, and sin 60\u00b0 is the same 0.866. tan 45\u00b0 = 1, because at 45\u00b0 the opposite and the adjacent sides are equal. The two that get confused are cos 60\u00b0 and cos 30\u00b0: cos 60\u00b0 is the 0.5 and cos 30\u00b0 is the 0.866, so answering 0.866 for cos 60\u00b0 is the standard slip.\n\nAngles of elevation and depression are the other half of the topic. The angle of elevation is measured up from the horizontal to an object above, the angle of depression is measured down from the horizontal to an object below, and the two are equal as alternate angles between the parallel horizontals. In a CSEC problem the diagram decides the ratio, so draw and label the triangle before reaching for the calculator.",
                 "objectives": [
                     "Define sine, cosine, and tangent ratios",
-                    "Use trig ratios to find angles and sides"
+                    "Use trig ratios to find angles and sides",
+                    "Find a missing side with sin, cos or tan",
+                    "Find a missing angle with the inverse functions",
+                    "Know the exact values for 30\u00b0, 45\u00b0 and 60\u00b0"
                 ],
                 "concepts": [
                     "SOH: Sin = Opposite / Hypotenuse",
                     "CAH: Cos = Adjacent / Hypotenuse",
-                    "TOA: Tan = Opposite / Adjacent"
+                    "TOA: Tan = Opposite / Adjacent",
+                    "Label the opposite and the adjacent relative to the angle you are using.",
+                    "To find a side, substitute into the ratio; to find an angle, use the inverse function.",
+                    "Exact values: cos 60\u00b0 = 0.5, sin 30\u00b0 = 0.5, cos 30\u00b0 = 0.866, tan 45\u00b0 = 1."
                 ],
                 "experiment": {
                     "type": "trig-circle",
@@ -827,18 +888,26 @@
             {
                 "id": "angles-and-polygons",
                 "title": "Angles and Polygons",
-                "content": "Most angle questions are solved from a small set of facts. Angles on a straight line add to 180\u00b0 and angles at a point add to 360\u00b0; vertically opposite angles are equal. When a transversal crosses parallel lines, corresponding angles are equal, alternate angles are equal and co-interior (allied) angles add to 180\u00b0. Identify the fact you are using and, in a proof question, write the reason beside each step.\n\nIn any triangle the three interior angles add to 180\u00b0, and an exterior angle equals the sum of the two opposite interior angles. Any quadrilateral has interior angles adding to 360\u00b0. For a polygon with n sides, the interior angles add to (n \u2014 2) \u00d7 180\u00b0, and the exterior angles always add to 360\u00b0 whatever the number of sides. A regular polygon has equal sides and equal angles, so each exterior angle is 360\u00b0/n and each interior angle is 180\u00b0 \u2014 360\u00b0/n.\n\nWorked example. A regular polygon has 12 sides: each exterior angle is 360\u00b0 \u00f7 12 = 30\u00b0, so each interior angle is 180\u00b0 \u2014 30\u00b0 = 150\u00b0, and the interior angles total (12 \u2014 2) \u00d7 180\u00b0 = 1800\u00b0, which agrees with 12 \u00d7 150\u00b0 = 1800\u00b0. These facts also explain why regular hexagons, squares and equilateral triangles tile a floor: their interior angles divide exactly into 360\u00b0.",
+                "content": "Most angle questions are solved from a small set of facts. Angles on a straight line add to 180\u00b0 and angles at a point add to 360\u00b0; vertically opposite angles are equal. When a transversal crosses parallel lines, corresponding angles are equal, alternate angles are equal and co-interior (allied) angles add to 180\u00b0. Identify the fact you are using and, in a proof question, write the reason beside each step.\n\nIn any triangle the three interior angles add to 180\u00b0, and an exterior angle equals the sum of the two opposite interior angles. Any quadrilateral has interior angles adding to 360\u00b0. For a polygon with n sides, the interior angles add to (n \u2014 2) \u00d7 180\u00b0, and the exterior angles always add to 360\u00b0 whatever the number of sides. A regular polygon has equal sides and equal angles, so each exterior angle is 360\u00b0/n and each interior angle is 180\u00b0 \u2014 360\u00b0/n.\n\nWorked example. A regular polygon has 12 sides: each exterior angle is 360\u00b0 \u00f7 12 = 30\u00b0, so each interior angle is 180\u00b0 \u2014 30\u00b0 = 150\u00b0, and the interior angles total (12 \u2014 2) \u00d7 180\u00b0 = 1800\u00b0, which agrees with 12 \u00d7 150\u00b0 = 1800\u00b0. These facts also explain why regular hexagons, squares and equilateral triangles tile a floor: their interior angles divide exactly into 360\u00b0.\n\nAngles are classified by size. An acute angle is less than 90\u00b0, a right angle is exactly 90\u00b0, an obtuse angle is between 90\u00b0 and 180\u00b0, a straight angle is exactly 180\u00b0, a reflex angle is between 180\u00b0 and 360\u00b0, and a complete turn is 360\u00b0. Naming the type is often the first mark in a question, and it is also a check: a calculation that gives 210\u00b0 for an angle you can see is acute has gone wrong.\n\nTriangles are classified twice over. By sides: an equilateral triangle has three equal sides and three equal angles of 60\u00b0, an isosceles triangle has two equal sides and the two angles opposite them equal, and a scalene triangle has no equal sides and no equal angles. By angles: an acute-angled triangle has all three angles acute, a right-angled triangle has one angle of 90\u00b0, and an obtuse-angled triangle has one obtuse angle. Both classifications apply to the same triangle at once, so a triangle can be isosceles and obtuse.\n\nQuadrilaterals are named by their sides and angles. A square has four equal sides and four right angles. A rectangle has four right angles and opposite sides equal. A parallelogram has both pairs of opposite sides parallel and equal, with opposite angles equal. A rhombus is a parallelogram with all four sides equal. A trapezium has exactly one pair of parallel sides. A kite has two pairs of adjacent sides equal.\n\nThe properties that follow from those definitions are the ones proofs use. The diagonals of a parallelogram bisect each other. The diagonals of a rectangle are equal and bisect each other. The diagonals of a rhombus bisect each other at 90\u00b0 and bisect the angles at the vertices. The diagonals of a square do all of that. The diagonals of a kite meet at 90\u00b0. A parallelogram has opposite angles equal, and angles on the same side between the parallel sides add to 180\u00b0.\n\nTwo triangles are congruent when they are the same size and the same shape, and there are four tests: SSS, three sides equal; SAS, two sides and the angle between them equal; ASA, two angles and the side between them equal; and RHS, a right angle, the hypotenuse and one other side equal. AAA is not a test, because equal angles give the same shape but not the same size, and that is similarity.\n\nTwo triangles are similar when their angles are equal and their sides are in the same ratio, so each side of one is k times the matching side of the other. Equal angles alone are enough to prove similarity, because the third angle is then forced. The ratio of the areas of two similar figures is k\u00b2, the square of the length ratio: the Transformations lesson already establishes that areas scale by the square of the scale factor, so this is a cross-reference and not a new derivation.",
                 "objectives": [
                     "Use the angle facts for straight lines, points, parallel lines and triangles",
                     "Find interior and exterior angles of polygons using (n \u2014 2) \u00d7 180\u00b0 and 360\u00b0/n",
                     "Calculate angles in a regular polygon and decide whether a shape will tessellate",
-                    "Give a reason for each step in an angle calculation"
+                    "Give a reason for each step in an angle calculation",
+                    "Classify angles as acute, right, obtuse, straight or reflex",
+                    "Classify triangles by their sides and by their angles",
+                    "Name quadrilaterals and use their diagonal and angle properties",
+                    "Test two triangles for congruence with SSS, SAS, ASA or RHS, and for similarity with equal angles and a side ratio"
                 ],
                 "concepts": [
                     "Straight line 180\u00b0, point 360\u00b0, parallel-line facts: corresponding and alternate equal, co-interior summing to 180\u00b0.",
                     "Triangle interior angles 180\u00b0; exterior angle = sum of the two opposite interior angles.",
                     "Polygon interior angle sum = (n \u2014 2) \u00d7 180\u00b0; exterior angle sum = 360\u00b0.",
-                    "Regular polygon: each exterior angle = 360\u00b0/n, each interior angle = 180\u00b0 \u2014 360\u00b0/n."
+                    "Regular polygon: each exterior angle = 360\u00b0/n, each interior angle = 180\u00b0 \u2014 360\u00b0/n.",
+                    "Acute is under 90\u00b0, right is 90\u00b0, obtuse is between 90\u00b0 and 180\u00b0, straight is 180\u00b0 and reflex is between 180\u00b0 and 360\u00b0.",
+                    "Equilateral, isosceles and scalene by sides; acute-angled, right-angled and obtuse-angled by angles.",
+                    "Square, rectangle, parallelogram, rhombus, trapezium and kite, with their diagonal properties.",
+                    "Congruence: SSS, SAS, ASA, RHS. Similarity: equal angles and a side ratio k, with areas in the ratio k\u00b2."
                 ],
                 "experiment": {
                     "type": "classifier-sim",
@@ -864,6 +933,90 @@
                 "experiment": {
                     "type": "matching-game",
                     "description": "Circle Theorem Match: match each given angle fact in a circle diagram to the theorem that justifies it."
+                }
+            },
+            {
+                "id": "mat-geo-geometric-drawing-and-constructions",
+                "title": "Geometric Drawing and Constructions",
+                "content": "Geometric Drawing and Measurement is about using the instruments properly, and Geometric Constructions is about building an exact figure with them. Three instruments do all the work: a ruler, a protractor and a pair of compasses. The ruler measures to the nearest millimetre, so a length is written to one decimal place in centimetres, such as 4.7 cm, and not as about 5 cm. The protractor has two scales running in opposite directions, so read the one that starts at zero on the arm you are measuring from, and check that the reading is sensible for the angle you can see: a half turn is 180\u00b0 and a quarter turn is 90\u00b0, so a reading of 150\u00b0 where the angle is plainly acute means the wrong scale was used.\n\nConstructions are done with compasses and a straight edge only, with no measuring of lengths and no measuring of angles. The compasses are set to one radius and the same radius is used twice, which is why a construction is exact rather than approximate. The equal-radius reasoning is the whole proof: two arcs of the same radius meet at a point that is the same distance from both centres, so every point is the same distance from A and from B on the perpendicular bisector of AB.\n\nThe five constructions to know. The perpendicular bisector of AB: arcs of equal radius from A and from B, on both sides of the segment, joined through the two crossings. The bisector of an angle: an arc across both arms from the vertex, then equal arcs from the two crossings, joined back to the vertex, so the bisector of an angle gives two equal angles at the vertex. The perpendicular from a point to a line: an arc from the point cutting the line twice, then equal arcs from those two points, joined to the given point, and the perpendicular from a point to a line gives the shortest distance from the point to the line. Constructing 60\u00b0: an arc from one end of a segment, the same radius again from the other end, and the crossing joined to each end, so constructing 60\u00b0 gives an equilateral triangle on the same radius and every angle of it is 60\u00b0. Copying an angle: an arc from the vertex of the given angle, then the same arc drawn from the new vertex, the gap between the two crossings taken with the compasses and stepped across, and the line drawn through.\n\nLeave the construction arcs on the paper. In a CSEC construction question the arcs are the evidence that compasses were used, and a clean figure with no arcs cannot show that the construction was done rather than guessed. Mark the equal radii with the same letter when you need to justify a step.\n\nConstructions are exact and drawings to scale are approximate, and they are different jobs. The ratio maths of a scale drawing, the map scale and the area scale factor are in Scale and Scale Drawings, including the fact that a drawing to scale can be used to measure an angle. What this lesson owns is the instruments and the compass work.",
+                "objectives": [
+                    "Geometric Drawing and Measurement: measure a length to the nearest millimetre and an angle with the correct protractor scale",
+                    "Geometric Constructions: construct a perpendicular bisector, an angle bisector and a perpendicular from a point",
+                    "Construct an angle of 60\u00b0 and copy a given angle using compasses only",
+                    "Explain a construction with the equal-radius reasoning"
+                ],
+                "concepts": [
+                    "Measure to the nearest millimetre and read the protractor scale that starts at zero on the arm you measure from.",
+                    "Constructions use compasses and a straight edge only, and the arcs are left on the paper.",
+                    "Equal radii put the crossing point the same distance from both centres, which is the equal-radius reasoning."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Construction Match: drag each construction to the exact result its equal-radius arcs produce."
+                }
+            },
+            {
+                "id": "mat-geo-symmetry",
+                "title": "Symmetry of Plane Figures",
+                "content": "Symmetry of Plane Figures is counted, not admired. A shape has line symmetry when a straight fold through it lands one half exactly on the other, the fold is a line of symmetry, and the number of them is something you can state. A shape has rotational symmetry when a turn of less than a full turn about its centre lands the shape on itself, and the order of rotational symmetry is how many different turns do that before a full turn brings it back. Order 1 means the only turn that works is the full turn, and that is the same as having no rotational symmetry at all.\n\nThe counts. Square: 4 lines of symmetry and rotational order 4. Rectangle: 2 lines and order 2, the two lines joining the midpoints of opposite sides, because the diagonals of a rectangle are not lines of symmetry. Equilateral triangle: 3 lines and order 3. Isosceles triangle: 1 line and order 1. Rhombus: 2 lines and order 2. Kite: 1 line and order 1. Parallelogram: 0 lines and order 2, so it has rotational symmetry and no line symmetry at all. Regular pentagon: 5 lines and order 5. A regular n-gon has n lines of symmetry and rotational order n. A circle has infinitely many lines of symmetry, because every diameter is one.\n\nTwo traps. A parallelogram is the standard surprise: it turns onto itself and it never folds onto itself, so 0 lines with order 2 is not a contradiction. And the diagonal of a rectangle is not a line of symmetry, because folding a rectangle along a diagonal sends one corner past the other, which you can check by eye on any sheet of paper.\n\nPut together, the four cases are: both line and rotational symmetry, for the square, the rectangle, the equilateral triangle and the regular pentagon; line symmetry only, for the isosceles triangle and the kite; rotational symmetry only, for the parallelogram; and no symmetry of either kind, for the scalene triangle.\n\nRotational symmetry is not the same subject as the transformations. Transformations are the mappings, reflection, rotation, translation and enlargement, and symmetry is a property a single shape has. This lesson counts lines and orders, and it does not re-teach the mappings or the properties of quadrilaterals, which belong with Angles and Polygons.",
+                "objectives": [
+                    "Count the lines of symmetry of a plane figure",
+                    "Find the order of rotational symmetry of a plane figure",
+                    "Know the counts for the square, rectangle, rhombus, parallelogram, kite, equilateral and isosceles triangle, regular n-gon and circle",
+                    "Tell line symmetry from rotational symmetry, and explain why a parallelogram has one and not the other"
+                ],
+                "concepts": [
+                    "Line symmetry: a fold that lands one half on the other, and the number of such folds is the count.",
+                    "Rotational symmetry: a turn of less than 360\u00b0 that lands the shape on itself, and the number of such turns is the order.",
+                    "Order 1 means no rotational symmetry.",
+                    "A regular n-gon has n lines of symmetry and rotational order n, and a circle has infinitely many lines.",
+                    "A parallelogram has 0 lines of symmetry and rotational order 2."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Symmetry Sorter: sort each plane figure into the symmetry it has."
+                }
+            },
+            {
+                "id": "mat-geo-sine-and-cosine-rules",
+                "title": "Sine and Cosine Rules",
+                "content": "The Sine Rule and the Cosine Rule extend trigonometry to triangles that are not right-angled. SOH CAH TOA needs a right angle; these two rules do not, and choosing between them is decided by what you are given, not by what you want.\n\nThe Sine Rule: in any triangle a/sin A = b/sin B = c/sin C, where a is the side opposite angle A and so on. In that side form it finds a side when you know two angles and one opposite side. Turned upside down it reads sin A/a = sin B/b = sin C/c and finds an angle when you know two sides and the angle opposite one of them. Use the pair you know and the pair you want, then cross-multiply.\n\nThe Cosine Rule: a\u00b2 = b\u00b2 + c\u00b2 \u2212 2bc cos A, where A is the angle between sides b and c. Rearranged for an angle it is cos A = (b\u00b2 + c\u00b2 \u2212 a\u00b2)/(2bc). Use it when you know two sides and the angle between them, to find the third side, or all three sides, to find an angle.\n\nChoosing the rule. Two sides and the angle between them: use the Cosine Rule. Three sides: use the Cosine Rule rearranged for an angle. Two angles and one opposite side: use the Sine Rule. Two sides and an angle that is not between them: use the Sine Rule, and be ready for two possible triangles. The bridge to Pythagoras is exact: put A = 90\u00b0 in the Cosine Rule, cos 90\u00b0 is 0, the last term vanishes and a\u00b2 = b\u00b2 + c\u00b2, so Pythagoras is the right-angled case of the Cosine Rule rather than a different theorem.\n\nWorked examples. In a triangle with A = 40\u00b0, B = 65\u00b0, a = 8 cm, the Sine Rule gives b = 8 \u00d7 sin 65\u00b0 \u00f7 sin 40\u00b0 = 8 \u00d7 0.9063 \u00f7 0.6428 = 11.28 cm, so b = 11.28 cm. In a triangle with a = 7 cm, b = 9 cm, C = 50\u00b0, the Cosine Rule gives c\u00b2 = 49 + 81 \u2212 2 \u00d7 7 \u00d7 9 \u00d7 cos 50\u00b0 = 130 \u2212 126 \u00d7 0.6428 = 49.01, so c = 7.00 cm. In a triangle with a = 5 cm, b = 8 cm, c = 7 cm, the Cosine Rule rearranged gives cos A = (64 + 49 \u2212 25) \u00f7 (2 \u00d7 8 \u00d7 7) = 88 \u00f7 112 = 0.7857, so A = 38.2\u00b0.\n\nThe area of a triangle from two sides and the included angle, 1/2 \u00d7 a \u00d7 b \u00d7 sin C, and the segment formula, are in Perimeter, Area and Volume. This lesson owns the two rules for triangles that have no right angle.",
+                "objectives": [
+                    "Use the Sine Rule in side form and in angle form",
+                    "Use the Cosine Rule to find a side and to find an angle",
+                    "Choose between the Sine Rule and the Cosine Rule from what the question gives",
+                    "Show that the Cosine Rule becomes Pythagoras' theorem at A = 90\u00b0"
+                ],
+                "concepts": [
+                    "Sine Rule: a/sin A = b/sin B = c/sin C, and sin A/a = sin B/b = sin C/c.",
+                    "Cosine Rule: a\u00b2 = b\u00b2 + c\u00b2 \u2212 2bc cos A and cos A = (b\u00b2 + c\u00b2 \u2212 a\u00b2)/(2bc).",
+                    "Two sides and the included angle, or three sides: the Cosine Rule. Two angles and an opposite side, or two sides and a non-included angle: the Sine Rule.",
+                    "At A = 90\u00b0 the Cosine Rule collapses to a\u00b2 = b\u00b2 + c\u00b2."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Rule and Answer Match: drag each triangle description to the value the correct rule gives."
+                }
+            },
+            {
+                "id": "mat-geo-bearings",
+                "title": "Problems Involving Bearings",
+                "content": "A bearing is a direction measured from north. A three-figure bearing is always written with three figures, measured clockwise from north, and never more than 360\u00b0: due north is 000\u00b0, due east is 090\u00b0, due south is 180\u00b0 and due west is 270\u00b0. The three figures are not decoration, because 25\u00b0 written as 025\u00b0 shows at once that north is the reference and that the turn is clockwise.\n\nEvery point in a bearings problem has its own north line, and all those north lines are parallel. That one fact does most of the work, because it turns the diagram into a parallel-lines question. Draw a small north arrow at each point and measure the bearing from that arrow, clockwise.\n\nThe back bearing is the bearing of the first point seen from the second, and it differs from the forward bearing by 180\u00b0: add 180\u00b0 when the bearing is less than 180\u00b0, and subtract 180\u00b0 when it is more. So the back bearing of 070\u00b0 is 250\u00b0, and the back bearing of 130\u00b0 is 310\u00b0.\n\nTo find an angle inside the diagram, use the two north lines. The bearing of PQ is the angle at P measured from the north line; at Q the north line is parallel to it, so the angle between QP and the north line at Q is the back bearing. The interior angle at Q is the difference between the two bearings measured at Q.\n\nWorked example. A ship sails 8 km from P on a bearing of 070\u00b0, then 6 km from Q on a bearing of 130\u00b0, and we want the distance PR. At Q the north line is parallel to the one at P, so the interior angle between QP and QR is the difference between the back bearing of 070\u00b0, which is 250\u00b0, and the bearing 130\u00b0, and that is 120\u00b0. The Cosine Rule then gives PR\u00b2 = 8\u00b2 + 6\u00b2 \u2212 2 \u00d7 8 \u00d7 6 \u00d7 cos 120\u00b0 = 64 + 36 + 48 = 148, so PR = 12.17 km. The plus sign appears because cos 120\u00b0 is negative, so the two negative signs cancel.\n\nA scale drawing is the check, not the method: draw the north lines and the two legs to scale with a protractor, then measure the answer, and if the drawing and the calculation disagree by more than the thickness of a pencil line then one of them is wrong. Angles of elevation and depression are the other use of trigonometry in navigation, and they belong with Trigonometric Ratios; bearings owns the three-figure notation, the north lines, the back bearings and the multi-leg problems.",
+                "objectives": [
+                    "Write and read a three-figure bearing measured clockwise from north",
+                    "Draw the north line at each point and use the parallel north lines to find an interior angle",
+                    "Convert between a bearing and its back bearing by adding or subtracting 180\u00b0",
+                    "Solve a two-leg bearings problem with the Cosine Rule or the Sine Rule"
+                ],
+                "concepts": [
+                    "A three-figure bearing is measured clockwise from north and written with three figures: 025\u00b0, 130\u00b0, 310\u00b0.",
+                    "The north lines at different points are parallel, which is what turns a bearings diagram into a parallel-lines question.",
+                    "Back bearing: add 180\u00b0 to a bearing under 180\u00b0, subtract 180\u00b0 from one over 180\u00b0.",
+                    "The interior angle comes from the two north lines, then the Cosine Rule or the Sine Rule finishes the problem."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Bearing Match: drag each direction or back bearing to its three-figure bearing."
                 }
             }
         ]

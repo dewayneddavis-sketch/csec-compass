@@ -373,6 +373,25 @@ function unauthoredExample(base) {
   return { lessonId: SYNTHETIC_PENDING_LESSON, synthetic: true };
 }
 
+// A REAL lesson that owns NO per-lesson set — DERIVED, never hand-typed.
+//
+// R1 and R4 used to name `mat-geo-bearings` by hand. Slice 5 (2026-11-15) gave
+// that id a real lesson AND a real per-lesson set, so R1's fixture became an
+// authored set (A1 stopped firing) and R4's phantom key became a live set (A2
+// stopped firing) — both controls went quiet while still counting themselves as
+// controls. That is the same rot as a hand-typed PENDING pointer, and it gets
+// the same cure: derive the example, and THROW when the tree cannot supply one.
+function noSetLessonId(env) {
+  const id = (env.lessonIds || []).find((k) => !Object.prototype.hasOwnProperty.call(env.sets || {}, k));
+  if (!id) {
+    throw new Error(
+      "red controls: no live lesson owns no per-lesson set — R1 and R4 have no example, " +
+      "so they would pass without proving anything."
+    );
+  }
+  return id;
+}
+
 // An env in which the example lesson is a LIVE, UNAUTHORED set that is listed in
 // PENDING — the state R3/R5/R11/R12 each doctor one field of. `expectedItems` is
 // recomputed from the resulting sets on purpose (same rule as R22/R23): a count
@@ -909,11 +928,13 @@ if (RED_CONTROL) {
       `red controls: a working authored for the synthetic fixture "${SYNTHETIC_PENDING_LESSON}" is REJECTED by A1, so the fixture can never become an authored lesson`);
   }
   console.log(`  example lesson for R3/R5/R11/R12: ${EX.lessonId} (item ${EX_FIRST_ITEM})${EX.synthetic ? " — SYNTHETIC: PENDING is empty" : " — derived from PENDING[0]"}`);
+  const NO_SET = noSetLessonId(REAL);
+  console.log(`  example lesson for R1/R4: ${NO_SET} — a real lesson that owns no per-lesson set`);
 
   // A1
-  await red("R1", "a working keyed to a lesson that owns no set -> A1",
-    [/^A1: mathLessonWorkings\.mat-geo-bearings/],
-    () => treeEnv({ workingsSrc: 'export const mathLessonWorkings = { "mat-geo-bearings": { p1: ["a", "b"] } };\n' }));
+  await red("R1", `a working keyed to a lesson that owns no set -> A1 (example ${NO_SET})`,
+    [new RegExp(`^A1: mathLessonWorkings\\.${NO_SET}: "${NO_SET}" is not a lesson that owns a set`)],
+    () => treeEnv({ workingsSrc: `export const mathLessonWorkings = { "${NO_SET}": { p1: ["a", "b"] } };\n` }));
   await red("R2", "a working keyed to an item id that set does not have -> A1",
     [/^A1: mathLessonWorkings\.profit-loss-and-discounts\.p99/],
     () => treeEnv({ workingsSrc: 'export const mathLessonWorkings = { "profit-loss-and-discounts": { p99: ["a", "b"] } };\n' }));
@@ -944,9 +965,9 @@ if (RED_CONTROL) {
       delete workings[R3B_LESSON];
       return { ...env, workings };
     });
-  await red("R4", "PENDING naming a key that is not a live set -> A2",
-    [/^A2: PENDING ∪ authored names 1 key\(s\) that are not live per-lesson sets: \[mat-geo-bearings\]/],
-    async () => ({ ...(await realEnv()), pending: [...PENDING, "mat-geo-bearings"] }));
+  await red("R4", `PENDING naming a key that is not a live set -> A2 (example ${NO_SET})`,
+    [new RegExp(`^A2: PENDING ∪ authored names 1 key\\(s\\) that are not live per-lesson sets: \\[${NO_SET}\\]`)],
+    async () => ({ ...(await realEnv()), pending: [...PENDING, NO_SET] }));
   await red("R5", `a lesson authored but left in PENDING -> A3 (example ${EX.lessonId})`,
     [new RegExp(`^A3: 1 lesson\\(s\\) are both authored and PENDING: \\[${EX_RE}\\]`)],
     async () => {
