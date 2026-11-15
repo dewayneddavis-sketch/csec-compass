@@ -1341,6 +1341,11 @@ export const mathLessonWorkings = {
         "The pair is 2 and 3, because 2 × 3 = 6 and 2 + 3 = 5",
         "So x² + 5x + 6 = (x + 2)(x + 3), and expanding back returns x² + 5x + 6",
     ],
+    p7: [
+        "A defined operation applied to its own result is read from the inside out, so (3★5)★2 works out the bracket first",
+        "3★5 = 13, and the outer application takes a = 13 and b = 2: 13 + 2 × 2 = 13 + 4",
+        "13 + 4 = 17, so 13★2 = 17 and (3★5)★2 = 17",
+    ],
   },
   "mat-alg-simultaneous-equations": {
     p1: [

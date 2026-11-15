@@ -5641,6 +5641,7 @@ export const lessonSets = {
         { id: "p4", target: "x - 11", label: "4(x - 2) - 3(x + 1)" },
         { id: "p5", target: "x\u00b2 + 5x + 6", label: "(x + 2)(x + 3)" },
         { id: "p6", target: "(x + 2)(x + 3)", label: "x\u00b2 + 5x + 6" },
+        { id: "p7", target: "17", label: "13\u26052" },
       ],
     },
     "mat-alg-simultaneous-equations": {
