@@ -76,39 +76,35 @@ const section = (t) => console.log(`\n== ${t}`);
 // ---------------------------------------------------------------------------
 // Grouped by the lesson's OWN module in content/mathematics/modules.json —
 // measured, not assumed (the six backfill slices of the lead's ruling, 181 items).
-const PENDING = [
-  // slice A — consumer-arithmetic: 6 sets, 35 items — DONE 2026-11-08, authored
-  // in src/data/mathLessonWorkings.js (profit-loss-and-discounts ·
-  // simple-and-compound-interest · hire-purchase-and-instalments ·
-  // taxes-and-utility-bills · exchange-rates-and-currency ·
-  // insurance-and-budgeting). Emptying a slice out of this list is part of the
-  // same PR that authors it (A3), which is why these six are gone from here.
-  // slice B — sets: 6 sets, 31 items — DONE 2026-11-09, authored in
-  // src/data/mathLessonWorkings.js (set-notation · subsets-and-cardinality ·
-  // venn-diagrams · union-intersection-complement · shading-venn-regions ·
-  // set-word-problems). Gone from here for the same A3 reason as slice A.
-  // slice C — number-theory-computation: 8 sets, 46 items — DONE 2026-11-10,
-  // authored in src/data/mathLessonWorkings.js (types-of-numbers ·
-  // indices-and-surds · standard-form ·
-  // mat-num-number-bases-and-place-value ·
-  // mat-num-significant-figures-and-decimal-places ·
-  // mat-num-properties-of-operations · mat-num-number-sequences ·
-  // mat-num-ratio-and-proportion). Gone from here for the same A3 reason.
-  // slice D — measurement: 4 sets, 26 items — DONE 2026-11-10, authored in
-  // src/data/mathLessonWorkings.js (si-units-and-conversion ·
-  // mat-meas-surface-area-of-solids · mat-meas-measurement-error ·
-  // mat-meas-scale-and-scale-drawings). Gone from here for the same A3 reason.
-  // slice E — algebra (3 sets, 15 items) + relations-functions-graphs (1, 5): 20
-  // items — DONE 2026-11-10, authored in src/data/mathLessonWorkings.js
-  // (factorization · algebraic-fractions · transposition-and-substitution ·
-  // linear-and-quadratic-graphs). Gone from here for the same A3 reason.
-  // slice F — geometry-trigonometry (2, 12) + vectors-matrices (1, 5) +
-  // statistics-probability (1, 6): 23 items
-  "angles-and-polygons",
-  "circle-theorems",
-  "transformations",
-  "frequency-tables-and-cumulative-frequency",
-];
+//
+// EMPTY AS OF BACKFILL SLICE F (2026-11-10) — the LAST slice. All six slices are
+// authored, so this list is empty on purpose: the step-by-step method now shows
+// in every one of the 36 Mathematics lessons that own a per-lesson lab set.
+//   slice A consumer-arithmetic 6 sets / 35 items (profit-loss-and-discounts ·
+//     simple-and-compound-interest · hire-purchase-and-instalments ·
+//     taxes-and-utility-bills · exchange-rates-and-currency · insurance-and-budgeting)
+//   slice B sets 6 / 31 (set-notation · subsets-and-cardinality · venn-diagrams ·
+//     union-intersection-complement · shading-venn-regions · set-word-problems)
+//   slice C number-theory-computation 8 / 46 (types-of-numbers · indices-and-surds ·
+//     standard-form · mat-num-number-bases-and-place-value ·
+//     mat-num-significant-figures-and-decimal-places ·
+//     mat-num-properties-of-operations · mat-num-number-sequences ·
+//     mat-num-ratio-and-proportion)
+//   slice D measurement 4 / 26 (si-units-and-conversion ·
+//     mat-meas-surface-area-of-solids · mat-meas-measurement-error ·
+//     mat-meas-scale-and-scale-drawings)
+//   slice E algebra + relations-functions-graphs 4 / 20 (factorization ·
+//     algebraic-fractions · transposition-and-substitution ·
+//     linear-and-quadratic-graphs)
+//   slice F geometry-trigonometry + statistics-probability 4 / 23
+//     (angles-and-polygons · circle-theorems · transformations ·
+//     frequency-tables-and-cumulative-frequency)
+// An empty list is NOT "nothing left to check": with PENDING empty, A2 now reads
+// "every live per-lesson set must be authored", and R3b proves that dropping one
+// authored set still reds. The list stays a literal on purpose — deriving it from
+// lessonSets.js would let it change silently the moment a new set lands, which is
+// the exact failure it exists to catch.
+const PENDING = [];
 
 // The md5 of the `mathematics:` block of `subjectTypeSets` in DragDropLabel.jsx.
 // The nine type-level blocks are frozen (lead ruling 2026-11-08): this PR changes
@@ -200,6 +196,51 @@ function lessonTypesOf() {
 }
 
 // ---------------------------------------------------------------------------
+// THE COVERAGE FIGURE — DERIVED, never hand-counted (added 2026-11-10, slice F).
+//
+// The differentiator's coverage number has been quoted 4 too high in reports:
+// "36 of 51" while the shipped file held 28 authored sets, because the four
+// mat-stat-* lessons were counted twice — once as authored and once as "the 4
+// new Statistics". So the number is computed here from the data and PRINTED by
+// this harness, which means a report cannot quote a figure the harness did not
+// compute:
+//   * authoredSets  — keys of `mathLessonWorkings` (what actually reveals working)
+//   * setsOwning    — keys of `lessonSets.mathematics` (lessons that own a set)
+//   * lessons       — lesson ids in content/mathematics/modules.json, module ids
+//                     excluded, cross-checked against lessonTypesOf() — a
+//                     different walk (`experiment.type`) than modules[].lessons[],
+//                     so a module id leaking into the list shows up as a
+//                     disagreement instead of inflating the denominator
+// A17 asserts the arithmetic that makes the printed sentence true.
+// ---------------------------------------------------------------------------
+function mathematicsLessonIds() {
+  const modules = JSON.parse(read("content/mathematics/modules.json"));
+  const ids = [];
+  for (const mod of modules) for (const lesson of mod.lessons || []) if (lesson && lesson.id) ids.push(lesson.id);
+  return ids;
+}
+
+const hasOwn = (obj, key) => Object.prototype.hasOwnProperty.call(obj || {}, key);
+
+function coverageOf(env) {
+  const authoredSets = Object.keys(env.workings || {});
+  const setsOwning = Object.keys(env.sets || {});
+  const lessons = env.lessonIds || [];
+  const pending = env.pending || [];
+  const authoredOwning = setsOwning.filter((id) => hasOwn(env.workings, id));
+  const pendingOwning = setsOwning.filter((id) => pending.includes(id));
+  const noSet = lessons.filter((id) => !setsOwning.includes(id));
+  return { authoredSets, setsOwning, lessons, authoredOwning, pendingOwning, noSet };
+}
+
+// The exact sentence the harness prints, built from the derived numbers only.
+function coverageLine(cov) {
+  return `coverage: ${cov.authoredOwning.length} of ${cov.setsOwning.length} set-owning lessons carry authored working ` +
+    `(${cov.authoredOwning.length} of ${cov.lessons.length} lessons; ` +
+    `${cov.noSet.length} lessons own no per-lesson set and resolve through the type table)`;
+}
+
+// ---------------------------------------------------------------------------
 // Environments. `realEnv()` imports the SHIPPED files. `treeEnv()` copies the
 // real resolver and the real lessonSets into a temp directory with a doctored
 // data file (or a doctored resolver line) so a red control can drive the real
@@ -260,6 +301,7 @@ function baseEnv() {
   return {
     sets: lessonSets.mathematics,
     lessonTypes: lessonTypesOf(),
+    lessonIds: mathematicsLessonIds(),
     ddSource: read("src/components/DragDropLabel.jsx"),
     sywSource: read("tools/check-show-your-work.mjs"),
     playCopySource: read("tools/check-play-copy.mjs"),
@@ -657,6 +699,37 @@ function revealProblems(env) {
     }
   }
 
+  // ---- A17: the coverage figure is derived from data, and its arithmetic ----
+  // Added 2026-11-10 (backfill slice F) because the coverage number quoted in
+  // reports was 4 too high: the four mat-stat-* lessons were counted twice. The
+  // figure is now computed here and PRINTED by the harness, and these assertions
+  // are what make the printed sentence true — a hand-derived number that
+  // disagrees has to disagree with a red harness, not with a footnote.
+  const cov = coverageOf(env);
+  const notLive = cov.authoredSets.filter((id) => !cov.setsOwning.includes(id));
+  if (notLive.length > 0) {
+    problems.push(`A17: ${notLive.length} authored key(s) are not live per-lesson sets: [${notLive.join(", ")}] — working that reveals in no lesson cannot count towards coverage`);
+  }
+  if (cov.authoredOwning.length !== cov.authoredSets.length) {
+    problems.push(`A17: ${cov.authoredSets.length} authored key(s) but only ${cov.authoredOwning.length} of them land on a live set — the coverage figure would be inflated`);
+  }
+  if (cov.authoredOwning.length + cov.pendingOwning.length !== cov.setsOwning.length) {
+    problems.push(`A17: coverage arithmetic broken: ${cov.authoredOwning.length} authored + ${cov.pendingOwning.length} still-PENDING = ${cov.authoredOwning.length + cov.pendingOwning.length}, but ${cov.setsOwning.length} lesson(s) own a per-lesson set`);
+  }
+  const notLessons = cov.setsOwning.filter((id) => !cov.lessons.includes(id));
+  if (notLessons.length > 0) {
+    problems.push(`A17: ${notLessons.length} live per-lesson set(s) are not lesson ids in content/mathematics/modules.json: [${notLessons.join(", ")}] — a module id would inflate the denominator`);
+  }
+  // The lesson list is derived twice, by different walks: modules[].lessons[]
+  // above, and lessonTypesOf()'s `experiment.type` walk. A module id leaking in
+  // (no experiment.type) or a lesson losing its experiment breaks this.
+  const typeLessonIds = [...env.lessonTypes.keys()];
+  const onlyStruct = cov.lessons.filter((id) => !typeLessonIds.includes(id));
+  const onlyTypes = typeLessonIds.filter((id) => !cov.lessons.includes(id));
+  if (onlyStruct.length > 0 || onlyTypes.length > 0) {
+    problems.push(`A17: the lesson list from modules[].lessons[] ([${onlyStruct.join(", ")}]) disagrees with the one from experiment.type ([${onlyTypes.join(", ")}])`);
+  }
+
   return problems;
 }
 
@@ -741,6 +814,23 @@ section("1. the shipped resolver, on the shipped tree");
   console.log(`    ${liveSets} per-lesson sets / ${items} items · authored ${authored} · PENDING ${PENDING.length}`);
   console.log(`    ${Object.keys(blocks).length} type-level blocks / ${typeItems} items (3-arg lookup unchanged)`);
   console.log(`    answer-always walked ${items} items; reveal subjects [${[...REAL.working.REVEAL_SUBJECTS].join(", ")}]`);
+
+  // THE COVERAGE LINE — printed, and its numbers asserted to be the derived
+  // ones (A17 asserts the arithmetic that makes the sentence true). Quote this
+  // line; do not re-derive the figure by hand.
+  const cov = coverageOf(REAL);
+  const line = coverageLine(cov);
+  console.log(`    ${line}`);
+  const printed = (line.match(/\d+/g) || []).map(Number);
+  ok(
+    printed.length === 5 &&
+    printed[0] === cov.authoredOwning.length &&
+    printed[1] === cov.setsOwning.length &&
+    printed[2] === cov.authoredOwning.length &&
+    printed[3] === cov.lessons.length &&
+    printed[4] === cov.noSet.length,
+    `coverage: the printed line's numbers are the derived ones (${line})`
+  );
 }
 
 // ---------------------------------------------------------------------------
@@ -808,6 +898,16 @@ if (RED_CONTROL) {
     `red controls: the synthetic fixture lesson "${SYNTHETIC_PENDING_LESSON}" is not a live set, so no backfill slice can ever author it`);
   ok(REAL.working.getLabWorking("mathematics", "matching-game", itemsOf(SYNTHETIC_PENDING_SET)[0].id) === null,
     "red controls: the synthetic fixture's item id exists in no type-level table, so it cannot resolve through the fall-through path");
+  // Guard 4 — the fixture cannot be AUTHORED, which is what makes "no slice can
+  // ever author it" a property of the harness rather than a promise in a
+  // comment: a working keyed to it is not a live set, so A1 rejects it. (If a
+  // future slice could author the fixture, R11/R12 would silently stop
+  // discriminating, because the state they need — unauthored — would be gone.)
+  {
+    const env = await treeEnv({ workingsSrc: `export const mathLessonWorkings = { "${SYNTHETIC_PENDING_LESSON}": { "fixture-p1": ["a", "b"] } };\n` });
+    ok(revealProblems(env).some((p) => new RegExp(`^A1: mathLessonWorkings\\.${SYNTHETIC_PENDING_LESSON}: "${SYNTHETIC_PENDING_LESSON}" is not a lesson that owns a set`).test(p)),
+      `red controls: a working authored for the synthetic fixture "${SYNTHETIC_PENDING_LESSON}" is REJECTED by A1, so the fixture can never become an authored lesson`);
+  }
   console.log(`  example lesson for R3/R5/R11/R12: ${EX.lessonId} (item ${EX_FIRST_ITEM})${EX.synthetic ? " — SYNTHETIC: PENDING is empty" : " — derived from PENDING[0]"}`);
 
   // A1
@@ -831,6 +931,18 @@ if (RED_CONTROL) {
     async () => {
       const env = exampleEnv(await realEnv(), EX);
       return { ...env, pending: env.pending.filter((k) => k !== EX.lessonId) };
+    });
+  // R3b — the state after slice F: PENDING is EMPTY, so authorship is the ONLY
+  // route out of A2. Dropping one REAL authored set must red A2 by name; if the
+  // empty list had made A2 vacuous, this would pass with no problem at all.
+  const R3B_LESSON = "angles-and-polygons";
+  await red("R3b", `PENDING empty: a real authored set dropped -> A2 still names it (${R3B_LESSON})`,
+    [new RegExp(`^A2: 1 live per-lesson set\\(s\\) are neither authored nor in PENDING: \\[${R3B_LESSON}\\]`)],
+    async () => {
+      const env = await realEnv();
+      const workings = { ...env.workings };
+      delete workings[R3B_LESSON];
+      return { ...env, workings };
     });
   await red("R4", "PENDING naming a key that is not a live set -> A2",
     [/^A2: PENDING ∪ authored names 1 key\(s\) that are not live per-lesson sets: \[mat-geo-bearings\]/],
@@ -1053,6 +1165,23 @@ if (RED_CONTROL) {
       // the one that tree would derive — and the floor makes it 1, not 0, so
       // the walk comes up short by exactly one and A8 fires.
       return { ...env, sets: doctored, expectedItems: liveItemCount(doctored) };
+    });
+
+  // A17 — the coverage figure. A live set that is not a lesson id in
+  // modules.json must red it: that is the shape of the mistake that inflated the
+  // quoted figure (a set counted as a lesson it is not). It is added to PENDING
+  // and to lessonTypes as well, so A2 and A5 stay silent and A17 is the rule
+  // that catches it.
+  await red("R25", "a live per-lesson set that is not a lesson id in modules.json -> A17 (coverage denominator)",
+    [/^A17: 1 live per-lesson set\(s\) are not lesson ids in content\/mathematics\/modules\.json/],
+    async () => {
+      const env = await realEnv();
+      return {
+        ...env,
+        sets: { ...env.sets, [SYNTHETIC_PENDING_LESSON]: SYNTHETIC_PENDING_SET },
+        pending: [SYNTHETIC_PENDING_LESSON],
+        lessonTypes: new Map([...env.lessonTypes, [SYNTHETIC_PENDING_LESSON, "matching-game"]]),
+      };
     });
 
   const caught = results.filter((r) => r.caught).length;

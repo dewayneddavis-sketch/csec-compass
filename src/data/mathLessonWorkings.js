@@ -1153,4 +1153,161 @@ export const mathLessonWorkings = {
         "Check both in y = x² − 2x − 3: x = 3 gives 9 − 6 − 3 = 0 and x = −1 gives 1 + 2 − 3 = 0, so the roots are x = −1 and x = 3",
     ],
   },
+
+  // ---------------------------------------------------------------------
+  // BACKFILL SLICE F — the LAST slice: geometry-trigonometry (3 sets /
+  // 17 items) + statistics-probability (1 set / 6 items) = 4 sets / 23 items.
+  // This empties PENDING to zero: every Mathematics lesson that owns a
+  // per-lesson lab set now carries authored working.
+  // The traps this slice had to get right, item by item:
+  //   angles-and-polygons uses (n − 2) × 180° for the interior-angle SUM, that
+  //   total ÷ n for each interior angle of a regular polygon, and 360° ÷ n for
+  //   each exterior angle — and the polygon NAMED in each step is the one whose
+  //   side count is used (triangle n = 3, quadrilateral n = 4, pentagon n = 5,
+  //   hexagon n = 6, octagon n = 8, 10-sided n = 10).
+  //   circle-theorems names the theorem in each step and says why its
+  //   configuration fits: angle in a semicircle (diameter subtends 90°), angle
+  //   at the centre = 2 × angle at the circumference ON THE SAME ARC, angles in
+  //   the same segment equal, opposite angles of a cyclic quadrilateral summing
+  //   to 180°, tangent ⊥ radius at the point of contact, and two tangents from
+  //   one external point equal because the two right-angled triangles are
+  //   congruent (RHS).
+  //   transformations states the full description each one needs — mirror line;
+  //   centre, angle and direction; column vector; scale factor and centre — and
+  //   checks the image by actually transforming coordinates ((1, 2) → (3, 6)
+  //   at k = 3; (2, 1) → (−2, −1) at k = −1).
+  //   frequency-tables-and-cumulative-frequency keeps ONE dataset inside each
+  //   working: the ogive of 40 students' marks (cumulative frequency 10 at 44
+  //   marks, 20 at 52, 30 at 61) for the median and quartile items, and a
+  //   grouped table of 20 students (10 – 19 : 4, 20 – 29 : 6, 30 – 39 : 10,
+  //   midpoints 14.5 / 24.5 / 34.5) for the estimated mean and modal class. The
+  //   lesson copy also holds a second, incompatible ogive (cumulative frequency
+  //   20 at 30 marks, 34 at 40 marks); it is never mixed into these workings.
+  // Every last step states that item's pairs[].target string exactly as the set
+  // stores it. None of the 23 answers is purely numeric, so A4's token boundary
+  // does not apply here — containment is the whole rule for this slice.
+  // ---------------------------------------------------------------------
+  "angles-and-polygons": {
+    p1: [
+        "A triangle is a polygon with n = 3 sides, so its interior angles are found from the polygon rule (n − 2) × 180°",
+        "Substitute n = 3: (3 − 2) × 180° = 1 × 180° = 180°",
+        "The interior angle sum of a triangle is 180°",
+    ],
+    p2: [
+        "A quadrilateral is a polygon with n = 4 sides, so its interior angles use the same rule, (n − 2) × 180°",
+        "Substitute n = 4: (4 − 2) × 180° = 2 × 180° = 360°",
+        "The interior angle sum of a quadrilateral is 360°",
+    ],
+    p3: [
+        "A regular pentagon has n = 5 equal sides and equal angles, so its interior angles total (5 − 2) × 180° = 3 × 180° = 540°",
+        "A regular polygon shares that total equally between its 5 angles: 540° ÷ 5 = 108°, which agrees with the exterior-angle route 180° − 360°/5 = 180° − 72° = 108°",
+        "Each interior angle of a regular pentagon is 108°",
+    ],
+    p4: [
+        "The exterior angles of any polygon add to 360°, whatever the number of sides",
+        "A regular hexagon has n = 6 equal exterior angles, so divide 360° equally between them: 360° ÷ 6 = 60°",
+        "Each exterior angle of a regular hexagon is 60°",
+    ],
+    p5: [
+        "A regular octagon has n = 8 equal sides, so each exterior angle is 360° ÷ 8 = 45°",
+        "The interior and exterior angles at the same vertex lie on a straight line, so each interior angle is 180° − 45° = 135°",
+        "Each interior angle of a regular octagon is 135°, and the eight of them total 8 × 135° = 1080° = (8 − 2) × 180°",
+    ],
+    p6: [
+        "A 10-sided polygon has n = 10, so its interior angles total (n − 2) × 180°",
+        "Substitute n = 10: (10 − 2) × 180° = 8 × 180° = 1440°",
+        "The interior angles of a 10-sided polygon add to 1440°",
+    ],
+  },
+  "circle-theorems": {
+    p1: [
+        "A diameter cuts the circle into two semicircles, and any angle the diameter subtends at a point on the circumference is the angle in a semicircle",
+        "The angle-in-a-semicircle theorem says that angle is a right angle, so it is 90° whatever the position of the point on the arc",
+        "So an angle in a semicircle is 90°",
+    ],
+    p2: [
+        "The angle at the centre is twice the angle at the circumference only when both stand on the SAME arc, and here AOB at the centre and ACB at the circumference are both subtended by arc AB",
+        "So angle AOB = 2 × angle ACB: with AOB = 130° at the centre, ACB = 130° ÷ 2 = 65° at the circumference",
+        "So the Centre angle is double the angle at the circumference on that arc",
+    ],
+    p3: [
+        "Angles in the same segment are subtended by the same arc and have their vertices on the same side of the chord, which is the configuration this theorem needs",
+        "That theorem says the two angles are equal, so once both are identified as standing on the same arc in the same segment no arithmetic is needed",
+        "So angles in the same segment are Equal",
+    ],
+    p4: [
+        "A cyclic quadrilateral has all four vertices on the circumference, so each pair of opposite angles is subtended by the arc joining the other two vertices",
+        "The cyclic-quadrilateral theorem says each pair of opposite angles sums to 180°, so with one angle 110° the opposite angle is 180° − 110° = 70°",
+        "Add to 180°: opposite angles of a cyclic quadrilateral are supplementary, and 110° + 70° = 180° checks it",
+    ],
+    p5: [
+        "A tangent touches the circle at exactly one point, the point of contact, and the radius drawn to that point is the radius of the circle there",
+        "The tangent–radius theorem says the radius at the point of contact is perpendicular to the tangent, so the angle between them is 90°",
+        "So a radius meeting a tangent at the point of contact makes a Right angle",
+    ],
+    p6: [
+        "From an external point P, tangents PA and PB touch the circle at A and B, and OA and OB are the radii to those points of contact",
+        "Each radius is perpendicular to its own tangent, so triangles OAP and OBP are right-angled, with the common hypotenuse OP and OA = OB = r, and they are congruent by RHS",
+        "Congruent triangles give PA = PB, so two tangents from one external point are Equal in length",
+    ],
+  },
+  "transformations": {
+    p1: [
+        "A reflection flips the shape so that every point is the same distance from the mirror on the opposite side, and points on the mirror itself do not move",
+        "So the one piece of information that fixes the image completely is the line reflected in, whether that is the x-axis, the y-axis or a line such as y = x",
+        "So a reflection is fully described by its Mirror line",
+    ],
+    p2: [
+        "A rotation turns the shape about a fixed point, so that point — the centre of rotation — must be named",
+        "The turn itself must be given as an angle (90°, 180° or 270°) AND a direction, because 90° clockwise and 90° anticlockwise produce different images",
+        "So a rotation needs its Centre, angle and direction",
+    ],
+    p3: [
+        "A translation slides the shape without turning or flipping it, so every point moves by the same amount and the orientation is unchanged",
+        "That movement is written as a column vector such as (3 over −2): 3 right and 2 down, applied to every vertex in turn",
+        "So a translation is fully described by its Column vector",
+    ],
+    p4: [
+        "An enlargement multiplies the distance of every point from the centre by the scale factor, so with centre (0, 0), k = 3 and object point (1, 2) the image is (1 × 3, 2 × 3) = (3, 6)",
+        "Lengths are multiplied by k once, but area is two-dimensional so it is multiplied by k twice: k² = 3 × 3 = 9",
+        "Area becomes 9 times: a 2 cm² shape under this enlargement becomes 2 × 9 = 18 cm²",
+    ],
+    p5: [
+        "A negative scale factor still multiplies the distance from the centre, and the minus sign reverses the direction as well",
+        "Check it on coordinates with centre (0, 0), scale factor −1 and object point (2, 1): (2 × −1, 1 × −1) = (−2, −1), which is the opposite side of the centre from (2, 1)",
+        "So with a negative scale factor the Image lands on the other side of the centre",
+    ],
+  },
+  "frequency-tables-and-cumulative-frequency": {
+    p1: [
+        "The cumulative frequency column is a running total against the upper class boundary, so the ogive rises to the total number of students, n = 40",
+        "Half of the total is 40 ÷ 2 = 20, and the curve reads 52 marks at cumulative frequency 20",
+        "At n/2 on the cumulative axis: the median is the mark at cumulative frequency 20, which is 52 marks",
+    ],
+    p2: [
+        "The lower quartile is one quarter of the way through the cumulative frequency, so divide the total by 4: 40 ÷ 4 = 10",
+        "The curve reads 44 marks at cumulative frequency 10",
+        "At n/4 on the cumulative axis: the lower quartile Q1 is 44 marks",
+    ],
+    p3: [
+        "The upper quartile is three quarters of the way through the cumulative frequency: 3 × 40 ÷ 4 = 30",
+        "The curve reads 61 marks at cumulative frequency 30",
+        "At 3n/4 on the cumulative axis: the upper quartile Q3 is 61 marks",
+    ],
+    p4: [
+        "The interquartile range describes the middle half of the data, so both quartiles are read from the same ogive: Q1 = 44 marks at cumulative frequency 10 and Q3 = 61 marks at cumulative frequency 30",
+        "Subtract the lower quartile from the upper one: 61 − 44 = 17 marks, and the semi-interquartile range is 17 ÷ 2 = 8.5 marks",
+        "Q3 − Q1 = 61 − 44 = 17 marks, so the middle half of the class spans 17 marks",
+    ],
+    p5: [
+        "Grouped data has no individual values, so each class is represented by its midpoint: 10 – 19 gives 14.5, 20 – 29 gives 24.5 and 30 – 39 gives 34.5",
+        "Multiply each midpoint by its frequency and add: 4 × 14.5 = 58, 6 × 24.5 = 147 and 10 × 34.5 = 345, so Σfx = 58 + 147 + 345 = 550, and Σf = 4 + 6 + 10 = 20",
+        "Σfx ÷ Σf = 550 ÷ 20 = 27.5, so the estimated mean is 27.5 marks",
+    ],
+    p6: [
+        "The modal class is the class interval holding the most data, so compare the frequencies themselves rather than the midpoints",
+        "The frequencies are 4, 6 and 10, and the largest is 10, which belongs to the interval 30 – 39 marks",
+        "Interval with the highest frequency: 30 – 39 marks has 10 students against 6 and 4, so the modal class is 30 – 39 marks",
+    ],
+  },
 };
