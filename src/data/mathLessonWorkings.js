@@ -851,4 +851,165 @@ export const mathLessonWorkings = {
         "So the check is that the shares add back to the whole",
     ],
   },
+  // ---------------------------------------------------------------------
+  // BACKFILL SLICE D — measurement (4 sets / 26 items)
+  // Units are part of the answer here, so each step carries the unit (and the
+  // power, where the unit is squared or cubed) from the point the factor is
+  // applied, never only on the last line. Grounded in each lesson's own copy in
+  // content/mathematics/modules.json:
+  //   si-units-and-conversion uses its prefixes (kilo 1000, centi 1/100, milli
+  //   1/1000), its 1 m² = 100 cm × 100 cm = 10,000 cm², its 1 m³ =
+  //   1,000,000 cm³ with 1 cm³ = 1 mL and 1 m³ = 1000 L, its 72 × 5/18 = 20 m/s
+  //   conversion, its "2 hours 45 minutes is 2.75 hours, not 2.45 hours", and
+  //   its y = kx / y = k/x definitions; surface-area-of-solids uses its "name
+  //   each face in words, write down its dimensions" rule (no diagram), its
+  //   6 × side², 2(lw + lh + wh) and 2πr² + 2πrh formulas and its "subtract the
+  //   top face"; measurement-error uses its 0.5 × 10⁻ᵈ greatest-possible-error
+  //   rule, its 4.6 kg → 4.55 kg to 4.65 kg and 25 cm → 24.5 cm to 25.5 cm
+  //   bounds, and its "the denominator is the true value, never the measured
+  //   value"; scale-and-scale-drawings uses its 1:50 and 1:25,000 readings, its
+  //   7 × 50 = 350 cm = 3.5 m worked wall and its 50² = 2500 area factor.
+  // All four sets are `match`, so every last step states that item's
+  // pairs[].target string exactly as the set stores it (A4 is literal here —
+  // not one of these 26 answers is purely numeric, so no token boundary
+  // applies and the unit, the comma in 10,000 and the superscripts must match).
+  // ---------------------------------------------------------------------
+  "si-units-and-conversion": {
+    p1: [
+        "The prefix kilo means 1000, so a kilometre is 1000 times as long as a metre",
+        "1 km = 1 × 1000 m, and multiplying by 1000 moves the decimal point three places to the right",
+        "So 1 km = 1000 m",
+    ],
+    p2: [
+        "Area is measured in square units, so the length factor is applied twice and must be squared",
+        "1 m = 100 cm, so 1 m² = 100 cm × 100 cm",
+        "100 × 100 = 10,000, so 1 m² = 10,000 cm²",
+    ],
+    p3: [
+        "Volume is measured in cubic units, so the length factor is cubed: 1 m³ = 100 cm × 100 cm × 100 cm = 1,000,000 cm³",
+        "Capacity and volume are linked by 1 cm³ = 1 mL, so 1,000,000 cm³ holds 1,000,000 mL",
+        "There are 1000 mL in a litre, so 1,000,000 ÷ 1000 = 1000 L, which is 1 m³ = 1000 L",
+    ],
+    p4: [
+        "Capacity and volume are linked directly: the space inside 1 cm³ holds the same as 1 mL of liquid",
+        "A cube 1 cm × 1 cm × 1 cm has volume 1 cm³, and it fills exactly one millilitre",
+        "So 1 cm³ = 1 mL",
+    ],
+    p5: [
+        "To change km/h into m/s, multiply by 1000/3600, because 1 km is 1000 m and 1 hour is 3600 s",
+        "1000/3600 simplifies to 5/18, so 72 km/h becomes 72 × 5/18",
+        "72 × 5 = 360 and 360 ÷ 18 = 20, so 72 km/h = 20 m/s",
+    ],
+    p6: [
+        "Time is not decimal, so the minutes are converted on their own: 45 minutes ÷ 60 = 0.75 hours",
+        "Add the whole hours back: 2 + 0.75 = 2.75",
+        "So 2 hours 45 minutes = 2.75 hours, not 2.45 hours",
+    ],
+    p7: [
+        "In direct proportion one quantity is a constant multiple of the other, so doubling x doubles y",
+        "That constant multiple is k, the unit rate, found from the pair you are given: k = y ÷ x, so 5 m of cloth costing $120 gives k = 120 ÷ 5 = 24 dollars per metre",
+        "Written as a formula, direct proportion is y = kx",
+    ],
+    p8: [
+        "In inverse proportion the product of the two quantities stays the same, so doubling x halves y",
+        "That fixed product is k, found by multiplying the given pair: 4 workers taking 12 days gives k = 4 × 12 = 48 worker-days, so 6 workers take 48 ÷ 6 = 8 days",
+        "Written as a formula, inverse proportion is y = k/x",
+    ],
+  },
+  "mat-meas-surface-area-of-solids": {
+    p1: [
+        "Volume says how much space is inside a solid; surface area says how much material it takes to cover the outside",
+        "So work one face at a time: name each face, find its area, and add the face areas together",
+        "Surface area is the total area of every face, measured in square units such as cm² or m²",
+    ],
+    p2: [
+        "A net turns one 3D problem into a set of 2D ones, because every face is laid out flat in the plane",
+        "The net of a cube is six equal squares, the net of a cuboid is six rectangles in three matching pairs, and the net of a triangular prism is two triangles and three rectangles",
+        "So a net is the solid opened out and laid flat, and the area of the net is the surface area",
+    ],
+    p3: [
+        "Name the faces in words: a cube has six faces, and every one of them is a square of side s",
+        "Each face has area s × s = s², and there are six of them, so s² is added six times",
+        "So a cube has surface area 6 × side², and a 4 cm cube gives 6 × 16 = 96 cm²",
+    ],
+    p4: [
+        "Name the faces in words: top and bottom are l × w, front and back are l × h, and the two ends are w × h",
+        "Each of those three face areas appears twice, so the total is 2 × lw + 2 × lh + 2 × wh",
+        "So a cuboid has surface area 2(lw + lh + wh), and 8 cm by 5 cm by 3 cm gives 2 × 79 = 158 cm²",
+    ],
+    p5: [
+        "Name the faces in words: a cylinder has two circular ends of area πr² each, and a curved side",
+        "The curved side opens out into a rectangle as wide as the circumference 2πr and as tall as the height h, so its area is 2πrh",
+        "So a cylinder has surface area 2πr² + 2πrh, and r = 7 cm with h = 10 cm gives 307.9 + 439.9 = 747.8 cm²",
+    ],
+    p6: [
+        "Read the question for the face that is missing: an open-top tank has no lid",
+        "Work the full surface area of the solid first, then take away the one face that is not there",
+        "So for an open-top tank you subtract the top face from the total",
+    ],
+  },
+  "mat-meas-measurement-error": {
+    p1: [
+        "Absolute error is the size of the gap between the measured value and the true value, kept in the units of the measurement",
+        "Subtract the true value from the measured value: a rod measured as 25 cm whose true length is 24.8 cm gives 25 − 24.8 = 0.2 cm",
+        "So absolute error = measured value − true value, and the sign is ignored because a measurement can be too high or too low",
+    ],
+    p2: [
+        "Relative error compares the error with the true value instead of with the units, so it has no units at all",
+        "Divide the absolute error by the true value: 0.2 ÷ 24.8 = 0.0081 to 3 significant figures",
+        "So relative error = absolute error ÷ true value, and the denominator is the true value, never the measured value",
+    ],
+    p3: [
+        "Percentage error puts the same comparison into hundredths, so it is still a ratio and still has no units",
+        "Multiply the relative error by 100: 0.0081 × 100 = 0.81% to 2 decimal places",
+        "So percentage error = relative error × 100, which for this rod is about 0.81% too high",
+    ],
+    p4: [
+        "A value written to d decimal places was rounded to the nearest 10⁻ᵈ, so for 4.6 kg to 1 d.p. the rounding unit is 0.1 kg",
+        "The greatest possible error is half a rounding unit: 0.5 × 0.1 = 0.05 kg",
+        "Go that far either side of 4.6 kg: 4.6 − 0.05 = 4.55 and 4.6 + 0.05 = 4.65, so the bounds are 4.55 kg to 4.65 kg",
+    ],
+    p5: [
+        "The true value was rounded to the nearest 10⁻ᵈ, so it can be up to half a rounding unit away from the value written",
+        "For a mass recorded to 1 d.p., d = 1, so the rounding unit is 10⁻¹ = 0.1 kg",
+        "Half of that unit is 0.5 × 0.1, so the greatest possible error is 0.5 × 10⁻¹ = 0.05 kg",
+    ],
+    p6: [
+        "Nearest cm means the value was rounded to 0 decimal places, so d = 0 and the rounding unit is 10⁰ = 1 cm",
+        "The greatest possible error is half a rounding unit: 0.5 × 10⁰ = 0.5 cm",
+        "Go 0.5 cm either side of 25 cm: 25 − 0.5 = 24.5 and 25 + 0.5 = 25.5, so the bounds are 24.5 cm to 25.5 cm",
+    ],
+  },
+  "mat-meas-scale-and-scale-drawings": {
+    p1: [
+        "A scale is a ratio written drawing : real, so 1:50 is read aloud as one to fifty",
+        "The first number is the drawing, so 1 unit on the drawing stands for 50 of the same unit in real life",
+        "In centimetres that means 1 cm on the drawing is 50 cm real, which is 0.5 m",
+    ],
+    p2: [
+        "The scale factor is the second number of the ratio, so at 1:50 the scale factor is 50",
+        "The drawing is the real object shrunk by that factor, so going back up to real life means multiplying: 7 × 50 = 350 cm",
+        "So real length = drawing length × scale factor, and the units must match before you multiply",
+    ],
+    p3: [
+        "Going from real life down to the drawing is the opposite direction, so the scale factor divides",
+        "A 4 m wall is 400 cm real, and at 1:50 the scale factor is 50, so 400 ÷ 50 = 8 cm on the drawing",
+        "So drawing length = real length ÷ scale factor, with both lengths in the same unit",
+    ],
+    p4: [
+        "A map scale of 1:25,000 is the same ratio idea with larger numbers: 1 unit on the map is 25,000 of the same unit on the ground",
+        "In centimetres that is 25,000 cm, and 25,000 cm ÷ 100 = 250 m",
+        "So 1 cm on the map is 250 m, which is 0.25 km",
+    ],
+    p5: [
+        "An area applies the length factor twice, once for each dimension, so the area factor is the square of the length factor",
+        "At 1:50 the length factor is 50, so the area scale factor is 50 × 50 = 2500",
+        "So the area scale factor is 50² = 2500, and a 48 cm² drawing covers 48 × 2500 = 120,000 cm² = 12 m² real",
+    ],
+    p6: [
+        "Write the scale as its own step first: drawing : real = 1 : 50, so the scale factor is 50",
+        "Multiply the drawing length by the scale factor: 7 × 50 = 350 cm",
+        "Convert to a sensible unit with 100 cm = 1 m: 350 ÷ 100 = 3.5, so 350 cm = 3.5 m",
+    ],
+  },
 };

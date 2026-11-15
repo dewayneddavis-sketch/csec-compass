@@ -94,11 +94,10 @@ const PENDING = [
   // mat-num-significant-figures-and-decimal-places ·
   // mat-num-properties-of-operations · mat-num-number-sequences ·
   // mat-num-ratio-and-proportion). Gone from here for the same A3 reason.
-  // slice D — measurement: 4 sets, 26 items
-  "si-units-and-conversion",
-  "mat-meas-surface-area-of-solids",
-  "mat-meas-measurement-error",
-  "mat-meas-scale-and-scale-drawings",
+  // slice D — measurement: 4 sets, 26 items — DONE 2026-11-10, authored in
+  // src/data/mathLessonWorkings.js (si-units-and-conversion ·
+  // mat-meas-surface-area-of-solids · mat-meas-measurement-error ·
+  // mat-meas-scale-and-scale-drawings). Gone from here for the same A3 reason.
   // slice E — algebra (3 sets, 15 items) + relations-functions-graphs (1, 5): 20
   "factorization",
   "algebraic-fractions",
