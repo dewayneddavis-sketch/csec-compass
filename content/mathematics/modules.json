@@ -367,14 +367,16 @@
             {
                 "id": "algebraic-expressions",
                 "title": "Algebraic Expressions and Equations",
-                "content": "An algebraic expression is a combination of numbers, variables (letters like x or y), and operations. For example, 3x + 2y - 5 is an algebraic expression. The parts separated by + or - signs are called terms. Terms with the same variable raised to the same power are 'like terms' and can be combined: 3x + 2x = 5x, but 3x + 2y cannot be simplified further.\n\nSolving linear equations means finding the value of the variable that makes the equation true. The golden rule is: whatever you do to one side of the equation, you must do to the other. For 2x + 4 = 10, subtract 4 from both sides to get 2x = 6, then divide both sides by 2 to get x = 3. Always check your answer by substituting it back into the original equation.\n\nAlgebra is the language of mathematics. Once you master expressions and equations, you'll be able to solve word problems, graph lines, and tackle more advanced topics like quadratics and simultaneous equations.",
+                "content": "An algebraic expression is a combination of numbers, variables (letters like x or y), and operations. For example, 3x + 2y - 5 is an algebraic expression. The parts separated by + or - signs are called terms. Terms with the same variable raised to the same power are 'like terms' and can be combined: 3x + 2x = 5x, but 3x + 2y cannot be simplified further.\n\nSolving linear equations means finding the value of the variable that makes the equation true. The golden rule is: whatever you do to one side of the equation, you must do to the other. For 2x + 4 = 10, subtract 4 from both sides to get 2x = 6, then divide both sides by 2 to get x = 3. Always check your answer by substituting it back into the original equation.\n\nAlgebra is the language of mathematics. Once you master expressions and equations, you'll be able to solve word problems, graph lines, and tackle more advanced topics like quadratics and simultaneous equations.\n\nA worded phrase becomes an expression by reading it in the order the words give. \"Five more than twice a number\" is 2x + 5, because twice a number is 2x and five more adds 5. \"Three times the sum of a number and four\" is 3(x + 4), not 3x + 4, because the sum is taken first. A number decreased by seven is x - 7, while seven decreased by a number is 7 - x. Name the unknown first, translate phrase by phrase, then check the expression by substituting a small number for the letter.",
                 "objectives": [
                     "Simplify algebraic expressions",
-                    "Solve linear equations"
+                    "Solve linear equations",
+                    "Translate a worded phrase into an algebraic expression"
                 ],
                 "concepts": [
                     "Like terms can be added or subtracted.",
-                    "Balancing equations: whatever you do to one side, you must do to the other."
+                    "Balancing equations: whatever you do to one side, you must do to the other.",
+                    "Read a worded phrase in order, and keep the sum inside brackets when the words say \"the sum of\"."
                 ],
                 "experiment": {
                     "type": "balance-scale",
@@ -384,14 +386,16 @@
             {
                 "id": "quadratic-equations",
                 "title": "Quadratic Equations",
-                "content": "A quadratic equation is one where the highest power of the variable is 2, written in standard form as ax\u00b2 + bx + c = 0. For example, x\u00b2 + 5x + 6 = 0 is a quadratic. These equations can have two solutions (roots), one solution, or no real solutions.\n\nThere are three main methods for solving quadratics on the CSEC exam: factoring, completing the square, and using the quadratic formula x = [-b \u00b1 \u221a(b\u00b2 - 4ac)] / 2a. Factoring is fastest when it works \u2014 for x\u00b2 + 5x + 6 = 0, find two numbers that multiply to 6 and add to 5: 2 and 3, so (x+2)(x+3) = 0, giving x = -2 or x = -3.\n\nThe quadratic formula always works, even when factoring doesn't. The expression under the square root, b\u00b2 - 4ac, is called the discriminant. If it's positive, there are two real roots; if zero, one repeated root; if negative, no real roots. This is a common CSEC question type.",
+                "content": "A quadratic equation is one where the highest power of the variable is 2, written in standard form as ax\u00b2 + bx + c = 0. For example, x\u00b2 + 5x + 6 = 0 is a quadratic. These equations can have two solutions (roots), one solution, or no real solutions.\n\nThere are three main methods for solving quadratics on the CSEC exam: factoring, completing the square, and using the quadratic formula x = [-b \u00b1 \u221a(b\u00b2 - 4ac)] / 2a. Factoring is fastest when it works \u2014 for x\u00b2 + 5x + 6 = 0, find two numbers that multiply to 6 and add to 5: 2 and 3, so (x+2)(x+3) = 0, giving x = -2 or x = -3.\n\nThe quadratic formula always works, even when factoring doesn't. The expression under the square root, b\u00b2 - 4ac, is called the discriminant. If it's positive, there are two real roots; if zero, one repeated root; if negative, no real roots. This is a common CSEC question type.\n\nCompleting the square is the third method, and it rewrites x\u00b2 + bx + c as a perfect square plus a constant. For x\u00b2 + 6x + 5 = 0, move the constant first: x\u00b2 + 6x = -5. Add the square of half the coefficient of x, which is (6 \u00f7 2)\u00b2 = 9, to both sides: x\u00b2 + 6x + 9 = 4. The left-hand side is now (x + 3)\u00b2, so (x + 3)\u00b2 = 4, and taking the square root of both sides gives x + 3 = \u00b12. So x = -1 or x = -5, which the factorised form (x + 1)(x + 5) = 0 confirms. In general x\u00b2 + bx becomes (x + b/2)\u00b2 - (b/2)\u00b2, which is why the method always works and why it is the route to the quadratic formula.",
                 "objectives": [
                     "Solve quadratic equations by factoring",
-                    "Use the quadratic formula"
+                    "Use the quadratic formula",
+                    "Solve a quadratic equation by completing the square"
                 ],
                 "concepts": [
                     "Standard form: ax^2 + bx + c = 0.",
-                    "The quadratic formula: x = [-b \u00b1 sqrt(b^2 - 4ac)] / 2a"
+                    "The quadratic formula: x = [-b \u00b1 sqrt(b^2 - 4ac)] / 2a",
+                    "Add (b \u00f7 2)\u00b2 to both sides to turn x\u00b2 + bx into the perfect square (x + b/2)\u00b2."
                 ],
                 "experiment": {
                     "type": "graph-plotter",
@@ -401,14 +405,16 @@
             {
                 "id": "inequalities",
                 "title": "Linear Inequalities",
-                "content": "Linear inequalities are like linear equations but with inequality signs instead of equals: < (less than), > (greater than), \u2264 (less than or equal to), \u2265 (greater than or equal to). Solving them follows the same rules as equations, with one crucial difference: when you multiply or divide by a negative number, you must flip the inequality sign.\n\nFor example, solve 3x - 5 > 10: add 5 to both sides to get 3x > 15, divide by 3 to get x > 5. The solution is all numbers greater than 5. On a number line, you'd draw an open circle at 5 and shade to the right. For -2x \u2264 8, divide by -2 and flip the sign: x \u2265 -4.\n\nInequalities appear in real-world problems like budget constraints, speed limits, and minimum requirements. CSEC questions often ask you to represent the solution on a number line or as a set notation. Be careful with the direction of the sign and remember to flip it when multiplying or dividing by a negative number.",
+                "content": "Linear inequalities are like linear equations but with inequality signs instead of equals: < (less than), > (greater than), \u2264 (less than or equal to), \u2265 (greater than or equal to). Solving them follows the same rules as equations, with one crucial difference: when you multiply or divide by a negative number, you must flip the inequality sign.\n\nFor example, solve 3x - 5 > 10: add 5 to both sides to get 3x > 15, divide by 3 to get x > 5. The solution is all numbers greater than 5. On a number line, you'd draw an open circle at 5 and shade to the right. For -2x \u2264 8, divide by -2 and flip the sign: x \u2265 -4.\n\nInequalities appear in real-world problems like budget constraints, speed limits, and minimum requirements. CSEC questions often ask you to represent the solution on a number line or as a set notation. Be careful with the direction of the sign and remember to flip it when multiplying or dividing by a negative number.\n\nAn inequality in two variables describes a region of the plane rather than a set of points on a number line. To show y < 2x + 1, draw the boundary line y = 2x + 1 as a dashed line, because the strict inequality excludes the line itself. Then test a point that is not on the line, usually the origin: at (0, 0), 0 < 1 is true, so shade the half-plane that contains the origin, which is the region below the line. For y \u2265 x - 2 the boundary is drawn solid, because points on the line are included, and testing (0, 0) gives 0 \u2265 -2, which is true, so the region above the line is shaded. Use a dashed boundary for < and >, a solid boundary for \u2264 and \u2265, and always shade the side where the test point makes the inequality true.",
                 "objectives": [
                     "Solve linear inequalities in one variable",
-                    "Represent solutions on a number line"
+                    "Represent solutions on a number line",
+                    "Show the region described by an inequality in two variables and choose the correct half-plane"
                 ],
                 "concepts": [
                     "Inequality symbols: <, >, \u2264, \u2265.",
-                    "Multiplying or dividing by a negative number flips the inequality sign."
+                    "Multiplying or dividing by a negative number flips the inequality sign.",
+                    "Dashed boundary for < and >, solid for \u2264 and \u2265, and a test point decides which half-plane to shade."
                 ],
                 "experiment": {
                     "type": "number-line-plotter",
@@ -418,18 +424,20 @@
             {
                 "id": "factorization",
                 "title": "Factorisation and Quadratic Equations",
-                "content": "Factorising is the reverse of expanding: it rewrites an expression as a product of factors. Look for the highest common factor first: 6x\u00b2 + 9x = 3x(2x + 3). If there is no common factor, check whether the expression is the difference of two squares, a\u00b2 \u2014 b\u00b2 = (a + b)(a \u2014 b), so 25x\u00b2 \u2014 16 = (5x + 4)(5x \u2014 4). Expressions with four terms are often factored in pairs: ax + ay + bx + by = a(x + y) + b(x + y) = (x + y)(a + b).\n\nA quadratic trinomial x\u00b2 + bx + c is factorised by finding two numbers that multiply to c and add to b: x\u00b2 + 7x + 12 = (x + 3)(x + 4) because 3 \u00d7 4 = 12 and 3 + 4 = 7. When the coefficient of x\u00b2 is not 1, split the middle term: 6x\u00b2 + 11x + 4 needs two numbers multiplying to 24 and adding to 11, namely 8 and 3, so 6x\u00b2 + 8x + 3x + 4 = 2x(3x + 4) + 1(3x + 4) = (3x + 4)(2x + 1).\n\nFactorising solves quadratic equations because if a product is zero then at least one factor must be zero. For x\u00b2 \u2014 5x + 6 = 0, factorise to (x \u2014 2)(x \u2014 3) = 0, so x = 2 or x = 3. Always rearrange the equation to equal zero before factorising, and check your factors by expanding them mentally. In Paper 02 you gain method marks for showing the factorisation, so write both the factorised form and the roots.",
+                "content": "Factorising is the reverse of expanding: it rewrites an expression as a product of factors. Look for the highest common factor first: 6x\u00b2 + 9x = 3x(2x + 3). If there is no common factor, check whether the expression is the difference of two squares, a\u00b2 \u2014 b\u00b2 = (a + b)(a \u2014 b), so 25x\u00b2 \u2014 16 = (5x + 4)(5x \u2014 4). Expressions with four terms are often factored in pairs: ax + ay + bx + by = a(x + y) + b(x + y) = (x + y)(a + b).\n\nA quadratic trinomial x\u00b2 + bx + c is factorised by finding two numbers that multiply to c and add to b: x\u00b2 + 7x + 12 = (x + 3)(x + 4) because 3 \u00d7 4 = 12 and 3 + 4 = 7. When the coefficient of x\u00b2 is not 1, split the middle term: 6x\u00b2 + 11x + 4 needs two numbers multiplying to 24 and adding to 11, namely 8 and 3, so 6x\u00b2 + 8x + 3x + 4 = 2x(3x + 4) + 1(3x + 4) = (3x + 4)(2x + 1).\n\nFactorising solves quadratic equations because if a product is zero then at least one factor must be zero. For x\u00b2 \u2014 5x + 6 = 0, factorise to (x \u2014 2)(x \u2014 3) = 0, so x = 2 or x = 3. Always rearrange the equation to equal zero before factorising, and check your factors by expanding them mentally. In Paper 02 you gain method marks for showing the factorisation, so write both the factorised form and the roots.\n\nThe two square identities are worth recognising on sight: (a + b)\u00b2 = a\u00b2 + 2ab + b\u00b2 and (a - b)\u00b2 = a\u00b2 - 2ab + b\u00b2. So x\u00b2 + 10x + 25 = (x + 5)\u00b2, because 25 = 5\u00b2 and 10 = 2 \u00d7 5; and x\u00b2 - 12x + 36 = (x - 6)\u00b2, because 36 = 6\u00b2 and 12 = 2 \u00d7 6. The pattern holds when the first term is a square too: 4x\u00b2 + 12x + 9 = (2x + 3)\u00b2, since 4x\u00b2 = (2x)\u00b2, 9 = 3\u00b2 and 12 = 2 \u00d7 2x \u00d7 3. The test is always the middle term, which must be twice the product of the two square roots, and its sign decides whether the bracket is a sum or a difference. A sum of two squares, such as a\u00b2 + b\u00b2, does not factorise.",
                 "objectives": [
                     "Take out a common factor and factorise by grouping",
                     "Factorise the difference of two squares",
                     "Factorise quadratic trinomials of the form x\u00b2 + bx + c and ax\u00b2 + bx + c",
-                    "Solve quadratic equations by factorising"
+                    "Solve quadratic equations by factorising",
+                    "Recognise and factorise the perfect squares (a + b)\u00b2 and (a - b)\u00b2"
                 ],
                 "concepts": [
                     "Highest common factor first, then the pattern that fits (difference of squares, grouping, trinomial).",
                     "a\u00b2 \u2014 b\u00b2 = (a + b)(a \u2014 b).",
                     "For x\u00b2 + bx + c, find two numbers with product c and sum b.",
-                    "If a \u00d7 b = 0 then a = 0 or b = 0, which gives the roots of a quadratic equation."
+                    "If a \u00d7 b = 0 then a = 0 or b = 0, which gives the roots of a quadratic equation.",
+                    "(a + b)\u00b2 = a\u00b2 + 2ab + b\u00b2 and (a - b)\u00b2 = a\u00b2 - 2ab + b\u00b2: the middle term is twice the product of the two roots."
                 ],
                 "experiment": {
                     "type": "matching-game",
@@ -476,6 +484,100 @@
                 "experiment": {
                     "type": "matching-game",
                     "description": "Formula Rearranger Match: match each formula to the correct rearrangement for the letter requested."
+                }
+            },
+            {
+                "id": "mat-alg-binary-operations-and-distributive-law",
+                "title": "Binary Operations and Distributive Law",
+                "content": "A binary operation is a rule that combines two values into a single value, and the rule is defined by a formula rather than by a sign. The operation a\u2605b = a + 2b means: take the first value as it is, and add twice the second. So 3\u26055 = 3 + 2 \u00d7 5 = 3 + 10 = 13, and 5\u26053 = 5 + 2 \u00d7 3 = 5 + 6 = 11. The two answers differ, so this operation is not commutative.\n\nA defined operation can be applied to its own result, and the bracket decides the order. With a\u2605b = a + 2b, 3\u26055 = 13, so (3\u26055)\u26052 = 13\u26052 = 13 + 2 \u00d7 2 = 17. Applied repeatedly to the same value: 2\u26052 = 2 + 4 = 6, and 6\u26052 = 10. Associativity asks whether (a\u2605b)\u2605c equals a\u2605(b\u2605c); here (1\u26052)\u26053 = 5\u26053 = 11 while 1\u2605(2\u26053) = 1\u26058 = 17, so the operation is not associative either.\n\nAn unknown inside a defined operation is just an equation to solve. If 4\u2605x = 20 and a\u2605b = a + 2b, then 4 + 2x = 20, so 2x = 16 and x = 8. Substituting back, 4 + 2 \u00d7 8 = 20, which confirms it.\n\nThe distributive law is what allows brackets to be removed: a(b + c) = ab + ac and a(b - c) = ab - ac. Its numeric use, 7 \u00d7 98, is worked in Properties of Operations; this lesson is the same rule in algebra. Expanding single brackets with signs: 4(x - 2) - 3(x + 1) = 4x - 8 - 3x - 3 = x - 11. The sign in front of a bracket multiplies every term inside it, which is why -3(x + 1) gives -3x - 3 and not -3x + 3.\n\nTwo brackets are expanded by multiplying every term in the first bracket by every term in the second: (x + 2)(x + 3) = x\u00b2 + 3x + 2x + 6 = x\u00b2 + 5x + 6. Write all four products before collecting like terms, because dropping one of them is the commonest error.\n\nRead backwards, the distributive law is factorisation: because (x + 2)(x + 3) expands to x\u00b2 + 5x + 6, the factorised form of x\u00b2 + 5x + 6 is (x + 2)(x + 3). A common factor is taken out the same way, and Factorisation and Quadratic Equations develops the patterns further.",
+                "objectives": [
+                    "Evaluate a binary operation defined by a formula, including nested and repeated applications",
+                    "Find an unknown from a defined binary operation",
+                    "Test whether a defined operation is commutative or associative",
+                    "Expand single brackets with signs, and expand two brackets",
+                    "Read the distributive law backwards as a factorisation"
+                ],
+                "concepts": [
+                    "A binary operation is a rule, not a sign: a\u2605b = a + 2b is defined entirely by its formula.",
+                    "A defined operation can be applied to its own result inside brackets, and the bracket decides the order.",
+                    "a(b + c) = ab + ac: the factor in front of a bracket multiplies every term inside it, signs included.",
+                    "(x + 2)(x + 3) = x\u00b2 + 5x + 6, and read backwards the same rule factorises.",
+                    "The numeric use of the distributive law, 7 \u00d7 98, is in Properties of Operations; this lesson is its algebra."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Binary Operation Match: evaluate each defined operation, then match each expansion to the expression it came from."
+                }
+            },
+            {
+                "id": "mat-alg-simultaneous-equations",
+                "title": "Simultaneous Equations",
+                "content": "Simultaneous linear equations are two equations that must be true at the same time, and their solution is the pair of values that satisfies both. The answer is written as an ordered pair: 2x + y = 11 and x - y = 1 have the solution x = 4, y = 3, because 2 \u00d7 4 + 3 = 11 and 4 - 3 = 1.\n\nElimination adds or subtracts the two equations so that one variable cancels. In 2x + y = 11 and x - y = 1 the y terms have opposite signs, so add: 3x = 12, giving x = 4, and substituting back into x - y = 1 gives y = 3. When neither variable cancels as written, scale an equation first: for 3x + 2y = 16 and 2x + 3y = 19, multiply the first by 3 and the second by 2 to get 9x + 6y = 48 and 4x + 6y = 38, subtract to get 5x = 10, so x = 2, and substituting back gives y = 5; the solution is x = 2, y = 5.\n\nSubstitution rearranges one equation for one variable and puts it into the other. From y = 2x - 1 and 3x + y = 9, replace y in the second: 3x + 2x - 1 = 9, so 5x = 10 and x = 2; then y = 2 \u00d7 2 - 1 = 3, and the solution is x = 2, y = 3. Check in the equation you did not use: 3 \u00d7 2 + 3 = 9.\n\nSimultaneous linear and quadratic equations work the same way, because substituting the linear equation into the quadratic leaves one quadratic to solve. With y = x + 1 and y = x\u00b2 - 1, the two right-hand sides are equal, so x + 1 = x\u00b2 - 1, which rearranges to x\u00b2 - x - 2 = 0. Factorise it as (x - 2)(x + 1) = 0, giving x = 2 or x = -1, and back-substitute into y = x + 1 to get y = 3 or y = 0.\n\nTwo solutions mean the line cuts the curve at two points, so the answer is given as two coordinate pairs: (2, 3) and (-1, 0). The graphical method, plotting both and reading where they cross, is worked in Graphs of Linear and Quadratic Functions; here the algebra produces the same points exactly.",
+                "objectives": [
+                    "Solve two linear equations by elimination, scaling an equation where needed",
+                    "Solve simultaneous equations by substitution",
+                    "Check a solution by substituting both values into both equations",
+                    "Solve a linear and a quadratic equation together and give both points",
+                    "Explain what two solutions mean for a line and a curve"
+                ],
+                "concepts": [
+                    "The solution of simultaneous equations is the pair that satisfies both equations at once.",
+                    "Elimination adds or subtracts so one variable cancels; scale an equation first if neither cancels.",
+                    "Substitution puts one equation into the other and leaves a single variable.",
+                    "Substituting the linear equation into the quadratic gives a quadratic to solve, then back-substitute.",
+                    "Two solutions mean the line cuts the curve at two points."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Simultaneous Solution Match: drag each pair of equations to the values that satisfy both of them."
+                }
+            },
+            {
+                "id": "mat-alg-word-problems",
+                "title": "Algebraic Word Problems",
+                "content": "Algebraic word problems are solved by the same four moves every time: name the unknown with a letter, turn the words into an equation, solve it, then answer in the words and units the question asked for. The letter is defined in a sentence, such as \"let n be the smallest of the three integers\", so that every later line can be read on its own.\n\nConsecutive integers differ by 1, so three of them are n, n + 1 and n + 2. Three consecutive integers sum to 63, so n + (n + 1) + (n + 2) = 63; collecting gives 3n + 3 = 63, so 3n = 60 and n = 20. The integers are 20, 21 and 22, and 20 + 21 + 22 = 63 checks it.\n\nAge problems compare two expressions at two different times. A father is 4 times as old as his son; in 12 years he will be twice as old. Let the son be s, so the father is 4s, and in 12 years they are s + 12 and 4s + 12. Then 4s + 12 = 2(s + 12), so 4s + 12 = 2s + 24 and 2s = 12, giving s = 6: the son is 6 and the father is 24, and in 12 years 36 is twice 18.\n\nGeometry supplies the equation. A rectangle is 3 cm longer than it is wide with perimeter 34 cm: let the width be w, so the length is w + 3 and 2(w + w + 3) = 34. Then 4w + 6 = 34, so 4w = 28 and w = 7; the width is 7 cm and the length 10 cm, and the area is 7 \u00d7 10 = 70 cm\u00b2.\n\nMoney problems add and multiply prices. A shirt costs $12 more than a tie; three ties and two shirts cost $164. Let a tie cost t dollars, so a shirt costs t + 12, and 3t + 2(t + 12) = 164. Then 5t + 24 = 164, so 5t = 140 and t = 28: a tie costs $28 and a shirt $40, and 3 \u00d7 28 + 2 \u00d7 40 = 164.\n\nA problem with two unknowns needs two equations. 5 pencils and 3 pens cost $31; 2 pencils and 3 pens cost $25. Let a pencil cost p and a pen q, so 5p + 3q = 31 and 2p + 3q = 25; subtracting removes q and gives 3p = 6, so p = 2, and 2 \u00d7 2 + 3q = 25 gives 3q = 21, so q = 7. A pencil costs $2 and a pen $7, and 5 \u00d7 2 + 3 \u00d7 7 = 31 checks it.\n\nTurning a phrase into an expression is a different skill, worked in Algebraic Expressions and Equations. A word problem goes further, because the phrase has to become a whole equation that can be solved and then read back in the context it came from.",
+                "objectives": [
+                    "Define the unknown with a letter before writing any equation",
+                    "Form an equation from a worded problem and solve it",
+                    "Solve consecutive-integer and age problems",
+                    "Solve perimeter, area and money problems and give the answer with its unit",
+                    "Form two equations for a problem with two unknowns"
+                ],
+                "concepts": [
+                    "Name the unknown first, then translate the words into an equation.",
+                    "Consecutive integers are n, n + 1 and n + 2.",
+                    "For ages, write both expressions at the second time, not only the first.",
+                    "Answer in the context asked for, with the unit.",
+                    "Two unknowns need two equations, which is simultaneous equations."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Word Problem Match: drag each story to the answer it produces, and each equation to the simplified form it becomes."
+                }
+            },
+            {
+                "id": "mat-alg-variation",
+                "title": "Variation",
+                "content": "Variation states a relationship in symbols before any numbers appear. \"y varies directly as x\" is written y \u221d x and it means y = kx for some constant k. \"y varies inversely as x\" is written y \u221d 1/x and it means y = k/x. The symbol \u221d is read \"is proportional to\", and k is called the constant of variation.\n\nThree steps solve every variation question: write the general equation, find k from the stated pair, then state the particular equation and use it. If y \u221d x and y = 3 when x = 4, then 3 = k \u00d7 4 so k = 3/4 and the variation equation is y = (3/4)x; when x = 10, y = 7.5. If y \u221d 1/x and y = 5 when x = 2, then 5 = k/2 so k = 10 and the variation equation is y = 10/x; when x = 8, y = 1.25. Stating the equation, not just one value, is what a variation question asks for.\n\nJoint variation depends on more than one quantity at once. \"z varies jointly as x and y\" is z \u221d xy, so z = kxy. If z = 24 when x = 3 and y = 2, then 24 = k \u00d7 3 \u00d7 2 = 6k, so k = 4 and z = 4xy; when x = 5 and y = 6, z = 4 \u00d7 5 \u00d7 6 = 120.\n\nPartial variation is a direct variation plus a fixed part: y = kx + c, where c is the value of y when x is zero. If y = 11 when x = 2 and y = 20 when x = 5, then 2k + c = 11 and 5k + c = 20; subtracting gives 3k = 9, so k = 3 and c = 11 - 6 = 5, making y = 3x + 5. When x = 10, y = 35.\n\nThe graph tells the three kinds apart. Direct variation y = kx is a straight line through the origin with gradient k. Inverse variation y = k/x is a curve that never touches either axis: as x grows, y shrinks towards zero, and for positive k it falls from left to right. Partial variation y = kx + c is a straight line like direct variation, but it cuts the y-axis at c and so does not pass through the origin.\n\nThe numeric drills that use k in a measurement setting, such as the cost of cloth at a unit rate and the days taken by a number of workers, are worked in SI Units, Conversion and Rates. This lesson does not repeat them; what it adds is the algebraic statement and the equation as the answer.",
+                "objectives": [
+                    "Write a direct or inverse variation as an equation using a constant k",
+                    "Find k from one stated pair of values",
+                    "State the variation equation and use it to find a value",
+                    "Form and use a joint variation z = kxy",
+                    "Form and use a partial variation y = kx + c",
+                    "Tell direct, inverse and partial variation apart from the shape of the graph"
+                ],
+                "concepts": [
+                    "y \u221d x means y = kx, and y \u221d 1/x means y = k/x.",
+                    "Find k from one pair, then state the particular equation: the equation is the answer.",
+                    "Joint variation is z = kxy, with k found from one stated set of three values.",
+                    "Partial variation is y = kx + c, a direct variation plus a fixed part.",
+                    "Direct is a straight line through the origin, inverse is a curve that never touches either axis, and partial is a straight line that cuts the y-axis at c.",
+                    "The numeric k drills in a measurement setting are in SI Units, Conversion and Rates."
+                ],
+                "experiment": {
+                    "type": "classifier-sim",
+                    "description": "Variation Sorter: sort each statement, equation or graph description into direct, inverse, joint or partial variation."
                 }
             }
         ]

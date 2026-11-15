@@ -1310,4 +1310,152 @@ export const mathLessonWorkings = {
         "Interval with the highest frequency: 30 – 39 marks has 10 students against 6 and 4, so the modal class is 30 – 39 marks",
     ],
   },
+  "mat-alg-binary-operations-and-distributive-law": {
+    p1: [
+        "The rule is a★b = a + 2b, so the first value is used as it stands and the second is doubled",
+        "Substitute a = 3 and b = 5: 3 + 2 × 5 = 3 + 10",
+        "3 + 10 = 13, so 3★5 = 13",
+    ],
+    p2: [
+        "Apply the same rule with the values the other way round, because order is what commutativity is about",
+        "Substitute a = 5 and b = 3: 5 + 2 × 3 = 5 + 6",
+        "5 + 6 = 11, so 5★3 = 11 — which is not 13, so this operation is not commutative",
+    ],
+    p3: [
+        "An unknown inside the operation is just an equation: put b = x in a★b = a + 2b",
+        "4 + 2x = 20, so subtract 4 from both sides to get 2x = 16 and divide by 2",
+        "x = 8, and substituting back gives 4 + 2 × 8 = 20, so 4★x = 20 gives x = 8",
+    ],
+    p4: [
+        "The factor in front of each bracket multiplies every term inside it, and the sign travels with it",
+        "4(x - 2) = 4x - 8, and -3(x + 1) = -3x - 3 because the minus makes both terms negative",
+        "Collect like terms: 4x - 3x = x and -8 - 3 = -11, so the expansion is x - 11",
+    ],
+    p5: [
+        "Two brackets are expanded by multiplying every term in the first by every term in the second",
+        "x(x + 3) = x² + 3x, and 2(x + 3) = 2x + 6, giving the four products x², 3x, 2x and 6",
+        "Collect the like terms 3x + 2x = 5x, so (x + 2)(x + 3) = x² + 5x + 6",
+    ],
+    p6: [
+        "Factorising is the same rule read backwards, so look for two numbers that multiply to 6 and add to 5",
+        "The pair is 2 and 3, because 2 × 3 = 6 and 2 + 3 = 5",
+        "So x² + 5x + 6 = (x + 2)(x + 3), and expanding back returns x² + 5x + 6",
+    ],
+    p7: [
+        "A defined operation applied to its own result is read from the inside out, so (3★5)★2 works out the bracket first",
+        "3★5 = 13, and the outer application takes a = 13 and b = 2: 13 + 2 × 2 = 13 + 4",
+        "13 + 4 = 17, so 13★2 = 17 and (3★5)★2 = 17",
+    ],
+  },
+  "mat-alg-simultaneous-equations": {
+    p1: [
+        "The y terms are +y and -y, so adding the two equations makes them cancel",
+        "2x + x = 3x and 11 + 1 = 12, so 3x = 12 and x = 4",
+        "Substitute x = 4 into x - y = 1: 4 - y = 1 so y = 3, and the solution is x = 4, y = 3",
+    ],
+    p2: [
+        "Neither variable cancels as written, so scale the equations until one coefficient matches",
+        "3 × (3x + 2y = 16) is 9x + 6y = 48 and 2 × (2x + 3y = 19) is 4x + 6y = 38",
+        "Subtracting gives 5x = 10 so x = 2, then 3 × 2 + 2y = 16 gives 2y = 10 and y = 5, so the solution is x = 2, y = 5",
+    ],
+    p3: [
+        "The first equation already has y alone, so it can be substituted into the second",
+        "3x + 2x - 1 = 9 gives 5x = 10, so x = 2",
+        "Back-substitute: y = 2 × 2 - 1 = 3, so the solution is x = 2, y = 3, and 3 × 2 + 3 = 9 checks it",
+    ],
+    p4: [
+        "Both equations give y, so the two right-hand sides must be equal: x + 1 = x² - 1",
+        "Rearrange to zero and factorise: x² - x - 2 = 0 gives (x - 2)(x + 1) = 0, so x = 2 or x = -1",
+        "Back-substitute each x into y = x + 1: x = 2 gives y = 3 and x = -1 gives y = 0, so the points are (2, 3) and (-1, 0)",
+    ],
+    p5: [
+        "A quadratic has to equal zero before it can be factorised, so collect everything on one side",
+        "Subtract x from both sides and add 1 to both sides: x² - x - 2 = 0",
+        "So x + 1 = x² - 1 rearranges to x² - x - 2 = 0, which is the quadratic to solve",
+    ],
+    p6: [
+        "The coefficient of x² is 1, so look for two numbers that multiply to -2 and add to -1",
+        "The pair is -2 and 1, because -2 × 1 = -2 and -2 + 1 = -1",
+        "So x² - x - 2 = 0 factorises as (x - 2)(x + 1) = 0, and the roots are x = 2 and x = -1",
+    ],
+  },
+  "mat-alg-word-problems": {
+    p1: [
+        "Name the unknown: let n be the smallest integer, so the other two are n + 1 and n + 2",
+        "The words \"sum to 63\" become n + (n + 1) + (n + 2) = 63, which collects to 3n + 3 = 63",
+        "3n = 60 gives n = 20, so the integers are 20, 21 and 22, and 20 + 21 + 22 = 63 checks it",
+    ],
+    p2: [
+        "Let the son be s, so the father is 4s; in 12 years their ages are s + 12 and 4s + 12",
+        "\"Twice as old\" at that time gives 4s + 12 = 2(s + 12), so 4s + 12 = 2s + 24 and 2s = 12",
+        "s = 6, so the son is 6 and the father is 24, and in 12 years 36 is twice 18",
+    ],
+    p3: [
+        "Let the width be w, so the length is w + 3 and the perimeter gives 2(w + w + 3) = 34",
+        "4w + 6 = 34 gives 4w = 28, so w = 7 and the length is 7 + 3 = 10",
+        "So the width is 7 cm and the length 10 cm, and 2(7 + 10) = 34 checks it",
+    ],
+    p4: [
+        "Let a tie cost t dollars, so a shirt costs t + 12 dollars",
+        "Three ties and two shirts give 3t + 2(t + 12) = 164, so 5t + 24 = 164 and 5t = 140",
+        "t = 28, so a tie costs $28 and a shirt $40, and 3 × 28 + 2 × 40 = 164 checks it",
+    ],
+    p5: [
+        "Two unknowns need two equations: let a pencil cost p and a pen cost q",
+        "5p + 3q = 31 and 2p + 3q = 25; subtracting removes q and leaves 3p = 6, so p = 2",
+        "2 × 2 + 3q = 25 gives 3q = 21 and q = 7, so a pencil costs $2 and a pen $7, and 5 × 2 + 3 × 7 = 31 checks it",
+    ],
+    p6: [
+        "The three integers are n, n + 1 and n + 2, and \"sum to 63\" is the equation to write down",
+        "Collect the n terms, n + n + n = 3n, and the constants, 1 + 2 = 3",
+        "So n + (n + 1) + (n + 2) = 63 simplifies to 3n + 3 = 63",
+    ],
+    p7: [
+        "A check substitutes the values back into the condition the question gave",
+        "5 pencils at $2 and 3 pens at $7 give 5 × 2 + 3 × 7 = 10 + 21",
+        "10 + 21 = 31, which is the stated cost, so 5 × 2 + 3 × 7 = 31",
+    ],
+  },
+  "mat-alg-variation": {
+    i1: [
+        "The symbol ∝ in y ∝ x means the two quantities keep a constant ratio, and a constant ratio is written y = kx",
+        "k is the constant of variation, found from one stated pair of values",
+        "So y = kx is the algebraic statement of direct variation: this item belongs under Direct variation",
+    ],
+    i2: [
+        "\"Varies inversely\" means the product xy stays constant, and a constant product is written y = k/x",
+        "Doubling x halves y, which is exactly what a constant product does",
+        "So y = k/x is the algebraic statement of inverse variation: this item belongs under Inverse variation",
+    ],
+    i3: [
+        "\"Varies jointly as x and y\" means z depends on both of them at once, so z = kxy",
+        "The single constant k is found from one stated set of three values",
+        "So z = kxy is the algebraic statement of joint variation: this item belongs under Joint variation",
+    ],
+    i4: [
+        "Partial variation has a direct part kx with a fixed part c added to it",
+        "c is the value of y when x is zero, which is why its graph does not pass through the origin",
+        "So y = kx + c is the equation of partial variation: this item belongs under Partial variation",
+    ],
+    i5: [
+        "y = kx has no constant term, so when x = 0 the value of y is also 0",
+        "Two points fix a straight line, and (0, 0) is always one of the points on y = kx",
+        "So y = kx graphs as a straight line through the origin: this item belongs under Direct variation",
+    ],
+    i6: [
+        "k divided by a number is never zero, so y = k/x can never be zero",
+        "x cannot be zero either, because dividing by zero is undefined, so the curve approaches both axes without meeting them",
+        "So y = k/x graphs as a curve that never touches either axis: this item belongs under Inverse variation",
+    ],
+    i7: [
+        "Joint variation is z = kxy, and k comes from one stated set of three values",
+        "24 = k × 3 × 2 gives 6k = 24, so k = 4",
+        "Substituting k = 4 gives z = 4xy, and x = 5, y = 6 then gives z = 4 × 5 × 6 = 120: this item belongs under Joint variation",
+    ],
+    i8: [
+        "Partial variation is y = kx + c, and the two stated pairs give 2k + c = 11 and 5k + c = 20",
+        "Subtracting removes c: 3k = 9, so k = 3 and c = 11 - 6 = 5",
+        "So the equation is y = 3x + 5, and x = 10 gives y = 35: this item belongs under Partial variation",
+    ],
+  },
 };

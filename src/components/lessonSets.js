@@ -5627,6 +5627,71 @@ export const lessonSets = {
         { id: "p6", target: "how much a repeated sample would agree", label: "Reliability" },
       ],
     },
+    // Mathematics Slice 4 (algebra) — four new lessons. Every displayed string is
+    // taught verbatim by its own lesson's copy: tools/check-mathematics-labs.mjs A7
+    // holds these sets to the corpus rule (they are not grandfathered).
+    "mat-alg-binary-operations-and-distributive-law": {
+      title: "Binary Operation Match",
+      subtitle: "Drag each expression to the value or expanded form it gives.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "13", label: "3\u26055" },
+        { id: "p2", target: "11", label: "5\u26053" },
+        { id: "p3", target: "x = 8", label: "4\u2605x = 20" },
+        { id: "p4", target: "x - 11", label: "4(x - 2) - 3(x + 1)" },
+        { id: "p5", target: "x\u00b2 + 5x + 6", label: "(x + 2)(x + 3)" },
+        { id: "p6", target: "(x + 2)(x + 3)", label: "x\u00b2 + 5x + 6" },
+        { id: "p7", target: "17", label: "13\u26052" },
+      ],
+    },
+    "mat-alg-simultaneous-equations": {
+      title: "Simultaneous Solution Match",
+      subtitle: "Drag each pair of equations to the values that satisfy both.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "x = 4, y = 3", label: "2x + y = 11 and x - y = 1" },
+        { id: "p2", target: "x = 2, y = 5", label: "3x + 2y = 16 and 2x + 3y = 19" },
+        { id: "p3", target: "x = 2, y = 3", label: "y = 2x - 1 and 3x + y = 9" },
+        { id: "p4", target: "(2, 3) and (-1, 0)", label: "y = x + 1 and y = x\u00b2 - 1" },
+        { id: "p5", target: "x\u00b2 - x - 2 = 0", label: "x + 1 = x\u00b2 - 1" },
+        { id: "p6", target: "(x - 2)(x + 1) = 0", label: "x\u00b2 - x - 2 = 0" },
+      ],
+    },
+    "mat-alg-word-problems": {
+      title: "Word Problem Match",
+      subtitle: "Drag each story to the answer it produces.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "20, 21 and 22", label: "Three consecutive integers sum to 63" },
+        { id: "p2", target: "the son is 6 and the father is 24", label: "A father is 4 times as old as his son; in 12 years he will be twice as old" },
+        { id: "p3", target: "the width is 7 cm and the length 10 cm", label: "A rectangle is 3 cm longer than it is wide with perimeter 34 cm" },
+        { id: "p4", target: "a tie costs $28 and a shirt $40", label: "A shirt costs $12 more than a tie; three ties and two shirts cost $164" },
+        { id: "p5", target: "a pencil costs $2 and a pen $7", label: "5 pencils and 3 pens cost $31; 2 pencils and 3 pens cost $25" },
+        { id: "p6", target: "3n + 3 = 63", label: "n + (n + 1) + (n + 2) = 63" },
+        { id: "p7", target: "31", label: "5 \u00d7 2 + 3 \u00d7 7" },
+      ],
+    },
+    "mat-alg-variation": {
+      title: "Variation Sorter",
+      subtitle: "Sort each statement, equation or graph description into the kind of variation it is.",
+      kind: "sort",
+      categories: [
+        { id: "c1", label: "Direct variation" },
+        { id: "c2", label: "Inverse variation" },
+        { id: "c3", label: "Joint variation" },
+        { id: "c4", label: "Partial variation" },
+      ],
+      items: [
+        { id: "i1", label: "y = kx", category: "c1" },
+        { id: "i2", label: "y = k/x", category: "c2" },
+        { id: "i3", label: "z = kxy", category: "c3" },
+        { id: "i4", label: "y = kx + c", category: "c4" },
+        { id: "i5", label: "a straight line through the origin", category: "c1" },
+        { id: "i6", label: "a curve that never touches either axis", category: "c2" },
+        { id: "i7", label: "z = 4xy", category: "c3" },
+        { id: "i8", label: "y = 3x + 5", category: "c4" },
+      ],
+    },
   },
   "english-a": {
     // Per-lesson labs for the English A syllabus-gap lessons. The 10 older
