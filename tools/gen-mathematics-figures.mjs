@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Generator for the Mathematics Tier-1 lesson figures (CSEC Compass) — cycle 1.
+// Generator for the Mathematics Tier-1 lesson figures (CSEC Compass) — cycles 1 and 2.
 //
 // Provenance: every coordinate is COMPUTED from the arithmetic the lesson itself teaches.
 // Nothing is copied, traced or AI-generated; there is no image tool in this pipeline.
@@ -9,9 +9,16 @@
 //   - sector-and-segment     r=9, θ=80° -> arc 12.57 cm, perimeter 30.57 cm (about 30.6 cm);
 //                            r=6, θ=60° -> sector 18.85, triangle 15.59, segment 3.26 cm²;
 //   - trig-ratios-soh-cah-toa  labels only, no numbers: θ, the three sides, the three ratios.
+//   - statistical-diagrams-pie  60 students, frequencies 8/22/20/10 -> 48°/132°/120°/60°,
+//                            asserted to sum to 360° before a sector is drawn;
+//   - ogive-readings         THREE readings only — (44, 10), (52, 20), (61, 30) of 40 — plotted
+//                            as points with their reading lines and NO curve through them.
+//                            No endpoint is invented (the lesson gives no reading at 40) and the
+//                            lesson's second, incompatible dataset (20 at 30 marks, 34 at 40
+//                            marks) is never mixed in; both are asserted, not trusted.
 //
 //   node tools/gen-mathematics-figures.mjs              # rewrites BOTH trees (author + mirror)
-//   node tools/gen-mathematics-figures.mjs <outdir>     # or writes the three SVGs into <outdir>
+//   node tools/gen-mathematics-figures.mjs <outdir>     # or writes the five SVGs into <outdir>
 //
 // Re-running it reproduces the committed SVGs byte for byte (tools/check-figure-generators.mjs
 // is the gate on that; prove by hand with md5sum after two runs).
@@ -492,9 +499,205 @@ ${s}
 `;
 }
 
+// ===========================================================================
+// 4. statistical-diagrams-pie.svg — the lesson's own four-class survey, drawn.
+//
+//   60 students' marks in the classes 0–9, 10–19, 20–29, 30–39, frequencies 8, 22, 20, 10
+//     total  = 8 + 22 + 20 + 10            = 60
+//     angles = (8, 22, 20, 10) ÷ 60 × 360° = 48°, 132°, 120°, 60°   (the lesson prints these)
+//     check  = 48 + 132 + 120 + 60         = 360°
+//     share  = 8 ÷ 60 = 0.133              = 13.3%
+//   The angles are COMPUTED from the frequencies and then asserted against the four
+//   the lesson prints, and their sum is asserted to be 360° before anything is drawn.
+//
+//   NOT drawn: the frequency polygon. Its class midpoints (4.5, 14.5, 24.5, 34.5) are
+//   taught by the cumulative-frequency lesson, not this one, so the taught-number guard
+//   would (correctly) refuse the build. The fix is never to add them to the lesson copy
+//   in a figures PR.
+// ===========================================================================
+function statisticalDiagramsPie() {
+  const TOTAL = 60;
+  const ROWS = [["0\u20139", 8], ["10\u201319", 22], ["20\u201329", 20], ["30\u201339", 10]];
+  const TAUGHT_ANGLES = [48, 132, 120, 60];
+
+  must(ROWS.reduce((t, r) => t + r[1], 0) === TOTAL, `the four frequencies must add to ${TOTAL}`);
+  const angles = ROWS.map((r) => (r[1] / TOTAL) * 360);
+  angles.forEach((a, i) => must(round2(a) === TAUGHT_ANGLES[i],
+    `the sector angle for ${ROWS[i][0]} must be ${TAUGHT_ANGLES[i]}°, got ${a.toFixed(3)}`));
+  must(angles.reduce((t, a) => t + round2(a), 0) === 360,
+    "the four computed sector angles must add to exactly 360° before anything is drawn");
+  must(TAUGHT_ANGLES.reduce((t, a) => t + a, 0) === 360,
+    "the four angles the lesson prints must add to 360°");
+  const share = ROWS[0][1] / TOTAL;
+  must(Math.round(share * 1000) / 1000 === 0.133, `8 ÷ 60 must round to 0.133, got ${share}`);
+  must(round1(share * 100) === 13.3, `8 ÷ 60 must be 13.3%, got ${(share * 100).toFixed(4)}`);
+
+  const W = 880, H = 560;
+  const CX = 240, CY = 320, R = 175;
+  const pen = makePen();
+  const lab = makeLabeller();
+  let s = "";
+  const pt = (r, deg) => [CX + r * Math.cos(rad(deg)), CY + r * Math.sin(rad(deg))];
+  const FILLS = [BLUE_F, GREEN_F, RED_F, "rgba(75,85,99,0.10)"];
+  const STROKES = [BLUE, GREEN, RED, MUTED];
+
+  // one sector per class, swept clockwise from the top of the circle
+  let a0 = -90;
+  ROWS.forEach(([label, f], i) => {
+    const a1 = a0 + angles[i];
+    const p0 = pt(R, a0), p1 = pt(R, a1);
+    s += `<path d="M${CX},${CY} L${p0[0].toFixed(3)},${p0[1].toFixed(3)} A${R},${R} 0 ${angles[i] > 180 ? 1 : 0} 1 ${p1[0].toFixed(3)},${p1[1].toFixed(3)} Z" fill="${FILLS[i]}" stroke="none"/>`;
+    s += pen.line(CX, CY, p0[0], p0[1], `stroke="${STROKES[i]}" stroke-width="2"`);
+    s += pen.arc(CX, CY, R, a0, a1, `fill="none" stroke="${STROKES[i]}" stroke-width="2"`);
+    // the class and its frequency, on the sector's bisector, clear of both bounding radii
+    const lp = pt(R * 0.62, a0 + angles[i] / 2);
+    s += lab(lp[0], lp[1], label, { size: 13.5, w: "600", anchor: "middle", fill: STROKES[i] });
+    s += lab(lp[0], lp[1] + 20, String(f), { size: 17, w: "600", anchor: "middle", fill: INK });
+    a0 = a1;
+  });
+  must(round2(a0) === 270, `the four sectors must sweep one full turn from -90° to 270°, got ${a0}`);
+
+  // the lesson's own working, printed beside the circle
+  s += lab(470, 120, "Worked method \u2014 60 students' marks", { size: 14, w: "600" });
+  s += lab(470, 152, "8 + 22 + 20 + 10 = 60", { size: 13 });
+  s += lab(470, 182, "(8 ÷ 60) × 360° = 48°", { size: 13, fill: BLUE });
+  s += lab(470, 212, "(22 ÷ 60) × 360° = 132°", { size: 13, fill: GREEN });
+  s += lab(470, 242, "(20 ÷ 60) × 360° = 120°", { size: 13, fill: RED });
+  s += lab(470, 272, "(10 ÷ 60) × 360° = 60°", { size: 13, fill: MUTED });
+  s += lab(470, 302, "48 + 132 + 120 + 60 = 360°, so the angles are correct", { size: 13, w: "600" });
+  s += lab(470, 336, "8 ÷ 60 = 0.133 = 13.3%, the share of the 0\u20139 class", { size: 13 });
+  s += lab(470, 372, "class and frequency, not relative frequency", { size: 12.5, fill: MUTED });
+
+  s += lab(40, 34, "A pie chart of 60 students' marks", { size: 15, w: "600" });
+  s += lab(40, 52, "the angle of a sector is (frequency ÷ total) × 360°", { fill: MUTED, size: 12 });
+
+  assertTaught("mat-stat-statistical-diagrams", lab.texts);
+  assertNumbersTaught("mat-stat-statistical-diagrams", lab.texts);
+  pen.clear(lab, "statistical-diagrams-pie", W, H);
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img">
+<title>A pie chart of 60 students' marks in the classes 0-9, 10-19, 20-29 and 30-39, with frequencies 8, 22, 20 and 10 and sector angles 48, 132, 120 and 60 degrees</title>
+${s}
+</svg>
+`;
+}
+
+// ===========================================================================
+// 5. ogive-readings.svg — THE HONEST LIMIT: three readings, and no curve.
+//
+// The lesson prints exactly three cumulative-frequency readings of 40 students:
+//   cf 10 at 44 marks (Q1),  cf 20 at 52 marks (the median),  cf 30 at 61 marks (Q3)
+//   IQR = 61 − 44 = 17, semi-IQR = 8.5, and 30 − 10 = 20 out of 40 = 50%.
+//
+// It prints NO reading at or near 40, so a full 0 → 40 ogive would need an endpoint no
+// student can check — and the taught-number guard CANNOT catch that, because 40 is
+// taught elsewhere in the same lesson. So this figure plots the three readings as
+// POINTS with their reading lines and draws NO curve through them: three points do not
+// make a curve, and a straight segment between two of them would read as the shape of
+// the distribution, which the lesson never gives. Reading across from a cumulative
+// frequency to the marks IS what the lesson teaches, and that is what is drawn.
+//
+// The lesson also carries a SECOND, incompatible dataset — "the curve reads 20 at 30
+// marks and 34 at 40 marks". Cumulating frequency cannot fall as marks rise, so that is
+// a different survey and is never mixed into this figure; the assertions below prove
+// neither of its marks (30 as a mark, 40 as a mark) nor its reading 34 appears here.
+// ===========================================================================
+function ogiveReadings() {
+  const TOTAL = 40;
+  // [marks, cumulative frequency] — the lesson's three readings, in the order it reads them
+  const READINGS = [[44, 10], [52, 20], [61, 30]];
+
+  must(READINGS[1][1] === TOTAL / 2, `the median is read at half of ${TOTAL} = 20`);
+  must(READINGS[0][1] === TOTAL / 4, `Q1 is read at one quarter of ${TOTAL} = 10`);
+  must(READINGS[2][1] === TOTAL * 3 / 4, `Q3 is read at three quarters of ${TOTAL} = 30`);
+  const iqr = READINGS[2][0] - READINGS[0][0];
+  const semi = iqr / 2;
+  const middleHalf = READINGS[2][1] - READINGS[0][1];
+  must(iqr === 17, `Q3 - Q1 must be 17 marks, got ${iqr}`);
+  must(semi === 8.5, `the semi-interquartile range must be 8.5, got ${semi}`);
+  must(middleHalf === 20, `30 - 10 must be 20 students, got ${middleHalf}`);
+  must((middleHalf / TOTAL) * 100 === 50, `20 out of 40 must be 50%`);
+  // a cumulative reading is a running total: it can never fall as the marks rise
+  for (let i = 1; i < READINGS.length; i++) {
+    must(READINGS[i][0] > READINGS[i - 1][0], "the readings must be taken at rising marks");
+    must(READINGS[i][1] > READINGS[i - 1][1], "a cumulative frequency can never fall as the marks rise");
+  }
+
+  const W = 880, H = 580;
+  const OX = 130, OY = 470, PW = 470, PH = 360;      // the plot box: origin, width, height
+  const XMIN = 34, XMAX = 68, YMAX = 34;             // data window (its edges carry no label)
+  const X = (m) => OX + ((m - XMIN) / (XMAX - XMIN)) * PW;
+  const Y = (cf) => OY - (cf / YMAX) * PH;
+
+  const pen = makePen();
+  const lab = makeLabeller();
+  let s = "";
+
+  // the two axes — marks across, cumulative frequency up ("against the upper class boundary")
+  s += pen.line(OX, OY, OX, 110, `stroke="${LINE}" stroke-width="2.5"`);
+  s += pen.line(OX, OY, 600, OY, `stroke="${LINE}" stroke-width="2.5"`);
+  s += lab(40, 88, "cumulative", { size: 12.5, fill: MUTED });
+  s += lab(40, 106, "frequency", { size: 12.5, fill: MUTED });
+  s += lab(365, 530, "marks", { size: 13, w: "600", anchor: "middle" });
+
+  // the tick labels: only the three cumulative frequencies and the three marks the lesson prints
+  for (const [marks, cf] of READINGS) {
+    s += lab(122, Y(cf) + 4.5, String(cf), { size: 12.5, anchor: "end", fill: MUTED });
+    s += lab(X(marks), 492, String(marks), { size: 12.5, anchor: "middle", fill: MUTED });
+  }
+
+  // the three readings: read ACROSS from the cumulative frequency to the mark, then DOWN to it
+  const NOTE = { 10: "Q1", 20: "median", 30: "Q3" };
+  for (const [marks, cf] of READINGS) {
+    const px = X(marks), py = Y(cf);
+    s += pen.line(OX, py, px, py, `stroke="${BLUE}" stroke-width="1.8" stroke-dasharray="6 4"`);
+    s += pen.line(px, py, px, OY, `stroke="${BLUE}" stroke-width="1.8" stroke-dasharray="6 4"`);
+    s += pen.circle(px, py, 5, `fill="${BLUE}" stroke="${INK}" stroke-width="1.5"`);
+    const label = `${NOTE[cf]} = ${marks} marks`;
+    // Q1 and the median are labelled to the LEFT of their points, so neither label can run into
+    // the reading line of the point above it; Q3 has clear space to its right.
+    if (cf === 30) s += lab(px + 12, py - 12, label, { size: 12.5, w: "600", fill: BLUE });
+    else s += lab(px - 12, py - 12, label, { size: 12.5, w: "600", anchor: "end", fill: BLUE });
+  }
+
+  // what the readings give, worked the way the lesson works it
+  s += lab(630, 196, "reading the quartiles", { size: 13, w: "600" });
+  s += lab(630, 228, "interquartile range", { size: 12.5 });
+  s += lab(630, 250, "= 61 \u2212 44 = 17 marks", { size: 12.5, w: "600", fill: BLUE });
+  s += lab(630, 282, "semi-interquartile range = 8.5", { size: 12.5 });
+  s += lab(630, 314, "20 out of 40 = 50%", { size: 12.5, w: "600", fill: BLUE });
+  s += lab(630, 336, "the middle half of the class", { size: 12.5, fill: MUTED });
+
+  s += lab(40, 34, "An ogive: three readings", { size: 15, w: "600" });
+  s += lab(40, 52, "each reading is read from the curve at the cumulative frequency", { fill: MUTED, size: 12 });
+  s += lab(40, 552, "no curve through the three readings", { fill: MUTED, size: 12 });
+
+  // no endpoint is invented and no second dataset is mixed in
+  must(!/34/.test(lab.texts.join(" ")),
+    "the figure must never carry 34: that reading belongs to the lesson's other, incompatible dataset");
+  must(!/30 marks|40 marks/.test(lab.texts.join(" ")),
+    "the figure must never read a mark at 30 or 40: the lesson gives no such reading");
+  // three points do not make a curve — prove no curve element exists at all
+  must(!/<path|<polyline|<polygon/.test(s),
+    "the ogive ships plotted points and reading lines only: no path, polyline or polygon may be drawn");
+  must((s.match(/<circle /g) || []).length === 3, "the figure must plot exactly the three readings");
+
+  assertTaught("frequency-tables-and-cumulative-frequency", lab.texts);
+  assertNumbersTaught("frequency-tables-and-cumulative-frequency", lab.texts);
+  pen.clear(lab, "ogive-readings", W, H);
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img">
+<title>Readings taken from an ogive of 40 students' marks: cumulative frequency 10 at 44 marks, 20 at 52 marks and 30 at 61 marks, plotted as three points with their reading lines and no curve drawn through them</title>
+${s}
+</svg>
+`;
+}
+
 proveTaughtGuardBites();
 
 const figs = {
+  "statistical-diagrams-pie.svg": statisticalDiagramsPie(),
+  "ogive-readings.svg": ogiveReadings(),
   "venn-two-sets.svg": vennTwoSets(),
   "sector-and-segment.svg": sectorAndSegment(),
   "trig-ratios-soh-cah-toa.svg": trigRatios(),
@@ -530,3 +733,5 @@ console.log(`venn: C only = 25 - 10 = ${25 - 10}, F only = 18 - 10 = ${18 - 10},
 console.log(`sector: θ/360 = 80/360 = ${(80 / 360).toFixed(4)}, 2πr = 2 x 3.142 x 9 = ${(2 * PI * 9).toFixed(3)} -> 56.56 cm, arc = 2/9 x 56.56 = ${((2 / 9) * 2 * PI * 9).toFixed(3)} -> 12.57 cm, perimeter = 12.57 + 9 + 9 = ${((2 / 9) * 2 * PI * 9 + 18).toFixed(3)} -> 30.57 cm (about ${Math.round(((2 / 9) * 2 * PI * 9 + 18) * 10) / 10})`);
 console.log(`segment: sector = 60/360 x 3.142 x 36 = ${((60 / 360) * PI * 36).toFixed(3)} -> 18.85, triangle = 1/2 x 36 x 0.8660 = ${(0.5 * 36 * 0.866).toFixed(3)} -> 15.59, segment = ${(((60 / 360) * PI * 36) - 0.5 * 36 * 0.866).toFixed(3)} -> 3.26 cm²`);
 console.log(`trig: labels only — no numeric values in this cycle, so there is no arithmetic to log`);
+console.log(`pie: total = 8 + 22 + 20 + 10 = ${8 + 22 + 20 + 10}, angles = 48 + 132 + 120 + 60 = ${48 + 132 + 120 + 60}, 8 ÷ 60 = ${(8 / 60).toFixed(3)} = 13.3%`);
+console.log(`ogive: three readings only — (44, 10), (52, 20), (61, 30) of 40; IQR = 61 - 44 = ${61 - 44}, semi = ${(61 - 44) / 2}, 30 - 10 = 20 out of 40 = ${((20 / 40) * 100)}%; no curve drawn, no endpoint invented`);

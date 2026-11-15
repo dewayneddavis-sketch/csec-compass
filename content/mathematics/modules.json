@@ -898,7 +898,14 @@
                 "experiment": {
                     "type": "matching-game",
                     "description": "Ogive Reading Match: drag each statistic \u2014 median, lower quartile, upper quartile, interquartile range, estimated mean and modal class \u2014 onto how it is found from a cumulative frequency table."
-                }
+                },
+                "figures": [
+                    {
+                        "src": "/content/mathematics/figures/ogive-readings.svg",
+                        "alt": "Readings taken from an ogive of 40 students' marks: three points with reading lines and no curve drawn through them, reading cumulative frequency 10 at 44 marks, 20 at 52 marks and 30 at 61 marks.",
+                        "caption": "Readings taken from an ogive, not a plot of the whole distribution: only the three readings the lesson gives are marked, so no curve is drawn through them."
+                    }
+                ]
             },
             {
                 "id": "mat-stat-data-types-and-sampling",
@@ -946,7 +953,14 @@
                 "experiment": {
                     "type": "interactive-quiz",
                     "description": "Statistical Diagrams Match: drag each diagram or angle term onto the description that defines it."
-                }
+                },
+                "figures": [
+                    {
+                        "src": "/content/mathematics/figures/statistical-diagrams-pie.svg",
+                        "alt": "A pie chart of 60 students' marks in the classes 0-9, 10-19, 20-29 and 30-39, with the frequency of each class written in its sector (8, 22, 20 and 10), and the lesson's working for the sector angles 48, 132, 120 and 60 degrees printed beside it.",
+                        "caption": "Each sector carries its class and its frequency, not a relative frequency; the four angles add to 360 degrees."
+                    }
+                ]
             },
             {
                 "id": "mat-stat-standard-deviation",
