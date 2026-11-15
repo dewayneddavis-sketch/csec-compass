@@ -57,6 +57,18 @@
 // and every answer was re-derived independently (the table in the PR body),
 // because the harness proves structure and the answer, never the mathematics.
 //
+// BACKFILL SLICE B (2026-11-09) — the `sets` module, second of the six
+// module-owned slices: 6 sets / 31 items, 3 steps each.
+//   set-notation (5) · subsets-and-cardinality (6, sort) · venn-diagrams (5) ·
+//   union-intersection-complement (5) · shading-venn-regions (5) ·
+//   set-word-problems (5).
+// Those six lesson ids left `PENDING` in tools/check-math-working.mjs in the
+// same PR (A3), taking PENDING 26 → 20 and authored sets 10 → 16. Every step is
+// grounded in that lesson's own copy — venn-diagrams uses the lesson's filling
+// order and its own survey (40 · 25 cricket · 18 football · both 10 → 15 / 8 /
+// 7, check 15 + 10 + 8 + 7 = 40), which is exactly what the lesson's shipped
+// figure draws, so the working and the picture cannot drift apart.
+//
 // WHAT THE HARNESS PROVES, HONESTLY: structure and the answer — that every
 // authored key is a real lesson and a real item, that the last step states that
 // item's answer, that per-lesson working beats type-level working, and that the
@@ -256,6 +268,187 @@ export const mathLessonWorkings = {
         "A school fee instalment is the same amount each term and is planned in advance",
         "It does not change with how much the household uses",
         "So this payment belongs under: Fixed expense",
+    ],
+  },
+  // ---------------------------------------------------------------------
+  // BACKFILL SLICE B — sets (6 sets / 31 items)
+  // Grounded in each lesson's own copy in content/mathematics/modules.json:
+  //   set-notation uses the lesson's n(A) = 4 for {2, 4, 6, 8}, its ∈ / ∉
+  //   reading, its set-builder example {x : x is even and 0 < x < 10} and its
+  //   ∅ vs {0} contrast; venn-diagrams uses the lesson's filling ORDER and its
+  //   own survey numbers (40 · C 25 · F 18 · both 10 → 15 / 8 / 7, check
+  //   15 + 10 + 8 + 7 = 40), which are also the numbers the shipped figure
+  //   draws; union-intersection-complement uses the lesson's worked example
+  //   ξ = {1…8}, A = {1…5}, B = {4, 5, 6, 7}; set-word-problems applies the
+  //   lesson's two-club method to its own lab survey (40 · D 24 · C 20 ·
+  //   both 7). subsets-and-cardinality and shading-venn-regions are `sort`
+  //   sets, so their last step states the CATEGORY LABEL the item sorts into.
+  // ---------------------------------------------------------------------
+  "set-notation": {
+    p1: [
+        "n(A) means the number of elements in the set A, so count the items written inside the braces and ignore the commas",
+        "The set {2, 4, 6, 8} lists the elements 2, 4, 6 and 8, and an element repeated would still be counted once",
+        "Counting them gives 1, 2, 3, 4, so n({2, 4, 6, 8}) = 4",
+    ],
+    p2: [
+        "The symbol ∈ means 'is an element of', so the question is whether 3 is written inside the braces",
+        "The set {1, 3, 5} lists the elements 1, 3 and 5, and 3 is one of them",
+        "So the statement 3 ∈ {1, 3, 5} is True",
+    ],
+    p3: [
+        "The symbol ∈ means 'is an element of', so the question is whether 4 is written inside the braces",
+        "The set {1, 3, 5} lists the elements 1, 3 and 5, and 4 is not among them, so the membership fails",
+        "So the statement 4 ∈ {1, 3, 5} is False",
+    ],
+    p4: [
+        "Set-builder notation gives the rule instead of the list: x must be even, and 0 < x < 10 means x is greater than 0 and less than 10",
+        "The even numbers between 0 and 10 are 2, 4, 6 and 8, and 0 and 10 are excluded because both inequalities are strict",
+        "Written in roster form, which lists the elements in braces, the set is {2, 4, 6, 8}",
+    ],
+    p5: [
+        "The empty set is the set with no elements at all, and it is written ∅ or { }",
+        "It is not the same as {0}, because {0} is a set with one element in it, the number 0",
+        "So a set with no elements is ∅",
+    ],
+  },
+  "subsets-and-cardinality": {
+    i1: [
+        "A ⊆ B means every element of A is also an element of B, and the empty set ∅ is a subset of every set",
+        "Every set is a subset of itself as well, so {1, 2, 3} ⊆ {1, 2, 3}",
+        "Both parts of the statement are about the subset relation, so it belongs under: Subsets",
+    ],
+    i2: [
+        "The statement gives the meaning of the symbol ⊆, which is read as 'is a subset of'",
+        "If A ⊆ B then every element of A is also an element of B, and when A has fewer elements than B it is a proper subset, A ⊂ B",
+        "So this definition belongs under: Subsets",
+    ],
+    i3: [
+        "The symbol ξ names the universal set, the set that contains every element being discussed in the problem",
+        "The complement A' is everything in ξ that is not in A, so choosing a different ξ changes what A' contains",
+        "So the statement is about the universal set and belongs under: Complement and universal set",
+    ],
+    i4: [
+        "The dash in A' marks the complement, and the complement is defined as A' = {x : x ∈ ξ, x ∉ A}",
+        "So A' holds every element of ξ that is not in A: with ξ = {1, 2, 3, 4, 5} and A = {2, 4}, A' = {1, 3, 5}",
+        "That is the complement taken inside the universal set, so it belongs under: Complement and universal set",
+    ],
+    i5: [
+        "A set with n elements has 2^n subsets in total, and here n = 3",
+        "2^3 = 2 × 2 × 2 = 8, so a set with 3 elements has 8 subsets, of which 2^3 − 1 = 7 are proper subsets",
+        "The statement is a count of the subsets, so it belongs under: Counting elements",
+    ],
+    i6: [
+        "n(A) means the number of elements of A, which is its cardinal number",
+        "A = {2, 4, 6, 8} lists 2, 4, 6 and 8, so counting them gives n(A) = 4",
+        "This is counting the elements of a set, so it belongs under: Counting elements",
+    ],
+  },
+  "venn-diagrams": {
+    p1: [
+        "The overlap of the two circles holds the students who play both games, and the survey says 10 play both",
+        "n(C) = 25 and n(F) = 18, and both of those totals include these 10 students, so the overlap is written first",
+        "So the number who play both cricket and football is 10",
+    ],
+    p2: [
+        "Cricket only is the part of the C circle outside the overlap, so it is n(C) minus the overlap",
+        "25 − 10 = 15",
+        "So 15 students play cricket only",
+    ],
+    p3: [
+        "Football only is the part of the F circle outside the overlap, so it is n(F) minus the overlap",
+        "18 − 10 = 8",
+        "So 8 students play football only",
+    ],
+    p4: [
+        "The three regions inside the circles are 15, 10 and 8, and they add to 15 + 10 + 8 = 33",
+        "The neither region is what is left of the 40 students surveyed: 40 − 33 = 7",
+        "So 7 students play neither game, written inside the rectangle but outside both circles",
+    ],
+    p5: [
+        "n(ξ) is the total number of students surveyed, and the four regions must add up to it",
+        "Check the diagram: 15 + 10 + 8 + 7 = 40",
+        "So the total number of students surveyed is 40, which is n(ξ)",
+    ],
+  },
+  "union-intersection-complement": {
+    p1: [
+        "The union A ∪ B holds everything in A or in B or in both, so take every element of ξ that appears in at least one of the two sets",
+        "A = {1, 2, 3, 4, 5} and B = {4, 5, 6, 7}, and 4 and 5 are in both sets so each is written once",
+        "So A ∪ B = {1, 2, 3, 4, 5, 6, 7}",
+    ],
+    p2: [
+        "The intersection A ∩ B holds only the elements that are in A and in B, so look for the elements common to both lists",
+        "A = {1, 2, 3, 4, 5} and B = {4, 5, 6, 7}, and the common elements are 4 and 5",
+        "So A ∩ B = {4, 5}",
+    ],
+    p3: [
+        "The complement A' holds the elements of the universal set ξ that are not in A",
+        "ξ = {1, 2, 3, 4, 5, 6, 7, 8} and A = {1, 2, 3, 4, 5}, so 1, 2, 3, 4 and 5 are removed from ξ",
+        "So A' = {6, 7, 8}",
+    ],
+    p4: [
+        "The set difference A − B, also written A ∩ B', holds the elements of A that are not in B",
+        "A = {1, 2, 3, 4, 5} and B = {4, 5, 6, 7}, so 4 and 5 are removed from A, and 6 and 7 were never in A",
+        "So A − B = {1, 2, 3}",
+    ],
+    p5: [
+        "The set difference B − A, also written B ∩ A', holds the elements of B that are not in A",
+        "B = {4, 5, 6, 7} and A = {1, 2, 3, 4, 5}, so 4 and 5 are removed from B and 6 and 7 stay",
+        "So B − A = {6, 7}",
+    ],
+  },
+  "shading-venn-regions": {
+    p1: [
+        "Read the notation one symbol at a time: B' is everything outside B, and ∩ means 'and', so A ∩ B' needs an element in A and not in B",
+        "On the diagram that is the part of the A circle that does not overlap the B circle",
+        "Translate the notation into words: In A but not in B",
+    ],
+    p2: [
+        "The bracket is worked first: A ∪ B is everything inside the two circles",
+        "The dash then takes the complement of that union, so the region is everything in ξ outside both circles",
+        "Translate the notation into words: In neither A nor B",
+    ],
+    p3: [
+        "Each ∩ means 'and', so A ∩ B ∩ C needs an element that is in A and in B and in C",
+        "In a three-set diagram that is the middle region where all three circles overlap, one of the eight regions",
+        "Translate the notation into words: In all three sets",
+    ],
+    p4: [
+        "A ∩ B holds the elements in both A and B, and joining C' adds the condition 'and not in C'",
+        "So take the overlap of A and B and remove the part of it that also lies inside C",
+        "Translate the notation into words: In A and B but not C",
+    ],
+    p5: [
+        "B' means not in B and C' means not in C, and both conditions are joined to A by ∩",
+        "So the region is inside A and outside both B and C, the part of A that overlaps neither circle",
+        "Translate the notation into words: In A only",
+    ],
+  },
+  "set-word-problems": {
+    p1: [
+        "The overlap of the two circles holds the students who belong to both clubs, and the survey gives both = 7",
+        "n(D) = 24 and n(C) = 20, and each of those totals already counts these 7 students, so the overlap is written first",
+        "So 7 students belong to both clubs",
+    ],
+    p2: [
+        "Debating only is the part of the D circle outside the overlap, so it is n(D) minus the overlap",
+        "24 − 7 = 17",
+        "So 17 students belong to the debating club only",
+    ],
+    p3: [
+        "Chess only is the part of the C circle outside the overlap, so it is n(C) minus the overlap",
+        "20 − 7 = 13",
+        "So 13 students belong to the chess club only",
+    ],
+    p4: [
+        "The three regions inside the circles are 17, 7 and 13, and they add to 17 + 7 + 13 = 37",
+        "The neither region is what is left of the 40 students: 40 − 37 = 3",
+        "So 3 students belong to neither club",
+    ],
+    p5: [
+        "'At least one club' means the union D ∪ C, so it is every region inside the two circles",
+        "Add the three regions: 17 + 7 + 13 = 37",
+        "So 37 students belong to at least one club",
     ],
   },
   // ---------------------------------------------------------------------
