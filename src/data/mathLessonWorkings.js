@@ -1458,4 +1458,197 @@ export const mathLessonWorkings = {
         "So the equation is y = 3x + 5, and x = 10 gives y = 35: this item belongs under Partial variation",
     ],
   },
+  // ---- Slice 5: relations-functions-graphs + geometry-trigonometry -------
+  "mat-rel-linear-programming": {
+    p1: [
+      "The corner (0, 0) is where the boundary x = 0 meets the boundary y = 0",
+      "Substitute into P = 3x + 2y: P = 3 \u00d7 0 + 2 \u00d7 0 = 0",
+      "So the corner (0, 0) gives P = 0",
+    ],
+    p2: [
+      "The corner (4, 0) is where x + y = 4 meets y = 0, and x + 2y \u2264 6 still holds because 4 \u2264 6",
+      "Substitute into P = 3x + 2y: P = 3 \u00d7 4 + 2 \u00d7 0 = 12",
+      "So the corner (4, 0) gives P = 12",
+    ],
+    p3: [
+      "The corner (0, 3) is where x = 0 meets x + 2y = 6, and x + y \u2264 4 still holds because 3 \u2264 4",
+      "Substitute into P = 3x + 2y: P = 3 \u00d7 0 + 2 \u00d7 3 = 6",
+      "So the corner (0, 3) gives P = 6",
+    ],
+    p4: [
+      "Solving x + y = 4 and x + 2y = 6 simultaneously: subtracting gives y = 2, and then x = 2",
+      "Substitute into P = 3x + 2y: P = 3 \u00d7 2 + 2 \u00d7 2 = 6 + 4 = 10",
+      "So the corner (2, 2) gives P = 10",
+    ],
+  },
+  "mat-rel-non-linear-functions": {
+    i1: [
+      "The variable x sits in the denominator, which is what makes the function a reciprocal",
+      "Its graph has two separate branches and neither axis is ever reached",
+      "So y = 1/x is the shape of the reciprocal: this item belongs under Reciprocal graph",
+    ],
+    i2: [
+      "Two separate branches that approach the axes without reaching them is the shape of y = 1/x",
+      "The lines a curve approaches but never reaches are its asymptotes",
+      "So two branches that never touch either axis describes the reciprocal: this item belongs under Reciprocal graph",
+    ],
+    i3: [
+      "The variable x is in the index rather than in the base",
+      "Each step in x multiplies the value by the same factor, here 2",
+      "So y = 2\u02e3 is an exponential: this item belongs under Exponential graph",
+    ],
+    i4: [
+      "A constant multiplier is what makes a table of values exponential",
+      "For y = 2\u02e3 the values 1, 2, 4, 8 and 16 double at every step",
+      "So multiplied by the same factor at every step describes an exponential: this item belongs under Exponential graph",
+    ],
+    i5: [
+      "The highest power of x is 3, and a highest power of 3 makes the function a cubic",
+      "The graph of y = x\u00b3 passes through the origin and flattens there before climbing again",
+      "So y = x\u00b3 is a cubic: this item belongs under Cubic graph",
+    ],
+    i6: [
+      "A root is a value of x where the curve crosses the x-axis",
+      "A cubic can cross the x-axis up to three times, which is why it can have up to three roots",
+      "So up to three roots is a property of a cubic: this item belongs under Cubic graph",
+    ],
+    i7: [
+      "Speed is distance divided by time, and a gradient is the change in y divided by the change in x",
+      "On a distance-time graph y is distance and x is time, so the gradient works out as distance divided by time",
+      "So the gradient is the speed is read from a travel graph: this item belongs under Travel graph",
+    ],
+    i8: [
+      "On a speed-time graph the height is speed and the width is time",
+      "Speed multiplied by time gives distance, and that product is the area under the line",
+      "So the area under it is the distance travelled is read from a travel graph: this item belongs under Travel graph",
+    ],
+  },
+  "mat-geo-geometric-drawing-and-constructions": {
+    p1: [
+      "Arcs of the same radius are drawn from A and from B, so each crossing is the same distance from A and from B",
+      "Joining the two crossings draws the line through both of them, at 90\u00b0 to AB",
+      "So the perpendicular bisector of AB gives a line on which every point is the same distance from A and from B",
+    ],
+    p2: [
+      "An arc from the vertex cuts both arms at points the same distance from the vertex",
+      "Equal arcs from those two points meet at one point, and the line from the vertex through it splits the angle evenly",
+      "So the bisector of an angle gives two equal angles at the vertex",
+    ],
+    p3: [
+      "An arc from the given point cuts the line at two places, and equal arcs from those places meet below the line",
+      "The line from the given point through that crossing meets the line at 90\u00b0",
+      "So the perpendicular from a point to a line gives the shortest distance from the point to the line",
+    ],
+    p4: [
+      "The compasses are opened to one radius and that same radius is stepped from each end of the segment",
+      "Two arcs of the same radius meet at a third point that is the same distance from both ends",
+      "So constructing 60\u00b0 gives an equilateral triangle on the same radius, and every angle of it is 60\u00b0",
+    ],
+    p5: [
+      "An arc is drawn from the vertex of the given angle, then the same arc drawn from the new vertex",
+      "The gap between the two crossings on the original is taken with the compasses and stepped across to the new arc",
+      "So copying an angle reproduces it exactly by the same arc drawn from the new vertex",
+    ],
+  },
+  "mat-geo-symmetry": {
+    i1: [
+      "A square folds onto itself along each diagonal and along each line joining the midpoints of opposite sides: 4 lines",
+      "It turns onto itself at 90\u00b0, 180\u00b0, 270\u00b0 and 360\u00b0, so its rotational order is 4",
+      "So a square has 4 lines and rotational order 4: this item belongs under Both line and rotational symmetry",
+    ],
+    i2: [
+      "A rectangle folds onto itself only along the two lines joining the midpoints of opposite sides: 2 lines, and its diagonals are not lines of symmetry",
+      "It turns onto itself at 180\u00b0 and 360\u00b0, so its rotational order is 2",
+      "So a rectangle has 2 lines and rotational order 2: this item belongs under Both line and rotational symmetry",
+    ],
+    i3: [
+      "An equilateral triangle folds onto itself along each of its three medians: 3 lines",
+      "It turns onto itself at 120\u00b0, 240\u00b0 and 360\u00b0, so its rotational order is 3",
+      "So an equilateral triangle has 3 lines and rotational order 3: this item belongs under Both line and rotational symmetry",
+    ],
+    i4: [
+      "A regular n-gon has n lines of symmetry, so a regular pentagon has 5 lines",
+      "Its rotational order is also 5, one turn for each fifth of a full turn",
+      "So a regular pentagon has 5 lines and rotational order 5: this item belongs under Both line and rotational symmetry",
+    ],
+    i5: [
+      "An isosceles triangle folds onto itself along the line from the apex to the midpoint of the base: 1 line",
+      "No turn short of a full turn lands it on itself, so its rotational order is 1",
+      "So an isosceles triangle has 1 line and rotational order 1: this item belongs under Line symmetry only",
+    ],
+    i6: [
+      "A kite folds onto itself along the line through its two unequal vertices: 1 line",
+      "No turn short of a full turn lands it on itself, so its rotational order is 1",
+      "So a kite has 1 line and rotational order 1: this item belongs under Line symmetry only",
+    ],
+    i7: [
+      "A parallelogram turns onto itself at 180\u00b0 and 360\u00b0, so its rotational order is 2",
+      "No fold lands one half on the other, because its diagonals are not lines of symmetry: 0 lines",
+      "So a parallelogram has 0 lines and rotational order 2: this item belongs under Rotational symmetry only",
+    ],
+    i8: [
+      "A scalene triangle has three different sides, so no fold lands one half on the other: 0 lines",
+      "No turn short of a full turn lands it on itself, so its rotational order is 1",
+      "So a scalene triangle has 0 lines and rotational order 1: this item belongs under No symmetry",
+    ],
+  },
+  "mat-geo-sine-and-cosine-rules": {
+    p1: [
+      "Two angles and the side opposite one of them are given, so use the Sine Rule: a \u00f7 sin A = b \u00f7 sin B",
+      "b = a \u00d7 sin B \u00f7 sin A = 8 \u00d7 0.9063 \u00f7 0.6428 = 7.2504 \u00f7 0.6428",
+      "So b = 7.2504 \u00f7 0.6428 = 11.28 cm, giving b = 11.28 cm",
+    ],
+    p2: [
+      "Two sides and the angle between them are given, so use the Cosine Rule: c\u00b2 = a\u00b2 + b\u00b2 \u2212 2ab cos C",
+      "c\u00b2 = 49 + 81 \u2212 2 \u00d7 7 \u00d7 9 \u00d7 0.6428 = 130 \u2212 80.99 = 49.01",
+      "So c = \u221a49.01 = 7.00 cm, giving c = 7.00 cm",
+    ],
+    p3: [
+      "All three sides are given, so use the Cosine Rule rearranged for an angle: cos A = (b\u00b2 + c\u00b2 \u2212 a\u00b2) \u00f7 (2bc)",
+      "cos A = (64 + 49 \u2212 25) \u00f7 (2 \u00d7 8 \u00d7 7) = 88 \u00f7 112 = 0.7857",
+      "So A = cos\u207b\u00b9 0.7857 = 38.2\u00b0, giving A = 38.2\u00b0",
+    ],
+    p4: [
+      "List what is given: two sides and the angle between them",
+      "The Cosine Rule takes exactly those three pieces, b, c and the angle A between them, so no right angle is needed",
+      "So with two sides and the angle between them, use the Cosine Rule",
+    ],
+    p5: [
+      "List what is given: two angles and one opposite side",
+      "The Sine Rule pairs each side with the angle opposite it, so a known opposite pair is what it needs",
+      "So with two angles and one opposite side, use the Sine Rule",
+    ],
+  },
+  "mat-geo-bearings": {
+    p1: [
+      "Bearings are measured clockwise from north, and north is the zero direction",
+      "Three figures are always written, so zero is written as 000 rather than 0",
+      "So north is the bearing 000\u00b0",
+    ],
+    p2: [
+      "East is a quarter turn clockwise from north",
+      "A quarter of 360\u00b0 is 90\u00b0, and with three figures that is 090\u00b0",
+      "So east is the bearing 090\u00b0",
+    ],
+    p3: [
+      "South is a half turn clockwise from north",
+      "Half of 360\u00b0 is 180\u00b0",
+      "So south is the bearing 180\u00b0",
+    ],
+    p4: [
+      "West is three quarters of a turn clockwise from north",
+      "Three quarters of 360\u00b0 is 270\u00b0",
+      "So west is the bearing 270\u00b0",
+    ],
+    p5: [
+      "The back bearing differs from the forward bearing by 180\u00b0",
+      "070\u00b0 is less than 180\u00b0, so add 180\u00b0: 70 + 180 = 250",
+      "So the back bearing of 070\u00b0 is 250\u00b0",
+    ],
+    p6: [
+      "The back bearing differs from the forward bearing by 180\u00b0",
+      "130\u00b0 is less than 180\u00b0, so add 180\u00b0: 130 + 180 = 310",
+      "So the back bearing of 130\u00b0 is 310\u00b0",
+    ],
+  },
 };

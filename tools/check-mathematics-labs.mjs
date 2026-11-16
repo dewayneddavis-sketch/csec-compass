@@ -220,6 +220,14 @@ const recognisedOf = (groups) => new Set([
 // ---------------------------------------------------------------------------
 const LEGACY_BASE = { count: 24, newLessonId: /^mat-/ };
 
+// The red controls' stand-in id for "a key that is not a real lesson" (R2) and
+// "a key that is not a real set" (R11). Both used to name `mat-geo-bearings` by
+// hand, and Slice 5 (2026-11-15) gave that id a real lesson AND a real set, so
+// both controls stopped biting while still reporting themselves as controls —
+// the same rot as a hand-typed PENDING pointer. A reserved id that no content
+// slice may ever create cannot rot that way.
+const FIXTURE_ID = "red-control-fixture-id";
+
 // The two measurement tools' copy, arithmetic and component sources, for
 // assertions 13 and 14. Read once; a red control substitutes its own.
 const MEASUREMENT_WORKING = { rectangleWorking, circleWorking, prismWorking, cylinderWorking };
@@ -817,10 +825,10 @@ if (RED_CONTROL) {
     [new RegExp(`^A3: ${liveSetCount - 1} sets for ${coverageCount} coverage lessons`),
      /^A8: LEGACY_SETS is not an exact partition/],
     (i) => { delete i.sets["venn-diagrams"]; });
-  red("R2", "a set keyed to a lesson that does not exist -> A1",
-    [/^A1: lessonSets\.mathematics\.mat-geo-bearings: "mat-geo-bearings" is not a lesson id/],
+  red("R2", `a set keyed to a lesson that does not exist -> A1 (${FIXTURE_ID})`,
+    [new RegExp(`^A1: lessonSets\\.mathematics\\.${FIXTURE_ID}: "${FIXTURE_ID}" is not a lesson id`)],
     (i) => {
-      i.sets["mat-geo-bearings"] = { title: "Bearings Drill", subtitle: "Drag each.", kind: "match", pairs: [
+      i.sets[FIXTURE_ID] = { title: "Fixture Drill", subtitle: "Drag each.", kind: "match", pairs: [
         { id: "p1", label: "a", target: "b" }, { id: "p2", label: "b", target: "c" },
         { id: "p3", label: "c", target: "d" }, { id: "p4", label: "d", target: "a" },
       ] };
@@ -856,9 +864,9 @@ if (RED_CONTROL) {
   red("R10", "a legacy key that is no longer a live set -> the UNION mismatch, specifically",
     [/^A8: LEGACY_SETS is not an exact partition of the live sets: union names \[venn-diagrams\] that no set provides/],
     (i) => { delete i.sets["venn-diagrams"]; });
-  red("R11", "LEGACY_SETS naming a key that is not a set -> A8 names it",
-    [/^A8: LEGACY_SETS is not an exact partition of the live sets: "mat-geo-bearings" is not a set/],
-    (i) => { i.legacySets = [...i.legacySets, "mat-geo-bearings"]; });
+  red("R11", `LEGACY_SETS naming a key that is not a set -> A8 names it (${FIXTURE_ID})`,
+    [new RegExp(`^A8: LEGACY_SETS is not an exact partition of the live sets: "${FIXTURE_ID}" is not a set`)],
+    (i) => { i.legacySets = [...i.legacySets, FIXTURE_ID]; });
   red("R12", "an experiment stored as a bare string -> A9",
     [/^A9: real-numbers: experiment must be an object with a type and a description/],
     (i) => { i.allLessons.find((l) => l.id === "real-numbers").experiment = "interactive-quiz"; });
