@@ -773,13 +773,21 @@ if (SELFTEST) {
   ok(clean.length === 0, `selftest: a well-formed fixture yields zero problems (got ${clean.length}: ${clean.join(" | ")})`);
 
   section("selftest: the same assertions must FAIL on doctored fixtures");
-  // (1) an authored entry for a lesson that does not own a set
-  const badLesson = await treeEnv({ workingsSrc: 'export const mathLessonWorkings = { "mat-geo-bearings": { p1: ["a", "b"] } };\n' });
+  // (1) an authored entry for a lesson that does not own a set.
+  // The example is DERIVED from the shipped tree, not typed: the hardcoded
+  // "mat-geo-bearings" was a lesson that owned no set until Slice 5 gave it one,
+  // at which point this control silently stopped testing A1 at all.
+  const FX_NON_OWNER = JSON.parse(read("content/mathematics/modules.json"))
+    .flatMap((m) => (m.lessons || []).map((l) => l.id))
+    .find((id) => !lessonSets.mathematics[id]);
+  ok(typeof FX_NON_OWNER === "string" && FX_NON_OWNER.length > 0,
+    "selftest: the tree still has a lesson that owns no per-lesson set to doctor");
+  const badLesson = await treeEnv({ workingsSrc: `export const mathLessonWorkings = { "${FX_NON_OWNER}": { p1: ["a", "b"] } };\n` });
   badLesson.sets = { [FX_LESSON]: fxSet };
   badLesson.pending = [FX_LESSON];
   const badLessonProblems = revealProblems(badLesson);
-  ok(badLessonProblems.some((p) => /^A1: mathLessonWorkings\.mat-geo-bearings: "mat-geo-bearings" is not a lesson that owns a set/.test(p)),
-    `selftest: an entry for a non-owning lesson fails A1 (${badLessonProblems[0] || "no problem"})`);
+  ok(badLessonProblems.some((p) => new RegExp(`^A1: mathLessonWorkings\\.${FX_NON_OWNER}: "${FX_NON_OWNER}" is not a lesson that owns a set`).test(p)),
+    `selftest: an entry for a non-owning lesson (${FX_NON_OWNER}) fails A1 (${badLessonProblems[0] || "no problem"})`);
   // (2) the last step does not state the answer
   const wrongTail = JSON.parse(JSON.stringify(fxWorkings));
   wrongTail[FX_LESSON][fxItems[0].id] = ["work it out", "the answer is 999"];

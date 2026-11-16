@@ -418,7 +418,7 @@
                 ],
                 "experiment": {
                     "type": "number-line-plotter",
-                    "description": "Inequality Mapper: Input an inequality (e.g., 2x + 3 > 7) and watch the solution shade automatically on an interactive number line."
+                    "description": "Number Line Plotter: choose x >= b, x <= b, x > b or x < b, slide the boundary b, and watch the solution region shade on the number line."
                 }
             },
             {
@@ -761,7 +761,7 @@
                 ],
                 "experiment": {
                     "type": "function-machine",
-                    "description": "Function Machine: Drop a number into a 'machine' that applies f(x) and g(x) to show composite functions visually."
+                    "description": "Function Machine f(x) = 2x + 1: drag each input, f(0) to f(4), to the output the machine gives it."
                 }
             },
             {
@@ -852,7 +852,7 @@
                 ],
                 "experiment": {
                     "type": "interactive-triangle",
-                    "description": "Pythagoras Visualiser: Drag the vertices of a right-angled triangle and see the squares of the sides (a^2, b^2, c^2) update in real-time to satisfy the theorem."
+                    "description": "Find the Hypotenuse: each right-angled triangle gives its two shorter sides; drag it to its hypotenuse length."
                 }
             },
             {
@@ -876,7 +876,7 @@
                 ],
                 "experiment": {
                     "type": "trig-circle",
-                    "description": "Unit Circle Explorer: Move a point around a circle to see how the sine and cosine values relate to the coordinates of the point."
+                    "description": "Match the Trig Ratios: drag each ratio (sin, cos, tan, SOH, CAH, TOA) to the SOH-CAH-TOA definition it states."
                 },
                 "figures": [
                     {
@@ -1039,7 +1039,7 @@
                 ],
                 "experiment": {
                     "type": "vector-addition",
-                    "description": "Vector Tug-of-War: Drag two vectors (arrows) on a grid to see their resultant vector update as they are added."
+                    "description": "Scalar or Vector?: sort each quantity (speed, distance, mass, time, velocity, displacement, force) into Scalar (magnitude only) or Vector (magnitude and direction)."
                 }
             },
             {
@@ -1056,7 +1056,7 @@
                 ],
                 "experiment": {
                     "type": "matrix-transformer",
-                    "description": "Shape Shifter: Apply a 2x2 matrix to a square on a grid and watch the square undergo rotation, scaling, or shearing based on the matrix values."
+                    "description": "Matrix Dimensions: drag each matrix size (2 x 2, 3 x 1, 2 x 3, 1 x 4) to its order in rows and columns."
                 }
             },
             {
@@ -1100,7 +1100,7 @@
                 ],
                 "experiment": {
                     "type": "data-visualizer",
-                    "description": "Live Stats: Add/remove data points in a set and watch the mean, median, and mode indicators shift on a number line."
+                    "description": "Drag each measure (mean, median, mode, range, number of values, sum) to its value for the data set {2, 4, 4, 6, 10}."
                 }
             },
             {
