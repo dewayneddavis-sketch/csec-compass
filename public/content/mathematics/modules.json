@@ -1028,14 +1028,22 @@
             {
                 "id": "vectors",
                 "title": "Introduction to Vectors",
-                "content": "A vector is a quantity that has both magnitude (size) and direction. This distinguishes it from a 'scalar', which only has magnitude (like temperature or mass). Examples of vectors include displacement, velocity, and force. In mathematics, we often represent a vector as a directed line segment \u2014 an arrow pointing from one point to another.\n\nIn coordinate form, vectors are often written as column matrices, such as [x; y], where x represents the horizontal displacement and y represents the vertical displacement. To add two vectors, you simply add their corresponding components. Geometrically, this corresponds to placing the vectors 'head-to-tail' \u2014 the resultant vector is the one that goes from the start of the first to the end of the second.\n\nMultiplying a vector by a scalar (a regular number) changes its magnitude and can reverse its direction if the scalar is negative, but it doesn't change the vector's orientation. Vectors are a powerful tool for solving problems involving movement and forces, and they appear regularly in CSEC Paper 1 and Paper 2.",
+                "content": "A vector is a quantity that has both magnitude (size) and direction. This distinguishes it from a 'scalar', which only has magnitude (like temperature or mass). Examples of vectors include displacement, velocity, and force. In mathematics, we often represent a vector as a directed line segment \u2014 an arrow pointing from one point to another.\n\nIn coordinate form, vectors are often written as column matrices, such as [x; y], where x represents the horizontal displacement and y represents the vertical displacement. To add two vectors, you simply add their corresponding components. Geometrically, this corresponds to placing the vectors 'head-to-tail' \u2014 the resultant vector is the one that goes from the start of the first to the end of the second.\n\nMultiplying a vector by a scalar (a regular number) changes its magnitude and can reverse its direction if the scalar is negative, but it doesn't change the vector's orientation. Vectors are a powerful tool for solving problems involving movement and forces, and they appear regularly in CSEC Paper 1 and Paper 2.\n\nPosition and Displacement Vectors. A position vector fixes a point relative to the origin O: the point A with coordinates (2, 3) has position vector OA = (2 over 3), a column vector with 2 above 3. A displacement vector is the move from one point to another, and the two are linked by the rule AB = OB \u2212 OA. With A(2, 3) and B(7, 8), OB \u2212 OA = (7 \u2212 2, 8 \u2212 3) = (5, 5), so AB = (5 over 5): a move of 5 in the x-direction and 5 in the y-direction. Run backwards the same rule gives OA = OB \u2212 AB, and the midpoint M of AB has OM = \u00bd(OA + OB).\n\nMagnitude and Direction of Vectors. The magnitude of a column vector v = (x over y) is |v| = \u221a(x\u00b2 + y\u00b2), which is Pythagoras' theorem applied to the two components, so the vector (3 over 4) has magnitude \u221a(9 + 16) = \u221a25 = 5. The direction is the angle the vector makes with the horizontal, from tan \u03b8 = y \u00f7 x, so (3 over 4) has tan \u03b8 = 4 \u00f7 3 = 1.333 and \u03b8 = 53.1\u00b0. A bearing is measured clockwise from north instead of anticlockwise from the horizontal: a vector with x = 3 and y = 4 points 3 east and 4 north, so its bearing is 90\u00b0 \u2212 53.1\u00b0 = 36.9\u00b0, written 036.9\u00b0. Two vectors are equal when they have the same magnitude and the same direction, and \u2212v has the same magnitude as v pointing the opposite way.",
                 "objectives": [
                     "Represent vectors as column matrices",
-                    "Add and subtract vectors"
+                    "Add and subtract vectors",
+                    "Find the position vector of a point and the displacement vector AB = OB \u2212 OA",
+                    "Find the midpoint of AB from OM = \u00bd(OA + OB)",
+                    "Find the magnitude of a column vector with |v| = \u221a(x\u00b2 + y\u00b2)",
+                    "Find the direction of a column vector as an angle to the horizontal or as a bearing"
                 ],
                 "concepts": [
                     "Vectors have magnitude and direction.",
-                    "Addition follows the triangle or parallelogram law."
+                    "Addition follows the triangle or parallelogram law.",
+                    "Position vector OA fixes A from the origin; the displacement AB = OB \u2212 OA.",
+                    "The midpoint M of AB has OM = \u00bd(OA + OB).",
+                    "|v| = \u221a(x\u00b2 + y\u00b2) and the direction comes from tan \u03b8 = y \u00f7 x.",
+                    "A bearing is measured clockwise from north, so it is 90\u00b0 \u2212 \u03b8 for a vector pointing east and north."
                 ],
                 "experiment": {
                     "type": "vector-addition",
@@ -1045,14 +1053,23 @@
             {
                 "id": "matrices",
                 "title": "Matrices and Determinants",
-                "content": "A matrix is a rectangular array of numbers arranged in rows and columns. The size or 'order' of a matrix is given as (rows \u00d7 columns). For example, a 2\u00d73 matrix has 2 rows and 3 columns. Matrices allow us to organise data and perform complex transformations on coordinates and systems of equations.\n\nMatrix multiplication is a specific process where you multiply the elements of the rows of the first matrix by the columns of the second and sum them up. Because of this, you can only multiply two matrices if the number of columns in the first matches the number of rows in the second. For 2\u00d72 matrices, the determinant is a single number calculated as (ad - bc).\n\nThe determinant is crucial because it tells us if a matrix has an inverse. If the determinant is zero, the matrix is 'singular' and has no inverse. Otherwise, the inverse matrix can be used to solve systems of linear equations. CSEC questions typically focus on 2\u00d72 matrices, requiring you to perform basic operations, find determinants, and calculate inverses.",
+                "content": "A matrix is a rectangular array of numbers arranged in rows and columns. The size or 'order' of a matrix is given as (rows \u00d7 columns). For example, a 2\u00d73 matrix has 2 rows and 3 columns. Matrices allow us to organise data and perform complex transformations on coordinates and systems of equations.\n\nMatrix multiplication is a specific process where you multiply the elements of the rows of the first matrix by the columns of the second and sum them up. Because of this, you can only multiply two matrices if the number of columns in the first matches the number of rows in the second. For 2\u00d72 matrices, the determinant is a single number calculated as (ad - bc).\n\nThe determinant is crucial because it tells us if a matrix has an inverse. If the determinant is zero, the matrix is 'singular' and has no inverse. Otherwise, the inverse matrix can be used to solve systems of linear equations. CSEC questions typically focus on 2\u00d72 matrices, requiring you to perform basic operations, find determinants, and calculate inverses.\n\nMatrix Operations. Two matrices of the same order are added or subtracted entry by entry: with A = [1 2; 3 4] and B = [5 6; 7 8], A + B = [6 8; 10 12] and A \u2212 B = [\u22124 \u22124; \u22124 \u22124]. A scalar multiplies every entry, so 3A = [3 6; 9 12]. Multiplication is row by column and the orders must agree, and it is not commutative. With A = [1 2; 3 4] and B = [2 0; 1 5], AB = [1\u00d72 + 2\u00d71, 1\u00d70 + 2\u00d75; 3\u00d72 + 4\u00d71, 3\u00d70 + 4\u00d75] = [4 10; 10 20], while BA = [2\u00d71 + 0\u00d73, 2\u00d72 + 0\u00d74; 1\u00d71 + 5\u00d73, 1\u00d72 + 5\u00d74] = [2 4; 16 22]. Since AB is not BA, the order of the multiplication matters.\n\nDeterminant and Inverse of 2x2 Matrices. For M = [a b; c d] the determinant is det M = ad \u2212 bc, so for M = [2 1; 3 4] it is 2\u00d74 \u2212 1\u00d73 = 8 \u2212 3 = 5. When det M is not 0 the inverse exists and is M\u207b\u00b9 = 1/det M \u00d7 [d \u2212b; \u2212c a], which for M = [2 1; 3 4] gives M\u207b\u00b9 = 1/5 \u00d7 [4 \u22121; \u22123 2]. The inverse undoes the matrix, so MM\u207b\u00b9 = M\u207b\u00b9M = I, the identity matrix [1 0; 0 1]. Check: 2\u00d74 + 1\u00d7(\u22123) = 5, 2\u00d7(\u22121) + 1\u00d72 = 0, 3\u00d74 + 4\u00d7(\u22123) = 0 and 3\u00d7(\u22121) + 4\u00d72 = 5, so MM\u207b\u00b9 = 1/5 \u00d7 [5 0; 0 5] = [1 0; 0 1]. When det M = 0 the matrix is singular and has no inverse, because the formula would divide by zero.",
                 "objectives": [
                     "Perform matrix multiplication",
-                    "Calculate the determinant and inverse of a 2x2 matrix"
+                    "Calculate the determinant and inverse of a 2x2 matrix",
+                    "Add, subtract and scalar-multiply matrices of the same order",
+                    "Multiply two matrices row by column and show that AB is not BA",
+                    "Calculate det M = ad \u2212 bc for a 2x2 matrix",
+                    "Write the inverse M\u207b\u00b9 = 1/det M \u00d7 [d \u2212b; \u2212c a] and check that MM\u207b\u00b9 = I",
+                    "Recognise a singular matrix as one whose determinant is 0"
                 ],
                 "concepts": [
                     "Matrix multiplication: row by column.",
-                    "Determinant of [a b; c d] is ad - bc."
+                    "Determinant of [a b; c d] is ad - bc.",
+                    "Matrices of the same order add and subtract entry by entry, and a scalar multiplies every entry.",
+                    "Multiplication is row by column and is not commutative: AB is not BA.",
+                    "det M = ad \u2212 bc, and a determinant of 0 means the matrix is singular.",
+                    "M\u207b\u00b9 = 1/det M \u00d7 [d \u2212b; \u2212c a] and MM\u207b\u00b9 = M\u207b\u00b9M = I."
                 ],
                 "experiment": {
                     "type": "matrix-transformer",
@@ -1062,22 +1079,72 @@
             {
                 "id": "transformations",
                 "title": "Transformations",
-                "content": "A transformation moves a shape on the coordinate plane. In a reflection, every point of the object is the same distance from the mirror line on the opposite side; the mirror line may be the x-axis, the y-axis or a line such as y = x. In a rotation, the shape turns through a given angle, usually 90\u00b0, 180\u00b0 or 270\u00b0 clockwise or anticlockwise, about a fixed centre. In a translation, every point moves by the same column vector such as (3 over \u20142), so the shape keeps its orientation.\n\nAn enlargement changes size. The scale factor k multiplies the distance of every point from the centre of enlargement, so a scale factor of 2 doubles all lengths and a negative scale factor (for example \u20141) produces an image on the other side of the centre, rotated through 180\u00b0. Area is affected by the square of the scale factor: images under an enlargement of scale factor 3 have nine times the area of the object.\n\nTo describe a transformation fully you must name its type and its details: reflection \u2014 the mirror line; rotation \u2014 the angle, direction and centre; translation \u2014 the column vector; enlargement \u2014 the scale factor and the centre. Points on the mirror line are invariant (they do not move), as are points at the centre of a rotation and the centre of an enlargement. Combined transformations are performed in the order given, and for shapes, actually tracing the coordinates on squared paper is the safest way to avoid a slip.",
+                "content": "A transformation moves a shape on the coordinate plane. In a reflection, every point of the object is the same distance from the mirror line on the opposite side; the mirror line may be the x-axis, the y-axis or a line such as y = x. In a rotation, the shape turns through a given angle, usually 90\u00b0, 180\u00b0 or 270\u00b0 clockwise or anticlockwise, about a fixed centre. In a translation, every point moves by the same column vector such as (3 over \u20142), so the shape keeps its orientation.\n\nAn enlargement changes size. The scale factor k multiplies the distance of every point from the centre of enlargement, so a scale factor of 2 doubles all lengths and a negative scale factor (for example \u20141) produces an image on the other side of the centre, rotated through 180\u00b0. Area is affected by the square of the scale factor: images under an enlargement of scale factor 3 have nine times the area of the object.\n\nTo describe a transformation fully you must name its type and its details: reflection \u2014 the mirror line; rotation \u2014 the angle, direction and centre; translation \u2014 the column vector; enlargement \u2014 the scale factor and the centre. Points on the mirror line are invariant (they do not move), as are points at the centre of a rotation and the centre of an enlargement. Combined transformations are performed in the order given, and for shapes, actually tracing the coordinates on squared paper is the safest way to avoid a slip.\n\nTranslation Using Vectors. A translation moves every point of a shape by the same column vector, and that vector is the whole description of the transformation. A translation by (3 over \u22122) sends every point 3 to the right and 2 down: A(1, 4) goes to A\u2032(4, 2), because (1, 4) + (3, \u22122) = (4, 2), and B(\u22122, 5) goes to B\u2032(1, 3), because (\u22122, 5) + (3, \u22122) = (1, 3). In general a translation by the vector v sends the point P to P + v. Two shapes are related by a translation exactly when every pair of corresponding points gives the same column vector, so one pair is enough to name it and a second pair is the check. A translation keeps lengths, angles and orientation and leaves no point fixed: points on a mirror line, at the centre of a rotation and at the centre of an enlargement are the invariant points of those transformations, and a translation has none.",
                 "objectives": [
                     "Perform and identify reflections, rotations and translations on the coordinate plane",
                     "Enlarge a shape from a given centre using positive, fractional or negative scale factors",
                     "Describe a transformation completely, naming its centre, line, vector or scale factor",
-                    "State the invariant points and the effect of an enlargement on area"
+                    "State the invariant points and the effect of an enlargement on area",
+                    "Translate a point or a shape by a column vector",
+                    "Find the column vector that takes one point to its image",
+                    "Recognise a translation from the vectors between corresponding points"
                 ],
                 "concepts": [
                     "Reflection: mirror line; rotation: centre, angle, direction; translation: column vector.",
                     "Enlargement: centre and scale factor; area scales by the square of the scale factor.",
                     "Negative scale factors place the image on the other side of the centre of enlargement.",
-                    "Invariant points lie on the mirror line or at the centre of a rotation or enlargement."
+                    "Invariant points lie on the mirror line or at the centre of a rotation or enlargement.",
+                    "A translation moves every point by the same column vector.",
+                    "A translation by v sends P to P + v and leaves no point fixed.",
+                    "Corresponding points of a translated shape give the same column vector."
                 ],
                 "experiment": {
                     "type": "matching-game",
                     "description": "Transformation Match: match each statement of a transformation to the correct image coordinates of a point."
+                }
+            },
+            {
+                "id": "mat-vm-vector-geometry-and-applications",
+                "title": "Vector Geometry and Applications",
+                "content": "Vector Applications in Geometry is about using vectors to prove facts about points and shapes instead of measuring them, and two ideas carry almost every CSEC question. The first is that a vector can be written as the difference of two position vectors, so AB = OB \u2212 OA, which turns a picture into arithmetic. The second is the scalar multiple: if AB = k \u00d7 PQ for some number k, then AB and PQ are parallel, because multiplying by a number changes a length but never a direction. Position and displacement vectors themselves, and the magnitude and direction of a vector, are taught in Introduction to Vectors; this lesson uses them and does not repeat them.\n\nCollinearity. Three points P, Q and R are collinear when they lie on one straight line, and the vector test is that PQ and QR are scalar multiples of each other: PQ = k \u00d7 QR. The test needs the two vectors to share a point, which they do at Q, so the arithmetic and the geometry agree. Worked example: take P(1, 1), Q(4, 3) and R(10, 7). Then PQ = (4 \u2212 1, 3 \u2212 1) = (3, 2) and QR = (10 \u2212 4, 7 \u2212 3) = (6, 4), so PQ = (3, 2) and QR = (6, 4). Since (6, 4) = 2 \u00d7 (3, 2), QR = 2PQ: the two vectors are parallel and they share Q, so P, Q and R are collinear. The factor 2 deserves a sentence of its own, because PR = (9, 6) = 3 \u00d7 (3, 2), so Q is one third of the way along PR.\n\nParallel sides and parallelograms. A quadrilateral is a parallelogram when one pair of opposite sides is equal in length and parallel, which in vectors means AB = DC. Worked example: A(1, 1), B(4, 1), C(5, 3) and D(2, 3). Then AB = (4 \u2212 1, 1 \u2212 1) = (3, 0) and DC = (5 \u2212 2, 3 \u2212 3) = (3, 0), so AB = (3, 0) and DC = (3, 0). Since AB = DC, the sides AB and DC are equal in length and parallel, so ABCD is a parallelogram. The other pair checks as well: AD = (1, 2) and BC = (1, 2). Parallel vectors need not be sides of one shape: AB = (4, 6) and CD = (2, 3) give AB = 2 \u00d7 CD, so AB is parallel to CD.\n\nMidpoints. The midpoint M of a line segment AB has position vector OM = \u00bd(OA + OB), which is the average of the two position vectors. Worked example: with A(2, 3) and B(8, 7), OM = \u00bd((2, 3) + (8, 7)) = \u00bd(10, 10) = (5, 5), so the midpoint of A(2, 3) and B(8, 7) is (5, 5). A midpoint question is usually a collinearity question in disguise: when M is the midpoint of AB, AM = MB, so A, M and B are collinear by the scalar-multiple test with k = 1.\n\nTwo habits make these proofs safe. Always write a vector in the direction the letters are read, AB from A to B, and remember BA = \u2212AB, because one reversed sign destroys a proof. Then finish with the sentence that says what the algebra shows \u2014 so P, Q and R are collinear, so ABCD is a parallelogram, so AB is parallel to CD \u2014 because the marks are for the conclusion and not for the arithmetic.",
+                "objectives": [
+                    "Use AB = OB \u2212 OA to write a displacement vector from two position vectors",
+                    "Prove three points are collinear with a scalar multiple",
+                    "Show that a quadrilateral is a parallelogram from one pair of equal and parallel sides",
+                    "Find the midpoint of a segment from its two position vectors",
+                    "State the conclusion of a vector proof in words"
+                ],
+                "concepts": [
+                    "AB = k \u00d7 PQ means AB is parallel to PQ.",
+                    "Points P, Q and R are collinear when PQ and QR are scalar multiples and share a point.",
+                    "AB = DC proves ABCD is a parallelogram.",
+                    "When M is the midpoint of AB, OM = \u00bd(OA + OB) and AM = MB."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Vector Geometry Match: drag each vector calculation to the conclusion it proves."
+                }
+            },
+            {
+                "id": "mat-vm-matrix-transformations-and-applications",
+                "title": "Matrix Transformations and Applications",
+                "content": "Matrix Transformations. A 2x2 matrix can be read as a set of instructions that moves every point of the plane. The matrix M = [a b; c d] sends the point (x, y) to (ax + by, cx + dy), which is the same as multiplying M by the column vector (x over y). The image of (1, 2) under M = [2 1; 3 4] is (2\u00d71 + 1\u00d72, 3\u00d71 + 4\u00d72) = (4, 11).\n\nThe standard matrices. A rotation through 90\u00b0 anticlockwise is [0 \u22121; 1 0], because it sends (1, 0) to (0, 1) and (0, 1) to (\u22121, 0); a rotation through 180\u00b0 is [\u22121 0; 0 \u22121]. A reflection in the y-axis is [\u22121 0; 0 1], a reflection in the x-axis is [1 0; 0 \u22121], and a reflection in the line y = x is [0 1; 1 0]. An enlargement with scale factor k is [k 0; 0 k]. Every one of them is read the same way: the first column is the image of (1, 0) and the second column is the image of (0, 1), so two image points are enough to write the matrix.\n\nThe determinant as an area scale factor. The determinant of M = [a b; c d] is det M = ad \u2212 bc, and geometrically it is the factor by which the matrix multiplies every area. For M = [2 1; 3 4], det M = 5 because 2\u00d74 \u2212 1\u00d73 = 8 \u2212 3 = 5. So an object of area 3 under M = [2 1; 3 4] has an image of area 15, because 5 \u00d7 3 = 15, and the unit square becomes a parallelogram of area 5. A negative determinant means the matrix also turns the plane over, like a reflection, but the area is still scaled by |det M|. A determinant of 0 flattens the whole plane onto a line, so every area becomes 0 and the matrix is singular and has no inverse.\n\nMatrix Applications: solving a system with the inverse. A pair of simultaneous equations can be written as one matrix equation. The system 2x + y = 8 and 3x + 4y = 22 is MX = B with M = [2 1; 3 4], X = (x over y) and B = (8 over 22). Multiplying both sides on the left by M\u207b\u00b9 gives X = M\u207b\u00b9B, which needs det M not equal to 0. The determinant is 5 and M\u207b\u00b9 = 1/5 \u00d7 [4 \u22121; \u22123 2], so x = (4\u00d78 \u2212 1\u00d722) \u00f7 5 = (32 \u2212 22) \u00f7 5 = 2 and y = (\u22123\u00d78 + 2\u00d722) \u00f7 5 = (\u221224 + 44) \u00f7 5 = 4. The solution is x = 2 and y = 4, and the check is 2(2) + 4 = 8 and 3(2) + 4(4) = 22.\n\nWhen the inverse cannot be used. If det M = 0 the two equations are not independent \u2014 they describe the same line, or parallel lines \u2014 so there is either no solution or infinitely many, and there is no inverse to find them with. That is the same singular case seen as an algebra problem instead of a geometry problem.\n\nReading a transformation off a diagram. Given an object and its image, the first column is the image of (1, 0) and the second is the image of (0, 1), so the matrix can be written down from two corresponding points. The determinant then says what kind of transformation it is at once: |det M| = 1 means area is unchanged, so it is a rotation or a reflection; |det M| = k\u00b2 means an enlargement with scale factor k; and det M = 0 means the plane is squashed onto a line.",
+                "objectives": [
+                    "Read a 2x2 matrix as the transformation of the plane that it performs",
+                    "Write the standard matrices for a rotation, a reflection and an enlargement",
+                    "Use the determinant as the area scale factor",
+                    "Recognise a singular matrix and say why it has no inverse",
+                    "Solve a pair of simultaneous equations with the inverse of a 2x2 matrix"
+                ],
+                "concepts": [
+                    "M = [a b; c d] sends (x, y) to (ax + by, cx + dy).",
+                    "The first column is the image of (1, 0) and the second is the image of (0, 1).",
+                    "det M is the area scale factor, and a determinant of 0 means the matrix is singular and has no inverse.",
+                    "A system is solved with X = M\u207b\u00b9B, which needs det M not equal to 0."
+                ],
+                "experiment": {
+                    "type": "matching-game",
+                    "description": "Matrix Transformation Match: drag each matrix or determinant to what it does."
                 }
             }
         ]

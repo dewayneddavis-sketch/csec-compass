@@ -1651,4 +1651,63 @@ export const mathLessonWorkings = {
       "So the back bearing of 130\u00b0 is 310\u00b0",
     ],
   },
+  "mat-vm-vector-geometry-and-applications": {
+    p1: [
+      "PQ = (4 \u2212 1, 3 \u2212 1) = (3, 2) and QR = (10 \u2212 4, 7 \u2212 3) = (6, 4)",
+      "(6, 4) = 2 \u00d7 (3, 2), so QR = 2PQ and the two vectors are parallel; they also share the point Q",
+      "So P, Q and R are collinear",
+    ],
+    p2: [
+      "AB = (4 \u2212 1, 1 \u2212 1) = (3, 0) and DC = (5 \u2212 2, 3 \u2212 3) = (3, 0)",
+      "AB = DC, so one pair of opposite sides is equal in length and parallel",
+      "So ABCD is a parallelogram",
+    ],
+    p3: [
+      "The midpoint of A(2, 3) and B(8, 7) averages the coordinates: ((2 + 8) \u00f7 2, (3 + 7) \u00f7 2)",
+      "2 + 8 = 10 and 10 \u00f7 2 = 5; 3 + 7 = 10 and 10 \u00f7 2 = 5",
+      "So the midpoint of A(2, 3) and B(8, 7) is (5, 5)",
+    ],
+    p4: [
+      "AB = (4, 6) and CD = (2, 3), and (4, 6) = 2 \u00d7 (2, 3)",
+      "A scalar multiple means the same direction with a different length",
+      "So AB is parallel to CD",
+    ],
+    p5: [
+      "OM = OA + AM, and AM = \u00bdAB because M is the midpoint of AB",
+      "So OM = OA + \u00bd(OB \u2212 OA) = \u00bdOA + \u00bdOB",
+      "So OM = \u00bd(OA + OB)",
+    ],
+  },
+  "mat-vm-matrix-transformations-and-applications": {
+    p1: [
+      "A rotation through 90\u00b0 anticlockwise sends (1, 0) to (0, 1) and (0, 1) to (\u22121, 0)",
+      "The first column is the image of (1, 0) and the second is the image of (0, 1), giving [0 \u22121; 1 0]",
+      "So [0 \u22121; 1 0] is the rotation through 90\u00b0 anticlockwise",
+    ],
+    p2: [
+      "A reflection in the y-axis sends (1, 0) to (\u22121, 0) and leaves (0, 1) where it is",
+      "Columns: (\u22121, 0) first and (0, 1) second, giving [\u22121 0; 0 1]",
+      "So [\u22121 0; 0 1] is the reflection in the y-axis",
+    ],
+    p3: [
+      "An enlargement with scale factor k multiplies both coordinates by k, so (1, 0) goes to (k, 0) and (0, 1) goes to (0, k)",
+      "Columns: (k, 0) first and (0, k) second, giving [k 0; 0 k]",
+      "So [k 0; 0 k] is the enlargement with scale factor k",
+    ],
+    p4: [
+      "det M = ad \u2212 bc with a = 2, b = 1, c = 3 and d = 4",
+      "ad \u2212 bc = 2 \u00d7 4 \u2212 1 \u00d7 3 = 8 \u2212 3 = 5",
+      "So for M = [2 1; 3 4], det M = 5",
+    ],
+    p5: [
+      "A determinant of 0 means the two columns are parallel, so the whole plane is squashed onto a line and every area becomes 0",
+      "The inverse formula divides by the determinant, and 0 cannot be divided by",
+      "So the matrix is singular and has no inverse",
+    ],
+    p6: [
+      "The determinant is the area scale factor, so every area is multiplied by 5",
+      "5 \u00d7 3 = 15",
+      "So an object of area 3 under M = [2 1; 3 4] has an image of area 15",
+    ],
+  },
 };
