@@ -5782,6 +5782,31 @@ export const lessonSets = {
         { id: "p6", target: "310\u00b0", label: "the back bearing of 130\u00b0" },
       ],
     },
+    "mat-vm-vector-geometry-and-applications": {
+      title: "Vector Geometry Match",
+      subtitle: "Drag each vector calculation to the conclusion it proves.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "P, Q and R are collinear", label: "PQ = (3, 2) and QR = (6, 4)" },
+        { id: "p2", target: "ABCD is a parallelogram", label: "AB = (3, 0) and DC = (3, 0)" },
+        { id: "p3", target: "(5, 5)", label: "the midpoint of A(2, 3) and B(8, 7)" },
+        { id: "p4", target: "AB is parallel to CD", label: "AB = (4, 6) and CD = (2, 3)" },
+        { id: "p5", target: "OM = \u00bd(OA + OB)", label: "M is the midpoint of AB" },
+      ],
+    },
+    "mat-vm-matrix-transformations-and-applications": {
+      title: "Matrix Transformation Match",
+      subtitle: "Drag each matrix or determinant to what it does.",
+      kind: "match",
+      pairs: [
+        { id: "p1", target: "rotation through 90\u00b0 anticlockwise", label: "[0 \u22121; 1 0]" },
+        { id: "p2", target: "reflection in the y-axis", label: "[\u22121 0; 0 1]" },
+        { id: "p3", target: "enlargement with scale factor k", label: "[k 0; 0 k]" },
+        { id: "p4", target: "det M = 5", label: "[2 1; 3 4]" },
+        { id: "p5", target: "the matrix is singular and has no inverse", label: "a determinant of 0" },
+        { id: "p6", target: "an image of area 15", label: "an object of area 3 under M = [2 1; 3 4]" },
+      ],
+    },
   },
   "english-a": {
     // Per-lesson labs for the English A syllabus-gap lessons. The 10 older
