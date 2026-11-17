@@ -10,7 +10,7 @@
   ],
   "answer": "x - 11",
   "explanation": "Step 1 — Expand each bracket:\n4(x - 2) = 4x - 8 and -3(x + 1) = -3x - 3\nStep 2 — Write the expression with the brackets gone:\n4x - 8 - 3x - 3\nStep 3 — Group the like terms:\n(4x - 3x) + (-8 - 3)\nStep 4 — Simplify:\nx - 11",
-  "topic": "algebraic-expressions"
+  "topic": "mat-alg-binary-operations-and-distributive-law"
  },
  {
   "id": "p2",
@@ -192,7 +192,7 @@
   ],
   "answer": "7.2 × 10⁻⁴",
   "explanation": "Step 1 — Put the decimal point after the first non-zero digit:\n7.2\nStep 2 — Count the places the point moved: 0.00072 → 7.2 is 4 places to the right.\nStep 3 — The number is smaller than 1, so the index is negative:\n7.2 × 10⁻⁴",
-  "topic": "real-numbers"
+  "topic": "standard-form"
  },
  {
   "id": "p16",
@@ -205,7 +205,7 @@
   ],
   "answer": "15",
   "explanation": "Step 1 — Add the parts of the ratio:\n3 + 2 = 5 parts\nStep 2 — Find the value of one part:\n25 ÷ 5 = 5 students\nStep 3 — Boys take 3 parts:\n3 × 5 = 15 boys",
-  "topic": "real-numbers"
+  "topic": "mat-num-ratio-and-proportion"
  },
  {
   "id": "p17",
@@ -218,7 +218,7 @@
   ],
   "answer": "80 km/h",
   "explanation": "Step 1 — Write the average-speed formula:\nspeed = distance ÷ time\nStep 2 — Substitute the values:\n240 ÷ 3\nStep 3 — Divide:\n80 km/h",
-  "topic": "real-numbers"
+  "topic": "si-units-and-conversion"
  },
  {
   "id": "p20",
@@ -244,7 +244,7 @@
   ],
   "answer": "(x + 3)(x - 3)",
   "explanation": "Step 1 — Recognise the difference of two squares:\na² - b² = (a + b)(a - b)\nStep 2 — Here a = x and b = 3, because 3² = 9:\nx² - 3²\nStep 3 — Factorise:\n(x + 3)(x - 3)",
-  "topic": "quadratic-equations"
+  "topic": "factorization"
  },
  {
   "id": "p22",
@@ -257,7 +257,7 @@
   ],
   "answer": "-x + 9",
   "explanation": "Step 1 — Expand the first bracket:\n2(x + 3) = 2x + 6\nStep 2 — Expand the second bracket, taking the minus sign through:\n-3(x - 1) = -3x + 3\nStep 3 — Collect the like terms:\n(2x - 3x) + (6 + 3)\nStep 4 — Simplify:\n-x + 9",
-  "topic": "algebraic-expressions"
+  "topic": "mat-alg-binary-operations-and-distributive-law"
  },
  {
   "id": "p23",
@@ -309,7 +309,7 @@
   ],
   "answer": "(2, 3)",
   "explanation": "Step 1 — A reflection in the y-axis changes the sign of the x-coordinate only.\nStep 2 — x = -2 becomes 2.\nStep 3 — y stays 3, so the image is (2, 3).",
-  "topic": "coordinate-geometry"
+  "topic": "transformations"
  },
  {
   "id": "p27",
@@ -348,7 +348,7 @@
   ],
   "answer": "29",
   "explanation": "Step 1 — Substitute n = 10 into the rule 3n - 1:\n3(10) - 1\nStep 2 — Multiply:\n3 × 10 = 30\nStep 3 — Subtract:\n30 - 1 = 29",
-  "topic": "functions"
+  "topic": "mat-num-number-sequences"
  },
  {
   "id": "p30",
@@ -374,7 +374,7 @@
   ],
   "answer": "70°",
   "explanation": "Step 1 — The three angles of a triangle add up to 180°.\nStep 2 — Add the two angles you know:\n65° + 45° = 110°\nStep 3 — Subtract from 180°:\n180° - 110° = 70°",
-  "topic": "perimeter-area"
+  "topic": "angles-and-polygons"
  },
  {
   "id": "p33",
@@ -413,7 +413,7 @@
   ],
   "answer": "5400 s",
   "explanation": "Step 1 — Change hours to minutes (60 minutes in an hour):\n1.5 × 60 = 90 minutes\nStep 2 — Change minutes to seconds (60 seconds in a minute):\n90 × 60 = 5400 seconds\nStep 3 — In one step: 1.5 × 3600 = 5400 s.",
-  "topic": "real-numbers"
+  "topic": "si-units-and-conversion"
  },
  {
   "id": "p37",
@@ -452,7 +452,7 @@
   ],
   "answer": "8",
   "explanation": "Step 1 — Find the highest mark:\n12\nStep 2 — Find the lowest mark:\n4\nStep 3 — Range = highest - lowest:\n12 - 4 = 8",
-  "topic": "central-tendency"
+  "topic": "mat-stat-standard-deviation"
  },
  {
   "id": "p41",
@@ -543,7 +543,7 @@
   ],
   "answer": "81",
   "explanation": "Step 1 — The index 4 means 3 is used as a factor four times:\n3 × 3 × 3 × 3\nStep 2 — Multiply in pairs:\n3 × 3 = 9 and 3 × 3 = 9\nStep 3 — 9 × 9 = 81",
-  "topic": "real-numbers"
+  "topic": "indices-and-surds"
  },
  {
   "id": "p48",
@@ -556,7 +556,7 @@
   ],
   "answer": "4",
   "explanation": "Step 1 — Multiplying powers of the same base: add the indices.\n2³ × 2⁴ = 2⁷  (add the indices: 3 + 4 = 7)\nStep 2 — Dividing powers of the same base: subtract the indices.\n2⁷ ÷ 2⁵ = 2²\nStep 3 — Work out the power:\n2² = 4",
-  "topic": "real-numbers"
+  "topic": "indices-and-surds"
  },
  {
   "id": "p49",
@@ -569,7 +569,7 @@
   ],
   "answer": "21",
   "explanation": "Step 1 — √144 = 12, because 12 × 12 = 144.\nStep 2 — √81 = 9, because 9 × 9 = 81.\nStep 3 — Add them:\n12 + 9 = 21",
-  "topic": "real-numbers"
+  "topic": "indices-and-surds"
  },
  {
   "id": "p50",
@@ -582,7 +582,7 @@
   ],
   "answer": "0.75",
   "explanation": "Step 1 — A rational number can be written as a fraction of two integers.\nStep 2 — √2, √3 and π are non-recurring, non-terminating decimals, so they are irrational.\nStep 3 — 0.75 = 3/4, so 0.75 is the rational number.",
-  "topic": "real-numbers"
+  "topic": "types-of-numbers"
  },
  {
   "id": "p51",
@@ -595,7 +595,7 @@
   ],
   "answer": "48",
   "explanation": "Step 1 — Look at the first digit after the whole-number place (the tenths digit):\n6\nStep 2 — 6 is 5 or more, so round up.\nStep 3 — 47.65 ≈ 48",
-  "topic": "real-numbers"
+  "topic": "mat-num-significant-figures-and-decimal-places"
  },
  {
   "id": "p53",
@@ -660,7 +660,7 @@
   ],
   "answer": "x = (y - 5)/2",
   "explanation": "Step 1 — Subtract 5 from both sides:\ny - 5 = 2x\nStep 2 — Divide both sides by 2:\n(y - 5)/2 = x\nStep 3 — Write x first:\nx = (y - 5)/2",
-  "topic": "algebraic-expressions"
+  "topic": "transposition-and-substitution"
  },
  {
   "id": "p58",
@@ -673,7 +673,7 @@
   ],
   "answer": "$21",
   "explanation": "Step 1 — Find the cost of one pen:\n$12 ÷ 4 = $3\nStep 2 — Multiply by 7 pens:\n7 × $3\nStep 3 — = $21",
-  "topic": "real-numbers"
+  "topic": "mat-num-ratio-and-proportion"
  },
  {
   "id": "p59",
@@ -686,7 +686,7 @@
   ],
   "answer": "5 h",
   "explanation": "Step 1 — Write the time formula:\ntime = distance ÷ speed\nStep 2 — Substitute the values:\n300 ÷ 60\nStep 3 — = 5 hours",
-  "topic": "real-numbers"
+  "topic": "si-units-and-conversion"
  },
  {
   "id": "p60",
@@ -699,7 +699,7 @@
   ],
   "answer": "12",
   "explanation": "Step 1 — Write both numbers as products of primes:\n24 = 2³ × 3 and 36 = 2² × 3²\nStep 2 — HCF: take the lowest power of each prime the two numbers share:\n2² and 3\nStep 3 — Multiply:\n2² × 3 = 4 × 3 = 12",
-  "topic": "real-numbers"
+  "topic": "types-of-numbers"
  },
  {
   "id": "p61",
@@ -712,7 +712,7 @@
   ],
   "answer": "24",
   "explanation": "Step 1 — List the multiples of 6:\n6, 12, 18, 24, 30, ...\nStep 2 — List the multiples of 8:\n8, 16, 24, 32, ...\nStep 3 — The first multiple the two lists share is 24, so LCM = 24.",
-  "topic": "real-numbers"
+  "topic": "types-of-numbers"
  },
  {
   "id": "p62",
@@ -803,7 +803,7 @@
   ],
   "answer": "54 cm²",
   "explanation": "Step 1 — A cube has 6 square faces.\nStep 2 — Area of one face:\n3 × 3 = 9 cm²\nStep 3 — Total surface area:\n6 × 9 = 54 cm²",
-  "topic": "volume-capacity"
+  "topic": "mat-meas-surface-area-of-solids"
  },
  {
   "id": "p73",
@@ -842,7 +842,7 @@
   ],
   "answer": "25",
   "explanation": "Step 1 — Direct proportion means y = kx.\nStep 2 — Find k from the pair given: 10 = k × 2, so\nk = 10 ÷ 2 = 5\nStep 3 — When x = 5:\ny = 5 × 5 = 25",
-  "topic": "functions"
+  "topic": "mat-alg-variation"
  },
  {
   "id": "p77",
@@ -855,7 +855,7 @@
   ],
   "answer": "Speed and time for fixed distance",
   "explanation": "Step 1 — In inverse proportion, one quantity rises as the other falls.\nStep 2 — For a fixed distance, speed × time = distance, a constant - a faster speed means less time.\nStep 3 — The other pairs rise together or are unrelated, so speed and time is the inverse proportion.",
-  "topic": "functions"
+  "topic": "mat-alg-variation"
  },
  {
   "id": "p80",
@@ -881,7 +881,7 @@
   ],
   "answer": "x = 7, y = 3",
   "explanation": "Step 1 — Add the two equations so the y terms cancel:\n(x + y) + (x - y) = 10 + 4\nStep 2 — That gives:\n2x = 14, so x = 7\nStep 3 — Substitute x = 7 into x + y = 10:\n7 + y = 10, so y = 3, giving x = 7, y = 3",
-  "topic": "algebraic-expressions"
+  "topic": "mat-alg-simultaneous-equations"
  },
  {
   "id": "p83",
@@ -894,7 +894,7 @@
   ],
   "answer": "(4, 2)",
   "explanation": "Step 1 — A translation adds the vector to the coordinates.\nStep 2 — x: 1 + 3 = 4\nStep 3 — y: 4 + (-2) = 2, so the image is (4, 2).",
-  "topic": "vectors"
+  "topic": "transformations"
  },
  {
   "id": "p87",
@@ -972,7 +972,7 @@
   ],
   "answer": "3500",
   "explanation": "Step 1 — Work out the power of 10:\n10³ = 1000\nStep 2 — Multiply:\n3.5 × 1000\nStep 3 — Move the decimal point 3 places to the right:\n3500",
-  "topic": "real-numbers"
+  "topic": "standard-form"
  },
  {
   "id": "p100",

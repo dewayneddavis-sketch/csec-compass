@@ -276,13 +276,21 @@ check("a WRONG answer in a one-question bank offers none (no dead end)", !wrongP
 check("no explanation → nothing to show", ui.renderCard({ explanation: "" }) === "" && ui.renderCard({}) === "");
 check("an explanation with the card suppressed renders nothing", ui.renderCard({ explanation: STEPS, show: false }) === "");
 
-const missed = kcBank.find((q) => kcBank.filter((s) => s.topic === q.topic).length > 1);
+// The sibling case needs a bank whose topics hold more than one question. The knowledge check
+// deliberately no longer has one — 25 questions on 25 different lessons — so derive the bank
+// instead of assuming the KC supplies it, and say which bank was used.
+const siblingBank = [["knowledge check", kcBank], ["extra practice", practiceBank]]
+  .find(([, bank]) => bank.some((q) => bank.filter((s) => s.topic === q.topic).length > 1));
+check("a bank with a sibling topic exists to exercise the sibling case", !!siblingBank);
+const [siblingBankName, siblingQuestions] = siblingBank || ["", []];
+const missed = siblingQuestions.find((q) => siblingQuestions.filter((s) => s.topic === q.topic).length > 1);
+console.log(`  info the sibling case is exercised on the ${siblingBankName} (${missed?.id} / ${missed?.topic})`);
 instrument();
-const practiceMarkup = ui.renderPractice(kcBank, missed);
+const practiceMarkup = ui.renderPractice(siblingQuestions, missed);
 check("the practice card renders", practiceMarkup.includes("Practice a similar question"));
 check("it says plainly that it is not graded", /not graded/i.test(practiceMarkup));
 check("the practice question is NOT the one just missed", !practiceMarkup.includes(missed.question));
-check("the practice question is a real question from the bank", kcBank.some((q) => q.id !== missed.id && practiceMarkup.includes(q.question)));
+check("the practice question is a real question from the bank", siblingQuestions.some((q) => q.id !== missed.id && practiceMarkup.includes(q.question)));
 check("it names the topic being practised", practiceMarkup.includes(missed.topic.replace(/-/g, " ")));
 check("the practice card never phones home", fetchCalls === 0, `${fetchCalls} fetch calls`);
 check("…and never writes a draft", storageWrites.length === 0, JSON.stringify(storageWrites));

@@ -26,19 +26,6 @@
   "topic": "fractions-decimals-percentages"
  },
  {
-  "id": "q4",
-  "question": "Solve for x: 2x - 4 = 10",
-  "options": [
-   "3",
-   "5",
-   "7",
-   "14"
-  ],
-  "answer": "7",
-  "explanation": "Step 1 — Add 4 to both sides:\n2x = 14\nStep 2 — Divide both sides by 2:\nx = 7\nStep 3 — Check: 2(7) - 4 = 14 - 4 = 10 ✓",
-  "topic": "algebraic-expressions"
- },
- {
   "id": "q5",
   "question": "What is the gradient of the line passing through (1, 2) and (3, 6)?",
   "options": [
@@ -156,19 +143,6 @@
   "topic": "perimeter-area"
  },
  {
-  "id": "q14",
-  "question": "In set theory, what does the symbol ∪ represent?",
-  "options": [
-   "Intersection",
-   "Union",
-   "Subset",
-   "Complement"
-  ],
-  "answer": "Union",
-  "explanation": "Step 1 — The symbol ∪ joins two sets together: A ∪ B holds everything in A or in B (or both).\nStep 2 — The symbol ∩ is the intersection, and only keeps what is in both sets.\nStep 3 — So ∪ means union.",
-  "topic": "union-intersection-complement"
- },
- {
   "id": "q15",
   "question": "If set A = {1, 2, 3} and set B = {3, 4, 5}, what is A ∩ B?",
   "options": [
@@ -180,19 +154,6 @@
   "answer": "{3}",
   "explanation": "Step 1 — ∩ means the elements that are in BOTH sets.\nStep 2 — Compare: 1 and 2 are only in A; 4 and 5 are only in B.\nStep 3 — 3 is in both sets, so A ∩ B = {3}.",
   "topic": "union-intersection-complement"
- },
- {
-  "id": "q16",
-  "question": "If 3(x - 2) = 15, what is the value of x?",
-  "options": [
-   "5",
-   "7",
-   "9",
-   "21"
-  ],
-  "answer": "7",
-  "explanation": "Step 1 — Divide both sides by 3:\nx - 2 = 5\nStep 2 — Add 2 to both sides:\nx = 7\nStep 3 — Check: 3(7 - 2) = 3 × 5 = 15 ✓",
-  "topic": "algebraic-expressions"
  },
  {
   "id": "q17",
@@ -221,32 +182,6 @@
   "topic": "angles-and-polygons"
  },
  {
-  "id": "q21",
-  "question": "If a = 2 and b = -3, evaluate a² - b.",
-  "options": [
-   "1",
-   "7",
-   "-1",
-   "5"
-  ],
-  "answer": "7",
-  "explanation": "Step 1 — Substitute a = 2 and b = -3 into a² - b:\n2² - (-3)\nStep 2 — Work out the power:\n2² = 4\nStep 3 — Subtracting a negative adds, so:\n4 + 3 = 7",
-  "topic": "algebraic-expressions"
- },
- {
-  "id": "q22",
-  "question": "A rectangle has a length of 10m and a width of 5m. What is its perimeter?",
-  "options": [
-   "15m",
-   "30m",
-   "50m",
-   "25m"
-  ],
-  "answer": "30m",
-  "explanation": "Step 1 — Write the perimeter formula for a rectangle:\nP = 2(l + w)\nStep 2 — Substitute l = 10 and w = 5:\nP = 2(10 + 5) = 2 × 15\nStep 3 — = 30 m",
-  "topic": "perimeter-area"
- },
- {
   "id": "q23",
   "question": "What is the square root of 144?",
   "options": [
@@ -257,7 +192,7 @@
   ],
   "answer": "12",
   "explanation": "Step 1 — Look for the number that multiplies by itself to give 144.\nStep 2 — 12 × 12 = 144\nStep 3 — So √144 = 12.",
-  "topic": "real-numbers"
+  "topic": "types-of-numbers"
  },
  {
   "id": "q26",
@@ -323,5 +258,70 @@
   "answer": "The region where the two circles overlap",
   "explanation": "Step 1 — Recall what each region of a two-set diagram means:\nthe rectangle is the universal set and each circle is one set\nStep 2 — Match 'in both A and B' to a region:\nelements in both sets are written in the overlap of the two circles, the region A ∩ B\nStep 3 — Note the contrast: the part of A outside B is 'A but not B'",
   "topic": "venn-diagrams"
+ },
+ {
+  "id": "q31",
+  "question": "Factorise completely: x² + 5x + 6",
+  "options": [
+   "(x + 2)(x + 3)",
+   "(x + 1)(x + 6)",
+   "(x − 2)(x − 3)",
+   "(x + 3)²"
+  ],
+  "answer": "(x + 2)(x + 3)",
+  "explanation": "Step 1 — Look for two numbers that multiply to +6 and add to +5.\nStep 2 — 2 and 3 do it: 2 × 3 = 6 and 2 + 3 = 5\nStep 3 — Write the two brackets: (x + 2)(x + 3)\nStep 4 — Check by expanding: x² + 3x + 2x + 6 = x² + 5x + 6",
+  "topic": "factorization"
+ },
+ {
+  "id": "q32",
+  "question": "Solve x² − 7x + 12 = 0",
+  "options": [
+   "x = 3 or x = 4",
+   "x = −3 or x = −4",
+   "x = 2 or x = 6",
+   "x = 1 or x = 12"
+  ],
+  "answer": "x = 3 or x = 4",
+  "explanation": "Step 1 — Factorise: the two numbers that multiply to +12 and add to −7 are −3 and −4, so x² − 7x + 12 = (x − 3)(x − 4)\nStep 2 — A product is zero only when one of its brackets is zero\nStep 3 — x − 3 = 0 gives x = 3, and x − 4 = 0 gives x = 4\nStep 4 — Check x = 3: 9 − 21 + 12 = 0, so the pair is right",
+  "topic": "quadratic-equations"
+ },
+ {
+  "id": "q33",
+  "question": "Solve the inequality 3x − 5 < 10",
+  "options": [
+   "x < 15",
+   "x < 5",
+   "x > 5",
+   "x ≤ 5"
+  ],
+  "answer": "x < 5",
+  "explanation": "Step 1 — Add 5 to both sides: 3x < 15\nStep 2 — Divide both sides by 3; 3 is positive, so the inequality sign does not turn: x < 5\nStep 3 — Check with x = 4: 3(4) − 5 = 7 and 7 < 10, so 4 is a solution; x = 6 gives 13, which is not",
+  "topic": "inequalities"
+ },
+ {
+  "id": "q34",
+  "question": "A data set is 2, 4, 6, 8, 10. What is its variance?",
+  "options": [
+   "8",
+   "6",
+   "40",
+   "4"
+  ],
+  "answer": "8",
+  "explanation": "Step 1 — Mean = (2 + 4 + 6 + 8 + 10) ÷ 5 = 30 ÷ 5 = 6\nStep 2 — Deviations from the mean are −4, −2, 0, 2, 4, and their squares are 16, 4, 0, 4, 16\nStep 3 — Add the squares: 16 + 4 + 0 + 4 + 16 = 40\nStep 4 — Variance = 40 ÷ 5 = 8, so the standard deviation is √8 ≈ 2.83",
+  "topic": "mat-stat-standard-deviation"
+ },
+ {
+  "id": "q35",
+  "question": "A cuboid measures 5 cm by 3 cm by 2 cm. What is its total surface area?",
+  "options": [
+   "62 cm²",
+   "30 cm²",
+   "31 cm²",
+   "124 cm²"
+  ],
+  "answer": "62 cm²",
+  "explanation": "Step 1 — A cuboid has three pairs of identical faces\nStep 2 — The three different faces are 5 × 3 = 15 cm², 5 × 2 = 10 cm² and 3 × 2 = 6 cm²\nStep 3 — Add one of each and double it: 2 × (15 + 10 + 6) = 2 × 31 = 62\nStep 4 — The total surface area is 62 cm²",
+  "topic": "mat-meas-surface-area-of-solids"
  }
 ]
