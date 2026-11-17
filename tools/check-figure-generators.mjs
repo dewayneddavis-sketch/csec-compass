@@ -76,6 +76,18 @@ const sandboxOut = (sb, subject) => path.join(sb, "content", subject, "figures")
 
 const GENERATORS = [
   {
+    subject: "biology",
+    generator: "tools/gen-biology-figures.py",
+    // --out is REQUIRED and is the only place it writes: there is no tree-writing mode to guard
+    // against. These three figures are also the read-only sources H&SB and Integrated Science
+    // borrow (H&SB copies the heart byte-for-byte, IS asserts the cell's
+    // wall/blob/mitochondrion/Golgi/leader geometry), so they run after this one.
+    cmd: (sb) => ["python3", [path.join(ROOT, "tools/gen-biology-figures.py"),
+                              "--out", sandboxOut(sb, "biology")]],
+    outDir: (sb) => sandboxOut(sb, "biology"),
+    prepare: () => {},
+  },
+  {
     subject: "human-social-biology",
     generator: "tools/gen-human-social-biology-figures.py",
     // --out wins unless --trees is passed (main(): outs=[--out]; only --trees replaces it).
@@ -135,15 +147,13 @@ const GENERATORS = [
 // Subjects with NO generator in the repo. Pinned deliberately: if a NEW figure appears in one of
 // these directories, this harness fails and someone must either write a generator or extend this
 // waiver with a reason. Silence is not an option.
-const KNOWN_NO_GENERATOR = {
-  biology: {
-    files: ["heart-and-double-circulation.svg", "kidney-and-nephron.svg", "plant-and-animal-cell.svg"],
-    reason: "hand-authored; there is no biology generator in tools/. Its figures are the read-only " +
-            "sources other generators borrow (H&SB copies the heart byte-for-byte, IS asserts the " +
-            "cell's wall/blob/mitochondrion/Golgi/leader geometry against them), so drift there is " +
-            "caught indirectly by those two generators, not here.",
-  },
-};
+//
+// DELIBERATELY EMPTY (Biology Slice 0). `biology` was the only entry and it is gone, not blanked:
+// its generator is now tools/gen-biology-figures.py and it is in GENERATORS above. Every subject
+// that ships figures is therefore generated and reproduced here. An empty waiver makes the loop
+// below dormant, not broken — section 2 still fails the moment a figure-bearing subject has no
+// generator, because `uncovered` is compared against these (now zero) keys.
+const KNOWN_NO_GENERATOR = {};
 
 function makeSandbox() {
   return fs.mkdtempSync(path.join(os.tmpdir(), "fig-repro-"));
@@ -254,7 +264,7 @@ for (const [s, waive] of Object.entries(KNOWN_NO_GENERATOR)) {
 }
 const covered = subjectsWithFigures.filter((s) => generatedSubjects.includes(s));
 console.log(`       covered by a generator: ${covered.join(", ")}`);
-console.log(`       waived (no generator): ${Object.keys(KNOWN_NO_GENERATOR).join(", ")}`);
+console.log(`       waived (no generator): ${Object.keys(KNOWN_NO_GENERATOR).join(", ") || "(none — every figure-bearing subject has a generator)"}`);
 ok(subjectsWithFigures.length === covered.length + Object.keys(KNOWN_NO_GENERATOR).length,
    `every subject that ships figures is covered or explicitly waived (${subjectsWithFigures.length} subjects)`);
 
