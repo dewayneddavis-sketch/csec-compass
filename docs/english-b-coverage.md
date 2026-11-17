@@ -6,7 +6,7 @@ chapters across 4 sections). Formal audit: `/home/team/shared/english-b-coverage
 Machine-checked by `tools/check-english-b-coverage.mjs` — **this table is parsed by that harness**, so the
 columns below are a contract, not decoration.
 
-**Headline after Slice C: 16 chapters = REUSE 9 + EXTEND 4 + NEW 3** against the 24 shipped lessons in 7 modules (Slice A closed rows 1, 5 and 9 in `eb-l1-1`; Slice B closed rows 6 and 8 in `eb-l2-2` and `eb-l2-3`; Slice C closed rows 2, 3 and 4 in `eb-l3-1`, `eb-l3-2` and `eb-l3-3`).
+**Headline after Slice D: 16 chapters = REUSE 12 + EXTEND 1 + NEW 3** against the 24 shipped lessons in 7 modules (Slice A closed rows 1, 5 and 9 in `eb-l1-1`; Slice B closed rows 6 and 8 in `eb-l2-2` and `eb-l2-3`; Slice C closed rows 2, 3 and 4 in `eb-l3-1`, `eb-l3-2` and `eb-l3-3`; Slice D closed rows 10, 11 and 12 in `eb-l4-1`, `eb-l4-3` and `eb-l4-2`). **After Slice D only row 15 is still `EXTEND`.**
 End state: **8 modules, 27 lessons** (the 3 NEW ids are still pending — see below).
 13 of the 16 chapters are already taught **under other names**: this is a *naming* gap, not a teaching
 gap, so most of the build is by-name work inside lessons that already exist.
@@ -16,7 +16,7 @@ gap, so most of the build is by-name work inside lessons that already exist.
 | column | meaning |
 |---|---|
 | `#` | chapter number 1–16, in the owner's numbering. Row order is the contract: row *n* must be chapter *n* |
-| `chapter` | the owner's chapter name, **verbatim**, including the American spelling in row 11 (see the exception note) |
+| `chapter` | the owner's chapter name, **verbatim**, including the American spelling in row 10 (see the exception note) |
 | `section` | `Drama` (1–4), `Poetry` (5–8), `Prose Fiction` (9–12), `Literary Appreciation` (13–16) — 4 chapters each |
 | `class` | `REUSE` = the name is already there; `EXTEND` = the substance is taught but the name is not; `NEW` = a new lesson |
 | `host lesson id` | comma-separated. **The first id is the primary host** — the name test and the evidence phrase apply to it. Every listed id must exist |
@@ -51,6 +51,9 @@ plus a phrase for the substance it does teach.
   `eb-l2-3` now names "Critical Interpretation of Poetry". **Slice C landed 2026-11-17:** rows 2, 3 and 4
   flipped `EXTEND` → `REUSE` by the same rule, because `eb-l3-1`, `eb-l3-2` and `eb-l3-3` now name
   "Developing Dramatic Elements", "Plot Structure and Dramatic Techniques" and "Interpreting Drama".
+  **Slice D landed 2026-11-17:** rows 10, 11 and 12 flipped `EXTEND` → `REUSE` by the same rule, because
+  `eb-l4-1`, `eb-l4-3` and `eb-l4-2` now name "Analysing Prose Elements" (the shipped British form of the
+  owner's American chapter name), "Interpreting Language and Meaning" and "Critical Engagement with Prose".
 - **D-3 — Paper 2 for the `eb-l8-*` lessons: YES, as a separate PR after Slice G. OWNER-CONFIRMED
   2026-11-05.** It moves the `check-paper2.mjs` pin (9 items / 265 marks) together with the new items.
   **No slice of the coverage build adds a Paper 2 item.**
@@ -65,11 +68,14 @@ no later slice "fixes" the number back.)* The pinned British/CXC spelling baseli
 
 - the `chapter` cell keeps the owner's verbatim **"Analyzing Prose Elements"**, and the harness compares it
   as written;
-- the row is `EXTEND`, so no shipped lesson has to carry the name at all — the coverage claim is the
-  substance ("symbol, imagery and meaning are taught in `eb-l4-3`"), not the word;
+- **Slice D landed 2026-11-17:** the row is `REUSE`, because `eb-l4-1` now names the chapter in the shipped
+  British form **"Analysing prose elements"** — a heading paragraph and a `concepts` entry. The naming test
+  accepts the British form as the equal of the American one **for this word only** (`WORD_EQUIVALENTS` in
+  the harness), so the row cannot pass on an unrelated concept; the red control `row10-name-removed` proves
+  it still bites: remove that concept and row 10 goes red;
 - **the harness asserts that no English B lesson copy ships "analyzing"/"analyze"** — if a later slice ever
   puts the American form into a lesson, that assertion reds. The British form **"Analysing prose
-  elements"** is what a slice may write, and the harness accepts either spelling when it checks whether
+  elements"** is what the lesson ships, and the harness accepts either spelling when it checks whether
   the naming gap has been closed.
 
 ## The 16-row coverage table
@@ -85,15 +91,15 @@ no later slice "fixes" the number back.)* The pinned British/CXC spelling baseli
 | 7 | Figurative Language and Poetic Devices | Poetry | REUSE | eb-l2-1 | Figurative language is language used beyond its literal sense. |
 | 8 | Critical Interpretation of Poetry | Poetry | REUSE | eb-l2-3 | the move from what a poem says to a judgement about what it means |
 | 9 | Prose Fiction Genre | Prose Fiction | REUSE | eb-l1-1, eb-l4-1, eb-l4-2, eb-l4-3 | Prose fiction is the genre of the novel and the short story: prose, because it is written in sentences and paragraphs, and fiction, because the events are invented even when they feel true |
-| 10 | Analyzing Prose Elements | Prose Fiction | EXTEND | eb-l4-1, eb-l4-2, eb-l4-3 | Structure is the shape the writer gives the plot: linear, circular, framed by a story within a story, or broken into episodes that jump between times and places. |
-| 11 | Interpreting Language and Meaning | Prose Fiction | EXTEND | eb-l4-3 | A symbol is an object, place or action that stands for something beyond itself |
-| 12 | Critical Engagement with Prose | Prose Fiction | EXTEND | eb-l4-2 | A useful question in the examination is: how does the writer make us feel about this character? |
+| 10 | Analyzing Prose Elements | Prose Fiction | REUSE | eb-l4-1, eb-l4-2, eb-l4-3 | Analysing prose elements means taking a passage apart into the parts that are doing work |
+| 11 | Interpreting Language and Meaning | Prose Fiction | REUSE | eb-l4-3 | Interpretation begins where description stops |
+| 12 | Critical Engagement with Prose | Prose Fiction | REUSE | eb-l4-2 | A judgement is only worth marks if someone else could argue with it |
 | 13 | Author's Craft and Reader Influence | Literary Appreciation | NEW | eb-l8-craft | - |
 | 14 | Critical Evaluation of Literary Texts | Literary Appreciation | NEW | eb-l8-critical-evaluation | - |
 | 15 | Structured Literary Response | Literary Appreciation | EXTEND | eb-l6-1 | Each body paragraph should begin with a topic sentence that makes a point, then quote or describe evidence, then explain the effect and link back to the question. |
 | 16 | Context and Shared Human Experience | Literary Appreciation | NEW | eb-l8-context | - |
 
-**Tally: 16 = REUSE 9 (1, 2, 3, 4, 5, 6, 7, 8, 9) + EXTEND 4 (10, 11, 12, 15) + NEW 3 (13, 14, 16).**
+**Tally: 16 = REUSE 12 (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) + EXTEND 1 (15) + NEW 3 (13, 14, 16).**
 Sections: Drama 4 · Poetry 4 · Prose Fiction 4 · Literary Appreciation 4.
 
 ## Pending ids

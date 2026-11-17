@@ -15,7 +15,9 @@
 //      vague resemblance;
 //   4. the EXTEND rule: that test FAILS on EVERY host the row lists. This is the assertion that the
 //      naming gap is real. The moment a slice teaches the chapter by name, this goes red until the row
-//      is re-classed — the doc can never quietly claim a gap that has been closed;
+//      is re-classed — the doc can never quietly claim a gap that has been closed. After Slice D only
+//      row 15 is EXTEND, and it has a single host, so the "every host" loop is exercised by the red
+//      control `extend-secondary-names-it`, which gives row 15 a real second host in memory;
 //   5. every non-pending row's evidence phrase occurs verbatim in the primary host's own copy
 //      (title + content + objectives + concepts), so the substance the row claims is taught is checkable;
 //   6. the PENDING_IDS list is exactly the NEW ids that do not exist yet — the doc's list, this harness's
@@ -70,9 +72,11 @@ export const SECTIONS = ["Drama", "Poetry", "Prose Fiction", "Literary Appreciat
 export const PER_SECTION = 4;
 // Slice A re-classed row 5 (EXTEND -> REUSE) because `eb-l1-1` now names "The Nature of Poetry";
 // Slice B re-classed rows 6 and 8 because `eb-l2-2` and `eb-l2-3` now name their chapters;
-// Slice C re-classed rows 2, 3 and 4 because `eb-l3-1`, `eb-l3-2` and `eb-l3-3` now name theirs.
+// Slice C re-classed rows 2, 3 and 4 because `eb-l3-1`, `eb-l3-2` and `eb-l3-3` now name theirs;
+// Slice D re-classed rows 10, 11 and 12 because `eb-l4-1`, `eb-l4-3` and `eb-l4-2` now name theirs.
+// After Slice D, row 15 (`eb-l6-1`) is the only EXTEND row left.
 // The totals follow the rows, they are not a target.
-export const CLASS_TOTALS = { REUSE: 9, EXTEND: 4, NEW: 3 };
+export const CLASS_TOTALS = { REUSE: 12, EXTEND: 1, NEW: 3 };
 
 // The 3 NEW ids, in row order (rows 13, 14, 16). A slice that lands one deletes it here and in the doc.
 export const PENDING_IDS = ["eb-l8-craft", "eb-l8-critical-evaluation", "eb-l8-context"];
@@ -85,6 +89,11 @@ export const SPELLING_EXCEPTION = { row: 10, shipped: "Analysing prose elements"
 const US_FORMS = ["analyzing", "analyze", "analyzed", "analyzes"];
 
 const STOP = new Set(["as", "and", "the", "of", "with", "a", "an", "in", "to", "on", "its"]);
+
+// Row 10's chapter name is American ("Analyzing Prose Elements") but the copy must ship the British form
+// (section 7 forbids "analyzing" in any lesson), so the naming tests accept the British equivalent of that
+// ONE word and nothing else. The red control `row10-name-removed` proves the row still needs the word.
+export const WORD_EQUIVALENTS = { analyzing: ["analysing"] };
 
 // Folding: case, curly quotes/dashes, whitespace. Deliberately generous so a legitimately worded phrase
 // is not failed on punctuation alone.
@@ -101,8 +110,11 @@ export const wordsOf = (name) => fold(name).split(/[^a-z']+/).filter((w) => w.le
 /** Word-boundary match, plural allowed: "genre" matches "Genres", "drama" does NOT match "dramatic". */
 export const hasWord = (text, w) => new RegExp(`\\b${w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(s|es)?\\b`).test(text);
 
+/** hasWord, plus the recorded spelling equivalent of the word (see WORD_EQUIVALENTS). */
+export const hasWordOrEquivalent = (text, w) => hasWord(text, w) || (WORD_EQUIVALENTS[w] || []).some((alt) => hasWord(text, alt));
+
 /** True when EVERY significant word of the chapter name is in the lesson's title/concepts. */
-export const namedByLesson = (l, chapter) => wordsOf(chapter).every((w) => hasWord(nameOf(l), w));
+export const namedByLesson = (l, chapter) => wordsOf(chapter).every((w) => hasWordOrEquivalent(nameOf(l), w));
 
 export const sectionOf = (n) => SECTIONS[Math.ceil(n / PER_SECTION) - 1];
 
@@ -195,7 +207,7 @@ export function runChecks(st) {
   for (const r of rows.filter((x) => x.cls === "REUSE")) {
     const l = byId[r.hosts[0]];
     if (!l) { check(false, `row ${r.n} primary host ${r.hosts[0]} does not exist`); continue; }
-    const missing = wordsOf(r.chapter).filter((w) => !hasWord(nameOf(l), w));
+    const missing = wordsOf(r.chapter).filter((w) => !hasWordOrEquivalent(nameOf(l), w));
     check(missing.length === 0,
       `row ${r.n} "${r.chapter}" is taught by name in ${r.hosts[0]} (missing from its title/concepts: ${missing.join(", ") || "none"})`);
   }
@@ -206,7 +218,7 @@ export function runChecks(st) {
     for (const id of r.hosts) {
       const l = byId[id];
       if (!l) { check(false, `row ${r.n} host ${id} does not exist`); continue; }
-      const missing = wordsOf(r.chapter).filter((w) => !hasWord(nameOf(l), w));
+      const missing = wordsOf(r.chapter).filter((w) => !hasWordOrEquivalent(nameOf(l), w));
       check(missing.length > 0,
         `row ${r.n} "${r.chapter}" is marked EXTEND but ${id} now names it by name — re-class the row to REUSE`);
     }
@@ -292,19 +304,30 @@ export const RED_CONTROLS = {
     editRow(st, 7, (l) => l.replace("Figurative language is language used beyond its literal sense.", "-"));
   },
   "reuse-host-swapped": (st) => { editRow(st, 7, (l) => l.replace("| eb-l2-1 |", "| eb-l2-2 |")); },
-  // Aimed at row 11 (`eb-l4-3`), which is still EXTEND: a primary host that starts naming its chapter
-  // must red the row. Re-aimed by Slice C — its old target (row 4 / `eb-l3-3`) became REUSE, which would
-  // have left this control guarding nothing.
+  // Aimed at row 15 (`eb-l6-1`), the only EXTEND row left after Slice D: a primary host that starts
+  // naming its chapter must red the row. Re-aimed by Slice D — its old target (row 11 / `eb-l4-3`) became
+  // REUSE, which would have left this control guarding nothing. (Slice C re-aimed it here from row 4.)
   "extend-name-added": (st) => {
-    const l = st.modules.flatMap((m) => m.lessons || []).find((x) => x.id === "eb-l4-3");
-    l.concepts = [...l.concepts, "Interpreting", "Language", "Meaning"];
+    const l = st.modules.flatMap((m) => m.lessons || []).find((x) => x.id === "eb-l6-1");
+    l.concepts = [...l.concepts, "Structured", "Literary", "Response"];
   },
-  // Aimed at row 10, the only still-EXTEND row with more than one host: a SECONDARY host that names the
-  // chapter must red the row. Row 10's name is the American-spelling exception, so completing it also
-  // trips the spelling assertion in section 7 — both failures are real.
+  // Aimed at the EXTEND rule's PER-HOST loop, not at any one row. No live row exercises it now: after
+  // Slice D the only EXTEND row (15) has a single host, so "a SECONDARY host that names the chapter reds
+  // the row" cannot be shown on the shipped doc. Rather than leave a control that guards nothing, this
+  // one supplies the property in memory — it gives row 15 a real second host (`eb-l6-2`) and makes that
+  // host name the chapter. If the loop only ever checked hosts[0], nothing would fail and this control
+  // would report NOT CAUGHT.
   "extend-secondary-names-it": (st) => {
-    const l = st.modules.flatMap((m) => m.lessons || []).find((x) => x.id === "eb-l4-2");
-    l.concepts = [...l.concepts, "Analyzing", "Prose", "Elements"];
+    editRow(st, 15, (l) => l.replace("| eb-l6-1 |", "| eb-l6-1, eb-l6-2 |"));
+    const l = st.modules.flatMap((m) => m.lessons || []).find((x) => x.id === "eb-l6-2");
+    l.concepts = [...l.concepts, "Structured", "Literary", "Response"];
+  },
+  // Aimed at the row-10 spelling equivalence (WORD_EQUIVALENTS): the row is REUSE only because
+  // `eb-l4-1` ships the British "Analysing", so removing it must red row 10. Without this control the
+  // equivalence could hide a row that names nothing.
+  "row10-name-removed": (st) => {
+    const l = st.modules.flatMap((m) => m.lessons || []).find((x) => x.id === "eb-l4-1");
+    l.concepts = l.concepts.filter((c) => c !== "Analysing prose elements");
   },
   "pending-id-landed": (st) => {
     st.modules[0].lessons.push({ id: "eb-l8-craft", title: "Author's Craft and Reader Influence", content: "x", concepts: ["Craft"] });
