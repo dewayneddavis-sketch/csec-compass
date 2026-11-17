@@ -26,8 +26,9 @@
 //   7. routing: the english-b branch resolves by lessonId BEFORE the generic lessonSets[subjectId]
 //      fallback, and passes lessonId through to DragDropLabel;
 //   8. the banks: practice exactly 100, knowledge check exactly 25, every question tagged with a real
-//      lesson id, every shipped lesson still drilled, the comparative-essay retag intact, and the 12
-//      retired ids still unused;
+//      lesson id, every shipped lesson still drilled by practice AND still holding its knowledge-check
+//      item (the KC loop is relaxed, never deleted, at Slice G — see D-1), the comparative-essay retag
+//      intact, and the 12 retired ids still unused;
 //   9. content/english-b/* and public/content/english-b/* are byte-identical, file for file.
 //
 // Usage
@@ -211,11 +212,25 @@ export function runChecks(st) {
   check(st.practice.every((q) => !!byId[q.topic]), "every practice topic is a real lesson id");
   check(st.kc.every((q) => !!byId[q.topic]), "every knowledge-check topic is a real lesson id");
   for (const id of FROZEN_ORDER) check((pTopic[id] || 0) >= 1, `${id}: still has at least one practice question`);
+  // The KC half of the same "keeps" guard, exactly the shape of the practice loop above. Without it a
+  // re-tag that moves a shipped lesson's only KC item onto another lesson is invisible: kc.length stays
+  // 25, every topic stays a real lesson id, and §8 is silent. It holds today (25 items over 24 topics,
+  // eb-l3-2 holding two).
+  //
+  // MUST BE RELAXED AT SLICE G, NOT DELETED. D-1 (owner-confirmed 2026-11-05) retires three KC items
+  // with written reasons to keep the check at exactly 25 across 27 lessons, which leaves two lessons
+  // with no KC item at all. Those two are named in the Slice G ledger (docs/english-b-coverage.md); at
+  // that point this loop skips exactly those two ids. Deleting it instead would let any shipped lesson
+  // silently lose its item again.
+  //
+  // This replaces `check(st.kc.length > 0 && Object.keys(kTopic).length >= 1, "the knowledge check still
+  // tags topics")`, which could never fail: §8 already pins kc.length === 25 and every KC topic to a
+  // real lesson id, so it asserted nothing.
+  for (const id of FROZEN_ORDER) check((kTopic[id] || 0) >= 1, `${id}: still has at least one knowledge-check item`);
   check(st.practice.filter((q) => q.id === "p35").length === 1 && (pTopic["eb-l7-3"] || 0) >= 2,
     "the comparative-essay item was retagged onto eb-l7-3 (retag before you retire)");
   const liveIds = new Set([...st.practice, ...st.kc].map((q) => q.id));
   for (const id of RETIRED_IDS) check(!liveIds.has(id), `${id}: retired id is no longer in use`);
-  check(st.kc.length > 0 && Object.keys(kTopic).length >= 1, "the knowledge check still tags topics");
 
   // ---------------------------------------------------------------- 9. mirrors
   section("9. the content mirrors stay byte-identical");
@@ -264,6 +279,9 @@ export const RED_CONTROLS = {
   "kc-size": (st) => { st.kc.pop(); },
   "practice-topic-ghost": (st) => { st.practice[0].topic = "eb-l9-9"; },
   "practice-lost-for-lesson": (st) => { st.practice = st.practice.filter((q) => q.topic !== "eb-l5-3"); },
+  // The KC item is RE-TAGGED, not removed: kc.length stays 25 and every topic stays a real lesson id, so
+  // only the per-lesson KC loop can see it.
+  "kc-lost-for-lesson": (st) => { for (const q of st.kc) if (q.topic === "eb-l7-4") q.topic = "eb-l7-3"; },
   "retired-id-reused": (st) => { st.practice.push({ ...st.practice[0], id: "p6" }); },
   "p35-retag-lost": (st) => { st.practice = st.practice.filter((q) => q.id !== "p35"); },
   "mirror-drift": (st) => { st.mirrors["modules.json"].mirror = st.mirrors["modules.json"].mirror + " "; },
