@@ -6,7 +6,7 @@ chapters across 4 sections). Formal audit: `/home/team/shared/english-b-coverage
 Machine-checked by `tools/check-english-b-coverage.mjs` — **this table is parsed by that harness**, so the
 columns below are a contract, not decoration.
 
-**Headline after Slice D: 16 chapters = REUSE 12 + EXTEND 1 + NEW 3** against the 24 shipped lessons in 7 modules (Slice A closed rows 1, 5 and 9 in `eb-l1-1`; Slice B closed rows 6 and 8 in `eb-l2-2` and `eb-l2-3`; Slice C closed rows 2, 3 and 4 in `eb-l3-1`, `eb-l3-2` and `eb-l3-3`; Slice D closed rows 10, 11 and 12 in `eb-l4-1`, `eb-l4-3` and `eb-l4-2`). **After Slice D only row 15 is still `EXTEND`.**
+**Headline after Slice E: 16 chapters = REUSE 13 + EXTEND 0 + NEW 3** against the 24 shipped lessons in 7 modules (Slice A closed rows 1, 5 and 9 in `eb-l1-1`; Slice B closed rows 6 and 8 in `eb-l2-2` and `eb-l2-3`; Slice C closed rows 2, 3 and 4 in `eb-l3-1`, `eb-l3-2` and `eb-l3-3`; Slice D closed rows 10, 11 and 12 in `eb-l4-1`, `eb-l4-3` and `eb-l4-2`; Slice E closed row 15 in `eb-l6-1`). **After Slice E no row is `EXTEND` any more** — the class is empty and its rule is dormant, not broken: it can only come back if a shipped name is later removed or a `REUSE` claim is withdrawn, and both of its red controls now synthesise that state in memory rather than pointing at a live row.
 End state: **8 modules, 27 lessons** (the 3 NEW ids are still pending — see below).
 13 of the 16 chapters are already taught **under other names**: this is a *naming* gap, not a teaching
 gap, so most of the build is by-name work inside lessons that already exist.
@@ -29,7 +29,10 @@ gap, so most of the build is by-name work inside lessons that already exist.
   audit's own REUSE rule, and it is what separates a real REUSE from a "maps loosely onto" claim.
 - `EXTEND` — the same test **fails on every listed host**. That is the assertion that the name really is
   missing. The moment a slice adds the chapter's name to a host, this harness goes red until the row is
-  re-classed: the table can never quietly claim a naming gap that has been closed.
+  re-classed: the table can never quietly claim a naming gap that has been closed. **After Slice E no row
+  carries this class**, so the rule runs over an empty list: the rule and its two red controls stay in
+  place, and each control now re-classes a row to `EXTEND` in memory so the loop still has something to
+  catch. A totals line of `EXTEND 0` is honest but weak on its own — the controls are what keep it real.
 
 A phrase alone is never proof: a `REUSE` row needs the name, an `EXTEND` row needs the name's *absence*
 plus a phrase for the substance it does teach.
@@ -54,6 +57,11 @@ plus a phrase for the substance it does teach.
   **Slice D landed 2026-11-17:** rows 10, 11 and 12 flipped `EXTEND` → `REUSE` by the same rule, because
   `eb-l4-1`, `eb-l4-3` and `eb-l4-2` now name "Analysing Prose Elements" (the shipped British form of the
   owner's American chapter name), "Interpreting Language and Meaning" and "Critical Engagement with Prose".
+  **Slice E landed 2026-11-17:** row 15 flipped `EXTEND` → `REUSE` by the same rule, because `eb-l6-1` now
+  names "Structured Literary Response" — the essay as a whole (how an introduction states a position, how
+  paragraphs are ordered so the argument builds, how a conclusion answers the question asked, and how much
+  of the answer the plan decides before the first sentence is written). **It was the last `EXTEND` row, so
+  the class is now empty; see the naming-test note above for why the rule and its controls stay.**
 - **D-3 — Paper 2 for the `eb-l8-*` lessons: YES, as a separate PR after Slice G. OWNER-CONFIRMED
   2026-11-05.** It moves the `check-paper2.mjs` pin (9 items / 265 marks) together with the new items.
   **No slice of the coverage build adds a Paper 2 item.**
@@ -96,10 +104,10 @@ no later slice "fixes" the number back.)* The pinned British/CXC spelling baseli
 | 12 | Critical Engagement with Prose | Prose Fiction | REUSE | eb-l4-2 | A judgement is only worth marks if someone else could argue with it |
 | 13 | Author's Craft and Reader Influence | Literary Appreciation | NEW | eb-l8-craft | - |
 | 14 | Critical Evaluation of Literary Texts | Literary Appreciation | NEW | eb-l8-critical-evaluation | - |
-| 15 | Structured Literary Response | Literary Appreciation | EXTEND | eb-l6-1 | Each body paragraph should begin with a topic sentence that makes a point, then quote or describe evidence, then explain the effect and link back to the question. |
+| 15 | Structured Literary Response | Literary Appreciation | REUSE | eb-l6-1 | the conclusion answers the question that was asked rather than repeating the introduction |
 | 16 | Context and Shared Human Experience | Literary Appreciation | NEW | eb-l8-context | - |
 
-**Tally: 16 = REUSE 12 (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) + EXTEND 1 (15) + NEW 3 (13, 14, 16).**
+**Tally: 16 = REUSE 13 (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15) + EXTEND 0 + NEW 3 (13, 14, 16).**
 Sections: Drama 4 · Poetry 4 · Prose Fiction 4 · Literary Appreciation 4.
 
 ## Pending ids
