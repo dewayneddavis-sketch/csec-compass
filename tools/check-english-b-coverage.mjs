@@ -15,9 +15,15 @@
 //      vague resemblance;
 //   4. the EXTEND rule: that test FAILS on EVERY host the row lists. This is the assertion that the
 //      naming gap is real. The moment a slice teaches the chapter by name, this goes red until the row
-//      is re-classed — the doc can never quietly claim a gap that has been closed. After Slice D only
-//      row 15 is EXTEND, and it has a single host, so the "every host" loop is exercised by the red
-//      control `extend-secondary-names-it`, which gives row 15 a real second host in memory;
+//      is re-classed — the doc can never quietly claim a gap that has been closed.
+//      AFTER SLICE E NO ROW IS EXTEND ANY MORE: row 15 was the last one, and `eb-l6-1` now names it. The
+//      rule and both of its controls are KEPT, because the class is part of the column contract and can
+//      come back the moment a shipped name is removed or a REUSE claim is withdrawn — but on the shipped
+//      doc the loop iterates over nothing, so each of its controls SYNTHESISES the state in memory
+//      (re-classes row 15 to EXTEND) instead of pointing at a live row. The rule is DORMANT, not broken.
+//      And a control must be caught BY the assertion it is aimed at, which is what RED_EXPECT pins: a
+//      totals failure alone would otherwise keep a control green while the loop it guards had stopped
+//      checking anything;
 //   5. every non-pending row's evidence phrase occurs verbatim in the primary host's own copy
 //      (title + content + objectives + concepts), so the substance the row claims is taught is checkable;
 //   6. the PENDING_IDS list is exactly the NEW ids that do not exist yet — the doc's list, this harness's
@@ -73,10 +79,15 @@ export const PER_SECTION = 4;
 // Slice A re-classed row 5 (EXTEND -> REUSE) because `eb-l1-1` now names "The Nature of Poetry";
 // Slice B re-classed rows 6 and 8 because `eb-l2-2` and `eb-l2-3` now name their chapters;
 // Slice C re-classed rows 2, 3 and 4 because `eb-l3-1`, `eb-l3-2` and `eb-l3-3` now name theirs;
-// Slice D re-classed rows 10, 11 and 12 because `eb-l4-1`, `eb-l4-3` and `eb-l4-2` now name theirs.
-// After Slice D, row 15 (`eb-l6-1`) is the only EXTEND row left.
+// Slice D re-classed rows 10, 11 and 12 because `eb-l4-1`, `eb-l4-3` and `eb-l4-2` now name theirs;
+// Slice E re-classed row 15, the LAST EXTEND row, because `eb-l6-1` now names "Structured Literary
+// Response". EXTEND is therefore 0: the totals loop below still runs, but over an empty class — honest
+// and weak, since it cannot fail for EXTEND while no row carries the class. The class can only come back
+// if a shipped name is removed or a REUSE claim is withdrawn, and when it does this constant and the
+// doc's headline move with it in the same PR. What keeps the 0 real is the red control `class-flip`:
+// it re-classes a row to EXTEND and must fail ON THE TOTALS LINE (see RED_EXPECT), not merely somewhere.
 // The totals follow the rows, they are not a target.
-export const CLASS_TOTALS = { REUSE: 12, EXTEND: 1, NEW: 3 };
+export const CLASS_TOTALS = { REUSE: 13, EXTEND: 0, NEW: 3 };
 
 // The 3 NEW ids, in row order (rows 13, 14, 16). A slice that lands one deletes it here and in the doc.
 export const PENDING_IDS = ["eb-l8-craft", "eb-l8-critical-evaluation", "eb-l8-context"];
@@ -294,7 +305,11 @@ export const RED_CONTROLS = {
   },
   "rename-chapter": (st) => { editRow(st, 1, (l) => l.replace("Drama as a Genre", "Drama")); },
   "wrong-section": (st) => { editRow(st, 2, (l) => l.replace("| Drama |", "| Poetry |")); },
-  "class-flip": (st) => { editRow(st, 15, (l) => l.replace("| EXTEND |", "| REUSE |")); },
+  // Aimed at the CLASS_TOTALS loop. After Slice E no row is EXTEND, so the totals line "EXTEND 0" can
+  // only be tested by putting the class back: re-class row 15 (a real, shipped REUSE row) to EXTEND and
+  // the totals must disagree. This also trips the EXTEND rule, which is why RED_EXPECT pins the failure
+  // this control is FOR — the totals message — and not just "something failed".
+  "class-flip": (st) => { editRow(st, 15, (l) => l.replace("| REUSE |", "| EXTEND |")); },
   "phrase-not-in-copy": (st) => {
     editRow(st, 4, (l) => l.replace(
       "an interpretation has to be built from what an audience sees and hears",
@@ -304,23 +319,32 @@ export const RED_CONTROLS = {
     editRow(st, 7, (l) => l.replace("Figurative language is language used beyond its literal sense.", "-"));
   },
   "reuse-host-swapped": (st) => { editRow(st, 7, (l) => l.replace("| eb-l2-1 |", "| eb-l2-2 |")); },
-  // Aimed at row 15 (`eb-l6-1`), the only EXTEND row left after Slice D: a primary host that starts
-  // naming its chapter must red the row. Re-aimed by Slice D — its old target (row 11 / `eb-l4-3`) became
-  // REUSE, which would have left this control guarding nothing. (Slice C re-aimed it here from row 4.)
+  // Aimed at the EXTEND rule's PRIMARY-host branch: a row marked EXTEND whose primary host names the
+  // chapter must red the row. No live row is EXTEND after Slice E, so this control puts the class back on
+  // row 15 in memory — `eb-l6-1` really does name "Structured Literary Response" now, so the loop has a
+  // genuine violation to catch. If that branch stopped checking, this control would report NOT CAUGHT.
   "extend-name-added": (st) => {
-    const l = st.modules.flatMap((m) => m.lessons || []).find((x) => x.id === "eb-l6-1");
-    l.concepts = [...l.concepts, "Structured", "Literary", "Response"];
+    editRow(st, 15, (l) => l.replace("| REUSE |", "| EXTEND |"));
   },
   // Aimed at the EXTEND rule's PER-HOST loop, not at any one row. No live row exercises it now: after
-  // Slice D the only EXTEND row (15) has a single host, so "a SECONDARY host that names the chapter reds
-  // the row" cannot be shown on the shipped doc. Rather than leave a control that guards nothing, this
-  // one supplies the property in memory — it gives row 15 a real second host (`eb-l6-2`) and makes that
-  // host name the chapter. If the loop only ever checked hosts[0], nothing would fail and this control
-  // would report NOT CAUGHT.
+  // Slice E there is no EXTEND row at all. Rather than leave a control that guards nothing, this one
+  // supplies the property in memory — it re-classes row 15 to EXTEND, gives it a real second host
+  // (`eb-l6-3`), STRIPS the chapter name out of the primary host `eb-l6-1` (so hosts[0] legitimately
+  // passes) and makes only the second host name it. If the loop only ever checked hosts[0], nothing
+  // would fail and this control would report NOT CAUGHT.
   "extend-secondary-names-it": (st) => {
-    editRow(st, 15, (l) => l.replace("| eb-l6-1 |", "| eb-l6-1, eb-l6-2 |"));
-    const l = st.modules.flatMap((m) => m.lessons || []).find((x) => x.id === "eb-l6-2");
-    l.concepts = [...l.concepts, "Structured", "Literary", "Response"];
+    editRow(st, 15, (l) => l.replace("| REUSE |", "| EXTEND |").replace("| eb-l6-1 |", "| eb-l6-1, eb-l6-3 |"));
+    const primary = st.modules.flatMap((m) => m.lessons || []).find((x) => x.id === "eb-l6-1");
+    primary.concepts = primary.concepts.filter((c) => c !== "Structured literary response");
+    const secondary = st.modules.flatMap((m) => m.lessons || []).find((x) => x.id === "eb-l6-3");
+    secondary.concepts = [...secondary.concepts, "Structured", "Literary", "Response"];
+  },
+  // Aimed at row 15's REUSE claim: it is REUSE only because `eb-l6-1` now carries the chapter's name in
+  // its `concepts`, so removing that concept must red the row. Without this control the new concept could
+  // be dropped by a later edit and the row would keep claiming a name nobody writes.
+  "row15-name-removed": (st) => {
+    const l = st.modules.flatMap((m) => m.lessons || []).find((x) => x.id === "eb-l6-1");
+    l.concepts = l.concepts.filter((c) => c !== "Structured literary response");
   },
   // Aimed at the row-10 spelling equivalence (WORD_EQUIVALENTS): the row is REUSE only because
   // `eb-l4-1` ships the British "Analysing", so removing it must red row 10. Without this control the
@@ -344,28 +368,53 @@ export const RED_CONTROLS = {
 };
 
 // ---------------------------------------------------------------------------------------------
-const argv = process.argv.slice(2);
-if (argv.includes("--red-control")) {
-  const name = argv[argv.indexOf("--red-control") + 1];
-  if (!RED_CONTROLS[name]) { console.log(`unknown red control: ${name}`); process.exit(2); }
+// What each control must be caught BY. A control that synthesises state can trip more than one
+// assertion at once (re-classing a row to EXTEND breaks the class totals as well as the EXTEND rule), so
+// "some failure appeared" is not proof that the assertion the control is FOR still checks anything. Where
+// a control is listed here, the run only passes if that assertion's own message is among the failures;
+// otherwise it is reported CAUGHT BY THE WRONG ASSERTION and the run fails. Added by Slice E, when the
+// last EXTEND row disappeared and every EXTEND-aimed control had to synthesise its state.
+export const RED_EXPECT = {
+  "class-flip": "EXTEND rows total 0 (found 1)",
+  "extend-name-added": "is marked EXTEND but eb-l6-1 now names it by name",
+  "extend-secondary-names-it": "is marked EXTEND but eb-l6-3 now names it by name",
+  "row15-name-removed": "row 15 \"Structured Literary Response\" is taught by name in eb-l6-1",
+};
+
+// ---------------------------------------------------------------------------------------------
+/** Run one control against a fresh load. ok = it was caught, and caught by the assertion it names. */
+function runControl(name) {
   const st = loadState();
   RED_CONTROLS[name](st);
   const { failures } = runChecks(st);
   const real = failures.filter((f) => !f.startsWith("\u0000"));
-  if (!real.length) { console.log(`RED CONTROL "${name}" WAS NOT CAUGHT — the check is blind to it`); process.exit(1); }
-  console.log(`red control "${name}": caught with ${real.length} failure(s) — as expected`);
-  real.slice(0, 3).forEach((f) => console.log("   " + f));
+  if (!real.length) return { ok: false, real, why: "WAS NOT CAUGHT — the check is blind to it" };
+  const expect = RED_EXPECT[name];
+  if (expect && !real.some((f) => f.includes(expect)))
+    return { ok: false, real, why: `CAUGHT BY THE WRONG ASSERTION — no failure containing "${expect}"` };
+  // report the failure the control was AIMED at, not merely the first one it happened to trip
+  const aimed = expect ? real.filter((f) => f.includes(expect)) : real;
+  return { ok: true, real: aimed.length ? aimed : real };
+}
+
+const argv = process.argv.slice(2);
+if (argv.includes("--red-control")) {
+  const name = argv[argv.indexOf("--red-control") + 1];
+  if (!RED_CONTROLS[name]) { console.log(`unknown red control: ${name}`); process.exit(2); }
+  let r;
+  try { r = runControl(name); } catch (e) { console.log(`RED CONTROL "${name}" BROKE — ${e.message}`); process.exit(1); }
+  if (!r.ok) { console.log(`RED CONTROL "${name}" ${r.why}`); r.real.slice(0, 3).forEach((f) => console.log("   " + f)); process.exit(1); }
+  console.log(`red control "${name}": caught with ${r.real.length} failure(s) — as expected`);
+  r.real.slice(0, 3).forEach((f) => console.log("   " + f));
   process.exit(0);
 }
 if (argv.includes("--red-controls-all")) {
   let bad = 0;
   for (const name of Object.keys(RED_CONTROLS)) {
-    const st = loadState();
-    try { RED_CONTROLS[name](st); } catch (e) { bad++; console.log(`BROKEN: ${name} — ${e.message}`); continue; }
-    const { failures } = runChecks(st);
-    const real = failures.filter((f) => !f.startsWith("\u0000"));
-    if (!real.length) { bad++; console.log(`NOT CAUGHT: ${name}`); }
-    else console.log(`caught (${real.length}): ${name} — ${real[0]}`);
+    let r;
+    try { r = runControl(name); } catch (e) { bad++; console.log(`BROKEN: ${name} — ${e.message}`); continue; }
+    if (!r.ok) { bad++; console.log(`${r.ok === false && r.real.length ? "WRONG ASSERTION" : "NOT CAUGHT"}: ${name} — ${r.why}`); }
+    else console.log(`caught (${r.real.length}): ${name} — ${r.real[0]}`);
   }
   console.log(`\n${Object.keys(RED_CONTROLS).length} red controls, ${bad} not caught`);
   process.exit(bad ? 1 : 0);
