@@ -805,7 +805,14 @@
                 "experiment": {
                     "type": "matching-game",
                     "description": "Linear Programming Corner Match: drag each corner of the feasible region to the value of P = 3x + 2y it gives."
-                }
+                },
+                "figures": [
+                    {
+                        "src": "/content/mathematics/figures/linear-programming-feasible-region.svg",
+                        "alt": "A shaded feasible region bounded by x + y = 4, x + 2y = 6 and the two axes, with the four corners (0, 0), (4, 0), (2, 2) and (0, 3) labelled and P = 3x + 2y worked out at each.",
+                        "caption": "The four corners come from solving pairs of boundary lines; the greatest value of P = 3x + 2y is 12 at (4, 0)."
+                    }
+                ]
             },
             {
                 "id": "mat-rel-non-linear-functions",
@@ -953,7 +960,14 @@
                 "experiment": {
                     "type": "matching-game",
                     "description": "Construction Match: drag each construction to the exact result its equal-radius arcs produce."
-                }
+                },
+                "figures": [
+                    {
+                        "src": "/content/mathematics/figures/compass-constructions.svg",
+                        "alt": "Two compass constructions with their arcs left on: the perpendicular bisector of AB from two equal arcs about A and B, and the bisector of an angle from an arc across both arms and two equal arcs from the crossings.",
+                        "caption": "The arcs are the evidence that compasses were used, so they stay on the paper."
+                    }
+                ]
             },
             {
                 "id": "mat-geo-symmetry",
@@ -975,7 +989,14 @@
                 "experiment": {
                     "type": "classifier-sim",
                     "description": "Symmetry Sorter: sort each plane figure into the symmetry it has."
-                }
+                },
+                "figures": [
+                    {
+                        "src": "/content/mathematics/figures/lines-of-symmetry.svg",
+                        "alt": "A square with its 4 lines of symmetry, an equilateral triangle with its 3, and a parallelogram with none, each labelled with its lines of symmetry and its rotational order.",
+                        "caption": "The counts are the lesson's own: 4 lines and order 4, 3 lines and order 3, and 0 lines with order 2 for the parallelogram."
+                    }
+                ]
             },
             {
                 "id": "mat-geo-sine-and-cosine-rules",
@@ -996,7 +1017,14 @@
                 "experiment": {
                     "type": "matching-game",
                     "description": "Rule and Answer Match: drag each triangle description to the value the correct rule gives."
-                }
+                },
+                "figures": [
+                    {
+                        "src": "/content/mathematics/figures/sine-cosine-rules-triangle.svg",
+                        "alt": "A triangle with sides labelled a, b and c and angles labelled A, B and C, the included angle A marked in red between sides b and c, with the Sine Rule, the Cosine Rule and the lesson's worked example beside it.",
+                        "caption": "A is the angle between sides b and c, which is the angle the Cosine Rule uses."
+                    }
+                ]
             },
             {
                 "id": "mat-geo-bearings",
@@ -1017,7 +1045,14 @@
                 "experiment": {
                     "type": "matching-game",
                     "description": "Bearing Match: drag each direction or back bearing to its three-figure bearing."
-                }
+                },
+                "figures": [
+                    {
+                        "src": "/content/mathematics/figures/bearings-three-figure.svg",
+                        "alt": "A course from P on a bearing of 070 degrees for 8 km to Q, then on a bearing of 130 degrees for 6 km to R, with a parallel north line at each point, the interior angle at Q of 120 degrees and PR shown as 12.17 km.",
+                        "caption": "Every point has its own north line and they all stay parallel, which is what turns the two legs into a Cosine Rule question."
+                    }
+                ]
             }
         ]
     },

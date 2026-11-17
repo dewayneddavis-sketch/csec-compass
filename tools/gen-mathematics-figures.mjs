@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Generator for the Mathematics Tier-1 lesson figures (CSEC Compass) — cycles 1 and 2.
+// Generator for the Mathematics Tier-1 lesson figures (CSEC Compass) — cycles 1, 2 and 3.
 //
 // Provenance: every coordinate is COMPUTED from the arithmetic the lesson itself teaches.
 // Nothing is copied, traced or AI-generated; there is no image tool in this pipeline.
@@ -16,9 +16,22 @@
 //                            No endpoint is invented (the lesson gives no reading at 40) and the
 //                            lesson's second, incompatible dataset (20 at 30 marks, 34 at 40
 //                            marks) is never mixed in; both are asserted, not trusted.
+//   cycle 3 (five lessons that had no figure at all):
+//   - linear-programming-feasible-region  x+y≤4, x+2y≤6, x≥0, y≥0 -> corners solved from the
+//                            boundary pairs, the two crossings that break a third constraint
+//                            discarded, P = 3x+2y = 0/12/10/6, greatest 12 at (4, 0);
+//   - compass-constructions  two equal arcs about A and B cross at points asserted equidistant
+//                            from both, and the line through them asserted perpendicular to AB
+//                            and through its midpoint; the angle bisector likewise;
+//   - lines-of-symmetry      the counts are COMPUTED (reflect the vertices, count the axes that
+//                            map the shape onto itself) and asserted: 4/4, 3/3, 0/2;
+//   - sine-cosine-rules-triangle  A=40°, B=65°, a=8 cm -> b=11.28 cm, drawn to scale, and the
+//                            Cosine Rule rearranged on the drawing asserted to return A=40°;
+//   - bearings-three-figure  8 km on 070° then 6 km on 130° -> back bearing 250°, interior angle
+//                            at Q 120°, PR 12.17 km, and the Cosine Rule asserted to agree.
 //
 //   node tools/gen-mathematics-figures.mjs              # rewrites BOTH trees (author + mirror)
-//   node tools/gen-mathematics-figures.mjs <outdir>     # or writes the five SVGs into <outdir>
+//   node tools/gen-mathematics-figures.mjs <outdir>     # or writes the ten SVGs into <outdir>
 //
 // Re-running it reproduces the committed SVGs byte for byte (tools/check-figure-generators.mjs
 // is the gate on that; prove by hand with md5sum after two runs).
@@ -33,9 +46,12 @@
 //     and 18.85 in sector-and-segment and every word and every number is still taught, so the
 //     guard passes. Only a human reading the drawing against the working catches that, which is
 //     why the geometric read-back in the PR is evidence and this is not.
-//     It does NOT prove the figure shows everything the lesson teaches: trig-ratios ships
-//     LABELS ONLY in this cycle (no worked side, no worked angle, no numeric panel), so the
-//     flagship chapter's diagram is started, not finished.
+//     It does NOT prove the figure shows everything the lesson teaches: trig-ratios still ships
+//     LABELS ONLY (no worked side, no worked angle, no numeric panel), so the flagship chapter's
+//     diagram is started, not finished. Cycle 3 checked why: the "numeric panel" was a note in
+//     this file, not a promise the student ever saw — the lesson's Play tab is a drag-and-match
+//     game ("trig-circle", Match the Trig Ratios) and its `experiment.description` asks for no
+//     panel at all, so a second SVG was deliberately NOT added for it.
 //   - It cannot see a figure that renders differently in a browser than the coordinates imply
 //     (font substitution changes text width; the label boxes use a 0.52 em estimate, which is
 //     the same estimate the Physics generator has used since its first round).
@@ -693,9 +709,526 @@ ${s}
 `;
 }
 
+// ===========================================================================
+// 6. linear-programming-feasible-region.svg — cycle 3.
+//
+// The lesson's own worked example, solved rather than copied:
+//   maximise P = 3x + 2y  subject to  x + y ≤ 4,  x + 2y ≤ 6,  x ≥ 0,  y ≥ 0.
+// Every corner is found by SOLVING a pair of boundary lines and then TESTING
+// the crossing against the other two constraints — the lesson's four steps —
+// and the crossings that fail are counted, not silently dropped. The result is
+// asserted against the four corners and the four P values the lesson prints:
+//   (0,0) P=0 · (4,0) P=12 · (2,2) P=10 · (0,3) P=6, greatest 12 at (4, 0).
+// The crossings thrown away are (0,4), which breaks x + 2y ≤ 6, and (6,0),
+// which breaks x + y ≤ 4 — the lesson's first "thing that goes wrong".
+// ===========================================================================
+function linearProgrammingRegion() {
+  const LINES = [
+    ["x = 0", [1, 0, 0]],
+    ["y = 0", [0, 1, 0]],
+    ["x + y = 4", [1, 1, 4]],
+    ["x + 2y = 6", [1, 2, 6]],
+  ];
+  const feasible = ([x, y]) => x >= -1e-9 && y >= -1e-9 && x + y <= 4 + 1e-9 && x + 2 * y <= 6 + 1e-9;
+  const found = [], rejected = [];
+  for (let i = 0; i < LINES.length; i++) {
+    for (let j = i + 1; j < LINES.length; j++) {
+      const [a1, b1, c1] = LINES[i][1], [a2, b2, c2] = LINES[j][1];
+      const det = a1 * b2 - a2 * b1;
+      if (Math.abs(det) < 1e-12) continue;                       // parallel lines never cross
+      const p = [(c1 * b2 - c2 * b1) / det, (a1 * c2 - a2 * c1) / det].map((v) => Math.round(v * 1e9) / 1e9);
+      (feasible(p) ? found : rejected).push({ p, of: `${LINES[i][0]} and ${LINES[j][0]}` });
+    }
+  }
+  // the crossings the lesson names as corners, in the order it tests them
+  const TAUGHT = [[0, 0], [4, 0], [0, 3], [2, 2]];
+  const TAUGHT_P = [0, 12, 6, 10];
+  must(found.length === 4, `the four constraints must leave exactly 4 feasible corners, got ${found.length}`);
+  must(rejected.length === 2, `exactly 2 crossings must be thrown away for breaking another constraint, got ${rejected.length}`);
+  for (const [x, y] of TAUGHT) {
+    must(found.some((f) => Math.abs(f.p[0] - x) < 1e-9 && Math.abs(f.p[1] - y) < 1e-9),
+      `the corner (${x}, ${y}) the lesson prints was not produced by solving the boundary lines`);
+  }
+  const rejectedSet = rejected.map((r) => `${r.p[0]},${r.p[1]}`).sort().join(" ");
+  must(rejectedSet === "0,4 6,0", `the two discarded crossings must be (0, 4) and (6, 0), got ${rejectedSet}`);
+  const P = ([x, y]) => 3 * x + 2 * y;
+  TAUGHT.forEach((c, i) => must(P(c) === TAUGHT_P[i],
+    `P = 3x + 2y at (${c[0]}, ${c[1]}) must be ${TAUGHT_P[i]}, got ${P(c)}`));
+  const best = TAUGHT.reduce((a, b) => (P(b) > P(a) ? b : a));
+  must(P(best) === 12 && best[0] === 4 && best[1] === 0,
+    `the greatest value must be 12 at (4, 0), got ${P(best)} at (${best[0]}, ${best[1]})`);
+
+  const W = 880, H = 520;
+  const OX = 110, OY = 430, U = 70;                   // origin, and pixels per unit
+  const X = (x) => OX + U * x, Y = (y) => OY - U * y;
+  const pen = makePen();
+  const lab = makeLabeller();
+  let s = "";
+
+  // the two axes, with arrowheads
+  s += pen.line(OX, OY, 600, OY, `stroke="${LINE}" stroke-width="2.5"`);
+  s += pen.line(OX, OY, OX, 100, `stroke="${LINE}" stroke-width="2.5"`);
+  s += pen.polyline([[592, 426], [600, 430], [592, 434]], `fill="none" stroke="${LINE}" stroke-width="2.5"`);
+  s += pen.polyline([[106, 108], [110, 100], [114, 108]], `fill="none" stroke="${LINE}" stroke-width="2.5"`);
+
+  // the two boundary lines, drawn in full so the reader sees where they cross
+  s += pen.line(X(0), Y(4), X(4), Y(0), `stroke="${BLUE}" stroke-width="2.5"`);
+  s += pen.line(X(0), Y(3), X(6), Y(0), `stroke="${RED}" stroke-width="2.5"`);
+
+  // the feasible region: the polygon that survives every constraint at once
+  const ring = TAUGHT.slice().sort((p, q) => Math.atan2(p[1] - 1, p[0] - 1) - Math.atan2(q[1] - 1, q[0] - 1));
+  s += pen.polygon(ring.map(([x, y]) => [X(x), Y(y)]),
+    `fill="${GREEN_F}" stroke="${GREEN}" stroke-width="3" stroke-linejoin="round"`);
+  for (const [x, y] of TAUGHT) s += pen.circle(X(x), Y(y), 5, `fill="${INK}" stroke="none"`);
+
+  // the corners, by coordinate
+  s += lab(X(4) + 10, Y(0) + 22, "(4, 0)", { size: 12.5, w: "600" });
+  s += lab(X(2) + 14, Y(2) - 14, "(2, 2)", { size: 12.5, w: "600" });
+  s += lab(X(0) - 10, Y(3) - 6, "(0, 3)", { size: 12.5, w: "600", anchor: "end" });
+  s += lab(X(0) - 10, Y(0) + 22, "(0, 0)", { size: 12.5, w: "600", anchor: "end" });
+
+  // the axes' names
+  s += lab(612, 436, "x", { size: 14, w: "600" });
+  s += lab(120, 96, "y", { size: 14, w: "600" });
+
+  // the legend: which colour is which constraint, and the corner table
+  s += lab(620, 130, "boundary lines", { size: 13, w: "600" });
+  s += pen.line(620, 152, 652, 152, `stroke="${BLUE}" stroke-width="3"`);
+  s += lab(662, 156, "x + y = 4", { size: 12.5 });
+  s += pen.line(620, 180, 652, 180, `stroke="${RED}" stroke-width="3"`);
+  s += lab(662, 184, "x + 2y = 6", { size: 12.5 });
+  s += pen.polyline([[620, 208], [652, 208], [652, 222], [620, 222], [620, 208]],
+    `fill="${GREEN_F}" stroke="${GREEN}" stroke-width="1.6"`);
+  s += lab(662, 221, "feasible region", { size: 12.5 });
+  s += lab(620, 262, "work out P at each corner", { size: 13, w: "600" });
+  s += lab(620, 292, "(0, 0)   P = 0", { size: 12.5 });
+  s += lab(620, 316, "(4, 0)   P = 12", { size: 12.5 });
+  s += lab(620, 340, "(2, 2)   P = 10", { size: 12.5 });
+  s += lab(620, 364, "(0, 3)   P = 6", { size: 12.5 });
+  s += lab(620, 400, "greatest value is 12 at (4, 0)", { size: 12.5, w: "600", fill: BLUE });
+
+  s += lab(40, 34, "Linear programming: the feasible region", { size: 15, w: "600" });
+  s += lab(40, 52, "every constraint must hold at once: the region is what survives all the shading", { fill: MUTED, size: 12 });
+
+  assertTaught("mat-rel-linear-programming", lab.texts);
+  assertNumbersTaught("mat-rel-linear-programming", lab.texts);
+  pen.clear(lab, "linear-programming-feasible-region", W, H);
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img">
+<title>A feasible region for x + y &lt;= 4 and x + 2y &lt;= 6 with x and y not negative, shaded, with its four corners (0, 0), (4, 0), (2, 2) and (0, 3) labelled and P = 3x + 2y worked out at each</title>
+${s}
+</svg>
+`;
+}
+
+// ===========================================================================
+// 7. compass-constructions.svg — cycle 3.
+//
+// Two of the lesson's five constructions, with the ARCS left on the paper
+// (the lesson's own rule: "the arcs are the evidence that compasses were
+// used"). Nothing is measured: every crossing is COMPUTED as the intersection
+// of two circles of the same radius, and asserted to be equidistant from both
+// centres — the equal-radius reasoning the lesson calls the whole proof.
+//
+//   Panel A, the perpendicular bisector of AB:  |A|=|B|=150 about A=(110,260)
+//     and B=(350,260) cross at (230,170) and (230,350); each crossing is
+//     asserted 150 from A AND from B, and the line through them asserted
+//     perpendicular to AB and through its midpoint.
+//   Panel B, the bisector of an angle at the vertex: an arc of radius 150
+//     across both arms cuts them at P and Q; equal arcs of radius |PQ| about
+//     P and about Q cross at a point asserted to sit on the bisector, which
+//     is why the two angles at the vertex are equal.
+// ===========================================================================
+function compassConstructions() {
+  const W = 880, H = 460;
+  const pen = makePen();
+  const lab = makeLabeller();
+  let s = "";
+  const dist = (p, q) => Math.hypot(p[0] - q[0], p[1] - q[1]);
+  const ang = (c, p) => (Math.atan2(p[1] - c[1], p[0] - c[0]) * 180) / Math.PI;
+
+  // ---- panel A: the perpendicular bisector of AB -------------------------
+  const A = [110, 260], B = [350, 260], RA = 150;
+  const half = dist(A, B) / 2;
+  must(RA > half, `the compass radius ${RA} must be more than half of AB (${half}) or the arcs never cross`);
+  const h = Math.sqrt(RA * RA - half * half);
+  const mid = [(A[0] + B[0]) / 2, (A[1] + B[1]) / 2];
+  const Pc = [mid[0], mid[1] - h], Qc = [mid[0], mid[1] + h];
+  must(Math.abs(dist(A, Pc) - RA) < 1e-9 && Math.abs(dist(B, Pc) - RA) < 1e-9,
+    "the upper crossing must be the same radius from A and from B — that is the whole proof");
+  must(Math.abs(dist(A, Qc) - RA) < 1e-9 && Math.abs(dist(B, Qc) - RA) < 1e-9,
+    "the lower crossing must be the same radius from A and from B");
+  must(Math.abs((B[0] - A[0]) * (Qc[0] - Pc[0]) + (B[1] - A[1]) * (Qc[1] - Pc[1])) / (dist(A, B) * dist(Pc, Qc)) < 1e-9,
+    "the line through the two crossings must be perpendicular to AB");
+  must(Math.abs(Pc[0] - mid[0]) < 1e-9 && Math.abs(Qc[0] - mid[0]) < 1e-9,
+    "the perpendicular bisector must pass through the midpoint of AB");
+
+  s += pen.line(A[0], A[1], B[0], B[1], `stroke="${INK}" stroke-width="2.5"`);
+  s += pen.arc(A[0], A[1], RA, ang(A, Pc) - 5, ang(A, Qc) + 5, `fill="none" stroke="${MUTED}" stroke-width="1.8"`);
+  // B's arc must run through 180° (the far side of B), not the short way round the near side
+  s += pen.arc(B[0], B[1], RA, ang(B, Qc) - 5, ang(B, Pc) + 365, `fill="none" stroke="${MUTED}" stroke-width="1.8"`);
+  s += pen.line(Pc[0], Pc[1] - 20, Qc[0], Qc[1] - 10, `stroke="${BLUE}" stroke-width="2.5"`);
+  for (const p of [A, B, Pc, Qc]) s += pen.circle(p[0], p[1], 4.5, `fill="${INK}" stroke="none"`);
+
+  s += lab(40, 86, "Perpendicular bisector of AB", { size: 15, w: "600" });
+  s += lab(A[0] - 10, A[1] + 25, "A", { size: 14, w: "600", anchor: "end" });
+  s += lab(B[0] + 10, B[1] + 25, "B", { size: 14, w: "600" });
+  s += lab(Pc[0] + 18, Pc[1] - 2, "P", { size: 14, w: "600" });
+  s += lab(Qc[0] - 18, Qc[1] - 4, "Q", { size: 14, w: "600", anchor: "end" });
+  s += lab(40, 380, "arcs of equal radius from A and from B,", { size: 12, fill: MUTED });
+  s += lab(40, 402, "joined through the two crossings,", { size: 12, fill: MUTED });
+  s += lab(40, 424, "the perpendicular bisector of AB", { size: 12, fill: MUTED });
+
+  // ---- panel B: the bisector of an angle at the vertex -------------------
+  const V = [500, 320], RB = 150, OPEN = 50;              // the angle at V opens 50° wide
+  const armLen = 260;
+  const P = [V[0] + RB * Math.cos(rad(-OPEN)), V[1] + RB * Math.sin(rad(-OPEN))];
+  const Q = [V[0] + RB, V[1]];
+  const endUpper = [V[0] + armLen * Math.cos(rad(-OPEN)), V[1] + armLen * Math.sin(rad(-OPEN))];
+  const endLower = [V[0] + armLen, V[1]];
+  // equal arcs about P and about Q, set to span |PQ|, cross on the bisector
+  const RQ = dist(P, Q);
+  const pm = [(P[0] + Q[0]) / 2, (P[1] + Q[1]) / 2];
+  const perpH = Math.sqrt(RQ * RQ - (RQ / 2) * (RQ / 2));
+  const ux = (Q[0] - P[0]) / RQ, uy = (Q[1] - P[1]) / RQ;
+  const Rc = [pm[0] + perpH * uy, pm[1] - perpH * ux];     // the crossing inside the angle
+  const bisAng = ang(V, Rc);
+  must(Math.abs(bisAng + OPEN / 2) < 0.5,
+    `the crossing must sit on the bisector, ${-OPEN / 2}°, got ${bisAng.toFixed(2)}°`);
+  must(Math.abs(dist(P, Rc) - RQ) < 1e-9 && Math.abs(dist(Q, Rc) - RQ) < 1e-9,
+    "the two arcs that cross must be the same radius, taken from P and from Q");
+
+  s += pen.line(V[0], V[1], endUpper[0], endUpper[1], `stroke="${INK}" stroke-width="2.5"`);
+  s += pen.line(V[0], V[1], endLower[0], endLower[1], `stroke="${INK}" stroke-width="2.5"`);
+  s += pen.arc(V[0], V[1], RB, -OPEN, 0, `fill="none" stroke="${MUTED}" stroke-width="1.8"`);
+  s += pen.arc(P[0], P[1], RQ, ang(P, Rc) - 28, ang(P, Rc) + 28, `fill="none" stroke="${MUTED}" stroke-width="1.8"`);
+  s += pen.arc(Q[0], Q[1], RQ, ang(Q, Rc) - 28, ang(Q, Rc) + 28, `fill="none" stroke="${MUTED}" stroke-width="1.8"`);
+  s += pen.line(V[0], V[1], V[0] + 305 * Math.cos(rad(bisAng)), V[1] + 305 * Math.sin(rad(bisAng)),
+    `stroke="${BLUE}" stroke-width="2.5"`);
+  // the two equal angles the bisector makes, drawn as two equal arcs
+  s += pen.arc(V[0], V[1], 55, -OPEN, -OPEN / 2, `fill="none" stroke="${RED}" stroke-width="2"`);
+  s += pen.arc(V[0], V[1], 55, -OPEN / 2, 0, `fill="none" stroke="${RED}" stroke-width="2"`);
+  for (const p of [V, P, Q, Rc]) s += pen.circle(p[0], p[1], 4.5, `fill="${INK}" stroke="none"`);
+
+  s += lab(460, 86, "Bisector of an angle", { size: 15, w: "600" });
+  s += lab(V[0] - 22, V[1] + 26, "vertex", { size: 13, w: "600", anchor: "end" });
+  s += lab(P[0] - 14, P[1] - 12, "P", { size: 14, w: "600", anchor: "end" });
+  s += lab(Q[0] + 6, Q[1] + 26, "Q", { size: 14, w: "600" });
+  s += lab(460, 380, "arc across both arms from the vertex,", { size: 12, fill: MUTED });
+  s += lab(460, 402, "then equal arcs from the two crossings,", { size: 12, fill: MUTED });
+  s += lab(460, 424, "the bisector gives two equal angles at the vertex", { size: 12, fill: MUTED });
+
+  s += lab(40, 34, "Constructions with compasses and a straight edge", { size: 15, w: "600" });
+  s += lab(40, 52, "the arcs are the evidence that compasses were used", { fill: MUTED, size: 12 });
+
+  assertTaught("mat-geo-geometric-drawing-and-constructions", lab.texts);
+  assertNumbersTaught("mat-geo-geometric-drawing-and-constructions", lab.texts);
+  pen.clear(lab, "compass-constructions", W, H);
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img">
+<title>Two compass constructions with their arcs left on: the perpendicular bisector of AB from two equal arcs about A and B, and the bisector of an angle from an arc across both arms and two equal arcs from the crossings</title>
+${s}
+</svg>
+`;
+}
+
+// ===========================================================================
+// 8. lines-of-symmetry.svg — cycle 3.
+//
+// The counts are COMPUTED, not quoted. For each shape the generator reflects
+// every vertex across every candidate axis (through the centre and a vertex,
+// or through the centre and an edge midpoint), counts the axes that really
+// map the shape onto itself, and counts the turns that do the same. Those
+// numbers are then asserted against the lesson's own counts:
+//   square 4 lines / order 4 · equilateral triangle 3 / 3 · parallelogram 0 / 2.
+// The parallelogram is the lesson's "standard surprise": it turns onto itself
+// and it never folds onto itself, so its panel draws no axis at all.
+// ===========================================================================
+function linesOfSymmetry() {
+  const reflect = ([x, y], [ax, ay], [bx, by]) => {
+    const dx = bx - ax, dy = by - ay;
+    const t = ((x - ax) * dx + (y - ay) * dy) / (dx * dx + dy * dy);
+    const fx = ax + t * dx, fy = ay + t * dy;
+    return [2 * fx - x, 2 * fy - y];
+  };
+  const sameSet = (pts, other, tol = 0.5) =>
+    pts.every((p) => other.some((q) => Math.abs(p[0] - q[0]) < tol && Math.abs(p[1] - q[1]) < tol));
+  const symmetryOf = (pts, centre) => {
+    const dirs = [];
+    const push = (p) => {
+      const deg = ((Math.atan2(p[1] - centre[1], p[0] - centre[0]) * 180) / Math.PI + 180) % 180;
+      if (!dirs.some((d) => Math.min(Math.abs(d - deg), 180 - Math.abs(d - deg)) < 0.5)) dirs.push(deg);
+    };
+    pts.forEach(push);
+    for (let i = 0; i < pts.length; i++) {
+      const a = pts[i], b = pts[(i + 1) % pts.length];
+      push([(a[0] + b[0]) / 2, (a[1] + b[1]) / 2]);
+    }
+    const lines = dirs
+      .filter((deg) => {
+        const far = [centre[0] + 1000 * Math.cos(rad(deg)), centre[1] + 1000 * Math.sin(rad(deg))];
+        return sameSet(pts.map((p) => reflect(p, centre, far)), pts);
+      })
+      .map((deg) => ({ deg, reach: Math.max(...pts.map((p) => {
+        const t = rad(deg);
+        const proj = Math.abs((p[0] - centre[0]) * Math.cos(t) + (p[1] - centre[1]) * Math.sin(t));
+        return proj;
+      })) * 1.15 }));
+    let order = 0;
+    for (let k = 1; k <= pts.length && !order; k++) {
+      const th = (2 * Math.PI * k) / pts.length;
+      const rot = pts.map(([x, y]) => {
+        const dx = x - centre[0], dy = y - centre[1];
+        return [centre[0] + dx * Math.cos(th) - dy * Math.sin(th), centre[1] + dx * Math.sin(th) + dy * Math.cos(th)];
+      });
+      if (sameSet(rot, pts)) order = pts.length / k;
+    }
+    return { lines, order };
+  };
+
+  const poly = (cx, cy, r, n, phase) =>
+    Array.from({ length: n }, (_, i) => [cx + r * Math.cos(rad(phase + (360 * i) / n)), cy + r * Math.sin(rad(phase + (360 * i) / n))]);
+
+  const SQUARE = poly(150, 250, 78 * Math.SQRT2, 4, -135);
+  const TRIANGLE = poly(440, 250, 92, 3, -90);
+  const PARALLELOGRAM = [[640, 320], [700, 180], [820, 180], [760, 320]];
+  const SQ = symmetryOf(SQUARE, [150, 250]);
+  const TR = symmetryOf(TRIANGLE, [440, 250]);
+  const PA = symmetryOf(PARALLELOGRAM, [730, 250]);
+  must(SQ.lines.length === 4 && SQ.order === 4, `a square must have 4 lines and order 4, got ${SQ.lines.length} and ${SQ.order}`);
+  must(TR.lines.length === 3 && TR.order === 3, `an equilateral triangle must have 3 lines and order 3, got ${TR.lines.length} and ${TR.order}`);
+  must(PA.lines.length === 0 && PA.order === 2, `a parallelogram must have 0 lines and order 2, got ${PA.lines.length} and ${PA.order}`);
+
+  const W = 880, H = 440;
+  const pen = makePen();
+  const lab = makeLabeller();
+  let s = "";
+
+  const panel = (pts, centre, sym) => {
+    let out = "";
+    out += pen.polygon(pts, `fill="${BLUE_F}" stroke="${BLUE}" stroke-width="2.5" stroke-linejoin="round"`);
+    for (const { deg, reach } of sym.lines) {
+      const t = rad(deg);
+      out += pen.line(centre[0] - reach * Math.cos(t), centre[1] - reach * Math.sin(t),
+        centre[0] + reach * Math.cos(t), centre[1] + reach * Math.sin(t),
+        `stroke="${RED}" stroke-width="1.8" stroke-dasharray="7 5"`);
+    }
+    return out;
+  };
+
+  s += panel(SQUARE, [150, 250], SQ);
+  s += panel(TRIANGLE, [440, 250], TR);
+  s += panel(PARALLELOGRAM, [730, 250], PA);
+
+  s += lab(60, 112, "Square", { size: 14, w: "600" });
+  s += lab(360, 112, "Equilateral triangle", { size: 14, w: "600" });
+  s += lab(650, 112, "Parallelogram", { size: 14, w: "600" });
+
+  s += lab(150, 372, "4 lines of symmetry", { size: 13, w: "600", anchor: "middle", fill: RED });
+  s += lab(150, 394, "rotational order 4", { size: 13, anchor: "middle", fill: MUTED });
+  s += lab(440, 372, "3 lines of symmetry", { size: 13, w: "600", anchor: "middle", fill: RED });
+  s += lab(440, 394, "rotational order 3", { size: 13, anchor: "middle", fill: MUTED });
+  s += lab(730, 372, "0 lines of symmetry", { size: 13, w: "600", anchor: "middle", fill: RED });
+  s += lab(730, 394, "rotational order 2", { size: 13, anchor: "middle", fill: MUTED });
+
+  s += lab(40, 34, "Symmetry: lines of symmetry and rotational order", { size: 15, w: "600" });
+  s += lab(40, 52, "a line of symmetry is a fold; the order is how many turns land the shape on itself", { fill: MUTED, size: 12 });
+  s += lab(40, 424, "a parallelogram has rotational symmetry and no line symmetry at all", { fill: MUTED, size: 12 });
+
+  assertTaught("mat-geo-symmetry", lab.texts);
+  assertNumbersTaught("mat-geo-symmetry", lab.texts);
+  pen.clear(lab, "lines-of-symmetry", W, H);
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img">
+<title>Lines of symmetry and rotational order counted for a square (4 lines, order 4), an equilateral triangle (3 lines, order 3) and a parallelogram (0 lines, order 2)</title>
+${s}
+</svg>
+`;
+}
+
+// ===========================================================================
+// 9. sine-cosine-rules-triangle.svg — cycle 3.
+//
+// The lesson's first worked example, DRAWN TO ITS OWN NUMBERS: A = 40°,
+// B = 65°, a = 8 cm, and b = 8 × sin 65° ÷ sin 40° = 11.28 cm. The third
+// angle and side follow from the same arithmetic (75° and 12.02 cm) but the
+// lesson never prints them, so the figure leaves them unlabelled — the letters
+// A, B, C and a, b, c name them, and no number is invented.
+// The included angle at A, between sides b and c, is the one the Cosine Rule
+// uses, so it is the angle marked in red.
+// ===========================================================================
+function sineCosineRulesTriangle() {
+  const A_DEG = 40, B_DEG = 65;
+  const C_DEG = 180 - A_DEG - B_DEG;
+  const a = 8;                                                        // BC, the side opposite A
+  const b = (a * Math.sin(rad(B_DEG))) / Math.sin(rad(A_DEG));
+  const c = (a * Math.sin(rad(C_DEG))) / Math.sin(rad(A_DEG));
+  must(round2(b) === 11.28, `the lesson's b must be 11.28 cm, got ${b.toFixed(4)}`);
+  must(round1(C_DEG) === 75, `the third angle must be 75°, got ${C_DEG}`);
+  must(round2(c) === 12.02, `the third side must be 12.02 cm, got ${c.toFixed(4)}`);
+  // the cosine rule on this triangle must return the angle at A the lesson gives
+  const cosA = (b * b + c * c - a * a) / (2 * b * c);
+  must(Math.abs((Math.acos(cosA) * 180) / Math.PI - A_DEG) < 1e-6,
+    "the Cosine Rule rearranged must return A = 40° on this triangle");
+
+  const S = 24;                                                       // pixels per cm
+  const Bp = [140, 400];
+  const Cp = [Bp[0] + S * a, Bp[1]];
+  const Ax = (c * c + a * a - b * b) / (2 * a);                       // foot of A along BC from B
+  const Ay = Math.sqrt(c * c - Ax * Ax);
+  const Ap = [Bp[0] + S * Ax, Bp[1] - S * Ay];
+  const dist2 = (p, q) => Math.hypot(p[0] - q[0], p[1] - q[1]);
+  must(Math.abs(dist2(Ap, Cp) - S * b) < 1e-6, "the drawn side AC must be b at this scale");
+  must(Math.abs(dist2(Ap, Bp) - S * c) < 1e-6, "the drawn side AB must be c at this scale");
+
+  const W = 880, H = 480;
+  const pen = makePen();
+  const lab = makeLabeller();
+  let s = "";
+
+  s += pen.polygon([Ap, Bp, Cp], `fill="${BLUE_F}" stroke="${BLUE}" stroke-width="2.5" stroke-linejoin="round"`);
+
+  // the three angles, marked at their vertices
+  s += pen.arc(Ap[0], Ap[1], 40, 75, 115, `fill="none" stroke="${RED}" stroke-width="3"`);
+  s += pen.arc(Bp[0], Bp[1], 45, -65, 0, `fill="none" stroke="${INK}" stroke-width="2"`);
+  s += pen.arc(Cp[0], Cp[1], 45, 180, 255, `fill="none" stroke="${INK}" stroke-width="2"`);
+
+  // the angle letters, inside their vertices
+  s += lab(Ap[0] - 5, Ap[1] + 59, "A", { size: 14, w: "600", anchor: "middle", fill: RED });
+  s += lab(Bp[0] + 51, Bp[1] - 28, "B", { size: 14, w: "600", anchor: "middle" });
+  s += lab(Cp[0] - 48, Cp[1] - 32, "C", { size: 14, w: "600", anchor: "middle" });
+
+  // the side letters, outside their sides
+  s += lab((Bp[0] + Cp[0]) / 2, Bp[1] + 24, "a", { size: 14, w: "600", anchor: "middle" });
+  s += lab(318, 266, "b", { size: 14, w: "600" });
+  s += lab(180, 262, "c", { size: 14, w: "600", anchor: "end" });
+
+  // the two rules, and the worked example the picture is drawn from
+  s += lab(430, 140, "The Sine Rule", { size: 14, w: "600" });
+  s += lab(430, 172, "a/sin A = b/sin B = c/sin C", { size: 12.5 });
+  s += lab(430, 206, "The Cosine Rule", { size: 14, w: "600" });
+  s += lab(430, 238, "a\u00b2 = b\u00b2 + c\u00b2 \u2212 2bc cos A", { size: 12.5 });
+  s += lab(430, 264, "A is the angle between sides b and c", { size: 12.5, fill: RED });
+  s += lab(430, 306, "Worked example", { size: 14, w: "600" });
+  s += lab(430, 334, "A = 40\u00b0, B = 65\u00b0, a = 8 cm", { size: 12.5 });
+  s += lab(430, 360, "b = 8 \u00d7 sin 65\u00b0 \u00f7 sin 40\u00b0 = 11.28 cm", { size: 12.5, fill: BLUE });
+  s += lab(430, 396, "use the pair you know and the pair you want", { size: 12.5, fill: MUTED });
+
+  s += lab(40, 34, "Sine and Cosine Rules", { size: 15, w: "600" });
+  s += lab(40, 52, "two sides and the angle between them: the Cosine Rule", { fill: MUTED, size: 12 });
+
+  assertTaught("mat-geo-sine-and-cosine-rules", lab.texts);
+  assertNumbersTaught("mat-geo-sine-and-cosine-rules", lab.texts);
+  pen.clear(lab, "sine-cosine-rules-triangle", W, H);
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img">
+<title>A triangle labelled a, b, c and A, B, C with the included angle A marked between sides b and c, and the Sine Rule, the Cosine Rule and the lesson's worked example written beside it</title>
+${s}
+</svg>
+`;
+}
+
+// ===========================================================================
+// 10. bearings-three-figure.svg — cycle 3.
+//
+// The lesson's own worked example, drawn from the bearings themselves:
+//   P to Q 8 km on a bearing of 070°, then Q to R 6 km on a bearing of 130°.
+// Q and R are COMPUTED from those two bearings and distances (north = +y,
+// clockwise positive), and then three things are asserted rather than trusted:
+//   - the back bearing of 070° is 250°, which is the direction Q sees P in;
+//   - the interior angle at Q between QP and QR is 250° − 130° = 120°;
+//   - PR measures 12.17 km on the drawing, which is the lesson's answer.
+// Both north lines are drawn, because the lesson's whole method is that every
+// point has its own north line and they are all parallel.
+// ===========================================================================
+function bearingsThreeFigure() {
+  const S = 34;                                          // pixels per km
+  const P = [170, 330];
+  const qd = [8 * Math.sin(rad(70)), 8 * Math.cos(rad(70))];      // (east, north) for 070°
+  const Q = [P[0] + S * qd[0], P[1] - S * qd[1]];
+  const rd = [6 * Math.sin(rad(130)), 6 * Math.cos(rad(130))];    // (east, north) for 130°
+  const R = [Q[0] + S * rd[0], Q[1] - S * rd[1]];
+  const bearing = (from, to) => {
+    const deg = (Math.atan2(to[0] - from[0], -(to[1] - from[1])) * 180) / Math.PI;
+    return (deg + 360) % 360;
+  };
+  must(Math.abs(bearing(P, Q) - 70) < 1e-9, `P to Q must be on a bearing of 070°, got ${bearing(P, Q).toFixed(2)}`);
+  must(Math.abs(bearing(Q, R) - 130) < 1e-9, `Q to R must be on a bearing of 130°, got ${bearing(Q, R).toFixed(2)}`);
+  must(Math.abs(bearing(Q, P) - 250) < 1e-9, `the back bearing of 070° must be 250°, got ${bearing(Q, P).toFixed(2)}`);
+  const interior = bearing(Q, P) - bearing(Q, R);
+  must(round2(interior) === 120, `the interior angle at Q must be 120°, got ${interior.toFixed(2)}`);
+  const pr = Math.hypot(R[0] - P[0], R[1] - P[1]) / S;
+  must(round2(pr) === 12.17, `PR must measure 12.17 km, got ${pr.toFixed(4)}`);
+  // the Cosine Rule the lesson uses must give the same distance
+  const byRule = Math.sqrt(64 + 36 - 2 * 8 * 6 * Math.cos(rad(120)));
+  must(round2(byRule) === 12.17, `the Cosine Rule must give PR = 12.17 km, got ${byRule.toFixed(4)}`);
+
+  const W = 880, H = 440;
+  const pen = makePen();
+  const lab = makeLabeller();
+  let s = "";
+
+  // the two north lines, parallel, one at each point
+  s += pen.line(P[0], P[1], P[0], 158, `stroke="${LINE}" stroke-width="2"`);
+  s += pen.polyline([[P[0] - 4, 166], [P[0], 158], [P[0] + 4, 166]], `fill="none" stroke="${LINE}" stroke-width="2"`);
+  s += pen.line(Q[0], Q[1], Q[0], 80, `stroke="${LINE}" stroke-width="2"`);
+  s += pen.polyline([[Q[0] - 4, 88], [Q[0], 80], [Q[0] + 4, 88]], `fill="none" stroke="${LINE}" stroke-width="2"`);
+
+  // the two legs and the distance PR the lesson works out
+  s += pen.line(P[0], P[1], Q[0], Q[1], `stroke="${BLUE}" stroke-width="2.5"`);
+  s += pen.line(Q[0], Q[1], R[0], R[1], `stroke="${BLUE}" stroke-width="2.5"`);
+  s += pen.line(P[0], P[1], R[0], R[1], `stroke="${RED}" stroke-width="2" stroke-dasharray="7 5"`);
+
+  // the bearing at P, clockwise from north; the bearing at Q; the interior angle at Q
+  s += pen.arc(P[0], P[1], 70, -90, -20, `fill="none" stroke="${RED}" stroke-width="2.5"`);
+  s += pen.arc(Q[0], Q[1], 70, -90, 40, `fill="none" stroke="${RED}" stroke-width="2.5"`);
+  s += pen.arc(Q[0], Q[1], 46, 40, 160, `fill="none" stroke="${GREEN}" stroke-width="2.5"`);
+  for (const p of [P, Q, R]) s += pen.circle(p[0], p[1], 5, `fill="${INK}" stroke="none"`);
+
+  s += lab(P[0], 148, "N", { size: 13, w: "600", anchor: "middle", fill: MUTED });
+  s += lab(Q[0], 70, "N", { size: 13, w: "600", anchor: "middle", fill: MUTED });
+  s += lab(P[0] - 14, P[1] + 8, "P", { size: 14, w: "600", anchor: "end" });
+  s += lab(Q[0] + 8, Q[1] - 10, "Q", { size: 14, w: "600" });
+  s += lab(R[0] + 10, R[1] + 6, "R", { size: 14, w: "600" });
+  s += lab(223, 259, "070\u00b0", { size: 13.5, w: "600", anchor: "middle", fill: RED });
+  s += lab(512, 201, "130\u00b0", { size: 13.5, w: "600", anchor: "middle", fill: RED });
+  s += lab(412, 318, "120\u00b0", { size: 13.5, w: "600", anchor: "middle", fill: GREEN });
+  s += lab(290, 265, "8 km", { size: 13, w: "600", anchor: "middle", fill: BLUE });
+  s += lab(519, 289, "6 km", { size: 13, w: "600", anchor: "middle", fill: BLUE });
+  s += lab(376, 372, "PR = 12.17 km", { size: 13, w: "600", anchor: "middle", fill: RED });
+
+  // the working, printed the way the lesson prints it
+  s += lab(600, 140, "Worked example", { size: 14, w: "600" });
+  s += lab(600, 172, "P to Q: 8 km on a bearing of 070\u00b0", { size: 12.5 });
+  s += lab(600, 198, "Q to R: 6 km on a bearing of 130\u00b0", { size: 12.5 });
+  s += lab(600, 230, "the back bearing of 070\u00b0 is 250\u00b0", { size: 12.5 });
+  s += lab(600, 256, "interior angle at Q: 250\u00b0 \u2212 130\u00b0 = 120\u00b0", { size: 12.5, fill: GREEN });
+  s += lab(600, 288, "PR\u00b2 = 8\u00b2 + 6\u00b2 \u2212 2 \u00d7 8 \u00d7 6 \u00d7 cos 120\u00b0", { size: 12.5 });
+  s += lab(600, 314, "= 64 + 36 + 48 = 148", { size: 12.5 });
+  s += lab(600, 340, "PR = 12.17 km", { size: 12.5, w: "600", fill: RED });
+
+  s += lab(40, 34, "Bearings: north lines and the clockwise angle", { size: 15, w: "600" });
+  s += lab(40, 52, "a three-figure bearing is measured clockwise from north", { fill: MUTED, size: 12 });
+
+  assertTaught("mat-geo-bearings", lab.texts);
+  assertNumbersTaught("mat-geo-bearings", lab.texts);
+  pen.clear(lab, "bearings-three-figure", W, H);
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img">
+<title>A ship's course from P on a bearing of 070 degrees for 8 km to Q, then 130 degrees for 6 km to R, with a north line at P and at Q, the interior angle at Q of 120 degrees and PR worked out as 12.17 km</title>
+${s}
+</svg>
+`;
+}
+
 proveTaughtGuardBites();
 
 const figs = {
+  "linear-programming-feasible-region.svg": linearProgrammingRegion(),
+  "compass-constructions.svg": compassConstructions(),
+  "lines-of-symmetry.svg": linesOfSymmetry(),
+  "sine-cosine-rules-triangle.svg": sineCosineRulesTriangle(),
+  "bearings-three-figure.svg": bearingsThreeFigure(),
   "statistical-diagrams-pie.svg": statisticalDiagramsPie(),
   "ogive-readings.svg": ogiveReadings(),
   "venn-two-sets.svg": vennTwoSets(),
@@ -735,3 +1268,8 @@ console.log(`segment: sector = 60/360 x 3.142 x 36 = ${((60 / 360) * PI * 36).to
 console.log(`trig: labels only — no numeric values in this cycle, so there is no arithmetic to log`);
 console.log(`pie: total = 8 + 22 + 20 + 10 = ${8 + 22 + 20 + 10}, angles = 48 + 132 + 120 + 60 = ${48 + 132 + 120 + 60}, 8 ÷ 60 = ${(8 / 60).toFixed(3)} = 13.3%`);
 console.log(`ogive: three readings only — (44, 10), (52, 20), (61, 30) of 40; IQR = 61 - 44 = ${61 - 44}, semi = ${(61 - 44) / 2}, 30 - 10 = 20 out of 40 = ${((20 / 40) * 100)}%; no curve drawn, no endpoint invented`);
+console.log(`lp: corners solved from the boundary pairs -> (0,0) P=0, (4,0) P=${3 * 4 + 2 * 0}, (2,2) P=${3 * 2 + 2 * 2}, (0,3) P=${3 * 0 + 2 * 3}; greatest ${3 * 4 + 2 * 0} at (4, 0); (0,4) and (6,0) discarded for breaking a third constraint`);
+console.log(`constructions: two arcs of radius 150 about A and B cross ${Math.sqrt(150 * 150 - 120 * 120).toFixed(2)} above and below the midpoint, each crossing 150 from both A and B; the angle bisector's crossing sits on the bisector at ${-50 / 2}°`);
+console.log(`symmetry: square 4 lines / order 4, equilateral triangle 3 / 3, parallelogram 0 / 2 — reflected and rotated, not quoted`);
+console.log(`sine/cosine: A = 40°, B = 65°, a = 8 -> b = 8 x sin 65° ÷ sin 40° = ${((8 * Math.sin(rad(65))) / Math.sin(rad(40))).toFixed(4)} -> 11.28 cm; C = ${180 - 40 - 65}° and c = ${((8 * Math.sin(rad(75))) / Math.sin(rad(40))).toFixed(4)} cm (drawn to scale, never labelled — the lesson prints neither)`);
+console.log(`bearings: back bearing of 070° = 250°, interior angle at Q = 250° - 130° = 120°, PR = √(64 + 36 + 48) = ${Math.sqrt(148).toFixed(4)} -> 12.17 km`);
