@@ -266,7 +266,11 @@ export default function GraphingCalculator({ mode = "linear", subjectId, lessonI
           ? <p>💡 <strong>Try this:</strong> Make A negative to flip the parabola. What happens when A is 0? When C changes?</p>
           : mode === "number-line"
             ? <p>💡 <strong>Try this:</strong> The blue region shows all values that satisfy the inequality. Open circles mean the boundary is NOT included.</p>
-            : <p>💡 <strong>Try this:</strong> Set m = 2, c = 3 and see the line. What happens when m is negative? When c changes?</p>}
+            : task
+              // With a task on screen, the tip must not name m and c values of
+              // its own — they would contradict the task's answer.
+              ? <p>💡 <strong>Try this:</strong> Set m and c to match your task, then check your graph. What happens when m is negative? When c changes?</p>
+              : <p>💡 <strong>Try this:</strong> Set m = 2, c = 3 and see the line. What happens when m is negative? When c changes?</p>}
       </div>
     </div>
   );
