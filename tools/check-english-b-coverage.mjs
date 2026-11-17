@@ -8,7 +8,7 @@
 //
 // What it pins
 //   1. the doc holds the owner's 16 chapters, verbatim and in order, with 4 chapters in each of the four
-//      sections and the class totals REUSE 6 / EXTEND 7 / NEW 3;
+//      sections and the class totals REUSE 9 / EXTEND 4 / NEW 3;
 //   2. every row names a real lesson id (or, for a NEW row, an id that must still NOT exist);
 //   3. the REUSE rule: every significant word of the chapter name is in the PRIMARY host's title or
 //      `concepts` — the audit's own test for "already taught by name", so a REUSE row cannot rest on a
@@ -69,9 +69,10 @@ export const CHAPTERS = [
 export const SECTIONS = ["Drama", "Poetry", "Prose Fiction", "Literary Appreciation"];
 export const PER_SECTION = 4;
 // Slice A re-classed row 5 (EXTEND -> REUSE) because `eb-l1-1` now names "The Nature of Poetry";
-// Slice B re-classed rows 6 and 8 because `eb-l2-2` and `eb-l2-3` now name their chapters.
+// Slice B re-classed rows 6 and 8 because `eb-l2-2` and `eb-l2-3` now name their chapters;
+// Slice C re-classed rows 2, 3 and 4 because `eb-l3-1`, `eb-l3-2` and `eb-l3-3` now name theirs.
 // The totals follow the rows, they are not a target.
-export const CLASS_TOTALS = { REUSE: 6, EXTEND: 7, NEW: 3 };
+export const CLASS_TOTALS = { REUSE: 9, EXTEND: 4, NEW: 3 };
 
 // The 3 NEW ids, in row order (rows 13, 14, 16). A slice that lands one deletes it here and in the doc.
 export const PENDING_IDS = ["eb-l8-craft", "eb-l8-critical-evaluation", "eb-l8-context"];
@@ -284,20 +285,26 @@ export const RED_CONTROLS = {
   "class-flip": (st) => { editRow(st, 15, (l) => l.replace("| EXTEND |", "| REUSE |")); },
   "phrase-not-in-copy": (st) => {
     editRow(st, 4, (l) => l.replace(
-      "If it asks whether we sympathise with her, take a position and defend it with evidence from several parts of the play",
-      "If it asks whether we sympathise with her, take a position and defend it with three quotations"));
+      "an interpretation has to be built from what an audience sees and hears",
+      "an interpretation is whatever the director decides it is"));
   },
   "phrase-dropped": (st) => {
     editRow(st, 7, (l) => l.replace("Figurative language is language used beyond its literal sense.", "-"));
   },
   "reuse-host-swapped": (st) => { editRow(st, 7, (l) => l.replace("| eb-l2-1 |", "| eb-l2-2 |")); },
+  // Aimed at row 11 (`eb-l4-3`), which is still EXTEND: a primary host that starts naming its chapter
+  // must red the row. Re-aimed by Slice C — its old target (row 4 / `eb-l3-3`) became REUSE, which would
+  // have left this control guarding nothing.
   "extend-name-added": (st) => {
-    const l = st.modules.flatMap((m) => m.lessons || []).find((x) => x.id === "eb-l3-3");
-    l.concepts = [...l.concepts, "Interpreting"];
+    const l = st.modules.flatMap((m) => m.lessons || []).find((x) => x.id === "eb-l4-3");
+    l.concepts = [...l.concepts, "Interpreting", "Language", "Meaning"];
   },
+  // Aimed at row 10, the only still-EXTEND row with more than one host: a SECONDARY host that names the
+  // chapter must red the row. Row 10's name is the American-spelling exception, so completing it also
+  // trips the spelling assertion in section 7 — both failures are real.
   "extend-secondary-names-it": (st) => {
-    const l = st.modules.flatMap((m) => m.lessons || []).find((x) => x.id === "eb-l3-1");
-    l.concepts = [...l.concepts, "Plot", "Structure", "Dramatic", "Techniques"];
+    const l = st.modules.flatMap((m) => m.lessons || []).find((x) => x.id === "eb-l4-2");
+    l.concepts = [...l.concepts, "Analyzing", "Prose", "Elements"];
   },
   "pending-id-landed": (st) => {
     st.modules[0].lessons.push({ id: "eb-l8-craft", title: "Author's Craft and Reader Influence", content: "x", concepts: ["Craft"] });

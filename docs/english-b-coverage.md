@@ -6,7 +6,7 @@ chapters across 4 sections). Formal audit: `/home/team/shared/english-b-coverage
 Machine-checked by `tools/check-english-b-coverage.mjs` — **this table is parsed by that harness**, so the
 columns below are a contract, not decoration.
 
-**Headline after Slice B: 16 chapters = REUSE 6 + EXTEND 7 + NEW 3** against the 24 shipped lessons in 7 modules (Slice A closed rows 1, 5 and 9 in `eb-l1-1`; Slice B closed rows 6 and 8 in `eb-l2-2` and `eb-l2-3`).
+**Headline after Slice C: 16 chapters = REUSE 9 + EXTEND 4 + NEW 3** against the 24 shipped lessons in 7 modules (Slice A closed rows 1, 5 and 9 in `eb-l1-1`; Slice B closed rows 6 and 8 in `eb-l2-2` and `eb-l2-3`; Slice C closed rows 2, 3 and 4 in `eb-l3-1`, `eb-l3-2` and `eb-l3-3`).
 End state: **8 modules, 27 lessons** (the 3 NEW ids are still pending — see below).
 13 of the 16 chapters are already taught **under other names**: this is a *naming* gap, not a teaching
 gap, so most of the build is by-name work inside lessons that already exist.
@@ -48,7 +48,9 @@ plus a phrase for the substance it does teach.
   ("The Nature of Poetry") flipped `EXTEND` → `REUSE` in the same PR, because its name now exists — that is
   the ledger's own rule, not a re-class to make the harness green. **Slice B landed 2026-11-17:** rows 6 and 8
   flipped `EXTEND` → `REUSE` by the same rule, because `eb-l2-2` now names "Poetic Form and Structure" and
-  `eb-l2-3` now names "Critical Interpretation of Poetry".
+  `eb-l2-3` now names "Critical Interpretation of Poetry". **Slice C landed 2026-11-17:** rows 2, 3 and 4
+  flipped `EXTEND` → `REUSE` by the same rule, because `eb-l3-1`, `eb-l3-2` and `eb-l3-3` now name
+  "Developing Dramatic Elements", "Plot Structure and Dramatic Techniques" and "Interpreting Drama".
 - **D-3 — Paper 2 for the `eb-l8-*` lessons: YES, as a separate PR after Slice G. OWNER-CONFIRMED
   2026-11-05.** It moves the `check-paper2.mjs` pin (9 items / 265 marks) together with the new items.
   **No slice of the coverage build adds a Paper 2 item.**
@@ -75,9 +77,9 @@ no later slice "fixes" the number back.)* The pinned British/CXC spelling baseli
 | # | chapter | section | class | host lesson id | evidence phrase |
 |---|---|---|---|---|---|
 | 1 | Drama as a Genre | Drama | REUSE | eb-l1-1, eb-l3-1 | Drama is the genre written to be performed, and that one fact decides what you can say about it |
-| 2 | Developing Dramatic Elements | Drama | EXTEND | eb-l3-1 | exposition introduces the situation and characters, rising action builds complications, the climax is the point of greatest tension |
-| 3 | Plot Structure and Dramatic Techniques | Drama | EXTEND | eb-l3-2, eb-l3-1 | A play usually carries several conflicts at once, with one dominating the main plot and others running through subplots. |
-| 4 | Interpreting Drama | Drama | EXTEND | eb-l3-3 | If it asks whether we sympathise with her, take a position and defend it with evidence from several parts of the play |
+| 2 | Developing Dramatic Elements | Drama | REUSE | eb-l3-1 | a subplot develops the main action by echoing it in a smaller key |
+| 3 | Plot Structure and Dramatic Techniques | Drama | REUSE | eb-l3-2, eb-l3-1 | Plot structure is the shape of the action |
+| 4 | Interpreting Drama | Drama | REUSE | eb-l3-3 | an interpretation has to be built from what an audience sees and hears |
 | 5 | The Nature of Poetry | Poetry | REUSE | eb-l1-1 | it compresses an experience into a handful of lines, so every word carries more weight than the same word would carry in prose |
 | 6 | Poetic Form and Structure | Poetry | REUSE | eb-l2-2 | how many stanzas there are, how long each one runs, where the lines break, where the poem turns, and what repeats |
 | 7 | Figurative Language and Poetic Devices | Poetry | REUSE | eb-l2-1 | Figurative language is language used beyond its literal sense. |
@@ -91,7 +93,7 @@ no later slice "fixes" the number back.)* The pinned British/CXC spelling baseli
 | 15 | Structured Literary Response | Literary Appreciation | EXTEND | eb-l6-1 | Each body paragraph should begin with a topic sentence that makes a point, then quote or describe evidence, then explain the effect and link back to the question. |
 | 16 | Context and Shared Human Experience | Literary Appreciation | NEW | eb-l8-context | - |
 
-**Tally: 16 = REUSE 6 (1, 5, 6, 7, 8, 9) + EXTEND 7 (2, 3, 4, 10, 11, 12, 15) + NEW 3 (13, 14, 16).**
+**Tally: 16 = REUSE 9 (1, 2, 3, 4, 5, 6, 7, 8, 9) + EXTEND 4 (10, 11, 12, 15) + NEW 3 (13, 14, 16).**
 Sections: Drama 4 · Poetry 4 · Prose Fiction 4 · Literary Appreciation 4.
 
 ## Pending ids
