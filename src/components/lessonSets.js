@@ -2430,6 +2430,53 @@ export const lessonSets = {
       { id: "cs6", label: "The second story has a surprise at the end.", category: "summarises" },
     ],
     },
+    // Craft and Effect - match each choice a writer makes to what it does to the reader.
+    "eb-l8-craft": {
+    title: "Craft and Effect",
+    subtitle: "Match each choice a writer makes to the effect it has on the reader.",
+    kind: "match",
+    pairs: [
+      { id: "cr1", target: "A yard described as a sea rather than as a field", label: "The reader sees the place as vast and impossible to manage" },
+      { id: "cr2", target: "Three short sentences in a row while the child runs", label: "The reader is hurried along at the character's own pace" },
+      { id: "cr3", target: "A first-person narrator who admits she did not understand", label: "The reader works out the truth before the narrator does" },
+      { id: "cr4", target: "The reason for a quarrel held back until the last page", label: "The reader waits, and re-reads earlier scenes in a new light" },
+      { id: "cr5", target: "One long sentence that will not end in the middle of grief", label: "The reader feels a grief that cannot be got through quickly" },
+      { id: "cr6", target: "Hard consonants repeated in a line about a storm", label: "The reader hears the storm as well as seeing it" },
+    ],
+    },
+    // Describe, Analyse or Evaluate? - sort each sentence by the move it makes.
+    "eb-l8-critical-evaluation": {
+    title: "Describe, Analyse or Evaluate?",
+    subtitle: "Sort each sentence from a literature answer by the move it makes.",
+    kind: "sort",
+    categories: [
+      { id: "desc", label: "Description" },
+      { id: "anal", label: "Analysis" },
+      { id: "eval", label: "Evaluation" },
+    ],
+    items: [
+      { id: "ce1", label: "The novel is set in a village in the hills.", category: "desc" },
+      { id: "ce2", label: "The writer repeats the word 'stone' four times in the passage.", category: "desc" },
+      { id: "ce3", label: "The repetition of 'stone' makes the house feel older than the people in it.", category: "anal" },
+      { id: "ce4", label: "Short sentences hurry the reader through the quarrel at the speakers' pace.", category: "anal" },
+      { id: "ce5", label: "The ending is unearned, because the change arrives without a cause the story has shown.", category: "eval" },
+      { id: "ce6", label: "This is the strongest scene in the book: it earns its length.", category: "eval" },
+    ],
+    },
+    // Context Clues - match each kind of context to the question it lets you answer.
+    "eb-l8-context": {
+    title: "Context Clues",
+    subtitle: "Match each kind of context to the question about the text it lets you answer.",
+    kind: "match",
+    pairs: [
+      { id: "cx1", target: "The history of the period the text was written in", label: "Why a scene assumes the reader already knows what the danger is" },
+      { id: "cx2", target: "The work, food and money the characters deal with", label: "What the details of daily life say about the family's standing" },
+      { id: "cx3", target: "The ideas about family and authority the first readers held", label: "Why a character's defiance would have been read differently then" },
+      { id: "cx4", target: "The writer's own life", label: "A trap: explaining the text by the life instead of the words" },
+      { id: "cx5", target: "The reader's own place and time", label: "Where your assumptions can get in the way of the text's" },
+      { id: "cx6", target: "An experience every reader recognises, such as grief or leaving home", label: "Why a text from another country still lands on you" },
+    ],
+    },
   },
   // ------------------------------------------- CLOTHING, TEXTILE AND FASHION
   "clothing-textile-and-fashion": {
