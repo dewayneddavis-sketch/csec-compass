@@ -28,6 +28,15 @@
 .gc-canvas-wrap { display: flex; justify-content: center; }
 .gc-canvas { background: #fafafa; border: 1px solid #e5e7eb; border-radius: 12px; max-width: 100%; height: auto; }
 .gc-tips { background: #eff6ff; border: 1px solid #bfdbfe; padding: 0.75rem 1rem; border-radius: 10px; font-size: 0.85rem; color: #1e40af; }
+/* The graph task: the question the student's graph has to answer, and the
+   button that grades it. Only the three graphing lessons render it. */
+.gc-task { background: #f5f3ff; border: 1px solid #ddd6fe; border-radius: 10px; padding: 0.75rem 1rem; }
+.gc-prompt { margin: 0; font-size: 0.95rem; color: #4c1d95; }
+.gc-task-count { margin: 0.25rem 0 0; font-size: 0.8rem; color: #6d28d9; }
+.gc-task-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.gc-check, .gc-next { border-radius: 8px; padding: 0.5rem 1rem; font-size: 0.9rem; cursor: pointer; border: 1px solid #2563eb; }
+.gc-check { background: #2563eb; color: #fff; }
+.gc-next { background: #fff; color: #2563eb; }
 
 /* Drag & Drop */
 .drag-drop { display: flex; flex-direction: column; gap: 1rem; }

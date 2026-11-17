@@ -123,9 +123,11 @@ function resolveInteractive(subjectId, experimentType, lessonId) {
       return <DragDropLabel subjectId="mathematics" experimentType={t} lessonId={lessonId} />;
     }
     if (MATH_DRAG_TYPES.has(t)) return <DragDropLabel subjectId="mathematics" experimentType={t} />;
-    if (MATH_LINEAR_TYPES.has(t)) return <GraphingCalculator mode="linear" />;
-    if (MATH_PARABOLA_TYPES.has(t)) return <GraphingCalculator mode="parabola" />;
-    if (MATH_NUMBERLINE_TYPES.has(t)) return <GraphingCalculator mode="number-line" />;
+    // The graphing lessons get their question from src/data/graphingTasks.js,
+    // keyed by lessonId — so the calculator needs to know which lesson it is on.
+    if (MATH_LINEAR_TYPES.has(t)) return <GraphingCalculator mode="linear" subjectId="mathematics" lessonId={lessonId} />;
+    if (MATH_PARABOLA_TYPES.has(t)) return <GraphingCalculator mode="parabola" subjectId="mathematics" lessonId={lessonId} />;
+    if (MATH_NUMBERLINE_TYPES.has(t)) return <GraphingCalculator mode="number-line" subjectId="mathematics" lessonId={lessonId} />;
     if (MATH_AREA_TYPES.has(t)) return <AreaBuilder />;
     if (MATH_VOLUME_TYPES.has(t)) return <VolumeFiller />;
     if (MATH_BALANCE_TYPES.has(t)) return <BalanceScale subjectId="mathematics" experimentType={t} />;
