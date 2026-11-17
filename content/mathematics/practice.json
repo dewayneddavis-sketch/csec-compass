@@ -1829,7 +1829,7 @@
    "4,800"
   ],
   "answer": "2,400",
-  "explanation": "Step 1 — Scale the sample result up to the size of the population: the school is 800 ÷ 50 = 16 times the sample.\nStep 2 — Multiply the sample mean by that factor: 3 × 16.\nStep 3 — 3 × 16 = 48 per group of 50, so the total is 3 × 800 ÷ 50 = 48 × 50 = 2,400.\nStep 4 — The estimate is 2,400 textbooks, and it is an estimate rather than an exact count because it comes from a sample.",
+  "explanation": "Step 1 — The sample mean estimates the mean for the whole school, so take 3 textbooks per student as the working figure.\nStep 2 — The school has 800 students, so multiply that mean by the size of the population: 3 × 800.\nStep 3 — 3 × 800 = 2,400 textbooks.\nStep 4 — The estimate is 2,400 textbooks, and it is an estimate rather than an exact count because it comes from a sample.",
   "topic": "mat-stat-statistical-inference"
  },
  {
