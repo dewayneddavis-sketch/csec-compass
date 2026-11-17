@@ -182,19 +182,6 @@
     "topic": "eb-l1-3"
   },
   {
-    "id": "p18",
-    "question": "A student writes: 'This poem is about a fisherman who loses his boat.' The student has identified:",
-    "options": [
-      "The theme",
-      "The subject",
-      "The writer's purpose",
-      "The tone"
-    ],
-    "answer": "The subject",
-    "explanation": "Naming what the text is about describes the subject; the theme would be the idea drawn from the loss, such as grief.",
-    "topic": "eb-l1-3"
-  },
-  {
     "id": "p19",
     "question": "'Her voice was like gravel on a road' is an example of:",
     "options": [
@@ -621,7 +608,7 @@
     ],
     "answer": "Take a position and defend it with evidence from across the play",
     "explanation": "A judgement question needs a position, evidence from several parts of the play, and an answer to the counter-argument.",
-    "topic": "eb-l3-3"
+    "topic": "eb-l8-critical-evaluation"
   },
   {
     "id": "p55",
@@ -1128,7 +1115,7 @@
     ],
     "answer": "The effect of specific words",
     "explanation": "Analysing why the writer chose 'sea' rather than 'field' is what moves an answer into the top band.",
-    "topic": "eb-l6-2"
+    "topic": "eb-l8-craft"
   },
   {
     "id": "p94",
@@ -1298,5 +1285,18 @@
     "answer": "Both writers use a child's silence as loyalty, whereas in one story that silence becomes fear.",
     "explanation": "A comparative sentence names both stories and states a relationship between them (both ... whereas). The other options report what happens in one story only.",
     "topic": "eb-l7-6"
+  },
+  {
+    "id": "p107",
+    "question": "The strongest use of context in an essay about a literary text is to:",
+    "options": [
+      "Explain the writer's life and let that stand for the text",
+      "Explain what a detail of the text is doing in the world it came from",
+      "Replace the words of the text with historical background",
+      "Judge a text from another century by the assumptions of this one"
+    ],
+    "answer": "Explain what a detail of the text is doing in the world it came from",
+    "explanation": "Context is evidence, so it explains a detail that is actually on the page. Explaining the text by the writer's life is the biographical fallacy, and background that replaces the words is not analysis at all.",
+    "topic": "eb-l8-context"
   }
 ]

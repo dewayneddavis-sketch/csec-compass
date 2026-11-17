@@ -117,19 +117,6 @@
     "topic": "eb-l3-2"
   },
   {
-    "id": "kc14",
-    "question": "The audience knows a character's plan will fail, but he does not. This is:",
-    "options": [
-      "Foreshadowing",
-      "Dramatic irony",
-      "Falling action",
-      "Juxtaposition"
-    ],
-    "answer": "Dramatic irony",
-    "explanation": "Dramatic irony depends on the gap between the audience's knowledge and the character's.",
-    "topic": "eb-l3-2"
-  },
-  {
     "id": "kc15",
     "question": "A character's motivation is:",
     "options": [
@@ -221,32 +208,6 @@
     "topic": "eb-l5-3"
   },
   {
-    "id": "kc24",
-    "question": "An introduction should:",
-    "options": [
-      "Summarise the plot",
-      "Name the text and writer and state your line of argument",
-      "List all the characters",
-      "Quote the longest line"
-    ],
-    "answer": "Name the text and writer and state your line of argument",
-    "explanation": "The introduction sets up the argument that the body paragraphs will develop.",
-    "topic": "eb-l6-1"
-  },
-  {
-    "id": "kc25",
-    "question": "Which approach best answers a 'discuss' question?",
-    "options": [
-      "Give one fact",
-      "Present a balanced argument and reach a judgement",
-      "Retell the story",
-      "List quotations"
-    ],
-    "answer": "Present a balanced argument and reach a judgement",
-    "explanation": "Discuss requires both sides and a conclusion, supported by evidence.",
-    "topic": "eb-l6-3"
-  },
-  {
     "id": "kc26",
     "question": "In Twelfth Night, Olivia falls in love with:",
     "options": [
@@ -323,5 +284,44 @@
     "answer": "A few words woven into your own sentence, followed by an explanation of their effect",
     "explanation": "Short quotations embedded in your own sentence keep the argument moving; the marks come from what you say the words do, not from how many you can remember. This item fills the knowledge-check coverage gap on quotations and evidence (eb-l6-2).",
     "topic": "eb-l6-2"
+  },
+  {
+    "id": "kc32",
+    "question": "In an answer about author's craft, the EFFECT of a choice is:",
+    "options": [
+      "The device the writer used",
+      "What the choice does to the reader's understanding or feeling",
+      "The theme the text explores",
+      "The number of times the device appears"
+    ],
+    "answer": "What the choice does to the reader's understanding or feeling",
+    "explanation": "Technique is the choice the writer made, effect is what it does to the reader, and theme is the idea the effect serves. A paragraph that stops at the technique is only a list of devices.",
+    "topic": "eb-l8-craft"
+  },
+  {
+    "id": "kc33",
+    "question": "An evaluation of a literary text differs from an analysis of it because an evaluation:",
+    "options": [
+      "Describes what happens in the passage",
+      "Judges how well the text works against a named criterion",
+      "Lists the devices the writer uses",
+      "Summarises the plot in order"
+    ],
+    "answer": "Judges how well the text works against a named criterion",
+    "explanation": "Description says what is there, analysis says how it works, evaluation says whether it works - and names the criterion so that another reader could argue with the judgement.",
+    "topic": "eb-l8-critical-evaluation"
+  },
+  {
+    "id": "kc34",
+    "question": "A poem written a hundred years ago on another island can still land on a reader in Jamaica because:",
+    "options": [
+      "Its context is the same as the reader's",
+      "Some human experiences cross every context, though the text handles them in its own way",
+      "Context never matters to meaning",
+      "The reader's own context replaces the text's"
+    ],
+    "answer": "Some human experiences cross every context, though the text handles them in its own way",
+    "explanation": "Shared human experience - grief, poverty, leaving home - is why the text still lands; the particular way this text handles it belongs to its own place and time, and saying what that difference is earns the higher mark.",
+    "topic": "eb-l8-context"
   }
 ]

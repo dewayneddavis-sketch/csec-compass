@@ -21,14 +21,16 @@
 //   3. every lesson declares an experiment OBJECT whose type is one of the 8 English B lab types;
 //   4. metadata.estimatedModules tracks the real module count (the IT Slice C trap);
 //   5. the module list is eb-mod-1..N in order, each module holding at least one lesson;
-//   6. the 24 shipped lesson ids keep their original relative order and their set `kind` — id and kind
-//      are identity, exactly like a lesson id (a new lesson is APPENDED, never interleaved);
+//   6. the banked lesson ids (the 24 that shipped before the coverage build, plus the three `eb-l8-*`
+//      appended by Slice F) keep their tree order and their set `kind` — id and kind are identity,
+//      exactly like a lesson id (a new lesson is APPENDED, never interleaved);
 //   7. routing: the english-b branch resolves by lessonId BEFORE the generic lessonSets[subjectId]
 //      fallback, and passes lessonId through to DragDropLabel;
 //   8. the banks: practice exactly 100, knowledge check exactly 25, every question tagged with a real
 //      lesson id, every shipped lesson still drilled by practice AND still holding its knowledge-check
-//      item (the KC loop is relaxed, never deleted, at Slice G — see D-1), the comparative-essay retag
-//      intact, and the 12 retired ids still unused;
+//      item — except the two lessons D-1 leaves without one, which are NAMED in KC_EXEMPT below and
+//      asserted to hold none (the KC loop is relaxed, never deleted, at Slice G — see D-1), the
+//      comparative-essay retag intact, and the retired ids still unused;
 //   9. content/english-b/* and public/content/english-b/* are byte-identical, file for file.
 //
 // Usage
@@ -56,8 +58,14 @@ const MIRROR_DIR = `public/content/${SUBJECT}`;
 export const EB_TYPES = ["matching-game", "highlight-tool", "drag-drop", "vocab-flashcards",
   "plot-arranger", "outliner", "sentence-fixer", "interactive-quiz"];
 
-// The 24 ids that shipped before the coverage build, in tree order, and the `kind` each set ships with.
-// Both are IDENTITY: a slice may append lessons and sets, never rename, re-key, reorder or re-kind these.
+// Every lesson the banks must cover, in tree order, and the `kind` each set ships with. Both are
+// IDENTITY: a slice may append lessons and sets, never rename, re-key, reorder or re-kind these.
+//
+// The first 24 ids shipped before the coverage build. The last three were APPENDED by Slice F (module 8)
+// and frozen by Slice G in the same edit that gave them their first practice and knowledge-check items:
+// the per-lesson bank loops below iterate THIS list, so a lesson that gains items without joining it
+// would sit in the bank unchecked forever, and joining it without items fails loudly. Both halves are
+// asserted; that is the trap this list exists to spring.
 export const FROZEN_ORDER = [
   "eb-l1-1", "eb-l1-2", "eb-l1-3",
   "eb-l2-1", "eb-l2-2", "eb-l2-3",
@@ -66,6 +74,7 @@ export const FROZEN_ORDER = [
   "eb-l5-1", "eb-l5-2", "eb-l5-3",
   "eb-l6-1", "eb-l6-2", "eb-l6-3",
   "eb-l7-1", "eb-l7-2", "eb-l7-3", "eb-l7-4", "eb-l7-5", "eb-l7-6",
+  "eb-l8-craft", "eb-l8-critical-evaluation", "eb-l8-context",
 ];
 export const FROZEN_KINDS = {
   "eb-l1-1": "match", "eb-l1-2": "sort", "eb-l1-3": "match",
@@ -76,11 +85,21 @@ export const FROZEN_KINDS = {
   "eb-l6-1": "order", "eb-l6-2": "match", "eb-l6-3": "match",
   "eb-l7-1": "order", "eb-l7-2": "match", "eb-l7-3": "match",
   "eb-l7-4": "sort", "eb-l7-5": "match", "eb-l7-6": "sort",
+  "eb-l8-craft": "match", "eb-l8-critical-evaluation": "sort", "eb-l8-context": "match",
 };
+
+// D-1 (owner-confirmed 2026-11-05): the knowledge check stays EXACTLY 25 while the subject has 27
+// lessons, so exactly two lessons carry no knowledge-check item. They are named here, and naming them is
+// the whole point: the KC loop below is RELAXED for these two ids and for nothing else — no blanket
+// `if (kc.length > 0)`, no `>=` — and each one is asserted to be a real lesson that holds NO item, so the
+// exemption cannot rot into a hole when a later slice gives one of them an item. Both lessons teach how
+// to PLAN AND WRITE an essay rather than a body of examinable literary knowledge; each keeps all five of
+// its practice questions, which test that procedure step by step.
+export const KC_EXEMPT = ["eb-l6-1", "eb-l6-3"];
 
 // Retired bank ids. Never reused, whatever the re-balance does.
 export const RETIRED_IDS = ["p6", "p11", "p17", "p24", "p42", "p48",
-  "kc1", "kc4", "kc6", "kc9", "kc16", "kc18"];
+  "kc1", "kc4", "kc6", "kc9", "kc14", "kc16", "kc18", "kc24", "kc25"];
 
 // ---------------------------------------------------------------------------------------------
 // state: everything the checks read, loaded once and mutated by the red controls
@@ -180,12 +199,14 @@ export function runChecks(st) {
   for (const m of st.modules) check((m.lessons || []).length >= 1, `${m.id}: holds at least one lesson`);
 
   // ---------------------------------------------------------------- 6. frozen ids and kinds
-  section("6. the 24 shipped lessons keep their order and their set kind");
+  section("6. the banked lessons keep their tree order and their set kind");
   const shippedInOrder = lessonIds.filter((id) => FROZEN_ORDER.includes(id));
   check(JSON.stringify(shippedInOrder) === JSON.stringify(FROZEN_ORDER),
-    `the 24 shipped ids keep their original relative order (got ${shippedInOrder.length})`);
-  for (const id of FROZEN_ORDER) check(!!byId[id], `shipped lesson ${id} is still present`);
+    `the ${FROZEN_ORDER.length} banked ids keep their tree order (got ${shippedInOrder.length})`);
+  for (const id of FROZEN_ORDER) check(!!byId[id], `banked lesson ${id} is still present`);
   check(new Set(lessonIds).size === lessonIds.length, "no duplicate lesson id");
+  check(FROZEN_ORDER.length === lessonIds.length,
+    `every lesson in modules.json is banked (FROZEN_ORDER ${FROZEN_ORDER.length}, lessons ${lessonIds.length})`);
   for (const id of FROZEN_ORDER) {
     const set = sets[id];
     check(!!set && set.kind === FROZEN_KINDS[id],
@@ -204,7 +225,7 @@ export function runChecks(st) {
     "the english-b branch is reached before the generic lessonSets[subjectId] fallback");
 
   // ---------------------------------------------------------------- 8. banks
-  section("8. the banks are intact and every shipped lesson is still drilled");
+  section("8. the banks are intact and every banked lesson is still drilled");
   check(st.practice.length === 100, `practice bank is exactly 100 (has ${st.practice.length})`);
   check(st.kc.length === 25, `knowledge check is exactly 25 (has ${st.kc.length})`);
   const byTopic = (list) => list.reduce((a, q) => { a[q.topic] = (a[q.topic] || 0) + 1; return a; }, {});
@@ -212,21 +233,32 @@ export function runChecks(st) {
   check(st.practice.every((q) => !!byId[q.topic]), "every practice topic is a real lesson id");
   check(st.kc.every((q) => !!byId[q.topic]), "every knowledge-check topic is a real lesson id");
   for (const id of FROZEN_ORDER) check((pTopic[id] || 0) >= 1, `${id}: still has at least one practice question`);
-  // The KC half of the same "keeps" guard, exactly the shape of the practice loop above. Without it a
-  // re-tag that moves a shipped lesson's only KC item onto another lesson is invisible: kc.length stays
-  // 25, every topic stays a real lesson id, and §8 is silent. It holds today (25 items over 24 topics,
-  // eb-l3-2 holding two).
+  // The KC half of the same "keeps" guard, RELAXED at Slice G for exactly the ids named in KC_EXEMPT and
+  // for nothing else. Without the loop a re-tag that moves a lesson's only KC item onto another lesson is
+  // invisible: kc.length stays 25, every topic stays a real lesson id, and §8 is silent.
   //
-  // MUST BE RELAXED AT SLICE G, NOT DELETED. D-1 (owner-confirmed 2026-11-05) retires three KC items
-  // with written reasons to keep the check at exactly 25 across 27 lessons, which leaves two lessons
-  // with no KC item at all. Those two are named in the Slice G ledger (docs/english-b-coverage.md); at
-  // that point this loop skips exactly those two ids. Deleting it instead would let any shipped lesson
-  // silently lose its item again.
+  // D-1 (owner-confirmed 2026-11-05) keeps the check at exactly 25 across 27 lessons, so exactly two
+  // lessons hold no KC item. Each of those ids is asserted to exist, to be banked, and to hold NO item —
+  // the last of those is what stops the exemption becoming a hole: give an exempt lesson an item and this
+  // assertion reds (control `exempt-lesson-has-kc` proves it, pinned by RED_EXPECT). A blanket
+  // `if (kc.length > 0)` or a `>=` would have been a deletion in disguise; this is not one.
   //
   // This replaces `check(st.kc.length > 0 && Object.keys(kTopic).length >= 1, "the knowledge check still
   // tags topics")`, which could never fail: §8 already pins kc.length === 25 and every KC topic to a
   // real lesson id, so it asserted nothing.
-  for (const id of FROZEN_ORDER) check((kTopic[id] || 0) >= 1, `${id}: still has at least one knowledge-check item`);
+  check(KC_EXEMPT.length === 2, `exactly two lessons are exempt from the knowledge check (KC_EXEMPT has ${KC_EXEMPT.length})`);
+  for (const id of KC_EXEMPT) {
+    check(!!byId[id], `${id}: KC-exempt lesson is a real lesson id`);
+    check(FROZEN_ORDER.includes(id), `${id}: KC-exempt lesson is banked (it is in FROZEN_ORDER)`);
+    check(!(kTopic[id] > 0), `${id}: is KC-exempt, so it holds no knowledge-check item (has ${kTopic[id] || 0})`);
+  }
+  for (const id of FROZEN_ORDER) {
+    if (KC_EXEMPT.includes(id)) continue;
+    check((kTopic[id] || 0) >= 1, `${id}: still has at least one knowledge-check item`);
+  }
+  const noKc = lessonIds.filter((id) => !(kTopic[id] > 0));
+  check(noKc.length === KC_EXEMPT.length && noKc.every((id) => KC_EXEMPT.includes(id)),
+    `exactly ${KC_EXEMPT.length} lessons carry no knowledge-check item (found ${noKc.length}: ${noKc.join(", ") || "none"})`);
   check(st.practice.filter((q) => q.id === "p35").length === 1 && (pTopic["eb-l7-3"] || 0) >= 2,
     "the comparative-essay item was retagged onto eb-l7-3 (retag before you retire)");
   const liveIds = new Set([...st.practice, ...st.kc].map((q) => q.id));
@@ -284,33 +316,66 @@ export const RED_CONTROLS = {
   "kc-lost-for-lesson": (st) => { for (const q of st.kc) if (q.topic === "eb-l7-4") q.topic = "eb-l7-3"; },
   "retired-id-reused": (st) => { st.practice.push({ ...st.practice[0], id: "p6" }); },
   "p35-retag-lost": (st) => { st.practice = st.practice.filter((q) => q.id !== "p35"); },
+  // Aimed at the KC exemption's staleness assertion: an exemption list that is never checked for
+  // staleness is a future blind spot, so GIVING an exempt lesson a knowledge-check item must red. The
+  // clone also pushes kc.length to 26, which trips the totals line — that is exactly why RED_EXPECT pins
+  // this control to the exemption's own message instead of accepting "something failed".
+  "exempt-lesson-has-kc": (st) => {
+    const src = st.kc.find((q) => q.topic !== KC_EXEMPT[0]) || st.kc[0];
+    st.kc.push({ ...src, id: "kc99", topic: KC_EXEMPT[0] });
+  },
+  // Aimed at the practice half of the same guard: a banked lesson with no practice question must red.
+  // It is the Slice G trap in reverse — the three new lessons were added to FROZEN_ORDER, so losing one
+  // of their items can no longer pass unnoticed.
+  "practice-lost-for-new-lesson": (st) => { st.practice = st.practice.filter((q) => q.topic !== "eb-l8-craft"); },
   "mirror-drift": (st) => { st.mirrors["modules.json"].mirror = st.mirrors["modules.json"].mirror + " "; },
   "mirror-file-missing": (st) => { st.mirrors["sba.json"].mirror = null; },
 };
+
+// ---------------------------------------------------------------------------------------------
+// What each control must be caught BY. A control that synthesises state can trip more than one
+// assertion at once, so "some failure appeared" is not proof that the assertion the control is FOR still
+// checks anything. Where a control is listed here, the run only passes if that assertion's own message is
+// among the failures; otherwise it is reported CAUGHT BY THE WRONG ASSERTION and the run fails.
+export const RED_EXPECT = {
+  "exempt-lesson-has-kc": `is KC-exempt, so it holds no knowledge-check item`,
+  "practice-lost-for-new-lesson": "eb-l8-craft: still has at least one practice question",
+};
+
+// ---------------------------------------------------------------------------------------------
+/** Run one control against a fresh load. ok = it was caught, and caught by the assertion it names. */
+function runControl(name) {
+  const st = loadState();
+  RED_CONTROLS[name](st);
+  const { failures } = runChecks(st);
+  const real = failures.filter((f) => !f.startsWith("\u0000"));
+  if (!real.length) return { ok: false, real, why: "WAS NOT CAUGHT — the check is blind to it" };
+  const expect = RED_EXPECT[name];
+  if (expect && !real.some((f) => f.includes(expect)))
+    return { ok: false, real, why: `CAUGHT BY THE WRONG ASSERTION — no failure containing "${expect}"` };
+  const aimed = expect ? real.filter((f) => f.includes(expect)) : real;
+  return { ok: true, real: aimed.length ? aimed : real };
+}
 
 // ---------------------------------------------------------------------------------------------
 const argv = process.argv.slice(2);
 if (argv.includes("--red-control")) {
   const name = argv[argv.indexOf("--red-control") + 1];
   if (!RED_CONTROLS[name]) { console.log(`unknown red control: ${name}`); process.exit(2); }
-  const st = loadState();
-  RED_CONTROLS[name](st);
-  const { failures } = runChecks(st);
-  const real = failures.filter((f) => !f.startsWith("\u0000"));
-  if (!real.length) { console.log(`RED CONTROL "${name}" WAS NOT CAUGHT — the check is blind to it`); process.exit(1); }
-  console.log(`red control "${name}": caught with ${real.length} failure(s) — as expected`);
-  real.slice(0, 3).forEach((f) => console.log("   " + f));
+  let r;
+  try { r = runControl(name); } catch (e) { console.log(`RED CONTROL "${name}" BROKE — ${e.message}`); process.exit(1); }
+  if (!r.ok) { console.log(`RED CONTROL "${name}" ${r.why}`); r.real.slice(0, 3).forEach((f) => console.log("   " + f)); process.exit(1); }
+  console.log(`red control "${name}": caught with ${r.real.length} failure(s) — as expected`);
+  r.real.slice(0, 3).forEach((f) => console.log("   " + f));
   process.exit(0);
 }
 if (argv.includes("--red-controls-all")) {
   let bad = 0;
   for (const name of Object.keys(RED_CONTROLS)) {
-    const st = loadState();
-    try { RED_CONTROLS[name](st); } catch (e) { bad++; console.log(`BROKEN: ${name} — ${e.message}`); continue; }
-    const { failures } = runChecks(st);
-    const real = failures.filter((f) => !f.startsWith("\u0000"));
-    if (!real.length) { bad++; console.log(`NOT CAUGHT: ${name}`); }
-    else console.log(`caught (${real.length}): ${name} — ${real[0]}`);
+    let r;
+    try { r = runControl(name); } catch (e) { bad++; console.log(`BROKEN: ${name} — ${e.message}`); continue; }
+    if (!r.ok) { bad++; console.log(`${r.real.length ? "WRONG ASSERTION" : "NOT CAUGHT"}: ${name} — ${r.why}`); }
+    else console.log(`caught (${r.real.length}): ${name} — ${r.real[0]}`);
   }
   console.log(`\n${Object.keys(RED_CONTROLS).length} red controls, ${bad} not caught`);
   process.exit(bad ? 1 : 0);

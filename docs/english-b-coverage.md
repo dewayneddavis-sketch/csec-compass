@@ -6,8 +6,8 @@ chapters across 4 sections). Formal audit: `/home/team/shared/english-b-coverage
 Machine-checked by `tools/check-english-b-coverage.mjs` — **this table is parsed by that harness**, so the
 columns below are a contract, not decoration.
 
-**Headline after Slice F: 16 chapters = REUSE 16 + EXTEND 0 + NEW 0** against the 27 shipped lessons in 8 modules (Slice A closed rows 1, 5 and 9 in `eb-l1-1`; Slice B closed rows 6 and 8 in `eb-l2-2` and `eb-l2-3`; Slice C closed rows 2, 3 and 4 in `eb-l3-1`, `eb-l3-2` and `eb-l3-3`; Slice D closed rows 10, 11 and 12 in `eb-l4-1`, `eb-l4-3` and `eb-l4-2`; Slice E closed row 15 in `eb-l6-1`; **Slice F created `eb-mod-8` and closed rows 13, 14 and 16 in `eb-l8-craft`, `eb-l8-critical-evaluation` and `eb-l8-context`**). **Both class rules are now empty** — `EXTEND` since Slice E, `NEW` since Slice F — so each is dormant rather than broken: a class can only come back if a shipped name is removed, a `REUSE` claim is withdrawn or a lesson is pulled, and every one of their red controls synthesises that state in memory rather than pointing at a live row.
-End state reached: **8 modules, 27 lessons, nothing pending.**
+**Headline — FINAL after Slice G: 16 chapters = REUSE 16 + EXTEND 0 + NEW 0** against the 27 shipped lessons in 8 modules (Slice A closed rows 1, 5 and 9 in `eb-l1-1`; Slice B closed rows 6 and 8 in `eb-l2-2` and `eb-l2-3`; Slice C closed rows 2, 3 and 4 in `eb-l3-1`, `eb-l3-2` and `eb-l3-3`; Slice D closed rows 10, 11 and 12 in `eb-l4-1`, `eb-l4-3` and `eb-l4-2`; Slice E closed row 15 in `eb-l6-1`; Slice F created `eb-mod-8` and closed rows 13, 14 and 16 in `eb-l8-craft`, `eb-l8-critical-evaluation` and `eb-l8-context`; **Slice G re-balanced the banks** — see the ledger below). **Both class rules are now empty** — `EXTEND` since Slice E, `NEW` since Slice F — so each is dormant rather than broken: a class can only come back if a shipped name is removed, a `REUSE` claim is withdrawn or a lesson is pulled, and every one of their red controls synthesises that state in memory rather than pointing at a live row.
+End state reached: **8 modules, 27 lessons, nothing pending.** **The banks are at the owner's size: practice exactly 100 with all 27 lessons drilled, knowledge check exactly 25 with exactly two named lessons exempt (D-1).**
 13 of the 16 chapters were already taught **under other names**: this was a *naming* gap, not a teaching
 gap, so most of the build was by-name work inside lessons that already existed.
 
@@ -44,6 +44,18 @@ plus a phrase for the substance it does teach.
   `eb-l3-2` item, plus two from lessons that keep ≥3 practice questions, never from `eb-mod-7` or
   `eb-mod-8`). The two lessons left without a KC item are **named in that ledger**, not left silent.
   **Do not re-tag `kc25` onto `eb-l8-critical-evaluation`** — it would just empty `eb-l6-3`.
+  **SLICE G LEDGER — LANDED 2026-11-17.** Three KC items retired, three authored for the new lessons, so
+  the check is still exactly 25:
+  - `kc14` (eb-l3-2, dramatic irony) — the duplicate. `eb-l3-2` still holds `kc13`, so nothing was lost.
+  - `kc24` (eb-l6-1, "an introduction should…") — procedural essay-craft, already tested step by step by
+    the five practice items that stay on the lesson (`p86`–`p90`).
+  - `kc25` (eb-l6-3, how to answer a "discuss" question) — exam technique, likewise covered by the five
+    practice items that stay (`p96`–`p100`).
+  - **Authored:** `kc32` → `eb-l8-craft`, `kc33` → `eb-l8-critical-evaluation`, `kc34` → `eb-l8-context`.
+  - **THE TWO EXEMPT LESSONS ARE `eb-l6-1` AND `eb-l6-3`** — they teach *how to plan and write an essay*,
+    which is the pair least likely to be examined as a discrete literary fact, and each keeps all five of
+    its practice questions. The harness names them in `KC_EXEMPT` and asserts each holds no item, so the
+    exemption cannot rot into a hole.
 - **D-2 — rows 1 and 9 get the two by-name headings in Slice A** (`eb-l1-1`), one sentence each, so both
   REUSE claims stop resting on a concept pair alone. The rows stay `REUSE` (the heading is *added* to
   teaching that already exists; the audit's "EXTEND-with-heading-added" wording describes the edit, not a
@@ -134,7 +146,7 @@ so a fourth one cannot appear unnoticed.
 | **D** | 4 | `eb-l4-1` (ch10), `eb-l4-2` (ch12), `eb-l4-3` (ch11) | — | 10, 11, 12 = 3 |
 | **E** | 6 | `eb-l6-1` (ch15) | — | 15 = 1 |
 | **F** | new 8 | creates `eb-mod-8`; **only slice touching `lessonSets.js`** (append 3 blocks at the END of the subject block, never reorder); `estimatedModules` 7 → 8 | `eb-l8-craft`, `eb-l8-critical-evaluation`, `eb-l8-context` | 13, 14, 16 = 3 |
-| **G** | — | bank re-balance per D-1; rewrite this doc's headline to the final totals; both harnesses green with their red controls | — | — |
+| **G** | — | bank re-balance per D-1; rewrite this doc's headline to the final totals; both harnesses green with their red controls. **LANDED 2026-11-17:** practice still exactly 100 with **all 27 lessons drilled** — `p54` re-tagged `eb-l3-3` → `eb-l8-critical-evaluation` (a judgement-with-counter-argument item, which is what that lesson teaches), `p93` re-tagged `eb-l6-2` → `eb-l8-craft` (word choice and its effect — the item's own explanation uses the craft lesson's sea/field example), `p107` **authored** for `eb-l8-context`, and `p18` retired because it re-tested the subject/theme distinction `p13` already carries in `eb-l1-3` (which keeps four items). KC per the D-1 ledger below | — | — |
 
 Totals: A3 + B3 + C3 + D3 + E1 + F3 = **16** · EXTEND edits **10** · NEW lessons **3** · end state
 **8 modules, 27 lessons**. EXTENDs keep their existing `lessonSets` set **and its `kind`** — a lesson's
