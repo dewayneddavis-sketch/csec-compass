@@ -76,7 +76,9 @@ plus a phrase for the substance it does teach.
   the class is now empty; see the naming-test note above for why the rule and its controls stay.**
 - **D-3 — Paper 2 for the `eb-l8-*` lessons: YES, as a separate PR after Slice G. OWNER-CONFIRMED
   2026-11-05.** It moves the `check-paper2.mjs` pin (9 items / 265 marks) together with the new items.
-  **No slice of the coverage build adds a Paper 2 item.**
+  **No slice of the coverage build adds a Paper 2 item.** **D-3 landed 2026-11-17:** `eb-p2-10`
+  (`eb-l8-craft`, Poetry), `eb-p2-11` (`eb-l8-critical-evaluation`, Prose) and `eb-p2-12`
+  (`eb-l8-context`, Drama), 30 marks each, so the pin is now **12 items / 355 marks**.
 
 ## Exception — row 10's chapter name is American, and we ship the British form
 

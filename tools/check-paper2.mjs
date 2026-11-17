@@ -53,7 +53,7 @@ const SUBJECTS = readdirSync(join(root, "content"), { withFileTypes: true })
 // missing from this table still gets every structural check, and its totals are printed.
 const EXPECTED = {
   "social-studies": { items: 10, marks: 239 },
-  "english-b": { items: 9, marks: 265 },
+  "english-b": { items: 12, marks: 355 },
   "agriculture-double-option": { items: 8, marks: 217 },
   // Caribbean History: 9 questions (3 per section, one answered from each),
   // 30 marks each = 270, written for the 2 h 10 min of the real Paper 02.
