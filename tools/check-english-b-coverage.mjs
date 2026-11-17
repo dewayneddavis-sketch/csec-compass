@@ -8,7 +8,7 @@
 //
 // What it pins
 //   1. the doc holds the owner's 16 chapters, verbatim and in order, with 4 chapters in each of the four
-//      sections and the class totals REUSE 3 / EXTEND 10 / NEW 3;
+//      sections and the class totals REUSE 6 / EXTEND 7 / NEW 3;
 //   2. every row names a real lesson id (or, for a NEW row, an id that must still NOT exist);
 //   3. the REUSE rule: every significant word of the chapter name is in the PRIMARY host's title or
 //      `concepts` — the audit's own test for "already taught by name", so a REUSE row cannot rest on a
@@ -69,8 +69,9 @@ export const CHAPTERS = [
 export const SECTIONS = ["Drama", "Poetry", "Prose Fiction", "Literary Appreciation"];
 export const PER_SECTION = 4;
 // Slice A re-classed row 5 (EXTEND -> REUSE) because `eb-l1-1` now names "The Nature of Poetry";
-// the totals follow the rows, they are not a target.
-export const CLASS_TOTALS = { REUSE: 4, EXTEND: 9, NEW: 3 };
+// Slice B re-classed rows 6 and 8 because `eb-l2-2` and `eb-l2-3` now name their chapters.
+// The totals follow the rows, they are not a target.
+export const CLASS_TOTALS = { REUSE: 6, EXTEND: 7, NEW: 3 };
 
 // The 3 NEW ids, in row order (rows 13, 14, 16). A slice that lands one deletes it here and in the doc.
 export const PENDING_IDS = ["eb-l8-craft", "eb-l8-critical-evaluation", "eb-l8-context"];
