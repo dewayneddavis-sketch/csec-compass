@@ -51,6 +51,21 @@ export const lessonSets = {
         { id: "b5", target: "A solution with a higher solute concentration", label: "Hypertonic" },
       ],
     },
+    // Cell Specialisation and Levels of Organisation — its own set (Biology Slice 1,
+    // 2026-11-17), matched to the lesson's topic: the five levels of organisation in
+    // order, from one cell to the whole organism. The lesson sits last in module 1.
+    "bio-cell-levels-of-organisation": {
+      title: "Levels of Organisation",
+      subtitle: "Arrange the five levels from the smallest unit to the whole organism.",
+      kind: "order",
+      items: [
+        { id: "lo1", label: "Cell: one muscle cell", order: 1 },
+        { id: "lo2", label: "Tissue: muscle tissue, a group of similar cells", order: 2 },
+        { id: "lo3", label: "Organ: the stomach, several tissues working together", order: 3 },
+        { id: "lo4", label: "Organ system: the digestive system", order: 4 },
+        { id: "lo5", label: "Organism: the whole human being", order: 5 },
+      ],
+    },
     // Photosynthesis — sort inputs vs products.
     photosynthesis: {
       title: "Photosynthesis Inputs and Products",
