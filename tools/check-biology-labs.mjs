@@ -70,8 +70,9 @@ const PLANNED_NEW_IDS = [
 // Exactly the planned ids that have NOT landed yet. A slice that lands a lesson must
 // strike its id off in the same commit (else "landed but still listed" reds); a slice
 // that strikes an id off without landing it reds as a lost lesson.
+// Biology Slice 1 (2026-11-17) struck off "bio-cell-levels-of-organisation": it landed
+// at the end of module 1, with its own set.
 const PENDING_IDS = [
-  "bio-cell-levels-of-organisation",
   "bio-nut-leaf-structure", "bio-nut-food-tests",
   "bio-resp-effects-of-smoking",
   "bio-eco-study-methods", "bio-eco-special-relationships",
