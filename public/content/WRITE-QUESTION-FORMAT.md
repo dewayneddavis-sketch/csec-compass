@@ -83,7 +83,7 @@ Rules the content guarantees (validated at authoring time):
 ## Counting
 
 - Social Studies `paper2.json`: 10 items, 239 marks total.
-- English B `paper2.json`: 9 items, 265 marks total.
+- English B `paper2.json`: 12 items, 355 marks total.
 - Agriculture Double Option `paper2.json`: 8 items, 217 marks total.
 - Caribbean History `paper2.json`: 9 items, 270 marks total — 3 questions in each of
   Sections A, B and C at 30 marks each, matching the real Paper 02 (2 h 10 min), in which
