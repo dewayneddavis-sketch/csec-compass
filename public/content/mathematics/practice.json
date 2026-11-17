@@ -26,6 +26,19 @@
   "topic": "algebraic-expressions"
  },
  {
+  "id": "p125",
+  "question": "Convert 1011 (base two) to base ten.",
+  "options": [
+   "11",
+   "13",
+   "9",
+   "15"
+  ],
+  "answer": "11",
+  "explanation": "Step 1 — Write each column with its power of two, starting from the right:\n1 × 2³, 0 × 2², 1 × 2¹, 1 × 2⁰\nStep 2 — Work out each column:\n8, 0, 2, 1\nStep 3 — Add the columns:\n8 + 0 + 2 + 1 = 11\nStep 4 — So 1011 in base two is 11 in base ten.",
+  "topic": "mat-num-number-bases-and-place-value"
+ },
+ {
   "id": "p3",
   "question": "What is the value of 12 - 4 × 2 + 6 ÷ 3?",
   "options": [
@@ -50,6 +63,19 @@
   "answer": "3/8",
   "explanation": "Step 1 — 0.375 has three decimal places, so write it over 1000:\n0.375 = 375/1000\nStep 2 — Divide the top and the bottom by a common factor. Both divide by 125:\n375 ÷ 125 = 3 and 1000 ÷ 125 = 8\nStep 3 — Lowest terms:\n3/8",
   "topic": "fractions-decimals-percentages"
+ },
+ {
+  "id": "p126",
+  "question": "A trader buys a case of juice for $2,400 and sells it at a loss of 15%. What is the selling price?",
+  "options": [
+   "$2,040",
+   "$2,060",
+   "$2,160",
+   "$1,960"
+  ],
+  "answer": "$2,040",
+  "explanation": "Step 1 — Find the loss:\n15% of $2,400 = 0.15 × 2,400 = $360\nStep 2 — Subtract the loss from the cost price:\n2,400 - 360 = $2,040\nStep 3 — A short cut is to take 85% of the cost price:\n0.85 × 2,400 = $2,040\nStep 4 — The selling price is $2,040.",
+  "topic": "profit-loss-and-discounts"
  },
  {
   "id": "p5",
@@ -78,6 +104,19 @@
   "topic": "pythagoras-theorem"
  },
  {
+  "id": "p127",
+  "question": "Solve x² = 7x.",
+  "options": [
+   "x = 0 or x = 7",
+   "x = 7 only",
+   "x = 0 or x = -7",
+   "x = 3.5"
+  ],
+  "answer": "x = 0 or x = 7",
+  "explanation": "Step 1 — Bring everything to one side so the equation equals zero:\nx² - 7x = 0\nStep 2 — Factorise by taking out the common factor x:\nx(x - 7) = 0\nStep 3 — A product is zero when either factor is zero:\nx = 0 or x - 7 = 0\nStep 4 — So x = 0 or x = 7. Do not divide both sides by x: that throws away the solution x = 0.",
+  "topic": "quadratic-equations"
+ },
+ {
   "id": "p7",
   "question": "If sin(θ) = 3/5 in a right-angled triangle, what is the value of cos(θ)?",
   "options": [
@@ -102,6 +141,19 @@
   "answer": "[2; 2]",
   "explanation": "Step 1 — Add the x-components:\n3 + (-1) = 2\nStep 2 — Add the y-components:\n-2 + 4 = 2\nStep 3 — Write the answer as a column vector:\n[2; 2]",
   "topic": "vectors"
+ },
+ {
+  "id": "p128",
+  "question": "A = {x : x is an even number, 3 < x ≤ 10}. Which of these lists the members of A?",
+  "options": [
+   "{4, 6, 8, 10}",
+   "{3, 4, 6, 8, 10}",
+   "{4, 6, 8}",
+   "{2, 4, 6, 8, 10}"
+  ],
+  "answer": "{4, 6, 8, 10}",
+  "explanation": "Step 1 — Read the condition: x is even, x is greater than 3, and x is at most 10.\nStep 2 — List the even numbers up to 10:\n2, 4, 6, 8, 10\nStep 3 — Remove those that are not greater than 3. The sign < excludes 3 itself, and 2 is too small:\n4, 6, 8, 10\nStep 4 — The sign ≤ keeps 10, so A = {4, 6, 8, 10}.",
+  "topic": "set-notation"
  },
  {
   "id": "p9",
@@ -130,6 +182,19 @@
   "topic": "central-tendency"
  },
  {
+  "id": "p129",
+  "question": "g(x) = x² - 4. What is g(-3)?",
+  "options": [
+   "5",
+   "-13",
+   "13",
+   "-5"
+  ],
+  "answer": "5",
+  "explanation": "Step 1 — Substitute -3 wherever x appears:\ng(-3) = (-3)² - 4\nStep 2 — Square first: a negative number squared is positive.\n(-3)² = 9\nStep 3 — Subtract 4:\n9 - 4 = 5\nStep 4 — So g(-3) = 5. The answer -13 comes from squaring only the 3 and keeping the minus sign, which is the common mistake.",
+  "topic": "functions"
+ },
+ {
   "id": "p11",
   "question": "A bag contains 4 red balls and 6 blue balls. What is the probability of randomly picking a red ball?",
   "options": [
@@ -156,6 +221,19 @@
   "topic": "volume-capacity"
  },
  {
+  "id": "p130",
+  "question": "An angle at the centre of a circle is 130°. What is the angle at the circumference standing on the same arc?",
+  "options": [
+   "65°",
+   "130°",
+   "260°",
+   "50°"
+  ],
+  "answer": "65°",
+  "explanation": "Step 1 — Use the theorem: the angle at the centre is twice the angle at the circumference standing on the same arc.\nStep 2 — Reverse the rule to go from the centre to the circumference:\n130° ÷ 2\nStep 3 — 130 ÷ 2 = 65\nStep 4 — The angle at the circumference is 65°. Check: 2 × 65° = 130°.",
+  "topic": "circle-theorems"
+ },
+ {
   "id": "p13",
   "question": "If x = 3 and y = -2, what is the value of 3x² - 2y?",
   "options": [
@@ -170,16 +248,29 @@
  },
  {
   "id": "p14",
-  "question": "Which of the following is a prime number?",
+  "question": "Express 84 as a product of its prime factors.",
   "options": [
-   "39",
-   "51",
-   "57",
-   "53"
+   "2² × 3 × 7",
+   "2 × 3 × 7",
+   "2³ × 3 × 7",
+   "2 × 3² × 7"
   ],
-  "answer": "53",
-  "explanation": "Step 1 — Test 39: 39 = 3 × 13, so 39 has another factor.\nStep 2 — Test 51 = 3 × 17 and 57 = 3 × 19, so neither is prime.\nStep 3 — 53 has no factors other than 1 and 53.\nStep 4 — The prime number is 53.",
-  "topic": "real-numbers"
+  "answer": "2² × 3 × 7",
+  "explanation": "Step 1 — Divide by the smallest prime that goes in, again and again:\n84 ÷ 2 = 42\n42 ÷ 2 = 21\nStep 2 — 21 is not even, so move to the next prime: 21 ÷ 3 = 7, and 7 is prime.\nStep 3 — Collect the primes that were divided out: 2, 2, 3 and 7, so 84 = 2² × 3 × 7.\nStep 4 — Check by multiplying back: 4 × 3 × 7 = 84, so the product is right.",
+  "topic": "types-of-numbers"
+ },
+ {
+  "id": "p131",
+  "question": "If vector a = [3; -2], what is 4a?",
+  "options": [
+   "[12; -8]",
+   "[12; -2]",
+   "[7; -6]",
+   "[-12; 8]"
+  ],
+  "answer": "[12; -8]",
+  "explanation": "Step 1 — A scalar multiplies each component of the vector separately.\nStep 2 — Multiply the top component: 4 × 3 = 12.\nStep 3 — Multiply the bottom component: 4 × (-2) = -8.\nStep 4 — So 4a = [12; -8]. A scalar changes the length, not the direction, so the signs stay the same way round.",
+  "topic": "vectors"
  },
  {
   "id": "p15",
@@ -208,6 +299,19 @@
   "topic": "mat-num-ratio-and-proportion"
  },
  {
+  "id": "p132",
+  "question": "A grouped frequency table has the classes 0-9, 10-19 and 20-29 with frequencies 4, 7 and 5. What is the cumulative frequency up to the end of the class 10-19?",
+  "options": [
+   "11",
+   "7",
+   "16",
+   "4"
+  ],
+  "answer": "11",
+  "explanation": "Step 1 — Cumulative frequency adds the frequencies class by class, from the bottom up.\nStep 2 — After the first class the running total is 4.\nStep 3 — Add the frequency of the second class: 4 + 7 = 11.\nStep 4 — So the cumulative frequency at the end of the class 10-19 is 11, and at the end of the table it is 11 + 5 = 16, which is the total of the data.",
+  "topic": "frequency-tables-and-cumulative-frequency"
+ },
+ {
   "id": "p17",
   "question": "A car travels 240 km in 3 hours. What is its average speed?",
   "options": [
@@ -232,6 +336,19 @@
   "answer": "x = 8",
   "explanation": "Step 1 — Subtract 3x from both sides to gather the x terms:\n2x - 7 = 9\nStep 2 — Add 7 to both sides:\n2x = 16\nStep 3 — Divide both sides by 2:\nx = 8",
   "topic": "algebraic-expressions"
+ },
+ {
+  "id": "p133",
+  "question": "A length is measured as 12.4 cm, but the true length is 12.5 cm. What is the percentage error, to 1 decimal place?",
+  "options": [
+   "0.8%",
+   "0.1%",
+   "8%",
+   "1.0%"
+  ],
+  "answer": "0.8%",
+  "explanation": "Step 1 — Absolute error = measured value - true value: 12.4 - 12.5 = -0.1, so the error is 0.1 cm.\nStep 2 — Relative error = absolute error ÷ true value: 0.1 ÷ 12.5 = 0.008.\nStep 3 — Percentage error = relative error × 100: 0.008 × 100 = 0.8.\nStep 4 — The percentage error is 0.8%, which is small because 0.1 cm is small next to 12.5 cm.",
+  "topic": "mat-meas-measurement-error"
  },
  {
   "id": "p21",
@@ -260,6 +377,19 @@
   "topic": "mat-alg-binary-operations-and-distributive-law"
  },
  {
+  "id": "p134",
+  "question": "Write the base-ten number 45 in base two.",
+  "options": [
+   "101101",
+   "101011",
+   "110101",
+   "100101"
+  ],
+  "answer": "101101",
+  "explanation": "Step 1 — Divide repeatedly by 2 and keep each remainder:\n45 ÷ 2 = 22 remainder 1\n22 ÷ 2 = 11 remainder 0\n11 ÷ 2 = 5 remainder 1\n5 ÷ 2 = 2 remainder 1\n2 ÷ 2 = 1 remainder 0\n1 ÷ 2 = 0 remainder 1\nStep 2 — Read the remainders from the bottom up:\n1 0 1 1 0 1\nStep 3 — So 45 in base ten is 101101 in base two. Check: 32 + 0 + 8 + 4 + 0 + 1 = 45.",
+  "topic": "mat-num-number-bases-and-place-value"
+ },
+ {
   "id": "p23",
   "question": "What is the gradient of the line joining (1, 2) and (5, 10)?",
   "options": [
@@ -284,6 +414,19 @@
   "answer": "y = 3x - 4",
   "explanation": "Step 1 — Read the gradient off the given line: y = 3x + 1 has gradient 3.\nStep 2 — Parallel lines have equal gradients, so the answer needs gradient 3.\nStep 3 — Check the options: y = 3x - 4 has gradient 3 (-3 is not parallel, 1/3 is perpendicular and y = 3 is horizontal).\nSo the parallel line is y = 3x - 4.",
   "topic": "coordinate-geometry"
+ },
+ {
+  "id": "p135",
+  "question": "Find the compound interest on $5,000 invested at 10% per annum for 2 years.",
+  "options": [
+   "$1,050",
+   "$1,000",
+   "$1,100",
+   "$1,155"
+  ],
+  "answer": "$1,050",
+  "explanation": "Step 1 — Grow the amount by 10% for the first year:\n5,000 × 1.10 = $5,500\nStep 2 — Grow the new amount by 10% for the second year:\n5,500 × 1.10 = $6,050\nStep 3 — Compound interest is the amount less the money put in:\n6,050 - 5,000 = $1,050\nStep 4 — The simple interest would have been 2 × 10% × 5,000 = $1,000, so the extra $50 is the interest on the first year's interest.",
+  "topic": "simple-and-compound-interest"
  },
  {
   "id": "p25",
@@ -312,6 +455,19 @@
   "topic": "transformations"
  },
  {
+  "id": "p136",
+  "question": "Simplify (2x + 6) / (x² - 9).",
+  "options": [
+   "2 / (x - 3)",
+   "2 / (x + 3)",
+   "2x / (x - 3)",
+   "(x + 3) / 2"
+  ],
+  "answer": "2 / (x - 3)",
+  "explanation": "Step 1 — Factorise the top:\n2x + 6 = 2(x + 3)\nStep 2 — Factorise the bottom as a difference of two squares:\nx² - 9 = (x + 3)(x - 3)\nStep 3 — Cancel the common factor (x + 3):\n2(x + 3) / [(x + 3)(x - 3)] = 2 / (x - 3)\nStep 4 — The simplified fraction is 2 / (x - 3).",
+  "topic": "algebraic-fractions"
+ },
+ {
   "id": "p27",
   "question": "What is the solution set of x² - 5x + 6 = 0?",
   "options": [
@@ -336,6 +492,19 @@
   "answer": "7",
   "explanation": "Step 1 — Substitute x = 3 into the rule:\nf(3) = 2(3) + 1\nStep 2 — Multiply first:\n2 × 3 = 6\nStep 3 — Add:\n6 + 1 = 7",
   "topic": "functions"
+ },
+ {
+  "id": "p137",
+  "question": "P = {a, b, c}. How many subsets of P contain exactly two elements?",
+  "options": [
+   "3",
+   "6",
+   "8",
+   "2"
+  ],
+  "answer": "3",
+  "explanation": "Step 1 — List the subsets with two elements, taking them in order so none is missed:\n{a, b}, {a, c}, {b, c}\nStep 2 — Count them:\n3 subsets\nStep 3 — Check against the formula for choosing 2 from 3:\n3 × 2 ÷ 2 = 3\nStep 4 — P has 8 subsets in all, and 3 of them contain exactly two elements.",
+  "topic": "subsets-and-cardinality"
  },
  {
   "id": "p29",
@@ -364,6 +533,19 @@
   "topic": "trig-ratios"
  },
  {
+  "id": "p138",
+  "question": "At which points does the curve y = x² - 2x - 3 cross the x-axis?",
+  "options": [
+   "x = -1 and x = 3",
+   "x = 1 and x = 3",
+   "x = -3 and x = 1",
+   "x = -1 and x = -3"
+  ],
+  "answer": "x = -1 and x = 3",
+  "explanation": "Step 1 — On the x-axis y = 0, so set the expression equal to zero:\nx² - 2x - 3 = 0\nStep 2 — Factorise. Two numbers that multiply to -3 and add to -2 are -3 and +1:\n(x - 3)(x + 1) = 0\nStep 3 — Put each factor equal to zero:\nx - 3 = 0 gives x = 3, and x + 1 = 0 gives x = -1\nStep 4 — The curve crosses the x-axis at x = -1 and x = 3.",
+  "topic": "linear-and-quadratic-graphs"
+ },
+ {
   "id": "p31",
   "question": "A triangle has angles 65° and 45°. What is the third angle?",
   "options": [
@@ -388,6 +570,19 @@
   "answer": "154 cm²",
   "explanation": "Step 1 — Write the area formula for a circle:\nA = πr²\nStep 2 — Substitute r = 7 and π = 22/7:\nA = (22/7) × 7 × 7\nStep 3 — Cancel a 7:\nA = 22 × 7 = 154 cm²",
   "topic": "perimeter-area"
+ },
+ {
+  "id": "p139",
+  "question": "Which instruments are used for a construction in geometry?",
+  "options": [
+   "A pair of compasses and a straight edge only",
+   "A ruler and a protractor",
+   "Set squares only",
+   "A ruler, a protractor and a pair of compasses"
+  ],
+  "answer": "A pair of compasses and a straight edge only",
+  "explanation": "Step 1 — A construction is drawn with a pair of compasses and a straight edge, and nothing is measured off a ruler.\nStep 2 — The straight edge draws the lines; the compasses draw the arcs.\nStep 3 — A protractor is not used, because the angle has to come out of the arcs, and the arcs are left on the paper as the proof.\nStep 4 — Measuring with a ruler would not be a construction at all, so only the compasses and the straight edge are allowed.",
+  "topic": "mat-geo-geometric-drawing-and-constructions"
  },
  {
   "id": "p34",
@@ -416,6 +611,19 @@
   "topic": "si-units-and-conversion"
  },
  {
+  "id": "p140",
+  "question": "M = [[2, 5], [1, 3]]. What is the inverse of M?",
+  "options": [
+   "[[3, -5], [-1, 2]]",
+   "[[3, 5], [1, 2]]",
+   "[[2, -5], [-1, 3]]",
+   "[[-3, 5], [1, -2]]"
+  ],
+  "answer": "[[3, -5], [-1, 2]]",
+  "explanation": "Step 1 — Find the determinant: det M = (2 × 3) - (5 × 1) = 6 - 5 = 1.\nStep 2 — Swap the two diagonal entries and change the sign of the other two: the top left becomes 3, the bottom right becomes 2, and 5 and 1 become -5 and -1.\nStep 3 — Divide by the determinant: every entry is divided by 1, so nothing changes.\nStep 4 — M⁻¹ = [[3, -5], [-1, 2]]. Check: M × M⁻¹ gives [[1, 0], [0, 1]].",
+  "topic": "matrices"
+ },
+ {
   "id": "p37",
   "question": "The mean of 4 numbers is 12. What is their sum?",
   "options": [
@@ -440,6 +648,19 @@
   "answer": "9",
   "explanation": "Step 1 — Count how often each value appears:\n3 once, 5 twice, 7 once, 9 three times\nStep 2 — The mode is the value with the highest count.\nStep 3 — 9 appears three times, so the mode is 9.",
   "topic": "central-tendency"
+ },
+ {
+  "id": "p141",
+  "question": "The five values 2, 4, 4, 4, 6 have a mean of 4. What is their standard deviation, to 2 decimal places?",
+  "options": [
+   "1.26",
+   "1.60",
+   "1.41",
+   "2.00"
+  ],
+  "answer": "1.26",
+  "explanation": "Step 1 — Subtract the mean from each value: 2 - 4 = -2, 4 - 4 = 0, 4 - 4 = 0, 4 - 4 = 0, 6 - 4 = 2.\nStep 2 — Square each difference: 4, 0, 0, 0, 4.\nStep 3 — Add the squares and divide by the number of values: 8 ÷ 5 = 1.6.\nStep 4 — Take the square root: √1.6 = 1.2649, so the standard deviation is 1.26 to 2 decimal places.",
+  "topic": "mat-stat-standard-deviation"
  },
  {
   "id": "p39",
@@ -468,6 +689,19 @@
   "topic": "probability"
  },
  {
+  "id": "p142",
+  "question": "A mass is recorded as 6.3 kg, correct to 1 decimal place. What is the greatest possible error?",
+  "options": [
+   "0.05 kg",
+   "0.5 kg",
+   "0.1 kg",
+   "0.005 kg"
+  ],
+  "answer": "0.05 kg",
+  "explanation": "Step 1 — A value correct to 1 decimal place has been rounded to the nearest 0.1.\nStep 2 — The greatest possible error is half of the unit it was rounded to: 0.1 ÷ 2 = 0.05.\nStep 3 — So the true mass lies between 6.3 - 0.05 = 6.25 kg and 6.3 + 0.05 = 6.35 kg.\nStep 4 — The greatest possible error is 0.05 kg.",
+  "topic": "mat-meas-measurement-error"
+ },
+ {
   "id": "p42",
   "question": "A number is chosen at random from 1 to 10. What is P(even number)?",
   "options": [
@@ -492,6 +726,19 @@
   "answer": "$36",
   "explanation": "Step 1 — Split 15% into 10% + 5% of $240:\n10% = $24 and 5% = half of that = $12\nStep 2 — Add the two parts:\n$24 + $12 = $36\nStep 3 — So 15% of $240 is $36.",
   "topic": "fractions-decimals-percentages"
+ },
+ {
+  "id": "p143",
+  "question": "Which property is shown by 7 + (3 + 9) = (7 + 3) + 9?",
+  "options": [
+   "The associative property of addition",
+   "The commutative property of addition",
+   "The distributive property",
+   "The identity property of addition"
+  ],
+  "answer": "The associative property of addition",
+  "explanation": "Step 1 — Look at what changed between the two sides:\nthe numbers are in the same order (7, 3, 9) but the brackets have moved.\nStep 2 — Match the change to the properties:\ncommutative changes the ORDER, distributive spreads one number over a bracket, and identity brings in 0 or 1.\nStep 3 — Only the grouping changed, and 7 + 12 = 10 + 9 = 19 either way, so this is the associative property of addition.",
+  "topic": "mat-num-properties-of-operations"
  },
  {
   "id": "p44",
@@ -520,6 +767,19 @@
   "topic": "fractions-decimals-percentages"
  },
  {
+  "id": "p144",
+  "question": "A refrigerator has a cash price of $84,000. On hire purchase a customer pays a deposit of $24,000 and 12 monthly instalments of $5,500. How much more than the cash price does the customer pay?",
+  "options": [
+   "$6,000",
+   "$5,500",
+   "$6,600",
+   "$4,500"
+  ],
+  "answer": "$6,000",
+  "explanation": "Step 1 — Find the total paid in instalments:\n12 × $5,500 = $66,000\nStep 2 — Add the deposit to get the total hire purchase price:\n66,000 + 24,000 = $90,000\nStep 3 — Subtract the cash price:\n90,000 - 84,000 = $6,000\nStep 4 — The customer pays $6,000 more than the cash price.",
+  "topic": "hire-purchase-and-instalments"
+ },
+ {
   "id": "p46",
   "question": "Express 7/8 as a decimal.",
   "options": [
@@ -544,6 +804,19 @@
   "answer": "81",
   "explanation": "Step 1 — The index 4 means 3 is used as a factor four times:\n3 × 3 × 3 × 3\nStep 2 — Multiply in pairs:\n3 × 3 = 9 and 3 × 3 = 9\nStep 3 — 9 × 9 = 81",
   "topic": "indices-and-surds"
+ },
+ {
+  "id": "p145",
+  "question": "The sum of three consecutive integers is 72. What is the largest of the three?",
+  "options": [
+   "25",
+   "24",
+   "26",
+   "23"
+  ],
+  "answer": "25",
+  "explanation": "Step 1 — Name the unknown. Let the smallest be n, so the others are n + 1 and n + 2.\nStep 2 — Write the sum as an equation:\nn + (n + 1) + (n + 2) = 72\nStep 3 — Collect like terms:\n3n + 3 = 72, so 3n = 69 and n = 23\nStep 4 — The largest is n + 2:\n23 + 2 = 25. Check: 23 + 24 + 25 = 72.",
+  "topic": "mat-alg-word-problems"
  },
  {
   "id": "p48",
@@ -572,6 +845,19 @@
   "topic": "indices-and-surds"
  },
  {
+  "id": "p146",
+  "question": "In a class of 30 students, 18 play cricket, 15 play football and 6 play both. How many play neither?",
+  "options": [
+   "3",
+   "6",
+   "9",
+   "0"
+  ],
+  "answer": "3",
+  "explanation": "Step 1 — Find how many play at least one game, subtracting the overlap that was counted twice:\n18 + 15 - 6 = 27\nStep 2 — Subtract that from the class to find the students outside both circles:\n30 - 27\nStep 3 — 30 - 27 = 3\nStep 4 — So 3 students play neither cricket nor football.",
+  "topic": "venn-diagrams"
+ },
+ {
   "id": "p50",
   "question": "Which of these is a rational number?",
   "options": [
@@ -596,6 +882,19 @@
   "answer": "48",
   "explanation": "Step 1 — Look at the first digit after the whole-number place (the tenths digit):\n6\nStep 2 — 6 is 5 or more, so round up.\nStep 3 — 47.65 ≈ 48",
   "topic": "mat-num-significant-figures-and-decimal-places"
+ },
+ {
+  "id": "p147",
+  "question": "A feasible region has corner points (0, 0), (4, 0), (3, 2) and (0, 3). The objective is P = 3x + 5y. What is the maximum value of P?",
+  "options": [
+   "19",
+   "15",
+   "12",
+   "20"
+  ],
+  "answer": "19",
+  "explanation": "Step 1 — Test P at each corner, one corner at a time:\n(0, 0): 3(0) + 5(0) = 0\n(4, 0): 3(4) + 5(0) = 12\n(3, 2): 3(3) + 5(2) = 9 + 10 = 19\n(0, 3): 3(0) + 5(3) = 15\nStep 2 — Compare the four values:\n0, 12, 19, 15\nStep 3 — The largest is 19, and it happens at the corner (3, 2).\nStep 4 — So the maximum value of P is 19.",
+  "topic": "mat-rel-linear-programming"
  },
  {
   "id": "p53",
@@ -624,6 +923,19 @@
   "topic": "inequalities"
  },
  {
+  "id": "p148",
+  "question": "A perpendicular bisector of AB is constructed by drawing arcs of the same radius from A and from B, meeting at P. Why is PA equal to PB?",
+  "options": [
+   "Because both arcs were drawn with the same radius",
+   "Because P is the midpoint of AB",
+   "Because AB is a straight line",
+   "Because the angle at P is 90°"
+  ],
+  "answer": "Because both arcs were drawn with the same radius",
+  "explanation": "Step 1 — The arc from A has its centre at A, so every point on it is the same distance from A. P is on that arc, so PA is that radius.\nStep 2 — The arc from B has its centre at B, and P is on it too, so PB is the radius of the second arc.\nStep 3 — The two radii were set to the same length with the compasses, so PA = PB.\nStep 4 — That equal-radius reasoning is why the line through P and the other crossing point cuts AB exactly in half at right angles.",
+  "topic": "mat-geo-geometric-drawing-and-constructions"
+ },
+ {
   "id": "p55",
   "question": "Solve: 2x + 3 ≤ 11",
   "options": [
@@ -648,6 +960,19 @@
   "answer": "6",
   "explanation": "Step 1 — Divide both sides by 3:\nx - 2 = 4\nStep 2 — Add 2 to both sides:\nx = 6\nStep 3 — Check: 3(6 - 2) = 3 × 4 = 12 ✓",
   "topic": "algebraic-expressions"
+ },
+ {
+  "id": "p149",
+  "question": "OA = [2; 5] and OB = [8; 1]. What is the vector AB?",
+  "options": [
+   "[6; -4]",
+   "[10; 6]",
+   "[-6; 4]",
+   "[6; 4]"
+  ],
+  "answer": "[6; -4]",
+  "explanation": "Step 1 — To go from A to B, go back to the origin from A and then out to B:\nAB = OB - OA\nStep 2 — Subtract the top components: 8 - 2 = 6.\nStep 3 — Subtract the bottom components: 1 - 5 = -4.\nStep 4 — AB = [6; -4]. Adding the position vectors would give [10; 6], which is not a displacement.",
+  "topic": "mat-vm-vector-geometry-and-applications"
  },
  {
   "id": "p57",
@@ -676,6 +1001,19 @@
   "topic": "mat-num-ratio-and-proportion"
  },
  {
+  "id": "p150",
+  "question": "Which of these gives continuous data?",
+  "options": [
+   "The mass of a bag of rice, in kilograms",
+   "The number of students in a class",
+   "The number of cars in a car park",
+   "The number of goals scored in a match"
+  ],
+  "answer": "The mass of a bag of rice, in kilograms",
+  "explanation": "Step 1 — Continuous data can take any value in a range, not just whole numbers.\nStep 2 — A mass can be 2.4 kg or 2.437 kg or anything between, depending on how finely it is measured.\nStep 3 — Students, cars and goals can only be counted in whole numbers, so those three are discrete.\nStep 4 — The mass is the continuous one.",
+  "topic": "mat-stat-data-types-and-sampling"
+ },
+ {
   "id": "p59",
   "question": "A train covers 300 km at 60 km/h. How long does the journey take?",
   "options": [
@@ -700,6 +1038,19 @@
   "answer": "12",
   "explanation": "Step 1 — Write both numbers as products of primes:\n24 = 2³ × 3 and 36 = 2² × 3²\nStep 2 — HCF: take the lowest power of each prime the two numbers share:\n2² and 3\nStep 3 — Multiply:\n2² × 3 = 4 × 3 = 12",
   "topic": "types-of-numbers"
+ },
+ {
+  "id": "p151",
+  "question": "On a map drawn to a scale of 1:25,000, two towns are 6 cm apart. What is the real distance in kilometres?",
+  "options": [
+   "1.5 km",
+   "15 km",
+   "150 km",
+   "0.15 km"
+  ],
+  "answer": "1.5 km",
+  "explanation": "Step 1 — At 1:25,000, 1 cm on the map stands for 25,000 cm on the ground.\nStep 2 — Multiply the map distance by the scale factor: 6 × 25,000 = 150,000 cm.\nStep 3 — Change centimetres to metres, then to kilometres: 150,000 ÷ 100 = 1,500 m, and 1,500 ÷ 1,000 = 1.5 km.\nStep 4 — The towns are 1.5 km apart.",
+  "topic": "mat-meas-scale-and-scale-drawings"
  },
  {
   "id": "p61",
@@ -728,6 +1079,19 @@
   "topic": "fractions-decimals-percentages"
  },
  {
+  "id": "p152",
+  "question": "Use the distributive property to work out 6 × 47 without a calculator.",
+  "options": [
+   "282",
+   "272",
+   "288",
+   "242"
+  ],
+  "answer": "282",
+  "explanation": "Step 1 — Split 47 into 40 + 7:\n6 × 47 = 6 × (40 + 7)\nStep 2 — Distribute the 6 over both parts:\n6 × 40 + 6 × 7\nStep 3 — Work out each part:\n240 + 42\nStep 4 — Add:\n240 + 42 = 282",
+  "topic": "mat-num-properties-of-operations"
+ },
+ {
   "id": "p63",
   "question": "What is 1/4 + 2/3?",
   "options": [
@@ -752,6 +1116,19 @@
   "answer": "3/2",
   "explanation": "Step 1 — Dividing by a fraction is the same as multiplying by its reciprocal:\n3/4 ÷ 1/2 = 3/4 × 2/1\nStep 2 — Multiply across:\n6/4\nStep 3 — Cancel by 2:\n6/4 = 3/2",
   "topic": "fractions-decimals-percentages"
+ },
+ {
+  "id": "p153",
+  "question": "A water bill charges $95 per cubic metre used plus a fixed charge of $1,200. What is the bill for 20 cubic metres?",
+  "options": [
+   "$3,100",
+   "$2,900",
+   "$3,300",
+   "$1,900"
+  ],
+  "answer": "$3,100",
+  "explanation": "Step 1 — Work out the charge for the water used:\n20 × $95 = $1,900\nStep 2 — Add the fixed charge, which is paid whatever the usage:\n1,900 + 1,200\nStep 3 — Add them:\n1,900 + 1,200 = $3,100\nStep 4 — The bill is $3,100.",
+  "topic": "taxes-and-utility-bills"
  },
  {
   "id": "p65",
@@ -780,6 +1157,19 @@
   "topic": "volume-capacity"
  },
  {
+  "id": "p154",
+  "question": "A father is 3 times as old as his son. In 12 years' time he will be twice as old as his son. How old is the son now?",
+  "options": [
+   "12",
+   "10",
+   "14",
+   "16"
+  ],
+  "answer": "12",
+  "explanation": "Step 1 — Name the unknown: let the son's age now be s, so the father is 3s.\nStep 2 — Write both ages 12 years from now:\nson s + 12, father 3s + 12\nStep 3 — Form the equation from 'twice as old':\n3s + 12 = 2(s + 12)\nStep 4 — Solve it:\n3s + 12 = 2s + 24, so s = 12\nStep 5 — Check: the son is 12 and the father 36; in 12 years they are 24 and 48, and 48 = 2 × 24.",
+  "topic": "mat-alg-word-problems"
+ },
+ {
   "id": "p69",
   "question": "The circumference of a circle with radius 7 cm is (π ≈ 22/7):",
   "options": [
@@ -804,6 +1194,19 @@
   "answer": "54 cm²",
   "explanation": "Step 1 — A cube has 6 square faces.\nStep 2 — Area of one face:\n3 × 3 = 9 cm²\nStep 3 — Total surface area:\n6 × 9 = 54 cm²",
   "topic": "mat-meas-surface-area-of-solids"
+ },
+ {
+  "id": "p155",
+  "question": "A = {1, 3, 5, 7} and B = {2, 3, 5, 8}. What is A ∪ B?",
+  "options": [
+   "{1, 2, 3, 5, 7, 8}",
+   "{1, 3, 5, 7, 8}",
+   "{1, 2, 3, 5}",
+   "{3, 5}"
+  ],
+  "answer": "{1, 2, 3, 5, 7, 8}",
+  "explanation": "Step 1 — Union means every member of A together with every member of B.\nStep 2 — Collect all the members:\n1, 3, 5, 7 from A and 2, 3, 5, 8 from B\nStep 3 — Write each member once only, so the shared 3 and 5 are not repeated:\n{1, 2, 3, 5, 7, 8}\nStep 4 — A ∩ B is {3, 5}, which is why the union is not just the two sets written one after the other.",
+  "topic": "union-intersection-complement"
  },
  {
   "id": "p73",
@@ -832,6 +1235,19 @@
   "topic": "fractions-decimals-percentages"
  },
  {
+  "id": "p156",
+  "question": "A feasible region has corner points (1, 1), (5, 1) and (2, 4). The objective is P = 2x + 3y and it is to be minimised. Which corner gives the minimum?",
+  "options": [
+   "(1, 1), where P = 5",
+   "(5, 1), where P = 13",
+   "(2, 4), where P = 16",
+   "(0, 0), where P = 0"
+  ],
+  "answer": "(1, 1), where P = 5",
+  "explanation": "Step 1 — A linear objective is smallest or largest at a corner, so test only the corners of the region:\n(1, 1): 2(1) + 3(1) = 5\n(5, 1): 2(5) + 3(1) = 13\n(2, 4): 2(2) + 3(4) = 16\nStep 2 — Compare the values:\n5, 13, 16\nStep 3 — The smallest is 5, at the corner (1, 1).\nStep 4 — (0, 0) is not a corner of this region, so P = 0 is not allowed: the point is outside the feasible region.",
+  "topic": "mat-rel-linear-programming"
+ },
+ {
   "id": "p76",
   "question": "If y varies directly as x and y = 10 when x = 2, what is y when x = 5?",
   "options": [
@@ -856,6 +1272,19 @@
   "answer": "Speed and time for fixed distance",
   "explanation": "Step 1 — In inverse proportion, one quantity rises as the other falls.\nStep 2 — For a fixed distance, speed × time = distance, a constant - a faster speed means less time.\nStep 3 — The other pairs rise together or are unrelated, so speed and time is the inverse proportion.",
   "topic": "mat-alg-variation"
+ },
+ {
+  "id": "p157",
+  "question": "How many lines of symmetry does a regular pentagon have?",
+  "options": [
+   "5",
+   "10",
+   "1",
+   "2"
+  ],
+  "answer": "5",
+  "explanation": "Step 1 — A regular polygon has one line of symmetry through each vertex and the midpoint of the opposite side.\nStep 2 — A pentagon has 5 vertices, so there are 5 such lines.\nStep 3 — Each of those lines also cuts the pentagon into two halves that fold onto each other, so all 5 count.\nStep 4 — A regular pentagon has 5 lines of symmetry, and its rotational order is also 5.",
+  "topic": "mat-geo-symmetry"
  },
  {
   "id": "p80",
@@ -884,6 +1313,19 @@
   "topic": "mat-alg-simultaneous-equations"
  },
  {
+  "id": "p158",
+  "question": "A is (1, 2), B is (4, 6) and C is (7, 10). Which statement proves that A, B and C are collinear?",
+  "options": [
+   "BC = AB = [3; 4], so AB and BC are parallel and they share the point B",
+   "BC = [4; 3], so AB is perpendicular to BC",
+   "AB and BC have the same length but different directions",
+   "BC = 2AB, so AB and BC are not parallel"
+  ],
+  "answer": "BC = AB = [3; 4], so AB and BC are parallel and they share the point B",
+  "explanation": "Step 1 — Find AB: B - A = (4 - 1, 6 - 2) = [3; 4].\nStep 2 — Find BC: C - B = (7 - 4, 10 - 6) = [3; 4].\nStep 3 — BC is a scalar multiple of AB (the multiple is 1), so the two vectors are parallel.\nStep 4 — They share the point B, so the three points lie on one straight line and A, B and C are collinear.",
+  "topic": "mat-vm-vector-geometry-and-applications"
+ },
+ {
   "id": "p83",
   "question": "The translation vector (3, -2) moves a point (1, 4) to:",
   "options": [
@@ -908,6 +1350,19 @@
   "answer": "45°",
   "explanation": "Step 1 — tan θ = opposite/adjacent, so tan θ = 1 means the opposite and adjacent sides are equal.\nStep 2 — A right-angled triangle with two equal shorter sides has two equal angles: 90° + 45° + 45°.\nStep 3 — So θ = 45°, and tan 45° = 1.",
   "topic": "trig-ratios"
+ },
+ {
+  "id": "p159",
+  "question": "A school wants to know how many of its 1,200 students walk to school. Which sample is most likely to be representative?",
+  "options": [
+   "120 students chosen at random from the school roll",
+   "The first 120 students to arrive at the gate",
+   "The 120 members of the athletics team",
+   "The 120 students in one form class"
+  ],
+  "answer": "120 students chosen at random from the school roll",
+  "explanation": "Step 1 — A representative sample gives every member of the population an equal chance of being picked.\nStep 2 — The school roll is the whole population, so picking at random from it gives every student that equal chance.\nStep 3 — The early arrivals, the athletics team and one form class are all chosen by something other than chance, so each of them is biased towards a group that may walk more or less than average.\nStep 4 — The random sample from the roll is the representative one.",
+  "topic": "mat-stat-data-types-and-sampling"
  },
  {
   "id": "p88",
@@ -936,6 +1391,19 @@
   "topic": "perimeter-area"
  },
  {
+  "id": "p160",
+  "question": "A rectangular plot measures 4 cm by 3 cm on a drawing with a scale of 1:200. What is the real area in square metres?",
+  "options": [
+   "48 m²",
+   "24 m²",
+   "480 m²",
+   "12 m²"
+  ],
+  "answer": "48 m²",
+  "explanation": "Step 1 — Find the real lengths. 4 cm × 200 = 800 cm = 8 m, and 3 cm × 200 = 600 cm = 6 m.\nStep 2 — The real area is length × width: 8 m × 6 m = 48 m².\nStep 3 — Check with the area scale factor: areas scale by the square of the length factor, so 200² = 40,000. The drawing area is 4 × 3 = 12 cm², and 12 × 40,000 = 480,000 cm².\nStep 4 — 480,000 cm² ÷ 10,000 = 48 m², so both routes give 48 m².",
+  "topic": "mat-meas-scale-and-scale-drawings"
+ },
+ {
   "id": "p92",
   "question": "The probability that it rains is 0.3. What is the probability it does not rain?",
   "options": [
@@ -960,6 +1428,19 @@
   "answer": "7",
   "explanation": "Step 1 — 4x means 4 × x, so undo the multiplication by dividing.\nStep 2 — Divide both sides by 4:\nx = 28/4\nStep 3 — x = 7",
   "topic": "algebraic-expressions"
+ },
+ {
+  "id": "p161",
+  "question": "A sequence begins 5, 9, 13, 17, ... What is the nth term?",
+  "options": [
+   "4n + 1",
+   "4n - 1",
+   "5n",
+   "n + 4"
+  ],
+  "answer": "4n + 1",
+  "explanation": "Step 1 — Find the common difference:\n9 - 5 = 4, so the rule is 4n plus a constant.\nStep 2 — Test 4n against the first term:\n4 × 1 = 4, but the first term is 5.\nStep 3 — Add the difference between them:\n5 - 4 = 1, so the nth term is 4n + 1.\nStep 4 — Check with n = 3: 4 × 3 + 1 = 13, which is the third term.",
+  "topic": "mat-num-number-sequences"
  },
  {
   "id": "p97",
@@ -988,6 +1469,19 @@
   "topic": "fractions-decimals-percentages"
  },
  {
+  "id": "p162",
+  "question": "Which statement describes the graph of y = 1/x?",
+  "options": [
+   "It has two branches, and it never touches either axis",
+   "It is one branch that passes through the origin",
+   "It is two straight lines that meet at the origin",
+   "It is a single curve that touches the x-axis at x = 1"
+  ],
+  "answer": "It has two branches, and it never touches either axis",
+  "explanation": "Step 1 — The value x = 0 is not allowed, because you cannot divide by zero, so the graph splits into two branches: one for x > 0 and one for x < 0.\nStep 2 — Take large x: 1/100 = 0.01 and 1/10,000 = 0.0001, so the curve gets close to the x-axis but never reaches it.\nStep 3 — Take x close to zero: 1/0.01 = 100, so the curve shoots up and never reaches the y-axis.\nStep 4 — Both axes are asymptotes, so the graph has two branches and never touches either axis.",
+  "topic": "mat-rel-non-linear-functions"
+ },
+ {
   "id": "p101",
   "question": "A shop buys a phone case for $350 and sells it for $420. What is the percentage profit?",
   "options": [
@@ -1012,6 +1506,19 @@
   "answer": "$1,200",
   "explanation": "Step 1 — Write the simple interest formula:\nI = (P × R × T) ÷ 100\nStep 2 — Substitute P = 8,000, R = 6 and T = 2.5:\nI = (8,000 × 6 × 2.5) ÷ 100 = 120,000 ÷ 100\nStep 3 — State the interest:\nI = $1,200",
   "topic": "simple-and-compound-interest"
+ },
+ {
+  "id": "p163",
+  "question": "Which statement about a parallelogram is true?",
+  "options": [
+   "It has 0 lines of symmetry and rotational symmetry of order 2",
+   "It has 2 lines of symmetry and rotational symmetry of order 2",
+   "It has 0 lines of symmetry and no rotational symmetry",
+   "It has 4 lines of symmetry and rotational symmetry of order 4"
+  ],
+  "answer": "It has 0 lines of symmetry and rotational symmetry of order 2",
+  "explanation": "Step 1 — Try a fold: a diagonal fold does not land one half on the other, and neither does a fold through the midpoints of opposite sides.\nStep 2 — So there are 0 lines of symmetry.\nStep 3 — Now turn it: a half turn of 180° about the centre lands the parallelogram on itself, and no smaller turn does.\nStep 4 — So the rotational order is 2. A rectangle is different: it has 2 lines of symmetry.",
+  "topic": "mat-geo-symmetry"
  },
  {
   "id": "p103",
@@ -1040,6 +1547,19 @@
   "topic": "taxes-and-utility-bills"
  },
  {
+  "id": "p164",
+  "question": "The transformation with matrix [[0, -1], [1, 0]] maps the point (3, -2) to which point?",
+  "options": [
+   "(2, 3)",
+   "(-2, 3)",
+   "(3, 2)",
+   "(-3, -2)"
+  ],
+  "answer": "(2, 3)",
+  "explanation": "Step 1 — The matrix sends (x, y) to (0 × x + (-1) × y, 1 × x + 0 × y).\nStep 2 — Substitute x = 3 and y = -2 into the top row: 0 × 3 + (-1) × (-2) = 0 + 2 = 2.\nStep 3 — Substitute into the bottom row: 1 × 3 + 0 × (-2) = 3 + 0 = 3.\nStep 4 — The image is (2, 3). The matrix is the 90° anticlockwise rotation about the origin, and a quarter turn anticlockwise does send (3, -2) to (2, 3).",
+  "topic": "mat-vm-matrix-transformations-and-applications"
+ },
+ {
   "id": "p105",
   "question": "The exchange rate is US$1 = J$158.40. How many US dollars does J$79,200 buy?",
   "options": [
@@ -1064,6 +1584,19 @@
   "answer": "$20,000",
   "explanation": "Step 1 — Write the premium as a percentage of the sum insured:\npremium = 0.8% of 2,500,000\nStep 2 — Change the percentage to a decimal and multiply:\n0.008 × 2,500,000 = 20,000\nStep 3 — State the premium:\n$20,000 per year",
   "topic": "insurance-and-budgeting"
+ },
+ {
+  "id": "p165",
+  "question": "A pie chart shows the favourite sport of 40 students. 12 of them choose football. What is the angle of the football sector?",
+  "options": [
+   "108°",
+   "12°",
+   "120°",
+   "90°"
+  ],
+  "answer": "108°",
+  "explanation": "Step 1 — Find the fraction of the whole that chose football: 12 out of 40, which is 12/40.\nStep 2 — A full circle is 360°, so multiply the fraction by 360°: (12 ÷ 40) × 360°.\nStep 3 — 12 ÷ 40 = 0.3, and 0.3 × 360 = 108.\nStep 4 — The football sector is 108°. Check: 108/360 = 0.3 = 12/40.",
+  "topic": "mat-stat-statistical-diagrams"
  },
  {
   "id": "p107",
@@ -1092,6 +1625,19 @@
   "topic": "subsets-and-cardinality"
  },
  {
+  "id": "p166",
+  "question": "A speed-time graph shows a steady speed of 8 m/s for 15 s. What distance is travelled?",
+  "options": [
+   "120 m",
+   "23 m",
+   "60 m",
+   "240 m"
+  ],
+  "answer": "120 m",
+  "explanation": "Step 1 — On a speed-time graph the distance travelled is the area under the line.\nStep 2 — The area is a rectangle: height 8 m/s and width 15 s.\nStep 3 — Multiply:\n8 × 15 = 120\nStep 4 — The distance is 120 m. Adding the two numbers (8 + 15 = 23) is the mistake the wrong options are built on.",
+  "topic": "mat-rel-non-linear-functions"
+ },
+ {
   "id": "p109",
   "question": "In a class of 40 students, 24 like cricket, 20 like football and 12 like both. How many like cricket only?",
   "options": [
@@ -1116,6 +1662,19 @@
   "answer": "{3, 5}",
   "explanation": "Step 1 — Recall that ∩ means 'in both sets':\nList the elements that appear in A and also in B.\nStep 2 — Compare the two sets element by element:\n3 and 5 appear in both A and B; 1 and 7 are only in A; 2 and 8 are only in B.\nStep 3 — State the intersection:\nA ∩ B = {3, 5}",
   "topic": "union-intersection-complement"
+ },
+ {
+  "id": "p167",
+  "question": "In triangle ABC, a = 8 cm, angle A = 40° and angle B = 60°. Find b, to 1 decimal place.",
+  "options": [
+   "10.8 cm",
+   "7.2 cm",
+   "12.4 cm",
+   "9.4 cm"
+  ],
+  "answer": "10.8 cm",
+  "explanation": "Step 1 — The question gives two angles and a side opposite one of them, so use the Sine Rule: a / sin A = b / sin B.\nStep 2 — Rearrange to make b the subject: b = a sin B / sin A.\nStep 3 — Substitute: b = 8 × sin 60° / sin 40° = 8 × 0.8660 / 0.6428 = 8 × 1.3473 = 10.778.\nStep 4 — To 1 decimal place, b = 10.8 cm.",
+  "topic": "mat-geo-sine-and-cosine-rules"
  },
  {
   "id": "p111",
@@ -1144,6 +1703,19 @@
   "topic": "set-word-problems"
  },
  {
+  "id": "p168",
+  "question": "A 2 × 2 matrix M has determinant 0. What does this tell you about M?",
+  "options": [
+   "M is singular, has no inverse, and maps the plane onto a line",
+   "M has an inverse, and the inverse has determinant 1",
+   "M doubles every area it is applied to",
+   "M is a rotation of 90°"
+  ],
+  "answer": "M is singular, has no inverse, and maps the plane onto a line",
+  "explanation": "Step 1 — The determinant is the area scale factor, so a determinant of 0 scales every area to 0.\nStep 2 — Everything is flattened onto a single line, and that cannot be undone, so the transformation has no inverse.\nStep 3 — A matrix with no inverse is called singular, and the inverse formula divides by the determinant, which is why it fails at 0.\nStep 4 — A rotation, a reflection and an enlargement all keep some area, so none of them has determinant 0.",
+  "topic": "mat-vm-matrix-transformations-and-applications"
+ },
+ {
   "id": "p113",
   "question": "Which of the following is a prime number?",
   "options": [
@@ -1168,6 +1740,19 @@
   "answer": "128",
   "explanation": "Step 1 — Use the law for multiplying powers of the same base:\na^m × a^n = a^(m+n)\nStep 2 — Add the indices:\n2³ × 2⁴ = 2⁷\nStep 3 — Evaluate:\n2⁷ = 128",
   "topic": "indices-and-surds"
+ },
+ {
+  "id": "p169",
+  "question": "Which diagram is drawn with no gaps between the bars?",
+  "options": [
+   "A histogram",
+   "A bar chart",
+   "A pie chart",
+   "A frequency polygon"
+  ],
+  "answer": "A histogram",
+  "explanation": "Step 1 — A bar chart has one bar per category, and the bars are separated by gaps because the categories are separate things.\nStep 2 — A histogram is for grouped numerical data, and there the bars sit side by side on the class boundaries with no gaps, because the classes run on from each other.\nStep 3 — A pie chart has sectors rather than bars, and a frequency polygon is a line joining the class midpoints.\nStep 4 — The diagram with no gaps between its bars is the histogram.",
+  "topic": "mat-stat-statistical-diagrams"
  },
  {
   "id": "p115",
@@ -1196,6 +1781,19 @@
   "topic": "factorization"
  },
  {
+  "id": "p170",
+  "question": "In triangle ABC, b = 7 cm, c = 9 cm and angle A = 60°. Find a, to 1 decimal place.",
+  "options": [
+   "8.2 cm",
+   "67 cm",
+   "11.5 cm",
+   "5.6 cm"
+  ],
+  "answer": "8.2 cm",
+  "explanation": "Step 1 — The question gives two sides and the angle between them, so use the Cosine Rule: a² = b² + c² - 2bc cos A.\nStep 2 — Substitute: a² = 7² + 9² - 2 × 7 × 9 × cos 60°.\nStep 3 — Work out the parts: 49 + 81 = 130 and 2 × 7 × 9 = 126, with cos 60° = 0.5, so 130 - 63 = 67.\nStep 4 — Take the square root: a = √67 = 8.185, so a = 8.2 cm to 1 decimal place.",
+  "topic": "mat-geo-sine-and-cosine-rules"
+ },
+ {
   "id": "p117",
   "question": "Simplify (x² − 25)/(x + 5).",
   "options": [
@@ -1220,6 +1818,19 @@
   "answer": "t = (v − u)/a",
   "explanation": "Step 1 — Subtract u from both sides:\nv − u = at\nStep 2 — Divide both sides by a:\n(v − u) ÷ a = t\nStep 3 — Write with t as the subject:\nt = (v − u)/a",
   "topic": "transposition-and-substitution"
+ },
+ {
+  "id": "p171",
+  "question": "A random sample of 50 students from a school of 800 owns an average of 3 textbooks each. What is the best estimate of the number of textbooks owned by the whole school?",
+  "options": [
+   "2,400",
+   "150",
+   "800",
+   "4,800"
+  ],
+  "answer": "2,400",
+  "explanation": "Step 1 — Scale the sample result up to the size of the population: the school is 800 ÷ 50 = 16 times the sample.\nStep 2 — Multiply the sample mean by that factor: 3 × 16.\nStep 3 — 3 × 16 = 48 per group of 50, so the total is 3 × 800 ÷ 50 = 48 × 50 = 2,400.\nStep 4 — The estimate is 2,400 textbooks, and it is an estimate rather than an exact count because it comes from a sample.",
+  "topic": "mat-stat-statistical-inference"
  },
  {
   "id": "p119",
@@ -1248,6 +1859,19 @@
   "topic": "angles-and-polygons"
  },
  {
+  "id": "p172",
+  "question": "The bearing of B from A is 047°. What is the bearing of A from B?",
+  "options": [
+   "227°",
+   "133°",
+   "313°",
+   "047°"
+  ],
+  "answer": "227°",
+  "explanation": "Step 1 — The bearing of A from B is the back bearing. The north lines at A and at B are parallel.\nStep 2 — 047° is less than 180°, so add 180° to turn round:\n47 + 180\nStep 3 — 47 + 180 = 227\nStep 4 — The bearing of A from B is 227°. It must still be written with three figures.",
+  "topic": "mat-geo-bearings"
+ },
+ {
   "id": "p121",
   "question": "What is the size of the angle in a semicircle?",
   "options": [
@@ -1274,6 +1898,19 @@
   "topic": "transformations"
  },
  {
+  "id": "p173",
+  "question": "One sample of 20 workers gives a mean weekly wage of $18,500 and a second sample of 400 workers gives $18,700. Which inference is the sounder?",
+  "options": [
+   "The mean from the sample of 400 is more reliable, so the population mean is likely to be close to $18,700",
+   "The mean from the sample of 20 is more reliable, because each worker was counted carefully",
+   "The two means prove the population mean is exactly $18,600",
+   "The sample of 20 is better, because it is a census"
+  ],
+  "answer": "The mean from the sample of 400 is more reliable, so the population mean is likely to be close to $18,700",
+  "explanation": "Step 1 — A larger random sample gives a more reliable estimate, because the sample mean moves less from sample to sample.\nStep 2 — 400 workers is twenty times the size of 20 workers, so $18,700 is the more reliable of the two means.\nStep 3 — The difference between the two means is $200, which is small next to both, so the two samples do not contradict each other.\nStep 4 — Neither mean proves the exact population mean, and a sample of 20 is never a census, so the sounder inference is that the population mean is likely to be close to $18,700.",
+  "topic": "mat-stat-statistical-inference"
+ },
+ {
   "id": "p123",
   "question": "A data set contains 40 values. At which cumulative frequency is the median read from an ogive?",
   "options": [
@@ -1298,5 +1935,18 @@
   "answer": "45,000 cm²",
   "explanation": "Step 1 — Convert the linear unit first:\n1 m = 100 cm\nStep 2 — Square the conversion for area:\n1 m² = 100 × 100 = 10,000 cm²\nStep 3 — Multiply by the number of square metres:\n4.5 × 10,000 = 45,000 cm²",
   "topic": "si-units-and-conversion"
+ },
+ {
+  "id": "p174",
+  "question": "A ship sails 12 km on a bearing of 090° from P to Q, then 16 km on a bearing of 180° from Q to R. How far is R from P?",
+  "options": [
+   "20 km",
+   "28 km",
+   "14 km",
+   "400 km"
+  ],
+  "answer": "20 km",
+  "explanation": "Step 1 — A bearing of 090° is due east and a bearing of 180° is due south, so the two legs are at right angles to each other at Q.\nStep 2 — The angle PQR is therefore 90°, so triangle PQR is right-angled with the right angle at Q.\nStep 3 — Use Pythagoras with PR as the hypotenuse:\nPR² = 12² + 16² = 144 + 256 = 400\nStep 4 — PR = √400 = 20 km. Adding the legs (28 km) is not the distance from P to R.",
+  "topic": "mat-geo-bearings"
  }
 ]

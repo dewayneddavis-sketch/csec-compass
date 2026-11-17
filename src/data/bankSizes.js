@@ -2,10 +2,10 @@
 // to the other promises (pricingSubjects.js), not in content/<subject>/metadata.json,
 // which is descriptive and mirrored byte-for-byte to public/content.
 //
-// Slice 0 ships this with an EMPTY override map: every subject is still 100 and
-// every paper is still 20, so nothing a student sees changes. The Mathematics
-// re-balance is a ONE-LINE change here — { mathematics: 150 } — and every pin,
-// every label and the parents-page copy follow it with no harness edit.
+// Slice 0 shipped this with an EMPTY override map, so every subject was still
+// 100 and every paper still 20. The Mathematics re-balance has now landed as the
+// ONE-LINE change below — { mathematics: 150 } — and every pin, every label and
+// the parents-page copy follow it with no harness edit.
 //
 // The number of papers stays in practicePapers.js (it is the UI structure — five
 // tabs); this module imports it rather than declaring a second "5".
@@ -17,8 +17,9 @@ export const KNOWLEDGE_CHECK_DEFAULT = 25;
 // Only subjects that differ from the default appear here. A key naming no real
 // subject silently does nothing, which is the failure this map's stray-key
 // assertion exists to catch (tools/check-subject-catalog.mjs).
-// after the Mathematics re-balance: { mathematics: 150 }
-export const PRACTICE_BANK_OVERRIDES = {};
+// Mathematics is the owner's one exception (ruling 2026-11-05): a 150-question
+// practice bank, 30 per paper. Its knowledge check stays 25.
+export const PRACTICE_BANK_OVERRIDES = { mathematics: 150 };
 
 export function practiceBankSize(subjectId) {
   return Object.prototype.hasOwnProperty.call(PRACTICE_BANK_OVERRIDES, subjectId)

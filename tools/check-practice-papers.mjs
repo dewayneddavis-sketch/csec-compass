@@ -218,9 +218,14 @@ ok(/key=\{activeTab\}/.test(page), "each practice tab mounts its own panel");
 // 5. RED CONTROL: doctored banks must FAIL the assertions above.
 // ---------------------------------------------------------------------------
 console.log("\n=== red control: the count assertion bites ===");
-const controlBank = readJson(`content/${banked[0]}/practice.json`);
+// This block asserts the DEFAULT 20-per-paper arithmetic, so the control bank has
+// to be a subject that is actually on the default size. "The first banked
+// subject" was enough while every subject was 100; Mathematics now carries 150,
+// and taking whichever bank comes first would silently test 30-per-paper instead.
+const controlSubject = banked.find((id) => practiceBankSize(id) === PRACTICE_BANK_DEFAULT);
+const controlBank = readJson(`content/${controlSubject}/practice.json`);
 const controlList = Array.isArray(controlBank) ? controlBank : controlBank.exercises || [];
-const controlPerPaper = questionsPerPaper(practiceBankSize(banked[0]));
+const controlPerPaper = questionsPerPaper(PRACTICE_BANK_DEFAULT);
 const short = controlList.slice(0, 99);
 const fourPapers = controlList.slice(0, 80);
 const long = controlList.concat(controlList.slice(0, 5));
@@ -240,10 +245,12 @@ ok(splitFailures(controlList, controlPerPaper).length === 0, "the same caller is
 eq(splitPracticePapers(controlList.concat(controlList.slice(0, 20)), controlPerPaper).length, 5, "a 120-question bank still yields five papers");
 
 // ---------------------------------------------------------------------------
-// THE PER-SUBJECT MECHANISM, proved TODAY — before any override exists. A
-// 150-question bank at the Mathematics per-paper size must split 30/30/30/30/30,
-// and the SAME bank at the old hardcoded 20 must fail with 50 questions never
-// reaching a paper. Without this pair the per-subject path is untested code.
+// THE PER-SUBJECT MECHANISM, proved independently of the override. A 150-question
+// bank at the Mathematics per-paper size must split 30/30/30/30/30, and the SAME
+// bank at the old hardcoded 20 must fail with 50 questions never reaching a paper.
+// Without this pair the per-subject path is untested code. The override is live
+// now, so the shipped Mathematics bank is also checked by the loop above.
+eq(practiceBankSize("mathematics"), 150, "Mathematics carries the owner's 150-question exception");
 // ---------------------------------------------------------------------------
 const synthetic150 = Array.from({ length: 150 }, (_, i) => ({ id: `s${i}` }));
 ok(splitFailures(synthetic150, 30).length === 0, "a 150-question bank splits 30/30/30/30/30");

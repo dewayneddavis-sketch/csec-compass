@@ -6,9 +6,13 @@
 // none on the three the bank never examined. Nothing failed, because nothing looked.
 //
 // It asserts, for content/ and its byte-identical public/ mirror:
-//   1. practice: exactly 100 questions, every topic naming a LIVE lesson (orphans must read 0),
-//      no two questions with the same text inside one lesson, four distinct options, the answer
-//      among them, and a multi-step explanation (the same rule check-math-review-loop applies).
+//   1. practice: exactly practiceBankSize("mathematics") questions (150 since the
+//      owner's Mathematics exception; the size is READ, never retyped here), every
+//      topic naming a LIVE lesson (orphans must read 0), no two questions with the
+//      same text inside one lesson, four distinct options, the answer among them,
+//      and a multi-step explanation (the same rule check-math-review-loop applies).
+//   1b. every one of the live lessons is drilled by at least one practice question,
+//      and at least one lesson carries exactly one (so the fallback path is real).
 //   2. knowledge check: exactly 25, distributed 3 per module for the seven largest modules and
 //      2 for the rest (25 = 3x7 + 2x2), never two questions on one lesson inside a module, the
 //      named gap closed (factorization, quadratic-equations, inequalities), and the same shape,
@@ -22,6 +26,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { practiceBankSize } from "../src/data/bankSizes.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const readJson = (p) => JSON.parse(fs.readFileSync(path.join(root, p), "utf8"));
@@ -32,7 +37,9 @@ const check = (cond, msg) => { if (cond) pass++; else { fail++; console.log("FAI
 const section = (t) => console.log(`\n== ${t}`);
 
 const SHAPE = ["id", "question", "options", "answer", "explanation", "topic"];
-const PRACTICE = 100;
+// The practice size is the owner's Mathematics exception, read from the one place
+// that owns it. Retyping 150 here would let the harness and the promise drift.
+const PRACTICE = practiceBankSize("mathematics");
 const KC = 25;
 // The knowledge check's distribution: a third question to the seven largest modules.
 const KC_THIRD_FOR_LARGEST = 7;
@@ -107,8 +114,21 @@ function checkProblems(kc, live, mapLesson, want) {
   return out;
 }
 
+/** The live lessons no practice question drills. */
+function undrilledLessons(bank, all) {
+  const drilled = new Set(bank.map((q) => q.topic));
+  return all.filter((l) => !drilled.has(l));
+}
+
+/** The live lessons carrying exactly one practice question — the fallback path. */
+function singleQuestionLessons(bank, all) {
+  const n = new Map();
+  for (const q of bank) n.set(q.topic, (n.get(q.topic) || 0) + 1);
+  return all.filter((l) => n.get(l) === 1);
+}
+
 // ------------------------------------------------------------------------- the run
-section("1. the practice bank: 100 questions, every topic naming a live lesson");
+section(`1. the practice bank: ${PRACTICE} questions, every topic naming a live lesson`);
 const practice = readJson("content/mathematics/practice.json");
 const kc = readJson("content/mathematics/knowledge-check.json");
 const practiceOut = practiceProblems(practice, lessonIds);
@@ -116,11 +136,18 @@ for (const p of practiceOut) check(false, p);
 check(practiceOut.length === 0, `the practice bank has ${practiceOut.length} problems`);
 
 const drilled = new Set(practice.map((q) => q.topic));
-const undrilled = lessons.filter((l) => !drilled.has(l));
+const undrilled = undrilledLessons(practice, lessons);
 check(lessonIds.size === lessons.length, "lesson ids are unique");
 console.log(`   practice drills ${drilled.size} of ${lessons.length} lessons; ${undrilled.length} have no practice question`);
 console.log(`   (${undrilled.join(", ")})`);
 check(drilled.size + undrilled.length === lessons.length, "the drilled and undrilled counts add up to the lesson total");
+// Every shipped lesson is drilled at least once. This is the assertion the
+// re-balance existed to earn: before it, 16 of the 63 lessons were unreachable
+// from the practice tab and nothing failed, because nothing looked.
+check(undrilled.length === 0, `${undrilled.length} lessons have no practice question: ${undrilled.join(", ")}`);
+const single = singleQuestionLessons(practice, lessons);
+console.log(`   ${single.length} lessons carry exactly one question: ${single.join(", ")}`);
+check(single.length > 0, "at least one lesson carries exactly one question, so the single-question fallback stays real");
 
 section("2. the knowledge check: 25, 3 for the seven largest modules and 2 for the rest");
 const kcOut = checkProblems(kc, lessonIds, moduleOf, wantPerModule);
@@ -157,6 +184,17 @@ if (RED_CONTROL) {
       checkProblems(kc.filter((q) => q.topic !== GAP[0]), lessonIds, moduleOf, wantPerModule)],
   ];
   for (const [label, problems] of cases) check(problems.length > 0, `red control bites: ${label}`);
+  // The two new guards, each driven by a perturbation of the shipped bank.
+  const strippedLesson = lessons[lessons.length - 1];
+  const stripped = undrilledLessons(practice.filter((q) => q.topic !== strippedLesson), lessons);
+  check(stripped.length === 1 && stripped[0] === strippedLesson, `red control bites: a lesson stripped of its questions reads undrilled (${strippedLesson})`);
+  const doubled = practice.concat(
+    practice.filter((q) => q.topic === single[0]).map((q) => ({ ...q, id: q.id + "-second", question: q.question + " (a second question)" }))
+  );
+  check(
+    singleQuestionLessons(doubled, lessons).length === single.length - 1,
+    `red control bites: a second question on ${single[0]} drops the single-question count by one`
+  );
   const a = readBytes("content/mathematics/practice.json");
   const b = readBytes("public/content/mathematics/practice.json");
   check(a.equals(b), "the mirrors are equal before the mirror control");
