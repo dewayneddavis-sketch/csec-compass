@@ -36,6 +36,19 @@
 // of every authored step is a review obligation carried by each backfill PR,
 // together with an independently re-derived arithmetic table.
 //
+// A18 — THE PER-LESSON REVEAL WALK (added 2026-11-18)
+// ---------------------------------------------------
+// The other assertions prove the reveal for the lessons that OWN a per-lesson
+// set, and prove the type table answers for the nine drag types. Nothing said
+// "this lesson's Play tab renders these items, and every one of them reveals a
+// method" in one place — so a report that `fractions-decimals-percentages` shows
+// a correct answer with no method (2026-11-18) took a hand audit to settle. A18
+// walks every lesson that renders DragDropLabel (its own set first, then the
+// type block, in the component's own order), resolves each rendered item through
+// the shipped `labReveal`, and fails by lesson and item when the reveal is the
+// answer with `steps: []`. The six lessons that render another tool are derived
+// and printed with the harness that owns each (see revealWalkOf).
+//
 // Usage:
 //   node tools/check-math-working.mjs                  # the real tree
 //   node tools/check-math-working.mjs --selftest       # synthetic fixture only
@@ -180,6 +193,118 @@ function typeBlocksOf(src) {
   return out;
 }
 
+// The five experiment-type groups the Mathematics Play tab routes on, read out
+// of src/components/ExperimentSandbox.jsx rather than retyped (the same slicing
+// tools/check-mathematics-labs.mjs does, so the two harnesses cannot disagree
+// about which type reaches which tool).
+function mathTypeGroupsOf(src) {
+  const typesOf = (name) => {
+    const at = String(src).indexOf(`const ${name} = new Set([`);
+    if (at === -1) return [];
+    const end = String(src).indexOf("]);", at);
+    if (end === -1) return [];
+    return [...String(src).slice(at, end).matchAll(/"([a-z0-9-]+)"/g)].map((m) => m[1]);
+  };
+  return {
+    drag: new Set(typesOf("MATH_DRAG_TYPES")),
+    graphing: new Set([
+      ...typesOf("MATH_LINEAR_TYPES"),
+      ...typesOf("MATH_PARABOLA_TYPES"),
+      ...typesOf("MATH_NUMBERLINE_TYPES"),
+    ]),
+    balance: new Set(typesOf("MATH_BALANCE_TYPES")),
+    area: new Set(typesOf("MATH_AREA_TYPES")),
+    volume: new Set(typesOf("MATH_VOLUME_TYPES")),
+  };
+}
+
+// ---------------------------------------------------------------------------
+// THE REVEAL WALK — every Mathematics lesson whose Play tab renders
+// DragDropLabel, and every item it renders, resolved through the shipped
+// resolver. Added 2026-11-18 with assertion A18.
+//
+// WHY IT EXISTS. The coverage line counts the lessons that own a per-lesson set
+// and says the rest "resolve through the type table" — a sentence nothing
+// asserted. The chain was there but implicit and spread over three assertions in
+// two harnesses (check-mathematics-labs A10 says the type is recognised,
+// check-math-working A7 says the type block's items resolve, A16 says the block
+// and the table hold the same ids). No one of them names the lesson whose Play
+// tab shows a correct answer with `steps: []`, so a report of exactly that
+// (2026-11-18, `fractions-decimals-percentages`) took a hand audit to settle.
+// This walk answers it in one assertion, per lesson and per item.
+//
+// It mirrors DragDropLabel's OWN resolution order (src/components/DragDropLabel.jsx:
+// `lessonSets[subjectId][lessonId]` first, then `subjectTypeSets[subjectId][experimentType]`),
+// so the items it walks are the items the student sees — derived from the set or
+// from the type block, never hand-typed.
+//
+// WHAT IT DOES NOT COVER: the six lessons that render another tool — the three
+// graphing lessons (src/data/graphingTasks.js, asserted by
+// tools/check-graph-reveal.mjs G2), the balance lesson (solveBalanceMethod,
+// asserted by tools/check-show-your-work.mjs §5) and the two measurement tools
+// (asserted by tools/check-mathematics-labs.mjs A13/A14). They are DERIVED here
+// and named in the printed line, so a lesson that quietly stopped rendering a
+// tool cannot drop out of the walk unnoticed.
+// ---------------------------------------------------------------------------
+function revealWalkOf(env) {
+  const groups = mathTypeGroupsOf(env.sandboxSource);
+  const blocks = typeBlocksOf(env.ddSource);
+  const otherTool = new Set([...groups.graphing, ...groups.balance, ...groups.area, ...groups.volume]);
+  const problems = [];
+  const walkedLessons = [];
+  const notWalked = [];
+  let walkedItems = 0;
+  let ownCount = 0;
+  for (const lessonId of env.lessonIds || []) {
+    const type = (env.lessonTypes || new Map()).get(lessonId);
+    const own = hasOwn(env.sets, lessonId);
+    if (!own && !groups.drag.has(type)) { notWalked.push(lessonId); continue; }
+    const items = own ? itemsOf(env.sets[lessonId]) : (blocks[type] || []);
+    if (items.length === 0) {
+      problems.push(`A18: ${lessonId}: the Play tab renders ${own ? "its own set" : `the "${type}" type block`} and that holds no items, so no item can reveal a method`);
+      continue;
+    }
+    walkedLessons.push(lessonId);
+    if (own) ownCount += 1;
+    for (const item of items) {
+      walkedItems += 1;
+      const r = env.working.labReveal({
+        subjectId: "mathematics", experimentType: type, itemId: item.id, lessonId, answer: item.answer,
+      });
+      if (!r) {
+        problems.push(`A18: ${lessonId}/${item.id}: labReveal returned null — a wrong drop would show no answer at all`);
+        continue;
+      }
+      if (r.answer !== item.answer) {
+        problems.push(`A18: ${lessonId}/${item.id}: the reveal states the answer ${JSON.stringify(r.answer)} — the set the Play tab renders holds ${JSON.stringify(item.answer)}`);
+      }
+      if (!Array.isArray(r.steps) || r.steps.length === 0) {
+        problems.push(`A18: ${lessonId}/${item.id}: the Play tab reveals the correct answer ${JSON.stringify(item.answer)} with NO method (steps are []) — ${own ? "a lesson that owns a set must be authored in mathLessonWorkings" : `a type-keyed lesson needs a mathLabWorkings entry for "${type}"`}`);
+      }
+    }
+  }
+  // The walk must not be silently empty, and every lesson it skips must be one
+  // that renders another tool — never one that fell through to the Mathematics
+  // flashcard deck (that lesson reveals nothing at all).
+  if (walkedLessons.length === 0) problems.push("A18: the walk covered no lesson — the assertion would be vacuous");
+  const skipped = notWalked.filter((id) => !otherTool.has((env.lessonTypes || new Map()).get(id)));
+  if (skipped.length > 0) {
+    problems.push(`A18: ${skipped.length} lesson(s) are neither walked nor rendered by another tool: [${skipped.join(", ")}] — their Play tab falls to the flashcard deck, so no method can reveal`);
+  }
+  return { problems, walkedLessons, notWalked, walkedItems, ownCount, otherTool };
+}
+
+// Insert one pair into a type block of DragDropLabel's source, so a red control
+// can prove the walk sees an item the resolver has never been taught.
+function addTypeBlockPair(src, type, pairLine) {
+  const at = String(src).indexOf(`    "${type}": {`);
+  if (at === -1) throw new Error(`red controls: the "${type}" block is not in DragDropLabel.jsx`);
+  const pairsAt = String(src).indexOf("pairs: [", at);
+  if (pairsAt === -1) throw new Error(`red controls: the "${type}" block has no pairs array`);
+  const insertAt = pairsAt + "pairs: [".length;
+  return `${String(src).slice(0, insertAt)}\n        ${pairLine}${String(src).slice(insertAt)}`;
+}
+
 // lessonId → experiment.type, from the shipped modules.json.
 function lessonTypesOf() {
   const modules = JSON.parse(read("content/mathematics/modules.json"));
@@ -303,6 +428,7 @@ function baseEnv() {
     lessonTypes: lessonTypesOf(),
     lessonIds: mathematicsLessonIds(),
     ddSource: read("src/components/DragDropLabel.jsx"),
+    sandboxSource: read("src/components/ExperimentSandbox.jsx"),
     sywSource: read("tools/check-show-your-work.mjs"),
     playCopySource: read("tools/check-play-copy.mjs"),
     pending: PENDING.slice(),
@@ -749,6 +875,17 @@ function revealProblems(env) {
     problems.push(`A17: the lesson list from modules[].lessons[] ([${onlyStruct.join(", ")}]) disagrees with the one from experiment.type ([${onlyTypes.join(", ")}])`);
   }
 
+  // ---- A18: every DragDropLabel lesson reveals a METHOD, per item ------------
+  // The coverage line above counts the 48 set-owning lessons and says the rest
+  // "resolve through the type table". A18 is what makes the rest of that
+  // sentence true for the nine lessons that render the shared drag lab: it walks
+  // the items the student actually sees and fails, by lesson and item, when the
+  // reveal is the answer with no method.
+  {
+    const walk = revealWalkOf(env);
+    problems.push(...walk.problems);
+  }
+
   return problems;
 }
 
@@ -767,6 +904,13 @@ if (SELFTEST) {
   const fxWorkingsSrc = `export const mathLessonWorkings = ${JSON.stringify(fxWorkings, null, 2)};\n`;
   const fixture = await treeEnv({ workingsSrc: fxWorkingsSrc });
   fixture.sets = { [FX_LESSON]: fxSet };
+  // The fixture is a ONE-LESSON tree, so its lesson list must be one lesson too:
+  // A18 walks `lessonIds` against `sets`, and a fixture that keeps the real 63
+  // lessons while shipping one set is a tree no real run can produce (every other
+  // lesson would look like it lost its set). Narrowing it here keeps the fixture
+  // self-consistent instead of giving A18 an off-switch the real run could use.
+  fixture.lessonIds = [FX_LESSON];
+  fixture.lessonTypes = new Map([[FX_LESSON, "matching-game"]]);
   fixture.pending = [];
   fixture.expectedItems = fxItems.length;
   const clean = revealProblems(fixture);
@@ -858,6 +1002,40 @@ section("1. the shipped resolver, on the shipped tree");
     printed[4] === cov.noSet.length,
     `coverage: the printed line's numbers are the derived ones (${line})`
   );
+
+  // THE REVEAL WALK LINE — A18's numbers, printed and asserted to be the
+  // derived ones. This is the sentence a report about "a lesson with an answer
+  // and no method" is settled by: it names the lessons walked, the items walked,
+  // and the lessons that render another tool (with the harness that owns each).
+  const walk = revealWalkOf(REAL);
+  const dragWalked = walk.walkedLessons.length - walk.ownCount;
+  console.log(`    reveal walk: ${walk.walkedLessons.length} of ${REAL.lessonIds.length} lessons carry a method for every item their Play tab renders ` +
+    `(${walk.ownCount} own a set + ${dragWalked} resolve through the drag type block) / ${walk.walkedItems} items`);
+  console.log(`    not walked here: ${walk.notWalked.length} lessons render another tool — graphing (tools/check-graph-reveal.mjs G2), ` +
+    `balance (tools/check-show-your-work.mjs §5), area and volume (tools/check-mathematics-labs.mjs A13/A14)`);
+  const setItems = Object.values(REAL.sets).reduce((n, s) => n + itemsOf(s).length, 0);
+  const dragItems = walk.walkedItems - setItems;
+  const groups = mathTypeGroupsOf(REAL.sandboxSource);
+  const walkBlocks = typeBlocksOf(REAL.ddSource);
+  const dragBlockItems = REAL.lessonIds
+    .filter((id) => !hasOwn(REAL.sets, id) && groups.drag.has(REAL.lessonTypes.get(id)))
+    .reduce((n, id) => n + (walkBlocks[REAL.lessonTypes.get(id)] || []).length, 0);
+  ok(walk.walkedLessons.length + walk.notWalked.length === REAL.lessonIds.length,
+    `reveal walk: the walked lessons (${walk.walkedLessons.length}) plus the other-tool lessons (${walk.notWalked.length}) are all ${REAL.lessonIds.length} Mathematics lessons`);
+  ok(dragWalked === dragTypeLessonCount(REAL),
+    `reveal walk: the ${dragWalked} drag-type-keyed lessons are exactly the lessons whose type is in MATH_DRAG_TYPES and that own no set (${dragTypeLessonCount(REAL)})`);
+  // Not vacuous: the item count the walk reports is checked against the type
+  // blocks themselves, so a block that lost an item cannot leave the printed
+  // count looking right.
+  ok(dragItems > 0 && dragItems === dragBlockItems,
+    `reveal walk: the ${dragItems} type-block items walked are the ${dragBlockItems} items the drag blocks hold`);
+}
+
+// The number of lessons that own no set and whose experiment.type is one of the
+// nine drag types — DERIVED, so the printed drag count cannot drift from it.
+function dragTypeLessonCount(env) {
+  const groups = mathTypeGroupsOf(env.sandboxSource);
+  return (env.lessonIds || []).filter((id) => !hasOwn(env.sets, id) && groups.drag.has(env.lessonTypes.get(id))).length;
 }
 
 // ---------------------------------------------------------------------------
@@ -1211,6 +1389,59 @@ if (RED_CONTROL) {
         pending: [SYNTHETIC_PENDING_LESSON],
         lessonTypes: new Map([...env.lessonTypes, [SYNTHETIC_PENDING_LESSON, "matching-game"]]),
       };
+    });
+
+  // A18 — the reveal walk (added 2026-11-18 with the walk itself). Three states
+  // it must name. Every example is DERIVED from the tree, so a slice that
+  // authors or retires a lesson cannot rot a control into passing on nothing.
+  const DRAG_GROUPS = mathTypeGroupsOf(REAL.sandboxSource);
+  const DRAG_EX = (REAL.lessonIds || []).find((id) => !hasOwn(REAL.sets, id) && DRAG_GROUPS.drag.has(REAL.lessonTypes.get(id)));
+  if (!DRAG_EX) {
+    throw new Error("red controls: no lesson resolves through the drag type block, so A18's controls have no example and would pass without proving anything");
+  }
+  const DRAG_EX_TYPE = REAL.lessonTypes.get(DRAG_EX);
+  const DRAG_EX_ITEMS = typeBlocksOf(REAL.ddSource)[DRAG_EX_TYPE] || [];
+  if (DRAG_EX_ITEMS.length === 0) {
+    throw new Error(`red controls: the "${DRAG_EX_TYPE}" block holds no items, so A18's controls have no example item`);
+  }
+  const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const DRAG_EX_RE = escapeRe(DRAG_EX);
+  const DRAG_EX_FIRST = DRAG_EX_ITEMS[0].id;
+  console.log(`  example lesson for R26/R27/R28: ${DRAG_EX} (${DRAG_EX_TYPE}, ${DRAG_EX_ITEMS.length} items) — a lesson that owns no set and renders the drag lab`);
+  // The state the 2026-11-18 audit reported: the correct answer, steps: [].
+  // Caught by A18 ALONE — A7 makes the 3-argument call with no lessonId, and
+  // A8/A9 walk only the set-owning lessons, so neither can see this lesson.
+  await red("R26", `a drag-type lesson whose reveal is the answer with NO method -> A18 (example ${DRAG_EX}/${DRAG_EX_FIRST})`,
+    [new RegExp(`^A18: ${DRAG_EX_RE}/${escapeRe(DRAG_EX_FIRST)}: the Play tab reveals the correct answer .* with NO method`)],
+    async () => {
+      const env = await realEnv();
+      return {
+        ...env,
+        working: {
+          ...env.working,
+          labReveal: (args) => {
+            const r = env.working.labReveal(args);
+            return r && args && args.lessonId === DRAG_EX ? { ...r, steps: [] } : r;
+          },
+        },
+      };
+    });
+  // An item the resolver has never been taught, rendered by the Play tab: the
+  // block gains a pair, so the reveal for it can only be the answer with no method.
+  await red("R27", `an item added to a rendered type block -> A18 (${DRAG_EX_TYPE}/red-control-item)`,
+    [new RegExp(`^A18: ${DRAG_EX_RE}/red-control-item: the Play tab reveals the correct answer "red control answer" with NO method`)],
+    async () => {
+      const env = await realEnv();
+      return { ...env, ddSource: addTypeBlockPair(env.ddSource, DRAG_EX_TYPE, '{ id: "red-control-item", target: "red control answer", label: "red control label" },') };
+    });
+  // A lesson whose type is in no group at all: its Play tab falls to the
+  // Mathematics flashcard deck, so nothing there can reveal a method. In this
+  // harness A18 is the only assertion that names it.
+  await red("R28", `a lesson whose type is in no group -> A18 (${DRAG_EX})`,
+    [new RegExp(`^A18: 1 lesson\\(s\\) are neither walked nor rendered by another tool: \\[${DRAG_EX_RE}\\]`)],
+    async () => {
+      const env = await realEnv();
+      return { ...env, lessonTypes: new Map([...env.lessonTypes, [DRAG_EX, "no-such-type"]]) };
     });
 
   const caught = results.filter((r) => r.caught).length;
