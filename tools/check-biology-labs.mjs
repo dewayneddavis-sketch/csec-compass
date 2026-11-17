@@ -50,6 +50,10 @@ const FROZEN_IDS = [
   "classification-of-living-things",
 ];
 
+// The size the coverage build is aiming at: 18 frozen + 12 planned (audit §C). Stated here
+// so the plan is compared to something — see section 4b.
+const TARGET_LESSONS = 30;
+
 // The 12 new lessons the coverage build is planned to add (audit §C), frozen so that a
 // lesson landing under an id nobody planned is a failure, not a surprise.
 const PLANNED_NEW_IDS = [
@@ -92,6 +96,7 @@ function loadState() {
     practice: JSON.parse(raw["practice.json"].c),
     kc: JSON.parse(raw["knowledge-check.json"].c),
     sets: clone(lessonSets.biology || {}),
+    planned: [...PLANNED_NEW_IDS],
     pending: [...PENDING_IDS],
     raw,
     sandbox: read("src/components/ExperimentSandbox.jsx"),
@@ -156,6 +161,21 @@ function runChecks(st) {
   const lost = PLANNED_NEW_IDS.filter((id) => !st.pending.includes(id) && !lessonIdSet.has(id));
   check(lost.length === 0,
     `every planned new lesson struck off PENDING_IDS has actually landed in modules.json (lost: ${lost.join(", ") || "none"})`);
+
+  // ---- 4b -----------------------------------------------------------------------------------
+  // The plan's OWN size. PLANNED_NEW_IDS and PENDING_IDS are two hand-written literals of the
+  // same ids, so before this section deleting one id from BOTH in the same commit left every
+  // check green and shipped a 29-lesson build against a 30-lesson target. A target the plan
+  // never compares itself to is not a target.
+  sec("4b. the plan still holds its size — 12 planned ids, and no duplicates");
+  const plannedTarget = TARGET_LESSONS - FROZEN_IDS.length;
+  check(st.planned.length === plannedTarget,
+    `the plan still holds every one of its planned new lessons (TARGET_LESSONS ${TARGET_LESSONS} `
+    + `minus ${FROZEN_IDS.length} frozen = ${plannedTarget}; PLANNED_NEW_IDS has ${st.planned.length})`);
+  const dupPlanned = [...new Set(st.planned.filter((id, i) => st.planned.indexOf(id) !== i))];
+  check(dupPlanned.length === 0,
+    `PLANNED_NEW_IDS has no duplicate ids (duplicates: ${dupPlanned.join(", ") || "none"}) — `
+    + `a duplicate masks a lost lesson from the length check above`);
 
   // ---- 5 ------------------------------------------------------------------------------------
   sec("5. appending is safe, inserting is not");
@@ -292,6 +312,9 @@ const RED_CONTROLS = {
   },
   "pending-struck-early": (st) => { st.pending.shift(); },
   "pending-unknown-id": (st) => { st.pending.push("bio-cell-nobody-planned-this"); },
+  // the plan's own size — the two ways it can silently shrink
+  "plan-shrunk": (st) => { st.planned.pop(); },
+  "plan-duplicate": (st) => { st.planned.push(st.planned[0]); },
   "unplanned-new-lesson": (st) => {
     const id = "bio-cell-nobody-planned-this";
     st.modules[0].lessons.push(ghostLesson(id));
@@ -350,6 +373,8 @@ const RED_EXPECT = {
   "pending-id-lands": "every id still listed in PENDING_IDS has not landed yet (landed:",
   "pending-struck-early": "every planned new lesson struck off PENDING_IDS has actually landed in modules.json (lost:",
   "pending-unknown-id": "every PENDING_IDS entry is one of the 12 planned new lessons (unknown: bio-cell-nobody-planned-this)",
+  "plan-shrunk": "the plan still holds every one of its planned new lessons",
+  "plan-duplicate": "PLANNED_NEW_IDS has no duplicate ids (duplicates:",
   "unplanned-new-lesson": "every landed new lesson id is one of the 12 planned ids (unplanned: bio-cell-nobody-planned-this)",
   "new-lesson-inserted": "every new lesson sits after the existing ones",
   "frozen-reordered": "keeps its existing lessons in their original order",
