@@ -6,10 +6,10 @@ chapters across 4 sections). Formal audit: `/home/team/shared/english-b-coverage
 Machine-checked by `tools/check-english-b-coverage.mjs` — **this table is parsed by that harness**, so the
 columns below are a contract, not decoration.
 
-**Headline after Slice E: 16 chapters = REUSE 13 + EXTEND 0 + NEW 3** against the 24 shipped lessons in 7 modules (Slice A closed rows 1, 5 and 9 in `eb-l1-1`; Slice B closed rows 6 and 8 in `eb-l2-2` and `eb-l2-3`; Slice C closed rows 2, 3 and 4 in `eb-l3-1`, `eb-l3-2` and `eb-l3-3`; Slice D closed rows 10, 11 and 12 in `eb-l4-1`, `eb-l4-3` and `eb-l4-2`; Slice E closed row 15 in `eb-l6-1`). **After Slice E no row is `EXTEND` any more** — the class is empty and its rule is dormant, not broken: it can only come back if a shipped name is later removed or a `REUSE` claim is withdrawn, and both of its red controls now synthesise that state in memory rather than pointing at a live row.
-End state: **8 modules, 27 lessons** (the 3 NEW ids are still pending — see below).
-13 of the 16 chapters are already taught **under other names**: this is a *naming* gap, not a teaching
-gap, so most of the build is by-name work inside lessons that already exist.
+**Headline after Slice F: 16 chapters = REUSE 16 + EXTEND 0 + NEW 0** against the 27 shipped lessons in 8 modules (Slice A closed rows 1, 5 and 9 in `eb-l1-1`; Slice B closed rows 6 and 8 in `eb-l2-2` and `eb-l2-3`; Slice C closed rows 2, 3 and 4 in `eb-l3-1`, `eb-l3-2` and `eb-l3-3`; Slice D closed rows 10, 11 and 12 in `eb-l4-1`, `eb-l4-3` and `eb-l4-2`; Slice E closed row 15 in `eb-l6-1`; **Slice F created `eb-mod-8` and closed rows 13, 14 and 16 in `eb-l8-craft`, `eb-l8-critical-evaluation` and `eb-l8-context`**). **Both class rules are now empty** — `EXTEND` since Slice E, `NEW` since Slice F — so each is dormant rather than broken: a class can only come back if a shipped name is removed, a `REUSE` claim is withdrawn or a lesson is pulled, and every one of their red controls synthesises that state in memory rather than pointing at a live row.
+End state reached: **8 modules, 27 lessons, nothing pending.**
+13 of the 16 chapters were already taught **under other names**: this was a *naming* gap, not a teaching
+gap, so most of the build was by-name work inside lessons that already existed.
 
 ## Column contract
 
@@ -102,25 +102,26 @@ no later slice "fixes" the number back.)* The pinned British/CXC spelling baseli
 | 10 | Analyzing Prose Elements | Prose Fiction | REUSE | eb-l4-1, eb-l4-2, eb-l4-3 | Analysing prose elements means taking a passage apart into the parts that are doing work |
 | 11 | Interpreting Language and Meaning | Prose Fiction | REUSE | eb-l4-3 | Interpretation begins where description stops |
 | 12 | Critical Engagement with Prose | Prose Fiction | REUSE | eb-l4-2 | A judgement is only worth marks if someone else could argue with it |
-| 13 | Author's Craft and Reader Influence | Literary Appreciation | NEW | eb-l8-craft | - |
-| 14 | Critical Evaluation of Literary Texts | Literary Appreciation | NEW | eb-l8-critical-evaluation | - |
+| 13 | Author's Craft and Reader Influence | Literary Appreciation | REUSE | eb-l8-craft | the word chosen instead of its near-synonym |
+| 14 | Critical Evaluation of Literary Texts | Literary Appreciation | REUSE | eb-l8-critical-evaluation | Description says what is there; analysis says how it works; evaluation says whether it works |
 | 15 | Structured Literary Response | Literary Appreciation | REUSE | eb-l6-1 | the conclusion answers the question that was asked rather than repeating the introduction |
-| 16 | Context and Shared Human Experience | Literary Appreciation | NEW | eb-l8-context | - |
+| 16 | Context and Shared Human Experience | Literary Appreciation | REUSE | eb-l8-context | some experiences cross every context |
 
-**Tally: 16 = REUSE 13 (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15) + EXTEND 0 + NEW 3 (13, 14, 16).**
+**Tally: 16 = REUSE 16 (1–16) + EXTEND 0 + NEW 0.**
 Sections: Drama 4 · Poetry 4 · Prose Fiction 4 · Literary Appreciation 4.
 
 ## Pending ids
 
-The three NEW lessons do not exist yet. They are the ids the tree is still missing — a slice that lands one
-must delete it from this list **and** re-class its row, or the harness goes red.
+**Nothing is pending: Slice F landed the last three ids.** The section is kept because the harness parses it
+and because an empty list is a claim worth checking — a slice that adds a lesson without a row, or a row that
+loses its lesson, still goes red.
 
-- `eb-l8-craft` (row 13)
-- `eb-l8-critical-evaluation` (row 14)
-- `eb-l8-context` (row 16)
+- *(none)*
 
-`eb-l8-` collides with nothing: all 24 shipped ids match `^eb-l[1-7]-\d+$`, and no `eb-l8-` string exists
-in `content/english-b/*.json` or `src/components/lessonSets.js`.
+`eb-l8-` collides with nothing: the 24 pre-build ids all match `^eb-l[1-7]-\d+$`, and the only `eb-l8-` ids
+in `content/english-b/*.json` or `src/components/lessonSets.js` are the three above. Since Slice F the
+harness checks that the `eb-l8-*` lessons that exist are **exactly** the primary hosts of rows 13, 14 and 16,
+so a fourth one cannot appear unnoticed.
 
 ## Build slices (one branch + one PR each, cut by HOST-LESSON OWNERSHIP, never by section)
 
