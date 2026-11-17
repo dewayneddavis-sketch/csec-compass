@@ -68,7 +68,9 @@ export const CHAPTERS = [
 ];
 export const SECTIONS = ["Drama", "Poetry", "Prose Fiction", "Literary Appreciation"];
 export const PER_SECTION = 4;
-export const CLASS_TOTALS = { REUSE: 3, EXTEND: 10, NEW: 3 };
+// Slice A re-classed row 5 (EXTEND -> REUSE) because `eb-l1-1` now names "The Nature of Poetry";
+// the totals follow the rows, they are not a target.
+export const CLASS_TOTALS = { REUSE: 4, EXTEND: 9, NEW: 3 };
 
 // The 3 NEW ids, in row order (rows 13, 14, 16). A slice that lands one deletes it here and in the doc.
 export const PENDING_IDS = ["eb-l8-craft", "eb-l8-critical-evaluation", "eb-l8-context"];
