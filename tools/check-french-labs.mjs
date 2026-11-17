@@ -129,8 +129,12 @@ const BIOLOGY_ORIGINAL_SETS = [
 for (const key of BIOLOGY_ORIGINAL_SETS) {
     check(!!(lessonSets.biology || {})[key], `biology block still has its "${key}" set`);
 }
-check(!!lessonSets.biology && !lessonSets.biology["cell-structure"],
-    "biology still leaves cell-structure to the subject-level cell diagram");
+// Slice 0B (2026-11-17) gave cell-structure a set of its own, so the old claim that
+// biology "still leaves it to the subject-level cell diagram" is false by design. What
+// this French harness actually cares about is that French did not disturb the biology
+// block: the nine sets it found there must survive (the loop above), and the block
+// itself must still exist.
+check(!!lessonSets.biology, "biology's own block is still in lessonSets");
 // Mathematics Slice 1 (2026-11-07) took this block from 24 sets to 29, and the
 // five coverage slices still to come will take it further. A raw count here
 // makes a FRENCH harness fail on MATHEMATICS work it has nothing to do with, so

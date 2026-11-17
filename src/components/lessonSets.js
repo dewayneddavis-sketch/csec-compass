@@ -13,7 +13,31 @@
 export const lessonSets = {
   // ------------------------------------------------------------------ BIOLOGY
   biology: {
-    // (cell-structure intentionally omitted → subjectSets.biology cell diagram)
+    // Cell Structure — its own set (Slice 0B, 2026-11-17). It used to be omitted on
+    // purpose and fall back to the subject-level deck in DragDropLabel
+    // (subjectSets.biology), which is why a lesson that forgot its own set rendered
+    // this diagram, looked plausible, and recorded a lab completion. Same diagram,
+    // keyed to the lesson; the subject-level deck stays for the subject-page lab,
+    // which has no lessonId.
+    "cell-structure": {
+      title: "Label the Animal Cell",
+      subtitle: "Drag each label to its correct position on the diagram.",
+      kind: "diagram",
+      labels: [
+        { id: "mitochondria", label: "Mitochondria" },
+        { id: "nucleus", label: "Nucleus" },
+        { id: "cell-membrane", label: "Cell Membrane" },
+        { id: "cytoplasm", label: "Cytoplasm" },
+        { id: "ribosomes", label: "Ribosomes" },
+      ],
+      targetZones: [
+        { id: "mitochondria", label: "Mitochondria", x: 27, y: 55, w: 22, h: 18 },
+        { id: "nucleus", label: "Nucleus", x: 38, y: 35, w: 18, h: 18 },
+        { id: "cell-membrane", label: "Cell Membrane", x: 10, y: 15, w: 28, h: 12 },
+        { id: "cytoplasm", label: "Cytoplasm", x: 28, y: 72, w: 24, h: 16 },
+        { id: "ribosomes", label: "Ribosomes", x: 57, y: 28, w: 22, h: 14 },
+      ],
+    },
     // Diffusion & Osmosis — match each transport process to its description.
     "osmosis-diffusion": {
       title: "Transport in and out of Cells",
