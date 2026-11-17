@@ -27,7 +27,12 @@
 //   5. every non-pending row's evidence phrase occurs verbatim in the primary host's own copy
 //      (title + content + objectives + concepts), so the substance the row claims is taught is checkable;
 //   6. the PENDING_IDS list is exactly the NEW ids that do not exist yet — the doc's list, this harness's
-//      constant and the tree must agree. A landed lesson left pending, or a lost id, goes red;
+//      constant and the tree must agree. A landed lesson left pending, or a lost id, goes red.
+//      AFTER SLICE F NOTHING IS PENDING (`PENDING_IDS` is []), so that rule now iterates over empty lists
+//      and cannot fail on the shipped doc. The half of it that still has something to look at is kept and
+//      strengthened: every `eb-l8-*` lesson that exists must be the primary host of a coverage row, so a
+//      lesson cannot appear without a row and a row cannot lose its lesson. Controls `pending-id-reappears`
+//      and `ghost-eb-l8-lesson` keep both halves live (see RED_EXPECT);
 //   7. row 11's spelling exception: the chapter name stays the owner's American "Analyzing", the doc
 //      records the British "Analysing prose elements", and NO shipped English B copy uses the American
 //      form (the pinned British/CXC baseline);
@@ -86,11 +91,17 @@ export const PER_SECTION = 4;
 // if a shipped name is removed or a REUSE claim is withdrawn, and when it does this constant and the
 // doc's headline move with it in the same PR. What keeps the 0 real is the red control `class-flip`:
 // it re-classes a row to EXTEND and must fail ON THE TOTALS LINE (see RED_EXPECT), not merely somewhere.
+// Slice F re-classed rows 13, 14 and 16, the LAST three NEW rows, because `eb-l8-craft`,
+// `eb-l8-critical-evaluation` and `eb-l8-context` now exist and name their chapters verbatim as their
+// titles. NEW is therefore 0 as well, and BOTH class rules now run over empty lists — see the note above
+// §6 and the controls `new-row-id-exists` / `new-row-bad-scheme` / `new-row-has-phrase`, which put the
+// NEW class back in memory so the branch they guard still has something to reject.
 // The totals follow the rows, they are not a target.
-export const CLASS_TOTALS = { REUSE: 13, EXTEND: 0, NEW: 3 };
+export const CLASS_TOTALS = { REUSE: 16, EXTEND: 0, NEW: 0 };
 
-// The 3 NEW ids, in row order (rows 13, 14, 16). A slice that lands one deletes it here and in the doc.
-export const PENDING_IDS = ["eb-l8-craft", "eb-l8-critical-evaluation", "eb-l8-context"];
+// Empty since Slice F: every id the coverage build was going to add has landed. A slice that lands one
+// deletes it here and in the doc; this list is what makes "nothing is pending" checkable at all.
+export const PENDING_IDS = [];
 
 // Row 10 is the one chapter whose name is American. The doc must record the British form.
 // (The audit's §G.7 and the Slice 0 brief call this "row 11"; the owner's own row order — paste rows
@@ -202,6 +213,11 @@ export function runChecks(st) {
   section("2. every row names a lesson id that means something");
   for (const r of rows) {
     check(r.hosts.length >= 1, `row ${r.n} names at least one host lesson id`);
+    // The NEW branch is DORMANT since Slice F: no row carries the class, so neither of its two checks
+    // runs. It is kept because a slice that re-classes a row to NEW (a withdrawn REUSE claim) must not
+    // be able to point at an id that already exists or at an id outside the eb-l8- scheme. The controls
+    // `new-row-id-exists` and `new-row-bad-scheme` synthesise the class in memory and are pinned by
+    // RED_EXPECT to the message each one is aimed at.
     const pendingRow = r.cls === "NEW";
     for (const id of r.hosts) {
       if (pendingRow) {
@@ -239,6 +255,8 @@ export function runChecks(st) {
   section("5. every taught row's evidence phrase is in its primary host's own copy");
   for (const r of rows) {
     if (r.cls === "NEW") {
+      // Dormant since Slice F (no row is NEW). Kept so that a withdrawn REUSE claim cannot carry an
+      // evidence phrase it has not earned; `new-row-has-phrase` re-classes row 13 in memory to keep it live.
       check(r.phrase === "-", `row ${r.n} is NEW, so its evidence cell is "-" (found "${r.phrase}")`);
       continue;
     }
@@ -260,11 +278,22 @@ export function runChecks(st) {
     `the doc's Pending ids list is exactly PENDING_IDS (doc: ${docPending.join(", ") || "none"})`);
   check(JSON.stringify(st.pendingIds) === JSON.stringify(PENDING_IDS),
     "the harness's PENDING_IDS constant is the list the tree actually needs");
-  const absent = PENDING_IDS.filter((id) => !byId[id]);
-  check(JSON.stringify(absent) === JSON.stringify(PENDING_IDS),
-    `every pending id is still absent from modules.json (landed: ${PENDING_IDS.filter((id) => byId[id]).join(", ") || "none"})`);
-  check(lessons.every((l) => !/^eb-l8-/.test(l.id) || PENDING_IDS.includes(l.id)),
-    "no eb-l8- lesson exists that is not a known new id");
+  // `st.pendingIds`, not the module constant, so a red control can put a pending id back in memory and
+  // make this filter do some work. With the shipped [] it is `[] === []` — honest, and the controls below
+  // are what keep it from being decorative.
+  const absent = st.pendingIds.filter((id) => !byId[id]);
+  check(JSON.stringify(absent) === JSON.stringify(st.pendingIds),
+    `every pending id is still absent from modules.json (landed: ${st.pendingIds.filter((id) => byId[id]).join(", ") || "none"})`);
+  // AFTER SLICE F NOTHING IS PENDING, so every check above iterates over empty lists and cannot fail on
+  // the shipped doc. This is the half of the same guard that still has something to look at: the `eb-l8-*`
+  // lessons that DO exist are exactly the ones the coverage table claims. A fourth new lesson with no row
+  // goes red, and a row that loses its lesson goes red — which is what "the build is finished" means in a
+  // form a machine can check. Kept live by `ghost-eb-l8-lesson` (see RED_EXPECT).
+  const newLessons = lessons.filter((l) => /^eb-l8-/.test(l.id)).map((l) => l.id).sort();
+  const claimedNew = [...new Set(rows.map((r) => r.hosts[0]).filter((id) => /^eb-l8-/.test(id)))].sort();
+  check(newLessons.length > 0, `the landed eb-l8-* lessons exist (found ${newLessons.length})`);
+  check(JSON.stringify(newLessons) === JSON.stringify(claimedNew),
+    `every eb-l8-* lesson is the primary host of a coverage row (lessons: ${newLessons.join(", ") || "none"}; rows: ${claimedNew.join(", ") || "none"})`);
 
   // ---------------------------------------------------------------- 7. row 10's spelling exception
   section("7. row 10 keeps the owner's American name and we ship the British form");
@@ -353,11 +382,25 @@ export const RED_CONTROLS = {
     const l = st.modules.flatMap((m) => m.lessons || []).find((x) => x.id === "eb-l4-1");
     l.concepts = l.concepts.filter((c) => c !== "Analysing prose elements");
   },
-  "pending-id-landed": (st) => {
-    st.modules[0].lessons.push({ id: "eb-l8-craft", title: "Author's Craft and Reader Influence", content: "x", concepts: ["Craft"] });
+  "pending-id-reappears": (st) => { st.pendingIds.push("eb-l8-craft"); },
+  "doc-pending-list-grown": (st) => {
+    st.doc = st.doc.replace("## Pending ids\n", "## Pending ids\n\n- `eb-l8-ghost` (row 17)\n");
   },
-  "pending-list-shrunk": (st) => { st.pendingIds.pop(); },
-  "doc-pending-list-shrunk": (st) => { st.doc = st.doc.replace("- `eb-l8-context` (row 16)\n", ""); },
+  // Aimed at §6's `absent` filter, which is `[] === []` on the shipped doc now that nothing is pending:
+  // putting a landed id back in the list must red it, or the rule that a pending id is genuinely missing
+  // has stopped checking anything. `doc-pending-list-grown` does the same for the doc's own list.
+  // Aimed at §2's NEW branch and §5's NEW branch, which no live row reaches any more. Each control puts
+  // the class back on row 13 (a real, shipped REUSE row) so the branch has something to reject.
+  "new-row-id-exists": (st) => { editRow(st, 13, (l) => l.replace("| REUSE |", "| NEW |")); },
+  "new-row-bad-scheme": (st) => {
+    editRow(st, 13, (l) => l.replace("| REUSE |", "| NEW |").replace("| eb-l8-craft |", "| eb-l9-craft |"));
+  },
+  "new-row-has-phrase": (st) => { editRow(st, 13, (l) => l.replace("| REUSE |", "| NEW |")); },
+  // Aimed at §6's live half: every eb-l8-* lesson is the primary host of a coverage row. A fourth new
+  // lesson appearing with no row must red it — that is "the build is finished" in a checkable form.
+  "ghost-eb-l8-lesson": (st) => {
+    st.modules[7].lessons.push({ id: "eb-l8-ghost", title: "A Ghost Lesson", content: "x", concepts: ["Ghost"] });
+  },
   "ghost-host": (st) => { editRow(st, 15, (l) => l.replace("| eb-l6-1 |", "| eb-l9-9 |")); },
   "american-shipped": (st) => {
     const l = st.modules.flatMap((m) => m.lessons || []).find((x) => x.id === "eb-l4-1");
@@ -379,6 +422,16 @@ export const RED_EXPECT = {
   "extend-name-added": "is marked EXTEND but eb-l6-1 now names it by name",
   "extend-secondary-names-it": "is marked EXTEND but eb-l6-3 now names it by name",
   "row15-name-removed": "row 15 \"Structured Literary Response\" is taught by name in eb-l6-1",
+  // Slice F: NEW reached 0 and PENDING_IDS emptied, so every NEW-aimed and pending-aimed control had to
+  // synthesise its state too. Each one is pinned to the message it is FOR, because re-classing a row to
+  // NEW also breaks the class totals and the pending lists — "something failed" would not prove that the
+  // branch the control guards still checks anything.
+  "pending-id-reappears": "every pending id is still absent from modules.json (landed: eb-l8-craft)",
+  "doc-pending-list-grown": "the doc's Pending ids list is exactly PENDING_IDS (doc: eb-l8-ghost)",
+  "new-row-id-exists": "row 13 is NEW but its id eb-l8-craft already exists",
+  "new-row-bad-scheme": "row 13 new id eb-l9-craft follows the eb-l8-<topic> scheme",
+  "new-row-has-phrase": "row 13 is NEW, so its evidence cell is \"-\"",
+  "ghost-eb-l8-lesson": "every eb-l8-* lesson is the primary host of a coverage row",
 };
 
 // ---------------------------------------------------------------------------------------------
