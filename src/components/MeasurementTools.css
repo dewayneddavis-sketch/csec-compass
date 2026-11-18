@@ -21,6 +21,10 @@
 .mt-worked-title { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; color: #2563eb; margin-bottom: .25rem; }
 .mt-worked-step { font-size: .85rem; color: #1f2937; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; line-height: 1.6; }
 .mt-note { font-size: .78rem; color: #6b7280; }
+.mt-task { padding: .6rem .75rem; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 10px; }
+.mt-task-prompt { font-size: .88rem; color: #1e3a8a; line-height: 1.5; }
+.mt-check { align-self: flex-start; padding: .45rem .9rem; border: none; border-radius: 8px; background: #2563eb; color: #fff; font-size: .82rem; font-weight: 600; cursor: pointer; }
+.mt-check:hover { background: #1d4ed8; }
 
 /* ---- AreaBuilder ------------------------------------------------------ */
 .area-builder { display: flex; flex-direction: column; gap: 1rem; }

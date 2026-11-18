@@ -60,6 +60,7 @@ import path from "node:path";
 import { createHash } from "node:crypto";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { lessonSets } from "../src/components/lessonSets.js";
+import { measurementTasks } from "../src/data/measurementTasks.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const read = (p) => fs.readFileSync(path.join(root, p), "utf8");
@@ -242,9 +243,12 @@ function mathTypeGroupsOf(src) {
 // graphing lessons (src/data/graphingTasks.js, asserted by
 // tools/check-graph-reveal.mjs G2), the balance lesson (solveBalanceMethod,
 // asserted by tools/check-show-your-work.mjs §5) and the two measurement tools
-// (asserted by tools/check-mathematics-labs.mjs A13/A14). They are DERIVED here
-// and named in the printed line, so a lesson that quietly stopped rendering a
-// tool cannot drop out of the walk unnoticed.
+// (src/data/measurementTasks.js, asserted by tools/check-measurement-reveal.mjs
+// M1–M6 — this citation used to name check-mathematics-labs A13/A14, which
+// assert the tools' copy and sums and say nothing about a reveal). They are
+// DERIVED here and named in the printed line, so a lesson that quietly stopped
+// rendering a tool cannot drop out of the walk unnoticed. A19 asserts that the
+// measurement task table is keyed to exactly those lessons.
 // ---------------------------------------------------------------------------
 function revealWalkOf(env) {
   const groups = mathTypeGroupsOf(env.sandboxSource);
@@ -434,6 +438,8 @@ function baseEnv() {
     pending: PENDING.slice(),
     expectedItems: liveItemCount(lessonSets.mathematics),
     workingSrc: read("src/data/mathWorking.js"),
+    // A19's table: the tasks the two measurement tools reveal from.
+    measurementTasks,
   };
 }
 
@@ -886,6 +892,48 @@ function revealProblems(env) {
     problems.push(...walk.problems);
   }
 
+  // ---- A19: the measurement tools' tasks, so the "not walked" line cannot drift
+  // A18 cannot see perimeter-area or volume-capacity: they render a tool, not a
+  // drag lab. A19 is what keeps the printed sentence true — the tasks in
+  // src/data/measurementTasks.js must be keyed to EXACTLY the lessons the router
+  // sends to <AreaBuilder /> and <VolumeFiller />. No more (a task on a lesson
+  // whose Play tab shows another tool) and no fewer (a routed lesson with no
+  // question, whose Play tab would reveal nothing at all).
+  {
+    const groups = mathTypeGroupsOf(env.sandboxSource);
+    const routed = (env.lessonIds || [])
+      .filter((id) => {
+        const t = (env.lessonTypes || new Map()).get(id);
+        return groups.area.has(t) || groups.volume.has(t);
+      })
+      .sort();
+    const tasks = env.measurementTasks || {};
+    const keyed = Object.keys(tasks).sort();
+    if (routed.length === 0) {
+      problems.push("A19: no Mathematics lesson is routed to a measurement tool — the router or the type sets changed and this assertion is now testing nothing");
+    }
+    const missing = routed.filter((id) => !keyed.includes(id));
+    const extra = keyed.filter((id) => !routed.includes(id));
+    if (missing.length > 0) {
+      problems.push(`A19: ${missing.length} lesson(s) render a measurement tool and carry no task in src/data/measurementTasks.js: [${missing.join(", ")}] — nothing there is answerable, so no reveal can fire`);
+    }
+    if (extra.length > 0) {
+      problems.push(`A19: measurementTasks is keyed to [${extra.join(", ")}], which render no measurement tool (the routed lessons are [${routed.join(", ")}])`);
+    }
+    for (const [lessonId, list] of Object.entries(tasks)) {
+      if (!Array.isArray(list) || list.length === 0) {
+        problems.push(`A19: ${lessonId}: has no task`);
+        continue;
+      }
+      for (const t of list) {
+        if (!t || !t.answer) problems.push(`A19: ${lessonId}/${t && t.id}: the task has no answer, so a wrong answer would reveal nothing`);
+        if (!t || !Array.isArray(t.steps) || t.steps.length === 0) {
+          problems.push(`A19: ${lessonId}/${t && t.id}: the task has no steps — the reveal would be the answer with NO method`);
+        }
+      }
+    }
+  }
+
   return problems;
 }
 
@@ -911,6 +959,10 @@ if (SELFTEST) {
   // self-consistent instead of giving A18 an off-switch the real run could use.
   fixture.lessonIds = [FX_LESSON];
   fixture.lessonTypes = new Map([[FX_LESSON, "matching-game"]]);
+  // …and its measurement-task table is empty for the same reason: A19 compares
+  // the table against the lesson list, and a one-lesson fixture that kept the
+  // real two-entry table would be a tree no real run can produce.
+  fixture.measurementTasks = {};
   fixture.pending = [];
   fixture.expectedItems = fxItems.length;
   const clean = revealProblems(fixture);
@@ -1011,8 +1063,19 @@ section("1. the shipped resolver, on the shipped tree");
   const dragWalked = walk.walkedLessons.length - walk.ownCount;
   console.log(`    reveal walk: ${walk.walkedLessons.length} of ${REAL.lessonIds.length} lessons carry a method for every item their Play tab renders ` +
     `(${walk.ownCount} own a set + ${dragWalked} resolve through the drag type block) / ${walk.walkedItems} items`);
+  // This line named check-mathematics-labs A13/A14 for area and volume, which is
+  // FALSE: A13 asserts the tools' copy against the lesson, A14 the tools' own
+  // sums. Neither says anything about a reveal, because until 2026-11-18 there
+  // was nothing to reveal. tools/check-measurement-reveal.mjs is the harness that
+  // asserts it (M1–M6), and A19 below keeps this table in step with the router.
   console.log(`    not walked here: ${walk.notWalked.length} lessons render another tool — graphing (tools/check-graph-reveal.mjs G2), ` +
-    `balance (tools/check-show-your-work.mjs §5), area and volume (tools/check-mathematics-labs.mjs A13/A14)`);
+    `balance (tools/check-show-your-work.mjs §5), area and volume (tools/check-measurement-reveal.mjs M1–M6)`);
+  // A printed line that names a harness is a claim about the tree: prove each
+  // named file exists, so it cannot name one that was renamed or never shipped.
+  for (const named of ["tools/check-graph-reveal.mjs", "tools/check-show-your-work.mjs", "tools/check-measurement-reveal.mjs"]) {
+    ok(fs.existsSync(path.join(root, named)),
+      `reveal walk: the printed "not walked here" line names ${named}, which does not exist`);
+  }
   const setItems = Object.values(REAL.sets).reduce((n, s) => n + itemsOf(s).length, 0);
   const dragItems = walk.walkedItems - setItems;
   const groups = mathTypeGroupsOf(REAL.sandboxSource);
@@ -1442,6 +1505,24 @@ if (RED_CONTROL) {
     async () => {
       const env = await realEnv();
       return { ...env, lessonTypes: new Map([...env.lessonTypes, [DRAG_EX, "no-such-type"]]) };
+    });
+
+  // A19's two halves. R29 drops a routed lesson's task (the Play tab would have
+  // nothing answerable); R30 keeps the task but keys it to a lesson that renders
+  // another tool (one lesson's question inside another lesson's Play tab).
+  await red("R29", "a lesson routed to a measurement tool loses its task -> A19",
+    [/^A19: 1 lesson\(s\) render a measurement tool and carry no task in src\/data\/measurementTasks\.js: \[perimeter-area\]/],
+    async () => {
+      const env = await realEnv();
+      const tasks = { ...env.measurementTasks };
+      delete tasks["perimeter-area"];
+      return { ...env, measurementTasks: tasks };
+    });
+  await red("R30", "a measurement task keyed to a lesson that renders another tool -> A19",
+    [/^A19: measurementTasks is keyed to \[real-numbers\], which render no measurement tool/],
+    async () => {
+      const env = await realEnv();
+      return { ...env, measurementTasks: { ...env.measurementTasks, "real-numbers": [{ id: "red-control-task", answer: "x", steps: ["x"] }] } };
     });
 
   const caught = results.filter((r) => r.caught).length;
