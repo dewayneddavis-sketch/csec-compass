@@ -73,9 +73,10 @@ const PLANNED_NEW_IDS = [
 // Biology Slice 1 (2026-11-17) struck off "bio-cell-levels-of-organisation": it landed
 // at the end of module 1, with its own set. Biology Slice 2a (2026-11-17) struck off
 // "bio-nut-leaf-structure" and "bio-nut-food-tests": both landed at the end of module 2
-// (nutrition-transport), each with its own set.
+// (nutrition-transport), each with its own set. Biology Slice 3 (2026-11-18) struck off
+// "bio-resp-effects-of-smoking": it landed at the end of module 3 (respiration-excretion),
+// with its own match-the-pairs set.
 const PENDING_IDS = [
-  "bio-resp-effects-of-smoking",
   "bio-eco-study-methods", "bio-eco-special-relationships",
   "bio-gen-monohybrid-crosses", "bio-gen-genetic-engineering",
   "bio-coord-movement-and-support",
