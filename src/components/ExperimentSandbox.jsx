@@ -128,8 +128,11 @@ function resolveInteractive(subjectId, experimentType, lessonId) {
     if (MATH_LINEAR_TYPES.has(t)) return <GraphingCalculator mode="linear" subjectId="mathematics" lessonId={lessonId} />;
     if (MATH_PARABOLA_TYPES.has(t)) return <GraphingCalculator mode="parabola" subjectId="mathematics" lessonId={lessonId} />;
     if (MATH_NUMBERLINE_TYPES.has(t)) return <GraphingCalculator mode="number-line" subjectId="mathematics" lessonId={lessonId} />;
-    if (MATH_AREA_TYPES.has(t)) return <AreaBuilder />;
-    if (MATH_VOLUME_TYPES.has(t)) return <VolumeFiller />;
+    // The two measurement tools get their question from
+    // src/data/measurementTasks.js, keyed by lessonId — so, like the graphing
+    // lessons, they need to know which lesson they are on.
+    if (MATH_AREA_TYPES.has(t)) return <AreaBuilder subjectId="mathematics" lessonId={lessonId} />;
+    if (MATH_VOLUME_TYPES.has(t)) return <VolumeFiller subjectId="mathematics" lessonId={lessonId} />;
     if (MATH_BALANCE_TYPES.has(t)) return <BalanceScale subjectId="mathematics" experimentType={t} />;
     return flash("mathematics");
   }

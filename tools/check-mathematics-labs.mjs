@@ -50,7 +50,7 @@
 // Usage:
 //   node tools/check-mathematics-labs.mjs                     # the real tree
 //   node tools/check-mathematics-labs.mjs --selftest           # synthetic fixture only
-//   node tools/check-mathematics-labs.mjs --red-control       # + the 20 red controls
+//   node tools/check-mathematics-labs.mjs --red-control       # + the 22 red controls
 //   node tools/check-mathematics-labs.mjs --red-controls-all  # alias of --red-control
 //
 // Run it with the rest before any PR that touches Mathematics labs, routing or
@@ -70,6 +70,7 @@ import {
   prismWorking,
   cylinderWorking,
 } from "../src/data/measurementTools.js";
+import { measurementTasks, MEASUREMENT_TASK_COPY } from "../src/data/measurementTasks.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const read = (p) => fs.readFileSync(path.join(root, p), "utf8");
@@ -258,8 +259,15 @@ const TOOL_CASES = {
   "volume-filler": { prism: [[4, 3, 5], [2, 6, 9], [1, 1, 1]], cylinder: [[3, 10], [5, 4]] },
 };
 // Numbers, spacing and the arithmetic symbols a worked step is allowed to add
-// to the taught words. Nothing else may survive.
-const STEP_SYMBOLS = /[0-9\s.,=×+÷()\-−]/g;
+// to the taught words. Nothing else may survive. The notation symbols (≈ π ² ³
+// √) were added with the task text on 2026-11-18: they are how the lesson WRITES
+// a number, not a word, and the lessons teach π ≈ 3.142 and cm²/cm³ in exactly
+// these forms.
+const STEP_SYMBOLS = /[0-9\s.,=×+÷()\-−≈π²³√]/g;
+// The words a lesson teaches, for the task text (A13's 13b). Same folding as
+// the corpus rule, and single letters are left out: "r" and "h" are algebraic
+// symbols, not words (the rule check-graph-reveal uses).
+const wordsOf = (s) => fold(s).match(/[a-z]{2,}/g) || [];
 function toolSteps(type, working) {
   const cases = TOOL_CASES[type] || {};
   const steps = [];
@@ -272,12 +280,42 @@ function toolSteps(type, working) {
   }
   return steps;
 }
-/** What is left of a worked step after the taught copy and the numbers are removed. */
+// English function words carry no subject content, so the corpus rule does not
+// hold them. This list is closed and small, and it is the SAME list
+// tools/check-graph-reveal.mjs applies to the graphing tasks (its G3): a word
+// that is not here must be taught by the lesson.
+//
+// It was added to this harness on 2026-11-18, when A13 learned to check the
+// measurement TASKS' text (src/data/measurementTasks.js). A worked step built
+// from AREA_COPY never needed it — that text is composed from the taught strings
+// and numbers — but a prompt is a sentence: "A rectangle with an area of 24 cm²
+// and a length of 8 cm" is entirely taught content held together by function
+// words, and `leftover()` used to call every one of them untaught.
+//
+// THIS IS A GENUINE LOOSENING, so it is red-controlled: R21 feeds a task text
+// the lesson never teaches ("garden") through the loosened rule and proves A13
+// still fails on it. A rule that cannot fail is not a rule.
+const FUNCTION_WORDS = new Set([
+  "a", "an", "the", "and", "or", "of", "to", "in", "on", "at", "by", "for",
+  "with", "from", "into", "through", "over", "under", "between", "that",
+  "this", "these", "those", "it", "its", "is", "are", "was", "were", "be",
+  "been", "being", "so", "if", "as", "then", "than", "not", "no", "all",
+  "any", "each", "one", "two", "we", "you", "your", "there", "here", "do",
+  "does", "did", "can", "will", "would", "should", "must", "may", "also",
+  "just", "only", "very", "both", "same", "more", "most", "other", "such",
+]);
+
+/** What is left of a worked step after the taught copy, the numbers and the English function words are removed. */
 function leftover(step, taught) {
   let s = fold(step);
   // Longest first: "cm²" must go before "cm", or the ² would be left behind.
   for (const t of [...taught].map(fold).sort((a, b) => b.length - a.length)) s = s.split(t).join(" ");
-  return s.replace(STEP_SYMBOLS, "").trim();
+  return s.replace(STEP_SYMBOLS, " ")
+    .split(/\s+/)
+    // Single letters are algebraic symbols (r, h, V), never words.
+    .filter((w) => w.length > 1 && !FUNCTION_WORDS.has(w))
+    .join(" ")
+    .trim();
 }
 
 // The tool a type resolves to — used only for the assertion-2 message.
@@ -311,6 +349,9 @@ function collectProblems(input) {
     legacyBase = LEGACY_BASE,
     toolSources = TOOL_SOURCES,
     working = MEASUREMENT_WORKING,
+    // The measurement tasks' text, for A13's task clause. A parameter so R21 can
+    // doctor it instead of editing the real tree.
+    tasks = measurementTasks,
   } = input;
   // The caller may pass the flattened lesson list or just the modules; the
   // selftest fixture passes modules only, exactly as a caller would.
@@ -528,6 +569,42 @@ function collectProblems(input) {
       const bare = [...jsx.matchAll(/>([^<>{}]*)</g)].map((m) => m[1].trim()).filter((t) => /[a-z]/i.test(t));
       ok(bare.length === 0,
         `A13: ${type}: bare JSX text would bypass the corpus check — found ${bare.slice(0, 3).map((t) => `"${t}"`).join(", ")}`);
+      // The task panel's own labels ("Check my answer", "Your task") are UI
+      // chrome, not subject content, so they are not held to the corpus rule —
+      // but they must come from src/data/measurementTasks.js, never be typed
+      // into the markup, or the bare-JSX rule above is the only thing between a
+      // later edit and an untaught string on screen.
+      // Comments are prose, not markup: a comment naming the label is not the
+      // label being typed into the JSX, so they are stripped first.
+      const markup = src.replace(/\/\*[\s\S]*?\*\//g, " ").replace(/\/\/[^\n]*/g, " ");
+      for (const label of Object.values(MEASUREMENT_TASK_COPY)) {
+        ok(!markup.includes(`"${label}"`),
+          `A13: ${type}: the panel label "${label}" is typed into the component — it must come from src/data/measurementTasks.js`);
+      }
+    }
+  }
+
+  // 13b. THE MEASUREMENT TASKS' TEXT. The prompt, the answer and the steps the
+  //      student reads for perimeter-area and volume-capacity live in
+  //      src/data/measurementTasks.js, and they are held to the same rule as the
+  //      tools' copy: every word must be taught by the lesson whose Play tab
+  //      shows it, or be an English function word. This is what stops a task
+  //      being written about something the lesson never taught — R21 proves it.
+  for (const [lessonId, list] of Object.entries(tasks || {})) {
+    const lesson = byId[lessonId];
+    if (!lesson) continue; // A4/A1 own a task keyed to no lesson
+    const type = lesson.experiment && lesson.experiment.type;
+    // What the student has been taught: the tool's own copy AND the words of
+    // the lesson that renders it. A prompt is written in the lesson's language,
+    // so a word the lesson teaches is taught — "drag", "sliders" and "find" are
+    // in these two lessons but in neither tool's copy.
+    const taught = [...Object.values(MEASUREMENT_TOOL_COPY[type] || {}), ...wordsOf(corpusOf(lesson))];
+    for (const t of list || []) {
+      for (const text of [t.prompt, t.answer, ...(t.steps || [])]) {
+        const rest = leftover(text, taught);
+        ok(rest === "",
+          `A13: ${lessonId}/${t.id}: the task text "${text}" contains "${rest}" — not taught by that lesson`);
+      }
     }
   }
 
@@ -599,6 +676,7 @@ const REAL = {
   legacyBase: LEGACY_BASE,
   toolSources: TOOL_SOURCES,
   working: MEASUREMENT_WORKING,
+  tasks: measurementTasks,
 };
 // A fresh deep copy for every red control, so one control can never leak into
 // the next (or into the real run).
@@ -615,6 +693,7 @@ const cloneReal = () => ({
   legacyBase: REAL.legacyBase,
   toolSources: REAL.toolSources,
   working: REAL.working,
+  tasks: JSON.parse(JSON.stringify(REAL.tasks)),
 });
 
 // ---------------------------------------------------------------------------
@@ -792,8 +871,8 @@ section("2. routing split: balance / area / volume are three separate tools");
 }
 
 // ---------------------------------------------------------------------------
-// --red-control / --red-controls-all: 20 controls. R1–R17 doctor the INPUT to
-// labProblems(); R18–R20 doctor the routing SOURCE text for A18. Each must
+// --red-control / --red-controls-all: 22 controls. R1–R17 and R21–R22 doctor the
+// INPUT to labProblems(); R18–R20 doctor the routing SOURCE text for A18. Each must
 // produce a problem whose message matches a named regex; then the caller is
 // proved green on the untouched real tree.
 // ---------------------------------------------------------------------------
@@ -903,10 +982,33 @@ if (RED_CONTROL) {
   red("R17", "bare JSX text in a tool -> A13 (it would bypass the corpus check entirely)",
     [/^A13: area-builder: bare JSX text would bypass the corpus check — found "Untaught"/],
     (i) => {
+      // The bare text goes where the rule looks: between a > and a < inside the
+      // returned JSX. Inserting it straight after the root <div> no longer bites
+      // once that element opens with a {expression}, because the rule cannot
+      // cross a brace — a control that stops biting is a control to retarget,
+      // not a rule to loosen.
       i.toolSources = {
         ...i.toolSources,
         "area-builder": i.toolSources["area-builder"]
-          .replace('<div className="area-builder">', '<div className="area-builder">Untaught'),
+          .replace("<strong>{T.yourTask}</strong>", "<strong>Untaught</strong>"),
+      };
+    });
+
+  // R21 is the control for the FUNCTION_WORDS loosening A13 gained on 2026-11-18.
+  // The loosening lets an English prompt through; it must NOT let a subject word
+  // the lesson never taught through. "garden" is taught by no Mathematics lesson.
+  red("R21", "a task word the lesson never teaches (\"garden\") still fails A13 after the FUNCTION_WORDS loosening",
+    [/^A13: perimeter-area\/pa-rectangle-sides: the task text .* contains "garden"/],
+    (i) => { i.tasks["perimeter-area"][0].prompt = "A garden with an area of 24 cm² and a length of 8 cm."; });
+  // R22 keeps the new panel honest: its labels come from the table, never from
+  // the markup (a literal there would be an untaught string on screen).
+  red("R22", "a panel label typed into the tool -> A13",
+    [/^A13: area-builder: the panel label "Check my answer" is typed into the component/],
+    (i) => {
+      i.toolSources = {
+        ...i.toolSources,
+        "area-builder": i.toolSources["area-builder"]
+          .replace('<div className="area-builder">', '<div className="area-builder">"Check my answer"'),
       };
     });
 
@@ -931,7 +1033,10 @@ if (RED_CONTROL) {
       'const MATH_BALANCE_TYPES = new Set(["balance-scale", "area-builder"]);'));
   redSrc("R19", "the area set kept but routed to the balance scale -> A18 wiring",
     [/^A18: MATH_AREA_TYPES is not routed to <AreaBuilder/],
-    (src) => src.replace("if (MATH_AREA_TYPES.has(t)) return <AreaBuilder />;",
+    // The routed line now carries subjectId/lessonId (the task is keyed by
+    // lesson), so the control matches the line rather than one exact string —
+    // a hand-typed line went stale the moment the props were added.
+    (src) => src.replace(/if \(MATH_AREA_TYPES\.has\(t\)\) return <AreaBuilder[^/]*\/>;/,
       "if (MATH_AREA_TYPES.has(t)) return <BalanceScale subjectId=\"mathematics\" experimentType={t} />;"));
   redSrc("R20", "a whole set deleted -> A18 names the missing declaration",
     [/^A18: MATH_VOLUME_TYPES is not declared in src\/components\/ExperimentSandbox\.jsx/],

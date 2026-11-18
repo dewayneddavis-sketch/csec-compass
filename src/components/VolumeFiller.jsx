@@ -1,5 +1,12 @@
 import { useState } from "react";
+import MathWorkingReveal from "./MathWorkingReveal";
 import { VOLUME_COPY as C, prismWorking, cylinderWorking } from "../data/measurementTools";
+import {
+  MEASUREMENT_TASK_COPY as T,
+  measurementTaskFor,
+  measurementReveal,
+  matchesMeasurementTarget,
+} from "../data/measurementTasks";
 import "./MeasurementTools.css";
 
 // VolumeFiller — the Play-tab tool for experiment.type "volume-filler" (lesson
@@ -10,6 +17,19 @@ import "./MeasurementTools.css";
 // Every word this tool shows comes from VOLUME_COPY in ../data/measurementTools,
 // where tools/check-mathematics-labs.mjs proves each one is taught by
 // volume-capacity. Every text node below is an expression, never bare JSX text.
+//
+// THE TASK AND THE REVEAL (added 2026-11-18). Until this, the tool was a
+// calculator with nothing answerable, so the step-by-step reveal could never
+// fire on volume-capacity. The question, its target and its method now live in
+// src/data/measurementTasks.js keyed by lessonId; this component only renders
+// the prompt for the tab it is on, grades the sliders against the target, and
+// shows the method the table hands back. It authors no method of its own, and
+// the reveal is never gated on `steps` being present — an answer with no steps
+// must still reveal the answer.
+//
+// With no lessonId (the Mathematics subject-page lab) `measurementTaskFor`
+// returns null and this tool renders exactly as it did before the tasks
+// existed.
 
 const PX_PER_CM = 12;
 const W = 320;
@@ -19,7 +39,7 @@ const MAX_HEIGHT = 12;
 const BASE_Y = H - 30;
 const TANK_W = 90;
 
-export default function VolumeFiller() {
+export default function VolumeFiller({ subjectId, lessonId }) {
   const [shape, setShape] = useState("prism");
   const [length, setLength] = useState(4);
   const [width, setWidth] = useState(3);
@@ -34,6 +54,29 @@ export default function VolumeFiller() {
   const litres = isPrism ? prism.litres : cylinder.litres;
   const baseArea = isPrism ? prism.baseArea : cylinder.baseArea;
 
+  // The task for THIS lesson and THIS tab (src/data/measurementTasks.js).
+  // null on the subject page and for every lesson without a task.
+  const task = measurementTaskFor(subjectId, lessonId, shape);
+  // null until "Check my answer" is pressed: { correct, reveal }.
+  const [result, setResult] = useState(null);
+
+  // Moving a slider or changing tab changes the answer, so an old verdict must
+  // not linger next to it.
+  const slide = (setter) => (e) => {
+    setResult(null);
+    setter(Number(e.target.value));
+  };
+  const pickShape = (next) => {
+    setResult(null);
+    setShape(next);
+  };
+
+  const handleCheck = () => {
+    if (!task) return;
+    const correct = matchesMeasurementTarget(shape, { shape, length, width, height, radius }, task.target);
+    setResult({ correct, reveal: measurementReveal({ subjectId, lessonId, taskId: task.id }) });
+  };
+
   const tankW = isPrism ? TANK_W : radius * 2 * PX_PER_CM;
   const tankTop = BASE_Y - MAX_HEIGHT * PX_PER_CM;
   const waterH = height * PX_PER_CM;
@@ -41,18 +84,25 @@ export default function VolumeFiller() {
 
   return (
     <div className="volume-filler">
+      {task && (
+        <div className="mt-task">
+          <p className="mt-task-prompt">
+            <strong>{T.yourTask}</strong> {task.prompt}
+          </p>
+        </div>
+      )}
       <div className="mt-shapes">
         <button
           type="button"
           className={`mt-shape-tab ${isPrism ? "active" : ""}`}
-          onClick={() => setShape("prism")}
+          onClick={() => pickShape("prism")}
         >
           {C.shapePrism}
         </button>
         <button
           type="button"
           className={`mt-shape-tab ${!isPrism ? "active" : ""}`}
-          onClick={() => setShape("cylinder")}
+          onClick={() => pickShape("cylinder")}
         >
           {C.shapeCylinder}
         </button>
@@ -115,7 +165,7 @@ export default function VolumeFiller() {
                   step="1"
                   value={length}
                   aria-label={C.length}
-                  onChange={(e) => setLength(Number(e.target.value))}
+                  onChange={slide(setLength)}
                 />
               </div>
               <div className="mt-slider-group">
@@ -132,7 +182,7 @@ export default function VolumeFiller() {
                   step="1"
                   value={width}
                   aria-label={C.width}
-                  onChange={(e) => setWidth(Number(e.target.value))}
+                  onChange={slide(setWidth)}
                 />
               </div>
             </>
@@ -151,7 +201,7 @@ export default function VolumeFiller() {
                 step="1"
                 value={radius}
                 aria-label={C.radius}
-                onChange={(e) => setRadius(Number(e.target.value))}
+                onChange={slide(setRadius)}
               />
             </div>
           )}
@@ -170,7 +220,7 @@ export default function VolumeFiller() {
               step="1"
               value={height}
               aria-label={C.height}
-              onChange={(e) => setHeight(Number(e.target.value))}
+              onChange={slide(setHeight)}
             />
           </div>
 
@@ -195,6 +245,12 @@ export default function VolumeFiller() {
             </div>
           </div>
 
+          {task && (
+            <button type="button" className="mt-check" onClick={handleCheck}>
+              {T.checkMyAnswer}
+            </button>
+          )}
+
           <p className="mt-formula">{isPrism ? C.formulaPrismVolume : C.formulaCylinderVolume}</p>
           <p className="mt-formula">{C.oneLitre}</p>
 
@@ -208,6 +264,15 @@ export default function VolumeFiller() {
           </div>
         </div>
       </div>
+
+      {result && (
+        <MathWorkingReveal
+          title={result.correct ? T.correctTitle : T.wrongTitle}
+          answer={result.reveal?.answer}
+          steps={result.reveal?.steps}
+          tone={result.correct ? "right" : "wrong"}
+        />
+      )}
     </div>
   );
 }

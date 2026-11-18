@@ -1,5 +1,12 @@
 import { useState } from "react";
+import MathWorkingReveal from "./MathWorkingReveal";
 import { AREA_COPY as C, rectangleWorking, circleWorking } from "../data/measurementTools";
+import {
+  MEASUREMENT_TASK_COPY as T,
+  measurementTaskFor,
+  measurementReveal,
+  matchesMeasurementTarget,
+} from "../data/measurementTasks";
 import "./MeasurementTools.css";
 
 // AreaBuilder — the Play-tab tool for experiment.type "area-builder" (lesson
@@ -10,6 +17,19 @@ import "./MeasurementTools.css";
 // where tools/check-mathematics-labs.mjs proves each one is taught by
 // perimeter-area. Nothing is written into the markup: every text node below is
 // an expression, so a new untaught string cannot slip in as bare JSX text.
+//
+// THE TASK AND THE REVEAL (added 2026-11-18). Until this, the tool was a
+// calculator with nothing answerable, so the step-by-step reveal could never
+// fire on perimeter-area. The question, its target and its method now live in
+// src/data/measurementTasks.js keyed by lessonId; this component only renders
+// the prompt for the tab it is on, grades the sliders against the target, and
+// shows the method the table hands back. It authors no method of its own, and
+// the reveal is never gated on `steps` being present — an answer with no steps
+// must still reveal the answer.
+//
+// With no lessonId (the Mathematics subject-page lab) `measurementTaskFor`
+// returns null and this tool renders exactly as it did before the tasks
+// existed.
 
 const PX_PER_CM = 16;
 const W = 320;
@@ -17,7 +37,7 @@ const H = 220;
 const CX = W / 2;
 const CY = H / 2;
 
-export default function AreaBuilder() {
+export default function AreaBuilder({ subjectId, lessonId }) {
   const [shape, setShape] = useState("rectangle");
   const [length, setLength] = useState(3);
   const [width, setWidth] = useState(4);
@@ -28,20 +48,50 @@ export default function AreaBuilder() {
   const circle = circleWorking(radius);
   const steps = isRectangle ? rect.steps : circle.steps;
 
+  // The task for THIS lesson and THIS tab (src/data/measurementTasks.js).
+  // null on the subject page and for every lesson without a task.
+  const task = measurementTaskFor(subjectId, lessonId, shape);
+  // null until "Check my answer" is pressed: { correct, reveal }.
+  const [result, setResult] = useState(null);
+
+  // Moving a slider or changing tab changes the answer, so an old verdict must
+  // not linger next to it.
+  const slide = (setter) => (e) => {
+    setResult(null);
+    setter(Number(e.target.value));
+  };
+  const pickShape = (next) => {
+    setResult(null);
+    setShape(next);
+  };
+
+  const handleCheck = () => {
+    if (!task) return;
+    const correct = matchesMeasurementTarget(shape, { shape, length, width, radius }, task.target);
+    setResult({ correct, reveal: measurementReveal({ subjectId, lessonId, taskId: task.id }) });
+  };
+
   return (
     <div className="area-builder">
+      {task && (
+        <div className="mt-task">
+          <p className="mt-task-prompt">
+            <strong>{T.yourTask}</strong> {task.prompt}
+          </p>
+        </div>
+      )}
       <div className="mt-shapes">
         <button
           type="button"
           className={`mt-shape-tab ${isRectangle ? "active" : ""}`}
-          onClick={() => setShape("rectangle")}
+          onClick={() => pickShape("rectangle")}
         >
           {C.shapeRectangle}
         </button>
         <button
           type="button"
           className={`mt-shape-tab ${!isRectangle ? "active" : ""}`}
-          onClick={() => setShape("circle")}
+          onClick={() => pickShape("circle")}
         >
           {C.shapeCircle}
         </button>
@@ -88,7 +138,7 @@ export default function AreaBuilder() {
                   step="1"
                   value={length}
                   aria-label={C.length}
-                  onChange={(e) => setLength(Number(e.target.value))}
+                  onChange={slide(setLength)}
                 />
               </div>
               <div className="mt-slider-group">
@@ -105,7 +155,7 @@ export default function AreaBuilder() {
                   step="1"
                   value={width}
                   aria-label={C.width}
-                  onChange={(e) => setWidth(Number(e.target.value))}
+                  onChange={slide(setWidth)}
                 />
               </div>
             </>
@@ -125,7 +175,7 @@ export default function AreaBuilder() {
                   step="1"
                   value={radius}
                   aria-label={C.radius}
-                  onChange={(e) => setRadius(Number(e.target.value))}
+                  onChange={slide(setRadius)}
                 />
               </div>
               <p className="mt-note">{C.pi}</p>
@@ -147,6 +197,12 @@ export default function AreaBuilder() {
             </div>
           </div>
 
+          {task && (
+            <button type="button" className="mt-check" onClick={handleCheck}>
+              {T.checkMyAnswer}
+            </button>
+          )}
+
           <p className="mt-formula">{isRectangle ? C.formulaRectArea : C.formulaCircleArea}</p>
           <p className="mt-formula">{isRectangle ? C.formulaRectPerimeter : C.formulaCircleCircumference}</p>
 
@@ -160,6 +216,15 @@ export default function AreaBuilder() {
           </div>
         </div>
       </div>
+
+      {result && (
+        <MathWorkingReveal
+          title={result.correct ? T.correctTitle : T.wrongTitle}
+          answer={result.reveal?.answer}
+          steps={result.reveal?.steps}
+          tone={result.correct ? "right" : "wrong"}
+        />
+      )}
     </div>
   );
 }
