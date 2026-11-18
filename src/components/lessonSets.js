@@ -333,6 +333,33 @@ export const lessonSets = {
         { id: "sm6", target: "The tiny hairs that sweep mucus out of the airways, destroyed by tar", label: "Cilia" },
       ],
     },
+    // Ecological Study Methods (Slice 4) — match each method or measurement to what it is.
+    "bio-eco-study-methods": {
+      title: "Ecological Study Methods",
+      subtitle: "Match each sampling method or measurement to what it is.",
+      kind: "match",
+      pairs: [
+        { id: "ec1", target: "A square frame of known area thrown at random; count the organisms inside it to work out density and percentage frequency", label: "Quadrat" },
+        { id: "ec2", target: "A tape laid in a straight line across the habitat with the organisms recorded along it, used where conditions change", label: "Transect" },
+        { id: "ec3", target: "Catch, mark harmlessly, release, allow mixing, then recapture; estimate the population with the Lincoln index", label: "Capture-recapture" },
+        { id: "ec4", target: "Use a random number table or a random number generator against a grid, so every position has an equal chance of being chosen", label: "Random sampling" },
+        { id: "ec5", target: "The number of individuals of a species per square metre", label: "Density" },
+        { id: "ec6", target: "The percentage of the quadrats in which the species occurs at all", label: "Percentage frequency" },
+      ],
+    },
+    // Special Relationships (Slice 4) — match each relationship to its definition and example.
+    "bio-eco-special-relationships": {
+      title: "Relationships Between Organisms",
+      subtitle: "Match each relationship to its definition and its named example.",
+      kind: "match",
+      pairs: [
+        { id: "sr1", target: "Both species benefit: Rhizobium in the root nodules of a legume gets sugars and the plant gets nitrogen compounds", label: "Mutualism" },
+        { id: "sr2", target: "One benefits and the other is neither helped nor harmed: a remora rides with a shark and eats the scraps of its meal", label: "Commensalism" },
+        { id: "sr3", target: "One benefits and the host is harmed: a tapeworm absorbs food from the gut it lives in", label: "Parasitism" },
+        { id: "sr4", target: "Both need the same limited resource and both are harmed: two maize plants compete for the same nitrate", label: "Competition" },
+        { id: "sr5", target: "A feeding relationship, not a symbiosis: one animal kills and eats another", label: "Predation" },
+      ],
+    },
   },
 
   // --------------------------------------------------- INFORMATION TECHNOLOGY
