@@ -293,6 +293,32 @@ export const lessonSets = {
         { id: "cl7", label: "Species", order: 7 },
       ],
     },
+    // Leaf Structure (Slice 2a) — order the layers of the leaf cross-section, upper surface down.
+    "bio-nut-leaf-structure": {
+      title: "Leaf Cross-Section",
+      subtitle: "Arrange the layers of a leaf from the upper surface down to the lower surface.",
+      kind: "order",
+      items: [
+        { id: "lf1", label: "Cuticle: a thin waxy waterproof layer", order: 1 },
+        { id: "lf2", label: "Upper epidermis: one transparent cell thick, no chloroplasts", order: 2 },
+        { id: "lf3", label: "Palisade mesophyll: tall, closely packed cells full of chloroplasts", order: 3 },
+        { id: "lf4", label: "Spongy mesophyll: rounded cells with large air spaces between them, with vascular bundles running through them", order: 4 },
+        { id: "lf6", label: "Lower epidermis: stomata, each surrounded by two guard cells", order: 5 },
+      ],
+    },
+    // Food Tests (Slice 2a) — match each test to the food group and the positive result.
+    "bio-nut-food-tests": {
+      title: "Food Tests",
+      subtitle: "Match each food test to the food group it identifies and the result that shows a positive.",
+      kind: "match",
+      pairs: [
+        { id: "ft1", target: "Reducing sugar: blue to brick-red on heating in a water bath", label: "Benedict's test" },
+        { id: "ft2", target: "Starch: yellow-brown to blue-black", label: "Iodine solution" },
+        { id: "ft3", target: "Protein: blue to purple or violet", label: "Biuret test" },
+        { id: "ft4", target: "Fat: a cloudy white emulsion with ethanol and water", label: "Emulsion test" },
+        { id: "ft5", target: "Stays negative, proving the reagent does not change colour by itself", label: "Control (water instead of food)" },
+      ],
+    },
   },
 
   // --------------------------------------------------- INFORMATION TECHNOLOGY
