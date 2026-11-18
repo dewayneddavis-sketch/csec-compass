@@ -302,9 +302,8 @@ export const lessonSets = {
         { id: "lf1", label: "Cuticle: a thin waxy waterproof layer", order: 1 },
         { id: "lf2", label: "Upper epidermis: one transparent cell thick, no chloroplasts", order: 2 },
         { id: "lf3", label: "Palisade mesophyll: tall, closely packed cells full of chloroplasts", order: 3 },
-        { id: "lf4", label: "Spongy mesophyll: rounded cells with large air spaces between them", order: 4 },
-        { id: "lf5", label: "Vascular bundle: xylem bringing water, phloem carrying glucose away", order: 5 },
-        { id: "lf6", label: "Lower epidermis: stomata, each surrounded by two guard cells", order: 6 },
+        { id: "lf4", label: "Spongy mesophyll: rounded cells with large air spaces between them, with vascular bundles running through them", order: 4 },
+        { id: "lf6", label: "Lower epidermis: stomata, each surrounded by two guard cells", order: 5 },
       ],
     },
     // Food Tests (Slice 2a) — match each test to the food group and the positive result.
