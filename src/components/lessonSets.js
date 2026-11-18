@@ -319,6 +319,20 @@ export const lessonSets = {
         { id: "ft5", target: "Stays negative, proving the reagent does not change colour by itself", label: "Control (water instead of food)" },
       ],
     },
+    // Effects of Smoking (Slice 3) — match each harmful substance or condition to its effect.
+    "bio-resp-effects-of-smoking": {
+      title: "What Smoking Does",
+      subtitle: "Drag each harmful substance or condition to the effect it has on the body.",
+      kind: "match",
+      pairs: [
+        { id: "sm1", target: "Settles on the airways and alveoli, paralyses and destroys the cilia, and contains carcinogens", label: "Tar" },
+        { id: "sm2", target: "The addictive drug that speeds up the heart rate and raises blood pressure", label: "Nicotine" },
+        { id: "sm3", target: "Binds to haemoglobin in place of oxygen, so the blood carries less oxygen", label: "Carbon monoxide" },
+        { id: "sm4", target: "The walls between the alveoli break down, permanently reducing the surface area for gas exchange", label: "Emphysema" },
+        { id: "sm5", target: "Inflamed airways and collected mucus cause a persistent cough and frequent chest infections", label: "Bronchitis" },
+        { id: "sm6", target: "The tiny hairs that sweep mucus out of the airways, destroyed by tar", label: "Cilia" },
+      ],
+    },
   },
 
   // --------------------------------------------------- INFORMATION TECHNOLOGY
