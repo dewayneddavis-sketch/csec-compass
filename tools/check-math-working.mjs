@@ -65,7 +65,11 @@ import { measurementTasks } from "../src/data/measurementTasks.js";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const read = (p) => fs.readFileSync(path.join(root, p), "utf8");
 const SELFTEST = process.argv.includes("--selftest");
-const RED_CONTROL = process.argv.includes("--red-control") || process.argv.includes("--red-controls-all");
+// The red controls run by DEFAULT: the suite invokes every harness with no
+// arguments, so an opt-in flag meant the shipped suite never proved that any
+// of these assertions can bite. Pass --no-red-control to skip them;
+// --red-control / --red-controls-all stay accepted as no-op aliases.
+const RED_CONTROL = !process.argv.includes("--no-red-control");
 
 let pass = 0;
 let fail = 0;
