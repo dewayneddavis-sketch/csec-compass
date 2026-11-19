@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Author the Biology Tier-1 lesson figures (audit §2 #1-#3).
+"""Author the Biology lesson figures.
+
+The first three (audit §2 #1-#3) are unchanged and still reproduce byte for byte. PR A of
+/home/team/shared/biology-figures-brief.md added five more, in the brief's order 0-4:
+levels-of-organisation, leaf-cross-section, elbow-antagonistic-pair,
+nitrogen-cycle-and-carbon-returns and reflex-arc-and-accommodation. Every word any of the eight
+prints is checked against its own lesson's copy by tools/check-biology-figure-labels.mjs.
 
 All-original vector diagrams drawn to the vocabulary the three lessons teach on
 origin/main (see /home/team/shared/biology-figure-audit.md). No number, size or
@@ -47,6 +53,11 @@ PELV = "#fef3c7"; PELV_L = "#b45309"
 TUBE = "#fdba74"; TUBE_L = "#c2410c"
 
 FONT = "Helvetica,Arial,sans-serif"
+
+# A contracted muscle reads as short, fat and strongly outlined; a relaxed one as long, thin and
+# pale. The elbow figure uses these so the state is visible, not only written.
+MUSC_FAT = "#fda4af"; MUSC_LINE = "#9f1239"
+MUSC_PALE = "#fee2e2"; MUSC_SOFT = "#fda4af"
 
 
 def esc(s):
@@ -379,6 +390,478 @@ def figure_kidney():
     return svg(A, W, H, "A kidney in section beside one nephron, showing filtration, reabsorption and the path of urine", "".join(b))
 
 
+# ---------------------------------------------------------------- shared shape helpers
+# Added with the PR A figures (0-4 of /home/team/shared/biology-figures-brief.md). The three
+# figures above are untouched: adding helpers cannot change their output.
+
+def box(x, y, w, h, fill, stroke, rx=12, sw=3):
+    return (f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="{fill}" '
+            f'stroke="{stroke}" stroke-width="{sw}"/>')
+
+
+def line_arrow(x1, y1, x2, y2, prefix, name="arrow", colour=MUTED, w=4):
+    return (f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{colour}" '
+            f'stroke-width="{w}" marker-end="url(#{prefix}-{name})"/>')
+
+
+def bone(x1, y1, x2, y2, w=22):
+    return (f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="#94a3b8" '
+            f'stroke-width="{w+8}" stroke-linecap="round"/>'
+            f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="#f8fafc" '
+            f'stroke-width="{w}" stroke-linecap="round"/>')
+
+
+def strap(x1, y1, x2, y2, w=10):
+    return (f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="#64748b" '
+            f'stroke-width="{w+6}" stroke-linecap="round"/>'
+            f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="#ffffff" '
+            f'stroke-width="{w}" stroke-linecap="round"/>')
+
+
+def text_lines(x, y, rows, size=15, fill=MUTED, anchor="middle", lh=None):
+    lh = size + 6 if lh is None else lh
+    return "".join(txt(x, y + i * lh, s, size=size, anchor=anchor, fill=fill)
+                   for i, s in enumerate(rows))
+
+
+def stacked_label(x, y, ax, ay, rows, anchor, size=19, fill=INK):
+    out = txt(x, y, rows[0], size=size, anchor=anchor, fill=fill)
+    for i, s in enumerate(rows[1:], start=1):
+        out += txt(x, y + i * (size + 5), s, size=size, anchor=anchor, fill=fill)
+    return out + leader(x + (8 if anchor == "start" else -8), y, ax, ay)
+
+
+def spindle(cx, cy, half=70, ry=21, fill=ORGAN, stroke=ORGAN_L):
+    return (f'<path d="M {cx-half},{cy} C {cx-half/2},{cy-ry} {cx+half/2},{cy-ry} {cx+half},{cy} '
+            f'C {cx+half/2},{cy+ry} {cx-half/2},{cy+ry} {cx-half},{cy} Z" fill="{fill}" '
+            f'stroke="{stroke}" stroke-width="3"/>')
+
+
+def rotated(x, y, s, size=17, fill=MUTED, angle=-90):
+    return (f'<text x="{x}" y="{y}" transform="rotate({angle} {x} {y})" font-family="{FONT}" '
+            f'font-size="{size}" text-anchor="middle" fill="{fill}" '
+            f'dominant-baseline="middle">{esc(s)}</text>')
+
+
+# ---------------------------------------------------------------- 4. levels of organisation
+# The sentence in bio-cell-levels-of-organisation says "The labelled diagram below reads from the
+# smallest level to the largest, and every label is given". This is that diagram, and every label
+# is the sentence's own wording — nothing here is a word the lesson does not print.
+
+def figure_levels():
+    W, H = 1000, 700
+    A = "levels"
+    b = []
+    b.append(txt(500, 44, "THE FIVE LEVELS OF ORGANISATION", size=28, weight="700", anchor="middle"))
+    b.append(txt(500, 80, "from the smallest level to the largest", size=21, anchor="middle", fill=MUTED))
+    b.append(f'<line x1="60" y1="118" x2="930" y2="118" stroke="{MUTED}" stroke-width="3" '
+             f'marker-end="url(#{A}-arrow)"/>')
+    b.append(txt(60, 146, "smallest level", size=19, fill=MUTED))
+    b.append(txt(930, 146, "largest level", size=19, anchor="end", fill=MUTED))
+
+    X = [20, 216, 412, 608, 804]
+    names = ["CELL", "TISSUE", "ORGAN", "ORGAN SYSTEM", "ORGANISM"]
+    desc = [["one muscle cell"],
+            ["muscle tissue,", "many muscle cells", "working together"],
+            ["the stomach,", "muscle tissue plus", "lining tissue and", "gland tissue"],
+            ["the digestive", "system, the stomach", "plus the intestines", "and the glands that", "feed it"],
+            ["the human being"]]
+    for x0 in X:
+        b.append(box(x0, 168, 176, 240, PANEL, PANEL_L, rx=14, sw=2))
+
+    # 1. cell — one muscle cell
+    x0 = X[0]
+    b.append(spindle(x0 + 88, 288, half=72, ry=22))
+    b.append(f'<ellipse cx="{x0+88}" cy="288" rx="17" ry="12" fill="{NUC}" '
+             f'stroke="{NUC_L}" stroke-width="3"/>')
+
+    # 2. tissue — many muscle cells working together
+    x0 = X[1]
+    for cy in (252, 288, 324):
+        b.append(spindle(x0 + 88, cy, half=70, ry=16))
+        b.append(f'<ellipse cx="{x0+88}" cy="{cy}" rx="13" ry="9" fill="{NUC}" '
+                 f'stroke="{NUC_L}" stroke-width="2.5"/>')
+
+    # 3. organ — the stomach: muscle tissue plus lining tissue and gland tissue
+    x0 = X[2]
+    b.append(f'<path d="M {x0+66},206 C {x0+126},214 {x0+144},258 {x0+128},294 '
+             f'C {x0+112},328 {x0+72},338 {x0+44},318 C {x0+74},306 {x0+96},288 {x0+90},256 '
+             f'C {x0+86},232 {x0+72},214 {x0+66},206 Z" fill="{ORGAN}" '
+             f'stroke="{ORGAN_L}" stroke-width="3"/>')
+    b.append(f'<path d="M {x0+76},220 C {x0+120},232 {x0+132},266 {x0+118},296" fill="none" '
+             f'stroke="{ORGAN_L}" stroke-width="2" stroke-dasharray="7 5"/>')
+    b.append(dots([(x0+100, 250), (x0+110, 270), (x0+104, 290)], r=4, fill=LYSO_L))
+
+    # 4. organ system — the digestive system
+    x0 = X[3]
+    b.append(f'<path d="M {x0+40},192 C {x0+78},198 {x0+92},224 {x0+84},248 '
+             f'C {x0+76},270 {x0+50},276 {x0+32},264 C {x0+50},256 {x0+60},244 {x0+56},226 '
+             f'C {x0+54},212 {x0+44},200 {x0+40},192 Z" fill="{ORGAN}" '
+             f'stroke="{ORGAN_L}" stroke-width="3"/>')
+    b.append(f'<circle cx="{x0+120}" cy="212" r="13" fill="{LYSO}" stroke="{LYSO_L}" stroke-width="3"/>')
+    b.append(f'<circle cx="{x0+136}" cy="240" r="10" fill="{LYSO}" stroke="{LYSO_L}" stroke-width="3"/>')
+    coil = (f'M {x0+54},272 C {x0+94},266 {x0+126},276 {x0+130},296 '
+            f'C {x0+132},316 {x0+104},326 {x0+72},320 '
+            f'C {x0+40},314 {x0+28},300 {x0+34},284')
+    b.append(f'<path d="{coil}" fill="none" stroke="{TUBE_L}" stroke-width="11" stroke-linecap="round"/>')
+    b.append(f'<path d="{coil}" fill="none" stroke="{TUBE}" stroke-width="5" stroke-linecap="round"/>')
+
+    # 5. organism — the human being
+    x0 = X[4]
+    b.append(f'<circle cx="{x0+88}" cy="212" r="21" fill="{ORGAN}" stroke="{ORGAN_L}" stroke-width="3"/>')
+    b.append(f'<line x1="{x0+88}" y1="236" x2="{x0+88}" y2="316" stroke="{ORGAN_L}" '
+             f'stroke-width="8" stroke-linecap="round"/>')
+    b.append(f'<line x1="{x0+88}" y1="254" x2="{x0+50}" y2="296" stroke="{ORGAN_L}" '
+             f'stroke-width="7" stroke-linecap="round"/>')
+    b.append(f'<line x1="{x0+88}" y1="254" x2="{x0+126}" y2="296" stroke="{ORGAN_L}" '
+             f'stroke-width="7" stroke-linecap="round"/>')
+    b.append(f'<line x1="{x0+88}" y1="316" x2="{x0+62}" y2="374" stroke="{ORGAN_L}" '
+             f'stroke-width="7" stroke-linecap="round"/>')
+    b.append(f'<line x1="{x0+88}" y1="316" x2="{x0+114}" y2="374" stroke="{ORGAN_L}" '
+             f'stroke-width="7" stroke-linecap="round"/>')
+
+    for i, x0 in enumerate(X):
+        b.append(txt(x0 + 88, 434, names[i], size=21, weight="700", anchor="middle"))
+        b.append(text_lines(x0 + 88, 466, desc[i], size=15, fill=MUTED, anchor="middle"))
+
+    b.append(box(20, 596, 960, 82, PANEL, PANEL_L, rx=12, sw=2))
+    b.append(txt(500, 622, "An organism is not a loose bag of cells: it is five levels of organisation.",
+                 size=20, anchor="middle"))
+    b.append(txt(500, 652, "Each level is built from the one before it.", size=19,
+                 anchor="middle", fill=MUTED))
+    return svg(A, W, H, "The five levels of organisation from one muscle cell to the human being",
+               "".join(b))
+
+
+# ---------------------------------------------------------------- 5. leaf cross-section
+
+def figure_leaf():
+    W, H = 1000, 830
+    A = "leaf"
+    b = []
+    b.append(txt(500, 42, "A LEAF IN CROSS-SECTION", size=28, weight="700", anchor="middle"))
+    b.append(txt(500, 74, "from the upper surface down", size=20, anchor="middle", fill=MUTED))
+
+    X0, X1 = 210, 880
+    # cuticle — a thin waxy waterproof layer over the upper surface
+    b.append(f'<rect x="{X0}" y="150" width="{X1-X0}" height="11" rx="5" fill="#fde68a" '
+             f'stroke="#b45309" stroke-width="2"/>')
+    # upper epidermis — one transparent cell thick, no chloroplasts
+    for i in range(9):
+        b.append(box(X0 + i * 74, 166, 72, 52, "#e0f2fe", "#0284c7", rx=7, sw=2))
+    # palisade mesophyll — tall, closely packed cells full of chloroplasts
+    for i in range(11):
+        cx = X0 + i * 60
+        b.append(box(cx, 222, 56, 150, "#dcfce7", WALL, rx=8, sw=2.5))
+        for dy in (28, 60, 92, 124):
+            b.append(chloroplast(cx + 28, 222 + dy, rx=13, ry=8))
+    # spongy mesophyll — rounded cells with large air spaces between them
+    for cx in (240, 320, 400, 690, 770, 850):
+        for cy in (404, 452):
+            b.append(f'<circle cx="{cx}" cy="{cy}" r="22" fill="#dcfce7" stroke="{WALL}" '
+                     f'stroke-width="2.5"/>')
+    # vascular bundle — xylem above, phloem below
+    b.append(f'<ellipse cx="545" cy="428" rx="96" ry="52" fill="#fef3c7" stroke="#b45309" '
+             f'stroke-width="3"/>')
+    for cx in (507, 545, 583):
+        b.append(f'<circle cx="{cx}" cy="408" r="15" fill="{DEOX}" stroke="{DEOX_L}" '
+                 f'stroke-width="2.5"/>')
+    for cx in (507, 545, 583):
+        b.append(f'<circle cx="{cx}" cy="450" r="14" fill="{ER_C}" stroke="{ER_L}" '
+                 f'stroke-width="2.5"/>')
+    # lower epidermis, pierced by a stoma between two guard cells
+    for i in range(9):
+        if i == 5:
+            continue
+        b.append(box(X0 + i * 74, 492, 72, 50, "#e0f2fe", "#0284c7", rx=7, sw=2))
+    b.append(f'<path d="M 584,494 C 572,510 572,526 584,542 L 612,542 '
+             f'C 604,526 604,510 612,494 Z" fill="#bbf7d0" stroke="{WALL}" stroke-width="2.5"/>')
+    b.append(f'<path d="M 648,494 C 656,510 656,526 648,542 L 620,542 '
+             f'C 628,526 628,510 620,494 Z" fill="#bbf7d0" stroke="{WALL}" stroke-width="2.5"/>')
+
+    # light reaching the palisade layer through the transparent layers above it
+    for x in (300, 545, 790):
+        b.append(line_arrow(x, 86, x, 210, A, "amber", PELV_L, 5))
+    b.append(txt(278, 112, "light", size=22, anchor="end", fill=PELV_L))
+    # gases through the one stoma
+    b.append(line_arrow(610, 706, 610, 548, A, "arrow", MUTED, 4))
+    b.append(line_arrow(624, 548, 624, 706, A, "arrow", MUTED, 4))
+    b.append(txt(690, 640, "carbon dioxide in", size=20, fill=MUTED))
+    b.append(txt(690, 672, "oxygen and water vapour out", size=20, fill=MUTED))
+
+    # labels — every one is a word this lesson prints
+    b.append(stacked_label(200, 146, 212, 156, ["cuticle"], "end"))
+    b.append(stacked_label(200, 200, 212, 194, ["upper", "epidermis"], "end"))
+    b.append(stacked_label(200, 286, 214, 286, ["palisade", "mesophyll"], "end"))
+    b.append(stacked_label(200, 352, 258, 318, ["chloroplasts"], "end"))
+    b.append(stacked_label(200, 424, 218, 428, ["air", "spaces"], "end"))
+    b.append(stacked_label(200, 516, 214, 517, ["lower", "epidermis"], "end"))
+    b.append(stacked_label(890, 336, 640, 414, ["vascular", "bundle"], "start"))
+    b.append(stacked_label(890, 396, 583, 408, ["xylem"], "start"))
+    b.append(stacked_label(890, 440, 583, 450, ["phloem"], "start"))
+    b.append(stacked_label(890, 486, 770, 452, ["spongy", "mesophyll"], "start"))
+    b.append(stacked_label(890, 540, 616, 520, ["stomata"], "start"))
+    b.append(stacked_label(890, 584, 604, 522, ["guard", "cells"], "start"))
+
+    b.append(box(20, 724, 960, 76, PANEL, PANEL_L, rx=12, sw=2))
+    b.append(txt(40, 750, "The air spaces let carbon dioxide diffuse quickly to every cell, "
+                          "and oxygen diffuse back out.", size=20))
+    b.append(txt(40, 780, "Xylem carries water and mineral ions up from the roots; "
+                          "phloem carries the glucose away.", size=19, fill=MUTED))
+    return svg(A, W, H, "A leaf in cross-section from the cuticle down to the stomata, with the "
+                        "gases and the vascular bundle labelled", "".join(b))
+
+
+# ---------------------------------------------------------------- 6. the elbow
+
+def figure_elbow():
+    W, H = 1000, 880
+    A = "elbow"
+    b = []
+    b.append(txt(500, 44, "THE ELBOW: AN ANTAGONISTIC PAIR", size=28, weight="700", anchor="middle"))
+
+    def panel(dx, flexed):
+        out = []
+        x = lambda v: v + dx
+        out.append(box(x(20), 90, 470, 510, "#f8fafc", PANEL_L, rx=14, sw=2))
+        out.append(txt(x(255), 130, "TO FLEX" if flexed else "TO EXTEND", size=24,
+                       weight="700", anchor="middle"))
+        # humerus, and the hinge joint it makes with the forearm
+        out.append(bone(x(90), 300, x(350), 300, 22))
+        out.append(f'<circle cx="{x(365)}" cy="300" r="17" fill="#f8fafc" stroke="{MUTED}" '
+                   f'stroke-width="4"/>')
+        if flexed:
+            out.append(bone(x(374), 294, x(464), 174, 18))   # radius
+            out.append(bone(x(356), 306, x(446), 186, 18))   # ulna
+        else:
+            out.append(bone(x(374), 294, x(464), 424, 18))
+            out.append(bone(x(356), 306, x(446), 436, 18))
+        # the two muscles of the pair. A CONTRACTED muscle is short, fat and strongly outlined; a
+        # relaxed one is long, thin and pale, so the picture says which one is working without a
+        # word — the words are there too.
+        muscle = lambda cy, rx, ry, contracted: (
+            f'<ellipse cx="{x(215)}" cy="{cy}" rx="{rx}" ry="{ry}" fill="{MUSC_FAT if contracted else MUSC_PALE}" '
+            f'stroke="{MUSC_LINE if contracted else MUSC_SOFT}" '
+            f'stroke-width="{3.5 if contracted else 2}"/>')
+        if flexed:
+            out.append(muscle(262, 88, 26, True))    # biceps contracts
+            out.append(muscle(340, 112, 16, False))  # triceps relaxes
+        else:
+            out.append(muscle(262, 112, 16, False))  # biceps relaxes
+            out.append(muscle(340, 88, 26, True))    # triceps contracts
+        # tendons: muscle to bone
+        out.append(strap(x(128), 262, x(96), 286))
+        out.append(strap(x(302), 262, x(378), 290))
+        out.append(strap(x(104), 340, x(92), 318))
+        out.append(strap(x(326), 340, x(368), 322))
+        # ligament: bone to bone, across the joint
+        out.append(strap(x(384), 310, x(410), 332, 8))
+        out.append(txt(x(200), 300, "humerus", size=18, weight="700", anchor="middle"))
+        if flexed:
+            out.append(txt(x(215), 224, "biceps contracts", size=17, anchor="middle", fill=OXY_L))
+            out.append(txt(x(215), 378, "triceps relaxes", size=17, anchor="middle", fill=MUTED))
+        else:
+            out.append(txt(x(215), 224, "biceps relaxes", size=17, anchor="middle", fill=MUTED))
+            out.append(txt(x(215), 378, "triceps contracts", size=17, anchor="middle", fill=OXY_L))
+        return "".join(out)
+
+    b.append(panel(0, True))
+    b.append(panel(490, False))
+
+    # labels on panel A only where the space is: the pair is drawn twice, the parts named once
+    b.append(margin_label(470, 160, 460, 190, "radius", "end", size=19))
+    b.append(margin_label(430, 140, 444, 176, "ulna", "end", size=19))
+    b.append(margin_label(60, 240, 100, 278, "tendon", "start", size=19))
+    b.append(margin_label(432, 400, 406, 330, "ligament", "end", size=19))
+    b.append(margin_label(365, 470, 365, 322, "hinge joint", "middle", size=19))
+    b.append(margin_label(900, 250, 852, 288, "tendon", "start", size=19))
+
+    b.append(box(20, 630, 960, 210, PANEL, PANEL_L, rx=12, sw=2))
+    b.append(txt(40, 662, "An antagonistic pair: one muscle contracts while the other relaxes.",
+                 size=21))
+    b.append(txt(40, 698, "A muscle can only pull, so the elbow needs two muscles, "
+                          "one pulling each way.", size=21))
+    b.append(txt(40, 734, "A tendon joins muscle to bone; a ligament joins bone to bone.",
+                 size=21))
+    b.append(txt(40, 770, "A hinge joint moves in one plane only.", size=21))
+    b.append(txt(40, 804, "The upper arm has one bone, the humerus; the forearm has two, "
+                          "the radius and the ulna.", size=19, fill=MUTED))
+    return svg(A, W, H, "The elbow flexed and extended, showing the biceps and the triceps as an "
+                        "antagonistic pair with their tendons and the ligament of the joint",
+               "".join(b))
+
+
+# ---------------------------------------------------------------- 7. the nitrogen cycle
+
+def figure_cycles():
+    W, H = 1000, 1060
+    A = "ncycle"
+    b = []
+    b.append(txt(20, 42, "THE NITROGEN CYCLE", size=28, weight="700"))
+    b.append(txt(20, 74, "the air, the soil, the plants and the animals, and back to the air",
+                 size=19, fill=MUTED))
+
+    nodes = [(90, 100, "nitrogen gas", ["most of the air"]),
+             (230, 120, "nitrogen fixation", ["Rhizobium, in the root", "nodules of legumes"]),
+             (390, 80, "ammonium compounds", []),
+             (510, 120, "nitrifying bacteria", ["nitrites, then nitrates"]),
+             (670, 120, "assimilation", ["nitrates into amino acids", "and proteins, then the",
+                                         "animals that eat the plant"]),
+             (830, 120, "decomposers", ["decomposition of dead", "plants, dead animals",
+                                        "and animal waste"])]
+    for y, h, name, rows in nodes:
+        b.append(box(170, y, 300, h, "#f0fdf4", WALL, rx=12, sw=2.5))
+        b.append(txt(320, y + 30, name, size=20, weight="700", anchor="middle"))
+        if rows:
+            b.append(text_lines(320, y + 58, rows, size=15, fill=MUTED, anchor="middle", lh=19))
+    for y1, y2 in [(190, 226), (350, 386), (470, 506), (630, 666), (790, 826)]:
+        b.append(line_arrow(320, y1, 320, y2 - 4, A, "arrow"))
+
+    # decomposition hands the nitrogen compounds back to the soil
+    b.append(f'<path d="M 170,890 L 100,890 L 100,430 L 164,430" fill="none" stroke="{OXY_L}" '
+             f'stroke-width="4" marker-end="url(#{A}-red)"/>')
+    b.append(rotated(76, 660, "decomposition returns ammonium compounds to the soil", size=17,
+                     fill=OXY_L))
+
+    # denitrifying bacteria close the loop back to the air
+    b.append(box(500, 560, 140, 130, "#fee2e2", OXY_L, rx=10, sw=3))
+    b.append(text_lines(570, 592, ["denitrifying", "bacteria"], size=17, fill=INK, lh=22))
+    b.append(text_lines(570, 640, ["change nitrates", "back into", "nitrogen gas"], size=14, lh=18))
+    b.append(line_arrow(470, 575, 496, 604, A, "arrow"))
+    b.append(f'<path d="M 570,560 L 570,140 L 474,140" fill="none" stroke="{MUTED}" '
+             f'stroke-width="4" marker-end="url(#{A}-arrow)"/>')
+
+    # the carbon cycle's four returns, beside it
+    b.append(box(660, 90, 320, 600, "#f0fdf4", WALL, rx=14, sw=2))
+    b.append(txt(820, 122, "the carbon cycle", size=22, weight="700", anchor="middle"))
+    b.append(txt(820, 152, "matter is recycled", size=17, anchor="middle", fill=MUTED))
+    rows = [("photosynthesis", "removes carbon dioxide"),
+            ("respiration", "returns it"),
+            ("combustion", "returns it"),
+            ("decomposition", "returns it")]
+    for i, (name, detail) in enumerate(rows):
+        y = 180 + i * 110
+        b.append(box(675, y, 290, 92, "#ffffff", WALL, rx=10, sw=2))
+        b.append(txt(820, y + 32, name, size=19, weight="700", anchor="middle"))
+        b.append(txt(820, y + 62, detail, size=15, anchor="middle", fill=MUTED))
+    b.append(text_lines(820, 652, ["Fossil fuels store carbon", "until they are burned"],
+                        size=14, anchor="middle", lh=20))
+
+    b.append(box(20, 970, 960, 66, PANEL, PANEL_L, rx=12, sw=2))
+    b.append(txt(500, 1003, "Energy flows in one direction; matter is recycled.", size=20,
+                 anchor="middle"))
+    return svg(A, W, H, "The nitrogen cycle as a closed loop, with the carbon cycle's four "
+                        "returns beside it", "".join(b))
+
+
+# ---------------------------------------------------------------- 8. reflex arc and the eye
+
+def figure_reflex():
+    W, H = 1000, 1120
+    A = "reflex"
+    b = []
+
+    # ---- panel A: the reflex arc
+    b.append(box(20, 80, 470, 530, "#f8fafc", PANEL_L, rx=14, sw=2))
+    b.append(txt(255, 120, "a reflex", size=24, weight="700", anchor="middle"))
+    b.append(box(300, 170, 70, 440, "#e2e8f0", "#64748b", rx=28, sw=3))
+    b.append(margin_label(390, 200, 372, 200, "spinal cord", "start", size=19))
+    b.append(margin_label(390, 246, 372, 246, "coordinator", "start", size=19))
+    # the hand, the hot object and the receptor in the skin
+    b.append(box(60, 250, 140, 90, "#fef3c7", "#b45309", rx=18, sw=3))
+    b.append(f'<path d="M 120,362 C 98,394 98,414 120,430 C 142,414 142,394 120,362 Z" '
+             f'fill="{TUBE}" stroke="{TUBE_L}" stroke-width="3"/>')
+    b.append(f'<ellipse cx="160" cy="342" rx="15" ry="9" fill="{MIT}" stroke="{MIT_L}" '
+             f'stroke-width="2.5"/>')
+    b.append(margin_label(200, 372, 174, 346, "receptor", "start", size=19))
+    b.append(margin_label(60, 470, 114, 428, "stimulus", "start", size=19))
+    # sensory neurone in, motor neurone out
+    b.append(tube("M 176,336 C 230,320 262,272 300,238", "#fde68a", "#b45309", 12))
+    b.append(txt(232, 292, "sensory neurone", size=18, anchor="middle"))
+    b.append(tube("M 300,510 C 262,516 232,518 196,518", "#fde68a", "#b45309", 12))
+    b.append(txt(232, 560, "motor neurone", size=18, anchor="middle"))
+    # the effector and the response
+    b.append(f'<ellipse cx="126" cy="518" rx="62" ry="30" fill="{ORGAN}" stroke="{ORGAN_L}" '
+             f'stroke-width="3"/>')
+    b.append(txt(126, 592, "effector", size=19, anchor="middle"))
+    b.append(line_arrow(190, 244, 140, 196, A, "arrow"))
+    b.append(txt(60, 180, "response", size=19))
+
+    # ---- panel B: the eye
+    b.append(box(510, 80, 470, 480, "#f8fafc", PANEL_L, rx=14, sw=2))
+    b.append(txt(745, 120, "the eye", size=24, weight="700", anchor="middle"))
+    b.append(f'<circle cx="780" cy="330" r="120" fill="#ffffff" stroke="#334155" stroke-width="5"/>')
+    b.append(f'<path d="M 700,240 C 630,272 630,388 700,420" fill="#e0f2fe" stroke="#0284c7" '
+             f'stroke-width="4"/>')
+    b.append(f'<rect x="690" y="270" width="22" height="120" rx="8" fill="#a78bfa" '
+             f'stroke="#6d28d9" stroke-width="2"/>')
+    b.append(f'<rect x="690" y="310" width="22" height="40" fill="#ffffff"/>')
+    b.append(f'<ellipse cx="722" cy="330" rx="16" ry="46" fill="{VAC}" stroke="{VAC_L}" '
+             f'stroke-width="3"/>')
+    b.append(f'<path d="M 830,228 C 895,260 895,400 830,432" fill="none" stroke="#be185d" '
+             f'stroke-width="9"/>')
+    b.append(f'<path d="M 898,330 L 962,330" stroke="#b45309" stroke-width="14" '
+             f'stroke-linecap="round"/>')
+    b.append(margin_label(530, 200, 656, 274, "cornea", "start", size=19))
+    b.append(margin_label(530, 250, 688, 330, "pupil", "start", size=19))
+    b.append(margin_label(530, 300, 688, 382, "iris", "start", size=19))
+    b.append(margin_label(760, 510, 722, 378, "lens", "middle", size=19))
+    b.append(margin_label(966, 240, 872, 268, "retina", "end", size=19))
+
+    # ---- panel C: accommodation, thin lens against thick lens
+    b.append(box(20, 630, 960, 400, "#f8fafc", PANEL_L, rx=14, sw=2))
+    b.append(txt(500, 666, "accommodation: the lens changes", size=24, weight="700",
+                 anchor="middle"))
+    for dx, near in ((0, False), (470, True)):
+        cx = 300 + dx
+        b.append(f'<circle cx="{cx}" cy="830" r="90" fill="#ffffff" stroke="#334155" '
+                 f'stroke-width="4"/>')
+        b.append(f'<path d="M {cx+72},780 C {cx+86},802 {cx+86},858 {cx+72},880" fill="none" '
+                 f'stroke="#be185d" stroke-width="8"/>')
+        if near:
+            b.append(f'<ellipse cx="{cx-60}" cy="830" rx="20" ry="46" fill="{VAC}" '
+                     f'stroke="{VAC_L}" stroke-width="3"/>')
+            b.append(f'<ellipse cx="{cx-60}" cy="770" rx="22" ry="14" fill="{GOLGI}" '
+                     f'stroke="{GOLGI_L}" stroke-width="2.5"/>')
+            b.append(f'<ellipse cx="{cx-60}" cy="890" rx="22" ry="14" fill="{GOLGI}" '
+                     f'stroke="{GOLGI_L}" stroke-width="2.5"/>')
+            b.append(strap(cx - 60, 786, cx - 60, 802, 6))
+            b.append(strap(cx - 60, 858, cx - 60, 874, 6))
+        else:
+            b.append(f'<ellipse cx="{cx-60}" cy="830" rx="10" ry="34" fill="{VAC}" '
+                     f'stroke="{VAC_L}" stroke-width="3"/>')
+            b.append(f'<ellipse cx="{cx-60}" cy="774" rx="18" ry="12" fill="{GOLGI}" '
+                     f'stroke="{GOLGI_L}" stroke-width="2.5"/>')
+            b.append(f'<ellipse cx="{cx-60}" cy="886" rx="18" ry="12" fill="{GOLGI}" '
+                     f'stroke="{GOLGI_L}" stroke-width="2.5"/>')
+            b.append(strap(cx - 60, 786, cx - 60, 800, 6))
+            b.append(strap(cx - 60, 860, cx - 60, 874, 6))
+        # rays from the object, bent by the lens, meeting on the retina
+        b.append(f'<path d="M {cx-200},782 L {cx-60},806 L {cx+70},830" fill="none" '
+                 f'stroke="{PELV_L}" stroke-width="3"/>')
+        b.append(f'<path d="M {cx-200},878 L {cx-60},854 L {cx+70},830" fill="none" '
+                 f'stroke="{PELV_L}" stroke-width="3"/>')
+        b.append(line_arrow(cx - 250, 830, cx - 190, 830, A, "amber", PELV_L, 4))
+
+    b.append(txt(60, 690, "distant object", size=18))
+    b.append(txt(300, 690, "thin lens", size=18, anchor="middle"))
+    b.append(txt(530, 690, "near object", size=18))
+    b.append(txt(770, 690, "thick lens", size=18, anchor="middle"))
+    b.append(margin_label(300, 950, 254, 858, "suspensory ligaments taut", "middle", size=17))
+    b.append(margin_label(300, 1000, 240, 884, "ciliary muscles relax", "middle", size=17))
+    b.append(margin_label(770, 950, 724, 858, "suspensory ligaments slack", "middle", size=17))
+    b.append(margin_label(770, 1000, 710, 886, "ciliary muscles contract", "middle", size=17))
+    b.append(margin_label(455, 890, 376, 878, "retina", "end", size=18))
+    b.append(margin_label(930, 830, 872, 830, "retina", "end", size=18))
+
+    b.append(txt(500, 1070, "Short sight (myopia): the correction is a concave lens.", size=20,
+                 anchor="middle"))
+    b.append(txt(500, 1102, "Long sight (hyperopia): the correction is a convex lens.", size=20,
+                 anchor="middle"))
+    return svg(A, W, H, "The reflex arc from stimulus to response, the eye in section, and the "
+                        "lens thin and thick in accommodation", "".join(b))
+
+
 def check(text, name, w, h):
     """Structural self-check: well-formed envelope, the declared canvas, no raster and no
     animation. Correctness of the drawing is NOT proven here (see the harness header)."""
@@ -393,14 +876,19 @@ def check(text, name, w, h):
 
 def main():
     ap = argparse.ArgumentParser(
-        description="Write Biology's three lesson figures into an explicit --out directory.")
+        description="Write Biology's eight lesson figures into an explicit --out directory.")
     ap.add_argument("--out", required=True,
                     help="directory to write the SVGs into; the only place this script writes")
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
     figures = [("plant-and-animal-cell.svg", figure_cell(), 1000, 1215),
                ("heart-and-double-circulation.svg", figure_heart(), 1000, 1270),
-               ("kidney-and-nephron.svg", figure_kidney(), 1000, 1330)]
+               ("kidney-and-nephron.svg", figure_kidney(), 1000, 1330),
+               ("levels-of-organisation.svg", figure_levels(), 1000, 700),
+               ("leaf-cross-section.svg", figure_leaf(), 1000, 830),
+               ("elbow-antagonistic-pair.svg", figure_elbow(), 1000, 880),
+               ("nitrogen-cycle-and-carbon-returns.svg", figure_cycles(), 1000, 1060),
+               ("reflex-arc-and-accommodation.svg", figure_reflex(), 1000, 1120)]
     written = {}
     for name, text, w, h in figures:
         check(text, name, w, h)
