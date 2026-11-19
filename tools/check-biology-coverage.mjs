@@ -29,12 +29,6 @@
 // lesson. A lesson can state a term and state it wrongly, and this harness is blind to that — an
 // independent re-derivation of the content, or a human reading it, is what catches a false fact.
 //
-// Also a known limit of the term lists themselves: they are the chapter's distinctive words, chosen so
-// that each one is a word the lesson must state. Where the chapter's own title word is absent from the
-// shipped copy, the term list does not pretend otherwise — "Taxonomic" (ch 2), "Mechanisms" (ch 30) and
-// "Dicotyledonous" (ch 48, the lesson says "dicotyledon") are NOT asserted, because asserting them would
-// be asserting a word no lesson writes. Those three are a real, small naming gap, not a passing check.
-//
 // Red controls run BY DEFAULT, with no arguments, because the suite invokes every harness that way — a
 // control behind a flag is a control the suite never runs (measured 2026-11-19: 8 of 16 harnesses were in
 // that state). `--no-red-control` skips them; `--red-control <name>` runs one.
@@ -141,7 +135,7 @@ export const TARGET = { chapters: 71, lessons: 30, modules: 9 };
 // `terms` are the chapter's distinctive words; every one of them must appear in that lesson's own copy.
 export const CHAPTERS = [
   { n: 1, section: "A", title: "Grouping Living Organisms", lesson: "classification-of-living-things", terms: ["grouping", "organisms"] },
-  { n: 2, section: "A", title: "Taxonomic Classification", lesson: "classification-of-living-things", terms: ["classification", "kingdom"] },
+  { n: 2, section: "A", title: "Taxonomic Classification", lesson: "classification-of-living-things", terms: ["taxonomic", "classification", "kingdom"] },
   { n: 3, section: "A", title: "Ecological Study Methods", lesson: "bio-eco-study-methods", terms: ["ecological", "quadrat", "transect"] },
   { n: 4, section: "A", title: "Ecological Definitions", lesson: "food-chains", terms: ["ecological", "habitat", "niche"] },
   { n: 5, section: "A", title: "Impact of Abiotic Factors", lesson: "food-chains", terms: ["abiotic", "factors"] },
@@ -169,7 +163,7 @@ export const CHAPTERS = [
   { n: 27, section: "B", title: "Digestion Products and Assimilation", lesson: "nutrition-and-digestion", terms: ["digestion", "assimilation"] },
   { n: 28, section: "B", title: "Balanced Diet", lesson: "nutrition-and-digestion", terms: ["balanced", "diet"] },
   { n: 29, section: "B", title: "Aerobic and Anaerobic Respiration", lesson: "respiration", terms: ["aerobic", "anaerobic", "respiration"] },
-  { n: 30, section: "B", title: "Gaseous Exchange Mechanisms", lesson: "breathing-and-gas-exchange", terms: ["gaseous", "exchange", "ventilation"] },
+  { n: 30, section: "B", title: "Gaseous Exchange Mechanisms", lesson: "breathing-and-gas-exchange", terms: ["gaseous", "exchange", "mechanism", "ventilation"] },
   { n: 31, section: "B", title: "Gaseous Exchange Surfaces", lesson: "breathing-and-gas-exchange", terms: ["gaseous", "exchange", "alveolus"] },
   { n: 32, section: "B", title: "Effects of Smoking", lesson: "bio-resp-effects-of-smoking", terms: ["smoking", "tar", "nicotine"] },
   { n: 33, section: "B", title: "Need for Transport", lesson: "circulatory-system", terms: ["transport", "surface", "volume"] },
@@ -187,7 +181,7 @@ export const CHAPTERS = [
   { n: 45, section: "B", title: "Human Eye and Vision", lesson: "nervous-system-and-sense-organs", terms: ["eye", "vision", "accommodation"] },
   { n: 46, section: "B", title: "Human Skin and Regulation", lesson: "excretion-homeostasis", terms: ["skin", "regulation", "vasodilation"] },
   { n: 47, section: "B", title: "Growth in Organisms", lesson: "dna-inheritance", terms: ["growth", "mitosis"] },
-  { n: 48, section: "B", title: "Dicotyledonous Seed Structure and Germination", lesson: "bio-rep-seed-and-germination", terms: ["seed", "germination", "cotyledon"] },
+  { n: 48, section: "B", title: "Dicotyledonous Seed Structure and Germination", lesson: "bio-rep-seed-and-germination", terms: ["dicotyledonous", "seed", "germination", "cotyledon"] },
   { n: 49, section: "B", title: "Sexual and Asexual Reproduction", lesson: "reproduction-and-development", terms: ["sexual", "asexual", "reproduction"] },
   { n: 50, section: "B", title: "Human Reproductive Systems", lesson: "reproduction-and-development", terms: ["reproductive", "systems"] },
   { n: 51, section: "B", title: "Menstrual Cycle and Embryo Development", lesson: "reproduction-and-development", terms: ["menstrual", "cycle", "embryo"] },
