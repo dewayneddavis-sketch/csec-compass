@@ -389,6 +389,20 @@ export const lessonSets = {
         { id: "ge6", target: "DNA made by joining a gene from one organism into the DNA of another", label: "Recombinant DNA" },
       ],
     },
+    // Movement and Support (Slice 6) — match each part to the job it does and each muscle to the movement it makes.
+    "bio-coord-movement-and-support": {
+      title: "Movement and Support",
+      subtitle: "Match each part to the job it does, and each muscle to the movement it makes.",
+      kind: "match",
+      pairs: [
+        { id: "ms1", target: "Joins bone to bone and holds the joint together", label: "Ligament" },
+        { id: "ms2", target: "Joins muscle to bone and carries the pull of the muscle", label: "Tendon" },
+        { id: "ms3", target: "Contracts and shortens to flex, bending the elbow", label: "Biceps" },
+        { id: "ms4", target: "Contracts and shortens to extend, straightening the elbow", label: "Triceps" },
+        { id: "ms5", target: "Movement in one plane only, as at the elbow and the knee", label: "Hinge joint" },
+        { id: "ms6", target: "Movement in all planes, as at the shoulder and the hip", label: "Ball-and-socket joint" },
+      ],
+    },
   },
 
   // --------------------------------------------------- INFORMATION TECHNOLOGY
