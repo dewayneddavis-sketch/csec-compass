@@ -84,9 +84,12 @@ const PLANNED_NEW_IDS = [
 // of module 6 (coordination-response), after nervous-system-and-sense-organs, with its own
 // match-the-pairs set. Biology Slice 7 (2026-11-19) struck off "bio-hlth-drug-abuse": it landed at
 // the end of module 7 (health-and-disease), after body-defences-and-immunity, with its own match set.
-const PENDING_IDS = [
-  "bio-rep-seed-and-germination", "bio-rep-birth-control-and-stis",
-];
+// Biology Slice 8 (2026-11-19) struck off the last two, "bio-rep-seed-and-germination" and
+// "bio-rep-birth-control-and-stis": both landed at the end of module 8 (reproduction-development),
+// each with its own match set. The list is now EMPTY — every planned new lesson has landed — so the
+// three controls that used to read st.pending[0] now synthesise their own pending state (see
+// RED_CONTROLS): with an empty list a control that reads the pointer tests nothing at all.
+const PENDING_IDS = [];
 
 const NEW_ID_RE = /^bio-(cell|nut|resp|eco|gen|coord|hlth|rep)-[a-z-]+$/;
 const KINDS = ["match", "sort", "order", "diagram"];
@@ -311,13 +314,24 @@ const RED_CONTROLS = {
   // a lesson that forgot its set entirely (the shape a new slice ships if it forgets)
   "lesson-forgets-set": (st) => { st.modules[0].lessons.push(ghostLesson("bio-cell-forgot-its-set")); },
   "stray-set": (st) => { st.sets["bio-cell-ghost-set"] = clone(st.sets[st.modules[0].lessons[0].id]); },
-  // pending bookkeeping, both directions
+  // pending bookkeeping, both directions.
+  // PENDING_IDS is empty now that every planned lesson has landed, so a control that read
+  // st.pending[0] would push ghostLesson(undefined) or shift nothing and test nothing. Each of the
+  // three synthesises the pending state it needs first: a fixture id goes into the in-memory
+  // st.pending, and the tree is shaped so the defect it names is the one that exists.
   "pending-id-lands": (st) => {
-    const id = st.pending[0];
-    st.modules[0].lessons.push(ghostLesson(id));
-    st.sets[id] = clone(st.sets[st.modules[0].lessons[0].id]);
+    // a slice lands a lesson and forgets to strike its id off PENDING_IDS
+    const id = st.planned[0];
+    st.pending.push(id);
   },
-  "pending-struck-early": (st) => { st.pending.shift(); },
+  "pending-struck-early": (st) => {
+    // a slice strikes an id off PENDING_IDS without landing the lesson
+    const id = st.planned[0];
+    for (const m of st.modules) m.lessons = (m.lessons || []).filter((l) => l.id !== id);
+    delete st.sets[id];
+    st.pending.push(id);
+    st.pending.shift();
+  },
   "pending-unknown-id": (st) => { st.pending.push("bio-cell-nobody-planned-this"); },
   // the plan's own size — the two ways it can silently shrink
   "plan-shrunk": (st) => { st.planned.pop(); },
@@ -329,7 +343,11 @@ const RED_CONTROLS = {
   },
   // appending vs inserting
   "new-lesson-inserted": (st) => {
-    const id = st.pending[0];
+    // a pending lesson is inserted among the existing ones instead of appended after them
+    const id = st.planned[0];
+    for (const m of st.modules) m.lessons = (m.lessons || []).filter((l) => l.id !== id);
+    delete st.sets[id];
+    st.pending.push(id);
     st.modules[0].lessons.unshift(ghostLesson(id));
     st.sets[id] = clone(st.sets[st.modules[0].lessons[1].id]);
   },
@@ -440,5 +458,5 @@ const st = loadState();
 const { pass, failures } = runChecks(st);
 for (const f of failures) console.log(f.startsWith("\u0000") ? `\n${f.slice(1)}` : "FAIL: " + f);
 const real = failures.filter((f) => !f.startsWith("\u0000"));
-console.log(`\ncheck-biology-labs: ${pass} checks passed, ${real.length} failed · ${st.pending.length} new ids still pending (${st.pending.join(", ")})`);
+console.log(`\ncheck-biology-labs: ${pass} checks passed, ${real.length} failed · ${st.pending.length} new ids still pending (${st.pending.join(", ") || "none"})`);
 process.exit(real.length ? 1 : 0);

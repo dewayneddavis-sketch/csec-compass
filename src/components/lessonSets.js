@@ -417,6 +417,34 @@ export const lessonSets = {
         { id: "da6", target: "HIV and hepatitis B passing from one user to the next", label: "Shared needles" },
       ],
     },
+    // Seed Structure and Germination (Slice 8) — the four named parts, the conditions, and what the cotyledons do.
+    "bio-rep-seed-and-germination": {
+      title: "Seed Structure and Germination",
+      subtitle: "Match each part of the bean seed, and each condition, to what it does.",
+      kind: "match",
+      pairs: [
+        { id: "sg1", target: "The tough outer seed coat that protects the seed", label: "Testa" },
+        { id: "sg2", target: "Stores the food the seedling lives on; a bean has two", label: "Cotyledon" },
+        { id: "sg3", target: "The young root: the first part out of the seed, growing downwards", label: "Radicle" },
+        { id: "sg4", target: "The young shoot, which grows up into the stem and the first leaves", label: "Plumule" },
+        { id: "sg5", target: "Water, oxygen and a suitable temperature", label: "The conditions for germination" },
+        { id: "sg6", target: "They feed the seedling until its first leaves open and photosynthesise", label: "What the cotyledons do" },
+      ],
+    },
+    // Birth Control and STIs (Slice 8) — six methods, each paired to how it works.
+    "bio-rep-birth-control-and-stis": {
+      title: "Birth Control and STIs",
+      subtitle: "Match each method of birth control to how it works.",
+      kind: "match",
+      pairs: [
+        { id: "bc1", target: "No intercourse, so no pregnancy and no STI — the only method that is certain", label: "Abstinence" },
+        { id: "bc2", target: "Blocks the sperm from meeting the egg, and is the only contraceptive that also reduces STI transmission", label: "Condom (barrier)" },
+        { id: "bc3", target: "Hormones taken daily that prevent ovulation, with no STI protection", label: "Hormonal pill" },
+        { id: "bc4", target: "A small device fitted in the uterus that stops a fertilised egg settling in the lining", label: "IUD (coil)" },
+        { id: "bc5", target: "A permanent operation: the sperm ducts or the oviducts are cut and tied", label: "Sterilisation" },
+        { id: "bc6", target: "Avoiding intercourse on the fertile days around ovulation — hard to predict, so the least reliable", label: "Rhythm (natural) method" },
+      ],
+    },
   },
 
   // --------------------------------------------------- INFORMATION TECHNOLOGY
