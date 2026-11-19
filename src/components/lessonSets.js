@@ -403,6 +403,20 @@ export const lessonSets = {
         { id: "ms6", target: "Movement in all planes, as at the shoulder and the hip", label: "Ball-and-socket joint" },
       ],
     },
+    // Drug Abuse (Slice 7) — match each drug class, each effect of addiction and each harm to what it is.
+    "bio-hlth-drug-abuse": {
+      title: "Drug Abuse and Its Effects",
+      subtitle: "Match each drug class, each effect of addiction and each harm to what it is.",
+      kind: "match",
+      pairs: [
+        { id: "da1", target: "Slows the nervous system: alcohol, heroin and the solvents and glues that are inhaled", label: "Depressant" },
+        { id: "da2", target: "Speeds the nervous system up: nicotine in tobacco, cocaine and caffeine", label: "Stimulant" },
+        { id: "da3", target: "Distorts what the user sees, hears and feels: LSD, and cannabis at a high dose", label: "Hallucinogen" },
+        { id: "da4", target: "The user needs more of the drug for the same effect, because the brain responds less to the same amount", label: "Tolerance" },
+        { id: "da5", target: "Shaking, sweating, sickness and craving when a dependent user stops the drug", label: "Withdrawal" },
+        { id: "da6", target: "HIV and hepatitis B passing from one user to the next", label: "Shared needles" },
+      ],
+    },
   },
 
   // --------------------------------------------------- INFORMATION TECHNOLOGY
