@@ -360,6 +360,35 @@ export const lessonSets = {
         { id: "sr5", target: "A feeding relationship, not a symbiosis: one animal kills and eats another", label: "Predation" },
       ],
     },
+    // Monohybrid Crosses (Slice 5) — match each genotype and cross result to what it tells you.
+    "bio-gen-monohybrid-crosses": {
+      title: "Monohybrid Crosses",
+      subtitle: "Match each genotype and each cross result to what it means.",
+      kind: "match",
+      pairs: [
+        { id: "mh1", target: "Homozygous dominant: both alleles are the dominant one, so it shows the dominant phenotype", label: "BB" },
+        { id: "mh2", target: "Heterozygous: it shows the dominant phenotype but carries the recessive allele and can pass it on", label: "Bb" },
+        { id: "mh3", target: "Homozygous recessive: the only genotype that shows the recessive phenotype", label: "bb" },
+        { id: "mh4", target: "The genotype ratio from the cross Bb \u00d7 Bb", label: "1 BB : 2 Bb : 1 bb" },
+        { id: "mh5", target: "The phenotype ratio from the cross Bb \u00d7 Bb", label: "3 dominant : 1 recessive" },
+        { id: "mh6", target: "The result of the test cross BB \u00d7 bb: four boxes, all of them heterozygous", label: "All the offspring show the dominant phenotype" },
+        { id: "mh7", target: "The result of the test cross Bb \u00d7 bb: 2 Bb : 2 bb", label: "Half the offspring show the recessive phenotype" },
+      ],
+    },
+    // Genetic Engineering (Slice 5) — match each tool to the job it does.
+    "bio-gen-genetic-engineering": {
+      title: "Genetic Engineering",
+      subtitle: "Match each tool of genetic engineering to the job it does.",
+      kind: "match",
+      pairs: [
+        { id: "ge1", target: "Cuts DNA at a specific base sequence, leaving matching sticky ends", label: "Restriction enzyme" },
+        { id: "ge2", target: "Joins the cut ends, sealing the gene into the plasmid", label: "Ligase" },
+        { id: "ge3", target: "The carrier that takes the gene into the host cell", label: "Vector" },
+        { id: "ge4", target: "A small ring of bacterial DNA used as the vector", label: "Plasmid" },
+        { id: "ge5", target: "The cell that receives the gene and makes the protein, usually E. coli", label: "Host cell" },
+        { id: "ge6", target: "DNA made by joining a gene from one organism into the DNA of another", label: "Recombinant DNA" },
+      ],
+    },
   },
 
   // --------------------------------------------------- INFORMATION TECHNOLOGY
