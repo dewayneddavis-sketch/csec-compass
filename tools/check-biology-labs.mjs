@@ -77,9 +77,10 @@ const PLANNED_NEW_IDS = [
 // "bio-resp-effects-of-smoking": it landed at the end of module 3 (respiration-excretion),
 // with its own match-the-pairs set. Biology Slice 4 (2026-11-18) struck off
 // "bio-eco-study-methods" and "bio-eco-special-relationships": both landed at the end of
-// module 4 (ecology-environment), each with its own match-the-pairs set.
+// module 4 (ecology-environment), each with its own match-the-pairs set. Biology Slice 5
+// (2026-11-19) struck off "bio-gen-monohybrid-crosses" and "bio-gen-genetic-engineering":
+// both landed at the end of module 5 (genetics-variation), each with its own match set.
 const PENDING_IDS = [
-  "bio-gen-monohybrid-crosses", "bio-gen-genetic-engineering",
   "bio-coord-movement-and-support",
   "bio-hlth-drug-abuse",
   "bio-rep-seed-and-germination", "bio-rep-birth-control-and-stis",
