@@ -127,7 +127,7 @@
   ],
   "answer": "50%",
   "explanation": "A cross between Bb and bb results in 50% Bb (brown) and 50% bb (white) offspring.",
-  "topic": "dna-inheritance"
+  "topic": "bio-gen-monohybrid-crosses"
  },
  {
   "id": "p11",
@@ -156,19 +156,6 @@
   "topic": "circulatory-system"
  },
  {
-  "id": "p13",
-  "question": "Which organelle is known as the 'powerhouse of the cell'?",
-  "options": [
-   "Mitochondrion",
-   "Nucleus",
-   "Ribosome",
-   "Golgi body"
-  ],
-  "answer": "Mitochondrion",
-  "explanation": "Mitochondria carry out aerobic respiration, releasing energy (ATP).",
-  "topic": "cell-structure"
- },
- {
   "id": "p14",
   "question": "What is the function of the cell membrane?",
   "options": [
@@ -179,19 +166,6 @@
   ],
   "answer": "Controls what enters and leaves the cell",
   "explanation": "The membrane is selectively permeable, controlling transport.",
-  "topic": "cell-structure"
- },
- {
-  "id": "p15",
-  "question": "Which of the following is found only in plant cells?",
-  "options": [
-   "Chloroplast",
-   "Nucleus",
-   "Mitochondrion",
-   "Ribosome"
-  ],
-  "answer": "Chloroplast",
-  "explanation": "Chloroplasts contain chlorophyll and are unique to plant cells.",
   "topic": "cell-structure"
  },
  {
@@ -234,32 +208,6 @@
   "topic": "photosynthesis"
  },
  {
-  "id": "p19",
-  "question": "What is the main product of photosynthesis?",
-  "options": [
-   "Glucose",
-   "Carbon dioxide",
-   "Water",
-   "Starch only"
-  ],
-  "answer": "Glucose",
-  "explanation": "Glucose is the primary carbohydrate produced; it may be stored as starch.",
-  "topic": "photosynthesis"
- },
- {
-  "id": "p20",
-  "question": "Which organelle is the site of protein synthesis?",
-  "options": [
-   "Ribosome",
-   "Mitochondrion",
-   "Chloroplast",
-   "Nucleus"
-  ],
-  "answer": "Ribosome",
-  "explanation": "Ribosomes assemble amino acids into proteins.",
-  "topic": "cell-structure"
- },
- {
   "id": "p21",
   "question": "The movement of molecules from high to low concentration without energy is:",
   "options": [
@@ -286,19 +234,6 @@
   "topic": "dna-inheritance"
  },
  {
-  "id": "p23",
-  "question": "Human body cells normally contain how many chromosomes?",
-  "options": [
-   "46",
-   "23",
-   "92",
-   "44"
-  ],
-  "answer": "46",
-  "explanation": "Humans have 23 pairs = 46 chromosomes in body cells.",
-  "topic": "dna-inheritance"
- },
- {
   "id": "p24",
   "question": "What is the function of red blood cells?",
   "options": [
@@ -309,7 +244,7 @@
   ],
   "answer": "Transport oxygen",
   "explanation": "Haemoglobin in red blood cells carries oxygen.",
-  "topic": "circulatory-system"
+  "topic": "bio-cell-levels-of-organisation"
  },
  {
   "id": "p25",
@@ -351,45 +286,6 @@
   "topic": "nutrition-and-digestion"
  },
  {
-  "id": "p29",
-  "question": "Bile is produced by the:",
-  "options": [
-   "liver",
-   "gall bladder",
-   "pancreas",
-   "stomach"
-  ],
-  "answer": "liver",
-  "explanation": "The liver produces bile; the gall bladder stores it.",
-  "topic": "nutrition-and-digestion"
- },
- {
-  "id": "p30",
-  "question": "Which of the following is a vitamin?",
-  "options": [
-   "Vitamin C",
-   "Calcium",
-   "Iron",
-   "Protein"
-  ],
-  "answer": "Vitamin C",
-  "explanation": "Vitamin C is a vitamin; calcium and iron are minerals; protein is a nutrient.",
-  "topic": "nutrition-and-digestion"
- },
- {
-  "id": "p31",
-  "question": "A deficiency of iron causes:",
-  "options": [
-   "anaemia",
-   "scurvy",
-   "rickets",
-   "goitre"
-  ],
-  "answer": "anaemia",
-  "explanation": "Iron is needed for haemoglobin; deficiency causes anaemia.",
-  "topic": "nutrition-and-digestion"
- },
- {
   "id": "p32",
   "question": "Which nutrient provides the most energy per gram?",
   "options": [
@@ -400,19 +296,6 @@
   ],
   "answer": "Fats",
   "explanation": "Fats provide about 37 kJ/g, more than carbohydrates or proteins.",
-  "topic": "nutrition-and-digestion"
- },
- {
-  "id": "p33",
-  "question": "What is the role of dietary fibre?",
-  "options": [
-   "Helps prevent constipation",
-   "Provides energy",
-   "Builds muscle",
-   "Transports oxygen"
-  ],
-  "answer": "Helps prevent constipation",
-  "explanation": "Fibre adds bulk, aiding bowel movement and preventing constipation.",
   "topic": "nutrition-and-digestion"
  },
  {
@@ -455,19 +338,6 @@
   "topic": "excretion-homeostasis"
  },
  {
-  "id": "p38",
-  "question": "Which part of the brain controls balance and coordination?",
-  "options": [
-   "Cerebellum",
-   "Cerebrum",
-   "Medulla",
-   "Hypothalamus"
-  ],
-  "answer": "Cerebellum",
-  "explanation": "The cerebellum coordinates movement and balance.",
-  "topic": "nervous-system-and-sense-organs"
- },
- {
   "id": "p39",
   "question": "The basic unit of the nervous system is the:",
   "options": [
@@ -491,19 +361,6 @@
   ],
   "answer": "Influenza",
   "explanation": "Influenza (flu) is viral; the others are bacterial.",
-  "topic": "disease-and-pathogens"
- },
- {
-  "id": "p41",
-  "question": "Which disease is transmitted by the Aedes aegypti mosquito?",
-  "options": [
-   "Dengue fever",
-   "Malaria",
-   "Cholera",
-   "Tuberculosis"
-  ],
-  "answer": "Dengue fever",
-  "explanation": "Aedes aegypti transmits dengue; malaria is spread by Anopheles.",
   "topic": "disease-and-pathogens"
  },
  {
@@ -546,19 +403,6 @@
   "topic": "body-defences-and-immunity"
  },
  {
-  "id": "p45",
-  "question": "Antibodies are produced by:",
-  "options": [
-   "lymphocytes",
-   "phagocytes",
-   "platelets",
-   "red blood cells"
-  ],
-  "answer": "lymphocytes",
-  "explanation": "Lymphocytes produce antibodies against specific antigens.",
-  "topic": "body-defences-and-immunity"
- },
- {
   "id": "p46",
   "question": "Which is a non-communicable disease?",
   "options": [
@@ -585,19 +429,6 @@
   "topic": "disease-and-pathogens"
  },
  {
-  "id": "p48",
-  "question": "Which of the following is a symptom of cholera?",
-  "options": [
-   "Severe diarrhoea",
-   "Skin rash",
-   "Coughing",
-   "Fever with rash"
-  ],
-  "answer": "Severe diarrhoea",
-  "explanation": "Cholera causes severe watery diarrhoea leading to dehydration.",
-  "topic": "disease-and-pathogens"
- },
- {
   "id": "p49",
   "question": "The safest method to prevent the spread of HIV is:",
   "options": [
@@ -608,7 +439,46 @@
   ],
   "answer": "abstinence or protected sex",
   "explanation": "HIV spreads via body fluids; abstinence or protection prevents transmission.",
-  "topic": "disease-and-pathogens"
+  "topic": "bio-rep-birth-control-and-stis"
+ },
+ {
+  "id": "p136",
+  "question": "Which contraceptive method also reduces the transmission of STIs?",
+  "options": [
+   "The condom",
+   "The hormonal pill",
+   "The IUD",
+   "Sterilisation"
+  ],
+  "answer": "The condom",
+  "explanation": "The condom is a barrier that keeps the partners' body fluids apart, so it is the only contraceptive that also reduces STI transmission. The pill, the IUD and sterilisation prevent pregnancy but give no protection against infection.",
+  "topic": "bio-rep-birth-control-and-stis"
+ },
+ {
+  "id": "p137",
+  "question": "How does the hormonal pill prevent pregnancy?",
+  "options": [
+   "It prevents ovulation, so no egg is released",
+   "It kills sperm before they reach the oviduct",
+   "It stops the lining of the uterus forming",
+   "It blocks the oviducts permanently"
+  ],
+  "answer": "It prevents ovulation, so no egg is released",
+  "explanation": "The pill contains hormones taken every day that prevent ovulation: no egg is released from the ovary, so there is nothing for a sperm to fertilise. Blocking the oviducts is what tubal ligation does, and the pill gives no protection against STIs.",
+  "topic": "bio-rep-birth-control-and-stis"
+ },
+ {
+  "id": "p138",
+  "question": "Why can a person carry an STI and not know it?",
+  "options": [
+   "Many STIs, such as chlamydia, produce no symptoms at all",
+   "All STIs are harmless and clear up on their own",
+   "An STI can only be passed on once symptoms appear",
+   "Symptoms only appear after treatment"
+  ],
+  "answer": "Many STIs, such as chlamydia, produce no symptoms at all",
+  "explanation": "Chlamydia often produces no symptoms at all, and a person can carry gonorrhoea or HIV without feeling ill, so feeling well proves nothing. The only way to know whether an infection is there is to be tested, and testing is what stops it being passed on without anyone knowing.",
+  "topic": "bio-rep-birth-control-and-stis"
  },
  {
   "id": "p50",
@@ -624,97 +494,6 @@
   "topic": "nutrition-and-digestion"
  },
  {
-  "id": "p51",
-  "question": "Which vitamin is produced by the skin in sunlight?",
-  "options": [
-   "Vitamin D",
-   "Vitamin A",
-   "Vitamin C",
-   "Vitamin B12"
-  ],
-  "answer": "Vitamin D",
-  "explanation": "Sunlight converts a cholesterol derivative to vitamin D.",
-  "topic": "nutrition-and-digestion"
- },
- {
-  "id": "p52",
-  "question": "Scurvy is caused by a deficiency of:",
-  "options": [
-   "Vitamin C",
-   "Vitamin A",
-   "Vitamin D",
-   "Iron"
-  ],
-  "answer": "Vitamin C",
-  "explanation": "Vitamin C deficiency causes scurvy (bleeding gums, weakness).",
-  "topic": "nutrition-and-digestion"
- },
- {
-  "id": "p53",
-  "question": "Which mineral is needed for strong bones and teeth?",
-  "options": [
-   "Calcium",
-   "Iron",
-   "Sodium",
-   "Potassium"
-  ],
-  "answer": "Calcium",
-  "explanation": "Calcium and phosphorus strengthen bones and teeth.",
-  "topic": "nutrition-and-digestion"
- },
- {
-  "id": "p54",
-  "question": "What is the function of the large intestine?",
-  "options": [
-   "Absorption of water",
-   "Absorption of glucose",
-   "Digestion of proteins",
-   "Production of enzymes"
-  ],
-  "answer": "Absorption of water",
-  "explanation": "The colon absorbs water and salts from undigested food.",
-  "topic": "nutrition-and-digestion"
- },
- {
-  "id": "p55",
-  "question": "Peristalsis refers to:",
-  "options": [
-   "wave-like muscle contractions moving food",
-   "the chewing of food",
-   "the breakdown of food by acid",
-   "the absorption of nutrients"
-  ],
-  "answer": "wave-like muscle contractions moving food",
-  "explanation": "Peristalsis propels food along the alimentary canal.",
-  "topic": "nutrition-and-digestion"
- },
- {
-  "id": "p56",
-  "question": "Which part of the digestive system produces pepsin?",
-  "options": [
-   "Stomach",
-   "Mouth",
-   "Small intestine",
-   "Pancreas"
-  ],
-  "answer": "Stomach",
-  "explanation": "Gastric glands in the stomach secrete pepsin.",
-  "topic": "nutrition-and-digestion"
- },
- {
-  "id": "p57",
-  "question": "The function of the pancreas includes:",
-  "options": [
-   "producing digestive enzymes and insulin",
-   "storing bile",
-   "absorbing water",
-   "producing urine"
-  ],
-  "answer": "producing digestive enzymes and insulin",
-  "explanation": "The pancreas secretes enzymes into the duodenum and insulin into blood.",
-  "topic": "nutrition-and-digestion"
- },
- {
   "id": "p58",
   "question": "Which is an example of a reflex action?",
   "options": [
@@ -725,19 +504,6 @@
   ],
   "answer": "Pulling your hand away from a hot object",
   "explanation": "Reflexes are automatic, rapid responses to stimuli.",
-  "topic": "nervous-system-and-sense-organs"
- },
- {
-  "id": "p59",
-  "question": "The sensory receptors in the eye that detect colour are:",
-  "options": [
-   "cones",
-   "rods",
-   "lens cells",
-   "optic nerves"
-  ],
-  "answer": "cones",
-  "explanation": "Cone cells detect colour; rods detect light intensity.",
   "topic": "nervous-system-and-sense-organs"
  },
  {
@@ -780,19 +546,6 @@
   "topic": "transport-and-growth-in-plants"
  },
  {
-  "id": "p63",
-  "question": "The male sex cell in plants is found in:",
-  "options": [
-   "pollen grains",
-   "ovules",
-   "sepals",
-   "petals"
-  ],
-  "answer": "pollen grains",
-  "explanation": "Pollen grains carry the male gametes.",
-  "topic": "reproduction-and-development"
- },
- {
   "id": "p64",
   "question": "Fertilisation in flowering plants occurs when:",
   "options": [
@@ -816,32 +569,6 @@
   ],
   "answer": "Budding in yeast",
   "explanation": "Budding produces offspring from one parent without gametes.",
-  "topic": "reproduction-and-development"
- },
- {
-  "id": "p66",
-  "question": "The structure where a foetus develops is the:",
-  "options": [
-   "uterus",
-   "ovary",
-   "fallopian tube",
-   "vagina"
-  ],
-  "answer": "uterus",
-  "explanation": "The foetus develops in the uterus.",
-  "topic": "reproduction-and-development"
- },
- {
-  "id": "p67",
-  "question": "Which part of the male reproductive system produces sperm?",
-  "options": [
-   "Testes",
-   "Penis",
-   "Prostate gland",
-   "Urethra"
-  ],
-  "answer": "Testes",
-  "explanation": "Sperm are produced in the seminiferous tubules of the testes.",
   "topic": "reproduction-and-development"
  },
  {
@@ -884,19 +611,6 @@
   "topic": "dna-inheritance"
  },
  {
-  "id": "p71",
-  "question": "Which is a dominant trait in humans?",
-  "options": [
-   "Brown eyes",
-   "Blue eyes",
-   "Straight hair",
-   "Attached earlobes"
-  ],
-  "answer": "Brown eyes",
-  "explanation": "Brown eye colour is dominant over blue.",
-  "topic": "dna-inheritance"
- },
- {
   "id": "p72",
   "question": "If both parents are heterozygous (Bb) for a trait, the chance of a homozygous recessive (bb) child is:",
   "options": [
@@ -907,7 +621,33 @@
   ],
   "answer": "25%",
   "explanation": "Bb × Bb → BB, Bb, Bb, bb → 1/4 = 25%.",
-  "topic": "dna-inheritance"
+  "topic": "bio-gen-monohybrid-crosses"
+ },
+ {
+  "id": "p121",
+  "question": "A brown animal is crossed with a homozygous recessive (bb) animal, and some white offspring appear. What does this prove about the brown parent?",
+  "options": [
+   "It is heterozygous (Bb)",
+   "It is homozygous dominant (BB)",
+   "It is homozygous recessive (bb)",
+   "Its colour is not inherited"
+  ],
+  "answer": "It is heterozygous (Bb)",
+  "explanation": "This is the test cross. The bb parent makes only b gametes, so a white (bb) offspring must have received a b from the brown parent. Only a heterozygous Bb parent can pass on b, so any white offspring at all proves heterozygosity; a homozygous BB parent would give only brown offspring.",
+  "topic": "bio-gen-monohybrid-crosses"
+ },
+ {
+  "id": "p122",
+  "question": "A trait appears in the child of two parents who do not show it. What does this tell you about the trait?",
+  "options": [
+   "It is recessive, and both parents are carriers",
+   "It is dominant, and one parent must show it",
+   "It is caused only by the environment",
+   "It cannot be inherited"
+  ],
+  "answer": "It is recessive, and both parents are carriers",
+  "explanation": "A recessive allele can be hidden in a heterozygous carrier who looks unaffected, so a recessive trait appears in the child of two unaffected parents and seems to skip a generation. A dominant trait cannot do this: an affected child must have received the dominant allele from a parent who would show the trait.",
+  "topic": "bio-gen-monohybrid-crosses"
  },
  {
   "id": "p73",
@@ -972,20 +712,33 @@
   ],
   "answer": "Convert nitrogen gas to nitrates",
   "explanation": "They convert atmospheric nitrogen into usable nitrates.",
-  "topic": "food-chains"
+  "topic": "bio-eco-special-relationships"
  },
  {
-  "id": "p78",
-  "question": "Eutrophication of rivers is mainly caused by:",
+  "id": "p119",
+  "question": "Nitrogen-fixing bacteria (Rhizobium) live in the root nodules of a legume and both partners gain from the association. This relationship is:",
   "options": [
-   "excess fertilisers in run-off",
-   "acid rain",
-   "oil spills",
-   "deforestation only"
+   "Mutualism",
+   "Commensalism",
+   "Parasitism",
+   "Competition"
   ],
-  "answer": "excess fertilisers in run-off",
-  "explanation": "Nitrates and phosphates from fertilisers cause algal blooms.",
-  "topic": "human-impact"
+  "answer": "Mutualism",
+  "explanation": "In mutualism both species benefit. The bacterium takes sugars the plant has made and, in return, changes nitrogen gas from the air into nitrogen compounds the plant can use to make protein, so neither partner does as well alone.",
+  "topic": "bio-eco-special-relationships"
+ },
+ {
+  "id": "p120",
+  "question": "A remora attaches itself to a shark, feeds on the scraps of the shark's meal and is carried along, while the shark is neither helped nor harmed. This relationship is:",
+  "options": [
+   "Commensalism",
+   "Mutualism",
+   "Parasitism",
+   "Predation"
+  ],
+  "answer": "Commensalism",
+  "explanation": "In commensalism one species benefits and the other is neither helped nor harmed, which is exactly the remora and the shark. In mutualism both would gain, and in parasitism the host would be harmed.",
+  "topic": "bio-eco-special-relationships"
  },
  {
   "id": "p79",
@@ -999,58 +752,6 @@
   "answer": "Carbon dioxide",
   "explanation": "CO₂ traps heat in the atmosphere.",
   "topic": "human-impact"
- },
- {
-  "id": "p80",
-  "question": "The removal of trees from a large area is called:",
-  "options": [
-   "deforestation",
-   "afforestation",
-   "desertification",
-   "conservation"
-  ],
-  "answer": "deforestation",
-  "explanation": "Deforestation is the clearing of forests.",
-  "topic": "human-impact"
- },
- {
-  "id": "p81",
-  "question": "Which is a renewable energy source?",
-  "options": [
-   "Solar energy",
-   "Coal",
-   "Oil",
-   "Natural gas"
-  ],
-  "answer": "Solar energy",
-  "explanation": "Solar energy is replenished naturally.",
-  "topic": "human-impact"
- },
- {
-  "id": "p82",
-  "question": "A food web differs from a food chain because it:",
-  "options": [
-   "shows multiple interconnected food chains",
-   "shows only one pathway",
-   "has no producers",
-   "excludes consumers"
-  ],
-  "answer": "shows multiple interconnected food chains",
-  "explanation": "Food webs show complex feeding relationships.",
-  "topic": "food-chains"
- },
- {
-  "id": "p83",
-  "question": "The process of transpiration is important for:",
-  "options": [
-   "water and mineral transport in plants",
-   "photosynthesis only",
-   "seed germination",
-   "flower colour"
-  ],
-  "answer": "water and mineral transport in plants",
-  "explanation": "Transpiration pulls water up the xylem.",
-  "topic": "transport-and-growth-in-plants"
  },
  {
   "id": "p84",
@@ -1089,7 +790,20 @@
   ],
   "answer": "Increase surface area for water absorption",
   "explanation": "Root hairs greatly increase absorption surface area.",
-  "topic": "transport-and-growth-in-plants"
+  "topic": "bio-cell-levels-of-organisation"
+ },
+ {
+  "id": "p103",
+  "question": "Which is the correct order of the levels of organisation, from smallest to largest?",
+  "options": [
+   "Cell, tissue, organ, organ system, organism",
+   "Cell, organ, tissue, organism, organ system",
+   "Tissue, cell, organ, organ system, organism",
+   "Cell, tissue, organ system, organ, organism"
+  ],
+  "answer": "Cell, tissue, organ, organ system, organism",
+  "explanation": "The levels build one on the next: a cell is the basic unit of life; a group of similar cells working together on one job is a tissue; several tissues working together for one function make an organ; organs working together make an organ system; and the whole living thing with all its systems is the organism.",
+  "topic": "bio-cell-levels-of-organisation"
  },
  {
   "id": "p87",
@@ -1118,19 +832,6 @@
   "topic": "classification-of-living-things"
  },
  {
-  "id": "p89",
-  "question": "A microscope magnifies an object 400 times. If the objective lens is 40×, the eyepiece is:",
-  "options": [
-   "10×",
-   "4×",
-   "100×",
-   "440×"
-  ],
-  "answer": "10×",
-  "explanation": "Total = eyepiece × objective → 400/40 = 10×.",
-  "topic": "cell-structure"
- },
- {
   "id": "p90",
   "question": "Which is the correct order of biological classification?",
   "options": [
@@ -1144,19 +845,6 @@
   "topic": "classification-of-living-things"
  },
  {
-  "id": "p91",
-  "question": "A plant cell placed in a concentrated salt solution will:",
-  "options": [
-   "lose water and become flaccid",
-   "gain water and swell",
-   "remain unchanged",
-   "burst"
-  ],
-  "answer": "lose water and become flaccid",
-  "explanation": "Water leaves the cell by osmosis into the salt solution.",
-  "topic": "osmosis-diffusion"
- },
- {
   "id": "p92",
   "question": "Turgor pressure in plant cells results from:",
   "options": [
@@ -1167,59 +855,46 @@
   ],
   "answer": "water entering the vacuole",
   "explanation": "Water pushes against the cell wall, keeping the plant firm.",
-  "topic": "osmosis-diffusion"
+  "topic": "bio-coord-movement-and-support"
  },
  {
-  "id": "p93",
-  "question": "Which blood component helps clot blood at wounds?",
+  "id": "p127",
+  "question": "Which kind of joint allows movement in all planes?",
   "options": [
-   "Platelets",
-   "Red blood cells",
-   "White blood cells",
-   "Plasma"
+   "A ball-and-socket joint",
+   "A hinge joint",
+   "A ligament",
+   "A tendon"
   ],
-  "answer": "Platelets",
-  "explanation": "Platelets trigger clotting.",
-  "topic": "circulatory-system"
+  "answer": "A ball-and-socket joint",
+  "explanation": "In a ball-and-socket joint a rounded end sits in a cup-shaped socket, so it swings forwards, backwards, sideways and round; the shoulder and the hip are ball-and-socket joints. A hinge joint, such as the elbow or the knee, moves in one plane only.",
+  "topic": "bio-coord-movement-and-support"
  },
  {
-  "id": "p94",
-  "question": "Plasma is mainly composed of:",
+  "id": "p128",
+  "question": "Which statement about ligaments and tendons is correct?",
   "options": [
-   "water",
-   "protein",
-   "fat",
-   "glucose"
+   "A ligament joins bone to bone and a tendon joins muscle to bone",
+   "A ligament joins muscle to bone and a tendon joins bone to bone",
+   "Both join bone to bone",
+   "Both join muscle to muscle"
   ],
-  "answer": "water",
-  "explanation": "Plasma is about 90% water carrying dissolved substances.",
-  "topic": "circulatory-system"
+  "answer": "A ligament joins bone to bone and a tendon joins muscle to bone",
+  "explanation": "A ligament joins bone to bone and holds the joint together, stopping it moving too far. A tendon joins muscle to bone and carries the pull of the muscle to the bone. The thing each one joins is the only difference between them.",
+  "topic": "bio-coord-movement-and-support"
  },
  {
-  "id": "p95",
-  "question": "The heartbeat is controlled by the:",
+  "id": "p129",
+  "question": "Why does the elbow need an antagonistic pair of muscles?",
   "options": [
-   "pacemaker",
-   "valves",
-   "aorta",
-   "coronary artery"
+   "A muscle can only pull, so a second muscle is needed to pull the bone back the other way",
+   "Two muscles together produce more energy for the movement",
+   "A muscle cannot attach to a bone without a second muscle",
+   "The elbow joint has no ligaments"
   ],
-  "answer": "pacemaker",
-  "explanation": "The sinoatrial node (pacemaker) initiates each heartbeat.",
-  "topic": "circulatory-system"
- },
- {
-  "id": "p96",
-  "question": "Which lifestyle choice most reduces the risk of heart disease?",
-  "options": [
-   "Regular exercise and balanced diet",
-   "Smoking",
-   "High-fat diet",
-   "Sedentary lifestyle"
-  ],
-  "answer": "Regular exercise and balanced diet",
-  "explanation": "Exercise and diet lower cholesterol and blood pressure.",
-  "topic": "circulatory-system"
+  "answer": "A muscle can only pull, so a second muscle is needed to pull the bone back the other way",
+  "explanation": "A muscle shortens as it contracts and cannot push, so the biceps contracts to flex the elbow and the triceps contracts to extend it. At every moment one of the pair is contracted and the other relaxed, which is why the pair is called antagonistic.",
+  "topic": "bio-coord-movement-and-support"
  },
  {
   "id": "p97",
@@ -1232,6 +907,19 @@
   ],
   "answer": "Prevents food from entering the trachea",
   "explanation": "The epiglottis closes over the trachea during swallowing.",
+  "topic": "breathing-and-gas-exchange"
+ },
+ {
+  "id": "p111",
+  "question": "Which set of features makes the alveoli efficient at gas exchange?",
+  "options": [
+   "Thin walls, a large total surface area, a moist lining and a rich blood supply",
+   "Thick walls that store air between breaths",
+   "A small surface area that concentrates the gases",
+   "A dry lining that keeps the gases apart"
+  ],
+  "answer": "Thin walls, a large total surface area, a moist lining and a rich blood supply",
+  "explanation": "Gas exchange happens in the alveoli. Their walls are thin, there are very many of them so the total surface area is large, the lining is moist and each one has a rich blood supply, so oxygen and carbon dioxide diffuse quickly.",
   "topic": "breathing-and-gas-exchange"
  },
  {
@@ -1248,6 +936,19 @@
   "topic": "respiration"
  },
  {
+  "id": "p110",
+  "question": "Yeast respires anaerobically during bread-making. What are the products?",
+  "options": [
+   "Ethanol and carbon dioxide",
+   "Lactic acid only",
+   "Glucose and oxygen",
+   "Water and oxygen"
+  ],
+  "answer": "Ethanol and carbon dioxide",
+  "explanation": "In yeast and some bacteria anaerobic respiration produces ethanol and carbon dioxide, and the carbon dioxide is what makes the dough rise. Lactic acid is the product of anaerobic respiration in human muscle, not in yeast.",
+  "topic": "respiration"
+ },
+ {
   "id": "p99",
   "question": "Which of the following reduces air pollution?",
   "options": [
@@ -1259,19 +960,6 @@
   "answer": "Using catalytic converters in cars",
   "explanation": "Catalytic converters reduce harmful exhaust gases.",
   "topic": "human-impact"
- },
- {
-  "id": "p100",
-  "question": "Which of the following is an example of a habitat?",
-  "options": [
-   "A mangrove swamp",
-   "A species",
-   "A population",
-   "An organism"
-  ],
-  "answer": "A mangrove swamp",
-  "explanation": "A habitat is the natural home of an organism.",
-  "topic": "food-chains"
  },
  {
   "id": "p101",
@@ -1298,5 +986,317 @@
   "answer": "They were better camouflaged on soot-darkened trees and survived to reproduce",
   "explanation": "Natural selection acts on variation that already exists: on soot-darkened trunks the dark moths were less easily seen by birds, so more of them survived and passed on the alleles for dark colour to the next generation. Their colour did not change in one lifetime - the proportion of dark moths in the population changed over generations.",
   "topic": "selection-evolution"
+ },
+ {
+  "id": "p139",
+  "question": "A patient is given an antibiotic and most of the bacteria are killed, but a few survive and the infection returns. Why?",
+  "options": [
+   "Some bacteria already carried an allele for resistance and survived to reproduce",
+   "The bacteria learned to resist the antibiotic during the treatment",
+   "The antibiotic changed the bacteria's genes to make them resistant",
+   "The surviving bacteria were the largest ones in the population"
+  ],
+  "answer": "Some bacteria already carried an allele for resistance and survived to reproduce",
+  "explanation": "Natural selection acts on variation that already exists: the resistant bacteria survived the antibiotic and reproduced, so the proportion of resistant bacteria in the population rose over the generations. The antibiotic did not create the resistance, and a bacterium cannot learn to resist during a treatment.",
+  "topic": "selection-evolution"
+ },
+ {
+  "id": "p104",
+  "question": "Which layer of the leaf contains the most chloroplasts?",
+  "options": [
+   "Palisade mesophyll",
+   "Spongy mesophyll",
+   "Upper epidermis",
+   "Cuticle"
+  ],
+  "answer": "Palisade mesophyll",
+  "explanation": "The palisade mesophyll sits just under the upper surface where the light is brightest, and its cells are tall, closely packed and each holds many chloroplasts. The upper epidermis is transparent and has no chloroplasts of its own, and the cuticle is a waxy layer.",
+  "topic": "bio-nut-leaf-structure"
+ },
+ {
+  "id": "p105",
+  "question": "What is the job of the large air spaces between the cells of the spongy mesophyll?",
+  "options": [
+   "They let carbon dioxide diffuse quickly to every cell",
+   "They store the glucose made in the leaf",
+   "They carry water up from the root",
+   "They open and close the stomata"
+  ],
+  "answer": "They let carbon dioxide diffuse quickly to every cell",
+  "explanation": "The air spaces in the spongy mesophyll let carbon dioxide diffuse quickly from the stomata to every cell that needs it, and oxygen diffuse back out. Water is carried by the xylem in the vascular bundle, and the stomata are opened and closed by their guard cells.",
+  "topic": "bio-nut-leaf-structure"
+ },
+ {
+  "id": "p106",
+  "question": "A stoma in the lower epidermis is opened and closed by:",
+  "options": [
+   "Two guard cells",
+   "The cuticle",
+   "The palisade cells",
+   "The xylem"
+  ],
+  "answer": "Two guard cells",
+  "explanation": "Each stoma is surrounded by two guard cells, and they open and close it. That is how carbon dioxide gets into the leaf and how oxygen and water vapour get out.",
+  "topic": "bio-nut-leaf-structure"
+ },
+ {
+  "id": "p107",
+  "question": "Which test is used to show that a food sample contains a reducing sugar?",
+  "options": [
+   "Benedict's test",
+   "Iodine test",
+   "Biuret test",
+   "Emulsion test"
+  ],
+  "answer": "Benedict's test",
+  "explanation": "Benedict's solution is blue. Added to a reducing sugar and heated in a boiling water bath, it gives a brick-red precipitate, passing through green and yellow on the way. The iodine test is for starch, Biuret for protein and the emulsion test for fat.",
+  "topic": "bio-nut-food-tests"
+ },
+ {
+  "id": "p108",
+  "question": "Iodine solution is added to a food sample and turns from yellow-brown to blue-black. What does the sample contain?",
+  "options": [
+   "Starch",
+   "Reducing sugar",
+   "Protein",
+   "Fat"
+  ],
+  "answer": "Starch",
+  "explanation": "A blue-black colour is the positive result of the iodine test, which identifies starch; a negative result stays yellow-brown. Reducing sugar is tested with Benedict's, protein with Biuret and fat with the emulsion test.",
+  "topic": "bio-nut-food-tests"
+ },
+ {
+  "id": "p109",
+  "question": "Why is water used in place of the food sample when a food test is run as a control?",
+  "options": [
+   "To show that the reagent does not change colour by itself",
+   "To make the colour change easier to see",
+   "To dissolve the reagent before it is added",
+   "To heat the sample evenly"
+  ],
+  "answer": "To show that the reagent does not change colour by itself",
+  "explanation": "The control must give a negative result. If water in place of the food stays negative, the colour change in the test tube came from the food and not from the reagent; a known positive beside it shows the method works.",
+  "topic": "bio-nut-food-tests"
+ },
+ {
+  "id": "p112",
+  "question": "Which substance in tobacco smoke paralyses and then destroys the cilia of the airways?",
+  "options": [
+   "Tar",
+   "Nicotine",
+   "Carbon monoxide",
+   "Carbon dioxide"
+  ],
+  "answer": "Tar",
+  "explanation": "Tar settles on the lining of the airways and on the alveoli, and it paralyses and then destroys the cilia. Once the cilia have stopped working, mucus collects in the airways and the smoker has to cough to clear it.",
+  "topic": "bio-resp-effects-of-smoking"
+ },
+ {
+  "id": "p113",
+  "question": "Why does carbon monoxide make a smoker short of breath?",
+  "options": [
+   "It binds to haemoglobin in place of oxygen, so the blood carries less oxygen",
+   "It dissolves the walls between the alveoli",
+   "It makes the cilia sweep faster",
+   "It lowers the heart rate"
+  ],
+  "answer": "It binds to haemoglobin in place of oxygen, so the blood carries less oxygen",
+  "explanation": "Haemoglobin is what carries oxygen in the red blood cells. Carbon monoxide occupies it instead, so less oxygen is carried, the smoker becomes short of breath and the heart has to work harder.",
+  "topic": "bio-resp-effects-of-smoking"
+ },
+ {
+  "id": "p114",
+  "question": "Emphysema reduces the surface area for gas exchange because:",
+  "options": [
+   "The walls between the alveoli break down and many small sacs merge into a few large ones",
+   "The alveoli fill with mucus and cannot empty",
+   "The diaphragm stops moving",
+   "The trachea becomes narrower"
+  ],
+  "answer": "The walls between the alveoli break down and many small sacs merge into a few large ones",
+  "explanation": "In emphysema the walls between the alveoli break down, so the many small air sacs become a few large ones. The total surface area for gas exchange falls, less oxygen is absorbed, and the damage is permanent.",
+  "topic": "bio-resp-effects-of-smoking"
+ },
+ {
+  "id": "p115",
+  "question": "Why must the squares chosen for quadrat sampling be picked at random?",
+  "options": [
+   "Because a sample taken where the plants look thickest is biased and makes the estimate too high",
+   "Because random squares are quicker to count",
+   "Because only random squares contain the species",
+   "Because it makes each quadrat larger"
+  ],
+  "answer": "Because a sample taken where the plants look thickest is biased and makes the estimate too high",
+  "explanation": "Random sampling gives every position an equal chance of being chosen. Choosing the squares by eye tends to pick the thickest patches, which biases the sample and pushes the estimate of the population too high.",
+  "topic": "bio-eco-study-methods"
+ },
+ {
+  "id": "p116",
+  "question": "Ten quadrats, each 1 m by 1 m, were thrown at random in a field and the daisies inside each were counted: 4, 0, 6, 2, 0, 8, 3, 0, 5, 2. What is the density of daisies?",
+  "options": [
+   "3 per square metre",
+   "30 per square metre",
+   "0.3 per square metre",
+   "10 per square metre"
+  ],
+  "answer": "3 per square metre",
+  "explanation": "The counts add up to 30, so the mean number per quadrat is 30 divided by 10 = 3. Each quadrat is 1 square metre, so the density is 3 daisies per square metre; 30 is the total count, not the density.",
+  "topic": "bio-eco-study-methods"
+ },
+ {
+  "id": "p117",
+  "question": "40 beetles were caught, marked and released. The next day a second sample of 50 was caught, and 8 of them were marked. What is the estimated population size?",
+  "options": [
+   "250",
+   "200",
+   "90",
+   "320"
+  ],
+  "answer": "250",
+  "explanation": "The Lincoln index is (first sample multiplied by second sample) divided by the marked animals in the second sample: (40 multiplied by 50) divided by 8 = 2000 divided by 8 = 250 beetles.",
+  "topic": "bio-eco-study-methods"
+ },
+ {
+  "id": "p118",
+  "question": "Which method would you use to record how the species change along a line across a habitat, such as up a rocky shore?",
+  "options": [
+   "A transect",
+   "A single quadrat thrown once",
+   "Capture-recapture",
+   "A food web"
+  ],
+  "answer": "A transect",
+  "explanation": "A transect is used when conditions change across a habitat: a tape or rope is laid in a straight line and the organisms are recorded along it, which shows zonation. Capture-recapture is for animals that move about, and a single quadrat shows one spot only.",
+  "topic": "bio-eco-study-methods"
+ },
+ {
+  "id": "p123",
+  "question": "Which enzyme cuts DNA at a specific sequence of bases and leaves sticky ends?",
+  "options": [
+   "A restriction enzyme",
+   "Ligase",
+   "A plasmid",
+   "A marker gene"
+  ],
+  "answer": "A restriction enzyme",
+  "explanation": "A restriction enzyme is the scissors of genetic engineering: each one cuts DNA at a specific sequence of bases and leaves short single-stranded sticky ends, which pair with any other end cut by the same enzyme. Ligase is the glue that joins the pieces afterwards.",
+  "topic": "bio-gen-genetic-engineering"
+ },
+ {
+  "id": "p124",
+  "question": "What does ligase do in genetic engineering?",
+  "options": [
+   "It joins the sugar-phosphate backbone of two DNA fragments so the gene is sealed in",
+   "It cuts the plasmid open",
+   "It carries the gene into the bacterium",
+   "It copies the plasmid"
+  ],
+  "answer": "It joins the sugar-phosphate backbone of two DNA fragments so the gene is sealed in",
+  "explanation": "Ligase is the glue: it joins the backbone of two DNA fragments that have been placed together, sealing the gene into its new DNA so the two pieces become one continuous molecule. Cutting is done by a restriction enzyme and carrying by the plasmid vector.",
+  "topic": "bio-gen-genetic-engineering"
+ },
+ {
+  "id": "p125",
+  "question": "Why is a plasmid used as the vector when human insulin is made by bacteria?",
+  "options": [
+   "It is a small ring of DNA that the bacterium copies every time it divides",
+   "It is a protein that kills bacteria that do not take up the gene",
+   "It is the human insulin gene itself",
+   "It is the enzyme that cuts the DNA"
+  ],
+  "answer": "It is a small ring of DNA that the bacterium copies every time it divides",
+  "explanation": "A plasmid is a small ring of DNA found in a bacterium, separate from its main chromosome. It is used as the vector because it is small, it is easy to cut open and close again, and the bacterium copies it every time it divides, so the human gene is carried and passed on.",
+  "topic": "bio-gen-genetic-engineering"
+ },
+ {
+  "id": "p126",
+  "question": "Which is a stated concern about genetically modified crops?",
+  "options": [
+   "A gene such as herbicide resistance could pass by pollen to a wild relative and make a weed harder to control",
+   "GM crops cannot be grown in large numbers",
+   "GM crops always contain animal genes",
+   "GM seed can only be bought once"
+  ],
+  "answer": "A gene such as herbicide resistance could pass by pollen to a wild relative and make a weed harder to control",
+  "explanation": "Gene flow is the concern: pollen from a GM crop can be carried by wind or insects to a wild relative, so a herbicide-resistance gene could reach a weed and make it harder to control. Whether this happens depends on the crop and on whether a wild relative grows nearby, so it is a risk to be tested and monitored rather than a proven harm.",
+  "topic": "bio-gen-genetic-engineering"
+ },
+ {
+  "id": "p130",
+  "question": "Alcohol slows the nervous system down. Which class of drug is it?",
+  "options": [
+   "A depressant",
+   "A stimulant",
+   "A hallucinogen",
+   "An antibiotic"
+  ],
+  "answer": "A depressant",
+  "explanation": "Depressants slow the nervous system: alcohol, heroin and the solvents that are inhaled are the examples. Stimulants such as nicotine and cocaine speed it up, and hallucinogens such as LSD distort what the user sees and hears.",
+  "topic": "bio-hlth-drug-abuse"
+ },
+ {
+  "id": "p131",
+  "question": "A dependent user finds that the same dose of a drug no longer gives the same effect and needs more of it. This is:",
+  "options": [
+   "Tolerance",
+   "Withdrawal",
+   "An overdose",
+   "A cure"
+  ],
+  "answer": "Tolerance",
+  "explanation": "Repeated use makes the brain respond less to the same amount, so the user needs more of the drug for the same effect, and that is tolerance. Withdrawal is what appears when a dependent user stops: shaking, sweating, sickness and craving.",
+  "topic": "bio-hlth-drug-abuse"
+ },
+ {
+  "id": "p132",
+  "question": "Which organ is damaged by long-term alcohol abuse, causing cirrhosis?",
+  "options": [
+   "The liver",
+   "The lungs",
+   "The kidneys",
+   "The bones"
+  ],
+  "answer": "The liver",
+  "explanation": "Alcohol damages the liver and can cause cirrhosis, and it also slows judgement and reaction time, so the user misjudges speed, distance and risk. It is the lungs that tobacco damages and the kidneys that filter the blood.",
+  "topic": "bio-hlth-drug-abuse"
+ },
+ {
+  "id": "p133",
+  "question": "Which part of a bean seed is the young root that pushes out first during germination?",
+  "options": [
+   "The radicle",
+   "The plumule",
+   "The testa",
+   "The cotyledon"
+  ],
+  "answer": "The radicle",
+  "explanation": "The radicle is the young root and it is the first part to push out of the seed, growing downwards into the soil. The plumule is the young shoot that grows upwards, the testa is the seed coat and the cotyledons store the food.",
+  "topic": "bio-rep-seed-and-germination"
+ },
+ {
+  "id": "p134",
+  "question": "Which of these is NOT one of the three conditions a bean seed needs in order to germinate?",
+  "options": [
+   "Light",
+   "Water",
+   "Oxygen",
+   "A suitable temperature"
+  ],
+  "answer": "Light",
+  "explanation": "A bean seed needs water, oxygen and a suitable temperature, and each has a job. Light is not one of the three: a seed germinates in the dark because it lives on the food stored in its cotyledons until its first leaves open and photosynthesise.",
+  "topic": "bio-rep-seed-and-germination"
+ },
+ {
+  "id": "p135",
+  "question": "In the experiment that tests the conditions needed for germination, which set of seeds is the control?",
+  "options": [
+   "The set kept warm, in room air and watered",
+   "The set kept dry, with no water",
+   "The set kept in a fridge",
+   "The set sealed in a jar with the air pumped out"
+  ],
+  "answer": "The set kept warm, in room air and watered",
+  "explanation": "The control is the set with every condition present: warm, in room air and watered. Each other set changes exactly one variable from it, water, temperature or oxygen, so whatever happens in the test set can be put down to that one difference.",
+  "topic": "bio-rep-seed-and-germination"
  }
 ]
