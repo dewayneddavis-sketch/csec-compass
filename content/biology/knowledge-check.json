@@ -1,18 +1,5 @@
 [
  {
-  "id": "q1",
-  "question": "Which organelle is known as the 'powerhouse' of the cell?",
-  "options": [
-   "Nucleus",
-   "Mitochondria",
-   "Ribosome",
-   "Vacuole"
-  ],
-  "answer": "Mitochondria",
-  "explanation": "Mitochondria are responsible for producing energy (ATP) through respiration.",
-  "topic": "cell-structure"
- },
- {
   "id": "q2",
   "question": "Which of the following is found in a plant cell but NOT an animal cell?",
   "options": [
@@ -104,45 +91,6 @@
   "topic": "dna-inheritance"
  },
  {
-  "id": "q9",
-  "question": "If 'B' is the dominant allele for brown eyes and 'b' is the recessive allele for blue eyes, what colour eyes will an individual with 'Bb' have?",
-  "options": [
-   "Blue",
-   "Green",
-   "Brown",
-   "Grey"
-  ],
-  "answer": "Brown",
-  "explanation": "The dominant allele (B) masks the recessive one (b).",
-  "topic": "dna-inheritance"
- },
- {
-  "id": "q10",
-  "question": "Which of the following is a decomposer?",
-  "options": [
-   "Grass",
-   "Rabbit",
-   "Hawk",
-   "Fungi"
-  ],
-  "answer": "Fungi",
-  "explanation": "Decomposers like fungi and bacteria break down dead organic matter.",
-  "topic": "food-chains"
- },
- {
-  "id": "q11",
-  "question": "Which process produces four genetically different daughter cells?",
-  "options": [
-   "Mitosis",
-   "Meiosis",
-   "Fertilisation",
-   "Binary Fission"
-  ],
-  "answer": "Meiosis",
-  "explanation": "Meiosis is a type of cell division that results in four daughter cells each with half the number of chromosomes of the parent cell.",
-  "topic": "dna-inheritance"
- },
- {
   "id": "q12",
   "question": "What is the evaporation of water from the surface of a plant called?",
   "options": [
@@ -154,19 +102,6 @@
   "answer": "Transpiration",
   "explanation": "Transpiration is the process where plants lose water vapour through their leaves.",
   "topic": "transport-and-growth-in-plants"
- },
- {
-  "id": "q13",
-  "question": "Which organelle is responsible for protein synthesis?",
-  "options": [
-   "Ribosome",
-   "Lysosome",
-   "Golgi apparatus",
-   "Vacuole"
-  ],
-  "answer": "Ribosome",
-  "explanation": "Ribosomes are the site of protein synthesis in a cell.",
-  "topic": "cell-structure"
  },
  {
   "id": "q14",
@@ -182,97 +117,6 @@
   "topic": "excretion-homeostasis"
  },
  {
-  "id": "q15",
-  "question": "Which of the following is an abiotic factor in an ecosystem?",
-  "options": [
-   "Predation",
-   "Competition",
-   "Temperature",
-   "Disease"
-  ],
-  "answer": "Temperature",
-  "explanation": "Abiotic factors are non-living chemical and physical parts of the environment that affect living organisms.",
-  "topic": "food-chains"
- },
- {
-  "id": "q16",
-  "question": "What is the primary function of white blood cells?",
-  "options": [
-   "Transport oxygen",
-   "Clot blood",
-   "Fight infection",
-   "Carry nutrients"
-  ],
-  "answer": "Fight infection",
-  "explanation": "White blood cells are part of the immune system and help protect the body against pathogens.",
-  "topic": "circulatory-system"
- },
- {
-  "id": "q17",
-  "question": "Which part of the plant cell is responsible for photosynthesis?",
-  "options": [
-   "Nucleus",
-   "Vacuole",
-   "Chloroplast",
-   "Cell Wall"
-  ],
-  "answer": "Chloroplast",
-  "explanation": "Chloroplasts contain chlorophyll which captures light energy for photosynthesis.",
-  "topic": "photosynthesis"
- },
- {
-  "id": "q18",
-  "question": "What is the process by which plants lose water vapour through their leaves?",
-  "options": [
-   "Respiration",
-   "Transpiration",
-   "Osmosis",
-   "Diffusion"
-  ],
-  "answer": "Transpiration",
-  "explanation": "Transpiration is the evaporation of water from plant leaves.",
-  "topic": "transport-and-growth-in-plants"
- },
- {
-  "id": "q19",
-  "question": "In the human heart, which chamber pumps oxygenated blood to the rest of the body?",
-  "options": [
-   "Right Atrium",
-   "Right Ventricle",
-   "Left Atrium",
-   "Left Ventricle"
-  ],
-  "answer": "Left Ventricle",
-  "explanation": "The left ventricle has thick muscular walls to pump blood into the aorta for systemic circulation.",
-  "topic": "circulatory-system"
- },
- {
-  "id": "q20",
-  "question": "Which of these is a biotic factor in an ecosystem?",
-  "options": [
-   "Sunlight",
-   "Water",
-   "Bacteria",
-   "Soil"
-  ],
-  "answer": "Bacteria",
-  "explanation": "Biotic factors are living components of an ecosystem.",
-  "topic": "food-chains"
- },
- {
-  "id": "q21",
-  "question": "Which of these is a function of the cell membrane?",
-  "options": [
-   "Producing energy",
-   "Synthesising proteins",
-   "Regulating what enters and leaves the cell",
-   "Storing genetic information"
-  ],
-  "answer": "Regulating what enters and leaves the cell",
-  "explanation": "The cell membrane is semi-permeable and controls the passage of substances.",
-  "topic": "cell-structure"
- },
- {
   "id": "q22",
   "question": "Which organ produces bile?",
   "options": [
@@ -286,32 +130,6 @@
   "topic": "nutrition-and-digestion"
  },
  {
-  "id": "q24",
-  "question": "The movement of molecules from an area of high concentration to an area of low concentration is called?",
-  "options": [
-   "Osmosis",
-   "Active transport",
-   "Diffusion",
-   "Phagocytosis"
-  ],
-  "answer": "Diffusion",
-  "explanation": "Diffusion is the passive movement of particles down a concentration gradient.",
-  "topic": "osmosis-diffusion"
- },
- {
-  "id": "q25",
-  "question": "Which hormone regulates blood sugar levels?",
-  "options": [
-   "Adrenaline",
-   "Thyroxine",
-   "Insulin",
-   "Oestrogen"
-  ],
-  "answer": "Insulin",
-  "explanation": "Insulin, produced by the pancreas, helps lower blood glucose levels.",
-  "topic": "excretion-homeostasis"
- },
- {
   "id": "q26",
   "question": "Antibiotics are effective against which type of pathogen?",
   "options": [
@@ -323,5 +141,187 @@
   "answer": "Bacteria",
   "explanation": "Antibiotics kill bacteria by attacking their cell structures. Viruses are not cells, so antibiotics have no effect on viral diseases such as influenza or dengue.",
   "topic": "body-defences-and-immunity"
+ },
+ {
+  "id": "q27",
+  "question": "A tissue is best described as:",
+  "options": [
+   "A group of similar cells working together on one job",
+   "A group of organs working together",
+   "A single specialised cell",
+   "The whole living organism"
+  ],
+  "answer": "A group of similar cells working together on one job",
+  "explanation": "A tissue is a group of similar cells working together on one job, such as muscle tissue or the palisade mesophyll tissue of a leaf. Several different tissues working together for one function make an organ.",
+  "topic": "bio-cell-levels-of-organisation"
+ },
+ {
+  "id": "q28",
+  "question": "Breathing (ventilation) is:",
+  "options": [
+   "The movement of air in and out of the lungs, which is not the same as respiration",
+   "The release of energy from glucose inside the cells",
+   "The diffusion of gases across the alveoli",
+   "The production of carbon dioxide in the muscles"
+  ],
+  "answer": "The movement of air in and out of the lungs, which is not the same as respiration",
+  "explanation": "Breathing moves air in and out of the lungs and is a mechanical process. Respiration is the release of energy from glucose inside the cells, and gas exchange is the diffusion of oxygen and carbon dioxide across the walls of the alveoli.",
+  "topic": "breathing-and-gas-exchange"
+ },
+ {
+  "id": "q29",
+  "question": "Which substance in tobacco smoke is the addictive drug and a stimulant that raises heart rate and blood pressure?",
+  "options": [
+   "Nicotine",
+   "Tar",
+   "Carbon monoxide",
+   "Carbon dioxide"
+  ],
+  "answer": "Nicotine",
+  "explanation": "Nicotine is the drug in tobacco that makes smoking addictive. It is a stimulant, so it speeds up the heart rate and raises blood pressure and the heart does more work than it should.",
+  "topic": "bio-resp-effects-of-smoking"
+ },
+ {
+  "id": "q30",
+  "question": "Which of these is a renewable energy source?",
+  "options": [
+   "Solar energy",
+   "Coal",
+   "Oil",
+   "Natural gas"
+  ],
+  "answer": "Solar energy",
+  "explanation": "Solar energy is replenished naturally, so using it does not use it up. Coal, oil and natural gas are fossil fuels: they took millions of years to form and are used up when they are burned, which is why they are not renewable.",
+  "topic": "human-impact"
+ },
+ {
+  "id": "q31",
+  "question": "A quadrat is:",
+  "options": [
+   "A square frame of known area thrown at random to sample the organisms inside",
+   "A line laid across a habitat with the organisms recorded along it",
+   "A net used to catch animals so that they can be marked",
+   "A table of random numbers used to choose a square"
+  ],
+  "answer": "A square frame of known area thrown at random to sample the organisms inside",
+  "explanation": "A quadrat is a square frame of known area, usually 0.5 m by 0.5 m or 1 m by 1 m, thrown at random; the organisms inside are counted or estimated. A line laid across a habitat is a transect.",
+  "topic": "bio-eco-study-methods"
+ },
+ {
+  "id": "q32",
+  "question": "In which relationship does one species benefit while the other is neither helped nor harmed?",
+  "options": [
+   "Commensalism",
+   "Mutualism",
+   "Parasitism",
+   "Competition"
+  ],
+  "answer": "Commensalism",
+  "explanation": "Commensalism is one-sided: a remora gains food, transport and protection from a shark, and the shark gains nothing and loses nothing. In mutualism both benefit, in parasitism the host is harmed, and in competition both are harmed.",
+  "topic": "bio-eco-special-relationships"
+ },
+ {
+  "id": "q33",
+  "question": "In natural selection, which individuals are most likely to survive and reproduce?",
+  "options": [
+   "Those whose characteristics best suit the environment they live in",
+   "Those that are the largest in the population",
+   "Those that change their characteristics during their lifetime",
+   "Those that already have the most offspring"
+  ],
+  "answer": "Those whose characteristics best suit the environment they live in",
+  "explanation": "Natural selection acts on variation that already exists: individuals whose characteristics suit the environment survive and pass their alleles on, so the proportion of the population with those characteristics rises over the generations. A characteristic does not change in one lifetime.",
+  "topic": "selection-evolution"
+ },
+ {
+  "id": "q34",
+  "question": "Two heterozygous parents, Bb and Bb, are crossed. What phenotype ratio is expected in the offspring?",
+  "options": [
+   "3 dominant : 1 recessive",
+   "1 dominant : 1 recessive",
+   "1 dominant : 3 recessive",
+   "4 dominant : 0 recessive"
+  ],
+  "answer": "3 dominant : 1 recessive",
+  "explanation": "The Punnett grid gives 1 BB : 2 Bb : 1 bb. BB and Bb both show the dominant phenotype, so three of the four boxes are dominant and one is recessive, which is the ratio 3 : 1.",
+  "topic": "bio-gen-monohybrid-crosses"
+ },
+ {
+  "id": "q35",
+  "question": "Which is the vector most often used to carry a gene into a bacterium?",
+  "options": [
+   "A plasmid",
+   "A restriction enzyme",
+   "Ligase",
+   "A marker gene"
+  ],
+  "answer": "A plasmid",
+  "explanation": "A plasmid is a small ring of DNA found in a bacterium, separate from its main chromosome. It is cut open with the same restriction enzyme that cut out the gene, the gene is sealed in with ligase, and the bacterium takes the plasmid up and copies it.",
+  "topic": "bio-gen-genetic-engineering"
+ },
+ {
+  "id": "q36",
+  "question": "Which part of the brain controls heart rate and breathing?",
+  "options": [
+   "The medulla",
+   "The cerebellum",
+   "The cerebrum",
+   "The iris"
+  ],
+  "answer": "The medulla",
+  "explanation": "The medulla controls heart rate and breathing. The cerebellum controls balance and coordination, and the iris is part of the eye, not the brain.",
+  "topic": "nervous-system-and-sense-organs"
+ },
+ {
+  "id": "q37",
+  "question": "Which kind of joint is the elbow?",
+  "options": [
+   "A hinge joint, which moves in one plane",
+   "A ball-and-socket joint, which moves in all planes",
+   "A joint that cannot move at all",
+   "A joint held together by tendons only"
+  ],
+  "answer": "A hinge joint, which moves in one plane",
+  "explanation": "The elbow and the knee are hinge joints: like the hinge of a door they bend and straighten in one plane only. The shoulder and the hip are ball-and-socket joints and move in all planes.",
+  "topic": "bio-coord-movement-and-support"
+ },
+ {
+  "id": "q38",
+  "question": "Malaria is caused by which pathogen, and how is it spread?",
+  "options": [
+   "The Plasmodium protozoan, spread by the Anopheles mosquito",
+   "A virus, spread by droplets in the air",
+   "A bacterium, spread in contaminated water",
+   "A fungus, spread by direct touch"
+  ],
+  "answer": "The Plasmodium protozoan, spread by the Anopheles mosquito",
+  "explanation": "Malaria is caused by the Plasmodium protozoan and is passed to a person by the bite of a female Anopheles mosquito, which is the vector. A pathogen is a microorganism that causes disease, and Plasmodium is a protozoan, not a virus or a bacterium.",
+  "topic": "disease-and-pathogens"
+ },
+ {
+  "id": "q39",
+  "question": "Why does feeling well not prove that a person has no STI?",
+  "options": [
+   "Many STIs, such as chlamydia, produce no symptoms, so only a test can show an infection",
+   "All STIs clear up on their own without treatment",
+   "An STI can only be passed on once symptoms appear",
+   "Symptoms always appear the same day as infection"
+  ],
+  "answer": "Many STIs, such as chlamydia, produce no symptoms, so only a test can show an infection",
+  "explanation": "Chlamydia often produces no symptoms at all, and a person can carry gonorrhoea or HIV without feeling ill. Testing is the only way to know an infection is there, and it is what stops it being passed on without anyone knowing.",
+  "topic": "bio-rep-birth-control-and-stis"
+ },
+ {
+  "id": "q40",
+  "question": "In the scientific name Homo sapiens, 'sapiens' is the:",
+  "options": [
+   "species",
+   "genus",
+   "family",
+   "kingdom"
+  ],
+  "answer": "species",
+  "explanation": "A binomial name is the genus followed by the species: Homo is the genus and sapiens is the species. Classification runs from kingdom down to species, and the binomial name uses the last two groups.",
+  "topic": "classification-of-living-things"
  }
 ]
