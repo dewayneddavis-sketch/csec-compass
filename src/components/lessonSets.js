@@ -273,7 +273,7 @@ export const lessonSets = {
         { id: "rd1", target: "Produce sperm", label: "Testes" },
         { id: "rd2", target: "Release eggs", label: "Ovaries" },
         { id: "rd3", target: "Where the foetus develops", label: "Uterus" },
-        { id: "rd4", target: "Exchanges oxygen, nutrients and waste between mother and fetus", label: "Placenta" },
+        { id: "rd4", target: "Exchanges oxygen, nutrients and waste between mother and foetus", label: "Placenta" },
         { id: "rd5", target: "Carries the male gamete in a flowering plant", label: "Pollen grain" },
         { id: "rd6", target: "Asexual reproduction: one parent, identical offspring", label: "Budding in yeast" },
       ],
