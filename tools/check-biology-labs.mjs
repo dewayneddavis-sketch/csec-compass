@@ -80,8 +80,10 @@ const PLANNED_NEW_IDS = [
 // module 4 (ecology-environment), each with its own match-the-pairs set. Biology Slice 5
 // (2026-11-19) struck off "bio-gen-monohybrid-crosses" and "bio-gen-genetic-engineering":
 // both landed at the end of module 5 (genetics-variation), each with its own match set.
+// Biology Slice 6 (2026-11-19) struck off "bio-coord-movement-and-support": it landed at the end
+// of module 6 (coordination-response), after nervous-system-and-sense-organs, with its own
+// match-the-pairs set.
 const PENDING_IDS = [
-  "bio-coord-movement-and-support",
   "bio-hlth-drug-abuse",
   "bio-rep-seed-and-germination", "bio-rep-birth-control-and-stis",
 ];
