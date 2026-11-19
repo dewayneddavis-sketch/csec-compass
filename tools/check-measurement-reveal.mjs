@@ -65,10 +65,21 @@ import {
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const read = (p) => fs.readFileSync(path.join(root, p), "utf8");
-const RED_CONTROL = process.argv.includes("--red-control");
+// The red controls run by DEFAULT: the suite invokes every harness with no
+// arguments, so an opt-in flag would mean the shipped suite never proves that
+// any of these assertions can bite. Pass --no-red-control to skip them.
+const RED_CONTROL = !process.argv.includes("--no-red-control");
 
 let pass = 0;
 let fail = 0;
+// This checker returns a list of problems rather than a flat list of
+// assertions, so a "N passed" total here would count SECTIONS and understate
+// what was checked (it printed "2 passed" while M1-M6 ran dozens of checks).
+// The closing line therefore names what the harness established instead.
+let ROUTED_N = 0;
+let TASK_N = 0;
+let RED_BIT = 0;
+let RED_TOTAL = 0;
 const ok = (cond, msg) => {
   if (cond) pass += 1;
   else { fail += 1; console.log(`FAIL: ${msg}`); }
@@ -474,6 +485,8 @@ section("1. the measurement tasks on the real tree");
   const taskCount = Object.values(measurementTasks).reduce((n, l) => n + l.length, 0);
   console.log(`    routed: ${routed.length} measurement lesson(s) — ${routed.map((l) => `${l.id} (${l.experiment.type} → <${TOOLS[typeToTool.get(l.experiment.type)].name} />)`).join(", ")}`);
   console.log(`    tasks: ${taskCount} across ${Object.keys(measurementTasks).length} lesson(s); ${routed.filter((l) => measurementTasks[l.id]).length} of ${routed.length} measurement lessons carry one`);
+  ROUTED_N = routed.length;
+  TASK_N = taskCount;
   // The positive control: the caller is green on the untouched tree, or the red
   // runs below are a broken caller rather than a bite.
   const again = measurementProblems(REAL);
@@ -545,8 +558,11 @@ if (RED_CONTROL) {
   if (caughtAll) pass += 1; else { fail += 1; console.log("FAIL: a red control did not bite"); }
   const green = measurementProblems(REAL).length === 0;
   if (green) pass += 1; else { fail += 1; console.log("FAIL: the caller is no longer green on the untouched real tree after the red controls"); }
-  console.log(`    ${results.filter(Boolean).length}/${results.length} red controls bit; caller green again: ${green}`);
+  RED_BIT = results.filter(Boolean).length;
+  RED_TOTAL = results.length;
+  console.log(`    ${RED_BIT}/${RED_TOTAL} red controls bit; caller green again: ${green}`);
 }
 
-console.log(`\ncheck-measurement-reveal: ${pass} passed, ${fail} failed`);
+const reds = RED_CONTROL ? `, ${RED_BIT}/${RED_TOTAL} red controls bit` : " (red controls SKIPPED)";
+console.log(`\ncheck-measurement-reveal: ${fail === 0 ? "green" : "RED"} — M1-M6 clean over ${ROUTED_N} measurement lesson(s) and ${TASK_N} task(s)${reds}, ${fail} failed`);
 process.exit(fail === 0 ? 0 : 1);
