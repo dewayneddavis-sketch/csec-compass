@@ -77,9 +77,13 @@ def leader(x1, y1, x2, y2, w=2, color=LINE):
             f'stroke-width="{w}"/><circle cx="{x2}" cy="{y2}" r="4.5" fill="{color}"/>')
 
 
-def margin_label(x, y, ax, ay, s, anchor, size=22, fill=INK):
-    return txt(x, y, s, size=size, anchor=anchor, fill=fill) + leader(
-        x + (6 if anchor == "start" else -6), y, ax, ay)
+def margin_label(x, y, ax, ay, s, anchor, size=22, fill=INK, lead=None):
+    # `lead` is the x the leader starts at. The default puts it 6px from the label's
+    # anchor, which is inside the word when the word is wider than 6px — a leader that
+    # strikes through its own label. A caller that knows the text's extent passes the
+    # point just clear of it instead.
+    lx = (x + (6 if anchor == "start" else -6)) if lead is None else lead
+    return txt(x, y, s, size=size, anchor=anchor, fill=fill) + leader(lx, y, ax, ay)
 
 
 def defs(prefix):
@@ -426,11 +430,12 @@ def text_lines(x, y, rows, size=15, fill=MUTED, anchor="middle", lh=None):
                    for i, s in enumerate(rows))
 
 
-def stacked_label(x, y, ax, ay, rows, anchor, size=19, fill=INK):
+def stacked_label(x, y, ax, ay, rows, anchor, size=19, fill=INK, lead=None):
     out = txt(x, y, rows[0], size=size, anchor=anchor, fill=fill)
     for i, s in enumerate(rows[1:], start=1):
         out += txt(x, y + i * (size + 5), s, size=size, anchor=anchor, fill=fill)
-    return out + leader(x + (8 if anchor == "start" else -8), y, ax, ay)
+    lx = (x + (8 if anchor == "start" else -8)) if lead is None else lead
+    return out + leader(lx, y, ax, ay)
 
 
 def spindle(cx, cy, half=70, ry=21, fill=ORGAN, stroke=ORGAN_L):
@@ -983,10 +988,11 @@ def figure_gas_exchange():
     b.append(line_arrow(304, 496, 304, 444, A, "red", OXY_L, 4))
     b.append(txt(250, 560, "oxygen in, carbon dioxide out", size=16, anchor="middle",
                  fill=MUTED))
-    b.append(margin_label(470, 320, 340, 422, "moist lining", "end", size=17))
-    b.append(stacked_label(470, 408, 372, 470, ["wall one", "cell thick"], "end", size=17))
-    b.append(margin_label(470, 548, 330, 524, "capillaries", "end", size=17))
-    b.append(margin_label(40, 320, 176, 392, "alveoli", "start", size=17))
+    b.append(margin_label(470, 320, 340, 422, "moist lining", "end", size=17, lead=377))
+    b.append(stacked_label(470, 408, 372, 470, ["wall one", "cell thick"], "end", size=17,
+                          lead=396))
+    b.append(margin_label(470, 548, 330, 524, "capillaries", "end", size=17, lead=386))
+    b.append(margin_label(40, 320, 176, 392, "alveoli", "start", size=17, lead=96))
 
     # ---- panel B: a gill, and one lamella in counter-current flow
     b.append(box(510, 80, 470, 540, "#f8fafc", PANEL_L, rx=14, sw=2))
@@ -998,8 +1004,8 @@ def figure_gas_exchange():
         x = 578 + i * 44
         b.append(f'<rect x="{x}" y="186" width="17" height="112" rx="8" fill="#fecdd3" '
                  f'stroke="{ORGAN_L}" stroke-width="2.5"/>')
-    b.append(margin_label(540, 260, 566, 190, "gill", "start", size=17))
-    b.append(margin_label(952, 330, 902, 286, "filaments", "end", size=17))
+    b.append(margin_label(540, 260, 566, 190, "gill", "start", size=17, lead=569))
+    b.append(margin_label(952, 330, 902, 286, "filaments", "end", size=17, lead=876))
     # one lamella, with water flowing over it one way and the blood the other
     b.append(f'<rect x="560" y="386" width="380" height="92" rx="16" fill="#fecdd3" '
              f'stroke="{ORGAN_L}" stroke-width="3"/>')
@@ -1009,7 +1015,7 @@ def figure_gas_exchange():
     b.append(txt(566, 336, "water", size=18, fill=MUTED))
     b.append(line_arrow(934, 432, 566, 432, A, "red", OXY_L, 4))
     b.append(txt(620, 416, "blood", size=18, fill=ORGAN_L))
-    b.append(margin_label(566, 372, 604, 390, "lamellae", "start", size=17))
+    b.append(margin_label(566, 372, 604, 390, "lamellae", "start", size=17, lead=637))
     b.append(txt(750, 540, "blood flows the other way", size=17, anchor="middle", fill=MUTED))
     b.append(txt(750, 572, "counter-current flow: more oxygen is taken up", size=18,
                  anchor="middle"))
