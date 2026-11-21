@@ -316,6 +316,13 @@ export function runChecks(st) {
 }
 
 // ---------------------------------------------------------------------------------------------
+/** The module that HOSTS `id` — found by the lesson it holds, never by its position in the array. */
+const moduleOf = (st, id) => {
+  const m = st.modules.find((mm) => (mm.lessons || []).some((l) => l.id === id));
+  if (!m) throw new Error(`no module hosts ${id}`);
+  return m;
+};
+
 // Red controls: each mutates the loaded state in memory and MUST be caught, by the assertion it names.
 export const RED_CONTROLS = {
   // rename a chapter's title in the target — the owner's-list assertion must notice the drift
@@ -344,13 +351,16 @@ export const RED_CONTROLS = {
   "lesson-ghost": (st) => {
     st.chapters[2].lesson = "bio-eco-ghost-lesson";
   },
-  // delete a lesson from the tree — the lesson count must fire
+  // delete a lesson from the tree — the lesson count must fire. Resolved BY ID: `st.modules[8]` is correct
+  // today and silently aimed at the wrong module the moment a module is inserted ahead of it.
   "lesson-deleted": (st) => {
-    st.modules[8].lessons = st.modules[8].lessons.filter((l) => l.id !== "classification-of-living-things");
+    const m = moduleOf(st, "classification-of-living-things");
+    m.lessons = m.lessons.filter((l) => l.id !== "classification-of-living-things");
   },
   // rename a lesson id in the tree only — chapters 1 and 2 lose their host, and the new id has no Play tab
   "lesson-renamed": (st) => {
-    st.modules[8].lessons[0].id = "classification-of-living-things-renamed";
+    const l = moduleOf(st, "classification-of-living-things").lessons.find((x) => x.id === "classification-of-living-things");
+    l.id = "classification-of-living-things-renamed";
   },
   // blank one lesson's Play-tab entry
   "set-blanked": (st) => {

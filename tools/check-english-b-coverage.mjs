@@ -40,13 +40,18 @@
 //      them by deleting them.
 //
 // Usage
-//   node tools/check-english-b-coverage.mjs                       # the real check
-//   node tools/check-english-b-coverage.mjs --red-control <name>  # one red control
-//   node tools/check-english-b-coverage.mjs --red-controls-all    # every red control
+//   node tools/check-english-b-coverage.mjs                       # the real check AND every red control
+//   node tools/check-english-b-coverage.mjs --red-control <name>  # one red control, on its own
+//   node tools/check-english-b-coverage.mjs --no-red-control      # the real check only (the one opt-out)
 //
-// A red control mutates the loaded state in memory and MUST make the check fail. In red-control mode the
-// exit code is 0 when the mutation was caught and 1 when it slipped through — the control is part of the
-// result. Nothing is written to disk, so the tree is byte-identical after a red-control run.
+// A red control mutates the loaded state in memory and MUST make the check fail. The controls run BY
+// DEFAULT, because the suite (`tools/check-all.sh`) invokes every harness with no arguments: a guard that
+// only runs behind a flag is not a guard, and until 2026-11-19 this file's 22 controls ran only in a manual
+// `--red-controls-all` pass that the suite never made. Nothing is written to disk, so the tree is
+// byte-identical after a run with the controls on.
+//
+// One exit code covers both halves: the real check's failures and any control that was not caught (or was
+// caught by an assertion other than the one it is aimed at — see RED_EXPECT).
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -399,7 +404,11 @@ export const RED_CONTROLS = {
   // Aimed at §6's live half: every eb-l8-* lesson is the primary host of a coverage row. A fourth new
   // lesson appearing with no row must red it — that is "the build is finished" in a checkable form.
   "ghost-eb-l8-lesson": (st) => {
-    st.modules[7].lessons.push({ id: "eb-l8-ghost", title: "A Ghost Lesson", content: "x", concepts: ["Ghost"] });
+    // Resolve the module BY ID, never by index: `st.modules[7]` is correct today and silently aimed at the
+    // wrong module the moment a module is inserted ahead of it.
+    const mod = st.modules.find((m) => m.id === "eb-mod-8");
+    if (!mod) throw new Error("no eb-mod-8 module to append the ghost lesson to");
+    mod.lessons.push({ id: "eb-l8-ghost", title: "A Ghost Lesson", content: "x", concepts: ["Ghost"] });
   },
   "ghost-host": (st) => { editRow(st, 15, (l) => l.replace("| eb-l6-1 |", "| eb-l9-9 |")); },
   "american-shipped": (st) => {
@@ -411,27 +420,44 @@ export const RED_CONTROLS = {
 };
 
 // ---------------------------------------------------------------------------------------------
-// What each control must be caught BY. A control that synthesises state can trip more than one
-// assertion at once (re-classing a row to EXTEND breaks the class totals as well as the EXTEND rule), so
-// "some failure appeared" is not proof that the assertion the control is FOR still checks anything. Where
-// a control is listed here, the run only passes if that assertion's own message is among the failures;
-// otherwise it is reported CAUGHT BY THE WRONG ASSERTION and the run fails. Added by Slice E, when the
-// last EXTEND row disappeared and every EXTEND-aimed control had to synthesise its state.
+// What each control must be caught BY — one ARRAY per control, and every one of the 22 is pinned.
+// A control that synthesises state trips more than one assertion at once (re-classing a row to EXTEND
+// breaks the class totals as well as the EXTEND rule), so "some failure appeared" is not proof that the
+// assertion the control is FOR still checks anything: a control whose guard had been deleted would still
+// report caught because a DIFFERENT assertion tripped. The run only passes if every message listed here is
+// among the failures; a control with no entry here fails outright (runControl), so a later edit cannot add
+// a control and leave it unpinned. Where a control is listed below, the comment names the assertion it is
+// aimed at and, where one exists, the side-effect it also trips.
 export const RED_EXPECT = {
-  "class-flip": "EXTEND rows total 0 (found 1)",
-  "extend-name-added": "is marked EXTEND but eb-l6-1 now names it by name",
-  "extend-secondary-names-it": "is marked EXTEND but eb-l6-3 now names it by name",
-  "row15-name-removed": "row 15 \"Structured Literary Response\" is taught by name in eb-l6-1",
-  // Slice F: NEW reached 0 and PENDING_IDS emptied, so every NEW-aimed and pending-aimed control had to
-  // synthesise its state too. Each one is pinned to the message it is FOR, because re-classing a row to
-  // NEW also breaks the class totals and the pending lists — "something failed" would not prove that the
-  // branch the control guards still checks anything.
-  "pending-id-reappears": "every pending id is still absent from modules.json (landed: eb-l8-craft)",
-  "doc-pending-list-grown": "the doc's Pending ids list is exactly PENDING_IDS (doc: eb-l8-ghost)",
-  "new-row-id-exists": "row 13 is NEW but its id eb-l8-craft already exists",
-  "new-row-bad-scheme": "row 13 new id eb-l9-craft follows the eb-l8-<topic> scheme",
-  "new-row-has-phrase": "row 13 is NEW, so its evidence cell is \"-\"",
-  "ghost-eb-l8-lesson": "every eb-l8-* lesson is the primary host of a coverage row",
+  // §1's row count — aimed at "the table has 16 rows", NOT the row-numbering loop it also trips.
+  "drop-row": ["the coverage table has 16 rows (found 15)"],
+  // §1's row-numbering assertion `r.n === i + 1`: a swap leaves the count at 16 and every name intact.
+  "swap-rows": ["row 3 is chapter 3 (found #4)"],
+  "rename-chapter": ['row 1 is the owner\'s chapter "Drama as a Genre"'],
+  // §1's `sectionOf` assertion — the per-section counts (Drama 3 / Poetry 5) are the side-effect.
+  "wrong-section": ['row 2 sits in section "Drama" (doc says "Poetry")'],
+  "class-flip": ["EXTEND rows total 0 (found 1)"],
+  "phrase-not-in-copy": ["row 4 evidence phrase appears in eb-l3-3's own copy"],
+  "phrase-dropped": ["row 7 records an evidence phrase"],
+  // §3's REUSE name test — §5's phrase check on eb-l2-2 is the side-effect.
+  "reuse-host-swapped": ['row 7 "Figurative Language and Poetic Devices" is taught by name in eb-l2-2'],
+  "extend-name-added": ["is marked EXTEND but eb-l6-1 now names it by name"],
+  "extend-secondary-names-it": ["is marked EXTEND but eb-l6-3 now names it by name"],
+  "row15-name-removed": ['row 15 "Structured Literary Response" is taught by name in eb-l6-1'],
+  "row10-name-removed": ['row 10 "Analyzing Prose Elements" is taught by name in eb-l4-1'],
+  "pending-id-reappears": ["every pending id is still absent from modules.json (landed: eb-l8-craft)"],
+  "doc-pending-list-grown": ["the doc's Pending ids list is exactly PENDING_IDS (doc: eb-l8-ghost)"],
+  "new-row-id-exists": ["row 13 is NEW but its id eb-l8-craft already exists"],
+  "new-row-bad-scheme": ["row 13 new id eb-l9-craft follows the eb-l8-<topic> scheme"],
+  "new-row-has-phrase": ['row 13 is NEW, so its evidence cell is "-"'],
+  "ghost-eb-l8-lesson": ["every eb-l8-* lesson is the primary host of a coverage row"],
+  // §2's "host is a real lesson id" — §3's "primary host … does not exist" is the side-effect.
+  "ghost-host": ["row 15 host eb-l9-9 is a real lesson id in modules.json"],
+  "american-shipped": ["no English B lesson copy uses the American form (found in: eb-l4-1)"],
+  // §7's verbatim-name assertion: row 10 must keep the owner's American spelling. §1's chapter-name
+  // assertion also trips (it is the same fact stated twice) and is the side-effect, not the target.
+  "row10-americanised": ['row 10 keeps the owner\'s verbatim "Analyzing Prose Elements"'],
+  "decisions-dropped": ["the doc still records decision D-2 as a bolded decision"],
 };
 
 // ---------------------------------------------------------------------------------------------
@@ -442,40 +468,45 @@ function runControl(name) {
   const { failures } = runChecks(st);
   const real = failures.filter((f) => !f.startsWith("\u0000"));
   if (!real.length) return { ok: false, real, why: "WAS NOT CAUGHT — the check is blind to it" };
-  const expect = RED_EXPECT[name];
-  if (expect && !real.some((f) => f.includes(expect)))
-    return { ok: false, real, why: `CAUGHT BY THE WRONG ASSERTION — no failure containing "${expect}"` };
-  // report the failure the control was AIMED at, not merely the first one it happened to trip
-  const aimed = expect ? real.filter((f) => f.includes(expect)) : real;
-  return { ok: true, real: aimed.length ? aimed : real };
+  const expect = RED_EXPECT[name] || [];
+  if (!expect.length)
+    return { ok: false, real, why: "NO PINNED EXPECTATION — this control is not aimed at any assertion" };
+  const missing = expect.filter((e) => !real.some((f) => f.includes(e)));
+  if (missing.length)
+    return { ok: false, real, why: `CAUGHT BY THE WRONG ASSERTION — no failure containing "${missing[0]}"` };
+  return { ok: true, real: real.filter((f) => expect.some((e) => f.includes(e))) };
 }
 
+// ---------------------------------------------------------------------------------------------
 const argv = process.argv.slice(2);
-if (argv.includes("--red-control")) {
-  const name = argv[argv.indexOf("--red-control") + 1];
-  if (!RED_CONTROLS[name]) { console.log(`unknown red control: ${name}`); process.exit(2); }
+const only = argv.includes("--red-control") ? argv[argv.indexOf("--red-control") + 1] : null;
+
+if (only) {
+  if (!RED_CONTROLS[only]) { console.log(`unknown red control: ${only}`); process.exit(2); }
   let r;
-  try { r = runControl(name); } catch (e) { console.log(`RED CONTROL "${name}" BROKE — ${e.message}`); process.exit(1); }
-  if (!r.ok) { console.log(`RED CONTROL "${name}" ${r.why}`); r.real.slice(0, 3).forEach((f) => console.log("   " + f)); process.exit(1); }
-  console.log(`red control "${name}": caught with ${r.real.length} failure(s) — as expected`);
+  try { r = runControl(only); } catch (e) { console.log(`RED CONTROL "${only}" BROKE — ${e.message}`); process.exit(1); }
+  if (!r.ok) { console.log(`RED CONTROL "${only}" ${r.why}`); r.real.slice(0, 3).forEach((f) => console.log("   " + f)); process.exit(1); }
+  console.log(`red control "${only}": caught — as expected`);
   r.real.slice(0, 3).forEach((f) => console.log("   " + f));
   process.exit(0);
-}
-if (argv.includes("--red-controls-all")) {
-  let bad = 0;
-  for (const name of Object.keys(RED_CONTROLS)) {
-    let r;
-    try { r = runControl(name); } catch (e) { bad++; console.log(`BROKEN: ${name} — ${e.message}`); continue; }
-    if (!r.ok) { bad++; console.log(`${r.ok === false && r.real.length ? "WRONG ASSERTION" : "NOT CAUGHT"}: ${name} — ${r.why}`); }
-    else console.log(`caught (${r.real.length}): ${name} — ${r.real[0]}`);
-  }
-  console.log(`\n${Object.keys(RED_CONTROLS).length} red controls, ${bad} not caught`);
-  process.exit(bad ? 1 : 0);
 }
 
 const st = loadState();
 const { pass, failures } = runChecks(st);
 for (const f of failures) console.log(f.startsWith("\u0000") ? `\n${f.slice(1)}` : "FAIL: " + f);
-const real = failures.filter((f) => !f.startsWith("\u0000"));
-console.log(`\ncheck-english-b-coverage: ${pass} checks passed, ${real.length} failed · ${PENDING_IDS.length} new ids still pending (${PENDING_IDS.join(", ")})`);
-process.exit(real.length ? 1 : 0);
+const realFailures = failures.filter((f) => !f.startsWith("\u0000")).length;
+console.log(`\ncheck-english-b-coverage: ${pass} checks passed, ${realFailures} failed · ${PENDING_IDS.length} new ids still pending (${PENDING_IDS.join(", ")})`);
+
+if (argv.includes("--no-red-control")) process.exit(realFailures ? 1 : 0);
+
+// Red controls run by DEFAULT — the suite passes no arguments, so this is the path it takes.
+let bad = 0;
+for (const name of Object.keys(RED_CONTROLS)) {
+  let r;
+  try { r = runControl(name); } catch (e) { bad++; console.log(`BROKEN: ${name} — ${e.message}`); continue; }
+  if (!r.ok) { bad++; console.log(`${r.real.length ? "WRONG ASSERTION" : "NOT CAUGHT"}: ${name} — ${r.why}`); }
+  else console.log(`caught (${r.real.length}): ${name} — ${r.real[0]}`);
+}
+console.log(`${Object.keys(RED_CONTROLS).length} red controls, ${bad} not caught`);
+// ONE exit code for both halves: a failing real check and an uncaught control are both red.
+process.exit(realFailures || bad ? 1 : 0);
