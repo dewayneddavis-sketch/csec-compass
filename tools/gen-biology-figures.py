@@ -18,7 +18,9 @@ It carries PR #179's cell fix (the shared animal-cell artwork kept inside the ce
 it reproduces the committed cell byte for byte. Biology's heart and cell are also the sources
 H&SB's and Integrated Science's generators borrow, so a change here must keep those two green.
 
-Writes three SVGs into the directory given by --out, and writes nowhere else.
+Writes every figure listed in main()'s FIGURES table into the directory given by --out, and
+writes nowhere else. The count is not written down here, because a number in a docstring
+goes stale the moment a figure is added: the table is the list.
 """
 import argparse
 import io
@@ -862,6 +864,374 @@ def figure_reflex():
                         "lens thin and thick in accommodation", "".join(b))
 
 
+# ---------------------------------------------------------------- 9. population growth
+# human-impact teaches the J-shaped curve, the S-shape, the carrying capacity and the
+# predator/prey cycle in prose. This draws all four, and every label is the lesson's wording.
+
+def figure_population():
+    import math
+    W, H = 1000, 1010
+    A = "pop"
+    b = []
+    b.append(txt(500, 42, "POPULATION GROWTH, CARRYING CAPACITY, PREDATOR AND PREY",
+                 size=26, weight="700", anchor="middle"))
+
+    def curve(x0, x1, y_of, n=72):
+        return " ".join(f"{x0 + (x1 - x0) * i / (n - 1):.1f},{y_of(i / (n - 1)):.1f}"
+                        for i in range(n))
+
+    # ---- panel A: exponential growth, then the S-shape levelling off at the carrying capacity
+    b.append(box(20, 80, 470, 560, "#f8fafc", PANEL_L, rx=14, sw=2))
+    b.append(txt(255, 116, "growth, then an S-shape", size=21, weight="700", anchor="middle"))
+    b.append(f'<line x1="70" y1="590" x2="470" y2="590" stroke="{MUTED}" stroke-width="3" '
+             f'marker-end="url(#{A}-arrow)"/>')
+    b.append(f'<line x1="70" y1="590" x2="70" y2="150" stroke="{MUTED}" stroke-width="3" '
+             f'marker-end="url(#{A}-arrow)"/>')
+    b.append(txt(270, 622, "generation", size=19, anchor="middle", fill=MUTED))
+    b.append(rotated(40, 370, "number of individuals", size=17, fill=MUTED))
+    # the carrying capacity the S-shape levels off at
+    b.append(f'<line x1="80" y1="250" x2="462" y2="250" stroke="{OXY_L}" stroke-width="3" '
+             f'stroke-dasharray="10 7"/>')
+    # J-shaped: exponential growth, drawn from the exponential itself
+    k = 4.6
+    b.append(f'<polyline points="{curve(96, 452, lambda t: 590 - (590 - 168) * (math.exp(k * t) - 1) / (math.exp(k) - 1))}" '
+             f'fill="none" stroke="{ORGAN_L}" stroke-width="5"/>')
+    # S-shape: the same start, slowing and levelling off at the carrying capacity
+    b.append(f'<polyline points="{curve(96, 452, lambda t: 590 - (590 - 250) / (1 + math.exp(-9 * (t - 0.45))))}" '
+             f'fill="none" stroke="{WALL}" stroke-width="5"/>')
+    # the key, so no label has to fight the curves for room
+    b.append(f'<line x1="90" y1="158" x2="126" y2="158" stroke="{ORGAN_L}" stroke-width="5"/>')
+    b.append(txt(136, 158, "J-shaped curve", size=17, fill=ORGAN_L))
+    b.append(f'<line x1="90" y1="190" x2="126" y2="190" stroke="{WALL}" stroke-width="5"/>')
+    b.append(txt(136, 190, "S-shape", size=17, fill=WALL))
+    b.append(f'<line x1="90" y1="222" x2="126" y2="222" stroke="{OXY_L}" stroke-width="3" '
+             f'stroke-dasharray="10 7"/>')
+    b.append(txt(136, 222, "carrying capacity", size=17, fill=OXY_L))
+    b.append(margin_label(430, 190, 449, 174, "exponential growth", "end", size=17, fill=ORGAN_L))
+
+    # ---- panel B: predator and prey, the predator lagging behind the prey
+    b.append(box(510, 80, 470, 560, "#f8fafc", PANEL_L, rx=14, sw=2))
+    b.append(txt(745, 116, "predator and prey", size=21, weight="700", anchor="middle"))
+    b.append(txt(745, 148, "the predator lags behind the prey", size=17, anchor="middle",
+                 fill=MUTED))
+    b.append(f'<line x1="570" y1="182" x2="606" y2="182" stroke="{WALL}" stroke-width="5"/>')
+    b.append(txt(616, 182, "prey", size=17, fill=WALL))
+    b.append(f'<line x1="700" y1="182" x2="736" y2="182" stroke="{OXY_L}" stroke-width="5"/>')
+    b.append(txt(746, 182, "predator", size=17, fill=OXY_L))
+    b.append(f'<line x1="560" y1="590" x2="960" y2="590" stroke="{MUTED}" stroke-width="3" '
+             f'marker-end="url(#{A}-arrow)"/>')
+    b.append(f'<line x1="560" y1="590" x2="560" y2="212" stroke="{MUTED}" stroke-width="3" '
+             f'marker-end="url(#{A}-arrow)"/>')
+    b.append(txt(760, 622, "generation", size=19, anchor="middle", fill=MUTED))
+    b.append(f'<polyline points="{curve(580, 950, lambda t: 430 - 100 * math.sin(3 * math.pi * t))}" '
+             f'fill="none" stroke="{WALL}" stroke-width="5"/>')
+    b.append(f'<polyline points="{curve(580, 950, lambda t: 475 - 80 * math.sin(3 * math.pi * t - 1.05))}" '
+             f'fill="none" stroke="{OXY_L}" stroke-width="5"/>')
+
+    # ---- the cycle in words, straight from the lesson
+    b.append(box(20, 670, 960, 190, "#ffffff", PANEL_L, rx=14, sw=2))
+    b.append(txt(40, 706, "When prey are plentiful the predators have more young and their "
+                          "numbers rise, but only after the prey", size=19))
+    b.append(txt(40, 742, "have already risen. More predators then eat more prey and the prey "
+                          "numbers fall; with fewer predators", size=19))
+    b.append(txt(40, 778, "the prey recover, and the cycle repeats.", size=19))
+    b.append(txt(40, 820, "Human activity changes the carrying capacity: clearing forest or "
+                          "overfishing lowers it, while irrigation,", size=19, fill=MUTED))
+    b.append(txt(40, 848, "fertiliser and medicine can raise it.", size=19, fill=MUTED))
+
+    b.append(box(20, 880, 960, 110, PANEL, PANEL_L, rx=12, sw=2))
+    b.append(txt(500, 910, "No population grows that way for long: the limiting factors bite "
+                           "and the curve levels off.", size=19, anchor="middle"))
+    b.append(txt(500, 940, "The population size at which it levels off is the carrying capacity "
+                           "of that habitat.", size=19, anchor="middle"))
+    b.append(txt(500, 970, "The limiting factors are food, water, space, disease and predation.",
+                 size=19, anchor="middle", fill=MUTED))
+    return svg(A, W, H, "Population growth drawn as a J-shaped curve and an S-shape levelling "
+                        "off at the carrying capacity, beside predator and prey curves with "
+                        "the predator lagging behind the prey", "".join(b))
+
+
+# ---------------------------------------------------------------- 10. gas exchange surfaces
+
+def figure_gas_exchange():
+    W, H = 1000, 940
+    A = "gas"
+    b = []
+    b.append(txt(500, 42, "GAS EXCHANGE SURFACES", size=27, weight="700", anchor="middle"))
+
+    # ---- panel A: one alveolus against the capillary that wraps it
+    b.append(box(20, 80, 470, 540, "#f8fafc", PANEL_L, rx=14, sw=2))
+    b.append(txt(255, 116, "in the alveolus", size=21, weight="700", anchor="middle"))
+    # the route the air takes to reach it
+    for i, name in enumerate(["trachea", "bronchi", "bronchioles", "alveoli"]):
+        x = 32 + i * 118
+        b.append(box(x, 140, 96, 34, "#e0f2fe", "#0284c7", rx=8, sw=2))
+        b.append(txt(x + 48, 158, name, size=13, anchor="middle"))
+        if i < 3:
+            b.append(line_arrow(x + 98, 157, x + 114, 157, A, "arrow", MUTED, 3))
+    # the alveolus: a sac with a moist lining and a wall one cell thick
+    b.append(f'<path d="M 130,470 A 120,120 0 0 1 370,470 Z" fill="#e0f2fe" stroke="#0284c7" '
+             f'stroke-width="4"/>')
+    b.append(txt(250, 380, "air", size=22, anchor="middle"))
+    b.append(f'<rect x="130" y="470" width="240" height="9" fill="#fde68a" stroke="#b45309" '
+             f'stroke-width="1.5"/>')
+    # the capillary, one cell thick, with blood in it
+    b.append(f'<rect x="105" y="479" width="290" height="46" rx="23" fill="#fecdd3" '
+             f'stroke="{ORGAN_L}" stroke-width="3"/>')
+    b.append(txt(250, 503, "blood", size=18, anchor="middle", fill=ORGAN_L))
+    b.append(line_arrow(196, 444, 196, 496, A, "blue", DEOX_L, 4))
+    b.append(line_arrow(304, 496, 304, 444, A, "red", OXY_L, 4))
+    b.append(txt(250, 560, "oxygen in, carbon dioxide out", size=16, anchor="middle",
+                 fill=MUTED))
+    b.append(margin_label(470, 320, 340, 422, "moist lining", "end", size=17))
+    b.append(stacked_label(470, 408, 372, 470, ["wall one", "cell thick"], "end", size=17))
+    b.append(margin_label(470, 548, 330, 524, "capillaries", "end", size=17))
+    b.append(margin_label(40, 320, 176, 392, "alveoli", "start", size=17))
+
+    # ---- panel B: a gill, and one lamella in counter-current flow
+    b.append(box(510, 80, 470, 540, "#f8fafc", PANEL_L, rx=14, sw=2))
+    b.append(txt(745, 116, "in the gill: counter-current flow", size=21, weight="700",
+                 anchor="middle"))
+    b.append(f'<path d="M 560,196 Q 730,158 900,196" fill="none" stroke="#94a3b8" '
+             f'stroke-width="16" stroke-linecap="round"/>')
+    for i in range(8):
+        x = 578 + i * 44
+        b.append(f'<rect x="{x}" y="186" width="17" height="112" rx="8" fill="#fecdd3" '
+                 f'stroke="{ORGAN_L}" stroke-width="2.5"/>')
+    b.append(margin_label(540, 260, 566, 190, "gill", "start", size=17))
+    b.append(margin_label(952, 330, 902, 286, "filaments", "end", size=17))
+    # one lamella, with water flowing over it one way and the blood the other
+    b.append(f'<rect x="560" y="386" width="380" height="92" rx="16" fill="#fecdd3" '
+             f'stroke="{ORGAN_L}" stroke-width="3"/>')
+    b.append(f'<rect x="572" y="404" width="356" height="56" rx="14" fill="#fee2e2" '
+             f'stroke="{ORGAN_L}" stroke-width="1.5"/>')
+    b.append(line_arrow(566, 356, 934, 356, A, "arrow", MUTED, 4))
+    b.append(txt(566, 336, "water", size=18, fill=MUTED))
+    b.append(line_arrow(934, 432, 566, 432, A, "red", OXY_L, 4))
+    b.append(txt(620, 416, "blood", size=18, fill=ORGAN_L))
+    b.append(margin_label(566, 372, 604, 390, "lamellae", "start", size=17))
+    b.append(txt(750, 540, "blood flows the other way", size=17, anchor="middle", fill=MUTED))
+    b.append(txt(750, 572, "counter-current flow: more oxygen is taken up", size=18,
+                 anchor="middle"))
+    b.append(txt(750, 600, "than if the two flowed the same way", size=17, anchor="middle",
+                 fill=MUTED))
+
+    # ---- what the two surfaces have in common
+    b.append(box(20, 646, 960, 150, "#ffffff", PANEL_L, rx=14, sw=2))
+    b.append(txt(40, 682, "Oxygen diffuses from the air in the alveolus into the blood, and "
+                          "carbon dioxide diffuses from the blood", size=19))
+    b.append(txt(40, 716, "into the alveolus to be breathed out. In the gill the water and the "
+                          "blood flow in the opposite direction.", size=19))
+    b.append(txt(40, 758, "Every gas exchange surface must be thin, moist, with a large surface "
+                          "area and a good blood or air supply.", size=19, fill=MUTED))
+
+    b.append(box(20, 812, 960, 100, PANEL, PANEL_L, rx=12, sw=2))
+    b.append(txt(500, 840, "A thin surface keeps the diffusion path short, and a moist one is "
+                           "needed because gases have to dissolve,", size=19, anchor="middle"))
+    b.append(txt(500, 872, "a large surface area so that a lot of gas can cross at once, and a "
+                           "good blood or air supply keeps", size=19, anchor="middle"))
+    b.append(txt(500, 898, "the concentration gradient steep so that diffusion keeps going.",
+                 size=19, anchor="middle", fill=MUTED))
+    return svg(A, W, H, "An alveolus with its wall one cell thick against a capillary carrying "
+                        "blood, and a gill with its filaments and one lamella in counter-current "
+                        "flow", "".join(b))
+
+
+# ---------------------------------------------------------------- 11. the alimentary canal
+
+def figure_digestion():
+    W, H = 1000, 1130
+    A = "gut"
+    b = []
+    b.append(txt(500, 42, "THE ALIMENTARY CANAL", size=27, weight="700", anchor="middle"))
+    b.append(txt(500, 74, "the passage of food through the digestive system", size=19,
+                 anchor="middle", fill=MUTED))
+
+    b.append(box(20, 96, 680, 784, "#f8fafc", PANEL_L, rx=14, sw=2))
+
+    # the large intestine first, so the coiled small intestine sits inside it
+    b.append(f'<path d="M 240,662 L 240,430 L 470,430 L 470,662" fill="none" stroke="{TUBE_L}" '
+             f'stroke-width="52" stroke-linecap="round" stroke-linejoin="round"/>')
+    b.append(f'<path d="M 240,662 L 240,430 L 470,430 L 470,662" fill="none" stroke="{TUBE}" '
+             f'stroke-width="42" stroke-linecap="round" stroke-linejoin="round"/>')
+    # the rectum, at the end of the route
+    b.append(f'<path d="M 470,662 L 470,760" fill="none" stroke="{TUBE_L}" stroke-width="40" '
+             f'stroke-linecap="round"/>')
+    b.append(f'<path d="M 470,662 L 470,760" fill="none" stroke="{TUBE}" stroke-width="30" '
+             f'stroke-linecap="round"/>')
+
+    # the small intestine: one coiled tube, most of the digestion and all of the absorption
+    coil = ("M 336,390 C 306,418 378,438 408,456 C 438,474 392,492 336,498 "
+            "C 280,504 274,534 328,544 C 382,554 416,572 378,588 "
+            "C 340,604 294,612 306,636 C 312,648 268,658 240,662")
+    b.append(tube(coil, TUBE, TUBE_L, 34))
+
+    # the mouth and the oesophagus
+    b.append(box(285, 140, 100, 46, "#fecdd3", ORGAN_L, rx=12, sw=3))
+    b.append(f'<rect x="320" y="186" width="30" height="84" fill="{TUBE}" stroke="{TUBE_L}" '
+             f'stroke-width="3"/>')
+    # peristalsis: the wave of contraction pushing the food down
+    b.append(line_arrow(386, 196, 386, 254, A, "arrow", MUTED, 4))
+    b.append(line_arrow(288, 196, 288, 254, A, "arrow", MUTED, 4))
+
+    # the stomach
+    b.append(f'<path d="M 320,270 C 404,272 450,318 438,362 C 426,404 360,412 320,388 Z" '
+             f'fill="{ORGAN}" stroke="{ORGAN_L}" stroke-width="3"/>')
+
+    # the route continues: down the coil, up the large intestine, across and down to the rectum
+    b.append(line_arrow(404, 448, 418, 466, A, "arrow", MUTED, 3))
+    b.append(line_arrow(292, 536, 276, 552, A, "arrow", MUTED, 3))
+    b.append(line_arrow(240, 560, 240, 500, A, "arrow", MUTED, 3))
+    b.append(line_arrow(300, 430, 360, 430, A, "arrow", MUTED, 3))
+    b.append(line_arrow(470, 500, 470, 570, A, "arrow", MUTED, 3))
+    b.append(line_arrow(506, 700, 506, 744, A, "arrow", MUTED, 3))
+
+    # the glands that feed the small intestine
+    b.append(f'<path d="M 500,300 C 566,286 616,308 622,344 C 626,376 584,392 534,384 '
+             f'C 506,378 494,330 500,300 Z" fill="#fecaca" stroke="#b91c1c" stroke-width="3"/>')
+    b.append(f'<ellipse cx="516" cy="412" rx="24" ry="15" fill="#bbf7d0" stroke="{WALL}" '
+             f'stroke-width="3"/>')
+    b.append(f'<path d="M 540,470 C 596,458 646,474 654,500 C 660,526 610,534 560,526 '
+             f'C 538,522 534,486 540,470 Z" fill="#fde68a" stroke="#b45309" stroke-width="3"/>')
+    b.append(line_arrow(532, 422, 446, 470, A, "arrow", WALL, 3))
+    b.append(txt(556, 436, "bile", size=16, fill=WALL))
+
+    # labels — each one a word this lesson prints
+    b.append(margin_label(60, 166, 283, 163, "mouth", "start", size=19))
+    b.append(txt(60, 196, "the teeth grind the food", size=15, fill=MUTED))
+    b.append(margin_label(60, 240, 318, 240, "oesophagus", "start", size=19))
+    b.append(margin_label(410, 150, 386, 200, "peristalsis", "start", size=18))
+    b.append(margin_label(60, 330, 326, 330, "stomach", "start", size=19))
+    b.append(margin_label(60, 560, 300, 552, "small intestine", "start", size=19))
+    b.append(margin_label(60, 762, 455, 762, "rectum", "start", size=19))
+    b.append(txt(60, 792, "faeces stored in the rectum before being egested", size=15,
+                 fill=MUTED))
+    b.append(margin_label(520, 690, 474, 690, "large intestine", "start", size=18))
+    b.append(margin_label(630, 330, 620, 336, "liver", "start", size=18))
+    b.append(stacked_label(630, 400, 542, 412, ["gall", "bladder"], "start", size=18))
+    b.append(margin_label(694, 556, 640, 528, "pancreas", "end", size=18))
+
+    # ---- the villus inset
+    b.append(box(720, 96, 260, 784, "#f8fafc", PANEL_L, rx=14, sw=2))
+    b.append(txt(850, 132, "VILLI", size=23, weight="700", anchor="middle"))
+    b.append(txt(850, 160, "in the wall of the small intestine", size=14, anchor="middle",
+                 fill=MUTED))
+    b.append(f'<rect x="736" y="600" width="228" height="16" fill="#fde68a" stroke="#b45309" '
+             f'stroke-width="2"/>')
+    for cx in (786, 850, 914):
+        b.append(f'<path d="M {cx-22},600 L {cx-22},340 C {cx-22},316 {cx+22},316 {cx+22},340 '
+                 f'L {cx+22},600 Z" fill="#fecdd3" stroke="{ORGAN_L}" stroke-width="3"/>')
+        b.append(f'<path d="M {cx-9},596 L {cx-9},348" stroke="{OXY_L}" stroke-width="6" '
+                 f'stroke-linecap="round"/>')
+        b.append(f'<path d="M {cx+9},348 L {cx+9},596" stroke="{DEOX_L}" stroke-width="6" '
+                 f'stroke-linecap="round"/>')
+    b.append(margin_label(734, 250, 786, 336, "finger-like projections", "start", size=15))
+    b.append(txt(850, 660, "a very large surface area", size=15, anchor="middle"))
+    b.append(margin_label(850, 700, 841, 480, "a rich blood supply", "middle", size=15))
+    b.append(txt(850, 730, "absorbed into the blood", size=15, anchor="middle", fill=MUTED))
+    b.append(text_lines(850, 780, ["The digested nutrients are",
+                                   "absorbed through the villi,",
+                                   "finger-like projections of",
+                                   "the wall of the small intestine."],
+                        size=13, anchor="middle", lh=19))
+
+    # ---- what happens to the food after absorption
+    b.append(box(20, 904, 960, 190, "#ffffff", PANEL_L, rx=14, sw=2))
+    b.append(txt(40, 940, "Each enzyme digests one type of food: amylase breaks starch down to "
+                          "maltose, protease breaks proteins", size=18))
+    b.append(txt(40, 974, "down to amino acids, and lipase breaks fats down to fatty acids and "
+                          "glycerol.", size=18))
+    b.append(txt(40, 1018, "The liver produces bile, stored in the gall bladder, released into "
+                           "the small intestine,", size=18, fill=MUTED))
+    b.append(txt(40, 1052, "where it emulsifies fats into small droplets so that there is a "
+                           "larger surface area for lipase to act on.", size=18, fill=MUTED))
+    return svg(A, W, H, "The alimentary canal as a route from the mouth through the oesophagus, "
+                        "the stomach and the coiled small intestine inside the large intestine to "
+                        "the rectum, with the liver, gall bladder and pancreas feeding it and an "
+                        "inset of the villi that absorb the digested food", "".join(b))
+
+
+# ---------------------------------------------------------------- 12. the bean seed
+
+def figure_seed():
+    W, H = 1000, 940
+    A = "seed"
+    b = []
+    b.append(txt(500, 42, "A BEAN SEED, AND GERMINATION", size=27, weight="700",
+                 anchor="middle"))
+
+    # ---- panel A: the longitudinal section the exam asks for
+    b.append(box(20, 80, 470, 620, "#f8fafc", PANEL_L, rx=14, sw=2))
+    b.append(txt(255, 116, "longitudinal section", size=21, weight="700", anchor="middle"))
+    # the testa: the thin outline all round the outside
+    b.append(f'<ellipse cx="245" cy="400" rx="115" ry="145" fill="#fef3c7" stroke="#b45309" '
+             f'stroke-width="5"/>')
+    # the two cotyledons: two large rounded halves that fill most of the seed
+    b.append(f'<path d="M 233,262 C 172,272 140,330 140,400 C 140,470 174,528 233,538 Z" '
+             f'fill="#fde68a" stroke="#b45309" stroke-width="3"/>')
+    b.append(f'<path d="M 257,262 C 318,272 350,330 350,400 C 350,470 316,528 257,538 Z" '
+             f'fill="#fde68a" stroke="#b45309" stroke-width="3"/>')
+    # the radicle: the young root, between the two cotyledons at one end
+    b.append(f'<path d="M 238,516 L 262,516 L 250,566 Z" fill="#fca5a5" stroke="#b91c1c" '
+             f'stroke-width="3"/>')
+    # the plumule: the young shoot, with its first leaves folded inside it
+    b.append(f'<path d="M 250,502 C 232,484 232,462 250,450 C 268,462 268,484 250,502 Z" '
+             f'fill="#bbf7d0" stroke="{WALL}" stroke-width="3"/>')
+    b.append(f'<path d="M 250,488 C 238,474 238,458 250,448 C 262,458 262,474 250,488 Z" '
+             f'fill="none" stroke="{WALL}" stroke-width="2"/>')
+    b.append(margin_label(30, 148, 168, 288, "testa", "start", size=18))
+    b.append(txt(30, 176, "the tough outer seed coat", size=14, fill=MUTED))
+    b.append(margin_label(30, 400, 138, 400, "cotyledons", "start", size=18))
+    b.append(margin_label(364, 330, 264, 482, "plumule", "start", size=18))
+    b.append(txt(364, 356, "the young shoot", size=14, fill=MUTED))
+    b.append(margin_label(364, 560, 262, 546, "radicle", "start", size=18))
+    b.append(txt(364, 586, "the young root", size=14, fill=MUTED))
+    b.append(text_lines(245, 626, ["The plumule is the tiny shoot with its",
+                                   "first leaves folded inside it."],
+                        size=14, anchor="middle", lh=19))
+
+    # ---- panel B: germination, the radicle down and the plumule up
+    b.append(box(510, 80, 470, 620, "#f8fafc", PANEL_L, rx=14, sw=2))
+    b.append(txt(745, 116, "germination", size=21, weight="700", anchor="middle"))
+    b.append(f'<rect x="520" y="560" width="450" height="130" fill="#e7e5e4"/>')
+    b.append(f'<line x1="520" y1="560" x2="970" y2="560" stroke="#78716c" stroke-width="3"/>')
+    # the seed, split open as the radicle breaks out
+    b.append(f'<path d="M 676,510 C 676,452 824,452 824,510 C 824,544 676,544 676,510 Z" '
+             f'fill="#fde68a" stroke="#b45309" stroke-width="4"/>')
+    b.append(f'<path d="M 750,456 L 750,536" stroke="#b45309" stroke-width="2.5" '
+             f'stroke-dasharray="7 5"/>')
+    # the radicle growing down into the soil
+    b.append(f'<path d="M 750,540 C 746,584 754,614 764,644" fill="none" stroke="#b91c1c" '
+             f'stroke-width="9" stroke-linecap="round"/>')
+    # the plumule growing upwards
+    b.append(f'<path d="M 750,452 C 750,412 752,388 754,362" fill="none" stroke="{WALL}" '
+             f'stroke-width="8" stroke-linecap="round"/>')
+    b.append(f'<path d="M 754,362 C 726,344 704,362 704,384 C 730,392 750,384 754,362 Z" '
+             f'fill="#bbf7d0" stroke="{WALL}" stroke-width="2.5"/>')
+    b.append(f'<path d="M 754,362 C 782,344 804,362 804,384 C 778,392 758,384 754,362 Z" '
+             f'fill="#bbf7d0" stroke="{WALL}" stroke-width="2.5"/>')
+    b.append(line_arrow(800, 448, 800, 380, A, "arrow", WALL, 4))
+    b.append(line_arrow(800, 546, 800, 620, A, "arrow", MUTED, 4))
+    b.append(txt(560, 262, "the plumule grows upwards", size=16))
+    b.append(margin_label(560, 480, 676, 486, "cotyledons", "start", size=16))
+    b.append(txt(560, 676, "the radicle grows downwards into the soil", size=15))
+
+    # ---- the three conditions, and the trap
+    b.append(box(20, 726, 960, 190, "#ffffff", PANEL_L, rx=14, sw=2))
+    b.append(txt(40, 762, "Germination needs water, oxygen and a suitable temperature, and each "
+                          "one has a job:", size=19))
+    b.append(txt(40, 796, "water softens the testa and activates the enzymes, oxygen is needed "
+                          "because the seed respires,", size=19))
+    b.append(txt(40, 830, "and warmth makes the enzymes work faster.", size=19))
+    b.append(txt(40, 872, "Light is not one of the three: a bean seed will germinate in the "
+                          "dark.", size=19, fill=OXY_L))
+    b.append(txt(40, 906, "A seed with two cotyledons is described as dicotyledonous.",
+                 size=19, fill=MUTED))
+    return svg(A, W, H, "A bean seed in longitudinal section with the testa round the outside, "
+                        "the two cotyledons, the radicle and the plumule, beside the same seed "
+                        "germinating with the radicle growing down and the plumule up", "".join(b))
+
+
 def check(text, name, w, h):
     """Structural self-check: well-formed envelope, the declared canvas, no raster and no
     animation. Correctness of the drawing is NOT proven here (see the harness header)."""
@@ -888,7 +1258,11 @@ def main():
                ("leaf-cross-section.svg", figure_leaf(), 1000, 830),
                ("elbow-antagonistic-pair.svg", figure_elbow(), 1000, 880),
                ("nitrogen-cycle-and-carbon-returns.svg", figure_cycles(), 1000, 1060),
-               ("reflex-arc-and-accommodation.svg", figure_reflex(), 1000, 1120)]
+               ("reflex-arc-and-accommodation.svg", figure_reflex(), 1000, 1120),
+               ("population-growth-and-predator-prey.svg", figure_population(), 1000, 1010),
+               ("alveoli-and-gill-gas-exchange.svg", figure_gas_exchange(), 1000, 940),
+               ("alimentary-canal-and-villi.svg", figure_digestion(), 1000, 1130),
+               ("bean-seed-longitudinal-section.svg", figure_seed(), 1000, 940)]
     written = {}
     for name, text, w, h in figures:
         check(text, name, w, h)

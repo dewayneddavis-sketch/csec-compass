@@ -118,6 +118,13 @@
             },
             {
                 "id": "nutrition-and-digestion",
+                "figures": [
+                    {
+                        "src": "/content/biology/figures/alimentary-canal-and-villi.svg",
+                        "alt": "The alimentary canal drawn as one route: the mouth, the oesophagus with peristalsis pushing the food down, the stomach, the coiled small intestine sitting inside the large intestine, and the rectum at the end, with the liver, gall bladder and pancreas beside the small intestine and bile passing from the gall bladder into it. Beside the route, an inset of three villi standing on the wall of the small intestine, each with a blood supply inside it.",
+                        "caption": "Read the route from the mouth to the rectum: the digested food is absorbed in the small intestine, and it is the villi that absorb it. The inset shows why they work, with finger-like projections giving a very large surface area and a rich blood supply."
+                    }
+                ],
                 "title": "Nutrition and Digestion",
                 "objectives": [
                     "List the main nutrients and explain why the body needs each one",
@@ -249,6 +256,13 @@
             },
             {
                 "id": "breathing-and-gas-exchange",
+                "figures": [
+                    {
+                        "src": "/content/biology/figures/alveoli-and-gill-gas-exchange.svg",
+                        "alt": "Two panels. On the left, the route the air takes (trachea, bronchi, bronchioles, alveoli) and one alveolus drawn as a sac of air sitting on a capillary of blood, with its wall one cell thick and a moist lining, oxygen diffusing down into the blood and carbon dioxide diffusing up into the alveolus. On the right, a gill with its arch and its row of filaments, and one lamella enlarged with water flowing over it one way and blood flowing through it the other.",
+                        "caption": "Both surfaces obey the same four rules: thin, moist, a large surface area, and a good blood or air supply. The arrows in the lamella point opposite ways, which is counter-current flow, and it takes up more oxygen than if they flowed the same way."
+                    }
+                ],
                 "title": "Breathing and Gas Exchange",
                 "objectives": [
                     "Describe the structures of the breathing system",
@@ -319,6 +333,13 @@
             },
             {
                 "id": "human-impact",
+                "figures": [
+                    {
+                        "src": "/content/biology/figures/population-growth-and-predator-prey.svg",
+                        "alt": "Two graphs side by side. On the left, a population growing as a J-shaped curve and, on the same axes, an S-shape that slows and levels off at a dashed line labelled carrying capacity. On the right, prey and predator numbers over successive generations: the prey curve rises first, the predator curve rises after it, and the two cycle together.",
+                        "caption": "Follow the dashed line on the left: exponential growth ends when the limiting factors bite. On the right the predator's peaks and troughs come after the prey's, and that lag is what keeps the cycle going."
+                    }
+                ],
                 "title": "Human Impact on the Environment",
                 "content": "Human activities have a significant impact on the Earth's ecosystems and the biosphere. As the global population grows and industrialisation increases, the demand for resources and the production of waste also rise. Key environmental issues include pollution (air, water, and land), deforestation, habitat destruction, and climate change.\n\nPollution occurs when harmful substances are introduced into the environment. For example, the excessive use of fertilisers can lead to eutrophication in water bodies, where algae blooms deplete oxygen and kill aquatic life. The burning of fossil fuels releases greenhouse gases like CO\u2082 and methane, which trap heat in the atmosphere, leading to global warming and more frequent extreme weather events.\n\nCSEC students are expected to understand the causes and consequences of these impacts and to suggest ways to promote sustainability. This includes the 'three Rs' (Reduce, Reuse, Recycle), the use of renewable energy sources, and the conservation of biodiversity through protected areas and sustainable farming practices. Protecting the environment is crucial for our own survival and for future generations.\n\nMarine pollution — pollution of the sea — is a separate problem from the warming of the atmosphere, and CSEC asks about it by name. Plastic waste is the most visible: bags and bottles float and are eaten by turtles and seabirds, which mistake them for food and starve with a full stomach, and fishing nets and packing straps entangle fish, birds and manatees so that they drown or cannot feed. Oil spills from tankers and wells coat the feathers of seabirds, so the birds lose their insulation and buoyancy and die of cold, and the oil poisons fish and the animals that feed on them as it is taken in. Agricultural runoff carries fertiliser and manure into rivers and then into the sea; the extra nitrate and phosphate feed an algal bloom, the algae die and are decayed by bacteria that use up the oxygen in the water, and the result is eutrophication, oxygen depletion and a dead zone in which fish cannot live. Ocean acidification is different again: carbon dioxide from burning fossil fuels dissolves in sea water and forms a weak acid, which lowers the pH. Shell-forming organisms such as corals, molluscs and some plankton build their shells from calcium carbonate, and a lower pH makes that harder, so the shells and the reefs weaken.\n\nConservation has to take account of population dynamics, because a population changes size on its own. Left with plenty of food and space and with no disease or predators, a population grows rapidly: the number added in each generation gets bigger and bigger, which is exponential growth, drawn as a J-shaped curve. No population grows that way for long. Limiting factors such as food, water, space, disease and predation begin to bite, growth slows, and the curve levels off into an S-shape. The population size at which it levels off is the carrying capacity of that habitat: the largest number of individuals the habitat can support, and it is set by those limiting factors. Predator and prey numbers cycle together, and the predator's cycle lags behind the prey's. When prey are plentiful the predators have more young and their numbers rise, but only after the prey have already risen; more predators then eat more prey and the prey numbers fall; with less food the predator numbers fall; and with fewer predators the prey recover, and the cycle repeats. Human activity changes the carrying capacity: clearing forest or overfishing lowers it, while irrigation, fertiliser and medicine can raise it.",
                 "objectives": [
@@ -613,6 +634,13 @@
             },
             {
                 "id": "bio-rep-seed-and-germination",
+                "figures": [
+                    {
+                        "src": "/content/biology/figures/bean-seed-longitudinal-section.svg",
+                        "alt": "On the left, a bean seed cut open in longitudinal section: the testa as a thin outline all round the outside, the two cotyledons filling most of the seed, and at one end the radicle, the young root, beside the plumule, the young shoot with its first leaves folded inside it. On the right, the same seed germinating: the testa split, the radicle growing downwards into the soil and the plumule growing upwards.",
+                        "caption": "Two cotyledons make this a dicotyledon, and they are the food store the seedling lives on. The radicle leaves the seed first, growing down, and the plumule follows it up towards the light."
+                    }
+                ],
                 "title": "Seed Structure and Germination",
                 "objectives": [
                     "Name the testa, cotyledons, radicle and plumule of a bean seed, and state what each does",
