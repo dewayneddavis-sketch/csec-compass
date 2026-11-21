@@ -77,13 +77,77 @@ def leader(x1, y1, x2, y2, w=2, color=LINE):
             f'stroke-width="{w}"/><circle cx="{x2}" cy="{y2}" r="4.5" fill="{color}"/>')
 
 
-def margin_label(x, y, ax, ay, s, anchor, size=22, fill=INK, lead=None):
-    # `lead` is the x the leader starts at. The default puts it 6px from the label's
-    # anchor, which is inside the word when the word is wider than 6px — a leader that
-    # strikes through its own label. A caller that knows the text's extent passes the
-    # point just clear of it instead.
-    lx = (x + (6 if anchor == "start" else -6)) if lead is None else lead
-    return txt(x, y, s, size=size, anchor=anchor, fill=fill) + leader(lx, y, ax, ay)
+# Helvetica/Arial advance widths in 1/1000 em, ASCII 32-126. A leader has to start clear of the
+# word it belongs to, so the generator needs to know how wide a word sets without a font engine;
+# the browser measurement of the shipped SVGs checks these estimates against the rendered text.
+HELV = (
+    278, 278, 355, 556, 556, 889, 667, 191, 333, 333, 389, 584, 278, 333, 278, 278,
+    556, 556, 556, 556, 556, 556, 556, 556, 556, 556, 278, 278, 584, 584, 584, 556,
+    1015, 667, 667, 722, 722, 667, 611, 778, 722, 278, 500, 667, 556, 833, 722, 778,
+    667, 778, 722, 667, 611, 722, 667, 944, 667, 667, 611, 278, 278, 278, 469, 556,
+    333, 556, 556, 500, 556, 556, 278, 556, 556, 222, 222, 500, 222, 833, 556, 556,
+    556, 556, 333, 500, 278, 556, 500, 722, 500, 500, 500, 334, 260, 334, 584,
+)
+
+
+def text_w(s, size):
+    """How wide `s` sets at `size`, from the Helvetica advance widths."""
+    return sum(HELV[ord(c) - 32] if 32 <= ord(c) <= 126 else 556 for c in s) * size / 1000.0
+
+
+def label_span(x, s, anchor, size):
+    """The x range a label's own words occupy."""
+    w = text_w(s, size)
+    if anchor == "start":
+        return x, x + w
+    if anchor == "end":
+        return x - w, x
+    return x - w / 2.0, x + w / 2.0
+
+
+def clear_of(x, y, s, anchor, size, ax, ay, pad=8, side=None):
+    """Where a leader may leave a label without striking through it: past the edge that faces
+    the anchor, or just above/below the words when the anchor sits straight above or below them.
+    `side` forces the edge ("left", "right", "above", "below") when the anchor's own direction is
+    one the leader cannot leave by."""
+    l, r = label_span(x, s, anchor, size)
+    if side == "right":
+        return int(round(r + pad)), y
+    if side == "left":
+        return int(round(l - pad)), y
+    if side == "above":
+        return int(round(min(max(ax, l), r))), int(round(y - (size * 0.62 + pad)))
+    if side == "below":
+        return int(round(min(max(ax, l), r))), int(round(y + (size * 0.62 + pad)))
+    if l - pad <= ax <= r + pad:
+        return (int(round(min(max(ax, l), r))),
+                int(round(y - (size * 0.62 + pad) if ay < y else y + (size * 0.62 + pad))))
+    return int(round(r + pad if ax > r else l - pad)), y
+
+
+def leader_route(start, via, ax, ay, w=2, color=LINE):
+    """A leader that has to go round something: a run of straight segments, then the dot."""
+    pts = [start] + [tuple(p) for p in via] + [(ax, ay)]
+    return "".join(f'<line x1="{p[0]}" y1="{p[1]}" x2="{q[0]}" y2="{q[1]}" stroke="{color}" '
+                   f'stroke-width="{w}"/>' for p, q in zip(pts, pts[1:])) + \
+        f'<circle cx="{ax}" cy="{ay}" r="4.5" fill="{color}"/>'
+
+
+def margin_label(x, y, ax, ay, s, anchor, size=22, fill=INK, lead=None, via=None):
+    # `lead` is where the leader starts — a number (that x, at the label's y) or a point. The
+    # default puts it 6px from the label's anchor, which is inside the word when the word is
+    # wider than 6px: a leader that strikes through its own label. Callers pass clear_of(...)
+    # instead, and `via` routes the leader round anything standing between it and the anchor.
+    if lead is None:
+        lx, ly = x + (6 if anchor == "start" else -6), y
+    elif isinstance(lead, (tuple, list)):
+        lx, ly = lead
+    else:
+        lx, ly = lead, y
+    out = txt(x, y, s, size=size, anchor=anchor, fill=fill)
+    if via:
+        return out + leader_route((lx, ly), via, ax, ay)
+    return out + leader(lx, ly, ax, ay)
 
 
 def defs(prefix):
@@ -434,8 +498,13 @@ def stacked_label(x, y, ax, ay, rows, anchor, size=19, fill=INK, lead=None):
     out = txt(x, y, rows[0], size=size, anchor=anchor, fill=fill)
     for i, s in enumerate(rows[1:], start=1):
         out += txt(x, y + i * (size + 5), s, size=size, anchor=anchor, fill=fill)
-    lx = (x + (8 if anchor == "start" else -8)) if lead is None else lead
-    return out + leader(lx, y, ax, ay)
+    if lead is None:
+        lx, ly = (x + (8 if anchor == "start" else -8)), y
+    elif isinstance(lead, (tuple, list)):
+        lx, ly = lead
+    else:
+        lx, ly = lead, y
+    return out + leader(lx, ly, ax, ay)
 
 
 def spindle(cx, cy, half=70, ry=21, fill=ORGAN, stroke=ORGAN_L):
@@ -912,7 +981,8 @@ def figure_population():
     b.append(f'<line x1="90" y1="222" x2="126" y2="222" stroke="{OXY_L}" stroke-width="3" '
              f'stroke-dasharray="10 7"/>')
     b.append(txt(136, 222, "carrying capacity", size=17, fill=OXY_L))
-    b.append(margin_label(430, 190, 449, 174, "exponential growth", "end", size=17, fill=ORGAN_L))
+    b.append(margin_label(430, 190, 449, 174, "exponential growth", "end", size=17, fill=ORGAN_L,
+                          lead=clear_of(430, 190, "exponential growth", "end", 17, 449, 174)))
 
     # ---- panel B: predator and prey, the predator lagging behind the prey
     b.append(box(510, 80, 470, 560, "#f8fafc", PANEL_L, rx=14, sw=2))
@@ -1103,19 +1173,29 @@ def figure_digestion():
     b.append(txt(556, 436, "bile", size=16, fill=WALL))
 
     # labels — each one a word this lesson prints
-    b.append(margin_label(60, 166, 283, 163, "mouth", "start", size=19))
+    b.append(margin_label(60, 166, 283, 163, "mouth", "start", size=19,
+                          lead=clear_of(60, 166, "mouth", "start", 19, 283, 163)))
     b.append(txt(60, 196, "the teeth grind the food", size=15, fill=MUTED))
-    b.append(margin_label(60, 240, 318, 240, "oesophagus", "start", size=19))
-    b.append(margin_label(410, 150, 386, 200, "peristalsis", "start", size=18))
-    b.append(margin_label(60, 330, 326, 330, "stomach", "start", size=19))
-    b.append(margin_label(60, 560, 300, 552, "small intestine", "start", size=19))
-    b.append(margin_label(60, 762, 455, 762, "rectum", "start", size=19))
+    b.append(margin_label(60, 240, 318, 240, "oesophagus", "start", size=19,
+                          lead=clear_of(60, 240, "oesophagus", "start", 19, 318, 240)))
+    b.append(margin_label(410, 150, 386, 200, "peristalsis", "start", size=18,
+                          lead=clear_of(410, 150, "peristalsis", "start", 18, 386, 200)))
+    b.append(margin_label(60, 330, 326, 330, "stomach", "start", size=19,
+                          lead=clear_of(60, 330, "stomach", "start", 19, 326, 330)))
+    b.append(margin_label(60, 560, 300, 552, "small intestine", "start", size=19,
+                          lead=clear_of(60, 560, "small intestine", "start", 19, 300, 552)))
+    b.append(margin_label(60, 762, 455, 762, "rectum", "start", size=19,
+                          lead=clear_of(60, 762, "rectum", "start", 19, 455, 762)))
     b.append(txt(60, 792, "faeces stored in the rectum before being egested", size=15,
                  fill=MUTED))
-    b.append(margin_label(520, 690, 474, 690, "large intestine", "start", size=18))
-    b.append(margin_label(630, 330, 620, 336, "liver", "start", size=18))
-    b.append(stacked_label(630, 400, 542, 412, ["gall", "bladder"], "start", size=18))
-    b.append(margin_label(694, 556, 640, 528, "pancreas", "end", size=18))
+    b.append(margin_label(520, 690, 474, 690, "large intestine", "start", size=18,
+                          lead=clear_of(520, 690, "large intestine", "start", 18, 474, 690)))
+    b.append(margin_label(630, 330, 620, 336, "liver", "start", size=18,
+                          lead=clear_of(630, 330, "liver", "start", 18, 620, 336)))
+    b.append(stacked_label(630, 400, 542, 412, ["gall", "bladder"], "start", size=18,
+                           lead=clear_of(630, 400, "bladder", "start", 18, 542, 412)))
+    b.append(margin_label(694, 556, 640, 528, "pancreas", "end", size=18,
+                          lead=clear_of(694, 556, "pancreas", "end", 18, 640, 528)))
 
     # ---- the villus inset
     b.append(box(720, 96, 260, 784, "#f8fafc", PANEL_L, rx=14, sw=2))
@@ -1131,9 +1211,16 @@ def figure_digestion():
                  f'stroke-linecap="round"/>')
         b.append(f'<path d="M {cx+9},348 L {cx+9},596" stroke="{DEOX_L}" stroke-width="6" '
                  f'stroke-linecap="round"/>')
-    b.append(margin_label(734, 250, 786, 336, "finger-like projections", "start", size=15))
+    b.append(margin_label(734, 250, 786, 336, "finger-like projections", "start", size=15,
+                          lead=clear_of(734, 250, "finger-like projections", "start", 15, 786, 336)))
     b.append(txt(850, 660, "a very large surface area", size=15, anchor="middle"))
-    b.append(margin_label(850, 700, 841, 480, "a rich blood supply", "middle", size=15))
+    # this leader has to reach the vessels in the middle villus from a label underneath two
+    # centred captions, so it leaves to the right, runs up the clear corridor inside the panel
+    # edge, crosses above the villi and comes down the gap between the first two of them
+    b.append(margin_label(850, 700, 841, 480, "a rich blood supply", "middle", size=15,
+                          lead=clear_of(850, 700, "a rich blood supply", "middle", 15, 841, 480,
+                                        side="right"),
+                          via=[(970, 700), (970, 300), (818, 300), (818, 480)]))
     b.append(txt(850, 730, "absorbed into the blood", size=15, anchor="middle", fill=MUTED))
     b.append(text_lines(850, 780, ["The digested nutrients are",
                                    "absorbed through the villi,",
@@ -1185,12 +1272,20 @@ def figure_seed():
              f'fill="#bbf7d0" stroke="{WALL}" stroke-width="3"/>')
     b.append(f'<path d="M 250,488 C 238,474 238,458 250,448 C 262,458 262,474 250,488 Z" '
              f'fill="none" stroke="{WALL}" stroke-width="2"/>')
-    b.append(margin_label(30, 148, 168, 288, "testa", "start", size=18))
+    # the caption sits directly under the testa label, so its leader steps out past the caption
+    # before turning down to the coat, instead of cutting through the words
+    testa_via = int(round(label_span(30, "the tough outer seed coat", "start", 14)[1])) + 16
+    b.append(margin_label(30, 148, 168, 288, "testa", "start", size=18,
+                          lead=clear_of(30, 148, "testa", "start", 18, 168, 288),
+                          via=[(testa_via, 148)]))
     b.append(txt(30, 176, "the tough outer seed coat", size=14, fill=MUTED))
-    b.append(margin_label(30, 400, 138, 400, "cotyledons", "start", size=18))
-    b.append(margin_label(364, 330, 264, 482, "plumule", "start", size=18))
+    b.append(margin_label(30, 400, 138, 400, "cotyledons", "start", size=18,
+                          lead=clear_of(30, 400, "cotyledons", "start", 18, 138, 400)))
+    b.append(margin_label(364, 330, 264, 482, "plumule", "start", size=18,
+                          lead=clear_of(364, 330, "plumule", "start", 18, 264, 482)))
     b.append(txt(364, 356, "the young shoot", size=14, fill=MUTED))
-    b.append(margin_label(364, 560, 262, 546, "radicle", "start", size=18))
+    b.append(margin_label(364, 560, 262, 546, "radicle", "start", size=18,
+                          lead=clear_of(364, 560, "radicle", "start", 18, 262, 546)))
     b.append(txt(364, 586, "the young root", size=14, fill=MUTED))
     b.append(text_lines(245, 626, ["The plumule is the tiny shoot with its",
                                    "first leaves folded inside it."],
@@ -1219,7 +1314,8 @@ def figure_seed():
     b.append(line_arrow(800, 448, 800, 380, A, "arrow", WALL, 4))
     b.append(line_arrow(800, 546, 800, 620, A, "arrow", MUTED, 4))
     b.append(txt(560, 262, "the plumule grows upwards", size=16))
-    b.append(margin_label(560, 480, 676, 486, "cotyledons", "start", size=16))
+    b.append(margin_label(560, 480, 676, 486, "cotyledons", "start", size=16,
+                          lead=clear_of(560, 480, "cotyledons", "start", 16, 676, 486)))
     b.append(txt(560, 676, "the radicle grows downwards into the soil", size=15))
 
     # ---- the three conditions, and the trap
