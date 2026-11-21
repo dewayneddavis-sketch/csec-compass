@@ -34,13 +34,18 @@
 //   9. content/english-b/* and public/content/english-b/* are byte-identical, file for file.
 //
 // Usage
-//   node tools/check-english-b-labs.mjs                       # the real check
-//   node tools/check-english-b-labs.mjs --red-control <name>  # one red control
-//   node tools/check-english-b-labs.mjs --red-controls-all    # every red control
+//   node tools/check-english-b-labs.mjs                       # the real check AND every red control
+//   node tools/check-english-b-labs.mjs --red-control <name>  # one red control, on its own
+//   node tools/check-english-b-labs.mjs --no-red-control      # the real check only (the one opt-out)
 //
-// A red control mutates the loaded state in memory and MUST make the check fail. In red-control mode the
-// exit code is 0 when the mutation was caught and 1 when it slipped through. Nothing is written to disk,
-// so the tree is byte-identical after a red-control run.
+// A red control mutates the loaded state in memory and MUST make the check fail. The controls run BY
+// DEFAULT, because the suite (`tools/check-all.sh`) invokes every harness with no arguments: a guard that
+// only runs behind a flag is not a guard, and until 2026-11-19 this file's 32 controls ran only in a manual
+// `--red-controls-all` pass that the suite never made. Nothing is written to disk, so the tree is
+// byte-identical after a run with the controls on.
+//
+// One exit code covers both halves: the real check's failures and any control that was not caught (or was
+// caught by an assertion other than the one it is aimed at — see RED_EXPECT).
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -333,13 +338,50 @@ export const RED_CONTROLS = {
 };
 
 // ---------------------------------------------------------------------------------------------
-// What each control must be caught BY. A control that synthesises state can trip more than one
-// assertion at once, so "some failure appeared" is not proof that the assertion the control is FOR still
-// checks anything. Where a control is listed here, the run only passes if that assertion's own message is
-// among the failures; otherwise it is reported CAUGHT BY THE WRONG ASSERTION and the run fails.
+// What each control must be caught BY — one ARRAY per control, and every one of the 32 is pinned.
+// A control can trip more than one assertion at once (deleting a bank item moves the size line as well as
+// the per-lesson line), so "some failure appeared" is not proof that the assertion the control is FOR still
+// checks anything: a control whose guard had been deleted would still report caught because a DIFFERENT
+// assertion tripped. The run only passes if every message listed here is among the failures; a control with
+// no entry here fails outright (runControl), so a later edit cannot add a control and leave it unpinned.
 export const RED_EXPECT = {
-  "exempt-lesson-has-kc": `is KC-exempt, so it holds no knowledge-check item`,
-  "practice-lost-for-new-lesson": "eb-l8-craft: still has at least one practice question",
+  "drop-lesson-set": ['eb-l1-1: has its own lessonSets["english-b"] entry'],
+  "drop-new-lesson-set": ['eb-l7-6: has its own lessonSets["english-b"] entry'],
+  "stray-set": ["eb-ghost-lesson: is a real lesson id in modules.json (no stray set)"],
+  "bad-kind": ['lessonSets["english-b"].eb-l2-1: kind must be match, sort or order (got quiz)'],
+  "too-few-pairs": ["eb-l2-1: 4-7 pairs (has 3)"],
+  "too-many-pairs": ["eb-l2-1: 4-7 pairs (has 8)"],
+  "dup-target": ["eb-l2-1: targets are unique (unambiguous drops)"],
+  "unused-category": ["eb-l1-2: every category is used"],
+  "too-many-items": ["eb-l1-2: 4-8 items (has 9)"],
+  "order-gap": ["eb-l4-1: order values are 1..n with no gaps or repeats"],
+  "missing-subtitle": ["eb-l3-2: has a subtitle"],
+  "bad-experiment-type": ['eb-l1-1: experiment type "text-sort" is one of the 8 English B types'],
+  // §3's OBJECT assertion, not the type assertion it drags along with it.
+  "bare-string-experiment": ["eb-l2-1: experiment is an OBJECT"],
+  "estimated-modules": ["metadata.estimatedModules matches the module count (6 vs 8)"],
+  "module-id-gap": ["module ids are eb-mod-1..8 in order"],
+  // §5's "each module holds at least one lesson", not the stray-set / bank failures emptying it also causes.
+  "empty-module": ["eb-mod-1: holds at least one lesson"],
+  "duplicate-lesson-id": ["no duplicate lesson id"],
+  "lesson-reordered": ["banked ids keep their tree order"],
+  "frozen-kind-changed": ["eb-l1-1: set kind is unchanged"],
+  "routing-branch-gone": ["ExperimentSandbox has an english-b branch"],
+  "routing-after-fallback": ["the english-b branch is reached before the generic lessonSets[subjectId] fallback"],
+  "practice-size": ["practice bank is exactly 100 (has 99)"],
+  "kc-size": ["knowledge check is exactly 25 (has 24)"],
+  "practice-topic-ghost": ["every practice topic is a real lesson id"],
+  // Aimed at the per-lesson practice loop; dropping the bank to 99 is the side-effect, not the target.
+  "practice-lost-for-lesson": ["eb-l5-3: still has at least one practice question"],
+  // Aimed at the per-lesson KC loop. This one is built to trip ONLY that loop — kc.length stays 25 and
+  // every topic stays a real lesson id — which is why it was the most important control to pin.
+  "kc-lost-for-lesson": ["eb-l7-4: still has at least one knowledge-check item"],
+  "retired-id-reused": ["p6: retired id is no longer in use"],
+  "p35-retag-lost": ["the comparative-essay item was retagged onto eb-l7-3"],
+  "exempt-lesson-has-kc": ["is KC-exempt, so it holds no knowledge-check item"],
+  "practice-lost-for-new-lesson": ["eb-l8-craft: still has at least one practice question"],
+  "mirror-drift": ["content/english-b/modules.json and its public mirror are byte-identical"],
+  "mirror-file-missing": ["content/english-b/sba.json and its public mirror are byte-identical"],
 };
 
 // ---------------------------------------------------------------------------------------------
@@ -350,35 +392,27 @@ function runControl(name) {
   const { failures } = runChecks(st);
   const real = failures.filter((f) => !f.startsWith("\u0000"));
   if (!real.length) return { ok: false, real, why: "WAS NOT CAUGHT — the check is blind to it" };
-  const expect = RED_EXPECT[name];
-  if (expect && !real.some((f) => f.includes(expect)))
-    return { ok: false, real, why: `CAUGHT BY THE WRONG ASSERTION — no failure containing "${expect}"` };
-  const aimed = expect ? real.filter((f) => f.includes(expect)) : real;
-  return { ok: true, real: aimed.length ? aimed : real };
+  const expect = RED_EXPECT[name] || [];
+  if (!expect.length)
+    return { ok: false, real, why: "NO PINNED EXPECTATION — this control is not aimed at any assertion" };
+  const missing = expect.filter((e) => !real.some((f) => f.includes(e)));
+  if (missing.length)
+    return { ok: false, real, why: `CAUGHT BY THE WRONG ASSERTION — no failure containing "${missing[0]}"` };
+  return { ok: true, real: real.filter((f) => expect.some((e) => f.includes(e))) };
 }
 
 // ---------------------------------------------------------------------------------------------
 const argv = process.argv.slice(2);
-if (argv.includes("--red-control")) {
-  const name = argv[argv.indexOf("--red-control") + 1];
-  if (!RED_CONTROLS[name]) { console.log(`unknown red control: ${name}`); process.exit(2); }
+const only = argv.includes("--red-control") ? argv[argv.indexOf("--red-control") + 1] : null;
+
+if (only) {
+  if (!RED_CONTROLS[only]) { console.log(`unknown red control: ${only}`); process.exit(2); }
   let r;
-  try { r = runControl(name); } catch (e) { console.log(`RED CONTROL "${name}" BROKE — ${e.message}`); process.exit(1); }
-  if (!r.ok) { console.log(`RED CONTROL "${name}" ${r.why}`); r.real.slice(0, 3).forEach((f) => console.log("   " + f)); process.exit(1); }
-  console.log(`red control "${name}": caught with ${r.real.length} failure(s) — as expected`);
+  try { r = runControl(only); } catch (e) { console.log(`RED CONTROL "${only}" BROKE — ${e.message}`); process.exit(1); }
+  if (!r.ok) { console.log(`RED CONTROL "${only}" ${r.why}`); r.real.slice(0, 3).forEach((f) => console.log("   " + f)); process.exit(1); }
+  console.log(`red control "${only}": caught — as expected`);
   r.real.slice(0, 3).forEach((f) => console.log("   " + f));
   process.exit(0);
-}
-if (argv.includes("--red-controls-all")) {
-  let bad = 0;
-  for (const name of Object.keys(RED_CONTROLS)) {
-    let r;
-    try { r = runControl(name); } catch (e) { bad++; console.log(`BROKEN: ${name} — ${e.message}`); continue; }
-    if (!r.ok) { bad++; console.log(`${r.real.length ? "WRONG ASSERTION" : "NOT CAUGHT"}: ${name} — ${r.why}`); }
-    else console.log(`caught (${r.real.length}): ${name} — ${r.real[0]}`);
-  }
-  console.log(`\n${Object.keys(RED_CONTROLS).length} red controls, ${bad} not caught`);
-  process.exit(bad ? 1 : 0);
 }
 
 const st = loadState();
@@ -390,4 +424,17 @@ console.log(`\ncheck-english-b-labs: ${pass} checks passed, ${real.length} faile
 console.log(`derived: ${lessons.length} lessons, ${Object.keys(st.sets).length} lab sets, ${st.modules.length} modules ` +
   `(estimatedModules ${st.meta.estimatedModules}), practice ${st.practice.length}, knowledge check ${st.kc.length}, ` +
   `${st.files.length} mirrored files`);
-process.exit(real.length ? 1 : 0);
+
+if (argv.includes("--no-red-control")) process.exit(real.length ? 1 : 0);
+
+// Red controls run by DEFAULT — the suite passes no arguments, so this is the path it takes.
+let bad = 0;
+for (const name of Object.keys(RED_CONTROLS)) {
+  let r;
+  try { r = runControl(name); } catch (e) { bad++; console.log(`BROKEN: ${name} — ${e.message}`); continue; }
+  if (!r.ok) { bad++; console.log(`${r.real.length ? "WRONG ASSERTION" : "NOT CAUGHT"}: ${name} — ${r.why}`); }
+  else console.log(`caught (${r.real.length}): ${name} — ${r.real[0]}`);
+}
+console.log(`${Object.keys(RED_CONTROLS).length} red controls, ${bad} not caught`);
+// ONE exit code for both halves: a failing real check and an uncaught control are both red.
+process.exit(real.length || bad ? 1 : 0);
