@@ -33,14 +33,16 @@
 //      question banks frozen (practice 100 / knowledge check 25) while the coverage build runs.
 //
 // Usage
-//   node tools/check-information-technology-coverage.mjs                 # the real check
+//   node tools/check-information-technology-coverage.mjs                  # the real check AND all 56 red controls
+//   node tools/check-information-technology-coverage.mjs --no-red-control # the real check only (the only opt-out)
 //   node tools/check-information-technology-coverage.mjs --self-test      # wiring self-test only
 //   node tools/check-information-technology-coverage.mjs --red-control <name>
-//   node tools/check-information-technology-coverage.mjs --red-controls-all
 //
-// A red control mutates the loaded state in memory and MUST make the check fail. In red-control mode
-// the exit code is 0 when the mutation was caught and 1 when it slipped through — the control is part
-// of the result.
+// A red control mutates the loaded state in memory and MUST make the check fail — AND must fail with the
+// assertion it exists for: RED_EXPECT pins each control to the failure text it is aimed at, because
+// `real[0]` is only what got printed first, not what the control tests. A control that is not caught, has
+// no pin, or is caught only by a different assertion is a red run. The suite (`tools/check-all.sh`) passes
+// no arguments, so the default path is the one that enforces all of this.
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -277,6 +279,27 @@ export function parseExceptionReasons(md) {
 
 export const sectionOf = (n) => { let acc = 0; for (let i = 0; i < SECTION_COUNTS.length; i++) { acc += SECTION_COUNTS[i]; if (n <= acc) return i + 1; } return -1; };
 export const sectionSizes = (rows) => SECTION_COUNTS.map((_, i) => rows.filter((r) => r.s === i + 1).length);
+
+// Red controls resolve their mutation target BY ID, never by array index: nine `fund-` lessons are appended
+// to it-mod-1, so one inserted lesson silently re-aims every `modules[0].lessons[n]` control at a different
+// lesson. A target that cannot be found throws, which the runner reports as BROKEN rather than as a pass.
+const lessonById = (st, id) => {
+  for (const m of st.modules) for (const l of m.lessons || []) if (l.id === id) return l;
+  throw new Error(`no lesson ${id} in modules.json`);
+};
+const moduleOfLesson = (st, id) => {
+  const m = st.modules.find((x) => (x.lessons || []).some((l) => l.id === id));
+  if (!m) throw new Error(`no module holds lesson ${id}`);
+  return m;
+};
+// A control that mutates a `match` set's pairs must say so: if the set's kind ever changes, the control
+// throws and reports BROKEN instead of mutating a field that no longer exists and passing quietly.
+const setOf = (st, id, kind) => {
+  const s = st.sets[id];
+  if (!s) throw new Error(`no lessonSets entry for ${id}`);
+  if (s.kind !== kind) throw new Error(`${id} is a "${s.kind}" set, but this control needs a "${kind}" one`);
+  return s;
+};
 
 // ---------------------------------------------------------------------------------------------
 // state: everything the checks read, loaded once and mutated by the red controls
@@ -647,9 +670,12 @@ export function runChecks(st) {
 }
 
 // ---------------------------------------------------------------------------------------------
-// red controls: each mutates the loaded state and MUST produce at least one failure
+// red controls: each mutates the loaded state and MUST produce the failure RED_EXPECT pins it to.
 export const RED_CONTROLS = {
-  "drop-lesson": (st) => { st.modules[0].lessons.pop(); },
+  "drop-lesson": (st) => {
+    const m = moduleOfLesson(st, "fund-file-organisation");
+    m.lessons = m.lessons.filter((l) => l.id !== "fund-file-organisation");
+  },
   "rename-chapter": (st) => { st.doc = st.doc.replace("| 1 | 1 | Information Technology Concept |", "| 1 | 1 | IT Basics |"); },
   "drop-row": (st) => { st.doc = st.doc.replace(/\| 3 \| 18 \|[^\n]*\n/, ""); },
   "swap-rows": (st) => {
@@ -664,20 +690,23 @@ export const RED_CONTROLS = {
   "phrase-not-in-copy": (st) => { st.doc = st.doc.replace("| fund-user-interface-types | user interface types differ in how much the user has to remember and how much the machine shows |", "| fund-user-interface-types | user interface types differ in how much the user has to remember and how much the machine shows, honestly |"); },
   "pending-but-taught": (st) => { st.doc = st.doc.replace("| 1 | 1 | Information Technology Concept | NEW | taught |", "| 1 | 1 | Information Technology Concept | NEW | pending |"); },
   "pending-extend-taught": (st) => { st.doc = st.doc.replace("| 6 | 45 | Database Concepts | EXTEND | taught |", "| 6 | 45 | Database Concepts | EXTEND | pending |"); },
-  "land-a-ghost-id": (st) => { st.modules[0].lessons.push({ ...st.modules[0].lessons[2], id: "impl-ghost-lesson" }); },
+  "land-a-ghost-id": (st) => {
+    const m = moduleOfLesson(st, "fund-computer-system-types");
+    m.lessons.push({ ...lessonById(st, "fund-computer-system-types"), id: "impl-ghost-lesson" });
+  },
   "pend-a-landed-id": (st) => { st.pendingIds.push("impl-program-documentation"); },
   "drop-lesson-set": (st) => { delete st.sets["fund-computer-system-types"]; },
   "set-for-ghost": (st) => { st.sets["fund-ghost-lesson"] = JSON.parse(JSON.stringify(st.sets["fund-file-organisation"])); },
-  "dup-target": (st) => { const s = st.sets["fund-information-technology-concept"]; s.pairs[1].target = s.pairs[0].target; },
-  "bad-category": (st) => { st.sets["fund-computer-system-types"].items[0].category = "nope"; },
-  "order-gap": (st) => { st.sets["fund-basic-hardware-troubleshooting"].items[2].order = 9; },
-  "unrecognised-type": (st) => { st.modules[0].lessons[3].experiment.type = "not-a-lab-type"; },
-  "revert-lab-type": (st) => { st.modules.flatMap((m) => m.lessons).find((l) => l.id === "it-l4-1").experiment.type = "code-playground"; },
-  "thin-content": (st) => { st.modules[0].lessons[4].content = "Too short."; },
-  "object-concept": (st) => { st.modules[0].lessons[5].concepts[0] = { term: "x", definition: "y" }; },
+  "dup-target": (st) => { const s = setOf(st, "fund-information-technology-concept", "match"); s.pairs[1].target = s.pairs[0].target; },
+  "bad-category": (st) => { setOf(st, "fund-computer-system-types", "sort").items[0].category = "nope"; },
+  "order-gap": (st) => { setOf(st, "fund-basic-hardware-troubleshooting", "order").items[2].order = 9; },
+  "unrecognised-type": (st) => { lessonById(st, "fund-computer-system-types").experiment.type = "not-a-lab-type"; },
+  "revert-lab-type": (st) => { lessonById(st, "it-l4-1").experiment.type = "code-playground"; },
+  "thin-content": (st) => { lessonById(st, "fund-cloud-and-local-storage").content = "Too short."; },
+  "object-concept": (st) => { lessonById(st, "fund-user-interface-types").concepts[0] = { term: "x", definition: "y" }; },
   "mirror-drift": (st) => { st.mirrorText = st.mirrorText + " "; },
   "second-it-key": (st) => { st.setsSource = st.setsSource.replace('  "information-technology": {', '  "information-technology": {\n  },\n  "information-technology": {'); },
-  "rename-frozen-id": (st) => { st.modules[0].lessons[0].id = "it-l1-1-renamed"; },
+  "rename-frozen-id": (st) => { lessonById(st, "it-l1-1").id = "it-l1-1-renamed"; },
   "estimated-modules": (st) => { st.meta.estimatedModules = 6; },
   "drop-it-mod-7": (st) => { st.modules = st.modules.filter((m) => m.id !== "it-mod-7"); },
   "it-mod-7-retitled": (st) => { st.modules.find((m) => m.id === "it-mod-7").title = "Impact"; },
@@ -688,41 +717,48 @@ export const RED_CONTROLS = {
     st.modules.find((m) => m.id === "it-mod-7").lessons.push(moved);
   },
   "slice-c-host-rewritten": (st) => {
-    const l = st.modules.find((m) => m.id === "it-mod-4").lessons.find((x) => x.id === "it-l4-1");
+    const l = lessonById(st, "it-l4-1");
     l.content = "A network connects computers. " + l.content.slice(400);
   },
+  // The JOIN SEAM, not the evidence phrase: dropping one comma leaves both the chapter name and the
+  // evidence phrase intact, so only §7c's "the old copy is still one unbroken prefix" can catch this.
+  // Before this fix the control edited the evidence phrase and was caught by §3 instead — it looked aimed
+  // at the join and tested something else.
   "slice-c-host-join-broken": (st) => {
-    const l = st.modules.find((m) => m.id === "it-mod-4").lessons.find((x) => x.id === "it-l4-2");
-    l.content = l.content.replace("Countermeasures and Security Practices are the controls",
-      "Countermeasures and Security Practices really are the controls");
+    const l = lessonById(st, "it-l4-2");
+    const join = SLICE_C_HOST_JOIN["it-l4-2"];
+    l.content = l.content.replace(join, join.replace("safe, legal, and ethical.", "safe, legal and ethical."));
   },
   "slice-c-host-concepts-reordered": (st) => {
-    const l = st.modules.find((m) => m.id === "it-mod-4").lessons.find((x) => x.id === "it-l4-2");
+    const l = lessonById(st, "it-l4-2");
     l.concepts = [l.concepts[1], l.concepts[0], ...l.concepts.slice(2)];
   },
   "slice-c-host-objectives-reordered": (st) => {
-    const l = st.modules.find((m) => m.id === "it-mod-4").lessons.find((x) => x.id === "it-l4-1");
+    const l = lessonById(st, "it-l4-1");
     l.objectives = [l.objectives[1], l.objectives[0], ...l.objectives.slice(2)];
   },
   "drop-slice-c-set": (st) => { delete st.sets["net-web-technologies"]; },
-  "slice-c-invented-vocab": (st) => { st.sets["imp-computer-related-professions"].pairs[0].label = "Quantum sommelier"; },
+  "slice-c-invented-vocab": (st) => { setOf(st, "imp-computer-related-professions", "match").pairs[0].label = "Quantum sommelier"; },
   "slice-c-set-on-wrong-lesson": (st) => {
     st.sets["imp-ict-and-employment"] = JSON.parse(JSON.stringify(st.sets["net-web-technologies"]));
   },
   "bank-growth": (st) => { st.practice.push({ ...st.practice[0], id: "extra-q" }); },
-  "drop-protected": (st) => { st.modules[4].lessons = st.modules[4].lessons.filter((l) => l.id !== "it-l5-2"); },
+  "drop-protected": (st) => {
+    const m = moduleOfLesson(st, "it-l5-2");
+    m.lessons = m.lessons.filter((l) => l.id !== "it-l5-2");
+  },
   "weak-exception-reason": (st) => { st.doc = st.doc.replace("| #12 | `it-l3-1` (`it-mod-3`) | `it-l3-1` already teaches field validation, so chapter 12 grows there instead of in a fundamentals lesson. |", "| #12 | `it-l3-1` (`it-mod-3`) | host. |"); },
-  "invented-vocab": (st) => { st.sets["fund-file-organisation"].pairs[0].label = "Zettabyte"; },
+  "invented-vocab": (st) => { setOf(st, "fund-file-organisation", "match").pairs[0].label = "Zettabyte"; },
   "slice-b-host-rewritten": (st) => {
-    st.modules.find((m) => m.id === "it-mod-6").lessons[0].content = "Word processing is more than typing text.";
+    lessonById(st, "it-l6-1").content = "Word processing is more than typing text.";
   },
   "slice-b-host-concepts-reordered": (st) => {
-    const l = st.modules.find((m) => m.id === "it-mod-6").lessons[1];
+    const l = lessonById(st, "it-l6-2");
     l.concepts = [l.concepts[1], l.concepts[0], ...l.concepts.slice(2)];
   },
   "drop-slice-b-set": (st) => { delete st.sets["sheet-worksheet-management"]; },
   "slice-b-gap-reopened": (st) => {
-    const l = st.modules.find((m) => m.id === "it-mod-6").lessons[1];
+    const l = lessonById(st, "it-l6-2");
     l.content = l.content.replace("MIN, MAX and COUNT", "a few functions");
   },
   // ---- Slice D -------------------------------------------------------------------------------
@@ -730,24 +766,24 @@ export const RED_CONTROLS = {
   // chart" folds to `problem components and the ipo chart`, which does not contain the required
   // `problem components and ipo chart` — the defect the checkpoint shipped and this slice fixed.
   "chapter-51-wording-drift": (st) => {
-    const l = st.modules.flatMap((m) => m.lessons).find((x) => x.id === "it-l2-1");
+    const l = lessonById(st, "it-l2-1");
     l.content = l.content.replace("Problem Components and IPO Chart name the inputs",
       "Problem Components and the IPO chart name the inputs");
   },
   "slice-d-host-rewritten": (st) => {
-    const l = st.modules.flatMap((m) => m.lessons).find((x) => x.id === "it-l2-1");
+    const l = lessonById(st, "it-l2-1");
     l.content = "Problem solving is a useful skill. " + l.content.slice(120);
   },
   "slice-d-host-join-broken": (st) => {
-    const l = st.modules.flatMap((m) => m.lessons).find((x) => x.id === "it-l3-1");
+    const l = lessonById(st, "it-l3-1");
     l.content = l.content.replace("scenario.\n\nDatabase Concepts begin", "scenario.\n\nThe database concepts begin");
   },
   "slice-d-host-concepts-reordered": (st) => {
-    const l = st.modules.flatMap((m) => m.lessons).find((x) => x.id === "it-l2-2");
+    const l = lessonById(st, "it-l2-2");
     l.concepts = [l.concepts[1], l.concepts[0], ...l.concepts.slice(2)];
   },
   "slice-d-gap-reopened": (st) => {
-    const l = st.modules.flatMap((m) => m.lessons).find((x) => x.id === "it-l2-2");
+    const l = lessonById(st, "it-l2-2");
     // remove EVERY mention from the prose: a single surviving "modulus" would keep the pin green
     l.content = l.content.replace(
       "multiply, divide and modulus, and modulus gives the remainder after a division, so 17 modulus 5 is 2.",
@@ -762,6 +798,122 @@ export const RED_CONTROLS = {
     const moved = m.lessons.splice(2);
     st.modules.push({ id: "it-mod-8", title: "Program Implementation", lessons: moved });
   },
+  // ---- the rules the audit found with NO control at all --------------------------------------
+  // §4: "every pending id is one of the 23 NEW ids". A frozen id pushed into the pending list is absent
+  // from the tree by construction, so every other §4 assertion still balances and only this one can fire.
+  "non-new-pending-id": (st) => { st.pendingIds.push("it-l1-1"); },
+  // §3: "pending NEW id is listed in PENDING_IDS" (354). Marking a row pending AND deleting its lesson
+  // satisfies the OTHER half of the pair (353, "marked pending but its lesson has landed"), so the only
+  // assertion left able to catch this is 354 itself.
+  "pending-id-not-listed": (st) => {
+    st.doc = st.doc.replace("| 1 | 1 | Information Technology Concept | NEW | taught |",
+      "| 1 | 1 | Information Technology Concept | NEW | pending |");
+    const m = moduleOfLesson(st, "fund-information-technology-concept");
+    m.lessons = m.lessons.filter((l) => l.id !== "fund-information-technology-concept");
+  },
+  // §2: chapters are keyed by (section, number) — nothing in the file mutated these three facts.
+  "dup-section-number": (st) => {
+    st.doc = st.doc.replace("| 2 | 15 | Network Components and Functions |", "| 2 | 14 | Network Components and Functions |");
+  },
+  // §2: #52 and #59 are two lessons that share a chapter name — give #59 #52's id and a different name
+  // and both halves of the pair break.
+  "rows-52-59-merged": (st) => {
+    st.doc = st.doc.replace(
+      "| 8 | 59 | Variables, Constants, and Data Types | NEW | taught | impl-variables-constants-and-data-types |",
+      "| 8 | 59 | Variables, Constants, and Data Types (syntactic) | NEW | taught | it-l2-2 |");
+  },
+  // §2: #46 carries "Data Types" a third time and is still its own chapter — merge it into #52's name.
+  "row46-data-types-merged": (st) => {
+    st.doc = st.doc.replace("| 6 | 46 | Database Terminology and Data Types |", "| 6 | 46 | Variables, Constants, and Data Types |");
+  },
+};
+
+// ---------------------------------------------------------------------------------------------
+// What each control must be caught BY. `real[0]` is only the first failure printed, not the assertion a
+// control exists for: without a pin a control is "caught" by any failure at all, including one from a
+// different rule that the same mutation happens to trip. Every pin below is copied from a real run of
+// that control, not from a report — `includes()` is a substring test, so it must match the shipped text.
+// Counts are left out of a pin where the count would drift with content (the assertion wording is the
+// stable part).
+export const RED_EXPECT = {
+  // §3's "marked taught but its lesson does not exist" — the dropped lesson's own chapter row.
+  "drop-lesson": ["#13 is marked taught but fund-file-organisation does not exist"],
+  // §1's chapter-name assertion, not §3's by-name test it also trips.
+  "rename-chapter": ['chapter #1 is the owner\'s name "Information Technology Concept"'],
+  // §1's row count, not the 45 row-numbering failures it also causes.
+  "drop-row": ["the conformance table has 61 rows (found 60)"],
+  // §1's `r.n === i + 1`: a swap leaves the count at 61 and every name intact.
+  "swap-rows": ["row 14 is chapter 14 (found #15)"],
+  // §1's `sectionOf`, NOT the per-section counts (13/4/6/11/10/…) that are the side-effect.
+  "wrong-section": ["chapter #34 sits in section 4 (doc says 5)"],
+  "drop-phrase": ["#13 records an evidence phrase"],
+  "weak-phrase": ["#4 (NEW) evidence phrase names the chapter"],
+  "phrase-not-in-copy": ["appears in fund-user-interface-types's own copy"],
+  "pending-but-taught": ["#1 is marked pending but its lesson fund-information-technology-concept has landed"],
+  "pending-extend-taught": ["#45 is marked pending but it-l3-1 already teaches"],
+  // §4's stray-id assertion — the lesson-count and set-count failures are the side-effect.
+  "land-a-ghost-id": ["no lesson sits outside the expected union (stray: impl-ghost-lesson)"],
+  "pend-a-landed-id": ["the ids that are absent are exactly PENDING_IDS (absent: 0, pending: 1)"],
+  // §8's missing per-lesson set (582), not the "one set per lesson" count above it.
+  "drop-lesson-set": ["fund-computer-system-types has a lessonSets entry"],
+  // §8's ghost-key assertion (578), not the set count.
+  "set-for-ghost": ["lessonSets key fund-ghost-lesson is a real lesson id"],
+  "dup-target": ["every match target is distinct"],
+  "bad-category": ["every item has a label and a declared category"],
+  "order-gap": ["order values are 1..n with no gap"],
+  "unrecognised-type": ["is a key of experimentTypes"],
+  // §9's honest lab type (632), not the code-playground description clause it also trips.
+  "revert-lab-type": ["it-l4-1 declares network-topology"],
+  // §7's content-length floor (453).
+  "thin-content": ["fund-cloud-and-local-storage has real content"],
+  // §7's concepts-all-strings (455).
+  "object-concept": ["fund-user-interface-types has >=5 concepts, all strings"],
+  "mirror-drift": ["is byte-identical to its public mirror"],
+  "second-it-key": ["the lessonSets source declares the IT block exactly once"],
+  // §4's frozen relative order (382) — 12 minus the one renamed id.
+  "rename-frozen-id": ["the 12 frozen ids keep their original relative order (got 11)"],
+  "estimated-modules": ["metadata.estimatedModules tracks the module count (6 vs 7)"],
+  // §6's "exactly one it-mod-7" (434), not the 15 failures it drags with it.
+  "drop-it-mod-7": ["exactly one it-mod-7 module exists (found 0)"],
+  "it-mod-7-retitled": ["it-mod-7 is titled"],
+  // §6's it-mod-7 lesson list (437).
+  "it-mod-7-short": ["it-mod-7 holds exactly the three imp- lessons, in doc order"],
+  // §6's it-mod-4 host assertion (441).
+  "net-lesson-in-new-module": ["net-web-technologies is appended to the EXISTING it-mod-4"],
+  // §7's prefix assertion (472).
+  "slice-c-host-rewritten": ["it-l4-1 still opens with its original teaching"],
+  // §7c's join seam (489) — the one assertion this control can reach now that it edits the seam.
+  "slice-c-host-join-broken": ["it-l4-2 keeps its original closing sentence"],
+  "slice-c-host-concepts-reordered": ["it-l4-2 keeps its original concepts, in order, at the front"],
+  "slice-c-host-objectives-reordered": ["it-l4-1 keeps its original objectives, in order, at the front"],
+  "drop-slice-c-set": ["net-web-technologies has a lessonSets entry"],
+  // §8b's vocabulary trace for one lesson. Count-free: "all N lab strings … (M traced)" would drift
+  // with the set's size, and the lesson id already names the assertion.
+  "slice-c-invented-vocab": ["imp-computer-related-professions: all"],
+  "slice-c-set-on-wrong-lesson": ["imp-ict-and-employment: all"],
+  "bank-growth": ["practice bank is still exactly 100"],
+  "drop-protected": ["protected lesson it-l5-2 is present"],
+  "weak-exception-reason": ["the exception for #12 carries a written reason of at least 20 characters"],
+  "invented-vocab": ["fund-file-organisation: all"],
+  // §7's prefix assertion for a Slice B host (472).
+  "slice-b-host-rewritten": ["it-l6-1 still opens with its original teaching"],
+  "slice-b-host-concepts-reordered": ["it-l6-2 keeps its original four concepts, in order, at the front"],
+  "drop-slice-b-set": ["sheet-worksheet-management has a lessonSets entry"],
+  "slice-b-gap-reopened": ["it-l6-2 names MIN in its own copy"],
+  "chapter-51-wording-drift": ['#51 "Problem Components and IPO Chart" is taught by name in it-l2-1'],
+  "slice-d-host-rewritten": ["it-l2-1 still opens with its original teaching"],
+  "slice-d-host-join-broken": ["it-l3-1 keeps its original closing sentence"],
+  "slice-d-host-concepts-reordered": ["it-l2-2 keeps its original 4 concepts"],
+  "slice-d-gap-reopened": ["it-l2-2 teaches MODULUS in its prose"],
+  "it-mod-2-reordered": ["it-mod-2 holds it-l2-1, it-l2-2 then the 3 impl- lessons"],
+  // §7d's "there is no it-mod-8" (525), not the §6 placement failures that follow it.
+  "it-mod-8-created": ["Slice D creates no module — there is no it-mod-8"],
+  // ---- the five controls added for the rules that had none ------------------------------------
+  "non-new-pending-id": ["every pending id is one of the 23 NEW ids"],
+  "pending-id-not-listed": ["is listed in PENDING_IDS"],
+  "dup-section-number": ["every (section, number) pair is unique"],
+  "rows-52-59-merged": ["#52 and #59 carry the SAME chapter name", "#52 and #59 are two different lessons, not one"],
+  "row46-data-types-merged": ['#46 carries "Data Types" a third time and is still its own chapter'],
 };
 
 // ---------------------------------------------------------------------------------------------
@@ -823,7 +975,11 @@ function selfTest() {
   ok(DISP_TOTALS.NEW + DISP_TOTALS.EXTEND + DISP_TOTALS.REUSE === CHAPTERS.length,
     "the disposition totals add up to the 61 chapters");
   ok(PENDING_IDS.every((id) => NEW_IDS.includes(id)), "PENDING_IDS is a subset of NEW_IDS");
-  ok(Object.keys(RED_CONTROLS).length >= 20, `at least 20 red controls are wired (${Object.keys(RED_CONTROLS).length})`);
+  ok(Object.keys(RED_CONTROLS).length === 56, `exactly 56 red controls are wired (${Object.keys(RED_CONTROLS).length})`);
+  ok(JSON.stringify(Object.keys(RED_CONTROLS).sort()) === JSON.stringify(Object.keys(RED_EXPECT).sort()),
+    `RED_CONTROLS and RED_EXPECT name the same set (unpinned: ${Object.keys(RED_CONTROLS).filter((n) => !RED_EXPECT[n]).join(", ") || "none"}; stale pins: ${Object.keys(RED_EXPECT).filter((n) => !RED_CONTROLS[n]).join(", ") || "none"})`);
+  ok(Object.values(RED_EXPECT).every((v) => Array.isArray(v) && v.length > 0),
+    "every control carries at least one pinned expectation");
   ok(corpusOf({ title: "T", content: "C", objectives: ["O"], concepts: ["K"] }) === "t c o k",
     "corpusOf folds title, content, objectives and concepts together");
   ok(proseOf({ title: "T", content: "C", objectives: ["O"], concepts: ["K"] }) === "c o",
@@ -832,42 +988,67 @@ function selfTest() {
 }
 
 // ---------------------------------------------------------------------------------------------
+/** Run one control against a fresh load. ok = it was caught, AND caught by the assertion it names. */
+function runControl(name) {
+  const st = loadState();
+  RED_CONTROLS[name](st);
+  const { failures } = runChecks(st);
+  const real = failures.filter((f) => !f.startsWith("\u0000"));
+  if (!real.length) return { ok: false, real, why: "WAS NOT CAUGHT — the check is blind to it" };
+  const expect = RED_EXPECT[name] || [];
+  if (!expect.length)
+    return { ok: false, real, why: "NO PINNED EXPECTATION — this control is not aimed at any assertion" };
+  const missing = expect.filter((e) => !real.some((f) => f.includes(e)));
+  if (missing.length)
+    return { ok: false, real, why: `CAUGHT BY THE WRONG ASSERTION — no failure containing "${missing[0]}"` };
+  return { ok: true, real: real.filter((f) => expect.some((e) => f.includes(e))) };
+}
+
+// ---------------------------------------------------------------------------------------------
 const argv = process.argv.slice(2);
+const only = argv.includes("--red-control") ? argv[argv.indexOf("--red-control") + 1] : null;
+
+// Hoisted ABOVE the real check: `--red-control <name>` runs one control and nothing else.
+if (only) {
+  if (!RED_CONTROLS[only]) { console.log(`unknown red control: ${only}`); process.exit(2); }
+  let r;
+  try { r = runControl(only); } catch (e) { console.log(`RED CONTROL "${only}" BROKE — ${e.message}`); process.exit(1); }
+  if (!r.ok) { console.log(`RED CONTROL "${only}" ${r.why}`); r.real.slice(0, 3).forEach((f) => console.log("   " + f)); process.exit(1); }
+  console.log(`red control "${only}": caught — as expected`);
+  r.real.slice(0, 3).forEach((f) => console.log("   " + f));
+  process.exit(0);
+}
 if (argv.includes("--self-test")) {
   const { pass, fail } = selfTest();
   fail.forEach((f) => console.log("FAIL: " + f));
   console.log(`self-test: ${pass} passed, ${fail.length} failed`);
   process.exit(fail.length ? 1 : 0);
 }
-if (argv.includes("--red-control")) {
-  const name = argv[argv.indexOf("--red-control") + 1];
-  if (!RED_CONTROLS[name]) { console.log(`unknown red control: ${name}`); process.exit(2); }
-  const st = loadState();
-  RED_CONTROLS[name](st);
-  const { failures } = runChecks(st);
-  const real = failures.filter((f) => !f.startsWith("\u0000"));
-  if (!real.length) { console.log(`RED CONTROL "${name}" WAS NOT CAUGHT — the check is blind to it`); process.exit(1); }
-  console.log(`red control "${name}": caught with ${real.length} failure(s) — as expected`);
-  real.slice(0, 3).forEach((f) => console.log("   " + f));
-  process.exit(0);
-}
-if (argv.includes("--red-controls-all")) {
-  let bad = 0;
-  for (const name of Object.keys(RED_CONTROLS)) {
-    const st = loadState();
-    RED_CONTROLS[name](st);
-    const { failures } = runChecks(st);
-    const real = failures.filter((f) => !f.startsWith("\u0000"));
-    if (!real.length) { bad++; console.log(`NOT CAUGHT: ${name}`); }
-    else console.log(`caught (${real.length}): ${name} — ${real[0]}`);
-  }
-  console.log(`\n${Object.keys(RED_CONTROLS).length} red controls, ${bad} not caught`);
-  process.exit(bad ? 1 : 0);
-}
 
 const st = loadState();
 const { pass, failures } = runChecks(st);
 for (const f of failures) console.log(f.startsWith("\u0000") ? `\n${f.slice(1)}` : "FAIL: " + f);
-const real = failures.filter((f) => !f.startsWith("\u0000"));
-console.log(`\n${pass} checks passed, ${real.length} failed · ${PENDING_IDS.length} new ids still pending (${PENDING_IDS.join(", ")})`);
-process.exit(real.length ? 1 : 0);
+const realFailures = failures.filter((f) => !f.startsWith("\u0000")).length;
+console.log(`\ncheck-information-technology-coverage: ${pass} checks passed, ${realFailures} failed · ${PENDING_IDS.length} new ids still pending (${PENDING_IDS.join(", ")})`);
+
+// --no-red-control is the ONLY opt-out, and it still honours the real check's exit code.
+if (argv.includes("--no-red-control")) process.exit(realFailures ? 1 : 0);
+
+// Red controls run by DEFAULT — the suite (tools/check-all.sh) passes no arguments, so this is the path it
+// takes. The two set assertions live here as well as in the self-test: --self-test never runs in the suite,
+// so a control added without a pin, or a pin left behind by a deleted control, must red THIS run.
+let bad = 0;
+const controlNames = Object.keys(RED_CONTROLS).sort();
+for (const name of controlNames)
+  if (!RED_EXPECT[name]?.length) { bad++; console.log(`UNPINNED CONTROL: ${name} — it has no RED_EXPECT entry`); }
+for (const name of Object.keys(RED_EXPECT).sort())
+  if (!RED_CONTROLS[name]) { bad++; console.log(`STALE PIN: ${name} — RED_EXPECT names a control that does not exist`); }
+for (const name of controlNames) {
+  let r;
+  try { r = runControl(name); } catch (e) { bad++; console.log(`BROKEN: ${name} — ${e.message}`); continue; }
+  if (!r.ok) { bad++; console.log(`${r.real.length ? "WRONG ASSERTION" : "NOT CAUGHT"}: ${name} — ${r.why}`); }
+  else console.log(`caught (${r.real.length}): ${name} — ${r.real[0]}`);
+}
+console.log(`${controlNames.length} red controls, ${bad} not caught`);
+// ONE exit code for both halves: a failing real check and an uncaught control are both red.
+process.exit(realFailures || bad ? 1 : 0);
