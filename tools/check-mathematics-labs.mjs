@@ -2,19 +2,21 @@
 // Harness: the Mathematics Play tab — one lab for every lesson, exactly once.
 //
 // Mathematics is a PARTITION, not a one-set-per-lesson subject like Physics.
-// 39 lessons split in two, and every lesson is in exactly one half:
+// 63 lessons split in two, and every lesson is in exactly one half:
 //
-//   * 24 lessons carry their own per-lesson set in lessonSets.mathematics —
-//     all 24 have experiment.type "matching-game" or "classifier-sim", neither
-//     of which is a recognised Mathematics lab type, so without a set they
-//     would fall through to the generic Mathematics flashcard deck;
+//   * 48 lessons carry their own per-lesson set in lessonSets.mathematics — the
+//     24 that predate the corpus rule plus the coverage build's additions. A set
+//     always wins: the per-lesson branch is consulted BEFORE the experiment-type
+//     library (assertion 12c), so these lessons render their own set even where
+//     their experiment.type would also resolve to a tool;
 //   * 15 lessons are TYPE-KEYED — their experiment.type already resolves to a
-//     dedicated tool (DragDropLabel, GraphingCalculator or BalanceScale), and a
-//     per-lesson set would SHADOW that tool. 9 of the 15 are MATH_DRAG_TYPES;
-//     the other 6 are the graphing and balance lessons, which is why the
-//     message says "would shadow its dedicated tool" and not "its type
-//     library" (the Physics wording, tools/check-physics-gap-labs.mjs:54 —
-//     Physics has no graphing lessons, so that wording would be wrong here).
+//     dedicated tool (DragDropLabel, GraphingCalculator, BalanceScale,
+//     AreaBuilder or VolumeFiller), and a per-lesson set would SHADOW that
+//     tool. 9 of the 15 are MATH_DRAG_TYPES; the other 6 are the 3 graphing
+//     lessons and the 3 measurement-tool lessons, which is why the message says
+//     "would shadow its dedicated tool" and not "its type library" (the Physics
+//     wording, tools/check-physics-gap-labs.mjs:54 — Physics has no graphing
+//     lessons, so that wording would be wrong here).
 //
 // It replaces tools/check-math-gap-labs.mjs, which pinned the 24 ids and 15 ids
 // as two hand-written arrays and could not survive the coverage build.
@@ -41,21 +43,24 @@
 // enforceable (2026-11-10): the grandfathered set must be exactly the original
 // 24, derived from the live keys, so a new set id added here FAILS the harness.
 //
-// Because Slice 0 adds no sets, the rule is VACUOUS on the real tree, so
-// labProblems() takes `legacySets` as a PARAMETER defaulting to LEGACY_SETS and
-// red controls R8/R9 move it — that is what forces real legacy sets through the
-// corpus rule today, on the real data, without one content edit. A rule that
-// cannot fail is not a rule.
+// The corpus rule is NOT vacuous on the real tree: 63 lessons − 15 type-keyed =
+// 48 sets, LEGACY_SETS grandfathers 24 of them, so the other 24 shipped sets are
+// held to it on every run. labProblems() still takes `legacySets` as a
+// PARAMETER defaulting to LEGACY_SETS, and the `legacy-set-forced-*` red
+// controls move it — that is what forces a real legacy set through the corpus
+// rule as well, on the real data, without one content edit. A rule that cannot
+// fail is not a rule.
 //
 // Usage:
-//   node tools/check-mathematics-labs.mjs                     # the real tree
-//   node tools/check-mathematics-labs.mjs --selftest           # synthetic fixture only
-//   node tools/check-mathematics-labs.mjs --red-control       # + the 22 red controls
-//   node tools/check-mathematics-labs.mjs --red-controls-all  # alias of --red-control
+//   node tools/check-mathematics-labs.mjs                          # the real tree + all 27 red controls
+//   node tools/check-mathematics-labs.mjs --no-red-control         # the real tree only
+//   node tools/check-mathematics-labs.mjs --selftest               # synthetic fixture only
+//   node tools/check-mathematics-labs.mjs --red-control <name>     # one control, by name
 //
-// Run it with the rest before any PR that touches Mathematics labs, routing or
-// content:
-//   for f in tools/check-*.mjs; do node "$f"; done
+// The red controls run by DEFAULT, because the suite (`npm test` = tools/check-all.sh)
+// passes no arguments — a control behind an opt-in flag is a control the suite never runs.
+// Run it with the rest before any PR that touches Mathematics labs, routing or content:
+//   sh tools/check-all.sh        (or: npm test)
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -82,7 +87,11 @@ const ok = (cond, msg) => { if (cond) pass += 1; else { fail += 1; console.log(`
 const section = (t) => console.log(`\n== ${t}`);
 
 const SELFTEST = process.argv.includes("--selftest");
-const RED_CONTROL = process.argv.includes("--red-control") || process.argv.includes("--red-controls-all");
+// The controls run by DEFAULT (the suite passes no arguments). `--no-red-control` is the only opt-out;
+// `--red-control <name>` runs exactly one of them and nothing else.
+const NO_RED_CONTROL = process.argv.includes("--no-red-control");
+const ARGV = process.argv.slice(2);
+const ONLY_CONTROL = ARGV.includes("--red-control") ? ARGV[ARGV.indexOf("--red-control") + 1] : null;
 
 // ---------------------------------------------------------------------------
 // GRANDFATHER LIST — owner ruling 2026-11-07 (option A).
@@ -152,7 +161,7 @@ const LEGACY_SETS = [
 //   1 lesson  → MATH_VOLUME_TYPES     → <VolumeFiller />
 // i.e. 9 drag + 3 graphing + 3 measurement = 15. Verified lesson-by-lesson
 // against content/mathematics/modules.json and src/components/ExperimentSandbox.jsx.
-// 39 − 15 = 24.
+// 63 − 15 = 48.
 // ---------------------------------------------------------------------------
 const TYPE_KEYED = [
   // --- MATH_DRAG_TYPES (9) — a set would shadow the shared drag lab
@@ -774,26 +783,6 @@ if (SELFTEST) {
 }
 
 // ---------------------------------------------------------------------------
-// The real run
-// ---------------------------------------------------------------------------
-section("1. the Mathematics lab partition");
-{
-  const run = collectProblems(REAL);
-  pass += run.checks - run.problems.length;
-  fail += run.problems.length;
-  for (const p of run.problems) console.log(`FAIL: ${p}`);
-  console.log(`    partition: ${Object.keys(sets).length} sets + ${TYPE_KEYED.length} type-keyed = ${allLessons.length} lessons`);
-  console.log(`    estimatedModules ${metadata.estimatedModules} = modules.length ${modules.length}`);
-  console.log(`    types: ${REAL_TYPE_GROUPS.drag.size} drag + ${REAL_TYPE_GROUPS.graphing.size} graphing + ${REAL_TYPE_GROUPS.balance.size} balance + ${REAL_TYPE_GROUPS.area.size} area + ${REAL_TYPE_GROUPS.volume.size} volume = ${recognisedOf(REAL_TYPE_GROUPS).size} recognised`);
-  console.log(`    grandfathered sets: ${LEGACY_SETS.length} (corpus rule applies to ${Object.keys(sets).filter((k) => !LEGACY_SETS.includes(k)).length} new set(s))`);
-  // The positive control the spec calls for: the caller must be green on the
-  // real tree, or the red runs below are a broken caller rather than a bite.
-  const again = labProblems(REAL);
-  if (again.length === 0) pass += 1;
-  else { fail += 1; console.log("FAIL: the caller is green on the real tree, so the red runs are not a broken caller"); }
-}
-
-// ---------------------------------------------------------------------------
 // A18. THE ROUTING SPLIT IS PINNED (gate of #222).
 //
 // PR #222 stopped area-builder and volume-filler rendering the Equation Balance
@@ -862,6 +851,371 @@ function routingSplitProblems(src) {
   return problems;
 }
 
+// ---------------------------------------------------------------------------
+// THE RED CONTROLS — one named mutation each, run by DEFAULT.
+//
+// The suite (tools/check-all.sh, `npm test`) passes no arguments, so a control
+// behind an opt-in flag is a control the suite never runs. Every control is a
+// named entry in RED_CONTROLS and every one is pinned in RED_EXPECT to the
+// failures it must produce — `includes()` on the printed string, so "something
+// failed" is not proof that the assertion the control exists for still checks
+// anything (a control can trip a different assertion and report itself caught).
+//
+// Every mutation resolves what it edits BY ID and throws when the id is gone, so
+// a control whose target moved reports BROKEN instead of dying on a TypeError
+// and taking the rest of the sweep with it.
+// ---------------------------------------------------------------------------
+const need = (obj, key, what) => {
+  if (!obj || obj[key] === undefined) throw new Error(`no ${what} "${key}" on the real tree`);
+  return obj[key];
+};
+const needLesson = (allLessons, id) => {
+  const l = (allLessons || []).find((x) => x.id === id);
+  if (!l) throw new Error(`no lesson "${id}" in content/mathematics/modules.json`);
+  return l;
+};
+// A source edit that silently matches nothing would turn its control into a
+// no-op that still reports itself as a control, so a miss throws BROKEN.
+const replaceOnce = (src, from, to, what) => {
+  if (!src.includes(from)) throw new Error(`ExperimentSandbox.jsx no longer contains ${what}`);
+  return src.replace(from, to);
+};
+
+// The pins below are built from the tree, not typed: a hardcoded count goes
+// stale the moment a coverage slice adds a set or a module, and a stale pin
+// reads as "the assertion stopped biting".
+const LIVE_SET_COUNT = Object.keys(REAL.sets).length;
+const COVERAGE_COUNT = REAL.allLessons.length - REAL.typeKeyed.length;
+const MODULE_COUNT = REAL.modules.length;
+const SHARED_TITLE = REAL.sets["types-of-numbers"].title;      // the heading A6 must name
+const NEW_SET_ID = Object.keys(REAL.sets).find((k) => /^mat-/.test(k) && !LEGACY_SETS.includes(k)) || null;
+const AREA_LESSON = MEASUREMENT_TOOL_LESSONS["area-builder"];
+const RECT_FORMULA = MEASUREMENT_TOOL_COPY["area-builder"].formulaRectArea;
+const [RECT_L, RECT_W] = TOOL_CASES["area-builder"].rectangle[0];
+const RECT_REAL = MEASUREMENT_WORKING.rectangleWorking(RECT_L, RECT_W);
+const PA_TASK = (measurementTasks[AREA_LESSON] || [])[0] || { id: "<no task>" };
+const GARDEN_PROMPT = "A garden with an area of 24 cm² and a length of 8 cm.";
+
+const RED_CONTROLS = {
+  // R1 — aimed at A3's arithmetic AND at A8's UNION predicate (the half of A8
+  // that says a key LEGACY_SETS grandfathers is no longer provided by a set).
+  // R10 is the correctly aimed twin: its pin is the union message alone.
+  "set-deleted": (i) => {
+    need(i.sets, "venn-diagrams", "set");
+    delete i.sets["venn-diagrams"];
+  },
+  // R2 — a set keyed to a lesson that does not exist. Also trips A7 (no lesson,
+  // so no corpus) and A8d (the fixture id joins the derived base window); the A1
+  // pin is what makes this control aimed.
+  "set-keyed-to-no-lesson": (i) => {
+    i.sets[FIXTURE_ID] = { title: "Fixture Drill", subtitle: "Drag each.", kind: "match", pairs: [
+      { id: "p1", label: "a", target: "b" }, { id: "p2", label: "b", target: "c" },
+      { id: "p3", label: "c", target: "d" }, { id: "p4", label: "d", target: "a" },
+    ] };
+  },
+  // R3 — a set on a TYPE-KEYED lesson: the shadow rule (A2) AND the partition (A4).
+  "set-on-type-keyed-lesson": (i) => {
+    i.sets["trig-ratios"] = { title: "Trig Ratio Drill", subtitle: "Drag each.", kind: "match", pairs: [
+      { id: "p1", label: "sin", target: "opposite over hypotenuse" },
+      { id: "p2", label: "cos", target: "adjacent over hypotenuse" },
+      { id: "p3", label: "tan", target: "opposite over adjacent" },
+      { id: "p4", label: "cosec", target: "hypotenuse over opposite" },
+    ] };
+  },
+  // R4 — a set whose kind is neither match nor sort.
+  "unknown-set-kind": (i) => { need(i.sets, "venn-diagrams", "set").kind = "order"; },
+  // R5 — two lessons sharing one activity heading. The pin's title is the live
+  // one, so the control stays aimed if the heading is reworded.
+  "duplicate-heading": (i) => {
+    need(i.sets, "venn-diagrams", "set").title = need(i.sets, "types-of-numbers", "set").title;
+  },
+  // R6 — an unrecognised experiment type on a lesson with no set.
+  "unrecognised-type": (i) => { needLesson(i.allLessons, "trig-ratios").experiment.type = "text-sort"; },
+  // R7 — the advertised module count no longer matches the shipped modules.
+  "module-count-mismatch": (i) => { i.metadata.estimatedModules = MODULE_COUNT + 1; },
+  // R8/R9 — a LEGACY set forced through the corpus rule, so the rule is exercised
+  // on real grandfathered data. Each pin is a shipped string that set displays.
+  "legacy-set-forced-types-of-numbers": (i) => {
+    i.legacySets = i.legacySets.filter((k) => k !== "types-of-numbers");
+  },
+  "legacy-set-forced-standard-form": (i) => {
+    i.legacySets = i.legacySets.filter((k) => k !== "standard-form");
+  },
+  // R10 — the UNION predicate alone: a legacy key that no live set provides.
+  "legacy-key-not-a-set": (i) => {
+    need(i.sets, "venn-diagrams", "set");
+    delete i.sets["venn-diagrams"];
+  },
+  // R11 — LEGACY_SETS naming a key that is not a set at all.
+  "legacy-key-is-not-a-set": (i) => { i.legacySets = [...i.legacySets, FIXTURE_ID]; },
+  // R12 — an experiment stored as a bare string.
+  "experiment-is-a-string": (i) => { needLesson(i.allLessons, "real-numbers").experiment = "interactive-quiz"; },
+  // R13 — the live form of the corpus rule: a shipped NEW (non-grandfathered) set
+  // forced to display a string its lesson does not teach. R8/R9 prove the rule can
+  // bite, not that a shipped new set is subject to it.
+  "new-set-untaught-label": (i) => {
+    need(i.sets, "mat-num-properties-of-operations", "set").pairs[0].label = "Zebra";
+  },
+  // R14 — the hole A8d closes: a new set id added to LEGACY_SETS, which A8's
+  // union test tolerates and A8d does not.
+  "new-set-grandfathered": (i) => {
+    if (!NEW_SET_ID) throw new Error("no live mat-* set to grandfather");
+    i.legacySets = [...i.legacySets, NEW_SET_ID];
+  },
+  // R15 — AreaBuilder's arithmetic broken by one: A14 re-derives the area.
+  "rectangle-arithmetic-broken": (i) => {
+    i.working = {
+      ...i.working,
+      rectangleWorking: (l, w) => {
+        const real = MEASUREMENT_WORKING.rectangleWorking(l, w);
+        return { ...real, area: real.area + 1 };
+      },
+    };
+  },
+  // R16 — the lesson stops teaching a formula its tool displays.
+  "lesson-stops-teaching-formula": (i) => {
+    const lesson = needLesson(i.allLessons, AREA_LESSON);
+    if (!lesson.content.includes(RECT_FORMULA)) throw new Error(`the ${AREA_LESSON} copy no longer contains "${RECT_FORMULA}"`);
+    lesson.content = lesson.content.split(RECT_FORMULA).join("the rule below");
+  },
+  // R17 — bare JSX text in a tool: it would bypass the corpus check entirely.
+  // The text goes where the rule looks (between a > and a < inside the returned
+  // JSX); inserting it straight after the root <div> no longer bites once that
+  // element opens with a {expression}, because the rule cannot cross a brace.
+  "bare-jsx-text": (i) => {
+    i.toolSources = {
+      ...i.toolSources,
+      "area-builder": replaceOnce(i.toolSources["area-builder"],
+        "<strong>{T.yourTask}</strong>", "<strong>Untaught</strong>", "<strong>{T.yourTask}</strong>"),
+    };
+  },
+  // R18 — the exact reversion the #222 gate performed: area-builder back in
+  // MATH_BALANCE_TYPES, so perimeter-area renders the balance scale again. On the
+  // pre-A18 tree this left every harness green.
+  "area-builder-back-in-balance-set": (i) => {
+    i.sandbox = replaceOnce(i.sandbox,
+      'const MATH_BALANCE_TYPES = new Set(["balance-scale"]);',
+      'const MATH_BALANCE_TYPES = new Set(["balance-scale", "area-builder"]);',
+      "the MATH_BALANCE_TYPES declaration");
+  },
+  // R19 — the area set kept but routed to the balance scale: the wiring check.
+  "area-set-routed-to-balance": (i) => {
+    const before = i.sandbox;
+    i.sandbox = before.replace(/if \(MATH_AREA_TYPES\.has\(t\)\) return <AreaBuilder[^/]*\/>;/,
+      'if (MATH_AREA_TYPES.has(t)) return <BalanceScale subjectId="mathematics" experimentType={t} />;');
+    if (i.sandbox === before) throw new Error("ExperimentSandbox.jsx no longer routes MATH_AREA_TYPES to <AreaBuilder");
+  },
+  // R20 — a whole set deleted: A18 must name the missing declaration.
+  "volume-set-deleted": (i) => {
+    i.sandbox = replaceOnce(i.sandbox,
+      'const MATH_VOLUME_TYPES = new Set(["volume-filler"]);', "",
+      "the MATH_VOLUME_TYPES declaration");
+  },
+  // R21 — the control for the FUNCTION_WORDS loosening A13 gained on 2026-11-18.
+  // The loosening lets an English prompt through; it must NOT let a subject word
+  // the lesson never taught through. "garden" is taught by no Mathematics lesson.
+  "task-word-untaught": (i) => {
+    const list = need(i.tasks, AREA_LESSON, "measurement task list");
+    if (!list[0]) throw new Error(`no task for ${AREA_LESSON}`);
+    list[0].prompt = GARDEN_PROMPT;
+  },
+  // R22 — the task panel's own labels come from the table, never from the markup.
+  "panel-label-typed-into-markup": (i) => {
+    i.toolSources = {
+      ...i.toolSources,
+      "area-builder": replaceOnce(i.toolSources["area-builder"],
+        '<div className="area-builder">',
+        `<div className="area-builder">"${MEASUREMENT_TASK_COPY.checkMyAnswer}"`,
+        'the <div className="area-builder"> root'),
+    };
+  },
+
+  // --- the five rules the audit found with NO control at all -----------------
+  // A12a–f had none. This swaps the per-lesson branch and the experiment-type
+  // library inside the mathematics branch, so the set no longer wins: A12c is the
+  // only assertion that can catch it, and it is a string-presence test otherwise.
+  "routing-order-flipped": (i) => {
+    const start = i.sandbox.indexOf('if (subjectId === "mathematics")');
+    const end = i.sandbox.indexOf('if (subjectId === "chemistry")');
+    if (start === -1 || end === -1 || end < start) throw new Error("ExperimentSandbox.jsx has no mathematics branch to reorder");
+    const branch = i.sandbox.slice(start, end);
+    const perLessonAt = branch.indexOf('if (lessonId && lessonSets["mathematics"]');
+    const byTypeAt = branch.indexOf("if (MATH_DRAG_TYPES.has(t))");
+    if (perLessonAt === -1 || byTypeAt === -1 || perLessonAt > byTypeAt)
+      throw new Error("the mathematics branch is not in the order this control expects");
+    const eol = branch.indexOf("\n", byTypeAt);
+    if (eol === -1) throw new Error("the MATH_DRAG_TYPES line has no line break");
+    const perLessonBlock = branch.slice(perLessonAt, byTypeAt);
+    const byTypeLine = branch.slice(byTypeAt, eol + 1);
+    const flipped = branch.slice(0, perLessonAt) + byTypeLine + perLessonBlock + branch.slice(eol + 1);
+    i.sandbox = i.sandbox.slice(0, start) + flipped + i.sandbox.slice(end);
+  },
+  // A13's worked-step leftover() was red-controlled for the TASK text only (R21).
+  // A step the tool generates may add numbers and arithmetic symbols to the
+  // taught words and nothing else — this feeds it a word the lesson never teaches.
+  "worked-step-untaught": (i) => {
+    i.working = {
+      ...i.working,
+      rectangleWorking: (l, w) => {
+        const real = MEASUREMENT_WORKING.rectangleWorking(l, w);
+        return { ...real, steps: [...real.steps, "garden"] };
+      },
+    };
+  },
+  // A4's MISSING half had no control (R3 covers "duplicated" only). A lesson in
+  // the tree that is in neither `sets` nor `typeKeyed` is a hole in the partition.
+  "partition-missing": (i) => {
+    i.allLessons = [...i.allLessons, {
+      id: FIXTURE_ID, title: "Fixture Lesson", content: "fixture", objectives: [], concepts: [],
+      experiment: { type: "matching-game", description: "d" },
+    }];
+  },
+  // A5a–d (title/subtitle shape) had no control at all.
+  "title-is-lab": (i) => { need(i.sets, "venn-diagrams", "set").title = "Lab"; },
+  // A13 skips a measurement lesson that is not in allLessons (`if (!lesson)
+  // continue`) — deliberately, because A4/A1 own a vanished lesson. What notices
+  // is A3's arithmetic, and only through its count: this proves it does.
+  "measurement-lesson-vanished": (i) => {
+    needLesson(i.allLessons, AREA_LESSON);
+    i.allLessons = i.allLessons.filter((l) => l.id !== AREA_LESSON);
+  },
+};
+
+// ---------------------------------------------------------------------------
+// WHAT EACH CONTROL MUST BE CAUGHT BY — one ARRAY per control, and every one of
+// the 27 is pinned. A control that synthesises state trips more than one
+// assertion at once, so the run only passes if EVERY message listed here is
+// among the failures; a control with no entry here fails outright (runControl),
+// and a pin naming no control fails too (section 3). Strings, not regexes: the
+// pin is the exact text the assertion prints, so it cannot be widened by a
+// regex that happens to match a different failure.
+// ---------------------------------------------------------------------------
+const RED_EXPECT = {
+  // A3's derived count, then A8's UNION message — the predicate R1 exists for.
+  "set-deleted": [
+    `A3: ${LIVE_SET_COUNT - 1} sets for ${COVERAGE_COUNT} coverage lessons`,
+    "A8: LEGACY_SETS is not an exact partition of the live sets: union names [venn-diagrams] that no set provides",
+  ],
+  "set-keyed-to-no-lesson": [
+    `A1: lessonSets.mathematics.${FIXTURE_ID}: "${FIXTURE_ID}" is not a lesson id in content/mathematics/modules.json`,
+  ],
+  "set-on-type-keyed-lesson": [
+    "A2: trig-ratios: carries a per-lesson set, which would shadow its dedicated tool (trig-circle — DragDropLabel)",
+    "A4: partition: nothing missing / duplicated trig-ratios",
+  ],
+  "unknown-set-kind": ["A5e: lessonSets.mathematics.venn-diagrams: kind must be match or sort (got order)"],
+  "duplicate-heading": [`A6: two lessons share one activity heading: "${SHARED_TITLE}"`],
+  "unrecognised-type": [
+    'A10: trig-ratios: type "text-sort" is not recognised and the lesson has no set (it would fall to the Mathematics flashcard deck)',
+  ],
+  "module-count-mismatch": [`A11: metadata.estimatedModules is ${MODULE_COUNT + 1}, modules.length is ${MODULE_COUNT}`],
+  "legacy-set-forced-types-of-numbers": [
+    'A7: lessonSets.mathematics.types-of-numbers: "Perfect square" is not in that lesson\'s own copy',
+  ],
+  "legacy-set-forced-standard-form": [
+    'A7: lessonSets.mathematics.standard-form: "4.5 × 10⁴" is not in that lesson\'s own copy',
+  ],
+  "legacy-key-not-a-set": [
+    "A8: LEGACY_SETS is not an exact partition of the live sets: union names [venn-diagrams] that no set provides",
+  ],
+  "legacy-key-is-not-a-set": [
+    `A8: LEGACY_SETS is not an exact partition of the live sets: "${FIXTURE_ID}" is not a set`,
+  ],
+  "experiment-is-a-string": ["A9: real-numbers: experiment must be an object with a type and a description"],
+  "new-set-untaught-label": [
+    'A7: lessonSets.mathematics.mat-num-properties-of-operations: "Zebra" is not in that lesson\'s own copy',
+  ],
+  "new-set-grandfathered": [
+    `A8d: LEGACY_SETS grandfathered a set that is not one of the original ${LEGACY_BASE.count}: [${NEW_SET_ID}]`,
+  ],
+  "rectangle-arithmetic-broken": [
+    `A14: rectangleWorking(${RECT_L}, ${RECT_W}) → area ${RECT_REAL.area + 1}, perimeter ${RECT_REAL.perimeter}; expected ${RECT_L * RECT_W} and ${2 * (RECT_L + RECT_W)}`,
+  ],
+  "lesson-stops-teaching-formula": [
+    `A13: ${AREA_LESSON} renders area-builder, which displays "${RECT_FORMULA}" (formulaRectArea) — that lesson does not teach it`,
+  ],
+  "bare-jsx-text": ['A13: area-builder: bare JSX text would bypass the corpus check — found "Untaught"'],
+  "area-builder-back-in-balance-set": [
+    "A18: MATH_BALANCE_TYPES is [balance-scale, area-builder]",
+    "A18: MATH_BALANCE_TYPES and MATH_AREA_TYPES both claim [area-builder]",
+  ],
+  "area-set-routed-to-balance": ["A18: MATH_AREA_TYPES is not routed to <AreaBuilder"],
+  "volume-set-deleted": ["A18: MATH_VOLUME_TYPES is not declared in src/components/ExperimentSandbox.jsx"],
+  "task-word-untaught": [
+    `A13: ${AREA_LESSON}/${PA_TASK.id}: the task text "${GARDEN_PROMPT}" contains "garden"`,
+  ],
+  "panel-label-typed-into-markup": [
+    `A13: area-builder: the panel label "${MEASUREMENT_TASK_COPY.checkMyAnswer}" is typed into the component`,
+  ],
+  "routing-order-flipped": ["A12c: the per-lesson set is checked BEFORE the experiment-type library"],
+  "worked-step-untaught": [
+    `A13: ${AREA_LESSON} renders area-builder, whose worked step "garden" contains "garden" — not taught by that lesson`,
+  ],
+  "partition-missing": [`A4: partition: missing ${FIXTURE_ID}`],
+  "title-is-lab": ["A5b: lessonSets.mathematics.venn-diagrams: title names the lesson topic"],
+  "measurement-lesson-vanished": [`A3: ${LIVE_SET_COUNT} sets for ${COVERAGE_COUNT - 1} coverage lessons`],
+};
+
+// ---------------------------------------------------------------------------
+/** Run one control on a fresh clone. ok = it was caught, and caught by the assertion it names. */
+function runControl(name) {
+  const mutate = RED_CONTROLS[name];
+  if (!mutate) throw new Error(`unknown red control "${name}"`);
+  const input = cloneReal();
+  mutate(input);
+  // Both halves: collectProblems() for A1–A14 and routingSplitProblems() for A18.
+  const real = [...labProblems(input), ...routingSplitProblems(input.sandbox)];
+  if (!real.length) return { ok: false, real, why: "WAS NOT CAUGHT — the check is blind to it" };
+  const expect = RED_EXPECT[name] || [];
+  if (!expect.length) return { ok: false, real, why: "NO PINNED EXPECTATION — this control is not aimed at any assertion" };
+  const missing = expect.filter((e) => !real.some((f) => f.includes(e)));
+  if (missing.length) return { ok: false, real, why: `CAUGHT BY THE WRONG ASSERTION — no failure containing "${missing[0]}"` };
+  return { ok: true, real: real.filter((f) => expect.some((e) => f.includes(e))) };
+}
+
+// ---------------------------------------------------------------------------
+// --red-control <name>: one control, hoisted ABOVE the real check so a single
+// control can be run on its own. --red-controls-all is gone: it was an alias of
+// "run them all", which is now the default.
+// ---------------------------------------------------------------------------
+if (ONLY_CONTROL) {
+  if (!RED_CONTROLS[ONLY_CONTROL]) {
+    console.log(`unknown red control: ${ONLY_CONTROL}`);
+    console.log(`known: ${Object.keys(RED_CONTROLS).join(", ")}`);
+    process.exit(2);
+  }
+  let r;
+  try { r = runControl(ONLY_CONTROL); } catch (e) { console.log(`RED CONTROL "${ONLY_CONTROL}" BROKE — ${e.message}`); process.exit(1); }
+  if (!r.ok) {
+    console.log(`RED CONTROL "${ONLY_CONTROL}" ${r.why}`);
+    r.real.slice(0, 5).forEach((f) => console.log(`   ${f}`));
+    process.exit(1);
+  }
+  console.log(`red control "${ONLY_CONTROL}": caught — as expected`);
+  r.real.slice(0, 5).forEach((f) => console.log(`   ${f}`));
+  process.exit(0);
+}
+
+// ---------------------------------------------------------------------------
+// The real run
+// ---------------------------------------------------------------------------
+section("1. the Mathematics lab partition");
+{
+  const run = collectProblems(REAL);
+  pass += run.checks - run.problems.length;
+  fail += run.problems.length;
+  for (const p of run.problems) console.log(`FAIL: ${p}`);
+  console.log(`    partition: ${Object.keys(sets).length} sets + ${TYPE_KEYED.length} type-keyed = ${allLessons.length} lessons`);
+  console.log(`    estimatedModules ${metadata.estimatedModules} = modules.length ${modules.length}`);
+  console.log(`    types: ${REAL_TYPE_GROUPS.drag.size} drag + ${REAL_TYPE_GROUPS.graphing.size} graphing + ${REAL_TYPE_GROUPS.balance.size} balance + ${REAL_TYPE_GROUPS.area.size} area + ${REAL_TYPE_GROUPS.volume.size} volume = ${recognisedOf(REAL_TYPE_GROUPS).size} recognised`);
+  console.log(`    grandfathered sets: ${LEGACY_SETS.length} (corpus rule applies to ${Object.keys(sets).filter((k) => !LEGACY_SETS.includes(k)).length} new set(s))`);
+  // The positive control the spec calls for: the caller must be green on the
+  // real tree, or the red runs below are a broken caller rather than a bite.
+  const again = labProblems(REAL);
+  if (again.length === 0) pass += 1;
+  else { fail += 1; console.log("FAIL: the caller is green on the real tree, so the red runs are not a broken caller"); }
+}
+
 section("2. routing split: balance / area / volume are three separate tools");
 {
   const splitProblems = routingSplitProblems(sandboxSrc);
@@ -870,188 +1224,53 @@ section("2. routing split: balance / area / volume are three separate tools");
   console.log(`    balance [${(setLiteralIn(sandboxSrc, "MATH_BALANCE_TYPES") || []).join(", ")}] · area [${(setLiteralIn(sandboxSrc, "MATH_AREA_TYPES") || []).join(", ")}] · volume [${(setLiteralIn(sandboxSrc, "MATH_VOLUME_TYPES") || []).join(", ")}]`);
 }
 
+if (NO_RED_CONTROL) {
+  console.log(`\ncheck-mathematics-labs: ${pass} passed, ${fail} failed (red controls skipped: --no-red-control)`);
+  process.exit(fail ? 1 : 0);
+}
+
 // ---------------------------------------------------------------------------
-// --red-control / --red-controls-all: 22 controls. R1–R17 and R21–R22 doctor the
-// INPUT to labProblems(); R18–R20 doctor the routing SOURCE text for A18. Each must
-// produce a problem whose message matches a named regex; then the caller is
-// proved green on the untouched real tree.
+// 3. The two directions between RED_CONTROLS and RED_EXPECT, asserted on the
+// DEFAULT path. --selftest exits before this point, so it can never be the place
+// that holds it; a control added without a pin, or a pin left behind by a
+// renamed control, fails the run.
 // ---------------------------------------------------------------------------
-if (RED_CONTROL) {
-  section("3. red controls — every assertion is proved to bite");
-  const results = [];
-  const red = (name, why, expect, mutate) => {
-    const input = cloneReal();
-    mutate(input);
-    const problems = labProblems(input);
-    const missed = expect.filter((re) => !problems.some((p) => re.test(p)));
-    const caught = missed.length === 0;
-    results.push({ name, why, caught, missed, problems });
-    const shown = problems.find((p) => expect.some((re) => re.test(p))) || problems[0] || "(no problem at all)";
-    console.log(`  ${caught ? "caught  " : "MISSED  "} ${name} — ${why}`);
-    console.log(`           ${shown}`);
-    if (!caught) for (const re of missed) console.log(`           expected a problem matching ${re} and got none`);
-  };
+section("3. every red control is pinned, every pin names a control");
+{
+  const names = Object.keys(RED_CONTROLS);
+  const unpinned = names.filter((n) => !(RED_EXPECT[n] || []).length);
+  const orphans = Object.keys(RED_EXPECT).filter((n) => !RED_CONTROLS[n]);
+  ok(unpinned.length === 0,
+    `every one of the ${names.length} red controls is pinned to at least one expected failure — unpinned: ${unpinned.join(", ")}`);
+  ok(orphans.length === 0, `every RED_EXPECT entry names a real control — orphans: ${orphans.join(", ")}`);
+  console.log(`    ${names.length} controls, ${Object.values(RED_EXPECT).reduce((n, list) => n + list.length, 0)} pinned failures`);
+}
 
-  // The A3 arithmetic is DERIVED, not pinned: the control expects the numbers
-  // A3 must print for THIS tree with one set deleted (Mathematics Slice 1 took
-  // it from 23/24 to 28/29). A hardcoded pair here goes stale the moment a
-  // coverage slice adds a set, and a stale control reads as "the assertion
-  // stopped biting". Deleting venn-diagrams removes one SET, never a type-keyed
-  // lesson, so the coverage count (allLessons − TYPE_KEYED) is unchanged.
-  const liveSetCount = Object.keys(REAL.sets).length;
-  const coverageCount = REAL.allLessons.length - REAL.typeKeyed.length;
-  red("R1", "a set deleted -> the count and the union both fire",
-    [new RegExp(`^A3: ${liveSetCount - 1} sets for ${coverageCount} coverage lessons`),
-     /^A8: LEGACY_SETS is not an exact partition/],
-    (i) => { delete i.sets["venn-diagrams"]; });
-  red("R2", `a set keyed to a lesson that does not exist -> A1 (${FIXTURE_ID})`,
-    [new RegExp(`^A1: lessonSets\\.mathematics\\.${FIXTURE_ID}: "${FIXTURE_ID}" is not a lesson id`)],
-    (i) => {
-      i.sets[FIXTURE_ID] = { title: "Fixture Drill", subtitle: "Drag each.", kind: "match", pairs: [
-        { id: "p1", label: "a", target: "b" }, { id: "p2", label: "b", target: "c" },
-        { id: "p3", label: "c", target: "d" }, { id: "p4", label: "d", target: "a" },
-      ] };
-    });
-  red("R3", "a set on a TYPE-KEYED lesson -> the shadow assertion AND the partition",
-    [/^A2: trig-ratios: carries a per-lesson set, which would shadow its dedicated tool \(trig-circle — DragDropLabel\)/, /^A4: partition: .*duplicated trig-ratios/],
-    (i) => {
-      i.sets["trig-ratios"] = { title: "Trig Ratio Drill", subtitle: "Drag each.", kind: "match", pairs: [
-        { id: "p1", label: "sin", target: "opposite over hypotenuse" },
-        { id: "p2", label: "cos", target: "adjacent over hypotenuse" },
-        { id: "p3", label: "tan", target: "opposite over adjacent" },
-        { id: "p4", label: "cosec", target: "hypotenuse over opposite" },
-      ] };
-    });
-  red("R4", "a set whose kind is neither match nor sort -> A5e",
-    [/^A5e: lessonSets\.mathematics\.venn-diagrams: kind must be match or sort \(got order\)/],
-    (i) => { i.sets["venn-diagrams"].kind = "order"; });
-  red("R5", "two lessons sharing one activity heading -> A6",
-    [/^A6: two lessons share one activity heading: "Number Families"/],
-    (i) => { i.sets["venn-diagrams"].title = i.sets["types-of-numbers"].title; });
-  red("R6", "an unrecognised experiment type on a lesson with no set -> A10",
-    [/^A10: trig-ratios: type "text-sort" is not recognised and the lesson has no set/],
-    (i) => { i.allLessons.find((l) => l.id === "trig-ratios").experiment.type = "text-sort"; });
-  red("R7", "a module count the catalog no longer matches -> A11",
-    [/^A11: metadata\.estimatedModules is 10, modules\.length is 9/],
-    (i) => { i.metadata.estimatedModules = 10; });
-  red("R8", "types-of-numbers forced through the corpus rule -> A7 names \"Perfect square\"",
-    [/^A7: lessonSets\.mathematics\.types-of-numbers: "Perfect square" is not in that lesson's own copy/],
-    (i) => { i.legacySets = i.legacySets.filter((k) => k !== "types-of-numbers"); });
-  red("R9", "standard-form forced through the corpus rule -> A7 names \"4.5 × 10⁴\"",
-    [/^A7: lessonSets\.mathematics\.standard-form: "4\.5 × 10⁴" is not in that lesson's own copy/],
-    (i) => { i.legacySets = i.legacySets.filter((k) => k !== "standard-form"); });
-  red("R10", "a legacy key that is no longer a live set -> the UNION mismatch, specifically",
-    [/^A8: LEGACY_SETS is not an exact partition of the live sets: union names \[venn-diagrams\] that no set provides/],
-    (i) => { delete i.sets["venn-diagrams"]; });
-  red("R11", `LEGACY_SETS naming a key that is not a set -> A8 names it (${FIXTURE_ID})`,
-    [new RegExp(`^A8: LEGACY_SETS is not an exact partition of the live sets: "${FIXTURE_ID}" is not a set`)],
-    (i) => { i.legacySets = [...i.legacySets, FIXTURE_ID]; });
-  red("R12", "an experiment stored as a bare string -> A9",
-    [/^A9: real-numbers: experiment must be an object with a type and a description/],
-    (i) => { i.allLessons.find((l) => l.id === "real-numbers").experiment = "interactive-quiz"; });
-  // R13 is the live form of the corpus rule: R8/R9 force a LEGACY set through it,
-  // which proves the rule can bite but not that a shipped NEW set is subject to
-  // it. This one doctors a Slice 1 set, which is on the wrong side of
-  // LEGACY_SETS by construction, so it is checked with no grandfathering at all.
-  red("R13", "a NEW (non-grandfathered) set forced to display a string its lesson does not teach -> A7",
-    [/^A7: lessonSets\.mathematics\.mat-num-properties-of-operations: "Zebra" is not in that lesson's own copy/],
-    (i) => { i.sets["mat-num-properties-of-operations"].pairs[0].label = "Zebra"; });
-  // R14 is the hole this PR closes. The gate's RC2 did exactly this on the real
-  // tree on 2026-11-07 and the harness still exited 0, because A8's union test
-  // tolerates a key that is in LEGACY_SETS and in the live sets. A8d does not.
-  red("R14", "a NEW set id added to LEGACY_SETS -> A8d (it may never be grandfathered)",
-    [/^A8d: LEGACY_SETS grandfathered a set that is not one of the original 24: \[mat-meas-scale-and-scale-drawings\]/],
-    (i) => { i.legacySets = [...i.legacySets, "mat-meas-scale-and-scale-drawings"]; });
-  red("R15", "AreaBuilder arithmetic broken -> A14 names the wrong area",
-    [/^A14: rectangleWorking\(3, 4\) → area 13, perimeter 14; expected 12 and 14/],
-    (i) => {
-      i.working = {
-        ...i.working,
-        rectangleWorking: (l, w) => {
-          const real = MEASUREMENT_WORKING.rectangleWorking(l, w);
-          return { ...real, area: real.area + 1 };
-        },
-      };
-    });
-  red("R16", "the lesson stops teaching a formula its tool displays -> A13",
-    [/^A13: perimeter-area renders area-builder, which displays "A = l × w" \(formulaRectArea\)/],
-    (i) => {
-      const lesson = i.allLessons.find((l) => l.id === "perimeter-area");
-      lesson.content = lesson.content.split("A = l × w").join("the rule below");
-    });
-  red("R17", "bare JSX text in a tool -> A13 (it would bypass the corpus check entirely)",
-    [/^A13: area-builder: bare JSX text would bypass the corpus check — found "Untaught"/],
-    (i) => {
-      // The bare text goes where the rule looks: between a > and a < inside the
-      // returned JSX. Inserting it straight after the root <div> no longer bites
-      // once that element opens with a {expression}, because the rule cannot
-      // cross a brace — a control that stops biting is a control to retarget,
-      // not a rule to loosen.
-      i.toolSources = {
-        ...i.toolSources,
-        "area-builder": i.toolSources["area-builder"]
-          .replace("<strong>{T.yourTask}</strong>", "<strong>Untaught</strong>"),
-      };
-    });
-
-  // R21 is the control for the FUNCTION_WORDS loosening A13 gained on 2026-11-18.
-  // The loosening lets an English prompt through; it must NOT let a subject word
-  // the lesson never taught through. "garden" is taught by no Mathematics lesson.
-  red("R21", "a task word the lesson never teaches (\"garden\") still fails A13 after the FUNCTION_WORDS loosening",
-    [/^A13: perimeter-area\/pa-rectangle-sides: the task text .* contains "garden"/],
-    (i) => { i.tasks["perimeter-area"][0].prompt = "A garden with an area of 24 cm² and a length of 8 cm."; });
-  // R22 keeps the new panel honest: its labels come from the table, never from
-  // the markup (a literal there would be an untaught string on screen).
-  red("R22", "a panel label typed into the tool -> A13",
-    [/^A13: area-builder: the panel label "Check my answer" is typed into the component/],
-    (i) => {
-      i.toolSources = {
-        ...i.toolSources,
-        "area-builder": i.toolSources["area-builder"]
-          .replace('<div className="area-builder">', '<div className="area-builder">"Check my answer"'),
-      };
-    });
-
-  // --- A18: the routing split (source-text controls, not input clones) ------
-  // R18 is the exact reversion the #222 gate performed: area-builder back in
-  // MATH_BALANCE_TYPES, so perimeter-area renders the balance scale again. On
-  // the pre-A18 tree this left every harness green.
-  const redSrc = (name, why, expect, mutate) => {
-    const problems = routingSplitProblems(mutate(sandboxSrc));
-    const missed = expect.filter((re) => !problems.some((p) => re.test(p)));
-    const caught = missed.length === 0;
-    results.push({ name, why, caught, missed, problems });
-    const shown = problems.find((p) => expect.some((re) => re.test(p))) || problems[0] || "(no problem at all)";
-    console.log(`  ${caught ? "caught  " : "MISSED  "} ${name} — ${why}`);
-    console.log(`           ${shown}`);
-    if (!caught) for (const re of missed) console.log(`           expected a problem matching ${re} and got none`);
-  };
-  redSrc("R18", "area-builder put back into MATH_BALANCE_TYPES -> A18 (the #222 reversion)",
-    [/^A18: MATH_BALANCE_TYPES is \[balance-scale, area-builder\]/,
-     /^A18: MATH_BALANCE_TYPES and MATH_AREA_TYPES both claim \[area-builder\]/],
-    (src) => src.replace('const MATH_BALANCE_TYPES = new Set(["balance-scale"]);',
-      'const MATH_BALANCE_TYPES = new Set(["balance-scale", "area-builder"]);'));
-  redSrc("R19", "the area set kept but routed to the balance scale -> A18 wiring",
-    [/^A18: MATH_AREA_TYPES is not routed to <AreaBuilder/],
-    // The routed line now carries subjectId/lessonId (the task is keyed by
-    // lesson), so the control matches the line rather than one exact string —
-    // a hand-typed line went stale the moment the props were added.
-    (src) => src.replace(/if \(MATH_AREA_TYPES\.has\(t\)\) return <AreaBuilder[^/]*\/>;/,
-      "if (MATH_AREA_TYPES.has(t)) return <BalanceScale subjectId=\"mathematics\" experimentType={t} />;"));
-  redSrc("R20", "a whole set deleted -> A18 names the missing declaration",
-    [/^A18: MATH_VOLUME_TYPES is not declared in src\/components\/ExperimentSandbox\.jsx/],
-    (src) => src.replace('const MATH_VOLUME_TYPES = new Set(["volume-filler"]);', ""));
-
-  const caught = results.filter((r) => r.caught).length;
+// ---------------------------------------------------------------------------
+// 4. The controls themselves — run by DEFAULT, because the suite passes no
+// arguments. A control that throws reports BROKEN and the sweep continues; one
+// exit code covers both halves (a failing real check and an uncaught control are
+// both red).
+// ---------------------------------------------------------------------------
+section("4. red controls — every assertion is proved to bite");
+{
+  let bad = 0;
+  for (const name of Object.keys(RED_CONTROLS)) {
+    let r;
+    try { r = runControl(name); } catch (e) { bad += 1; console.log(`BROKEN: ${name} — ${e.message}`); continue; }
+    if (!r.ok) {
+      bad += 1;
+      console.log(`${r.real.length ? "WRONG ASSERTION" : "NOT CAUGHT"}: ${name} — ${r.why}`);
+    } else {
+      console.log(`caught (${r.real.length}): ${name} — ${r.real[0]}`);
+    }
+  }
   // The caller is green on the untouched real tree, so the controls above were
   // exercised by a working caller and not by an already-broken one.
   const stillGreen = labProblems(REAL).length === 0 && routingSplitProblems(sandboxSrc).length === 0;
   console.log(`\n  caller green on the untouched real tree: ${stillGreen ? "yes" : "NO"}`);
-  console.log(`RED CONTROLS: ${caught}/${results.length} caught`);
-  if (!stillGreen) { fail += 1; console.log("FAIL: the caller is not green on the real tree"); }
-  if (caught !== results.length) { fail += 1; console.log("FAIL: a red control was not caught"); }
-  else pass += 1;
+  if (!stillGreen) { bad += 1; console.log("FAIL: the caller is not green on the real tree"); }
+  console.log(`${Object.keys(RED_CONTROLS).length} red controls, ${bad} not caught`);
+  console.log(`\ncheck-mathematics-labs: ${pass} passed, ${fail} failed`);
+  process.exit(fail || bad ? 1 : 0);
 }
-
-console.log(`\ncheck-mathematics-labs: ${pass} passed, ${fail} failed`);
-process.exit(fail === 0 ? 0 : 1);
