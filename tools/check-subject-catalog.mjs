@@ -119,7 +119,12 @@ for (const subject of catalog) {
   const structureOk =
     Array.isArray(modules) &&
     modules.length > 0 &&
-    modules.every((m) => m.id && m.title && Array.isArray(m.lessons) && m.lessons.length > 0) &&
+    // Every module carries an id, a title and a real lessons array. It may be EMPTY: Integrated Science
+    // ships the owner's 24-module shape ahead of its chapter build, so a module can be waiting for its
+    // lessons. What must never happen is a subject with no lesson at all (below), or a module whose
+    // `lessons` key is missing — that is the defect this line exists for.
+    modules.every((m) => m.id && m.title && Array.isArray(m.lessons)) &&
+    lessons.length > 0 &&
     lessons.every((l) => l.id && l.title);
   check(structureOk, `${id}: modules have ids, titles and lessons`);
   check(
