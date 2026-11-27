@@ -249,7 +249,7 @@
     "lessons": [
       {
         "id": "is-l2-2",
-        "title": "Photosynthesis, the Importance of Food and Diet, Respiration and Transport",
+        "title": "Photosynthesis, the Importance of Food and Diet, and Transport in Plants and Animals",
         "content": "Organisms need matter and energy. Green plants make their own food by photosynthesis, using light energy to combine carbon dioxide and water into glucose, releasing oxygen. Glucose is used for respiration, converted to starch for storage, or built into cellulose and other materials. Animals cannot make food, so they eat it, and their diets must supply carbohydrates and fats for energy, proteins for growth and repair, vitamins and minerals for regulation, fibre for digestion and water for everything else.\n\nRespiration releases the energy stored in food. Aerobic respiration uses oxygen and gives carbon dioxide, water and a large amount of energy; anaerobic respiration in muscle produces lactic acid and much less energy, and in yeast produces ethanol and carbon dioxide. In mammals, oxygen and nutrients are carried to cells by blood: the heart pumps, arteries carry blood away and veins return it, and exchange happens in capillaries. In plants, water and minerals move up in xylem while sugars move in phloem, and water is lost through stomata in transpiration.\n\nThese systems link food, energy and health. A diet with too much refined carbohydrate and fat and too little activity leads to obesity and related disease, while a plant without light or minerals cannot photosynthesise well and grows pale and stunted. Both cases show the same principle: nutrition and transport determine what an organism can do.",
         "objectives": [
           "Explain photosynthesis and the requirements of a balanced diet",
@@ -466,17 +466,317 @@
   {
     "id": "is-a5",
     "title": "Health and Body Systems",
-    "lessons": []
+    "lessons": [
+      {
+        "id": "is-l11-1",
+        "title": "Effects of Drug Use and Exercise",
+        "content": "A drug is any substance that changes the way the body works, and the word covers medicines and substances taken for pleasure alike. Drugs are grouped by what they do. Depressants slow the nervous system down: alcohol is the most widely used drug in the Caribbean, and it lengthens reaction time, spoils judgement and, in large amounts, causes vomiting, unconsciousness and death. Stimulants speed the nervous system up: nicotine in tobacco raises heart rate and blood pressure and is strongly addictive, and caffeine in coffee and cola does the same more mildly. Analgesics relieve pain: paracetamol and aspirin are sold over the counter, while morphine is used in hospital for severe pain and can cause dependence. Hallucinogens such as LSD, and the solvents in glue and paint, disturb perception, and anabolic steroids, taken to build muscle, upset the body's own hormone balance.\n\nEvery one of these drugs has effects beyond the one the user wants. Alcohol is broken down in the liver, and heavy drinking over years damages liver cells until the liver is scarred and cannot do its work, a condition called cirrhosis; alcohol also damages the developing brain of a young person and, taken in pregnancy, can harm the unborn child. Smoking tobacco is the largest preventable cause of lung cancer, chronic bronchitis and heart disease, and the tar in smoke paralyses the cilia that would otherwise sweep dirt out of the airways, so the smoker's lungs stay dirty and the smoker coughs. Sharing a needle to inject a drug can pass HIV and hepatitis from one person to the next. Anabolic steroids can stunt a teenager's growth, cause acne and liver damage, and make the user unusually aggressive. Dependence is the hardest effect to undo: the body adapts to the drug, so stopping produces withdrawal symptoms, and the user needs more of it for the same effect.\n\nExercise is the other side of this picture. Working muscles need more oxygen and more food, so breathing deepens and the heart beats faster and harder, and repeated over weeks and months this makes the heart muscle thicker and stronger: a trained athlete's resting pulse is often below 60 beats a minute, and each beat pushes out more blood, so the same work is done with less strain. Regular exercise also increases the number and the size of the mitochondria in muscle cells, strengthens bones and the tissues around joints, helps control body weight, and lowers blood pressure and the risk of type 2 diabetes. Fitness and drug use are separate habits: a fit person can damage their health with drugs, and a person who takes no drugs can still be unfit.",
+        "objectives": [
+          "Distinguish depressants, stimulants, analgesics and hallucinogens, and name an example of each",
+          "Describe the short-term and the long-term effects of alcohol, tobacco and anabolic steroids on the body",
+          "Explain how regular exercise changes the heart, the muscles and the mitochondria",
+          "Explain why stopping a drug the body has adapted to produces withdrawal symptoms"
+        ],
+        "concepts": [
+          "Drug",
+          "Depressant",
+          "Stimulant",
+          "Analgesic",
+          "Hallucinogen",
+          "Dependence",
+          "Withdrawal",
+          "Cirrhosis",
+          "Anabolic steroid",
+          "Resting pulse",
+          "Mitochondria"
+        ],
+        "experiment": {
+          "type": "drag-drop",
+          "description": "Name That Drug Class: Sort each substance into the class of drug it belongs to."
+        }
+      },
+      {
+        "id": "is-l11-2",
+        "title": "The Human Skeletal System",
+        "content": "The skeleton is not dead scaffolding: bone is living tissue, and it does five jobs at once. It supports the body and gives it shape. It protects organs that would otherwise be easily injured, with the skull around the brain, the rib cage around the heart and lungs, and the vertebral column around the spinal cord. It is a set of levers that muscles pull on to produce movement. The marrow inside certain bones makes red blood cells, white blood cells and platelets. And bone stores calcium and phosphorus, releasing them into the blood when other tissues need them.\n\nThe skeleton has two parts. The axial skeleton is the skull, the vertebral column, the ribs and the sternum, about 80 bones in all; the appendicular skeleton is the limbs and the girdles that attach them to the trunk, about 126 bones, which gives 206 in an adult. A long bone such as the femur is a hard tube of compact bone around a spongy, lighter interior, with marrow in the central cavity, and a tough periosteum over its surface carrying blood vessels and nerves. In a child the ends of a long bone are separated from the shaft by a plate of cartilage, and it is there that the bone grows longer; by late adolescence that cartilage has turned to bone and growth in height stops. Bone is remodelled throughout life, which is why a break heals, and why bone becomes thin and weak when the diet is short of calcium or vitamin D or when it is not used.\n\nBones meet at joints. A hinge joint, at the elbow and the knee, allows movement in one plane only. A ball-and-socket joint, at the shoulder and the hip, allows movement in every direction. A pivot joint between the first two vertebrae allows the head to turn. The joints between the bones of the skull are fixed, held by interlocking sutures. At a freely movable joint the ends of the bones are covered with smooth cartilage, lubricated by synovial fluid and held together by ligaments, while tendons attach muscle to bone across the joint.\n\nA muscle can only pull, never push, so muscles work in pairs: to bend the elbow the biceps contracts and the triceps relaxes, and to straighten it the triceps contracts and the biceps relaxes. Such a pair is called antagonistic. Three conditions are common enough to know. Rickets is soft, bent bone in a child, caused by too little vitamin D, so that calcium is not laid down. Osteoporosis is bone that has lost mass and breaks easily, most often in older women. Arthritis is inflammation of a joint, with pain and stiffness. A fracture is a crack or break in a bone, simple if the skin over it is unbroken and compound if the bone pierces the skin and infection can enter.",
+        "objectives": [
+          "State the five functions of the skeleton and give an example of each",
+          "Distinguish the axial from the appendicular skeleton and name the main bones of each",
+          "Describe hinge, ball-and-socket, pivot and fixed joints, and explain how antagonistic muscles move a joint",
+          "Relate rickets and osteoporosis to the diet and to the structure of bone"
+        ],
+        "concepts": [
+          "Skeleton",
+          "Axial skeleton",
+          "Appendicular skeleton",
+          "Compact bone",
+          "Spongy bone",
+          "Marrow",
+          "Periosteum",
+          "Cartilage",
+          "Ligament",
+          "Tendon",
+          "Antagonistic muscles",
+          "Hinge joint",
+          "Ball-and-socket joint",
+          "Rickets",
+          "Osteoporosis"
+        ],
+        "experiment": {
+          "type": "drag-drop",
+          "description": "Axial or Appendicular: Sort each bone into the part of the skeleton it belongs to."
+        }
+      },
+      {
+        "id": "is-l11-3",
+        "title": "Respiration: The Human Respiratory System and Gas Exchange",
+        "content": "Breathing is the movement of air into and out of the lungs. Air enters through the nose, where hairs and mucus trap dust and the air is warmed and moistened, passes the pharynx and larynx, and travels down the trachea, which is held open by C-shaped rings of cartilage. The trachea divides into two bronchi, one to each lung, and these branch again and again into bronchioles that end in clusters of alveoli, the tiny air sacs where gas exchange happens.\n\nVentilation is a pressure pump. To breathe in, the diaphragm contracts and flattens and the intercostal muscles between the ribs contract and lift the rib cage up and out, so the volume of the chest increases; the pressure inside falls below the pressure outside and air flows in. To breathe out quietly, both sets of muscles relax, the ribs fall and the diaphragm domes upward, the volume falls and the air is pushed out; breathing out hard also uses the muscles of the abdominal wall.\n\nThe alveoli are the exchange surface, and every feature of them raises the rate of diffusion. There are some 300 million of them, giving a total surface of about 70 square metres inside a chest; each wall is one cell thick; the surface is moist, so the gases dissolve before they cross; and each alveolus is wrapped in a dense net of capillaries, so blood rich in oxygen is carried away and replaced by blood short of it. Oxygen diffuses from the alveolar air into the blood because its concentration there is higher, and carbon dioxide diffuses the other way, from the blood into the air. The blood then carries the oxygen to the tissues, where cells use it to release energy from food. How that release happens inside the cell is not repeated here; the point of breathing is to make it possible.\n\nThe air that leaves the lungs differs measurably from the air that went in. Inhaled air is about 21 per cent oxygen and 0.04 per cent carbon dioxide; exhaled air is about 16 per cent oxygen and 4 per cent carbon dioxide, is warmer and carries much more water vapour, which is why a cold window mists when you breathe on it. Breathing is measured too: tidal volume is the air moved in one quiet breath, about 500 cubic centimetres in an adult; vital capacity is the largest volume that can be forced out after the deepest possible breath; and residual volume is the air that never leaves the lungs. A spirometer or a peak flow meter measures these, and a person with asthma or emphysema has a smaller vital capacity and moves air out more slowly. The rate of breathing is set in the medulla of the brain, which responds mainly to the level of carbon dioxide in the blood: in exercise carbon dioxide rises, the medulla signals deeper and faster breathing, and the extra oxygen and faster removal of carbon dioxide keep pace with the muscles.",
+        "objectives": [
+          "Describe the path of air from the nose to the alveoli and name the structure that keeps the trachea open",
+          "Explain ventilation in terms of the diaphragm, the ribs and the pressure inside the chest",
+          "Explain how the structure of an alveolus makes gas exchange fast, and compare inhaled with exhaled air",
+          "Define tidal volume and vital capacity, and explain how the rate of breathing is controlled"
+        ],
+        "concepts": [
+          "Ventilation",
+          "Trachea",
+          "Bronchus",
+          "Bronchiole",
+          "Alveolus",
+          "Diaphragm",
+          "Intercostal muscles",
+          "Diffusion",
+          "Tidal volume",
+          "Vital capacity",
+          "Spirometer",
+          "Medulla"
+        ],
+        "experiment": {
+          "type": "interactive-pathway",
+          "description": "One Breath In: Arrange the stages of breathing in the order the air meets them."
+        }
+      },
+      {
+        "id": "is-l11-4",
+        "title": "Air Quality and Respiratory Health: Pollution, Asthma and Prevention",
+        "content": "Clean air is mostly nitrogen and oxygen. Polluted air carries substances that harm living things, and the respiratory tract suffers most because it is the first tissue they meet. The main pollutants are particulate matter, the tiny solid and liquid particles that can be breathed in, of which the smallest, PM2.5, are under 2.5 micrometres across and reach the alveoli; carbon monoxide, from incomplete burning; sulphur dioxide, from burning fuels that contain sulphur, such as diesel and some furnace oils; nitrogen oxides, from vehicle engines and from any flame hot enough to combine the gases of the air; ground-level ozone, which is not released directly but formed when nitrogen oxides and other pollutants react in sunlight; and biological particles such as pollen, mould spores and dust.\n\nThe sources are close to home in the Caribbean. Vehicle exhaust in town traffic, the burning of household refuse, tyres and cane fields, smoke from charcoal and firewood stoves in kitchens that are not ventilated, dust blown across the Atlantic from the Sahara in the dry months, and ash from a volcano all contribute. Tobacco smoke is the pollutant a person can most easily remove from their own air, and second-hand smoke exposes everyone else in the room.\n\nEach pollutant has its own effect. Particles irritate and inflame the lining of the airways and are a main trigger of asthma attacks. Carbon monoxide binds to haemoglobin far more strongly than oxygen does, so the blood carries less oxygen and the heart and brain are starved of it, which is why a stove in a closed room or a car left running in a closed garage is dangerous. Sulphur dioxide and ozone inflame the airways and make asthma and bronchitis worse. Long exposure to smoke and dust causes chronic bronchitis and emphysema, in which the walls of the alveoli are destroyed and the surface for gas exchange is permanently reduced. Children, elderly people, pregnant women and people who already have asthma or heart disease are most at risk, because their lungs are small, still developing or already damaged.\n\nImproving air quality works at three levels. At the source, lead has been taken out of petrol, catalytic converters and cleaner fuels cut vehicle emissions, factories fit filters and scrubbers, and a community that collects refuse gives people no reason to burn it in the yard. In the home, a stove with a chimney or a hood, and windows opened while cooking, keep smoke out of the lungs, and damp and mould are cleaned and ventilated away. At the level of the person, avoiding hard exercise beside a busy road at rush hour and not smoking indoors both lower the dose inhaled. Air quality is measured and reported as an index so that people with asthma know when to stay indoors, and lichens on trees and walls serve as a rough biological indicator, because most lichens cannot survive where sulphur dioxide is high.",
+        "objectives": [
+          "Name the main air pollutants and identify their sources in the Caribbean",
+          "Explain how each pollutant harms the respiratory system, and say who is most at risk",
+          "Describe the measures at the source, in the home and by the individual that improve air quality",
+          "Explain why carbon monoxide is dangerous even though it has no smell"
+        ],
+        "concepts": [
+          "Particulate matter",
+          "PM2.5",
+          "Carbon monoxide",
+          "Sulphur dioxide",
+          "Nitrogen oxides",
+          "Ground-level ozone",
+          "Asthma",
+          "Emphysema",
+          "Chronic bronchitis",
+          "Catalytic converter",
+          "Air quality index",
+          "Bio-indicator"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Pollutant and Effect: Match each air pollutant to the harm it does."
+        }
+      }
+    ]
   },
   {
     "id": "is-a6",
     "title": "Excretion and Sensory Systems",
-    "lessons": []
+    "lessons": [
+      {
+        "id": "is-l12-1",
+        "title": "Excretion: The Kidneys, the Skin and the Lungs",
+        "content": "Excretion is the removal from the body of the waste products of metabolism, the substances made inside cells that the body cannot use. It is not egestion, which is the passing out of undigested food that never entered the cells, and it is not secretion, which is the release of a useful substance such as a hormone or a digestive enzyme. Carbon dioxide and water are made in every cell that respires and leave through the lungs. Urea is made in the liver from surplus amino acids and leaves in the urine. Salts and water leave in sweat, and bile pigments from the breakdown of worn-out red blood cells leave in bile.\n\nThe kidneys are the main excretory organs. Each is supplied by a renal artery and drained by a renal vein, and each contains about a million nephrons, the tiny tubes in which urine is made. Blood at high pressure is forced through the glomerulus, a knot of capillaries inside the cup-shaped Bowman's capsule, and water, glucose, salts and urea are squeezed out into the capsule while blood cells and large proteins are held back: this is ultrafiltration. As the fluid runs along the tubule, useful substances are taken back into the blood by selective reabsorption, all of the glucose, most of the salts and much of the water, so that only the waste and the surplus are left. What remains is urine. It drains from the collecting ducts to the pelvis of the kidney, down the ureter, into the bladder, where it is stored, and out through the urethra.\n\nWater balance is part of the same machinery. If the body is short of water, the pituitary gland releases more ADH, antidiuretic hormone, which makes the collecting ducts reabsorb more water, so a small volume of concentrated urine is produced. If a person has drunk a great deal, less ADH is released, more water stays in the urine and a large dilute volume is passed. This is negative feedback: the change is detected and the response cancels it. When the kidneys fail, waste builds up in the blood, and the person is kept alive either by dialysis, in which blood is passed through a machine that removes urea and excess salts across a selectively permeable membrane, or by a kidney transplant.\n\nThe skin and the lungs excrete as well. Sweat contains water, salts and a little urea, and the evaporation of sweat is also the body's main way of losing heat, which is why the sweat glands and the blood vessels of the skin are part of temperature control. The lungs remove the carbon dioxide and water vapour that respiration produces. The liver is not an excretory organ in the strict sense, but it prepares waste for excretion: by deamination it turns surplus amino acids into urea and a carbohydrate that can be respired, and it breaks down alcohol, drugs and worn-out red blood cells.",
+        "objectives": [
+          "Distinguish excretion from egestion and from secretion, with an example of each",
+          "Describe ultrafiltration in the glomerulus and selective reabsorption in the tubule",
+          "Explain how ADH controls the water content of the blood by negative feedback",
+          "Name the waste that the lungs, the skin, the kidneys and the liver remove"
+        ],
+        "concepts": [
+          "Excretion",
+          "Egestion",
+          "Secretion",
+          "Urea",
+          "Deamination",
+          "Nephron",
+          "Glomerulus",
+          "Bowman's capsule",
+          "Ultrafiltration",
+          "Selective reabsorption",
+          "ADH",
+          "Negative feedback",
+          "Dialysis"
+        ],
+        "experiment": {
+          "type": "interactive-pathway",
+          "description": "From Blood to Bladder: Arrange the stages of making and passing urine in order."
+        }
+      },
+      {
+        "id": "is-l12-2",
+        "title": "Sense Organs and Sight: How the Eye Focuses and Sees",
+        "content": "A sense organ is a group of receptor cells, with the structures that protect and support them, that responds to one particular kind of stimulus and sends nerve impulses to the brain. Receptors are named for the stimulus they detect: photoreceptors in the eye respond to light, mechanoreceptors in the ear and the skin to sound, touch and pressure, chemoreceptors in the nose and the tongue to chemicals, and thermoreceptors in the skin to temperature. The eye is the organ of sight, and its job is to focus light from the outside world onto a sheet of photoreceptors and send the pattern to the brain.\n\nLight passes first through the cornea, the clear curved front of the eye, which does most of the bending; then through the aqueous humour and the pupil, the hole whose size is set by the iris, the coloured ring of muscle that narrows the pupil in bright light and widens it in dim light; then through the lens, which fine-tunes the focus; and through the jelly-like vitreous humour to the retina at the back. The retina holds two kinds of photoreceptor. Rods work in dim light and see in black and white, and they are spread over most of the retina. Cones need bright light, detect colour and give sharp detail, and they are concentrated at the fovea, the point where the image is sharpest. The impulses leave the retina along the optic nerve, and the two optic nerves cross so that the brain can compare the two images, which is what gives depth and distance.\n\nFocusing is an active process. To see something close, the ciliary muscle contracts, which slackens the suspensory ligaments and lets the lens become thicker and more curved, so it bends the light more strongly. To see something far away, the ciliary muscle relaxes, the ligaments pull the lens thin and it bends the light less. When the focus is wrong, the image falls in front of or behind the retina. A short-sighted person sees near objects clearly but distant ones blurred, because the eyeball is too long or the lens too strong, and a concave lens corrects it. A long-sighted person sees distant objects clearly but near ones blurred, and a convex lens corrects it. Astigmatism is an unevenly curved cornea, a cataract is a clouded lens, and glaucoma is raised pressure inside the eye that damages the optic nerve and can take the sight without any pain.\n\nThe eye is easily damaged and much of the damage can be prevented. Vitamin A is needed to make the pigment rhodopsin in the rods, and a diet short of it causes night blindness and, in a child, can lead to permanent blindness, which is one reason a varied diet matters. Working for long periods at a screen or at a book held too close tires the ciliary muscle and causes temporary blurring and headache, so regular breaks and good light help. Dust, grit and sparks injure the surface of the eye, so goggles should be worn when grinding, welding or playing some sports, and a chemical in the eye must be washed out at once with clean water and medical help found immediately.",
+        "objectives": [
+          "Name the receptors for light, sound, chemicals and temperature",
+          "Describe the path of light through the eye to the retina and the job of each part",
+          "Explain how the eye focuses on near and on distant objects, and how short sight and long sight are corrected",
+          "Relate the care of the eye to vitamin A, to injury and to long hours of close work"
+        ],
+        "concepts": [
+          "Sense organ",
+          "Photoreceptor",
+          "Cornea",
+          "Iris",
+          "Pupil",
+          "Lens",
+          "Retina",
+          "Rods",
+          "Cones",
+          "Fovea",
+          "Optic nerve",
+          "Ciliary muscle",
+          "Myopia",
+          "Hypermetropia",
+          "Rhodopsin"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Parts of the Eye: Match each part of the eye to the job it does."
+        }
+      },
+      {
+        "id": "is-l12-3",
+        "title": "Hearing and Control Systems: The Ear, Nerves and Hormones",
+        "content": "Sound is a wave of pressure changes in the air, and the ear turns those changes into nerve impulses. The pinna, the visible flap, collects the waves and funnels them along the auditory canal to the eardrum, a thin membrane that vibrates in step with them. Three tiny bones, the malleus, incus and stapes, the smallest bones in the body, carry the vibration across the middle ear and amplify it, and the stapes pushes on the oval window of the cochlea. The cochlea is a coiled, fluid-filled tube lined with hair cells; the pressure waves bend the hairs, and the hair cells send impulses along the auditory nerve to the brain, which is where the sound is at last interpreted. The Eustachian tube connects the middle ear to the back of the throat and keeps the air pressure on both sides of the eardrum equal, which is why swallowing or yawning clears the ears in a plane or in the hills. Three semicircular canals, at right angles to one another and filled with fluid, are the organ of balance and tell the brain when the head turns or tilts.\n\nHearing has limits, and it can be lost. A young person hears from about 20 hertz to 20 000 hertz, and the upper limit falls with age. Loud sound damages the hair cells of the cochlea and they do not grow back, so the loss is permanent: a sound of 85 decibels or more through a working day, or a very loud burst such as a firecracker or a personal stereo at full volume, does harm that is not felt at the time. Ear protection, a lower volume and moving away from the source are the sensible answers, and a discharge from the ear, a sudden loss of hearing or ringing that does not settle needs medical attention.\n\nControl systems keep the body's internal conditions steady, and there are two of them. The nervous system is fast and electrical: receptors detect a stimulus, sensory neurones carry impulses to the spinal cord or the brain, and motor neurones carry impulses to a muscle or a gland, which is the effector. A reflex action, such as pulling the hand away from a hot pot, uses a shortcut through the spinal cord, so the response comes before the pain is felt. The endocrine system is slower and chemical: glands secrete hormones into the blood, which carries them to the organs they act on. The two systems work together, because the brain controls the glands.\n\nThe pattern both of them use is negative feedback, in which a change is detected and a response reverses it. Blood glucose is the standard example. After a meal the level rises, the pancreas releases insulin, insulin makes cells take up glucose and the liver store it as glycogen, and the level falls. When the level falls too low the pancreas releases glucagon, which releases glucose from the glycogen store, and the level rises again. Diabetes results when insulin is not made in sufficient quantity or when the cells no longer respond to it. Blood water content, controlled by ADH from the pituitary, body temperature and the level of thyroxine, the hormone that sets the rate at which cells respire, are all held steady in the same way, each with its own detector, its own hormone and its own response.",
+        "objectives": [
+          "Describe the path of sound from the pinna to the auditory nerve and name the function of each part",
+          "Explain how loud sound damages hearing permanently, and how that damage can be prevented",
+          "Compare the nervous system with the endocrine system as control systems",
+          "Explain negative feedback using blood glucose, insulin and glucagon as the example"
+        ],
+        "concepts": [
+          "Pinna",
+          "Eardrum",
+          "Ossicles",
+          "Cochlea",
+          "Hair cells",
+          "Auditory nerve",
+          "Eustachian tube",
+          "Semicircular canals",
+          "Decibel",
+          "Reflex action",
+          "Neurone",
+          "Hormone",
+          "Insulin",
+          "Glucagon",
+          "Negative feedback"
+        ],
+        "experiment": {
+          "type": "interactive-pathway",
+          "description": "How a Sound Reaches the Brain: Arrange the stages in the order the vibration travels."
+        }
+      }
+    ]
   },
   {
     "id": "is-a7",
     "title": "Environmental Health and Waste Management",
-    "lessons": []
+    "lessons": [
+      {
+        "id": "is-l13-1",
+        "title": "Personal and Community Hygiene: Clean Hands, Water and Sanitation",
+        "content": "Hygiene is the set of practices that keep the body, food, water and surroundings free of the organisms that cause disease. Personal hygiene is what a person does for themselves; community hygiene, or sanitation, is what a household, a school or a district does together, and neither works on its own. Most of the diseases that hygiene prevents travel by a route that can be named, and naming the route shows which practice breaks it.\n\nThe faecal-oral route is the commonest. A person with cholera, typhoid, dysentery or hepatitis A passes the organism in their faeces, and if that reaches water or food the next person swallows it. The practices that break this route are hand washing with soap after using the toilet and before handling food, safe disposal of faeces in a latrine or a sewer, treatment of drinking water, and washing fruit and vegetables. Hand washing has to be done properly, not as a quick rinse: wet the hands, use soap, rub the palms, the backs, between the fingers and under the nails for at least twenty seconds, rinse, and dry on a clean cloth or in the air.\n\nOther routes need other practices. Tuberculosis and influenza travel in droplets from a cough or a sneeze, so covering the mouth and nose and ventilating rooms matter, and a cough lasting more than two weeks should be investigated. Dengue is carried by the Aedes aegypti mosquito, which breeds in any container that holds water, in old tyres, drums, flower pots, gutters and discarded cups, so the community practice is to empty, scrub or cover every water container once a week. Malaria, carried by the Anopheles mosquito, breeds in pools and slow drains, which are cleared and filled. Ringworm and scabies pass by skin contact and by shared towels and combs. Leptospirosis, a bacterial infection that brings fever and jaundice, is spread when the urine of infected rats reaches water or food, so refuse must not be left where rats can reach it and flood water should not be waded through with open cuts.\n\nSome hygiene is about the body's own surfaces. Teeth are cleaned twice a day with a fluoride toothpaste to remove the plaque in which bacteria make the acid that causes decay, and dental caries is still one of the commonest diseases of childhood. Bathing removes sweat, dirt and skin organisms, and clean, dry clothing prevents fungal infections between the toes and in skin folds. A food handler should be free of open sores and of diarrhoea, and anyone preparing food for a group should not do so while ill.\n\nCommunity hygiene is a matter of infrastructure and inspection as much as of habit: a piped, chlorinated water supply; sewers or well-built latrines sited well away from wells; refuse collected on a schedule; standing water drained; rats and mosquitoes controlled; and a public health inspector with the power to close an unsafe food business. Health education, and a school that keeps its own compound clean, is what turns the rules into practice.",
+        "objectives": [
+          "Distinguish personal hygiene from community hygiene and explain why both are needed",
+          "Trace the faecal-oral route and name the practices that break it",
+          "Match dengue, tuberculosis, leptospirosis and ringworm to the route by which each spreads",
+          "Describe the community infrastructure and inspection that keep a district healthy"
+        ],
+        "concepts": [
+          "Hygiene",
+          "Sanitation",
+          "Faecal-oral route",
+          "Vector",
+          "Aedes aegypti",
+          "Anopheles",
+          "Leptospirosis",
+          "Plaque",
+          "Dental caries",
+          "Chlorination",
+          "Public health inspector"
+        ],
+        "experiment": {
+          "type": "drag-drop",
+          "description": "Whose Job Is It: Sort each hygiene practice into personal or community."
+        }
+      },
+      {
+        "id": "is-l13-2",
+        "title": "Pest and Food Contamination Control: Keeping Pests Out of Food",
+        "content": "A pest is an organism that competes with people for food, damages property or carries disease. In and around a Caribbean home the main ones are insects, the housefly, the mosquito, the cockroach and the grain weevil; rodents, above all the rat; and, on the farm, weeds, aphids, nematodes and the fungi that cause rusts and blights. They matter for three reasons: they eat or spoil a large share of the food that is grown and stored, they damage buildings and packaging, and several of them carry pathogens from filth to food or from one person to another.\n\nThe housefly lands on refuse and on faeces, and the hairs on its legs and its habit of vomiting digestive juices onto what it is about to eat carry bacteria such as Salmonella and Escherichia coli onto the next surface it walks on, which is why food left uncovered is unsafe. The rat contaminates grain and flour with urine and droppings and can pass leptospirosis and salmonellosis, and it gnaws packaging and electric cable. The cockroach lives in cracks and drains, feeds on scraps at night and then walks over food and utensils. The grain weevil lays its eggs inside stored grain and the larvae eat the seed out from the inside. Fungi grow on damp grain, and some of them make mycotoxins, poisons that remain in the food after the mould itself has been killed.\n\nControl works best when several methods are used together, and that is what integrated pest management means. Physical control keeps the pest out or takes it out: window screens, fly swats and sticky traps, sealed metal or heavy plastic containers for grain and flour, refuse bins with tight lids, and rubbish cleared away so that there is nothing to breed in. Cultural and sanitary control removes the conditions a pest needs: standing water drained, long grass cut, drains cleaned, crops rotated and the soil ploughed to expose soil pests, and food stored off the floor. Biological control uses the pest's natural enemies: ladybirds and lacewings against aphids, parasitic wasps against caterpillars, and Bacillus thuringiensis israelensis, a bacterium sold as a larvicide that kills mosquito larvae and very little else. Chemical control uses insecticides, rodenticides and fungicides; it acts fastest and is the most easily misused. A pesticide that kills the pest's natural enemies as well as the pest makes the next outbreak worse, insects and rats become resistant when one chemical is used repeatedly, and a pesticide applied to a crop close to harvest leaves a residue that people then eat. The label must be followed exactly, protective clothing worn, baits set where children and animals cannot reach them, and containers never reused for food or water.\n\nContamination of food is prevented by breaking the chain between the pest and the food. Store food in sealed containers off the floor and away from the walls, use the oldest stock first, inspect grain for holes and webbing, keep food covered in the kitchen, keep the refuse bin away from the kitchen door, screen the windows, keep the drains clear, and clean up crumbs and spills each night. Food that a pest has touched, or that shows signs of infestation, is thrown away, because the pathogens on it cannot be seen.",
+        "objectives": [
+          "Name the common household and farm pests and say why each one is a pest",
+          "Explain how the housefly and the rat carry pathogens to food",
+          "Describe physical, cultural, biological and chemical control, and the risks that come with chemical control",
+          "Apply pest-proof storage and cleaning practices that keep food free of contamination"
+        ],
+        "concepts": [
+          "Pest",
+          "Vector",
+          "Integrated pest management",
+          "Biological control",
+          "Insecticide",
+          "Rodenticide",
+          "Resistance",
+          "Mycotoxin",
+          "Grain weevil",
+          "Bacillus thuringiensis",
+          "Residue"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Pest and Control: Match each pest to the control that works against it."
+        }
+      },
+      {
+        "id": "is-l13-3",
+        "title": "Waste Management and Environmental Impact: Landfill, Burning and Recycling",
+        "content": "Waste is material that its owner has discarded. Households, markets, shops, schools, hospitals, farms and factories all produce it, and what it is made of decides what can safely be done with it. Domestic refuse is largely organic: food peelings, paper, cardboard, plastics, glass and metal. Sewage and grey water are liquid waste. Factories and vehicles release gaseous waste. Batteries, paints, solvents, pesticides, medicines and electronic equipment are hazardous, because they contain metals and chemicals that poison living things at very low concentrations.\n\nWhere waste goes matters more than how much of it there is, because the environment reacts to what it receives. In an open dump, rain percolates through the refuse and carries dissolved and suspended matter down through it as leachate; where the ground below is permeable the leachate reaches the groundwater that wells and springs draw from, and nitrates and heavy metals appear in the drinking water. Rotting refuse in a dump generates methane, a greenhouse gas with about twenty-five times the warming effect of carbon dioxide over a hundred years, and the dump heats up and may catch fire. Burning refuse in the open, which is common in yards and at dumps, releases fine particles and, where plastics and cable are burned, dioxins and heavy metals. Waste that is not collected blocks drains and gullies, and the first heavy rain then floods the street. The same standing water and food waste breed rats, flies and mosquitoes. Plastic carried to the sea entangles fish, turtles and seabirds and breaks down into microplastics that enter the food chain. Sewage discharged into a river or the sea raises the nutrient level, algae bloom, and the decay that follows uses up the oxygen the fish need.\n\nA sanitary landfill is engineered to prevent these effects. It is sited away from watercourses and on a clay or synthetic liner, the waste is compacted and covered with soil each day, leachate is collected and treated, and the methane is flared or drawn off and used as fuel. Incineration reduces the volume greatly and can generate electricity, but the emissions must be cleaned and the ash, which concentrates heavy metals, must still be landfilled. Composting and anaerobic digestion return the organic fraction to the soil as compost or capture biogas for cooking, and recycling recovers aluminium, glass, paper and plastic, saving both the raw material and the energy needed to make it: recycling aluminium takes only a small fraction of the energy needed to smelt it from the ore.\n\nManaging waste well is therefore a system and not a single act: separate at the source so that hazardous and recyclable material never enters the general stream, collect on a schedule, treat or dispose of each stream in the way that suits it, and inspect the result. In Jamaica the national solid-waste agency and the parish councils run collection and approved disposal sites, and the ban on single-use plastic carrier bags in 2018 and on styrofoam food containers in 2019 was aimed at the two items that most often escape collection. A school or a household can measure its own choices with a waste audit: weigh and sort a week of refuse, and see how much could have been composted, recycled, or never bought at all.",
+        "objectives": [
+          "Classify waste as domestic, liquid, gaseous or hazardous, with an example of each",
+          "Explain how leachate, methane, open burning, plastic in the sea and sewage damage the environment",
+          "Describe how a sanitary landfill and an incinerator are built to reduce that damage",
+          "Evaluate separation at source, composting, recycling and scheduled collection as one waste system"
+        ],
+        "concepts": [
+          "Waste",
+          "Leachate",
+          "Sanitary landfill",
+          "Methane",
+          "Incineration",
+          "Composting",
+          "Anaerobic digestion",
+          "Recycling",
+          "Microplastic",
+          "Eutrophication",
+          "Dioxin",
+          "Waste audit"
+        ],
+        "experiment": {
+          "type": "drag-drop",
+          "description": "Three Bins: Sort each item of waste into biodegradable, recyclable or hazardous."
+        }
+      }
+    ]
   },
   {
     "id": "is-b1",
