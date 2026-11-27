@@ -49,7 +49,7 @@
 // the control is FOR still checks anything.
 //
 // Usage
-//   node tools/check-integrated-science-modules.mjs                  # the real check + all 15 red controls
+//   node tools/check-integrated-science-modules.mjs                  # the real check + all 16 red controls
 //   node tools/check-integrated-science-modules.mjs --no-red-control # the real check only
 //   node tools/check-integrated-science-modules.mjs --red-control lesson-dropped
 import fs from "node:fs";
@@ -149,16 +149,23 @@ export const NEW_LESSONS = {
   "is-a2": ["is-l8-1", "is-l8-2", "is-l8-3", "is-l8-4", "is-l8-5"],
   "is-a3": ["is-l9-1", "is-l9-2", "is-l9-3"],
   "is-a4": ["is-l10-1", "is-l10-2", "is-l10-3", "is-l10-4"],
+  "is-a5": ["is-l11-1", "is-l11-2", "is-l11-3", "is-l11-4"],
+  "is-a6": ["is-l12-1", "is-l12-2", "is-l12-3"],
+  "is-a7": ["is-l13-1", "is-l13-2", "is-l13-3"],
 };
 export const NEW_LESSON_IDS = Object.values(NEW_LESSONS).flat();
 
-// Three of the 18 already taught a chapter of the owner's list under a title that did not name it. The
-// chapter build sharpened exactly those titles to the wording below and no others: the ids are untouched,
-// and every other field of every one of the 18 lessons is still byte-unchanged.
+// Of the 18 re-homed lessons, three already taught a chapter of the owner's list under a title that did
+// not name it, so the chapter build sharpened those titles to the wording below and no others: the ids
+// are untouched, and every other field of every one of the 18 lessons is still byte-unchanged.
+// is-l2-2 was sharpened twice. Part 1 gave it "... Respiration and Transport" because it does teach
+// cellular respiration; when the coverage harness widened from part 1's four modules to the whole of
+// Section A, that title was caught claiming "Respiration", a chapter of is-a5, from inside is-a3. The
+// lesson still teaches respiration — the title now names the chapters it owns and no more.
 export const SHARPENED_TITLES = {
   "is-l2-1": "Cell Structure and Function, and Cell Transport",
   "is-l3-1": "Properties of States of Matter",
-  "is-l2-2": "Photosynthesis, the Importance of Food and Diet, Respiration and Transport",
+  "is-l2-2": "Photosynthesis, the Importance of Food and Diet, and Transport in Plants and Animals",
 };
 
 /** Read a file as it stands on origin/main. Never a copy: a hardcoded baseline proves nothing. */
@@ -431,6 +438,13 @@ export const RED_CONTROLS = {
     from.lessons = from.lessons.filter((l) => l.id !== "is-l8-1");
     st.modules.find((x) => x.id === "is-a1").lessons.push({ id: "is-l8-1", title: "Asexual and Sexual Reproduction" });
   },
+  // the same defect in the last module of Section A: is-l13-3 is dragged out of is-a7 into is-a6
+  "new-lesson-moved-from-a7": (st) => {
+    const from = moduleOf(st, "is-l13-3");
+    const l = from.lessons.find((x) => x.id === "is-l13-3");
+    from.lessons = from.lessons.filter((x) => x.id !== "is-l13-3");
+    st.modules.find((x) => x.id === "is-a6").lessons.push(clone(l));
+  },
   // a lesson appears that no slice ever declared
   "undeclared-lesson": (st) => {
     st.modules.find((x) => x.id === "is-b6").lessons.push({ id: "is-zz-1", title: "A lesson nobody declared" });
@@ -464,6 +478,10 @@ export const RED_EXPECT = {
   "new-lesson-moved": [
     "module is-a2 holds the lessons this build declares for it (is-l8-1, is-l8-2, is-l8-3, is-l8-4, is-l8-5; found is-l8-2, is-l8-3, is-l8-4, is-l8-5)",
     "module is-a1 holds no chapter-build lesson that another module declares (found: is-l8-1)",
+  ],
+  "new-lesson-moved-from-a7": [
+    "module is-a7 holds the lessons this build declares for it (is-l13-1, is-l13-2, is-l13-3; found is-l13-1, is-l13-2)",
+    "module is-a6 holds no chapter-build lesson that another module declares (found: is-l13-3)",
   ],
   "undeclared-lesson": ["no lesson appears that this harness has never heard of (unexpected: is-zz-1)"],
 };
