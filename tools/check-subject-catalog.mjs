@@ -21,6 +21,13 @@
 //   5. content/ and public/content/ are byte-identical, both directions, for
 //      every file — the mirror is what the browser actually fetches
 //   6. the catalog is what the app reads, and the known consumers know french
+//   7. the module rule: EVERY module of EVERY subject holds at least one lesson
+//      (a module with no lesson is a button that opens nothing). Integrated
+//      Science ships the owner's 24-module plan ahead of its chapter build, so
+//      its empty modules are declared by id in DECLARED_EMPTY_MODULES — declared,
+//      not merely allowed, so the set cannot drift in either direction. Three
+//      red controls prove the three directions fail (they run by default;
+//      --no-red-control is the only opt-out).
 //
 // Run it after any catalog or content change: one subject = one PR, and this is
 // the check that a subject PR did not forget the catalog.
@@ -54,6 +61,10 @@ const sha = (p) => createHash("sha256").update(readFileSync(p)).digest("hex");
 
 const CATALOG = "content/subjects.json";
 const MIRROR = "public/content/subjects.json";
+
+// Red controls run by default — a control the suite never runs is not a guard.
+// --no-red-control is the only opt-out, and both halves share one exit code.
+const RED_CONTROLS = !process.argv.includes("--no-red-control");
 
 // Cosmetic catalog/metadata drift found along the way — reported, not failed
 // (every one of these predates this harness; see the summary at the end).
@@ -108,6 +119,46 @@ check(
     : `catalog entries with no content: ${missingContent.join(", ")}`
 );
 
+// The one subject whose module shape is deliberately ahead of its lessons.
+// These eleven modules are NAMED, not merely tolerated: the guard stays strict
+// for every other module of every other subject, and it also fails if one of
+// these stops being empty (a lesson landed, so the declared set is out of date).
+// Integrated Science ships the owner's 24-module plan; 13 of them have lessons.
+const DECLARED_EMPTY_MODULES = {
+  "integrated-science": [
+    "is-a2", "is-a4", "is-a5", "is-a6", "is-a7",
+    "is-b6", "is-b7", "is-b9",
+    "is-c1", "is-c6", "is-c7",
+  ],
+};
+
+// Pure, so the red controls can drive it with synthetic data instead of mutating
+// the tree. Returns every problem it finds, as readable sentences.
+function moduleShapeProblems(modules, declaredEmpty) {
+  if (!Array.isArray(modules) || modules.length === 0) return ["modules.json is not a non-empty array"];
+  const problems = [];
+  const present = new Set(modules.map((m) => m.id));
+  const empty = [];
+  for (const m of modules) {
+    const label = m.id || "(module with no id)";
+    if (!m.id || !m.title || !Array.isArray(m.lessons)) {
+      problems.push(`${label} has no id, title or lessons array`);
+      continue;
+    }
+    if (!m.lessons.every((l) => l.id && l.title)) problems.push(`${label} has a lesson with no id or title`);
+    if (m.lessons.length === 0) empty.push(m.id);
+  }
+  for (const mid of empty) {
+    if (!declaredEmpty.includes(mid)) problems.push(`module ${mid} holds no lesson and is not declared empty`);
+  }
+  for (const mid of declaredEmpty) {
+    if (!present.has(mid)) problems.push(`declared-empty module ${mid} does not exist`);
+    else if (!empty.includes(mid)) problems.push(`declared-empty module ${mid} now holds lessons, so the declared set is out of date`);
+  }
+  if (modules.flatMap((m) => m.lessons || []).length === 0) problems.push("the subject holds no lesson at all");
+  return problems;
+}
+
 for (const subject of catalog) {
   const id = subject.id;
   const dir = join(root, "content", id);
@@ -116,17 +167,13 @@ for (const subject of catalog) {
   const modules = readJson(join(dir, "modules.json"));
   const lessons = modules.flatMap((m) => m.lessons || []);
   const lessonIds = lessons.map((l) => l.id);
-  const structureOk =
-    Array.isArray(modules) &&
-    modules.length > 0 &&
-    // Every module carries an id, a title and a real lessons array. It may be EMPTY: Integrated Science
-    // ships the owner's 24-module shape ahead of its chapter build, so a module can be waiting for its
-    // lessons. What must never happen is a subject with no lesson at all (below), or a module whose
-    // `lessons` key is missing — that is the defect this line exists for.
-    modules.every((m) => m.id && m.title && Array.isArray(m.lessons)) &&
-    lessons.length > 0 &&
-    lessons.every((l) => l.id && l.title);
-  check(structureOk, `${id}: modules have ids, titles and lessons`);
+  const shapeProblems = moduleShapeProblems(modules, DECLARED_EMPTY_MODULES[id] || []);
+  check(
+    shapeProblems.length === 0,
+    shapeProblems.length === 0
+      ? `${id}: every module holds an id, a title and its lessons, and the empty-module set matches the declared one`
+      : `${id}: ${shapeProblems.join("; ")}`
+  );
   check(
     new Set(lessonIds).size === lessonIds.length,
     `${id}: lesson ids are unique (${lessons.length} lessons in ${modules.length} modules)`
@@ -250,5 +297,63 @@ console.log(
       : "")
 );
 
-console.log(`\n${pass} passed, ${fail} failed`);
+// --- 7. red controls: the module rule bites in all three directions --------
+// Each control mutates a COPY of real tree data and names the exact failure it
+// exists for. A control whose pinned failure does not appear counts as NOT
+// CAUGHT, so a control that stops aiming at its rule reds the run instead of
+// passing quietly.
+console.log("\n== red controls");
+const isModules = readJson(join(root, "content", "integrated-science", "modules.json"));
+const isDeclared = DECLARED_EMPTY_MODULES["integrated-science"];
+// A finished subject, to prove the rule still binds everyone but Integrated
+// Science: the first catalog subject that ships modules.
+const strictSubject = ids.find((sid) => sid !== "integrated-science" && existsSync(join(root, "content", sid, "modules.json")));
+const strictModules = strictSubject ? readJson(join(root, "content", strictSubject, "modules.json")) : [];
+const clone = (v) => JSON.parse(JSON.stringify(v));
+
+let notCaught = 0;
+function control(name, expected, run) {
+  if (!RED_CONTROLS) {
+    console.log(`  - ${name} (skipped: --no-red-control)`);
+    return;
+  }
+  const problems = run();
+  if (problems.some((p) => p.includes(expected))) ok(`${name} — caught: "${expected}"`);
+  else {
+    notCaught++;
+    bad(`${name} — NOT CAUGHT: expected a problem containing "${expected}", got ${problems.length ? JSON.stringify(problems) : "none"}`);
+  }
+}
+
+// The controls read real data, so first prove that data can carry them: a
+// control whose subject or module is missing tests nothing.
+check(isModules.some((m) => Array.isArray(m.lessons) && m.lessons.length > 0), "a non-empty Integrated Science module exists for the control to empty");
+check(isModules.some((m) => isDeclared.includes(m.id)), "a declared-empty Integrated Science module exists for the control to revive");
+check(!!strictSubject, `a finished subject ships modules for the controls to bind (${strictSubject || "none found"})`);
+
+control("emptying one more Integrated Science module reds the run", "holds no lesson and is not declared empty", () => {
+  const mods = clone(isModules);
+  // Derived by shape, never by index: an inserted module must not aim this at
+  // the wrong one.
+  const victim = mods.find((m) => Array.isArray(m.lessons) && m.lessons.length > 0);
+  victim.lessons = [];
+  return moduleShapeProblems(mods, isDeclared);
+});
+
+control(`giving ${strictSubject} an empty module reds the run`, "holds no lesson and is not declared empty", () => {
+  const mods = clone(strictModules);
+  const victim = mods.find((m) => Array.isArray(m.lessons) && m.lessons.length > 0);
+  victim.lessons = [];
+  // No subject but Integrated Science may declare an empty module.
+  return moduleShapeProblems(mods, []);
+});
+
+control("writing a lesson into a declared-empty Integrated Science module reds the run", "now holds lessons", () => {
+  const mods = clone(isModules);
+  const revived = mods.find((m) => isDeclared.includes(m.id));
+  revived.lessons = [{ id: "red-control-lesson", title: "red control lesson" }];
+  return moduleShapeProblems(mods, isDeclared);
+});
+
+console.log(`\n${pass} passed, ${fail} failed${notCaught ? `, ${notCaught} red control(s) not caught` : ""}`);
 process.exit(fail === 0 ? 0 : 1);
