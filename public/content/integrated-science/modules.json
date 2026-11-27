@@ -28,7 +28,7 @@
       },
       {
         "id": "is-l2-1",
-        "title": "Cells and Life Processes",
+        "title": "Cell Structure and Function, and Cell Transport",
         "content": "All living things share a set of life processes: nutrition, respiration, movement, growth, excretion, reproduction, irritability (response to stimuli) and a constant internal environment. These processes are carried out by cells, the basic units of life. A typical plant or animal cell has a cell membrane that controls what enters and leaves, cytoplasm where reactions occur, and genetic material that directs the cell's activities. Plant cells also have a cellulose cell wall, a large vacuole for water and sap, and chloroplasts for photosynthesis in green parts.\n\nSubstances move in and out of cells by diffusion, osmosis and active transport. Diffusion is the spreading of particles from a high to a low concentration. Osmosis is the movement of water across a partially permeable membrane from a dilute to a more concentrated solution. Active transport moves substances against the gradient and requires energy from respiration. These processes explain why plant cells become turgid in fresh water and flaccid in salty water, and why animal cells can burst or shrivel.\n\nCells are organised into tissues, organs, systems and whole organisms, and the systems depend on one another. Studying the organism therefore means looking at how its parts work together and how it exchanges materials with its surroundings - the link to the next lesson, ecology.",
         "objectives": [
           "State the life processes common to all organisms",
@@ -58,7 +58,7 @@
       },
       {
         "id": "is-l3-1",
-        "title": "States of Matter and Changes",
+        "title": "Properties of States of Matter",
         "content": "Matter exists as solid, liquid or gas depending on how its particles are arranged and how much energy they have. In a solid the particles are packed closely in a fixed pattern and only vibrate; in a liquid they are close but free to slide past one another; in a gas they are far apart and move rapidly in all directions. This model explains the properties we observe: solids keep their shape, liquids take the shape of their container but keep their volume, and gases fill any container and are easily compressed.\n\nHeating transfers energy to the particles. At the melting point a solid becomes a liquid, and at the boiling point a liquid becomes a gas; cooling reverses the changes through condensation and freezing. During a change of state the temperature stays constant because the energy is being used to break the forces between particles rather than to raise the temperature. This is why a boiling pot stays at boiling point while heat continues to be supplied.\n\nThe particle model also explains diffusion: the smell of cooking spreading through a house, or a drop of ink spreading in water, happens because particles move randomly from where they are concentrated. Gases diffuse fastest because their particles move fastest and are furthest apart, and heating increases the rate of diffusion in every state.",
         "objectives": [
           "Describe the particle arrangement in solids, liquids and gases",
@@ -77,13 +77,171 @@
           "type": "heat-sim",
           "description": "Changes of State Match: Match each change of state to the process that causes it."
         }
+      },
+      {
+        "id": "is-l7-1",
+        "title": "Microbes and Their Impact",
+        "content": "Microbes are living things too small to see without a microscope, and they are not one group but several. Bacteria are single cells with no nucleus; they reproduce by splitting in two and can double their numbers in minutes when conditions suit them. Viruses are not cells at all - they are a piece of genetic material in a protein coat, and they can only reproduce inside a living host cell. Fungi include the yeasts that raise bread and the moulds that grow on old food, and protozoa are single-celled organisms such as the Plasmodium that causes malaria. Microbes live in soil, in water, in the air, on our skin and inside our gut, and most of them do us no harm.\n\nMany microbes are essential. Decomposers break down dead plants and animals and return minerals such as nitrates to the soil, so without them nutrients would never be recycled. Nitrogen-fixing bacteria living in the root nodules of peas and other legumes turn nitrogen gas from the air into nitrates the plant can use. Bacteria turn milk into yoghurt and cheese, yeast ferments sugar into alcohol and carbon dioxide so that bread rises, and moulds have given us antibiotics such as penicillin. Microbes are also used to treat sewage and to make biogas from waste.\n\nSome microbes are pathogens - disease-causing organisms. Cholera and typhoid spread in contaminated water, tuberculosis spreads in droplets from a cough, and the malaria protozoan is carried from person to person by mosquitoes. Food spoils when bacteria and moulds multiply in it, which is why food is cooked, refrigerated, dried, salted or sealed. Antibiotics kill bacteria but have no effect on viruses, so a viral cold cannot be cured with penicillin. Vaccination, clean water, safe food handling and hand washing are the main defences, because they stop pathogens reaching people at all.",
+        "objectives": [
+          "Describe the main groups of microbes and where they live",
+          "Explain beneficial uses of microbes in the environment, in food and in medicine",
+          "Explain how pathogens spread and how their spread is controlled"
+        ],
+        "concepts": [
+          "Bacteria",
+          "Virus",
+          "Fungus",
+          "Protozoa",
+          "Pathogen",
+          "Decomposer",
+          "Nitrogen fixation",
+          "Fermentation",
+          "Antibiotic",
+          "Vaccine"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Microbes at Work: Match each microbe or process to the use it is put to."
+        }
       }
     ]
   },
   {
     "id": "is-a2",
     "title": "Reproduction and Growth",
-    "lessons": []
+    "lessons": [
+      {
+        "id": "is-l8-1",
+        "title": "Asexual and Sexual Reproduction",
+        "content": "Reproduction is the process by which organisms produce new individuals of their own kind. In asexual reproduction one parent is enough and no gametes are involved: the offspring come from cell division or from growth of part of the parent, so they are genetically identical to it. Bacteria and Amoeba divide by binary fission, yeast buds off a small new cell, moulds release spores, and many plants spread by runners, tubers, bulbs or cuttings. Asexual reproduction is fast, needs no mate, and keeps a variety that already grows well exactly as it is.\n\nIn sexual reproduction two parents each contribute a gamete - a sex cell with half the normal number of chromosomes, made by meiosis. At fertilisation the male and female gametes fuse and form a zygote, which grows into a new individual with a full set of chromosomes and a mixture of both parents' genes. In flowering plants the male gamete is inside a pollen grain and the female gamete is the egg cell in an ovule; in humans the gametes are the sperm and the egg.\n\nThe two methods trade speed for variation. Asexual offspring are clones, so if a disease or a drought arrives a whole population may be equally vulnerable. Sexual reproduction produces offspring that all differ slightly, and that variation is the raw material of natural selection - a few may survive a new disease or a hotter season. Growers use this deliberately: they propagate a good variety of banana or sugar cane asexually so that it stays the same, and they cross plants sexually when they want to breed a new variety.",
+        "objectives": [
+          "Describe asexual reproduction and name examples in plants and microorganisms",
+          "Explain how gametes, meiosis and fertilisation produce a new individual",
+          "Compare asexual and sexual reproduction and explain the value of variation"
+        ],
+        "concepts": [
+          "Asexual reproduction",
+          "Binary fission",
+          "Budding",
+          "Spore",
+          "Vegetative propagation",
+          "Gamete",
+          "Meiosis",
+          "Fertilisation",
+          "Zygote",
+          "Variation"
+        ],
+        "experiment": {
+          "type": "drag-drop",
+          "description": "Asexual or Sexual: Sort each example of reproduction into the method it uses."
+        }
+      },
+      {
+        "id": "is-l8-2",
+        "title": "Sexual Reproduction in Plants and Humans",
+        "content": "In a flower the male parts are the stamens, each with an anther that produces pollen and a filament that holds it up; the female part is the carpel, with a stigma that receives pollen, a style, and an ovary containing ovules. Pollination is the transfer of pollen from an anther to a stigma. Insect-pollinated flowers have large coloured petals, scent and nectar to attract insects, and sticky pollen that clings to the insect's body; wind-pollinated flowers are small and dull, with light pollen in huge numbers and feathery stigmas that catch it. Some flowers self-pollinate, but cross-pollination brings together the genes of two different plants.\n\nAfter pollination a pollen tube grows down through the style and into an ovule, and the male gamete travels down it to fuse with the egg cell. The zygote formed becomes the embryo of a seed, the ovule becomes the seed with its food store and tough coat, and the ovary grows into the fruit around it. Seeds are then scattered by wind, water or animals so that young plants do not compete with the parent. A seed germinates when it has water to soften the coat, oxygen for respiration and a suitable warm temperature; most seeds do not need light to germinate, though the young shoot grows towards it.\n\nIn humans the male reproductive system has two testes, which make sperm and the hormone testosterone, ducts that carry the sperm and glands that add fluid to form semen. The female system has two ovaries, which release an egg about once a month, oviducts where fertilisation normally happens, a uterus lined with soft tissue where the embryo implants, and the cervix and vagina. After fertilisation the zygote divides as it travels to the uterus, and the embryo is fed through the placenta, which exchanges oxygen, food and waste between the mother and the fetus without the two blood supplies mixing. The fetus floats in amniotic fluid, which cushions it, and is born about 40 weeks after fertilisation.",
+        "objectives": [
+          "Describe the parts of a flower and how pollination and fertilisation produce a seed",
+          "Explain the conditions a seed needs to germinate and how seeds are dispersed",
+          "Describe the human reproductive organs and the path from fertilisation to birth"
+        ],
+        "concepts": [
+          "Stamen",
+          "Anther",
+          "Carpel",
+          "Stigma",
+          "Ovule",
+          "Pollination",
+          "Pollen tube",
+          "Fertilisation",
+          "Placenta",
+          "Amniotic fluid",
+          "Testosterone"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Reproductive Parts: Match each part of a flower or of the human system to what it does."
+        }
+      },
+      {
+        "id": "is-l8-3",
+        "title": "Human Reproductive Cycles and Development",
+        "content": "Puberty is the stage when the reproductive organs become able to work and the body changes into its adult form. It is started by hormones from the pituitary gland, which switch on the testes in boys and the ovaries in girls. Testosterone from the testes causes the voice to break, hair to grow on the face and body, the shoulders to widen and the muscles to develop. Oestrogen from the ovaries causes the hips to widen, the breasts to develop and hair to grow, and together with progesterone it controls the menstrual cycle. These changes happen at different ages in different people, and both early and late development are usually normal.\n\nThe menstrual cycle lasts about 28 days. It begins with menstruation, when the lining of the uterus built up in the previous cycle breaks down and is lost through the vagina. Oestrogen from a developing egg then makes the lining thicken again with blood vessels. Around day 14 the egg is released from the ovary - ovulation - and moves into the oviduct, where it can be fertilised for roughly a day. Progesterone from the remains of the follicle keeps the lining ready for an embryo; if no fertilisation happens the lining breaks down and the cycle starts again. Because ovulation falls close to the middle of the cycle, a couple can use the cycle to plan or to avoid a pregnancy.\n\nFrom fertilisation the zygote divides repeatedly as it travels down the oviduct, reaching the uterus as a ball of cells that implants in the lining. For the first eight weeks it is called an embryo, while the main organs form; from then until birth it is a fetus, and it grows in length and in mass. Growth is measured as length, mass or dry mass and plotted against time on a growth curve: fastest in the first year, slower through childhood, with a spurt at puberty, then levelling off as adult height is reached. Nutrition, illness, genes and the environment all affect how a person grows, so two people of the same age can be very different sizes.",
+        "objectives": [
+          "Describe the hormonal changes of puberty in boys and girls",
+          "Explain the stages of the menstrual cycle and when ovulation occurs",
+          "Describe growth from zygote to adult and how growth is measured"
+        ],
+        "concepts": [
+          "Puberty",
+          "Testosterone",
+          "Oestrogen",
+          "Progesterone",
+          "Menstruation",
+          "Ovulation",
+          "Menstrual cycle",
+          "Embryo",
+          "Fetus",
+          "Growth curve"
+        ],
+        "experiment": {
+          "type": "interactive-pathway",
+          "description": "The Menstrual Cycle: Arrange the stages of one cycle in the order they happen."
+        }
+      },
+      {
+        "id": "is-l8-4",
+        "title": "Reproductive Health and STIs",
+        "content": "Reproductive health means that the reproductive system works properly and that people can make free, informed and safe decisions about it. It covers personal hygiene, good nutrition and knowing how the body works, as well as access to care before, during and after pregnancy. Antenatal care means regular check-ups for a pregnant woman: her blood pressure, blood and weight are monitored, she is advised on diet and on avoiding alcohol and tobacco, and problems such as anaemia can be treated early. Family planning - choosing whether and when to have children - protects the health of both mother and child, and a teenage pregnancy carries extra risks because the mother is still growing herself.\n\nSexually transmitted infections (STIs) pass from one person to another during unprotected sex, and some also pass on shared needles or from a mother to her baby. The bacterial STIs - gonorrhoea, syphilis and chlamydia - can be cured with antibiotics, but chlamydia and gonorrhoea often cause no obvious symptoms, so an infection can spread unnoticed. Viral STIs cannot be cured by antibiotics: HIV damages the cells of the immune system so that the body cannot fight infection, and without treatment it leads to AIDS; herpes causes repeated blisters; and some types of human papillomavirus (HPV) cause cervical cancer, against which a vaccine now exists.\n\nPrevention works better than treatment. Using a condom correctly reduces the risk of passing most STIs, staying with one uninfected partner reduces it further, and anyone who may have been exposed should be tested, because most STIs are easy to treat once they are known. Many clinics offer confidential testing and treatment, and pregnant women are tested so that an infection can be treated before it reaches the baby. Education matters as much as medicine: knowing how infections spread removes the fear and the stigma that stop people seeking help, and stigma is itself a reason infections go untreated.",
+        "objectives": [
+          "Explain what reproductive health covers, including antenatal care and family planning",
+          "Distinguish bacterial from viral STIs and name examples of each",
+          "Describe how the spread of STIs is prevented and why testing matters"
+        ],
+        "concepts": [
+          "Reproductive health",
+          "STI",
+          "HIV",
+          "AIDS",
+          "Gonorrhoea",
+          "Syphilis",
+          "Chlamydia",
+          "Condom",
+          "Antenatal care",
+          "Family planning"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Know the STIs: Match each infection to the fact that describes it."
+        }
+      },
+      {
+        "id": "is-l8-5",
+        "title": "Growth Patterns and Population",
+        "content": "Growth is a permanent increase in size, mass or dry mass, and it is measured by weighing, by measuring length, or by drying the organism to find how much solid material it has gained. A typical growth curve is S-shaped: a slow start while the organism establishes itself, a steep phase of rapid growth, then a plateau as it reaches adult size. Animals usually stop growing at maturity, but plants keep growing from meristems - regions of dividing cells at the tips of roots and shoots and in a layer under the bark - which is why a tree adds a ring of wood every year and a hedge can be trimmed again and again. An insect with a hard exoskeleton must moult to grow, and each stage between moults is an instar.\n\nA population is all the individuals of one species in one area. Its size changes as births and immigration add individuals and deaths and emigration remove them. Given unlimited food and space a population grows faster and faster, but in practice food, water, space, shelter, disease and predators are limiting factors that slow the growth until the population levels off at the carrying capacity of the environment. Ecologists sample populations rather than counting every individual: quadrats estimate plants, and the capture-recapture method estimates animals that move about.\n\nHuman populations follow the same pattern. Better medicine, clean water and a more reliable food supply lowered death rates, so populations grew quickly, and where birth rates have since fallen the growth has slowed. A population pyramid shows the age structure: a wide base means many children and rapid future growth, while a narrow base means an ageing population. Rapid growth puts pressure on land, water, housing, schools and waste disposal, and it drives deforestation and the loss of habitats. The Caribbean shows both patterns - some islands have slow growth and many people emigrating, while others still have young, fast-growing populations.",
+        "objectives": [
+          "Describe growth curves in plants and animals and how growth is measured",
+          "Explain how births, deaths, migration and limiting factors change a population",
+          "Interpret a population pyramid and describe the effects of population growth"
+        ],
+        "concepts": [
+          "Growth curve",
+          "Meristem",
+          "Instar",
+          "Birth rate",
+          "Death rate",
+          "Emigration",
+          "Carrying capacity",
+          "Limiting factor",
+          "Population pyramid",
+          "Quadrat"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Populations: Match each term about growth and populations to its meaning."
+        }
+      }
+    ]
   },
   {
     "id": "is-a3",
@@ -91,7 +249,7 @@
     "lessons": [
       {
         "id": "is-l2-2",
-        "title": "Nutrition, Respiration and Transport",
+        "title": "Photosynthesis, the Importance of Food and Diet, Respiration and Transport",
         "content": "Organisms need matter and energy. Green plants make their own food by photosynthesis, using light energy to combine carbon dioxide and water into glucose, releasing oxygen. Glucose is used for respiration, converted to starch for storage, or built into cellulose and other materials. Animals cannot make food, so they eat it, and their diets must supply carbohydrates and fats for energy, proteins for growth and repair, vitamins and minerals for regulation, fibre for digestion and water for everything else.\n\nRespiration releases the energy stored in food. Aerobic respiration uses oxygen and gives carbon dioxide, water and a large amount of energy; anaerobic respiration in muscle produces lactic acid and much less energy, and in yeast produces ethanol and carbon dioxide. In mammals, oxygen and nutrients are carried to cells by blood: the heart pumps, arteries carry blood away and veins return it, and exchange happens in capillaries. In plants, water and minerals move up in xylem while sugars move in phloem, and water is lost through stomata in transpiration.\n\nThese systems link food, energy and health. A diet with too much refined carbohydrate and fat and too little activity leads to obesity and related disease, while a plant without light or minerals cannot photosynthesise well and grows pale and stunted. Both cases show the same principle: nutrition and transport determine what an organism can do.",
         "objectives": [
           "Explain photosynthesis and the requirements of a balanced diet",
@@ -112,13 +270,198 @@
           "type": "matching-game",
           "description": "Life Processes Match: Match each life process to the meaning that matches it."
         }
+      },
+      {
+        "id": "is-l9-1",
+        "title": "Crop Production and Food Chains",
+        "content": "Every food chain on land starts with photosynthesis. Green plants, including every crop, use light energy to combine carbon dioxide from the air with water from the soil into glucose, releasing oxygen, and the glucose is built into starch, cellulose and the plant's own tissue. A crop therefore yields well only when light, water, carbon dioxide and minerals are all available. Nitrogen builds leaves and proteins, phosphorus helps roots and ripening, and potassium helps the whole plant resist disease. Farmers supply these with manure or compost, which also improves soil structure, or with inorganic fertiliser, which releases minerals quickly but can wash out of the soil and pollute streams.\n\nA food chain shows the direction in which energy passes. The producer is eaten by a primary consumer, which is eaten by a secondary consumer, and so on, and decomposers break down the waste and dead bodies of all of them. Only about a tenth of the energy at one level reaches the next: the rest is lost as heat from respiration, used for movement, or left undigested. That is why food chains are short - there is rarely enough energy left for more than four or five links - and why eating grain directly feeds more people than feeding the grain to cattle. A food web joins the food chains of a habitat together and shows how a change to one species can affect many others.\n\nFarming aims to push more energy and matter into the crop. Irrigation, weeding, pest control and the right variety all raise yield, and crop rotation with legumes adds nitrates naturally and breaks the cycle of soil pests. Pests can be controlled with pesticides, but these can kill harmless insects, accumulate along the food chain and become less effective as resistance builds up, so biological control - introducing a natural enemy such as a wasp that parasitises a pest caterpillar - is often safer. Monoculture makes a crop easy to harvest but easy for a disease to sweep through, and slopes cleared of trees lose their topsoil to rain. Sugar cane, bananas, yams and dasheen are among the crops that depend on this balance in the Caribbean.",
+        "objectives": [
+          "Explain what a crop needs for photosynthesis and how farmers supply it",
+          "Trace the flow of energy through a food chain and explain energy loss at each level",
+          "Describe how pests and diseases are controlled and why farming must be sustainable"
+        ],
+        "concepts": [
+          "Photosynthesis",
+          "Producer",
+          "Primary consumer",
+          "Trophic level",
+          "Food web",
+          "Decomposer",
+          "Fertiliser",
+          "Crop rotation",
+          "Biological control",
+          "Monoculture"
+        ],
+        "experiment": {
+          "type": "interactive-pathway",
+          "description": "Follow the Energy: Arrange a food chain from producer to decomposer in order."
+        }
+      },
+      {
+        "id": "is-l9-2",
+        "title": "Microorganisms, Food Contamination and Preservation",
+        "content": "Food spoils because microorganisms grow in it. Bacteria, moulds and yeasts need warmth, moisture, food and time, so food left in a warm kitchen is soon spoiled. Some of these organisms only make food look, smell and taste unpleasant, but others are pathogens: Salmonella from raw chicken and eggs, Escherichia coli from contaminated water or undercooked meat, and Staphylococcus from the hands of a food handler can all cause vomiting and diarrhoea, and for a young child or an elderly person this can be dangerous. Contamination comes from dirty hands, unwashed utensils, pests, dirty water and, most often, from raw food touching cooked food - cross-contamination.\n\nPreservation works by making conditions unsuitable for microbes, and each method attacks a different need. Refrigeration and freezing slow growth without killing the microbes. Cooking, and canning in a sealed heat-treated tin, kills them. Drying in the sun or an oven removes the water they need, and salting or sugaring draws water out of their cells by osmosis. Pickling in vinegar makes the food too acidic, vacuum packing removes the oxygen that moulds need, and smoking both dries the food and coats it in chemicals that inhibit growth. Fermentation is the exception that uses microbes on purpose: in yoghurt, cheese and bread, useful bacteria or yeast outgrow the spoilage organisms and make the food acidic or alcoholic.\n\nSafe food handling follows from all this. Wash hands before cooking and after touching raw meat, keep separate boards for raw and cooked food, cook meat right through, cool leftovers quickly and store them covered in a cold place, and keep flies and rodents out of the kitchen. Anyone with diarrhoea should not handle food for others. Safe water matters as much as safe food, because many infections spread through it. Because food is also a matter of supply, the same principles work at scale: a cold chain from farm to shop, sealed packaging, date labelling and public inspection keep a whole island's food supply safe and reduce the waste of food that has to be thrown away.",
+        "objectives": [
+          "Explain the conditions microorganisms need and how food becomes contaminated",
+          "Explain how each preservation method stops or slows the growth of microorganisms",
+          "Apply food hygiene rules and say why safe water matters as much as safe food"
+        ],
+        "concepts": [
+          "Spoilage",
+          "Pathogen",
+          "Cross-contamination",
+          "Refrigeration",
+          "Dehydration",
+          "Osmosis",
+          "Pickling",
+          "Vacuum packing",
+          "Fermentation",
+          "Cold chain"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Keeping Food Safe: Match each preservation method to the reason it works."
+        }
+      },
+      {
+        "id": "is-l9-3",
+        "title": "Human Digestion",
+        "content": "Digestion breaks large insoluble food molecules into small soluble ones that can be absorbed into the blood. It starts in the mouth, where the teeth cut and grind the food and saliva, which contains the enzyme amylase, begins to break starch down into maltose; chewing also mixes the food with saliva so that it is easy to swallow. Peristalsis - waves of muscular contraction in the wall of the oesophagus - pushes the food down to the stomach, where hydrochloric acid kills most bacteria and gives the enzyme pepsin the acidic conditions it needs to digest protein, while the churning muscles mix the food into a paste.\n\nIn the small intestine the food is finished off. Bile, made in the liver and stored in the gall bladder, is released into the duodenum, where it emulsifies fats into tiny droplets so that lipase can digest them, and it neutralises the acid from the stomach. Pancreatic amylase, protease and lipase are added, and the lining of the ileum makes its own enzymes, completing the breakdown of starch to glucose, protein to amino acids and fat to fatty acids and glycerol. The ileum is folded and covered with millions of villi, each with a large surface area, a wall one cell thick and a good blood supply, so the products pass quickly into the blood; fats are absorbed into a lacteal inside each villus. The large intestine absorbs the remaining water, and the undigested waste is stored in the rectum and egested.\n\nEnzymes are proteins that speed up reactions, and each one is specific: amylase acts only on starch, protease only on protein and lipase only on fat, and each works best at its own pH and temperature, which is why the stomach is acidic and the small intestine alkaline. What is left after absorption matters too. Fibre, the cellulose that humans cannot digest, holds water in the gut and keeps food moving, preventing constipation. Too much fat and refined sugar and too little exercise lead to obesity, which raises the risk of heart disease and diabetes. A diet short of protein causes kwashiorkor in young children, a lack of iron causes anaemia and a lack of vitamin C causes scurvy - each a reminder that digestion only helps if the diet supplies what the body needs.",
+        "objectives": [
+          "Describe the path of food through the alimentary canal and what happens at each stage",
+          "Explain the role of enzymes and bile in digestion and where nutrients are absorbed",
+          "Relate the digestive system to diet and name the effects of a poor diet"
+        ],
+        "concepts": [
+          "Peristalsis",
+          "Amylase",
+          "Protease",
+          "Lipase",
+          "Bile",
+          "Emulsify",
+          "Villus",
+          "Absorption",
+          "Enzyme",
+          "Fibre"
+        ],
+        "experiment": {
+          "type": "interactive-pathway",
+          "description": "Through the Gut: Arrange the stages of digesting a starchy meal in the order they happen."
+        }
       }
     ]
   },
   {
     "id": "is-a4",
     "title": "Transport and Circulation",
-    "lessons": []
+    "lessons": [
+      {
+        "id": "is-l10-1",
+        "title": "Need for Transport Systems",
+        "content": "Small organisms can get everything they need by diffusion. An Amoeba is one cell surrounded by water, so oxygen diffuses in and carbon dioxide diffuses out across the whole of its surface, and the distance is tiny. A large animal cannot do this: its surface area grows as the square of its length while its volume grows as the cube, so a large body has a small surface area for each unit of volume, and the cells deep inside are far from the air. A cube 1 cm on each side has a surface area of 6 cm2 and a volume of 1 cm3, a ratio of 6 to 1; a cube 3 cm on each side has a surface area of 54 cm2 and a volume of 27 cm3, a ratio of only 2 to 1. Diffusion across the skin would be far too slow to supply the inner cells.\n\nSo larger organisms need a transport system, and every one has the same parts. A pump - the heart in a mammal - keeps the transport medium moving. A medium - the blood - carries oxygen, food and waste. A set of vessels carries the medium to and from every part of the body. Exchange surfaces take materials in and out: the lungs for oxygen, the lining of the gut for food, the kidneys for waste. Exchange is only fast where the surface is large and thin and well supplied with vessels, which is exactly what villi, alveoli and capillaries are.\n\nPlants need transport too, for a different reason: a tree can be 30 metres tall, and water has to reach the leaves at the top while sugar made there has to reach the roots. Root hair cells give the root a huge surface area and take up water and dissolved minerals by osmosis and active transport. Xylem vessels carry that water and its minerals up to the leaves, pulled along by the transpiration stream as water evaporates from the stomata. Phloem carries sugars made in the leaves to wherever they are needed, up or down the plant. Without a water supply the plant loses turgor and wilts, because it is the water in the cells that holds the plant upright.",
+        "objectives": [
+          "Explain why large organisms need a transport system, using surface area to volume ratio",
+          "Name the parts every transport system needs and give an example of each",
+          "Explain how water and sugars are moved through a plant"
+        ],
+        "concepts": [
+          "Surface area to volume ratio",
+          "Diffusion",
+          "Transport system",
+          "Exchange surface",
+          "Root hair cell",
+          "Xylem",
+          "Phloem",
+          "Transpiration",
+          "Translocation",
+          "Turgor"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Moving Materials: Match each transport term to the job it does."
+        }
+      },
+      {
+        "id": "is-l10-2",
+        "title": "Structure and Function of Transport Systems",
+        "content": "Mammals have a double circulation: blood passes through the heart twice for each circuit of the body. The right atrium receives deoxygenated blood from the body and the right ventricle pumps it to the lungs; the left atrium receives oxygenated blood from the lungs and the left ventricle pumps it at high pressure to the rest of the body. The left ventricle therefore has a much thicker muscular wall. Valves between the chambers and in the vessels keep the blood moving one way, and the septum separates the two sides so that oxygenated and deoxygenated blood never mix. The heart muscle itself is supplied by the coronary arteries.\n\nArteries carry blood away from the heart under high pressure; they have thick walls of muscle and elastic fibre that stretch with each surge and recoil to keep the flow steady, and a narrow lumen. Veins carry blood back to the heart at low pressure; their walls are thin, their lumen is wide, and valves along their length stop the blood running backwards, helped by the squeezing of the muscles around them. Capillaries are one cell thick, so substances can pass between the blood and the tissues by diffusion, and they branch so finely that every cell is close to one. Blood is about half plasma, which carries dissolved food, hormones and waste; red cells are packed with haemoglobin, which carries oxygen and gives blood its colour; white cells fight infection; and platelets help the blood to clot.\n\nIn plants the transport tissue is arranged in vascular bundles. Xylem vessels are dead, hollow tubes with walls stiffened by lignin, and water moves through them in one direction only, from root to leaf. Phloem sieve tubes are living cells with perforated end walls, and they carry sugars and amino acids in either direction, loaded and unloaded by the companion cells beside them. Water leaves the leaves as vapour through stomata, and each stoma is opened or closed by two guard cells: they open when the plant has plenty of water and close when it is short, which slows transpiration. Wind, warmth, dry air and bright light all speed transpiration up.",
+        "objectives": [
+          "Describe the structure of the heart and explain the double circulation",
+          "Compare arteries, veins and capillaries and relate each structure to its function",
+          "Describe xylem and phloem and explain how stomata control water loss"
+        ],
+        "concepts": [
+          "Double circulation",
+          "Atrium",
+          "Ventricle",
+          "Valve",
+          "Septum",
+          "Artery",
+          "Vein",
+          "Capillary",
+          "Haemoglobin",
+          "Platelet",
+          "Xylem vessel",
+          "Sieve tube",
+          "Guard cell"
+        ],
+        "experiment": {
+          "type": "drag-drop",
+          "description": "Artery or Vein: Sort each feature into the vessel it belongs to."
+        }
+      },
+      {
+        "id": "is-l10-3",
+        "title": "Blood Groups",
+        "content": "Red blood cells carry markers on their surface, and the pattern of markers is what a blood group is. In the ABO system there are two markers, A and B: a person with group A has the A marker, group B has B, group AB has both, and group O has neither. The plasma carries antibodies against the markers the person does not have - group A plasma has anti-B, group B has anti-A, group O has both, and group AB has neither. The rhesus (Rh) system is separate: an Rh-positive person has the D marker on the red cells and an Rh-negative person does not. Groups A, B, AB and O are found in every population, in different proportions.\n\nThese antibodies are why a transfusion has to be matched. If red cells carrying a marker meet the matching antibody, the cells clump together - agglutination - and then break apart, and the reaction can be fatal. Group O red cells carry no A or B marker, so they can be given to anyone, and group O is called the universal donor; group AB plasma has no antibodies, so a patient of any group can receive it, and group AB is called the universal recipient. Plasma works the other way round from red cells: group AB plasma is the safest for any patient because it has no antibodies. In an emergency group O negative blood is used before a full cross-match is possible.\n\nBlood group is inherited, and the ABO gene has three alleles: A, B and O. A and B are codominant, so a person with both has group AB, and O is recessive, so a group O person has two O alleles. A cross between a heterozygous group A parent and a heterozygous group B parent can give A, B, AB or O children, which is why a child's group may match neither parent. Blood group cannot prove who a parent is, but it can rule a man out. It matters in pregnancy when an Rh-negative mother carries an Rh-positive baby, because some of the baby's cells may sensitise her; she is given anti-D to protect later pregnancies. Donated blood is also screened for infections before it is used.",
+        "objectives": [
+          "Explain what the ABO and rhesus markers are and where the matching antibodies are found",
+          "Apply the rules of a safe transfusion, including universal donor and recipient",
+          "Explain how blood group is inherited and why it matters in pregnancy"
+        ],
+        "concepts": [
+          "Antigen",
+          "Antibody",
+          "Agglutination",
+          "ABO system",
+          "Rhesus factor",
+          "Universal donor",
+          "Universal recipient",
+          "Codominance",
+          "Allele"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Safe Transfusion: Match each blood group to what it can safely receive."
+        }
+      },
+      {
+        "id": "is-l10-4",
+        "title": "Cardiovascular Health",
+        "content": "Cardiovascular disease is disease of the heart and blood vessels, and it is a leading cause of death in the Caribbean. The commonest form starts with atherosclerosis: fatty deposits, including cholesterol, build up in the lining of an artery and form plaques that narrow it and make it less elastic. In the coronary arteries, which supply the heart muscle itself, this causes coronary heart disease - pain on exertion called angina and, if a plaque ruptures and a clot blocks the artery, a heart attack, when part of the muscle dies. The same process in an artery of the brain causes a stroke. Blood pressure that stays above normal, hypertension, damages arteries and makes all of these more likely, and it usually has no symptoms at all.\n\nSome risk factors cannot be changed - age, a family history of heart disease, and being male - but most can. Smoking damages the artery lining and makes clots more likely; a diet high in saturated fat and salt raises cholesterol and blood pressure; obesity, inactivity, too much alcohol, diabetes and stress all add to the risk, and the risks multiply rather than simply add. Blood pressure is measured with a cuff and written as two numbers, systolic over diastolic, the pressure when the heart contracts over the pressure when it relaxes; a reading around 120 over 80 is normal and one that stays at 140 over 90 or above is high. Pulse rate, body mass index and blood tests for cholesterol and glucose are the other routine measures.\n\nPrevention is largely a matter of lifestyle, and the changes are well established: stop smoking, eat more fruit, vegetables and fibre and less salt and saturated fat, take regular exercise, keep to a healthy weight and drink alcohol only in moderation. Where disease has already developed, drugs lower blood pressure and cholesterol or reduce clotting, and surgery can widen a narrowed artery with a stent or bypass it with a piece of vein taken from the leg. Someone with chest pain that lasts, spreads to the arm or jaw, or comes with sweating and breathlessness needs emergency help at once, and should rest and be moved as little as possible. Public education, clear food labelling, screening and smoke-free spaces lower the risk of a whole population, not just of one patient.",
+        "objectives": [
+          "Describe atherosclerosis and explain how it causes heart attacks and strokes",
+          "Identify the risk factors for cardiovascular disease and how blood pressure is measured",
+          "Explain how cardiovascular disease is prevented and treated"
+        ],
+        "concepts": [
+          "Atherosclerosis",
+          "Plaque",
+          "Coronary heart disease",
+          "Heart attack",
+          "Stroke",
+          "Hypertension",
+          "Cholesterol",
+          "Blood pressure",
+          "Risk factor",
+          "Stent"
+        ],
+        "experiment": {
+          "type": "matching-game",
+          "description": "Heart Health: Match each term about cardiovascular disease to its meaning."
+        }
+      }
+    ]
   },
   {
     "id": "is-a5",

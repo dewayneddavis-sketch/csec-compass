@@ -120,13 +120,14 @@ check(
 );
 
 // The one subject whose module shape is deliberately ahead of its lessons.
-// These eleven modules are NAMED, not merely tolerated: the guard stays strict
+// These nine modules are NAMED, not merely tolerated: the guard stays strict
 // for every other module of every other subject, and it also fails if one of
 // these stops being empty (a lesson landed, so the declared set is out of date).
-// Integrated Science ships the owner's 24-module plan; 13 of them have lessons.
+// Integrated Science ships the owner's 24-module plan; 15 of them have lessons,
+// after the Section A part 1 build filled is-a2 and is-a4.
 const DECLARED_EMPTY_MODULES = {
   "integrated-science": [
-    "is-a2", "is-a4", "is-a5", "is-a6", "is-a7",
+    "is-a5", "is-a6", "is-a7",
     "is-b6", "is-b7", "is-b9",
     "is-c1", "is-c6", "is-c7",
   ],

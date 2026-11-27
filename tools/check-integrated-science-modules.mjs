@@ -21,15 +21,22 @@
 //      ^is-mod- (the 6 generic modules are gone, and their ids are not reused for the new shape);
 //   4. the chapter counts per module, and the per-section totals 28 / 37 / 31 = 96, come out of that
 //      table — the numbers are DERIVED from it, never quoted;
-//   5. the 18 re-homed lesson ids are all present, unchanged, in the derived stable order, none orphaned
-//      and none in two modules; every module carries a `lessons` array, empty where the chapter build has
-//      not reached it yet;
-//   6. every lesson sits in the module whose chapters it teaches, as pinned in PLACEMENT below;
+//   5. the 18 re-homed lesson ids are all present and none is in two modules; every module carries a
+//      `lessons` array, empty where the chapter build has not reached it yet. A chapter build adds lessons
+//      to these modules, so the old "exactly 18 lessons, flattening in the pinned order" rule is gone: the
+//      real failure it caught — a re-homed lesson that left its module — is now caught by rule 6, and an
+//      unknown lesson appearing from nowhere is caught by NEW_LESSONS below, which every slice must extend
+//      deliberately, in a diff somebody reads;
+//   6. every re-homed lesson sits in the module whose chapters it teaches, as pinned in PLACEMENT below,
+//      in its pinned order, and every lesson this build added sits in the module that declares it;
 //   7. the four bank files and every figures[].src (and the SVG files they point at) are BYTE-UNCHANGED
 //      against origin/main — read out of git, never a hardcoded copy — so a structural PR cannot quietly
 //      move a question or a picture;
-//   8. the 18 lessons' own copy (title, content, concepts, objectives, experiment, figures) is unchanged
-//      against origin/main: re-homing moves a lesson between modules, it does not rewrite it;
+//   8. the 18 lessons' own copy (content, concepts, objectives, experiment, figures) is unchanged against
+//      origin/main: re-homing moves a lesson between modules, it does not rewrite it. Their TITLES are
+//      unchanged too, except for the three pinned in SHARPENED_TITLES, which the chapter build retitled so
+//      that the chapter each already taught is findable by name; a retitle to anything but the pinned
+//      wording reds the run;
 //   9. content/ and public/content/ are byte-identical for every file this harness reads.
 //
 // What it CANNOT prove: that a lesson belongs under the module it was put in — that is a reading judgement
@@ -42,7 +49,7 @@
 // the control is FOR still checks anything.
 //
 // Usage
-//   node tools/check-integrated-science-modules.mjs                  # the real check + all 11 red controls
+//   node tools/check-integrated-science-modules.mjs                  # the real check + all 15 red controls
 //   node tools/check-integrated-science-modules.mjs --no-red-control # the real check only
 //   node tools/check-integrated-science-modules.mjs --red-control lesson-dropped
 import fs from "node:fs";
@@ -134,6 +141,26 @@ export const PLACEMENT = {
 /** The 18 lesson ids, in the order the tree must flatten to: module order, then placement order. */
 export const LESSON_ORDER = MODULE_TARGET.flatMap((m) => PLACEMENT[m.id] || []);
 
+// The lessons the Section A chapter build added, by the module that declares them. This table is the
+// record: a lesson in the tree that is neither one of the 18 nor one of these reds the run, so a slice
+// cannot land lessons this harness has never heard of. It is extended deliberately, one slice at a time.
+export const NEW_LESSONS = {
+  "is-a1": ["is-l7-1"],
+  "is-a2": ["is-l8-1", "is-l8-2", "is-l8-3", "is-l8-4", "is-l8-5"],
+  "is-a3": ["is-l9-1", "is-l9-2", "is-l9-3"],
+  "is-a4": ["is-l10-1", "is-l10-2", "is-l10-3", "is-l10-4"],
+};
+export const NEW_LESSON_IDS = Object.values(NEW_LESSONS).flat();
+
+// Three of the 18 already taught a chapter of the owner's list under a title that did not name it. The
+// chapter build sharpened exactly those titles to the wording below and no others: the ids are untouched,
+// and every other field of every one of the 18 lessons is still byte-unchanged.
+export const SHARPENED_TITLES = {
+  "is-l2-1": "Cell Structure and Function, and Cell Transport",
+  "is-l3-1": "Properties of States of Matter",
+  "is-l2-2": "Photosynthesis, the Importance of Food and Diet, Respiration and Transport",
+};
+
 /** Read a file as it stands on origin/main. Never a copy: a hardcoded baseline proves nothing. */
 function fromGit(rel) {
   return execFileSync("git", ["show", `${BASELINE}:${rel}`], {
@@ -148,6 +175,8 @@ function loadState() {
     table: clone(MODULE_TARGET),
     sections: clone(SECTIONS),
     placement: clone(PLACEMENT),
+    newLessons: clone(NEW_LESSONS),
+    sharpened: clone(SHARPENED_TITLES),
     modules: JSON.parse(modulesText),
     modulesText,
     mirrorText: read(MIRROR),
@@ -228,30 +257,44 @@ export function runChecks(st) {
   check(secTotal === targetChapters, `the section totals add up to the chapter total (${secTotal} vs ${targetChapters})`);
 
   // ---------------------------------------------------------------- 5. the 18 lessons
-  section("5. the 18 re-homed lesson ids are present, unchanged, in the derived stable order");
+  section("5. the 18 re-homed lesson ids are all present, none twice, and nothing undeclared has appeared");
   const lessons = allLessons(st);
   check(tree.every((m) => Array.isArray(m.lessons)), "every module carries a lessons array (empty where unbuilt)");
-  check(lessons.length === LESSON_ORDER.length, `modules.json holds ${LESSON_ORDER.length} lessons (found ${lessons.length})`);
   const ids = lessons.map((l) => l.id);
   const dupes = ids.filter((id, i) => ids.indexOf(id) !== i);
   check(dupes.length === 0, `no lesson id appears twice across the 24 modules (${dupes.join(", ") || "none"})`);
   for (const id of LESSON_ORDER)
     check(ids.includes(id), `the 18 lesson ids are the ones this build re-homed (missing: ${id})`);
-  const orphans = ids.filter((id) => !LESSON_ORDER.includes(id));
-  check(orphans.length === 0, `no lesson is orphaned outside the 18 (unexpected: ${orphans.join(", ") || "none"})`);
-  check(ids.join(",") === LESSON_ORDER.join(","), "the 18 lesson ids flatten in the pinned order");
+  const unknown = ids.filter((id) => !LESSON_ORDER.includes(id) && !NEW_LESSON_IDS.includes(id));
+  check(unknown.length === 0, `no lesson appears that this harness has never heard of (unexpected: ${unknown.join(", ") || "none"})`);
+  for (const id of NEW_LESSON_IDS)
+    check(ids.includes(id), `the chapter-build lesson ${id} is present (missing)`);
 
   // ---------------------------------------------------------------- 6. each lesson under its module
-  section("6. every lesson sits in the module whose chapters it teaches");
+  section("6. every re-homed lesson sits in its module, in order, and every new lesson in the module that declares it");
   for (const [mid, want] of Object.entries(st.placement)) {
     const mod = st.modules.find((m) => m.id === mid);
     check(!!mod, `module ${mid} exists in the tree`);
     if (!mod) continue;
-    const got = (mod.lessons || []).map((l) => l.id);
-    check(got.join(",") === want.join(","), `module ${mid} holds ${want.join(", ") || "no lessons"} (found ${got.join(", ") || "none"})`);
+    // The chapter build appends lessons to these modules, so the pinned order is asserted over the
+    // RE-HOMED lessons only. A re-homed lesson that left its module drops out of this list and reds it.
+    const got = (mod.lessons || []).map((l) => l.id).filter((id) => want.includes(id));
+    check(got.join(",") === want.join(","), `module ${mid} holds ${want.join(", ") || "no lessons"} in this order (found ${got.join(",") || "none"})`);
+    const declared = st.newLessons[mid] || [];
+    const present = (mod.lessons || []).map((l) => l.id).filter((id) => declared.includes(id));
+    check(present.join(",") === declared.join(","), `module ${mid} holds the lessons this build declares for it (${declared.join(", ") || "none"}; found ${present.join(", ") || "none"})`);
   }
   check(Object.keys(st.placement).join(",") === table.map((m) => m.id).join(","),
     "the placement table names every module, in the tree's order");
+  check(Object.keys(st.newLessons).every((mid) => table.some((m) => m.id === mid)),
+    "every module the new-lesson table names exists in the owner's list");
+  // A lesson this build added may only sit in the module that declares it — a move to another module is
+  // the same defect as a re-homed lesson leaving its own.
+  for (const [mid, list] of Object.entries(st.newLessons)) {
+    const mod = st.modules.find((m) => m.id === mid);
+    const extra = (mod ? mod.lessons || [] : []).map((l) => l.id).filter((id) => NEW_LESSON_IDS.includes(id) && !list.includes(id));
+    check(extra.length === 0, `module ${mid} holds no chapter-build lesson that another module declares (found: ${extra.join(", ") || "none"})`);
+  }
 
   // ---------------------------------------------------------------- 7. banks and figures did not move
   section("7. the banks and every figures[].src are byte-unchanged against origin/main");
@@ -291,10 +334,17 @@ export function runChecks(st) {
       const before = baseLessons.get(id);
       check(!!before, `${id} exists on ${BASELINE}`);
       if (!now || !before) continue;
-      const fields = ["title", "content", "concepts", "objectives", "experiment"];
+      // The science itself is frozen: the chapter build may retitle a lesson, never rewrite it.
+      const fields = ["content", "concepts", "objectives", "experiment"];
       const drift = fields.filter((f) => JSON.stringify(now[f]) !== JSON.stringify(before[f]));
       check(drift.length === 0, `${id}'s ${fields.join("/")} is unchanged (drifted: ${drift.join(", ") || "none"})`);
+      // A title is unchanged too, unless this build pinned a sharpened one for it.
+      const pinned = st.sharpened[id];
+      if (pinned) check(now.title === pinned, `${id}'s title is the pinned chapter name "${pinned}" (found "${now.title}")`);
+      else check(now.title === before.title, `${id}'s title is unchanged (found "${now.title}", was "${before.title}")`);
     }
+    for (const id of Object.keys(st.sharpened))
+      check(LESSON_ORDER.includes(id), `the sharpened-title table names a lesson this build re-homed (${id})`);
   }
 
   // ---------------------------------------------------------------- 9. the two trees
@@ -365,6 +415,26 @@ export const RED_CONTROLS = {
     l.figures = clone(l.figures);
     l.figures[0].src = "/content/integrated-science/figures/is-other.svg";
   },
+  // a sharpened title drifts away from the chapter it names
+  "sharpened-title-drifted": (st) => {
+    const l = moduleOf(st, "is-l3-1").lessons.find((x) => x.id === "is-l3-1");
+    l.title = "States of Matter and Changes";
+  },
+  // a lesson this build did NOT touch is retitled
+  "untouched-title-changed": (st) => {
+    const l = moduleOf(st, "is-l6-1").lessons.find((x) => x.id === "is-l6-1");
+    l.title = "Rocks and Soil";
+  },
+  // a chapter-build lesson is moved out of the module that declares it
+  "new-lesson-moved": (st) => {
+    const from = moduleOf(st, "is-l8-1");
+    from.lessons = from.lessons.filter((l) => l.id !== "is-l8-1");
+    st.modules.find((x) => x.id === "is-a1").lessons.push({ id: "is-l8-1", title: "Asexual and Sexual Reproduction" });
+  },
+  // a lesson appears that no slice ever declared
+  "undeclared-lesson": (st) => {
+    st.modules.find((x) => x.id === "is-b6").lessons.push({ id: "is-zz-1", title: "A lesson nobody declared" });
+  },
 };
 
 // What each control must be caught BY.
@@ -381,14 +451,21 @@ export const RED_EXPECT = {
   ],
   "lesson-renamed": [
     "the 18 lesson ids are the ones this build re-homed (missing: is-l2-1)",
-    "module is-a1 holds is-l1-3, is-l2-1, is-l3-1 (found is-l1-3, is-l2-1-renamed, is-l3-1)",
+    "module is-a1 holds is-l1-3, is-l2-1, is-l3-1 in this order (found is-l1-3,is-l3-1)",
   ],
-  "lesson-dropped": ["modules.json holds 18 lessons (found 17)"],
+  "lesson-dropped": ["the 18 lesson ids are the ones this build re-homed (missing: is-l2-2)"],
   "lesson-duplicated": ["no lesson id appears twice across the 24 modules (is-l6-1)"],
   "generic-module-id": ["no module id matches ^is-mod- (found: is-mod-1)"],
   "mirror-perturbed": ["public/content/integrated-science/modules.json is byte-identical to content/integrated-science/modules.json"],
   "bank-drift": ["content/integrated-science/practice.json is byte-unchanged against origin/main"],
   "figure-src-moved": ["is-l2-1's figures[].src array is byte-unchanged against origin/main"],
+  "sharpened-title-drifted": ['is-l3-1\'s title is the pinned chapter name "Properties of States of Matter" (found "States of Matter and Changes")'],
+  "untouched-title-changed": ['is-l6-1\'s title is unchanged (found "Rocks and Soil", was "Earth Structure, Rocks and Soil")'],
+  "new-lesson-moved": [
+    "module is-a2 holds the lessons this build declares for it (is-l8-1, is-l8-2, is-l8-3, is-l8-4, is-l8-5; found is-l8-2, is-l8-3, is-l8-4, is-l8-5)",
+    "module is-a1 holds no chapter-build lesson that another module declares (found: is-l8-1)",
+  ],
+  "undeclared-lesson": ["no lesson appears that this harness has never heard of (unexpected: is-zz-1)"],
 };
 
 function runControl(name) {
