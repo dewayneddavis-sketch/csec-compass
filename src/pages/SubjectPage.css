@@ -218,6 +218,16 @@
   color: #6b7280;
 }
 
+/* Modules the subject's plan names but no lesson has been written for yet. They
+   are stated once, quietly, instead of being drawn as "0 lessons" buttons. */
+.s-modules-building {
+  margin: 0.25rem 0 0;
+  padding: 0 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #6b7280;
+}
+
 .s-lesson-list {
   background: #ffffff;
   border-radius: 14px;

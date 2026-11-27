@@ -141,7 +141,21 @@ export default function SubjectPage() {
   // purchases are still loading, and on API error — so everyone sees the
   // 2-lesson preview + paywall until a verified purchase unlocks them.
   const paid = hasAccess(subjectId);
-  const currentModule = modules[activeModule];
+  // The module list shows ONLY modules that hold at least one lesson. A subject
+  // built ahead of its chapters (Integrated Science ships the owner's 24-module
+  // shape with 11 still to be written) must not offer a student a "0 lessons"
+  // button that opens an empty panel. `index` is the module's place in the FULL
+  // list, so the numbering still matches the subject's plan after the empty ones
+  // are hidden. `activeModule` indexes this VISIBLE list, and is clamped so a
+  // subject switch (or a module that lost its last lesson) cannot point past the
+  // end and blank the lesson panel.
+  const visibleModules = modules
+    .map((mod, index) => ({ mod, index }))
+    .filter(({ mod }) => mod.lessons.length > 0);
+  const modulesToCome = modules.length - visibleModules.length;
+  const activePos = Math.min(activeModule, Math.max(visibleModules.length - 1, 0));
+  const currentEntry = visibleModules[activePos] || null;
+  const currentModule = currentEntry ? currentEntry.mod : null;
   const allLessons = modules.flatMap((m) => m.lessons);
   const totalLessonCount = allLessons.length;
   const lessonCount = paid ? allLessons.length : Math.min(FREE_PREVIEW_LESSONS, allLessons.length);
@@ -208,17 +222,22 @@ export default function SubjectPage() {
         {activeTab === "lessons" && (
           <div className="s-lessons">
             <div className="s-modules-list">
-              {modules.map((mod, i) => (
-                <button key={mod.id} className={"s-module-btn " + (activeModule === i ? "active" : "")} onClick={() => setActiveModule(i)}>
-                  <span className="s-module-num">{i + 1}</span>
-                  <div><strong>{mod.title}</strong><span className="s-module-lessons">{mod.lessons.length} lessons</span></div>
+              {visibleModules.map(({ mod, index }, position) => (
+                <button key={mod.id} className={"s-module-btn " + (activePos === position ? "active" : "")} onClick={() => setActiveModule(position)}>
+                  <span className="s-module-num">{index + 1}</span>
+                  <div><strong>{mod.title}</strong><span className="s-module-lessons">{mod.lessons.length} {mod.lessons.length === 1 ? "lesson" : "lessons"}</span></div>
                 </button>
               ))}
+              {modulesToCome > 0 && (
+                <p className="s-modules-building">
+                  {modulesToCome} more {modulesToCome === 1 ? "module is" : "modules are"} being built.
+                </p>
+              )}
             </div>
             <div className="s-lesson-list">
               {currentModule ? (
                 <>
-                  <h3 className="s-lesson-module-title">Module {activeModule + 1}: {currentModule.title}</h3>
+                  <h3 className="s-lesson-module-title">Module {currentEntry.index + 1}: {currentModule.title}</h3>
                   <div className="s-lesson-items">
                     {currentModule.lessons.map((lesson) => {
                       // Global position across all modules: only the first
